@@ -1,0 +1,287 @@
+{
+  "zone": "Winterspring",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "52-60 Winterspring",
+  "file": "Winterspring (Alliance).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 52,
+      "end": 52,
+      "next": 55,
+      "guide": "52-53 Winterspring",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "52-53 Winterspring",
+          "level": 52,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 55,
+      "end": 55.26,
+      "next": 58,
+      "guide": "55-56 Winterspring: around Umi Rumplesnicker",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Umi Rumplesnicker",
+          "guide": "55-56 Winterspring: around Umi Rumplesnicker",
+          "level": 55,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 58,
+      "end": 58.07,
+      "guide": "58-59 Winterspring",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "58-59 Winterspring",
+          "level": 58,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 979,
+      "level": 57,
+      "req": 52,
+      "xp": 3000,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 980,
+      "level": 55,
+      "req": 51,
+      "xp": 2800,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Un\u0027Goro Crater"
+    },
+    {
+      "id": 3512,
+      "level": 55,
+      "req": 48,
+      "xp": 4200,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Swamp of Sorrows"
+    },
+    {
+      "id": 3908,
+      "level": 52,
+      "req": 47,
+      "xp": 5100,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Un\u0027Goro Crater"
+    },
+    {
+      "id": 4808,
+      "level": 54,
+      "req": 50,
+      "xp": 2700,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Burning Steppes"
+    },
+    {
+      "id": 5085,
+      "level": 56,
+      "req": 52,
+      "xp": 4350,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Felwood"
+    },
+    {
+      "id": 5248,
+      "level": 58,
+      "req": 53,
+      "xp": 4650,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Eastern Plaguelands"
+    },
+    {
+      "id": 5249,
+      "level": 56,
+      "req": 53,
+      "xp": 580,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Felwood"
+    },
+    {
+      "id": 5250,
+      "level": 56,
+      "req": 53,
+      "xp": 580,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 6501,
+      "level": 60,
+      "req": 50,
+      "xp": 6600,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 8465,
+      "level": 55,
+      "req": 45,
+      "xp": 560,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Felwood"
+    },
+    {
+      "id": 977,
+      "level": 58,
+      "req": 52,
+      "xp": 4650,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3783,
+      "level": 56,
+      "req": 52,
+      "xp": 4350,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4861,
+      "level": 59,
+      "req": 53,
+      "xp": 3200,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4863,
+      "level": 59,
+      "req": 53,
+      "xp": 3200,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5082,
+      "level": 56,
+      "req": 52,
+      "xp": 5800,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5244,
+      "level": 56,
+      "req": 53,
+      "xp": 580,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6603,
+      "level": 56,
+      "req": 52,
+      "xp": 580,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6604,
+      "level": 59,
+      "req": 53,
+      "xp": 640,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6606,
+      "level": 60,
+      "req": 55,
+      "xp": 660,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8464,
+      "level": 58,
+      "req": 45,
+      "xp": 6200,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 969,
+      "level": 60,
+      "req": 55,
+      "xp": 6600,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4864,
+      "level": 59,
+      "req": 53,
+      "xp": 6400,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Tanaris": 1,
+    "Eastern Plaguelands": 3,
+    "Western Plaguelands": 2,
+    "Burning Steppes": 1,
+    "Felwood": 3,
+    "Teldrassil": 2
+  }
+}

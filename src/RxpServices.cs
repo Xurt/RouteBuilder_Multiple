@@ -23,6 +23,71 @@ public static class RxpServices
     static readonly HashSet<string> Classes = Game.Classes.Select(c => c.Name).ToHashSet(StringComparer.OrdinalIgnoreCase);
     static readonly HashSet<string> RaceNames = HordeRaces.Concat(AllianceRaces).Append("Skyborne").ToHashSet(StringComparer.OrdinalIgnoreCase);
 
+    /// <summary>
+    /// The RestedXP guide files the game being planned loads: those its Guides folder lists for that game
+    /// (GuideList-classic.xml, say, which also takes in files from subfolders), else every .lua file in the folder.
+    /// </summary>
+    public static List<string> GuideFiles(string dir)
+    {
+        var g = Games.Current;
+        string list = Path.Combine(dir, g.GuideList);
+        if (!g.IsForever && File.Exists(list))
+        {
+            var o = new List<string>();
+            foreach (Match m in Regex.Matches(File.ReadAllText(list), "file=\"([^\"]+)\""))
+            {
+                string rel = m.Groups[1].Value.Replace('\\', '/');
+                if (rel.StartsWith("Guides/", StringComparison.OrdinalIgnoreCase)) rel = rel[7..];
+                string f = Path.Combine(dir, rel.Replace('/', Path.DirectorySeparatorChar));
+                if (File.Exists(f) && !o.Contains(f)) o.Add(f);
+            }
+            return o;
+        }
+        return Directory.EnumerateFiles(dir, "*.lua", SearchOption.AllDirectories).OrderBy(f => f, StringComparer.OrdinalIgnoreCase).ToList();
+    }
+
+    static readonly string[] GameTags = { "classic", "tbc", "wotlk", "cata", "mop" };
+    static readonly Regex NotLeveling = new(@"Dungeon|Profession|Farming|Reputation|Attunement|Dail(y|ies)|Preparation|Rune|Endgame|Boost|Survival|Talent|Gold|Mining|Herbalism|Skinning|Cooking|Fishing|PvP|Battleground|Molten|Tol Barad|Argent", RegexOptions.IgnoreCase);
+
+    /// <summary>
+    /// Why a RestedXP guide is not one to follow when planning this game, from the lines above its first step, or null
+    /// when it is. RestedXP's Guides folder serves every game at once: a guide says which games it is for (#classic, #tbc,
+    /// #mop), whether it is for the 2x experience rate (#xprate >1.99), for Season of Discovery (#season 2) or for
+    /// hardcore only, and its group says whether it levels at all (dungeon, profession and reputation guides do not).
+    /// Forever's guide folder is taken as it is.
+    /// </summary>
+    public static string? NotFor(string header)
+    {
+        var g = Games.Current;
+        if (g.IsForever) return null;
+        var lines = header.Split('\n').Select(l => Regex.Replace(l, "--.*$", "").Trim()).Where(l => l.StartsWith('#')).ToList();
+        var tags = lines.Select(l => Regex.Match(l, @"^#(\w+)\s*$")).Where(x => x.Success).Select(x => x.Groups[1].Value.ToLowerInvariant()).ToList();
+        string mine = g.HeaderTag.TrimStart('#');
+        if (tags.Any(GameTags.Contains) && !tags.Contains(mine)) return "made for another game";
+        if (lines.Any(l => Regex.IsMatch(l, @"^#xprate\s*>")) && !lines.Any(l => Regex.IsMatch(l, @"^#xprate\s*<"))) return "for a boosted experience rate";
+        var season = lines.Select(l => Regex.Match(l, @"^#season\s+([\d,\s]+)$")).FirstOrDefault(x => x.Success);
+        if (season != null && !season.Groups[1].Value.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).Contains("0")) return "for Season of Discovery";
+        if (tags.Contains("hardcore") && !tags.Contains("softcore")) return "a hardcore-only route";
+        string group = GroupOf(header);
+        if (NotLeveling.IsMatch(group)) return "not a leveling guide";
+        string name = lines.Select(l => Regex.Match(l, @"^#name\s+(.*)$")).FirstOrDefault(x => x.Success)?.Groups[1].Value ?? "";
+        if (NotLeveling.IsMatch(name)) return "not a leveling guide";
+        return null;
+    }
+
+    /// <summary>A guide's group for this game: a "#group X &lt;&lt; mop" line names the group it has in that game only.</summary>
+    public static string GroupOf(string header)
+    {
+        string mine = Games.Current.HeaderTag.TrimStart('#');
+        foreach (var raw in header.Split('\n'))
+        {
+            var m = Regex.Match(Regex.Replace(raw, "--.*$", "").Trim(), @"^#group\s+(.*?)(?:\s*<<\s*(.*))?$");
+            if (!m.Success) continue;
+            if (!m.Groups[2].Success || m.Groups[2].Value.Split(new[] { '/', ' ' }, StringSplitOptions.RemoveEmptyEntries).Contains(mine, StringComparer.OrdinalIgnoreCase)) return m.Groups[1].Value.Trim();
+        }
+        return "";
+    }
+
     /// <summary>The faction a guide's "&lt;&lt; ..." line is for: named, or known from the races it names (null: either).</summary>
     public static string? SideOf(string tag)
     {
@@ -58,6 +123,7 @@ public static class RxpServices
     static readonly Regex Cmd = new(@"^\.(\w+)\s*(\d+)?(?:\s*,\s*(\d+))?", RegexOptions.Compiled);
     const int Reach = 8;                       // how many quest steps either side to look for one this guide also has
 
+    static readonly Regex UiMapGoto = new(@"^\.goto\s+(\d+)\s*,\s*(\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)(.*)$", RegexOptions.Compiled);
     static readonly Regex NamedGoto = new(@"^\.goto\s+([A-Za-z][^,]*?)\s*,\s*(\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)(.*)$", RegexOptions.Compiled);
 
     /// <summary>
@@ -67,6 +133,13 @@ public static class RxpServices
     /// </summary>
     public static string NormalizeGoto(string line, GameData data)
     {
+        // ".goto 1411,43.29,68.85": the map ID with map percent (no "/continent"), as newer guides write it
+        var u = UiMapGoto.Match(line);
+        if (u.Success && data.Areas.Values.Where(x => x.UiMap == int.Parse(u.Groups[1].Value) && x.HasBounds).OrderBy(x => data.Parent(x.Id) == x.Id ? 0 : 1).FirstOrDefault() is { } ua)
+        {
+            var w0 = ua.ToWorld(new Pt(double.Parse(u.Groups[2].Value, System.Globalization.CultureInfo.InvariantCulture), double.Parse(u.Groups[3].Value, System.Globalization.CultureInfo.InvariantCulture)));
+            return string.Create(System.Globalization.CultureInfo.InvariantCulture, $".goto {ua.UiMap}/{ua.Continent},{w0.X:0.00},{w0.Y:0.00}{u.Groups[4].Value}");
+        }
         var m = NamedGoto.Match(line);
         if (!m.Success || data.FindArea(m.Groups[1].Value.Trim()) is not { } a) return line;
         var pct = new Pt(double.Parse(m.Groups[2].Value, System.Globalization.CultureInfo.InvariantCulture), double.Parse(m.Groups[3].Value, System.Globalization.CultureInfo.InvariantCulture));
@@ -126,12 +199,16 @@ public static class RxpServices
     public static string IdOf(string tag, IEnumerable<string> lines) =>
         tag + "|" + string.Join("|", lines.Where(x => !x.StartsWith(".goto") && !x.StartsWith(">>")).Select(x => Regex.Replace(x.Trim(), @"\s+", " ")));
 
+    /// <summary>The lines of a guide above its first step.</summary>
+    public static string HeaderOf(string body) { int i = Regex.Match(body, @"(^|\n)\s*step\b").Index; return i > 0 ? body[..i] : body; }
+
     /// <summary>Every service step in the RestedXP guide files' text, by guide.</summary>
     public static List<RxpService> Read(string file, string text, GameData? data = null)
     {
         var all = new List<RxpService>();
-        foreach (Match block in Regex.Matches(text, @"RegisterGuide\(\s*\[\[(.*?)\]\]", RegexOptions.Singleline))
+        foreach (Match block in Regex.Matches(text, @"RegisterGuide\(\s*(?:""[^""]*""\s*,\s*)?\[\[(.*?)\]\]", RegexOptions.Singleline))
         {
+            if (NotFor(HeaderOf(block.Groups[1].Value)) != null) continue;
             string name = Path.GetFileNameWithoutExtension(file), faction = "", guideTag = "";
             var steps = new List<(string Tag, bool Along, List<(string Text, string Tag)> Lines)>();
             foreach (var raw in block.Groups[1].Value.Split('\n'))

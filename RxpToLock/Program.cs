@@ -15,12 +15,18 @@ public static class Program
         RxpToLock: save a RestedXP guide's step order as the lock file RouteBuilder builds a zone from.
 
           dotnet run --project RxpToLock -c Release -- --zone <name> --faction <Horde|Alliance> <guide.lua> [<guide.lua> ...]
+          dotnet run --project RxpToLock -c Release -- --game classic --zone <name> --faction <Horde|Alliance> --rxp <RestedXP Guides folder>
 
         Run it from the RouteBuilder folder (it uses QuestieDB, zones and locks from there), with the same
         --zone, --faction, --race, --class, --min-level and --max-level as the build you will run afterwards.
 
+          --game forever|classic    the game the lock is for (default: forever); its lock goes in locks/ or locks/<game>/
           --guides "<name>,<name>"  only the RestedXP guides with these #name values (default: every guide in the files)
-          --rxp <folder>            RestedXP guide folder for objective numbers (default: the folder of the first file)
+          --rxp <folder>            RestedXP guide folder for objective numbers (default: the folder of the first file).
+                                    With no guide files named, the guides are read from it: for a game other than
+                                    Forever, the ones its GuideList-<game>.xml lists (RestedXP's whole Guides folder
+                                    serves every game). Guides for another game, for Season of Discovery, for the 2x
+                                    experience rate, hardcore-only routes and non-leveling guides are passed over.
           --data <folder>           the QuestieDB folder (default: QuestieDB)
           --zone-file <path>        corrections file (default: zones/<zone name>.json if it exists)
 
@@ -48,14 +54,20 @@ public static class Program
             if (i + 1 >= argv.Length) { Console.Error.WriteLine($"{argv[i]} needs a value"); return 2; }
             opt[argv[i][2..]] = argv[++i];
         }
-        try { return Run(opt, files); }
+        try { Games.Use(opt.GetValueOrDefault("game")); return Run(opt, files); }
         catch (InvalidOperationException e) { Console.Error.WriteLine(e.Message); return 1; }
     }
 
     static int Run(Dictionary<string, string> opt, List<string> files)
     {
         if (!opt.TryGetValue("zone", out var zone)) throw new InvalidOperationException("--zone is required. Run with --help for usage.");
-        if (files.Count == 0) throw new InvalidOperationException("name at least one RestedXP guide .lua file.");
+        if (files.Count == 0 && opt.TryGetValue("rxp", out var rxpFolder))
+        {
+            rxpFolder = rxpFolder.Trim().TrimEnd('"');
+            if (!Directory.Exists(rxpFolder)) throw new InvalidOperationException($"--rxp: folder not found: {rxpFolder}");
+            files = RxpServices.GuideFiles(rxpFolder);
+        }
+        if (files.Count == 0) throw new InvalidOperationException("name at least one RestedXP guide .lua file, or give the folder with --rxp.");
         foreach (var f in files) if (!File.Exists(f)) throw new InvalidOperationException($"guide not found: {f}");
         string faction = opt.GetValueOrDefault("faction", "Horde");
         faction = faction.Equals("alliance", StringComparison.OrdinalIgnoreCase) ? "Alliance" : faction.Equals("horde", StringComparison.OrdinalIgnoreCase) ? "Horde"
@@ -72,7 +84,7 @@ public static class Program
         var data = GameData.Load(opt.GetValueOrDefault("data", "QuestieDB"));
         var area = data.FindArea(zone) ?? throw new InvalidOperationException($"No zone called '{zone}'.");
         if (ZoneModel.CityParent(area.Id) is { } parent) throw new InvalidOperationException($"{area.Name} is planned as part of {data.AreaName(parent)}; run this for that zone instead");
-        string? zoneFile = opt.GetValueOrDefault("zone-file") ?? new[] { Path.Combine("zones", area.Name + ".json") }.FirstOrDefault(File.Exists);
+        string? zoneFile = opt.GetValueOrDefault("zone-file") ?? new[] { Path.Combine(Games.Current.Folder("zones"), area.Name + ".json") }.FirstOrDefault(File.Exists);
         var cfg = zoneFile != null ? ZoneConfig.Load(zoneFile) : null;
         Console.WriteLine($"{area.Name} ({faction}{(bo.Race != null ? ", " + bo.Race : "")}{(bo.Class != null ? ", " + bo.Class : "")}){(zoneFile != null ? "  using " + zoneFile : "")}");
 
@@ -145,6 +157,7 @@ public static class Program
             }
         if (guides.Count == 0) throw new InvalidOperationException(only != null ? "none of the --guides names were found in the files" : "no RestedXP guides found in the files");
         Console.WriteLine($"Read {hits.Count} pickups, objectives and hand-ins from: {string.Join(", ", guides)}");
+        if (Skipped.Count > 0) Console.WriteLine($"Passed over: {string.Join(", ", Skipped.OrderByDescending(kv => kv.Value).Select(kv => $"{kv.Value} {kv.Key}"))}");
         if (notOurs.Count > 0) Console.WriteLine($"Not followed (RestedXP offers them to some characters only): {string.Join(", ", notOurs)}");
 
         // setting the hearthstone counts only where it is done on this zone's maps, in a guide that does its quests
@@ -247,13 +260,16 @@ public static class Program
     }
 
     sealed record Step(string Tag, bool Along, List<(string Text, string Tag)> Lines);
+    static readonly Dictionary<string, int> Skipped = new();
 
     /// <summary>The guides in a RestedXP file: each RegisterGuide block's #name and its steps, comments removed.</summary>
     static IEnumerable<(string Name, string Tag, List<Step> Steps)> ReadGuides(string file, string faction, GameData data)
     {
         string text = File.ReadAllText(file);
-        foreach (Match block in Regex.Matches(text, @"RegisterGuide\(\s*\[\[(.*?)\]\]", RegexOptions.Singleline))
+        foreach (Match block in Regex.Matches(text, @"RegisterGuide\(\s*(?:""[^""]*""\s*,\s*)?\[\[(.*?)\]\]", RegexOptions.Singleline))
         {
+            // RestedXP's Guides folder serves every game: leave out guides for other games, Season of Discovery, the 2x rate...
+            if (RxpServices.NotFor(RxpServices.HeaderOf(block.Groups[1].Value)) is { } why) { Skipped[why] = Skipped.GetValueOrDefault(why) + 1; continue; }
             string name = "?", side = "", guideTag = ""; var steps = new List<Step>(); Step? cur = null;
             foreach (var raw in block.Groups[1].Value.Split('\n'))
             {

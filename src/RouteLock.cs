@@ -76,7 +76,7 @@ public sealed class RouteLock
             : bo.Faction;
         string range = bo.MinLevel != null && bo.MaxLevel != null ? $" {bo.MinLevel}-{bo.MaxLevel}"
                      : bo.MinLevel != null ? $" from {bo.MinLevel}" : bo.MaxLevel != null ? $" to {bo.MaxLevel}" : "";
-        return Path.Combine("locks", $"{zone}{range} ({who}).json");
+        return Path.Combine(Games.Current.Folder("locks"), $"{zone}{range} ({who}).json");
     }
 
     public static RouteLock? Load(string path)

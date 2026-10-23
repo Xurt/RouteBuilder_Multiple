@@ -7,6 +7,6 @@ settings.json
 build.cmd
 tempforever/
 forever/
-locks/*.bak
+locks/**/*.bak
 rebuild.log
 Rebuild.txt

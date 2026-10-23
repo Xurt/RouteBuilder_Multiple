@@ -1,0 +1,483 @@
+Hillsbrad Foothills - Horde - part 1 of 7, planned from level 20
+Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 45 steps, 27 stops
+Written to guides/classic/Hillsbrad Foothills (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 20. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 19 steps kept, 7 new ones slotted in, 3 moved because their prerequisites changed, 78 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 12 tasks, 5,412 yd on foot; ends at level 20.3; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 13 more tasks; their whole route comes to 9,313 yd; ends at level 20.3; at its hardest you are 8.7 levels below the mobs
+  Rogue (quests that depend on other zones): 4 more tasks; their whole route comes to 9,328 yd; ends at level 20.3; at its hardest you are 8.7 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+13 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (15)
+------------------------
+Start to finish here: 4 (4 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (8):
+  Journey to Tarren Mill [1065, level 18] <- Thunder Bluff
+  Journey to Hillsbrad Foothills [493, level 20] <- Silverpine Forest
+  Hinott's Assistance [2479, level 26, Rogue] <- Orgrimmar
+  Elixir of Agony [515, level 30] <- Undercity
+  Blackmoore's Legacy [506, level 36] <- Alterac Mountains
+  The Crown of Will [495, level 39] <- Undercity
+  Taretha's Gift [508, level 40] <- Alterac Mountains
+  Venom Bottles [2933, level 43] <- The Hinterlands
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Hinott's Assistance [2480, level 20, Rogue] - needs one of Hinott's Assistance [2479]
+  Blood of Innocents [1066, level 23] - needs one of Journey to Tarren Mill [1065]
+  Return to Thunder Bluff [1067, level 23] - needs one of Blood of Innocents [1066] -> Thunder Bluff
+
+Worth checking in game
+----------------------
+  WANTED: Syndicate Personnel [549, level 22]: could not read how many Syndicate Watchman are needed from the quest text; assumed 8
+
+Put off to a later part (34)
+----------------------------
+These need a higher level than this part ends at:
+  The Rescue [498, level 22]: its mobs are level 24; this part gets you to about 21.2
+  Elixir of Pain [501, level 24]: needs level 21; this part gets you to about 21.2
+  Elixir of Pain [502, level 24]: needs level 21; this part gets you to about 21.2
+  Gol'dir [503, level 36]: needs level 29; this part gets you to about 22.3
+  Lord Aliden Perenolde [507, level 42]: needs level 29; this part gets you to about 22.3
+  Elixir of Agony [509, level 28]: is a level 28 quest; this part gets you to about 22.3
+  Elixir of Agony [513, level 28]: needs level 24; this part gets you to about 22.3
+  Elixir of Agony [517, level 30]: is a level 30 quest; this part gets you to about 22.3
+  The Crown of Will [518, level 39]: needs level 34; this part gets you to about 22.3
+  The Crown of Will [519, level 41]: needs level 34; this part gets you to about 22.3
+  The Crown of Will [520, level 43]: needs level 34; this part gets you to about 22.3
+  The Crown of Will [521, level 43]: needs level 34; this part gets you to about 22.3
+  Elixir of Agony [524, level 30]: needs level 24; this part gets you to about 22.3
+  Battle of Hillsbrad [527, level 24]: its mobs are level 24; this part gets you to about 21.2
+  Battle of Hillsbrad [528, level 25]: its mobs are level 24; this part gets you to about 21.2
+  Battle of Hillsbrad [529, level 26]: its mobs are level 26; this part gets you to about 22.3
+  Battle of Hillsbrad [532, level 26]: its mobs are level 30; this part gets you to about 22.3
+  Infiltration [533, level 34]: needs level 29; this part gets you to about 22.3
+  Battle of Hillsbrad [539, level 28]: its mobs are level 30; this part gets you to about 22.3
+  Battle of Hillsbrad [541, level 30]: its mobs are level 32; this part gets you to about 22.3
+  Prison Break In [544, level 34]: needs level 30; this part gets you to about 22.3
+  Dalaran Patrols [545, level 35]: needs level 30; this part gets you to about 22.3
+  Souvenirs of Death [546, level 25]: follows Battle of Hillsbrad [527]
+  Humbert's Sword [547, level 30]: needs level 26; this part gets you to about 22.3
+  Battle of Hillsbrad [550, level 32]: follows Battle of Hillsbrad [541]
+  Helcular's Revenge [552, level 33]: needs level 29; this part gets you to about 22.3
+  Helcular's Revenge [553, level 33]: is a level 33 quest; this part gets you to about 22.3
+  Stone Tokens [556, level 32]: needs level 30; this part gets you to about 22.3
+  Bracers of Binding [557, level 34]: needs level 30; this part gets you to about 22.3
+  WANTED: Baron Vardus [566, level 40]: needs level 35; this part gets you to about 22.3
+  Dangerous! [567, level 28]: its mobs are level 29; this part gets you to about 22.3
+  Crystal in the Mountains [635, level 35]: needs level 30; this part gets you to about 22.3
+  The Hammer May Fall [676, level 32]: needs level 30; this part gets you to about 22.3
+  Regthar Deathgate [1361, level 32]: needs level 30; this part gets you to about 22.3
+
+Left out (9)
+------------
+above this zone's range of 20-43 (4):
+  Undamaged Venom Sac [2934], Consult Master Gadrin [2935], Summoning Shadra [2937], Venom to the Undercity [2938]
+special category (sort -22) (2):
+  Rotten Eggs [8322], Ruined Kegs [8409]
+dungeon quest (1):
+  Vorrel's Revenge [1051]
+repeatable (1):
+  Syndicate Emblems [6701]
+needs a profession (1):
+  Soothing Turtle Bisque [7321]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Hillsbrad Foothills - Horde - part 2 of 7, planned from level 23
+Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 22 steps, 17 stops
+Written to guides/classic/Hillsbrad Foothills (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 23. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 18 steps kept, 2 new ones slotted in, 3 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 23 tasks, 10,581 yd on foot; ends at level 23.7; at its hardest you are 2.5 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (6)
+-----------------------
+Start to finish here: 6 (6 for everyone)
+
+Worth checking in game
+----------------------
+  Battle of Hillsbrad [527, level 24]: could not read how many Farmer Getz are needed from the quest text; assumed 8
+
+Put off to a later part (28)
+----------------------------
+These need a higher level than this part ends at:
+  Gol'dir [503, level 36]: needs level 29; this part gets you to about 24.6
+  Lord Aliden Perenolde [507, level 42]: needs level 29; this part gets you to about 24.6
+  Elixir of Agony [509, level 28]: is a level 28 quest; this part gets you to about 24.6
+  Elixir of Agony [513, level 28]: follows Elixir of Agony [509]
+  Elixir of Agony [517, level 30]: is a level 30 quest; this part gets you to about 24.6
+  The Crown of Will [518, level 39]: needs level 34; this part gets you to about 24.6
+  The Crown of Will [519, level 41]: needs level 34; this part gets you to about 24.6
+  The Crown of Will [520, level 43]: needs level 34; this part gets you to about 24.6
+  The Crown of Will [521, level 43]: needs level 34; this part gets you to about 24.6
+  Elixir of Agony [524, level 30]: follows Elixir of Agony [517]
+  Battle of Hillsbrad [529, level 26]: its mobs are level 26; this part gets you to about 23.8
+  Battle of Hillsbrad [532, level 26]: its mobs are level 30; this part gets you to about 24.6
+  Infiltration [533, level 34]: needs level 29; this part gets you to about 24.6
+  Battle of Hillsbrad [539, level 28]: its mobs are level 30; this part gets you to about 24.6
+  Battle of Hillsbrad [541, level 30]: its mobs are level 32; this part gets you to about 24.6
+  Prison Break In [544, level 34]: needs level 30; this part gets you to about 24.6
+  Dalaran Patrols [545, level 35]: needs level 30; this part gets you to about 24.6
+  Humbert's Sword [547, level 30]: needs level 26; this part gets you to about 24.6
+  Battle of Hillsbrad [550, level 32]: follows Battle of Hillsbrad [541]
+  Helcular's Revenge [552, level 33]: needs level 29; this part gets you to about 24.6
+  Helcular's Revenge [553, level 33]: is a level 33 quest; this part gets you to about 24.6
+  Stone Tokens [556, level 32]: needs level 30; this part gets you to about 24.6
+  Bracers of Binding [557, level 34]: needs level 30; this part gets you to about 24.6
+  WANTED: Baron Vardus [566, level 40]: needs level 35; this part gets you to about 24.6
+  Dangerous! [567, level 28]: its mobs are level 29; this part gets you to about 24.6
+  Crystal in the Mountains [635, level 35]: needs level 30; this part gets you to about 24.6
+  The Hammer May Fall [676, level 32]: needs level 30; this part gets you to about 24.6
+  Regthar Deathgate [1361, level 32]: needs level 30; this part gets you to about 24.6
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Hillsbrad Foothills - Horde - part 3 of 7, planned from level 26
+Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 11 steps, 8 stops
+Written to guides/classic/Hillsbrad Foothills (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 26. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 9 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 9 tasks, 4,125 yd on foot; ends at level 26.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+
+Quests in the guide (3)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Elixir of Agony [513, level 28] -> Undercity
+
+Worth checking in game
+----------------------
+
+Put off to a later part (25)
+----------------------------
+These need a higher level than this part ends at:
+  Gol'dir [503, level 36]: needs level 29; this part gets you to about 26.7
+  Lord Aliden Perenolde [507, level 42]: needs level 29; this part gets you to about 26.7
+  Elixir of Agony [517, level 30]: is a level 30 quest; this part gets you to about 26.7
+  The Crown of Will [518, level 39]: needs level 34; this part gets you to about 26.7
+  The Crown of Will [519, level 41]: needs level 34; this part gets you to about 26.7
+  The Crown of Will [520, level 43]: needs level 34; this part gets you to about 26.7
+  The Crown of Will [521, level 43]: needs level 34; this part gets you to about 26.7
+  Elixir of Agony [524, level 30]: follows Elixir of Agony [517]
+  Battle of Hillsbrad [532, level 26]: its mobs are level 30; this part gets you to about 26.7
+  Infiltration [533, level 34]: needs level 29; this part gets you to about 26.7
+  Battle of Hillsbrad [539, level 28]: its mobs are level 30; this part gets you to about 26.7
+  Battle of Hillsbrad [541, level 30]: its mobs are level 32; this part gets you to about 26.7
+  Prison Break In [544, level 34]: needs level 30; this part gets you to about 26.7
+  Dalaran Patrols [545, level 35]: needs level 30; this part gets you to about 26.7
+  Humbert's Sword [547, level 30]: needs level 26; this part gets you to about 26.2
+  Battle of Hillsbrad [550, level 32]: follows Battle of Hillsbrad [541]
+  Helcular's Revenge [552, level 33]: needs level 29; this part gets you to about 26.7
+  Helcular's Revenge [553, level 33]: is a level 33 quest; this part gets you to about 26.7
+  Stone Tokens [556, level 32]: needs level 30; this part gets you to about 26.7
+  Bracers of Binding [557, level 34]: needs level 30; this part gets you to about 26.7
+  WANTED: Baron Vardus [566, level 40]: needs level 35; this part gets you to about 26.7
+  Dangerous! [567, level 28]: its mobs are level 29; this part gets you to about 26.7
+  Crystal in the Mountains [635, level 35]: needs level 30; this part gets you to about 26.7
+  The Hammer May Fall [676, level 32]: needs level 30; this part gets you to about 26.7
+  Regthar Deathgate [1361, level 32]: needs level 30; this part gets you to about 26.7
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Hillsbrad Foothills - Horde - part 4 of 7, planned from level 29
+Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 35 steps, 31 stops
+Written to guides/classic/Hillsbrad Foothills (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+4 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 29. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 23 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 23 tasks, 9,969 yd on foot; ends at level 29.4; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 10,167 yd; ends at level 29.4; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (10)
+------------------------
+Start to finish here: 5 (5 for everyone)
+
+Hand-in step only shows once complete (1):
+  Infiltration [533, level 34] - needs Syndicate Missive (1) (Alterac Mountains)
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Elixir of Agony [517, level 30] - needs one of Elixir of Agony [515]
+  Elixir of Agony [524, level 30] - needs one of Elixir of Agony [517]
+  Gol'dir [503, level 36] - needs one of Infiltration [533] -> Alterac Mountains
+  Lord Aliden Perenolde [507, level 42] - needs one of Blackmoore's Legacy [506] -> Alterac Mountains
+
+Worth checking in game
+----------------------
+  Gol'dir [503, level 36]: "Find where Gol'dir is being held" is assumed to be line 3 in the quest log; check it
+  Battle of Hillsbrad [532, level 26]: could not read how many Hillsbrad Councilman are needed from the quest text; assumed 8
+
+Put off to a later part (15)
+----------------------------
+These need a higher level than this part ends at:
+  The Crown of Will [518, level 39]: needs level 34; this part gets you to about 29.5
+  The Crown of Will [519, level 41]: needs level 34; this part gets you to about 29.5
+  The Crown of Will [520, level 43]: needs level 34; this part gets you to about 29.5
+  The Crown of Will [521, level 43]: needs level 34; this part gets you to about 29.5
+  Battle of Hillsbrad [541, level 30]: its mobs are level 32; this part gets you to about 29.5
+  Prison Break In [544, level 34]: needs level 30; this part gets you to about 29.5
+  Dalaran Patrols [545, level 35]: needs level 30; this part gets you to about 29.5
+  Battle of Hillsbrad [550, level 32]: follows Battle of Hillsbrad [541]
+  Helcular's Revenge [553, level 33]: is a level 33 quest; this part gets you to about 29.5
+  Stone Tokens [556, level 32]: needs level 30; this part gets you to about 29.5
+  Bracers of Binding [557, level 34]: needs level 30; this part gets you to about 29.5
+  WANTED: Baron Vardus [566, level 40]: needs level 35; this part gets you to about 29.5
+  Crystal in the Mountains [635, level 35]: needs level 30; this part gets you to about 29.5
+  The Hammer May Fall [676, level 32]: needs level 30; this part gets you to about 29.5
+  Regthar Deathgate [1361, level 32]: needs level 30; this part gets you to about 29.5
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Hillsbrad Foothills - Horde - part 5 of 7, planned from level 32
+Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 25 steps, 22 stops
+Written to guides/classic/Hillsbrad Foothills (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 8 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 32. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 11 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 14 tasks, 3,502 yd on foot; ends at level 32.1
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 4,175 yd; ends at level 32.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+  Helcular's Revenge: its hand-in spot is not passed again, so the step sits at the end of the guide.
+
+Quests in the guide (11)
+------------------------
+Start to finish here: 1 (1 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (4):
+  Battle of Hillsbrad [550, level 32] -> Undercity
+  The Hammer May Fall [676, level 32] -> Arathi Highlands
+  Regthar Deathgate [1361, level 32] -> The Barrens
+  Crystal in the Mountains [635, level 35] -> Arathi Highlands
+
+Hand-in step only shows once complete (3):
+  Stone Tokens [556, level 32] - needs Worn Stone Token (10) (Alterac Mountains)
+  Helcular's Revenge [553, level 33] - needs Flame of Uzel charged (Alterac Mountains)
+  Prison Break In [544, level 34] - needs Bloodstone Wedge (1) (Alterac Mountains); Bloodstone Marble (1) (Alterac Mountains); Bloodstone Shard (1) (Alterac Mountains); Bloodstone Oval (1) (Alterac Mountains)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Infiltration [533, level 34] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Bracers of Binding [557, level 34] - needs one of Stone Tokens [556]
+  Dalaran Patrols [545, level 35] - needs one of Prison Break In [544]
+
+Worth checking in game
+----------------------
+  Battle of Hillsbrad [541, level 30]: could not read how many Dun Garok Rifleman are needed from the quest text; assumed 8
+  Battle of Hillsbrad [541, level 30]: could not read how many Captain Ironhill are needed from the quest text; assumed 8
+
+Put off to a later part (5)
+---------------------------
+These need a higher level than this part ends at:
+  The Crown of Will [518, level 39]: needs level 34; this part gets you to about 32.1
+  The Crown of Will [519, level 41]: needs level 34; this part gets you to about 32.1
+  The Crown of Will [520, level 43]: needs level 34; this part gets you to about 32.1
+  The Crown of Will [521, level 43]: needs level 34; this part gets you to about 32.1
+  WANTED: Baron Vardus [566, level 40]: needs level 35; this part gets you to about 32.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Hillsbrad Foothills - Horde - part 6 of 7, planned from level 35
+Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 15 steps, 13 stops
+Written to guides/classic/Hillsbrad Foothills (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 35. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 3 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 35.0
+  everyone (quests that depend on other zones): 9 more tasks; their whole route comes to 1,362 yd; ends at level 35.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Hand-in step only shows once complete (1):
+  The Crown of Will [518, level 39] - needs Crushridge Mauler slain (10) (Alterac Mountains)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Stone Tokens [556, level 32] <- your earlier visit to this zone
+  Helcular's Revenge [553, level 33] <- your earlier visit to this zone
+  Infiltration [533, level 34] <- your earlier visit to this zone
+  Prison Break In [544, level 34] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  The Crown of Will [519, level 41] - needs one of The Crown of Will [518]
+  The Crown of Will [520, level 43] - needs one of The Crown of Will [519]
+  The Crown of Will [521, level 43] - needs one of The Crown of Will [520] -> Undercity
+
+Worth checking in game
+----------------------
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  WANTED: Baron Vardus [566, level 40]: needs level 35; this part gets you to about 35.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Hillsbrad Foothills - Horde - part 7 of 7, planned from level 38
+Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 10 steps, 9 stops
+Written to guides/classic/Hillsbrad Foothills (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 38. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 3 steps kept, 5 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 38.0
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 1,367 yd; ends at level 38.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (6)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Hand-in step only shows once complete (1):
+  WANTED: Baron Vardus [566, level 40] - needs Head of Baron Vardus (1) (Alterac Mountains)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Stone Tokens [556, level 32] <- your earlier visit to this zone
+  Helcular's Revenge [553, level 33] <- your earlier visit to this zone
+  Infiltration [533, level 34] <- your earlier visit to this zone
+  Prison Break In [544, level 34] <- your earlier visit to this zone
+  The Crown of Will [518, level 39] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

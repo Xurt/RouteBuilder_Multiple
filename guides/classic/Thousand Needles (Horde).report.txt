@@ -1,0 +1,292 @@
+Thousand Needles - Horde - part 1 of 4, planned from level 25
+Guide "25-37 Thousand Needles" in group "Zone Routes (Horde)": this part has 50 steps, 36 stops
+Written to guides/classic/Thousand Needles (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+3 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 25. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 36 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed, 68 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 28 tasks, 8,300 yd on foot; ends at level 25.5; at its hardest you are 1.7 levels below the mobs
+  everyone (quests that depend on other zones): 12 more tasks; their whole route comes to 10,841 yd; ends at level 25.5; 1 hearth; at its hardest you are 2.5 levels below the mobs
+  Shaman (quests that depend on other zones): 2 more tasks; their whole route comes to 11,127 yd; ends at level 25.5; 1 hearth; at its hardest you are 2.5 levels below the mobs
+  Mage (quests that depend on other zones): 1 more tasks; their whole route comes to 10,867 yd; ends at level 25.5; 1 hearth; at its hardest you are 2.5 levels below the mobs
+Hearthstone: set at Innkeeper Abeqwa (Innkeeper Abeqwa's inn); 0 hearth steps in the guide.
+11 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (22)
+------------------------
+Start to finish here: 8 (8 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Sacred Fire [5062, level 27] -> Thunder Bluff
+
+Brought in from another zone and handed in here - steps show only if you have the quest (13):
+  Arikara [5088, level 28] <- Thunder Bluff
+  Calling in the Reserves [5881, level 28] <- Stonetalon Mountains
+  The Sacred Flame [1196, level 29] <- Thunder Bluff
+  Call of Air [1531, level 30, Shaman] <- Orgrimmar
+  Call of Air [1532, level 30, Shaman] <- Thunder Bluff
+  The Swarm Grows [1146, level 33] <- Orgrimmar
+  Parts for Kravel [1112, level 36] <- The Barrens
+  Rumors for Kravel [1117, level 36] <- Stranglethorn Vale
+  Final Passage [1394, level 36] <- Undercity
+  Goblin Sponsorship [1183, level 37] <- Stranglethorn Vale
+  News for Fizzle [1137, level 38] <- Badlands
+  Hidden Secrets [1949, level 38, Mage] <- Dustwallow Marsh
+  Safety First [1189, level 41] <- Tanaris
+
+Worth checking in game
+----------------------
+  Protect Kanati Greycloud [4966, level 28]: could not read how many Galak Assassin are needed from the quest text; assumed 8
+
+Put off to a later part (33)
+----------------------------
+These need a higher level than this part ends at:
+  Crystal in the Mountains [635, level 35]: needs level 30; this part gets you to about 26.7
+  Salt Flat Venom [1104, level 30]: its mobs are level 31; this part gets you to about 26.7
+  Hardened Shells [1105, level 30]: its mobs are level 32; this part gets you to about 26.7
+  Martek the Exiled [1106, level 35]: follows Salt Flat Venom [1104]
+  Encrusted Tail Fins [1107, level 35]: needs level 28; this part gets you to about 26.7
+  Rocket Car Parts [1110, level 31]: needs level 28; this part gets you to about 26.7
+  Wharfmaster Dizzywig [1111, level 36]: needs level 30; this part gets you to about 26.7
+  Delivery to the Gnomes [1114, level 36]: needs level 30; this part gets you to about 26.7
+  The Rumormonger [1115, level 36]: needs level 30; this part gets you to about 26.7
+  Back to Booty Bay [1118, level 43]: needs level 35; this part gets you to about 26.7
+  The Swarm Grows [1147, level 35]: its mobs are level 34; this part gets you to about 26.7
+  Parts of the Swarm [1148, level 35]: its mobs are level 33; this part gets you to about 26.7
+  Test of Endurance [1150, level 30]: its mobs are level 31; this part gets you to about 26.7
+  Test of Strength [1151, level 30]: its mobs are level 30; this part gets you to about 26.7
+  Test of Lore [1152, level 30]: follows Test of Strength [1151]
+  A Bump in the Road [1175, level 33]: its mobs are level 34; this part gets you to about 26.7
+  Load Lightening [1176, level 30]: needs level 29; this part gets you to about 26.7
+  Goblin Sponsorship [1178, level 37]: needs level 29; this part gets you to about 26.7
+  The Eighteenth Pilot [1186, level 37]: needs level 29; this part gets you to about 26.7
+  Razzeric's Tweaking [1187, level 41]: needs level 29; this part gets you to about 26.7
+  Safety First [1188, level 41]: needs level 29; this part gets you to about 26.7
+  Keeping Pace [1190, level 41]: needs level 29; this part gets you to about 26.7
+  Rizzle's Schematics [1194, level 41]: needs level 29; this part gets you to about 26.7
+  The Sacred Flame [1197, level 29]: is a level 29 quest; this part gets you to about 25.7
+  Get the Scoop [1950, level 30]: needs level 30; this part gets Mage characters to about 26.7
+  Rituals of Power [1951, level 40]: needs level 30; this part gets Mage characters to about 26.7
+  Wind Rider [4767, level 29]: is a level 29 quest; this part gets you to about 25.7
+  Homeward Bound [4770, level 29]: is a level 29 quest; this part gets you to about 25.7
+  Free at Last [4904, level 29]: is a level 29 quest; this part gets you to about 25.7
+  Wanted - Arnak Grimtotem [5147, level 29]: its mobs are level 29; this part gets you to about 26.7
+  Hypercapacitor Gizmo [5151, level 30]: its mobs are level 30; this part gets you to about 26.7
+  Family Tree [5361, level 35]: needs level 32; this part gets you to about 26.7
+  Hemet Nesingwary [5762, level 31]: needs level 28; this part gets you to about 26.7
+
+Left out (9)
+------------
+above this zone's range of 25-43 (5):
+  Zanzil's Mixture and a Fool's Stout [1119], Get the Gnomes Drunk [1120], Get the Goblins Drunk [1121], Report Back to Fizzlebub [1122], Gahz'rilla [2770]
+repeatable (2):
+  Zamek's Distraction [1191], Indurium Ore [1192]
+special category (sort -366) (2):
+  Skyseer the Elder [8682], Morningdew the Elder [8724]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Thousand Needles - Horde - part 2 of 4, planned from level 28
+Guide "25-37 Thousand Needles" in group "Zone Routes (Horde)": this part has 23 steps, 21 stops
+Written to guides/classic/Thousand Needles (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 28. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 22 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 19 tasks, 9,008 yd on foot; ends at level 28.4; at its hardest you are 1.9 levels below the mobs
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 10,276 yd; ends at level 28.4; at its hardest you are 1.9 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 6 (6 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Hemet Nesingwary [5762, level 31] -> Stranglethorn Vale
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  The Sacred Flame [1197, level 29] - needs one of The Sacred Flame [1196]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (25)
+----------------------------
+These need a higher level than this part ends at:
+  Crystal in the Mountains [635, level 35]: needs level 30; this part gets you to about 29.0
+  Salt Flat Venom [1104, level 30]: its mobs are level 31; this part gets you to about 28.6
+  Hardened Shells [1105, level 30]: its mobs are level 32; this part gets you to about 29.0
+  Martek the Exiled [1106, level 35]: follows Hardened Shells [1105]
+  Encrusted Tail Fins [1107, level 35]: follows Hardened Shells [1105]
+  Wharfmaster Dizzywig [1111, level 36]: needs level 30; this part gets you to about 29.0
+  Delivery to the Gnomes [1114, level 36]: needs level 30; this part gets you to about 29.0
+  The Rumormonger [1115, level 36]: needs level 30; this part gets you to about 29.0
+  Back to Booty Bay [1118, level 43]: needs level 35; this part gets you to about 29.0
+  The Swarm Grows [1147, level 35]: its mobs are level 34; this part gets you to about 29.0
+  Parts of the Swarm [1148, level 35]: its mobs are level 33; this part gets you to about 29.0
+  Test of Endurance [1150, level 30]: its mobs are level 31; this part gets you to about 28.6
+  Test of Strength [1151, level 30]: follows Test of Endurance [1150]
+  Test of Lore [1152, level 30]: follows Test of Strength [1151]
+  A Bump in the Road [1175, level 33]: its mobs are level 34; this part gets you to about 29.0
+  Load Lightening [1176, level 30]: needs level 29; this part gets you to about 29.0
+  Goblin Sponsorship [1178, level 37]: needs level 29; this part gets you to about 29.0
+  The Eighteenth Pilot [1186, level 37]: needs level 29; this part gets you to about 29.0
+  Razzeric's Tweaking [1187, level 41]: needs level 29; this part gets you to about 29.0
+  Safety First [1188, level 41]: needs level 29; this part gets you to about 29.0
+  Keeping Pace [1190, level 41]: needs level 29; this part gets you to about 29.0
+  Rizzle's Schematics [1194, level 41]: needs level 29; this part gets you to about 29.0
+  Get the Scoop [1950, level 30]: needs level 30; this part gets Mage characters to about 29.0
+  Rituals of Power [1951, level 40]: needs level 30; this part gets Mage characters to about 29.0
+  Family Tree [5361, level 35]: needs level 32; this part gets you to about 29.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Thousand Needles - Horde - part 3 of 4, planned from level 31
+Guide "25-37 Thousand Needles" in group "Zone Routes (Horde)": this part has 38 steps, 36 stops
+Written to guides/classic/Thousand Needles (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 31. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 21 steps kept, 15 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 21 tasks, 9,363 yd on foot; ends at level 31.4
+  everyone (quests that depend on other zones): 11 more tasks; their whole route comes to 9,897 yd; ends at level 31.4
+  Mage (quests that depend on other zones): 4 more tasks; their whole route comes to 9,946 yd; ends at level 31.4
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (20)
+------------------------
+Start to finish here: 5 (5 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (5):
+  Test of Lore [1152, level 30] -> Stonetalon Mountains
+  Crystal in the Mountains [635, level 35] -> Arathi Highlands
+  Martek the Exiled [1106, level 35] -> Badlands
+  Wharfmaster Dizzywig [1111, level 36] -> The Barrens
+  Goblin Sponsorship [1178, level 37] -> The Barrens
+
+Hand-in step only shows once complete (1):
+  Encrusted Tail Fins [1107, level 35] - needs Encrusted Tail Fin (10) (Stranglethorn Vale)
+
+Need a quest this guide does not hand in - steps show only once that is done (9):
+  Get the Scoop [1950, level 30, Mage] - needs one of Hidden Secrets [1949]
+  Delivery to the Gnomes [1114, level 36] - needs one of Parts for Kravel [1112]
+  The Rumormonger [1115, level 36] - needs one of Delivery to the Gnomes [1114] -> Stranglethorn Vale
+  The Eighteenth Pilot [1186, level 37] - needs one of Goblin Sponsorship [1183]
+  Rituals of Power [1951, level 40, Mage] - needs one of Get the Scoop [1950] -> Dustwallow Marsh
+  Razzeric's Tweaking [1187, level 41] - needs one of The Eighteenth Pilot [1186]
+  Safety First [1188, level 41] - needs one of Razzeric's Tweaking [1187] -> Tanaris
+  Keeping Pace [1190, level 41] - needs one of News for Fizzle [1137]
+  Rizzle's Schematics [1194, level 41] - needs one of Keeping Pace [1190]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (5)
+---------------------------
+These need a higher level than this part ends at:
+  Back to Booty Bay [1118, level 43]: needs level 35; this part gets you to about 31.5
+  The Swarm Grows [1147, level 35]: its mobs are level 34; this part gets you to about 31.5
+  Parts of the Swarm [1148, level 35]: follows The Swarm Grows [1147]
+  A Bump in the Road [1175, level 33]: its mobs are level 34; this part gets you to about 31.5
+  Family Tree [5361, level 35]: needs level 32; this part gets you to about 31.5
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Thousand Needles - Horde - part 4 of 4, planned from level 34
+Guide "25-37 Thousand Needles" in group "Zone Routes (Horde)": this part has 18 steps, 15 stops
+Written to guides/classic/Thousand Needles (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 34. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 14 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 6 tasks, 3,764 yd on foot; ends at level 34.1
+  everyone (quests that depend on other zones): 9 more tasks; their whole route comes to 6,632 yd; ends at level 34.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (5)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Family Tree [5361, level 35] -> Desolace
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Encrusted Tail Fins [1107, level 35] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  The Swarm Grows [1147, level 35] - needs one of The Swarm Grows [1146]
+  Parts of the Swarm [1148, level 35] - needs one of The Swarm Grows [1146] -> The Barrens
+
+Worth checking in game
+----------------------
+
+Not planned (1)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Back to Booty Bay [1118, level 43]: needs level 35; this part gets you to about 34.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,173 @@
+Desolace - Alliance - part 1 of 3, planned from level 31
+Guide "31-40 Desolace" in group "Zone Routes (Alliance)": this part has 33 steps, 27 stops
+Written to guides/classic/Desolace (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 31. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 26 steps kept, 3 new ones slotted in, 1 moved because their prerequisites changed, 38 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 20 tasks, 13,403 yd on foot; ends at level 31.6; at its hardest you are 3.6 levels below the mobs
+  everyone (quests that depend on other zones): 10 more tasks; their whole route comes to 14,435 yd; ends at level 31.6; at its hardest you are 3.6 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (14)
+------------------------
+Start to finish here: 8 (8 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Crystal in the Mountains [635, level 35] -> Arathi Highlands
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Reclaimers' Business in Desolace [1453, level 33] <- Ironforge
+  Brother Anton [6141, level 39] <- Stormwind City
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Reagents for Reclaimers Inc. [1458, level 33] - needs one of Reclaimers' Business in Desolace [1453]
+  The Karnitol Shipwreck [1454, level 39] - needs one of Reclaimers' Business in Desolace [1453]
+  The Karnitol Shipwreck [1455, level 39] - needs one of The Karnitol Shipwreck [1454]
+
+Worth checking in game
+----------------------
+  Strange Alliance [1382, level 35]: has a reputation or spell objective, which is not planned
+  Brutal Politics [1385, level 35]: has a reputation or spell objective, which is not planned
+
+Put off to a later part (16)
+----------------------------
+These need a higher level than this part ends at:
+  Down the Scarlet Path [261, level 39]: its mobs are level 37; this part gets you to about 32.2
+  Down the Scarlet Path [1052, level 40]: needs level 34; this part gets you to about 32.2
+  Search for Tyranis [1439, level 33]: its mobs are level 36; this part gets you to about 32.2
+  Return to Vahlarriel [1440, level 33]: follows Search for Tyranis [1439]
+  The Karnitol Shipwreck [1456, level 39]: its mobs are level 35; this part gets you to about 32.2
+  The Karnitol Shipwreck [1457, level 39]: follows The Karnitol Shipwreck [1456]
+  Reagents for Reclaimers Inc. [1459, level 35]: its mobs are level 34; this part gets you to about 31.7
+  Reagents for Reclaimers Inc. [1466, level 40]: its mobs are level 39; this part gets you to about 32.2
+  Reagents for Reclaimers Inc. [1467, level 40]: follows Reagents for Reclaimers Inc. [1466]
+  Bone Collector [5501, level 39]: is a level 39 quest; this part gets you to about 32.2
+  Kodo Roundup [5561, level 34]: its mobs are level 34; this part gets you to about 31.7
+  Bodyguard for Hire [5821, level 35]: is a level 35 quest; this part gets you to about 31.7
+  Gizelton Caravan [5943, level 38]: is a level 38 quest; this part gets you to about 32.2
+  Book of the Ancients [6027, level 38]: its mobs are level 38; this part gets you to about 32.2
+  Get Me Out of Here! [6132, level 39]: is a level 39 quest; this part gets you to about 32.2
+  Ghost-o-plasm Round Up [6134, level 39]: its mobs are level 38; this part gets you to about 32.2
+
+Left out (15)
+-------------
+needs reputation (10):
+  Broken Tears [1369], Stealing Supplies [1370], Gizmo for Warug [1371], Ongeku [1373], Khan Jehn [1374], Khan Shaka [1375], Khan Hratha [1380], Khan Hratha [1381], Raid on the Kolkar [1384], Assault on the Kolkar [1386]
+dungeon quest (5):
+  Twisted Evils [7028], Vyletongue Corruption [7041], Legends of Maraudon [7044], Corruption of Earth and Seed [7065], The Pariah's Instructions [7067]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Desolace - Alliance - part 2 of 3, planned from level 34
+Guide "31-40 Desolace" in group "Zone Routes (Alliance)": this part has 23 steps, 20 stops
+Written to guides/classic/Desolace (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 34. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 17 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 12 tasks, 5,768 yd on foot; ends at level 34.2; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 13,139 yd; ends at level 34.2; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (7)
+-----------------------
+Start to finish here: 4 (4 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Reagents for Reclaimers Inc. [1459, level 35] - needs one of Reagents for Reclaimers Inc. [1458]
+  The Karnitol Shipwreck [1456, level 39] - needs one of The Karnitol Shipwreck [1455]
+  The Karnitol Shipwreck [1457, level 39] - needs one of The Karnitol Shipwreck [1456] -> Ironforge
+
+Worth checking in game
+----------------------
+
+Put off to a later part (9)
+---------------------------
+These need a higher level than this part ends at:
+  Down the Scarlet Path [261, level 39]: its mobs are level 37; this part gets you to about 34.5
+  Down the Scarlet Path [1052, level 40]: follows Down the Scarlet Path [261]
+  Reagents for Reclaimers Inc. [1466, level 40]: its mobs are level 39; this part gets you to about 34.5
+  Reagents for Reclaimers Inc. [1467, level 40]: follows Reagents for Reclaimers Inc. [1466]
+  Bone Collector [5501, level 39]: is a level 39 quest; this part gets you to about 34.5
+  Gizelton Caravan [5943, level 38]: is a level 38 quest; this part gets you to about 34.5
+  Book of the Ancients [6027, level 38]: its mobs are level 38; this part gets you to about 34.5
+  Get Me Out of Here! [6132, level 39]: is a level 39 quest; this part gets you to about 34.5
+  Ghost-o-plasm Round Up [6134, level 39]: its mobs are level 38; this part gets you to about 34.5
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Desolace - Alliance - part 3 of 3, planned from level 37
+Guide "31-40 Desolace" in group "Zone Routes (Alliance)": this part has 27 steps, 24 stops
+Written to guides/classic/Desolace (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+2 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 37. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 19 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 19 tasks, 16,341 yd on foot; ends at level 37.3
+  everyone (quests that depend on other zones): 6 more tasks; their whole route comes to 22,029 yd; ends at level 37.3; at its hardest you are 1.8 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+2 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (9)
+-----------------------
+Start to finish here: 6 (6 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Down the Scarlet Path [1052, level 40] -> Hillsbrad Foothills
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Reagents for Reclaimers Inc. [1466, level 40] - needs one of Reagents for Reclaimers Inc. [1459]
+  Reagents for Reclaimers Inc. [1467, level 40] - needs one of Reagents for Reclaimers Inc. [1466] -> Ironforge
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

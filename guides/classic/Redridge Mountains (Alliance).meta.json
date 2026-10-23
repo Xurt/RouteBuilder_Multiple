@@ -1,0 +1,386 @@
+{
+  "zone": "Redridge Mountains",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "14-26 Redridge Mountains",
+  "file": "Redridge Mountains (Alliance).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 14,
+      "end": 14.38,
+      "next": 17,
+      "guide": "14-15 Redridge Mountains: around Magistrate Solomon",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Magistrate Solomon",
+          "guide": "14-15 Redridge Mountains: around Magistrate Solomon",
+          "level": 14,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 17,
+      "end": 17.55,
+      "next": 20,
+      "guide": "17-18 Redridge Mountains: around Foreman Oslow",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Foreman Oslow",
+          "guide": "17-18 Redridge Mountains: around Foreman Oslow",
+          "level": 17,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 20,
+      "end": 20.43,
+      "next": 23,
+      "guide": "20-21 Redridge Mountains: around Marshal Marris",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "around Marshal Marris",
+          "guide": "20-21 Redridge Mountains: around Marshal Marris",
+          "level": 20,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "start": 23,
+      "end": 23.48,
+      "next": 26,
+      "guide": "23-24 Redridge Mountains",
+      "sections": [
+        {
+          "label": "RBSection4_1",
+          "name": "part 4",
+          "guide": "23-24 Redridge Mountains",
+          "level": 23,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "start": 26,
+      "end": 26.15,
+      "guide": "26-27 Redridge Mountains",
+      "sections": [
+        {
+          "label": "RBSection5_1",
+          "name": "part 5",
+          "guide": "26-27 Redridge Mountains",
+          "level": 26,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 65,
+      "level": 18,
+      "req": 14,
+      "xp": 1350,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Westfall"
+    },
+    {
+      "id": 94,
+      "level": 21,
+      "req": 20,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 119,
+      "level": 18,
+      "req": 13,
+      "xp": 680,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 121,
+      "level": 14,
+      "req": 14,
+      "xp": 245,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 129,
+      "level": 15,
+      "req": 12,
+      "xp": 540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 130,
+      "level": 15,
+      "req": 12,
+      "xp": 270,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 131,
+      "level": 15,
+      "req": 12,
+      "xp": 270,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 144,
+      "level": 14,
+      "req": 14,
+      "xp": 245,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Westfall"
+    },
+    {
+      "id": 146,
+      "level": 18,
+      "req": 18,
+      "xp": 340,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Duskwood"
+    },
+    {
+      "id": 244,
+      "level": 16,
+      "req": 11,
+      "xp": 290,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 246,
+      "level": 17,
+      "req": 11,
+      "xp": 950,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 345,
+      "level": 24,
+      "req": 20,
+      "xp": 485,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 1698,
+      "level": 20,
+      "req": 20,
+      "xp": 155,
+      "part": 1,
+      "section": 0,
+      "tag": "Warrior",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 2281,
+      "level": 16,
+      "req": 16,
+      "xp": 115,
+      "part": 1,
+      "section": 0,
+      "tag": "Rogue",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 3741,
+      "level": 15,
+      "req": 12,
+      "xp": 1350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 89,
+      "level": 20,
+      "req": 15,
+      "xp": 1550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 92,
+      "level": 18,
+      "req": 15,
+      "xp": 1350,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 125,
+      "level": 16,
+      "req": 15,
+      "xp": 880,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 127,
+      "level": 21,
+      "req": 16,
+      "xp": 1250,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2358,
+      "level": 22,
+      "req": 16,
+      "xp": 1750,
+      "part": 2,
+      "section": 0,
+      "tag": "Rogue"
+    },
+    {
+      "id": 20,
+      "level": 21,
+      "req": 18,
+      "xp": 1650,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 115,
+      "level": 23,
+      "req": 18,
+      "xp": 2300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 150,
+      "level": 20,
+      "req": 20,
+      "xp": 1550,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1699,
+      "level": 22,
+      "req": 20,
+      "xp": 1300,
+      "part": 3,
+      "section": 0,
+      "tag": "Warrior"
+    },
+    {
+      "id": 19,
+      "level": 25,
+      "req": 18,
+      "xp": 2550,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 34,
+      "level": 24,
+      "req": 18,
+      "xp": 1950,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 91,
+      "level": 23,
+      "req": 17,
+      "xp": 1850,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 128,
+      "level": 25,
+      "req": 20,
+      "xp": 2000,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 219,
+      "level": 25,
+      "req": 19,
+      "xp": 2550,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 169,
+      "level": 26,
+      "req": 15,
+      "xp": 2650,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 180,
+      "level": 26,
+      "req": 15,
+      "xp": 2650,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Elwynn Forest": 7,
+    "Westfall": 2,
+    "Duskwood": 1
+  }
+}

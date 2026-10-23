@@ -68,7 +68,8 @@ public sealed class Verifier
         {
             string who = race + " " + cls;
             bool Can(Quest q) => (q.Row.Races == 0 || (q.Row.Races & rbit) != 0) && (q.Row.Classes == 0 || (q.Row.Classes & cbit) != 0);
-            var held = new HashSet<int>(); var turned = new HashSet<int>(); var accepted = new HashSet<int>(); int peak = 0;
+            // what earlier parts of the zone finished, or left in the log, counts as done here
+            var held = m.Visit.HeldOver.ToHashSet(); var turned = m.Visit.Done.ToHashSet(); var accepted = new HashSet<int>(); int peak = 0;
             foreach (var s in steps)
             {
                 if (!Applies(s.Tag, race, cls, m.Opt.Faction)) continue;
@@ -248,7 +249,7 @@ public static class Report
         if (guessed.Count > 0)
         {
             var noPre = guessed.Where(q => q.PreAll.Count + q.PreAny.Count == 0).ToList();
-            sb.AppendLine($"{guessed.Count} quests are new in Forever: their experience is estimated, and {noPre.Count} of them list no prerequisite in the database.");
+            sb.AppendLine($"{guessed.Count} quests have no experience figure in the database: their experience is estimated, and {noPre.Count} of them list no prerequisite in the database.");
             sb.AppendLine("If one of these is offered too early or too late in game, add a \"pre\" entry for it to the zone file:");
             sb.AppendLine("  " + string.Join(", ", noPre.OrderBy(q => q.Id).Select(q => $"{q.Name} [{q.Id}]")));
         }

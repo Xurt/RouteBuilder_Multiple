@@ -29,6 +29,8 @@ as `RouteBuilder zones` prints it, for example `zones/Durotar.json` or `zones/Th
 - A capital city has no file of its own. Its quests belong to the zone it is planned with: Undercity
   with Tirisfal Glades, Orgrimmar with Durotar, Thunder Bluff with Mulgore, Stormwind with Elwynn
   Forest, Ironforge with Dun Morogh, Darnassus with Teldrassil.
+- Each game has its own files: `zones/` is Forever's, `zones/classic/` Classic Era's (`--game classic`). Quest
+  numbers and NPCs differ between games, so a fix for one game is not carried over to another.
 - To use a file somewhere else, pass `--zone-file <path>`.
 - If there is no file in the folder you run from, the copy next to the program is used. A file in the
   folder you run from always wins.

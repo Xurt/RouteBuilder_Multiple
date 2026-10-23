@@ -1,0 +1,250 @@
+Westfall - Alliance - part 1 of 4, planned from level 10
+Guide "10-44 Westfall" in group "Zone Routes (Alliance)": this part has 77 steps, 49 stops
+Written to guides/classic/Westfall (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 10 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+7 pickups or hand-ins are within reach of a stop but planned for later.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 10. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 37 steps kept, 19 new ones slotted in, 1 moved because their prerequisites changed, 30 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 41 tasks, 13,226 yd on foot; ends at level 12.7; at its hardest you are 2.7 levels below the mobs
+  Human: 3 more tasks; their whole route comes to 13,317 yd; ends at level 12.7; at its hardest you are 2.7 levels below the mobs
+  everyone (quests that depend on other zones): 10 more tasks; their whole route comes to 16,847 yd; ends at level 12.7; at its hardest you are 2.7 levels below the mobs
+  Human (quests that depend on other zones): 1 more tasks; their whole route comes to 17,039 yd; ends at level 12.7; at its hardest you are 2.7 levels below the mobs
+  Rogue (quests that depend on other zones): 1 more tasks; their whole route comes to 18,201 yd; ends at level 12.7; at its hardest you are 2.7 levels below the mobs
+  Human Paladin/Dwarf Paladin (quests that depend on other zones): 1 more tasks; their whole route comes to 17,076 yd; ends at level 12.7; at its hardest you are 2.7 levels below the mobs
+Hearthstone: set at Innkeeper Heather (Innkeeper Heather's inn); 0 hearth steps in the guide.
+17 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+3 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (25)
+------------------------
+Start to finish here: 14 (13 for everyone, 1 Human)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Continue to Stormwind [6281, level 10, Human] -> Stormwind City
+
+Brought in from another zone and handed in here - steps show only if you have the quest (7):
+  Return to Lewis [6285, level 10, Human] <- Stormwind City
+  Messenger to Westfall [143, level 14] <- Redridge Mountains
+  The Defias Brotherhood [132, level 18] <- Redridge Mountains
+  The Defias Brotherhood [141, level 18] <- Stormwind City
+  Mathias and the Defias [2360, level 20, Rogue] <- Stormwind City
+  The Tome of Valor [1650, level 23, Human Paladin/Dwarf Paladin] <- Stormwind City
+  The Legend of Stalvan [67, level 28] <- Duskwood
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Captain Sander's Hidden Treasure [138, level 16] - needs one of Captain Sander's Hidden Treasure [136]
+  Captain Sander's Hidden Treasure [139, level 16] - needs one of Captain Sander's Hidden Treasure [138]
+  Captain Sander's Hidden Treasure [140, level 16] - needs one of Captain Sander's Hidden Treasure [139]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (17)
+----------------------------
+These need a higher level than this part ends at:
+  The People's Militia [14, level 17]: its mobs are level 17; this part gets you to about 13.5
+  Sweet Amber [48, level 44]: needs level 40; this part gets you to about 13.5
+  Sweet Amber [49, level 44]: needs level 40; this part gets you to about 13.5
+  Sweet Amber [50, level 44]: needs level 40; this part gets you to about 13.5
+  Sweet Amber [51, level 44]: needs level 40; this part gets you to about 13.5
+  Sweet Amber [53, level 44]: needs level 40; this part gets you to about 13.5
+  The Defias Brotherhood [65, level 18]: needs level 14; this part gets you to about 13.5
+  The Legend of Stalvan [68, level 28]: needs level 22; this part gets you to about 13.5
+  The Coastal Menace [104, level 20]: its mobs are level 20; this part gets you to about 13.5
+  The Defias Brotherhood [135, level 18]: needs level 14; this part gets you to about 13.5
+  The Defias Brotherhood [142, level 18]: needs level 14; this part gets you to about 13.5
+  Messenger to Westfall [144, level 14]: needs level 14; this part gets you to about 13.5
+  The Coast Isn't Clear [152, level 19]: its mobs are level 18; this part gets you to about 13.5
+  The Defias Brotherhood [155, level 18]: is a level 18 quest; this part gets you to about 13.5
+  The Tome of Valor [1651, level 25]: is a level 25 quest; this part gets Human Paladin/Dwarf Paladin characters to about 13.5
+  The Tome of Valor [1652, level 25]: needs level 20; this part gets Human Paladin/Dwarf Paladin characters to about 13.5
+  Klaven's Tower [2359, level 24]: is a level 24 quest; this part gets Rogue characters to about 13.5
+
+Left out (6)
+------------
+repeatable (2):
+  Thunderbrew [117], CLUCK! [3861]
+dungeon quest (2):
+  The Defias Brotherhood [166], Red Silk Bandanas [214]
+handed in here, but the database does not say where it starts (1):
+  Furlbrow's Deed [184]
+special category (sort -366) (1):
+  Skychaser the Elder [8675]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Westfall - Alliance - part 2 of 4, planned from level 15
+Guide "10-44 Westfall" in group "Zone Routes (Alliance)": this part has 16 steps, 14 stops
+Written to guides/classic/Westfall (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+2 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 15. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 8 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 6 tasks, 2,076 yd on foot; ends at level 15.2; at its hardest you are 1.9 levels below the mobs
+  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 4,849 yd; ends at level 15.2; at its hardest you are 1.9 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (6)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Defias Brotherhood [65, level 18] -> Redridge Mountains
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Messenger to Westfall [144, level 14] - needs one of Messenger to Westfall [143] -> Redridge Mountains
+  The Defias Brotherhood [135, level 18] - needs one of The Defias Brotherhood [132] -> Stormwind City
+  The Defias Brotherhood [142, level 18] - needs one of The Defias Brotherhood [141]
+  The Defias Brotherhood [155, level 18] - needs one of The Defias Brotherhood [142]
+
+Worth checking in game
+----------------------
+  The People's Militia [14, level 17]: could not read how many Defias Highwayman are needed from the quest text; assumed 8
+
+Put off to a later part (11)
+----------------------------
+These need a higher level than this part ends at:
+  Sweet Amber [48, level 44]: needs level 40; this part gets you to about 15.6
+  Sweet Amber [49, level 44]: needs level 40; this part gets you to about 15.6
+  Sweet Amber [50, level 44]: needs level 40; this part gets you to about 15.6
+  Sweet Amber [51, level 44]: needs level 40; this part gets you to about 15.6
+  Sweet Amber [53, level 44]: needs level 40; this part gets you to about 15.6
+  The Legend of Stalvan [68, level 28]: needs level 22; this part gets you to about 15.6
+  The Coastal Menace [104, level 20]: its mobs are level 20; this part gets you to about 15.6
+  The Coast Isn't Clear [152, level 19]: its mobs are level 18; this part gets you to about 15.6
+  The Tome of Valor [1651, level 25]: is a level 25 quest; this part gets Human Paladin/Dwarf Paladin characters to about 15.6
+  The Tome of Valor [1652, level 25]: needs level 20; this part gets Human Paladin/Dwarf Paladin characters to about 15.6
+  Klaven's Tower [2359, level 24]: is a level 24 quest; this part gets Rogue characters to about 15.6
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Westfall - Alliance - part 3 of 4, planned from level 18
+Guide "10-44 Westfall" in group "Zone Routes (Alliance)": this part has 7 steps, 6 stops
+Written to guides/classic/Westfall (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 18. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 3 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 9 tasks, 3,872 yd on foot; ends at level 18.3; at its hardest you are 1.9 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Worth checking in game
+----------------------
+
+Put off to a later part (9)
+---------------------------
+These need a higher level than this part ends at:
+  Sweet Amber [48, level 44]: needs level 40; this part gets you to about 18.3
+  Sweet Amber [49, level 44]: needs level 40; this part gets you to about 18.3
+  Sweet Amber [50, level 44]: needs level 40; this part gets you to about 18.3
+  Sweet Amber [51, level 44]: needs level 40; this part gets you to about 18.3
+  Sweet Amber [53, level 44]: needs level 40; this part gets you to about 18.3
+  The Legend of Stalvan [68, level 28]: needs level 22; this part gets you to about 18.3
+  The Tome of Valor [1651, level 25]: is a level 25 quest; this part gets Human Paladin/Dwarf Paladin characters to about 18.3
+  The Tome of Valor [1652, level 25]: needs level 20; this part gets Human Paladin/Dwarf Paladin characters to about 18.3
+  Klaven's Tower [2359, level 24]: is a level 24 quest; this part gets Rogue characters to about 18.3
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Westfall - Alliance - part 4 of 4, planned from level 41
+Guide "10-44 Westfall" in group "Zone Routes (Alliance)": this part has 19 steps, 18 stops
+Written to guides/classic/Westfall (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 41. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 8 steps kept, 5 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 41.0
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 334 yd; ends at level 41.0
+  Rogue (quests that depend on other zones): 3 more tasks; their whole route comes to 2,024 yd; ends at level 41.0
+  Human Paladin/Dwarf Paladin (quests that depend on other zones): 4 more tasks; their whole route comes to 808 yd; ends at level 41.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (9)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Hand-in step only shows once complete (1):
+  Sweet Amber [48, level 44] - needs Holy Spring Water (1) (Stranglethorn Vale)
+
+Need a quest this guide does not hand in - steps show only once that is done (8):
+  Klaven's Tower [2359, level 24, Rogue] - needs one of Mathias and the Defias [2360] -> Stormwind City
+  The Tome of Valor [1651, level 25, Human Paladin/Dwarf Paladin] - needs one of The Tome of Valor [1650]
+  The Tome of Valor [1652, level 25, Human Paladin/Dwarf Paladin] - needs one of The Tome of Valor [1651] -> Stormwind City
+  The Legend of Stalvan [68, level 28] - needs one of The Legend of Stalvan [67] -> Duskwood
+  Sweet Amber [49, level 44] - needs one of Sweet Amber [48]
+  Sweet Amber [50, level 44] - needs one of Sweet Amber [49]
+  Sweet Amber [51, level 44] - needs one of Sweet Amber [50]
+  Sweet Amber [53, level 44] - needs one of Sweet Amber [51]
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

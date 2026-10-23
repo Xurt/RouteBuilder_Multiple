@@ -1,0 +1,748 @@
+Dun Morogh - Alliance - part 1 of 8, planned from level 1
+Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 190 steps, 94 stops
+Written to guides/classic/Dun Morogh (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: zones/classic/Dun Morogh.json
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Dwarf Warrior), not counting quests brought in from other zones.
+7 pickups or hand-ins are within reach of a stop but planned for later.
+12 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 59 steps kept, 63 new ones slotted in, 0 moved because their prerequisites changed, 46 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 81 tasks, 18,105 yd on foot; ends at level 8.5; 2 hearths; at its hardest you are 1.5 levels below the mobs
+  Warlock: 3 more tasks; their whole route comes to 19,242 yd; ends at level 8.5; 2 hearths; at its hardest you are 1.3 levels below the mobs
+  Dwarf Warrior: 2 more tasks; their whole route comes to 18,119 yd; ends at level 8.5; 2 hearths; at its hardest you are 1.5 levels below the mobs
+  Dwarf Paladin: 2 more tasks; their whole route comes to 18,105 yd; ends at level 8.5; 2 hearths; at its hardest you are 1.5 levels below the mobs
+  Dwarf Hunter: 2 more tasks; their whole route comes to 18,132 yd; ends at level 8.5; 2 hearths; at its hardest you are 1.5 levels below the mobs
+  Dwarf Rogue: 2 more tasks; their whole route comes to 18,124 yd; ends at level 8.5; 2 hearths; at its hardest you are 1.5 levels below the mobs
+  Dwarf Priest: 7 more tasks; their whole route comes to 18,376 yd; ends at level 8.5; 2 hearths; at its hardest you are 1.5 levels below the mobs
+  Gnome Warrior: 2 more tasks; their whole route comes to 18,119 yd; ends at level 8.5; 2 hearths; at its hardest you are 1.5 levels below the mobs
+  Gnome Rogue: 2 more tasks; their whole route comes to 18,124 yd; ends at level 8.5; 2 hearths; at its hardest you are 1.5 levels below the mobs
+  Gnome Mage: 2 more tasks; their whole route comes to 18,164 yd; ends at level 8.5; 2 hearths; at its hardest you are 1.5 levels below the mobs
+  Gnome Warlock: 2 more tasks; their whole route comes to 19,335 yd; ends at level 8.6; 2 hearths; at its hardest you are 1.3 levels below the mobs
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 19,288 yd; ends at level 8.5; 2 hearths; at its hardest you are 1.5 levels below the mobs
+  Dwarf/Gnome (quests that depend on other zones): 1 more tasks; their whole route comes to 19,412 yd; ends at level 8.5; 2 hearths; at its hardest you are 1.5 levels below the mobs
+  Human Paladin/Dwarf Paladin (quests that depend on other zones): 1 more tasks; their whole route comes to 19,291 yd; ends at level 8.5; 2 hearths; at its hardest you are 1.5 levels below the mobs
+  Dwarf Warrior/Gnome Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 19,412 yd; ends at level 8.5; 2 hearths; at its hardest you are 1.5 levels below the mobs
+  Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 20,448 yd; ends at level 8.5; 2 hearths; at its hardest you are 1.3 levels below the mobs
+  Dwarf Paladin (quests that depend on other zones): 1 more tasks; their whole route comes to 19,685 yd; ends at level 8.5; 2 hearths; at its hardest you are 1.5 levels below the mobs
+  Dwarf Hunter (quests that depend on other zones): 1 more tasks; their whole route comes to 19,459 yd; ends at level 8.5; 2 hearths; at its hardest you are 1.5 levels below the mobs
+  Dwarf Priest (quests that depend on other zones): 2 more tasks; their whole route comes to 20,011 yd; ends at level 8.5; 2 hearths; at its hardest you are 1.5 levels below the mobs
+Hearthstone: set at Innkeeper Belm (Innkeeper Belm's inn); 3 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 5 for Garments of the Light (Dwarf Priest)
+  level 8 for Rejold's New Brew
+36 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+31 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+1 hand-written step from the zone file placed next to the steps they name.
+3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+13 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+2 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (56)
+------------------------
+Start to finish here: 41 (29 for everyone, 3 Dwarf Priest, 1 Warlock, 1 Dwarf Warrior, 1 Dwarf Paladin, 1 Dwarf Hunter, 1 Dwarf Rogue, 1 Gnome Warrior, 1 Gnome Rogue, 1 Gnome Mage, 1 Gnome Warlock)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Stout to Kadrell [414, level 10] -> Loch Modan
+
+Brought in from another zone and handed in here - steps show only if you have the quest (13):
+  The Hunter's Path [6076, level 10, Dwarf Hunter] <- Stormwind City
+  Ride to Ironforge [6391, level 10, Dwarf/Gnome] <- Loch Modan
+  Tome of Divinity [3000, level 12, Dwarf Paladin] <- Stormwind City
+  Report to Ironforge [301, level 15] <- Loch Modan
+  A Lack of Fear [5645, level 20, Dwarf Priest] <- Stormwind City
+  A Lack of Fear [5647, level 20, Dwarf Priest] <- Darnassus
+  An Old Colleague [1072, level 21] <- Stonetalon Mountains
+  The Test of Righteousness [1653, level 21, Human Paladin/Dwarf Paladin] <- Stormwind City
+  Tinkmaster Overspark [2923, level 26] <- Stormwind City
+  Klockmort Spannerspan [1704, level 28, Dwarf Warrior/Gnome Warrior] <- Stormwind City
+  Castpipe's Task [2931, level 28] <- Stonetalon Mountains
+  Tome of the Cabal [1758, level 30, Warlock] <- The Barrens
+  Klockmort's Essentials [2925, level 30] <- Darnassus
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  The Reports [291, level 10] - needs one of Frostmane Hold [287]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (70)
+----------------------------
+These need a higher level than this part ends at:
+  Powder to Ironband [302, level 15]: needs level 10; this part gets you to about 9.9
+  Tundra MacGrann's Stolen Stash [312, level 12]: is a level 12 quest; this part gets you to about 8.9
+  Protecting the Herd [314, level 12]: its mobs are level 11; this part gets you to about 8.9
+  A Pilot's Revenge [417, level 11]: its mobs are level 11; this part gets you to about 8.9
+  Search for Incendicite [466, level 22]: needs level 20; this part gets you to about 9.9
+  Stonegear's Search [467, level 23]: needs level 20; this part gets you to about 9.9
+  Sara Balloo's Plea [683, level 30]: needs level 25; this part gets you to about 9.9
+  A King's Tribute [686, level 30]: needs level 25; this part gets you to about 9.9
+  A King's Tribute [689, level 31]: needs level 25; this part gets you to about 9.9
+  A King's Tribute [700, level 31]: needs level 25; this part gets you to about 9.9
+  Ineptitude + Chemicals = Fun [1073, level 21]: needs level 17; this part gets you to about 9.9
+  Ineptitude + Chemicals = Fun [1074, level 21]: needs level 17; this part gets you to about 9.9
+  The Brassbolts Brothers [1179, level 30]: needs level 28; this part gets you to about 9.9
+  The Tome of Divinity [1647, level 12]: needs level 12; this part gets Dwarf Paladin characters to about 9.9
+  The Tome of Divinity [1648, level 13]: needs level 12; this part gets Dwarf Paladin characters to about 9.9
+  The Test of Righteousness [1654, level 22]: needs level 20; this part gets Human Paladin/Dwarf Paladin characters to about 9.9
+  Vejrek [1678, level 11]: needs level 10; this part gets Warrior characters to about 10.2
+  Muren Stormpike [1679, level 10]: needs level 10; this part gets Warrior characters to about 10.2
+  Tormus Deepforge [1680, level 11]: needs level 10; this part gets Warrior characters to about 10.2
+  Ironband's Compound [1681, level 11]: needs level 10; this part gets Warrior characters to about 10.2
+  Grey Iron Weapons [1682, level 10]: needs level 10; this part gets Warrior characters to about 10.2
+  Yorus Barleybrew [1698, level 20]: needs level 20; this part gets Warrior characters to about 10.2
+  Iron Coral [1708, level 29]: needs level 20; this part gets Warrior characters to about 10.2
+  Klockmort's Creation [1709, level 30]: needs level 20; this part gets Warrior characters to about 10.2
+  The Slaughtered Lamb [1715, level 10]: needs level 10; this part gets Warlock characters to about 10.0
+  Gakin's Summons [1717, level 20]: needs level 20; this part gets Warlock characters to about 10.0
+  The Islander [1718, level 30]: needs level 30; this part gets Warrior characters to about 10.2
+  The Tome of Divinity [1778, level 13]: needs level 12; this part gets Dwarf Paladin characters to about 9.9
+  The Tome of Divinity [1779, level 13]: needs level 12; this part gets Dwarf Paladin characters to about 9.9
+  The Tome of Divinity [1783, level 13]: needs level 12; this part gets Dwarf Paladin characters to about 9.9
+  The Tome of Divinity [1784, level 13]: needs level 12; this part gets Dwarf Paladin characters to about 9.9
+  The Tome of Divinity [1785, level 13]: needs level 12; this part gets Dwarf Paladin characters to about 9.9
+  Seeking Strahad [1798, level 30]: needs level 30; this part gets Warlock characters to about 10.0
+  Tome of the Cabal [1802, level 30]: needs level 30; this part gets Warlock characters to about 10.0
+  Tome of the Cabal [1804, level 30]: needs level 30; this part gets Warlock characters to about 10.0
+  The Test of Righteousness [1806, level 22]: needs level 20; this part gets Human Paladin/Dwarf Paladin characters to about 9.9
+  Speak with Bink [1879, level 10]: needs level 10; this part gets Human Mage/Gnome Mage characters to about 10.0
+  Mage-tastic Gizmonitor [1880, level 10]: needs level 10; this part gets Human Mage/Gnome Mage characters to about 10.0
+  Report to Jennea [1919, level 15]: needs level 15; this part gets Human Mage/Gnome Mage characters to about 10.0
+  High Sorcerer Andromath [1939, level 26]: needs level 26; this part gets Human Mage/Gnome Mage characters to about 10.0
+  Find Bingles [2039, level 15]: needs level 12; this part gets you to about 9.9
+  Speak with Shoni [2041, level 15]: needs level 15; this part gets you to about 9.9
+  Road to Salvation [2218, level 10]: needs level 10; this part gets Rogue characters to about 10.2
+  Simple Subterfugin' [2238, level 10]: needs level 10; this part gets Rogue characters to about 10.2
+  Onin's Report [2239, level 10]: needs level 10; this part gets Rogue characters to about 10.2
+  Kingly Shakedown [2298, level 16]: needs level 16; this part gets Rogue characters to about 10.2
+  To Hulfdan! [2299, level 16]: needs level 16; this part gets Rogue characters to about 10.2
+  Save Techbot's Brain! [2922, level 26]: its mobs are level 26; this part gets you to about 9.9
+  Essential Artificials [2924, level 30]: needs level 24; this part gets you to about 9.9
+  Gnogaine [2926, level 27]: its mobs are level 25; this part gets you to about 9.9
+  The Day After [2927, level 27]: needs level 20; this part gets you to about 9.9
+  Data Rescue [2930, level 30]: needs level 25; this part gets you to about 9.9
+  The Only Cure is More Green Glow [2962, level 30]: needs level 20; this part gets you to about 9.9
+  Tome of Divinity [2997, level 12]: needs level 12; this part gets Dwarf Paladin characters to about 9.9
+  Tome of Divinity [3681, level 12]: needs level 12; this part gets Human Paladin characters to about 9.9
+  In Search of Menara Voidrender [4736, level 31]: needs level 31; this part gets Warlock characters to about 10.0
+  Returning Home [5630, level 10]: needs level 10; this part gets NightElf Priest characters to about 9.9
+  Desperate Prayer [5637, level 10]: needs level 10; this part gets Human Priest/Dwarf Priest characters to about 9.9
+  A Lack of Fear [5641, level 20]: needs level 20; this part gets Dwarf Priest characters to about 9.9
+  Elune's Grace [5675, level 20]: needs level 20; this part gets NightElf Priest characters to about 9.9
+  Arcane Feedback [5677, level 20]: needs level 20; this part gets Human Priest characters to about 9.9
+  Taming the Beast [6064, level 10]: needs level 10; this part gets Dwarf Hunter characters to about 9.4
+  The Hunter's Path [6074, level 10]: needs level 10; this part gets Dwarf Hunter characters to about 9.4
+  Taming the Beast [6084, level 10]: needs level 10; this part gets Dwarf Hunter characters to about 9.4
+  Taming the Beast [6085, level 10]: needs level 10; this part gets Dwarf Hunter characters to about 9.4
+  Training the Beast [6086, level 10]: needs level 10; this part gets Dwarf Hunter characters to about 9.4
+  Gryth Thurden [6388, level 10]: needs level 10; this part gets Dwarf/Gnome characters to about 9.9
+  Return to Brock [6392, level 10]: needs level 10; this part gets Dwarf/Gnome characters to about 9.9
+  The Manor, Ravenholdt [6681, level 24]: needs level 24; this part gets Rogue characters to about 10.2
+  The Hunter's Path [6721, level 10]: needs level 10; this part gets NightElf Hunter characters to about 9.9
+
+Left out (295)
+--------------
+above this zone's range of 1-32 (117):
+  Letter to Stormpike [514], Further Mysteries [525], Stormpike's Deciphering [554], Myzrael's Allies [653], Theldurin the Lost [687], Ironband Wants You! [707], Prospect of Faith [724], Passing Word of a Threat [725], Passing Word of a Threat [726], To Ironforge for Yagyin's Digest [727], The Star, the Hand and the Heart [735], Forbidden Knowledge [737], An Ambassador of Evil [762], The New Frontier [1019], The Lost Tablets of Will [1139], Reclaimed Treasures [1360], Reclaimers' Business in Desolace [1453], The Karnitol Shipwreck [1457], Reagents for Reclaimers Inc. [1467], Journey to the Marsh [1947], Return to the Marsh [1953], The Shattered Necklace [2198], Lore for a Price [2199], Back to Uldaman [2200], Restoring the Necklace [2204], The Hidden Chamber [2240], The Platinum Discs [2279], Restoring the Necklace [2361], The Lost Dwarves [2398], The Platinum Discs [2439], The Brassbolts Brothers [2769], Tabetha's Task [2861], The Grand Betrayal [2929], Seeing What Happens [2946], Return of the Ring [2947], Gnome Improvement [2948], Portents of Uldum [2963], A Future Task [2964], Return to Ironforge [2977], Proof of Deed [3182], ... 77 more
+repeatable (73):
+  Distracting Jarven [308], Guarded Thunderbrew Barrel [403], The Black Box [708], The Tome of Divinity [1645], The Symbol of Life [1789], The Tome of Valor [1794], Replacement Phial [3375], Signal for Pickup [3483], Membership Card Renewal [3647], CLUCK! [3861], Arrows Are For Sissies [7342], Frost Ram Exchange [7673], Black Ram Exchange [7674], Icy Blue Mechanostrider Replacement [7675], White Mechanostrider Replacement [7676], Additional Runecloth [7806], Additional Runecloth [7812], Could I get a Fishing Flier? [8229], Chicken Clucking for a Mint [8353], Incoming Gumdrop [8355], Remember Alterac Valley! [8383], Claiming Arathi Basin [8384], Concerted Efforts [8385], Fight for Warsong Gulch [8386], Claiming Arathi Basin [8391], Claiming Arathi Basin [8392], Claiming Arathi Basin [8397], Claiming Arathi Basin [8398], Fight for Warsong Gulch [8404], Fight for Warsong Gulch [8405], Fight for Warsong Gulch [8406], Fight for Warsong Gulch [8407], Fight for Warsong Gulch [8408], The Alliance Needs More Copper Bars! [8493], The Alliance Needs More Iron Bars! [8495], The Alliance Needs More Thorium Bars! [8500], The Alliance Needs More Stranglekelp! [8504], The Alliance Needs More Purple Lotus! [8506], The Alliance Needs More Arthas' Tears! [8510], The Alliance Needs Light Leather! [8512], ... 33 more
+dungeon quest (22):
+  Knowledge in the Deeps [971], Mythology of the Titans [1050], Hurley Blackbreath [4126], Ragnar Thunderbrew [4128], Kharan Mighthammer [4341], The Bearer of Bad News [4361], The Fate of the Kingdom [4362], The Princess's Surprise [4363], The Sovereign Imperative [7261], Feathermoon Stronghold [7494], Fight for Warsong Gulch [8372], Claiming Arathi Basin [8374], Remember Alterac Valley! [8375], Claiming Arathi Basin [8393], Claiming Arathi Basin [8394], Claiming Arathi Basin [8395], Claiming Arathi Basin [8396], Fight for Warsong Gulch [8399], Fight for Warsong Gulch [8400], Fight for Warsong Gulch [8401], Fight for Warsong Gulch [8402], Fight for Warsong Gulch [8403]
+special category (sort -22) (19):
+  Greatfather Winter is Here! [7022], Greatfather Winter is Here! [7023], Treats for Greatfather Winter [7025], Stolen Winter Veil Treats [7042], You're a Mean One... [7043], A Smokywood Pastures' Thank You! [7045], The Reason for the Season [7062], The Feast of Winter Veil [7063], Honoring a Hero [8149], A Carefully Wrapped Present [8744], Metzen the Reindeer [8762], A Gently Shaken Gift [8767], A Gaily Wrapped Present [8768], A Ticking Present [8769], A Gently Shaken Gift [8788], A Festive Gift [8803], Winter's Presents [8827], New Year Celebrations! [8860], Dearest Colara, [8898]
+special category (sort -365) (18):
+  The Alliance Needs Copper Bars! [8492], The Alliance Needs Iron Bars! [8494], The Alliance Needs Thorium Bars! [8499], The Alliance Needs Stranglekelp! [8503], The Alliance Needs Purple Lotus! [8505], The Alliance Needs Arthas' Tears! [8509], The Alliance Needs Light Leather! [8511], The Alliance Needs Medium Leather! [8513], The Alliance Needs Thick Leather! [8515], The Alliance Needs Linen Bandages! [8517], The Alliance Needs Silk Bandages! [8520], The Alliance Needs Runecloth Bandages! [8522], The Alliance Needs Rainbow Fin Albacore! [8524], The Alliance Needs Roast Raptor! [8526], The Alliance Needs Spotted Yellowtail! [8528], The Alliance Needs Your Help! [8795], The Alliance Needs Your Help! [8796], The Alliance Needs Your Help! [8797]
+needs a profession (14):
+  Supplying the Front [1578], Gearing Redridge [1618], Goblin Engineering [3629], Gnome Engineering [3630], Gnome Engineering [3632], Gnome Engineering [3634], The Pledge of Secrecy [3640], Show Your Work [3641], The Art of the Armorsmith [5283], The Way of the Weaponsmith [5284], I Got Nothin' Left! [6609], I Know A Guy... [6612], Alliance Trauma [6625], The Hero of the Day [8763]
+special category (sort -369) (10):
+  A Light in Dark Places [9319], Wild Fires in Kalimdor [9322], Wild Fires in the Eastern Kingdoms [9323], Stealing Orgrimmar's Flame [9324], Stealing Thunder Bluff's Flame [9325], Stealing the Undercity's Flame [9326], A Thief's Reward [9365], The Festival of Fire [9367], Flickering Flames in Kalimdor [9388], Flickering Flames in the Eastern Kingdoms [9389]
+special category (sort -366) (7):
+  Goldwell the Elder [8653], Bronzebeard the Elder [8866], Lunar Fireworks [8867], The Lunar Festival [8870], The Lunar Festival [8871], The Lunar Festival [8872], Valadar Starsong [8883]
+handed in here, but the database does not say where it starts (4):
+  Sully Balloo's Letter [637], The Powers Below [968], The Tome of Divinity [1646], Welcome! [5841]
+special category (sort -368) (2):
+  Light's Hope Chapel [9154], Investigate the Scourge of Ironforge [9261]
+cannot be taken together with Senir's Observations [282], which is in the guide (1):
+  Frostmane Hold [287]
+special category (sort -304) (1):
+  Beer Basted Boar Ribs [384]
+cannot be taken together with Tome of Divinity [2997], which is in the guide (1):
+  Tome of Divinity [2999]
+helper for Arcane Runes (1):
+  An Easy Pickup [3450]
+cannot be taken together with Returning Home [5630], which is in the guide (1):
+  Returning Home [5633]
+cannot be taken together with Desperate Prayer [5637], which is in the guide (1):
+  Desperate Prayer [5639]
+cannot be taken together with The Hunter's Path [6074], which is in the guide (1):
+  The Hunter's Path [6075]
+cannot be taken together with The Hunter's Path [6721], which is in the guide (1):
+  The Hunter's Path [6722]
+needs reputation (1):
+  The Brokering of Peace [8484]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Dun Morogh - Alliance - part 2 of 8, planned from level 11
+Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 83 steps, 42 stops
+Written to guides/classic/Dun Morogh (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: zones/classic/Dun Morogh.json
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 11. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 8 steps kept, 46 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 10 tasks, 4,781 yd on foot; ends at level 11.3
+  Warrior: 12 more tasks; their whole route comes to 11,208 yd; ends at level 11.6
+  Rogue: 6 more tasks; their whole route comes to 10,188 yd; ends at level 11.5
+  Human Priest/Dwarf Priest: 1 more tasks; their whole route comes to 4,784 yd; ends at level 11.3
+  Human Mage/Gnome Mage: 5 more tasks; their whole route comes to 9,104 yd; ends at level 11.4
+  Warlock: 1 more tasks; their whole route comes to 6,122 yd; ends at level 11.3
+  Dwarf Hunter: 13 more tasks; their whole route comes to 7,747 yd; ends at level 11.6
+  NightElf Hunter: 1 more tasks; their whole route comes to 5,502 yd; ends at level 11.3
+  NightElf Priest: 1 more tasks; their whole route comes to 4,784 yd; ends at level 11.3
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 5,957 yd; ends at level 11.3
+  Dwarf/Gnome (quests that depend on other zones): 3 more tasks; their whole route comes to 6,261 yd; ends at level 11.3
+Hearthstone: set at Innkeeper Belm (Innkeeper Belm's inn); 0 hearth steps in the guide.
+12 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+11 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+3 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (25)
+------------------------
+Start to finish here: 18 (3 for everyone, 5 Warrior, 5 Dwarf Hunter, 3 Rogue, 2 Human Mage/Gnome Mage)
+
+Picked up here, handed in elsewhere - these stay in the log (4):
+  The Slaughtered Lamb [1715, level 10, Warlock] -> Stormwind City
+  Returning Home [5630, level 10, NightElf Priest] -> Darnassus
+  Desperate Prayer [5637, level 10, Human Priest/Dwarf Priest] -> Stormwind City
+  The Hunter's Path [6721, level 10, NightElf Hunter] -> Teldrassil
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Gryth Thurden [6388, level 10, Dwarf/Gnome] - needs one of Ride to Ironforge [6391]
+  Return to Brock [6392, level 10, Dwarf/Gnome] - needs one of Gryth Thurden [6388] -> Loch Modan
+  Powder to Ironband [302, level 15] - needs one of Report to Ironforge [301] -> Loch Modan
+
+Worth checking in game
+----------------------
+
+Put off to a later part (45)
+----------------------------
+These need a higher level than this part ends at:
+  Search for Incendicite [466, level 22]: needs level 20; this part gets you to about 12.0
+  Stonegear's Search [467, level 23]: needs level 20; this part gets you to about 12.0
+  Sara Balloo's Plea [683, level 30]: needs level 25; this part gets you to about 12.0
+  A King's Tribute [686, level 30]: needs level 25; this part gets you to about 12.0
+  A King's Tribute [689, level 31]: needs level 25; this part gets you to about 12.0
+  A King's Tribute [700, level 31]: needs level 25; this part gets you to about 12.0
+  Ineptitude + Chemicals = Fun [1073, level 21]: needs level 17; this part gets you to about 12.0
+  Ineptitude + Chemicals = Fun [1074, level 21]: needs level 17; this part gets you to about 12.0
+  The Brassbolts Brothers [1179, level 30]: needs level 28; this part gets you to about 12.0
+  The Tome of Divinity [1647, level 12]: needs level 12; this part gets Dwarf Paladin characters to about 12.0
+  The Tome of Divinity [1648, level 13]: needs level 12; this part gets Dwarf Paladin characters to about 12.0
+  The Test of Righteousness [1654, level 22]: needs level 20; this part gets Human Paladin/Dwarf Paladin characters to about 12.0
+  Yorus Barleybrew [1698, level 20]: needs level 20; this part gets Warrior characters to about 12.3
+  Iron Coral [1708, level 29]: needs level 20; this part gets Warrior characters to about 12.3
+  Klockmort's Creation [1709, level 30]: needs level 20; this part gets Warrior characters to about 12.3
+  Gakin's Summons [1717, level 20]: needs level 20; this part gets Warlock characters to about 12.0
+  The Islander [1718, level 30]: needs level 30; this part gets Warrior characters to about 12.3
+  The Tome of Divinity [1778, level 13]: needs level 12; this part gets Dwarf Paladin characters to about 12.0
+  The Tome of Divinity [1779, level 13]: needs level 12; this part gets Dwarf Paladin characters to about 12.0
+  The Tome of Divinity [1783, level 13]: needs level 12; this part gets Dwarf Paladin characters to about 12.0
+  The Tome of Divinity [1784, level 13]: needs level 12; this part gets Dwarf Paladin characters to about 12.0
+  The Tome of Divinity [1785, level 13]: needs level 12; this part gets Dwarf Paladin characters to about 12.0
+  Seeking Strahad [1798, level 30]: needs level 30; this part gets Warlock characters to about 12.0
+  Tome of the Cabal [1802, level 30]: needs level 30; this part gets Warlock characters to about 12.0
+  Tome of the Cabal [1804, level 30]: needs level 30; this part gets Warlock characters to about 12.0
+  The Test of Righteousness [1806, level 22]: needs level 20; this part gets Human Paladin/Dwarf Paladin characters to about 12.0
+  Report to Jennea [1919, level 15]: needs level 15; this part gets Human Mage/Gnome Mage characters to about 12.1
+  High Sorcerer Andromath [1939, level 26]: needs level 26; this part gets Human Mage/Gnome Mage characters to about 12.1
+  Find Bingles [2039, level 15]: needs level 12; this part gets you to about 12.0
+  Speak with Shoni [2041, level 15]: needs level 15; this part gets you to about 12.0
+  Kingly Shakedown [2298, level 16]: needs level 16; this part gets Rogue characters to about 12.2
+  To Hulfdan! [2299, level 16]: needs level 16; this part gets Rogue characters to about 12.2
+  Save Techbot's Brain! [2922, level 26]: its mobs are level 26; this part gets you to about 12.0
+  Essential Artificials [2924, level 30]: needs level 24; this part gets you to about 12.0
+  Gnogaine [2926, level 27]: its mobs are level 25; this part gets you to about 12.0
+  The Day After [2927, level 27]: needs level 20; this part gets you to about 12.0
+  Data Rescue [2930, level 30]: needs level 25; this part gets you to about 12.0
+  The Only Cure is More Green Glow [2962, level 30]: needs level 20; this part gets you to about 12.0
+  Tome of Divinity [2997, level 12]: needs level 12; this part gets Dwarf Paladin characters to about 12.0
+  Tome of Divinity [3681, level 12]: needs level 12; this part gets Human Paladin characters to about 12.0
+  In Search of Menara Voidrender [4736, level 31]: needs level 31; this part gets Warlock characters to about 12.0
+  A Lack of Fear [5641, level 20]: needs level 20; this part gets Dwarf Priest characters to about 12.0
+  Elune's Grace [5675, level 20]: needs level 20; this part gets NightElf Priest characters to about 12.0
+  Arcane Feedback [5677, level 20]: needs level 20; this part gets Human Priest characters to about 12.0
+  The Manor, Ravenholdt [6681, level 24]: needs level 24; this part gets Rogue characters to about 12.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Dun Morogh - Alliance - part 3 of 8, planned from level 14
+Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 32 steps, 21 stops
+Written to guides/classic/Dun Morogh (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: zones/classic/Dun Morogh.json
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Paladin), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 14. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 15 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 1,189 yd on foot; ends at level 14.0
+  Human Paladin: 1 more tasks; their whole route comes to 1,622 yd; ends at level 14.0
+  Dwarf Paladin: 2 more tasks; their whole route comes to 1,566 yd; ends at level 14.0
+  Dwarf Paladin (quests that depend on other zones): 17 more tasks; their whole route comes to 8,789 yd; ends at level 14.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+4 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (10)
+------------------------
+Start to finish here: 1 (0 for everyone, 1 Dwarf Paladin)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Tome of Divinity [3681, level 12, Human Paladin] -> Stormwind City
+  Find Bingles [2039, level 15] -> Loch Modan
+
+Need a quest this guide does not hand in - steps show only once that is done (7):
+  The Tome of Divinity [1647, level 12, Dwarf Paladin] - needs one of The Tome of Divinity [1646]
+  The Tome of Divinity [1648, level 13, Dwarf Paladin] - needs one of The Tome of Divinity [1647]
+  The Tome of Divinity [1778, level 13, Dwarf Paladin] - needs one of The Tome of Divinity [1648]
+  The Tome of Divinity [1779, level 13, Dwarf Paladin] - needs one of The Tome of Divinity [1778]
+  The Tome of Divinity [1783, level 13, Dwarf Paladin] - needs one of The Tome of Divinity [1779]
+  The Tome of Divinity [1784, level 13, Dwarf Paladin] - needs one of The Tome of Divinity [1783]
+  The Tome of Divinity [1785, level 13, Dwarf Paladin] - needs one of The Tome of Divinity [1784]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (35)
+----------------------------
+These need a higher level than this part ends at:
+  Search for Incendicite [466, level 22]: needs level 20; this part gets you to about 14.5
+  Stonegear's Search [467, level 23]: needs level 20; this part gets you to about 14.5
+  Sara Balloo's Plea [683, level 30]: needs level 25; this part gets you to about 14.5
+  A King's Tribute [686, level 30]: needs level 25; this part gets you to about 14.5
+  A King's Tribute [689, level 31]: needs level 25; this part gets you to about 14.5
+  A King's Tribute [700, level 31]: needs level 25; this part gets you to about 14.5
+  Ineptitude + Chemicals = Fun [1073, level 21]: needs level 17; this part gets you to about 14.5
+  Ineptitude + Chemicals = Fun [1074, level 21]: needs level 17; this part gets you to about 14.5
+  The Brassbolts Brothers [1179, level 30]: needs level 28; this part gets you to about 14.5
+  The Test of Righteousness [1654, level 22]: needs level 20; this part gets Human Paladin/Dwarf Paladin characters to about 14.5
+  Yorus Barleybrew [1698, level 20]: needs level 20; this part gets Warrior characters to about 14.5
+  Iron Coral [1708, level 29]: needs level 20; this part gets Warrior characters to about 14.5
+  Klockmort's Creation [1709, level 30]: needs level 20; this part gets Warrior characters to about 14.5
+  Gakin's Summons [1717, level 20]: needs level 20; this part gets Warlock characters to about 14.5
+  The Islander [1718, level 30]: needs level 30; this part gets Warrior characters to about 14.5
+  Seeking Strahad [1798, level 30]: needs level 30; this part gets Warlock characters to about 14.5
+  Tome of the Cabal [1802, level 30]: needs level 30; this part gets Warlock characters to about 14.5
+  Tome of the Cabal [1804, level 30]: needs level 30; this part gets Warlock characters to about 14.5
+  The Test of Righteousness [1806, level 22]: needs level 20; this part gets Human Paladin/Dwarf Paladin characters to about 14.5
+  Report to Jennea [1919, level 15]: needs level 15; this part gets Human Mage/Gnome Mage characters to about 14.5
+  High Sorcerer Andromath [1939, level 26]: needs level 26; this part gets Human Mage/Gnome Mage characters to about 14.5
+  Speak with Shoni [2041, level 15]: needs level 15; this part gets you to about 14.5
+  Kingly Shakedown [2298, level 16]: needs level 16; this part gets Rogue characters to about 14.5
+  To Hulfdan! [2299, level 16]: needs level 16; this part gets Rogue characters to about 14.5
+  Save Techbot's Brain! [2922, level 26]: its mobs are level 26; this part gets you to about 14.5
+  Essential Artificials [2924, level 30]: needs level 24; this part gets you to about 14.5
+  Gnogaine [2926, level 27]: its mobs are level 25; this part gets you to about 14.5
+  The Day After [2927, level 27]: needs level 20; this part gets you to about 14.5
+  Data Rescue [2930, level 30]: needs level 25; this part gets you to about 14.5
+  The Only Cure is More Green Glow [2962, level 30]: needs level 20; this part gets you to about 14.5
+  In Search of Menara Voidrender [4736, level 31]: needs level 31; this part gets Warlock characters to about 14.5
+  A Lack of Fear [5641, level 20]: needs level 20; this part gets Dwarf Priest characters to about 14.5
+  Elune's Grace [5675, level 20]: needs level 20; this part gets NightElf Priest characters to about 14.5
+  Arcane Feedback [5677, level 20]: needs level 20; this part gets Human Priest characters to about 14.5
+  The Manor, Ravenholdt [6681, level 24]: needs level 24; this part gets Rogue characters to about 14.5
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Dun Morogh - Alliance - part 4 of 8, planned from level 17
+Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 7 steps, 4 stops
+Written to guides/classic/Dun Morogh (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: zones/classic/Dun Morogh.json
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Rogue), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 17. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 5 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 1,193 yd on foot; ends at level 17.0
+  Rogue: 3 more tasks; their whole route comes to 1,453 yd; ends at level 17.0
+  Human Mage/Gnome Mage: 1 more tasks; their whole route comes to 1,193 yd; ends at level 17.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 1 (0 for everyone, 1 Rogue)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Report to Jennea [1919, level 15, Human Mage/Gnome Mage] -> Stormwind City
+  Speak with Shoni [2041, level 15] -> Stormwind City
+  Kingly Shakedown [2298, level 16, Rogue] -> Stormwind City
+
+Worth checking in game
+----------------------
+
+Put off to a later part (31)
+----------------------------
+These need a higher level than this part ends at:
+  Search for Incendicite [466, level 22]: needs level 20; this part gets you to about 17.3
+  Stonegear's Search [467, level 23]: needs level 20; this part gets you to about 17.3
+  Sara Balloo's Plea [683, level 30]: needs level 25; this part gets you to about 17.3
+  A King's Tribute [686, level 30]: needs level 25; this part gets you to about 17.3
+  A King's Tribute [689, level 31]: needs level 25; this part gets you to about 17.3
+  A King's Tribute [700, level 31]: needs level 25; this part gets you to about 17.3
+  Ineptitude + Chemicals = Fun [1073, level 21]: needs level 17; this part gets you to about 17.0
+  Ineptitude + Chemicals = Fun [1074, level 21]: needs level 17; this part gets you to about 17.0
+  The Brassbolts Brothers [1179, level 30]: needs level 28; this part gets you to about 17.3
+  The Test of Righteousness [1654, level 22]: needs level 20; this part gets Human Paladin/Dwarf Paladin characters to about 17.3
+  Yorus Barleybrew [1698, level 20]: needs level 20; this part gets Warrior characters to about 17.3
+  Iron Coral [1708, level 29]: needs level 20; this part gets Warrior characters to about 17.3
+  Klockmort's Creation [1709, level 30]: needs level 20; this part gets Warrior characters to about 17.3
+  Gakin's Summons [1717, level 20]: needs level 20; this part gets Warlock characters to about 17.3
+  The Islander [1718, level 30]: needs level 30; this part gets Warrior characters to about 17.3
+  Seeking Strahad [1798, level 30]: needs level 30; this part gets Warlock characters to about 17.3
+  Tome of the Cabal [1802, level 30]: needs level 30; this part gets Warlock characters to about 17.3
+  Tome of the Cabal [1804, level 30]: needs level 30; this part gets Warlock characters to about 17.3
+  The Test of Righteousness [1806, level 22]: needs level 20; this part gets Human Paladin/Dwarf Paladin characters to about 17.3
+  High Sorcerer Andromath [1939, level 26]: needs level 26; this part gets Human Mage/Gnome Mage characters to about 17.3
+  Save Techbot's Brain! [2922, level 26]: its mobs are level 26; this part gets you to about 17.3
+  Essential Artificials [2924, level 30]: needs level 24; this part gets you to about 17.3
+  Gnogaine [2926, level 27]: its mobs are level 25; this part gets you to about 17.3
+  The Day After [2927, level 27]: needs level 20; this part gets you to about 17.3
+  Data Rescue [2930, level 30]: needs level 25; this part gets you to about 17.3
+  The Only Cure is More Green Glow [2962, level 30]: needs level 20; this part gets you to about 17.3
+  In Search of Menara Voidrender [4736, level 31]: needs level 31; this part gets Warlock characters to about 17.3
+  A Lack of Fear [5641, level 20]: needs level 20; this part gets Dwarf Priest characters to about 17.3
+  Elune's Grace [5675, level 20]: needs level 20; this part gets NightElf Priest characters to about 17.3
+  Arcane Feedback [5677, level 20]: needs level 20; this part gets Human Priest characters to about 17.3
+  The Manor, Ravenholdt [6681, level 24]: needs level 24; this part gets Rogue characters to about 17.4
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Dun Morogh - Alliance - part 5 of 8, planned from level 21
+Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 26 steps, 20 stops
+Written to guides/classic/Dun Morogh (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: zones/classic/Dun Morogh.json
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 21. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 16 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 5 tasks, 2,369 yd on foot; ends at level 21.0
+  Warrior: 1 more tasks; their whole route comes to 2,376 yd; ends at level 21.0
+  Warlock: 1 more tasks; their whole route comes to 2,723 yd; ends at level 21.0
+  Human Priest: 1 more tasks; their whole route comes to 2,799 yd; ends at level 21.0
+  Dwarf Priest: 1 more tasks; their whole route comes to 2,799 yd; ends at level 21.0
+  NightElf Priest: 1 more tasks; their whole route comes to 2,799 yd; ends at level 21.0
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 2,385 yd; ends at level 21.0
+  Warrior (quests that depend on other zones): 3 more tasks; their whole route comes to 2,813 yd; ends at level 21.0
+  Human Paladin/Dwarf Paladin (quests that depend on other zones): 3 more tasks; their whole route comes to 2,446 yd; ends at level 21.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (14)
+------------------------
+Start to finish here: 2 (2 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (4):
+  Yorus Barleybrew [1698, level 20, Warrior] -> Redridge Mountains
+  Gakin's Summons [1717, level 20, Warlock] -> Stormwind City
+  Elune's Grace [5675, level 20, NightElf Priest] -> Darnassus
+  Arcane Feedback [5677, level 20, Human Priest] -> Stormwind City
+
+Hand-in step only shows once complete (1):
+  Search for Incendicite [466, level 22] - needs Incendicite Ore (1) (Wetlands)
+
+Need a quest this guide does not hand in - steps show only once that is done (6):
+  Ineptitude + Chemicals = Fun [1073, level 21] - needs one of An Old Colleague [1072]
+  Ineptitude + Chemicals = Fun [1074, level 21] - needs one of Ineptitude + Chemicals = Fun [1073] -> Stonetalon Mountains
+  The Test of Righteousness [1654, level 22, Human Paladin/Dwarf Paladin] - needs one of The Test of Righteousness [1653]
+  The Test of Righteousness [1806, level 22, Human Paladin/Dwarf Paladin] - needs one of The Test of Righteousness [1654]
+  Iron Coral [1708, level 29, Warrior] - needs one of Furen's Armor [1782]
+  Klockmort's Creation [1709, level 30, Warrior] - needs one of Iron Coral [1708]
+
+Worth checking in game
+----------------------
+No objectives in the database (the hand-in step warns about it; add "objectives" for these to the zone file):
+  A Lack of Fear [5641, level 20, Dwarf Priest]
+1 quests have no experience figure in the database: their experience is estimated, and 1 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  A Lack of Fear [5641]
+
+Put off to a later part (17)
+----------------------------
+These need a higher level than this part ends at:
+  Sara Balloo's Plea [683, level 30]: needs level 25; this part gets you to about 21.2
+  A King's Tribute [686, level 30]: needs level 25; this part gets you to about 21.2
+  A King's Tribute [689, level 31]: needs level 25; this part gets you to about 21.2
+  A King's Tribute [700, level 31]: needs level 25; this part gets you to about 21.2
+  The Brassbolts Brothers [1179, level 30]: needs level 28; this part gets you to about 21.2
+  The Islander [1718, level 30]: needs level 30; this part gets Warrior characters to about 21.2
+  Seeking Strahad [1798, level 30]: needs level 30; this part gets Warlock characters to about 21.2
+  Tome of the Cabal [1802, level 30]: needs level 30; this part gets Warlock characters to about 21.2
+  Tome of the Cabal [1804, level 30]: needs level 30; this part gets Warlock characters to about 21.2
+  High Sorcerer Andromath [1939, level 26]: needs level 26; this part gets Human Mage/Gnome Mage characters to about 21.2
+  Save Techbot's Brain! [2922, level 26]: its mobs are level 26; this part gets you to about 21.2
+  Essential Artificials [2924, level 30]: needs level 24; this part gets you to about 21.2
+  Gnogaine [2926, level 27]: its mobs are level 25; this part gets you to about 21.2
+  Data Rescue [2930, level 30]: needs level 25; this part gets you to about 21.2
+  The Only Cure is More Green Glow [2962, level 30]: follows Gnogaine [2926]
+  In Search of Menara Voidrender [4736, level 31]: needs level 31; this part gets Warlock characters to about 21.2
+  The Manor, Ravenholdt [6681, level 24]: needs level 24; this part gets Rogue characters to about 21.3
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Dun Morogh - Alliance - part 6 of 8, planned from level 24
+Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 14 steps, 9 stops
+Written to guides/classic/Dun Morogh (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: zones/classic/Dun Morogh.json
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 24. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 6 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 7 tasks, 8,752 yd on foot; ends at level 24.2; at its hardest you are 1.9 levels below the mobs
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 8,784 yd; ends at level 24.2; at its hardest you are 1.9 levels below the mobs
+  Dwarf Priest (quests that depend on other zones): 1 more tasks; their whole route comes to 8,874 yd; ends at level 24.2; at its hardest you are 1.9 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (5)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Hand-in step only shows once complete (1):
+  The Only Cure is More Green Glow [2962, level 30] - needs High Potency Radioactive Fallout (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  A Lack of Fear [5641, level 20, Dwarf Priest] <- your earlier visit to this zone
+  Search for Incendicite [466, level 22] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Put off to a later part (14)
+----------------------------
+These need a higher level than this part ends at:
+  Sara Balloo's Plea [683, level 30]: needs level 25; this part gets you to about 24.2
+  A King's Tribute [686, level 30]: needs level 25; this part gets you to about 24.2
+  A King's Tribute [689, level 31]: needs level 25; this part gets you to about 24.2
+  A King's Tribute [700, level 31]: needs level 25; this part gets you to about 24.2
+  The Brassbolts Brothers [1179, level 30]: needs level 28; this part gets you to about 24.2
+  The Islander [1718, level 30]: needs level 30; this part gets Warrior characters to about 24.2
+  Seeking Strahad [1798, level 30]: needs level 30; this part gets Warlock characters to about 24.2
+  Tome of the Cabal [1802, level 30]: needs level 30; this part gets Warlock characters to about 24.2
+  Tome of the Cabal [1804, level 30]: needs level 30; this part gets Warlock characters to about 24.2
+  High Sorcerer Andromath [1939, level 26]: needs level 26; this part gets Human Mage/Gnome Mage characters to about 24.2
+  Essential Artificials [2924, level 30]: needs level 24; this part gets you to about 24.2
+  Data Rescue [2930, level 30]: needs level 25; this part gets you to about 24.2
+  In Search of Menara Voidrender [4736, level 31]: needs level 31; this part gets Warlock characters to about 24.2
+  The Manor, Ravenholdt [6681, level 24]: needs level 24; this part gets Rogue characters to about 24.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Dun Morogh - Alliance - part 7 of 8, planned from level 27
+Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 21 steps, 18 stops
+Written to guides/classic/Dun Morogh (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: zones/classic/Dun Morogh.json
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Rogue), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 27. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 8 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 2,557 yd on foot; ends at level 27.0
+  Rogue: 1 more tasks; their whole route comes to 2,586 yd; ends at level 27.0
+  Human Mage/Gnome Mage: 1 more tasks; their whole route comes to 2,559 yd; ends at level 27.0
+  everyone (quests that depend on other zones): 9 more tasks; their whole route comes to 4,780 yd; ends at level 27.0; 1 ORDER PROBLEMS
+  Dwarf Priest (quests that depend on other zones): 1 more tasks; their whole route comes to 4,780 yd; ends at level 27.0; 1 ORDER PROBLEMS
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (11)
+------------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  The Manor, Ravenholdt [6681, level 24, Rogue] -> Alterac Mountains
+  High Sorcerer Andromath [1939, level 26, Human Mage/Gnome Mage] -> Stormwind City
+
+Hand-in step only shows once complete (2):
+  Essential Artificials [2924, level 30] - needs Essential Artificial (12) (an unknown place)
+  Data Rescue [2930, level 30] - needs Prismatic Punch Card (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  A Lack of Fear [5641, level 20, Dwarf Priest] <- your earlier visit to this zone
+  Search for Incendicite [466, level 22] <- your earlier visit to this zone
+  The Only Cure is More Green Glow [2962, level 30] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Sara Balloo's Plea [683, level 30] - needs one of Sully Balloo's Letter [637]
+  A King's Tribute [686, level 30] - needs one of Sara Balloo's Plea [683]
+  A King's Tribute [689, level 31] - needs one of A King's Tribute [686]
+  A King's Tribute [700, level 31] - needs one of A King's Tribute [689]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (6)
+---------------------------
+These need a higher level than this part ends at:
+  The Brassbolts Brothers [1179, level 30]: needs level 28; this part gets you to about 27.0
+  The Islander [1718, level 30]: needs level 30; this part gets Warrior characters to about 27.0
+  Seeking Strahad [1798, level 30]: needs level 30; this part gets Warlock characters to about 27.0
+  Tome of the Cabal [1802, level 30]: needs level 30; this part gets Warlock characters to about 27.0
+  Tome of the Cabal [1804, level 30]: needs level 30; this part gets Warlock characters to about 27.0
+  In Search of Menara Voidrender [4736, level 31]: needs level 31; this part gets Warlock characters to about 27.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Dun Morogh - Alliance - part 8 of 8, planned from level 30
+Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 10 steps, 7 stops
+Written to guides/classic/Dun Morogh (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: zones/classic/Dun Morogh.json
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 30. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 5 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 591 yd on foot; ends at level 30.0
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 5,088 yd; ends at level 30.0
+  Dwarf Priest (quests that depend on other zones): 1 more tasks; their whole route comes to 5,088 yd; ends at level 30.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (6)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Brassbolts Brothers [1179, level 30] -> Thousand Needles
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  A Lack of Fear [5641, level 20, Dwarf Priest] <- your earlier visit to this zone
+  Search for Incendicite [466, level 22] <- your earlier visit to this zone
+  Essential Artificials [2924, level 30] <- your earlier visit to this zone
+  Data Rescue [2930, level 30] <- your earlier visit to this zone
+  The Only Cure is More Green Glow [2962, level 30] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Not planned (5)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  The Islander [1718, level 30]: needs level 30; this part gets Warrior characters to about 30.0
+  Seeking Strahad [1798, level 30]: needs level 30; this part gets Warlock characters to about 30.0
+  Tome of the Cabal [1802, level 30]: needs level 30; this part gets Warlock characters to about 30.0
+  Tome of the Cabal [1804, level 30]: needs level 30; this part gets Warlock characters to about 30.0
+  In Search of Menara Voidrender [4736, level 31]: needs level 31; this part gets Warlock characters to about 30.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

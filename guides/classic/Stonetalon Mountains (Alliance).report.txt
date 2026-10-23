@@ -1,0 +1,160 @@
+Stonetalon Mountains - Alliance - part 1 of 3, planned from level 21
+Guide "21-28 Stonetalon Mountains" in group "Zone Routes (Alliance)": this part has 31 steps, 23 stops
+Written to guides/classic/Stonetalon Mountains (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 21. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 13 steps kept, 18 new ones slotted in, 0 moved because their prerequisites changed, 8 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 17 tasks, 2,141 yd on foot; ends at level 21.4
+  everyone (quests that depend on other zones): 14 more tasks; their whole route comes to 4,594 yd; ends at level 21.4
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+4 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (17)
+------------------------
+Start to finish here: 5 (5 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  An Old Colleague [1072, level 21] -> Ironforge
+  A Scroll from Mauren [1075, level 21] -> Stormwind City
+  Further Instructions [1094, level 21] -> The Barrens
+
+Brought in from another zone and handed in here - steps show only if you have the quest (6):
+  Journey to Stonetalon Peak [1056, level 18] <- Ashenvale
+  On Guard in Stonetalon [1070, level 21] <- Ashenvale
+  Ineptitude + Chemicals = Fun [1074, level 21] <- Ironforge
+  Special Delivery for Gaxim [1077, level 21] <- Stormwind City
+  Ziz Fizziks [1483, level 21] <- The Barrens
+  Further Instructions [1095, level 27] <- The Barrens
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Covert Ops - Alpha [1079, level 22] - needs Ineptitude + Chemicals = Fun [1074], Special Delivery for Gaxim [1077]
+  Covert Ops - Beta [1080, level 22] - needs Ineptitude + Chemicals = Fun [1074], Special Delivery for Gaxim [1077]
+  Kaela's Update [1091, level 22] - needs Covert Ops - Alpha [1079], Covert Ops - Beta [1080]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (7)
+---------------------------
+These need a higher level than this part ends at:
+  Reclaiming the Charred Vale [1057, level 27]: its mobs are level 25; this part gets you to about 21.6
+  Reclaiming the Charred Vale [1059, level 27]: follows Reclaiming the Charred Vale [1057]
+  Update for Sentinel Thenysil [1082, level 22]: follows Enraged Spirits [1083]
+  Enraged Spirits [1083, level 26]: its mobs are level 26; this part gets you to about 21.6
+  Wounded Ancients [1084, level 28]: its mobs are level 25; this part gets you to about 21.6
+  Gerenzo Wrenchwhistle [1096, level 27]: its mobs are level 27; this part gets you to about 21.6
+  Castpipe's Task [2931, level 28]: needs level 25; this part gets you to about 21.6
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Stonetalon Mountains - Alliance - part 2 of 3, planned from level 24
+Guide "21-28 Stonetalon Mountains" in group "Zone Routes (Alliance)": this part has 15 steps, 12 stops
+Written to guides/classic/Stonetalon Mountains (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 24. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 7 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 7 tasks, 4,244 yd on foot; ends at level 24.2
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 8,566 yd; ends at level 24.2; at its hardest you are 1.9 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (5)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Reclaiming the Charred Vale [1059, level 27] -> Feralas
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Update for Sentinel Thenysil [1082, level 22] - needs Enraged Spirits [1083], Wounded Ancients [1084] -> Ashenvale
+  Enraged Spirits [1083, level 26] - needs one of Kaela's Update [1091]
+  Wounded Ancients [1084, level 28] - needs one of Kaela's Update [1091]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  Gerenzo Wrenchwhistle [1096, level 27]: its mobs are level 27; this part gets you to about 24.2
+  Castpipe's Task [2931, level 28]: needs level 25; this part gets you to about 24.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Stonetalon Mountains - Alliance - part 3 of 3, planned from level 27
+Guide "21-28 Stonetalon Mountains" in group "Zone Routes (Alliance)": this part has 5 steps, 4 stops
+Written to guides/classic/Stonetalon Mountains (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 27. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 27.0
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 1,702 yd; ends at level 27.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Castpipe's Task [2931, level 28] -> Ironforge
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Gerenzo Wrenchwhistle [1096, level 27] - needs one of Further Instructions [1095]
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

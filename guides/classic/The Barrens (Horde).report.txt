@@ -1,0 +1,409 @@
+The Barrens - Horde - part 1 of 4, planned from level 10
+Guide "10-27 The Barrens" in group "Zone Routes (Horde)": this part has 180 steps, 148 stops
+Written to guides/classic/The Barrens (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 13 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+40 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 10. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 151 steps kept, 22 new ones slotted in, 1 moved because their prerequisites changed, 152 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 120 tasks, 45,979 yd on foot; ends at level 15.4; at its hardest you are 5.1 levels below the mobs
+  Tauren: 5 more tasks; their whole route comes to 49,649 yd; ends at level 15.5; at its hardest you are 5.1 levels below the mobs
+  Warrior: 1 more tasks; their whole route comes to 47,287 yd; ends at level 15.4; at its hardest you are 5.1 levels below the mobs
+  Shaman: 1 more tasks; their whole route comes to 46,581 yd; ends at level 15.4; at its hardest you are 5.1 levels below the mobs
+  everyone (quests that depend on other zones): 22 more tasks; their whole route comes to 58,377 yd; ends at level 15.4; at its hardest you are 5.1 levels below the mobs
+  Tauren (quests that depend on other zones): 1 more tasks; their whole route comes to 62,406 yd; ends at level 15.5; at its hardest you are 5.1 levels below the mobs
+  Warrior (quests that depend on other zones): 7 more tasks; their whole route comes to 61,910 yd; ends at level 15.4; at its hardest you are 5.1 levels below the mobs
+  Rogue (quests that depend on other zones): 2 more tasks; their whole route comes to 60,925 yd; ends at level 15.4; at its hardest you are 5.1 levels below the mobs
+  Shaman (quests that depend on other zones): 10 more tasks; their whole route comes to 59,861 yd; ends at level 15.4; at its hardest you are 5.1 levels below the mobs
+  Warlock (quests that depend on other zones): 2 more tasks; their whole route comes to 61,203 yd; ends at level 15.4; at its hardest you are 5.1 levels below the mobs
+  Undead Mage/Troll Mage (quests that depend on other zones): 1 more tasks; their whole route comes to 58,360 yd; ends at level 15.4; at its hardest you are 5.1 levels below the mobs
+  Tauren Druid (quests that depend on other zones): 2 more tasks; their whole route comes to 62,665 yd; ends at level 15.5; 1 hearth; at its hardest you are 5.1 levels below the mobs
+Hearthstone: set at Innkeeper Boorand Plainswind (Innkeeper Boorand Plainswind's inn); 1 hearth step in the guide.
+22 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+3 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+3 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (87)
+------------------------
+Start to finish here: 39 (36 for everyone, 2 Tauren, 1 Orc/Troll)
+
+Picked up here, handed in elsewhere - these stay in the log (6):
+  Ride to Thunder Bluff [6362, level 10, Tauren] -> Thunder Bluff
+  Ride to Orgrimmar [6384, level 10, Orc/Troll] -> Orgrimmar
+  Call of Fire [1524, level 11, Shaman] -> Durotar
+  Apothecary Zamah [853, level 15] -> Thunder Bluff
+  Mura Runetotem [3301, level 15] -> Silverpine Forest
+  Rilli Greasygob [3923, level 18] -> Orgrimmar
+
+Hand-in step only shows once complete (4):
+  Path of Defense [1498, level 10, Warrior] - needs Singed Scale (5) (Durotar)
+  Avenge My Village [6548, level 18] - needs Grimtotem Ruffian slain (8) (Stonetalon Mountains); Grimtotem Mercenary slain (6) (Stonetalon Mountains)
+  Goblin Invaders [1062, level 19] - needs Venture Co. Logger slain (15) (Stonetalon Mountains)
+  Deepmoss Spider Eggs [1069, level 20] - needs Deepmoss Egg (15) (Stonetalon Mountains)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (29):
+  Sergra Darkthorn [860, level 10] <- Thunder Bluff
+  The Barrens Oases [886, level 10] <- Thunder Bluff
+  Veteran Uzzek [1505, level 10, Warrior] <- Thunder Bluff
+  Call of Fire [1522, level 10, Shaman] <- Orgrimmar
+  Call of Fire [1523, level 10, Shaman] <- Thunder Bluff
+  Call of Fire [2983, level 10, Shaman] <- Durotar
+  Call of Fire [2984, level 10, Shaman] <- Mulgore
+  Return to Jahan [6364, level 10, Tauren] <- Thunder Bluff
+  Return to the Crossroads. [6386, level 10, Orc/Troll] <- Orgrimmar
+  Conscript of the Horde [840, level 12] <- Durotar
+  Ak'Zeloth [809, level 13] <- Orgrimmar
+  Call of Fire [1527, level 13, Shaman] <- Durotar
+  The Principal Source [6127, level 14, Tauren Druid] <- Moonglade
+  Sample for Helbrim [1358, level 15] <- Undercity
+  Wrenix of Ratchet [2382, level 16, Rogue] <- Orgrimmar
+  The Spirits of Stonetalon [1061, level 17] <- Orgrimmar
+  Protect Kaya [6523, level 18] <- Stonetalon Mountains
+  Report to Kadrak [6542, level 19] <- Stonetalon Mountains
+  News of Dogran [1509, level 20, Warlock] <- Orgrimmar
+  Ken'zigla's Draught [1511, level 20, Warlock] <- Stonetalon Mountains
+  Call of Water [1528, level 20, Shaman] <- Orgrimmar
+  Call of Water [1529, level 20, Shaman] <- Thunder Bluff
+  Speak with Ruga [1823, level 20, Warrior] <- Thunder Bluff
+  Deep Cover [2458, level 20, Rogue] <- Orgrimmar
+  Call of Water [2985, level 20, Shaman] <- Durotar
+  Call of Water [2986, level 20, Shaman] <- Mulgore
+  Further Instructions [1094, level 21] <- Stonetalon Mountains
+  Call of Water [96, level 23, Shaman] <- Silverpine Forest
+  Laughing Sisters [1945, level 26, Undead Mage/Troll Mage] <- Orgrimmar
+
+Need a quest this guide does not hand in - steps show only once that is done (9):
+  Thun'grim Firegaze [1502, level 10, Warrior] - needs one of Path of Defense [1498], Ulag the Cleaver [1819]
+  Forged Steel [1503, level 10, Warrior] - needs one of Thun'grim Firegaze [1502]
+  Crossroads Conscription [842, level 12] - needs one of Conscript of the Horde [840]
+  The Demon Seed [924, level 14] - needs one of Ak'Zeloth [809]
+  The Elder Crone [1063, level 18] - needs one of Goblin Invaders [1062] -> Thunder Bluff
+  Kaya's Alive [6401, level 18] - needs one of Protect Kaya [6523] -> Stonetalon Mountains
+  Kill Grundig Darkcloud [6629, level 18] - needs one of Avenge My Village [6548]
+  Shredding Machines [1068, level 23] - needs one of Goblin Invaders [1062]
+  In Nightmares [3369, level 25] - needs one of The Glowing Shard [6981] -> Thunder Bluff
+
+Worth checking in game
+----------------------
+1 quests have no experience figure in the database: their experience is estimated, and 1 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  Path of Defense [1498]
+
+Put off to a later part (49)
+----------------------------
+These need a higher level than this part ends at:
+  Call of Water [63, level 23]: needs level 20; this part gets Shaman characters to about 18.4
+  Call of Water [220, level 23]: needs level 20; this part gets Shaman characters to about 18.4
+  Chen's Empty Keg [821, level 15]: its mobs are level 18; this part gets you to about 15.7
+  Gann's Reclamation [843, level 23]: its mobs are level 26; this part gets you to about 18.3
+  Revenge of Gann [846, level 26]: its mobs are level 24; this part gets you to about 18.3
+  Revenge of Gann [849, level 26]: is a level 26 quest; this part gets you to about 18.3
+  Verog the Dervish [851, level 18]: its mobs are level 18; this part gets you to about 15.7
+  Hezrul Bloodmark [852, level 19]: its mobs are level 19; this part gets you to about 16.8
+  Ignition [858, level 18]: its mobs are level 18; this part gets you to about 15.7
+  The Escape [863, level 18]: follows Ignition [858]
+  Egg Hunt [868, level 22]: is a level 22 quest; this part gets you to about 18.3
+  Isha Awak [873, level 27]: its mobs are level 27; this part gets you to about 18.3
+  Mahren Skyseer [874, level 27]: follows Cry of the Thunderhawk [913]
+  Serena Bloodfeather [876, level 20]: its mobs are level 20; this part gets you to about 17.0
+  Tribes at War [878, level 21]: its mobs are level 19; this part gets you to about 16.8
+  Betrayal from Within [879, level 25]: its mobs are level 25; this part gets you to about 18.3
+  Ishamuhale [882, level 19]: its mobs are level 19; this part gets you to about 16.8
+  Owatanka [884, level 24]: follows Chen's Empty Keg [821]
+  The Guns of Northwatch [891, level 20]: its mobs are level 20; this part gets you to about 17.0
+  Weapons of Choice [893, level 24]: its mobs are level 24; this part gets you to about 18.3
+  Free From the Hold [898, level 20]: is a level 20 quest; this part gets you to about 16.8
+  Betrayal from Within [906, level 25]: follows Betrayal from Within [879]
+  Enraged Thunder Lizards [907, level 18]: follows Ishamuhale [882]
+  Cry of the Thunderhawk [913, level 20]: its mobs are level 19; this part gets you to about 16.8
+  Letter to Jin'Zil [1060, level 20]: follows Serena Bloodfeather [876]
+  Further Instructions [1095, level 27]: needs level 16; this part gets you to about 15.7
+  Blueleaf Tubers [1221, level 26]: is a level 26 quest; this part gets you to about 18.3
+  Ziz Fizziks [1483, level 21]: needs level 16; this part gets you to about 15.7
+  News of Dogran [1510, level 20]: needs level 20; this part gets Warlock characters to about 18.3
+  Love's Gift [1512, level 20]: needs level 20; this part gets Warlock characters to about 18.3
+  Dogran's Captivity [1515, level 20]: needs level 20; this part gets Warlock characters to about 18.3
+  Call of Water [1530, level 22]: needs level 20; this part gets Shaman characters to about 18.4
+  Call of Water [1534, level 23]: needs level 20; this part gets Shaman characters to about 18.4
+  Call of Water [1535, level 22]: needs level 20; this part gets Shaman characters to about 18.4
+  Call of Water [1536, level 22]: needs level 20; this part gets Shaman characters to about 18.4
+  The Orb of Soran'ruk [1740, level 25]: needs level 20; this part gets Warlock characters to about 18.3
+  Trial at the Field of Giants [1824, level 20]: needs level 20; this part gets Warrior characters to about 18.4
+  Speak with Thun'grim [1825, level 20]: needs level 20; this part gets Warrior characters to about 18.4
+  Nether-lace Garment [1946, level 26]: needs level 26; this part gets Undead Mage/Troll Mage characters to about 18.3
+  Plundering the Plunderers [2381, level 18]: needs level 16; this part gets Rogue characters to about 15.7
+  Mission: Possible But Not Probable [2478, level 24]: its mobs are level 25; this part gets Rogue characters to about 18.3
+  Counterattack! [4021, level 20]: follows Hezrul Bloodmark [852]
+  Lost in Battle [4921, level 20]: is a level 20 quest; this part gets you to about 16.8
+  Blood Shards of Agamaggan [5052, level 21]: follows Tribes at War [878]
+  Gathering the Cure [6128, level 14]: its mobs are level 19; this part gets Tauren Druid characters to about 16.8
+  Curing the Sick [6129, level 14]: follows Gathering the Cure [6128]
+  The Ashenvale Hunt [6382, level 20]: needs level 20; this part gets you to about 18.3
+  Report to Kadrak [6541, level 19]: needs level 17; this part gets you to about 17.0
+  The Warsong Reports [6543, level 19]: needs level 17; this part gets you to about 17.0
+
+Left out (109)
+--------------
+above this zone's range of 10-28 (53):
+  Crystal in the Mountains [635], The Tear of the Moons [857], Wharfmaster Dizzywig [1111], Parts for Kravel [1112], Melor Sends Word [1130], The Swarm Grows [1145], Parts of the Swarm [1148], A New Ore Sample [1153], Goblin Sponsorship [1178], Goblin Sponsorship [1180], Parts of the Swarm [1184], Stinky's Escape [1270], Regthar Deathgate [1361], The Kolkar of Desolace [1362], The Islander [1718], The Affray [1719], The Windwatcher [1791], The Binding [1795], Components for the Enchanted Gold Bloodrobe [1796], Fragments of the Orb of Orahil [1799], Tome of the Cabal [1801], Tome of the Cabal [1805], Brutal Armor [1838], Ula'elek and the Brutal Gauntlets [1839], Orm Stonehoof and the Brutal Helm [1840], Velora Nitely and the Brutal Legguards [1841], Brutal Hauberk [1848], Seeking Strahad [2996], Seeking Strahad [3001], Horde Presence [3514], Summon Felsteed [3631], Zapper Fuel [4146], Marvon's Workshop [4147], Summon Felsteed [4489], Summon Felsteed [4490], Volcanic Activity [4502], In Search of Menara Voidrender [4737], In Search of Menara Voidrender [4739], Components for the Enchanted Gold Bloodrobe [4781], Components for the Enchanted Gold Bloodrobe [4782], ... 13 more
+repeatable (24):
+  Chen's Empty Keg [822], Spirit of the Wind [889], Flawed Power Stone [926], Water Sapta [972], Membership Card Renewal [3646], Agamaggan's Strength [5042], Agamaggan's Agility [5043], Wisdom of Agamaggan [5044], Rising Spirit [5045], Razorhide [5046], Invaders of Alterac Valley [8387], For Great Honor [8388], Battle of Warsong Gulch [8389], Conquering Arathi Basin [8390], Battle of Warsong Gulch [8431], Battle of Warsong Gulch [8432], Battle of Warsong Gulch [8433], Battle of Warsong Gulch [8434], Battle of Warsong Gulch [8435], Conquering Arathi Basin [8440], Conquering Arathi Basin [8441], Conquering Arathi Basin [8442], Conquering Arathi Basin [8443], Mending Old Wounds [9267]
+dungeon quest (19):
+  Trouble at the Docks [959], Deviate Hides [1486], Deviate Eradication [1487], Hamuul Runetotem [1489], Smart Drinks [1491], A Host of Evil [6626], The Glowing Shard [6981], Battle of Warsong Gulch [8368], Invaders of Alterac Valley [8369], Conquering Arathi Basin [8370], Battle of Warsong Gulch [8426], Battle of Warsong Gulch [8427], Battle of Warsong Gulch [8428], Battle of Warsong Gulch [8429], Battle of Warsong Gulch [8430], Conquering Arathi Basin [8436], Conquering Arathi Basin [8437], Conquering Arathi Basin [8438], Conquering Arathi Basin [8439]
+needs a profession (4):
+  Dig Rat Stew [862], Root Samples [866], Goblin Engineering [3633], Gnome Engineering [3637]
+needs reputation (3):
+  Outrider Basic Care Package [7866], Outrider Standard Care Package [7867], Outrider Advanced Care Package [7868]
+special category (sort -366) (3):
+  Windtotem the Elder [8680], High Mountain the Elder [8686], Moonwarden the Elder [8717]
+starts from a random drop, and no quest in this guide kills those mobs (2):
+  Lakota'mani [883], Washte Pawne [885]
+handed in here, but the database does not say where it starts (1):
+  Chen's Empty Keg [819]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Barrens - Horde - part 2 of 4, planned from level 18
+Guide "10-27 The Barrens" in group "Zone Routes (Horde)": this part has 81 steps, 72 stops
+Written to guides/classic/The Barrens (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 12 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+20 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 18. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 59 steps kept, 18 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 58 tasks, 40,918 yd on foot; ends at level 19.3; 1 hearth; at its hardest you are 2.1 levels below the mobs
+  everyone (quests that depend on other zones): 9 more tasks; their whole route comes to 51,508 yd; ends at level 19.3; 1 hearth; at its hardest you are 2.1 levels below the mobs
+  Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 53,492 yd; ends at level 19.3; 1 hearth; at its hardest you are 2.1 levels below the mobs
+  Rogue (quests that depend on other zones): 3 more tasks; their whole route comes to 52,400 yd; ends at level 19.3; 1 hearth; at its hardest you are 2.1 levels below the mobs
+  Tauren Druid (quests that depend on other zones): 6 more tasks; their whole route comes to 52,919 yd; ends at level 19.3; 1 hearth; at its hardest you are 2.1 levels below the mobs
+Hearthstone: set at Innkeeper Boorand Plainswind (Innkeeper Boorand Plainswind's inn); 1 hearth step in the guide.
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (30)
+------------------------
+Start to finish here: 17 (17 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Letter to Jin'Zil [1060, level 20] -> Stonetalon Mountains
+  Ziz Fizziks [1483, level 21] -> Stonetalon Mountains
+
+Hand-in step only shows once complete (2):
+  The Warsong Reports [6543, level 19] - needs Warsong Scout Update (1) (Ashenvale); Warsong Runner Update (1) (Ashenvale); Warsong Outrider Update (1) (Ashenvale)
+  Counterattack! [4021, level 20] - needs Piece of Krom'zar's Banner (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Path of Defense [1498, level 10, Warrior] <- your earlier visit to this zone
+  Avenge My Village [6548, level 18] <- your earlier visit to this zone
+  Goblin Invaders [1062, level 19] <- your earlier visit to this zone
+  Deepmoss Spider Eggs [1069, level 20] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (5):
+  Gathering the Cure [6128, level 14, Tauren Druid] - needs one of The Principal Source [6127]
+  Curing the Sick [6129, level 14, Tauren Druid] - needs one of Gathering the Cure [6128] -> Moonglade
+  Chen's Empty Keg [821, level 15] - needs one of Chen's Empty Keg [819]
+  Plundering the Plunderers [2381, level 18, Rogue] - needs one of Wrenix of Ratchet [2382]
+  Further Instructions [1095, level 27] - needs one of Further Instructions [1094] -> Stonetalon Mountains
+
+Worth checking in game
+----------------------
+  Lost in Battle [4921, level 20]: objective "Beaten Corpse" is line 1 by the database, but RestedXP's guide has "Find Mankrik's Wife (1)" there
+
+Put off to a later part (23)
+----------------------------
+These need a higher level than this part ends at:
+  Call of Water [63, level 23]: needs level 20; this part gets Shaman characters to about 19.4
+  Call of Water [220, level 23]: needs level 20; this part gets Shaman characters to about 19.4
+  Gann's Reclamation [843, level 23]: its mobs are level 26; this part gets you to about 20.3
+  Revenge of Gann [846, level 26]: its mobs are level 24; this part gets you to about 20.3
+  Revenge of Gann [849, level 26]: is a level 26 quest; this part gets you to about 20.3
+  Isha Awak [873, level 27]: its mobs are level 27; this part gets you to about 20.3
+  Betrayal from Within [879, level 25]: its mobs are level 25; this part gets you to about 20.3
+  Weapons of Choice [893, level 24]: its mobs are level 24; this part gets you to about 20.3
+  Betrayal from Within [906, level 25]: follows Betrayal from Within [879]
+  Blueleaf Tubers [1221, level 26]: is a level 26 quest; this part gets you to about 20.3
+  News of Dogran [1510, level 20]: needs level 20; this part gets Warlock characters to about 19.3
+  Love's Gift [1512, level 20]: needs level 20; this part gets Warlock characters to about 19.3
+  Dogran's Captivity [1515, level 20]: needs level 20; this part gets Warlock characters to about 19.3
+  Call of Water [1530, level 22]: needs level 20; this part gets Shaman characters to about 19.4
+  Call of Water [1534, level 23]: needs level 20; this part gets Shaman characters to about 19.4
+  Call of Water [1535, level 22]: needs level 20; this part gets Shaman characters to about 19.4
+  Call of Water [1536, level 22]: needs level 20; this part gets Shaman characters to about 19.4
+  The Orb of Soran'ruk [1740, level 25]: needs level 20; this part gets Warlock characters to about 19.3
+  Trial at the Field of Giants [1824, level 20]: needs level 20; this part gets Warrior characters to about 19.5
+  Speak with Thun'grim [1825, level 20]: needs level 20; this part gets Warrior characters to about 19.5
+  Nether-lace Garment [1946, level 26]: needs level 26; this part gets Undead Mage/Troll Mage characters to about 20.3
+  Mission: Possible But Not Probable [2478, level 24]: its mobs are level 25; this part gets Rogue characters to about 20.3
+  The Ashenvale Hunt [6382, level 20]: needs level 20; this part gets you to about 19.3
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Barrens - Horde - part 3 of 4, planned from level 22
+Guide "10-27 The Barrens" in group "Zone Routes (Horde)": this part has 33 steps, 31 stops
+Written to guides/classic/The Barrens (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 9 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+3 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 22. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 22 steps kept, 10 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 6 tasks, 3,567 yd on foot; ends at level 22.1; at its hardest you are 2.0 levels below the mobs
+  Warrior: 5 more tasks; their whole route comes to 7,398 yd; ends at level 22.2; at its hardest you are 1.9 levels below the mobs
+  Shaman: 6 more tasks; their whole route comes to 10,418 yd; ends at level 22.2; at its hardest you are 1.9 levels below the mobs
+  Warlock: 1 more tasks; their whole route comes to 3,995 yd; ends at level 22.1; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 17,847 yd; ends at level 22.1; at its hardest you are 2.0 levels below the mobs
+  Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 24,354 yd; ends at level 22.2; at its hardest you are 1.9 levels below the mobs
+  Shaman (quests that depend on other zones): 4 more tasks; their whole route comes to 28,054 yd; ends at level 22.2; at its hardest you are 1.9 levels below the mobs
+  Warlock (quests that depend on other zones): 4 more tasks; their whole route comes to 20,766 yd; ends at level 22.1; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (20)
+------------------------
+Start to finish here: 5 (1 for everyone, 2 Shaman, 2 Warrior)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Ashenvale Hunt [6382, level 20] -> Ashenvale
+
+Hand-in step only shows once complete (2):
+  Call of Water [1536, level 22, Shaman] - needs Filled Red Waterskin (1) (Hillsbrad Foothills)
+  The Orb of Soran'ruk [1740, level 25, Warlock] - needs Soran'ruk Fragment (3) (an unknown place); Large Soran'ruk Fragment (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (6):
+  Path of Defense [1498, level 10, Warrior] <- your earlier visit to this zone
+  Avenge My Village [6548, level 18] <- your earlier visit to this zone
+  Goblin Invaders [1062, level 19] <- your earlier visit to this zone
+  The Warsong Reports [6543, level 19] <- your earlier visit to this zone
+  Deepmoss Spider Eggs [1069, level 20] <- your earlier visit to this zone
+  Counterattack! [4021, level 20] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (6):
+  News of Dogran [1510, level 20, Warlock] - needs one of News of Dogran [1509] -> Stonetalon Mountains
+  Love's Gift [1512, level 20, Warlock] - needs one of Dogran's Captivity [1515] -> Orgrimmar
+  Dogran's Captivity [1515, level 20, Warlock] - needs one of Ken'zigla's Draught [1511]
+  Call of Water [63, level 23, Shaman] - needs one of Call of Water [220] -> Silverpine Forest
+  Call of Water [220, level 23, Shaman] - needs one of Call of Water [1534]
+  Call of Water [1534, level 23, Shaman] - needs one of Call of Water [1536]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (9)
+---------------------------
+These need a higher level than this part ends at:
+  Gann's Reclamation [843, level 23]: its mobs are level 26; this part gets you to about 22.8
+  Revenge of Gann [846, level 26]: follows Gann's Reclamation [843]
+  Revenge of Gann [849, level 26]: is a level 26 quest; this part gets you to about 22.8
+  Isha Awak [873, level 27]: its mobs are level 27; this part gets you to about 22.8
+  Betrayal from Within [879, level 25]: its mobs are level 25; this part gets you to about 22.8
+  Betrayal from Within [906, level 25]: follows Betrayal from Within [879]
+  Blueleaf Tubers [1221, level 26]: is a level 26 quest; this part gets you to about 22.8
+  Nether-lace Garment [1946, level 26]: needs level 26; this part gets Undead Mage/Troll Mage characters to about 22.8
+  Mission: Possible But Not Probable [2478, level 24]: its mobs are level 25; this part gets Rogue characters to about 22.8
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Barrens - Horde - part 4 of 4, planned from level 25
+Guide "10-27 The Barrens" in group "Zone Routes (Horde)": this part has 38 steps, 36 stops
+Written to guides/classic/The Barrens (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 10 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 25. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 37 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 28 tasks, 13,178 yd on foot; ends at level 25.5; 1 hearth; at its hardest you are 1.6 levels below the mobs
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 23,893 yd; ends at level 25.5; 1 hearth; at its hardest you are 1.6 levels below the mobs
+  Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 24,868 yd; ends at level 25.5; 1 hearth; at its hardest you are 1.6 levels below the mobs
+  Rogue (quests that depend on other zones): 7 more tasks; their whole route comes to 28,028 yd; ends at level 25.5; 1 hearth; at its hardest you are 1.6 levels below the mobs
+  Shaman (quests that depend on other zones): 1 more tasks; their whole route comes to 24,169 yd; ends at level 25.5; 1 hearth; at its hardest you are 1.6 levels below the mobs
+  Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 24,145 yd; ends at level 25.5; 1 hearth; at its hardest you are 1.6 levels below the mobs
+Hearthstone: set at Innkeeper Byula (Innkeeper Byula's inn); 1 hearth step in the guide.
+
+Quests in the guide (16)
+------------------------
+Start to finish here: 6 (6 for everyone)
+
+Hand-in step only shows once complete (1):
+  Blueleaf Tubers [1221, level 26] - needs Blueleaf Tuber (6) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (8):
+  Path of Defense [1498, level 10, Warrior] <- your earlier visit to this zone
+  Avenge My Village [6548, level 18] <- your earlier visit to this zone
+  Goblin Invaders [1062, level 19] <- your earlier visit to this zone
+  The Warsong Reports [6543, level 19] <- your earlier visit to this zone
+  Deepmoss Spider Eggs [1069, level 20] <- your earlier visit to this zone
+  Counterattack! [4021, level 20] <- your earlier visit to this zone
+  Call of Water [1536, level 22, Shaman] <- your earlier visit to this zone
+  The Orb of Soran'ruk [1740, level 25, Warlock] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Mission: Possible But Not Probable [2478, level 24, Rogue] - needs one of Deep Cover [2458] -> Orgrimmar
+
+Worth checking in game
+----------------------
+  Gann's Reclamation [843, level 23]: could not read how many Bael'dun Foreman are needed from the quest text; assumed 8
+
+Not planned (1)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Nether-lace Garment [1946, level 26]: needs level 26; this part gets Undead Mage/Troll Mage characters to about 25.5
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

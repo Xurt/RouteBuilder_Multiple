@@ -1,0 +1,81 @@
+Westfall - Horde - part 1 of 2, planned from level 16
+Guide "16-20 Westfall" in group "Zone Routes (Horde)": this part has 16 steps, 14 stops
+Written to guides/classic/Westfall (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 16. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 14 new ones slotted in, 0 moved because their prerequisites changed, 3 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 10 tasks, 4,763 yd on foot; ends at level 16.4; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 6 more tasks; their whole route comes to 6,505 yd; ends at level 16.4; at its hardest you are 1.8 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (6)
+-----------------------
+Start to finish here: 3 (3 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Captain Sander's Hidden Treasure [138, level 16] - needs one of Captain Sander's Hidden Treasure [136]
+  Captain Sander's Hidden Treasure [139, level 16] - needs one of Captain Sander's Hidden Treasure [138]
+  Captain Sander's Hidden Treasure [140, level 16] - needs one of Captain Sander's Hidden Treasure [139]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  The Coastal Menace [104, level 20]: its mobs are level 20; this part gets you to about 16.5
+
+Left out (1)
+------------
+special category (sort -366) (1):
+  Skychaser the Elder [8675]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Westfall - Horde - part 2 of 2, planned from level 19
+Guide "16-20 Westfall" in group "Zone Routes (Horde)": this part has 4 steps, 3 stops
+Written to guides/classic/Westfall (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 19. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 3 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 473 yd on foot; ends at level 19.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (1)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

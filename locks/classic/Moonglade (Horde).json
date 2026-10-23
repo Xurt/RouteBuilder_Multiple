@@ -1,0 +1,52 @@
+{
+  "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "57-60 Moonglade",
+  "saved": "2026-10-23 14:22",
+  "levels": "RestedXP",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "accept:9063 @1450:-2593.82,7867.06  Accept Torwa Pathfinder",
+        "turnin:6129 @1450:-2678.76,8019.94  TurnIn Curing the Sick",
+        "accept:6130 @1450:-2678.76,8019.94  Accept Power over Poison",
+        "turnin:6126 @1450:-2678.76,8019.94  TurnIn Lessons Anew",
+        "accept:6127 @1450:-2678.76,8019.94  Accept The Principal Source",
+        "turnin:5922 @1450:-2678.76,8019.94  TurnIn Moonglade",
+        "accept:5930 @1450:-2678.76,8019.94  Accept Great Bear Spirit",
+        "obj:5930:1 @1450:-2284.04,8068.28  Objective Great Bear Spirit / Great Bear Spirit",
+        "turnin:5930 @1450:-2678.76,8019.94  TurnIn Great Bear Spirit",
+        "accept:5932 @1450:-2678.76,8019.94  Accept Back to Thunder Bluff",
+        {"lines":[".goto 1450/1,-2593.82,7866.90",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Loganaar|r",".train 1430 >> Train your class spells",".target Loganaar",".xp <18,1",".xp >20,1"],"tag":"Druid","from":"RestedXP: 17-22 Stonetalon/Barrens/Ashenvale"},
+        {"lines":[".goto 1450/1,-2593.82,7866.90",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Loganaar|r",".train 768 >> Train your class spells",".target Loganaar",".xp <20,1"],"tag":"Druid","from":"RestedXP: 17-22 Stonetalon/Barrens/Ashenvale"},
+        {"lines":[".hs >> Hearth to Camp Taurajo",".subzoneskip 378"],"from":"RestedXP: 17-22 Stonetalon/Barrens/Ashenvale"},
+        "turnin:27 @1450:-2678.76,8019.94  TurnIn A Lesson to Learn",
+        "accept:28 @1450:-2678.76,8019.94  Accept Trial of the Lake",
+        "obj:28:collect15877 @1450:-2630.06,7720.33  Objective Trial of the Lake / Shrine Bauble",
+        "obj:28:1 @1450:-2212.25,7853.97  Objective Trial of the Lake / Shrine Of Remulos",
+        "turnin:28 @1450:-2224.25,7874.29  TurnIn Trial of the Lake",
+        "accept:30 @1450:-2224.25,7874.29  Accept Trial of the Sea Lion",
+        "obj:30:1 @1450:-2212.25,7853.97  Objective Trial of the Sea Lion / Pendant of the Sea Lion (1)",
+        "turnin:30 @1450:-2678.76,8019.94  TurnIn Trial of the Sea Lion",
+        "accept:31 @1450:-2678.76,8019.94  Accept Aquatic Form",
+        {"lines":[".hs >> Hearth to Thunder Bluff",".zoneskip Thunder Bluff"],"from":"RestedXP: 22-24 Hillsbrad"},
+        {"lines":[".goto 1450/1,-2593.82,7866.90",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Loganaar|r",".train 22568 >> Train your class spells",".target Loganaar",".xp <32,1",".xp >34,1"],"tag":"Druid","from":"RestedXP: 30-33 Hillsbrad/Arathi"},
+        {"lines":[".goto 1450/1,-2593.82,7866.90",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Loganaar|r",".train 1823 >> Train your class spells",".target Loganaar",".xp <34,1"],"tag":"Druid","from":"RestedXP: 30-33 Hillsbrad/Arathi"},
+        {"lines":[".hs >> Hearth to Freewind Post",".subzoneskip 484"],"from":"RestedXP: 30-33 Hillsbrad/Arathi"},
+        {"lines":[".hs >>Hearth to Everlook",".subzoneskip 255",".zoneskip Winterspring"],"from":"RestedXP: 58-59 Winterspring/Silithus I"},
+        {"lines":[".goto 1450/1,-2593.82,7866.90",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Loganaar|r",".train 22829 >>Train your class spells",".target Loganaar",".xp <56,1",".xp >58,1"],"tag":"Druid","from":"RestedXP: 58-59 Winterspring/Silithus I"},
+        {"lines":[".goto 1450/1,-2593.82,7866.90",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Loganaar|r",".train 9850 >>Train your class spells",".target Loganaar",".xp <58,1"],"tag":"Druid","from":"RestedXP: 58-59 Winterspring/Silithus I"},
+        "turnin:1123 @1450:-2574.43,7797.31  TurnIn Rabine Saturna",
+        "accept:1124 @1450:-2574.43,7797.31  Accept Wasteland",
+        "accept:5527 @1450:-2574.43,7797.31  Accept A Reliquary of Purity",
+        "turnin:6844 @1450:-2417.23,7943.57  TurnIn Umber, Archivist",
+        "accept:6845 @1450:-2417.23,7943.57  Accept Uncovering Past Secrets",
+        "turnin:6845 @1450:-2574.43,7797.31  TurnIn Uncovering Past Secrets",
+        "accept:5526 @1450:-2574.43,7797.31  Accept Shards of the Felvine",
+        "turnin:5526 @1450:-2574.43,7797.31  TurnIn Shards of the Felvine",
+        "accept:1185 @1450:-2417.23,7943.57  Accept Under the Chitin Was...",
+        "turnin:1185 @1450:-2417.23,7943.57  TurnIn Under the Chitin Was..."
+      ]
+    }
+  ]
+}

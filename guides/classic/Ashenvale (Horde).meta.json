@@ -1,0 +1,216 @@
+{
+  "zone": "Ashenvale",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "19-30 Ashenvale",
+  "file": "Ashenvale (Horde).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 19,
+      "end": 19.15,
+      "next": 22,
+      "guide": "19-20 Ashenvale",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "19-20 Ashenvale",
+          "level": 19,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 22,
+      "end": 22.57,
+      "next": 25,
+      "guide": "22-23 Ashenvale",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "22-23 Ashenvale",
+          "level": 22,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 25,
+      "end": 25.44,
+      "next": 32,
+      "guide": "25-26 Ashenvale",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "25-26 Ashenvale",
+          "level": 25,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "start": 32,
+      "end": 32.01,
+      "guide": "32-33 Ashenvale",
+      "sections": [
+        {
+          "label": "RBSection4_1",
+          "name": "part 4",
+          "guide": "32-33 Ashenvale",
+          "level": 32,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 235,
+      "level": 20,
+      "req": 20,
+      "xp": 155,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Durotar"
+    },
+    {
+      "id": 742,
+      "level": 20,
+      "req": 20,
+      "xp": 155,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Mulgore"
+    },
+    {
+      "id": 6382,
+      "level": 20,
+      "req": 20,
+      "xp": 390,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "The Barrens"
+    },
+    {
+      "id": 6442,
+      "level": 19,
+      "req": 14,
+      "xp": 1450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 216,
+      "level": 24,
+      "req": 21,
+      "xp": 1950,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6462,
+      "level": 24,
+      "req": 19,
+      "xp": 1950,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6482,
+      "level": 24,
+      "req": 19,
+      "xp": 2400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6503,
+      "level": 24,
+      "req": 19,
+      "xp": 1950,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6544,
+      "level": 24,
+      "req": 20,
+      "xp": 2400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6641,
+      "level": 23,
+      "req": 20,
+      "xp": 2300,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 25,
+      "level": 25,
+      "req": 23,
+      "xp": 2000,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 824,
+      "level": 27,
+      "req": 23,
+      "xp": 2200,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1918,
+      "level": 27,
+      "req": 23,
+      "xp": 550,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6441,
+      "level": 26,
+      "req": 21,
+      "xp": 2100,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6621,
+      "level": 26,
+      "req": 21,
+      "xp": 2650,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {}
+}

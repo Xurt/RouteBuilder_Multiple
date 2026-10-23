@@ -1,0 +1,286 @@
+{
+  "zone": "Arathi Highlands",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "31-42 Arathi Highlands",
+  "file": "Arathi Highlands (Alliance).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 31,
+      "end": 31.08,
+      "next": 34,
+      "guide": "31-32 Arathi Highlands",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "31-32 Arathi Highlands",
+          "level": 31,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 34,
+      "end": 34.36,
+      "next": 37,
+      "guide": "34-35 Arathi Highlands",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "34-35 Arathi Highlands",
+          "level": 34,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 37,
+      "end": 37.4,
+      "next": 40,
+      "guide": "37-38 Arathi Highlands: around Skuerto",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "around Skuerto",
+          "guide": "37-38 Arathi Highlands: around Skuerto",
+          "level": 37,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "start": 40,
+      "end": 40.13,
+      "guide": "40-41 Arathi Highlands",
+      "sections": [
+        {
+          "label": "RBSection4_1",
+          "name": "part 4",
+          "guide": "40-41 Arathi Highlands",
+          "level": 40,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 634,
+      "level": 31,
+      "req": 28,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Wetlands"
+    },
+    {
+      "id": 659,
+      "level": 33,
+      "req": 30,
+      "xp": 1300,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Hillsbrad Foothills"
+    },
+    {
+      "id": 670,
+      "level": 40,
+      "req": 35,
+      "xp": 3150,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Stranglethorn Vale"
+    },
+    {
+      "id": 681,
+      "level": 31,
+      "req": 30,
+      "xp": 2500,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 690,
+      "level": 32,
+      "req": 30,
+      "xp": 1950,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 642,
+      "level": 37,
+      "req": 30,
+      "xp": 2850,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 682,
+      "level": 37,
+      "req": 30,
+      "xp": 3550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 691,
+      "level": 36,
+      "req": 30,
+      "xp": 3500,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 651,
+      "level": 38,
+      "req": 30,
+      "xp": 2850,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 662,
+      "level": 40,
+      "req": 35,
+      "xp": 3150,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 663,
+      "level": 35,
+      "req": 35,
+      "xp": 690,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 664,
+      "level": 40,
+      "req": 35,
+      "xp": 3150,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 665,
+      "level": 40,
+      "req": 35,
+      "xp": 3150,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 666,
+      "level": 40,
+      "req": 35,
+      "xp": 3900,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 668,
+      "level": 40,
+      "req": 35,
+      "xp": 1550,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 693,
+      "level": 39,
+      "req": 30,
+      "xp": 3000,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 694,
+      "level": 39,
+      "req": 30,
+      "xp": 3000,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 695,
+      "level": 39,
+      "req": 30,
+      "xp": 300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 696,
+      "level": 39,
+      "req": 30,
+      "xp": 3000,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 652,
+      "level": 42,
+      "req": 30,
+      "xp": 3450,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 684,
+      "level": 39,
+      "req": 30,
+      "xp": 3750,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 685,
+      "level": 40,
+      "req": 30,
+      "xp": 3900,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Hillsbrad Foothills": 2,
+    "Stranglethorn Vale": 1,
+    "Elwynn Forest": 1,
+    "Dun Morogh": 1,
+    "Badlands": 1
+  }
+}

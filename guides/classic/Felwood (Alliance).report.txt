@@ -1,0 +1,253 @@
+Felwood - Alliance - part 1 of 3, planned from level 48
+Guide "48-56 Felwood" in group "Zone Routes (Alliance)": this part has 18 steps, 13 stops
+Written to guides/classic/Felwood (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 48. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 11 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed, 87 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 7 tasks, 3,846 yd on foot; ends at level 48.1
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 7,118 yd; ends at level 48.1
+  Priest (quests that depend on other zones): 1 more tasks; their whole route comes to 7,118 yd; ends at level 48.1
+  Warlock (quests that depend on other zones): 3 more tasks; their whole route comes to 8,269 yd; ends at level 48.1; at its hardest you are 1.9 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (9)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (7):
+  Blood of Morphaz [8257, level 52, Priest] <- Azshara
+  An Imp's Request [8419, level 52, Warlock] <- Stormwind City
+  Linken's Memory [3942, level 54] <- Un'Goro Crater
+  Cleansed Water Returns to Felwood [5159, level 54] <- The Barrens
+  Falling to Corruption [5084, level 56] <- Winterspring
+  Lord Banehollow [7623, level 58, Warlock] <- Burning Steppes
+  Words of the High Chief [5128, level 59] <- Winterspring
+
+Worth checking in game
+----------------------
+
+Put off to a later part (39)
+----------------------------
+These need a higher level than this part ends at:
+  Flute of Xavaric [939, level 54]: needs level 49; this part gets you to about 48.7
+  Aquementas [4005, level 54]: its mobs are level 52; this part gets you to about 48.7
+  Silver Heart [4084, level 54]: its mobs are level 52; this part gets you to about 48.7
+  Cleansing Felwood [4101, level 55]: its mobs are level 52; this part gets you to about 48.7
+  Ancient Spirit [4261, level 56]: is a level 56 quest; this part gets you to about 48.7
+  The Corruption of the Jadefire [4421, level 54]: its mobs are level 54; this part gets you to about 48.7
+  Felbound Ancients [4441, level 54]: needs level 49; this part gets you to about 48.7
+  Purified! [4442, level 54]: needs level 49; this part gets you to about 48.7
+  Further Corruption [4906, level 54]: its mobs are level 55; this part gets you to about 48.7
+  Winterfall Firewater [5083, level 56]: needs level 52; this part gets you to about 48.7
+  Mystery Goo [5085, level 56]: needs level 52; this part gets you to about 48.7
+  Forces of Jaedenar [5155, level 51]: its mobs are level 51; this part gets you to about 48.7
+  Verifying the Corruption [5156, level 54]: is a level 54 quest; this part gets you to about 48.7
+  Collection of the Corrupt Water [5157, level 52]: is a level 52 quest; this part gets you to about 48.7
+  Seeking Spiritual Aid [5158, level 52]: follows Collection of the Corrupt Water [5157]
+  Dousing the Flames of Protection [5165, level 55]: is a level 55 quest; this part gets you to about 48.7
+  A Strange Red Key [5202, level 55]: needs level 49; this part gets you to about 48.7
+  Rescue From Jaedenar [5203, level 55]: is a level 55 quest; this part gets you to about 48.7
+  Retribution of the Light [5204, level 57]: its mobs are level 56; this part gets you to about 48.7
+  A Final Blow [5242, level 58]: its mobs are level 57; this part gets you to about 48.7
+  To Winterspring! [5249, level 56]: needs level 53; this part gets you to about 48.7
+  The Remains of Trey Lightforge [5385, level 57]: needs level 49; this part gets you to about 48.7
+  Salve via Hunting [5882, level 55]: follows Cleansing Felwood [4101]
+  What Niby Commands [7601, level 50]: needs level 50; this part gets Warlock characters to about 48.8
+  Flawless Fel Essence [7602, level 55]: its mobs are level 55; this part gets Warlock characters to about 48.8
+  Kroshius' Infernal Core [7603, level 55]: its mobs are level 55; this part gets Warlock characters to about 48.8
+  Ulathek the Traitor [7624, level 58]: needs level 60; this part gets Warlock characters to about 48.8
+  Xorothian Stardust [7625, level 60]: needs level 60; this part gets Warlock characters to about 48.8
+  An Introduction [7633, level 60]: needs level 60; this part gets Hunter characters to about 48.7
+  Ancient Sinew Wrapped Lamina [7634, level 60]: needs level 60; this part gets Hunter characters to about 48.7
+  A Proper String [7635, level 60]: needs level 60; this part gets Hunter characters to about 48.7
+  Stave of the Ancients [7636, level 60]: needs level 60; this part gets Hunter characters to about 48.7
+  Hot and Itchy [8420, level 52]: needs level 50; this part gets Warlock characters to about 48.8
+  The Wrong Stuff [8421, level 52]: needs level 50; this part gets Warlock characters to about 48.8
+  Trolls of a Feather [8422, level 52]: needs level 50; this part gets Warlock characters to about 48.8
+  Deadwood of the North [8461, level 55]: its mobs are level 54; this part gets you to about 48.7
+  Speak to Salfa [8465, level 55]: follows Deadwood of the North [8461]
+  Deadwood Ritual Totem [8470, level 55]: follows Salve via Hunting [5882]
+  Winterfall Ritual Totem [8471, level 56]: needs level 50; this part gets you to about 48.7
+
+Left out (47)
+-------------
+repeatable (37):
+  Corrupted Windblossom [996], Corrupted Windblossom [998], Corrupted Windblossom [1514], Corrupted Songflower [2523], Corrupted Songflower [2878], Corrupted Songflower [3363], Salve via Hunting [4103], Salve via Mining [4104], Salve via Gathering [4105], Salve via Skinning [4106], Salve via Disenchanting [4107], Corrupted Songflower [4113], Corrupted Songflower [4114], Corrupted Windblossom [4115], Corrupted Songflower [4116], Corrupted Whipper Root [4117], Corrupted Songflower [4118], Corrupted Night Dragon [4119], Corrupted Windblossom [4221], Corrupted Windblossom [4222], Corrupted Windblossom [4343], Corrupted Songflower [4401], Corrupted Windblossom [4403], Corrupted Whipper Root [4443], Corrupted Whipper Root [4444], Corrupted Whipper Root [4445], Corrupted Whipper Root [4446], Corrupted Night Dragon [4447], Corrupted Night Dragon [4448], Corrupted Whipper Root [4461], Corrupted Night Dragon [4462], Corrupted Songflower [4464], Corrupted Songflower [4465], Corrupted Windblossom [4466], Corrupted Windblossom [4467], Feathers for Grazle [8466], Feathers for Nafien [8467]
+needs a profession (5):
+  Salve via Mining [5883], Salve via Gathering [5884], Salve via Skinning [5885], Salve via Disenchanting [5886], Sacred Cloth [6032]
+needs reputation (3):
+  Runecloth [6031], The Root of All Evil [8481], The Brokering of Peace [8484]
+handed in here, but the database does not say where it starts (1):
+  The Ancient Leaf [7632]
+special category (sort -366) (1):
+  Nightwind the Elder [8723]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Felwood - Alliance - part 2 of 3, planned from level 51
+Guide "48-56 Felwood" in group "Zone Routes (Alliance)": this part has 44 steps, 40 stops
+Written to guides/classic/Felwood (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warlock), not counting quests brought in from other zones.
+5 pickups or hand-ins are within reach of a stop but planned for later.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 51. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 36 steps kept, 12 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 29 tasks, 14,786 yd on foot; ends at level 51.3; at its hardest you are 1.9 levels below the mobs
+  Warlock: 10 more tasks; their whole route comes to 18,545 yd; ends at level 51.5; at its hardest you are 1.9 levels below the mobs
+  everyone (quests that depend on other zones): 9 more tasks; their whole route comes to 24,941 yd; ends at level 51.3; at its hardest you are 1.9 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (18)
+------------------------
+Start to finish here: 12 (9 for everyone, 3 Warlock)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Seeking Spiritual Aid [5158, level 52] -> The Barrens
+
+Hand-in step only shows once complete (2):
+  Trolls of a Feather [8422, level 52, Warlock] - needs Amber Voodoo Feather (6) (an unknown place); Blue Voodoo Feather (6) (an unknown place); Green Voodoo Feather (6) (an unknown place)
+  Felbound Ancients [4441, level 54] - needs Vial of Blessed Water (1) (Darnassus)
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Aquementas [4005, level 54] - needs one of Silver Heart [4084] -> Un'Goro Crater
+  Silver Heart [4084, level 54] - needs one of Linken's Memory [3942]
+  Purified! [4442, level 54] - needs one of Felbound Ancients [4441]
+
+Worth checking in game
+----------------------
+1 quests have no experience figure in the database: their experience is estimated, and 1 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  What Niby Commands [7601]
+  Forces of Jaedenar [5155, level 51]: could not read how many Jaedenar Guardian are needed from the quest text; assumed 8
+  Verifying the Corruption [5156, level 54]: "Explore the craters in Shatter Scar Vale" is assumed to be line 3 in the quest log; check it
+  Deadwood Ritual Totem [8470, level 55]: has a reputation or spell objective, which is not planned
+  Winterfall Ritual Totem [8471, level 56]: has a reputation or spell objective, which is not planned
+
+Put off to a later part (21)
+----------------------------
+These need a higher level than this part ends at:
+  Ancient Spirit [4261, level 56]: is a level 56 quest; this part gets you to about 51.5
+  The Corruption of the Jadefire [4421, level 54]: its mobs are level 54; this part gets you to about 51.5
+  Further Corruption [4906, level 54]: its mobs are level 55; this part gets you to about 51.5
+  Winterfall Firewater [5083, level 56]: needs level 52; this part gets you to about 51.5
+  Mystery Goo [5085, level 56]: needs level 52; this part gets you to about 51.5
+  Dousing the Flames of Protection [5165, level 55]: is a level 55 quest; this part gets you to about 51.5
+  Rescue From Jaedenar [5203, level 55]: is a level 55 quest; this part gets you to about 51.5
+  Retribution of the Light [5204, level 57]: its mobs are level 56; this part gets you to about 51.5
+  A Final Blow [5242, level 58]: its mobs are level 57; this part gets you to about 51.5
+  To Winterspring! [5249, level 56]: needs level 53; this part gets you to about 51.5
+  The Remains of Trey Lightforge [5385, level 57]: follows Retribution of the Light [5204]
+  Flawless Fel Essence [7602, level 55]: its mobs are level 55; this part gets Warlock characters to about 51.7
+  Kroshius' Infernal Core [7603, level 55]: its mobs are level 55; this part gets Warlock characters to about 51.7
+  Ulathek the Traitor [7624, level 58]: needs level 60; this part gets Warlock characters to about 51.7
+  Xorothian Stardust [7625, level 60]: needs level 60; this part gets Warlock characters to about 51.7
+  An Introduction [7633, level 60]: needs level 60; this part gets Hunter characters to about 51.5
+  Ancient Sinew Wrapped Lamina [7634, level 60]: needs level 60; this part gets Hunter characters to about 51.5
+  A Proper String [7635, level 60]: needs level 60; this part gets Hunter characters to about 51.5
+  Stave of the Ancients [7636, level 60]: needs level 60; this part gets Hunter characters to about 51.5
+  Deadwood of the North [8461, level 55]: its mobs are level 54; this part gets you to about 51.5
+  Speak to Salfa [8465, level 55]: follows Deadwood of the North [8461]
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Felwood - Alliance - part 3 of 3, planned from level 54
+Guide "48-56 Felwood" in group "Zone Routes (Alliance)": this part has 41 steps, 39 stops
+Written to guides/classic/Felwood (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warlock), not counting quests brought in from other zones.
+7 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 54. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 36 steps kept, 9 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 20 tasks, 14,933 yd on foot; ends at level 54.2
+  Warlock: 2 more tasks; their whole route comes to 15,084 yd; ends at level 54.2
+  everyone (quests that depend on other zones): 18 more tasks; their whole route comes to 26,808 yd; ends at level 54.2; at its hardest you are 1.8 levels below the mobs
+  Warlock (quests that depend on other zones): 5 more tasks; their whole route comes to 27,164 yd; ends at level 54.2; 1 ORDER PROBLEMS; at its hardest you are 1.8 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (16)
+------------------------
+Start to finish here: 3 (3 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Speak to Salfa [8465, level 55] -> Winterspring
+  Winterfall Firewater [5083, level 56] -> Winterspring
+  To Winterspring! [5249, level 56] -> Winterspring
+
+Hand-in step only shows once complete (1):
+  Flawless Fel Essence [7602, level 55, Warlock] - needs Flawless Fel Essence (Azshara) (1) (Azshara); Flawless Fel Essence (Dark Portal) (1) (Blasted Lands)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Trolls of a Feather [8422, level 52, Warlock] <- your earlier visit to this zone
+  Felbound Ancients [4441, level 54] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (7):
+  Dousing the Flames of Protection [5165, level 55] - needs one of Cleansed Water Returns to Felwood [5159]
+  Rescue From Jaedenar [5203, level 55] - needs one of A Strange Red Key [5202]
+  Kroshius' Infernal Core [7603, level 55, Warlock] - needs one of Flawless Fel Essence [7602]
+  Ancient Spirit [4261, level 56] - needs one of Purified! [4442] -> Ashenvale
+  Mystery Goo [5085, level 56] - needs one of Falling to Corruption [5084] -> Winterspring
+  Retribution of the Light [5204, level 57] - needs one of Rescue From Jaedenar [5203]
+  The Remains of Trey Lightforge [5385, level 57] - needs one of Retribution of the Light [5204]
+
+Worth checking in game
+----------------------
+
+Not planned (7)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  A Final Blow [5242, level 58]: its mobs are level 57; this part gets you to about 54.2
+  Ulathek the Traitor [7624, level 58]: needs level 60; this part gets Warlock characters to about 54.2
+  Xorothian Stardust [7625, level 60]: needs level 60; this part gets Warlock characters to about 54.2
+  An Introduction [7633, level 60]: needs level 60; this part gets Hunter characters to about 54.2
+  Ancient Sinew Wrapped Lamina [7634, level 60]: needs level 60; this part gets Hunter characters to about 54.2
+  A Proper String [7635, level 60]: needs level 60; this part gets Hunter characters to about 54.2
+  Stave of the Ancients [7636, level 60]: needs level 60; this part gets Hunter characters to about 54.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

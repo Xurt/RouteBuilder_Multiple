@@ -1,0 +1,269 @@
+{
+  "zone": "The Hinterlands",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "43-53 The Hinterlands",
+  "file": "The Hinterlands (Horde).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 43,
+      "end": 43,
+      "next": 46,
+      "guide": "43-44 The Hinterlands",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "43-44 The Hinterlands",
+          "level": 43,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 46,
+      "end": 47.04,
+      "next": 50,
+      "guide": "46-47 The Hinterlands: around Huntsman Markhor",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Huntsman Markhor",
+          "guide": "46-47 The Hinterlands: around Huntsman Markhor",
+          "level": 46,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 50,
+      "end": 50.15,
+      "guide": "50-51 The Hinterlands",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "50-51 The Hinterlands",
+          "level": 50,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 626,
+      "level": 51,
+      "req": 35,
+      "xp": 6100,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dustwallow Marsh"
+    },
+    {
+      "id": 650,
+      "level": 48,
+      "req": 42,
+      "xp": 4400,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Durotar"
+    },
+    {
+      "id": 1429,
+      "level": 44,
+      "req": 38,
+      "xp": 3750,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Swamp of Sorrows"
+    },
+    {
+      "id": 2742,
+      "level": 47,
+      "req": 42,
+      "xp": 4200,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7815,
+      "level": 50,
+      "req": 44,
+      "xp": 4700,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7816,
+      "level": 48,
+      "req": 44,
+      "xp": 4400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7828,
+      "level": 48,
+      "req": 44,
+      "xp": 4400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7829,
+      "level": 48,
+      "req": 44,
+      "xp": 4400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7830,
+      "level": 48,
+      "req": 44,
+      "xp": 4400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7839,
+      "level": 48,
+      "req": 44,
+      "xp": 4400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7840,
+      "level": 49,
+      "req": 44,
+      "xp": 4550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7841,
+      "level": 48,
+      "req": 44,
+      "xp": 4400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7842,
+      "level": 48,
+      "req": 44,
+      "xp": 5450,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7843,
+      "level": 50,
+      "req": 44,
+      "xp": 5900,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7844,
+      "level": 48,
+      "req": 44,
+      "xp": 4400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7845,
+      "level": 51,
+      "req": 46,
+      "xp": 4900,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7849,
+      "level": 50,
+      "req": 46,
+      "xp": 5900,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7850,
+      "level": 50,
+      "req": 46,
+      "xp": 5900,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7862,
+      "level": 51,
+      "req": 46,
+      "xp": 6100,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7846,
+      "level": 51,
+      "req": 46,
+      "xp": 6100,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7847,
+      "level": 51,
+      "req": 46,
+      "xp": 4900,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7861,
+      "level": 51,
+      "req": 46,
+      "xp": 6100,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Swamp of Sorrows": 1,
+    "Hillsbrad Foothills": 1,
+    "Durotar": 1,
+    "Stranglethorn Vale": 1,
+    "Tirisfal Glades": 1
+  }
+}

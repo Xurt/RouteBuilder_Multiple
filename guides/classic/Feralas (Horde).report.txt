@@ -1,0 +1,188 @@
+Feralas - Horde - part 1 of 3, planned from level 42
+Guide "42-52 Feralas" in group "Zone Routes (Horde)": this part has 64 steps, 41 stops
+Written to guides/classic/Feralas (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+4 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 42. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 48 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed, 46 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 39 tasks, 8,692 yd on foot; ends at level 42.6; 2 hearths; at its hardest you are 2.6 levels below the mobs
+  everyone (quests that depend on other zones): 11 more tasks; their whole route comes to 14,033 yd; ends at level 42.6; 2 hearths; 2 ORDER PROBLEMS; at its hardest you are 2.6 levels below the mobs
+Hearthstone: set at Innkeeper Greul (Innkeeper Greul's inn); 2 hearth steps in the guide.
+11 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (20)
+------------------------
+Start to finish here: 12 (12 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  A Grim Discovery [2976, level 45] -> Orgrimmar
+  A Strange Request [3121, level 45] -> Orgrimmar
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  A Threat in Feralas [2981, level 43] <- Orgrimmar
+  Return to Witch Doctor Uzer'i [3122, level 45] <- Orgrimmar
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Rescue OOX-22/FE! [2767, level 45] - needs one of Find OOX-22/FE! [2766] -> Stranglethorn Vale
+  Faerie Dragon Muisek [3125, level 45] - needs one of Hippogryph Muisek [3124]
+  Testing the Vessel [3123, level 47] - needs one of Return to Witch Doctor Uzer'i [3122]
+  Hippogryph Muisek [3124, level 47] - needs one of Testing the Vessel [3123]
+
+Worth checking in game
+----------------------
+  The Ogres of Feralas [2975, level 43]: could not read how many Gordunni Ogre Mage are needed from the quest text; assumed 8
+
+Put off to a later part (15)
+----------------------------
+These need a higher level than this part ends at:
+  Dark Ceremony [2979, level 46]: its mobs are level 45; this part gets you to about 42.6
+  The Gordunni Orb [3002, level 47]: follows Dark Ceremony [2979]
+  Dark Heart [3062, level 50]: its mobs are level 50; this part gets you to about 43.0
+  Vengeance on the Northspring [3063, level 50]: its mobs are level 49; this part gets you to about 43.0
+  Treant Muisek [3126, level 50]: its mobs are level 45; this part gets you to about 42.6
+  Mountain Giant Muisek [3127, level 50]: its mobs are level 48; this part gets you to about 43.0
+  Natural Materials [3128, level 50]: its mobs are level 45; this part gets you to about 42.6
+  Weapons of Spirit [3129, level 50]: follows Mountain Giant Muisek [3127]
+  The Sunken Temple [3380, level 51]: needs level 46; this part gets you to about 43.0
+  The Strength of Corruption [4120, level 52]: needs level 47; this part gets you to about 43.0
+  Zapped Giants [7003, level 48]: its mobs are level 48; this part gets you to about 43.0
+  Fuel for the Zapping [7721, level 48]: needs level 45; this part gets you to about 43.0
+  Stinglasher [7731, level 47]: its mobs are level 47; this part gets you to about 43.0
+  Zukk'ash Report [7732, level 48]: follows Stinglasher [7731]
+  Improved Quality [7734, level 48]: its mobs are level 47; this part gets you to about 43.0
+
+Left out (20)
+-------------
+needs a profession (7):
+  Wild Leather Armor [2854], Wild Leather Shoulders [2855], Wild Leather Vest [2856], Wild Leather Helmet [2857], Wild Leather Boots [2858], Wild Leather Leggings [2859], Master of the Wild Leather [2860]
+repeatable (5):
+  To the Top [3567], The Videre Elixir [4041], Again With the Zapped Giants [7725], Refuel for the Zapping [7726], Perfect Yeti Hide [7738]
+dungeon quest (4):
+  Pusillin and the Elder Azj'Tordin [7441], Elven Legends [7481], Lethtendris's Web [7489], Camp Mojache [7492]
+special category (sort -366) (2):
+  Grimtotem the Elder [8679], Mistwalker the Elder [8685]
+handed in here, but the database does not say where it starts (1):
+  The Gordunni Scroll [2978]
+special category (sort -1) (1):
+  Shrouded in Nightmare [8446]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Feralas - Horde - part 2 of 3, planned from level 45
+Guide "42-52 Feralas" in group "Zone Routes (Horde)": this part has 24 steps, 20 stops
+Written to guides/classic/Feralas (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 45. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 18 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 7 tasks, 4,738 yd on foot; ends at level 45.1; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 13 more tasks; their whole route comes to 11,245 yd; ends at level 45.1; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+
+Quests in the guide (7)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Zukk'ash Report [7732, level 48] -> Orgrimmar
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Dark Ceremony [2979, level 46] - needs one of The Gordunni Scroll [2978]
+  The Gordunni Orb [3002, level 47] - needs one of Dark Ceremony [2979] -> Orgrimmar
+  Treant Muisek [3126, level 50] - needs one of Faerie Dragon Muisek [3125]
+  Natural Materials [3128, level 50] - needs one of Return to Witch Doctor Uzer'i [3122]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (8)
+---------------------------
+These need a higher level than this part ends at:
+  Dark Heart [3062, level 50]: its mobs are level 50; this part gets you to about 45.3
+  Vengeance on the Northspring [3063, level 50]: its mobs are level 49; this part gets you to about 45.3
+  Mountain Giant Muisek [3127, level 50]: its mobs are level 48; this part gets you to about 45.3
+  Weapons of Spirit [3129, level 50]: follows Mountain Giant Muisek [3127]
+  The Sunken Temple [3380, level 51]: needs level 46; this part gets you to about 45.3
+  The Strength of Corruption [4120, level 52]: needs level 47; this part gets you to about 45.3
+  Zapped Giants [7003, level 48]: its mobs are level 48; this part gets you to about 45.3
+  Fuel for the Zapping [7721, level 48]: needs level 45; this part gets you to about 45.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Feralas - Horde - part 3 of 3, planned from level 48
+Guide "42-52 Feralas" in group "Zone Routes (Horde)": this part has 22 steps, 17 stops
+Written to guides/classic/Feralas (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 48. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 19 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 18 tasks, 10,453 yd on foot; ends at level 48.2; at its hardest you are 1.9 levels below the mobs
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 10,579 yd; ends at level 48.2; at its hardest you are 1.9 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+5 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 4 (4 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Sunken Temple [3380, level 51] -> Tanaris
+
+Hand-in step only shows once complete (1):
+  The Strength of Corruption [4120, level 52] - needs Angerclaw Grizzly slain (12) (Felwood); Felpaw Ravager slain (12) (Felwood)
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Mountain Giant Muisek [3127, level 50] - needs one of Treant Muisek [3126]
+  Weapons of Spirit [3129, level 50] - needs Mountain Giant Muisek [3127], Natural Materials [3128]
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

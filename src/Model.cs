@@ -19,28 +19,12 @@ public static class Game
         ("Warrior", 1), ("Paladin", 2), ("Hunter", 4), ("Rogue", 8), ("Priest", 16), ("Shaman", 64), ("Mage", 128), ("Warlock", 256), ("Druid", 1024),
     };
     public const int AllClasses = 1503;
-    static readonly (string Name, long Bit)[] Horde = { ("Orc", 2), ("Undead", 16), ("Tauren", 32), ("Troll", 128), ("Skyborne", 1L << 33) };
-    static readonly (string Name, long Bit)[] Alliance = { ("Human", 1), ("Dwarf", 4), ("NightElf", 8), ("Gnome", 64), ("Skyborne", 1L << 32) };
+    // the races and race/class combinations of the game being planned (see Games); a combination the quest data has a
+    // class quest for is added when it loads (Learn)
+    static (string Name, long Bit)[] Horde => Games.Current.Horde;
+    static (string Name, long Bit)[] Alliance => Games.Current.Alliance;
     public static (string Name, long Bit)[] Races(string faction) => faction == "Horde" ? Horde : Alliance;
-
-    /// <summary>
-    /// The race/class combinations that exist: classic's, plus those Forever adds. Forever's are the ones its quest
-    /// data has class quests for; any more that the data turns up are added when it is loaded (<see cref="Learn"/>).
-    /// </summary>
-    static readonly HashSet<(string Race, string Class)> Combos = new()
-    {
-        ("Human", "Warrior"), ("Human", "Paladin"), ("Human", "Rogue"), ("Human", "Priest"), ("Human", "Mage"), ("Human", "Warlock"),
-        ("Dwarf", "Warrior"), ("Dwarf", "Paladin"), ("Dwarf", "Hunter"), ("Dwarf", "Rogue"), ("Dwarf", "Priest"),
-        ("Gnome", "Warrior"), ("Gnome", "Rogue"), ("Gnome", "Mage"), ("Gnome", "Warlock"),
-        ("NightElf", "Warrior"), ("NightElf", "Hunter"), ("NightElf", "Rogue"), ("NightElf", "Priest"), ("NightElf", "Druid"),
-        ("Orc", "Warrior"), ("Orc", "Hunter"), ("Orc", "Rogue"), ("Orc", "Shaman"), ("Orc", "Warlock"),
-        ("Troll", "Warrior"), ("Troll", "Hunter"), ("Troll", "Rogue"), ("Troll", "Priest"), ("Troll", "Shaman"), ("Troll", "Mage"),
-        ("Tauren", "Warrior"), ("Tauren", "Hunter"), ("Tauren", "Shaman"), ("Tauren", "Druid"),
-        ("Undead", "Warrior"), ("Undead", "Rogue"), ("Undead", "Priest"), ("Undead", "Mage"), ("Undead", "Warlock"),
-        // Forever
-        ("Undead", "Paladin"), ("Gnome", "Priest"), ("Orc", "Mage"), ("Troll", "Warlock"), ("Dwarf", "Shaman"),
-        ("Skyborne", "Druid"), ("Skyborne", "Hunter"), ("Skyborne", "Shaman"), ("Skyborne", "Warrior"), ("Skyborne", "Mage"),
-    };
+    static HashSet<(string Race, string Class)> Combos => Games.Current.Combos;
 
     public static bool Exists(string race, string cls) => Combos.Contains((race, cls));
     public static IEnumerable<string> ClassesOf(string race) => Classes.Select(c => c.Name).Where(c => Exists(race, c));
@@ -61,7 +45,7 @@ public static class Game
     public static readonly HashSet<int> ClassSorts = new() { -61, -81, -82, -141, -161, -162, -261, -262, -263 };
     public const int CampingSort = -666;
 
-    public const int MaxLevel = 60;
+    public static int MaxLevel => Games.Current.MaxLevel;
     static readonly int[] XpNext =
     {
         0, 400, 900, 1400, 2100, 2800, 3600, 4500, 5400, 6500, 7600, 8800, 10100, 11400, 12900, 14400, 16000, 17700, 19400, 21300,
@@ -241,7 +225,7 @@ public sealed class RxpNotes
         if (!Directory.Exists(dir))
             throw new InvalidOperationException($"--rxp: folder not found: {dir}  (give the folder that holds RestedXP's guide .lua files; on Windows, leave the \\ off the end of a quoted path)");
         var r = new RxpNotes(); var rx = new Regex(@"\.complete (\d+),(\d+)[^\r\n]*?--([^\r\n<]*)");
-        foreach (var f in Directory.EnumerateFiles(dir, "*.lua", SearchOption.AllDirectories))
+        foreach (var f in RxpServices.GuideFiles(dir))
         {
             string text;
             try { text = File.ReadAllText(f); } catch (IOException) { continue; }

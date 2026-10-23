@@ -1,0 +1,701 @@
+{
+  "zone": "Durotar",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "1-13 Durotar",
+  "file": "Durotar (Horde).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 1,
+      "end": 10.12,
+      "next": 13,
+      "guide": "7-11 Durotar: around Master Gadrin",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Gornek",
+          "guide": "1-4 Durotar: around Gornek",
+          "level": 1,
+          "index": 0
+        },
+        {
+          "label": "RBSection1_2",
+          "name": "around Master Gadrin",
+          "guide": "4-7 Durotar: around Master Gadrin",
+          "level": 4,
+          "index": 1
+        },
+        {
+          "label": "RBSection1_3",
+          "name": "around Master Gadrin",
+          "guide": "7-11 Durotar: around Master Gadrin",
+          "level": 7,
+          "index": 2
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 13,
+      "end": 13,
+      "guide": "13-14 Durotar",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "13-14 Durotar",
+          "level": 13,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 784,
+      "level": 7,
+      "req": 3,
+      "xp": 630,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 786,
+      "level": 8,
+      "req": 5,
+      "xp": 700,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 787,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 788,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 789,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 790,
+      "level": 5,
+      "req": 1,
+      "xp": 450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 791,
+      "level": 7,
+      "req": 4,
+      "xp": 630,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 792,
+      "level": 4,
+      "req": 2,
+      "xp": 445,
+      "part": 1,
+      "section": 0,
+      "tag": "Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Druid"
+    },
+    {
+      "id": 794,
+      "level": 5,
+      "req": 1,
+      "xp": 670,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 804,
+      "level": 5,
+      "req": 1,
+      "xp": 110,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 805,
+      "level": 5,
+      "req": 1,
+      "xp": 225,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 806,
+      "level": 12,
+      "req": 4,
+      "xp": 910,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 808,
+      "level": 9,
+      "req": 4,
+      "xp": 780,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 812,
+      "level": 9,
+      "req": 7,
+      "xp": 980,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 815,
+      "level": 8,
+      "req": 6,
+      "xp": 700,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 816,
+      "level": 11,
+      "req": 8,
+      "xp": 880,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 817,
+      "level": 8,
+      "req": 5,
+      "xp": 700,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 818,
+      "level": 7,
+      "req": 5,
+      "xp": 630,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 823,
+      "level": 7,
+      "req": 4,
+      "xp": 315,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 825,
+      "level": 8,
+      "req": 3,
+      "xp": 700,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 826,
+      "level": 10,
+      "req": 4,
+      "xp": 840,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 827,
+      "level": 12,
+      "req": 4,
+      "xp": 910,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 828,
+      "level": 12,
+      "req": 4,
+      "xp": 90,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 829,
+      "level": 12,
+      "req": 4,
+      "xp": 455,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 832,
+      "level": 12,
+      "req": 4,
+      "xp": 680,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 834,
+      "level": 9,
+      "req": 7,
+      "xp": 780,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 835,
+      "level": 11,
+      "req": 7,
+      "xp": 880,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 837,
+      "level": 10,
+      "req": 6,
+      "xp": 630,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 1485,
+      "level": 4,
+      "req": 1,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": "Warlock"
+    },
+    {
+      "id": 1499,
+      "level": 4,
+      "req": 1,
+      "xp": 35,
+      "part": 1,
+      "section": 0,
+      "tag": "Warlock"
+    },
+    {
+      "id": 1516,
+      "level": 4,
+      "req": 4,
+      "xp": 270,
+      "part": 1,
+      "section": 0,
+      "tag": "Shaman"
+    },
+    {
+      "id": 1517,
+      "level": 4,
+      "req": 4,
+      "xp": 270,
+      "part": 1,
+      "section": 0,
+      "tag": "Shaman"
+    },
+    {
+      "id": 1518,
+      "level": 4,
+      "req": 4,
+      "xp": 445,
+      "part": 1,
+      "section": 0,
+      "tag": "Shaman"
+    },
+    {
+      "id": 1520,
+      "level": 4,
+      "req": 4,
+      "xp": 180,
+      "part": 1,
+      "section": 0,
+      "tag": "Shaman",
+      "from": "Mulgore"
+    },
+    {
+      "id": 1524,
+      "level": 11,
+      "req": 10,
+      "xp": 660,
+      "part": 1,
+      "section": 2,
+      "tag": "Shaman",
+      "from": "The Barrens"
+    },
+    {
+      "id": 2161,
+      "level": 5,
+      "req": 1,
+      "xp": 110,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 2383,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc Warrior"
+    },
+    {
+      "id": 3065,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "Troll Warrior"
+    },
+    {
+      "id": 3082,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "Troll Hunter"
+    },
+    {
+      "id": 3083,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "Troll Rogue"
+    },
+    {
+      "id": 3084,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "Troll Shaman"
+    },
+    {
+      "id": 3085,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "Troll Priest"
+    },
+    {
+      "id": 3086,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "Troll Mage"
+    },
+    {
+      "id": 3087,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc Hunter"
+    },
+    {
+      "id": 3088,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc Rogue"
+    },
+    {
+      "id": 3089,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc Shaman"
+    },
+    {
+      "id": 3090,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc Warlock"
+    },
+    {
+      "id": 4402,
+      "level": 3,
+      "req": 1,
+      "xp": 380,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4641,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5441,
+      "level": 4,
+      "req": 3,
+      "xp": 445,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5648,
+      "level": 4,
+      "req": 5,
+      "xp": 270,
+      "part": 1,
+      "section": 1,
+      "tag": "Troll Priest"
+    },
+    {
+      "id": 5649,
+      "level": 4,
+      "req": 5,
+      "xp": 90,
+      "part": 1,
+      "section": 1,
+      "tag": "Troll Priest"
+    },
+    {
+      "id": 5655,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 1,
+      "section": 2,
+      "tag": "Troll Priest",
+      "from": "Mulgore"
+    },
+    {
+      "id": 5656,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 1,
+      "section": 2,
+      "tag": "Troll Priest",
+      "from": "Mulgore"
+    },
+    {
+      "id": 5657,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 1,
+      "section": 2,
+      "tag": "Troll Priest",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 5726,
+      "level": 12,
+      "req": 9,
+      "xp": 910,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 5727,
+      "level": 12,
+      "req": 9,
+      "xp": 455,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 6062,
+      "level": 10,
+      "req": 10,
+      "xp": 840,
+      "part": 1,
+      "section": 2,
+      "tag": "Orc Hunter/Troll Hunter"
+    },
+    {
+      "id": 6068,
+      "level": 10,
+      "req": 10,
+      "xp": 85,
+      "part": 1,
+      "section": 2,
+      "tag": "Orc Hunter/Troll Hunter"
+    },
+    {
+      "id": 6070,
+      "level": 10,
+      "req": 10,
+      "xp": 85,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc Hunter/Troll Hunter",
+      "from": "Mulgore"
+    },
+    {
+      "id": 6081,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 1,
+      "section": 2,
+      "tag": "Orc Hunter/Troll Hunter"
+    },
+    {
+      "id": 6082,
+      "level": 10,
+      "req": 10,
+      "xp": 840,
+      "part": 1,
+      "section": 2,
+      "tag": "Orc Hunter/Troll Hunter"
+    },
+    {
+      "id": 6083,
+      "level": 10,
+      "req": 10,
+      "xp": 840,
+      "part": 1,
+      "section": 2,
+      "tag": "Orc Hunter/Troll Hunter"
+    },
+    {
+      "id": 6384,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 1,
+      "section": 2,
+      "tag": "Orc/Troll",
+      "from": "The Barrens"
+    },
+    {
+      "id": 6394,
+      "level": 4,
+      "req": 3,
+      "xp": 445,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1501,
+      "level": 11,
+      "req": 10,
+      "xp": 880,
+      "part": 2,
+      "section": 0,
+      "tag": "Orc Warlock"
+    },
+    {
+      "id": 1506,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 2,
+      "section": 0,
+      "tag": "Warlock"
+    },
+    {
+      "id": 1859,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 2,
+      "section": 0,
+      "tag": "Orc Rogue"
+    },
+    {
+      "id": 1883,
+      "level": 10,
+      "req": 10,
+      "xp": 85,
+      "part": 2,
+      "section": 0,
+      "tag": "Undead Mage/Troll Mage"
+    },
+    {
+      "id": 1884,
+      "level": 10,
+      "req": 10,
+      "xp": 840,
+      "part": 2,
+      "section": 0,
+      "tag": "Undead Mage/Troll Mage"
+    }
+  ],
+  "carriedTo": {
+    "The Barrens": 6,
+    "Mulgore": 3,
+    "Tirisfal Glades": 1
+  }
+}

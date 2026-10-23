@@ -968,7 +968,7 @@ public sealed class Emitter
 
         string other = m.Opt.Faction == "Horde" ? "Alliance" : "Horde";
         sb.AppendLine($"-- {name}: {group}.");
-        sb.AppendLine($"-- Made by RouteBuilder from QuestieDB's Forever data ({m.Data.Version}; QuestieDB is GPL-3.0).");
+        sb.AppendLine($"-- Made by RouteBuilder from QuestieDB's {Games.Current.Label} data ({m.Data.Version}; QuestieDB is GPL-3.0).");
         sb.AppendLine(m.SingleCharacter
             ? "-- The order was tuned for one character. Steps for other classes and races are left out."
             : "-- One route for the whole faction. Steps marked << Class or << Race only show for those characters.");
@@ -983,7 +983,7 @@ public sealed class Emitter
                           "a step that needs a quest from an earlier one hides itself unless you did that quest.");
         else if (visits.Sum(v => v.g.Sections.Count) > 1)
             sb.AppendLine($"-- Sections (the guide starts at the one for your level): {string.Join("; ", visits.SelectMany(v => v.g.Sections).Select(x => $"{x.Name} from {x.Level}"))}.");
-        sb.AppendLine($"-- Edit zones/{zone}.json and re-run rather than editing this file, or your changes are lost on the next build.");
+        sb.AppendLine($"-- Edit {Games.Current.Folder("zones").Replace('\\', '/')}/{zone}.json and re-run rather than editing this file, or your changes are lost on the next build.");
         sb.AppendLine();
         sb.AppendLine($"if UnitFactionGroup(\"player\") == \"{other}\" then return end");
         string Esc(string l) => l.Replace("]]", "] ]");    // "]]" would end the Lua string
@@ -991,7 +991,7 @@ public sealed class Emitter
         {
             sb.AppendLine();
             sb.AppendLine("RXPGuides.RegisterGuide([[");
-            foreach (var l in new[] { "#classic", "<< " + m.Opt.Faction, "#version 1", "#group " + group, "#name " + name, "" }) sb.AppendLine(l);
+            foreach (var l in new[] { Games.Current.HeaderTag, "<< " + m.Opt.Faction, "#version 1", "#group " + group, "#name " + name, "" }) sb.AppendLine(l);
             foreach (var l in EntryJumps(visits.SelectMany(v => v.g.Sections).Where(x => x.Label.Length > 0).ToList())) sb.AppendLine(l);
             foreach (var (_, g) in visits) foreach (var l in g.Lines) sb.AppendLine(Esc(l));
             sb.AppendLine("]])");
@@ -1002,7 +1002,7 @@ public sealed class Emitter
             var (g, sec, a, b, only) = chunks[c];
             sb.AppendLine();
             sb.AppendLine("RXPGuides.RegisterGuide([[");
-            sb.AppendLine("#classic");
+            sb.AppendLine(Games.Current.HeaderTag);
             sb.AppendLine("<< " + (only.Length > 0 ? only : m.Opt.Faction));
             sb.AppendLine("#version 1");
             sb.AppendLine("#group " + group);

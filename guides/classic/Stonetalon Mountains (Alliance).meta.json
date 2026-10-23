@@ -1,0 +1,182 @@
+{
+  "zone": "Stonetalon Mountains",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "21-28 Stonetalon Mountains",
+  "file": "Stonetalon Mountains (Alliance).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 21,
+      "end": 21.35,
+      "next": 24,
+      "guide": "21-22 Stonetalon Mountains: around Gaxim Rustfizzle",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Gaxim Rustfizzle",
+          "guide": "21-22 Stonetalon Mountains: around Gaxim Rustfizzle",
+          "level": 21,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 24,
+      "end": 24.16,
+      "next": 27,
+      "guide": "24-25 Stonetalon Mountains",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "24-25 Stonetalon Mountains",
+          "level": 24,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 27,
+      "end": 27,
+      "guide": "27-28 Stonetalon Mountains",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "27-28 Stonetalon Mountains",
+          "level": 27,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 1056,
+      "level": 18,
+      "req": 18,
+      "xp": 680,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Ashenvale"
+    },
+    {
+      "id": 1070,
+      "level": 21,
+      "req": 17,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Ashenvale"
+    },
+    {
+      "id": 1071,
+      "level": 21,
+      "req": 17,
+      "xp": 1650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1074,
+      "level": 21,
+      "req": 17,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 1077,
+      "level": 21,
+      "req": 17,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 1085,
+      "level": 21,
+      "req": 17,
+      "xp": 165,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1090,
+      "level": 22,
+      "req": 17,
+      "xp": 2200,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1092,
+      "level": 22,
+      "req": 17,
+      "xp": 1300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1093,
+      "level": 21,
+      "req": 16,
+      "xp": 1650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1095,
+      "level": 27,
+      "req": 16,
+      "xp": 1100,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "The Barrens"
+    },
+    {
+      "id": 1483,
+      "level": 21,
+      "req": 16,
+      "xp": 415,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "The Barrens"
+    },
+    {
+      "id": 1057,
+      "level": 27,
+      "req": 20,
+      "xp": 2200,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Dun Morogh": 2,
+    "Elwynn Forest": 1,
+    "The Barrens": 1,
+    "Feralas": 1,
+    "Ashenvale": 1
+  }
+}
