@@ -10,8 +10,13 @@
     so nothing inside the RestedXP addon itself has to be edited. Run the script again after every
     build; the folder is rebuilt from scratch each time.
 
+.PARAMETER Game
+    Which game's guides to pack: forever (default) or classic. Forever's addon goes in addon\RXPGuides_ZoneRoutes,
+    every other game's in addon\<game>\RXPGuides_ZoneRoutes (each game has its own AddOns folder in the game).
+
 .PARAMETER GuidesPath
-    Folder holding the generated .lua guides. Default: the "guides" folder next to this script.
+    Folder holding the generated .lua guides. Default: the game's guides folder next to this script
+    (guides for Forever, guides\<game> for the others).
 
 .PARAMETER Interface
     Interface number(s) for the .toc. Default: the list RestedXP itself uses. Change it only if the
@@ -19,11 +24,15 @@
 
 .EXAMPLE
     .\Make-Addon.ps1
+
+.EXAMPLE
+    .\Make-Addon.ps1 -Game classic
 #>
 [CmdletBinding()]
 param(
+    [ValidateSet('forever', 'classic')][string]$Game = 'forever',
     [string]$GuidesPath,
-    [string]$Interface = '11509, 38002, 50504, 120100, 120005, 120007, 16001'
+    [string]$Interface
 )
 
 Set-StrictMode -Version 2.0
@@ -33,7 +42,9 @@ $addonName = 'RXPGuides_ZoneRoutes'
 $here = $PSScriptRoot
 if (-not $here) { $here = (Get-Location).Path }
 
-if (-not $GuidesPath) { $GuidesPath = Join-Path $here 'guides' }
+$forever = $Game -eq 'forever'
+if (-not $Interface) { $Interface = @{ forever = '11509, 38002, 50504, 120100, 120005, 120007, 16001'; classic = '11508, 11509' }[$Game] }
+if (-not $GuidesPath) { $GuidesPath = if ($forever) { Join-Path $here 'guides' } else { Join-Path (Join-Path $here 'guides') $Game } }
 if (-not (Test-Path -LiteralPath $GuidesPath -PathType Container)) {
     Write-Host "Guides folder not found: $GuidesPath. Build some guides first." -ForegroundColor Red
     exit 1
@@ -63,7 +74,8 @@ if ($guides.Count -eq 0) {
 }
 
 # ---- rebuild the addon folder from scratch, so guides that no longer exist drop out
-$target = Join-Path (Join-Path $here 'addon') $addonName
+$addonRoot = if ($forever) { Join-Path $here 'addon' } else { Join-Path (Join-Path $here 'addon') $Game }
+$target = Join-Path $addonRoot $addonName
 $guideDir = Join-Path $target 'Guides'
 if (Test-Path -LiteralPath $target) { Remove-Item -LiteralPath $target -Recurse -Force }
 New-Item -ItemType Directory -Path $guideDir -Force | Out-Null

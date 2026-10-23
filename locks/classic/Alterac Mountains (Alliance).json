@@ -1,0 +1,30 @@
+{
+  "about": "Step order taken from RestedXP's guide by RxpToLock. RouteBuilder follows it and slots in this zone's other quests. Lines can be moved by hand. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "from RestedXP: 1-6 Shadowglen, 6-11 Teldrassil, 1-6 Northshire, 6-11 Elwynn Forest, 11-13 Loch Modan, 1-6 Coldridge Valley, 11-12 Elwynn (Dwarf/Gnome), 12-14 Loch Modan (Dwarf/Gnome), 13-15 Westfall, 14-16 Darkshore, 16-19 Darkshore, 19-20 Redridge, 20-21 Darkshore/Ashenvale, 21-23 Stonetalon/Ashenvale, 23-24 Wetlands, 24-27 Duskwood/Redridge, 27-29 Wetlands/Hillsbrad, 29-30 Ashenvale, 29-32 Duskwood, 32-33 Hillsbrad/Arathi, 33-34 Thousand Needles, 34-35 Stranglethorn Vale I, 35-37 Desolace, 36-38 Stranglethorn Vale II, 38-39 Swamp of Sorrows, 39-40 Alterac/Arathi, 40-40 Dustwallow Marsh2, 40-41 Desolace, 41-41 Badlands, 41-43 STV/Swamp of Sorrows, 43-44 Tanaris, 44-48 Feralas, 48-49 Tanaris/Hinterlands, 49-50 Tanaris/Un'Goro, 50-50 Stranglethorn Vale, 50-51 Searing Gorge, 51-51 Blasted Lands, 51-52 WPL, 52-52 Felwood, 52-53 Feralas, 53-53 Azshara, 53-54 UnGoro Crater, 54-55 Felwood/Winterspring, 55-56 Winterspring, 56-57 Burning Steppes, 57-59 Western/Eastern Plaguelands, 59-59 Winterspring/Silithus part 1, 59-60 Winterspring/Silithus part 2, ?, ?, ?, ?",
+  "saved": "2026-10-23 14:25",
+  "levels": "RestedXP",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "accept:510 @1416:-849.54,231.58  Accept Foreboding Plans [510]  (RestedXP: 32-33 Hillsbrad/Arathi)",
+        "accept:511 @1416:-849.54,231.58  Accept Encrypted Letter [511]  (RestedXP: 32-33 Hillsbrad/Arathi)",
+        "turnin:511 @1424:-551.57,-817.98  TurnIn Encrypted Letter [511]  (RestedXP: 32-33 Hillsbrad/Arathi)",
+        "turnin:510 @1424:-473.97,-861.25  TurnIn Foreboding Plans [510]  (RestedXP: 32-33 Hillsbrad/Arathi)",
+        "turnin:1791 @1416:-1470.64,250.77  TurnIn The Windwatcher [1791]  (RestedXP: 35-37 Desolace)",
+        "accept:1712 @1416:-1470.64,250.77  Accept Cyclonian [1712]  (RestedXP: 35-37 Desolace)",
+        "obj:1712:1 @1434:-618.82,-11577.15  Objective 1 of Cyclonian [1712]  (RestedXP: 36-38 Stranglethorn Vale II)",
+        "obj:1712:2 @1434:592.34,-11566.94  Objective 2 of Cyclonian [1712]  (RestedXP: 36-38 Stranglethorn Vale II)",
+        "accept:602 @1434:483.41,-14438.93  Accept Magical Analysis [602]  (RestedXP: 36-38 Stranglethorn Vale II)",
+        "turnin:602 @1416:256.09,35.04  TurnIn Magical Analysis [602]  (RestedXP: 39-40 Alterac/Arathi)",
+        "accept:603 @1416:256.09,35.04  Accept Ansirem's Key [603]  (RestedXP: 39-40 Alterac/Arathi)",
+        "obj:1712:3 @1416:-1437.57,252.86  Objective 3 of Cyclonian [1712]  (RestedXP: 39-40 Alterac/Arathi)",
+        "turnin:1712 @1416:-1470.58,250.85  TurnIn Cyclonian [1712]  (RestedXP: 39-40 Alterac/Arathi)",
+        "accept:1713 @1416:-1470.58,250.85  Accept The Summoning [1713]  (RestedXP: 39-40 Alterac/Arathi)",
+        "obj:1713:1 @1416:-1474.87,340.8  Objective 1 of The Summoning [1713]  (RestedXP: 39-40 Alterac/Arathi)",
+        "turnin:1713 @1416:-1470.58,250.85  TurnIn The Summoning [1713]  (RestedXP: 39-40 Alterac/Arathi)",
+        "turnin:1792 @1416:-1470.58,250.85  TurnIn Whirlwind Weapon [1792]  (RestedXP: 39-40 Alterac/Arathi)"
+      ]
+    }
+  ]
+}

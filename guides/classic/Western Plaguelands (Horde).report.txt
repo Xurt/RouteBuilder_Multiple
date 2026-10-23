@@ -1,0 +1,161 @@
+Western Plaguelands - Horde - part 1 of 2, planned from level 52
+Guide "52-58 Western Plaguelands" in group "Zone Routes (Horde)": this part has 34 steps, 31 stops
+Written to guides/classic/Western Plaguelands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+2 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 52. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 25 steps kept, 8 new ones slotted in, 0 moved because their prerequisites changed, 59 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 9 tasks, 2,752 yd on foot; ends at level 52.1
+  everyone (quests that depend on other zones): 24 more tasks; their whole route comes to 7,137 yd; ends at level 52.1; at its hardest you are 5.9 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (24)
+------------------------
+Start to finish here: 3 (3 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Better Late Than Never [5023, level 52] -> Undercity
+  Little Pamela [5142, level 55] -> Eastern Plaguelands
+
+Brought in from another zone and handed in here - steps show only if you have the quest (13):
+  Good Luck Charm [5050, level 52] <- Stormwind City
+  Target: Felstone Field [5229, level 53] <- Tirisfal Glades
+  Target: Dalson's Tears [5231, level 55] <- Tirisfal Glades
+  Target: Writhing Haunt [5233, level 55] <- Tirisfal Glades
+  A Plague Upon Thee [5902, level 55] <- Tirisfal Glades
+  Auntie Marlene [5152, level 56] <- Eastern Plaguelands
+  Target: Gahrron's Withering [5235, level 58] <- Tirisfal Glades
+  Of Love and Family [5846, level 58] <- Eastern Plaguelands
+  Wrath of the Blue Flight [5162, level 60] <- Winterspring
+  Soulbound Keepsake [5465, level 60] <- Eastern Plaguelands
+  Find Myranda [5861, level 60] <- Eastern Plaguelands
+  Return to Chromie [5941, level 60] <- Eastern Plaguelands
+  The Testament of Rexxar [6568, level 60] <- Desolace
+
+Need a quest this guide does not hand in - steps show only once that is done (6):
+  Return to the Bulwark [5230, level 53] - needs one of Target: Felstone Field [5229] -> Tirisfal Glades
+  Two Halves Become One [5051, level 54] - needs one of Good Luck Charm [5050]
+  Return to the Bulwark [5232, level 55] - needs one of Target: Dalson's Tears [5231] -> Tirisfal Glades
+  Return to the Bulwark [5234, level 55] - needs one of Target: Writhing Haunt [5233] -> Tirisfal Glades
+  A Plague Upon Thee [6390, level 55] - needs one of A Plague Upon Thee [5902] -> Tirisfal Glades
+  Return to the Bulwark [5236, level 58] - needs one of Target: Gahrron's Withering [5235] -> Tirisfal Glades
+
+Worth checking in game
+----------------------
+
+Put off to a later part (24)
+----------------------------
+These need a higher level than this part ends at:
+  A Matter of Time [4971, level 56]: its mobs are level 56; this part gets you to about 52.3
+  Counting Out Time [4972, level 56]: needs level 53; this part gets you to about 52.3
+  The Wildlife Suffers Too [4985, level 56]: its mobs are level 55; this part gets you to about 52.3
+  Glyphed Oaken Branch [4987, level 56]: follows The Wildlife Suffers Too [4985]
+  Mrs. Dalson's Diary [5058, level 55]: needs level 52; this part gets you to about 52.1
+  Locked Away [5060, level 55]: its mobs are level 56; this part gets you to about 52.3
+  A Strange Historian [5153, level 56]: is a level 56 quest; this part gets you to about 52.3
+  The Annals of Darrowshire [5154, level 56]: is a level 56 quest; this part gets you to about 52.3
+  Catalogue of the Wayward [5164, level 60]: needs level 57; this part gets you to about 52.3
+  Breastplate of the Chromatic Flight [5166, level 60]: needs level 57; this part gets you to about 52.3
+  Legplates of the Chromatic Defier [5167, level 60]: needs level 57; this part gets you to about 52.3
+  Brother Carlin [5210, level 56]: follows The Annals of Darrowshire [5154]
+  The Human, Ras Frostwhisper [5461, level 60]: needs level 57; this part gets you to about 52.3
+  The Dying, Ras Frostwhisper [5462, level 60]: needs level 57; this part gets you to about 52.3
+  Demon Dogs [5542, level 56]: needs level 52; this part gets you to about 52.1
+  Blood Tinged Skies [5543, level 56]: needs level 52; this part gets you to about 52.1
+  Carrion Grubbage [5544, level 56]: needs level 52; this part gets you to about 52.1
+  The Battle of Darrowshire [5721, level 60]: needs level 55; this part gets you to about 52.3
+  Scarlet Subterfuge [5862, level 60]: needs level 52; this part gets you to about 52.1
+  In Dreams [5944, level 60]: is a level 60 quest; this part gets you to about 52.3
+  Unfinished Business [6004, level 56]: its mobs are level 55; this part gets you to about 52.3
+  Unfinished Business [6023, level 57]: its mobs are level 57; this part gets you to about 52.3
+  Unfinished Business [6025, level 58]: is a level 58 quest; this part gets you to about 52.3
+  Emberstrife [6570, level 60]: needs level 55; this part gets you to about 52.3
+
+Left out (17)
+-------------
+repeatable (9):
+  Counting Out Time [4973], Locked Away [5059], Felstone Field Cauldron [5218], Dalson's Tears Cauldron [5221], Writhing Haunt Cauldron [5224], Gahrron's Withering Cauldron [5227], Minion's Scourgestones [5402], Invader's Scourgestones [5403], Corruptor's Scourgestones [5404]
+dungeon quest (6):
+  Doctor Theolen Krastinov, the Butcher [5382], Kirtonos the Herald [5384], The Lich, Ras Frostwhisper [5466], Krastinov's Bag of Horrors [5515], Of Love and Family [5848], Oculus Illusions [6569]
+special category (sort -366) (2):
+  Moonstrike the Elder [8714], Meadowrun the Elder [8722]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Western Plaguelands - Horde - part 2 of 2, planned from level 55
+Guide "52-58 Western Plaguelands" in group "Zone Routes (Horde)": this part has 36 steps, 35 stops
+Written to guides/classic/Western Plaguelands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+5 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 55. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 34 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 30 tasks, 11,954 yd on foot; ends at level 55.3; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 11 more tasks; their whole route comes to 13,936 yd; ends at level 55.3; at its hardest you are 1.8 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (18)
+------------------------
+Start to finish here: 7 (7 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (4):
+  Glyphed Oaken Branch [4987, level 56] -> Thunder Bluff
+  Demon Dogs [5542, level 56] -> Eastern Plaguelands
+  Blood Tinged Skies [5543, level 56] -> Eastern Plaguelands
+  Carrion Grubbage [5544, level 56] -> Eastern Plaguelands
+
+Need a quest this guide does not hand in - steps show only once that is done (6):
+  A Strange Historian [5153, level 56] - needs one of Auntie Marlene [5152]
+  The Annals of Darrowshire [5154, level 56] - needs one of A Strange Historian [5153]
+  Brother Carlin [5210, level 56] - needs one of The Annals of Darrowshire [5154] -> Eastern Plaguelands
+  The Battle of Darrowshire [5721, level 60] - needs one of Return to Chromie [5941] -> Eastern Plaguelands
+  Scarlet Subterfuge [5862, level 60] - needs one of Find Myranda [5861]
+  Emberstrife [6570, level 60] - needs one of Oculus Illusions [6569] -> Dustwallow Marsh
+
+Worth checking in game
+----------------------
+No objectives in the database (the hand-in step warns about it; add "objectives" for these to the zone file):
+  Mrs. Dalson's Diary [5058, level 55]
+1 quests have no experience figure in the database: their experience is estimated, and 1 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  Mrs. Dalson's Diary [5058]
+
+Not planned (6)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Catalogue of the Wayward [5164, level 60]: needs level 57; this part gets you to about 55.3
+  Breastplate of the Chromatic Flight [5166, level 60]: needs level 57; this part gets you to about 55.3
+  Legplates of the Chromatic Defier [5167, level 60]: needs level 57; this part gets you to about 55.3
+  The Human, Ras Frostwhisper [5461, level 60]: needs level 57; this part gets you to about 55.3
+  The Dying, Ras Frostwhisper [5462, level 60]: needs level 57; this part gets you to about 55.3
+  In Dreams [5944, level 60]: is a level 60 quest; this part gets you to about 55.3
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

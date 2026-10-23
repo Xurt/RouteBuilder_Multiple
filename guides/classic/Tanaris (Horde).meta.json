@@ -1,0 +1,351 @@
+{
+  "zone": "Tanaris",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "43-60 Tanaris",
+  "file": "Tanaris (Horde).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 43,
+      "end": 43.55,
+      "next": 46,
+      "guide": "43-44 Tanaris: around Chief Engineer Bilgewhizzle",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Chief Engineer Bilgewhizzle",
+          "guide": "43-44 Tanaris: around Chief Engineer Bilgewhizzle",
+          "level": 43,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 46,
+      "end": 46.22,
+      "next": 49,
+      "guide": "46-47 Tanaris: around Senior Surveyor Fizzledowser",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Senior Surveyor Fizzledowser",
+          "guide": "46-47 Tanaris: around Senior Surveyor Fizzledowser",
+          "level": 46,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 49,
+      "end": 49.16,
+      "guide": "49-50 Tanaris",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "49-50 Tanaris",
+          "level": 49,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 243,
+      "level": 46,
+      "req": 38,
+      "xp": 2000,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 992,
+      "level": 46,
+      "req": 38,
+      "xp": 3050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1188,
+      "level": 41,
+      "req": 29,
+      "xp": 820,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Thousand Needles"
+    },
+    {
+      "id": 1690,
+      "level": 43,
+      "req": 40,
+      "xp": 3600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1691,
+      "level": 44,
+      "req": 40,
+      "xp": 3750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1707,
+      "level": 44,
+      "req": 40,
+      "xp": 2800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2864,
+      "level": 45,
+      "req": 40,
+      "xp": 390,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Stranglethorn Vale"
+    },
+    {
+      "id": 2872,
+      "level": 45,
+      "req": 40,
+      "xp": 390,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Stranglethorn Vale"
+    },
+    {
+      "id": 2873,
+      "level": 45,
+      "req": 40,
+      "xp": 3900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2875,
+      "level": 45,
+      "req": 40,
+      "xp": 3900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2966,
+      "level": 50,
+      "req": 45,
+      "xp": 4700,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Mulgore"
+    },
+    {
+      "id": 3380,
+      "level": 51,
+      "req": 46,
+      "xp": 3650,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Feralas"
+    },
+    {
+      "id": 3912,
+      "level": 52,
+      "req": 47,
+      "xp": 5100,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Winterspring"
+    },
+    {
+      "id": 4450,
+      "level": 46,
+      "req": 43,
+      "xp": 5050,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Searing Gorge"
+    },
+    {
+      "id": 4494,
+      "level": 53,
+      "req": 50,
+      "xp": 530,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Durotar"
+    },
+    {
+      "id": 5514,
+      "level": 57,
+      "req": 55,
+      "xp": 600,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 8365,
+      "level": 45,
+      "req": 40,
+      "xp": 3900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8366,
+      "level": 45,
+      "req": 40,
+      "xp": 3900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8923,
+      "level": 60,
+      "req": 58,
+      "xp": 6600,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Durotar"
+    },
+    {
+      "id": 10,
+      "level": 48,
+      "req": 39,
+      "xp": 4400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 82,
+      "level": 47,
+      "req": 39,
+      "xp": 3150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 110,
+      "level": 48,
+      "req": 39,
+      "xp": 440,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 113,
+      "level": 48,
+      "req": 39,
+      "xp": 440,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2605,
+      "level": 49,
+      "req": 44,
+      "xp": 4550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2606,
+      "level": 49,
+      "req": 44,
+      "xp": 455,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2781,
+      "level": 46,
+      "req": 39,
+      "xp": 5050,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3161,
+      "level": 48,
+      "req": 43,
+      "xp": 4400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1560,
+      "level": 50,
+      "req": 40,
+      "xp": 5900,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3362,
+      "level": 50,
+      "req": 45,
+      "xp": 4700,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5863,
+      "level": 49,
+      "req": 44,
+      "xp": 4550,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Tirisfal Glades": 1,
+    "Thousand Needles": 1,
+    "Stranglethorn Vale": 3,
+    "Durotar": 1,
+    "Mulgore": 1,
+    "another zone": 2,
+    "Un\u0027Goro Crater": 1
+  }
+}

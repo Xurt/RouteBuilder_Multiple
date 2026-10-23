@@ -1,0 +1,146 @@
+{
+  "zone": "Blasted Lands",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "50-57 Blasted Lands",
+  "file": "Blasted Lands (Alliance).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 50,
+      "end": 50.32,
+      "guide": "50-57 Blasted Lands",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Bloodmage Drazial",
+          "guide": "50-57 Blasted Lands",
+          "level": 50,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 1364,
+      "level": 41,
+      "req": 37,
+      "xp": 3300,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 1395,
+      "level": 45,
+      "req": 40,
+      "xp": 2900,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Duskwood"
+    },
+    {
+      "id": 1425,
+      "level": 42,
+      "req": 30,
+      "xp": 2550,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Swamp of Sorrows"
+    },
+    {
+      "id": 2521,
+      "level": 55,
+      "req": 45,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2581,
+      "level": 50,
+      "req": 45,
+      "xp": 4700,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2583,
+      "level": 50,
+      "req": 45,
+      "xp": 4700,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2585,
+      "level": 50,
+      "req": 45,
+      "xp": 4700,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2601,
+      "level": 50,
+      "req": 45,
+      "xp": 4700,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2603,
+      "level": 50,
+      "req": 45,
+      "xp": 4700,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2721,
+      "level": 58,
+      "req": 45,
+      "xp": 6200,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Swamp of Sorrows"
+    },
+    {
+      "id": 2990,
+      "level": 47,
+      "req": 40,
+      "xp": 2100,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "The Hinterlands"
+    },
+    {
+      "id": 3501,
+      "level": 55,
+      "req": 45,
+      "xp": 5650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Swamp of Sorrows": 2,
+    "The Hinterlands": 1
+  }
+}

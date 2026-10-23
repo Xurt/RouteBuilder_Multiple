@@ -1,0 +1,125 @@
+Hillsbrad Foothills - Alliance - part 1 of 2, planned from level 30
+Guide "30-38 Hillsbrad Foothills" in group "Zone Routes (Alliance)": this part has 44 steps, 35 stops
+Written to guides/classic/Hillsbrad Foothills (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+27 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 30. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 36 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed, 23 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 28 tasks, 4,835 yd on foot; ends at level 30.4; 1 hearth; at its hardest you are 1.7 levels below the mobs
+  everyone (quests that depend on other zones): 10 more tasks; their whole route comes to 5,446 yd; ends at level 30.4; 1 hearth; at its hardest you are 1.7 levels below the mobs
+Hearthstone: set at Innkeeper Anderson (Innkeeper Anderson's inn); 1 hearth step in the guide.
+3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (22)
+------------------------
+Start to finish here: 7 (7 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Reassignment [563, level 32] -> Stormwind City
+  Hints of a New Plague? [659, level 33] -> Arathi Highlands
+
+Hand-in step only shows once complete (3):
+  Syndicate Assassins [505, level 33] - needs Syndicate Footpad slain (12) (Alterac Mountains); Syndicate Thief slain (1) (Alterac Mountains)
+  Costly Menace [564, level 34] - needs Hulking Mountain Lion slain (10) (Alterac Mountains)
+  Crushridge Bounty [500, level 36] - needs Dirty Knucklebones (9) (Alterac Mountains)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (6):
+  MacKreel's Moonshine [647, level 30] <- Arathi Highlands
+  Foreboding Plans [510, level 34] <- Alterac Mountains
+  Encrypted Letter [511, level 34] <- Alterac Mountains
+  Further Mysteries [525, level 34] <- Ironforge
+  Hints of a New Plague? [661, level 37] <- Arathi Highlands
+  Southshore [538, level 38] <- Stormwind City
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Letter to Stormpike [514, level 34] - needs one of Encrypted Letter [511] -> Ironforge
+  Noble Deaths [512, level 36] - needs one of Foreboding Plans [510]
+  Preserving Knowledge [540, level 38] - needs one of Southshore [538]
+  Return to Milton [542, level 38] - needs one of Preserving Knowledge [540] -> Stormwind City
+
+Worth checking in game
+----------------------
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  Bartolo's Yeti Fur Cloak [565, level 34]: is a level 34 quest; this part gets you to about 30.4
+  Crystal in the Mountains [635, level 35]: follows Bartolo's Yeti Fur Cloak [565]
+
+Left out (12)
+-------------
+above this zone's range of 30-39 (6):
+  Crushridge Warmongers [504], Baron's Demise [523], Dark Council [537], The Ensorcelled Parchment [551], Stormpike's Deciphering [554], Down the Scarlet Path [1052]
+special category (sort -22) (2):
+  Crashing the Wickerman Festival [1658], The Power of Pine [8373]
+repeatable (2):
+  CLUCK! [3861], Syndicate Emblems [6701]
+dungeon quest (1):
+  In the Name of the Light [1053]
+helper for Ancient Equine Spirit (1):
+  Manna-Enriched Horse Feed [7645]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Hillsbrad Foothills - Alliance - part 2 of 2, planned from level 33
+Guide "30-38 Hillsbrad Foothills" in group "Zone Routes (Alliance)": this part has 12 steps, 8 stops
+Written to guides/classic/Hillsbrad Foothills (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+5 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 33. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 6 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 4 tasks, 616 yd on foot; ends at level 33.0
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 3,034 yd; ends at level 33.0; 2 ORDER PROBLEMS
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (5)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Crystal in the Mountains [635, level 35] -> Arathi Highlands
+
+Hand-in step only shows once complete (1):
+  Bartolo's Yeti Fur Cloak [565, level 34] - needs Hillman's Cloak (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Syndicate Assassins [505, level 33] <- your earlier visit to this zone
+  Costly Menace [564, level 34] <- your earlier visit to this zone
+  Crushridge Bounty [500, level 36] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,130 @@
+Thousand Needles - Alliance - part 1 of 2, planned from level 30
+Guide "30-37 Thousand Needles" in group "Zone Routes (Alliance)": this part has 43 steps, 40 stops
+Written to guides/classic/Thousand Needles (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+11 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 30. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 32 steps kept, 10 new ones slotted in, 0 moved because their prerequisites changed, 15 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 18 tasks, 4,774 yd on foot; ends at level 30.4; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 19 more tasks; their whole route comes to 7,619 yd; ends at level 30.4; at its hardest you are 2.0 levels below the mobs
+  Mage (quests that depend on other zones): 5 more tasks; their whole route comes to 7,785 yd; ends at level 30.4; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (28)
+------------------------
+Start to finish here: 4 (4 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (5):
+  Hemet Nesingwary [5762, level 31] -> Stranglethorn Vale
+  Crystal in the Mountains [635, level 35] -> Arathi Highlands
+  Martek the Exiled [1106, level 35] -> Badlands
+  Wharfmaster Dizzywig [1111, level 36] -> The Barrens
+  Goblin Sponsorship [1178, level 37] -> The Barrens
+
+Hand-in step only shows once complete (1):
+  Encrusted Tail Fins [1107, level 35] - needs Encrusted Tail Fin (10) (Stranglethorn Vale)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (9):
+  The Brassbolts Brothers [1179, level 30] <- Ironforge
+  Parts for Kravel [1112, level 36] <- The Barrens
+  Rumors for Kravel [1117, level 36] <- Stranglethorn Vale
+  Goblin Sponsorship [1183, level 37] <- Stranglethorn Vale
+  News for Fizzle [1137, level 38] <- Badlands
+  Hidden Secrets [1949, level 38, Mage] <- Dustwallow Marsh
+  Safety First [1189, level 41] <- Tanaris
+  Zanzil's Mixture and a Fool's Stout [1119, level 44] <- Stranglethorn Vale
+  The Brassbolts Brothers [2769, level 46] <- Ironforge
+
+Need a quest this guide does not hand in - steps show only once that is done (9):
+  Get the Scoop [1950, level 30, Mage] - needs one of Hidden Secrets [1949]
+  Delivery to the Gnomes [1114, level 36] - needs one of Parts for Kravel [1112]
+  The Rumormonger [1115, level 36] - needs one of Delivery to the Gnomes [1114] -> Stranglethorn Vale
+  The Eighteenth Pilot [1186, level 37] - needs one of Goblin Sponsorship [1183]
+  Rituals of Power [1951, level 40, Mage] - needs one of Get the Scoop [1950] -> Dustwallow Marsh
+  Razzeric's Tweaking [1187, level 41] - needs one of The Eighteenth Pilot [1186]
+  Safety First [1188, level 41] - needs one of Razzeric's Tweaking [1187] -> Tanaris
+  Keeping Pace [1190, level 41] - needs one of News for Fizzle [1137]
+  Rizzle's Schematics [1194, level 41] - needs one of Keeping Pace [1190]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (4)
+---------------------------
+These need a higher level than this part ends at:
+  Back to Booty Bay [1118, level 43]: needs level 35; this part gets you to about 30.5
+  Get the Gnomes Drunk [1120, level 44]: needs level 35; this part gets you to about 30.5
+  Report Back to Fizzlebub [1122, level 44]: needs level 35; this part gets you to about 30.5
+  A Bump in the Road [1175, level 33]: its mobs are level 34; this part gets you to about 30.5
+
+Left out (9)
+------------
+above this zone's range of 30-46 (4):
+  Gahz'rilla [2770], An Orphan Looking For a Home [3841], A Short Incubation [3842], The Newest Member of the Family [3843]
+repeatable (2):
+  Zamek's Distraction [1191], Indurium Ore [1192]
+special category (sort -366) (2):
+  Skyseer the Elder [8682], Morningdew the Elder [8724]
+cannot be taken together with Get the Gnomes Drunk [1120], which is in the guide (1):
+  Get the Goblins Drunk [1121]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Thousand Needles - Alliance - part 2 of 2, planned from level 33
+Guide "30-37 Thousand Needles" in group "Zone Routes (Alliance)": this part has 6 steps, 5 stops
+Written to guides/classic/Thousand Needles (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 33. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 5 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 5 tasks, 1,991 yd on foot; ends at level 33.1
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 1,994 yd; ends at level 33.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Encrusted Tail Fins [1107, level 35] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Not planned (3)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Back to Booty Bay [1118, level 43]: needs level 35; this part gets you to about 33.1
+  Get the Gnomes Drunk [1120, level 44]: needs level 35; this part gets you to about 33.1
+  Report Back to Fizzlebub [1122, level 44]: needs level 35; this part gets you to about 33.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

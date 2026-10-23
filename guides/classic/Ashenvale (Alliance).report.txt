@@ -1,0 +1,345 @@
+Ashenvale - Alliance - part 1 of 5, planned from level 18
+Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 34 steps, 24 stops
+Written to guides/classic/Ashenvale (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 18. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 20 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed, 86 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 13 tasks, 4,753 yd on foot; ends at level 18.4
+  everyone (quests that depend on other zones): 13 more tasks; their whole route comes to 7,748 yd; ends at level 18.4
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+5 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (17)
+------------------------
+Start to finish here: 4 (4 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Journey to Stonetalon Peak [1056, level 18] -> Stonetalon Mountains
+  On Guard in Stonetalon [1070, level 21] -> Stonetalon Mountains
+
+Hand-in step only shows once complete (1):
+  Pridewings of Stonetalon [1134, level 21] - needs Pridewing Venom Sac (12) (Stonetalon Mountains)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (8):
+  One Shot. One Kill. [5713, level 15] <- Darkshore
+  Therylune's Escape [945, level 18] <- Darkshore
+  The Tower of Althalaxx [967, level 18] <- Darkshore
+  Trek to Ashenvale [990, level 19] <- Darkshore
+  Journey to Astranaar [1133, level 20] <- Dustwallow Marsh
+  The Sleeper Has Awakened [5321, level 20] <- Darkshore
+  Update for Sentinel Thenysil [1082, level 22] <- Stonetalon Mountains
+  The Tower of Althalaxx [981, level 31] <- Darkshore
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  The Tower of Althalaxx [970, level 21] - needs one of The Tower of Althalaxx [967]
+  Reception from Tyrande [1081, level 28] - needs one of Update for Sentinel Thenysil [1082] -> Darnassus
+
+Worth checking in game
+----------------------
+  The Sleeper Has Awakened [5321, level 20]: "Escort Kerlonian Evershade to Maestra's Post" is assumed to be line 2 in the quest log; check it
+  The Sleeper Has Awakened [5321, level 20]: objective "Escort Kerlonian Evershade to Maestra's Post" is line 2 by the database, but RestedXP's guide has "Horn of Awakening (1)" there
+
+Put off to a later part (31)
+----------------------------
+These need a higher level than this part ends at:
+  The Tower of Althalaxx [973, level 24]: its mobs are level 24; this part gets you to about 20.9
+  Supplies to Auberdine [976, level 24]: follows The Tower of Althalaxx [973]
+  The Ancient Statuette [1007, level 20]: needs level 19; this part gets you to about 19.0
+  Ruuzel [1009, level 25]: needs level 20; this part gets you to about 19.0
+  Bathran's Hair [1010, level 20]: needs level 20; this part gets you to about 19.0
+  Forsaken Diseases [1011, level 29]: is a level 29 quest; this part gets you to about 20.9
+  Insane Druids [1012, level 32]: its mobs are level 32; this part gets you to about 20.9
+  Elemental Bracers [1016, level 24]: needs level 20; this part gets you to about 19.0
+  Mage Summoner [1017, level 25]: needs level 20; this part gets you to about 19.0
+  Orendil's Cure [1020, level 20]: needs level 20; this part gets you to about 19.0
+  Vile Satyr! Dryads in Danger! [1021, level 32]: needs level 26; this part gets you to about 20.9
+  The Howling Vale [1022, level 30]: is a level 30 quest; this part gets you to about 20.9
+  An Aggressive Defense [1025, level 24]: its mobs are level 24; this part gets you to about 20.9
+  Raene's Cleansing [1026, level 27]: its mobs are level 26; this part gets you to about 20.9
+  Raene's Cleansing [1027, level 28]: is a level 28 quest; this part gets you to about 20.9
+  Raene's Cleansing [1028, level 28]: follows Raene's Cleansing [1027]
+  Raene's Cleansing [1029, level 28]: follows Raene's Cleansing [1055]
+  Raene's Cleansing [1030, level 28]: follows Raene's Cleansing [1029]
+  The Branch of Cenarius [1031, level 32]: its mobs are level 32; this part gets you to about 20.9
+  Satyr Slaying! [1032, level 32]: needs level 26; this part gets you to about 20.9
+  Elune's Tear [1033, level 22]: needs level 20; this part gets you to about 19.0
+  The Ruins of Stardust [1034, level 23]: needs level 20; this part gets you to about 19.0
+  Fallen Sky Lake [1035, level 30]: its mobs are level 30; this part gets you to about 20.9
+  Velinde Starsong [1037, level 30]: needs level 25; this part gets you to about 20.9
+  Raene's Cleansing [1045, level 30]: its mobs are level 30; this part gets you to about 20.9
+  Raene's Cleansing [1046, level 30]: its mobs are level 30; this part gets you to about 20.9
+  Culling the Threat [1054, level 25]: its mobs are level 25; this part gets you to about 20.9
+  Raene's Cleansing [1055, level 28]: follows Raene's Cleansing [1028]
+  The Tower of Althalaxx [1140, level 28]: is a level 28 quest; this part gets you to about 20.9
+  The Tower of Althalaxx [1167, level 28]: follows The Tower of Althalaxx [1140]
+  Kayneth Stillwind [4581, level 29]: needs level 24; this part gets you to about 20.9
+
+Left out (37)
+-------------
+repeatable (18):
+  Talismans of Merit [7886], Talismans of Merit [7887], Talismans of Merit [7888], Talismans of Merit [7921], Talismans of Merit [8289], Remember Alterac Valley! [8383], Claiming Arathi Basin [8384], Concerted Efforts [8385], Fight for Warsong Gulch [8386], Claiming Arathi Basin [8391], Claiming Arathi Basin [8392], Claiming Arathi Basin [8397], Claiming Arathi Basin [8398], Fight for Warsong Gulch [8404], Fight for Warsong Gulch [8405], Fight for Warsong Gulch [8406], Fight for Warsong Gulch [8407], Fight for Warsong Gulch [8408]
+dungeon quest (12):
+  Fight for Warsong Gulch [8372], Claiming Arathi Basin [8374], Remember Alterac Valley! [8375], Claiming Arathi Basin [8393], Claiming Arathi Basin [8394], Claiming Arathi Basin [8395], Claiming Arathi Basin [8396], Fight for Warsong Gulch [8399], Fight for Warsong Gulch [8400], Fight for Warsong Gulch [8401], Fight for Warsong Gulch [8402], Fight for Warsong Gulch [8403]
+needs reputation (3):
+  Sentinel Basic Care Package [7863], Sentinel Standard Care Package [7864], Sentinel Advanced Care Package [7865]
+above this zone's range of 18-32 (2):
+  Ancient Spirit [4261], Concerted Efforts [8371]
+special category (sort -1) (1):
+  Shrouded in Nightmare [8446]
+special category (sort -366) (1):
+  Riversong the Elder [8725]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Ashenvale - Alliance - part 2 of 5, planned from level 21
+Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 21 steps, 16 stops
+Written to guides/classic/Ashenvale (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 21. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 17 steps kept, 1 new ones slotted in, 3 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 20 tasks, 11,346 yd on foot; ends at level 21.5
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 11,731 yd; ends at level 21.5
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+3 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (9)
+-----------------------
+Start to finish here: 7 (7 for everyone)
+
+Hand-in step only shows once complete (1):
+  Mage Summoner [1017, level 25] - needs Sarilus Foulborne's Head (1) (The Barrens)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Pridewings of Stonetalon [1134, level 21] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Put off to a later part (23)
+----------------------------
+These need a higher level than this part ends at:
+  The Tower of Althalaxx [973, level 24]: its mobs are level 24; this part gets you to about 21.7
+  Supplies to Auberdine [976, level 24]: follows The Tower of Althalaxx [973]
+  Forsaken Diseases [1011, level 29]: is a level 29 quest; this part gets you to about 23.1
+  Insane Druids [1012, level 32]: its mobs are level 32; this part gets you to about 23.1
+  Vile Satyr! Dryads in Danger! [1021, level 32]: needs level 26; this part gets you to about 23.1
+  The Howling Vale [1022, level 30]: is a level 30 quest; this part gets you to about 23.1
+  An Aggressive Defense [1025, level 24]: its mobs are level 24; this part gets you to about 21.7
+  Raene's Cleansing [1026, level 27]: its mobs are level 26; this part gets you to about 23.1
+  Raene's Cleansing [1027, level 28]: is a level 28 quest; this part gets you to about 23.1
+  Raene's Cleansing [1028, level 28]: follows Raene's Cleansing [1027]
+  Raene's Cleansing [1029, level 28]: follows Raene's Cleansing [1055]
+  Raene's Cleansing [1030, level 28]: follows Raene's Cleansing [1029]
+  The Branch of Cenarius [1031, level 32]: its mobs are level 32; this part gets you to about 23.1
+  Satyr Slaying! [1032, level 32]: needs level 26; this part gets you to about 23.1
+  Fallen Sky Lake [1035, level 30]: its mobs are level 30; this part gets you to about 23.1
+  Velinde Starsong [1037, level 30]: needs level 25; this part gets you to about 23.1
+  Raene's Cleansing [1045, level 30]: its mobs are level 30; this part gets you to about 23.1
+  Raene's Cleansing [1046, level 30]: its mobs are level 30; this part gets you to about 23.1
+  Culling the Threat [1054, level 25]: its mobs are level 25; this part gets you to about 21.7
+  Raene's Cleansing [1055, level 28]: follows Raene's Cleansing [1028]
+  The Tower of Althalaxx [1140, level 28]: is a level 28 quest; this part gets you to about 23.1
+  The Tower of Althalaxx [1167, level 28]: follows The Tower of Althalaxx [1140]
+  Kayneth Stillwind [4581, level 29]: needs level 24; this part gets you to about 23.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Ashenvale - Alliance - part 3 of 5, planned from level 24
+Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 23 steps, 22 stops
+Written to guides/classic/Ashenvale (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 24. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 17 steps kept, 3 new ones slotted in, 1 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 15 tasks, 8,790 yd on foot; ends at level 24.3; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 6 more tasks; their whole route comes to 12,725 yd; ends at level 24.3; at its hardest you are 1.8 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 4 (4 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Pridewings of Stonetalon [1134, level 21] <- your earlier visit to this zone
+  Mage Summoner [1017, level 25] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  The Tower of Althalaxx [973, level 24] - needs one of The Tower of Althalaxx [970]
+  Supplies to Auberdine [976, level 24] - needs one of The Tower of Althalaxx [973]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (17)
+----------------------------
+These need a higher level than this part ends at:
+  Forsaken Diseases [1011, level 29]: is a level 29 quest; this part gets you to about 25.3
+  Insane Druids [1012, level 32]: its mobs are level 32; this part gets you to about 25.3
+  Vile Satyr! Dryads in Danger! [1021, level 32]: needs level 26; this part gets you to about 25.3
+  The Howling Vale [1022, level 30]: is a level 30 quest; this part gets you to about 25.3
+  Raene's Cleansing [1027, level 28]: is a level 28 quest; this part gets you to about 24.5
+  Raene's Cleansing [1028, level 28]: follows Raene's Cleansing [1027]
+  Raene's Cleansing [1029, level 28]: follows Raene's Cleansing [1055]
+  Raene's Cleansing [1030, level 28]: follows Raene's Cleansing [1029]
+  The Branch of Cenarius [1031, level 32]: its mobs are level 32; this part gets you to about 25.3
+  Satyr Slaying! [1032, level 32]: needs level 26; this part gets you to about 25.3
+  Fallen Sky Lake [1035, level 30]: its mobs are level 30; this part gets you to about 25.3
+  Velinde Starsong [1037, level 30]: follows The Howling Vale [1022]
+  Raene's Cleansing [1045, level 30]: its mobs are level 30; this part gets you to about 25.3
+  Raene's Cleansing [1046, level 30]: its mobs are level 30; this part gets you to about 25.3
+  Raene's Cleansing [1055, level 28]: follows Raene's Cleansing [1028]
+  The Tower of Althalaxx [1140, level 28]: is a level 28 quest; this part gets you to about 24.5
+  The Tower of Althalaxx [1167, level 28]: follows The Tower of Althalaxx [1140]
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Ashenvale - Alliance - part 4 of 5, planned from level 27
+Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 28 steps, 26 stops
+Written to guides/classic/Ashenvale (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 27. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 25 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 20 tasks, 18,761 yd on foot; ends at level 27.3; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 21,292 yd; ends at level 27.3; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (13)
+------------------------
+Start to finish here: 8 (8 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Velinde Starsong [1037, level 30] -> Darnassus
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Pridewings of Stonetalon [1134, level 21] <- your earlier visit to this zone
+  Mage Summoner [1017, level 25] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  The Tower of Althalaxx [1140, level 28] - needs one of The Tower of Althalaxx [973]
+  The Tower of Althalaxx [1167, level 28] - needs one of The Tower of Althalaxx [1140] -> Darkshore
+
+Worth checking in game
+----------------------
+
+Put off to a later part (6)
+---------------------------
+These need a higher level than this part ends at:
+  Insane Druids [1012, level 32]: its mobs are level 32; this part gets you to about 27.8
+  The Branch of Cenarius [1031, level 32]: its mobs are level 32; this part gets you to about 27.8
+  Satyr Slaying! [1032, level 32]: follows The Branch of Cenarius [1031]
+  Fallen Sky Lake [1035, level 30]: its mobs are level 30; this part gets you to about 27.8
+  Raene's Cleansing [1045, level 30]: its mobs are level 30; this part gets you to about 27.8
+  Raene's Cleansing [1046, level 30]: its mobs are level 30; this part gets you to about 27.8
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Ashenvale - Alliance - part 5 of 5, planned from level 30
+Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 24 steps, 23 stops
+Written to guides/classic/Ashenvale (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 30. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 15 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 20 tasks, 22,678 yd on foot; ends at level 30.4; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 25,927 yd; ends at level 30.4; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+  Raene's Cleansing: its hand-in spot is not passed again, so the step sits at the end of the guide.
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 5 (5 for everyone)
+
+Hand-in step only shows once complete (1):
+  Raene's Cleansing [1046, level 30] - needs Dartol's Rod of Transformation (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Pridewings of Stonetalon [1134, level 21] <- your earlier visit to this zone
+  Mage Summoner [1017, level 25] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

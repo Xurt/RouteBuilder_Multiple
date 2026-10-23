@@ -1,0 +1,65 @@
+The Hinterlands - Alliance
+Guide "45-48 The Hinterlands" in group "Zone Routes (Alliance)": 33 steps, 29 stops
+Written to guides/classic/The Hinterlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+3 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 45. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 23 steps kept, 11 new ones slotted in, 0 moved because their prerequisites changed, 3 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 17 tasks, 6,437 yd on foot; ends at level 45.2; at its hardest you are 1.9 levels below the mobs
+  everyone (quests that depend on other zones): 17 more tasks; their whole route comes to 11,241 yd; ends at level 45.2; at its hardest you are 1.9 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+
+Quests in the guide (17)
+------------------------
+Start to finish here: 5 (5 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Thadius Grimshade [2990, level 47] -> Blasted Lands
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  To The Hinterlands [1449, level 43] <- Stormwind City
+  Return to the Hinterlands [2993, level 47] <- Blasted Lands
+  The Newest Member of the Family [3843, level 47] <- Thousand Needles
+  Cortello's Riddle [626, level 51] <- Dustwallow Marsh
+
+Need a quest this guide does not hand in - steps show only once that is done (7):
+  Gryphon Master Talonaxe [1450, level 43] - needs one of To The Hinterlands [1449]
+  Rhapsody Shindigger [1451, level 43] - needs one of Gryphon Master Talonaxe [1450]
+  Rhapsody's Kalimdor Kocktail [1452, level 43] - needs one of Rhapsody Shindigger [1451]
+  Rhapsody's Tale [1469, level 43] - needs one of Rhapsody's Kalimdor Kocktail [1452] -> Stormwind City
+  Food for Baby [4297, level 47] - needs one of The Newest Member of the Family [3843]
+  Rescue OOX-09/HL! [836, level 48] - needs one of Find OOX-09/HL! [485] -> Stranglethorn Vale
+  Becoming a Parent [4298, level 48] - needs one of Food for Baby [4297]
+
+Worth checking in game
+----------------------
+
+Not planned (1)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Saving Sharpbeak [2994, level 51]: its mobs are level 51; this part gets you to about 45.2
+
+Left out (4)
+------------
+above this zone's range of 43-52 (1):
+  Jammal'an the Prophet [1446]
+repeatable (1):
+  Troll Necklace Bounty [2881]
+special category (sort -1) (1):
+  Shrouded in Nightmare [8446]
+special category (sort -366) (1):
+  Highpeak the Elder [8643]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

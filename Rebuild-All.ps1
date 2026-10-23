@@ -8,6 +8,11 @@
 .EXAMPLE
     .\Rebuild-All.ps1 -Rxp "D:\...\Guides\forever" -Faction Horde -Zone "Zephras Isle","Durotar"
 
+.EXAMPLE
+    .\Rebuild-All.ps1 -Game classic -Rxp ".\rxp"
+    Classic Era: -Rxp is RestedXP's whole Guides folder (the one with GuideList-classic.xml); RxpToLock picks the
+    Classic Era leveling guides out of it. Zone files, locks and guides go in zones\classic, locks\classic, guides\classic.
+
 .NOTES
     Run it from the RouteBuilder folder (or anywhere: it changes to its own folder first).
     If Windows refuses to run it: powershell -ExecutionPolicy Bypass -File .\Rebuild-All.ps1 -Rxp "..."
@@ -16,6 +21,8 @@
 param(
     # RestedXP's guide folder (the one holding its .lua guide files). Leave the \ off the end.
     [Parameter(Mandatory = $true)][string]$Rxp,
+    # which game to build for
+    [ValidateSet('forever', 'classic')][string]$Game = 'forever',
     # which factions to rebuild
     [ValidateSet('Horde', 'Alliance')][string[]]$Faction = @('Horde', 'Alliance'),
     # only these zones (default: every zone in the lists below)
@@ -78,13 +85,20 @@ $rxpToLock = [IO.Path]::Combine($PSScriptRoot, 'RxpToLock', 'bin', 'Release', 'n
 
 if ($Update) {
     Write-Host 'Updating QuestieDB...'
-    & dotnet $routeBuilder update 2>&1 | ForEach-Object { "$_" } | Out-File -LiteralPath $log -Append -Encoding UTF8
+    & dotnet $routeBuilder update --game $Game 2>&1 | ForEach-Object { "$_" } | Out-File -LiteralPath $log -Append -Encoding UTF8
     if ($LASTEXITCODE -ne 0) { throw 'update failed; see rebuild.log' }
 }
 
-$guides = @(Get-ChildItem -LiteralPath $Rxp -Filter '*.lua' -File -Recurse:$Recurse | ForEach-Object FullName)
-if ($guides.Count -eq 0) { throw "no .lua guide files in $Rxp" }
-Write-Host "$($guides.Count) RestedXP guide files in $Rxp"
+# Forever: every guide file in the folder. Other games: RxpToLock reads the game's list (GuideList-<game>.xml) itself
+$guideList = @{ classic = 'GuideList-classic.xml' }[$Game]
+if ($Game -ne 'forever' -and (Test-Path -LiteralPath (Join-Path $Rxp $guideList))) {
+    $guides = @()
+    Write-Host "RestedXP guides: the ones $guideList lists in $Rxp"
+} else {
+    $guides = @(Get-ChildItem -LiteralPath $Rxp -Filter '*.lua' -File -Recurse:$Recurse | ForEach-Object FullName)
+    if ($guides.Count -eq 0) { throw "no .lua guide files in $Rxp" }
+    Write-Host "$($guides.Count) RestedXP guide files in $Rxp"
+}
 
 # runs one command, keeps all of its output in the log, shows the lines worth seeing
 # (Windows PowerShell 5.1 turns anything a program writes to its error output into a stopping error, so that is
@@ -102,18 +116,21 @@ function Invoke-Step([string]$what, [string[]]$arguments, [string]$show) {
 $problems = @(); $failed = @(); $noRxp = @(); $skipped = @(); $done = 0
 foreach ($f in $Faction) {
     # -Zone "A","B" arrives as one string "A,B" when the script is started with -File
-    $list = if ($Zone) { $Zone | ForEach-Object { $_ -split ',' } | ForEach-Object { $_.Trim() } | Where-Object { $_ } } else { $zones[$f] }
+    $list = if ($Zone) { $Zone | ForEach-Object { $_ -split ',' } | ForEach-Object { $_.Trim() } | Where-Object { $_ } }
+            elseif ($Game -eq 'forever') { $zones[$f] }
+            else { @(& dotnet $routeBuilder zones --game $Game --faction $f --list 2>$null | ForEach-Object { "$_".Trim() } | Where-Object { $_ }) }
     foreach ($z in $list) {
         Write-Host "$z ($f)" -ForegroundColor Cyan
         if (-not $NoRxpToLock -and -not $Fresh) {
-            $r = Invoke-Step "RxpToLock $z ($f)" (@($rxpToLock, '--zone', $z, '--faction', $f, '--rxp', $Rxp) + $guides) '^\d+ steps for|None of these|^Error|not found|^No zone'
+            $r = Invoke-Step "RxpToLock $z ($f)" (@($rxpToLock, '--game', $Game, '--zone', $z, '--faction', $f, '--rxp', $Rxp) + $guides) '^\d+ steps for|None of these|^Error|not found|^No zone'
             if (($r.Out -join "`n") -match 'None of these') { $noRxp += "$z ($f)" }
         }
-        $buildArgs = @($routeBuilder, 'build', '--zone', $z, '--faction', $f, '--rxp', $Rxp, '--effort', "$Effort")
+        $buildArgs = @($routeBuilder, 'build', '--game', $Game, '--zone', $z, '--faction', $f, '--rxp', $Rxp, '--effort', "$Effort")
         if ($Fresh) { $buildArgs += '--fresh' }
         $b = Invoke-Step "build $z ($f)" $buildArgs 'saved order for everyone:|yd on foot|training, vendor|^Error'
         $text = $b.Out -join "`n"
         if ($text -match 'is planned as part of (.+?); build') { $skipped += "$z ($f, part of $($Matches[1]))" }
+        elseif ($text -match 'fewer than three steps to plan') { $skipped += "$z ($f, next to nothing to do for this faction)" }
         elseif ($text -match '(?m)^Error') { $failed += "$z ($f)" }
         elseif ($text -match 'PROBLEMS') { $problems += "$z ($f)" }
         else { $done++ }
@@ -124,17 +141,17 @@ Write-Host ''
 Write-Host "$done built with all checks passed." -ForegroundColor Green
 if ($problems.Count) { Write-Host "Built, but the report lists problems: $($problems -join ', ')" -ForegroundColor Yellow }
 if ($failed.Count) { Write-Host "Not built (see rebuild.log): $($failed -join ', ')" -ForegroundColor Red }
-if ($skipped.Count) { Write-Host "Skipped, built with their zone: $($skipped -join ', ')" }
+if ($skipped.Count) { Write-Host "Skipped: $($skipped -join ', ')" }
 if ($noRxp.Count) { Write-Host "RestedXP's guides have nothing for these, so their lock was kept as it was: $($noRxp -join ', ')" }
 
 # suggested next zones, from every guide in the folder (also those built before this run)
 if (-not $NoLink) {
     Write-Host ''
     Write-Host 'Suggesting next zones (link)...'
-    $null = Invoke-Step 'link' @($routeBuilder, 'link') '^\s+\S.*: (at |no other)|^Error|^No guide'
+    $null = Invoke-Step 'link' @($routeBuilder, 'link', '--game', $Game) '^\s+\S.*: (at |no other)|^Error|^No guide'
 }
 
 if (-not $NoAddon) {
     Write-Host ''
-    & (Join-Path $PSScriptRoot 'Make-Addon.ps1')
+    & (Join-Path $PSScriptRoot 'Make-Addon.ps1') -Game $Game
 }

@@ -1,0 +1,75 @@
+Moonglade - Horde
+Guide "57-60 Moonglade" in group "Zone Routes (Horde)": 41 steps, 30 stops
+Written to guides/classic/Moonglade (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Tauren Druid), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 57. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 21 steps kept, 8 new ones slotted in, 0 moved because their prerequisites changed, 8 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 57, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 1 tasks, 72 yd on foot; ends at level 57.0
+  Druid: 1 more tasks; their whole route comes to 72 yd; ends at level 57.0
+  everyone (quests that depend on other zones): 9 more tasks; their whole route comes to 717 yd; ends at level 57.0
+  Tauren Druid (quests that depend on other zones): 18 more tasks; their whole route comes to 3,145 yd; ends at level 57.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+10 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+
+Quests in the guide (19)
+------------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Torwa Pathfinder [9063, level 52, Druid] -> Un'Goro Crater
+
+Hand-in step only shows once complete (1):
+  A Reliquary of Purity [5527, level 60] - needs Reliquary of Purity (1) (Silithus)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (6):
+  Moonglade [5922, level 10, Tauren Druid] <- Thunder Bluff
+  Lessons Anew [6126, level 14, Tauren Druid] <- Thunder Bluff
+  Curing the Sick [6129, level 14, Tauren Druid] <- The Barrens
+  A Lesson to Learn [27, level 16, Tauren Druid] <- Thunder Bluff
+  Rabine Saturna [1123, level 55] <- Thunder Bluff
+  Umber, Archivist [6844, level 57] <- Silithus
+
+Need a quest this guide does not hand in - steps show only once that is done (11):
+  Great Bear Spirit [5930, level 10, Tauren Druid] - needs one of Moonglade [5922]
+  Back to Thunder Bluff [5932, level 10, Tauren Druid] - needs one of Great Bear Spirit [5930] -> Thunder Bluff
+  The Principal Source [6127, level 14, Tauren Druid] - needs one of Lessons Anew [6126] -> The Barrens
+  Power over Poison [6130, level 14, Tauren Druid] - needs one of Curing the Sick [6129] -> Thunder Bluff
+  Trial of the Lake [28, level 16, Tauren Druid] - needs one of A Lesson to Learn [27]
+  Trial of the Sea Lion [30, level 16, Tauren Druid] - needs one of Trial of the Lake [28]
+  Aquatic Form [31, level 16, Tauren Druid] - needs one of Trial of the Sea Lion [30] -> Thunder Bluff
+  Wasteland [1124, level 55] - needs one of Rabine Saturna [1123], Rabine Saturna [6762] -> Silithus
+  Under the Chitin Was... [1185, level 57] - needs one of Uncovering Past Secrets [6845]
+  Uncovering Past Secrets [6845, level 57] - needs one of Umber, Archivist [6844]
+  Shards of the Felvine [5526, level 60] - needs one of A Reliquary of Purity [5527]
+
+Worth checking in game
+----------------------
+  Trial of the Lake [28, level 16, Tauren Druid]: objective "Shrine Of Remulos" is line 1 by the database, but RestedXP's guide has "Complete the Trial of the Lake" there
+
+Left out (20)
+-------------
+repeatable (10):
+  Festival Dumplings [8863], Festive Lunar Dresses [8864], Festive Lunar Pant Suits [8865], Small Rockets [8876], Firework Launcher [8877], Festive Recipes [8878], Large Rockets [8879], Cluster Rockets [8880], Large Cluster Rockets [8881], Cluster Launcher [8882]
+needs reputation (4):
+  Tyrande and Remulos [8734], The Nightmare's Corruption [8735], The Nightmare Manifests [8736], The Champion Returns [8741]
+special category (sort -366) (3):
+  Elune's Candle [8862], Elune's Blessing [8868], Valadar Starsong [8883]
+special category (sort -1) (2):
+  Shrouded in Nightmare [8446], Waking Legends [8447]
+dungeon quest (1):
+  Seed of Life [7066]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

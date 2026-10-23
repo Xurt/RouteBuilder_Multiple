@@ -1,0 +1,241 @@
+Eastern Plaguelands - Horde - part 1 of 3, planned from level 55
+Guide "55-60 Eastern Plaguelands" in group "Zone Routes (Horde)": this part has 71 steps, 65 stops
+Written to guides/classic/Eastern Plaguelands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 9 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+3 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 55. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 45 steps kept, 35 new ones slotted in, 1 moved because their prerequisites changed, 16 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 46 tasks, 19,917 yd on foot; ends at level 55.5; 1 hearth; at its hardest you are 1.9 levels below the mobs
+  everyone (quests that depend on other zones): 35 more tasks; their whole route comes to 24,660 yd; ends at level 55.5; 1 hearth; at its hardest you are 4.6 levels below the mobs
+Hearthstone: set at Jessica Chambers (Jessica Chambers's inn); 1 hearth step in the guide.
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (39)
+------------------------
+Start to finish here: 13 (13 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Of Love and Family [5846, level 58] -> Western Plaguelands
+
+Hand-in step only shows once complete (2):
+  Pamela's Doll [5149, level 55] - needs Pamela's Doll (1) (an unknown place)
+  That's Asking A Lot [6026, level 58] - needs Thorium Bar (2) (an unknown place); Golden Rod (1) (an unknown place); Hi-Explosive Bomb (8) (an unknown place); Unstable Trigger (8) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (12):
+  Duke Nicholas Zverenhoff [6030, level 52] <- Winterspring
+  Little Pamela [5142, level 55] <- Western Plaguelands
+  Sister Pamela [5601, level 55] <- Winterspring
+  Brother Carlin [5210, level 56] <- Western Plaguelands
+  The Champion of the Banshee Queen [5961, level 56] <- Undercity
+  The Dying, Ras Frostwhisper [5462, level 60] <- Western Plaguelands
+  Leonid Barthalomew [5522, level 60] <- Burning Steppes
+  The Battle of Darrowshire [5721, level 60] <- Western Plaguelands
+  In Dreams [5944, level 60] <- Western Plaguelands
+  The Crimson Courier [6145, level 60] <- Undercity
+  Secrets of the Colossus - Zora [8859, level 60] <- Silithus
+  In Search of Anthion [8930, level 60] <- Orgrimmar
+
+Need a quest this guide does not hand in - steps show only once that is done (11):
+  Auntie Marlene [5152, level 56] - needs one of Pamela's Doll [5149] -> Western Plaguelands
+  Heroes of Darrowshire [5168, level 56] - needs one of Brother Carlin [5210]
+  Uncle Carlin [5241, level 56] - needs one of Pamela's Doll [5149]
+  Villains of Darrowshire [5181, level 57] - needs one of Brother Carlin [5210]
+  When Smokey Sings, I Get Violent [6041, level 58] - needs one of That's Asking A Lot [6026]
+  Marauders of Darrowshire [5206, level 60] - needs Heroes of Darrowshire [5168], Villains of Darrowshire [5181]
+  Lord Maxwell Tyrosus [5264, level 60] - needs one of Above and Beyond [5263]
+  The Argent Hold [5265, level 60] - needs one of Lord Maxwell Tyrosus [5264]
+  Find Myranda [5861, level 60] - needs one of Of Love and Family [5848] -> Western Plaguelands
+  Return to Chromie [5941, level 60] - needs one of Marauders of Darrowshire [5206] -> Western Plaguelands
+  Hidden Treasures [5942, level 60] - needs one of The Battle of Darrowshire [5721]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (21)
+----------------------------
+These need a higher level than this part ends at:
+  Soulbound Keepsake [5465, level 60]: needs level 57; this part gets you to about 55.7
+  Hameya's Plea [6024, level 60]: its mobs are level 60; this part gets you to about 55.7
+  The Ranger Lord's Behest [6133, level 60]: its mobs are level 59; this part gets you to about 55.7
+  Duskwing, Oh How I Hate Thee... [6135, level 60]: its mobs are level 60; this part gets you to about 55.7
+  The Corpulent One [6136, level 60]: its mobs are level 61; this part gets you to about 55.7
+  The Call to Command [6144, level 60]: needs level 56; this part gets you to about 55.7
+  Nathanos' Ruse [6146, level 60]: needs level 56; this part gets you to about 55.7
+  Return to Nathanos [6147, level 60]: needs level 56; this part gets you to about 55.7
+  The Scarlet Oracle, Demetria [6148, level 60]: its mobs are level 61; this part gets you to about 55.7
+  A Warning [7621, level 60]: needs level 60; this part gets Priest characters to about 55.7
+  The Balance of Light and Shadow [7622, level 60]: needs level 60; this part gets Priest characters to about 55.7
+  Anthion's Strange Request [8947, level 60]: needs level 58; this part gets you to about 55.7
+  Anthion's Parting Words [8957, level 60]: needs level 58; this part gets Shaman characters to about 55.7
+  Anthion's Parting Words [9016, level 60]: needs level 58; this part gets Druid characters to about 55.7
+  Anthion's Parting Words [9017, level 60]: needs level 58; this part gets Hunter characters to about 55.7
+  Anthion's Parting Words [9018, level 60]: needs level 58; this part gets Mage characters to about 55.7
+  Anthion's Parting Words [9019, level 60]: needs level 58; this part gets Priest characters to about 55.7
+  Anthion's Parting Words [9020, level 60]: needs level 58; this part gets Rogue characters to about 55.7
+  Anthion's Parting Words [9021, level 60]: needs level 58; this part gets Warlock characters to about 55.7
+  Anthion's Parting Words [9022, level 60]: needs level 58; this part gets Warrior characters to about 55.7
+  Bolstering Our Defenses [9665, level 60]: is a level 60 quest; this part gets you to about 55.7
+
+Left out (184)
+--------------
+repeatable (123):
+  Corruptor's Scourgestones [5508], Invader's Scourgestones [5509], Minion's Scourgestones [5510], Healthy Dragon Scale [5582], Dreadnaught Breastplate [9034], Dreadnaught Legplates [9036], Dreadnaught Helmet [9037], Dreadnaught Pauldrons [9038], Dreadnaught Sabatons [9039], Dreadnaught Gauntlets [9040], Dreadnaught Waistguard [9041], Dreadnaught Bracers [9042], Redemption Tunic [9043], Redemption Legguards [9044], Redemption Headpiece [9045], Redemption Spaulders [9046], Redemption Boots [9047], Redemption Handguards [9048], Redemption Girdle [9049], Redemption Wristguards [9050], Cryptstalker Tunic [9054], Cryptstalker Legguards [9055], Cryptstalker Headpiece [9056], Cryptstalker Spaulders [9057], Cryptstalker Boots [9058], Cryptstalker Handguards [9059], Cryptstalker Girdle [9060], Cryptstalker Wristguards [9061], Earthshatter Tunic [9068], Earthshatter Legguards [9069], Earthshatter Headpiece [9070], Earthshatter Spaulders [9071], Earthshatter Boots [9072], Earthshatter Handguards [9073], Earthshatter Girdle [9074], Earthshatter Wristguards [9075], Bonescythe Breastplate [9077], Bonescythe Legplates [9078], Bonescythe Helmet [9079], Bonescythe Pauldrons [9080], ... 83 more
+dungeon quest (35):
+  Dawn's Gambit [4771], The Flesh Does Not Lie [5212], The Active Agent [5213], The Great Ezra Grimm [5214], Houses of the Holy [5243], The Archivist [5251], The Truth Comes Crashing Down [5262], Above and Beyond [5263], The Restless Souls [5282], Menethil's Gift [5463], Plagued Hatchlings [5529], Betina Bigglezink [5531], Of Love and Family [5848], Ramstein [6163], Dead Man's Plea [8945], Anthion's Old Friend [8948], The Challenge [9015], Echoes of War [9033], The Fall of Kel'Thuzad [9120], The Fate of Ramaladni [9229], Ramaladni's Icy Grasp [9230], The Only Song I Know... [9232], Icebane Gauntlets [9234], Icebane Bracers [9235], Icebane Breastplate [9236], Glacial Cloak [9237], Glacial Wrists [9238], Glacial Gloves [9239], Glacial Vest [9240], Polar Bracers [9241], Polar Gloves [9242], Polar Tunic [9243], Icy Scale Bracers [9244], Icy Scale Gauntlets [9245], Icy Scale Breastplate [9246]
+needs reputation (12):
+  Mantles of the Dawn [5513], Chromatic Mantle of the Dawn [5517], The Dread Citadel - Naxxramas [9121], The Dread Citadel - Naxxramas [9122], The Dread Citadel - Naxxramas [9123], Cryptstalker Armor Doesn't Make Itself... [9124], Bonescythe Digs [9126], The Elemental Equation [9128], Binding the Dreadnaught [9131], Savage Flora [9136], They Call Me "The Rooster" [9141], Omarion's Handbook [9233]
+special category (sort -368) (10):
+  Shadows of Doom [9085], Under the Shadow [9153], Light's Hope Chapel [9154], The Keeper's Call [9247], Letter from the Front [9295], Note from the Front [9299], Page from the Front [9300], Envelope from the Front [9301], Missive from the Front [9302], Document from the Front [9304]
+handed in here, but the database does not say where it starts (2):
+  Menethil's Gift [5464], Proof of Life [8946]
+special category (sort -366) (2):
+  Snowcrown the Elder [8650], Windrun the Elder [8688]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Eastern Plaguelands - Horde - part 2 of 3, planned from level 58
+Guide "55-60 Eastern Plaguelands" in group "Zone Routes (Horde)": this part has 27 steps, 25 stops
+Written to guides/classic/Eastern Plaguelands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 58. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 10 steps kept, 18 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 18 tasks, 10,250 yd on foot; ends at level 58.2; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 10 more tasks; their whole route comes to 14,280 yd; ends at level 58.2; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (9)
+-----------------------
+Start to finish here: 4 (4 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Pamela's Doll [5149, level 55] <- your earlier visit to this zone
+  That's Asking A Lot [6026, level 58] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Soulbound Keepsake [5465, level 60] - needs one of Menethil's Gift [5464] -> Western Plaguelands
+  Nathanos' Ruse [6146, level 60] - needs one of The Crimson Courier [6145]
+  Return to Nathanos [6147, level 60] - needs one of Nathanos' Ruse [6146]
+
+Worth checking in game
+----------------------
+  The Ranger Lord's Behest [6133, level 60]: could not read how many Woodsman are needed from the quest text; assumed 8
+
+Put off to a later part (14)
+----------------------------
+These need a higher level than this part ends at:
+  The Corpulent One [6136, level 60]: its mobs are level 61; this part gets you to about 58.2
+  The Call to Command [6144, level 60]: follows The Corpulent One [6136]
+  The Scarlet Oracle, Demetria [6148, level 60]: its mobs are level 61; this part gets you to about 58.2
+  A Warning [7621, level 60]: needs level 60; this part gets Priest characters to about 58.2
+  The Balance of Light and Shadow [7622, level 60]: needs level 60; this part gets Priest characters to about 58.2
+  Anthion's Strange Request [8947, level 60]: needs level 58; this part gets you to about 58.2
+  Anthion's Parting Words [8957, level 60]: needs level 58; this part gets Shaman characters to about 58.2
+  Anthion's Parting Words [9016, level 60]: needs level 58; this part gets Druid characters to about 58.2
+  Anthion's Parting Words [9017, level 60]: needs level 58; this part gets Hunter characters to about 58.2
+  Anthion's Parting Words [9018, level 60]: needs level 58; this part gets Mage characters to about 58.2
+  Anthion's Parting Words [9019, level 60]: needs level 58; this part gets Priest characters to about 58.2
+  Anthion's Parting Words [9020, level 60]: needs level 58; this part gets Rogue characters to about 58.2
+  Anthion's Parting Words [9021, level 60]: needs level 58; this part gets Warlock characters to about 58.2
+  Anthion's Parting Words [9022, level 60]: needs level 58; this part gets Warrior characters to about 58.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Eastern Plaguelands - Horde - part 3 of 3, planned from level 60
+Guide "55-60 Eastern Plaguelands" in group "Zone Routes (Horde)": this part has 17 steps, 15 stops
+Written to guides/classic/Eastern Plaguelands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 60. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 20 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 4 tasks, 3,115 yd on foot; ends at level 60.0
+  everyone (quests that depend on other zones): 9 more tasks; their whole route comes to 8,850 yd; ends at level 60.0
+  Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 8,850 yd; ends at level 60.0
+  Hunter (quests that depend on other zones): 1 more tasks; their whole route comes to 8,850 yd; ends at level 60.0
+  Rogue (quests that depend on other zones): 1 more tasks; their whole route comes to 8,850 yd; ends at level 60.0
+  Shaman (quests that depend on other zones): 1 more tasks; their whole route comes to 8,850 yd; ends at level 60.0
+  Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 8,850 yd; ends at level 60.0
+  Priest (quests that depend on other zones): 1 more tasks; their whole route comes to 8,850 yd; ends at level 60.0
+  Mage (quests that depend on other zones): 1 more tasks; their whole route comes to 8,850 yd; ends at level 60.0
+  Druid (quests that depend on other zones): 1 more tasks; their whole route comes to 8,850 yd; ends at level 60.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (14)
+------------------------
+Start to finish here: 1 (1 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Call to Command [6144, level 60] -> Undercity
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Pamela's Doll [5149, level 55] <- your earlier visit to this zone
+  That's Asking A Lot [6026, level 58] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (10):
+  The Scarlet Oracle, Demetria [6148, level 60] - needs one of Return to Nathanos [6147]
+  Anthion's Strange Request [8947, level 60] - needs one of Proof of Life [8946]
+  Anthion's Parting Words [8957, level 60, Shaman] - needs one of The Challenge [9015] -> Orgrimmar
+  Anthion's Parting Words [9016, level 60, Druid] - needs one of The Challenge [9015] -> Orgrimmar
+  Anthion's Parting Words [9017, level 60, Hunter] - needs one of The Challenge [9015] -> Orgrimmar
+  Anthion's Parting Words [9018, level 60, Mage] - needs one of The Challenge [9015] -> Orgrimmar
+  Anthion's Parting Words [9019, level 60, Priest] - needs one of The Challenge [9015] -> Orgrimmar
+  Anthion's Parting Words [9020, level 60, Rogue] - needs one of The Challenge [9015] -> Orgrimmar
+  Anthion's Parting Words [9021, level 60, Warlock] - needs one of The Challenge [9015] -> Orgrimmar
+  Anthion's Parting Words [9022, level 60, Warrior] - needs one of The Challenge [9015] -> Orgrimmar
+
+Worth checking in game
+----------------------
+
+Not planned (2)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  A Warning [7621, level 60]: needs level 60; this part gets Priest characters to about 60.1
+  The Balance of Light and Shadow [7622, level 60]: needs level 60; this part gets Priest characters to about 60.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

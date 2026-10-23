@@ -1,0 +1,374 @@
+{
+  "zone": "Hillsbrad Foothills",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "20-40 Hillsbrad Foothills",
+  "file": "Hillsbrad Foothills (Horde).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 20,
+      "end": 20.33,
+      "next": 23,
+      "guide": "20-21 Hillsbrad Foothills",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "20-21 Hillsbrad Foothills",
+          "level": 20,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 23,
+      "end": 23.72,
+      "next": 26,
+      "guide": "23-24 Hillsbrad Foothills: around Apothecary Lydon",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Apothecary Lydon",
+          "guide": "23-24 Hillsbrad Foothills: around Apothecary Lydon",
+          "level": 23,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 26,
+      "end": 26.14,
+      "next": 29,
+      "guide": "26-27 Hillsbrad Foothills",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "26-27 Hillsbrad Foothills",
+          "level": 26,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "start": 29,
+      "end": 29.36,
+      "next": 32,
+      "guide": "29-30 Hillsbrad Foothills: around Krusk",
+      "sections": [
+        {
+          "label": "RBSection4_1",
+          "name": "around Krusk",
+          "guide": "29-30 Hillsbrad Foothills: around Krusk",
+          "level": 29,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "start": 32,
+      "end": 32.1,
+      "next": 35,
+      "guide": "32-33 Hillsbrad Foothills: around Keeper Bel\u0027varil",
+      "sections": [
+        {
+          "label": "RBSection5_1",
+          "name": "around Keeper Bel\u0027varil",
+          "guide": "32-33 Hillsbrad Foothills: around Keeper Bel\u0027varil",
+          "level": 32,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "start": 35,
+      "end": 35,
+      "next": 38,
+      "guide": "35-36 Hillsbrad Foothills",
+      "sections": [
+        {
+          "label": "RBSection6_1",
+          "name": "part 6",
+          "guide": "35-36 Hillsbrad Foothills",
+          "level": 35,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "start": 38,
+      "end": 38,
+      "guide": "38-39 Hillsbrad Foothills",
+      "sections": [
+        {
+          "label": "RBSection7_1",
+          "name": "part 7",
+          "guide": "38-39 Hillsbrad Foothills",
+          "level": 38,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 493,
+      "level": 20,
+      "req": 19,
+      "xp": 1150,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Silverpine Forest"
+    },
+    {
+      "id": 494,
+      "level": 20,
+      "req": 19,
+      "xp": 780,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 495,
+      "level": 39,
+      "req": 34,
+      "xp": 300,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 496,
+      "level": 22,
+      "req": 19,
+      "xp": 175,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 499,
+      "level": 22,
+      "req": 19,
+      "xp": 1750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 506,
+      "level": 36,
+      "req": 29,
+      "xp": 2100,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Alterac Mountains"
+    },
+    {
+      "id": 508,
+      "level": 40,
+      "req": 29,
+      "xp": 3900,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Alterac Mountains"
+    },
+    {
+      "id": 515,
+      "level": 30,
+      "req": 24,
+      "xp": 3050,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 549,
+      "level": 22,
+      "req": 17,
+      "xp": 1750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1065,
+      "level": 18,
+      "req": 13,
+      "xp": 1350,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Mulgore"
+    },
+    {
+      "id": 2479,
+      "level": 26,
+      "req": 20,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": "Rogue",
+      "from": "Durotar"
+    },
+    {
+      "id": 2933,
+      "level": 43,
+      "req": 40,
+      "xp": 3600,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "The Hinterlands"
+    },
+    {
+      "id": 498,
+      "level": 22,
+      "req": 17,
+      "xp": 2200,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 501,
+      "level": 24,
+      "req": 21,
+      "xp": 1950,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 502,
+      "level": 24,
+      "req": 21,
+      "xp": 1450,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 527,
+      "level": 24,
+      "req": 19,
+      "xp": 1950,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 528,
+      "level": 25,
+      "req": 19,
+      "xp": 2000,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 546,
+      "level": 25,
+      "req": 20,
+      "xp": 2550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 509,
+      "level": 28,
+      "req": 24,
+      "xp": 2300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 529,
+      "level": 26,
+      "req": 19,
+      "xp": 2100,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 532,
+      "level": 26,
+      "req": 19,
+      "xp": 2100,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 539,
+      "level": 28,
+      "req": 19,
+      "xp": 2300,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 547,
+      "level": 30,
+      "req": 26,
+      "xp": 3050,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 552,
+      "level": 33,
+      "req": 29,
+      "xp": 2650,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 567,
+      "level": 28,
+      "req": 19,
+      "xp": 2300,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 541,
+      "level": 30,
+      "req": 19,
+      "xp": 2450,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Mulgore": 1,
+    "Tirisfal Glades": 3,
+    "Alterac Mountains": 2,
+    "Arathi Highlands": 2,
+    "The Barrens": 1
+  }
+}

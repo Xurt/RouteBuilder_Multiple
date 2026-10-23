@@ -89,7 +89,7 @@ public sealed class AreaInfo
     public Pt ToPercent(Pt w) => new((Left - w.X) / (Left - Right) * 100.0, (Top - w.Y) / (Top - Bottom) * 100.0);
 }
 
-/// <summary>Everything read from a QuestieDB checkout after its Forever export has been run.</summary>
+/// <summary>Everything read from a QuestieDB checkout after the export for the game being planned has been run.</summary>
 public sealed class GameData
 {
     public readonly Dictionary<int, QuestRow> Quests = new();
@@ -105,6 +105,11 @@ public sealed class GameData
     public string Version = "unknown";
 
     public const string ExportDir = "src/corrections/Forever/combined";
+    /// <summary>Where RouteBuilder's own export of another game's data goes, inside the QuestieDB folder.</summary>
+    public static string FlavorDir(GameProfile g) => Path.Combine(".routebuilder", g.Flavor);
+    /// <summary>The exported quest, NPC, object and item files of the game being planned.</summary>
+    static string DataFile(string repo, GameProfile g, string type) =>
+        g.IsForever ? Path.Combine(repo, ExportDir, $"forever{type}DB.lua") : Path.Combine(repo, FlavorDir(g), $"{g.Flavor}{type}DB.lua");
 
     public int Parent(int area) => ParentArea.TryGetValue(area, out var p) ? p : area;
     public string AreaName(int area) => Areas.TryGetValue(area, out var a) ? a.Name : $"area {area}";
@@ -124,26 +129,25 @@ public sealed class GameData
     // ------------------------------------------------------------------ loading
     public static GameData Load(string repo)
     {
-        var d = new GameData();
-        string exp = Path.Combine(repo, ExportDir);
-        if (!File.Exists(Path.Combine(exp, "foreverQuestDB.lua")))
-            throw new InvalidOperationException($"No exported data in {exp}. Run 'RouteBuilder update' first.");
+        var d = new GameData(); var g = Games.Current;
+        if (!File.Exists(DataFile(repo, g, "Quest")))
+            throw new InvalidOperationException($"No exported {g.Label} data in {Path.GetDirectoryName(DataFile(repo, g, "Quest"))}. Run 'RouteBuilder update{(g.IsForever ? "" : " --game " + g.Key)}' first.");
 
-        foreach (var (id, r) in Lua.ReadEntities(Path.Combine(exp, "foreverNpcDB.lua")))
+        foreach (var (id, r) in Lua.ReadEntities(DataFile(repo, g, "Npc")))
         {
             var n = new NpcRow { Id = id, Name = Lua.Text(r[1]) ?? "", MinLevel = Lua.Dbl(r[4]), MaxLevel = Lua.Dbl(r[5]), Rank = (int)Lua.Num(r[6]), Flags = (int)Lua.Num(r[15]) };
             ReadPoints(Lua.Tab(r[7]), n.Spawns); ReadPoints(Lua.Tab(r[8]), n.Waypoints);
             d.Npcs[id] = n;
         }
-        foreach (var (id, r) in Lua.ReadEntities(Path.Combine(exp, "foreverObjectDB.lua")))
+        foreach (var (id, r) in Lua.ReadEntities(DataFile(repo, g, "Object")))
         {
             var o = new ObjectRow { Id = id, Name = Lua.Text(r[1]) ?? "" };
             ReadPoints(Lua.Tab(r[4]), o.Spawns);
             d.Objects[id] = o;
         }
-        foreach (var (id, r) in Lua.ReadEntities(Path.Combine(exp, "foreverItemDB.lua")))
+        foreach (var (id, r) in Lua.ReadEntities(DataFile(repo, g, "Item")))
             d.Items[id] = new ItemRow { Id = id, Name = Lua.Text(r[1]) ?? "", NpcDrops = Lua.Ids(r[2]), ObjectDrops = Lua.Ids(r[3]), Vendors = Lua.Ids(r[14]) };
-        foreach (var (id, r) in Lua.ReadEntities(Path.Combine(exp, "foreverQuestDB.lua")))
+        foreach (var (id, r) in Lua.ReadEntities(DataFile(repo, g, "Quest")))
             d.Quests[id] = ReadQuest(id, r);
 
         d.LoadAreas(repo); d.LoadSupport(repo);
@@ -213,16 +217,19 @@ public sealed class GameData
 
     void LoadAreas(string repo)
     {
-        string zones = Path.Combine(repo, "support", "Forever", "Zones");
-        // world rectangles for the zones that have them
+        var g = Games.Current;
+        string zones = g.IsForever ? Path.Combine(repo, "support", "Forever", "Zones") : Path.Combine(repo, "support", "Zones");
+        // world rectangles for the zones that have them. Forever's conversion file has them for Forever's maps ("target")
+        // and for the Classic maps it was made from ("source"), so it serves Classic Era too
+        string side = g.IsForever ? "target" : "source";
         using (var doc = JsonDocument.Parse(File.ReadAllText(Path.Combine(repo, "data", "Forever", "conversion.json"))))
             foreach (var t in doc.RootElement.GetProperty("geometry").GetProperty("transforms").EnumerateArray())
             {
-                var b = t.GetProperty("target_bounds");
+                if (!t.TryGetProperty(side + "_bounds", out var b) || b.ValueKind != JsonValueKind.Object) continue;
                 var a = new AreaInfo
                 {
                     Id = t.GetProperty("area_id").GetInt32(), UiMap = t.GetProperty("ui_map_id").GetInt32(), Continent = t.GetProperty("map_id").GetInt32(),
-                    Name = t.GetProperty("target_name").GetString() ?? "", HasBounds = true,
+                    Name = t.GetProperty(side + "_name").GetString() ?? "", HasBounds = true,
                     Left = b.GetProperty("left").GetDouble(), Right = b.GetProperty("right").GetDouble(), Top = b.GetProperty("top").GetDouble(), Bottom = b.GetProperty("bottom").GetDouble(),
                 };
                 Areas[a.Id] = a;
@@ -256,7 +263,8 @@ public sealed class GameData
     {
         var rx = new Regex(@"\[(\d+)\] = \{(-?\d+), (\d+)\}");
         var byLevel = new Dictionary<int, List<int>>();
-        foreach (Match m in rx.Matches(File.ReadAllText(Path.Combine(repo, "support", "Forever", "QuestXP", "xpDB-classic.lua"))))
+        var g = Games.Current; string support = g.IsForever ? Path.Combine(repo, "support", "Forever") : Path.Combine(repo, "support");
+        foreach (Match m in rx.Matches(File.ReadAllText(Path.Combine(support, "QuestXP", "xpDB-classic.lua"))))
         {
             int id = int.Parse(m.Groups[1].Value), lvl = int.Parse(m.Groups[2].Value), xp = int.Parse(m.Groups[3].Value);
             QuestXp[id] = xp;
@@ -264,13 +272,13 @@ public sealed class GameData
         }
         // "typical" pay for a quest of each level: the 65th percentile of real quests, never decreasing with level
         int last = 80;
-        for (int lvl = 1; lvl <= 60; lvl++)
+        for (int lvl = 1; lvl <= Game.MaxLevel; lvl++)
         {
             if (byLevel.TryGetValue(lvl, out var l) && l.Count >= 5) { l.Sort(); last = Math.Max(last, l[(int)(l.Count * 0.65)]); }
             TypicalXp[lvl] = last;
         }
         int cur = 0; var item = new Regex(@"^\s*\[(\d+)\] = \{"); var rate = new Regex(@"^\s*\[(\d+)\] = ([\d.]+),");
-        foreach (var line in File.ReadLines(Path.Combine(repo, "support", "Forever", "DropTables", "classicItemDrops.lua")))
+        foreach (var line in File.ReadLines(Path.Combine(support, "DropTables", "classicItemDrops.lua")))
         {
             var m = item.Match(line);
             if (m.Success) { cur = int.Parse(m.Groups[1].Value); DropRates[cur] = new(); continue; }
@@ -283,7 +291,7 @@ public sealed class GameData
     {
         string stamp = Path.Combine(repo, ".routebuilder-version");
         if (File.Exists(stamp)) return File.ReadAllText(stamp).Trim();
-        return "local copy, " + File.GetLastWriteTime(Path.Combine(repo, ExportDir, "foreverQuestDB.lua")).ToString("yyyy-MM-dd");
+        return "local copy, " + File.GetLastWriteTime(DataFile(repo, Games.Current, "Quest")).ToString("yyyy-MM-dd");
     }
 }
 
@@ -400,12 +408,25 @@ public static class Updater
         catch (Exception) { return (-1, ""); }
     }
 
-    /// <summary>Runs QuestieDB's export-forever.lua with the Lua 5.1 interpreter it ships.</summary>
+    /// <summary>
+    /// Runs the export for the game being planned with the Lua 5.1 interpreter QuestieDB ships: QuestieDB's own
+    /// export-forever.lua for Forever, RouteBuilder's tools/export-flavor.lua for the other games.
+    /// </summary>
     public static void Export(string repo, string? luaPath)
     {
         string lua = luaPath ?? FindLua(Path.GetFullPath(repo));
-        Console.WriteLine($"Running QuestieDB export with {lua} ...");
-        int rc = Run(lua, "tools/export-forever.lua --include-authored", repo, quiet: false);
+        var g = Games.Current;
+        Console.WriteLine($"Running the {g.Label} export of QuestieDB with {lua} ...");
+        int rc;
+        if (g.IsForever) rc = Run(lua, "tools/export-forever.lua --include-authored", repo, quiet: false);
+        else
+        {
+            string script = new[] { Path.Combine(AppContext.BaseDirectory, "tools", "export-flavor.lua"), Path.Combine("tools", "export-flavor.lua") }
+                .Select(Path.GetFullPath).FirstOrDefault(File.Exists) ?? throw new InvalidOperationException("tools/export-flavor.lua is missing from RouteBuilder.");
+            string outDir = Path.Combine(Path.GetFullPath(repo), GameData.FlavorDir(g));
+            Directory.CreateDirectory(outDir);
+            rc = Run(lua, $"\"{script}\" {g.Flavor} \"{outDir}\"", repo, quiet: false);
+        }
         if (rc != 0) throw new InvalidOperationException("QuestieDB export failed. If no Lua 5.1 interpreter was found, install one and pass --lua <path>.");
     }
 

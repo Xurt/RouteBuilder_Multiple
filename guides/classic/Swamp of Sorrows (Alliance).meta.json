@@ -1,0 +1,140 @@
+{
+  "zone": "Swamp of Sorrows",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "35-52 Swamp of Sorrows",
+  "file": "Swamp of Sorrows (Alliance).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 35,
+      "end": 35.27,
+      "next": 39,
+      "guide": "35-36 Swamp of Sorrows",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "35-36 Swamp of Sorrows",
+          "level": 35,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 39,
+      "end": 39.04,
+      "next": 51,
+      "guide": "39-40 Swamp of Sorrows",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "39-40 Swamp of Sorrows",
+          "level": 39,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 51,
+      "end": 51,
+      "guide": "51-52 Swamp of Sorrows",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "51-52 Swamp of Sorrows",
+          "level": 51,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 1389,
+      "level": 35,
+      "req": 30,
+      "xp": 2750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1392,
+      "level": 39,
+      "req": 29,
+      "xp": 2250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1393,
+      "level": 38,
+      "req": 30,
+      "xp": 2850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1396,
+      "level": 37,
+      "req": 30,
+      "xp": 2850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1421,
+      "level": 35,
+      "req": 30,
+      "xp": 2750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2783,
+      "level": 57,
+      "req": 50,
+      "xp": 4500,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Blasted Lands"
+    },
+    {
+      "id": 8417,
+      "level": 50,
+      "req": 50,
+      "xp": 470,
+      "part": 1,
+      "section": 0,
+      "tag": "Warrior",
+      "from": "Mulgore"
+    },
+    {
+      "id": 1398,
+      "level": 42,
+      "req": 30,
+      "xp": 3450,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Dustwallow Marsh": 1,
+    "Blasted Lands": 1,
+    "Winterspring": 1
+  }
+}

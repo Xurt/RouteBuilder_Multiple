@@ -1,0 +1,279 @@
+Arathi Highlands - Horde - part 1 of 5, planned from level 32
+Guide "32-42 Arathi Highlands" in group "Zone Routes (Horde)": this part has 29 steps, 18 stops
+Written to guides/classic/Arathi Highlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+2 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 32. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 21 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed, 60 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 18 tasks, 5,374 yd on foot; ends at level 32.4; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 9,972 yd; ends at level 32.4; at its hardest you are 1.8 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+5 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (10)
+------------------------
+Start to finish here: 7 (7 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  The Hammer May Fall [676, level 32] <- Hillsbrad Foothills
+  Trollbane [638, level 37] <- Stranglethorn Vale
+  Sunken Treasure [670, level 40] <- Stranglethorn Vale
+
+Worth checking in game
+----------------------
+
+Put off to a later part (27)
+----------------------------
+These need a higher level than this part ends at:
+  Sigil of Strom [639, level 37]: its mobs are level 36; this part gets you to about 33.8
+  The Broken Sigil [640, level 40]: its mobs are level 38; this part gets you to about 33.8
+  Sigil of Thoradin [641, level 40]: follows The Broken Sigil [640]
+  The Princess Trapped [642, level 37]: its mobs are level 35; this part gets you to about 32.5
+  Sigil of Arathor [643, level 41]: its mobs are level 38; this part gets you to about 33.8
+  Sigil of Trollbane [644, level 42]: its mobs are level 44; this part gets you to about 33.8
+  Trol'kalar [645, level 42]: follows Sigil of Trollbane [644]
+  Trol'kalar [646, level 42]: follows Trol'kalar [645]
+  Stones of Binding [651, level 38]: is a level 38 quest; this part gets you to about 33.8
+  Breaking the Keystone [652, level 42]: its mobs are level 42; this part gets you to about 33.8
+  Deep Sea Salvage [662, level 40]: is a level 40 quest; this part gets you to about 33.8
+  Land Ho! [663, level 35]: needs level 35; this part gets you to about 33.8
+  Drowned Sorrows [664, level 40]: its mobs are level 39; this part gets you to about 33.8
+  Sunken Treasure [665, level 40]: is a level 40 quest; this part gets you to about 33.8
+  Sunken Treasure [666, level 40]: is a level 40 quest; this part gets you to about 33.8
+  Death From Below [667, level 44]: is a level 44 quest; this part gets you to about 33.8
+  Sunken Treasure [668, level 40]: needs level 35; this part gets you to about 33.8
+  Sunken Treasure [669, level 40]: needs level 35; this part gets you to about 33.8
+  Foul Magics [673, level 40]: its mobs are level 40; this part gets you to about 33.8
+  Call to Arms [678, level 38]: its mobs are level 36; this part gets you to about 33.8
+  Call to Arms [679, level 40]: its mobs are level 39; this part gets you to about 33.8
+  The Real Threat [680, level 40]: its mobs are level 40; this part gets you to about 33.8
+  Theldurin the Lost [687, level 40]: follows Myzrael's Allies [688]
+  Myzrael's Allies [688, level 40]: follows Breaking the Keystone [652]
+  Guile of the Raptor [701, level 37]: its mobs are level 36; this part gets you to about 33.8
+  Guile of the Raptor [702, level 37]: follows Guile of the Raptor [701]
+  Guile of the Raptor [847, level 37]: follows Guile of the Raptor [702]
+
+Left out (39)
+-------------
+dungeon quest (16):
+  The Battle for Arathi Basin! [8120], The Battle for Arathi Basin! [8169], The Battle for Arathi Basin! [8170], The Battle for Arathi Basin! [8171], Battle of Warsong Gulch [8368], Invaders of Alterac Valley [8369], Conquering Arathi Basin [8370], Battle of Warsong Gulch [8426], Battle of Warsong Gulch [8427], Battle of Warsong Gulch [8428], Battle of Warsong Gulch [8429], Battle of Warsong Gulch [8430], Conquering Arathi Basin [8436], Conquering Arathi Basin [8437], Conquering Arathi Basin [8438], Conquering Arathi Basin [8439]
+repeatable (13):
+  Invaders of Alterac Valley [8387], For Great Honor [8388], Battle of Warsong Gulch [8389], Conquering Arathi Basin [8390], Battle of Warsong Gulch [8431], Battle of Warsong Gulch [8432], Battle of Warsong Gulch [8433], Battle of Warsong Gulch [8434], Battle of Warsong Gulch [8435], Conquering Arathi Basin [8440], Conquering Arathi Basin [8441], Conquering Arathi Basin [8442], Conquering Arathi Basin [8443]
+needs reputation (5):
+  Take Four Bases [8121], Take Five Bases [8122], Defiler's Basic Care Package [8263], Defiler's Standard Care Package [8264], Defiler's Advanced Care Package [8265]
+needs a profession (3):
+  Elemental Leatherworking [5146], Triage [6622], Horde Trauma [6623]
+above this zone's range of 32-44 (2):
+  Summoning the Princess [656], For Great Honor [8367]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Arathi Highlands - Horde - part 2 of 5, planned from level 35
+Guide "32-42 Arathi Highlands" in group "Zone Routes (Horde)": this part has 25 steps, 23 stops
+Written to guides/classic/Arathi Highlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 35. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 24 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 24 tasks, 12,842 yd on foot; ends at level 35.5; at its hardest you are 1.9 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 8 (8 for everyone)
+
+Worth checking in game
+----------------------
+  Call to Arms [678, level 38]: could not read how many Boulderfist Magus are needed from the quest text; assumed 8
+
+Put off to a later part (19)
+----------------------------
+These need a higher level than this part ends at:
+  The Broken Sigil [640, level 40]: its mobs are level 38; this part gets you to about 35.6
+  Sigil of Thoradin [641, level 40]: follows The Broken Sigil [640]
+  Sigil of Arathor [643, level 41]: its mobs are level 38; this part gets you to about 35.6
+  Sigil of Trollbane [644, level 42]: its mobs are level 44; this part gets you to about 36.2
+  Trol'kalar [645, level 42]: follows Sigil of Trollbane [644]
+  Trol'kalar [646, level 42]: follows Trol'kalar [645]
+  Breaking the Keystone [652, level 42]: its mobs are level 42; this part gets you to about 36.2
+  Deep Sea Salvage [662, level 40]: is a level 40 quest; this part gets you to about 36.2
+  Drowned Sorrows [664, level 40]: its mobs are level 39; this part gets you to about 36.2
+  Sunken Treasure [665, level 40]: is a level 40 quest; this part gets you to about 36.2
+  Sunken Treasure [666, level 40]: is a level 40 quest; this part gets you to about 36.2
+  Death From Below [667, level 44]: is a level 44 quest; this part gets you to about 36.2
+  Sunken Treasure [668, level 40]: follows Sunken Treasure [666]
+  Sunken Treasure [669, level 40]: follows Sunken Treasure [668]
+  Foul Magics [673, level 40]: its mobs are level 40; this part gets you to about 36.2
+  Call to Arms [679, level 40]: its mobs are level 39; this part gets you to about 36.2
+  The Real Threat [680, level 40]: its mobs are level 40; this part gets you to about 36.2
+  Theldurin the Lost [687, level 40]: follows Myzrael's Allies [688]
+  Myzrael's Allies [688, level 40]: follows Breaking the Keystone [652]
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Arathi Highlands - Horde - part 3 of 5, planned from level 38
+Guide "32-42 Arathi Highlands" in group "Zone Routes (Horde)": this part has 42 steps, 38 stops
+Written to guides/classic/Arathi Highlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+2 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 38. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 29 steps kept, 9 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 38 tasks, 13,961 yd on foot; ends at level 38.5; 2 hearths; at its hardest you are 2.0 levels below the mobs
+Hearthstone: set at Innkeeper Adegwa (Innkeeper Adegwa's inn); 2 hearth steps in the guide.
+
+Quests in the guide (12)
+------------------------
+Start to finish here: 11 (11 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Sunken Treasure [669, level 40] -> Stranglethorn Vale
+
+Worth checking in game
+----------------------
+
+Put off to a later part (7)
+---------------------------
+These need a higher level than this part ends at:
+  Sigil of Trollbane [644, level 42]: its mobs are level 44; this part gets you to about 38.7
+  Trol'kalar [645, level 42]: follows Sigil of Trollbane [644]
+  Trol'kalar [646, level 42]: follows Trol'kalar [645]
+  Breaking the Keystone [652, level 42]: its mobs are level 42; this part gets you to about 38.7
+  Death From Below [667, level 44]: is a level 44 quest; this part gets you to about 38.7
+  Theldurin the Lost [687, level 40]: follows Myzrael's Allies [688]
+  Myzrael's Allies [688, level 40]: follows Breaking the Keystone [652]
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Arathi Highlands - Horde - part 4 of 5, planned from level 41
+Guide "32-42 Arathi Highlands" in group "Zone Routes (Horde)": this part has 11 steps, 9 stops
+Written to guides/classic/Arathi Highlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 41. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 6 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 6 tasks, 5,361 yd on foot; ends at level 41.1
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 6,360 yd; ends at level 41.1; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Theldurin the Lost [687, level 40] -> Badlands
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Death From Below [667, level 44] - needs one of Sunken Treasure [670]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (3)
+---------------------------
+These need a higher level than this part ends at:
+  Sigil of Trollbane [644, level 42]: its mobs are level 44; this part gets you to about 41.2
+  Trol'kalar [645, level 42]: follows Sigil of Trollbane [644]
+  Trol'kalar [646, level 42]: follows Trol'kalar [645]
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Arathi Highlands - Horde - part 5 of 5, planned from level 44
+Guide "32-42 Arathi Highlands" in group "Zone Routes (Horde)": this part has 8 steps, 7 stops
+Written to guides/classic/Arathi Highlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 44. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 7 tasks, 6,933 yd on foot; ends at level 44.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (3)
+-----------------------
+Start to finish here: 3 (3 for everyone)
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

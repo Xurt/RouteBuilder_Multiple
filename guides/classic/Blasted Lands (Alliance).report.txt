@@ -1,0 +1,64 @@
+Blasted Lands - Alliance
+Guide "50-57 Blasted Lands" in group "Zone Routes (Alliance)": 38 steps, 34 stops
+Written to guides/classic/Blasted Lands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+10 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 50. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 18 steps kept, 23 new ones slotted in, 0 moved because their prerequisites changed, 5 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 30 tasks, 6,114 yd on foot; ends at level 50.3
+  everyone (quests that depend on other zones): 11 more tasks; their whole route comes to 6,643 yd; ends at level 50.3
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (17)
+------------------------
+Start to finish here: 7 (7 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Petty Squabbles [2783, level 57] -> Swamp of Sorrows
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Mazen's Behest [1364, level 41] <- Stormwind City
+  Deliver the Shipment [1425, level 42] <- Swamp of Sorrows
+  Supplies for Nethergarde [1395, level 45] <- Duskwood
+  Thadius Grimshade [2990, level 47] <- The Hinterlands
+  Kirith [2721, level 58] <- Swamp of Sorrows
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Nekrum's Medallion [2991, level 47] - needs one of Thadius Grimshade [2990]
+  The Divination [2992, level 47] - needs one of Nekrum's Medallion [2991]
+  Return to the Hinterlands [2993, level 47] - needs one of The Divination [2992] -> The Hinterlands
+  The Cover of Darkness [2743, level 60] - needs one of Kirith [2721] -> Swamp of Sorrows
+
+Worth checking in game
+----------------------
+
+Not planned (3)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  The Prison's Bindings [7581, level 60]: needs level 60; this part gets Warlock characters to about 50.3
+  The Prison's Casing [7582, level 60]: needs level 60; this part gets Warlock characters to about 50.3
+  Suppression [7583, level 60]: needs level 60; this part gets Warlock characters to about 50.3
+
+Left out (10)
+-------------
+repeatable (8):
+  The Lost Supplies [1423], Kum'isha's Endeavors [2522], Rage of Ages [2582], Spirit of the Boar [2584], Salt of the Scorpok [2586], Infallible Mind [2602], Spiritual Domination [2604], One Draenei's Junk... [3502]
+dungeon quest (1):
+  Ragnar Thunderbrew [4128]
+special category (sort -366) (1):
+  Bellowrage the Elder [8647]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

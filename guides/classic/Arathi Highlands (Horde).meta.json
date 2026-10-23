@@ -1,0 +1,397 @@
+{
+  "zone": "Arathi Highlands",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "32-42 Arathi Highlands",
+  "file": "Arathi Highlands (Horde).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 32,
+      "end": 32.37,
+      "next": 35,
+      "guide": "32-33 Arathi Highlands: around Tor\u0027gan",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Tor\u0027gan",
+          "guide": "32-33 Arathi Highlands: around Tor\u0027gan",
+          "level": 32,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 35,
+      "end": 35.45,
+      "next": 38,
+      "guide": "35-36 Arathi Highlands: around Tor\u0027gan",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Tor\u0027gan",
+          "guide": "35-36 Arathi Highlands: around Tor\u0027gan",
+          "level": 35,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 38,
+      "end": 38.47,
+      "next": 41,
+      "guide": "38-39 Arathi Highlands: around Zengu",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "around Zengu",
+          "guide": "38-39 Arathi Highlands: around Zengu",
+          "level": 38,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "start": 41,
+      "end": 41.06,
+      "next": 44,
+      "guide": "41-42 Arathi Highlands",
+      "sections": [
+        {
+          "label": "RBSection4_1",
+          "name": "part 4",
+          "guide": "41-42 Arathi Highlands",
+          "level": 41,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "start": 44,
+      "end": 44.08,
+      "guide": "44-45 Arathi Highlands",
+      "sections": [
+        {
+          "label": "RBSection5_1",
+          "name": "part 5",
+          "guide": "44-45 Arathi Highlands",
+          "level": 44,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 638,
+      "level": 37,
+      "req": 32,
+      "xp": 710,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Stranglethorn Vale"
+    },
+    {
+      "id": 655,
+      "level": 34,
+      "req": 29,
+      "xp": 270,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 670,
+      "level": 40,
+      "req": 35,
+      "xp": 3150,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Stranglethorn Vale"
+    },
+    {
+      "id": 671,
+      "level": 33,
+      "req": 30,
+      "xp": 2650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 672,
+      "level": 34,
+      "req": 29,
+      "xp": 2700,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 674,
+      "level": 34,
+      "req": 29,
+      "xp": 270,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 675,
+      "level": 34,
+      "req": 29,
+      "xp": 270,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 676,
+      "level": 32,
+      "req": 30,
+      "xp": 2550,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Hillsbrad Foothills"
+    },
+    {
+      "id": 677,
+      "level": 32,
+      "req": 30,
+      "xp": 2550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 639,
+      "level": 37,
+      "req": 32,
+      "xp": 2850,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 642,
+      "level": 37,
+      "req": 30,
+      "xp": 2850,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 651,
+      "level": 38,
+      "req": 30,
+      "xp": 2850,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 663,
+      "level": 35,
+      "req": 35,
+      "xp": 690,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 678,
+      "level": 38,
+      "req": 30,
+      "xp": 2850,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 701,
+      "level": 37,
+      "req": 29,
+      "xp": 2850,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 702,
+      "level": 37,
+      "req": 29,
+      "xp": 285,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 847,
+      "level": 37,
+      "req": 29,
+      "xp": 2850,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 640,
+      "level": 40,
+      "req": 32,
+      "xp": 3150,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 641,
+      "level": 40,
+      "req": 32,
+      "xp": 315,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 643,
+      "level": 41,
+      "req": 32,
+      "xp": 3300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 662,
+      "level": 40,
+      "req": 35,
+      "xp": 3150,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 664,
+      "level": 40,
+      "req": 35,
+      "xp": 3150,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 665,
+      "level": 40,
+      "req": 35,
+      "xp": 3150,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 666,
+      "level": 40,
+      "req": 35,
+      "xp": 3900,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 668,
+      "level": 40,
+      "req": 35,
+      "xp": 1550,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 673,
+      "level": 40,
+      "req": 35,
+      "xp": 3150,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 679,
+      "level": 40,
+      "req": 30,
+      "xp": 3150,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 680,
+      "level": 40,
+      "req": 30,
+      "xp": 3900,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 652,
+      "level": 42,
+      "req": 30,
+      "xp": 3450,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 688,
+      "level": 40,
+      "req": 30,
+      "xp": 2350,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 644,
+      "level": 42,
+      "req": 32,
+      "xp": 3450,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 645,
+      "level": 42,
+      "req": 32,
+      "xp": 860,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 646,
+      "level": 42,
+      "req": 32,
+      "xp": 4300,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Stranglethorn Vale": 1,
+    "Badlands": 1
+  }
+}

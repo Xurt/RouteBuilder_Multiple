@@ -1,0 +1,223 @@
+Ashenvale - Horde - part 1 of 4, planned from level 19
+Guide "19-30 Ashenvale" in group "Zone Routes (Horde)": this part has 14 steps, 6 stops
+Written to guides/classic/Ashenvale (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 19. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 4 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed, 41 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 729 yd on foot; ends at level 19.2
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 8,176 yd; ends at level 19.2
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+7 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  The Ashenvale Hunt [235, level 20] <- Orgrimmar
+  The Ashenvale Hunt [742, level 20] <- Thunder Bluff
+  The Ashenvale Hunt [6382, level 20] <- The Barrens
+
+Worth checking in game
+----------------------
+
+Put off to a later part (18)
+----------------------------
+These need a higher level than this part ends at:
+  Sharptalon's Claw [2, level 30]: needs level 20; this part gets you to about 19.3
+  Ursangous's Paw [23, level 24]: needs level 20; this part gets you to about 19.3
+  Shadumbra's Head [24, level 27]: needs level 20; this part gets you to about 19.3
+  Stonetalon Standstill [25, level 25]: needs level 23; this part gets you to about 20.6
+  Between a Rock and a Thistlefur [216, level 24]: needs level 21; this part gets you to about 20.6
+  The Hunt Completed [247, level 30]: needs level 20; this part gets you to about 19.3
+  Je'neu of the Earthen Ring [824, level 27]: needs level 23; this part gets you to about 20.6
+  The Befouled Element [1918, level 27]: needs level 23; this part gets you to about 20.6
+  The Ashenvale Hunt [6383, level 20]: needs level 20; this part gets you to about 19.3
+  Satyr Horns [6441, level 26]: its mobs are level 25; this part gets you to about 20.6
+  Troll Charm [6462, level 24]: is a level 24 quest; this part gets you to about 20.6
+  Freedom to Ruul [6482, level 24]: is a level 24 quest; this part gets you to about 20.6
+  Ashenvale Outrunners [6503, level 24]: its mobs are level 23; this part gets you to about 20.6
+  The Lost Pages [6504, level 30]: needs level 23; this part gets you to about 20.6
+  Torek's Assault [6544, level 24]: is a level 24 quest; this part gets you to about 20.6
+  Warsong Supplies [6571, level 27]: its mobs are level 34; this part gets you to about 20.6
+  King of the Foulweald [6621, level 26]: its mobs are level 26; this part gets you to about 20.6
+  Vorsha the Lasher [6641, level 23]: needs level 20; this part gets you to about 19.3
+
+Left out (12)
+-------------
+dungeon quest (6):
+  Trouble in the Deeps [6562], The Essence of Aku'Mai [6563], Allegiance to the Old Gods [6564], Allegiance to the Old Gods [6565], Amongst the Ruins [6921], Baron Aquanis [6922]
+repeatable (4):
+  Warsong Runner Update [6545], Warsong Outrider Update [6546], Warsong Scout Update [6547], Warsong Saw Blades [6581]
+special category (sort -1) (1):
+  Shrouded in Nightmare [8446]
+special category (sort -366) (1):
+  Riversong the Elder [8725]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Ashenvale - Horde - part 2 of 4, planned from level 22
+Guide "19-30 Ashenvale" in group "Zone Routes (Horde)": this part has 31 steps, 29 stops
+Written to guides/classic/Ashenvale (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 22. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 23 steps kept, 5 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 20 tasks, 18,370 yd on foot; ends at level 22.6
+  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 18,805 yd; ends at level 22.6; 3 ORDER PROBLEMS
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (11)
+------------------------
+Start to finish here: 6 (6 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Ursangous's Paw [23, level 24] - needs one of The Ashenvale Hunt [6383]
+  Shadumbra's Head [24, level 27] - needs one of The Ashenvale Hunt [6383]
+  Sharptalon's Claw [2, level 30] - needs one of The Ashenvale Hunt [6383]
+  The Hunt Completed [247, level 30] - needs Sharptalon's Claw [2], Ursangous's Paw [23], Shadumbra's Head [24]
+
+Worth checking in game
+----------------------
+No objectives in the database (the hand-in step warns about it; add "objectives" for these to the zone file):
+  The Ashenvale Hunt [6383, level 20]
+1 quests have no experience figure in the database: their experience is estimated, and 1 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  The Ashenvale Hunt [6383]
+
+Put off to a later part (7)
+---------------------------
+These need a higher level than this part ends at:
+  Stonetalon Standstill [25, level 25]: needs level 23; this part gets you to about 23.1
+  Je'neu of the Earthen Ring [824, level 27]: needs level 23; this part gets you to about 23.1
+  The Befouled Element [1918, level 27]: needs level 23; this part gets you to about 23.1
+  Satyr Horns [6441, level 26]: its mobs are level 25; this part gets you to about 22.8
+  The Lost Pages [6504, level 30]: needs level 23; this part gets you to about 23.1
+  Warsong Supplies [6571, level 27]: its mobs are level 34; this part gets you to about 23.1
+  King of the Foulweald [6621, level 26]: its mobs are level 26; this part gets you to about 23.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Ashenvale - Horde - part 3 of 4, planned from level 25
+Guide "19-30 Ashenvale" in group "Zone Routes (Horde)": this part has 18 steps, 15 stops
+Written to guides/classic/Ashenvale (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 25. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 12 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 15 tasks, 13,197 yd on foot; ends at level 25.4
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 13,228 yd; ends at level 25.4
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (7)
+-----------------------
+Start to finish here: 5 (5 for everyone)
+
+Hand-in step only shows once complete (1):
+  The Lost Pages [6504, level 30] - needs Shredder Operating Manual - Chapter 1 (1) (an unknown place); Shredder Operating Manual - Chapter 2 (1) (an unknown place); Shredder Operating Manual - Chapter 3 (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  The Ashenvale Hunt [6383, level 20] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+  Stonetalon Standstill [25, level 25]: "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost." is assumed to be line 2 in the quest log; check it
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  Warsong Supplies [6571, level 27]: its mobs are level 34; this part gets you to about 25.5
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Ashenvale - Horde - part 4 of 4, planned from level 32
+Guide "19-30 Ashenvale" in group "Zone Routes (Horde)": this part has 8 steps, 7 stops
+Written to guides/classic/Ashenvale (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 32. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 4 tasks, 1,397 yd on foot; ends at level 32.0; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 2,947 yd; ends at level 32.0; 3 ORDER PROBLEMS; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (3)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Hand-in step only shows once complete (1):
+  Warsong Supplies [6571, level 27] - needs Warsong Axe Shipment (1) (Stranglethorn Vale)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  The Ashenvale Hunt [6383, level 20] <- your earlier visit to this zone
+  The Lost Pages [6504, level 30] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

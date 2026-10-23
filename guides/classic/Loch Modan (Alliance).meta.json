@@ -1,0 +1,358 @@
+{
+  "zone": "Loch Modan",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "10-23 Loch Modan",
+  "file": "Loch Modan (Alliance).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 10,
+      "end": 12.02,
+      "next": 15,
+      "guide": "10-12 Loch Modan: around Mountaineer Kadrell",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Mountaineer Kadrell",
+          "guide": "10-12 Loch Modan: around Mountaineer Kadrell",
+          "level": 10,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 15,
+      "end": 15.59,
+      "next": 18,
+      "guide": "15-16 Loch Modan",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "15-16 Loch Modan",
+          "level": 15,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 18,
+      "end": 18.49,
+      "next": 21,
+      "guide": "18-19 Loch Modan",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "18-19 Loch Modan",
+          "level": 18,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "start": 21,
+      "end": 21.08,
+      "guide": "21-22 Loch Modan",
+      "sections": [
+        {
+          "label": "RBSection4_1",
+          "name": "part 4",
+          "guide": "21-22 Loch Modan",
+          "level": 21,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 224,
+      "level": 12,
+      "req": 10,
+      "xp": 910,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 237,
+      "level": 15,
+      "req": 10,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 267,
+      "level": 12,
+      "req": 10,
+      "xp": 910,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 274,
+      "level": 18,
+      "req": 16,
+      "xp": 340,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Wetlands"
+    },
+    {
+      "id": 298,
+      "level": 15,
+      "req": 10,
+      "xp": 270,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 302,
+      "level": 15,
+      "req": 10,
+      "xp": 270,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 307,
+      "level": 15,
+      "req": 9,
+      "xp": 1350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 353,
+      "level": 15,
+      "req": 9,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 385,
+      "level": 15,
+      "req": 10,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 414,
+      "level": 10,
+      "req": 8,
+      "xp": 630,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 416,
+      "level": 11,
+      "req": 10,
+      "xp": 880,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 418,
+      "level": 11,
+      "req": 7,
+      "xp": 880,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1339,
+      "level": 15,
+      "req": 9,
+      "xp": 540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2039,
+      "level": 15,
+      "req": 12,
+      "xp": 270,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 6387,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf/Gnome"
+    },
+    {
+      "id": 6392,
+      "level": 10,
+      "req": 10,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf/Gnome",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 217,
+      "level": 17,
+      "req": 10,
+      "xp": 1600,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 257,
+      "level": 16,
+      "req": 11,
+      "xp": 880,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 258,
+      "level": 17,
+      "req": 11,
+      "xp": 950,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 263,
+      "level": 15,
+      "req": 10,
+      "xp": 1050,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 436,
+      "level": 18,
+      "req": 13,
+      "xp": 340,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2038,
+      "level": 15,
+      "req": 12,
+      "xp": 1050,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 199,
+      "level": 18,
+      "req": 16,
+      "xp": 1350,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 250,
+      "level": 18,
+      "req": 16,
+      "xp": 680,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 255,
+      "level": 19,
+      "req": 15,
+      "xp": 1800,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 271,
+      "level": 20,
+      "req": 15,
+      "xp": 780,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 297,
+      "level": 18,
+      "req": 13,
+      "xp": 1350,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 531,
+      "level": 20,
+      "req": 15,
+      "xp": 1550,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 256,
+      "level": 22,
+      "req": 17,
+      "xp": 1750,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 468,
+      "level": 21,
+      "req": 19,
+      "xp": 165,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Dun Morogh": 3,
+    "Elwynn Forest": 1,
+    "Wetlands": 2
+  }
+}
