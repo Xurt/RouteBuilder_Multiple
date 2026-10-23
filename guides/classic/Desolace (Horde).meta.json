@@ -1,0 +1,258 @@
+{
+  "zone": "Desolace",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "31-39 Desolace",
+  "file": "Desolace (Horde).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 31,
+      "end": 31.15,
+      "next": 34,
+      "guide": "31-32 Desolace",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "31-32 Desolace",
+          "level": 31,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 34,
+      "end": 34.48,
+      "next": 37,
+      "guide": "34-35 Desolace",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "34-35 Desolace",
+          "level": 34,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 37,
+      "end": 37.33,
+      "guide": "37-38 Desolace",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "37-38 Desolace",
+          "level": 37,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 1362,
+      "level": 32,
+      "req": 30,
+      "xp": 640,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "The Barrens"
+    },
+    {
+      "id": 1367,
+      "level": 33,
+      "req": 30,
+      "xp": 660,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1368,
+      "level": 33,
+      "req": 30,
+      "xp": 660,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1432,
+      "level": 30,
+      "req": 30,
+      "xp": 1200,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Durotar"
+    },
+    {
+      "id": 5361,
+      "level": 35,
+      "req": 32,
+      "xp": 2050,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Thousand Needles"
+    },
+    {
+      "id": 5741,
+      "level": 33,
+      "req": 30,
+      "xp": 2650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6161,
+      "level": 36,
+      "req": 30,
+      "xp": 2800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1365,
+      "level": 35,
+      "req": 30,
+      "xp": 3450,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1366,
+      "level": 31,
+      "req": 30,
+      "xp": 3750,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5561,
+      "level": 34,
+      "req": 30,
+      "xp": 2000,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5821,
+      "level": 35,
+      "req": 30,
+      "xp": 2750,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6142,
+      "level": 35,
+      "req": 31,
+      "xp": 2750,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6143,
+      "level": 36,
+      "req": 32,
+      "xp": 2800,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5381,
+      "level": 38,
+      "req": 32,
+      "xp": 2850,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5386,
+      "level": 37,
+      "req": 32,
+      "xp": 2100,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5501,
+      "level": 39,
+      "req": 33,
+      "xp": 2250,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5581,
+      "level": 38,
+      "req": 32,
+      "xp": 3550,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5943,
+      "level": 38,
+      "req": 32,
+      "xp": 2850,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6027,
+      "level": 38,
+      "req": 30,
+      "xp": 3550,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6132,
+      "level": 39,
+      "req": 34,
+      "xp": 2250,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6134,
+      "level": 39,
+      "req": 34,
+      "xp": 2250,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Arathi Highlands": 1,
+    "Durotar": 1,
+    "Stranglethorn Vale": 1
+  }
+}

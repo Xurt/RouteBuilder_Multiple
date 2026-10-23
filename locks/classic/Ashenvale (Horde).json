@@ -1,0 +1,91 @@
+{
+  "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "19-30 Ashenvale",
+  "saved": "2026-10-23 14:17",
+  "levels": "RestedXP",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "turnin:742 @1440:-2554.65,2310.55  TurnIn The Ashenvale Hunt",
+        "turnin:235 @1440:-2554.65,2310.55  TurnIn The Ashenvale Hunt",
+        "turnin:6382 @1440:-2554.65,2310.55  TurnIn The Ashenvale Hunt",
+        {"lines":[".goto 1440/1,-2520.05,2305.55",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vhulgra|r",".fp Splintertree Post >> Get the Splintertree Post flight path",".target Vhulgra"],"tag":"Hunter","from":"RestedXP: 17-22 Stonetalon/Barrens/Ashenvale"},
+        {"lines":[".goto 1440/1,1073.74,3635.49,50,0",".goto 1440/1,1052.40,3683.92,50,0",".goto 1440/1,1017.80,3683.15,50,0",".goto 1440/1,978.59,3746.96,50,0",".goto 1440/1,882.29,3749.26,50,0",".goto 1440/1,843.65,3785.78,50,0",".goto 1440/1,885.17,3874.57,50,0",".goto 1440/1,850.57,3921.08,50,0",".goto 1440/1,858.64,3984.89,50,0",".goto 1440/1,928.42,4042.93,50,0",".goto 1440/1,914.58,4116.34,50,0",".goto 1440/1,884.02,4084.44,50,0",".goto 1440/1,784.25,4080.21,50,0",".goto 1440/1,811.93,4021.02,50,0",".goto 1440/1,822.31,3949.91,50,0",".goto 1440/1,815.97,3874.19,50,0",".goto 1440/1,815.97,3807.69,50,0",".goto 1440/1,816.55,3715.82,50,0",".goto 1440/1,848.84,3691.99,50,0",".goto 1440/1,856.91,3654.71,50,0",".goto 1440/1,862.68,3587.06,50,0",".goto 1440/1,918.62,3544.39,50,0",".goto 1440/1,984.36,3552.46,50,0",".goto 1440/1,1052.98,3479.82,50,0",".goto 1440/1,1101.42,3535.17,50,0",".goto 1440/1,1065.09,3574.76,50,0",".xp 21 >> Grind to level 21"],"from":"RestedXP: 17-22 Stonetalon/Barrens/Ashenvale"},
+        {"lines":[".goto 1440/1,994.16,3373.73",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Andruk|r",".fp Zoram'gar Outpost >> Get the Zoram'gar Outpost flight path",".target Andruk"],"from":"RestedXP: 17-22 Stonetalon/Barrens/Ashenvale"},
+        "accept:6442 @1440:1025.88,3331.06  Accept Naga at the Zoram Strand",
+        "obj:6442:1 @1440:1097.96,3688.53  Objective Naga at the Zoram Strand / Wrathtail Head (20)",
+        {"lines":[".goto 1440/1,1073.74,3635.49,50,0",".goto 1440/1,1052.40,3683.92,50,0",".goto 1440/1,1017.80,3683.15,50,0",".goto 1440/1,978.59,3746.96,50,0",".goto 1440/1,882.29,3749.26,50,0",".goto 1440/1,843.65,3785.78,50,0",".goto 1440/1,885.17,3874.57,50,0",".goto 1440/1,850.57,3921.08,50,0",".goto 1440/1,858.64,3984.89,50,0",".goto 1440/1,928.42,4042.93,50,0",".goto 1440/1,914.58,4116.34,50,0",".goto 1440/1,884.02,4084.44,50,0",".goto 1440/1,784.25,4080.21,50,0",".goto 1440/1,811.93,4021.02,50,0",".goto 1440/1,822.31,3949.91,50,0",".goto 1440/1,815.97,3874.19,50,0",".goto 1440/1,815.97,3807.69,50,0",".goto 1440/1,816.55,3715.82,50,0",".goto 1440/1,848.84,3691.99,50,0",".goto 1440/1,856.91,3654.71,50,0",".goto 1440/1,862.68,3587.06,50,0",".goto 1440/1,918.62,3544.39,50,0",".goto 1440/1,984.36,3552.46,50,0",".goto 1440/1,1052.98,3479.82,50,0",".goto 1440/1,1101.42,3535.17,50,0",".goto 1440/1,1065.09,3574.76,50,0",".xp 21+21450 >> Grind to 21450+/25200 xp"],"from":"RestedXP: 17-22 Stonetalon/Barrens/Ashenvale"},
+        "turnin:6442 @1440:1025.88,3331.06  TurnIn Naga at the Zoram Strand",
+        {"lines":[".goto 1440/1,-2520.05,2305.55",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vhulgra|r",".fp Splintertree Post >> Get the Splintertree Post flight path",".target Vhulgra"],"tag":"!Hunter","from":"RestedXP: 26-28 Ashenvale"},
+        {"lines":[".goto 1440/1,-2066.21,2187.93,0",".goto 1440/1,-2285.92,2195.62,0",".goto 1440/1,-2285.92,2195.62,50,0",".goto 1440/1,-2255.36,2346.29,50,0",".goto 1440/1,-2141.75,2258.66,50,0",".goto 1440/1,-2066.21,2187.93,50,0",".train 16830 >>|cRXP_WARN_Cast|r |T132164:0|t[Tame Beast] |cRXP_WARN_on a |cRXP_ENEMY_Elder Ashenvale Bear|r. Attack mobs with it to learn|r |T132140:0|t[Claw (Rank 4)]",".train 17264 >>|cRXP_WARN_Cast|r |T132164:0|t[Tame Beast] |cRXP_WARN_on a |cRXP_ENEMY_Ghostpaw Alpha|r. Attack mobs with it to learn|r |T132278:0|t[Bite (Rank 4)]",".xp <27,1"],"tag":"Hunter","from":"RestedXP: 26-28 Ashenvale"},
+        {"lines":[".goto 1440/1,-2066.21,2187.93,0",".goto 1440/1,-2255.36,2346.29,50,0",".goto 1440/1,-2141.75,2258.66,50,0",".goto 1440/1,-2066.21,2187.93,50,0",".train 16830 >>|cRXP_WARN_Cast|r |T132164:0|t[Tame Beast] |cRXP_WARN_on a |cRXP_ENEMY_Elder Ashenvale Bear|r. Attack mobs with it to learn|r |T132140:0|t[Claw (Rank 4)]",".xp >26,1"],"tag":"Hunter","from":"RestedXP: 26-28 Ashenvale"}
+      ]
+    },
+    {
+      "part": 2,
+      "steps": [
+        "accept:6544 @1440:-2240.94,1778.57  Accept Torek's Assault",
+        "obj:6544:1 @1440:-2028.15,1776.65  Objective Torek's Assault / Take Silverwing Outpost.",
+        "accept:6503 @1440:-2400.68,2054.55  Accept Ashenvale Outrunners",
+        "turnin:6544 @1440:-2511.4,2271.73  TurnIn Torek's Assault",
+        "accept:6383 @1440:-2554.65,2310.55  Accept The Ashenvale Hunt",
+        "obj:6503:1 @1440:-2635.96,1960.77  Objective Ashenvale Outrunners / Ashenvale Outrunner slain (9)",
+        "item:23 @1440:-592.83,2166.41  ItemAccept Ursangous's Paw",
+        "accept:216 @1440:1013.77,3345.29  Accept Between a Rock and a Thistlefur",
+        "accept:6462 @1440:1028.18,3333.37  Accept Troll Charm",
+        "accept:6641 @1440:1004.54,3341.83  Accept Vorsha the Lasher",
+        "obj:6641:1 @1440:1146.98,3612.81  Objective Vorsha the Lasher / Defeat Vorsha the Lasher",
+        "turnin:6641 @1440:995.31,3357.59  TurnIn Vorsha the Lasher",
+        "obj:6462:1 @1440:-656.26,3379.88  Objective Troll Charm / Troll Charm (8)",
+        "accept:6482 @1440:-694.9,3347.21  Accept Freedom to Ruul",
+        "obj:6482:1 @1440:-521.9,3238.43  Objective Freedom to Ruul / Escort Ruul from the Thistlefurs.",
+        "obj:216:2 @1440:-254.32,3179.62  Objective Between a Rock and a Thistlefur / Thistlefur Shaman slain (8)",
+        "obj:216:1 @1440:-457.89,3355.66  Objective Between a Rock and a Thistlefur / Thistlefur Avenger slain (8)",
+        "item:24 @1440:-1615.83,2518.49  ItemAccept Shadumbra's Head",
+        "turnin:6503 @1440:-2400.68,2054.55  TurnIn Ashenvale Outrunners",
+        "item:2 @1440:-2623.85,1979.99  ItemAccept Sharptalon's Claw",
+        "turnin:2 @1440:-2554.65,2310.55  TurnIn Sharptalon's Claw",
+        "turnin:24 @1440:-2554.65,2310.55  TurnIn Shadumbra's Head",
+        "turnin:23 @1440:-2554.65,2310.55  TurnIn Ursangous's Paw",
+        "accept:247 @1440:-2554.65,2310.55  Accept The Hunt Completed",
+        "turnin:247 @1440:-2554.65,2310.55  TurnIn The Hunt Completed",
+        "turnin:6482 @1440:-2573.68,2331.3  TurnIn Freedom to Ruul",
+        "turnin:216 @1440:1013.77,3345.29  TurnIn Between a Rock and a Thistlefur",
+        "turnin:6462 @1440:1028.18,3333.37  TurnIn Troll Charm"
+      ]
+    },
+    {
+      "part": 3,
+      "steps": [
+        "turnin:6383 @1440:-2554.65,2310.55  TurnIn The Ashenvale Hunt",
+        "accept:25 @1440:-2548.3,2366.67  Accept Stonetalon Standstill",
+        "accept:6441 @1440:-2513.13,2309.78  Accept Satyr Horns",
+        "accept:6504 @1440:-2337.24,1937.7  Accept The Lost Pages",
+        "obj:25:2 @1440:-1121.05,1999.2  Objective Stonetalon Standstill / Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+        "item:1918 @1440:-952.67,1982.29  ItemAccept The Befouled Element",
+        "obj:25:1 @1440:-1242.15,1930.4  Objective Stonetalon Standstill / Befouled Water Elemental slain (12)",
+        "obj:6441:1 @1440:-2181.54,2573.08  Objective Satyr Horns / Satyr Horns (16)",
+        "turnin:6441 @1440:-2513.13,2309.78  TurnIn Satyr Horns",
+        "turnin:25 @1440:-2548.3,2366.67  TurnIn Stonetalon Standstill",
+        "turnin:1918 @1440:-2548.3,2366.67  TurnIn The Befouled Element",
+        "accept:824 @1440:-2548.3,2366.67  Accept Je'neu of the Earthen Ring",
+        "turnin:824 @1440:1033.37,3354.89  TurnIn Je'neu of the Earthen Ring",
+        "accept:6621 @1440:1013.77,3345.29  Accept King of the Foulweald",
+        "obj:6621:1 @1440:-1558.17,2232.14  Objective King of the Foulweald / Murgut's Totem (1)",
+        "turnin:6621 @1440:1013.77,3345.29  TurnIn King of the Foulweald"
+      ]
+    },
+    {
+      "part": 4,
+      "steps": [
+        "accept:6571 @1440:-2417.4,2073.39  Accept Warsong Supplies",
+        "obj:6571:1 @1440:-2513.13,2309.78  Objective Warsong Supplies / Warsong Saw Blades (1)",
+        "obj:6571:3 @1440:-2155.02,2476.6  Objective Warsong Supplies / Warsong Oil (1)",
+        "obj:6571:4 @1440:-1436.49,2274.03  Objective Warsong Supplies / Logging Rope (1)",
+        "turnin:6383 @1440:-2554.65,2310.55  TurnIn The Ashenvale Hunt",
+        "turnin:6504 @1440:-2337.24,1937.7  TurnIn The Lost Pages"
+      ]
+    }
+  ]
+}

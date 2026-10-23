@@ -1,0 +1,159 @@
+Searing Gorge - Alliance - part 1 of 3, planned from level 45
+Guide "45-52 Searing Gorge" in group "Zone Routes (Alliance)": this part has 30 steps, 23 stops
+Written to guides/classic/Searing Gorge (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 45. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 25 steps kept, 4 new ones slotted in, 2 moved because their prerequisites changed, 34 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 31 tasks, 8,502 yd on foot; ends at level 45.3; at its hardest you are 3.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (11)
+------------------------
+Start to finish here: 8 (8 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Ledger from Tanaris [4450, level 46] -> Tanaris
+  The Horn of the Beast [3181, level 48] -> Loch Modan
+  Suntara Stones [3368, level 48] -> Ironforge
+
+Worth checking in game
+----------------------
+
+Put off to a later part (15)
+----------------------------
+These need a higher level than this part ends at:
+  Release Them [3372, level 52]: is a level 52 quest; this part gets you to about 45.8
+  Prayer to Elune [3377, level 50]: is a level 50 quest; this part gets you to about 45.8
+  Prayer to Elune [3378, level 50]: its mobs are level 48; this part gets you to about 45.8
+  The Flame's Casing [3452, level 50]: its mobs are level 48; this part gets you to about 45.8
+  The Torch of Retribution [3453, level 50]: is a level 50 quest; this part gets you to about 45.8
+  The Torch of Retribution [3454, level 50]: follows The Torch of Retribution [3453]
+  Squire Maltrake [3462, level 50]: follows The Torch of Retribution [3454]
+  Set Them Ablaze! [3463, level 52]: is a level 52 quest; this part gets you to about 45.8
+  Trinkets... [3481, level 50]: follows Set Them Ablaze! [3463]
+  Rise, Obsidion! [3566, level 52]: its mobs are level 52; this part gets you to about 45.8
+  WANTED: Overseer Maltorius [7701, level 50]: its mobs are level 50; this part gets you to about 45.8
+  What the Flux? [7722, level 50]: is a level 50 quest; this part gets you to about 45.8
+  Curse These Fat Fingers [7723, level 49]: its mobs are level 48; this part gets you to about 45.8
+  Fiery Menace! [7724, level 49]: its mobs are level 48; this part gets you to about 45.8
+  Incendosaurs? Whateverosaur is More Like It [7727, level 49]: its mobs are level 48; this part gets you to about 45.8
+
+Left out (13)
+-------------
+needs a profession (4):
+  Shadoweaver [3379], The Undermarket [3385], The Undermarket [3402], Elemental Leatherworking [5144]
+repeatable (4):
+  Restoring Fiery Flux Supplies via Kingsblood [7736], Gaining Acceptance [7737], Restoring Fiery Flux Supplies via Iron [8241], Restoring Fiery Flux Supplies via Heavy Leather [8242]
+above this zone's range of 45-54 (2):
+  Dwarven Justice [3371], Secrets of the Colossus - Regal [8858]
+handed in here, but the database does not say where it starts (1):
+  Look at the Size of It! [7704]
+dungeon quest (1):
+  Attunement to the Core [7848]
+special category (sort -366) (1):
+  Ironband the Elder [8651]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Searing Gorge - Alliance - part 2 of 3, planned from level 48
+Guide "45-52 Searing Gorge" in group "Zone Routes (Alliance)": this part has 26 steps, 24 stops
+Written to guides/classic/Searing Gorge (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 7 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+3 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 48. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 24 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 30 tasks, 2,457 yd on foot; ends at level 48.3; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (11)
+------------------------
+Start to finish here: 10 (10 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Prayer to Elune [3378, level 50] -> Darnassus
+
+Worth checking in game
+----------------------
+
+Put off to a later part (4)
+---------------------------
+These need a higher level than this part ends at:
+  Release Them [3372, level 52]: is a level 52 quest; this part gets you to about 48.4
+  Set Them Ablaze! [3463, level 52]: is a level 52 quest; this part gets you to about 48.4
+  Trinkets... [3481, level 50]: follows Set Them Ablaze! [3463]
+  Rise, Obsidion! [3566, level 52]: its mobs are level 52; this part gets you to about 48.4
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Searing Gorge - Alliance - part 3 of 3, planned from level 51
+Guide "45-52 Searing Gorge" in group "Zone Routes (Alliance)": this part has 16 steps, 14 stops
+Written to guides/classic/Searing Gorge (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 51. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 8 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 8 tasks, 1,073 yd on foot; ends at level 51.1
+  everyone (quests that depend on other zones): 6 more tasks; their whole route comes to 1,845 yd; ends at level 51.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Release Them [3372, level 52] - needs one of Dwarven Justice [3371]
+  Rise, Obsidion! [3566, level 52] - needs one of Release Them [3372] -> Ironforge
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,201 @@
+Badlands - Alliance - part 1 of 3, planned from level 35
+Guide "35-45 Badlands" in group "Zone Routes (Alliance)": this part has 34 steps, 28 stops
+Written to guides/classic/Badlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 35. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 22 steps kept, 6 new ones slotted in, 1 moved because their prerequisites changed, 55 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 22 tasks, 6,964 yd on foot; ends at level 35.4; at its hardest you are 5.9 levels below the mobs
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 8,685 yd; ends at level 35.4; at its hardest you are 5.9 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (16)
+------------------------
+Start to finish here: 7 (7 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Crystal in the Mountains [635, level 35] -> Arathi Highlands
+
+Hand-in step only shows once complete (2):
+  Pearl Diving [705, level 37] - needs Blue Pearl (9) (Stranglethorn Vale)
+  Coolant Heads Prevail [713, level 37] - needs Frost Oil (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Martek the Exiled [1106, level 35] <- Thousand Needles
+  Find Agmond [738, level 38] <- Loch Modan
+  Theldurin the Lost [687, level 40] <- Ironforge
+  Forbidden Knowledge [737, level 40] <- Ironforge
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Gyro... What? [714, level 37] - needs one of Coolant Heads Prevail [713]
+  Liquid Stone [715, level 37] - needs one of Gyro... What? [714]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (19)
+----------------------------
+These need a higher level than this part ends at:
+  The Lost Fragments [692, level 41]: its mobs are level 42; this part gets you to about 35.8
+  Fiery Blaze Enchantments [706, level 45]: needs level 40; this part gets you to about 35.8
+  Solution to Doom [709, level 40]: is a level 40 quest; this part gets you to about 35.8
+  Study of the Elements: Rock [710, level 37]: its mobs are level 38; this part gets you to about 35.8
+  Study of the Elements: Rock [711, level 39]: its mobs are level 39; this part gets you to about 35.8
+  Study of the Elements: Rock [712, level 42]: its mobs are level 43; this part gets you to about 35.8
+  Stone Is Better than Cloth [716, level 42]: follows Study of the Elements: Rock [712]
+  Amulet of Secrets [722, level 40]: its mobs are level 38; this part gets you to about 35.8
+  Prospect of Faith [723, level 40]: follows Amulet of Secrets [722]
+  Prospect of Faith [724, level 40]: follows Prospect of Faith [723]
+  To Ironforge for Yagyin's Digest [727, level 40]: follows Solution to Doom [709]
+  Tremors of the Earth [732, level 43]: needs level 40; this part gets you to about 35.8
+  This Is Going to Be Hard [734, level 42]: follows Study of the Elements: Rock [712]
+  Murdaloc [739, level 42]: its mobs are level 42; this part gets you to about 35.8
+  This Is Going to Be Hard [777, level 42]: follows This Is Going to Be Hard [734]
+  This Is Going to Be Hard [778, level 45]: its mobs are level 45; this part gets you to about 35.8
+  Indurium [1108, level 39]: its mobs are level 39; this part gets you to about 35.8
+  News for Fizzle [1137, level 38]: follows Indurium [1108]
+  The Shattered Necklace [2198, level 41]: needs level 37; this part gets you to about 35.8
+
+Left out (4)
+------------
+above this zone's range of 35-47 (2):
+  Summoning the Princess [656], Tremors of the Earth [717]
+repeatable (1):
+  Seal of the Earth [779]
+needs a profession (1):
+  Flash Bomb Recipe [1559]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Badlands - Alliance - part 2 of 3, planned from level 38
+Guide "35-45 Badlands" in group "Zone Routes (Alliance)": this part has 23 steps, 20 stops
+Written to guides/classic/Badlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 38. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 21 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 16 tasks, 5,845 yd on foot; ends at level 38.2
+  everyone (quests that depend on other zones): 6 more tasks; their whole route comes to 6,551 yd; ends at level 38.2
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (11)
+------------------------
+Start to finish here: 5 (5 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Prospect of Faith [724, level 40] -> Ironforge
+  To Ironforge for Yagyin's Digest [727, level 40] -> Ironforge
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Pearl Diving [705, level 37] <- your earlier visit to this zone
+  Coolant Heads Prevail [713, level 37] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  News for Fizzle [1137, level 38] - needs one of Indurium [1108] -> Thousand Needles
+  Indurium [1108, level 39] - needs one of Martek the Exiled [1106]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (9)
+---------------------------
+These need a higher level than this part ends at:
+  The Lost Fragments [692, level 41]: its mobs are level 42; this part gets you to about 38.4
+  Fiery Blaze Enchantments [706, level 45]: needs level 40; this part gets you to about 38.4
+  Study of the Elements: Rock [712, level 42]: its mobs are level 43; this part gets you to about 38.4
+  Stone Is Better than Cloth [716, level 42]: follows Study of the Elements: Rock [712]
+  Tremors of the Earth [732, level 43]: needs level 40; this part gets you to about 38.4
+  This Is Going to Be Hard [734, level 42]: follows Study of the Elements: Rock [712]
+  Murdaloc [739, level 42]: its mobs are level 42; this part gets you to about 38.4
+  This Is Going to Be Hard [777, level 42]: follows This Is Going to Be Hard [734]
+  This Is Going to Be Hard [778, level 45]: its mobs are level 45; this part gets you to about 38.4
+
+Left out (1)
+------------
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  The Shattered Necklace [2198]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Badlands - Alliance - part 3 of 3, planned from level 41
+Guide "35-45 Badlands" in group "Zone Routes (Alliance)": this part has 27 steps, 25 stops
+Written to guides/classic/Badlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 41. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 24 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 10 tasks, 7,821 yd on foot; ends at level 41.1; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 14 more tasks; their whole route comes to 9,270 yd; ends at level 41.1; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (10)
+------------------------
+Start to finish here: 3 (3 for everyone)
+
+Hand-in step only shows once complete (1):
+  Stone Is Better than Cloth [716, level 42] - needs Patterned Bronze Bracers (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Pearl Diving [705, level 37] <- your earlier visit to this zone
+  Coolant Heads Prevail [713, level 37] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  The Lost Fragments [692, level 41] - needs one of Theldurin the Lost [687]
+  This Is Going to Be Hard [734, level 42] - needs Gyro... What? [714]
+  Murdaloc [739, level 42] - needs one of Find Agmond [738] -> Loch Modan
+  This Is Going to Be Hard [777, level 42] - needs one of This Is Going to Be Hard [734]
+
+Worth checking in game
+----------------------
+
+Not planned (1)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  This Is Going to Be Hard [778, level 45]: its mobs are level 45; this part gets you to about 41.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

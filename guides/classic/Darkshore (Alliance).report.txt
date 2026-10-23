@@ -1,0 +1,196 @@
+Darkshore - Alliance - part 1 of 3, planned from level 10
+Guide "10-22 Darkshore" in group "Zone Routes (Alliance)": this part has 130 steps, 93 stops
+Written to guides/classic/Darkshore (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 13 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+29 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 10. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 113 steps kept, 5 new ones slotted in, 8 moved because their prerequisites changed, 49 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 112 tasks, 31,408 yd on foot; ends at level 14.3; 3 hearths; at its hardest you are 4.4 levels below the mobs
+  Warrior: 1 more tasks; their whole route comes to 31,707 yd; ends at level 14.3; 3 hearths; at its hardest you are 4.4 levels below the mobs
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 31,662 yd; ends at level 14.3; 3 hearths; at its hardest you are 4.4 levels below the mobs
+  NightElf (quests that depend on other zones): 2 more tasks; their whole route comes to 31,662 yd; ends at level 14.3; 3 hearths; at its hardest you are 4.4 levels below the mobs
+  NightElf Druid (quests that depend on other zones): 8 more tasks; their whole route comes to 34,237 yd; ends at level 14.3; 3 hearths; at its hardest you are 4.4 levels below the mobs
+Hearthstone: set at Innkeeper Shaussiy (Innkeeper Shaussiy's inn); 4 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 10 for Elanaria (Warrior)
+19 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+5 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+5 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (51)
+------------------------
+Start to finish here: 39 (39 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Elanaria [1684, level 10, Warrior] -> Darnassus
+  One Shot. One Kill. [5713, level 15] -> Ashenvale
+  The Tower of Althalaxx [967, level 18] -> Ashenvale
+
+Hand-in step only shows once complete (1):
+  The Family and the Fishing Pole [1141, level 14] - needs Darkshore Grouper (6) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Flight to Auberdine [6342, level 10, NightElf] <- Teldrassil
+  Grove of the Ancients [952, level 11] <- Darnassus
+  Trouble In Darkshore? [730, level 14] <- Darnassus
+  The Principal Source [6122, level 14, NightElf Druid] <- Moonglade
+  The Corruption Abroad [3765, level 24] <- Stormwind City
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Return to Nessa [6343, level 10, NightElf] - needs one of Flight to Auberdine [6342] -> Teldrassil
+  Gathering the Cure [6123, level 14, NightElf Druid] - needs one of The Principal Source [6122]
+  Curing the Sick [6124, level 14, NightElf Druid] - needs one of Gathering the Cure [6123] -> Moonglade
+
+Worth checking in game
+----------------------
+  The Red Crystal [4811, level 14]: "Locate the large, red crystal on Darkshore's eastern mountain range" is assumed to be line 2 in the quest log; check it
+
+Put off to a later part (16)
+----------------------------
+These need a higher level than this part ends at:
+  The Absent Minded Prospector [729, level 20]: needs level 15; this part gets you to about 14.9
+  The Absent Minded Prospector [731, level 20]: is a level 20 quest; this part gets you to about 15.8
+  The Absent Minded Prospector [741, level 20]: follows The Absent Minded Prospector [731]
+  Therylune's Escape [945, level 18]: is a level 18 quest; this part gets you to about 14.9
+  Mathystra Relics [951, level 20]: is a level 20 quest; this part gets you to about 15.8
+  A Lost Master [986, level 20]: its mobs are level 17; this part gets you to about 14.9
+  Trek to Ashenvale [990, level 19]: follows Escape Through Force [994]
+  A Lost Master [993, level 20]: follows A Lost Master [986]
+  Escape Through Force [994, level 22]: is a level 22 quest; this part gets you to about 15.8
+  Fruit of the Sea [1138, level 17]: needs level 15; this part gets you to about 14.9
+  Gyromast's Revenge [2078, level 20]: its mobs are level 20; this part gets you to about 15.8
+  Gyromast's Retrieval [2098, level 20]: its mobs are level 19; this part gets you to about 15.8
+  Tharnariun's Hope [2139, level 18]: its mobs are level 18; this part gets you to about 15.8
+  WANTED: Murkdeep! [4740, level 18]: its mobs are level 19; this part gets you to about 15.8
+  The Blackwood Corrupted [4763, level 18]: needs level 15; this part gets you to about 14.9
+  The Sleeper Has Awakened [5321, level 20]: needs level 17; this part gets you to about 15.8
+
+Left out (13)
+-------------
+repeatable (3):
+  Onu is meditating [960], Onu is meditating [961], Seeking the Kor Gem [1442]
+above this zone's range of 10-24 (3):
+  The Tower of Althalaxx [981], The Tower of Althalaxx [1143], The Tower of Althalaxx [1167]
+needs a profession (3):
+  Gaffer Jacks [1579], Electropellers [1580], Easy Strider Living [2178]
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  The Powers Below [968]
+cannot be taken together with Escape Through Force [994], which is in the guide (1):
+  Escape Through Stealth [995]
+dungeon quest (1):
+  Researching the Corruption [1275]
+special category (sort -366) (1):
+  Starweave the Elder [8721]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Darkshore - Alliance - part 2 of 3, planned from level 17
+Guide "10-22 Darkshore" in group "Zone Routes (Alliance)": this part has 46 steps, 40 stops
+Written to guides/classic/Darkshore (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 9 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 17. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 39 steps kept, 4 new ones slotted in, 1 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 43 tasks, 17,387 yd on foot; ends at level 18.1; 1 hearth; at its hardest you are 2.7 levels below the mobs
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 17,427 yd; ends at level 18.1; 1 hearth; at its hardest you are 2.7 levels below the mobs
+Hearthstone: set at Innkeeper Shaussiy (Innkeeper Shaussiy's inn); 1 hearth step in the guide.
+3 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (15)
+------------------------
+Start to finish here: 11 (11 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Therylune's Escape [945, level 18] -> Ashenvale
+  The Absent Minded Prospector [741, level 20] -> Darnassus
+  The Sleeper Has Awakened [5321, level 20] -> Ashenvale
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  The Family and the Fishing Pole [1141, level 14] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+  Gyromast's Revenge [2078, level 20]: objective "Gelkak's First Mate (1)" is line 1 by the database, but RestedXP's guide has "Gyromast's Revenge (1)" there
+  The Sleeper Has Awakened [5321, level 20]: "Escort Kerlonian Evershade to Maestra's Post" is assumed to be line 2 in the quest log; check it
+  The Sleeper Has Awakened [5321, level 20]: objective "Escort Kerlonian Evershade to Maestra's Post" is line 2 by the database, but RestedXP's guide has "Horn of Awakening (1)" there
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  Trek to Ashenvale [990, level 19]: follows Escape Through Force [994]
+  Escape Through Force [994, level 22]: is a level 22 quest; this part gets you to about 18.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Darkshore - Alliance - part 3 of 3, planned from level 21
+Guide "10-22 Darkshore" in group "Zone Routes (Alliance)": this part has 6 steps, 5 stops
+Written to guides/classic/Darkshore (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 21. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 4 tasks, 1,941 yd on foot; ends at level 21.1
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 2,158 yd; ends at level 21.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (3)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Trek to Ashenvale [990, level 19] -> Ashenvale
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  The Family and the Fishing Pole [1141, level 14] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,276 @@
+{
+  "zone": "Eastern Plaguelands",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "55-60 Eastern Plaguelands",
+  "file": "Eastern Plaguelands (Alliance).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 55,
+      "end": 55.36,
+      "next": 58,
+      "guide": "55-56 Eastern Plaguelands: around Tirion Fordring",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Tirion Fordring",
+          "guide": "55-56 Eastern Plaguelands: around Tirion Fordring",
+          "level": 55,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 58,
+      "end": 58.07,
+      "guide": "58-59 Eastern Plaguelands",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "58-59 Eastern Plaguelands",
+          "level": 58,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 5142,
+      "level": 55,
+      "req": 50,
+      "xp": 2800,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Western Plaguelands"
+    },
+    {
+      "id": 5210,
+      "level": 56,
+      "req": 50,
+      "xp": 2900,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Western Plaguelands"
+    },
+    {
+      "id": 5211,
+      "level": 55,
+      "req": 50,
+      "xp": 5650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5245,
+      "level": 56,
+      "req": 53,
+      "xp": 5800,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Winterspring"
+    },
+    {
+      "id": 5281,
+      "level": 60,
+      "req": 55,
+      "xp": 6600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5462,
+      "level": 60,
+      "req": 57,
+      "xp": 4950,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Western Plaguelands"
+    },
+    {
+      "id": 5503,
+      "level": 55,
+      "req": 50,
+      "xp": 560,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5522,
+      "level": 60,
+      "req": 57,
+      "xp": 4950,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Burning Steppes"
+    },
+    {
+      "id": 5542,
+      "level": 56,
+      "req": 52,
+      "xp": 5800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5543,
+      "level": 56,
+      "req": 52,
+      "xp": 5800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5544,
+      "level": 56,
+      "req": 52,
+      "xp": 5800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5601,
+      "level": 55,
+      "req": 50,
+      "xp": 560,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Winterspring"
+    },
+    {
+      "id": 5721,
+      "level": 60,
+      "req": 55,
+      "xp": 8300,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Western Plaguelands"
+    },
+    {
+      "id": 5742,
+      "level": 56,
+      "req": 52,
+      "xp": 580,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5781,
+      "level": 57,
+      "req": 52,
+      "xp": 6000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5845,
+      "level": 58,
+      "req": 52,
+      "xp": 6200,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5944,
+      "level": 60,
+      "req": 52,
+      "xp": 9950,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Western Plaguelands"
+    },
+    {
+      "id": 6021,
+      "level": 55,
+      "req": 50,
+      "xp": 4200,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6030,
+      "level": 52,
+      "req": 50,
+      "xp": 2550,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Winterspring"
+    },
+    {
+      "id": 6164,
+      "level": 55,
+      "req": 50,
+      "xp": 1400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8859,
+      "level": 60,
+      "req": 51,
+      "xp": 9950,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Silithus"
+    },
+    {
+      "id": 8929,
+      "level": 60,
+      "req": 58,
+      "xp": 6600,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 6024,
+      "level": 60,
+      "req": 54,
+      "xp": 6600,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9664,
+      "level": 60,
+      "req": 55,
+      "xp": 6600,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Western Plaguelands": 5,
+    "Winterspring": 1
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "zone": "Moonglade",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "57-60 Moonglade",
+  "file": "Moonglade (Alliance).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 57,
+      "end": 57,
+      "guide": "57-60 Moonglade",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "57-60 Moonglade",
+          "level": 57,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 26,
+      "level": 16,
+      "req": 16,
+      "xp": 115,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Druid",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 5921,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Druid",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 6121,
+      "level": 14,
+      "req": 14,
+      "xp": 100,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Druid",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 6124,
+      "level": 14,
+      "req": 14,
+      "xp": 740,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Druid",
+      "from": "Darkshore"
+    },
+    {
+      "id": 6762,
+      "level": 55,
+      "req": 54,
+      "xp": 1400,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 6844,
+      "level": 57,
+      "req": 54,
+      "xp": 3000,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Silithus"
+    }
+  ],
+  "carriedTo": {
+    "Silithus": 1,
+    "Teldrassil": 3,
+    "Darkshore": 1,
+    "Un\u0027Goro Crater": 1
+  }
+}

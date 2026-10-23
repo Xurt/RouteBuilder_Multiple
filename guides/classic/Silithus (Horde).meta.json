@@ -1,0 +1,215 @@
+{
+  "zone": "Silithus",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "55-60 Silithus",
+  "file": "Silithus (Horde).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 55,
+      "end": 55.23,
+      "next": 58,
+      "guide": "55-56 Silithus: around Windcaller Proudhorn",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Windcaller Proudhorn",
+          "guide": "55-56 Silithus: around Windcaller Proudhorn",
+          "level": 55,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 58,
+      "end": 58.41,
+      "guide": "58-59 Silithus: around Commander Mar\u0027alith",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Commander Mar\u0027alith",
+          "guide": "58-59 Silithus: around Commander Mar\u0027alith",
+          "level": 58,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 1124,
+      "level": 55,
+      "req": 54,
+      "xp": 2800,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Moonglade"
+    },
+    {
+      "id": 8276,
+      "level": 55,
+      "req": 54,
+      "xp": 2800,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Durotar"
+    },
+    {
+      "id": 8277,
+      "level": 55,
+      "req": 54,
+      "xp": 5650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8280,
+      "level": 55,
+      "req": 54,
+      "xp": 5650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8281,
+      "level": 57,
+      "req": 54,
+      "xp": 6000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8284,
+      "level": 58,
+      "req": 54,
+      "xp": 6200,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8285,
+      "level": 59,
+      "req": 54,
+      "xp": 4800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9416,
+      "level": 60,
+      "req": 1,
+      "xp": 1980,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8278,
+      "level": 57,
+      "req": 54,
+      "xp": 6000,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8279,
+      "level": 60,
+      "req": 54,
+      "xp": 8300,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8282,
+      "level": 58,
+      "req": 54,
+      "xp": 6200,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8283,
+      "level": 59,
+      "req": 54,
+      "xp": 8050,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8287,
+      "level": 60,
+      "req": 54,
+      "xp": 6600,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8304,
+      "level": 60,
+      "req": 58,
+      "xp": 6600,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8310,
+      "level": 60,
+      "req": 58,
+      "xp": 8300,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8318,
+      "level": 60,
+      "req": 57,
+      "xp": 6600,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8323,
+      "level": 59,
+      "req": 54,
+      "xp": 6400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9422,
+      "level": 60,
+      "req": 1,
+      "xp": 6600,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Moonglade": 1,
+    "Stranglethorn Vale": 1,
+    "Searing Gorge": 1,
+    "Eastern Plaguelands": 1
+  }
+}

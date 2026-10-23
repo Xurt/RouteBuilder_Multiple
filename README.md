@@ -1,7 +1,7 @@
 # RouteBuilder
 
-Builds leveling routes for WoW Forever in RestedXP (RXPGuides) format, one guide per zone, from
-QuestieDB's quest data. The aim is every quest a character can do in the zone, in an order that keeps
+Builds leveling routes for WoW Forever and Classic Era in RestedXP (RXPGuides) format, one guide per
+zone, from QuestieDB's quest data. The aim is every quest a character can do in the zone, in an order that keeps
 running to a minimum. What comes out is a base to play-test and correct, not a finished guide.
 
 ## Setting up
@@ -16,6 +16,27 @@ export script (it ships its own Lua for Windows and Linux). Run it again wheneve
 With git it fetches only the newest QuestieDB commit; a `QuestieDB` folder left by an earlier zip
 download is replaced by a git copy, so later updates are quick. If git fails it says why, then falls
 back to the zip.
+
+## Games
+
+Every command takes `--game`, and so do `Rebuild-All.ps1` and `Make-Addon.ps1` (`-Game`):
+
+| `--game` | Game | Data | Zone files, locks, guides | Addon |
+|---|---|---|---|---|
+| `forever` (default) | WoW Forever | QuestieDB's Forever export | `zones/`, `locks/`, `guides/` | `addon/RXPGuides_ZoneRoutes` |
+| `classic` | Classic Era | QuestieDB's Classic data, with its corrections | `zones/classic/`, `locks/classic/`, `guides/classic/` | `addon/classic/RXPGuides_ZoneRoutes` |
+
+    dotnet run -c Release -- update --game classic
+    dotnet run -c Release -- build --game classic --zone Durotar --faction Horde --rxp rxp
+
+* `update --game classic` exports Classic Era's data from the same QuestieDB folder (into
+  `QuestieDB/.routebuilder/Vanilla`) with `tools/export-flavor.lua`. Run it once per game, and again after
+  each QuestieDB update.
+* Classic Era uses the real Classic maps (QuestieDB keeps their sizes in its Forever conversion file), its own
+  races and class combinations, and the `#classic` guide header.
+* Each game's addon has the same name, `RXPGuides_ZoneRoutes`; copy the one for the game into that game's
+  own `Interface\AddOns` folder.
+* TBC and Mists of Pandaria are not built yet.
 
 ## Building a guide
 
@@ -214,6 +235,21 @@ the zones that suit its end level best:
 * Running it again replaces the suggestions. Building a guide again takes them out of that guide until
   you link again (Rebuild-All.ps1 does that for you).
 
+## RestedXP's guide folder (rxp)
+
+RestedXP's own `Guides` folder serves every game at once, so `rxp/` holds a copy of all of it. For a game other
+than Forever, RouteBuilder takes from it only the guides that game loads, and of those only the ones that are
+the normal leveling route. See [docs/restedxp-guides.md](docs/restedxp-guides.md) for how RestedXP lays its
+guides out and what is left out.
+
+* `--rxp rxp` (and `Rebuild-All.ps1 -Rxp .\rxp`) points at the whole folder. The files come from the game's list
+  in it (`GuideList-classic.xml`), which also takes in subfolders.
+* Left out: guides for another game, for Season of Discovery (`#season 2`), for the 2x experience rate
+  (`#xprate >1.99`), hardcore-only "Survival" routes, guides RestedXP only offers one race and class (the AoE
+  mage routes), and anything that is not leveling (dungeons, professions, reputation, attunements, runes).
+  RxpToLock lists how many it passed over for each reason.
+* Forever's guide folder is used as it always was: every guide in it.
+
 ## Rebuilding every zone (Rebuild-All.ps1)
 
 `Rebuild-All.ps1` runs RxpToLock and then the build for every zone of both factions, and packs the addon
@@ -223,6 +259,8 @@ at the end:
 
 * It reads every RestedXP guide file in that folder (not its subfolders; `-Recurse` adds them). A zone
   RestedXP's guides do not cover keeps its lock as it was.
+* `-Game classic` builds Classic Era (every zone with five or more quests, as `build --zone all` would), with
+  `-Rxp .\rxp`.
 * `-Faction Horde` or `-Zone "Durotar","Mulgore"` narrows it down; `-NoRxpToLock` builds from the locks as
   they are; `-Fresh` plans every zone from scratch; `-Update` fetches QuestieDB first; `-NoLink` skips
   the next-zone suggestions; `-NoAddon` skips Make-Addon.ps1.
@@ -239,7 +277,8 @@ dependency. Nothing inside the RestedXP addon has to be edited.
     .\Make-Addon.ps1
 
 It writes `addon\RXPGuides_ZoneRoutes`. Copy that `RXPGuides_ZoneRoutes` folder into your game's
-`Interface\AddOns` folder, next to `RXPGuides`. Run the script and copy the folder again after every
+`Interface\AddOns` folder, next to `RXPGuides`. `.\Make-Addon.ps1 -Game classic` packs `guides\classic` into
+`addon\classic\RXPGuides_ZoneRoutes` instead, for Classic Era's `_classic_era_\Interface\AddOns` folder. Run the script and copy the folder again after every
 build; the folder is rebuilt from scratch each time.
 
 * Close the game completely and start it again when the addon is new or a guide file was added or

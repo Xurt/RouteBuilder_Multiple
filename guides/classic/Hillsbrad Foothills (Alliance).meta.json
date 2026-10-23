@@ -1,0 +1,173 @@
+{
+  "zone": "Hillsbrad Foothills",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "30-38 Hillsbrad Foothills",
+  "file": "Hillsbrad Foothills (Alliance).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 30,
+      "end": 30.43,
+      "next": 33,
+      "guide": "30-31 Hillsbrad Foothills: around Lieutenant Farren Orinelle",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Lieutenant Farren Orinelle",
+          "guide": "30-31 Hillsbrad Foothills: around Lieutenant Farren Orinelle",
+          "level": 30,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 33,
+      "end": 33.01,
+      "guide": "33-34 Hillsbrad Foothills",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "33-34 Hillsbrad Foothills",
+          "level": 33,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 510,
+      "level": 34,
+      "req": 26,
+      "xp": 1350,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Alterac Mountains"
+    },
+    {
+      "id": 511,
+      "level": 34,
+      "req": 30,
+      "xp": 1350,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Alterac Mountains"
+    },
+    {
+      "id": 522,
+      "level": 38,
+      "req": 30,
+      "xp": 710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 525,
+      "level": 34,
+      "req": 30,
+      "xp": 1350,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 536,
+      "level": 30,
+      "req": 25,
+      "xp": 1850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 538,
+      "level": 38,
+      "req": 20,
+      "xp": 710,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 555,
+      "level": 31,
+      "req": 28,
+      "xp": 2500,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 559,
+      "level": 32,
+      "req": 25,
+      "xp": 2550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 560,
+      "level": 32,
+      "req": 25,
+      "xp": 255,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 561,
+      "level": 32,
+      "req": 25,
+      "xp": 255,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 562,
+      "level": 32,
+      "req": 25,
+      "xp": 1950,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 647,
+      "level": 30,
+      "req": 28,
+      "xp": 3050,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Arathi Highlands"
+    },
+    {
+      "id": 661,
+      "level": 37,
+      "req": 30,
+      "xp": 3550,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Arathi Highlands"
+    }
+  ],
+  "carriedTo": {
+    "Dun Morogh": 1,
+    "Elwynn Forest": 2,
+    "Arathi Highlands": 2
+  }
+}

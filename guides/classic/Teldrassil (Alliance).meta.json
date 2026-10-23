@@ -1,0 +1,760 @@
+{
+  "zone": "Teldrassil",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "1-14 Teldrassil",
+  "file": "Teldrassil (Alliance).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 1,
+      "end": 10.48,
+      "next": 15,
+      "guide": "8-11 Teldrassil: around Denalan",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Conservator Ilthalaine",
+          "guide": "1-5 Teldrassil: around Conservator Ilthalaine",
+          "level": 1,
+          "index": 0
+        },
+        {
+          "label": "RBSection1_2",
+          "name": "around Corithras Moonrage",
+          "guide": "5-8 Teldrassil: around Corithras Moonrage",
+          "level": 5,
+          "index": 1
+        },
+        {
+          "label": "RBSection1_3",
+          "name": "around Denalan",
+          "guide": "8-11 Teldrassil: around Denalan",
+          "level": 8,
+          "index": 2
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 15,
+      "end": 15,
+      "guide": "15-16 Teldrassil",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "15-16 Teldrassil",
+          "level": 15,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 456,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 457,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 458,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 459,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 475,
+      "level": 6,
+      "req": 4,
+      "xp": 270,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 476,
+      "level": 6,
+      "req": 4,
+      "xp": 540,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 483,
+      "level": 9,
+      "req": 4,
+      "xp": 780,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 486,
+      "level": 12,
+      "req": 4,
+      "xp": 1150,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 487,
+      "level": 8,
+      "req": 5,
+      "xp": 700,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 488,
+      "level": 5,
+      "req": 4,
+      "xp": 450,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 489,
+      "level": 7,
+      "req": 4,
+      "xp": 630,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 916,
+      "level": 4,
+      "req": 3,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 917,
+      "level": 5,
+      "req": 1,
+      "xp": 560,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 918,
+      "level": 7,
+      "req": 4,
+      "xp": 630,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 919,
+      "level": 7,
+      "req": 4,
+      "xp": 790,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 920,
+      "level": 5,
+      "req": 1,
+      "xp": 45,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 921,
+      "level": 5,
+      "req": 1,
+      "xp": 335,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 922,
+      "level": 7,
+      "req": 4,
+      "xp": 315,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 923,
+      "level": 9,
+      "req": 4,
+      "xp": 980,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 928,
+      "level": 5,
+      "req": 1,
+      "xp": 225,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 929,
+      "level": 5,
+      "req": 1,
+      "xp": 335,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 930,
+      "level": 10,
+      "req": 4,
+      "xp": 840,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 931,
+      "level": 10,
+      "req": 4,
+      "xp": 840,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 932,
+      "level": 7,
+      "req": 4,
+      "xp": 630,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 933,
+      "level": 9,
+      "req": 1,
+      "xp": 780,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 935,
+      "level": 11,
+      "req": 1,
+      "xp": 1100,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 937,
+      "level": 11,
+      "req": 6,
+      "xp": 440,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 938,
+      "level": 12,
+      "req": 7,
+      "xp": 910,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 940,
+      "level": 11,
+      "req": 6,
+      "xp": 220,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 997,
+      "level": 5,
+      "req": 4,
+      "xp": 225,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 1683,
+      "level": 10,
+      "req": 10,
+      "xp": 840,
+      "part": 1,
+      "section": 2,
+      "tag": "Warrior"
+    },
+    {
+      "id": 1684,
+      "level": 10,
+      "req": 10,
+      "xp": 85,
+      "part": 1,
+      "section": 1,
+      "tag": "Warrior"
+    },
+    {
+      "id": 2159,
+      "level": 5,
+      "req": 1,
+      "xp": 110,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 2241,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 1,
+      "section": 2,
+      "tag": "Rogue"
+    },
+    {
+      "id": 2242,
+      "level": 10,
+      "req": 10,
+      "xp": 840,
+      "part": 1,
+      "section": 2,
+      "tag": "Rogue"
+    },
+    {
+      "id": 2399,
+      "level": 10,
+      "req": 4,
+      "xp": 85,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 2438,
+      "level": 6,
+      "req": 1,
+      "xp": 405,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 2498,
+      "level": 9,
+      "req": 4,
+      "xp": 80,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 2499,
+      "level": 9,
+      "req": 4,
+      "xp": 980,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 2518,
+      "level": 12,
+      "req": 5,
+      "xp": 1150,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 2519,
+      "level": 10,
+      "req": 5,
+      "xp": 85,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 2520,
+      "level": 12,
+      "req": 5,
+      "xp": 910,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 2541,
+      "level": 8,
+      "req": 3,
+      "xp": 700,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 2561,
+      "level": 10,
+      "req": 3,
+      "xp": 1050,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 3116,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Warrior"
+    },
+    {
+      "id": 3117,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Hunter"
+    },
+    {
+      "id": 3118,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Rogue"
+    },
+    {
+      "id": 3119,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Priest"
+    },
+    {
+      "id": 3120,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Druid"
+    },
+    {
+      "id": 3519,
+      "level": 4,
+      "req": 2,
+      "xp": 90,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3521,
+      "level": 4,
+      "req": 2,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3522,
+      "level": 4,
+      "req": 2,
+      "xp": 445,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4495,
+      "level": 4,
+      "req": 2,
+      "xp": 270,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5621,
+      "level": 4,
+      "req": 5,
+      "xp": 270,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Priest"
+    },
+    {
+      "id": 5622,
+      "level": 4,
+      "req": 5,
+      "xp": 90,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Priest"
+    },
+    {
+      "id": 5628,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Priest",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 5630,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Priest",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 5631,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Priest",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 5632,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Priest",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 5633,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Priest",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 5923,
+      "level": 10,
+      "req": 10,
+      "xp": 85,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Druid"
+    },
+    {
+      "id": 5924,
+      "level": 10,
+      "req": 10,
+      "xp": 85,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Druid",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 5931,
+      "level": 10,
+      "req": 10,
+      "xp": 85,
+      "part": 1,
+      "section": 2,
+      "tag": "NightElf Druid",
+      "from": "Moonglade"
+    },
+    {
+      "id": 6063,
+      "level": 10,
+      "req": 10,
+      "xp": 840,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Hunter"
+    },
+    {
+      "id": 6071,
+      "level": 10,
+      "req": 10,
+      "xp": 85,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Hunter"
+    },
+    {
+      "id": 6073,
+      "level": 10,
+      "req": 10,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Hunter",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 6101,
+      "level": 10,
+      "req": 10,
+      "xp": 840,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Hunter"
+    },
+    {
+      "id": 6102,
+      "level": 10,
+      "req": 10,
+      "xp": 840,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Hunter"
+    },
+    {
+      "id": 6103,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Hunter"
+    },
+    {
+      "id": 6125,
+      "level": 14,
+      "req": 14,
+      "xp": 980,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Druid",
+      "from": "Moonglade"
+    },
+    {
+      "id": 6341,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 1,
+      "section": 2,
+      "tag": "NightElf"
+    },
+    {
+      "id": 6343,
+      "level": 10,
+      "req": 10,
+      "xp": 1050,
+      "part": 1,
+      "section": 2,
+      "tag": "NightElf",
+      "from": "Darkshore"
+    },
+    {
+      "id": 6344,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 1,
+      "section": 2,
+      "tag": "NightElf"
+    },
+    {
+      "id": 6721,
+      "level": 10,
+      "req": 10,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Hunter",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 6722,
+      "level": 10,
+      "req": 10,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Hunter",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 7383,
+      "level": 11,
+      "req": 1,
+      "xp": 660,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Darkshore": 3,
+    "Elwynn Forest": 1,
+    "Moonglade": 2
+  }
+}

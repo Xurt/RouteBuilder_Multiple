@@ -1,0 +1,410 @@
+{
+  "zone": "Wetlands",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "20-32 Wetlands",
+  "file": "Wetlands (Alliance).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 20,
+      "end": 20.64,
+      "next": 23,
+      "guide": "20-21 Wetlands: around Karl Boran",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Karl Boran",
+          "guide": "20-21 Wetlands: around Karl Boran",
+          "level": 20,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 23,
+      "end": 23.42,
+      "next": 26,
+      "guide": "23-24 Wetlands",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "23-24 Wetlands",
+          "level": 23,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 26,
+      "end": 26.42,
+      "next": 29,
+      "guide": "26-27 Wetlands: around Glorin Steelbrow",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "around Glorin Steelbrow",
+          "guide": "26-27 Wetlands: around Glorin Steelbrow",
+          "level": 26,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "start": 29,
+      "end": 29.45,
+      "next": 32,
+      "guide": "29-30 Wetlands",
+      "sections": [
+        {
+          "label": "RBSection4_1",
+          "name": "part 4",
+          "guide": "29-30 Wetlands",
+          "level": 29,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "start": 32,
+      "end": 32.05,
+      "guide": "32-33 Wetlands",
+      "sections": [
+        {
+          "label": "RBSection5_1",
+          "name": "part 5",
+          "guide": "32-33 Wetlands",
+          "level": 32,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 161,
+      "level": 18,
+      "req": 16,
+      "xp": 1350,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Loch Modan"
+    },
+    {
+      "id": 270,
+      "level": 29,
+      "req": 20,
+      "xp": 1200,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 276,
+      "level": 21,
+      "req": 20,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 277,
+      "level": 23,
+      "req": 20,
+      "xp": 1850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 279,
+      "level": 22,
+      "req": 20,
+      "xp": 1750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 281,
+      "level": 25,
+      "req": 20,
+      "xp": 510,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 284,
+      "level": 25,
+      "req": 20,
+      "xp": 510,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 285,
+      "level": 25,
+      "req": 20,
+      "xp": 1000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 286,
+      "level": 25,
+      "req": 20,
+      "xp": 1500,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 455,
+      "level": 21,
+      "req": 19,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Loch Modan"
+    },
+    {
+      "id": 463,
+      "level": 21,
+      "req": 20,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 469,
+      "level": 21,
+      "req": 18,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 942,
+      "level": 20,
+      "req": 15,
+      "xp": 1550,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 1248,
+      "level": 33,
+      "req": 28,
+      "xp": 660,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 275,
+      "level": 26,
+      "req": 20,
+      "xp": 2650,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 294,
+      "level": 24,
+      "req": 22,
+      "xp": 1950,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 305,
+      "level": 24,
+      "req": 21,
+      "xp": 970,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 306,
+      "level": 24,
+      "req": 21,
+      "xp": 485,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 470,
+      "level": 24,
+      "req": 19,
+      "xp": 2400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 288,
+      "level": 27,
+      "req": 22,
+      "xp": 220,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 295,
+      "level": 27,
+      "req": 22,
+      "xp": 2200,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 299,
+      "level": 28,
+      "req": 25,
+      "xp": 2300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 464,
+      "level": 28,
+      "req": 23,
+      "xp": 2300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 465,
+      "level": 31,
+      "req": 23,
+      "xp": 1900,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 472,
+      "level": 25,
+      "req": 25,
+      "xp": 1000,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 526,
+      "level": 29,
+      "req": 20,
+      "xp": 1750,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 289,
+      "level": 29,
+      "req": 22,
+      "xp": 1750,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 290,
+      "level": 30,
+      "req": 22,
+      "xp": 1200,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 292,
+      "level": 30,
+      "req": 22,
+      "xp": 1200,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 296,
+      "level": 29,
+      "req": 22,
+      "xp": 2950,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 303,
+      "level": 30,
+      "req": 25,
+      "xp": 2450,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 631,
+      "level": 31,
+      "req": 28,
+      "xp": 2500,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 632,
+      "level": 31,
+      "req": 28,
+      "xp": 2500,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 474,
+      "level": 32,
+      "req": 23,
+      "xp": 2550,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Loch Modan": 1,
+    "Dustwallow Marsh": 2,
+    "Elwynn Forest": 2,
+    "Arathi Highlands": 1
+  }
+}

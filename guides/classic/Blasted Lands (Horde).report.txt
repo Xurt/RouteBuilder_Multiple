@@ -1,0 +1,51 @@
+Blasted Lands - Horde
+Guide "50-55 Blasted Lands" in group "Zone Routes (Horde)": 26 steps, 23 stops
+Written to guides/classic/Blasted Lands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+10 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 50. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 14 steps kept, 17 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 29 tasks, 4,951 yd on foot; ends at level 50.3
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 5,524 yd; ends at level 50.3
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (9)
+-----------------------
+Start to finish here: 7 (7 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Kirith [2721, level 58] <- Swamp of Sorrows
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  The Cover of Darkness [2743, level 60] - needs one of Kirith [2721] -> Swamp of Sorrows
+
+Worth checking in game
+----------------------
+
+Not planned (3)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  The Prison's Bindings [7581, level 60]: needs level 60; this part gets Warlock characters to about 50.3
+  The Prison's Casing [7582, level 60]: needs level 60; this part gets Warlock characters to about 50.3
+  Suppression [7583, level 60]: needs level 60; this part gets Warlock characters to about 50.3
+
+Left out (8)
+------------
+repeatable (7):
+  Kum'isha's Endeavors [2522], Rage of Ages [2582], Spirit of the Boar [2584], Salt of the Scorpok [2586], Infallible Mind [2602], Spiritual Domination [2604], One Draenei's Junk... [3502]
+special category (sort -366) (1):
+  Bellowrage the Elder [8647]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

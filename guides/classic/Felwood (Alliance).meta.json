@@ -1,0 +1,272 @@
+{
+  "zone": "Felwood",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "48-56 Felwood",
+  "file": "Felwood (Alliance).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 48,
+      "end": 48.06,
+      "next": 51,
+      "guide": "48-49 Felwood",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "48-49 Felwood",
+          "level": 48,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 51,
+      "end": 51.33,
+      "next": 54,
+      "guide": "51-52 Felwood: around Eridan Bluewind",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Eridan Bluewind",
+          "guide": "51-52 Felwood: around Eridan Bluewind",
+          "level": 51,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 54,
+      "end": 54.18,
+      "guide": "54-55 Felwood",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "54-55 Felwood",
+          "level": 54,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 3942,
+      "level": 54,
+      "req": 47,
+      "xp": 5450,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Un\u0027Goro Crater"
+    },
+    {
+      "id": 5084,
+      "level": 56,
+      "req": 52,
+      "xp": 4350,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Winterspring"
+    },
+    {
+      "id": 5128,
+      "level": 59,
+      "req": 52,
+      "xp": 6400,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Winterspring"
+    },
+    {
+      "id": 5159,
+      "level": 54,
+      "req": 48,
+      "xp": 2700,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "The Barrens"
+    },
+    {
+      "id": 7623,
+      "level": 58,
+      "req": 60,
+      "xp": 6200,
+      "part": 1,
+      "section": 0,
+      "tag": "Warlock",
+      "from": "Burning Steppes"
+    },
+    {
+      "id": 8257,
+      "level": 52,
+      "req": 50,
+      "xp": 6350,
+      "part": 1,
+      "section": 0,
+      "tag": "Priest",
+      "from": "Azshara"
+    },
+    {
+      "id": 8419,
+      "level": 52,
+      "req": 50,
+      "xp": 3800,
+      "part": 1,
+      "section": 0,
+      "tag": "Warlock",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 8460,
+      "level": 48,
+      "req": 45,
+      "xp": 4400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8462,
+      "level": 55,
+      "req": 45,
+      "xp": 560,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 939,
+      "level": 54,
+      "req": 49,
+      "xp": 5450,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4101,
+      "level": 55,
+      "req": 48,
+      "xp": 5650,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5155,
+      "level": 51,
+      "req": 48,
+      "xp": 4900,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5156,
+      "level": 54,
+      "req": 48,
+      "xp": 6800,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5157,
+      "level": 52,
+      "req": 48,
+      "xp": 3800,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5882,
+      "level": 55,
+      "req": 48,
+      "xp": 4200,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7601,
+      "level": 50,
+      "req": 50,
+      "xp": 757,
+      "part": 2,
+      "section": 0,
+      "tag": "Warlock"
+    },
+    {
+      "id": 8420,
+      "level": 52,
+      "req": 50,
+      "xp": 3800,
+      "part": 2,
+      "section": 0,
+      "tag": "Warlock"
+    },
+    {
+      "id": 8421,
+      "level": 52,
+      "req": 50,
+      "xp": 5100,
+      "part": 2,
+      "section": 0,
+      "tag": "Warlock"
+    },
+    {
+      "id": 8471,
+      "level": 56,
+      "req": 50,
+      "xp": 5800,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4421,
+      "level": 54,
+      "req": 49,
+      "xp": 5450,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4906,
+      "level": 54,
+      "req": 49,
+      "xp": 5450,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8461,
+      "level": 55,
+      "req": 45,
+      "xp": 5650,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Un\u0027Goro Crater": 1,
+    "The Barrens": 1,
+    "Ashenvale": 1,
+    "Winterspring": 4
+  }
+}

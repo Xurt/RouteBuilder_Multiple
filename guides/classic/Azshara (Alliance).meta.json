@@ -1,0 +1,197 @@
+{
+  "zone": "Azshara",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "47-57 Azshara",
+  "file": "Azshara (Alliance).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 47,
+      "end": 47.1,
+      "next": 50,
+      "guide": "47-48 Azshara",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "47-48 Azshara",
+          "level": 47,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 50,
+      "end": 50.09,
+      "next": 53,
+      "guide": "50-51 Azshara",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "50-51 Azshara",
+          "level": 50,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 53,
+      "end": 53.08,
+      "next": 56,
+      "guide": "53-54 Azshara",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "53-54 Azshara",
+          "level": 53,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "start": 56,
+      "end": 56,
+      "guide": "56-57 Azshara",
+      "sections": [
+        {
+          "label": "RBSection4_1",
+          "name": "part 4",
+          "guide": "56-57 Azshara",
+          "level": 56,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 2744,
+      "level": 60,
+      "req": 45,
+      "xp": 6600,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Swamp of Sorrows"
+    },
+    {
+      "id": 3449,
+      "level": 52,
+      "req": 45,
+      "xp": 2550,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 5535,
+      "level": 47,
+      "req": 45,
+      "xp": 4200,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5536,
+      "level": 47,
+      "req": 45,
+      "xp": 4200,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8151,
+      "level": 52,
+      "req": 50,
+      "xp": 510,
+      "part": 1,
+      "section": 0,
+      "tag": "Hunter",
+      "from": "Mulgore"
+    },
+    {
+      "id": 8234,
+      "level": 52,
+      "req": 50,
+      "xp": 5100,
+      "part": 1,
+      "section": 0,
+      "tag": "Rogue",
+      "from": "Alterac Mountains"
+    },
+    {
+      "id": 8250,
+      "level": 52,
+      "req": 50,
+      "xp": 510,
+      "part": 1,
+      "section": 0,
+      "tag": "Mage",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 8254,
+      "level": 52,
+      "req": 50,
+      "xp": 510,
+      "part": 1,
+      "section": 0,
+      "tag": "Priest",
+      "from": "Mulgore"
+    },
+    {
+      "id": 3601,
+      "level": 53,
+      "req": 47,
+      "xp": 6550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5534,
+      "level": 53,
+      "req": 47,
+      "xp": 6550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8251,
+      "level": 52,
+      "req": 50,
+      "xp": 5100,
+      "part": 3,
+      "section": 0,
+      "tag": "Mage"
+    },
+    {
+      "id": 8252,
+      "level": 52,
+      "req": 50,
+      "xp": 5100,
+      "part": 3,
+      "section": 0,
+      "tag": "Mage"
+    }
+  ],
+  "carriedTo": {
+    "Dun Morogh": 1,
+    "Alterac Mountains": 1,
+    "Felwood": 1,
+    "Stranglethorn Vale": 1
+  }
+}

@@ -1,0 +1,184 @@
+Silithus - Alliance - part 1 of 2, planned from level 55
+Guide "55-60 Silithus" in group "Zone Routes (Alliance)": this part has 31 steps, 28 stops
+Written to guides/classic/Silithus (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 55. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 25 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed, 30 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 20 tasks, 6,994 yd on foot; ends at level 55.2; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 11 more tasks; their whole route comes to 13,974 yd; ends at level 55.2; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (14)
+------------------------
+Start to finish here: 6 (6 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Secrets of the Colossus - Ashi [8857, level 60] -> Stranglethorn Vale
+  Secrets of the Colossus - Regal [8858, level 60] -> Searing Gorge
+  Secrets of the Colossus - Zora [8859, level 60] -> Eastern Plaguelands
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Wasteland [1124, level 55] <- Moonglade
+  Taking Back Silithus [8275, level 55] <- Ironforge
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  The Spirits of Southwind [1125, level 55] - needs one of Wasteland [1124]
+  Hive in the Tower [1126, level 57] - needs one of The Spirits of Southwind [1125]
+  Umber, Archivist [6844, level 57] - needs one of Hive in the Tower [1126] -> Moonglade
+
+Worth checking in game
+----------------------
+1 quests have no experience figure in the database: their experience is estimated, and 1 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  Report to Marshal Bluewall [9415]
+
+Put off to a later part (29)
+----------------------------
+These need a higher level than this part ends at:
+  Noggle's Last Hope [8278, level 57]: its mobs are level 58; this part gets you to about 55.8
+  The Twilight Lexicon [8279, level 60]: its mobs are level 60; this part gets you to about 55.8
+  Noggle's Lost Satchel [8282, level 58]: follows Noggle's Last Hope [8278]
+  Wanted - Deathclasp, Terror of the Sands [8283, level 59]: its mobs are level 59; this part gets you to about 55.8
+  What Tomorrow Brings [8286, level 60]: needs level 60; this part gets you to about 55.8
+  A Terrible Purpose [8287, level 60]: follows The Twilight Lexicon [8279]
+  The Path of the Righteous [8301, level 60]: needs level 60; this part gets you to about 55.8
+  Dearest Natalia [8304, level 60]: needs level 58; this part gets you to about 55.8
+  Into The Maw of Madness [8306, level 60]: needs level 58; this part gets you to about 55.8
+  Brann Bronzebeard's Lost Letter [8308, level 60]: needs level 58; this part gets you to about 55.8
+  Glyph Chasing [8309, level 60]: needs level 58; this part gets you to about 55.8
+  Breaking the Code [8310, level 60]: needs level 58; this part gets you to about 55.8
+  Unraveling the Mystery [8314, level 60]: needs level 58; this part gets you to about 55.8
+  The Calling [8315, level 60]: its mobs are level 63; this part gets you to about 55.8
+  Armaments of War [8316, level 60]: needs level 58; this part gets Warrior characters to about 55.8
+  Secret Communication [8318, level 60]: needs level 57; this part gets you to about 55.8
+  Twilight Geolords [8320, level 60]: needs level 60; this part gets you to about 55.8
+  Vyral the Vile [8321, level 60]: needs level 60; this part gets you to about 55.8
+  True Believers [8323, level 59]: its mobs are level 58; this part gets you to about 55.8
+  Abyssal Contacts [8361, level 60]: needs level 60; this part gets you to about 55.8
+  Armaments of War [8376, level 60]: needs level 58; this part gets Paladin characters to about 55.8
+  Armaments of War [8377, level 60]: needs level 58; this part gets Hunter characters to about 55.8
+  Armaments of War [8378, level 60]: needs level 58; this part gets Rogue characters to about 55.8
+  Armaments of War [8379, level 60]: needs level 58; this part gets Priest characters to about 55.8
+  Armaments of War [8381, level 60]: needs level 58; this part gets Mage/Warlock characters to about 55.8
+  Armaments of War [8382, level 60]: needs level 58; this part gets Druid characters to about 55.8
+  Cenarion Battlegear [8800, level 60]: needs level 60; this part gets you to about 55.8
+  The Perfect Poison [9023, level 60]: needs level 60; this part gets you to about 55.8
+  Scouring the Desert [9419, level 60]: is a level 60 quest; this part gets you to about 55.8
+
+Left out (96)
+-------------
+repeatable (48):
+  The Hand of the Righteous [8302], Encrypted Twilight Texts [8319], Still Believing [8324], Medallion of Station [8333], Twilight Ring of Lordship [8342], Abyssal Crests [8362], Abyssal Signets [8363], Abyssal Scepters [8364], Bandages for the Field [8496], Desert Survival Kits [8497], Twilight Battle Orders [8498], Target: Hive'Ashi Stingers [8501], Target: Hive'Ashi Workers [8502], Field Duty [8507], Field Duty Papers [8508], Hive'Zora Scout Report [8534], Hoary Templar [8535], Earthen Templar [8536], Crimson Templar [8537], The Four Dukes [8538], Target: Hive'Zora Hive Sisters [8539], Boots for the Guard [8540], Grinding Stones for the Guard [8541], Volunteer's Battlegear [8548], Veteran's Battlegear [8572], Champion's Battlegear [8573], Stalwart's Battlegear [8574], Target: Hive'Zora Tunnelers [8687], Azure Templar [8737], Hive'Regal Scout Report [8738], Hive'Ashi Scout Report [8739], Twilight Marauders [8740], Target: Hive'Ashi Defenders [8770], Target: Hive'Ashi Sandstalkers [8771], Target: Hive'Zora Waywatchers [8772], Target: Hive'Zora Reavers [8773], Target: Hive'Regal Ambushers [8774], Target: Hive'Regal Spitfires [8775], Target: Hive'Regal Slavemakers [8776], Target: Hive'Regal Burrowers [8777], ... 8 more
+dungeon quest (26):
+  Only One May Rise [8288], Signet of Unyielding Strength [8556], Drape of Unyielding Strength [8557], Sickle of Unyielding Strength [8558], Shroud of Infinite Wisdom [8689], Drape of Vaulted Secrets [8691], Cloak of Unending Life [8692], Cloak of Veiled Shadows [8693], Shroud of Unspoken Names [8694], Cape of Eternal Justice [8695], Cloak of the Unseen Path [8696], Ring of Infinite Wisdom [8697], Band of Vaulted Secrets [8699], Band of Unending Life [8700], Band of Veiled Shadows [8701], Ring of Unspoken Names [8702], Ring of Eternal Justice [8703], Signet of the Unseen Path [8704], Gavel of Infinite Wisdom [8705], Blade of Vaulted Secrets [8707], Mace of Unending Life [8708], Dagger of Veiled Shadows [8709], Kris of Unspoken Names [8710], Blade of Eternal Justice [8711], Scythe of the Unseen Path [8712], The Fall of Ossirian [8791]
+needs reputation (14):
+  Anachronos [8303], Long Forgotten Memories [8305], Aurel Goldleaf [8331], Dukes of the Council [8332], Lords of the Council [8341], Goldleaf's Discovery [8343], Signet of the Dukes [8348], Bor Wildmane [8349], Bor Wishes to Speak [8351], Scepter of the Council [8352], A Pawn on the Eternal Board [8519], Bang a Gong! [8743], Treasure of the Timeless One [8745], A Humble Offering [9248]
+special category (sort -344) (3):
+  Examine the Vessel [7785], Thunderaan the Windseeker [7786], Rise, Thunderfury! [7787]
+needs a profession (3):
+  Desert Recipe [8307], Sharing the Knowledge [8313], Kitchen Assistance [8317]
+special category (sort -366) (2):
+  Primestone the Elder [8654], Bladesing the Elder [8719]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Silithus - Alliance - part 2 of 2, planned from level 58
+Guide "55-60 Silithus" in group "Zone Routes (Alliance)": this part has 52 steps, 44 stops
+Written to guides/classic/Silithus (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: 20 PROBLEMS
+  ! Breaking the Code is picked up before any of the quests that unlock it (Human Warrior)
+  ! Breaking the Code is picked up before any of the quests that unlock it (Human Paladin)
+  ! Breaking the Code is picked up before any of the quests that unlock it (Human Rogue)
+  ! Breaking the Code is picked up before any of the quests that unlock it (Human Priest)
+  ! Breaking the Code is picked up before any of the quests that unlock it (Human Mage)
+  ! Breaking the Code is picked up before any of the quests that unlock it (Human Warlock)
+  ! Breaking the Code is picked up before any of the quests that unlock it (Dwarf Warrior)
+  ! Breaking the Code is picked up before any of the quests that unlock it (Dwarf Paladin)
+  ! Breaking the Code is picked up before any of the quests that unlock it (Dwarf Hunter)
+  ! Breaking the Code is picked up before any of the quests that unlock it (Dwarf Rogue)
+  ! Breaking the Code is picked up before any of the quests that unlock it (Dwarf Priest)
+  ! Breaking the Code is picked up before any of the quests that unlock it (NightElf Warrior)
+  ! Breaking the Code is picked up before any of the quests that unlock it (NightElf Hunter)
+  ! Breaking the Code is picked up before any of the quests that unlock it (NightElf Rogue)
+  ! Breaking the Code is picked up before any of the quests that unlock it (NightElf Priest)
+  ! Breaking the Code is picked up before any of the quests that unlock it (NightElf Druid)
+  ! Breaking the Code is picked up before any of the quests that unlock it (Gnome Warrior)
+  ! Breaking the Code is picked up before any of the quests that unlock it (Gnome Rogue)
+  ! Breaking the Code is picked up before any of the quests that unlock it (Gnome Mage)
+  ! Breaking the Code is picked up before any of the quests that unlock it (Gnome Warlock)
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 58. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 27 steps kept, 17 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 42 tasks, 16,298 yd on foot; ends at level 58.4; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 16,317 yd; ends at level 58.4; 1 hearth; 3 ORDER PROBLEMS; at its hardest you are 1.8 levels below the mobs
+Hearthstone: set at Calandrath (Calandrath's inn); 1 hearth step in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 58 for Breaking the Code
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (14)
+------------------------
+Start to finish here: 11 (11 for everyone)
+
+Hand-in step only shows once complete (2):
+  Into The Maw of Madness [8306, level 60] - needs The Fate of Mistress Natalia Mar'alith (1) (Kalimdor - the continent map)
+  Glyph Chasing [8309, level 60] - needs Hive'Regal Rubbing (1) (Kalimdor - the continent map)
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Unraveling the Mystery [8314, level 60] - needs Glyph Chasing [8309]
+
+Worth checking in game
+----------------------
+
+Not planned (15)
+----------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  What Tomorrow Brings [8286, level 60]: needs level 60; this part gets you to about 58.5
+  The Path of the Righteous [8301, level 60]: needs level 60; this part gets you to about 58.5
+  The Calling [8315, level 60]: its mobs are level 63; this part gets you to about 58.5
+  Armaments of War [8316, level 60]: follows The Calling [8315]
+  Twilight Geolords [8320, level 60]: needs level 60; this part gets you to about 58.5
+  Vyral the Vile [8321, level 60]: needs level 60; this part gets you to about 58.5
+  Abyssal Contacts [8361, level 60]: needs level 60; this part gets you to about 58.5
+  Armaments of War [8376, level 60]: follows The Calling [8315]
+  Armaments of War [8377, level 60]: follows The Calling [8315]
+  Armaments of War [8378, level 60]: follows The Calling [8315]
+  Armaments of War [8379, level 60]: follows The Calling [8315]
+  Armaments of War [8381, level 60]: follows The Calling [8315]
+  Armaments of War [8382, level 60]: follows The Calling [8315]
+  Cenarion Battlegear [8800, level 60]: needs level 60; this part gets you to about 58.5
+  The Perfect Poison [9023, level 60]: needs level 60; this part gets you to about 58.5
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,132 @@
+{
+  "zone": "Burning Steppes",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "52-56 Burning Steppes",
+  "file": "Burning Steppes (Alliance).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 52,
+      "end": 52.07,
+      "next": 55,
+      "guide": "52-53 Burning Steppes",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "52-53 Burning Steppes",
+          "level": 52,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 55,
+      "end": 55.35,
+      "guide": "55-56 Burning Steppes: around Oralius",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Oralius",
+          "guide": "55-56 Burning Steppes: around Oralius",
+          "level": 55,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 3823,
+      "level": 52,
+      "req": 48,
+      "xp": 5100,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4223,
+      "level": 54,
+      "req": 48,
+      "xp": 540,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Redridge Mountains"
+    },
+    {
+      "id": 4810,
+      "level": 54,
+      "req": 50,
+      "xp": 2700,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Winterspring"
+    },
+    {
+      "id": 3824,
+      "level": 53,
+      "req": 48,
+      "xp": 5250,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3825,
+      "level": 53,
+      "req": 48,
+      "xp": 5250,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4182,
+      "level": 54,
+      "req": 48,
+      "xp": 5450,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4283,
+      "level": 56,
+      "req": 50,
+      "xp": 5800,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4296,
+      "level": 50,
+      "req": 50,
+      "xp": 2350,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4726,
+      "level": 52,
+      "req": 50,
+      "xp": 5100,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Redridge Mountains": 1,
+    "Winterspring": 1
+  }
+}

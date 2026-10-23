@@ -1,0 +1,222 @@
+Winterspring - Alliance - part 1 of 3, planned from level 52
+Guide "52-60 Winterspring" in group "Zone Routes (Alliance)": this part has 20 steps, 16 stops
+Written to guides/classic/Winterspring (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+3 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 52. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 10 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed, 71 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 5 yd on foot; ends at level 52.0
+  everyone (quests that depend on other zones): 13 more tasks; their whole route comes to 8,669 yd; ends at level 52.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (16)
+------------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  The Everlook Report [6028, level 52] -> Western Plaguelands
+  Duke Nicholas Zverenhoff [6030, level 52] -> Eastern Plaguelands
+  Sister Pamela [5601, level 55] -> Eastern Plaguelands
+
+Brought in from another zone and handed in here - steps show only if you have the quest (11):
+  It's a Secret to Everybody [3908, level 52] <- Un'Goro Crater
+  Felnok Steelspring [4808, level 54] <- Burning Steppes
+  The New Springs [980, level 55] <- Un'Goro Crater
+  In Eranikus' Own Words [3512, level 55] <- Swamp of Sorrows
+  Speak to Salfa [8465, level 55] <- Felwood
+  Mystery Goo [5085, level 56] <- Felwood
+  To Winterspring! [5249, level 56] <- Felwood
+  Starfall [5250, level 56] <- Teldrassil
+  Find Ranshalla [979, level 57] <- Teldrassil
+  Tormented By the Past [5248, level 58] <- Eastern Plaguelands
+  The Dragon's Eye [6501, level 60] <- Stormwind City
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  The Videre Elixir [3909, level 52] - needs one of It's a Secret to Everybody [3908]
+  Meet at the Grave [3912, level 52] - needs one of The Videre Elixir [3909] -> Tanaris
+
+Worth checking in game
+----------------------
+
+Put off to a later part (31)
+----------------------------
+These need a higher level than this part ends at:
+  Luck Be With You [969, level 60]: its mobs are level 59; this part gets you to about 52.4
+  Cache of Mau'ari [975, level 60]: needs level 55; this part gets you to about 52.4
+  Are We There, Yeti? [977, level 58]: its mobs are level 56; this part gets you to about 52.4
+  Are We There, Yeti? [3783, level 56]: its mobs are level 55; this part gets you to about 52.4
+  Chillwind Horns [4809, level 54]: its mobs are level 56; this part gets you to about 52.4
+  Return to Tinkee [4810, level 54]: follows Chillwind Horns [4809]
+  Strange Sources [4842, level 56]: is a level 56 quest; this part gets you to about 52.4
+  Enraged Wildkin [4861, level 59]: needs level 53; this part gets you to about 52.4
+  Enraged Wildkin [4863, level 59]: needs level 53; this part gets you to about 52.4
+  Enraged Wildkin [4864, level 59]: is a level 59 quest; this part gets you to about 52.4
+  Guardians of the Altar [4901, level 59]: is a level 59 quest; this part gets you to about 52.4
+  Threat of the Winterfall [5082, level 56]: its mobs are level 55; this part gets you to about 52.4
+  Winterfall Firewater [5083, level 56]: follows Threat of the Winterfall [5082]
+  Falling to Corruption [5084, level 56]: follows Winterfall Firewater [5083]
+  Toxic Horrors [5086, level 56]: needs level 52; this part gets you to about 52.0
+  Winterfall Runners [5087, level 57]: its mobs are level 57; this part gets you to about 52.4
+  High Chief Winterfall [5121, level 59]: its mobs are level 59; this part gets you to about 52.4
+  The Final Piece [5123, level 59]: follows Winterfall Runners [5087]
+  Words of the High Chief [5128, level 59]: follows The Final Piece [5123]
+  Wrath of the Blue Flight [5161, level 60]: needs level 57; this part gets you to about 52.4
+  Wrath of the Blue Flight [5162, level 60]: needs level 57; this part gets you to about 52.4
+  Are We There, Yeti? [5163, level 58]: is a level 58 quest; this part gets you to about 52.4
+  The Ruins of Kel'Theril [5244, level 56]: needs level 53; this part gets you to about 52.4
+  Troubled Spirits of Kel'Theril [5245, level 56]: needs level 53; this part gets you to about 52.4
+  Remorseful Highborne [5252, level 58]: needs level 53; this part gets you to about 52.4
+  The Crystal of Zin-Malor [5253, level 58]: needs level 53; this part gets you to about 52.4
+  Trouble in Winterspring! [6603, level 56]: needs level 52; this part gets you to about 52.0
+  Enraged Wildkin [6604, level 59]: needs level 53; this part gets you to about 52.4
+  A Little Luck [6606, level 60]: needs level 55; this part gets you to about 52.4
+  Winterfall Activity [8464, level 58]: its mobs are level 57; this part gets you to about 52.4
+  Winterfall Ritual Totem [8471, level 56]: follows Threat of the Winterfall [5082]
+
+Left out (29)
+-------------
+repeatable (15):
+  Frostsaber E'ko [4801], Winterfall E'ko [4802], Shardtooth E'ko [4803], Chillwind E'ko [4804], Ice Thistle E'ko [4805], Frostmaul E'ko [4806], Wildkin E'ko [4807], Frostsaber Provisions [4970], Cap of the Scarlet Savant [5063], Leggings of Arcana [5067], Breastplate of Bloodthirst [5068], Winterfall Intrusion [5201], Rampaging Giants [5981], Beads for Salfa [8469], Making Amends [9266]
+needs a profession (8):
+  Hot Fiery Death [5103], Fiery Plate Gauntlets [5124], Lorax's Tale [5126], The Demon Forge [5127], Sweet Serenity [5305], Snakestone of the Shadow Huntress [5306], Corruption [5307], A Yeti of Your Own [8798]
+dungeon quest (4):
+  Tinkee Steamboil [4907], Pip Quickwit, At Your Service! [5047], The Matron Protectorate [5160], Drakefire Amulet [6502]
+special category (sort -366) (2):
+  Stonespire the Elder [8672], Brightspear the Elder [8726]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Winterspring - Alliance - part 2 of 3, planned from level 55
+Guide "52-60 Winterspring" in group "Zone Routes (Alliance)": this part has 59 steps, 46 stops
+Written to guides/classic/Winterspring (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+7 pickups or hand-ins are within reach of a stop but planned for later.
+4 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 55. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 40 steps kept, 12 new ones slotted in, 3 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 37 tasks, 23,378 yd on foot; ends at level 55.3; 2 hearths; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 18 more tasks; their whole route comes to 31,560 yd; ends at level 55.3; 2 hearths; at its hardest you are 2.9 levels below the mobs
+Hearthstone: set at Innkeeper Vizzie (Innkeeper Vizzie's inn); 2 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 55 for A Little Luck
+
+Quests in the guide (24)
+------------------------
+Start to finish here: 11 (11 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Troubled Spirits of Kel'Theril [5245, level 56] -> Eastern Plaguelands
+  Winterfall Ritual Totem [8471, level 56] -> Felwood
+
+Hand-in step only shows once complete (1):
+  Are We There, Yeti? [5163, level 58] - needs Sprinkle (Tanaris); Quixxil (Un'Goro Crater)
+
+Need a quest this guide does not hand in - steps show only once that is done (10):
+  Chillwind Horns [4809, level 54] - needs one of Felnok Steelspring [4808]
+  Return to Tinkee [4810, level 54] - needs one of Chillwind Horns [4809] -> Burning Steppes
+  Strange Sources [4842, level 56] - needs one of The New Springs [980]
+  Falling to Corruption [5084, level 56] - needs one of Winterfall Firewater [5083] -> Felwood
+  Toxic Horrors [5086, level 56] - needs one of Mystery Goo [5085]
+  Winterfall Runners [5087, level 57] - needs one of Toxic Horrors [5086]
+  Remorseful Highborne [5252, level 58] - needs one of Tormented By the Past [5248]
+  The Crystal of Zin-Malor [5253, level 58] - needs one of Remorseful Highborne [5252] -> Darnassus
+  The Final Piece [5123, level 59] - needs one of Winterfall Runners [5087]
+  Words of the High Chief [5128, level 59] - needs one of The Final Piece [5123] -> Felwood
+
+Worth checking in game
+----------------------
+  Winterfall Ritual Totem [8471, level 56]: has a reputation or spell objective, which is not planned
+
+Put off to a later part (7)
+---------------------------
+These need a higher level than this part ends at:
+  Luck Be With You [969, level 60]: its mobs are level 59; this part gets you to about 55.3
+  Cache of Mau'ari [975, level 60]: follows Luck Be With You [969]
+  Enraged Wildkin [4864, level 59]: is a level 59 quest; this part gets you to about 55.3
+  Guardians of the Altar [4901, level 59]: is a level 59 quest; this part gets you to about 55.3
+  High Chief Winterfall [5121, level 59]: its mobs are level 59; this part gets you to about 55.3
+  Wrath of the Blue Flight [5161, level 60]: needs level 57; this part gets you to about 55.3
+  Wrath of the Blue Flight [5162, level 60]: needs level 57; this part gets you to about 55.3
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Winterspring - Alliance - part 3 of 3, planned from level 58
+Guide "52-60 Winterspring" in group "Zone Routes (Alliance)": this part has 19 steps, 18 stops
+Written to guides/classic/Winterspring (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 58. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 14 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 8 tasks, 5,056 yd on foot; ends at level 58.1
+  everyone (quests that depend on other zones): 10 more tasks; their whole route comes to 14,833 yd; ends at level 58.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Are We There, Yeti? [5163, level 58] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Guardians of the Altar [4901, level 59] - needs one of Find Ranshalla [979] -> Teldrassil
+  High Chief Winterfall [5121, level 59] - needs one of Winterfall Runners [5087]
+  Wrath of the Blue Flight [5161, level 60] - needs one of The Matron Protectorate [5160]
+  Wrath of the Blue Flight [5162, level 60] - needs one of Wrath of the Blue Flight [5161] -> Western Plaguelands
+
+Worth checking in game
+----------------------
+No objectives in the database (the hand-in step warns about it; add "objectives" for these to the zone file):
+  Cache of Mau'ari [975, level 60]: "Speak to Witch Doctor Mau'ari again in a moment to receive the lucky charm."
+1 quests have no experience figure in the database: their experience is estimated, and 0 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

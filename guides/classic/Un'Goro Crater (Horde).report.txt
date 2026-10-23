@@ -1,0 +1,171 @@
+Un'Goro Crater - Horde - part 1 of 3, planned from level 50
+Guide "50-56 Un'Goro Crater" in group "Zone Routes (Horde)": this part has 69 steps, 60 stops
+Written to guides/classic/Un'Goro Crater (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 11 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+14 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 50. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 64 steps kept, 16 new ones slotted in, 1 moved because their prerequisites changed, 24 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 62 tasks, 17,397 yd on foot; ends at level 50.7; at its hardest you are 3.7 levels below the mobs
+  Druid: 4 more tasks; their whole route comes to 21,467 yd; ends at level 50.7; at its hardest you are 3.6 levels below the mobs
+  everyone (quests that depend on other zones): 14 more tasks; their whole route comes to 17,577 yd; ends at level 50.7; at its hardest you are 3.7 levels below the mobs
+  Druid (quests that depend on other zones): 1 more tasks; their whole route comes to 22,129 yd; ends at level 50.7; at its hardest you are 3.6 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+3 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (31)
+------------------------
+Start to finish here: 19 (18 for everyone, 1 Druid)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  It's a Secret to Everybody [3908, level 52] -> Winterspring
+  Marvon's Workshop [4147, level 52] -> The Barrens
+
+Hand-in step only shows once complete (1):
+  Chasing A-Me 01 [4244, level 53] - needs Mithril Casing (1) (Searing Gorge)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Linken's Sword [3914, level 52] <- Tanaris
+  Zapper Fuel [4146, level 52] <- The Barrens
+  Torwa Pathfinder [9063, level 52, Druid] <- Thunder Bluff
+  Aquementas [4005, level 54] <- Felwood
+
+Need a quest this guide does not hand in - steps show only once that is done (5):
+  A Gnome's Assistance [3941, level 52] - needs one of Linken's Sword [3914]
+  Bloodpetal Zapper [4148, level 53] - needs one of Zapper Fuel [4146]
+  Chasing A-Me 01 [4245, level 53] - needs one of Chasing A-Me 01 [4244]
+  Linken's Memory [3942, level 54] - needs one of A Gnome's Assistance [3941] -> Felwood
+  Linken's Adventure [3961, level 54] - needs one of Aquementas [4005]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (9)
+---------------------------
+These need a higher level than this part ends at:
+  Finding the Source [974, level 55]: is a level 55 quest; this part gets you to about 50.9
+  The New Springs [980, level 55]: needs level 51; this part gets you to about 50.9
+  It's Dangerous to Go Alone [3962, level 56]: its mobs are level 56; this part gets you to about 50.9
+  The Bait for Lar'korwi [4292, level 56]: its mobs are level 56; this part gets you to about 50.9
+  The Mighty U'cha [4301, level 55]: its mobs are level 55; this part gets you to about 50.9
+  A Little Help From My Friends [4491, level 55]: is a level 55 quest; this part gets you to about 50.9
+  Lost! [4492, level 55]: is a level 55 quest; this part gets you to about 50.9
+  Toxic Test [9051, level 52]: its mobs are level 54; this part gets Druid characters to about 51.0
+  A Better Ingredient [9053, level 52]: follows Toxic Test [9051]
+
+Left out (8)
+------------
+repeatable (7):
+  Crystal Restore [4381], Crystal Force [4382], Crystal Ward [4383], Crystal Yield [4384], Crystal Charge [4385], Crystal Spire [4386], Dadanga is Hungry! [5150]
+special category (sort -366) (1):
+  Thunderhorn the Elder [8681]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Un'Goro Crater - Horde - part 2 of 3, planned from level 53
+Guide "50-56 Un'Goro Crater" in group "Zone Routes (Horde)": this part has 19 steps, 17 stops
+Written to guides/classic/Un'Goro Crater (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 53. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 17 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 13 tasks, 12,681 yd on foot; ends at level 53.1; at its hardest you are 1.9 levels below the mobs
+  Druid: 4 more tasks; their whole route comes to 14,806 yd; ends at level 53.2; at its hardest you are 1.9 levels below the mobs
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 12,684 yd; ends at level 53.1; at its hardest you are 1.9 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 5 (4 for everyone, 1 Druid)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The New Springs [980, level 55] -> Winterspring
+
+Hand-in step only shows once complete (1):
+  A Better Ingredient [9053, level 52, Druid] - needs Putrid Vine (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Chasing A-Me 01 [4244, level 53] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  It's Dangerous to Go Alone [3962, level 56]: its mobs are level 56; this part gets you to about 53.2
+  The Bait for Lar'korwi [4292, level 56]: its mobs are level 56; this part gets you to about 53.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Un'Goro Crater - Horde - part 3 of 3, planned from level 56
+Guide "50-56 Un'Goro Crater" in group "Zone Routes (Horde)": this part has 10 steps, 9 stops
+Written to guides/classic/Un'Goro Crater (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 56. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 4 steps kept, 5 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 1,419 yd on foot; ends at level 56.0
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 5,885 yd; ends at level 56.0
+  Druid (quests that depend on other zones): 1 more tasks; their whole route comes to 5,885 yd; ends at level 56.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  A Better Ingredient [9053, level 52, Druid] <- your earlier visit to this zone
+  Chasing A-Me 01 [4244, level 53] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  It's Dangerous to Go Alone [3962, level 56] - needs one of Linken's Adventure [3961]
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

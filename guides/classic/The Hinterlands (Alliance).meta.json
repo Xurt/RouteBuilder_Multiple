@@ -1,0 +1,110 @@
+{
+  "zone": "The Hinterlands",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "45-48 The Hinterlands",
+  "file": "The Hinterlands (Alliance).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 45,
+      "end": 45.2,
+      "guide": "45-48 The Hinterlands",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "45-48 The Hinterlands",
+          "level": 45,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 626,
+      "level": 51,
+      "req": 35,
+      "xp": 6100,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dustwallow Marsh"
+    },
+    {
+      "id": 1449,
+      "level": 43,
+      "req": 38,
+      "xp": 1800,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 2877,
+      "level": 48,
+      "req": 40,
+      "xp": 4400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2880,
+      "level": 45,
+      "req": 40,
+      "xp": 3900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2988,
+      "level": 45,
+      "req": 40,
+      "xp": 3900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2989,
+      "level": 48,
+      "req": 40,
+      "xp": 4400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2993,
+      "level": 47,
+      "req": 40,
+      "xp": 2100,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Blasted Lands"
+    },
+    {
+      "id": 3843,
+      "level": 47,
+      "req": 38,
+      "xp": 4200,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Thousand Needles"
+    }
+  ],
+  "carriedTo": {
+    "Stranglethorn Vale": 1,
+    "Elwynn Forest": 1,
+    "Blasted Lands": 1
+  }
+}

@@ -10,10 +10,11 @@
     <ServerGarbageCollection>false</ServerGarbageCollection>
     <TieredPGO>true</TieredPGO>
     <!-- the downloaded data and the generated guides live next to the project; keep the build from scanning them -->
-    <DefaultItemExcludes>$(DefaultItemExcludes);QuestieDB/**;guides/**;addon/**;examples/**;locks/**;RxpToLock/**</DefaultItemExcludes>
+    <DefaultItemExcludes>$(DefaultItemExcludes);QuestieDB/**;guides/**;addon/**;rxp/**;tools/**;examples/**;locks/**;RxpToLock/**</DefaultItemExcludes>
   </PropertyGroup>
   <ItemGroup>
     <None Include="zones\**\*.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="tools\*.lua" CopyToOutputDirectory="PreserveNewest" />
     <None Include="settings.json" CopyToOutputDirectory="PreserveNewest" Condition="Exists('settings.json')" />
   </ItemGroup>
 </Project>

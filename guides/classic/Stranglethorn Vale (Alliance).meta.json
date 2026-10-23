@@ -1,0 +1,811 @@
+{
+  "zone": "Stranglethorn Vale",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "30-50 Stranglethorn Vale",
+  "file": "Stranglethorn Vale (Alliance).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 30,
+      "end": 30.55,
+      "next": 33,
+      "guide": "30-31 Stranglethorn Vale: around Barnil Stonepot",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Barnil Stonepot",
+          "guide": "30-31 Stranglethorn Vale: around Barnil Stonepot",
+          "level": 30,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 33,
+      "end": 33.66,
+      "next": 36,
+      "guide": "33-34 Stranglethorn Vale: around Krazek",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Krazek",
+          "guide": "33-34 Stranglethorn Vale: around Krazek",
+          "level": 33,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 36,
+      "end": 36.3,
+      "next": 39,
+      "guide": "36-37 Stranglethorn Vale: around Baron Revilgaz",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "around Baron Revilgaz",
+          "guide": "36-37 Stranglethorn Vale: around Baron Revilgaz",
+          "level": 36,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "start": 39,
+      "end": 39.74,
+      "next": 42,
+      "guide": "39-40 Stranglethorn Vale: around Catelyn the Blade",
+      "sections": [
+        {
+          "label": "RBSection4_1",
+          "name": "around Catelyn the Blade",
+          "guide": "39-40 Stranglethorn Vale: around Catelyn the Blade",
+          "level": 39,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "start": 42,
+      "end": 42.41,
+      "next": 45,
+      "guide": "42-43 Stranglethorn Vale: around \u0022Sea Wolf\u0022 MacKinley",
+      "sections": [
+        {
+          "label": "RBSection5_1",
+          "name": "around \u0022Sea Wolf\u0022 MacKinley",
+          "guide": "42-43 Stranglethorn Vale: around \u0022Sea Wolf\u0022 MacKinley",
+          "level": 42,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "start": 45,
+      "end": 45.07,
+      "next": 48,
+      "guide": "45-46 Stranglethorn Vale",
+      "sections": [
+        {
+          "label": "RBSection6_1",
+          "name": "part 6",
+          "guide": "45-46 Stranglethorn Vale",
+          "level": 45,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "start": 48,
+      "end": 48.04,
+      "next": 51,
+      "guide": "48-49 Stranglethorn Vale",
+      "sections": [
+        {
+          "label": "RBSection7_1",
+          "name": "part 7",
+          "guide": "48-49 Stranglethorn Vale",
+          "level": 48,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 8,
+      "start": 51,
+      "end": 51.05,
+      "guide": "51-52 Stranglethorn Vale",
+      "sections": [
+        {
+          "label": "RBSection8_1",
+          "name": "part 8",
+          "guide": "51-52 Stranglethorn Vale",
+          "level": 51,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 185,
+      "level": 31,
+      "req": 28,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 186,
+      "level": 33,
+      "req": 28,
+      "xp": 1300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 190,
+      "level": 31,
+      "req": 28,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 191,
+      "level": 33,
+      "req": 28,
+      "xp": 1300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 198,
+      "level": 32,
+      "req": 30,
+      "xp": 640,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 200,
+      "level": 35,
+      "req": 30,
+      "xp": 1350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 201,
+      "level": 32,
+      "req": 28,
+      "xp": 255,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 203,
+      "level": 33,
+      "req": 30,
+      "xp": 1950,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 215,
+      "level": 33,
+      "req": 30,
+      "xp": 1300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 328,
+      "level": 37,
+      "req": 30,
+      "xp": 1400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 329,
+      "level": 37,
+      "req": 30,
+      "xp": 1400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 330,
+      "level": 37,
+      "req": 30,
+      "xp": 285,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 331,
+      "level": 37,
+      "req": 30,
+      "xp": 2850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 575,
+      "level": 31,
+      "req": 26,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 583,
+      "level": 30,
+      "req": 28,
+      "xp": 245,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 603,
+      "level": 37,
+      "req": 32,
+      "xp": 1400,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Alterac Mountains"
+    },
+    {
+      "id": 648,
+      "level": 48,
+      "req": 43,
+      "xp": 5450,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Tanaris"
+    },
+    {
+      "id": 669,
+      "level": 40,
+      "req": 35,
+      "xp": 3150,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Arathi Highlands"
+    },
+    {
+      "id": 836,
+      "level": 48,
+      "req": 43,
+      "xp": 5450,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "The Hinterlands"
+    },
+    {
+      "id": 1040,
+      "level": 30,
+      "req": 25,
+      "xp": 610,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "The Barrens"
+    },
+    {
+      "id": 1115,
+      "level": 36,
+      "req": 30,
+      "xp": 1400,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Thousand Needles"
+    },
+    {
+      "id": 1118,
+      "level": 43,
+      "req": 35,
+      "xp": 890,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Thousand Needles"
+    },
+    {
+      "id": 1122,
+      "level": 44,
+      "req": 35,
+      "xp": 1850,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Thousand Needles"
+    },
+    {
+      "id": 1180,
+      "level": 37,
+      "req": 29,
+      "xp": 710,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "The Barrens"
+    },
+    {
+      "id": 2767,
+      "level": 45,
+      "req": 40,
+      "xp": 4850,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Feralas"
+    },
+    {
+      "id": 2874,
+      "level": 45,
+      "req": 40,
+      "xp": 3900,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Tanaris"
+    },
+    {
+      "id": 4781,
+      "level": 34,
+      "req": 31,
+      "xp": 2000,
+      "part": 1,
+      "section": 0,
+      "tag": "Warlock",
+      "from": "The Barrens"
+    },
+    {
+      "id": 5762,
+      "level": 31,
+      "req": 28,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Thousand Needles"
+    },
+    {
+      "id": 187,
+      "level": 35,
+      "req": 28,
+      "xp": 2050,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 189,
+      "level": 35,
+      "req": 30,
+      "xp": 2050,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 194,
+      "level": 34,
+      "req": 28,
+      "xp": 1350,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 195,
+      "level": 36,
+      "req": 28,
+      "xp": 1400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 204,
+      "level": 34,
+      "req": 30,
+      "xp": 2700,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 210,
+      "level": 37,
+      "req": 32,
+      "xp": 1400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 213,
+      "level": 36,
+      "req": 31,
+      "xp": 2800,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 574,
+      "level": 38,
+      "req": 30,
+      "xp": 2850,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 577,
+      "level": 36,
+      "req": 31,
+      "xp": 1400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 605,
+      "level": 35,
+      "req": 30,
+      "xp": 2750,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 616,
+      "level": 37,
+      "req": 32,
+      "xp": 285,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 188,
+      "level": 37,
+      "req": 28,
+      "xp": 2850,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 192,
+      "level": 38,
+      "req": 28,
+      "xp": 2150,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 207,
+      "level": 38,
+      "req": 30,
+      "xp": 3550,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 578,
+      "level": 37,
+      "req": 32,
+      "xp": 2850,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 601,
+      "level": 37,
+      "req": 32,
+      "xp": 2850,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 628,
+      "level": 38,
+      "req": 31,
+      "xp": 2850,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 193,
+      "level": 40,
+      "req": 28,
+      "xp": 3150,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 196,
+      "level": 41,
+      "req": 28,
+      "xp": 2450,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 202,
+      "level": 40,
+      "req": 30,
+      "xp": 3150,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 205,
+      "level": 40,
+      "req": 30,
+      "xp": 3150,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 209,
+      "level": 42,
+      "req": 37,
+      "xp": 3450,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 576,
+      "level": 42,
+      "req": 37,
+      "xp": 2550,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 587,
+      "level": 41,
+      "req": 37,
+      "xp": 1650,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 595,
+      "level": 41,
+      "req": 37,
+      "xp": 2450,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 597,
+      "level": 41,
+      "req": 37,
+      "xp": 2450,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 599,
+      "level": 41,
+      "req": 37,
+      "xp": 820,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 600,
+      "level": 41,
+      "req": 30,
+      "xp": 3300,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 606,
+      "level": 41,
+      "req": 30,
+      "xp": 820,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 607,
+      "level": 41,
+      "req": 30,
+      "xp": 2450,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 197,
+      "level": 43,
+      "req": 28,
+      "xp": 3600,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 208,
+      "level": 43,
+      "req": 28,
+      "xp": 5350,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 348,
+      "level": 45,
+      "req": 40,
+      "xp": 5850,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 604,
+      "level": 43,
+      "req": 37,
+      "xp": 3600,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 609,
+      "level": 44,
+      "req": 30,
+      "xp": 3750,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 613,
+      "level": 44,
+      "req": 30,
+      "xp": 4650,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 617,
+      "level": 43,
+      "req": 38,
+      "xp": 3600,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 621,
+      "level": 44,
+      "req": 35,
+      "xp": 3750,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8552,
+      "level": 50,
+      "req": 40,
+      "xp": 2350,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8553,
+      "level": 50,
+      "req": 40,
+      "xp": 470,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 206,
+      "level": 46,
+      "req": 30,
+      "xp": 5050,
+      "part": 6,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8551,
+      "level": 47,
+      "req": 35,
+      "xp": 3150,
+      "part": 6,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 608,
+      "level": 45,
+      "req": 37,
+      "xp": 4850,
+      "part": 7,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8554,
+      "level": 50,
+      "req": 40,
+      "xp": 7100,
+      "part": 8,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Arathi Highlands": 2,
+    "Duskwood": 1,
+    "Thousand Needles": 3,
+    "The Barrens": 1,
+    "Alterac Mountains": 1,
+    "Dustwallow Marsh": 1,
+    "Tanaris": 2
+  }
+}

@@ -1,0 +1,180 @@
+Teldrassil - Alliance - part 1 of 2, planned from level 1
+Guide "1-14 Teldrassil" in group "Zone Routes (Alliance)": this part has 246 steps, 165 stops
+Written to guides/classic/Teldrassil (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 10 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+11 pickups or hand-ins are within reach of a stop but planned for later.
+11 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 144 steps kept, 51 new ones slotted in, 4 moved because their prerequisites changed, 4 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 131 tasks, 27,655 yd on foot; ends at level 10.5; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  NightElf: 5 more tasks; their whole route comes to 29,716 yd; ends at level 10.5; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  Warrior: 6 more tasks; their whole route comes to 29,099 yd; ends at level 10.6; 2 hearths; at its hardest you are 3.2 levels below the mobs
+  Rogue: 5 more tasks; their whole route comes to 30,240 yd; ends at level 10.7; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  Human Priest/Dwarf Priest: 1 more tasks; their whole route comes to 27,679 yd; ends at level 10.5; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  NightElf Warrior: 2 more tasks; their whole route comes to 30,937 yd; ends at level 10.7; 2 hearths; at its hardest you are 3.2 levels below the mobs
+  NightElf Hunter: 15 more tasks; their whole route comes to 34,649 yd; ends at level 10.9; 2 hearths; at its hardest you are 3.5 levels below the mobs
+  NightElf Rogue: 2 more tasks; their whole route comes to 32,330 yd; ends at level 10.7; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  NightElf Priest: 8 more tasks; their whole route comes to 29,938 yd; ends at level 10.6; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  NightElf Druid: 5 more tasks; their whole route comes to 30,850 yd; ends at level 10.5; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 29,166 yd; ends at level 10.5; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  NightElf (quests that depend on other zones): 1 more tasks; their whole route comes to 31,238 yd; ends at level 10.5; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  Warrior (quests that depend on other zones): 4 more tasks; their whole route comes to 30,324 yd; ends at level 10.6; 2 hearths; at its hardest you are 3.2 levels below the mobs
+  NightElf Hunter (quests that depend on other zones): 3 more tasks; their whole route comes to 36,231 yd; ends at level 10.9; 2 hearths; at its hardest you are 3.5 levels below the mobs
+  NightElf Priest (quests that depend on other zones): 5 more tasks; their whole route comes to 31,471 yd; ends at level 10.6; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  NightElf Druid (quests that depend on other zones): 4 more tasks; their whole route comes to 32,543 yd; ends at level 10.5; 2 hearths; at its hardest you are 2.8 levels below the mobs
+Hearthstone: set at Innkeeper Keldamyr (Innkeeper Keldamyr's inn); 2 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 10 for The Hunter's Path (NightElf Hunter)
+  level 10 for Heeding the Call (NightElf Druid)
+  level 10 for Stars of Elune (NightElf Priest)
+  level 10 for Desperate Prayer (Human Priest/Dwarf Priest)
+48 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+6 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+6 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+5 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (87)
+------------------------
+Start to finish here: 64 (45 for everyone, 6 NightElf Hunter, 3 NightElf Priest, 2 Warrior, 2 Rogue, 2 NightElf Druid, 2 NightElf, 1 NightElf Warrior, 1 NightElf Rogue)
+
+Picked up here, handed in elsewhere - these stay in the log (4):
+  Desperate Prayer [5636, level 10, Human Priest/Dwarf Priest] -> Stormwind City
+  Moonglade [5921, level 10, NightElf Druid] -> Moonglade
+  Flight to Auberdine [6342, level 10, NightElf] -> Darkshore
+  Grove of the Ancients [952, level 11] -> Darkshore
+
+Hand-in step only shows once complete (2):
+  Ferocitas the Dream Eater [2459, level 8] - needs Tallonkai's Jewel (1) (an unknown place)
+  The Shade of Elura [1686, level 10, Warrior] - needs Elunite Ore (1) (Darkshore); Elura's Medallion (1) (Darkshore)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (12):
+  Returning Home [5628, level 10, NightElf Priest] <- Elwynn Forest
+  Returning Home [5630, level 10, NightElf Priest] <- Dun Morogh
+  Returning Home [5631, level 10, NightElf Priest] <- Stormwind City
+  Returning Home [5632, level 10, NightElf Priest] <- Stormwind City
+  Returning Home [5633, level 10, NightElf Priest] <- Ironforge
+  Heeding the Call [5924, level 10, NightElf Druid] <- Stormwind City
+  Back to Darnassus [5931, level 10, NightElf Druid] <- Moonglade
+  The Hunter's Path [6073, level 10, NightElf Hunter] <- Stormwind City
+  Return to Nessa [6343, level 10, NightElf] <- Darkshore
+  The Hunter's Path [6721, level 10, NightElf Hunter] <- Ironforge
+  The Hunter's Path [6722, level 10, NightElf Hunter] <- Dun Morogh
+  Power over Poison [6125, level 14, NightElf Druid] <- Moonglade
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Smith Mathiel [1692, level 10, Warrior] - needs one of The Shade of Elura [1686]
+  Weapons of Elunite [1693, level 10, Warrior] - needs one of Smith Mathiel [1692]
+  Body and Heart [6001, level 10, NightElf Druid] - needs one of Back to Darnassus [5931]
+  Planting the Heart [941, level 12] - needs one of The Moss-twined Heart [927]
+
+Worth checking in game
+----------------------
+No objectives in the database (the hand-in step warns about it; add "objectives" for these to the zone file):
+  Stars of Elune [5627, level 10, NightElf Priest]
+1 quests have no experience figure in the database: their experience is estimated, and 1 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  Stars of Elune [5627]
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  Trouble In Darkshore? [730, level 14]: needs level 14; this part gets you to about 10.5
+  Lessons Anew [6121, level 14]: needs level 14; this part gets NightElf Druid characters to about 10.5
+
+Left out (146)
+--------------
+above this zone's range of 1-14 (67):
+  A Lesson to Learn [26], Rise of the Silithid [162], The Absent Minded Prospector [741], The Absent Minded Prospector [942], Moontouched Wildkin [978], Find Ranshalla [979], The New Frontier [1015], The New Frontier [1019], Velinde Starsong [1037], Velinde's Effects [1038], The Barrens Port [1039], Answered Questions [1044], The New Frontier [1047], Reception from Tyrande [1081], Mortality Wanes [1142], Yorus Barleybrew [1698], Mathiel [1703], Sunscorched Shells [1710], Mathiel's Armor [1711], Erion Shadewhisper [2259], Erion's Behest [2260], Klockmort's Essentials [2925], In Search of Knowledge [2939], Feralas: A History [2940], The Borrower [2941], Return to Troyas [2943], The Super Snapper FX [2944], Doling Justice [2972], Handle With Care [3022], In Nightmares [3370], Prayer to Elune [3378], Favored of Elune? [3661], Assisting Arch Druid Staghelm [3763], Un'Goro Soil [3764], Morrowgrain Research [3781], Morrowgrain Research [3785], Assisting Arch Druid Staghelm [3789], Assisting Arch Druid Staghelm [3790], Rise of the Silithid [4267], March of the Silithid [4493], ... 27 more
+repeatable (30):
+  Morrowgrain to Darnassus [3803], Frostsaber Replacement [7671], Nightsaber Replacement [7672], Additional Runecloth [7801], Dancing for Marzipan [8357], Remember Alterac Valley! [8383], Claiming Arathi Basin [8384], Concerted Efforts [8385], Fight for Warsong Gulch [8386], Claiming Arathi Basin [8391], Claiming Arathi Basin [8392], Claiming Arathi Basin [8397], Claiming Arathi Basin [8398], Fight for Warsong Gulch [8404], Fight for Warsong Gulch [8405], Fight for Warsong Gulch [8406], Fight for Warsong Gulch [8407], Fight for Warsong Gulch [8408], One Commendation Signet [8813], Ten Commendation Signets [8821], One Commendation Signet [8836], Ten Commendation Signets [8837], Gift Giving [8993], Argent Dawn Gloves [9094], Consecrated Sharpening Stones [9317], Blessed Wizard Oil [9318], Major Healing Potion [9321], Major Mana Potion [9337], Tabard of the Argent Dawn [9341], A Light in Dark Places [9386]
+dungeon quest (16):
+  In Search of Thaelrid [1198], Twilight Falls [1199], Blackfathom Villainy [1200], Feathermoon Stronghold [7494], Fight for Warsong Gulch [8372], Claiming Arathi Basin [8374], Remember Alterac Valley! [8375], Claiming Arathi Basin [8393], Claiming Arathi Basin [8394], Claiming Arathi Basin [8395], Claiming Arathi Basin [8396], Fight for Warsong Gulch [8399], Fight for Warsong Gulch [8400], Fight for Warsong Gulch [8401], Fight for Warsong Gulch [8402], Fight for Warsong Gulch [8403]
+special category (sort -369) (10):
+  A Light in Dark Places [9319], Wild Fires in Kalimdor [9322], Wild Fires in the Eastern Kingdoms [9323], Stealing Orgrimmar's Flame [9324], Stealing Thunder Bluff's Flame [9325], Stealing the Undercity's Flame [9326], A Thief's Reward [9365], The Festival of Fire [9367], Flickering Flames in Kalimdor [9388], Flickering Flames in the Eastern Kingdoms [9389]
+special category (sort -366) (7):
+  Bladeleaf the Elder [8715], Bladeswift the Elder [8718], Lunar Fireworks [8867], The Lunar Festival [8870], The Lunar Festival [8871], The Lunar Festival [8872], Valadar Starsong [8883]
+needs a profession (4):
+  Elixirs for the Bladeleafs [1581], Moonglow Vest [1582], Master of the Wild Leather [2853], Recipe of the Kaldorei [4161]
+needs reputation (2):
+  Eranikus, Tyrant of the Dream [8733], Tyrande and Remulos [8734]
+special category (sort -368) (2):
+  Light's Hope Chapel [9154], Investigate the Scourge of Darnassus [9262]
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  The Moss-twined Heart [927]
+cannot be taken together with Stars of Elune [5627], which is in the guide (1):
+  Returning Home [5629]
+cannot be taken together with Desperate Prayer [5636], which is in the guide (1):
+  Desperate Prayer [5640]
+handed in here, but the database does not say where it starts (1):
+  Welcome! [5842]
+cannot be taken together with Heeding the Call [5923], which is in the guide (1):
+  Heeding the Call [5925]
+cannot be taken together with The Hunter's Path [6071], which is in the guide (1):
+  The Hunter's Path [6072]
+special category (sort -365) (1):
+  The Alliance Needs Your Help! [8797]
+special category (sort -22) (1):
+  Dearest Colara, [8899]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Teldrassil - Alliance - part 2 of 2, planned from level 15
+Guide "1-14 Teldrassil" in group "Zone Routes (Alliance)": this part has 17 steps, 7 stops
+Written to guides/classic/Teldrassil (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (NightElf Druid), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 15. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 5 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 2,506 yd on foot; ends at level 15.0
+  NightElf Druid: 1 more tasks; their whole route comes to 2,976 yd; ends at level 15.0
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 5,656 yd; ends at level 15.0
+  Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 5,798 yd; ends at level 15.0
+  NightElf Priest (quests that depend on other zones): 1 more tasks; their whole route comes to 5,657 yd; ends at level 15.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+5 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (5)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Trouble In Darkshore? [730, level 14] -> Darkshore
+  Lessons Anew [6121, level 14, NightElf Druid] -> Moonglade
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Ferocitas the Dream Eater [2459, level 8] <- your earlier visit to this zone
+  The Shade of Elura [1686, level 10, Warrior] <- your earlier visit to this zone
+  Stars of Elune [5627, level 10, NightElf Priest] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

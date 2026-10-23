@@ -6,14 +6,17 @@ namespace RouteBuilder;
 public static class Program
 {
     const string Help = """
-        RouteBuilder - builds RestedXP (RXPGuides) zone routes for WoW Forever from QuestieDB's data.
+        RouteBuilder - builds RestedXP (RXPGuides) zone routes from QuestieDB's data.
 
-          RouteBuilder update [--data <folder>] [--lua <path>] [--no-download]
-              Fetches QuestieDB into <folder> (default: QuestieDB) and runs its export. Do this first, and
-              again whenever you want fresher data.
+        Every command takes --game forever|classic (default: forever). Each game has its own data export and its
+        own zone files, locks and guides: zones/, locks/ and guides/ for Forever, zones/classic/ and so on for the others.
 
-          RouteBuilder zones [--faction Horde|Alliance] [--data <folder>]
-              Lists the zones with their quest counts and level ranges.
+          RouteBuilder update [--game <game>] [--data <folder>] [--lua <path>] [--no-download]
+              Fetches QuestieDB into <folder> (default: QuestieDB) and runs the export for the game. Do this first,
+              and again whenever you want fresher data.
+
+          RouteBuilder zones [--game <game>] [--faction Horde|Alliance] [--data <folder>] [--list]
+              Lists the zones with their quest counts and level ranges (--list: only the names "build --zone all" takes).
 
           RouteBuilder build --zone "<name>" [--faction Horde|Alliance] [--race <race> --class <class>]
               Writes one guide for the zone, plus a report next to it.
@@ -21,9 +24,9 @@ public static class Program
               tagged so they only show for those characters. With them, it is tuned for that character.
 
               --zone all             every zone that has at least five quests for the faction
-              --out <folder>         where guides go (default: guides)
+              --out <folder>         where guides go (default: guides, or guides/<game>)
               --data <folder>        the QuestieDB folder (default: QuestieDB)
-              --zone-file <path>     corrections file (default: zones/<zone name>.json if it exists)
+              --zone-file <path>     corrections file (default: zones/<zone name>.json, or zones/<game>/..., if it exists)
               --rxp <folder>         a RestedXP "Guides" folder: objective numbers are checked against it, and its
                                      training, vendor and flight-path steps are copied in (--no-rxp-steps: not)
               --start-level <n>      level the player arrives at (default: the zone's lowest quest level)
@@ -33,7 +36,7 @@ public static class Program
               --order-from <guide>   keep the step order of a guide built earlier (for guides made before locks/)
               --effort <x>           search effort from 0.01 to 100: 1 = normal, 0.2 = quick look, 3 = slow and thorough
 
-          RouteBuilder link [--out <folder>]
+          RouteBuilder link [--game <game>] [--out <folder>]
               Suggests where to go next. Each build saves a summary next to its guide (.meta.json); this reads
               them all and writes into every guide the zones that suit its end level best (and those for each
               "come back at level N" break), with "#next" so RestedXP loads the best one when the guide ends.
@@ -51,13 +54,14 @@ public static class Program
         {
             if (!argv[i].StartsWith("--")) { Console.Error.WriteLine($"Unexpected argument: {argv[i]}"); return 2; }
             string key = argv[i][2..];
-            if (key is "no-hearth" or "no-download" or "fresh" or "no-rxp-steps") opt[key] = "1";
+            if (key is "no-hearth" or "no-download" or "fresh" or "no-rxp-steps" or "list") opt[key] = "1";
             else if (i + 1 < argv.Length) opt[key] = argv[++i];
             else { Console.Error.WriteLine($"--{key} needs a value"); return 2; }
         }
         string data = opt.GetValueOrDefault("data", "QuestieDB");
         try
         {
+            Games.Use(opt.GetValueOrDefault("game"));
             foreach (var p in new[] { Path.Combine(AppContext.BaseDirectory, "settings.json"), "settings.json" }.Distinct()) Tuning.Load(p);
             switch (argv[0].ToLowerInvariant())
             {
@@ -66,9 +70,9 @@ public static class Program
                     var d = GameData.Load(data);
                     Console.WriteLine($"Ready: {d.Quests.Count:N0} quests, {d.Npcs.Count:N0} NPCs, {d.Objects.Count:N0} objects, {d.Items.Count:N0} items ({d.Version}).");
                     return 0;
-                case "zones": return Zones(GameData.Load(data), Faction(opt));
+                case "zones": return Zones(GameData.Load(data), Faction(opt), opt.ContainsKey("list"));
                 case "build": return Build(data, opt);
-                case "link": return Linker.Run(opt.GetValueOrDefault("out", "guides"));
+                case "link": return Linker.Run(opt.GetValueOrDefault("out", Games.Current.Folder("guides")));
                 default: Console.Error.WriteLine($"Unknown command '{argv[0]}'.\n"); Console.WriteLine(Help); return 2;
             }
         }
@@ -96,14 +100,20 @@ public static class Program
         return rows.OrderBy(r => r.Item3).ThenBy(r => r.Item4).ThenBy(r => r.Item1.Name).ToList();
     }
 
-    static int Zones(GameData d, string faction)
+    static int Zones(GameData d, string faction, bool list)
     {
+        if (list)
+        {
+            // just the names of the zones "build --zone all" builds, one per line (for scripts)
+            foreach (var (a, count, _, _) in ZoneList(d, faction)) if (count >= 5 && ZoneModel.CityParent(a.Id) == null) Console.WriteLine(a.Name);
+            return 0;
+        }
         Console.WriteLine($"Zones with {faction} quests ({d.Version}):\n");
         Console.WriteLine($"  {"Zone",-28}{"Quests",7}  {"Levels",-8} {"Build to",-9}Notes");
         foreach (var (a, count, lo, hi) in ZoneList(d, faction))
         {
             // the highest quest level a build of this zone lets in: the same rule as ZoneModel's level window
-            string file = Path.Combine("zones", a.Name + ".json"); bool hasFile = File.Exists(file);
+            string file = Path.Combine(Games.Current.Folder("zones"), a.Name + ".json"); bool hasFile = File.Exists(file);
             int? fileMax = null;
             if (hasFile) try { fileMax = ZoneConfig.Load(file).MaxLevel; } catch { }
             string upTo = fileMax != null ? fileMax + " *" : Math.Min(Game.MaxLevel, count >= 5 ? hi + Tuning.ZoneLevelSlack : Game.MaxLevel).ToString();
@@ -136,7 +146,7 @@ public static class Program
             Faction = faction, Race = opt.GetValueOrDefault("race"), Class = opt.GetValueOrDefault("class"), NoHearth = opt.ContainsKey("no-hearth"), Fresh = opt.ContainsKey("fresh"), NoRxpSteps = opt.ContainsKey("no-rxp-steps"), OrderFrom = opt.GetValueOrDefault("order-from"), RxpDir = opt.GetValueOrDefault("rxp"),
             StartLevel = Num(opt, "start-level"), MinLevel = (int?)Num(opt, "min-level"), MaxLevel = (int?)Num(opt, "max-level"),
         };
-        string outDir = opt.GetValueOrDefault("out", "guides");
+        string outDir = opt.GetValueOrDefault("out", Games.Current.Folder("guides"));
         Directory.CreateDirectory(outDir);
 
         if (!zone.Equals("all", StringComparison.OrdinalIgnoreCase))
@@ -159,7 +169,7 @@ public static class Program
     static bool BuildOne(GameData data, AreaInfo area, BuildOptions bo, string outDir, string? zoneFile, Stopwatch sw)
     {
         if (ZoneModel.CityParent(area.Id) is { } parent) throw new InvalidOperationException($"{area.Name} is planned as part of {data.AreaName(parent)}; build that zone instead");
-        zoneFile ??= new[] { Path.Combine("zones", area.Name + ".json"), Path.Combine(AppContext.BaseDirectory, "zones", area.Name + ".json") }.FirstOrDefault(File.Exists);
+        zoneFile ??= new[] { Path.Combine(Games.Current.Folder("zones"), area.Name + ".json"), Path.Combine(AppContext.BaseDirectory, Games.Current.Folder("zones"), area.Name + ".json") }.FirstOrDefault(File.Exists);
         if (zoneFile != null && !File.Exists(zoneFile)) throw new InvalidOperationException($"zone file not found: {zoneFile}");
         Console.WriteLine($"\n{area.Name} ({bo.Faction}{(bo.Race != null ? ", " + bo.Race : "")}{(bo.Class != null ? ", " + bo.Class : "")}){(zoneFile != null ? "  using " + zoneFile : "")}");
         var cfg = zoneFile != null ? ZoneConfig.Load(zoneFile) : null;

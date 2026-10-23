@@ -1,0 +1,184 @@
+The Hinterlands - Horde - part 1 of 3, planned from level 43
+Guide "43-53 The Hinterlands" in group "Zone Routes (Horde)": this part has 11 steps, 7 stops
+Written to guides/classic/The Hinterlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 43. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 5 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed, 75 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 2 tasks, 576 yd on foot; ends at level 43.0
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 4,900 yd; ends at level 43.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+
+Quests in the guide (6)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Venom Bottles [2933, level 43] -> Hillsbrad Foothills
+
+Hand-in step only shows once complete (1):
+  Jammal'an the Prophet [1446, level 53] - needs Head of Jammal'an (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  The Atal'ai Exile [1429, level 44] <- Swamp of Sorrows
+  Ripple Recovery [650, level 48] <- Orgrimmar
+  Cortello's Riddle [626, level 51] <- Dustwallow Marsh
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Return to Fel'Zerul [1444, level 44] - needs one of The Atal'ai Exile [1429] -> Swamp of Sorrows
+
+Worth checking in game
+----------------------
+
+Put off to a later part (24)
+----------------------------
+These need a higher level than this part ends at:
+  A Sticky Situation [77, level 48]: is a level 48 quest; this part gets you to about 44.4
+  Ripple Delivery [81, level 48]: follows A Sticky Situation [77]
+  Find OOX-09/HL! [485, level 48]: follows Snapjaws, Mon! [7815]
+  Rescue OOX-09/HL! [836, level 48]: is a level 48 quest; this part gets you to about 44.4
+  Rin'ji is Trapped! [2742, level 47]: is a level 47 quest; this part gets you to about 43.5
+  Rin'ji's Secret [2782, level 47]: follows Rin'ji is Trapped! [2742]
+  Snapjaws, Mon! [7815, level 50]: its mobs are level 49; this part gets you to about 44.4
+  Gammerita, Mon! [7816, level 48]: its mobs are level 48; this part gets you to about 44.4
+  Stalking the Stalkers [7828, level 48]: its mobs are level 47; this part gets you to about 44.4
+  Hunt the Savages [7829, level 48]: needs level 44; this part gets you to about 43.5
+  Avenging the Fallen [7830, level 48]: its mobs are level 47; this part gets you to about 44.4
+  Vilebranch Hooligans [7839, level 48]: is a level 48 quest; this part gets you to about 44.4
+  Lard Lost His Lunch [7840, level 49]: its mobs are level 49; this part gets you to about 44.4
+  Message to the Wildhammer [7841, level 48]: needs level 44; this part gets you to about 43.5
+  Another Message to the Wildhammer [7842, level 48]: needs level 44; this part gets you to about 43.5
+  The Final Message to the Wildhammer [7843, level 50]: is a level 50 quest; this part gets you to about 44.4
+  Cannibalistic Cousins [7844, level 48]: needs level 44; this part gets you to about 43.5
+  Kidnapped Elder Torntusk! [7845, level 51]: needs level 46; this part gets you to about 44.4
+  Recover the Key! [7846, level 51]: its mobs are level 51; this part gets you to about 44.4
+  Return to Primal Torntusk [7847, level 51]: needs level 46; this part gets you to about 44.4
+  Separation Anxiety [7849, level 50]: is a level 50 quest; this part gets you to about 44.4
+  Dark Vessels [7850, level 50]: is a level 50 quest; this part gets you to about 44.4
+  Wanted: Vile Priestess Hexx and Her Minions [7861, level 51]: its mobs are level 51; this part gets you to about 44.4
+  Job Opening: Guard Captain of Revantusk Village [7862, level 51]: its mobs are level 49; this part gets you to about 44.4
+
+Left out (28)
+-------------
+repeatable (13):
+  Invaders of Alterac Valley [8387], For Great Honor [8388], Battle of Warsong Gulch [8389], Conquering Arathi Basin [8390], Battle of Warsong Gulch [8431], Battle of Warsong Gulch [8432], Battle of Warsong Gulch [8433], Battle of Warsong Gulch [8434], Battle of Warsong Gulch [8435], Conquering Arathi Basin [8440], Conquering Arathi Basin [8441], Conquering Arathi Basin [8442], Conquering Arathi Basin [8443]
+dungeon quest (12):
+  Battle of Warsong Gulch [8368], Invaders of Alterac Valley [8369], Conquering Arathi Basin [8370], Battle of Warsong Gulch [8426], Battle of Warsong Gulch [8427], Battle of Warsong Gulch [8428], Battle of Warsong Gulch [8429], Battle of Warsong Gulch [8430], Conquering Arathi Basin [8436], Conquering Arathi Basin [8437], Conquering Arathi Basin [8438], Conquering Arathi Basin [8439]
+above this zone's range of 42-53 (1):
+  For Great Honor [8367]
+special category (sort -1) (1):
+  Shrouded in Nightmare [8446]
+special category (sort -366) (1):
+  Highpeak the Elder [8643]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Hinterlands - Horde - part 2 of 3, planned from level 46
+Guide "43-53 The Hinterlands" in group "Zone Routes (Horde)": this part has 62 steps, 48 stops
+Written to guides/classic/The Hinterlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 9 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+5 pickups or hand-ins are within reach of a stop but planned for later.
+3 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 46. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 63 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 59 tasks, 21,657 yd on foot; ends at level 47.0; 2 hearths; at its hardest you are 3.0 levels below the mobs
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 23,856 yd; ends at level 47.0; 1 hearth; at its hardest you are 3.0 levels below the mobs
+Hearthstone: set at Lard (Lard's inn); 2 hearth steps in the guide.
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+7 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (22)
+------------------------
+Start to finish here: 17 (17 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Rin'ji's Secret [2782, level 47] -> Undercity
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Jammal'an the Prophet [1446, level 53] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  A Sticky Situation [77, level 48] - needs one of Ripple Recovery [650]
+  Ripple Delivery [81, level 48] - needs one of A Sticky Situation [77] -> Orgrimmar
+  Rescue OOX-09/HL! [836, level 48] - needs one of Find OOX-09/HL! [485] -> Stranglethorn Vale
+
+Worth checking in game
+----------------------
+
+Put off to a later part (3)
+---------------------------
+These need a higher level than this part ends at:
+  Recover the Key! [7846, level 51]: its mobs are level 51; this part gets you to about 47.2
+  Return to Primal Torntusk [7847, level 51]: follows Recover the Key! [7846]
+  Wanted: Vile Priestess Hexx and Her Minions [7861, level 51]: its mobs are level 51; this part gets you to about 47.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Hinterlands - Horde - part 3 of 3, planned from level 50
+Guide "43-53 The Hinterlands" in group "Zone Routes (Horde)": this part has 13 steps, 10 stops
+Written to guides/classic/The Hinterlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 50. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 9 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 9 tasks, 2,711 yd on foot; ends at level 50.1
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 4,429 yd; ends at level 50.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 3 (3 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Jammal'an the Prophet [1446, level 53] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

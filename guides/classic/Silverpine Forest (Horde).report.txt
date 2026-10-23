@@ -1,0 +1,237 @@
+Silverpine Forest - Horde - part 1 of 4, planned from level 10
+Guide "10-22 Silverpine Forest" in group "Zone Routes (Horde)": this part has 54 steps, 38 stops
+Written to guides/classic/Silverpine Forest (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Undead Warrior), not counting quests brought in from other zones.
+6 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 10. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 40 steps kept, 12 new ones slotted in, 0 moved because their prerequisites changed, 11 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 40 tasks, 7,483 yd on foot; ends at level 11.4; 1 hearth; at its hardest you are 2.3 levels below the mobs
+  Undead: 3 more tasks; their whole route comes to 7,597 yd; ends at level 11.5; 1 hearth; at its hardest you are 2.3 levels below the mobs
+  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 9,460 yd; ends at level 11.4; 1 hearth; at its hardest you are 2.6 levels below the mobs
+  Undead (quests that depend on other zones): 1 more tasks; their whole route comes to 9,539 yd; ends at level 11.5; 1 hearth; at its hardest you are 2.5 levels below the mobs
+Hearthstone: set at Innkeeper Bates (Innkeeper Bates's inn); 1 hearth step in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 10 for Lost Deathstalkers
+9 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+3 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (25)
+------------------------
+Start to finish here: 15 (14 for everyone, 1 Undead)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Ride to the Undercity [6323, level 10, Undead] -> Undercity
+  A Recipe For Death [447, level 12] -> Undercity
+  Zinge's Delivery [1359, level 15] -> Undercity
+
+Brought in from another zone and handed in here - steps show only if you have the quest (6):
+  Delivery to Silverpine Forest [445, level 10] <- Tirisfal Glades
+  Return to Podrig [6324, level 10, Undead] <- Undercity
+  Until Death Do Us Part [264, level 15] <- Thunder Bluff
+  A Recipe For Death [450, level 15] <- Undercity
+  Mura Runetotem [3301, level 15] <- The Barrens
+  Thule Ravenclaw [446, level 16] <- Undercity
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Report to Hadrec [448, level 16] - needs one of Thule Ravenclaw [446]
+
+Worth checking in game
+----------------------
+1 quests have no experience figure in the database: their experience is estimated, and 1 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  Lost Deathstalkers [428]
+
+Put off to a later part (17)
+----------------------------
+These need a higher level than this part ends at:
+  Arugal's Folly [99, level 15]: follows Arugal's Folly [424]
+  Arugal's Folly [424, level 15]: its mobs are level 15; this part gets you to about 13.0
+  The Dead Fields [437, level 14]: its mobs are level 14; this part gets you to about 11.9
+  The Decrepit Ferry [438, level 16]: follows The Dead Fields [437]
+  Rot Hide Clues [439, level 16]: follows The Decrepit Ferry [438]
+  The Engraved Ring [440, level 16]: follows Rot Hide Clues [439]
+  Rot Hide Ichor [443, level 17]: its mobs are level 17; this part gets you to about 13.0
+  Rot Hide Origins [444, level 17]: follows Rot Hide Ichor [443]
+  A Recipe For Death [451, level 18]: its mobs are level 18; this part gets you to about 13.0
+  Pyrewood Ambush [452, level 15]: needs level 12; this part gets you to about 12.1
+  Resting in Pieces [460, level 17]: follows Rot Hide Ichor [443]
+  The Hidden Niche [461, level 18]: follows Resting in Pieces [460]
+  Ambermill Investigations [479, level 16]: its mobs are level 14; this part gets you to about 11.9
+  The Weaver [480, level 22]: its mobs are level 22; this part gets you to about 13.0
+  Wand to Bethor [491, level 18]: follows The Hidden Niche [461]
+  Journey to Hillsbrad Foothills [493, level 20]: needs level 19; this part gets you to about 13.0
+  Beren's Peril [516, level 21]: its mobs are level 20; this part gets you to about 13.0
+
+Left out (10)
+-------------
+above this zone's range of 10-22 (4):
+  Call of Water [63], Call of Water [96], Call of Water [100], Assault on Fenris Isle [442]
+dungeon quest (2):
+  Arugal Must Die [1014], Deathstalkers in Shadowfang [1098]
+needs reputation (2):
+  Stewvul, Ex-B.F.F. [8577], Scrying Goggles? No Problem! [8578]
+repeatable (1):
+  Call of Water [1103]
+special category (sort -366) (1):
+  Obsidian the Elder [8645]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Silverpine Forest - Horde - part 2 of 4, planned from level 14
+Guide "10-22 Silverpine Forest" in group "Zone Routes (Horde)": this part has 21 steps, 18 stops
+Written to guides/classic/Silverpine Forest (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 14. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 8 steps kept, 13 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 21 tasks, 5,381 yd on foot; ends at level 14.7
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 7 (7 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Engraved Ring [440, level 16] -> Tirisfal Glades
+
+Worth checking in game
+----------------------
+  The Dead Fields [437, level 14]: "Enter the Dead Fields" is assumed to be line 2 in the quest log; check it
+  The Dead Fields [437, level 14]: objective "Essence of Nightlash (1)" moved from line 1 to line 2 to match RestedXP's guide
+  The Dead Fields [437, level 14]: objective "Enter the Dead Fields" moved from line 2 to line 1 to match RestedXP's guide
+
+Put off to a later part (9)
+---------------------------
+These need a higher level than this part ends at:
+  Rot Hide Ichor [443, level 17]: its mobs are level 17; this part gets you to about 14.8
+  Rot Hide Origins [444, level 17]: follows Rot Hide Ichor [443]
+  A Recipe For Death [451, level 18]: its mobs are level 18; this part gets you to about 15.1
+  Resting in Pieces [460, level 17]: follows Rot Hide Ichor [443]
+  The Hidden Niche [461, level 18]: follows Resting in Pieces [460]
+  The Weaver [480, level 22]: its mobs are level 22; this part gets you to about 15.1
+  Wand to Bethor [491, level 18]: follows The Hidden Niche [461]
+  Journey to Hillsbrad Foothills [493, level 20]: needs level 19; this part gets you to about 15.1
+  Beren's Peril [516, level 21]: its mobs are level 20; this part gets you to about 15.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Silverpine Forest - Horde - part 3 of 4, planned from level 17
+Guide "10-22 Silverpine Forest" in group "Zone Routes (Horde)": this part has 15 steps, 12 stops
+Written to guides/classic/Silverpine Forest (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 17. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 12 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 5 tasks, 2,286 yd on foot; ends at level 17.1
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 3,401 yd; ends at level 17.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (6)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Rot Hide Origins [444, level 17] -> Undercity
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  A Recipe For Death [451, level 18] - needs one of A Recipe For Death [450] -> Undercity
+  The Hidden Niche [461, level 18] - needs one of Resting in Pieces [460]
+  Wand to Bethor [491, level 18] - needs one of The Hidden Niche [461] -> Undercity
+
+Worth checking in game
+----------------------
+
+Put off to a later part (3)
+---------------------------
+These need a higher level than this part ends at:
+  The Weaver [480, level 22]: its mobs are level 22; this part gets you to about 17.3
+  Journey to Hillsbrad Foothills [493, level 20]: needs level 19; this part gets you to about 17.3
+  Beren's Peril [516, level 21]: its mobs are level 20; this part gets you to about 17.3
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Silverpine Forest - Horde - part 4 of 4, planned from level 20
+Guide "10-22 Silverpine Forest" in group "Zone Routes (Horde)": this part has 8 steps, 7 stops
+Written to guides/classic/Silverpine Forest (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 20. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 8 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 8 tasks, 2,474 yd on foot; ends at level 20.2; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (3)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Journey to Hillsbrad Foothills [493, level 20] -> Hillsbrad Foothills
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

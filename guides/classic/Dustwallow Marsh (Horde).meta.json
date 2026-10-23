@@ -1,0 +1,355 @@
+{
+  "zone": "Dustwallow Marsh",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "35-46 Dustwallow Marsh",
+  "file": "Dustwallow Marsh (Horde).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 35,
+      "end": 35.53,
+      "next": 38,
+      "guide": "35-36 Dustwallow Marsh: around Nazeer Bloodpike",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Nazeer Bloodpike",
+          "guide": "35-36 Dustwallow Marsh: around Nazeer Bloodpike",
+          "level": 35,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 38,
+      "end": 38.1,
+      "next": 41,
+      "guide": "38-39 Dustwallow Marsh",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "38-39 Dustwallow Marsh",
+          "level": 38,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 41,
+      "end": 41.33,
+      "next": 44,
+      "guide": "41-42 Dustwallow Marsh: around Overlord Mok\u0027Morokk",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "around Overlord Mok\u0027Morokk",
+          "guide": "41-42 Dustwallow Marsh: around Overlord Mok\u0027Morokk",
+          "level": 41,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "start": 44,
+      "end": 44.09,
+      "guide": "44-45 Dustwallow Marsh",
+      "sections": [
+        {
+          "label": "RBSection4_1",
+          "name": "part 4",
+          "guide": "44-45 Dustwallow Marsh",
+          "level": 44,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 625,
+      "level": 43,
+      "req": 35,
+      "xp": 3600,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Swamp of Sorrows"
+    },
+    {
+      "id": 1177,
+      "level": 36,
+      "req": 32,
+      "xp": 2800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1201,
+      "level": 35,
+      "req": 30,
+      "xp": 2750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1202,
+      "level": 35,
+      "req": 30,
+      "xp": 2750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1206,
+      "level": 35,
+      "req": 30,
+      "xp": 2750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1218,
+      "level": 35,
+      "req": 30,
+      "xp": 1350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1238,
+      "level": 35,
+      "req": 30,
+      "xp": 2050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1239,
+      "level": 35,
+      "req": 30,
+      "xp": 2050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1251,
+      "level": 35,
+      "req": 30,
+      "xp": 690,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1261,
+      "level": 40,
+      "req": 30,
+      "xp": 3150,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Stranglethorn Vale"
+    },
+    {
+      "id": 1268,
+      "level": 35,
+      "req": 30,
+      "xp": 1350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1269,
+      "level": 37,
+      "req": 30,
+      "xp": 710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1273,
+      "level": 37,
+      "req": 30,
+      "xp": 3550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1321,
+      "level": 35,
+      "req": 30,
+      "xp": 275,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1799,
+      "level": 40,
+      "req": 35,
+      "xp": 3150,
+      "part": 1,
+      "section": 0,
+      "tag": "Warlock",
+      "from": "The Barrens"
+    },
+    {
+      "id": 1947,
+      "level": 38,
+      "req": 30,
+      "xp": 285,
+      "part": 1,
+      "section": 0,
+      "tag": "Mage",
+      "from": "Mulgore"
+    },
+    {
+      "id": 1951,
+      "level": 40,
+      "req": 30,
+      "xp": 3150,
+      "part": 1,
+      "section": 0,
+      "tag": "Mage",
+      "from": "Thousand Needles"
+    },
+    {
+      "id": 1953,
+      "level": 40,
+      "req": 35,
+      "xp": 315,
+      "part": 1,
+      "section": 0,
+      "tag": "Mage",
+      "from": "Mulgore"
+    },
+    {
+      "id": 2861,
+      "level": 46,
+      "req": 40,
+      "xp": 405,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 6570,
+      "level": 60,
+      "req": 55,
+      "xp": 4950,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Western Plaguelands"
+    },
+    {
+      "id": 1322,
+      "level": 37,
+      "req": 30,
+      "xp": 2850,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1323,
+      "level": 37,
+      "req": 30,
+      "xp": 1400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1166,
+      "level": 43,
+      "req": 38,
+      "xp": 4450,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1168,
+      "level": 43,
+      "req": 38,
+      "xp": 4450,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1169,
+      "level": 43,
+      "req": 38,
+      "xp": 5350,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1170,
+      "level": 43,
+      "req": 38,
+      "xp": 360,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1171,
+      "level": 43,
+      "req": 38,
+      "xp": 360,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1172,
+      "level": 45,
+      "req": 38,
+      "xp": 4850,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1173,
+      "level": 45,
+      "req": 38,
+      "xp": 4850,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "The Hinterlands": 1,
+    "Arathi Highlands": 1,
+    "Stranglethorn Vale": 1,
+    "Durotar": 1,
+    "The Barrens": 2,
+    "Mulgore": 1,
+    "Thousand Needles": 1
+  }
+}
