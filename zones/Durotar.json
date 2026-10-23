@@ -1,0 +1,53 @@
+// Durotar
+{ 
+  "exclude": {
+    "96873": "Requires Enchanting"
+  },
+  "quests": {
+    "97279": {
+      "pre": [4641]
+    },
+    "99123": {
+      "pickupAfter": [[786, 1]] 
+    },
+    "97282": {
+    "pre": [97281]
+    },
+    "97225": {
+    "pre": [805]
+    }
+  },
+    "steps": [
+    // after the pickup, not before it: "#completewith next" clears it when the next step is done
+    { "after": "accept:4641", "tag": "Warrior/Shaman/Warlock/Mage/Priest",
+      "lines": [
+        "#completewith next",
+        "+|cRXP_WARN_Kill |cRXP_ENEMY_Mottled Boars|r. Loot them until you have 35 copper worth of vendor items (including your armor)|r << Warlock",
+        "+|cRXP_WARN_Kill |cRXP_ENEMY_Mottled Boars|r. Loot them until you have 60 copper worth of vendor items (including your armor)|r << Mage",
+        "+|cRXP_WARN_Kill |cRXP_ENEMY_Mottled Boars|r. Loot them until you have 50 copper worth of vendor items (including your armor)|r << Priest",
+        "+|cRXP_WARN_Kill |cRXP_ENEMY_Mottled Boars|r. Loot them until you have 10 copper worth of vendor items (including your armor)|r << Warrior/Shaman",
+        ".goto 1411/1,-4281.07,-720.15,30,0 << Warlock/Mage/Priest",
+        ".goto 1411/1,-4299.05,-494.9,30,0 << Warrior/Shaman",
+        ".mob Mottled Boar",
+        ".money >0.01"
+      ]
+    },
+    { "before": "obj:786:1",
+      "lines": [
+        "#loop",
+        ".goto 1411/1,-5057.80,-866.79,40,0",
+        ".goto 1411/1,-5014.97,-937.99,40,0",
+        ".goto 1411/1,-4908.69,-998.27,40,0",
+        ".goto 1411/1,-4829.91,-1091.33,40,0",
+        ".goto 1411/1,-4722.57,-1117.42,40,0",
+        ">>Run down the beach. Kill |cRXP_ENEMY_Crawlers|r and |cRXP_ENEMY_Makruras|r. Loot them for their |cRXP_LOOT_Mucus|r and |cRXP_LOOT_Eyes|r.",
+        ".complete 818,2 --Crawler Mucus (8)",
+        ".mob +Pygmy Surf Crawler",
+        ".mob +Surf Crawler",
+        ".complete 818,1 --Intact Makrura Eye (4)",
+        ".mob +Makrura Shellhide",
+        ".mob +Makrura Clacker"
+      ]
+    }
+  ]
+}
