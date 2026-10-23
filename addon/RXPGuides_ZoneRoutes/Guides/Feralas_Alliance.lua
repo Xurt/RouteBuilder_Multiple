@@ -1,0 +1,643 @@
+-- 41-51 Feralas: Zone Routes (Alliance).
+-- Made by RouteBuilder from QuestieDB's Forever data (commit 1f53833, 2026-10-22; QuestieDB is GPL-3.0).
+-- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
+-- Steps that depend on quests from other zones hide themselves unless you have those quests.
+-- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 41, 44, 47).
+-- Split into 3 guides, listed under "41 - 48 Feralas" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Edit zones/Feralas.json and re-run rather than editing this file, or your changes are lost on the next build.
+
+if UnitFactionGroup("player") == "Horde" then return end
+
+RXPGuides.RegisterGuide([[
+#classic
+<< Alliance
+#version 1
+#group Zone Routes (Alliance)
+#subgroup 41 - 48 Feralas
+#subweight -41
+#name 41-42 Feralas: around Latronicus Moonspear
+
+step
+    .goto 1444/1,-773.02,-4497.54
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kristy Grant|r
+    .accept 98155 >>Accept Pristine Pesterhide Pelts
+    .target Kristy Grant
+step
+    .goto 1444/1,-773.02,-4497.54
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kristy Grant|r
+    .turnin 98155 >>Turn in Pristine Pesterhide Pelts
+    .target Kristy Grant
+    .isQuestComplete 98155
+step
+    .goto 1444/1,-788.31,-4524.41
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Falfindel Waywarder|r
+    .turnin 1059 >>Turn in Reclaiming the Charred Vale
+    .target Falfindel Waywarder
+    .isOnQuest 1059
+step
+    .goto 1444/1,-788.31,-4524.41
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Falfindel Waywarder|r
+    .accept 1101 >>Accept The Crone of the Kraul
+    .target Falfindel Waywarder
+    .isQuestTurnedIn 1100 --any of: Lonebrow's Journal
+    .xp <29,1
+step
+    .goto 1444/1,-788.31,-4524.41
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Falfindel Waywarder|r
+    .turnin 1101 >>Turn in The Crone of the Kraul
+    .target Falfindel Waywarder
+    .isQuestComplete 1101
+step
+    .goto 1444/1,3340.13,-4370.49
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fyldren Moonfeather|r
+    .fp Feathermoon >> Get the Feathermoon Flight Path
+    .target Fyldren Moonfeather
+step
+    .goto 1444/1,3312.88,-4345.56
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pratt McGrubben|r
+    .accept 2821 >>Accept The Mark of Quality
+    .target Pratt McGrubben
+step << Hunter
+    .goto 1444/1,3312.74,-4345.38
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pratt McGrubben|r
+    .target Pratt McGrubben
+    .train 415428,1
+step << Hunter
+    .goto 1444/1,3370.57,-4645.80
+    >>|cRXP_WARN_Cast|r |T132164:0|t[Tame Beast] |cRXP_WARN_on a |cRXP_ENEMY_Longtooth Runner|r to tame it|r
+    .train 17266 >>|cRXP_WARN_Attack mobs with it to learn|r |T132278:0|t[Bite (Rank 6)]
+step
+    .goto 1444/1,3289.25,-4381.70
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Shyria|r
+    .target Innkeeper Shyria
+    .home >>Set your Hearthstone to Innkeeper Shyria's inn
+step
+    .goto 1444/1,3330.26,-4505.88
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Latronicus Moonspear|r
+    .accept 4124 >>Accept The Missing Courier
+    .target Latronicus Moonspear
+step
+    .goto 1444/1,3337.21,-4505.88
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shandris Feathermoon|r
+    .accept 2866 >>Accept The Ruins of Solarsal
+    .target Shandris Feathermoon
+step
+    .goto 1444/1,3186.39,-4395.60
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Quintis Jonespyre|r
+    .turnin 3787 >>Turn in Jonespyre's Request
+    .target Quintis Jonespyre
+    .isOnQuest 3787
+step
+    .goto 1444/1,3227.40,-4457.69
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ginro Hearthkindle|r
+    .turnin 4124 >>Turn in The Missing Courier
+    .accept 4125 >>Accept The Missing Courier
+    .target Ginro Hearthkindle
+step
+    .goto 1444/1,3613.12,-4791.75
+    >>Click the |cRXP_PICK_Solarsal Gazebo|r
+    .turnin 2866 >>Turn in The Ruins of Solarsal
+    .accept 2867 >>Accept Return to Feathermoon Stronghold
+step
+    .goto 1444/1,3337.21,-4505.88
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shandris Feathermoon|r
+    .turnin 2867 >>Turn in Return to Feathermoon Stronghold
+    .accept 3130 >>Accept Against the Hatecrest
+    .target Shandris Feathermoon
+step
+    .goto 1444/1,3330.26,-4505.88
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Latronicus Moonspear|r
+    .turnin 3130 >>Turn in Against the Hatecrest
+    .accept 2869 >>Accept Against the Hatecrest
+    .target Latronicus Moonspear
+step
+    #completewith Drop2766x1
+    >>|cRXP_LOOT_OOX-22/FE Distress Beacon|r can drop from |cRXP_ENEMY_Gordunni Ogre|r, |cRXP_ENEMY_Gordunni Brute|r, |cRXP_ENEMY_Gordunni Mauler|r. Use it to start the quest if you get one
+    .collect 8705,1,2766 --OOX-22/FE Distress Beacon (1)
+    .accept 2766 >>Accept Find OOX-22/FE!
+    .use 8705
+step
+    #label Drop2766x1
+    #loop
+    .goto 1444/1,3520.69,-4854.77,0
+    .goto 1444/1,3520.69,-4854.77,40,0
+    .goto 1444/1,3511.65,-4917.32,40,0
+    .goto 1444/1,3626.33,-4869.13,40,0
+    >>Kill |cRXP_ENEMY_Hatecrest Warriors|r, |cRXP_ENEMY_Hatecrest Wave Riders|r, |cRXP_ENEMY_Hatecrest Serpent Guards|r and |cRXP_ENEMY_Hatecrest Myrmidons|r. Loot them for |cRXP_LOOT_Hatecrest Naga Scale|r
+    .complete 2869,1 --Hatecrest Naga Scale (10)
+    .mob Hatecrest Warrior
+    .mob Hatecrest Wave Rider
+    .mob Hatecrest Serpent Guard
+    .mob Hatecrest Myrmidon
+step
+    .goto 1444/1,3330.26,-4505.88
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Latronicus Moonspear|r
+    .turnin 2869 >>Turn in Against the Hatecrest
+    .target Latronicus Moonspear
+step
+    .goto 1444/1,2283.59,-5376.48
+    >>Click the |cRXP_PICK_Wrecked Row Boat|r
+    .turnin 4125 >>Turn in The Missing Courier
+    .accept 4127 >>Accept Boat Wreckage
+step
+    #completewith next
+    .hs >>Hearth to Innkeeper Shyria's inn. |cRXP_WARN_Walk instead if you are already nearby|r
+    .cooldown item,6948,>0,1
+step
+    .goto 1444/1,3227.40,-4457.69
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ginro Hearthkindle|r
+    .turnin 4127 >>Turn in Boat Wreckage
+    .accept 4129 >>Accept The Knife Revealed
+    .target Ginro Hearthkindle
+step
+    .goto 1444/1,3186.39,-4395.60
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Quintis Jonespyre|r
+    .turnin 4129 >>Turn in The Knife Revealed
+    .accept 4130 >>Accept Psychometric Reading
+    .target Quintis Jonespyre
+step
+    .goto 1444/1,3227.40,-4457.69
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ginro Hearthkindle|r
+    .turnin 4130 >>Turn in Psychometric Reading
+    .accept 4131 >>Accept The Woodpaw Gnolls
+    .target Ginro Hearthkindle
+step
+    .goto 1444/1,345.93,-4975.70
+    >>Click the |cRXP_PICK_Large Leather Backpacks|r
+    .turnin 4131 >>Turn in The Woodpaw Gnolls
+    .accept 4135 >>Accept The Writhing Deep
+step
+    .goto 1444/1,432.80,-5319.03
+    >>Click the |cRXP_PICK_Zukk'ash Pod|r
+    .turnin 4135 >>Turn in The Writhing Deep
+step << Hunter
+    .goto 1444/1,3311.84,-4379.06
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Faralorn|r
+    .vendor >>|cRXP_BUY_Buy Ammo for the next segment|r
+    .target Faralorn
+step
+    .goto 1444/1,3524.86,-5564.59
+    .xp 45+87500 >> Do loops around the cave, grinding |cRXP_ENEMY_Nagas|r to level 45+87500xp
+step
+    #completewith Drop2766x2
+    >>|cRXP_LOOT_OOX-22/FE Distress Beacon|r can drop from |cRXP_ENEMY_Gordunni Ogre|r, |cRXP_ENEMY_Gordunni Brute|r, |cRXP_ENEMY_Gordunni Mauler|r. Use it to start the quest if you get one
+    .collect 8705,1,2766 --OOX-22/FE Distress Beacon (1)
+    .accept 2766 >>Accept Find OOX-22/FE!
+    .use 8705
+step
+    #label Drop2766x2
+    #loop
+    .goto 1444/1,1547.58,-4982.65,0
+    .goto 1444/1,1547.58,-4982.65,40,0
+    .goto 1444/1,1644.19,-4968.75,40,0
+    .goto 1444/1,1752.61,-4981.26,40,0
+    >>Kill |cRXP_ENEMY_Feral Scar Yetis|r, |cRXP_ENEMY_Hulking Feral Scars|r, |cRXP_ENEMY_Enraged Feral Scars|r and |cRXP_ENEMY_Bloodroar the Stalkers|r. Loot them for |cRXP_LOOT_Thick Yeti Hide|r
+    .complete 2821,1 --Thick Yeti Hide (10)
+    .mob Feral Scar Yeti
+    .mob Hulking Feral Scar
+    .mob Enraged Feral Scar
+    .mob Bloodroar the Stalker
+step
+    .goto 1444/1,1575.38,-4981.72,50,0
+    .goto 1444/1,1723.42,-4936.78
+    >>Kill |cRXP_ENEMY_Feral Scar Yetis|r, |cRXP_ENEMY_Enraged Feral Scars|r and |cRXP_ENEMY_Hulking Feral Scars|r. Loot them for their |cRXP_LOOT_Thick Yeti Hides|r
+    .train 415428,3 << Hunter sod
+step
+    .goto 1444/1,3621.46,-5494.63
+    .xp 47 >> Head back to the |cRXP_ENEMY_Naga|r cave and grind to level 47
+step
+    .goto 1444/1,3621.46,-5494.63
+    .xp 48 >> Head back to the |cRXP_ENEMY_Naga|r cave and grind to level 48
+step
+    .goto 1444/1,3621.46,-5494.63
+    .xp 48.5 >> Head back to the |cRXP_ENEMY_Naga|r cave and grind to level 48 + 50%
+step
+    .goto 1444/1,3312.88,-4345.56
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pratt McGrubben|r
+    .turnin 2821 >>Turn in The Mark of Quality while you are here
+    .isQuestComplete 2821
+    .target Pratt McGrubben
+step
+    .goto 1444/1,1733.84,-4947.43
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Homing Robot OOX-22/FE|r
+    .turnin 2766 >>Turn in Find OOX-22/FE!
+    .target Homing Robot OOX-22/FE
+    .isOnQuest 2766
+step
+    .goto 1444/1,3312.88,-4345.56
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pratt McGrubben|r
+    .turnin 2821 >>Turn in The Mark of Quality
+    .target Pratt McGrubben
+step << Hunter
+    .goto 1444/1,3311.84,-4379.06
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Faralorn|r
+    .vendor >>|cRXP_BUY_Buy Ammo if needed|r
+    .target Faralorn
+step
+    .goto 1444/1,3232.96,-4474.83
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Troyas Moonbreeze|r
+    .turnin 2943 >>Turn in Return to Troyas
+    .target Troyas Moonbreeze
+    .isOnQuest 2943
+step
+    .goto 1444/1,2305.83,-3551.41
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gregan Brewspewer|r
+    .turnin 4142 >>Turn in A Visit to Gregan
+    .target Gregan Brewspewer
+    .isOnQuest 4142
+step
+    +|cRXP_WARN_That is all of Feralas for now.|r Quests still in your log lead on from here; pick your next zone by them
+    >>|cRXP_FRIENDLY_Thousand Needles and back here|r: Pristine Pesterhide Pelts
+step
+    +|cRXP_WARN_The rest of Feralas is planned from level 44.|r Load its guide for level 44 then
+]])
+
+RXPGuides.RegisterGuide([[
+#classic
+<< Alliance
+#version 1
+#group Zone Routes (Alliance)
+#subgroup 41 - 48 Feralas
+#subweight -41
+#name 44-45 Feralas
+
+step
+    .goto 1444/1,1924.97,-3094.10
+    >>Click the |cRXP_PICK_Book|r
+    .accept 81951 >>Accept The Liminal and the Arcane
+step
+    .goto 1444/1,1924.97,-3094.10
+    >>Open the |cRXP_PICK_Book|r. Loot it for |cRXP_LOOT_The Liminal and the Arcane|r
+    .complete 81951,1 --The Liminal and the Arcane (1)
+step
+    .goto 1444/1,3232.96,-4474.83
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Troyas Moonbreeze|r
+    .accept 2939 >>Accept In Search of Knowledge
+    .target Troyas Moonbreeze
+step
+    .goto 1444/1,858.84,-4481.78
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kindal Moonweaver|r
+    .accept 3841 >>Accept An Orphan Looking For a Home
+    .target Kindal Moonweaver
+    .isQuestTurnedIn 2972 --any of: Doling Justice
+    .xp <38,1
+step
+    .goto 1444/1,858.84,-4481.78
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kindal Moonweaver|r
+    .accept 2969 >>Accept Freedom for All Creatures
+    .target Kindal Moonweaver
+step
+    .goto 1444/1,766.40,-4529.04
+    >>Save at least 6 Sprite Darters from capture
+    .complete 2969,1 --Save at least 6 Sprite Darters from capture
+step
+    .goto 1444/1,858.84,-4481.78
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kindal Moonweaver|r
+    .turnin 2969 >>Turn in Freedom for All Creatures
+    .target Kindal Moonweaver
+step
+    .goto 1444/1,858.14,-4479.93
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jer'kai Moonweaver|r
+    .accept 2970 >>Accept Doling Justice
+    .target Jer'kai Moonweaver
+step
+    #loop
+    .goto 1444/1,792.81,-4148.65,0
+    .goto 1444/1,792.81,-4148.65,40,0
+    .goto 1444/1,643.39,-4196.37,40,0
+    .goto 1444/1,578.06,-4117.14,40,0
+    >>Kill |cRXP_ENEMY_Grimtotem Naturalists|r
+    >>Kill |cRXP_ENEMY_Grimtotem Raiders|r
+    >>Kill |cRXP_ENEMY_Grimtotem Shamans|r
+    .complete 2970,1 --Grimtotem Naturalist slain (12)
+    .complete 2970,2 --Grimtotem Raider slain (10)
+    .complete 2970,3 --Grimtotem Shaman slain (6)
+    .mob Grimtotem Naturalist
+    .mob Grimtotem Raider
+    .mob Grimtotem Shaman
+step
+    .goto 1444/1,858.14,-4479.93
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jer'kai Moonweaver|r
+    .turnin 2970 >>Turn in Doling Justice
+    .accept 2972 >>Accept Doling Justice
+    .target Jer'kai Moonweaver
+step
+    .goto 1444/1,243.07,-4460.01
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Greul|r
+    .target Innkeeper Greul
+    .home >>Set your Hearthstone to Innkeeper Greul's inn
+step
+    .goto 1444/1,-773.02,-4497.54
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kristy Grant|r
+    .turnin 98155 >>Turn in Pristine Pesterhide Pelts
+    .target Kristy Grant
+    .isQuestComplete 98155
+step
+    .goto 1444/1,432.80,-5319.03
+    >>Click the |cRXP_PICK_Zukk'ash Pod|r
+    .accept 4265 >>Accept Freed from the Hive
+    .isQuestTurnedIn 4135 --any of: The Writhing Deep
+step
+    .goto 1444/1,428.63,-5324.59
+    >>Free Raschal.
+    .complete 4265,1 --Free Raschal.
+    .isOnQuest 4265
+step
+    .goto 1444/1,3227.40,-4457.69
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ginro Hearthkindle|r
+    .turnin 4265 >>Turn in Freed from the Hive
+    .target Ginro Hearthkindle
+    .isOnQuest 4265
+step
+    .goto 1444/1,3227.40,-4457.69
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ginro Hearthkindle|r
+    .accept 4266 >>Accept A Hero's Welcome
+    .target Ginro Hearthkindle
+    .isQuestTurnedIn 4265 --any of: Freed from the Hive
+step
+    .goto 1444/1,3337.21,-4505.88
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shandris Feathermoon|r
+    .turnin 4266 >>Turn in A Hero's Welcome
+    .target Shandris Feathermoon
+    .isOnQuest 4266
+step
+    .goto 1444/1,3337.21,-4505.88
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shandris Feathermoon|r
+    .accept 4267 >>Accept Rise of the Silithid
+    .target Shandris Feathermoon
+    .isQuestTurnedIn 4266 --any of: A Hero's Welcome
+step
+    .goto 1444/1,3229.48,-4479.93
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Angelas Moonbreeze|r
+    .accept 2982 >>Accept The High Wilderness
+    .target Angelas Moonbreeze
+step
+    .goto 1444/1,1733.84,-4947.43
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Homing Robot OOX-22/FE|r
+    .accept 2767 >>Accept Rescue OOX-22/FE!
+    .target Homing Robot OOX-22/FE
+    .isQuestTurnedIn 2766 --any of: Find OOX-22/FE!
+    .xp <40,1
+step
+    .goto 1444/1,2270.38,-4377.07
+    >>Escort OOX-22/FE to the dock along the Forgotten Coast
+    .complete 2767,1 --Escort OOX-22/FE to the dock along the Forgotten Coast
+    .isOnQuest 2767
+step
+    .goto 1444/1,1269.58,-5442.27
+    >>Kill |cRXP_ENEMY_Gordunni Shamans|r
+    .complete 2982,2 --Gordunni Shaman slain (8)
+    .mob Gordunni Shaman
+step
+    #loop
+    .goto 1444/1,1234.14,-5038.25,0
+    .goto 1444/1,1234.14,-5038.25,40,0
+    .goto 1444/1,1175.76,-4913.61,40,0
+    >>Kill |cRXP_ENEMY_Gordunni Warlocks|r
+    >>Kill |cRXP_ENEMY_Gordunni Brutes|r
+    .complete 2982,1 --Gordunni Warlock slain (8)
+    .complete 2982,3 --Gordunni Brute slain (8)
+    .mob Gordunni Warlock
+    .mob Gordunni Brute
+step
+    .goto 1444/1,3229.48,-4479.93
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Angelas Moonbreeze|r
+    .turnin 2982 >>Turn in The High Wilderness
+    .target Angelas Moonbreeze
+step
+    .goto 1444/1,2495.56,-3386.00
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rockbiter|r
+    .accept 2844 >>Accept The Giant Guardian
+    .target Rockbiter
+step
+    .goto 1444/1,2785.38,-2843.90
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shay Leafrunner|r
+    .turnin 2844 >>Turn in The Giant Guardian
+    .target Shay Leafrunner
+step
+    +|cRXP_WARN_That is all of Feralas for now.|r Quests still in your log lead on from here; pick your next zone by them
+    >>|cRXP_FRIENDLY_Darnassus|r: Rise of the Silithid, Doling Justice
+    >>|cRXP_FRIENDLY_Stranglethorn Vale|r: Rescue OOX-22/FE!
+    >>|cRXP_FRIENDLY_Teldrassil|r: In Search of Knowledge
+    >>|cRXP_FRIENDLY_Thousand Needles|r: An Orphan Looking For a Home
+    >>|cRXP_FRIENDLY_another zone|r: The Liminal and the Arcane
+step
+    +|cRXP_WARN_The rest of Feralas is planned from level 47.|r Load its guide for level 47 then
+]])
+
+RXPGuides.RegisterGuide([[
+#classic
+<< Alliance
+#version 1
+#group Zone Routes (Alliance)
+#subgroup 41 - 48 Feralas
+#subweight -41
+#name 47-48 Feralas
+
+step
+    .goto 1444/1,3330.26,-4505.88
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Latronicus Moonspear|r
+    .accept 2870 >>Accept Against Lord Shalzaru
+    .target Latronicus Moonspear
+    .isQuestTurnedIn 2869 --any of: Against the Hatecrest
+step
+    .goto 1444/1,3460.92,-5631.31
+    >>Kill |cRXP_ENEMY_Lord Shalzaru|r and loot |cRXP_LOOT_Mysterious Relic|r
+    .complete 2870,1 --Mysterious Relic (1)
+    .mob Lord Shalzaru
+    .isOnQuest 2870
+step
+    .goto 1444/1,3330.26,-4505.88
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Latronicus Moonspear|r
+    .turnin 2870 >>Turn in Against Lord Shalzaru
+    .target Latronicus Moonspear
+    .isOnQuest 2870
+step
+    .goto 1444/1,3330.26,-4505.88
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Latronicus Moonspear|r
+    .accept 2871 >>Accept Delivering the Relic
+    .target Latronicus Moonspear
+    .isQuestTurnedIn 2870 --any of: Against Lord Shalzaru
+step
+    .goto 1444/1,3351.11,-4454.45
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vestia Moonspear|r
+    .turnin 2871 >>Turn in Delivering the Relic
+    .target Vestia Moonspear
+    .isOnQuest 2871
+step
+    .goto 1444/1,3229.48,-4479.93
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Angelas Moonbreeze|r
+    .accept 3445 >>Accept The Sunken Temple
+    .target Angelas Moonbreeze
+step
+    .goto 1444/1,3312.88,-4345.56
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pratt McGrubben|r
+    .accept 7733 >>Accept Improved Quality
+    .target Pratt McGrubben
+    .isQuestTurnedIn 2821 --any of: The Mark of Quality
+step
+    .goto 1444/1,3232.96,-4474.83
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Troyas Moonbreeze|r
+    .accept 2879 >>Accept The Stave of Equinex
+    .target Troyas Moonbreeze
+    .isQuestTurnedIn 2943 --any of: Return to Troyas
+    .xp <42,1
+step
+    .goto 1444/1,2327.37,-4378.46
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zorbin Fandazzle|r
+    .accept 7003 >>Accept Zapped Giants
+    .accept 7721 >>Accept Fuel for the Zapping
+    .target Zorbin Fandazzle
+step
+    #loop
+    .goto 1444/1,2668.62,-3381.37,0
+    .goto 1444/1,2668.62,-3381.37,40,0
+    .goto 1444/1,2788.85,-3358.20,40,0
+    >>Kill |cRXP_ENEMY_Land Walkers|r, |cRXP_ENEMY_Cliff Giants|r, |cRXP_ENEMY_Shore Striders|r and |cRXP_ENEMY_Deep Striders|r. Loot them for |cRXP_LOOT_Miniaturization Residue|r
+    .complete 7003,1 --Miniaturization Residue (15)
+    .mob Land Walker
+    .mob Cliff Giant
+    .mob Shore Strider
+    .mob Deep Strider
+step
+    #loop
+    .goto 1444/1,2680.43,-4075.90,0
+    .goto 1444/1,2680.43,-4075.90,40,0
+    .goto 1444/1,2586.61,-4123.16,40,0
+    >>Kill |cRXP_ENEMY_Sea Elementals|r and |cRXP_ENEMY_Sea Sprays|r. Loot them for |cRXP_LOOT_Water Elemental Core|r
+    .complete 7721,1 --Water Elemental Core (10)
+    .mob Sea Elemental
+    .mob Sea Spray
+step
+    .goto 1444/1,2327.37,-4378.46
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zorbin Fandazzle|r
+    .turnin 7003 >>Turn in Zapped Giants
+    .turnin 7721 >>Turn in Fuel for the Zapping
+    .target Zorbin Fandazzle
+step
+    #loop
+    .goto 1444/1,1738.71,-3842.38,0
+    .goto 1444/1,1738.71,-3842.38,40,0
+    .goto 1444/1,1762.34,-3775.20,40,0
+    .goto 1444/1,1630.98,-3897.98,40,0
+    >>Kill |cRXP_ENEMY_Rage Scar Yetis|r, |cRXP_ENEMY_Elder Rage Scars|r, |cRXP_ENEMY_Ferocious Rage Scars|r and |cRXP_ENEMY_Lurking Feral Scars|r. Loot them for |cRXP_LOOT_Rage Scar Yeti Hide|r
+    .complete 7733,1 --Rage Scar Yeti Hide (10)
+    .mob Rage Scar Yeti
+    .mob Elder Rage Scar
+    .mob Ferocious Rage Scar
+    .mob Lurking Feral Scar
+    .isOnQuest 7733
+step
+    .goto 1444/1,2305.83,-3551.41
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gregan Brewspewer|r
+    .accept 4143 >>Accept Haze of Evil
+    .target Gregan Brewspewer
+    .isQuestTurnedIn 4142 --any of: A Visit to Gregan
+    .xp <47,1
+step
+    .goto 1444/1,2765.92,-3098.27
+    >>Open the |cRXP_PICK_Flame of Byltan|r. Loot it for |cRXP_LOOT_Byltan Essence|r
+    .collect 9258,1,2879,1 --Byltan Essence (1)
+    .isOnQuest 2879
+step
+    .goto 1444/1,2624.14,-2953.25
+    >>Open the |cRXP_PICK_Flame of Samha|r. Loot it for |cRXP_LOOT_Samha Essence|r
+    .collect 9257,1,2879,1 --Samha Essence (1)
+    .isOnQuest 2879
+step
+    .goto 1444/1,2667.23,-2804.05
+    >>Open the |cRXP_PICK_Flame of Imbel|r. Loot it for |cRXP_LOOT_Imbel Essence|r
+    .collect 9256,1,2879,1 --Imbel Essence (1)
+    .isOnQuest 2879
+step
+    .goto 1444/1,2785.38,-2843.90
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shay Leafrunner|r
+    .accept 2845 >>Accept Wandering Shay
+    .target Shay Leafrunner
+    .isQuestTurnedIn 2844 --any of: The Giant Guardian
+step
+    .goto 1444/1,2783.29,-2843.44
+    >>Open the |cRXP_PICK_Shay's Chest|r. Loot it for |cRXP_LOOT_Shay's Bell|r
+    .complete 2845,1 --Shay's Bell (1)
+    .isOnQuest 2845
+step
+    .goto 1444/1,2818.04,-2931.01
+    >>Open the |cRXP_PICK_Flame of Lahassa|r. Loot it for |cRXP_LOOT_Lahassa Essence|r
+    .collect 9255,1,2879,1 --Lahassa Essence (1)
+    .isOnQuest 2879
+step
+    .goto 1444/1,2742.98,-2976.88
+    >>Open the |cRXP_PICK_Equinex Monolith|r. Loot it for |cRXP_LOOT_Stave of Equinex|r
+    .complete 2879,1 --Stave of Equinex (1)
+    .isOnQuest 2879
+step
+    .goto 1444/1,2742.98,-2976.88
+    >>Click the |cRXP_PICK_Equinex Monolith|r
+    .turnin 2879 >>Turn in The Stave of Equinex
+    .isOnQuest 2879
+step
+    .goto 1444/1,2742.98,-2976.88
+    >>Click the |cRXP_PICK_Equinex Monolith|r
+    .accept 2942 >>Accept The Morrow Stone
+    .isQuestTurnedIn 2879 --any of: The Stave of Equinex
+    .xp <42,1
+step
+    .goto 1444/1,2499.73,-3379.05
+    >>Take Shay Leafrunner to Rockbiter's camp
+    .complete 2845,2 --Take Shay Leafrunner to Rockbiter's camp
+    .isOnQuest 2845
+step
+    .goto 1444/1,2495.56,-3386.00
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rockbiter|r
+    .turnin 2845 >>Turn in Wandering Shay
+    .target Rockbiter
+    .isOnQuest 2845
+step
+    .goto 1444/1,3232.96,-4474.83
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Troyas Moonbreeze|r
+    .turnin 2942 >>Turn in The Morrow Stone
+    .target Troyas Moonbreeze
+    .isOnQuest 2942
+step
+    .goto 1444/1,3312.88,-4345.56
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pratt McGrubben|r
+    .turnin 7733 >>Turn in Improved Quality
+    .target Pratt McGrubben
+    .isOnQuest 7733
+step
+    .goto 1444/1,3289.25,-4381.70
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Shyria|r
+    .accept 3788 >>Accept Jonespyre's Request
+    .target Innkeeper Shyria
+    .isQuestTurnedIn 3781 --any of: Morrowgrain Research
+    .xp <47,1
+step
+    .goto 1444/1,3186.39,-4395.60
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Quintis Jonespyre|r
+    .turnin 3788 >>Turn in Jonespyre's Request
+    .target Quintis Jonespyre
+    .isOnQuest 3788
+step
+    .goto 1444/1,3186.39,-4395.60
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Quintis Jonespyre|r
+    .accept 3791 >>Accept The Mystery of Morrowgrain
+    .target Quintis Jonespyre
+    .isQuestTurnedIn 3781 --any of: Morrowgrain Research
+    .xp <47,1
+step
+    .goto 1444/1,3186.39,-4395.60
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Quintis Jonespyre|r
+    .turnin 3791 >>Turn in The Mystery of Morrowgrain
+    .target Quintis Jonespyre
+    .isOnQuest 3791
+step
+    .goto 1444/1,-773.02,-4497.54
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kristy Grant|r
+    .turnin 98155 >>Turn in Pristine Pesterhide Pelts
+    .target Kristy Grant
+    .isQuestComplete 98155
+step
+    +|cRXP_WARN_End of the Feralas route.|r Quests still in your log lead on from here; pick your next zone by them
+    >>|cRXP_FRIENDLY_Tanaris|r: The Sunken Temple
+    >>|cRXP_FRIENDLY_Un'Goro Crater|r: Haze of Evil
+]])
