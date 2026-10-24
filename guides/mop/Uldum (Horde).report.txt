@@ -1,0 +1,176 @@
+Uldum - Horde
+Guide "84-84 Uldum" in group "Zone Routes (Horde)": 329 steps, 325 stops
+Written to guides/mop/Uldum (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+4 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 84. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 325 steps kept, 14 new ones slotted in, 0 moved because their prerequisites changed, 8 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 84, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 5 tasks, 752 yd on foot; ends at level 84.0
+  everyone (quests that depend on other zones): 334 more tasks; their whole route comes to 46,939 yd; ends at level 84.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (115)
+-------------------------
+Start to finish here: 2 (2 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Grand Tablet [25107, level 49, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Tanaris
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  The Secrets of Uldum [25069, level 49, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Tanaris
+  Easy Money [27003, level 83] <- Tanaris
+
+Need a quest this guide does not hand in - steps show only once that is done (110):
+  Exploding Through [27141, level 83] - needs Smoke in Their Eyes [27923], Budd's Plan [27924], Kavem the Callous [28105]
+  A Strange Disc [27176, level 83] - needs one of Exploding Through [27141]
+  Field Work [27179, level 83] - needs one of Exploding Through [27141]
+  Do the World a Favor [27187, level 83] - needs one of Exploding Through [27141]
+  On to Something [27196, level 83] - needs A Strange Disc [27176], Field Work [27179]
+  Tipping the Balance [27431, level 83] - needs By the Light of the Stars [27549], Be Prepared [28602]
+  The Thrill of Discovery [27511, level 83] - needs one of On to Something [27196]
+  Be Prepared [27517, level 83] - needs one of On to Something [27196]
+  Under the Choking Sands [27519, level 83] - needs one of Al'Akir's Vengeance [28135]
+  Minions of Al'Akir [27520, level 83] - needs one of Al'Akir's Vengeance [28135]
+  Lessons From the Past [27541, level 83] - needs one of On to Something [27196]
+  By the Light of the Stars [27549, level 83] - needs one of Lessons From the Past [27541]
+  The Prophet Hadassi [27595, level 83] - needs one of Al'Akir's Vengeance [28135]
+  The Prophet's Dying Words [27602, level 83] - needs one of The Prophet Hadassi [27595]
+  Colossal Guardians [27623, level 83] - needs one of The Prophet's Dying Words [27602]
+  After the Fall [27624, level 83] - needs one of Tipping the Balance [27431]
+  Just a Fancy Cockroach [27627, level 83] - needs one of Tipping the Balance [27431]
+  Send Word to Phaoris [27628, level 83] - needs one of The Scepter of Orsis [27706]
+  The High Priest's Vote [27630, level 83] - needs one of Send Word to Phaoris [27628]
+  The High Commander's Vote [27631, level 83] - needs one of Send Word to Phaoris [27628]
+  Tanotep's Son [27632, level 83] - needs one of The Vizier's Vote [27629]
+  Do the Honors [27669, level 83] - needs one of After the Fall [27624]
+  The Scepter of Orsis [27706, level 83] - needs one of Colossal Guardians [27623]
+  Neferset Prison [27707, level 83] - needs one of Tanotep's Son [27632]
+  The Pit of Scales [27738, level 83] - needs one of Neferset Prison [27707]
+  Fortune and Glory [27748, level 83] - needs one of See You on the Other Side! [28613]
+  The Curse of the Tombs [27755, level 83] - needs one of The Defense of Nahom [28501]
+  A Disarming Distraction [27761, level 83] - needs one of Artificial Intelligence [27760]
+  Core Access Codes [27777, level 83] - needs one of Artificial Intelligence [27760]
+  Hacking the Wibson [27778, level 83] - needs A Disarming Distraction [27761], Core Access Codes [27777]
+  Gnomebliteration [27779, level 83] - needs one of Hacking the Wibson [27778]
+  Stopping the Spread [27836, level 83] - needs one of The High Priest's Vote [27630]
+  Trespassers in the Water [27837, level 83] - needs one of The High Priest's Vote [27630]
+  The Root of the Corruption [27838, level 83] - needs one of The Defilers' Ritual [28611]
+  Ancient Weapons [27839, level 83] - needs one of Ploughshares to Swords [28201]
+  That Gleam in his Eye [27899, level 83] - needs one of Do the Honors [27669]
+  I've Got This Guy [27900, level 83] - needs one of That Gleam in his Eye [27899]
+  They Don't Know What They've Got Here [27901, level 83] - needs one of That Gleam in his Eye [27899]
+  Ignition [27903, level 83] - needs one of They Don't Know What They've Got Here [27901]
+  Tailgunner! [27905, level 83] - needs one of Ignition [27903]
+  Traitors! [27922, level 83] - needs one of Easy Money [27003]
+  Smoke in Their Eyes [27923, level 83] - needs one of Traitors! [27922]
+  Budd's Plan [27924, level 83] - needs one of Traitors! [27922]
+  Eastern Hospitality [27926, level 83] - needs one of Do the Honors [27669]
+  A Favor for the Furrier [27928, level 83] - needs one of Eastern Hospitality [27926]
+  The Desert Fox [27939, level 83] - needs one of Eastern Hospitality [27926]
+  Dirty Birds [27940, level 83] - needs one of Eastern Hospitality [27926]
+  Fashionism [27941, level 83] - needs one of A Favor for the Furrier [27928]
+  Idolatry [27942, level 83] - needs one of The Desert Fox [27939]
+  Angered Spirits [27943, level 83] - needs one of The Desert Fox [27939]
+  Gobbles! [27950, level 83] - needs Fashionism [27941], Idolatry [27942], Angered Spirits [27943]
+  Make Yourself Useful [27969, level 83] - needs one of Gobbles! [27950]
+  Battlezone [27990, level 83] - needs one of Crisis Management [28002]
+  Take it to 'Em! [27993, level 83] - needs one of Escape From the Lost City [28112]
+  Crisis Management [28002, level 83] - needs one of Make Yourself Useful [27969]
+  Kavem the Callous [28105, level 83] - needs one of Traitors! [27922]
+  Escape From the Lost City [28112, level 83] - needs Smoke in Their Eyes [27923], Budd's Plan [27924], Kavem the Callous [28105]
+  Efficient Excavations [28132, level 83] - needs one of Do the Honors [27669]
+  Impending Retribution [28134, level 83] - needs one of Escape From the Lost City [28112]
+  Al'Akir's Vengeance [28135, level 83] - needs one of Impending Retribution [28134]
+  Relics of the Sun King [28141, level 83] - needs one of Escape From the Lost City [28112]
+  Venomblood Antidote [28145, level 83] - needs one of Escape From the Lost City [28112]
+  Missed Me By Zhat Much! [28187, level 83] - needs one of Battlezone [27990]
+  Lockdown! [28193, level 83] - needs one of Missed Me By Zhat Much! [28187]
+  The Great Escape [28194, level 83] - needs one of Missed Me By Zhat Much! [28187]
+  Sending a Message [28195, level 83] - needs one of Lockdown! [28193]
+  The Weakest Link [28198, level 83] - needs one of The High Commander's Vote [27631]
+  The Element of Supplies [28200, level 83] - needs one of The High Commander's Vote [27631]
+  Ploughshares to Swords [28201, level 83] - needs one of The High Commander's Vote [27631]
+  Shaping Up [28210, level 83] - needs one of The Weakest Link [28198]
+  Firing Squad [28267, level 83] - needs The Great Escape [28194], Sending a Message [28195]
+  Meet Me In Vir'sar [28269, level 83] - needs one of Firing Squad [28267]
+  Reduced Productivity [28271, level 83] - needs one of Two Tents [28274]
+  Missing Pieces [28272, level 83] - needs one of Two Tents [28274]
+  Friend of a Friend [28273, level 83] - needs one of Meet Me In Vir'sar [28269]
+  Two Tents [28274, level 83] - needs one of Friend of a Friend [28273]
+  Salhet's Secret [28276, level 83] - needs one of Shaping Up [28210]
+  Salhet the Tactician [28277, level 83] - needs one of Salhet's Secret [28276]
+  Return to Camp [28291, level 83] - needs one of Salhet the Tactician [28277]
+  Master Trapper [28350, level 83] - needs one of Two Tents [28274]
+  Unlimited Potential [28351, level 83] - needs one of Two Tents [28274]
+  Camelraderie [28352, level 83] - needs one of Two Tents [28274]
+  Jonesy Sent For You [28353, level 83] - needs one of Master Trapper [28350]
+  Stirred the Hornet's Nest [28363, level 83] - needs Reduced Productivity [28271], Missing Pieces [28272]
+  Shroud of the Makers [28367, level 83] - needs one of Stirred the Hornet's Nest [28363]
+  Myzerian's Head [28376, level 83] - needs one of Shroud of the Makers [28367]
+  Schnottz So Fast [28402, level 83] - needs one of Shroud of the Makers [28367]
+  Bad Datas [28403, level 83] - needs one of Schnottz So Fast [28402]
+  I'll Do It By Hand [28404, level 83] - needs one of Bad Datas [28403]
+  Sullah's Gift [28482, level 83] - needs one of I'll Do It By Hand [28404]
+  Fire From the Sky [28497, level 83] - needs one of Sullah's Gift [28482]
+  Harrison Jones and the Temple of Uldum [28612, level 83] - needs one of Fortune and Glory [27748]
+  See You on the Other Side! [28613, level 83] - needs one of Fire From the Sky [28497]
+  Put That Baby in the Cradle! [28621, level 83] - needs one of Harrison Jones and the Temple of Uldum [28612]
+  Three if by Air [28622, level 83] - needs one of Put That Baby in the Cradle! [28621]
+  The Coffer of Promise [28633, level 83] - needs one of Three if by Air [28622]
+  The Vizier's Vote [27629, level 84] - needs one of Send Word to Phaoris [27628]
+  Lieutenants of Darkness [28480, level 84] - needs one of The Push Westward [28623]
+  Bleeding the Enemy [28483, level 84] - needs one of The Push Westward [28623]
+  Salhet's Gambit [28486, level 84] - needs one of The Push Westward [28623]
+  The Secret of Nahom [28498, level 84] - needs one of Nahom Must Hold [28561]
+  Punish the Trespassers [28499, level 84] - needs one of Nahom Must Hold [28561]
+  The Cypher of Keset [28500, level 84] - needs The Secret of Nahom [28498], Punish the Trespassers [28499]
+  The Defense of Nahom [28501, level 84] - needs one of The Cypher of Keset [28500]
+  The Bandit Warlord [28502, level 84] - needs one of Relics of the Sun King [28141]
+  The Fall of Neferset City [28520, level 84] - needs Lieutenants of Darkness [28480], Bleeding the Enemy [28483], Salhet's Gambit [28486]
+  The High Council's Decision [28533, level 84] - needs The Pit of Scales [27738], The Root of the Corruption [27838], Return to Camp [28291]
+  Nahom Must Hold [28561, level 84] - needs one of The High Council's Decision [28533]
+  The Defilers' Ritual [28611, level 84] - needs Stopping the Spread [27836], Trespassers in the Water [27837]
+  The Push Westward [28623, level 84] - needs one of The Defense of Nahom [28501]
+
+Worth checking in game
+----------------------
+  The Curse of the Tombs [27755, level 83]: could not read how many Mekgineer Mixeltweed are needed from the quest text; assumed 8
+  A Disarming Distraction [27761, level 83]: mixes a kill-credit objective with others; check that "Unstable Bomb Bot" really is line 4 in the quest log
+  Traitors! [27922, level 83]: "Betrayal Credit (1)" has no place in the data; taken to be done where the quest is given
+  Fire From the Sky [28497, level 83]: "Infantryman Kill Credit (1)" has no place in the data; taken to be done where the quest is given
+
+Left out (30)
+-------------
+not in the game (on Questie's quest blacklist) (11):
+  Incense for the Festival Scorchlings [11966], Vhat's Next? [28255], Riding Shotgun! [28270], Expel the Envoys [28555], Tailgunner! [28743], Desecrate this Fire! [28947], Honor the Flame [28949], Candy Bucket [29016], Candy Bucket [29017], Sekhemi the Elder [29741], Menkhaf the Elder [29742]
+needs a profession (5):
+  Broken Panther Figurine [25047], Broken Serpent Figurine [28775], Broken Earthen Figurine [28776], Broken Owl Figurine [28777], Broken Boar Figurine [28778]
+repeatable (3):
+  Thieving Little Pluckers [28250], Fire From the Sky [28736], Grand Master Obalis [31971]
+dungeon quest (3):
+  The Heart of the Matter [28654], The Vortex Pinnacle [28845], Return to the Lost City [28870]
+special category (sort -381) (3):
+  Elemental Bonds: Doubt [29327], Into Slashing Winds [29335], Into Coaxing Tides [29336]
+special category (sort -394) (2):
+  Grand Master Obalis [31970], The Triumphant Return [31986]
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  Find OOX-17/TN! [351]
+cannot be taken together with Be Prepared [27517], which is in the guide (1):
+  Be Prepared [28602]
+handed in here, but the database does not say where it starts (1):
+  Efficient Excavations [29809]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

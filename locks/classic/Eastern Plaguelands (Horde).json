@@ -1,22 +1,22 @@
 {
   "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
   "guide": "55-60 Eastern Plaguelands",
-  "saved": "2026-10-23 14:21",
+  "saved": "2026-10-23 18:23",
   "levels": "RestedXP",
   "parts": [
     {
       "part": 1,
       "steps": [
-        "turnin:5944 @1423:-2478.44,2671.99  TurnIn In Dreams",
         "accept:5542 @1423:-2478.44,2671.99  Accept Demon Dogs",
+        "turnin:5944 @1423:-2478.44,2671.99  TurnIn In Dreams",
         "accept:5543 @1423:-2478.44,2671.99  Accept Blood Tinged Skies",
-        "accept:5544 @1423:-2478.44,2671.99  Accept Carrion Grubbage",
         "accept:5861 @1423:-2478.44,2671.99  Accept Find Myranda",
+        "accept:5544 @1423:-2478.44,2671.99  Accept Carrion Grubbage",
         "accept:6022 @1423:-3212.74,1871.03  Accept To Kill With Purpose",
         "turnin:6022 @1423:-3212.74,1871.03  TurnIn To Kill With Purpose",
         "accept:6042 @1423:-3212.74,1871.03  Accept Un-Life's Little Annoyances",
-        "turnin:5601 @1423:-3596.34,1456.22  TurnIn Sister Pamela",
         "turnin:5142 @1423:-3596.34,1456.22  TurnIn Little Pamela",
+        "turnin:5601 @1423:-3596.34,1456.22  TurnIn Sister Pamela",
         "accept:5149 @1423:-3596.34,1456.22  Accept Pamela's Doll",
         "obj:5149:collect12887 @1423:-3716.72,1405.37  Objective Pamela's Doll / Pamela's Doll's Left Side",
         "obj:5149:collect12888 @1423:-3680.33,1407.7  Objective Pamela's Doll / Pamela's Doll's Right Side",
@@ -31,7 +31,6 @@
         "accept:6026 @1423:-5305.7,2303.39  Accept That's Asking A Lot",
         "turnin:5462 @1423:-5349.05,2307.26  TurnIn The Dying, Ras Frostwhisper",
         "turnin:5522 @1423:-5349.05,2307.26  TurnIn Leonid Barthalomew",
-        "turnin:8859 @1423:-5349.44,2303.91  TurnIn Secrets of the Colossus - Zora",
         "home @1423:-5345.18,2300.81  Home inn",
         "turnin:6030 @1423:-5337.82,2255.9  TurnIn Duke Nicholas Zverenhoff",
         "turnin:5241 @1423:-5340.92,2257.19  TurnIn Uncle Carlin",
@@ -87,8 +86,8 @@
         "turnin:5721 @1423:-3596.34,1456.22  TurnIn The Battle of Darrowshire",
         "accept:5942 @1423:-3596.34,1456.22  Accept Hidden Treasures",
         "turnin:5942 @1423:-3586.66,1461.9  TurnIn Hidden Treasures",
-        "turnin:6145 @1423:-3212.74,1871.03  TurnIn The Crimson Courier",
         "turnin:5961 @1423:-3212.74,1871.03  TurnIn The Champion of the Banshee Queen",
+        "turnin:6145 @1423:-3212.74,1871.03  TurnIn The Crimson Courier",
         "turnin:5845 @1423:-2478.44,2671.99  TurnIn Of Lost Honor",
         "accept:5846 @1423:-2478.44,2671.99  Accept Of Love and Family"
       ]

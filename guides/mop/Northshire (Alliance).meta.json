@@ -1,0 +1,608 @@
+{
+  "zone": "Northshire",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "3-5 Northshire",
+  "file": "Northshire (Alliance).lua",
+  "continent": -6170,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 3,
+      "end": 4.19,
+      "guide": "3-5 Northshire",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "3-5 Northshire",
+          "level": 3,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 3100,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warrior"
+    },
+    {
+      "id": 3101,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Paladin"
+    },
+    {
+      "id": 3102,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Rogue"
+    },
+    {
+      "id": 3103,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Priest"
+    },
+    {
+      "id": 3104,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Mage"
+    },
+    {
+      "id": 3105,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warlock"
+    },
+    {
+      "id": 26910,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Hunter"
+    },
+    {
+      "id": 26913,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warrior"
+    },
+    {
+      "id": 26914,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warlock"
+    },
+    {
+      "id": 26915,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Rogue"
+    },
+    {
+      "id": 26916,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Mage"
+    },
+    {
+      "id": 26917,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Hunter"
+    },
+    {
+      "id": 26918,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Paladin"
+    },
+    {
+      "id": 26919,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Priest"
+    },
+    {
+      "id": 28757,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Mage"
+    },
+    {
+      "id": 28759,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Hunter"
+    },
+    {
+      "id": 28762,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Paladin"
+    },
+    {
+      "id": 28763,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Priest"
+    },
+    {
+      "id": 28764,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Rogue"
+    },
+    {
+      "id": 28765,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warlock"
+    },
+    {
+      "id": 28766,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warrior"
+    },
+    {
+      "id": 28767,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Hunter"
+    },
+    {
+      "id": 28769,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Mage"
+    },
+    {
+      "id": 28770,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Paladin"
+    },
+    {
+      "id": 28771,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Priest"
+    },
+    {
+      "id": 28772,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Rogue"
+    },
+    {
+      "id": 28773,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warlock"
+    },
+    {
+      "id": 28774,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warrior"
+    },
+    {
+      "id": 28780,
+      "level": 3,
+      "req": 1,
+      "xp": 65,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Hunter"
+    },
+    {
+      "id": 28784,
+      "level": 3,
+      "req": 1,
+      "xp": 65,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Mage"
+    },
+    {
+      "id": 28785,
+      "level": 3,
+      "req": 1,
+      "xp": 65,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Paladin"
+    },
+    {
+      "id": 28786,
+      "level": 3,
+      "req": 1,
+      "xp": 65,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Priest"
+    },
+    {
+      "id": 28787,
+      "level": 3,
+      "req": 1,
+      "xp": 65,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Rogue"
+    },
+    {
+      "id": 28788,
+      "level": 3,
+      "req": 1,
+      "xp": 65,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warlock"
+    },
+    {
+      "id": 28789,
+      "level": 3,
+      "req": 1,
+      "xp": 65,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warrior"
+    },
+    {
+      "id": 28791,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Hunter"
+    },
+    {
+      "id": 28792,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Mage"
+    },
+    {
+      "id": 28793,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Paladin"
+    },
+    {
+      "id": 28794,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Priest"
+    },
+    {
+      "id": 28795,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Rogue"
+    },
+    {
+      "id": 28796,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warlock"
+    },
+    {
+      "id": 28797,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warrior"
+    },
+    {
+      "id": 28806,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Hunter"
+    },
+    {
+      "id": 28808,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Mage"
+    },
+    {
+      "id": 28809,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Paladin"
+    },
+    {
+      "id": 28810,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Priest"
+    },
+    {
+      "id": 28811,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Rogue"
+    },
+    {
+      "id": 28812,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warlock"
+    },
+    {
+      "id": 28813,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warrior"
+    },
+    {
+      "id": 28817,
+      "level": 4,
+      "req": 1,
+      "xp": 35,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Hunter"
+    },
+    {
+      "id": 28818,
+      "level": 4,
+      "req": 1,
+      "xp": 35,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Mage"
+    },
+    {
+      "id": 28819,
+      "level": 4,
+      "req": 1,
+      "xp": 35,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Paladin"
+    },
+    {
+      "id": 28820,
+      "level": 4,
+      "req": 1,
+      "xp": 35,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Priest"
+    },
+    {
+      "id": 28821,
+      "level": 4,
+      "req": 1,
+      "xp": 35,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Rogue"
+    },
+    {
+      "id": 28822,
+      "level": 4,
+      "req": 1,
+      "xp": 35,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warlock"
+    },
+    {
+      "id": 28823,
+      "level": 4,
+      "req": 1,
+      "xp": 35,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warrior"
+    },
+    {
+      "id": 29078,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 29079,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 29080,
+      "level": 3,
+      "req": 1,
+      "xp": 65,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 29081,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 29082,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 29083,
+      "level": 4,
+      "req": 1,
+      "xp": 35,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 31139,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Monk"
+    },
+    {
+      "id": 31140,
+      "level": 3,
+      "req": 1,
+      "xp": 500,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Monk"
+    }
+  ],
+  "carriedTo": {
+    "Elwynn Forest": 2
+  }
+}

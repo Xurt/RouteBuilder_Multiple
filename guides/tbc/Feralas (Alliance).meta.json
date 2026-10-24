@@ -1,0 +1,307 @@
+{
+  "zone": "Feralas",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "43-51 Feralas",
+  "file": "Feralas (Alliance).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 43,
+      "end": 43.68,
+      "next": 46,
+      "guide": "43-44 Feralas: around Shandris Feathermoon",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Shandris Feathermoon",
+          "guide": "43-44 Feralas: around Shandris Feathermoon",
+          "level": 43,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 46,
+      "end": 46.62,
+      "guide": "46-47 Feralas",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "46-47 Feralas",
+          "level": 46,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 1059,
+      "level": 27,
+      "req": 21,
+      "xp": 2200,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Stonetalon Mountains"
+    },
+    {
+      "id": 2821,
+      "level": 46,
+      "req": 40,
+      "xp": 5790,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2866,
+      "level": 43,
+      "req": 40,
+      "xp": 3750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2867,
+      "level": 43,
+      "req": 40,
+      "xp": 2500,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2869,
+      "level": 43,
+      "req": 40,
+      "xp": 3750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2943,
+      "level": 48,
+      "req": 42,
+      "xp": 4700,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 2982,
+      "level": 44,
+      "req": 39,
+      "xp": 5290,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3130,
+      "level": 43,
+      "req": 40,
+      "xp": 505,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3787,
+      "level": 50,
+      "req": 45,
+      "xp": 1700,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 4124,
+      "level": 43,
+      "req": 40,
+      "xp": 505,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4125,
+      "level": 43,
+      "req": 40,
+      "xp": 3750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4127,
+      "level": 44,
+      "req": 40,
+      "xp": 525,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4129,
+      "level": 44,
+      "req": 40,
+      "xp": 525,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4130,
+      "level": 44,
+      "req": 40,
+      "xp": 525,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4131,
+      "level": 44,
+      "req": 40,
+      "xp": 3950,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4135,
+      "level": 46,
+      "req": 40,
+      "xp": 4300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4142,
+      "level": 52,
+      "req": 47,
+      "xp": 5500,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Un\u0027Goro Crater"
+    },
+    {
+      "id": 4265,
+      "level": 46,
+      "req": 40,
+      "xp": 5790,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4266,
+      "level": 46,
+      "req": 40,
+      "xp": 8650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2844,
+      "level": 49,
+      "req": 44,
+      "xp": 4900,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2845,
+      "level": 49,
+      "req": 44,
+      "xp": 6550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2870,
+      "level": 45,
+      "req": 40,
+      "xp": 4150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2871,
+      "level": 45,
+      "req": 40,
+      "xp": 5540,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2969,
+      "level": 47,
+      "req": 40,
+      "xp": 4500,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2970,
+      "level": 47,
+      "req": 40,
+      "xp": 4500,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7003,
+      "level": 48,
+      "req": 45,
+      "xp": 6290,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7721,
+      "level": 48,
+      "req": 45,
+      "xp": 6290,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7733,
+      "level": 48,
+      "req": 40,
+      "xp": 6290,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Stranglethorn Vale": 1,
+    "Teldrassil": 3,
+    "Tanaris": 1,
+    "Thousand Needles": 1
+  }
+}

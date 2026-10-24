@@ -1,0 +1,277 @@
+Tanaris - Alliance - part 1 of 3, planned from level 43
+Guide "43-54 Tanaris" in group "Zone Routes (Alliance)": this part has 60 steps, 51 stops
+Written to guides/tbc/Tanaris (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 11 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+13 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 43. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 44 steps kept, 12 new ones slotted in, 0 moved because their prerequisites changed, 63 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 39 tasks, 14,636 yd on foot; ends at level 43.8; 2 hearths; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 17 more tasks; their whole route comes to 21,341 yd; ends at level 43.8; 2 hearths; at its hardest you are 1.8 levels below the mobs
+Hearthstone: set at Dirge Quikcleave (Dirge Quikcleave's inn); 2 hearth steps in the guide.
+3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+
+Quests in the guide (32)
+------------------------
+Start to finish here: 9 (9 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Deliver to MacKinley [2874, level 45] -> Stranglethorn Vale
+  Handle With Care [3022, level 47] -> Teldrassil
+
+Hand-in step only shows once complete (5):
+  Screecher Spirits [3520, level 44] - needs Screecher Spirit (Feralas)
+  Scarab Shells [2865, level 45] - needs Uncracked Scarab Shell (5) (an unknown place)
+  Troll Temper [3042, level 45] - needs Troll Temper (1) (an unknown place)
+  The Super Egg-O-Matic [2741, level 47] - needs Hippogryph Egg (1) (Feralas)
+  Divino-matic Rod [2768, level 47] - needs Divino-matic Rod (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (11):
+  Safety First [1188, level 41] <- Thousand Needles
+  Tran'rek [2864, level 45] <- Stranglethorn Vale
+  Stoley's Debt [2872, level 45] <- Stranglethorn Vale
+  Ledger from Tanaris [4450, level 46] <- Searing Gorge
+  The Borrower [2941, level 48] <- Teldrassil
+  Seeing What Happens [2946, level 50] <- Ironforge
+  The Sunken Temple [3445, level 51] <- Feralas
+  Meet at the Grave [3912, level 52] <- Winterspring
+  March of the Silithid [4493, level 53] <- Darnassus
+  Mold Rhymes With... [5538, level 57] <- Western Plaguelands
+  A Supernatural Device [8922, level 60] <- Ironforge
+
+Need a quest this guide does not hand in - steps show only once that is done (5):
+  Safety First [1189, level 41] - needs one of Safety First [1188] -> Thousand Needles
+  The Prophecy of Mosh'aru [3527, level 47] - needs one of Screecher Spirits [3520]
+  The Super Snapper FX [2944, level 48] - needs one of The Borrower [2941] -> Teldrassil
+  The Ancient Egg [4787, level 50] - needs one of The Prophecy of Mosh'aru [3527]
+  The God Hakkar [3528, level 53] - needs one of The Ancient Egg [4787]
+
+Worth checking in game
+----------------------
+  Wastewander Justice [1690, level 43]: could not read how many Wastewander Thief are needed from the quest text; assumed 8
+
+Put off to a later part (35)
+----------------------------
+These need a higher level than this part ends at:
+  The Scrimshank Redemption [10, level 48]: is a level 48 quest; this part gets you to about 44.5
+  Noxious Lair Investigation [82, level 47]: its mobs are level 48; this part gets you to about 44.5
+  Insect Part Analysis [110, level 48]: follows The Scrimshank Redemption [10]
+  Insect Part Analysis [113, level 48]: follows Insect Part Analysis [110]
+  Rise of the Silithid [162, level 49]: follows Insect Part Analysis [113]
+  Rescue OOX-17/TN! [648, level 48]: is a level 48 quest; this part gets you to about 44.5
+  Tooga's Quest [1560, level 50]: is a level 50 quest; this part gets you to about 44.5
+  The Thirsty Goblin [2605, level 49]: its mobs are level 47; this part gets you to about 44.5
+  In Good Taste [2606, level 49]: follows The Thirsty Goblin [2605]
+  Sprinkle's Secret Ingredient [2641, level 49]: follows In Good Taste [2606]
+  Delivery for Marin [2661, level 49]: follows Sprinkle's Secret Ingredient [2641]
+  Noggenfogger Elixir [2662, level 49]: follows Delivery for Marin [2661]
+  WANTED: Caliph Scorpidsting [2781, level 46]: its mobs are level 46; this part gets you to about 43.9
+  The Stone Watcher [2954, level 50]: is a level 50 quest; this part gets you to about 44.5
+  Return to Ironforge [2977, level 50]: needs level 45; this part gets you to about 44.5
+  Gahz'ridian [3161, level 48]: is a level 48 quest; this part gets you to about 44.5
+  Thistleshrub Valley [3362, level 50]: its mobs are level 49; this part gets you to about 44.5
+  The Stone Circle [3444, level 51]: needs level 46; this part gets you to about 44.5
+  Into the Depths [3446, level 51]: needs level 46; this part gets you to about 44.5
+  Secret of the Circle [3447, level 51]: needs level 46; this part gets you to about 44.5
+  A Grave Situation [3913, level 52]: needs level 47; this part gets you to about 44.5
+  Linken's Sword [3914, level 52]: needs level 47; this part gets you to about 44.5
+  Bungle in the Jungle [4496, level 53]: needs level 50; this part gets you to about 44.5
+  Super Sticky [4504, level 54]: needs level 48; this part gets you to about 44.5
+  Pawn Captures Queen [4507, level 54]: needs level 50; this part gets you to about 44.5
+  Calm Before the Storm [4508, level 54]: needs level 50; this part gets you to about 44.5
+  The Lost Tablets of Mosh'aru [5065, level 58]: needs level 49; this part gets you to about 44.5
+  Fire Plume Forged [5801, level 57]: needs level 55; this part gets you to about 44.5
+  The Dunemaul Compound [5863, level 49]: its mobs are level 49; this part gets you to about 44.5
+  The Hand of Rastakhan [8182, level 58]: needs level 58; this part gets you to about 44.5
+  The Ectoplasmic Distiller [8921, level 60]: needs level 58; this part gets you to about 44.5
+  Hunting for Ectoplasm [8924, level 60]: needs level 58; this part gets you to about 44.5
+  A Portable Power Source [8925, level 60]: needs level 58; this part gets you to about 44.5
+  A Shifty Merchant [8928, level 60]: needs level 58; this part gets you to about 44.5
+  Return to Deliana [8977, level 60]: needs level 58; this part gets you to about 44.5
+
+Left out (122)
+--------------
+needs reputation (52):
+  Anachronos [8303], Long Forgotten Memories [8305], A Pawn on the Eternal Board [8519], The Charge of the Dragonflights [8555], Azuregos's Magical Ledger [8575], Translating the Ledger [8576], Stewvul, Ex-B.F.F. [8577], Scrying Goggles? No Problem! [8578], Never Ask Me About My Business [8584], The Isle of Dread! [8585], Dirge's Kickin' Chimaerok Chops [8586], Return to Narain [8587], Draconic for Dummies [8597], rAnS0m [8598], Decoy! [8606], The Only Prescription [8620], The Good News and The Bad News [8728], The Wrath of Neptulon [8729], Nefarius's Corruption [8730], The Champion Returns [8741], The Might of Kalimdor [8742], The Path of the Protector [8747], The Path of the Protector [8748], The Path of the Protector [8749], The Path of the Protector [8750], The Protector of Kalimdor [8751], The Path of the Conqueror [8752], The Path of the Conqueror [8753], The Path of the Conqueror [8754], The Path of the Conqueror [8755], The Qiraji Conqueror [8756], The Path of the Invoker [8757], The Path of the Invoker [8758], The Path of the Invoker [8759], The Path of the Invoker [8760], The Grand Invoker [8761], Defender's Pledge [10460], Restorer's Pledge [10461], Champion's Pledge [10462], Sage's Pledge [10463], ... 12 more
+needs a profession (22):
+  Galvan's Finest Pupil [2764], A Good Head On Your Shoulders [2771], The World At Your Feet [2772], The Mithril Kid [2773], Did You Lose This? [3321], The Undermarket [3402], Goblin Engineering [3629], Goblin Engineering [3633], The Pledge of Secrecy [3638], Show Your Work [3639], Goblin Engineering [4181], Clamlette Surprise [6610], I Know A Guy... [6612], A Blue Light Bargain [7652], Imperial Plate Belt [7653], Imperial Plate Boots [7654], Imperial Plate Bracer [7655], Imperial Plate Chest [7656], Imperial Plate Helm [7657], Imperial Plate Leggings [7658], Imperial Plate Shoulders [7659], Imperial Plate Armor [10891]
+repeatable (16):
+  Water Pouch Bounty [1878], An Extraordinary Egg [2747], A Fine Egg [2748], An Ordinary Egg [2749], A Bad Egg [2750], Cuergo's Gold [2882], Membership Card Renewal [3644], The Changing of Paths - Protector No More [8764], The Changing of Paths - Invoker No More [8765], The Changing of Paths - Conqueror No More [8766], The Super Egg-O-Matic [8893], War at Sea [9268], Sage No More [11103], Restorer No More [11104], Champion No More [11105], Defender No More [11106]
+not in the game (on Questie's quest blacklist) (11):
+  Ragetotem the Elder [8671], Dreamseer the Elder [8684], Winter's Presents [8827], New Year Celebrations! [8860], Brewfest! [11441], Desecrate this Fire! [11802], Honor the Flame [11833], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], The Master of Summer Lore [11970], Candy Bucket [12399]
+above this zone's range of 43-62 (9):
+  The Caverns of Time [10277], To The Master's Lair [10279], Old Hillsbrad [10282], Return to Andormu [10285], The Black Morass [10296], Hero of the Brood [10298], The Vials of Eternity [10445], Nice Hat... [12513], Nice Hat... [12515]
+special category (sort -344) (6):
+  Frame of Atiesh [9250], Atiesh, the Befouled Greatstaff [9251], Atiesh, Greatstaff of the Guardian [9257], Atiesh, Greatstaff of the Guardian [9269], Atiesh, Greatstaff of the Guardian [9270], Atiesh, Greatstaff of the Guardian [9271]
+dungeon quest (4):
+  Yuka Screwspigot [4324], The Final Tablets [4788], Confront Yeh'kinya [8181], The Savior of Kalimdor [8802]
+handed in here, but the database does not say where it starts (1):
+  Ship Schedules [2876]
+helper for Draconic for Dummies (1):
+  Love Song for Narain [8599]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Tanaris - Alliance - part 2 of 3, planned from level 46
+Guide "43-54 Tanaris" in group "Zone Routes (Alliance)": this part has 38 steps, 36 stops
+Written to guides/tbc/Tanaris (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 9 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 46. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 29 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 23 tasks, 13,317 yd on foot; ends at level 46.4; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 13 more tasks; their whole route comes to 17,544 yd; ends at level 46.4; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (21)
+------------------------
+Start to finish here: 8 (8 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Rise of the Silithid [162, level 49] -> Darnassus
+
+Hand-in step only shows once complete (1):
+  Sprinkle's Secret Ingredient [2641, level 49] - needs Violet Tragan (1) (The Hinterlands)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Screecher Spirits [3520, level 44] <- your earlier visit to this zone
+  Scarab Shells [2865, level 45] <- your earlier visit to this zone
+  Troll Temper [3042, level 45] <- your earlier visit to this zone
+  The Super Egg-O-Matic [2741, level 47] <- your earlier visit to this zone
+  Divino-matic Rod [2768, level 47] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (6):
+  Rescue OOX-17/TN! [648, level 48] - needs one of Find OOX-17/TN! [351] -> Stranglethorn Vale
+  Delivery for Marin [2661, level 49] - needs one of Sprinkle's Secret Ingredient [2641]
+  Noggenfogger Elixir [2662, level 49] - needs one of Delivery for Marin [2661]
+  The Stone Circle [3444, level 51] - needs one of The Sunken Temple [3380], The Sunken Temple [3445]
+  Into the Depths [3446, level 51] - needs one of The Stone Circle [3444] -> another zone
+  Secret of the Circle [3447, level 51] - needs one of The Stone Circle [3444] -> another zone
+
+Worth checking in game
+----------------------
+No objectives in the database (the hand-in step warns about it; add "objectives" for these to the zone file):
+  Noggenfogger Elixir [2662, level 49]: "Marin Noggenfogger wants you to speak to him again after he creates his elixir."
+
+Put off to a later part (19)
+----------------------------
+These need a higher level than this part ends at:
+  Tooga's Quest [1560, level 50]: is a level 50 quest; this part gets you to about 46.6
+  The Stone Watcher [2954, level 50]: is a level 50 quest; this part gets you to about 46.6
+  Return to Ironforge [2977, level 50]: follows The Stone Watcher [2954]
+  Thistleshrub Valley [3362, level 50]: its mobs are level 49; this part gets you to about 46.6
+  A Grave Situation [3913, level 52]: needs level 47; this part gets you to about 46.6
+  Linken's Sword [3914, level 52]: needs level 47; this part gets you to about 46.6
+  Bungle in the Jungle [4496, level 53]: needs level 50; this part gets you to about 46.6
+  Super Sticky [4504, level 54]: needs level 48; this part gets you to about 46.6
+  Pawn Captures Queen [4507, level 54]: needs level 50; this part gets you to about 46.6
+  Calm Before the Storm [4508, level 54]: needs level 50; this part gets you to about 46.6
+  The Lost Tablets of Mosh'aru [5065, level 58]: needs level 49; this part gets you to about 46.6
+  Fire Plume Forged [5801, level 57]: needs level 55; this part gets you to about 46.6
+  The Dunemaul Compound [5863, level 49]: its mobs are level 49; this part gets you to about 46.6
+  The Hand of Rastakhan [8182, level 58]: needs level 58; this part gets you to about 46.6
+  The Ectoplasmic Distiller [8921, level 60]: needs level 58; this part gets you to about 46.6
+  Hunting for Ectoplasm [8924, level 60]: needs level 58; this part gets you to about 46.6
+  A Portable Power Source [8925, level 60]: needs level 58; this part gets you to about 46.6
+  A Shifty Merchant [8928, level 60]: needs level 58; this part gets you to about 46.6
+  Return to Deliana [8977, level 60]: needs level 58; this part gets you to about 46.6
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Tanaris - Alliance - part 3 of 3, planned from level 49
+Guide "43-54 Tanaris" in group "Zone Routes (Alliance)": this part has 27 steps, 24 stops
+Written to guides/tbc/Tanaris (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 8 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+2 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 49. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 17 steps kept, 9 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 13 tasks, 12,340 yd on foot; ends at level 49.2
+  everyone (quests that depend on other zones): 13 more tasks; their whole route comes to 14,393 yd; ends at level 49.2
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (14)
+------------------------
+Start to finish here: 3 (3 for everyone)
+
+Hand-in step only shows once complete (1):
+  Super Sticky [4504, level 54] - needs Super Sticky Tar (1) (Un'Goro Crater)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (6):
+  Screecher Spirits [3520, level 44] <- your earlier visit to this zone
+  Scarab Shells [2865, level 45] <- your earlier visit to this zone
+  Troll Temper [3042, level 45] <- your earlier visit to this zone
+  The Super Egg-O-Matic [2741, level 47] <- your earlier visit to this zone
+  Divino-matic Rod [2768, level 47] <- your earlier visit to this zone
+  Sprinkle's Secret Ingredient [2641, level 49] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  The Stone Watcher [2954, level 50] - needs one of Seeing What Happens [2946], Seeing What Happens [2966]
+  Return to Ironforge [2977, level 50] - needs one of The Stone Watcher [2954] -> Ironforge
+  A Grave Situation [3913, level 52] - needs one of Meet at the Grave [3912]
+  Linken's Sword [3914, level 52] - needs one of A Grave Situation [3913] -> Un'Goro Crater
+
+Worth checking in game
+----------------------
+
+Not planned (11)
+----------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Bungle in the Jungle [4496, level 53]: needs level 50; this part gets you to about 49.2
+  Pawn Captures Queen [4507, level 54]: needs level 50; this part gets you to about 49.2
+  Calm Before the Storm [4508, level 54]: needs level 50; this part gets you to about 49.2
+  The Lost Tablets of Mosh'aru [5065, level 58]: needs level 49; this part gets you to about 49.2
+  Fire Plume Forged [5801, level 57]: needs level 55; this part gets you to about 49.2
+  The Hand of Rastakhan [8182, level 58]: needs level 58; this part gets you to about 49.2
+  The Ectoplasmic Distiller [8921, level 60]: needs level 58; this part gets you to about 49.2
+  Hunting for Ectoplasm [8924, level 60]: needs level 58; this part gets you to about 49.2
+  A Portable Power Source [8925, level 60]: needs level 58; this part gets you to about 49.2
+  A Shifty Merchant [8928, level 60]: needs level 58; this part gets you to about 49.2
+  Return to Deliana [8977, level 60]: needs level 58; this part gets you to about 49.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

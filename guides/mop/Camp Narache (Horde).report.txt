@@ -1,0 +1,63 @@
+Camp Narache - Horde
+Guide "1-5 Camp Narache" in group "Zone Routes (Horde)": 48 steps, 39 stops
+Written to guides/mop/Camp Narache (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: 1 PROBLEM
+  ! Learning the Word (27066) is never picked up (Troll Priest)
+Quest log: at most 3 of 40 held at once (Tauren Warrior), not counting quests brought in from other zones.
+6 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 63 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed, 6 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 34 tasks, 6,557 yd on foot; ends at level 4.6; 1 hearth
+  Tauren Paladin/BloodElf Paladin: 5 more tasks; their whole route comes to 6,760 yd; ends at level 4.7; 1 hearth
+  Tauren Warrior: 5 more tasks; their whole route comes to 6,748 yd; ends at level 4.8; 1 hearth
+  Tauren Hunter: 5 more tasks; their whole route comes to 6,721 yd; ends at level 4.7; 1 hearth
+  Tauren Priest: 5 more tasks; their whole route comes to 6,771 yd; ends at level 4.7; 1 hearth
+  Tauren Shaman: 5 more tasks; their whole route comes to 6,776 yd; ends at level 4.7; 1 hearth
+  Tauren Druid: 5 more tasks; their whole route comes to 6,752 yd; ends at level 4.7; 1 hearth
+Hearthstone: set at Moodan Sungrain (Moodan Sungrain's inn); 1 hearth step in the guide.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+6 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (24)
+------------------------
+Start to finish here: 23 (0 for everyone, 11 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren, 2 Tauren Warrior, 2 Tauren Hunter, 2 Tauren Shaman, 2 Tauren Druid, 2 Tauren Priest, 2 Tauren Paladin/BloodElf Paladin)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Rite of the Winds [24215, level 5, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Mulgore
+
+Worth checking in game
+----------------------
+  The First Lesson [27020, level 3, Tauren Warrior]: has a reputation or spell objective, which is not planned
+  The First Lesson [27020, level 3, Tauren Warrior]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Charge (x3)" there
+  The Hunter's Path [27021, level 3, Tauren Hunter]: has a reputation or spell objective, which is not planned
+  The Hunter's Path [27021, level 3, Tauren Hunter]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Steady Shot (x3)" there
+  The Way of the Sunwalkers [27023, level 3, Tauren Paladin/BloodElf Paladin]: has a reputation or spell objective, which is not planned
+  The Way of the Sunwalkers [27023, level 3, Tauren Paladin/BloodElf Paladin]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Judgement (x3)" there
+  Primal Strike [27027, level 3, Tauren Shaman]: has a reputation or spell objective, which is not planned
+  Primal Strike [27027, level 3, Tauren Shaman]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Primal Strike (x3)" there
+  Learning the Word [27066, level 3, Tauren Priest]: has a reputation or spell objective, which is not planned
+  Learning the Word [27066, level 3, Tauren Priest]: objective "Training Dummy slain (5)" is line 1 by the database, but RestedXP's guide has "Cast Flash Heal (x5)" there
+  Moonfire [27067, level 3, Tauren Druid]: has a reputation or spell objective, which is not planned
+  Moonfire [27067, level 3, Tauren Druid]: objective "Training Dummy slain (1)" is line 1 by the database, but RestedXP's guide has "Cast Rejuvenation (x1)" there
+
+Left out (10)
+-------------
+not in the game (on Questie's quest blacklist) (7):
+  The Hunt Begins [747], The Hunt Continues [750], A Humble Task [753], Rite of Strength [757], The Battleboars [780], Break Sharptusk! [3376], Attack on Camp Narache [24857]
+special category (sort -395) (2):
+  Calligraphed Note [31165], Tiger Palm [31166]
+handed in here, but the database does not say where it starts (1):
+  Attack on Camp Narache [781]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

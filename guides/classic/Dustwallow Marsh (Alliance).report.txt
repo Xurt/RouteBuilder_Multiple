@@ -1,5 +1,5 @@
-Dustwallow Marsh - Alliance - part 1 of 4, planned from level 26
-Guide "26-40 Dustwallow Marsh" in group "Zone Routes (Alliance)": this part has 15 steps, 10 stops
+Dustwallow Marsh - Alliance
+Guide "35-40 Dustwallow Marsh" in group "Zone Routes (Alliance)": 67 steps, 53 stops
 Written to guides/classic/Dustwallow Marsh (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -8,31 +8,40 @@ RestedXP cross-check: 720 objective notes read from 50 guide files
 Checks
 ------
 Played through as 20 race/class combinations: no problems found.
-Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
-1 pickups or hand-ins are within reach of a stop but planned for later.
-The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+Quest log: at most 8 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+7 pickups or hand-ins are within reach of a stop but planned for later.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
 
 Route
 -----
-Planned from level 26. Distances are straight lines, so real running is longer; levels are an estimate.
-Step order kept from the last build (locks folder): 4 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed, 53 no longer in the guide. Build with --fresh to plan from scratch.
-(The zone has quests below level 26, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
-  everyone: 2 tasks, 0 yd on foot; ends at level 26.0
-  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 311 yd; ends at level 26.0
-  Mage (quests that depend on other zones): 3 more tasks; their whole route comes to 1,451 yd; ends at level 26.0
-  Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 1,451 yd; ends at level 26.0
-Hearthstone: not used (no inn found in this zone, or --no-hearth).
+Planned from level 35. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 45 steps kept, 11 new ones slotted in, 8 moved because their prerequisites changed, 4 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 35, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 44 tasks, 15,812 yd on foot; ends at level 35.6; 2 hearths; at its hardest you are 1.7 levels below the mobs
+  Mage: 1 more tasks; their whole route comes to 16,345 yd; ends at level 35.6; 2 hearths; at its hardest you are 1.7 levels below the mobs
+  everyone (quests that depend on other zones): 14 more tasks; their whole route comes to 19,867 yd; ends at level 35.6; 2 hearths; at its hardest you are 1.7 levels below the mobs
+  Mage (quests that depend on other zones): 4 more tasks; their whole route comes to 20,693 yd; ends at level 35.6; 2 hearths; at its hardest you are 1.7 levels below the mobs
+  Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 19,965 yd; ends at level 35.6; 2 hearths; at its hardest you are 1.7 levels below the mobs
+Hearthstone: set at Innkeeper Janene (Innkeeper Janene's inn); 3 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 35 for The Infernal Orb (Mage)
 3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+5 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
 
-Quests in the guide (10)
+Quests in the guide (36)
 ------------------------
-Start to finish here: 0 (0 for everyone)
+Start to finish here: 17 (17 for everyone)
 
-Picked up here, handed in elsewhere - these stay in the log (1):
+Picked up here, handed in elsewhere - these stay in the log (2):
   Journey to Astranaar [1133, level 20] -> Ashenvale
+  Crystal in the Mountains [635, level 35] -> Arathi Highlands
 
-Hand-in step only shows once complete (1):
+Hand-in step only shows once complete (4):
   Highperch Venom [1135, level 30] - needs Highperch Venom Sac (10) (Thousand Needles)
+  Jarl Needs a Blade [1203, level 35] - needs Moonsteel Broadsword (1) (an unknown place)
+  ... and Bugs [1258, level 40] - needs Pristine Crawler Leg (12) (Swamp of Sorrows)
+  The Infernal Orb [1954, level 40, Mage] - needs Infernal Orb (1) (Desolace)
 
 Brought in from another zone and handed in here - steps show only if you have the quest (8):
   Fiora Longears [1132, level 20] <- Wetlands
@@ -44,46 +53,27 @@ Brought in from another zone and handed in here - steps show only if you have th
   Rituals of Power [1951, level 40, Mage] <- Thousand Needles
   Return to the Marsh [1953, level 40, Mage] <- Thunder Bluff
 
+Need a quest this guide does not hand in - steps show only once that is done (5):
+  The Missing Diplomat [1265, level 35] - needs one of The Missing Diplomat [1264]
+  The Missing Diplomat [1266, level 36] - needs one of The Missing Diplomat [1265]
+  The Missing Diplomat [1267, level 38] - needs one of The Missing Diplomat [1324]
+  The Missing Diplomat [1324, level 38] - needs one of The Missing Diplomat [1266]
+  Hidden Secrets [1949, level 38, Mage] - needs one of Journey to the Marsh [1947] -> Thousand Needles
+
 Worth checking in game
 ----------------------
 
-Put off to a later part (34)
-----------------------------
-These need a higher level than this part ends at:
-  Crystal in the Mountains [635, level 35]: needs level 30; this part gets you to about 27.2
-  Hungry! [1177, level 36]: its mobs are level 35; this part gets you to about 27.2
-  Jarl Needs a Blade [1203, level 35]: needs level 30; this part gets you to about 27.2
-  Mudrock Soup and Bugs [1204, level 38]: its mobs are level 36; this part gets you to about 27.2
-  Jarl Needs Eyes [1206, level 35]: its mobs are level 37; this part gets you to about 27.2
-  Soothing Spices [1218, level 35]: is a level 35 quest; this part gets you to about 27.2
-  The Orc Report [1219, level 35]: needs level 30; this part gets you to about 27.2
-  Captain Vimes [1220, level 35]: needs level 30; this part gets you to about 27.2
-  Stinky's Escape [1222, level 37]: is a level 37 quest; this part gets you to about 27.2
-  Lieutenant Paval Reethe [1252, level 40]: needs level 30; this part gets you to about 27.2
-  The Black Shield [1253, level 35]: needs level 30; this part gets you to about 27.2
-  ... and Bugs [1258, level 40]: needs level 33; this part gets you to about 27.2
-  Lieutenant Paval Reethe [1259, level 40]: needs level 30; this part gets you to about 27.2
-  The Missing Diplomat [1265, level 35]: is a level 35 quest; this part gets you to about 27.2
-  The Missing Diplomat [1266, level 36]: needs level 28; this part gets you to about 27.2
-  The Missing Diplomat [1267, level 38]: needs level 28; this part gets you to about 27.2
-  They Call Him Smiling Jim [1282, level 35]: needs level 30; this part gets you to about 27.2
-  Suspicious Hoofprints [1284, level 35]: needs level 30; this part gets you to about 27.2
-  Daelin's Men [1285, level 38]: needs level 30; this part gets you to about 27.2
-  The Deserters [1286, level 38]: needs level 30; this part gets you to about 27.2
-  The Deserters [1287, level 38]: needs level 30; this part gets you to about 27.2
-  The Black Shield [1319, level 35]: needs level 30; this part gets you to about 27.2
-  The Black Shield [1320, level 35]: needs level 30; this part gets you to about 27.2
-  The Missing Diplomat [1324, level 38]: its mobs are level 35; this part gets you to about 27.2
-  Items of Power [1948, level 40]: is a level 40 quest; this part gets Mage characters to about 27.2
-  Hidden Secrets [1949, level 38]: needs level 30; this part gets Mage characters to about 27.2
-  Mage's Wand [1952, level 40]: needs level 30; this part gets Mage characters to about 27.2
-  The Infernal Orb [1954, level 40]: needs level 35; this part gets Mage characters to about 27.2
-  The Exorcism [1955, level 40]: its mobs are level 40; this part gets Mage characters to about 27.2
-  Power in Uldaman [1956, level 40]: needs level 35; this part gets Mage characters to about 27.2
-  Mana Surges [1957, level 40]: its mobs are level 40; this part gets Mage characters to about 27.2
-  Celestial Power [1958, level 40]: needs level 35; this part gets Mage characters to about 27.2
-  Cleansing of the Orb of Orahil [4961, level 40]: its mobs are level 40; this part gets Warlock characters to about 27.2
-  Returning the Cleansed Orb [4976, level 40]: needs level 35; this part gets Warlock characters to about 27.2
+Not planned (8)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Items of Power [1948, level 40]: is a level 40 quest; this part gets Mage characters to about 35.6
+  Mage's Wand [1952, level 40]: follows Items of Power [1948]
+  The Exorcism [1955, level 40]: its mobs are level 40; this part gets Mage characters to about 35.6
+  Power in Uldaman [1956, level 40]: follows The Exorcism [1955]
+  Mana Surges [1957, level 40]: its mobs are level 40; this part gets Mage characters to about 35.6
+  Celestial Power [1958, level 40]: follows Mana Surges [1957]
+  Cleansing of the Orb of Orahil [4961, level 40]: its mobs are level 40; this part gets Warlock characters to about 35.6
+  Returning the Cleansed Orb [4976, level 40]: follows Cleansing of the Orb of Orahil [4961]
 
 Left out (12)
 -------------
@@ -95,203 +85,5 @@ dungeon quest (2):
   Shadowshard Fragments [7070], Nat's Measuring Tape [8227]
 repeatable (1):
   CLUCK! [3861]
-
-To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
-
-
-====================================================================================================
-
-Dustwallow Marsh - Alliance - part 2 of 4, planned from level 31
-Guide "26-40 Dustwallow Marsh" in group "Zone Routes (Alliance)": this part has 17 steps, 15 stops
-Written to guides/classic/Dustwallow Marsh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
-Zone file: none (everything below comes straight from the database)
-RestedXP cross-check: 720 objective notes read from 50 guide files
-
-Checks
-------
-Played through as 20 race/class combinations: no problems found.
-Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
-1 pickups or hand-ins are within reach of a stop but planned for later.
-1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
-
-Route
------
-Planned from level 31. Distances are straight lines, so real running is longer; levels are an estimate.
-Step order kept from the last build (locks folder): 17 steps kept, 1 new ones slotted in, 8 moved because their prerequisites changed. Build with --fresh to plan from scratch.
-  everyone: 24 tasks, 10,751 yd on foot; ends at level 31.3
-  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 10,751 yd; ends at level 31.3
-  Mage (quests that depend on other zones): 1 more tasks; their whole route comes to 10,785 yd; ends at level 31.3
-Hearthstone: not used (no inn found in this zone, or --no-hearth).
-
-Quests in the guide (14)
-------------------------
-Start to finish here: 12 (12 for everyone)
-
-Brought in from another zone and handed in here - steps show only if you have the quest (1):
-  Highperch Venom [1135, level 30] <- your earlier visit to this zone
-
-Need a quest this guide does not hand in - steps show only once that is done (1):
-  Hidden Secrets [1949, level 38, Mage] - needs one of Journey to the Marsh [1947] -> Thousand Needles
-
-Worth checking in game
-----------------------
-
-Put off to a later part (21)
-----------------------------
-These need a higher level than this part ends at:
-  Crystal in the Mountains [635, level 35]: follows Hungry! [1177]
-  Hungry! [1177, level 36]: its mobs are level 35; this part gets you to about 31.9
-  Jarl Needs a Blade [1203, level 35]: follows Jarl Needs Eyes [1206]
-  Mudrock Soup and Bugs [1204, level 38]: its mobs are level 36; this part gets you to about 31.9
-  Jarl Needs Eyes [1206, level 35]: its mobs are level 37; this part gets you to about 31.9
-  Soothing Spices [1218, level 35]: is a level 35 quest; this part gets you to about 31.9
-  Stinky's Escape [1222, level 37]: is a level 37 quest; this part gets you to about 31.9
-  ... and Bugs [1258, level 40]: needs level 33; this part gets you to about 31.9
-  The Missing Diplomat [1265, level 35]: is a level 35 quest; this part gets you to about 31.9
-  The Missing Diplomat [1266, level 36]: follows The Missing Diplomat [1265]
-  The Missing Diplomat [1267, level 38]: follows The Missing Diplomat [1324]
-  The Missing Diplomat [1324, level 38]: its mobs are level 35; this part gets you to about 31.9
-  Items of Power [1948, level 40]: is a level 40 quest; this part gets Mage characters to about 31.9
-  Mage's Wand [1952, level 40]: follows Items of Power [1948]
-  The Infernal Orb [1954, level 40]: needs level 35; this part gets Mage characters to about 31.9
-  The Exorcism [1955, level 40]: its mobs are level 40; this part gets Mage characters to about 31.9
-  Power in Uldaman [1956, level 40]: needs level 35; this part gets Mage characters to about 31.9
-  Mana Surges [1957, level 40]: its mobs are level 40; this part gets Mage characters to about 31.9
-  Celestial Power [1958, level 40]: needs level 35; this part gets Mage characters to about 31.9
-  Cleansing of the Orb of Orahil [4961, level 40]: its mobs are level 40; this part gets Warlock characters to about 31.9
-  Returning the Cleansed Orb [4976, level 40]: needs level 35; this part gets Warlock characters to about 31.9
-
-Left out (0)
-------------
-
-To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
-
-
-====================================================================================================
-
-Dustwallow Marsh - Alliance - part 3 of 4, planned from level 34
-Guide "26-40 Dustwallow Marsh" in group "Zone Routes (Alliance)": this part has 31 steps, 23 stops
-Written to guides/classic/Dustwallow Marsh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
-Zone file: none (everything below comes straight from the database)
-RestedXP cross-check: 720 objective notes read from 50 guide files
-
-Checks
-------
-Played through as 20 race/class combinations: no problems found.
-Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
-Every stop picks up and hands in everything on offer within reach.
-The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
-
-Route
------
-Planned from level 34. Distances are straight lines, so real running is longer; levels are an estimate.
-Step order kept from the last build (locks folder): 22 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
-  everyone: 13 tasks, 9,968 yd on foot; ends at level 34.3; at its hardest you are 1.9 levels below the mobs
-  everyone (quests that depend on other zones): 11 more tasks; their whole route comes to 15,445 yd; ends at level 34.3; at its hardest you are 1.9 levels below the mobs
-Hearthstone: not used (no inn found in this zone, or --no-hearth).
-5 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
-
-Quests in the guide (11)
-------------------------
-Start to finish here: 4 (4 for everyone)
-
-Picked up here, handed in elsewhere - these stay in the log (1):
-  Crystal in the Mountains [635, level 35] -> Arathi Highlands
-
-Hand-in step only shows once complete (1):
-  ... and Bugs [1258, level 40] - needs Pristine Crawler Leg (12) (Swamp of Sorrows)
-
-Brought in from another zone and handed in here - steps show only if you have the quest (1):
-  Highperch Venom [1135, level 30] <- your earlier visit to this zone
-
-Need a quest this guide does not hand in - steps show only once that is done (4):
-  The Missing Diplomat [1265, level 35] - needs one of The Missing Diplomat [1264]
-  The Missing Diplomat [1266, level 36] - needs one of The Missing Diplomat [1265]
-  The Missing Diplomat [1267, level 38] - needs one of The Missing Diplomat [1324]
-  The Missing Diplomat [1324, level 38] - needs one of The Missing Diplomat [1266]
-
-Worth checking in game
-----------------------
-
-Put off to a later part (11)
-----------------------------
-These need a higher level than this part ends at:
-  Jarl Needs a Blade [1203, level 35]: follows Jarl Needs Eyes [1206]
-  Jarl Needs Eyes [1206, level 35]: its mobs are level 37; this part gets you to about 34.5
-  Items of Power [1948, level 40]: is a level 40 quest; this part gets Mage characters to about 34.5
-  Mage's Wand [1952, level 40]: follows Items of Power [1948]
-  The Infernal Orb [1954, level 40]: needs level 35; this part gets Mage characters to about 34.5
-  The Exorcism [1955, level 40]: its mobs are level 40; this part gets Mage characters to about 34.5
-  Power in Uldaman [1956, level 40]: needs level 35; this part gets Mage characters to about 34.5
-  Mana Surges [1957, level 40]: its mobs are level 40; this part gets Mage characters to about 34.5
-  Celestial Power [1958, level 40]: needs level 35; this part gets Mage characters to about 34.5
-  Cleansing of the Orb of Orahil [4961, level 40]: its mobs are level 40; this part gets Warlock characters to about 34.5
-  Returning the Cleansed Orb [4976, level 40]: needs level 35; this part gets Warlock characters to about 34.5
-
-Left out (0)
-------------
-
-To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
-
-
-====================================================================================================
-
-Dustwallow Marsh - Alliance - part 4 of 4, planned from level 37
-Guide "26-40 Dustwallow Marsh" in group "Zone Routes (Alliance)": this part has 15 steps, 14 stops
-Written to guides/classic/Dustwallow Marsh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
-Zone file: none (everything below comes straight from the database)
-RestedXP cross-check: 720 objective notes read from 50 guide files
-
-Checks
-------
-Played through as 20 race/class combinations: no problems found.
-Quest log: at most 4 of 40 held at once (Human Mage), not counting quests brought in from other zones.
-Every stop picks up and hands in everything on offer within reach.
-The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
-
-Route
------
-Planned from level 37. Distances are straight lines, so real running is longer; levels are an estimate.
-Step order kept from the last build (locks folder): 5 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
-  everyone: 4 tasks, 2,413 yd on foot; ends at level 37.1
-  Mage: 1 more tasks; their whole route comes to 3,599 yd; ends at level 37.1
-  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 4,187 yd; ends at level 37.1
-  Mage (quests that depend on other zones): 4 more tasks; their whole route comes to 5,667 yd; ends at level 37.1; at its hardest you are 1.9 levels below the mobs
-Hearthstone: not used (no inn found in this zone, or --no-hearth).
-
-Quests in the guide (7)
------------------------
-Start to finish here: 1 (1 for everyone)
-
-Hand-in step only shows once complete (2):
-  Jarl Needs a Blade [1203, level 35] - needs Moonsteel Broadsword (1) (an unknown place)
-  The Infernal Orb [1954, level 40, Mage] - needs Infernal Orb (1) (Desolace)
-
-Brought in from another zone and handed in here - steps show only if you have the quest (2):
-  Highperch Venom [1135, level 30] <- your earlier visit to this zone
-  ... and Bugs [1258, level 40] <- your earlier visit to this zone
-
-Need a quest this guide does not hand in - steps show only once that is done (2):
-  Items of Power [1948, level 40, Mage] - needs one of Journey to the Marsh [1947]
-  Mage's Wand [1952, level 40, Mage] - needs Items of Power [1948], Rituals of Power [1951]
-
-Worth checking in game
-----------------------
-
-Not planned (6)
----------------
-These need a higher level than the guide reaches and could not be given a part of their own:
-  The Exorcism [1955, level 40]: its mobs are level 40; this part gets Mage characters to about 37.1
-  Power in Uldaman [1956, level 40]: follows The Exorcism [1955]
-  Mana Surges [1957, level 40]: its mobs are level 40; this part gets Mage characters to about 37.1
-  Celestial Power [1958, level 40]: follows Mana Surges [1957]
-  Cleansing of the Orb of Orahil [4961, level 40]: its mobs are level 40; this part gets Warlock characters to about 37.1
-  Returning the Cleansed Orb [4976, level 40]: follows Cleansing of the Orb of Orahil [4961]
-
-Left out (0)
-------------
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

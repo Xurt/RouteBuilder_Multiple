@@ -1,0 +1,149 @@
+The Hinterlands - Horde - part 1 of 2, planned from level 31
+Guide "31-35 The Hinterlands" in group "Zone Routes (Horde)": this part has 114 steps, 85 stops
+Written to guides/mop/The Hinterlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 16 of 40 held at once (BloodElf Paladin), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 31. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 130 new ones slotted in, 0 moved because their prerequisites changed, 3 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 31, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 108 tasks, 21,664 yd on foot; ends at level 34.2; 3 hearths
+  Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior: 1 more tasks; their whole route comes to 22,640 yd; ends at level 34.2; 3 hearths
+  Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter: 1 more tasks; their whole route comes to 22,912 yd; ends at level 34.2; 3 hearths
+  Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue: 1 more tasks; their whole route comes to 22,402 yd; ends at level 34.2; 3 hearths
+  Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage: 1 more tasks; their whole route comes to 22,758 yd; ends at level 34.2; 3 hearths
+  Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock: 1 more tasks; their whole route comes to 22,261 yd; ends at level 34.2; 3 hearths
+  Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman: 1 more tasks; their whole route comes to 22,068 yd; ends at level 34.2; 3 hearths
+  Tauren Paladin/BloodElf Paladin: 1 more tasks; their whole route comes to 23,015 yd; ends at level 34.2; 3 hearths
+  Undead Priest: 1 more tasks; their whole route comes to 22,636 yd; ends at level 34.2; 3 hearths
+  Tauren Priest: 1 more tasks; their whole route comes to 22,636 yd; ends at level 34.2; 3 hearths
+  Troll Priest: 1 more tasks; their whole route comes to 22,636 yd; ends at level 34.2; 3 hearths
+  BloodElf Paladin: 1 more tasks; their whole route comes to 23,015 yd; ends at level 34.2; 3 hearths
+  BloodElf Priest: 1 more tasks; their whole route comes to 22,636 yd; ends at level 34.2; 3 hearths
+  Goblin Priest: 1 more tasks; their whole route comes to 22,636 yd; ends at level 34.2; 3 hearths
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 22,978 yd; ends at level 34.2; 3 hearths
+  BloodElf (quests that depend on other zones): 5 more tasks; their whole route comes to 24,778 yd; ends at level 34.2; 3 hearths
+Hearthstone: set at Eliza Darkgrin (Eliza Darkgrin's inn); 3 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 31 for Start Taking Back (Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+6 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+7 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (61)
+------------------------
+Start to finish here: 34 (3 for everyone, 31 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (18):
+  Warchief's Command: Ghostlands! [28560, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Ghostlands
+  An Audience with Ureda [27277, level 20, Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage] -> Orgrimmar
+  Grimshot's Call [27278, level 20, Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter] -> Orgrimmar
+  The Shattered Hand [27279, level 20, Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue] -> Orgrimmar
+  The Dreamseeker Calls [27280, level 20, Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman] -> Orgrimmar
+  Grezz Ragefist [27281, level 20, Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior] -> Orgrimmar
+  Zevrost's Behest [27282, level 20, Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock] -> Orgrimmar
+  Seek Out Master Pyreanor [27298, level 20, BloodElf Paladin] -> Orgrimmar
+  Follow the Sun [27304, level 20, Tauren Paladin/BloodElf Paladin] -> Orgrimmar
+  The Seer's Call [27331, level 20, Tauren Priest] -> Orgrimmar
+  Seek the Shadow-Walker [27332, level 20, Troll Priest] -> Orgrimmar
+  Dark Cleric Cecille [27334, level 20, Undead Priest] -> Orgrimmar
+  Journey to Orgrimmar [27335, level 20, BloodElf Priest] -> Orgrimmar
+  Seek Brother Silverhallow [28164, level 20, Goblin Priest] -> Orgrimmar
+  Warchief's Command: Hillsbrad Foothills! [28571, level 20, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Hillsbrad Foothills
+  Warchief's Command: Arathi Highlands! [28572, level 25, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Arathi Highlands
+  Warchief's Command: Northern Stranglethorn Vale! [28688, level 25, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Northern Stranglethorn
+  Warchief's Command: The Cape of Stranglethorn! [28704, level 30, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> The Cape of Stranglethorn
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Fly to Silvermoon City [9133, level 7, BloodElf] <- Eversong Woods
+  Hero of the Sin'dorei [9328, level 21, BloodElf] <- Ghostlands
+  Allegiance to the Horde [9627, level 21, BloodElf] <- Orgrimmar
+  Friend of the Sin'dorei [9811, level 21, Orc/Undead/Tauren/Troll/Goblin/Pandaren] <- Ghostlands
+  Revantusk Village [26430, level 31] <- Arathi Highlands
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Skymistress Gloaming [9134, level 7, BloodElf] - needs one of Fly to Silvermoon City [9133] -> Eversong Woods
+  Envoy to the Horde [9621, level 21, BloodElf] - needs one of Hero of the Sin'dorei [9328] -> Undercity
+  Envoy to the Horde [9812, level 21, Orc/Undead/Tauren/Troll/Pandaren] - needs one of Friend of the Sin'dorei [9811] -> Undercity
+  Rescue OOX-09/HL! [836, level 35] - needs one of Find OOX-09/HL! [485] -> The Cape of Stranglethorn
+
+Worth checking in game
+----------------------
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  The Battle for Andorhal [28508, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+
+Left out (218)
+--------------
+not in the game (on Questie's quest blacklist) (172):
+  A Sticky Situation [77], Cortello's Riddle [626], Ripple Recovery [650], Speak with Deino [1943], Journey to the Marsh [1947], Return to the Marsh [1953], Rin'ji is Trapped! [2742], Rin'ji's Secret [2782], Tabetha's Task [2861], Lines of Communication [2995], Seeking Strahad [3001], In Search of Menara Voidrender [4738], Knowledge of the Orb of Orahil [4968], Snapjaws, Mon! [7815], Gammerita, Mon! [7816], Stalking the Stalkers [7828], Hunt the Savages [7829], Avenging the Fallen [7830], Vilebranch Hooligans [7839], Lard Lost His Lunch [7840], Message to the Wildhammer [7841], Another Message to the Wildhammer [7842], The Final Message to the Wildhammer [7843], Cannibalistic Cousins [7844], Separation Anxiety [7849], The Darkmoon Faire [7926], The Hunter's Charm [8151], A Simple Request [8233], Magecraft [8250], Cenarion Aid [8254], Oran's Gratitude [8273], An Imp's Request [8419], Shrouded in Nightmare [8446], Highpeak the Elder [8643], The Hero of the Day [8799], Lunar Fireworks [8867], The Lunar Festival [8873], The Lunar Festival [8874], The Lunar Festival [8875], Valadar Starsong [8883], ... 132 more
+above this zone's range of 30-37 (33):
+  Warchief's Command: Vashj'ir! [27718], Warchief's Command: Mount Hyjal! [27721], Warchief's Command: Deepholm! [27722], Meet with Grezz Ragefist [28290], Meet with Ormak Grimshot [28297], Meet with Gordul [28298], Meet with Zevrost [28299], Meet with Ureda [28300], Meet with Kardris Dreamseeker [28301], Meet with Sunwalker Atohmo [28302], Meet with Master Pyreanor [28303], Meet with Dark Cleric Cecille [28304], Meet with Tyelis [28307], Meet with Seer Liwatha [28308], Meet with Shadow-Walker Zuru [28309], Meet with Brother Silverhallow [28323], Warchief's Command: Uldum! [28557], Warchief's Command: Eastern Plaguelands! [28577], Warchief's Command: Badlands! [28580], Warchief's Command: Searing Gorge! [28581], Warchief's Command: Burning Steppes! [28667], Warchief's Command: Blasted Lands! [28671], Warchief's Command: Swamp of Sorrows! [28677], Warchief's Command: Outland! [28705], Warchief's Command: Northrend! [28711], Warchief's Command: Twilight Highlands! [28717], The Zandalari Menace [29157], A Summons from Lady Liadrin [64139], The Master's Path [64140], A Gesture of Commitment [64141], A Demonstration of Loyalty [64142], True Masters of the Light [64143], True Masters of the Light [64144]
+needs a profession (4):
+  Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+needs reputation (3):
+  Get My Results! [32329], What's in the Box? [32330], One Last Grasp [32412]
+special category (sort -284) (2):
+  Silvermoon [12788], Hammering It Out [25759]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29388], Guardians of Hyjal: Call of the Ancients [29390]
+special category (sort -23) (1):
+  Hammering It Out [25789]
+cannot be taken together with The Battle for Andorhal [28508], which is in the guide (1):
+  Warchief's Command: Western Plaguelands! [28575]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Hinterlands - Horde - part 2 of 2, planned from level 37
+Guide "31-35 The Hinterlands" in group "Zone Routes (Horde)": this part has 2 steps, 1 stops
+Written to guides/mop/The Hinterlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 37. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 37.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (1)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Battle for Andorhal [28508, level 35, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Western Plaguelands
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

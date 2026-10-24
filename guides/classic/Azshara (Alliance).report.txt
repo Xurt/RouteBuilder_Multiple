@@ -84,7 +84,7 @@ needs a profession (1):
   Dragonscale Leatherworking [5141]
 needs reputation (1):
   Azuregos's Magical Ledger [8575]
-special category (sort -366) (1):
+not in the game (on Questie's quest blacklist) (1):
   Skygleam the Elder [8720]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

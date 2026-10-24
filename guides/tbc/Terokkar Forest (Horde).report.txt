@@ -1,0 +1,292 @@
+Terokkar Forest - Horde - part 1 of 3, planned from level 62
+Guide "62-70 Terokkar Forest" in group "Zone Routes (Horde)": this part has 252 steps, 177 stops
+Written to guides/tbc/Terokkar Forest (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 14 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+9 pickups or hand-ins are within reach of a stop but planned for later.
+3 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 62. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 200 steps kept, 38 new ones slotted in, 0 moved because their prerequisites changed, 12 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 216 tasks, 49,345 yd on foot; ends at level 63.3; 4 hearths; at its hardest you are 2.5 levels below the mobs
+  everyone (quests that depend on other zones): 22 more tasks; their whole route comes to 52,274 yd; ends at level 63.3; 4 hearths; at its hardest you are 4.7 levels below the mobs
+Hearthstone: set at Rungor (Rungor's inn); 5 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 62 for Surrender to the Horde
+  level 63 for Evil Draws Near
+6 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+20 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+4 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+30 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (85)
+------------------------
+Start to finish here: 67 (67 for everyone)
+
+Hand-in step only shows once complete (1):
+  The Big Bone Worm [10930, level 65] - needs Enormous Bone Worm Organs (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (15):
+  News from Zangarmarsh [9796, level 62] <- Zangarmarsh
+  News for Rakoria [10105, level 62] <- Zangarmarsh
+  The Impotent Leader [9888, level 65] <- Nagrand
+  Levixus the Soul Caller [10253, level 67] <- Nagrand
+  Patience and Understanding [10004, level 68] <- Nagrand
+  A Secret Revealed [10102, level 68] <- Nagrand
+  The Hermit Smith [10663, level 69] <- Shadowmoon Valley
+  Khadgar [9829, level 70] <- Alterac Mountains
+  Special Delivery to Shattrath City [10280, level 70] <- Netherstorm
+  Of Thistleheads and Eggs... [10547, level 70] <- Shadowmoon Valley
+  Battle of the Crimson Watch [10781, level 70] <- Shadowmoon Valley
+  The Hostage Soul [10948, level 70] <- Shadowmoon Valley
+  Akama's Promise [11052, level 70] <- Shadowmoon Valley
+  Report to Nasuun [11517, level 70] <- Isle of Quel'Danas
+  Report to Nasuun [11534, level 70] <- Isle of Quel'Danas
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  The Shadow Tomb [10881, level 64] - needs one of Cabal Orders [10880]
+
+Worth checking in game
+----------------------
+No objectives in the database (the hand-in step warns about it; add "objectives" for these to the zone file):
+  Allegiance to the Aldor [10551, level 65]
+1 quests have no experience figure in the database: their experience is estimated, and 0 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  
+  Veil Lithic: Preemptive Strike [10861, level 64]: mixes a kill-credit objective with others; check that "Malevolent Hatchling" really is line 2 in the quest log
+
+Put off to a later part (38)
+----------------------------
+These need a higher level than this part ends at:
+  The Second and Third Fragments [9832, level 70]: needs level 68; this part gets you to about 63.4
+  The Master's Touch [9836, level 70]: needs level 69; this part gets you to about 63.4
+  Don't Kill the Fat One [9889, level 65]: needs level 64; this part gets you to about 63.4
+  Success! [9890, level 65]: needs level 64; this part gets you to about 63.4
+  Because Kilrath is a Coward [9891, level 65]: needs level 64; this part gets you to about 63.4
+  Crackin' Some Skulls [10009, level 68]: needs level 66; this part gets you to about 63.4
+  It's Just That Easy? [10010, level 68]: needs level 66; this part gets you to about 63.4
+  The Codex of Blood [10094, level 70]: needs level 68; this part gets you to about 63.4
+  Brother Against Brother [10097, level 69]: is a level 69 quest; this part gets you to about 63.4
+  Terokk's Legacy [10098, level 69]: needs level 65; this part gets you to about 63.4
+  Trouble at Auchindoun [10177, level 70]: needs level 68; this part gets you to about 63.4
+  Find Spy To'gun [10178, level 70]: needs level 68; this part gets you to about 63.4
+  Can't Stay Away [10180, level 69]: needs level 65; this part gets you to about 63.4
+  I See Dead Draenei [10227, level 67]: needs level 64; this part gets you to about 63.4
+  Ezekiel [10228, level 67]: needs level 64; this part gets you to about 63.4
+  What Book? I Don't See Any Book. [10231, level 67]: needs level 65; this part gets you to about 63.4
+  The Master's Grand Design? [10251, level 67]: needs level 65; this part gets you to about 63.4
+  The Bundle of Bloodthistle [10550, level 70]: needs level 68; this part gets you to about 63.4
+  Additional Materials [10664, level 69]: needs level 67; this part gets you to about 63.4
+  Fresh From the Mechanar [10665, level 69]: needs level 67; this part gets you to about 63.4
+  The Lexicon Demonica [10666, level 69]: needs level 67; this part gets you to about 63.4
+  Underworld Loam [10667, level 70]: needs level 67; this part gets you to about 63.4
+  Tear of the Earthmother [10670, level 70]: needs level 67; this part gets you to about 63.4
+  Bane of the Illidari [10676, level 70]: needs level 70; this part gets you to about 63.4
+  Quenching the Blade [10679, level 70]: needs level 70; this part gets you to about 63.4
+  The Tempest Key [10883, level 70]: needs level 70; this part gets you to about 63.4
+  Trial of the Naaru: Mercy [10884, level 70]: needs level 70; this part gets you to about 63.4
+  Trial of the Naaru: Strength [10885, level 70]: needs level 70; this part gets you to about 63.4
+  Trial of the Naaru: Tenacity [10886, level 70]: needs level 70; this part gets you to about 63.4
+  Return to Sha'tari Base Camp [10926, level 65]: needs level 65; this part gets you to about 63.4
+  Entry Into the Black Temple [10949, level 70]: needs level 70; this part gets you to about 63.4
+  Mog'dorg the Wizened [10983, level 70]: needs level 70; this part gets you to about 63.4
+  Speak with the Ogre [10984, level 70]: needs level 70; this part gets you to about 63.4
+  Secrets of the Talonpriests [11005, level 70]: needs level 70; this part gets you to about 63.4
+  Chief Apothecary Hildagard [11046, level 67]: needs level 67; this part gets you to about 63.4
+  Terokk's Downfall [11073, level 70]: needs level 70; this part gets you to about 63.4
+  Learning to Fly [11498, level 70]: needs level 70; this part gets you to about 63.4
+  Enter, the Deceiver... [11550, level 70]: needs level 70; this part gets you to about 63.4
+
+Left out (210)
+--------------
+not in the game (on Questie's quest blacklist) (77):
+  Carnival Boots [7881], Carnival Jerkins [7882], The World's Largest Gnome! [7883], Crocolisk Boy and the Bearded Murloc [7884], Armor Kits [7885], Coarse Weightstone [7889], Heavy Grinding Stone [7890], Green Iron Bracers [7891], Big Black Mace [7892], Rituals of Strength [7893], Copper Modulator [7894], Whirring Bronze Gizmo [7895], Green Fireworks [7896], Mechanical Repair Kits [7897], Thorium Widget [7898], Small Furry Paws [7899], Torn Bear Pelts [7900], Soft Bushy Tails [7901], Vibrant Plumes [7902], Evil Bat Eyes [7903], The Darkmoon Faire [7926], 5 Tickets - Darkmoon Flower [7930], 5 Tickets - Minor Darkmoon Prize [7931], 12 Tickets - Lesser Darkmoon Prize [7932], 40 Tickets - Greater Darkmoon Prize [7933], 50 Tickets - Darkmoon Storage Box [7934], 10 Tickets - Last Month's Mutton [7935], 50 Tickets - Last Year's Mutton [7936], More Dense Grinding Stones [7939], 1200 Tickets - Orb of the Darkmoon [7940], More Armor Kits [7941], More Thorium Widgets [7942], More Bat Eyes [7943], Spawn of Jubjub [7946], 1200 Tickets - Amulet of the Darkmoon [7981], Glowing Scorpid Blood [8222], More Glowing Scorpid Blood [8223], The Hero of the Day [8799], 40 Tickets - Schematic: Steam Tonk Controller [9249], Stealing Stormwind's Flame [9330], ... 37 more
+repeatable (70):
+  Darkmoon Beast Deck [7907], Darkmoon Portals Deck [7927], Darkmoon Warlords Deck [7928], Darkmoon Elementals Deck [7929], For Great Honor [8388], More Venom Sacs [10019], More Basilisk Eyes [10025], More Marks of Kil'jaeden [10326], Single Mark of Kil'jaeden [10327], Single Firewing Signet [10414], More Firewing Signets [10415], Arcane Tomes [10419], Fel Armaments [10421], More Marks of Sargeras [10654], Single Mark of Sargeras [10655], More Sunfury Signets [10658], Single Sunfury Signet [10659], More Feathers [10918], Darkmoon Blessings Deck [10938], Darkmoon Storms Deck [10939], Darkmoon Furies Deck [10940], Darkmoon Lunacy Deck [10941], More Shadow Dust [11006], Fires Over Skettis [11008], Tokens of the Descendants [11074], Escape from Skettis [11085], Call to Arms: Arathi Basin [11339], Call to Arms: Alterac Valley [11340], Call to Arms: Eye of the Storm [11341], Call to Arms: Warsong Gulch [11342], Wanted: Nazan's Riding Crop [11354], Wanted: Keli'dan's Feathered Stave [11362], Wanted: Bladefist's Seal [11363], Wanted: Shattered Hand Centurions [11364], Wanted: The Heart of Quagmirran [11368], Wanted: A Black Stalker Egg [11369], Wanted: The Warlord's Treatise [11370], Wanted: Coilfang Myrmidons [11371], Wanted: The Headfeathers of Ikiss [11372], Wanted: Shaffar's Wondrous Pendant [11373], ... 30 more
+needs reputation (26):
+  What's Wrong at Cenarion Thicket? [9957], A Cure for Zahlia [10020], Restoring the Light [10021], Marks of Kil'jaeden [10325], Deathblow to the Legion [10409], Ishanah's Help [10410], Firewing Signets [10412], Synthesis of Power [10416], A Cleansing Light [10420], Turning Point [10507], Bound for Glory [10509], Voren'thal the Seer [10553], Ishanah [10554], Marks of Sargeras [10653], Sunfury Signets [10656], Assist Exarch Orelis [11038], Report to Spymaster Thalodien [11039], Lord Illidan Stormrage [11108], Jorus the Cobalt Netherwing Drake [11109], Malfas the Purple Netherwing Drake [11110], Onyxien the Onyx Netherwing Drake [11111], Suraku the Azure Netherwing Drake [11112], Voranaku the Violet Netherwing Drake [11113], Zoya the Veridian Netherwing Drake [11114], Crisis at the Sunwell [11481], Duty Calls [11482]
+needs a profession (18):
+  Becoming a Mooncloth Tailor [10831], Becoming a Spellfire Tailor [10832], Becoming a Shadoweave Tailor [10833], Master of Elixirs [10902], Master of Elixirs [10906], The Eagle's Essence [10990], The Falcon's Essence [10991], The Hawk's Essence [10992], World of Shadows [11004], Ishaal's Almanac [11021], An Ally in Lower City [11024], Countdown to Doom [11028], A Shabby Disguise [11029], Hazzik's Bargain [11056], Hungry Nether Rays [11093], Threat from Above [11096], To Skettis! [11098], Adversarial Blood [11885]
+dungeon quest (14):
+  Entry Into Karazhan [9831], The Violet Eye [9838], Everything Will Be Alright [10164], Undercutting the Competition [10165], Auchindoun... [10167], Safety Is Job One [10216], Someone Else's Hard Work Pays Off [10218], How to Break Into the Arcatraz [10704], Harbinger of Doom [10882], Trial of the Naaru: Magtheridon [10888], Kael'thas and the Verdant Sphere [11007], Oooh, Shinies! [11130], Playin' With Dolls [11195], Archmage Alturus [11216]
+handed in here, but the database does not say where it starts (3):
+  Return to Khadgar [9837], The Soul Devices [10091], Into the Heart of the Labyrinth [10095]
+special category (sort -25) (1):
+  For Great Honor [8367]
+cannot be taken together with Allegiance to the Aldor [10551], which is in the guide (1):
+  Allegiance to the Scryers [10552]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Terokkar Forest - Horde - part 2 of 3, planned from level 66
+Guide "62-70 Terokkar Forest" in group "Zone Routes (Horde)": this part has 27 steps, 23 stops
+Written to guides/tbc/Terokkar Forest (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 66. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 10 steps kept, 16 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 17 tasks, 6,207 yd on foot; ends at level 66.1; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 9 more tasks; their whole route comes to 7,533 yd; ends at level 66.1; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (13)
+------------------------
+Start to finish here: 6 (6 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Master's Grand Design? [10251, level 67] -> Nagrand
+
+Hand-in step only shows once complete (1):
+  Terokk's Legacy [10098, level 69] - needs The Saga of Terokk (1) (an unknown place); Terokk's Mask (1) (an unknown place); Terokk's Quill (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Allegiance to the Aldor [10551, level 65] <- your earlier visit to this zone
+  The Big Bone Worm [10930, level 65] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Don't Kill the Fat One [9889, level 65] - needs one of The Impotent Leader [9888]
+  Success! [9890, level 65] - needs one of Don't Kill the Fat One [9889]
+  Because Kilrath is a Coward [9891, level 65] - needs one of Success! [9890] -> Nagrand
+
+Worth checking in game
+----------------------
+  Brother Against Brother [10097, level 69]: "Darkweaver Syth (1)" has no place in the data; taken to be done where the quest is given
+  Brother Against Brother [10097, level 69]: "Free Lakka (1)" has no place in the data; taken to be done where the quest is given
+
+Put off to a later part (27)
+----------------------------
+These need a higher level than this part ends at:
+  The Second and Third Fragments [9832, level 70]: needs level 68; this part gets you to about 66.1
+  The Master's Touch [9836, level 70]: needs level 69; this part gets you to about 66.1
+  Crackin' Some Skulls [10009, level 68]: needs level 66; this part gets you to about 66.1
+  It's Just That Easy? [10010, level 68]: needs level 66; this part gets you to about 66.1
+  The Codex of Blood [10094, level 70]: needs level 68; this part gets you to about 66.1
+  Trouble at Auchindoun [10177, level 70]: needs level 68; this part gets you to about 66.1
+  Find Spy To'gun [10178, level 70]: needs level 68; this part gets you to about 66.1
+  The Bundle of Bloodthistle [10550, level 70]: needs level 68; this part gets you to about 66.1
+  Additional Materials [10664, level 69]: needs level 67; this part gets you to about 66.1
+  Fresh From the Mechanar [10665, level 69]: needs level 67; this part gets you to about 66.1
+  The Lexicon Demonica [10666, level 69]: needs level 67; this part gets you to about 66.1
+  Underworld Loam [10667, level 70]: needs level 67; this part gets you to about 66.1
+  Tear of the Earthmother [10670, level 70]: needs level 67; this part gets you to about 66.1
+  Bane of the Illidari [10676, level 70]: needs level 70; this part gets you to about 66.1
+  Quenching the Blade [10679, level 70]: needs level 70; this part gets you to about 66.1
+  The Tempest Key [10883, level 70]: needs level 70; this part gets you to about 66.1
+  Trial of the Naaru: Mercy [10884, level 70]: needs level 70; this part gets you to about 66.1
+  Trial of the Naaru: Strength [10885, level 70]: needs level 70; this part gets you to about 66.1
+  Trial of the Naaru: Tenacity [10886, level 70]: needs level 70; this part gets you to about 66.1
+  Entry Into the Black Temple [10949, level 70]: needs level 70; this part gets you to about 66.1
+  Mog'dorg the Wizened [10983, level 70]: needs level 70; this part gets you to about 66.1
+  Speak with the Ogre [10984, level 70]: needs level 70; this part gets you to about 66.1
+  Secrets of the Talonpriests [11005, level 70]: needs level 70; this part gets you to about 66.1
+  Chief Apothecary Hildagard [11046, level 67]: needs level 67; this part gets you to about 66.1
+  Terokk's Downfall [11073, level 70]: needs level 70; this part gets you to about 66.1
+  Learning to Fly [11498, level 70]: needs level 70; this part gets you to about 66.1
+  Enter, the Deceiver... [11550, level 70]: needs level 70; this part gets you to about 66.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Terokkar Forest - Horde - part 3 of 3, planned from level 69
+Guide "62-70 Terokkar Forest" in group "Zone Routes (Horde)": this part has 29 steps, 25 stops
+Written to guides/tbc/Terokkar Forest (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 69. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 21 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 5 tasks, 4,494 yd on foot; ends at level 69.0
+  everyone (quests that depend on other zones): 16 more tasks; their whole route comes to 8,839 yd; ends at level 69.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (16)
+------------------------
+Start to finish here: 1 (1 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Chief Apothecary Hildagard [11046, level 67] -> Shadowmoon Valley
+  The Codex of Blood [10094, level 70] -> another zone
+  Find Spy To'gun [10178, level 70] -> another zone
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Allegiance to the Aldor [10551, level 65] <- your earlier visit to this zone
+  The Big Bone Worm [10930, level 65] <- your earlier visit to this zone
+  Terokk's Legacy [10098, level 69] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (9):
+  Crackin' Some Skulls [10009, level 68] - needs one of Patience and Understanding [10004]
+  It's Just That Easy? [10010, level 68] - needs one of Crackin' Some Skulls [10009] -> Nagrand
+  Additional Materials [10664, level 69] - needs one of The Hermit Smith [10662], The Hermit Smith [10663]
+  Fresh From the Mechanar [10665, level 69] - needs one of Additional Materials [10664]
+  The Lexicon Demonica [10666, level 69] - needs one of Additional Materials [10664]
+  The Second and Third Fragments [9832, level 70] - needs one of Entry Into Karazhan [9831]
+  The Bundle of Bloodthistle [10550, level 70] - needs one of Of Thistleheads and Eggs... [10547] -> Shadowmoon Valley
+  Underworld Loam [10667, level 70] - needs Fresh From the Mechanar [10665], The Lexicon Demonica [10666]
+  Tear of the Earthmother [10670, level 70] - needs Fresh From the Mechanar [10665], The Lexicon Demonica [10666]
+
+Worth checking in game
+----------------------
+
+Not planned (14)
+----------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  The Master's Touch [9836, level 70]: needs level 69; this part gets you to about 69.0
+  Bane of the Illidari [10676, level 70]: needs level 70; this part gets you to about 69.0
+  Quenching the Blade [10679, level 70]: needs level 70; this part gets you to about 69.0
+  The Tempest Key [10883, level 70]: needs level 70; this part gets you to about 69.0
+  Trial of the Naaru: Mercy [10884, level 70]: needs level 70; this part gets you to about 69.0
+  Trial of the Naaru: Strength [10885, level 70]: needs level 70; this part gets you to about 69.0
+  Trial of the Naaru: Tenacity [10886, level 70]: needs level 70; this part gets you to about 69.0
+  Entry Into the Black Temple [10949, level 70]: needs level 70; this part gets you to about 69.0
+  Mog'dorg the Wizened [10983, level 70]: needs level 70; this part gets you to about 69.0
+  Speak with the Ogre [10984, level 70]: needs level 70; this part gets you to about 69.0
+  Secrets of the Talonpriests [11005, level 70]: needs level 70; this part gets you to about 69.0
+  Terokk's Downfall [11073, level 70]: needs level 70; this part gets you to about 69.0
+  Learning to Fly [11498, level 70]: needs level 70; this part gets you to about 69.0
+  Enter, the Deceiver... [11550, level 70]: needs level 70; this part gets you to about 69.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

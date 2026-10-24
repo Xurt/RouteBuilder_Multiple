@@ -20,7 +20,7 @@ public static class Program
         Run it from the RouteBuilder folder (it uses QuestieDB, zones and locks from there), with the same
         --zone, --faction, --race, --class, --min-level and --max-level as the build you will run afterwards.
 
-          --game forever|classic    the game the lock is for (default: forever); its lock goes in locks/ or locks/<game>/
+          --game forever|classic|tbc|mop  the game the lock is for (default: forever); its lock goes in locks/ or locks/<game>/
           --guides "<name>,<name>"  only the RestedXP guides with these #name values (default: every guide in the files)
           --rxp <folder>            RestedXP guide folder for objective numbers (default: the folder of the first file).
                                     With no guide files named, the guides are read from it: for a game other than
@@ -92,17 +92,31 @@ public static class Program
         var model = new ZoneModel(data, area, cfg, bo, new Visit());
         var inZone = model.Quests.Keys.Concat(model.Later.Keys).ToHashSet();
         var keys = RouteLock.Keys(model).ToHashSet();
+        long zoneRaces = inZone.Select(q => data.Quests.TryGetValue(q, out var r) ? r.Races : 0).Aggregate(0L, (m, r) => r == 0 || m == -1 ? -1 : m | r);
+        long factionBits = Game.Races(faction).Aggregate(0L, (m, r) => m | r.Bit);
+        // a guide tagged only with races (no class, no "!"), whose races hold every race the zone's quests are for
+        bool CoversZone(string tag)
+        {
+            if (zoneRaces == -1 || inZone.Count == 0 || tag.Contains('/') || tag.Contains('!') && !Regex.IsMatch(tag, @"^[A-Za-z]+(\s+!(DK|DeathKnight))?$")) return false;
+            var words = tag.Split(' ', StringSplitOptions.RemoveEmptyEntries).Where(w => !w.StartsWith('!')).ToList();
+            var races = Game.Races(faction).ToDictionary(r => r.Name, r => r.Bit, StringComparer.OrdinalIgnoreCase);
+            if (words.Count == 0 || !words.All(races.ContainsKey)) return false;
+            long tagBits = words.Aggregate(0L, (m, w) => m | races[w]);
+            return (zoneRaces & factionBits & ~tagBits) == 0;
+        }
 
         // every .accept / .complete / .turnin / .home in the guides, in order
         var hits = new List<Hit>(); var guides = new List<string>(); int order = 0; var services = new List<Svc>(); var notOurs = new List<string>();
         var only = opt.TryGetValue("guides", out var gl) ? gl.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0).ToHashSet(StringComparer.OrdinalIgnoreCase) : null;
-        foreach (var file in files)
-            foreach (var (name, guideTag, steps) in ReadGuides(file, faction, data))
+        var blocks = RxpServices.Blocks(files, opt.TryGetValue("rxp", out var incl) && Directory.Exists(incl) ? RxpServices.GuideFiles(incl) : null);
+        foreach (var file in files.Select(Path.GetFullPath).Distinct())
+            foreach (var (name, guideTag, steps) in ReadGuides(blocks.Where(b => b.File == file), faction, data))
             {
                 if (only != null && !only.Contains(name)) continue;
                 // a guide RestedXP only offers some characters ("<< Human Mage": its AoE mage route) is that character's
                 // order, not the faction's: a faction build leaves it out, a one-character build takes it if it is theirs
-                if (RxpServices.ForSome(guideTag) && (bo.Race == null && bo.Class == null || !Applies(guideTag, bo))) { if (steps.Any(st => st.Lines.Any(l => CmdRx.Match(l.Text) is { Success: true } c && c.Groups[2].Success && inZone.Contains(int.Parse(c.Groups[2].Value))))) notOurs.Add($"{name} (<< {guideTag})"); continue; }
+                // (unless the guide's races are all this zone's quests are for: "<< Pandaren" is the whole Wandering Isle)
+                if (RxpServices.ForSome(guideTag) && (bo.Race == null && bo.Class == null || !Applies(guideTag, bo)) && !(bo.Race == null && bo.Class == null && CoversZone(guideTag))) { if (steps.Any(st => st.Lines.Any(l => CmdRx.Match(l.Text) is { Success: true } c && c.Groups[2].Success && inZone.Contains(int.Parse(c.Groups[2].Value))))) notOurs.Add($"{name} (<< {guideTag})"); continue; }
                 guides.Add(name);
                 int lastMap = -1; bool homeSet = false;
                 foreach (var st in steps)
@@ -262,16 +276,15 @@ public static class Program
     sealed record Step(string Tag, bool Along, List<(string Text, string Tag)> Lines);
     static readonly Dictionary<string, int> Skipped = new();
 
-    /// <summary>The guides in a RestedXP file: each RegisterGuide block's #name and its steps, comments removed.</summary>
-    static IEnumerable<(string Name, string Tag, List<Step> Steps)> ReadGuides(string file, string faction, GameData data)
+    /// <summary>The guides in RestedXP blocks (includes already filled in): each one's #name and its steps, comments removed.</summary>
+    static IEnumerable<(string Name, string Tag, List<Step> Steps)> ReadGuides(IEnumerable<RxpServices.Block> blocks, string faction, GameData data)
     {
-        string text = File.ReadAllText(file);
-        foreach (Match block in Regex.Matches(text, @"RegisterGuide\(\s*(?:""[^""]*""\s*,\s*)?\[\[(.*?)\]\]", RegexOptions.Singleline))
+        foreach (var block in blocks)
         {
             // RestedXP's Guides folder serves every game: leave out guides for other games, Season of Discovery, the 2x rate...
-            if (RxpServices.NotFor(RxpServices.HeaderOf(block.Groups[1].Value)) is { } why) { Skipped[why] = Skipped.GetValueOrDefault(why) + 1; continue; }
+            if (RxpServices.NotFor(RxpServices.HeaderOf(block.Body), block.GroupArg) is { } why) { Skipped[why] = Skipped.GetValueOrDefault(why) + 1; continue; }
             string name = "?", side = "", guideTag = ""; var steps = new List<Step>(); Step? cur = null;
-            foreach (var raw in block.Groups[1].Value.Split('\n'))
+            foreach (var raw in block.Body.Split('\n'))
             {
                 string l = Regex.Replace(raw, "--.*$", "").Trim();
                 if (l.Length == 0) continue;

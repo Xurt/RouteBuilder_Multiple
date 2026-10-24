@@ -90,7 +90,7 @@ Left out (9)
 ------------
 above this zone's range of 20-43 (4):
   Undamaged Venom Sac [2934], Consult Master Gadrin [2935], Summoning Shadra [2937], Venom to the Undercity [2938]
-special category (sort -22) (2):
+not in the game (on Questie's quest blacklist) (2):
   Rotten Eggs [8322], Ruined Kegs [8409]
 dungeon quest (1):
   Vorrel's Revenge [1051]

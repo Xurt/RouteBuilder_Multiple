@@ -1,0 +1,134 @@
+Azuremyst Isle - Alliance - part 1 of 2, planned from level 1
+Guide "1-12 Azuremyst Isle" in group "Zone Routes (Alliance)": this part has 135 steps, 82 stops
+Written to guides/mop/Azuremyst Isle (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: 8 PROBLEMS
+  ! The Prophecy of Velen is picked up before any of the quests that unlock it (Draenei Warrior)
+  ! The Prophecy of Velen is picked up before any of the quests that unlock it (Draenei Paladin)
+  ! The Prophecy of Velen is picked up before any of the quests that unlock it (Draenei Hunter)
+  ! The Prophecy of Velen is picked up before any of the quests that unlock it (Draenei Priest)
+  ! The Prophecy of Velen is picked up before any of the quests that unlock it (Draenei DeathKnight)
+  ! The Prophecy of Velen is picked up before any of the quests that unlock it (Draenei Shaman)
+  ! The Prophecy of Velen is picked up before any of the quests that unlock it (Draenei Mage)
+  ! The Prophecy of Velen is picked up before any of the quests that unlock it (Draenei Monk)
+Quest log: at most 11 of 40 held at once (Draenei Warrior), not counting quests brought in from other zones.
+4 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 80 steps kept, 26 new ones slotted in, 0 moved because their prerequisites changed, 4 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 80 tasks, 21,280 yd on foot; ends at level 8.5; at its hardest you are 8.0 levels below the mobs
+  Draenei: 19 more tasks; their whole route comes to 28,909 yd; ends at level 9.3; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 6.9 levels below the mobs
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 25,001 yd; ends at level 8.5; 1 ORDER PROBLEMS; at its hardest you are 8.0 levels below the mobs
+Hearthstone: set at Nabek (Nabek's inn); 1 hearth step in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 5 for The Prophecy of Velen (Draenei)
+  level 6 for A Cry For Help (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+  level 7 for Stillpine Hold (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+32 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+7 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+2 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (42)
+------------------------
+Start to finish here: 38 (0 for everyone, 30 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren, 8 Draenei)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  You Survived! [9279, level 1, Draenei] -> Ammen Vale
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Travel to Azure Watch [9313, level 5, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Ammen Vale
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Nightstalker Clean Up, Isle 2... [9456, level 8, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Strange Findings [9455]
+  Warlord Sriss'tiz [9515, level 10, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Rune Covered Tablet [9514]
+
+Worth checking in game
+----------------------
+  Tree's Company [9531, level 9, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Naga Flag" is line 1 by the database, but RestedXP's guide has "The Traitor Uncovered" there
+
+Put off to a later part (8)
+---------------------------
+These need a higher level than this part ends at:
+  The Kurken is Lurkin' [9570, level 12]: its mobs are level 12; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 9.1
+  The Kurken's Hide [9571, level 10]: follows The Kurken is Lurkin' [9570]
+  Chieftain Oomooroo [9573, level 11]: its mobs are level 11; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 8.8
+  Strength of One [9582, level 10]: needs level 10; this part gets Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior characters to about 9.3
+  Warn Your People [9622, level 11]: follows The Kurken is Lurkin' [9570]
+  Coming of Age [9623, level 11]: needs level 10; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 9.1
+  Elekks Are Serious Business [9625, level 11]: needs level 10; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 9.1
+  Behomat [10350, level 10]: needs level 10; this part gets Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior characters to about 9.3
+
+Left out (206)
+--------------
+not in the game (on Questie's quest blacklist) (151):
+  The Islander [1718], High Sorcerer Andromath [1939], Journey to the Marsh [1947], Return to the Marsh [1953], Tabetha's Task [2861], Heeding the Call [5924], Greatfather Winter is Here! [7023], Lord Grayson Shadowbreaker [7670], A Donation of Wool [7792], A Donation of Silk [7798], The Hunter's Charm [8151], Magecraft [8250], Cenarion Aid [8254], Elemental Mastery [8410], A Troubled Spirit [8417], The Hero of the Day [8763], Lunar Fireworks [8867], The Lunar Festival [8870], The Lunar Festival [8871], The Lunar Festival [8872], Valadar Starsong [8883], Torwa Pathfinder [9063], Light's Hope Chapel [9154], A Light in Dark Places [9319], Stealing Orgrimmar's Flame [9324], Stealing Thunder Bluff's Flame [9325], Stealing the Undercity's Flame [9326], A Thief's Reward [9365], The Festival of Fire [9367], Call of Fire [9461], Call of Fire [9462], Call of Fire [9464], Call of Fire [9465], Call of Fire [9467], Call of Fire [9468], Call of Water [9500], Call of Water [9502], Call of Water [9509], Fulfilling a Promise [9546], Call of Air [9547], ... 111 more
+above this zone's range of 5-13 (40):
+  Newfound Allies [9632], Audience with the Prophet [9698], Truth or Fiction [9699], The Bloodcurse Legacy [9751], The Unwritten Prophecy [9762], A Summons from Ander Germaine [27225], Lord Grayson Shadowbreaker [27265], Wulf Calls [27266], Make Haste to the Cathedral [27268], The Temple of the Moon [27269], An Audience with the Farseer [27270], Journey to the Wizard's Sanctum [27271], An Invitation from Moonglade [27273], The Chief Surgeon [27274], Hero's Call: Vashj'ir! [27724], Hero's Call: Mount Hyjal! [27726], Hero's Call: Deepholm! [27727], Meet with Ander Germaine [28258], Meet with Wulf Hansreim [28260], Meet with Maginor Dumas [28263], Meet with Lord Grayson Shadowbreaker [28268], Meet with High Priestess Laurena [28285], Meet with Farseer Umbrua [28287], Hero's Call: Ashenvale! [28492], Hero's Call: Thousand Needles! [28503], Hero's Call: Tanaris! [28507], Hero's Call: Feralas! [28511], Hero's Call: Un'Goro Crater! [28525], Hero's Call: Silithus! [28528], Hero's Call: Desolace! [28531], Hero's Call: Stonetalon Mountains! [28539], Hero's Call: Felwood! [28543], Hero's Call: Winterspring! [28544], Hero's Call: Southern Barrens! [28550], Hero's Call: Dustwallow Marsh! [28552], Hero's Call: Uldum! [28558], Hero's Call: Outland! [28708], Hero's Call: Northrend! [28709], Hero's Call: Twilight Highlands! [28716], The Troll Incursion [29156]
+needs a profession (4):
+  Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+special category (sort -394) (4):
+  Learning the Ropes [31556], On The Mend [31568], Got one! [31569], Level Up! [31825]
+special category (sort -284) (2):
+  The Exodar [12776], Hammering It Out [25563]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29387], Guardians of Hyjal: Call of the Ancients [29391]
+repeatable (1):
+  CLUCK! [3861]
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  Bandits! [9616]
+cannot be taken together with Elekks Are Serious Business [9625], which is in the guide (1):
+  Hero's Call: Bloodmyst Isle! [28559]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Azuremyst Isle - Alliance - part 2 of 2, planned from level 11
+Guide "1-12 Azuremyst Isle" in group "Zone Routes (Alliance)": this part has 18 steps, 16 stops
+Written to guides/mop/Azuremyst Isle (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 11. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 19 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 14 tasks, 3,287 yd on foot; ends at level 11.5
+  Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior: 5 more tasks; their whole route comes to 6,914 yd; ends at level 11.7
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 7 (0 for everyone, 5 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren, 2 Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Elekks Are Serious Business [9625, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Bloodmyst Isle
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,226 @@
+Eastern Plaguelands - Horde - part 1 of 3, planned from level 40
+Guide "40-45 Eastern Plaguelands" in group "Zone Routes (Horde)": this part has 204 steps, 180 stops
+Written to guides/mop/Eastern Plaguelands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 19 of 40 held at once (BloodElf Paladin), not counting quests brought in from other zones.
+5 pickups or hand-ins are within reach of a stop but planned for later.
+3 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 40. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 212 steps kept, 39 new ones slotted in, 1 moved because their prerequisites changed, 9 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 40, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 209 tasks, 33,267 yd on foot; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+  Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior: 1 more tasks; their whole route comes to 34,244 yd; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+  Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter: 1 more tasks; their whole route comes to 34,516 yd; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+  Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue: 1 more tasks; their whole route comes to 34,006 yd; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+  Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage: 1 more tasks; their whole route comes to 34,362 yd; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+  Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock: 1 more tasks; their whole route comes to 33,865 yd; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+  Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman: 1 more tasks; their whole route comes to 33,672 yd; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+  Tauren Paladin/BloodElf Paladin: 1 more tasks; their whole route comes to 34,619 yd; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+  Undead Priest: 1 more tasks; their whole route comes to 34,239 yd; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+  Tauren Priest: 1 more tasks; their whole route comes to 34,239 yd; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+  Troll Priest: 1 more tasks; their whole route comes to 34,239 yd; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+  BloodElf Paladin: 1 more tasks; their whole route comes to 34,619 yd; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+  BloodElf Priest: 1 more tasks; their whole route comes to 34,239 yd; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+  Goblin Priest: 1 more tasks; their whole route comes to 34,239 yd; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+  everyone (quests that depend on other zones): 25 more tasks; their whole route comes to 35,942 yd; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+  BloodElf (quests that depend on other zones): 5 more tasks; their whole route comes to 36,372 yd; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+Hearthstone: set at Fiona (Fiona's inn); 1 hearth step in the guide.
+6 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+10 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (103)
+-------------------------
+Start to finish here: 66 (66 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (20):
+  Warchief's Command: Ghostlands! [28560, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Ghostlands
+  An Audience with Ureda [27277, level 20, Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage] -> Orgrimmar
+  Grimshot's Call [27278, level 20, Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter] -> Orgrimmar
+  The Shattered Hand [27279, level 20, Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue] -> Orgrimmar
+  The Dreamseeker Calls [27280, level 20, Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman] -> Orgrimmar
+  Grezz Ragefist [27281, level 20, Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior] -> Orgrimmar
+  Zevrost's Behest [27282, level 20, Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock] -> Orgrimmar
+  Seek Out Master Pyreanor [27298, level 20, BloodElf Paladin] -> Orgrimmar
+  Follow the Sun [27304, level 20, Tauren Paladin/BloodElf Paladin] -> Orgrimmar
+  The Seer's Call [27331, level 20, Tauren Priest] -> Orgrimmar
+  Seek the Shadow-Walker [27332, level 20, Troll Priest] -> Orgrimmar
+  Dark Cleric Cecille [27334, level 20, Undead Priest] -> Orgrimmar
+  Journey to Orgrimmar [27335, level 20, BloodElf Priest] -> Orgrimmar
+  Seek Brother Silverhallow [28164, level 20, Goblin Priest] -> Orgrimmar
+  Warchief's Command: Hillsbrad Foothills! [28571, level 20, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Hillsbrad Foothills
+  Warchief's Command: Arathi Highlands! [28572, level 25, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Arathi Highlands
+  Warchief's Command: Northern Stranglethorn Vale! [28688, level 25, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Northern Stranglethorn
+  Warchief's Command: The Hinterlands! [28574, level 30, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> The Hinterlands
+  Warchief's Command: The Cape of Stranglethorn! [28704, level 30, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> The Cape of Stranglethorn
+  Warchief's Command: Western Plaguelands! [28575, level 35, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Western Plaguelands
+
+Hand-in step only shows once complete (1):
+  Pamela's Doll [27384, level 41] - needs Pamela's Doll (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Fly to Silvermoon City [9133, level 7, BloodElf] <- Eversong Woods
+  Hero of the Sin'dorei [9328, level 21, BloodElf] <- Ghostlands
+  Allegiance to the Horde [9627, level 21, BloodElf] <- Orgrimmar
+  Friend of the Sin'dorei [9811, level 21, Orc/Undead/Tauren/Troll/Goblin/Pandaren] <- Ghostlands
+  Into the Woods [27683, level 40] <- Western Plaguelands
+
+Need a quest this guide does not hand in - steps show only once that is done (11):
+  Skymistress Gloaming [9134, level 7, BloodElf] - needs one of Fly to Silvermoon City [9133] -> Eversong Woods
+  Envoy to the Horde [9621, level 21, BloodElf] - needs one of Hero of the Sin'dorei [9328] -> Undercity
+  Envoy to the Horde [9812, level 21, Orc/Undead/Tauren/Troll/Pandaren] - needs one of Friend of the Sin'dorei [9811] -> Undercity
+  Uncle Carlin [27385, level 41] - needs Pamela's Doll [27384]
+  A Strange Historian [27386, level 41] - needs one of Uncle Carlin [27385]
+  Villains of Darrowshire [27387, level 41] - needs one of A Strange Historian [27386]
+  Heroes of Darrowshire [27388, level 41] - needs one of A Strange Historian [27386]
+  Marauders of Darrowshire [27389, level 41] - needs one of A Strange Historian [27386]
+  The Battle of Darrowshire [27390, level 41] - needs Villains of Darrowshire [27387], Heroes of Darrowshire [27388], Marauders of Darrowshire [27389]
+  Hidden Treasures [27391, level 41] - needs one of The Battle of Darrowshire [27390]
+  Cenarion Tenacity [27544, level 41] - needs one of A Strange Historian [27386]
+
+Worth checking in game
+----------------------
+  Onward, to Light's Hope Chapel [27373, level 40]: could not read how many Fiona's Caravan are needed from the quest text; assumed 8
+  The Trek Continues [27448, level 42]: could not read how many Fiona's Caravan are needed from the quest text; assumed 8
+  Honor and Strength [27449, level 42]: could not read how many Mossflayer Rogue are needed from the quest text; assumed 8
+  Ix'lar the Underlord [27487, level 43]: mixes a kill-credit objective with others; check that "Scourge Guard" really is line 2 in the quest log
+  Nobody to Blame but Myself [27489, level 43]: could not read how many Fiona's Caravan are needed from the quest text; assumed 8
+
+Put off to a later part (3)
+---------------------------
+These need a higher level than this part ends at:
+  The Corpsebeasts [27530, level 45]: its mobs are level 85; this part gets you to about 44.1
+  Fuselight, Ho! [27762, level 45]: needs level 44; this part gets you to about 44.1
+  Warchief's Command: Badlands! [28580, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 44.1
+
+Left out (382)
+--------------
+not in the game (on Questie's quest blacklist) (322):
+  Speak with Deino [1943], Journey to the Marsh [1947], Return to the Marsh [1953], Tabetha's Task [2861], Seeking Strahad [3001], In Search of Menara Voidrender [4738], Dawn's Gambit [4771], Knowledge of the Orb of Orahil [4968], A Matter of Time [4971], Counting Out Time [4972], Counting Out Time [4973], Little Pamela [5142], Pamela's Doll [5149], A Strange Historian [5153], The Annals of Darrowshire [5154], Heroes of Darrowshire [5168], Villains of Darrowshire [5181], Marauders of Darrowshire [5206], Brother Carlin [5210], Defenders of Darrowshire [5211], The Flesh Does Not Lie [5212], The Active Agent [5213], The Great Ezra Grimm [5214], Uncle Carlin [5241], Houses of the Holy [5243], The Archivist [5251], The Truth Comes Crashing Down [5262], Above and Beyond [5263], Lord Maxwell Tyrosus [5264], The Argent Hold [5265], The Restless Souls [5281], The Restless Souls [5282], The Dying, Ras Frostwhisper [5462], Menethil's Gift [5464], Argent Dawn Commission [5503], Corruptor's Scourgestones [5508], Invader's Scourgestones [5509], Minion's Scourgestones [5510], Mantles of the Dawn [5513], Chromatic Mantle of the Dawn [5517], ... 282 more
+above this zone's range of 40-46 (31):
+  Warchief's Command: Vashj'ir! [27718], Warchief's Command: Mount Hyjal! [27721], Warchief's Command: Deepholm! [27722], Meet with Grezz Ragefist [28290], Meet with Ormak Grimshot [28297], Meet with Gordul [28298], Meet with Zevrost [28299], Meet with Ureda [28300], Meet with Kardris Dreamseeker [28301], Meet with Sunwalker Atohmo [28302], Meet with Master Pyreanor [28303], Meet with Dark Cleric Cecille [28304], Meet with Tyelis [28307], Meet with Seer Liwatha [28308], Meet with Shadow-Walker Zuru [28309], Meet with Brother Silverhallow [28323], Warchief's Command: Uldum! [28557], Warchief's Command: Searing Gorge! [28581], Warchief's Command: Burning Steppes! [28667], Warchief's Command: Blasted Lands! [28671], Warchief's Command: Swamp of Sorrows! [28677], Warchief's Command: Outland! [28705], Warchief's Command: Northrend! [28711], Warchief's Command: Twilight Highlands! [28717], The Zandalari Menace [29157], A Summons from Lady Liadrin [64139], The Master's Path [64140], A Gesture of Commitment [64141], A Demonstration of Loyalty [64142], True Masters of the Light [64143], True Masters of the Light [64144]
+repeatable (10):
+  Fiona's Lucky Charm [27555], Gidwin's Weapon Oil [27556], Tarenar's Talisman [27557], Pamela's Doll [27558], Vex'tul's Armbands [27559], Argus' Journal [27560], Rimblat's Stone [27561], Beezil's Cog [27562], Annals of the Silver Hand [28755], Aberrations of Bone [28756]
+needs a profession (4):
+  Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+special category (sort -372) (3):
+  Taking Back Acherus [13165], The Battle For The Ebon Hold [13166], Warchief's Blessing [13189]
+needs reputation (3):
+  Get My Results! [32329], What's in the Box? [32330], One Last Grasp [32412]
+special category (sort -284) (2):
+  Silvermoon [12788], Hammering It Out [25759]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29388], Guardians of Hyjal: Call of the Ancients [29390]
+handed in here, but the database does not say where it starts (1):
+  Welcome! [12781]
+special category (sort -23) (1):
+  Hammering It Out [25789]
+dungeon quest (1):
+  A City Under Siege [27422]
+cannot be taken together with Out of the Ziggurat [27481], which is in the guide (1):
+  Journey's End [27527]
+cannot be taken together with Visitors [27684], which is in the guide (1):
+  Warchief's Command: Eastern Plaguelands! [28577]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Eastern Plaguelands - Horde - part 2 of 3, planned from level 46
+Guide "40-45 Eastern Plaguelands" in group "Zone Routes (Horde)": this part has 11 steps, 7 stops
+Written to guides/mop/Eastern Plaguelands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 46. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 5 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 3,600 yd on foot; ends at level 46.0
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 7,340 yd; ends at level 46.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (3)
+-----------------------
+Start to finish here: 1 (0 for everyone, 1 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Fuselight, Ho! [27762, level 45] -> Badlands
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Pamela's Doll [27384, level 41] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  The Corpsebeasts [27530, level 45]: its mobs are level 85; this part gets you to about 46.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Eastern Plaguelands - Horde - part 3 of 3, planned from level 83
+Guide "40-45 Eastern Plaguelands" in group "Zone Routes (Horde)": this part has 8 steps, 7 stops
+Written to guides/mop/Eastern Plaguelands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 83. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 4 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 599 yd on foot; ends at level 83.0; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 4,147 yd; ends at level 83.0; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Pamela's Doll [27384, level 41] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

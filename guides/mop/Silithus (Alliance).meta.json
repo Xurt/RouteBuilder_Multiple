@@ -1,0 +1,353 @@
+{
+  "zone": "Silithus",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "55-56 Silithus",
+  "file": "Silithus (Alliance).lua",
+  "continent": -1377,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 55,
+      "end": 56.49,
+      "guide": "55-56 Silithus",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Huum Wildmane",
+          "guide": "55-56 Silithus",
+          "level": 55,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 6341,
+      "level": 7,
+      "req": 5,
+      "xp": 160,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 8277,
+      "level": 55,
+      "req": 54,
+      "xp": 8170,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8278,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8279,
+      "level": 56,
+      "req": 54,
+      "xp": 10550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8280,
+      "level": 55,
+      "req": 54,
+      "xp": 8170,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8281,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8282,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8283,
+      "level": 56,
+      "req": 54,
+      "xp": 10550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8284,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8285,
+      "level": 56,
+      "req": 54,
+      "xp": 6300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8287,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8304,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8306,
+      "level": 56,
+      "req": 54,
+      "xp": 10550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8309,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8310,
+      "level": 56,
+      "req": 54,
+      "xp": 10550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8314,
+      "level": 56,
+      "req": 54,
+      "xp": 6300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8318,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8320,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8321,
+      "level": 56,
+      "req": 54,
+      "xp": 10550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8323,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9415,
+      "level": 56,
+      "req": 55,
+      "xp": 0,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9419,
+      "level": 56,
+      "req": 55,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9422,
+      "level": 56,
+      "req": 55,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9604,
+      "level": 7,
+      "req": 5,
+      "xp": 315,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei",
+      "from": "Bloodmyst Isle"
+    },
+    {
+      "id": 9623,
+      "level": 11,
+      "req": 10,
+      "xp": 90,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Azuremyst Isle"
+    },
+    {
+      "id": 9698,
+      "level": 16,
+      "req": 14,
+      "xp": 1150,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Bloodmyst Isle"
+    },
+    {
+      "id": 10350,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior",
+      "from": "Azuremyst Isle"
+    },
+    {
+      "id": 14039,
+      "level": 11,
+      "req": 1,
+      "xp": 880,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 27269,
+      "level": 20,
+      "req": 20,
+      "xp": 155,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Priest"
+    },
+    {
+      "id": 28517,
+      "level": 10,
+      "req": 8,
+      "xp": 420,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 28528,
+      "level": 55,
+      "req": 54,
+      "xp": 815,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 28856,
+      "level": 55,
+      "req": 54,
+      "xp": 4050,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Winterspring"
+    },
+    {
+      "id": 28859,
+      "level": 55,
+      "req": 54,
+      "xp": 4050,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Un\u0027Goro Crater"
+    }
+  ],
+  "carriedTo": {
+    "Teldrassil": 1,
+    "Azuremyst Isle": 1,
+    "Bloodmyst Isle": 2,
+    "Darkshore": 2,
+    "Elwynn Forest": 16,
+    "Moonglade": 2,
+    "Ashenvale": 2,
+    "Feralas": 2,
+    "Tanaris": 1,
+    "Un\u0027Goro Crater": 1,
+    "Desolace": 1,
+    "Felwood": 1,
+    "Winterspring": 1,
+    "Southern Barrens": 1,
+    "Dustwallow Marsh": 1,
+    "Blasted Lands": 2
+  }
+}

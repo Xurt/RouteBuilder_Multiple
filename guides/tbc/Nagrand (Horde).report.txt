@@ -1,0 +1,206 @@
+Nagrand - Horde - part 1 of 2, planned from level 65
+Guide "65-68 Nagrand" in group "Zone Routes (Horde)": this part has 157 steps, 141 stops
+Written to guides/tbc/Nagrand (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: 26 PROBLEMS
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Orc Warrior)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Orc Hunter)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Orc Rogue)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Orc Shaman)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Orc Warlock)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Undead Warrior)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Undead Rogue)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Undead Priest)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Undead Mage)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Undead Warlock)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Tauren Warrior)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Tauren Hunter)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Tauren Shaman)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Tauren Druid)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Troll Warrior)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Troll Hunter)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Troll Rogue)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Troll Priest)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Troll Shaman)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Troll Mage)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (BloodElf Paladin)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (BloodElf Hunter)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (BloodElf Rogue)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (BloodElf Priest)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (BloodElf Mage)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (BloodElf Warlock)
+Quest log: at most 12 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+10 pickups or hand-ins are within reach of a stop but planned for later.
+6 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 65. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 156 steps kept, 8 new ones slotted in, 2 moved because their prerequisites changed, 20 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 110 tasks, 25,478 yd on foot; ends at level 65.8; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 1.6 levels below the mobs
+  everyone (quests that depend on other zones): 56 more tasks; their whole route comes to 37,964 yd; ends at level 65.8; 4 hearths; 1 ORDER PROBLEMS; at its hardest you are 1.6 levels below the mobs
+Hearthstone: set at Mathar G'ochar (Mathar G'ochar's inn); 5 hearth steps in the guide.
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (59)
+------------------------
+Start to finish here: 36 (36 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Impotent Leader [9888, level 65] -> Terokkar Forest
+
+Hand-in step only shows once complete (1):
+  Bring Me The Egg! [10111, level 66] - needs Severed Talon of the Matriarch (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Reinforcements for Garadar [9797, level 64] <- Zangarmarsh
+  Because Kilrath is a Coward [9891, level 65] <- Terokkar Forest
+  The Master's Grand Design? [10251, level 67] <- Shattrath City
+  It's Just That Easy? [10010, level 68] <- Shattrath City
+  Hero of the Mag'har [10212, level 68] <- Orgrimmar
+
+Need a quest this guide does not hand in - steps show only once that is done (16):
+  Message in a Battle [9906, level 65] - needs one of Because Kilrath is a Coward [9891]
+  Standards and Practices [9910, level 65] - needs one of Because Kilrath is a Coward [9891]
+  An Audacious Advance [9907, level 66] - needs one of Message in a Battle [9906]
+  Bleeding Hollow Supply Crates [9916, level 66] - needs one of Standards and Practices [9910]
+  Ruthless Cunning [9927, level 66] - needs one of Diplomatic Measures [10107], Diplomatic Measures [10108]
+  Armaments for Deception [9928, level 66] - needs one of Diplomatic Measures [10107], Diplomatic Measures [10108]
+  Returning the Favor [9931, level 66] - needs Ruthless Cunning [9927], Armaments for Deception [9928]
+  Body of Evidence [9932, level 66] - needs Ruthless Cunning [9927], Armaments for Deception [9928]
+  Message to Garadar [9934, level 66] - needs Returning the Favor [9931], Body of Evidence [9932]
+  Diplomatic Measures [10107, level 66] - needs one of An Audacious Advance [9907]
+  Murkblood Corrupters [9862, level 67] - needs one of The Howling Wind [9861]
+  Once Were Warriors [9865, level 67] - needs one of The Missing War Party [9864]
+  He Will Walk The Earth... [9866, level 67] - needs one of Once Were Warriors [9865]
+  Cho'war the Pillager [9946, level 67] - needs one of War on the Warmaul [9945]
+  Vision of the Dead [10252, level 67] - needs one of The Master's Grand Design? [10251]
+  Levixus the Soul Caller [10253, level 67] - needs one of Vision of the Dead [10252] -> Terokkar Forest
+
+Worth checking in game
+----------------------
+1 quests have no experience figure in the database: their experience is estimated, and 1 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  The Underneath [9818]
+  Murkblood Invaders [9872, level 67]: has a reputation or spell objective, which is not planned
+
+Put off to a later part (24)
+----------------------------
+These need a higher level than this part ends at:
+  The Ultimate Bloodsport [9852, level 68]: its mobs are level 68; this part gets you to about 65.9
+  Wanted: Durn the Hungerer [9937, level 67]: needs level 66; this part gets you to about 65.9
+  Survey the Land [9991, level 68]: needs level 66; this part gets you to about 65.9
+  Buying Time [9999, level 68]: needs level 66; this part gets you to about 65.9
+  The Master Planner [10001, level 68]: needs level 66; this part gets you to about 65.9
+  Patience and Understanding [10004, level 68]: needs level 66; this part gets you to about 65.9
+  Forge Camp: Annihilated [10011, level 68]: its mobs are level 70; this part gets you to about 65.9
+  A Visit With the Greatmother [10044, level 68]: needs level 66; this part gets you to about 65.9
+  Material Components [10045, level 68]: needs level 66; this part gets you to about 65.9
+  To Meet Mother Kashur [10081, level 68]: needs level 66; this part gets you to about 65.9
+  The Agitated Ancestors [10082, level 68]: needs level 66; this part gets you to about 65.9
+  A Visit With The Ancestors [10085, level 68]: needs level 66; this part gets you to about 65.9
+  When Spirits Speak [10101, level 68]: needs level 66; this part gets you to about 65.9
+  A Secret Revealed [10102, level 68]: needs level 66; this part gets you to about 65.9
+  Return to the Greatmother [10170, level 68]: needs level 66; this part gets you to about 65.9
+  The Inconsolable Chieftain [10171, level 68]: needs level 66; this part gets you to about 65.9
+  There Is No Hope [10172, level 68]: needs level 66; this part gets you to about 65.9
+  Thrall, Son of Durotan [10175, level 68]: needs level 66; this part gets you to about 65.9
+  Against the Legion [10641, level 70]: needs level 68; this part gets you to about 65.9
+  Illidan's Pupil [10646, level 70]: needs level 68; this part gets you to about 65.9
+  The Book of Fel Names [10649, level 70]: needs level 68; this part gets you to about 65.9
+  Against the Illidari [10668, level 70]: needs level 68; this part gets you to about 65.9
+  Against All Odds [10669, level 70]: needs level 68; this part gets you to about 65.9
+  Kroghan's Report [11048, level 67]: needs level 67; this part gets you to about 65.9
+
+Left out (41)
+-------------
+needs reputation (18):
+  Vile Idolatry [9863], The Missing War Party [9864], Murkblood Leaders... [9867], The Totem of Kar'dash [9868], The Throne of the Elements [9870], Obsidian Warbeads [9893], Wanted: Giselda the Crone [9935], Wanted: Zorbo the Advisor [9939], Missing Mag'hari Procession [9944], War on the Warmaul [9945], Finding the Survivors [9948], He Called Himself Altruis... [9983], Proving Your Strength [10479], Altruis [10640], Return to the Aldor [10650], Altruis [10689], Return to the Scryers [10691], A Strange Vision [11037]
+repeatable (13):
+  More Crystal Fragments [9883], Membership Benefits [9884], Membership Benefits [9885], Membership Benefits [9886], Membership Benefits [9887], More Obsidian Warbeads [9892], More Heads Full of Ivory [9915], Oshu'gun Crystal Powder [10075], More Warbeads! [10478], Enemies, Old and New [11503], Reset Current Rating - 2v2 [95158], Reset Current Rating - 3v3 [95251], Reset Current Rating - 5v5 [95252]
+not in the game (on Questie's quest blacklist) (6):
+  Visit the Throne of the Elements [10953], Desecrate this Fire! [11750], Honor the Flame [11854], Playing with Fire [11915], Incense for the Festival Scorchlings [11966], Candy Bucket [12392]
+needs a profession (3):
+  Eyes in the Sky [10986], To Catch A Sparrowhawk [10987], The Raven Stones [10988]
+handed in here, but the database does not say where it starts (1):
+  What the Soul Sees [10168]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Nagrand - Horde - part 2 of 2, planned from level 68
+Guide "65-68 Nagrand" in group "Zone Routes (Horde)": this part has 52 steps, 50 stops
+Written to guides/tbc/Nagrand (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 68. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 15 steps kept, 37 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 16 tasks, 7,169 yd on foot; ends at level 68.1
+  everyone (quests that depend on other zones): 36 more tasks; their whole route comes to 12,249 yd; ends at level 68.1; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (20)
+------------------------
+Start to finish here: 4 (4 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Kroghan's Report [11048, level 67] -> Shadowmoon Valley
+  Patience and Understanding [10004, level 68] -> Shattrath City
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Bring Me The Egg! [10111, level 66] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (13):
+  Wanted: Durn the Hungerer [9937, level 67] - needs Wanted: Giselda the Crone [9935], Wanted: Zorbo the Advisor [9939]
+  Forge Camp: Annihilated [10011, level 68] - needs one of It's Just That Easy? [10010]
+  A Visit With the Greatmother [10044, level 68] - needs The Totem of Kar'dash [9868], Message to Garadar [9934], Forge Camp: Annihilated [10011]
+  Material Components [10045, level 68] - needs one of A Visit With the Greatmother [10044]
+  To Meet Mother Kashur [10081, level 68] - needs one of Material Components [10045]
+  The Agitated Ancestors [10082, level 68] - needs one of To Meet Mother Kashur [10081]
+  A Visit With The Ancestors [10085, level 68] - needs one of The Agitated Ancestors [10082]
+  When Spirits Speak [10101, level 68] - needs one of A Visit With The Ancestors [10085]
+  A Secret Revealed [10102, level 68] - needs one of When Spirits Speak [10101] -> Shattrath City
+  Return to the Greatmother [10170, level 68] - needs one of What the Soul Sees [10168]
+  The Inconsolable Chieftain [10171, level 68] - needs one of Return to the Greatmother [10170]
+  There Is No Hope [10172, level 68] - needs one of The Inconsolable Chieftain [10171]
+  Thrall, Son of Durotan [10175, level 68] - needs one of There Is No Hope [10172] -> Orgrimmar
+
+Worth checking in game
+----------------------
+
+Not planned (5)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Against the Legion [10641, level 70]: needs level 68; this part gets you to about 68.1
+  Illidan's Pupil [10646, level 70]: needs level 68; this part gets you to about 68.1
+  The Book of Fel Names [10649, level 70]: needs level 68; this part gets you to about 68.1
+  Against the Illidari [10668, level 70]: needs level 68; this part gets you to about 68.1
+  Against All Odds [10669, level 70]: needs level 68; this part gets you to about 68.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

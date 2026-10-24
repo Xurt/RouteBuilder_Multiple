@@ -58,14 +58,12 @@ needs a profession (4):
   Shadoweaver [3379], The Undermarket [3385], The Undermarket [3402], Elemental Leatherworking [5144]
 repeatable (4):
   Restoring Fiery Flux Supplies via Kingsblood [7736], Gaining Acceptance [7737], Restoring Fiery Flux Supplies via Iron [8241], Restoring Fiery Flux Supplies via Heavy Leather [8242]
-above this zone's range of 45-54 (2):
-  Dwarven Justice [3371], Secrets of the Colossus - Regal [8858]
-handed in here, but the database does not say where it starts (1):
-  Look at the Size of It! [7704]
+not in the game (on Questie's quest blacklist) (3):
+  Look at the Size of It! [7704], Ironband the Elder [8651], Secrets of the Colossus - Regal [8858]
+above this zone's range of 45-54 (1):
+  Dwarven Justice [3371]
 dungeon quest (1):
   Attunement to the Core [7848]
-special category (sort -366) (1):
-  Ironband the Elder [8651]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
 

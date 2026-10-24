@@ -1,0 +1,145 @@
+Un'Goro Crater - Horde
+Guide "51-55 Un'Goro Crater" in group "Zone Routes (Horde)": 162 steps, 146 stops
+Written to guides/mop/Un'Goro Crater (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 21 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 51. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 7 steps kept, 192 new ones slotted in, 0 moved because their prerequisites changed, 6 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 51, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 161 tasks, 40,574 yd on foot; ends at level 54.3; 4 hearths; at its hardest you are 1.2 levels below the mobs
+  Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior: 2 more tasks; their whole route comes to 40,909 yd; ends at level 54.3; 4 hearths; at its hardest you are 1.2 levels below the mobs
+  Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter: 2 more tasks; their whole route comes to 40,921 yd; ends at level 54.3; 4 hearths; at its hardest you are 1.2 levels below the mobs
+  Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage: 2 more tasks; their whole route comes to 40,891 yd; ends at level 54.3; 4 hearths; at its hardest you are 1.2 levels below the mobs
+  Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock: 2 more tasks; their whole route comes to 40,869 yd; ends at level 54.3; 4 hearths; at its hardest you are 1.2 levels below the mobs
+  Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman: 2 more tasks; their whole route comes to 40,830 yd; ends at level 54.3; 4 hearths; at its hardest you are 1.2 levels below the mobs
+  Tauren Druid/Troll Druid: 2 more tasks; their whole route comes to 40,710 yd; ends at level 54.3; 4 hearths; at its hardest you are 1.2 levels below the mobs
+  Tauren Paladin/BloodElf Paladin: 2 more tasks; their whole route comes to 40,602 yd; ends at level 54.3; 4 hearths; at its hardest you are 1.2 levels below the mobs
+  Undead Priest: 2 more tasks; their whole route comes to 40,690 yd; ends at level 54.3; 4 hearths; at its hardest you are 1.2 levels below the mobs
+  Tauren Priest: 2 more tasks; their whole route comes to 40,690 yd; ends at level 54.3; 4 hearths; at its hardest you are 1.2 levels below the mobs
+  Troll Priest: 2 more tasks; their whole route comes to 40,690 yd; ends at level 54.3; 4 hearths; at its hardest you are 1.2 levels below the mobs
+  BloodElf Paladin: 2 more tasks; their whole route comes to 40,602 yd; ends at level 54.3; 4 hearths; at its hardest you are 1.2 levels below the mobs
+  BloodElf Priest: 2 more tasks; their whole route comes to 40,690 yd; ends at level 54.3; 4 hearths; at its hardest you are 1.2 levels below the mobs
+  Goblin Priest: 2 more tasks; their whole route comes to 40,690 yd; ends at level 54.3; 4 hearths; at its hardest you are 1.2 levels below the mobs
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 41,349 yd; ends at level 54.3; 4 hearths; 1 ORDER PROBLEMS; at its hardest you are 1.2 levels below the mobs
+  Tauren (quests that depend on other zones): 7 more tasks; their whole route comes to 43,415 yd; ends at level 54.3; 4 hearths; 1 ORDER PROBLEMS; at its hardest you are 1.2 levels below the mobs
+Hearthstone: set at Gibbert (Gibbert's inn); 4 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 54 for Warchief's Command: Silithus! (Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+3 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (100)
+-------------------------
+Start to finish here: 48 (43 for everyone, 5 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (40):
+  Warchief's Command: Northern Barrens! [28494, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> The Barrens
+  Warchief's Command: Azshara! [28496, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Azshara
+  Until Death Do Us Part [264, level 15, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Silverpine Forest
+  An Audience with Ureda [27277, level 20, Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage] -> Orgrimmar
+  Grimshot's Call [27278, level 20, Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter] -> Orgrimmar
+  The Dreamseeker Calls [27280, level 20, Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman] -> Orgrimmar
+  Grezz Ragefist [27281, level 20, Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior] -> Orgrimmar
+  Zevrost's Behest [27282, level 20, Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock] -> Orgrimmar
+  A Journey to Moonglade [27283, level 20, Tauren Druid/Troll Druid] -> Moonglade
+  Seek Out Master Pyreanor [27298, level 20, BloodElf Paladin] -> Orgrimmar
+  Follow the Sun [27304, level 20, Tauren Paladin/BloodElf Paladin] -> Orgrimmar
+  The Seer's Call [27331, level 20, Tauren Priest] -> Orgrimmar
+  Seek the Shadow-Walker [27332, level 20, Troll Priest] -> Orgrimmar
+  Dark Cleric Cecille [27334, level 20, Undead Priest] -> Orgrimmar
+  Journey to Orgrimmar [27335, level 20, BloodElf Priest] -> Orgrimmar
+  Seek Brother Silverhallow [28164, level 20, Goblin Priest] -> Orgrimmar
+  Warchief's Command: Ashenvale! [28493, level 20, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> The Barrens
+  Warchief's Command: Stonetalon Mountains! [28532, level 25, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Ashenvale
+  Warchief's Command: Desolace! [28548, level 30, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Desolace
+  Warchief's Command: Southern Barrens! [28549, level 30, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Southern Barrens
+  Warchief's Command: Feralas! [28510, level 35, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Feralas
+  Warchief's Command: Dustwallow Marsh! [28554, level 35, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Dustwallow Marsh
+  Warchief's Command: Thousand Needles! [28504, level 40, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Dustwallow Marsh
+  Warchief's Command: Tanaris! [28509, level 45, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Tanaris
+  Warchief's Command: Felwood! [28542, level 45, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Felwood
+  Moonglade Calls [28289, level 50, Druid] -> Moonglade
+  Meet with Grezz Ragefist [28290, level 50, Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior] -> Orgrimmar
+  Meet with Ormak Grimshot [28297, level 50, Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter] -> Orgrimmar
+  Meet with Zevrost [28299, level 50, Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock] -> Orgrimmar
+  Meet with Ureda [28300, level 50, Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage] -> Orgrimmar
+  Meet with Kardris Dreamseeker [28301, level 50, Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman] -> Orgrimmar
+  Meet with Sunwalker Atohmo [28302, level 50, Tauren Paladin/BloodElf Paladin] -> Orgrimmar
+  Meet with Master Pyreanor [28303, level 50, BloodElf Paladin] -> Orgrimmar
+  Meet with Dark Cleric Cecille [28304, level 50, Undead Priest] -> Orgrimmar
+  Meet with Tyelis [28307, level 50, BloodElf Priest] -> Orgrimmar
+  Meet with Seer Liwatha [28308, level 50, Tauren Priest] -> Orgrimmar
+  Meet with Shadow-Walker Zuru [28309, level 50, Troll Priest] -> Orgrimmar
+  Meet with Brother Silverhallow [28323, level 50, Goblin Priest] -> Orgrimmar
+  Warchief's Command: Winterspring! [28545, level 50, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Winterspring
+  Warchief's Command: Silithus! [28527, level 55, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Silithus
+
+Hand-in step only shows once complete (2):
+  Deadmire [1205, level 41, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Deadmire's Tooth (1) (Dustwallow Marsh)
+  Repairing A-Me 01 [24715, level 52] - needs High Viscosity Coconut Milk (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Ride to Thunder Bluff [6362, level 7, Tauren] <- Mulgore
+  Journey into Thunder Bluff [24550, level 10, Tauren] <- Mulgore
+  The Black Shield [27258, level 37, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Dustwallow Marsh
+  Tropical Paradise Beckons [24911, level 52] <- Tanaris
+
+Need a quest this guide does not hand in - steps show only once that is done (6):
+  Tal the Wind Rider Master [6363, level 7, Tauren] - needs one of Ride to Thunder Bluff [6362]
+  Return to Varg [6364, level 7, Tauren] - needs one of Tal the Wind Rider Master [6363] -> Mulgore
+  War Dance [24540, level 10, Tauren] - needs one of Journey into Thunder Bluff [24550]
+  Walk With The Earth Mother [26397, level 12, Tauren] - needs one of War Dance [24540] -> Orgrimmar
+  Return to Krog [27292, level 37, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Black Shield [27258] -> Dustwallow Marsh
+  Serving A-Me 01 [24926, level 52] - needs one of Repairing A-Me 01 [24715]
+
+Worth checking in game
+----------------------
+  Toxic Tolerance [13850, level 53, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: "Toxic Tolerance Kill Credit Bunny (1)" has no place in the data; taken to be done where the quest is given
+  Bouquets of Death [24687, level 51]: could not read how many Juvenile Bloodpetal are needed from the quest text; assumed 8
+  The Fledgling Colossus [24692, level 53]: could not read how many Gorishi Fledgling Colossus are needed from the quest text; assumed 8
+
+Left out (366)
+--------------
+not in the game (on Questie's quest blacklist) (230):
+  A Lesson to Learn [27], Aquatic Form [31], Leaders of the Fang [914], Assisting Arch Druid Runetotem [936], Serpentbloom [962], Finding the Source [974], The New Frontier [1000], The New Frontier [1004], The New Frontier [1018], Compendium of the Fallen [1049], Melor Sends Word [1130], Steelsnap [1131], The Sacred Flame [1195], Hamuul Runetotem [1489], Nara Wildmane [1490], Veteran Uzzek [1505], Call of Fire [1523], The Islander [1718], Speak with Ruga [1823], Orm Stonehoof and the Brutal Helm [1840], Chimaeric Horn [1844], Brutal Helm [1845], Speak with Un'thuwa [1883], Journey to the Marsh [1947], Return to the Marsh [1953], Report to Anastasia [1959], The Platinum Discs [2440], Master of the Wild Leather [2860], Return to Thunder Bluff [2967], A Future Task [2968], In Nightmares [3369], Un'Goro Soil [3761], Assisting Arch Druid Runetotem [3762], Morrowgrain Research [3782], Assisting Arch Druid Runetotem [3784], Morrowgrain Research [3786], Morrowgrain to Thunder Bluff [3804], It's a Secret to Everybody [3844], Expedition Salvation [3881], Roll the Bones [3882], ... 190 more
+special category (sort -372) (49):
+  In Service Of The Lich King [12593], The Emblazoned Runeblade [12619], The Eye Of Acherus [12636], Death Comes From On High [12641], The Might Of The Scourge [12657], The Scarlet Harvest [12670], If Chaos Drives, Let Suffering Hold The Reins [12678], Tonight We Dine In Havenshire [12679], Grand Theft Palomino [12680], Into the Realm of Shadows [12687], Gothik the Harvester [12697], The Gift That Keeps On Giving [12698], An Attack Of Opportunity [12700], Massacre At Light's Point [12701], Victory At Death's Breach! [12706], Abandoned Mail [12711], The Will Of The Lich King [12714], The Crypt of Remembrance [12715], The Plaguebringer's Request [12716], Noth's Special Brew [12717], Nowhere To Run And Nowhere To Hide [12719], How To Win Friends And Influence Enemies [12720], Lambs To The Slaughter [12722], Behind Scarlet Lines [12723], The Path Of The Righteous Crusader [12724], Brothers In Death [12725], Bloody Breakout [12727], Death's Challenge [12733], A Cry For Vengeance! [12738], A Special Surprise [12739], A Special Surprise [12747], A Special Surprise [12748], A Special Surprise [12749], A Special Surprise [12750], A Sort Of Homecoming [12751], Ambush At The Overlook [12754], A Meeting With Fate [12755], The Scarlet Onslaught Emerges [12756], Scarlet Armies Approach... [12757], The Scarlet Apocalypse [12778], ... 9 more
+repeatable (23):
+  Archmage No More [11031], Protector No More [11032], Assassin No More [11033], Restorer No More [11034], More Skulls For Brew [12718], Here Lies Dadanga [24702], Crystal Restore [24724], Crystal Charge [24725], Crystal Force [24726], Crystal Spire [24727], Crystal Ward [24728], Crystal Yield [24729], Pond Predators [29345], The Ring's the Thing [29346], The Race to Restock [29348], Craving Crayfish [29349], Shiny Baubles [29354], Pining for Nuts [29358], "Magic" Mushrooms [29362], Mulgore Spice Bread [29363], Corn Mash [29364], Perfectly Picked Portions [29365], Grand Master Lydia Accoste [31916]
+needs reputation (21):
+  Medivh's Journal [9630], A Colleague's Aid [9631], Nightbane [9644], The Master's Terrace [9645], Digging Up the Past [9680], Eminence Among the Violet Eye [10725], Eminence Among the Violet Eye [10726], Eminence Among the Violet Eye [10727], Eminence Among the Violet Eye [10728], Path of the Violet Mage [10729], Path of the Violet Restorer [10730], Path of the Violet Assassin [10731], Path of the Violet Protector [10732], Down the Violet Path [10733], Down the Violet Path [10734], Down the Violet Path [10735], Down the Violet Path [10736], Distinguished Service [10738], Distinguished Service [10739], Distinguished Service [10740], Distinguished Service [10741]
+above this zone's range of 50-57 (19):
+  Contact from Dalaran [9826], The New Directive [9860], The Activation Rune [12547], The Etymidian [12548], Back Through the Waygate [12797], Warchief's Command: Vashj'ir! [27718], Warchief's Command: Mount Hyjal! [27721], Warchief's Command: Deepholm! [27722], Warchief's Command: Uldum! [28557], Warchief's Command: Outland! [28705], Warchief's Command: Northrend! [28711], Warchief's Command: Twilight Highlands! [28717], The Zandalari Menace [29157], Our Man in Gilneas [30092], Assassinate Creed [30093], The Deed is Done [30106], Our Man in Karazhan [30108], Blood of the Betrayer [30109], Victory in the Depths [30113]
+dungeon quest (8):
+  Arcane Disturbances [9824], Restless Activity [9825], The Violet Eye [9838], Assessing the Situation [9840], Keanna's Log [9843], A Demonic Presence [9844], Archmage Alturus [11216], Enemies Below [31036]
+needs a profession (6):
+  Gathering Leather [768], Kodo Hide Bag [769], Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+special category (sort -284) (2):
+  Thunder Bluff [12786], Hammering It Out [25759]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29388], Guardians of Hyjal: Call of the Ancients [29390]
+special category (sort -394) (2):
+  Grand Master Lydia Accoste [31915], The Returning Champion [31980]
+handed in here, but the database does not say where it starts (1):
+  Welcome! [12781]
+cannot be taken together with Lost! [24734], which is in the guide (1):
+  Shizzle's Flyer [24736]
+special category (sort -23) (1):
+  Hammering It Out [25789]
+cannot be taken together with Warchief's Command: Silithus! [28527], which is in the guide (1):
+  The Dunes of Silithus [28859]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

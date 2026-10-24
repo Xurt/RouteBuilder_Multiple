@@ -1,0 +1,222 @@
+Desolace - Horde - part 1 of 4, planned from level 31
+Guide "31-39 Desolace" in group "Zone Routes (Horde)": this part has 42 steps, 34 stops
+Written to guides/tbc/Desolace (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 8 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 31. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 35 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 17 tasks, 9,411 yd on foot; ends at level 31.3; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 18 more tasks; their whole route comes to 13,220 yd; ends at level 31.3; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 31 for Clam Bait
+
+Quests in the guide (16)
+------------------------
+Start to finish here: 6 (6 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Hunting in Stranglethorn [5763, level 31] -> Stranglethorn Vale
+  Crystal in the Mountains [635, level 35] -> Arathi Highlands
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Alliance Relations [1432, level 30] <- Orgrimmar
+  The Kolkar of Desolace [1362, level 32] <- The Barrens
+  Family Tree [5361, level 35] <- Thousand Needles
+
+Need a quest this guide does not hand in - steps show only once that is done (5):
+  Alliance Relations [1433, level 33] - needs one of Alliance Relations [1432]
+  Befouled by Satyr [1434, level 33] - needs one of Alliance Relations [1432]
+  The Burning of Spirits [1435, level 33] - needs one of Alliance Relations [1433]
+  Alliance Relations [1436, level 33] - needs Befouled by Satyr [1434], The Burning of Spirits [1435] -> Orgrimmar
+  The Corrupter [1481, level 33] - needs one of The Corrupter [1480]
+
+Worth checking in game
+----------------------
+  Magram Alliance [1367, level 33]: has a reputation or spell objective, which is not planned
+  Gelkis Alliance [1368, level 33]: has a reputation or spell objective, which is not planned
+
+Put off to a later part (16)
+----------------------------
+These need a higher level than this part ends at:
+  Khan Dez'hepah [1365, level 35]: its mobs are level 35; this part gets you to about 32.7
+  Centaur Bounty [1366, level 31]: follows Khan Dez'hepah [1365]
+  The Corrupter [1482, level 35]: its mobs are level 34; this part gets you to about 31.6
+  The Corrupter [1484, level 33]: follows The Corrupter [1482]
+  The Corrupter [1488, level 40]: its mobs are level 40; this part gets you to about 32.7
+  Hand of Iruxos [5381, level 38]: its mobs are level 37; this part gets you to about 32.7
+  Catch of the Day [5386, level 37]: its mobs are level 40; this part gets you to about 32.7
+  Bone Collector [5501, level 39]: is a level 39 quest; this part gets you to about 32.7
+  Kodo Roundup [5561, level 34]: its mobs are level 34; this part gets you to about 31.6
+  Portals of the Legion [5581, level 38]: its mobs are level 38; this part gets you to about 32.7
+  Bodyguard for Hire [5821, level 35]: is a level 35 quest; this part gets you to about 31.6
+  Gizelton Caravan [5943, level 38]: is a level 38 quest; this part gets you to about 32.7
+  Book of the Ancients [6027, level 38]: its mobs are level 38; this part gets you to about 32.7
+  Get Me Out of Here! [6132, level 39]: needs level 36; this part gets you to about 32.7
+  Ghost-o-plasm Round Up [6134, level 39]: its mobs are level 38; this part gets you to about 32.7
+  Other Fish to Fry [6143, level 36]: needs level 32; this part gets you to about 31.6
+
+Left out (23)
+-------------
+needs reputation (8):
+  Broken Tears [1369], Stealing Supplies [1370], Gizmo for Warug [1371], Ongeku [1373], Khan Jehn [1374], Khan Shaka [1375], Khan Hratha [1380], Khan Hratha [1381]
+dungeon quest (6):
+  Blood of the Black Dragon Champion [6602], Twisted Evils [7028], Vyletongue Corruption [7029], Legends of Maraudon [7044], Corruption of Earth and Seed [7064], The Pariah's Instructions [7067]
+not in the game (on Questie's quest blacklist) (5):
+  Desecrate this Fire! [11741], Honor the Flame [11845], Playing with Fire [11915], Incense for the Festival Scorchlings [11966], Candy Bucket [12381]
+above this zone's range of 31-42 (3):
+  The Champion of the Horde [6567], Mistress of Deception [6568], Ascension... [6601]
+repeatable (1):
+  Fish in a Bucket [5421]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Desolace - Horde - part 2 of 4, planned from level 34
+Guide "31-39 Desolace" in group "Zone Routes (Horde)": this part has 21 steps, 19 stops
+Written to guides/tbc/Desolace (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 34. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 22 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 17 tasks, 8,499 yd on foot; ends at level 34.5
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 9,827 yd; ends at level 34.5
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (7)
+-----------------------
+Start to finish here: 5 (5 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  The Corrupter [1484, level 33] - needs one of The Corrupter [1482]
+  The Corrupter [1482, level 35] - needs one of The Corrupter [1481]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (9)
+---------------------------
+These need a higher level than this part ends at:
+  The Corrupter [1488, level 40]: its mobs are level 40; this part gets you to about 35.2
+  Hand of Iruxos [5381, level 38]: its mobs are level 37; this part gets you to about 34.7
+  Catch of the Day [5386, level 37]: its mobs are level 40; this part gets you to about 35.2
+  Bone Collector [5501, level 39]: is a level 39 quest; this part gets you to about 35.2
+  Portals of the Legion [5581, level 38]: its mobs are level 38; this part gets you to about 35.2
+  Gizelton Caravan [5943, level 38]: is a level 38 quest; this part gets you to about 34.7
+  Book of the Ancients [6027, level 38]: its mobs are level 38; this part gets you to about 35.2
+  Get Me Out of Here! [6132, level 39]: needs level 36; this part gets you to about 35.2
+  Ghost-o-plasm Round Up [6134, level 39]: its mobs are level 38; this part gets you to about 35.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Desolace - Horde - part 3 of 4, planned from level 37
+Guide "31-39 Desolace" in group "Zone Routes (Horde)": this part has 20 steps, 19 stops
+Written to guides/tbc/Desolace (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 37. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 21 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 21 tasks, 13,347 yd on foot; ends at level 37.5
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (7)
+-----------------------
+Start to finish here: 7 (7 for everyone)
+
+Worth checking in game
+----------------------
+  Portals of the Legion [5581, level 38]: could not read how many Demon Portal Guardian are needed from the quest text; assumed 8
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  The Corrupter [1488, level 40]: its mobs are level 40; this part gets you to about 37.5
+  Catch of the Day [5386, level 37]: its mobs are level 40; this part gets you to about 37.5
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Desolace - Horde - part 4 of 4, planned from level 40
+Guide "31-39 Desolace" in group "Zone Routes (Horde)": this part has 8 steps, 7 stops
+Written to guides/tbc/Desolace (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 40. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 7 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 3,140 yd on foot; ends at level 40.0
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 3,992 yd; ends at level 40.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  The Corrupter [1488, level 40] - needs one of The Corrupter [1484]
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

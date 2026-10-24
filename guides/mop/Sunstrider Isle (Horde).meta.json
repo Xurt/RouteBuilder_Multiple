@@ -1,0 +1,230 @@
+{
+  "zone": "Sunstrider Isle",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "1-5 Sunstrider Isle",
+  "file": "Sunstrider Isle (Horde).lua",
+  "continent": -6455,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 1,
+      "end": 1,
+      "guide": "1-5 Sunstrider Isle",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "1-5 Sunstrider Isle",
+          "level": 1,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 8325,
+      "level": 1,
+      "req": 1,
+      "xp": 100,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8326,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8327,
+      "level": 3,
+      "req": 1,
+      "xp": 25,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8328,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Mage"
+    },
+    {
+      "id": 8330,
+      "level": 4,
+      "req": 2,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8334,
+      "level": 4,
+      "req": 1,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8335,
+      "level": 5,
+      "req": 1,
+      "xp": 560,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8336,
+      "level": 4,
+      "req": 2,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8345,
+      "level": 4,
+      "req": 2,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8346,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8563,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Warlock"
+    },
+    {
+      "id": 8564,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Priest"
+    },
+    {
+      "id": 9392,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Rogue"
+    },
+    {
+      "id": 9393,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Hunter"
+    },
+    {
+      "id": 9676,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Paladin"
+    },
+    {
+      "id": 10068,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Mage"
+    },
+    {
+      "id": 10069,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Paladin"
+    },
+    {
+      "id": 10070,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Hunter"
+    },
+    {
+      "id": 10071,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Rogue"
+    },
+    {
+      "id": 10072,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Priest"
+    },
+    {
+      "id": 10073,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Warlock"
+    },
+    {
+      "id": 31170,
+      "level": 3,
+      "req": 2,
+      "xp": 65,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Monk"
+    }
+  ],
+  "carriedTo": {
+    "Eversong Woods": 2
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "zone": "Thousand Needles",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "40-45 Thousand Needles",
+  "file": "Thousand Needles (Alliance).lua",
+  "continent": -400,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 40,
+      "end": 40,
+      "next": 44,
+      "guide": "40-41 Thousand Needles",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "40-41 Thousand Needles",
+          "level": 40,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 44,
+      "end": 44,
+      "next": 47,
+      "guide": "44-45 Thousand Needles",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "44-45 Thousand Needles",
+          "level": 44,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 47,
+      "end": 47,
+      "guide": "47-48 Thousand Needles",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "47-48 Thousand Needles",
+          "level": 47,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 6341,
+      "level": 7,
+      "req": 5,
+      "xp": 160,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 9604,
+      "level": 7,
+      "req": 5,
+      "xp": 315,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei",
+      "from": "Bloodmyst Isle"
+    },
+    {
+      "id": 9623,
+      "level": 11,
+      "req": 10,
+      "xp": 90,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Azuremyst Isle"
+    },
+    {
+      "id": 9698,
+      "level": 16,
+      "req": 14,
+      "xp": 1150,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Bloodmyst Isle"
+    },
+    {
+      "id": 10350,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior",
+      "from": "Azuremyst Isle"
+    },
+    {
+      "id": 14039,
+      "level": 11,
+      "req": 1,
+      "xp": 880,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 25488,
+      "level": 40,
+      "req": 38,
+      "xp": 1090,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Feralas"
+    },
+    {
+      "id": 27269,
+      "level": 20,
+      "req": 20,
+      "xp": 155,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Priest"
+    },
+    {
+      "id": 28517,
+      "level": 10,
+      "req": 8,
+      "xp": 420,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen",
+      "from": "Teldrassil"
+    }
+  ],
+  "carriedTo": {
+    "Teldrassil": 1,
+    "Azuremyst Isle": 1,
+    "Bloodmyst Isle": 2,
+    "Darkshore": 2,
+    "Elwynn Forest": 9,
+    "Moonglade": 1,
+    "Ashenvale": 2,
+    "Feralas": 2,
+    "Desolace": 1,
+    "Southern Barrens": 1,
+    "Dustwallow Marsh": 1,
+    "Tanaris": 1,
+    "Felwood": 1
+  }
+}

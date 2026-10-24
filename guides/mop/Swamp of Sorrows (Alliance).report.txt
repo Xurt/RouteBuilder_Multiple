@@ -1,0 +1,99 @@
+Swamp of Sorrows - Alliance - part 1 of 2, planned from level 52
+Guide "52-55 Swamp of Sorrows" in group "Zone Routes (Alliance)": this part has 69 steps, 61 stops
+Written to guides/mop/Swamp of Sorrows (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 52. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 104 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed, 1 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 106 tasks, 26,191 yd on foot; ends at level 54.2; 1 hearth
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 26,253 yd; ends at level 54.2; 1 hearth
+Hearthstone: set at Rebecca Blackman (Rebecca Blackman's inn); 1 hearth step in the guide.
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (40)
+------------------------
+Start to finish here: 36 (22 for everyone, 14 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Heart of the Temple [27915, level 54] -> The Temple of Atal'Hakkar - (Dungeon/Raid)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  The Bogpaddle Bullet [28569, level 52, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Burning Steppes
+  Hero's Call: Swamp of Sorrows! [28675, level 52, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Stormwind City
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Neeka Bloodscar [27906, level 55] - needs one of We're Under Attack! [27857]
+
+Worth checking in game
+----------------------
+  Marshfin Madness [27691, level 53]: could not read how many Marshfin Murkdweller are needed from the quest text; assumed 8
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  Onward to the Blasted Lands [27919, level 55]: needs level 54; this part gets you to about 54.2
+
+Left out (23)
+-------------
+not in the game (on Questie's quest blacklist) (21):
+  Cortello's Riddle [624], Noboru the Cudgel [1392], The Stones That Bind Us [2681], Heroes of Old [2701], Heroes of Old [2702], The Cover of Darkness [2743], Petty Squabbles [2783], A Tale of Sorrow [2801], Return to the Blasted Lands [3626], Uniting the Shattered Amulet [3627], You Are Rakh'likh, Demon [3628], A Troubled Spirit [8417], Warrior Kinship [8423], War on the Shadowsworn [8424], Voodoo Feathers [8425], Desecrate this Fire! [11781], Incense for the Summer Scorchlings [11964], TEST - RVM [27819], Honor the Flame [28929], Candy Bucket [28967], Candy Bucket [28968]
+handed in here, but the database does not say where it starts (1):
+  Galen's Escape [1393]
+repeatable (1):
+  Everessa [31913]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Swamp of Sorrows - Alliance - part 2 of 2, planned from level 57
+Guide "52-55 Swamp of Sorrows" in group "Zone Routes (Alliance)": this part has 2 steps, 1 stops
+Written to guides/mop/Swamp of Sorrows (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 57. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 57.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (1)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Onward to the Blasted Lands [27919, level 55] -> Blasted Lands
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

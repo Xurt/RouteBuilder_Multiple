@@ -1,0 +1,109 @@
+Hillsbrad Foothills - Alliance - part 1 of 2, planned from level 20
+Guide "20-25 Hillsbrad Foothills" in group "Zone Routes (Alliance)": this part has 64 steps, 49 stops
+Written to guides/mop/Hillsbrad Foothills (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 20. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 60 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 44 tasks, 6,449 yd on foot; ends at level 21.3; at its hardest you are 1.4 levels below the mobs
+  everyone (quests that depend on other zones): 16 more tasks; their whole route comes to 7,958 yd; ends at level 21.3; 1 hearth; at its hardest you are 1.4 levels below the mobs
+Hearthstone: set at Kenneth Lamb (Kenneth Lamb's inn); 1 hearth step in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 20 for Helcular's Command
+  level 21 for The Heart of the Matter
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+10 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (21)
+------------------------
+Start to finish here: 14 (14 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Empire of Dirt [27746, level 20] <- Silverpine Forest
+
+Need a quest this guide does not hand in - steps show only once that is done (6):
+  Trouble at Azurelode [28111, level 20] - needs one of Welcome to the Machine [28096]
+  Glorious Harvest [28114, level 20] - needs one of Welcome to the Machine [28096]
+  Past Their Prime [28115, level 20] - needs one of Welcome to the Machine [28096]
+  Trouble at the Sludge Fields [28168, level 21] - needs Human Infestation [28138], Thieving Little Monsters! [28144], Coastal Delicacies! [28146]
+  Trouble at Southshore [28251, level 22] - needs one of A Blight Upon the Land [28237]
+  Trail of Filth [28330, level 22] - needs one of Angry Scrubbing Bubbles [28329]
+
+Worth checking in game
+----------------------
+  Flower Power [28617, level 20]: "PvG Level 2 - Flower Power Complete (1)" has no place in the data; taken to be done where the quest is given
+  Basic Botany [28733, level 20]: "PvG Tutorial Complete (1)" has no place in the data; taken to be done where the quest is given
+  Ghouls Hate My Grains [28744, level 20]: "PvG Level 3 - Ghouls Hate My Grains Massive Complete (1)" has no place in the data; taken to be done where the quest is given
+  Someone Setup the Pumpkin Bomb [28747, level 20]: "PvG Level 4 - Someone Setup the Pumpkin Bomb Massive Complete (1)" has no place in the data; taken to be done where the quest is given
+  Lawn of the Dead [28748, level 20]: "PvG Level Boss Complete (1)" has no place in the data; taken to be done where the quest is given
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  Yetimus the Yeti Lord [28485, level 25]: its mobs are level 25; this part gets you to about 21.6
+  Eastpoint Tower [28620, level 25]: needs level 23; this part gets you to about 21.6
+
+Left out (59)
+-------------
+not in the game (on Questie's quest blacklist) (33):
+  Crashing the Wickerman Festival [1658], Cyclonian [1712], The Summoning [1713], Essence of the Exile [1714], The Windwatcher [1791], Whirlwind Weapon [1792], The Manor, Ravenholdt [6681], Syndicate Emblems [6701], Stolen Winter Veil Treats [7042], You're a Mean One... [7043], Korrak the Bloodrager [7202], Speak with Prospector Stonehewer [7221], Speak with Voggah Deathgrip [7222], The Sovereign Imperative [7261], A Simple Request [8233], The Azure Key [8236], REUSE [8237], The Power of Pine [8373], Elemental Mastery [8410], Da Voodoo [8413], The Source Revealed [9028], A Bubbling Cauldron [9029], Desecrate this Fire! [11776], Honor the Flame [11819], Playing with Fire [11882], Candy Bucket [12346], REUSE [13840], Sharing a Bountiful Feast [14064], A Natural Occurrence [25571], A Natural Occurrence [25773], [DND] ORKUS QUEST FLAG [DO NOT LOCALIZE] [28371], Tending the Garden [28751], Unstoppable Onslaught [28752]
+above this zone's range of 20-25 (12):
+  Contact from Dalaran [9826], Khadgar [9829], The New Directive [9860], To Catch a Thief [29847], To Ravenholdt [29934], Our Man in Gilneas [30092], The Deed is Done [30106], Cluster Clutch [30107], Our Man in Karazhan [30108], Victory in the Depths [30113], Sharpening Your Fangs [30116], Patricide [30118]
+dungeon quest (6):
+  Alterac Valley Graveyards [7081], Towers and Bunkers [7102], Capture a Mine [7122], The Battle of Alterac [7141], Proving Grounds [7162], Hero of the Stormpike [8271]
+needs reputation (5):
+  Rise and Be Recognized [7168], Honored Amongst the Guard [7169], Earned Reverence [7170], Legendary Heroes [7171], The Eye of Command [7172]
+repeatable (3):
+  CLUCK! [3861], Korrak the Everliving [7382], Junkboxes Needed [8249]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Hillsbrad Foothills - Alliance - part 2 of 2, planned from level 24
+Guide "20-25 Hillsbrad Foothills" in group "Zone Routes (Alliance)": this part has 6 steps, 5 stops
+Written to guides/mop/Hillsbrad Foothills (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 24. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 5 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 5 tasks, 1,379 yd on foot; ends at level 24.2
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

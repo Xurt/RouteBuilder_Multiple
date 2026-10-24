@@ -1,7 +1,7 @@
 {
   "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
   "guide": "1-12 Elwynn Forest",
-  "saved": "2026-10-23 14:22",
+  "saved": "2026-10-23 18:18",
   "levels": "RestedXP",
   "parts": [
     {
@@ -282,6 +282,8 @@
         "obj:1688:1 @1429:-929.22,-9809.07  Objective Surena Caledon / Surena's Choker (1)",
         "turnin:1688 @1453:1041.54,-8983.03  TurnIn Surena Caledon",
         "accept:1689 @1453:1041.54,-8983.03  Accept The Binding",
+        "obj:1689:1 @1453:1041.54,-8983.03  Objective The Binding / Summoned Voidwalker (1)",
+        "turnin:1689 @1453:1041.54,-8983.03  TurnIn The Binding",
         "accept:6076 @1453:552.63,-8415.72  Accept The Hunter's Path",
         "accept:6073 @1453:552.63,-8415.72  Accept The Hunter's Path",
         "accept:5924 @1453:1095.45,-8741.64  Accept Heeding the Call",
@@ -310,7 +312,6 @@
         "turnin:2998 @1453:845.82,-8545.87  TurnIn Tome of Divinity",
         "accept:3000 @1453:881.44,-8577.52  Accept Tome of Divinity",
         "turnin:5634 @1453:862.35,-8512.44  TurnIn Desperate Prayer",
-        "turnin:1689 @1453:1041.54,-8983.03  TurnIn The Binding",
         "accept:1643 @1453:845.82,-8545.87  Accept The Tome of Divinity",
         "turnin:1643 @1453:613.66,-8832.26  TurnIn The Tome of Divinity"
       ]

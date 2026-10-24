@@ -54,7 +54,7 @@ Need a quest this guide does not hand in - steps show only once that is done (2)
 Worth checking in game
 ----------------------
 
-Put off to a later part (26)
+Put off to a later part (25)
 ----------------------------
 These need a higher level than this part ends at:
   Tharil'zun [19, level 25]: its mobs are level 24; this part gets you to about 17.0
@@ -81,10 +81,9 @@ These need a higher level than this part ends at:
   Rethban Ore [347, level 24]: needs level 20; this part gets you to about 17.0
   The Rethban Gauntlet [1699, level 22]: needs level 20; this part gets Warrior characters to about 17.0
   The Shieldsmith [1702, level 22]: needs level 20; this part gets Warrior characters to about 17.0
-  Alther's Mill [2282, level 20]: is a level 20 quest; this part gets Rogue characters to about 15.3
-  Horns of Nez'ra [2358, level 22]: its mobs are level 19; this part gets Rogue characters to about 15.3
+  Alther's Mill [2282, level 20]: is a level 20 quest; this part gets Rogue characters to about 17.0
 
-Left out (7)
+Left out (8)
 ------------
 above this zone's range of 14-27 (4):
   The True Masters [4183], The True Masters [4184], The True Masters [4186], The True Masters [4223]
@@ -92,6 +91,8 @@ dungeon quest (1):
   What Comes Around... [386]
 needs a profession (1):
   Gearing Redridge [1618]
+not in the game (on Questie's quest blacklist) (1):
+  Horns of Nez'ra [2358]
 repeatable (1):
   CLUCK! [3861]
 
@@ -101,7 +102,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Redridge Mountains - Alliance - part 2 of 5, planned from level 17
-Guide "14-26 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 33 steps, 26 stops
+Guide "14-26 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 30 steps, 23 stops
 Written to guides/classic/Redridge Mountains (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -117,18 +118,17 @@ Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests bro
 Route
 -----
 Planned from level 17. Distances are straight lines, so real running is longer; levels are an estimate.
-Step order kept from the last build (locks folder): 18 steps kept, 7 new ones slotted in, 4 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+Step order kept from the last build (locks folder): 18 steps kept, 4 new ones slotted in, 4 moved because their prerequisites changed. Build with --fresh to plan from scratch.
   everyone: 15 tasks, 3,293 yd on foot; ends at level 17.6; at its hardest you are 1.7 levels below the mobs
-  Rogue: 3 more tasks; their whole route comes to 3,914 yd; ends at level 17.7; at its hardest you are 1.7 levels below the mobs
   everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 4,504 yd; ends at level 17.6; at its hardest you are 1.7 levels below the mobs
-  Rogue (quests that depend on other zones): 3 more tasks; their whole route comes to 6,301 yd; ends at level 17.7; at its hardest you are 1.8 levels below the mobs
+  Rogue (quests that depend on other zones): 3 more tasks; their whole route comes to 5,618 yd; ends at level 17.6; at its hardest you are 1.8 levels below the mobs
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
 2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
 4 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
 
-Quests in the guide (9)
+Quests in the guide (8)
 -----------------------
-Start to finish here: 5 (4 for everyone, 1 Rogue)
+Start to finish here: 4 (4 for everyone)
 
 Brought in from another zone and handed in here - steps show only if you have the quest (1):
   Dry Times [116, level 15] <- your earlier visit to this zone

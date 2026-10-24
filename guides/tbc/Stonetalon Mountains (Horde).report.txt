@@ -1,0 +1,181 @@
+Stonetalon Mountains - Horde - part 1 of 3, planned from level 18
+Guide "18-29 Stonetalon Mountains" in group "Zone Routes (Horde)": this part has 27 steps, 21 stops
+Written to guides/tbc/Stonetalon Mountains (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+3 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 18. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 15 steps kept, 8 new ones slotted in, 0 moved because their prerequisites changed, 13 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 18 tasks, 8,191 yd on foot; ends at level 18.4; at its hardest you are 1.7 levels below the mobs
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 9,699 yd; ends at level 18.4; at its hardest you are 1.7 levels below the mobs
+  Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 9,721 yd; ends at level 18.4; at its hardest you are 1.7 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (12)
+------------------------
+Start to finish here: 4 (4 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Protect Kaya [6523, level 18] -> The Barrens
+  Report to Kadrak [6542, level 19] -> The Barrens
+  Further Instructions [1094, level 21] -> The Barrens
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Kaya's Alive [6401, level 18] <- The Barrens
+  Letter to Jin'Zil [1060, level 20] <- The Barrens
+  News of Dogran [1510, level 20, Warlock] <- The Barrens
+  Ziz Fizziks [1483, level 21] <- The Barrens
+  Further Instructions [1095, level 27] <- The Barrens
+
+Worth checking in game
+----------------------
+  Boulderslide Ravine [6421, level 18]: "Investigate Cave in Boulderslide Ravine" is assumed to be line 2 in the quest log; check it
+  Boulderslide Ravine [6421, level 18]: objective "Resonite Crystal (10)" moved from line 1 to line 2 to match RestedXP's guide
+  Boulderslide Ravine [6421, level 18]: objective "Investigate Cave in Boulderslide Ravine" moved from line 2 to line 1 to match RestedXP's guide
+
+Put off to a later part (15)
+----------------------------
+These need a higher level than this part ends at:
+  Jin'Zil's Forest Magic [1058, level 26]: its mobs are level 24; this part gets you to about 20.0
+  Cenarius' Legacy [1087, level 25]: its mobs are level 24; this part gets you to about 20.0
+  Ordanus [1088, level 29]: needs level 20; this part gets you to about 20.0
+  The Den [1089, level 29]: is a level 29 quest; this part gets you to about 20.0
+  Gerenzo's Orders [1090, level 22]: needs level 21; this part gets you to about 20.0
+  Gerenzo's Orders [1092, level 22]: needs level 21; this part gets you to about 20.0
+  Gerenzo Wrenchwhistle [1096, level 27]: its mobs are level 27; this part gets you to about 20.0
+  Ken'zigla's Draught [1511, level 20]: needs level 20; this part gets Warlock characters to about 20.0
+  Calling in the Reserves [5881, level 28]: needs level 23; this part gets you to about 20.0
+  Harpies Threaten [6282, level 26]: its mobs are level 25; this part gets you to about 20.0
+  Bloodfury Bloodline [6283, level 26]: its mobs are level 26; this part gets you to about 20.0
+  Arachnophobia [6284, level 21]: its mobs are level 21; this part gets you to about 18.5
+  Cycle of Rebirth [6301, level 23]: is a level 23 quest; this part gets you to about 20.0
+  New Life [6381, level 25]: is a level 25 quest; this part gets you to about 20.0
+  Elemental War [6393, level 25]: its mobs are level 26; this part gets you to about 20.0
+
+Left out (9)
+------------
+never shown to players (a tracking flag or an unused entry) (4):
+  Test of Lore [1152], Test of Lore [1154], Test of Lore [1159], Test of Lore [6627]
+not in the game (on Questie's quest blacklist) (4):
+  Honor the Flame [11856], Playing with Fire [11915], Incense for the Festival Scorchlings [11966], Candy Bucket [12378]
+dungeon quest (1):
+  Trouble in the Deeps [6562]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Stonetalon Mountains - Horde - part 2 of 3, planned from level 21
+Guide "18-29 Stonetalon Mountains" in group "Zone Routes (Horde)": this part has 14 steps, 11 stops
+Written to guides/tbc/Stonetalon Mountains (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 21. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 4 steps kept, 8 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 11 tasks, 3,968 yd on foot; ends at level 21.3
+  Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 6,375 yd; ends at level 21.3
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 21 for Gerenzo's Orders
+
+Quests in the guide (5)
+-----------------------
+Start to finish here: 4 (4 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Ken'zigla's Draught [1511, level 20, Warlock] - needs one of News of Dogran [1510] -> The Barrens
+
+Worth checking in game
+----------------------
+
+Put off to a later part (10)
+----------------------------
+These need a higher level than this part ends at:
+  Jin'Zil's Forest Magic [1058, level 26]: its mobs are level 24; this part gets you to about 21.8
+  Cenarius' Legacy [1087, level 25]: its mobs are level 24; this part gets you to about 21.8
+  Ordanus [1088, level 29]: follows Cenarius' Legacy [1087]
+  The Den [1089, level 29]: is a level 29 quest; this part gets you to about 22.3
+  Gerenzo Wrenchwhistle [1096, level 27]: its mobs are level 27; this part gets you to about 22.3
+  Calling in the Reserves [5881, level 28]: needs level 23; this part gets you to about 22.3
+  Harpies Threaten [6282, level 26]: its mobs are level 25; this part gets you to about 22.3
+  Bloodfury Bloodline [6283, level 26]: its mobs are level 26; this part gets you to about 22.3
+  New Life [6381, level 25]: is a level 25 quest; this part gets you to about 21.8
+  Elemental War [6393, level 25]: its mobs are level 26; this part gets you to about 22.3
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Stonetalon Mountains - Horde - part 3 of 3, planned from level 24
+Guide "18-29 Stonetalon Mountains" in group "Zone Routes (Horde)": this part has 25 steps, 22 stops
+Written to guides/tbc/Stonetalon Mountains (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 24. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 28 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 29 tasks, 9,636 yd on foot; ends at level 24.8; 2 hearths; at its hardest you are 1.5 levels below the mobs
+Hearthstone: set at Innkeeper Jayka (Innkeeper Jayka's inn); 2 hearth steps in the guide.
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 6 (6 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Calling in the Reserves [5881, level 28] -> Thousand Needles
+
+Hand-in step only shows once complete (1):
+  Ordanus [1088, level 29] - needs Ordanus' Head (1) (Ashenvale)
+
+Worth checking in game
+----------------------
+
+Not planned (2)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  The Den [1089, level 29]: is a level 29 quest; this part gets you to about 24.8
+  Gerenzo Wrenchwhistle [1096, level 27]: its mobs are level 27; this part gets you to about 24.8
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

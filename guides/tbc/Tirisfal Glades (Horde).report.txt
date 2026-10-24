@@ -1,0 +1,166 @@
+Tirisfal Glades - Horde - part 1 of 2, planned from level 1
+Guide "1-13 Tirisfal Glades" in group "Zone Routes (Horde)": this part has 255 steps, 161 stops
+Written to guides/tbc/Tirisfal Glades (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 8 of 40 held at once (Undead Priest), not counting quests brought in from other zones.
+13 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 65 steps kept, 136 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 124 tasks, 25,006 yd on foot; ends at level 10.4; 1 hearth; at its hardest you are 1.9 levels below the mobs
+  Undead: 7 more tasks; their whole route comes to 25,330 yd; ends at level 10.6; 1 hearth; at its hardest you are 1.8 levels below the mobs
+  Warrior: 15 more tasks; their whole route comes to 28,093 yd; ends at level 10.7; 1 hearth; at its hardest you are 1.9 levels below the mobs
+  Mage: 5 more tasks; their whole route comes to 26,437 yd; ends at level 10.6; 1 hearth; at its hardest you are 1.9 levels below the mobs
+  Warlock: 5 more tasks; their whole route comes to 25,412 yd; ends at level 10.5; 1 hearth; at its hardest you are 1.9 levels below the mobs
+  Orc Warlock: 1 more tasks; their whole route comes to 25,412 yd; ends at level 10.5; 1 hearth; at its hardest you are 1.9 levels below the mobs
+  Undead Warrior: 2 more tasks; their whole route comes to 28,422 yd; ends at level 10.8; 1 hearth; at its hardest you are 1.8 levels below the mobs
+  Undead Rogue: 5 more tasks; their whole route comes to 25,683 yd; ends at level 10.6; 1 hearth; at its hardest you are 1.8 levels below the mobs
+  Undead Priest: 8 more tasks; their whole route comes to 26,721 yd; ends at level 10.7; 1 hearth; at its hardest you are 1.8 levels below the mobs
+  Undead Mage: 2 more tasks; their whole route comes to 26,765 yd; ends at level 10.7; 1 hearth; at its hardest you are 1.8 levels below the mobs
+  Undead Warlock: 8 more tasks; their whole route comes to 27,449 yd; ends at level 10.6; 1 hearth; at its hardest you are 1.7 levels below the mobs
+  Troll Priest: 1 more tasks; their whole route comes to 25,299 yd; ends at level 10.4; 1 hearth; at its hardest you are 1.9 levels below the mobs
+  BloodElf Warlock: 1 more tasks; their whole route comes to 25,412 yd; ends at level 10.5; 1 hearth; at its hardest you are 1.9 levels below the mobs
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 25,479 yd; ends at level 10.4; 1 hearth; at its hardest you are 1.9 levels below the mobs
+  Undead (quests that depend on other zones): 4 more tasks; their whole route comes to 25,835 yd; ends at level 10.6; 1 hearth; at its hardest you are 1.8 levels below the mobs
+  Undead Rogue (quests that depend on other zones): 7 more tasks; their whole route comes to 26,850 yd; ends at level 10.6; 1 hearth; at its hardest you are 1.8 levels below the mobs
+  Undead Priest (quests that depend on other zones): 4 more tasks; their whole route comes to 28,070 yd; ends at level 10.7; 1 hearth; at its hardest you are 1.8 levels below the mobs
+  Undead Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 28,044 yd; ends at level 10.6; 1 hearth; at its hardest you are 1.7 levels below the mobs
+Hearthstone: set at Constance Brisboise (Constance Brisboise's inn); 1 hearth step in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 5 for Gordo's Task
+  level 6 for A New Plague
+  level 7 for The Chill of Death
+  level 9 for Delivery to Silverpine Forest
+  level 10 for Mennet Carkad (Undead Rogue)
+  level 10 for Speak with Anastasia (Mage)
+  level 10 for Halgar's Summons (Warlock)
+  level 10 for Touch of Weakness (Undead Priest)
+  level 10 for Hex of Weakness (Troll Priest)
+  level 10 for Agamand Heirlooms (Warrior)
+  level 10 for Return to Gan'rul Bloodeye (Orc Warlock)
+  level 10 for Return to Talionia (BloodElf Warlock)
+39 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+8 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+9 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (79)
+------------------------
+Start to finish here: 61 (39 for everyone, 5 Warrior, 3 Undead, 3 Undead Warlock, 3 Undead Priest, 2 Warlock, 2 Mage, 2 Undead Rogue, 1 Undead Warrior, 1 Undead Mage)
+
+Picked up here, handed in elsewhere - these stay in the log (4):
+  Delivery to Silverpine Forest [445, level 10] -> Silverpine Forest
+  Hex of Weakness [5657, level 10, Troll Priest] -> Orgrimmar
+  Return to Talionia [10788, level 10, BloodElf Warlock] -> Silvermoon City
+  Return to Gan'rul Bloodeye [10790, level 10, Orc Warlock] -> Orgrimmar
+
+Hand-in step only shows once complete (1):
+  The Deathstalkers [1886, level 13, Undead Rogue] - needs Astor's Letter of Introduction (1) (Silverpine Forest)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (7):
+  Touch of Weakness [5660, level 10, Undead Priest] <- Durotar
+  Touch of Weakness [5661, level 10, Undead Priest] <- Mulgore
+  Touch of Weakness [5662, level 10, Undead Priest] <- Orgrimmar
+  Touch of Weakness [5663, level 10, Undead Priest] <- Thunder Bluff
+  Ride to the Undercity [6323, level 10, Undead] <- Silverpine Forest
+  Return to Carendin Halgar [10789, level 10, Undead Warlock] <- Orgrimmar
+  A Recipe For Death [447, level 12] <- Silverpine Forest
+
+Need a quest this guide does not hand in - steps show only once that is done (5):
+  Michael Garrett [6322, level 10, Undead] - needs one of Ride to the Undercity [6323]
+  Return to Podrig [6324, level 10, Undead] - needs one of Michael Garrett [6322] -> Silverpine Forest
+  The Deathstalkers [1898, level 13, Undead Rogue] - needs one of The Deathstalkers [1886]
+  The Deathstalkers [1899, level 13, Undead Rogue] - needs one of The Deathstalkers [1898]
+  The Deathstalkers [1978, level 13, Undead Rogue] - needs one of The Deathstalkers [1899]
+
+Worth checking in game
+----------------------
+No objectives in the database (the hand-in step warns about it; add "objectives" for these to the zone file):
+  Touch of Weakness [5658, level 10, Undead Priest]
+1 quests have no experience figure in the database: their experience is estimated, and 1 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  Touch of Weakness [5658]
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  The Family Crypt [408, level 13]: its mobs are level 13; this part gets you to about 10.7
+  A Donation of Wool [7813, level 12]: needs level 12; this part gets you to about 10.7
+
+Left out (246)
+--------------
+above this zone's range of 1-14 (131):
+  Alas, Andorhal [105], Errand for Apothecary Zinge [232], Errand for Apothecary Zinge [238], Into the Field [243], The Engraved Ring [440], Raleigh and the Undercity [441], Rot Hide Origins [444], Thule Ravenclaw [446], A Recipe For Death [450], A Recipe For Death [451], Wand to Bethor [491], The Crown of Will [495], Elixir of Agony [513], Elixir of Agony [515], The Crown of Will [521], A Husband's Revenge [530], Battle of Hillsbrad [550], Crystal in the Mountains [635], To the Undercity for Yagyin's Digest [728], The Star, the Hand and the Heart [736], Forbidden Knowledge [737], Scholomance [838], Return to Apothecary Zinge [864], Skeletal Fragments [964], The New Frontier [1004], Going, Going, Guano! [1109], To Steal From Thieves [1164], Sample for Helbrim [1358], Zinge's Delivery [1359], Final Passage [1394], Devourer of Souls [1472], The Binding [1474], Hearts of the Pure [1476], The Islander [1718], Tome of the Cabal [1801], Tome of the Cabal [1803], Tome of the Cabal [1805], Speak with Ruga [1823], Velora Nitely and the Brutal Legguards [1841], Dragonmaw Shinbones [1846], ... 91 more
+not in the game (on Questie's quest blacklist) (74):
+  Stinking Up Southshore [1657], [Not Used] Tools of the Trade [2019], Welcome! [5847], Great-father Winter is Here! [7024], Rotten Eggs [8322], Chicken Clucking for a Mint [8354], Ruined Kegs [8409], Darkcore the Elder [8648], Graveborn the Elder [8652], The Horde Needs Your Help! [8793], The Hero of the Day [8799], One Commendation Signet [8816], Ten Commendation Signets [8824], Winter's Presents [8828], One Commendation Signet [8840], Ten Commendation Signets [8841], New Year Celebrations! [8861], Lunar Fireworks [8867], The Lunar Festival [8873], The Lunar Festival [8874], The Lunar Festival [8875], Valadar Starsong [8883], Dearest Elenia, [8900], Dearest Elenia, [8901], Dearest Elenia, [8902], Dangerous Love [8904], Fenstad's Hunch [8979], Zinge's Assessment [8980], Gift Giving [8981], Tracing the Source [8982], Tracing the Source [8983], The Source Revealed [8984], Stealing Stormwind's Flame [9330], Stealing Ironforge's Flame [9331], Stealing Darnassus's Flame [9332], A Thief's Reward [9339], Touch of Weakness [10379], Stop the Fires! [11219], The Headless Horseman [11220], Masked Orphan Matron [11357], ... 34 more
+repeatable (20):
+  The Dormant Shade [410], Candles of Beckoning [431], Testing for Impurities - Un'Goro Crater [4561], Testing for Corruption - Felwood [4661], Corruptor's Scourgestones [5406], Invader's Scourgestones [5407], Minion's Scourgestones [5408], Additional Runecloth [7819], For Great Honor [8388], Major Mana Potion [9320], Argent Dawn Gloves [9333], Blessed Wizard Oil [9334], Consecrated Sharpening Stones [9335], Major Healing Potion [9336], Tabard of the Argent Dawn [9343], Call to Arms: Arathi Basin [11339], Call to Arms: Alterac Valley [11340], Call to Arms: Eye of the Storm [11341], Call to Arms: Warsong Gulch [11342], For Great Honor [95457]
+dungeon quest (11):
+  The Book of Ur [1013], Into The Scarlet Monastery [1048], Hearts of Zeal [1113], Bring the End [3341], Vivian Lagrave [4133], Vivian Lagrave and the Darkstone Tablet [4769], Barov Family Fortune [5341], The Power to Destroy... [5725], An Unholy Alliance [6521], An Unholy Alliance [6522], Camp Mojache [7492]
+never shown to players (a tracking flag or an unused entry) (3):
+  Test of Lore [1159], Test of Lore [1160], Test of Lore [6628]
+needs a profession (2):
+  Goblin Engineering [3526], Gnome Engineering [3635]
+needs reputation (2):
+  Mantles of the Dawn [5504], Chromatic Mantle of the Dawn [5524]
+special category (sort -368) (2):
+  Investigate the Scourge of the Undercity [9265], Faint Necrotic Crystal [9310]
+special category (sort -25) (1):
+  For Great Honor [8367]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Tirisfal Glades - Horde - part 2 of 2, planned from level 13
+Guide "1-13 Tirisfal Glades" in group "Zone Routes (Horde)": this part has 11 steps, 9 stops
+Written to guides/tbc/Tirisfal Glades (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 13. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 8 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 6 tasks, 2,458 yd on foot; ends at level 13.2
+  Undead Rogue (quests that depend on other zones): 1 more tasks; their whole route comes to 2,738 yd; ends at level 13.2
+  Undead Priest (quests that depend on other zones): 1 more tasks; their whole route comes to 2,621 yd; ends at level 13.2
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Hand-in step only shows once complete (1):
+  A Donation of Wool [7813, level 12] - needs Wool Cloth (1) (Hillsbrad Foothills)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Touch of Weakness [5658, level 10, Undead Priest] <- your earlier visit to this zone
+  The Deathstalkers [1886, level 13, Undead Rogue] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

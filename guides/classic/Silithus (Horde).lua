@@ -18,21 +18,6 @@ RXPGuides.RegisterGuide([[
 #name 55-56 Silithus: around Windcaller Proudhorn
 
 step
-    .goto 1451/1,814.99,-6823.62
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Colossus Researcher Nestor|r
-    .accept 8857 >>Accept Secrets of the Colossus - Ashi
-    .target Colossus Researcher Nestor
-step
-    .goto 1451/1,814.29,-6824.78
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Colossus Researcher Sophia|r
-    .accept 8859 >>Accept Secrets of the Colossus - Zora
-    .target Colossus Researcher Sophia
-step
-    .goto 1451/1,811.51,-6825.01
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Colossus Researcher Eazel|r
-    .accept 8858 >>Accept Secrets of the Colossus - Regal
-    .target Colossus Researcher Eazel
-step
     .goto 1451/1,755.77,-6847.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Windcaller Proudhorn|r
     .turnin 8276 >>Turn in Taking Back Silithus
@@ -197,10 +182,7 @@ step
     .target Windcaller Proudhorn
 step
     +|cRXP_WARN_That is all of Silithus for now.|r Quests still in your log lead on from here; pick your next zone by them
-    >>|cRXP_FRIENDLY_Eastern Plaguelands|r: Secrets of the Colossus - Zora
     >>|cRXP_FRIENDLY_Moonglade|r: Umber, Archivist
-    >>|cRXP_FRIENDLY_Searing Gorge|r: Secrets of the Colossus - Regal
-    >>|cRXP_FRIENDLY_Stranglethorn Vale|r: Secrets of the Colossus - Ashi
 step
     +|cRXP_WARN_The rest of Silithus is planned from level 58.|r Load its guide for level 58 then
 ]])

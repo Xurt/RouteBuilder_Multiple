@@ -1,0 +1,306 @@
+{
+  "zone": "Searing Gorge",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "47-52 Searing Gorge",
+  "file": "Searing Gorge (Horde).lua",
+  "continent": -51,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 47,
+      "end": 48.37,
+      "next": 51,
+      "guide": "47-49 Searing Gorge: around Jack Rockleg",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Jack Rockleg",
+          "guide": "47-49 Searing Gorge: around Jack Rockleg",
+          "level": 47,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 51,
+      "end": 51,
+      "next": 54,
+      "guide": "51-52 Searing Gorge",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "51-52 Searing Gorge",
+          "level": 51,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 54,
+      "end": 54,
+      "guide": "54-55 Searing Gorge",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "54-55 Searing Gorge",
+          "level": 54,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 9133,
+      "level": 7,
+      "req": 5,
+      "xp": 315,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Eversong Woods"
+    },
+    {
+      "id": 9328,
+      "level": 21,
+      "req": 15,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Ghostlands"
+    },
+    {
+      "id": 9627,
+      "level": 21,
+      "req": 15,
+      "xp": 2500,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Durotar"
+    },
+    {
+      "id": 9811,
+      "level": 21,
+      "req": 15,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/Goblin/Pandaren",
+      "from": "Ghostlands"
+    },
+    {
+      "id": 27956,
+      "level": 47,
+      "req": 46,
+      "xp": 6040,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27957,
+      "level": 47,
+      "req": 46,
+      "xp": 6040,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27958,
+      "level": 47,
+      "req": 46,
+      "xp": 6040,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27959,
+      "level": 47,
+      "req": 46,
+      "xp": 6040,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27960,
+      "level": 47,
+      "req": 46,
+      "xp": 6040,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27961,
+      "level": 47,
+      "req": 46,
+      "xp": 6040,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27962,
+      "level": 47,
+      "req": 46,
+      "xp": 6040,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27963,
+      "level": 47,
+      "req": 46,
+      "xp": 6040,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27964,
+      "level": 47,
+      "req": 46,
+      "xp": 6040,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27965,
+      "level": 48,
+      "req": 46,
+      "xp": 625,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27976,
+      "level": 48,
+      "req": 46,
+      "xp": 6290,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27977,
+      "level": 48,
+      "req": 46,
+      "xp": 6290,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27980,
+      "level": 48,
+      "req": 46,
+      "xp": 6290,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27981,
+      "level": 48,
+      "req": 46,
+      "xp": 6290,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27982,
+      "level": 48,
+      "req": 46,
+      "xp": 6290,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27983,
+      "level": 48,
+      "req": 46,
+      "xp": 6290,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27984,
+      "level": 48,
+      "req": 46,
+      "xp": 625,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27985,
+      "level": 48,
+      "req": 46,
+      "xp": 7850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28099,
+      "level": 48,
+      "req": 46,
+      "xp": 7850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28512,
+      "level": 47,
+      "req": 46,
+      "xp": 600,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Badlands"
+    },
+    {
+      "id": 28581,
+      "level": 48,
+      "req": 47,
+      "xp": 625,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    }
+  ],
+  "carriedTo": {
+    "Eversong Woods": 1,
+    "Tirisfal Glades": 2,
+    "Durotar": 26,
+    "Ghostlands": 1,
+    "Hillsbrad Foothills": 1,
+    "Arathi Highlands": 1,
+    "The Hinterlands": 1,
+    "Western Plaguelands": 1,
+    "Eastern Plaguelands": 2,
+    "Northern Stranglethorn": 1,
+    "The Cape of Stranglethorn": 1,
+    "Burning Steppes": 2,
+    "Swamp of Sorrows": 1
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "zone": "Feralas",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "42-52 Feralas",
+  "file": "Feralas (Horde).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 42,
+      "end": 42.93,
+      "next": 45,
+      "guide": "42-43 Feralas: around Hadoken Swiftstrider",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Hadoken Swiftstrider",
+          "guide": "42-43 Feralas: around Hadoken Swiftstrider",
+          "level": 42,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 45,
+      "end": 45.26,
+      "next": 48,
+      "guide": "45-46 Feralas",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "45-46 Feralas",
+          "level": 45,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 48,
+      "end": 48.24,
+      "guide": "48-49 Feralas",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "48-49 Feralas",
+          "level": 48,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 2822,
+      "level": 46,
+      "req": 40,
+      "xp": 5790,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2862,
+      "level": 42,
+      "req": 39,
+      "xp": 3600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2863,
+      "level": 43,
+      "req": 39,
+      "xp": 3750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2902,
+      "level": 43,
+      "req": 39,
+      "xp": 2500,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2903,
+      "level": 43,
+      "req": 39,
+      "xp": 5050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2973,
+      "level": 45,
+      "req": 38,
+      "xp": 5540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2974,
+      "level": 45,
+      "req": 38,
+      "xp": 5540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2975,
+      "level": 43,
+      "req": 38,
+      "xp": 3750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2980,
+      "level": 44,
+      "req": 38,
+      "xp": 5290,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2981,
+      "level": 43,
+      "req": 38,
+      "xp": 1260,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Durotar"
+    },
+    {
+      "id": 2987,
+      "level": 43,
+      "req": 38,
+      "xp": 5050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3122,
+      "level": 45,
+      "req": 40,
+      "xp": 1380,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Durotar"
+    },
+    {
+      "id": 7730,
+      "level": 45,
+      "req": 39,
+      "xp": 5540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7721,
+      "level": 48,
+      "req": 45,
+      "xp": 6290,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7731,
+      "level": 47,
+      "req": 39,
+      "xp": 6040,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7734,
+      "level": 48,
+      "req": 40,
+      "xp": 6290,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3062,
+      "level": 50,
+      "req": 45,
+      "xp": 8500,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3063,
+      "level": 50,
+      "req": 45,
+      "xp": 5100,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7003,
+      "level": 48,
+      "req": 45,
+      "xp": 6290,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Stranglethorn Vale": 1,
+    "Durotar": 4,
+    "Tanaris": 1
+  }
+}

@@ -1,9 +1,9 @@
--- 1-14 Teldrassil: Zone Routes (Alliance).
+-- 1-47 Teldrassil: Zone Routes (Alliance).
 -- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
--- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 1, 15).
--- Split into 4 guides, listed under "1 - 16 Teldrassil" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- The zone covers more levels than one visit gives, so it is planned in 6 parts (from level 1, 15, 18, 21, 25, 43).
+-- Split into 8 guides, listed under "1 - 44 Teldrassil" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
 -- Edit zones/classic/Teldrassil.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 1 - 16 Teldrassil
+#subgroup 1 - 44 Teldrassil
 #subweight -1
 #name 1-5 Teldrassil: around Conservator Ilthalaine
 #next Zone Routes (Alliance)\5-8 Teldrassil: around Corithras Moonrage
@@ -351,7 +351,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 1 - 16 Teldrassil
+#subgroup 1 - 44 Teldrassil
 #subweight -1
 #name 5-8 Teldrassil: around Corithras Moonrage
 #next Zone Routes (Alliance)\8-11 Teldrassil: around Denalan
@@ -886,6 +886,24 @@ step << !Rogue !Hunter !Warrior
     .vendor >>|cRXP_BUY_Buy some more|r |T132815:0|t|cRXP_LOOT_Ice Cold Milk|r << Priest
     .target Innkeeper Saelienne
 step
+    .goto 1457/1,2284.63,9961.81
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thyn'tel Bladeweaver|r
+    .turnin 1037 >>Turn in Velinde Starsong
+    .target Thyn'tel Bladeweaver
+    .isOnQuest 1037
+step
+    .goto 1457/1,2284.63,9961.81
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thyn'tel Bladeweaver|r
+    .turnin 1044 >>Turn in Answered Questions
+    .target Thyn'tel Bladeweaver
+    .isOnQuest 1044
+step << NightElf Warrior
+    .goto 1457/1,2308.55,9918.06
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathiel|r
+    .turnin 1703 >>Turn in Mathiel
+    .target Mathiel
+    .isOnQuest 1703
+step
     .goto 1457/1,2534.29,10085.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rellian Greenspyre|r
     .turnin 922 >>Turn in Rellian Greenspyre
@@ -902,6 +920,12 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sister Aquinne|r
     .accept 2519 >>Accept The Temple of the Moon
     .target Sister Aquinne
+step
+    .goto 1457/1,2607.74,9641.90
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chief Archaeologist Greywhisker|r
+    .turnin 741 >>Turn in The Absent Minded Prospector
+    .target Chief Archaeologist Greywhisker
+    .isOnQuest 741
 step
     .goto 1457/1,2550.48,9631.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess A'moora|r
@@ -934,6 +958,12 @@ step << NightElf Druid
 step << NightElf Druid
     .goto 1457/1,2564.03,10179.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathrengyl Bearwalker|r
+    .turnin 5061 >>Turn in Aquatic Form
+    .target Mathrengyl Bearwalker
+    .isOnQuest 5061
+step << NightElf Druid
+    .goto 1457/1,2564.03,10179.04
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathrengyl Bearwalker|r
     .turnin 5923 >>Turn in Heeding the Call
     .accept 5921 >>Accept Moonglade
     .target Mathrengyl Bearwalker
@@ -958,6 +988,36 @@ step
     .turnin 7383 >>Turn in Crown of the Earth while you are here
     .isQuestComplete 7383
     .target Corithras Moonrage
+step
+    .goto 1457/1,2524.55,9662.51
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tyrande Whisperwind|r
+    .turnin 1081 >>Turn in Reception from Tyrande
+    .target Tyrande Whisperwind
+    .isOnQuest 1081
+step
+    .goto 1457/1,2524.55,9662.51
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tyrande Whisperwind|r
+    .turnin 2972 >>Turn in Doling Justice
+    .target Tyrande Whisperwind
+    .isOnQuest 2972
+step << NightElf Priest
+    .goto 1457/1,2520.11,9665.26
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess Alathea|r
+    .turnin 5675 >>Turn in Elune's Grace
+    .target Priestess Alathea
+    .isOnQuest 5675
+step << NightElf Priest
+    .goto 1457/1,2520.11,9665.26
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess Alathea|r
+    .turnin 5674 >>Turn in Elune's Grace
+    .target Priestess Alathea
+    .isOnQuest 5674
+step << NightElf Priest
+    .goto 1457/1,2520.11,9665.26
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess Alathea|r
+    .turnin 5673 >>Turn in Elune's Grace
+    .target Priestess Alathea
+    .isOnQuest 5673
 step << NightElf Priest
     .goto 1457/1,2520.11,9665.26
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess Alathea|r
@@ -988,6 +1048,18 @@ step << NightElf Priest
     .turnin 5628 >>Turn in Returning Home
     .target Priestess Alathea
     .isOnQuest 5628
+step
+    .goto 1457/1,2495.66,9634.07
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gracina Spiritmight|r
+    .turnin 162 >>Turn in Rise of the Silithid
+    .target Gracina Spiritmight
+    .isOnQuest 162
+step
+    .goto 1457/1,2495.66,9634.07
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gracina Spiritmight|r
+    .turnin 4267 >>Turn in Rise of the Silithid
+    .target Gracina Spiritmight
+    .isOnQuest 4267
 step
     #completewith next
     .zone 1438 >>Leave Darnassus for Teldrassil
@@ -1031,7 +1103,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 1 - 16 Teldrassil
+#subgroup 1 - 44 Teldrassil
 #subweight -1
 #name 8-11 Teldrassil: around Denalan
 --RouteBuilder:next
@@ -1182,6 +1254,12 @@ step
     .zone 1457 >>Travel to Darnassus
     .zoneskip 1457
 step
+    .goto 1457/1,2564.03,10179.04
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathrengyl Bearwalker|r
+    .turnin 3370 >>Turn in In Nightmares
+    .target Mathrengyl Bearwalker
+    .isOnQuest 3370
+step
     .goto 1457/1,2569.96,10172.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arch Druid Fandral Staghelm|r
     .turnin 940 >>Turn in Teldrassil
@@ -1231,10 +1309,15 @@ step << Hunter
     .target Silvaria
 step << NightElf Druid
     .goto 1457/1,2564.03,10179.04
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lunaclaw Spirit|r
+    .complete 6001,1 --Lunaclaw Spirit
+    .isOnQuest 6001
+step << NightElf Druid
+    .goto 1457/1,2564.03,10179.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathrengyl Bearwalker|r
     .turnin 6001 >>Turn in Body and Heart
     .target Mathrengyl Bearwalker
-    .isQuestComplete 6001
+    .isOnQuest 6001
 step
     .goto 1457/1,2534.29,10085.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rellian Greenspyre|r
@@ -1410,6 +1493,30 @@ step
     .target Denalan
     .isOnQuest 2499
 step
+    .goto 1438/1,988.71,8707.30
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Erelas Ambersky|r
+    .turnin 3022 >>Turn in Handle With Care
+    .target Erelas Ambersky
+    .isOnQuest 3022
+step << NightElf
+    .goto 1438/1,950.01,8694.07
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nessa Shadowsong|r
+    .turnin 6344 >>Turn in Nessa Shadowsong while you are here
+    .isQuestComplete 6344
+    .target Nessa Shadowsong
+step
+    .goto 1438/1,993.29,8701.19
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daryn Lightwind|r
+    .turnin 2944 >>Turn in The Super Snapper FX
+    .target Daryn Lightwind
+    .isQuestComplete 2944
+step
+    .goto 1438/1,993.29,8701.19
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daryn Lightwind|r
+    .turnin 2939 >>Turn in In Search of Knowledge
+    .target Daryn Lightwind
+    .isOnQuest 2939
+step
     .goto 1438/1,1837.49,9122.70
     >>Kill |cRXP_ENEMY_Ursal the Mauler|r
     .complete 486,1 --Ursal the Mauler slain (1)
@@ -1486,7 +1593,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 1 - 16 Teldrassil
+#subgroup 1 - 44 Teldrassil
 #subweight -1
 #name 15-16 Teldrassil
 --RouteBuilder:next
@@ -1581,9 +1688,479 @@ step
     .target Tallonkai Swiftroot
     .isQuestComplete 2459
 step
-    +|cRXP_WARN_End of the Teldrassil route.|r Quests still in your log lead on from here; pick your next zone by them
+    +|cRXP_WARN_That is all of Teldrassil for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Darkshore|r: Trouble In Darkshore?
     >>|cRXP_FRIENDLY_Moonglade|r: Lessons Anew << NightElf Druid
 step
     +|cRXP_WARN_Suggested next zones at level 15|r: |cRXP_FRIENDLY_Darkshore|r (about 2.1 levels of quests, starting around Terenthis; 2 quests from here hand in there), |cRXP_FRIENDLY_The Barrens|r (about 0.6 levels of quests, starting around Gazlowe). Completing this step loads the guide for Darkshore --RouteBuilder:next
+step << NightElf Druid/Rogue
+    +|cRXP_WARN_The rest of Teldrassil is planned from level 18.|r Load its guide for level 18 then
+]])
+
+RXPGuides.RegisterGuide([[
+#classic
+<< NightElf Druid/Rogue
+#version 1
+#group Zone Routes (Alliance)
+#subgroup 1 - 44 Teldrassil
+#subweight -1
+#name 18-19 Teldrassil
+--RouteBuilder:next
+#next Zone Routes (Alliance)\17-19 Darkshore: around Terenthis
+
+step << Rogue
+    .goto 1438/1,943.90,9790.25
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jannok Breezesong|r
+    .accept 2259 >>Accept Erion Shadewhisper
+    .target Jannok Breezesong
+step
+    #completewith next
+    .zone 1457 >>Travel to Darnassus
+    .zoneskip 1457
+step << Rogue
+    .goto 1457/1,2573.03,10055.32
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Erion Shadewhisper|r
+    .turnin 2259 >>Turn in Erion Shadewhisper
+    .accept 2260 >>Accept Erion's Behest
+    .target Erion Shadewhisper
+step << NightElf Druid
+    .goto 1457/1,2564.03,10179.04
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathrengyl Bearwalker|r
+    .accept 26 >>Accept A Lesson to Learn
+    .target Mathrengyl Bearwalker
+step
+    #completewith next
+    .zone 1438 >>Leave Darnassus for Teldrassil
+    .zoneskip 1438
+step
+    .goto 1438/1,282.49,10018.65
+    >>Kill |cRXP_ENEMY_Ferocitas the Dream Eater|r and loot |cRXP_LOOT_Gnarlpine Necklace|r
+    .collect 8049,1,2459,1 --Gnarlpine Necklace (1)
+    .mob Ferocitas the Dream Eater
+    .isOnQuest 2459
+step
+    #loop
+    .goto 1438/1,308.97,10054.62,0
+    .goto 1438/1,308.97,10054.62,40,0
+    .goto 1438/1,269.77,9953.83,40,0
+    >>Kill |cRXP_ENEMY_Gnarlpine Mystics|r
+    .complete 2459,1 --Gnarlpine Mystic slain (7)
+    .mob Gnarlpine Mystic
+    .isOnQuest 2459
+step
+    .goto 1438/1,985.14,9898.51
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tallonkai Swiftroot|r
+    .turnin 2459 >>Turn in Ferocitas the Dream Eater
+    .target Tallonkai Swiftroot
+    .isQuestComplete 2459
+step
+    #completewith next
+    .zone 1457 >>Travel to Darnassus
+    .zoneskip 1457
+step << Warrior
+    .goto 1457/1,2331.94,9994.06
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elanaria|r
+    .turnin 1686 >>Turn in The Shade of Elura
+    .target Elanaria
+    .isQuestComplete 1686
+step << NightElf Priest
+    .goto 1457/1,2520.11,9665.26
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess Alathea|r
+    .turnin 5627 >>Turn in Stars of Elune
+    .target Priestess Alathea
+    .isOnQuest 5627
+step << Mage
+    .goto 1438/1,841.05,8640.79
+    >>Talk to |cRXP_FRIENDLY_Vesprystus|r
+    .fp Rut'theran >> Get the Rut'theran Village flight path
+    .target Vesprystus
+step << Dwarf Hunter
+    .goto 1438/1,841.56,8640.79
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vesprystus|r
+    .fp Teldrassil >> Get the Teldrassil Flight Path
+    .target Vesprystus
+step << Dwarf Hunter
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ilyenia Moonfire|r
+    .goto 1457/1,2329.19,9908.60
+    .train 264 >> Train Bows
+    .train 227 >> Train Staves
+    .target Ilyenia Moonfire
+step << Hunter Hunter
+    .goto 1457/1,2511.04,10178.01
+    .target Jocaste
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jocaste|r
+    .trainer >> Train your class spells
+    .xp <22,1
+step << Hunter Dwarf Hunter
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ilyenia Moonfire|r
+    .goto 1457/1,2329.19,9908.60
+    .train 264 >> Train Bows
+    .train 227 >> Train Staves
+    .target Ilyenia Moonfire
+step
+    .goto 1457/1,2607.74,9641.90
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chief Archaeologist Greywhisker|r
+    .accept 942 >>Accept The Absent Minded Prospector
+    .target Chief Archaeologist Greywhisker
+    .isQuestTurnedIn 741 --any of: The Absent Minded Prospector
+    .xp <15,1
+step << Mage
+    .goto 1438/1,841.05,8640.45
+    .fp Teldrassil >> Get the Teldrassil Flight Path
+    .fly Auberdine >> Fly to Auberdine
+step
+    +|cRXP_WARN_That is all of Teldrassil for now.|r Quests still in your log lead on from here; pick your next zone by them
+    >>|cRXP_FRIENDLY_Moonglade|r: A Lesson to Learn << NightElf Druid
+    >>|cRXP_FRIENDLY_Stormwind City|r: Erion's Behest << Rogue
+    >>|cRXP_FRIENDLY_Wetlands|r: The Absent Minded Prospector
+step
+    +|cRXP_WARN_Suggested next zones at level 18|r: |cRXP_FRIENDLY_Darkshore|r (about 0.8 levels of quests, starting around Terenthis). Completing this step loads the guide for Darkshore --RouteBuilder:next
+step << Warrior/Dwarf Priest/NightElf Priest/Human Priest
+    +|cRXP_WARN_The rest of Teldrassil is planned from level 21.|r Load its guide for level 21 then
+]])
+
+RXPGuides.RegisterGuide([[
+#classic
+<< Warrior/Dwarf Priest/NightElf Priest/Human Priest
+#version 1
+#group Zone Routes (Alliance)
+#subgroup 1 - 44 Teldrassil
+#subweight -1
+#name 21-22 Teldrassil
+--RouteBuilder:next
+#next Zone Routes (Alliance)\20-22 Duskwood: around Elaine Carevin
+
+step
+    #completewith next
+    .zone 1457 >>Travel to Darnassus
+    .zoneskip 1457
+step << Warrior
+    .goto 1457/1,2308.55,9918.06
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathiel|r
+    .accept 1710 >>Accept Sunscorched Shells
+    .target Mathiel
+    .isQuestTurnedIn 1782 --any of: Furen's Armor
+    .xp <20,1
+step << Warrior
+    .goto 1457/1,2308.55,9918.06
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathiel|r
+    .accept 1711 >>Accept Mathiel's Armor
+    .target Mathiel
+    .isQuestTurnedIn 1710 --any of: Sunscorched Shells
+    .xp <20,1
+step << Warrior
+    .goto 1457/1,2308.55,9918.06
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathiel|r
+    .turnin 1711 >>Turn in Mathiel's Armor
+    .target Mathiel
+    .isOnQuest 1711
+step << Warrior
+    .goto 1457/1,2331.94,9994.06
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elanaria|r
+    .turnin 1686 >>Turn in The Shade of Elura
+    .target Elanaria
+    .isQuestComplete 1686
+step << Warrior
+    .goto 1457/1,2314.58,9988.84
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darnath Bladesinger|r
+    .accept 1698 >>Accept Yorus Barleybrew
+    .target Darnath Bladesinger
+step << Warrior
+    .goto 1457/1,2308.55,9918.06
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathiel|r
+    .turnin 1710 >>Turn in Sunscorched Shells
+    .target Mathiel
+    .isQuestComplete 1710
+step
+    .goto 1457/1,2520.11,9665.26
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess Alathea|r
+    .accept 5678 >>Accept Arcane Feedback << Human Priest
+    .accept 5647 >>Accept A Lack of Fear << Dwarf Priest
+    .accept 5672 >>Accept Elune's Grace << NightElf Priest
+    .target Priestess Alathea
+step << NightElf Priest
+    .goto 1457/1,2520.11,9665.26
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess Alathea|r
+    .turnin 5627 >>Turn in Stars of Elune
+    .target Priestess Alathea
+    .isOnQuest 5627
+step << NightElf Priest
+    .goto 1457/1,2520.11,9665.26
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess Alathea|r
+    >>|cRXP_WARN_The database has no objectives for Elune's Grace. Skip this step if the quest is not finished|r
+    .turnin 5672 >>Turn in Elune's Grace
+    .target Priestess Alathea
+    .isOnQuest 5672
+step
+    #completewith next
+    .zone 1438 >>Leave Darnassus for Teldrassil
+    .zoneskip 1438
+step
+    .goto 1438/1,282.49,10018.65
+    >>Kill |cRXP_ENEMY_Ferocitas the Dream Eater|r and loot |cRXP_LOOT_Gnarlpine Necklace|r
+    .collect 8049,1,2459,1 --Gnarlpine Necklace (1)
+    .mob Ferocitas the Dream Eater
+    .isOnQuest 2459
+step
+    #loop
+    .goto 1438/1,308.97,10054.62,0
+    .goto 1438/1,308.97,10054.62,40,0
+    .goto 1438/1,269.77,9953.83,40,0
+    >>Kill |cRXP_ENEMY_Gnarlpine Mystics|r
+    .complete 2459,1 --Gnarlpine Mystic slain (7)
+    .mob Gnarlpine Mystic
+    .isOnQuest 2459
+step
+    .goto 1438/1,985.14,9898.51
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tallonkai Swiftroot|r
+    .turnin 2459 >>Turn in Ferocitas the Dream Eater
+    .target Tallonkai Swiftroot
+    .isQuestComplete 2459
+step
+    +|cRXP_WARN_That is all of Teldrassil for now.|r Quests still in your log lead on from here; pick your next zone by them
+    >>|cRXP_FRIENDLY_Ironforge|r: A Lack of Fear << Dwarf Priest
+    >>|cRXP_FRIENDLY_Redridge Mountains|r: Yorus Barleybrew << Warrior
+    >>|cRXP_FRIENDLY_Stormwind City|r: Arcane Feedback << Human Priest
+step
+    +|cRXP_WARN_Suggested next zones at level 21|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests, starting around Elaine Carevin). Completing this step loads the guide for Duskwood --RouteBuilder:next
+step
+    +|cRXP_WARN_The rest of Teldrassil is planned from level 25.|r Load its guide for level 25 then
+]])
+
+RXPGuides.RegisterGuide([[
+#classic
+<< Alliance
+#version 1
+#group Zone Routes (Alliance)
+#subgroup 1 - 44 Teldrassil
+#subweight -1
+#name 25-26 Teldrassil
+
+step
+    .goto 1438/1,282.49,10018.65
+    >>Kill |cRXP_ENEMY_Ferocitas the Dream Eater|r and loot |cRXP_LOOT_Gnarlpine Necklace|r
+    .collect 8049,1,2459,1 --Gnarlpine Necklace (1)
+    .mob Ferocitas the Dream Eater
+    .isOnQuest 2459
+step
+    #completewith next
+    .zone 1457 >>Travel to Darnassus
+    .zoneskip 1457
+step
+    .goto 1457/1,2308.55,9918.06
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathiel|r
+    .accept 2925 >>Accept Klockmort's Essentials
+    .target Mathiel
+step << Rogue
+    .goto 1457/1,2546.89,10083.69
+    >>Kill |cRXP_ENEMY_Syurna|r and loot |cRXP_LOOT_Elegant Letter|r. Use it to start the quest
+    .collect 17126,1,6681 --Elegant Letter (1)
+    .accept 6681 >>Accept The Manor, Ravenholdt
+    .use 17126
+    .mob Syurna
+step << Warrior
+    .goto 1457/1,2331.94,9994.06
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elanaria|r
+    .turnin 1686 >>Turn in The Shade of Elura
+    .target Elanaria
+    .isQuestComplete 1686
+step << NightElf Priest
+    .goto 1457/1,2520.11,9665.26
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess Alathea|r
+    .turnin 5627 >>Turn in Stars of Elune
+    .target Priestess Alathea
+    .isOnQuest 5627
+step << NightElf Priest
+    .goto 1457/1,2520.11,9665.26
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess Alathea|r
+    .turnin 5672 >>Turn in Elune's Grace
+    .target Priestess Alathea
+    .isOnQuest 5672
+step
+    #completewith next
+    .zone 1438 >>Leave Darnassus for Teldrassil
+    .zoneskip 1438
+step
+    #loop
+    .goto 1438/1,308.97,10054.62,0
+    .goto 1438/1,308.97,10054.62,40,0
+    .goto 1438/1,269.77,9953.83,40,0
+    >>Kill |cRXP_ENEMY_Gnarlpine Mystics|r
+    .complete 2459,1 --Gnarlpine Mystic slain (7)
+    .mob Gnarlpine Mystic
+    .isOnQuest 2459
+step
+    .goto 1438/1,985.14,9898.51
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tallonkai Swiftroot|r
+    .turnin 2459 >>Turn in Ferocitas the Dream Eater
+    .target Tallonkai Swiftroot
+    .isQuestComplete 2459
+step
+    +|cRXP_WARN_That is all of Teldrassil for now.|r Quests still in your log lead on from here; pick your next zone by them
+    >>|cRXP_FRIENDLY_Alterac Mountains|r: The Manor, Ravenholdt << Rogue
+    >>|cRXP_FRIENDLY_Ironforge|r: Klockmort's Essentials
+step
+    +|cRXP_WARN_The rest of Teldrassil is planned from level 43.|r Load its guide for level 43 then
+]])
+
+RXPGuides.RegisterGuide([[
+#classic
+<< Alliance
+#version 1
+#group Zone Routes (Alliance)
+#subgroup 1 - 44 Teldrassil
+#subweight -1
+#name 43-44 Teldrassil
+
+step
+    .goto 1438/1,988.71,8707.30
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Erelas Ambersky|r
+    .accept 3661 >>Accept Favored of Elune?
+    .target Erelas Ambersky
+step
+    .goto 1438/1,988.71,8707.30
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Erelas Ambersky|r
+    .turnin 3661 >>Turn in Favored of Elune?
+    .target Erelas Ambersky
+    .isQuestComplete 3661
+step
+    .goto 1438/1,1002.97,8727.33
+    >>Click the |cRXP_PICK_Feralas: A History|r
+    .accept 2940 >>Accept Feralas: A History
+    .isQuestTurnedIn 2939 --any of: In Search of Knowledge
+    .xp <42,1
+step
+    .goto 1438/1,993.29,8701.19
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daryn Lightwind|r
+    .accept 2943 >>Accept Return to Troyas
+    .target Daryn Lightwind
+    .isQuestTurnedIn 2944 --any of: The Super Snapper FX
+    .xp <42,1
+step
+    .goto 1438/1,993.29,8701.19
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daryn Lightwind|r
+    .turnin 2940 >>Turn in Feralas: A History
+    .target Daryn Lightwind
+    .isOnQuest 2940
+step
+    .goto 1438/1,993.29,8701.19
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daryn Lightwind|r
+    .accept 2941 >>Accept The Borrower
+    .target Daryn Lightwind
+    .isQuestTurnedIn 2940 --any of: Feralas: A History
+    .xp <42,1
+step << Mage
+    .goto 1457/1,2508.69,9658.70
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elissa Dumas|r
+    .train 3565 >> Train Teleport: Darnassus
+    .target Elissa Dumas
+step << Priest
+    .goto 1457/1,2537.25,9654.40
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jandria|r
+    .trainer >> Train your class spells
+    .target Jandria
+    .zoneskip Darnassus,1
+step << Warrior
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arias'ta Bladesinger|r
+    .goto 1457/1,2316.91,9991.88
+    .trainer >> Train your class spells
+    .target Arias'ta Bladesinger
+    .zoneskip Darnassus,1
+step << Rogue
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Syurna|r
+    .goto 1457/1,2601.39,10120.53,30,0
+    .goto 1457/1,2546.78,10083.62
+    .trainer >> Train your class spells
+    .target Syurna
+    .zoneskip Darnassus,1
+step << Hunter
+    .goto 1457/1,2511.04,10178.01
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jocaste|r
+    .trainer >> Train your class spells
+    .target Jocaste
+    .zoneskip Darnassus,1
+step << NightElf
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jartsam|r and |cRXP_FRIENDLY_Lelanai|r
+    .train 828 >>Train |T132242:0|t[Tiger Riding]
+    .goto 1457/1,2528.85,10126.41
+    .vendor >>|cRXP_BUY_Buy a|r |T132267:0|t[|cFF0070FFFrostsaber|r] |cRXP_BUY_or|r |T132225:0|t[|cFF0070FFNightsaber|r]
+    .goto 1457/1,2533.20,10129.88
+    .xp <40,1
+    .zoneskip Darnassus,1
+    .target Jartsam
+    .target Lelanai
+step
+    .goto 1438/1,282.49,10018.65
+    >>Kill |cRXP_ENEMY_Ferocitas the Dream Eater|r and loot |cRXP_LOOT_Gnarlpine Necklace|r
+    .collect 8049,1,2459,1 --Gnarlpine Necklace (1)
+    .mob Ferocitas the Dream Eater
+    .isOnQuest 2459
+step
+    #loop
+    .goto 1438/1,308.97,10054.62,0
+    .goto 1438/1,308.97,10054.62,40,0
+    .goto 1438/1,269.77,9953.83,40,0
+    >>Kill |cRXP_ENEMY_Gnarlpine Mystics|r
+    .complete 2459,1 --Gnarlpine Mystic slain (7)
+    .mob Gnarlpine Mystic
+    .isOnQuest 2459
+step
+    .goto 1438/1,985.14,9898.51
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tallonkai Swiftroot|r
+    .turnin 2459 >>Turn in Ferocitas the Dream Eater
+    .target Tallonkai Swiftroot
+    .isQuestComplete 2459
+step
+    #completewith next
+    .zone 1457 >>Travel to Darnassus
+    .zoneskip 1457
+step
+    .goto 1457/1,2284.63,9961.81
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thyn'tel Bladeweaver|r
+    .accept 1038 >>Accept Velinde's Effects
+    .target Thyn'tel Bladeweaver
+    .isQuestTurnedIn 1037 --any of: Velinde Starsong
+    .xp <25,1
+step << Warrior
+    .goto 1457/1,2331.94,9994.06
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elanaria|r
+    .turnin 1686 >>Turn in The Shade of Elura
+    .target Elanaria
+    .isQuestComplete 1686
+step
+    .goto 1457/1,2279.13,9650.51
+    >>Open the |cRXP_PICK_Velinde's Locker|r. Loot it for |cRXP_LOOT_Velinde's Journal|r
+    .complete 1038,1 --Velinde's Journal (1)
+    .isOnQuest 1038
+step << NightElf Priest
+    .goto 1457/1,2520.11,9665.26
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess Alathea|r
+    .turnin 5672 >>Turn in Elune's Grace
+    .target Priestess Alathea
+    .isOnQuest 5672
+step << NightElf Priest
+    .goto 1457/1,2520.11,9665.26
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess Alathea|r
+    .turnin 5627 >>Turn in Stars of Elune
+    .target Priestess Alathea
+    .isOnQuest 5627
+step
+    .goto 1457/1,2284.63,9961.81
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thyn'tel Bladeweaver|r
+    .turnin 1038 >>Turn in Velinde's Effects
+    .target Thyn'tel Bladeweaver
+    .isOnQuest 1038
+step
+    .goto 1457/1,2284.63,9961.81
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thyn'tel Bladeweaver|r
+    .accept 1039 >>Accept The Barrens Port
+    .target Thyn'tel Bladeweaver
+    .isQuestTurnedIn 1038 --any of: Velinde's Effects
+    .xp <25,1
+step
+    +|cRXP_WARN_End of the Teldrassil route.|r Quests still in your log lead on from here; pick your next zone by them
+    >>|cRXP_FRIENDLY_Feralas|r: Return to Troyas
+    >>|cRXP_FRIENDLY_Tanaris|r: The Borrower
+    >>|cRXP_FRIENDLY_The Barrens|r: The Barrens Port
+    >>|cRXP_FRIENDLY_The Hinterlands and back here|r: Favored of Elune?
 ]])

@@ -1,0 +1,211 @@
+Twilight Highlands - Alliance - part 1 of 2, planned from level 84
+Guide "84-85 Twilight Highlands" in group "Zone Routes (Alliance)": this part has 227 steps, 218 stops
+Written to guides/mop/Twilight Highlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+4 pickups or hand-ins are within reach of a stop but planned for later.
+12 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 84. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 252 steps kept, 6 new ones slotted in, 3 moved because their prerequisites changed, 164 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 122 tasks, 17,542 yd on foot; ends at level 84.6
+  everyone (quests that depend on other zones): 139 more tasks; their whole route comes to 32,503 yd; ends at level 84.6
+Hearthstone: set at Naka Scaleblade (Naka Scaleblade's inn); 0 hearth steps in the guide.
+5 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (94)
+------------------------
+Start to finish here: 42 (13 for everyone, 29 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  The Maelstrom [27203, level 82] <- Stormwind City
+  Twilight Shores [28832, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Stormwind City
+
+Need a quest this guide does not hand in - steps show only once that is done (50):
+  Deepholm, Realm of Earth [27123, level 82] - needs one of The Maelstrom [27203] -> Deepholm
+  Salvage Operation [27177, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Kurdran's Waitin' [28599]
+  Naga Reinforcements [27178, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Kurdran's Waitin' [28599]
+  Siren's Song [27200, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Burnin' at Both Ends [28597]
+  Our Boys on the Shore [27338, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Kurdran's Waitin' [28599]
+  Scouting the Shore [27341, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Our Boys on the Shore [27338]
+  Landgrab [27366, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Our Boys on the Shore [27338]
+  Shredderectomy [27433, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Our Boys on the Shore [27338]
+  Siege Tank Rescue [27468, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Shredderectomy [27433]
+  Bird Down! Bird Down! [27514, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Scouting the Shore [27341], Landgrab [27366]
+  Roots'll Do 'Er [27515, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Bird Down! Bird Down! [27514]
+  Wings Over Highbank [27516, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Roots'll Do 'Er [27515]
+  Any Portal in a Storm [27537, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Wings Over Highbank [27516]
+  The Perfect Poultice [27538, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Wings Over Highbank [27516]
+  The Way is Open [27545, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Any Portal in a Storm [27537]
+  Firebeard's Patrol [27621, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Way is Open [27545]
+  Dunwalds Don't Die [27640, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Dropping the Hammer [27817]
+  While Meeting The Family [27641, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Dunwalds Don't Die [27640]
+  Sifting Through The Wreckage [27642, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Dunwalds Don't Die [27640]
+  Donnelly Dunwald [27643, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Dunwalds Don't Die [27640]
+  Eoin Dunwald [27644, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Dunwalds Don't Die [27640]
+  Finding Beak [27646, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Donnelly Dunwald [27643]
+  Anything But Water [27647, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Eoin Dunwald [27644]
+  Once More Into The Fire [27648, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Cayden Dunwald [27645]
+  A Steady Supply [27649, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Anything But Water [27647]
+  Home Again [27650, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Finding Beak [27646], Once More Into The Fire [27648], A Steady Supply [27649]
+  Doing It Like a Dunwald [27651, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Home Again [27650]
+  Welcome Relief [27803, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Firebeard's Patrol [27621]
+  The Only Homes We Have [27804, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Firebeard's Patrol [27621]
+  Small Comforts [27805, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Firebeard's Patrol [27621]
+  Honorable Bearing [27806, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Welcome Relief [27803], The Only Homes We Have [27804]
+  Clan Mullan [27807, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Honorable Bearing [27806]
+  Stubborn as a Doyle [27808, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Honorable Bearing [27806]
+  Firebeard Bellows [27809, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Honorable Bearing [27806]
+  The Fighting Spirit [27810, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Clan Mullan [27807]
+  The Scent of Battle [27811, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Clan Mullan [27807]
+  The Loyalty of Clan Mullan [27812, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs The Fighting Spirit [27810], The Scent of Battle [27811]
+  Death Worthy of a Dragonmaw [27813, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Firebeard Bellows [27809]
+  Anything We Can Get [27814, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Firebeard Bellows [27809]
+  Somethin' for the Boys [27815, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Death Worthy of a Dragonmaw [27813], Anything We Can Get [27814], They Took Me Pants! [28234]
+  Personal Request [27816, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs The Loyalty of Clan Mullan [27812], Somethin' for the Boys [27815], The Fate of the Doyles [27999]
+  Dropping the Hammer [27817, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Personal Request [27816]
+  The Fate of the Doyles [27999, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Stubborn as a Doyle [27808]
+  A Coward's Due [28001, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Dropping the Hammer [27817]
+  The Lost Brother [28233, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Firebeard Bellows [27809]
+  They Took Me Pants! [28234, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Lost Brother [28233]
+  Welcome to Highbank! [28596, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Twilight Shores [28832]
+  Burnin' at Both Ends [28597, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Welcome to Highbank! [28596]
+  Aiming High [28598, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Burnin' at Both Ends [28597]
+  Kurdran's Waitin' [28599, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Aiming High [28598]
+
+Worth checking in game
+----------------------
+  The Maw of Iso'rath [27376, level 84]: could not read how many Earthen Ring Gryphon are needed from the quest text; assumed 8
+  The Fighting Spirit [27810, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: could not read how many Mullan Gryphon Rider are needed from the quest text; assumed 8
+  Aiming High [28598, level 84, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Skyshredder Bomb Controller Bunny" really is line 2 in the quest log
+
+Put off to a later part (54)
+----------------------------
+These need a higher level than this part ends at:
+  Nightmare [27380, level 85]: its mobs are level 88; this part gets you to about 85.1
+  Warm Welcome [27485, level 85]: follows Nightmare [27380]
+  SI:7 Drop [27490, level 85]: follows Victors' Point [28248]
+  Ogres & Ettins [27492, level 85]: follows Victors' Point [28248]
+  Move the Mountain [27494, level 85]: follows SI:7 Drop [27490]
+  Call in the Artillery [27496, level 85]: follows Victors' Point [28248]
+  Signal the Attack [27498, level 85]: follows Move the Mountain [27494]
+  Four Heads are Better than None [27500, level 85]: follows Signal the Attack [27498]
+  Up to the Citadel [27502, level 85]: follows Four Heads are Better than None [27500]
+  Even Dragons Bleed [27504, level 85]: follows Warm Welcome [27485]
+  Draconic Mending [27505, level 85]: follows Even Dragons Bleed [27504]
+  Life from Death [27506, level 85]: follows Even Dragons Bleed [27504]
+  Encroaching Twilight [27507, level 85]: follows In Defense of the Redoubt [27564]
+  Far from the Nest [27508, level 85]: follows In Defense of the Redoubt [27564]
+  Breach in the Defenses [27509, level 85]: follows In Defense of the Redoubt [27564]
+  In Defense of the Redoubt [27564, level 85]: follows Draconic Mending [27505]
+  Just You and Mathias [27636, level 85]: follows Up to the Citadel [27502]
+  Dark Assassins [27652, level 85]: follows Just You and Mathias [27636]
+  Bring the Hammer Down [27654, level 85]: follows Just You and Mathias [27636]
+  Help from the Earthcaller [27657, level 85]: follows Just You and Mathias [27636]
+  Portal Overload [27659, level 85]: follows Help from the Earthcaller [27657]
+  Spirit of the Loch [27660, level 85]: follows Help from the Earthcaller [27657]
+  Fire the Cannon [27661, level 85]: follows Spirit of the Loch [27660]
+  Unbinding [27662, level 85]: follows Help from the Earthcaller [27657]
+  Distract Them for Me [27688, level 85]: follows Dark Assassins [27652]
+  The Elementium Axe [27695, level 85]: follows Dark Assassins [27652]
+  Dragon, Unchained [27700, level 85]: follows The Elementium Axe [27695]
+  Coup de Grace [27702, level 85]: follows Dragon, Unchained [27700]
+  Back to the Elementium Depths [27711, level 85]: follows Portal Overload [27659]
+  Water of Life [27719, level 85]: follows Fire the Cannon [27661]
+  Mr. Goldmine's Wild Ride [27720, level 85]: follows Portal Overload [27659]
+  A Little on the Side [27742, level 85]: follows Mr. Goldmine's Wild Ride [27720]
+  While We're Here [27743, level 85]: follows Mr. Goldmine's Wild Ride [27720]
+  Rune Ruination [27744, level 85]: follows Mr. Goldmine's Wild Ride [27720]
+  A Fiery Reunion [27745, level 85]: follows A Little on the Side [27742]
+  Mathias Needs You [27782, level 85]: follows A Fiery Reunion [27745]
+  The Hammer of Twilight [27784, level 85]: follows Mathias Needs You [27782]
+  Skullcrusher the Mountain [27787, level 85]: follows The Hammer of Twilight [27784]
+  Mathias' Command [28101, level 85]: follows Encroaching Twilight [27507]
+  Easy Pickings [28103, level 85]: follows Mathias' Command [28101]
+  Precious Goods [28104, level 85]: follows Mathias' Command [28101]
+  Paving the Way [28107, level 85]: follows Easy Pickings [28103]
+  If The Key Fits [28108, level 85]: follows Easy Pickings [28103]
+  Pressing Forward [28109, level 85]: follows If The Key Fits [28108]
+  And the Sky Streaked Red [28171, level 85]: follows Battle of Life and Death [28758]
+  Blackout [28173, level 85]: follows And the Sky Streaked Red [28171]
+  Shining Through the Dark [28175, level 85]: follows And the Sky Streaked Red [28171]
+  Following the Young Home [28176, level 85]: follows Blackout [28173]
+  A Fitting End [28191, level 85]: follows And the Sky Streaked Red [28171]
+  Last of Her Kind [28247, level 85]: follows Following the Young Home [28176]
+  Victors' Point [28248, level 85]: follows Last of Her Kind [28247]
+  Enter the Dragon Queen [28712, level 85]: follows Pressing Forward [28109]
+  Battle of Life and Death [28758, level 85]: follows Enter the Dragon Queen [28712]
+  To Ravenholdt [29934, level 85]: needs level 85; this part gets Rogue characters to about 85.1
+
+Left out (28)
+-------------
+not in the game (on Questie's quest blacklist) (17):
+  Incense for the Summer Scorchlings [11964], The Crucible of Carnage: The Bloodeye Bruiser! [27861], The Crucible of Carnage: The Bloodeye Bruiser! [27862], The Gates of Grim Batol (NOT NEEDED?) [28106], Breadcrumb Out [28110], The Lost Brother [28236], Polished [28585], Battle of Life and Death [28754], Desecrate this Fire! [28944], Honor the Flame [28945], Candy Bucket [28977], Candy Bucket [28978], Candy Bucket [28979], Candy Bucket [28980], Darkfeather the Elder [29736], Firebeard the Elder [29737], The Crucible of Carnage: The Bloodeye Bruiser! [31206]
+repeatable (6):
+  Keeping the Dragonmaw at Bay [28860], Fight Like a Wildhammer [28861], Never Leave a Dinner Behind [28862], Warlord Halthar is Back [28863], Beer Run [28864], Goz Banefury [31974]
+cannot be taken together with Signal the Attack [27498], which is in the guide (1):
+  Signal the Attack [27588]
+cannot be taken together with Four Heads are Better than None [27500], which is in the guide (1):
+  Four Heads are Better than None [27608]
+cannot be taken together with Just You and Mathias [27636], which is in the guide (1):
+  Just You and Mathias [27637]
+cannot be taken together with Donnelly Dunwald [27643], which is in the guide (1):
+  Cayden Dunwald [27645]
+handed in here, but the database does not say where it starts (1):
+  A Hidden Message [29802]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Twilight Highlands - Alliance - part 2 of 2, planned from level 87
+Guide "84-85 Twilight Highlands" in group "Zone Routes (Alliance)": this part has 169 steps, 162 stops
+Written to guides/mop/Twilight Highlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 87. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 164 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 169 tasks, 26,362 yd on foot; ends at level 87.2; 2 hearths
+  Rogue (quests that depend on other zones): 2 more tasks; their whole route comes to 26,367 yd; ends at level 87.2; 2 hearths
+Hearthstone: set at Nicole Gillet (Nicole Gillet's inn); 2 hearth steps in the guide.
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+3 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (54)
+------------------------
+Start to finish here: 53 (24 for everyone, 29 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  To Ravenholdt [29934, level 85, Rogue] - needs one of A Hidden Message [29802] -> Hillsbrad Foothills
+
+Worth checking in game
+----------------------
+  Skullcrusher the Mountain [27787, level 85, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: ""Skullcrusher the Mountain" Kill Credit (1)" has no place in the data; taken to be done where the quest is given
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

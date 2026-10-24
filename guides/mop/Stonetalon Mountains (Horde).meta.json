@@ -1,0 +1,111 @@
+{
+  "zone": "Stonetalon Mountains",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "26-30 Stonetalon Mountains",
+  "file": "Stonetalon Mountains (Horde).lua",
+  "continent": -406,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 26,
+      "end": 26.18,
+      "next": 29,
+      "guide": "26-27 Stonetalon Mountains",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "26-27 Stonetalon Mountains",
+          "level": 26,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 29,
+      "end": 29,
+      "next": 32,
+      "guide": "29-30 Stonetalon Mountains",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "29-30 Stonetalon Mountains",
+          "level": 29,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 32,
+      "end": 32,
+      "guide": "32-33 Stonetalon Mountains",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "32-33 Stonetalon Mountains",
+          "level": 32,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 6362,
+      "level": 7,
+      "req": 5,
+      "xp": 315,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren",
+      "from": "Mulgore"
+    },
+    {
+      "id": 24550,
+      "level": 10,
+      "req": 3,
+      "xp": 420,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren",
+      "from": "Mulgore"
+    },
+    {
+      "id": 25945,
+      "level": 26,
+      "req": 24,
+      "xp": 530,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Ashenvale"
+    },
+    {
+      "id": 26063,
+      "level": 27,
+      "req": 25,
+      "xp": 3300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Silverpine Forest": 1,
+    "Mulgore": 1,
+    "Durotar": 13,
+    "Moonglade": 1,
+    "The Barrens": 2,
+    "Azshara": 1,
+    "Ashenvale": 1,
+    "Southern Barrens": 2,
+    "Desolace": 3
+  }
+}

@@ -8,15 +8,16 @@ public static class Program
     const string Help = """
         RouteBuilder - builds RestedXP (RXPGuides) zone routes from QuestieDB's data.
 
-        Every command takes --game forever|classic (default: forever). Each game has its own data export and its
+        Every command takes --game forever|classic|tbc|mop (default: forever). Each game has its own data export and its
         own zone files, locks and guides: zones/, locks/ and guides/ for Forever, zones/classic/ and so on for the others.
 
           RouteBuilder update [--game <game>] [--data <folder>] [--lua <path>] [--no-download]
               Fetches QuestieDB into <folder> (default: QuestieDB) and runs the export for the game. Do this first,
               and again whenever you want fresher data.
 
-          RouteBuilder zones [--game <game>] [--faction Horde|Alliance] [--data <folder>] [--list]
-              Lists the zones with their quest counts and level ranges (--list: only the names "build --zone all" takes).
+          RouteBuilder zones [--game <game>] [--faction Horde|Alliance] [--data <folder>] [--list | --show "<zone>"]
+              Lists the zones with their quest counts and level ranges (--list: only the names "build --zone all" takes;
+              --show "<zone>": the quests counted for that zone, with their levels).
 
           RouteBuilder build --zone "<name>" [--faction Horde|Alliance] [--race <race> --class <class>]
               Writes one guide for the zone, plus a report next to it.
@@ -70,7 +71,7 @@ public static class Program
                     var d = GameData.Load(data);
                     Console.WriteLine($"Ready: {d.Quests.Count:N0} quests, {d.Npcs.Count:N0} NPCs, {d.Objects.Count:N0} objects, {d.Items.Count:N0} items ({d.Version}).");
                     return 0;
-                case "zones": return Zones(GameData.Load(data), Faction(opt), opt.ContainsKey("list"));
+                case "zones": return opt.TryGetValue("show", out var show) ? ShowZone(GameData.Load(data), Faction(opt), show) : Zones(GameData.Load(data), Faction(opt), opt.ContainsKey("list"));
                 case "build": return Build(data, opt);
                 case "link": return Linker.Run(opt.GetValueOrDefault("out", Games.Current.Folder("guides")));
                 default: Console.Error.WriteLine($"Unknown command '{argv[0]}'.\n"); Console.WriteLine(Help); return 2;
@@ -87,11 +88,17 @@ public static class Program
         throw new InvalidOperationException("--faction must be Horde or Alliance");
     }
 
+    static IEnumerable<QuestRow> ZoneQuests(GameData d, string faction, int area)
+    {
+        long mask = Game.Races(faction).Aggregate(0L, (m, r) => m | r.Bit);
+        return d.Quests.Values.Where(q => q.ZoneOrSort > 0 && !q.Repeatable && !q.Hidden && (q.Races == 0 || (q.Races & mask) != 0) && d.Parent(q.ZoneOrSort) == area);
+    }
+
     static List<(AreaInfo area, int count, int lo, int hi)> ZoneList(GameData d, string faction)
     {
         long mask = Game.Races(faction).Aggregate(0L, (m, r) => m | r.Bit);
         var rows = new List<(AreaInfo, int, int, int)>();
-        foreach (var grp in d.Quests.Values.Where(q => q.ZoneOrSort > 0 && !q.Repeatable && (q.Races == 0 || (q.Races & mask) != 0)).GroupBy(q => d.Parent(q.ZoneOrSort)))
+        foreach (var grp in d.Quests.Values.Where(q => q.ZoneOrSort > 0 && !q.Repeatable && !q.Hidden && (q.Races == 0 || (q.Races & mask) != 0)).GroupBy(q => d.Parent(q.ZoneOrSort)))
         {
             if (d.Instances.Contains(grp.Key) || !d.Areas.TryGetValue(grp.Key, out var a)) continue;
             var lv = grp.Select(q => q.Level).OrderBy(l => l).ToList();
@@ -105,7 +112,9 @@ public static class Program
         if (list)
         {
             // just the names of the zones "build --zone all" builds, one per line (for scripts)
-            foreach (var (a, count, _, _) in ZoneList(d, faction)) if (count >= 5 && ZoneModel.CityParent(a.Id) == null) Console.WriteLine(a.Name);
+            // a zone only the factionless race quests in (the Wandering Isle) is built once, with the Horde builds
+            foreach (var (a, count, _, _) in ZoneList(d, faction))
+                if (count >= 5 && ZoneModel.CityParent(a.Id) == null && !a.Name.Contains("(Dungeon/Raid)") && !(faction == "Alliance" && Game.NeutralOnly(ZoneQuests(d, faction, a.Id)))) Console.WriteLine(a.Name);
             return 0;
         }
         Console.WriteLine($"Zones with {faction} quests ({d.Version}):\n");
@@ -122,6 +131,20 @@ public static class Program
         Console.WriteLine("\nLevels: the range most of the zone's quests fall in.");
         Console.WriteLine($"Build to: the highest quest level a build of the zone takes in (Levels plus {Tuning.ZoneLevelSlack}; * = set by maxLevel in its zone file).");
         Console.WriteLine("--max-level overrides it for one build.");
+        return 0;
+    }
+
+    // the quests the zone list counts for one zone, lowest level first, so an odd level range can be traced to its quests
+    static int ShowZone(GameData d, string faction, string zone)
+    {
+        var a = d.Areas.Values.FirstOrDefault(x => x.Name.Equals(zone, StringComparison.OrdinalIgnoreCase))
+            ?? throw new InvalidOperationException($"No zone named '{zone}'. Run 'RouteBuilder zones' for the list.");
+        long mask = Game.Races(faction).Aggregate(0L, (m, r) => m | r.Bit);
+        Console.WriteLine($"{faction} quests counted for {a.Name}:\n");
+        Console.WriteLine($"  {"Level",5} {"Req",4} {"ID",7}  Name");
+        foreach (var q in d.Quests.Values.Where(q => q.ZoneOrSort > 0 && !q.Repeatable && !q.Hidden && (q.Races == 0 || (q.Races & mask) != 0) && d.Parent(q.ZoneOrSort) == a.Id)
+                     .OrderBy(q => q.Level).ThenBy(q => q.Id))
+            Console.WriteLine($"  {q.Level,5} {q.ReqLevel,4} {q.Id,7}  {q.Name}{(q.ZoneOrSort != a.Id ? "  (" + d.AreaName(q.ZoneOrSort) + ")" : "")}");
         return 0;
     }
 
@@ -185,11 +208,29 @@ public static class Program
         {
             var model = new ZoneModel(data, area, cfg, bo, visit);
             int firm = model.Tasks.Count(t => !t.Cond && t.Q != null);
+            if (debug) Console.WriteLine($"  [debug] visit {visit.Number}: {model.Quests.Count} quests, {model.Tasks.Count(t => t.Q != null)} tasks, {firm} firm, start {model.StartLevel}, later {model.Later.Count}, maps {string.Join(", ", model.Areas.Select(a => a.Name))}");
+            // a zone that follows another one's story (the Lost Isles after Kezan) has only steps that wait for that
+            // zone's last quest or two: everyone arriving has done those, so they are taken as done and the zone planned
+            if (visit.Number == 1 && firm < 3 && model.Tasks.Count(t => t.Q != null) >= 10 && visit.Done.Count == 0)
+            {
+                var outside = model.Quests.Values.Where(q => q.Conditional).SelectMany(q => q.NeedAll.Concat(q.NeedAny)).Where(p => !model.Quests.ContainsKey(p))
+                    .Where(p => data.Quests.TryGetValue(p, out var r) && r.ZoneOrSort > 0 && data.Parent(r.ZoneOrSort) != area.Id).Distinct().ToList();
+                if (outside.Count is > 0 and <= 2)
+                {
+                    // and you arrive at the level that story leaves you at
+                    double lvl = outside.Max(p => data.Quests[p].Level);
+                    if (bo.StartLevel == null && lvl > (visit.StartLevel ?? 0)) visit.StartLevel = lvl;
+                    Console.WriteLine($"  the zone follows on from {string.Join(" and ", outside.Select(p => data.Quests.TryGetValue(p, out var r) ? $"{r.Name} [{p}]" : p.ToString()))}: planned as if that is done");
+                    visit.Done.UnionWith(outside); continue;
+                }
+            }
             if (visit.Number == 1 && firm < 3)
             {
                 // the zone's lowest quest is an outlier: nothing much can be done at that level, so arrive a level later
                 if (model.Later.Count == 0 || bumps++ >= 15 || bo.StartLevel != null) throw new InvalidOperationException("fewer than three steps to plan here for this faction");
-                visit.StartLevel = Math.Floor(model.StartLevel) + 1;
+                // (straight to where most of its quests begin, if that is higher: one low quest in a level 58 zone
+                // would otherwise take dozens of tries)
+                visit.StartLevel = Math.Max(Math.Floor(model.StartLevel) + 1, model.OwnLo);
                 continue;
             }
             if (firm == 0)

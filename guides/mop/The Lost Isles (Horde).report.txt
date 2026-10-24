@@ -1,0 +1,128 @@
+The Lost Isles - Horde - part 1 of 2, planned from level 6
+Guide "6-11 The Lost Isles" in group "Zone Routes (Horde)": this part has 122 steps, 99 stops
+Written to guides/mop/The Lost Isles (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Goblin Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 6. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 143 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed, 62 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 6, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 1 tasks, 535 yd on foot; ends at level 6.0
+  Goblin: 144 more tasks; their whole route comes to 27,470 yd; ends at level 11.2; 1 hearth
+Hearthstone: set at Chawg (Chawg's inn); 1 hearth step in the guide.
+9 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+6 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (51)
+------------------------
+Start to finish here: 51 (0 for everyone, 51 Goblin)
+
+Worth checking in game
+----------------------
+  Weed Whacker [14236, level 6, Goblin]: objective "Poison Spitter (100)" is line 1 by the database, but RestedXP's guide has "100/100 Deadly Jungle Plants mowed down" there
+  Precious Cargo [14242, level 7, Goblin]: objective "Thrall" is line 1 by the database, but RestedXP's guide has "1/1 Precious Cargo located" there
+  A Goblin in Shark's Clothing [24817, level 8, Goblin]: objective "The Hammer slain (1)" moved from line 1 to line 2 to match RestedXP's guide
+  A Goblin in Shark's Clothing [24817, level 8, Goblin]: objective "Mechashark X-Steam Controller" moved from line 2 to line 1 to match RestedXP's guide
+  Surrender or Else! [24868, level 8, Goblin]: objective "Faceless of the Deep slain (1)" is line 1 by the database, but RestedXP's guide has "1/1 Leader of the naga dealt with" there
+
+Put off to a later part (21)
+----------------------------
+These need a higher level than this part ends at:
+  The Pride of Kezan [25066, level 9]: its mobs are level 15; this part gets Goblin characters to about 12.2
+  The Warchief Wants You [25098, level 9]: follows The Pride of Kezan [25066]
+  Borrow Bastia [25099, level 9]: follows The Warchief Wants You [25098]
+  Let's Ride [25100, level 9]: follows Borrow Bastia [25099]
+  The Gallywix Labor Mine [25109, level 9]: follows Let's Ride [25100]
+  Kaja'Cola Gives You IDEAS! (TM) [25110, level 9]: follows The Gallywix Labor Mine [25109]
+  Morale Boost [25122, level 9]: follows Kaja'Cola Gives You IDEAS! (TM) [25110]
+  Throw It On the Ground! [25123, level 10]: follows Kaja'Cola Gives You IDEAS! (TM) [25110]
+  Light at the End of the Tunnel [25125, level 9]: follows Morale Boost [25122]
+  Wild Mine Cart Ride [25184, level 9]: follows Light at the End of the Tunnel [25125]
+  Shredder Shutdown [25200, level 10]: follows Wild Mine Cart Ride [25184]
+  The Ultimate Footbomb Uniform [25201, level 10]: follows Wild Mine Cart Ride [25184]
+  The Fastest Way to His Heart [25202, level 11]: follows Shredder Shutdown [25200]
+  Release the Valves [25204, level 10]: follows Shredder Shutdown [25200]
+  Good-bye, Sweet Oil [25207, level 10]: follows Release the Valves [25204]
+  The Slave Pits [25213, level 10]: follows Good-bye, Sweet Oil [25207]
+  Escape Velocity [25214, level 10]: follows The Slave Pits [25213]
+  She Loves Me, She Loves Me NOT! [25243, level 11]: follows The Slave Pits [25213]
+  Final Confrontation [25251, level 10]: follows Escape Velocity [25214]
+  Victory! [25265, level 11]: follows Final Confrontation [25251]
+  Warchief's Emissary [25266, level 11]: follows Victory! [25265]
+
+Left out (10)
+-------------
+not in the game (on Questie's quest blacklist) (8):
+  Goblin Escape Pods [14474], Profitable Preservation [24860], Body And Soul [24935], Body And Soul [24936], Brute Brutality [25124], Oil Change [25225], Southseas Scum [25231], It's Hot and it Might Explode [25903]
+cannot be taken together with The Fastest Way to His Heart [25202], which is in the guide (1):
+  What Kind of Name is Chip, Anyway? [25203]
+cannot be taken together with She Loves Me, She Loves Me NOT! [25243], which is in the guide (1):
+  What Kind of Name is Candy, Anyway? [25244]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Lost Isles - Horde - part 2 of 2, planned from level 13
+Guide "6-11 The Lost Isles" in group "Zone Routes (Horde)": this part has 65 steps, 63 stops
+Written to guides/mop/The Lost Isles (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Goblin Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 13. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 61 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 18 yd on foot; ends at level 13.0
+  Goblin: 48 more tasks; their whole route comes to 4,482 yd; ends at level 13.8; at its hardest you are 2.0 levels below the mobs
+  Goblin (quests that depend on other zones): 15 more tasks; their whole route comes to 5,841 yd; ends at level 13.8; at its hardest you are 2.0 levels below the mobs
+Hearthstone: set at Sally "Salvager" Sandscrew (Sally "Salvager" Sandscrew's inn); 0 hearth steps in the guide.
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (21)
+------------------------
+Start to finish here: 15 (0 for everyone, 15 Goblin)
+
+Need a quest this guide does not hand in - steps show only once that is done (6):
+  The Slave Pits [25213, level 10, Goblin] - needs What Kind of Name is Chip, Anyway? [25203]
+  Escape Velocity [25214, level 10, Goblin] - needs one of The Slave Pits [25213]
+  Final Confrontation [25251, level 10, Goblin] - needs Escape Velocity [25214], She Loves Me, She Loves Me NOT! [25243]
+  She Loves Me, She Loves Me NOT! [25243, level 11, Goblin] - needs one of The Slave Pits [25213]
+  Victory! [25265, level 11, Goblin] - needs one of Final Confrontation [25251]
+  Warchief's Emissary [25266, level 11, Goblin] - needs one of Victory! [25265] -> Durotar
+
+Worth checking in game
+----------------------
+  Morale Boost [25122, level 9, Goblin]: mixes a kill-credit objective with others; check that "Kezan Citizen" really is line 4 in the quest log
+  Morale Boost [25122, level 9, Goblin]: objective "Kezan Citizen (6)" is line 4 by the database, but RestedXP's guide has "6/6 Other goblin's minds freed" there
+  Good-bye, Sweet Oil [25207, level 10, Goblin]: objective "Big Red Button" is line 1 by the database, but RestedXP's guide has "1/1 KTC Oil Platform destroyed" there
+  Escape Velocity [25214, level 10, Goblin]: objective "Captured Goblin slain (8)" is line 1 by the database, but RestedXP's guide has "8/8 Cages launched" there
+  She Loves Me, She Loves Me NOT! [25243, level 11, Goblin]: objective "Fickle Heart (1)" is line 1 by the database, but RestedXP's guide has "1/1 Candy Cane slain" there
+  Final Confrontation [25251, level 10, Goblin]: Trade Prince Gallywix is level 85, far above this level 10 quest, so the objective is taken to be "talk to" rather than "kill"
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

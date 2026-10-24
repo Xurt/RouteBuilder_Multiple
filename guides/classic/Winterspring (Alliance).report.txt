@@ -51,7 +51,7 @@ Need a quest this guide does not hand in - steps show only once that is done (2)
 Worth checking in game
 ----------------------
 
-Put off to a later part (31)
+Put off to a later part (30)
 ----------------------------
 These need a higher level than this part ends at:
   Luck Be With You [969, level 60]: its mobs are level 59; this part gets you to about 52.4
@@ -82,11 +82,10 @@ These need a higher level than this part ends at:
   The Crystal of Zin-Malor [5253, level 58]: needs level 53; this part gets you to about 52.4
   Trouble in Winterspring! [6603, level 56]: needs level 52; this part gets you to about 52.0
   Enraged Wildkin [6604, level 59]: needs level 53; this part gets you to about 52.4
-  A Little Luck [6606, level 60]: needs level 55; this part gets you to about 52.4
   Winterfall Activity [8464, level 58]: its mobs are level 57; this part gets you to about 52.4
   Winterfall Ritual Totem [8471, level 56]: follows Threat of the Winterfall [5082]
 
-Left out (29)
+Left out (30)
 -------------
 repeatable (15):
   Frostsaber E'ko [4801], Winterfall E'ko [4802], Shardtooth E'ko [4803], Chillwind E'ko [4804], Ice Thistle E'ko [4805], Frostmaul E'ko [4806], Wildkin E'ko [4807], Frostsaber Provisions [4970], Cap of the Scarlet Savant [5063], Leggings of Arcana [5067], Breastplate of Bloodthirst [5068], Winterfall Intrusion [5201], Rampaging Giants [5981], Beads for Salfa [8469], Making Amends [9266]
@@ -94,8 +93,8 @@ needs a profession (8):
   Hot Fiery Death [5103], Fiery Plate Gauntlets [5124], Lorax's Tale [5126], The Demon Forge [5127], Sweet Serenity [5305], Snakestone of the Shadow Huntress [5306], Corruption [5307], A Yeti of Your Own [8798]
 dungeon quest (4):
   Tinkee Steamboil [4907], Pip Quickwit, At Your Service! [5047], The Matron Protectorate [5160], Drakefire Amulet [6502]
-special category (sort -366) (2):
-  Stonespire the Elder [8672], Brightspear the Elder [8726]
+not in the game (on Questie's quest blacklist) (3):
+  A Little Luck [6606], Stonespire the Elder [8672], Brightspear the Elder [8726]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
 
@@ -103,7 +102,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Winterspring - Alliance - part 2 of 3, planned from level 55
-Guide "52-60 Winterspring" in group "Zone Routes (Alliance)": this part has 59 steps, 46 stops
+Guide "52-60 Winterspring" in group "Zone Routes (Alliance)": this part has 55 steps, 44 stops
 Written to guides/classic/Winterspring (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -113,23 +112,21 @@ Checks
 ------
 Played through as 20 race/class combinations: no problems found.
 Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
-7 pickups or hand-ins are within reach of a stop but planned for later.
-4 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+4 pickups or hand-ins are within reach of a stop but planned for later.
+7 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
 
 Route
 -----
 Planned from level 55. Distances are straight lines, so real running is longer; levels are an estimate.
-Step order kept from the last build (locks folder): 40 steps kept, 12 new ones slotted in, 3 moved because their prerequisites changed. Build with --fresh to plan from scratch.
-  everyone: 37 tasks, 23,378 yd on foot; ends at level 55.3; 2 hearths; at its hardest you are 1.8 levels below the mobs
-  everyone (quests that depend on other zones): 18 more tasks; their whole route comes to 31,560 yd; ends at level 55.3; 2 hearths; at its hardest you are 2.9 levels below the mobs
+Step order kept from the last build (locks folder): 40 steps kept, 10 new ones slotted in, 3 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 35 tasks, 24,746 yd on foot; ends at level 55.3; 1 hearth; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 18 more tasks; their whole route comes to 32,735 yd; ends at level 55.3; 2 hearths; at its hardest you are 2.9 levels below the mobs
 Hearthstone: set at Innkeeper Vizzie (Innkeeper Vizzie's inn); 2 hearth steps in the guide.
-These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
-The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
-  level 55 for A Little Luck
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
-Quests in the guide (24)
+Quests in the guide (23)
 ------------------------
-Start to finish here: 11 (11 for everyone)
+Start to finish here: 10 (10 for everyone)
 
 Picked up here, handed in elsewhere - these stay in the log (2):
   Troubled Spirits of Kel'Theril [5245, level 56] -> Eastern Plaguelands

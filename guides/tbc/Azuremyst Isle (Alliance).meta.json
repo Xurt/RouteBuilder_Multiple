@@ -1,0 +1,820 @@
+{
+  "zone": "Azuremyst Isle",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "1-12 Azuremyst Isle",
+  "file": "Azuremyst Isle (Alliance).lua",
+  "continent": -3524,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 1,
+      "end": 9.4,
+      "next": 12,
+      "guide": "5-10 Azuremyst Isle: around Daedal",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Proenitus",
+          "guide": "1-5 Azuremyst Isle: around Proenitus",
+          "level": 1,
+          "index": 0
+        },
+        {
+          "label": "RBSection1_2",
+          "name": "around Daedal",
+          "guide": "5-10 Azuremyst Isle: around Daedal",
+          "level": 5,
+          "index": 1
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 12,
+      "end": 12.21,
+      "next": 15,
+      "guide": "12-13 Azuremyst Isle: around Ruada",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Ruada",
+          "guide": "12-13 Azuremyst Isle: around Ruada",
+          "level": 12,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 15,
+      "end": 15,
+      "guide": "15-16 Azuremyst Isle",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "15-16 Azuremyst Isle",
+          "level": 15,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 9279,
+      "level": 1,
+      "req": 1,
+      "xp": 60,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei"
+    },
+    {
+      "id": 9280,
+      "level": 1,
+      "req": 1,
+      "xp": 100,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei"
+    },
+    {
+      "id": 9283,
+      "level": 2,
+      "req": 1,
+      "xp": 215,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei"
+    },
+    {
+      "id": 9287,
+      "level": 2,
+      "req": 2,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei Paladin"
+    },
+    {
+      "id": 9288,
+      "level": 2,
+      "req": 2,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei Hunter"
+    },
+    {
+      "id": 9289,
+      "level": 2,
+      "req": 2,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei Warrior"
+    },
+    {
+      "id": 9290,
+      "level": 2,
+      "req": 1,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei Mage"
+    },
+    {
+      "id": 9291,
+      "level": 2,
+      "req": 1,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei Priest"
+    },
+    {
+      "id": 9293,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9294,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9303,
+      "level": 4,
+      "req": 2,
+      "xp": 445,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9305,
+      "level": 4,
+      "req": 2,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9309,
+      "level": 5,
+      "req": 3,
+      "xp": 110,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9311,
+      "level": 5,
+      "req": 2,
+      "xp": 670,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9312,
+      "level": 5,
+      "req": 2,
+      "xp": 110,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9313,
+      "level": 5,
+      "req": 4,
+      "xp": 560,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9314,
+      "level": 5,
+      "req": 1,
+      "xp": 110,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9369,
+      "level": 1,
+      "req": 1,
+      "xp": 100,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome"
+    },
+    {
+      "id": 9371,
+      "level": 2,
+      "req": 1,
+      "xp": 45,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9409,
+      "level": 2,
+      "req": 1,
+      "xp": 45,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9421,
+      "level": 2,
+      "req": 2,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": "Shaman"
+    },
+    {
+      "id": 9449,
+      "level": 4,
+      "req": 4,
+      "xp": 53,
+      "part": 1,
+      "section": 0,
+      "tag": "Shaman"
+    },
+    {
+      "id": 9450,
+      "level": 4,
+      "req": 4,
+      "xp": 177,
+      "part": 1,
+      "section": 0,
+      "tag": "Shaman"
+    },
+    {
+      "id": 9451,
+      "level": 4,
+      "req": 4,
+      "xp": 53,
+      "part": 1,
+      "section": 0,
+      "tag": "Shaman"
+    },
+    {
+      "id": 9452,
+      "level": 6,
+      "req": 4,
+      "xp": 540,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9453,
+      "level": 6,
+      "req": 4,
+      "xp": 55,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9454,
+      "level": 6,
+      "req": 4,
+      "xp": 405,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9463,
+      "level": 6,
+      "req": 4,
+      "xp": 540,
+      "part": 1,
+      "section": 1,
+      "tag": "Draenei"
+    },
+    {
+      "id": 9473,
+      "level": 8,
+      "req": 5,
+      "xp": 700,
+      "part": 1,
+      "section": 1,
+      "tag": "Draenei"
+    },
+    {
+      "id": 9505,
+      "level": 8,
+      "req": 5,
+      "xp": 530,
+      "part": 1,
+      "section": 1,
+      "tag": "Draenei"
+    },
+    {
+      "id": 9506,
+      "level": 7,
+      "req": 5,
+      "xp": 630,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9512,
+      "level": 7,
+      "req": 5,
+      "xp": 475,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9513,
+      "level": 8,
+      "req": 6,
+      "xp": 700,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9523,
+      "level": 8,
+      "req": 6,
+      "xp": 700,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9527,
+      "level": 10,
+      "req": 6,
+      "xp": 840,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9528,
+      "level": 10,
+      "req": 6,
+      "xp": 840,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9530,
+      "level": 9,
+      "req": 6,
+      "xp": 195,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9531,
+      "level": 9,
+      "req": 5,
+      "xp": 590,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9537,
+      "level": 9,
+      "req": 5,
+      "xp": 780,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9538,
+      "level": 8,
+      "req": 8,
+      "xp": 70,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9539,
+      "level": 10,
+      "req": 8,
+      "xp": 85,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9540,
+      "level": 10,
+      "req": 8,
+      "xp": 85,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9541,
+      "level": 10,
+      "req": 8,
+      "xp": 85,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9542,
+      "level": 10,
+      "req": 8,
+      "xp": 85,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9544,
+      "level": 10,
+      "req": 8,
+      "xp": 1250,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9559,
+      "level": 10,
+      "req": 8,
+      "xp": 210,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9560,
+      "level": 10,
+      "req": 7,
+      "xp": 840,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9562,
+      "level": 10,
+      "req": 7,
+      "xp": 840,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9564,
+      "level": 11,
+      "req": 7,
+      "xp": 880,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9565,
+      "level": 10,
+      "req": 9,
+      "xp": 630,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9566,
+      "level": 10,
+      "req": 9,
+      "xp": 630,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9573,
+      "level": 11,
+      "req": 7,
+      "xp": 880,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9586,
+      "level": 5,
+      "req": 5,
+      "xp": 450,
+      "part": 1,
+      "section": 1,
+      "tag": "Priest"
+    },
+    {
+      "id": 9602,
+      "level": 9,
+      "req": 5,
+      "xp": 195,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9604,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 1,
+      "section": 1,
+      "tag": "Draenei",
+      "from": "Bloodmyst Isle"
+    },
+    {
+      "id": 9612,
+      "level": 8,
+      "req": 8,
+      "xp": 530,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei"
+    },
+    {
+      "id": 9798,
+      "level": 5,
+      "req": 2,
+      "xp": 450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9799,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10302,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10303,
+      "level": 4,
+      "req": 3,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10304,
+      "level": 4,
+      "req": 3,
+      "xp": 180,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10324,
+      "level": 8,
+      "req": 4,
+      "xp": 530,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 10428,
+      "level": 10,
+      "req": 8,
+      "xp": 420,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9461,
+      "level": 10,
+      "req": 10,
+      "xp": 126,
+      "part": 2,
+      "section": 0,
+      "tag": "Draenei Shaman"
+    },
+    {
+      "id": 9462,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 2,
+      "section": 0,
+      "tag": "Draenei Shaman"
+    },
+    {
+      "id": 9464,
+      "level": 10,
+      "req": 10,
+      "xp": 126,
+      "part": 2,
+      "section": 0,
+      "tag": "Draenei Shaman"
+    },
+    {
+      "id": 9465,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 2,
+      "section": 0,
+      "tag": "Draenei Shaman"
+    },
+    {
+      "id": 9467,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 2,
+      "section": 0,
+      "tag": "Draenei Shaman"
+    },
+    {
+      "id": 9468,
+      "level": 10,
+      "req": 10,
+      "xp": 126,
+      "part": 2,
+      "section": 0,
+      "tag": "Draenei Shaman"
+    },
+    {
+      "id": 9555,
+      "level": 10,
+      "req": 10,
+      "xp": 126,
+      "part": 2,
+      "section": 0,
+      "tag": "Draenei Shaman"
+    },
+    {
+      "id": 9570,
+      "level": 12,
+      "req": 7,
+      "xp": 1150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9571,
+      "level": 10,
+      "req": 7,
+      "xp": 85,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9582,
+      "level": 10,
+      "req": 10,
+      "xp": 840,
+      "part": 2,
+      "section": 0,
+      "tag": "Warrior"
+    },
+    {
+      "id": 9591,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 2,
+      "section": 0,
+      "tag": "Draenei Hunter"
+    },
+    {
+      "id": 9592,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 2,
+      "section": 0,
+      "tag": "Draenei Hunter"
+    },
+    {
+      "id": 9593,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 2,
+      "section": 0,
+      "tag": "Draenei Hunter"
+    },
+    {
+      "id": 9595,
+      "level": 11,
+      "req": 10,
+      "xp": 880,
+      "part": 2,
+      "section": 0,
+      "tag": "Mage"
+    },
+    {
+      "id": 9622,
+      "level": 11,
+      "req": 10,
+      "xp": 660,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9623,
+      "level": 11,
+      "req": 10,
+      "xp": 90,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9675,
+      "level": 10,
+      "req": 10,
+      "xp": 126,
+      "part": 2,
+      "section": 0,
+      "tag": "Draenei Hunter"
+    },
+    {
+      "id": 9757,
+      "level": 10,
+      "req": 10,
+      "xp": 126,
+      "part": 2,
+      "section": 0,
+      "tag": "Draenei Hunter"
+    },
+    {
+      "id": 10350,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 2,
+      "section": 0,
+      "tag": "Warrior"
+    },
+    {
+      "id": 10366,
+      "level": 12,
+      "req": 12,
+      "xp": 136,
+      "part": 3,
+      "section": 0,
+      "tag": "Human Paladin/Dwarf Paladin/Draenei Paladin"
+    }
+  ],
+  "carriedTo": {
+    "Teldrassil": 1,
+    "Bloodmyst Isle": 2
+  }
+}

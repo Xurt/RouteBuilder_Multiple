@@ -1,0 +1,248 @@
+{
+  "zone": "Desolace",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "31-40 Desolace",
+  "file": "Desolace (Alliance).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 31,
+      "end": 31.75,
+      "next": 34,
+      "guide": "31-32 Desolace: around Kreldig Ungor",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Kreldig Ungor",
+          "guide": "31-32 Desolace: around Kreldig Ungor",
+          "level": 31,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 34,
+      "end": 34.25,
+      "next": 37,
+      "guide": "34-35 Desolace",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "34-35 Desolace",
+          "level": 34,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 37,
+      "end": 37.45,
+      "guide": "37-38 Desolace",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "37-38 Desolace",
+          "level": 37,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 1382,
+      "level": 35,
+      "req": 30,
+      "xp": 2450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1385,
+      "level": 35,
+      "req": 30,
+      "xp": 2450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1387,
+      "level": 31,
+      "req": 30,
+      "xp": 3800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1437,
+      "level": 33,
+      "req": 30,
+      "xp": 2150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1438,
+      "level": 33,
+      "req": 30,
+      "xp": 2900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1453,
+      "level": 33,
+      "req": 30,
+      "xp": 1450,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 1465,
+      "level": 33,
+      "req": 30,
+      "xp": 2150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5741,
+      "level": 33,
+      "req": 30,
+      "xp": 2900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6141,
+      "level": 39,
+      "req": 34,
+      "xp": 410,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 6161,
+      "level": 36,
+      "req": 30,
+      "xp": 2600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1439,
+      "level": 33,
+      "req": 30,
+      "xp": 2900,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1440,
+      "level": 33,
+      "req": 30,
+      "xp": 3600,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5561,
+      "level": 34,
+      "req": 30,
+      "xp": 2300,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5821,
+      "level": 35,
+      "req": 30,
+      "xp": 3300,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 261,
+      "level": 39,
+      "req": 34,
+      "xp": 4140,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5501,
+      "level": 39,
+      "req": 33,
+      "xp": 3100,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5943,
+      "level": 38,
+      "req": 32,
+      "xp": 3920,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6027,
+      "level": 38,
+      "req": 30,
+      "xp": 4900,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6132,
+      "level": 39,
+      "req": 36,
+      "xp": 3100,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6134,
+      "level": 39,
+      "req": 34,
+      "xp": 3100,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Arathi Highlands": 1,
+    "Dun Morogh": 2,
+    "Hillsbrad Foothills": 1
+  }
+}

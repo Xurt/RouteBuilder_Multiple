@@ -1,0 +1,162 @@
+{
+  "zone": "Mount Hyjal",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "81-81 Mount Hyjal",
+  "file": "Mount Hyjal (Alliance).lua",
+  "continent": -616,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 81,
+      "end": 81.12,
+      "guide": "81-81 Mount Hyjal",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Jordan Olafson",
+          "guide": "81-81 Mount Hyjal",
+          "level": 81,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 13073,
+      "level": 80,
+      "req": 77,
+      "xp": 16550,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Icecrown"
+    },
+    {
+      "id": 25316,
+      "level": 81,
+      "req": 80,
+      "xp": 20800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 25328,
+      "level": 81,
+      "req": 80,
+      "xp": 27700,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 25332,
+      "level": 81,
+      "req": 80,
+      "xp": 27700,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 25575,
+      "level": 81,
+      "req": 80,
+      "xp": 27700,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 25576,
+      "level": 81,
+      "req": 80,
+      "xp": 27700,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 25577,
+      "level": 81,
+      "req": 80,
+      "xp": 27700,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 25599,
+      "level": 81,
+      "req": 80,
+      "xp": 27700,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 25600,
+      "level": 81,
+      "req": 80,
+      "xp": 34650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 25611,
+      "level": 81,
+      "req": 80,
+      "xp": 2770,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 25630,
+      "level": 81,
+      "req": 80,
+      "xp": 2770,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27273,
+      "level": 20,
+      "req": 20,
+      "xp": 155,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Druid/Worgen Druid",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 27726,
+      "level": 80,
+      "req": 80,
+      "xp": 2200,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 28289,
+      "level": 50,
+      "req": 50,
+      "xp": 680,
+      "part": 1,
+      "section": 0,
+      "tag": "Druid",
+      "from": "Mulgore"
+    }
+  ],
+  "carriedTo": {
+    "Icecrown": 1
+  }
+}

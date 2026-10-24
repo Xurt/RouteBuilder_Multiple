@@ -1,0 +1,418 @@
+{
+  "zone": "Zul\u0027Drak",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "74-78 Zul\u0027Drak",
+  "file": "Zul\u0027Drak (Horde).lua",
+  "continent": -66,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 74,
+      "end": 74.71,
+      "next": 77,
+      "guide": "74-75 Zul\u0027Drak: around Crusader Lord Lantinga",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Crusader Lord Lantinga",
+          "guide": "74-75 Zul\u0027Drak: around Crusader Lord Lantinga",
+          "level": 74,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 77,
+      "end": 77.23,
+      "next": 80,
+      "guide": "77-78 Zul\u0027Drak: around Gurgthock",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Gurgthock",
+          "guide": "77-78 Zul\u0027Drak: around Gurgthock",
+          "level": 77,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 80,
+      "end": 80.04,
+      "guide": "80-81 Zul\u0027Drak",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "80-81 Zul\u0027Drak",
+          "level": 80,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 12503,
+      "level": 76,
+      "req": 74,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12504,
+      "level": 76,
+      "req": 74,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12505,
+      "level": 76,
+      "req": 74,
+      "xp": 2100,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12506,
+      "level": 76,
+      "req": 74,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12508,
+      "level": 76,
+      "req": 74,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12512,
+      "level": 76,
+      "req": 74,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12565,
+      "level": 76,
+      "req": 74,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12596,
+      "level": 76,
+      "req": 74,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12609,
+      "level": 76,
+      "req": 74,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12610,
+      "level": 76,
+      "req": 74,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12630,
+      "level": 75,
+      "req": 74,
+      "xp": 20950,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12740,
+      "level": 76,
+      "req": 74,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12763,
+      "level": 75,
+      "req": 74,
+      "xp": 2100,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Grizzly Hills"
+    },
+    {
+      "id": 12789,
+      "level": 75,
+      "req": 74,
+      "xp": 2100,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dragonblight"
+    },
+    {
+      "id": 12792,
+      "level": 75,
+      "req": 74,
+      "xp": 2100,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12795,
+      "level": 75,
+      "req": 74,
+      "xp": 2100,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12799,
+      "level": 75,
+      "req": 74,
+      "xp": 20950,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12857,
+      "level": 75,
+      "req": 74,
+      "xp": 26200,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12859,
+      "level": 75,
+      "req": 74,
+      "xp": 20950,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12861,
+      "level": 75,
+      "req": 74,
+      "xp": 20950,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12883,
+      "level": 75,
+      "req": 74,
+      "xp": 20950,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12884,
+      "level": 75,
+      "req": 74,
+      "xp": 5250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12894,
+      "level": 75,
+      "req": 74,
+      "xp": 5250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12901,
+      "level": 76,
+      "req": 74,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12902,
+      "level": 75,
+      "req": 74,
+      "xp": 15700,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12904,
+      "level": 76,
+      "req": 74,
+      "xp": 26450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12912,
+      "level": 76,
+      "req": 74,
+      "xp": 2100,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12914,
+      "level": 76,
+      "req": 74,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12916,
+      "level": 76,
+      "req": 74,
+      "xp": 10600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12974,
+      "level": 77,
+      "req": 75,
+      "xp": 2150,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "The Underbelly - Sub zone of Dalaran (override wrong ID)"
+    },
+    {
+      "id": 13556,
+      "level": 77,
+      "req": 74,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12932,
+      "level": 77,
+      "req": 75,
+      "xp": 32100,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12933,
+      "level": 77,
+      "req": 75,
+      "xp": 32100,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12934,
+      "level": 77,
+      "req": 75,
+      "xp": 32100,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12935,
+      "level": 77,
+      "req": 75,
+      "xp": 32100,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12936,
+      "level": 77,
+      "req": 75,
+      "xp": 32100,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12948,
+      "level": 78,
+      "req": 75,
+      "xp": 32400,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12903,
+      "level": 76,
+      "req": 74,
+      "xp": 21150,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12919,
+      "level": 76,
+      "req": 74,
+      "xp": 31750,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Dalaran - (Dungeon/Raid)": 1
+  }
+}

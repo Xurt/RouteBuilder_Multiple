@@ -1,0 +1,75 @@
+Deepholm - Alliance
+Guide "82-83 Deepholm" in group "Zone Routes (Alliance)": 251 steps, 215 stops
+Written to guides/mop/Deepholm (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+12 pickups or hand-ins are within reach of a stop but planned for later.
+6 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 82. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 322 steps kept, 11 new ones slotted in, 0 moved because their prerequisites changed, 1 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 324 tasks, 50,217 yd on foot; ends at level 83.4; 4 hearths
+  everyone (quests that depend on other zones): 9 more tasks; their whole route comes to 57,811 yd; ends at level 83.4; 4 hearths
+Hearthstone: set at Dugsley Deepdelver (Dugsley Deepdelver's inn); 4 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 83 for The Explorers (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+25 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+4 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+2 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (115)
+-------------------------
+Start to finish here: 109 (103 for everyone, 6 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  That's No Pyramid! [28292, level 83, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Stormwind City
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  The Maelstrom [27203, level 82] <- Stormwind City
+  Devoured [27377, level 84] <- Twilight Highlands
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Maziel's Revelation [27101, level 82] - needs one of Twilight Research [27100]
+  Maziel's Ascendancy [27102, level 82] - needs one of Maziel's Revelation [27101]
+  Deepholm, Realm of Earth [27123, level 82] - needs one of The Maelstrom [27203]
+
+Worth checking in game
+----------------------
+  Hatred Runs Deep [26376, level 83]: mixes a kill-credit objective with others; check that "Twilight Priestess" really is line 2 in the quest log
+  Don't. Stop. Moving. [26656, level 83]: "Opalescent Guardian (5)" has no place in the data; taken to be done where the quest is given
+  Undying Twilight [26875, level 83]: mixes a kill-credit objective with others; check that "Twilight Heretic" really is line 2 in the quest log
+  The Axe of Earthly Sundering [27932, level 82]: could not read how many Emerald Colossus are needed from the quest text; assumed 8
+  One With the Ground [27934, level 82]: "One With the Ground Kill Credit (1)" has no place in the data; taken to be done where the quest is given
+
+Not planned (1)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  The Worldbreaker [27378, level 84]: needs level 84; this part gets you to about 83.4
+
+Left out (32)
+-------------
+not in the game (on Questie's quest blacklist) (14):
+  The World Pillar [26243], We Have a Situation [26626], The Quaking Fields [26847], X Marks the Spot [26848], The Axe of Earthly Sundering [26849], Elemental Ore [26850], The Fragment's Inside [26852], The Middle Fragment [26853], The Fragment's Inside [26877], Lingering Twilight [27052], Candy Bucket [29020], Honor the Flame [29036], Deepforge the Elder [29734], Stonebrand the Elder [29735]
+repeatable (11):
+  Lost In The Deeps [26710], Fear of Boring [27046], Motes [27047], Underground Economy [27048], Soft Rock [27049], Fungal Fury [27050], Through Persistence [27051], Glop, Son of Glop [28390], The Restless Brood [28391], Beneath the Surface [28488], Bordin Steadyfist [31973]
+special category (sort -381) (3):
+  Elemental Bonds: Patience [29329], Into Constant Earth [29337], Into Unrelenting Flame [29338]
+dungeon quest (2):
+  Wayward Child [28824], Into the Stonecore [28866]
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  Twilight Research [27100]
+cannot be taken together with Bring Down the Avalanche [27935], which is in the guide (1):
+  Bring Down the Avalanche [27936]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

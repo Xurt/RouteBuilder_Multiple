@@ -1,0 +1,127 @@
+Ammen Vale - Alliance
+Guide "1-5 Ammen Vale" in group "Zone Routes (Alliance)": 52 steps, 49 stops
+Written to guides/mop/Ammen Vale (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: 114 PROBLEMS
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Human Warrior)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Human Warrior)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Human Paladin)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Human Paladin)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Human Hunter)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Human Hunter)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Human Rogue)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Human Rogue)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Human Priest)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Human Priest)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Human DeathKnight)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Human DeathKnight)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Human Mage)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Human Mage)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Human Warlock)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Human Warlock)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Human Monk)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Human Monk)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Dwarf Warrior)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Dwarf Warrior)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Dwarf Paladin)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Dwarf Paladin)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Dwarf Hunter)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Dwarf Hunter)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Dwarf Rogue)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Dwarf Rogue)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Dwarf Priest)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Dwarf Priest)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Dwarf DeathKnight)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Dwarf DeathKnight)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Dwarf Shaman)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Dwarf Shaman)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Dwarf Mage)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Dwarf Mage)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Dwarf Warlock)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Dwarf Warlock)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Dwarf Monk)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Dwarf Monk)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (NightElf Warrior)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (NightElf Warrior)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (NightElf Hunter)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (NightElf Hunter)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (NightElf Rogue)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (NightElf Rogue)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (NightElf Priest)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (NightElf Priest)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (NightElf DeathKnight)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (NightElf DeathKnight)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (NightElf Mage)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (NightElf Mage)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (NightElf Monk)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (NightElf Monk)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (NightElf Druid)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (NightElf Druid)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Gnome Warrior)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Gnome Warrior)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Gnome Rogue)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Gnome Rogue)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Gnome Priest)
+  ! Vindicator Aldar is picked up before any of the quests that unlock it (Gnome Priest)
+  ... and 54 more
+Quest log: at most 5 of 40 held at once (Draenei Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 57 steps kept, 8 new ones slotted in, 1 moved because their prerequisites changed, 8 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 41 tasks, 7,867 yd on foot; ends at level 5.2; 1 hearth; 2 ORDER PROBLEMS
+  Draenei: 6 more tasks; their whole route comes to 10,324 yd; ends at level 5.3; 2 ORDER PROBLEMS
+  Draenei Warrior: 3 more tasks; their whole route comes to 10,427 yd; ends at level 5.4; 2 ORDER PROBLEMS
+  Draenei Paladin: 3 more tasks; their whole route comes to 10,496 yd; ends at level 5.4; 2 ORDER PROBLEMS
+  Draenei Hunter: 3 more tasks; their whole route comes to 10,419 yd; ends at level 5.4; 2 ORDER PROBLEMS
+  Draenei Priest: 3 more tasks; their whole route comes to 10,631 yd; ends at level 5.5; 2 ORDER PROBLEMS
+  Draenei Shaman: 3 more tasks; their whole route comes to 10,472 yd; ends at level 5.4; 2 ORDER PROBLEMS
+  Draenei Mage: 3 more tasks; their whole route comes to 10,459 yd; ends at level 5.4; 2 ORDER PROBLEMS
+  Draenei (quests that depend on other zones): 1 more tasks; their whole route comes to 10,324 yd; ends at level 5.3; 2 ORDER PROBLEMS
+Hearthstone: set at Ryosh (Ryosh's inn); 1 hearth step in the guide.
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (25)
+------------------------
+Start to finish here: 23 (1 for everyone, 13 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren, 2 Draenei, 1 Human/Dwarf/NightElf/Gnome/Worgen/Pandaren, 1 Draenei Warrior, 1 Draenei Hunter, 1 Draenei Paladin, 1 Draenei Mage, 1 Draenei Shaman, 1 Draenei Priest)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Travel to Azure Watch [9313, level 5, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Azuremyst Isle
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  You Survived! [9279, level 1, Draenei] <- Azuremyst Isle
+
+Worth checking in game
+----------------------
+  Healing the Lake [9294, level 3, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Irradiated Power Crystal" is line 1 by the database, but RestedXP's guide has "Collect Disperse the Neutralizing Agent (x1)" there
+  Your First Lesson [26958, level 3, Draenei Warrior]: has a reputation or spell objective, which is not planned
+  Your First Lesson [26958, level 3, Draenei Warrior]: objective "Training Dummy slain (1)" is line 1 by the database, but RestedXP's guide has "Practice Charge (1)" there
+  Steadying Your Shot [26963, level 3, Draenei Hunter]: has a reputation or spell objective, which is not planned
+  Steadying Your Shot [26963, level 3, Draenei Hunter]: objective "Training Dummy slain (1)" is line 1 by the database, but RestedXP's guide has "Practice Steady Shot (1)" there
+  The Light's Power [26966, level 3, Draenei Paladin]: has a reputation or spell objective, which is not planned
+  The Light's Power [26966, level 3, Draenei Paladin]: objective "Training Dummy slain (1)" is line 1 by the database, but RestedXP's guide has "Practice Charge (1)" there
+  Frost Nova [26968, level 3, Draenei Mage]: has a reputation or spell objective, which is not planned
+  Frost Nova [26968, level 3, Draenei Mage]: objective "Training Dummy slain (1)" is line 1 by the database, but RestedXP's guide has "Practice Arcane Missles (1)" there
+  Primal Strike [26969, level 3, Draenei Shaman]: has a reputation or spell objective, which is not planned
+  Primal Strike [26969, level 3, Draenei Shaman]: objective "Training Dummy slain (1)" is line 1 by the database, but RestedXP's guide has "Practice Primal Strike (1)" there
+  Learning the Word [26970, level 3, Draenei Priest]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  Learning the Word [26970, level 3, Draenei Priest]: has a reputation or spell objective, which is not planned
+  Learning the Word [26970, level 3, Draenei Priest]: objective "Training Dummy slain (8)" is line 1 by the database, but RestedXP's guide has "Heal Injured Draenei" there
+
+Left out (11)
+-------------
+not in the game (on Questie's quest blacklist) (10):
+  Welcome! [9278], Paladin Training [9287], Hunter Training [9288], Warrior Training [9289], Mage Training [9290], Priest Training [9291], Shaman Training [9421], Call of Earth [9449], Call of Earth [9450], Call of Earth [9451]
+special category (sort -395) (1):
+  The Tiger Palm [31173]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

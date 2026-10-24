@@ -1,0 +1,148 @@
+Shadowmoon Valley - Horde - part 1 of 2, planned from level 69
+Guide "69-70 Shadowmoon Valley" in group "Zone Routes (Horde)": this part has 161 steps, 149 stops
+Written to guides/mop/Shadowmoon Valley (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 12 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 69. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 214 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 179 tasks, 23,409 yd on foot; ends at level 70.0; at its hardest you are 2.2 levels below the mobs
+  everyone (quests that depend on other zones): 35 more tasks; their whole route comes to 28,999 yd; ends at level 70.0; at its hardest you are 2.2 levels below the mobs
+Hearthstone: set at Daggle Ironshaper (Daggle Ironshaper's inn); 0 hearth steps in the guide.
+7 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+3 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (79)
+------------------------
+Start to finish here: 57 (24 for everyone, 33 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  The Hermit Smith [10663, level 69, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Terokkar Forest
+  Of Thistleheads and Eggs... [10547, level 70] -> Shattrath City
+  Battle of the Crimson Watch [10781, level 70] -> Shattrath City
+
+Hand-in step only shows once complete (1):
+  The Cipher of Damnation - Ar'tor's Charge [10540, level 70] - needs Second Fragment of the Cipher of Damnation (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (7):
+  Chief Apothecary Hildagard [11046, level 67, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Shattrath City
+  The Apprentice's Request [11047, level 67, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Blade's Edge Mountains
+  Kroghan's Report [11048, level 67, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Nagrand
+  The Bundle of Bloodthistle [10550, level 70] <- Shattrath City
+  A Mysterious Portent [10706, level 70] <- The Arcatraz - Dungeon - Containment Core
+  The Secret Compromised [10944, level 70] <- Serpentshrine Cavern - (Dungeon/Raid)
+  Entry Into the Black Temple [10949, level 70] <- Shattrath City
+
+Need a quest this guide does not hand in - steps show only once that is done (11):
+  The Cipher of Damnation - The Second Fragment Recovered [10541, level 70] - needs one of The Cipher of Damnation - Ar'tor's Charge [10540]
+  To Catch A Thistlehead [10570, level 70] - needs one of The Bundle of Bloodthistle [10550]
+  The Shadowmoon Shuffle [10576, level 70] - needs one of To Catch A Thistlehead [10570]
+  What Illidan Wants, Illidan Gets... [10577, level 70] - needs one of The Shadowmoon Shuffle [10576]
+  The Cipher of Damnation - Borak's Charge [10578, level 70] - needs one of What Illidan Wants, Illidan Gets... [10577]
+  The Cipher of Damnation - The Third Fragment Recovered [10579, level 70] - needs one of The Cipher of Damnation - Borak's Charge [10578]
+  The Cipher of Damnation [10588, level 70] - needs The Cipher of Damnation - The Second Fragment Recovered [10541], The Cipher of Damnation - The Third Fragment Recovered [10579]
+  Proof of Allegiance [10622, level 70] - needs one of The Warden's Cage [10575], The Warden's Cage [10686]
+  Akama [10628, level 70] - needs one of Proof of Allegiance [10622]
+  The Ata'mal Terrace [10707, level 70] - needs one of A Mysterious Portent [10706]
+  Akama's Promise [11052, level 70] - needs one of The Ata'mal Terrace [10707] -> Shattrath City
+
+Worth checking in game
+----------------------
+  Enraged Spirits of Fire and Earth [10458, level 70]: could not read how many Enraged Earth Spirit are needed from the quest text; assumed 8
+  Enraged Spirits of Fire and Earth [10458, level 70]: could not read how many Enraged Fire Spirit are needed from the quest text; assumed 8
+  Enraged Spirits of Water [10480, level 70]: could not read how many Enraged Water Spirit are needed from the quest text; assumed 8
+  Enraged Spirits of Air [10481, level 70]: could not read how many Enraged Air Spirit are needed from the quest text; assumed 8
+
+Put off to a later part (12)
+----------------------------
+These need a higher level than this part ends at:
+  Kindness [10804, level 70]: needs level 70; this part gets you to about 70.2
+  Seek Out Neltharaku [10811, level 70]: needs level 70; this part gets you to about 70.2
+  Neltharaku's Tale [10814, level 70]: needs level 70; this part gets you to about 70.2
+  Infiltrating Dragonmaw Fortress [10836, level 70]: needs level 70; this part gets you to about 70.2
+  To Netherwing Ledge! [10837, level 70]: needs level 70; this part gets you to about 70.2
+  The Force of Neltharaku [10854, level 70]: needs level 70; this part gets you to about 70.2
+  Karynaku [10858, level 70]: needs level 70; this part gets you to about 70.2
+  Zuluhed the Whacked [10866, level 70]: needs level 70; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 70.2
+  Ally of the Netherwing [10870, level 70]: needs level 70; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 70.2
+  The Hostage Soul [10948, level 70]: needs level 70; this part gets you to about 70.2
+  Seeker of Truth [11082, level 70]: needs level 70; this part gets you to about 70.2
+  A Distraction for Akama [13429, level 70]: needs level 70; this part gets you to about 70.2
+
+Left out (90)
+-------------
+needs reputation (49):
+  Tablets of Baa'ri [10568], Oronu the Elder [10571], The Ashtongue Corruptors [10574], The Warden's Cage [10575], Karabor Training Grounds [10587], The Ashtongue Tribe [10619], A Necessary Distraction [10637], Altruis [10640], Return to the Aldor [10650], Varedis Must Be Stopped [10651], Tablets of Baa'ri [10683], Oronu the Elder [10684], The Ashtongue Corruptors [10685], The Warden's Cage [10686], Karabor Training Grounds [10687], A Necessary Distraction [10688], Altruis [10689], Return to the Scryers [10691], Varedis Must Be Stopped [10692], The Ashtongue Broken [10807], Reclaiming Holy Grounds [10816], The Great Retribution [10817], Sunfury Signets [10824], Marks of Sargeras [10826], Your Friend On The Inside [11019], A Job Unfinished... [11041], The Great Netherwing Egg Hunt [11049], Rise, Overseer! [11053], Overseeing and You: Making the Right Choices [11054], Earning Your Wings... [11063], Dragonmaw Race: The Ballad of Oldie McOld [11064], Dragonmaw Race: Trope the Filth-Belcher [11067], Dragonmaw Race: Corlok the Vet [11068], Dragonmaw Race: Wing Commander Ichman [11069], Dragonmaw Race: Wing Commander Mulverick [11070], Dragonmaw Race: Captain Skyshatter [11071], The Netherwing Mines [11075], The Great Murkblood Revolt [11081], Crazed and Confused [11083], Stand Tall, Captain! [11084], ... 9 more
+repeatable (18):
+  Single Sunfury Signet [10822], More Sunfury Signets [10823], More Marks of Sargeras [10827], Single Mark of Sargeras [10828], Netherwing Crystals [11015], Nethermine Flayer Hide [11016], Netherdust Pollen [11017], Nethercite Ore [11018], A Slow Death [11020], The Not-So-Friendly Skies... [11035], Accepting All Eggs [11050], The Booterang: A Cure For The Common Worthless Peon [11055], Picking Up The Pieces... [11076], Dragons are the Least of Our Problems [11077], Disrupting the Twilight Portal [11086], The Deadliest Trap Ever Laid [11097], The Deadliest Trap Ever Laid [11101], Grand Master Antari [31926]
+not in the game (on Questie's quest blacklist) (13):
+  NOT A QUEST [10638], Akama's Promise [10708], Entry Into the Citadel [10755], The Journal of Val'zareq: Portends of War [10815], A Distraction for Akama [10985], Learning to Fly [11498], Desecrate this Fire! [11752], Honor the Flame [11855], Playing with Fire [11915], Incense for the Festival Scorchlings [11966], Candy Bucket [12395], Candy Bucket [12409], Sharing a Bountiful Feast [14065]
+dungeon quest (4):
+  Seer Udalo [10705], Ruse of the Ashtongue [10946], An Artifact From the Past [10947], Seek Out the Ashtongue [10958]
+needs a profession (3):
+  Blood Oath of the Netherwing [11012], In Service of the Illidari [11013], Enter the Taskmaster [11014]
+special category (sort -394) (2):
+  Grand Master Antari [31920], Exceeding Expectations [31982]
+above this zone's range of 69-72 (1):
+  Infiltrating the Black Temple [32325]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Shadowmoon Valley - Horde - part 2 of 2, planned from level 73
+Guide "69-70 Shadowmoon Valley" in group "Zone Routes (Horde)": this part has 29 steps, 28 stops
+Written to guides/mop/Shadowmoon Valley (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 73. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 38 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 29 tasks, 2,485 yd on foot; ends at level 73.1
+  everyone (quests that depend on other zones): 9 more tasks; their whole route comes to 5,658 yd; ends at level 73.1
+Hearthstone: set at Roldemar (Roldemar's inn); 0 hearth steps in the guide.
+
+Quests in the guide (13)
+------------------------
+Start to finish here: 9 (7 for everyone, 2 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  The Cipher of Damnation - Ar'tor's Charge [10540, level 70] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  The Hostage Soul [10948, level 70] - needs one of An Artifact From the Past [10947] -> Shattrath City
+  Seeker of Truth [11082, level 70] - needs one of The Great Murkblood Revolt [11081]
+  A Distraction for Akama [13429, level 70] - needs one of Entry Into the Black Temple [10949]
+
+Worth checking in game
+----------------------
+  Zuluhed the Whacked [10866, level 70, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: mixes a kill-credit objective with others; check that "Zuluhed the Whacked" really is line 2 in the quest log
+  Seeker of Truth [11082, level 70]: mixes a kill-credit objective with others; check that "Murkblood Overseer" really is line 2 in the quest log
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

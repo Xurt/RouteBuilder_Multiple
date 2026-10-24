@@ -1,0 +1,222 @@
+Dustwallow Marsh - Horde - part 1 of 3, planned from level 35
+Guide "35-46 Dustwallow Marsh" in group "Zone Routes (Horde)": this part has 111 steps, 97 stops
+Written to guides/tbc/Dustwallow Marsh (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 10 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+9 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 35. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 107 steps kept, 18 new ones slotted in, 0 moved because their prerequisites changed, 38 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 93 tasks, 18,096 yd on foot; ends at level 37.1; 1 hearth; at its hardest you are 2.8 levels below the mobs
+  Mage: 1 more tasks; their whole route comes to 18,102 yd; ends at level 37.1; 1 hearth; at its hardest you are 2.8 levels below the mobs
+  everyone (quests that depend on other zones): 22 more tasks; their whole route comes to 20,642 yd; ends at level 37.1; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  Mage (quests that depend on other zones): 8 more tasks; their whole route comes to 20,941 yd; ends at level 37.1; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 20,642 yd; ends at level 37.1; 2 hearths; at its hardest you are 2.8 levels below the mobs
+Hearthstone: set at "Little" Logok ("Little" Logok's inn); 2 hearth steps in the guide.
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+3 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (57)
+------------------------
+Start to finish here: 33 (33 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (4):
+  Crystal in the Mountains [635, level 35] -> Arathi Highlands
+  The Troll Witchdoctor [1240, level 35] -> Stranglethorn Vale
+  Stinky's Escape [1270, level 37] -> The Barrens
+  The Black Shield [1276, level 37] -> Thunder Bluff
+
+Hand-in step only shows once complete (1):
+  The Infernal Orb [1954, level 40, Mage] - needs Infernal Orb (1) (Desolace)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (9):
+  Journey to the Marsh [1947, level 38, Mage] <- Thunder Bluff
+  Return to Krog [11204, level 38] <- Thunder Bluff
+  Marg Speaks [1261, level 40] <- Stranglethorn Vale
+  Fragments of the Orb of Orahil [1799, level 40, Warlock] <- The Barrens
+  Rituals of Power [1951, level 40, Mage] <- Thousand Needles
+  Return to the Marsh [1953, level 40, Mage] <- Ironforge
+  Cortello's Riddle [625, level 43] <- Swamp of Sorrows
+  Tabetha's Task [2861, level 46] <- Undercity
+  Emberstrife [6570, level 60] <- Western Plaguelands
+
+Need a quest this guide does not hand in - steps show only once that is done (10):
+  More than Coincidence [11200, level 37] - needs one of Return to Krog [11204]
+  Seek Out Tabetha [11203, level 37] - needs More than Coincidence [11200], The Grimtotem Plot [11201]
+  Hidden Secrets [1949, level 38, Mage] - needs one of Journey to the Marsh [1947] -> Thousand Needles
+  The Grimtotem Plot [11201, level 38] - needs one of Return to Krog [11204]
+  Raze Direhorn Post! [11205, level 39] - needs one of Seek Out Tabetha [11203]
+  Justice Dispensed [11206, level 39] - needs one of Raze Direhorn Post! [11205]
+  Report to Zor [1262, level 40] - needs one of Marg Speaks [1261] -> Orgrimmar
+  Items of Power [1948, level 40, Mage] - needs one of Journey to the Marsh [1947]
+  Mage's Wand [1952, level 40, Mage] - needs Items of Power [1948], Rituals of Power [1951]
+  Cortello's Riddle [626, level 51] - needs one of Cortello's Riddle [625] -> The Hinterlands
+
+Worth checking in game
+----------------------
+
+Put off to a later part (24)
+----------------------------
+These need a higher level than this part ends at:
+  Overlord Mok'Morokk's Concern [1166, level 41]: needs level 38; this part gets you to about 38.0
+  Army of the Black Dragon [1168, level 41]: needs level 38; this part gets you to about 38.0
+  Identifying the Brood [1169, level 41]: its mobs are level 41; this part gets you to about 38.0
+  The Brood of Onyxia [1170, level 41]: needs level 39; this part gets you to about 38.0
+  The Brood of Onyxia [1171, level 41]: needs level 39; this part gets you to about 38.0
+  The Brood of Onyxia [1172, level 41]: needs level 38; this part gets you to about 38.0
+  Challenge Overlord Mok'Morokk [1173, level 45]: is a level 45 quest; this part gets you to about 38.0
+  The Exorcism [1955, level 40]: its mobs are level 40; this part gets Mage characters to about 38.0
+  Power in Uldaman [1956, level 40]: follows The Exorcism [1955]
+  Mana Surges [1957, level 40]: follows Power in Uldaman [1956]
+  Celestial Power [1958, level 40]: follows Mana Surges [1957]
+  Tiara of the Deep [2846, level 46]: needs level 40; this part gets you to about 38.0
+  Cleansing of the Orb of Orahil [4961, level 40]: its mobs are level 40; this part gets Warlock characters to about 38.0
+  Returning the Cleansed Orb [4976, level 40]: follows Cleansing of the Orb of Orahil [4961]
+  The Test of Skulls, Scryer [6582, level 60]: needs level 58; this part gets you to about 38.0
+  The Test of Skulls, Somnus [6583, level 60]: needs level 58; this part gets you to about 38.0
+  The Test of Skulls, Chronalis [6584, level 60]: needs level 58; this part gets you to about 38.0
+  The Test of Skulls, Axtroz [6585, level 60]: needs level 60; this part gets you to about 38.0
+  Ascension... [6601, level 60]: needs level 60; this part gets you to about 38.0
+  Spirits of Stonemaul Hold [11159, level 41]: its mobs are level 40; this part gets you to about 38.0
+  Challenge to the Black Flight [11162, level 41]: its mobs are level 41; this part gets you to about 38.0
+  Help for Mudsprocket [11211, level 39]: needs level 38; this part gets you to about 38.0
+  Check Up on Tabetha [11213, level 37]: needs level 37; this part gets you to about 37.1
+  Catch a Dragon by the Tail [11217, level 40]: needs level 37; this part gets you to about 37.1
+
+Left out (10)
+-------------
+not in the game (on Questie's quest blacklist) (6):
+  Desecrate this Fire! [11744], Honor the Flame [11847], Playing with Fire [11915], Incense for the Festival Scorchlings [11966], Candy Bucket [12383], Candy Bucket [12398]
+needs a profession (2):
+  Nat Pagle, Angler Extreme [6607], You Too Good. [6608]
+dungeon quest (1):
+  Nat's Measuring Tape [8227]
+cannot be taken together with Help for Mudsprocket [11211], which is in the guide (1):
+  Help Mudsprocket [11215]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Dustwallow Marsh - Horde - part 2 of 3, planned from level 40
+Guide "35-46 Dustwallow Marsh" in group "Zone Routes (Horde)": this part has 50 steps, 44 stops
+Written to guides/tbc/Dustwallow Marsh (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 7 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 40. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 34 steps kept, 17 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 36 tasks, 9,909 yd on foot; ends at level 40.7; 1 hearth
+  Mage (quests that depend on other zones): 11 more tasks; their whole route comes to 10,109 yd; ends at level 40.7; 1 hearth
+  Warlock (quests that depend on other zones): 4 more tasks; their whole route comes to 9,939 yd; ends at level 40.7; 1 hearth
+Hearthstone: set at "Little" Logok ("Little" Logok's inn); 1 hearth step in the guide.
+5 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (19)
+------------------------
+Start to finish here: 11 (11 for everyone)
+
+Hand-in step only shows once complete (1):
+  Tiara of the Deep [2846, level 46] - needs Tiara of the Deep (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  The Infernal Orb [1954, level 40, Mage] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (6):
+  The Exorcism [1955, level 40, Mage] - needs one of The Infernal Orb [1954]
+  Power in Uldaman [1956, level 40, Mage] - needs one of The Exorcism [1955]
+  Mana Surges [1957, level 40, Mage] - needs one of Power in Uldaman [1956]
+  Celestial Power [1958, level 40, Mage] - needs one of Mana Surges [1957]
+  Cleansing of the Orb of Orahil [4961, level 40, Warlock] - needs Fragments of the Orb of Orahil [1799], Shard of a Felhound [4962]
+  Returning the Cleansed Orb [4976, level 40, Warlock] - needs one of Cleansing of the Orb of Orahil [4961] -> The Barrens
+
+Worth checking in game
+----------------------
+  The Exorcism [1955, level 40, Mage]: "Kill the Demon of the Orb" is assumed to be line 2 in the quest log; check it
+
+Put off to a later part (6)
+---------------------------
+These need a higher level than this part ends at:
+  Challenge Overlord Mok'Morokk [1173, level 45]: is a level 45 quest; this part gets you to about 40.8
+  The Test of Skulls, Scryer [6582, level 60]: needs level 58; this part gets you to about 40.8
+  The Test of Skulls, Somnus [6583, level 60]: needs level 58; this part gets you to about 40.8
+  The Test of Skulls, Chronalis [6584, level 60]: needs level 58; this part gets you to about 40.8
+  The Test of Skulls, Axtroz [6585, level 60]: needs level 60; this part gets you to about 40.8
+  Ascension... [6601, level 60]: needs level 60; this part gets you to about 40.8
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Dustwallow Marsh - Horde - part 3 of 3, planned from level 43
+Guide "35-46 Dustwallow Marsh" in group "Zone Routes (Horde)": this part has 6 steps, 5 stops
+Written to guides/tbc/Dustwallow Marsh (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 43. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 3 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 76 yd on foot; ends at level 43.1
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 1,038 yd; ends at level 43.1
+  Mage (quests that depend on other zones): 1 more tasks; their whole route comes to 1,038 yd; ends at level 43.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (3)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  The Infernal Orb [1954, level 40, Mage] <- your earlier visit to this zone
+  Tiara of the Deep [2846, level 46] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Not planned (5)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  The Test of Skulls, Scryer [6582, level 60]: needs level 58; this part gets you to about 43.1
+  The Test of Skulls, Somnus [6583, level 60]: needs level 58; this part gets you to about 43.1
+  The Test of Skulls, Chronalis [6584, level 60]: needs level 58; this part gets you to about 43.1
+  The Test of Skulls, Axtroz [6585, level 60]: needs level 60; this part gets you to about 43.1
+  Ascension... [6601, level 60]: needs level 60; this part gets you to about 43.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

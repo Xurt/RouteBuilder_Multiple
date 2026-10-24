@@ -1,0 +1,163 @@
+Zangarmarsh - Alliance - part 1 of 2, planned from level 62
+Guide "62-65 Zangarmarsh" in group "Zone Routes (Alliance)": this part has 134 steps, 105 stops
+Written to guides/mop/Zangarmarsh (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: 57 PROBLEMS
+  ! Drain Schematics is picked up before any of the quests that unlock it (Human Warrior)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Human Paladin)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Human Hunter)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Human Rogue)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Human Priest)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Human DeathKnight)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Human Mage)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Human Warlock)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Human Monk)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Dwarf Warrior)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Dwarf Paladin)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Dwarf Hunter)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Dwarf Rogue)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Dwarf Priest)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Dwarf DeathKnight)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Dwarf Shaman)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Dwarf Mage)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Dwarf Warlock)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Dwarf Monk)
+  ! Drain Schematics is picked up before any of the quests that unlock it (NightElf Warrior)
+  ! Drain Schematics is picked up before any of the quests that unlock it (NightElf Hunter)
+  ! Drain Schematics is picked up before any of the quests that unlock it (NightElf Rogue)
+  ! Drain Schematics is picked up before any of the quests that unlock it (NightElf Priest)
+  ! Drain Schematics is picked up before any of the quests that unlock it (NightElf DeathKnight)
+  ! Drain Schematics is picked up before any of the quests that unlock it (NightElf Mage)
+  ! Drain Schematics is picked up before any of the quests that unlock it (NightElf Monk)
+  ! Drain Schematics is picked up before any of the quests that unlock it (NightElf Druid)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Gnome Warrior)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Gnome Rogue)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Gnome Priest)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Gnome DeathKnight)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Gnome Mage)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Gnome Warlock)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Gnome Monk)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Draenei Warrior)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Draenei Paladin)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Draenei Hunter)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Draenei Priest)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Draenei DeathKnight)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Draenei Shaman)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Draenei Mage)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Draenei Monk)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Worgen Warrior)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Worgen Hunter)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Worgen Rogue)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Worgen Priest)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Worgen DeathKnight)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Worgen Mage)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Worgen Warlock)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Worgen Druid)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Pandaren Warrior)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Pandaren Hunter)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Pandaren Rogue)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Pandaren Priest)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Pandaren Shaman)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Pandaren Mage)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Pandaren Monk)
+Quest log: at most 16 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+9 pickups or hand-ins are within reach of a stop but planned for later.
+5 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 62. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 123 steps kept, 11 new ones slotted in, 7 moved because their prerequisites changed, 4 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 134 tasks, 37,780 yd on foot; ends at level 63.5; 2 hearths; at its hardest you are 1.3 levels below the mobs
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 38,285 yd; ends at level 63.5; 2 hearths; at its hardest you are 1.3 levels below the mobs
+Hearthstone: set at Alliance Field Scout (Alliance Field Scout's inn); 2 hearth steps in the guide.
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+14 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+6 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (47)
+------------------------
+Start to finish here: 42 (22 for everyone, 20 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Fate of Tuurem [9793, level 62, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Terokkar Forest
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  The Cenarion Expedition [9912, level 62] <- Hellfire Peninsula
+  Return to the Marsh [9732, level 63] <- Hellfire Peninsula
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Withered Flesh [10355, level 62] - needs one of Withered Basidium [9827]
+  Warning the Cenarion Circle [9724, level 64] - needs one of Drain Schematics [9731] -> Hellfire Peninsula
+
+Worth checking in game
+----------------------
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  No Time for Curiosity [9794, level 65]: needs level 64; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 63.5
+
+Left out (57)
+-------------
+not in the game (on Questie's quest blacklist) (29):
+  Bring Me Another Shrubbery! [9714], Bring Me A Shrubbery! [9715], Oh, It's On! [9717], Stalk the Stalker [9719], Lost in Action [9738], The Warlord's Hideout [9763], Orders from Lady Vashj [9764], Preparing for War [9765], Coilfang Armaments [9766], Know Your Enemy [9767], Failed Incursion [9876], Revered Among the Cenarion Expedition [10459], Master of Potions [10897], Master of Potions [10905], Morthis Whisperwing [10955], The Ward of Wakening [10961], Return to Morthis Whisperwing [10978], Return to Cenarion Refuge [10993], Chasing the Moonstone [10994], Vanquish the Raven God [11001], Eternal Vigilance [11011], Desecrate this Fire! [11787], Honor the Flame [11829], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Candy Bucket [12354], Candy Bucket [12355], Candy Bucket [12403], Sharing a Bountiful Feast [14064]
+needs reputation (14):
+  Watcher Leesa'oh [9697], Now That We're Friends... [9726], Fhwoor Smash! [9729], Blessings of the Ancients [9785], A Message to Telaar [9792], Fertile Spores [9806], Glowcap Mushrooms [9808], Stinger Venom [9830], Lines of Communication [9833], Natural Armor [9834], The Terror of Marshlight Lake [9902], Maktu's Revenge [9905], Sporeggar [9919], What's Wrong at Cenarion Thicket? [9957]
+repeatable (9):
+  Now That We're Still Friends... [9727], More Spore Sacs [9742], More Tendrils! [9744], Identify Plant Parts [9784], More Fertile Spores [9807], More Glowcaps [9809], Uncatalogued Species [9875], Strange Engine Part [11531], Ras'an [31923]
+dungeon quest (3):
+  Coilfang Spellbooks [9768], Checking Up [29566], Storming the Steamvault [29616]
+needs a profession (1):
+  The Zapthrottle Mote Extractor! [9636]
+cannot be taken together with The Fate of Tuurem [9793], which is in the guide (1):
+  Concerns About Tuurem [10104]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Zangarmarsh - Alliance - part 2 of 2, planned from level 66
+Guide "62-65 Zangarmarsh" in group "Zone Routes (Alliance)": this part has 2 steps, 1 stops
+Written to guides/mop/Zangarmarsh (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 66. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 66.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (1)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  No Time for Curiosity [9794, level 65, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Blade's Edge Mountains
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

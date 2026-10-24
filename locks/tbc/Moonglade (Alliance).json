@@ -1,0 +1,43 @@
+{
+  "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "57-60 Moonglade",
+  "saved": "2026-10-23 18:16",
+  "levels": "RestedXP",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "accept:9063 @1450:-2593.82,7867.06  Accept Torwa Pathfinder",
+        "turnin:6844 @1450:-2417.23,7943.57  TurnIn Umber, Archivist",
+        "accept:6845 @1450:-2417.23,7943.57  Accept Uncovering Past Secrets",
+        "turnin:6762 @1450:-2574.43,7797.31  TurnIn Rabine Saturna",
+        "accept:5527 @1450:-2574.43,7797.31  Accept A Reliquary of Purity",
+        "accept:1124 @1450:-2574.43,7797.31  Accept Wasteland",
+        "turnin:6845 @1450:-2574.43,7797.31  TurnIn Uncovering Past Secrets",
+        "accept:5526 @1450:-2574.43,7797.31  Accept Shards of the Felvine",
+        "turnin:5526 @1450:-2574.43,7797.31  TurnIn Shards of the Felvine",
+        "accept:1185 @1450:-2417.23,7943.57  Accept Under the Chitin Was...",
+        "turnin:1185 @1450:-2417.23,7943.57  TurnIn Under the Chitin Was...",
+        "turnin:6124 @1450:-2678.76,8019.94  TurnIn Curing the Sick",
+        "accept:6125 @1450:-2678.76,8019.94  Accept Power over Poison",
+        "turnin:5921 @1450:-2678.76,8019.94  TurnIn Moonglade",
+        "accept:5929 @1450:-2678.76,8019.94  Accept Great Bear Spirit",
+        "obj:5929:1 @1450:-2284.04,8068.28  Objective Great Bear Spirit / Great Bear Spirit",
+        "turnin:5929 @1450:-2678.76,8019.94  TurnIn Great Bear Spirit",
+        "accept:5931 @1450:-2678.76,8019.94  Accept Back to Darnassus",
+        {"lines":[".goto 1450/1,-2593.82,7867.06",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Loganaar|r",".trainer >> Train your class spells",".target Loganaar"],"tag":"Druid","from":"RestedXP: 14-20 Bloodmyst"},
+        "turnin:6121 @1450:-2678.76,8019.94  TurnIn Lessons Anew",
+        "accept:6122 @1450:-2678.76,8019.94  Accept The Principal Source",
+        "turnin:26 @1450:-2678.76,8019.94  TurnIn A Lesson to Learn",
+        "accept:29 @1450:-2678.76,8019.94  Accept Trial of the Lake",
+        "obj:29:collect15877 @1450:-2630.06,7720.33  Objective Trial of the Lake / Shrine Bauble",
+        "obj:29:1 @1450:-2212.25,7853.97  Objective Trial of the Lake / Shrine Of Remulos",
+        "turnin:29 @1450:-2224.25,7874.29  TurnIn Trial of the Lake",
+        "accept:272 @1450:-2224.25,7874.29  Accept Trial of the Sea Lion",
+        "obj:272:1 @1450:-2212.25,7853.97  Objective Trial of the Sea Lion / Pendant of the Sea Lion (1)",
+        "turnin:272 @1450:-2678.76,8019.94  TurnIn Trial of the Sea Lion",
+        "accept:5061 @1450:-2678.76,8019.94  Accept Aquatic Form"
+      ]
+    }
+  ]
+}

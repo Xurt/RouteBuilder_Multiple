@@ -1,0 +1,513 @@
+{
+  "zone": "Ashenvale",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "18-32 Ashenvale",
+  "file": "Ashenvale (Alliance).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 18,
+      "end": 18.4,
+      "next": 21,
+      "guide": "18-19 Ashenvale: around Shindrell Swiftfire",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Shindrell Swiftfire",
+          "guide": "18-19 Ashenvale: around Shindrell Swiftfire",
+          "level": 18,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 21,
+      "end": 21.56,
+      "next": 24,
+      "guide": "21-22 Ashenvale",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "21-22 Ashenvale",
+          "level": 21,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 24,
+      "end": 24.47,
+      "next": 27,
+      "guide": "24-25 Ashenvale",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "24-25 Ashenvale",
+          "level": 24,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "start": 27,
+      "end": 28.06,
+      "next": 31,
+      "guide": "27-29 Ashenvale: around Sentinel Melyria Frostshadow",
+      "sections": [
+        {
+          "label": "RBSection4_1",
+          "name": "around Sentinel Melyria Frostshadow",
+          "guide": "27-29 Ashenvale: around Sentinel Melyria Frostshadow",
+          "level": 27,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "start": 31,
+      "end": 31.32,
+      "guide": "31-32 Ashenvale",
+      "sections": [
+        {
+          "label": "RBSection5_1",
+          "name": "part 5",
+          "guide": "31-32 Ashenvale",
+          "level": 31,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 945,
+      "level": 18,
+      "req": 14,
+      "xp": 1350,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Darkshore"
+    },
+    {
+      "id": 967,
+      "level": 18,
+      "req": 13,
+      "xp": 1000,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Darkshore"
+    },
+    {
+      "id": 981,
+      "level": 31,
+      "req": 13,
+      "xp": 2540,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Darkshore"
+    },
+    {
+      "id": 990,
+      "level": 19,
+      "req": 15,
+      "xp": 365,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Darkshore"
+    },
+    {
+      "id": 991,
+      "level": 19,
+      "req": 18,
+      "xp": 1450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1008,
+      "level": 19,
+      "req": 14,
+      "xp": 1450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1023,
+      "level": 21,
+      "req": 18,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1024,
+      "level": 21,
+      "req": 18,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1082,
+      "level": 22,
+      "req": 18,
+      "xp": 870,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Stonetalon Mountains"
+    },
+    {
+      "id": 1133,
+      "level": 20,
+      "req": 18,
+      "xp": 390,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Darkshore"
+    },
+    {
+      "id": 5321,
+      "level": 20,
+      "req": 17,
+      "xp": 1550,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Darkshore"
+    },
+    {
+      "id": 5713,
+      "level": 15,
+      "req": 13,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Darkshore"
+    },
+    {
+      "id": 9432,
+      "level": 20,
+      "req": 18,
+      "xp": 780,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 10752,
+      "level": 20,
+      "req": 18,
+      "xp": 1150,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Darkshore"
+    },
+    {
+      "id": 1007,
+      "level": 20,
+      "req": 19,
+      "xp": 1150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1009,
+      "level": 25,
+      "req": 20,
+      "xp": 2550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1010,
+      "level": 20,
+      "req": 20,
+      "xp": 780,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1016,
+      "level": 24,
+      "req": 20,
+      "xp": 1950,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1020,
+      "level": 20,
+      "req": 20,
+      "xp": 1950,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1033,
+      "level": 22,
+      "req": 20,
+      "xp": 1750,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1034,
+      "level": 23,
+      "req": 20,
+      "xp": 1850,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9521,
+      "level": 25,
+      "req": 21,
+      "xp": 510,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1025,
+      "level": 24,
+      "req": 18,
+      "xp": 1950,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1026,
+      "level": 27,
+      "req": 18,
+      "xp": 2200,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1054,
+      "level": 25,
+      "req": 18,
+      "xp": 2000,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4581,
+      "level": 29,
+      "req": 24,
+      "xp": 590,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9519,
+      "level": 27,
+      "req": 23,
+      "xp": 2200,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9533,
+      "level": 25,
+      "req": 22,
+      "xp": 1000,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1011,
+      "level": 29,
+      "req": 24,
+      "xp": 2350,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1021,
+      "level": 32,
+      "req": 26,
+      "xp": 2710,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1022,
+      "level": 30,
+      "req": 25,
+      "xp": 2450,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1027,
+      "level": 28,
+      "req": 18,
+      "xp": 2300,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1028,
+      "level": 28,
+      "req": 18,
+      "xp": 1700,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1029,
+      "level": 28,
+      "req": 18,
+      "xp": 230,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1030,
+      "level": 28,
+      "req": 18,
+      "xp": 1700,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1035,
+      "level": 30,
+      "req": 20,
+      "xp": 3050,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1045,
+      "level": 30,
+      "req": 18,
+      "xp": 2450,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1055,
+      "level": 28,
+      "req": 18,
+      "xp": 230,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9516,
+      "level": 30,
+      "req": 26,
+      "xp": 2450,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9517,
+      "level": 28,
+      "req": 24,
+      "xp": 2300,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9518,
+      "level": 28,
+      "req": 24,
+      "xp": 2300,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9526,
+      "level": 30,
+      "req": 27,
+      "xp": 2450,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1012,
+      "level": 32,
+      "req": 24,
+      "xp": 3350,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1031,
+      "level": 32,
+      "req": 26,
+      "xp": 2710,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1032,
+      "level": 32,
+      "req": 26,
+      "xp": 2710,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Stonetalon Mountains": 2,
+    "Teldrassil": 2,
+    "Darkshore": 1
+  }
+}

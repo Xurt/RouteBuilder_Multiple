@@ -1,0 +1,575 @@
+-- 35-45 Badlands: Zone Routes (Alliance).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
+-- Steps that depend on quests from other zones hide themselves unless you have those quests.
+-- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 35, 38, 41).
+-- Split into 3 guides, listed under "35 - 42 Badlands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Edit zones/tbc/Badlands.json and re-run rather than editing this file, or your changes are lost on the next build.
+
+if UnitFactionGroup("player") == "Horde" then return end
+
+RXPGuides.RegisterGuide([[
+#tbc
+<< Alliance
+#version 1
+#group Zone Routes (Alliance)
+#subgroup 35 - 42 Badlands
+#subweight -35
+#name 35-36 Badlands: around Prospector Ryedol
+--RouteBuilder:next
+#next Zone Routes (Alliance)\35-37 Dustwallow Marsh: around Captain Garran Vimes;Zone Routes (Alliance)\34-35 Stranglethorn Vale: around Krazek
+
+step
+    .goto 1418/0,-3407.99,-6609.13
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prospector Ryedol|r
+    .accept 719 >>Accept A Dwarf and His Tools
+    .target Prospector Ryedol
+step
+    .goto 1418/0,-3417.44,-6607.64
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sigrun Ironhew|r
+    .accept 718 >>Accept Mirages
+    .target Sigrun Ironhew
+step
+    #completewith Along2
+    >>As you go: Kill |cRXP_ENEMY_Shadowforge Tunnelers|r, |cRXP_ENEMY_Shadowforge Darkweavers|r, |cRXP_ENEMY_Shadowforge Chanters|r and |cRXP_ENEMY_Shadowforge Warriors|r. Loot them for |cRXP_LOOT_Ryedol's Lucky Pick|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 719,1 --Ryedol's Lucky Pick (1)
+    .mob Shadowforge Tunneler
+    .mob Shadowforge Darkweaver
+    .mob Shadowforge Chanter
+    .mob Shadowforge Warrior
+step
+    #label Along2
+    .goto 1418/0,-3398.29,-6452.42
+    >>Click the |cRXP_PICK_Crumpled Map|r
+    .accept 720 >>Accept A Sign of Hope
+step
+    #completewith Drop635x1
+    >>|cRXP_LOOT_Pendant of Myzrael|r can drop from |cRXP_ENEMY_Dustbelcher Ogre|r, |cRXP_ENEMY_Dustbelcher Brute|r, |cRXP_ENEMY_Dustbelcher Wyrmhunter|r. Use it to start the quest if you get one
+    .collect 4614,1,635 --Pendant of Myzrael (1)
+    .accept 635 >>Accept Crystal in the Mountains
+    .use 4614
+step
+    #label Drop635x1
+    .goto 1418/0,-3405.75,-6431.86
+    >>Kill |cRXP_ENEMY_Shadowforge Tunnelers|r, |cRXP_ENEMY_Shadowforge Darkweavers|r, |cRXP_ENEMY_Shadowforge Chanters|r and |cRXP_ENEMY_Shadowforge Warriors|r. Loot them for |cRXP_LOOT_Ryedol's Lucky Pick|r
+    .complete 719,1 --Ryedol's Lucky Pick (1)
+    .mob Shadowforge Tunneler
+    .mob Shadowforge Darkweaver
+    .mob Shadowforge Chanter
+    .mob Shadowforge Warrior
+step
+    .goto 1418/0,-3735.84,-6254.42
+    >>Open the |cRXP_PICK_Excavation Supply Crate|r. Loot it for |cRXP_LOOT_Supply Crate|r
+    .complete 718,1 --Supply Crate (1)
+step
+    .goto 1418/0,-3417.44,-6607.64
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sigrun Ironhew|r
+    .turnin 718 >>Turn in Mirages
+    .accept 733 >>Accept Scrounging
+    .target Sigrun Ironhew
+step
+    .goto 1418/0,-3407.99,-6609.13
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prospector Ryedol|r
+    .turnin 719 >>Turn in A Dwarf and His Tools
+    .turnin 720 >>Turn in A Sign of Hope
+    .accept 721 >>Accept A Sign of Hope
+    .target Prospector Ryedol
+step
+    .goto 1418/0,-3135.61,-6760.21
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jazzrik|r
+    .target Jazzrik
+    .home >>Set your Hearthstone to Jazzrik's inn
+step
+    .goto 1418/0,-3129.39,-6763.36
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Martek the Exiled|r
+    .turnin 1106 >>Turn in Martek the Exiled
+    .target Martek the Exiled
+    .isOnQuest 1106
+step
+    .goto 1418/0,-3129.39,-6763.36
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Martek the Exiled|r
+    .accept 1108 >>Accept Indurium
+    .target Martek the Exiled
+    .isQuestTurnedIn 1106 --any of: Martek the Exiled
+    .xp <28,1
+step
+    .goto 1418/0,-3133.62,-6767.34
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rigglefuzz|r
+    .accept 705 >>Accept Pearl Diving
+    .accept 703 >>Accept Barbecued Buzzard Wings
+    .accept 2418 >>Accept Power Stones
+    .target Rigglefuzz
+step
+    .goto 1418/0,-3345.06,-6924.38
+    >>Click the |cRXP_PICK_Battered Dwarven Skeleton|r
+    .turnin 738 >>Turn in Find Agmond
+    .isOnQuest 738
+step
+    #completewith Drop635x2
+    >>|cRXP_LOOT_Pendant of Myzrael|r can drop from |cRXP_ENEMY_Dustbelcher Ogre|r, |cRXP_ENEMY_Dustbelcher Brute|r, |cRXP_ENEMY_Dustbelcher Wyrmhunter|r. Use it to start the quest if you get one
+    .collect 4614,1,635 --Pendant of Myzrael (1)
+    .accept 635 >>Accept Crystal in the Mountains
+    .use 4614
+step
+    #label Drop635x2
+    #loop
+    .goto 1418/0,-3348.04,-6985.58,0
+    .goto 1418/0,-3348.04,-6985.58,40,0
+    .goto 1418/0,-3311.23,-7047.10,40,0
+    >>Kill |cRXP_ENEMY_Stonevault Bashers|r, |cRXP_ENEMY_Stonevault Shamans|r, |cRXP_ENEMY_Stonevault Bonesnappers|r and |cRXP_ENEMY_Stonevault Seers|r. Loot them for |cRXP_LOOT_Indurium Flake|r
+    .complete 1108,1 --Indurium Flake (10)
+    .mob Stonevault Basher
+    .mob Stonevault Shaman
+    .mob Stonevault Bonesnapper
+    .mob Stonevault Seer
+    .isOnQuest 1108
+step
+    .goto 1418/0,-3357.49,-7164.34
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Theldurin the Lost|r
+    .turnin 737 >>Turn in Forbidden Knowledge
+    .target Theldurin the Lost
+    .isOnQuest 737
+step
+    .goto 1418/0,-3357.49,-7164.34
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Theldurin the Lost|r
+    .turnin 687 >>Turn in Theldurin the Lost
+    .target Theldurin the Lost
+    .isOnQuest 687
+step
+    .goto 1418/0,-3129.39,-6763.36
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Martek the Exiled|r
+    .turnin 1108 >>Turn in Indurium
+    .target Martek the Exiled
+    .isOnQuest 1108
+step
+    .goto 1418/0,-3129.39,-6763.36
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Martek the Exiled|r
+    .accept 1137 >>Accept News for Fizzle
+    .target Martek the Exiled
+    .isQuestTurnedIn 1108 --any of: Indurium
+    .xp <28,1
+step
+    .goto 1418/0,-2724.67,-6633.68
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lotwil Veriatus|r
+    .accept 713 >>Accept Coolant Heads Prevail
+    .target Lotwil Veriatus
+step
+    .goto 1418/0,-2724.67,-6633.68
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lotwil Veriatus|r
+    .turnin 713 >>Turn in Coolant Heads Prevail
+    .target Lotwil Veriatus
+    .isQuestComplete 713
+step
+    .goto 1418/0,-2724.67,-6633.68
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lotwil Veriatus|r
+    .accept 714 >>Accept Gyro... What?
+    .target Lotwil Veriatus
+    .isQuestTurnedIn 713 --any of: Coolant Heads Prevail
+    .xp <35,1
+step
+    #completewith Drop635x3
+    >>|cRXP_LOOT_Pendant of Myzrael|r can drop from |cRXP_ENEMY_Dustbelcher Ogre|r, |cRXP_ENEMY_Dustbelcher Brute|r, |cRXP_ENEMY_Dustbelcher Wyrmhunter|r. Use it to start the quest if you get one
+    .collect 4614,1,635 --Pendant of Myzrael (1)
+    .accept 635 >>Accept Crystal in the Mountains
+    .use 4614
+step
+    #label Drop635x3
+    #loop
+    .goto 1418/0,-2291.85,-7353.06,0
+    .goto 1418/0,-2291.85,-7353.06,40,0
+    .goto 1418/0,-2278.17,-7421.55,40,0
+    >>Kill |cRXP_ENEMY_Dustbelcher Ogres|r, |cRXP_ENEMY_Dustbelcher Brutes|r, |cRXP_ENEMY_Dustbelcher Wyrmhunters|r and |cRXP_ENEMY_Dustbelcher Maulers|r. Loot them for |cRXP_LOOT_Scrap Metal|r
+    .complete 733,1 --Scrap Metal (1)
+    .mob Dustbelcher Ogre
+    .mob Dustbelcher Brute
+    .mob Dustbelcher Wyrmhunter
+    .mob Dustbelcher Mauler
+step
+    .goto 1418/0,-3653.01,-6787.07
+    >>Kill |cRXP_ENEMY_Starving Buzzards|r, |cRXP_ENEMY_Buzzards|r, |cRXP_ENEMY_Giant Buzzards|r and |cRXP_ENEMY_Zaricotls|r. Loot them for |cRXP_LOOT_Buzzard Wing|r
+    .complete 703,1 --Buzzard Wing (4)
+    .mob Starving Buzzard
+    .mob Buzzard
+    .mob Giant Buzzard
+    .mob Zaricotl
+step
+    .goto 1418/0,-3133.62,-6767.34
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rigglefuzz|r
+    .turnin 703 >>Turn in Barbecued Buzzard Wings
+    .target Rigglefuzz
+step
+    .goto 1418/0,-2721.44,-6623.23
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lucien Tosselwrench|r
+    .accept 715 >>Accept Liquid Stone
+    .target Lucien Tosselwrench
+    .isQuestTurnedIn 714 --any of: Gyro... What?
+    .xp <35,1
+step
+    .goto 1418/0,-2724.67,-6633.68
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lotwil Veriatus|r
+    .turnin 714 >>Turn in Gyro... What?
+    .target Lotwil Veriatus
+    .isQuestComplete 714
+step
+    .goto 1418/0,-2721.44,-6623.23
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lucien Tosselwrench|r
+    .turnin 715 >>Turn in Liquid Stone
+    .target Lucien Tosselwrench
+    .isQuestComplete 715
+step
+    .goto 1418/0,-3021.93,-6065.20
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hammertoe Grez|r
+    .turnin 721 >>Turn in A Sign of Hope
+    .accept 722 >>Accept Amulet of Secrets
+    .target Hammertoe Grez
+step
+    #completewith Drop635x4
+    >>|cRXP_LOOT_Pendant of Myzrael|r can drop from |cRXP_ENEMY_Dustbelcher Ogre|r, |cRXP_ENEMY_Dustbelcher Brute|r, |cRXP_ENEMY_Dustbelcher Wyrmhunter|r. Use it to start the quest if you get one
+    .collect 4614,1,635 --Pendant of Myzrael (1)
+    .accept 635 >>Accept Crystal in the Mountains
+    .use 4614
+step
+    #label Drop635x4
+    .goto 1418/0,-3049.04,-6216.77
+    >>Kill |cRXP_ENEMY_Magregan Deepshadow|r and loot |cRXP_LOOT_Hammertoe's Amulet|r
+    .complete 722,1 --Hammertoe's Amulet (1)
+    .mob Magregan Deepshadow
+step
+    .goto 1418/0,-3021.93,-6065.20
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hammertoe Grez|r
+    .turnin 722 >>Turn in Amulet of Secrets
+    .accept 723 >>Accept Prospect of Faith
+    .target Hammertoe Grez
+step
+    #completewith Drop635x5
+    >>|cRXP_LOOT_Pendant of Myzrael|r can drop from |cRXP_ENEMY_Dustbelcher Ogre|r, |cRXP_ENEMY_Dustbelcher Brute|r, |cRXP_ENEMY_Dustbelcher Wyrmhunter|r. Use it to start the quest if you get one
+    .collect 4614,1,635 --Pendant of Myzrael (1)
+    .accept 635 >>Accept Crystal in the Mountains
+    .use 4614
+step
+    #label Drop635x5
+    #loop
+    .goto 1418/0,-3218.44,-6065.37,0
+    .goto 1418/0,-3218.44,-6065.37,40,0
+    .goto 1418/0,-3288.09,-6068.68,40,0
+    >>Kill |cRXP_ENEMY_Shadowforge Surveyors|r, |cRXP_ENEMY_Shadowforge Ruffians|r and |cRXP_ENEMY_Shadowforge Diggers|r. Loot them for |cRXP_LOOT_Dentrium Power Stone|r
+    >>Kill |cRXP_ENEMY_Shadowforge Surveyors|r, |cRXP_ENEMY_Shadowforge Ruffians|r and |cRXP_ENEMY_Shadowforge Diggers|r. Loot them for |cRXP_LOOT_An'Alleum Power Stone|r
+    .complete 2418,1 --Dentrium Power Stone (8)
+    .complete 2418,2 --An'Alleum Power Stone (8)
+    .mob Shadowforge Surveyor
+    .mob Shadowforge Ruffian
+    .mob Shadowforge Digger
+step
+    #completewith next
+    .hs >>Hearth to Jazzrik's inn. |cRXP_WARN_Walk instead if you are already nearby|r
+    .cooldown item,6948,>0,1
+step
+    .goto 1418/0,-3133.62,-6767.34
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rigglefuzz|r
+    .turnin 2418 >>Turn in Power Stones
+    .target Rigglefuzz
+step
+    .goto 1418/0,-3133.62,-6767.34
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rigglefuzz|r
+    .turnin 705 >>Turn in Pearl Diving
+    .target Rigglefuzz
+    .isQuestComplete 705
+step
+    .goto 1418/0,-3407.99,-6609.13
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prospector Ryedol|r
+    .turnin 723 >>Turn in Prospect of Faith
+    .accept 724 >>Accept Prospect of Faith
+    .target Prospector Ryedol
+step
+    .goto 1418/0,-3417.44,-6607.64
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sigrun Ironhew|r
+    .turnin 733 >>Turn in Scrounging
+    .target Sigrun Ironhew
+step
+    #completewith Drop635x6
+    >>|cRXP_LOOT_Pendant of Myzrael|r can drop from |cRXP_ENEMY_Dustbelcher Ogre|r, |cRXP_ENEMY_Dustbelcher Brute|r, |cRXP_ENEMY_Dustbelcher Wyrmhunter|r. Use it to start the quest if you get one
+    .collect 4614,1,635 --Pendant of Myzrael (1)
+    .accept 635 >>Accept Crystal in the Mountains
+    .use 4614
+step
+    #label Drop635x6
+    .goto 1418/0,-3387.34,-6448.28
+    >>Kill |cRXP_ENEMY_Dustbelcher Ogres|r, |cRXP_ENEMY_Dustbelcher Brutes|r, |cRXP_ENEMY_Dustbelcher Maulers|r and |cRXP_ENEMY_Dustbelcher Shamans|r. Loot them for |cRXP_LOOT_Healing Potion|r
+    .complete 715,1 --Healing Potion (1)
+    .mob Dustbelcher Ogre
+    .mob Dustbelcher Brute
+    .mob Dustbelcher Mauler
+    .mob Dustbelcher Shaman
+    .isOnQuest 715
+step
+    +|cRXP_WARN_That is all of Badlands for now.|r Quests still in your log lead on from here; pick your next zone by them
+    >>|cRXP_FRIENDLY_Arathi Highlands|r: Crystal in the Mountains
+    >>|cRXP_FRIENDLY_Ironforge|r: Prospect of Faith
+    >>|cRXP_FRIENDLY_Thousand Needles|r: News for Fizzle
+    >>|cRXP_FRIENDLY_Stranglethorn Vale and back here|r: Pearl Diving
+    >>|cRXP_FRIENDLY_Elsewhere and back here|r: Coolant Heads Prevail
+step
+    +|cRXP_WARN_Suggested next zones at level 35|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 2.2 levels of quests, starting around Captain Garran Vimes), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests, starting around Krazek). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
+step
+    +|cRXP_WARN_The rest of Badlands is planned from level 38.|r Load its guide for level 38 then
+]])
+
+RXPGuides.RegisterGuide([[
+#tbc
+<< Alliance
+#version 1
+#group Zone Routes (Alliance)
+#subgroup 35 - 42 Badlands
+#subweight -35
+#name 38-39 Badlands
+--RouteBuilder:next
+#next Zone Routes (Alliance)\38-40 Stranglethorn Vale: around Fleet Master Seahorn;Zone Routes (Alliance)\37-39 Dustwallow Marsh: around "Swamp Eye" Jarl;Zone Routes (Alliance)\38-39 Arathi Highlands: around Skuerto
+
+step
+    .goto 1418/0,-3133.62,-6767.34
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rigglefuzz|r
+    .turnin 705 >>Turn in Pearl Diving
+    .target Rigglefuzz
+    .isQuestComplete 705
+step
+    .goto 1418/0,-3357.49,-7164.34
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Theldurin the Lost|r
+    .accept 709 >>Accept Solution to Doom
+    .target Theldurin the Lost
+step
+    .goto 1418/0,-2724.67,-6633.68
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lotwil Veriatus|r
+    .turnin 713 >>Turn in Coolant Heads Prevail
+    .target Lotwil Veriatus
+    .isQuestComplete 713
+step
+    .goto 1418/0,-2724.67,-6633.68
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lotwil Veriatus|r
+    .accept 710 >>Accept Study of the Elements: Rock
+    .target Lotwil Veriatus
+step
+    #loop
+    .goto 1418/0,-2606.52,-6650.43,0
+    .goto 1418/0,-2606.52,-6650.43,40,0
+    .goto 1418/0,-2547.07,-6602.50,40,0
+    .goto 1418/0,-2454.03,-6512.62,40,0
+    >>Kill |cRXP_ENEMY_Lesser Rock Elementals|r. Loot them for |cRXP_LOOT_Small Stone Shard|r
+    .complete 710,1 --Small Stone Shard (10)
+    .mob Lesser Rock Elemental
+step
+    .goto 1418/0,-2724.67,-6633.68
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lotwil Veriatus|r
+    .turnin 710 >>Turn in Study of the Elements: Rock
+    .accept 711 >>Accept Study of the Elements: Rock
+    .target Lotwil Veriatus
+step
+    #loop
+    .goto 1418/0,-2453.29,-6474.81,0
+    .goto 1418/0,-2453.29,-6474.81,40,0
+    .goto 1418/0,-2413.49,-6443.96,40,0
+    >>Kill |cRXP_ENEMY_Rock Elementals|r. Loot them for |cRXP_LOOT_Large Stone Slab|r
+    .complete 711,1 --Large Stone Slab (3)
+    .mob Rock Elemental
+step
+    .goto 1418/0,-2724.67,-6633.68
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lotwil Veriatus|r
+    .turnin 711 >>Turn in Study of the Elements: Rock
+    .target Lotwil Veriatus
+step
+    .goto 1418/0,-3057.75,-6201.68
+    >>Open the |cRXP_PICK_Ancient Chest|r. Loot it for |cRXP_LOOT_Tablet of Ryun'eh|r
+    .complete 709,1 --Tablet of Ryun'eh (1)
+step
+    .goto 1418/0,-3357.49,-7164.34
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Theldurin the Lost|r
+    .turnin 709 >>Turn in Solution to Doom
+    .accept 727 >>Accept To Ironforge for Yagyin's Digest
+    .target Theldurin the Lost
+step
+    +|cRXP_WARN_That is all of Badlands for now.|r Quests still in your log lead on from here; pick your next zone by them
+    >>|cRXP_FRIENDLY_Ironforge|r: To Ironforge for Yagyin's Digest
+step
+    +|cRXP_WARN_Suggested next zones at level 38|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.9 levels of quests, starting around Fleet Master Seahorn), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 0.7 levels of quests, starting around "Swamp Eye" Jarl), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.7 levels of quests, starting around Skuerto). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+step
+    +|cRXP_WARN_The rest of Badlands is planned from level 41.|r Load its guide for level 41 then
+]])
+
+RXPGuides.RegisterGuide([[
+#tbc
+<< Alliance
+#version 1
+#group Zone Routes (Alliance)
+#subgroup 35 - 42 Badlands
+#subweight -35
+#name 41-42 Badlands
+--RouteBuilder:next
+#next Zone Routes (Alliance)\38-40 Stranglethorn Vale: around Fleet Master Seahorn
+
+step
+    .goto 1418/0,-3619.92,-6789.39
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Garek|r
+    .accept 732 >>Accept Tremors of the Earth
+    .target Garek
+    .isQuestTurnedIn 718 --any of: Mirages
+step
+    .goto 1418/0,-3133.62,-6767.34
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rigglefuzz|r
+    .turnin 705 >>Turn in Pearl Diving
+    .target Rigglefuzz
+    .isQuestComplete 705
+step
+    .goto 1418/0,-3345.06,-6924.38
+    >>Click the |cRXP_PICK_Battered Dwarven Skeleton|r
+    .accept 739 >>Accept Murdaloc
+    .isQuestTurnedIn 738 --any of: Find Agmond
+    .xp <30,1
+step
+    .goto 1418/0,-3313.71,-6989.22
+    >>Kill |cRXP_ENEMY_Murdaloc|r
+    .complete 739,1 --Murdaloc slain (1)
+    .mob Murdaloc
+    .isOnQuest 739
+step
+    #loop
+    .goto 1418/0,-3348.04,-6985.58,0
+    .goto 1418/0,-3348.04,-6985.58,40,0
+    .goto 1418/0,-3291.08,-7082.42,40,0
+    >>Kill |cRXP_ENEMY_Stonevault Bonesnappers|r
+    .complete 739,2 --Stonevault Bonesnapper slain (12)
+    .mob Stonevault Bonesnapper
+    .isOnQuest 739
+step
+    .goto 1418/0,-3357.49,-7164.34
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Theldurin the Lost|r
+    .accept 692 >>Accept The Lost Fragments
+    .target Theldurin the Lost
+    .isQuestTurnedIn 687 --any of: Theldurin the Lost
+    .xp <30,1
+step
+    .goto 1418/0,-3419.18,-7281.09
+    >>Kill |cRXP_ENEMY_Enraged Rock Elemental|r and loot |cRXP_LOOT_Torn Scroll Fragment|r
+    .complete 692,1 --Torn Scroll Fragment (1)
+    .mob Enraged Rock Elemental
+    .isOnQuest 692
+step
+    .goto 1418/0,-3419.18,-7281.09
+    >>Kill |cRXP_ENEMY_Enraged Rock Elemental|r and loot |cRXP_LOOT_Crumpled Scroll Fragment|r
+    .complete 692,2 --Crumpled Scroll Fragment (1)
+    .mob Enraged Rock Elemental
+    .isOnQuest 692
+step
+    .goto 1418/0,-3419.18,-7281.09
+    >>Kill |cRXP_ENEMY_Enraged Rock Elemental|r and loot |cRXP_LOOT_Singed Scroll Fragment|r
+    .complete 692,3 --Singed Scroll Fragment (1)
+    .mob Enraged Rock Elemental
+    .isOnQuest 692
+step
+    .goto 1418/0,-3357.49,-7164.34
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Theldurin the Lost|r
+    .turnin 692 >>Turn in The Lost Fragments
+    .target Theldurin the Lost
+    .isOnQuest 692
+step
+    .goto 1418/0,-2724.67,-6633.68
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lotwil Veriatus|r
+    .turnin 713 >>Turn in Coolant Heads Prevail
+    .target Lotwil Veriatus
+    .isQuestComplete 713
+step
+    .goto 1418/0,-2724.67,-6633.68
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lotwil Veriatus|r
+    .accept 712 >>Accept Study of the Elements: Rock
+    .target Lotwil Veriatus
+    .isQuestTurnedIn 711 --any of: Study of the Elements: Rock
+step
+    #loop
+    .goto 1418/0,-2215.48,-7165.67,0
+    .goto 1418/0,-2215.48,-7165.67,40,0
+    .goto 1418/0,-2153.79,-7213.10,40,0
+    >>Kill |cRXP_ENEMY_Greater Rock Elementals|r. Loot them for |cRXP_LOOT_Bracers of Rock Binding|r
+    .complete 712,1 --Bracers of Rock Binding (5)
+    .mob Greater Rock Elemental
+    .isOnQuest 712
+step
+    .goto 1418/0,-2724.67,-6633.68
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lotwil Veriatus|r
+    .turnin 712 >>Turn in Study of the Elements: Rock
+    .target Lotwil Veriatus
+    .isOnQuest 712
+step
+    .goto 1418/0,-2724.67,-6633.68
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lotwil Veriatus|r
+    .accept 734 >>Accept This Is Going to Be Hard
+    .target Lotwil Veriatus
+    .isQuestTurnedIn 714 --Gyro... What?
+    .xp <35,1
+    .isQuestTurnedIn 712 --Study of the Elements: Rock
+step
+    .goto 1418/0,-2721.44,-6623.23
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lucien Tosselwrench|r
+    .turnin 734 >>Turn in This Is Going to Be Hard
+    .target Lucien Tosselwrench
+    .isOnQuest 734
+step
+    .goto 1418/0,-2721.44,-6623.23
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lucien Tosselwrench|r
+    .accept 777 >>Accept This Is Going to Be Hard
+    .target Lucien Tosselwrench
+    .isQuestTurnedIn 734 --any of: This Is Going to Be Hard
+    .xp <35,1
+step
+    .goto 1418/0,-2721.44,-6623.23
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lucien Tosselwrench|r
+    .accept 716 >>Accept Stone Is Better than Cloth
+    .target Lucien Tosselwrench
+    .isQuestTurnedIn 712 --any of: Study of the Elements: Rock
+step
+    .goto 1418/0,-2721.44,-6623.23
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lucien Tosselwrench|r
+    .turnin 716 >>Turn in Stone Is Better than Cloth
+    .target Lucien Tosselwrench
+    .isQuestComplete 716
+step
+    .goto 1418/0,-2724.67,-6633.68
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lotwil Veriatus|r
+    .turnin 777 >>Turn in This Is Going to Be Hard
+    .target Lotwil Veriatus
+    .isOnQuest 777
+step
+    .goto 1418/0,-2393.09,-7141.46
+    >>Kill |cRXP_ENEMY_Boss Tho'grun|r and loot |cRXP_LOOT_Sign of the Earth|r
+    .complete 732,1 --Sign of the Earth (1)
+    .mob Boss Tho'grun
+    .isOnQuest 732
+step
+    .goto 1418/0,-3417.44,-6607.64
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sigrun Ironhew|r
+    .accept 706 >>Accept Fiery Blaze Enchantments
+    .target Sigrun Ironhew
+step
+    .goto 1418/0,-3619.92,-6789.39
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Garek|r
+    .turnin 732 >>Turn in Tremors of the Earth
+    .target Garek
+    .isOnQuest 732
+step
+    #loop
+    .goto 1418/0,-3847.28,-6746.94,0
+    .goto 1418/0,-3847.28,-6746.94,40,0
+    .goto 1418/0,-4005.49,-6781.77,40,0
+    >>Kill |cRXP_ENEMY_Scalding Whelps|r and |cRXP_ENEMY_Scorched Guardians|r. Loot them for |cRXP_LOOT_Black Drake's Heart|r
+    .complete 706,1 --Black Drake's Heart (1)
+    .mob Scalding Whelp
+    .mob Scorched Guardian
+step
+    .goto 1418/0,-3417.44,-6607.64
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sigrun Ironhew|r
+    .turnin 706 >>Turn in Fiery Blaze Enchantments
+    .target Sigrun Ironhew
+step
+    +|cRXP_WARN_End of the Badlands route.|r Quests still in your log lead on from here; pick your next zone by them
+    >>|cRXP_FRIENDLY_Loch Modan|r: Murdaloc
+    >>|cRXP_FRIENDLY_Elsewhere and back here|r: Stone Is Better than Cloth
+step
+    +|cRXP_WARN_Suggested next zones at level 41|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests, starting around Fleet Master Seahorn). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+]])

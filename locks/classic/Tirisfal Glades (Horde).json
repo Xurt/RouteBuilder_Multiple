@@ -1,7 +1,7 @@
 {
   "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
   "guide": "1-13 Tirisfal Glades",
-  "saved": "2026-10-23 14:16",
+  "saved": "2026-10-23 18:18",
   "levels": "RestedXP",
   "parts": [
     {
@@ -176,6 +176,8 @@
         "obj:1473:1 @1420:726.06,1801.95  Objective Creature of the Void / Egalin's Grimoire (1)",
         "turnin:1473 @1458:57.15,1711.58  TurnIn Creature of the Void",
         "accept:1471 @1458:57.15,1711.58  Accept The Binding",
+        "obj:1471:1 @1458:57.15,1711.58  Objective The Binding / Summoned Voidwalker (1)",
+        "turnin:1471 @1458:57.15,1711.58  TurnIn The Binding",
         "obj:362:1 @1420:894.16,2609  Objective The Haunted Mills / Devlin's Remains (1)",
         "obj:354:2 @1420:785.71,2742.76  Objective Deaths in the Family / Nissa's Remains (1)",
         "obj:354:3 @1420:1045.08,2824.09  Objective Deaths in the Family / Thurman's Remains (1)",
@@ -349,7 +351,6 @@
         {"lines":[".goto 1420/0,238.49,2255.03",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Austil|r",".train 285 >>Train your class spells",".target Austil de Mon",".xp <16,1"],"tag":"Undead Warrior","from":"RestedXP: 12-14 Silverpine Forest"},
         {"lines":[".goto 1420/0,250.24,2259.25",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rupert|r",".train 6222 >> Train your class spells",".target Rupert Boch",".xp <14,1",".xp >16,1"],"tag":"Undead Warlock","from":"RestedXP: 12-14 Silverpine Forest"},
         {"lines":[".goto 1420/0,250.24,2259.25",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rupert|r",".train 1455 >> Train your class spells",".target Rupert Boch",".xp <16,1"],"tag":"Undead Warlock","from":"RestedXP: 12-14 Silverpine Forest"},
-        "turnin:1471 @1458:57.15,1711.58  TurnIn The Binding",
         "accept:408 @1420:265.15,2305.94  Accept The Family Crypt",
         "obj:408:3 @1420:646.98,3043.71  Objective The Family Crypt / Dargol's Skull (1)",
         "obj:408:1 @1420:673.19,3010.57  Objective The Family Crypt / Wailing Ancestor slain (8)",

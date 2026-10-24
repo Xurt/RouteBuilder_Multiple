@@ -1,0 +1,202 @@
+The Cape of Stranglethorn - Alliance - part 1 of 3, planned from level 30
+Guide "30-35 The Cape of Stranglethorn" in group "Zone Routes (Alliance)": this part has 85 steps, 76 stops
+Written to guides/mop/The Cape of Stranglethorn (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 9 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+5 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 30. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 105 steps kept, 8 new ones slotted in, 0 moved because their prerequisites changed, 5 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 108 tasks, 14,824 yd on foot; ends at level 32.9; 1 hearth; at its hardest you are 2.7 levels below the mobs
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 14,825 yd; ends at level 32.9; 1 hearth; at its hardest you are 2.7 levels below the mobs
+Hearthstone: set at Fargon Mortalak (Fargon Mortalak's inn); 1 hearth step in the guide.
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (41)
+------------------------
+Start to finish here: 35 (21 for everyone, 14 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Through the Troll Hole [26811, level 32, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Northern Stranglethorn
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  To the Cape! [26805, level 30, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Northern Stranglethorn
+  Hero's Call: The Cape of Stranglethorn! [28702, level 30, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Stormwind City
+  High Priest Venoxis [26814, level 32, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Northern Stranglethorn
+  Rescue OOX-09/HL! [836, level 35] <- The Hinterlands
+  Rescue OOX-22/FE! [25476, level 37] <- Feralas
+
+Worth checking in game
+----------------------
+  Gurubashi Challenge: Free-For-All Arena Combat [26451, level 30]: Gurubashi Arena Challenger is level 85, far above this level 30 quest, so the objective is taken to be "talk to" rather than "kill"
+  Details of the Attack [26612, level 33]: could not read how many Bloodsail Elder Magus are needed from the quest text; assumed 8
+  High Priest Venoxis [26814, level 32, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: High Priest Venoxis is level 87, far above this level 32 quest, so the objective is taken to be "talk to" rather than "kill"
+
+Put off to a later part (24)
+----------------------------
+These need a higher level than this part ends at:
+  The Call of Kalimdor [26596, level 35]: needs level 34; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 32.9
+  Seeing Where Your Loyalties Lie [26629, level 33]: its mobs are level 60; this part gets you to about 34.8
+  Your First Day as a Pirate [26631, level 33]: follows Seeing Where Your Loyalties Lie [26629]
+  Swabbing Duty [26633, level 33]: follows Your First Day as a Pirate [26631]
+  The Bane of Many A Pirate [26634, level 33]: follows Your First Day as a Pirate [26631]
+  Cannonball Swim [26635, level 33]: follows Your First Day as a Pirate [26631]
+  Attracting Attention [26644, level 34]: follows Swabbing Duty [26633]
+  Ol' Blasty [26647, level 34]: follows Attracting Attention [26644]
+  Our Mortal Enemies [26648, level 34]: follows Attracting Attention [26644]
+  Drive-By Piracy [26649, level 34]: follows Ol' Blasty [26647]
+  The Damsel's Luck [26650, level 35]: follows Drive-By Piracy [26649]
+  The Brashtide Crew [26662, level 35]: follows The Damsel's Luck [26650]
+  Sinking From Within [26663, level 35]: follows The Damsel's Luck [26650]
+  Making Mutiny [26664, level 35]: follows The Damsel's Luck [26650]
+  Call of Booty [26665, level 35]: follows The Brashtide Crew [26662]
+  Doublerum [26678, level 35]: follows Call of Booty [26665]
+  Return to Revilgaz [26679, level 35]: follows Doublerum [26678]
+  Prepare for Takeoff [26695, level 35]: follows Return to Revilgaz [26679]
+  The Final Voyage of the Brashtide [26697, level 35]: follows Prepare for Takeoff [26695]
+  Seeking Seahorn [26698, level 35]: follows Return to Revilgaz [26679]
+  Turning the Brashtide [26699, level 35]: follows Seeking Seahorn [26698]
+  The Damsel's (Bad) Luck [26700, level 35]: follows Seeking Seahorn [26698]
+  Bloodsail's End [26703, level 35]: follows The Final Voyage of the Brashtide [26697]
+  The Battle for Andorhal [28749, level 35]: needs level 34; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 32.9
+
+Left out (122)
+--------------
+not in the game (on Questie's quest blacklist) (82):
+  Bloodscalp Ears [189], Skullsplitter Tusks [209], Hostile Takeover [213], Stranglethorn Fever [348], Stranglethorn Fever [349], Keep An Eye Out [576], The Stone of the Tides [578], Whiskey Slim's Lost Grog [580], Up to Snuff [587], Message in a Bottle [594], The Bloodsail Buccaneers [595], The Bloodsail Buccaneers [597], The Bloodsail Buccaneers [599], Venture Company Mining [600], Water Elementals [601], Ansirem's Key [603], The Bloodsail Buccaneers [604], Singing Blue Shards [605], Scaring Shaky [606], Return to MacKinley [607], The Bloodsail Buccaneers [608], Voodoo Dues [609], "Pretty Boy" Duncan [610], The Curse of the Tides [611], Cracking Maury's Foot [613], The Captain's Chest [614], The Captain's Cutlass [615], The Haunted Isle [616], Akiris by the Bundle [617], Facing Negolash [618], Enticing Negolash [619], The Monogrammed Sash [620], Zanzil's Secret [621], Message in a Bottle [630], Sunken Treasure [669], Passage to Booty Bay [1040], Back to Booty Bay [1118], Report Back to Fizzlebub [1122], Goblin Sponsorship [1180], Goblin Sponsorship [1181], ... 42 more
+helper for Bwemba's Spirit (15):
+  To Fort Livingston [29102], Spirits Are With Us [29104], Track the Tracker [29114], The Hunter's Revenge [29115], Follow That Cat [29116], Follow That Cat [29118], Mauti [29120], Bury Me With Me Boots... [29121], Warn the Rebel Camp [29124], To the Digsite [29133], Voodoo Zombies [29150], Bad Supplies [29151], Making Contact [29152], How's the Hunter Holding Up? [29213], Some Good Will Come [29267]
+repeatable (12):
+  Arena Grandmaster [7838], Master Angler [8193], Apprentice Angler [8194], Rare Fish - Keefer's Angelfish [8221], Rare Fish - Dezian Queenfish [8224], Rare Fish - Brownell's Blue Striped Racer [8225], Traitor to the Bloodsail [9259], Gurubashi Challenge [26452], The Heart of Mokk [26598], Bill Buckler [31851], Second Place [32435], Third Place [32436]
+above this zone's range of 30-37 (3):
+  Rescue OOX-17/TN! [648], An OOX of Your Own [3721], Arena Master [7810]
+needs reputation (3):
+  Avast Ye, Scallywag [1036], Avast Ye, Admiral! [4621], Dressing the Part [9272]
+special category (sort -380) (2):
+  Bwemba's Spirit [29100], A Shiny Reward [29155]
+dungeon quest (2):
+  Booty Bay's Interests [29153], Booty Bay's Interests [29154]
+special category (sort -394) (2):
+  Bill Buckler [31728], A Tamer's Homecoming [31917]
+helper for Seeing Where Your Loyalties Lie (1):
+  Looks Like a Tauren Pirate to Me [26630]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Cape of Stranglethorn - Alliance - part 2 of 3, planned from level 35
+Guide "30-35 The Cape of Stranglethorn" in group "Zone Routes (Alliance)": this part has 4 steps, 2 stops
+Written to guides/mop/The Cape of Stranglethorn (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 35. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 2 tasks, 169 yd on foot; ends at level 35.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  The Call of Kalimdor [26596, level 35, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> The Barrens
+  The Battle for Andorhal [28749, level 35, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Western Plaguelands
+
+Worth checking in game
+----------------------
+
+Put off to a later part (22)
+----------------------------
+These need a higher level than this part ends at:
+  Seeing Where Your Loyalties Lie [26629, level 33]: its mobs are level 60; this part gets you to about 36.7
+  Your First Day as a Pirate [26631, level 33]: follows Seeing Where Your Loyalties Lie [26629]
+  Swabbing Duty [26633, level 33]: follows Your First Day as a Pirate [26631]
+  The Bane of Many A Pirate [26634, level 33]: follows Your First Day as a Pirate [26631]
+  Cannonball Swim [26635, level 33]: follows Your First Day as a Pirate [26631]
+  Attracting Attention [26644, level 34]: follows Swabbing Duty [26633]
+  Ol' Blasty [26647, level 34]: follows Attracting Attention [26644]
+  Our Mortal Enemies [26648, level 34]: follows Attracting Attention [26644]
+  Drive-By Piracy [26649, level 34]: follows Ol' Blasty [26647]
+  The Damsel's Luck [26650, level 35]: follows Drive-By Piracy [26649]
+  The Brashtide Crew [26662, level 35]: follows The Damsel's Luck [26650]
+  Sinking From Within [26663, level 35]: follows The Damsel's Luck [26650]
+  Making Mutiny [26664, level 35]: follows The Damsel's Luck [26650]
+  Call of Booty [26665, level 35]: follows The Brashtide Crew [26662]
+  Doublerum [26678, level 35]: follows Call of Booty [26665]
+  Return to Revilgaz [26679, level 35]: follows Doublerum [26678]
+  Prepare for Takeoff [26695, level 35]: follows Return to Revilgaz [26679]
+  The Final Voyage of the Brashtide [26697, level 35]: follows Prepare for Takeoff [26695]
+  Seeking Seahorn [26698, level 35]: follows Return to Revilgaz [26679]
+  Turning the Brashtide [26699, level 35]: follows Seeking Seahorn [26698]
+  The Damsel's (Bad) Luck [26700, level 35]: follows Seeking Seahorn [26698]
+  Bloodsail's End [26703, level 35]: follows The Final Voyage of the Brashtide [26697]
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Cape of Stranglethorn - Alliance - part 3 of 3, planned from level 58
+Guide "30-35 The Cape of Stranglethorn" in group "Zone Routes (Alliance)": this part has 67 steps, 62 stops
+Written to guides/mop/The Cape of Stranglethorn (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 58. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 64 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 65 tasks, 7,643 yd on foot; ends at level 58.5; at its hardest you are 2.0 levels below the mobs
+Hearthstone: set at Cowardly Crosby (Cowardly Crosby's inn); 0 hearth steps in the guide.
+4 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (22)
+------------------------
+Start to finish here: 22 (22 for everyone)
+
+Worth checking in game
+----------------------
+  The Final Voyage of the Brashtide [26697, level 35]: could not read how many Brashtide Crewman are needed from the quest text; assumed 8
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

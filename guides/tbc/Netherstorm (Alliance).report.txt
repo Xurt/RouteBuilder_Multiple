@@ -1,0 +1,104 @@
+Netherstorm - Alliance - part 1 of 2, planned from level 68
+Guide "68-70 Netherstorm" in group "Zone Routes (Alliance)": this part has 275 steps, 225 stops
+Written to guides/tbc/Netherstorm (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 16 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+14 pickups or hand-ins are within reach of a stop but planned for later.
+10 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 68. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 309 steps kept, 24 new ones slotted in, 4 moved because their prerequisites changed, 2 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 336 tasks, 48,461 yd on foot; ends at level 69.8; 1 hearth; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 48,525 yd; ends at level 69.8; 1 hearth; at its hardest you are 1.8 levels below the mobs
+Hearthstone: set at Dealer Dunar (Dealer Dunar's inn); 1 hearth step in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 68 for Sabotage the Warp-Gate!
+3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+50 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+7 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (112)
+-------------------------
+Start to finish here: 109 (109 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Special Delivery to Shattrath City [10280, level 70] -> Shattrath City
+
+Hand-in step only shows once complete (1):
+  Capturing the Keystone [10257, level 70] - needs The Keystone (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Parts for the Rocket-Chief [11040, level 67] <- Blade's Edge Mountains
+
+Worth checking in game
+----------------------
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  Nexus-King Salhadaar [10408, level 70]: its mobs are level 72; this part gets you to about 69.8
+
+Left out (56)
+-------------
+needs reputation (45):
+  A Colleague's Aid [9631], Kalynna's Request [9637], Nightbane [9644], Manaforge B'naar [10189], High Value Targets [10193], Stealth Flight [10194], A Convincing Disguise [10197], Information Gathering [10198], Return to Thalodien [10200], A Defector [10202], Bloodgem Crystals [10204], Distraction at Manaforge B'naar [10241], Naaru Technology [10243], B'naar Console Transcription [10245], Attack on Manaforge Coruu [10246], Assisting the Consortium [10263], Assisting the Consortium [10264], Shutting Down Manaforge B'naar [10299], Measuring Warp Energies [10313], Shutting Down Manaforge Coruu [10321], Shutting Down Manaforge Duro [10322], Shutting Down Manaforge Ara [10323], Sunfury Briefings [10328], Shutting Down Manaforge B'naar [10329], Shutting Down Manaforge Coruu [10330], Shutting Down Manaforge Duro [10338], Kick Them While They're Down [10341], Shutting Down Manaforge Ara [10365], A Dark Pact [10380], Aldor No More [10381], Socrethar's Shadow [10407], Ishanah's Help [10410], Outside Assistance [10431], Damning Evidence [10432], A Gift for Voren'thal [10508], Bound for Glory [10509], Behind Enemy Lines [10652], Seek Out Ameer [10969], A Mission of Mercy [10970], Ethereum Secrets [10971], ... 5 more
+not in the game (on Questie's quest blacklist) (6):
+  Desecrate this Fire! [11799], Honor the Flame [11830], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Candy Bucket [12407], Candy Bucket [12408]
+repeatable (3):
+  Another Heap of Ethereals [10308], Nether Gas In a Fel Fire Engine [10850], Ethereum Prisoner I.D. Catalogue [10972]
+needs a profession (2):
+  Master of Transmutation [10899], Master of Transmutation [10907]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Netherstorm - Alliance - part 2 of 2, planned from level 70
+Guide "68-70 Netherstorm" in group "Zone Routes (Alliance)": this part has 5 steps, 4 stops
+Written to guides/tbc/Netherstorm (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 70. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 322 yd on foot; ends at level 70.0; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 1,596 yd; ends at level 70.0; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Capturing the Keystone [10257, level 70] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

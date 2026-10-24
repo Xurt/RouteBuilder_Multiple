@@ -1,0 +1,160 @@
+Burning Steppes - Alliance - part 1 of 2, planned from level 50
+Guide "50-52 Burning Steppes" in group "Zone Routes (Alliance)": this part has 93 steps, 83 stops
+Written to guides/mop/Burning Steppes (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: 232 PROBLEMS
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Human Warrior)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Human Paladin)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Human Hunter)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Human Rogue)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Human Priest)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Human DeathKnight)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Human Mage)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Human Warlock)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Human Monk)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Dwarf Warrior)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Dwarf Paladin)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Dwarf Hunter)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Dwarf Rogue)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Dwarf Priest)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Dwarf DeathKnight)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Dwarf Shaman)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Dwarf Mage)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Dwarf Warlock)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Dwarf Monk)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (NightElf Warrior)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (NightElf Hunter)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (NightElf Rogue)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (NightElf Priest)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (NightElf DeathKnight)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (NightElf Mage)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (NightElf Monk)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (NightElf Druid)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Gnome Warrior)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Gnome Rogue)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Gnome Priest)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Gnome DeathKnight)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Gnome Mage)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Gnome Warlock)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Gnome Monk)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Draenei Warrior)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Draenei Paladin)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Draenei Hunter)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Draenei Priest)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Draenei DeathKnight)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Draenei Shaman)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Draenei Mage)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Draenei Monk)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Worgen Warrior)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Worgen Hunter)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Worgen Rogue)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Worgen Priest)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Worgen DeathKnight)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Worgen Mage)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Worgen Warlock)
+  ! Taking the Horn For Ourselves is picked up before any of the quests that unlock it (Worgen Druid)
+  ! Into the Black Tooth Hovel (28239) is never picked up (Pandaren Warrior)
+  ! Grunt Work (28245) is never picked up (Pandaren Warrior)
+  ! Strategic Cuts (28246) is never picked up (Pandaren Warrior)
+  ! The Kodocaller's Horn (28252) is never picked up (Pandaren Warrior)
+  ! Taking the Horn For Ourselves (28253) is never picked up (Pandaren Warrior)
+  ! General Thorg'izog (28265) is never picked up (Pandaren Warrior)
+  ! Trial by Magma (28266) is never picked up (Pandaren Warrior)
+  ! I Am the Law and I Am the Lash (28278) is never picked up (Pandaren Warrior)
+  ! Abuse of Power (28279) is never picked up (Pandaren Warrior)
+  ! Enough Damage For One Day (28286) is never picked up (Pandaren Warrior)
+  ... and 172 more
+Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 50. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 77 steps kept, 59 new ones slotted in, 0 moved because their prerequisites changed, 1 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 122 tasks, 21,261 yd on foot; ends at level 52.8; 1 hearth; 1 ORDER PROBLEMS
+  Human/Dwarf: 3 more tasks; their whole route comes to 21,261 yd; ends at level 52.8; 1 hearth; 1 ORDER PROBLEMS
+  Draenei/Worgen: 3 more tasks; their whole route comes to 21,261 yd; ends at level 52.8; 1 hearth; 1 ORDER PROBLEMS
+  NightElf: 3 more tasks; their whole route comes to 21,261 yd; ends at level 52.8; 1 hearth; 1 ORDER PROBLEMS
+  Gnome: 3 more tasks; their whole route comes to 21,261 yd; ends at level 52.8; 1 hearth; 1 ORDER PROBLEMS
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 6,456 yd; ends at level 50.8
+Hearthstone: set at Gruna (Gruna's inn); 1 hearth step in the guide.
+3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (46)
+------------------------
+Start to finish here: 44 (3 for everyone, 26 Human/Dwarf/NightElf/Gnome/Draenei/Worgen, 11 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren, 1 Human/Dwarf, 1 Draenei/Worgen, 1 Gnome, 1 NightElf)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Mouton Flamestar [28514, level 50, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Searing Gorge
+  Hero's Call: Burning Steppes! [28666, level 50, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Stormwind City
+
+Worth checking in game
+----------------------
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  The Bogpaddle Bullet [28569, level 52]: needs level 51; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 50.8
+
+Left out (30)
+-------------
+not in the game (on Questie's quest blacklist) (25):
+  Dark Iron Legacy [3801], Extinguish the Firegut [3823], Gor'tesh the Brute Lord [3824], Ogre Head On A Stick = Party [3825], Dragonkin Menace [4182], FIFTY! YEP! [4283], The Good Stuff [4286], Put Her Down [4701], Kibler's Exotic Pets [4729], En-Ay-Es-Tee-Why [4862], Mother's Milk [4866], Wildeyes [7564], Xorothian Stardust [7625], Bell of Dethmoora [7626], Wheel of the Black March [7627], Doomsday Candle [7628], Imp Delivery [7629], Arcanite [7630], Rumblerock the Elder [8636], Dawnstrider the Elder [8683], Desecrate this Fire! [11768], Honor the Flame [11810], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Sharing a Bountiful Feast [14064]
+dungeon quest (3):
+  Friends on The Other Side [27469], Blackrock Anomaly [27471], Adventurers Wanted: Blackrock Depths [28068]
+cannot be taken together with Burning Vengeance [28174], which is in the guide (1):
+  Burning Vengeance [28416]
+repeatable (1):
+  Durin Darkhammer [31914]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Burning Steppes - Alliance - part 2 of 2, planned from level 55
+Guide "50-52 Burning Steppes" in group "Zone Routes (Alliance)": this part has 2 steps, 1 stops
+Written to guides/mop/Burning Steppes (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 55. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 55.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (1)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Bogpaddle Bullet [28569, level 52, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Swamp of Sorrows
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

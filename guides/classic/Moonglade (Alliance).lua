@@ -173,12 +173,6 @@ step
     .goto 1450/1,-2574.43,7797.31
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rabine Saturna|r
     .accept 1124 >>Accept Wasteland
-    .target Rabine Saturna
-    .isQuestTurnedIn 1123,6762 --any of: Rabine Saturna, Rabine Saturna
-    .xp <54,1
-step
-    .goto 1450/1,-2574.43,7797.31
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rabine Saturna|r
     .accept 5527 >>Accept A Reliquary of Purity
     .target Rabine Saturna
 step

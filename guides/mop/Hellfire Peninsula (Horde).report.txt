@@ -1,0 +1,132 @@
+Hellfire Peninsula - Horde - part 1 of 2, planned from level 60
+Guide "60-63 Hellfire Peninsula" in group "Zone Routes (Horde)": this part has 233 steps, 191 stops
+Written to guides/mop/Hellfire Peninsula (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 16 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+16 pickups or hand-ins are within reach of a stop but planned for later.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 60. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 223 steps kept, 30 new ones slotted in, 11 moved because their prerequisites changed, 11 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 233 tasks, 46,031 yd on foot; ends at level 62.4; at its hardest you are 2.2 levels below the mobs
+  BloodElf: 2 more tasks; their whole route comes to 45,044 yd; ends at level 62.4; at its hardest you are 2.2 levels below the mobs
+  Orc DeathKnight/Undead DeathKnight/Tauren DeathKnight/Troll DeathKnight/BloodElf DeathKnight/Goblin DeathKnight/Pandaren DeathKnight: 5 more tasks; their whole route comes to 45,232 yd; ends at level 62.4; at its hardest you are 2.2 levels below the mobs
+  everyone (quests that depend on other zones): 24 more tasks; their whole route comes to 46,039 yd; ends at level 62.4; 1 ORDER PROBLEMS; at its hardest you are 2.2 levels below the mobs
+Hearthstone: set at Grunda Bronzewing (Grunda Bronzewing's inn); 0 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 60 for Falcon Watch (Orc/Undead/Tauren/Troll/Goblin/Pandaren)
+  level 60 for Falcon Watch (BloodElf)
+4 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+10 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+12 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+11 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (92)
+------------------------
+Start to finish here: 77 (19 for everyone, 54 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren, 1 Orc/Undead/Tauren/Troll/Goblin/Pandaren, 1 BloodElf, 1 Orc Warrior/Orc Paladin/Orc Hunter/Orc Rogue/Orc Priest/Orc Shaman/Orc Mage/Orc Warlock/Orc Monk/Orc Druid/Undead Warrior/Undead Paladin/Undead Hunter/Undead Rogue/Undead Priest/Undead Shaman/Undead Mage/Undead Warlock/Undead Monk/Undead Druid/Tauren Warrior/Tauren Paladin/Tauren Hunter/Tauren Rogue/Tauren Priest/Tauren Shaman/Tauren Mage/Tauren Warlock/Tauren Monk/Tauren Druid/Troll Warrior/Troll Paladin/Troll Hunter/Troll Rogue/Troll Priest/Troll Shaman/Troll Mage/Troll Warlock/Troll Monk/Troll Druid/BloodElf Warrior/BloodElf Paladin/BloodElf Hunter/BloodElf Rogue/BloodElf Priest/BloodElf Shaman/BloodElf Mage/BloodElf Warlock/BloodElf Monk/BloodElf Druid/Goblin Warrior/Goblin Paladin/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock/Goblin Monk/Goblin Druid/Pandaren Warrior/Pandaren Paladin/Pandaren Hunter/Pandaren Rogue/Pandaren Priest/Pandaren Shaman/Pandaren Mage/Pandaren Warlock/Pandaren Monk/Pandaren Druid, 1 Orc DeathKnight/Undead DeathKnight/Tauren DeathKnight/Troll DeathKnight/BloodElf DeathKnight/Goblin DeathKnight/Pandaren DeathKnight)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Report to Zurai [10103, level 61, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Zangarmarsh
+  The Cenarion Expedition [9912, level 62] -> Zangarmarsh
+
+Hand-in step only shows once complete (1):
+  Arelion's Journal [9374, level 62, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Arelion's Journal (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Warchief's Command: Outland! [28705, level 60, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Orgrimmar
+  Through the Dark Portal [9407, level 61, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Blasted Lands
+  Warning the Cenarion Circle [9724, level 64] <- Zangarmarsh
+
+Need a quest this guide does not hand in - steps show only once that is done (9):
+  The Battle Horn [10230, level 61, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Decipher the Tome [10229]
+  Bloody Vengeance [10250, level 61, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Battle Horn [10230]
+  Honor the Fallen [10258, level 61, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Bloody Vengeance [10250]
+  Arelion's Mistress [9472, level 62, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Mistress Revealed [10287]
+  Arelion's Secret [10286, level 62, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Arelion's Journal [9374]
+  The Mistress Revealed [10287, level 62, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Arelion's Secret [10286]
+  Return to the Marsh [9732, level 63] - needs one of Warning the Cenarion Circle [9724] -> Zangarmarsh
+  The Earthbinder [10349, level 63] - needs one of Crimson Crystal Clue [10134]
+  Natural Remedies [10351, level 63] - needs one of The Earthbinder [10349]
+
+Worth checking in game
+----------------------
+  The Assassin [9400, level 62, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: "Find Krun Spinebreaker" is assumed to be line 2 in the quest log; check it
+  Colossal Menace [10132, level 63]: could not read how many Raging Colossus are needed from the quest text; assumed 8
+  Make Them Listen [10220, level 61, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: could not read how many Unyielding Footman are needed from the quest text; assumed 8
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  Mission: The Abyssal Shelf [10162, level 62]: its mobs are level 69; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 62.4
+
+Left out (98)
+-------------
+not in the game (on Questie's quest blacklist) (86):
+  Marauding Crust Bursters [9342], A Hasty Departure [9344], When Helboars Fly [9346], Voidwalkers Gone Wild [9347], Ravager Roundup [9348], A Peon's Work is Never Done [9350], Thirsting For Power [9377], Fortifying the Felhunter [9379], The Fate of the Clefthoof [9382], Forgotten Heroes [9408], Envoy to the Mag'har [9441], A Debilitating Sickness [9442], Administering the Salve [9447], The Will of the Warchief [9495], Pride of the Fel Horde [9496], Emblem of the Fel Horde [9497], Bristlehide Clefthoof Hides [9510], Weaken the Ramparts [9572], Dark Tidings [9588], The Blood is Life [9590], Heart of Rage [9608], Hellfire Penninsula: -pn - A - ToWoW - Hellfire Turnin Cap [9880], Hellfire Penninsula: -pn - H - ToWoW - Hellfire Turnin Cap [9881], Hellfire Penninsula: -pn - A - ToWoW - Hellfire Turnin [9908], Hellfire Penninsula: -pn - H - ToWoW - Hellfire Turnin [9909], Through the Dark Portal [10046], Dealing with Zeth'Gor [10053], Impending Doom [10054], Bleeding Hollow Supplies [10056], Dealing With Zeth'Gor [10059], Impending Doom [10060], The Unyielding [10061], Looking to the Leadership [10062], Forge Camps of the Legion [10080], The Legion's Plans [10083], Assault on Mageddon [10084], When This Mine's a-Rockin' [10088], Forge Camps of the Legion [10089], The Legion's Plans [10090], Assault on Mageddon [10092], ... 46 more
+repeatable (6):
+  Life's Finer Pleasures [9483], Hellfire Fortifications [10110], Return to the Abyssal Shelf [10347], Blood for Blood [11515], Blast the Gateway [11516], Nicki Tinytech [31922]
+dungeon quest (2):
+  Invading the Citadel [29542], Advancing the Campaign [29688]
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  Missing Missive [9373]
+handed in here, but the database does not say where it starts (1):
+  Warning the Cenarion Circle [9733]
+above this zone's range of 60-65 (1):
+  The Fall of Magtheridon [11003]
+needs a profession (1):
+  The Missing Magistrix [11526]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Hellfire Peninsula - Horde - part 2 of 2, planned from level 67
+Guide "60-63 Hellfire Peninsula" in group "Zone Routes (Horde)": this part has 8 steps, 7 stops
+Written to guides/mop/Hellfire Peninsula (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 67. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 6 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 5 tasks, 1,817 yd on foot; ends at level 67.0; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 3,689 yd; ends at level 67.0; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 1 (0 for everyone, 1 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Arelion's Journal [9374, level 62, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+  Mission: The Abyssal Shelf [10162, level 62, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: Mo'arg Overseer is level 71, far above this level 62 quest, so the objective is taken to be "talk to" rather than "kill"
+  Mission: The Abyssal Shelf [10162, level 62, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: Fel Cannon is level 71, far above this level 62 quest, so the objective is taken to be "talk to" rather than "kill"
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

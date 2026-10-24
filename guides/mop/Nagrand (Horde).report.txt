@@ -1,0 +1,225 @@
+Nagrand - Horde - part 1 of 2, planned from level 65
+Guide "65-68 Nagrand" in group "Zone Routes (Horde)": this part has 166 steps, 143 stops
+Written to guides/mop/Nagrand (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: 58 PROBLEMS
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Orc Warrior)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Orc Hunter)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Orc Rogue)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Orc DeathKnight)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Orc Shaman)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Orc Mage)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Orc Warlock)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Orc Monk)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Undead Warrior)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Undead Hunter)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Undead Rogue)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Undead Priest)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Undead DeathKnight)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Undead Mage)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Undead Warlock)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Undead Monk)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Tauren Warrior)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Tauren Paladin)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Tauren Hunter)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Tauren Priest)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Tauren DeathKnight)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Tauren Shaman)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Tauren Monk)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Tauren Druid)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Troll Warrior)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Troll Hunter)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Troll Rogue)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Troll Priest)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Troll DeathKnight)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Troll Shaman)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Troll Mage)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Troll Warlock)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Troll Monk)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Troll Druid)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (BloodElf Warrior)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (BloodElf Paladin)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (BloodElf Hunter)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (BloodElf Rogue)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (BloodElf Priest)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (BloodElf DeathKnight)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (BloodElf Mage)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (BloodElf Warlock)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (BloodElf Monk)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Goblin Warrior)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Goblin Hunter)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Goblin Rogue)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Goblin Priest)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Goblin DeathKnight)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Goblin Shaman)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Goblin Mage)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Goblin Warlock)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Pandaren Warrior)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Pandaren Hunter)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Pandaren Rogue)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Pandaren Priest)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Pandaren Shaman)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Pandaren Mage)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Pandaren Monk)
+Quest log: at most 12 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+7 pickups or hand-ins are within reach of a stop but planned for later.
+6 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 65. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 149 steps kept, 19 new ones slotted in, 2 moved because their prerequisites changed, 9 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 113 tasks, 27,850 yd on foot; ends at level 66.1; 2 hearths; 1 ORDER PROBLEMS; at its hardest you are 1.9 levels below the mobs
+  everyone (quests that depend on other zones): 57 more tasks; their whole route comes to 36,240 yd; ends at level 66.1; 5 hearths; 1 ORDER PROBLEMS; at its hardest you are 1.9 levels below the mobs
+Hearthstone: set at Mathar G'ochar (Mathar G'ochar's inn); 6 hearth steps in the guide.
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+12 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (60)
+------------------------
+Start to finish here: 37 (34 for everyone, 3 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Impotent Leader [9888, level 65, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Terokkar Forest
+
+Hand-in step only shows once complete (1):
+  Bring Me The Egg! [10111, level 66] - needs Severed Talon of the Matriarch (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Reinforcements for Garadar [9797, level 64, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Zangarmarsh
+  Because Kilrath is a Coward [9891, level 65, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Terokkar Forest
+  The Master's Grand Design? [10251, level 67] <- Shattrath City
+  It's Just That Easy? [10010, level 68] <- Shattrath City
+  What the Soul Sees [10168, level 68, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Auchenai Crypts - Dungeon - Bridge of Souls
+
+Need a quest this guide does not hand in - steps show only once that is done (16):
+  Message in a Battle [9906, level 65, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Because Kilrath is a Coward [9891]
+  Standards and Practices [9910, level 65, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Because Kilrath is a Coward [9891]
+  An Audacious Advance [9907, level 66, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Message in a Battle [9906]
+  Bleeding Hollow Supply Crates [9916, level 66, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Standards and Practices [9910]
+  Ruthless Cunning [9927, level 66] - needs one of Diplomatic Measures [10107], Diplomatic Measures [10108]
+  Armaments for Deception [9928, level 66] - needs one of Diplomatic Measures [10107], Diplomatic Measures [10108]
+  Returning the Favor [9931, level 66] - needs Ruthless Cunning [9927], Armaments for Deception [9928]
+  Body of Evidence [9932, level 66] - needs Ruthless Cunning [9927], Armaments for Deception [9928]
+  Message to Garadar [9934, level 66, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Returning the Favor [9931], Body of Evidence [9932]
+  Diplomatic Measures [10107, level 66, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of An Audacious Advance [9907]
+  Murkblood Corrupters [9862, level 67] - needs one of The Howling Wind [9861]
+  Once Were Warriors [9865, level 67, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Missing War Party [9864]
+  He Will Walk The Earth... [9866, level 67, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Once Were Warriors [9865]
+  Cho'war the Pillager [9946, level 67, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of War on the Warmaul [9945]
+  Vision of the Dead [10252, level 67] - needs one of The Master's Grand Design? [10251]
+  Levixus the Soul Caller [10253, level 67] - needs one of Vision of the Dead [10252] -> Terokkar Forest
+
+Worth checking in game
+----------------------
+  Murkblood Invaders [9872, level 67, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: has a reputation or spell objective, which is not planned
+
+Put off to a later part (22)
+----------------------------
+These need a higher level than this part ends at:
+  Wanted: Durn the Hungerer [9937, level 67]: needs level 66; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 66.2
+  Survey the Land [9991, level 68]: needs level 66; this part gets you to about 66.2
+  Buying Time [9999, level 68]: needs level 66; this part gets you to about 66.2
+  The Master Planner [10001, level 68]: needs level 66; this part gets you to about 66.2
+  Patience and Understanding [10004, level 68]: needs level 66; this part gets you to about 66.2
+  Forge Camp: Annihilated [10011, level 68]: its mobs are level 70; this part gets you to about 66.2
+  A Visit With the Greatmother [10044, level 68]: needs level 66; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 66.2
+  Material Components [10045, level 68]: needs level 66; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 66.2
+  To Meet Mother Kashur [10081, level 68]: needs level 66; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 66.2
+  The Agitated Ancestors [10082, level 68]: needs level 66; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 66.2
+  A Visit With The Ancestors [10085, level 68]: needs level 66; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 66.2
+  When Spirits Speak [10101, level 68]: needs level 66; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 66.2
+  A Secret Revealed [10102, level 68]: needs level 66; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 66.2
+  Return to the Greatmother [10170, level 68]: needs level 66; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 66.2
+  The Inconsolable Chieftain [10171, level 68]: needs level 66; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 66.2
+  There Is No Hope [10172, level 68]: needs level 66; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 66.2
+  Against the Legion [10641, level 70]: needs level 68; this part gets you to about 66.2
+  Illidan's Pupil [10646, level 70]: needs level 68; this part gets you to about 66.2
+  The Book of Fel Names [10649, level 70]: needs level 68; this part gets you to about 66.2
+  Against the Illidari [10668, level 70]: needs level 68; this part gets you to about 66.2
+  Against All Odds [10669, level 70]: needs level 68; this part gets you to about 66.2
+  Kroghan's Report [11048, level 67]: needs level 67; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 66.2
+
+Left out (47)
+-------------
+needs reputation (19):
+  Vile Idolatry [9863], The Missing War Party [9864], Murkblood Leaders... [9867], The Totem of Kar'dash [9868], The Throne of the Elements [9870], Obsidian Warbeads [9893], Wanted: Giselda the Crone [9935], Wanted: Zorbo the Advisor [9939], Missing Mag'hari Procession [9944], War on the Warmaul [9945], Finding the Survivors [9948], The Ravaged Caravan [9956], He Called Himself Altruis... [9983], Proving Your Strength [10479], Altruis [10640], Return to the Aldor [10650], Altruis [10689], Return to the Scryers [10691], A Strange Vision [11037]
+not in the game (on Questie's quest blacklist) (16):
+  Hero of the Mag'har [10212], Visit the Throne of the Elements [10953], Eyes in the Sky [10986], To Catch A Sparrowhawk [10987], Desecrate this Fire! [11750], Honor the Flame [11854], Playing with Fire [11915], Incense for the Festival Scorchlings [11966], Candy Bucket [12392], Sharing a Bountiful Feast [14065], A Natural Occurrence [25571], A Natural Occurrence [25773], A Gathering in Outland [27572], Reset Current Rating - 2v2 [95158], Reset Current Rating - 3v3 [95251], Reset Current Rating - 5v5 [95252]
+repeatable (11):
+  More Crystal Fragments [9883], Membership Benefits [9884], Membership Benefits [9885], Membership Benefits [9886], Membership Benefits [9887], More Obsidian Warbeads [9892], More Heads Full of Ivory [9915], Oshu'gun Crystal Powder [10075], More Warbeads! [10478], Enemies, Old and New [11503], Narrok [31924]
+dungeon quest (1):
+  Defending the Wilds [29571]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Nagrand - Horde - part 2 of 2, planned from level 69
+Guide "65-68 Nagrand" in group "Zone Routes (Horde)": this part has 55 steps, 54 stops
+Written to guides/mop/Nagrand (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 69. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 5 steps kept, 50 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 13 tasks, 2,113 yd on foot; ends at level 69.0
+  everyone (quests that depend on other zones): 42 more tasks; their whole route comes to 10,748 yd; ends at level 69.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (23)
+------------------------
+Start to finish here: 3 (3 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Kroghan's Report [11048, level 67, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Shadowmoon Valley
+  Patience and Understanding [10004, level 68] -> Shattrath City
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Bring Me The Egg! [10111, level 66] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (17):
+  Wanted: Durn the Hungerer [9937, level 67, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Wanted: Giselda the Crone [9935], Wanted: Zorbo the Advisor [9939]
+  Forge Camp: Annihilated [10011, level 68] - needs one of It's Just That Easy? [10010]
+  A Visit With the Greatmother [10044, level 68, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs The Totem of Kar'dash [9868], Message to Garadar [9934], Forge Camp: Annihilated [10011]
+  Material Components [10045, level 68, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of A Visit With the Greatmother [10044]
+  To Meet Mother Kashur [10081, level 68, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Material Components [10045]
+  The Agitated Ancestors [10082, level 68, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of To Meet Mother Kashur [10081]
+  A Visit With The Ancestors [10085, level 68, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Agitated Ancestors [10082]
+  When Spirits Speak [10101, level 68, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of A Visit With The Ancestors [10085]
+  A Secret Revealed [10102, level 68, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of When Spirits Speak [10101] -> Shattrath City
+  Return to the Greatmother [10170, level 68, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of What the Soul Sees [10168]
+  The Inconsolable Chieftain [10171, level 68, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Return to the Greatmother [10170]
+  There Is No Hope [10172, level 68, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Inconsolable Chieftain [10171]
+  Against the Legion [10641, level 70] - needs one of Altruis [10640], Altruis [10689]
+  Illidan's Pupil [10646, level 70] - needs Against the Legion [10641], Against the Illidari [10668], Against All Odds [10669]
+  The Book of Fel Names [10649, level 70] - needs one of Illidan's Pupil [10646]
+  Against the Illidari [10668, level 70] - needs one of Altruis [10640], Altruis [10689]
+  Against All Odds [10669, level 70] - needs one of Altruis [10640], Altruis [10689]
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

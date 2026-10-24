@@ -1,0 +1,98 @@
+Dragonblight - Horde
+Guide "72-75 Dragonblight" in group "Zone Routes (Horde)": 348 steps, 295 stops
+Written to guides/mop/Dragonblight (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 13 of 40 held at once (Orc Mage), not counting quests brought in from other zones.
+12 pickups or hand-ins are within reach of a stop but planned for later.
+7 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 72. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 391 steps kept, 38 new ones slotted in, 3 moved because their prerequisites changed, 1 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 374 tasks, 58,898 yd on foot; ends at level 75.0; 3 hearths; at its hardest you are 1.9 levels below the mobs
+  Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage: 3 more tasks; their whole route comes to 60,118 yd; ends at level 75.0; 3 hearths; at its hardest you are 1.9 levels below the mobs
+  everyone (quests that depend on other zones): 55 more tasks; their whole route comes to 63,790 yd; ends at level 75.0; 3 hearths; at its hardest you are 1.9 levels below the mobs
+Hearthstone: set at Lethecus (Lethecus's inn); 3 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 74 for The Magical Kingdom of Dalaran (Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+4 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+19 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+11 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+12 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (149)
+-------------------------
+Start to finish here: 124 (41 for everyone, 82 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren, 1 Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  To Conquest Hold, But Be Careful! [12487, level 74, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Grizzly Hills
+  The Magical Kingdom of Dalaran [12791, level 74, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Dalaran - (Dungeon/Raid)
+  Into the Breach! [12789, level 75] -> Zul'Drak
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Across Transborea [11930, level 72, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Borean Tundra
+  Travel to Moa'ki Harbor [12117, level 72] <- Borean Tundra
+  Travel to Moa'ki Harbor [12118, level 72] <- Howling Fjord
+  To Venomspite! [12182, level 72, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Howling Fjord
+
+Need a quest this guide does not hand in - steps show only once that is done (18):
+  Let Nothing Go To Waste [11958, level 72] - needs one of Travel to Moa'ki Harbor [12117]
+  A Tauren Among Taunka [11977, level 72, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Across Transborea [11930]
+  Tua'kea's Crab Traps [12009, level 72] - needs one of Slay Loguhn [11959]
+  Signs of Big Watery Trouble [12011, level 72] - needs one of Slay Loguhn [11959]
+  The Bait [12016, level 72] - needs one of Signs of Big Watery Trouble [12011]
+  Spiritual Insight [12028, level 72] - needs one of Slay Loguhn [11959]
+  Elder Mana'loa [12030, level 72] - needs one of Spiritual Insight [12028]
+  Freedom for the Lingering [12031, level 72] - needs one of Elder Mana'loa [12030]
+  Conversing With the Depths [12032, level 72] - needs one of Freedom for the Lingering [12031]
+  Message from the West [12033, level 72, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Hellscream's Champion [11916]
+  Koltira and the Language of Death [12115, level 72, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Flesh-Bound Tome [12057]
+  Slay Loguhn [11959, level 73] - needs one of Let Nothing Go To Waste [11958]
+  Meat on the Hook [12017, level 73] - needs one of The Bait [12016]
+  In Service of Blood [12125, level 73, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Koltira and the Language of Death [12115]
+  In Service of the Unholy [12126, level 73, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Koltira and the Language of Death [12115]
+  In Service of Frost [12127, level 73, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Koltira and the Language of Death [12115]
+  The Power to Destroy [12132, level 73, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs In Service of Blood [12125], In Service of the Unholy [12126], In Service of Frost [12127]
+  The Translated Tome [12136, level 73, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Power to Destroy [12132]
+
+Worth checking in game
+----------------------
+  Harp on This! [12052, level 74]: mixes a kill-credit objective with others; check that "Coldwind Waste Huntress" really is line 2 in the quest log
+  Containing the Rot [12100, level 72, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: mixes a kill-credit objective with others; check that "Blighted Elk" really is line 2 in the quest log
+  The End of the Line [12110, level 72, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: could not read how many The End of the Line Area Trigger Kill Credit Bunny are needed from the quest text; assumed 8
+  In Service of Blood [12125, level 73, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: could not read how many Deranged Indu'le Villager are needed from the quest text; assumed 8
+  In Service of Frost [12127, level 73, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: could not read how many Ice Revenant are needed from the quest text; assumed 8
+  The Perfect Dissemblance [12260, level 72, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: could not read how many Onslaught Raven Priest are needed from the quest text; assumed 8
+  No Place to Run [12261, level 74]: "Destructive Ward (1)" has no place in the data; taken to be done where the quest is given
+  No One to Save You [12262, level 74]: mixes a kill-credit objective with others; check that "Smoldering Skeleton" really is line 2 in the quest log
+  A Fall From Grace [12274, level 73, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: mixes a kill-credit objective with others; check that "High Abbot Landgren" really is line 2 in the quest log
+  Return to the Earth [12449, level 74, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: could not read how many Ruby Keeper are needed from the quest text; assumed 8
+  That Which Creates Can Also Destroy [12459, level 74]: could not read how many Reanimated Frost Wyrm are needed from the quest text; assumed 8
+
+Left out (40)
+-------------
+not in the game (on Questie's quest blacklist) (24):
+  Incense for the Festival Scorchlings [11966], Rustling Some Feathers [12051], Morthie the Elder [13014], Thoim the Elder [13019], Skywarden the Elder [13031], Death to the Traitor King [13167], Don't Forget the Eggs! [13182], All Things in Good Time [13190], Funky Fungi [13204], The Key to the Focusing Iris [13372], Judgment at the Eye of Eternity [13384], Candy Bucket [13456], Candy Bucket [13459], Candy Bucket [13469], Candy Bucket [13470], Sharing a Bountiful Feast [14065], Respite for a Tormented Soul [24872], Respite for a Tormented Soul [24880], A Natural Occurrence [25571], A Natural Occurrence [25773], Planning for the Future [26178], The Faceless Ones [29810], To Northrend [78168], To Northrend [78225]
+above this zone's range of 72-76 (5):
+  The Touch of an Aspect [13077], Dahlia's Tears [13078], The Boon of Alexstrasza [13079], Mystery of the Infinite, Redux [13343], The Heroic Key to the Focusing Iris [13375]
+dungeon quest (5):
+  The Faceless Ones [13187], Heroic Judgment at the Eye of Eternity [13385], Trouble at Wyrmrest [26012], Assault on the Sanctum [26013], The Twilight Destroyer [26034]
+repeatable (3):
+  Planning for the Future [11960], Defending Wyrmrest Temple [12372], Okrut Dragonwaste [31933]
+cannot be taken together with A Tauren Among Taunka [11977], which is in the guide (1):
+  The Taunka and the Tauren [11979]
+special category (sort -369) (1):
+  Desecrate this Fire! [13443]
+special category (sort -22) (1):
+  Honor the Flame [13495]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

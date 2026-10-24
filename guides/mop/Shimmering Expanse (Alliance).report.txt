@@ -1,0 +1,88 @@
+Shimmering Expanse - Alliance
+Guide "81-81 Shimmering Expanse" in group "Zone Routes (Alliance)": 196 steps, 181 stops
+Written to guides/mop/Shimmering Expanse (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 81. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 226 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 149 tasks, 12,839 yd on foot; ends at level 81.8; 2 hearths
+  everyone (quests that depend on other zones): 77 more tasks; their whole route comes to 23,129 yd; ends at level 81.8; 3 hearths
+Hearthstone: set at Frell "Fixit" Fastbolt (Frell "Fixit" Fastbolt's inn); 3 hearth steps in the guide.
+8 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (76)
+------------------------
+Start to finish here: 49 (19 for everyone, 30 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Across the Great Divide [25471, level 81] <- Kelp'thar Forest
+
+Need a quest this guide does not hand in - steps show only once that is done (26):
+  Backed Into a Corner [25164, level 81] - needs one of The Looming Threat [25334]
+  A Distracting Scent [25215, level 81] - needs one of Silver Tide Hollow [25222]
+  The Great Sambino [25216, level 81] - needs one of Silver Tide Hollow [25222]
+  Totem Modification [25217, level 81] - needs one of Undersea Inflation [25218]
+  Undersea Inflation [25218, level 81] - needs one of The Great Sambino [25216]
+  Don't be Shellfish [25219, level 81] - needs one of Silver Tide Hollow [25222]
+  Slippery Threat [25220, level 81] - needs one of Silver Tide Hollow [25222]
+  Rundown [25221, level 81] - needs one of Backed Into a Corner [25164]
+  Silver Tide Hollow [25222, level 81] - needs one of Rundown [25221]
+  The Looming Threat [25334, level 81] - needs one of Across the Great Divide [25471]
+  Toshe's Vengeance [25359, level 81] - needs one of Back in One Piece [25456]
+  A Pearl of Wisdom [25442, level 81] - needs one of Silver Tide Hollow [25222]
+  Back in One Piece [25456, level 81] - needs one of Totem Modification [25217]
+  Visions of the Past: Rise from the Deep [25626, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Welcome News [25911]
+  Her Lady's Hand [25629, level 81] - needs one of Visions of the Past: Rise from the Deep [25626]
+  At All Costs [25860, level 81] - needs Her Lady's Hand [25629], Devout Assembly [25896]
+  Desperate Plan [25893, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Losing Ground [25892]
+  Hostile Waters [25894, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Desperate Plan [25893]
+  Come Prepared [25895, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Desperate Plan [25893]
+  Devout Assembly [25896, level 81] - needs one of Visions of the Past: Rise from the Deep [25626]
+  Unfurling Plan [25897, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Desperate Plan [25893]
+  Honor and Privilege [25898, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Hostile Waters [25894], Come Prepared [25895], Unfurling Plan [25897]
+  Welcome News [25911, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Honor and Privilege [25898]
+  Final Judgement [25951, level 81] - needs one of At All Costs [25860]
+  A Breath of Fresh Air [26005, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Visions of the Past: Rise from the Deep [25626]
+  Full Circle [26219, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of A Breath of Fresh Air [26005] -> Abyssal Depths
+
+Worth checking in game
+----------------------
+  Totem Modification [25217, level 81]: "Sambino's Modified Earthbind Totem (1)" has no place in the data; taken to be done where the quest is given
+  Undersea Inflation [25218, level 81]: "Sambino's Air Balloon (1)" has no place in the data; taken to be done where the quest is given
+  Rundown [25221, level 81]: could not read how many Fleeing Zin'jatar Fathom-Stalker are needed from the quest text; assumed 8
+  Visions of the Past: Rise from the Deep [25626, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: "Battlemaiden Vision 3 Credit (1)" has no place in the data; taken to be done where the quest is given
+  Swift Action [25752, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: could not read how many Azsh'ir Archaean are needed from the quest text; assumed 8
+  Gauging Success [25754, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: "Terrace Tunnel Credit (1)" has no place in the data; taken to be done where the quest is given
+  Gauging Success [25754, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: "Northwestern Terrace Credit (1)" has no place in the data; taken to be done where the quest is given
+  Visions of the Past: The Slaughter of Biel'aran Ridge [25755, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: "Battlemaiden Vision 2 Credit (1)" has no place in the data; taken to be done where the quest is given
+  Visions of the Past: The Invasion of Vashj'ir [25760, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: "Battlemaiden Vision 1 Credit (1)" has no place in the data; taken to be done where the quest is given
+  Full Circle [26219, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: "Boarding Submarine Credit Bunny" has no place in the data; taken to be done where the quest is given
+
+Not planned (1)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  The War Has Many Fronts [27443, level 82]: needs level 82; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 81.8
+
+Left out (11)
+-------------
+not in the game (on Questie's quest blacklist) (6):
+  Upon the Scene of Battle [25635], Curious Distraction [25750], Candy Bucket [28982], Candy Bucket [28983], Honor the Flame [29031], Moonlance the Elder [29738]
+handed in here, but the database does not say where it starts (4):
+  Caught Off-Guard [25631], Swift Approach [25632], An Occupation of Time [25633], A Better Vantage [25634]
+cannot be taken together with Setting An Example [25861], which is in the guide (1):
+  Losing Ground [25892]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

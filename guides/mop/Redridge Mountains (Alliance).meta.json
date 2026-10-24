@@ -1,0 +1,196 @@
+{
+  "zone": "Redridge Mountains",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "15-20 Redridge Mountains",
+  "file": "Redridge Mountains (Alliance).lua",
+  "continent": -44,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 15,
+      "end": 17.17,
+      "next": 20,
+      "guide": "15-18 Redridge Mountains",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "15-18 Redridge Mountains",
+          "level": 15,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 20,
+      "end": 20,
+      "guide": "20-21 Redridge Mountains",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "20-21 Redridge Mountains",
+          "level": 20,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 26365,
+      "level": 15,
+      "req": 14,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Westfall"
+    },
+    {
+      "id": 26503,
+      "level": 15,
+      "req": 14,
+      "xp": 1350,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 26504,
+      "level": 15,
+      "req": 14,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 26505,
+      "level": 16,
+      "req": 14,
+      "xp": 580,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 26506,
+      "level": 16,
+      "req": 14,
+      "xp": 1150,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 26508,
+      "level": 16,
+      "req": 14,
+      "xp": 1450,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 26509,
+      "level": 16,
+      "req": 14,
+      "xp": 1150,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 26510,
+      "level": 16,
+      "req": 14,
+      "xp": 1150,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 26511,
+      "level": 16,
+      "req": 14,
+      "xp": 1150,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 26512,
+      "level": 16,
+      "req": 14,
+      "xp": 880,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 26513,
+      "level": 16,
+      "req": 14,
+      "xp": 1450,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 26514,
+      "level": 16,
+      "req": 14,
+      "xp": 1450,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 26544,
+      "level": 16,
+      "req": 14,
+      "xp": 1150,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 26545,
+      "level": 16,
+      "req": 14,
+      "xp": 1750,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 26761,
+      "level": 15,
+      "req": 12,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Westfall"
+    },
+    {
+      "id": 28563,
+      "level": 15,
+      "req": 14,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Elwynn Forest"
+    }
+  ],
+  "carriedTo": {
+    "Elwynn Forest": 1,
+    "Duskwood": 1
+  }
+}

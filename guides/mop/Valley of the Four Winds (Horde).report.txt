@@ -1,0 +1,314 @@
+Valley of the Four Winds - Horde - part 1 of 2, planned from level 87
+Guide "87-90 Valley of the Four Winds" in group "Zone Routes (Horde)": this part has 55 steps, 48 stops
+Written to guides/mop/Valley of the Four Winds (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 87. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 50 new ones slotted in, 0 moved because their prerequisites changed, 245 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 26 tasks, 759 yd on foot; ends at level 87.0
+  everyone (quests that depend on other zones): 25 more tasks; their whole route comes to 8,861 yd; ends at level 87.0; 1 hearth; at its hardest you are 5.0 levels below the mobs
+Hearthstone: set at Nam Ironpaw (Nam Ironpaw's inn); 1 hearth step in the guide.
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+
+Quests in the guide (26)
+------------------------
+Start to finish here: 7 (7 for everyone)
+
+Hand-in step only shows once complete (1):
+  No Fishing Pole Necessary! [32685, level 90] - needs Golden Carp (5) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (8):
+  Moving On [30648, level 86] <- The Jade Forest
+  Warn Stoneplow [30241, level 87, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Krasarang Wilds
+  Hope Springs Eternal [30376, level 87] <- Krasarang Wilds
+  A Witness to History [31511, level 87, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Kun-Lai Summit
+  His Name Was... Stormstout [32018, level 87] <- The Jade Forest
+  They Call Him... Stormstout [32019, level 87] <- The Jade Forest
+  The Tillers [31374, level 90, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Vale of Eternal Blossoms
+  Volatile Greenstone Brew [31613, level 90] <- The Jade Forest
+
+Need a quest this guide does not hand in - steps show only once that is done (10):
+  Way of the Grill [31311, level 90] - needs one of Ready for Greatness [31302]
+  Strong as a Tiger [31467, level 90] - needs one of Way of the Grill [31311]
+  Way of the Wok [31470, level 90] - needs one of Ready for Greatness [31302]
+  Agile as a Tiger [31471, level 90] - needs one of Way of the Wok [31470]
+  Way of the Pot [31472, level 90] - needs one of Ready for Greatness [31302]
+  The Soup of Contemplation [31474, level 90] - needs one of Way of the Pot [31472]
+  Way of the Steamer [31475, level 90] - needs one of Ready for Greatness [31302]
+  The Spirit of Cooking [31476, level 90] - needs one of Way of the Steamer [31475]
+  Endurance [31477, level 90] - needs one of Way of the Oven [31478]
+  Way of the Oven [31478, level 90] - needs one of Ready for Greatness [31302]
+
+Worth checking in game
+----------------------
+  Strong as a Tiger [31467, level 90]: has a reputation or spell objective, which is not planned
+  Agile as a Tiger [31471, level 90]: has a reputation or spell objective, which is not planned
+  The Soup of Contemplation [31474, level 90]: has a reputation or spell objective, which is not planned
+  The Spirit of Cooking [31476, level 90]: has a reputation or spell objective, which is not planned
+  Endurance [31477, level 90]: has a reputation or spell objective, which is not planned
+  Learn and Grow VI: Gina's Vote [31945, level 87]: mixes a kill-credit objective with others; check that "Bursting Scallions" really is line 2 in the quest log
+  Learn and Grow VI: Gina's Vote [31945, level 87]: mixes a kill-credit objective with others; check that "Tilled Soil" really is line 3 in the quest log
+
+Put off to a later part (116)
+-----------------------------
+These need a higher level than this part ends at:
+  Ashyo's Vision [29577, level 87]: needs level 86; this part gets you to about 85.8
+  The Golden Dream [29581, level 87]: needs level 86; this part gets you to about 85.8
+  Snap Judgment [29600, level 87]: needs level 86; this part gets you to about 85.8
+  Bottletoads [29757, level 87]: needs level 86; this part gets you to about 85.8
+  Guess Whose Back [29758, level 87]: needs level 86; this part gets you to about 85.8
+  Clever Ashyo [29871, level 87]: needs level 86; this part gets you to about 85.8
+  Lin Tenderpaw [29872, level 87]: needs level 86; this part gets you to about 85.8
+  Ken-Ken [29873, level 85]: needs level 86; this part gets you to about 85.8
+  Kang Bramblestaff [29875, level 85]: needs level 86; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 85.8
+  A Poor Grasp of the Basics [29877, level 87]: needs level 86; this part gets you to about 85.8
+  Chen and Li Li [29907, level 87]: needs level 86; this part gets you to about 85.8
+  A Seemingly Endless Nuisance [29908, level 87]: needs level 86; this part gets you to about 85.8
+  Low Turnip Turnout [29909, level 87]: needs level 86; this part gets you to about 85.8
+  Rampaging Rodents [29910, level 87]: needs level 86; this part gets you to about 85.8
+  Practically Perfect Produce [29911, level 87]: needs level 86; this part gets you to about 85.8
+  The Fabulous Miss Fanny [29912, level 87]: needs level 86; this part gets you to about 85.8
+  The Meat They'll Eat [29913, level 87]: needs level 86; this part gets you to about 85.8
+  Back to the Sty [29914, level 87]: needs level 86; this part gets you to about 85.8
+  A Neighbor's Duty [29915, level 87]: needs level 86; this part gets you to about 85.8
+  Piercing Talons and Slavering Jaws [29916, level 87]: needs level 86; this part gets you to about 85.8
+  Lupello [29917, level 87]: needs level 86; this part gets you to about 85.8
+  A Lesson in Bravery [29918, level 87]: needs level 86; this part gets you to about 85.8
+  Great Minds Drink Alike [29919, level 87]: needs level 86; this part gets you to about 85.8
+  Taking a Crop [29940, level 87]: needs level 86; this part gets you to about 85.8
+  Leaders Among Breeders [29944, level 87]: needs level 86; this part gets you to about 85.8
+  Yellow and Red Make Orange [29945, level 87]: needs level 86; this part gets you to about 85.8
+  The Warren-Mother [29946, level 87]: needs level 86; this part gets you to about 85.8
+  Crouching Carrot, Hidden Turnip [29947, level 87]: needs level 86; this part gets you to about 85.8
+  Thieves to the Core [29948, level 87]: needs level 86; this part gets you to about 85.8
+  Legacy [29949, level 87]: needs level 86; this part gets you to about 85.8
+  Li Li's Day Off [29950, level 87]: needs level 86; this part gets you to about 85.8
+  Muddy Water [29951, level 87]: needs level 86; this part gets you to about 85.8
+  Broken Dreams [29952, level 87]: needs level 86; this part gets you to about 85.8
+  Stemming the Swarm [29981, level 87]: needs level 86; this part gets you to about 85.8
+  Evacuation Orders [29982, level 87]: needs level 86; this part gets you to about 85.8
+  The Hidden Master [29983, level 87]: needs level 86; this part gets you to about 85.8
+  Unyielding Fists: Trial of Bamboo [29984, level 87]: needs level 86; this part gets you to about 85.8
+  They Will Be Mist [29985, level 87]: needs level 86; this part gets you to about 85.8
+  Fog Wards [29986, level 87]: needs level 86; this part gets you to about 85.8
+  Unyielding Fists: Trial of Wood [29987, level 87]: needs level 86; this part gets you to about 85.8
+  A Taste For Eggs [29988, level 87]: needs level 86; this part gets you to about 85.8
+  Unyielding Fists: Trial of Stone [29989, level 87]: needs level 86; this part gets you to about 85.8
+  Training and Discipline [29990, level 87]: needs level 86; this part gets you to about 85.8
+  Tenderpaw By Name, Tender Paw By Reputation [29992, level 87]: needs level 86; this part gets you to about 85.8
+  Grain Recovery [30028, level 87]: needs level 86; this part gets you to about 85.8
+  Wee Little Shenanigans [30029, level 87]: needs level 86; this part gets you to about 85.8
+  Out of Sprite [30030, level 87]: needs level 86; this part gets you to about 85.8
+  Taste Test [30031, level 87]: needs level 86; this part gets you to about 85.8
+  The Quest for Better Barley [30032, level 87]: needs level 86; this part gets you to about 85.8
+  Chen's Resolution [30046, level 87]: needs level 86; this part gets you to about 85.8
+  The Chen Taste Test [30047, level 87]: needs level 86; this part gets you to about 85.8
+  Li Li and the Grain [30048, level 87]: needs level 86; this part gets you to about 85.8
+  Doesn't Hold Water [30049, level 87]: needs level 86; this part gets you to about 85.8
+  Gardener Fran and the Watering Can [30050, level 87]: needs level 86; this part gets you to about 85.8
+  The Great Water Hunt [30051, level 87]: needs level 86; this part gets you to about 85.8
+  Weed War [30052, level 87]: needs level 86; this part gets you to about 85.8
+  Hop Hunting [30053, level 87]: needs level 86; this part gets you to about 85.8
+  Enough is Ookin' Enough [30054, level 87]: needs level 86; this part gets you to about 85.8
+  Stormstout's Hops [30055, level 87]: needs level 86; this part gets you to about 85.8
+  The Farmer's Daughter [30056, level 87]: needs level 86; this part gets you to about 85.8
+  Seeing Orange [30057, level 87]: needs level 86; this part gets you to about 85.8
+  Mothallus! [30058, level 87]: needs level 86; this part gets you to about 85.8
+  The Moth Rebellion [30059, level 87]: needs level 86; this part gets you to about 85.8
+  Where Silk Comes From [30072, level 87]: needs level 86; this part gets you to about 85.8
+  The Emperor [30073, level 87]: needs level 86; this part gets you to about 85.8
+  Knocking on the Door [30074, level 87]: needs level 86; this part gets you to about 85.8
+  Clear the Way [30075, level 87]: needs level 86; this part gets you to about 85.8
+  The Fanciest Water [30076, level 87]: needs level 86; this part gets you to about 85.8
+  Barrels, Man [30077, level 87]: needs level 86; this part gets you to about 85.8
+  Cleaning House [30078, level 87]: needs level 86; this part gets you to about 85.8
+  The Search for the Hidden Master [30086, level 87]: needs level 86; this part gets you to about 85.8
+  Stoneplow Thirsts [30117, level 87]: needs level 86; this part gets you to about 85.8
+  Barreling Along [30172, level 87]: needs level 86; this part gets you to about 85.8
+  Mushan Mastery [30181, level 87]: needs level 86; this part gets you to about 85.8
+  Fox Mastery [30182, level 87]: needs level 86; this part gets you to about 85.8
+  Stalker Mastery [30183, level 87]: needs level 86; this part gets you to about 85.8
+  Mushan Mastery: Darkhide [30184, level 87]: needs level 86; this part gets you to about 85.8
+  Tortoise Mastery [30185, level 87]: needs level 86; this part gets you to about 85.8
+  Parental Mastery [30186, level 87]: needs level 86; this part gets you to about 85.8
+  Mung-Mung's Vote II: Rotten to the Core [30259, level 90]: needs level 90; this part gets you to about 85.8
+  Watery Woes [30267, level 87]: needs level 86; this part gets you to about 85.8
+  A Crocolisk Tale [30275, level 87]: needs level 86; this part gets you to about 85.8
+  Farmer Fung's Vote II: On the Loose [30518, level 90]: needs level 90; this part gets you to about 85.8
+  Haohan's Vote II: The Real Culprits [30522, level 90]: needs level 90; this part gets you to about 85.8
+  Growing the Farm II: Knock on Wood [30524, level 90]: needs level 90; this part gets you to about 85.8
+  Haohan's Vote III: Pure Poison [30525, level 90]: needs level 90; this part gets you to about 85.8
+  Haohan's Vote IV: Melons For Felons [30527, level 90]: needs level 90; this part gets you to about 85.8
+  Haohan's Vote V: Chief Yip-Yip [30528, level 90]: needs level 90; this part gets you to about 85.8
+  A Second Hand [30534, level 90]: needs level 90; this part gets you to about 85.8
+  The Swarm Begins [30622, level 87]: needs level 86; this part gets you to about 85.8
+  The Mantidote [30623, level 87]: needs level 86; this part gets you to about 85.8
+  Students No More [30625, level 87]: needs level 86; this part gets you to about 85.8
+  Retreat! [30626, level 87]: needs level 86; this part gets you to about 85.8
+  The Savior of Stoneplow [30627, level 87]: its mobs are level 90; this part gets you to about 85.8
+  The Gratitude of Stoneplow [30628, level 87]: needs level 86; this part gets you to about 85.8
+  It Does You No Good In The Keg [30653, level 87]: needs level 86; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 85.8
+  The Road to Kun-Lai [31255, level 87]: needs level 87; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 85.8
+  Everything I Know About Cooking [31279, level 90]: needs level 86; this part gets you to about 85.8
+  So You Want to Be a Chef... [31281, level 90]: is a level 90 quest; this part gets you to about 85.8
+  Just A Folk Story [31313, level 90]: needs level 90; this part gets you to about 85.8
+  Old Man Thistle's Treasure [31314, level 90]: needs level 90; this part gets you to about 85.8
+  The Heartland Legacy [31315, level 90]: needs level 90; this part gets you to about 85.8
+  Temple of the White Tiger [31393, level 87]: needs level 87; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 85.8
+  Way of the Brew [31479, level 90]: is a level 90 quest; this part gets you to about 85.8
+  Have a Drink [31480, level 90]: follows Way of the Brew [31479]
+  Preserving Freshness [31536, level 90]: is a level 90 quest; this part gets you to about 85.8
+  The "Jinyu Princess" Irrigation System [31936, level 90]: needs level 90; this part gets you to about 85.8
+  "Thunder King" Pest Repellers [31937, level 90]: needs level 90; this part gets you to about 85.8
+  The "Earth-Slasher" Master Plow [31938, level 90]: needs level 90; this part gets you to about 85.8
+  Mung-Mung's Vote III: The Great Carrot Caper [31946, level 90]: needs level 90; this part gets you to about 85.8
+  Farmer Fung's Vote III: Crazy For Cabbage [31947, level 90]: needs level 90; this part gets you to about 85.8
+  Nana's Vote II: The Sacred Springs [31948, level 90]: needs level 90; this part gets you to about 85.8
+  Nana's Vote III: Witchberry Julep [31949, level 90]: needs level 90; this part gets you to about 85.8
+  Stag Mastery [32038, level 87]: needs level 86; this part gets you to about 85.8
+  Children of the Water [32045, level 87]: needs level 86; this part gets you to about 85.8
+  You Want Fish? [32684, level 90]: needs level 90; this part gets you to about 85.8
+
+Left out (192)
+--------------
+repeatable (122):
+  A Ruby Shard for Ella [30160], A Lovely Apple for Ella [30189], Water, Water Everywhere [30317], Chasing the Chicken [30318], Pest Problems [30319], Weed War II [30321], Money Matters [30322], They Don't Even Wear Them [30323], Not in Chee-Chee's Backyard [30324], Where It Counts [30325], The Kunzen Legend-Chief [30326], You Have to Burn the Ropes [30327], The Thousand-Year Dumpling [30328], Cindergut Peppers [30329], The Truffle Shuffle [30330], The Mile-High Grub [30331], Fatty Goatsteak [30332], The Lesser of Two Evils [30333], Stealing is Bad... Re-Stealing is OK [30334], Stalling the Ravage [30335], The Kunzen Hunter-Chief [30336], Simian Sabotage [30337], A Ruby Shard for Gina [30379], A Lovely Apple for Gina [30380], A Jade Cat for Ella [30381], A Blue Feather for Ella [30382], A Marsh Lily for Ella [30383], A Dish for Ella [30386], A Jade Cat for Gina [30387], A Blue Feather for Gina [30388], A Marsh Lily for Gina [30389], A Dish for Gina [30390], A Ruby Shard for Old Hillpaw [30391], A Lovely Apple for Old Hillpaw [30392], A Jade Cat for Old Hillpaw [30393], A Blue Feather for Old Hillpaw [30394], A Marsh Lily for Old Hillpaw [30395], A Dish for Old Hillpaw [30396], A Ruby Shard for Chee Chee [30397], A Lovely Apple for Chee Chee [30398], ... 82 more
+needs reputation (32):
+  Mung-Mung's Vote I: A Hozen's Problem [30258], Growing the Farm I: The Weeds [30260], Growing the Farm I: A Little Problem [30516], Farmer Fung's Vote I: Yak Attack [30517], Nana's Vote I: Nana's Secret Recipe [30519], Haohan's Vote I: Bungalow Break-In [30521], Growing the Farm II: The Broken Wagon [30523], Lost and Lonely [30526], Growing the Farm III: The Mossy Boulder [30529], The Old Map [31312], Buy A Fish A Drink? [31320], Buy A Fish A Round? [31321], Buy A Fish A Keg? [31322], Buy A Fish A Brewery? [31323], A Very Nice Necklace [31325], Tina's Tasteful Tiara [31326], An Exquisite Earring [31328], A Beautiful Brooch [31329], Lost Sheepie [31338], Lost Sheepie... Again [31339], Oh Sheepie... [31340], A Wolf In Sheep's Clothing [31341], Mission: Culling The Vermin [31529], Mission: Aerial Threat [31531], Mission: Predator of the Cliffs [31532], The Beginner's Brew [31534], Ella's Taste Test [31537], A Worthy Brew [31538], A Present for Teacher [31820], A Shabby New Face [32189], One Magical, Flying Kingdom's Trash... [32198], Inherit the Earth [32682]
+not in the game (on Questie's quest blacklist) (20):
+  Barrel of Monkies [29703], A Breach in the Wall [30019], FLAG - Kung Fu Intro [30087], The Family Farm [30253], Tummy Trouble [30520], FLAG - Weed War Training [30536], FLAG - Pest Problems Training [30566], FLAG - Player Began Finale [30629], Ways of Cooking [31280], The Way of the Grill [31305], UNUSED [31469], UNUSED [31485], Mission: The Hozen Dozen [31530], The Perfect Feather [31533], Valley of the Four Winds [31685], Valley of the Four Winds [31723], Candy Bucket [32046], Candy Bucket [32048], Honor the Flame [32502], Into the Vale [33008]
+needs a profession (9):
+  Ready for Greatness [31302], To Be a Master [31521], So You Want to Be a Blacksmith... [32726], Secrets Lost, Forever? [33021], Catch and Carry [33022], Is That A Real Measurement? [33024], These Aren't Your Fatty Goatsteaks [33026], The Secret Ingredient Is... [33027], Secrets Lost, Forever? [33139]
+handed in here, but the database does not say where it starts (2):
+  Greenstone Village [30910], Hui's Vengeance [30918]
+special category (sort -344) (2):
+  Stranger in a Strange Land [31488], Stranger in a Strange Land [31489]
+dungeon quest (1):
+  Into the Brewery [30085]
+cannot be taken together with Everything I Know About Cooking [31279], which is in the guide (1):
+  Everything I Know About Cooking [31486]
+cannot be taken together with Where Silk Comes From [30072], which is in the guide (1):
+  Got Silk? [32035]
+special category (sort -392) (1):
+  Heroic Deeds [32901]
+special category (sort -400) (1):
+  Proving Grounds [33249]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Valley of the Four Winds - Horde - part 2 of 2, planned from level 90
+Guide "87-90 Valley of the Four Winds" in group "Zone Routes (Horde)": this part has 327 steps, 287 stops
+Written to guides/mop/Valley of the Four Winds (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 14 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+10 pickups or hand-ins are within reach of a stop but planned for later.
+3 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 90. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 240 steps kept, 128 new ones slotted in, 2 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 273 tasks, 45,833 yd on foot; ends at level 90.3; 3 hearths
+  everyone (quests that depend on other zones): 97 more tasks; their whole route comes to 59,230 yd; ends at level 90.3; 5 hearths
+Hearthstone: set at Trader Jambeezi (Trader Jambeezi's inn); 5 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 90 for You Want Fish?
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+16 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+8 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+4 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (117)
+-------------------------
+Start to finish here: 83 (83 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (4):
+  Ken-Ken [29873, level 85] -> Krasarang Wilds
+  Kang Bramblestaff [29875, level 85, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Krasarang Wilds
+  The Road to Kun-Lai [31255, level 87, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Kun-Lai Summit
+  Temple of the White Tiger [31393, level 87, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Kun-Lai Summit
+
+Hand-in step only shows once complete (1):
+  So You Want to Be a Chef... [31281, level 90] - needs Sliced Peaches (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  No Fishing Pole Necessary! [32685, level 90] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (28):
+  The Swarm Begins [30622, level 87] - needs one of Warn Stoneplow [30241], Warn Stoneplow [30360], Hope Springs Eternal [30376]
+  The Mantidote [30623, level 87] - needs one of Warn Stoneplow [30241], Warn Stoneplow [30360], Hope Springs Eternal [30376]
+  Students No More [30625, level 87] - needs The Swarm Begins [30622], The Mantidote [30623], It Does You No Good In The Keg [30624]
+  Retreat! [30626, level 87] - needs one of Students No More [30625]
+  The Savior of Stoneplow [30627, level 87] - needs one of Retreat! [30626]
+  The Gratitude of Stoneplow [30628, level 87] - needs one of The Savior of Stoneplow [30627]
+  It Does You No Good In The Keg [30653, level 87, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Warn Stoneplow [30241], Hope Springs Eternal [30376] -> another zone
+  Mung-Mung's Vote II: Rotten to the Core [30259, level 90] - needs one of Mung-Mung's Vote I: A Hozen's Problem [30258]
+  Farmer Fung's Vote II: On the Loose [30518, level 90] - needs one of Farmer Fung's Vote I: Yak Attack [30517]
+  Haohan's Vote II: The Real Culprits [30522, level 90] - needs one of Haohan's Vote I: Bungalow Break-In [30521]
+  Growing the Farm II: Knock on Wood [30524, level 90] - needs one of Growing the Farm II: The Broken Wagon [30523]
+  Haohan's Vote III: Pure Poison [30525, level 90] - needs one of Haohan's Vote II: The Real Culprits [30522]
+  Haohan's Vote IV: Melons For Felons [30527, level 90] - needs one of Haohan's Vote III: Pure Poison [30525]
+  Haohan's Vote V: Chief Yip-Yip [30528, level 90] - needs one of Haohan's Vote IV: Melons For Felons [30527]
+  A Second Hand [30534, level 90] - needs one of Growing the Farm III: The Mossy Boulder [30529]
+  Just A Folk Story [31313, level 90] - needs one of The Old Map [31312]
+  Old Man Thistle's Treasure [31314, level 90] - needs one of Just A Folk Story [31313]
+  The Heartland Legacy [31315, level 90] - needs one of Old Man Thistle's Treasure [31314]
+  Way of the Brew [31479, level 90] - needs one of Ready for Greatness [31302]
+  Have a Drink [31480, level 90] - needs one of Way of the Brew [31479]
+  Preserving Freshness [31536, level 90] - needs Strong as a Tiger [31467], Agile as a Tiger [31471], The Soup of Contemplation [31474], The Spirit of Cooking [31476], Endurance [31477], Have a Drink [31480]
+  The "Jinyu Princess" Irrigation System [31936, level 90] - needs one of Growing the Farm I: A Little Problem [30516]
+  "Thunder King" Pest Repellers [31937, level 90] - needs one of Growing the Farm II: Knock on Wood [30524]
+  The "Earth-Slasher" Master Plow [31938, level 90] - needs one of Growing the Farm III: The Mossy Boulder [30529]
+  Mung-Mung's Vote III: The Great Carrot Caper [31946, level 90] - needs one of Mung-Mung's Vote II: Rotten to the Core [30259]
+  Farmer Fung's Vote III: Crazy For Cabbage [31947, level 90] - needs one of Farmer Fung's Vote II: On the Loose [30518]
+  Nana's Vote II: The Sacred Springs [31948, level 90] - needs one of Nana's Vote I: Nana's Secret Recipe [30519]
+  Nana's Vote III: Witchberry Julep [31949, level 90] - needs one of Nana's Vote II: The Sacred Springs [31948]
+
+Worth checking in game
+----------------------
+  Piercing Talons and Slavering Jaws [29916, level 87]: mixes a kill-credit objective with others; check that "Lupello" really is line 2 in the quest log
+  A Lesson in Bravery [29918, level 87]: could not read how many Great White Plainshawk are needed from the quest text; assumed 8
+  Evacuation Orders [29982, level 87]: mixes a kill-credit objective with others; check that "Shu-Li Spadepaw" really is line 2 in the quest log
+  Evacuation Orders [29982, level 87]: mixes a kill-credit objective with others; check that "Ying Greentill" really is line 3 in the quest log
+  Evacuation Orders [29982, level 87]: mixes a kill-credit objective with others; check that "Mia Marlfur" really is line 4 in the quest log
+  Gardener Fran and the Watering Can [30050, level 87]: "Watering Can Credit (1)" has no place in the data; taken to be done where the quest is given
+  The Emperor [30073, level 87]: "The Emperor Credit (1)" has no place in the data; taken to be done where the quest is given
+  Haohan's Vote IV: Melons For Felons [30527, level 90]: mixes a kill-credit objective with others; check that "Bursting Striped Melon" really is line 2 in the quest log
+  Haohan's Vote IV: Melons For Felons [30527, level 90]: mixes a kill-credit objective with others; check that "Tilled Soil" really is line 3 in the quest log
+  The Mantidote [30623, level 87]: "Manifestation of Fear (1)" has no place in the data; taken to be done where the quest is given
+  So You Want to Be a Chef... [31281, level 90]: "Sliced Peaches (1)" has no place in the data; taken to be done where the quest is given
+  Have a Drink [31480, level 90]: has a reputation or spell objective, which is not planned
+  Mung-Mung's Vote III: The Great Carrot Caper [31946, level 90]: mixes a kill-credit objective with others; check that "Ripe Juicycrunch Carrot" really is line 2 in the quest log
+  Mung-Mung's Vote III: The Great Carrot Caper [31946, level 90]: mixes a kill-credit objective with others; check that "Tilled Soil" really is line 3 in the quest log
+  Farmer Fung's Vote III: Crazy For Cabbage [31947, level 90]: mixes a kill-credit objective with others; check that "Ripe Green Cabbage" really is line 2 in the quest log
+  Farmer Fung's Vote III: Crazy For Cabbage [31947, level 90]: mixes a kill-credit objective with others; check that "Tilled Soil" really is line 3 in the quest log
+  Nana's Vote III: Witchberry Julep [31949, level 90]: mixes a kill-credit objective with others; check that "Bursting Witchberries" really is line 2 in the quest log
+  Nana's Vote III: Witchberry Julep [31949, level 90]: mixes a kill-credit objective with others; check that "Tilled Soil" really is line 3 in the quest log
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

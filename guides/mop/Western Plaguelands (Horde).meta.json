@@ -1,0 +1,435 @@
+{
+  "zone": "Western Plaguelands",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "35-40 Western Plaguelands",
+  "file": "Western Plaguelands (Horde).lua",
+  "continent": -28,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 35,
+      "end": 38.1,
+      "next": 41,
+      "guide": "35-39 Western Plaguelands: around Field Agent Kaartish",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Field Agent Kaartish",
+          "guide": "35-39 Western Plaguelands: around Field Agent Kaartish",
+          "level": 35,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 41,
+      "end": 41,
+      "guide": "41-42 Western Plaguelands",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "41-42 Western Plaguelands",
+          "level": 41,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 9133,
+      "level": 7,
+      "req": 5,
+      "xp": 315,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Eversong Woods"
+    },
+    {
+      "id": 9328,
+      "level": 21,
+      "req": 15,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Ghostlands"
+    },
+    {
+      "id": 9627,
+      "level": 21,
+      "req": 15,
+      "xp": 2500,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Durotar"
+    },
+    {
+      "id": 9811,
+      "level": 21,
+      "req": 15,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/Goblin/Pandaren",
+      "from": "Ghostlands"
+    },
+    {
+      "id": 26920,
+      "level": 35,
+      "req": 34,
+      "xp": 820,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 26921,
+      "level": 35,
+      "req": 34,
+      "xp": 3300,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26922,
+      "level": 35,
+      "req": 34,
+      "xp": 3300,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26923,
+      "level": 35,
+      "req": 34,
+      "xp": 4100,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26924,
+      "level": 35,
+      "req": 34,
+      "xp": 4950,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26925,
+      "level": 35,
+      "req": 34,
+      "xp": 4100,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26935,
+      "level": 37,
+      "req": 34,
+      "xp": 370,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26952,
+      "level": 37,
+      "req": 35,
+      "xp": 370,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 26953,
+      "level": 37,
+      "req": 35,
+      "xp": 4600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26954,
+      "level": 37,
+      "req": 35,
+      "xp": 3710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26955,
+      "level": 38,
+      "req": 35,
+      "xp": 4900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26956,
+      "level": 37,
+      "req": 35,
+      "xp": 3710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26957,
+      "level": 38,
+      "req": 36,
+      "xp": 980,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26979,
+      "level": 36,
+      "req": 34,
+      "xp": 1750,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 26999,
+      "level": 37,
+      "req": 34,
+      "xp": 4600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27000,
+      "level": 37,
+      "req": 34,
+      "xp": 4600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27001,
+      "level": 37,
+      "req": 34,
+      "xp": 5550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27002,
+      "level": 37,
+      "req": 34,
+      "xp": 2750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27011,
+      "level": 37,
+      "req": 35,
+      "xp": 3710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27012,
+      "level": 37,
+      "req": 35,
+      "xp": 3710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27013,
+      "level": 37,
+      "req": 35,
+      "xp": 3710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27017,
+      "level": 38,
+      "req": 36,
+      "xp": 3920,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27053,
+      "level": 38,
+      "req": 36,
+      "xp": 1950,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27054,
+      "level": 38,
+      "req": 36,
+      "xp": 3920,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27055,
+      "level": 39,
+      "req": 36,
+      "xp": 6200,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27057,
+      "level": 38,
+      "req": 35,
+      "xp": 3920,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27117,
+      "level": 35,
+      "req": 34,
+      "xp": 4950,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 27151,
+      "level": 37,
+      "req": 35,
+      "xp": 3710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27152,
+      "level": 37,
+      "req": 35,
+      "xp": 4600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27153,
+      "level": 37,
+      "req": 35,
+      "xp": 3710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27154,
+      "level": 37,
+      "req": 35,
+      "xp": 4600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27155,
+      "level": 37,
+      "req": 35,
+      "xp": 4600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27156,
+      "level": 37,
+      "req": 35,
+      "xp": 5550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27157,
+      "level": 37,
+      "req": 35,
+      "xp": 4600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28508,
+      "level": 35,
+      "req": 34,
+      "xp": 820,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "The Hinterlands"
+    },
+    {
+      "id": 28575,
+      "level": 35,
+      "req": 34,
+      "xp": 330,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28750,
+      "level": 35,
+      "req": 34,
+      "xp": 820,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "The Cape of Stranglethorn"
+    }
+  ],
+  "carriedTo": {
+    "Eversong Woods": 1,
+    "Tirisfal Glades": 3,
+    "Durotar": 13,
+    "Ghostlands": 1,
+    "Hillsbrad Foothills": 1,
+    "Arathi Highlands": 1,
+    "The Hinterlands": 1,
+    "Northern Stranglethorn": 1,
+    "The Cape of Stranglethorn": 1,
+    "Eastern Plaguelands": 1
+  }
+}

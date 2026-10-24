@@ -1,0 +1,34 @@
+{
+  "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "20-25 Wetlands",
+  "saved": "2026-10-23 17:49",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "turnin:26137 @56:49.95,79.15  TurnIn Checking on the Boys",
+        "accept:25395 @56:49.95,79.15  Accept The Stolen Keg",
+        "accept:25211 @56:49.91,79.23  Accept Cleaning Hovel",
+        "obj:25395:1 @56:47.79,74.35  Objective The Stolen Keg / Mountaineer's Ale (1)",
+        "obj:25211:1 @56:48.14,75.91  Objective Cleaning Hovel / Dragonmaw Grunt (8)",
+        "turnin:25211 @56:49.91,79.23  TurnIn Cleaning Hovel",
+        "turnin:25395 @56:49.95,79.15  TurnIn The Stolen Keg",
+        "accept:25770 @56:49.95,79.15  Accept Keg Run",
+        "accept:25777 @56:57.51,71.76  Accept Onwards to Menethil",
+        "turnin:25770 @56:57.51,71.76  TurnIn Keg Run",
+        "accept:25820 @56:11.86,57.9  Accept A Mother's Worries",
+        "turnin:25777 @56:10.52,55.71  TurnIn Onwards to Menethil",
+        "obj:25820:1 @56:15.95,53.46  Objective A Mother's Worries / Ocean Shredfin (10)",
+        "turnin:25820 @56:11.86,57.9  TurnIn A Mother's Worries"
+      ]
+    },
+    {
+      "part": 2,
+      "steps": [
+        "accept:26327 @56:49.8,18.26  Accept Anvilmar the Hero",
+        "accept:26139 @56:49.44,17.21  Accept Into Arathi",
+        "turnin:26327 @56:49.44,17.21  TurnIn Anvilmar the Hero"
+      ]
+    }
+  ]
+}

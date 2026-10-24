@@ -1,0 +1,112 @@
+Mulgore - Horde - part 1 of 2, planned from level 5
+Guide "5-12 Mulgore" in group "Zone Routes (Horde)": this part has 105 steps, 57 stops
+Written to guides/mop/Mulgore (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 9 of 40 held at once (Tauren Warrior), not counting quests brought in from other zones.
+4 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 5. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 82 steps kept, 1 new ones slotted in, 1 moved because their prerequisites changed, 2 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 42 tasks, 8,932 yd on foot; ends at level 8.7; 1 hearth; at its hardest you are 2.4 levels below the mobs
+  Tauren: 41 more tasks; their whole route comes to 20,235 yd; ends at level 10.9; 1 hearth; at its hardest you are 1.2 levels below the mobs
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 8,932 yd; ends at level 8.7; 1 hearth; at its hardest you are 2.4 levels below the mobs
+Hearthstone: set at Harn Longcast (Harn Longcast's inn); 1 hearth step in the guide.
+36 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+3 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (31)
+------------------------
+Start to finish here: 29 (0 for everyone, 15 Tauren, 14 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Walk With The Earth Mother [26397, level 12, Tauren] -> Orgrimmar
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Rite of the Winds [24215, level 5, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Camp Narache
+
+Worth checking in game
+----------------------
+  Rite of Vision [20441, level 7, Tauren]: objective "Tribal Fire" is line 1 by the database, but RestedXP's guide has "Water of Vision consumed (1x)" there
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  Warchief's Command: Northern Barrens! [28494, level 10]: needs level 9; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 8.7
+  Warchief's Command: Azshara! [28496, level 10]: needs level 9; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 8.7
+
+Left out (286)
+--------------
+not in the game (on Questie's quest blacklist) (208):
+  A Lesson to Learn [27], Aquatic Form [31], Poison Water [748], Winterhoof Cleansing [754], Thunderhorn Totem [756], Thunderhorn Cleansing [758], Wildmane Totem [759], Wildmane Cleansing [760], The Venture Co. [764], Supervisor Fizsprocket [765], Mazzranache [766], Rite of Vision [767], Rite of Vision [771], Leaders of the Fang [914], Assisting Arch Druid Runetotem [936], Serpentbloom [962], The New Frontier [1000], The New Frontier [1004], The New Frontier [1018], Compendium of the Fallen [1049], Melor Sends Word [1130], Steelsnap [1131], The Sacred Flame [1195], Hamuul Runetotem [1489], Nara Wildmane [1490], Veteran Uzzek [1505], Call of Fire [1523], A Task Unfinished [1656], The Islander [1718], Speak with Ruga [1823], Orm Stonehoof and the Brutal Helm [1840], Chimaeric Horn [1844], Brutal Helm [1845], Speak with Un'thuwa [1883], Journey to the Marsh [1947], Return to the Marsh [1953], Report to Anastasia [1959], The Platinum Discs [2440], Master of the Wild Leather [2860], Return to Thunder Bluff [2967], ... 168 more
+above this zone's range of 4-12 (51):
+  Until Death Do Us Part [264], Deadmire [1205], Portents of Uldum [2965], The Black Shield [27258], An Audience with Ureda [27277], Grimshot's Call [27278], The Dreamseeker Calls [27280], Grezz Ragefist [27281], Zevrost's Behest [27282], A Journey to Moonglade [27283], Return to Krog [27292], Seek Out Master Pyreanor [27298], Follow the Sun [27304], The Seer's Call [27331], Seek the Shadow-Walker [27332], Dark Cleric Cecille [27334], Journey to Orgrimmar [27335], Warchief's Command: Vashj'ir! [27718], Warchief's Command: Mount Hyjal! [27721], Warchief's Command: Deepholm! [27722], Seek Brother Silverhallow [28164], Moonglade Calls [28289], Meet with Grezz Ragefist [28290], Meet with Ormak Grimshot [28297], Meet with Zevrost [28299], Meet with Ureda [28300], Meet with Kardris Dreamseeker [28301], Meet with Sunwalker Atohmo [28302], Meet with Master Pyreanor [28303], Meet with Dark Cleric Cecille [28304], Meet with Tyelis [28307], Meet with Seer Liwatha [28308], Meet with Shadow-Walker Zuru [28309], Meet with Brother Silverhallow [28323], Warchief's Command: Ashenvale! [28493], Warchief's Command: Thousand Needles! [28504], Warchief's Command: Tanaris! [28509], Warchief's Command: Feralas! [28510], Warchief's Command: Un'Goro Crater! [28526], Warchief's Command: Silithus! [28527], ... 11 more
+repeatable (10):
+  Pond Predators [29345], The Ring's the Thing [29346], The Race to Restock [29348], Craving Crayfish [29349], Shiny Baubles [29354], Pining for Nuts [29358], "Magic" Mushrooms [29362], Mulgore Spice Bread [29363], Corn Mash [29364], Perfectly Picked Portions [29365]
+needs a profession (6):
+  Gathering Leather [768], Kodo Hide Bag [769], Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+special category (sort -394) (4):
+  Learning the Ropes [31573], On The Mend [31574], Got one! [31575], Level Up! [31831]
+special category (sort -284) (2):
+  Thunder Bluff [12786], Hammering It Out [25759]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29388], Guardians of Hyjal: Call of the Ancients [29390]
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  The Demon Scarred Cloak [770]
+special category (sort -23) (1):
+  Hammering It Out [25789]
+dungeon quest (1):
+  Enemies Below [31036]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Mulgore - Horde - part 2 of 2, planned from level 11
+Guide "5-12 Mulgore" in group "Zone Routes (Horde)": this part has 2 steps, 1 stops
+Written to guides/mop/Mulgore (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 11. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 2 tasks, 0 yd on foot; ends at level 11.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Warchief's Command: Northern Barrens! [28494, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> The Barrens
+  Warchief's Command: Azshara! [28496, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Azshara
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

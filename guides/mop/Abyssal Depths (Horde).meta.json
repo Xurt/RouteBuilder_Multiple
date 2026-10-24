@@ -1,0 +1,49 @@
+{
+  "zone": "Abyssal Depths",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "81-81 Abyssal Depths",
+  "file": "Abyssal Depths (Horde).lua",
+  "continent": -5145,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 81,
+      "end": 81.02,
+      "guide": "81-81 Abyssal Depths",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "81-81 Abyssal Depths",
+          "level": 81,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 26124,
+      "level": 81,
+      "req": 80,
+      "xp": 27700,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26221,
+      "level": 81,
+      "req": 80,
+      "xp": 27700,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Vashj\u0027ir"
+    }
+  ],
+  "carriedTo": {}
+}

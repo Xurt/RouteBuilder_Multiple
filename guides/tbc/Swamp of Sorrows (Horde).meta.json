@@ -1,0 +1,340 @@
+{
+  "zone": "Swamp of Sorrows",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "35-57 Swamp of Sorrows",
+  "file": "Swamp of Sorrows (Horde).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 35,
+      "end": 35.19,
+      "next": 38,
+      "guide": "35-36 Swamp of Sorrows",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "35-36 Swamp of Sorrows",
+          "level": 35,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 38,
+      "end": 38.21,
+      "next": 41,
+      "guide": "38-39 Swamp of Sorrows",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "38-39 Swamp of Sorrows",
+          "level": 38,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 41,
+      "end": 41.54,
+      "next": 44,
+      "guide": "41-42 Swamp of Sorrows: around Tok\u0027Kar",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "around Tok\u0027Kar",
+          "guide": "41-42 Swamp of Sorrows: around Tok\u0027Kar",
+          "level": 41,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "start": 44,
+      "end": 44.12,
+      "next": 47,
+      "guide": "44-45 Swamp of Sorrows",
+      "sections": [
+        {
+          "label": "RBSection4_1",
+          "name": "part 4",
+          "guide": "44-45 Swamp of Sorrows",
+          "level": 44,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "start": 47,
+      "end": 47.02,
+      "next": 50,
+      "guide": "47-48 Swamp of Sorrows",
+      "sections": [
+        {
+          "label": "RBSection5_1",
+          "name": "part 5",
+          "guide": "47-48 Swamp of Sorrows",
+          "level": 47,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "start": 50,
+      "end": 50.08,
+      "next": 53,
+      "guide": "50-51 Swamp of Sorrows",
+      "sections": [
+        {
+          "label": "RBSection6_1",
+          "name": "part 6",
+          "guide": "50-51 Swamp of Sorrows",
+          "level": 50,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "start": 53,
+      "end": 53,
+      "next": 56,
+      "guide": "53-54 Swamp of Sorrows",
+      "sections": [
+        {
+          "label": "RBSection7_1",
+          "name": "part 7",
+          "guide": "53-54 Swamp of Sorrows",
+          "level": 53,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 8,
+      "start": 56,
+      "end": 56.01,
+      "guide": "56-57 Swamp of Sorrows",
+      "sections": [
+        {
+          "label": "RBSection8_1",
+          "name": "part 8",
+          "guide": "56-57 Swamp of Sorrows",
+          "level": 56,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 1389,
+      "level": 35,
+      "req": 30,
+      "xp": 3300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1391,
+      "level": 42,
+      "req": 37,
+      "xp": 3600,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Duskwood"
+    },
+    {
+      "id": 1392,
+      "level": 39,
+      "req": 29,
+      "xp": 3100,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1393,
+      "level": 38,
+      "req": 30,
+      "xp": 3920,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1420,
+      "level": 40,
+      "req": 30,
+      "xp": 3250,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Badlands"
+    },
+    {
+      "id": 1444,
+      "level": 44,
+      "req": 40,
+      "xp": 5290,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "The Hinterlands"
+    },
+    {
+      "id": 8417,
+      "level": 50,
+      "req": 50,
+      "xp": 730,
+      "part": 1,
+      "section": 0,
+      "tag": "Warrior",
+      "from": "Mulgore"
+    },
+    {
+      "id": 698,
+      "level": 40,
+      "req": 35,
+      "xp": 4370,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9440,
+      "level": 38,
+      "req": 35,
+      "xp": 3920,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 699,
+      "level": 42,
+      "req": 35,
+      "xp": 4820,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1422,
+      "level": 45,
+      "req": 38,
+      "xp": 1662,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1424,
+      "level": 43,
+      "req": 38,
+      "xp": 6300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1426,
+      "level": 43,
+      "req": 38,
+      "xp": 6300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1427,
+      "level": 43,
+      "req": 35,
+      "xp": 5050,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1430,
+      "level": 44,
+      "req": 35,
+      "xp": 5290,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1428,
+      "level": 45,
+      "req": 41,
+      "xp": 5540,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2621,
+      "level": 50,
+      "req": 46,
+      "xp": 1700,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2784,
+      "level": 50,
+      "req": 46,
+      "xp": 680,
+      "part": 5,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2622,
+      "level": 50,
+      "req": 47,
+      "xp": 1700,
+      "part": 6,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2623,
+      "level": 55,
+      "req": 45,
+      "xp": 8170,
+      "part": 6,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2801,
+      "level": 57,
+      "req": 47,
+      "xp": 870,
+      "part": 8,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Badlands": 1,
+    "Dustwallow Marsh": 1,
+    "The Hinterlands": 1,
+    "Winterspring": 1
+  }
+}

@@ -1,0 +1,165 @@
+Burning Steppes - Alliance - part 1 of 3, planned from level 52
+Guide "52-58 Burning Steppes" in group "Zone Routes (Alliance)": this part has 9 steps, 7 stops
+Written to guides/tbc/Burning Steppes (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 52. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 6 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed, 28 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 6 tasks, 1,301 yd on foot; ends at level 52.1
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 2,414 yd; ends at level 52.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Hand-in step only shows once complete (1):
+  Overmaster Pyron [4262, level 52] - needs Overmaster Pyron slain (1) (Eastern Kingdoms - the continent map)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  The True Masters [4223, level 54] <- Redridge Mountains
+  Return to Tinkee [4810, level 54] <- Winterspring
+
+Worth checking in game
+----------------------
+  Extinguish the Firegut [3823, level 52]: could not read how many Firegut Ogre Mage are needed from the quest text; assumed 8
+
+Put off to a later part (11)
+----------------------------
+These need a higher level than this part ends at:
+  Gor'tesh the Brute Lord [3824, level 53]: its mobs are level 54; this part gets you to about 50.8
+  Ogre Head On A Stick = Party [3825, level 53]: follows Gor'tesh the Brute Lord [3824]
+  A Taste of Flame [4022, level 54]: its mobs are level 55; this part gets you to about 50.8
+  Dragonkin Menace [4182, level 54]: its mobs are level 53; this part gets you to about 50.8
+  The True Masters [4183, level 54]: follows Dragonkin Menace [4182]
+  The True Masters [4224, level 54]: is a level 54 quest; this part gets you to about 50.8
+  FIFTY! YEP! [4283, level 56]: its mobs are level 55; this part gets you to about 50.8
+  Tablet of the Seven [4296, level 50]: needs level 50; this part gets you to about 50.2
+  Broodling Essence [4726, level 52]: needs level 50; this part gets you to about 50.2
+  Felnok Steelspring [4808, level 54]: needs level 50; this part gets you to about 50.2
+  Lord Banehollow [7623, level 58]: needs level 58; this part gets Human Warlock/Gnome Warlock characters to about 50.8
+
+Left out (50)
+-------------
+dungeon quest (26):
+  Dark Iron Legacy [3801], Dark Iron Legacy [3802], A Taste of Flame [4024], The Heart of the Mountain [4123], Ribbly Screwspigot [4136], Marshal Windsor [4241], Abandoned Hope [4242], Incendius! [4263], The Good Stuff [4286], Jail Break! [4322], Yuka Screwspigot [4324], Put Her Down [4701], Kibler's Exotic Pets [4729], Egg Freezing [4734], Egg Collection [4735], Doomrigger's Clasp [4764], Delivery to Ridgewell [4765], Mayara Brightwing [4766], En-Ay-Es-Tee-Why [4862], Mother's Milk [4866], Tinkee Steamboil [4907], Message to Maxwell [5002], Maxwell's Mission [5081], General Drakkisath's Command [5089], General Drakkisath's Demise [5102], Blackhand's Command [7761]
+above this zone's range of 50-58 (12):
+  Leonid Barthalomew [5522], Stormwind Rendezvous [6402], Mor'zul Bloodbringer [7562], Rage of Blood [7563], Wildeyes [7564], Xorothian Stardust [7625], Bell of Dethmoora [7626], Wheel of the Black March [7627], Doomsday Candle [7628], Imp Delivery [7629], Arcanite [7630], Dreadsteed of Xoroth [7631]
+not in the game (on Questie's quest blacklist) (6):
+  Rumblerock the Elder [8636], Dawnstrider the Elder [8683], Desecrate this Fire! [11768], Honor the Flame [11810], Playing with Fire [11882], Incense for the Summer Scorchlings [11964]
+repeatable (5):
+  Libram of Rumination [4463], Libram of Constitution [4481], Libram of Tenacity [4482], Libram of Resilience [4483], Libram of Voracity [4484]
+cannot be taken together with A Taste of Flame [4022], which is in the guide (1):
+  A Taste of Flame [4023]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Burning Steppes - Alliance - part 2 of 3, planned from level 55
+Guide "52-58 Burning Steppes" in group "Zone Routes (Alliance)": this part has 33 steps, 27 stops
+Written to guides/tbc/Burning Steppes (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 55. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 26 steps kept, 5 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 23 tasks, 8,077 yd on foot; ends at level 55.5
+  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 9,907 yd; ends at level 55.5
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (11)
+------------------------
+Start to finish here: 6 (6 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  The True Masters [4183, level 54] -> Redridge Mountains
+  Felnok Steelspring [4808, level 54] -> Winterspring
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Overmaster Pyron [4262, level 52] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  A Taste of Flame [4022, level 54] - needs one of Trinkets... [3481]
+  The True Masters [4224, level 54] - needs one of The True Masters [4223]
+
+Worth checking in game
+----------------------
+  A Taste of Flame [4022, level 54]: mixes a kill-credit objective with others; check that "Cyrus Therepentous" really is line 2 in the quest log
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  Lord Banehollow [7623, level 58]: needs level 58; this part gets Human Warlock/Gnome Warlock characters to about 55.5
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Burning Steppes - Alliance - part 3 of 3, planned from level 59
+Guide "52-58 Burning Steppes" in group "Zone Routes (Alliance)": this part has 3 steps, 2 stops
+Written to guides/tbc/Burning Steppes (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warlock), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 59. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  Human Warlock/Gnome Warlock: 1 tasks, 0 yd on foot; ends at level 59.0
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 2,265 yd; ends at level 59.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Lord Banehollow [7623, level 58, Human Warlock/Gnome Warlock] -> Felwood
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Overmaster Pyron [4262, level 52] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

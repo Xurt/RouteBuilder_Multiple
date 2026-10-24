@@ -1,0 +1,178 @@
+Shadowglen - Alliance - part 1 of 2, planned from level 2
+Guide "2-5 Shadowglen" in group "Zone Routes (Alliance)": this part has 35 steps, 34 stops
+Written to guides/mop/Shadowglen (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: 57 PROBLEMS
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Human Warrior)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Human Paladin)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Human Hunter)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Human Rogue)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Human Priest)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Human DeathKnight)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Human Mage)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Human Warlock)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Human Monk)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Dwarf Warrior)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Dwarf Paladin)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Dwarf Hunter)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Dwarf Rogue)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Dwarf Priest)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Dwarf DeathKnight)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Dwarf Shaman)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Dwarf Mage)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Dwarf Warlock)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Dwarf Monk)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (NightElf Warrior)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (NightElf Hunter)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (NightElf Rogue)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (NightElf Priest)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (NightElf DeathKnight)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (NightElf Mage)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (NightElf Monk)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (NightElf Druid)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Gnome Warrior)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Gnome Rogue)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Gnome Priest)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Gnome DeathKnight)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Gnome Mage)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Gnome Warlock)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Gnome Monk)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Draenei Warrior)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Draenei Paladin)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Draenei Hunter)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Draenei Priest)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Draenei DeathKnight)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Draenei Shaman)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Draenei Mage)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Draenei Monk)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Worgen Warrior)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Worgen Hunter)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Worgen Rogue)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Worgen Priest)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Worgen DeathKnight)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Worgen Mage)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Worgen Warlock)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Worgen Druid)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Pandaren Warrior)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Pandaren Hunter)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Pandaren Rogue)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Pandaren Priest)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Pandaren Shaman)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Pandaren Mage)
+  ! A Favor for Melithar is picked up before any of the quests that unlock it (Pandaren Monk)
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+6 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 2. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 40 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed, 21 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 12 tasks, 1,517 yd on foot; ends at level 3.2; 1 ORDER PROBLEMS
+  NightElf Mage/Draenei Mage: 2 more tasks; their whole route comes to 2,180 yd; ends at level 3.3; 1 ORDER PROBLEMS
+  NightElf Warrior: 5 more tasks; their whole route comes to 3,078 yd; ends at level 3.5; 1 ORDER PROBLEMS
+  NightElf Hunter: 5 more tasks; their whole route comes to 2,453 yd; ends at level 3.5; 1 ORDER PROBLEMS
+  NightElf Rogue: 5 more tasks; their whole route comes to 3,018 yd; ends at level 3.5; 1 ORDER PROBLEMS
+  NightElf Priest: 5 more tasks; their whole route comes to 2,499 yd; ends at level 3.6; 1 ORDER PROBLEMS
+  NightElf Mage: 3 more tasks; their whole route comes to 2,478 yd; ends at level 3.5; 1 ORDER PROBLEMS
+  NightElf Druid: 5 more tasks; their whole route comes to 2,728 yd; ends at level 3.6; 1 ORDER PROBLEMS
+  NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid (quests that depend on other zones): 1 more tasks; their whole route comes to 1,884 yd; ends at level 3.2; 1 ORDER PROBLEMS
+Hearthstone: set at Khardan Proudblade (Khardan Proudblade's inn); 0 hearth steps in the guide.
+
+Quests in the guide (17)
+------------------------
+Start to finish here: 16 (0 for everyone, 4 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren, 2 NightElf Warrior, 2 NightElf Hunter, 2 NightElf Rogue, 2 NightElf Priest, 2 NightElf Druid, 1 NightElf Mage/Draenei Mage, 1 NightElf Mage)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Signs of Things to Come [28728, level 5, NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid] <- Shadowthread Cave
+
+Worth checking in game
+----------------------
+  Frost Nova [26940, level 3, NightElf Mage]: has a reputation or spell objective, which is not planned
+  Frost Nova [26940, level 3, NightElf Mage]: objective "Training Dummy slain (1)" is line 1 by the database, but RestedXP's guide has "Practice Arcane Missles (1)" there
+  Learning New Techniques [26945, level 3, NightElf Warrior]: has a reputation or spell objective, which is not planned
+  Learning New Techniques [26945, level 3, NightElf Warrior]: objective "Training Dummy slain (1)" is line 1 by the database, but RestedXP's guide has "Practice Charge (1)" there
+  A Rogue's Advantage [26946, level 3, NightElf Rogue]: has a reputation or spell objective, which is not planned
+  A Rogue's Advantage [26946, level 3, NightElf Rogue]: objective "Training Dummy slain (1)" is line 1 by the database, but RestedXP's guide has "Practice Eviscerate (1)" there
+  A Woodsman's Training [26947, level 3, NightElf Hunter]: has a reputation or spell objective, which is not planned
+  A Woodsman's Training [26947, level 3, NightElf Hunter]: objective "Training Dummy slain (1)" is line 1 by the database, but RestedXP's guide has "Practice Steady Shot (1)" there
+  Moonfire [26948, level 3, NightElf Druid]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  Moonfire [26948, level 3, NightElf Druid]: has a reputation or spell objective, which is not planned
+  Moonfire [26948, level 3, NightElf Druid]: objective "Training Dummy slain (8)" is line 1 by the database, but RestedXP's guide has "Heal Wounded Sentinel" there
+  Learning the Word [26949, level 3, NightElf Priest]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  Learning the Word [26949, level 3, NightElf Priest]: has a reputation or spell objective, which is not planned
+  Learning the Word [26949, level 3, NightElf Priest]: objective "Training Dummy slain (8)" is line 1 by the database, but RestedXP's guide has "Heal Wounded Sentinel" there
+
+Put off to a later part (7)
+---------------------------
+These need a higher level than this part ends at:
+  Dolanaar Delivery [2159, level 5]: needs level 3; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 3.2
+  Priestess of the Moon [28723, level 3]: needs level 3; this part gets NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid characters to about 3.2
+  Iverron's Antidote [28724, level 3]: needs level 3; this part gets NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid characters to about 3.2
+  The Woodland Protector [28725, level 3]: follows Iverron's Antidote [28724]
+  Teldrassil: Crown of Azeroth [28729, level 5]: needs level 3; this part gets NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid characters to about 3.2
+  Precious Waters [28730, level 5]: needs level 3; this part gets NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid characters to about 3.2
+  Teldrassil: Passing Awareness [28731, level 5]: needs level 3; this part gets NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid characters to about 3.2
+
+Left out (10)
+-------------
+not in the game (on Questie's quest blacklist) (8):
+  Demonic Thieves [459], Webwood Corruption [916], Webwood Egg [917], A Friend in Need [3519], Iverron's Antidote [3521], Iverron's Antidote [3522], A Good Friend [4495], Vile Touch [13941]
+special category (sort -395) (2):
+  Calligraphed Sigil [31168], The Art of the Monk [31169]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Shadowglen - Alliance - part 2 of 2, planned from level 6
+Guide "2-5 Shadowglen" in group "Zone Routes (Alliance)": this part has 14 steps, 13 stops
+Written to guides/mop/Shadowglen (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (NightElf Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 6. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 13 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 1,032 yd on foot; ends at level 6.0
+  NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid: 6 more tasks; their whole route comes to 1,782 yd; ends at level 6.1
+  NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid (quests that depend on other zones): 6 more tasks; their whole route comes to 2,908 yd; ends at level 6.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (7)
+-----------------------
+Start to finish here: 2 (0 for everyone, 2 NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  The Woodland Protector [28725, level 3, NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid] -> Shadowthread Cave
+  Dolanaar Delivery [2159, level 5, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Teldrassil
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Teldrassil: Crown of Azeroth [28729, level 5, NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid] - needs one of Signs of Things to Come [28728]
+  Precious Waters [28730, level 5, NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid] - needs one of Teldrassil: Crown of Azeroth [28729]
+  Teldrassil: Passing Awareness [28731, level 5, NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid] - needs one of Precious Waters [28730] -> Teldrassil
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

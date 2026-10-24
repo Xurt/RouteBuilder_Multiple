@@ -1,5 +1,5 @@
 Tirisfal Glades - Horde - part 1 of 2, planned from level 1
-Guide "1-13 Tirisfal Glades" in group "Zone Routes (Horde)": this part has 315 steps, 161 stops
+Guide "1-13 Tirisfal Glades" in group "Zone Routes (Horde)": this part has 316 steps, 162 stops
 Written to guides/classic/Tirisfal Glades (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: zones/classic/Tirisfal Glades.json
@@ -15,7 +15,7 @@ The route never runs past a finished quest's hand-in without stopping (judged in
 Route
 -----
 Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
-Step order kept from the last build (locks folder): 157 steps kept, 15 new ones slotted in, 24 moved because their prerequisites changed, 11 no longer in the guide. Build with --fresh to plan from scratch.
+Step order kept from the last build (locks folder): 159 steps kept, 15 new ones slotted in, 24 moved because their prerequisites changed, 9 no longer in the guide. Build with --fresh to plan from scratch.
   everyone: 129 tasks, 25,844 yd on foot; ends at level 10.6; 2 hearths; at its hardest you are 4.1 levels below the mobs
   Undead: 2 more tasks; their whole route comes to 25,844 yd; ends at level 10.6; 2 hearths; at its hardest you are 4.0 levels below the mobs
   Warrior: 15 more tasks; their whole route comes to 27,176 yd; ends at level 11.0; 3 hearths; at its hardest you are 5.1 levels below the mobs
@@ -25,7 +25,7 @@ Step order kept from the last build (locks folder): 157 steps kept, 15 new ones 
   Undead Rogue: 5 more tasks; their whole route comes to 27,184 yd; ends at level 10.6; 2 hearths; at its hardest you are 5.0 levels below the mobs
   Undead Priest: 8 more tasks; their whole route comes to 26,351 yd; ends at level 10.7; 2 hearths; at its hardest you are 3.9 levels below the mobs
   Undead Mage: 2 more tasks; their whole route comes to 27,561 yd; ends at level 10.7; 2 hearths; at its hardest you are 5.0 levels below the mobs
-  Undead Warlock: 6 more tasks; their whole route comes to 28,607 yd; ends at level 10.8; 2 hearths; at its hardest you are 4.9 levels below the mobs
+  Undead Warlock: 8 more tasks; their whole route comes to 28,607 yd; ends at level 10.8; 2 hearths; at its hardest you are 4.9 levels below the mobs
   Troll Priest: 1 more tasks; their whole route comes to 26,541 yd; ends at level 10.6; 2 hearths; at its hardest you are 4.1 levels below the mobs
   everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 26,318 yd; ends at level 10.6; 2 hearths; at its hardest you are 4.1 levels below the mobs
   Undead (quests that depend on other zones): 4 more tasks; their whole route comes to 27,202 yd; ends at level 10.6; 2 hearths; at its hardest you are 4.0 levels below the mobs
@@ -42,14 +42,13 @@ The check passes at once if you are there; if you are a little behind the predic
 
 Quests in the guide (76)
 ------------------------
-Start to finish here: 60 (41 for everyone, 5 Warrior, 3 Undead Priest, 2 Warlock, 2 Undead Warlock, 2 Undead Mage/Troll Mage, 2 Undead Rogue, 1 Undead, 1 Undead Warrior, 1 Undead Mage)
+Start to finish here: 61 (41 for everyone, 5 Warrior, 3 Undead Warlock, 3 Undead Priest, 2 Warlock, 2 Undead Mage/Troll Mage, 2 Undead Rogue, 1 Undead, 1 Undead Warrior, 1 Undead Mage)
 
 Picked up here, handed in elsewhere - these stay in the log (2):
   Delivery to Silverpine Forest [445, level 10] -> Silverpine Forest
   Hex of Weakness [5657, level 10, Troll Priest] -> Orgrimmar
 
-Hand-in step only shows once complete (2):
-  The Binding [1471, level 10, Undead Warlock] - needs Summoned Voidwalker slain (1) (an unknown place)
+Hand-in step only shows once complete (1):
   The Deathstalkers [1886, level 13, Undead Rogue] - needs Astor's Letter of Introduction (1) (Silverpine Forest)
 
 Brought in from another zone and handed in here - steps show only if you have the quest (6):
@@ -74,6 +73,7 @@ No objectives in the database (the hand-in step warns about it; add "objectives"
 1 quests have no experience figure in the database: their experience is estimated, and 1 of them list no prerequisite in the database.
 If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
   Touch of Weakness [5658]
+  The Binding [1471, level 10, Undead Warlock]: "Summoned Voidwalker (1)" has no place in the data; taken to be done where the quest is given
 
 Put off to a later part (1)
 ---------------------------
@@ -82,26 +82,22 @@ These need a higher level than this part ends at:
 
 Left out (219)
 --------------
-above this zone's range of 1-14 (119):
-  Alas, Andorhal [105], Errand for Apothecary Zinge [232], Errand for Apothecary Zinge [238], Into the Field [243], The Engraved Ring [440], Raleigh and the Undercity [441], Rot Hide Origins [444], Thule Ravenclaw [446], A Recipe For Death [450], A Recipe For Death [451], Wand to Bethor [491], The Crown of Will [495], Elixir of Agony [513], Elixir of Agony [515], The Crown of Will [521], A Husband's Revenge [530], Battle of Hillsbrad [550], Crystal in the Mountains [635], To the Undercity for Yagyin's Digest [728], The Star, the Hand and the Heart [736], Forbidden Knowledge [737], Scholomance [838], Return to Apothecary Zinge [864], Skeletal Fragments [964], The New Frontier [1004], Going, Going, Guano! [1109], Test of Lore [1159], To Steal From Thieves [1164], Sample for Helbrim [1358], Zinge's Delivery [1359], Final Passage [1394], Devourer of Souls [1472], The Binding [1474], Hearts of the Pure [1476], The Islander [1718], Tome of the Cabal [1801], Tome of the Cabal [1803], Tome of the Cabal [1805], Speak with Ruga [1823], Velora Nitely and the Brutal Legguards [1841], ... 79 more
-repeatable (34):
-  The Dormant Shade [410], Candles of Beckoning [431], Testing for Impurities - Un'Goro Crater [4561], Testing for Corruption - Felwood [4661], Corruptor's Scourgestones [5406], Invader's Scourgestones [5407], Minion's Scourgestones [5408], Additional Runecloth [7819], Chicken Clucking for a Mint [8354], Invaders of Alterac Valley [8387], For Great Honor [8388], Battle of Warsong Gulch [8389], Conquering Arathi Basin [8390], Battle of Warsong Gulch [8431], Battle of Warsong Gulch [8432], Battle of Warsong Gulch [8433], Battle of Warsong Gulch [8434], Battle of Warsong Gulch [8435], Conquering Arathi Basin [8440], Conquering Arathi Basin [8441], Conquering Arathi Basin [8442], Conquering Arathi Basin [8443], One Commendation Signet [8816], Ten Commendation Signets [8824], One Commendation Signet [8840], Ten Commendation Signets [8841], Gift Giving [8981], Major Mana Potion [9320], Argent Dawn Gloves [9333], Blessed Wizard Oil [9334], Consecrated Sharpening Stones [9335], Major Healing Potion [9336], Tabard of the Argent Dawn [9343], A Light in Dark Places [9386]
-dungeon quest (24):
-  The Book of Ur [1013], Into The Scarlet Monastery [1048], Hearts of Zeal [1113], Test of Lore [1160], Bring the End [3341], Vivian Lagrave [4133], Vivian Lagrave and the Darkstone Tablet [4769], Barov Family Fortune [5341], The Power to Destroy... [5725], An Unholy Alliance [6521], An Unholy Alliance [6522], Camp Mojache [7492], Battle of Warsong Gulch [8368], Invaders of Alterac Valley [8369], Conquering Arathi Basin [8370], Battle of Warsong Gulch [8426], Battle of Warsong Gulch [8427], Battle of Warsong Gulch [8428], Battle of Warsong Gulch [8429], Battle of Warsong Gulch [8430], Conquering Arathi Basin [8436], Conquering Arathi Basin [8437], Conquering Arathi Basin [8438], Conquering Arathi Basin [8439]
-special category (sort -22) (15):
-  Stinking Up Southshore [1657], Great-father Winter is Here! [7024], Rotten Eggs [8322], Ruined Kegs [8409], Winter's Presents [8828], New Year Celebrations! [8861], Dearest Elenia, [8900], Dearest Elenia, [8901], Dearest Elenia, [8902], Dangerous Love [8904], Fenstad's Hunch [8979], Zinge's Assessment [8980], Tracing the Source [8982], Tracing the Source [8983], The Source Revealed [8984]
-special category (sort -369) (10):
-  A Light in Dark Places [9319], Wild Fires in Kalimdor [9322], Wild Fires in the Eastern Kingdoms [9323], Stealing Stormwind's Flame [9330], Stealing Ironforge's Flame [9331], Stealing Darnassus's Flame [9332], A Thief's Reward [9339], The Festival of Fire [9368], Flickering Flames in Kalimdor [9388], Flickering Flames in the Eastern Kingdoms [9389]
-special category (sort -366) (7):
-  Darkcore the Elder [8648], Graveborn the Elder [8652], Lunar Fireworks [8867], The Lunar Festival [8873], The Lunar Festival [8874], The Lunar Festival [8875], Valadar Starsong [8883]
-needs a profession (3):
-  Goblin Engineering [3526], Gnome Engineering [3635], The Hero of the Day [8799]
+above this zone's range of 1-14 (117):
+  Alas, Andorhal [105], Errand for Apothecary Zinge [232], Errand for Apothecary Zinge [238], Into the Field [243], The Engraved Ring [440], Raleigh and the Undercity [441], Rot Hide Origins [444], Thule Ravenclaw [446], A Recipe For Death [450], A Recipe For Death [451], Wand to Bethor [491], The Crown of Will [495], Elixir of Agony [513], Elixir of Agony [515], The Crown of Will [521], A Husband's Revenge [530], Battle of Hillsbrad [550], Crystal in the Mountains [635], To the Undercity for Yagyin's Digest [728], The Star, the Hand and the Heart [736], Forbidden Knowledge [737], Scholomance [838], Return to Apothecary Zinge [864], Skeletal Fragments [964], The New Frontier [1004], Going, Going, Guano! [1109], To Steal From Thieves [1164], Sample for Helbrim [1358], Zinge's Delivery [1359], Final Passage [1394], Devourer of Souls [1472], The Binding [1474], Hearts of the Pure [1476], The Islander [1718], Tome of the Cabal [1801], Tome of the Cabal [1803], Tome of the Cabal [1805], Speak with Ruga [1823], Velora Nitely and the Brutal Legguards [1841], Dragonmaw Shinbones [1846], ... 77 more
+not in the game (on Questie's quest blacklist) (37):
+  Stinking Up Southshore [1657], Welcome! [5847], Great-father Winter is Here! [7024], Rotten Eggs [8322], Chicken Clucking for a Mint [8354], Ruined Kegs [8409], Darkcore the Elder [8648], Graveborn the Elder [8652], The Hero of the Day [8799], Winter's Presents [8828], New Year Celebrations! [8861], Lunar Fireworks [8867], The Lunar Festival [8873], The Lunar Festival [8874], The Lunar Festival [8875], Valadar Starsong [8883], Dearest Elenia, [8900], Dearest Elenia, [8901], Dearest Elenia, [8902], Dangerous Love [8904], Fenstad's Hunch [8979], Zinge's Assessment [8980], Gift Giving [8981], Tracing the Source [8982], Tracing the Source [8983], The Source Revealed [8984], A Light in Dark Places [9319], Wild Fires in Kalimdor [9322], Wild Fires in the Eastern Kingdoms [9323], Stealing Stormwind's Flame [9330], Stealing Ironforge's Flame [9331], Stealing Darnassus's Flame [9332], A Thief's Reward [9339], The Festival of Fire [9368], A Light in Dark Places [9386], Flickering Flames in Kalimdor [9388], Flickering Flames in the Eastern Kingdoms [9389]
+repeatable (31):
+  The Dormant Shade [410], Candles of Beckoning [431], Testing for Impurities - Un'Goro Crater [4561], Testing for Corruption - Felwood [4661], Corruptor's Scourgestones [5406], Invader's Scourgestones [5407], Minion's Scourgestones [5408], Additional Runecloth [7819], Invaders of Alterac Valley [8387], For Great Honor [8388], Battle of Warsong Gulch [8389], Conquering Arathi Basin [8390], Battle of Warsong Gulch [8431], Battle of Warsong Gulch [8432], Battle of Warsong Gulch [8433], Battle of Warsong Gulch [8434], Battle of Warsong Gulch [8435], Conquering Arathi Basin [8440], Conquering Arathi Basin [8441], Conquering Arathi Basin [8442], Conquering Arathi Basin [8443], One Commendation Signet [8816], Ten Commendation Signets [8824], One Commendation Signet [8840], Ten Commendation Signets [8841], Major Mana Potion [9320], Argent Dawn Gloves [9333], Blessed Wizard Oil [9334], Consecrated Sharpening Stones [9335], Major Healing Potion [9336], Tabard of the Argent Dawn [9343]
+dungeon quest (23):
+  The Book of Ur [1013], Into The Scarlet Monastery [1048], Hearts of Zeal [1113], Bring the End [3341], Vivian Lagrave [4133], Vivian Lagrave and the Darkstone Tablet [4769], Barov Family Fortune [5341], The Power to Destroy... [5725], An Unholy Alliance [6521], An Unholy Alliance [6522], Camp Mojache [7492], Battle of Warsong Gulch [8368], Invaders of Alterac Valley [8369], Conquering Arathi Basin [8370], Battle of Warsong Gulch [8426], Battle of Warsong Gulch [8427], Battle of Warsong Gulch [8428], Battle of Warsong Gulch [8429], Battle of Warsong Gulch [8430], Conquering Arathi Basin [8436], Conquering Arathi Basin [8437], Conquering Arathi Basin [8438], Conquering Arathi Basin [8439]
+never shown to players (a tracking flag or an unused entry) (3):
+  Test of Lore [1159], Test of Lore [1160], Test of Lore [6628]
 special category (sort -368) (3):
   Light's Hope Chapel [9154], Investigate the Scourge of the Undercity [9265], Faint Necrotic Crystal [9310]
+needs a profession (2):
+  Goblin Engineering [3526], Gnome Engineering [3635]
 needs reputation (2):
   Mantles of the Dawn [5504], Chromatic Mantle of the Dawn [5524]
-handed in here, but the database does not say where it starts (1):
-  Welcome! [5847]
 special category (sort -365) (1):
   The Horde Needs Your Help! [8793]
 
@@ -111,7 +107,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Tirisfal Glades - Horde - part 2 of 2, planned from level 13
-Guide "1-13 Tirisfal Glades" in group "Zone Routes (Horde)": this part has 41 steps, 8 stops
+Guide "1-13 Tirisfal Glades" in group "Zone Routes (Horde)": this part has 40 steps, 7 stops
 Written to guides/classic/Tirisfal Glades (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: zones/classic/Tirisfal Glades.json
@@ -120,27 +116,25 @@ RestedXP cross-check: 720 objective notes read from 50 guide files
 Checks
 ------
 Played through as 20 race/class combinations: no problems found.
-Quest log: at most 4 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
 Every stop picks up and hands in everything on offer within reach.
 The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
 
 Route
 -----
 Planned from level 13. Distances are straight lines, so real running is longer; levels are an estimate.
-Step order kept from the last build (locks folder): 8 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+Step order kept from the last build (locks folder): 7 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
   everyone: 5 tasks, 1,735 yd on foot; ends at level 13.2
   Undead Rogue (quests that depend on other zones): 1 more tasks; their whole route comes to 3,818 yd; ends at level 13.2
   Undead Priest (quests that depend on other zones): 1 more tasks; their whole route comes to 3,144 yd; ends at level 13.2
-  Undead Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 3,294 yd; ends at level 13.2
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
 30 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
 
-Quests in the guide (4)
+Quests in the guide (3)
 -----------------------
 Start to finish here: 1 (1 for everyone)
 
-Brought in from another zone and handed in here - steps show only if you have the quest (3):
-  The Binding [1471, level 10, Undead Warlock] <- your earlier visit to this zone
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
   Touch of Weakness [5658, level 10, Undead Priest] <- your earlier visit to this zone
   The Deathstalkers [1886, level 13, Undead Rogue] <- your earlier visit to this zone
 

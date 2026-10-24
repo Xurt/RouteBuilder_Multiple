@@ -1,5 +1,5 @@
 Silithus - Alliance - part 1 of 2, planned from level 55
-Guide "55-60 Silithus" in group "Zone Routes (Alliance)": this part has 31 steps, 28 stops
+Guide "55-60 Silithus" in group "Zone Routes (Alliance)": this part has 28 steps, 25 stops
 Written to guides/classic/Silithus (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -8,27 +8,22 @@ RestedXP cross-check: 720 objective notes read from 50 guide files
 Checks
 ------
 Played through as 20 race/class combinations: no problems found.
-Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
 1 pickups or hand-ins are within reach of a stop but planned for later.
 The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
 
 Route
 -----
 Planned from level 55. Distances are straight lines, so real running is longer; levels are an estimate.
-Step order kept from the last build (locks folder): 25 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed, 30 no longer in the guide. Build with --fresh to plan from scratch.
-  everyone: 20 tasks, 6,994 yd on foot; ends at level 55.2; at its hardest you are 2.0 levels below the mobs
-  everyone (quests that depend on other zones): 11 more tasks; their whole route comes to 13,974 yd; ends at level 55.2; at its hardest you are 2.0 levels below the mobs
+Step order kept from the last build (locks folder): 25 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed, 30 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 17 tasks, 6,980 yd on foot; ends at level 55.2; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 11 more tasks; their whole route comes to 13,961 yd; ends at level 55.2; at its hardest you are 2.0 levels below the mobs
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
 1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
-Quests in the guide (14)
+Quests in the guide (11)
 ------------------------
 Start to finish here: 6 (6 for everyone)
-
-Picked up here, handed in elsewhere - these stay in the log (3):
-  Secrets of the Colossus - Ashi [8857, level 60] -> Stranglethorn Vale
-  Secrets of the Colossus - Regal [8858, level 60] -> Searing Gorge
-  Secrets of the Colossus - Zora [8859, level 60] -> Eastern Plaguelands
 
 Brought in from another zone and handed in here - steps show only if you have the quest (2):
   Wasteland [1124, level 55] <- Moonglade
@@ -78,7 +73,7 @@ These need a higher level than this part ends at:
   The Perfect Poison [9023, level 60]: needs level 60; this part gets you to about 55.8
   Scouring the Desert [9419, level 60]: is a level 60 quest; this part gets you to about 55.8
 
-Left out (96)
+Left out (99)
 -------------
 repeatable (48):
   The Hand of the Righteous [8302], Encrypted Twilight Texts [8319], Still Believing [8324], Medallion of Station [8333], Twilight Ring of Lordship [8342], Abyssal Crests [8362], Abyssal Signets [8363], Abyssal Scepters [8364], Bandages for the Field [8496], Desert Survival Kits [8497], Twilight Battle Orders [8498], Target: Hive'Ashi Stingers [8501], Target: Hive'Ashi Workers [8502], Field Duty [8507], Field Duty Papers [8508], Hive'Zora Scout Report [8534], Hoary Templar [8535], Earthen Templar [8536], Crimson Templar [8537], The Four Dukes [8538], Target: Hive'Zora Hive Sisters [8539], Boots for the Guard [8540], Grinding Stones for the Guard [8541], Volunteer's Battlegear [8548], Veteran's Battlegear [8572], Champion's Battlegear [8573], Stalwart's Battlegear [8574], Target: Hive'Zora Tunnelers [8687], Azure Templar [8737], Hive'Regal Scout Report [8738], Hive'Ashi Scout Report [8739], Twilight Marauders [8740], Target: Hive'Ashi Defenders [8770], Target: Hive'Ashi Sandstalkers [8771], Target: Hive'Zora Waywatchers [8772], Target: Hive'Zora Reavers [8773], Target: Hive'Regal Ambushers [8774], Target: Hive'Regal Spitfires [8775], Target: Hive'Regal Slavemakers [8776], Target: Hive'Regal Burrowers [8777], ... 8 more
@@ -86,12 +81,12 @@ dungeon quest (26):
   Only One May Rise [8288], Signet of Unyielding Strength [8556], Drape of Unyielding Strength [8557], Sickle of Unyielding Strength [8558], Shroud of Infinite Wisdom [8689], Drape of Vaulted Secrets [8691], Cloak of Unending Life [8692], Cloak of Veiled Shadows [8693], Shroud of Unspoken Names [8694], Cape of Eternal Justice [8695], Cloak of the Unseen Path [8696], Ring of Infinite Wisdom [8697], Band of Vaulted Secrets [8699], Band of Unending Life [8700], Band of Veiled Shadows [8701], Ring of Unspoken Names [8702], Ring of Eternal Justice [8703], Signet of the Unseen Path [8704], Gavel of Infinite Wisdom [8705], Blade of Vaulted Secrets [8707], Mace of Unending Life [8708], Dagger of Veiled Shadows [8709], Kris of Unspoken Names [8710], Blade of Eternal Justice [8711], Scythe of the Unseen Path [8712], The Fall of Ossirian [8791]
 needs reputation (14):
   Anachronos [8303], Long Forgotten Memories [8305], Aurel Goldleaf [8331], Dukes of the Council [8332], Lords of the Council [8341], Goldleaf's Discovery [8343], Signet of the Dukes [8348], Bor Wildmane [8349], Bor Wishes to Speak [8351], Scepter of the Council [8352], A Pawn on the Eternal Board [8519], Bang a Gong! [8743], Treasure of the Timeless One [8745], A Humble Offering [9248]
+not in the game (on Questie's quest blacklist) (5):
+  Primestone the Elder [8654], Bladesing the Elder [8719], Secrets of the Colossus - Ashi [8857], Secrets of the Colossus - Regal [8858], Secrets of the Colossus - Zora [8859]
 special category (sort -344) (3):
   Examine the Vessel [7785], Thunderaan the Windseeker [7786], Rise, Thunderfury! [7787]
 needs a profession (3):
   Desert Recipe [8307], Sharing the Knowledge [8313], Kitchen Assistance [8317]
-special category (sort -366) (2):
-  Primestone the Elder [8654], Bladesing the Elder [8719]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
 

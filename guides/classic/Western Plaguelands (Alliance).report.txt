@@ -113,7 +113,7 @@ dungeon quest (6):
   Barov Family Fortune [5343], Doctor Theolen Krastinov, the Butcher [5382], Kirtonos the Herald [5384], The Lich, Ras Frostwhisper [5466], Krastinov's Bag of Horrors [5515], Of Love and Family [5848]
 needs reputation (2):
   Mantles of the Dawn [5507], Chromatic Mantle of the Dawn [5521]
-special category (sort -366) (2):
+not in the game (on Questie's quest blacklist) (2):
   Moonstrike the Elder [8714], Meadowrun the Elder [8722]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,451 @@
+{
+  "zone": "Nagrand",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "65-68 Nagrand",
+  "file": "Nagrand (Horde).lua",
+  "continent": -3518,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 65,
+      "end": 65.78,
+      "next": 68,
+      "guide": "65-66 Nagrand: around Shado \u0027Fitz\u0027 Farstrider",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Shado \u0027Fitz\u0027 Farstrider",
+          "guide": "65-66 Nagrand: around Shado \u0027Fitz\u0027 Farstrider",
+          "level": 65,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 68,
+      "end": 68.07,
+      "guide": "68-69 Nagrand: around Altruis the Sufferer",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Altruis the Sufferer",
+          "guide": "68-69 Nagrand: around Altruis the Sufferer",
+          "level": 68,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 9789,
+      "level": 66,
+      "req": 64,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9797,
+      "level": 64,
+      "req": 64,
+      "xp": 2650,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Zangarmarsh"
+    },
+    {
+      "id": 9800,
+      "level": 65,
+      "req": 64,
+      "xp": 11000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9804,
+      "level": 65,
+      "req": 64,
+      "xp": 11000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9805,
+      "level": 65,
+      "req": 64,
+      "xp": 11000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9810,
+      "level": 66,
+      "req": 64,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9815,
+      "level": 66,
+      "req": 64,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9818,
+      "level": 65,
+      "req": 64,
+      "xp": 3300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9819,
+      "level": 65,
+      "req": 64,
+      "xp": 11000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9821,
+      "level": 66,
+      "req": 64,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9849,
+      "level": 67,
+      "req": 64,
+      "xp": 17450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9850,
+      "level": 67,
+      "req": 64,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9851,
+      "level": 67,
+      "req": 64,
+      "xp": 14600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9853,
+      "level": 67,
+      "req": 64,
+      "xp": 17450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9854,
+      "level": 65,
+      "req": 64,
+      "xp": 11000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9855,
+      "level": 67,
+      "req": 64,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9856,
+      "level": 67,
+      "req": 64,
+      "xp": 14600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9857,
+      "level": 65,
+      "req": 64,
+      "xp": 11000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9858,
+      "level": 66,
+      "req": 64,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9859,
+      "level": 66,
+      "req": 64,
+      "xp": 14150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9872,
+      "level": 67,
+      "req": 64,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9882,
+      "level": 66,
+      "req": 64,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9891,
+      "level": 65,
+      "req": 64,
+      "xp": 2700,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Terokkar Forest"
+    },
+    {
+      "id": 9897,
+      "level": 65,
+      "req": 64,
+      "xp": 11000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9900,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9913,
+      "level": 66,
+      "req": 64,
+      "xp": 1130,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9914,
+      "level": 66,
+      "req": 64,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9925,
+      "level": 66,
+      "req": 64,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9962,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9967,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9970,
+      "level": 67,
+      "req": 65,
+      "xp": 14600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9972,
+      "level": 67,
+      "req": 65,
+      "xp": 14600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9973,
+      "level": 67,
+      "req": 65,
+      "xp": 14600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9977,
+      "level": 68,
+      "req": 65,
+      "xp": 17950,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10010,
+      "level": 68,
+      "req": 66,
+      "xp": 6000,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Terokkar Forest"
+    },
+    {
+      "id": 10074,
+      "level": 67,
+      "req": 64,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10109,
+      "level": 66,
+      "req": 64,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10114,
+      "level": 65,
+      "req": 64,
+      "xp": 1100,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10212,
+      "level": 68,
+      "req": 66,
+      "xp": 3600,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Durotar"
+    },
+    {
+      "id": 10251,
+      "level": 67,
+      "req": 65,
+      "xp": 5800,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Terokkar Forest"
+    },
+    {
+      "id": 9852,
+      "level": 68,
+      "req": 64,
+      "xp": 17950,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9991,
+      "level": 68,
+      "req": 66,
+      "xp": 3050,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9999,
+      "level": 68,
+      "req": 66,
+      "xp": 12000,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10001,
+      "level": 68,
+      "req": 66,
+      "xp": 12000,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Terokkar Forest": 4,
+    "Durotar": 1,
+    "Shadowmoon Valley": 1
+  }
+}

@@ -46,7 +46,7 @@ Need a quest this guide does not hand in - steps show only once that is done (2)
 Worth checking in game
 ----------------------
 
-Put off to a later part (26)
+Put off to a later part (25)
 ----------------------------
 These need a higher level than this part ends at:
   Luck Be With You [969, level 60]: its mobs are level 59; this part gets you to about 52.4
@@ -72,11 +72,10 @@ These need a higher level than this part ends at:
   Wrath of the Blue Flight [5162, level 60]: needs level 57; this part gets you to about 52.4
   Are We There, Yeti? [5163, level 58]: is a level 58 quest; this part gets you to about 52.4
   Trouble in Winterspring! [6603, level 56]: needs level 52; this part gets you to about 52.0
-  A Little Luck [6606, level 60]: needs level 55; this part gets you to about 52.4
   Winterfall Activity [8464, level 58]: its mobs are level 57; this part gets you to about 52.4
   Winterfall Ritual Totem [8471, level 56]: follows Threat of the Winterfall [5082]
 
-Left out (26)
+Left out (27)
 -------------
 repeatable (12):
   Frostsaber E'ko [4801], Winterfall E'ko [4802], Shardtooth E'ko [4803], Chillwind E'ko [4804], Ice Thistle E'ko [4805], Frostmaul E'ko [4806], Wildkin E'ko [4807], Cap of the Scarlet Savant [5063], Leggings of Arcana [5067], Breastplate of Bloodthirst [5068], Beads for Salfa [8469], Making Amends [9266]
@@ -84,8 +83,8 @@ needs a profession (8):
   Hot Fiery Death [5103], Fiery Plate Gauntlets [5124], Lorax's Tale [5126], The Demon Forge [5127], Sweet Serenity [5305], Snakestone of the Shadow Huntress [5306], Corruption [5307], A Yeti of Your Own [8798]
 dungeon quest (3):
   Tinkee Steamboil [4907], Pip Quickwit, At Your Service! [5047], The Matron Protectorate [5160]
-special category (sort -366) (2):
-  Stonespire the Elder [8672], Brightspear the Elder [8726]
+not in the game (on Questie's quest blacklist) (3):
+  A Little Luck [6606], Stonespire the Elder [8672], Brightspear the Elder [8726]
 starts from a random drop, and no quest in this guide kills those mobs (1):
   Guarding Secrets [4882]
 
@@ -143,7 +142,7 @@ Worth checking in game
 ----------------------
   Winterfall Ritual Totem [8471, level 56]: has a reputation or spell objective, which is not planned
 
-Put off to a later part (9)
+Put off to a later part (8)
 ---------------------------
 These need a higher level than this part ends at:
   Luck Be With You [969, level 60]: its mobs are level 59; this part gets you to about 55.4
@@ -154,7 +153,6 @@ These need a higher level than this part ends at:
   High Chief Winterfall [5121, level 59]: its mobs are level 59; this part gets you to about 55.4
   Wrath of the Blue Flight [5161, level 60]: needs level 57; this part gets you to about 55.4
   Wrath of the Blue Flight [5162, level 60]: needs level 57; this part gets you to about 55.4
-  A Little Luck [6606, level 60]: needs level 55; this part gets you to about 55.2
 
 Left out (0)
 ------------
@@ -165,7 +163,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Winterspring - Horde - part 3 of 3, planned from level 58
-Guide "52-60 Winterspring" in group "Zone Routes (Horde)": this part has 23 steps, 22 stops
+Guide "52-60 Winterspring" in group "Zone Routes (Horde)": this part has 22 steps, 21 stops
 Written to guides/classic/Winterspring (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -181,14 +179,14 @@ The route never runs past a finished quest's hand-in without stopping (judged in
 Route
 -----
 Planned from level 58. Distances are straight lines, so real running is longer; levels are an estimate.
-Step order kept from the last build (locks folder): 15 steps kept, 8 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
-  everyone: 15 tasks, 6,126 yd on foot; ends at level 58.1; at its hardest you are 1.9 levels below the mobs
-  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 15,997 yd; ends at level 58.1; at its hardest you are 1.9 levels below the mobs
+Step order kept from the last build (locks folder): 15 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 13 tasks, 6,011 yd on foot; ends at level 58.1; at its hardest you are 1.9 levels below the mobs
+  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 15,882 yd; ends at level 58.1; at its hardest you are 1.9 levels below the mobs
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
 
-Quests in the guide (10)
-------------------------
-Start to finish here: 5 (5 for everyone)
+Quests in the guide (9)
+-----------------------
+Start to finish here: 4 (4 for everyone)
 
 Brought in from another zone and handed in here - steps show only if you have the quest (1):
   Are We There, Yeti? [5163, level 58] <- your earlier visit to this zone

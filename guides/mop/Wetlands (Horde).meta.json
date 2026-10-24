@@ -1,0 +1,103 @@
+{
+  "zone": "Wetlands",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "20-25 Wetlands",
+  "file": "Wetlands (Horde).lua",
+  "continent": -11,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 20,
+      "end": 20.45,
+      "next": 24,
+      "guide": "20-21 Wetlands",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "20-21 Wetlands",
+          "level": 20,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 24,
+      "end": 24.01,
+      "guide": "24-25 Wetlands",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "24-25 Wetlands",
+          "level": 24,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 25211,
+      "level": 21,
+      "req": 18,
+      "xp": 1650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 25395,
+      "level": 20,
+      "req": 18,
+      "xp": 1550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 25770,
+      "level": 20,
+      "req": 18,
+      "xp": 780,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 25820,
+      "level": 22,
+      "req": 20,
+      "xp": 1750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26137,
+      "level": 20,
+      "req": 18,
+      "xp": 780,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Loch Modan"
+    },
+    {
+      "id": 26327,
+      "level": 25,
+      "req": 23,
+      "xp": 200,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Arathi Highlands": 1
+  }
+}

@@ -25,6 +25,8 @@ Every command takes `--game`, and so do `Rebuild-All.ps1` and `Make-Addon.ps1` (
 |---|---|---|---|---|
 | `forever` (default) | WoW Forever | QuestieDB's Forever export | `zones/`, `locks/`, `guides/` | `addon/RXPGuides_ZoneRoutes` |
 | `classic` | Classic Era | QuestieDB's Classic data, with its corrections | `zones/classic/`, `locks/classic/`, `guides/classic/` | `addon/classic/RXPGuides_ZoneRoutes` |
+| `tbc` (or `bc`) | The Burning Crusade (Anniversary) | QuestieDB's TBC data, with its corrections | `zones/tbc/`, `locks/tbc/`, `guides/tbc/` | `addon/tbc/RXPGuides_ZoneRoutes` |
+| `mop` (or `mists`) | Mists of Pandaria Classic | QuestieDB's Mists data, with its corrections | `zones/mop/`, `locks/mop/`, `guides/mop/` | `addon/mop/RXPGuides_ZoneRoutes` |
 
     dotnet run -c Release -- update --game classic
     dotnet run -c Release -- build --game classic --zone Durotar --faction Horde --rxp rxp
@@ -36,11 +38,32 @@ Every command takes `--game`, and so do `Rebuild-All.ps1` and `Make-Addon.ps1` (
   races and class combinations, and the `#classic` guide header.
 * Each game's addon has the same name, `RXPGuides_ZoneRoutes`; copy the one for the game into that game's
   own `Interface\AddOns` folder.
-* TBC and Mists of Pandaria are not built yet.
+* `update` for TBC, Mists and Classic Era also fetches Questie's quest blacklist (it lives in the Questie addon,
+  not in QuestieDB) and keeps the quests it says are not in that game out of every build: quests Blizzard
+  removed (the old Stonetalon quests in Mists), duplicates and test entries. The report lists them under
+  "not in the game". Without the download (`--no-download`), the copy from the last update is used.
+* TBC plays like Classic Era with Outland added: real map sizes, levels to 70, Blood Elves and Draenei.
+* Mists of Pandaria, levels to 90:
+  * QuestieDB has no map sizes for it, so its coordinates stay map percent and distances are measured on a
+    nominal map. They are good for comparing one route with another inside a zone, not as real yards.
+  * The starting areas that are maps of their own since Cataclysm (Valley of Trials, Northshire, Coldridge
+    Valley, Echo Isles, Sunstrider Isle...) are zones of their own, as in RestedXP ("1-6 Valley of Trials",
+    then "6-10 Durotar").
+  * Caves, ships and other places with a map of their own (Kaja'mite Cavern on the Lost Isles) are planned
+    as part of the zone whose quests send you there.
+  * A zone that carries on another one's story (the Lost Isles after Kezan) is planned as if that story's last
+    quest is done, from the level it leaves you at; the build says so ("the zone follows on from ...").
+  * The Wandering Isle is built once, with the Horde builds, as a guide for Pandaren (`<< Pandaren`): there
+    a Pandaren is neither Horde nor Alliance.
+  * Objectives the data has no place for (often an invisible "credit": equip the weapon you were given) are
+    taken to be done where the quest is given; the report lists them under "Worth checking in game".
+  * Phased areas (the Jade Forest landing, the Wandering Isle's ending) are not modelled: RestedXP's step
+    order, which RxpToLock keeps, is what gets those right.
 
 ## Building a guide
 
     dotnet run -c Release -- zones --faction Horde
+    dotnet run -c Release -- zones --faction Horde --show "Durotar"      (the quests a zone's range comes from)
     dotnet run -c Release -- build --zone "Tirisfal Glades" --faction Horde
     dotnet run -c Release -- build --zone "Tirisfal Glades" --race Undead --class Paladin
     dotnet run -c Release -- build --zone all --faction Alliance
@@ -243,7 +266,10 @@ the normal leveling route. See [docs/restedxp-guides.md](docs/restedxp-guides.md
 guides out and what is left out.
 
 * `--rxp rxp` (and `Rebuild-All.ps1 -Rxp .\rxp`) points at the whole folder. The files come from the game's list
-  in it (`GuideList-classic.xml`), which also takes in subfolders.
+  in it (`GuideList-classic.xml`, `GuideList-tbc.xml`, `GuideList-mop.xml`), which also takes in subfolders.
+* Many Mists guides are shells: one `#include RXP-Pandaria\85-86 The Jade Forest` step that pulls in a shared
+  guide holding both factions' steps. RouteBuilder fills those in, as RestedXP does, so the shells' steps are
+  read in the shells' order.
 * Left out: guides for another game, for Season of Discovery (`#season 2`), for the 2x experience rate
   (`#xprate >1.99`), hardcore-only "Survival" routes, guides RestedXP only offers one race and class (the AoE
   mage routes), and anything that is not leveling (dungeons, professions, reputation, attunements, runes).
@@ -259,8 +285,8 @@ at the end:
 
 * It reads every RestedXP guide file in that folder (not its subfolders; `-Recurse` adds them). A zone
   RestedXP's guides do not cover keeps its lock as it was.
-* `-Game classic` builds Classic Era (every zone with five or more quests, as `build --zone all` would), with
-  `-Rxp .\rxp`.
+* `-Game classic`, `-Game tbc` or `-Game mop` builds that game (every zone with five or more quests, as
+  `build --zone all` would), with `-Rxp .\rxp`.
 * `-Faction Horde` or `-Zone "Durotar","Mulgore"` narrows it down; `-NoRxpToLock` builds from the locks as
   they are; `-Fresh` plans every zone from scratch; `-Update` fetches QuestieDB first; `-NoLink` skips
   the next-zone suggestions; `-NoAddon` skips Make-Addon.ps1.

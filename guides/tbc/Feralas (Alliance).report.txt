@@ -1,0 +1,138 @@
+Feralas - Alliance - part 1 of 2, planned from level 43
+Guide "43-51 Feralas" in group "Zone Routes (Alliance)": this part has 40 steps, 35 stops
+Written to guides/tbc/Feralas (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 43. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 46 new ones slotted in, 0 moved because their prerequisites changed, 2 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 40 tasks, 13,381 yd on foot; ends at level 43.7; at its hardest you are 1.5 levels below the mobs
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 18,295 yd; ends at level 43.7; at its hardest you are 1.5 levels below the mobs
+Hearthstone: set at Zorbin Fandazzle (Zorbin Fandazzle's inn); 0 hearth steps in the guide.
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+
+Quests in the guide (24)
+------------------------
+Start to finish here: 16 (16 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Rise of the Silithid [4267, level 46] -> Darnassus
+  In Search of Knowledge [2939, level 47] -> Teldrassil
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Reclaiming the Charred Vale [1059, level 27] <- Stonetalon Mountains
+  Return to Troyas [2943, level 48] <- Teldrassil
+  Jonespyre's Request [3787, level 50] <- Stormwind City
+  A Visit to Gregan [4142, level 52] <- Un'Goro Crater
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  The Crone of the Kraul [1101, level 27] - needs one of Lonebrow's Journal [1100]
+  Rescue OOX-22/FE! [2767, level 45] - needs one of Find OOX-22/FE! [2766] -> Stranglethorn Vale
+
+Worth checking in game
+----------------------
+
+Put off to a later part (17)
+----------------------------
+These need a higher level than this part ends at:
+  The Giant Guardian [2844, level 49]: needs level 44; this part gets you to about 43.9
+  Wandering Shay [2845, level 49]: is a level 49 quest; this part gets you to about 44.4
+  Against Lord Shalzaru [2870, level 45]: its mobs are level 47; this part gets you to about 44.4
+  Delivering the Relic [2871, level 45]: follows Against Lord Shalzaru [2870]
+  The Stave of Equinex [2879, level 50]: is a level 50 quest; this part gets you to about 44.4
+  The Morrow Stone [2942, level 50]: follows The Stave of Equinex [2879]
+  Freedom for All Creatures [2969, level 47]: is a level 47 quest; this part gets you to about 43.9
+  Doling Justice [2970, level 47]: follows Freedom for All Creatures [2969]
+  Doling Justice [2972, level 47]: follows Doling Justice [2970]
+  The Sunken Temple [3445, level 51]: needs level 46; this part gets you to about 44.4
+  Jonespyre's Request [3788, level 50]: needs level 47; this part gets you to about 44.4
+  The Mystery of Morrowgrain [3791, level 50]: needs level 47; this part gets you to about 44.4
+  An Orphan Looking For a Home [3841, level 47]: follows Doling Justice [2972]
+  Haze of Evil [4143, level 52]: needs level 47; this part gets you to about 44.4
+  Zapped Giants [7003, level 48]: its mobs are level 48; this part gets you to about 44.4
+  Fuel for the Zapping [7721, level 48]: needs level 45; this part gets you to about 44.4
+  Improved Quality [7733, level 48]: its mobs are level 47; this part gets you to about 44.4
+
+Left out (28)
+-------------
+needs a profession (8):
+  Wild Leather Armor [2847], Wild Leather Shoulders [2848], Wild Leather Vest [2849], Wild Leather Helmet [2850], Wild Leather Boots [2851], Wild Leather Leggings [2852], Master of the Wild Leather [2853], Tribal Leatherworking [5143]
+not in the game (on Questie's quest blacklist) (7):
+  Grimtotem the Elder [8679], Mistwalker the Elder [8685], Desecrate this Fire! [11773], Honor the Flame [11817], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Candy Bucket [12350]
+repeatable (6):
+  To the Top [3567], Morrowgrain to Feathermoon Stronghold [3792], The Videre Elixir [4041], Again With the Zapped Giants [7725], Refuel for the Zapping [7726], Pristine Yeti Hide [7735]
+dungeon quest (4):
+  Pusillin and the Elder Azj'Tordin [7441], Elven Legends [7482], Lethtendris's Web [7488], Feathermoon Stronghold [7494]
+handed in here, but the database does not say where it starts (2):
+  Lonebrow's Journal [1100], Thalanaar Delivery [4281]
+special category (sort -1) (1):
+  Shrouded in Nightmare [8446]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Feralas - Alliance - part 2 of 2, planned from level 46
+Guide "43-51 Feralas" in group "Zone Routes (Alliance)": this part has 29 steps, 26 stops
+Written to guides/tbc/Feralas (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 46. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 32 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 31 tasks, 11,613 yd on foot; ends at level 46.6; 1 hearth; at its hardest you are 1.6 levels below the mobs
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 11,613 yd; ends at level 46.6; 1 hearth; at its hardest you are 1.6 levels below the mobs
+Hearthstone: set at Zorbin Fandazzle (Zorbin Fandazzle's inn); 1 hearth step in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 46 for The Sunken Temple
+
+Quests in the guide (12)
+------------------------
+Start to finish here: 9 (9 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Doling Justice [2972, level 47] -> Darnassus
+  The Sunken Temple [3445, level 51] -> Tanaris
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  An Orphan Looking For a Home [3841, level 47] - needs one of Doling Justice [2972] -> Thousand Needles
+
+Worth checking in game
+----------------------
+  Wandering Shay [2845, level 49]: "Take Shay Leafrunner to Rockbiter's camp" is assumed to be line 2 in the quest log; check it
+
+Not planned (5)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  The Stave of Equinex [2879, level 50]: is a level 50 quest; this part gets you to about 46.6
+  The Morrow Stone [2942, level 50]: follows The Stave of Equinex [2879]
+  Jonespyre's Request [3788, level 50]: needs level 47; this part gets you to about 46.6
+  The Mystery of Morrowgrain [3791, level 50]: needs level 47; this part gets you to about 46.6
+  Haze of Evil [4143, level 52]: needs level 47; this part gets you to about 46.6
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

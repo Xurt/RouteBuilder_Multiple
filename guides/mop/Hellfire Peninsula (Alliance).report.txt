@@ -1,0 +1,195 @@
+Hellfire Peninsula - Alliance - part 1 of 2, planned from level 60
+Guide "60-63 Hellfire Peninsula" in group "Zone Routes (Alliance)": this part has 215 steps, 189 stops
+Written to guides/mop/Hellfire Peninsula (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 34 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+10 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 60. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 210 steps kept, 74 new ones slotted in, 3 moved because their prerequisites changed, 28 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 60, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 233 tasks, 38,247 yd on foot; ends at level 62.2; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior: 2 more tasks; their whole route comes to 38,025 yd; ends at level 62.2; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  Human Priest/Dwarf Priest/NightElf Priest/Gnome Priest/Draenei Priest/Worgen Priest/Pandaren Priest: 1 more tasks; their whole route comes to 38,295 yd; ends at level 62.2; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage: 2 more tasks; their whole route comes to 39,347 yd; ends at level 62.2; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  Human DeathKnight/Dwarf DeathKnight/NightElf DeathKnight/Gnome DeathKnight/Draenei DeathKnight/Worgen DeathKnight/Pandaren DeathKnight: 5 more tasks; their whole route comes to 37,547 yd; ends at level 62.2; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter: 2 more tasks; their whole route comes to 38,196 yd; ends at level 62.2; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue: 2 more tasks; their whole route comes to 37,882 yd; ends at level 62.2; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  Human Priest/Dwarf Priest/Draenei Priest/Worgen Priest/Pandaren Priest: 1 more tasks; their whole route comes to 38,335 yd; ends at level 62.2; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  Dwarf Paladin/Draenei Paladin: 2 more tasks; their whole route comes to 40,047 yd; ends at level 62.2; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  Dwarf Shaman/Draenei Shaman: 2 more tasks; their whole route comes to 40,047 yd; ends at level 62.2; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  NightElf Druid/Worgen Druid: 2 more tasks; their whole route comes to 38,163 yd; ends at level 62.2; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  NightElf Priest: 3 more tasks; their whole route comes to 38,377 yd; ends at level 62.2; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  Gnome Priest: 1 more tasks; their whole route comes to 38,339 yd; ends at level 62.2; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  everyone (quests that depend on other zones): 16 more tasks; their whole route comes to 41,239 yd; ends at level 62.1; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  NightElf (quests that depend on other zones): 4 more tasks; their whole route comes to 41,736 yd; ends at level 62.1; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  Draenei (quests that depend on other zones): 6 more tasks; their whole route comes to 41,655 yd; ends at level 62.1; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  Worgen (quests that depend on other zones): 2 more tasks; their whole route comes to 42,195 yd; ends at level 62.1; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 44,270 yd; ends at level 62.2; 4 hearths; at its hardest you are 1.9 levels below the mobs
+Hearthstone: set at Grunda Bronzewing (Grunda Bronzewing's inn); 4 hearth steps in the guide.
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+10 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+2 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (129)
+-------------------------
+Start to finish here: 74 (20 for everyone, 51 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren, 1 Human Warrior/Human Paladin/Human Hunter/Human Rogue/Human Priest/Human Shaman/Human Mage/Human Warlock/Human Monk/Human Druid/Dwarf Warrior/Dwarf Paladin/Dwarf Hunter/Dwarf Rogue/Dwarf Priest/Dwarf Shaman/Dwarf Mage/Dwarf Warlock/Dwarf Monk/Dwarf Druid/NightElf Warrior/NightElf Paladin/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Shaman/NightElf Mage/NightElf Warlock/NightElf Monk/NightElf Druid/Gnome Warrior/Gnome Paladin/Gnome Hunter/Gnome Rogue/Gnome Priest/Gnome Shaman/Gnome Mage/Gnome Warlock/Gnome Monk/Gnome Druid/Draenei Warrior/Draenei Paladin/Draenei Hunter/Draenei Rogue/Draenei Priest/Draenei Shaman/Draenei Mage/Draenei Warlock/Draenei Monk/Draenei Druid/Worgen Warrior/Worgen Paladin/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Shaman/Worgen Mage/Worgen Warlock/Worgen Monk/Worgen Druid/Pandaren Warrior/Pandaren Paladin/Pandaren Hunter/Pandaren Rogue/Pandaren Priest/Pandaren Shaman/Pandaren Mage/Pandaren Warlock/Pandaren Monk/Pandaren Druid, 1 Human DeathKnight/Dwarf DeathKnight/NightElf DeathKnight/Gnome DeathKnight/Draenei DeathKnight/Worgen DeathKnight/Pandaren DeathKnight, 1 NightElf Priest)
+
+Picked up here, handed in elsewhere - these stay in the log (32):
+  Breaking Waves of Change [26383, level 10, Human/Dwarf/NightElf/Gnome/Draenei/Pandaren] -> Darkshore
+  A Summons from Ander Germaine [27225, level 20, Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior] -> Stormwind City
+  Lord Grayson Shadowbreaker [27265, level 20, Dwarf Paladin/Draenei Paladin] -> Stormwind City
+  Wulf Calls [27266, level 20, Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter] -> Stormwind City
+  Make Contact with SI:7 [27267, level 20, Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue] -> Stormwind City
+  Make Haste to the Cathedral [27268, level 20, Human Priest/Dwarf Priest/Draenei Priest/Worgen Priest/Pandaren Priest] -> Stormwind City
+  An Audience with the Farseer [27270, level 20, Dwarf Shaman/Draenei Shaman] -> Stormwind City
+  Journey to the Wizard's Sanctum [27271, level 20, Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage] -> Stormwind City
+  An Invitation from Moonglade [27273, level 20, NightElf Druid/Worgen Druid] -> Moonglade
+  The Chief Surgeon [27274, level 20, Gnome Priest] -> Stormwind City
+  Favored of Elune [27362, level 20, NightElf Priest] -> Stormwind City
+  Hero's Call: Ashenvale! [28492, level 20, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Ashenvale
+  Hero's Call: Stonetalon Mountains! [28539, level 25, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Ashenvale
+  Hero's Call: Desolace! [28531, level 30, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Desolace
+  Hero's Call: Southern Barrens! [28550, level 30, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Southern Barrens
+  Hero's Call: Feralas! [28511, level 35, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Feralas
+  Hero's Call: Dustwallow Marsh! [28552, level 35, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Dustwallow Marsh
+  Hero's Call: Thousand Needles! [28503, level 40, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Feralas
+  Hero's Call: Tanaris! [28507, level 45, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Tanaris
+  Hero's Call: Felwood! [28543, level 45, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Felwood
+  Meet with Ander Germaine [28258, level 50, Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior] -> Stormwind City
+  Meet with Wulf Hansreim [28260, level 50, Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter] -> Stormwind City
+  Meet with Lord Tony Romano [28262, level 50, Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue] -> Stormwind City
+  Meet with Maginor Dumas [28263, level 50, Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage] -> Stormwind City
+  Meet with Lord Grayson Shadowbreaker [28268, level 50, Dwarf Paladin/Draenei Paladin] -> Stormwind City
+  Meet with High Priestess Laurena [28285, level 50, Human Priest/Dwarf Priest/NightElf Priest/Gnome Priest/Draenei Priest/Worgen Priest/Pandaren Priest] -> Stormwind City
+  Meet with Farseer Umbrua [28287, level 50, Dwarf Shaman/Draenei Shaman] -> Stormwind City
+  Moonglade Calls [28289, level 50, Druid] -> Moonglade
+  Hero's Call: Un'Goro Crater! [28525, level 50, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Un'Goro Crater
+  Hero's Call: Winterspring! [28544, level 50, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Winterspring
+  Hero's Call: Silithus! [28528, level 55, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Silithus
+  The Cenarion Expedition [9912, level 62] -> Zangarmarsh
+
+Hand-in step only shows once complete (2):
+  Gaining Mirren's Trust [9563, level 62, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Nethergarde Bitter (1) (Blasted Lands)
+  An Ambitious Plan [9383, level 63, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Glowing Sanctified Crystal (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (9):
+  To Darnassus [6341, level 7, NightElf] <- Teldrassil
+  On the Wings of a Hippogryph [9604, level 7, Draenei] <- Bloodmyst Isle
+  Behomat [10350, level 10, Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior] <- Azuremyst Isle
+  The Howling Oak [28517, level 10, Worgen] <- Teldrassil
+  Coming of Age [9623, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Azuremyst Isle
+  Home of the Kaldorei [14039, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Teldrassil
+  Audience with the Prophet [9698, level 16, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Bloodmyst Isle
+  Through the Dark Portal [10119, level 61, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Blasted Lands
+  Warning the Cenarion Circle [9724, level 64] <- Zangarmarsh
+
+Need a quest this guide does not hand in - steps show only once that is done (12):
+  An Unexpected Gift [6342, level 7, NightElf] - needs one of To Darnassus [6341]
+  Return to Nyoma [6343, level 7, NightElf] - needs one of An Unexpected Gift [6342] -> Teldrassil
+  Hippogryph Master Stephanos [9605, level 7, Draenei] - needs one of On the Wings of a Hippogryph [9604]
+  Return to Caregiver Chellan [9606, level 7, Draenei] - needs one of Hippogryph Master Stephanos [9605] -> Azuremyst Isle
+  Breaking Waves of Change [26385, level 10, Worgen] - needs one of The Howling Oak [28517] -> Darkshore
+  Elekks Are Serious Business [9625, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Coming of Age [9623] -> Bloodmyst Isle
+  Truth or Fiction [9699, level 16, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Audience with the Prophet [9698] -> Bloodmyst Isle
+  The Unwritten Prophecy [9762, level 20, Draenei] - needs one of Ending Their World [9759]
+  The Finest Down [9420, level 62, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Gaining Mirren's Trust [9563]
+  Return to the Marsh [9732, level 63] - needs one of Warning the Cenarion Circle [9724] -> Zangarmarsh
+  The Earthbinder [10349, level 63] - needs one of Crimson Crystal Clue [10134]
+  Natural Remedies [10351, level 63] - needs one of The Earthbinder [10349]
+
+Worth checking in game
+----------------------
+  Gaining Mirren's Trust [9563, level 62, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: has a reputation or spell objective, which is not planned
+  Unyielding Souls [10050, level 61, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: could not read how many Unyielding Footman are needed from the quest text; assumed 8
+  Colossal Menace [10132, level 63]: could not read how many Raging Colossus are needed from the quest text; assumed 8
+
+Put off to a later part (5)
+---------------------------
+These need a higher level than this part ends at:
+  Mission: The Abyssal Shelf [10163, level 62]: its mobs are level 69; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 62.3
+  Go to the Front [10382, level 61]: follows Mission: The Abyssal Shelf [10163]
+  Disruption - Forge Camp: Mageddon [10394, level 61]: follows Go to the Front [10382]
+  Enemy of my Enemy... [10396, level 61]: follows Disruption - Forge Camp: Mageddon [10394]
+  Invasion Point: Annihilator [10397, level 61]: follows Enemy of my Enemy... [10396]
+
+Left out (314)
+--------------
+not in the game (on Questie's quest blacklist) (269):
+  A Lesson to Learn [26], Rise of the Silithid [162], The Absent Minded Prospector [741], Velinde Starsong [1037], Velinde's Effects [1038], Answered Questions [1044], Reception from Tyrande [1081], Mortality Wanes [1142], Vorlus Vilehoof [1683], Elanaria [1684], The Shade of Elura [1686], Smith Mathiel [1692], Weapons of Elunite [1693], Yorus Barleybrew [1698], Mathiel [1703], Sunscorched Shells [1710], Mathiel's Armor [1711], The Islander [1718], High Sorcerer Andromath [1939], Journey to the Marsh [1947], Return to the Marsh [1953], The Apple Falls [2241], Destiny Calls [2242], Erion Shadewhisper [2259], Master of the Wild Leather [2853], Tabetha's Task [2861], Doling Justice [2972], In Nightmares [3370], Prayer to Elune [3378], Assisting Arch Druid Staghelm [3763], Un'Goro Soil [3764], Morrowgrain Research [3781], Morrowgrain Research [3785], Morrowgrain to Darnassus [3803], Rise of the Silithid [4267], March of the Silithid [4493], Calm Before the Storm [4508], Calm Before the Storm [4510], Glyphed Oaken Branch [4986], Aquatic Form [5061], ... 229 more
+repeatable (16):
+  Hellfire Fortifications [10106], Return to the Abyssal Shelf [10346], Fei Fei's Treat [10919], Blood for Blood [11515], Blast the Gateway [11516], The Secret to Perfect Kimchi [29313], Remembering the Ancestors [29314], Back to Basics [29316], Ribs for the Sentinels [29318], Happy as a Clam Digger [29321], Stocking Up [29323], The Sister's Pendant [29324], A Slippery Snack [29325], Spice Bread Aplenty [29357], An Old Favorite [29359], Nicki Tinytech [31922]
+above this zone's range of 58-65 (11):
+  Grand Master Dumphry [10762], Dumphry's Request [10763], Hotter than Hell [10764], The Fall of Magtheridon [11002], Hero's Call: Vashj'ir! [27724], Hero's Call: Mount Hyjal! [27726], Hero's Call: Deepholm! [27727], Hero's Call: Uldum! [28558], Hero's Call: Northrend! [28709], Hero's Call: Twilight Highlands! [28716], The Troll Incursion [29156]
+needs a profession (6):
+  Moonglow Vest [1582], The Missing Magistrix [11526], Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+special category (sort -284) (3):
+  Darnassus [12773], The Exodar [12776], Hammering It Out [25563]
+needs reputation (3):
+  Darnassus Attacked? [32414], Jaina's Resolution [32416], Tracking the Thieves [32460]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29387], Guardians of Hyjal: Call of the Ancients [29391]
+dungeon quest (2):
+  Invading the Citadel [29543], Advancing the Campaign [29689]
+cannot be taken together with Breaking Waves of Change [26383], which is in the guide (1):
+  Hero's Call: Darkshore! [28490]
+cannot be taken together with Elekks Are Serious Business [9625], which is in the guide (1):
+  Hero's Call: Bloodmyst Isle! [28559]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Hellfire Peninsula - Alliance - part 2 of 2, planned from level 67
+Guide "60-63 Hellfire Peninsula" in group "Zone Routes (Alliance)": this part has 22 steps, 21 stops
+Written to guides/mop/Hellfire Peninsula (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 67. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 21 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 19 tasks, 3,785 yd on foot; ends at level 67.1; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 6,860 yd; ends at level 67.1; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (7)
+-----------------------
+Start to finish here: 5 (0 for everyone, 5 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Gaining Mirren's Trust [9563, level 62, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- your earlier visit to this zone
+  An Ambitious Plan [9383, level 63, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+  Gaining Mirren's Trust [9563, level 62, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: has a reputation or spell objective, which is not planned
+  Mission: The Abyssal Shelf [10163, level 62, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: Mo'arg Overseer is level 71, far above this level 62 quest, so the objective is taken to be "talk to" rather than "kill"
+  Mission: The Abyssal Shelf [10163, level 62, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: Fel Cannon is level 71, far above this level 62 quest, so the objective is taken to be "talk to" rather than "kill"
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

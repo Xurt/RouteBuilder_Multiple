@@ -1,0 +1,997 @@
+{
+  "zone": "Kun-Lai Summit",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "87-90 Kun-Lai Summit",
+  "file": "Kun-Lai Summit (Horde).lua",
+  "continent": -5841,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 87,
+      "end": 87.76,
+      "next": 90,
+      "guide": "87-88 Kun-Lai Summit: around Smokey Sootassle",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Smokey Sootassle",
+          "guide": "87-88 Kun-Lai Summit: around Smokey Sootassle",
+          "level": 87,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 90,
+      "end": 90,
+      "guide": "90-91 Kun-Lai Summit",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "90-91 Kun-Lai Summit",
+          "level": 90,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 30457,
+      "level": 87,
+      "req": 87,
+      "xp": 161000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30459,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30460,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30467,
+      "level": 87,
+      "req": 87,
+      "xp": 64000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30468,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30469,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30480,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30487,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30488,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30489,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30491,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30492,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30496,
+      "level": 87,
+      "req": 87,
+      "xp": 161000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30509,
+      "level": 87,
+      "req": 87,
+      "xp": 12900,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 30513,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 30515,
+      "level": 87,
+      "req": 87,
+      "xp": 161000,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 30570,
+      "level": 87,
+      "req": 87,
+      "xp": 12900,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 30571,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30581,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30587,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30592,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30594,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 30595,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30599,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30600,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30601,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30602,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30603,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30604,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30605,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30606,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30607,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30608,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30610,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30611,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30612,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30614,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30616,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30617,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30618,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30620,
+      "level": 87,
+      "req": 87,
+      "xp": 161000,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 30621,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30655,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 30656,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 30665,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30670,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30682,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30683,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30684,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30690,
+      "level": 87,
+      "req": 87,
+      "xp": 161000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30692,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30699,
+      "level": 88,
+      "req": 87,
+      "xp": 16200,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30715,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30723,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30724,
+      "level": 88,
+      "req": 87,
+      "xp": 16200,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30742,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30743,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30745,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30750,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30751,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30794,
+      "level": 87,
+      "req": 87,
+      "xp": 64000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30795,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30796,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30797,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30798,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30799,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30800,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30801,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30802,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30805,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30806,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30807,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30808,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30816,
+      "level": 87,
+      "req": 87,
+      "xp": 12900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30819,
+      "level": 87,
+      "req": 87,
+      "xp": 12900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30820,
+      "level": 87,
+      "req": 87,
+      "xp": 161000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30828,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30829,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30834,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30855,
+      "level": 87,
+      "req": 87,
+      "xp": 161000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30935,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30942,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30943,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30944,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30945,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30946,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30967,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30991,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30994,
+      "level": 88,
+      "req": 87,
+      "xp": 16200,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30999,
+      "level": 88,
+      "req": 87,
+      "xp": 81000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 31011,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 31228,
+      "level": 88,
+      "req": 87,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 31251,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 31253,
+      "level": 87,
+      "req": 87,
+      "xp": 161000,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 31255,
+      "level": 87,
+      "req": 87,
+      "xp": 12900,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "The Jade Forest"
+    },
+    {
+      "id": 31256,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 31393,
+      "level": 87,
+      "req": 87,
+      "xp": 97000,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 31395,
+      "level": 87,
+      "req": 87,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 31511,
+      "level": 87,
+      "req": 87,
+      "xp": 64000,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 31833,
+      "level": 30,
+      "req": 30,
+      "xp": 120,
+      "part": 1,
+      "section": 0,
+      "tag": "Monk"
+    },
+    {
+      "id": 31835,
+      "level": 40,
+      "req": 40,
+      "xp": 120,
+      "part": 1,
+      "section": 0,
+      "tag": "Monk"
+    },
+    {
+      "id": 31836,
+      "level": 50,
+      "req": 50,
+      "xp": 120,
+      "part": 1,
+      "section": 0,
+      "tag": "Monk"
+    },
+    {
+      "id": 31837,
+      "level": 60,
+      "req": 60,
+      "xp": 120,
+      "part": 1,
+      "section": 0,
+      "tag": "Monk"
+    },
+    {
+      "id": 31838,
+      "level": 70,
+      "req": 70,
+      "xp": 120,
+      "part": 1,
+      "section": 0,
+      "tag": "Monk"
+    },
+    {
+      "id": 31839,
+      "level": 80,
+      "req": 80,
+      "xp": 120,
+      "part": 1,
+      "section": 0,
+      "tag": "Monk"
+    }
+  ],
+  "carriedTo": {
+    "another zone": 2,
+    "Valley of the Four Winds": 1,
+    "Townlong Steppes": 1,
+    "Vale of Eternal Blossoms": 1
+  }
+}

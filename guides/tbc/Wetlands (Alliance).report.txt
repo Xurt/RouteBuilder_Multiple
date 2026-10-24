@@ -1,0 +1,279 @@
+Wetlands - Alliance - part 1 of 4, planned from level 20
+Guide "20-31 Wetlands" in group "Zone Routes (Alliance)": this part has 39 steps, 27 stops
+Written to guides/tbc/Wetlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 20. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 27 steps kept, 8 new ones slotted in, 0 moved because their prerequisites changed, 80 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 24 tasks, 11,117 yd on foot; ends at level 20.7; at its hardest you are 3.5 levels below the mobs
+  everyone (quests that depend on other zones): 11 more tasks; their whole route comes to 12,837 yd; ends at level 20.7; at its hardest you are 3.5 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+6 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+4 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (17)
+------------------------
+Start to finish here: 9 (9 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Fiora Longears [1132, level 20] -> Darkshore
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  A Dark Threat Looms [161, level 18] <- Loch Modan
+  The Absent Minded Prospector [942, level 20] <- Darnassus
+  The Algaz Gauntlet [455, level 21] <- Loch Modan
+  The Doomed Fleet [270, level 29] <- Stormwind City
+  The Missing Diplomat [1248, level 33] <- Stormwind City
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  A Dark Threat Looms [274, level 18] - needs one of A Dark Threat Looms [161] -> Loch Modan
+  Lightforge Iron [321, level 29] - needs one of The Doomed Fleet [270]
+
+Worth checking in game
+----------------------
+  The Algaz Gauntlet [455, level 21]: "Traverse Dun Algaz" is assumed to be line 3 in the quest log; check it
+
+Put off to a later part (32)
+----------------------------
+These need a higher level than this part ends at:
+  Blisters on The Land [275, level 26]: its mobs are level 24; this part gets you to about 21.3
+  The Third Fleet [288, level 27]: is a level 27 quest; this part gets you to about 23.0
+  The Cursed Crew [289, level 29]: its mobs are level 29; this part gets you to about 23.0
+  Lifting the Curse [290, level 30]: its mobs are level 30; this part gets you to about 23.0
+  The Eye of Paleth [292, level 30]: follows Lifting the Curse [290]
+  Cleansing the Eye [293, level 30]: follows The Eye of Paleth [292]
+  Ormer's Revenge [294, level 24]: needs level 22; this part gets you to about 21.3
+  Ormer's Revenge [295, level 27]: its mobs are level 26; this part gets you to about 23.0
+  Ormer's Revenge [296, level 29]: its mobs are level 29; this part gets you to about 23.0
+  Uncovering the Past [299, level 28]: needs level 25; this part gets you to about 23.0
+  The Dark Iron War [303, level 30]: its mobs are level 30; this part gets you to about 23.0
+  A Grim Task [304, level 31]: its mobs are level 31; this part gets you to about 23.0
+  In Search of The Excavation Team [305, level 24]: needs level 21; this part gets you to about 20.9
+  In Search of The Excavation Team [306, level 24]: needs level 21; this part gets you to about 20.9
+  Blessed Arm [322, level 29]: follows The Lost Ingots [324]
+  The Lost Ingots [324, level 29]: its mobs are level 28; this part gets you to about 23.0
+  War Banners [464, level 26]: needs level 23; this part gets you to about 23.0
+  Nek'rosh's Gambit [465, level 26]: needs level 23; this part gets you to about 23.0
+  Digging Through the Ooze [470, level 24]: its mobs are level 23; this part gets you to about 20.9
+  Apprentice's Duties [471, level 26]: its mobs are level 25; this part gets you to about 21.3
+  Fall of Dun Modr [472, level 25]: needs level 25; this part gets you to about 23.0
+  Report to Captain Stoutfist [473, level 26]: needs level 23; this part gets you to about 23.0
+  Defeat Nek'rosh [474, level 26]: its mobs are level 26; this part gets you to about 23.0
+  Lightforge Ingots [526, level 29]: its mobs are level 28; this part gets you to about 23.0
+  The Thandol Span [631, level 31]: needs level 28; this part gets you to about 23.0
+  The Thandol Span [632, level 31]: needs level 28; this part gets you to about 23.0
+  The Thandol Span [633, level 31]: needs level 28; this part gets you to about 23.0
+  Plea To The Alliance [634, level 31]: needs level 28; this part gets you to about 23.0
+  The Absent Minded Prospector [943, level 24]: its mobs are level 23; this part gets you to about 20.9
+  The Missing Diplomat [1249, level 33]: its mobs are level 34; this part gets you to about 23.0
+  The Missing Diplomat [1250, level 33]: needs level 28; this part gets you to about 23.0
+  The Missing Diplomat [1264, level 33]: needs level 28; this part gets you to about 23.0
+
+Left out (11)
+-------------
+not in the game (on Questie's quest blacklist) (6):
+  Winter's Presents [8827], New Year Celebrations! [8860], Honor the Flame [11828], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Candy Bucket [12343]
+above this zone's range of 20-33 (2):
+  James Hyal [1301], James Hyal [1302]
+dungeon quest (1):
+  The Fury Runs Deep [378]
+needs reputation (1):
+  Young Crocolisk Skins [484]
+repeatable (1):
+  CLUCK! [3861]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Wetlands - Alliance - part 2 of 4, planned from level 23
+Guide "20-31 Wetlands" in group "Zone Routes (Alliance)": this part has 26 steps, 25 stops
+Written to guides/tbc/Wetlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+2 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 23. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 25 steps kept, 2 new ones slotted in, 1 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 19 tasks, 12,023 yd on foot; ends at level 23.7
+  everyone (quests that depend on other zones): 9 more tasks; their whole route comes to 14,615 yd; ends at level 23.7; at its hardest you are 1.7 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (10)
+------------------------
+Start to finish here: 7 (7 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  The Absent Minded Prospector [943, level 24] - needs one of The Absent Minded Prospector [942]
+  Apprentice's Duties [471, level 26] - needs one of Young Crocolisk Skins [484]
+  Report to Captain Stoutfist [473, level 26] - needs one of The Algaz Gauntlet [455]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (22)
+----------------------------
+These need a higher level than this part ends at:
+  The Third Fleet [288, level 27]: is a level 27 quest; this part gets you to about 23.9
+  The Cursed Crew [289, level 29]: its mobs are level 29; this part gets you to about 25.0
+  Lifting the Curse [290, level 30]: its mobs are level 30; this part gets you to about 25.0
+  The Eye of Paleth [292, level 30]: follows Lifting the Curse [290]
+  Cleansing the Eye [293, level 30]: follows The Eye of Paleth [292]
+  Ormer's Revenge [295, level 27]: its mobs are level 26; this part gets you to about 23.9
+  Ormer's Revenge [296, level 29]: its mobs are level 29; this part gets you to about 25.0
+  Uncovering the Past [299, level 28]: needs level 25; this part gets you to about 25.0
+  The Dark Iron War [303, level 30]: its mobs are level 30; this part gets you to about 25.0
+  A Grim Task [304, level 31]: its mobs are level 31; this part gets you to about 25.0
+  Blessed Arm [322, level 29]: follows The Lost Ingots [324]
+  The Lost Ingots [324, level 29]: its mobs are level 28; this part gets you to about 25.0
+  Fall of Dun Modr [472, level 25]: needs level 25; this part gets you to about 25.0
+  Defeat Nek'rosh [474, level 26]: its mobs are level 26; this part gets you to about 23.9
+  Lightforge Ingots [526, level 29]: its mobs are level 28; this part gets you to about 25.0
+  The Thandol Span [631, level 31]: needs level 28; this part gets you to about 25.0
+  The Thandol Span [632, level 31]: needs level 28; this part gets you to about 25.0
+  The Thandol Span [633, level 31]: needs level 28; this part gets you to about 25.0
+  Plea To The Alliance [634, level 31]: needs level 28; this part gets you to about 25.0
+  The Missing Diplomat [1249, level 33]: its mobs are level 34; this part gets you to about 25.0
+  The Missing Diplomat [1250, level 33]: needs level 28; this part gets you to about 25.0
+  The Missing Diplomat [1264, level 33]: needs level 28; this part gets you to about 25.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Wetlands - Alliance - part 3 of 4, planned from level 26
+Guide "20-31 Wetlands" in group "Zone Routes (Alliance)": this part has 25 steps, 22 stops
+Written to guides/tbc/Wetlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+3 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 26. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 21 steps kept, 3 new ones slotted in, 1 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 21 tasks, 8,536 yd on foot; ends at level 26.4; at its hardest you are 1.7 levels below the mobs
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 8,910 yd; ends at level 26.4; at its hardest you are 1.7 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 6 (6 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Blessed Arm [322, level 29] - needs one of The Lost Ingots [324] -> Stormwind City
+  The Lost Ingots [324, level 29] - needs one of Lightforge Iron [321]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (14)
+----------------------------
+These need a higher level than this part ends at:
+  The Cursed Crew [289, level 29]: its mobs are level 29; this part gets you to about 26.6
+  Lifting the Curse [290, level 30]: its mobs are level 30; this part gets you to about 27.2
+  The Eye of Paleth [292, level 30]: follows Lifting the Curse [290]
+  Cleansing the Eye [293, level 30]: follows The Eye of Paleth [292]
+  Ormer's Revenge [296, level 29]: its mobs are level 29; this part gets you to about 26.6
+  The Dark Iron War [303, level 30]: its mobs are level 30; this part gets you to about 27.2
+  A Grim Task [304, level 31]: its mobs are level 31; this part gets you to about 27.2
+  The Thandol Span [631, level 31]: needs level 28; this part gets you to about 27.2
+  The Thandol Span [632, level 31]: needs level 28; this part gets you to about 27.2
+  The Thandol Span [633, level 31]: needs level 28; this part gets you to about 27.2
+  Plea To The Alliance [634, level 31]: needs level 28; this part gets you to about 27.2
+  The Missing Diplomat [1249, level 33]: its mobs are level 34; this part gets you to about 27.2
+  The Missing Diplomat [1250, level 33]: needs level 28; this part gets you to about 27.2
+  The Missing Diplomat [1264, level 33]: needs level 28; this part gets you to about 27.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Wetlands - Alliance - part 4 of 4, planned from level 29
+Guide "20-31 Wetlands" in group "Zone Routes (Alliance)": this part has 31 steps, 27 stops
+Written to guides/tbc/Wetlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 29. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 29 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 29 tasks, 12,340 yd on foot; ends at level 29.6; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 12,340 yd; ends at level 29.6; at its hardest you are 1.8 levels below the mobs
+Hearthstone: set at Fradd Swiftgear (Fradd Swiftgear's inn); 0 hearth steps in the guide.
+3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (11)
+------------------------
+Start to finish here: 8 (8 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Cleansing the Eye [293, level 30] -> Stormwind City
+
+Hand-in step only shows once complete (1):
+  The Thandol Span [633, level 31] - needs Cache of Explosives Destroyed (Arathi Highlands)
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Plea To The Alliance [634, level 31] - needs one of The Thandol Span [633] -> Arathi Highlands
+
+Worth checking in game
+----------------------
+
+Not planned (3)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  The Missing Diplomat [1249, level 33]: its mobs are level 34; this part gets you to about 29.6
+  The Missing Diplomat [1250, level 33]: follows The Missing Diplomat [1249]
+  The Missing Diplomat [1264, level 33]: follows The Missing Diplomat [1250]
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

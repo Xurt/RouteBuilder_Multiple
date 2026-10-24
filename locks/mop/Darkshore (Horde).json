@@ -1,0 +1,89 @@
+{
+  "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "11-18 Darkshore",
+  "saved": "2026-10-23 17:47",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "accept:13561 @62:46.81,33.29  Accept Solace for the Highborne",
+        "obj:13561:2 @62:47.86,35.8  Objective Solace for the Highborne / Writhing Highborne slain (6)",
+        "obj:13561:1 @62:48.26,36.01  Objective Solace for the Highborne / Cursed Highborne slain (6)",
+        "turnin:13561 @62:46.81,33.29  TurnIn Solace for the Highborne",
+        "accept:13520 @62:51.8,18.07  Accept The Boon of the Seas",
+        "obj:13520:1 @62:51.63,17.44  Objective The Boon of the Seas / Encrusted Clam Muscle (16)",
+        "turnin:13520 @62:51.8,18.07  TurnIn The Boon of the Seas",
+        "accept:13560 @62:51.01,19.19  Accept An Ocean Not So Deep",
+        "accept:13562 @62:50.69,19.73  Accept The Final Flame of Bashal'Aran",
+        "accept:13570 @62:50.13,19.46  Accept Remembrance of Auberdine",
+        "accept:13563 @62:50.13,19.46  Accept A Love Eternal",
+        "turnin:13570 @62:50.13,19.46  TurnIn Remembrance of Auberdine",
+        "obj:13562:1 @62:45.91,34.21  Objective The Final Flame of Bashal'Aran / The Final Flame of Bashal'Aran",
+        "accept:13599 @62:42.97,39.01  Accept Grimclaw's Return",
+        "obj:13563:2 @62:48.47,36.63  Objective A Love Eternal / Anaya's Pendant (1)",
+        "obj:13563:1 @62:48.47,36.63  Objective A Love Eternal / Anaya Dawnrunner slain (1)",
+        "accept:13508 @62:58.91,19.45  Accept Swift Response",
+        "turnin:13508 @62:63.75,5.99  TurnIn Swift Response",
+        "obj:13560:1 @62:54.53,9.26  Objective An Ocean Not So Deep / Greymist Tidehunter (8)",
+        "turnin:13599 @62:51.8,18.07  TurnIn Grimclaw's Return",
+        "turnin:13560 @62:51.01,19.19  TurnIn An Ocean Not So Deep",
+        "turnin:13562 @62:50.69,19.73  TurnIn The Final Flame of Bashal'Aran",
+        "turnin:13563 @62:50.13,19.46  TurnIn A Love Eternal"
+      ]
+    },
+    {
+      "part": 2,
+      "steps": [
+        "accept:5713 @62:47.71,88.91  Accept One Shot.  One Kill.",
+        "obj:5713:1 @62:47.65,88.97  Objective One Shot.  One Kill. / Protect Aynasha",
+        "accept:13605 @62:42.57,45.25  Accept The Last Refugee",
+        "obj:13605:1 @62:41.18,43.36  Objective The Last Refugee / Archaeologist Hollee escorted to safety.",
+        "accept:13573 @62:42.68,45.15  Accept Malfurion's Return",
+        "turnin:13605 @62:42.59,45.29  TurnIn The Last Refugee",
+        "turnin:13573 @62:43.66,53.44  TurnIn Malfurion's Return",
+        "accept:13519 @62:50.31,20.34  Accept The Twilight's Hammer",
+        "accept:13596 @62:50.31,20.34  Accept Twilight Plans",
+        "accept:13523 @62:44.58,30.78  Accept Power Over the Tides",
+        "obj:13519:1 @62:43.65,31.37  Objective The Twilight's Hammer / High Cultist Azerynn slain (1)",
+        "obj:13519:2 @62:43.59,32  Objective The Twilight's Hammer / Twilight Fanatic slain (10)",
+        "obj:13596:1 @62:43.13,32.38  Objective Twilight Plans / Twilight Plans (6)",
+        "obj:13523:1 @62:43.12,29.63  Objective Power Over the Tides / Tranquil Tidal Spirit (6)",
+        "turnin:13523 @62:44.58,30.78  TurnIn Power Over the Tides",
+        "turnin:13596 @62:50.31,20.34  TurnIn Twilight Plans",
+        "turnin:13519 @62:50.31,20.34  TurnIn The Twilight's Hammer",
+        "accept:13601 @62:50.31,20.34  Accept In Aid of the Refugees",
+        "accept:13511 @62:63.75,5.99  Accept One Bitter Wish",
+        "obj:13511:1 @62:64.11,5.3  Objective One Bitter Wish / Rit'ko slain (1)",
+        "accept:13514 @62:69.09,19.25  Accept The Ancients' Ire",
+        "obj:13514:2 @62:70.77,18.3  Objective The Ancients' Ire / Shatterspear Priestess (8)",
+        "obj:13514:1 @62:70.85,16.56  Objective The Ancients' Ire / Shatterspear Hut Fire Bunny slain (8)",
+        "turnin:13514 @62:69.09,19.25  TurnIn The Ancients' Ire",
+        "accept:13844 @62:59.14,19.61  Accept The Looting of Althalaxx",
+        "turnin:13511 @62:58.91,19.45  TurnIn One Bitter Wish",
+        "obj:13844:2 @62:58.28,23.97  Objective The Looting of Althalaxx / Narassin's Tome (1)",
+        "obj:13844:1 @62:58.23,24.02  Objective The Looting of Althalaxx / Teegan Holloway slain (1)",
+        "turnin:13844 @62:59.14,19.61  TurnIn The Looting of Althalaxx",
+        "turnin:13601 @62:42.51,45.23  TurnIn In Aid of the Refugees"
+      ]
+    },
+    {
+      "part": 3,
+      "steps": [
+        "accept:13911 @62:37.69,82.93  Accept The Absent-Minded Prospector",
+        "obj:13911:1 @62:37.69,82.94  Objective The Absent-Minded Prospector / Prospector Remtravel Escorted",
+        "turnin:13911 @62:37.75,82.93  TurnIn The Absent-Minded Prospector",
+        "accept:13912 @62:37.75,82.93  Accept Swamped Secrets",
+        "obj:13912:1 @62:37.02,83.44  Objective Swamped Secrets / Mud-Crusted Ancient Disc (1)",
+        "turnin:13912 @62:37.75,82.93  TurnIn Swamped Secrets",
+        "accept:13918 @62:37.75,82.93  Accept The Titans' Terminal",
+        "turnin:13918 @62:37.75,82.93  TurnIn The Titans' Terminal",
+        "accept:13898 @62:45.35,75.12  Accept The Tides Turn Against Us",
+        "accept:26408 @62:45.3,75.13  Accept Ashes in Ashenvale",
+        "obj:13898:1 @62:32.52,83.94  Objective The Tides Turn Against Us / Darkscale Myrmidon slain (8)",
+        "accept:13902 @62:43.66,53.44  Accept Mounting the Offensive",
+        "turnin:13898 @62:45.35,75.12  TurnIn The Tides Turn Against Us",
+        "turnin:13902 @62:45.3,75.13  TurnIn Mounting the Offensive"
+      ]
+    }
+  ]
+}

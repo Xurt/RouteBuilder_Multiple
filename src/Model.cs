@@ -14,11 +14,21 @@ public sealed class BuildOptions
 /// <summary>Fixed facts about the game: races, classes and the experience curve.</summary>
 public static class Game
 {
-    public static readonly (string Name, int Bit)[] Classes =
+    /// <summary>
+    /// Quests (a zone's own) that only the game's factionless race takes (the Wandering Isle): almost all are marked for
+    /// that race alone, and none for anyone else.
+    /// </summary>
+    public static bool NeutralOnly(IEnumerable<QuestRow> qs)
     {
-        ("Warrior", 1), ("Paladin", 2), ("Hunter", 4), ("Rogue", 8), ("Priest", 16), ("Shaman", 64), ("Mage", 128), ("Warlock", 256), ("Druid", 1024),
-    };
-    public const int AllClasses = 1503;
+        long n = Games.Current.NeutralBits; if (n == 0) return false;
+        int marked = 0, all = 0;
+        foreach (var q in qs) { all++; if (q.Races == 0) continue; if ((q.Races & ~n) != 0) return false; marked++; }
+        return all > 0 && marked >= all * 0.8;
+    }
+
+    public static (string Name, int Bit)[] Classes => Games.Current.Classes;
+    /// <summary>Every class's bit: a quest for all of them is a quest for anyone.</summary>
+    public static int AllClasses => Classes.Aggregate(0, (a, c) => a | c.Bit);
     // the races and race/class combinations of the game being planned (see Games); a combination the quest data has a
     // class quest for is added when it loads (Learn)
     static (string Name, long Bit)[] Horde => Games.Current.Horde;
@@ -46,15 +56,10 @@ public static class Game
     public const int CampingSort = -666;
 
     public static int MaxLevel => Games.Current.MaxLevel;
-    static readonly int[] XpNext =
-    {
-        0, 400, 900, 1400, 2100, 2800, 3600, 4500, 5400, 6500, 7600, 8800, 10100, 11400, 12900, 14400, 16000, 17700, 19400, 21300,
-        23200, 25200, 27300, 29400, 31700, 34000, 36400, 38900, 41400, 44300, 47400, 50800, 54500, 58600, 62800, 67100, 71600, 76100, 80800, 85700,
-        90700, 95800, 101000, 106300, 111800, 117500, 123200, 129100, 135100, 141200, 147500, 153900, 160400, 167100, 173900, 180800, 187900, 195000, 202300, 209800,
-        217400,
-    };
+    static int[] XpNext => Games.Current.XpNext;
     /// <summary>Cum[l] = total experience needed to be level l.</summary>
-    public static readonly double[] Cum = BuildCum();
+    public static double[] Cum => cum != null && cumFor == Games.Current ? cum : (cum = BuildCum(), cumFor = Games.Current).Item1;
+    static double[]? cum; static GameProfile? cumFor;
     static double[] BuildCum()
     {
         var c = new double[MaxLevel + 2];
@@ -79,7 +84,8 @@ public static class Game
     /// <summary>Experience for killing a mob of level <paramref name="ml"/> at player level <paramref name="pl"/>.</summary>
     public static double MobXp(double ml, int pl)
     {
-        double b = 45 + 5 * pl;
+        // the base grows with each expansion's zones: Outland, Northrend, then Cataclysm and Pandaria (approximate)
+        double b = 5 * pl + (pl >= 80 ? 1878 : pl >= 70 ? 580 : pl >= 60 && Game.MaxLevel > 60 ? 235 : 45);
         if (ml >= pl) return b * (1 + 0.05 * Math.Min(ml - pl, 4));
         int zd = pl <= 7 ? 5 : pl <= 9 ? 6 : pl <= 11 ? 7 : pl <= 15 ? 8 : pl <= 19 ? 9 : pl <= 29 ? 11 : pl <= 39 ? 12 : pl <= 44 ? 13 : pl <= 49 ? 14 : pl <= 54 ? 15 : pl <= 59 ? 16 : 17;
         return Math.Max(0, b * (1 - (pl - ml) / zd));
@@ -225,14 +231,12 @@ public sealed class RxpNotes
         if (!Directory.Exists(dir))
             throw new InvalidOperationException($"--rxp: folder not found: {dir}  (give the folder that holds RestedXP's guide .lua files; on Windows, leave the \\ off the end of a quoted path)");
         var r = new RxpNotes(); var rx = new Regex(@"\.complete (\d+),(\d+)[^\r\n]*?--([^\r\n<]*)");
-        foreach (var f in RxpServices.GuideFiles(dir))
+        var blocks = RxpServices.Blocks(RxpServices.GuideFiles(dir));
+        r.Files = blocks.Select(b => b.File).Distinct().Count();
+        r.Services.AddRange(RxpServices.Read(blocks, data));
+        foreach (var b in blocks)
         {
-            string text;
-            try { text = File.ReadAllText(f); } catch (IOException) { continue; }
-            if (!text.Contains("RegisterGuide")) continue;
-            r.Files++;
-            r.Services.AddRange(RxpServices.Read(f, text, data));
-            foreach (Match m in rx.Matches(text))
+            foreach (Match m in rx.Matches(b.Body))
             {
                 var k = (int.Parse(m.Groups[1].Value), int.Parse(m.Groups[2].Value)); string s = m.Groups[3].Value.Trim();
                 if (s.Length == 0) continue;
@@ -288,13 +292,16 @@ public sealed class ZoneModel
     public Ent? Inn; public RouteTask? Home; public string BindName = "the inn";
     public readonly (string Name, long Bit)[] Races; public readonly long FactionMask;
     public ulong AllElig; public bool SingleCharacter;
-    public int LevelLo = 1, LevelHi = 1, ScopeMax = 60;
+    public bool Neutral;        // a faction build of a zone only the factionless race quests in: the guide is for that race
+    public int LevelLo = 1, LevelHi = 1, ScopeMax = Game.MaxLevel;
+    public int OwnLo = 1;       // the level most of the zone's own quests start from (a tenth of them are lower)
     public readonly RxpNotes? Rxp;
     public bool HasConfig;
 
     readonly Dictionary<(EntKind, int), Ent> ents = new();
     /// <summary>The zone a city is planned with, if it is one of the capital cities.</summary>
-    public static int? CityParent(int area) => DefaultLinks.Where(kv => kv.Value.Contains(area)).Select(kv => (int?)kv.Key).FirstOrDefault();
+    public static int? CityParent(int area) => Links.Where(kv => kv.Value.Contains(area)).Select(kv => (int?)kv.Key).FirstOrDefault();
+    static IEnumerable<KeyValuePair<int, int[]>> Links => DefaultLinks.Concat(Games.Current.MoreCities);
     static readonly Dictionary<int, int[]> DefaultLinks = new() { [85] = new[] { 1497 }, [12] = new[] { 1519 }, [1] = new[] { 1537 }, [14] = new[] { 1637 }, [215] = new[] { 1638 }, [141] = new[] { 1657 } };
     static readonly Dictionary<string, int> NumberWords = new() { ["one"] = 1, ["two"] = 2, ["three"] = 3, ["four"] = 4, ["five"] = 5, ["six"] = 6, ["seven"] = 7, ["eight"] = 8, ["nine"] = 9, ["ten"] = 10, ["twelve"] = 12, ["fifteen"] = 15, ["twenty"] = 20 };
 
@@ -305,7 +312,7 @@ public sealed class ZoneModel
         Rxp = RxpNotes.Load(opt.RxpDir, Data);
         SetUpAreas();
         SelectQuests();
-        foreach (var q in Quests.Values) ResolveObjectives(q);
+        foreach (var q in Quests.Values) { ResolveObjectives(q); AtGiver(q); }
         SettleStartItems();
         foreach (var q in Quests.Values.Where(q => !q.XpKnown))
         {
@@ -333,8 +340,34 @@ public sealed class ZoneModel
                     gates[Areas.Count - 1] = (Main.ToWorld(new Pt(l.Gate.X, l.Gate.Y)), a.ToWorld(new Pt(l.Hub.X, l.Hub.Y)), l.Penalty ?? Tuning.AreaChange);
             }
         }
-        else if (DefaultLinks.TryGetValue(Main.Id, out var ids))
+        else if (Links.FirstOrDefault(kv => kv.Key == Main.Id).Value is { } ids)
             foreach (int id in ids) if (Data.Areas.TryGetValue(id, out var a)) { Areas.Add(a); AreaFix.Add(null); }
+        // without map sizes, a part of the zone with a map of its own (a cave, a ship, a phase of the island) cannot be put on
+        // the zone's map: it comes in as a linked area, so the quests given and done there stay in the zone's plan
+        // (the data often does not say which zone such a map belongs to: Kaja'mite Cavern is found by the Lost Isles'
+        // quests sending you there)
+        if (!Games.Current.ClassicMaps && !Games.Current.IsForever && Cfg.LinkedAreas == null)
+        {
+            var zones = Data.Quests.Values.Where(q => q.ZoneOrSort > 0 && !q.Hidden).GroupBy(q => Data.Parent(q.ZoneOrSort)).Where(g => g.Count() >= 5).Select(g => g.Key).ToHashSet();
+            // only places that something the zone's quests need stands in alone (a quest giver who also has a spot in a
+            // capital, or a continent map's copy of a spawn, does not bring that map in)
+            var keys = new HashSet<int>();
+            void Add(IEnumerable<int> spawnKeys) { var k = spawnKeys.ToList(); if (k.Count == 1) keys.Add(k[0]); }
+            void Npc(int id) { if (Data.Npcs.TryGetValue(id, out var n)) Add(n.Spawns.Keys); }
+            void Obj(int id) { if (Data.Objects.TryGetValue(id, out var o)) Add(o.Spawns.Keys); }
+            foreach (var q in Data.Quests.Values.Where(q => q.ZoneOrSort > 0 && !q.Hidden && Data.Parent(q.ZoneOrSort) == Main.Id && (q.Races == 0 || (q.Races & FactionMask) != 0)))
+            {
+                q.StartNpcs.Concat(q.EndNpcs).Concat(q.KillNpcs.Select(k => k.id)).Concat(q.KillCredits.SelectMany(k => k.ids)).ToList().ForEach(Npc);
+                q.StartObjects.Concat(q.EndObjects).Concat(q.UseObjects.Select(k => k.id)).ToList().ForEach(Obj);
+                foreach (var (it, _) in q.NeedItems)
+                    if (Data.Items.TryGetValue(it, out var row)) { row.NpcDrops.ForEach(Npc); row.ObjectDrops.ForEach(Obj); }
+            }
+            foreach (int k in keys.OrderBy(k => k))
+                if (k != Main.Id && !zones.Contains(k) && !Data.Instances.Contains(k) && (Data.Parent(k) == k || Data.Parent(k) == Main.Id)
+                    && Data.AreaName(k) is var an && !an.Contains("continent map") && !an.Contains("(Scenario)") && !an.Contains("(Dungeon/Raid)")
+                    && Data.Areas.TryGetValue(k, out var c) && c.UiMap != Main.UiMap && !Areas.Any(x => x.Id == k))
+                { Areas.Add(c); AreaFix.Add(null); }
+        }
         Travel = new Travel(Areas, gates);
     }
 
@@ -487,13 +520,24 @@ public sealed class ZoneModel
         return string.Join("/", rs.SelectMany(r => cs.Select(c => r + " " + c)));
     }
 
+    // one bit for each race/class combination of the faction that exists (Mists has more races times classes than 64)
+    List<(int r, int c)>? combos;
     ulong EligFor(long races, int classes)
     {
+        if (combos == null)
+        {
+            combos = new();
+            for (int r = 0; r < Races.Length; r++)
+                for (int c = 0; c < Game.Classes.Length; c++)
+                    if (Game.Exists(Races[r].Name, Game.Classes[c].Name)) combos.Add((r, c));
+            if (combos.Count > 64) throw new InvalidOperationException($"{combos.Count} race/class combinations for the {Opt.Faction}: at most 64 can be planned");
+        }
         ulong e = 0;
-        for (int r = 0; r < Races.Length; r++)
-            for (int c = 0; c < Game.Classes.Length; c++)
-                if ((races == 0 || (races & Races[r].Bit) != 0) && (classes == 0 || (classes & Game.Classes[c].Bit) != 0) && Game.Exists(Races[r].Name, Game.Classes[c].Name))
-                    e |= 1UL << (r * Game.Classes.Length + c);
+        for (int i = 0; i < combos.Count; i++)
+        {
+            var (r, c) = combos[i];
+            if ((races == 0 || (races & Races[r].Bit) != 0) && (classes == 0 || (classes & Game.Classes[c].Bit) != 0)) e |= 1UL << i;
+        }
         return e;
     }
 
@@ -523,10 +567,12 @@ public sealed class ZoneModel
         // the zone's own level range, from the quests filed under it
         bool Mine(QuestRow q) => q.ZoneOrSort > 0 && (q.ZoneOrSort == Main.Id || Data.Parent(q.ZoneOrSort) == Main.Id);
         bool ForUs(QuestRow q) => q.Races == 0 || (q.Races & FactionMask) != 0;
-        var own = Data.Quests.Values.Where(q => Mine(q) && ForUs(q) && !q.Repeatable).Select(q => q.Level).OrderBy(l => l).ToList();
+        var ownRows = Data.Quests.Values.Where(q => Mine(q) && ForUs(q) && !q.Repeatable && !q.Hidden).ToList();
+        Neutral = !SingleCharacter && Game.NeutralOnly(ownRows);
+        var own = ownRows.Select(q => q.Level).OrderBy(l => l).ToList();
         if (own.Count >= 5)
         {
-            LevelLo = own[0];
+            LevelLo = own[0]; OwnLo = own[own.Count / 10];
             ScopeMax = own[Math.Min(own.Count - 1, (int)(own.Count * Tuning.ZoneTopPercentile))] + Tuning.ZoneLevelSlack;
         }
         ScopeMax = Opt.MaxLevel ?? Cfg.MaxLevel ?? ScopeMax;
@@ -551,6 +597,8 @@ public sealed class ZoneModel
             if (!forced)
             {
                 string? reason =
+                    row.Removed ? "not in the game (on Questie's quest blacklist)" :
+                    row.Hidden ? "never shown to players (a tracking flag or an unused entry)" :
                     row.Repeatable ? "repeatable" :
                     row.Parent != 0 ? $"helper for {Data.Quests.GetValueOrDefault(row.Parent)?.Name ?? "quest " + row.Parent}" :
                     row.NeedsSkill ? "needs a profession" :
@@ -568,12 +616,47 @@ public sealed class ZoneModel
             q.PreAll = row.PreGroup.Where(p => p != row.Id && !row.Exclusive.Contains(p)).ToHashSet();
             q.PreAny = row.PreSingle.Where(p => p != row.Id && !row.Exclusive.Contains(p)).ToHashSet();
             if (q.Fix.Pre != null) foreach (int p in q.Fix.Pre) q.PreAll.Add(p);
+            // a prerequisite no one can take (no giver, no hand-in, or not in the game) is a leftover in the data: the
+            // Wandering Isle's "The Lesson of the Sandy Fist" still names a quest Blizzard replaced with class versions
+            bool Gone(int p) => Data.Quests.TryGetValue(p, out var pr) && (pr.Removed || pr.StartNpcs.Count + pr.StartObjects.Count + pr.StartItems.Count == 0 && pr.EndNpcs.Count + pr.EndObjects.Count == 0);
+            q.PreAll.RemoveWhere(Gone);
+            if (q.PreAny.Count > 0 && q.PreAny.All(Gone)) q.PreAny.Clear(); else q.PreAny.RemoveWhere(Gone);
             q.PreAll.ExceptWith(Visit.Done);                       // finished on an earlier visit
             if (q.PreAny.Overlaps(Visit.Done)) q.PreAny.Clear();
             q.Optional = q.Fix.Optional;
             q.XpKnown = Data.QuestXp.ContainsKey(row.Id) || q.Fix.Xp != null;
-            q.Xp = q.Fix.Xp ?? (Data.QuestXp.TryGetValue(row.Id, out int xp) ? xp : Data.TypicalXp.GetValueOrDefault(Math.Clamp(row.Level, 1, 60), 500));
+            q.Xp = q.Fix.Xp ?? (Data.QuestXp.TryGetValue(row.Id, out int xp) ? xp : Data.TypicalXp.GetValueOrDefault(Math.Clamp(row.Level, 1, Game.MaxLevel), 500));
             Quests[row.Id] = q;
+        }
+        if (!SingleCharacter) NarrowByPrerequisites();
+    }
+
+    /// <summary>
+    /// A quest is only for the characters who can do what it needs first: in Gilneas the follow-ups are marked for
+    /// every Alliance race, but the chain starts with a Worgen-only quest, so they are Worgen quests too.
+    /// </summary>
+    void NarrowByPrerequisites()
+    {
+        bool changed = true; int rounds = 0; var narrowed = new HashSet<int>();
+        while (changed && rounds++ < 50)
+        {
+            changed = false;
+            foreach (var q in Quests.Values)
+            {
+                ulong e = q.Elig;
+                foreach (int p in q.PreAll) if (Quests.TryGetValue(p, out var pq)) e &= pq.Elig;
+                if (q.PreAny.Count > 0 && q.PreAny.All(Quests.ContainsKey)) e &= q.PreAny.Aggregate(0UL, (m, p) => m | Quests[p].Elig);
+                if (e == 0 || e == q.Elig) continue;        // contradictory data is left as it is
+                q.Elig = e; narrowed.Add(q.Id); changed = true;
+            }
+        }
+        foreach (int id in narrowed)
+        {
+            var q = Quests[id]; long races = 0; int classes = 0;
+            for (int i = 0; i < combos!.Count; i++)
+                if ((q.Elig & (1UL << i)) != 0) { races |= Races[combos[i].r].Bit; classes |= Game.Classes[combos[i].c].Bit; }
+            // (a mix that is not a plain races-times-classes set gets the nearest tag that covers it)
+            q.Tag = TagFor(races, classes, Races, FactionMask);
         }
     }
 
@@ -615,6 +698,27 @@ public sealed class ZoneModel
         }
         found = false;
         return dflt;
+    }
+
+    /// <summary>
+    /// An objective whose credit comes from something with no position anywhere in the data (from Cataclysm on, often
+    /// an invisible "credit" creature: equip the weapon you were given, watch a scene, use a toy) is taken to be done
+    /// where the quest is given, as it nearly always is, rather than leaving the quest without a hand-in plan.
+    /// </summary>
+    void AtGiver(Quest q)
+    {
+        if (q.Start == null || q.Start.Cands.Count == 0 || q.Fix.Objectives != null) return;
+        bool Unplaced(Obj o) => o.Cands.Count == 0 && o.Elsewhere == "an unknown place" && o.Kind != "none"
+            && o.SrcNpcs.All(n => !Data.Npcs.TryGetValue(n, out var r) || r.Spawns.Count == 0);
+        foreach (var o in q.Objs.Where(Unplaced))
+        {
+            var at = q.Start.Cands[0];
+            o.Cands = new List<Cand> { new Cand(at.Area, new List<Pt> { at.Pos }) };
+            o.Elsewhere = null; o.Kind = "event"; o.Kills = 0; o.MobLevel = q.Level; o.Targets.Clear();
+            o.Label = Regex.Replace(o.Label, @" slain(?= \(\d+\)$)", "");
+            o.Text ??= q.Row.Text.Count > 0 ? q.Row.Text[0] : o.Label;
+            q.Notes.Add($"\"{o.Label}\" has no place in the data; taken to be done where the quest is given");
+        }
     }
 
     void ResolveObjectives(Quest q)
@@ -834,7 +938,7 @@ public sealed class ZoneModel
                     q.Late = true;
                     q.Status = "part of it is outside this zone (" + string.Join("; ", q.Unrouted.Select(o => $"{o.Label}: {o.Elsewhere}")) + "), so its hand-in step only shows once the quest is complete";
                 }
-                else if (q.Objs.Count == 0 && q.Fix.Objectives == null && q.Start != null && q.End != null && q.Start == q.End && !q.Row.HasObjectives && !Data.QuestXp.ContainsKey(q.Id))
+                else if (!Games.Current.TalkQuests && q.Objs.Count == 0 && q.Fix.Objectives == null && q.Start != null && q.End != null && q.Start == q.End && !q.Row.HasObjectives && !Data.QuestXp.ContainsKey(q.Id))
                 {
                     q.Late = true; q.DataGap = true;
                 }
@@ -845,7 +949,10 @@ public sealed class ZoneModel
         {
             if (q.Arrival || !Quests.ContainsKey(q.Id) || Cfg.Include.Contains(q.Id)) continue;
             foreach (int x in q.Row.Exclusive)
-                if (x > q.Id && Quests.TryGetValue(x, out var other) && !other.Arrival && (other.Elig & q.Elig) != 0)
+                // (not when another quest needs both: the data's "exclusive" is then wrong, as for the Lost Isles'
+                // "Orcs Can Write?", which "The Enemy of My Enemy" needs along with "Capturing the Unknown")
+                if (x > q.Id && Quests.TryGetValue(x, out var other) && !other.Arrival && (other.Elig & q.Elig) != 0
+                    && !Quests.Values.Any(o => o.PreAll.Contains(x) && o.PreAll.Contains(q.Id)))
                 {
                     Excluded[x] = $"cannot be taken together with {q.Name} [{q.Id}], which is in the guide";
                     Quests.Remove(x);

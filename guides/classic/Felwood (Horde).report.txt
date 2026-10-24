@@ -94,7 +94,7 @@ needs reputation (3):
   Runecloth [6031], The Root of All Evil [8481], The Brokering of Peace [8485]
 handed in here, but the database does not say where it starts (2):
   Guarding Secrets [4882], The Ancient Leaf [7632]
-special category (sort -366) (1):
+not in the game (on Questie's quest blacklist) (1):
   Nightwind the Elder [8723]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,420 @@
+{
+  "zone": "Blade\u0027s Edge Mountains",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "65-70 Blade\u0027s Edge Mountains",
+  "file": "Blade\u0027s Edge Mountains (Alliance).lua",
+  "continent": -3522,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 65,
+      "end": 65.65,
+      "next": 68,
+      "guide": "65-66 Blade\u0027s Edge Mountains: around Rina Moonspring",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Rina Moonspring",
+          "guide": "65-66 Blade\u0027s Edge Mountains: around Rina Moonspring",
+          "level": 65,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 68,
+      "end": 68.06,
+      "guide": "68-69 Blade\u0027s Edge Mountains",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "68-69 Blade\u0027s Edge Mountains",
+          "level": 68,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 9794,
+      "level": 65,
+      "req": 64,
+      "xp": 2700,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Zangarmarsh"
+    },
+    {
+      "id": 10455,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10456,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10457,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10502,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10504,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10506,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10510,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10511,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10512,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10516,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10517,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10555,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10556,
+      "level": 66,
+      "req": 65,
+      "xp": 8550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10594,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10608,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10609,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10682,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10690,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10713,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10717,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10747,
+      "level": 68,
+      "req": 65,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10753,
+      "level": 67,
+      "req": 65,
+      "xp": 8750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10770,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10771,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10795,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10796,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10797,
+      "level": 67,
+      "req": 65,
+      "xp": 1160,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10798,
+      "level": 67,
+      "req": 65,
+      "xp": 1160,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10799,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10800,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10801,
+      "level": 67,
+      "req": 65,
+      "xp": 1160,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10802,
+      "level": 68,
+      "req": 65,
+      "xp": 14950,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10803,
+      "level": 68,
+      "req": 65,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10805,
+      "level": 67,
+      "req": 65,
+      "xp": 14600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10818,
+      "level": 67,
+      "req": 65,
+      "xp": 1160,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10927,
+      "level": 65,
+      "req": 65,
+      "xp": 11000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10983,
+      "level": 70,
+      "req": 70,
+      "xp": 3150,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Terokkar Forest"
+    },
+    {
+      "id": 10567,
+      "level": 66,
+      "req": 66,
+      "xp": 11300,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10607,
+      "level": 68,
+      "req": 66,
+      "xp": 12000,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10806,
+      "level": 70,
+      "req": 65,
+      "xp": 19000,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Netherstorm": 1,
+    "Shadowmoon Valley": 1
+  }
+}

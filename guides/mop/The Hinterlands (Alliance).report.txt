@@ -1,0 +1,55 @@
+The Hinterlands - Alliance
+Guide "31-35 The Hinterlands" in group "Zone Routes (Alliance)": 75 steps, 58 stops
+Written to guides/mop/The Hinterlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 9 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 31. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 111 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 103 tasks, 17,562 yd on foot; ends at level 34.3; 2 hearths
+  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 19,064 yd; ends at level 34.3; 2 hearths
+Hearthstone: set at Grella Stonefist (Grella Stonefist's inn); 2 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 34 for The Battle for Andorhal (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+7 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (39)
+------------------------
+Start to finish here: 33 (1 for everyone, 32 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Battle for Andorhal [28505, level 35, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Western Plaguelands
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Hero's Call: The Hinterlands! [26542, level 30, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Arathi Highlands
+  Revantusk Village [26430, level 31] <- Arathi Highlands
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  The Fall of Jintha'Alor [26432, level 33] - needs Skulk Rock Clean-Up [26267], Skulk Rock Supplies [26268]
+  Darkcleric Marnal [26384, level 34] - needs one of Hunt the Keeper [26369]
+  Rescue OOX-09/HL! [836, level 35] - needs one of Find OOX-09/HL! [485] -> The Cape of Stranglethorn
+
+Worth checking in game
+----------------------
+
+Left out (34)
+-------------
+not in the game (on Questie's quest blacklist) (33):
+  Cortello's Riddle [626], Ripple Recovery [650], Gryphon Master Talonaxe [1450], Rhapsody Shindigger [1451], Rhapsody's Kalimdor Kocktail [1452], Witherbark Cages [2988], The Altar of Zul [2989], Return to the Hinterlands [2993], Saving Sharpbeak [2994], The Newest Member of the Family [3843], Food for Baby [4297], Becoming a Parent [4298], Oran's Gratitude [8273], Shrouded in Nightmare [8446], Highpeak the Elder [8643], Featherbeard's Endorsement [9469], A Gesture of Goodwill [9470], Preying on the Predators [9471], Reclaiming the Eggs [9475], In Pursuit of Featherbeard [9476], Desecrate this Fire! [11784], Honor the Flame [11826], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Candy Bucket [12351], Sharing a Bountiful Feast [14064], <PH>Wildhammer Totems [26239], The Favor of Akil'darah [26282], Faces of Evil [26522], Gryphon Master Talonaxe [26527], The Right Way [26987], Moving Things Along [26988], Candy Bucket [28970]
+repeatable (1):
+  David Kosse [31910]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

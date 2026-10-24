@@ -1,0 +1,37 @@
+New Tinkertown - Alliance
+Guide "1-2 New Tinkertown" in group "Zone Routes (Alliance)": 11 steps, 10 stops
+Written to guides/mop/New Tinkertown (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Gnome Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 15 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock/Gnome Monk: 15 tasks, 3,564 yd on foot; ends at level 2.2; at its hardest you are 1.8 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (6)
+-----------------------
+Start to finish here: 5 (0 for everyone, 5 Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock/Gnome Monk)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  To the Surface [27674, level 2, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock/Gnome Monk] -> New Tinkertown
+
+Worth checking in game
+----------------------
+  Decontamination [27635, level 2, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock/Gnome Monk]: objective "Sanitron 500 slain (1)" is line 1 by the database, but RestedXP's guide has "Decontamination Process started (1)" there
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

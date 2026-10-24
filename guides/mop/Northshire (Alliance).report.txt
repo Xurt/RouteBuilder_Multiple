@@ -1,0 +1,78 @@
+Northshire - Alliance
+Guide "3-5 Northshire" in group "Zone Routes (Alliance)": 149 steps, 140 stops
+Written to guides/mop/Northshire (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: 2 PROBLEMS
+  ! Encrypted Letter (3102) is never picked up (Worgen Rogue)
+  ! The Deepest Cut (26915) is never picked up (Worgen Rogue)
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 3. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 179 steps kept, 2 new ones slotted in, 7 moved because their prerequisites changed, 7 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 18 tasks, 3,399 yd on foot; ends at level 4.2
+  Human Warrior: 21 more tasks; their whole route comes to 4,944 yd; ends at level 4.4
+  Human Paladin: 21 more tasks; their whole route comes to 5,058 yd; ends at level 4.4
+  Human Hunter: 21 more tasks; their whole route comes to 4,280 yd; ends at level 4.6
+  Human Rogue: 21 more tasks; their whole route comes to 5,477 yd; ends at level 4.4
+  Human Priest: 21 more tasks; their whole route comes to 5,441 yd; ends at level 4.4
+  Human Mage: 21 more tasks; their whole route comes to 5,430 yd; ends at level 4.4
+  Human Warlock: 21 more tasks; their whole route comes to 4,727 yd; ends at level 4.4
+  Human Monk: 6 more tasks; their whole route comes to 2,115 yd; ends at level 3.8
+  everyone (quests that depend on other zones): 10 more tasks; their whole route comes to 4,804 yd; ends at level 3.0; 1 hearth; at its hardest you are 2.0 levels below the mobs
+  Human Monk (quests that depend on other zones): 7 more tasks; their whole route comes to 7,737 yd; ends at level 3.8; 1 hearth; at its hardest you are 1.2 levels below the mobs
+Hearthstone: set at Godric Rothgar (Godric Rothgar's inn); 1 hearth step in the guide.
+7 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+
+Quests in the guide (72)
+------------------------
+Start to finish here: 64 (0 for everyone, 8 Human Warrior, 8 Human Paladin, 8 Human Rogue, 8 Human Priest, 8 Human Mage, 8 Human Warlock, 8 Human Hunter, 6 Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren, 2 Human Monk)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Rest and Relaxation [2158, level 5, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Elwynn Forest
+
+Need a quest this guide does not hand in - steps show only once that is done (7):
+  Join the Battle! [31143, level 3, Human Monk] - needs one of Palm of the Tiger [31142]
+  They Sent Assassins [31144, level 3, Human Monk] - needs one of Join the Battle! [31143]
+  Blackrock Invasion [26389, level 4] - needs one of The Rear is Clear [28817], The Rear is Clear [28818], The Rear is Clear [28819], The Rear is Clear [28820], The Rear is Clear [28821], The Rear is Clear [28822], The Rear is Clear [28823], The Rear is Clear [29083], The Rear is Clear [31145]
+  Extinguishing Hope [26391, level 4] - needs one of The Rear is Clear [28817], The Rear is Clear [28818], The Rear is Clear [28819], The Rear is Clear [28820], The Rear is Clear [28821], The Rear is Clear [28822], The Rear is Clear [28823], The Rear is Clear [29083], The Rear is Clear [31145]
+  The Rear is Clear [31145, level 4, Human Monk] - needs one of They Sent Assassins [31144]
+  Report to Goldshire [54, level 5] - needs one of Ending the Invasion! [26390] -> Elwynn Forest
+  Ending the Invasion! [26390, level 5] - needs one of Blackrock Invasion [26389]
+
+Worth checking in game
+----------------------
+  Charging into Battle [26913, level 3, Human Warrior]: has a reputation or spell objective, which is not planned
+  Charging into Battle [26913, level 3, Human Warrior]: objective "Training Dummy slain (1)" is line 1 by the database, but RestedXP's guide has "Cast Charge (1)" there
+  Corruption [26914, level 3, Human Warlock]: has a reputation or spell objective, which is not planned
+  Corruption [26914, level 3, Human Warlock]: objective "Training Dummy slain (5)" is line 1 by the database, but RestedXP's guide has "Cast Immolation (5)" there
+  The Deepest Cut [26915, level 3, Human Rogue]: has a reputation or spell objective, which is not planned
+  The Deepest Cut [26915, level 3, Human Rogue]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Eviscerate (3)" there
+  Mastering the Arcane [26916, level 3, Human Mage]: has a reputation or spell objective, which is not planned
+  Mastering the Arcane [26916, level 3, Human Mage]: objective "Training Dummy slain (2)" is line 1 by the database, but RestedXP's guide has "Cast Arcane Missiles (2)" there
+  The Hunter's Path [26917, level 3, Human Hunter]: has a reputation or spell objective, which is not planned
+  The Hunter's Path [26917, level 3, Human Hunter]: objective "Training Dummy slain (5)" is line 1 by the database, but RestedXP's guide has "Cast Steady Shot (5)" there
+  The Power of the Light [26918, level 3, Human Paladin]: has a reputation or spell objective, which is not planned
+  The Power of the Light [26918, level 3, Human Paladin]: objective "Training Dummy slain (1)" is line 1 by the database, but RestedXP's guide has "Cast Judgement (1)" there
+  Learning the Word [26919, level 3, Human Priest]: has a reputation or spell objective, which is not planned
+  Learning the Word [26919, level 3, Human Priest]: objective "Training Dummy slain (5)" is line 1 by the database, but RestedXP's guide has "Cast Flash Heal (5)" there
+
+Left out (12)
+-------------
+not in the game (on Questie's quest blacklist) (9):
+  Bounty on Garrick Padfoot [6], Brotherhood of Thieves [18], Brother Paxton [344], Rethban Ore [347], Milly Osworth [3903], Milly's Harvest [3904], Grape Manifest [3905], Kobold Camp Cleanup [Programming Test] [14032], Kyle's Test Quest [27723]
+special category (sort -395) (2):
+  Calligraphed Letter [31141], Palm of the Tiger [31142]
+handed in here, but the database does not say where it starts (1):
+  The Stolen Tome [1598]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,242 @@
+{
+  "zone": "Badlands",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "35-45 Badlands",
+  "file": "Badlands (Alliance).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 35,
+      "end": 35.66,
+      "next": 38,
+      "guide": "35-36 Badlands: around Prospector Ryedol",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Prospector Ryedol",
+          "guide": "35-36 Badlands: around Prospector Ryedol",
+          "level": 35,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 38,
+      "end": 38.25,
+      "next": 41,
+      "guide": "38-39 Badlands",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "38-39 Badlands",
+          "level": 38,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 41,
+      "end": 41.22,
+      "guide": "41-42 Badlands",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "41-42 Badlands",
+          "level": 41,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 687,
+      "level": 40,
+      "req": 35,
+      "xp": 2150,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 703,
+      "level": 40,
+      "req": 33,
+      "xp": 3250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 718,
+      "level": 38,
+      "req": 35,
+      "xp": 2900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 719,
+      "level": 35,
+      "req": 35,
+      "xp": 3300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 720,
+      "level": 35,
+      "req": 35,
+      "xp": 1650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 721,
+      "level": 35,
+      "req": 35,
+      "xp": 3300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 722,
+      "level": 40,
+      "req": 35,
+      "xp": 4370,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 723,
+      "level": 40,
+      "req": 35,
+      "xp": 3250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 733,
+      "level": 40,
+      "req": 35,
+      "xp": 4370,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 737,
+      "level": 40,
+      "req": 30,
+      "xp": 3250,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 738,
+      "level": 38,
+      "req": 30,
+      "xp": 1950,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Loch Modan"
+    },
+    {
+      "id": 1106,
+      "level": 35,
+      "req": 26,
+      "xp": 1650,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Thousand Needles"
+    },
+    {
+      "id": 2418,
+      "level": 36,
+      "req": 30,
+      "xp": 3500,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 709,
+      "level": 40,
+      "req": 30,
+      "xp": 4370,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 710,
+      "level": 37,
+      "req": 35,
+      "xp": 3710,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 711,
+      "level": 39,
+      "req": 35,
+      "xp": 4140,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 706,
+      "level": 45,
+      "req": 40,
+      "xp": 5540,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 712,
+      "level": 42,
+      "req": 35,
+      "xp": 4820,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 732,
+      "level": 43,
+      "req": 40,
+      "xp": 5050,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Arathi Highlands": 1,
+    "Dun Morogh": 2,
+    "Thousand Needles": 1,
+    "Loch Modan": 1
+  }
+}

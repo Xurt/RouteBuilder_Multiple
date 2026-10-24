@@ -64,7 +64,7 @@ Left out (12)
 -------------
 above this zone's range of 30-39 (6):
   Crushridge Warmongers [504], Baron's Demise [523], Dark Council [537], The Ensorcelled Parchment [551], Stormpike's Deciphering [554], Down the Scarlet Path [1052]
-special category (sort -22) (2):
+not in the game (on Questie's quest blacklist) (2):
   Crashing the Wickerman Festival [1658], The Power of Pine [8373]
 repeatable (2):
   CLUCK! [3861], Syndicate Emblems [6701]

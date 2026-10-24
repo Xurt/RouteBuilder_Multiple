@@ -1,0 +1,77 @@
+{
+  "zone": "New Tinkertown",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "1-2 New Tinkertown",
+  "file": "New Tinkertown (Alliance).lua",
+  "continent": -133,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 1,
+      "end": 2.2,
+      "guide": "1-2 New Tinkertown",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "1-2 New Tinkertown",
+          "level": 1,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 27635,
+      "level": 2,
+      "req": 1,
+      "xp": 130,
+      "part": 1,
+      "section": 0,
+      "tag": "Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock/Gnome Monk"
+    },
+    {
+      "id": 27670,
+      "level": 1,
+      "req": 1,
+      "xp": 80,
+      "part": 1,
+      "section": 0,
+      "tag": "Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock/Gnome Monk"
+    },
+    {
+      "id": 27671,
+      "level": 1,
+      "req": 1,
+      "xp": 80,
+      "part": 1,
+      "section": 0,
+      "tag": "Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock/Gnome Monk"
+    },
+    {
+      "id": 28167,
+      "level": 1,
+      "req": 1,
+      "xp": 10,
+      "part": 1,
+      "section": 0,
+      "tag": "Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock/Gnome Monk"
+    },
+    {
+      "id": 28169,
+      "level": 1,
+      "req": 1,
+      "xp": 10,
+      "part": 1,
+      "section": 0,
+      "tag": "Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock/Gnome Monk"
+    }
+  ],
+  "carriedTo": {
+    "New Tinkertown": 1
+  }
+}

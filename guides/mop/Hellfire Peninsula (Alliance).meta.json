@@ -1,0 +1,847 @@
+{
+  "zone": "Hellfire Peninsula",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "60-63 Hellfire Peninsula",
+  "file": "Hellfire Peninsula (Alliance).lua",
+  "continent": -3483,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 60,
+      "end": 62.16,
+      "next": 67,
+      "guide": "60-63 Hellfire Peninsula: around Legassi",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Legassi",
+          "guide": "60-63 Hellfire Peninsula: around Legassi",
+          "level": 60,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 67,
+      "end": 67.09,
+      "guide": "67-68 Hellfire Peninsula",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "67-68 Hellfire Peninsula",
+          "level": 67,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 6341,
+      "level": 7,
+      "req": 5,
+      "xp": 160,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 9349,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9351,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9355,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9356,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9361,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9372,
+      "level": 63,
+      "req": 61,
+      "xp": 10400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9385,
+      "level": 63,
+      "req": 60,
+      "xp": 10400,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9390,
+      "level": 62,
+      "req": 60,
+      "xp": 2550,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9398,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9399,
+      "level": 63,
+      "req": 60,
+      "xp": 10400,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9417,
+      "level": 63,
+      "req": 60,
+      "xp": 10400,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9418,
+      "level": 63,
+      "req": 60,
+      "xp": 10400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9423,
+      "level": 62,
+      "req": 60,
+      "xp": 2550,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9424,
+      "level": 63,
+      "req": 60,
+      "xp": 10400,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9426,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9427,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9430,
+      "level": 63,
+      "req": 60,
+      "xp": 10400,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9490,
+      "level": 63,
+      "req": 60,
+      "xp": 12950,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9543,
+      "level": 63,
+      "req": 60,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9545,
+      "level": 63,
+      "req": 60,
+      "xp": 12950,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9558,
+      "level": 62,
+      "req": 60,
+      "xp": 1000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9604,
+      "level": 7,
+      "req": 5,
+      "xp": 315,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei",
+      "from": "Bloodmyst Isle"
+    },
+    {
+      "id": 9623,
+      "level": 11,
+      "req": 10,
+      "xp": 90,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Azuremyst Isle"
+    },
+    {
+      "id": 9698,
+      "level": 16,
+      "req": 14,
+      "xp": 1150,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Bloodmyst Isle"
+    },
+    {
+      "id": 9724,
+      "level": 64,
+      "req": 61,
+      "xp": 5400,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Zangarmarsh"
+    },
+    {
+      "id": 10047,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10050,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10055,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10057,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10058,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10078,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10079,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10093,
+      "level": 63,
+      "req": 58,
+      "xp": 2600,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10099,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10119,
+      "level": 61,
+      "req": 58,
+      "xp": 2400,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Blasted Lands"
+    },
+    {
+      "id": 10132,
+      "level": 63,
+      "req": 61,
+      "xp": 12950,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10140,
+      "level": 61,
+      "req": 58,
+      "xp": 2400,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10141,
+      "level": 61,
+      "req": 58,
+      "xp": 970,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10142,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10143,
+      "level": 61,
+      "req": 58,
+      "xp": 970,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10144,
+      "level": 62,
+      "req": 58,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10146,
+      "level": 62,
+      "req": 58,
+      "xp": 12600,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10159,
+      "level": 63,
+      "req": 61,
+      "xp": 10400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10160,
+      "level": 61,
+      "req": 58,
+      "xp": 2400,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10161,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10236,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10238,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10254,
+      "level": 60,
+      "req": 55,
+      "xp": 955,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10255,
+      "level": 63,
+      "req": 61,
+      "xp": 10400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10288,
+      "level": 61,
+      "req": 58,
+      "xp": 2400,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10340,
+      "level": 60,
+      "req": 58,
+      "xp": 955,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10344,
+      "level": 60,
+      "req": 58,
+      "xp": 955,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10350,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior",
+      "from": "Azuremyst Isle"
+    },
+    {
+      "id": 10367,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10368,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10369,
+      "level": 62,
+      "req": 60,
+      "xp": 12600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10395,
+      "level": 61,
+      "req": 58,
+      "xp": 4850,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10399,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10400,
+      "level": 63,
+      "req": 58,
+      "xp": 15550,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10403,
+      "level": 62,
+      "req": 60,
+      "xp": 2550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10443,
+      "level": 61,
+      "req": 61,
+      "xp": 970,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10482,
+      "level": 58,
+      "req": 58,
+      "xp": 9020,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10483,
+      "level": 58,
+      "req": 58,
+      "xp": 2250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10484,
+      "level": 58,
+      "req": 58,
+      "xp": 9020,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10485,
+      "level": 60,
+      "req": 58,
+      "xp": 9550,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10629,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10630,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10895,
+      "level": 60,
+      "req": 58,
+      "xp": 11900,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10903,
+      "level": 61,
+      "req": 58,
+      "xp": 4850,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10909,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10916,
+      "level": 61,
+      "req": 58,
+      "xp": 4850,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10935,
+      "level": 61,
+      "req": 58,
+      "xp": 12200,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10936,
+      "level": 61,
+      "req": 58,
+      "xp": 970,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10937,
+      "level": 62,
+      "req": 58,
+      "xp": 12600,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 13408,
+      "level": 60,
+      "req": 55,
+      "xp": 7150,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Warrior/Human Paladin/Human Hunter/Human Rogue/Human Priest/Human Shaman/Human Mage/Human Warlock/Human Monk/Human Druid/Dwarf Warrior/Dwarf Paladin/Dwarf Hunter/Dwarf Rogue/Dwarf Priest/Dwarf Shaman/Dwarf Mage/Dwarf Warlock/Dwarf Monk/Dwarf Druid/NightElf Warrior/NightElf Paladin/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Shaman/NightElf Mage/NightElf Warlock/NightElf Monk/NightElf Druid/Gnome Warrior/Gnome Paladin/Gnome Hunter/Gnome Rogue/Gnome Priest/Gnome Shaman/Gnome Mage/Gnome Warlock/Gnome Monk/Gnome Druid/Draenei Warrior/Draenei Paladin/Draenei Hunter/Draenei Rogue/Draenei Priest/Draenei Shaman/Draenei Mage/Draenei Warlock/Draenei Monk/Draenei Druid/Worgen Warrior/Worgen Paladin/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Shaman/Worgen Mage/Worgen Warlock/Worgen Monk/Worgen Druid/Pandaren Warrior/Pandaren Paladin/Pandaren Hunter/Pandaren Rogue/Pandaren Priest/Pandaren Shaman/Pandaren Mage/Pandaren Warlock/Pandaren Monk/Pandaren Druid"
+    },
+    {
+      "id": 13410,
+      "level": 60,
+      "req": 55,
+      "xp": 7150,
+      "part": 1,
+      "section": 0,
+      "tag": "Human DeathKnight/Dwarf DeathKnight/NightElf DeathKnight/Gnome DeathKnight/Draenei DeathKnight/Worgen DeathKnight/Pandaren DeathKnight"
+    },
+    {
+      "id": 14039,
+      "level": 11,
+      "req": 1,
+      "xp": 880,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 27269,
+      "level": 20,
+      "req": 20,
+      "xp": 155,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Priest"
+    },
+    {
+      "id": 28517,
+      "level": 10,
+      "req": 8,
+      "xp": 420,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 28708,
+      "level": 60,
+      "req": 58,
+      "xp": 955,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10163,
+      "level": 62,
+      "req": 58,
+      "xp": 10050,
+      "part": 2,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10382,
+      "level": 61,
+      "req": 58,
+      "xp": 970,
+      "part": 2,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10394,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 2,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10396,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 2,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10397,
+      "level": 61,
+      "req": 58,
+      "xp": 9800,
+      "part": 2,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    }
+  ],
+  "carriedTo": {
+    "Teldrassil": 1,
+    "Azuremyst Isle": 1,
+    "Bloodmyst Isle": 2,
+    "Zangarmarsh": 2,
+    "Darkshore": 2,
+    "Elwynn Forest": 16,
+    "Moonglade": 2,
+    "Ashenvale": 2,
+    "Feralas": 2,
+    "Tanaris": 1,
+    "Un\u0027Goro Crater": 1,
+    "Silithus": 1,
+    "Desolace": 1,
+    "Felwood": 1,
+    "Winterspring": 1,
+    "Southern Barrens": 1,
+    "Dustwallow Marsh": 1
+  }
+}

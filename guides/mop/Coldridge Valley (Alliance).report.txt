@@ -1,0 +1,91 @@
+Coldridge Valley - Alliance
+Guide "1-5 Coldridge Valley" in group "Zone Routes (Alliance)": 89 steps, 63 stops
+Written to guides/mop/Coldridge Valley (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Dwarf Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 52 steps kept, 41 new ones slotted in, 0 moved because their prerequisites changed, 4 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 44 tasks, 13,336 yd on foot; ends at level 4.8; 1 hearth
+  Dwarf Rogue/Gnome Rogue: 2 more tasks; their whole route comes to 13,445 yd; ends at level 4.9; 1 hearth
+  Dwarf Warlock/Gnome Warlock: 2 more tasks; their whole route comes to 13,443 yd; ends at level 4.9; 1 hearth
+  Dwarf Warrior: 5 more tasks; their whole route comes to 13,636 yd; ends at level 5.0; 2 hearths
+  Dwarf Paladin: 5 more tasks; their whole route comes to 13,513 yd; ends at level 5.0; 1 hearth
+  Dwarf Hunter: 5 more tasks; their whole route comes to 13,684 yd; ends at level 5.0; 2 hearths
+  Dwarf Rogue: 3 more tasks; their whole route comes to 13,529 yd; ends at level 5.0; 1 hearth
+  Dwarf Priest: 5 more tasks; their whole route comes to 13,752 yd; ends at level 5.0; 1 hearth
+  Dwarf Shaman: 5 more tasks; their whole route comes to 13,837 yd; ends at level 5.0; 1 hearth
+  Dwarf Mage: 5 more tasks; their whole route comes to 13,771 yd; ends at level 5.1; 1 hearth
+  Dwarf Warlock: 3 more tasks; their whole route comes to 13,753 yd; ends at level 5.0; 2 hearths
+  everyone (quests that depend on other zones): 9 more tasks; their whole route comes to 17,859 yd; ends at level 4.8; 2 hearths; 1 ORDER PROBLEMS
+Hearthstone: set at Grundel Harkin (Grundel Harkin's inn); 5 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 2 for Encrypted Rune (Dwarf Rogue/Gnome Rogue)
+  level 2 for Tainted Rune (Dwarf Warlock/Gnome Warlock)
+  level 2 for Simple Rune (Dwarf Warrior)
+  level 2 for Etched Rune (Dwarf Hunter)
+  level 2 for Hallowed Rune (Dwarf Priest)
+  level 2 for Empowered Rune (Dwarf Shaman)
+  level 2 for Arcane Rune (Dwarf Mage)
+  level 2 for Consecrated Rune (Dwarf Paladin)
+  level 2 for Corruption (Dwarf Warlock)
+  level 2 for Evisceratin' the Enemy (Dwarf Rogue)
+6 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (32)
+------------------------
+Start to finish here: 28 (0 for everyone, 12 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren, 2 Dwarf Warrior, 2 Dwarf Paladin, 2 Dwarf Hunter, 2 Dwarf Priest, 2 Dwarf Shaman, 2 Dwarf Mage, 1 Dwarf Rogue/Gnome Rogue, 1 Dwarf Warlock/Gnome Warlock, 1 Dwarf Rogue, 1 Dwarf Warlock)
+
+Hand-in step only shows once complete (1):
+  Ice and Fire [218, level 5, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Grik'nir the Cold slain (1) (Frostmane Hovel); Wayward Fire Elemental (1) (Frostmane Hovel)
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  A Trip to Ironforge [24490, level 5, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Ice and Fire [218]
+  Follow that Gyro-Copter! [24491, level 5, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of A Trip to Ironforge [24490]
+  Pack Your Bags [24492, level 5, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Follow that Gyro-Copter! [24491]
+
+Worth checking in game
+----------------------
+  Ice and Fire [218, level 5, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Frostmane Novice" really is line 2 in the quest log
+  Ice and Fire [218, level 5, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Wayward Fire Elemental" really is line 3 in the quest log
+  Ice and Fire [218, level 5, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Frostmane Novice (10)" is line 2 by the database, but RestedXP's guide has "Grik'nir's Servant slain (10)" / "Wayward Fire Elemental (1)" there
+  Filling Up the Spellbook [24526, level 3, Dwarf Mage]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  Filling Up the Spellbook [24526, level 3, Dwarf Mage]: has a reputation or spell objective, which is not planned
+  Your Path Begins Here [24527, level 3, Dwarf Shaman]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  Your Path Begins Here [24527, level 3, Dwarf Shaman]: has a reputation or spell objective, which is not planned
+  The Power of the Light [24528, level 3, Dwarf Paladin]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  The Power of the Light [24528, level 3, Dwarf Paladin]: has a reputation or spell objective, which is not planned
+  Oh, A Hunter's Life For Me [24530, level 3, Dwarf Hunter]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  Oh, A Hunter's Life For Me [24530, level 3, Dwarf Hunter]: has a reputation or spell objective, which is not planned
+  Getting Battle-Ready [24531, level 3, Dwarf Warrior]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  Getting Battle-Ready [24531, level 3, Dwarf Warrior]: has a reputation or spell objective, which is not planned
+  Evisceratin' the Enemy [24532, level 3, Dwarf Rogue]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  Evisceratin' the Enemy [24532, level 3, Dwarf Rogue]: has a reputation or spell objective, which is not planned
+  Words of Power [24533, level 3, Dwarf Priest]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  Words of Power [24533, level 3, Dwarf Priest]: has a reputation or spell objective, which is not planned
+  Corruption [26904, level 3, Dwarf Warlock]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  Corruption [26904, level 3, Dwarf Warlock]: has a reputation or spell objective, which is not planned
+
+Left out (9)
+------------
+not in the game (on Questie's quest blacklist) (6):
+  Dwarven Outfitters [179], Coldridge Valley Mail Delivery [234], Senir's Observations [282], Simple Memorandum [3112], Encrypted Memorandum [3113], Scalding Mornbrew Delivery [3364]
+special category (sort -395) (2):
+  Elegant Rune [31150], Kick, Punch, It's All in the Mind [31151]
+helper for Pack Your Bags (1):
+  Don't Forget About Us [24493]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

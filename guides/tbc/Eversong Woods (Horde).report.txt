@@ -1,0 +1,220 @@
+Eversong Woods - Horde - part 1 of 3, planned from level 1
+Guide "1-12 Eversong Woods" in group "Zone Routes (Horde)": this part has 338 steps, 172 stops
+Written to guides/tbc/Eversong Woods (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 12 of 40 held at once (BloodElf Priest), not counting quests brought in from other zones.
+8 pickups or hand-ins are within reach of a stop but planned for later.
+8 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 221 steps kept, 11 new ones slotted in, 4 moved because their prerequisites changed, 28 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 133 tasks, 17,531 yd on foot; ends at level 10.6; 1 hearth; at its hardest you are 4.0 levels below the mobs
+  BloodElf: 34 more tasks; their whole route comes to 20,313 yd; ends at level 11.2; 1 hearth; at its hardest you are 2.1 levels below the mobs
+  Mage: 9 more tasks; their whole route comes to 19,521 yd; ends at level 10.9; 1 hearth; at its hardest you are 4.0 levels below the mobs
+  Orc Warlock: 1 more tasks; their whole route comes to 19,331 yd; ends at level 10.6; 1 hearth; at its hardest you are 4.0 levels below the mobs
+  Undead Warlock: 1 more tasks; their whole route comes to 19,331 yd; ends at level 10.6; 1 hearth; at its hardest you are 4.0 levels below the mobs
+  Paladin: 4 more tasks; their whole route comes to 20,362 yd; ends at level 11.2; 1 hearth; at its hardest you are 2.0 levels below the mobs
+  BloodElf Hunter: 13 more tasks; their whole route comes to 24,289 yd; ends at level 11.3; 1 hearth; at its hardest you are 2.1 levels below the mobs
+  BloodElf Rogue: 5 more tasks; their whole route comes to 23,319 yd; ends at level 11.2; 1 hearth; at its hardest you are 2.0 levels below the mobs
+  BloodElf Priest: 7 more tasks; their whole route comes to 21,097 yd; ends at level 11.2; 1 hearth; at its hardest you are 2.0 levels below the mobs
+  BloodElf Mage: 4 more tasks; their whole route comes to 22,362 yd; ends at level 11.4; 1 hearth; at its hardest you are 2.1 levels below the mobs
+  BloodElf Warlock: 9 more tasks; their whole route comes to 24,079 yd; ends at level 11.2; 1 hearth; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 6 more tasks; their whole route comes to 18,305 yd; ends at level 10.6; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 4.0 levels below the mobs
+  BloodElf (quests that depend on other zones): 4 more tasks; their whole route comes to 24,720 yd; ends at level 11.2; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 2.1 levels below the mobs
+  BloodElf Hunter (quests that depend on other zones): 3 more tasks; their whole route comes to 30,912 yd; ends at level 11.3; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 2.1 levels below the mobs
+  BloodElf Rogue (quests that depend on other zones): 1 more tasks; their whole route comes to 27,677 yd; ends at level 11.2; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 2.0 levels below the mobs
+  BloodElf Warlock (quests that depend on other zones): 2 more tasks; their whole route comes to 30,196 yd; ends at level 11.2; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 2.0 levels below the mobs
+Hearthstone: set at [DND] TAR Pedestal - Enchantments ([DND] TAR Pedestal - Enchantments's inn); 1 hearth step in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 10 for Seek the Farstriders (BloodElf Hunter)
+122 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+3 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+15 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+7 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+4 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (98)
+------------------------
+Start to finish here: 81 (50 for everyone, 11 BloodElf, 5 BloodElf Hunter, 3 BloodElf Warlock, 3 BloodElf Priest, 3 Mage, 2 BloodElf Mage, 2 BloodElf Rogue, 1 Paladin, 1 BloodElf Paladin)
+
+Picked up here, handed in elsewhere - these stay in the log (4):
+  The Stone [9529, level 10, BloodElf Warlock] -> Ghostlands
+  Find Keltus Darkleaf [9532, level 10, BloodElf Rogue] -> Ghostlands
+  Return to Carendin Halgar [10789, level 10, Undead Warlock] -> Undercity
+  Return to Gan'rul Bloodeye [10790, level 10, Orc Warlock] -> Orgrimmar
+
+Hand-in step only shows once complete (2):
+  The Fallen Courier [9147, level 10] - needs Plagued Blood Sample (4) (Ghostlands)
+  Taming the Beast [9485, level 10, BloodElf Hunter] - needs Mistbat (Ghostlands)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Fly to Silvermoon City [9133, level 10, BloodElf] <- Ghostlands
+  Return the Reports [9618, level 10, BloodElf Rogue] <- Ghostlands
+  The Rune of Summoning [9619, level 10, BloodElf Warlock] <- Ghostlands
+  The Hunter's Path [10530, level 10, BloodElf Hunter] <- Mulgore
+  Return to Talionia [10788, level 10, BloodElf Warlock] <- Undercity
+
+Need a quest this guide does not hand in - steps show only once that is done (6):
+  The Dwarven Spy [8483, level 7] - needs one of Incriminating Documents [8482]
+  Fairbreeze Village [9256, level 7] - needs one of The Dwarven Spy [8483]
+  Skymistress Gloaming [9134, level 10, BloodElf] - needs one of Fly to Silvermoon City [9133]
+  Return to Quartermaster Lymel [9135, level 10, BloodElf] - needs one of Skymistress Gloaming [9134] -> Ghostlands
+  Delivery to Tranquillien [9148, level 10] - needs one of The Fallen Courier [9147] -> Ghostlands
+  Beast Training [9673, level 10, BloodElf Hunter] - needs one of Taming the Beast [9485]
+
+Worth checking in game
+----------------------
+13 quests have no experience figure in the database: their experience is estimated, and 4 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  Windows to the Source [8344], Taming the Beast [9484], The Stone [9529], Seek the Farstriders [9617]
+  Thirst Unending [8346, level 3, BloodElf]: objective "Feral Tender (6)" is line 1 by the database, but RestedXP's guide has "Mana Tap creature (x6)" there
+  Unexpected Results [8488, level 9]: objective "Gharsul the Remorseless slain (1)" is line 1 by the database, but RestedXP's guide has "Protect Apprentice Mirveda" there
+  Powering our Defenses [8490, level 10]: objective "Infused Crystal" is line 1 by the database, but RestedXP's guide has "Runestone Energized: 1/1" there
+  Powering our Defenses [8490, level 10]: "Infused Crystal" has no place in the data; taken to be done where the quest is given
+  Darnassian Intrusions [9352, level 6]: could not read how many Darnassian Scout are needed from the quest text; assumed 8
+
+Put off to a later part (7)
+---------------------------
+These need a higher level than this part ends at:
+  The Party Never Ends [9067, level 9]: its mobs are level 30; this part gets you to about 10.9
+  Summons from Knight-Lord Bloodvalor [9677, level 12]: needs level 12; this part gets BloodElf Paladin characters to about 11.4
+  The First Trial [9678, level 12]: needs level 12; this part gets BloodElf Paladin characters to about 11.4
+  Redeeming the Dead [9685, level 12]: needs level 12; this part gets BloodElf Paladin characters to about 11.4
+  A Donation of Wool [10359, level 12]: needs level 12; this part gets you to about 10.9
+  Claiming the Light [63866, level 12]: its mobs are level 73; this part gets BloodElf Paladin characters to about 11.4
+  A Study in Power [64319, level 12]: needs level 12; this part gets BloodElf Paladin characters to about 11.4
+
+Left out (104)
+--------------
+not in the game (on Questie's quest blacklist) (49):
+  Welcome! [8547], The Hero of the Day [8799], Winter's Presents [8828], New Year Celebrations! [8861], Stealing Stormwind's Flame [9330], Stealing Ironforge's Flame [9331], Stealing Darnassus's Flame [9332], A Thief's Reward [9339], A Study in Power [9681], Claiming the Light [9684], Stop the Fires! [11219], The Headless Horseman [11220], Masked Orphan Matron [11357], Fire Training [11361], Free at Last! [11403], Brewfest! [11446], Fire Training [11449], Fire Training [11450], Honor the Flame [11848], Unusual Activity [11886], Playing with Fire [11915], Striking Back [11917], Torch Tossing [11922], Torch Catching [11923], More Torch Catching [11925], More Torch Tossing [11926], Stealing the Exodar's Flame [11933], Striking Back [11947], Striking Back [11948], Striking Back [11952], Striking Back [11953], Striking Back [11954], Ahune, the Frost Lord [11955], Incense for the Festival Scorchlings [11966], The Spinner of Summer Tales [11971], Inform the Elder [12012], "Let the Fires Come!" [12139], Smash the Pumpkin [12155], Candy Bucket [12364], Candy Bucket [12365], ... 9 more
+above this zone's range of 1-12 (47):
+  Speak with Deino [1943], Journey to the Marsh [1947], Return to the Marsh [1953], Tabetha's Task [2861], Seeking Strahad [3001], In Search of Menara Voidrender [4738], Knowledge of the Orb of Orahil [4968], The Manor, Ravenholdt [6681], Mor'zul Bloodbringer [7562], The Hunter's Charm [8151], A Simple Request [8233], Magecraft [8250], Cenarion Aid [8254], An Imp's Request [8419], Torwa Pathfinder [9063], Hero of the Sin'dorei [9328], To The Bulwark [9601], Envoy to the Horde [9621], Allegiance to the Horde [9627], The Second Trial [9686], The Second Trial [9690], Return to Silvermoon [9691], The Path of the Adept [9692], Forging the Weapon [9707], The Blood-Tempered Ranseur [9710], A Summons from Lord Solanar [9721], The Master's Path [9722], A Gesture of Commitment [9723], A Demonstration of Loyalty [9725], True Masters of the Light [9735], True Masters of the Light [9736], True Masters of the Light [9737], Friend of the Sin'dorei [9811], Envoy to the Horde [9812], A Donation of Silk [10360], A Donation of Mageweave [10361], A Donation of Runecloth [10362], A Discreet Inquiry [10372], A Call to Arms: The Plaguelands! [10374], Carendin Summons [10605], ... 7 more
+repeatable (7):
+  For Great Honor [8388], Additional Runecloth [10363], Call to Arms: Arathi Basin [11339], Call to Arms: Alterac Valley [11340], Call to Arms: Eye of the Storm [11341], Call to Arms: Warsong Gulch [11342], For Great Honor [95457]
+special category (sort -25) (1):
+  For Great Honor [8367]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Eversong Woods - Horde - part 2 of 3, planned from level 13
+Guide "1-12 Eversong Woods" in group "Zone Routes (Horde)": this part has 16 steps, 10 stops
+Written to guides/tbc/Eversong Woods (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 13. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 5 steps kept, 5 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 2,562 yd on foot; ends at level 13.1
+  BloodElf Paladin: 3 more tasks; their whole route comes to 6,162 yd; ends at level 13.1
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 4,362 yd; ends at level 13.1
+  BloodElf Paladin (quests that depend on other zones): 2 more tasks; their whole route comes to 8,089 yd; ends at level 13.1
+  BloodElf Hunter (quests that depend on other zones): 1 more tasks; their whole route comes to 5,196 yd; ends at level 13.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (6)
+-----------------------
+Start to finish here: 2 (1 for everyone, 1 BloodElf Paladin)
+
+Hand-in step only shows once complete (1):
+  The First Trial [9678, level 12, BloodElf Paladin] - needs Undergo the First Trial (1) (Ghostlands)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  The Fallen Courier [9147, level 10] <- your earlier visit to this zone
+  Taming the Beast [9485, level 10, BloodElf Hunter] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  A Study in Power [64319, level 12, BloodElf Paladin] - needs one of The First Trial [9678]
+
+Worth checking in game
+----------------------
+2 quests have no experience figure in the database: their experience is estimated, and 2 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  Summons from Knight-Lord Bloodvalor [9677], The First Trial [9678]
+
+Put off to a later part (3)
+---------------------------
+These need a higher level than this part ends at:
+  The Party Never Ends [9067, level 9]: its mobs are level 30; this part gets you to about 13.2
+  Redeeming the Dead [9685, level 12]: follows Claiming the Light [63866]
+  Claiming the Light [63866, level 12]: its mobs are level 73; this part gets BloodElf Paladin characters to about 13.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Eversong Woods - Horde - part 3 of 3, planned from level 28
+Guide "1-12 Eversong Woods" in group "Zone Routes (Horde)": this part has 12 steps, 8 stops
+Written to guides/tbc/Eversong Woods (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 28. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 5 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 5 tasks, 4,539 yd on foot; ends at level 28.0; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 5,139 yd; ends at level 28.0; at its hardest you are 2.0 levels below the mobs
+  BloodElf Paladin (quests that depend on other zones): 1 more tasks; their whole route comes to 6,939 yd; ends at level 28.0; at its hardest you are 2.0 levels below the mobs
+  BloodElf Hunter (quests that depend on other zones): 1 more tasks; their whole route comes to 6,072 yd; ends at level 28.0; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  The Fallen Courier [9147, level 10] <- your earlier visit to this zone
+  Taming the Beast [9485, level 10, BloodElf Hunter] <- your earlier visit to this zone
+  The First Trial [9678, level 12, BloodElf Paladin] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Not planned (2)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Redeeming the Dead [9685, level 12]: follows Claiming the Light [63866]
+  Claiming the Light [63866, level 12]: its mobs are level 73; this part gets BloodElf Paladin characters to about 28.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -145,35 +145,20 @@ RXPGuides.RegisterGuide([[
 #name 55-56 Winterspring: around Umi Rumplesnicker
 
 step
-    .goto 1452/1,-4302.61,6433.63
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Remorseful Highborne|r
-    .accept 5252 >>Accept Remorseful Highborne
-    .target Remorseful Highborne
-    .isQuestTurnedIn 5248 --any of: Tormented By the Past
-    .xp <53,1
-step
-    .goto 1452/1,-4623.53,6726.62
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Meggi Peppinrocker|r
-    .accept 6603 >>Accept Trouble in Winterspring!
-    .target Meggi Peppinrocker
-step
     .goto 1452/1,-4673.23,6695.38
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Vizzie|r
     .target Innkeeper Vizzie
     .home >>Set your Hearthstone to Innkeeper Vizzie's inn
 step
-    .goto 1452/1,-4006.54,7094.87
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wynd Nightchaser|r
-    .turnin 5252 >>Turn in Remorseful Highborne
-    .target Wynd Nightchaser
-    .isOnQuest 5252
+    .goto 1452/1,-4656.19,6714.31
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Harlo Wigglesworth|r
+    .accept 6604 >>Accept Enraged Wildkin
+    .target Harlo Wigglesworth
 step
-    .goto 1452/1,-4006.54,7094.87
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wynd Nightchaser|r
-    .accept 5253 >>Accept The Crystal of Zin-Malor
-    .target Wynd Nightchaser
-    .isQuestTurnedIn 5252 --any of: Remorseful Highborne
-    .xp <53,1
+    .goto 1452/1,-4623.53,6726.62
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Meggi Peppinrocker|r
+    .accept 6603 >>Accept Trouble in Winterspring!
+    .target Meggi Peppinrocker
 step
     .goto 1452/1,-2536.84,6395.76
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Donova Snowden|r
@@ -207,7 +192,6 @@ step
     .accept 8471 >>Accept Winterfall Ritual Totem
     .use 20742
 step
-    #label Drop5083x1
     #loop
     .goto 1452/1,-3217.02,6520.72,0
     .goto 1452/1,-3217.02,6520.72,40,0
@@ -215,27 +199,6 @@ step
     >>Kill |cRXP_ENEMY_Winterfall Pathfinders|r
     .complete 5082,1 --Winterfall Pathfinder slain (8)
     .mob Winterfall Pathfinder
-step
-    #completewith next
-    .hs >>Hearth to Innkeeper Vizzie's inn. |cRXP_WARN_Walk instead if you are already nearby|r
-    .cooldown item,6948,>0,1
-step
-    .goto 1452/1,-4656.19,6714.31
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Harlo Wigglesworth|r
-    .accept 6604 >>Accept Enraged Wildkin
-    .target Harlo Wigglesworth
-step
-    #completewith Drop5083x2
-    >>|cRXP_LOOT_Empty Firewater Flask|r can drop from |cRXP_ENEMY_Winterfall Ursa|r, |cRXP_ENEMY_Winterfall Shaman|r, |cRXP_ENEMY_Winterfall Den Watcher|r. Use it to start the quest if you get one
-    .collect 12771,1,5083 --Empty Firewater Flask (1)
-    .accept 5083 >>Accept Winterfall Firewater
-    .use 12771
-step
-    #completewith Drop5083x2
-    >>|cRXP_LOOT_Winterfall Ritual Totem|r can drop from |cRXP_ENEMY_Winterfall Ursa|r, |cRXP_ENEMY_Winterfall Shaman|r, |cRXP_ENEMY_Winterfall Den Watcher|r. Use it to start the quest if you get one
-    .collect 20742,1,8471 --Winterfall Ritual Totem (1)
-    .accept 8471 >>Accept Winterfall Ritual Totem
-    .use 20742
 step
     #loop
     .goto 1452/1,-5012.61,6853.95,0
@@ -245,7 +208,7 @@ step
     .complete 5082,2 --Winterfall Den Watcher slain (8)
     .mob Winterfall Den Watcher
 step
-    #label Drop5083x2
+    #label Drop5083x1
     .goto 1452/1,-3161.64,6478.59
     >>Kill |cRXP_ENEMY_Winterfall Totemics|r
     .complete 5082,3 --Winterfall Totemic slain (8)
@@ -302,19 +265,19 @@ step
     .complete 4842,1 --Discover Darkwhisper Gorge
     .isOnQuest 4842
 step
-    #completewith Drop5083x3
+    #completewith Drop5083x2
     >>|cRXP_LOOT_Empty Firewater Flask|r can drop from |cRXP_ENEMY_Winterfall Ursa|r, |cRXP_ENEMY_Winterfall Shaman|r, |cRXP_ENEMY_Winterfall Den Watcher|r. Use it to start the quest if you get one
     .collect 12771,1,5083 --Empty Firewater Flask (1)
     .accept 5083 >>Accept Winterfall Firewater
     .use 12771
 step
-    #completewith Drop5083x3
+    #completewith Drop5083x2
     >>|cRXP_LOOT_Winterfall Ritual Totem|r can drop from |cRXP_ENEMY_Winterfall Ursa|r, |cRXP_ENEMY_Winterfall Shaman|r, |cRXP_ENEMY_Winterfall Den Watcher|r. Use it to start the quest if you get one
     .collect 20742,1,8471 --Winterfall Ritual Totem (1)
     .accept 8471 >>Accept Winterfall Ritual Totem
     .use 20742
 step
-    #label Drop5083x3
+    #label Drop5083x2
     .goto 1452/1,-2301.83,6899.39
     >>Kill |cRXP_ENEMY_Winterfall Runner|r and loot |cRXP_LOOT_Winterfall Crate|r
     .complete 5087,1 --Winterfall Crate (1)
@@ -338,12 +301,20 @@ step
     .accept 8464 >>Accept Winterfall Activity
     .target Salfa
 step
+    #completewith next
+    .hs >>Hearth to Innkeeper Vizzie's inn. |cRXP_WARN_Walk instead if you are already nearby|r
+    .cooldown item,6948,>0,1
+step
     .goto 1452/1,-4692.40,6705.79
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Felnok Steelspring|r
     .accept 4809 >>Accept Chillwind Horns
     .target Felnok Steelspring
     .isQuestTurnedIn 4808 --any of: Felnok Steelspring
     .xp <50,1
+step
+    #completewith next
+    .hs >>Hearth to Innkeeper Vizzie's inn. |cRXP_WARN_Walk instead if you are already nearby|r
+    .cooldown item,6948,>0,1
 step
     .goto 1452/1,-4639.15,6752.65
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Umi Rumplesnicker|r
@@ -379,19 +350,19 @@ step
     .accept 977 >>Accept Are We There, Yeti?
     .target Umi Rumplesnicker
 step
-    #completewith Drop5083x4
+    #completewith Drop5083x3
     >>|cRXP_LOOT_Empty Firewater Flask|r can drop from |cRXP_ENEMY_Winterfall Ursa|r, |cRXP_ENEMY_Winterfall Shaman|r, |cRXP_ENEMY_Winterfall Den Watcher|r. Use it to start the quest if you get one
     .collect 12771,1,5083 --Empty Firewater Flask (1)
     .accept 5083 >>Accept Winterfall Firewater
     .use 12771
 step
-    #completewith Drop5083x4
+    #completewith Drop5083x3
     >>|cRXP_LOOT_Winterfall Ritual Totem|r can drop from |cRXP_ENEMY_Winterfall Ursa|r, |cRXP_ENEMY_Winterfall Shaman|r, |cRXP_ENEMY_Winterfall Den Watcher|r. Use it to start the quest if you get one
     .collect 20742,1,8471 --Winterfall Ritual Totem (1)
     .accept 8471 >>Accept Winterfall Ritual Totem
     .use 20742
 step
-    #label Drop5083x4
+    #label Drop5083x3
     #loop
     .goto 1452/1,-4987.76,6751.71,0
     .goto 1452/1,-4987.76,6751.71,40,0
@@ -425,32 +396,13 @@ step
     .turnin 8464 >>Turn in Winterfall Activity
     .target Salfa
 step
-    #completewith next
-    .hs >>Hearth to Innkeeper Vizzie's inn. |cRXP_WARN_Walk instead if you are already nearby|r
-    .cooldown item,6948,>0,1
-step
-    .xp 55 >>Grind to level 55 (A Little Luck needs it)
-step
-    .goto 1452/1,-4656.19,6714.31
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Harlo Wigglesworth|r
-    .accept 6606 >>Accept A Little Luck
-    .target Harlo Wigglesworth
-step
-    .goto 1452/1,-4712.99,6720.47
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Mau'ari|r
-    .turnin 6606 >>Turn in A Little Luck
-    .target Witch Doctor Mau'ari
-step
-    #loop
-    .goto 1452/1,-5209.28,6594.09,0
-    .goto 1452/1,-5209.28,6594.09,40,0
-    .goto 1452/1,-5287.38,6581.31,40,0
-    .goto 1452/1,-5327.14,6720.47,40,0
-    >>Kill |cRXP_ENEMY_Ice Thistle Matriarches|r and |cRXP_ENEMY_Ice Thistle Patriarches|r. Loot them for |cRXP_LOOT_Pristine Yeti Horn|r
+    #completewith Along31
+    >>As you go: Kill |cRXP_ENEMY_Ice Thistle Matriarches|r and |cRXP_ENEMY_Ice Thistle Patriarches|r. Loot them for |cRXP_LOOT_Pristine Yeti Horn|r. |cRXP_WARN_Anything left is finished later|r
     .complete 977,1 --Pristine Yeti Horn (2)
     .mob Ice Thistle Matriarch
     .mob Ice Thistle Patriarch
 step
+    #label Along31
     .goto 1452/1,-5255.43,6719.99
     >>Kill |cRXP_ENEMY_High Chief Winterfall|r and loot |cRXP_LOOT_Crudely-written Log|r. Use it to start the quest
     .collect 12842,1,5123 --Crudely-written Log (1)
@@ -459,6 +411,16 @@ step
     .mob High Chief Winterfall
     .isQuestTurnedIn 5087 --any of: Winterfall Runners
     .xp <52,1
+step
+    #loop
+    .goto 1452/1,-5327.14,6720.47,0
+    .goto 1452/1,-5327.14,6720.47,40,0
+    .goto 1452/1,-5287.38,6581.31,40,0
+    .goto 1452/1,-5209.28,6594.09,40,0
+    >>Kill |cRXP_ENEMY_Ice Thistle Matriarches|r and |cRXP_ENEMY_Ice Thistle Patriarches|r. Loot them for |cRXP_LOOT_Pristine Yeti Horn|r
+    .complete 977,1 --Pristine Yeti Horn (2)
+    .mob Ice Thistle Matriarch
+    .mob Ice Thistle Patriarch
 step
     .goto 1452/1,-4639.15,6752.65
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Umi Rumplesnicker|r
@@ -503,11 +465,31 @@ step
     .target Donova Snowden
     .isQuestComplete 5086
 step
+    .goto 1452/1,-4302.61,6433.63
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Remorseful Highborne|r
+    .accept 5252 >>Accept Remorseful Highborne
+    .target Remorseful Highborne
+    .isQuestTurnedIn 5248 --any of: Tormented By the Past
+    .xp <53,1
+step
     .goto 1452/1,-4639.15,6752.65
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Umi Rumplesnicker|r
     .turnin 5163 >>Turn in Are We There, Yeti?
     .target Umi Rumplesnicker
     .isQuestComplete 5163
+step
+    .goto 1452/1,-4006.54,7094.87
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wynd Nightchaser|r
+    .turnin 5252 >>Turn in Remorseful Highborne
+    .target Wynd Nightchaser
+    .isOnQuest 5252
+step
+    .goto 1452/1,-4006.54,7094.87
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wynd Nightchaser|r
+    .accept 5253 >>Accept The Crystal of Zin-Malor
+    .target Wynd Nightchaser
+    .isQuestTurnedIn 5252 --any of: Remorseful Highborne
+    .xp <53,1
 step
     +|cRXP_WARN_That is all of Winterspring for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Burning Steppes|r: Return to Tinkee

@@ -11,7 +11,7 @@
     {
       "part": 1,
       "start": 25,
-      "end": 25.52,
+      "end": 25.49,
       "next": 28,
       "guide": "25-26 Thousand Needles: around Cliffwatcher Longhorn",
       "sections": [
@@ -43,7 +43,7 @@
     {
       "part": 3,
       "start": 31,
-      "end": 31.41,
+      "end": 31.3,
       "next": 34,
       "guide": "31-32 Thousand Needles: around Pozzik",
       "sections": [
@@ -94,6 +94,16 @@
       "from": "Stranglethorn Vale"
     },
     {
+      "id": 1119,
+      "level": 44,
+      "req": 35,
+      "xp": 3750,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Stranglethorn Vale"
+    },
+    {
       "id": 1137,
       "level": 38,
       "req": 28,
@@ -112,15 +122,6 @@
       "section": 0,
       "tag": "",
       "from": "Durotar"
-    },
-    {
-      "id": 1149,
-      "level": 26,
-      "req": 25,
-      "xp": 1050,
-      "part": 1,
-      "section": 0,
-      "tag": ""
     },
     {
       "id": 1183,
@@ -348,24 +349,6 @@
       "tag": ""
     },
     {
-      "id": 1150,
-      "level": 30,
-      "req": 25,
-      "xp": 2450,
-      "part": 3,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 1151,
-      "level": 30,
-      "req": 25,
-      "xp": 3050,
-      "part": 3,
-      "section": 0,
-      "tag": ""
-    },
-    {
       "id": 1176,
       "level": 30,
       "req": 29,
@@ -390,7 +373,6 @@
     "Arathi Highlands": 1,
     "Badlands": 1,
     "The Barrens": 3,
-    "Stonetalon Mountains": 1,
     "Tanaris": 1,
     "Dustwallow Marsh": 1,
     "Desolace": 1

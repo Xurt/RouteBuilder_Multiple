@@ -1,0 +1,58 @@
+Loch Modan - Alliance
+Guide "11-20 Loch Modan" in group "Zone Routes (Alliance)": 120 steps, 104 stops
+Written to guides/mop/Loch Modan (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 10 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+3 pickups or hand-ins are within reach of a stop but planned for later.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 11. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 141 steps kept, 9 new ones slotted in, 0 moved because their prerequisites changed, 4 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 142 tasks, 30,559 yd on foot; ends at level 19.0; 1 hearth
+  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 30,574 yd; ends at level 19.0; 1 hearth
+Hearthstone: set at Khara Deepwater (Khara Deepwater's inn); 1 hearth step in the guide.
+9 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+5 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (60)
+------------------------
+Start to finish here: 51 (6 for everyone, 45 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  The Lost Pilot [26854, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Dun Morogh
+  Checking on the Boys [26137, level 20] -> Wetlands
+
+Brought in from another zone and handed in here - steps show only if you have the quest (6):
+  Reinforcements for Loch Modan [26131, level 10, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Ironforge
+  Hero's Call: Loch Modan! [28567, level 10, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Ironforge
+  A Pilot's Revenge [26855, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Dun Morogh
+  Powder to Ironband [302, level 15, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Ironforge
+  Stormpike's Delivery [353, level 15, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Stormwind City
+  Find Bingles [2039, level 15, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Ironforge
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  South Gate Status Report [13635, level 11] - needs one of A Pilot's Revenge [26855]
+
+Worth checking in game
+----------------------
+  Protecting the Shipment [309, level 15, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: "Escort Miran to the excavation site" is assumed to be line 2 in the quest log; check it
+  Protecting the Shipment [309, level 15, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Saean slain (1)" is line 1 by the database, but RestedXP's guide has "Protect the Ironband Caravan (1)" there
+  Servants of Cho'gall [27075, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Emogg the Crusher (8)" is line 1 by the database, but RestedXP's guide has "|7/7 Mo'grosh Ogre slain" there
+
+Left out (53)
+-------------
+not in the game (on Questie's quest blacklist) (52):
+  Uldaman Reagent Run [17], A Dark Threat Looms [161], A Decisive Strike [217], In Defense of the King's Lands [224], A Dark Threat Looms [250], WANTED: Chok'sul [256], A Hunter's Boast [257], A Hunter's Challenge [258], In Defense of the King's Lands [263], The Trogg Threat [267], Vyrin's Revenge [271], Resupplying the Excavation [273], A Dark Threat Looms [278], A Dark Threat Looms [280], Gathering Idols [297], Excavation Progress Report [298], Report to Ironforge [301], Filthy Paws [307], Crocolisk Hunting [385], Stout to Kadrell [414], Rat Catching [416], A Pilot's Revenge [417], Thelsamar Blood Sausages [418], Ironband's Excavation [436], After the Ambush [454], Stonegear's Search [467], Report to Mountaineer Rockgar [468], Vyrin's Revenge [531], Agmond's Fate [704], Ironband Wants You! [707], Murdaloc [739], Stonesplinter Trogg Disguise [912], Stormpike's Order [1338], Mountaineer Stormpike's Task [1339], Bailor's Ore Shipment [1655], Bingles' Missing Supplies [2038], Badlands Reagent Run [2500], Badlands Reagent Run II [2501], The Horn of the Beast [3181], At Last! [3201], ... 12 more
+needs a profession (1):
+  Supplying the Front [1578]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

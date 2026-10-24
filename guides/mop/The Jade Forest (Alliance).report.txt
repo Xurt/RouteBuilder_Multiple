@@ -1,0 +1,255 @@
+The Jade Forest - Alliance - part 1 of 2, planned from level 86
+Guide "86-90 The Jade Forest" in group "Zone Routes (Alliance)": this part has 383 steps, 360 stops
+Written to guides/mop/The Jade Forest (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+11 pickups or hand-ins are within reach of a stop but planned for later.
+4 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 86. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 372 steps kept, 37 new ones slotted in, 0 moved because their prerequisites changed, 33 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 86, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 98 tasks, 7,976 yd on foot; ends at level 86.2
+  everyone (quests that depend on other zones): 311 more tasks; their whole route comes to 46,938 yd; ends at level 86.2; 1 hearth
+Hearthstone: set at Pan the Kind Hand (Pan the Kind Hand's inn); 1 hearth step in the guide.
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+7 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+8 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (126)
+-------------------------
+Start to finish here: 33 (33 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  The Mission [29548, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Stormwind City
+  The Order of the Cloud Serpent [31373, level 90, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Vale of Eternal Blossoms
+  Corruption Runs Deep [31441, level 90] <- Dread Wastes
+
+Need a quest this guide does not hand in - steps show only once that is done (90):
+  Critical Condition [29552, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Envoy of the Alliance [31736], The Cost of War [31737]
+  The Missing Admiral [29553, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs The White Pawn [29555], Hozen Aren't Your Friends, Hozen Are Your Enemies [29556]
+  The White Pawn [29555, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Onward and Inward [31745]
+  Hozen Aren't Your Friends, Hozen Are Your Enemies [29556, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Onward and Inward [31745]
+  The Path of War [29558, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Missing Admiral [29553]
+  Freeing Our Brothers [29559, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Missing Admiral [29553]
+  Ancient Power [29560, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Missing Admiral [29553]
+  Jailbreak [29562, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Kung Din [29759]
+  The Double Hozen Dare [29716, level 86] - needs one of Welcome to Dawn's Blossom [31230]
+  Down Kitty! [29717, level 86] - needs one of Welcome to Dawn's Blossom [31230]
+  The Jade Witch [29723, level 86] - needs one of The Double Hozen Dare [29716]
+  SI:7 Report: Fire From the Sky [29725, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of SI:7 Report: Lost in the Woods [29733]
+  SI:7 Report: Hostile Natives [29726, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of SI:7 Report: Fire From the Sky [29725]
+  SI:7 Report: Take No Prisoners [29727, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of SI:7 Report: Hostile Natives [29726]
+  SI:7 Report: Lost in the Woods [29733, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Spirits of the Water [29894]
+  Monstrosity [29743, level 86] - needs one of Seeking Zin'jun [31774]
+  Kung Din [29759, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs The Path of War [29558], Freeing Our Brothers [29559], Ancient Power [29560]
+  Family Heirlooms [29762, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs The Pearlfin Situation [29883], Road Rations [29885]
+  The Silkwood Road [29865, level 86] - needs one of Welcome to Dawn's Blossom [31230]
+  The Threads that Stick [29866, level 86] - needs one of Welcome to Dawn's Blossom [31230]
+  The Pearlfin Situation [29883, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Jailbreak [29562]
+  Road Rations [29885, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Jailbreak [29562]
+  The Elder's Instruments [29887, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs The Pearlfin Situation [29883], Road Rations [29885]
+  Seek Out the Lorewalker [29888, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of SI:7 Report: Take No Prisoners [29727]
+  Borrowed Brew [29889, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Seek Out the Lorewalker [29888]
+  Finding Your Center [29890, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Potency [29891], Body [29892], Hue [29893]
+  Potency [29891, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of A Visit with Lorewalker Cho [31130]
+  Body [29892, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of A Visit with Lorewalker Cho [31130]
+  Hue [29893, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of A Visit with Lorewalker Cho [31130]
+  Spirits of the Water [29894, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Family Heirlooms [29762], The Elder's Instruments [29887]
+  Sacred Waters [29898, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Finding Your Center [29890]
+  Rest in Peace [29899, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Finding Your Center [29890]
+  An Ancient Legend [29900, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Finding Your Center [29890]
+  Anduin's Decision [29901, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Sacred Waters [29898], Rest in Peace [29899], An Ancient Legend [29900]
+  A Perfect Match [29903, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of SI:7 Report: Take No Prisoners [29727]
+  Bigger Fish to Fry [29904, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of A Perfect Match [29903]
+  Let Them Burn [29905, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Bigger Fish to Fry [29904]
+  Carp Diem [29906, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Bigger Fish to Fry [29904]
+  Getting Permission [29920, level 86] - needs one of Shrine of the Dawn [29995]
+  In Search of Wisdom [29922, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Anduin's Decision [29901], Let Them Burn [29905], Carp Diem [29906]
+  All We Can Spare [29925, level 86] - needs one of The Jade Witch [29723]
+  Calamity Jade [29926, level 86] - needs one of I Have No Jade And I Must Scream [29928]
+  Mann's Man [29927, level 86] - needs one of I Have No Jade And I Must Scream [29928]
+  I Have No Jade And I Must Scream [29928, level 86] - needs one of All We Can Spare [29925]
+  Trapped! [29929, level 86] - needs one of Mann's Man [29927]
+  What's Mined Is Yours [29930, level 86] - needs one of Trapped! [29929]
+  The Serpent's Heart [29931, level 86] - needs one of What's Mined Is Yours [29930]
+  The Temple of the Jade Serpent [29932, level 86] - needs one of Love's Labor [30495]
+  Find the Boy [29993, level 86] - needs one of The Threads that Stick [29866]
+  Shrine of the Dawn [29995, level 86] - needs one of Find the Boy [29993]
+  The Scryer's Dilemma [29997, level 86] - needs one of The Temple of the Jade Serpent [29932]
+  The Librarian's Quandary [29998, level 86] - needs one of The Temple of the Jade Serpent [29932]
+  The Rider's Bind [29999, level 86] - needs one of The Temple of the Jade Serpent [29932]
+  The Jade Serpent [30000, level 86] - needs The Rider's Bind [29999], Everything In Its Place [30004], Lighting Up the Sky [30005], A New Vision [30011]
+  Moth-Ridden [30001, level 86] - needs one of The Librarian's Quandary [29998]
+  Pages of History [30002, level 86] - needs one of The Librarian's Quandary [29998]
+  Everything In Its Place [30004, level 86] - needs Moth-Ridden [30001], Pages of History [30002]
+  Lighting Up the Sky [30005, level 86] - needs one of The Temple of the Jade Serpent [29932]
+  A New Vision [30011, level 86] - needs one of The Scryer's Dilemma [29997]
+  No Plan Survives Contact with the Enemy [30069, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Touching Ground [31733]
+  The Fall of Ga'trul [30070, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Twinspire Keep [31741], Fractured Forces [31742], Smoke Before Fire [31743], Unfair Trade [31744]
+  Love's Labor [30495, level 86] - needs one of The Serpent's Heart [29931]
+  Get Back Here! [30498, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Jade Serpent [30000]
+  Residual Fallout [30500, level 86] - needs one of The Seal is Broken [31303]
+  Jaded Heart [30502, level 86] - needs one of The Seal is Broken [31303]
+  An Unexpected Advantage [30565, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Jade Serpent [30000]
+  Helping the Cause [30568, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Jade Serpent [30000]
+  Moving On [30648, level 86] - needs one of Emergency Response [30504], Emergency Response [31319] -> Valley of the Four Winds
+  They're So Thorny! [31112, level 86] - needs one of Missed Me By... That Much! [29821]
+  A Visit with Lorewalker Cho [31130, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Borrowed Brew [29889]
+  Welcome to Dawn's Blossom [31230, level 86] - needs one of In Search of Wisdom [29922], Dawn's Blossom [30015]
+  Wicked Wikkets [31241, level 86] - needs one of Swallowed Whole [29879]
+  The Seal is Broken [31303, level 86] - needs one of Last Piece of the Puzzle [30485], Last Piece of the Puzzle [31362]
+  Emergency Response [31319, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Seal is Broken [31303]
+  Last Piece of the Puzzle [31362, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs An Unexpected Advantage [30565], Helping the Cause [30568]
+  Unleash Hell [31732, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Mission [29548]
+  Touching Ground [31733, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Unleash Hell [31732]
+  Welcome Wagons [31734, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Touching Ground [31733]
+  The Right Tool For The Job [31735, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs No Plan Survives Contact with the Enemy [30069], Welcome Wagons [31734]
+  Envoy of the Alliance [31736, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Right Tool For The Job [31735]
+  The Cost of War [31737, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Right Tool For The Job [31735]
+  Pillaging Peons [31738, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Envoy of the Alliance [31736], The Cost of War [31737]
+  Priorities! [31739, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Envoy of the Alliance [31736], The Cost of War [31737]
+  Koukou's Rampage [31740, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Priorities! [31739]
+  Twinspire Keep [31741, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Critical Condition [29552], Pillaging Peons [31738], Koukou's Rampage [31740]
+  Fractured Forces [31742, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Critical Condition [29552], Pillaging Peons [31738], Koukou's Rampage [31740]
+  Smoke Before Fire [31743, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Critical Condition [29552], Pillaging Peons [31738], Koukou's Rampage [31740]
+  Unfair Trade [31744, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Critical Condition [29552], Pillaging Peons [31738], Koukou's Rampage [31740]
+  Onward and Inward [31745, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Fall of Ga'trul [30070]
+  Priorities! [31772, level 86] - needs one of The Final Blow! [31769]
+
+Worth checking in game
+----------------------
+  The White Pawn [29555, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Fine Leather Journal" really is line 2 in the quest log
+  Defiance [29578, level 86]: mixes a kill-credit objective with others; check that "Gormali Raider" really is line 2 in the quest log
+  SI:7 Report: Hostile Natives [29726, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: "Suspicious Jade Statue" has no place in the data; taken to be done where the quest is given
+  Potency [29891, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: could not read how many Mist Creeper are needed from the quest text; assumed 8
+  The Jade Serpent [30000, level 86]: "Kill Credit: Jade Serpent (1)" has no place in the data; taken to be done where the quest is given
+  Helping the Cause [30568, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: could not read how many Pearlfin Recruit are needed from the quest text; assumed 8
+  Unleash Hell [31732, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: could not read how many Garrosh'ar Grunt are needed from the quest text; assumed 8
+  Welcome Wagons [31734, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: "Horde War Wagon (5)" has no place in the data; taken to be done where the quest is given
+  The Right Tool For The Job [31735, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Ga'trul" really is line 3 in the quest log
+  Smoke Before Fire [31743, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Twinspire Demolisher" really is line 2 in the quest log
+  Smoke Before Fire [31743, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Xhu'daggab" really is line 3 in the quest log
+  Smoke Before Fire [31743, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Wild Imp" really is line 4 in the quest log
+
+Put off to a later part (23)
+----------------------------
+These need a higher level than this part ends at:
+  An Urgent Plea [29749, level 86]: its mobs are level 90; this part gets you to about 86.3
+  Vessels of the Spirit [29750, level 86]: follows An Urgent Plea [29749]
+  Ritual Artifacts [29751, level 86]: follows An Urgent Plea [29749]
+  The Wayward Dead [29752, level 86]: follows An Urgent Plea [29749]
+  Back to Nature [29753, level 86]: follows Vessels of the Spirit [29750]
+  To Bridge Earth and Sky [29754, level 86]: follows Back to Nature [29753]
+  Pei-Back [29755, level 86]: follows To Bridge Earth and Sky [29754]
+  A Humble Offering [29756, level 86]: follows Vessels of the Spirit [29750]
+  Wild Things [30134, level 90]: needs level 90; this part gets you to about 86.3
+  Beating the Odds [30135, level 90]: needs level 90; this part gets you to about 86.3
+  Empty Nests [30136, level 90]: needs level 90; this part gets you to about 86.3
+  Egg Collection [30137, level 90]: needs level 90; this part gets you to about 86.3
+  Choosing the One [30138, level 90]: needs level 90; this part gets you to about 86.3
+  The Rider's Journey [30139, level 90]: needs level 90; this part gets you to about 86.3
+  It's A... [30142, level 90]: needs level 90; this part gets you to about 86.3
+  Flight Training: Ring Round-Up [30144, level 90]: needs level 90; this part gets you to about 86.3
+  Flight Training: Full Speed Ahead [30145, level 90]: needs level 90; this part gets you to about 86.3
+  Flight Training: In Due Course [30187, level 90]: needs level 90; this part gets you to about 86.3
+  The Road to Kun-Lai [31254, level 87]: needs level 87; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 86.3
+  Everything I Know About Cooking [31279, level 90]: needs level 86; this part gets you to about 86.2
+  Temple of the White Tiger [31392, level 87]: needs level 87; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 86.3
+  Volatile Greenstone Brew [31613, level 90]: needs level 90; this part gets you to about 86.3
+  His Name Was... Stormstout [32018, level 87]: needs level 86; this part gets you to about 86.2
+
+Left out (113)
+--------------
+repeatable (58):
+  The Darkness Around Us [30006], Behind the Masks [30063], Saving the Sutras [30064], Arrows of Fortune [30065], Hidden Power [30066], The Shadow of Doubt [30067], Flames of the Void [30068], Snack Time [30146], Fragments of the Past [30147], Just a Flesh Wound [30148], A Feast for the Senses [30149], Sweet as Honey [30150], Catch! [30151], The Sky Race [30152], The Easiest Way To A Serpent's Heart [30154], Restoring the Balance [30155], Feeding Time [30156], Emptier Nests [30157], Disarming the Enemy [30158], Preservation [30159], Slitherscale Suppression [31194], Attack At The Temple of the Jade Serpent [31376], A Thing of Beauty [31539], Staves for Tian Monastery [31540], Set in Jade [31541], Incarnadine Ink [31542], Portrait of a Lady [31543], A Tribute to the Dead [31544], Thinning The Pack [31698], Sprite Fright [31699], The Shoe Is On The Other Foot [31700], Dark Huntress [31701], On The Prowl [31702], Madcap Mayhem [31703], Pooped [31704], Needle Me Not [31705], Weeping Widows [31706], A Tangled Web [31707], Serpent's Scale [31708], Lingering Doubt [31709], ... 18 more
+not in the game (on Questie's quest blacklist) (37):
+  Sunken Junk [29554], The Mission Continues [29557], Kill Mogu Firestarters [29584], UNUSED [29621], UNUSED [29625], UNUSED [29638], UNUSED [29648], My Stars! [29696], The Witch in the Woods [29715], The Double Hozu Dare [29719], A Lesson in Bravery [29722], A Good Start [29766], Sacred Scroll [29837], Lay of the Land[TEMP] [29841], Seeking Answers [29842], Aunty Lin Windfur [29843], Building a Better Hozen Trap [29878], Tracking Event: Spies Leave [29884], Zen Healing [29886], Trail of the White Pawn [29895], The Dream Brew [29923], Full Speed Ahead [30153], The Scouts Return [30458], Inscribed Tiger Staff [31690], Inscribed Crane Staff [31691], Inscribed Serpent Staff [31692], [SINK SHIPS] (Not Used?) [31731], Candy Bucket [32021], Candy Bucket [32027], Candy Bucket [32029], Candy Bucket [32031], Candy Bucket [32032], Candy Bucket [32033], Candy Bucket [32049], Tracking Event: Ambassadors Summoned [32356], Tracking Event: Event Complete [32357], Honor the Flame [32498]
+needs reputation (6):
+  They Grow Like Weeds [30143], Riding the Skies [30188], Damage Control [31458], Extracting Answers [31465], Riding the Skies [31810], Riding the Skies [31811]
+handed in here, but the database does not say where it starts (4):
+  Explosive Evidence [29728], The Rider's Journey [30140], The Rider's Journey [30141], The Order of the Cloud Serpent [32461]
+cannot be taken together with Flying Colors [29639], which is in the guide (2):
+  Flying Colors [29646], Flying Colors [29647]
+special category (sort -344) (2):
+  Stranger in a Strange Land [31488], Stranger in a Strange Land [31489]
+special category (sort -391) (1):
+  Blanche's Boomer Brew [30567]
+cannot be taken together with Everything I Know About Cooking [31279], which is in the guide (1):
+  Everything I Know About Cooking [31486]
+cannot be taken together with Priorities! [31772], which is in the guide (1):
+  Priorities! [31978]
+cannot be taken together with His Name Was... Stormstout [32018], which is in the guide (1):
+  They Call Him... Stormstout [32019]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Jade Forest - Alliance - part 2 of 2, planned from level 89
+Guide "86-90 The Jade Forest" in group "Zone Routes (Alliance)": this part has 33 steps, 30 stops
+Written to guides/mop/The Jade Forest (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 89. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 27 steps kept, 5 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 32 tasks, 2,060 yd on foot; ends at level 89.0
+Hearthstone: set at Brewmaster Lei Kanglei (Brewmaster Lei Kanglei's inn); 0 hearth steps in the guide.
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (12)
+------------------------
+Start to finish here: 8 (8 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (4):
+  The Road to Kun-Lai [31254, level 87, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Kun-Lai Summit
+  Temple of the White Tiger [31392, level 87, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Kun-Lai Summit
+  His Name Was... Stormstout [32018, level 87] -> Valley of the Four Winds
+  Everything I Know About Cooking [31279, level 90] -> Valley of the Four Winds
+
+Worth checking in game
+----------------------
+  Back to Nature [29753, level 86]: "Peaceful Beast Spirit (8)" has no place in the data; taken to be done where the quest is given
+
+Not planned (11)
+----------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Wild Things [30134, level 90]: needs level 90; this part gets you to about 89.1
+  Beating the Odds [30135, level 90]: needs level 90; this part gets you to about 89.1
+  Empty Nests [30136, level 90]: needs level 90; this part gets you to about 89.1
+  Egg Collection [30137, level 90]: needs level 90; this part gets you to about 89.1
+  Choosing the One [30138, level 90]: needs level 90; this part gets you to about 89.1
+  The Rider's Journey [30139, level 90]: needs level 90; this part gets you to about 89.1
+  It's A... [30142, level 90]: needs level 90; this part gets you to about 89.1
+  Flight Training: Ring Round-Up [30144, level 90]: needs level 90; this part gets you to about 89.1
+  Flight Training: Full Speed Ahead [30145, level 90]: needs level 90; this part gets you to about 89.1
+  Flight Training: In Due Course [30187, level 90]: needs level 90; this part gets you to about 89.1
+  Volatile Greenstone Brew [31613, level 90]: needs level 90; this part gets you to about 89.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -426,27 +426,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dockmaster Baren|r
     .turnin 127 >>Turn in Selling Fish
     .target Dockmaster Baren
-step << Rogue
-    .goto 1433/0,-2179.97,-9332.55
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arantir|r
-    .accept 2358 >>Accept Horns of Nez'ra
-    .target Arantir
-step << Rogue
-    #loop
-    .goto 1433/0,-2442.86,-9164.01,0
-    .goto 1433/0,-2442.86,-9164.01,40,0
-    .goto 1433/0,-2513.63,-9156.63,40,0
-    >>Kill |cRXP_ENEMY_Gath'Ilzoggs|r, |cRXP_ENEMY_Blackrock Champions|r, |cRXP_ENEMY_Blackrock Shadowcasters|r and |cRXP_ENEMY_Blackrock Renegades|r. Loot them for |cRXP_LOOT_Horns of Nez'ra|r
-    .complete 2358,1 --Horns of Nez'ra (1)
-    .mob Gath'Ilzogg
-    .mob Blackrock Champion
-    .mob Blackrock Shadowcaster
-    .mob Blackrock Renegade
-step << Rogue
-    .goto 1433/0,-2179.97,-9332.55
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arantir|r
-    .turnin 2358 >>Turn in Horns of Nez'ra
-    .target Arantir
 step
     #loop
     .goto 1433/0,-2091.83,-9080.47,0

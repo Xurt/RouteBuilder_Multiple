@@ -1,0 +1,200 @@
+{
+  "zone": "Hillsbrad Foothills",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "20-25 Hillsbrad Foothills",
+  "file": "Hillsbrad Foothills (Alliance).lua",
+  "continent": -267,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 20,
+      "end": 21.32,
+      "next": 24,
+      "guide": "20-22 Hillsbrad Foothills: around Helcular",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Helcular",
+          "guide": "20-22 Hillsbrad Foothills: around Helcular",
+          "level": 20,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 24,
+      "end": 24.21,
+      "guide": "24-25 Hillsbrad Foothills",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "24-25 Hillsbrad Foothills",
+          "level": 24,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 27746,
+      "level": 20,
+      "req": 19,
+      "xp": 1550,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Silverpine Forest"
+    },
+    {
+      "id": 28324,
+      "level": 22,
+      "req": 20,
+      "xp": 1750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28325,
+      "level": 22,
+      "req": 20,
+      "xp": 1750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28331,
+      "level": 22,
+      "req": 20,
+      "xp": 2600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28332,
+      "level": 22,
+      "req": 20,
+      "xp": 1750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28344,
+      "level": 22,
+      "req": 20,
+      "xp": 175,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28484,
+      "level": 23,
+      "req": 21,
+      "xp": 1850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28487,
+      "level": 23,
+      "req": 21,
+      "xp": 1850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28489,
+      "level": 23,
+      "req": 21,
+      "xp": 1850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28495,
+      "level": 23,
+      "req": 21,
+      "xp": 1850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28617,
+      "level": 20,
+      "req": 20,
+      "xp": 80,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28733,
+      "level": 20,
+      "req": 20,
+      "xp": 80,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28744,
+      "level": 20,
+      "req": 20,
+      "xp": 80,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28747,
+      "level": 20,
+      "req": 20,
+      "xp": 80,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28748,
+      "level": 20,
+      "req": 20,
+      "xp": 160,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28485,
+      "level": 25,
+      "req": 21,
+      "xp": 4000,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28620,
+      "level": 25,
+      "req": 23,
+      "xp": 510,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {}
+}

@@ -80,7 +80,7 @@ above this zone's range of 42-53 (1):
   For Great Honor [8367]
 special category (sort -1) (1):
   Shrouded in Nightmare [8446]
-special category (sort -366) (1):
+not in the game (on Questie's quest blacklist) (1):
   Highpeak the Elder [8643]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

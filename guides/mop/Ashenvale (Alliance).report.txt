@@ -1,0 +1,136 @@
+Ashenvale - Alliance
+Guide "21-26 Ashenvale" in group "Zone Routes (Alliance)": 245 steps, 211 stops
+Written to guides/mop/Ashenvale (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 16 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 21. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 8 steps kept, 263 new ones slotted in, 0 moved because their prerequisites changed, 5 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 21, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 199 tasks, 35,288 yd on foot; ends at level 27.3; 2 hearths; at its hardest you are 1.8 levels below the mobs
+  Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior: 1 more tasks; their whole route comes to 35,066 yd; ends at level 27.3; 2 hearths; at its hardest you are 1.8 levels below the mobs
+  Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage: 1 more tasks; their whole route comes to 35,876 yd; ends at level 27.3; 2 hearths; at its hardest you are 1.8 levels below the mobs
+  Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter: 1 more tasks; their whole route comes to 35,236 yd; ends at level 27.3; 2 hearths; at its hardest you are 1.8 levels below the mobs
+  Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue: 1 more tasks; their whole route comes to 34,922 yd; ends at level 27.3; 2 hearths; at its hardest you are 1.8 levels below the mobs
+  Human Priest/Dwarf Priest/Draenei Priest/Worgen Priest/Pandaren Priest: 1 more tasks; their whole route comes to 35,375 yd; ends at level 27.3; 2 hearths; at its hardest you are 1.8 levels below the mobs
+  Dwarf Paladin/Draenei Paladin: 1 more tasks; their whole route comes to 36,576 yd; ends at level 27.3; 2 hearths; at its hardest you are 1.8 levels below the mobs
+  Dwarf Shaman/Draenei Shaman: 1 more tasks; their whole route comes to 36,576 yd; ends at level 27.3; 2 hearths; at its hardest you are 1.8 levels below the mobs
+  NightElf Druid/Worgen Druid: 1 more tasks; their whole route comes to 35,204 yd; ends at level 27.3; 2 hearths; at its hardest you are 1.8 levels below the mobs
+  NightElf Priest: 3 more tasks; their whole route comes to 35,389 yd; ends at level 27.3; 2 hearths; at its hardest you are 1.8 levels below the mobs
+  Gnome Priest: 1 more tasks; their whole route comes to 35,376 yd; ends at level 27.3; 2 hearths; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 47 more tasks; their whole route comes to 45,907 yd; ends at level 27.3; 4 hearths; 1 ORDER PROBLEMS; at its hardest you are 1.8 levels below the mobs
+  NightElf (quests that depend on other zones): 4 more tasks; their whole route comes to 47,471 yd; ends at level 27.3; 4 hearths; 1 ORDER PROBLEMS; at its hardest you are 1.8 levels below the mobs
+  Draenei (quests that depend on other zones): 6 more tasks; their whole route comes to 50,589 yd; ends at level 27.3; 4 hearths; 1 ORDER PROBLEMS; at its hardest you are 1.8 levels below the mobs
+  Worgen (quests that depend on other zones): 2 more tasks; their whole route comes to 46,863 yd; ends at level 27.3; 4 hearths; 1 ORDER PROBLEMS; at its hardest you are 1.8 levels below the mobs
+  Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 47,557 yd; ends at level 27.3; 4 hearths; 1 ORDER PROBLEMS; at its hardest you are 1.8 levels below the mobs
+Hearthstone: set at Innkeeper Kimlya (Innkeeper Kimlya's inn); 3 hearth steps in the guide.
+8 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+9 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (120)
+-------------------------
+Start to finish here: 70 (4 for everyone, 65 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren, 1 NightElf Priest)
+
+Picked up here, handed in elsewhere - these stay in the log (13):
+  Breaking Waves of Change [26383, level 10, Human/Dwarf/NightElf/Gnome/Draenei/Pandaren] -> Darkshore
+  A Summons from Ander Germaine [27225, level 20, Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior] -> Stormwind City
+  Lord Grayson Shadowbreaker [27265, level 20, Dwarf Paladin/Draenei Paladin] -> Stormwind City
+  Wulf Calls [27266, level 20, Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter] -> Stormwind City
+  Make Contact with SI:7 [27267, level 20, Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue] -> Stormwind City
+  Make Haste to the Cathedral [27268, level 20, Human Priest/Dwarf Priest/Draenei Priest/Worgen Priest/Pandaren Priest] -> Stormwind City
+  An Audience with the Farseer [27270, level 20, Dwarf Shaman/Draenei Shaman] -> Stormwind City
+  Journey to the Wizard's Sanctum [27271, level 20, Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage] -> Stormwind City
+  An Invitation from Moonglade [27273, level 20, NightElf Druid/Worgen Druid] -> Moonglade
+  The Chief Surgeon [27274, level 20, Gnome Priest] -> Stormwind City
+  Favored of Elune [27362, level 20, NightElf Priest] -> Stormwind City
+  Do Yourself a Favor [25613, level 25, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Stonetalon Mountains
+  Rebels Without a Clue [26838, level 25, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Northern Stranglethorn
+
+Hand-in step only shows once complete (1):
+  A New Adornment [26481, level 26, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Dartol's Rod (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (11):
+  To Darnassus [6341, level 7, NightElf] <- Teldrassil
+  On the Wings of a Hippogryph [9604, level 7, Draenei] <- Bloodmyst Isle
+  Behomat [10350, level 10, Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior] <- Azuremyst Isle
+  The Howling Oak [28517, level 10, Worgen] <- Teldrassil
+  Coming of Age [9623, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Azuremyst Isle
+  Home of the Kaldorei [14039, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Teldrassil
+  One Shot.  One Kill. [5713, level 15] <- Darkshore
+  Audience with the Prophet [9698, level 16, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Bloodmyst Isle
+  Probing into Ashenvale [24463, level 20] <- Azshara
+  Ashes in Ashenvale [26408, level 20] <- Darkshore
+  Return to Stardust [25615, level 25, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Stonetalon Mountains
+
+Need a quest this guide does not hand in - steps show only once that is done (25):
+  An Unexpected Gift [6342, level 7, NightElf] - needs one of To Darnassus [6341]
+  Return to Nyoma [6343, level 7, NightElf] - needs one of An Unexpected Gift [6342] -> Teldrassil
+  Hippogryph Master Stephanos [9605, level 7, Draenei] - needs one of On the Wings of a Hippogryph [9604]
+  Return to Caregiver Chellan [9606, level 7, Draenei] - needs one of Hippogryph Master Stephanos [9605] -> Azuremyst Isle
+  Breaking Waves of Change [26385, level 10, Worgen] - needs one of The Howling Oak [28517] -> Darkshore
+  Elekks Are Serious Business [9625, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Coming of Age [9623] -> Bloodmyst Isle
+  Truth or Fiction [9699, level 16, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Audience with the Prophet [9698] -> Bloodmyst Isle
+  The Unwritten Prophecy [9762, level 20, Draenei] - needs one of Ending Their World [9759]
+  Dead Elves Walking [13801, level 21] - needs one of Blood of the Weak [13803]
+  Bad News Bear-er [13848, level 22] - needs one of Pierce Their Heart! [13805]
+  Gurtar's Request [13875, level 22] - needs one of Security! [13871]
+  Never Again! [26445, level 22, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Diabolical Plans [26443]
+  Worgen Wisdom [13872, level 23, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Corrupting Influence? [13868]
+  A Not-So-Charmed Life [13874, level 23, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Worgen Wisdom [13872]
+  Go With The Flow [13877, level 23, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of A Not-So-Charmed Life [13874]
+  Hot Lava [13880, level 23] - needs one of Go With The Flow [13877], Thunder Peak [13879]
+  Put Out The Fire [13884, level 23] - needs one of Go With The Flow [13877], Thunder Peak [13879]
+  Too Far Gone [13876, level 24, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Corrupting Influence? [13868]
+  Vortex [13886, level 24, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Hot Lava [13880], Put Out The Fire [13884]
+  True Power of the Rod [26482, level 25, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of A New Adornment [26481]
+  Hellscream's Legacy [25616, level 26, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Return to Stardust [25615] -> Stonetalon Mountains
+  Field Test: Gnomecorder [25621, level 26, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Return to Stardust [25615]
+  Burn, Baby, Burn! [25622, level 26, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Return to Stardust [25615], Field Test: Gnomecorder [25621]
+  Bombs Away: Windshear Mine! [25640, level 26, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Burn, Baby, Burn! [25622] -> Stonetalon Mountains
+  Gerenzo the Traitor [25729, level 27, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Commandeer That Balloon! [25652]
+
+Worth checking in game
+----------------------
+  Explosives Shredding [13698, level 21, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Sentinel Luciel Starwhisper" really is line 2 in the quest log
+  Dead Elves Walking [13801, level 21]: objective "Severed Druid (15)" is line 1 by the database, but RestedXP's guide has "15/15 Night Elf Ghosts Slain" there
+  Agents of Destruction [26457, level 21, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Warsong Logger" really is line 2 in the quest log
+
+Left out (327)
+--------------
+not in the game (on Questie's quest blacklist) (267):
+  A Lesson to Learn [26], Rise of the Silithid [162], The Absent Minded Prospector [741], Trek to Ashenvale [990], Finding Teronis [991], The Ancient Statuettes [1007], The Zoram Strand [1008], Ruuzel [1009], Bathran's Hair [1010], Forsaken Diseases [1011], Insane Druids [1012], Retaking Mystral Lake [1016], Mage Summoner [1017], Orendil's Cure [1020], Vile Satyr! Dryads in Danger! [1021], The Howling Vale [1022], The Lost Gem [1023], Dryad Delivery [1024], An Aggressive Defense [1025], Search the Bole [1026], Playing Possum [1027], Raene's Cleansing [1028], Return to Raene [1029], Dartol's Rod [1030], The Branch of Cenarius [1031], Satyr Slaying! [1032], Elune's Tear [1033], The Ruins of Stardust [1034], Fallen Sky Lake [1035], Velinde Starsong [1037], Velinde's Effects [1038], Answered Questions [1044], A New Adornment [1045], True Power of the Rod [1046], Culling the Threat [1054], Raene's Cleansing [1055], Reception from Tyrande [1081], Update for Sentinel Thenysil [1082], Pridewings of Stonetalon [1134], Mortality Wanes [1142], ... 227 more
+above this zone's range of 20-27 (26):
+  Hero's Call: Vashj'ir! [27724], Hero's Call: Mount Hyjal! [27726], Hero's Call: Deepholm! [27727], Meet with Ander Germaine [28258], Meet with Wulf Hansreim [28260], Meet with Lord Tony Romano [28262], Meet with Maginor Dumas [28263], Meet with Lord Grayson Shadowbreaker [28268], Meet with High Priestess Laurena [28285], Meet with Farseer Umbrua [28287], Moonglade Calls [28289], Hero's Call: Thousand Needles! [28503], Hero's Call: Tanaris! [28507], Hero's Call: Feralas! [28511], Hero's Call: Un'Goro Crater! [28525], Hero's Call: Silithus! [28528], Hero's Call: Desolace! [28531], Hero's Call: Felwood! [28543], Hero's Call: Winterspring! [28544], Hero's Call: Southern Barrens! [28550], Hero's Call: Dustwallow Marsh! [28552], Hero's Call: Uldum! [28558], Hero's Call: Outland! [28708], Hero's Call: Northrend! [28709], Hero's Call: Twilight Highlands! [28716], The Troll Incursion [29156]
+repeatable (10):
+  The Secret to Perfect Kimchi [29313], Remembering the Ancestors [29314], Back to Basics [29316], Ribs for the Sentinels [29318], Happy as a Clam Digger [29321], Stocking Up [29323], The Sister's Pendant [29324], A Slippery Snack [29325], Spice Bread Aplenty [29357], An Old Favorite [29359]
+needs reputation (6):
+  Sentinel Basic Care Package [7863], Sentinel Standard Care Package [7864], Sentinel Advanced Care Package [7865], Darnassus Attacked? [32414], Jaina's Resolution [32416], Tracking the Thieves [32460]
+needs a profession (5):
+  Moonglow Vest [1582], Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+special category (sort -379) (4):
+  Tragedy and Family [29303], The Tipping Point [29310], Guardians of Hyjal: Firelands Invasion! [29387], Guardians of Hyjal: Call of the Ancients [29391]
+special category (sort -284) (3):
+  Darnassus [12773], The Exodar [12776], Hammering It Out [25563]
+dungeon quest (2):
+  Blackfathom Deeps [26897], Blackfathom Deeps [26898]
+handed in here, but the database does not say where it starts (1):
+  Journey to Astranaar [1133]
+cannot be taken together with He Who Would Be Forgiven [13921], which is in the guide (1):
+  He Who Would Be Forgiven [14018]
+cannot be taken together with Breaking Waves of Change [26383], which is in the guide (1):
+  Hero's Call: Darkshore! [28490]
+cannot be taken together with Elekks Are Serious Business [9625], which is in the guide (1):
+  Hero's Call: Bloodmyst Isle! [28559]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

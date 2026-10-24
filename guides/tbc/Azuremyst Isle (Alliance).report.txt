@@ -1,0 +1,279 @@
+Azuremyst Isle - Alliance - part 1 of 3, planned from level 1
+Guide "1-12 Azuremyst Isle" in group "Zone Routes (Alliance)": this part has 191 steps, 127 stops
+Written to guides/tbc/Azuremyst Isle (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: 64 PROBLEMS
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Human Warrior)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Human Warrior)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Human Paladin)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Human Paladin)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Human Rogue)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Human Rogue)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Human Priest)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Human Priest)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Human Mage)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Human Mage)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Human Warlock)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Human Warlock)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Dwarf Warrior)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Dwarf Warrior)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Dwarf Paladin)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Dwarf Paladin)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Dwarf Hunter)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Dwarf Hunter)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Dwarf Rogue)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Dwarf Rogue)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Dwarf Priest)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Dwarf Priest)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (NightElf Warrior)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (NightElf Warrior)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (NightElf Hunter)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (NightElf Hunter)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (NightElf Rogue)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (NightElf Rogue)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (NightElf Priest)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (NightElf Priest)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (NightElf Druid)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (NightElf Druid)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Gnome Warrior)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Gnome Warrior)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Gnome Rogue)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Gnome Rogue)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Gnome Mage)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Gnome Mage)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Gnome Warlock)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Gnome Warlock)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Draenei Warrior)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Draenei Warrior)
+  ! The Prophecy of Velen is handed in before it is picked up (Draenei Warrior)
+  ! The Prophecy of Velen (9505) is never picked up (Draenei Warrior)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Draenei Paladin)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Draenei Paladin)
+  ! The Prophecy of Velen is handed in before it is picked up (Draenei Paladin)
+  ! The Prophecy of Velen (9505) is never picked up (Draenei Paladin)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Draenei Hunter)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Draenei Hunter)
+  ! The Prophecy of Velen is handed in before it is picked up (Draenei Hunter)
+  ! The Prophecy of Velen (9505) is never picked up (Draenei Hunter)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Draenei Priest)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Draenei Priest)
+  ! The Prophecy of Velen is handed in before it is picked up (Draenei Priest)
+  ! The Prophecy of Velen (9505) is never picked up (Draenei Priest)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Draenei Shaman)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Draenei Shaman)
+  ! The Prophecy of Velen is handed in before it is picked up (Draenei Shaman)
+  ! The Prophecy of Velen (9505) is never picked up (Draenei Shaman)
+  ... and 4 more
+Quest log: at most 10 of 40 held at once (Draenei Warrior), not counting quests brought in from other zones.
+12 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 153 steps kept, 18 new ones slotted in, 1 moved because their prerequisites changed, 37 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 125 tasks, 23,981 yd on foot; ends at level 9.4; 2 ORDER PROBLEMS; at its hardest you are 3.2 levels below the mobs
+  Draenei: 18 more tasks; their whole route comes to 25,969 yd; ends at level 9.9; 3 ORDER PROBLEMS; at its hardest you are 3.8 levels below the mobs
+  Priest: 3 more tasks; their whole route comes to 24,762 yd; ends at level 9.5; 2 ORDER PROBLEMS; at its hardest you are 3.2 levels below the mobs
+  Draenei Warrior: 2 more tasks; their whole route comes to 25,975 yd; ends at level 9.9; 3 ORDER PROBLEMS; at its hardest you are 3.7 levels below the mobs
+  Draenei Paladin: 2 more tasks; their whole route comes to 25,970 yd; ends at level 9.9; 3 ORDER PROBLEMS; at its hardest you are 3.7 levels below the mobs
+  Draenei Hunter: 2 more tasks; their whole route comes to 25,969 yd; ends at level 9.9; 3 ORDER PROBLEMS; at its hardest you are 3.7 levels below the mobs
+  Draenei Priest: 2 more tasks; their whole route comes to 27,563 yd; ends at level 10.0; 3 ORDER PROBLEMS; at its hardest you are 3.7 levels below the mobs
+  Shaman: 9 more tasks; their whole route comes to 26,994 yd; ends at level 10.0; 3 ORDER PROBLEMS; at its hardest you are 3.6 levels below the mobs
+  Draenei Mage: 2 more tasks; their whole route comes to 25,978 yd; ends at level 9.9; 3 ORDER PROBLEMS; at its hardest you are 3.7 levels below the mobs
+  everyone (quests that depend on other zones): 6 more tasks; their whole route comes to 26,350 yd; ends at level 9.4; 3 ORDER PROBLEMS; at its hardest you are 3.2 levels below the mobs
+  Draenei (quests that depend on other zones): 1 more tasks; their whole route comes to 30,288 yd; ends at level 9.9; 4 ORDER PROBLEMS; at its hardest you are 3.8 levels below the mobs
+Hearthstone: set at Diktynna (Diktynna's inn); 0 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 3 for Vindicator Aldar
+  level 6 for A Cry For Help
+33 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+9 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+9 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+9 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (67)
+------------------------
+Start to finish here: 64 (46 for everyone, 7 Draenei, 4 Shaman, 1 Draenei Paladin, 1 Draenei Hunter, 1 Draenei Warrior, 1 Draenei Mage, 1 Draenei Priest, 1 Human/Dwarf/NightElf/Gnome, 1 Priest)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  On the Wings of a Hippogryph [9604, level 10, Draenei] <- Bloodmyst Isle
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Nightstalker Clean Up, Isle 2... [9456, level 8] - needs one of Strange Findings [9455]
+  Warlord Sriss'tiz [9515, level 10] - needs one of Rune Covered Tablet [9514]
+
+Worth checking in game
+----------------------
+3 quests have no experience figure in the database: their experience is estimated, and 1 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  Call of Earth [9449]
+  Tree's Company [9531, level 9]: objective "Naga Flag" is line 1 by the database, but RestedXP's guide has "The Traitor Uncovered" there
+
+Put off to a later part (27)
+----------------------------
+These need a higher level than this part ends at:
+  Heeding the Call [5924, level 10]: needs level 10; this part gets NightElf Druid characters to about 9.7
+  A Donation of Wool [7792, level 12]: needs level 12; this part gets you to about 9.6
+  Call of Fire [9461, level 10]: needs level 10; this part gets Draenei Shaman characters to about 10.1
+  Call of Fire [9462, level 10]: needs level 10; this part gets Draenei Shaman characters to about 10.1
+  Call of Fire [9464, level 10]: needs level 10; this part gets Draenei Shaman characters to about 10.1
+  Call of Fire [9465, level 10]: needs level 10; this part gets Draenei Shaman characters to about 10.1
+  Call of Fire [9467, level 10]: needs level 10; this part gets Draenei Shaman characters to about 10.1
+  Call of Fire [9468, level 10]: needs level 10; this part gets Draenei Shaman characters to about 10.1
+  Call of Fire [9555, level 10]: needs level 10; this part gets Draenei Shaman characters to about 10.1
+  The Kurken is Lurkin' [9570, level 12]: its mobs are level 12; this part gets you to about 9.6
+  The Kurken's Hide [9571, level 10]: follows The Kurken is Lurkin' [9570]
+  Strength of One [9582, level 10]: needs level 10; this part gets Warrior characters to about 9.8
+  Taming the Beast [9591, level 10]: needs level 10; this part gets Draenei Hunter characters to about 10.1
+  Taming the Beast [9592, level 10]: needs level 10; this part gets Draenei Hunter characters to about 10.1
+  Taming the Beast [9593, level 10]: needs level 10; this part gets Draenei Hunter characters to about 10.1
+  Control [9595, level 11]: needs level 10; this part gets Mage characters to about 9.9
+  Redemption [9598, level 12]: needs level 12; this part gets Draenei Paladin characters to about 10.2
+  Redemption [9600, level 12]: needs level 12; this part gets Draenei Paladin characters to about 10.2
+  Hippogryph Master Stephanos [9605, level 10]: needs level 10; this part gets Draenei characters to about 10.1
+  Return to Topher Loaal [9606, level 10]: needs level 10; this part gets Draenei characters to about 10.1
+  Warn Your People [9622, level 11]: needs level 10; this part gets you to about 9.6
+  Coming of Age [9623, level 11]: needs level 10; this part gets you to about 9.6
+  Elekks Are Serious Business [9625, level 11]: follows Coming of Age [9623]
+  Beast Training [9675, level 10]: needs level 10; this part gets Draenei Hunter characters to about 10.1
+  Seek Huntress Kella Nightbow [9757, level 10]: needs level 10; this part gets Draenei Hunter characters to about 10.1
+  Behomat [10350, level 10]: needs level 10; this part gets Warrior characters to about 9.8
+  Jol [10366, level 12]: needs level 12; this part gets Human Paladin/Dwarf Paladin/Draenei Paladin characters to about 9.7
+
+Left out (91)
+-------------
+not in the game (on Questie's quest blacklist) (46):
+  Winter's Presents [8827], New Year Celebrations! [8860], Welcome! [9278], Stealing Orgrimmar's Flame [9324], Stealing Thunder Bluff's Flame [9325], Stealing the Undercity's Flame [9326], A Thief's Reward [9365], The Seat of the Naaru [10956], Call on the Farseer [10968], Stop the Fires! [11131], The Headless Horseman [11135], Free at Last! [11242], Costumed Orphan Matron [11356], Fire Brigade Practice [11360], Fire Brigade Practice [11439], Fire Brigade Practice [11440], Brewfest! [11441], Torch Catching [11657], Torch Tossing [11731], Honor the Flame [11806], Playing with Fire [11882], Unusual Activity [11886], Striking Back [11917], More Torch Tossing [11921], More Torch Catching [11924], Stealing Silvermoon's Flame [11935], Striking Back [11947], Striking Back [11948], Striking Back [11952], Striking Back [11953], Striking Back [11954], Ahune, the Frost Lord [11955], Incense for the Summer Scorchlings [11964], The Master of Summer Lore [11970], Inform the Elder [12012], Smash the Pumpkin [12133], "Let the Fires Come!" [12135], Candy Bucket [12333], Candy Bucket [12337], A Deluxe Delivery [63448], ... 6 more
+above this zone's range of 1-12 (35):
+  The Islander [1718], High Sorcerer Andromath [1939], Journey to the Marsh [1947], Return to the Marsh [1953], Tabetha's Task [2861], Lord Grayson Shadowbreaker [7670], A Donation of Silk [7798], The Hunter's Charm [8151], Magecraft [8250], Cenarion Aid [8254], Elemental Mastery [8410], A Troubled Spirit [8417], Torwa Pathfinder [9063], Call of Water [9500], Call of Water [9501], Call of Water [9502], Call of Water [9509], Call of Air [9547], Call of Air [9551], Call of Air [9552], Call of Air [9553], Call of Air [9554], Newfound Allies [9632], The Way to Auberdine [9633], Audience with the Prophet [9698], Truth or Fiction [9699], The Bloodcurse Legacy [9751], The Unwritten Prophecy [9762], A Donation of Mageweave [10356], A Donation of Runecloth [10357], Yorus Barleybrew [10371], A Call to Arms: The Plaguelands! [10373], Call of Water [10490], Call of Air [10491], Assisting Arch Druid Staghelm [10520]
+repeatable (8):
+  CLUCK! [3861], Concerted Efforts [8385], Additional Runecloth [10358], Call to Arms: Arathi Basin [11335], Call to Arms: Alterac Valley [11336], Call to Arms: Eye of the Storm [11337], Call to Arms: Warsong Gulch [11338], Concerted Efforts [95455]
+special category (sort -25) (1):
+  Concerted Efforts [8371]
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  Bandits! [9616]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Azuremyst Isle - Alliance - part 2 of 3, planned from level 12
+Guide "1-12 Azuremyst Isle" in group "Zone Routes (Alliance)": this part has 63 steps, 40 stops
+Written to guides/tbc/Azuremyst Isle (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 12. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 35 steps kept, 17 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 11 tasks, 5,277 yd on foot; ends at level 12.2; 1 hearth
+  Warrior: 5 more tasks; their whole route comes to 7,743 yd; ends at level 12.3; 1 hearth
+  Mage: 3 more tasks; their whole route comes to 7,708 yd; ends at level 12.3; 1 hearth
+  NightElf Druid: 1 more tasks; their whole route comes to 6,189 yd; ends at level 12.2; 1 hearth
+  Draenei Hunter: 13 more tasks; their whole route comes to 14,236 yd; ends at level 12.4; 1 hearth
+  Draenei Shaman: 16 more tasks; their whole route comes to 16,981 yd; ends at level 12.4; 1 hearth
+  Draenei (quests that depend on other zones): 3 more tasks; their whole route comes to 6,470 yd; ends at level 12.2; 1 hearth
+Hearthstone: set at Caregiver Chellan (Caregiver Chellan's inn); 2 hearth steps in the guide.
+8 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (23)
+------------------------
+Start to finish here: 19 (4 for everyone, 7 Draenei Shaman, 5 Draenei Hunter, 2 Warrior, 1 Mage)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Heeding the Call [5924, level 10, NightElf Druid] -> Darnassus
+  Elekks Are Serious Business [9625, level 11] -> Bloodmyst Isle
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Hippogryph Master Stephanos [9605, level 10, Draenei] - needs one of On the Wings of a Hippogryph [9604]
+  Return to Topher Loaal [9606, level 10, Draenei] - needs one of Hippogryph Master Stephanos [9605] -> Bloodmyst Isle
+
+Worth checking in game
+----------------------
+11 quests have no experience figure in the database: their experience is estimated, and 3 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  Call of Fire [9464], Taming the Beast [9591], Seek Huntress Kella Nightbow [9757]
+  Control [9595, level 11, Mage]: could not read how many Quel'dorei Magewraith are needed from the quest text; assumed 8
+
+Put off to a later part (4)
+---------------------------
+These need a higher level than this part ends at:
+  A Donation of Wool [7792, level 12]: needs level 12; this part gets you to about 12.2
+  Redemption [9598, level 12]: needs level 12; this part gets Draenei Paladin characters to about 12.2
+  Redemption [9600, level 12]: needs level 12; this part gets Draenei Paladin characters to about 12.2
+  Jol [10366, level 12]: needs level 12; this part gets Human Paladin/Dwarf Paladin/Draenei Paladin characters to about 12.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Azuremyst Isle - Alliance - part 3 of 3, planned from level 15
+Guide "1-12 Azuremyst Isle" in group "Zone Routes (Alliance)": this part has 9 steps, 7 stops
+Written to guides/tbc/Azuremyst Isle (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Paladin), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 15. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 5 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 1,800 yd on foot; ends at level 15.0
+  Human Paladin/Dwarf Paladin/Draenei Paladin: 2 more tasks; their whole route comes to 2,881 yd; ends at level 15.0
+  Draenei Paladin: 1 more tasks; their whole route comes to 2,881 yd; ends at level 15.0
+  Draenei Paladin (quests that depend on other zones): 1 more tasks; their whole route comes to 2,881 yd; ends at level 15.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 1 (0 for everyone, 1 Human Paladin/Dwarf Paladin/Draenei Paladin)
+
+Hand-in step only shows once complete (1):
+  A Donation of Wool [7792, level 12] - needs Wool Cloth (1) (Hillsbrad Foothills)
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Redemption [9600, level 12, Draenei Paladin] - needs one of Redemption [9598]
+
+Worth checking in game
+----------------------
+No objectives in the database (the hand-in step warns about it; add "objectives" for these to the zone file):
+  Redemption [9598, level 12, Draenei Paladin]: "Study the Tome of Divinity and speak with Jol."
+2 quests have no experience figure in the database: their experience is estimated, and 2 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  Redemption [9598], Jol [10366]
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

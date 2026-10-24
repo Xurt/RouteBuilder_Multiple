@@ -1,0 +1,59 @@
+{
+  "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "51-60 Burning Steppes",
+  "saved": "2026-10-23 18:15",
+  "levels": "RestedXP",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "turnin:4810 @1428:-2177.65,-7499.75  TurnIn Return to Tinkee",
+        {"lines":[".goto 1428/0,-2190.84,-7504.24",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vahgruk|r",".fp Flame Crest >>Get the Burning Steppes Flight Path",".target Vahgruk"],"from":"RestedXP: 51-52 Searing Gorge/Burning Steppes"},
+        "accept:4726 @1428:-2177.65,-7499.75  Accept Broodling Essence",
+        "accept:4296 @1428:-2175.02,-7497.99  Accept Tablet of the Seven",
+        "obj:4296:1 @1428:-1851.93,-7826.92  Objective Tablet of the Seven / Tablet Transcript (1)",
+        "turnin:3821 @1428:-2608.54,-7917.5  TurnIn Dreadmaul Rock",
+        "obj:4726:1 @1428:-2919.61,-7956.34  Objective Broodling Essence / Broodling Essence (8)",
+        "turnin:4726 @1428:-2177.65,-7499.75  TurnIn Broodling Essence",
+        "accept:4808 @1428:-2177.65,-7499.75  Accept Felnok Steelspring",
+        "turnin:4296 @1428:-2175.02,-7497.99  TurnIn Tablet of the Seven",
+        {"lines":[".goto 1428/0,-2542.04,-7777.53",".xp 52 >> Grind mobs in the area to level 52"],"from":"RestedXP: 51-52 Searing Gorge/Burning Steppes"},
+        "turnin:7562 @1428:-638.38,-7648.89  TurnIn Mor'zul Bloodbringer",
+        "turnin:7625 @1428:-631.05,-7648.69  TurnIn Xorothian Stardust"
+      ]
+    },
+    {
+      "part": 2,
+      "steps": [
+        "accept:7623 @1428:-631.05,-7648.69  Accept Lord Banehollow",
+        "accept:5522 @1428:-2177.65,-7499.75  Accept Leonid Barthalomew",
+        "accept:3822 @1428:-2608.54,-7917.5  Accept Krom'Grul",
+        "obj:3822:1 @1428:-2600.04,-7957.12  Objective Krom'Grul / Sha'ni's Nose-Ring (1)",
+        "accept:4022 @1428:-3052.01,-7647.33  Accept A Taste of Flame",
+        "obj:4022:2 @1428:-3052.01,-7647.33  Objective A Taste of Flame / Cyrus Therepentous (1)",
+        "obj:4022:1 @1428:-3031.8,-7652.01  Objective A Taste of Flame / Black Dragonflight Molt (1)",
+        "turnin:4022 @1428:-3052.01,-7647.33  TurnIn A Taste of Flame"
+      ]
+    },
+    {
+      "part": 3,
+      "steps": [
+        "accept:7563 @1428:-638.38,-7648.89  Accept Rage of Blood",
+        "accept:7564 @1428:-638.38,-7648.89  Accept Wildeyes",
+        "accept:7629 @1428:-631.05,-7648.69  Accept Imp Delivery",
+        "obj:7629:1 @1428:-631.05,-7648.69  Objective Imp Delivery / J'eevee",
+        "turnin:7629 @1428:-631.05,-7648.69  TurnIn Imp Delivery",
+        "turnin:7564 @1428:-631.05,-7648.69  TurnIn Wildeyes",
+        "accept:7631 @1428:-638.38,-7648.89  Accept Dreadsteed of Xoroth",
+        "accept:7628 @1428:-638.38,-7648.89  Accept Doomsday Candle",
+        "accept:7626 @1428:-638.38,-7648.89  Accept Bell of Dethmoora",
+        "accept:7627 @1428:-638.38,-7648.89  Accept Wheel of the Black March",
+        "obj:7631:1 @1428:-638.38,-7648.89  Objective Dreadsteed of Xoroth / Xorothian Dreadsteed (1)",
+        "obj:7628:1 @1428:-894.68,-7937.6  Objective Doomsday Candle / Black Dragonscale (3)",
+        "turnin:7628 @1428:-631.05,-7648.69  TurnIn Doomsday Candle",
+        "accept:7630 @1428:-631.05,-7648.69  Accept Arcanite",
+        "obj:7627:2 @1428:-1636.05,-7800.96  Objective Wheel of the Black March / Dark Iron Ore (25)"
+      ]
+    }
+  ]
+}

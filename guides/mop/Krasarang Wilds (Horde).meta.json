@@ -1,0 +1,267 @@
+{
+  "zone": "Krasarang Wilds",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "87-87 Krasarang Wilds",
+  "file": "Krasarang Wilds (Horde).lua",
+  "continent": -6134,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 87,
+      "end": 87.14,
+      "next": 90,
+      "guide": "87-88 Krasarang Wilds: around Ken-Ken",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Ken-Ken",
+          "guide": "87-88 Krasarang Wilds: around Ken-Ken",
+          "level": 87,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 90,
+      "end": 90,
+      "guide": "90-91 Krasarang Wilds",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "90-91 Krasarang Wilds",
+          "level": 90,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 29873,
+      "level": 85,
+      "req": 86,
+      "xp": 6940,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Valley of the Four Winds"
+    },
+    {
+      "id": 29875,
+      "level": 85,
+      "req": 86,
+      "xp": 6940,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Valley of the Four Winds"
+    },
+    {
+      "id": 30079,
+      "level": 86,
+      "req": 86,
+      "xp": 111000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30080,
+      "level": 86,
+      "req": 86,
+      "xp": 83000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30081,
+      "level": 86,
+      "req": 86,
+      "xp": 111000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30082,
+      "level": 86,
+      "req": 86,
+      "xp": 111000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30083,
+      "level": 86,
+      "req": 86,
+      "xp": 111000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30084,
+      "level": 86,
+      "req": 86,
+      "xp": 111000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30091,
+      "level": 86,
+      "req": 86,
+      "xp": 111000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30121,
+      "level": 86,
+      "req": 86,
+      "xp": 11100,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 30168,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30169,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30352,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30353,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30666,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30667,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30668,
+      "level": 87,
+      "req": 86,
+      "xp": 32000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30669,
+      "level": 87,
+      "req": 86,
+      "xp": 12900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30671,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30672,
+      "level": 87,
+      "req": 86,
+      "xp": 161000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30674,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30691,
+      "level": 87,
+      "req": 86,
+      "xp": 193000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 31260,
+      "level": 86,
+      "req": 86,
+      "xp": 111000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 31262,
+      "level": 86,
+      "req": 86,
+      "xp": 111000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Valley of the Four Winds": 1,
+    "Kun-Lai Summit": 2
+  }
+}
