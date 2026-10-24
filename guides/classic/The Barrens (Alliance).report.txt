@@ -71,7 +71,7 @@ needs a profession (3):
   Root Samples [866], Goblin Engineering [3633], Gnome Engineering [3634]
 repeatable (3):
   Membership Card Renewal [3646], CLUCK! [3861], Mending Old Wounds [9267]
-special category (sort -366) (3):
+not in the game (on Questie's quest blacklist) (3):
   Windtotem the Elder [8680], High Mountain the Elder [8686], Moonwarden the Elder [8717]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

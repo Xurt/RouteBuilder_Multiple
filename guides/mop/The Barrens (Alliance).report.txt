@@ -1,0 +1,152 @@
+The Barrens - Alliance - part 1 of 3, planned from level 12
+Guide "12-18 The Barrens" in group "Zone Routes (Alliance)": this part has 13 steps, 11 stops
+Written to guides/mop/The Barrens (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 12. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 12 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 10 tasks, 2,179 yd on foot; ends at level 12.5; at its hardest you are 1.7 levels below the mobs
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 3,305 yd; ends at level 12.5; at its hardest you are 1.7 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 12 for King of Centaur Mountain
+
+Quests in the guide (5)
+-----------------------
+Start to finish here: 3 (3 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Preserving the Barrens [26642, level 12] <- Orgrimmar
+  Ak'Zeloth [25264, level 13] <- Orgrimmar
+
+Worth checking in game
+----------------------
+
+Put off to a later part (5)
+---------------------------
+These need a higher level than this part ends at:
+  It's Gotta be the Horn [865, level 18]: its mobs are level 18; this part gets you to about 13.0
+  WANTED: Cap'n Garvey [895, level 16]: needs level 14; this part gets you to about 13.0
+  The Purloined Payroll [13991, level 15]: needs level 13; this part gets you to about 13.0
+  Waptor Twapping [14068, level 16]: needs level 14; this part gets you to about 13.0
+  Deathgate's Reinforcements [14073, level 18]: needs level 16; this part gets you to about 13.0
+
+Left out (85)
+-------------
+not in the game (on Questie's quest blacklist) (61):
+  [DEPRICATED]Stolen Booty [888], Samophlange [894], Samophlange [900], Samophlange [901], Samophlange [902], Trouble at the Docks [959], Water Sapta [972], The Barrens Port [1039], Further Instructions [1094], Wharfmaster Dizzywig [1111], Goblin Sponsorship [1178], Blueleaf Tubers [1221], Sample for Helbrim [1358], Smart Drinks [1491], The Binding [1795], Components for the Enchanted Gold Bloodrobe [1796], Seeking Strahad [1798], Tome of the Cabal [1804], The Mithril Order [2760], Smelt On, Smelt Off [2761], The Great Silver Deceiver [2762], The Art of the Imbue [2763], Expert Blacksmith! [2765], <NYI> <TXT><redux> Dreadmist Peak [3241], The Glowing Shard [3366], The Formation of Felbane [3621], Enchanted Azsharite Fel Weaponry [3625], Membership Card Renewal [3646], Summon Felsteed [4487], Summon Felsteed [4488], Summon Felsteed [4490], Volcanic Activity [4502], In Search of Menara Voidrender [4736], In Search of Menara Voidrender [4738], Components for the Enchanted Gold Bloodrobe [4782], Components for the Enchanted Gold Bloodrobe [4783], Components for the Enchanted Gold Bloodrobe [4784], The Completed Robe [4786], Shard of a Felhound [4962], Shard of an Infernal [4963], ... 21 more
+helper for Bwemba's Spirit (14):
+  To Fort Livingston [29102], Spirits Are With Us [29104], Track the Tracker [29114], The Hunter's Revenge [29115], Follow That Cat [29116], Follow That Cat [29118], Mauti [29120], Bury Me With Me Boots... [29121], Warn the Rebel Camp [29124], To the Digsite [29133], Voodoo Zombies [29150], Bad Supplies [29151], How's the Hunter Holding Up? [29213], Some Good Will Come [29267]
+above this zone's range of 12-20 (5):
+  Mor'shan Defense [13612], Rescue the Fallen [13613], Empty Quivers [13615], The Call of Kalimdor [26596], Flight to Theramore [26702]
+repeatable (2):
+  CLUCK! [3861], Mending Old Wounds [9267]
+needs a profession (1):
+  Root Samples [866]
+dungeon quest (1):
+  Disciples of Naralex [26878]
+special category (sort -380) (1):
+  Bwemba's Spirit [29100]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Barrens - Alliance - part 2 of 3, planned from level 15
+Guide "12-18 The Barrens" in group "Zone Routes (Alliance)": this part has 9 steps, 8 stops
+Written to guides/mop/The Barrens (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 15. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 8 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 6 tasks, 1,887 yd on foot; ends at level 15.2
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 3,086 yd; ends at level 15.2
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (3)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  The Purloined Payroll [13991, level 15] - needs one of Into the Raptor's Den [905]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  It's Gotta be the Horn [865, level 18]: its mobs are level 18; this part gets you to about 15.4
+  Deathgate's Reinforcements [14073, level 18]: needs level 16; this part gets you to about 15.4
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Barrens - Alliance - part 3 of 3, planned from level 18
+Guide "12-18 The Barrens" in group "Zone Routes (Alliance)": this part has 6 steps, 5 stops
+Written to guides/mop/The Barrens (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 18. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 5 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 555 yd on foot; ends at level 18.1
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 1,834 yd; ends at level 18.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Deathgate's Reinforcements [14073, level 18] - needs one of Verog the Dervish [851]
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

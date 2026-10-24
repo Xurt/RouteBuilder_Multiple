@@ -57,7 +57,7 @@ above this zone's range of 50-58 (13):
   Leonid Barthalomew [5522], Stormwind Rendezvous [6402], Mor'zul Bloodbringer [7562], Rage of Blood [7563], Wildeyes [7564], Lord Banehollow [7623], Xorothian Stardust [7625], Bell of Dethmoora [7626], Wheel of the Black March [7627], Doomsday Candle [7628], Imp Delivery [7629], Arcanite [7630], Dreadsteed of Xoroth [7631]
 repeatable (5):
   Libram of Rumination [4463], Libram of Constitution [4481], Libram of Tenacity [4482], Libram of Resilience [4483], Libram of Voracity [4484]
-special category (sort -366) (2):
+not in the game (on Questie's quest blacklist) (2):
   Rumblerock the Elder [8636], Dawnstrider the Elder [8683]
 cannot be taken together with A Taste of Flame [4022], which is in the guide (1):
   A Taste of Flame [4023]

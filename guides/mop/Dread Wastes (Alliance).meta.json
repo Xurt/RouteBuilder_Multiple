@@ -1,0 +1,61 @@
+{
+  "zone": "Dread Wastes",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "90-90 Dread Wastes",
+  "file": "Dread Wastes (Alliance).lua",
+  "continent": -6138,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 90,
+      "end": 90.01,
+      "guide": "90-90 Dread Wastes",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "90-90 Dread Wastes",
+          "level": 90,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 31001,
+      "level": 90,
+      "req": 89,
+      "xp": 236000,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Vale of Eternal Blossoms"
+    },
+    {
+      "id": 31002,
+      "level": 90,
+      "req": 89,
+      "xp": 236000,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Vale of Eternal Blossoms"
+    },
+    {
+      "id": 31083,
+      "level": 90,
+      "req": 89,
+      "xp": 353000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Vale of Eternal Blossoms": 1
+  }
+}

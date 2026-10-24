@@ -1,0 +1,148 @@
+Townlong Steppes - Alliance
+Guide "89-89 Townlong Steppes" in group "Zone Routes (Alliance)": 215 steps, 184 stops
+Written to guides/mop/Townlong Steppes (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: 57 PROBLEMS
+  ! A Delicate Balance is handed in before it is picked up (Human Warrior)
+  ! A Delicate Balance is handed in before it is picked up (Human Paladin)
+  ! A Delicate Balance is handed in before it is picked up (Human Hunter)
+  ! A Delicate Balance is handed in before it is picked up (Human Rogue)
+  ! A Delicate Balance is handed in before it is picked up (Human Priest)
+  ! A Delicate Balance is handed in before it is picked up (Human DeathKnight)
+  ! A Delicate Balance is handed in before it is picked up (Human Mage)
+  ! A Delicate Balance is handed in before it is picked up (Human Warlock)
+  ! A Delicate Balance is handed in before it is picked up (Human Monk)
+  ! A Delicate Balance is handed in before it is picked up (Dwarf Warrior)
+  ! A Delicate Balance is handed in before it is picked up (Dwarf Paladin)
+  ! A Delicate Balance is handed in before it is picked up (Dwarf Hunter)
+  ! A Delicate Balance is handed in before it is picked up (Dwarf Rogue)
+  ! A Delicate Balance is handed in before it is picked up (Dwarf Priest)
+  ! A Delicate Balance is handed in before it is picked up (Dwarf DeathKnight)
+  ! A Delicate Balance is handed in before it is picked up (Dwarf Shaman)
+  ! A Delicate Balance is handed in before it is picked up (Dwarf Mage)
+  ! A Delicate Balance is handed in before it is picked up (Dwarf Warlock)
+  ! A Delicate Balance is handed in before it is picked up (Dwarf Monk)
+  ! A Delicate Balance is handed in before it is picked up (NightElf Warrior)
+  ! A Delicate Balance is handed in before it is picked up (NightElf Hunter)
+  ! A Delicate Balance is handed in before it is picked up (NightElf Rogue)
+  ! A Delicate Balance is handed in before it is picked up (NightElf Priest)
+  ! A Delicate Balance is handed in before it is picked up (NightElf DeathKnight)
+  ! A Delicate Balance is handed in before it is picked up (NightElf Mage)
+  ! A Delicate Balance is handed in before it is picked up (NightElf Monk)
+  ! A Delicate Balance is handed in before it is picked up (NightElf Druid)
+  ! A Delicate Balance is handed in before it is picked up (Gnome Warrior)
+  ! A Delicate Balance is handed in before it is picked up (Gnome Rogue)
+  ! A Delicate Balance is handed in before it is picked up (Gnome Priest)
+  ! A Delicate Balance is handed in before it is picked up (Gnome DeathKnight)
+  ! A Delicate Balance is handed in before it is picked up (Gnome Mage)
+  ! A Delicate Balance is handed in before it is picked up (Gnome Warlock)
+  ! A Delicate Balance is handed in before it is picked up (Gnome Monk)
+  ! A Delicate Balance is handed in before it is picked up (Draenei Warrior)
+  ! A Delicate Balance is handed in before it is picked up (Draenei Paladin)
+  ! A Delicate Balance is handed in before it is picked up (Draenei Hunter)
+  ! A Delicate Balance is handed in before it is picked up (Draenei Priest)
+  ! A Delicate Balance is handed in before it is picked up (Draenei DeathKnight)
+  ! A Delicate Balance is handed in before it is picked up (Draenei Shaman)
+  ! A Delicate Balance is handed in before it is picked up (Draenei Mage)
+  ! A Delicate Balance is handed in before it is picked up (Draenei Monk)
+  ! A Delicate Balance is handed in before it is picked up (Worgen Warrior)
+  ! A Delicate Balance is handed in before it is picked up (Worgen Hunter)
+  ! A Delicate Balance is handed in before it is picked up (Worgen Rogue)
+  ! A Delicate Balance is handed in before it is picked up (Worgen Priest)
+  ! A Delicate Balance is handed in before it is picked up (Worgen DeathKnight)
+  ! A Delicate Balance is handed in before it is picked up (Worgen Mage)
+  ! A Delicate Balance is handed in before it is picked up (Worgen Warlock)
+  ! A Delicate Balance is handed in before it is picked up (Worgen Druid)
+  ! A Delicate Balance is handed in before it is picked up (Pandaren Warrior)
+  ! A Delicate Balance is handed in before it is picked up (Pandaren Hunter)
+  ! A Delicate Balance is handed in before it is picked up (Pandaren Rogue)
+  ! A Delicate Balance is handed in before it is picked up (Pandaren Priest)
+  ! A Delicate Balance is handed in before it is picked up (Pandaren Shaman)
+  ! A Delicate Balance is handed in before it is picked up (Pandaren Mage)
+  ! A Delicate Balance is handed in before it is picked up (Pandaren Monk)
+Quest log: at most 8 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+5 pickups or hand-ins are within reach of a stop but planned for later.
+6 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 89. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 198 steps kept, 21 new ones slotted in, 40 moved because their prerequisites changed, 3 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 89, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 213 tasks, 24,992 yd on foot; ends at level 89.4; 1 ORDER PROBLEMS
+  everyone (quests that depend on other zones): 46 more tasks; their whole route comes to 29,441 yd; ends at level 89.4; 1 ORDER PROBLEMS
+Hearthstone: set at Supplier Qiao (Supplier Qiao's inn); 0 hearth steps in the guide.
+3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+15 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+9 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+  The Taking of Dusklight Bridge: its hand-in spot is not passed again, so the step sits at the end of the guide.
+
+Quests in the guide (84)
+------------------------
+Start to finish here: 63 (63 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Temple of the White Tiger [31392, level 87, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Kun-Lai Summit
+
+Hand-in step only shows once complete (1):
+  The Taking of Dusklight Bridge [30975, level 89] - needs Kor'thik Bloodletter slain (1) (Dread Wastes); Hulking Kor'thik Fleshrender slain (1) (Dread Wastes)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Beyond the Wall [31695, level 88] <- Kun-Lai Summit
+  My Husband... [30768, level 89] <- Kun-Lai Summit
+  The Shado-Pan Offensive [31386, level 89, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Vale of Eternal Blossoms
+  Thunder Calls [32679, level 90, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Vale of Eternal Blossoms
+
+Need a quest this guide does not hand in - steps show only once that is done (15):
+  In Skilled Hands [30899, level 89] - needs one of Joining the Hunt [30976]
+  The Sha of Hatred [30968, level 89] - needs Taoshi and Korvexxis [30981], Lao-Chin and Serevex [31063], Nurong and Rothek [31064]
+  Joining the Hunt [30976, level 89] - needs one of The Taking of Dusklight Bridge [30975]
+  Grounded Welcome [30977, level 89] - needs one of Joining the Hunt [30976]
+  Hostile Skies [30978, level 89] - needs one of In Skilled Hands [30899]
+  Devastation Below [30979, level 89] - needs one of Hostile Skies [30978]
+  Heroes of the Shado-Pan [30980, level 89] - needs one of Devastation Below [30979]
+  Taoshi and Korvexxis [30981, level 89] - needs one of Buried Beneath [31065]
+  Choking the Skies [31032, level 89] - needs one of Joining the Hunt [30976]
+  Lao-Chin and Serevex [31063, level 89] - needs one of Buried Beneath [31065]
+  Nurong and Rothek [31064, level 89] - needs one of Buried Beneath [31065]
+  Buried Beneath [31065, level 89] - needs one of Heroes of the Shado-Pan [30980]
+  Thinning the Sik'thik [31687, level 89] - needs one of Buried Beneath [31065]
+  The Search for Restless Leng [31688, level 89] - needs one of Buried Beneath [31065]
+  The Threat in the South [31656, level 90] - needs one of The Sha of Hatred [30968] -> Vale of Eternal Blossoms
+
+Worth checking in game
+----------------------
+  Hatred Becomes Us [30783, level 89]: could not read how many Seething Hatred are needed from the quest text; assumed 8
+  What Lies Beneath [30827, level 89]: "Ritual completed" is assumed to be line 5 in the quest log; check it
+  Hostile Skies [30978, level 89]: could not read how many Voress'thalik are needed from the quest text; assumed 8
+
+Not planned (4)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Seeking Father [30933, level 90]: needs level 90; this part gets you to about 89.6
+  Through the Portal [31110, level 90]: needs level 90; this part gets you to about 89.6
+  Surprise Attack! [31277, level 90]: its mobs are level 93; this part gets you to about 89.6
+  The Storm Gathers [32681, level 90]: needs level 90; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 89.6
+
+Left out (57)
+-------------
+repeatable (41):
+  The Unending Siege [30952], Fallen Sentinels [30953], A Blade is a Blade [30954], Paying Tribute [30955], The Siege Swells [30956], The Overwhelming Swarm [30957], In Battle's Shadow [30958], The Big Guns [30959], The Mogu Menace [31039], Spiteful Sprites [31040], Egg Rescue! [31041], Onyx Hearts [31042], Dark Arts [31043], Bronze Claws [31044], Illusions Of The Past [31045], Little Hatchlings [31046], Born Free [31047], Grave Consequences [31048], In Sprite Of Everything [31049], Riding the Storm [31061], When The Dead Speak [31062], The Mogu Menace [31105], The Mogu Menace [31106], Assault Fire Camp Gai-Cho [31113], Assault Deadtalker's Plateau [31114], Spirit Dust [31116], Uruk! [31117], The Deadtalker Cipher [31118], The Enemy of My Enemy... Is Still My Enemy! [31119], Cheng Bo! [31120], Sra'vess Wetwork [31196], The Bigger They Come... [31197], A Morale Victory [31198], Destroy the Siege Weapons! [31199], Fumigation [31200], Friends, Not Food! [31201], Target of Opportunity: Sra'thik Swarmlord [31203], Target of Opportunity: Sra'thik Hivelord [31204], Defense At Niuzao Temple [31382], Grand Master Zusshi [31991], ... 1 more
+needs reputation (7):
+  The Challenger's Ring: Snow Blossom [31038], The Challenger's Ring: Yalia Sagewhisper [31104], The Challenger's Ring: Chao the Voice [31127], The Challenger's Ring: Lao-Chin the Iron Belly [31128], The Challenger's Ring: Hawkmaster Nurong [31220], The Challenger's Ring: Tenwu of the Red Smoke [31221], Mogu Incursions [31266]
+not in the game (on Questie's quest blacklist) (5):
+  Raising Spirits [30974], Understanding The Shado-Pan [31387], Candy Bucket [32043], A Spark of Life [32475], Honor the Flame [32501]
+special category (sort -344) (2):
+  Stranger in a Strange Land [31488], Stranger in a Strange Land [31489]
+handed in here, but the database does not say where it starts (1):
+  Remnants of Anger [31809]
+cannot be taken together with The Threat in the South [31656], which is in the guide (1):
+  Better Off Dread [31895]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

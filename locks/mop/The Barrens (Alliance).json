@@ -1,0 +1,47 @@
+{
+  "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "12-18 The Barrens",
+  "saved": "2026-10-23 17:48",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "accept:13973 @10:54.03,41.05  Accept The Grol'dom Militia",
+        "obj:13973:1 @10:51.79,40.31  Objective The Grol'dom Militia / Razormane Pillager slain (6)",
+        "turnin:13973 @10:54.03,41.05  TurnIn The Grol'dom Militia",
+        "turnin:26642 @10:67.66,39.39  TurnIn Preserving the Barrens",
+        "turnin:25264 @10:67.81,40.57  TurnIn Ak'Zeloth",
+        "accept:13992 @10:37.53,45.87  Accept A Little Diversion",
+        "obj:13992:1 @10:38.2,44.17  Objective A Little Diversion / Kolkar Wrangler (8)",
+        "turnin:13992 @10:37.53,45.87  TurnIn A Little Diversion",
+        "accept:13995 @10:55.03,78.58  Accept King of Centaur Mountain",
+        "obj:13995:2 @10:54.2,78.49  Objective King of Centaur Mountain / Horde Banner",
+        "obj:13995:1 @10:54.94,77.49  Objective King of Centaur Mountain / Kurak slain (1)",
+        "turnin:13995 @10:55.2,78.4  TurnIn King of Centaur Mountain"
+      ]
+    },
+    {
+      "part": 2,
+      "steps": [
+        "accept:895 @10:68.26,71.24  Accept WANTED: Cap'n Garvey",
+        "obj:895:1 @10:77.85,89.26  Objective WANTED: Cap'n Garvey / Cap'n Garvey's Head (1)",
+        "turnin:895 @10:68.41,69.06  TurnIn WANTED: Cap'n Garvey",
+        "accept:14068 @10:62.37,63.92  Accept Waptor Twapping",
+        "obj:14068:1 @10:64.03,58.13  Objective Waptor Twapping / Wittle Waptor (5)",
+        "accept:13991 @10:49.99,59.85  Accept The Purloined Payroll",
+        "turnin:14068 @10:62.37,63.92  TurnIn Waptor Twapping",
+        "turnin:13991 @10:66.86,72.79  TurnIn The Purloined Payroll"
+      ]
+    },
+    {
+      "part": 3,
+      "steps": [
+        "accept:865 @10:67.86,71.5  Accept It's Gotta be the Horn",
+        "obj:865:1 @10:65.88,61.52  Objective It's Gotta be the Horn / King Reaperclaw's Horn (1)",
+        "turnin:865 @10:67.86,71.5  TurnIn It's Gotta be the Horn",
+        "accept:14073 @10:48.69,59.61  Accept Deathgate's Reinforcements",
+        "turnin:14073 @10:37.84,55.27  TurnIn Deathgate's Reinforcements"
+      ]
+    }
+  ]
+}

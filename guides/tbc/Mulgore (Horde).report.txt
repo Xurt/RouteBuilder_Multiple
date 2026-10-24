@@ -1,0 +1,219 @@
+Mulgore - Horde - part 1 of 3, planned from level 1
+Guide "1-14 Mulgore" in group "Zone Routes (Horde)": this part has 190 steps, 112 stops
+Written to guides/tbc/Mulgore (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 8 of 40 held at once (Tauren Warrior), not counting quests brought in from other zones.
+6 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 138 steps kept, 13 new ones slotted in, 0 moved because their prerequisites changed, 15 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 86 tasks, 23,904 yd on foot; ends at level 9.1; 1 hearth; at its hardest you are 2.2 levels below the mobs
+  Tauren: 20 more tasks; their whole route comes to 30,555 yd; ends at level 10.3; 3 hearths; at its hardest you are 2.9 levels below the mobs
+  Shaman: 7 more tasks; their whole route comes to 25,152 yd; ends at level 9.3; 1 hearth; at its hardest you are 2.1 levels below the mobs
+  Tauren Warrior: 2 more tasks; their whole route comes to 30,614 yd; ends at level 10.3; 3 hearths; at its hardest you are 2.9 levels below the mobs
+  Tauren Hunter: 15 more tasks; their whole route comes to 35,058 yd; ends at level 10.3; 3 hearths; at its hardest you are 2.9 levels below the mobs
+  Tauren Shaman: 2 more tasks; their whole route comes to 31,811 yd; ends at level 10.5; 3 hearths; at its hardest you are 2.5 levels below the mobs
+  Tauren Druid: 5 more tasks; their whole route comes to 31,378 yd; ends at level 10.3; 3 hearths; at its hardest you are 2.9 levels below the mobs
+  Tauren (quests that depend on other zones): 4 more tasks; their whole route comes to 30,645 yd; ends at level 10.3; 3 hearths; at its hardest you are 2.9 levels below the mobs
+  Shaman (quests that depend on other zones): 2 more tasks; their whole route comes to 25,152 yd; ends at level 9.3; 1 hearth; at its hardest you are 2.1 levels below the mobs
+  Tauren Hunter (quests that depend on other zones): 2 more tasks; their whole route comes to 35,134 yd; ends at level 10.3; 3 hearths; at its hardest you are 2.9 levels below the mobs
+  Tauren Druid (quests that depend on other zones): 6 more tasks; their whole route comes to 32,087 yd; ends at level 10.3; 3 hearths; at its hardest you are 2.9 levels below the mobs
+Hearthstone: set at Jhawna Oatwind (Jhawna Oatwind's inn); 4 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 10 for The Hunter's Path (Tauren Hunter)
+  level 10 for Heeding the Call (Tauren Druid)
+51 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+6 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+7 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (59)
+------------------------
+Start to finish here: 47 (28 for everyone, 6 Tauren, 6 Tauren Hunter, 3 Shaman, 2 Tauren Druid, 1 Tauren Warrior, 1 Tauren Shaman)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Moonglade [5922, level 10, Tauren Druid] -> Moonglade
+
+Brought in from another zone and handed in here - steps show only if you have the quest (7):
+  Call of Earth [1517, level 4, Shaman] <- Durotar
+  Heeding the Call [5927, level 10, Tauren Druid] <- Orgrimmar
+  Back to Thunder Bluff [5932, level 10, Tauren Druid] <- Moonglade
+  The Hunter's Path [6066, level 10, Tauren Hunter] <- Orgrimmar
+  The Hunter's Path [6067, level 10, Tauren Hunter] <- Durotar
+  Ride to Thunder Bluff [6362, level 10, Tauren] <- The Barrens
+  Power over Poison [6130, level 14, Druid] <- Moonglade
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Call of Earth [1518, level 4, Shaman] - needs one of Call of Earth [1517] -> Durotar
+  Body and Heart [6002, level 10, Tauren Druid] - needs one of Back to Thunder Bluff [5932]
+  Tal the Wind Rider Master [6363, level 10, Tauren] - needs one of Ride to Thunder Bluff [6362]
+  Return to Jahan [6364, level 10, Tauren] - needs one of Tal the Wind Rider Master [6363] -> The Barrens
+
+Worth checking in game
+----------------------
+  Body and Heart [6002, level 10, Tauren Druid]: "Lunaclaw Spirit" has no place in the data; taken to be done where the quest is given
+
+Put off to a later part (13)
+----------------------------
+These need a higher level than this part ends at:
+  Supervisor Fizsprocket [765, level 12]: its mobs are level 12; this part gets you to about 9.5
+  Sergra Darkthorn [860, level 10]: needs level 10; this part gets you to about 9.5
+  The Hunter's Way [861, level 10]: needs level 10; this part gets you to about 9.5
+  The Barrens Oases [886, level 10]: needs level 10; this part gets you to about 9.5
+  Veteran Uzzek [1505, level 10]: needs level 10; this part gets Warrior characters to about 9.5
+  Call of Fire [1523, level 10]: needs level 10; this part gets Shaman characters to about 9.7
+  Speak with Un'thuwa [1883, level 10]: needs level 10; this part gets Mage characters to about 9.5
+  Hex of Weakness [5655, level 10]: needs level 10; this part gets Troll Priest characters to about 9.5
+  Touch of Weakness [5661, level 10]: needs level 10; this part gets Undead Priest characters to about 9.5
+  The Hunter's Path [6070, level 10]: needs level 10; this part gets Orc Hunter/Troll Hunter characters to about 9.5
+  Lessons Anew [6126, level 14]: needs level 14; this part gets Druid characters to about 10.6
+  A Donation of Wool [7820, level 12]: needs level 12; this part gets you to about 9.5
+  Seek the Farstriders [9617, level 10]: needs level 10; this part gets BloodElf Hunter characters to about 9.5
+
+Left out (205)
+--------------
+not in the game (on Questie's quest blacklist) (96):
+  Welcome! [5844], Great-father Winter is Here! [7021], The Feast of Winter Veil [7061], Carnival Boots [7881], Carnival Jerkins [7882], The World's Largest Gnome! [7883], Crocolisk Boy and the Bearded Murloc [7884], Armor Kits [7885], Coarse Weightstone [7889], Heavy Grinding Stone [7890], Green Iron Bracers [7891], Big Black Mace [7892], Rituals of Strength [7893], Copper Modulator [7894], Whirring Bronze Gizmo [7895], Green Fireworks [7896], Mechanical Repair Kits [7897], Thorium Widget [7898], Small Furry Paws [7899], Torn Bear Pelts [7900], Soft Bushy Tails [7901], Vibrant Plumes [7902], Evil Bat Eyes [7903], The Darkmoon Faire [7926], 5 Tickets - Darkmoon Flower [7930], 5 Tickets - Minor Darkmoon Prize [7931], 12 Tickets - Lesser Darkmoon Prize [7932], 40 Tickets - Greater Darkmoon Prize [7933], 50 Tickets - Darkmoon Storage Box [7934], 10 Tickets - Last Month's Mutton [7935], 50 Tickets - Last Year's Mutton [7936], More Dense Grinding Stones [7939], 1200 Tickets - Orb of the Darkmoon [7940], More Armor Kits [7941], More Thorium Widgets [7942], More Bat Eyes [7943], Your Fortune Awaits You... [7945], Spawn of Jubjub [7946], 1200 Tickets - Amulet of the Darkmoon [7981], Glowing Scorpid Blood [8222], ... 56 more
+above this zone's range of 2-14 (65):
+  A Lesson to Learn [27], Aquatic Form [31], Until Death Do Us Part [264], The Ashenvale Hunt [742], Apothecary Zamah [853], Assisting Arch Druid Runetotem [936], The New Frontier [1000], The New Frontier [1004], The New Frontier [1018], The Elder Crone [1063], Forsaken Aid [1064], Journey to Tarren Mill [1065], Return to Thunder Bluff [1067], The Flying Machine Airport [1086], A Vengeful Fate [1102], Rabine Saturna [1123], Melor Sends Word [1130], Steelsnap [1131], Frostmaw [1136], The Sacred Flame [1195], The Sacred Flame [1196], Deadmire [1205], The Black Shield [1276], Call of Water [1529], Call of Air [1532], The Islander [1718], Speak with Ruga [1823], Orm Stonehoof and the Brutal Helm [1840], Chimaeric Horn [1844], Brutal Helm [1845], Journey to the Marsh [1947], Return to the Marsh [1953], Report to Anastasia [1959], The Platinum Discs [2280], The Platinum Discs [2440], Portents of Uldum [2965], Seeing What Happens [2966], Return to Thunder Bluff [2967], A Future Task [2968], Call of Water [2986], ... 25 more
+repeatable (23):
+  Earth Sapta [1462], Morrowgrain to Thunder Bluff [3804], Additional Runecloth [7825], Darkmoon Beast Deck [7907], Darkmoon Portals Deck [7927], Darkmoon Warlords Deck [7928], Darkmoon Elementals Deck [7929], For Great Honor [8388], Major Mana Potion [9320], Argent Dawn Gloves [9333], Blessed Wizard Oil [9334], Consecrated Sharpening Stones [9335], Major Healing Potion [9336], Tabard of the Argent Dawn [9343], Darkmoon Blessings Deck [10938], Darkmoon Storms Deck [10939], Darkmoon Furies Deck [10940], Darkmoon Lunacy Deck [10941], Call to Arms: Arathi Basin [11339], Call to Arms: Alterac Valley [11340], Call to Arms: Eye of the Storm [11341], Call to Arms: Warsong Gulch [11342], For Great Honor [95457]
+dungeon quest (10):
+  Leaders of the Fang [914], Serpentbloom [962], Compendium of the Fallen [1049], Hamuul Runetotem [1489], Nara Wildmane [1490], Searching for the Lost Satchel [5722], Testing an Enemy's Strength [5723], Returning the Lost Satchel [5724], Blackfathom Villainy [6561], Camp Mojache [7492]
+needs a profession (3):
+  Gathering Leather [768], Kodo Hide Bag [769], Master of the Wild Leather [2860]
+handed in here, but the database does not say where it starts (1):
+  Attack on Camp Narache [781]
+cannot be taken together with Call of Fire [1523], which is in the guide (1):
+  Call of Fire [2984]
+cannot be taken together with Hex of Weakness [5655], which is in the guide (1):
+  Hex of Weakness [5656]
+cannot be taken together with Touch of Weakness [5661], which is in the guide (1):
+  Touch of Weakness [5663]
+cannot be taken together with Heeding the Call [5926], which is in the guide (1):
+  Heeding the Call [5928]
+special category (sort -25) (1):
+  For Great Honor [8367]
+special category (sort -368) (1):
+  Investigate the Scourge of Thunder Bluff [9264]
+cannot be taken together with Seek the Farstriders [9617], which is in the guide (1):
+  The Hunter's Path [10530]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Mulgore - Horde - part 2 of 3, planned from level 12
+Guide "1-14 Mulgore" in group "Zone Routes (Horde)": this part has 20 steps, 12 stops
+Written to guides/tbc/Mulgore (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 12. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 8 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 8 tasks, 5,178 yd on foot; ends at level 12.2
+  Warrior: 1 more tasks; their whole route comes to 5,242 yd; ends at level 12.2
+  Shaman: 1 more tasks; their whole route comes to 5,652 yd; ends at level 12.2
+  Mage: 1 more tasks; their whole route comes to 5,651 yd; ends at level 12.2
+  Orc Hunter/Troll Hunter: 1 more tasks; their whole route comes to 5,239 yd; ends at level 12.2
+  Undead Priest: 1 more tasks; their whole route comes to 5,222 yd; ends at level 12.2
+  Troll Priest: 1 more tasks; their whole route comes to 5,222 yd; ends at level 12.2
+  BloodElf Hunter: 1 more tasks; their whole route comes to 5,239 yd; ends at level 12.2
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+3 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (11)
+------------------------
+Start to finish here: 2 (2 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (9):
+  Sergra Darkthorn [860, level 10] -> The Barrens
+  The Barrens Oases [886, level 10] -> The Barrens
+  Veteran Uzzek [1505, level 10, Warrior] -> The Barrens
+  Call of Fire [1523, level 10, Shaman] -> The Barrens
+  Speak with Un'thuwa [1883, level 10, Mage] -> Durotar
+  Hex of Weakness [5655, level 10, Troll Priest] -> Orgrimmar
+  Touch of Weakness [5661, level 10, Undead Priest] -> Undercity
+  The Hunter's Path [6070, level 10, Orc Hunter/Troll Hunter] -> Durotar
+  Seek the Farstriders [9617, level 10, BloodElf Hunter] -> Eversong Woods
+
+Worth checking in game
+----------------------
+1 quests have no experience figure in the database: their experience is estimated, and 1 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  Seek the Farstriders [9617]
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  Lessons Anew [6126, level 14]: needs level 14; this part gets Druid characters to about 12.2
+  A Donation of Wool [7820, level 12]: needs level 12; this part gets you to about 12.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Mulgore - Horde - part 3 of 3, planned from level 15
+Guide "1-14 Mulgore" in group "Zone Routes (Horde)": this part has 4 steps, 3 stops
+Written to guides/tbc/Mulgore (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Tauren Druid), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 15. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 15.0
+  Druid: 1 more tasks; their whole route comes to 365 yd; ends at level 15.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Lessons Anew [6126, level 14, Druid] -> Moonglade
+
+Hand-in step only shows once complete (1):
+  A Donation of Wool [7820, level 12] - needs Wool Cloth (1) (Hillsbrad Foothills)
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

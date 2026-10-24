@@ -1,6 +1,6 @@
 ## Interface: 11508, 11509
 ## Title: RestedXP Zone Routes
-## Notes: 63 zone guide file(s) made by RouteBuilder, packed 2026-10-23 14:28
+## Notes: 64 zone guide file(s) made by RouteBuilder, packed 2026-10-23 18:27
 ## Version: 2026.10.23
 ## Dependencies: RXPGuides
 
@@ -15,6 +15,7 @@ Guides\Badlands_Horde.lua
 Guides\Blasted_Lands_Alliance.lua
 Guides\Blasted_Lands_Horde.lua
 Guides\Burning_Steppes_Alliance.lua
+Guides\Burning_Steppes_Horde.lua
 Guides\Darkshore_Alliance.lua
 Guides\Desolace_Alliance.lua
 Guides\Desolace_Horde.lua

@@ -20,16 +20,16 @@ RXPGuides.RegisterGuide([[
 step
     .goto 1423/0,-2478.44,2671.99
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tirion Fordring|r
-    .turnin 5944 >>Turn in In Dreams
-    .target Tirion Fordring
-    .isQuestComplete 5944
-step
-    .goto 1423/0,-2478.44,2671.99
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tirion Fordring|r
     .accept 5542 >>Accept Demon Dogs
     .accept 5543 >>Accept Blood Tinged Skies
     .accept 5544 >>Accept Carrion Grubbage
     .target Tirion Fordring
+step
+    .goto 1423/0,-2478.44,2671.99
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tirion Fordring|r
+    .turnin 5944 >>Turn in In Dreams
+    .target Tirion Fordring
+    .isQuestComplete 5944
 step
     .goto 1423/0,-2478.44,2671.99
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tirion Fordring|r
@@ -134,12 +134,6 @@ step
     .accept 5211 >>Accept Defenders of Darrowshire
     .target Carlin Redpath
 step
-    .goto 1423/0,-5349.44,2303.91
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord Maxwell Tyrosus|r
-    .turnin 8859 >>Turn in Secrets of the Colossus - Zora
-    .target Lord Maxwell Tyrosus
-    .isOnQuest 8859
-step
     .goto 1423/0,-5349.05,2307.26
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Leonid Barthalomew the Revered|r
     .turnin 5462 >>Turn in The Dying, Ras Frostwhisper
@@ -170,9 +164,15 @@ step
 step
     .goto 1423/0,-4256.31,3232.12
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Aurora Skycaller|r
-    .accept 5248 >>Accept Tormented By the Past
+    .turnin 5245 >>Turn in Troubled Spirits of Kel'Theril
     .target Aurora Skycaller
-    .isQuestTurnedIn 5247 --any of: Fragments of the Past
+    .isQuestComplete 5245
+step
+    .goto 1423/0,-4256.31,3232.12
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Aurora Skycaller|r
+    .accept 5246 >>Accept Fragments of the Past
+    .target Aurora Skycaller
+    .isQuestTurnedIn 5245 --any of: Troubled Spirits of Kel'Theril
     .xp <53,1
 step
     .goto 1423/0,-4256.31,3232.12
@@ -184,15 +184,9 @@ step
 step
     .goto 1423/0,-4256.31,3232.12
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Aurora Skycaller|r
-    .turnin 5245 >>Turn in Troubled Spirits of Kel'Theril
+    .accept 5248 >>Accept Tormented By the Past
     .target Aurora Skycaller
-    .isQuestComplete 5245
-step
-    .goto 1423/0,-4256.31,3232.12
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Aurora Skycaller|r
-    .accept 5246 >>Accept Fragments of the Past
-    .target Aurora Skycaller
-    .isQuestTurnedIn 5245 --any of: Troubled Spirits of Kel'Theril
+    .isQuestTurnedIn 5247 --any of: Fragments of the Past
     .xp <53,1
 step
     .goto 1423/0,-4256.31,3232.12

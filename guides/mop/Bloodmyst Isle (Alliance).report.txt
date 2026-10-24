@@ -1,0 +1,162 @@
+Bloodmyst Isle - Alliance - part 1 of 2, planned from level 13
+Guide "13-21 Bloodmyst Isle" in group "Zone Routes (Alliance)": this part has 195 steps, 157 stops
+Written to guides/mop/Bloodmyst Isle (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 14 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+26 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 13. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 5 steps kept, 200 new ones slotted in, 0 moved because their prerequisites changed, 1 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 13, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 169 tasks, 34,476 yd on foot; ends at level 19.8; 4 hearths; at its hardest you are 1.1 levels below the mobs
+  Draenei: 3 more tasks; their whole route comes to 37,196 yd; ends at level 19.8; 4 hearths; at its hardest you are 1.1 levels below the mobs
+  everyone (quests that depend on other zones): 27 more tasks; their whole route comes to 43,896 yd; ends at level 19.8; 4 hearths; at its hardest you are 1.1 levels below the mobs
+  Draenei (quests that depend on other zones): 5 more tasks; their whole route comes to 49,555 yd; ends at level 19.8; 4 hearths; at its hardest you are 1.1 levels below the mobs
+  Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 44,831 yd; ends at level 19.8; 4 hearths; at its hardest you are 1.1 levels below the mobs
+Hearthstone: set at Fazu (Fazu's inn); 4 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 13 for Irradiated Crystal Shards (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+  level 14 for The Bear Necessities (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+  level 15 for Searching for Galaen (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+  level 16 for Cutting a Path (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+  level 18 for What We Know... (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+14 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (76)
+------------------------
+Start to finish here: 56 (0 for everyone, 55 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren, 1 Draenei)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Beds, Bandages, and Beyond [9603, level 7, Draenei] -> Azuremyst Isle
+  Newfound Allies [9632, level 15, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Azuremyst Isle
+  Hero's Call: Ashenvale! [28492, level 20, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Ashenvale
+
+Hand-in step only shows once complete (2):
+  The Kessel Run [9663, level 12, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs High Chief Stillpine (Azuremyst Isle); Exarch Menelaous (Azuremyst Isle); Admiral Odesyus (Azuremyst Isle)
+  The Final Sample [9585, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Axxarien Crystal Sample (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Behomat [10350, level 10, Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior] <- Azuremyst Isle
+  Coming of Age [9623, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Azuremyst Isle
+  The Bloodcurse Legacy [9751, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Azuremyst Isle
+
+Need a quest this guide does not hand in - steps show only once that is done (12):
+  On the Wings of a Hippogryph [9604, level 7, Draenei] - needs one of Beds, Bandages, and Beyond [9603]
+  Hippogryph Master Stephanos [9605, level 7, Draenei] - needs one of On the Wings of a Hippogryph [9604]
+  Return to Caregiver Chellan [9606, level 7, Draenei] - needs one of Hippogryph Master Stephanos [9605] -> Azuremyst Isle
+  Elekks Are Serious Business [9625, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Coming of Age [9623]
+  Declaration of Power [9666, level 13, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Kessel Run [9663]
+  Saving Princess Stillpine [9667, level 13, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Stillpine Hold [9559]
+  Report to Exarch Admetius [9668, level 13, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Declaration of Power [9666]
+  Urgent Delivery [9671, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of A Small Start [9506]
+  The Bloodcurse Legacy [9672, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Urgent Delivery [9671]
+  The Bloodcursed Naga [9674, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Bloodcurse Legacy [9672], The Bloodcurse Legacy [9751]
+  The Hopeless Ones... [9682, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Bloodcursed Naga [9674]
+  Ending the Bloodcurse [9683, level 19, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Hopeless Ones... [9682]
+
+Worth checking in game
+----------------------
+  I Shoot Magic Into the Darkness [9700, level 16, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: "Sun Portal Site Confirmed" is assumed to be line 2 in the quest log; check it
+
+Put off to a later part (8)
+---------------------------
+These need a higher level than this part ends at:
+  A Summons from Ander Germaine [27225, level 20]: needs level 20; this part gets Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior characters to about 19.8
+  Lord Grayson Shadowbreaker [27265, level 20]: needs level 20; this part gets Dwarf Paladin/Draenei Paladin characters to about 19.8
+  Wulf Calls [27266, level 20]: needs level 20; this part gets Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter characters to about 19.8
+  Make Haste to the Cathedral [27268, level 20]: needs level 20; this part gets Human Priest/Dwarf Priest/Draenei Priest/Worgen Priest/Pandaren Priest characters to about 19.8
+  The Temple of the Moon [27269, level 20]: needs level 20; this part gets NightElf Priest characters to about 19.8
+  An Audience with the Farseer [27270, level 20]: needs level 20; this part gets Dwarf Shaman/Draenei Shaman characters to about 19.8
+  Journey to the Wizard's Sanctum [27271, level 20]: needs level 20; this part gets Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage characters to about 19.8
+  The Chief Surgeon [27274, level 20]: needs level 20; this part gets Gnome Priest characters to about 19.8
+
+Left out (166)
+--------------
+not in the game (on Questie's quest blacklist) (131):
+  The Islander [1718], High Sorcerer Andromath [1939], Journey to the Marsh [1947], Return to the Marsh [1953], Tabetha's Task [2861], Greatfather Winter is Here! [7023], Lord Grayson Shadowbreaker [7670], A Donation of Wool [7792], A Donation of Silk [7798], The Hunter's Charm [8151], Magecraft [8250], Cenarion Aid [8254], Elemental Mastery [8410], A Troubled Spirit [8417], The Hero of the Day [8763], Lunar Fireworks [8867], The Lunar Festival [8870], The Lunar Festival [8871], The Lunar Festival [8872], Valadar Starsong [8883], Light's Hope Chapel [9154], A Light in Dark Places [9319], Stealing Orgrimmar's Flame [9324], Stealing Thunder Bluff's Flame [9325], Stealing the Undercity's Flame [9326], A Thief's Reward [9365], The Festival of Fire [9367], Call of Fire [9461], Call of Fire [9462], Call of Water [9500], Call of Water [9501], Call of Water [9502], Call of Water [9503], Call of Water [9504], Call of Water [9508], Call of Water [9509], Call of Air [9547], Call of Air [9551], Call of Air [9554], Call of Fire [9555], ... 91 more
+above this zone's range of 10-22 (25):
+  Hero's Call: Vashj'ir! [27724], Hero's Call: Mount Hyjal! [27726], Hero's Call: Deepholm! [27727], Meet with Ander Germaine [28258], Meet with Wulf Hansreim [28260], Meet with Maginor Dumas [28263], Meet with Lord Grayson Shadowbreaker [28268], Meet with High Priestess Laurena [28285], Meet with Farseer Umbrua [28287], Hero's Call: Thousand Needles! [28503], Hero's Call: Tanaris! [28507], Hero's Call: Feralas! [28511], Hero's Call: Un'Goro Crater! [28525], Hero's Call: Silithus! [28528], Hero's Call: Desolace! [28531], Hero's Call: Stonetalon Mountains! [28539], Hero's Call: Felwood! [28543], Hero's Call: Winterspring! [28544], Hero's Call: Southern Barrens! [28550], Hero's Call: Dustwallow Marsh! [28552], Hero's Call: Uldum! [28558], Hero's Call: Outland! [28708], Hero's Call: Northrend! [28709], Hero's Call: Twilight Highlands! [28716], The Troll Incursion [29156]
+needs a profession (4):
+  Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+special category (sort -284) (2):
+  The Exodar [12776], Hammering It Out [25563]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29387], Guardians of Hyjal: Call of the Ancients [29391]
+repeatable (1):
+  More Irradiated Crystal Shards [9642]
+cannot be taken together with Elekks Are Serious Business [9625], which is in the guide (1):
+  Hero's Call: Bloodmyst Isle! [28559]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Bloodmyst Isle - Alliance - part 2 of 2, planned from level 22
+Guide "13-21 Bloodmyst Isle" in group "Zone Routes (Alliance)": this part has 12 steps, 9 stops
+Written to guides/mop/Bloodmyst Isle (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 22. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 10 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior: 1 tasks, 1,800 yd on foot; ends at level 22.0
+  Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage: 1 more tasks; their whole route comes to 1,800 yd; ends at level 22.0
+  Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter: 1 more tasks; their whole route comes to 1,800 yd; ends at level 22.0
+  Human Priest/Dwarf Priest/Draenei Priest/Worgen Priest/Pandaren Priest: 1 more tasks; their whole route comes to 1,800 yd; ends at level 22.0
+  Dwarf Paladin/Draenei Paladin: 1 more tasks; their whole route comes to 1,800 yd; ends at level 22.0
+  Dwarf Shaman/Draenei Shaman: 1 more tasks; their whole route comes to 1,800 yd; ends at level 22.0
+  NightElf Priest: 1 more tasks; their whole route comes to 1,800 yd; ends at level 22.0
+  Gnome Priest: 1 more tasks; their whole route comes to 1,800 yd; ends at level 22.0
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 1,006 yd; ends at level 22.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (10)
+------------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (8):
+  A Summons from Ander Germaine [27225, level 20, Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior] -> Stormwind City
+  Lord Grayson Shadowbreaker [27265, level 20, Dwarf Paladin/Draenei Paladin] -> Stormwind City
+  Wulf Calls [27266, level 20, Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter] -> Stormwind City
+  Make Haste to the Cathedral [27268, level 20, Human Priest/Dwarf Priest/Draenei Priest/Worgen Priest/Pandaren Priest] -> Stormwind City
+  The Temple of the Moon [27269, level 20, NightElf Priest] -> Darnassus
+  An Audience with the Farseer [27270, level 20, Dwarf Shaman/Draenei Shaman] -> Stormwind City
+  Journey to the Wizard's Sanctum [27271, level 20, Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage] -> Stormwind City
+  The Chief Surgeon [27274, level 20, Gnome Priest] -> Stormwind City
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  The Kessel Run [9663, level 12, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- your earlier visit to this zone
+  The Final Sample [9585, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

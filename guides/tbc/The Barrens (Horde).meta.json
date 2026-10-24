@@ -1,0 +1,976 @@
+{
+  "zone": "The Barrens",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "10-27 The Barrens",
+  "file": "The Barrens (Horde).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 10,
+      "end": 15.56,
+      "next": 18,
+      "guide": "13-16 The Barrens: around Gazlowe",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Sergra Darkthorn",
+          "guide": "10-13 The Barrens: around Sergra Darkthorn",
+          "level": 10,
+          "index": 0
+        },
+        {
+          "label": "RBSection1_2",
+          "name": "around Gazlowe",
+          "guide": "13-16 The Barrens: around Gazlowe",
+          "level": 13,
+          "index": 1
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 18,
+      "end": 19.46,
+      "next": 22,
+      "guide": "18-20 The Barrens: around Tonga Runetotem",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Tonga Runetotem",
+          "guide": "18-20 The Barrens: around Tonga Runetotem",
+          "level": 18,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 22,
+      "end": 22.48,
+      "next": 25,
+      "guide": "22-23 The Barrens",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "22-23 The Barrens",
+          "level": 22,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "start": 25,
+      "end": 25.34,
+      "guide": "25-26 The Barrens",
+      "sections": [
+        {
+          "label": "RBSection4_1",
+          "name": "part 4",
+          "guide": "25-26 The Barrens",
+          "level": 25,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 96,
+      "level": 20,
+      "req": 20,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Shaman",
+      "from": "Silverpine Forest"
+    },
+    {
+      "id": 809,
+      "level": 13,
+      "req": 4,
+      "xp": 455,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Durotar"
+    },
+    {
+      "id": 840,
+      "level": 12,
+      "req": 10,
+      "xp": 455,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Durotar"
+    },
+    {
+      "id": 844,
+      "level": 12,
+      "req": 10,
+      "xp": 910,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 845,
+      "level": 13,
+      "req": 10,
+      "xp": 910,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 848,
+      "level": 15,
+      "req": 10,
+      "xp": 1050,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 850,
+      "level": 16,
+      "req": 11,
+      "xp": 880,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 854,
+      "level": 12,
+      "req": 9,
+      "xp": 225,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren"
+    },
+    {
+      "id": 855,
+      "level": 14,
+      "req": 9,
+      "xp": 1250,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 860,
+      "level": 10,
+      "req": 10,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Mulgore"
+    },
+    {
+      "id": 865,
+      "level": 18,
+      "req": 13,
+      "xp": 1350,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 867,
+      "level": 15,
+      "req": 12,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 869,
+      "level": 13,
+      "req": 9,
+      "xp": 910,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 870,
+      "level": 13,
+      "req": 10,
+      "xp": 680,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 871,
+      "level": 12,
+      "req": 9,
+      "xp": 910,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 872,
+      "level": 15,
+      "req": 9,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 875,
+      "level": 16,
+      "req": 12,
+      "xp": 1150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 877,
+      "level": 16,
+      "req": 10,
+      "xp": 1150,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 880,
+      "level": 16,
+      "req": 10,
+      "xp": 1150,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 881,
+      "level": 16,
+      "req": 10,
+      "xp": 1450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 886,
+      "level": 10,
+      "req": 10,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Mulgore"
+    },
+    {
+      "id": 887,
+      "level": 14,
+      "req": 9,
+      "xp": 740,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 888,
+      "level": 16,
+      "req": 9,
+      "xp": 1150,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 890,
+      "level": 14,
+      "req": 9,
+      "xp": 100,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 892,
+      "level": 14,
+      "req": 9,
+      "xp": 100,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 894,
+      "level": 14,
+      "req": 10,
+      "xp": 740,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 895,
+      "level": 16,
+      "req": 9,
+      "xp": 1150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 896,
+      "level": 18,
+      "req": 13,
+      "xp": 1700,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 897,
+      "level": 24,
+      "req": 10,
+      "xp": 2400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 899,
+      "level": 20,
+      "req": 14,
+      "xp": 1950,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 900,
+      "level": 14,
+      "req": 10,
+      "xp": 490,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 901,
+      "level": 14,
+      "req": 10,
+      "xp": 740,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 902,
+      "level": 16,
+      "req": 10,
+      "xp": 1150,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 903,
+      "level": 15,
+      "req": 10,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 905,
+      "level": 17,
+      "req": 10,
+      "xp": 1250,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 1061,
+      "level": 17,
+      "req": 13,
+      "xp": 315,
+      "part": 1,
+      "section": 1,
+      "tag": "",
+      "from": "Durotar"
+    },
+    {
+      "id": 1094,
+      "level": 21,
+      "req": 16,
+      "xp": 830,
+      "part": 1,
+      "section": 1,
+      "tag": "",
+      "from": "Stonetalon Mountains"
+    },
+    {
+      "id": 1358,
+      "level": 15,
+      "req": 10,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 1492,
+      "level": 11,
+      "req": 9,
+      "xp": 440,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1505,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 0,
+      "tag": "Warrior",
+      "from": "Mulgore"
+    },
+    {
+      "id": 1509,
+      "level": 20,
+      "req": 20,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Warlock",
+      "from": "Durotar"
+    },
+    {
+      "id": 1511,
+      "level": 20,
+      "req": 20,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Warlock",
+      "from": "Stonetalon Mountains"
+    },
+    {
+      "id": 1522,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 0,
+      "tag": "Shaman",
+      "from": "Durotar"
+    },
+    {
+      "id": 1523,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 0,
+      "tag": "Shaman",
+      "from": "Mulgore"
+    },
+    {
+      "id": 1527,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 0,
+      "tag": "Shaman",
+      "from": "Durotar"
+    },
+    {
+      "id": 1528,
+      "level": 20,
+      "req": 20,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Shaman",
+      "from": "Durotar"
+    },
+    {
+      "id": 1529,
+      "level": 20,
+      "req": 20,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Shaman",
+      "from": "Mulgore"
+    },
+    {
+      "id": 1823,
+      "level": 20,
+      "req": 20,
+      "xp": 155,
+      "part": 1,
+      "section": 1,
+      "tag": "Warrior",
+      "from": "Mulgore"
+    },
+    {
+      "id": 1945,
+      "level": 26,
+      "req": 26,
+      "xp": 1600,
+      "part": 1,
+      "section": 0,
+      "tag": "Mage",
+      "from": "Durotar"
+    },
+    {
+      "id": 2382,
+      "level": 16,
+      "req": 16,
+      "xp": 115,
+      "part": 1,
+      "section": 0,
+      "tag": "Rogue",
+      "from": "Durotar"
+    },
+    {
+      "id": 2458,
+      "level": 20,
+      "req": 20,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Rogue",
+      "from": "Durotar"
+    },
+    {
+      "id": 2983,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 0,
+      "tag": "Shaman",
+      "from": "Durotar"
+    },
+    {
+      "id": 2984,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 0,
+      "tag": "Shaman",
+      "from": "Mulgore"
+    },
+    {
+      "id": 2985,
+      "level": 20,
+      "req": 20,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Shaman",
+      "from": "Durotar"
+    },
+    {
+      "id": 2986,
+      "level": 20,
+      "req": 20,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Shaman",
+      "from": "Mulgore"
+    },
+    {
+      "id": 3261,
+      "level": 18,
+      "req": 10,
+      "xp": 135,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 3281,
+      "level": 18,
+      "req": 9,
+      "xp": 1350,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 3513,
+      "level": 25,
+      "req": 15,
+      "xp": 2550,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 3921,
+      "level": 14,
+      "req": 10,
+      "xp": 490,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 3922,
+      "level": 15,
+      "req": 10,
+      "xp": 1050,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 5041,
+      "level": 14,
+      "req": 9,
+      "xp": 980,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6127,
+      "level": 14,
+      "req": 14,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Druid",
+      "from": "Moonglade"
+    },
+    {
+      "id": 6361,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren"
+    },
+    {
+      "id": 6364,
+      "level": 10,
+      "req": 10,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren",
+      "from": "Mulgore"
+    },
+    {
+      "id": 6365,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Troll"
+    },
+    {
+      "id": 6386,
+      "level": 10,
+      "req": 10,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Troll",
+      "from": "Durotar"
+    },
+    {
+      "id": 6523,
+      "level": 18,
+      "req": 14,
+      "xp": 1350,
+      "part": 1,
+      "section": 1,
+      "tag": "",
+      "from": "Stonetalon Mountains"
+    },
+    {
+      "id": 6542,
+      "level": 19,
+      "req": 17,
+      "xp": 145,
+      "part": 1,
+      "section": 1,
+      "tag": "",
+      "from": "Stonetalon Mountains"
+    },
+    {
+      "id": 851,
+      "level": 18,
+      "req": 11,
+      "xp": 1000,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 852,
+      "level": 19,
+      "req": 11,
+      "xp": 1100,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 858,
+      "level": 18,
+      "req": 13,
+      "xp": 1350,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 863,
+      "level": 18,
+      "req": 13,
+      "xp": 1700,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 868,
+      "level": 22,
+      "req": 17,
+      "xp": 1750,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 874,
+      "level": 27,
+      "req": 10,
+      "xp": 550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 876,
+      "level": 20,
+      "req": 12,
+      "xp": 1950,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 878,
+      "level": 21,
+      "req": 14,
+      "xp": 1650,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 882,
+      "level": 19,
+      "req": 10,
+      "xp": 1800,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 891,
+      "level": 20,
+      "req": 13,
+      "xp": 1550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 898,
+      "level": 20,
+      "req": 13,
+      "xp": 1950,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 907,
+      "level": 18,
+      "req": 10,
+      "xp": 1700,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 913,
+      "level": 20,
+      "req": 10,
+      "xp": 1950,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4921,
+      "level": 20,
+      "req": 14,
+      "xp": 1150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5052,
+      "level": 21,
+      "req": 14,
+      "xp": 1250,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6541,
+      "level": 19,
+      "req": 17,
+      "xp": 145,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 843,
+      "level": 23,
+      "req": 17,
+      "xp": 1850,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 846,
+      "level": 26,
+      "req": 17,
+      "xp": 2100,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 893,
+      "level": 24,
+      "req": 17,
+      "xp": 1950,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1530,
+      "level": 20,
+      "req": 20,
+      "xp": 0,
+      "part": 3,
+      "section": 0,
+      "tag": "Shaman"
+    },
+    {
+      "id": 1535,
+      "level": 20,
+      "req": 20,
+      "xp": 0,
+      "part": 3,
+      "section": 0,
+      "tag": "Shaman"
+    },
+    {
+      "id": 1824,
+      "level": 20,
+      "req": 20,
+      "xp": 1550,
+      "part": 3,
+      "section": 0,
+      "tag": "Warrior"
+    },
+    {
+      "id": 1825,
+      "level": 20,
+      "req": 20,
+      "xp": 780,
+      "part": 3,
+      "section": 0,
+      "tag": "Warrior"
+    },
+    {
+      "id": 849,
+      "level": 26,
+      "req": 17,
+      "xp": 2100,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 873,
+      "level": 27,
+      "req": 10,
+      "xp": 2750,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 879,
+      "level": 25,
+      "req": 17,
+      "xp": 1500,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 906,
+      "level": 25,
+      "req": 17,
+      "xp": 3050,
+      "part": 4,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Mulgore": 4,
+    "Durotar": 5,
+    "Silverpine Forest": 2,
+    "Stonetalon Mountains": 5,
+    "Moonglade": 1,
+    "Ashenvale": 1
+  }
+}

@@ -1,0 +1,173 @@
+Darkshore - Horde - part 1 of 3, planned from level 11
+Guide "11-18 Darkshore" in group "Zone Routes (Horde)": this part has 23 steps, 22 stops
+Written to guides/mop/Darkshore (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 11. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 23 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 4 tasks, 189 yd on foot; ends at level 11.2
+  everyone (quests that depend on other zones): 19 more tasks; their whole route comes to 3,347 yd; ends at level 11.2; at its hardest you are 1.8 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (7):
+  The Boon of the Seas [13520, level 10] - needs The Last Wave of Survivors [13518], Threat from the Water [13522]
+  The Final Flame of Bashal'Aran [13562, level 11] - needs The Corruption's Source [13529], A Cure In The Dark [13554]
+  A Love Eternal [13563, level 11] - needs The Corruption's Source [13529], A Cure In The Dark [13554]
+  Grimclaw's Return [13599, level 12] - needs one of The Ritual Bond [13569]
+  Swift Response [13508, level 13] - needs one of Reason to Worry [13506]
+  An Ocean Not So Deep [13560, level 13] - needs Ritual Materials [13566], The Ritual Bond [13569]
+  Remembrance of Auberdine [13570, level 15] - needs one of Disturbing Connections [13591]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (16)
+----------------------------
+These need a higher level than this part ends at:
+  One Shot.  One Kill. [5713, level 15]: is a level 15 quest; this part gets you to about 11.2
+  One Bitter Wish [13511, level 13]: its mobs are level 14; this part gets you to about 11.2
+  The Ancients' Ire [13514, level 14]: its mobs are level 14; this part gets you to about 11.2
+  The Twilight's Hammer [13519, level 13]: needs level 13; this part gets you to about 12.2
+  Power Over the Tides [13523, level 13]: needs level 13; this part gets you to about 12.2
+  Malfurion's Return [13573, level 15]: needs level 13; this part gets you to about 12.2
+  Twilight Plans [13596, level 13]: needs level 13; this part gets you to about 12.2
+  In Aid of the Refugees [13601, level 15]: needs level 13; this part gets you to about 12.2
+  The Last Refugee [13605, level 15]: needs level 13; this part gets you to about 12.2
+  The Looting of Althalaxx [13844, level 14]: its mobs are level 14; this part gets you to about 11.2
+  The Tides Turn Against Us [13898, level 20]: needs level 17; this part gets you to about 12.2
+  Mounting the Offensive [13902, level 18]: needs level 17; this part gets you to about 12.2
+  The Absent-Minded Prospector [13911, level 18]: needs level 16; this part gets you to about 12.2
+  Swamped Secrets [13912, level 18]: needs level 16; this part gets you to about 12.2
+  The Titans' Terminal [13918, level 18]: needs level 16; this part gets you to about 12.2
+  Ashes in Ashenvale [26408, level 20]: needs level 17; this part gets you to about 12.2
+
+Left out (9)
+------------
+not in the game (on Questie's quest blacklist) (8):
+  The Master's Glaive [944], Buzzbox 827 [983], Starweave the Elder [8721], Desecrate this Fire! [11740], Along for the Ride [13608], A Natural Occurrence [25571], A Natural Occurrence [25773], In Aid of the Refugees [26379]
+needs a profession (1):
+  A Taste for Grouper [13537]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Darkshore - Horde - part 2 of 3, planned from level 14
+Guide "11-18 Darkshore" in group "Zone Routes (Horde)": this part has 33 steps, 29 stops
+Written to guides/mop/Darkshore (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 14. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 30 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 10 tasks, 2,302 yd on foot; ends at level 14.3
+  everyone (quests that depend on other zones): 20 more tasks; their whole route comes to 6,361 yd; ends at level 14.3
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (10)
+------------------------
+Start to finish here: 3 (3 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  One Shot.  One Kill. [5713, level 15] -> Ashenvale
+
+Need a quest this guide does not hand in - steps show only once that is done (6):
+  One Bitter Wish [13511, level 13] - needs one of Swift Response [13508]
+  The Twilight's Hammer [13519, level 13] - needs one of Disturbing Connections [13591]
+  Twilight Plans [13596, level 13] - needs one of Disturbing Connections [13591]
+  The Ancients' Ire [13514, level 14] - needs Strategic Strikes [13512], On the Brink [13513]
+  The Looting of Althalaxx [13844, level 14] - needs one of War Supplies [13509]
+  In Aid of the Refugees [13601, level 15] - needs one of Twilight Plans [13596]
+
+Worth checking in game
+----------------------
+  The Ancients' Ire [13514, level 14]: could not read how many Shatterspear Hut Fire Bunny are needed from the quest text; assumed 8
+  The Ancients' Ire [13514, level 14]: mixes a kill-credit objective with others; check that "Shatterspear Priestess" really is line 2 in the quest log
+
+Put off to a later part (6)
+---------------------------
+These need a higher level than this part ends at:
+  The Tides Turn Against Us [13898, level 20]: needs level 17; this part gets you to about 14.7
+  Mounting the Offensive [13902, level 18]: needs level 17; this part gets you to about 14.7
+  The Absent-Minded Prospector [13911, level 18]: needs level 16; this part gets you to about 14.7
+  Swamped Secrets [13912, level 18]: needs level 16; this part gets you to about 14.7
+  The Titans' Terminal [13918, level 18]: needs level 16; this part gets you to about 14.7
+  Ashes in Ashenvale [26408, level 20]: needs level 17; this part gets you to about 14.7
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Darkshore - Horde - part 3 of 3, planned from level 17
+Guide "11-18 Darkshore" in group "Zone Routes (Horde)": this part has 12 steps, 11 stops
+Written to guides/mop/Darkshore (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 17. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 14 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 8 tasks, 67 yd on foot; ends at level 17.3
+  everyone (quests that depend on other zones): 6 more tasks; their whole route comes to 2,512 yd; ends at level 17.3
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (6)
+-----------------------
+Start to finish here: 3 (3 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Mounting the Offensive [13902, level 18] - needs one of The Eye of All Storms [13588]
+  The Tides Turn Against Us [13898, level 20] - needs one of Naga In Our Midst [13953]
+  Ashes in Ashenvale [26408, level 20] - needs one of The Battle for Darkshore [13897] -> Ashenvale
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

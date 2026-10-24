@@ -1,0 +1,79 @@
+Sholazar Basin - Horde
+Guide "76-78 Sholazar Basin" in group "Zone Routes (Horde)": 183 steps, 157 stops
+Written to guides/mop/Sholazar Basin (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 8 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+13 pickups or hand-ins are within reach of a stop but planned for later.
+5 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 76. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 199 steps kept, 1 new ones slotted in, 21 moved because their prerequisites changed, 14 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 195 tasks, 44,421 yd on foot; ends at level 77.5; at its hardest you are 1.9 levels below the mobs
+  everyone (quests that depend on other zones): 26 more tasks; their whole route comes to 49,896 yd; ends at level 77.5; 1 hearth; 2 ORDER PROBLEMS; at its hardest you are 1.9 levels below the mobs
+Hearthstone: set at Loomee (Loomee's inn); 1 hearth step in the guide.
+6 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+12 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+6 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (77)
+------------------------
+Start to finish here: 64 (64 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Etymidian [12548, level 78] -> Un'Goro Crater
+
+Hand-in step only shows once complete (2):
+  Some Make Lemonade, Some Make Liquor [12634, level 76] - needs Orange (1) (an unknown place); Banana Bunch (2) (an unknown place); Papaya (1) (an unknown place)
+  The Lost Mistwhisper Treasure [12575, level 77] - needs Kill Warlord Tartek and retrieve the Mistwhisper Treasure for Mistcaller Soo-gan at Mistwhisper Refuge. If you lose Jaloot's Favorite Crystal, speak to High-Oracle Soo-say in Rainspeaker Canopy. (another zone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Where in the World is Hemet Nesingwary? [12521, level 76] <- Dalaran - (Dungeon/Raid)
+  Back Through the Waygate [12797, level 78] <- Un'Goro Crater
+
+Need a quest this guide does not hand in - steps show only once that is done (8):
+  Welcome to Sholazar Basin [12489, level 76] - needs one of Where in the World is Hemet Nesingwary? [12521]
+  Still At It [12644, level 76] - needs one of Some Make Lemonade, Some Make Liquor [12634]
+  The Taste Test [12645, level 76] - needs one of Still At It [12644]
+  Home Time! [12577, level 77] - needs The Lost Mistwhisper Treasure [12575]
+  The Angry Gorloc [12578, level 77] - needs one of Home Time! [12577]
+  Lifeblood of the Mosswalker Shrine [12579, level 77] - needs one of The Angry Gorloc [12578]
+  The Mosswalker Savior [12580, level 77] - needs one of The Angry Gorloc [12578]
+  A Hero's Burden [12581, level 77] - needs one of Lifeblood of the Mosswalker Shrine [12579]
+
+Worth checking in game
+----------------------
+  Just Following Orders [12540, level 77]: could not read how many Ravenous Mangal Crocolisk are needed from the quest text; assumed 8
+  An Issue of Trust [12561, level 77]: mixes a kill-credit objective with others; check that "Blighted Corpse" really is line 2 in the quest log
+  The Lost Mistwhisper Treasure [12575, level 77]: "Kill Warlord Tartek and retrieve the Mistwhisper Treasure for Mistcaller Soo-gan at Mistwhisper Refuge. If you lose Jaloot's Favorite Crystal, speak to High-Oracle Soo-say in Rainspeaker Canopy." is assumed to be line 3 in the quest log; check it
+
+Not planned (1)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Reclamation [12546, level 78]: its mobs are level 80; this part gets you to about 77.5
+
+Left out (32)
+-------------
+repeatable (19):
+  Frenzyheart Champion [12582], Hand of the Oracles [12689], Chicken Party! [12702], Kartak's Rampage [12703], Appeasing the Great Rain Stone [12704], Will of the Titans [12705], Song of Wind and Water [12726], The Heartblood's Strength [12732], Rejek: First Blood [12734], A Cleansing Song [12735], Song of Reflection [12736], Song of Fecundity [12737], Strength of the Tempest [12741], A Hero's Headgear [12758], Tools of War [12759], Secret Strength of the Frenzyheart [12760], Mastery of the Crystals [12761], Power of the Great Ones [12762], Necklace Repair [13148]
+not in the game (on Questie's quest blacklist) (8):
+  Incense for the Festival Scorchlings [11966], Candy Bucket [12950], Sandrene the Elder [13018], Wanikaya the Elder [13024], Aerial Surveillance [13052], Sharing a Bountiful Feast [14065], A Natural Occurrence [25571], A Natural Occurrence [25773]
+needs reputation (2):
+  Return of the Lich Hunter [12692], Return of the Friendly Dryskin [12695]
+cannot be taken together with Lakeside Landing [12651], which is in the guide (1):
+  The Part-time Hunter [12654]
+special category (sort -369) (1):
+  Desecrate this Fire! [13442]
+special category (sort -22) (1):
+  Honor the Flame [13494]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,7 +1,7 @@
 {
   "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
   "guide": "1-14 Mulgore",
-  "saved": "2026-10-23 14:16",
+  "saved": "2026-10-23 18:18",
   "levels": "RestedXP",
   "parts": [
     {
@@ -138,11 +138,14 @@
         "accept:5922 @1456:-281.59,-1039.41  Accept Moonglade",
         "turnin:5932 @1456:-281.59,-1039.41  TurnIn Back to Thunder Bluff",
         "accept:6002 @1456:-281.59,-1039.41  Accept Body and Heart",
+        "obj:6002:1 @1456:-281.59,-1039.41  Objective Body and Heart / Lunaclaw Spirit",
         "turnin:6362 @1456:38.94,-1238.55  TurnIn Ride to Thunder Bluff",
         "accept:6363 @1456:38.94,-1238.55  Accept Tal the Wind Rider Master",
         "accept:744 @1456:122.65,-1264.51  Accept Preparation for Ceremony",
         "turnin:6363 @1456:26.1,-1196.73  TurnIn Tal the Wind Rider Master",
         "accept:6364 @1456:26.1,-1196.73  Accept Return to Jahan",
+        "turnin:6002 @1456:-281.59,-1039.41  TurnIn Body and Heart",
+        {"lines":[".goto 1456/1,52.93,-1150.53",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mooranta|r",">>|cRXP_WARN_This will unlock an easy quest. If you already have 2 professions, skip this step|r",".train 8613 >>Train |T134366:0|t[Skinning]",".target Mooranta"],"from":"RestedXP: 6-12 Mulgore"},
         "obj:744:1 @1412:487.14,-1054.84  Objective Preparation for Ceremony / Azure Feather (6)",
         "obj:744:2 @1412:489.71,-1015.8  Objective Preparation for Ceremony / Bronze Feather (6)",
         "obj:760:1 @1412:-148.36,-757.9  Objective Wildmane Cleansing / Cleanse the Wildmane Well",
@@ -192,7 +195,6 @@
         "accept:775 @1412:-1109.08,-992.85  Accept Journey into Thunder Bluff",
         "turnin:775 @1456:-112.71,-1209.61  TurnIn Journey into Thunder Bluff",
         "accept:776 @1456:-112.71,-1209.61  Accept Rites of the Earthmother",
-        {"lines":[".goto 1456/1,52.93,-1150.53",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mooranta|r",">>|cRXP_WARN_This will unlock an easy quest. If you already have 2 professions, skip this step|r",".train 8613 >>Train |T134366:0|t[Skinning]",".target Mooranta"],"from":"RestedXP: 6-12 Mulgore"},
         "obj:776:1 @1412:-674.96,-751.39  Objective Rites of the Earthmother / Horn of Arra'chea (1)",
         "turnin:776 @1456:-112.71,-1209.61  TurnIn Rites of the Earthmother",
         "obj:833:1 @1412:-1087.5,-1001.76  Objective A Sacred Burial / Bristleback Interloper slain (8)",

@@ -1,0 +1,705 @@
+{
+  "zone": "Dustwallow Marsh",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "35-41 Dustwallow Marsh",
+  "file": "Dustwallow Marsh (Alliance).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 35,
+      "end": 38.16,
+      "next": 41,
+      "guide": "37-39 Dustwallow Marsh: around \u0022Swamp Eye\u0022 Jarl",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Captain Garran Vimes",
+          "guide": "35-37 Dustwallow Marsh: around Captain Garran Vimes",
+          "level": 35,
+          "index": 0
+        },
+        {
+          "label": "RBSection1_2",
+          "name": "around \u0022Swamp Eye\u0022 Jarl",
+          "guide": "37-39 Dustwallow Marsh: around \u0022Swamp Eye\u0022 Jarl",
+          "level": 37,
+          "index": 1
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 41,
+      "end": 41.08,
+      "guide": "41-42 Dustwallow Marsh",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "41-42 Dustwallow Marsh",
+          "level": 41,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 1177,
+      "level": 36,
+      "req": 32,
+      "xp": 3500,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1203,
+      "level": 35,
+      "req": 30,
+      "xp": 4100,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 1204,
+      "level": 38,
+      "req": 33,
+      "xp": 3920,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1206,
+      "level": 35,
+      "req": 30,
+      "xp": 3300,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 1218,
+      "level": 35,
+      "req": 30,
+      "xp": 1650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1219,
+      "level": 35,
+      "req": 30,
+      "xp": 820,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1220,
+      "level": 35,
+      "req": 30,
+      "xp": 3300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1222,
+      "level": 37,
+      "req": 30,
+      "xp": 3710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1252,
+      "level": 35,
+      "req": 30,
+      "xp": 820,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1253,
+      "level": 35,
+      "req": 30,
+      "xp": 820,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1259,
+      "level": 40,
+      "req": 30,
+      "xp": 435,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1260,
+      "level": 38,
+      "req": 33,
+      "xp": 980,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 1264,
+      "level": 33,
+      "req": 28,
+      "xp": 1450,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Wetlands"
+    },
+    {
+      "id": 1282,
+      "level": 35,
+      "req": 30,
+      "xp": 330,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1284,
+      "level": 35,
+      "req": 30,
+      "xp": 1650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1285,
+      "level": 38,
+      "req": 30,
+      "xp": 390,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1286,
+      "level": 38,
+      "req": 30,
+      "xp": 3920,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1287,
+      "level": 38,
+      "req": 30,
+      "xp": 3920,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1302,
+      "level": 35,
+      "req": 30,
+      "xp": 820,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Wetlands"
+    },
+    {
+      "id": 1319,
+      "level": 35,
+      "req": 30,
+      "xp": 330,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1320,
+      "level": 35,
+      "req": 30,
+      "xp": 1650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1799,
+      "level": 40,
+      "req": 35,
+      "xp": 4370,
+      "part": 1,
+      "section": 0,
+      "tag": "Warlock",
+      "from": "The Barrens"
+    },
+    {
+      "id": 1947,
+      "level": 38,
+      "req": 30,
+      "xp": 390,
+      "part": 1,
+      "section": 0,
+      "tag": "Mage",
+      "from": "Mulgore"
+    },
+    {
+      "id": 1951,
+      "level": 40,
+      "req": 30,
+      "xp": 3250,
+      "part": 1,
+      "section": 0,
+      "tag": "Mage",
+      "from": "Thousand Needles"
+    },
+    {
+      "id": 1953,
+      "level": 40,
+      "req": 35,
+      "xp": 435,
+      "part": 1,
+      "section": 0,
+      "tag": "Mage",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 11123,
+      "level": 35,
+      "req": 30,
+      "xp": 330,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11126,
+      "level": 35,
+      "req": 32,
+      "xp": 3300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11128,
+      "level": 35,
+      "req": 32,
+      "xp": 3300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11133,
+      "level": 35,
+      "req": 32,
+      "xp": 3300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11134,
+      "level": 37,
+      "req": 32,
+      "xp": 4600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11136,
+      "level": 36,
+      "req": 32,
+      "xp": 350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11137,
+      "level": 37,
+      "req": 32,
+      "xp": 3710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11138,
+      "level": 37,
+      "req": 32,
+      "xp": 370,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11139,
+      "level": 37,
+      "req": 32,
+      "xp": 3710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11140,
+      "level": 37,
+      "req": 32,
+      "xp": 3710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11141,
+      "level": 37,
+      "req": 33,
+      "xp": 370,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 11142,
+      "level": 37,
+      "req": 33,
+      "xp": 3710,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 11143,
+      "level": 38,
+      "req": 33,
+      "xp": 390,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11145,
+      "level": 37,
+      "req": 33,
+      "xp": 3710,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 11146,
+      "level": 37,
+      "req": 33,
+      "xp": 3710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11147,
+      "level": 37,
+      "req": 33,
+      "xp": 3710,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 11148,
+      "level": 38,
+      "req": 33,
+      "xp": 3920,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 11156,
+      "level": 39,
+      "req": 35,
+      "xp": 4140,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 11158,
+      "level": 39,
+      "req": 35,
+      "xp": 4140,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11159,
+      "level": 41,
+      "req": 35,
+      "xp": 4590,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 11160,
+      "level": 39,
+      "req": 35,
+      "xp": 4140,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 11161,
+      "level": 39,
+      "req": 35,
+      "xp": 4140,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 11169,
+      "level": 38,
+      "req": 35,
+      "xp": 3920,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11172,
+      "level": 40,
+      "req": 35,
+      "xp": 435,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11173,
+      "level": 39,
+      "req": 35,
+      "xp": 4140,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11174,
+      "level": 40,
+      "req": 35,
+      "xp": 4370,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11177,
+      "level": 36,
+      "req": 30,
+      "xp": 350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11180,
+      "level": 36,
+      "req": 30,
+      "xp": 3500,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11181,
+      "level": 36,
+      "req": 30,
+      "xp": 3500,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 11183,
+      "level": 36,
+      "req": 30,
+      "xp": 4350,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 11184,
+      "level": 39,
+      "req": 35,
+      "xp": 4140,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11185,
+      "level": 38,
+      "req": 30,
+      "xp": 3920,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 11191,
+      "level": 35,
+      "req": 30,
+      "xp": 330,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11192,
+      "level": 35,
+      "req": 30,
+      "xp": 3300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11193,
+      "level": 35,
+      "req": 30,
+      "xp": 330,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11194,
+      "level": 36,
+      "req": 30,
+      "xp": 350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11198,
+      "level": 36,
+      "req": 30,
+      "xp": 4350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11207,
+      "level": 39,
+      "req": 35,
+      "xp": 4140,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11208,
+      "level": 39,
+      "req": 35,
+      "xp": 410,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11209,
+      "level": 37,
+      "req": 30,
+      "xp": 3710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11210,
+      "level": 37,
+      "req": 30,
+      "xp": 370,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11212,
+      "level": 37,
+      "req": 37,
+      "xp": 370,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11217,
+      "level": 40,
+      "req": 37,
+      "xp": 4370,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 11223,
+      "level": 37,
+      "req": 33,
+      "xp": 4600,
+      "part": 1,
+      "section": 1,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 11162,
+      "level": 41,
+      "req": 35,
+      "xp": 5700,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11211,
+      "level": 39,
+      "req": 38,
+      "xp": 410,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Arathi Highlands": 1,
+    "Thousand Needles": 1,
+    "The Barrens": 1,
+    "Elwynn Forest": 1
+  }
+}

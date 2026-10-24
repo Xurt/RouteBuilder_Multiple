@@ -1,0 +1,80 @@
+Teldrassil - Alliance
+Guide "5-12 Teldrassil" in group "Zone Routes (Alliance)": 105 steps, 82 stops
+Written to guides/mop/Teldrassil (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 8 of 40 held at once (NightElf Warrior), not counting quests brought in from other zones.
+14 pickups or hand-ins are within reach of a stop but planned for later.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 5. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 96 steps kept, 17 new ones slotted in, 0 moved because their prerequisites changed, 2 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 95 tasks, 14,643 yd on foot; ends at level 11.2; at its hardest you are 1.8 levels below the mobs
+  NightElf: 8 more tasks; their whole route comes to 16,778 yd; ends at level 11.4; 1 hearth; at its hardest you are 1.8 levels below the mobs
+  Worgen: 3 more tasks; their whole route comes to 16,900 yd; ends at level 11.3; 1 hearth; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 14,625 yd; ends at level 11.2; at its hardest you are 1.8 levels below the mobs
+  NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid (quests that depend on other zones): 4 more tasks; their whole route comes to 16,964 yd; ends at level 11.4; 1 hearth; at its hardest you are 1.8 levels below the mobs
+  NightElf Hunter (quests that depend on other zones): 2 more tasks; their whole route comes to 16,982 yd; ends at level 11.4; 1 hearth; at its hardest you are 1.8 levels below the mobs
+Hearthstone: set at Narret Shadowgrove (Narret Shadowgrove's inn); 1 hearth step in the guide.
+7 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+9 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+3 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+2 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (45)
+------------------------
+Start to finish here: 37 (1 for everyone, 31 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren, 4 NightElf, 1 Worgen)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Breaking Waves of Change [26383, level 10, Human/Dwarf/NightElf/Gnome/Draenei/Pandaren] -> Darkshore
+  Breaking Waves of Change [26385, level 10, Worgen] -> Darkshore
+
+Hand-in step only shows once complete (1):
+  Ferocitas the Dream Eater [2459, level 6, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Tallonkai's Jewel (1) (Darkshore)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Dolanaar Delivery [2159, level 5, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Shadowglen
+  Teldrassil: Passing Awareness [28731, level 5, NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid] <- Shadowglen
+  The Hunter's Path [6721, level 10, NightElf Hunter] <- Ironforge
+  The Hunter's Path [6722, level 10, NightElf Hunter] <- Dun Morogh
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Teldrassil: The Refusal of the Aspects [929, level 6, NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid] - needs one of Teldrassil: Passing Awareness [28731]
+
+Worth checking in game
+----------------------
+  Druid of the Claw [2561, level 10, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Rageclaw" is line 1 by the database, but RestedXP's guide has "|" there
+  Nature's Reprisal [13946, level 7, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Rascal Sprite (12)" is line 1 by the database, but RestedXP's guide has "12/12 Fel Rock grellkin killed with Ireroot Seeds" there
+
+Left out (250)
+--------------
+not in the game (on Questie's quest blacklist) (181):
+  A Lesson to Learn [26], Rise of the Silithid [162], The Woodland Protector [458], The Absent Minded Prospector [741], Teldrassil: Passing Awareness [928], Crown of the Earth [934], Moontouched Wildkin [978], Velinde Starsong [1037], Velinde's Effects [1038], Answered Questions [1044], Reception from Tyrande [1081], Mortality Wanes [1142], Vorlus Vilehoof [1683], Elanaria [1684], The Shade of Elura [1686], Smith Mathiel [1692], Weapons of Elunite [1693], Yorus Barleybrew [1698], Mathiel [1703], Sunscorched Shells [1710], Mathiel's Armor [1711], The Apple Falls [2241], Destiny Calls [2242], Erion Shadewhisper [2259], Return to Denalan [2498], The Temple of the Moon [2519], Sathrah's Sacrifice [2520], Master of the Wild Leather [2853], In Search of Knowledge [2939], Feralas: A History [2940], The Super Snapper FX [2944], Doling Justice [2972], Handle With Care [3022], In Nightmares [3370], Prayer to Elune [3378], Favored of Elune? [3661], Assisting Arch Druid Staghelm [3763], Un'Goro Soil [3764], Morrowgrain Research [3781], Morrowgrain Research [3785], ... 141 more
+above this zone's range of 5-13 (39):
+  A Summons from Ander Germaine [27225], Lord Grayson Shadowbreaker [27265], Wulf Calls [27266], Make Contact with SI:7 [27267], Make Haste to the Cathedral [27268], The Temple of the Moon [27269], An Audience with the Farseer [27270], Journey to the Wizard's Sanctum [27271], An Invitation from Moonglade [27273], The Chief Surgeon [27274], Favored of Elune [27362], Hero's Call: Vashj'ir! [27724], Hero's Call: Mount Hyjal! [27726], Hero's Call: Deepholm! [27727], Meet with Ander Germaine [28258], Meet with Wulf Hansreim [28260], Meet with Lord Tony Romano [28262], Meet with Maginor Dumas [28263], Meet with Lord Grayson Shadowbreaker [28268], Meet with High Priestess Laurena [28285], Meet with Farseer Umbrua [28287], Moonglade Calls [28289], Hero's Call: Ashenvale! [28492], Hero's Call: Thousand Needles! [28503], Hero's Call: Tanaris! [28507], Hero's Call: Feralas! [28511], Hero's Call: Un'Goro Crater! [28525], Hero's Call: Silithus! [28528], Hero's Call: Desolace! [28531], Hero's Call: Stonetalon Mountains! [28539], Hero's Call: Felwood! [28543], Hero's Call: Winterspring! [28544], Hero's Call: Southern Barrens! [28550], Hero's Call: Dustwallow Marsh! [28552], Hero's Call: Uldum! [28558], Hero's Call: Outland! [28708], Hero's Call: Northrend! [28709], Hero's Call: Twilight Highlands! [28716], The Troll Incursion [29156]
+repeatable (10):
+  The Secret to Perfect Kimchi [29313], Remembering the Ancestors [29314], Back to Basics [29316], Ribs for the Sentinels [29318], Happy as a Clam Digger [29321], Stocking Up [29323], The Sister's Pendant [29324], A Slippery Snack [29325], Spice Bread Aplenty [29357], An Old Favorite [29359]
+needs a profession (6):
+  Elixirs for the Bladeleafs [1581], Moonglow Vest [1582], Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+special category (sort -394) (4):
+  Learning the Ropes [31552], On The Mend [31553], Got one! [31555], Level Up! [31826]
+needs reputation (3):
+  Darnassus Attacked? [32414], Jaina's Resolution [32416], Tracking the Thieves [32460]
+special category (sort -284) (2):
+  Darnassus [12773], Hammering It Out [25563]
+handed in here, but the database does not say where it starts (2):
+  Nessa Shadowsong [26756], The Bounty of Teldrassil [26757]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29387], Guardians of Hyjal: Call of the Ancients [29391]
+cannot be taken together with Breaking Waves of Change [26383], which is in the guide (1):
+  Hero's Call: Darkshore! [28490]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

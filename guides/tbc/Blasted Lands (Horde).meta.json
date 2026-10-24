@@ -1,0 +1,138 @@
+{
+  "zone": "Blasted Lands",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "50-61 Blasted Lands",
+  "file": "Blasted Lands (Horde).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 50,
+      "end": 50.54,
+      "next": 59,
+      "guide": "50-51 Blasted Lands: around Bloodmage Drazial",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Bloodmage Drazial",
+          "guide": "50-51 Blasted Lands: around Bloodmage Drazial",
+          "level": 50,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 59,
+      "end": 59,
+      "next": 62,
+      "guide": "59-60 Blasted Lands",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "59-60 Blasted Lands",
+          "level": 59,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 62,
+      "end": 62,
+      "guide": "62-63 Blasted Lands",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "62-63 Blasted Lands",
+          "level": 62,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 2521,
+      "level": 55,
+      "req": 45,
+      "xp": 12250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2581,
+      "level": 50,
+      "req": 45,
+      "xp": 6810,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2583,
+      "level": 50,
+      "req": 45,
+      "xp": 6810,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2585,
+      "level": 50,
+      "req": 45,
+      "xp": 6810,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2601,
+      "level": 50,
+      "req": 45,
+      "xp": 6810,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2603,
+      "level": 50,
+      "req": 45,
+      "xp": 6810,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2721,
+      "level": 58,
+      "req": 49,
+      "xp": 9020,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Swamp of Sorrows"
+    },
+    {
+      "id": 3501,
+      "level": 55,
+      "req": 45,
+      "xp": 8170,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Swamp of Sorrows": 1,
+    "Hellfire Peninsula": 1
+  }
+}

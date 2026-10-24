@@ -75,7 +75,7 @@ above this zone's range of 30-46 (4):
   Gahz'rilla [2770], An Orphan Looking For a Home [3841], A Short Incubation [3842], The Newest Member of the Family [3843]
 repeatable (2):
   Zamek's Distraction [1191], Indurium Ore [1192]
-special category (sort -366) (2):
+not in the game (on Questie's quest blacklist) (2):
   Skyseer the Elder [8682], Morningdew the Elder [8724]
 cannot be taken together with Get the Gnomes Drunk [1120], which is in the guide (1):
   Get the Goblins Drunk [1121]

@@ -17,7 +17,7 @@ RXPGuides.RegisterGuide([[
 #subweight -10
 #name 10-12 Silverpine Forest: around Dalar Dawnweaver
 --RouteBuilder:next
-#next Zone Routes (Horde)\10-12 The Barrens: around Sergra Darkthorn;Zone Routes (Horde)\8-11 Tirisfal Glades: around Carendin Halgar;Zone Routes (Horde)\7-11 Durotar: around Master Gadrin
+#next Zone Routes (Horde)\10-12 The Barrens: around Sergra Darkthorn;Zone Routes (Horde)\8-11 Tirisfal Glades: around Carendin Halgar;Zone Routes (Horde)\4-10 Durotar: around Master Gadrin
 
 step
     .xp 10 >>Grind to level 10 (Lost Deathstalkers needs it)

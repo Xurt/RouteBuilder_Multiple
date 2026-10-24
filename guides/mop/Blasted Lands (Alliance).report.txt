@@ -1,0 +1,58 @@
+Blasted Lands - Alliance
+Guide "55-58 Blasted Lands" in group "Zone Routes (Alliance)": 85 steps, 80 stops
+Written to guides/mop/Blasted Lands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+3 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 55. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 112 steps kept, 10 new ones slotted in, 0 moved because their prerequisites changed, 5 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 117 tasks, 24,835 yd on foot; ends at level 57.1; 2 hearths; at its hardest you are 2.1 levels below the mobs
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 25,277 yd; ends at level 57.1; 2 hearths; 3 ORDER PROBLEMS; at its hardest you are 2.1 levels below the mobs
+Hearthstone: set at Quartermaster Apone (Quartermaster Apone's inn); 2 hearth steps in the guide.
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (41)
+------------------------
+Start to finish here: 35 (5 for everyone, 30 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Hand-in step only shows once complete (1):
+  Demoniac Vessel [26186, level 58, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Demoniac Vessel (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Call of the Warmatron [28865, level 54] <- Silithus
+  Nethergarde Needs You! [28867, level 54] <- Silithus
+  Onward to the Blasted Lands [27919, level 55] <- Swamp of Sorrows
+  Hero's Call: Blasted Lands! [28673, level 55, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Stormwind City
+  Blasted Lands: The Other Side of the World [28857, level 55, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Winterspring
+
+Worth checking in game
+----------------------
+  Minor Distractions [25710, level 55, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: could not read how many Okril'lon Scout are needed from the quest text; assumed 8
+
+Not planned (1)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  The Downfall of Marl Wormthorn [26187, level 59]: its mobs are level 60; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 57.1
+
+Left out (42)
+-------------
+not in the game (on Questie's quest blacklist) (39):
+  Mazen's Behest [1364], Supplies for Nethergarde [1395], The Lost Supplies [1423], To Serve Kum'isha [2521], Kum'isha's Endeavors [2522], Snickerfang Jowls [2581], Rage of Ages [2582], A Boar's Vitality [2583], Spirit of the Boar [2584], The Decisive Striker [2585], Salt of the Scorpok [2586], The Basilisk's Bite [2601], Infallible Mind [2602], Vulture's Vigor [2603], Spiritual Domination [2604], Kirith [2721], The Demon Hunter [2744], Thadius Grimshade [2990], Nekrum's Medallion [2991], The Divination [2992], Loramus [3141], Everything Counts In Large Amounts [3501], One Draenei's Junk... [3502], Breaking the Ward [3508], The Name of the Beast [3511], Azsharite [3602], The Prison's Bindings [7581], The Prison's Casing [7582], Suppression [7583], Bellowrage the Elder [8647], Into the Breach [10259], Honor the Flame [11808], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Sharing a Bountiful Feast [14064], Desecrate this Fire! [28917], Candy Bucket [28960], Candy Bucket [28961], The Dark Portal [64038]
+repeatable (2):
+  One Draenei's Junk... [25771], Kum'isha's Endeavors [25772]
+above this zone's range of 54-59 (1):
+  Through the Dark Portal [10119]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

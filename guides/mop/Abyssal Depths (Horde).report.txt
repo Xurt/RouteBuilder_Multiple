@@ -1,0 +1,81 @@
+Abyssal Depths - Horde
+Guide "81-81 Abyssal Depths" in group "Zone Routes (Horde)": 96 steps, 93 stops
+Written to guides/mop/Abyssal Depths (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 81. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 97 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+(The zone has quests below level 81, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 3 tasks, 869 yd on foot; ends at level 81.0
+  everyone (quests that depend on other zones): 94 more tasks; their whole route comes to 13,525 yd; ends at level 81.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (33)
+------------------------
+Start to finish here: 1 (0 for everyone, 1 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Full Circle [26221, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Vashj'ir
+
+Need a quest this guide does not hand in - steps show only once that is done (31):
+  Orako [26086, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Perfect Fuel [26126]
+  "Glow-Juice" [26087, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Orako [26086]
+  Here Fishie Fishie [26088, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of "Glow-Juice" [26087]
+  Die Fishman Die [26089, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of "Glow-Juice" [26087]
+  I Brought You This Egg [26090, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of "Glow-Juice" [26087]
+  Here Fishie Fishie 2: Eel-Egg-Trick Boogaloo [26091, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of I Brought You This Egg [26090]
+  Orako's Report [26092, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Here Fishie Fishie [26088], Die Fishman Die [26089]
+  Environmental Awareness [26122, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Full Circle [26221]
+  The Perfect Fuel [26126, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Environmental Awareness [26122]
+  Sira'kess Slaying [25974, level 82, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Orako's Report [26092]
+  Treasure Reclamation [25976, level 82, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Orako's Report [26092]
+  A Standard Day for Azrajar [25980, level 82, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Orako's Report [26092]
+  Those Aren't Masks [25982, level 82, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Orako's Report [26092]
+  Promontory Point [25984, level 82, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Put It On [25988]
+  Put It On [25988, level 82, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Those Aren't Masks [25982]
+  The Wavespeaker [26057, level 82, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Put It On [25988]
+  Free Wil'hai [26065, level 82] - needs one of Enormous Eel Egg [26019], I Brought You This Egg [26090]
+  Clearing the Defiled [26071, level 82, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Put It On [25988]
+  Into the Totem [26072, level 82] - needs one of Put It On [25987], Put It On [25988]
+  Scalding Shrooms [26096, level 82] - needs one of Put It On [25987], Put It On [25988]
+  ... It Will Come [26111, level 82] - needs one of Into the Totem [26072]
+  Unplug L'ghorek [26130, level 82] - needs one of ... It Will Come [26111]
+  Fiends from the Netherworld [26133, level 82, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of ... It Will Come [26111]
+  Communing with the Ancient [26140, level 82] - needs one of Unplug L'ghorek [26130]
+  Runestones of Binding [26141, level 82] - needs one of Communing with the Ancient [26140]
+  Ascend No More! [26142, level 82] - needs one of Communing with the Ancient [26140]
+  Prisoners [26149, level 82, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Communing with the Ancient [26140]
+  Twilight Extermination [26154, level 82] - needs Runestones of Binding [26141], Ascend No More! [26142]
+  Back to the Tenebrous Cavern [26182, level 82, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of All that Rises [26143]
+  Defending the Rift [26194, level 82, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Back to the Tenebrous Cavern [26182]
+  All that Rises [26143, level 83] - needs one of Twilight Extermination [26154]
+
+Worth checking in game
+----------------------
+  Put It On [25988, level 82, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: "Merciless One in Control of You" has no place in the data; taken to be done where the quest is given
+  Here Fishie Fishie 2: Eel-Egg-Trick Boogaloo [26091, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: mixes a kill-credit objective with others; check that "Weakened Great-Eel" really is line 2 in the quest log
+  Twilight Extermination [26154, level 82]: mixes a kill-credit objective with others; check that "Twilight Devotee" really is line 2 in the quest log
+  Twilight Extermination [26154, level 82]: mixes a kill-credit objective with others; check that "Faceless Overseer" really is line 3 in the quest log
+
+Left out (6)
+------------
+special category (sort -381) (3):
+  Elemental Bonds: Desire [29328], Into Coaxing Tides [29336], Into Constant Earth [29337]
+not in the game (on Questie's quest blacklist) (2):
+  When in Vashj'ir... [26123], Candy Bucket [28986]
+cannot be taken together with Secure Seabrush [26124], which is in the guide (1):
+  Secure Seabrush [26125]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

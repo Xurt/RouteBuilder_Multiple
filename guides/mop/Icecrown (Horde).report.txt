@@ -1,0 +1,273 @@
+Icecrown - Horde - part 1 of 2, planned from level 79
+Guide "79-81 Icecrown" in group "Zone Routes (Horde)": this part has 358 steps, 340 stops
+Written to guides/mop/Icecrown (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: 636 PROBLEMS
+  ! A Tale of Valor (13068) is never picked up (Orc DeathKnight)
+  ! A Hero Remains (13072) is never picked up (Orc DeathKnight)
+  ! The Keeper's Favor (13073) is never picked up (Orc DeathKnight)
+  ! Hope Within the Emerald Nightmare (13074) is never picked up (Orc DeathKnight)
+  ! The Boon of Remulos (13075) is never picked up (Orc DeathKnight)
+  ! Time Yet Remains (13076) is never picked up (Orc DeathKnight)
+  ! The Touch of an Aspect (13077) is never picked up (Orc DeathKnight)
+  ! The Restless Dead (13110) is never picked up (Orc DeathKnight)
+  ! The Purging Of Scourgeholme (13118) is never picked up (Orc DeathKnight)
+  ! The Scourgestone (13122) is never picked up (Orc DeathKnight)
+  ! The Air Stands Still (13125) is never picked up (Orc DeathKnight)
+  ! The Stone That Started A Revolution (13130) is never picked up (Orc DeathKnight)
+  ! It Could Kill Us All (13135) is never picked up (Orc DeathKnight)
+  ! Into The Frozen Heart Of Northrend (13139) is never picked up (Orc DeathKnight)
+  ! The Battle For Crusaders' Pinnacle (13141) is never picked up (Orc DeathKnight)
+  ! The Crusaders' Pinnacle (13157) is never picked up (Orc DeathKnight)
+  ! Orgrim's Hammer (13224) is never picked up (Orc DeathKnight)
+  ! The Broken Front (13228) is never picked up (Orc DeathKnight)
+  ! Army of the Damned (13236) is never picked up (Orc DeathKnight)
+  ! Poke and Prod (13237) is never picked up (Orc DeathKnight)
+  ! Good For Something? (13238) is never picked up (Orc DeathKnight)
+  ! Volatility (13239) is never picked up (Orc DeathKnight)
+  ! Opportunity (13258) is never picked up (Orc DeathKnight)
+  ! Establishing Superiority (13259) is never picked up (Orc DeathKnight)
+  ! Takes One to Know One (13260) is never picked up (Orc DeathKnight)
+  ! Blow it Up! (13262) is never picked up (Orc DeathKnight)
+  ! A Short Fuse (13263) is never picked up (Orc DeathKnight)
+  ! That's Abominable! (13264) is never picked up (Orc DeathKnight)
+  ! A Voice in the Dark (13271) is never picked up (Orc DeathKnight)
+  ! Time to Hide (13275) is never picked up (Orc DeathKnight)
+  ! Against the Giants (13277) is never picked up (Orc DeathKnight)
+  ! Coprous the Defiled (13278) is never picked up (Orc DeathKnight)
+  ! Basic Chemistry (13279) is never picked up (Orc DeathKnight)
+  ! Return to the Surface (13282) is never picked up (Orc DeathKnight)
+  ! Get to Ymirheim! (13293) is never picked up (Orc DeathKnight)
+  ! Field Repairs (13304) is never picked up (Orc DeathKnight)
+  ! Do Your Worst (13305) is never picked up (Orc DeathKnight)
+  ! Joining the Assault (13340) is never picked up (Orc DeathKnight)
+  ! Futility (13348) is never picked up (Orc DeathKnight)
+  ! Cradle of the Frostbrood (13349) is never picked up (Orc DeathKnight)
+  ! Sneak Preview (13351) is never picked up (Orc DeathKnight)
+  ! Drag and Drop (13352) is never picked up (Orc DeathKnight)
+  ! Chain of Command (13354) is never picked up (Orc DeathKnight)
+  ! Cannot Reproduce (13355) is never picked up (Orc DeathKnight)
+  ! Retest Now (13356) is never picked up (Orc DeathKnight)
+  ! Not a Bug (13358) is never picked up (Orc DeathKnight)
+  ! Where Dragons Fell (13359) is never picked up (Orc DeathKnight)
+  ! Time for Answers (13360) is never picked up (Orc DeathKnight)
+  ! The Hunter and the Prince (13361) is never picked up (Orc DeathKnight)
+  ! Knowledge is a Terrible Burden (13362) is never picked up (Orc DeathKnight)
+  ! Argent Aid (13363) is never picked up (Orc DeathKnight)
+  ! Tirion's Gambit (13364) is never picked up (Orc DeathKnight)
+  ! Need More Info (13366) is never picked up (Orc DeathKnight)
+  ! A Tale of Valor (13068) is never picked up (Orc Monk)
+  ! A Hero Remains (13072) is never picked up (Orc Monk)
+  ! The Keeper's Favor (13073) is never picked up (Orc Monk)
+  ! Hope Within the Emerald Nightmare (13074) is never picked up (Orc Monk)
+  ! The Boon of Remulos (13075) is never picked up (Orc Monk)
+  ! Time Yet Remains (13076) is never picked up (Orc Monk)
+  ! The Touch of an Aspect (13077) is never picked up (Orc Monk)
+  ... and 576 more
+Quest log: at most 9 of 40 held at once (Tauren Druid), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 79. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 34 steps kept, 434 new ones slotted in, 0 moved because their prerequisites changed, 1 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 79, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 311 tasks, 50,445 yd on foot; ends at level 81.0; at its hardest you are 1.1 levels below the mobs
+  DeathKnight: 2 more tasks; their whole route comes to 22,769 yd; ends at level 80.2
+  Tauren Druid/Troll Druid: 1 more tasks; their whole route comes to 51,099 yd; ends at level 81.0; at its hardest you are 1.1 levels below the mobs
+  everyone (quests that depend on other zones): 148 more tasks; their whole route comes to 42,264 yd; ends at level 80.2
+  Orc Priest/Orc Shaman/Orc Druid/Undead Priest/Undead Shaman/Undead Druid/Tauren Priest/Tauren Shaman/Tauren Druid/Troll Priest/Troll Shaman/Troll Druid/Goblin Priest/Goblin Shaman/Goblin Druid/Pandaren Priest/Pandaren Shaman/Pandaren Druid (quests that depend on other zones): 2 more tasks; their whole route comes to 72,816 yd; ends at level 81.0; 1 ORDER PROBLEMS; at its hardest you are 1.1 levels below the mobs
+  Tauren Druid/Troll Druid (quests that depend on other zones): 2 more tasks; their whole route comes to 73,568 yd; ends at level 81.0; 1 ORDER PROBLEMS; at its hardest you are 1.1 levels below the mobs
+  BloodElf Priest/BloodElf Shaman/BloodElf Druid (quests that depend on other zones): 2 more tasks; their whole route comes to 72,816 yd; ends at level 81.0; 1 ORDER PROBLEMS; at its hardest you are 1.1 levels below the mobs
+Hearthstone: set at Galley Chief Dolinger (Galley Chief Dolinger's inn); 0 hearth steps in the guide.
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+9 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (153)
+-------------------------
+Start to finish here: 100 (43 for everyone, 52 Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid, 4 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren, 1 DeathKnight)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Touch of an Aspect [13077, level 80, Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid] -> Dragonblight
+
+Hand-in step only shows once complete (2):
+  The Circle's Future [27404, level 20, Tauren Druid/Troll Druid] - needs Walden's Elixirs (1) (Shadowfang Keep - Lower Observatory (fake ID for Shadowfang Keep)); Moontouched Wood (1) (an unknown place); Deathless Sinew (5) (an unknown place)
+  Need More Info [13366, level 80, Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid] - needs Cult of the Damned Thesis (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (7):
+  A Journey to Moonglade [27283, level 20, Tauren Druid/Troll Druid] <- Thunder Bluff
+  Moonglade Calls [28289, level 50, Druid] <- Thunder Bluff
+  The Boon of Alexstrasza [13079, level 80] <- Dragonblight
+  The Boon of A'dal [13082, level 80] <- Shattrath City
+  Preparations for War [13419, level 80, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Dalaran - (Dungeon/Raid)
+  Return To Myralion Sunblaze [24558, level 80, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Dalaran - (Dungeon/Raid)
+  Warchief's Command: Mount Hyjal! [27721, level 80, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Orgrimmar
+
+Need a quest this guide does not hand in - steps show only once that is done (43):
+  In Strict Confidence [12840, level 80] - needs one of The Grand (Admiral's) Plan [12839]
+  Second Chances [12847, level 80] - needs one of In Strict Confidence [12840]
+  The Admiral Revealed [12852, level 80] - needs one of Second Chances [12847]
+  Hope Yet Remains [13080, level 80] - needs one of The Boon of Alexstrasza [13079]
+  The Will of the Naaru [13081, level 80] - needs one of Hope Yet Remains [13080] -> Shattrath City
+  Light Within the Darkness [13083, level 80] - needs one of The Boon of A'dal [13082]
+  Spill Their Blood [13134, level 80] - needs Destroying the Altars [13119], Death's Gaze [13120]
+  I'm Smelting... Smelting! [13138, level 80] - needs one of Jagged Shards [13136]
+  The Runesmiths of Malykriss [13140, level 80] - needs one of Jagged Shards [13136]
+  New Recruit [13143, level 80] - needs one of Vereth the Cunning [13155]
+  Killing Two Scourge With One Skeleton [13144, level 80] - needs A Visit to the Doctor [13152], By Fire Be Purged [13211]
+  The Vile Hold [13145, level 80] - needs one of New Recruit [13143]
+  Generosity Abounds [13146, level 80] - needs one of The Vile Hold [13145]
+  Matchmaker [13147, level 80] - needs one of The Vile Hold [13145]
+  A Visit to the Doctor [13152, level 80] - needs Spill Their Blood [13134], I'm Smelting... Smelting! [13138], The Runesmiths of Malykriss [13140]
+  Vereth the Cunning [13155, level 80] - needs Seeds of Chaos [13172], Amidst the Confusion [13174]
+  Stunning View [13160, level 80] - needs one of The Vile Hold [13145]
+  The Rider of the Unholy [13161, level 80] - needs one of Stunning View [13160]
+  The Rider of Frost [13162, level 80] - needs one of Stunning View [13160]
+  The Rider of Blood [13163, level 80] - needs one of Stunning View [13160]
+  The Fate of Bloodbane [13164, level 80] - needs The Rider of the Unholy [13161], The Rider of Frost [13162], The Rider of Blood [13163]
+  Parting Gifts [13168, level 80] - needs one of A Short Fuse [13263], Tirion's Gambit [13364], A Short Fuse [13389], Tirion's Gambit [13403]
+  An Undead's Best Friend [13169, level 80] - needs one of Parting Gifts [13168]
+  Honor is for the Weak [13170, level 80] - needs one of Parting Gifts [13168]
+  From Whence They Came [13171, level 80] - needs one of Parting Gifts [13168]
+  Seeds of Chaos [13172, level 80] - needs An Undead's Best Friend [13169], Honor is for the Weak [13170], From Whence They Came [13171]
+  Amidst the Confusion [13174, level 80] - needs An Undead's Best Friend [13169], Honor is for the Weak [13170], From Whence They Came [13171]
+  By Fire Be Purged [13211, level 80] - needs Spill Their Blood [13134], I'm Smelting... Smelting! [13138], The Runesmiths of Malykriss [13140]
+  He's Gone to Pieces [13212, level 80] - needs one of Killing Two Scourge With One Skeleton [13144]
+  Putting Olakin Back Together Again [13220, level 80] - needs one of He's Gone to Pieces [13212]
+  I'm Not Dead Yet! [13229, level 80, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Destroying the Altars [13119], Death's Gaze [13120]
+  The Flesh Giant Champion [13235, level 80] - needs one of Putting Olakin Back Together Again [13220]
+  Raise the Barricades [13306, level 80, Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid] - needs one of Need More Info [13366]
+  Bloodspattered Banners [13307, level 80, Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid] - needs one of Raise the Barricades [13306]
+  Mind Tricks [13308, level 80] - needs one of Orgrim's Hammer [13224], The Skybreaker [13225]
+  The Ironwall Rampart [13312, level 80, Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid] - needs Raise the Barricades [13306], No Rest For The Wicked [13367]
+  Blinding the Eyes in the Sky [13313, level 80, Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid] - needs one of Raise the Barricades [13306]
+  The Guardians of Corp'rethar [13316, level 80, Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid] - needs one of Before the Gate of Horror [13329]
+  Shatter the Shards [13328, level 80, Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid] - needs one of Before the Gate of Horror [13329]
+  Before the Gate of Horror [13329, level 80, Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid] - needs Bloodspattered Banners [13307], The Ironwall Rampart [13312]
+  No Rest For The Wicked [13367, level 80, Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid] - needs one of Need More Info [13366]
+  A Victory For The Sunreavers [24798, level 80, BloodElf Priest/BloodElf Shaman/BloodElf Druid] - needs one of The Purification of Quel'Delar [24596]
+  A Victory For The Sunreavers [24799, level 80, Orc Priest/Orc Shaman/Orc Druid/Undead Priest/Undead Shaman/Undead Druid/Tauren Priest/Tauren Shaman/Tauren Druid/Troll Priest/Troll Shaman/Troll Druid/Goblin Priest/Goblin Shaman/Goblin Druid/Pandaren Priest/Pandaren Shaman/Pandaren Druid] - needs one of The Purification of Quel'Delar [24598]
+
+Worth checking in game
+----------------------
+  Second Chances [12847, level 80]: "Arete's Gate summoned" is assumed to be line 3 in the quest log; check it
+  Second Chances [12847, level 80]: "Arete's Gate Summoned Kill Credit Bunny (1)" has no place in the data; taken to be done where the quest is given
+  Crush Dem Vrykuls! [12992, level 80]: objective "Instructor Hroegar (8)" is line 1 by the database, but RestedXP's guide has "Jotunheim Vrykul slain (0/15)" there
+  Revenge for the Vargul [13059, level 80]: mixes a kill-credit objective with others; check that "Thane Illskar" really is line 2 in the quest log
+  The Last Line Of Defense [13086, level 78]: mixes a kill-credit objective with others; check that "Frostbrood Destroyer" really is line 2 in the quest log
+  The Last Line Of Defense [13086, level 78]: objective "Frostbrood Destroyer slain (100)" is line 1 by the database, but RestedXP's guide has "Scourge Attackers (100)" there
+  The Restless Dead [13110, level 78, Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid]: objective "Reanimated Crusader slain (10)" is line 1 by the database, but RestedXP's guide has "Restless Soul Freed (10)" there
+  Find the Ancient Hero [13133, level 80]: "Subjugated Iskalder (1)" has no place in the data; taken to be done where the quest is given
+  The Battle For Crusaders' Pinnacle [13141, level 79, Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid]: objective "Halof the Deathbringer" is line 1 by the database, but RestedXP's guide has "Battle for Crusaders' Pinnacle (1)" there
+  New Recruit [13143, level 80]: could not read how many Lithe Stalker are needed from the quest text; assumed 8
+  Generosity Abounds [13146, level 80]: could not read how many Scourge Bomb are needed from the quest text; assumed 8
+  Matchmaker [13147, level 80]: could not read how many Umbral Brute are needed from the quest text; assumed 8
+  Volatility [13239, level 80, Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid]: objective "Frostbrood Skytalon (3)" is line 1 by the database, but RestedXP's guide has "Field Tests Conducted (3)" there
+  Do Your Worst [13305, level 80, Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid]: could not read how many Frostskull Magus are needed from the quest text; assumed 8
+  Raise the Barricades [13306, level 80, Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid]: objective "Ebon Blade Marker slain (8)" is line 1 by the database, but RestedXP's guide has "Barricades constructed (8)" there
+  Retest Now [13356, level 80, Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid]: "Writhing Mass KC Bunny (1)" has no place in the data; taken to be done where the quest is given
+
+Put off to a later part (6)
+---------------------------
+These need a higher level than this part ends at:
+  What The Dragons Know [24555, level 80]: needs level 80; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 80.2
+  Tempering The Blade [24560, level 80]: needs level 80; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 80.2
+  Journey To The Sunwell [24562, level 80]: needs level 80; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 80.2
+  A Victory For The Sunreavers [24800, level 80]: needs level 80; this part gets BloodElf Warrior/BloodElf Paladin/BloodElf Hunter/BloodElf Rogue/BloodElf DeathKnight/BloodElf Mage/BloodElf Warlock characters to about 80.2
+  A Victory For The Sunreavers [24801, level 80]: needs level 80; this part gets Orc Warrior/Orc Paladin/Orc Hunter/Orc Rogue/Orc DeathKnight/Orc Mage/Orc Warlock/Undead Warrior/Undead Paladin/Undead Hunter/Undead Rogue/Undead DeathKnight/Undead Mage/Undead Warlock/Tauren Warrior/Tauren Paladin/Tauren Hunter/Tauren Rogue/Tauren DeathKnight/Tauren Mage/Tauren Warlock/Troll Warrior/Troll Paladin/Troll Hunter/Troll Rogue/Troll DeathKnight/Troll Mage/Troll Warlock/Goblin Warrior/Goblin Paladin/Goblin Hunter/Goblin Rogue/Goblin DeathKnight/Goblin Mage/Goblin Warlock/Pandaren Warrior/Pandaren Paladin/Pandaren Hunter/Pandaren Rogue/Pandaren DeathKnight/Pandaren Mage/Pandaren Warlock characters to about 80.2
+  As Hyjal Burns [25316, level 81]: needs level 80; this part gets you to about 80.2
+
+Left out (197)
+--------------
+repeatable (86):
+  From Their Corpses, Rise! [12813], No Fly Zone [12815], Intelligence Gathering [12838], Leave Our Mark [12995], Shoot 'Em Up [13069], Vile Like Fire! [13071], Reading the Bones [13093], Necklace Repair [13148], Make Them Pay! [13234], Volatility [13261], That's Abominable! [13276], Neutralizing the Plague [13281], King of the Mountain [13283], Assault by Ground [13301], Slaves to Saronite [13302], Assault by Air [13310], Blood of the Chosen [13330], Keeping the Alliance Blind [13331], Drag and Drop [13353], Retest Now [13357], Not a Bug [13365], No Rest For The Wicked [13368], Total Ohmage: The Valley of Lost Hope! [13376], Riding the Wavelength: The Bombardment [13406], A Blade Fit For A Champion [13673], A Worthy Weapon [13674], The Edge Of Winter [13675], Training In The Field [13676], Learning The Reins [13677], A Blade Fit For A Champion [13762], A Worthy Weapon [13763], The Edge Of Winter [13764], A Valiant's Field Training [13765], The Grand Melee [13767], A Blade Fit For A Champion [13768], A Worthy Weapon [13769], The Edge Of Winter [13770], A Valiant's Field Training [13771], The Grand Melee [13772], A Blade Fit For A Champion [13773], ... 46 more
+special category (sort -241) (42):
+  The Black Knight of Silverpine? [13634], The Seer's Crystal [13641], The Stories Dead Men Tell [13643], There's Something About the Squire [13654], The Black Knight's Orders [13663], The Black Knight's Fall [13664], The Argent Tournament [13668], Up To The Challenge [13678], The Aspirant's Challenge [13680], A Valiant Of Orgrimmar [13691], A Valiant Of Sen'jin [13693], A Valiant Of Thunder Bluff [13694], A Valiant Of Undercity [13695], A Valiant Of Silvermoon [13696], The Valiant's Charge [13697], Valiant Of Orgrimmar [13707], Valiant Of Sen'jin [13708], Valiant Of Thunder Bluff [13709], Valiant Of Undercity [13710], Valiant Of Silvermoon [13711], The Valiant's Charge [13719], The Valiant's Charge [13720], The Valiant's Charge [13721], The Valiant's Charge [13722], The Valiant's Challenge [13726], The Valiant's Challenge [13727], The Valiant's Challenge [13728], The Valiant's Challenge [13729], The Valiant's Challenge [13731], A Champion Rises [13736], A Champion Rises [13737], A Champion Rises [13738], A Champion Rises [13739], A Champion Rises [13740], Eadric the Pure [13794], The Scourgebane [13795], The Blastbolt Brothers [13820], Mastery Of Melee [13829], Mastery Of The Shield-Breaker [13838], Mastery Of The Charge [13839], ... 2 more
+not in the game (on Questie's quest blacklist) (41):
+  A Lesson to Learn [27], Trial of the Lake [28], Trial of the Sea Lion [30], Rabine Saturna [1123], Under the Chitin Was... [1185], Shards of the Felvine [5526], A Reliquary of Purity [5527], Moonglade [5922], Great Bear Spirit [5930], Lessons Anew [6126], Curing the Sick [6129], Umber, Archivist [6844], Uncovering Past Secrets [6845], Seed of Life [7066], Shrouded in Nightmare [8446], Waking Legends [8447], Tyrande and Remulos [8734], The Nightmare's Corruption [8735], The Nightmare Manifests [8736], Elune's Candle [8862], Festival Dumplings [8863], Festive Lunar Dresses [8864], Festive Lunar Pant Suits [8865], Elune's Blessing [8868], Small Rockets [8876], Firework Launcher [8877], Festive Recipes [8878], Large Rockets [8879], Cluster Rockets [8880], Large Cluster Rockets [8881], Cluster Launcher [8882], Valadar Starsong [8883], Torwa Pathfinder [9063], Waking the Sleeper [10964], No Mere Dream [10965], Incense for the Festival Scorchlings [11966], Amped for Revolt! [13374], A Natural Occurrence [25571], A Natural Occurrence [25773], Umber, Archivist [28893], ... 1 more
+handed in here, but the database does not say where it starts (7):
+  The Grand (Admiral's) Plan [12839], Fringe Science Benefits [13373], Chief Engineer Copperclaw [13378], Green Technology [13379], Takes One to Know One [14447], Takes One to Know One [14448], The Battered Hilt [24554]
+dungeon quest (7):
+  Reforging The Sword [24559], The Halls Of Reflection [24561], The Purification of Quel'Delar [24564], The Purification of Quel'Delar [24594], The Purification of Quel'Delar [24596], The Purification of Quel'Delar [24598], The Breath of Cenarius [28343]
+special category (sort -379) (3):
+  A Smoke-Stained Locket [29298], Unlocking the Secrets Within [29302], Tragedy and Family [29303]
+cannot be taken together with Blackwatch [13106], which is in the guide (2):
+  Destroying the Altars [13119], Death's Gaze [13120]
+starts from a random drop, and no quest in this guide kills those mobs (2):
+  Jagged Shards [13136], Battle Plans Of The Kvaldir [24442]
+special category (sort -394) (2):
+  Grand Master Payne [31928], A Brief Reprieve [31983]
+helper for The Broken Front (1):
+  Avenge Me! [13230]
+special category (sort -369) (1):
+  Desecrate this Fire! [13447]
+cannot be taken together with I'm Not Dead Yet! [13229], which is in the guide (1):
+  Let's Get Out of Here! [13481]
+special category (sort -22) (1):
+  Honor the Flame [13499]
+special category (sort -381) (1):
+  Elemental Bonds: The Vow [29331]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Icecrown - Horde - part 2 of 2, planned from level 84
+Guide "79-81 Icecrown" in group "Zone Routes (Horde)": this part has 14 steps, 12 stops
+Written to guides/mop/Icecrown (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 84. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 11 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 320 yd on foot; ends at level 84.0
+  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 2,993 yd; ends at level 84.0
+  BloodElf Warrior/BloodElf Paladin/BloodElf Hunter/BloodElf Rogue/BloodElf DeathKnight/BloodElf Mage/BloodElf Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 2,993 yd; ends at level 84.0
+  Tauren Druid/Troll Druid (quests that depend on other zones): 1 more tasks; their whole route comes to 2,993 yd; ends at level 84.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  As Hyjal Burns [25316, level 81] -> Mount Hyjal
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  The Circle's Future [27404, level 20, Tauren Druid/Troll Druid] <- your earlier visit to this zone
+  Need More Info [13366, level 80, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (5):
+  What The Dragons Know [24555, level 80, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Battered Hilt [24554] -> Dalaran - (Dungeon/Raid)
+  Tempering The Blade [24560, level 80, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Reforging The Sword [24559]
+  Journey To The Sunwell [24562, level 80, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Halls Of Reflection [24561] -> Isle of Quel'Danas
+  A Victory For The Sunreavers [24800, level 80, BloodElf Warrior/BloodElf Paladin/BloodElf Hunter/BloodElf Rogue/BloodElf DeathKnight/BloodElf Mage/BloodElf Warlock] - needs one of The Purification of Quel'Delar [24594] -> Dalaran - (Dungeon/Raid)
+  A Victory For The Sunreavers [24801, level 80, Orc Warrior/Orc Paladin/Orc Hunter/Orc Rogue/Orc DeathKnight/Orc Mage/Orc Warlock/Undead Warrior/Undead Paladin/Undead Hunter/Undead Rogue/Undead DeathKnight/Undead Mage/Undead Warlock/Tauren Warrior/Tauren Paladin/Tauren Hunter/Tauren Rogue/Tauren DeathKnight/Tauren Mage/Tauren Warlock/Troll Warrior/Troll Paladin/Troll Hunter/Troll Rogue/Troll DeathKnight/Troll Mage/Troll Warlock/Goblin Warrior/Goblin Paladin/Goblin Hunter/Goblin Rogue/Goblin DeathKnight/Goblin Mage/Goblin Warlock/Pandaren Warrior/Pandaren Paladin/Pandaren Hunter/Pandaren Rogue/Pandaren DeathKnight/Pandaren Mage/Pandaren Warlock] - needs one of The Purification of Quel'Delar [24564] -> Dalaran - (Dungeon/Raid)
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

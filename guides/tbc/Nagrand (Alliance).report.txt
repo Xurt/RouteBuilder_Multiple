@@ -1,0 +1,160 @@
+Nagrand - Alliance - part 1 of 2, planned from level 65
+Guide "65-68 Nagrand" in group "Zone Routes (Alliance)": this part has 147 steps, 130 stops
+Written to guides/tbc/Nagrand (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: 26 PROBLEMS
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Human Warrior)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Human Paladin)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Human Rogue)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Human Priest)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Human Mage)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Human Warlock)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Dwarf Warrior)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Dwarf Paladin)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Dwarf Hunter)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Dwarf Rogue)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Dwarf Priest)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (NightElf Warrior)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (NightElf Hunter)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (NightElf Rogue)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (NightElf Priest)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (NightElf Druid)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Gnome Warrior)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Gnome Rogue)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Gnome Mage)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Gnome Warlock)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Draenei Warrior)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Draenei Paladin)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Draenei Hunter)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Draenei Priest)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Draenei Shaman)
+  ! an objective of Oshu'gun Crystal Powder comes before the quest is picked up (Draenei Mage)
+Quest log: at most 13 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+12 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 65. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 158 steps kept, 9 new ones slotted in, 2 moved because their prerequisites changed, 16 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 148 tasks, 36,825 yd on foot; ends at level 66.0; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 2.1 levels below the mobs
+  everyone (quests that depend on other zones): 21 more tasks; their whole route comes to 40,211 yd; ends at level 66.0; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 2.1 levels below the mobs
+Hearthstone: set at Mathar G'ochar (Mathar G'ochar's inn); 1 hearth step in the guide.
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+9 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+3 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (58)
+------------------------
+Start to finish here: 49 (49 for everyone)
+
+Hand-in step only shows once complete (1):
+  Bring Me The Egg! [10111, level 66] - needs Severed Talon of the Matriarch (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  The Master's Grand Design? [10251, level 67] <- Shattrath City
+  It's Just That Easy? [10010, level 68] <- Shattrath City
+
+Need a quest this guide does not hand in - steps show only once that is done (6):
+  Corki's Gone Missing Again! [9924, level 66] - needs one of HELP! [9923]
+  Murkblood Corrupters [9862, level 67] - needs one of The Howling Wind [9861]
+  Corki's Ransom [9954, level 67] - needs one of Corki's Gone Missing Again! [9924]
+  Cho'war the Pillager [9955, level 67] - needs one of Corki's Ransom [9954]
+  Vision of the Dead [10252, level 67] - needs one of The Master's Grand Design? [10251]
+  Levixus the Soul Caller [10253, level 67] - needs one of Vision of the Dead [10252] -> Terokkar Forest
+
+Worth checking in game
+----------------------
+2 quests have no experience figure in the database: their experience is estimated, and 1 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  The Underneath [9818]
+  Murkblood Invaders [9871, level 67]: has a reputation or spell objective, which is not planned
+
+Put off to a later part (11)
+----------------------------
+These need a higher level than this part ends at:
+  Wanted: Durn the Hungerer [9938, level 67]: needs level 66; this part gets you to about 66.1
+  Survey the Land [9991, level 68]: needs level 66; this part gets you to about 66.1
+  Buying Time [9999, level 68]: needs level 66; this part gets you to about 66.1
+  The Master Planner [10001, level 68]: needs level 66; this part gets you to about 66.1
+  Patience and Understanding [10004, level 68]: needs level 66; this part gets you to about 66.1
+  Forge Camp: Annihilated [10011, level 68]: its mobs are level 70; this part gets you to about 66.1
+  Against the Legion [10641, level 70]: needs level 68; this part gets you to about 66.1
+  Illidan's Pupil [10646, level 70]: needs level 68; this part gets you to about 66.1
+  The Book of Fel Names [10649, level 70]: needs level 68; this part gets you to about 66.1
+  Against the Illidari [10668, level 70]: needs level 68; this part gets you to about 66.1
+  Against All Odds [10669, level 70]: needs level 68; this part gets you to about 66.1
+
+Left out (40)
+-------------
+needs reputation (18):
+  A Message to Telaar [9792], The Throne of the Elements [9869], Stopping the Spread [9874], Solving the Problem [9878], The Totem of Kar'dash [9879], Obsidian Warbeads [9893], HELP! [9923], Wanted: Giselda the Crone [9936], Wanted: Zorbo the Advisor [9940], The Ravaged Caravan [9956], He Called Himself Altruis... [9982], Fierce Enemies [10476], Altruis [10640], Return to the Aldor [10650], Altruis [10689], Return to the Scryers [10691], A Mystifying Vision [11042], Visions of Destruction [11044]
+repeatable (13):
+  More Crystal Fragments [9883], Membership Benefits [9884], Membership Benefits [9885], Membership Benefits [9886], Membership Benefits [9887], More Obsidian Warbeads [9892], More Heads Full of Ivory [9915], Oshu'gun Crystal Powder [10077], More Warbeads [10477], In Defense of Halaa [11502], Reset Current Rating - 2v2 [95158], Reset Current Rating - 3v3 [95251], Reset Current Rating - 5v5 [95252]
+not in the game (on Questie's quest blacklist) (6):
+  Jheel is at Aeris Landing! [10954], Desecrate this Fire! [11778], Honor the Flame [11821], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Candy Bucket [12357]
+needs a profession (3):
+  Eyes in the Sky [10986], To Catch A Sparrowhawk [10987], The Raven Stones [10988]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Nagrand - Alliance - part 2 of 2, planned from level 69
+Guide "65-68 Nagrand" in group "Zone Routes (Alliance)": this part has 31 steps, 28 stops
+Written to guides/tbc/Nagrand (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 69. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 15 steps kept, 15 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 12 tasks, 1,078 yd on foot; ends at level 69.0
+  everyone (quests that depend on other zones): 18 more tasks; their whole route comes to 7,903 yd; ends at level 69.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (12)
+------------------------
+Start to finish here: 3 (3 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Patience and Understanding [10004, level 68] -> Shattrath City
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Bring Me The Egg! [10111, level 66] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (7):
+  Wanted: Durn the Hungerer [9938, level 67] - needs Wanted: Giselda the Crone [9936], Wanted: Zorbo the Advisor [9940]
+  Forge Camp: Annihilated [10011, level 68] - needs one of It's Just That Easy? [10010]
+  Against the Legion [10641, level 70] - needs one of Altruis [10640], Altruis [10689]
+  Illidan's Pupil [10646, level 70] - needs Against the Legion [10641], Against the Illidari [10668], Against All Odds [10669]
+  The Book of Fel Names [10649, level 70] - needs one of Illidan's Pupil [10646]
+  Against the Illidari [10668, level 70] - needs one of Altruis [10640], Altruis [10689]
+  Against All Odds [10669, level 70] - needs one of Altruis [10640], Altruis [10689]
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

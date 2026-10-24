@@ -1,0 +1,257 @@
+Burning Steppes - Horde - part 1 of 2, planned from level 50
+Guide "50-52 Burning Steppes" in group "Zone Routes (Horde)": this part has 138 steps, 106 stops
+Written to guides/mop/Burning Steppes (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: 126 PROBLEMS
+  ! Into the Black Tooth Hovel (28432) is never picked up (Pandaren Warrior)
+  ! Grunt Work (28433) is never picked up (Pandaren Warrior)
+  ! Strategic Cuts (28434) is never picked up (Pandaren Warrior)
+  ! The Kodocaller's Horn (28435) is never picked up (Pandaren Warrior)
+  ! Taking the Horn For Ourselves (28436) is never picked up (Pandaren Warrior)
+  ! General Thorg'izog (28437) is never picked up (Pandaren Warrior)
+  ! Trial by Magma (28438) is never picked up (Pandaren Warrior)
+  ! I Am the Law and I Am the Lash (28439) is never picked up (Pandaren Warrior)
+  ! Abuse of Power (28440) is never picked up (Pandaren Warrior)
+  ! Enough Damage For One Day (28441) is never picked up (Pandaren Warrior)
+  ! Flame Crest (28442) is never picked up (Pandaren Warrior)
+  ! Blackened Ashes (28443) is never picked up (Pandaren Warrior)
+  ! Latent Demons of the Land (28444) is never picked up (Pandaren Warrior)
+  ! A Heap of Delicious Worg (28445) is never picked up (Pandaren Warrior)
+  ! Blood Tour (28446) is never picked up (Pandaren Warrior)
+  ! Draconic Vanguard (28447) is never picked up (Pandaren Warrior)
+  ! A Deal With a Dragon (28448) is never picked up (Pandaren Warrior)
+  ! Not Fireflies, Flameflies (28491) is never picked up (Pandaren Warrior)
+  ! Into the Black Tooth Hovel (28432) is never picked up (Pandaren Hunter)
+  ! Grunt Work (28433) is never picked up (Pandaren Hunter)
+  ! Strategic Cuts (28434) is never picked up (Pandaren Hunter)
+  ! The Kodocaller's Horn (28435) is never picked up (Pandaren Hunter)
+  ! Taking the Horn For Ourselves (28436) is never picked up (Pandaren Hunter)
+  ! General Thorg'izog (28437) is never picked up (Pandaren Hunter)
+  ! Trial by Magma (28438) is never picked up (Pandaren Hunter)
+  ! I Am the Law and I Am the Lash (28439) is never picked up (Pandaren Hunter)
+  ! Abuse of Power (28440) is never picked up (Pandaren Hunter)
+  ! Enough Damage For One Day (28441) is never picked up (Pandaren Hunter)
+  ! Flame Crest (28442) is never picked up (Pandaren Hunter)
+  ! Blackened Ashes (28443) is never picked up (Pandaren Hunter)
+  ! Latent Demons of the Land (28444) is never picked up (Pandaren Hunter)
+  ! A Heap of Delicious Worg (28445) is never picked up (Pandaren Hunter)
+  ! Blood Tour (28446) is never picked up (Pandaren Hunter)
+  ! Draconic Vanguard (28447) is never picked up (Pandaren Hunter)
+  ! A Deal With a Dragon (28448) is never picked up (Pandaren Hunter)
+  ! Not Fireflies, Flameflies (28491) is never picked up (Pandaren Hunter)
+  ! Into the Black Tooth Hovel (28432) is never picked up (Pandaren Rogue)
+  ! Grunt Work (28433) is never picked up (Pandaren Rogue)
+  ! Strategic Cuts (28434) is never picked up (Pandaren Rogue)
+  ! The Kodocaller's Horn (28435) is never picked up (Pandaren Rogue)
+  ! Taking the Horn For Ourselves (28436) is never picked up (Pandaren Rogue)
+  ! General Thorg'izog (28437) is never picked up (Pandaren Rogue)
+  ! Trial by Magma (28438) is never picked up (Pandaren Rogue)
+  ! I Am the Law and I Am the Lash (28439) is never picked up (Pandaren Rogue)
+  ! Abuse of Power (28440) is never picked up (Pandaren Rogue)
+  ! Enough Damage For One Day (28441) is never picked up (Pandaren Rogue)
+  ! Flame Crest (28442) is never picked up (Pandaren Rogue)
+  ! Blackened Ashes (28443) is never picked up (Pandaren Rogue)
+  ! Latent Demons of the Land (28444) is never picked up (Pandaren Rogue)
+  ! A Heap of Delicious Worg (28445) is never picked up (Pandaren Rogue)
+  ! Blood Tour (28446) is never picked up (Pandaren Rogue)
+  ! Draconic Vanguard (28447) is never picked up (Pandaren Rogue)
+  ! A Deal With a Dragon (28448) is never picked up (Pandaren Rogue)
+  ! Not Fireflies, Flameflies (28491) is never picked up (Pandaren Rogue)
+  ! Into the Black Tooth Hovel (28432) is never picked up (Pandaren Priest)
+  ! Grunt Work (28433) is never picked up (Pandaren Priest)
+  ! Strategic Cuts (28434) is never picked up (Pandaren Priest)
+  ! The Kodocaller's Horn (28435) is never picked up (Pandaren Priest)
+  ! Taking the Horn For Ourselves (28436) is never picked up (Pandaren Priest)
+  ! General Thorg'izog (28437) is never picked up (Pandaren Priest)
+  ... and 66 more
+Quest log: at most 19 of 40 held at once (BloodElf Paladin), not counting quests brought in from other zones.
+3 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 50. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 126 steps kept, 52 new ones slotted in, 0 moved because their prerequisites changed, 2 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 50, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 114 tasks, 26,107 yd on foot; ends at level 52.1; 1 hearth
+  Troll/BloodElf: 3 more tasks; their whole route comes to 26,107 yd; ends at level 52.1; 1 hearth
+  Orc/Undead: 3 more tasks; their whole route comes to 26,107 yd; ends at level 52.1; 1 hearth
+  Tauren: 3 more tasks; their whole route comes to 26,107 yd; ends at level 52.1; 1 hearth
+  Goblin: 3 more tasks; their whole route comes to 26,107 yd; ends at level 52.1; 1 hearth
+  Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior: 2 more tasks; their whole route comes to 14,725 yd; ends at level 50.8
+  Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter: 2 more tasks; their whole route comes to 14,996 yd; ends at level 50.8
+  Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue: 2 more tasks; their whole route comes to 14,487 yd; ends at level 50.8
+  Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage: 2 more tasks; their whole route comes to 14,843 yd; ends at level 50.8
+  Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock: 2 more tasks; their whole route comes to 26,704 yd; ends at level 52.1; 1 hearth
+  Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman: 2 more tasks; their whole route comes to 14,153 yd; ends at level 50.8
+  Tauren Paladin/BloodElf Paladin: 2 more tasks; their whole route comes to 27,458 yd; ends at level 52.1; 1 hearth
+  Undead Priest: 2 more tasks; their whole route comes to 27,079 yd; ends at level 52.1; 1 hearth
+  Tauren Priest: 2 more tasks; their whole route comes to 27,079 yd; ends at level 52.1; 1 hearth
+  Troll Priest: 2 more tasks; their whole route comes to 27,079 yd; ends at level 52.1; 1 hearth
+  BloodElf Paladin: 2 more tasks; their whole route comes to 27,458 yd; ends at level 52.1; 1 hearth
+  BloodElf Priest: 2 more tasks; their whole route comes to 27,079 yd; ends at level 52.1; 1 hearth
+  Goblin Priest: 2 more tasks; their whole route comes to 27,079 yd; ends at level 52.1; 1 hearth
+  everyone (quests that depend on other zones): 21 more tasks; their whole route comes to 18,364 yd; ends at level 50.8; 2 hearths; at its hardest you are 1.2 levels below the mobs
+  BloodElf (quests that depend on other zones): 5 more tasks; their whole route comes to 31,778 yd; ends at level 52.1; 2 hearths
+Hearthstone: set at Gruna (Gruna's inn); 3 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 50 for Meet with Grezz Ragefist (Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior)
+  level 50 for Meet with Ormak Grimshot (Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter)
+  level 50 for Meet with Gordul (Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue)
+  level 50 for Meet with Ureda (Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage)
+  level 50 for Meet with Zevrost (Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock)
+  level 50 for Meet with Kardris Dreamseeker (Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman)
+  level 50 for Meet with Master Pyreanor (BloodElf Paladin)
+  level 50 for Meet with Sunwalker Atohmo (Tauren Paladin/BloodElf Paladin)
+  level 50 for Meet with Dark Cleric Cecille (Undead Priest)
+  level 50 for Meet with Seer Liwatha (Tauren Priest)
+  level 50 for Meet with Shadow-Walker Zuru (Troll Priest)
+  level 50 for Meet with Tyelis (BloodElf Priest)
+  level 50 for Meet with Brother Silverhallow (Goblin Priest)
+3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+5 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+4 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (88)
+------------------------
+Start to finish here: 36 (3 for everyone, 17 Orc/Undead/Tauren/Troll/BloodElf/Goblin, 12 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren, 1 Orc/Undead, 1 Tauren, 1 Goblin, 1 Troll/BloodElf)
+
+Picked up here, handed in elsewhere - these stay in the log (37):
+  Warchief's Command: Ghostlands! [28560, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Ghostlands
+  An Audience with Ureda [27277, level 20, Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage] -> Orgrimmar
+  Grimshot's Call [27278, level 20, Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter] -> Orgrimmar
+  The Shattered Hand [27279, level 20, Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue] -> Orgrimmar
+  The Dreamseeker Calls [27280, level 20, Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman] -> Orgrimmar
+  Grezz Ragefist [27281, level 20, Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior] -> Orgrimmar
+  Zevrost's Behest [27282, level 20, Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock] -> Orgrimmar
+  Seek Out Master Pyreanor [27298, level 20, BloodElf Paladin] -> Orgrimmar
+  Follow the Sun [27304, level 20, Tauren Paladin/BloodElf Paladin] -> Orgrimmar
+  The Seer's Call [27331, level 20, Tauren Priest] -> Orgrimmar
+  Seek the Shadow-Walker [27332, level 20, Troll Priest] -> Orgrimmar
+  Dark Cleric Cecille [27334, level 20, Undead Priest] -> Orgrimmar
+  Journey to Orgrimmar [27335, level 20, BloodElf Priest] -> Orgrimmar
+  Seek Brother Silverhallow [28164, level 20, Goblin Priest] -> Orgrimmar
+  Warchief's Command: Hillsbrad Foothills! [28571, level 20, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Hillsbrad Foothills
+  Warchief's Command: Arathi Highlands! [28572, level 25, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Arathi Highlands
+  Warchief's Command: Northern Stranglethorn Vale! [28688, level 25, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Northern Stranglethorn
+  Warchief's Command: The Hinterlands! [28574, level 30, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> The Hinterlands
+  Warchief's Command: The Cape of Stranglethorn! [28704, level 30, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> The Cape of Stranglethorn
+  Warchief's Command: Western Plaguelands! [28575, level 35, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Western Plaguelands
+  Warchief's Command: Eastern Plaguelands! [28577, level 40, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Eastern Plaguelands
+  Warchief's Command: Badlands! [28580, level 45, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Eastern Plaguelands
+  Warchief's Command: Searing Gorge! [28581, level 48, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Searing Gorge
+  Meet with Grezz Ragefist [28290, level 50, Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior] -> Orgrimmar
+  Meet with Ormak Grimshot [28297, level 50, Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter] -> Orgrimmar
+  Meet with Gordul [28298, level 50, Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue] -> Orgrimmar
+  Meet with Zevrost [28299, level 50, Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock] -> Orgrimmar
+  Meet with Ureda [28300, level 50, Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage] -> Orgrimmar
+  Meet with Kardris Dreamseeker [28301, level 50, Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman] -> Orgrimmar
+  Meet with Sunwalker Atohmo [28302, level 50, Tauren Paladin/BloodElf Paladin] -> Orgrimmar
+  Meet with Master Pyreanor [28303, level 50, BloodElf Paladin] -> Orgrimmar
+  Meet with Dark Cleric Cecille [28304, level 50, Undead Priest] -> Orgrimmar
+  Meet with Tyelis [28307, level 50, BloodElf Priest] -> Orgrimmar
+  Meet with Seer Liwatha [28308, level 50, Tauren Priest] -> Orgrimmar
+  Meet with Shadow-Walker Zuru [28309, level 50, Troll Priest] -> Orgrimmar
+  Meet with Brother Silverhallow [28323, level 50, Goblin Priest] -> Orgrimmar
+  The Kodocaller's Horn [28435, level 50, Orc/Undead/Tauren/Troll/BloodElf/Goblin] -> another zone
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Fly to Silvermoon City [9133, level 7, BloodElf] <- Eversong Woods
+  Hero of the Sin'dorei [9328, level 21, BloodElf] <- Ghostlands
+  Allegiance to the Horde [9627, level 21, BloodElf] <- Orgrimmar
+  Friend of the Sin'dorei [9811, level 21, Orc/Undead/Tauren/Troll/Goblin/Pandaren] <- Ghostlands
+  Mouton Flamestar [28515, level 50, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Searing Gorge
+
+Need a quest this guide does not hand in - steps show only once that is done (10):
+  Skymistress Gloaming [9134, level 7, BloodElf] - needs one of Fly to Silvermoon City [9133] -> Eversong Woods
+  Envoy to the Horde [9621, level 21, BloodElf] - needs one of Hero of the Sin'dorei [9328] -> Undercity
+  Envoy to the Horde [9812, level 21, Orc/Undead/Tauren/Troll/Pandaren] - needs one of Friend of the Sin'dorei [9811] -> Undercity
+  A Delivery for Thorg'izog [28450, level 51, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Placing the Pawns [28449]
+  A Delivery for Neeralak [28451, level 51, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Placing the Pawns [28449]
+  A Delivery for Xi'lun [28452, level 51, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Placing the Pawns [28449]
+  Locked and Loaded [28453, level 52, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs A Delivery for Thorg'izog [28450], A Delivery for Neeralak [28451], A Delivery for Xi'lun [28452]
+  Assault on Dreadmaul Rock [28454, level 52, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Locked and Loaded [28453]
+  Glory Amidst Chaos [28455, level 52, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Assault on Dreadmaul Rock [28454]
+  The Spoils of War [28456, level 52, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Glory Amidst Chaos [28455]
+
+Worth checking in game
+----------------------
+  The Kodocaller's Horn [28435, level 50, Orc/Undead/Tauren/Troll/BloodElf/Goblin]: "Kodo Horn Credit (1)" has no place in the data; taken to be done where the quest is given
+  I Am the Law and I Am the Lash [28439, level 51, Orc/Undead/Tauren/Troll/BloodElf/Goblin]: "Cudgel Credit (1)" has no place in the data; taken to be done where the quest is given
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  The Bogpaddle Bullet [28570, level 52]: needs level 51; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 50.8
+
+Left out (189)
+--------------
+not in the game (on Questie's quest blacklist) (158):
+  Speak with Deino [1943], Journey to the Marsh [1947], Return to the Marsh [1953], Tabetha's Task [2861], Seeking Strahad [3001], Dark Iron Legacy [3801], Dreadmaul Rock [3821], Put Her Down [4701], Kibler's Exotic Pets [4729], In Search of Menara Voidrender [4738], En-Ay-Es-Tee-Why [4862], Mother's Milk [4866], Knowledge of the Orb of Orahil [4968], Wildeyes [7564], Xorothian Stardust [7625], Bell of Dethmoora [7626], Wheel of the Black March [7627], Doomsday Candle [7628], Imp Delivery [7629], Arcanite [7630], The Darkmoon Faire [7926], The Hunter's Charm [8151], A Simple Request [8233], Magecraft [8250], Cenarion Aid [8254], An Imp's Request [8419], Rumblerock the Elder [8636], Dawnstrider the Elder [8683], The Hero of the Day [8799], Lunar Fireworks [8867], The Lunar Festival [8873], The Lunar Festival [8874], The Lunar Festival [8875], Valadar Starsong [8883], Torwa Pathfinder [9063], A Light in Dark Places [9319], Stealing Stormwind's Flame [9330], Stealing Ironforge's Flame [9331], Stealing Darnassus's Flame [9332], A Thief's Reward [9339], ... 118 more
+above this zone's range of 50-53 (15):
+  Warchief's Command: Vashj'ir! [27718], Warchief's Command: Mount Hyjal! [27721], Warchief's Command: Deepholm! [27722], Warchief's Command: Uldum! [28557], Warchief's Command: Blasted Lands! [28671], Warchief's Command: Outland! [28705], Warchief's Command: Northrend! [28711], Warchief's Command: Twilight Highlands! [28717], The Zandalari Menace [29157], A Summons from Lady Liadrin [64139], The Master's Path [64140], A Gesture of Commitment [64141], A Demonstration of Loyalty [64142], True Masters of the Light [64143], True Masters of the Light [64144]
+needs a profession (4):
+  Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+needs reputation (3):
+  Get My Results! [32329], What's in the Box? [32330], One Last Grasp [32412]
+special category (sort -284) (2):
+  Silvermoon [12788], Hammering It Out [25759]
+dungeon quest (2):
+  Friends on The Other Side [27469], Adventurers Wanted: Blackrock Depths [28069]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29388], Guardians of Hyjal: Call of the Ancients [29390]
+special category (sort -23) (1):
+  Hammering It Out [25789]
+handed in here, but the database does not say where it starts (1):
+  Placing the Pawns [28449]
+cannot be taken together with The Bogpaddle Bullet [28570], which is in the guide (1):
+  Warchief's Command: Swamp of Sorrows! [28677]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Burning Steppes - Horde - part 2 of 2, planned from level 55
+Guide "50-52 Burning Steppes" in group "Zone Routes (Horde)": this part has 2 steps, 1 stops
+Written to guides/mop/Burning Steppes (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 55. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 55.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (1)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Bogpaddle Bullet [28570, level 52, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Swamp of Sorrows
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

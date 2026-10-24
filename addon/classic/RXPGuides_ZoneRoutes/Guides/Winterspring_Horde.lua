@@ -515,11 +515,6 @@ RXPGuides.RegisterGuide([[
 #name 58-59 Winterspring: around Storm Shadowhoof
 
 step
-    .goto 1452/1,-4656.19,6714.31
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Harlo Wigglesworth|r
-    .accept 6606 >>Accept A Little Luck
-    .target Harlo Wigglesworth
-step
     .goto 1452/1,-4713.70,6716.68
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Storm Shadowhoof|r
     .accept 5055 >>Accept Brumeran of the Chillwind
@@ -528,7 +523,6 @@ step
 step
     .goto 1452/1,-4712.99,6720.47
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Mau'ari|r
-    .turnin 6606 >>Turn in A Little Luck
     .accept 969 >>Accept Luck Be With You
     .target Witch Doctor Mau'ari
 step

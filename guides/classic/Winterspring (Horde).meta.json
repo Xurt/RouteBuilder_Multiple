@@ -43,7 +43,7 @@
     {
       "part": 3,
       "start": 58,
-      "end": 58.14,
+      "end": 58.13,
       "guide": "58-59 Winterspring: around Storm Shadowhoof",
       "sections": [
         {
@@ -203,15 +203,6 @@
       "level": 60,
       "req": 53,
       "xp": 3300,
-      "part": 3,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 6606,
-      "level": 60,
-      "req": 55,
-      "xp": 660,
       "part": 3,
       "section": 0,
       "tag": ""

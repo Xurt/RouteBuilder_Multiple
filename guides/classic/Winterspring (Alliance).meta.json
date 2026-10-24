@@ -27,7 +27,7 @@
     {
       "part": 2,
       "start": 55,
-      "end": 55.26,
+      "end": 55.25,
       "next": 58,
       "guide": "55-56 Winterspring: around Umi Rumplesnicker",
       "sections": [
@@ -235,15 +235,6 @@
       "level": 59,
       "req": 53,
       "xp": 640,
-      "part": 2,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 6606,
-      "level": 60,
-      "req": 55,
-      "xp": 660,
       "part": 2,
       "section": 0,
       "tag": ""

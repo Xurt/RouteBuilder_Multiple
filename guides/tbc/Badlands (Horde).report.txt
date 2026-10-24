@@ -1,0 +1,204 @@
+Badlands - Horde - part 1 of 3, planned from level 35
+Guide "35-43 Badlands" in group "Zone Routes (Horde)": this part has 31 steps, 24 stops
+Written to guides/tbc/Badlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 35. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 14 steps kept, 11 new ones slotted in, 0 moved because their prerequisites changed, 29 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 13 tasks, 4,730 yd on foot; ends at level 35.4
+  everyone (quests that depend on other zones): 12 more tasks; their whole route comes to 5,810 yd; ends at level 35.4; at its hardest you are 3.8 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+
+Quests in the guide (16)
+------------------------
+Start to finish here: 3 (3 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Crystal in the Mountains [635, level 35] -> Arathi Highlands
+  Report to Helgrum [1420, level 40] -> Swamp of Sorrows
+
+Hand-in step only shows once complete (2):
+  Pearl Diving [705, level 37] - needs Blue Pearl (9) (Stranglethorn Vale)
+  Coolant Heads Prevail [713, level 37] - needs Frost Oil (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Martek the Exiled [1106, level 35] <- Thousand Needles
+  Neeka Bloodscar [1418, level 35] <- Swamp of Sorrows
+  Theldurin the Lost [687, level 40] <- Ironforge
+  Forbidden Knowledge [737, level 40] <- Ironforge
+  Necklace Recovery, Take 3 [2341, level 44] <- Orgrimmar
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Gyro... What? [714, level 37] - needs one of Coolant Heads Prevail [713]
+  Liquid Stone [715, level 37] - needs one of Gyro... What? [714]
+  News for Fizzle [1137, level 38] - needs one of Indurium [1108] -> Thousand Needles
+  Indurium [1108, level 39] - needs one of Martek the Exiled [1106]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (17)
+----------------------------
+These need a higher level than this part ends at:
+  The Lost Fragments [692, level 41]: its mobs are level 42; this part gets you to about 36.2
+  Solution to Doom [709, level 40]: is a level 40 quest; this part gets you to about 36.2
+  Study of the Elements: Rock [710, level 37]: its mobs are level 38; this part gets you to about 35.5
+  Study of the Elements: Rock [711, level 39]: its mobs are level 39; this part gets you to about 36.2
+  Study of the Elements: Rock [712, level 42]: its mobs are level 43; this part gets you to about 36.2
+  Stone Is Better than Cloth [716, level 42]: follows Study of the Elements: Rock [712]
+  To the Undercity for Yagyin's Digest [728, level 40]: follows Solution to Doom [709]
+  This Is Going to Be Hard [734, level 42]: follows Study of the Elements: Rock [712]
+  This Is Going to Be Hard [777, level 42]: follows This Is Going to Be Hard [734]
+  This Is Going to Be Hard [778, level 45]: its mobs are level 45; this part gets you to about 36.2
+  Broken Alliances [782, level 43]: needs level 40; this part gets you to about 36.2
+  Uldaman Reagent Run [2202, level 42]: is a level 42 quest; this part gets you to about 36.2
+  Badlands Reagent Run [2258, level 39]: its mobs are level 40; this part gets you to about 36.2
+  Translating the Journal [2338, level 42]: needs level 37; this part gets you to about 36.2
+  Find the Gems and Power Source [2339, level 44]: needs level 37; this part gets you to about 36.2
+  Deliver the Gems [2340, level 44]: needs level 37; this part gets you to about 36.2
+  Unclaimed Baggage [9439, level 40]: is a level 40 quest; this part gets you to about 36.2
+
+Left out (34)
+-------------
+dungeon quest (17):
+  Disharmony of Fire [3907], Commander Gor'shak [3981], The Rise of the Machines [4063], KILL ON SIGHT: Dark Iron Dwarves [4081], KILL ON SIGHT: High Ranking Dark Iron Officials [4082], Precarious Predicament [4121], Grark Lorkrub [4122], Operation: Death to Angerforge [4132], Vivian Lagrave [4133], Lost Thunderbrew Recipe [4134], The Pack Mistress [4724], The Darkstone Tablet [4768], Vivian Lagrave and the Darkstone Tablet [4769], Warlord's Command [4903], Operative Bijou [4981], Bijou's Reconnaissance Report [4983], The Last Element [7201]
+above this zone's range of 36-49 (8):
+  Summoning the Princess [656], Broken Alliances [793], Dreadmaul Rock [3821], Krom'Grul [3822], Disharmony of Flame [3906], The Rise of the Machines [4061], The Rise of the Machines [4062], Eitrigg's Wisdom [4941]
+not in the game (on Questie's quest blacklist) (4):
+  Honor the Flame [11842], Playing with Fire [11915], Incense for the Festival Scorchlings [11966], Candy Bucket [12385]
+needs a profession (3):
+  Flash Bomb Recipe [1559], Badlands Reagent Run II [2203], Dragonscale Leatherworking [5145]
+repeatable (1):
+  Seal of the Earth [795]
+handed in here, but the database does not say where it starts (1):
+  Translating the Journal [2318]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Badlands - Horde - part 2 of 3, planned from level 38
+Guide "35-43 Badlands" in group "Zone Routes (Horde)": this part has 25 steps, 22 stops
+Written to guides/tbc/Badlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 38. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 21 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 19 tasks, 8,533 yd on foot; ends at level 38.5; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 6 more tasks; their whole route comes to 8,552 yd; ends at level 38.5; at its hardest you are 1.8 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (11)
+------------------------
+Start to finish here: 5 (5 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  To the Undercity for Yagyin's Digest [728, level 40] -> Undercity
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Pearl Diving [705, level 37] <- your earlier visit to this zone
+  Coolant Heads Prevail [713, level 37] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Translating the Journal [2338, level 42] - needs one of Translating the Journal [2318]
+  Find the Gems and Power Source [2339, level 44] - needs one of Translating the Journal [2338]
+  Deliver the Gems [2340, level 44] - needs one of Find the Gems and Power Source [2339] -> Orgrimmar
+
+Worth checking in game
+----------------------
+
+Put off to a later part (8)
+---------------------------
+These need a higher level than this part ends at:
+  The Lost Fragments [692, level 41]: its mobs are level 42; this part gets you to about 38.7
+  Study of the Elements: Rock [712, level 42]: its mobs are level 43; this part gets you to about 38.7
+  Stone Is Better than Cloth [716, level 42]: follows Study of the Elements: Rock [712]
+  This Is Going to Be Hard [734, level 42]: follows Study of the Elements: Rock [712]
+  This Is Going to Be Hard [777, level 42]: follows This Is Going to Be Hard [734]
+  This Is Going to Be Hard [778, level 45]: its mobs are level 45; this part gets you to about 38.7
+  Broken Alliances [782, level 43]: needs level 40; this part gets you to about 38.7
+  Uldaman Reagent Run [2202, level 42]: is a level 42 quest; this part gets you to about 38.7
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Badlands - Horde - part 3 of 3, planned from level 41
+Guide "35-43 Badlands" in group "Zone Routes (Horde)": this part has 23 steps, 22 stops
+Written to guides/tbc/Badlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 41. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 8 steps kept, 13 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 10 tasks, 4,091 yd on foot; ends at level 41.2; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 11 more tasks; their whole route comes to 7,139 yd; ends at level 41.2; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (9)
+-----------------------
+Start to finish here: 3 (3 for everyone)
+
+Hand-in step only shows once complete (1):
+  Stone Is Better than Cloth [716, level 42] - needs Patterned Bronze Bracers (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Pearl Diving [705, level 37] <- your earlier visit to this zone
+  Coolant Heads Prevail [713, level 37] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  The Lost Fragments [692, level 41] - needs one of Theldurin the Lost [687]
+  This Is Going to Be Hard [734, level 42] - needs Gyro... What? [714]
+  This Is Going to Be Hard [777, level 42] - needs one of This Is Going to Be Hard [734]
+
+Worth checking in game
+----------------------
+
+Not planned (1)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  This Is Going to Be Hard [778, level 45]: its mobs are level 45; this part gets you to about 41.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,175 @@
+Searing Gorge - Alliance - part 1 of 3, planned from level 43
+Guide "43-52 Searing Gorge" in group "Zone Routes (Alliance)": this part has 11 steps, 8 stops
+Written to guides/tbc/Searing Gorge (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 43. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 9 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed, 65 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 5 tasks, 1,429 yd on foot; ends at level 43.1; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 2,716 yd; ends at level 43.1; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+
+Quests in the guide (5)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  The Horn of the Beast [3181, level 43] -> Loch Modan
+  Suntara Stones [3368, level 46] -> Ironforge
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Dwarven Justice [3371, level 46] <- Ironforge
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Release Them [3372, level 46] - needs one of Dwarven Justice [3371]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (22)
+----------------------------
+These need a higher level than this part ends at:
+  Prayer to Elune [3377, level 50]: is a level 50 quest; this part gets you to about 44.4
+  Prayer to Elune [3378, level 50]: follows Prayer to Elune [3377]
+  Divine Retribution [3441, level 48]: is a level 48 quest; this part gets you to about 44.4
+  The Flawless Flame [3442, level 48]: follows Divine Retribution [3441]
+  Forging the Shaft [3443, level 48]: follows The Flawless Flame [3442]
+  The Flame's Casing [3452, level 50]: follows Forging the Shaft [3443]
+  The Torch of Retribution [3453, level 50]: is a level 50 quest; this part gets you to about 44.4
+  The Torch of Retribution [3454, level 50]: follows The Torch of Retribution [3453]
+  Squire Maltrake [3462, level 50]: follows The Torch of Retribution [3454]
+  Set Them Ablaze! [3463, level 52]: is a level 52 quest; this part gets you to about 44.4
+  Trinkets... [3481, level 50]: follows Set Them Ablaze! [3463]
+  Rise, Obsidion! [3566, level 46]: needs level 45; this part gets you to about 44.4
+  Caught! [4449, level 45]: needs level 43; this part gets you to about 43.2
+  Ledger from Tanaris [4450, level 46]: needs level 43; this part gets you to about 43.2
+  The Key to Freedom [4451, level 47]: follows Forging the Shaft [3443]
+  WANTED: Overseer Maltorius [7701, level 50]: its mobs are level 50; this part gets you to about 44.4
+  What the Flux? [7722, level 50]: is a level 50 quest; this part gets you to about 44.4
+  Curse These Fat Fingers [7723, level 49]: its mobs are level 48; this part gets you to about 44.4
+  Fiery Menace! [7724, level 49]: its mobs are level 48; this part gets you to about 44.4
+  Incendosaurs? Whateverosaur is More Like It [7727, level 49]: its mobs are level 48; this part gets you to about 44.4
+  STOLEN: Smithing Tuyere and Lookout's Spyglass [7728, level 48]: needs level 45; this part gets you to about 44.4
+  JOB OPPORTUNITY: Culling the Competition [7729, level 48]: needs level 45; this part gets you to about 44.4
+
+Left out (12)
+-------------
+needs a profession (4):
+  Shadoweaver [3379], The Undermarket [3385], The Undermarket [3402], Elemental Leatherworking [5144]
+repeatable (4):
+  Restoring Fiery Flux Supplies via Kingsblood [7736], Gaining Acceptance [7737], Restoring Fiery Flux Supplies via Iron [8241], Restoring Fiery Flux Supplies via Heavy Leather [8242]
+dungeon quest (2):
+  Blackhand's Command [7761], Attunement to the Core [7848]
+not in the game (on Questie's quest blacklist) (2):
+  Ironband the Elder [8651], Secrets of the Colossus - Regal [8858]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Searing Gorge - Alliance - part 2 of 3, planned from level 46
+Guide "43-52 Searing Gorge" in group "Zone Routes (Alliance)": this part has 38 steps, 27 stops
+Written to guides/tbc/Searing Gorge (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 8 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+4 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 46. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 36 steps kept, 5 new ones slotted in, 1 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 39 tasks, 7,209 yd on foot; ends at level 46.8; at its hardest you are 1.9 levels below the mobs
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 7,301 yd; ends at level 46.8; at its hardest you are 1.9 levels below the mobs
+Hearthstone: set at Graw Cornerstone (Graw Cornerstone's inn); 0 hearth steps in the guide.
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+5 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (13)
+------------------------
+Start to finish here: 11 (11 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Ledger from Tanaris [4450, level 46] -> Tanaris
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Rise, Obsidion! [3566, level 46] - needs one of Release Them [3372] -> Ironforge
+
+Worth checking in game
+----------------------
+
+Put off to a later part (9)
+---------------------------
+These need a higher level than this part ends at:
+  Prayer to Elune [3377, level 50]: is a level 50 quest; this part gets you to about 47.0
+  Prayer to Elune [3378, level 50]: follows Prayer to Elune [3377]
+  The Torch of Retribution [3453, level 50]: is a level 50 quest; this part gets you to about 47.0
+  The Torch of Retribution [3454, level 50]: follows The Torch of Retribution [3453]
+  Squire Maltrake [3462, level 50]: follows The Torch of Retribution [3454]
+  Set Them Ablaze! [3463, level 52]: is a level 52 quest; this part gets you to about 47.1
+  Trinkets... [3481, level 50]: follows Set Them Ablaze! [3463]
+  WANTED: Overseer Maltorius [7701, level 50]: its mobs are level 50; this part gets you to about 47.1
+  What the Flux? [7722, level 50]: is a level 50 quest; this part gets you to about 47.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Searing Gorge - Alliance - part 3 of 3, planned from level 49
+Guide "43-52 Searing Gorge" in group "Zone Routes (Alliance)": this part has 26 steps, 25 stops
+Written to guides/tbc/Searing Gorge (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+4 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 49. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 24 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 27 tasks, 2,617 yd on foot; ends at level 49.3; at its hardest you are 1.9 levels below the mobs
+Hearthstone: set at Graw Cornerstone (Graw Cornerstone's inn); 0 hearth steps in the guide.
+
+Quests in the guide (9)
+-----------------------
+Start to finish here: 8 (8 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Prayer to Elune [3378, level 50] -> Darnassus
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

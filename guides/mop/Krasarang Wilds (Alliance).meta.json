@@ -1,0 +1,411 @@
+{
+  "zone": "Krasarang Wilds",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "86-88 Krasarang Wilds",
+  "file": "Krasarang Wilds (Alliance).lua",
+  "continent": -6134,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 86,
+      "end": 86.32,
+      "next": 89,
+      "guide": "86-87 Krasarang Wilds: around Ken-Ken",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Ken-Ken",
+          "guide": "86-87 Krasarang Wilds: around Ken-Ken",
+          "level": 86,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 89,
+      "end": 89,
+      "guide": "89-90 Krasarang Wilds",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "89-90 Krasarang Wilds",
+          "level": 89,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 29873,
+      "level": 85,
+      "req": 86,
+      "xp": 6940,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Valley of the Four Winds"
+    },
+    {
+      "id": 29874,
+      "level": 85,
+      "req": 86,
+      "xp": 6940,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Valley of the Four Winds"
+    },
+    {
+      "id": 30079,
+      "level": 86,
+      "req": 86,
+      "xp": 111000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30080,
+      "level": 86,
+      "req": 86,
+      "xp": 83000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30081,
+      "level": 86,
+      "req": 86,
+      "xp": 111000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30082,
+      "level": 86,
+      "req": 86,
+      "xp": 111000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30083,
+      "level": 86,
+      "req": 86,
+      "xp": 111000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30084,
+      "level": 86,
+      "req": 86,
+      "xp": 111000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30091,
+      "level": 86,
+      "req": 86,
+      "xp": 111000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30168,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30169,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30274,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 30344,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 30346,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 30347,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 30348,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 30349,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 30350,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 30351,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 30352,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30353,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30354,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 30355,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 30356,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 30357,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 30359,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 30361,
+      "level": 88,
+      "req": 86,
+      "xp": 162000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 30363,
+      "level": 87,
+      "req": 86,
+      "xp": 12900,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 30384,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 30445,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 30666,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30667,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30668,
+      "level": 87,
+      "req": 86,
+      "xp": 32000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30669,
+      "level": 87,
+      "req": 86,
+      "xp": 12900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30671,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30672,
+      "level": 87,
+      "req": 86,
+      "xp": 161000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30674,
+      "level": 87,
+      "req": 86,
+      "xp": 129000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30691,
+      "level": 87,
+      "req": 86,
+      "xp": 193000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 31260,
+      "level": 86,
+      "req": 86,
+      "xp": 111000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 31262,
+      "level": 86,
+      "req": 86,
+      "xp": 111000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Valley of the Four Winds": 1,
+    "Kun-Lai Summit": 2
+  }
+}

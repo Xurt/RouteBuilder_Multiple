@@ -1,0 +1,105 @@
+Durotar - Horde
+Guide "6-12 Durotar" in group "Zone Routes (Horde)": 99 steps, 87 stops
+Written to guides/mop/Durotar (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+4 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 6. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 88 steps kept, 37 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 95 tasks, 18,427 yd on foot; ends at level 10.6; 1 hearth; at its hardest you are 2.9 levels below the mobs
+  Orc/Troll: 8 more tasks; their whole route comes to 21,190 yd; ends at level 10.8; 1 hearth; at its hardest you are 2.9 levels below the mobs
+  Goblin: 8 more tasks; their whole route comes to 20,365 yd; ends at level 10.8; 2 hearths; at its hardest you are 2.9 levels below the mobs
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 18,427 yd; ends at level 10.6; 1 hearth; at its hardest you are 2.9 levels below the mobs
+  Tauren (quests that depend on other zones): 1 more tasks; their whole route comes to 18,431 yd; ends at level 10.6; 1 hearth; at its hardest you are 2.9 levels below the mobs
+  Goblin (quests that depend on other zones): 4 more tasks; their whole route comes to 20,777 yd; ends at level 10.8; 2 hearths; at its hardest you are 2.9 levels below the mobs
+  Pandaren (quests that depend on other zones): 7 more tasks; their whole route comes to 19,924 yd; ends at level 10.6; 1 hearth; at its hardest you are 2.9 levels below the mobs
+Hearthstone: set at Uhgar (Uhgar's inn); 1 hearth step in the guide.
+3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+  Hellscream's Gift: its hand-in spot is not passed again, so the step sits at the end of the guide.
+
+Quests in the guide (49)
+------------------------
+Start to finish here: 37 (2 for everyone, 27 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren, 4 Orc/Troll, 4 Goblin)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Conscript of the Horde [840, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> The Barrens
+  Preserving the Barrens [26642, level 12] -> The Barrens
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Sen'jin Village [25073, level 5, Orc Warrior/Orc Hunter/Orc Rogue/Orc Priest/Orc Shaman/Orc Mage/Orc Warlock/Orc Monk/Orc Druid/Undead Warrior/Undead Hunter/Undead Rogue/Undead Priest/Undead Shaman/Undead Mage/Undead Warlock/Undead Monk/Undead Druid/Tauren Warrior/Tauren Hunter/Tauren Rogue/Tauren Priest/Tauren Shaman/Tauren Mage/Tauren Warlock/Tauren Monk/Tauren Druid/Troll Warrior/Troll Hunter/Troll Rogue/Troll Priest/Troll Shaman/Troll Mage/Troll Warlock/Troll Monk/Troll Druid/BloodElf Warrior/BloodElf Hunter/BloodElf Rogue/BloodElf Priest/BloodElf Shaman/BloodElf Mage/BloodElf Warlock/BloodElf Monk/BloodElf Druid/Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock/Goblin Monk/Goblin Druid/Pandaren Warrior/Pandaren Hunter/Pandaren Rogue/Pandaren Priest/Pandaren Shaman/Pandaren Mage/Pandaren Warlock/Pandaren Monk/Pandaren Druid] <- Echo Isles
+  Report to Sen'jin Village [25133, level 5, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Valley of Trials
+  A New Fate [31450, level 10, Pandaren] <- The Wandering Isle
+  Warchief's Emissary [25266, level 11, Goblin] <- The Lost Isles
+  Walk With The Earth Mother [26397, level 12, Tauren] <- Thunder Bluff
+
+Need a quest this guide does not hand in - steps show only once that is done (5):
+  Joining the Horde [31012, level 10, Pandaren] - needs one of A New Fate [31450]
+  The Horde Way [31013, level 10, Pandaren] - needs one of Joining the Horde [31012]
+  Hellscream's Gift [31014, level 10, Pandaren] - needs one of The Horde Way [31013]
+  Message for Garrosh [25267, level 11, Goblin] - needs one of Warchief's Emissary [25266]
+  Report to the Labor Captain [25275, level 11, Goblin] - needs one of Message for Garrosh [25267] -> Azshara
+
+Worth checking in game
+----------------------
+  Breaking the Chain [25167, level 6, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: mixes a kill-credit objective with others; check that "Northwatch Lug" really is line 2 in the quest log
+  Lost in the Floods [25187, level 8, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: objective "Durotar Telescope Quest KC 1" is line 1 by the database, but RestedXP's guide has "Find Raggaran (1)" there
+  Lost in the Floods [25187, level 8, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: objective "Durotar Telescope Quest KC 2" is line 2 by the database, but RestedXP's guide has "Find flooded hut (1)" there
+  Lost in the Floods [25187, level 8, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: objective "Durotar Telescope Quest KC 3" is line 3 by the database, but RestedXP's guide has "Find Misha (1)" there
+  Lost in the Floods [25187, level 8, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: objective "Durotar Telescope Quest KC 4" is line 4 by the database, but RestedXP's guide has "Find Zen'Taji (1)" there
+  The Wolf and The Kodo [25205, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: objective "The Kodo" is line 1 by the database, but RestedXP's guide has "Listen to the shaman's fable (1)" there
+  Ignoring the Warnings [25206, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: objective "Furious Earthguard (12)" is line 1 by the database, but RestedXP's guide has "Warring Elemental (12)" there
+  A New Fate [31450, level 10, Pandaren]: objective "Spirit of Master Shang Xi" is line 1 by the database, but RestedXP's guide has "1/1 Choose your faction" there
+
+Left out (665)
+--------------
+not in the game (on Questie's quest blacklist) (434):
+  Rise of the Silithid [32], Ripple Delivery [81], Children's Week [172], Ripple Recovery [649], Vanquish the Betrayers [784], A Strategic Alliance [785], Thwarting Kolkar Aggression [786], Report to Sen'jin Village [805], Dark Storms [806], Minshina's Skull [808], Need for a Cure [812], Finding the Antidote [813], Break a Few Eggs [815], Lost But Not Forgotten [816], Practical Prey [817], A Solvent Spirit [818], Report to Orgnil [823], From The Wreckage.... [825], Zalazane [826], Skull Rock [827], Margoz [828], Neeru Fireblade [829], The Admiral's Orders [830], Burning Shadows [832], Encroachment [837], Down at the Docks [910], Gateway to the Frontier [911], You Scream, I Scream... [915], Cairne's Hoofprint [925], The Swarm Grows [1145], Parts of the Swarm [1184], Report to Zor [1262], <nyi> Investigating Mosarn [1290], Regthar Deathgate [1361], Alliance Relations [1431], Fire Sapta [1464], Creature of the Void [1501], The Binding [1504], Veteran Uzzek [1505], Gan'rul's Summons [1506], ... 394 more
+above this zone's range of 2-12 (101):
+  Alliance Relations [1432], Alliance Relations [1436], Return of the Ring [2949], Victory for the Horde [7490], For All To See [7491], The Lord of Blackrock [7783], The Lord of Blackrock [7784], Meeting the Warchief [9626], Allegiance to the Horde [9627], Meeting the Warchief [9813], All Apologies [13841], Dread Head Redemption [13842], A Most Puzzling Circumstance [24429], Ak'Zeloth [25264], Call of Duty [25924], Machines of War [26293], Weapons of Mass Dysfunction [26294], Unfamiliar Waters [26311], Where Is My Warfleet? [26324], Well, Come to the Jungle [26416], Northern Stranglethorn: The Fallen Empire [26417], The Warchief Will be Pleased [26798], Traitor's Bait [26830], Return to the Highlands [26840], The Maelstrom [27203], An Audience with Ureda [27277], Grimshot's Call [27278], The Shattered Hand [27279], The Dreamseeker Calls [27280], Grezz Ragefist [27281], Zevrost's Behest [27282], A Journey to Moonglade [27283], Seek Out Master Pyreanor [27298], Follow the Sun [27304], The Seer's Call [27331], Seek the Shadow-Walker [27332], Dark Cleric Cecille [27334], Journey to Orgrimmar [27335], A Fitting Weapon [27365], A Marksman's Weapon [27395], ... 61 more
+repeatable (29):
+  Could I get a Fishing Flier? [8228], Crushing the Crown [24638], Crushing the Crown [24645], Crushing the Crown [24647], Crushing the Crown [24648], Crushing the Crown [24649], Crushing the Crown [24650], Crushing the Crown [24651], Crushing the Crown [24652], Nibbler!  No! [25158], The Latest Fashion! [25159], A Present for Lila [25160], Ogrezonians in the Mood [25161], Elemental Goo [25162], Everything Is Better with Bacon [26220], Crawfish Creole [26226], Careful, This Fruit Bites Back [26227], Stealing From Our Own [26233], Stealing From Our Own [26234], Even Thieves Get Hungry [26235], Clammy Hands [26543], No Dumping Allowed [26556], A Staggering Effort [26557], A Golden Opportunity [26572], A Furious Catch [26588], Zunta [31818], Battlefield: Barrens [32862], What We've Been Training For [32863], The Road to War [32896]
+special category (sort -394) (27):
+  Got one! [31570], Learning the Ropes [31571], On The Mend [31572], Learning the Ropes [31585], On The Mend [31586], Got one! [31587], Learning the Ropes [31588], On The Mend [31589], Got one! [31590], Zunta, The Pet Tamer [31812], Dagra the Fierce [31813], Level Up! [31827], Level Up! [31828], Level Up! [31830], Battle Pet Tamers: Kalimdor [31891], Battle Pet Tamers: Eastern Kingdoms [31903], A Tamer's Homecoming [31918], Battle Pet Tamers: Outland [31921], Battle Pet Tamers: Northrend [31929], Battle Pet Tamers: Pandaria [31952], Battle Pet Tamers: Cataclysm [31967], The Returning Champion [31977], The Returning Champion [31980], Exceeding Expectations [31982], A Brief Reprieve [31983], The Triumphant Return [31986], Varzok [32009]
+needs a profession (16):
+  Barbaric Battlements [2751], On Iron Pauldrons [2752], Trampled Under Foot [2753], Horns of Frenzy [2754], Joys of Omosh [2755], You Too Good. [6608], To Gadgetzan You Go! [6611], The Journey Has Just Begun [7493], Forged Documents [27686], Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482], Potion Master [92336], Elixir Master [92337], Transmutation Master [92338]
+dungeon quest (16):
+  A Dangerous Alliance [28457], The Pyromancer's Grimoire [28458], Stones of Binding [28459], The Golem Lord's Creations [28461], The Dark Iron Army [28463], Slaves of the Firelord [28465], Weapons of Darkness [28466], Weapons of Darkness [28473], Twilight Scheming [28474], Twilight Scheming [28475], Twilight Scheming [28476], Twilight Scheming [28477], Twilight Scheming [28478], Your Time Has Come [29452], The End Time [30094], Enemies Below [31034]
+special category (sort -23) (14):
+  Prophecies Of Doom [25228], Infiltrating The Cult [25288], The Missing [25293], The Master's Plan [25343], The Doomsday Plan [25347], Thwarting Twilight's Hammer [25348], Spreading The Word [25380], Hammering It Out [25789], The Elements Cry Out [27308], The Situation So Far [27570], I Said the Words... [27799], Back Under Cover [27800], Show Me Your Papers [27801], Arrest the Infiltrators [27802]
+helper for Watershed Patrol (6):
+  Spirits Be Praised [25189], Raggaran's Rage [25190], Raggaran's Fury [25192], Lost But Not Forgotten [25193], Unbidden Visitors [25194], That's the End of That Raptor [25195]
+special category (sort -397) (5):
+  The Darkspear Rebellion [32812], Battle of Sen'jin Village [32813], Battle of Razor Hill [32814], Battlefield: Barrens [32819], Vol'jin of the Darkspear [32867]
+special category (sort -284) (4):
+  Orgrimmar [12785], Orgrimmar [12812], Garrosh's Autograph [14441], Hammering It Out [25759]
+special category (sort -376) (4):
+  Pilfering Perfume [24541], A Friendly Chat... [24576], Snivel's Sweetheart [24850], Hot On The Trail [24851]
+cannot be taken together with Report to the Labor Captain [25275], which is in the guide (2):
+  Beyond Durotar [25648], Warchief's Command: Azshara! [28496]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29388], Guardians of Hyjal: Call of the Ancients [29390]
+special category (sort -372) (1):
+  Warchief's Blessing [13189]
+cannot be taken together with Preserving the Barrens [26642], which is in the guide (1):
+  Warchief's Command: Northern Barrens! [28494]
+special category (sort -380) (1):
+  Bwemba's Spirit [29219]
+helper for Bwemba's Spirit (1):
+  To Bambala [29220]
+special category (sort -381) (1):
+  The Call of the World-Shaman [29440]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

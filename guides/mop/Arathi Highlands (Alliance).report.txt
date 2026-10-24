@@ -1,0 +1,63 @@
+Arathi Highlands - Alliance
+Guide "26-31 Arathi Highlands" in group "Zone Routes (Alliance)": 77 steps, 64 stops
+Written to guides/mop/Arathi Highlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 7 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 26. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 94 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 88 tasks, 21,071 yd on foot; ends at level 29.8; 2 hearths
+  everyone (quests that depend on other zones): 6 more tasks; their whole route comes to 21,085 yd; ends at level 29.8; 2 hearths
+Hearthstone: set at Emily Jackson (Emily Jackson's inn); 2 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 26 for Quae and Kinelory (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+  level 29 for Hero's Call: The Hinterlands! (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+5 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (33)
+------------------------
+Start to finish here: 27 (11 for everyone, 16 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Hero's Call: The Hinterlands! [26542, level 30, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> The Hinterlands
+  Revantusk Village [26430, level 31] -> The Hinterlands
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Into Arathi [26139, level 25] <- Wetlands
+  Hero's Call: Arathi Highlands! [28573, level 25, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Ironforge
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  The Forsaken Trollbane [26023, level 27] - needs one of First Blood [26022]
+  Hammerfall [26084, level 27] - needs one of Alina's Reward [26081]
+
+Worth checking in game
+----------------------
+  Crush the Witherbark [26429, level 30]: mixes a kill-credit objective with others; check that "Witherbark Witch Doctor" really is line 3 in the quest log
+
+Left out (62)
+-------------
+not in the game (on Questie's quest blacklist) (50):
+  Plea To The Alliance [634], Crystal in the Mountains [635], The Princess Trapped [642], Stones of Binding [651], Breaking the Keystone [652], Summoning the Princess [656], Hints of a New Plague? [657], Hints of a New Plague? [658], Hints of a New Plague? [659], Hints of a New Plague? [660], Deep Sea Salvage [662], Land Ho! [663], Drowned Sorrows [664], Sunken Treasure [665], Sunken Treasure [666], Death From Below [667], Sunken Treasure [668], Sunken Treasure [670], Northfold Manor [681], Stromgarde Badges [682], Wanted!  Marez Cowl [684], Wanted!  Otto and Falconcrest [685], Malin's Request [690], Wand over Fist [693], An Apprentice's Enchantment [695], Attack on the Tower [696], Arathi Basin Resources! [8080], More Resource Crates [8081], Arathi Basin Resources! [8154], Arathi Basin Resources! [8155], Arathi Basin Resources! [8156], More Resource Crates [8157], More Resource Crates [8158], More Resource Crates [8159], Arathi Basin Resources! [8297], More Resource Crates [8298], The Battle for Arathi Basin! [10531], Cut Arathor Supply Lines [10532], More Resource Crates [10533], Arathi Basin Resources! [10535], ... 10 more
+dungeon quest (5):
+  The Battle for Arathi Basin! [8105], The Battle for Arathi Basin! [8166], The Battle for Arathi Basin! [8167], The Battle for Arathi Basin! [8168], Home Sweet Gnome [26943]
+needs reputation (5):
+  Control Four Bases [8114], Control Five Bases [8115], Arathor Basic Care Package [8260], Arathor Standard Care Package [8261], Arathor Advanced Care Package [8262]
+above this zone's range of 25-31 (1):
+  Find OOX-09/HL! [485]
+cannot be taken together with The Stone Shards [26341], which is in the guide (1):
+  The Stone Shards [26909]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,185 @@
+Grizzly Hills - Horde - part 1 of 2, planned from level 73
+Guide "73-75 Grizzly Hills" in group "Zone Routes (Horde)": this part has 228 steps, 191 stops
+Written to guides/mop/Grizzly Hills (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: 58 PROBLEMS
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Orc Warrior)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Orc Hunter)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Orc Rogue)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Orc DeathKnight)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Orc Shaman)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Orc Mage)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Orc Warlock)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Orc Monk)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Undead Warrior)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Undead Hunter)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Undead Rogue)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Undead Priest)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Undead DeathKnight)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Undead Mage)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Undead Warlock)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Undead Monk)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Tauren Warrior)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Tauren Paladin)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Tauren Hunter)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Tauren Priest)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Tauren DeathKnight)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Tauren Shaman)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Tauren Monk)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Tauren Druid)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Troll Warrior)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Troll Hunter)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Troll Rogue)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Troll Priest)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Troll DeathKnight)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Troll Shaman)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Troll Mage)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Troll Warlock)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Troll Monk)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Troll Druid)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (BloodElf Warrior)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (BloodElf Paladin)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (BloodElf Hunter)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (BloodElf Rogue)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (BloodElf Priest)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (BloodElf DeathKnight)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (BloodElf Mage)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (BloodElf Warlock)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (BloodElf Monk)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Goblin Warrior)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Goblin Hunter)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Goblin Rogue)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Goblin Priest)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Goblin DeathKnight)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Goblin Shaman)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Goblin Mage)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Goblin Warlock)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Pandaren Warrior)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Pandaren Hunter)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Pandaren Rogue)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Pandaren Priest)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Pandaren Shaman)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Pandaren Mage)
+  ! In the Name of Loken is picked up before any of the quests that unlock it (Pandaren Monk)
+Quest log: at most 15 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+11 pickups or hand-ins are within reach of a stop but planned for later.
+8 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 73. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 238 steps kept, 16 new ones slotted in, 5 moved because their prerequisites changed, 8 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 219 tasks, 50,837 yd on foot; ends at level 74.7; at its hardest you are 2.4 levels below the mobs
+  everyone (quests that depend on other zones): 40 more tasks; their whole route comes to 58,457 yd; ends at level 74.7; at its hardest you are 2.4 levels below the mobs
+Hearthstone: set at Aspen Grove Trader (Aspen Grove Trader's inn); 0 hearth steps in the guide.
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+23 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+4 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+8 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (84)
+------------------------
+Start to finish here: 66 (29 for everyone, 37 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  The Magical Kingdom of Dalaran [12791, level 74, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Dalaran - (Dungeon/Raid)
+  Shifting Priorities [12763, level 75, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Zul'Drak
+
+Hand-in step only shows once complete (1):
+  An Intriguing Plan [12165, level 75, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs War Golem Blueprint (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  To Conquest Hold, But Be Careful! [12487, level 74, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Dragonblight
+
+Need a quest this guide does not hand in - steps show only once that is done (14):
+  Tactical Clemency [12422, level 74, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Gorgonna [12424]
+  Gorgonna [12424, level 74, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Mikhail's Journal [12423]
+  Sasha's Hunt [12134, level 75] - needs one of Fate and Coincidence [12329]
+  Hour of the Worg [12164, level 75] - needs one of A Sister's Pledge [12411]
+  From the Ground Up [12196, level 75, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of An Intriguing Plan [12165]
+  We Have the Power [12197, level 75, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of From the Ground Up [12196]
+  ... Or Maybe We Don't [12198, level 75, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of We Have the Power [12197]
+  Bringing Down the Iron Thane [12199, level 75, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of ... Or Maybe We Don't [12198]
+  Out of Body Experience [12327, level 75] - needs one of Ruuna's Request [12328]
+  Ruuna's Request [12328, level 75] - needs one of Ruuna the Blind [12161], Ruuna the Blind [12425]
+  Fate and Coincidence [12329, level 75] - needs one of Out of Body Experience [12327]
+  Anatoly Will Talk [12330, level 75] - needs one of Fate and Coincidence [12329]
+  A Sister's Pledge [12411, level 75] - needs one of Anatoly Will Talk [12330]
+  Ruuna the Blind [12425, level 75, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Tactical Clemency [12422]
+
+Worth checking in game
+----------------------
+  Filling the Cages [11984, level 74]: "Quest Invisman - Filling the Cages (1)" has no place in the data; taken to be done where the quest is given
+  Truce? [11989, level 73]: "Drakuru Handshake KC Bunny (1)" has no place in the data; taken to be done where the quest is given
+  Rallying the Troops [12070, level 75]: could not read how many Grizzly Hills Giant are needed from the quest text; assumed 8
+  Rallying the Troops [12070, level 75]: could not read how many Iron Rune Avenger are needed from the quest text; assumed 8
+  Scourgekabob [12484, level 74]: "Mummified Carcass KC Bunny (1)" has no place in the data; taken to be done where the quest is given
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  Loken's Orders [12203, level 75]: its mobs are level 83; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 74.7
+
+Left out (26)
+-------------
+not in the game (on Questie's quest blacklist) (11):
+  Incense for the Festival Scorchlings [11966], DEPRECAED [12156], Solstice Village [12162], The Evil Below [12163], Cleansing Drak'Tharon [12238], Candy Bucket [12946], Candy Bucket [12947], Beldak the Elder [13013], Lunaro the Elder [13025], Whurain the Elder [13030], Sharing a Bountiful Feast [14065]
+repeatable (11):
+  Seared Scourge [12038], Blackriver Brawl [12170], Shred the Alliance [12270], Making Repairs [12280], Keep 'Em on Their Heels [12284], Overwhelmed! [12288], Crush Captain Brightwater! [12315], Keep Them at Bay [12317], Smoke 'Em Out [12324], Riding the Red Rocket [12432], Always Seeking Solvent [12434]
+dungeon quest (1):
+  Search and Rescue [12037]
+cannot be taken together with Find Kurun! [11981], which is in the guide (1):
+  An Expedient Ally [12074]
+special category (sort -369) (1):
+  Desecrate this Fire! [13445]
+special category (sort -22) (1):
+  Honor the Flame [13497]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Grizzly Hills - Horde - part 2 of 2, planned from level 81
+Guide "73-75 Grizzly Hills" in group "Zone Routes (Horde)": this part has 8 steps, 7 stops
+Written to guides/mop/Grizzly Hills (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 81. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 3 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 1,478 yd on foot; ends at level 81.0; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 2,505 yd; ends at level 81.0; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 1 (0 for everyone, 1 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  An Intriguing Plan [12165, level 75, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

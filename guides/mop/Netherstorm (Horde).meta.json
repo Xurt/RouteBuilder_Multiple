@@ -1,0 +1,1049 @@
+{
+  "zone": "Netherstorm",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "68-70 Netherstorm",
+  "file": "Netherstorm (Horde).lua",
+  "continent": -3523,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 68,
+      "end": 69.95,
+      "next": 72,
+      "guide": "68-70 Netherstorm: around Image of Archmage Vargoth",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Image of Archmage Vargoth",
+          "guide": "68-70 Netherstorm: around Image of Archmage Vargoth",
+          "level": 68,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 72,
+      "end": 72.1,
+      "guide": "72-73 Netherstorm: around Image of Commander Ameer",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Image of Commander Ameer",
+          "guide": "72-73 Netherstorm: around Image of Commander Ameer",
+          "level": 72,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 10173,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10174,
+      "level": 68,
+      "req": 67,
+      "xp": 3050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10176,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10182,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10183,
+      "level": 68,
+      "req": 67,
+      "xp": 3050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10184,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10185,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10186,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10188,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10190,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10191,
+      "level": 68,
+      "req": 67,
+      "xp": 14950,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10192,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10199,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10203,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10205,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10206,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10209,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10221,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10222,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10223,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10224,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10225,
+      "level": 68,
+      "req": 67,
+      "xp": 1200,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10226,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10232,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10233,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10234,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10235,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10237,
+      "level": 69,
+      "req": 67,
+      "xp": 3100,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10239,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10240,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10247,
+      "level": 69,
+      "req": 67,
+      "xp": 1230,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10248,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10249,
+      "level": 69,
+      "req": 67,
+      "xp": 18450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10256,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10261,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10262,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10265,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10266,
+      "level": 69,
+      "req": 67,
+      "xp": 3100,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10267,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10268,
+      "level": 69,
+      "req": 67,
+      "xp": 6150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10269,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10270,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10271,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10272,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10273,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10274,
+      "level": 70,
+      "req": 68,
+      "xp": 15800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10275,
+      "level": 70,
+      "req": 67,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10276,
+      "level": 70,
+      "req": 67,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10281,
+      "level": 70,
+      "req": 68,
+      "xp": 3150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10290,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10293,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10300,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10301,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10305,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10306,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10307,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10309,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10310,
+      "level": 70,
+      "req": 68,
+      "xp": 15800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10311,
+      "level": 70,
+      "req": 68,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10312,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10314,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10315,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10316,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10317,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10318,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10319,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10320,
+      "level": 69,
+      "req": 67,
+      "xp": 15400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10331,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10332,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10333,
+      "level": 69,
+      "req": 67,
+      "xp": 1230,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10334,
+      "level": 69,
+      "req": 67,
+      "xp": 9250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10335,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10336,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10337,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10342,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10343,
+      "level": 69,
+      "req": 67,
+      "xp": 3100,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10345,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10348,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10353,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10411,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10413,
+      "level": 70,
+      "req": 68,
+      "xp": 15800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10417,
+      "level": 68,
+      "req": 67,
+      "xp": 6000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10418,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10422,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10423,
+      "level": 69,
+      "req": 67,
+      "xp": 1230,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10424,
+      "level": 69,
+      "req": 67,
+      "xp": 9250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10425,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10426,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10427,
+      "level": 69,
+      "req": 67,
+      "xp": 15400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10429,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10430,
+      "level": 69,
+      "req": 67,
+      "xp": 1230,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10433,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10434,
+      "level": 69,
+      "req": 67,
+      "xp": 1230,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10435,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10436,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10437,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10438,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10439,
+      "level": 70,
+      "req": 68,
+      "xp": 19000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10440,
+      "level": 69,
+      "req": 67,
+      "xp": 3100,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10701,
+      "level": 68,
+      "req": 67,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10855,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10856,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10857,
+      "level": 69,
+      "req": 67,
+      "xp": 15400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10924,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11036,
+      "level": 67,
+      "req": 67,
+      "xp": 1160,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Blade\u0027s Edge Mountains"
+    },
+    {
+      "id": 10339,
+      "level": 70,
+      "req": 70,
+      "xp": 12650,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10384,
+      "level": 70,
+      "req": 68,
+      "xp": 6250,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10385,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10405,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10406,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10408,
+      "level": 70,
+      "req": 68,
+      "xp": 19000,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Hillsbrad Foothills": 2,
+    "Terokkar Forest": 1
+  }
+}

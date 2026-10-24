@@ -1,0 +1,595 @@
+{
+  "zone": "Darkshore",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "10-22 Darkshore",
+  "file": "Darkshore (Alliance).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 10,
+      "end": 14.13,
+      "next": 17,
+      "guide": "10-15 Darkshore: around Thundris Windweaver",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Thundris Windweaver",
+          "guide": "10-15 Darkshore: around Thundris Windweaver",
+          "level": 10,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 17,
+      "end": 18.31,
+      "next": 21,
+      "guide": "17-19 Darkshore: around Terenthis",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Terenthis",
+          "guide": "17-19 Darkshore: around Terenthis",
+          "level": 17,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 21,
+      "end": 21.08,
+      "guide": "21-22 Darkshore",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "21-22 Darkshore",
+          "level": 21,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 730,
+      "level": 14,
+      "req": 14,
+      "xp": 490,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 944,
+      "level": 17,
+      "req": 12,
+      "xp": 630,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 947,
+      "level": 17,
+      "req": 12,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 948,
+      "level": 17,
+      "req": 13,
+      "xp": 630,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 949,
+      "level": 17,
+      "req": 12,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 950,
+      "level": 17,
+      "req": 12,
+      "xp": 950,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 952,
+      "level": 11,
+      "req": 6,
+      "xp": 880,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 953,
+      "level": 12,
+      "req": 9,
+      "xp": 910,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 954,
+      "level": 12,
+      "req": 8,
+      "xp": 680,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 955,
+      "level": 12,
+      "req": 7,
+      "xp": 910,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 956,
+      "level": 13,
+      "req": 7,
+      "xp": 910,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 957,
+      "level": 13,
+      "req": 7,
+      "xp": 680,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 958,
+      "level": 12,
+      "req": 9,
+      "xp": 910,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 963,
+      "level": 16,
+      "req": 11,
+      "xp": 880,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 965,
+      "level": 18,
+      "req": 13,
+      "xp": 680,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 966,
+      "level": 18,
+      "req": 13,
+      "xp": 1350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 982,
+      "level": 17,
+      "req": 13,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 983,
+      "level": 10,
+      "req": 7,
+      "xp": 840,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 984,
+      "level": 14,
+      "req": 10,
+      "xp": 740,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 985,
+      "level": 14,
+      "req": 11,
+      "xp": 980,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1001,
+      "level": 12,
+      "req": 7,
+      "xp": 1150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1002,
+      "level": 14,
+      "req": 7,
+      "xp": 980,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1003,
+      "level": 16,
+      "req": 7,
+      "xp": 1150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1132,
+      "level": 20,
+      "req": 18,
+      "xp": 780,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Wetlands"
+    },
+    {
+      "id": 2118,
+      "level": 14,
+      "req": 10,
+      "xp": 980,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2138,
+      "level": 16,
+      "req": 10,
+      "xp": 1150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3524,
+      "level": 13,
+      "req": 11,
+      "xp": 680,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3765,
+      "level": 24,
+      "req": 18,
+      "xp": 1450,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 4681,
+      "level": 14,
+      "req": 11,
+      "xp": 980,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4722,
+      "level": 13,
+      "req": 11,
+      "xp": 455,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4723,
+      "level": 13,
+      "req": 11,
+      "xp": 455,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4725,
+      "level": 15,
+      "req": 12,
+      "xp": 540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4727,
+      "level": 15,
+      "req": 13,
+      "xp": 540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4728,
+      "level": 14,
+      "req": 12,
+      "xp": 490,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4730,
+      "level": 16,
+      "req": 13,
+      "xp": 580,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4761,
+      "level": 15,
+      "req": 11,
+      "xp": 105,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4762,
+      "level": 15,
+      "req": 11,
+      "xp": 800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4811,
+      "level": 14,
+      "req": 12,
+      "xp": 490,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4812,
+      "level": 14,
+      "req": 12,
+      "xp": 490,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4813,
+      "level": 14,
+      "req": 12,
+      "xp": 980,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6122,
+      "level": 14,
+      "req": 14,
+      "xp": 0,
+      "part": 1,
+      "section": 0,
+      "tag": "Druid",
+      "from": "Moonglade"
+    },
+    {
+      "id": 6342,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf",
+      "from": "Teldrassil"
+    },
+    {
+      "id": 9633,
+      "level": 15,
+      "req": 15,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Azuremyst Isle"
+    },
+    {
+      "id": 729,
+      "level": 20,
+      "req": 15,
+      "xp": 1150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 731,
+      "level": 20,
+      "req": 15,
+      "xp": 1950,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 951,
+      "level": 20,
+      "req": 12,
+      "xp": 1950,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 986,
+      "level": 20,
+      "req": 10,
+      "xp": 1550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 993,
+      "level": 20,
+      "req": 10,
+      "xp": 780,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1138,
+      "level": 17,
+      "req": 15,
+      "xp": 1250,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2078,
+      "level": 20,
+      "req": 14,
+      "xp": 1150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2098,
+      "level": 20,
+      "req": 14,
+      "xp": 1550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2139,
+      "level": 18,
+      "req": 10,
+      "xp": 1350,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4731,
+      "level": 19,
+      "req": 14,
+      "xp": 730,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4732,
+      "level": 19,
+      "req": 15,
+      "xp": 730,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4733,
+      "level": 19,
+      "req": 14,
+      "xp": 730,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4740,
+      "level": 18,
+      "req": 9,
+      "xp": 1700,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4763,
+      "level": 18,
+      "req": 15,
+      "xp": 1700,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 994,
+      "level": 22,
+      "req": 10,
+      "xp": 1750,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Ashenvale": 7,
+    "Teldrassil": 3,
+    "Moonglade": 1
+  }
+}

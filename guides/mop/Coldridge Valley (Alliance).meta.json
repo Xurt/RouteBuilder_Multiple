@@ -1,0 +1,282 @@
+{
+  "zone": "Coldridge Valley",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "1-5 Coldridge Valley",
+  "file": "Coldridge Valley (Alliance).lua",
+  "continent": -6176,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 1,
+      "end": 4.8,
+      "guide": "1-5 Coldridge Valley",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "1-5 Coldridge Valley",
+          "level": 1,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 182,
+      "level": 4,
+      "req": 1,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 3106,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf Warrior"
+    },
+    {
+      "id": 3107,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf Paladin"
+    },
+    {
+      "id": 3108,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf Hunter"
+    },
+    {
+      "id": 3109,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf Rogue/Gnome Rogue"
+    },
+    {
+      "id": 3110,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf Priest"
+    },
+    {
+      "id": 3115,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf Warlock/Gnome Warlock"
+    },
+    {
+      "id": 3361,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 24469,
+      "level": 1,
+      "req": 1,
+      "xp": 80,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 24470,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 24471,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 24473,
+      "level": 2,
+      "req": 1,
+      "xp": 15,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 24474,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 24475,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 24477,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 24486,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 24487,
+      "level": 3,
+      "req": 1,
+      "xp": 25,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 24489,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 24494,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf Shaman"
+    },
+    {
+      "id": 24496,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf Mage"
+    },
+    {
+      "id": 24526,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf Mage"
+    },
+    {
+      "id": 24527,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf Shaman"
+    },
+    {
+      "id": 24528,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf Paladin"
+    },
+    {
+      "id": 24530,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf Hunter"
+    },
+    {
+      "id": 24531,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf Warrior"
+    },
+    {
+      "id": 24532,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf Rogue"
+    },
+    {
+      "id": 24533,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf Priest"
+    },
+    {
+      "id": 26904,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Dwarf Warlock"
+    }
+  ],
+  "carriedTo": {}
+}

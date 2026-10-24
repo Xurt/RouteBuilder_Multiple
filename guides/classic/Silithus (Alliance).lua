@@ -166,21 +166,6 @@ step
     .turnin 8277 >>Turn in Deadly Desert Venom
     .target Beetix Ficklespragg
 step
-    .goto 1451/1,811.51,-6825.01
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Colossus Researcher Eazel|r
-    .accept 8858 >>Accept Secrets of the Colossus - Regal
-    .target Colossus Researcher Eazel
-step
-    .goto 1451/1,814.29,-6824.78
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Colossus Researcher Sophia|r
-    .accept 8859 >>Accept Secrets of the Colossus - Zora
-    .target Colossus Researcher Sophia
-step
-    .goto 1451/1,814.99,-6823.62
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Colossus Researcher Nestor|r
-    .accept 8857 >>Accept Secrets of the Colossus - Ashi
-    .target Colossus Researcher Nestor
-step
     #loop
     .goto 1451/1,1386.95,-6979.49,0
     .goto 1451/1,1386.95,-6979.49,40,0
@@ -205,10 +190,7 @@ step
     .target Windcaller Proudhorn
 step
     +|cRXP_WARN_That is all of Silithus for now.|r Quests still in your log lead on from here; pick your next zone by them
-    >>|cRXP_FRIENDLY_Eastern Plaguelands|r: Secrets of the Colossus - Zora
     >>|cRXP_FRIENDLY_Moonglade|r: Umber, Archivist
-    >>|cRXP_FRIENDLY_Searing Gorge|r: Secrets of the Colossus - Regal
-    >>|cRXP_FRIENDLY_Stranglethorn Vale|r: Secrets of the Colossus - Ashi
 step
     +|cRXP_WARN_The rest of Silithus is planned from level 58.|r Load its guide for level 58 then
 ]])

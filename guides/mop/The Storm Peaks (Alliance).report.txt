@@ -1,0 +1,141 @@
+The Storm Peaks - Alliance
+Guide "78-80 The Storm Peaks" in group "Zone Routes (Alliance)": 247 steps, 213 stops
+Written to guides/mop/The Storm Peaks (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: 57 PROBLEMS
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Human Warrior)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Human Paladin)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Human Hunter)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Human Rogue)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Human Priest)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Human DeathKnight)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Human Mage)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Human Warlock)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Human Monk)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Dwarf Warrior)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Dwarf Paladin)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Dwarf Hunter)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Dwarf Rogue)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Dwarf Priest)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Dwarf DeathKnight)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Dwarf Shaman)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Dwarf Mage)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Dwarf Warlock)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Dwarf Monk)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (NightElf Warrior)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (NightElf Hunter)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (NightElf Rogue)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (NightElf Priest)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (NightElf DeathKnight)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (NightElf Mage)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (NightElf Monk)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (NightElf Druid)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Gnome Warrior)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Gnome Rogue)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Gnome Priest)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Gnome DeathKnight)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Gnome Mage)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Gnome Warlock)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Gnome Monk)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Draenei Warrior)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Draenei Paladin)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Draenei Hunter)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Draenei Priest)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Draenei DeathKnight)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Draenei Shaman)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Draenei Mage)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Draenei Monk)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Worgen Warrior)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Worgen Hunter)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Worgen Rogue)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Worgen Priest)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Worgen DeathKnight)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Worgen Mage)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Worgen Warlock)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Worgen Druid)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Pandaren Warrior)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Pandaren Hunter)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Pandaren Rogue)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Pandaren Priest)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Pandaren Shaman)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Pandaren Mage)
+  ! an objective of Battle Plans Of The Kvaldir comes before the quest is picked up (Pandaren Monk)
+Quest log: at most 11 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+20 pickups or hand-ins are within reach of a stop but planned for later.
+10 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 78. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 289 steps kept, 10 new ones slotted in, 2 moved because their prerequisites changed, 4 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 250 tasks, 54,913 yd on foot; ends at level 80.0; 1 hearth; at its hardest you are 1.4 levels below the mobs
+  everyone (quests that depend on other zones): 51 more tasks; their whole route comes to 61,049 yd; ends at level 80.0; 1 hearth; at its hardest you are 1.4 levels below the mobs
+Hearthstone: set at Warsmith Sigfinna (Warsmith Sigfinna's inn); 1 hearth step in the guide.
+4 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+18 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+6 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (101)
+-------------------------
+Start to finish here: 84 (58 for everyone, 26 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Battle Plans Of The Kvaldir [24442, level 80] -> Icecrown
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Luxurious Getaway! [12853, level 78] <- The Underbelly - Sub zone of Dalaran (override wrong ID)
+
+Need a quest this guide does not hand in - steps show only once that is done (15):
+  Fighting Back [12931, level 80] - needs one of Rare Earth [12930]
+  Relief for the Fallen [12937, level 80] - needs one of Rare Earth [12930]
+  A Spark of Hope [12956, level 80] - needs one of The Refiner's Fire [12922]
+  Slaves of the Stormforged [12957, level 80] - needs one of Fighting Back [12931]
+  The Dark Ore [12964, level 80] - needs one of Fighting Back [12931]
+  The Gifts of Loken [12965, level 80] - needs one of Slaves of the Stormforged [12957]
+  Battling the Elements [12967, level 80] - needs one of You Can't Miss Him [12966]
+  Facing the Storm [12978, level 80] - needs one of Slaves of the Stormforged [12957]
+  The Armor's Secrets [12980, level 80] - needs one of Armor of Darkness [12979]
+  Valduran the Stormborn [12984, level 80] - needs one of The Armor's Secrets [12980]
+  Destroy the Forges! [12988, level 80] - needs one of Valduran the Stormborn [12984]
+  Hit Them Where it Hurts [12991, level 80] - needs one of Valduran the Stormborn [12984]
+  A Colossal Threat [12993, level 80] - needs one of Destroy the Forges! [12988]
+  The Heart of the Storm [12998, level 80] - needs one of A Colossal Threat [12993]
+  The Iron Colossus [13007, level 80] - needs one of The Heart of the Storm [12998]
+
+Worth checking in game
+----------------------
+  Cell Block Tango [12821, level 78]: "Garm Teleporter Activated" is assumed to be line 2 in the quest log; check it
+  A Flawless Plan [12823, level 78]: "Cave Explosion Bunny (1)" has no place in the data; taken to be done where the quest is given
+  Forging an Alliance [12924, level 80]: objective "Njormeld" is line 1 by the database, but RestedXP's guide has "Fjorn's Anvil Brought to Dun Niffelem (1)" there
+  The Hyldsmeet [12970, level 80]: "Lok'lira the Crone's Conversation Credit (1)" has no place in the data; taken to be done where the quest is given
+  Krolmir, Hammer of Storms [13010, level 80]: has a reputation or spell objective, which is not planned
+  Krolmir, Hammer of Storms [13010, level 80]: objective "King Jokkum slain (1)" is line 1 by the database, but RestedXP's guide has "Krolmir's Fate Discovered (1)" there
+  The Reckoning [13047, level 80]: objective "Thorim" is line 1 by the database, but RestedXP's guide has "Witness the Reckoning (1)" there
+  Sibling Rivalry [13064, level 80]: "Thorim Talk KC Bunny (1)" has no place in the data; taken to be done where the quest is given
+
+Left out (54)
+-------------
+not in the game (on Questie's quest blacklist) (26):
+  Costumed Orphan Matron [11356], Brewfest! [11441], Incense for the Summer Scorchlings [11964], The Master of Summer Lore [11970], A Desperate Alliance [12753], A Desperate Alliance [12772], A Desperate Alliance [12775], A Desperate Alliance [12777], A Desperate Alliance [12808], Fargal the Elder [13015], Stonebeard the Elder [13020], Graymane the Elder [13028], Muraco the Elder [13032], Looking for Survivors [13053], Whatever it Takes! [13108], Diametrically Opposed [13109], The Brothers Bronzebeard [13417], Candy Bucket [13448], Candy Bucket [13461], Candy Bucket [13462], Spring Collectors [13484], Pilgrim's Bounty [14022], Sharing a Bountiful Feast [14064], A Natural Occurrence [25571], A Natural Occurrence [25773], A Season for Celebration [29074]
+repeatable (15):
+  Overstock [12833], Pushed Too Far [12869], Hodir's Call [12977], Hot and Cold [12981], Spy Hunter [12994], How To Slay Your Dragon [13003], A Viscous Cleaning [13006], Feeding Arngrim [13046], Necklace Repair [13148], Remember Everfrost! [13421], Maintaining Discipline [13422], Defending Your Title [13423], Back to the Pit [13424], The Aberrations Must Die [13425], Hodir's Tribute [13559]
+needs reputation (6):
+  You Can't Miss Him [12966], Forging a Head [12985], Placing Hodir's Helm [12987], Forging Hodir's Spear [13001], Culling Jorcuttar [13011], Everfrost [13420]
+needs a profession (3):
+  SCRAP-E [12888], The Prototype Console [12889], The Scrapbot Construction Kit [13843]
+cannot be taken together with The Exiles of Ulduar [12885], which is in the guide (1):
+  Rare Earth [12930]
+special category (sort -369) (1):
+  Desecrate this Fire! [13455]
+special category (sort -22) (1):
+  Honor the Flame [13490]
+dungeon quest (1):
+  Stormherald Eljrrin [29863]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,79 @@
+Tirisfal Glades - Horde
+Guide "1-10 Tirisfal Glades" in group "Zone Routes (Horde)": 120 steps, 87 stops
+Written to guides/mop/Tirisfal Glades (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Undead Warrior), not counting quests brought in from other zones.
+5 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 22 steps kept, 102 new ones slotted in, 0 moved because their prerequisites changed, 6 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 112 tasks, 19,387 yd on foot; ends at level 9.5; 2 hearths; at its hardest you are 6.6 levels below the mobs
+  Undead: 9 more tasks; their whole route comes to 24,859 yd; ends at level 9.7; 2 hearths; at its hardest you are 6.6 levels below the mobs
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 20,199 yd; ends at level 9.5; 2 hearths; at its hardest you are 6.6 levels below the mobs
+Hearthstone: set at Hamlin Atkins (Hamlin Atkins's inn); 2 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 4 for A Putrid Task (Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+  level 5 for Variety is the Spice of Death (Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+  level 6 for Graverobbers (Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+  level 9 for Warchief's Command: Silverpine Forest! (Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+11 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+10 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (46)
+------------------------
+Start to finish here: 41 (0 for everyone, 37 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren, 4 Undead)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Fresh out of the Grave [24959, level 1, Undead] -> Deathknell
+  Warchief's Command: Silverpine Forest! [26964, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Silverpine Forest
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  No Better Than the Zombies [24970, level 4, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Deathknell
+  Vital Intelligence [24972, level 5, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Deathknell
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Assault on the Rotbrain Encampment [24971, level 5, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of No Better Than the Zombies [24970] -> Deathknell
+
+Worth checking in game
+----------------------
+  Assault on the Rotbrain Encampment [24971, level 5, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: mixes a kill-credit objective with others; check that "Rotbrain Magus" really is line 2 in the quest log
+  Ever So Lonely [24974, level 6, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: objective "Sedrick Calston (1)" is line 2 by the database, but RestedXP's guide has "1/1 Vile Fin returned" there
+  Graverobbers [24997, level 7, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: could not read how many Rot Hide Graverobber are needed from the quest text; assumed 8
+  Graverobbers [24997, level 7, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: could not read how many Rot Hide Mongrel are needed from the quest text; assumed 8
+
+Left out (419)
+--------------
+not in the game (on Questie's quest blacklist) (328):
+  A Rogue's Deal [8], Alas, Andorhal [105], Errand for Apothecary Zinge [232], Errand for Apothecary Zinge [238], Deaths in the Family [354], Speak with Sevren [355], Rear Guard Patrol [356], The Lich's Identity [357], Graverobbers [358], Forsaken Duties [359], Return to the Magistrate [360], A Letter Undelivered [361], The Haunted Mills [362], Fields of Grief [365], Return the Book [366], A New Plague [367], A New Plague [368], A New Plague [369], At War With The Scarlet Crusade [370], At War With The Scarlet Crusade [371], At War With The Scarlet Crusade [372], Proof of Demise [374], The Chill of Death [375], Vital Intelligence [383], Wanted: Maggot Eye [398], A Putrid Task [404], The Prodigal Lich [405], Fields of Grief [407], The Family Crypt [408], Proving Allegiance [409], The Dormant Shade [410], The Prodigal Lich Returns [411], The Mills Overrun [426], At War With The Scarlet Crusade [427], Candles of Beckoning [431], The Engraved Ring [440], Raleigh and the Undercity [441], Rot Hide Origins [444], A Recipe For Death [447], A Recipe For Death [451], ... 288 more
+above this zone's range of 3-12 (65):
+  The Crown of Will [495], Journey to Undercity [9177], Journey to Undercity [9180], Envoy to the Horde [9621], Meeting the Warchief [9626], Envoy to the Horde [9812], Meeting the Warchief [9813], The Battle for Andorhal [26920], Victory, For Now [26926], After the Crusade [26930], Foxes and Hounds [26931], Foes Before Hoes [26933], Latent Disease [26934], Lower the Boom [26936], The Menders' Stead [26952], Who Needs Cauldrons? [26978], Strange New Faces [26979], The Battle Resumes! [27083], An Audience with Ureda [27277], Grimshot's Call [27278], The Shattered Hand [27279], Grezz Ragefist [27281], Zevrost's Behest [27282], A Journey to Moonglade [27283], Seek Out Master Pyreanor [27298], Follow the Sun [27304], The Seer's Call [27331], Seek the Shadow-Walker [27332], Dark Cleric Cecille [27334], Journey to Orgrimmar [27335], Warchief's Command: Vashj'ir! [27718], Warchief's Command: Mount Hyjal! [27721], Warchief's Command: Deepholm! [27722], Seek Brother Silverhallow [28164], Meet with Grezz Ragefist [28290], Meet with Ormak Grimshot [28297], Meet with Gordul [28298], Meet with Zevrost [28299], Meet with Ureda [28300], Meet with Sunwalker Atohmo [28302], ... 25 more
+repeatable (11):
+  CLUCK! [3861], Fungus Among Us [29315], Fish Head [29317], Tadpole Terror [29319], Like Pike? [29320], Time for Slime [29322], Lily, Oh Lily [29332], Escargot A Go-Go [29333], Roach Coach [29334], Would You Like Some Flies With That? [29360], Moat Monster! [29361]
+needs a profession (4):
+  Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+special category (sort -394) (4):
+  Learning the Ropes [31576], On The Mend [31577], Got one! [31578], Level Up! [31823]
+special category (sort -284) (2):
+  The Undercity [12787], Hammering It Out [25759]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29388], Guardians of Hyjal: Call of the Ancients [29390]
+special category (sort -23) (1):
+  Hammering It Out [25789]
+cannot be taken together with Warchief's Command: Silverpine Forest! [26964], which is in the guide (1):
+  Warchief's Command: Silverpine Forest! [28568]
+dungeon quest (1):
+  Enemies Below [31037]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

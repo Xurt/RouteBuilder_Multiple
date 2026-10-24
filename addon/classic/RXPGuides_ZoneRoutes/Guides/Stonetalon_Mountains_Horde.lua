@@ -104,12 +104,6 @@ step
     .complete 1093,1 --Super Reaper 6000 Blueprints (1)
     .mob Venture Co. Operator
 step
-    .goto 1442/1,-602.23,1428.89
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Braug Dimspirit|r
-    .turnin 1152 >>Turn in Test of Lore
-    .target Braug Dimspirit
-    .isOnQuest 1152
-step
     .goto 1442/1,365.16,878.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ziz Fizziks|r
     .turnin 1093 >>Turn in Super Reaper 6000
@@ -121,11 +115,11 @@ step
     .accept 6421 >>Accept Boulderslide Ravine
     .target Mor'rogal
 step
-    #completewith Along12
+    #completewith Along11
     >>As you go: Pick up |cRXP_PICK_Resonite Crystal|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 6421,2 --Resonite Crystal (10)
 step
-    #label Along12
+    #label Along11
     .goto 1442/1,402.76,2.00
     >>Investigate Cave in Boulderslide Ravine
     .complete 6421,1 --Investigate Cave in Boulderslide Ravine

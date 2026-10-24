@@ -1,0 +1,224 @@
+{
+  "zone": "Gilneas City",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "1-3 Gilneas City",
+  "file": "Gilneas City (Alliance).lua",
+  "continent": -4755,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 1,
+      "end": 1,
+      "guide": "1-3 Gilneas City",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "1-3 Gilneas City",
+          "level": 1,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 14078,
+      "level": 1,
+      "req": 1,
+      "xp": 80,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid"
+    },
+    {
+      "id": 14091,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid"
+    },
+    {
+      "id": 14093,
+      "level": 2,
+      "req": 1,
+      "xp": 215,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid"
+    },
+    {
+      "id": 14094,
+      "level": 2,
+      "req": 1,
+      "xp": 215,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid"
+    },
+    {
+      "id": 14098,
+      "level": 2,
+      "req": 1,
+      "xp": 215,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid"
+    },
+    {
+      "id": 14099,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid"
+    },
+    {
+      "id": 14265,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Warrior"
+    },
+    {
+      "id": 14266,
+      "level": 3,
+      "req": 1,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Warrior"
+    },
+    {
+      "id": 14277,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Mage"
+    },
+    {
+      "id": 14278,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Priest"
+    },
+    {
+      "id": 14279,
+      "level": 2,
+      "req": 1,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Priest"
+    },
+    {
+      "id": 14280,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Druid"
+    },
+    {
+      "id": 14281,
+      "level": 2,
+      "req": 1,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Mage"
+    },
+    {
+      "id": 14283,
+      "level": 2,
+      "req": 1,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Druid"
+    },
+    {
+      "id": 14285,
+      "level": 3,
+      "req": 1,
+      "xp": 65,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Rogue",
+      "from": "Gilneas"
+    },
+    {
+      "id": 14286,
+      "level": 3,
+      "req": 1,
+      "xp": 65,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Warrior"
+    },
+    {
+      "id": 14287,
+      "level": 3,
+      "req": 1,
+      "xp": 65,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Warlock",
+      "from": "Gilneas"
+    },
+    {
+      "id": 14288,
+      "level": 3,
+      "req": 1,
+      "xp": 65,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Mage"
+    },
+    {
+      "id": 14289,
+      "level": 3,
+      "req": 1,
+      "xp": 65,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Priest"
+    },
+    {
+      "id": 14290,
+      "level": 3,
+      "req": 1,
+      "xp": 65,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Hunter",
+      "from": "Gilneas"
+    },
+    {
+      "id": 14291,
+      "level": 3,
+      "req": 1,
+      "xp": 65,
+      "part": 1,
+      "section": 0,
+      "tag": "Worgen Druid"
+    }
+  ],
+  "carriedTo": {
+    "Gilneas": 3
+  }
+}

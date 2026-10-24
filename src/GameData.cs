@@ -12,6 +12,7 @@ public sealed class QuestRow
     public int Id; public string Name = "";
     public List<int> StartNpcs = new(), StartObjects = new(), StartItems = new(), EndNpcs = new(), EndObjects = new();
     public int ReqLevel = 1, Level = 1; public long Races; public int Classes;
+    public bool LevelUnknown;                       // no level in the database: GameData guesses one from the zone
     public List<string> Text = new();
     public string? TriggerText; public Dictionary<int, List<Pt>> TriggerPoints = new();   // percent coordinates by area
     public List<(int id, string? text)> KillNpcs = new(), UseObjects = new(), NeedItems = new();
@@ -23,6 +24,16 @@ public sealed class QuestRow
     public int ZoneOrSort, NextInChain, Flags, SpecialFlags, Parent, BreadcrumbFor;
     public bool NeedsSkill, NeedsReputation;
     public bool Repeatable => (SpecialFlags & 1) != 0;
+    /// <summary>
+    /// A quest players never see: the game's own bookkeeping ("tracking" quests, flag 1024), test and unused entries
+    /// ("FLAG - ...", "BETA ...", "[DNT] ..."). Later games' data has hundreds of these.
+    /// </summary>
+    public bool Removed;                            // on Questie's blacklist for this game: not in the game
+    public bool Hidden => hidden ??= Removed || (Flags & 1024) != 0 || HiddenName.IsMatch(Name) || TestName.IsMatch(Name) || Text.Any(TestText.IsMatch);
+    bool? hidden;
+    // developers' test entries left in the data: "... Test Case", "... COPY", "Kill 5 Test Kobolds."
+    static readonly System.Text.RegularExpressions.Regex TestName = new(@"\bTest Case\b|\bCOPY\s*$"), TestText = new(@"\bTest (?:Kobold|Mob|NPC|Creature)s?\b");
+    static readonly System.Text.RegularExpressions.Regex HiddenName = new(@"^\s*(?:\[?DNT\]?|DND|FLAG\b|BETA\b|Tracking Event|zzOLD|zz |<UNUSED>|UNUSED\b|\[DEPRECATED\]|DEPRECATED\b|<TXT>|<NYI>|\[NYI\]|<?TEST\b>?|\[TEMP\]|\[PH\])", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
     // SpecialFlags 2 is "completed by exploring or by a scripted event" (escorts, "reach this spot", wells to cleanse), not a
     // holiday: those are told apart by their quest-log category (zoneOrSort below 0), which the zone filter already leaves out
     public bool ScriptedOrExplore => (SpecialFlags & 2) != 0;
@@ -70,7 +81,7 @@ public sealed class NpcRow
     public Dictionary<int, List<Pt>> Spawns = new();      // percent coordinates by area
     public Dictionary<int, List<Pt>> Waypoints = new();
     /// <summary>Average level, or null when the database has none (it uses 9999 for "unknown").</summary>
-    public double? Level => MinLevel > 63 || MaxLevel > 63 ? null : MinLevel > 0 && MaxLevel > 0 ? (MinLevel + MaxLevel) / 2 : MinLevel > 0 ? MinLevel : MaxLevel > 0 ? MaxLevel : null;
+    public double? Level => MinLevel > Game.MaxLevel + 3 || MaxLevel > Game.MaxLevel + 3 ? null : MinLevel > 0 && MaxLevel > 0 ? (MinLevel + MaxLevel) / 2 : MinLevel > 0 ? MinLevel : MaxLevel > 0 ? MaxLevel : null;
     public bool Innkeeper => (Flags & 128) != 0;
 }
 
@@ -151,6 +162,12 @@ public sealed class GameData
             d.Quests[id] = ReadQuest(id, r);
 
         d.LoadAreas(repo); d.LoadSupport(repo);
+        string removed = Path.Combine(repo, FlavorDir(g), "blacklist.txt");
+        if (!g.IsForever && File.Exists(removed))
+            foreach (var line in File.ReadLines(removed))
+                if (int.TryParse(line.Trim(), out int qid) && d.Quests.TryGetValue(qid, out var rq)) rq.Removed = true;
+        if (!g.IsForever && !g.ClassicMaps) d.SplitOwnMaps();
+        d.GuessUnknownLevels();
         d.Version = ReadVersion(repo);
         Game.Learn(d);                       // race/class combinations the quest data has class quests for
         return d;
@@ -174,13 +191,44 @@ public sealed class GameData
         }
     }
 
+    // From Cataclysm on, the starting areas (Valley of Trials, Northshire, Coldridge Valley...) are maps of their own, and
+    // their NPCs' positions are on those maps. Without world-map sizes they cannot be put on the parent zone's map, so
+    // a part of a zone with a map of its own and at least five quests of its own is planned as a zone of its own,
+    // which is also how RestedXP splits them ("1-6 Valley of Trials", then "6-10 Durotar").
+    void SplitOwnMaps()
+    {
+        // quests filed under the zone whose givers all stand on such a part's map belong to that part (Northshire's
+        // quests are filed under Elwynn Forest, but Marshal McBride is on Northshire's map)
+        bool OwnMap(int child) => ParentArea.TryGetValue(child, out var par) && Areas.TryGetValue(child, out var c) && Areas.TryGetValue(par, out var p) && c.UiMap != p.UiMap;
+        foreach (var q in Quests.Values.Where(q => q.ZoneOrSort > 0 && !ParentArea.ContainsKey(q.ZoneOrSort)))
+        {
+            var keys = q.StartNpcs.SelectMany(n => Npcs.TryGetValue(n, out var r) ? r.Spawns.Keys : Enumerable.Empty<int>())
+                .Concat(q.StartObjects.SelectMany(o => Objects.TryGetValue(o, out var r) ? r.Spawns.Keys : Enumerable.Empty<int>())).Distinct().ToList();
+            if (keys.Count == 1 && keys[0] != q.ZoneOrSort && OwnMap(keys[0]) && ParentArea[keys[0]] == q.ZoneOrSort) q.ZoneOrSort = keys[0];
+        }
+        var own = Quests.Values.Where(q => q.ZoneOrSort > 0 && !q.Hidden && !q.Repeatable).GroupBy(q => q.ZoneOrSort).ToDictionary(g => g.Key, g => g.Count());
+        foreach (var (child, parent) in ParentArea.ToList())
+            if (Areas.TryGetValue(child, out var c) && Areas.TryGetValue(parent, out var p) && c.UiMap != p.UiMap && own.GetValueOrDefault(child) >= 5)
+                ParentArea.Remove(child);
+    }
+
+    // Quests the database gives no level at all (often notes started from an item, or entries Blizzard reused) would
+    // read as level 1 and drag a zone's range down to 1: they get the lowest level of the zone's other quests instead.
+    void GuessUnknownLevels()
+    {
+        var low = Quests.Values.Where(q => !q.LevelUnknown && !q.Hidden && q.ZoneOrSort > 0).GroupBy(q => Parent(q.ZoneOrSort))
+            .ToDictionary(g => g.Key, g => (Level: g.Min(q => q.Level), Req: g.Min(q => q.ReqLevel)));
+        foreach (var q in Quests.Values.Where(q => q.LevelUnknown && q.ZoneOrSort > 0))
+            if (low.TryGetValue(Parent(q.ZoneOrSort), out var l)) { q.Level = l.Level; q.ReqLevel = l.Req; }
+    }
+
     static QuestRow ReadQuest(int id, LuaTable r)
     {
         var q = new QuestRow { Id = id, Name = Lua.Text(r[1]) ?? $"Quest {id}" };
         if (Lua.Tab(r[2]) is { } st) { q.StartNpcs = Lua.Ids(st[1]); q.StartObjects = Lua.Ids(st[2]); q.StartItems = Lua.Ids(st[3]); }
         if (Lua.Tab(r[3]) is { } en) { q.EndNpcs = Lua.Ids(en[1]); q.EndObjects = Lua.Ids(en[2]); }
         q.ReqLevel = Math.Max(1, (int)Lua.Num(r[4], 1)); q.Level = (int)Lua.Num(r[5], q.ReqLevel);
-        if (q.Level < 1) q.Level = q.ReqLevel;
+        if (q.Level < 1) { q.Level = q.ReqLevel; q.LevelUnknown = q.ReqLevel <= 1; }
         q.Races = Lua.Num(r[6]); q.Classes = (int)Lua.Num(r[7]);
         if (Lua.Tab(r[8]) is { } tx) foreach (var s in tx.Values) if (s is string str && str.Length > 0) q.Text.Add(str);
         if (Lua.Tab(r[9]) is { } tr)
@@ -218,10 +266,13 @@ public sealed class GameData
     void LoadAreas(string repo)
     {
         var g = Games.Current;
-        string zones = g.IsForever ? Path.Combine(repo, "support", "Forever", "Zones") : Path.Combine(repo, "support", "Zones");
+        string zones = g.IsForever ? Path.Combine(repo, "support", "Forever", "Zones") : Path.Combine(repo, g.ZoneSupport.Replace('/', Path.DirectorySeparatorChar));
+        // sub-zones and dungeons: the game's own file where it has one, else the shared one
+        string Shared(string file) => File.Exists(Path.Combine(zones, file)) ? Path.Combine(zones, file) : Path.Combine(repo, "support", "Zones", file);
         // world rectangles for the zones that have them. Forever's conversion file has them for Forever's maps ("target")
         // and for the Classic maps it was made from ("source"), so it serves Classic Era too
         string side = g.IsForever ? "target" : "source";
+        if (g.IsForever || g.ClassicMaps)
         using (var doc = JsonDocument.Parse(File.ReadAllText(Path.Combine(repo, "data", "Forever", "conversion.json"))))
             foreach (var t in doc.RootElement.GetProperty("geometry").GetProperty("transforms").EnumerateArray())
             {
@@ -246,13 +297,13 @@ public sealed class GameData
             Areas[id] = new AreaInfo { Id = id, UiMap = ui, Continent = -id, Name = name, Left = 0, Right = -4000, Top = 0, Bottom = -2667, HasBounds = false };
         }
         var rp = new Regex(@"\[(\d+)\]\s*=\s*(\d+),");
-        foreach (var line in File.ReadLines(Path.Combine(zones, "subZoneToParentZone.lua")))
+        foreach (var line in File.ReadLines(Shared("subZoneToParentZone.lua")))
         {
             var m = rp.Match(line);
             if (m.Success) ParentArea[int.Parse(m.Groups[1].Value)] = int.Parse(m.Groups[2].Value);
         }
         var rd = new Regex(@"^\s*\[(\d+)\]\s*=\s*\{""");
-        foreach (var line in File.ReadLines(Path.Combine(zones, "dungeons.lua")))
+        foreach (var line in File.ReadLines(Shared("dungeons.lua")))
         {
             var m = rd.Match(line);
             if (m.Success) Instances.Add(int.Parse(m.Groups[1].Value));
@@ -263,8 +314,11 @@ public sealed class GameData
     {
         var rx = new Regex(@"\[(\d+)\] = \{(-?\d+), (\d+)\}");
         var byLevel = new Dictionary<int, List<int>>();
-        var g = Games.Current; string support = g.IsForever ? Path.Combine(repo, "support", "Forever") : Path.Combine(repo, "support");
-        foreach (Match m in rx.Matches(File.ReadAllText(Path.Combine(support, "QuestXP", "xpDB-classic.lua"))))
+        var g = Games.Current;
+        string F(string rel) => Path.Combine(repo, rel.Replace('/', Path.DirectorySeparatorChar));
+        string xpFile = g.IsForever ? F("support/Forever/QuestXP/xpDB-classic.lua") : F(g.QuestXpFile);
+        string dropFile = g.IsForever ? F("support/Forever/DropTables/classicItemDrops.lua") : F(g.DropFile);
+        foreach (Match m in rx.Matches(File.ReadAllText(xpFile)))
         {
             int id = int.Parse(m.Groups[1].Value), lvl = int.Parse(m.Groups[2].Value), xp = int.Parse(m.Groups[3].Value);
             QuestXp[id] = xp;
@@ -278,7 +332,7 @@ public sealed class GameData
             TypicalXp[lvl] = last;
         }
         int cur = 0; var item = new Regex(@"^\s*\[(\d+)\] = \{"); var rate = new Regex(@"^\s*\[(\d+)\] = ([\d.]+),");
-        foreach (var line in File.ReadLines(Path.Combine(support, "DropTables", "classicItemDrops.lua")))
+        foreach (var line in File.ReadLines(dropFile))
         {
             var m = item.Match(line);
             if (m.Success) { cur = int.Parse(m.Groups[1].Value); DropRates[cur] = new(); continue; }
@@ -312,7 +366,31 @@ public static class Updater
                 Console.WriteLine($"Could not download a newer QuestieDB ({e.Message}); using the copy already here.");
             }
         }
+        if (!skipDownload) DownloadBlacklist(repo);
         Export(repo, luaPath);
+    }
+
+    const string BlacklistUrl = "https://raw.githubusercontent.com/Questie/Questie/master/Database/Corrections/QuestieQuestBlacklist.lua";
+    static string BlacklistFile(string repo) => Path.Combine(repo, ".routebuilder", "QuestieQuestBlacklist.lua");
+
+    /// <summary>
+    /// Questie's list of quests that are in the data but not in the game (removed, duplicates, test entries). It lives in the
+    /// Questie addon, not in QuestieDB, so it is fetched on its own. Without it the build still works, with those quests in.
+    /// </summary>
+    static void DownloadBlacklist(string repo)
+    {
+        if (Games.Current.QuestieExpansion == null) return;
+        try
+        {
+            using var http = new HttpClient { Timeout = TimeSpan.FromMinutes(2) };
+            string text = http.GetStringAsync(BlacklistUrl).GetAwaiter().GetResult();
+            Directory.CreateDirectory(Path.GetDirectoryName(BlacklistFile(repo))!);
+            File.WriteAllText(BlacklistFile(repo), text);
+        }
+        catch (Exception e) when (e is HttpRequestException or IOException or TaskCanceledException or UnauthorizedAccessException)
+        {
+            Console.WriteLine($"Could not download Questie's quest blacklist ({e.Message}){(File.Exists(BlacklistFile(repo)) ? "; using the copy already here" : "; quests Blizzard removed may show up in routes")}.");
+        }
     }
 
     static void Download(string repo)
@@ -426,6 +504,12 @@ public static class Updater
             string outDir = Path.Combine(Path.GetFullPath(repo), GameData.FlavorDir(g));
             Directory.CreateDirectory(outDir);
             rc = Run(lua, $"\"{script}\" {g.Flavor} \"{outDir}\"", repo, quiet: false);
+            string bl = Path.GetFullPath(BlacklistFile(repo)), blOut = Path.Combine(outDir, "blacklist.txt");
+            string? blScript = new[] { Path.Combine(AppContext.BaseDirectory, "tools", "questie-blacklist.lua"), Path.Combine("tools", "questie-blacklist.lua") }
+                .Select(Path.GetFullPath).FirstOrDefault(File.Exists);
+            if (rc == 0 && File.Exists(bl) && blScript != null && g.QuestieExpansion != null
+                && Run(lua, $"\"{blScript}\" \"{bl}\" {g.QuestieExpansion} \"{blOut}\"", repo, quiet: false) != 0)
+                Console.WriteLine("Questie's quest blacklist could not be read; quests Blizzard removed may show up in routes.");
         }
         if (rc != 0) throw new InvalidOperationException("QuestieDB export failed. If no Lua 5.1 interpreter was found, install one and pass --lua <path>.");
     }

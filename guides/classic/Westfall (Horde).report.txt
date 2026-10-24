@@ -39,7 +39,7 @@ These need a higher level than this part ends at:
 
 Left out (1)
 ------------
-special category (sort -366) (1):
+not in the game (on Questie's quest blacklist) (1):
   Skychaser the Elder [8675]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

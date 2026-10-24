@@ -1,0 +1,337 @@
+Redridge Mountains - Alliance - part 1 of 5, planned from level 14
+Guide "14-26 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 37 steps, 29 stops
+Written to guides/tbc/Redridge Mountains (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+2 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 14. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 4 steps kept, 27 new ones slotted in, 0 moved because their prerequisites changed, 39 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 19 tasks, 2,997 yd on foot; ends at level 14.4; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 9 more tasks; their whole route comes to 4,360 yd; ends at level 14.4; at its hardest you are 1.8 levels below the mobs
+  Warrior (quests that depend on other zones): 2 more tasks; their whole route comes to 4,361 yd; ends at level 14.4; at its hardest you are 1.8 levels below the mobs
+  Rogue (quests that depend on other zones): 1 more tasks; their whole route comes to 4,519 yd; ends at level 14.4; at its hardest you are 1.8 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 14 for Visit the Herbalist
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+2 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (22)
+------------------------
+Start to finish here: 6 (6 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Messenger to Stormwind [120, level 14] -> Stormwind City
+  Elmore's Task [1097, level 15] -> Stormwind City
+  The Price of Shoes [118, level 18] -> Elwynn Forest
+
+Hand-in step only shows once complete (1):
+  Dry Times [116, level 15] - needs Keg of Thunderbrew (1) (Westfall); Cask of Merlot (1) (Stormwind City); Bottle of Moonshine (1) (Duskwood); Skin of Sweet Rum (1) (Elwynn Forest)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (10):
+  Messenger to Stormwind [121, level 14] <- Stormwind City
+  Messenger to Westfall [144, level 14] <- Westfall
+  Redridge Rendezvous [2281, level 16, Rogue] <- Stormwind City
+  The Defias Brotherhood [65, level 18] <- Westfall
+  Return to Verner [119, level 18] <- Elwynn Forest
+  Messenger to Darkshire [146, level 18] <- Duskwood
+  Yorus Barleybrew [1698, level 20, Warrior] <- Ironforge
+  Yorus Barleybrew [10371, level 20, Warrior] <- The Exodar
+  A Watchful Eye [94, level 21] <- Elwynn Forest
+  Ink Supplies [345, level 24] <- Elwynn Forest
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Messenger to Westfall [143, level 14] - needs one of Messenger to Stormwind [121] -> Westfall
+  The Defias Brotherhood [132, level 18] - needs one of The Defias Brotherhood [65] -> Westfall
+
+Worth checking in game
+----------------------
+
+Put off to a later part (26)
+----------------------------
+These need a higher level than this part ends at:
+  Tharil'zun [19, level 25]: its mobs are level 24; this part gets you to about 17.0
+  Blackrock Menace [20, level 21]: needs level 18; this part gets you to about 17.0
+  An Unwelcome Guest [34, level 24]: its mobs are level 24; this part gets you to about 17.0
+  The Everstill Bridge [89, level 20]: needs level 15; this part gets you to about 15.2
+  Solomon's Law [91, level 23]: its mobs are level 24; this part gets you to about 17.0
+  Redridge Goulash [92, level 18]: its mobs are level 18; this part gets you to about 15.2
+  Shadow Magic [115, level 23]: its mobs are level 22; this part gets you to about 17.0
+  Underbelly Scales [122, level 18]: its mobs are level 17; this part gets you to about 14.4
+  A Baying of Gnolls [124, level 20]: its mobs are level 18; this part gets you to about 15.2
+  The Lost Tools [125, level 16]: needs level 15; this part gets you to about 15.2
+  Howling in the Hills [126, level 21]: its mobs are level 20; this part gets you to about 17.0
+  Selling Fish [127, level 21]: needs level 16; this part gets you to about 15.2
+  Blackrock Bounty [128, level 25]: its mobs are level 24; this part gets you to about 17.0
+  Messenger to Darkshire [145, level 18]: needs level 18; this part gets you to about 17.0
+  Murloc Poachers [150, level 20]: needs level 20; this part gets you to about 17.0
+  Wanted: Gath'Ilzogg [169, level 26]: its mobs are level 26; this part gets you to about 17.0
+  Theocritus' Retrieval [178, level 23]: follows Solomon's Law [91]
+  Wanted: Lieutenant Fangore [180, level 26]: its mobs are level 26; this part gets you to about 17.0
+  Missing In Action [219, level 25]: is a level 25 quest; this part gets you to about 17.0
+  Looking Further [248, level 22]: needs level 20; this part gets you to about 17.0
+  Morganth [249, level 26]: its mobs are level 26; this part gets you to about 17.0
+  Rethban Ore [347, level 24]: needs level 20; this part gets you to about 17.0
+  The Rethban Gauntlet [1699, level 22]: needs level 20; this part gets Warrior characters to about 17.1
+  The Shieldsmith [1702, level 22]: needs level 20; this part gets Warrior characters to about 17.1
+  Alther's Mill [2282, level 20]: is a level 20 quest; this part gets Rogue characters to about 15.3
+  Horns of Nez'ra [2358, level 22]: its mobs are level 19; this part gets Rogue characters to about 15.3
+
+Left out (11)
+-------------
+above this zone's range of 14-27 (4):
+  The True Masters [4183], The True Masters [4184], The True Masters [4186], The True Masters [4223]
+not in the game (on Questie's quest blacklist) (4):
+  Honor the Flame [11822], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Candy Bucket [12342]
+dungeon quest (1):
+  What Comes Around... [386]
+needs a profession (1):
+  Gearing Redridge [1618]
+repeatable (1):
+  CLUCK! [3861]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Redridge Mountains - Alliance - part 2 of 5, planned from level 17
+Guide "14-26 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 31 steps, 27 stops
+Written to guides/tbc/Redridge Mountains (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+3 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 17. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 6 steps kept, 23 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 15 tasks, 3,031 yd on foot; ends at level 17.6
+  Rogue: 3 more tasks; their whole route comes to 3,683 yd; ends at level 17.7; at its hardest you are 1.4 levels below the mobs
+  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 3,271 yd; ends at level 17.6
+  Rogue (quests that depend on other zones): 3 more tasks; their whole route comes to 5,434 yd; ends at level 17.7; at its hardest you are 1.7 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (9)
+-----------------------
+Start to finish here: 5 (4 for everyone, 1 Rogue)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Dry Times [116, level 15] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Underbelly Scales [122, level 18] - needs one of Return to Verner [119]
+  A Baying of Gnolls [124, level 20] - needs one of Return to Verner [119]
+  Alther's Mill [2282, level 20, Rogue] - needs one of Redridge Rendezvous [2281]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (18)
+----------------------------
+These need a higher level than this part ends at:
+  Tharil'zun [19, level 25]: its mobs are level 24; this part gets you to about 19.1
+  Blackrock Menace [20, level 21]: needs level 18; this part gets you to about 17.8
+  An Unwelcome Guest [34, level 24]: its mobs are level 24; this part gets you to about 19.1
+  Solomon's Law [91, level 23]: its mobs are level 24; this part gets you to about 19.1
+  Shadow Magic [115, level 23]: its mobs are level 22; this part gets you to about 19.1
+  Howling in the Hills [126, level 21]: its mobs are level 20; this part gets you to about 17.8
+  Blackrock Bounty [128, level 25]: its mobs are level 24; this part gets you to about 19.1
+  Messenger to Darkshire [145, level 18]: needs level 18; this part gets you to about 17.8
+  Murloc Poachers [150, level 20]: needs level 20; this part gets you to about 19.1
+  Wanted: Gath'Ilzogg [169, level 26]: its mobs are level 26; this part gets you to about 19.1
+  Theocritus' Retrieval [178, level 23]: follows Solomon's Law [91]
+  Wanted: Lieutenant Fangore [180, level 26]: its mobs are level 26; this part gets you to about 19.1
+  Missing In Action [219, level 25]: is a level 25 quest; this part gets you to about 19.1
+  Looking Further [248, level 22]: needs level 20; this part gets you to about 19.1
+  Morganth [249, level 26]: its mobs are level 26; this part gets you to about 19.1
+  Rethban Ore [347, level 24]: needs level 20; this part gets you to about 19.1
+  The Rethban Gauntlet [1699, level 22]: needs level 20; this part gets Warrior characters to about 19.2
+  The Shieldsmith [1702, level 22]: needs level 20; this part gets Warrior characters to about 19.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Redridge Mountains - Alliance - part 3 of 5, planned from level 20
+Guide "14-26 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 25 steps, 21 stops
+Written to guides/tbc/Redridge Mountains (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 20. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 10 steps kept, 12 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 9 tasks, 3,318 yd on foot; ends at level 20.5; at its hardest you are 1.7 levels below the mobs
+  Warrior: 4 more tasks; their whole route comes to 4,047 yd; ends at level 20.5; at its hardest you are 1.6 levels below the mobs
+  everyone (quests that depend on other zones): 9 more tasks; their whole route comes to 5,152 yd; ends at level 20.5; at its hardest you are 1.7 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 20 for The Rethban Gauntlet (Warrior)
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (10)
+------------------------
+Start to finish here: 4 (3 for everyone, 1 Warrior)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Shieldsmith [1702, level 22, Warrior] -> Stormwind City
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Dry Times [116, level 15] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Messenger to Darkshire [145, level 18] - needs one of Messenger to Westfall [144] -> Duskwood
+  Howling in the Hills [126, level 21] - needs one of A Baying of Gnolls [124]
+  Looking Further [248, level 22] - needs one of A Watchful Eye [94]
+  Rethban Ore [347, level 24] - needs one of Ink Supplies [345] -> Elwynn Forest
+
+Worth checking in game
+----------------------
+
+Put off to a later part (9)
+---------------------------
+These need a higher level than this part ends at:
+  Tharil'zun [19, level 25]: its mobs are level 24; this part gets you to about 21.3
+  An Unwelcome Guest [34, level 24]: its mobs are level 24; this part gets you to about 21.3
+  Solomon's Law [91, level 23]: its mobs are level 24; this part gets you to about 21.3
+  Blackrock Bounty [128, level 25]: its mobs are level 24; this part gets you to about 21.3
+  Wanted: Gath'Ilzogg [169, level 26]: its mobs are level 26; this part gets you to about 21.3
+  Theocritus' Retrieval [178, level 23]: follows Solomon's Law [91]
+  Wanted: Lieutenant Fangore [180, level 26]: its mobs are level 26; this part gets you to about 21.3
+  Missing In Action [219, level 25]: is a level 25 quest; this part gets you to about 21.3
+  Morganth [249, level 26]: its mobs are level 26; this part gets you to about 21.3
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Redridge Mountains - Alliance - part 4 of 5, planned from level 23
+Guide "14-26 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 20 steps, 16 stops
+Written to guides/tbc/Redridge Mountains (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 23. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 15 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 15 tasks, 4,154 yd on foot; ends at level 23.5
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 4,157 yd; ends at level 23.5
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (7)
+-----------------------
+Start to finish here: 5 (5 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Theocritus' Retrieval [178, level 23] -> Elwynn Forest
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Dry Times [116, level 15] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Put off to a later part (3)
+---------------------------
+These need a higher level than this part ends at:
+  Wanted: Gath'Ilzogg [169, level 26]: its mobs are level 26; this part gets you to about 23.7
+  Wanted: Lieutenant Fangore [180, level 26]: its mobs are level 26; this part gets you to about 23.7
+  Morganth [249, level 26]: its mobs are level 26; this part gets you to about 23.7
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Redridge Mountains - Alliance - part 5 of 5, planned from level 26
+Guide "14-26 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 9 steps, 8 stops
+Written to guides/tbc/Redridge Mountains (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 26. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 6 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 6 tasks, 2,399 yd on foot; ends at level 26.2
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 2,610 yd; ends at level 26.2
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Dry Times [116, level 15] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Morganth [249, level 26] - needs one of Looking Further [248] -> Elwynn Forest
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,27 @@
+{
+  "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "1-2 New Tinkertown",
+  "saved": "2026-10-23 17:43",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "accept:27670 @30:34.08,32.21  Accept Pinned Down",
+        "obj:27670:1 @30:42.95,32.27  Objective Pinned Down / Crazed Leper Gnome (6)",
+        "turnin:27670 @30:34.08,32.21  TurnIn Pinned Down",
+        "accept:28167 @30:34.08,32.21  Accept Report to Carvo Blastbolt",
+        "turnin:28167 @30:50.95,31.94  TurnIn Report to Carvo Blastbolt",
+        "accept:27671 @30:50.95,31.94  Accept See to the Survivors",
+        "obj:27671:1 @30:53.17,29.39  Objective See to the Survivors / Survivor (6)",
+        "turnin:27671 @30:50.95,31.94  TurnIn See to the Survivors",
+        "accept:28169 @30:50.95,31.94  Accept Withdraw to the Loading Room!",
+        "turnin:28169 @30:53.08,82.33  TurnIn Withdraw to the Loading Room!",
+        "accept:27635 @30:53.08,82.33  Accept Decontamination",
+        "obj:27635:1 @30:58.79,81.74  Objective Decontamination / Sanitron 500 slain (1)",
+        "turnin:27635 @30:66.42,81.62  TurnIn Decontamination",
+        "accept:27674 @30:66.42,81.62  Accept To the Surface",
+        "obj:27674:1 @30:67.28,84.11  Objective To the Surface / Torben Zapblast slain (1)"
+      ]
+    }
+  ]
+}

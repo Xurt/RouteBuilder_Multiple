@@ -1,5 +1,5 @@
 Mulgore - Horde - part 1 of 3, planned from level 1
-Guide "1-14 Mulgore" in group "Zone Routes (Horde)": this part has 210 steps, 108 stops
+Guide "1-14 Mulgore" in group "Zone Routes (Horde)": this part has 211 steps, 109 stops
 Written to guides/classic/Mulgore (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: zones/classic/Mulgore.json
@@ -9,13 +9,13 @@ Checks
 ------
 Played through as 20 race/class combinations: no problems found.
 Quest log: at most 8 of 40 held at once (Tauren Druid), not counting quests brought in from other zones.
-19 pickups or hand-ins are within reach of a stop but planned for later.
+20 pickups or hand-ins are within reach of a stop but planned for later.
 6 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
 
 Route
 -----
 Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
-Step order kept from the last build (locks folder): 124 steps kept, 11 new ones slotted in, 10 moved because their prerequisites changed, 18 no longer in the guide. Build with --fresh to plan from scratch.
+Step order kept from the last build (locks folder): 126 steps kept, 11 new ones slotted in, 10 moved because their prerequisites changed, 16 no longer in the guide. Build with --fresh to plan from scratch.
   everyone: 82 tasks, 27,392 yd on foot; ends at level 9.1; 2 hearths; at its hardest you are 4.2 levels below the mobs
   Tauren: 20 more tasks; their whole route comes to 34,775 yd; ends at level 10.3; 3 hearths; at its hardest you are 2.9 levels below the mobs
   Shaman: 7 more tasks; their whole route comes to 28,641 yd; ends at level 9.2; 2 hearths; at its hardest you are 3.9 levels below the mobs
@@ -26,7 +26,7 @@ Step order kept from the last build (locks folder): 124 steps kept, 11 new ones 
   Tauren (quests that depend on other zones): 4 more tasks; their whole route comes to 35,029 yd; ends at level 10.3; 3 hearths; at its hardest you are 3.4 levels below the mobs
   Shaman (quests that depend on other zones): 2 more tasks; their whole route comes to 28,641 yd; ends at level 9.2; 2 hearths; at its hardest you are 3.9 levels below the mobs
   Tauren Hunter (quests that depend on other zones): 2 more tasks; their whole route comes to 39,012 yd; ends at level 10.7; 3 hearths; at its hardest you are 4.0 levels below the mobs
-  Tauren Druid (quests that depend on other zones): 4 more tasks; their whole route comes to 35,780 yd; ends at level 10.3; 3 hearths; at its hardest you are 3.4 levels below the mobs
+  Tauren Druid (quests that depend on other zones): 6 more tasks; their whole route comes to 36,412 yd; ends at level 10.3; 3 hearths; at its hardest you are 3.4 levels below the mobs
 Hearthstone: set at Innkeeper Kauth (Innkeeper Kauth's inn); 4 hearth steps in the guide.
 These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
 The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
@@ -62,6 +62,7 @@ Need a quest this guide does not hand in - steps show only once that is done (4)
 
 Worth checking in game
 ----------------------
+  Body and Heart [6002, level 10, Tauren Druid]: "Lunaclaw Spirit" has no place in the data; taken to be done where the quest is given
 
 Put off to a later part (11)
 ----------------------------
@@ -80,24 +81,20 @@ These need a higher level than this part ends at:
 
 Left out (195)
 --------------
-repeatable (72):
-  Earth Sapta [1462], Morrowgrain to Thunder Bluff [3804], New Kodo - Teal [7662], New Kodo - Green [7663], Additional Runecloth [7825], Carnival Boots [7881], Carnival Jerkins [7882], The World's Largest Gnome! [7883], Crocolisk Boy and the Bearded Murloc [7884], Armor Kits [7885], Coarse Weightstone [7889], Heavy Grinding Stone [7890], Green Iron Bracers [7891], Big Black Mace [7892], Rituals of Strength [7893], Copper Modulator [7894], Whirring Bronze Gizmo [7895], Green Fireworks [7896], Mechanical Repair Kits [7897], Thorium Widget [7898], Small Furry Paws [7899], Torn Bear Pelts [7900], Soft Bushy Tails [7901], Vibrant Plumes [7902], Evil Bat Eyes [7903], Darkmoon Beast Deck [7907], Darkmoon Portals Deck [7927], Darkmoon Warlords Deck [7928], Darkmoon Elementals Deck [7929], 5 Tickets - Darkmoon Flower [7930], 5 Tickets - Minor Darkmoon Prize [7931], 12 Tickets - Lesser Darkmoon Prize [7932], 40 Tickets - Greater Darkmoon Prize [7933], 50 Tickets - Darkmoon Storage Box [7934], 10 Tickets - Last Month's Mutton [7935], 50 Tickets - Last Year's Mutton [7936], More Dense Grinding Stones [7939], 1200 Tickets - Orb of the Darkmoon [7940], More Armor Kits [7941], More Thorium Widgets [7942], ... 32 more
-above this zone's range of 1-14 (67):
-  A Lesson to Learn [27], Aquatic Form [31], Until Death Do Us Part [264], The Ashenvale Hunt [742], Apothecary Zamah [853], Assisting Arch Druid Runetotem [936], The New Frontier [1000], The New Frontier [1004], The New Frontier [1018], The Elder Crone [1063], Forsaken Aid [1064], Journey to Tarren Mill [1065], Return to Thunder Bluff [1067], The Flying Machine Airport [1086], A Vengeful Fate [1102], Rabine Saturna [1123], Melor Sends Word [1130], Steelsnap [1131], Frostmaw [1136], The Sacred Flame [1195], The Sacred Flame [1196], Deadmire [1205], The Black Shield [1276], Call of Water [1529], Call of Air [1532], The Islander [1718], Speak with Ruga [1823], Orm Stonehoof and the Brutal Helm [1840], Chimaeric Horn [1844], Brutal Helm [1845], Journey to the Marsh [1947], Return to the Marsh [1953], Report to Anastasia [1959], The Platinum Discs [2280], The Platinum Discs [2440], Portents of Uldum [2965], Seeing What Happens [2966], Return to Thunder Bluff [2967], A Future Task [2968], Call of Water [2986], ... 27 more
+not in the game (on Questie's quest blacklist) (67):
+  Assisting Arch Druid Runetotem [936], Welcome! [5844], Great-father Winter is Here! [7021], The Feast of Winter Veil [7061], New Kodo - Teal [7662], New Kodo - Green [7663], Carnival Boots [7881], Carnival Jerkins [7882], The World's Largest Gnome! [7883], Crocolisk Boy and the Bearded Murloc [7884], Armor Kits [7885], Coarse Weightstone [7889], Heavy Grinding Stone [7890], Green Iron Bracers [7891], Big Black Mace [7892], Rituals of Strength [7893], Copper Modulator [7894], Whirring Bronze Gizmo [7895], Green Fireworks [7896], Mechanical Repair Kits [7897], Thorium Widget [7898], Small Furry Paws [7899], Torn Bear Pelts [7900], Soft Bushy Tails [7901], Vibrant Plumes [7902], Evil Bat Eyes [7903], The Darkmoon Faire [7926], 5 Tickets - Darkmoon Flower [7930], 5 Tickets - Minor Darkmoon Prize [7931], 12 Tickets - Lesser Darkmoon Prize [7932], 40 Tickets - Greater Darkmoon Prize [7933], 50 Tickets - Darkmoon Storage Box [7934], 10 Tickets - Last Month's Mutton [7935], 50 Tickets - Last Year's Mutton [7936], More Dense Grinding Stones [7939], 1200 Tickets - Orb of the Darkmoon [7940], More Armor Kits [7941], More Thorium Widgets [7942], More Bat Eyes [7943], Your Fortune Awaits You... [7945], ... 27 more
+above this zone's range of 2-14 (65):
+  A Lesson to Learn [27], Aquatic Form [31], Until Death Do Us Part [264], The Ashenvale Hunt [742], Apothecary Zamah [853], The New Frontier [1000], The New Frontier [1004], The New Frontier [1018], The Elder Crone [1063], Forsaken Aid [1064], Journey to Tarren Mill [1065], Return to Thunder Bluff [1067], The Flying Machine Airport [1086], A Vengeful Fate [1102], Rabine Saturna [1123], Melor Sends Word [1130], Steelsnap [1131], Frostmaw [1136], The Sacred Flame [1195], The Sacred Flame [1196], Deadmire [1205], The Black Shield [1276], Call of Water [1529], Call of Air [1532], The Islander [1718], Speak with Ruga [1823], Orm Stonehoof and the Brutal Helm [1840], Chimaeric Horn [1844], Brutal Helm [1845], Journey to the Marsh [1947], Return to the Marsh [1953], Report to Anastasia [1959], The Platinum Discs [2280], The Platinum Discs [2440], Portents of Uldum [2965], Seeing What Happens [2966], Return to Thunder Bluff [2967], A Future Task [2968], Call of Water [2986], In Nightmares [3369], ... 25 more
+repeatable (30):
+  Earth Sapta [1462], Morrowgrain to Thunder Bluff [3804], Additional Runecloth [7825], Darkmoon Beast Deck [7907], Darkmoon Portals Deck [7927], Darkmoon Warlords Deck [7928], Darkmoon Elementals Deck [7929], Invaders of Alterac Valley [8387], For Great Honor [8388], Battle of Warsong Gulch [8389], Conquering Arathi Basin [8390], Battle of Warsong Gulch [8431], Battle of Warsong Gulch [8432], Battle of Warsong Gulch [8433], Battle of Warsong Gulch [8434], Battle of Warsong Gulch [8435], Conquering Arathi Basin [8440], Conquering Arathi Basin [8441], Conquering Arathi Basin [8442], Conquering Arathi Basin [8443], One Commendation Signet [8817], Ten Commendation Signets [8825], One Commendation Signet [8842], Ten Commendation Signets [8843], Major Mana Potion [9320], Argent Dawn Gloves [9333], Blessed Wizard Oil [9334], Consecrated Sharpening Stones [9335], Major Healing Potion [9336], Tabard of the Argent Dawn [9343]
 dungeon quest (22):
   Leaders of the Fang [914], Serpentbloom [962], Compendium of the Fallen [1049], Hamuul Runetotem [1489], Nara Wildmane [1490], Searching for the Lost Satchel [5722], Testing an Enemy's Strength [5723], Returning the Lost Satchel [5724], Blackfathom Villainy [6561], Camp Mojache [7492], Battle of Warsong Gulch [8368], Invaders of Alterac Valley [8369], Conquering Arathi Basin [8370], Battle of Warsong Gulch [8426], Battle of Warsong Gulch [8427], Battle of Warsong Gulch [8428], Battle of Warsong Gulch [8429], Battle of Warsong Gulch [8430], Conquering Arathi Basin [8436], Conquering Arathi Basin [8437], Conquering Arathi Basin [8438], Conquering Arathi Basin [8439]
-special category (sort -369) (10):
-  A Light in Dark Places [9319], Wild Fires in Kalimdor [9322], Wild Fires in the Eastern Kingdoms [9323], Stealing Stormwind's Flame [9330], Stealing Ironforge's Flame [9331], Stealing Darnassus's Flame [9332], A Thief's Reward [9339], The Festival of Fire [9368], Flickering Flames in Kalimdor [9388], Flickering Flames in the Eastern Kingdoms [9389]
-special category (sort -366) (7):
-  Bloodhoof the Elder [8673], Proudhorn the Elder [8678], Lunar Fireworks [8867], The Lunar Festival [8873], The Lunar Festival [8874], The Lunar Festival [8875], Valadar Starsong [8883]
-needs a profession (4):
-  Gathering Leather [768], Kodo Hide Bag [769], Master of the Wild Leather [2860], The Hero of the Day [8799]
-special category (sort -22) (4):
-  Great-father Winter is Here! [7021], The Feast of Winter Veil [7061], New Year Celebrations! [8861], Dearest Elenia, [8901]
-handed in here, but the database does not say where it starts (2):
-  Attack on Camp Narache [781], Welcome! [5844]
+needs a profession (3):
+  Gathering Leather [768], Kodo Hide Bag [769], Master of the Wild Leather [2860]
 special category (sort -368) (2):
   Light's Hope Chapel [9154], Investigate the Scourge of Thunder Bluff [9264]
+handed in here, but the database does not say where it starts (1):
+  Attack on Camp Narache [781]
 cannot be taken together with Call of Fire [1523], which is in the guide (1):
   Call of Fire [2984]
 cannot be taken together with Hex of Weakness [5655], which is in the guide (1):

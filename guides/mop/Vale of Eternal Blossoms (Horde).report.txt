@@ -1,0 +1,83 @@
+Vale of Eternal Blossoms - Horde
+Guide "90-90 Vale of Eternal Blossoms" in group "Zone Routes (Horde)": 14 steps, 10 stops
+Written to guides/mop/Vale of Eternal Blossoms (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 90. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 3 steps kept, 9 new ones slotted in, 0 moved because their prerequisites changed, 6 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 90, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 6 tasks, 3,624 yd on foot; ends at level 90.0
+  everyone (quests that depend on other zones): 6 more tasks; their whole route comes to 4,292 yd; ends at level 90.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (11)
+------------------------
+Start to finish here: 1 (0 for everyone, 1 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (4):
+  The Shado-Pan Offensive [31388, level 89, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Townlong Steppes
+  Falling Down [31001, level 90] -> Dread Wastes
+  Nope [31002, level 90] -> Dread Wastes
+  Everything I Know About Cooking [31279, level 90] -> Valley of the Four Winds
+
+Brought in from another zone and handed in here - steps show only if you have the quest (6):
+  A Witness to History [31511, level 87, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Kun-Lai Summit
+  Dread Space [31000, level 90] <- Dread Wastes
+  The Threat in the South [31656, level 90] <- Townlong Steppes
+  Better Dead than Dread [31847, level 90] <- Kun-Lai Summit
+  Dread Space [31886, level 90] <- Dread Wastes
+  Better Off Dread [31895, level 90] <- Townlong Steppes
+
+Worth checking in game
+----------------------
+
+Not planned (8)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  The Guo-Lai Halls [30637, level 90]: needs level 90; this part gets you to about 90.0
+  Your Private Collection [31015, level 90]: needs level 90; this part gets you to about 90.0
+  The Lorewalkers [31368, level 90]: needs level 90; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 90.0
+  The Tillers [31374, level 90]: needs level 90; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 90.0
+  The Order of the Cloud Serpent [31375, level 90]: needs level 90; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 90.0
+  The Golden Lotus [31385, level 90]: needs level 90; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 90.0
+  Thunder Calls [32678, level 90]: needs level 90; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 90.0
+  Journey to the Timeless Isle [33232, level 90]: needs level 90; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 90.0
+
+Left out (214)
+--------------
+repeatable (121):
+  Sprite Plight [30190], Steer Clear of the Beer Here [30191], My Town, It's on Fire [30192], Meating Expectations [30193], Encroaching Storm [30194], Blooming Blossoms [30195], Lushroom Rush [30196], In Ashen Webs [30200], That's Not a Rock! [30204], Runelocked [30205], Runes in the Ruins [30206], The Ashweb Matriarch [30225], Blood on the Rise [30226], Wulon, the Granite Sentinel [30227], Troubling the Troublemakers [30228], Pomfruit Pickup [30231], Ruffling Some Feathers [30232], Cracklefang [30233], Vicejaw [30234], Quid Pro Quo [30235], Aetha [30236], The Pandaren Uprising Relived [30237], Return to Rest [30238], Lao-Fe the Slavebinder [30239], Survival Ring: Flame [30240], Survival Ring: Blades [30242], Mantid Under Fire [30243], Along the Serpent's Spine [30244], Lost Scouts [30245], Upon the Ramparts [30246], The Butcher [30248], Under the Setting Sun [30249], Vyraxxis, the Krik'thik Swarm-Lord [30251], Roll Club: Serpent's Spine [30261], Clearing in the Forest [30263], Enemy at the Gates [30264], Sparkle in the Eye [30265], Bloodied Skies [30266], The Crumbling Hall [30277], The Thunder Below [30280], ... 81 more
+handed in here, but the database does not say where it starts (43):
+  The Shrine of Two Moons [30649], Between a Saurok and a Hard Place [31055], Hozen in the Mist [31093], Fish Tales [31094], The Dark Heart of the Mogu [31095], What is Worth Fighting For [31096], Heart of the Mantid Swarm [31097], The Song of the Yaungol [31100], The Seven Burdens of Shaohao [31102], The Ballad of Liu Lang [31103], Pristine Manacles of Rebellion [31786], Pristine Mogu Runestone [31787], Pristine Terracotta Arm [31788], Pristine Petrified Bone Whip [31789], Pristine Thunder King Insignia [31790], Pristine Edicts of the Thunder King [31791], Pristine Iron Amulet [31792], Pristine Branding Iron [31793], Pristine Mogu Coin [31794], Pristine Pandaren Tea Set [31795], Pristine Game Board [31796], Pristine Twin Stein Set [31797], Pristine Walking Cane [31798], Pristine Empty Keg [31799], Pristine Carved Bronze Mirror [31800], Pristine Gold-Inlaid Figurine [31801], Pristine Apothecary Tins [31802], Pristine Pearl of Yu'lon [31803], Pristine Standard of Niuzao [31804], Pristine Monument Ledger [31805], Pristine Monument Ledger [32105], The Zandalari Prophecy [32600], Rumbles of Thunder [32601], Gods and Monsters [32602], Pristine Banner of the Mantid Empire [32686], Pristine Ancient Sap Feeder [32687], Pristine Praying Mantid [32688], Pristine Sound Beacon [32689], Pristine Remains of a Paragon [32690], Pristine Mantid Lamp [32691], ... 3 more
+not in the game (on Questie's quest blacklist) (22):
+  Lunar Fireworks [8867], The Lunar Festival [8873], The Lunar Festival [8874], The Lunar Festival [8875], Valadar Starsong [8883], Incense for the Festival Scorchlings [11966], Cart Ride [30197], Roll Club: Vale of Eternal Blossoms [30247], The Lorewalkers [31016], The Humble Grummle [31017], Founding of the Order of the Cloud Serpent [31098], Klaxx Attack [31099], Legends of the Brewfathers [31101], Research Project: The Pandaren Empire [31289], Understanding The Shado-Pan [31389], Test Quest [31806], A Celestial Task [32010], Elder Charms of Good Fortune [32017], Candy Bucket [32044], Desecrate this Fire! [32503], Honor the Flame [32509], Into the Vale [33008]
+needs reputation (10):
+  The Secrets of Guo-Lai [30639], Battle Spear of the Thunder King [30640], Battle Helm of the Thunder King [30641], Battle Axe of the Thunder King [30642], The Mogu's Message [30643], What Comes to Pass [30644], The Might of Three [30645], The Final Power [30646], Buried Secrets [32242], Voice of the Gods [32257]
+special category (sort -397) (7):
+  Meet the Scout [32249], With the Wind's Blessing... [32459], The King and the Council [32806], The Warchief and the Darkness [32807], The Darkspear Rebellion [32812], The Old Seer [32815], War is Coming [32892]
+special category (sort -344) (3):
+  Stranger in a Strange Land [31488], A Pandaren Legend [33104], Judgment of the Black Prince [33105]
+special category (sort -394) (3):
+  Grand Master Aki [31951], Pandaren Spirit Tamer [32428], Beasts of Fable [32603]
+needs a profession (2):
+  The Anglers [31370], So You Want to Be a Blacksmith... [32726]
+special category (sort -392) (1):
+  Heroic Deeds [32901]
+dungeon quest (1):
+  Why Do We Fight? [33138]
+special category (sort -400) (1):
+  Proving Grounds [33249]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

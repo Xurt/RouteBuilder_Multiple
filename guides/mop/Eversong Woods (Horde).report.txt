@@ -1,0 +1,132 @@
+Eversong Woods - Horde - part 1 of 2, planned from level 5
+Guide "5-11 Eversong Woods" in group "Zone Routes (Horde)": this part has 162 steps, 113 stops
+Written to guides/mop/Eversong Woods (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 9 of 40 held at once (BloodElf Warrior), not counting quests brought in from other zones.
+7 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 5. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 68 steps kept, 85 new ones slotted in, 1 moved because their prerequisites changed, 2 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 126 tasks, 19,542 yd on foot; ends at level 11.4; 1 hearth; at its hardest you are 1.3 levels below the mobs
+  BloodElf: 8 more tasks; their whole route comes to 23,925 yd; ends at level 11.6; 1 hearth; at its hardest you are 1.3 levels below the mobs
+  Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage: 9 more tasks; their whole route comes to 22,010 yd; ends at level 11.7; 1 hearth; at its hardest you are 1.3 levels below the mobs
+  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 19,736 yd; ends at level 11.4; 2 hearths; 1 ORDER PROBLEMS; at its hardest you are 1.3 levels below the mobs
+  BloodElf (quests that depend on other zones): 1 more tasks; their whole route comes to 24,119 yd; ends at level 11.6; 2 hearths; 1 ORDER PROBLEMS; at its hardest you are 1.3 levels below the mobs
+  BloodElf Warrior (quests that depend on other zones): 2 more tasks; their whole route comes to 24,740 yd; ends at level 11.6; 2 hearths; 1 ORDER PROBLEMS; at its hardest you are 1.3 levels below the mobs
+Hearthstone: set at Chapman (Chapman's inn); 2 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 10 for Missing in the Ghostlands (Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+  level 10 for Fetch! (Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage)
+22 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+10 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (63)
+------------------------
+Start to finish here: 55 (0 for everyone, 48 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren, 4 BloodElf, 3 Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage)
+
+Hand-in step only shows once complete (1):
+  The Fallen Courier [9147, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Plagued Blood Sample (4) (Ghostlands)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Warrior Training [8329, level 3, BloodElf Warrior] <- Sunstrider Isle
+  Aiding the Outrunners [8347, level 5, BloodElf] <- Sunstrider Isle
+
+Need a quest this guide does not hand in - steps show only once that is done (5):
+  Charge! [27091, level 3, BloodElf Warrior] - needs one of Warrior Training [8329]
+  The Dwarven Spy [8483, level 7, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Incriminating Documents [8482]
+  Fairbreeze Village [9256, level 7, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Dwarven Spy [8483]
+  Word from the Spire [8890, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Deactivating the Spire [8889]
+  Delivery to Tranquillien [9148, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Fallen Courier [9147] -> Ghostlands
+
+Worth checking in game
+----------------------
+  Unexpected Results [8488, level 9, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: objective "Gharsul the Remorseless slain (1)" is line 1 by the database, but RestedXP's guide has "Protect Apprentice Mirveda" there
+  Darnassian Intrusions [9352, level 6, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: could not read how many Darnassian Scout are needed from the quest text; assumed 8
+  Darnassian Intrusions [9352, level 6, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: objective "Darnassian Scout slain (8)" is line 1 by the database, but RestedXP's guide has "Intruder Defeated" there
+  Charge! [27091, level 3, BloodElf Warrior]: has a reputation or spell objective, which is not planned
+  Charge! [27091, level 3, BloodElf Warrior]: objective "Training Dummy slain (1)" is line 1 by the database, but RestedXP's guide has "Cast Charge" there
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  The Party Never Ends [9067, level 9]: its mobs are level 30; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 11.6
+
+Left out (247)
+--------------
+not in the game (on Questie's quest blacklist) (172):
+  Speak with Deino [1943], Journey to the Marsh [1947], Return to the Marsh [1953], Tabetha's Task [2861], Seeking Strahad [3001], In Search of Menara Voidrender [4738], Knowledge of the Orb of Orahil [4968], The Darkmoon Faire [7926], The Hunter's Charm [8151], A Simple Request [8233], Magecraft [8250], Cenarion Aid [8254], An Imp's Request [8419], Choose Your Weapon [8478], An Intact Converter [8489], The Hero of the Day [8799], Winter's Presents [8828], New Year Celebrations! [8861], Lunar Fireworks [8867], The Lunar Festival [8873], The Lunar Festival [8874], The Lunar Festival [8875], Valadar Starsong [8883], The Dwarven Spy [8896], Torwa Pathfinder [9063], A Light in Dark Places [9319], Stealing Stormwind's Flame [9330], Stealing Ironforge's Flame [9331], Stealing Darnassus's Flame [9332], A Thief's Reward [9339], Report to Aeldon Sunbrand [9357], The Festival of Fire [9368], Taming the Beast [9484], Taming the Beast [9485], Taming the Beast [9486], Cleansing the Scar [9489], The Stone [9529], To The Bulwark [9601], Seek the Farstriders [9617], Return the Reports [9618], ... 132 more
+above this zone's range of 5-12 (57):
+  Hero of the Sin'dorei [9328], Envoy to the Horde [9621], Allegiance to the Horde [9627], Friend of the Sin'dorei [9811], Envoy to the Horde [9812], An Audience with Ureda [27277], Grimshot's Call [27278], The Shattered Hand [27279], The Dreamseeker Calls [27280], Grezz Ragefist [27281], Zevrost's Behest [27282], Seek Out Master Pyreanor [27298], Follow the Sun [27304], The Seer's Call [27331], Seek the Shadow-Walker [27332], Dark Cleric Cecille [27334], Journey to Orgrimmar [27335], Warchief's Command: Vashj'ir! [27718], Warchief's Command: Mount Hyjal! [27721], Warchief's Command: Deepholm! [27722], Seek Brother Silverhallow [28164], Meet with Grezz Ragefist [28290], Meet with Ormak Grimshot [28297], Meet with Gordul [28298], Meet with Zevrost [28299], Meet with Ureda [28300], Meet with Kardris Dreamseeker [28301], Meet with Sunwalker Atohmo [28302], Meet with Master Pyreanor [28303], Meet with Dark Cleric Cecille [28304], Meet with Tyelis [28307], Meet with Seer Liwatha [28308], Meet with Shadow-Walker Zuru [28309], Meet with Brother Silverhallow [28323], Warchief's Command: Uldum! [28557], Warchief's Command: Hillsbrad Foothills! [28571], Warchief's Command: Arathi Highlands! [28572], Warchief's Command: The Hinterlands! [28574], Warchief's Command: Western Plaguelands! [28575], Warchief's Command: Eastern Plaguelands! [28577], ... 17 more
+needs a profession (4):
+  Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+special category (sort -394) (4):
+  Learning the Ropes [31579], On The Mend [31580], Got one! [31581], Level Up! [31824]
+needs reputation (3):
+  Get My Results! [32329], What's in the Box? [32330], One Last Grasp [32412]
+special category (sort -284) (2):
+  Silvermoon [12788], Hammering It Out [25759]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29388], Guardians of Hyjal: Call of the Ancients [29390]
+cannot be taken together with The Magister's Apprentice [8888], which is in the guide (1):
+  Deactivating the Spire [8889]
+special category (sort -23) (1):
+  Hammering It Out [25789]
+cannot be taken together with Missing in the Ghostlands [9144], which is in the guide (1):
+  Warchief's Command: Ghostlands! [28560]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Eversong Woods - Horde - part 2 of 2, planned from level 28
+Guide "5-11 Eversong Woods" in group "Zone Routes (Horde)": this part has 9 steps, 6 stops
+Written to guides/mop/Eversong Woods (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 28. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 5 tasks, 4,539 yd on foot; ends at level 28.0; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 5,139 yd; ends at level 28.0; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 1 (0 for everyone, 1 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  The Fallen Courier [9147, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

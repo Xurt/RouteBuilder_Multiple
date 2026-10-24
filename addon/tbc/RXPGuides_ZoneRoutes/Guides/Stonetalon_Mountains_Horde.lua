@@ -1,0 +1,441 @@
+-- 18-29 Stonetalon Mountains: Zone Routes (Horde).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
+-- Steps that depend on quests from other zones hide themselves unless you have those quests.
+-- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 18, 21, 24).
+-- Split into 3 guides, listed under "18 - 25 Stonetalon Mountains" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Edit zones/tbc/Stonetalon Mountains.json and re-run rather than editing this file, or your changes are lost on the next build.
+
+if UnitFactionGroup("player") == "Alliance" then return end
+
+RXPGuides.RegisterGuide([[
+#tbc
+<< Horde
+#version 1
+#group Zone Routes (Horde)
+#subgroup 18 - 25 Stonetalon Mountains
+#subweight -18
+#name 18-19 Stonetalon Mountains
+--RouteBuilder:next
+#next Zone Routes (Horde)\18-20 The Barrens: around Tonga Runetotem;Zone Routes (Horde)\15-18 Ghostlands: around Eralan
+
+step
+    .goto 1442/1,939.92,831.36
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mor'rogal|r
+    .accept 6421 >>Accept Boulderslide Ravine
+    .target Mor'rogal
+step
+    .goto 1442/1,-342.44,129.64
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kaya Flathoof|r
+    .accept 6523 >>Accept Protect Kaya
+    .target Kaya Flathoof
+step
+    .goto 1442/1,-519.22,-41.64
+    >>Kaya Escorted to Camp Aparaje
+    .complete 6523,1 --Kaya Escorted to Camp Aparaje
+step
+    .goto 1442/1,-331.21,-173.19
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darn Talongrip|r
+    .accept 6542 >>Accept Report to Kadrak
+    .target Darn Talongrip
+step
+    .goto 1442/1,-233.54,-177.42
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Xen'Zilla|r
+    .accept 6461 >>Accept Blood Feeders
+    .target Xen'Zilla
+step
+    #loop
+    .goto 1442/1,346.11,-72.25,0
+    .goto 1442/1,346.11,-72.25,40,0
+    .goto 1442/1,378.34,-36.10,40,0
+    >>Pick up |cRXP_PICK_Resonite Crystal|r from the ground
+    .complete 6421,2 --Resonite Crystal (10)
+step
+    .goto 1442/1,366.62,-19.17
+    >>Investigate Cave in Boulderslide Ravine
+    .complete 6421,1 --Investigate Cave in Boulderslide Ravine
+step
+    #completewith Along10
+    >>As you go: Kill |cRXP_ENEMY_Deepmoss Venomspitters|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 6461,2 --Deepmoss Venomspitter slain (7)
+    .mob Deepmoss Venomspitter
+step
+    #loop
+    .goto 1442/1,433.52,432.15,0
+    .goto 1442/1,433.52,432.15,40,0
+    .goto 1442/1,563.42,445.17,40,0
+    .goto 1442/1,628.86,436.71,40,0
+    >>Kill |cRXP_ENEMY_Deepmoss Creepers|r
+    .complete 6461,1 --Deepmoss Creeper slain (10)
+    .mob Deepmoss Creeper
+step
+    .goto 1442/1,939.92,831.36
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mor'rogal|r
+    .turnin 6421 >>Turn in Boulderslide Ravine
+    .accept 6481 >>Accept Earthen Arise
+    .target Mor'rogal
+step
+    .goto 1442/1,365.16,878.25
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ziz Fizziks|r
+    .turnin 1483 >>Turn in Ziz Fizziks
+    .target Ziz Fizziks
+    .isOnQuest 1483
+step
+    #label Along10
+    .goto 1442/1,365.16,878.25
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ziz Fizziks|r
+    .accept 1093 >>Accept Super Reaper 6000
+    .target Ziz Fizziks
+step
+    #loop
+    .goto 1442/1,315.83,911.47,0
+    .goto 1442/1,315.83,911.47,40,0
+    .goto 1442/1,261.63,948.59,40,0
+    .goto 1442/1,239.65,841.13,40,0
+    >>Kill |cRXP_ENEMY_Deepmoss Venomspitters|r
+    .complete 6461,2 --Deepmoss Venomspitter slain (7)
+    .mob Deepmoss Venomspitter
+step
+    .goto 1442/1,10.63,1234.49
+    >>Kill |cRXP_ENEMY_Venture Co. Operator|r and loot |cRXP_LOOT_Super Reaper 6000 Blueprints|r
+    .complete 1093,1 --Super Reaper 6000 Blueprints (1)
+    .mob Venture Co. Operator
+step
+    .goto 1442/1,365.16,878.25
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ziz Fizziks|r
+    .turnin 1093 >>Turn in Super Reaper 6000
+    .accept 1094 >>Accept Further Instructions
+    .target Ziz Fizziks
+step
+    .goto 1442/1,-394.20,-272.50
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Jin'Zil|r
+    .turnin 1060 >>Turn in Letter to Jin'Zil
+    .target Witch Doctor Jin'Zil
+    .isOnQuest 1060
+step << Warlock
+    .goto 1442/1,-331.21,-181.00
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ken'zigla|r
+    .turnin 1510 >>Turn in News of Dogran
+    .target Ken'zigla
+    .isOnQuest 1510
+step
+    .goto 1442/1,-233.54,-177.42
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Xen'Zilla|r
+    .turnin 6461 >>Turn in Blood Feeders
+    .target Xen'Zilla
+step
+    .goto 1442/1,442.80,5.58
+    >>Kill |cRXP_ENEMY_Goggeroc|r
+    .complete 6481,1 --Goggeroc slain (1)
+    .mob Goggeroc
+step
+    .goto 1442/1,939.92,831.36
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mor'rogal|r
+    .turnin 6481 >>Turn in Earthen Arise
+    .target Mor'rogal
+step
+    .goto 1442/1,365.16,878.25
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ziz Fizziks|r
+    .turnin 1095 >>Turn in Further Instructions
+    .target Ziz Fizziks
+    .isOnQuest 1095
+step
+    .goto 1442/1,927.72,893.56
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Jayka|r
+    .vendor >>|cRXP_BUY_Sell your junk, then restock on food and water if necessary|r << !Rogue !Warrior
+    .vendor >>|cRXP_BUY_Sell your junk, then restock on food if necessary|r << Rogue/Warrior
+    .target Innkeeper Jayka
+step
+    .goto 1442/1,920.88,911.47
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jeeda|r on the second floor of the inn
+    .vendor >>|cRXP_BUY_Buy|r |T134831:0|t[Healing Potions] |cRXP_BUY_from her if they're up|r << !Warrior
+    .vendor >>|cRXP_BUY_Buy|r |T134831:0|t[Healing Potions] |cRXP_BUY_and|r |T134413:0|t[Liferoot] |cRXP_BUY_from her if they're up|r << Warrior
+    .target Jeeda
+step
+    .goto 1442/1,928.20,1015.67
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tammra Windfield|r
+    .turnin 6401 >>Turn in Kaya's Alive
+    .target Tammra Windfield
+    .isOnQuest 6401
+step
+    .goto 1442/1,1041.99,967.80
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tharm|r
+    .fp Sun Rock Retreat >>Get the Sun Rock Retreat flight path
+    .target Tharm
+    .subzoneskip 460,1
+step
+    +|cRXP_WARN_That is all of Stonetalon Mountains for now.|r Quests still in your log lead on from here; pick your next zone by them
+    >>|cRXP_FRIENDLY_The Barrens|r: Protect Kaya, Report to Kadrak, Further Instructions
+step
+    +|cRXP_WARN_Suggested next zones at level 18|r: |cRXP_FRIENDLY_The Barrens|r (about 1.2 levels of quests, starting around Tonga Runetotem), |cRXP_FRIENDLY_Ghostlands|r (about 1.1 levels of quests, starting around Eralan). Completing this step loads the guide for The Barrens --RouteBuilder:next
+step
+    +|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 21.|r Load its guide for level 21 then
+]])
+
+RXPGuides.RegisterGuide([[
+#tbc
+<< Horde
+#version 1
+#group Zone Routes (Horde)
+#subgroup 18 - 25 Stonetalon Mountains
+#subweight -18
+#name 21-22 Stonetalon Mountains
+--RouteBuilder:next
+#next Zone Routes (Horde)\18-20 The Barrens: around Tonga Runetotem
+
+step
+    .goto 1442/1,361.74,451.36
+    >>Click the |cRXP_PICK_Wanted Poster: Besseleth|r
+    .accept 6284 >>Accept Arachnophobia
+step
+    #loop
+    .goto 1442/1,677.20,507.04,0
+    .goto 1442/1,677.20,507.04,40,0
+    .goto 1442/1,667.43,552.63,40,0
+    >>Kill |cRXP_ENEMY_Besseleth|r and loot |cRXP_LOOT_Besseleth's Fang|r
+    .complete 6284,1 --Besseleth's Fang (1)
+    .mob Besseleth
+step << Warlock
+    .goto 1442/1,-331.21,-181.00
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ken'zigla|r
+    .accept 1511 >>Accept Ken'zigla's Draught
+    .target Ken'zigla
+    .isQuestTurnedIn 1510 --any of: News of Dogran
+    .xp <20,1
+step
+    .goto 1442/1,940.90,925.14
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maggran Earthbinder|r
+    .turnin 6284 >>Turn in Arachnophobia
+    .target Maggran Earthbinder
+step
+    .goto 1442/1,928.20,1015.67
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tammra Windfield|r
+    .accept 6301 >>Accept Cycle of Rebirth
+    .target Tammra Windfield
+step
+    #loop
+    .goto 1442/1,717.73,1528.85,0
+    .goto 1442/1,717.73,1528.85,40,0
+    .goto 1442/1,782.68,1703.06,40,0
+    >>Pick up |cRXP_PICK_Gaea Seed|r from the ground
+    .complete 6301,1 --Gaea Seed (10)
+step
+    .goto 1442/1,928.20,1015.67
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tammra Windfield|r
+    .turnin 6301 >>Turn in Cycle of Rebirth
+    .target Tammra Windfield
+step
+    .xp 21 >>Grind to level 21 (Gerenzo's Orders needs it)
+step
+    .goto 1442/1,-263.82,962.92
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Piznik|r
+    .accept 1090 >>Accept Gerenzo's Orders
+    .target Piznik
+step
+    .goto 1442/1,-263.82,962.92
+    >>Get the mysterious ore from Piznik after he finishes mining it.
+    .complete 1090,1 --Piznik
+    .target Piznik
+step
+    .goto 1442/1,-263.82,962.92
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Piznik|r
+    .turnin 1090 >>Turn in Gerenzo's Orders
+    .accept 1092 >>Accept Gerenzo's Orders
+    .target Piznik
+step
+    .goto 1442/1,365.16,878.25
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ziz Fizziks|r
+    .turnin 1092 >>Turn in Gerenzo's Orders
+    .target Ziz Fizziks
+step
+    +|cRXP_WARN_That is all of Stonetalon Mountains for now.|r Quests still in your log lead on from here; pick your next zone by them
+    >>|cRXP_FRIENDLY_The Barrens|r: Ken'zigla's Draught << Warlock
+step
+    +|cRXP_WARN_Suggested next zones at level 21|r: |cRXP_FRIENDLY_The Barrens|r (about 1.0 levels of quests, starting around Tonga Runetotem). Completing this step loads the guide for The Barrens --RouteBuilder:next
+step
+    +|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 24.|r Load its guide for level 24 then
+]])
+
+RXPGuides.RegisterGuide([[
+#tbc
+<< Horde
+#version 1
+#group Zone Routes (Horde)
+#subgroup 18 - 25 Stonetalon Mountains
+#subweight -18
+#name 24-25 Stonetalon Mountains: around Maggran Earthbinder
+--RouteBuilder:next
+#next Zone Routes (Horde)\25-26 Thousand Needles: around Cliffwatcher Longhorn
+
+step
+    .goto 1442/1,1002.43,949.24
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Braelyn Firehand|r
+    .accept 1087 >>Accept Cenarius' Legacy
+    .target Braelyn Firehand
+step
+    .goto 1442/1,940.90,925.14
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maggran Earthbinder|r
+    .accept 6282 >>Accept Harpies Threaten
+    .target Maggran Earthbinder
+step
+    .goto 1442/1,927.72,893.56
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Jayka|r
+    .target Innkeeper Jayka
+    .home >>Set your Hearthstone to Innkeeper Jayka's inn
+step
+    .goto 1442/1,933.09,824.53
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tsunaman|r
+    .accept 6393 >>Accept Elemental War
+    .target Tsunaman
+step
+    .goto 1442/1,-394.20,-272.50
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Jin'Zil|r
+    .accept 1058 >>Accept Jin'Zil's Forest Magic
+    .target Witch Doctor Jin'Zil
+step
+    #completewith next
+    .hs >>Hearth to Innkeeper Jayka's inn. |cRXP_WARN_Walk instead if you are already nearby|r
+    .cooldown item,6948,>0,1
+step
+    .goto 1442/1,928.20,1015.67
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tammra Windfield|r
+    .accept 6381 >>Accept New Life
+    .target Tammra Windfield
+    .isQuestTurnedIn 6301 --any of: Cycle of Rebirth
+step
+    #loop
+    .goto 1442/1,1477.58,723.26,0
+    .goto 1442/1,1477.58,723.26,40,0
+    .goto 1442/1,1543.50,665.95,40,0
+    >>Kill |cRXP_ENEMY_Bloodfury Slayers|r
+    >>Kill |cRXP_ENEMY_Bloodfury Roguefeathers|r
+    .complete 6282,3 --Bloodfury Slayer slain (7)
+    .complete 6282,4 --Bloodfury Roguefeather slain (7)
+    .mob Bloodfury Slayer
+    .mob Bloodfury Roguefeather
+step
+    .goto 1442/1,1591.36,900.40
+    >>Click the |cRXP_PICK_Gaea Dirt Mound|r
+    .complete 6381,1 --Gaea seed planted
+    .isOnQuest 6381
+step
+    #loop
+    .goto 1442/1,1715.40,949.24,0
+    .goto 1442/1,1715.40,949.24,40,0
+    .goto 1442/1,1781.81,901.70,40,0
+    >>Kill |cRXP_ENEMY_Bloodfury Ambushers|r
+    >>Kill |cRXP_ENEMY_Bloodfury Harpies|r
+    .complete 6282,2 --Bloodfury Ambusher slain (7)
+    .complete 6282,1 --Bloodfury Harpy slain (7)
+    .mob Bloodfury Ambusher
+    .mob Bloodfury Harpy
+step
+    #loop
+    .goto 1442/1,1504.44,2262.49,0
+    .goto 1442/1,1504.44,2262.49,40,0
+    .goto 1442/1,1418.98,2253.37,40,0
+    >>Kill |cRXP_ENEMY_Fey Dragons|r, |cRXP_ENEMY_Wily Fey Dragons|r and |cRXP_ENEMY_Nal'taszars|r. Loot them for |cRXP_LOOT_Fey Dragon Scale|r
+    >>Kill |cRXP_ENEMY_Sap Beast|r and loot |cRXP_LOOT_Stonetalon Sap|r
+    .complete 1058,4 --Fey Dragon Scale (1)
+    .complete 1058,1 --Stonetalon Sap (1)
+    .mob Fey Dragon
+    .mob Wily Fey Dragon
+    .mob Nal'taszar
+    .mob Sap Beast
+step
+    #loop
+    .goto 1442/1,1496.62,2506.70,0
+    .goto 1442/1,1496.62,2506.70,40,0
+    .goto 1442/1,1379.42,2544.80,40,0
+    >>Kill |cRXP_ENEMY_Cenarion Botanists|r
+    >>Kill |cRXP_ENEMY_Son of Cenarius|r
+    >>Kill |cRXP_ENEMY_Daughter of Cenarius|r
+    .complete 1087,3 --Cenarion Botanist slain (4)
+    .complete 1087,1 --Son of Cenarius slain (4)
+    .complete 1087,2 --Daughter of Cenarius slain (4)
+    .mob Cenarion Botanist
+    .mob Son of Cenarius
+    .mob Daughter of Cenarius
+step
+    #loop
+    .goto 1442/1,1562.55,2619.05,0
+    .goto 1442/1,1562.55,2619.05,40,0
+    .goto 1442/1,1677.79,2541.87,40,0
+    >>Kill |cRXP_ENEMY_Twilight Runners|r. Loot them for |cRXP_LOOT_Twilight Whisker|r
+    .complete 1058,2 --Twilight Whisker (5)
+    .mob Twilight Runner
+step
+    #loop
+    .goto 1442/1,1318.87,2677.01,0
+    .goto 1442/1,1318.87,2677.01,40,0
+    .goto 1442/1,1289.08,2558.48,40,0
+    >>Kill |cRXP_ENEMY_Antlered Coursers|r and |cRXP_ENEMY_Great Coursers|r. Loot them for |cRXP_LOOT_Courser Eye|r
+    .complete 1058,3 --Courser Eye (30)
+    .mob Antlered Courser
+    .mob Great Courser
+step
+    #completewith next
+    .hs >>Hearth to Innkeeper Jayka's inn. |cRXP_WARN_Walk instead if you are already nearby|r
+    .cooldown item,6948,>0,1
+step
+    .goto 1442/1,928.20,1015.67
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tammra Windfield|r
+    .turnin 6381 >>Turn in New Life
+    .target Tammra Windfield
+    .isOnQuest 6381
+step
+    .goto 1442/1,940.90,925.14
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maggran Earthbinder|r
+    .turnin 6282 >>Turn in Harpies Threaten
+    .accept 6283 >>Accept Bloodfury Bloodline
+    .target Maggran Earthbinder
+step
+    .goto 1442/1,1002.43,949.24
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Braelyn Firehand|r
+    .turnin 1087 >>Turn in Cenarius' Legacy
+    .accept 1088 >>Accept Ordanus
+    .target Braelyn Firehand
+step
+    #loop
+    .goto 1442/1,1622.61,478.39,0
+    .goto 1442/1,1622.61,478.39,40,0
+    .goto 1442/1,1726.14,512.90,40,0
+    >>Kill |cRXP_ENEMY_Rogue Flame Spirits|r, |cRXP_ENEMY_Burning Ravagers|r and |cRXP_ENEMY_Burning Destroyers|r. Loot them for |cRXP_LOOT_Incendrites|r
+    .complete 6393,1 --Incendrites (10)
+    .mob Rogue Flame Spirit
+    .mob Burning Ravager
+    .mob Burning Destroyer
+step
+    .goto 1442/1,1744.21,900.72
+    >>Kill |cRXP_ENEMY_Bloodfury Ripper|r and loot |cRXP_LOOT_Bloodfury Ripper's Remains|r
+    .complete 6283,1 --Bloodfury Ripper's Remains (1)
+    .mob Bloodfury Ripper
+step
+    .goto 1442/1,940.90,925.14
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maggran Earthbinder|r
+    .turnin 6283 >>Turn in Bloodfury Bloodline
+    .accept 5881 >>Accept Calling in the Reserves
+    .target Maggran Earthbinder
+step
+    .goto 1442/1,1002.43,949.24
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Braelyn Firehand|r
+    .turnin 1088 >>Turn in Ordanus
+    .target Braelyn Firehand
+    .isQuestComplete 1088
+step
+    .goto 1442/1,933.09,824.53
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tsunaman|r
+    .turnin 6393 >>Turn in Elemental War
+    .target Tsunaman
+step
+    .goto 1442/1,-394.20,-272.50
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Jin'Zil|r
+    .turnin 1058 >>Turn in Jin'Zil's Forest Magic
+    .target Witch Doctor Jin'Zil
+step
+    +|cRXP_WARN_End of the Stonetalon Mountains route.|r Quests still in your log lead on from here; pick your next zone by them
+    >>|cRXP_FRIENDLY_Thousand Needles|r: Calling in the Reserves
+    >>|cRXP_FRIENDLY_Ashenvale and back here|r: Ordanus
+step
+    +|cRXP_WARN_Suggested next zones at level 24|r: |cRXP_FRIENDLY_Thousand Needles|r (about 0.5 levels of quests, starting around Cliffwatcher Longhorn; 1 quest from here hands in there). Completing this step loads the guide for Thousand Needles --RouteBuilder:next
+]])

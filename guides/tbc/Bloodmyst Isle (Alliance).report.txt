@@ -1,0 +1,256 @@
+Bloodmyst Isle - Alliance - part 1 of 3, planned from level 10
+Guide "10-21 Bloodmyst Isle" in group "Zone Routes (Alliance)": this part has 66 steps, 54 stops
+Written to guides/tbc/Bloodmyst Isle (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 7 of 40 held at once (Draenei Warrior), not counting quests brought in from other zones.
+11 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 10. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 51 steps kept, 3 new ones slotted in, 6 moved because their prerequisites changed, 139 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 42 tasks, 9,354 yd on foot; ends at level 11.9; at its hardest you are 2.7 levels below the mobs
+  Draenei: 3 more tasks; their whole route comes to 13,024 yd; ends at level 11.9; at its hardest you are 2.6 levels below the mobs
+  everyone (quests that depend on other zones): 13 more tasks; their whole route comes to 14,929 yd; ends at level 11.9; at its hardest you are 2.7 levels below the mobs
+  Draenei (quests that depend on other zones): 1 more tasks; their whole route comes to 18,245 yd; ends at level 11.9; at its hardest you are 2.6 levels below the mobs
+  Draenei Shaman (quests that depend on other zones): 1 more tasks; their whole route comes to 21,012 yd; ends at level 11.9; at its hardest you are 2.6 levels below the mobs
+Hearthstone: set at Caregiver Topher Loaal (Caregiver Topher Loaal's inn); 0 hearth steps in the guide.
+8 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (24)
+------------------------
+Start to finish here: 14 (13 for everyone, 1 Draenei)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  On the Wings of a Hippogryph [9604, level 10, Draenei] -> The Exodar
+
+Hand-in step only shows once complete (1):
+  The Kessel Run [9663, level 12] - needs High Chief Stillpine (Azuremyst Isle); Exarch Menelaous (Azuremyst Isle); Admiral Odesyus (Azuremyst Isle)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Return to Topher Loaal [9606, level 10, Draenei] <- The Exodar
+  Elekks Are Serious Business [9625, level 11] <- The Exodar
+  Truth or Fiction [9699, level 16] <- The Exodar
+  The Bloodcurse Legacy [9751, level 18] <- Azuremyst Isle
+  Call of Water [9501, level 20, Draenei Shaman] <- The Exodar
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Declaration of Power [9666, level 13] - needs one of The Kessel Run [9663]
+  Saving Princess Stillpine [9667, level 13] - needs one of Stillpine Hold [9559]
+  Report to Exarch Admetius [9668, level 13] - needs one of Declaration of Power [9666]
+
+Worth checking in game
+----------------------
+  Declaration of Power [9666, level 13]: objective "Lord Xiz" is line 2 by the database, but RestedXP's guide has "Declaration of Power (x1)" there
+
+Put off to a later part (51)
+----------------------------
+These need a higher level than this part ends at:
+  Call of Water [9503, level 20]: needs level 20; this part gets Draenei Shaman characters to about 16.6
+  Call of Water [9504, level 20]: needs level 20; this part gets Draenei Shaman characters to about 16.6
+  Call of Water [9508, level 20]: its mobs are level 23; this part gets Draenei Shaman characters to about 16.6
+  Call of Water [9509, level 20]: needs level 20; this part gets Draenei Shaman characters to about 16.6
+  Pilfered Equipment [9548, level 17]: is a level 17 quest; this part gets you to about 14.0
+  Artifacts of the Blacksilt [9549, level 17]: needs level 13; this part gets you to about 12.8
+  A Map to Where? [9550, level 16]: needs level 13; this part gets you to about 12.8
+  Deciphering the Book [9557, level 16]: needs level 13; this part gets you to about 12.8
+  Nolkai's Words [9561, level 16]: needs level 13; this part gets you to about 12.8
+  Know Thine Enemy [9567, level 14]: needs level 13; this part gets you to about 12.8
+  Containing the Threat [9569, level 18]: its mobs are level 18; this part gets you to about 15.0
+  Searching for Galaen [9578, level 18]: needs level 15; this part gets you to about 15.0
+  Galaen's Fate [9579, level 18]: needs level 15; this part gets you to about 15.0
+  The Bear Necessities [9580, level 16]: needs level 14; this part gets you to about 14.0
+  The Final Sample [9585, level 18]: is a level 18 quest; this part gets you to about 14.0
+  Newfound Allies [9632, level 15]: needs level 15; this part gets you to about 15.0
+  Irradiated Crystal Shards [9641, level 15]: needs level 13; this part gets you to about 12.8
+  Constrictor Vines [9643, level 15]: needs level 14; this part gets you to about 14.0
+  WANTED: Deathclaw [9646, level 17]: its mobs are level 17; this part gets you to about 14.0
+  Culling the Flutterers [9647, level 16]: needs level 14; this part gets you to about 14.0
+  Ysera's Tears [9649, level 18]: needs level 15; this part gets you to about 15.0
+  The Missing Expedition [9669, level 19]: its mobs are level 19; this part gets you to about 16.1
+  They're Alive! Maybe... [9670, level 19]: needs level 16; this part gets you to about 16.1
+  Urgent Delivery [9671, level 18]: needs level 15; this part gets you to about 15.0
+  The Bloodcursed Naga [9674, level 18]: needs level 15; this part gets you to about 15.0
+  The Hopeless Ones... [9682, level 18]: needs level 15; this part gets you to about 15.0
+  Ending the Bloodcurse [9683, level 19]: its mobs are level 19; this part gets you to about 16.1
+  Restoring Sanctity [9687, level 18]: needs level 15; this part gets you to about 15.0
+  Into the Dream [9688, level 19]: needs level 15; this part gets you to about 15.0
+  Razormaw [9689, level 21]: needs level 19; this part gets you to about 16.1
+  Translations... [9696, level 16]: needs level 14; this part gets you to about 14.0
+  Audience with the Prophet [9698, level 16]: needs level 14; this part gets you to about 14.0
+  I Shoot Magic Into the Darkness [9700, level 16]: needs level 14; this part gets you to about 14.0
+  The Cryo-Core [9703, level 17]: needs level 15; this part gets you to about 15.0
+  Galaen's Journal - The Fate of Vindicator Saruan [9706, level 18]: needs level 15; this part gets you to about 15.0
+  Matis the Cruel [9711, level 18]: needs level 15; this part gets you to about 15.0
+  The Sun Gate [9740, level 18]: needs level 16; this part gets you to about 16.1
+  Critters of the Void [9741, level 18]: needs level 16; this part gets you to about 16.1
+  Limits of Physical Exhaustion [9746, level 18]: needs level 16; this part gets you to about 16.1
+  Don't Drink the Water [9748, level 18]: needs level 16; this part gets you to about 16.1
+  What We Know... [9753, level 20]: needs level 18; this part gets Draenei characters to about 16.6
+  What We Don't Know... [9756, level 20]: needs level 18; this part gets Draenei characters to about 16.6
+  Ending Their World [9759, level 20]: needs level 18; this part gets Draenei characters to about 16.6
+  Vindicator's Rest [9760, level 20]: needs level 18; this part gets Draenei characters to about 16.6
+  Clearing the Way [9761, level 20]: needs level 18; this part gets Draenei characters to about 16.6
+  Intercepting the Message [9779, level 16]: needs level 14; this part gets you to about 14.0
+  Explorers' League, Is That Something for Gnomes? [10063, level 17]: needs level 13; this part gets you to about 12.8
+  Talk to the Hand [10064, level 18]: needs level 16; this part gets you to about 16.1
+  Cutting a Path [10065, level 17]: needs level 16; this part gets you to about 16.1
+  Oh, the Tangled Webs They Weave [10066, level 18]: needs level 16; this part gets you to about 16.1
+  Fouled Water Spirits [10067, level 19]: needs level 16; this part gets you to about 16.1
+
+Left out (6)
+------------
+not in the game (on Questie's quest blacklist) (4):
+  Honor the Flame [11809], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Candy Bucket [12341]
+repeatable (1):
+  More Irradiated Crystal Shards [9642]
+handed in here, but the database does not say where it starts (1):
+  The Bloodcurse Legacy [9672]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Bloodmyst Isle - Alliance - part 2 of 3, planned from level 14
+Guide "10-21 Bloodmyst Isle" in group "Zone Routes (Alliance)": this part has 110 steps, 95 stops
+Written to guides/tbc/Bloodmyst Isle (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 13 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+4 pickups or hand-ins are within reach of a stop but planned for later.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 14. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 114 steps kept, 5 new ones slotted in, 1 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 92 tasks, 20,706 yd on foot; ends at level 17.4; 3 hearths; at its hardest you are 3.6 levels below the mobs
+  everyone (quests that depend on other zones): 28 more tasks; their whole route comes to 34,408 yd; ends at level 17.4; 3 hearths; at its hardest you are 5.0 levels below the mobs
+Hearthstone: set at Fazu (Fazu's inn); 3 hearth steps in the guide.
+5 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+2 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (42)
+------------------------
+Start to finish here: 30 (30 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Newfound Allies [9632, level 15] -> Azuremyst Isle
+  Audience with the Prophet [9698, level 16] -> The Exodar
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  The Kessel Run [9663, level 12] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (9):
+  I Shoot Magic Into the Darkness [9700, level 16] - needs one of Truth or Fiction [9699]
+  The Cryo-Core [9703, level 17] - needs one of I Shoot Magic Into the Darkness [9700]
+  Urgent Delivery [9671, level 18] - needs one of Deliver Them From Evil... [9602]
+  The Bloodcursed Naga [9674, level 18] - needs one of The Bloodcurse Legacy [9672], The Bloodcurse Legacy [9751]
+  The Hopeless Ones... [9682, level 18] - needs one of The Bloodcursed Naga [9674]
+  The Sun Gate [9740, level 18] - needs one of Limits of Physical Exhaustion [9746]
+  Limits of Physical Exhaustion [9746, level 18] - needs one of Don't Drink the Water [9748]
+  Don't Drink the Water [9748, level 18] - needs one of The Cryo-Core [9703]
+  Ending the Bloodcurse [9683, level 19] - needs one of The Hopeless Ones... [9682]
+
+Worth checking in game
+----------------------
+No objectives in the database (the hand-in step warns about it; add "objectives" for these to the zone file):
+  Urgent Delivery [9671, level 18]
+1 quests have no experience figure in the database: their experience is estimated, and 0 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  
+  I Shoot Magic Into the Darkness [9700, level 16]: "Sun Portal Site Confirmed" is assumed to be line 2 in the quest log; check it
+  I Shoot Magic Into the Darkness [9700, level 16]: objective "Void Anomaly slain (1)" moved from line 1 to line 2 to match RestedXP's guide
+  I Shoot Magic Into the Darkness [9700, level 16]: objective "Sun Portal Site Confirmed" moved from line 2 to line 1 to match RestedXP's guide
+
+Put off to a later part (10)
+----------------------------
+These need a higher level than this part ends at:
+  Call of Water [9503, level 20]: needs level 20; this part gets Draenei Shaman characters to about 17.9
+  Call of Water [9504, level 20]: needs level 20; this part gets Draenei Shaman characters to about 17.9
+  Call of Water [9508, level 20]: its mobs are level 23; this part gets Draenei Shaman characters to about 17.9
+  Call of Water [9509, level 20]: needs level 20; this part gets Draenei Shaman characters to about 17.9
+  Razormaw [9689, level 21]: needs level 19; this part gets you to about 17.5
+  What We Know... [9753, level 20]: needs level 18; this part gets Draenei characters to about 17.9
+  What We Don't Know... [9756, level 20]: needs level 18; this part gets Draenei characters to about 17.9
+  Ending Their World [9759, level 20]: needs level 18; this part gets Draenei characters to about 17.9
+  Vindicator's Rest [9760, level 20]: needs level 18; this part gets Draenei characters to about 17.9
+  Clearing the Way [9761, level 20]: needs level 18; this part gets Draenei characters to about 17.9
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Bloodmyst Isle - Alliance - part 3 of 3, planned from level 20
+Guide "10-21 Bloodmyst Isle" in group "Zone Routes (Alliance)": this part has 23 steps, 20 stops
+Written to guides/tbc/Bloodmyst Isle (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Draenei Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 20. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 15 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 1,643 yd on foot; ends at level 20.1
+  Draenei: 14 more tasks; their whole route comes to 5,142 yd; ends at level 20.4
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 3,107 yd; ends at level 20.1
+  Draenei Shaman (quests that depend on other zones): 4 more tasks; their whole route comes to 10,586 yd; ends at level 20.4
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (9)
+-----------------------
+Start to finish here: 6 (1 for everyone, 5 Draenei)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  The Kessel Run [9663, level 12] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Call of Water [9503, level 20, Draenei Shaman] - needs one of Call of Water [9501]
+  Call of Water [9504, level 20, Draenei Shaman] - needs one of Call of Water [9503]
+
+Worth checking in game
+----------------------
+
+Not planned (2)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Call of Water [9508, level 20]: its mobs are level 23; this part gets Draenei Shaman characters to about 20.4
+  Call of Water [9509, level 20]: follows Call of Water [9508]
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

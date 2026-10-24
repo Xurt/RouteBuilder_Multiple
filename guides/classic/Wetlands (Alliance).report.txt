@@ -82,7 +82,7 @@ Left out (8)
 ------------
 above this zone's range of 20-33 (3):
   A Grim Task [304], James Hyal [1301], James Hyal [1302]
-special category (sort -22) (2):
+not in the game (on Questie's quest blacklist) (2):
   Winter's Presents [8827], New Year Celebrations! [8860]
 dungeon quest (1):
   The Fury Runs Deep [378]

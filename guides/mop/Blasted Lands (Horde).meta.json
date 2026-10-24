@@ -1,0 +1,283 @@
+{
+  "zone": "Blasted Lands",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "10-41 Blasted Lands",
+  "file": "Blasted Lands (Horde).lua",
+  "continent": -4,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 10,
+      "end": 10,
+      "next": 13,
+      "guide": "10-11 Blasted Lands",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "10-11 Blasted Lands",
+          "level": 10,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 13,
+      "end": 13,
+      "next": 20,
+      "guide": "13-14 Blasted Lands",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "13-14 Blasted Lands",
+          "level": 13,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 20,
+      "end": 20,
+      "next": 23,
+      "guide": "20-21 Blasted Lands",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "20-21 Blasted Lands",
+          "level": 20,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "start": 23,
+      "end": 23,
+      "next": 26,
+      "guide": "23-24 Blasted Lands",
+      "sections": [
+        {
+          "label": "RBSection4_1",
+          "name": "part 4",
+          "guide": "23-24 Blasted Lands",
+          "level": 23,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "start": 26,
+      "end": 26,
+      "next": 30,
+      "guide": "26-27 Blasted Lands",
+      "sections": [
+        {
+          "label": "RBSection5_1",
+          "name": "part 5",
+          "guide": "26-27 Blasted Lands",
+          "level": 26,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "start": 30,
+      "end": 30,
+      "next": 35,
+      "guide": "30-31 Blasted Lands",
+      "sections": [
+        {
+          "label": "RBSection6_1",
+          "name": "part 6",
+          "guide": "30-31 Blasted Lands",
+          "level": 30,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "start": 35,
+      "end": 35,
+      "next": 38,
+      "guide": "35-36 Blasted Lands",
+      "sections": [
+        {
+          "label": "RBSection7_1",
+          "name": "part 7",
+          "guide": "35-36 Blasted Lands",
+          "level": 35,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 8,
+      "start": 38,
+      "end": 38,
+      "guide": "38-39 Blasted Lands",
+      "sections": [
+        {
+          "label": "RBSection8_1",
+          "name": "part 8",
+          "guide": "38-39 Blasted Lands",
+          "level": 38,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 6362,
+      "level": 7,
+      "req": 5,
+      "xp": 315,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren",
+      "from": "Mulgore"
+    },
+    {
+      "id": 9133,
+      "level": 7,
+      "req": 5,
+      "xp": 315,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Eversong Woods"
+    },
+    {
+      "id": 9328,
+      "level": 21,
+      "req": 15,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Ghostlands"
+    },
+    {
+      "id": 9627,
+      "level": 21,
+      "req": 15,
+      "xp": 2500,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Durotar"
+    },
+    {
+      "id": 9811,
+      "level": 21,
+      "req": 15,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/Goblin/Pandaren",
+      "from": "Ghostlands"
+    },
+    {
+      "id": 24550,
+      "level": 10,
+      "req": 3,
+      "xp": 420,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren",
+      "from": "Mulgore"
+    },
+    {
+      "id": 27258,
+      "level": 37,
+      "req": 35,
+      "xp": 1850,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Dustwallow Marsh"
+    },
+    {
+      "id": 27919,
+      "level": 55,
+      "req": 54,
+      "xp": 4050,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Swamp of Sorrows"
+    },
+    {
+      "id": 28553,
+      "level": 55,
+      "req": 54,
+      "xp": 815,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Swamp of Sorrows"
+    },
+    {
+      "id": 28858,
+      "level": 55,
+      "req": 54,
+      "xp": 815,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Winterspring"
+    },
+    {
+      "id": 28865,
+      "level": 54,
+      "req": 54,
+      "xp": 1970,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Silithus"
+    },
+    {
+      "id": 28867,
+      "level": 54,
+      "req": 54,
+      "xp": 1970,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Silithus"
+    }
+  ],
+  "carriedTo": {
+    "Mulgore": 1,
+    "Eversong Woods": 1,
+    "The Barrens": 2,
+    "Azshara": 1,
+    "Ghostlands": 1,
+    "Silverpine Forest": 1,
+    "Durotar": 14,
+    "Tirisfal Glades": 2,
+    "Hillsbrad Foothills": 1,
+    "Moonglade": 1,
+    "Ashenvale": 1,
+    "Arathi Highlands": 1,
+    "Northern Stranglethorn": 1,
+    "Desolace": 1,
+    "Southern Barrens": 1,
+    "The Hinterlands": 1,
+    "The Cape of Stranglethorn": 1,
+    "Dustwallow Marsh": 2,
+    "Feralas": 1,
+    "Western Plaguelands": 1
+  }
+}

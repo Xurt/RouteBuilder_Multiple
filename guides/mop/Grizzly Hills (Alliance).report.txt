@@ -1,0 +1,142 @@
+Grizzly Hills - Alliance - part 1 of 2, planned from level 73
+Guide "73-75 Grizzly Hills" in group "Zone Routes (Alliance)": this part has 263 steps, 221 stops
+Written to guides/mop/Grizzly Hills (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 9 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+13 pickups or hand-ins are within reach of a stop but planned for later.
+7 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 73. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 259 steps kept, 11 new ones slotted in, 16 moved because their prerequisites changed, 8 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 205 tasks, 36,935 yd on foot; ends at level 74.5; 1 hearth; at its hardest you are 1.3 levels below the mobs
+  everyone (quests that depend on other zones): 81 more tasks; their whole route comes to 51,942 yd; ends at level 74.5; 1 hearth; at its hardest you are 1.3 levels below the mobs
+Hearthstone: set at Veira Langdon (Veira Langdon's inn); 1 hearth step in the guide.
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+27 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+4 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+9 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (93)
+------------------------
+Start to finish here: 62 (29 for everyone, 33 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  The Magical Kingdom of Dalaran [12794, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Dalaran - (Dungeon/Raid)
+  Reallocating Resources [12770, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Zul'Drak
+
+Hand-in step only shows once complete (1):
+  The Perfect Plan [12129, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs War Golem Blueprint (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  The Hills Have Us [12511, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Dragonblight
+
+Need a quest this guide does not hand in - steps show only once that is done (27):
+  Report to Gryan Stoutmantle... Again [12109, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Descent into Darkness [12105]
+  The Failed World Tree [12219, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of A Swift Response [12310]
+  A Dark Influence [12220, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of A Swift Response [12310]
+  A Possible Link [12246, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs The Failed World Tree [12219], A Dark Influence [12220]
+  Words of Warning [12302, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Test of Mettle [12300]
+  Escape from Silverbrook [12308, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Words of Warning [12302]
+  A Swift Response [12310, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Escape from Silverbrook [12308]
+  Why Fabricate When You Can Appropriate? [12130, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Perfect Plan [12129]
+  We Have the Power [12131, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Why Fabricate When You Can Appropriate? [12130]
+  Sasha's Hunt [12134, level 75] - needs one of Fate and Coincidence [12329]
+  ... Or Maybe We Don't [12138, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of We Have the Power [12131]
+  The Iron Thane and His Anvil [12153, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of ... Or Maybe We Don't [12138]
+  Blackout [12154, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of ... Or Maybe We Don't [12138]
+  Hollowstone Mine [12158, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Report to Gryan Stoutmantle... Again [12109]
+  Souls at Unrest [12159, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Hollowstone Mine [12158]
+  A Name from the Past [12160, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Souls at Unrest [12159]
+  Ruuna the Blind [12161, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of A Name from the Past [12160]
+  Hour of the Worg [12164, level 75] - needs one of A Sister's Pledge [12411]
+  Children of Ursoc [12247, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs The Failed World Tree [12219], A Dark Influence [12220]
+  Vordrassil's Sapling [12248, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs A Possible Link [12246], Children of Ursoc [12247]
+  Ursoc, the Bear God [12249, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Vordrassil's Sapling [12248], Vordrassil's Seeds [12250]
+  Vordrassil's Seeds [12250, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs A Possible Link [12246], Children of Ursoc [12247]
+  Out of Body Experience [12327, level 75] - needs one of Ruuna's Request [12328]
+  Ruuna's Request [12328, level 75] - needs one of Ruuna the Blind [12161], Ruuna the Blind [12425]
+  Fate and Coincidence [12329, level 75] - needs one of Out of Body Experience [12327]
+  Anatoly Will Talk [12330, level 75] - needs one of Fate and Coincidence [12329]
+  A Sister's Pledge [12411, level 75] - needs one of Anatoly Will Talk [12330]
+
+Worth checking in game
+----------------------
+  Filling the Cages [11984, level 74]: "Quest Invisman - Filling the Cages (1)" has no place in the data; taken to be done where the quest is given
+  Truce? [11989, level 73]: "Drakuru Handshake KC Bunny (1)" has no place in the data; taken to be done where the quest is given
+  Rallying the Troops [12070, level 75]: could not read how many Grizzly Hills Giant are needed from the quest text; assumed 8
+  Rallying the Troops [12070, level 75]: could not read how many Iron Rune Avenger are needed from the quest text; assumed 8
+  Scourgekabob [12484, level 74]: "Mummified Carcass KC Bunny (1)" has no place in the data; taken to be done where the quest is given
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  Put on Your Best Face for Loken [12185, level 75]: its mobs are level 83; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 74.5
+
+Left out (27)
+-------------
+not in the game (on Questie's quest blacklist) (11):
+  Incense for the Summer Scorchlings [11964], DEPRECAED [12156], Solstice Village [12162], The Evil Below [12163], Cleansing Drak'Tharon [12238], Candy Bucket [12944], Candy Bucket [12945], Beldak the Elder [13013], Lunaro the Elder [13025], Whurain the Elder [13030], Sharing a Bountiful Feast [14064]
+repeatable (11):
+  Seared Scourge [12038], Shredder Repair [12244], Pieces Parts [12268], Kick 'Em While They're Down [12289], Life or Death [12296], Down With Captain Zorna! [12314], Keep Them at Bay! [12316], Smoke 'Em Out [12323], Riding the Red Rocket [12437], Blackriver Skirmish [12444], Always Seeking Solvent [12446]
+dungeon quest (1):
+  Search and Rescue [12037]
+never shown to players (a tracking flag or an unused entry) (1):
+  Test of Mettle [12300]
+special category (sort -369) (1):
+  Desecrate this Fire! [13454]
+special category (sort -22) (1):
+  Honor the Flame [13489]
+handed in here, but the database does not say where it starts (1):
+  Escape from Silverbrook [13524]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Grizzly Hills - Alliance - part 2 of 2, planned from level 81
+Guide "73-75 Grizzly Hills" in group "Zone Routes (Alliance)": this part has 8 steps, 7 stops
+Written to guides/mop/Grizzly Hills (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 81. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 3 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 735 yd on foot; ends at level 81.0; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 1,221 yd; ends at level 81.0; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 1 (0 for everyone, 1 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  The Perfect Plan [12129, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

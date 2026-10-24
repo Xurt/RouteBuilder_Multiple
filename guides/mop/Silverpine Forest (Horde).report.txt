@@ -1,0 +1,134 @@
+Silverpine Forest - Horde - part 1 of 2, planned from level 11
+Guide "11-20 Silverpine Forest" in group "Zone Routes (Horde)": this part has 93 steps, 88 stops
+Written to guides/mop/Silverpine Forest (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 11. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 110 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 82 tasks, 13,009 yd on foot; ends at level 15.4; 2 hearths
+  everyone (quests that depend on other zones): 28 more tasks; their whole route comes to 17,041 yd; ends at level 15.4; 2 hearths; at its hardest you are 1.6 levels below the mobs
+Hearthstone: set at "Salty" Gorgar ("Salty" Gorgar's inn); 2 hearth steps in the guide.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (43)
+------------------------
+Start to finish here: 28 (1 for everyone, 27 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  To Forsaken Forward Command [27290, level 14, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Ruins of Gilneas
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Warchief's Command: Silverpine Forest! [26964, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Tirisfal Glades
+  Warchief's Command: Silverpine Forest! [28568, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Undercity
+  Until Death Do Us Part [264, level 15, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Thunder Bluff
+  The Great Escape [27438, level 16, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Ruins of Gilneas
+
+Need a quest this guide does not hand in - steps show only once that is done (10):
+  Rise, Godfrey [27472, level 16, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Great Escape [27438]
+  Breaking the Barrier [27474, level 17, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Rise, Godfrey [27472]
+  Unyielding Servitors [27475, level 17, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Rise, Godfrey [27472]
+  Dalar Dawnweaver [27476, level 18, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Breaking the Barrier [27474], Unyielding Servitors [27475]
+  Relios the Relic Keeper [27478, level 18, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Dalar Dawnweaver [27476]
+  Practical Vengeance [27483, level 18] - needs one of Dalar Dawnweaver [27476]
+  Only One May Enter [27484, level 18, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Relios the Relic Keeper [27478]
+  A Wolf in Bear's Clothing [27510, level 18] - needs one of Only One May Enter [27484]
+  Transdimensional Warfare: Chapter I [27512, level 18, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Only One May Enter [27484]
+  Transdimensional Warfare: Chapter II [27513, level 18, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Transdimensional Warfare: Chapter I [27512]
+
+Worth checking in game
+----------------------
+  Iterating Upon Success [26998, level 11, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: mixes a kill-credit objective with others; check that "Vile Fin Tidehunter" really is line 2 in the quest log
+  Lordaeron [27098, level 13, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: "Lady Sylvanas Windrunner (1)" has no place in the data; taken to be done where the quest is given
+
+Put off to a later part (12)
+----------------------------
+These need a higher level than this part ends at:
+  Transdimensional Warfare: Chapter III [27518, level 19]: is a level 19 quest; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 15.4
+  Taking the Battlefront [27542, level 19]: follows Transdimensional Warfare: Chapter III [27518]
+  Of No Consequence [27547, level 19]: is a level 19 quest; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 15.4
+  Lessons in Fear [27548, level 19]: its mobs are level 18; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 15.4
+  Pyrewood's Fall [27550, level 19]: is a level 19 quest; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 15.4
+  I Never Forget a Face [27574, level 19]: follows From the Belly of the Beast [27575]
+  From the Belly of the Beast [27575, level 19]: its mobs are level 18; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 15.4
+  7th Legion Battle Plans [27577, level 19]: its mobs are level 18; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 15.4
+  Sowing Discord [27580, level 20]: its mobs are level 20; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 15.4
+  Cities in Dust [27601, level 20]: is a level 20 quest; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 15.4
+  Empire of Dirt [27746, level 20]: needs level 19; this part gets you to about 15.4
+  Warchief's Command: Hillsbrad Foothills! [28089, level 20]: needs level 19; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 15.4
+
+Left out (42)
+-------------
+not in the game (on Questie's quest blacklist) (39):
+  Call of Water [63], Arugal's Folly [99], Call of Water [100], Prove Your Worth [421], Arugal's Folly [422], Arugal's Folly [423], Arugal's Folly [424], Wild Hearts [429], The Dead Fields [437], Rot Hide Clues [439], Assault on Fenris Isle [442], Rot Hide Ichor [443], Delivery to Silverpine Forest [445], Thule Ravenclaw [446], Report to Hadrec [448], The Deathstalkers' Report [449], A Recipe For Death [450], Resting in Pieces [460], The Hidden Niche [461], Border Crossings [477], Maps and Runes [478], Ambermill Investigations [479], The Weaver [480], Dalar's Analysis [481], Dalaran's Intentions [482], Beren's Peril [516], Arugal Must Die [1014], Call of Water [1103], Speak with Renferrel [3221], Mura Runetotem [3301], Obsidian the Elder [8645], Delivery to the Sepulcher [9189], Honor the Flame [11584], Playing with Fire [11915], Incense for the Festival Scorchlings [11966], Candy Bucket [12371], Sharing a Bountiful Feast [14065], [TEMP PH] What We Have Done [27543], Candy Bucket [28966]
+handed in here, but the database does not say where it starts (2):
+  Korok the Colossus [27322], Ley Energies [27480]
+cannot be taken together with I Never Forget a Face [27574], which is in the guide (1):
+  On Her Majesty's Secret Service [27594]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Silverpine Forest - Horde - part 2 of 2, planned from level 20
+Guide "11-20 Silverpine Forest" in group "Zone Routes (Horde)": this part has 35 steps, 33 stops
+Written to guides/mop/Silverpine Forest (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 20. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 27 steps kept, 0 new ones slotted in, 6 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 20.0
+  everyone (quests that depend on other zones): 32 more tasks; their whole route comes to 3,330 yd; ends at level 20.0; 1 ORDER PROBLEMS
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (12)
+------------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Warchief's Command: Hillsbrad Foothills! [28089, level 20, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Hillsbrad Foothills
+
+Need a quest this guide does not hand in - steps show only once that is done (11):
+  Transdimensional Warfare: Chapter III [27518, level 19, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Transdimensional Warfare: Chapter II [27513]
+  Taking the Battlefront [27542, level 19, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Transdimensional Warfare: Chapter III [27518]
+  Of No Consequence [27547, level 19, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Taking the Battlefront [27542]
+  Lessons in Fear [27548, level 19, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Taking the Battlefront [27542]
+  Pyrewood's Fall [27550, level 19, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Taking the Battlefront [27542]
+  I Never Forget a Face [27574, level 19, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Taking the Battlefront [27542]
+  From the Belly of the Beast [27575, level 19, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of I Never Forget a Face [27574]
+  7th Legion Battle Plans [27577, level 19, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Of No Consequence [27547], Lessons in Fear [27548], Pyrewood's Fall [27550]
+  Sowing Discord [27580, level 20, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Of No Consequence [27547], Lessons in Fear [27548], Pyrewood's Fall [27550]
+  Cities in Dust [27601, level 20, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of On Her Majesty's Secret Service [27594]
+  Empire of Dirt [27746, level 20] - needs one of Cities in Dust [27601] -> Hillsbrad Foothills
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

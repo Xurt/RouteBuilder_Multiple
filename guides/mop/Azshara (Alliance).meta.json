@@ -1,0 +1,143 @@
+{
+  "zone": "Azshara",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "10-17 Azshara",
+  "file": "Azshara (Alliance).lua",
+  "continent": -16,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 10,
+      "end": 10.78,
+      "next": 13,
+      "guide": "10-11 Azshara",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "10-11 Azshara",
+          "level": 10,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 13,
+      "end": 13.32,
+      "next": 16,
+      "guide": "13-14 Azshara",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "13-14 Azshara",
+          "level": 13,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 16,
+      "end": 16.74,
+      "guide": "16-17 Azshara: around Haggrum Bloodfist",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "around Haggrum Bloodfist",
+          "guide": "16-17 Azshara: around Haggrum Bloodfist",
+          "level": 16,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 14117,
+      "level": 10,
+      "req": 8,
+      "xp": 840,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 14118,
+      "level": 10,
+      "req": 8,
+      "xp": 840,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 14322,
+      "level": 13,
+      "req": 11,
+      "xp": 910,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 14442,
+      "level": 13,
+      "req": 11,
+      "xp": 230,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 24437,
+      "level": 16,
+      "req": 12,
+      "xp": 1150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 14431,
+      "level": 17,
+      "req": 15,
+      "xp": 1250,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 14432,
+      "level": 17,
+      "req": 15,
+      "xp": 1250,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 14433,
+      "level": 17,
+      "req": 15,
+      "xp": 950,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 14435,
+      "level": 17,
+      "req": 15,
+      "xp": 1600,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {}
+}

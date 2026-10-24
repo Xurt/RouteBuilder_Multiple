@@ -1,0 +1,253 @@
+{
+  "zone": "Tanaris",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "10-41 Tanaris",
+  "file": "Tanaris (Horde).lua",
+  "continent": -440,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 10,
+      "end": 10,
+      "next": 13,
+      "guide": "10-11 Tanaris",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "10-11 Tanaris",
+          "level": 10,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 13,
+      "end": 13,
+      "next": 20,
+      "guide": "13-14 Tanaris",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "13-14 Tanaris",
+          "level": 13,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 20,
+      "end": 20,
+      "next": 23,
+      "guide": "20-21 Tanaris",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "20-21 Tanaris",
+          "level": 20,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "start": 23,
+      "end": 23,
+      "next": 26,
+      "guide": "23-24 Tanaris",
+      "sections": [
+        {
+          "label": "RBSection4_1",
+          "name": "part 4",
+          "guide": "23-24 Tanaris",
+          "level": 23,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "start": 26,
+      "end": 26.01,
+      "next": 30,
+      "guide": "26-27 Tanaris",
+      "sections": [
+        {
+          "label": "RBSection5_1",
+          "name": "part 5",
+          "guide": "26-27 Tanaris",
+          "level": 26,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "start": 30,
+      "end": 30,
+      "next": 35,
+      "guide": "30-31 Tanaris",
+      "sections": [
+        {
+          "label": "RBSection6_1",
+          "name": "part 6",
+          "guide": "30-31 Tanaris",
+          "level": 30,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 7,
+      "start": 35,
+      "end": 35,
+      "next": 38,
+      "guide": "35-36 Tanaris",
+      "sections": [
+        {
+          "label": "RBSection7_1",
+          "name": "part 7",
+          "guide": "35-36 Tanaris",
+          "level": 35,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 8,
+      "start": 38,
+      "end": 38,
+      "guide": "38-39 Tanaris",
+      "sections": [
+        {
+          "label": "RBSection8_1",
+          "name": "part 8",
+          "guide": "38-39 Tanaris",
+          "level": 38,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 6362,
+      "level": 7,
+      "req": 5,
+      "xp": 315,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren",
+      "from": "Mulgore"
+    },
+    {
+      "id": 9133,
+      "level": 7,
+      "req": 5,
+      "xp": 315,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Eversong Woods"
+    },
+    {
+      "id": 9328,
+      "level": 21,
+      "req": 15,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Ghostlands"
+    },
+    {
+      "id": 9627,
+      "level": 21,
+      "req": 15,
+      "xp": 2500,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Durotar"
+    },
+    {
+      "id": 9811,
+      "level": 21,
+      "req": 15,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/Goblin/Pandaren",
+      "from": "Ghostlands"
+    },
+    {
+      "id": 24550,
+      "level": 10,
+      "req": 3,
+      "xp": 420,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren",
+      "from": "Mulgore"
+    },
+    {
+      "id": 25107,
+      "level": 49,
+      "req": 46,
+      "xp": 8150,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Uldum"
+    },
+    {
+      "id": 27258,
+      "level": 37,
+      "req": 35,
+      "xp": 1850,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Dustwallow Marsh"
+    },
+    {
+      "id": 27447,
+      "level": 43,
+      "req": 43,
+      "xp": 505,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Thousand Needles"
+    }
+  ],
+  "carriedTo": {
+    "Mulgore": 1,
+    "Eversong Woods": 1,
+    "The Barrens": 2,
+    "Azshara": 1,
+    "Ghostlands": 1,
+    "Silverpine Forest": 1,
+    "Durotar": 14,
+    "Tirisfal Glades": 2,
+    "Hillsbrad Foothills": 1,
+    "Moonglade": 1,
+    "Northern Stranglethorn": 2,
+    "Ashenvale": 1,
+    "Arathi Highlands": 1,
+    "Desolace": 1,
+    "Southern Barrens": 1,
+    "The Hinterlands": 1,
+    "The Cape of Stranglethorn": 1,
+    "Dustwallow Marsh": 2,
+    "Feralas": 1,
+    "Western Plaguelands": 1
+  }
+}

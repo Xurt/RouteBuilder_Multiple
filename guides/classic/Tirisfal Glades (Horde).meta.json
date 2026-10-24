@@ -399,6 +399,15 @@
       "tag": "Warlock"
     },
     {
+      "id": 1471,
+      "level": 10,
+      "req": 10,
+      "xp": 630,
+      "part": 1,
+      "section": 1,
+      "tag": "Undead Warlock"
+    },
+    {
       "id": 1473,
       "level": 10,
       "req": 10,

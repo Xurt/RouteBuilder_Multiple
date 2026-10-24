@@ -1,0 +1,63 @@
+{
+  "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "10-17 Azshara",
+  "saved": "2026-10-23 17:46",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "accept:14128 @76:26.82,76.95  Accept Return of the Highborne?",
+        "accept:14118 @76:26.82,76.95  Accept Venison for the Troops",
+        "accept:14117 @76:26.82,76.95  Accept The Eyes of Ashenvale",
+        "obj:14118:1 @76:25.78,74.52  Objective Venison for the Troops / Slab of Venison (15)",
+        "obj:14117:1 @76:26.07,74.08  Objective The Eyes of Ashenvale / Talrendis Scout slain (8)",
+        "turnin:14117 @76:26.82,76.95  TurnIn The Eyes of Ashenvale",
+        "turnin:14118 @76:26.82,76.95  TurnIn Venison for the Troops",
+        "accept:14162 @76:27,77.08  Accept Report to Horzak",
+        "turnin:14128 @76:29.68,66.88  TurnIn Return of the Highborne?",
+        "turnin:14162 @76:29.15,66.24  TurnIn Report to Horzak"
+      ]
+    },
+    {
+      "part": 2,
+      "steps": [
+        "accept:14322 @76:45.06,75.48  Accept Bad Science! Bad!",
+        "obj:14322:1 @76:44.33,78.97  Objective Bad Science! Bad! / Static-Charged Hippogryph slain (8)",
+        "turnin:14322 @76:45.06,75.48  TurnIn Bad Science! Bad!",
+        "accept:14442 @76:45.06,75.48  Accept My Favorite Subject",
+        "turnin:14442 @76:42.23,76.09  TurnIn My Favorite Subject",
+        "accept:14424 @76:29.72,67.07  Accept Need More Science",
+        "accept:24437 @76:39.14,51.77  Accept First Come, First Served",
+        "obj:24437:1 @76:43.87,59.92  Objective First Come, First Served / Real Estate Bunny (Pagoda)",
+        "obj:24437:2 @76:43.6,43.43  Objective First Come, First Served / Real Estate Bunny (Tower)",
+        "obj:24437:3 @76:45.46,38.51  Objective First Come, First Served / Real Estate Bunny (Vista)",
+        "turnin:24437 @76:39.14,51.77  TurnIn First Come, First Served",
+        "turnin:14424 @76:50.41,74.29  TurnIn Need More Science",
+        "accept:24458 @76:50.53,74.74  Accept A Hello to Arms",
+        "obj:24458:1 @76:60.55,50.88  Objective A Hello to Arms / Bleenik Fizzlefuse",
+        "turnin:24458 @76:60.55,50.88  TurnIn A Hello to Arms"
+      ]
+    },
+    {
+      "part": 3,
+      "steps": [
+        "accept:14431 @76:42.41,23.61  Accept The Blackmaw Scar",
+        "obj:14431:1 @76:38.17,29.61  Objective The Blackmaw Scar / Talrendis Biologist slain (8)",
+        "obj:14431:2 @76:38.17,29.61  Objective The Blackmaw Scar / Blackmaw Intelligence (1)",
+        "turnin:14431 @76:42.41,23.61  TurnIn The Blackmaw Scar",
+        "accept:14433 @76:42.41,23.61  Accept Diplomacy by Another Means",
+        "accept:14432 @76:42.41,23.61  Accept A Pale Brew",
+        "obj:14432:1 @76:32.48,31.76  Objective A Pale Brew / Briaroot Brew (10)",
+        "obj:14433:2 @76:32.07,32.87  Objective Diplomacy by Another Means / Ambassador's Robes (1)",
+        "obj:14433:1 @76:29.81,38.56  Objective Diplomacy by Another Means / Blackmaw Meeting Agenda (1)",
+        "turnin:14433 @76:42.41,23.61  TurnIn Diplomacy by Another Means",
+        "turnin:14432 @76:42.41,23.61  TurnIn A Pale Brew",
+        "accept:14435 @76:42.41,23.61  Accept The Blackmaw Doublecross",
+        "obj:14435:3 @76:32.16,31.04  Objective The Blackmaw Doublecross / Blackmaw Shaman slain (4)",
+        "obj:14435:2 @76:31.64,30.34  Objective The Blackmaw Doublecross / Blackmaw Warrior slain (4)",
+        "obj:14435:1 @76:30.98,29.99  Objective The Blackmaw Doublecross / Ungarl slain (1)",
+        "turnin:14435 @76:42.41,23.61  TurnIn The Blackmaw Doublecross"
+      ]
+    }
+  ]
+}

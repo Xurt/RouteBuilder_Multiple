@@ -1,0 +1,196 @@
+Blade's Edge Mountains - Alliance - part 1 of 2, planned from level 65
+Guide "65-70 Blade's Edge Mountains" in group "Zone Routes (Alliance)": this part has 141 steps, 123 stops
+Written to guides/tbc/Blade's Edge Mountains (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 8 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+4 pickups or hand-ins are within reach of a stop but planned for later.
+5 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 65. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 138 steps kept, 21 new ones slotted in, 1 moved because their prerequisites changed, 41 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 122 tasks, 21,575 yd on foot; ends at level 65.6; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 38 more tasks; their whole route comes to 30,291 yd; ends at level 65.6; 2 ORDER PROBLEMS; at its hardest you are 1.8 levels below the mobs
+Hearthstone: set at Pol Snowhoof (Pol Snowhoof's inn); 0 hearth steps in the guide.
+3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+6 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+3 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (54)
+------------------------
+Start to finish here: 38 (38 for everyone)
+
+Hand-in step only shows once complete (1):
+  Planting the Banner [10518, level 67] - needs Helm of Gurn Grubnosh (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  No Time for Curiosity [9794, level 65] <- Zangarmarsh
+  Mog'dorg the Wizened [10983, level 70] <- Shattrath City
+
+Need a quest this guide does not hand in - steps show only once that is done (13):
+  Where Did Those Darn Gnomes Go? [10580, level 67] - needs one of Planting the Banner [10518]
+  Follow the Breadcrumbs [10581, level 67] - needs one of Where Did Those Darn Gnomes Go? [10580]
+  Ridgespine Menace [10620, level 67] - needs one of Picking Up Some Power Converters [10584]
+  Cutting Your Teeth [10632, level 67] - needs one of Picking Up Some Power Converters [10584]
+  Ride the Lightning [10657, level 67] - needs one of Picking Up Some Power Converters [10584]
+  More than a Pound of Flesh [10671, level 67] - needs one of Ridgespine Menace [10620]
+  Trapping the Light Fantastic [10674, level 67] - needs one of Ride the Lightning [10657]
+  Longtail is the Lynchpin [10893, level 67] - needs one of Wyrmskull Watcher [10894]
+  Wyrmskull Watcher [10894, level 67] - needs one of Did You Get The Note? [10719]
+  Show Them Gnome Mercy! [10675, level 68] - needs one of Trapping the Light Fantastic [10674]
+  Meeting at the Blackwing Coven [10722, level 68] - needs one of Longtail is the Lynchpin [10893]
+  Mystery Mask [10812, level 68] - needs one of Damaged Mask [10810]
+  Felsworn Gas Mask [10819, level 68] - needs one of Mystery Mask [10812]
+
+Worth checking in game
+----------------------
+  Scratches [10556, level 66]: "Have Daranelle analyze the Kaliri aura (1)" has no place in the data; taken to be done where the quest is given
+
+Put off to a later part (34)
+----------------------------
+These need a higher level than this part ends at:
+  Creating the Pendant [10567, level 66]: needs level 66; this part gets you to about 65.8
+  Whispers of the Raven God [10607, level 68]: needs level 66; this part gets you to about 65.8
+  Maxnar Must Die! [10748, level 68]: its mobs are level 68; this part gets you to about 65.8
+  Showdown [10806, level 70]: its mobs are level 70; this part gets you to about 65.8
+  Deceive thy Enemy [10820, level 68]: its mobs are level 68; this part gets you to about 65.8
+  You're Fired! [10821, level 68]: follows Deceive thy Enemy [10820]
+  Treebole Must Know [10829, level 68]: needs level 66; this part gets you to about 65.8
+  Exorcising the Trees [10830, level 68]: needs level 66; this part gets you to about 65.8
+  Harvesting the Fel Ammunition [10904, level 68]: follows Death's Door [10910]
+  Death's Door [10910, level 68]: follows You're Fired! [10821]
+  Fire At Will! [10911, level 68]: follows Harvesting the Fel Ammunition [10904]
+  The Hound-Master [10912, level 68]: its mobs are level 68; this part gets you to about 65.8
+  Mog'dorg the Wizened [10989, level 70]: needs level 70; this part gets you to about 65.8
+  Grulloc Has Two Skulls [10995, level 70]: needs level 70; this part gets you to about 65.8
+  Maggoc's Treasure Chest [10996, level 70]: needs level 70; this part gets you to about 65.8
+  Even Gronn Have Standards [10997, level 70]: needs level 70; this part gets you to about 65.8
+  Grim(oire) Business [10998, level 70]: needs level 70; this part gets you to about 65.8
+  Into the Soulgrinder [11000, level 70]: needs level 70; this part gets you to about 65.8
+  Ogre Heaven [11009, level 70]: needs level 70; this part gets you to about 65.8
+  Bombing Run [11010, level 70]: needs level 70; this part gets Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock characters to about 65.8
+  Speak with Mog'dorg [11022, level 70]: needs level 70; this part gets you to about 65.8
+  The Crystals [11025, level 70]: needs level 70; this part gets you to about 65.8
+  Our Boy Wants To Be A Skyguard Ranger [11030, level 70]: needs level 70; this part gets you to about 65.8
+  Parts for the Rocket-Chief [11040, level 67]: needs level 67; this part gets you to about 65.8
+  Building a Better Gryphon [11043, level 67]: needs level 67; this part gets you to about 65.8
+  An Apexis Relic [11058, level 70]: needs level 70; this part gets you to about 65.8
+  Guardian of the Monument [11059, level 70]: needs level 70; this part gets you to about 65.8
+  A Father's Duty [11061, level 70]: needs level 70; this part gets you to about 65.8
+  The Skyguard Outpost [11062, level 70]: needs level 70; this part gets you to about 65.8
+  Wrangle Some Aether Rays! [11065, level 70]: needs level 70; this part gets you to about 65.8
+  To Rule The Skies [11078, level 70]: needs level 70; this part gets you to about 65.8
+  A Fel Whip For Gahk [11079, level 70]: needs level 70; this part gets you to about 65.8
+  Bombing Run [11102, level 70]: needs level 70; this part gets Druid characters to about 65.8
+  Assault on Bash'ir Landing! [11119, level 70]: needs level 70; this part gets you to about 65.8
+
+Left out (38)
+-------------
+repeatable (10):
+  Purging the Chambers of Bash'ir [10975], Nexus-Prince Shaffar's Personal Chamber [10981], Bomb Them Again! [11023], Banish More Demons [11051], A Crystalforged Darkrune [11060], Wrangle More Aether Rays! [11066], The Relic's Emanation [11080], Reset Current Rating - 2v2 [95158], Reset Current Rating - 3v3 [95251], Reset Current Rating - 5v5 [95252]
+not in the game (on Questie's quest blacklist) (8):
+  Yous Have Da Darkrune? [11027], Desecrate this Fire! [11767], Honor the Flame [11807], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Candy Bucket [12358], Candy Bucket [12359], Candy Bucket [12406]
+needs a profession (7):
+  To the Evergrove [10979], The Book of the Raven [10980], Eyes in the Sky [10986], The Raven Stones [10988], The Eagle's Essence [10990], The Hawk's Essence [10992], Return to Cenarion Refuge [10993]
+needs reputation (6):
+  Stasis Chambers of Bash'ir [10974], The Mark of the Nexus-King [10976], Stasis Chambers of the Mana-Tombs [10977], The Eye of Haramad [10982], Banish the Demons [11026], A Special Thank You [11091]
+never shown to players (a tracking flag or an unused entry) (4):
+  Test Flight: The Zephyrium Capacitorium [10557], Test Flight: The Singing Ridge [10710], Test Flight: Razaan's Landing [10711], Test Flight: Ruuan Weald [10712]
+cannot be taken together with Where Did Those Darn Gnomes Go? [10580], which is in the guide (1):
+  Picking Up Some Power Converters [10584]
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  The Truth Unorbed [10825]
+cannot be taken together with Mog'dorg the Wizened [10989], which is in the guide (1):
+  The Trouble Below [11057]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Blade's Edge Mountains - Alliance - part 2 of 2, planned from level 68
+Guide "65-70 Blade's Edge Mountains" in group "Zone Routes (Alliance)": this part has 47 steps, 45 stops
+Written to guides/tbc/Blade's Edge Mountains (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+8 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 68. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 38 steps kept, 9 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 15 tasks, 4,811 yd on foot; ends at level 68.1; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 32 more tasks; their whole route comes to 14,075 yd; ends at level 68.1; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (15)
+------------------------
+Start to finish here: 3 (3 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Parts for the Rocket-Chief [11040, level 67] -> Netherstorm
+  Building a Better Gryphon [11043, level 67] -> Shadowmoon Valley
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Planting the Banner [10518, level 67] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (9):
+  Maxnar Must Die! [10748, level 68] - needs one of Meeting at the Blackwing Coven [10722]
+  Deceive thy Enemy [10820, level 68] - needs one of Felsworn Gas Mask [10819]
+  You're Fired! [10821, level 68] - needs one of Deceive thy Enemy [10820]
+  Treebole Must Know [10829, level 68] - needs one of The Truth Unorbed [10825]
+  Exorcising the Trees [10830, level 68] - needs one of Treebole Must Know [10829]
+  Harvesting the Fel Ammunition [10904, level 68] - needs one of Death's Door [10910]
+  Death's Door [10910, level 68] - needs one of You're Fired! [10821]
+  Fire At Will! [10911, level 68] - needs one of Harvesting the Fel Ammunition [10904]
+  The Hound-Master [10912, level 68] - needs one of Fire At Will! [10911]
+
+Worth checking in game
+----------------------
+  You're Fired! [10821, level 68]: "Doomcryer (1)" has no place in the data; taken to be done where the quest is given
+
+Not planned (20)
+----------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Mog'dorg the Wizened [10989, level 70]: needs level 70; this part gets you to about 68.1
+  Grulloc Has Two Skulls [10995, level 70]: needs level 70; this part gets you to about 68.1
+  Maggoc's Treasure Chest [10996, level 70]: needs level 70; this part gets you to about 68.1
+  Even Gronn Have Standards [10997, level 70]: needs level 70; this part gets you to about 68.1
+  Grim(oire) Business [10998, level 70]: needs level 70; this part gets you to about 68.1
+  Into the Soulgrinder [11000, level 70]: needs level 70; this part gets you to about 68.1
+  Ogre Heaven [11009, level 70]: needs level 70; this part gets you to about 68.1
+  Bombing Run [11010, level 70]: needs level 70; this part gets Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock characters to about 68.1
+  Speak with Mog'dorg [11022, level 70]: needs level 70; this part gets you to about 68.1
+  The Crystals [11025, level 70]: needs level 70; this part gets you to about 68.1
+  Our Boy Wants To Be A Skyguard Ranger [11030, level 70]: needs level 70; this part gets you to about 68.1
+  An Apexis Relic [11058, level 70]: needs level 70; this part gets you to about 68.1
+  Guardian of the Monument [11059, level 70]: needs level 70; this part gets you to about 68.1
+  A Father's Duty [11061, level 70]: needs level 70; this part gets you to about 68.1
+  The Skyguard Outpost [11062, level 70]: needs level 70; this part gets you to about 68.1
+  Wrangle Some Aether Rays! [11065, level 70]: needs level 70; this part gets you to about 68.1
+  To Rule The Skies [11078, level 70]: needs level 70; this part gets you to about 68.1
+  A Fel Whip For Gahk [11079, level 70]: needs level 70; this part gets you to about 68.1
+  Bombing Run [11102, level 70]: needs level 70; this part gets Druid characters to about 68.1
+  Assault on Bash'ir Landing! [11119, level 70]: needs level 70; this part gets you to about 68.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

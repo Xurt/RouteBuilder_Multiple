@@ -1,0 +1,132 @@
+Howling Fjord - Horde - part 1 of 2, planned from level 70
+Guide "70-72 Howling Fjord" in group "Zone Routes (Horde)": this part has 255 steps, 234 stops
+Written to guides/mop/Howling Fjord (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 14 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+29 pickups or hand-ins are within reach of a stop but planned for later.
+5 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 70. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 278 steps kept, 11 new ones slotted in, 42 moved because their prerequisites changed, 19 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 275 tasks, 54,401 yd on foot; ends at level 72.0; at its hardest you are 1.2 levels below the mobs
+  everyone (quests that depend on other zones): 56 more tasks; their whole route comes to 64,578 yd; ends at level 72.0; at its hardest you are 1.2 levels below the mobs
+Hearthstone: set at Helen Fairchild (Helen Fairchild's inn); 0 hearth steps in the guide.
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+11 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+6 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (109)
+-------------------------
+Start to finish here: 86 (33 for everyone, 53 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Friends in Dalaran [29609, level 70, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Dalaran - (Dungeon/Raid)
+  Travel to Moa'ki Harbor [12118, level 72] -> Dragonblight
+  To Venomspite! [12182, level 72, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Dragonblight
+
+Hand-in step only shows once complete (3):
+  Alpha Worg [11324, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Worg Disguise (1) (an unknown place)
+  The Book of Runes [11350, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs The Book of Runes (1) (an unknown place)
+  The Conqueror of Skorn! [11261, level 72, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Winterhoof Emblem (1) (an unknown place)
+
+Need a quest this guide does not hand in - steps show only once that is done (17):
+  Dealing With Gjalerbron [11263, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Conqueror of Skorn! [11261]
+  Of Keys and Cages [11265, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Conqueror of Skorn! [11261]
+  The Walking Dead [11268, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Of Keys and Cages [11265]
+  Find Sage Mistwalker [11287, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Dealing With Gjalerbron [11263]
+  New Agamand [11304, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Test at Sea [11170]
+  A Tailor-Made Formula [11305, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of New Agamand [11304]
+  Apply Heat and Stir [11306, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of A Tailor-Made Formula [11305]
+  Field Test [11307, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Apply Heat and Stir [11306]
+  Time for Cleanup [11308, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Field Test [11307]
+  Parts for the Job [11309, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Time for Cleanup [11308]
+  Warning: Some Assembly Required [11310, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Parts for the Job [11309]
+  Mastering the Runes [11351, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Book of Runes [11350]
+  The Rune of Command [11352, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Mastering the Runes [11351]
+  Bring Down Those Shields [11399, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of It's a Scourge Device [11398]
+  Sleeping Giants [11433, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Of Keys and Cages [11265]
+  Necro Overlord Mezhen [11264, level 72, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Dealing With Gjalerbron [11263]
+  The Slumbering King [11453, level 72, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Dealing With Gjalerbron [11263]
+
+Worth checking in game
+----------------------
+  Let Them Eat Crow [11227, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: "Hungry Plaguehound Counter (1)" has no place in the data; taken to be done where the quest is given
+
+Put off to a later part (4)
+---------------------------
+These need a higher level than this part ends at:
+  Sorlof's Booty [11529, level 71]: its mobs are level 80; this part gets you to about 72.1
+  The Shield of the Aesirites [11530, level 71]: follows Sorlof's Booty [11529]
+  A Return to Resting [11568, level 71]: follows The Shield of the Aesirites [11530]
+  Return to Atuik [11572, level 71]: follows A Return to Resting [11568]
+
+Left out (23)
+-------------
+not in the game (on Questie's quest blacklist) (13):
+  A Score to Settle [11272], Handsome Terry [11462], Pirates of the North Seas [11463], Incense for the Festival Scorchlings [11966], Gem Perfection [12952], Candy Bucket [13452], Candy Bucket [13464], Candy Bucket [13465], Candy Bucket [13466], REUSE [13840], Sharing a Bountiful Feast [14065], A Natural Occurrence [25571], A Natural Occurrence [25773]
+repeatable (3):
+  CLUCK! [3861], The Way to His Heart... [11472], Beegle Blastfuse [31931]
+needs a profession (3):
+  Northern Cooking [13089], Cloth Scavenging [13268], Cloth Scavenging [13269]
+never shown to players (a tracking flag or an unused entry) (1):
+  Test at Sea [11170]
+above this zone's range of 70-73 (1):
+  The Magical Kingdom of Dalaran [12791]
+special category (sort -369) (1):
+  Desecrate this Fire! [13444]
+special category (sort -22) (1):
+  Honor the Flame [13496]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Howling Fjord - Horde - part 2 of 2, planned from level 78
+Guide "70-72 Howling Fjord" in group "Zone Routes (Horde)": this part has 21 steps, 20 stops
+Written to guides/mop/Howling Fjord (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 78. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 17 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 13 tasks, 3,542 yd on foot; ends at level 78.1; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 8,593 yd; ends at level 78.1; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (7)
+-----------------------
+Start to finish here: 4 (4 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Alpha Worg [11324, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- your earlier visit to this zone
+  The Book of Runes [11350, level 71, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- your earlier visit to this zone
+  The Conqueror of Skorn! [11261, level 72, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

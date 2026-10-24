@@ -1,0 +1,97 @@
+Gilneas - Alliance
+Guide "5-11 Gilneas" in group "Zone Routes (Alliance)": 173 steps, 125 stops
+Written to guides/mop/Gilneas (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: 8 PROBLEMS
+  ! To Greymane Manor is picked up before any of the quests that unlock it (Worgen Warrior)
+  ! To Greymane Manor is picked up before any of the quests that unlock it (Worgen Hunter)
+  ! To Greymane Manor is picked up before any of the quests that unlock it (Worgen Rogue)
+  ! To Greymane Manor is picked up before any of the quests that unlock it (Worgen Priest)
+  ! To Greymane Manor is picked up before any of the quests that unlock it (Worgen DeathKnight)
+  ! To Greymane Manor is picked up before any of the quests that unlock it (Worgen Mage)
+  ! To Greymane Manor is picked up before any of the quests that unlock it (Worgen Warlock)
+  ! To Greymane Manor is picked up before any of the quests that unlock it (Worgen Druid)
+Quest log: at most 3 of 40 held at once (Worgen Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 5. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 167 steps kept, 10 new ones slotted in, 0 moved because their prerequisites changed, 24 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 5, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 1 tasks, 97 yd on foot; ends at level 5.0
+  Worgen: 145 more tasks; their whole route comes to 26,486 yd; ends at level 11.3; 1 hearth; 1 ORDER PROBLEMS
+  Worgen (quests that depend on other zones): 22 more tasks; their whole route comes to 31,082 yd; ends at level 11.3; 1 hearth; 1 ORDER PROBLEMS
+  Worgen Hunter (quests that depend on other zones): 3 more tasks; their whole route comes to 32,407 yd; ends at level 11.3; 2 hearths; 1 ORDER PROBLEMS
+  Worgen Rogue (quests that depend on other zones): 3 more tasks; their whole route comes to 32,400 yd; ends at level 11.3; 2 hearths; 1 ORDER PROBLEMS
+  Worgen Warlock (quests that depend on other zones): 3 more tasks; their whole route comes to 32,402 yd; ends at level 11.3; 2 hearths; 1 ORDER PROBLEMS
+Hearthstone: set at Gerard Walthorn (Gerard Walthorn's inn); 1 hearth step in the guide.
+18 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+17 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+3 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+  The Battle for Gilneas City: its hand-in spot is not passed again, so the step sits at the end of the guide.
+
+Quests in the guide (69)
+------------------------
+Start to finish here: 51 (0 for everyone, 51 Worgen)
+
+Hand-in step only shows once complete (1):
+  The Battle for Gilneas City [24904, level 11, Worgen] - needs Lady Sylvanas Windrunner slain (1) (Gilneas City)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Someone's Looking for You [14269, level 2, Worgen Rogue] <- Gilneas City
+  Shady Associates [14273, level 2, Worgen Warlock] <- Gilneas City
+  Someone's Keeping Track of You [14275, level 2, Worgen Hunter] <- Gilneas City
+
+Need a quest this guide does not hand in - steps show only once that is done (14):
+  Eviscerate [14272, level 2, Worgen Rogue] - needs one of Someone's Looking for You [14269]
+  Corruption [14274, level 2, Worgen Warlock] - needs one of Shady Associates [14273]
+  Steady Shot [14276, level 2, Worgen Hunter] - needs one of Someone's Keeping Track of You [14275]
+  Safety in Numbers [14285, level 3, Worgen Rogue] - needs one of Eviscerate [14272] -> Gilneas City
+  Safety in Numbers [14287, level 3, Worgen Warlock] - needs one of Corruption [14274] -> Gilneas City
+  Safety in Numbers [14290, level 3, Worgen Hunter] - needs one of Steady Shot [14276] -> Gilneas City
+  Laid to Rest [24602, level 11, Worgen] - needs one of Knee-Deep [24678]
+  Knee-Deep [24678, level 11, Worgen] - needs one of Slowing the Inevitable [24920]
+  Patriarch's Blessing [24679, level 11, Worgen] - needs one of Laid to Rest [24602]
+  The Hunt For Sylvanas [24902, level 11, Worgen] - needs one of The Battle for Gilneas City [24904]
+  Vengeance or Survival [24903, level 11, Worgen] - needs one of The Hunt For Sylvanas [24902]
+  Slowing the Inevitable [24920, level 11, Worgen] - needs one of Vengeance or Survival [24903]
+  Keel Harbor [24680, level 12, Worgen] - needs one of Patriarch's Blessing [24679]
+  They Have Allies, But So Do We [24681, level 12, Worgen] - needs one of Keel Harbor [24680]
+
+Worth checking in game
+----------------------
+  Eviscerate [14272, level 2, Worgen Rogue]: has a reputation or spell objective, which is not planned
+  Eviscerate [14272, level 2, Worgen Rogue]: objective "Bloodfang Worgen slain (1)" is line 1 by the database, but RestedXP's guide has "Cast Eviscerate (1)" there
+  Corruption [14274, level 2, Worgen Warlock]: has a reputation or spell objective, which is not planned
+  Corruption [14274, level 2, Worgen Warlock]: objective "Bloodfang Worgen slain (1)" is line 1 by the database, but RestedXP's guide has "Cast Immolate (1)" there
+  Steady Shot [14276, level 2, Worgen Hunter]: has a reputation or spell objective, which is not planned
+  Steady Shot [14276, level 2, Worgen Hunter]: objective "Bloodfang Worgen slain (2)" is line 1 by the database, but RestedXP's guide has "Cast Steady Shot (2)" there
+  Patriarch's Blessing [24679, level 11, Worgen]: objective "Aderic's Tomb" is line 1 by the database, but RestedXP's guide has "Offering placed (1)" there
+  The Battle for Gilneas City [24904, level 11, Worgen]: objective "Lady Sylvanas Windrunner slain (1)" is line 1 by the database, but RestedXP's guide has "Battle for Gilneas City Complete (1)" there
+  Slowing the Inevitable [24920, level 11, Worgen]: mixes a kill-credit objective with others; check that "Forsaken Plaguesmith" really is line 2 in the quest log
+
+Not planned (2)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Rut'theran Village [14434, level 12]: follows Endgame [26706]
+  Endgame [26706, level 12]: needs level 12; this part gets Worgen characters to about 11.3
+
+Left out (13)
+-------------
+not in the game (on Questie's quest blacklist) (10):
+  REUSE [13840], Among Humans Again [13972], Lurkers in the Mist [13978], Tracking Our Every Move [13984], Incomplete Cartography [14015], Liam's Stupor [14315], Tremors [14317], Further Treatment [14319], Apparitions in the Orchard [14415], Grandma's Cat [25331]
+cannot be taken together with Ready to Go [14402], which is in the guide (2):
+  Escape By Sea [14405], Horses for Duskhaven [14463]
+repeatable (1):
+  CLUCK! [3861]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

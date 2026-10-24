@@ -1,0 +1,146 @@
+Azshara - Alliance - part 1 of 3, planned from level 10
+Guide "10-17 Azshara" in group "Zone Routes (Alliance)": this part has 8 steps, 7 stops
+Written to guides/mop/Azshara (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 10. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 10 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 6 tasks, 176 yd on foot; ends at level 10.8
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 503 yd; ends at level 10.8
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Return of the Highborne? [14128, level 10] - needs one of Return of the Highborne? [14127]
+  Report to Horzak [14162, level 11] - needs one of Arborcide [14155]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (9)
+---------------------------
+These need a higher level than this part ends at:
+  Bad Science! Bad! [14322, level 13]: needs level 11; this part gets you to about 11.0
+  Need More Science [14424, level 13]: needs level 11; this part gets you to about 11.0
+  The Blackmaw Scar [14431, level 17]: needs level 15; this part gets you to about 12.4
+  A Pale Brew [14432, level 17]: needs level 15; this part gets you to about 12.4
+  Diplomacy by Another Means [14433, level 17]: needs level 15; this part gets you to about 12.4
+  The Blackmaw Doublecross [14435, level 17]: its mobs are level 18; this part gets you to about 12.4
+  My Favorite Subject [14442, level 13]: needs level 11; this part gets you to about 11.0
+  First Come, First Served [24437, level 16]: is a level 16 quest; this part gets you to about 12.4
+  A Hello to Arms [24458, level 15]: needs level 13; this part gets you to about 12.4
+
+Left out (9)
+------------
+not in the game (on Questie's quest blacklist) (8):
+  Arcane Runes [3449], Betrayed [3504], Betrayed [3506], A Hero's Reward [7486], Skygleam the Elder [8720], More Mortars, More! [14259], Kill Cultists/Dragonflight [14298], Desecrate this Fire! [28919]
+above this zone's range of 10-19 (1):
+  Probing into Ashenvale [24463]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Azshara - Alliance - part 2 of 3, planned from level 13
+Guide "10-17 Azshara" in group "Zone Routes (Alliance)": this part has 15 steps, 14 stops
+Written to guides/mop/Azshara (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 13. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 15 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 10 tasks, 2,283 yd on foot; ends at level 13.3; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 4,250 yd; ends at level 13.3; at its hardest you are 1.8 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (5)
+-----------------------
+Start to finish here: 3 (3 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Need More Science [14424, level 13] - needs one of Dozercism [14423]
+  A Hello to Arms [24458, level 15] - needs one of Azsharite Experiment Number Two [14388]
+
+Worth checking in game
+----------------------
+  First Come, First Served [24437, level 16]: objective "Real Estate Bunny (Pagoda)" is line 1 by the database, but RestedXP's guide has "Southern Pagoda claimed (1)" there
+  First Come, First Served [24437, level 16]: objective "Real Estate Bunny (Tower)" is line 2 by the database, but RestedXP's guide has "Big ol' Tower claimed (1)" there
+  First Come, First Served [24437, level 16]: objective "Real Estate Bunny (Vista)" is line 3 by the database, but RestedXP's guide has "Northern Vista claimed (1)" there
+
+Put off to a later part (4)
+---------------------------
+These need a higher level than this part ends at:
+  The Blackmaw Scar [14431, level 17]: needs level 15; this part gets you to about 14.3
+  A Pale Brew [14432, level 17]: needs level 15; this part gets you to about 14.3
+  Diplomacy by Another Means [14433, level 17]: needs level 15; this part gets you to about 14.3
+  The Blackmaw Doublecross [14435, level 17]: its mobs are level 18; this part gets you to about 14.3
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Azshara - Alliance - part 3 of 3, planned from level 16
+Guide "10-17 Azshara" in group "Zone Routes (Alliance)": this part has 9 steps, 8 stops
+Written to guides/mop/Azshara (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 16. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 16 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 16 tasks, 2,771 yd on foot; ends at level 16.7; at its hardest you are 1.4 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 4 (4 for everyone)
+
+Worth checking in game
+----------------------
+  The Blackmaw Doublecross [14435, level 17]: objective "Ungarl slain (1)" is line 1 by the database, but RestedXP's guide has "Negotiations Sabotaged (1)" there
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

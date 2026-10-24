@@ -1,0 +1,68 @@
+{
+  "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "29-38 Hillsbrad Foothills",
+  "saved": "2026-10-23 18:12",
+  "levels": "RestedXP",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "turnin:647 @1424:-601.49,-853.12  TurnIn MacKreel's Moonshine",
+        "accept:536 @1424:-580.05,-845.65  Accept Down the Coast",
+        "turnin:538 @1424:-551.57,-817.92  TurnIn Southshore",
+        {"lines":[".goto 1424/0,-744.53,-747.73",">>|cRXP_WARN_Cast|r |T132164:0|t[Tame Beast] |cRXP_WARN_on a |cRXP_ENEMY_Elder Moss Creeper|r to tame it|r",".train 17264 >>|cRXP_WARN_Attack mobs with it to learn|r |T132278:0|t[Bite (Rank 4)]"],"tag":"Hunter","from":"RestedXP: 27-30 Wetlands/Hillsbrad"},
+        "obj:536:1 @1424:-418.77,-1018.03  Objective Down the Coast / Torn Fin Tidehunter slain (10)",
+        "obj:536:2 @1424:-339.73,-1064.53  Objective Down the Coast / Torn Fin Oracle slain (10)",
+        "turnin:536 @1424:-580.05,-845.65  TurnIn Down the Coast",
+        "accept:559 @1424:-580.05,-845.65  Accept Farren's Proof",
+        "obj:559:1 @1424:-39.25,-1108.69  Objective Farren's Proof / Murloc Head (10)",
+        "turnin:559 @1424:-580.05,-845.65  TurnIn Farren's Proof",
+        "accept:560 @1424:-580.05,-845.65  Accept Farren's Proof",
+        "turnin:560 @1424:-516.37,-852.91  TurnIn Farren's Proof",
+        "accept:561 @1424:-516.37,-852.91  Accept Farren's Proof",
+        "turnin:561 @1424:-580.05,-845.65  TurnIn Farren's Proof",
+        "accept:562 @1424:-580.05,-845.65  Accept Stormwind Ho!",
+        "obj:562:1 @1424:-651.73,-1024  Objective Stormwind Ho! / Daggerspine Shorehunter slain (10)",
+        "obj:562:2 @1424:-801.17,-1063.68  Objective Stormwind Ho! / Daggerspine Siren slain (10)",
+        "turnin:562 @1424:-580.05,-845.65  TurnIn Stormwind Ho!",
+        "accept:563 @1424:-580.05,-845.65  Accept Reassignment",
+        {"lines":[">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darla Harris|r",".goto 1424/0,-512.15,-715.14",".fp Southshore >>Get the Southshore Flight Path",".target Darla Harris"],"from":"RestedXP: 27-30 Wetlands/Hillsbrad"},
+        {"lines":[".hs >> Hearth to Menethil",">>|cRXP_BUY_Buy food/water if needed|r << !Warrior !Rogue",">>|cRXP_BUY_Buy food if needed|r << Warrior/Rogue",".zoneskip Hillsbrad Foothills",".zoneskip Wetlands"],"from":"RestedXP: 33-35 Hillsbrad/Arathi/Alterac"},
+        "accept:555 @1424:-593.81,-851.84  Accept Soothing Turtle Bisque",
+        "obj:555:2 @1424:-499.41,-773.97  Objective Soothing Turtle Bisque / Soothing Spices (1)",
+        "obj:555:1 @1424:-737.81,-679.25  Objective Soothing Turtle Bisque / Turtle Meat (1)",
+        "turnin:555 @1424:-593.81,-851.84  TurnIn Soothing Turtle Bisque",
+        "home @1424:-559.57,-859.09  Home inn",
+        "accept:9435 @1424:-565.01,-852.05  Accept Missing Crystals",
+        "accept:505 @1424:-473.81,-861.01  Accept Syndicate Assassins",
+        "accept:540 @1424:-551.57,-817.92  Accept Preserving Knowledge",
+        "turnin:511 @1424:-551.57,-817.92  TurnIn Encrypted Letter",
+        "obj:9435:1 @1424:-711.57,-351.36  Objective Missing Crystals / Shipment of Rare Crystals (1)",
+        "turnin:9435 @1424:-565.01,-852.05  TurnIn Missing Crystals",
+        "turnin:510 @1424:-473.81,-861.01  TurnIn Foreboding Plans",
+        "turnin:661 @1424:-544.53,-859.73  TurnIn Hints of a New Plague?",
+        {"lines":[">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wesley|r",".goto 1424/0,-546.61,-854.46",".target Wesley",".train 17265,1"],"tag":"Hunter","from":"RestedXP: 33-35 Hillsbrad/Arathi/Alterac"},
+        "turnin:525 @1424:-473.81,-861.01  TurnIn Further Mysteries",
+        "accept:512 @1424:-473.81,-861.01  Accept Noble Deaths",
+        "accept:542 @1424:-551.57,-817.92  Accept Return to Milton"
+      ]
+    },
+    {
+      "part": 2,
+      "steps": [
+        "accept:565 @1424:-515.09,-784.64  Accept Bartolo's Yeti Fur Cloak",
+        "obj:565:2 @1424:-499.41,-773.97  Objective Bartolo's Yeti Fur Cloak / Fine Thread (1)",
+        "item:522 @1424:-535.25,-835.41  ItemAccept Assassin's Contract",
+        "accept:659 @1424:-544.53,-859.73  Accept Hints of a New Plague?",
+        "accept:500 @1424:-516.37,-852.91  Accept Crushridge Bounty",
+        "turnin:522 @1424:-473.81,-861.01  TurnIn Assassin's Contract",
+        "accept:514 @1424:-551.57,-817.92  Accept Letter to Stormpike",
+        "accept:564 @1424:-610.77,-793.81  Accept Costly Menace",
+        "obj:564:1 @1424:-174.93,-125.23  Objective Costly Menace / Mountain Lion slain (8)",
+        "obj:565:1 @1424:-339.09,-202.03  Objective Bartolo's Yeti Fur Cloak / Bolt of Woolen Cloth (1)",
+        "obj:565:4 @1424:-358.93,-226.35  Objective Bartolo's Yeti Fur Cloak / Yeti Fur (1)",
+        "turnin:505 @1424:-473.81,-861.01  TurnIn Syndicate Assassins"
+      ]
+    }
+  ]
+}

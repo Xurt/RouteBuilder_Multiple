@@ -87,7 +87,7 @@ needs a profession (2):
   Supplying the Front [1578], Badlands Reagent Run II [2501]
 repeatable (1):
   Bailor's Ore Shipment [1655]
-special category (sort -366) (1):
+not in the game (on Questie's quest blacklist) (1):
   Silvervein the Elder [8642]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

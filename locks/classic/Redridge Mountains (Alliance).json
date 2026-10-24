@@ -1,7 +1,7 @@
 {
   "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
   "guide": "14-26 Redridge Mountains",
-  "saved": "2026-10-23 14:23",
+  "saved": "2026-10-23 18:19",
   "levels": "RestedXP",
   "parts": [
     {
@@ -82,9 +82,6 @@
         "obj:89:2 @1433:-2267.02,-9001.12  Objective The Everstill Bridge / Iron Rivet (5)",
         "turnin:89 @1433:-2268.54,-9279.27  TurnIn The Everstill Bridge",
         "turnin:127 @1433:-2172.59,-9261.02  TurnIn Selling Fish",
-        "accept:2358 @1433:-2179.97,-9332.55  Accept Horns of Nez'ra",
-        "obj:2358:1 @1433:-2402.48,-9172.27  Objective Horns of Nez'ra / Horns of Nez'ra (1)",
-        "turnin:2358 @1433:-2179.97,-9332.55  TurnIn Horns of Nez'ra",
         "obj:124:1 @1433:-2037.35,-9099.44  Objective A Baying of Gnolls / Redridge Brute slain (10)",
         "obj:124:2 @1433:-2108.33,-9034.57  Objective A Baying of Gnolls / Redridge Mystic slain (8)",
         "obj:122:1 @1433:-2313.48,-9570.3  Objective Underbelly Scales / Underbelly Whelp Scale (6)",

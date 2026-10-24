@@ -1,0 +1,71 @@
+Sunstrider Isle - Horde
+Guide "1-5 Sunstrider Isle" in group "Zone Routes (Horde)": 58 steps, 50 stops
+Written to guides/mop/Sunstrider Isle (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 7 of 40 held at once (BloodElf Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 66 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed, 9 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 97 yd on foot; ends at level 1.0
+  BloodElf: 33 more tasks; their whole route comes to 8,299 yd; ends at level 5.1
+  BloodElf Warrior: 1 more tasks; their whole route comes to 8,299 yd; ends at level 5.1
+  BloodElf Paladin: 5 more tasks; their whole route comes to 8,684 yd; ends at level 5.3
+  BloodElf Hunter: 5 more tasks; their whole route comes to 8,635 yd; ends at level 5.3
+  BloodElf Rogue: 5 more tasks; their whole route comes to 8,613 yd; ends at level 5.3
+  BloodElf Priest: 5 more tasks; their whole route comes to 8,684 yd; ends at level 5.3
+  BloodElf Mage: 5 more tasks; their whole route comes to 8,559 yd; ends at level 5.3
+  BloodElf Warlock: 5 more tasks; their whole route comes to 8,455 yd; ends at level 5.3
+  BloodElf Monk: 2 more tasks; their whole route comes to 8,307 yd; ends at level 5.1
+Hearthstone: set at Shara Sunwing (Shara Sunwing's inn); 0 hearth steps in the guide.
+7 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (25)
+------------------------
+Start to finish here: 23 (0 for everyone, 10 BloodElf, 2 BloodElf Mage, 2 BloodElf Warlock, 2 BloodElf Priest, 2 BloodElf Rogue, 2 BloodElf Hunter, 2 BloodElf Paladin, 1 BloodElf Monk)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Warrior Training [8329, level 3, BloodElf Warrior] -> Eversong Woods
+  Aiding the Outrunners [8347, level 5, BloodElf] -> Eversong Woods
+
+Worth checking in game
+----------------------
+  Frost Nova [10068, level 3, BloodElf Mage]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  Frost Nova [10068, level 3, BloodElf Mage]: has a reputation or spell objective, which is not planned
+  Frost Nova [10068, level 3, BloodElf Mage]: objective "Training Dummy slain (8)" is line 1 by the database, but RestedXP's guide has "Cast Arcane Missiles" there
+  Ways of the Light [10069, level 3, BloodElf Paladin]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  Ways of the Light [10069, level 3, BloodElf Paladin]: has a reputation or spell objective, which is not planned
+  Ways of the Light [10069, level 3, BloodElf Paladin]: objective "Training Dummy slain (8)" is line 1 by the database, but RestedXP's guide has "Cast Judgement" there
+  Steady Shot [10070, level 3, BloodElf Hunter]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  Steady Shot [10070, level 3, BloodElf Hunter]: has a reputation or spell objective, which is not planned
+  Steady Shot [10070, level 3, BloodElf Hunter]: objective "Training Dummy slain (8)" is line 1 by the database, but RestedXP's guide has "Cast Steady Shot" there
+  Evisceration [10071, level 3, BloodElf Rogue]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  Evisceration [10071, level 3, BloodElf Rogue]: has a reputation or spell objective, which is not planned
+  Evisceration [10071, level 3, BloodElf Rogue]: objective "Training Dummy slain (8)" is line 1 by the database, but RestedXP's guide has "Cast Eviscerate" there
+  Learning the Word [10072, level 3, BloodElf Priest]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  Learning the Word [10072, level 3, BloodElf Priest]: has a reputation or spell objective, which is not planned
+  Learning the Word [10072, level 3, BloodElf Priest]: objective "Training Dummy slain (8)" is line 1 by the database, but RestedXP's guide has "Cast Flash Heal" there
+  Corruption [10073, level 3, BloodElf Warlock]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  Corruption [10073, level 3, BloodElf Warlock]: has a reputation or spell objective, which is not planned
+  Corruption [10073, level 3, BloodElf Warlock]: objective "Training Dummy slain (8)" is line 1 by the database, but RestedXP's guide has "Cast Immolate" there
+
+Left out (3)
+------------
+handed in here, but the database does not say where it starts (1):
+  Windows to the Source [8344]
+not in the game (on Questie's quest blacklist) (1):
+  Welcome! [8547]
+special category (sort -395) (1):
+  Tiger Palm [31171]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,418 @@
+{
+  "zone": "Blade\u0027s Edge Mountains",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "65-70 Blade\u0027s Edge Mountains",
+  "file": "Blade\u0027s Edge Mountains (Horde).lua",
+  "continent": -3522,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 65,
+      "end": 65.66,
+      "next": 68,
+      "guide": "65-66 Blade\u0027s Edge Mountains: around Tree Warden Chawn",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Tree Warden Chawn",
+          "guide": "65-66 Blade\u0027s Edge Mountains: around Tree Warden Chawn",
+          "level": 65,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 68,
+      "end": 68.04,
+      "next": 71,
+      "guide": "68-69 Blade\u0027s Edge Mountains",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "68-69 Blade\u0027s Edge Mountains",
+          "level": 68,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 71,
+      "end": 71.21,
+      "guide": "71-72 Blade\u0027s Edge Mountains: around Chu\u0027a\u0027lor",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "around Chu\u0027a\u0027lor",
+          "guide": "71-72 Blade\u0027s Edge Mountains: around Chu\u0027a\u0027lor",
+          "level": 71,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 9795,
+      "level": 65,
+      "req": 64,
+      "xp": 2700,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Zangarmarsh"
+    },
+    {
+      "id": 10486,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 10487,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 10488,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 10489,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 10503,
+      "level": 66,
+      "req": 65,
+      "xp": 14150,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 10505,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 10542,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 10543,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 10544,
+      "level": 66,
+      "req": 65,
+      "xp": 14150,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 10545,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 10617,
+      "level": 66,
+      "req": 61,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 10618,
+      "level": 65,
+      "req": 61,
+      "xp": 11000,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 10682,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10713,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10717,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10747,
+      "level": 68,
+      "req": 65,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10753,
+      "level": 67,
+      "req": 65,
+      "xp": 8750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10770,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10771,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10860,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 10928,
+      "level": 65,
+      "req": 65,
+      "xp": 11000,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 10983,
+      "level": 70,
+      "req": 70,
+      "xp": 3150,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Terokkar Forest"
+    },
+    {
+      "id": 10567,
+      "level": 66,
+      "req": 66,
+      "xp": 11300,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10607,
+      "level": 68,
+      "req": 66,
+      "xp": 12000,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10989,
+      "level": 70,
+      "req": 70,
+      "xp": 1250,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10996,
+      "level": 70,
+      "req": 70,
+      "xp": 19000,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11010,
+      "level": 70,
+      "req": 70,
+      "xp": 12650,
+      "part": 3,
+      "section": 0,
+      "tag": "Warrior/Paladin/Hunter/Rogue/Priest/DeathKnight/Shaman/Mage/Warlock"
+    },
+    {
+      "id": 11025,
+      "level": 70,
+      "req": 70,
+      "xp": 12650,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11030,
+      "level": 70,
+      "req": 70,
+      "xp": 12650,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11058,
+      "level": 70,
+      "req": 70,
+      "xp": 12650,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11059,
+      "level": 70,
+      "req": 70,
+      "xp": 19000,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11061,
+      "level": 70,
+      "req": 70,
+      "xp": 12650,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11062,
+      "level": 70,
+      "req": 70,
+      "xp": 1250,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11065,
+      "level": 70,
+      "req": 70,
+      "xp": 12650,
+      "part": 3,
+      "section": 0,
+      "tag": "Warrior/Paladin/Hunter/Rogue/Priest/DeathKnight/Shaman/Mage/Warlock/Druid"
+    },
+    {
+      "id": 11078,
+      "level": 70,
+      "req": 70,
+      "xp": 19000,
+      "part": 3,
+      "section": 0,
+      "tag": "Warrior/Paladin/Hunter/Rogue/Priest/DeathKnight/Shaman/Mage/Warlock/Druid"
+    },
+    {
+      "id": 11079,
+      "level": 70,
+      "req": 70,
+      "xp": 19000,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 11102,
+      "level": 70,
+      "req": 70,
+      "xp": 12650,
+      "part": 3,
+      "section": 0,
+      "tag": "Druid"
+    },
+    {
+      "id": 11119,
+      "level": 70,
+      "req": 70,
+      "xp": 1250,
+      "part": 3,
+      "section": 0,
+      "tag": "Warrior/Paladin/Hunter/Rogue/Priest/DeathKnight/Shaman/Mage/Warlock/Druid"
+    }
+  ],
+  "carriedTo": {
+    "Netherstorm": 1,
+    "Shadowmoon Valley": 1
+  }
+}

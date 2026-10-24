@@ -1,0 +1,586 @@
+{
+  "zone": "Mulgore",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "1-14 Mulgore",
+  "file": "Mulgore (Horde).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 1,
+      "end": 9.14,
+      "next": 12,
+      "guide": "4-10 Mulgore: around Mull Thunderhorn",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Grull Hawkwind",
+          "guide": "1-4 Mulgore: around Grull Hawkwind",
+          "level": 1,
+          "index": 0
+        },
+        {
+          "label": "RBSection1_2",
+          "name": "around Mull Thunderhorn",
+          "guide": "4-10 Mulgore: around Mull Thunderhorn",
+          "level": 4,
+          "index": 1
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 12,
+      "end": 12.24,
+      "next": 15,
+      "guide": "12-13 Mulgore: around Kary Thunderhorn",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Kary Thunderhorn",
+          "guide": "12-13 Mulgore: around Kary Thunderhorn",
+          "level": 12,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 15,
+      "end": 15,
+      "guide": "15-16 Mulgore",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "15-16 Mulgore",
+          "level": 15,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 743,
+      "level": 8,
+      "req": 5,
+      "xp": 700,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 744,
+      "level": 11,
+      "req": 7,
+      "xp": 880,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 745,
+      "level": 6,
+      "req": 1,
+      "xp": 540,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 746,
+      "level": 8,
+      "req": 6,
+      "xp": 700,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 747,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 748,
+      "level": 5,
+      "req": 4,
+      "xp": 450,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren"
+    },
+    {
+      "id": 749,
+      "level": 8,
+      "req": 5,
+      "xp": 530,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 750,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 751,
+      "level": 8,
+      "req": 5,
+      "xp": 530,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 752,
+      "level": 2,
+      "req": 1,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 753,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 754,
+      "level": 6,
+      "req": 4,
+      "xp": 540,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren"
+    },
+    {
+      "id": 755,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 756,
+      "level": 7,
+      "req": 5,
+      "xp": 630,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren"
+    },
+    {
+      "id": 757,
+      "level": 4,
+      "req": 1,
+      "xp": 445,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 758,
+      "level": 8,
+      "req": 5,
+      "xp": 700,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren"
+    },
+    {
+      "id": 759,
+      "level": 10,
+      "req": 7,
+      "xp": 840,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren"
+    },
+    {
+      "id": 760,
+      "level": 10,
+      "req": 7,
+      "xp": 1050,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren"
+    },
+    {
+      "id": 761,
+      "level": 6,
+      "req": 4,
+      "xp": 680,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 763,
+      "level": 5,
+      "req": 1,
+      "xp": 335,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 764,
+      "level": 10,
+      "req": 6,
+      "xp": 630,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 766,
+      "level": 8,
+      "req": 5,
+      "xp": 700,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 767,
+      "level": 6,
+      "req": 3,
+      "xp": 55,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 770,
+      "level": 12,
+      "req": 6,
+      "xp": 910,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 771,
+      "level": 7,
+      "req": 3,
+      "xp": 630,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 772,
+      "level": 7,
+      "req": 3,
+      "xp": 475,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 773,
+      "level": 10,
+      "req": 4,
+      "xp": 840,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 775,
+      "level": 10,
+      "req": 4,
+      "xp": 420,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 776,
+      "level": 14,
+      "req": 7,
+      "xp": 1250,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 780,
+      "level": 4,
+      "req": 1,
+      "xp": 445,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 833,
+      "level": 10,
+      "req": 7,
+      "xp": 630,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 1517,
+      "level": 4,
+      "req": 4,
+      "xp": 270,
+      "part": 1,
+      "section": 0,
+      "tag": "Shaman",
+      "from": "Durotar"
+    },
+    {
+      "id": 1519,
+      "level": 4,
+      "req": 4,
+      "xp": 270,
+      "part": 1,
+      "section": 0,
+      "tag": "Shaman"
+    },
+    {
+      "id": 1520,
+      "level": 4,
+      "req": 4,
+      "xp": 180,
+      "part": 1,
+      "section": 0,
+      "tag": "Shaman"
+    },
+    {
+      "id": 1521,
+      "level": 4,
+      "req": 4,
+      "xp": 445,
+      "part": 1,
+      "section": 0,
+      "tag": "Shaman"
+    },
+    {
+      "id": 1656,
+      "level": 5,
+      "req": 1,
+      "xp": 110,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 3091,
+      "level": 1,
+      "req": 1,
+      "xp": 60,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren Warrior"
+    },
+    {
+      "id": 3092,
+      "level": 1,
+      "req": 1,
+      "xp": 60,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren Hunter"
+    },
+    {
+      "id": 3093,
+      "level": 1,
+      "req": 1,
+      "xp": 60,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren Shaman"
+    },
+    {
+      "id": 3094,
+      "level": 1,
+      "req": 1,
+      "xp": 60,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren Druid"
+    },
+    {
+      "id": 3376,
+      "level": 5,
+      "req": 3,
+      "xp": 670,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5926,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren Druid"
+    },
+    {
+      "id": 5927,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren Druid",
+      "from": "Durotar"
+    },
+    {
+      "id": 5932,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren Druid",
+      "from": "Moonglade"
+    },
+    {
+      "id": 6061,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren Hunter"
+    },
+    {
+      "id": 6065,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren Hunter"
+    },
+    {
+      "id": 6066,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren Hunter",
+      "from": "Durotar"
+    },
+    {
+      "id": 6067,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren Hunter",
+      "from": "Durotar"
+    },
+    {
+      "id": 6087,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren Hunter"
+    },
+    {
+      "id": 6088,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren Hunter"
+    },
+    {
+      "id": 6089,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren Hunter"
+    },
+    {
+      "id": 6130,
+      "level": 14,
+      "req": 14,
+      "xp": 0,
+      "part": 1,
+      "section": 1,
+      "tag": "Druid",
+      "from": "Moonglade"
+    },
+    {
+      "id": 6362,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren",
+      "from": "The Barrens"
+    },
+    {
+      "id": 11129,
+      "level": 7,
+      "req": 5,
+      "xp": 630,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 765,
+      "level": 12,
+      "req": 5,
+      "xp": 910,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 861,
+      "level": 10,
+      "req": 10,
+      "xp": 840,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Durotar": 4,
+    "Moonglade": 2,
+    "The Barrens": 5,
+    "Tirisfal Glades": 1,
+    "Eversong Woods": 1
+  }
+}

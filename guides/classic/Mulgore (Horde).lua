@@ -419,7 +419,7 @@ RXPGuides.RegisterGuide([[
 #subweight -1
 #name 4-10 Mulgore: around Mull Thunderhorn
 --RouteBuilder:next
-#next Zone Routes (Horde)\10-12 The Barrens: around Sergra Darkthorn;Zone Routes (Horde)\7-11 Durotar: around Master Gadrin;Zone Routes (Horde)\8-11 Tirisfal Glades: around Carendin Halgar
+#next Zone Routes (Horde)\10-12 The Barrens: around Sergra Darkthorn;Zone Routes (Horde)\4-10 Durotar: around Master Gadrin;Zone Routes (Horde)\8-11 Tirisfal Glades: around Carendin Halgar
 
 step
     .goto 1412/1,-392.91,-2333.40
@@ -854,16 +854,9 @@ step << Tauren Druid
     .xp <10,1
 step << Tauren Druid
     .goto 1456/1,-281.59,-1039.41
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Turak Runetotem|r
-    .turnin 6002 >>Turn in Body and Heart
-    .target Turak Runetotem
-    .isQuestComplete 6002
-step
-    .goto 1456/1,52.93,-1150.53
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mooranta|r
-    >>|cRXP_WARN_This will unlock an easy quest. If you already have 2 professions, skip this step|r
-    .train 8613 >>Train |T134366:0|t[Skinning]
-    .target Mooranta
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lunaclaw Spirit|r
+    .complete 6002,1 --Lunaclaw Spirit
+    .isOnQuest 6002
 step << Tauren
     .goto 1456/1,38.94,-1238.55
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ahanu|r
@@ -895,6 +888,18 @@ step << Tauren
     .target Tal
     .isQuestTurnedIn 6363 --any of: Tal the Wind Rider Master
     .xp <10,1
+step << Tauren Druid
+    .goto 1456/1,-281.59,-1039.41
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Turak Runetotem|r
+    .turnin 6002 >>Turn in Body and Heart
+    .target Turak Runetotem
+    .isOnQuest 6002
+step
+    .goto 1456/1,52.93,-1150.53
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mooranta|r
+    >>|cRXP_WARN_This will unlock an easy quest. If you already have 2 professions, skip this step|r
+    .train 8613 >>Train |T134366:0|t[Skinning]
+    .target Mooranta
 step
     #completewith next
     .zone 1412 >>Leave Thunder Bluff for Mulgore
@@ -1480,7 +1485,7 @@ step
     >>|cRXP_FRIENDLY_Moonglade|r: Moonglade << Tauren Druid
     >>|cRXP_FRIENDLY_The Barrens|r: Return to Jahan << Tauren
 step
-    +|cRXP_WARN_Suggested next zones at level 9|r: |cRXP_FRIENDLY_The Barrens|r (about 3.3 levels of quests, starting around Sergra Darkthorn; 2 quests from here hand in there), |cRXP_FRIENDLY_Durotar|r (about 1.8 levels of quests, starting around Master Gadrin), |cRXP_FRIENDLY_Tirisfal Glades|r (about 1.2 levels of quests, starting around Carendin Halgar). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 9|r: |cRXP_FRIENDLY_The Barrens|r (about 3.3 levels of quests, starting around Sergra Darkthorn; 2 quests from here hand in there), |cRXP_FRIENDLY_Durotar|r (about 1.9 levels of quests, starting around Master Gadrin), |cRXP_FRIENDLY_Tirisfal Glades|r (about 1.2 levels of quests, starting around Carendin Halgar). Completing this step loads the guide for The Barrens --RouteBuilder:next
 step
     +|cRXP_WARN_The rest of Mulgore is planned from level 12.|r Load its guide for level 12 then
 ]])
@@ -1494,7 +1499,7 @@ RXPGuides.RegisterGuide([[
 #subweight -1
 #name 12-13 Mulgore
 --RouteBuilder:next
-#next Zone Routes (Horde)\12-16 The Barrens: around Gazlowe;Zone Routes (Horde)\7-11 Durotar: around Master Gadrin;Zone Routes (Horde)\8-11 Tirisfal Glades: around Carendin Halgar
+#next Zone Routes (Horde)\12-16 The Barrens: around Gazlowe;Zone Routes (Horde)\8-11 Tirisfal Glades: around Carendin Halgar;Zone Routes (Horde)\10-12 Silverpine Forest: around Dalar Dawnweaver
 
 step << Warrior
     #completewith next
@@ -1621,7 +1626,7 @@ step
     >>|cRXP_FRIENDLY_The Barrens|r: Call of Fire << Shaman
     >>|cRXP_FRIENDLY_Undercity|r: Touch of Weakness << Undead Priest
 step
-    +|cRXP_WARN_Suggested next zones at level 12|r: |cRXP_FRIENDLY_The Barrens|r (about 1.6 levels of quests, starting around Gazlowe), |cRXP_FRIENDLY_Durotar|r (about 1.2 levels of quests, starting around Master Gadrin), |cRXP_FRIENDLY_Tirisfal Glades|r (about 0.8 levels of quests, starting around Carendin Halgar). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 12|r: |cRXP_FRIENDLY_The Barrens|r (about 1.6 levels of quests, starting around Gazlowe), |cRXP_FRIENDLY_Tirisfal Glades|r (about 0.8 levels of quests, starting around Carendin Halgar), |cRXP_FRIENDLY_Silverpine Forest|r (about 0.7 levels of quests, starting around Dalar Dawnweaver; 1 quest from here hands in there). Completing this step loads the guide for The Barrens --RouteBuilder:next
 step << Tauren Druid
     +|cRXP_WARN_The rest of Mulgore is planned from level 15.|r Load its guide for level 15 then
 ]])

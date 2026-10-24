@@ -1,0 +1,261 @@
+Elwynn Forest - Alliance - part 1 of 3, planned from level 1
+Guide "1-12 Elwynn Forest" in group "Zone Routes (Alliance)": this part has 185 steps, 100 stops
+Written to guides/tbc/Elwynn Forest (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 7 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+11 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 125 steps kept, 20 new ones slotted in, 0 moved because their prerequisites changed, 21 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 115 tasks, 22,253 yd on foot; ends at level 9.7; 1 hearth; at its hardest you are 2.0 levels below the mobs
+  Human Warlock/Gnome Warlock: 3 more tasks; their whole route comes to 22,851 yd; ends at level 9.7; 1 hearth; at its hardest you are 2.0 levels below the mobs
+  Human Warrior: 2 more tasks; their whole route comes to 22,335 yd; ends at level 9.7; 1 hearth; at its hardest you are 2.0 levels below the mobs
+  Human Paladin: 2 more tasks; their whole route comes to 22,348 yd; ends at level 9.7; 1 hearth; at its hardest you are 2.0 levels below the mobs
+  Human Rogue: 2 more tasks; their whole route comes to 22,267 yd; ends at level 9.7; 1 hearth; at its hardest you are 2.0 levels below the mobs
+  Human Priest: 7 more tasks; their whole route comes to 23,472 yd; ends at level 9.8; 2 hearths; at its hardest you are 1.9 levels below the mobs
+  Human Mage: 2 more tasks; their whole route comes to 22,367 yd; ends at level 9.7; 1 hearth; at its hardest you are 2.0 levels below the mobs
+  Human Warlock: 2 more tasks; their whole route comes to 22,871 yd; ends at level 9.7; 1 hearth; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 23,715 yd; ends at level 9.7; 1 hearth; at its hardest you are 2.0 levels below the mobs
+  Human (quests that depend on other zones): 1 more tasks; their whole route comes to 24,688 yd; ends at level 9.7; 1 hearth; at its hardest you are 2.0 levels below the mobs
+  Human Priest/Dwarf Priest (quests that depend on other zones): 4 more tasks; their whole route comes to 24,296 yd; ends at level 9.7; 1 hearth; at its hardest you are 2.0 levels below the mobs
+  Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 24,736 yd; ends at level 9.7; 1 hearth; at its hardest you are 2.0 levels below the mobs
+  Human Paladin (quests that depend on other zones): 1 more tasks; their whole route comes to 25,289 yd; ends at level 9.7; 1 hearth; at its hardest you are 2.0 levels below the mobs
+Hearthstone: set at Cylina Darkheart (Cylina Darkheart's inn); 2 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 5 for In Favor of the Light (Human Priest)
+56 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+5 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+12 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (65)
+------------------------
+Start to finish here: 55 (46 for everyone, 3 Human Priest, 1 Human Warlock/Gnome Warlock, 1 Human Warrior, 1 Human Paladin, 1 Human Rogue, 1 Human Mage, 1 Human Warlock)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Furlbrow's Deed [184, level 9] -> Westfall
+  Report to Gryan Stoutmantle [109, level 10] -> Westfall
+
+Brought in from another zone and handed in here - steps show only if you have the quest (7):
+  The Slaughtered Lamb [1715, level 10, Warlock] <- Ironforge
+  Desperate Prayer [5636, level 10, Human Priest/Dwarf Priest] <- Teldrassil
+  Desperate Prayer [5637, level 10, Human Priest/Dwarf Priest] <- Dun Morogh
+  Desperate Prayer [5639, level 10, Human Priest/Dwarf Priest] <- Ironforge
+  Desperate Prayer [5640, level 10, Human Priest/Dwarf Priest] <- Darnassus
+  Continue to Stormwind [6281, level 10, Human] <- Westfall
+  Tome of Divinity [3681, level 12, Human Paladin] <- Ironforge
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Manhunt [147, level 10] - needs one of The Collector [123]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (29)
+----------------------------
+These need a higher level than this part ends at:
+  A Warrior's Training [1638, level 10]: needs level 10; this part gets Warrior characters to about 9.7
+  Beat Bartleby [1640, level 10]: needs level 10; this part gets Warrior characters to about 9.7
+  The Tome of Divinity [1643, level 12]: needs level 12; this part gets Human Paladin characters to about 9.7
+  The Tome of Divinity [1644, level 12]: needs level 12; this part gets Human Paladin characters to about 9.7
+  Bartleby's Mug [1665, level 10]: needs level 10; this part gets Warrior characters to about 9.7
+  Marshal Haggard [1666, level 10]: needs level 10; this part gets Warrior characters to about 9.7
+  Dead-tooth Jack [1667, level 10]: needs level 10; this part gets Warrior characters to about 9.7
+  Gakin's Summons [1685, level 10]: needs level 10; this part gets Warlock characters to about 9.7
+  Surena Caledon [1688, level 10]: needs level 10; this part gets Warlock characters to about 9.7
+  The Binding [1689, level 10]: needs level 10; this part gets Warlock characters to about 9.7
+  The Tome of Divinity [1780, level 12]: needs level 12; this part gets Human Paladin characters to about 9.7
+  The Tome of Divinity [1781, level 12]: needs level 12; this part gets Human Paladin characters to about 9.7
+  The Tome of Divinity [1786, level 12]: needs level 12; this part gets Human Paladin characters to about 9.7
+  The Tome of Divinity [1787, level 12]: needs level 12; this part gets Human Paladin characters to about 9.7
+  The Tome of Divinity [1788, level 12]: needs level 12; this part gets Human Paladin characters to about 9.7
+  Speak with Jennea [1860, level 10]: needs level 10; this part gets Mage characters to about 9.9
+  Mirror Lake [1861, level 10]: needs level 10; this part gets Mage characters to about 9.9
+  Seek out SI: 7 [2205, level 10]: needs level 10; this part gets Rogue characters to about 9.9
+  Snatch and Grab [2206, level 10]: needs level 10; this part gets Rogue characters to about 9.9
+  Tome of Divinity [2998, level 12]: needs level 12; this part gets Human Paladin characters to about 9.7
+  Tome of Divinity [3000, level 12]: needs level 12; this part gets Dwarf Paladin characters to about 9.7
+  Returning Home [5628, level 10]: needs level 10; this part gets NightElf Priest characters to about 9.7
+  Desperate Prayer [5634, level 10]: needs level 10; this part gets Human Priest/Dwarf Priest characters to about 9.7
+  Heeding the Call [5924, level 10]: needs level 10; this part gets NightElf Druid characters to about 9.7
+  The Hunter's Path [6073, level 10]: needs level 10; this part gets NightElf Hunter characters to about 9.7
+  The Hunter's Path [6076, level 10]: needs level 10; this part gets Dwarf Hunter characters to about 9.7
+  Dungar Longdrink [6261, level 10]: needs level 10; this part gets Human characters to about 9.7
+  Return to Lewis [6285, level 10]: needs level 10; this part gets Human characters to about 9.7
+  A Donation of Wool [7791, level 12]: needs level 12; this part gets you to about 9.7
+
+Left out (360)
+--------------
+above this zone's range of 1-12 (186):
+  The Legend of Stalvan [69], The Legend of Stalvan [70], The Legend of Stalvan [72], The Legend of Stalvan [74], The Legend of Stalvan [75], The Legend of Stalvan [78], A Watchful Eye [94], The Price of Shoes [118], Return to Verner [119], Messenger to Stormwind [120], Messenger to Stormwind [121], The Defias Brotherhood [135], The Defias Brotherhood [141], Theocritus' Retrieval [178], A Meal Served Cold [212], Morganth [249], Seeking Wisdom [269], The Doomed Fleet [270], Cleansing the Eye [293], Blessed Arm [322], Armed and Ready [325], A Noble Brew [335], A Noble Brew [336], An Old History Book [337], Speaking of Fortitude [343], Brother Paxton [344], Ink Supplies [345], Return to Kristoff [346], Rethban Ore [347], Look to an Old Friend [350], Stormpike's Delivery [353], The Unsent Letter [373], Bazil Thredd [389], The Curious Visitor [392], Shadow of the Past [393], The Head of the Beast [394], Brotherhood's End [395], An Audience with the King [396], You Have Served Us Well [397], Humble Beginnings [399], ... 146 more
+not in the game (on Questie's quest blacklist) (122):
+  A Warden of the Alliance [171], Jaina's Autograph [558], Children's Week [1468], The Bough of the Eternals [1479], The Stonewrought Dam [1558], Spooky Lighthouse [1687], You Scream, I Scream... [4822], Welcome! [5805], Greatfather Winter is Here! [7023], Carnival Boots [7881], Carnival Jerkins [7882], The World's Largest Gnome! [7883], Crocolisk Boy and the Bearded Murloc [7884], Armor Kits [7885], Coarse Weightstone [7889], Heavy Grinding Stone [7890], Green Iron Bracers [7891], Big Black Mace [7892], Rituals of Strength [7893], Copper Modulator [7894], Whirring Bronze Gizmo [7895], Green Fireworks [7896], Mechanical Repair Kits [7897], Thorium Widget [7898], Small Furry Paws [7899], Torn Bear Pelts [7900], Soft Bushy Tails [7901], Vibrant Plumes [7902], Evil Bat Eyes [7903], The Darkmoon Faire [7905], 5 Tickets - Darkmoon Flower [7930], 5 Tickets - Minor Darkmoon Prize [7931], 12 Tickets - Lesser Darkmoon Prize [7932], 40 Tickets - Greater Darkmoon Prize [7933], 50 Tickets - Darkmoon Storage Box [7934], 10 Tickets - Last Month's Mutton [7935], 50 Tickets - Last Year's Mutton [7936], Your Fortune Awaits You... [7937], More Dense Grinding Stones [7939], 1200 Tickets - Orb of the Darkmoon [7940], ... 82 more
+repeatable (28):
+  Give Gerard a Drink [16], Stormwind Library [579], The Tome of Divinity [1641], The Symbol of Life [1790], The Tome of Valor [1793], CLUCK! [3861], Again Into the Great Ossuary [7666], Additional Runecloth [7796], Darkmoon Beast Deck [7907], Darkmoon Portals Deck [7927], Darkmoon Warlords Deck [7928], Darkmoon Elementals Deck [7929], Concerted Efforts [8385], Argent Dawn Gloves [9094], Consecrated Sharpening Stones [9317], Blessed Wizard Oil [9318], Major Healing Potion [9321], Major Mana Potion [9337], Tabard of the Argent Dawn [9341], Darkmoon Blessings Deck [10938], Darkmoon Storms Deck [10939], Darkmoon Furies Deck [10940], Darkmoon Lunacy Deck [10941], Call to Arms: Arathi Basin [11335], Call to Arms: Alterac Valley [11336], Call to Arms: Eye of the Storm [11337], Call to Arms: Warsong Gulch [11338], Concerted Efforts [95455]
+dungeon quest (10):
+  Oh Brother. . . [167], Collecting Memories [168], Quell The Uprising [387], The Color of Blood [388], The Stockade Riots [391], Underground Assault [2040], Bring the Light [3636], Delivery to Ridgewell [4765], Mayara Brightwing [4766], Feathermoon Stronghold [7494]
+needs a profession (5):
+  The Origins of Smithing [2758], In Search of Galvan [2759], Gnome Engineering [3630], Goblin Engineering [4181], The Journey Has Just Begun [7497]
+cannot be taken together with Returning Home [5628], which is in the guide (2):
+  Returning Home [5631], Returning Home [5632]
+cannot be taken together with Desperate Prayer [5634], which is in the guide (2):
+  Desperate Prayer [5635], Desperate Prayer [5638]
+special category (sort -368) (2):
+  Investigate the Scourge of Stormwind [9260], Cracked Necrotic Crystal [9292]
+cannot be taken together with A Warrior's Training [1638], which is in the guide (1):
+  Bartleby the Drunk [1639]
+handed in here, but the database does not say where it starts (1):
+  The Tome of Divinity [1642]
+special category (sort -25) (1):
+  Concerted Efforts [8371]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Elwynn Forest - Alliance - part 2 of 3, planned from level 12
+Guide "1-12 Elwynn Forest" in group "Zone Routes (Alliance)": this part has 58 steps, 36 stops
+Written to guides/tbc/Elwynn Forest (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 12. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 16 steps kept, 24 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 115 yd on foot; ends at level 12.0
+  Warrior: 2 more tasks; their whole route comes to 1,272 yd; ends at level 12.0
+  Rogue: 5 more tasks; their whole route comes to 3,775 yd; ends at level 12.1
+  Mage: 5 more tasks; their whole route comes to 2,533 yd; ends at level 12.1
+  Human Priest/Dwarf Priest: 1 more tasks; their whole route comes to 1,555 yd; ends at level 12.0
+  Warlock: 8 more tasks; their whole route comes to 6,024 yd; ends at level 12.0
+  Dwarf Hunter: 1 more tasks; their whole route comes to 1,455 yd; ends at level 12.0
+  NightElf Hunter: 1 more tasks; their whole route comes to 1,455 yd; ends at level 12.0
+  NightElf Priest: 1 more tasks; their whole route comes to 115 yd; ends at level 12.0
+  NightElf Druid: 1 more tasks; their whole route comes to 1,584 yd; ends at level 12.0
+  Human (quests that depend on other zones): 3 more tasks; their whole route comes to 1,294 yd; ends at level 12.0
+  Warrior (quests that depend on other zones): 11 more tasks; their whole route comes to 4,012 yd; ends at level 12.0
+Hearthstone: set at Cylina Darkheart (Cylina Darkheart's inn); 0 hearth steps in the guide.
+10 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (19)
+------------------------
+Start to finish here: 8 (0 for everyone, 3 Warlock, 2 Mage, 2 Rogue, 1 Warrior)
+
+Picked up here, handed in elsewhere - these stay in the log (4):
+  Returning Home [5628, level 10, NightElf Priest] -> Darnassus
+  Heeding the Call [5924, level 10, NightElf Druid] -> Darnassus
+  The Hunter's Path [6073, level 10, NightElf Hunter] -> Teldrassil
+  The Hunter's Path [6076, level 10, Dwarf Hunter] -> Dun Morogh
+
+Need a quest this guide does not hand in - steps show only once that is done (6):
+  Beat Bartleby [1640, level 10, Warrior] - needs one of Bartleby the Drunk [1639], Vejrek [1678], Vorlus Vilehoof [1683], Strength of One [9582]
+  Bartleby's Mug [1665, level 10, Warrior] - needs one of Beat Bartleby [1640]
+  Marshal Haggard [1666, level 10, Warrior] - needs one of Bartleby's Mug [1665]
+  Dead-tooth Jack [1667, level 10, Warrior] - needs one of Marshal Haggard [1666]
+  Dungar Longdrink [6261, level 10, Human] - needs one of Continue to Stormwind [6281]
+  Return to Lewis [6285, level 10, Human] - needs one of Dungar Longdrink [6261] -> Westfall
+
+Worth checking in game
+----------------------
+No objectives in the database (the hand-in step warns about it; add "objectives" for these to the zone file):
+  Desperate Prayer [5634, level 10, Human Priest/Dwarf Priest]
+1 quests have no experience figure in the database: their experience is estimated, and 1 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  Desperate Prayer [5634]
+
+Put off to a later part (10)
+----------------------------
+These need a higher level than this part ends at:
+  The Tome of Divinity [1643, level 12]: needs level 12; this part gets Human Paladin characters to about 12.0
+  The Tome of Divinity [1644, level 12]: needs level 12; this part gets Human Paladin characters to about 12.0
+  The Tome of Divinity [1780, level 12]: needs level 12; this part gets Human Paladin characters to about 12.0
+  The Tome of Divinity [1781, level 12]: needs level 12; this part gets Human Paladin characters to about 12.0
+  The Tome of Divinity [1786, level 12]: needs level 12; this part gets Human Paladin characters to about 12.0
+  The Tome of Divinity [1787, level 12]: needs level 12; this part gets Human Paladin characters to about 12.0
+  The Tome of Divinity [1788, level 12]: needs level 12; this part gets Human Paladin characters to about 12.0
+  Tome of Divinity [2998, level 12]: needs level 12; this part gets Human Paladin characters to about 12.0
+  Tome of Divinity [3000, level 12]: needs level 12; this part gets Dwarf Paladin characters to about 12.0
+  A Donation of Wool [7791, level 12]: needs level 12; this part gets you to about 12.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Elwynn Forest - Alliance - part 3 of 3, planned from level 15
+Guide "1-12 Elwynn Forest" in group "Zone Routes (Alliance)": this part has 29 steps, 23 stops
+Written to guides/tbc/Elwynn Forest (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Paladin), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 15. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 21 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 1,007 yd on foot; ends at level 15.0
+  Human Paladin: 2 more tasks; their whole route comes to 1,408 yd; ends at level 15.0
+  Dwarf Paladin: 1 more tasks; their whole route comes to 1,384 yd; ends at level 15.0
+  Human Priest/Dwarf Priest (quests that depend on other zones): 1 more tasks; their whole route comes to 1,444 yd; ends at level 15.0
+  Human Paladin (quests that depend on other zones): 17 more tasks; their whole route comes to 9,252 yd; ends at level 15.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (11)
+------------------------
+Start to finish here: 1 (0 for everyone, 1 Human Paladin)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Tome of Divinity [3000, level 12, Dwarf Paladin] -> Ironforge
+
+Hand-in step only shows once complete (1):
+  A Donation of Wool [7791, level 12] - needs Wool Cloth (1) (Hillsbrad Foothills)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Desperate Prayer [5634, level 10, Human Priest/Dwarf Priest] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (7):
+  The Tome of Divinity [1643, level 12, Human Paladin] - needs one of The Tome of Divinity [1642]
+  The Tome of Divinity [1644, level 12, Human Paladin] - needs one of The Tome of Divinity [1643]
+  The Tome of Divinity [1780, level 12, Human Paladin] - needs one of The Tome of Divinity [1644]
+  The Tome of Divinity [1781, level 12, Human Paladin] - needs one of The Tome of Divinity [1780]
+  The Tome of Divinity [1786, level 12, Human Paladin] - needs one of The Tome of Divinity [1781]
+  The Tome of Divinity [1787, level 12, Human Paladin] - needs one of The Tome of Divinity [1786]
+  The Tome of Divinity [1788, level 12, Human Paladin] - needs one of The Tome of Divinity [1787]
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

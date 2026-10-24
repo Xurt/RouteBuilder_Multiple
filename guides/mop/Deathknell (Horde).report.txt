@@ -1,0 +1,84 @@
+Deathknell - Horde
+Guide "3-4 Deathknell" in group "Zone Routes (Horde)": 63 steps, 55 stops
+Written to guides/mop/Deathknell (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Undead Warrior), not counting quests brought in from other zones.
+2 pickups or hand-ins are within reach of a stop but planned for later.
+3 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 3. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 60 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed, 19 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 15 tasks, 3,983 yd on foot; ends at level 4.3
+  Undead Warrior: 5 more tasks; their whole route comes to 4,608 yd; ends at level 4.4
+  Undead Hunter: 5 more tasks; their whole route comes to 4,172 yd; ends at level 4.4
+  Undead Rogue: 5 more tasks; their whole route comes to 4,532 yd; ends at level 4.4
+  Undead Priest: 5 more tasks; their whole route comes to 4,093 yd; ends at level 4.4
+  Undead Mage: 5 more tasks; their whole route comes to 4,067 yd; ends at level 4.4
+  Undead Warlock: 5 more tasks; their whole route comes to 4,121 yd; ends at level 4.4
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 7,125 yd; ends at level 4.3; 1 ORDER PROBLEMS
+  Undead (quests that depend on other zones): 17 more tasks; their whole route comes to 9,429 yd; ends at level 4.3; 3 ORDER PROBLEMS
+Hearthstone: set at Blacksmith Rand (Blacksmith Rand's inn); 0 hearth steps in the guide.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+6 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (29)
+------------------------
+Start to finish here: 16 (0 for everyone, 4 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren, 2 Undead Warrior, 2 Undead Rogue, 2 Undead Priest, 2 Undead Mage, 2 Undead Warlock, 2 Undead Hunter)
+
+Hand-in step only shows once complete (1):
+  Night Web's Hollow [24973, level 4, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Night Web Spider slain (5) (Night Web's Hollow)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Fresh out of the Grave [24959, level 1, Undead] <- Tirisfal Glades
+  Assault on the Rotbrain Encampment [24971, level 5, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Tirisfal Glades
+
+Need a quest this guide does not hand in - steps show only once that is done (10):
+  The Wakening [24960, level 1, Undead] - needs one of The Shadow Grave [28608]
+  Beyond the Graves [25089, level 1, Undead] - needs one of The Wakening [24960]
+  Those That Couldn't Be Saved [26799, level 1, Undead] - needs one of The Shadow Grave [28608]
+  The Shadow Grave [28608, level 1, Undead] - needs one of Fresh out of the Grave [24959]
+  Caretaker Caice [28652, level 1, Undead] - needs one of Those That Couldn't Be Saved [26799]
+  Recruitment [26800, level 2, Undead] - needs one of Beyond the Graves [25089]
+  Shadow Priest Sarvis [28653, level 2, Undead] - needs one of Recruitment [26800]
+  Novice Elreth [28651, level 3, Undead] - needs one of The Thrill of the Hunt [24964], Magic Training [24965], Of Light and Shadows [24966], Stab! [24967], Dark Deeds [24968], Charging into Battle [24969], Tiger Palm [31147]
+  No Better Than the Zombies [24970, level 4, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Night Web's Hollow [24973] -> Tirisfal Glades
+  Vital Intelligence [24972, level 5, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Assault on the Rotbrain Encampment [24971] -> Tirisfal Glades
+
+Worth checking in game
+----------------------
+  The Thrill of the Hunt [24964, level 3, Undead Hunter]: has a reputation or spell objective, which is not planned
+  The Thrill of the Hunt [24964, level 3, Undead Hunter]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Steady Shot (x3)" there
+  Magic Training [24965, level 3, Undead Mage]: has a reputation or spell objective, which is not planned
+  Magic Training [24965, level 3, Undead Mage]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Arcane Missiles (x3)" there
+  Of Light and Shadows [24966, level 3, Undead Priest]: has a reputation or spell objective, which is not planned
+  Of Light and Shadows [24966, level 3, Undead Priest]: objective "Training Dummy slain (5)" is line 1 by the database, but RestedXP's guide has "Cast Flash Heal (x5)" there
+  Stab! [24967, level 3, Undead Rogue]: has a reputation or spell objective, which is not planned
+  Stab! [24967, level 3, Undead Rogue]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Eviscerate (x3)" there
+  Dark Deeds [24968, level 3, Undead Warlock]: has a reputation or spell objective, which is not planned
+  Dark Deeds [24968, level 3, Undead Warlock]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Immolate (x3)" there
+  Charging into Battle [24969, level 3, Undead Warrior]: has a reputation or spell objective, which is not planned
+  Charging into Battle [24969, level 3, Undead Warrior]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Charge (x3)" there
+  Assault on the Rotbrain Encampment [24971, level 5, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: mixes a kill-credit objective with others; check that "Rotbrain Magus" really is line 2 in the quest log
+  Scourge on our Perimeter [26801, level 3, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: objective "Wretched Ghoul (8)" is line 1 by the database, but RestedXP's guide has "8/8 Deathknell Scourge slain" there
+
+Left out (15)
+-------------
+not in the game (on Questie's quest blacklist) (11):
+  Rude Awakening [363], The Mindless Ones [364], The Damned [376], Night Web's Hollow [380], The Scarlet Crusade [381], The Red Messenger [382], A Rogue's Deal [590], Rattling the Rattlecages [3901], Scavenging Deathknell [3902], Marla's Last Wish [6395], The Red Messenger [25033]
+special category (sort -395) (2):
+  Scribbled Scroll [31146], Tiger Palm [31147]
+handed in here, but the database does not say where it starts (1):
+  Piercing the Veil [1470]
+cannot be taken together with Novice Elreth [28651], which is in the guide (1):
+  Novice Elreth [31148]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

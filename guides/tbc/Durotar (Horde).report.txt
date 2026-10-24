@@ -1,0 +1,225 @@
+Durotar - Horde - part 1 of 2, planned from level 1
+Guide "1-13 Durotar" in group "Zone Routes (Horde)": this part has 227 steps, 103 stops
+Written to guides/tbc/Durotar (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 7 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+4 pickups or hand-ins are within reach of a stop but planned for later.
+5 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 131 steps kept, 8 new ones slotted in, 7 moved because their prerequisites changed, 42 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 96 tasks, 30,077 yd on foot; ends at level 9.6; 1 hearth; at its hardest you are 3.4 levels below the mobs
+  Shaman: 7 more tasks; their whole route comes to 30,698 yd; ends at level 9.8; 1 hearth; at its hardest you are 3.1 levels below the mobs
+  Warlock: 5 more tasks; their whole route comes to 30,325 yd; ends at level 9.5; 1 hearth; at its hardest you are 3.5 levels below the mobs
+  Orc Warrior: 2 more tasks; their whole route comes to 30,098 yd; ends at level 9.6; 1 hearth; at its hardest you are 3.4 levels below the mobs
+  Orc Hunter: 2 more tasks; their whole route comes to 30,089 yd; ends at level 9.6; 1 hearth; at its hardest you are 3.4 levels below the mobs
+  Orc Rogue: 2 more tasks; their whole route comes to 30,148 yd; ends at level 9.6; 1 hearth; at its hardest you are 3.4 levels below the mobs
+  Orc Shaman: 2 more tasks; their whole route comes to 30,720 yd; ends at level 9.8; 1 hearth; at its hardest you are 3.1 levels below the mobs
+  Orc Warlock: 2 more tasks; their whole route comes to 30,466 yd; ends at level 9.6; 1 hearth; at its hardest you are 3.5 levels below the mobs
+  Troll Warrior: 2 more tasks; their whole route comes to 30,098 yd; ends at level 9.6; 1 hearth; at its hardest you are 3.4 levels below the mobs
+  Troll Hunter: 2 more tasks; their whole route comes to 30,089 yd; ends at level 9.6; 1 hearth; at its hardest you are 3.4 levels below the mobs
+  Troll Rogue: 2 more tasks; their whole route comes to 30,148 yd; ends at level 9.6; 1 hearth; at its hardest you are 3.4 levels below the mobs
+  Troll Priest: 7 more tasks; their whole route comes to 30,464 yd; ends at level 9.7; 1 hearth; at its hardest you are 3.3 levels below the mobs
+  Troll Shaman: 2 more tasks; their whole route comes to 30,720 yd; ends at level 9.8; 1 hearth; at its hardest you are 3.1 levels below the mobs
+  Troll Mage: 2 more tasks; their whole route comes to 30,092 yd; ends at level 9.6; 1 hearth; at its hardest you are 3.4 levels below the mobs
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 29,696 yd; ends at level 9.5; 1 hearth; at its hardest you are 3.6 levels below the mobs
+  Orc/Troll (quests that depend on other zones): 1 more tasks; their whole route comes to 31,106 yd; ends at level 9.5; 1 hearth; at its hardest you are 3.6 levels below the mobs
+  Shaman (quests that depend on other zones): 3 more tasks; their whole route comes to 31,525 yd; ends at level 9.8; 1 hearth; at its hardest you are 3.1 levels below the mobs
+  Orc Hunter/Troll Hunter (quests that depend on other zones): 1 more tasks; their whole route comes to 31,529 yd; ends at level 9.6; 1 hearth; at its hardest you are 3.4 levels below the mobs
+  Orc Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 31,934 yd; ends at level 9.6; 1 hearth; at its hardest you are 3.5 levels below the mobs
+  Troll Priest (quests that depend on other zones): 3 more tasks; their whole route comes to 31,940 yd; ends at level 9.7; 1 hearth; at its hardest you are 3.3 levels below the mobs
+Hearthstone: set at [DND] TAR Pedestal - Accessories ([DND] TAR Pedestal - Accessories's inn); 1 hearth step in the guide.
+100 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+5 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+5 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+3 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (58)
+------------------------
+Start to finish here: 48 (28 for everyone, 3 Shaman, 3 Troll Priest, 2 Warlock, 1 Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Druid, 1 Orc/Undead/Tauren/Troll, 1 Orc Warrior, 1 Troll Warrior, 1 Troll Hunter, 1 Troll Rogue, 1 Troll Shaman, 1 Troll Mage, 1 Orc Hunter, 1 Orc Rogue, 1 Orc Shaman, 1 Orc Warlock)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (8):
+  Call of Earth [1520, level 4, Shaman] <- Mulgore
+  Call of Fire [1524, level 10, Shaman] <- The Barrens
+  Hex of Weakness [5655, level 10, Troll Priest] <- Mulgore
+  Hex of Weakness [5656, level 10, Troll Priest] <- Thunder Bluff
+  Hex of Weakness [5657, level 10, Troll Priest] <- Undercity
+  The Hunter's Path [6070, level 10, Orc Hunter/Troll Hunter] <- Thunder Bluff
+  Ride to Orgrimmar [6384, level 10, Orc/Troll] <- The Barrens
+  Return to Gan'rul Bloodeye [10790, level 10, Orc Warlock] <- Undercity
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Call of Earth [1521, level 4, Shaman] - needs one of Call of Earth [1520] -> Mulgore
+  The Admiral's Orders [831, level 7] - needs one of The Admiral's Orders [830]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (35)
+----------------------------
+These need a higher level than this part ends at:
+  Dark Storms [806, level 12]: its mobs are level 12; this part gets you to about 9.9
+  Ak'Zeloth [809, level 13]: follows Neeru Fireblade [829]
+  Skull Rock [827, level 12]: follows Margoz [828]
+  Margoz [828, level 12]: follows Dark Storms [806]
+  Neeru Fireblade [829, level 12]: follows Skull Rock [827]
+  Conscript of the Horde [840, level 12]: needs level 10; this part gets you to about 9.9
+  Creature of the Void [1501, level 10]: needs level 10; this part gets Orc Warlock characters to about 10.0
+  The Binding [1504, level 10]: needs level 10; this part gets Orc Warlock characters to about 10.0
+  Veteran Uzzek [1505, level 10]: needs level 10; this part gets Warrior characters to about 10.0
+  Gan'rul's Summons [1506, level 10]: needs level 10; this part gets Warlock characters to about 10.0
+  Call of Fire [1522, level 10]: needs level 10; this part gets Shaman characters to about 10.2
+  Call of Fire [1525, level 10]: needs level 10; this part gets Shaman characters to about 10.2
+  Call of Fire [1526, level 10]: needs level 10; this part gets Shaman characters to about 10.2
+  Call of Fire [1527, level 10]: needs level 10; this part gets Shaman characters to about 10.2
+  The Shattered Hand [1858, level 13]: needs level 10; this part gets Orc Rogue/Troll Rogue characters to about 10.0
+  Therzok [1859, level 10]: needs level 10; this part gets Orc Rogue characters to about 10.1
+  Speak with Un'thuwa [1883, level 10]: needs level 10; this part gets Mage characters to about 10.1
+  Ju-Ju Heaps [1884, level 10]: needs level 10; this part gets Mage characters to about 10.1
+  The Shattered Hand [1963, level 13]: needs level 10; this part gets Orc Rogue/Troll Rogue characters to about 10.0
+  Hex of Weakness [5652, level 10]: needs level 10; this part gets Troll Priest characters to about 10.1
+  Touch of Weakness [5660, level 10]: needs level 10; this part gets Undead Priest characters to about 10.0
+  Heeding the Call [5927, level 10]: needs level 10; this part gets Tauren Druid characters to about 10.0
+  Taming the Beast [6062, level 10]: needs level 10; this part gets Orc Hunter/Troll Hunter characters to about 10.0
+  The Hunter's Path [6066, level 10]: needs level 10; this part gets Tauren Hunter characters to about 10.0
+  The Hunter's Path [6068, level 10]: needs level 10; this part gets Orc Hunter/Troll Hunter characters to about 10.0
+  Training the Beast [6081, level 10]: needs level 10; this part gets Orc Hunter/Troll Hunter characters to about 10.0
+  Taming the Beast [6082, level 10]: needs level 10; this part gets Orc Hunter/Troll Hunter characters to about 10.0
+  Taming the Beast [6083, level 10]: needs level 10; this part gets Orc Hunter/Troll Hunter characters to about 10.0
+  Doras the Wind Rider Master [6385, level 10]: needs level 10; this part gets Orc/Troll characters to about 9.9
+  Return to the Crossroads. [6386, level 10]: needs level 10; this part gets Orc/Troll characters to about 9.9
+  A Donation of Wool [7826, level 12]: needs level 12; this part gets you to about 9.9
+  A Donation of Wool [7833, level 12]: needs level 12; this part gets you to about 9.9
+  Seek the Farstriders [9617, level 10]: needs level 10; this part gets BloodElf Hunter characters to about 10.0
+  Return to Talionia [10788, level 10]: needs level 10; this part gets BloodElf Warlock characters to about 10.0
+  Return to Carendin Halgar [10789, level 10]: needs level 10; this part gets Undead Warlock characters to about 10.0
+
+Left out (371)
+--------------
+above this zone's range of 1-14 (162):
+  Rise of the Silithid [32], Ripple Delivery [81], The Ashenvale Hunt [235], Ripple Recovery [649], Ripple Recovery [650], Assisting Arch Druid Runetotem [936], The New Frontier [1018], The Spirits of Stonetalon [1061], The Swarm Grows [1145], The Swarm Grows [1146], Parts of the Swarm [1184], Report to Zor [1262], Regthar Deathgate [1361], Alliance Relations [1431], Alliance Relations [1432], Alliance Relations [1436], Devourer of Souls [1507], Blind Cazul [1508], News of Dogran [1509], Love's Gift [1512], The Binding [1513], Call of Water [1528], Call of Air [1531], The Islander [1718], Speak with Ruga [1823], Ula'elek and the Brutal Gauntlets [1839], Satyr Hooves [1842], Brutal Gauntlets [1843], Speak with Deino [1943], Waters of Xavian [1944], Laughing Sisters [1945], Journey to the Marsh [1947], Return to the Marsh [1953], Report to Anastasia [1959], Necklace Recovery [2283], Necklace Recovery, Take 2 [2284], Deliver the Gems [2340], Necklace Recovery, Take 3 [2341], Find the Shattered Hand [2378], Zando'zan [2379], ... 122 more
+not in the game (on Questie's quest blacklist) (155):
+  Children's Week [172], The New Horde [787], Down at the Docks [910], Gateway to the Frontier [911], You Scream, I Scream... [915], Cairne's Hoofprint [925], Lordaeron Throne Room [1800], [Not Used] Tools of the Trade [2019], A Warden of the Horde [5502], Welcome! [5843], Great-father Winter is Here! [6961], Treats for Great-father Winter [6962], Stolen Winter Veil Treats [6963], The Reason for the Season [6964], You're a Mean One... [6983], A Smokywood Pastures' Thank You! [6984], Great-father Winter is Here! [7021], Great-father Winter is Here! [7024], The Feast of Winter Veil [7061], The Darkreaver Menace [7668], The Darkmoon Faire [7926], Honoring a Hero [8150], Hallow's End Treats for Spoops! [8312], Incoming Gumdrop [8358], Flexing for Nougat [8359], The Horde Needs Copper Bars! [8532], The Horde Needs More Copper Bars! [8533], The Horde Needs Tin Bars! [8542], The Horde Needs More Tin Bars! [8543], The Horde Needs Mithril Bars! [8545], The Horde Needs More Mithril Bars! [8546], The Horde Needs Peacebloom! [8549], The Horde Needs More Peacebloom! [8550], The Horde Needs Firebloom! [8580], The Horde Needs More Firebloom! [8581], The Horde Needs Purple Lotus! [8582], The Horde Needs More Purple Lotus! [8583], The Horde Needs Heavy Leather! [8588], The Horde Needs More Heavy Leather! [8589], The Horde Needs Thick Leather! [8590], ... 115 more
+repeatable (20):
+  Finding the Antidote [813], Earth Sapta [1463], Fire Sapta [1464], A Fair Trade [7341], Again Into the Great Ossuary [7669], Additional Runecloth [7832], Additional Runecloth [7837], Could I get a Fishing Flier? [8228], For Great Honor [8388], Major Mana Potion [9320], Argent Dawn Gloves [9333], Blessed Wizard Oil [9334], Consecrated Sharpening Stones [9335], Major Healing Potion [9336], Tabard of the Argent Dawn [9343], Call to Arms: Arathi Basin [11339], Call to Arms: Alterac Valley [11340], Call to Arms: Eye of the Storm [11341], Call to Arms: Warsong Gulch [11342], For Great Honor [95457]
+needs a profession (14):
+  Barbaric Battlements [2751], On Iron Pauldrons [2752], Trampled Under Foot [2753], Horns of Frenzy [2754], Joys of Omosh [2755], The Old Ways [2756], Booty Bay or Bust! [2757], The Art of the Armorsmith [5301], The Way of the Weaponsmith [5302], You Too Good. [6608], To Gadgetzan You Go! [6611], Horde Trauma [6623], The Journey Has Just Begun [7493], Imperial Plate Armor [10892]
+dungeon quest (10):
+  What Is Going On? [4001], The Eastern Kingdoms [4002], The Royal Rescue [4003], The Princess Saved? [4004], For The Horde! [4974], Hidden Enemies [5728], Slaying the Beast [5761], Shadowshard Fragments [7068], In Defense of Frostwolf [7241], Camp Mojache [7492]
+handed in here, but the database does not say where it starts (1):
+  The Admiral's Orders [830]
+cannot be taken together with Call of Fire [1522], which is in the guide (1):
+  Call of Fire [2983]
+cannot be taken together with Hex of Weakness [5652], which is in the guide (1):
+  Hex of Weakness [5654]
+cannot be taken together with Touch of Weakness [5660], which is in the guide (1):
+  Touch of Weakness [5662]
+cannot be taken together with The Hunter's Path [6066], which is in the guide (1):
+  The Hunter's Path [6067]
+cannot be taken together with The Hunter's Path [6068], which is in the guide (1):
+  The Hunter's Path [6069]
+special category (sort -25) (1):
+  For Great Honor [8367]
+needs reputation (1):
+  The Brokering of Peace [8485]
+special category (sort -368) (1):
+  Investigate the Scourge of Orgrimmar [9263]
+special category (sort -370) (1):
+  Brewfest Riding Rams [11419]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Durotar - Horde - part 2 of 2, planned from level 12
+Guide "1-13 Durotar" in group "Zone Routes (Horde)": this part has 77 steps, 60 stops
+Written to guides/tbc/Durotar (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 12. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 38 steps kept, 26 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 15 tasks, 4,218 yd on foot; ends at level 12.3; 1 hearth
+  Warrior: 1 more tasks; their whole route comes to 4,524 yd; ends at level 12.3; 1 hearth
+  Shaman: 1 more tasks; their whole route comes to 4,502 yd; ends at level 12.3; 1 hearth
+  Mage: 5 more tasks; their whole route comes to 8,168 yd; ends at level 12.4; 1 hearth
+  Warlock: 2 more tasks; their whole route comes to 6,847 yd; ends at level 12.3; 1 hearth
+  Orc Hunter/Troll Hunter: 13 more tasks; their whole route comes to 13,868 yd; ends at level 12.3; 1 hearth
+  Orc Rogue/Troll Rogue: 1 more tasks; their whole route comes to 4,259 yd; ends at level 12.3; 1 hearth
+  Orc Rogue: 2 more tasks; their whole route comes to 4,280 yd; ends at level 12.3; 1 hearth
+  Orc Warlock: 6 more tasks; their whole route comes to 8,267 yd; ends at level 12.3; 1 hearth
+  Undead Priest: 1 more tasks; their whole route comes to 4,296 yd; ends at level 12.3; 1 hearth
+  Undead Warlock: 1 more tasks; their whole route comes to 6,847 yd; ends at level 12.3; 1 hearth
+  Tauren Hunter: 1 more tasks; their whole route comes to 4,740 yd; ends at level 12.3; 1 hearth
+  Tauren Druid: 1 more tasks; their whole route comes to 4,304 yd; ends at level 12.3; 1 hearth
+  Troll Priest: 1 more tasks; their whole route comes to 4,247 yd; ends at level 12.3; 1 hearth
+  BloodElf Hunter: 1 more tasks; their whole route comes to 4,229 yd; ends at level 12.3; 1 hearth
+  BloodElf Warlock: 1 more tasks; their whole route comes to 6,847 yd; ends at level 12.3; 1 hearth
+  Orc/Troll (quests that depend on other zones): 3 more tasks; their whole route comes to 6,092 yd; ends at level 12.3; 1 hearth
+  Shaman (quests that depend on other zones): 6 more tasks; their whole route comes to 7,655 yd; ends at level 12.3; 1 hearth
+  Orc Rogue/Troll Rogue (quests that depend on other zones): 2 more tasks; their whole route comes to 6,133 yd; ends at level 12.3; 1 hearth
+Hearthstone: set at Grimtak (Grimtak's inn); 2 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 12 for A Donation of Wool
+
+Quests in the guide (35)
+------------------------
+Start to finish here: 15 (4 for everyone, 5 Orc Hunter/Troll Hunter, 2 Orc Warlock, 2 Mage, 1 Warlock, 1 Orc Rogue)
+
+Picked up here, handed in elsewhere - these stay in the log (10):
+  Veteran Uzzek [1505, level 10, Warrior] -> The Barrens
+  Call of Fire [1522, level 10, Shaman] -> The Barrens
+  Touch of Weakness [5660, level 10, Undead Priest] -> Undercity
+  Heeding the Call [5927, level 10, Tauren Druid] -> Thunder Bluff
+  The Hunter's Path [6066, level 10, Tauren Hunter] -> Mulgore
+  Seek the Farstriders [9617, level 10, BloodElf Hunter] -> Eversong Woods
+  Return to Talionia [10788, level 10, BloodElf Warlock] -> Silvermoon City
+  Return to Carendin Halgar [10789, level 10, Undead Warlock] -> Undercity
+  Conscript of the Horde [840, level 12] -> The Barrens
+  Ak'Zeloth [809, level 13] -> The Barrens
+
+Hand-in step only shows once complete (3):
+  A Donation of Wool [7826, level 12] - needs Wool Cloth (1) (Hillsbrad Foothills)
+  A Donation of Wool [7833, level 12] - needs Wool Cloth (1) (Hillsbrad Foothills)
+  The Shattered Hand [1963, level 13, Orc Rogue/Troll Rogue] - needs Tazan's Satchel (1) (The Barrens)
+
+Need a quest this guide does not hand in - steps show only once that is done (6):
+  Call of Fire [1525, level 10, Shaman] - needs one of Call of Fire [1524]
+  Call of Fire [1526, level 10, Shaman] - needs one of Call of Fire [1525]
+  Call of Fire [1527, level 10, Shaman] - needs one of Call of Fire [1526] -> The Barrens
+  Doras the Wind Rider Master [6385, level 10, Orc/Troll] - needs one of Ride to Orgrimmar [6384]
+  Return to the Crossroads. [6386, level 10, Orc/Troll] - needs one of Doras the Wind Rider Master [6385] -> The Barrens
+  The Shattered Hand [1858, level 13, Orc Rogue/Troll Rogue] - needs one of The Shattered Hand [1963]
+
+Worth checking in game
+----------------------
+No objectives in the database (the hand-in step warns about it; add "objectives" for these to the zone file):
+  Hex of Weakness [5652, level 10, Troll Priest]
+2 quests have no experience figure in the database: their experience is estimated, and 2 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  Hex of Weakness [5652], Seek the Farstriders [9617]
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

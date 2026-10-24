@@ -1,0 +1,246 @@
+{
+  "zone": "Silithus",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "55-60 Silithus",
+  "file": "Silithus (Horde).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 55,
+      "end": 55.35,
+      "next": 58,
+      "guide": "55-56 Silithus: around Beetix Ficklespragg",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Beetix Ficklespragg",
+          "guide": "55-56 Silithus: around Beetix Ficklespragg",
+          "level": 55,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 58,
+      "end": 58.58,
+      "next": 61,
+      "guide": "58-59 Silithus: around Commander Mar\u0027alith",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Commander Mar\u0027alith",
+          "guide": "58-59 Silithus: around Commander Mar\u0027alith",
+          "level": 58,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 61,
+      "end": 61.06,
+      "guide": "61-62 Silithus: around Geologist Larksbane",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "around Geologist Larksbane",
+          "guide": "61-62 Silithus: around Geologist Larksbane",
+          "level": 61,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 1124,
+      "level": 55,
+      "req": 54,
+      "xp": 4050,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Moonglade"
+    },
+    {
+      "id": 8276,
+      "level": 55,
+      "req": 54,
+      "xp": 4050,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Durotar"
+    },
+    {
+      "id": 8277,
+      "level": 55,
+      "req": 54,
+      "xp": 8170,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8278,
+      "level": 57,
+      "req": 54,
+      "xp": 8730,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8282,
+      "level": 58,
+      "req": 54,
+      "xp": 9020,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8284,
+      "level": 58,
+      "req": 54,
+      "xp": 9020,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8285,
+      "level": 59,
+      "req": 54,
+      "xp": 6950,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9416,
+      "level": 60,
+      "req": 55,
+      "xp": 3180,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8279,
+      "level": 60,
+      "req": 54,
+      "xp": 11900,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8283,
+      "level": 59,
+      "req": 54,
+      "xp": 11600,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8287,
+      "level": 60,
+      "req": 54,
+      "xp": 9550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8304,
+      "level": 60,
+      "req": 58,
+      "xp": 9550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8310,
+      "level": 60,
+      "req": 58,
+      "xp": 9550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8318,
+      "level": 60,
+      "req": 57,
+      "xp": 9550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8323,
+      "level": 59,
+      "req": 54,
+      "xp": 9310,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9422,
+      "level": 60,
+      "req": 55,
+      "xp": 9550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8320,
+      "level": 60,
+      "req": 60,
+      "xp": 9550,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8321,
+      "level": 60,
+      "req": 60,
+      "xp": 9550,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8361,
+      "level": 60,
+      "req": 60,
+      "xp": 9550,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8800,
+      "level": 60,
+      "req": 60,
+      "xp": 955,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Moonglade": 1
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "zone": "Vale of Eternal Blossoms",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "90-90 Vale of Eternal Blossoms",
+  "file": "Vale of Eternal Blossoms (Alliance).lua",
+  "continent": -5840,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 90,
+      "end": 90,
+      "guide": "90-90 Vale of Eternal Blossoms",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "90-90 Vale of Eternal Blossoms",
+          "level": 90,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 31000,
+      "level": 90,
+      "req": 89,
+      "xp": 23600,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dread Wastes"
+    },
+    {
+      "id": 31390,
+      "level": 90,
+      "req": 89,
+      "xp": 23600,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 31512,
+      "level": 87,
+      "req": 87,
+      "xp": 64000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Kun-Lai Summit"
+    },
+    {
+      "id": 31656,
+      "level": 90,
+      "req": 89,
+      "xp": 23600,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Townlong Steppes"
+    },
+    {
+      "id": 31847,
+      "level": 90,
+      "req": 89,
+      "xp": 23600,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Kun-Lai Summit"
+    },
+    {
+      "id": 31886,
+      "level": 90,
+      "req": 89,
+      "xp": 23600,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dread Wastes"
+    },
+    {
+      "id": 31895,
+      "level": 90,
+      "req": 89,
+      "xp": 23600,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Townlong Steppes"
+    }
+  ],
+  "carriedTo": {
+    "Dread Wastes": 2,
+    "Townlong Steppes": 1,
+    "Valley of the Four Winds": 1
+  }
+}

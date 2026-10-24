@@ -1,0 +1,322 @@
+Zul'Drak - Horde - part 1 of 3, planned from level 74
+Guide "74-78 Zul'Drak" in group "Zone Routes (Horde)": this part has 177 steps, 164 stops
+Written to guides/mop/Zul'Drak (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: 58 PROBLEMS
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Orc Warrior)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Orc Hunter)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Orc Rogue)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Orc DeathKnight)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Orc Shaman)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Orc Mage)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Orc Warlock)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Orc Monk)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Undead Warrior)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Undead Hunter)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Undead Rogue)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Undead Priest)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Undead DeathKnight)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Undead Mage)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Undead Warlock)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Undead Monk)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Tauren Warrior)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Tauren Paladin)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Tauren Hunter)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Tauren Priest)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Tauren DeathKnight)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Tauren Shaman)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Tauren Monk)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Tauren Druid)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Troll Warrior)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Troll Hunter)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Troll Rogue)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Troll Priest)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Troll DeathKnight)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Troll Shaman)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Troll Mage)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Troll Warlock)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Troll Monk)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Troll Druid)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (BloodElf Warrior)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (BloodElf Paladin)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (BloodElf Hunter)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (BloodElf Rogue)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (BloodElf Priest)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (BloodElf DeathKnight)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (BloodElf Mage)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (BloodElf Warlock)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (BloodElf Monk)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Goblin Warrior)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Goblin Hunter)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Goblin Rogue)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Goblin Priest)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Goblin DeathKnight)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Goblin Shaman)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Goblin Mage)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Goblin Warlock)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Pandaren Warrior)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Pandaren Hunter)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Pandaren Rogue)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Pandaren Priest)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Pandaren Shaman)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Pandaren Mage)
+  ! an objective of The Blessing of Zim'Abwa comes before the quest is picked up (Pandaren Monk)
+Quest log: at most 6 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+18 pickups or hand-ins are within reach of a stop but planned for later.
+4 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 74. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 174 steps kept, 8 new ones slotted in, 1 moved because their prerequisites changed, 112 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 87 tasks, 17,186 yd on foot; ends at level 74.7; 1 ORDER PROBLEMS; at its hardest you are 1.5 levels below the mobs
+  everyone (quests that depend on other zones): 96 more tasks; their whole route comes to 34,400 yd; ends at level 74.7; 2 ORDER PROBLEMS; at its hardest you are 1.6 levels below the mobs
+Hearthstone: set at Fala Softhoof (Fala Softhoof's inn); 0 hearth steps in the guide.
+3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (63)
+------------------------
+Start to finish here: 30 (30 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Magical Kingdom of Dalaran [12796, level 74] -> Dalaran - (Dungeon/Raid)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Shifting Priorities [12763, level 75, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Grizzly Hills
+  Into the Breach! [12789, level 75] <- Dragonblight
+  The Champion's Call! [12974, level 77] <- The Underbelly - Sub zone of Dalaran (override wrong ID)
+
+Need a quest this guide does not hand in - steps show only once that is done (29):
+  You Can Run, But You Can't Hide [12629, level 75] - needs one of Near Miss [12637]
+  Near Miss [12637, level 75] - needs one of An Invitation, of Sorts... [12631]
+  Dressing Down [12648, level 75] - needs one of You Can Run, But You Can't Hide [12629]
+  Feedin' Da Goolz [12652, level 75, Orc/Undead/Tauren/Troll/BloodElf/Goblin] - needs one of You Can Run, But You Can't Hide [12629], Silver Lining [12643]
+  Infiltrating Voltarus [12661, level 75] - needs one of Dressing Down [12648], Suit Up! [12649]
+  So Far, So Bad [12669, level 75] - needs one of Infiltrating Voltarus [12661]
+  Hazardous Materials [12677, level 75] - needs one of So Far, So Bad [12669]
+  Disclosure [12710, level 75] - needs one of Fuel for the Fire [12690]
+  Precious Elemental Fluids [12510, level 76] - needs one of Strange Mojo [12507]
+  Mushroom Mixer [12514, level 76] - needs one of Precious Elemental Fluids [12510]
+  Too Much of a Good Thing [12516, level 76] - needs one of Mushroom Mixer [12514]
+  Gluttonous Lurkers [12527, level 76] - needs one of Precious Elemental Fluids [12510]
+  Death to the Necromagi [12552, level 76] - needs one of Throwing Down [12598]
+  Skimmer Spinnerets [12553, level 76] - needs one of Throwing Down [12598]
+  Malas the Corrupter [12554, level 76] - needs one of Death to the Necromagi [12552]
+  A Tangled Skein [12555, level 76] - needs one of Crashed Sprayer [12583]
+  The Drakkari Do Not Need Water Elementals! [12562, level 76] - needs one of Strange Mojo [12507]
+  Crashed Sprayer [12583, level 76] - needs one of Skimmer Spinnerets [12553]
+  Pure Evil [12584, level 76] - needs one of Death to the Necromagi [12552]
+  Cocooned! [12606, level 76] - needs one of Throwing Down [12598]
+  The Blessing of Zim'Torga [12615, level 77] - needs one of Too Much of a Good Thing [12516]
+  The Leaders at Jin'Alai [12622, level 77] - needs one of To the Witch Doctor [12623]
+  To the Witch Doctor [12623, level 77] - needs one of Too Much of a Good Thing [12516]
+  Breaking Through Jin'Alai [12627, level 77] - needs one of To the Witch Doctor [12623]
+  To Speak With Har'koa [12628, level 77] - needs one of Breaking Through Jin'Alai [12627]
+  Relics of the Snow Leopard Goddess [12635, level 77] - needs one of Breaking Through Jin'Alai [12627]
+  The Frozen Earth [12639, level 77] - needs one of The Leaders at Jin'Alai [12622]
+  Plundering Their Own [12650, level 77] - needs one of Relics of the Snow Leopard Goddess [12635]
+  Tails Up [13549, level 77] - needs one of Relics of the Snow Leopard Goddess [12635]
+
+Worth checking in game
+----------------------
+  Argent Crusade, We Are Leaving! [12504, level 76]: could not read how many Argent Soldier are needed from the quest text; assumed 8
+  Death to the Necromagi [12552, level 76]: could not read how many Hath'ar Necromagus are needed from the quest text; assumed 8
+
+Put off to a later part (34)
+----------------------------
+These need a higher level than this part ends at:
+  But First My Offspring [12632, level 77]: its mobs are level 77; this part gets you to about 74.7
+  Sealing the Rifts [12640, level 77]: its mobs are level 77; this part gets you to about 74.7
+  Spirit of Rhunok [12642, level 77]: follows But First My Offspring [12632]
+  My Prophet, My Enemy [12646, level 77]: its mobs are level 77; this part gets you to about 74.7
+  An End to the Suffering [12647, level 77]: its mobs are level 77; this part gets you to about 74.7
+  Back to Har'koa [12653, level 77]: follows An End to the Suffering [12647]
+  The Blessing of Zim'Rhuk [12655, level 77]: follows But First My Offspring [12632]
+  Scalps! [12659, level 77]: follows Sealing the Rifts [12640]
+  Bringing Down Heb'Jin [12662, level 77]: its mobs are level 77; this part gets you to about 74.7
+  I Sense a Disturbance [12665, level 77]: follows Back to Har'koa [12653]
+  Preparations for the Underworld [12666, level 77]: follows I Sense a Disturbance [12665]
+  Seek the Wind Serpent Goddess [12667, level 77]: follows Preparations for the Underworld [12666]
+  Foundation for Revenge [12668, level 77]: follows Setting the Stage [12672]
+  Setting the Stage [12672, level 77]: follows Seek the Wind Serpent Goddess [12667]
+  Hell Hath a Fury [12674, level 77]: follows Foundation for Revenge [12668]
+  One Last Thing [12675, level 77]: follows Hell Hath a Fury [12674]
+  Sabotage [12676, level 75]: its mobs are level 77; this part gets you to about 74.7
+  Blood of a Dead God [12684, level 77]: follows One Last Thing [12675]
+  You Reap What You Sow [12685, level 77]: its mobs are level 77; this part gets you to about 74.7
+  Wooly Justice [12707, level 77]: follows You Reap What You Sow [12685]
+  Enchanted Tiki Warriors [12708, level 77]: follows You Reap What You Sow [12685]
+  Hexed Caches [12709, level 77]: follows You Reap What You Sow [12685]
+  The Key of Warlord Zol'Maz [12712, level 77]: its mobs are level 77; this part gets you to about 74.7
+  Rampage [12721, level 77]: follows The Key of Warlord Zol'Maz [12712]
+  The Gods Have Spoken [12729, level 77]: its mobs are level 77; this part gets you to about 74.7
+  Convocation at Zol'Heb [12730, level 78]: its mobs are level 78; this part gets you to about 75.0
+  That's What Friends Are For... [12903, level 76]: its mobs are level 80; this part gets you to about 75.0
+  The Storm King's Vengeance [12919, level 76]: its mobs are level 80; this part gets you to about 75.0
+  The Amphitheater of Anguish: Yggdras! [12932, level 77]: needs level 75; this part gets you to about 75.0
+  The Amphitheater of Anguish: Magnataur! [12933, level 77]: needs level 75; this part gets you to about 75.0
+  The Amphitheater of Anguish: From Beyond! [12934, level 77]: needs level 75; this part gets you to about 75.0
+  The Amphitheater of Anguish: Tuskarrmageddon! [12935, level 77]: needs level 75; this part gets you to about 75.0
+  The Amphitheater of Anguish: Korrak the Bloodrager! [12936, level 77]: needs level 75; this part gets you to about 75.0
+  The Champion of Anguish [12948, level 78]: needs level 75; this part gets you to about 75.0
+
+Left out (54)
+-------------
+repeatable (21):
+  Troll Patrol [12501], Troll Patrol: High Standards [12502], Troll Patrol: Intestinal Fortitude [12509], Troll Patrol: Whatdya Want, a Medal? [12519], Troll Patrol: The Alchemist's Apprentice [12541], Troll Patrol [12563], Troll Patrol: Something for the Pain [12564], Blessing of Zim'Abwa [12567], Troll Patrol: Done to Death [12568], Troll Patrol: Creature Comforts [12585], Troll Patrol [12587], Troll Patrol: Can You Dig It? [12588], Troll Patrol: Throwing Down [12591], Troll Patrol: Couldn't Care Less [12594], The Alchemist's Apprentice [12601], The Alchemist's Apprentice [12602], Congratulations! [12604], Blessing of Zim'Torga [12618], Blessing of Zim'Rhuk [12656], Necklace Repair [13148], Gutretch [31934]
+not in the game (on Questie's quest blacklist) (13):
+  Incense for the Festival Scorchlings [11966], DEPRICATED>>Enemy of Our Enemy [12780], Candy Bucket [12940], Candy Bucket [12941], Tauros the Elder [13027], Gal'darah Must Pay [13096], Unfinished Business [13097], For Posterity [13098], Just Checkin' [13099], One of a Kind [13111], Sharing a Bountiful Feast [14065], A Natural Occurrence [25571], A Natural Occurrence [25773]
+helper for Pa'Troll (4):
+  Lab Work [12557], Something for the Pain [12597], Throwing Down [12598], Creature Comforts [12599]
+helper for Infiltrating Voltarus (2):
+  Reunited [12663], Dark Horizon [12664]
+dungeon quest (2):
+  Unfinished Business [29833], Just Checkin' [29836]
+cannot be taken together with An Invitation, of Sorts... [12631], which is in the guide (1):
+  Darkness Calling [12633]
+cannot be taken together with Near Miss [12637], which is in the guide (1):
+  Close Call [12638]
+cannot be taken together with You Can Run, But You Can't Hide [12629], which is in the guide (1):
+  Silver Lining [12643]
+cannot be taken together with Dressing Down [12648], which is in the guide (1):
+  Suit Up! [12649]
+helper for So Far, So Bad (1):
+  It Rolls Downhill [12673]
+helper for Hazardous Materials (1):
+  Zero Tolerance [12686]
+helper for Sabotage (1):
+  Fuel for the Fire [12690]
+cannot be taken together with Feedin' Da Goolz [12652], which is in the guide (1):
+  Betrayal [12713]
+cannot be taken together with First Things First [12792], which is in the guide (1):
+  Smoke on the Horizon [12793]
+cannot be taken together with The Amphitheater of Anguish: Yggdras! [12932], which is in the guide (1):
+  The Amphitheater of Anguish: Yggdras! [12954]
+special category (sort -369) (1):
+  Desecrate this Fire! [13449]
+special category (sort -22) (1):
+  Honor the Flame [13500]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Zul'Drak - Horde - part 2 of 3, planned from level 77
+Guide "74-78 Zul'Drak" in group "Zone Routes (Horde)": this part has 103 steps, 102 stops
+Written to guides/mop/Zul'Drak (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+2 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 77. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 95 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 18 tasks, 413 yd on foot; ends at level 77.2
+  everyone (quests that depend on other zones): 83 more tasks; their whole route comes to 25,054 yd; ends at level 77.2
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (32)
+------------------------
+Start to finish here: 6 (6 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (26):
+  Sabotage [12676, level 75] - needs one of Hazardous Materials [12677]
+  But First My Offspring [12632, level 77] - needs one of To Speak With Har'koa [12628]
+  Sealing the Rifts [12640, level 77] - needs one of The Leaders at Jin'Alai [12622]
+  Spirit of Rhunok [12642, level 77] - needs one of But First My Offspring [12632]
+  My Prophet, My Enemy [12646, level 77] - needs one of Spirit of Rhunok [12642]
+  An End to the Suffering [12647, level 77] - needs one of My Prophet, My Enemy [12646]
+  Back to Har'koa [12653, level 77] - needs one of An End to the Suffering [12647]
+  The Blessing of Zim'Rhuk [12655, level 77] - needs one of But First My Offspring [12632]
+  Scalps! [12659, level 77] - needs one of Sealing the Rifts [12640]
+  Bringing Down Heb'Jin [12662, level 77] - needs one of Sealing the Rifts [12640]
+  I Sense a Disturbance [12665, level 77] - needs one of Back to Har'koa [12653]
+  Preparations for the Underworld [12666, level 77] - needs one of I Sense a Disturbance [12665]
+  Seek the Wind Serpent Goddess [12667, level 77] - needs one of Preparations for the Underworld [12666]
+  Foundation for Revenge [12668, level 77] - needs one of Setting the Stage [12672]
+  Setting the Stage [12672, level 77] - needs one of Seek the Wind Serpent Goddess [12667]
+  Hell Hath a Fury [12674, level 77] - needs one of Foundation for Revenge [12668]
+  One Last Thing [12675, level 77] - needs one of Hell Hath a Fury [12674]
+  Blood of a Dead God [12684, level 77] - needs one of One Last Thing [12675]
+  You Reap What You Sow [12685, level 77] - needs one of Blood of a Dead God [12684]
+  Wooly Justice [12707, level 77] - needs one of You Reap What You Sow [12685]
+  Enchanted Tiki Warriors [12708, level 77] - needs one of You Reap What You Sow [12685]
+  Hexed Caches [12709, level 77] - needs one of You Reap What You Sow [12685]
+  The Key of Warlord Zol'Maz [12712, level 77] - needs one of You Reap What You Sow [12685]
+  Rampage [12721, level 77] - needs one of The Key of Warlord Zol'Maz [12712]
+  The Gods Have Spoken [12729, level 77] - needs one of Rampage [12721]
+  Convocation at Zol'Heb [12730, level 78] - needs one of The Gods Have Spoken [12729]
+
+Worth checking in game
+----------------------
+  But First My Offspring [12632, level 77]: could not read how many Cursed Offspring of Har'koa are needed from the quest text; assumed 8
+  I Sense a Disturbance [12665, level 77]: "Quetz'lun's fate revealed." is assumed to be line 2 in the quest log; check it
+  Sabotage [12676, level 75]: mixes a kill-credit objective with others; check that "Overlord Drakuru" really is line 2 in the quest log
+  Sabotage [12676, level 75]: "Learn Drakuru's secret" is assumed to be line 3 in the quest log; check it
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  That's What Friends Are For... [12903, level 76]: its mobs are level 80; this part gets you to about 77.3
+  The Storm King's Vengeance [12919, level 76]: its mobs are level 80; this part gets you to about 77.3
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Zul'Drak - Horde - part 3 of 3, planned from level 80
+Guide "74-78 Zul'Drak" in group "Zone Routes (Horde)": this part has 12 steps, 11 stops
+Written to guides/mop/Zul'Drak (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 80. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 11 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 11 tasks, 3,550 yd on foot; ends at level 80.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Worth checking in game
+----------------------
+  The Storm King's Vengeance [12919, level 76]: mixes a kill-credit objective with others; check that "Vargul Doombringer" really is line 4 in the quest log
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

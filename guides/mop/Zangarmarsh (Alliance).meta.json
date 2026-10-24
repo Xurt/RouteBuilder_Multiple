@@ -1,0 +1,430 @@
+{
+  "zone": "Zangarmarsh",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "62-65 Zangarmarsh",
+  "file": "Zangarmarsh (Alliance).lua",
+  "continent": -3521,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 62,
+      "end": 63.52,
+      "next": 66,
+      "guide": "62-64 Zangarmarsh: around Ysiel Windsinger",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Ysiel Windsinger",
+          "guide": "62-64 Zangarmarsh: around Ysiel Windsinger",
+          "level": 62,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 66,
+      "end": 66,
+      "guide": "66-67 Zangarmarsh",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "66-67 Zangarmarsh",
+          "level": 66,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 9701,
+      "level": 63,
+      "req": 61,
+      "xp": 10400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9702,
+      "level": 64,
+      "req": 61,
+      "xp": 10750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9708,
+      "level": 63,
+      "req": 61,
+      "xp": 10400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9709,
+      "level": 64,
+      "req": 61,
+      "xp": 13350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9716,
+      "level": 63,
+      "req": 61,
+      "xp": 10400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9718,
+      "level": 63,
+      "req": 61,
+      "xp": 7800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9720,
+      "level": 64,
+      "req": 61,
+      "xp": 13350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9728,
+      "level": 64,
+      "req": 61,
+      "xp": 13350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9730,
+      "level": 64,
+      "req": 58,
+      "xp": 13350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9732,
+      "level": 63,
+      "req": 60,
+      "xp": 10400,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Hellfire Peninsula"
+    },
+    {
+      "id": 9739,
+      "level": 63,
+      "req": 61,
+      "xp": 10400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9743,
+      "level": 64,
+      "req": 61,
+      "xp": 10750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9747,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9752,
+      "level": 63,
+      "req": 60,
+      "xp": 10400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9776,
+      "level": 64,
+      "req": 62,
+      "xp": 2650,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9777,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9778,
+      "level": 64,
+      "req": 61,
+      "xp": 1080,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9780,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9781,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9782,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9783,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9786,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9787,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9788,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9790,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9791,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9801,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9802,
+      "level": 63,
+      "req": 60,
+      "xp": 10400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9803,
+      "level": 62,
+      "req": 60,
+      "xp": 12600,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9817,
+      "level": 63,
+      "req": 58,
+      "xp": 12950,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9835,
+      "level": 64,
+      "req": 62,
+      "xp": 10750,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9839,
+      "level": 64,
+      "req": 62,
+      "xp": 13350,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9848,
+      "level": 64,
+      "req": 62,
+      "xp": 10750,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9894,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9895,
+      "level": 62,
+      "req": 60,
+      "xp": 12600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9896,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9901,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9911,
+      "level": 64,
+      "req": 62,
+      "xp": 10750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9912,
+      "level": 62,
+      "req": 61,
+      "xp": 1000,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Hellfire Peninsula"
+    },
+    {
+      "id": 10096,
+      "level": 62,
+      "req": 60,
+      "xp": 10050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10115,
+      "level": 64,
+      "req": 62,
+      "xp": 10750,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10116,
+      "level": 64,
+      "req": 58,
+      "xp": 10750,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    }
+  ],
+  "carriedTo": {
+    "Hellfire Peninsula": 1,
+    "Terokkar Forest": 1,
+    "Blade\u0027s Edge Mountains": 1
+  }
+}

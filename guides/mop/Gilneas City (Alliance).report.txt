@@ -1,0 +1,89 @@
+Gilneas City - Alliance
+Guide "1-3 Gilneas City" in group "Zone Routes (Alliance)": 83 steps, 67 stops
+Written to guides/mop/Gilneas City (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: 5 PROBLEMS
+  ! Something's Amiss (14091) is never picked up (Worgen DeathKnight)
+  ! All Hell Breaks Loose (14093) is never picked up (Worgen DeathKnight)
+  ! Salvage the Supplies (14094) is never picked up (Worgen DeathKnight)
+  ! Evacuate the Merchant Square (14098) is never picked up (Worgen DeathKnight)
+  ! Royal Orders (14099) is never picked up (Worgen DeathKnight)
+Quest log: at most 3 of 40 held at once (Worgen Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 84 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed, 10 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 962 yd on foot; ends at level 1.0
+  Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid: 15 more tasks; their whole route comes to 3,944 yd; ends at level 3.0; 1 hearth
+  Worgen Warrior: 7 more tasks; their whole route comes to 4,609 yd; ends at level 3.3; 1 hearth
+  Worgen Hunter: 1 more tasks; their whole route comes to 3,944 yd; ends at level 3.0; 1 hearth
+  Worgen Rogue: 1 more tasks; their whole route comes to 3,944 yd; ends at level 3.0; 1 hearth
+  Worgen Priest: 7 more tasks; their whole route comes to 4,847 yd; ends at level 3.3; 1 hearth
+  Worgen Mage: 7 more tasks; their whole route comes to 4,634 yd; ends at level 3.3; 1 hearth
+  Worgen Warlock: 1 more tasks; their whole route comes to 3,944 yd; ends at level 3.0; 1 hearth
+  Worgen Druid: 7 more tasks; their whole route comes to 4,831 yd; ends at level 3.3; 1 hearth
+  Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid (quests that depend on other zones): 35 more tasks; their whole route comes to 11,724 yd; ends at level 3.0; 1 hearth
+  Worgen Hunter (quests that depend on other zones): 1 more tasks; their whole route comes to 11,724 yd; ends at level 3.0; 1 hearth
+  Worgen Rogue (quests that depend on other zones): 1 more tasks; their whole route comes to 11,724 yd; ends at level 3.0; 1 hearth
+  Worgen Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 11,724 yd; ends at level 3.0; 1 hearth
+Hearthstone: set at Marie Allen (Marie Allen's inn); 1 hearth step in the guide.
+7 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+7 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (38)
+------------------------
+Start to finish here: 18 (0 for everyone, 6 Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid, 3 Worgen Warrior, 3 Worgen Mage, 3 Worgen Priest, 3 Worgen Druid)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Someone's Looking for You [14269, level 2, Worgen Rogue] -> Gilneas
+  Shady Associates [14273, level 2, Worgen Warlock] -> Gilneas
+  Someone's Keeping Track of You [14275, level 2, Worgen Hunter] -> Gilneas
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Safety in Numbers [14285, level 3, Worgen Rogue] <- Gilneas
+  Safety in Numbers [14287, level 3, Worgen Warlock] <- Gilneas
+  Safety in Numbers [14290, level 3, Worgen Hunter] <- Gilneas
+
+Need a quest this guide does not hand in - steps show only once that is done (14):
+  While You're At It [24930, level 3, Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid] - needs one of Safety in Numbers [14285], Safety in Numbers [14286], Safety in Numbers [14287], Safety in Numbers [14288], Safety in Numbers [14289], Safety in Numbers [14290], Safety in Numbers [14291]
+  Brothers In Arms [26129, level 3, Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid] - needs one of By the Skin of His Teeth [14154]
+  The Prison Rooftop [28850, level 3, Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid] - needs one of Old Divisions [14157]
+  By the Skin of His Teeth [14154, level 4, Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid] - needs one of The Prison Rooftop [28850]
+  Old Divisions [14157, level 4, Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid] - needs one of Safety in Numbers [14285], Safety in Numbers [14286], Safety in Numbers [14287], Safety in Numbers [14288], Safety in Numbers [14289], Safety in Numbers [14290], Safety in Numbers [14291]
+  The Rebel Lord's Arsenal [14159, level 4, Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid] - needs While You're At It [24930], Brothers In Arms [26129]
+  From the Shadows [14204, level 4, Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid] - needs one of The Rebel Lord's Arsenal [14159]
+  Message to Greymane [14214, level 4, Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid] - needs one of From the Shadows [14204]
+  Save Krennan Aranas [14293, level 4, Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid] - needs one of Message to Greymane [14214]
+  Time to Regroup [14294, level 4, Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid] - needs one of Save Krennan Aranas [14293]
+  Sacrifices [14212, level 5, Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid] - needs one of Time to Regroup [14294]
+  By Blood and Ash [14218, level 5, Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid] - needs one of Sacrifices [14212]
+  Never Surrender, Sometimes Retreat [14221, level 5, Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid] - needs one of By Blood and Ash [14218]
+  Last Stand [14222, level 5, Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid] - needs one of Never Surrender, Sometimes Retreat [14221]
+
+Worth checking in game
+----------------------
+  Evacuate the Merchant Square [14098, level 2, Worgen Warrior/Worgen Hunter/Worgen Rogue/Worgen Priest/Worgen Mage/Worgen Warlock/Worgen Druid]: objective "Merchant Square Door" is line 1 by the database, but RestedXP's guide has "Market Homes Evacuated (3)" there
+  Charge [14266, level 3, Worgen Warrior]: has a reputation or spell objective, which is not planned
+  Charge [14266, level 3, Worgen Warrior]: objective "Bloodfang Worgen slain (1)" is line 1 by the database, but RestedXP's guide has "Cast Charge (1)" there
+  Learning the Word [14279, level 2, Worgen Priest]: has a reputation or spell objective, which is not planned
+  Learning the Word [14279, level 2, Worgen Priest]: objective "Bloodfang Worgen slain (2)" is line 1 by the database, but RestedXP's guide has "Cast Flash Heal (2)" there
+  Frost Nova [14281, level 2, Worgen Mage]: has a reputation or spell objective, which is not planned
+  Frost Nova [14281, level 2, Worgen Mage]: objective "Bloodfang Worgen slain (1)" is line 1 by the database, but RestedXP's guide has "Cast Arcane Missiles (1)" there
+  Moonfire [14283, level 2, Worgen Druid]: has a reputation or spell objective, which is not planned
+  Moonfire [14283, level 2, Worgen Druid]: objective "Bloodfang Worgen slain (1)" is line 1 by the database, but RestedXP's guide has "Cast Rejuvenation (1)" there
+
+Left out (2)
+------------
+not in the game (on Questie's quest blacklist) (2):
+  Get That Merchant Out of Here! [14097], Man on the Inside [14156]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

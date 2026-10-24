@@ -1,0 +1,254 @@
+Dragonblight - Alliance - part 1 of 2, planned from level 72
+Guide "72-75 Dragonblight" in group "Zone Routes (Alliance)": this part has 367 steps, 323 stops
+Written to guides/mop/Dragonblight (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: 57 PROBLEMS
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Human Warrior)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Human Paladin)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Human Hunter)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Human Rogue)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Human Priest)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Human DeathKnight)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Human Mage)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Human Warlock)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Human Monk)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Dwarf Warrior)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Dwarf Paladin)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Dwarf Hunter)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Dwarf Rogue)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Dwarf Priest)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Dwarf DeathKnight)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Dwarf Shaman)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Dwarf Mage)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Dwarf Warlock)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Dwarf Monk)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (NightElf Warrior)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (NightElf Hunter)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (NightElf Rogue)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (NightElf Priest)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (NightElf DeathKnight)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (NightElf Mage)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (NightElf Monk)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (NightElf Druid)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Gnome Warrior)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Gnome Rogue)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Gnome Priest)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Gnome DeathKnight)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Gnome Mage)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Gnome Warlock)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Gnome Monk)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Draenei Warrior)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Draenei Paladin)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Draenei Hunter)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Draenei Priest)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Draenei DeathKnight)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Draenei Shaman)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Draenei Mage)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Draenei Monk)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Worgen Warrior)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Worgen Hunter)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Worgen Rogue)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Worgen Priest)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Worgen DeathKnight)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Worgen Mage)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Worgen Warlock)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Worgen Druid)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Pandaren Warrior)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Pandaren Hunter)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Pandaren Rogue)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Pandaren Priest)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Pandaren Shaman)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Pandaren Mage)
+  ! an objective of That Which Creates Can Also Destroy comes before the quest is picked up (Pandaren Monk)
+Quest log: at most 8 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+19 pickups or hand-ins are within reach of a stop but planned for later.
+8 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 72. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 344 steps kept, 21 new ones slotted in, 1 moved because their prerequisites changed, 3 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 141 tasks, 30,808 yd on foot; ends at level 73.2; 3 hearths; 1 ORDER PROBLEMS; at its hardest you are 2.6 levels below the mobs
+  Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage: 3 more tasks; their whole route comes to 30,846 yd; ends at level 73.2; 3 hearths; 1 ORDER PROBLEMS; at its hardest you are 2.6 levels below the mobs
+  everyone (quests that depend on other zones): 222 more tasks; their whole route comes to 56,333 yd; ends at level 73.2; 3 hearths; 1 ORDER PROBLEMS; at its hardest you are 2.8 levels below the mobs
+Hearthstone: set at Cielstrasza (Cielstrasza's inn); 4 hearth steps in the guide.
+19 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+6 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+8 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (127)
+-------------------------
+Start to finish here: 48 (36 for everyone, 11 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren, 1 Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Travel to Moa'ki Harbor [12117, level 72] <- Borean Tundra
+  Travel to Moa'ki Harbor [12118, level 72] <- Howling Fjord
+  The Lost Courier [12157, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Borean Tundra
+  High Commander Halford Wyrmbane [12298, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Howling Fjord
+
+Need a quest this guide does not hand in - steps show only once that is done (75):
+  Let Nothing Go To Waste [11958, level 72] - needs one of Travel to Moa'ki Harbor [12117]
+  Rifle the Bodies [12000, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of To Stars' Rest! [12440]
+  Tua'kea's Crab Traps [12009, level 72] - needs one of Slay Loguhn [11959]
+  Signs of Big Watery Trouble [12011, level 72] - needs one of Slay Loguhn [11959]
+  The Bait [12016, level 72] - needs one of Signs of Big Watery Trouble [12011]
+  Spiritual Insight [12028, level 72] - needs one of Slay Loguhn [11959]
+  Elder Mana'loa [12030, level 72] - needs one of Spiritual Insight [12028]
+  Freedom for the Lingering [12031, level 72] - needs one of Elder Mana'loa [12030]
+  Conversing With the Depths [12032, level 72] - needs one of Freedom for the Lingering [12031]
+  A Strange Device [12055, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Rifle the Bodies [12000]
+  Projections and Plans [12060, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of A Strange Device [12055]
+  The Focus on the Beach [12065, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Projections and Plans [12060]
+  Atop the Woodlands [12083, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Focus on the Beach [12065]
+  Strengthen the Ancients [12092, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Focus on the Beach [12065]
+  Search Indu'le Village [12098, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Atop the Woodlands [12083]
+  The End of the Line [12107, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Search Indu'le Village [12098]
+  Gaining an Audience [12119, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The End of the Line [12107]
+  The High Cultist [12169, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Favor of Zangus [12168]
+  Flight of the Wintergarde Defender [12237, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Naxxramas and the Fall of Wintergarde [12235]
+  Return to the High Commander [12251, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Flight of the Wintergarde Defender [12237]
+  Rescue from Town Square [12253, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Return to the High Commander [12251]
+  The Fate of the Dead [12258, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Return to the High Commander [12251]
+  Not In Our Mine [12269, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Demo-gnome [12275]
+  The Bleeding Ore [12272, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Demo-gnome [12275]
+  The Demo-gnome [12275, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Return to the High Commander [12251]
+  The Search for Slinkin [12276, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Demo-gnome [12275]
+  Leave Nothing to Chance [12277, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Search for Slinkin [12276]
+  Understanding the Scourge War Machine [12281, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs The Bleeding Ore [12272], Leave Nothing to Chance [12277]
+  Imprints on the Past [12282, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Return to the High Commander [12251]
+  Orik Trueheart and the Forgotten Shore [12287, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Imprints on the Past [12282]
+  The Murkweed Elixir [12290, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Orik Trueheart and the Forgotten Shore [12287]
+  The Forgotten Tale [12291, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Murkweed Elixir [12290]
+  The Truth Shall Set Us Free [12301, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Forgotten Tale [12291]
+  Parting Thoughts [12305, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Truth Shall Set Us Free [12301]
+  Find Durkon! [12309, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Rescue from Town Square [12253]
+  The Noble's Crypt [12311, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Find Durkon! [12309]
+  To Stars' Rest! [12440, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of A Disturbance In The West [12439]
+  Speak with your Ambassador [12766, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Gaining an Audience [12119]
+  Slay Loguhn [11959, level 73] - needs one of Let Nothing Go To Waste [11958]
+  Prevent the Accord [12004, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Rifle the Bodies [12000]
+  Meat on the Hook [12017, level 73] - needs one of The Bait [12016]
+  Secrets of the Scourge [12312, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Find Durkon! [12309]
+  Mystery of the Tome [12319, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Secrets of the Scourge [12312]
+  Understanding the Language of Death [12320, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Mystery of the Tome [12319]
+  A Righteous Sermon [12321, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Understanding the Language of Death [12320]
+  Into Hostile Territory [12325, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Not In Our Mine [12269], Understanding the Scourge War Machine [12281], A Righteous Sermon [12321]
+  Steamtank Surprise [12326, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Into Hostile Territory [12325]
+  Scattered To The Wind [12455, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Steamtank Surprise [12326]
+  The Chain Gun And You [12457, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Scattered To The Wind [12455]
+  Breaking Off A Piece [12462, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Steamtank Surprise [12326]
+  Plunderbeard Must Be Found! [12463, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Chain Gun And You [12457]
+  Plunderbeard's Journal [12465, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Plunderbeard Must Be Found! [12463]
+  Chasing Icestorm: The 7th Legion Front [12466, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Plunderbeard's Journal [12465]
+  Chasing Icestorm: Thel'zan's Phylactery [12467, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Chasing Icestorm: The 7th Legion Front [12466]
+  Finality [12472, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Chasing Icestorm: Thel'zan's Phylactery [12467]
+  An End And A Beginning [12473, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Finality [12472]
+  To Fordragon Hold! [12474, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of An End And A Beginning [12473]
+  What Secrets Men Hide [12475, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Parting Thoughts [12305]
+  The Return of the Crusade? [12476, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Parting Thoughts [12305]
+  The Path of Redemption [12477, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Parting Thoughts [12305]
+  Frostmourne Cavern [12478, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of What Secrets Men Hide [12475]
+  Heated Battle [12416, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Report to the Ruby Dragonshrine [12460]
+  Return to the Earth [12417, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Heated Battle [12416]
+  Report to Lord Devrestrasz [12435, level 74] - needs one of Informing the Queen [12123], Informing the Queen [12124]
+  Wanted: Kreug Oathbreaker [12438, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Return to the High Commander [12251]
+  Wanted: High Shaman Bloodpaw [12441, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Return to the High Commander [12251]
+  Wanted: Onslaught Commander Iustus [12442, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Return to the High Commander [12251]
+  Report to the Ruby Dragonshrine [12460, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Speak with your Ambassador [12766]
+  Audience With The Dragon Queen [12495, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of To Fordragon Hold! [12474]
+  Galakrond and the Scourge [12497, level 74] - needs one of Audience With The Dragon Queen [12495], Audience With The Dragon Queen [12496]
+  On Ruby Wings [12498, level 74] - needs one of Galakrond and the Scourge [12497]
+  Return To Angrathar [12499, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of On Ruby Wings [12498]
+  Informing the Queen [12123, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Steward of Wyrmrest Temple [12768]
+  Through Fields of Flame [12418, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Return to the Earth [12417]
+  The Steward of Wyrmrest Temple [12768, level 75, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Through Fields of Flame [12418]
+
+Worth checking in game
+----------------------
+  Harp on This! [12052, level 74]: mixes a kill-credit objective with others; check that "Coldwind Waste Huntress" really is line 2 in the quest log
+  The End of the Line [12107, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: could not read how many The End of the Line Area Trigger Kill Credit Bunny are needed from the quest text; assumed 8
+  No Place to Run [12261, level 74]: "Destructive Ward (1)" has no place in the data; taken to be done where the quest is given
+  No One to Save You [12262, level 74]: mixes a kill-credit objective with others; check that "Smoldering Skeleton" really is line 2 in the quest log
+  Return to the Earth [12417, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: could not read how many Ruby Keeper are needed from the quest text; assumed 8
+  That Which Creates Can Also Destroy [12459, level 74]: could not read how many Reanimated Frost Wyrm are needed from the quest text; assumed 8
+  Breaking Off A Piece [12462, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Tattered Abomination" really is line 3 in the quest log
+
+Put off to a later part (5)
+---------------------------
+These need a higher level than this part ends at:
+  The Hills Have Us [12511, level 73]: needs level 73; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 73.2
+  The Call Of The Crusade [12542, level 74]: needs level 74; this part gets you to about 73.2
+  The Cleansing Of Jintha'kalar [12545, level 74]: needs level 74; this part gets you to about 73.2
+  Into the Breach! [12789, level 75]: needs level 74; this part gets you to about 73.2
+  The Magical Kingdom of Dalaran [12794, level 74]: needs level 74; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 73.2
+
+Left out (41)
+-------------
+not in the game (on Questie's quest blacklist) (24):
+  Incense for the Summer Scorchlings [11964], Rustling Some Feathers [12051], Morthie the Elder [13014], Thoim the Elder [13019], Skywarden the Elder [13031], Death to the Traitor King [13167], Don't Forget the Eggs! [13182], All Things in Good Time [13190], Funky Fungi [13204], The Key to the Focusing Iris [13372], Judgment at the Eye of Eternity [13384], Candy Bucket [13438], Candy Bucket [13439], Candy Bucket [13456], Candy Bucket [13459], Sharing a Bountiful Feast [14064], Respite for a Tormented Soul [24872], Respite for a Tormented Soul [24880], A Natural Occurrence [25571], A Natural Occurrence [25773], Planning for the Future [26178], The Faceless Ones [29810], To Northrend [78166], To Northrend [78223]
+above this zone's range of 72-76 (5):
+  The Touch of an Aspect [13077], Dahlia's Tears [13078], The Boon of Alexstrasza [13079], Mystery of the Infinite, Redux [13343], The Heroic Key to the Focusing Iris [13375]
+dungeon quest (5):
+  The Faceless Ones [13187], Heroic Judgment at the Eye of Eternity [13385], Trouble at Wyrmrest [26012], Assault on the Sanctum [26013], The Twilight Destroyer [26034]
+repeatable (3):
+  Planning for the Future [11960], Defending Wyrmrest Temple [12372], Okrut Dragonwaste [31933]
+cannot be taken together with Of Traitors and Treason [12171], which is in the guide (1):
+  Naxxramas and the Fall of Wintergarde [12235]
+cannot be taken together with Your Presence is Required at Stars' Rest [11995], which is in the guide (1):
+  A Disturbance In The West [12439]
+special category (sort -369) (1):
+  Desecrate this Fire! [13451]
+special category (sort -22) (1):
+  Honor the Flame [13487]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Dragonblight - Alliance - part 2 of 2, planned from level 76
+Guide "72-75 Dragonblight" in group "Zone Routes (Alliance)": this part has 7 steps, 6 stops
+Written to guides/mop/Dragonblight (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 76. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 8 tasks, 5,584 yd on foot; ends at level 76.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (5)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  The Hills Have Us [12511, level 73, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Grizzly Hills
+  The Magical Kingdom of Dalaran [12794, level 74, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Dalaran - (Dungeon/Raid)
+  Into the Breach! [12789, level 75] -> Zul'Drak
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

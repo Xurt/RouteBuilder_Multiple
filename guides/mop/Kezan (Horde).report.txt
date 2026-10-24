@@ -1,0 +1,170 @@
+Kezan - Horde - part 1 of 2, planned from level 1
+Guide "1-3 Kezan" in group "Zone Routes (Horde)": this part has 43 steps, 33 stops
+Written to guides/mop/Kezan (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: 2 PROBLEMS
+  ! Good Help is Hard to Find (14069) is never picked up (Goblin DeathKnight)
+  ! Trouble in the Mines (14075) is never picked up (Goblin DeathKnight)
+Quest log: at most 2 of 40 held at once (Goblin Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 34 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed, 71 no longer in the guide. Build with --fresh to plan from scratch.
+  Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock: 6 tasks, 1,138 yd on foot; ends at level 1.2
+  Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock (quests that depend on other zones): 28 more tasks; their whole route comes to 9,463 yd; ends at level 1.2; at its hardest you are 1.8 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+8 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+
+Quests in the guide (11)
+------------------------
+Start to finish here: 2 (0 for everyone, 2 Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock)
+
+Hand-in step only shows once complete (1):
+  Trouble in the Mines [14075, level 1, Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock] - needs Tunneling Worm slain (6) (Kaja'mine N)
+
+Need a quest this guide does not hand in - steps show only once that is done (8):
+  Kaja'Cola [25473, level 2, Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock] - needs Trouble in the Mines [14075]
+  Do it Yourself [14070, level 3, Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock] - needs one of Rolling with my Homies [14071]
+  Rolling with my Homies [14071, level 3, Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock] - needs one of Megs in Marketing [28349]
+  The New You [14109, level 3, Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock] - needs one of Off to the Bank [26712]
+  The Replacements [24488, level 3, Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock] - needs one of Report for Tryouts [24567]
+  Report for Tryouts [24567, level 3, Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock] - needs one of Rolling with my Homies [14071]
+  Off to the Bank [26711, level 3, Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock] - needs one of Rolling with my Homies [14071]
+  Megs in Marketing [28349, level 3, Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock] - needs one of Kaja'Cola [25473]
+
+Worth checking in game
+----------------------
+  Good Help is Hard to Find [14069, level 1, Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock]: objective "Defiant Troll (8)" is line 1 by the database, but RestedXP's guide has "8/8 Attitudes Adjusted" there
+  Rolling with my Homies [14071, level 3, Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock]: ""Rolling with my Homies" Keys to the Hot Rod Used Kill Credit (1)" has no place in the data; taken to be done where the quest is given
+
+Put off to a later part (20)
+----------------------------
+These need a higher level than this part ends at:
+  Steady Shot [14007, level 3]: needs level 2; this part gets Goblin Hunter characters to about 1.8
+  Frost Nova [14008, level 3]: needs level 2; this part gets Goblin Mage characters to about 1.6
+  Learning the Word [14009, level 3]: needs level 2; this part gets Goblin Priest characters to about 1.7
+  Eviscerate [14010, level 3]: needs level 2; this part gets Goblin Rogue characters to about 1.6
+  Primal Strike [14011, level 3]: needs level 2; this part gets Goblin Shaman characters to about 1.6
+  Corruption [14012, level 3]: needs level 2; this part gets Goblin Warlock characters to about 1.6
+  Charge [14013, level 3]: needs level 2; this part gets Orc Warrior/Goblin Warrior characters to about 1.4
+  Life of the Party [14113, level 3]: follows Steady Shot [14007]
+  Pirate Party Crashers [14115, level 4]: follows Life of the Party [14113]
+  The Uninvited Guest [14116, level 4]: follows Pirate Party Crashers [14115]
+  A Bazillion Macaroons?! [14120, level 4]: follows The Uninvited Guest [14116]
+  Robbing Hoods [14121, level 4]: follows A Bazillion Macaroons?! [14120]
+  The Great Bank Heist [14122, level 4]: follows A Bazillion Macaroons?! [14120]
+  Waltz Right In [14123, level 4]: follows A Bazillion Macaroons?! [14120]
+  Liberate the Kaja'mite [14124, level 4]: follows A Bazillion Macaroons?! [14120]
+  447 [14125, level 5]: is a level 5 quest; this part gets Goblin Hunter characters to about 1.8
+  Life Savings [14126, level 5]: follows 447 [14125]
+  Necessary Roughness [24502, level 3]: its mobs are level 5; this part gets Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock characters to about 1.2
+  Give Sassy the News [24520, level 3]: follows Fourth and Goal [28414]
+  Fourth and Goal [28414, level 3]: follows Necessary Roughness [24502]
+
+Left out (8)
+------------
+not in the game (on Questie's quest blacklist) (2):
+  Fourth and Goal [24503], Your First Totem! [25902]
+repeatable (2):
+  The Keys to the Hot Rod [28606], The Keys to the Hot Rod [28607]
+cannot be taken together with The New You [14109], which is in the guide (1):
+  The New You [14110]
+cannot be taken together with Life of the Party [14113], which is in the guide (1):
+  Life of the Party [14153]
+handed in here, but the database does not say where it starts (1):
+  Report for Tryouts [24521]
+cannot be taken together with Off to the Bank [26711], which is in the guide (1):
+  Off to the Bank [26712]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Kezan - Horde - part 2 of 2, planned from level 4
+Guide "1-3 Kezan" in group "Zone Routes (Horde)": this part has 65 steps, 64 stops
+Written to guides/mop/Kezan (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 4. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 63 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  Orc Warrior/Goblin Warrior: 3 tasks, 49 yd on foot; ends at level 4.1
+  Goblin Hunter: 3 more tasks; their whole route comes to 36 yd; ends at level 4.1
+  Goblin Rogue: 3 more tasks; their whole route comes to 335 yd; ends at level 4.1
+  Goblin Priest: 3 more tasks; their whole route comes to 356 yd; ends at level 4.1
+  Goblin Shaman: 3 more tasks; their whole route comes to 186 yd; ends at level 4.1
+  Goblin Mage: 3 more tasks; their whole route comes to 365 yd; ends at level 4.1
+  Goblin Warlock: 3 more tasks; their whole route comes to 443 yd; ends at level 4.1
+  Goblin (quests that depend on other zones): 40 more tasks; their whole route comes to 12,374 yd; ends at level 4.0
+  Goblin Hunter (quests that depend on other zones): 3 more tasks; their whole route comes to 12,909 yd; ends at level 4.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (21)
+------------------------
+Start to finish here: 7 (0 for everyone, 1 Goblin Hunter, 1 Goblin Mage, 1 Goblin Priest, 1 Goblin Rogue, 1 Goblin Shaman, 1 Goblin Warlock, 1 Orc Warrior/Goblin Warrior)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Trouble in the Mines [14075, level 1, Goblin] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (13):
+  Life of the Party [14113, level 3, Goblin Hunter] - needs The New You [14109], Give Sassy the News [24520]
+  Necessary Roughness [24502, level 3, Goblin] - needs one of The Replacements [24488]
+  Give Sassy the News [24520, level 3, Goblin] - needs one of Fourth and Goal [28414]
+  Fourth and Goal [28414, level 3, Goblin] - needs one of Necessary Roughness [24502]
+  Pirate Party Crashers [14115, level 4, Goblin] - needs one of Life of the Party [14113], Life of the Party [14153]
+  The Uninvited Guest [14116, level 4, Goblin] - needs one of Pirate Party Crashers [14115]
+  A Bazillion Macaroons?! [14120, level 4, Goblin] - needs one of The Uninvited Guest [14116]
+  Robbing Hoods [14121, level 4, Goblin] - needs one of A Bazillion Macaroons?! [14120]
+  The Great Bank Heist [14122, level 4, Goblin] - needs one of A Bazillion Macaroons?! [14120]
+  Waltz Right In [14123, level 4, Goblin] - needs one of A Bazillion Macaroons?! [14120]
+  Liberate the Kaja'mite [14124, level 4, Goblin] - needs one of A Bazillion Macaroons?! [14120]
+  447 [14125, level 5, Goblin] - needs Robbing Hoods [14121], The Great Bank Heist [14122], Waltz Right In [14123], Liberate the Kaja'mite [14124]
+  Life Savings [14126, level 5, Goblin] - needs one of 447 [14125]
+
+Worth checking in game
+----------------------
+  Steady Shot [14007, level 3, Goblin Hunter]: has a reputation or spell objective, which is not planned
+  Steady Shot [14007, level 3, Goblin Hunter]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Steady Shot (x3)" there
+  Frost Nova [14008, level 3, Goblin Mage]: has a reputation or spell objective, which is not planned
+  Frost Nova [14008, level 3, Goblin Mage]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Arcane Missiles (x3)" there
+  Learning the Word [14009, level 3, Goblin Priest]: has a reputation or spell objective, which is not planned
+  Learning the Word [14009, level 3, Goblin Priest]: objective "Training Dummy slain (5)" is line 1 by the database, but RestedXP's guide has "Cast Flash Heal (x5)" there
+  Eviscerate [14010, level 3, Goblin Rogue]: has a reputation or spell objective, which is not planned
+  Eviscerate [14010, level 3, Goblin Rogue]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Eviscerate (x3)" there
+  Primal Strike [14011, level 3, Goblin Shaman]: has a reputation or spell objective, which is not planned
+  Primal Strike [14011, level 3, Goblin Shaman]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Primal Strike (x3)" there
+  Corruption [14012, level 3, Goblin Warlock]: has a reputation or spell objective, which is not planned
+  Corruption [14012, level 3, Goblin Warlock]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Immolate (x3)" there
+  Charge [14013, level 3, Orc Warrior/Goblin Warrior]: has a reputation or spell objective, which is not planned
+  Charge [14013, level 3, Orc Warrior/Goblin Warrior]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Charge (x3)" there
+  447 [14125, level 5, Goblin]: objective "Gasbot" moved from line 1 to line 4 to match RestedXP's guide
+  447 [14125, level 5, Goblin]: objective "Flammable Bed" moved from line 2 to line 3 to match RestedXP's guide
+  447 [14125, level 5, Goblin]: objective "Leaky Stove" moved from line 3 to line 2 to match RestedXP's guide
+  447 [14125, level 5, Goblin]: objective "Defective Generator" moved from line 4 to line 1 to match RestedXP's guide
+  Fourth and Goal [28414, level 3, Goblin]: objective "Fourth And Goal Target" is line 1 by the database, but RestedXP's guide has "1/1 Footbomb Kicked Through Smokestacks" there
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

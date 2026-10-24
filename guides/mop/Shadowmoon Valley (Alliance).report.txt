@@ -1,0 +1,173 @@
+Shadowmoon Valley - Alliance - part 1 of 2, planned from level 69
+Guide "69-70 Shadowmoon Valley" in group "Zone Routes (Alliance)": this part has 170 steps, 163 stops
+Written to guides/mop/Shadowmoon Valley (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 8 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 69. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 207 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 115 tasks, 16,380 yd on foot; ends at level 69.7; 2 hearths
+  everyone (quests that depend on other zones): 92 more tasks; their whole route comes to 29,706 yd; ends at level 69.7; 4 hearths; at its hardest you are 1.3 levels below the mobs
+Hearthstone: set at Daggle Ironshaper (Daggle Ironshaper's inn); 3 hearth steps in the guide.
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (76)
+------------------------
+Start to finish here: 36 (21 for everyone, 15 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  The Hermit Smith [10662, level 69, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Terokkar Forest
+  Of Thistleheads and Eggs... [10547, level 70] -> Shattrath City
+  Battle of the Crimson Watch [10781, level 70] -> Shattrath City
+
+Hand-in step only shows once complete (1):
+  The Cipher of Damnation - Ar'tor's Charge [10540, level 70] - needs Second Fragment of the Cipher of Damnation (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (6):
+  Building a Better Gryphon [11043, level 67, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Blade's Edge Mountains
+  Zorus the Judicator [11045, level 67, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Shattrath City
+  The Bundle of Bloodthistle [10550, level 70] <- Shattrath City
+  A Mysterious Portent [10706, level 70] <- The Arcatraz - Dungeon - Containment Core
+  The Secret Compromised [10944, level 70] <- Serpentshrine Cavern - (Dungeon/Raid)
+  Entry Into the Black Temple [10949, level 70] <- Shattrath City
+
+Need a quest this guide does not hand in - steps show only once that is done (30):
+  Besieged! [10562, level 69, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Visions of Destruction [11044]
+  To Legion Hold [10563, level 69, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Besieged! [10562]
+  Blast the Infernals! [10564, level 69, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Setting Up the Bomb [10572]
+  Setting Up the Bomb [10572, level 69, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of To Legion Hold [10563]
+  The Deathforge [10573, level 69, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Blast the Infernals! [10564]
+  Minions of the Shadow Council [10582, level 69, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Deathforge [10573]
+  The Fate of Flanis [10583, level 69, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Minions of the Shadow Council [10582]
+  The Summoning Chamber [10585, level 69, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Minions of the Shadow Council [10582]
+  Bring Down the Warbringer! [10586, level 69, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs The Fate of Flanis [10583], The Summoning Chamber [10585]
+  Gaining Access [10589, level 69, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Bring Down the Warbringer! [10586]
+  The Art of Fel Reaver Maintenance [10606, level 69, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Invasion Point: Cataclysm [10766]
+  The Fel and the Furious [10612, level 69, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Art of Fel Reaver Maintenance [10606]
+  A Ghost in the Machine [10642, level 69, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Zorus the Judicator [11045]
+  Harbingers of Shadowmoon [10643, level 69, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of A Ghost in the Machine [10642]
+  Invasion Point: Cataclysm [10766, level 69, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Gaining Access [10589]
+  The Cipher of Damnation - The Second Fragment Recovered [10541, level 70] - needs one of The Cipher of Damnation - Ar'tor's Charge [10540]
+  To Catch A Thistlehead [10570, level 70] - needs one of The Bundle of Bloodthistle [10550]
+  The Shadowmoon Shuffle [10576, level 70] - needs one of To Catch A Thistlehead [10570]
+  What Illidan Wants, Illidan Gets... [10577, level 70] - needs one of The Shadowmoon Shuffle [10576]
+  The Cipher of Damnation - Borak's Charge [10578, level 70] - needs one of What Illidan Wants, Illidan Gets... [10577]
+  The Cipher of Damnation - The Third Fragment Recovered [10579, level 70] - needs one of The Cipher of Damnation - Borak's Charge [10578]
+  Proof of Allegiance [10622, level 70] - needs one of The Warden's Cage [10575], The Warden's Cage [10686]
+  Akama [10628, level 70] - needs one of Proof of Allegiance [10622]
+  Divination: Gorefiend's Armor [10634, level 70] - needs one of Teron Gorefiend - Lore and Legend [10633], Teron Gorefiend - Lore and Legend [10644]
+  Divination: Gorefiend's Cloak [10635, level 70] - needs one of Teron Gorefiend - Lore and Legend [10633], Teron Gorefiend - Lore and Legend [10644]
+  Divination: Gorefiend's Truncheon [10636, level 70] - needs one of Teron Gorefiend - Lore and Legend [10633], Teron Gorefiend - Lore and Legend [10644]
+  Teron Gorefiend - Lore and Legend [10644, level 70, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Harbingers of Shadowmoon [10643]
+  The Ata'mal Terrace [10707, level 70] - needs one of A Mysterious Portent [10706]
+  News of Victory [10744, level 70, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Fel and the Furious [10612]
+  Akama's Promise [11052, level 70] - needs one of The Ata'mal Terrace [10707] -> Shattrath City
+
+Worth checking in game
+----------------------
+  Enraged Spirits of Fire and Earth [10458, level 70]: could not read how many Enraged Earth Spirit are needed from the quest text; assumed 8
+  Enraged Spirits of Fire and Earth [10458, level 70]: could not read how many Enraged Fire Spirit are needed from the quest text; assumed 8
+  Enraged Spirits of Water [10480, level 70]: could not read how many Enraged Water Spirit are needed from the quest text; assumed 8
+  Enraged Spirits of Air [10481, level 70]: could not read how many Enraged Air Spirit are needed from the quest text; assumed 8
+
+Put off to a later part (16)
+----------------------------
+These need a higher level than this part ends at:
+  The Cipher of Damnation [10588, level 70]: its mobs are level 72; this part gets you to about 69.7
+  Teron Gorefiend, I am... [10645, level 70]: its mobs are level 72; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 69.7
+  Kindness [10804, level 70]: needs level 70; this part gets you to about 69.7
+  Seek Out Neltharaku [10811, level 70]: needs level 70; this part gets you to about 69.7
+  Neltharaku's Tale [10814, level 70]: needs level 70; this part gets you to about 69.7
+  Infiltrating Dragonmaw Fortress [10836, level 70]: needs level 70; this part gets you to about 69.7
+  To Netherwing Ledge! [10837, level 70]: needs level 70; this part gets you to about 69.7
+  The Force of Neltharaku [10854, level 70]: needs level 70; this part gets you to about 69.7
+  Karynaku [10858, level 70]: needs level 70; this part gets you to about 69.7
+  Zuluhed the Whacked [10866, level 70]: needs level 70; this part gets Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 69.8
+  Ally of the Netherwing [10870, level 70]: needs level 70; this part gets Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 69.8
+  Ally of the Netherwing [10871, level 70]: needs level 70; this part gets Human characters to about 69.8
+  Zuluhed the Whacked [10872, level 70]: needs level 70; this part gets Human characters to about 69.8
+  The Hostage Soul [10948, level 70]: needs level 70; this part gets you to about 69.7
+  Seeker of Truth [11082, level 70]: needs level 70; this part gets you to about 69.7
+  A Distraction for Akama [13429, level 70]: needs level 70; this part gets you to about 69.7
+
+Left out (91)
+-------------
+needs reputation (50):
+  Tablets of Baa'ri [10568], Oronu the Elder [10571], The Ashtongue Corruptors [10574], The Warden's Cage [10575], Karabor Training Grounds [10587], The Ashtongue Tribe [10619], A Necessary Distraction [10637], Altruis [10640], Return to the Aldor [10650], Varedis Must Be Stopped [10651], Tablets of Baa'ri [10683], Oronu the Elder [10684], The Ashtongue Corruptors [10685], The Warden's Cage [10686], Karabor Training Grounds [10687], A Necessary Distraction [10688], Altruis [10689], Return to the Scryers [10691], Varedis Must Be Stopped [10692], The Ashtongue Broken [10807], Reclaiming Holy Grounds [10816], The Great Retribution [10817], Sunfury Signets [10824], Marks of Sargeras [10826], Your Friend On The Inside [11019], A Job Unfinished... [11041], Visions of Destruction [11044], The Great Netherwing Egg Hunt [11049], Rise, Overseer! [11053], Overseeing and You: Making the Right Choices [11054], Earning Your Wings... [11063], Dragonmaw Race: The Ballad of Oldie McOld [11064], Dragonmaw Race: Trope the Filth-Belcher [11067], Dragonmaw Race: Corlok the Vet [11068], Dragonmaw Race: Wing Commander Ichman [11069], Dragonmaw Race: Wing Commander Mulverick [11070], Dragonmaw Race: Captain Skyshatter [11071], The Netherwing Mines [11075], The Great Murkblood Revolt [11081], Crazed and Confused [11083], ... 10 more
+repeatable (18):
+  Single Sunfury Signet [10822], More Sunfury Signets [10823], More Marks of Sargeras [10827], Single Mark of Sargeras [10828], Netherwing Crystals [11015], Nethermine Flayer Hide [11016], Netherdust Pollen [11017], Nethercite Ore [11018], A Slow Death [11020], The Not-So-Friendly Skies... [11035], Accepting All Eggs [11050], The Booterang: A Cure For The Common Worthless Peon [11055], Picking Up The Pieces... [11076], Dragons are the Least of Our Problems [11077], Disrupting the Twilight Portal [11086], The Deadliest Trap Ever Laid [11097], The Deadliest Trap Ever Laid [11101], Grand Master Antari [31926]
+not in the game (on Questie's quest blacklist) (13):
+  NOT A QUEST [10638], Akama's Promise [10708], Entry Into the Citadel [10754], The Journal of Val'zareq: Portends of War [10815], A Distraction for Akama [10985], Learning to Fly [11497], Desecrate this Fire! [11779], Honor the Flame [11823], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Candy Bucket [12360], Candy Bucket [12409], Sharing a Bountiful Feast [14064]
+dungeon quest (4):
+  Seer Udalo [10705], Ruse of the Ashtongue [10946], An Artifact From the Past [10947], Seek Out the Ashtongue [10958]
+needs a profession (3):
+  Blood Oath of the Netherwing [11012], In Service of the Illidari [11013], Enter the Taskmaster [11014]
+special category (sort -394) (2):
+  Grand Master Antari [31920], Exceeding Expectations [31981]
+above this zone's range of 67-72 (1):
+  Infiltrating the Black Temple [32325]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Shadowmoon Valley - Alliance - part 2 of 2, planned from level 72
+Guide "69-70 Shadowmoon Valley" in group "Zone Routes (Alliance)": this part has 40 steps, 39 stops
+Written to guides/mop/Shadowmoon Valley (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 72. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 51 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 29 tasks, 2,485 yd on foot; ends at level 72.1
+  Human: 7 more tasks; their whole route comes to 2,485 yd; ends at level 72.1
+  everyone (quests that depend on other zones): 15 more tasks; their whole route comes to 6,714 yd; ends at level 72.1
+Hearthstone: set at Roldemar (Roldemar's inn); 0 hearth steps in the guide.
+
+Quests in the guide (17)
+------------------------
+Start to finish here: 11 (7 for everyone, 2 Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren, 2 Human)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  The Cipher of Damnation - Ar'tor's Charge [10540, level 70] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (5):
+  The Cipher of Damnation [10588, level 70] - needs The Cipher of Damnation - The Second Fragment Recovered [10541], The Cipher of Damnation - The Third Fragment Recovered [10579]
+  Teron Gorefiend, I am... [10645, level 70, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Divination: Gorefiend's Armor [10634], Divination: Gorefiend's Cloak [10635], Divination: Gorefiend's Truncheon [10636]
+  The Hostage Soul [10948, level 70] - needs one of An Artifact From the Past [10947] -> Shattrath City
+  Seeker of Truth [11082, level 70] - needs one of The Great Murkblood Revolt [11081]
+  A Distraction for Akama [13429, level 70] - needs one of Entry Into the Black Temple [10949]
+
+Worth checking in game
+----------------------
+  Zuluhed the Whacked [10866, level 70, Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Zuluhed the Whacked" really is line 2 in the quest log
+  Zuluhed the Whacked [10872, level 70, Human]: mixes a kill-credit objective with others; check that "Zuluhed the Whacked" really is line 2 in the quest log
+  Seeker of Truth [11082, level 70]: mixes a kill-credit objective with others; check that "Murkblood Overseer" really is line 2 in the quest log
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

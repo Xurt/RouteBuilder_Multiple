@@ -1,0 +1,174 @@
+Kun-Lai Summit - Alliance - part 1 of 2, planned from level 87
+Guide "87-90 Kun-Lai Summit" in group "Zone Routes (Alliance)": this part has 332 steps, 254 stops
+Written to guides/mop/Kun-Lai Summit (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 14 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+9 pickups or hand-ins are within reach of a stop but planned for later.
+4 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 87. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 334 steps kept, 54 new ones slotted in, 3 moved because their prerequisites changed, 10 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 87, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 342 tasks, 58,011 yd on foot; ends at level 87.8; 1 hearth; at its hardest you are 1.2 levels below the mobs
+  Monk: 18 more tasks; their whole route comes to 58,142 yd; ends at level 87.8; 1 hearth; at its hardest you are 1.2 levels below the mobs
+  everyone (quests that depend on other zones): 28 more tasks; their whole route comes to 63,283 yd; ends at level 87.8; 1 hearth; 2 ORDER PROBLEMS; at its hardest you are 1.2 levels below the mobs
+  Monk (quests that depend on other zones): 3 more tasks; their whole route comes to 63,414 yd; ends at level 87.8; 1 hearth; 2 ORDER PROBLEMS; at its hardest you are 1.2 levels below the mobs
+Hearthstone: set at Ironshaper Shou (Ironshaper Shou's inn); 1 hearth step in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 87 for Admiral Taylor has Awakened (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+  level 87 for Back in Yak
+7 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+38 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+17 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+6 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (122)
+-------------------------
+Start to finish here: 105 (86 for everyone, 13 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren, 6 Monk)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  In Tents Channeling [30652, level 87, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> another zone
+  Kota Blend [30744, level 88] -> another zone
+  Everything I Know About Cooking [31279, level 90] -> Valley of the Four Winds
+
+Hand-in step only shows once complete (2):
+  The Spring Drifter [31285, level 87] - needs The Spring Drifter slain (1) (The Veiled Stair)
+  Finish This! [30992, level 88] - needs Gong Da slain (1) (Dread Wastes)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  The Road to Kun-Lai [31254, level 87, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- The Jade Forest
+
+Need a quest this guide does not hand in - steps show only once that is done (11):
+  Begin Your Training: Master Cheng [31834, level 20, Monk] - needs one of The Peak of Serenity - Begin Your Training [31856]
+  The Ordo Warbringer [30662, level 87, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of In Tents Channeling [30652]
+  The Missing Merchant [31452, level 87, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs The Ordo Warbringer [30660]
+  The Shado-Pan [31455, level 87, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs The Ordo Warbringer [30660]
+  Muskpaw Ranch [31456, level 87, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of ? [30062], The Ordo Warbringer [30660]
+  Cho's Missive [31460, level 87, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs The Ordo Warbringer [30660]
+  A Fair Trade [30746, level 88] - needs one of Kota Blend [30744], Kota Blend [30825]
+  The Burlap Grind [30747, level 88] - needs one of A Fair Trade [30746]
+  Unbelievable! [30752, level 88] - needs one of Where are My Reinforcements? [30993]
+  The Fearmaster [30804, level 88] - needs one of The Late Mrs. Muskpaw [30582]
+  Where are My Reinforcements? [30993, level 88] - needs one of Finish This! [30992]
+
+Worth checking in game
+----------------------
+  Call Out Their Leader [30457, level 87]: mixes a kill-credit objective with others; check that "Bataari Yaungol" really is line 2 in the quest log
+  The Ritual [30480, level 87]: mixes a kill-credit objective with others; check that "Dead Inkgill Spearman" really is line 2 in the quest log
+  The Ritual [30480, level 87]: mixes a kill-credit objective with others; check that "Explosive Hatred" really is line 3 in the quest log
+  One Traveler's Misfortune [30683, level 88]: mixes a kill-credit objective with others; check that "General Sho Lien" really is line 2 in the quest log
+  Honor, Even in Death [30723, level 88]: could not read how many Kun-Lai Corpsepicker are needed from the quest text; assumed 8
+  Justice [30805, level 87]: mixes a kill-credit objective with others; check that "Blackmane Tracker" really is line 2 in the quest log
+  Cleansing the Mere [30828, level 87]: could not read how many Boiling Rage are needed from the quest text; assumed 8
+  Enemies At Our Door [31011, level 88]: could not read how many Amani Berserker are needed from the quest text; assumed 8
+  Prophet Khar'zul [31228, level 88]: mixes a kill-credit objective with others; check that "Gurubashi Witch Doctor" really is line 3 in the quest log
+
+Put off to a later part (5)
+---------------------------
+These need a higher level than this part ends at:
+  My Husband... [30768, level 89]: needs level 88; this part gets you to about 87.8
+  The Arena of Annihilation [31207, level 90]: needs level 90; this part gets you to about 87.8
+  The Kun-Lai Kicker [31611, level 90]: needs level 90; this part gets you to about 87.8
+  Better Dead than Dread [31847, level 90]: needs level 89; this part gets you to about 87.8
+  Complete Your Training: The Final Test [31944, level 90]: needs level 90; this part gets Monk characters to about 87.8
+
+Left out (85)
+-------------
+repeatable (21):
+  The Burlap Grind [30821], Round 1: Brewmaster Chani [30879], Round 1: The Streetfighter [30880], Round 2: Clever Ashyo & Ken-Ken [30881], Round 2: Kang Bramblestaff [30882], Round 3: The Wrestler [30883], Round 3: Master Boom Boom [30885], Round 4: Master Windfur [30902], Round 4: The P.U.G. [30907], Trial At The Temple of the White Tiger [31380], The Torch of Strength [31492], Contending With Bullies [31517], Practice Makes Perfect: Master Cheng [31840], Practice Makes Perfect: Master Woo [31841], Practice Makes Perfect: Master Kistane [31842], Practice Makes Perfect: Master Yoon [31843], Practice Makes Perfect: Master Cheng [31844], Practice Makes Perfect: Master Tsang [31845], Practice Makes Perfect: Master Hsu [31846], Grand Master Yon [31956], Thundering Pandaren Spirit [32441]
+needs reputation (21):
+  To Mogujia [32193], Bad Blood [32194], The Source of Korune Power [32243], Find Thrall! [32319], The Monkey King [32321], The First Riddle: Mercy [32332], The Second Riddle: Fellowship [32333], The Third Riddle: Strength [32334], The Greatest Prank [32335], The Harmonic Mallet [32355], The Kun-Lai Expedition [32370], Memory Wine [32371], A Kor'kron In Our Midst [32377], He's In Deep [32382], Bugging Out [32383], The Ruins of Korune [32393], The Divine Bell [32394], He Won't Even Miss It [32397], The Bell Speaks [32400], Breath of Darkest Shadow [32401], The Silence [32455]
+not in the game (on Questie's quest blacklist) (17):
+  Yakity Yak [30490], A Zandalari Troll? [30596], Into the Vale [30630], Holed Up [30673], Holed Up [30680], Holed Up [30681], Preparing Zouchin Village [30941], Herding Cats [30965], Seeker's Folly [31306], Candy Bucket [32037], Candy Bucket [32039], Candy Bucket [32041], Candy Bucket [32042], Candy Bucket [32051], Anger Remains [32195], Rebuilding the Mallet (Tracker) [32339], Honor the Flame [32500]
+handed in here, but the database does not say where it starts (11):
+  The Ordo Warbringer [30660], Profiting off of the Past [30766], Savior of the Inkgill [30961], The Peak of Serenity - Continue Your Training [31855], The Peak of Serenity - Begin Your Training [31856], The Peak of Serenity - Continue Your Training [31857], The Peak of Serenity - Continue Your Training [31858], The Peak of Serenity - Continue Your Training [31859], The Peak of Serenity - Continue Your Training [31860], The Peak of Serenity - Continue Your Training [31861], The Peak of Serenity - Complete Your Training [31989]
+cannot be taken together with Admiral Taylor has Awakened [30506], which is in the guide (2):
+  Admiral Taylor has Awakened [30507], Admiral Taylor has Awakened [30508]
+dungeon quest (2):
+  Into the Monastery [31030], Into the Monastery [31031]
+special category (sort -344) (2):
+  Stranger in a Strange Land [31488], Stranger in a Strange Land [31489]
+special category (sort -397) (2):
+  The Old Seer [32815], Path of the Last Emperor [32816]
+cannot be taken together with Shut it Down [30742], which is in the guide (1):
+  Shut it Down [30823]
+cannot be taken together with Gourmet Kafa [30743], which is in the guide (1):
+  Gourmet Kafa [30824]
+cannot be taken together with Kota Blend [30744], which is in the guide (1):
+  Kota Blend [30825]
+cannot be taken together with Trouble Brewing [30745], which is in the guide (1):
+  Trouble Brewing [30826]
+cannot be taken together with Everything I Know About Cooking [31279], which is in the guide (1):
+  Everything I Know About Cooking [31486]
+cannot be taken together with My Husband... [30768], which is in the guide (1):
+  Beyond the Wall [31695]
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  Remnants of Anger [31809]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Kun-Lai Summit - Alliance - part 2 of 2, planned from level 90
+Guide "87-90 Kun-Lai Summit" in group "Zone Routes (Alliance)": this part has 6 steps, 4 stops
+Written to guides/mop/Kun-Lai Summit (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 90. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 3 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 90.0
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 3,632 yd; ends at level 90.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Better Dead than Dread [31847, level 90] -> Vale of Eternal Blossoms
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  The Spring Drifter [31285, level 87] <- your earlier visit to this zone
+  Finish This! [30992, level 88] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  My Husband... [30768, level 89] - needs one of Finish This! [30992] -> Townlong Steppes
+
+Worth checking in game
+----------------------
+
+Not planned (3)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  The Arena of Annihilation [31207, level 90]: needs level 90; this part gets you to about 90.0
+  The Kun-Lai Kicker [31611, level 90]: needs level 90; this part gets you to about 90.0
+  Complete Your Training: The Final Test [31944, level 90]: needs level 90; this part gets Monk characters to about 90.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

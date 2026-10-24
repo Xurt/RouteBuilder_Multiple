@@ -1,0 +1,648 @@
+Teldrassil - Alliance - part 1 of 8, planned from level 1
+Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 264 steps, 180 stops
+Written to guides/tbc/Teldrassil (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 9 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+14 pickups or hand-ins are within reach of a stop but planned for later.
+9 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 148 steps kept, 69 new ones slotted in, 0 moved because their prerequisites changed, 4 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 131 tasks, 30,691 yd on foot; ends at level 10.3; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  NightElf: 5 more tasks; their whole route comes to 32,252 yd; ends at level 10.3; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  Warrior: 6 more tasks; their whole route comes to 34,861 yd; ends at level 10.3; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  Rogue: 5 more tasks; their whole route comes to 32,677 yd; ends at level 10.4; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  Human Priest/Dwarf Priest: 1 more tasks; their whole route comes to 30,718 yd; ends at level 10.3; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  NightElf Warrior: 2 more tasks; their whole route comes to 36,978 yd; ends at level 10.3; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  NightElf Hunter: 15 more tasks; their whole route comes to 36,177 yd; ends at level 10.3; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  NightElf Rogue: 2 more tasks; their whole route comes to 35,925 yd; ends at level 10.5; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  NightElf Priest: 8 more tasks; their whole route comes to 32,474 yd; ends at level 10.4; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  NightElf Druid: 5 more tasks; their whole route comes to 33,386 yd; ends at level 10.3; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  everyone (quests that depend on other zones): 13 more tasks; their whole route comes to 31,412 yd; ends at level 10.3; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  NightElf (quests that depend on other zones): 1 more tasks; their whole route comes to 32,985 yd; ends at level 10.3; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  Warrior (quests that depend on other zones): 4 more tasks; their whole route comes to 35,642 yd; ends at level 10.3; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  NightElf Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 37,851 yd; ends at level 10.3; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  NightElf Hunter (quests that depend on other zones): 3 more tasks; their whole route comes to 36,956 yd; ends at level 10.3; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  NightElf Priest (quests that depend on other zones): 8 more tasks; their whole route comes to 33,211 yd; ends at level 10.4; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  NightElf Druid (quests that depend on other zones): 7 more tasks; their whole route comes to 34,291 yd; ends at level 10.3; 2 hearths; at its hardest you are 2.8 levels below the mobs
+Hearthstone: set at Aldia (Aldia's inn); 2 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 10 for The Hunter's Path (NightElf Hunter)
+  level 10 for Heeding the Call (NightElf Druid)
+  level 10 for Stars of Elune (NightElf Priest)
+  level 10 for The Shade of Elura (Warrior)
+  level 10 for Desperate Prayer (Human Priest/Dwarf Priest)
+45 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+10 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+4 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (103)
+-------------------------
+Start to finish here: 64 (45 for everyone, 6 NightElf Hunter, 3 NightElf Priest, 2 Warrior, 2 Rogue, 2 NightElf Druid, 2 NightElf, 1 NightElf Warrior, 1 NightElf Rogue)
+
+Picked up here, handed in elsewhere - these stay in the log (4):
+  Desperate Prayer [5636, level 10, Human Priest/Dwarf Priest] -> Stormwind City
+  Moonglade [5921, level 10, NightElf Druid] -> Moonglade
+  Flight to Auberdine [6342, level 10, NightElf] -> Darkshore
+  Grove of the Ancients [952, level 11] -> Darkshore
+
+Hand-in step only shows once complete (2):
+  Ferocitas the Dream Eater [2459, level 8] - needs Tallonkai's Jewel (1) (an unknown place)
+  The Shade of Elura [1686, level 10, Warrior] - needs Elunite Ore (1) (Darkshore); Elura's Medallion (1) (Darkshore)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (28):
+  Returning Home [5628, level 10, NightElf Priest] <- Elwynn Forest
+  Returning Home [5630, level 10, NightElf Priest] <- Dun Morogh
+  Returning Home [5631, level 10, NightElf Priest] <- Stormwind City
+  Returning Home [5632, level 10, NightElf Priest] <- Stormwind City
+  Returning Home [5633, level 10, NightElf Priest] <- Ironforge
+  Heeding the Call [5924, level 10, NightElf Druid] <- Stormwind City
+  Back to Darnassus [5931, level 10, NightElf Druid] <- Moonglade
+  The Hunter's Path [6073, level 10, NightElf Hunter] <- Stormwind City
+  Return to Nessa [6343, level 10, NightElf] <- Darkshore
+  The Hunter's Path [6721, level 10, NightElf Hunter] <- Ironforge
+  The Hunter's Path [6722, level 10, NightElf Hunter] <- Dun Morogh
+  Power over Poison [6125, level 14, Druid] <- Moonglade
+  Aquatic Form [5061, level 16, NightElf Druid] <- Moonglade
+  The Absent Minded Prospector [741, level 20] <- Darkshore
+  Elune's Grace [5673, level 20, NightElf Priest] <- Stormwind City
+  Elune's Grace [5674, level 20, NightElf Priest] <- Stormwind City
+  Elune's Grace [5675, level 20, NightElf Priest] <- Ironforge
+  In Nightmares [3370, level 25] <- The Barrens
+  Reception from Tyrande [1081, level 28] <- Ashenvale
+  Mathiel [1703, level 28, NightElf Warrior] <- Stormwind City
+  Velinde Starsong [1037, level 30] <- Ashenvale
+  Answered Questions [1044, level 30] <- Duskwood
+  Rise of the Silithid [4267, level 46] <- Feralas
+  In Search of Knowledge [2939, level 47] <- Feralas
+  Doling Justice [2972, level 47] <- Feralas
+  Handle With Care [3022, level 47] <- Tanaris
+  The Super Snapper FX [2944, level 48] <- Tanaris
+  Rise of the Silithid [162, level 49] <- Tanaris
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Smith Mathiel [1692, level 10, Warrior] - needs one of The Shade of Elura [1686]
+  Weapons of Elunite [1693, level 10, Warrior] - needs one of Smith Mathiel [1692]
+  Body and Heart [6001, level 10, NightElf Druid] - needs one of Back to Darnassus [5931]
+  Planting the Heart [941, level 12] - needs one of The Moss-twined Heart [927]
+
+Worth checking in game
+----------------------
+No objectives in the database (the hand-in step warns about it; add "objectives" for these to the zone file):
+  Stars of Elune [5627, level 10, NightElf Priest]
+1 quests have no experience figure in the database: their experience is estimated, and 1 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  Stars of Elune [5627]
+  Body and Heart [6001, level 10, NightElf Druid]: "Lunaclaw Spirit" has no place in the data; taken to be done where the quest is given
+
+Put off to a later part (24)
+----------------------------
+These need a higher level than this part ends at:
+  A Lesson to Learn [26, level 16]: needs level 16; this part gets NightElf Druid characters to about 10.3
+  Trouble In Darkshore? [730, level 14]: needs level 14; this part gets you to about 10.3
+  The Absent Minded Prospector [942, level 20]: needs level 15; this part gets you to about 10.3
+  Velinde's Effects [1038, level 30]: is a level 30 quest; this part gets you to about 10.3
+  The Barrens Port [1039, level 30]: needs level 25; this part gets you to about 10.3
+  Yorus Barleybrew [1698, level 20]: needs level 20; this part gets Warrior characters to about 10.3
+  Sunscorched Shells [1710, level 30]: needs level 20; this part gets Warrior characters to about 10.3
+  Mathiel's Armor [1711, level 30]: needs level 20; this part gets Warrior characters to about 10.3
+  Erion Shadewhisper [2259, level 16]: needs level 16; this part gets Rogue characters to about 10.5
+  Erion's Behest [2260, level 16]: needs level 16; this part gets Rogue characters to about 10.5
+  Klockmort's Essentials [2925, level 30]: needs level 24; this part gets you to about 10.3
+  Feralas: A History [2940, level 47]: needs level 42; this part gets you to about 10.3
+  The Borrower [2941, level 48]: needs level 42; this part gets you to about 10.3
+  Return to Troyas [2943, level 48]: needs level 42; this part gets you to about 10.3
+  Favored of Elune? [3661, level 47]: needs level 42; this part gets you to about 10.3
+  A Lack of Fear [5647, level 20]: needs level 20; this part gets Dwarf Priest characters to about 10.3
+  Elune's Grace [5672, level 20]: needs level 20; this part gets NightElf Priest characters to about 10.4
+  Arcane Feedback [5678, level 20]: needs level 20; this part gets Human Priest characters to about 10.3
+  Lessons Anew [6121, level 14]: needs level 14; this part gets Druid characters to about 10.3
+  The Manor, Ravenholdt [6681, level 24]: needs level 24; this part gets Rogue characters to about 10.5
+  A Donation of Mageweave [7799, level 40]: needs level 40; this part gets you to about 10.3
+  Travel to Astranaar [9432, level 20]: needs level 18; this part gets Draenei characters to about 10.3
+  A Donation of Wool [10352, level 12]: needs level 12; this part gets you to about 10.3
+  A Donation of Silk [10354, level 26]: needs level 26; this part gets you to about 10.3
+
+Left out (109)
+--------------
+not in the game (on Questie's quest blacklist) (49):
+  Welcome! [5842], The Hunter's Path [6072], Dancing for Marzipan [8357], Bladeleaf the Elder [8715], Bladeswift the Elder [8718], The Alliance Needs Your Help! [8797], One Commendation Signet [8813], Ten Commendation Signets [8821], One Commendation Signet [8836], Ten Commendation Signets [8837], Lunar Fireworks [8867], The Lunar Festival [8870], The Lunar Festival [8871], The Lunar Festival [8872], Valadar Starsong [8883], Dearest Colara, [8899], Gift Giving [8993], Stealing Orgrimmar's Flame [9324], Stealing Thunder Bluff's Flame [9325], Stealing the Undercity's Flame [9326], A Thief's Reward [9365], Brewfest! [11441], Torch Catching [11657], Torch Tossing [11731], Honor the Flame [11824], Playing with Fire [11882], Unusual Activity [11886], Striking Back [11917], More Torch Tossing [11921], More Torch Catching [11924], Stealing Silvermoon's Flame [11935], Striking Back [11947], Striking Back [11948], Striking Back [11952], Striking Back [11953], Striking Back [11954], Ahune, the Frost Lord [11955], Incense for the Summer Scorchlings [11964], The Master of Summer Lore [11970], Inform the Elder [12012], ... 9 more
+above this zone's range of 1-49 (29):
+  Moontouched Wildkin [978], Find Ranshalla [979], The New Frontier [1015], The New Frontier [1019], The New Frontier [1047], Prayer to Elune [3378], Assisting Arch Druid Staghelm [3763], Un'Goro Soil [3764], Morrowgrain Research [3781], Morrowgrain Research [3785], Assisting Arch Druid Staghelm [3789], Assisting Arch Druid Staghelm [3790], March of the Silithid [4493], Calm Before the Storm [4508], Calm Before the Storm [4510], Guardians of the Altar [4901], Wildkin of Elune [4902], Glyphed Oaken Branch [4986], A Call to Arms: The Plaguelands! [5091], Starfall [5250], The Crystal of Zin-Malor [5253], The New Frontier [6761], Rabine Saturna [6762], A Donation of Runecloth [7800], The Hunter's Charm [8151], A Simple Request [8233], A Troubled Spirit [8417], Torwa Pathfinder [9063], Assisting Arch Druid Staghelm [10520]
+repeatable (14):
+  Morrowgrain to Darnassus [3803], Additional Runecloth [7801], Concerted Efforts [8385], Argent Dawn Gloves [9094], Consecrated Sharpening Stones [9317], Blessed Wizard Oil [9318], Major Healing Potion [9321], Major Mana Potion [9337], Tabard of the Argent Dawn [9341], Call to Arms: Arathi Basin [11335], Call to Arms: Alterac Valley [11336], Call to Arms: Eye of the Storm [11337], Call to Arms: Warsong Gulch [11338], Concerted Efforts [95455]
+dungeon quest (4):
+  In Search of Thaelrid [1198], Twilight Falls [1199], Blackfathom Villainy [1200], Feathermoon Stronghold [7494]
+needs a profession (4):
+  Elixirs for the Bladeleafs [1581], Moonglow Vest [1582], Master of the Wild Leather [2853], Recipe of the Kaldorei [4161]
+needs reputation (2):
+  Eranikus, Tyrant of the Dream [8733], Tyrande and Remulos [8734]
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  The Moss-twined Heart [927]
+handed in here, but the database does not say where it starts (1):
+  Mortality Wanes [1142]
+cannot be taken together with Stars of Elune [5627], which is in the guide (1):
+  Returning Home [5629]
+cannot be taken together with Desperate Prayer [5636], which is in the guide (1):
+  Desperate Prayer [5640]
+cannot be taken together with Heeding the Call [5923], which is in the guide (1):
+  Heeding the Call [5925]
+special category (sort -25) (1):
+  Concerted Efforts [8371]
+special category (sort -368) (1):
+  Investigate the Scourge of Darnassus [9262]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Teldrassil - Alliance - part 2 of 8, planned from level 13
+Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 11 steps, 7 stops
+Written to guides/tbc/Teldrassil (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 13. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 2,129 yd on foot; ends at level 13.0
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 4,900 yd; ends at level 13.0
+  Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 5,079 yd; ends at level 13.0
+  NightElf Priest (quests that depend on other zones): 1 more tasks; their whole route comes to 5,675 yd; ends at level 13.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Hand-in step only shows once complete (1):
+  A Donation of Wool [10352, level 12] - needs Wool Cloth (1) (Hillsbrad Foothills)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Ferocitas the Dream Eater [2459, level 8] <- your earlier visit to this zone
+  The Shade of Elura [1686, level 10, Warrior] <- your earlier visit to this zone
+  Stars of Elune [5627, level 10, NightElf Priest] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Put off to a later part (23)
+----------------------------
+These need a higher level than this part ends at:
+  A Lesson to Learn [26, level 16]: needs level 16; this part gets NightElf Druid characters to about 13.0
+  Trouble In Darkshore? [730, level 14]: needs level 14; this part gets you to about 13.0
+  The Absent Minded Prospector [942, level 20]: needs level 15; this part gets you to about 13.0
+  Velinde's Effects [1038, level 30]: is a level 30 quest; this part gets you to about 13.0
+  The Barrens Port [1039, level 30]: needs level 25; this part gets you to about 13.0
+  Yorus Barleybrew [1698, level 20]: needs level 20; this part gets Warrior characters to about 13.0
+  Sunscorched Shells [1710, level 30]: needs level 20; this part gets Warrior characters to about 13.0
+  Mathiel's Armor [1711, level 30]: needs level 20; this part gets Warrior characters to about 13.0
+  Erion Shadewhisper [2259, level 16]: needs level 16; this part gets Rogue characters to about 13.0
+  Erion's Behest [2260, level 16]: needs level 16; this part gets Rogue characters to about 13.0
+  Klockmort's Essentials [2925, level 30]: needs level 24; this part gets you to about 13.0
+  Feralas: A History [2940, level 47]: needs level 42; this part gets you to about 13.0
+  The Borrower [2941, level 48]: needs level 42; this part gets you to about 13.0
+  Return to Troyas [2943, level 48]: needs level 42; this part gets you to about 13.0
+  Favored of Elune? [3661, level 47]: needs level 42; this part gets you to about 13.0
+  A Lack of Fear [5647, level 20]: needs level 20; this part gets Dwarf Priest characters to about 13.0
+  Elune's Grace [5672, level 20]: needs level 20; this part gets NightElf Priest characters to about 13.0
+  Arcane Feedback [5678, level 20]: needs level 20; this part gets Human Priest characters to about 13.0
+  Lessons Anew [6121, level 14]: needs level 14; this part gets Druid characters to about 13.0
+  The Manor, Ravenholdt [6681, level 24]: needs level 24; this part gets Rogue characters to about 13.0
+  A Donation of Mageweave [7799, level 40]: needs level 40; this part gets you to about 13.0
+  Travel to Astranaar [9432, level 20]: needs level 18; this part gets Draenei characters to about 13.0
+  A Donation of Silk [10354, level 26]: needs level 26; this part gets you to about 13.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Teldrassil - Alliance - part 3 of 8, planned from level 16
+Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 15 steps, 9 stops
+Written to guides/tbc/Teldrassil (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (NightElf Druid), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 16. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 2,506 yd on foot; ends at level 16.0
+  Druid: 1 more tasks; their whole route comes to 2,976 yd; ends at level 16.0
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 5,836 yd; ends at level 16.0
+  Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 5,836 yd; ends at level 16.0
+  NightElf Priest (quests that depend on other zones): 1 more tasks; their whole route comes to 5,836 yd; ends at level 16.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (7)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Trouble In Darkshore? [730, level 14] -> Darkshore
+  Lessons Anew [6121, level 14, Druid] -> Moonglade
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Ferocitas the Dream Eater [2459, level 8] <- your earlier visit to this zone
+  The Shade of Elura [1686, level 10, Warrior] <- your earlier visit to this zone
+  Stars of Elune [5627, level 10, NightElf Priest] <- your earlier visit to this zone
+  A Donation of Wool [10352, level 12] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  The Absent Minded Prospector [942, level 20] - needs one of The Absent Minded Prospector [741] -> Wetlands
+
+Worth checking in game
+----------------------
+
+Put off to a later part (20)
+----------------------------
+These need a higher level than this part ends at:
+  A Lesson to Learn [26, level 16]: needs level 16; this part gets NightElf Druid characters to about 16.0
+  Velinde's Effects [1038, level 30]: is a level 30 quest; this part gets you to about 16.0
+  The Barrens Port [1039, level 30]: needs level 25; this part gets you to about 16.0
+  Yorus Barleybrew [1698, level 20]: needs level 20; this part gets Warrior characters to about 16.0
+  Sunscorched Shells [1710, level 30]: needs level 20; this part gets Warrior characters to about 16.0
+  Mathiel's Armor [1711, level 30]: needs level 20; this part gets Warrior characters to about 16.0
+  Erion Shadewhisper [2259, level 16]: needs level 16; this part gets Rogue characters to about 16.0
+  Erion's Behest [2260, level 16]: needs level 16; this part gets Rogue characters to about 16.0
+  Klockmort's Essentials [2925, level 30]: needs level 24; this part gets you to about 16.0
+  Feralas: A History [2940, level 47]: needs level 42; this part gets you to about 16.0
+  The Borrower [2941, level 48]: needs level 42; this part gets you to about 16.0
+  Return to Troyas [2943, level 48]: needs level 42; this part gets you to about 16.0
+  Favored of Elune? [3661, level 47]: needs level 42; this part gets you to about 16.0
+  A Lack of Fear [5647, level 20]: needs level 20; this part gets Dwarf Priest characters to about 16.0
+  Elune's Grace [5672, level 20]: needs level 20; this part gets NightElf Priest characters to about 16.0
+  Arcane Feedback [5678, level 20]: needs level 20; this part gets Human Priest characters to about 16.0
+  The Manor, Ravenholdt [6681, level 24]: needs level 24; this part gets Rogue characters to about 16.0
+  A Donation of Mageweave [7799, level 40]: needs level 40; this part gets you to about 16.0
+  Travel to Astranaar [9432, level 20]: needs level 18; this part gets Draenei characters to about 16.0
+  A Donation of Silk [10354, level 26]: needs level 26; this part gets you to about 16.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Teldrassil - Alliance - part 4 of 8, planned from level 19
+Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 18 steps, 10 stops
+Written to guides/tbc/Teldrassil (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Human Rogue), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 19. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 9 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  Draenei: 1 tasks, 1,740 yd on foot; ends at level 19.0
+  Rogue: 3 more tasks; their whole route comes to 1,801 yd; ends at level 19.0
+  NightElf Druid: 1 more tasks; their whole route comes to 1,816 yd; ends at level 19.0
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 2,859 yd; ends at level 19.0
+  Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 2,968 yd; ends at level 19.0
+  NightElf Priest (quests that depend on other zones): 1 more tasks; their whole route comes to 3,345 yd; ends at level 19.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 1 (0 for everyone, 1 Rogue)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  A Lesson to Learn [26, level 16, NightElf Druid] -> Moonglade
+  Erion's Behest [2260, level 16, Rogue] -> Stormwind City
+  Travel to Astranaar [9432, level 20, Draenei] -> Ashenvale
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Ferocitas the Dream Eater [2459, level 8] <- your earlier visit to this zone
+  The Shade of Elura [1686, level 10, Warrior] <- your earlier visit to this zone
+  Stars of Elune [5627, level 10, NightElf Priest] <- your earlier visit to this zone
+  A Donation of Wool [10352, level 12] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Put off to a later part (16)
+----------------------------
+These need a higher level than this part ends at:
+  Velinde's Effects [1038, level 30]: is a level 30 quest; this part gets you to about 19.0
+  The Barrens Port [1039, level 30]: needs level 25; this part gets you to about 19.0
+  Yorus Barleybrew [1698, level 20]: needs level 20; this part gets Warrior characters to about 19.0
+  Sunscorched Shells [1710, level 30]: needs level 20; this part gets Warrior characters to about 19.0
+  Mathiel's Armor [1711, level 30]: needs level 20; this part gets Warrior characters to about 19.0
+  Klockmort's Essentials [2925, level 30]: needs level 24; this part gets you to about 19.0
+  Feralas: A History [2940, level 47]: needs level 42; this part gets you to about 19.0
+  The Borrower [2941, level 48]: needs level 42; this part gets you to about 19.0
+  Return to Troyas [2943, level 48]: needs level 42; this part gets you to about 19.0
+  Favored of Elune? [3661, level 47]: needs level 42; this part gets you to about 19.0
+  A Lack of Fear [5647, level 20]: needs level 20; this part gets Dwarf Priest characters to about 19.0
+  Elune's Grace [5672, level 20]: needs level 20; this part gets NightElf Priest characters to about 19.0
+  Arcane Feedback [5678, level 20]: needs level 20; this part gets Human Priest characters to about 19.0
+  The Manor, Ravenholdt [6681, level 24]: needs level 24; this part gets Rogue characters to about 19.0
+  A Donation of Mageweave [7799, level 40]: needs level 40; this part gets you to about 19.0
+  A Donation of Silk [10354, level 26]: needs level 26; this part gets you to about 19.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Teldrassil - Alliance - part 5 of 8, planned from level 22
+Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 18 steps, 13 stops
+Written to guides/tbc/Teldrassil (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 22. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 11 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  Warrior: 1 tasks, 2,182 yd on foot; ends at level 22.0
+  Human Priest: 1 more tasks; their whole route comes to 2,415 yd; ends at level 22.0
+  Dwarf Priest: 1 more tasks; their whole route comes to 2,415 yd; ends at level 22.0
+  NightElf Priest: 1 more tasks; their whole route comes to 2,415 yd; ends at level 22.0
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 2,160 yd; ends at level 22.0
+  Warrior (quests that depend on other zones): 4 more tasks; their whole route comes to 6,618 yd; ends at level 22.0
+  NightElf Priest (quests that depend on other zones): 1 more tasks; their whole route comes to 6,990 yd; ends at level 22.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (10)
+------------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Yorus Barleybrew [1698, level 20, Warrior] -> Redridge Mountains
+  A Lack of Fear [5647, level 20, Dwarf Priest] -> Ironforge
+  Arcane Feedback [5678, level 20, Human Priest] -> Stormwind City
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Ferocitas the Dream Eater [2459, level 8] <- your earlier visit to this zone
+  The Shade of Elura [1686, level 10, Warrior] <- your earlier visit to this zone
+  Stars of Elune [5627, level 10, NightElf Priest] <- your earlier visit to this zone
+  A Donation of Wool [10352, level 12] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Sunscorched Shells [1710, level 30, Warrior] - needs one of Furen's Armor [1782]
+  Mathiel's Armor [1711, level 30, Warrior] - needs one of Sunscorched Shells [1710]
+
+Worth checking in game
+----------------------
+No objectives in the database (the hand-in step warns about it; add "objectives" for these to the zone file):
+  Elune's Grace [5672, level 20, NightElf Priest]
+2 quests have no experience figure in the database: their experience is estimated, and 2 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  Elune's Grace [5672], Arcane Feedback [5678]
+
+Put off to a later part (10)
+----------------------------
+These need a higher level than this part ends at:
+  Velinde's Effects [1038, level 30]: is a level 30 quest; this part gets you to about 22.0
+  The Barrens Port [1039, level 30]: needs level 25; this part gets you to about 22.0
+  Klockmort's Essentials [2925, level 30]: needs level 24; this part gets you to about 22.0
+  Feralas: A History [2940, level 47]: needs level 42; this part gets you to about 22.0
+  The Borrower [2941, level 48]: needs level 42; this part gets you to about 22.0
+  Return to Troyas [2943, level 48]: needs level 42; this part gets you to about 22.0
+  Favored of Elune? [3661, level 47]: needs level 42; this part gets you to about 22.0
+  The Manor, Ravenholdt [6681, level 24]: needs level 24; this part gets Rogue characters to about 22.0
+  A Donation of Mageweave [7799, level 40]: needs level 40; this part gets you to about 22.0
+  A Donation of Silk [10354, level 26]: needs level 26; this part gets you to about 22.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Teldrassil - Alliance - part 6 of 8, planned from level 25
+Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 13 steps, 9 stops
+Written to guides/tbc/Teldrassil (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 7 of 40 held at once (Human Rogue), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 25. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 2,179 yd on foot; ends at level 25.0
+  Rogue: 1 more tasks; their whole route comes to 2,469 yd; ends at level 25.0
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 5,115 yd; ends at level 25.0
+  Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 5,139 yd; ends at level 25.0
+  NightElf Priest (quests that depend on other zones): 2 more tasks; their whole route comes to 5,684 yd; ends at level 25.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (7)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  The Manor, Ravenholdt [6681, level 24, Rogue] -> Alterac Mountains
+  Klockmort's Essentials [2925, level 30] -> Ironforge
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Ferocitas the Dream Eater [2459, level 8] <- your earlier visit to this zone
+  The Shade of Elura [1686, level 10, Warrior] <- your earlier visit to this zone
+  Stars of Elune [5627, level 10, NightElf Priest] <- your earlier visit to this zone
+  A Donation of Wool [10352, level 12] <- your earlier visit to this zone
+  Elune's Grace [5672, level 20, NightElf Priest] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Put off to a later part (8)
+---------------------------
+These need a higher level than this part ends at:
+  Velinde's Effects [1038, level 30]: is a level 30 quest; this part gets you to about 25.0
+  The Barrens Port [1039, level 30]: needs level 25; this part gets you to about 25.0
+  Feralas: A History [2940, level 47]: needs level 42; this part gets you to about 25.0
+  The Borrower [2941, level 48]: needs level 42; this part gets you to about 25.0
+  Return to Troyas [2943, level 48]: needs level 42; this part gets you to about 25.0
+  Favored of Elune? [3661, level 47]: needs level 42; this part gets you to about 25.0
+  A Donation of Mageweave [7799, level 40]: needs level 40; this part gets you to about 25.0
+  A Donation of Silk [10354, level 26]: needs level 26; this part gets you to about 25.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Teldrassil - Alliance - part 7 of 8, planned from level 28
+Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 17 steps, 13 stops
+Written to guides/tbc/Teldrassil (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 28. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 10 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 2,129 yd on foot; ends at level 28.0
+  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 5,664 yd; ends at level 28.0
+  Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 5,713 yd; ends at level 28.0
+  NightElf Priest (quests that depend on other zones): 2 more tasks; their whole route comes to 5,973 yd; ends at level 28.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Hand-in step only shows once complete (1):
+  A Donation of Silk [10354, level 26] - needs Silk Cloth (1) (Hillsbrad Foothills)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Ferocitas the Dream Eater [2459, level 8] <- your earlier visit to this zone
+  The Shade of Elura [1686, level 10, Warrior] <- your earlier visit to this zone
+  Stars of Elune [5627, level 10, NightElf Priest] <- your earlier visit to this zone
+  A Donation of Wool [10352, level 12] <- your earlier visit to this zone
+  Elune's Grace [5672, level 20, NightElf Priest] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Velinde's Effects [1038, level 30] - needs one of Velinde Starsong [1037]
+  The Barrens Port [1039, level 30] - needs one of Velinde's Effects [1038] -> The Barrens
+
+Worth checking in game
+----------------------
+
+Put off to a later part (5)
+---------------------------
+These need a higher level than this part ends at:
+  Feralas: A History [2940, level 47]: needs level 42; this part gets you to about 28.0
+  The Borrower [2941, level 48]: needs level 42; this part gets you to about 28.0
+  Return to Troyas [2943, level 48]: needs level 42; this part gets you to about 28.0
+  Favored of Elune? [3661, level 47]: needs level 42; this part gets you to about 28.0
+  A Donation of Mageweave [7799, level 40]: needs level 40; this part gets you to about 28.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Teldrassil - Alliance - part 8 of 8, planned from level 41
+Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 13 steps, 10 stops
+Written to guides/tbc/Teldrassil (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 7 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 41. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 2,129 yd on foot; ends at level 41.0
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 4,900 yd; ends at level 41.0
+  Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 5,079 yd; ends at level 41.0
+  NightElf Priest (quests that depend on other zones): 2 more tasks; their whole route comes to 5,675 yd; ends at level 41.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (7)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Hand-in step only shows once complete (1):
+  A Donation of Mageweave [7799, level 40] - needs Mageweave Cloth (1) (Hillsbrad Foothills)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (6):
+  Ferocitas the Dream Eater [2459, level 8] <- your earlier visit to this zone
+  The Shade of Elura [1686, level 10, Warrior] <- your earlier visit to this zone
+  Stars of Elune [5627, level 10, NightElf Priest] <- your earlier visit to this zone
+  A Donation of Wool [10352, level 12] <- your earlier visit to this zone
+  Elune's Grace [5672, level 20, NightElf Priest] <- your earlier visit to this zone
+  A Donation of Silk [10354, level 26] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Not planned (4)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Feralas: A History [2940, level 47]: needs level 42; this part gets you to about 41.0
+  The Borrower [2941, level 48]: needs level 42; this part gets you to about 41.0
+  Return to Troyas [2943, level 48]: needs level 42; this part gets you to about 41.0
+  Favored of Elune? [3661, level 47]: needs level 42; this part gets you to about 41.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

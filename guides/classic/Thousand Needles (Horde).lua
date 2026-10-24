@@ -88,32 +88,18 @@ step
     .mob Galak Scout
     .mob Galak Wrangler
     .mob Galak Windchaser
-step << Shaman
-    .goto 1441/1,-2789.09,-5217.73
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prate Cloudseer|r
-    .turnin 1532 >>Turn in Call of Air
-    .target Prate Cloudseer
-    .isOnQuest 1532
 step
     .goto 1441/1,-2807.13,-5183.71
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dorn Plainstalker|r
     .turnin 1394 >>Turn in Final Passage
     .target Dorn Plainstalker
     .isOnQuest 1394
-step
-    .goto 1441/1,-2807.13,-5183.71
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dorn Plainstalker|r
-    .accept 1149 >>Accept Test of Faith
-    .target Dorn Plainstalker
-step
-    .goto 1441/1,-1596.25,-4932.61
-    >>If you have faith, leap from the planks overlooking Thousand Needles.
-    .complete 1149,1 --If you have faith, leap from the planks overlooking Thousand Needles.
-step
-    .goto 1441/1,-2807.13,-5183.71
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dorn Plainstalker|r
-    .turnin 1149 >>Turn in Test of Faith
-    .target Dorn Plainstalker
+step << Shaman
+    .goto 1441/1,-2789.09,-5217.73
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prate Cloudseer|r
+    .turnin 1532 >>Turn in Call of Air
+    .target Prate Cloudseer
+    .isOnQuest 1532
 step
     .goto 1441/1,-2913.17,-5444.77
     >>Pick up |cRXP_PICK_Alien Egg|r from the ground
@@ -130,11 +116,6 @@ step
     .turnin 4821 >>Turn in Alien Egg
     .accept 4865 >>Accept Serpent Wild
     .target Hagar Lightninghoof
-step
-    .goto 1441/1,-2460.41,-5477.92
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Abeqwa|r
-    .target Innkeeper Abeqwa
-    .home >>Set your Hearthstone to Innkeeper Abeqwa's inn
 step << Mage
     .goto 1441/1,-2460.41,-5477.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Abeqwa|r
@@ -261,15 +242,21 @@ step
 step
     .goto 1441/1,-3856.09,-6233.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kravel Koalbeard|r
-    .turnin 1117 >>Turn in Rumors for Kravel
+    .turnin 1119 >>Turn in Zanzil's Mixture and a Fool's Stout
     .target Kravel Koalbeard
-    .isOnQuest 1117
+    .isOnQuest 1119
 step
     .goto 1441/1,-3856.09,-6233.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kravel Koalbeard|r
     .turnin 1112 >>Turn in Parts for Kravel
     .target Kravel Koalbeard
     .isOnQuest 1112
+step
+    .goto 1441/1,-3856.09,-6233.25
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kravel Koalbeard|r
+    .turnin 1117 >>Turn in Rumors for Kravel
+    .target Kravel Koalbeard
+    .isOnQuest 1117
 step
     .goto 1441/1,-3867.97,-6229.15
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fizzle Brassbolts|r
@@ -438,55 +425,6 @@ RXPGuides.RegisterGuide([[
 #name 31-32 Thousand Needles: around Pozzik
 
 step
-    .goto 1441/1,-2807.13,-5183.71
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dorn Plainstalker|r
-    .accept 1150 >>Accept Test of Endurance
-    .target Dorn Plainstalker
-    .isQuestTurnedIn 1149 --any of: Test of Faith
-step
-    .goto 1441/1,-1603.73,-5603.47
-    >>Kill |cRXP_ENEMY_Grenka Bloodscreech|r and loot |cRXP_LOOT_Grenka's Claw|r
-    .complete 1150,1 --Grenka's Claw (1)
-    .mob Grenka Bloodscreech
-    .isOnQuest 1150
-step
-    .goto 1441/1,-2807.13,-5183.71
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dorn Plainstalker|r
-    .turnin 1150 >>Turn in Test of Endurance
-    .target Dorn Plainstalker
-    .isOnQuest 1150
-step
-    .goto 1441/1,-2807.13,-5183.71
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dorn Plainstalker|r
-    .accept 1151 >>Accept Test of Strength
-    .target Dorn Plainstalker
-    .isQuestTurnedIn 1150 --any of: Test of Endurance
-step
-    .goto 1441/1,-1433.45,-5065.49
-    >>Kill |cRXP_ENEMY_Achellios the Banished|r and loot |cRXP_LOOT_Pendant of Myzrael|r. Use it to start the quest
-    .collect 4614,1,635 --Pendant of Myzrael (1)
-    .accept 635 >>Accept Crystal in the Mountains
-    .use 4614
-    .mob Achellios the Banished
-step
-    .goto 1441/1,-1185.73,-5084.27
-    >>Kill |cRXP_ENEMY_Rok'Alim the Pounder|r and loot |cRXP_LOOT_Fragments of Rok'Alim|r
-    .complete 1151,1 --Fragments of Rok'Alim (1)
-    .mob Rok'Alim the Pounder
-    .isOnQuest 1151
-step
-    .goto 1441/1,-2807.13,-5183.71
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dorn Plainstalker|r
-    .turnin 1151 >>Turn in Test of Strength
-    .target Dorn Plainstalker
-    .isOnQuest 1151
-step
-    .goto 1441/1,-2807.13,-5183.71
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dorn Plainstalker|r
-    .accept 1152 >>Accept Test of Lore
-    .target Dorn Plainstalker
-    .isQuestTurnedIn 1151 --any of: Test of Strength
-step
     .goto 1441/1,-3856.09,-6233.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kravel Koalbeard|r
     .accept 1111 >>Accept Wharfmaster Dizzywig
@@ -598,10 +536,30 @@ step
 step
     .goto 1441/1,-3961.25,-6192.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pozzik|r
-    .accept 1190 >>Accept Keeping Pace
+    .turnin 1176 >>Turn in Load Lightening
+    .accept 1178 >>Accept Goblin Sponsorship
     .target Pozzik
-    .isQuestTurnedIn 1137 --any of: News for Fizzle
+step
+    .goto 1441/1,-3967.85,-6198.64
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Razzeric|r
+    .accept 1188 >>Accept Safety First
+    .target Razzeric
+    .isQuestTurnedIn 1187 --any of: Razzeric's Tweaking
     .xp <29,1
+step << Mage
+    .goto 1441/1,-3878.09,-6187.20
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magus Tirth|r
+    .accept 1951 >>Accept Rituals of Power
+    .target Magus Tirth
+    .isQuestTurnedIn 1950 --any of: Get the Scoop
+    .xp <30,1
+step
+    .goto 1441/1,-2208.29,-4846.08
+    >>Kill |cRXP_ENEMY_Achellios the Banished|r and loot |cRXP_LOOT_Pendant of Myzrael|r. Use it to start the quest
+    .collect 4614,1,635 --Pendant of Myzrael (1)
+    .accept 635 >>Accept Crystal in the Mountains
+    .use 4614
+    .mob Achellios the Banished
 step
     .goto 1441/1,-3961.25,-6192.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pozzik|r
@@ -612,15 +570,9 @@ step
 step
     .goto 1441/1,-3961.25,-6192.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pozzik|r
-    .turnin 1176 >>Turn in Load Lightening
-    .accept 1178 >>Accept Goblin Sponsorship
+    .accept 1190 >>Accept Keeping Pace
     .target Pozzik
-step
-    .goto 1441/1,-3967.85,-6198.64
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Razzeric|r
-    .accept 1188 >>Accept Safety First
-    .target Razzeric
-    .isQuestTurnedIn 1187 --any of: Razzeric's Tweaking
+    .isQuestTurnedIn 1137 --any of: News for Fizzle
     .xp <29,1
 step
     .goto 1441/1,-3967.85,-6198.64
@@ -646,13 +598,6 @@ step
     .accept 1194 >>Accept Rizzle's Schematics
     .isQuestTurnedIn 1190 --any of: Keeping Pace
     .xp <29,1
-step << Mage
-    .goto 1441/1,-3878.09,-6187.20
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magus Tirth|r
-    .accept 1951 >>Accept Rituals of Power
-    .target Magus Tirth
-    .isQuestTurnedIn 1950 --any of: Get the Scoop
-    .xp <30,1
 step
     .goto 1441/1,-3961.25,-6192.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pozzik|r
@@ -670,7 +615,6 @@ step
     >>|cRXP_FRIENDLY_Arathi Highlands|r: Crystal in the Mountains
     >>|cRXP_FRIENDLY_Badlands|r: Martek the Exiled
     >>|cRXP_FRIENDLY_Dustwallow Marsh|r: Rituals of Power << Mage
-    >>|cRXP_FRIENDLY_Stonetalon Mountains|r: Test of Lore
     >>|cRXP_FRIENDLY_Stranglethorn Vale|r: The Rumormonger
     >>|cRXP_FRIENDLY_Tanaris|r: Safety First
     >>|cRXP_FRIENDLY_The Barrens|r: Wharfmaster Dizzywig, Goblin Sponsorship

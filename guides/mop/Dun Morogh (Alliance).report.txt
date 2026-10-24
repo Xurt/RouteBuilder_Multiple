@@ -1,0 +1,177 @@
+Dun Morogh - Alliance - part 1 of 2, planned from level 5
+Guide "5-10 Dun Morogh" in group "Zone Routes (Alliance)": this part has 196 steps, 161 stops
+Written to guides/mop/Dun Morogh (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+4 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 5. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 83 steps kept, 111 new ones slotted in, 3 moved because their prerequisites changed, 5 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 98 tasks, 13,629 yd on foot; ends at level 10.3; at its hardest you are 1.2 levels below the mobs
+  Dwarf/Gnome: 8 more tasks; their whole route comes to 17,008 yd; ends at level 10.6; at its hardest you are 1.1 levels below the mobs
+  NightElf Hunter: 1 more tasks; their whole route comes to 15,073 yd; ends at level 10.3; at its hardest you are 1.2 levels below the mobs
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 15,456 yd; ends at level 10.3; at its hardest you are 1.2 levels below the mobs
+  Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock/Gnome Monk (quests that depend on other zones): 1 more tasks; their whole route comes to 19,941 yd; ends at level 10.6; 1 hearth; at its hardest you are 1.1 levels below the mobs
+  Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock (quests that depend on other zones): 47 more tasks; their whole route comes to 35,543 yd; ends at level 10.6; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 1.1 levels below the mobs
+  Gnome Warrior (quests that depend on other zones): 7 more tasks; their whole route comes to 35,696 yd; ends at level 10.6; 1 hearth; 2 ORDER PROBLEMS; at its hardest you are 1.1 levels below the mobs
+  Gnome Rogue (quests that depend on other zones): 7 more tasks; their whole route comes to 35,608 yd; ends at level 10.6; 1 hearth; 2 ORDER PROBLEMS; at its hardest you are 1.1 levels below the mobs
+  Gnome Priest (quests that depend on other zones): 7 more tasks; their whole route comes to 35,881 yd; ends at level 10.6; 1 hearth; 2 ORDER PROBLEMS; at its hardest you are 1.1 levels below the mobs
+  Gnome Mage (quests that depend on other zones): 7 more tasks; their whole route comes to 36,014 yd; ends at level 10.6; 1 hearth; 2 ORDER PROBLEMS; at its hardest you are 1.1 levels below the mobs
+  Gnome Warlock (quests that depend on other zones): 7 more tasks; their whole route comes to 35,816 yd; ends at level 10.6; 1 hearth; 2 ORDER PROBLEMS; at its hardest you are 1.1 levels below the mobs
+  Gnome Monk (quests that depend on other zones): 4 more tasks; their whole route comes to 20,111 yd; ends at level 10.6; 1 hearth; at its hardest you are 1.1 levels below the mobs
+Hearthstone: set at Turuk Amberstill (Turuk Amberstill's inn); 0 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 10 for Reinforcements for Loch Modan (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+  level 10 for The Hunter's Path (NightElf Hunter)
+9 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+3 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+4 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (75)
+------------------------
+Start to finish here: 36 (0 for everyone, 32 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren, 4 Dwarf/Gnome)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  The Hunter's Path [6721, level 10, NightElf Hunter] -> Teldrassil
+  Reinforcements for Loch Modan [26131, level 10, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Loch Modan
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  To the Surface [27674, level 2, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock/Gnome Monk] <- New Tinkertown
+  The Lost Pilot [26854, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Loch Modan
+
+Need a quest this guide does not hand in - steps show only once that is done (35):
+  The Future of Gnomeregan [26197, level 1, Gnome Mage] - needs one of To the Surface [27674]
+  The Future of Gnomeregan [26199, level 1, Gnome Priest] - needs one of To the Surface [27674]
+  The Future of Gnomeregan [26202, level 1, Gnome Warlock] - needs one of To the Surface [27674]
+  The Future of Gnomeregan [26203, level 1, Gnome Warrior] - needs one of To the Surface [27674]
+  The Future of Gnomeregan [26206, level 1, Gnome Rogue] - needs one of To the Surface [27674]
+  The Future of Gnomeregan [31135, level 1, Gnome Monk] - needs one of To the Surface [27674]
+  A Job for the Multi-Bot [26205, level 2, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock] - needs one of Scrounging for Parts [26222]
+  The Fight Continues [26208, level 2, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock] - needs one of Meet the High Tinker [26421], Meet the High Tinker [26422], Meet the High Tinker [26423], Meet the High Tinker [26424], Meet the High Tinker [26425]
+  Scrounging for Parts [26222, level 2, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock] - needs one of A Triumph of Gnomish Ingenuity [26566]
+  What's Left Behind [26264, level 2, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock] - needs one of Scrounging for Parts [26222]
+  Dealing with the Fallout [26265, level 2, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock] - needs one of Scrounging for Parts [26222]
+  Meet the High Tinker [26421, level 2, Gnome Mage] - needs one of The Future of Gnomeregan [26197]
+  Meet the High Tinker [26422, level 2, Gnome Priest] - needs one of The Future of Gnomeregan [26199]
+  Meet the High Tinker [26423, level 2, Gnome Rogue] - needs one of The Future of Gnomeregan [26206]
+  Meet the High Tinker [26424, level 2, Gnome Warlock] - needs one of The Future of Gnomeregan [26202]
+  Meet the High Tinker [26425, level 2, Gnome Warrior] - needs one of The Future of Gnomeregan [26203]
+  A Triumph of Gnomish Ingenuity [26566, level 2, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock] - needs one of The Fight Continues [26208]
+  Meet the High Tinker [31137, level 2, Gnome Monk] - needs one of The Future of Gnomeregan [31135]
+  The Arts of a Mage [26198, level 3, Gnome Mage] - needs one of The Future of Gnomeregan [26197]
+  The Arts of a Priest [26200, level 3, Gnome Priest] - needs one of The Future of Gnomeregan [26199]
+  The Power of a Warlock [26201, level 3, Gnome Warlock] - needs one of The Future of Gnomeregan [26202]
+  The Arts of a Warrior [26204, level 3, Gnome Warrior] - needs one of The Future of Gnomeregan [26203]
+  The Arts of a Rogue [26207, level 3, Gnome Rogue] - needs one of The Future of Gnomeregan [26206]
+  Missing in Action [26284, level 3, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock] - needs one of What's Keeping Jessup? [26316]
+  Get Me Explosives Back! [26285, level 3, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock] - needs one of What's Keeping Jessup? [26316]
+  What's Keeping Jessup? [26316, level 3, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock] - needs one of A Job for the Multi-Bot [26205]
+  Finishin' the Job [26318, level 3, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock] - needs Missing in Action [26284], Get Me Explosives Back! [26285]
+  One More Thing [26329, level 3, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock] - needs one of Finishin' the Job [26318]
+  Crushcog's Minions [26331, level 4, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock] - needs one of One More Thing [26329]
+  No Tanks! [26333, level 4, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock] - needs one of One More Thing [26329]
+  Staging in Brewnall [26339, level 5, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock] - needs Crushcog's Minions [26331], No Tanks! [26333]
+  Paint it Black [26342, level 5, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock] - needs one of Staging in Brewnall [26339]
+  Down with Crushcog! [26364, level 5, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock] - needs one of Paint it Black [26342]
+  On to Kharanos [26373, level 5, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock] - needs one of Down with Crushcog! [26364]
+  A Pilot's Revenge [26855, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Lost Pilot [26854] -> Loch Modan
+
+Worth checking in game
+----------------------
+  Entombed in Ice [25978, level 10, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Icy Tomb (6)" is line 1 by the database, but RestedXP's guide has "Frozen Mountaineers freed (6)" there
+  The Arts of a Mage [26198, level 3, Gnome Mage]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  The Arts of a Mage [26198, level 3, Gnome Mage]: has a reputation or spell objective, which is not planned
+  The Arts of a Priest [26200, level 3, Gnome Priest]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  The Arts of a Priest [26200, level 3, Gnome Priest]: has a reputation or spell objective, which is not planned
+  The Power of a Warlock [26201, level 3, Gnome Warlock]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  The Power of a Warlock [26201, level 3, Gnome Warlock]: has a reputation or spell objective, which is not planned
+  The Arts of a Warrior [26204, level 3, Gnome Warrior]: has a reputation or spell objective, which is not planned
+  The Arts of a Warrior [26204, level 3, Gnome Warrior]: objective "Training Dummy slain (1)" is line 1 by the database, but RestedXP's guide has "Practice Charge (1)" there
+  The Arts of a Rogue [26207, level 3, Gnome Rogue]: has a reputation or spell objective, which is not planned
+  The Arts of a Rogue [26207, level 3, Gnome Rogue]: objective "Training Dummy slain (1)" is line 1 by the database, but RestedXP's guide has "Practice Eviscerate (1)" there
+  Finishin' the Job [26318, level 3, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock]: mixes a kill-credit objective with others; check that "Boss Bruggor" really is line 2 in the quest log
+  Down with Crushcog! [26364, level 5, Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock]: Razlo Crushcog is level 83, far above this level 5 quest, so the objective is taken to be "talk to" rather than "kill"
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  Beer Basted Boar Ribs [384, level 6]: its mobs are level 30; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 10.5
+
+Left out (493)
+--------------
+not in the game (on Questie's quest blacklist) (419):
+  Frostmane Hold [287], The Reports [291], Report to Ironforge [301], Distracting Jarven [308], Bitter Rivals [310], Return to Marleth [311], Stocking Jetsteam [317], Evershine [318], A Favor for Evershine [319], Return to Bellowfiz [320], Tools for Steelgrill [400], Guarded Thunderbrew Barrel [403], Shimmer Stout [413], Stout to Kadrell [414], Rejold's New Brew [415], The Lost Pilot [419], Senir's Observations [420], Search for Incendicite [466], Stonegear's Search [467], Sully Balloo's Letter [637], Myzrael's Allies [653], A King's Tribute [686], A King's Tribute [689], The Black Box [708], Prospect of Faith [724], Passing Word of a Threat [725], Passing Word of a Threat [726], To Ironforge for Yagyin's Digest [727], The Star, the Hand and the Heart [735], An Ambassador of Evil [762], The Powers Below [968], Mythology of the Titans [1050], An Old Colleague [1072], Ineptitude + Chemicals = Fun [1073], The Lost Tablets of Will [1139], Reclaimed Treasures [1360], The Karnitol Shipwreck [1457], Reagents for Reclaimers Inc. [1467], The Tome of Divinity [1645], The Tome of Divinity [1646], ... 379 more
+above this zone's range of 1-12 (44):
+  Powder to Ironband [302], Reclaimers' Business in Desolace [1453], Find Bingles [2039], Return of the Ring [2947], Gnome Improvement [2948], Portents of Uldum [2963], A Little Slime Goes a Long Way [4512], A Little Slime Goes a Long Way [4513], Hero's Call: The Hinterlands! [26542], Lord Grayson Shadowbreaker [27265], Wulf Calls [27266], Make Contact with SI:7 [27267], Make Haste to the Cathedral [27268], The Temple of the Moon [27269], An Audience with the Farseer [27270], Journey to the Wizard's Sanctum [27271], Demisette Sends Word [27272], The Chief Surgeon [27274], Hero's Call: Vashj'ir! [27724], Hero's Call: Mount Hyjal! [27726], Hero's Call: Deepholm! [27727], Meet with Demisette Cloyce [28259], Meet with Wulf Hansreim [28260], Meet with Lord Tony Romano [28262], Meet with Maginor Dumas [28263], Meet with Lord Grayson Shadowbreaker [28268], Meet with High Priestess Laurena [28285], Meet with Farseer Umbrua [28287], Hero's Call: Uldum! [28558], Hero's Call: Wetlands! [28565], Hero's Call: Arathi Highlands! [28573], Hero's Call: Western Plaguelands! [28576], Hero's Call: Eastern Plaguelands! [28578], Hero's Call: Badlands! [28579], Hero's Call: Searing Gorge! [28582], Hero's Call: Burning Steppes! [28666], Hero's Call: Blasted Lands! [28673], Hero's Call: Swamp of Sorrows! [28675], Hero's Call: Outland! [28708], Hero's Call: Northrend! [28709], ... 4 more
+repeatable (11):
+  Could I get a Fishing Flier? [8229], Cold Water Fishing [29342], One fer the Ages [29343], Fish fer Squirky [29344], Live Bait [29347], The Gnomish Bait-o-Matic [29350], A Round for the Guards [29351], A Fowl Shortage [29352], Keepin' the Haggis Flowin' [29353], Can't Get Enough Spice Bread [29355], I Need to Cask a Favor [29356]
+needs a profession (7):
+  Supplying the Front [1578], Gearing Redridge [1618], Alliance Trauma [6625], Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+special category (sort -394) (4):
+  Learning the Ropes [31548], On The Mend [31549], Got one! [31551], Level Up! [31822]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29387], Guardians of Hyjal: Call of the Ancients [29391]
+handed in here, but the database does not say where it starts (1):
+  Beginnings [1599]
+cannot be taken together with The Hunter's Path [6721], which is in the guide (1):
+  The Hunter's Path [6722]
+helper for Pack Your Bags (1):
+  Don't Forget About Us [24493]
+special category (sort -284) (1):
+  Hammering It Out [25563]
+cannot be taken together with Reinforcements for Loch Modan [26131], which is in the guide (1):
+  Hero's Call: Loch Modan! [28567]
+special category (sort -395) (1):
+  The Arts of a Monk [31138]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Dun Morogh - Alliance - part 2 of 2, planned from level 28
+Guide "5-10 Dun Morogh" in group "Zone Routes (Alliance)": this part has 5 steps, 4 stops
+Written to guides/mop/Dun Morogh (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 28. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 1 new ones slotted in, 1 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 4 tasks, 513 yd on foot; ends at level 28.1; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (1)
+-----------------------
+Start to finish here: 1 (0 for everyone, 1 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

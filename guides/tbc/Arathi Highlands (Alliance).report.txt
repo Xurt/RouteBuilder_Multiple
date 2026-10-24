@@ -1,0 +1,172 @@
+Arathi Highlands - Alliance - part 1 of 3, planned from level 35
+Guide "35-42 Arathi Highlands" in group "Zone Routes (Alliance)": this part has 41 steps, 33 stops
+Written to guides/tbc/Arathi Highlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+2 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 35. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 33 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed, 42 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 35, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 24 tasks, 12,773 yd on foot; ends at level 35.6; at its hardest you are 1.6 levels below the mobs
+  everyone (quests that depend on other zones): 13 more tasks; their whole route comes to 14,774 yd; ends at level 35.6; at its hardest you are 1.6 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+
+Quests in the guide (16)
+------------------------
+Start to finish here: 7 (7 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  MacKreel's Moonshine [647, level 30] -> Hillsbrad Foothills
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Plea To The Alliance [634, level 31] <- Wetlands
+  Malin's Request [690, level 32] <- Stormwind City
+  Hints of a New Plague? [659, level 33] <- Hillsbrad Foothills
+  Sunken Treasure [670, level 40] <- Stranglethorn Vale
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Hints of a New Plague? [657, level 36] - needs one of Hints of a New Plague? [658]
+  Hints of a New Plague? [658, level 36] - needs one of Hints of a New Plague? [659]
+  Hints of a New Plague? [660, level 37] - needs one of Hints of a New Plague? [657]
+  Hints of a New Plague? [661, level 37] - needs one of Hints of a New Plague? [660] -> Hillsbrad Foothills
+
+Worth checking in game
+----------------------
+  Northfold Manor [681, level 31]: could not read how many Syndicate Highwayman are needed from the quest text; assumed 8
+
+Put off to a later part (17)
+----------------------------
+These need a higher level than this part ends at:
+  Breaking the Keystone [652, level 42]: its mobs are level 42; this part gets you to about 36.5
+  Myzrael's Allies [653, level 40]: follows Breaking the Keystone [652]
+  Deep Sea Salvage [662, level 40]: is a level 40 quest; this part gets you to about 36.5
+  Drowned Sorrows [664, level 40]: its mobs are level 39; this part gets you to about 36.5
+  Sunken Treasure [665, level 40]: is a level 40 quest; this part gets you to about 36.5
+  Sunken Treasure [666, level 40]: is a level 40 quest; this part gets you to about 36.5
+  Death From Below [667, level 44]: is a level 44 quest; this part gets you to about 36.5
+  Sunken Treasure [668, level 40]: follows Sunken Treasure [666]
+  Sunken Treasure [669, level 40]: follows Sunken Treasure [668]
+  Wanted!  Marez Cowl [684, level 39]: its mobs are level 40; this part gets you to about 36.5
+  Wanted!  Otto and Falconcrest [685, level 40]: its mobs are level 40; this part gets you to about 36.5
+  Theldurin the Lost [687, level 40]: follows Myzrael's Allies [653]
+  Wand over Fist [693, level 39]: its mobs are level 39; this part gets you to about 36.5
+  Trelane's Defenses [694, level 39]: follows Wand over Fist [693]
+  An Apprentice's Enchantment [695, level 39]: follows Trelane's Defenses [694]
+  Attack on the Tower [696, level 39]: follows An Apprentice's Enchantment [695]
+  Malin's Request [697, level 39]: follows Attack on the Tower [696]
+
+Left out (14)
+-------------
+needs reputation (5):
+  Control Four Bases [8114], Control Five Bases [8115], Arathor Basic Care Package [8260], Arathor Standard Care Package [8261], Arathor Advanced Care Package [8262]
+dungeon quest (4):
+  The Battle for Arathi Basin! [8105], The Battle for Arathi Basin! [8166], The Battle for Arathi Basin! [8167], The Battle for Arathi Basin! [8168]
+not in the game (on Questie's quest blacklist) (4):
+  Desecrate this Fire! [11764], Honor the Flame [11804], Playing with Fire [11882], Incense for the Summer Scorchlings [11964]
+above this zone's range of 31-44 (1):
+  Summoning the Princess [656]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Arathi Highlands - Alliance - part 2 of 3, planned from level 38
+Guide "35-42 Arathi Highlands" in group "Zone Routes (Alliance)": this part has 40 steps, 37 stops
+Written to guides/tbc/Arathi Highlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 38. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 34 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 41 tasks, 7,625 yd on foot; ends at level 38.7; 1 hearth; at its hardest you are 1.9 levels below the mobs
+Hearthstone: set at Narj Deepslice (Narj Deepslice's inn); 1 hearth step in the guide.
+
+Quests in the guide (13)
+------------------------
+Start to finish here: 11 (11 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Malin's Request [697, level 39] -> Stormwind City
+  Sunken Treasure [669, level 40] -> Stranglethorn Vale
+
+Worth checking in game
+----------------------
+
+Put off to a later part (4)
+---------------------------
+These need a higher level than this part ends at:
+  Breaking the Keystone [652, level 42]: its mobs are level 42; this part gets you to about 38.8
+  Myzrael's Allies [653, level 40]: follows Breaking the Keystone [652]
+  Death From Below [667, level 44]: is a level 44 quest; this part gets you to about 38.8
+  Theldurin the Lost [687, level 40]: follows Myzrael's Allies [653]
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Arathi Highlands - Alliance - part 3 of 3, planned from level 41
+Guide "35-42 Arathi Highlands" in group "Zone Routes (Alliance)": this part has 9 steps, 8 stops
+Written to guides/tbc/Arathi Highlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 41. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 5 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 4 tasks, 2,401 yd on foot; ends at level 41.1
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 4,885 yd; ends at level 41.1; at its hardest you are 1.9 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Myzrael's Allies [653, level 40] -> Ironforge
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Theldurin the Lost [687, level 40] - needs one of Myzrael's Allies [653], Myzrael's Allies [688] -> Badlands
+  Death From Below [667, level 44] - needs one of Sunken Treasure [670]
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

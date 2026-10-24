@@ -1,0 +1,188 @@
+{
+  "zone": "Thousand Needles",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "30-37 Thousand Needles",
+  "file": "Thousand Needles (Alliance).lua",
+  "continent": 1,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 30,
+      "end": 30.43,
+      "next": 33,
+      "guide": "30-31 Thousand Needles: around Kravel Koalbeard",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Kravel Koalbeard",
+          "guide": "30-31 Thousand Needles: around Kravel Koalbeard",
+          "level": 30,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 33,
+      "end": 33.13,
+      "guide": "33-34 Thousand Needles",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "33-34 Thousand Needles",
+          "level": 33,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 1104,
+      "level": 30,
+      "req": 28,
+      "xp": 1850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1105,
+      "level": 30,
+      "req": 28,
+      "xp": 2450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1110,
+      "level": 31,
+      "req": 28,
+      "xp": 2540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1112,
+      "level": 36,
+      "req": 30,
+      "xp": 1750,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "The Barrens"
+    },
+    {
+      "id": 1117,
+      "level": 36,
+      "req": 30,
+      "xp": 4350,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Stranglethorn Vale"
+    },
+    {
+      "id": 1119,
+      "level": 44,
+      "req": 35,
+      "xp": 5290,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Stranglethorn Vale"
+    },
+    {
+      "id": 1137,
+      "level": 38,
+      "req": 28,
+      "xp": 1950,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Badlands"
+    },
+    {
+      "id": 1176,
+      "level": 30,
+      "req": 29,
+      "xp": 1850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1179,
+      "level": 30,
+      "req": 28,
+      "xp": 2450,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 1183,
+      "level": 37,
+      "req": 29,
+      "xp": 920,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Stranglethorn Vale"
+    },
+    {
+      "id": 1189,
+      "level": 41,
+      "req": 29,
+      "xp": 1140,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Tanaris"
+    },
+    {
+      "id": 1949,
+      "level": 38,
+      "req": 30,
+      "xp": 980,
+      "part": 1,
+      "section": 0,
+      "tag": "Mage",
+      "from": "Dustwallow Marsh"
+    },
+    {
+      "id": 2769,
+      "level": 46,
+      "req": 40,
+      "xp": 575,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 1175,
+      "level": 33,
+      "req": 28,
+      "xp": 2900,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Arathi Highlands": 1,
+    "Badlands": 1,
+    "The Barrens": 2,
+    "Stranglethorn Vale": 2,
+    "Tanaris": 1,
+    "Dustwallow Marsh": 1
+  }
+}

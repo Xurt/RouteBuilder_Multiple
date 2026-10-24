@@ -1,0 +1,271 @@
+{
+  "zone": "Western Plaguelands",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "52-58 Western Plaguelands",
+  "file": "Western Plaguelands (Horde).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 52,
+      "end": 52.09,
+      "next": 55,
+      "guide": "52-53 Western Plaguelands",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "52-53 Western Plaguelands",
+          "level": 52,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 55,
+      "end": 55.45,
+      "guide": "55-56 Western Plaguelands",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "55-56 Western Plaguelands",
+          "level": 55,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 4984,
+      "level": 54,
+      "req": 51,
+      "xp": 5900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5021,
+      "level": 52,
+      "req": 50,
+      "xp": 3650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5050,
+      "level": 52,
+      "req": 50,
+      "xp": 3650,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 5152,
+      "level": 56,
+      "req": 50,
+      "xp": 4200,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Eastern Plaguelands"
+    },
+    {
+      "id": 5162,
+      "level": 60,
+      "req": 57,
+      "xp": 9550,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Winterspring"
+    },
+    {
+      "id": 5229,
+      "level": 53,
+      "req": 50,
+      "xp": 7610,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 5231,
+      "level": 55,
+      "req": 50,
+      "xp": 8170,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 5233,
+      "level": 55,
+      "req": 50,
+      "xp": 8170,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 5235,
+      "level": 58,
+      "req": 50,
+      "xp": 9020,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 5401,
+      "level": 55,
+      "req": 50,
+      "xp": 815,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5465,
+      "level": 60,
+      "req": 57,
+      "xp": 4750,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Eastern Plaguelands"
+    },
+    {
+      "id": 5846,
+      "level": 58,
+      "req": 52,
+      "xp": 9020,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Eastern Plaguelands"
+    },
+    {
+      "id": 5861,
+      "level": 60,
+      "req": 52,
+      "xp": 7150,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Eastern Plaguelands"
+    },
+    {
+      "id": 5902,
+      "level": 55,
+      "req": 51,
+      "xp": 4050,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 5941,
+      "level": 60,
+      "req": 54,
+      "xp": 4750,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Eastern Plaguelands"
+    },
+    {
+      "id": 6568,
+      "level": 60,
+      "req": 55,
+      "xp": 7150,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Desolace"
+    },
+    {
+      "id": 4971,
+      "level": 56,
+      "req": 53,
+      "xp": 8450,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4972,
+      "level": 56,
+      "req": 53,
+      "xp": 8450,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4985,
+      "level": 56,
+      "req": 51,
+      "xp": 6300,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 5060,
+      "level": 55,
+      "req": 52,
+      "xp": 10200,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6004,
+      "level": 56,
+      "req": 50,
+      "xp": 8450,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6023,
+      "level": 57,
+      "req": 51,
+      "xp": 8730,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 6025,
+      "level": 58,
+      "req": 51,
+      "xp": 9020,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Tirisfal Glades": 6,
+    "Eastern Plaguelands": 6,
+    "Mulgore": 1,
+    "Dustwallow Marsh": 1
+  }
+}

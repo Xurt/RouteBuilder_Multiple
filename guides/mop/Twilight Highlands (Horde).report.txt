@@ -1,0 +1,217 @@
+Twilight Highlands - Horde - part 1 of 2, planned from level 85
+Guide "85-85 Twilight Highlands" in group "Zone Routes (Horde)": this part has 190 steps, 185 stops
+Written to guides/mop/Twilight Highlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+6 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 85. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 193 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed, 134 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 85, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 45 tasks, 8,229 yd on foot; ends at level 85.1
+  everyone (quests that depend on other zones): 152 more tasks; their whole route comes to 27,668 yd; ends at level 85.1
+Hearthstone: set at Naka Scaleblade (Naka Scaleblade's inn); 0 hearth steps in the guide.
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (69)
+------------------------
+Start to finish here: 14 (13 for everyone, 1 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  The Maelstrom [27203, level 82] <- Stormwind City
+  Twilight Skies [26388, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Azshara
+  Return to the Highlands [26840, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Orgrimmar
+
+Need a quest this guide does not hand in - steps show only once that is done (52):
+  Deepholm, Realm of Earth [27123, level 82] - needs one of The Maelstrom [27203] -> Deepholm
+  Emergency Aid [26538, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Twilight Skies [26388]
+  Stalled Negotiations [26539, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Twilight Skies [26388]
+  Dangerous Compassion [26540, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Emergency Aid [26538]
+  Madness [26549, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Stalled Negotiations [26539]
+  Negotiations Terminated [26608, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Madness [26549]
+  You Say You Want a Revolution [26619, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Dangerous Compassion [26540], Negotiations Terminated [26608]
+  Insurrection [26621, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of You Say You Want a Revolution [26619]
+  Death to Mor'ghor [26622, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Insurrection [26621]
+  Muddied Waters [26784, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Securing the Beach Head [26786]
+  Securing the Beach Head [26786, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Death to Mor'ghor [26622]
+  Cementing Our Victory [26788, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Death to Mor'ghor [26622]
+  The Warchief Will be Pleased [26798, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Muddied Waters [26784], Cementing Our Victory [26788] -> Orgrimmar
+  The Weeping Wound [27375, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Paint it Black [27945]
+  The Northern Flank [27583, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Return to the Highlands [26840]
+  Blood in the Surf [27584, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Northern Flank [27583]
+  Shells on the Sea Shore [27586, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Northern Flank [27583]
+  Blast Him! [27606, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Blood in the Surf [27584], Shells on the Sea Shore [27586]
+  The Southern Flank [27607, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Return to the Highlands [26840]
+  Scouting the Shore [27610, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Southern Flank [27607]
+  Blood on the Sand [27611, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Southern Flank [27607]
+  Mo' Better Shredder [27622, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Scouting the Shore [27610], Blood on the Sand [27611]
+  Narkrall, the Drake-Tamer [27690, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Blast Him! [27606]
+  Total War [27747, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Narkrall, the Drake-Tamer [27690]
+  War Forage [27750, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Narkrall, the Drake-Tamer [27690]
+  Crushing the Wildhammer [27751, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Narkrall, the Drake-Tamer [27690]
+  Drag 'em Down [27929, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Narkrall, the Drake-Tamer [27690]
+  Paint it Black [27945, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Crushing the Wildhammer [27751], Drag 'em Down [27929]
+  We All Must Sacrifice [27951, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of A Vision of Twilight [27947]
+  The Eyes Have It [27954, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of We All Must Sacrifice [27951]
+  Eye Spy [27955, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Eyes Have It [27954]
+  Bait and Throttle [28041, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Crushing the Wildhammer [27751], Drag 'em Down [27929]
+  How to Maim Your Dragon [28043, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Bait and Throttle [28041]
+  The Demon Chain [28123, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of How to Maim Your Dragon [28043]
+  Fury Unbound [28133, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Demon Chain [28123]
+  Krazzworks [28583, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Mo' Better Shredder [27622]
+  Quality Construction [28584, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Krazzworks [28583]
+  Pool Pony Rescue [28586, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Krazzworks [28583]
+  Wildhammer Infestation [28588, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Krazzworks [28583]
+  Everything But the Kitchen Sink [28589, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Quality Construction [28584], Pool Pony Rescue [28586], Wildhammer Infestation [28588]
+  Reprisal [28590, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Everything But the Kitchen Sink [28589]
+  Off The Wall [28591, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Reprisal [28590]
+  Parting Packages [28592, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Off The Wall [28591]
+  Of Utmost Importance [28593, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Off The Wall [28591]
+  Highbank, Crybank [28594, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Off The Wall [28591]
+  Krazz Works! [28595, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Parting Packages [28592], Of Utmost Importance [28593], Highbank, Crybank [28594]
+  Blood in the Highlands [28038, level 85, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Crushing the Wildhammer [27751], Drag 'em Down [27929]
+  Purple is Your Color [28147, level 85, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Fury Unbound [28133]
+  Whispers in the Wind [28149, level 85, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Fury Unbound [28133]
+  Dressed to Kill [28151, level 85, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Purple is Your Color [28147]
+  Thog's Nightlight [28166, level 85, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Whispers in the Wind [28149]
+  Night Terrors [28170, level 85, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Thog's Nightlight [28166]
+
+Worth checking in game
+----------------------
+  Insurrection [26621, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: mixes a kill-credit objective with others; check that "Dragonmaw Worker" really is line 3 in the quest log
+  The Maw of Iso'rath [27376, level 84]: could not read how many Earthen Ring Gryphon are needed from the quest text; assumed 8
+  Everything But the Kitchen Sink [28589, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: could not read how many Krazz Cannon are needed from the quest text; assumed 8
+  Off The Wall [28591, level 84, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: mixes a kill-credit objective with others; check that "Highbank Cannon Bunny" really is line 3 in the quest log
+
+Put off to a later part (55)
+----------------------------
+These need a higher level than this part ends at:
+  Nightmare [27380, level 85]: its mobs are level 88; this part gets you to about 85.4
+  Warm Welcome [27486, level 85]: follows Nightmare [27380]
+  Kor'kron Drop [27491, level 85]: follows Crushblow [28249]
+  Ogres & Ettins [27493, level 85]: follows Crushblow [28249]
+  Move the Mountain [27495, level 85]: follows Kor'kron Drop [27491]
+  Call in the Artillery [27497, level 85]: follows Crushblow [28249]
+  Signal the Attack [27499, level 85]: follows Move the Mountain [27495]
+  Four Heads are Better than None [27501, level 85]: follows Signal the Attack [27499]
+  Up to the Citadel [27503, level 85]: follows Four Heads are Better than None [27501]
+  Even Dragons Bleed [27504, level 85]: follows Warm Welcome [27486]
+  Draconic Mending [27505, level 85]: follows Even Dragons Bleed [27504]
+  Life from Death [27506, level 85]: follows Even Dragons Bleed [27504]
+  Encroaching Twilight [27507, level 85]: follows In Defense of the Redoubt [27564]
+  Far from the Nest [27508, level 85]: follows In Defense of the Redoubt [27564]
+  Breach in the Defenses [27509, level 85]: follows In Defense of the Redoubt [27564]
+  In Defense of the Redoubt [27564, level 85]: follows Draconic Mending [27505]
+  Patchwork Command [27576, level 85]: follows Encroaching Twilight [27507]
+  Just You and Garona [27638, level 85]: follows Up to the Citadel [27503]
+  Dark Assassins [27653, level 85]: follows Just You and Garona [27638]
+  Bring the Hammer Down [27655, level 85]: follows Just You and Garona [27638]
+  Help from the Earthcaller [27658, level 85]: follows Just You and Garona [27638]
+  Portal Overload [27659, level 85]: follows Help from the Earthcaller [27658]
+  Spirit of the Loch [27660, level 85]: follows Help from the Earthcaller [27658]
+  Fire the Cannon [27661, level 85]: follows Spirit of the Loch [27660]
+  Unbinding [27662, level 85]: follows Help from the Earthcaller [27658]
+  Distract Them for Me [27689, level 85]: follows Dark Assassins [27653]
+  The Elementium Axe [27696, level 85]: follows Dark Assassins [27653]
+  Dragon, Unchained [27701, level 85]: follows The Elementium Axe [27696]
+  Coup de Grace [27703, level 85]: follows Dragon, Unchained [27701]
+  Back to the Elementium Depths [27712, level 85]: follows Portal Overload [27659]
+  A Little on the Side [27742, level 85]: follows Mr. Goldmine's Wild Ride [28885]
+  While We're Here [27743, level 85]: follows Mr. Goldmine's Wild Ride [28885]
+  Rune Ruination [27744, level 85]: follows Mr. Goldmine's Wild Ride [28885]
+  A Fiery Reunion [27745, level 85]: follows A Little on the Side [27742]
+  Garona Needs You [27783, level 85]: follows A Fiery Reunion [27745]
+  The Hammer of Twilight [27786, level 85]: follows Garona Needs You [27783]
+  Skullcrusher the Mountain [27788, level 85]: follows The Hammer of Twilight [27786]
+  Water of Life [27798, level 85]: follows Fire the Cannon [27661]
+  Precious Goods [28090, level 85]: follows Patchwork Command [27576]
+  Easy Pickings [28091, level 85]: follows Patchwork Command [27576]
+  If The Key Fits [28092, level 85]: follows The Gates of Grim Batol [28097]
+  Pressing Forward [28093, level 85]: follows If The Key Fits [28092]
+  Paving the Way [28094, level 85]: follows The Gates of Grim Batol [28097]
+  The Gates of Grim Batol [28097, level 85]: follows Precious Goods [28090]
+  And the Sky Streaked Red [28171, level 85]: follows Battle of Life and Death [28758]
+  Blackout [28173, level 85]: follows And the Sky Streaked Red [28171]
+  Shining Through the Dark [28175, level 85]: follows And the Sky Streaked Red [28171]
+  Following the Young Home [28176, level 85]: follows Blackout [28173]
+  A Fitting End [28191, level 85]: follows And the Sky Streaked Red [28171]
+  Last of Her Kind [28247, level 85]: follows Following the Young Home [28176]
+  Crushblow [28249, level 85]: follows Last of Her Kind [28247]
+  Enter the Dragon Queen [28712, level 85]: follows Pressing Forward [28093]
+  Battle of Life and Death [28758, level 85]: follows Enter the Dragon Queen [28712]
+  Mr. Goldmine's Wild Ride [28885, level 85]: follows Portal Overload [27659]
+  To Ravenholdt [29934, level 85]: needs level 85; this part gets Rogue characters to about 85.1
+
+Left out (27)
+-------------
+not in the game (on Questie's quest blacklist) (16):
+  Incense for the Festival Scorchlings [11966], The Crucible of Carnage: The Bloodeye Bruiser! [27861], The Crucible of Carnage: The Bloodeye Bruiser! [27862], Breadcrumb Out [28110], The Lost Brother [28236], Polished [28585], Battle of Life and Death [28754], Desecrate this Fire! [28943], Honor the Flame [28946], Candy Bucket [28973], Candy Bucket [28974], Candy Bucket [28975], Candy Bucket [28976], Darkfeather the Elder [29736], Firebeard the Elder [29737], The Crucible of Carnage: The Bloodeye Bruiser! [31206]
+repeatable (6):
+  Crushing the Wildhammer [28871], Total War [28872], Another Maw to Feed [28873], Hook 'em High [28874], Bring Down the High Shaman [28875], Goz Banefury [31974]
+cannot be taken together with Signal the Attack [27499], which is in the guide (1):
+  Signal the Attack [27590]
+cannot be taken together with Four Heads are Better than None [27501], which is in the guide (1):
+  Four Heads are Better than None [27609]
+cannot be taken together with Just You and Garona [27638], which is in the guide (1):
+  Just You and Garona [27639]
+cannot be taken together with Narkrall, the Drake-Tamer [27690], which is in the guide (1):
+  A Vision of Twilight [27947]
+handed in here, but the database does not say where it starts (1):
+  A Hidden Message [29802]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Twilight Highlands - Horde - part 2 of 2, planned from level 88
+Guide "85-85 Twilight Highlands" in group "Zone Routes (Horde)": this part has 169 steps, 164 stops
+Written to guides/mop/Twilight Highlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 88. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 131 steps kept, 42 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 171 tasks, 24,029 yd on foot; ends at level 88.2
+  Rogue (quests that depend on other zones): 2 more tasks; their whole route comes to 24,035 yd; ends at level 88.2
+Hearthstone: set at Nicole Gillet (Nicole Gillet's inn); 0 hearth steps in the guide.
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+3 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (55)
+------------------------
+Start to finish here: 54 (24 for everyone, 30 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  To Ravenholdt [29934, level 85, Rogue] - needs one of A Hidden Message [29802] -> Hillsbrad Foothills
+
+Worth checking in game
+----------------------
+  Skullcrusher the Mountain [27788, level 85, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: ""Skullcrusher the Mountain" Kill Credit (1)" has no place in the data; taken to be done where the quest is given
+  If The Key Fits [28092, level 85, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: could not read how many Dragonmaw Gate Controller are needed from the quest text; assumed 8
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

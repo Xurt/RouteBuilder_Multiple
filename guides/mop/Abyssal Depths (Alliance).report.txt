@@ -1,0 +1,80 @@
+Abyssal Depths - Alliance
+Guide "81-81 Abyssal Depths" in group "Zone Routes (Alliance)": 95 steps, 92 stops
+Written to guides/mop/Abyssal Depths (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 81. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 96 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 495 yd on foot; ends at level 81.0
+  everyone (quests that depend on other zones): 93 more tasks; their whole route comes to 15,939 yd; ends at level 81.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (33)
+------------------------
+Start to finish here: 1 (0 for everyone, 1 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Full Circle [26219, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Shimmering Expanse
+
+Need a quest this guide does not hand in - steps show only once that is done (31):
+  The Brothers Digsong [26014, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Fuel-ology 101 [26106]
+  Phosphora Hunting [26015, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Brothers Digsong [26014]
+  A Lure [26017, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Phosphora Hunting [26015]
+  Coldlights Out [26018, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Phosphora Hunting [26015]
+  Enormous Eel Egg [26019, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Phosphora Hunting [26015]
+  The Brothers Digsong 2: Eel-Egg-Trick Boogaloo [26021, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Enormous Eel Egg [26019]
+  One Last Favor [26080, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs A Lure [26017], Coldlights Out [26018]
+  Bio-Fuel [26103, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Full Circle [26219]
+  Fuel-ology 101 [26106, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Bio-Fuel [26103]
+  Sira'kess Slaying [25950, level 82, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of One Last Favor [26080]
+  Treasure Reclamation [25975, level 82, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of One Last Favor [26080]
+  A Standard Day for Azrajar [25977, level 82, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of One Last Favor [26080]
+  Those Aren't Masks [25981, level 82, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of One Last Favor [26080]
+  Promontory Point [25983, level 82, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Put It On [25987]
+  Put It On [25987, level 82, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Those Aren't Masks [25981]
+  The Wavespeaker [26056, level 82, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Put It On [25987]
+  Free Wil'hai [26065, level 82] - needs one of Enormous Eel Egg [26019], I Brought You This Egg [26090]
+  Clearing the Defiled [26070, level 82, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Put It On [25987]
+  Into the Totem [26072, level 82] - needs one of Put It On [25987], Put It On [25988]
+  Scalding Shrooms [26096, level 82] - needs one of Put It On [25987], Put It On [25988]
+  ... It Will Come [26111, level 82] - needs one of Into the Totem [26072]
+  Unplug L'ghorek [26130, level 82] - needs one of ... It Will Come [26111]
+  Fiends from the Netherworld [26132, level 82, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of ... It Will Come [26111]
+  Communing with the Ancient [26140, level 82] - needs one of Unplug L'ghorek [26130]
+  Runestones of Binding [26141, level 82] - needs one of Communing with the Ancient [26140]
+  Ascend No More! [26142, level 82] - needs one of Communing with the Ancient [26140]
+  Prisoners [26144, level 82, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Communing with the Ancient [26140]
+  Twilight Extermination [26154, level 82] - needs Runestones of Binding [26141], Ascend No More! [26142]
+  Back to Darkbreak Cove [26181, level 82, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of All that Rises [26143]
+  Defending the Rift [26193, level 82, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Back to Darkbreak Cove [26181] -> another zone
+  All that Rises [26143, level 83] - needs one of Twilight Extermination [26154]
+
+Worth checking in game
+----------------------
+  Put It On [25987, level 82, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: "Merciless One in Control of You" has no place in the data; taken to be done where the quest is given
+  The Brothers Digsong 2: Eel-Egg-Trick Boogaloo [26021, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Weakened Great-Eel" really is line 2 in the quest log
+  Twilight Extermination [26154, level 82]: mixes a kill-credit objective with others; check that "Twilight Devotee" really is line 2 in the quest log
+  Twilight Extermination [26154, level 82]: mixes a kill-credit objective with others; check that "Faceless Overseer" really is line 3 in the quest log
+
+Left out (6)
+------------
+special category (sort -381) (3):
+  Elemental Bonds: Desire [29328], Into Coaxing Tides [29336], Into Constant Earth [29337]
+not in the game (on Questie's quest blacklist) (2):
+  Our Aquatic Neigh-Bors [26104], Candy Bucket [28985]
+cannot be taken together with Claim Korthun's End [26105], which is in the guide (1):
+  Claim Korthun's End [26121]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

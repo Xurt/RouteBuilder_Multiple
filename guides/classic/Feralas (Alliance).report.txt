@@ -73,7 +73,7 @@ dungeon quest (4):
   Pusillin and the Elder Azj'Tordin [7441], Elven Legends [7482], Lethtendris's Web [7488], Feathermoon Stronghold [7494]
 handed in here, but the database does not say where it starts (2):
   Lonebrow's Journal [1100], Thalanaar Delivery [4281]
-special category (sort -366) (2):
+not in the game (on Questie's quest blacklist) (2):
   Grimtotem the Elder [8679], Mistwalker the Elder [8685]
 special category (sort -1) (1):
   Shrouded in Nightmare [8446]

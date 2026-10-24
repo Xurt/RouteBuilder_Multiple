@@ -1,0 +1,239 @@
+Duskwood - Alliance - part 1 of 3, planned from level 20
+Guide "20-31 Duskwood" in group "Zone Routes (Alliance)": this part has 46 steps, 35 stops
+Written to guides/tbc/Duskwood (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+12 pickups or hand-ins are within reach of a stop but planned for later.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 20. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 43 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed, 111 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 42 tasks, 16,722 yd on foot; ends at level 21.0; 1 hearth; at its hardest you are 2.1 levels below the mobs
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 17,778 yd; ends at level 21.0; 1 hearth; at its hardest you are 2.1 levels below the mobs
+  Draenei (quests that depend on other zones): 1 more tasks; their whole route comes to 17,870 yd; ends at level 21.0; 1 hearth; at its hardest you are 2.1 levels below the mobs
+Hearthstone: set at Avette Fellwood (Avette Fellwood's inn); 1 hearth step in the guide.
+4 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (26)
+------------------------
+Start to finish here: 17 (17 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  An Old History Book [337, level 25] -> Stormwind City
+
+Brought in from another zone and handed in here - steps show only if you have the quest (7):
+  Messenger to Darkshire [145, level 18] <- Redridge Mountains
+  Travel to Darkshire [9429, level 20, Draenei] <- Stormwind City
+  The Legend of Stalvan [68, level 28] <- Westfall
+  The Legend of Stalvan [78, level 28] <- Elwynn Forest
+  The Missing Diplomat [1243, level 28] <- Stormwind City
+  Armed and Ready [325, level 29] <- Stormwind City
+  The Caravan Road [1041, level 30] <- Stranglethorn Vale
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Messenger to Darkshire [146, level 18] - needs one of Messenger to Darkshire [145] -> Redridge Mountains
+
+Worth checking in game
+----------------------
+
+Put off to a later part (44)
+----------------------------
+These need a higher level than this part ends at:
+  Morbent Fel [55, level 32]: its mobs are level 32; this part gets you to about 23.5
+  The Night Watch [57, level 26]: its mobs are level 24; this part gets you to about 21.6
+  The Night Watch [58, level 30]: its mobs are level 27; this part gets you to about 23.5
+  The Legend of Stalvan [66, level 28]: needs level 22; this part gets you to about 21.6
+  The Legend of Stalvan [67, level 28]: needs level 22; this part gets you to about 21.6
+  The Legend of Stalvan [69, level 28]: needs level 22; this part gets you to about 21.6
+  The Legend of Stalvan [79, level 28]: needs level 22; this part gets you to about 21.6
+  The Legend of Stalvan [80, level 28]: needs level 22; this part gets you to about 21.6
+  The Legend of Stalvan [97, level 28]: needs level 22; this part gets you to about 21.6
+  The Legend of Stalvan [98, level 32]: its mobs are level 32; this part gets you to about 23.5
+  The Totem of Infliction [101, level 25]: its mobs are level 26; this part gets you to about 23.5
+  Ghoulish Effigy [133, level 27]: its mobs are level 26; this part gets you to about 23.5
+  Ogre Thieves [134, level 30]: is a level 30 quest; this part gets you to about 23.5
+  Note to the Mayor [160, level 30]: follows Ogre Thieves [134]
+  Worgen in the Woods [173, level 28]: its mobs are level 27; this part gets you to about 23.5
+  Look To The Stars [174, level 25]: is a level 25 quest; this part gets you to about 21.6
+  Look To The Stars [175, level 25]: follows Look To The Stars [174]
+  Look To The Stars [177, level 25]: its mobs are level 26; this part gets you to about 23.5
+  Look To The Stars [181, level 30]: its mobs are level 30; this part gets you to about 23.5
+  Worgen in the Woods [221, level 29]: its mobs are level 28; this part gets you to about 23.5
+  Worgen in the Woods [222, level 31]: its mobs are level 30; this part gets you to about 23.5
+  Worgen in the Woods [223, level 31]: follows Worgen in the Woods [222]
+  The Weathered Grave [225, level 30]: needs level 25; this part gets you to about 23.5
+  Morgan Ladimore [227, level 30]: needs level 28; this part gets you to about 23.5
+  Mor'Ladim [228, level 30]: needs level 28; this part gets you to about 23.5
+  The Daughter Who Lived [229, level 30]: needs level 28; this part gets you to about 23.5
+  Sven's Camp [230, level 25]: needs level 21; this part gets you to about 21.2
+  A Daughter's Love [231, level 30]: needs level 28; this part gets you to about 23.5
+  Translate Abercrombie's Note [251, level 30]: follows Note to the Mayor [160]
+  Translation to Ello [252, level 30]: follows Wait for Sirra to Finish [401]
+  Bride of the Embalmer [253, level 30]: its mobs are level 30; this part gets you to about 23.5
+  The Shadowy Figure [262, level 25]: follows Sven's Camp [230]
+  The Shadowy Search Continues [265, level 25]: follows The Shadowy Figure [262]
+  Inquire at the Inn [266, level 25]: follows The Shadowy Search Continues [265]
+  Return to Sven [268, level 25]: follows Finding the Shadowy Figure [453]
+  Seeking Wisdom [269, level 29]: follows Proving Your Worth [323]
+  Proving Your Worth [323, level 28]: its mobs are level 28; this part gets you to about 23.5
+  Wait for Sirra to Finish [401, level 30]: follows Translate Abercrombie's Note [251]
+  Finding the Shadowy Figure [453, level 25]: follows Inquire at the Inn [266]
+  The Carevin Family [1042, level 30]: needs level 25; this part gets you to about 23.5
+  The Scythe of Elune [1043, level 30]: is a level 30 quest; this part gets you to about 23.5
+  Answered Questions [1044, level 30]: needs level 25; this part gets you to about 23.5
+  The Missing Diplomat [1244, level 30]: needs level 28; this part gets you to about 23.5
+  The Missing Diplomat [1245, level 30]: needs level 28; this part gets you to about 23.5
+
+Left out (11)
+-------------
+not in the game (on Questie's quest blacklist) (4):
+  Honor the Flame [11814], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Candy Bucket [12344]
+repeatable (2):
+  Digging Through the Dirt [254], CLUCK! [3861]
+above this zone's range of 20-32 (2):
+  Supplies for Nethergarde [1395], Vital Supplies [1477]
+needs a profession (1):
+  Seasoned Wolf Kabobs [90]
+dungeon quest (1):
+  Crime and Punishment [377]
+special category (sort -1) (1):
+  Shrouded in Nightmare [8446]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Duskwood - Alliance - part 2 of 3, planned from level 24
+Guide "20-31 Duskwood" in group "Zone Routes (Alliance)": this part has 51 steps, 45 stops
+Written to guides/tbc/Duskwood (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 24. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 48 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 42 tasks, 11,042 yd on foot; ends at level 25.0; 2 hearths; at its hardest you are 2.8 levels below the mobs
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 11,235 yd; ends at level 25.0; 2 hearths; at its hardest you are 2.8 levels below the mobs
+Hearthstone: set at Avette Fellwood (Avette Fellwood's inn); 2 hearth steps in the guide.
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (20)
+------------------------
+Start to finish here: 15 (15 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Legend of Stalvan [67, level 28] -> Westfall
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  The Legend of Stalvan [69, level 28] - needs one of The Legend of Stalvan [68] -> Elwynn Forest
+  The Legend of Stalvan [79, level 28] - needs one of The Legend of Stalvan [78]
+  The Legend of Stalvan [80, level 28] - needs one of The Legend of Stalvan [79]
+  The Legend of Stalvan [97, level 28] - needs one of The Legend of Stalvan [80]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (24)
+----------------------------
+These need a higher level than this part ends at:
+  Morbent Fel [55, level 32]: its mobs are level 32; this part gets you to about 26.1
+  The Legend of Stalvan [98, level 32]: its mobs are level 32; this part gets you to about 26.1
+  Ogre Thieves [134, level 30]: is a level 30 quest; this part gets you to about 26.1
+  Note to the Mayor [160, level 30]: follows Ogre Thieves [134]
+  Look To The Stars [181, level 30]: its mobs are level 30; this part gets you to about 26.1
+  Worgen in the Woods [221, level 29]: its mobs are level 28; this part gets you to about 25.3
+  Worgen in the Woods [222, level 31]: its mobs are level 30; this part gets you to about 26.1
+  Worgen in the Woods [223, level 31]: follows Worgen in the Woods [222]
+  The Weathered Grave [225, level 30]: needs level 25; this part gets you to about 25.1
+  Morgan Ladimore [227, level 30]: needs level 28; this part gets you to about 26.1
+  Mor'Ladim [228, level 30]: needs level 28; this part gets you to about 26.1
+  The Daughter Who Lived [229, level 30]: needs level 28; this part gets you to about 26.1
+  A Daughter's Love [231, level 30]: needs level 28; this part gets you to about 26.1
+  Translate Abercrombie's Note [251, level 30]: follows Note to the Mayor [160]
+  Translation to Ello [252, level 30]: follows Wait for Sirra to Finish [401]
+  Bride of the Embalmer [253, level 30]: its mobs are level 30; this part gets you to about 26.1
+  Seeking Wisdom [269, level 29]: follows Proving Your Worth [323]
+  Proving Your Worth [323, level 28]: its mobs are level 28; this part gets you to about 25.3
+  Wait for Sirra to Finish [401, level 30]: follows Translate Abercrombie's Note [251]
+  The Carevin Family [1042, level 30]: needs level 25; this part gets you to about 25.1
+  The Scythe of Elune [1043, level 30]: is a level 30 quest; this part gets you to about 26.1
+  Answered Questions [1044, level 30]: follows The Scythe of Elune [1043]
+  The Missing Diplomat [1244, level 30]: needs level 28; this part gets you to about 26.1
+  The Missing Diplomat [1245, level 30]: needs level 28; this part gets you to about 26.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Duskwood - Alliance - part 3 of 3, planned from level 28
+Guide "20-31 Duskwood" in group "Zone Routes (Alliance)": this part has 53 steps, 50 stops
+Written to guides/tbc/Duskwood (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+3 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 28. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 48 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 44 tasks, 19,592 yd on foot; ends at level 28.9; 2 hearths; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 10 more tasks; their whole route comes to 22,880 yd; ends at level 28.9; 2 hearths; at its hardest you are 2.0 levels below the mobs
+Hearthstone: set at Avette Fellwood (Avette Fellwood's inn); 2 hearth steps in the guide.
+
+Quests in the guide (22)
+------------------------
+Start to finish here: 16 (16 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Seeking Wisdom [269, level 29] -> Stormwind City
+
+Need a quest this guide does not hand in - steps show only once that is done (5):
+  The Carevin Family [1042, level 30] - needs one of The Caravan Road [1041]
+  The Scythe of Elune [1043, level 30] - needs one of The Carevin Family [1042]
+  Answered Questions [1044, level 30] - needs one of The Scythe of Elune [1043] -> Darnassus
+  The Missing Diplomat [1244, level 30] - needs one of The Missing Diplomat [1243]
+  The Missing Diplomat [1245, level 30] - needs one of The Missing Diplomat [1244] -> Stormwind City
+
+Worth checking in game
+----------------------
+
+Not planned (2)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Morbent Fel [55, level 32]: its mobs are level 32; this part gets you to about 28.9
+  The Legend of Stalvan [98, level 32]: its mobs are level 32; this part gets you to about 28.9
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,217 @@
+{
+  "zone": "Searing Gorge",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "45-52 Searing Gorge",
+  "file": "Searing Gorge (Horde).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 45,
+      "end": 45.53,
+      "next": 48,
+      "guide": "45-46 Searing Gorge: around Kalaran Windblade",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Kalaran Windblade",
+          "guide": "45-46 Searing Gorge: around Kalaran Windblade",
+          "level": 45,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 48,
+      "end": 48.48,
+      "next": 51,
+      "guide": "48-49 Searing Gorge: around Hansel Heavyhands",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Hansel Heavyhands",
+          "guide": "48-49 Searing Gorge: around Hansel Heavyhands",
+          "level": 48,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 51,
+      "end": 51.09,
+      "guide": "51-52 Searing Gorge",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "51-52 Searing Gorge",
+          "level": 51,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 3441,
+      "level": 48,
+      "req": 40,
+      "xp": 625,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3442,
+      "level": 48,
+      "req": 40,
+      "xp": 6290,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3443,
+      "level": 48,
+      "req": 40,
+      "xp": 6290,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3452,
+      "level": 50,
+      "req": 40,
+      "xp": 6810,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4449,
+      "level": 45,
+      "req": 43,
+      "xp": 5540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7728,
+      "level": 48,
+      "req": 45,
+      "xp": 6290,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7729,
+      "level": 48,
+      "req": 45,
+      "xp": 6290,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3453,
+      "level": 50,
+      "req": 40,
+      "xp": 680,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3454,
+      "level": 50,
+      "req": 40,
+      "xp": 6810,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3462,
+      "level": 50,
+      "req": 40,
+      "xp": 680,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7701,
+      "level": 50,
+      "req": 45,
+      "xp": 6810,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7722,
+      "level": 50,
+      "req": 45,
+      "xp": 6810,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7723,
+      "level": 49,
+      "req": 45,
+      "xp": 6550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7724,
+      "level": 49,
+      "req": 45,
+      "xp": 6550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7727,
+      "level": 49,
+      "req": 45,
+      "xp": 6550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3463,
+      "level": 52,
+      "req": 40,
+      "xp": 11000,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3481,
+      "level": 50,
+      "req": 40,
+      "xp": 680,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Tanaris": 1
+  }
+}

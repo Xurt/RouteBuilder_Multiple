@@ -1,0 +1,169 @@
+Eastern Plaguelands - Alliance - part 1 of 3, planned from level 40
+Guide "40-45 Eastern Plaguelands" in group "Zone Routes (Alliance)": this part has 188 steps, 166 stops
+Written to guides/mop/Eastern Plaguelands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 10 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+5 pickups or hand-ins are within reach of a stop but planned for later.
+3 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 40. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 213 steps kept, 13 new ones slotted in, 1 moved because their prerequisites changed, 8 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 202 tasks, 31,471 yd on foot; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+  everyone (quests that depend on other zones): 25 more tasks; their whole route comes to 33,522 yd; ends at level 43.9; 1 hearth; at its hardest you are 4.7 levels below the mobs
+Hearthstone: set at Fiona (Fiona's inn); 1 hearth step in the guide.
+6 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+11 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (78)
+------------------------
+Start to finish here: 66 (66 for everyone)
+
+Hand-in step only shows once complete (1):
+  Pamela's Doll [27384, level 41] - needs Pamela's Doll (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Into the Woods [27683, level 40] <- Western Plaguelands
+  Hero's Call: Eastern Plaguelands! [28578, level 40, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Stormwind City
+  Hero's Call: Badlands! [28579, level 45, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Stormwind City
+
+Need a quest this guide does not hand in - steps show only once that is done (8):
+  Uncle Carlin [27385, level 41] - needs Pamela's Doll [27384]
+  A Strange Historian [27386, level 41] - needs one of Uncle Carlin [27385]
+  Villains of Darrowshire [27387, level 41] - needs one of A Strange Historian [27386]
+  Heroes of Darrowshire [27388, level 41] - needs one of A Strange Historian [27386]
+  Marauders of Darrowshire [27389, level 41] - needs one of A Strange Historian [27386]
+  The Battle of Darrowshire [27390, level 41] - needs Villains of Darrowshire [27387], Heroes of Darrowshire [27388], Marauders of Darrowshire [27389]
+  Hidden Treasures [27391, level 41] - needs one of The Battle of Darrowshire [27390]
+  Cenarion Tenacity [27544, level 41] - needs one of A Strange Historian [27386]
+
+Worth checking in game
+----------------------
+  Onward, to Light's Hope Chapel [27373, level 40]: could not read how many Fiona's Caravan are needed from the quest text; assumed 8
+  The Trek Continues [27448, level 42]: could not read how many Fiona's Caravan are needed from the quest text; assumed 8
+  Honor and Strength [27449, level 42]: could not read how many Mossflayer Rogue are needed from the quest text; assumed 8
+  Ix'lar the Underlord [27487, level 43]: mixes a kill-credit objective with others; check that "Scourge Guard" really is line 2 in the quest log
+  Nobody to Blame but Myself [27489, level 43]: could not read how many Fiona's Caravan are needed from the quest text; assumed 8
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  The Corpsebeasts [27530, level 45]: its mobs are level 85; this part gets you to about 44.1
+  Fuselight, Ho! [27762, level 45]: needs level 44; this part gets you to about 44.1
+
+Left out (199)
+--------------
+not in the game (on Questie's quest blacklist) (182):
+  Dawn's Gambit [4771], A Matter of Time [4971], Counting Out Time [4972], Counting Out Time [4973], Little Pamela [5142], Pamela's Doll [5149], A Strange Historian [5153], The Annals of Darrowshire [5154], Heroes of Darrowshire [5168], Villains of Darrowshire [5181], Marauders of Darrowshire [5206], Brother Carlin [5210], Defenders of Darrowshire [5211], The Flesh Does Not Lie [5212], The Active Agent [5213], The Great Ezra Grimm [5214], Uncle Carlin [5241], Houses of the Holy [5243], The Archivist [5251], The Truth Comes Crashing Down [5262], Above and Beyond [5263], Lord Maxwell Tyrosus [5264], The Argent Hold [5265], The Restless Souls [5281], The Restless Souls [5282], The Dying, Ras Frostwhisper [5462], Menethil's Gift [5464], Argent Dawn Commission [5503], Corruptor's Scourgestones [5508], Invader's Scourgestones [5509], Minion's Scourgestones [5510], Mantles of the Dawn [5513], Chromatic Mantle of the Dawn [5517], Leonid Barthalomew [5522], Plagued Hatchlings [5529], <NYI> <TXT> Necklace of the Dawn [5530], Betina Bigglezink [5531], <NYI> <TXT> Ring of the Dawn [5532], Healthy Dragon Scale [5582], Sister Pamela [5601], ... 142 more
+repeatable (11):
+  Fiona's Lucky Charm [27555], Gidwin's Weapon Oil [27556], Tarenar's Talisman [27557], Pamela's Doll [27558], Vex'tul's Armbands [27559], Argus' Journal [27560], Rimblat's Stone [27561], Beezil's Cog [27562], Annals of the Silver Hand [28755], Aberrations of Bone [28756], Deiza Plaguehorn [31911]
+special category (sort -372) (3):
+  Taking Back Acherus [13165], The Battle For The Ebon Hold [13166], Where Kings Walk [13188]
+handed in here, but the database does not say where it starts (1):
+  Welcome! [12781]
+dungeon quest (1):
+  A City Under Siege [27422]
+cannot be taken together with Out of the Ziggurat [27481], which is in the guide (1):
+  Journey's End [27527]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Eastern Plaguelands - Alliance - part 2 of 3, planned from level 46
+Guide "40-45 Eastern Plaguelands" in group "Zone Routes (Alliance)": this part has 7 steps, 5 stops
+Written to guides/mop/Eastern Plaguelands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 46. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 46.0
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 3,740 yd; ends at level 46.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Fuselight, Ho! [27762, level 45] -> Badlands
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Pamela's Doll [27384, level 41] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  The Corpsebeasts [27530, level 45]: its mobs are level 85; this part gets you to about 46.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Eastern Plaguelands - Alliance - part 3 of 3, planned from level 83
+Guide "40-45 Eastern Plaguelands" in group "Zone Routes (Alliance)": this part has 8 steps, 7 stops
+Written to guides/mop/Eastern Plaguelands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 83. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 4 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 599 yd on foot; ends at level 83.0; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 4,147 yd; ends at level 83.0; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Pamela's Doll [27384, level 41] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

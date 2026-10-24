@@ -165,7 +165,7 @@ needs a profession (4):
   Dig Rat Stew [862], Root Samples [866], Goblin Engineering [3633], Gnome Engineering [3637]
 needs reputation (3):
   Outrider Basic Care Package [7866], Outrider Standard Care Package [7867], Outrider Advanced Care Package [7868]
-special category (sort -366) (3):
+not in the game (on Questie's quest blacklist) (3):
   Windtotem the Elder [8680], High Mountain the Elder [8686], Moonwarden the Elder [8717]
 starts from a random drop, and no quest in this guide kills those mobs (2):
   Lakota'mani [883], Washte Pawne [885]

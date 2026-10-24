@@ -1,0 +1,68 @@
+Valley of Trials - Horde
+Guide "1-5 Valley of Trials" in group "Zone Routes (Horde)": 59 steps, 49 stops
+Written to guides/mop/Valley of Trials (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+2 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 57 steps kept, 2 new ones slotted in, 2 moved because their prerequisites changed, 11 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 30 tasks, 10,432 yd on foot; ends at level 4.7; 1 hearth; at its hardest you are 1.4 levels below the mobs
+  Orc Warrior: 5 more tasks; their whole route comes to 10,763 yd; ends at level 4.9; 1 hearth; at its hardest you are 1.1 levels below the mobs
+  Orc Hunter: 5 more tasks; their whole route comes to 10,757 yd; ends at level 5.0; 1 hearth
+  Orc Rogue: 5 more tasks; their whole route comes to 10,909 yd; ends at level 4.9; 1 hearth; at its hardest you are 1.1 levels below the mobs
+  Orc Shaman: 5 more tasks; their whole route comes to 10,909 yd; ends at level 4.9; 1 hearth; at its hardest you are 1.1 levels below the mobs
+  Orc Mage: 5 more tasks; their whole route comes to 10,858 yd; ends at level 4.9; 1 hearth; at its hardest you are 1.1 levels below the mobs
+  Orc Warlock: 5 more tasks; their whole route comes to 10,820 yd; ends at level 4.9; 1 hearth; at its hardest you are 1.1 levels below the mobs
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 10,523 yd; ends at level 4.7; 1 hearth; at its hardest you are 1.4 levels below the mobs
+Hearthstone: set at Rarc (Rarc's inn); 1 hearth step in the guide.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+6 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (25)
+------------------------
+Start to finish here: 22 (1 for everyone, 9 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren, 2 Orc Warrior, 2 Orc Hunter, 2 Orc Rogue, 2 Orc Shaman, 2 Orc Warlock, 2 Orc Mage)
+
+Hand-in step only shows once complete (2):
+  Thazz'ril's Pick [25135, level 4, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Thazz'ril's Pick (1) (Burning Blade Coven)
+  Burning Blade Medallion [25132, level 5, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Felstalker slain (5) (Burning Blade Coven); Burning Blade Medallion (1) (Burning Blade Coven)
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Report to Sen'jin Village [25133, level 5, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Burning Blade Medallion [25132] -> Durotar
+
+Worth checking in game
+----------------------
+  Steady Shot [25139, level 3, Orc Hunter]: has a reputation or spell objective, which is not planned
+  Steady Shot [25139, level 3, Orc Hunter]: objective "Training Dummy slain (5)" is line 1 by the database, but RestedXP's guide has "Cast Steady Shot (x5)" there
+  Eviscerate [25141, level 3, Orc Rogue]: has a reputation or spell objective, which is not planned
+  Eviscerate [25141, level 3, Orc Rogue]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Eviscerate (x3)" there
+  Primal Strike [25143, level 3, Orc Shaman]: has a reputation or spell objective, which is not planned
+  Primal Strike [25143, level 3, Orc Shaman]: objective "Training Dummy slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Primal Strike (x3)" there
+  Corruption [25145, level 3, Orc Warlock]: could not read how many Training Dummy are needed from the quest text; assumed 8
+  Corruption [25145, level 3, Orc Warlock]: has a reputation or spell objective, which is not planned
+  Charge [25147, level 3, Orc Warrior]: has a reputation or spell objective, which is not planned
+  Charge [25147, level 3, Orc Warrior]: objective "Training Dummy slain (1)" is line 1 by the database, but RestedXP's guide has "Cast Charge (x1)" there
+  Frost Nova [25149, level 3, Orc Mage]: has a reputation or spell objective, which is not planned
+  Frost Nova [25149, level 3, Orc Mage]: objective "Training Dummy slain (2)" is line 1 by the database, but RestedXP's guide has "Arcane Missiles (x2)" there
+
+Left out (8)
+------------
+not in the game (on Questie's quest blacklist) (3):
+  Vile Familiars [1499], Call of Earth [1516], Call of Earth [1518]
+needs reputation (3):
+  Find Thrall! [32319], The Horde Is Family [32320], De-Subjugation [32372]
+special category (sort -395) (2):
+  Calligraphed Parchment [31156], Tiger Palm [31157]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

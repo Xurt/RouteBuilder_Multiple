@@ -1,0 +1,152 @@
+Elwynn Forest - Alliance
+Guide "2-11 Elwynn Forest" in group "Zone Routes (Alliance)": 110 steps, 76 stops
+Written to guides/mop/Elwynn Forest (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: 57 PROBLEMS
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Human Warrior)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Human Paladin)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Human Hunter)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Human Rogue)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Human Priest)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Human DeathKnight)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Human Mage)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Human Warlock)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Human Monk)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Dwarf Warrior)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Dwarf Paladin)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Dwarf Hunter)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Dwarf Rogue)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Dwarf Priest)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Dwarf DeathKnight)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Dwarf Shaman)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Dwarf Mage)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Dwarf Warlock)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Dwarf Monk)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (NightElf Warrior)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (NightElf Hunter)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (NightElf Rogue)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (NightElf Priest)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (NightElf DeathKnight)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (NightElf Mage)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (NightElf Monk)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (NightElf Druid)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Gnome Warrior)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Gnome Rogue)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Gnome Priest)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Gnome DeathKnight)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Gnome Mage)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Gnome Warlock)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Gnome Monk)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Draenei Warrior)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Draenei Paladin)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Draenei Hunter)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Draenei Priest)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Draenei DeathKnight)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Draenei Shaman)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Draenei Mage)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Draenei Monk)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Worgen Warrior)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Worgen Hunter)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Worgen Rogue)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Worgen Priest)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Worgen DeathKnight)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Worgen Mage)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Worgen Warlock)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Worgen Druid)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Pandaren Warrior)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Pandaren Hunter)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Pandaren Rogue)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Pandaren Priest)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Pandaren Shaman)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Pandaren Mage)
+  ! Westbrook Garrison Needs Help! is handed in before it is picked up (Pandaren Monk)
+Quest log: at most 8 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+3 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 2. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 66 steps kept, 40 new ones slotted in, 0 moved because their prerequisites changed, 1 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 84 tasks, 18,332 yd on foot; ends at level 9.4; 2 hearths; 1 ORDER PROBLEMS; at its hardest you are 5.4 levels below the mobs
+  Human: 8 more tasks; their whole route comes to 20,762 yd; ends at level 9.5; 3 hearths; 1 ORDER PROBLEMS; at its hardest you are 5.4 levels below the mobs
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 19,385 yd; ends at level 9.4; 2 hearths; 1 ORDER PROBLEMS; at its hardest you are 5.4 levels below the mobs
+  Pandaren (quests that depend on other zones): 9 more tasks; their whole route comes to 23,179 yd; ends at level 9.4; 2 hearths; 1 ORDER PROBLEMS; at its hardest you are 5.4 levels below the mobs
+Hearthstone: set at Toddrick (Toddrick's inn); 3 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 7 for Riverpaw Gnoll Bounty (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+  level 5 for Dungar Longdrink (Human)
+  level 9 for Furlbrow's Deed (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+9 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+6 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+3 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (46)
+------------------------
+Start to finish here: 37 (1 for everyone, 32 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren, 4 Human)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Furlbrow's Deed [184, level 10, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Westfall
+  Hero's Call: Westfall! [26378, level 10, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Westfall
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Report to Goldshire [54, level 5, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Northshire
+  Rest and Relaxation [2158, level 5, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Northshire
+  A New Fate [31450, level 10, Pandaren] <- The Wandering Isle
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Manhunt [147, level 10, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Collector [123]
+  Joining the Alliance [30987, level 10, Pandaren] - needs one of A New Fate [31450]
+  The Alliance Way [30988, level 10, Pandaren] - needs one of Joining the Alliance [30987]
+  An Old Pit Fighter [30989, level 10, Pandaren] - needs one of The Alliance Way [30988]
+
+Worth checking in game
+----------------------
+  Protect the Frontier [52, level 10, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Gray Forest Wolf" really is line 2 in the quest log
+  The Alliance Way [30988, level 10, Pandaren]: "Walk With Varian Credit (1)" has no place in the data; taken to be done where the quest is given
+  A New Fate [31450, level 10, Pandaren]: objective "Spirit of Master Shang Xi" is line 1 by the database, but RestedXP's guide has "1/1 Choose your faction" there
+
+Left out (569)
+--------------
+not in the game (on Questie's quest blacklist) (371):
+  Deliver Thomas' Report [39], Shipment to Stormwind [61], The Legend of Stalvan [70], The Legend of Stalvan [72], The Legend of Stalvan [74], The Legend of Stalvan [75], Report to Gryan Stoutmantle [109], The Price of Shoes [118], Messenger to Stormwind [120], The Defias Brotherhood [135], <NYI> <TXT> Stormwind Commendation [137], Oh Brother. . . [167], Collecting Memories [168], A Warden of the Alliance [171], Theocritus' Retrieval [178], A Meal Served Cold [212], Morganth [249], Seeking Wisdom [269], The Doomed Fleet [270], Cleansing the Eye [293], Blessed Arm [322], Armed and Ready [325], A Noble Brew [335], A Noble Brew [336], An Old History Book [337], Speaking of Fortitude [343], Return to Kristoff [346], Look to an Old Friend [350], The Unsent Letter [373], The Color of Blood [388], The Curious Visitor [392], Shadow of the Past [393], The Head of the Beast [394], Brotherhood's End [395], An Audience with the King [396], You Have Served Us Well [397], Humble Beginnings [399], The Attack! [434], Jaina's Autograph [558], Stormwind Library [579], ... 331 more
+above this zone's range of 6-12 (99):
+  Stormpike's Delivery [353], The Perenolde Tiara [543], Elmore's Task [1097], Feast at the Blue Recluse [1271], Victory for the Alliance [7495], Celebrating Good Times [7496], The Lord of Blackrock [7781], The Lord of Blackrock [7782], Alicia's Poem [11451], Reborn From The Ashes [13347], A Royal Coup [13370], The Battle For The Undercity [13377], Call of Duty [14482], A Most Puzzling Circumstance [24428], Rise of the Brotherhood [26322], Hero's Call: Redridge Mountains! [26365], Return to Sentinel Hill [26370], My Son, the Prince [26960], Rallying the Fleet [26975], Twilight Investigation [26977], The Usual Suspects [26997], Missing Parts [27038], Peasant Problems [27044], Unholy Cow [27060], He's Holding Out on Us [27064], The Old Barracks [27072], Cataclysm in the Catacombs [27092], A Villain Unmasked [27106], The Maelstrom [27203], A Summons from Ander Germaine [27225], Proof of Treachery [27240], Return to Jaina [27241], Lord Grayson Shadowbreaker [27265], Wulf Calls [27266], Make Contact with SI:7 [27267], Make Haste to the Cathedral [27268], An Audience with the Farseer [27270], Journey to the Wizard's Sanctum [27271], Demisette Sends Word [27272], An Invitation from Moonglade [27273], ... 59 more
+repeatable (27):
+  Give Gerard a Drink [16], CLUCK! [3861], Crushing the Crown [24658], Crushing the Crown [24659], Crushing the Crown [24660], Crushing the Crown [24662], Crushing the Crown [24663], Crushing the Crown [24664], Crushing the Crown [24665], Crushing the Crown [24666], Nibbler!  No! [25105], A Present for Lila [25154], Ogrezonians in the Mood [25155], Elemental Goo [25156], The Latest Fashion! [25157], Penny's Pumpkin Pancakes [26153], Feeling Crabby? [26177], The King's Cider [26183], A Fisherman's Feast [26190], Orphans Like Cookies Too! [26192], Hitting a Walleye [26414], Diggin' For Worms [26420], Rock Lobster [26442], Big Gulp [26488], Thunder Falls [26536], Julia Stevens [31693], What We've Been Training For [32863]
+special category (sort -394) (23):
+  Learning the Ropes [31308], On The Mend [31309], Julia, The Pet Tamer [31316], Got one! [31550], Learning the Ropes [31591], On The Mend [31592], Got one! [31593], Old MacDonald [31724], Level Up! [31785], Level Up! [31821], Battle Pet Tamers: Kalimdor [31889], Battle Pet Tamers: Eastern Kingdoms [31902], A Tamer's Homecoming [31917], Battle Pet Tamers: Outland [31919], Battle Pet Tamers: Northrend [31927], Battle Pet Tamers: Pandaria [31930], Battle Pet Tamers: Cataclysm [31966], The Returning Champion [31975], The Returning Champion [31976], Exceeding Expectations [31981], A Brief Reprieve [31984], The Triumphant Return [31985], Audrey Burnhep [32008]
+special category (sort -23) (15):
+  Prophecies Of Doom [25253], Signs Of The Times [25282], Infiltrating the Cult [25290], The Missing [25414], Spreading The Word [25415], The Master's Plan [25416], The Doomsday Plan [25417], Thwarting Twilight's Hammer [25418], Warn King Wrynn [25425], The Elements Cry Out [27307], The Wildhammer [27540], Show Me Your Papers [27741], Arrest the Infiltrators [27749], Back Under Cover [27767], I Said the Words... [27780]
+dungeon quest (10):
+  Twilight Scheming [28328], A Dangerous Alliance [28393], The Golem Lord's Creations [28394], The Pyromancer's Grimoire [28398], Stones of Binding [28399], Slaves of the Firelord [28401], Weapons of Darkness [28405], The Dark Iron Army [28406], Your Time Has Come [29453], The End Time [30095]
+needs a profession (9):
+  The Journey Has Just Begun [7497], Forged Documents [27675], Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482], Potion Master [92336], Elixir Master [92337], Transmutation Master [92338]
+special category (sort -376) (4):
+  Pilfering Perfume [24656], A Friendly Chat... [24657], Fireworks At The Gilded Rose [24848], Hot On The Trail [24849]
+handed in here, but the database does not say where it starts (2):
+  Dungar Longdrink [6261], Continue to Stormwind [6281]
+special category (sort -284) (2):
+  Stormwind [12774], Hammering It Out [25563]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29387], Guardians of Hyjal: Call of the Ancients [29391]
+special category (sort -372) (1):
+  Where Kings Walk [13188]
+cannot be taken together with Hero's Call: Westfall! [26378], which is in the guide (1):
+  Hero's Call: Westfall! [28562]
+special category (sort -380) (1):
+  Bwemba's Spirit [29100]
+helper for Bwemba's Spirit (1):
+  To Fort Livingston [29102]
+special category (sort -381) (1):
+  The Call of the World-Shaman [29439]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

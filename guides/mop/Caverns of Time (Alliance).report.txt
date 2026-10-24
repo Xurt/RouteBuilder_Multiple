@@ -1,0 +1,57 @@
+Caverns of Time - Alliance
+Guide "68-70 Caverns of Time" in group "Zone Routes (Alliance)": 10 steps, 7 stops
+Written to guides/mop/Caverns of Time (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 68. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 9 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+(The zone has quests below level 68, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 7 tasks, 3,821 yd on foot; ends at level 68.0
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 4,125 yd; ends at level 68.0
+  Human Priest/Human Shaman/Human Mage/Human Warlock/Human Druid/Dwarf Priest/Dwarf Shaman/Dwarf Mage/Dwarf Warlock/Dwarf Druid/NightElf Priest/NightElf Shaman/NightElf Mage/NightElf Warlock/NightElf Druid/Gnome Priest/Gnome Shaman/Gnome Mage/Gnome Warlock/Gnome Druid/Draenei Priest/Draenei Shaman/Draenei Mage/Draenei Warlock/Draenei Druid/Worgen Priest/Worgen Shaman/Worgen Mage/Worgen Warlock/Worgen Druid/Pandaren Priest/Pandaren Shaman/Pandaren Mage/Pandaren Warlock/Pandaren Druid (quests that depend on other zones): 1 more tasks; their whole route comes to 4,125 yd; ends at level 68.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (6)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Old Hillsbrad [10282, level 68] -> Old Hillsbrad Foothills
+  The Black Morass [10296, level 70] -> The Black Morass
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  The Savior of Kalimdor [8802, level 60] <- Ahn'Qiraj - Raid - Vault of C'thun
+  A Legendary Engagement [29132, level 85, Human Priest/Human Shaman/Human Mage/Human Warlock/Human Druid/Dwarf Priest/Dwarf Shaman/Dwarf Mage/Dwarf Warlock/Dwarf Druid/NightElf Priest/NightElf Shaman/NightElf Mage/NightElf Warlock/NightElf Druid/Gnome Priest/Gnome Shaman/Gnome Mage/Gnome Warlock/Gnome Druid/Draenei Priest/Draenei Shaman/Draenei Mage/Draenei Warlock/Draenei Druid/Worgen Priest/Worgen Shaman/Worgen Mage/Worgen Warlock/Worgen Druid/Pandaren Priest/Pandaren Shaman/Pandaren Mage/Pandaren Warlock/Pandaren Druid] <- Stormwind City
+
+Worth checking in game
+----------------------
+
+Not planned (3)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  A Wrinkle in Time [29134, level 85]: needs level 85; this part gets Priest/Shaman/Mage/Warlock/Druid characters to about 68.0
+  All-Seeing Eye [29135, level 85]: needs level 85; this part gets Priest/Shaman/Mage/Warlock/Druid characters to about 68.0
+  On a Wing and a Prayer [29193, level 85]: needs level 85; this part gets Priest/Shaman/Mage/Warlock/Druid characters to about 68.0
+
+Left out (34)
+-------------
+not in the game (on Questie's quest blacklist) (16):
+  Anachronos [8303], A Pawn on the Eternal Board [8519], The Charge of the Dragonflights [8555], The Wrath of Neptulon [8729], Nefarius's Corruption [8730], The Champion Returns [8741], The Might of Kalimdor [8742], Frame of Atiesh [9250], Atiesh, the Befouled Greatstaff [9251], Atiesh, Greatstaff of the Guardian [9257], Atiesh, Greatstaff of the Guardian [9269], Atiesh, Greatstaff of the Guardian [9270], Atiesh, Greatstaff of the Guardian [9271], Return to Andormu [10285], Hero of the Brood [10298], Revered Among the Keepers of Time [10561]
+needs reputation (15):
+  The Path of the Protector [8747], The Path of the Protector [8748], The Path of the Protector [8749], The Path of the Protector [8750], The Protector of Kalimdor [8751], The Path of the Conqueror [8752], The Path of the Conqueror [8753], The Path of the Conqueror [8754], The Path of the Conqueror [8755], The Qiraji Conqueror [8756], The Path of the Invoker [8757], The Path of the Invoker [8758], The Path of the Invoker [8759], The Path of the Invoker [8760], The Grand Invoker [8761]
+repeatable (3):
+  The Changing of Paths - Protector No More [8764], The Changing of Paths - Invoker No More [8765], The Changing of Paths - Conqueror No More [8766]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

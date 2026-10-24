@@ -1,7 +1,7 @@
 {
   "about": "Step order taken from RestedXP's guide by RxpToLock. RouteBuilder follows it and slots in this zone's other quests. Lines can be moved by hand. Delete the file, or build with --fresh, to plan the guide from scratch.",
   "guide": "from RestedXP: 1-6 Shadowglen, 6-11 Teldrassil, 1-6 Northshire, 6-11 Elwynn Forest, 11-13 Loch Modan, 1-6 Coldridge Valley, 11-12 Elwynn (Dwarf/Gnome), 12-14 Loch Modan (Dwarf/Gnome), 13-15 Westfall, 14-16 Darkshore, 16-19 Darkshore, 19-20 Redridge, 20-21 Darkshore/Ashenvale, 21-23 Stonetalon/Ashenvale, 23-24 Wetlands, 24-27 Duskwood/Redridge, 27-29 Wetlands/Hillsbrad, 29-30 Ashenvale, 29-32 Duskwood, 32-33 Hillsbrad/Arathi, 33-34 Thousand Needles, 34-35 Stranglethorn Vale I, 35-37 Desolace, 36-38 Stranglethorn Vale II, 38-39 Swamp of Sorrows, 39-40 Alterac/Arathi, 40-40 Dustwallow Marsh2, 40-41 Desolace, 41-41 Badlands, 41-43 STV/Swamp of Sorrows, 43-44 Tanaris, 44-48 Feralas, 48-49 Tanaris/Hinterlands, 49-50 Tanaris/Un'Goro, 50-50 Stranglethorn Vale, 50-51 Searing Gorge, 51-51 Blasted Lands, 51-52 WPL, 52-52 Felwood, 52-53 Feralas, 53-53 Azshara, 53-54 UnGoro Crater, 54-55 Felwood/Winterspring, 55-56 Winterspring, 56-57 Burning Steppes, 57-59 Western/Eastern Plaguelands, 59-59 Winterspring/Silithus part 1, 59-60 Winterspring/Silithus part 2, ?, ?, ?, ?",
-  "saved": "2026-10-23 14:25",
+  "saved": "2026-10-23 18:21",
   "levels": "RestedXP",
   "parts": [
     {

@@ -1,0 +1,196 @@
+{
+  "zone": "Deathknell",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "3-4 Deathknell",
+  "file": "Deathknell (Horde).lua",
+  "continent": -6454,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 3,
+      "end": 4.25,
+      "guide": "3-4 Deathknell",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "3-4 Deathknell",
+          "level": 3,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 3095,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Undead Warrior"
+    },
+    {
+      "id": 3096,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Undead Rogue"
+    },
+    {
+      "id": 3097,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Undead Priest"
+    },
+    {
+      "id": 3098,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Undead Mage"
+    },
+    {
+      "id": 3099,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Undead Warlock"
+    },
+    {
+      "id": 24959,
+      "level": 1,
+      "req": 1,
+      "xp": 10,
+      "part": 1,
+      "section": 0,
+      "tag": "Undead",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 24961,
+      "level": 3,
+      "req": 2,
+      "xp": 190,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 24962,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Undead Hunter"
+    },
+    {
+      "id": 24964,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Undead Hunter"
+    },
+    {
+      "id": 24965,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Undead Mage"
+    },
+    {
+      "id": 24966,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Undead Priest"
+    },
+    {
+      "id": 24967,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Undead Rogue"
+    },
+    {
+      "id": 24968,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Undead Warlock"
+    },
+    {
+      "id": 24969,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Undead Warrior"
+    },
+    {
+      "id": 24971,
+      "level": 5,
+      "req": 2,
+      "xp": 560,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 26801,
+      "level": 3,
+      "req": 1,
+      "xp": 315,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26802,
+      "level": 3,
+      "req": 3,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28672,
+      "level": 3,
+      "req": 3,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    }
+  ],
+  "carriedTo": {
+    "Tirisfal Glades": 2
+  }
+}

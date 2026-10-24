@@ -63,7 +63,7 @@ repeatable (4):
   Warsong Runner Update [6545], Warsong Outrider Update [6546], Warsong Scout Update [6547], Warsong Saw Blades [6581]
 special category (sort -1) (1):
   Shrouded in Nightmare [8446]
-special category (sort -366) (1):
+not in the game (on Questie's quest blacklist) (1):
   Riversong the Elder [8725]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

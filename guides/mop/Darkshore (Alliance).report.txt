@@ -1,0 +1,270 @@
+Darkshore - Alliance - part 1 of 3, planned from level 10
+Guide "10-20 Darkshore" in group "Zone Routes (Alliance)": this part has 248 steps, 208 stops
+Written to guides/mop/Darkshore (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: 57 PROBLEMS
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Human Warrior)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Human Paladin)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Human Hunter)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Human Rogue)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Human Priest)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Human DeathKnight)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Human Mage)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Human Warlock)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Human Monk)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Dwarf Warrior)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Dwarf Paladin)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Dwarf Hunter)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Dwarf Rogue)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Dwarf Priest)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Dwarf DeathKnight)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Dwarf Shaman)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Dwarf Mage)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Dwarf Warlock)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Dwarf Monk)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (NightElf Warrior)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (NightElf Hunter)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (NightElf Rogue)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (NightElf Priest)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (NightElf DeathKnight)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (NightElf Mage)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (NightElf Monk)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (NightElf Druid)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Gnome Warrior)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Gnome Rogue)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Gnome Priest)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Gnome DeathKnight)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Gnome Mage)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Gnome Warlock)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Gnome Monk)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Draenei Warrior)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Draenei Paladin)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Draenei Hunter)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Draenei Priest)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Draenei DeathKnight)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Draenei Shaman)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Draenei Mage)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Draenei Monk)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Worgen Warrior)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Worgen Hunter)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Worgen Rogue)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Worgen Priest)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Worgen DeathKnight)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Worgen Mage)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Worgen Warlock)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Worgen Druid)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Pandaren Warrior)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Pandaren Hunter)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Pandaren Rogue)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Pandaren Priest)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Pandaren Shaman)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Pandaren Mage)
+  ! In Aid of the Refugees is picked up before any of the quests that unlock it (Pandaren Monk)
+Quest log: at most 7 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+5 pickups or hand-ins are within reach of a stop but planned for later.
+12 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 10. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 226 steps kept, 41 new ones slotted in, 0 moved because their prerequisites changed, 19 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 254 tasks, 28,191 yd on foot; ends at level 19.5; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 3.0 levels below the mobs
+  everyone (quests that depend on other zones): 6 more tasks; their whole route comes to 26,404 yd; ends at level 19.4; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 3.0 levels below the mobs
+  NightElf (quests that depend on other zones): 4 more tasks; their whole route comes to 30,837 yd; ends at level 19.5; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 3.0 levels below the mobs
+  Worgen (quests that depend on other zones): 3 more tasks; their whole route comes to 30,004 yd; ends at level 19.4; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 3.0 levels below the mobs
+Hearthstone: set at Kyndri (Kyndri's inn); 1 hearth step in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 13 for In Aid of the Refugees
+  level 13 for Coaxing the Spirits (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+8 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+10 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+9 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+2 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (95)
+------------------------
+Start to finish here: 85 (20 for everyone, 64 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren, 1 Human/Dwarf/NightElf/Gnome/Draenei/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  One Shot.  One Kill. [5713, level 15] -> Ashenvale
+  Ashes in Ashenvale [26408, level 20] -> Ashenvale
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  To Darnassus [6341, level 7, NightElf] <- Teldrassil
+  The Howling Oak [28517, level 10, Worgen] <- Teldrassil
+  Home of the Kaldorei [14039, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Teldrassil
+
+Need a quest this guide does not hand in - steps show only once that is done (5):
+  An Unexpected Gift [6342, level 7, NightElf] - needs one of To Darnassus [6341]
+  Return to Nyoma [6343, level 7, NightElf] - needs one of An Unexpected Gift [6342] -> Teldrassil
+  Breaking Waves of Change [26385, level 10, Worgen] - needs one of The Howling Oak [28517]
+  Swift Response [13508, level 13] - needs one of Reason to Worry [13506]
+  One Bitter Wish [13511, level 13] - needs one of Swift Response [13508]
+
+Worth checking in game
+----------------------
+  The Ancients' Ire [13514, level 14]: could not read how many Shatterspear Hut Fire Bunny are needed from the quest text; assumed 8
+  The Ancients' Ire [13514, level 14]: mixes a kill-credit objective with others; check that "Shatterspear Priestess" really is line 2 in the quest log
+  Twice Removed [13565, level 12, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Darkscale Scout" really is line 2 in the quest log
+  Twice Removed [13565, level 12, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Darkscale Scout (8)" is line 2 by the database, but RestedXP's guide has "|6/6 Withered Ents called" there
+  Consumed [13881, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: "Watering Hole Investigated" is assumed to be line 2 in the quest log; check it
+  Leave No Tracks [13892, level 19, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Foreman Balsoth" is line 1 by the database, but RestedXP's guide has "|1/1 Twilight's Hammer surveillance" there
+
+Put off to a later part (15)
+----------------------------
+These need a higher level than this part ends at:
+  The Seeds of Life [13882, level 18]: its mobs are level 55; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 20.0
+  In Defense of Darkshore [13885, level 19]: follows An Ounce of Prevention [13925]
+  The Devourer of Darkshore [13891, level 18]: follows In Defense of Darkshore [13885]
+  An Ounce of Prevention [13925, level 18]: follows The Seeds of Life [13882]
+  A Summons from Ander Germaine [27225, level 20]: needs level 20; this part gets Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior characters to about 20.0
+  Lord Grayson Shadowbreaker [27265, level 20]: needs level 20; this part gets Dwarf Paladin/Draenei Paladin characters to about 20.0
+  Wulf Calls [27266, level 20]: needs level 20; this part gets Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter characters to about 20.0
+  Make Contact with SI:7 [27267, level 20]: needs level 20; this part gets Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue characters to about 20.0
+  Make Haste to the Cathedral [27268, level 20]: needs level 20; this part gets Human Priest/Dwarf Priest/Draenei Priest/Worgen Priest/Pandaren Priest characters to about 20.0
+  The Temple of the Moon [27269, level 20]: needs level 20; this part gets NightElf Priest characters to about 20.0
+  An Audience with the Farseer [27270, level 20]: needs level 20; this part gets Dwarf Shaman/Draenei Shaman characters to about 20.0
+  Journey to the Wizard's Sanctum [27271, level 20]: needs level 20; this part gets Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage characters to about 20.0
+  An Invitation from Moonglade [27273, level 20]: needs level 20; this part gets NightElf Druid/Worgen Druid characters to about 20.0
+  The Chief Surgeon [27274, level 20]: needs level 20; this part gets Gnome Priest characters to about 20.0
+  Favored of Elune [27362, level 20]: needs level 20; this part gets NightElf Priest characters to about 20.0
+
+Left out (214)
+--------------
+not in the game (on Questie's quest blacklist) (154):
+  A Lesson to Learn [26], Rise of the Silithid [162], The Absent Minded Prospector [741], The Master's Glaive [944], The Twilight Camp [949], Buzzbox 827 [983], Buzzbox 411 [1001], Buzzbox 323 [1002], Buzzbox 525 [1003], Velinde Starsong [1037], Velinde's Effects [1038], Answered Questions [1044], Reception from Tyrande [1081], Mortality Wanes [1142], Vorlus Vilehoof [1683], Elanaria [1684], The Shade of Elura [1686], Smith Mathiel [1692], Weapons of Elunite [1693], Yorus Barleybrew [1698], Mathiel [1703], Sunscorched Shells [1710], Mathiel's Armor [1711], The Apple Falls [2241], Destiny Calls [2242], Erion Shadewhisper [2259], Master of the Wild Leather [2853], Doling Justice [2972], In Nightmares [3370], Prayer to Elune [3378], Assisting Arch Druid Staghelm [3763], Un'Goro Soil [3764], Morrowgrain Research [3781], Morrowgrain Research [3785], Morrowgrain to Darnassus [3803], Rise of the Silithid [4267], March of the Silithid [4493], Calm Before the Storm [4508], Calm Before the Storm [4510], As Water Cascades [4812], ... 114 more
+above this zone's range of 10-21 (27):
+  Hero's Call: Vashj'ir! [27724], Hero's Call: Mount Hyjal! [27726], Hero's Call: Deepholm! [27727], Meet with Ander Germaine [28258], Meet with Wulf Hansreim [28260], Meet with Lord Tony Romano [28262], Meet with Maginor Dumas [28263], Meet with Lord Grayson Shadowbreaker [28268], Meet with High Priestess Laurena [28285], Meet with Farseer Umbrua [28287], Moonglade Calls [28289], Hero's Call: Thousand Needles! [28503], Hero's Call: Tanaris! [28507], Hero's Call: Feralas! [28511], Hero's Call: Un'Goro Crater! [28525], Hero's Call: Silithus! [28528], Hero's Call: Desolace! [28531], Hero's Call: Stonetalon Mountains! [28539], Hero's Call: Felwood! [28543], Hero's Call: Winterspring! [28544], Hero's Call: Southern Barrens! [28550], Hero's Call: Dustwallow Marsh! [28552], Hero's Call: Uldum! [28558], Hero's Call: Outland! [28708], Hero's Call: Northrend! [28709], Hero's Call: Twilight Highlands! [28716], The Troll Incursion [29156]
+repeatable (10):
+  The Secret to Perfect Kimchi [29313], Remembering the Ancestors [29314], Back to Basics [29316], Ribs for the Sentinels [29318], Happy as a Clam Digger [29321], Stocking Up [29323], The Sister's Pendant [29324], A Slippery Snack [29325], Spice Bread Aplenty [29357], An Old Favorite [29359]
+needs a profession (6):
+  Moonglow Vest [1582], A Taste for Grouper [13537], Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+special category (sort -394) (4):
+  Learning the Ropes [31582], On The Mend [31583], Got one! [31584], Level Up! [31832]
+helper for The Ritual Bond (3):
+  Spirit of the Stag [13567], Spirit of the Moonstalker [13568], Spirit of the Thistle Bear [13597]
+needs reputation (3):
+  Darnassus Attacked? [32414], Jaina's Resolution [32416], Tracking the Thieves [32460]
+special category (sort -284) (2):
+  Darnassus [12773], Hammering It Out [25563]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29387], Guardians of Hyjal: Call of the Ancients [29391]
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  Reason to Worry [13506]
+cannot be taken together with Breaking Waves of Change [26383], which is in the guide (1):
+  Hero's Call: Darkshore! [28490]
+cannot be taken together with Ashes in Ashenvale [26408], which is in the guide (1):
+  Hero's Call: Ashenvale! [28492]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Darkshore - Alliance - part 2 of 3, planned from level 22
+Guide "10-20 Darkshore" in group "Zone Routes (Alliance)": this part has 12 steps, 10 stops
+Written to guides/mop/Darkshore (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 22. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 12 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior: 1 tasks, 0 yd on foot; ends at level 22.0
+  Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage: 1 more tasks; their whole route comes to 1,189 yd; ends at level 22.0
+  Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter: 1 more tasks; their whole route comes to 752 yd; ends at level 22.0
+  Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue: 1 more tasks; their whole route comes to 685 yd; ends at level 22.0
+  Human Priest/Dwarf Priest/Draenei Priest/Worgen Priest/Pandaren Priest: 1 more tasks; their whole route comes to 1,034 yd; ends at level 22.0
+  Dwarf Paladin/Draenei Paladin: 1 more tasks; their whole route comes to 1,007 yd; ends at level 22.0
+  Dwarf Shaman/Draenei Shaman: 1 more tasks; their whole route comes to 1,011 yd; ends at level 22.0
+  NightElf Druid/Worgen Druid: 1 more tasks; their whole route comes to 805 yd; ends at level 22.0
+  NightElf Priest: 3 more tasks; their whole route comes to 1,072 yd; ends at level 22.0
+  Gnome Priest: 1 more tasks; their whole route comes to 1,034 yd; ends at level 22.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (11)
+------------------------
+Start to finish here: 1 (0 for everyone, 1 NightElf Priest)
+
+Picked up here, handed in elsewhere - these stay in the log (10):
+  A Summons from Ander Germaine [27225, level 20, Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior] -> Stormwind City
+  Lord Grayson Shadowbreaker [27265, level 20, Dwarf Paladin/Draenei Paladin] -> Stormwind City
+  Wulf Calls [27266, level 20, Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter] -> Stormwind City
+  Make Contact with SI:7 [27267, level 20, Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue] -> Stormwind City
+  Make Haste to the Cathedral [27268, level 20, Human Priest/Dwarf Priest/Draenei Priest/Worgen Priest/Pandaren Priest] -> Stormwind City
+  An Audience with the Farseer [27270, level 20, Dwarf Shaman/Draenei Shaman] -> Stormwind City
+  Journey to the Wizard's Sanctum [27271, level 20, Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage] -> Stormwind City
+  An Invitation from Moonglade [27273, level 20, NightElf Druid/Worgen Druid] -> Moonglade
+  The Chief Surgeon [27274, level 20, Gnome Priest] -> Stormwind City
+  Favored of Elune [27362, level 20, NightElf Priest] -> Stormwind City
+
+Worth checking in game
+----------------------
+
+Put off to a later part (4)
+---------------------------
+These need a higher level than this part ends at:
+  The Seeds of Life [13882, level 18]: its mobs are level 55; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 22.5
+  In Defense of Darkshore [13885, level 19]: follows An Ounce of Prevention [13925]
+  The Devourer of Darkshore [13891, level 18]: follows In Defense of Darkshore [13885]
+  An Ounce of Prevention [13925, level 18]: follows The Seeds of Life [13882]
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Darkshore - Alliance - part 3 of 3, planned from level 53
+Guide "10-20 Darkshore" in group "Zone Routes (Alliance)": this part has 17 steps, 16 stops
+Written to guides/mop/Darkshore (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 53. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 16 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 16 tasks, 2,758 yd on foot; ends at level 53.1; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 4 (0 for everyone, 4 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Worth checking in game
+----------------------
+  An Ounce of Prevention [13925, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Moonstalker Matriarch (8)" is line 1 by the database, but RestedXP's guide has "|1/1 Lifebringer Sapling Tested" there
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

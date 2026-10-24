@@ -1,0 +1,569 @@
+{
+  "zone": "Duskwood",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "20-31 Duskwood",
+  "file": "Duskwood (Alliance).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 20,
+      "end": 21.04,
+      "next": 24,
+      "guide": "20-21 Duskwood: around Elaine Carevin",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Elaine Carevin",
+          "guide": "20-21 Duskwood: around Elaine Carevin",
+          "level": 20,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 24,
+      "end": 25.03,
+      "next": 28,
+      "guide": "24-25 Duskwood: around Clerk Daltry",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Clerk Daltry",
+          "guide": "24-25 Duskwood: around Clerk Daltry",
+          "level": 24,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 28,
+      "end": 28.92,
+      "guide": "28-29 Duskwood: around Sirra Von\u0027Indi",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "around Sirra Von\u0027Indi",
+          "guide": "28-29 Duskwood: around Sirra Von\u0027Indi",
+          "level": 28,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 5,
+      "level": 20,
+      "req": 17,
+      "xp": 390,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 56,
+      "level": 24,
+      "req": 18,
+      "xp": 1450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 68,
+      "level": 28,
+      "req": 22,
+      "xp": 1700,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Westfall"
+    },
+    {
+      "id": 78,
+      "level": 28,
+      "req": 22,
+      "xp": 570,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 93,
+      "level": 20,
+      "req": 17,
+      "xp": 780,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 95,
+      "level": 25,
+      "req": 20,
+      "xp": 1000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 145,
+      "level": 18,
+      "req": 18,
+      "xp": 1000,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Redridge Mountains"
+    },
+    {
+      "id": 148,
+      "level": 24,
+      "req": 20,
+      "xp": 485,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 149,
+      "level": 24,
+      "req": 20,
+      "xp": 485,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 154,
+      "level": 24,
+      "req": 20,
+      "xp": 195,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 156,
+      "level": 24,
+      "req": 20,
+      "xp": 970,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 157,
+      "level": 24,
+      "req": 20,
+      "xp": 1450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 158,
+      "level": 24,
+      "req": 20,
+      "xp": 485,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 159,
+      "level": 24,
+      "req": 20,
+      "xp": 970,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 163,
+      "level": 20,
+      "req": 17,
+      "xp": 390,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 164,
+      "level": 23,
+      "req": 17,
+      "xp": 920,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 165,
+      "level": 25,
+      "req": 17,
+      "xp": 1000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 226,
+      "level": 21,
+      "req": 19,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 240,
+      "level": 20,
+      "req": 17,
+      "xp": 780,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 245,
+      "level": 21,
+      "req": 17,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 325,
+      "level": 29,
+      "req": 20,
+      "xp": 590,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 1041,
+      "level": 30,
+      "req": 25,
+      "xp": 1200,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Stranglethorn Vale"
+    },
+    {
+      "id": 1243,
+      "level": 28,
+      "req": 28,
+      "xp": 230,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 9429,
+      "level": 20,
+      "req": 18,
+      "xp": 780,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 57,
+      "level": 26,
+      "req": 19,
+      "xp": 2100,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 58,
+      "level": 30,
+      "req": 18,
+      "xp": 2450,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 66,
+      "level": 28,
+      "req": 22,
+      "xp": 230,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 101,
+      "level": 25,
+      "req": 18,
+      "xp": 2550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 133,
+      "level": 27,
+      "req": 20,
+      "xp": 1650,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 173,
+      "level": 28,
+      "req": 23,
+      "xp": 1150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 174,
+      "level": 25,
+      "req": 20,
+      "xp": 2000,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 175,
+      "level": 25,
+      "req": 20,
+      "xp": 1000,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 177,
+      "level": 25,
+      "req": 20,
+      "xp": 1500,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 230,
+      "level": 25,
+      "req": 21,
+      "xp": 1000,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 262,
+      "level": 25,
+      "req": 20,
+      "xp": 510,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 265,
+      "level": 25,
+      "req": 20,
+      "xp": 200,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 266,
+      "level": 25,
+      "req": 20,
+      "xp": 200,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 268,
+      "level": 25,
+      "req": 20,
+      "xp": 510,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 453,
+      "level": 25,
+      "req": 20,
+      "xp": 1000,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 134,
+      "level": 30,
+      "req": 20,
+      "xp": 1200,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 160,
+      "level": 30,
+      "req": 20,
+      "xp": 610,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 181,
+      "level": 30,
+      "req": 20,
+      "xp": 2450,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 221,
+      "level": 29,
+      "req": 23,
+      "xp": 1750,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 222,
+      "level": 31,
+      "req": 23,
+      "xp": 1900,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 223,
+      "level": 31,
+      "req": 23,
+      "xp": 3150,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 225,
+      "level": 30,
+      "req": 25,
+      "xp": 610,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 227,
+      "level": 30,
+      "req": 28,
+      "xp": 245,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 228,
+      "level": 30,
+      "req": 28,
+      "xp": 2450,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 229,
+      "level": 30,
+      "req": 28,
+      "xp": 245,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 231,
+      "level": 30,
+      "req": 28,
+      "xp": 1850,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 251,
+      "level": 30,
+      "req": 20,
+      "xp": 245,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 252,
+      "level": 30,
+      "req": 20,
+      "xp": 245,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 253,
+      "level": 30,
+      "req": 20,
+      "xp": 3650,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 323,
+      "level": 28,
+      "req": 23,
+      "xp": 2300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 401,
+      "level": 30,
+      "req": 20,
+      "xp": 1850,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Redridge Mountains": 1,
+    "Elwynn Forest": 4,
+    "Westfall": 1,
+    "Teldrassil": 1
+  }
+}

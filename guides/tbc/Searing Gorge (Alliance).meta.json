@@ -1,0 +1,248 @@
+{
+  "zone": "Searing Gorge",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "43-52 Searing Gorge",
+  "file": "Searing Gorge (Alliance).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 43,
+      "end": 43.07,
+      "next": 46,
+      "guide": "43-44 Searing Gorge",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "43-44 Searing Gorge",
+          "level": 43,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 46,
+      "end": 46.81,
+      "next": 49,
+      "guide": "46-47 Searing Gorge: around Hansel Heavyhands",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Hansel Heavyhands",
+          "guide": "46-47 Searing Gorge: around Hansel Heavyhands",
+          "level": 46,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 49,
+      "end": 49.3,
+      "guide": "49-50 Searing Gorge: around Kalaran Windblade",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "around Kalaran Windblade",
+          "guide": "49-50 Searing Gorge: around Kalaran Windblade",
+          "level": 49,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 3367,
+      "level": 46,
+      "req": 41,
+      "xp": 5790,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3371,
+      "level": 46,
+      "req": 42,
+      "xp": 5790,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 3441,
+      "level": 48,
+      "req": 40,
+      "xp": 625,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3442,
+      "level": 48,
+      "req": 40,
+      "xp": 6290,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3443,
+      "level": 48,
+      "req": 40,
+      "xp": 6290,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3452,
+      "level": 50,
+      "req": 40,
+      "xp": 6810,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4449,
+      "level": 45,
+      "req": 43,
+      "xp": 5540,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7723,
+      "level": 49,
+      "req": 45,
+      "xp": 6550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7724,
+      "level": 49,
+      "req": 45,
+      "xp": 6550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7727,
+      "level": 49,
+      "req": 45,
+      "xp": 6550,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7728,
+      "level": 48,
+      "req": 45,
+      "xp": 6290,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7729,
+      "level": 48,
+      "req": 45,
+      "xp": 6290,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3377,
+      "level": 50,
+      "req": 42,
+      "xp": 680,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3453,
+      "level": 50,
+      "req": 40,
+      "xp": 680,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3454,
+      "level": 50,
+      "req": 40,
+      "xp": 6810,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3462,
+      "level": 50,
+      "req": 40,
+      "xp": 680,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3463,
+      "level": 52,
+      "req": 40,
+      "xp": 11000,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 3481,
+      "level": 50,
+      "req": 40,
+      "xp": 680,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7701,
+      "level": 50,
+      "req": 45,
+      "xp": 6810,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 7722,
+      "level": 50,
+      "req": 45,
+      "xp": 6810,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Loch Modan": 1,
+    "Dun Morogh": 2,
+    "Tanaris": 1,
+    "Teldrassil": 1
+  }
+}

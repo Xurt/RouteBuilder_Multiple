@@ -1,7 +1,7 @@
 {
   "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
   "guide": "52-60 Winterspring",
-  "saved": "2026-10-23 14:27",
+  "saved": "2026-10-23 18:24",
   "levels": "RestedXP",
   "parts": [
     {
@@ -30,17 +30,14 @@
     {
       "part": 2,
       "steps": [
-        "accept:5252 @1452:-4302.61,6433.63  Accept Remorseful Highborne",
-        "accept:6603 @1452:-4623.53,6726.62  Accept Trouble in Winterspring!",
         "home @1452:-4673.23,6695.38  Home inn",
-        "turnin:5252 @1452:-4006.54,7094.87  TurnIn Remorseful Highborne",
-        "accept:5253 @1452:-4006.54,7094.87  Accept The Crystal of Zin-Malor",
+        "accept:6604 @1452:-4656.19,6714.31  Accept Enraged Wildkin",
+        "accept:6603 @1452:-4623.53,6726.62  Accept Trouble in Winterspring!",
         "turnin:6603 @1452:-2536.84,6395.76  TurnIn Trouble in Winterspring!",
         "accept:5082 @1452:-2536.84,6395.76  Accept Threat of the Winterfall",
         "accept:5086 @1452:-2536.84,6395.76  Accept Toxic Horrors",
         "accept:4842 @1452:-2536.84,6395.76  Accept Strange Sources",
         "obj:5082:1 @1452:-3217.02,6520.72  Objective Threat of the Winterfall / Winterfall Pathfinder slain (8)",
-        "accept:6604 @1452:-4656.19,6714.31  Accept Enraged Wildkin",
         "obj:5082:2 @1452:-5071.54,6900.81  Objective Threat of the Winterfall / Winterfall Den Watcher slain (8)",
         "obj:5082:3 @1452:-3161.64,6478.59  Objective Threat of the Winterfall / Winterfall Totemic slain (8)",
         "turnin:5082 @1452:-2536.84,6395.76  TurnIn Threat of the Winterfall",
@@ -74,17 +71,18 @@
         "turnin:5083 @1452:-2536.84,6395.76  TurnIn Winterfall Firewater",
         "accept:5084 @1452:-2536.84,6395.76  Accept Falling to Corruption",
         "turnin:8464 @1452:-2285.5,6900.33  TurnIn Winterfall Activity",
-        "accept:6606 @1452:-4656.19,6714.31  Accept A Little Luck",
-        "turnin:6606 @1452:-4712.99,6720.47  TurnIn A Little Luck",
-        "obj:977:1 @1452:-5308.68,6613.49  Objective Are We There, Yeti? / Pristine Yeti Horn (2)",
         "item:5123 @1452:-5255.43,6719.99  ItemAccept The Final Piece",
+        "obj:977:1 @1452:-5308.68,6613.49  Objective Are We There, Yeti? / Pristine Yeti Horn (2)",
         "turnin:977 @1452:-4639.15,6752.65  TurnIn Are We There, Yeti?",
         "accept:5163 @1452:-4639.15,6752.65  Accept Are We There, Yeti?",
         "obj:5163:1 @1452:-4686.01,6705.79  Objective Are We There, Yeti? / Legacki",
         "turnin:4809 @1452:-4692.4,6705.79  TurnIn Chillwind Horns",
         "accept:4810 @1452:-4692.4,6705.79  Accept Return to Tinkee",
         "turnin:5123 @1452:-2536.84,6395.76  TurnIn The Final Piece",
-        "accept:5128 @1452:-2536.84,6395.76  Accept Words of the High Chief"
+        "accept:5128 @1452:-2536.84,6395.76  Accept Words of the High Chief",
+        "accept:5252 @1452:-4302.61,6433.63  Accept Remorseful Highborne",
+        "turnin:5252 @1452:-4006.54,7094.87  TurnIn Remorseful Highborne",
+        "accept:5253 @1452:-4006.54,7094.87  Accept The Crystal of Zin-Malor"
       ]
     },
     {
