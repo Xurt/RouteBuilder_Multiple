@@ -1,0 +1,289 @@
+Thousand Needles - Alliance - part 1 of 3, planned from level 40
+Guide "40-45 Thousand Needles" in group "Zone Routes (Alliance)": this part has 166 steps, 152 stops
+Written to guides/mop/Thousand Needles (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 9 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 40. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 8 steps kept, 159 new ones slotted in, 0 moved because their prerequisites changed, 5 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 40, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 8 tasks, 1,065 yd on foot; ends at level 40.0
+  Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior: 1 more tasks; their whole route comes to 843 yd; ends at level 40.0
+  Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage: 1 more tasks; their whole route comes to 3,965 yd; ends at level 40.0
+  Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter: 1 more tasks; their whole route comes to 1,013 yd; ends at level 40.0
+  Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue: 1 more tasks; their whole route comes to 700 yd; ends at level 40.0
+  Human Priest/Dwarf Priest/Draenei Priest/Worgen Priest/Pandaren Priest: 1 more tasks; their whole route comes to 1,152 yd; ends at level 40.0
+  Dwarf Paladin/Draenei Paladin: 1 more tasks; their whole route comes to 4,665 yd; ends at level 40.0
+  Dwarf Shaman/Draenei Shaman: 1 more tasks; their whole route comes to 4,665 yd; ends at level 40.0
+  NightElf Druid/Worgen Druid: 1 more tasks; their whole route comes to 981 yd; ends at level 40.0
+  NightElf Priest: 3 more tasks; their whole route comes to 1,192 yd; ends at level 40.0
+  Gnome Priest: 1 more tasks; their whole route comes to 1,154 yd; ends at level 40.0
+  everyone (quests that depend on other zones): 134 more tasks; their whole route comes to 26,173 yd; ends at level 40.0; at its hardest you are 2.0 levels below the mobs
+  NightElf (quests that depend on other zones): 4 more tasks; their whole route comes to 29,935 yd; ends at level 40.0; at its hardest you are 2.0 levels below the mobs
+  Draenei (quests that depend on other zones): 6 more tasks; their whole route comes to 33,064 yd; ends at level 40.0; at its hardest you are 2.0 levels below the mobs
+  Worgen (quests that depend on other zones): 2 more tasks; their whole route comes to 27,883 yd; ends at level 40.0; at its hardest you are 2.0 levels below the mobs
+  Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 28,082 yd; ends at level 40.0; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (79)
+------------------------
+Start to finish here: 1 (0 for everyone, 1 NightElf Priest)
+
+Picked up here, handed in elsewhere - these stay in the log (18):
+  Breaking Waves of Change [26383, level 10, Human/Dwarf/NightElf/Gnome/Draenei/Pandaren] -> Darkshore
+  A Summons from Ander Germaine [27225, level 20, Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior] -> Stormwind City
+  Lord Grayson Shadowbreaker [27265, level 20, Dwarf Paladin/Draenei Paladin] -> Stormwind City
+  Wulf Calls [27266, level 20, Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter] -> Stormwind City
+  Make Contact with SI:7 [27267, level 20, Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue] -> Stormwind City
+  Make Haste to the Cathedral [27268, level 20, Human Priest/Dwarf Priest/Draenei Priest/Worgen Priest/Pandaren Priest] -> Stormwind City
+  An Audience with the Farseer [27270, level 20, Dwarf Shaman/Draenei Shaman] -> Stormwind City
+  Journey to the Wizard's Sanctum [27271, level 20, Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage] -> Stormwind City
+  An Invitation from Moonglade [27273, level 20, NightElf Druid/Worgen Druid] -> Moonglade
+  The Chief Surgeon [27274, level 20, Gnome Priest] -> Stormwind City
+  Favored of Elune [27362, level 20, NightElf Priest] -> Stormwind City
+  Hero's Call: Ashenvale! [28492, level 20, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Ashenvale
+  Hero's Call: Stonetalon Mountains! [28539, level 25, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Ashenvale
+  Hero's Call: Desolace! [28531, level 30, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Desolace
+  Hero's Call: Southern Barrens! [28550, level 30, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Southern Barrens
+  Hero's Call: Feralas! [28511, level 35, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Feralas
+  Hero's Call: Dustwallow Marsh! [28552, level 35, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Dustwallow Marsh
+  Hero's Call: Thousand Needles! [28503, level 40, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Feralas
+
+Brought in from another zone and handed in here - steps show only if you have the quest (8):
+  To Darnassus [6341, level 7, NightElf] <- Teldrassil
+  On the Wings of a Hippogryph [9604, level 7, Draenei] <- Bloodmyst Isle
+  Behomat [10350, level 10, Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior] <- Azuremyst Isle
+  The Howling Oak [28517, level 10, Worgen] <- Teldrassil
+  Coming of Age [9623, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Azuremyst Isle
+  Home of the Kaldorei [14039, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Teldrassil
+  Audience with the Prophet [9698, level 16, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Bloodmyst Isle
+  Two If By Boat [25488, level 40, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Feralas
+
+Need a quest this guide does not hand in - steps show only once that is done (52):
+  An Unexpected Gift [6342, level 7, NightElf] - needs one of To Darnassus [6341]
+  Return to Nyoma [6343, level 7, NightElf] - needs one of An Unexpected Gift [6342] -> Teldrassil
+  Hippogryph Master Stephanos [9605, level 7, Draenei] - needs one of On the Wings of a Hippogryph [9604]
+  Return to Caregiver Chellan [9606, level 7, Draenei] - needs one of Hippogryph Master Stephanos [9605] -> Azuremyst Isle
+  Breaking Waves of Change [26385, level 10, Worgen] - needs one of The Howling Oak [28517] -> Darkshore
+  Elekks Are Serious Business [9625, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Coming of Age [9623] -> Bloodmyst Isle
+  Truth or Fiction [9699, level 16, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Audience with the Prophet [9698] -> Bloodmyst Isle
+  The Unwritten Prophecy [9762, level 20, Draenei] - needs one of Ending Their World [9759]
+  Do Me a Favor? [25504, level 40, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Two If By Boat [25488]
+  Down in the Deeps [25515, level 40, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Do Me a Favor? [25504]
+  Bar Fight! [25517, level 40, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Two If By Boat [25488]
+  In the Outhouse [25524, level 40, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Do Me a Favor? [25504]
+  Pirate Accuracy Increasing [25532, level 40, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Down in the Deeps [25515], Bar Fight! [25517], In the Outhouse [25524]
+  Circle the Wagons... er, Boats [25542, level 40, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Pirate Accuracy Increasing [25532]
+  Quiet the Cannons [25585, level 41, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Circle the Wagons... er, Boats [25542], Circle the Wagons... er, Boats [25561]
+  A Little Payback [25588, level 41, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Circle the Wagons... er, Boats [25542], Circle the Wagons... er, Boats [25561]
+  Where's Wizzle? [25590, level 41, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Circle the Wagons... er, Boats [25542], Circle the Wagons... er, Boats [25561]
+  Sunken Treasure [25609, level 41, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Where's Wizzle? [25590]
+  Haunted [25660, level 41] - needs one of Two-Tusk Takedown [25627], Two-Tusk Takedown [25628]
+  Negotiations [25744, level 41, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Circle the Wagons... er, Boats [25542], Circle the Wagons... er, Boats [25561]
+  Get Zherin! [25756, level 41, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Negotiations [25744]
+  Fake Gold for Black Gold [25778, level 41, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Fool's Gold [25774]
+  Back to Crazzle [25790, level 41, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Fake Gold for Black Gold [25778]
+  Eminent Domain [25796, level 41, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Back to Crazzle [25790]
+  Defend the Drill [25798, level 41, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Back to Crazzle [25790]
+  Special Delivery for Brivelthwerp [28031, level 41, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Circle the Wagons... er, Boats [25542], Circle the Wagons... er, Boats [25561]
+  The Greatest Flavor in the World! [28045, level 41] - needs one of Special Delivery for Brivelthwerp [28031], Special Delivery for Brivelthwerp [28042]
+  Freezing the Pipes [28047, level 41] - needs The Greatest Flavor in the World! [28045], We All Scream for Ice Cream... and then Die! [28051]
+  We All Scream for Ice Cream... and then Die! [28051, level 41] - needs one of Special Delivery for Brivelthwerp [28031], Special Delivery for Brivelthwerp [28042]
+  Two-Tusk Takedown [25627, level 42, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Sunken Treasure [25609]
+  With a Little Help... [25661, level 42] - needs one of Haunted [25660]
+  Carcass Collection [25672, level 42] - needs one of With a Little Help... [25661]
+  The Mad Magus [25704, level 42] - needs one of Carcass Collection [25672]
+  The Ancient Brazier [25762, level 42] - needs one of Negotiations [25744], Negotiations [25745]
+  Fool's Gold [25774, level 42, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Get Zherin! [25756]
+  Go Blow that Horn [25813, level 42, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Eminent Domain [25796], Defend the Drill [25798]
+  Deliver the Goods [25825, level 42, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Go Blow that Horn [25813]
+  Free Freewind Post [25835, level 42, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs The Mad Magus [25704], Deliver the Goods [25825]
+  Grimtotem in the Post [25869, level 42, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Free Freewind Post [25835]
+  Save the Sentinel [25871, level 42, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Free Freewind Post [25835]
+  Together Again [27275, level 42, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Save the Sentinel [25871]
+  No Weapons For You! [27310, level 42, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Together Again [27275]
+  Darkcloud Grimtotem [27312, level 42, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Together Again [27275]
+  Grimtotem Chiefs: Isha Gloomaxe [27314, level 42, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Together Again [27275]
+  The Rattle of Bones [27316, level 42, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Together Again [27275]
+  Grimtotem Chiefs: Elder Stormhoof [27318, level 42, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Grimtotem Chiefs: Isha Gloomaxe [27314]
+  The Writ of History [27320, level 42, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Rattle of Bones [27316]
+  Grimtotem Chiefs: Grundig Darkcloud [27323, level 42, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Grimtotem Chiefs: Elder Stormhoof [27318]
+  The Drums of War [27325, level 42, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Rattle of Bones [27316]
+  That Smart One's Gotta Go [28048, level 42] - needs The Greatest Flavor in the World! [28045], We All Scream for Ice Cream... and then Die! [28051]
+  What's that Rattle? [28283, level 42, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Grimtotem Chiefs: Isha Gloomaxe [27314]
+  Trouble at Highperch [28085, level 44] - needs one of Invoking the Serpent [27329], Invoking the Serpent [27330]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (20)
+----------------------------
+These need a higher level than this part ends at:
+  Horn of the Traitor [25873, level 43]: its mobs are level 43; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 40.0
+  Grimtotem Chiefs: The Chief of Chiefs [27327, level 43]: its mobs are level 43; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 40.0
+  The Captive Bride [27357, level 43]: follows Grimtotem Chiefs: The Chief of Chiefs [27327]
+  Tanaris is Calling [27446, level 43]: needs level 43; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 40.0
+  Free the Pridelings [28086, level 44]: is a level 44 quest; this part gets you to about 40.0
+  Death to all Trappers! [28087, level 44]: its mobs are level 43; this part gets you to about 40.0
+  Release Heartrazor [28088, level 44]: is a level 44 quest; this part gets you to about 40.0
+  The Twilight Skymaster [28098, level 44]: its mobs are level 45; this part gets you to about 40.0
+  On to the Bulwark [28124, level 45]: follows The Twilight Skymaster [28098]
+  Something to Wear [28125, level 45]: its mobs are level 44; this part gets you to about 40.0
+  Break Them Out [28127, level 45]: its mobs are level 44; this part gets you to about 40.0
+  Behind You! [28136, level 45]: is a level 45 quest; this part gets you to about 40.0
+  Codemaster's Code [28139, level 45]: is a level 45 quest; this part gets you to about 40.0
+  The Elder Crone [28140, level 45]: is a level 45 quest; this part gets you to about 40.0
+  To the Withering [28142, level 45]: follows The Elder Crone [28140]
+  Four Twilight Elements [28157, level 45]: is a level 45 quest; this part gets you to about 40.0
+  Unbound [28158, level 45]: its mobs are level 45; this part gets you to about 40.0
+  The Doomstone [28159, level 45]: its mobs are level 45; this part gets you to about 40.0
+  Spread the Word [28160, level 45]: follows The Doomstone [28159]
+  Hero's Call: Felwood! [28543, level 45]: needs level 44; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 40.0
+
+Left out (259)
+--------------
+not in the game (on Questie's quest blacklist) (211):
+  A Lesson to Learn [26], Rise of the Silithid [162], The Absent Minded Prospector [741], Velinde Starsong [1037], Velinde's Effects [1038], Answered Questions [1044], Reception from Tyrande [1081], Mortality Wanes [1142], Keeping Pace [1190], Rizzle's Schematics [1194], Vorlus Vilehoof [1683], Elanaria [1684], The Shade of Elura [1686], Smith Mathiel [1692], Weapons of Elunite [1693], Yorus Barleybrew [1698], Mathiel [1703], Sunscorched Shells [1710], Mathiel's Armor [1711], The Islander [1718], High Sorcerer Andromath [1939], Journey to the Marsh [1947], Return to the Marsh [1953], The Apple Falls [2241], Destiny Calls [2242], Erion Shadewhisper [2259], Master of the Wild Leather [2853], Tabetha's Task [2861], Doling Justice [2972], In Nightmares [3370], Prayer to Elune [3378], Assisting Arch Druid Staghelm [3763], Un'Goro Soil [3764], Morrowgrain Research [3781], Morrowgrain Research [3785], Morrowgrain to Darnassus [3803], Rise of the Silithid [4267], March of the Silithid [4493], Calm Before the Storm [4508], Calm Before the Storm [4510], ... 171 more
+above this zone's range of 40-47 (19):
+  Hero's Call: Vashj'ir! [27724], Hero's Call: Mount Hyjal! [27726], Hero's Call: Deepholm! [27727], Meet with Ander Germaine [28258], Meet with Wulf Hansreim [28260], Meet with Lord Tony Romano [28262], Meet with Maginor Dumas [28263], Meet with Lord Grayson Shadowbreaker [28268], Meet with High Priestess Laurena [28285], Meet with Farseer Umbrua [28287], Moonglade Calls [28289], Hero's Call: Un'Goro Crater! [28525], Hero's Call: Silithus! [28528], Hero's Call: Winterspring! [28544], Hero's Call: Uldum! [28558], Hero's Call: Outland! [28708], Hero's Call: Northrend! [28709], Hero's Call: Twilight Highlands! [28716], The Troll Incursion [29156]
+repeatable (10):
+  The Secret to Perfect Kimchi [29313], Remembering the Ancestors [29314], Back to Basics [29316], Ribs for the Sentinels [29318], Happy as a Clam Digger [29321], Stocking Up [29323], The Sister's Pendant [29324], A Slippery Snack [29325], Spice Bread Aplenty [29357], An Old Favorite [29359]
+needs a profession (5):
+  Moonglow Vest [1582], Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+special category (sort -284) (3):
+  Darnassus [12773], The Exodar [12776], Hammering It Out [25563]
+needs reputation (3):
+  Darnassus Attacked? [32414], Jaina's Resolution [32416], Tracking the Thieves [32460]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29387], Guardians of Hyjal: Call of the Ancients [29391]
+cannot be taken together with Circle the Wagons... er, Boats [25542], which is in the guide (1):
+  Circle the Wagons... er, Boats [25561]
+cannot be taken together with No Weapons For You! [27310], which is in the guide (1):
+  Invoking the Serpent [27329]
+cannot be taken together with To the Withering [28142], which is in the guide (1):
+  To the Withering [28143]
+cannot be taken together with Breaking Waves of Change [26383], which is in the guide (1):
+  Hero's Call: Darkshore! [28490]
+cannot be taken together with Tanaris is Calling [27446], which is in the guide (1):
+  Hero's Call: Tanaris! [28507]
+cannot be taken together with Elekks Are Serious Business [9625], which is in the guide (1):
+  Hero's Call: Bloodmyst Isle! [28559]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Thousand Needles - Alliance - part 2 of 3, planned from level 44
+Guide "40-45 Thousand Needles" in group "Zone Routes (Alliance)": this part has 56 steps, 54 stops
+Written to guides/mop/Thousand Needles (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 44. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 58 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 44.0
+  everyone (quests that depend on other zones): 57 more tasks; their whole route comes to 11,687 yd; ends at level 44.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (19)
+------------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Tanaris is Calling [27446, level 43, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Tanaris
+
+Need a quest this guide does not hand in - steps show only once that is done (18):
+  Horn of the Traitor [25873, level 43, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Free Freewind Post [25835]
+  Grimtotem Chiefs: The Chief of Chiefs [27327, level 43, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Grimtotem Chiefs: Grundig Darkcloud [27323]
+  The Captive Bride [27357, level 43, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs The Writ of History [27320], The Drums of War [27325], Grimtotem Chiefs: The Chief of Chiefs [27327]
+  Free the Pridelings [28086, level 44] - needs one of Trouble at Highperch [28085]
+  Death to all Trappers! [28087, level 44] - needs one of Trouble at Highperch [28085]
+  Release Heartrazor [28088, level 44] - needs Free the Pridelings [28086], Death to all Trappers! [28087]
+  The Twilight Skymaster [28098, level 44] - needs one of Release Heartrazor [28088]
+  On to the Bulwark [28124, level 45] - needs one of The Twilight Skymaster [28098]
+  Something to Wear [28125, level 45] - needs one of On to the Bulwark [28124]
+  Break Them Out [28127, level 45] - needs one of On to the Bulwark [28124]
+  Behind You! [28136, level 45] - needs Something to Wear [28125], Break Them Out [28127]
+  Codemaster's Code [28139, level 45] - needs Something to Wear [28125], Break Them Out [28127]
+  The Elder Crone [28140, level 45] - needs Behind You! [28136], Codemaster's Code [28139]
+  To the Withering [28142, level 45] - needs one of The Elder Crone [28140]
+  Four Twilight Elements [28157, level 45] - needs one of To the Withering [28142], To the Withering [28143]
+  Unbound [28158, level 45] - needs one of To the Withering [28142], To the Withering [28143]
+  The Doomstone [28159, level 45] - needs Four Twilight Elements [28157], Unbound [28158]
+  Spread the Word [28160, level 45, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Doomstone [28159]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  Hero's Call: Felwood! [28543, level 45]: needs level 44; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 44.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Thousand Needles - Alliance - part 3 of 3, planned from level 47
+Guide "40-45 Thousand Needles" in group "Zone Routes (Alliance)": this part has 2 steps, 1 stops
+Written to guides/mop/Thousand Needles (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 47. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 47.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (1)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Hero's Call: Felwood! [28543, level 45, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Felwood
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

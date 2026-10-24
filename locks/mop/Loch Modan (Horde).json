@@ -1,0 +1,29 @@
+{
+  "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "19-20 Loch Modan",
+  "saved": "2026-10-23 17:48",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "accept:13636 @48:35.06,46.58  Accept Stormpike's Orders",
+        "accept:13661 @48:37.27,47.77  Accept Heartfelt Appreciation",
+        "turnin:13661 @48:37.27,47.77  TurnIn Heartfelt Appreciation",
+        "accept:13639 @48:37.24,47.38  Accept Resupplying the Excavation",
+        "accept:26846 @48:25.4,17.79  Accept A Nasty Exploit",
+        "turnin:13636 @48:25.45,17.96  TurnIn Stormpike's Orders",
+        "accept:26137 @48:25.45,17.96  Accept Checking on the Boys",
+        "obj:26846:1 @48:35.51,24.1  Objective A Nasty Exploit / Tunnel Rat Geomancer slain (5)",
+        "turnin:26846 @48:25.4,17.79  TurnIn A Nasty Exploit",
+        "accept:13635 @48:14.01,56.48  Accept South Gate Status Report",
+        "turnin:13635 @48:23.38,75.05  TurnIn South Gate Status Report",
+        "accept:26176 @48:23.38,75.05  Accept Onward to Thelsamar",
+        "turnin:26176 @48:35.06,46.58  TurnIn Onward to Thelsamar",
+        "obj:13639:1 @48:56.36,65.98  Objective Resupplying the Excavation / Huldar",
+        "turnin:13639 @48:56.36,65.98  TurnIn Resupplying the Excavation",
+        "accept:13647 @48:64.9,66.66  Accept Joining the Hunt",
+        "turnin:13647 @48:81.76,61.66  TurnIn Joining the Hunt"
+      ]
+    }
+  ]
+}

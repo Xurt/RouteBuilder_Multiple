@@ -1,0 +1,213 @@
+Ghostlands - Horde - part 1 of 3, planned from level 10
+Guide "10-21 Ghostlands" in group "Zone Routes (Horde)": this part has 77 steps, 57 stops
+Written to guides/tbc/Ghostlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 8 of 40 held at once (BloodElf Paladin), not counting quests brought in from other zones.
+6 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 10. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 70 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed, 102 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 47 tasks, 11,150 yd on foot; ends at level 12.4; 1 hearth; at its hardest you are 2.8 levels below the mobs
+  BloodElf: 5 more tasks; their whole route comes to 11,307 yd; ends at level 12.4; 1 hearth; at its hardest you are 2.7 levels below the mobs
+  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 12,657 yd; ends at level 12.4; 1 hearth; at its hardest you are 2.8 levels below the mobs
+  BloodElf (quests that depend on other zones): 1 more tasks; their whole route comes to 11,944 yd; ends at level 12.4; 2 hearths; at its hardest you are 2.7 levels below the mobs
+  Rogue (quests that depend on other zones): 1 more tasks; their whole route comes to 12,702 yd; ends at level 12.4; 1 hearth; at its hardest you are 2.8 levels below the mobs
+  BloodElf Rogue (quests that depend on other zones): 5 more tasks; their whole route comes to 12,573 yd; ends at level 12.4; 2 hearths; at its hardest you are 2.7 levels below the mobs
+  BloodElf Warlock (quests that depend on other zones): 3 more tasks; their whole route comes to 13,788 yd; ends at level 12.4; 2 hearths; at its hardest you are 2.7 levels below the mobs
+Hearthstone: set at Blacksmith Frances (Blacksmith Frances's inn); 1 hearth step in the guide.
+12 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (28)
+------------------------
+Start to finish here: 17 (14 for everyone, 2 BloodElf, 1 Orc/Undead/Tauren/Troll)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Fly to Silvermoon City [9133, level 10, BloodElf] -> Silvermoon City
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Return to Quartermaster Lymel [9135, level 10, BloodElf] <- Eversong Woods
+  Delivery to Tranquillien [9148, level 10] <- Eversong Woods
+  The Stone [9529, level 10, BloodElf Warlock] <- Silvermoon City
+  Find Keltus Darkleaf [9532, level 10, BloodElf Rogue] <- Silvermoon City
+  A Discreet Inquiry [10372, level 16, Rogue] <- Silvermoon City
+
+Need a quest this guide does not hand in - steps show only once that is done (5):
+  Return the Reports [9618, level 10, BloodElf Rogue] - needs one of Combining Forces [9460] -> Silvermoon City
+  The Rune of Summoning [9619, level 10, BloodElf Warlock] - needs one of The Stone [9529] -> Silvermoon City
+  Combining Forces [9460, level 12, BloodElf Rogue] - needs one of Find Keltus Darkleaf [9532]
+  Into Occupied Territory [9163, level 14] - needs one of Investigate An'daroth [9160]
+  Deliver the Plans to An'telas [9166, level 16] - needs one of Into Occupied Territory [9163]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (32)
+----------------------------
+These need a higher level than this part ends at:
+  The Sanctum of the Sun [9151, level 20]: needs level 17; this part gets you to about 16.2
+  Wanted: Knucklerot and Luzran [9156, level 21]: its mobs are level 21; this part gets you to about 16.2
+  The Traitor's Shadow [9161, level 16]: needs level 15; this part gets you to about 14.9
+  Hints of the Past [9162, level 16]: needs level 15; this part gets you to about 14.9
+  Captives at Deatholme [9164, level 20]: needs level 17; this part gets you to about 16.2
+  The Traitor's Destruction [9167, level 21]: its mobs are level 21; this part gets you to about 16.2
+  Deactivate An'owyn [9169, level 16]: its mobs are level 15; this part gets you to about 12.9
+  Dar'Khan's Lieutenants [9170, level 20]: its mobs are level 20; this part gets you to about 16.2
+  Report to Magister Kaendris [9172, level 16]: needs level 15; this part gets you to about 14.9
+  The Twin Ziggurats [9176, level 17]: needs level 15; this part gets you to about 14.9
+  Journey to Undercity [9177, level 15]: needs level 15; this part gets Orc/Undead/Tauren/Troll characters to about 14.9
+  Journey to Undercity [9180, level 15]: needs level 15; this part gets BloodElf characters to about 14.9
+  Investigate the Amani Catacombs [9193, level 17]: needs level 14; this part gets you to about 12.9
+  Troll Juju [9199, level 17]: needs level 14; this part gets you to about 12.9
+  Escape from the Catacombs [9212, level 17]: needs level 14; this part gets you to about 12.9
+  Shadowpine Weaponry [9214, level 18]: its mobs are level 18; this part gets you to about 14.9
+  Bring Me Kel'gash's Head! [9215, level 20]: its mobs are level 20; this part gets you to about 16.2
+  Rotting Hearts [9216, level 16]: needs level 15; this part gets you to about 14.9
+  Spinal Dust [9218, level 18]: needs level 15; this part gets you to about 14.9
+  War on Deatholme [9220, level 20]: needs level 17; this part gets you to about 16.2
+  A Little Dash of Seasoning [9275, level 19]: needs level 16; this part gets you to about 16.2
+  Attack on Zeb'Tela [9276, level 18]: needs level 15; this part gets you to about 14.9
+  Assault on Zeb'Nowa [9277, level 19]: its mobs are level 18; this part gets you to about 14.9
+  Clearing the Way [9281, level 18]: needs level 15; this part gets you to about 14.9
+  The Farstrider Enclave [9282, level 16]: needs level 15; this part gets you to about 14.9
+  Hero of the Sin'dorei [9328, level 21]: follows The Traitor's Destruction [9167]
+  Arcane Reavers [9487, level 16]: needs level 15; this part gets BloodElf Mage characters to about 15.2
+  A Simple Robe [9488, level 16]: needs level 15; this part gets BloodElf Mage characters to about 15.2
+  Greed [9491, level 18]: needs level 16; this part gets Rogue characters to about 15.1
+  Friend of the Sin'dorei [9811, level 21]: follows The Traitor's Destruction [9167]
+  A Restorative Draught [9877, level 20]: needs level 17; this part gets you to about 16.2
+  The Sad Truth [10548, level 18]: needs level 16; this part gets Rogue characters to about 15.1
+
+Left out (23)
+-------------
+needs reputation (8):
+  Help Ranger Valanna! [9145], Salvaging the Past [9150], Down the Dead Scar [9155], Investigate An'daroth [9160], Culinary Crunch [9171], Retaking Windrunner Spire [9173], Trouble at the Underlight Mines [9192], Underlight Ore Samples [9207]
+dungeon quest (7):
+  Oooh, Shinies! [11130], Promises, Promises... [11132], Tuskin' Raiders [11164], A Troll Among Trolls [11165], X Marks... Your Doom! [11166], Hex Lord? Hah! [11171], Blood of the Warlord [11178]
+not in the game (on Questie's quest blacklist) (4):
+  Honor the Flame [11850], Playing with Fire [11915], Incense for the Festival Scorchlings [11966], Candy Bucket [12373]
+repeatable (2):
+  More Rotting Hearts [9217], More Spinal Dust [9219]
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  The Lady's Necklace [9175]
+above this zone's range of 10-22 (1):
+  Undercover Sister [11163]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Ghostlands - Horde - part 2 of 3, planned from level 15
+Guide "10-21 Ghostlands" in group "Zone Routes (Horde)": this part has 89 steps, 65 stops
+Written to guides/tbc/Ghostlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 9 of 40 held at once (Orc Rogue), not counting quests brought in from other zones.
+5 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 15. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 73 steps kept, 10 new ones slotted in, 2 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 66 tasks, 19,122 yd on foot; ends at level 17.4; 2 hearths; at its hardest you are 2.5 levels below the mobs
+  Rogue: 6 more tasks; their whole route comes to 20,079 yd; ends at level 17.6; 2 hearths; at its hardest you are 2.4 levels below the mobs
+  BloodElf Mage: 7 more tasks; their whole route comes to 21,174 yd; ends at level 17.7; 3 hearths; at its hardest you are 2.4 levels below the mobs
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 21,763 yd; ends at level 17.4; 2 hearths; at its hardest you are 2.5 levels below the mobs
+  BloodElf (quests that depend on other zones): 1 more tasks; their whole route comes to 21,763 yd; ends at level 17.4; 2 hearths; at its hardest you are 2.5 levels below the mobs
+Hearthstone: set at Innkeeper Kalarin (Innkeeper Kalarin's inn); 6 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 15 for Arcane Reavers (BloodElf Mage)
+11 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (26)
+------------------------
+Start to finish here: 23 (19 for everyone, 2 BloodElf Mage, 2 Rogue)
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Journey to Undercity [9177, level 15, Orc/Undead/Tauren/Troll] - needs one of The Lady's Necklace [9175] -> Undercity
+  Journey to Undercity [9180, level 15, BloodElf] - needs one of The Lady's Necklace [9175] -> Undercity
+  Deactivate An'owyn [9169, level 16] - needs one of Deliver the Plans to An'telas [9166]
+
+Worth checking in game
+----------------------
+  Investigate the Amani Catacombs [9193, level 17]: "Investigate the Amani Catacombs" is assumed to be line 2 in the quest log; check it
+
+Put off to a later part (6)
+---------------------------
+These need a higher level than this part ends at:
+  Wanted: Knucklerot and Luzran [9156, level 21]: its mobs are level 21; this part gets you to about 18.0
+  The Traitor's Destruction [9167, level 21]: its mobs are level 21; this part gets you to about 18.0
+  Dar'Khan's Lieutenants [9170, level 20]: its mobs are level 20; this part gets you to about 17.7
+  Bring Me Kel'gash's Head! [9215, level 20]: its mobs are level 20; this part gets you to about 17.7
+  Hero of the Sin'dorei [9328, level 21]: follows The Traitor's Destruction [9167]
+  Friend of the Sin'dorei [9811, level 21]: follows The Traitor's Destruction [9167]
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Ghostlands - Horde - part 3 of 3, planned from level 20
+Guide "10-21 Ghostlands" in group "Zone Routes (Horde)": this part has 18 steps, 17 stops
+Written to guides/tbc/Ghostlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 20. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 17 steps kept, 0 new ones slotted in, 1 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 17 tasks, 9,613 yd on foot; ends at level 20.5
+  BloodElf: 1 more tasks; their whole route comes to 9,613 yd; ends at level 20.5
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (6)
+-----------------------
+Start to finish here: 4 (4 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Hero of the Sin'dorei [9328, level 21, BloodElf] -> Silvermoon City
+  Friend of the Sin'dorei [9811, level 21, Orc/Undead/Tauren/Troll] -> Silvermoon City
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

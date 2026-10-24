@@ -1,0 +1,41 @@
+{
+  "zone": "Loch Modan",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "19-20 Loch Modan",
+  "file": "Loch Modan (Horde).lua",
+  "continent": -38,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 19,
+      "end": 19.04,
+      "guide": "19-20 Loch Modan",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "19-20 Loch Modan",
+          "level": 19,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 13636,
+      "level": 13,
+      "req": 12,
+      "xp": 680,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Wetlands": 1
+  }
+}

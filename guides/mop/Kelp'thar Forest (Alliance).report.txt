@@ -1,0 +1,168 @@
+Kelp'thar Forest - Alliance - part 1 of 2, planned from level 81
+Guide "81-81 Kelp'thar Forest" in group "Zone Routes (Alliance)": this part has 95 steps, 84 stops
+Written to guides/mop/Kelp'thar Forest (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: 57 PROBLEMS
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Human Warrior)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Human Paladin)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Human Hunter)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Human Rogue)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Human Priest)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Human DeathKnight)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Human Mage)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Human Warlock)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Human Monk)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Dwarf Warrior)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Dwarf Paladin)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Dwarf Hunter)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Dwarf Rogue)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Dwarf Priest)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Dwarf DeathKnight)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Dwarf Shaman)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Dwarf Mage)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Dwarf Warlock)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Dwarf Monk)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (NightElf Warrior)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (NightElf Hunter)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (NightElf Rogue)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (NightElf Priest)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (NightElf DeathKnight)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (NightElf Mage)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (NightElf Monk)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (NightElf Druid)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Gnome Warrior)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Gnome Rogue)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Gnome Priest)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Gnome DeathKnight)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Gnome Mage)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Gnome Warlock)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Gnome Monk)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Draenei Warrior)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Draenei Paladin)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Draenei Hunter)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Draenei Priest)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Draenei DeathKnight)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Draenei Shaman)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Draenei Mage)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Draenei Monk)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Worgen Warrior)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Worgen Hunter)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Worgen Rogue)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Worgen Priest)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Worgen DeathKnight)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Worgen Mage)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Worgen Warlock)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Worgen Druid)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Pandaren Warrior)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Pandaren Hunter)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Pandaren Rogue)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Pandaren Priest)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Pandaren Shaman)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Pandaren Mage)
+  ! an objective of The Horde's Hoard comes before the quest is picked up (Pandaren Monk)
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 81. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 115 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 93 tasks, 10,044 yd on foot; ends at level 81.5; 1 hearth
+  everyone (quests that depend on other zones): 22 more tasks; their whole route comes to 14,002 yd; ends at level 81.5; 1 hearth; 1 ORDER PROBLEMS
+Hearthstone: set at Captain Samir (Captain Samir's inn); 1 hearth step in the guide.
+6 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (41)
+------------------------
+Start to finish here: 30 (18 for everyone, 12 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Across the Great Divide [25471, level 81] -> Shimmering Expanse
+
+Hand-in step only shows once complete (2):
+  Oh, the Insanity! [25651, level 81] - needs Barrel of Gunpowder (1) (an unknown place)
+  Decompression [25888, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Imprisoned Soldier (10) (Shimmering Expanse)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Call of Duty [14482, level 80, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Stormwind City
+
+Need a quest this guide does not hand in - steps show only once that is done (7):
+  Dah, Nunt... Dah, Nunt... [25657, level 81] - needs one of Oh, the Insanity! [25651]
+  DUN-dun-DUN-dun-DUN-dun [25670, level 81] - needs one of Shark Weak [27699]
+  A Bone to Pick [25732, level 81] - needs one of DUN-dun-DUN-dun-DUN-dun [25670]
+  Decisions, Decisions [25743, level 81] - needs one of A Bone to Pick [25732]
+  Pay Attention! [27668, level 81] - needs one of Girding Our Loins [25944]
+  Shark Weak [27699, level 81] - needs one of Dah, Nunt... Dah, Nunt... [25657]
+  Once More, With Eeling [27729, level 81] - needs one of Call of Duty [14482], Call of Duty [25924]
+
+Worth checking in game
+----------------------
+  Gimme Shelter! [25587, level 81]: "Gimme Shelter Kill Credit 00 (1)" has no place in the data; taken to be done where the quest is given
+  Gimme Shelter! [25587, level 81]: "Gimme Shelter Kill Credit 01 (1)" has no place in the data; taken to be done where the quest is given
+  DUN-dun-DUN-dun-DUN-dun [25670, level 81]: "Gnaws (1)" has no place in the data; taken to be done where the quest is given
+  Wake of Destruction [25887, level 81]: could not read how many Zin'jatar Guardian are needed from the quest text; assumed 8
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  The Abyssal Ride [25371, level 81]: its mobs are level 88; this part gets you to about 81.5
+  Good Deed Left Undone [27685, level 81]: follows The Abyssal Ride [25371]
+
+Left out (13)
+-------------
+not in the game (on Questie's quest blacklist) (11):
+  Raw Materials [25384], Pressure is Mounting [25435], A Test of Wills [25455], Once More, With Eeling [DEPRICATED] [25474], Back in the Saddle [25497], Shark Bait [25498], Sea-Food Chain [25506], Starve a Fever, Feed a Cold [25636], Tenuous Negotiations [25737], Shallow End of the Gene Pool [25738], Candy Bucket [28981]
+starts from a random drop, and no quest in this guide kills those mobs (2):
+  Lady La-La's Medallion [25419], Kliklak's Craw [25467]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Kelp'thar Forest - Alliance - part 2 of 2, planned from level 86
+Guide "81-81 Kelp'thar Forest" in group "Zone Routes (Alliance)": this part has 10 steps, 9 stops
+Written to guides/mop/Kelp'thar Forest (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 86. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 9 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 6 tasks, 397 yd on foot; ends at level 86.0; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 1,499 yd; ends at level 86.0; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Oh, the Insanity! [25651, level 81] <- your earlier visit to this zone
+  Decompression [25888, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

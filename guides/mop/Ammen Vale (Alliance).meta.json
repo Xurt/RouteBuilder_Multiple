@@ -1,0 +1,249 @@
+{
+  "zone": "Ammen Vale",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "1-5 Ammen Vale",
+  "file": "Ammen Vale (Alliance).lua",
+  "continent": -6456,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 1,
+      "end": 5.15,
+      "guide": "1-5 Ammen Vale",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Botanist Taerix",
+          "guide": "1-5 Ammen Vale",
+          "level": 1,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 9279,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei",
+      "from": "Azuremyst Isle"
+    },
+    {
+      "id": 9280,
+      "level": 1,
+      "req": 1,
+      "xp": 80,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei"
+    },
+    {
+      "id": 9283,
+      "level": 2,
+      "req": 1,
+      "xp": 215,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei"
+    },
+    {
+      "id": 9293,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9294,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9303,
+      "level": 4,
+      "req": 2,
+      "xp": 445,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9305,
+      "level": 4,
+      "req": 2,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9309,
+      "level": 5,
+      "req": 2,
+      "xp": 110,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9311,
+      "level": 5,
+      "req": 2,
+      "xp": 670,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9312,
+      "level": 5,
+      "req": 3,
+      "xp": 110,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9369,
+      "level": 1,
+      "req": 1,
+      "xp": 80,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Worgen/Pandaren"
+    },
+    {
+      "id": 9371,
+      "level": 2,
+      "req": 1,
+      "xp": 45,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9409,
+      "level": 2,
+      "req": 1,
+      "xp": 45,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9798,
+      "level": 5,
+      "req": 2,
+      "xp": 450,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 9799,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10302,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10303,
+      "level": 4,
+      "req": 1,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10304,
+      "level": 4,
+      "req": 1,
+      "xp": 180,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26958,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei Warrior"
+    },
+    {
+      "id": 26963,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei Hunter"
+    },
+    {
+      "id": 26966,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei Paladin"
+    },
+    {
+      "id": 26968,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei Mage"
+    },
+    {
+      "id": 26969,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei Shaman"
+    },
+    {
+      "id": 26970,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Draenei Priest"
+    }
+  ],
+  "carriedTo": {
+    "Azuremyst Isle": 1
+  }
+}

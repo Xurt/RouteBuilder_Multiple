@@ -1,0 +1,675 @@
+{
+  "zone": "The Cape of Stranglethorn",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "30-35 The Cape of Stranglethorn",
+  "file": "The Cape of Stranglethorn (Horde).lua",
+  "continent": -5287,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 30,
+      "end": 32.85,
+      "next": 35,
+      "guide": "30-33 The Cape of Stranglethorn: around Captain Hecklebury Smotts",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Captain Hecklebury Smotts",
+          "guide": "30-33 The Cape of Stranglethorn: around Captain Hecklebury Smotts",
+          "level": 30,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 35,
+      "end": 35,
+      "next": 58,
+      "guide": "35-36 The Cape of Stranglethorn",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "35-36 The Cape of Stranglethorn",
+          "level": 35,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 58,
+      "end": 58.46,
+      "guide": "58-59 The Cape of Stranglethorn: around Captain Keelhaul",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "around Captain Keelhaul",
+          "guide": "58-59 The Cape of Stranglethorn: around Captain Keelhaul",
+          "level": 58,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 836,
+      "level": 35,
+      "req": 30,
+      "xp": 6600,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "The Hinterlands"
+    },
+    {
+      "id": 9133,
+      "level": 7,
+      "req": 5,
+      "xp": 315,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Eversong Woods"
+    },
+    {
+      "id": 9328,
+      "level": 21,
+      "req": 15,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Ghostlands"
+    },
+    {
+      "id": 9627,
+      "level": 21,
+      "req": 15,
+      "xp": 2500,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Durotar"
+    },
+    {
+      "id": 9811,
+      "level": 21,
+      "req": 15,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/Goblin/Pandaren",
+      "from": "Ghostlands"
+    },
+    {
+      "id": 25476,
+      "level": 37,
+      "req": 35,
+      "xp": 7420,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Feralas"
+    },
+    {
+      "id": 26404,
+      "level": 30,
+      "req": 29,
+      "xp": 2450,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Northern Stranglethorn"
+    },
+    {
+      "id": 26433,
+      "level": 30,
+      "req": 26,
+      "xp": 2450,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26434,
+      "level": 30,
+      "req": 26,
+      "xp": 2450,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26435,
+      "level": 32,
+      "req": 26,
+      "xp": 670,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26450,
+      "level": 30,
+      "req": 29,
+      "xp": 2450,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26451,
+      "level": 30,
+      "req": 30,
+      "xp": 80,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26487,
+      "level": 30,
+      "req": 29,
+      "xp": 2450,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26489,
+      "level": 30,
+      "req": 29,
+      "xp": 2450,
+      "part": 1,
+      "section": 0,
+      "tag": "Goblin"
+    },
+    {
+      "id": 26493,
+      "level": 30,
+      "req": 29,
+      "xp": 3050,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26494,
+      "level": 31,
+      "req": 29,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26495,
+      "level": 31,
+      "req": 29,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26533,
+      "level": 31,
+      "req": 29,
+      "xp": 2540,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26534,
+      "level": 31,
+      "req": 29,
+      "xp": 1900,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26535,
+      "level": 32,
+      "req": 29,
+      "xp": 3350,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26550,
+      "level": 31,
+      "req": 29,
+      "xp": 2540,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26551,
+      "level": 32,
+      "req": 29,
+      "xp": 2000,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26555,
+      "level": 32,
+      "req": 29,
+      "xp": 4050,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Northern Stranglethorn"
+    },
+    {
+      "id": 26593,
+      "level": 32,
+      "req": 30,
+      "xp": 2710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26594,
+      "level": 32,
+      "req": 30,
+      "xp": 2000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26595,
+      "level": 32,
+      "req": 30,
+      "xp": 2710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26597,
+      "level": 33,
+      "req": 31,
+      "xp": 4350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26599,
+      "level": 33,
+      "req": 31,
+      "xp": 2900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26600,
+      "level": 33,
+      "req": 31,
+      "xp": 2150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26601,
+      "level": 33,
+      "req": 31,
+      "xp": 4350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26602,
+      "level": 33,
+      "req": 31,
+      "xp": 3600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26603,
+      "level": 32,
+      "req": 30,
+      "xp": 2000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26604,
+      "level": 32,
+      "req": 30,
+      "xp": 2710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26605,
+      "level": 32,
+      "req": 30,
+      "xp": 2710,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26606,
+      "level": 33,
+      "req": 30,
+      "xp": 4350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26609,
+      "level": 32,
+      "req": 31,
+      "xp": 2000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26610,
+      "level": 32,
+      "req": 31,
+      "xp": 2000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26611,
+      "level": 32,
+      "req": 31,
+      "xp": 670,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26612,
+      "level": 33,
+      "req": 31,
+      "xp": 3600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26613,
+      "level": 33,
+      "req": 31,
+      "xp": 2900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26614,
+      "level": 33,
+      "req": 31,
+      "xp": 2900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26617,
+      "level": 32,
+      "req": 30,
+      "xp": 2000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26624,
+      "level": 33,
+      "req": 31,
+      "xp": 290,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28704,
+      "level": 30,
+      "req": 29,
+      "xp": 245,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 26629,
+      "level": 33,
+      "req": 31,
+      "xp": 3600,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26631,
+      "level": 33,
+      "req": 31,
+      "xp": 2150,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26633,
+      "level": 33,
+      "req": 31,
+      "xp": 2900,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26634,
+      "level": 33,
+      "req": 31,
+      "xp": 2900,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26635,
+      "level": 33,
+      "req": 31,
+      "xp": 2900,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26644,
+      "level": 34,
+      "req": 31,
+      "xp": 2300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26647,
+      "level": 34,
+      "req": 31,
+      "xp": 3100,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26648,
+      "level": 34,
+      "req": 31,
+      "xp": 0,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26649,
+      "level": 34,
+      "req": 31,
+      "xp": 3850,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26650,
+      "level": 35,
+      "req": 31,
+      "xp": 1650,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26662,
+      "level": 35,
+      "req": 31,
+      "xp": 3300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26663,
+      "level": 35,
+      "req": 31,
+      "xp": 3300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26664,
+      "level": 35,
+      "req": 31,
+      "xp": 3300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26665,
+      "level": 35,
+      "req": 31,
+      "xp": 3300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26678,
+      "level": 35,
+      "req": 31,
+      "xp": 330,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26679,
+      "level": 35,
+      "req": 31,
+      "xp": 820,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26695,
+      "level": 35,
+      "req": 31,
+      "xp": 3300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26697,
+      "level": 35,
+      "req": 31,
+      "xp": 3300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26698,
+      "level": 35,
+      "req": 31,
+      "xp": 330,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26699,
+      "level": 35,
+      "req": 31,
+      "xp": 3300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26700,
+      "level": 35,
+      "req": 31,
+      "xp": 3300,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 26703,
+      "level": 35,
+      "req": 31,
+      "xp": 4950,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Eversong Woods": 1,
+    "Tirisfal Glades": 2,
+    "Northern Stranglethorn": 3,
+    "Durotar": 13,
+    "Ghostlands": 1,
+    "Hillsbrad Foothills": 1,
+    "Arathi Highlands": 1,
+    "The Hinterlands": 1,
+    "The Barrens": 1,
+    "Western Plaguelands": 1
+  }
+}

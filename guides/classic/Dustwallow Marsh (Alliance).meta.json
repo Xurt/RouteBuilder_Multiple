@@ -3,70 +3,22 @@
   "faction": "Alliance",
   "who": "Alliance",
   "group": "Zone Routes (Alliance)",
-  "name": "26-40 Dustwallow Marsh",
+  "name": "35-40 Dustwallow Marsh",
   "file": "Dustwallow Marsh (Alliance).lua",
   "continent": 1,
   "suggest": true,
   "parts": [
     {
       "part": 1,
-      "start": 26,
-      "end": 26,
-      "next": 31,
-      "guide": "26-27 Dustwallow Marsh",
+      "start": 35,
+      "end": 35.65,
+      "guide": "35-40 Dustwallow Marsh",
       "sections": [
         {
           "label": "RBSection1_1",
-          "name": "start",
-          "guide": "26-27 Dustwallow Marsh",
-          "level": 26,
-          "index": 0
-        }
-      ]
-    },
-    {
-      "part": 2,
-      "start": 31,
-      "end": 31.28,
-      "next": 34,
-      "guide": "31-32 Dustwallow Marsh: around Captain Garran Vimes",
-      "sections": [
-        {
-          "label": "RBSection2_1",
-          "name": "around Captain Garran Vimes",
-          "guide": "31-32 Dustwallow Marsh: around Captain Garran Vimes",
-          "level": 31,
-          "index": 0
-        }
-      ]
-    },
-    {
-      "part": 3,
-      "start": 34,
-      "end": 34.32,
-      "next": 37,
-      "guide": "34-35 Dustwallow Marsh",
-      "sections": [
-        {
-          "label": "RBSection3_1",
-          "name": "part 3",
-          "guide": "34-35 Dustwallow Marsh",
-          "level": 34,
-          "index": 0
-        }
-      ]
-    },
-    {
-      "part": 4,
-      "start": 37,
-      "end": 37.11,
-      "guide": "37-38 Dustwallow Marsh",
-      "sections": [
-        {
-          "label": "RBSection4_1",
-          "name": "part 4",
-          "guide": "37-38 Dustwallow Marsh",
-          "level": 37,
+          "name": "around Fiora Longears",
+          "guide": "35-40 Dustwallow Marsh",
+          "level": 35,
           "index": 0
         }
       ]
@@ -82,6 +34,96 @@
       "section": 0,
       "tag": "",
       "from": "Wetlands"
+    },
+    {
+      "id": 1177,
+      "level": 36,
+      "req": 32,
+      "xp": 2800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1204,
+      "level": 38,
+      "req": 33,
+      "xp": 2850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1206,
+      "level": 35,
+      "req": 30,
+      "xp": 2750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1218,
+      "level": 35,
+      "req": 30,
+      "xp": 1350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1219,
+      "level": 35,
+      "req": 30,
+      "xp": 690,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1220,
+      "level": 35,
+      "req": 30,
+      "xp": 2750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1222,
+      "level": 37,
+      "req": 30,
+      "xp": 2850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1252,
+      "level": 40,
+      "req": 30,
+      "xp": 780,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1253,
+      "level": 35,
+      "req": 30,
+      "xp": 690,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1259,
+      "level": 40,
+      "req": 30,
+      "xp": 315,
+      "part": 1,
+      "section": 0,
+      "tag": ""
     },
     {
       "id": 1260,
@@ -104,6 +146,51 @@
       "from": "Wetlands"
     },
     {
+      "id": 1282,
+      "level": 35,
+      "req": 30,
+      "xp": 275,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1284,
+      "level": 35,
+      "req": 30,
+      "xp": 1350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1285,
+      "level": 38,
+      "req": 30,
+      "xp": 285,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1286,
+      "level": 38,
+      "req": 30,
+      "xp": 2850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1287,
+      "level": 38,
+      "req": 30,
+      "xp": 2850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
       "id": 1302,
       "level": 35,
       "req": 30,
@@ -112,6 +199,24 @@
       "section": 0,
       "tag": "",
       "from": "Wetlands"
+    },
+    {
+      "id": 1319,
+      "level": 35,
+      "req": 30,
+      "xp": 275,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 1320,
+      "level": 35,
+      "req": 30,
+      "xp": 1350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
     },
     {
       "id": 1799,
@@ -152,164 +257,11 @@
       "section": 0,
       "tag": "Mage",
       "from": "Mulgore"
-    },
-    {
-      "id": 1219,
-      "level": 35,
-      "req": 30,
-      "xp": 690,
-      "part": 2,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 1220,
-      "level": 35,
-      "req": 30,
-      "xp": 2750,
-      "part": 2,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 1252,
-      "level": 40,
-      "req": 30,
-      "xp": 780,
-      "part": 2,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 1253,
-      "level": 35,
-      "req": 30,
-      "xp": 690,
-      "part": 2,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 1259,
-      "level": 40,
-      "req": 30,
-      "xp": 315,
-      "part": 2,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 1282,
-      "level": 35,
-      "req": 30,
-      "xp": 275,
-      "part": 2,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 1284,
-      "level": 35,
-      "req": 30,
-      "xp": 1350,
-      "part": 2,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 1285,
-      "level": 38,
-      "req": 30,
-      "xp": 285,
-      "part": 2,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 1286,
-      "level": 38,
-      "req": 30,
-      "xp": 2850,
-      "part": 2,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 1287,
-      "level": 38,
-      "req": 30,
-      "xp": 2850,
-      "part": 2,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 1319,
-      "level": 35,
-      "req": 30,
-      "xp": 275,
-      "part": 2,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 1320,
-      "level": 35,
-      "req": 30,
-      "xp": 1350,
-      "part": 2,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 1177,
-      "level": 36,
-      "req": 32,
-      "xp": 2800,
-      "part": 3,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 1204,
-      "level": 38,
-      "req": 33,
-      "xp": 2850,
-      "part": 3,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 1218,
-      "level": 35,
-      "req": 30,
-      "xp": 1350,
-      "part": 3,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 1222,
-      "level": 37,
-      "req": 30,
-      "xp": 2850,
-      "part": 3,
-      "section": 0,
-      "tag": ""
-    },
-    {
-      "id": 1206,
-      "level": 35,
-      "req": 30,
-      "xp": 2750,
-      "part": 4,
-      "section": 0,
-      "tag": ""
     }
   ],
   "carriedTo": {
+    "Arathi Highlands": 1,
     "Ashenvale": 1,
-    "Thousand Needles": 1,
-    "Arathi Highlands": 1
+    "Thousand Needles": 1
   }
 }

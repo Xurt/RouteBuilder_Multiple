@@ -1,0 +1,53 @@
+Wetlands - Alliance
+Guide "20-25 Wetlands" in group "Zone Routes (Alliance)": 112 steps, 101 stops
+Written to guides/mop/Wetlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 8 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 20. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 3 steps kept, 145 new ones slotted in, 0 moved because their prerequisites changed, 1 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 146 tasks, 21,784 yd on foot; ends at level 25.5; 1 hearth
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 21,784 yd; ends at level 25.5; 1 hearth
+Hearthstone: set at Cedric Bronzeflint (Cedric Bronzeflint's inn); 1 hearth step in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 21 for When Archaeology Attacks (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+6 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (54)
+------------------------
+Start to finish here: 51 (6 for everyone, 45 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Into Arathi [26139, level 25] -> Arathi Highlands
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Checking on the Boys [26137, level 20] <- Loch Modan
+  Hero's Call: Wetlands! [28565, level 20, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Ironforge
+
+Worth checking in game
+----------------------
+  Claws from the Deep [25801, level 22, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Bluegill Murloc" really is line 2 in the quest log
+  The Twilight's Hammer Revealed [26127, level 25, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: could not read how many Twilight Convert are needed from the quest text; assumed 8
+  The Angerfang Menace [26189, level 24, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Dragonmaw Raider" really is line 2 in the quest log
+
+Left out (44)
+-------------
+not in the game (on Questie's quest blacklist) (43):
+  The Doomed Fleet [270], Reclaiming Goods [281], The Search Continues [284], Search More Hovels [285], The Third Fleet [288], The Cursed Crew [289], Lifting the Curse [290], The Eye of Paleth [292], The Dark Iron War [303], A Grim Task [304], In Search of The Excavation Team [306], Lightforge Iron [321], The Lost Ingots [324], The Fury Runs Deep [378], The Algaz Gauntlet [455], War Banners [464], Nek'rosh's Gambit [465], Fall of Dun Modr [472], Report to Captain Stoutfist [473], Defeat Nek'rosh [474], Lightforge Ingots [526], The Thandol Span [631], The Thandol Span [632], The Thandol Span [633], The Absent Minded Prospector [942], The Absent Minded Prospector [943], Fiora Longears [1132], The Missing Diplomat [1248], The Missing Diplomat [1249], The Missing Diplomat [1250], Winter's Presents [8827], New Year Celebrations! [8860], Honor the Flame [11828], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Candy Bucket [12343], REUSE [13840], Sharing a Bountiful Feast [14064], Ferilon Leafborn [26138], REUSE - BAD COPY [27250], ... 3 more
+repeatable (1):
+  CLUCK! [3861]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

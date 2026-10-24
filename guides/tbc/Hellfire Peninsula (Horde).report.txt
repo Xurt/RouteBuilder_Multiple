@@ -1,0 +1,136 @@
+Hellfire Peninsula - Horde - part 1 of 2, planned from level 60
+Guide "60-63 Hellfire Peninsula" in group "Zone Routes (Horde)": this part has 229 steps, 194 stops
+Written to guides/tbc/Hellfire Peninsula (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 16 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+20 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 60. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 229 steps kept, 29 new ones slotted in, 8 moved because their prerequisites changed, 17 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 230 tasks, 43,706 yd on foot; ends at level 61.4; at its hardest you are 2.7 levels below the mobs
+  BloodElf: 2 more tasks; their whole route comes to 43,397 yd; ends at level 61.4; at its hardest you are 2.7 levels below the mobs
+  everyone (quests that depend on other zones): 34 more tasks; their whole route comes to 47,153 yd; ends at level 61.4; at its hardest you are 2.7 levels below the mobs
+Hearthstone: set at Gaston (Gaston's inn); 0 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 60 for Falcon Watch (Orc/Undead/Tauren/Troll)
+  level 60 for Falcon Watch (BloodElf)
+7 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+8 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+8 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+6 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (96)
+------------------------
+Start to finish here: 75 (73 for everyone, 1 Orc/Undead/Tauren/Troll, 1 BloodElf)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Report to Zurai [10103, level 61] -> Zangarmarsh
+  Messenger to Thrall [9438, level 62] -> Orgrimmar
+  The Cenarion Expedition [9912, level 62] -> Zangarmarsh
+
+Hand-in step only shows once complete (2):
+  Arelion's Journal [9374, level 62] - needs Arelion's Journal (1) (an unknown place)
+  Weaken the Ramparts [9572, level 62] - needs Gargolmar's Hand (1) (an unknown place); Omor's Hoof (1) (an unknown place); Nazan's Head (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Through the Dark Portal [9407, level 61] <- Blasted Lands
+  Envoy to the Mag'har [9441, level 63] <- Orgrimmar
+  Warning the Cenarion Circle [9724, level 64] <- Zangarmarsh
+
+Need a quest this guide does not hand in - steps show only once that is done (13):
+  The Battle Horn [10230, level 61] - needs one of Decipher the Tome [10229]
+  Bloody Vengeance [10250, level 61] - needs one of The Battle Horn [10230]
+  Honor the Fallen [10258, level 61] - needs one of Bloody Vengeance [10250]
+  Arelion's Mistress [9472, level 62] - needs one of The Mistress Revealed [10287]
+  Arelion's Secret [10286, level 62] - needs one of Arelion's Journal [9374]
+  The Mistress Revealed [10287, level 62] - needs one of Arelion's Secret [10286]
+  A Debilitating Sickness [9442, level 63] - needs one of Envoy to the Mag'har [9441]
+  Administering the Salve [9447, level 63] - needs one of A Debilitating Sickness [9442]
+  The Blood is Life [9590, level 63] - needs one of Dark Tidings [9588]
+  Heart of Rage [9608, level 63] - needs one of Weaken the Ramparts [9572]
+  Return to the Marsh [9732, level 63] - needs one of Warning the Cenarion Circle [9724] -> Zangarmarsh
+  The Earthbinder [10349, level 63] - needs one of Crimson Crystal Clue [10134]
+  Natural Remedies [10351, level 63] - needs one of The Earthbinder [10349]
+
+Worth checking in game
+----------------------
+  The Assassin [9400, level 62]: "Find Krun Spinebreaker" is assumed to be line 2 in the quest log; check it
+  Colossal Menace [10132, level 63]: could not read how many Raging Colossus are needed from the quest text; assumed 8
+  Make Them Listen [10220, level 61]: could not read how many Unyielding Footman are needed from the quest text; assumed 8
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  Mission: The Abyssal Shelf [10162, level 62]: its mobs are level 69; this part gets you to about 61.4
+
+Left out (24)
+-------------
+above this zone's range of 60-65 (8):
+  The Will of the Warchief [9495], Pride of the Fel Horde [9496], Entry Into the Citadel [10755], Grand Master Rohok [10756], Rohok's Request [10757], Hotter than Hell [10758], The Fall of Magtheridon [11003], The Missing Magistrix [11526]
+not in the game (on Questie's quest blacklist) (6):
+  Desecrate this Fire! [11747], Honor the Flame [11851], Playing with Fire [11915], Incense for the Festival Scorchlings [11966], Candy Bucket [12388], Candy Bucket [12389]
+repeatable (5):
+  Life's Finer Pleasures [9483], Hellfire Fortifications [10110], Return to the Abyssal Shelf [10347], Blood for Blood [11515], Blast the Gateway [11516]
+needs a profession (3):
+  Master of Potions [10905], Master of Elixirs [10906], Master of Transmutation [10907]
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  Missing Missive [9373]
+handed in here, but the database does not say where it starts (1):
+  Dark Tidings [9588]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Hellfire Peninsula - Horde - part 2 of 2, planned from level 67
+Guide "60-63 Hellfire Peninsula" in group "Zone Routes (Horde)": this part has 9 steps, 8 stops
+Written to guides/tbc/Hellfire Peninsula (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 67. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 7 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 5 tasks, 1,817 yd on foot; ends at level 67.0; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 3,720 yd; ends at level 67.0; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (3)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Arelion's Journal [9374, level 62] <- your earlier visit to this zone
+  Weaken the Ramparts [9572, level 62] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+  Mission: The Abyssal Shelf [10162, level 62]: Mo'arg Overseer is level 71, far above this level 62 quest, so the objective is taken to be "talk to" rather than "kill"
+  Mission: The Abyssal Shelf [10162, level 62]: Fel Cannon is level 71, far above this level 62 quest, so the objective is taken to be "talk to" rather than "kill"
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

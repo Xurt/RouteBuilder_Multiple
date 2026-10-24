@@ -206,7 +206,7 @@ step
     .target Wharfmaster Dizzywig
     .isOnQuest 1039
 step
-    +|cRXP_WARN_Suggested next zones at level 14|r: |cRXP_FRIENDLY_Darkshore|r (about 2.3 levels of quests, starting around Terenthis), |cRXP_FRIENDLY_Teldrassil|r (about 0.7 levels of quests, starting around Denalan), |cRXP_FRIENDLY_Westfall|r (about 0.7 levels of quests, starting around Farmer Saldean). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 14|r: |cRXP_FRIENDLY_Darkshore|r (about 2.3 levels of quests, starting around Terenthis), |cRXP_FRIENDLY_Teldrassil|r (about 0.9 levels of quests, starting around Denalan; 1 quest from here hands in there), |cRXP_FRIENDLY_Westfall|r (about 0.7 levels of quests, starting around Farmer Saldean). Completing this step loads the guide for Darkshore --RouteBuilder:next
 step
     +|cRXP_WARN_The rest of The Barrens is planned from level 17.|r Load its guide for level 17 then
 ]])

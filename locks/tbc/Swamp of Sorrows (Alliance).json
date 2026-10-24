@@ -1,0 +1,64 @@
+{
+  "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "35-52 Swamp of Sorrows",
+  "saved": "2026-10-23 18:13",
+  "levels": "RestedXP",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "accept:1389 @1435:-2818.83,-10100.99  Accept Draenethyst Crystals",
+        "accept:9448 @1435:-2813.56,-10106.96  Accept Mercy for the Cursed",
+        "accept:9609 @1435:-2813.56,-10106.96  Accept Help Watcher Biggs",
+        "turnin:9609 @1435:-2836.27,-10535.73  TurnIn Help Watcher Biggs",
+        "accept:1396 @1435:-2836.27,-10535.73  Accept Encroaching Wildlife",
+        "obj:1396:2 @1435:-2822.27,-10568.15  Objective Encroaching Wildlife / Sorrow Spinner slain (10)",
+        "obj:1396:1 @1435:-2844.52,-10463.86  Objective Encroaching Wildlife / Young Sawtooth Crocolisk slain (8)",
+        "obj:1396:3 @1435:-2802.78,-10252.07  Objective Encroaching Wildlife / Swamp Jaguar slain (10)",
+        "turnin:1396 @1435:-2836.27,-10535.73  TurnIn Encroaching Wildlife",
+        "accept:1421 @1435:-2836.27,-10535.73  Accept The Lost Caravan",
+        "item:1392 @1435:-3482.19,-10142.28  ItemAccept Noboru the Cudgel",
+        "obj:1389:1 @1435:-3501.22,-10063.37  Objective Draenethyst Crystals / Draenethyst Crystal (6)",
+        "obj:9448:1 @1435:-3594.81,-10015.36  Objective Mercy for the Cursed / Cursed Lost One slain (3)",
+        "obj:1421:1 @1435:-3701.47,-9900.67  Objective The Lost Caravan / Wizards' Reagents (1)",
+        "accept:1393 @1435:-3724.63,-9898.53  Accept Galen's Escape",
+        "obj:1393:1 @1435:-3440.44,-10072.7  Objective Galen's Escape / Escort Galen out of the Fallow Sanctuary.",
+        "turnin:1393 @1435:-3319.56,-10228.83  TurnIn Galen's Escape",
+        "turnin:1389 @1435:-2818.83,-10100.99  TurnIn Draenethyst Crystals",
+        "turnin:1392 @1435:-2818.83,-10100.99  TurnIn Noboru the Cudgel",
+        "turnin:9448 @1435:-2813.56,-10106.96  TurnIn Mercy for the Cursed",
+        "turnin:1421 @1435:-2836.27,-10535.73  TurnIn The Lost Caravan",
+        "turnin:8417 @1435:-3009.44,-10632.22  TurnIn A Troubled Spirit",
+        "turnin:2783 @1435:-3009.44,-10632.22  TurnIn Petty Squabbles"
+      ]
+    },
+    {
+      "part": 2,
+      "steps": [
+        "accept:1398 @1435:-2836.27,-10535.73  Accept Driftwood",
+        "obj:1398:1 @1435:-4198.98,-10920.17  Objective Driftwood / Sundried Driftwood (1)",
+        "turnin:1398 @1435:-2836.27,-10535.73  TurnIn Driftwood",
+        "accept:1425 @1435:-2836.27,-10535.73  Accept Deliver the Shipment",
+        "accept:625 @1435:-2747.5,-10357.74  Accept Cortello's Riddle"
+      ]
+    },
+    {
+      "part": 3,
+      "steps": [
+        "accept:9610 @1435:-2816.31,-10116.59  Accept Pool of Tears",
+        "obj:9610:1 @1435:-3777.39,-10384.04  Objective Pool of Tears / Atal'ai Artifact (10)",
+        "turnin:9610 @1435:-2816.31,-10116.59  TurnIn Pool of Tears"
+      ]
+    },
+    {
+      "part": 4,
+      "steps": [
+        "accept:8423 @1435:-3009.44,-10632.22  Accept Warrior Kinship",
+        "item:3374 @1435:-2536.47,-10717.55  ItemAccept The Essence of Eranikus",
+        "turnin:3374 @1435:-2536.47,-10717.55  TurnIn The Essence of Eranikus",
+        "accept:8424 @1435:-3009.44,-10632.22  Accept War on the Shadowsworn",
+        "accept:8425 @1435:-3009.44,-10632.22  Accept Voodoo Feathers"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+Redridge Mountains - Alliance - part 1 of 2, planned from level 15
+Guide "15-20 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 87 steps, 78 stops
+Written to guides/mop/Redridge Mountains (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+4 pickups or hand-ins are within reach of a stop but planned for later.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 15. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 87 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed, 50 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 47 tasks, 10,601 yd on foot; ends at level 17.2
+  everyone (quests that depend on other zones): 43 more tasks; their whole route comes to 16,524 yd; ends at level 17.2; 1 hearth
+Hearthstone: set at Franklin Hamar (Franklin Hamar's inn); 1 hearth step in the guide.
+4 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (32)
+------------------------
+Start to finish here: 14 (0 for everyone, 14 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Elmore's Task [1097, level 15, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Stormwind City
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Hero's Call: Redridge Mountains! [26365, level 15, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Westfall
+  Threat to the Kingdom [26761, level 15] <- Westfall
+  Hero's Call: Redridge Mountains! [28563, level 15, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Stormwind City
+
+Need a quest this guide does not hand in - steps show only once that is done (14):
+  Saving Foreman Oslow [26520, level 16, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of He Who Controls the Ettins [26519]
+  Jorgensen [26560, level 17, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Breaking Out is Hard to Do [26587]
+  Krakauer [26561, level 17, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Jorgensen [26560]
+  And Last But Not Least... Danforth [26562, level 17, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Krakauer [26561]
+  Return of the Bravo Company [26563, level 17, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of And Last But Not Least... Danforth [26562]
+  John J. Keeshan [26567, level 17, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Saving Foreman Oslow [26520]
+  This Ain't My War [26568, level 17, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of John J. Keeshan [26567]
+  Surveying Equipment [26569, level 17, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of This Ain't My War [26568]
+  Render's Army [26570, level 17, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of This Ain't My War [26568]
+  Weapons of War [26571, level 17, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of This Ain't My War [26568]
+  His Heart Must Be In It [26573, level 17, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Weapons of War [26571]
+  In Search of Bravo Company [26586, level 17, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of This Ain't My War [26568]
+  Breaking Out is Hard to Do [26587, level 17, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of In Search of Bravo Company [26586]
+  They Drew First Blood [26607, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Return of the Bravo Company [26563], His Heart Must Be In It [26573]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (17)
+----------------------------
+These need a higher level than this part ends at:
+  It's Never Over [26616, level 18]: its mobs are level 20; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 17.2
+  Bravo Company Field Kit: Camouflage [26636, level 18]: follows It's Never Over [26616]
+  Bravo Company Field Kit: Chloroform [26637, level 18]: follows It's Never Over [26616]
+  Hunting the Hunters [26638, level 18]: follows It's Never Over [26616]
+  Point of Contact: Brubaker [26639, level 18]: follows It's Never Over [26616]
+  Unspeakable Atrocities [26640, level 18]: follows Point of Contact: Brubaker [26639]
+  Prisoners of War [26646, level 18]: follows Bravo Company Field Kit: Camouflage [26636]
+  To Win a War, You Gotta Become War [26651, level 18]: follows Prisoners of War [26646]
+  Detonation [26668, level 18]: follows To Win a War, You Gotta Become War [26651]
+  Shadowhide Extinction [26692, level 19]: needs level 17; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 17.2
+  The Dark Tower [26693, level 19]: needs level 17; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 17.2
+  The Grand Magus Doane [26694, level 19]: its mobs are level 20; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 17.2
+  AHHHHHHHHHHHH! AHHHHHHHHH!!! [26708, level 20]: needs level 17; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 17.2
+  Showdown at Stonewatch [26713, level 20]: its mobs are level 21; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 17.2
+  Darkblaze, Brood of the Worldbreaker [26714, level 20]: its mobs are level 21; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 17.2
+  Triumphant Return [26726, level 20]: needs level 17; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 17.2
+  Hero's Call: Duskwood! [26728, level 20]: needs level 19; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 17.2
+
+Left out (54)
+-------------
+not in the game (on Questie's quest blacklist) (49):
+  Tharil'zun [19], Blackrock Menace [20], An Unwelcome Guest [34], The Defias Brotherhood [65], The Everstill Bridge [89], Solomon's Law [91], Redridge Goulash [92], A Watchful Eye [94], Shadow Magic [115], Dry Times [116], Return to Verner [119], Messenger to Stormwind [121], Underbelly Scales [122], A Baying of Gnolls [124], The Lost Tools [125], Howling in the Hills [126], Selling Fish [127], Blackrock Bounty [128], A Free Lunch [129], Visit the Herbalist [130], Delivering Daffodils [131], Messenger to Westfall [144], Messenger to Darkshire [146], Murloc Poachers [150], Wanted: Gath'Ilzogg [169], Wanted: Lieutenant Fangore [180], Missing In Action [219], Encroaching Gnolls [244], Assessing the Threat [246], Looking Further [248], Morganth [249], Ink Supplies [345], What Comes Around... [386], Yorus Barleybrew [1698], The Rethban Gauntlet [1699], Redridge Rendezvous [2281], Alther's Mill [2282], Horns of Nez'ra [2358], Hilary's Necklace [3741], The True Masters [4183], ... 9 more
+repeatable (2):
+  CLUCK! [3861], Lindsay [31781]
+special category (sort -394) (2):
+  Lindsay [31725], Eric Davidson [31726]
+needs a profession (1):
+  Gearing Redridge [1618]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Redridge Mountains - Alliance - part 2 of 2, planned from level 20
+Guide "15-20 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 51 steps, 50 stops
+Written to guides/mop/Redridge Mountains (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 20. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 48 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 20.0
+  everyone (quests that depend on other zones): 49 more tasks; their whole route comes to 15,208 yd; ends at level 20.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (17)
+------------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Hero's Call: Duskwood! [26728, level 20, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Duskwood
+
+Need a quest this guide does not hand in - steps show only once that is done (16):
+  It's Never Over [26616, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of They Drew First Blood [26607]
+  Bravo Company Field Kit: Camouflage [26636, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of It's Never Over [26616]
+  Bravo Company Field Kit: Chloroform [26637, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of It's Never Over [26616]
+  Hunting the Hunters [26638, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of It's Never Over [26616]
+  Point of Contact: Brubaker [26639, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of It's Never Over [26616]
+  Unspeakable Atrocities [26640, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Point of Contact: Brubaker [26639]
+  Prisoners of War [26646, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Bravo Company Field Kit: Camouflage [26636], Bravo Company Field Kit: Chloroform [26637], Hunting the Hunters [26638], Unspeakable Atrocities [26640]
+  To Win a War, You Gotta Become War [26651, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Prisoners of War [26646]
+  Detonation [26668, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of To Win a War, You Gotta Become War [26651]
+  Shadowhide Extinction [26692, level 19, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Detonation [26668]
+  The Dark Tower [26693, level 19, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Detonation [26668]
+  The Grand Magus Doane [26694, level 19, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Dark Tower [26693]
+  AHHHHHHHHHHHH! AHHHHHHHHH!!! [26708, level 20, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Grand Magus Doane [26694]
+  Showdown at Stonewatch [26713, level 20, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of AHHHHHHHHHHHH! AHHHHHHHHH!!! [26708]
+  Darkblaze, Brood of the Worldbreaker [26714, level 20, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Showdown at Stonewatch [26713]
+  Triumphant Return [26726, level 20, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Darkblaze, Brood of the Worldbreaker [26714]
+
+Worth checking in game
+----------------------
+  Prisoners of War [26646, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Blackrock Holding Pen" is line 1 by the database, but RestedXP's guide has "Prisoners of War Freed (1)" there
+  To Win a War, You Gotta Become War [26651, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Blackrock Tower" really is line 2 in the quest log
+  To Win a War, You Gotta Become War [26651, level 18, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Blackrock Explosive Device" is line 1 by the database, but RestedXP's guide has "Seaforium Planted at Munitions Hut (1)" there
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

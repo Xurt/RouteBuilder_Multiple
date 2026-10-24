@@ -1,0 +1,705 @@
+{
+  "zone": "Winterspring",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "50-55 Winterspring",
+  "file": "Winterspring (Horde).lua",
+  "continent": -618,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 50,
+      "end": 54.03,
+      "next": 57,
+      "guide": "52-54 Winterspring: around Rinno Curtainfire",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Donova Snowden",
+          "guide": "50-52 Winterspring: around Donova Snowden",
+          "level": 50,
+          "index": 0
+        },
+        {
+          "label": "RBSection1_2",
+          "name": "around Rinno Curtainfire",
+          "guide": "52-54 Winterspring: around Rinno Curtainfire",
+          "level": 52,
+          "index": 1
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 57,
+      "end": 57,
+      "guide": "57-58 Winterspring",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "57-58 Winterspring",
+          "level": 57,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 2965,
+      "level": 50,
+      "req": 45,
+      "xp": 680,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 6362,
+      "level": 7,
+      "req": 5,
+      "xp": 315,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren",
+      "from": "Mulgore"
+    },
+    {
+      "id": 24550,
+      "level": 10,
+      "req": 3,
+      "xp": 420,
+      "part": 1,
+      "section": 1,
+      "tag": "Tauren",
+      "from": "Mulgore"
+    },
+    {
+      "id": 27258,
+      "level": 37,
+      "req": 35,
+      "xp": 1850,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Dustwallow Marsh"
+    },
+    {
+      "id": 28460,
+      "level": 50,
+      "req": 49,
+      "xp": 8500,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28464,
+      "level": 50,
+      "req": 49,
+      "xp": 6810,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28467,
+      "level": 50,
+      "req": 49,
+      "xp": 5100,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28469,
+      "level": 50,
+      "req": 49,
+      "xp": 8500,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28470,
+      "level": 50,
+      "req": 49,
+      "xp": 10200,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28471,
+      "level": 50,
+      "req": 49,
+      "xp": 3400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28472,
+      "level": 50,
+      "req": 49,
+      "xp": 3400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28479,
+      "level": 51,
+      "req": 49,
+      "xp": 3500,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28513,
+      "level": 51,
+      "req": 49,
+      "xp": 8800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28518,
+      "level": 51,
+      "req": 49,
+      "xp": 8800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28519,
+      "level": 51,
+      "req": 49,
+      "xp": 8800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28521,
+      "level": 50,
+      "req": 49,
+      "xp": 3400,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Felwood"
+    },
+    {
+      "id": 28522,
+      "level": 50,
+      "req": 49,
+      "xp": 8500,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28524,
+      "level": 50,
+      "req": 49,
+      "xp": 3400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28530,
+      "level": 50,
+      "req": 49,
+      "xp": 8500,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28534,
+      "level": 51,
+      "req": 49,
+      "xp": 1760,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28535,
+      "level": 51,
+      "req": 49,
+      "xp": 1760,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28536,
+      "level": 51,
+      "req": 49,
+      "xp": 3500,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28537,
+      "level": 51,
+      "req": 49,
+      "xp": 10600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28540,
+      "level": 51,
+      "req": 49,
+      "xp": 8800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28609,
+      "level": 52,
+      "req": 50,
+      "xp": 3650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28610,
+      "level": 52,
+      "req": 50,
+      "xp": 9150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28614,
+      "level": 52,
+      "req": 50,
+      "xp": 9150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28615,
+      "level": 52,
+      "req": 50,
+      "xp": 7340,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28618,
+      "level": 52,
+      "req": 50,
+      "xp": 3650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28624,
+      "level": 52,
+      "req": 50,
+      "xp": 3650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28625,
+      "level": 52,
+      "req": 50,
+      "xp": 9150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28626,
+      "level": 52,
+      "req": 50,
+      "xp": 3650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28627,
+      "level": 52,
+      "req": 50,
+      "xp": 3650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28628,
+      "level": 52,
+      "req": 50,
+      "xp": 3650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28629,
+      "level": 52,
+      "req": 50,
+      "xp": 9150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28630,
+      "level": 52,
+      "req": 50,
+      "xp": 7340,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28631,
+      "level": 52,
+      "req": 50,
+      "xp": 11000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28632,
+      "level": 52,
+      "req": 50,
+      "xp": 9150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28637,
+      "level": 53,
+      "req": 51,
+      "xp": 9500,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28638,
+      "level": 53,
+      "req": 51,
+      "xp": 11400,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28639,
+      "level": 53,
+      "req": 50,
+      "xp": 11400,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28640,
+      "level": 53,
+      "req": 51,
+      "xp": 9500,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28641,
+      "level": 53,
+      "req": 51,
+      "xp": 9500,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28656,
+      "level": 51,
+      "req": 49,
+      "xp": 8800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28674,
+      "level": 53,
+      "req": 51,
+      "xp": 3800,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28676,
+      "level": 53,
+      "req": 51,
+      "xp": 3800,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28701,
+      "level": 53,
+      "req": 51,
+      "xp": 9500,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28703,
+      "level": 53,
+      "req": 51,
+      "xp": 9500,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28706,
+      "level": 53,
+      "req": 51,
+      "xp": 3800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28707,
+      "level": 53,
+      "req": 51,
+      "xp": 3800,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28710,
+      "level": 53,
+      "req": 51,
+      "xp": 3800,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28718,
+      "level": 53,
+      "req": 51,
+      "xp": 3800,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28719,
+      "level": 53,
+      "req": 51,
+      "xp": 9500,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28722,
+      "level": 52,
+      "req": 50,
+      "xp": 11000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28742,
+      "level": 53,
+      "req": 51,
+      "xp": 11400,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28745,
+      "level": 53,
+      "req": 51,
+      "xp": 11400,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28768,
+      "level": 50,
+      "req": 49,
+      "xp": 680,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Felwood"
+    },
+    {
+      "id": 28782,
+      "level": 53,
+      "req": 51,
+      "xp": 11400,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28828,
+      "level": 53,
+      "req": 51,
+      "xp": 9500,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28829,
+      "level": 54,
+      "req": 53,
+      "xp": 9850,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28830,
+      "level": 54,
+      "req": 53,
+      "xp": 9850,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28831,
+      "level": 54,
+      "req": 53,
+      "xp": 9850,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28837,
+      "level": 54,
+      "req": 49,
+      "xp": 7890,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28838,
+      "level": 54,
+      "req": 53,
+      "xp": 7890,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28839,
+      "level": 54,
+      "req": 53,
+      "xp": 7890,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28840,
+      "level": 54,
+      "req": 53,
+      "xp": 7890,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28841,
+      "level": 55,
+      "req": 53,
+      "xp": 10200,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28842,
+      "level": 55,
+      "req": 53,
+      "xp": 12250,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28847,
+      "level": 54,
+      "req": 51,
+      "xp": 785,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28848,
+      "level": 51,
+      "req": 49,
+      "xp": 705,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Silverpine Forest": 1,
+    "Mulgore": 1,
+    "Durotar": 25,
+    "Moonglade": 2,
+    "Dustwallow Marsh": 3,
+    "The Barrens": 2,
+    "Azshara": 1,
+    "Tanaris": 1,
+    "Feralas": 1,
+    "Un\u0027Goro Crater": 1,
+    "Ashenvale": 1,
+    "Felwood": 1,
+    "Desolace": 1,
+    "Southern Barrens": 1,
+    "Silithus": 1,
+    "Blasted Lands": 1
+  }
+}

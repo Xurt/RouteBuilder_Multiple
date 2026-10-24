@@ -139,16 +139,14 @@ repeatable (19):
   Stranglethorn Fever [349], Filling the Soul Gem [593], Enticing Negolash [619], Fool's Stout [1127], Membership Card Renewal [3645], Fine Gold Thread [4785], Arena Grandmaster [7838], Master Angler [8193], Apprentice Angler [8194], Zulian, Razzashi, and Hakkari Coins [8195], Essence Mangoes [8196], Rare Fish - Keefer's Angelfish [8221], Rare Fish - Dezian Queenfish [8224], Rare Fish - Brownell's Blue Striped Racer [8225], Gurubashi, Vilebranch, and Witherbark Coins [8238], Sandfury, Skullsplitter, and Bloodscalp Coins [8239], Zanza's Potent Potables [8243], Signets of the Zandalar [8246], Traitor to the Bloodsail [9259]
 needs a profession (12):
   Booty Bay or Bust! [2757], The Mithril Order [2760], Smelt On, Smelt Off [2761], The Great Silver Deceiver [2762], The Art of the Imbue [2763], Galvan's Finest Pupil [2764], Expert Blacksmith! [2765], Gnome Engineering [3635], Gnome Engineering [3637], The Pledge of Secrecy [3642], Show Your Work [3643], Tribal Leatherworking [5148]
-above this zone's range of 30-53 (6):
-  The Formation of Felbane [3621], Enchanted Azsharite Fel Weaponry [3625], Return to the Blasted Lands [3626], Arena Master [7810], The Hand of Rastakhan [8182], Secrets of the Colossus - Ashi [8857]
+above this zone's range of 30-53 (5):
+  The Formation of Felbane [3621], Enchanted Azsharite Fel Weaponry [3625], Return to the Blasted Lands [3626], Arena Master [7810], The Hand of Rastakhan [8182]
+not in the game (on Questie's quest blacklist) (5):
+  Winterhoof the Elder [8674], Starglade the Elder [8716], Winter's Presents [8828], Secrets of the Colossus - Ashi [8857], New Year Celebrations! [8861]
 helper for The Green Hills of Stranglethorn (4):
   Chapter I [339], Chapter II [340], Chapter III [341], Chapter IV [342]
 handed in here, but the database does not say where it starts (2):
   Message in a Bottle [594], A Fine Mess [2904]
-special category (sort -366) (2):
-  Winterhoof the Elder [8674], Starglade the Elder [8716]
-special category (sort -22) (2):
-  Winter's Presents [8828], New Year Celebrations! [8861]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
 

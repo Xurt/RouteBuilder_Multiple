@@ -1,0 +1,50 @@
+Badlands - Alliance
+Guide "45-47 Badlands" in group "Zone Routes (Alliance)": 102 steps, 94 stops
+Written to guides/mop/Badlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 45. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 114 steps kept, 19 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 132 tasks, 30,396 yd on foot; ends at level 47.3
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 30,396 yd; ends at level 47.3
+Hearthstone: set at Ramah Goldenray (Ramah Goldenray's inn); 0 hearth steps in the guide.
+3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+4 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (43)
+------------------------
+Start to finish here: 41 (18 for everyone, 23 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  To the Aid of the Thorium Brotherhood [28512, level 47] -> Searing Gorge
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Fuselight, Ho! [27762, level 45] <- Eastern Plaguelands
+
+Worth checking in game
+----------------------
+  The Day that Deathwing Came [27713, level 47]: could not read how many Dang-Blasted Rock Elemental are needed from the quest text; assumed 8
+  The Day that Deathwing Came [27713, level 47]: Deathwing is level 87, far above this level 47 quest, so the objective is taken to be "talk to" rather than "kill"
+  The Day that Deathwing Came: What Really Happened [27715, level 47]: mixes a kill-credit objective with others; check that "Human Admirer" really is line 4 in the quest log
+  Rhea Revealed [27769, level 45]: Rhea is level 85, far above this level 45 quest, so the objective is taken to be "talk to" rather than "kill"
+  Their Hunt Continues [27830, level 47, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Darkflight Shadowspeaker" really is line 3 in the quest log
+  Rheastrasza's Gift [27858, level 47, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: Rhea is level 85, far above this level 47 quest, so the objective is taken to be "talk to" rather than "kill"
+
+Left out (24)
+-------------
+not in the game (on Questie's quest blacklist) (24):
+  Theldurin the Lost [687], The Lost Fragments [692], Fiery Blaze Enchantments [706], Solution to Doom [709], Liquid Stone [715], Stone Is Better than Cloth [716], Mirages [718], A Dwarf and His Tools [719], A Sign of Hope [720], A Sign of Hope [721], Amulet of Secrets [722], Prospect of Faith [723], Scrounging [733], This Is Going to Be Hard [734], Forbidden Knowledge [737], Find Agmond [738], Seal of the Earth [779], Martek the Exiled [1106], Indurium [1108], Desecrate this Fire! [11766], Incense for the Summer Scorchlings [11964], Honor the Flame [28925], Candy Bucket [28955], Candy Bucket [28956]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

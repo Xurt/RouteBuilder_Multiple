@@ -1,7 +1,7 @@
 {
   "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
   "guide": "55-60 Silithus",
-  "saved": "2026-10-23 14:28",
+  "saved": "2026-10-23 18:24",
   "levels": "RestedXP",
   "parts": [
     {
@@ -31,9 +31,6 @@
         "turnin:8280 @1451:755.77,-6847.78  TurnIn Securing the Supply Lines",
         "accept:8281 @1451:755.77,-6847.78  Accept Stepping Up Security",
         "turnin:8277 @1451:739.75,-6855.68  TurnIn Deadly Desert Venom",
-        "accept:8858 @1451:811.51,-6825.01  Accept Secrets of the Colossus - Regal",
-        "accept:8859 @1451:814.29,-6824.78  Accept Secrets of the Colossus - Zora",
-        "accept:8857 @1451:814.99,-6823.62  Accept Secrets of the Colossus - Ashi",
         "obj:8281:1 @1451:1490.41,-6966.25  Objective Stepping Up Security / Dredge Crusher slain (20)",
         "turnin:9415 @1451:1377.9,-7144.41  TurnIn Report to Marshal Bluewall",
         "turnin:8285 @1451:197.05,-7578.8  TurnIn The Deserter",

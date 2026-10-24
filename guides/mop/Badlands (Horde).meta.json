@@ -1,0 +1,310 @@
+{
+  "zone": "Badlands",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "45-47 Badlands",
+  "file": "Badlands (Horde).lua",
+  "continent": -3,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 45,
+      "end": 46.48,
+      "guide": "45-47 Badlands",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Dolph Blastus",
+          "guide": "45-47 Badlands",
+          "level": 45,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 9133,
+      "level": 7,
+      "req": 5,
+      "xp": 315,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Eversong Woods"
+    },
+    {
+      "id": 9328,
+      "level": 21,
+      "req": 15,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Ghostlands"
+    },
+    {
+      "id": 9627,
+      "level": 21,
+      "req": 15,
+      "xp": 2500,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Durotar"
+    },
+    {
+      "id": 9811,
+      "level": 21,
+      "req": 15,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/Goblin/Pandaren",
+      "from": "Ghostlands"
+    },
+    {
+      "id": 27713,
+      "level": 47,
+      "req": 44,
+      "xp": 7550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27714,
+      "level": 47,
+      "req": 44,
+      "xp": 7550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27715,
+      "level": 47,
+      "req": 44,
+      "xp": 9050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27762,
+      "level": 45,
+      "req": 44,
+      "xp": 550,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Eastern Plaguelands"
+    },
+    {
+      "id": 27763,
+      "level": 45,
+      "req": 44,
+      "xp": 550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27764,
+      "level": 45,
+      "req": 44,
+      "xp": 2750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27765,
+      "level": 45,
+      "req": 44,
+      "xp": 5540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27766,
+      "level": 45,
+      "req": 44,
+      "xp": 5540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27769,
+      "level": 45,
+      "req": 44,
+      "xp": 5540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27770,
+      "level": 45,
+      "req": 44,
+      "xp": 550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27771,
+      "level": 45,
+      "req": 44,
+      "xp": 6900,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27772,
+      "level": 45,
+      "req": 44,
+      "xp": 2750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27774,
+      "level": 45,
+      "req": 44,
+      "xp": 5540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27775,
+      "level": 45,
+      "req": 44,
+      "xp": 5540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27776,
+      "level": 45,
+      "req": 44,
+      "xp": 5540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27789,
+      "level": 46,
+      "req": 44,
+      "xp": 8650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27877,
+      "level": 46,
+      "req": 44,
+      "xp": 5790,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 27878,
+      "level": 46,
+      "req": 44,
+      "xp": 5790,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 27879,
+      "level": 47,
+      "req": 44,
+      "xp": 6040,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 27880,
+      "level": 47,
+      "req": 44,
+      "xp": 6040,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 27881,
+      "level": 46,
+      "req": 44,
+      "xp": 575,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 27882,
+      "level": 46,
+      "req": 44,
+      "xp": 5790,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 27883,
+      "level": 46,
+      "req": 44,
+      "xp": 4300,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 27885,
+      "level": 46,
+      "req": 44,
+      "xp": 7200,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 27927,
+      "level": 47,
+      "req": 44,
+      "xp": 600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Eversong Woods": 1,
+    "Tirisfal Glades": 2,
+    "Durotar": 13,
+    "another zone": 1,
+    "Searing Gorge": 1,
+    "Ghostlands": 1,
+    "Hillsbrad Foothills": 1,
+    "Arathi Highlands": 1,
+    "The Hinterlands": 1,
+    "Western Plaguelands": 1,
+    "Eastern Plaguelands": 2,
+    "Northern Stranglethorn": 1,
+    "The Cape of Stranglethorn": 1
+  }
+}

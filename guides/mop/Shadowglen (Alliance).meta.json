@@ -1,0 +1,221 @@
+{
+  "zone": "Shadowglen",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "2-5 Shadowglen",
+  "file": "Shadowglen (Alliance).lua",
+  "continent": -6450,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 2,
+      "end": 3.25,
+      "next": 6,
+      "guide": "2-4 Shadowglen",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "2-4 Shadowglen",
+          "level": 2,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 6,
+      "end": 6,
+      "guide": "6-7 Shadowglen",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "6-7 Shadowglen",
+          "level": 6,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 3116,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Warrior"
+    },
+    {
+      "id": 3117,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Hunter"
+    },
+    {
+      "id": 3118,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Rogue"
+    },
+    {
+      "id": 3119,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Priest"
+    },
+    {
+      "id": 3120,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Druid"
+    },
+    {
+      "id": 26841,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Mage/Draenei Mage"
+    },
+    {
+      "id": 26940,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Mage"
+    },
+    {
+      "id": 26945,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Warrior"
+    },
+    {
+      "id": 26946,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Rogue"
+    },
+    {
+      "id": 26947,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Hunter"
+    },
+    {
+      "id": 26948,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Druid"
+    },
+    {
+      "id": 26949,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Priest"
+    },
+    {
+      "id": 28713,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 28714,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 28715,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 28728,
+      "level": 5,
+      "req": 3,
+      "xp": 225,
+      "part": 1,
+      "section": 0,
+      "tag": "NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid",
+      "from": "Shadowthread Cave"
+    },
+    {
+      "id": 28734,
+      "level": 3,
+      "req": 1,
+      "xp": 25,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 28723,
+      "level": 3,
+      "req": 3,
+      "xp": 125,
+      "part": 2,
+      "section": 0,
+      "tag": "NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid"
+    },
+    {
+      "id": 28724,
+      "level": 3,
+      "req": 3,
+      "xp": 250,
+      "part": 2,
+      "section": 0,
+      "tag": "NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid"
+    }
+  ],
+  "carriedTo": {
+    "Teldrassil": 2,
+    "Shadowthread Cave": 1
+  }
+}

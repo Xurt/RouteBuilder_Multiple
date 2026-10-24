@@ -1,0 +1,48 @@
+Loch Modan - Horde
+Guide "19-20 Loch Modan" in group "Zone Routes (Horde)": 17 steps, 16 stops
+Written to guides/mop/Loch Modan (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 19. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 17 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+(The zone has quests below level 19, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 3 tasks, 855 yd on foot; ends at level 19.0
+  everyone (quests that depend on other zones): 14 more tasks; their whole route comes to 6,569 yd; ends at level 19.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Checking on the Boys [26137, level 20] -> Wetlands
+
+Need a quest this guide does not hand in - steps show only once that is done (6):
+  South Gate Status Report [13635, level 11] - needs one of A Pilot's Revenge [26855]
+  Onward to Thelsamar [26176, level 12] - needs one of A Decisive Strike [26148]
+  A Nasty Exploit [26846, level 13] - needs one of Kobold and Kobolder [26844]
+  Resupplying the Excavation [13639, level 16] - needs one of Axis of Awful [26868]
+  Joining the Hunt [13647, level 16] - needs Protecting the Shipment [309], Keep Your Hands Off The Goods! [13650], Gathering Idols [26961]
+  Heartfelt Appreciation [13661, level 18] - needs Explorers' League Document (2 of 6) [13655], Explorers' League Document (1 of 6) [13656], Explorers' League Document (3 of 6) [13657], Explorers' League Document (4 of 6) [13658], Explorers' League Document (6 of 6) [13659], Explorers' League Document (5 of 6) [13660]
+
+Worth checking in game
+----------------------
+
+Left out (8)
+------------
+not in the game (on Questie's quest blacklist) (8):
+  Stonesplinter Trogg Disguise [912], Silvervein the Elder [8642], Desecrate this Fire! [11749], Ram Delivery [13637], Scout's Dishonor [25117], Impulse Hunting [25119], A Dark Threat, Remembered [26155], All The King's Men [26156]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

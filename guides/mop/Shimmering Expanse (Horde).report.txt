@@ -1,0 +1,100 @@
+Shimmering Expanse - Horde
+Guide "81-81 Shimmering Expanse" in group "Zone Routes (Horde)": 211 steps, 194 stops
+Written to guides/mop/Shimmering Expanse (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 81. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 225 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 115 tasks, 17,239 yd on foot; ends at level 81.6; 2 hearths
+  everyone (quests that depend on other zones): 110 more tasks; their whole route comes to 32,103 yd; ends at level 81.6; 2 hearths
+Hearthstone: set at Miriam Brassbomb (Miriam Brassbomb's inn); 2 hearth steps in the guide.
+8 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (76)
+------------------------
+Start to finish here: 36 (8 for everyone, 28 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Across the Great Divide [25471, level 81] <- Kelp'thar Forest
+  Bring It On! [25948, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Kelp'thar Forest
+
+Need a quest this guide does not hand in - steps show only once that is done (38):
+  Backed Into a Corner [25164, level 81] - needs one of The Looming Threat [25334]
+  A Distracting Scent [25215, level 81] - needs one of Silver Tide Hollow [25222]
+  The Great Sambino [25216, level 81] - needs one of Silver Tide Hollow [25222]
+  Totem Modification [25217, level 81] - needs one of Undersea Inflation [25218]
+  Undersea Inflation [25218, level 81] - needs one of The Great Sambino [25216]
+  Don't be Shellfish [25219, level 81] - needs one of Silver Tide Hollow [25222]
+  Slippery Threat [25220, level 81] - needs one of Silver Tide Hollow [25222]
+  Rundown [25221, level 81] - needs one of Backed Into a Corner [25164]
+  Silver Tide Hollow [25222, level 81] - needs one of Rundown [25221]
+  The Looming Threat [25334, level 81] - needs one of Across the Great Divide [25471]
+  Toshe's Vengeance [25359, level 81] - needs one of Back in One Piece [25456]
+  A Pearl of Wisdom [25442, level 81] - needs one of Silver Tide Hollow [25222]
+  Back in One Piece [25456, level 81] - needs one of Totem Modification [25217]
+  Reoccupation [25619, level 81] - needs one of Visions of the Past: The Invasion of Vashj'ir [25760]
+  The Revered Lady [25620, level 81] - needs one of Reoccupation [25619]
+  Her Lady's Hand [25629, level 81] - needs one of Visions of the Past: Rise from the Deep [25626]
+  To the Fathom-Lord's Call [25637, level 81] - needs one of The Revered Lady [25620]
+  Built to Last [25658, level 81] - needs one of The Revered Lady [25620]
+  Not Soon Forgotten [25659, level 81] - needs one of To the Fathom-Lord's Call [25637]
+  By Her Lady's Word [25858, level 81] - needs one of Visions of the Past: The Slaughter of Biel'aran Ridge [25755]
+  No Trespass Forgiven [25859, level 81] - needs one of By Her Lady's Word [25858]
+  At All Costs [25860, level 81] - needs Her Lady's Hand [25629], Devout Assembly [25896]
+  Setting An Example [25861, level 81] - needs one of By Her Lady's Word [25858]
+  Stolen Property [25862, level 81] - needs one of By Her Lady's Word [25858]
+  Chosen Burden [25863, level 81] - needs one of Stolen Property [25862]
+  Devout Assembly [25896, level 81] - needs one of Visions of the Past: Rise from the Deep [25626]
+  Blood and Thunder! [25949, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Bring It On! [25948] -> Kelp'thar Forest
+  Final Judgement [25951, level 81] - needs one of At All Costs [25860]
+  Desperate Plan [25968, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Losing Ground [25967]
+  Hostile Waters [25969, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Desperate Plan [25968]
+  Come Prepared [25970, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Desperate Plan [25968]
+  Unfurling Plan [25971, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Desperate Plan [25968]
+  Honor and Privilege [25972, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Hostile Waters [25969], Come Prepared [25970], Unfurling Plan [25971]
+  Welcome News [25973, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Honor and Privilege [25972]
+  A Breath of Fresh Air [26006, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Visions of the Past: Rise from the Deep [26135]
+  Visions of the Past: Rise from the Deep [26135, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Welcome News [25973]
+  The Culmination of Our Efforts [26191, level 81] - needs No Trespass Forgiven [25859], Chosen Burden [25863]
+  Full Circle [26221, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of A Breath of Fresh Air [26006] -> Abyssal Depths
+
+Worth checking in game
+----------------------
+  Totem Modification [25217, level 81]: "Sambino's Modified Earthbind Totem (1)" has no place in the data; taken to be done where the quest is given
+  Undersea Inflation [25218, level 81]: "Sambino's Air Balloon (1)" has no place in the data; taken to be done where the quest is given
+  Rundown [25221, level 81]: could not read how many Fleeing Zin'jatar Fathom-Stalker are needed from the quest text; assumed 8
+  Visions of the Past: The Invasion of Vashj'ir [25957, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: "Battlemaiden Vision 1 Credit (1)" has no place in the data; taken to be done where the quest is given
+  Swift Action [25963, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: could not read how many Azsh'ir Archaean are needed from the quest text; assumed 8
+  Gauging Success [25965, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: "Terrace Tunnel Credit (1)" has no place in the data; taken to be done where the quest is given
+  Gauging Success [25965, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: "Northwestern Terrace Credit (1)" has no place in the data; taken to be done where the quest is given
+  Visions of the Past: The Slaughter of Biel'aran Ridge [25966, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: "Battlemaiden Vision 2 Credit (1)" has no place in the data; taken to be done where the quest is given
+  Visions of the Past: Rise from the Deep [26135, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: "Battlemaiden Vision 3 Credit (1)" has no place in the data; taken to be done where the quest is given
+  Full Circle [26221, level 81, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: "Boarding Submarine Credit Bunny" has no place in the data; taken to be done where the quest is given
+
+Not planned (1)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  The War Has Many Fronts [27442, level 82]: needs level 82; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 81.6
+
+Left out (11)
+-------------
+handed in here, but the database does not say where it starts (5):
+  Caught Off-Guard [25631], Swift Approach [25632], An Occupation of Time [25633], A Better Vantage [25634], Curious Distraction [25961]
+not in the game (on Questie's quest blacklist) (5):
+  Upon the Scene of Battle [25635], Candy Bucket [28982], Candy Bucket [28984], Honor the Flame [29031], Moonlance the Elder [29738]
+cannot be taken together with Setting An Example [25861], which is in the guide (1):
+  Losing Ground [25967]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

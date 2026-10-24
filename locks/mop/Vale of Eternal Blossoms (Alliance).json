@@ -1,0 +1,25 @@
+{
+  "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "90-90 Vale of Eternal Blossoms",
+  "saved": "2026-10-23 18:06",
+  "levels": "RestedXP",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "accept:31386 @390:84.22,61.43  Accept The Shado-Pan Offensive",
+        "accept:31390 @390:84.37,61.67  Accept The Klaxxi",
+        "turnin:31512 @390:56.83,43.38  TurnIn A Witness to History",
+        "accept:31486 @393:40.28,70.8  Accept Everything I Know About Cooking",
+        "turnin:31895 @390:14.15,76.97  TurnIn Better Off Dread",
+        "turnin:31886 @390:14.15,76.97  TurnIn Dread Space",
+        "turnin:31847 @390:14.15,76.97  TurnIn Better Dead than Dread",
+        "turnin:31656 @390:14.15,76.97  TurnIn The Threat in the South",
+        "turnin:31000 @390:14.15,76.97  TurnIn Dread Space",
+        "turnin:31390 @390:14.15,76.97  TurnIn The Klaxxi",
+        "accept:31001 @390:14.15,76.97  Accept Falling Down",
+        "accept:31002 @390:14.15,76.97  Accept Nope"
+      ]
+    }
+  ]
+}

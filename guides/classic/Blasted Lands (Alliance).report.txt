@@ -58,7 +58,7 @@ repeatable (8):
   The Lost Supplies [1423], Kum'isha's Endeavors [2522], Rage of Ages [2582], Spirit of the Boar [2584], Salt of the Scorpok [2586], Infallible Mind [2602], Spiritual Domination [2604], One Draenei's Junk... [3502]
 dungeon quest (1):
   Ragnar Thunderbrew [4128]
-special category (sort -366) (1):
+not in the game (on Questie's quest blacklist) (1):
   Bellowrage the Elder [8647]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

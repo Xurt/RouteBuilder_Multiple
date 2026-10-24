@@ -1,0 +1,71 @@
+{
+  "zone": "Caverns of Time",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "68-70 Caverns of Time",
+  "file": "Caverns of Time (Alliance).lua",
+  "continent": -1941,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 68,
+      "end": 68,
+      "guide": "68-70 Caverns of Time",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "68-70 Caverns of Time",
+          "level": 68,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 8802,
+      "level": 60,
+      "req": 60,
+      "xp": 14300,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Ahn\u0027Qiraj - Raid - Vault of C\u0027thun"
+    },
+    {
+      "id": 10277,
+      "level": 68,
+      "req": 66,
+      "xp": 1200,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10279,
+      "level": 66,
+      "req": 66,
+      "xp": 1130,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 29132,
+      "level": 85,
+      "req": 85,
+      "xp": 69400,
+      "part": 1,
+      "section": 0,
+      "tag": "Human Priest/Human Shaman/Human Mage/Human Warlock/Human Druid/Dwarf Priest/Dwarf Shaman/Dwarf Mage/Dwarf Warlock/Dwarf Druid/NightElf Priest/NightElf Shaman/NightElf Mage/NightElf Warlock/NightElf Druid/Gnome Priest/Gnome Shaman/Gnome Mage/Gnome Warlock/Gnome Druid/Draenei Priest/Draenei Shaman/Draenei Mage/Draenei Warlock/Draenei Druid/Worgen Priest/Worgen Shaman/Worgen Mage/Worgen Warlock/Worgen Druid/Pandaren Priest/Pandaren Shaman/Pandaren Mage/Pandaren Warlock/Pandaren Druid",
+      "from": "Elwynn Forest"
+    }
+  ],
+  "carriedTo": {
+    "Old Hillsbrad Foothills": 1,
+    "The Black Morass": 1
+  }
+}

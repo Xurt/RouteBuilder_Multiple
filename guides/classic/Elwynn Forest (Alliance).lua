@@ -1578,10 +1578,13 @@ step << Warlock
     .target Gakin the Darkbinder
 step << Warlock
     .goto 1453/0,1041.54,-8983.03
+    >>Using the Bloodstone Choker, summon and subdue a voidwalker, then return the Bloodstone Choker to Gakin the Darkbinder in Stormwind.
+    .complete 1689,1 --Summoned Voidwalker (1)
+step << Warlock
+    .goto 1453/0,1041.54,-8983.03
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gakin the Darkbinder|r
     .turnin 1689 >>Turn in The Binding
     .target Gakin the Darkbinder
-    .isQuestComplete 1689
 step
     .goto 1453/0,552.63,-8415.72
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Einris Brightspear|r
@@ -1706,7 +1709,6 @@ step
     >>|cRXP_FRIENDLY_Dun Morogh|r: The Hunter's Path << Dwarf Hunter
     >>|cRXP_FRIENDLY_Teldrassil|r: The Hunter's Path << NightElf Hunter
     >>|cRXP_FRIENDLY_Westfall|r: Return to Lewis << Human
-    >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Binding << Warlock
 step
     +|cRXP_WARN_Suggested next zones at level 12|r: |cRXP_FRIENDLY_Darkshore|r (about 2.3 levels of quests, starting around Terenthis), |cRXP_FRIENDLY_Westfall|r (about 1.1 levels of quests, starting around Farmer Saldean), |cRXP_FRIENDLY_Loch Modan|r (about 0.9 levels of quests, starting around Mountaineer Kadrell; 1 quest from here hands in there). Completing this step loads the guide for Darkshore --RouteBuilder:next
 step << Human Paladin/Dwarf Paladin
@@ -1749,12 +1751,6 @@ step << Human Priest/Dwarf Priest
     .turnin 5634 >>Turn in Desperate Prayer
     .target High Priestess Laurena
     .isOnQuest 5634
-step << Warlock
-    .goto 1453/0,1041.54,-8983.03
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gakin the Darkbinder|r
-    .turnin 1689 >>Turn in The Binding
-    .target Gakin the Darkbinder
-    .isQuestComplete 1689
 step << Human Paladin
     .goto 1453/0,845.82,-8545.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Duthorian Rall|r

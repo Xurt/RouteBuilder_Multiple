@@ -20,16 +20,16 @@ RXPGuides.RegisterGuide([[
 step
     .goto 1423/0,-2478.44,2671.99
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tirion Fordring|r
-    .turnin 5944 >>Turn in In Dreams
-    .target Tirion Fordring
-    .isQuestComplete 5944
-step
-    .goto 1423/0,-2478.44,2671.99
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tirion Fordring|r
     .accept 5542 >>Accept Demon Dogs
     .accept 5543 >>Accept Blood Tinged Skies
     .accept 5544 >>Accept Carrion Grubbage
     .target Tirion Fordring
+step
+    .goto 1423/0,-2478.44,2671.99
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tirion Fordring|r
+    .turnin 5944 >>Turn in In Dreams
+    .target Tirion Fordring
+    .isQuestComplete 5944
 step
     .goto 1423/0,-2478.44,2671.99
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tirion Fordring|r
@@ -47,15 +47,15 @@ step
 step
     .goto 1423/0,-3596.34,1456.22
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pamela Redpath|r
-    .turnin 5601 >>Turn in Sister Pamela
-    .target Pamela Redpath
-    .isOnQuest 5601
-step
-    .goto 1423/0,-3596.34,1456.22
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pamela Redpath|r
     .turnin 5142 >>Turn in Little Pamela
     .target Pamela Redpath
     .isOnQuest 5142
+step
+    .goto 1423/0,-3596.34,1456.22
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pamela Redpath|r
+    .turnin 5601 >>Turn in Sister Pamela
+    .target Pamela Redpath
+    .isOnQuest 5601
 step
     .goto 1423/0,-3596.34,1456.22
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pamela Redpath|r
@@ -131,12 +131,6 @@ step
     .turnin 5522 >>Turn in Leonid Barthalomew
     .target Leonid Barthalomew the Revered
     .isOnQuest 5522
-step
-    .goto 1423/0,-5349.44,2303.91
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord Maxwell Tyrosus|r
-    .turnin 8859 >>Turn in Secrets of the Colossus - Zora
-    .target Lord Maxwell Tyrosus
-    .isOnQuest 8859
 step
     .goto 1423/0,-5345.18,2300.81
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jessica Chambers|r
@@ -429,15 +423,15 @@ step
 step
     .goto 1423/0,-3212.74,1871.03
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nathanos Blightcaller|r
-    .turnin 6145 >>Turn in The Crimson Courier
-    .target Nathanos Blightcaller
-    .isOnQuest 6145
-step
-    .goto 1423/0,-3212.74,1871.03
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nathanos Blightcaller|r
     .turnin 5961 >>Turn in The Champion of the Banshee Queen
     .target Nathanos Blightcaller
     .isOnQuest 5961
+step
+    .goto 1423/0,-3212.74,1871.03
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nathanos Blightcaller|r
+    .turnin 6145 >>Turn in The Crimson Courier
+    .target Nathanos Blightcaller
+    .isOnQuest 6145
 step
     .goto 1423/0,-2478.44,2671.99
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tirion Fordring|r

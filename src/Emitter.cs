@@ -991,7 +991,7 @@ public sealed class Emitter
         {
             sb.AppendLine();
             sb.AppendLine("RXPGuides.RegisterGuide([[");
-            foreach (var l in new[] { Games.Current.HeaderTag, "<< " + m.Opt.Faction, "#version 1", "#group " + group, "#name " + name, "" }) sb.AppendLine(l);
+            foreach (var l in new[] { Games.Current.HeaderTag, "<< " + Side(m), "#version 1", "#group " + group, "#name " + name, "" }) sb.AppendLine(l);
             foreach (var l in EntryJumps(visits.SelectMany(v => v.g.Sections).Where(x => x.Label.Length > 0).ToList())) sb.AppendLine(l);
             foreach (var (_, g) in visits) foreach (var l in g.Lines) sb.AppendLine(Esc(l));
             sb.AppendLine("]])");
@@ -1003,7 +1003,7 @@ public sealed class Emitter
             sb.AppendLine();
             sb.AppendLine("RXPGuides.RegisterGuide([[");
             sb.AppendLine(Games.Current.HeaderTag);
-            sb.AppendLine("<< " + (only.Length > 0 ? only : m.Opt.Faction));
+            sb.AppendLine("<< " + (only.Length > 0 ? only : Side(m)));
             sb.AppendLine("#version 1");
             sb.AppendLine("#group " + group);
             sb.AppendLine("#subgroup " + subgroup);
@@ -1043,5 +1043,8 @@ public sealed class Emitter
 
     /// <summary>Who a guide is for: the faction, or the race and class it was tuned for.</summary>
     public static string Who(ZoneModel m) =>
-        m.SingleCharacter ? string.Join(" ", new[] { m.Opt.Race, m.Opt.Class }.Where(s => s != null).Select(s => Proper(s!))) : m.Opt.Faction;
+        m.SingleCharacter ? string.Join(" ", new[] { m.Opt.Race, m.Opt.Class }.Where(s => s != null).Select(s => Proper(s!))) : m.Neutral ? Games.Current.NeutralRace! : m.Opt.Faction;
+
+    /// <summary>The guide's "&lt;&lt;" line: the faction, or for a factionless race's zone that race.</summary>
+    static string Side(ZoneModel m) => m.Neutral ? Games.Current.NeutralRace! : m.Opt.Faction;
 }

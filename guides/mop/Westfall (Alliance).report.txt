@@ -1,0 +1,120 @@
+Westfall - Alliance - part 1 of 2, planned from level 10
+Guide "10-15 Westfall" in group "Zone Routes (Alliance)": this part has 82 steps, 72 stops
+Written to guides/mop/Westfall (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+5 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 10. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 92 steps kept, 9 new ones slotted in, 7 moved because their prerequisites changed, 4 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 91 tasks, 12,889 yd on foot; ends at level 14.1; at its hardest you are 1.4 levels below the mobs
+  everyone (quests that depend on other zones): 17 more tasks; their whole route comes to 19,786 yd; ends at level 14.1; 1 ORDER PROBLEMS; at its hardest you are 1.4 levels below the mobs
+Hearthstone: set at Christopher Hewen (Christopher Hewen's inn); 0 hearth steps in the guide.
+5 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+  A Vision of the Past: its hand-in spot is not passed again, so the step sits at the end of the guide.
+
+Quests in the guide (41)
+------------------------
+Start to finish here: 30 (4 for everyone, 26 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Hand-in step only shows once complete (1):
+  A Vision of the Past [26320, level 15, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Vision of the Past uncovered (another zone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Furlbrow's Deed [184, level 10, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Elwynn Forest
+  Hero's Call: Westfall! [26378, level 10, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Elwynn Forest
+  Hero's Call: Westfall! [28562, level 10, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Stormwind City
+  Return to Sentinel Hill [26370, level 15, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Stormwind City
+
+Need a quest this guide does not hand in - steps show only once that is done (6):
+  It's Alive! [26257, level 13] - needs one of Heart of the Watcher [26252]
+  Captain Sanders' Hidden Treasure [26354, level 13] - needs one of Captain Sanders' Hidden Treasure [26353]
+  Captain Sanders' Hidden Treasure [26355, level 13] - needs one of Captain Sanders' Hidden Treasure [26354]
+  Captain Sanders' Hidden Treasure [26356, level 13] - needs one of Captain Sanders' Hidden Treasure [26355]
+  Rise of the Brotherhood [26322, level 15, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of A Vision of the Past [26320] -> Stormwind City
+  Threat to the Kingdom [26761, level 15] - needs one of Return to Sentinel Hill [26370] -> Redridge Mountains
+
+Worth checking in game
+----------------------
+  Murder Was The Case That They Gave Me [26209, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Transient (1)" is line 1 by the database, but RestedXP's guide has "1/1 Clue #1 obtained" there
+  Murder Was The Case That They Gave Me [26209, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Transient (1)" is line 2 by the database, but RestedXP's guide has "1/1 Clue #2 obtained" there
+  Murder Was The Case That They Gave Me [26209, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Transient (1)" is line 3 by the database, but RestedXP's guide has "1/1 Clue #3 obtained" there
+  Murder Was The Case That They Gave Me [26209, level 11, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Transient (1)" is line 4 by the database, but RestedXP's guide has "1/1 Clue #4 obtained" there
+  Lou's Parting Thoughts [26232, level 12, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Furlbrow Murder Info 004" is line 1 by the database, but RestedXP's guide has "|Eavesdrop on Thugs.: 1/1" there
+  Feeding the Hungry and the Hopeless [26271, level 13, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Transient (8)" is line 1 by the database, but RestedXP's guide has "|Westfall Homeless fed: 20/20" there
+  The Dawning of a New Day [26297, level 15, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Shadowy Figure" is line 1 by the database, but RestedXP's guide has "|Information from Moonbrook Rally gathered: 1/1" there
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  Hero's Call: Redridge Mountains! [26365, level 15]: needs level 14; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 14.1
+
+Left out (52)
+-------------
+not in the game (on Questie's quest blacklist) (45):
+  The Killing Fields [9], The People's Militia [12], The People's Militia [13], The People's Militia [14], Goretusk Liver Pie [22], Westfall Stew [36], Westfall Stew [38], Sweet Amber [48], Sweet Amber [49], Sweet Amber [50], Sweet Amber [51], Sweet Amber [53], The Forgotten Heirloom [64], Patrolling Westfall [102], Keeper of the Flame [103], The Coastal Menace [104], Report to Gryan Stoutmantle [109], Thunderbrew [117], The Defias Brotherhood [132], Captain Sanders' Hidden Treasure [136], Captain Sanders' Hidden Treasure [138], Captain Sanders' Hidden Treasure [139], Captain Sanders' Hidden Treasure [140], The Defias Brotherhood [141], The Defias Brotherhood [142], Messenger to Westfall [143], Poor Old Blanchy [151], The Coast Isn't Clear [152], Red Leather Bandanas [153], The Defias Brotherhood [155], The Defias Brotherhood [166], Red Silk Bandanas [214], The Tome of Valor [1650], The Tome of Valor [1651], Mathias and the Defias [2360], Returning Home [5628], Skychaser the Elder [8675], Honor the Flame [11583], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], ... 5 more
+repeatable (2):
+  CLUCK! [3861], Old MacDonald [31780]
+handed in here, but the database does not say where it starts (2):
+  A Swift Message [6181], Return to Lewis [6285]
+special category (sort -394) (2):
+  Old MacDonald [31724], Lindsay [31725]
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  Evidence Collection [26296]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Westfall - Alliance - part 2 of 2, planned from level 17
+Guide "10-15 Westfall" in group "Zone Routes (Alliance)": this part has 3 steps, 2 stops
+Written to guides/mop/Westfall (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 17. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 17.0
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 5 yd; ends at level 17.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Hero's Call: Redridge Mountains! [26365, level 15, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Redridge Mountains
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  A Vision of the Past [26320, level 15, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

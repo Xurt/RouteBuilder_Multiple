@@ -1,0 +1,94 @@
+Wetlands - Horde - part 1 of 2, planned from level 20
+Guide "20-25 Wetlands" in group "Zone Routes (Horde)": this part has 14 steps, 12 stops
+Written to guides/mop/Wetlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 20. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 14 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 11 tasks, 2,946 yd on foot; ends at level 20.4
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 3,049 yd; ends at level 20.4
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 20 for A Mother's Worries
+
+Quests in the guide (6)
+-----------------------
+Start to finish here: 4 (4 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Checking on the Boys [26137, level 20] <- Loch Modan
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Onwards to Menethil [25777, level 21] - needs Get Out Of Here, Stalkers [25733], Down In Thelgen Rock [25734], Incendicite Ore [25735]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  Into Arathi [26139, level 25]: needs level 23; this part gets you to about 20.5
+  Anvilmar the Hero [26327, level 25]: needs level 23; this part gets you to about 20.5
+
+Left out (11)
+-------------
+not in the game (on Questie's quest blacklist) (10):
+  Lightforge Iron [321], Fall of Dun Modr [472], The Absent Minded Prospector [942], The Absent Minded Prospector [943], Winter's Presents [8828], New Year Celebrations! [8861], Desecrate this Fire! [11757], REUSE [13840], Ferilon Leafborn [26138], REUSE - BAD COPY [27250]
+repeatable (1):
+  CLUCK! [3861]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Wetlands - Horde - part 2 of 2, planned from level 24
+Guide "20-25 Wetlands" in group "Zone Routes (Horde)": this part has 4 steps, 3 stops
+Written to guides/mop/Wetlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 24. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 3 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 2 tasks, 31 yd on foot; ends at level 24.0
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 31 yd; ends at level 24.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Into Arathi [26139, level 25] - needs one of The Battle of Thandol Span [26128] -> Arathi Highlands
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

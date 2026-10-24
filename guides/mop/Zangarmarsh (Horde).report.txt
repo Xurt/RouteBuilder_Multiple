@@ -1,0 +1,172 @@
+Zangarmarsh - Horde - part 1 of 2, planned from level 61
+Guide "61-65 Zangarmarsh" in group "Zone Routes (Horde)": this part has 133 steps, 107 stops
+Written to guides/mop/Zangarmarsh (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: 58 PROBLEMS
+  ! Drain Schematics is picked up before any of the quests that unlock it (Orc Warrior)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Orc Hunter)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Orc Rogue)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Orc DeathKnight)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Orc Shaman)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Orc Mage)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Orc Warlock)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Orc Monk)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Undead Warrior)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Undead Hunter)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Undead Rogue)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Undead Priest)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Undead DeathKnight)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Undead Mage)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Undead Warlock)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Undead Monk)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Tauren Warrior)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Tauren Paladin)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Tauren Hunter)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Tauren Priest)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Tauren DeathKnight)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Tauren Shaman)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Tauren Monk)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Tauren Druid)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Troll Warrior)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Troll Hunter)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Troll Rogue)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Troll Priest)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Troll DeathKnight)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Troll Shaman)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Troll Mage)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Troll Warlock)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Troll Monk)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Troll Druid)
+  ! Drain Schematics is picked up before any of the quests that unlock it (BloodElf Warrior)
+  ! Drain Schematics is picked up before any of the quests that unlock it (BloodElf Paladin)
+  ! Drain Schematics is picked up before any of the quests that unlock it (BloodElf Hunter)
+  ! Drain Schematics is picked up before any of the quests that unlock it (BloodElf Rogue)
+  ! Drain Schematics is picked up before any of the quests that unlock it (BloodElf Priest)
+  ! Drain Schematics is picked up before any of the quests that unlock it (BloodElf DeathKnight)
+  ! Drain Schematics is picked up before any of the quests that unlock it (BloodElf Mage)
+  ! Drain Schematics is picked up before any of the quests that unlock it (BloodElf Warlock)
+  ! Drain Schematics is picked up before any of the quests that unlock it (BloodElf Monk)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Goblin Warrior)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Goblin Hunter)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Goblin Rogue)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Goblin Priest)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Goblin DeathKnight)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Goblin Shaman)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Goblin Mage)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Goblin Warlock)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Pandaren Warrior)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Pandaren Hunter)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Pandaren Rogue)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Pandaren Priest)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Pandaren Shaman)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Pandaren Mage)
+  ! Drain Schematics is picked up before any of the quests that unlock it (Pandaren Monk)
+Quest log: at most 16 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+17 pickups or hand-ins are within reach of a stop but planned for later.
+27 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 61. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 141 steps kept, 7 new ones slotted in, 3 moved because their prerequisites changed, 5 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 143 tasks, 46,906 yd on foot; ends at level 62.9; 1 hearth; at its hardest you are 1.6 levels below the mobs
+  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 47,945 yd; ends at level 62.9; 1 hearth; at its hardest you are 1.6 levels below the mobs
+Hearthstone: set at Alliance Field Scout (Alliance Field Scout's inn); 1 hearth step in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 61 for Warden Hamoot
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+12 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+5 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (52)
+------------------------
+Start to finish here: 46 (22 for everyone, 24 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  News from Zangarmarsh [9796, level 62, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Terokkar Forest
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Report to Zurai [10103, level 61, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Hellfire Peninsula
+  The Cenarion Expedition [9912, level 62] <- Hellfire Peninsula
+  Return to the Marsh [9732, level 63] <- Hellfire Peninsula
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Withered Flesh [10355, level 62] - needs one of Withered Basidium [9827]
+  Warning the Cenarion Circle [9724, level 64] - needs one of Drain Schematics [9731] -> Hellfire Peninsula
+
+Worth checking in game
+----------------------
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  The Ogre Threat [9795, level 65]: needs level 64; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 62.9
+  Reinforcements for Garadar [9797, level 64]: needs level 64; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 62.9
+
+Left out (50)
+-------------
+not in the game (on Questie's quest blacklist) (28):
+  Bring Me Another Shrubbery! [9714], Bring Me A Shrubbery! [9715], Oh, It's On! [9717], Lost in Action [9738], The Warlord's Hideout [9763], Orders from Lady Vashj [9764], Preparing for War [9765], Coilfang Armaments [9766], Know Your Enemy [9767], Failed Incursion [9876], Revered Among the Cenarion Expedition [10459], Master of Potions [10897], Master of Potions [10905], Hch'uu and the Mushroom People [10945], Morthis Whisperwing [10955], The Ward of Wakening [10961], Return to Morthis Whisperwing [10978], Return to Cenarion Refuge [10993], Chasing the Moonstone [10994], Vanquish the Raven God [11001], Eternal Vigilance [11011], Desecrate this Fire! [11758], Honor the Flame [11863], Playing with Fire [11915], Incense for the Festival Scorchlings [11966], Candy Bucket [12390], Candy Bucket [12403], Sharing a Bountiful Feast [14065]
+needs reputation (8):
+  Watcher Leesa'oh [9697], Now That We're Friends... [9726], Fhwoor Smash! [9729], Blessings of the Ancients [9785], Fertile Spores [9806], Glowcap Mushrooms [9808], Sporeggar [9919], What's Wrong at Cenarion Thicket? [9957]
+repeatable (8):
+  Now That We're Still Friends... [9727], More Spore Sacs [9742], More Tendrils! [9744], Identify Plant Parts [9784], More Fertile Spores [9807], More Glowcaps [9809], Uncatalogued Species [9875], Ras'an [31923]
+dungeon quest (3):
+  Coilfang Spellbooks [9768], Checking Up [29566], Storming the Steamvault [29616]
+needs a profession (1):
+  The Zapthrottle Mote Extractor! [9635]
+handed in here, but the database does not say where it starts (1):
+  Return to the Marsh [9734]
+cannot be taken together with News from Zangarmarsh [9796], which is in the guide (1):
+  News for Rakoria [10105]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Zangarmarsh - Horde - part 2 of 2, planned from level 65
+Guide "61-65 Zangarmarsh" in group "Zone Routes (Horde)": this part has 3 steps, 2 stops
+Written to guides/mop/Zangarmarsh (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 65. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 2 tasks, 52 yd on foot; ends at level 65.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Reinforcements for Garadar [9797, level 64, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Nagrand
+  The Ogre Threat [9795, level 65, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Blade's Edge Mountains
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

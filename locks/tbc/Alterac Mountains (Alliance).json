@@ -1,0 +1,30 @@
+{
+  "about": "Step order taken from RestedXP's guide by RxpToLock. RouteBuilder follows it and slots in this zone's other quests. Lines can be moved by hand. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "from RestedXP: 14-20 Bloodmyst, 20-21 Darkshore, 21-23 Ashenvale, 23-24 Wetlands, 24-27 Redridge/Duskwood, 27-30 Wetlands/Hillsbrad, 30-32 Duskwood/STV, 1-12 Azuremyst Isle, 12-20 Bloodmyst (Draenei), 20-21 Darkshore (Draenei), 21-23 Ashenvale (Draenei), 1-6 Dun Morogh, 6-11 Dun Morogh, 1-11 Elwynn Forest, 12-14 Loch Modan, 1-6 Shadowglen, 6-11 Teldrassil, 32-33 Shimmering Flats, 33-35 Hillsbrad/Arathi/Alterac, 35-37 STV, 37-39 Dustwallow, 39-41 Arathi/Alterac, 41-42 Badlands, 42-44 STV, 44-45 Dustwallow Marsh, 45-45 Tanaris, 45-46 Badlands/Searing Gorge, 46-47 STV/Swamp of Sorrows, 47-49 Tanaris, 49-50 The Hinterlands, 50-51 Searing Gorge, 51-52 Burning Steppes, 52-53 Felwood, 53-54 Un'Goro Crater, 54-56 Felwood/Winterspring, 56-59 Plaguelands, 59-60 Silithus (Optional), 59-61 Hellfire Peninsula, 61-63 Zangarmarsh, 63-64 Terokkar Forest, 64-65 Nagrand, 65-67 Blade's Edge Mts, 67-69 Netherstorm, 69-70 Shadowmoon Valley (Aldor), 69-70 Shadowmoon Valley (Scryer)",
+  "saved": "2026-10-23 18:12",
+  "levels": "RestedXP",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        {"lines":[".hs >> Hearth to Menethil",">>|cRXP_BUY_Buy food/water if needed|r << !Warrior !Rogue",">>|cRXP_BUY_Buy food if needed|r << Warrior/Rogue",".zoneskip Hillsbrad Foothills",".zoneskip Wetlands"],"from":"RestedXP: 33-35 Hillsbrad/Arathi/Alterac"},
+        "turnin:1791 @1416:-1470.64,250.77  TurnIn The Windwatcher [1791]  (RestedXP: 33-35 Hillsbrad/Arathi/Alterac)",
+        "accept:1712 @1416:-1470.64,250.77  Accept Cyclonian [1712]  (RestedXP: 33-35 Hillsbrad/Arathi/Alterac)",
+        "accept:510 @1416:-849.54,231.58  Accept Foreboding Plans [510]  (RestedXP: 33-35 Hillsbrad/Arathi/Alterac)",
+        "accept:511 @1416:-849.54,231.58  Accept Encrypted Letter [511]  (RestedXP: 33-35 Hillsbrad/Arathi/Alterac)",
+        "turnin:511 @1424:-551.57,-817.98  TurnIn Encrypted Letter [511]  (RestedXP: 33-35 Hillsbrad/Arathi/Alterac)",
+        "turnin:510 @1424:-473.97,-861.25  TurnIn Foreboding Plans [510]  (RestedXP: 33-35 Hillsbrad/Arathi/Alterac)",
+        "obj:1712:2 @1434:592.34,-11566.94  Objective 2 of Cyclonian [1712]  (RestedXP: 35-37 STV)",
+        "accept:602 @1434:483.41,-14438.93  Accept Magical Analysis [602]  (RestedXP: 35-37 STV)",
+        "obj:1712:3 @1416:-1437.57,252.86  Objective 3 of Cyclonian [1712]  (RestedXP: 39-41 Arathi/Alterac)",
+        "turnin:1712 @1416:-1470.58,250.85  TurnIn Cyclonian [1712]  (RestedXP: 39-41 Arathi/Alterac)",
+        "accept:1713 @1416:-1470.58,250.85  Accept The Summoning [1713]  (RestedXP: 39-41 Arathi/Alterac)",
+        "obj:1713:1 @1416:-1474.87,340.8  Objective 1 of The Summoning [1713]  (RestedXP: 39-41 Arathi/Alterac)",
+        "turnin:1713 @1416:-1470.58,250.85  TurnIn The Summoning [1713]  (RestedXP: 39-41 Arathi/Alterac)",
+        "turnin:1792 @1416:-1470.58,250.85  TurnIn Whirlwind Weapon [1792]  (RestedXP: 39-41 Arathi/Alterac)",
+        "turnin:602 @1416:256.09,35.04  TurnIn Magical Analysis [602]  (RestedXP: 39-41 Arathi/Alterac)",
+        "accept:603 @1416:256.09,35.04  Accept Ansirem's Key [603]  (RestedXP: 39-41 Arathi/Alterac)"
+      ]
+    }
+  ]
+}

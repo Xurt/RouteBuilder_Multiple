@@ -1,0 +1,85 @@
+The Barrens - Horde
+Guide "10-19 The Barrens" in group "Zone Routes (Horde)": 218 steps, 191 stops
+Written to guides/mop/The Barrens (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 12 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 10. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 8 steps kept, 250 new ones slotted in, 0 moved because their prerequisites changed, 6 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 248 tasks, 41,638 yd on foot; ends at level 20.0; 3 hearths
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 41,682 yd; ends at level 20.0; 3 hearths
+  Tauren (quests that depend on other zones): 7 more tasks; their whole route comes to 46,526 yd; ends at level 20.0; 3 hearths
+Hearthstone: set at Innkeeper Kerntis (Innkeeper Kerntis's inn); 3 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 10 for The Zhevra (Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+  level 15 for Centaur Bracers (Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+11 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+6 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (93)
+------------------------
+Start to finish here: 81 (8 for everyone, 73 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Warchief's Command: Azshara! [28496, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Azshara
+  Until Death Do Us Part [264, level 15, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Silverpine Forest
+
+Hand-in step only shows once complete (1):
+  Read the Manual [14006, level 16, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Samophlange Manual (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (5):
+  Ride to Thunder Bluff [6362, level 7, Tauren] <- Mulgore
+  Conscript of the Horde [840, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Durotar
+  Journey into Thunder Bluff [24550, level 10, Tauren] <- Mulgore
+  Preserving the Barrens [26642, level 12] <- Orgrimmar
+  Ak'Zeloth [25264, level 13] <- Orgrimmar
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Tal the Wind Rider Master [6363, level 7, Tauren] - needs one of Ride to Thunder Bluff [6362]
+  Return to Varg [6364, level 7, Tauren] - needs one of Tal the Wind Rider Master [6363] -> Mulgore
+  War Dance [24540, level 10, Tauren] - needs one of Journey into Thunder Bluff [24550]
+  Walk With The Earth Mother [26397, level 12, Tauren] - needs one of War Dance [24540] -> Orgrimmar
+
+Worth checking in game
+----------------------
+
+Left out (423)
+--------------
+not in the game (on Questie's quest blacklist) (310):
+  A Lesson to Learn [27], Aquatic Form [31], Call of Water [96], Call of Water [220], Ak'Zeloth [809], Chen's Empty Keg [819], Chen's Empty Keg [821], Chen's Empty Keg [822], Crossroads Conscription [842], Journey to the Crossroads [854], Sergra Darkthorn [860], Dig Rat Stew [862], Egg Hunt [868], Isha Awak [873], Mahren Skyseer [874], Owatanka [884], The Barrens Oases [886], [DEPRICATED]Stolen Booty [888], Samophlange [894], Miner's Fortune [896], The Harvester [897], Free From the Hold [898], Samophlange [900], Samophlange [901], Samophlange [902], Betrayal from Within [906], Leaders of the Fang [914], The Demon Seed [924], Flawed Power Stone [926], Assisting Arch Druid Runetotem [936], Trouble at the Docks [959], Serpentbloom [962], Water Sapta [972], The New Frontier [1000], The New Frontier [1004], The New Frontier [1018], Compendium of the Fallen [1049], Further Instructions [1094], Wharfmaster Dizzywig [1111], Melor Sends Word [1130], ... 270 more
+above this zone's range of 10-19 (66):
+  Deadmire [1205], Stinky's Escape [1270], Portents of Uldum [2965], Counterattack! [4021], Mor'shan Defense [13612], Rescue the Fallen [13613], Empty Quivers [13615], Find Gorat! [13618], Final Report [13619], To Dinah, at Once! [13620], Gorat's Vengeance [13621], Got Wood? [13628], Crisis at Splintertree [13653], To the Rescue! [13712], To The Ramparts! [13866], Mosh'Ogg Handiwork [26407], The Call of Kalimdor [26696], Flight to Brackenwall [26701], The Black Shield [27258], An Audience with Ureda [27277], Grimshot's Call [27278], The Dreamseeker Calls [27280], Grezz Ragefist [27281], Zevrost's Behest [27282], A Journey to Moonglade [27283], Return to Krog [27292], Seek Out Master Pyreanor [27298], Follow the Sun [27304], The Seer's Call [27331], Seek the Shadow-Walker [27332], Dark Cleric Cecille [27334], Journey to Orgrimmar [27335], Warchief's Command: Vashj'ir! [27718], Warchief's Command: Mount Hyjal! [27721], Warchief's Command: Deepholm! [27722], Seek Brother Silverhallow [28164], Moonglade Calls [28289], Meet with Grezz Ragefist [28290], Meet with Ormak Grimshot [28297], Meet with Zevrost [28299], ... 26 more
+helper for Bwemba's Spirit (14):
+  To Bambala [29220], Spirits Are With Us [29222], Track the Tracker [29226], The Hunter's Revenge [29227], Follow That Cat [29228], Follow That Cat [29229], Mauti [29230], How's the Hunter Holding Up? [29231], Bury Me With Me Boots... [29232], Warn Grom'gol [29233], To Hardwrench Hideaway [29236], Voodoo Zombies [29237], Bad Supplies [29238], Some Good Will Come [29268]
+repeatable (13):
+  CLUCK! [3861], Mending Old Wounds [9267], Pond Predators [29345], The Ring's the Thing [29346], The Race to Restock [29348], Craving Crayfish [29349], Shiny Baubles [29354], Pining for Nuts [29358], "Magic" Mushrooms [29362], Mulgore Spice Bread [29363], Corn Mash [29364], Perfectly Picked Portions [29365], Dagra the Fierce [31819]
+needs a profession (7):
+  Gathering Leather [768], Kodo Hide Bag [769], Root Samples [866], Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+needs reputation (3):
+  Outrider Basic Care Package [7866], Outrider Standard Care Package [7867], Outrider Advanced Care Package [7868]
+special category (sort -284) (2):
+  Thunder Bluff [12786], Hammering It Out [25759]
+dungeon quest (2):
+  Disciples of Naralex [26878], Enemies Below [31036]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29388], Guardians of Hyjal: Call of the Ancients [29390]
+special category (sort -394) (2):
+  Dagra the Fierce [31813], Analynn [31814]
+special category (sort -23) (1):
+  Hammering It Out [25789]
+special category (sort -380) (1):
+  Bwemba's Spirit [29219]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,304 @@
+{
+  "zone": "Silithus",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "55-56 Silithus",
+  "file": "Silithus (Horde).lua",
+  "continent": -1377,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 55,
+      "end": 56.44,
+      "guide": "55-56 Silithus",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Huum Wildmane",
+          "guide": "55-56 Silithus",
+          "level": 55,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 2965,
+      "level": 50,
+      "req": 45,
+      "xp": 680,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 6362,
+      "level": 7,
+      "req": 5,
+      "xp": 315,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren",
+      "from": "Mulgore"
+    },
+    {
+      "id": 8277,
+      "level": 55,
+      "req": 54,
+      "xp": 8170,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8278,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8279,
+      "level": 56,
+      "req": 54,
+      "xp": 10550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8280,
+      "level": 55,
+      "req": 54,
+      "xp": 8170,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8281,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8282,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8283,
+      "level": 56,
+      "req": 54,
+      "xp": 10550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8284,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8285,
+      "level": 56,
+      "req": 54,
+      "xp": 6300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8287,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8304,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8306,
+      "level": 56,
+      "req": 54,
+      "xp": 10550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8309,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8310,
+      "level": 56,
+      "req": 54,
+      "xp": 10550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8314,
+      "level": 56,
+      "req": 54,
+      "xp": 6300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8318,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8320,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8321,
+      "level": 56,
+      "req": 54,
+      "xp": 10550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8323,
+      "level": 56,
+      "req": 54,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9416,
+      "level": 56,
+      "req": 55,
+      "xp": 0,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 9422,
+      "level": 56,
+      "req": 55,
+      "xp": 8450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 24550,
+      "level": 10,
+      "req": 3,
+      "xp": 420,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren",
+      "from": "Mulgore"
+    },
+    {
+      "id": 27258,
+      "level": 37,
+      "req": 35,
+      "xp": 1850,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Dustwallow Marsh"
+    },
+    {
+      "id": 28527,
+      "level": 55,
+      "req": 54,
+      "xp": 815,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28856,
+      "level": 55,
+      "req": 54,
+      "xp": 4050,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Winterspring"
+    },
+    {
+      "id": 28859,
+      "level": 55,
+      "req": 54,
+      "xp": 4050,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Un\u0027Goro Crater"
+    }
+  ],
+  "carriedTo": {
+    "Silverpine Forest": 1,
+    "Mulgore": 1,
+    "Durotar": 25,
+    "Moonglade": 2,
+    "Dustwallow Marsh": 3,
+    "The Barrens": 2,
+    "Azshara": 1,
+    "Tanaris": 1,
+    "Feralas": 1,
+    "Un\u0027Goro Crater": 1,
+    "Ashenvale": 1,
+    "Felwood": 1,
+    "Winterspring": 1,
+    "Desolace": 1,
+    "Southern Barrens": 1,
+    "Blasted Lands": 2
+  }
+}

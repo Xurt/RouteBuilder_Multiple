@@ -1,0 +1,90 @@
+{
+  "zone": "Burning Steppes",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "51-54 Burning Steppes",
+  "file": "Burning Steppes (Horde).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 51,
+      "end": 51.05,
+      "guide": "51-54 Burning Steppes",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "51-54 Burning Steppes",
+          "level": 51,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 3821,
+      "level": 52,
+      "req": 48,
+      "xp": 5100,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Badlands"
+    },
+    {
+      "id": 4296,
+      "level": 50,
+      "req": 50,
+      "xp": 2350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4726,
+      "level": 52,
+      "req": 50,
+      "xp": 5100,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 4810,
+      "level": 54,
+      "req": 50,
+      "xp": 2700,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Winterspring"
+    },
+    {
+      "id": 7562,
+      "level": 58,
+      "req": 60,
+      "xp": 620,
+      "part": 1,
+      "section": 0,
+      "tag": "Warlock",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 7625,
+      "level": 60,
+      "req": 60,
+      "xp": 6600,
+      "part": 1,
+      "section": 0,
+      "tag": "Warlock",
+      "from": "Felwood"
+    }
+  ],
+  "carriedTo": {
+    "Winterspring": 1
+  }
+}

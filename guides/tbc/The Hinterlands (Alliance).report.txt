@@ -1,0 +1,116 @@
+The Hinterlands - Alliance - part 1 of 2, planned from level 44
+Guide "44-48 The Hinterlands" in group "Zone Routes (Alliance)": this part has 34 steps, 27 stops
+Written to guides/tbc/The Hinterlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 44. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 30 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed, 8 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 24 tasks, 5,555 yd on foot; ends at level 44.5; at its hardest you are 1.9 levels below the mobs
+  everyone (quests that depend on other zones): 10 more tasks; their whole route comes to 7,161 yd; ends at level 44.5; at its hardest you are 1.9 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (16)
+------------------------
+Start to finish here: 8 (8 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  To The Hinterlands [1449, level 43] <- Stormwind City
+  Return to the Hinterlands [2993, level 47] <- Blasted Lands
+  The Newest Member of the Family [3843, level 47] <- Thousand Needles
+  Cortello's Riddle [626, level 51] <- Dustwallow Marsh
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Gryphon Master Talonaxe [1450, level 43] - needs one of To The Hinterlands [1449]
+  Rhapsody Shindigger [1451, level 43] - needs one of Gryphon Master Talonaxe [1450]
+  Rhapsody's Kalimdor Kocktail [1452, level 43] - needs one of Rhapsody Shindigger [1451]
+  Rhapsody's Tale [1469, level 43] - needs one of Rhapsody's Kalimdor Kocktail [1452] -> Stormwind City
+
+Worth checking in game
+----------------------
+  Preying on the Predators [9471, level 44]: could not read how many Silvermane Wolf are needed from the quest text; assumed 8
+
+Put off to a later part (7)
+---------------------------
+These need a higher level than this part ends at:
+  Rescue OOX-09/HL! [836, level 48]: is a level 48 quest; this part gets you to about 44.7
+  Skulk Rock Clean-up [2877, level 48]: its mobs are level 47; this part gets you to about 44.7
+  The Altar of Zul [2989, level 48]: is a level 48 quest; this part gets you to about 44.7
+  Thadius Grimshade [2990, level 47]: follows The Altar of Zul [2989]
+  Saving Sharpbeak [2994, level 51]: its mobs are level 51; this part gets you to about 44.7
+  Food for Baby [4297, level 47]: its mobs are level 47; this part gets you to about 44.7
+  Becoming a Parent [4298, level 48]: follows Food for Baby [4297]
+
+Left out (9)
+------------
+not in the game (on Questie's quest blacklist) (6):
+  Highpeak the Elder [8643], Desecrate this Fire! [11784], Honor the Flame [11826], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Candy Bucket [12351]
+above this zone's range of 43-52 (1):
+  Jammal'an the Prophet [1446]
+repeatable (1):
+  Troll Necklace Bounty [2881]
+special category (sort -1) (1):
+  Shrouded in Nightmare [8446]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Hinterlands - Alliance - part 2 of 2, planned from level 47
+Guide "44-48 The Hinterlands" in group "Zone Routes (Alliance)": this part has 15 steps, 14 stops
+Written to guides/tbc/The Hinterlands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 47. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 7 steps kept, 8 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 8 tasks, 4,134 yd on foot; ends at level 47.2
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 6,952 yd; ends at level 47.2
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (6)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Thadius Grimshade [2990, level 47] -> Blasted Lands
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Food for Baby [4297, level 47] - needs one of The Newest Member of the Family [3843]
+  Rescue OOX-09/HL! [836, level 48] - needs one of Find OOX-09/HL! [485] -> Stranglethorn Vale
+  Becoming a Parent [4298, level 48] - needs one of Food for Baby [4297]
+
+Worth checking in game
+----------------------
+
+Not planned (1)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Saving Sharpbeak [2994, level 51]: its mobs are level 51; this part gets you to about 47.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

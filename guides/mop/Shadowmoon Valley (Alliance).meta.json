@@ -1,0 +1,531 @@
+{
+  "zone": "Shadowmoon Valley",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "69-70 Shadowmoon Valley",
+  "file": "Shadowmoon Valley (Alliance).lua",
+  "continent": -3520,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 69,
+      "end": 69.65,
+      "next": 72,
+      "guide": "69-70 Shadowmoon Valley: around Earthmender Torlok",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Earthmender Torlok",
+          "guide": "69-70 Shadowmoon Valley: around Earthmender Torlok",
+          "level": 69,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 72,
+      "end": 72.12,
+      "guide": "72-73 Shadowmoon Valley: around Karynaku",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Karynaku",
+          "guide": "72-73 Shadowmoon Valley: around Karynaku",
+          "level": 72,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 10451,
+      "level": 70,
+      "req": 68,
+      "xp": 15800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10458,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10480,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10481,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10513,
+      "level": 70,
+      "req": 68,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10514,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10515,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10519,
+      "level": 70,
+      "req": 68,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10521,
+      "level": 70,
+      "req": 68,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10522,
+      "level": 70,
+      "req": 68,
+      "xp": 15800,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10523,
+      "level": 70,
+      "req": 68,
+      "xp": 3150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10527,
+      "level": 70,
+      "req": 68,
+      "xp": 6250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10528,
+      "level": 70,
+      "req": 68,
+      "xp": 9500,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10537,
+      "level": 70,
+      "req": 68,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10546,
+      "level": 70,
+      "req": 68,
+      "xp": 3150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10550,
+      "level": 70,
+      "req": 68,
+      "xp": 3150,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Terokkar Forest"
+    },
+    {
+      "id": 10569,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10621,
+      "level": 69,
+      "req": 67,
+      "xp": 9250,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10626,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10648,
+      "level": 70,
+      "req": 67,
+      "xp": 15800,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10661,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10677,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10678,
+      "level": 70,
+      "req": 67,
+      "xp": 12650,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10680,
+      "level": 70,
+      "req": 68,
+      "xp": 3150,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10703,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10706,
+      "level": 70,
+      "req": 68,
+      "xp": 9500,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "The Arcatraz - Dungeon - Containment Core"
+    },
+    {
+      "id": 10759,
+      "level": 69,
+      "req": 67,
+      "xp": 1230,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10772,
+      "level": 70,
+      "req": 68,
+      "xp": 9500,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10773,
+      "level": 70,
+      "req": 68,
+      "xp": 15800,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10774,
+      "level": 70,
+      "req": 68,
+      "xp": 15800,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10775,
+      "level": 70,
+      "req": 68,
+      "xp": 15800,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10776,
+      "level": 70,
+      "req": 68,
+      "xp": 19000,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10777,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10778,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10780,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10782,
+      "level": 69,
+      "req": 67,
+      "xp": 12300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10793,
+      "level": 70,
+      "req": 68,
+      "xp": 9500,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10808,
+      "level": 69,
+      "req": 67,
+      "xp": 15400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10944,
+      "level": 70,
+      "req": 70,
+      "xp": 15800,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Serpentshrine Cavern - (Dungeon/Raid)"
+    },
+    {
+      "id": 10949,
+      "level": 70,
+      "req": 70,
+      "xp": 9500,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Terokkar Forest"
+    },
+    {
+      "id": 11043,
+      "level": 67,
+      "req": 67,
+      "xp": 1160,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Blade\u0027s Edge Mountains"
+    },
+    {
+      "id": 11045,
+      "level": 67,
+      "req": 67,
+      "xp": 1160,
+      "part": 1,
+      "section": 0,
+      "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
+      "from": "Terokkar Forest"
+    },
+    {
+      "id": 10804,
+      "level": 70,
+      "req": 70,
+      "xp": 12650,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10811,
+      "level": 70,
+      "req": 70,
+      "xp": 3150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10814,
+      "level": 70,
+      "req": 70,
+      "xp": 3150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10836,
+      "level": 70,
+      "req": 70,
+      "xp": 12650,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10837,
+      "level": 70,
+      "req": 70,
+      "xp": 12650,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10854,
+      "level": 70,
+      "req": 70,
+      "xp": 12650,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10858,
+      "level": 70,
+      "req": 70,
+      "xp": 3150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10866,
+      "level": 70,
+      "req": 70,
+      "xp": 19000,
+      "part": 2,
+      "section": 0,
+      "tag": "Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10870,
+      "level": 70,
+      "req": 70,
+      "xp": 19000,
+      "part": 2,
+      "section": 0,
+      "tag": "Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
+    },
+    {
+      "id": 10871,
+      "level": 70,
+      "req": 70,
+      "xp": 19000,
+      "part": 2,
+      "section": 0,
+      "tag": "Human"
+    },
+    {
+      "id": 10872,
+      "level": 70,
+      "req": 70,
+      "xp": 19000,
+      "part": 2,
+      "section": 0,
+      "tag": "Human"
+    }
+  ],
+  "carriedTo": {
+    "Terokkar Forest": 5
+  }
+}

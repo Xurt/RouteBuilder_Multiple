@@ -1,9 +1,7 @@
--- 26-40 Dustwallow Marsh: Zone Routes (Alliance).
+-- 35-40 Dustwallow Marsh: Zone Routes (Alliance).
 -- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
--- The zone covers more levels than one visit gives, so it is planned in 4 parts (from level 26, 31, 34, 37).
--- Split into 4 guides, listed under "26 - 38 Dustwallow Marsh" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
 -- Edit zones/classic/Dustwallow Marsh.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,9 +11,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 26 - 38 Dustwallow Marsh
-#subweight -26
-#name 26-27 Dustwallow Marsh
+#name 35-40 Dustwallow Marsh
 
 step
     .goto 1445/1,-4464.15,-3613.58
@@ -23,6 +19,17 @@ step
     .turnin 1132 >>Turn in Fiora Longears
     .target Fiora Longears
     .isOnQuest 1132
+step
+    .goto 1445/1,-4464.15,-3613.58
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fiora Longears|r
+    .accept 1133 >>Accept Journey to Astranaar
+    .accept 1135 >>Accept Highperch Venom
+    .target Fiora Longears
+step
+    .goto 1445/1,-4470.97,-3616.03
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Janene|r
+    .target Innkeeper Janene
+    .home >>Set your Hearthstone to Innkeeper Janene's inn
 step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baldruc|r
     .goto 1445/1,-4517.49,-3828.83
@@ -45,27 +52,106 @@ step
     .turnin 1264 >>Turn in The Missing Diplomat
     .target Commander Samaul
     .isOnQuest 1264
+step
+    .goto 1445/1,-4546.05,-3738.18
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Commander Samaul|r
+    .accept 1265 >>Accept The Missing Diplomat
+    .target Commander Samaul
+    .isQuestTurnedIn 1264 --any of: The Missing Diplomat
+    .xp <28,1
+step << Mage
+    .goto 1445/1,-4517.17,-3828.83
+    .fp Theramore >> Get the Theramore Flight Path
+step
+    .goto 1445/1,-4447.87,-3645.78
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Guard Byron|r
+    .accept 1282 >>Accept They Call Him Smiling Jim
+    .target Guard Byron
 step << Paladin sod
     .trainer >>Train your spells
     .train 19752 >>Train |T136106:0|t[|cRXP_FRIENDLY_Divine Intervention|r]. You will need it for a rune later << sod
 step
-    .goto 1445/1,-4464.15,-3613.58
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fiora Longears|r
-    .accept 1133 >>Accept Journey to Astranaar
-    .accept 1135 >>Accept Highperch Venom
-    .target Fiora Longears
+    .goto 1445/1,-4120.80,-3464.83
+    >>Sentry Point explored
+    .complete 1265,1 --Sentry Point explored
+    .isOnQuest 1265
 step
-    .goto 1445/1,-4464.15,-3613.58
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fiora Longears|r
-    .turnin 1135 >>Turn in Highperch Venom
-    .target Fiora Longears
-    .isQuestComplete 1135
+    .goto 1445/1,-4462.05,-3757.43
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Archmage Tervosh|r
+    .turnin 1265 >>Turn in The Missing Diplomat
+    .target Archmage Tervosh
+    .isOnQuest 1265
 step
-    .goto 1445/1,-4457.85,-3624.78
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Morgan Stern|r
-    .turnin 1260 >>Turn in Morgan Stern
-    .target Morgan Stern
-    .isOnQuest 1260
+    .goto 1445/1,-4462.05,-3757.43
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Archmage Tervosh|r
+    .accept 1266 >>Accept The Missing Diplomat
+    .target Archmage Tervosh
+    .isQuestTurnedIn 1265 --any of: The Missing Diplomat
+    .xp <28,1
+step
+    .goto 1445/1,-3885.60,-2952.78
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_"Swamp Eye" Jarl|r
+    .accept 1218 >>Accept Soothing Spices
+    .target "Swamp Eye" Jarl
+step
+    .goto 1445/1,-4463.10,-3834.43
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tBuy |cRXP_LOOT_Soothing Spices|r from |cRXP_FRIENDLY_Helenia Olden|r
+    .complete 1218,1 --Soothing Spices (3)
+    .target Helenia Olden
+step
+    .goto 1445/1,-3885.60,-2952.78
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_"Swamp Eye" Jarl|r
+    .turnin 1218 >>Turn in Soothing Spices
+    .target "Swamp Eye" Jarl
+step
+    .goto 1445/1,-3885.60,-2940.53
+    >>Click the |cRXP_PICK_Loose Dirt|r
+    .accept 1219 >>Accept The Orc Report
+step << Mage
+    .trainer >> Teleport to Stormwind or Ironforge. Train your level 38 spells
+    >>Start being very careful with your money too, as it's very nice to have your mount at level 40
+step
+    .goto 1445/1,-3350.10,-2896.08
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Private Hendel|r
+    .turnin 1266 >>Turn in The Missing Diplomat
+    .target Private Hendel
+    .isOnQuest 1266
+step
+    .goto 1445/1,-3350.10,-2896.08
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Private Hendel|r
+    .accept 1324 >>Accept The Missing Diplomat
+    .target Private Hendel
+    .isQuestTurnedIn 1266 --any of: The Missing Diplomat
+    .xp <28,1
+step
+    .goto 1445/1,-3350.10,-2896.08
+    >>Kill |cRXP_ENEMY_Private Hendel|r
+    .complete 1324,1 --Private Hendel slain (1)
+    .mob Private Hendel
+    .isOnQuest 1324
+step
+    #completewith next
+    .hs >>Hearth to Innkeeper Janene's inn. |cRXP_WARN_Walk instead if you are already nearby|r
+    .cooldown item,6948,>0,1
+step
+    .goto 1445/1,-4462.05,-3757.43
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Archmage Tervosh|r
+    .turnin 1324 >>Turn in The Missing Diplomat
+    .target Archmage Tervosh
+    .isOnQuest 1324
+step
+    .goto 1445/1,-4454.17,-3749.73
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Jaina Proudmoore|r
+    .accept 1267 >>Accept The Missing Diplomat
+    .target Lady Jaina Proudmoore
+    .isQuestTurnedIn 1324 --any of: The Missing Diplomat
+    .xp <28,1
+step
+    .goto 1445/1,-4454.17,-3749.73
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Jaina Proudmoore|r
+    .turnin 1267 >>Turn in The Missing Diplomat
+    .target Lady Jaina Proudmoore
+    .isOnQuest 1267
 step << Mage
     .goto 1445/1,-3393.15,-4031.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
@@ -84,44 +170,22 @@ step << Mage
     .turnin 1947 >>Turn in Journey to the Marsh
     .target Tabetha
     .isOnQuest 1947
-step << Warlock
+step << Mage
     .goto 1445/1,-3393.15,-4031.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
-    .turnin 1799 >>Turn in Fragments of the Orb of Orahil
+    .accept 1949 >>Accept Hidden Secrets
     .target Tabetha
-    .isQuestComplete 1799
+    .isQuestTurnedIn 1947 --any of: Journey to the Marsh
+    .xp <30,1
 step
-    +|cRXP_WARN_That is all of Dustwallow Marsh for now.|r Quests still in your log lead on from here; pick your next zone by them
-    >>|cRXP_FRIENDLY_Ashenvale|r: Journey to Astranaar
-    >>|cRXP_FRIENDLY_Thousand Needles and back here|r: Highperch Venom
+    .goto 1445/1,-2820.37,-3372.43
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mudcrush Durtfeet|r
+    .accept 1177 >>Accept Hungry!
+    .target Mudcrush Durtfeet
 step
-    +|cRXP_WARN_The rest of Dustwallow Marsh is planned from level 31.|r Load its guide for level 31 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 26 - 38 Dustwallow Marsh
-#subweight -26
-#name 31-32 Dustwallow Marsh: around Captain Garran Vimes
-
-step
-    .goto 1445/1,-4447.87,-3645.78
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Guard Byron|r
-    .accept 1282 >>Accept They Call Him Smiling Jim
-    .target Guard Byron
-step
-    .goto 1445/1,-3885.60,-2940.53
-    >>Click the |cRXP_PICK_Loose Dirt|r
-    .accept 1219 >>Accept The Orc Report
-step
-    .goto 1445/1,-4464.15,-3613.58
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fiora Longears|r
-    .turnin 1135 >>Turn in Highperch Venom
-    .target Fiora Longears
-    .isQuestComplete 1135
+    #completewith next
+    .hs >>Hearth to Innkeeper Janene's inn. |cRXP_WARN_Walk instead if you are already nearby|r
+    .cooldown item,6948,>0,1
 step
     #loop
     .goto 1445/1,-4387.50,-3678.33,0
@@ -138,6 +202,12 @@ step
     .turnin 1220 >>Turn in Captain Vimes
     .turnin 1282 >>Turn in They Call Him Smiling Jim
     .target Captain Garran Vimes
+step << Warlock
+    .goto 1445/1,-3393.15,-4031.48
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
+    .turnin 1799 >>Turn in Fragments of the Orb of Orahil
+    .target Tabetha
+    .isQuestComplete 1799
 step
     .goto 1445/1,-2534.25,-3700.73
     >>Click the |cRXP_PICK_Hoofprints|r
@@ -179,134 +249,11 @@ step
     .accept 1286 >>Accept The Deserters
     .target Captain Garran Vimes
 step
-    .goto 1445/1,-2869.72,-3934.18
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balos Jacken|r
-    .turnin 1286 >>Turn in The Deserters
-    .accept 1287 >>Accept The Deserters
-    .target Balos Jacken
-step << Mage
-    .goto 1445/1,-3393.15,-4031.48
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
-    .accept 1949 >>Accept Hidden Secrets
-    .target Tabetha
-    .isQuestTurnedIn 1947 --any of: Journey to the Marsh
-    .xp <30,1
-step
-    .goto 1445/1,-4556.02,-3735.03
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Garran Vimes|r
-    .turnin 1287 >>Turn in The Deserters
-    .target Captain Garran Vimes
-step
-    +|cRXP_WARN_That is all of Dustwallow Marsh for now.|r Quests still in your log lead on from here; pick your next zone by them
-    >>|cRXP_FRIENDLY_Thousand Needles|r: Hidden Secrets << Mage
-step
-    +|cRXP_WARN_The rest of Dustwallow Marsh is planned from level 34.|r Load its guide for level 34 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 26 - 38 Dustwallow Marsh
-#subweight -26
-#name 34-35 Dustwallow Marsh
-
-step
-    .goto 1445/1,-4546.05,-3738.18
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Commander Samaul|r
-    .accept 1265 >>Accept The Missing Diplomat
-    .target Commander Samaul
-    .isQuestTurnedIn 1264 --any of: The Missing Diplomat
-    .xp <28,1
-step
-    .goto 1445/1,-4120.80,-3464.83
-    >>Sentry Point explored
-    .complete 1265,1 --Sentry Point explored
-    .isOnQuest 1265
-step
-    .goto 1445/1,-4462.05,-3757.43
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Archmage Tervosh|r
-    .turnin 1265 >>Turn in The Missing Diplomat
-    .target Archmage Tervosh
-    .isOnQuest 1265
-step
-    .goto 1445/1,-4462.05,-3757.43
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Archmage Tervosh|r
-    .accept 1266 >>Accept The Missing Diplomat
-    .target Archmage Tervosh
-    .isQuestTurnedIn 1265 --any of: The Missing Diplomat
-    .xp <28,1
-step
-    .goto 1445/1,-3885.60,-2952.78
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_"Swamp Eye" Jarl|r
-    .accept 1218 >>Accept Soothing Spices
-    .target "Swamp Eye" Jarl
-step
-    .goto 1445/1,-4463.10,-3834.43
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tBuy |cRXP_LOOT_Soothing Spices|r from |cRXP_FRIENDLY_Helenia Olden|r
-    .complete 1218,1 --Soothing Spices (3)
-    .target Helenia Olden
-step
-    .goto 1445/1,-3885.60,-2952.78
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_"Swamp Eye" Jarl|r
-    .turnin 1218 >>Turn in Soothing Spices
-    .target "Swamp Eye" Jarl
-step << Mage
-    .trainer >> Teleport to Stormwind or Ironforge. Train your level 38 spells
-    >>Start being very careful with your money too, as it's very nice to have your mount at level 40
-step
-    .goto 1445/1,-3350.10,-2896.08
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Private Hendel|r
-    .turnin 1266 >>Turn in The Missing Diplomat
-    .target Private Hendel
-    .isOnQuest 1266
-step
-    .goto 1445/1,-3350.10,-2896.08
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Private Hendel|r
-    .accept 1324 >>Accept The Missing Diplomat
-    .target Private Hendel
-    .isQuestTurnedIn 1266 --any of: The Missing Diplomat
-    .xp <28,1
-step
-    .goto 1445/1,-3350.10,-2896.08
-    >>Kill |cRXP_ENEMY_Private Hendel|r
-    .complete 1324,1 --Private Hendel slain (1)
-    .mob Private Hendel
-    .isOnQuest 1324
-step
-    .goto 1445/1,-4462.05,-3757.43
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Archmage Tervosh|r
-    .turnin 1324 >>Turn in The Missing Diplomat
-    .target Archmage Tervosh
-    .isOnQuest 1324
-step
-    .goto 1445/1,-4454.17,-3749.73
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Jaina Proudmoore|r
-    .accept 1267 >>Accept The Missing Diplomat
-    .target Lady Jaina Proudmoore
-    .isQuestTurnedIn 1324 --any of: The Missing Diplomat
-    .xp <28,1
-step
-    .goto 1445/1,-4454.17,-3749.73
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Jaina Proudmoore|r
-    .turnin 1267 >>Turn in The Missing Diplomat
-    .target Lady Jaina Proudmoore
-    .isOnQuest 1267
-step
-    .goto 1445/1,-2820.37,-3372.43
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mudcrush Durtfeet|r
-    .accept 1177 >>Accept Hungry!
-    .target Mudcrush Durtfeet
-step
-    .goto 1445/1,-4464.15,-3613.58
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fiora Longears|r
-    .turnin 1135 >>Turn in Highperch Venom
-    .target Fiora Longears
-    .isQuestComplete 1135
-step << Mage
-    .goto 1445/1,-4517.17,-3828.83
-    .fp Theramore >> Get the Theramore Flight Path
+    .goto 1445/1,-4457.85,-3624.78
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Morgan Stern|r
+    .turnin 1260 >>Turn in Morgan Stern
+    .target Morgan Stern
+    .isOnQuest 1260
 step
     .goto 1445/1,-4457.85,-3624.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Morgan Stern|r
@@ -349,6 +296,35 @@ step
 step << Mage Gnome
     .trainer >> Train your class spells
 step
+    .goto 1445/1,-3885.60,-2952.78
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_"Swamp Eye" Jarl|r
+    .accept 1206 >>Accept Jarl Needs Eyes
+    .target "Swamp Eye" Jarl
+step
+    #loop
+    .goto 1445/1,-2800.42,-2882.78,0
+    .goto 1445/1,-2800.42,-2882.78,40,0
+    .goto 1445/1,-2781.00,-2814.53,40,0
+    .goto 1445/1,-2614.05,-2785.13,40,0
+    >>Kill |cRXP_ENEMY_Darkmist Spiders|r, |cRXP_ENEMY_Darkmist Lurkers|r, |cRXP_ENEMY_Darkmist Recluses|r and |cRXP_ENEMY_Darkmist Silkspinners|r. Loot them for |cRXP_LOOT_Unpopped Darkmist Eye|r
+    .complete 1206,1 --Unpopped Darkmist Eye (40)
+    .mob Darkmist Spider
+    .mob Darkmist Lurker
+    .mob Darkmist Recluse
+    .mob Darkmist Silkspinner
+step
+    .goto 1445/1,-3885.60,-2952.78
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_"Swamp Eye" Jarl|r
+    .turnin 1206 >>Turn in Jarl Needs Eyes
+    .accept 1203 >>Accept Jarl Needs a Blade
+    .target "Swamp Eye" Jarl
+step
+    .goto 1445/1,-3885.60,-2952.78
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_"Swamp Eye" Jarl|r
+    .turnin 1203 >>Turn in Jarl Needs a Blade
+    .target "Swamp Eye" Jarl
+    .isQuestComplete 1203
+step
     .goto 1445/1,-3436.20,-2646.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_"Stinky" Ignatz|r
     .accept 1222 >>Accept Stinky's Escape
@@ -363,6 +339,29 @@ step
     .turnin 1177 >>Turn in Hungry!
     .target Mudcrush Durtfeet
 step
+    .goto 1445/1,-2869.72,-3934.18
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balos Jacken|r
+    .turnin 1286 >>Turn in The Deserters
+    .accept 1287 >>Accept The Deserters
+    .target Balos Jacken
+step << Mage
+    .xp 35 >>Grind to level 35 (The Infernal Orb needs it)
+step << Mage
+    .goto 1445/1,-3393.15,-4031.48
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
+    .accept 1954 >>Accept The Infernal Orb
+    .target Tabetha
+step << Mage
+    .goto 1445/1,-3393.15,-4031.48
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
+    .turnin 1954 >>Turn in The Infernal Orb
+    .target Tabetha
+    .isQuestComplete 1954
+step
+    #completewith next
+    .hs >>Hearth to Innkeeper Janene's inn. |cRXP_WARN_Walk instead if you are already nearby|r
+    .cooldown item,6948,>0,1
+step
     .goto 1445/1,-4457.85,-3624.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Morgan Stern|r
     .turnin 1222 >>Turn in Stinky's Escape
@@ -371,29 +370,6 @@ step
     .target Morgan Stern
 step << Mage
     .trainer >> Train your class spells
-step
-    .goto 1445/1,-4457.85,-3624.78
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Morgan Stern|r
-    .turnin 1258 >>Turn in ... and Bugs
-    .target Morgan Stern
-    .isQuestComplete 1258
-step
-    +|cRXP_WARN_That is all of Dustwallow Marsh for now.|r Quests still in your log lead on from here; pick your next zone by them
-    >>|cRXP_FRIENDLY_Arathi Highlands|r: Crystal in the Mountains
-    >>|cRXP_FRIENDLY_Swamp of Sorrows and back here|r: ... and Bugs
-step
-    +|cRXP_WARN_The rest of Dustwallow Marsh is planned from level 37.|r Load its guide for level 37 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 26 - 38 Dustwallow Marsh
-#subweight -26
-#name 37-38 Dustwallow Marsh
-
 step
     .goto 1445/1,-4464.15,-3613.58
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fiora Longears|r
@@ -407,87 +383,17 @@ step
     .target Morgan Stern
     .isQuestComplete 1258
 step
-    .goto 1445/1,-3885.60,-2952.78
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_"Swamp Eye" Jarl|r
-    .accept 1206 >>Accept Jarl Needs Eyes
-    .target "Swamp Eye" Jarl
-    .isQuestTurnedIn 1218 --any of: Soothing Spices
-step
-    #loop
-    .goto 1445/1,-2800.42,-2882.78,0
-    .goto 1445/1,-2800.42,-2882.78,40,0
-    .goto 1445/1,-2781.00,-2814.53,40,0
-    .goto 1445/1,-2614.05,-2785.13,40,0
-    >>Kill |cRXP_ENEMY_Darkmist Spiders|r, |cRXP_ENEMY_Darkmist Lurkers|r, |cRXP_ENEMY_Darkmist Recluses|r and |cRXP_ENEMY_Darkmist Silkspinners|r. Loot them for |cRXP_LOOT_Unpopped Darkmist Eye|r
-    .complete 1206,1 --Unpopped Darkmist Eye (40)
-    .mob Darkmist Spider
-    .mob Darkmist Lurker
-    .mob Darkmist Recluse
-    .mob Darkmist Silkspinner
-    .isOnQuest 1206
-step
-    .goto 1445/1,-3885.60,-2952.78
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_"Swamp Eye" Jarl|r
-    .turnin 1206 >>Turn in Jarl Needs Eyes
-    .target "Swamp Eye" Jarl
-    .isOnQuest 1206
-step
-    .goto 1445/1,-3885.60,-2952.78
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_"Swamp Eye" Jarl|r
-    .accept 1203 >>Accept Jarl Needs a Blade
-    .target "Swamp Eye" Jarl
-    .isQuestTurnedIn 1206 --any of: Jarl Needs Eyes
-step
-    .goto 1445/1,-3885.60,-2952.78
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_"Swamp Eye" Jarl|r
-    .turnin 1203 >>Turn in Jarl Needs a Blade
-    .target "Swamp Eye" Jarl
-    .isQuestComplete 1203
-step << Mage
-    .goto 1445/1,-3393.15,-4031.48
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
-    .accept 1952 >>Accept Mage's Wand
-    .target Tabetha
-    .isQuestTurnedIn 1948 --Items of Power
-    .isQuestTurnedIn 1951 --Rituals of Power
-    .xp <30,1
-step << Mage
-    .goto 1445/1,-3393.15,-4031.48
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
-    .turnin 1952 >>Turn in Mage's Wand
-    .target Tabetha
-    .isOnQuest 1952
-step << Mage
-    .goto 1445/1,-3393.15,-4031.48
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
-    .accept 1948 >>Accept Items of Power
-    .target Tabetha
-    .isQuestTurnedIn 1947 --any of: Journey to the Marsh
-    .xp <30,1
-step << Mage
-    .goto 1445/1,-3393.15,-4031.48
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
-    .accept 1954 >>Accept The Infernal Orb
-    .target Tabetha
-step << Mage
-    .goto 1445/1,-3393.15,-4031.48
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
-    .turnin 1954 >>Turn in The Infernal Orb
-    .target Tabetha
-    .isQuestComplete 1954
-step << Mage
-    .goto 1445/1,-3393.15,-4031.48
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
-    .turnin 1948 >>Turn in Items of Power
-    .target Tabetha
-    .isQuestComplete 1948
-step << Mage
-    .goto 1445/1,-3289.72,-4306.23
-    >>Open the |cRXP_PICK_Gold Vein|r. Loot it for |cRXP_LOOT_Jade|r
-    .complete 1948,1 --Jade (1)
-    .isOnQuest 1948
+    .goto 1445/1,-4556.02,-3735.03
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Garran Vimes|r
+    .turnin 1287 >>Turn in The Deserters
+    .target Captain Garran Vimes
 step
     +|cRXP_WARN_End of the Dustwallow Marsh route.|r Quests still in your log lead on from here; pick your next zone by them
+    >>|cRXP_FRIENDLY_Arathi Highlands|r: Crystal in the Mountains
+    >>|cRXP_FRIENDLY_Ashenvale|r: Journey to Astranaar
+    >>|cRXP_FRIENDLY_Thousand Needles|r: Hidden Secrets << Mage
+    >>|cRXP_FRIENDLY_Thousand Needles and back here|r: Highperch Venom
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Jarl Needs a Blade
+    >>|cRXP_FRIENDLY_Swamp of Sorrows and back here|r: ... and Bugs
     >>|cRXP_FRIENDLY_Desolace and back here|r: The Infernal Orb << Mage
 ]])

@@ -11,7 +11,7 @@
     build; the folder is rebuilt from scratch each time.
 
 .PARAMETER Game
-    Which game's guides to pack: forever (default) or classic. Forever's addon goes in addon\RXPGuides_ZoneRoutes,
+    Which game's guides to pack: forever (default), classic, tbc or mop. Forever's addon goes in addon\RXPGuides_ZoneRoutes,
     every other game's in addon\<game>\RXPGuides_ZoneRoutes (each game has its own AddOns folder in the game).
 
 .PARAMETER GuidesPath
@@ -30,7 +30,7 @@
 #>
 [CmdletBinding()]
 param(
-    [ValidateSet('forever', 'classic')][string]$Game = 'forever',
+    [ValidateSet('forever', 'classic', 'tbc', 'mop')][string]$Game = 'forever',
     [string]$GuidesPath,
     [string]$Interface
 )
@@ -43,7 +43,7 @@ $here = $PSScriptRoot
 if (-not $here) { $here = (Get-Location).Path }
 
 $forever = $Game -eq 'forever'
-if (-not $Interface) { $Interface = @{ forever = '11509, 38002, 50504, 120100, 120005, 120007, 16001'; classic = '11508, 11509' }[$Game] }
+if (-not $Interface) { $Interface = @{ forever = '11509, 38002, 50504, 120100, 120005, 120007, 16001'; classic = '11508, 11509'; tbc = '20505, 20506'; mop = '50503, 50504' }[$Game] }
 if (-not $GuidesPath) { $GuidesPath = if ($forever) { Join-Path $here 'guides' } else { Join-Path (Join-Path $here 'guides') $Game } }
 if (-not (Test-Path -LiteralPath $GuidesPath -PathType Container)) {
     Write-Host "Guides folder not found: $GuidesPath. Build some guides first." -ForegroundColor Red

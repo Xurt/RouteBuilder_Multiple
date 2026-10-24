@@ -89,7 +89,7 @@ repeatable (9):
   Counting Out Time [4973], Locked Away [5059], Felstone Field Cauldron [5218], Dalson's Tears Cauldron [5221], Writhing Haunt Cauldron [5224], Gahrron's Withering Cauldron [5227], Minion's Scourgestones [5402], Invader's Scourgestones [5403], Corruptor's Scourgestones [5404]
 dungeon quest (6):
   Doctor Theolen Krastinov, the Butcher [5382], Kirtonos the Herald [5384], The Lich, Ras Frostwhisper [5466], Krastinov's Bag of Horrors [5515], Of Love and Family [5848], Oculus Illusions [6569]
-special category (sort -366) (2):
+not in the game (on Questie's quest blacklist) (2):
   Moonstrike the Elder [8714], Meadowrun the Elder [8722]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

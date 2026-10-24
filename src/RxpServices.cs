@@ -19,9 +19,9 @@ public sealed class RxpService
 public static class RxpServices
 {
     static readonly HashSet<string> Service = new() { "train", "trainer", "vendor", "fp" };
-    static readonly string[] HordeRaces = { "Orc", "Undead", "Scourge", "Tauren", "Troll" }, AllianceRaces = { "Human", "Dwarf", "NightElf", "Gnome" };
-    static readonly HashSet<string> Classes = Game.Classes.Select(c => c.Name).ToHashSet(StringComparer.OrdinalIgnoreCase);
-    static readonly HashSet<string> RaceNames = HordeRaces.Concat(AllianceRaces).Append("Skyborne").ToHashSet(StringComparer.OrdinalIgnoreCase);
+    static readonly string[] HordeRaces = { "Orc", "Undead", "Scourge", "Tauren", "Troll", "BloodElf", "Goblin" }, AllianceRaces = { "Human", "Dwarf", "NightElf", "Gnome", "Draenei", "Worgen" };
+    static readonly HashSet<string> Classes = new[] { "Warrior", "Paladin", "Hunter", "Rogue", "Priest", "Shaman", "Mage", "Warlock", "Druid", "DeathKnight", "DK", "Monk" }.ToHashSet(StringComparer.OrdinalIgnoreCase);
+    static readonly HashSet<string> RaceNames = HordeRaces.Concat(AllianceRaces).Append("Skyborne").Append("Pandaren").ToHashSet(StringComparer.OrdinalIgnoreCase);
 
     /// <summary>
     /// The RestedXP guide files the game being planned loads: those its Guides folder lists for that game
@@ -56,7 +56,7 @@ public static class RxpServices
     /// hardcore only, and its group says whether it levels at all (dungeon, profession and reputation guides do not).
     /// Forever's guide folder is taken as it is.
     /// </summary>
-    public static string? NotFor(string header)
+    public static string? NotFor(string header, string? groupArg = null)
     {
         var g = Games.Current;
         if (g.IsForever) return null;
@@ -68,15 +68,113 @@ public static class RxpServices
         var season = lines.Select(l => Regex.Match(l, @"^#season\s+([\d,\s]+)$")).FirstOrDefault(x => x.Success);
         if (season != null && !season.Groups[1].Value.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).Contains("0")) return "for Season of Discovery";
         if (tags.Contains("hardcore") && !tags.Contains("softcore")) return "a hardcore-only route";
-        string group = GroupOf(header);
+        string group = GroupOf(header, groupArg);
         if (NotLeveling.IsMatch(group)) return "not a leveling guide";
+        if (g.OwnGroups != null && !Regex.IsMatch(group, g.OwnGroups, RegexOptions.IgnoreCase)) return "an older game's route";
         string name = lines.Select(l => Regex.Match(l, @"^#name\s+(.*)$")).FirstOrDefault(x => x.Success)?.Groups[1].Value ?? "";
         if (NotLeveling.IsMatch(name)) return "not a leveling guide";
         return null;
     }
 
+    /// <summary>One RegisterGuide block: the file it is in, the group given before the text (if any) and its text.</summary>
+    public sealed record Block(string File, string? GroupArg, string Body);
+
+    static readonly Regex BlockRx = new(@"RegisterGuide\(\s*(?:""([^""]*)""\s*,\s*)?\[\[(.*?)\]\]", RegexOptions.Singleline | RegexOptions.Compiled);
+    static readonly Regex IncludeRx = new(@"^#include\s+(.+?)(?:@([^-\s]+)-(\S+))?\s*$", RegexOptions.Compiled);
+
+    /// <summary>
+    /// Every guide in the files, with "#include Group\Name" steps replaced by the steps of the guide they name (from the
+    /// step with "#label a" to the one with "#label b" for "Group\Name@a-b"). The Mists guides are mostly such shells around
+    /// shared bodies kept in an internal group (RXP-Pandaria, RXPGuides); the bodies, which hold both factions' steps,
+    /// are passed over as guides of their own by NotFor, so their steps are read once, in the shell's order.
+    /// </summary>
+    public static List<Block> Blocks(IEnumerable<string> files, IEnumerable<string>? alsoForIncludes = null)
+    {
+        static List<Block> Load(IEnumerable<string> fs)
+        {
+            var r = new List<Block>();
+            foreach (var f in fs)
+            {
+                string text;
+                try { text = File.ReadAllText(f); } catch (IOException) { continue; }
+                foreach (Match m in BlockRx.Matches(text)) r.Add(new Block(f, m.Groups[1].Success ? m.Groups[1].Value : null, m.Groups[2].Value));
+            }
+            return r;
+        }
+        var fileList = files.Select(Path.GetFullPath).Distinct().ToList();
+        var all = Load(fileList);
+        var byName = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        // guides that are only included, from other files (a guide file named on its own whose shells point elsewhere)
+        var pool = alsoForIncludes == null ? all : all.Concat(Load(alsoForIncludes.Select(Path.GetFullPath).Except(fileList))).ToList();
+        foreach (var b in pool)
+        {
+            string h = HeaderOf(b.Body);
+            string? name = h.Split('\n').Select(l => Regex.Match(Regex.Replace(l, "--.*$", "").Trim(), @"^#name\s+(.*)$")).FirstOrDefault(x => x.Success)?.Groups[1].Value.Trim();
+            if (name == null) continue;
+            foreach (var grp in new[] { GroupOf(h, b.GroupArg), b.GroupArg }.Concat(AllGroups(h)).Where(x => !string.IsNullOrEmpty(x)).Distinct())
+                byName.TryAdd(grp + "\\" + name, b.Body);
+        }
+        return all.Select(b => b.Body.Contains("#include") ? b with { Body = Expand(b.Body, byName, 0) } : b).ToList();
+    }
+
+    static IEnumerable<string> AllGroups(string header) =>
+        header.Split('\n').Select(l => Regex.Match(Regex.Replace(l, "--.*$", "").Trim(), @"^#group\s+(.*?)(?:\s*<<.*)?$")).Where(m => m.Success).Select(m => m.Groups[1].Value.Trim());
+
+    static string Expand(string body, Dictionary<string, string> byName, int depth)
+    {
+        var o = new List<string>();
+        foreach (var raw in body.Split('\n'))
+        {
+            string l = Regex.Replace(raw, "--.*$", "").Trim();
+            var m = IncludeRx.Match(l);
+            int stepAt = o.FindLastIndex(x => Regex.IsMatch(x, @"^\s*step\b"));
+            if (!m.Success || depth > 5 || stepAt < 0 || !byName.TryGetValue(m.Groups[1].Value.Trim(), out var inner)) { o.Add(raw); continue; }
+            string outer = o[stepAt].Contains("<<") ? o[stepAt][(o[stepAt].IndexOf("<<", StringComparison.Ordinal) + 2)..].Trim() : "";
+            o.RemoveRange(stepAt, o.Count - stepAt);
+            var steps = Steps(Expand(inner, byName, depth + 1));
+            if (m.Groups[2].Success)
+            {
+                int a = steps.FindIndex(st => HasLabel(st, m.Groups[2].Value)), b = steps.FindIndex(st => HasLabel(st, m.Groups[3].Value));
+                if (a >= 0) steps = steps.Skip(a).Take((b >= a ? b : steps.Count - 1) - a + 1).ToList();
+            }
+            foreach (var st in steps)
+            {
+                if (outer.Length > 0)
+                {
+                    string head = st[0], tag = head.Contains("<<") ? head[(head.IndexOf("<<", StringComparison.Ordinal) + 2)..].Trim() : "";
+                    st[0] = "step << " + AndTags(outer, tag);
+                }
+                o.AddRange(st);
+            }
+        }
+        return string.Join("\n", o);
+    }
+
+    static bool HasLabel(List<string> step, string label) => step.Any(x => Regex.IsMatch(x, @"^\s*#label\s+" + Regex.Escape(label) + @"\s*$"));
+
+    /// <summary>A guide's text cut into steps (each from its "step" line), without the lines above the first.</summary>
+    static List<List<string>> Steps(string body)
+    {
+        var r = new List<List<string>>();
+        foreach (var raw in body.Split('\n'))
+        {
+            if (Regex.IsMatch(raw, @"^\s*step\b")) r.Add(new List<string> { raw.Trim() });
+            else if (r.Count > 0) r[^1].Add(raw);
+        }
+        return r;
+    }
+
+    // "a" and "b" both, faction words kept: "Alliance" and "Warrior/Rogue" is "Alliance Warrior/Alliance Rogue"
+    static string AndTags(string a, string b)
+    {
+        var A = a.Split('/', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+        var B = b.Split('/', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+        if (B.Length == 0) return a; if (A.Length == 0) return b;
+        return string.Join("/", A.SelectMany(x => B.Select(y => x + " " + y)));
+    }
+
     /// <summary>A guide's group for this game: a "#group X &lt;&lt; mop" line names the group it has in that game only.</summary>
-    public static string GroupOf(string header)
+    public static string GroupOf(string header, string? groupArg = null)
     {
         string mine = Games.Current.HeaderTag.TrimStart('#');
         foreach (var raw in header.Split('\n'))
@@ -85,7 +183,7 @@ public static class RxpServices
             if (!m.Success) continue;
             if (!m.Groups[2].Success || m.Groups[2].Value.Split(new[] { '/', ' ' }, StringSplitOptions.RemoveEmptyEntries).Contains(mine, StringComparer.OrdinalIgnoreCase)) return m.Groups[1].Value.Trim();
         }
-        return "";
+        return groupArg ?? "";     // RXPGuides.RegisterGuide("Group", [[ ... ]]) names it before the text
     }
 
     /// <summary>The faction a guide's "&lt;&lt; ..." line is for: named, or known from the races it names (null: either).</summary>
@@ -203,15 +301,15 @@ public static class RxpServices
     public static string HeaderOf(string body) { int i = Regex.Match(body, @"(^|\n)\s*step\b").Index; return i > 0 ? body[..i] : body; }
 
     /// <summary>Every service step in the RestedXP guide files' text, by guide.</summary>
-    public static List<RxpService> Read(string file, string text, GameData? data = null)
+    public static List<RxpService> Read(IEnumerable<Block> blocks, GameData? data = null)
     {
         var all = new List<RxpService>();
-        foreach (Match block in Regex.Matches(text, @"RegisterGuide\(\s*(?:""[^""]*""\s*,\s*)?\[\[(.*?)\]\]", RegexOptions.Singleline))
+        foreach (var block in blocks)
         {
-            if (NotFor(HeaderOf(block.Groups[1].Value)) != null) continue;
-            string name = Path.GetFileNameWithoutExtension(file), faction = "", guideTag = "";
+            if (NotFor(HeaderOf(block.Body), block.GroupArg) != null) continue;
+            string name = Path.GetFileNameWithoutExtension(block.File), faction = "", guideTag = "";
             var steps = new List<(string Tag, bool Along, List<(string Text, string Tag)> Lines)>();
-            foreach (var raw in block.Groups[1].Value.Split('\n'))
+            foreach (var raw in block.Body.Split('\n'))
             {
                 string l = Regex.Replace(raw, "--.*$", "").Trim();
                 if (l.Length == 0) continue;

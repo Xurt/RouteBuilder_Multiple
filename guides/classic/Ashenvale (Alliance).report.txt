@@ -89,18 +89,18 @@ These need a higher level than this part ends at:
 
 Left out (37)
 -------------
-repeatable (18):
-  Talismans of Merit [7886], Talismans of Merit [7887], Talismans of Merit [7888], Talismans of Merit [7921], Talismans of Merit [8289], Remember Alterac Valley! [8383], Claiming Arathi Basin [8384], Concerted Efforts [8385], Fight for Warsong Gulch [8386], Claiming Arathi Basin [8391], Claiming Arathi Basin [8392], Claiming Arathi Basin [8397], Claiming Arathi Basin [8398], Fight for Warsong Gulch [8404], Fight for Warsong Gulch [8405], Fight for Warsong Gulch [8406], Fight for Warsong Gulch [8407], Fight for Warsong Gulch [8408]
+repeatable (13):
+  Remember Alterac Valley! [8383], Claiming Arathi Basin [8384], Concerted Efforts [8385], Fight for Warsong Gulch [8386], Claiming Arathi Basin [8391], Claiming Arathi Basin [8392], Claiming Arathi Basin [8397], Claiming Arathi Basin [8398], Fight for Warsong Gulch [8404], Fight for Warsong Gulch [8405], Fight for Warsong Gulch [8406], Fight for Warsong Gulch [8407], Fight for Warsong Gulch [8408]
 dungeon quest (12):
   Fight for Warsong Gulch [8372], Claiming Arathi Basin [8374], Remember Alterac Valley! [8375], Claiming Arathi Basin [8393], Claiming Arathi Basin [8394], Claiming Arathi Basin [8395], Claiming Arathi Basin [8396], Fight for Warsong Gulch [8399], Fight for Warsong Gulch [8400], Fight for Warsong Gulch [8401], Fight for Warsong Gulch [8402], Fight for Warsong Gulch [8403]
+not in the game (on Questie's quest blacklist) (6):
+  Talismans of Merit [7886], Talismans of Merit [7887], Talismans of Merit [7888], Talismans of Merit [7921], Talismans of Merit [8289], Riversong the Elder [8725]
 needs reputation (3):
   Sentinel Basic Care Package [7863], Sentinel Standard Care Package [7864], Sentinel Advanced Care Package [7865]
 above this zone's range of 18-32 (2):
   Ancient Spirit [4261], Concerted Efforts [8371]
 special category (sort -1) (1):
   Shrouded in Nightmare [8446]
-special category (sort -366) (1):
-  Riversong the Elder [8725]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
 

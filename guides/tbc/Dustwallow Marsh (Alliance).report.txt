@@ -1,0 +1,170 @@
+Dustwallow Marsh - Alliance - part 1 of 2, planned from level 35
+Guide "35-41 Dustwallow Marsh" in group "Zone Routes (Alliance)": this part has 201 steps, 175 stops
+Written to guides/tbc/Dustwallow Marsh (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: 26 PROBLEMS
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Human Warrior)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Human Paladin)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Human Rogue)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Human Priest)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Human Mage)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Human Warlock)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Dwarf Warrior)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Dwarf Paladin)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Dwarf Hunter)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Dwarf Rogue)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Dwarf Priest)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (NightElf Warrior)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (NightElf Hunter)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (NightElf Rogue)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (NightElf Priest)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (NightElf Druid)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Gnome Warrior)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Gnome Rogue)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Gnome Mage)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Gnome Warlock)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Draenei Warrior)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Draenei Paladin)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Draenei Hunter)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Draenei Priest)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Draenei Shaman)
+  ! A Disturbing Development is picked up before any of the quests that unlock it (Draenei Mage)
+Quest log: at most 11 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+42 pickups or hand-ins are within reach of a stop but planned for later.
+10 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 35. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 179 steps kept, 32 new ones slotted in, 3 moved because their prerequisites changed, 9 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 164 tasks, 35,199 yd on foot; ends at level 38.2; 2 hearths; 1 ORDER PROBLEMS; at its hardest you are 3.8 levels below the mobs
+  Mage: 1 more tasks; their whole route comes to 35,199 yd; ends at level 38.2; 2 hearths; 1 ORDER PROBLEMS; at its hardest you are 3.8 levels below the mobs
+  everyone (quests that depend on other zones): 26 more tasks; their whole route comes to 41,036 yd; ends at level 38.2; 2 hearths; 1 ORDER PROBLEMS; at its hardest you are 3.8 levels below the mobs
+  Mage (quests that depend on other zones): 18 more tasks; their whole route comes to 41,326 yd; ends at level 38.2; 2 hearths; 1 ORDER PROBLEMS; at its hardest you are 3.8 levels below the mobs
+  Warlock (quests that depend on other zones): 5 more tasks; their whole route comes to 41,222 yd; ends at level 38.2; 2 hearths; 1 ORDER PROBLEMS; at its hardest you are 3.8 levels below the mobs
+Hearthstone: set at Uma Bartulm (Uma Bartulm's inn); 2 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 35 for The Zeppelin Crash
+6 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+6 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+6 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (91)
+------------------------
+Start to finish here: 61 (61 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Crystal in the Mountains [635, level 35] -> Arathi Highlands
+  Warn Bolvar! [11222, level 37] -> Stormwind City
+
+Hand-in step only shows once complete (3):
+  Confirming the Suspicion [11144, level 38] - needs Grimtotem Battle Plan (1) (an unknown place)
+  ... and Bugs [1258, level 40] - needs Pristine Crawler Leg (12) (Swamp of Sorrows)
+  The Infernal Orb [1954, level 40, Mage] - needs Infernal Orb (1) (Desolace)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (8):
+  The Missing Diplomat [1264, level 33] <- Wetlands
+  James Hyal [1302, level 35] <- Wetlands
+  Return to Jaina [11223, level 37] <- Stormwind City
+  Morgan Stern [1260, level 38] <- Stormwind City
+  Journey to the Marsh [1947, level 38, Mage] <- Thunder Bluff
+  Fragments of the Orb of Orahil [1799, level 40, Warlock] <- The Barrens
+  Rituals of Power [1951, level 40, Mage] <- Thousand Needles
+  Return to the Marsh [1953, level 40, Mage] <- Ironforge
+
+Need a quest this guide does not hand in - steps show only once that is done (17):
+  The Missing Diplomat [1265, level 35] - needs one of The Missing Diplomat [1264]
+  The Missing Diplomat [1266, level 36] - needs one of The Missing Diplomat [1265]
+  The Missing Diplomat [1267, level 38] - needs one of The Missing Diplomat [1324]
+  The Missing Diplomat [1324, level 38] - needs one of The Missing Diplomat [1266]
+  Hidden Secrets [1949, level 38, Mage] - needs one of Journey to the Marsh [1947] -> Thousand Needles
+  Tabetha's Assistance [11149, level 39] - needs Confirming the Suspicion [11144]
+  Raze Direhorn Post! [11150, level 39] - needs one of Tabetha's Assistance [11149]
+  Justice for the Hyals [11151, level 39] - needs one of Raze Direhorn Post! [11150]
+  Peace at Last [11152, level 39] - needs one of Justice for the Hyals [11151]
+  Items of Power [1948, level 40, Mage] - needs one of Journey to the Marsh [1947]
+  Mage's Wand [1952, level 40, Mage] - needs Items of Power [1948], Rituals of Power [1951]
+  The Exorcism [1955, level 40, Mage] - needs one of The Infernal Orb [1954]
+  Power in Uldaman [1956, level 40, Mage] - needs one of The Exorcism [1955]
+  Mana Surges [1957, level 40, Mage] - needs one of Power in Uldaman [1956]
+  Celestial Power [1958, level 40, Mage] - needs one of Mana Surges [1957]
+  Cleansing of the Orb of Orahil [4961, level 40, Warlock] - needs Fragments of the Orb of Orahil [1799], Shard of a Felhound [4962]
+  Returning the Cleansed Orb [4976, level 40, Warlock] - needs one of Cleansing of the Orb of Orahil [4961] -> The Barrens
+
+Worth checking in game
+----------------------
+  The Exorcism [1955, level 40, Mage]: "Kill the Demon of the Orb" is assumed to be line 2 in the quest log; check it
+  Nat's Bargain [11209, level 37]: "Fish Paste Tested (1)" has no place in the data; taken to be done where the quest is given
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  Challenge to the Black Flight [11162, level 41]: its mobs are level 41; this part gets you to about 38.3
+  Help for Mudsprocket [11211, level 39]: needs level 38; this part gets you to about 38.2
+
+Left out (19)
+-------------
+not in the game (on Questie's quest blacklist) (6):
+  Desecrate this Fire! [11771], Honor the Flame [11815], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Candy Bucket [12349], Candy Bucket [12398]
+above this zone's range of 35-42 (5):
+  Akiris by the Bundle [623], Cortello's Riddle [625], Cortello's Riddle [626], Tiara of the Deep [2846], Tabetha's Task [2861]
+needs a profession (4):
+  Nat Pagle, Angler Extreme [6607], I Got Nothin' Left! [6609], Triage [6624], Alliance Trauma [6625]
+dungeon quest (2):
+  Shadowshard Fragments [7070], Nat's Measuring Tape [8227]
+repeatable (1):
+  CLUCK! [3861]
+cannot be taken together with Help for Mudsprocket [11211], which is in the guide (1):
+  Mission to Mudsprocket [11214]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Dustwallow Marsh - Alliance - part 2 of 2, planned from level 41
+Guide "35-41 Dustwallow Marsh" in group "Zone Routes (Alliance)": this part has 10 steps, 9 stops
+Written to guides/tbc/Dustwallow Marsh (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 41. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 6 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 5 tasks, 2,359 yd on foot; ends at level 41.1
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 7,847 yd; ends at level 41.1
+  Mage (quests that depend on other zones): 1 more tasks; their whole route comes to 7,847 yd; ends at level 41.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (5)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Confirming the Suspicion [11144, level 38] <- your earlier visit to this zone
+  ... and Bugs [1258, level 40] <- your earlier visit to this zone
+  The Infernal Orb [1954, level 40, Mage] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

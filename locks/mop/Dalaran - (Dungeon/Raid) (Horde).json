@@ -1,0 +1,18 @@
+{
+  "about": "Step order taken from RestedXP's guide by RxpToLock. RouteBuilder follows it and slots in this zone's other quests. Lines can be moved by hand. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "from RestedXP: 27-31 Northern Stranglethorn, 31-35 Cape of Stranglethorn, 35-40 Western Plaguelands, 40-45 Eastern Plaguelands, 45-48 Badlands, 48-50 Searing Gorge, 50-52 Burning Steppes, 52-55 Swamp of Sorrows, 55-58 Blasted Lands, 59-61 Hellfire Peninsula, 61-63 Zangarmarsh, 64-66 Nagrand, 65-67 Blade's Edge, 67-67 Blade's Edge Turn-ins, 67-68 Netherstorm, 68-71 Howling Fjord, 71-73 Borean Tundra, 72-74 Dragonblight, 73-75 Grizzly Hills, 75-77 Zul'Drak, 77-78 Sholazar Basin, 78-79 The Storm Peaks, 80-82 Mount Hyjal, 82-83 Deepholm, 83-84 Uldum, 84-85 Twilight Highlands, 85-86 The Jade Forest, 86-87 Krasarang Wilds, 86-87 Valley/Krasarang, 86-87 Valley of the Four Winds, 87-88 Kun-Lai Summit, 88-89 Townlong Steppes, 89-90 Dread Wastes Part 1, 89-90 Dread Wastes Part 2, 89-90 Dread Wastes Part 3, 1-6 Valley of Trials, 1-6 Darkspear Isle, 6-10 Durotar, 1-6 Sunstrider Isle, 6-10 Eversong Woods, 1-6 Kezan, 6-11 The Lost Isles, 1-6 Mulgore, 6-10 Mulgore, 1-6 Tirisfal Glades, 10-22 Azshara, 22-27 Ashenvale",
+  "saved": "2026-10-23 15:51",
+  "levels": "RestedXP",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "accept:12521  Accept Where in the World is Hemet Nesingwary? [12521]  (RestedXP: 77-78 Sholazar Basin)",
+        "turnin:12521  TurnIn Where in the World is Hemet Nesingwary? [12521]  (RestedXP: 77-78 Sholazar Basin)",
+        "accept:13419  Accept Preparations for War [13419]  (RestedXP: 78-79 The Storm Peaks)",
+        {"lines":[".goto IcecrownGlacier,87.80,78.07",">>|cRXP_WARN_The first part of Icecrown is being done for a Trinket + Questline for later|r << wotlk",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Aedan|r",".fp The Argent Vanguard >> Get the The Argent Vanguard flight path",".target Aedan Moran"],"from":"RestedXP: 78-79 The Storm Peaks"},
+        "accept:12791 @114:41.59,53.6  Accept The Magical Kingdom of Dalaran [12791]  (RestedXP: 83-84 Uldum)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1123 @@
+Blasted Lands - Horde - part 1 of 8, planned from level 10
+Guide "10-41 Blasted Lands" in group "Zone Routes (Horde)": this part has 26 steps, 20 stops
+Written to guides/mop/Blasted Lands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 10. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 19 new ones slotted in, 0 moved because their prerequisites changed, 114 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 3,751 yd on foot; ends at level 10.0
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 7,098 yd; ends at level 10.0
+  BloodElf (quests that depend on other zones): 4 more tasks; their whole route comes to 7,529 yd; ends at level 10.0
+  Tauren (quests that depend on other zones): 6 more tasks; their whole route comes to 7,964 yd; ends at level 10.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+
+Quests in the guide (19)
+------------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Warchief's Command: Northern Barrens! [28494, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> The Barrens
+  Warchief's Command: Azshara! [28496, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Azshara
+  Warchief's Command: Ghostlands! [28560, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Ghostlands
+
+Brought in from another zone and handed in here - steps show only if you have the quest (12):
+  Ride to Thunder Bluff [6362, level 7, Tauren] <- Mulgore
+  Fly to Silvermoon City [9133, level 7, BloodElf] <- Eversong Woods
+  Journey into Thunder Bluff [24550, level 10, Tauren] <- Mulgore
+  Hero of the Sin'dorei [9328, level 21, BloodElf] <- Ghostlands
+  Allegiance to the Horde [9627, level 21, BloodElf] <- Orgrimmar
+  Friend of the Sin'dorei [9811, level 21, Orc/Undead/Tauren/Troll/Goblin/Pandaren] <- Ghostlands
+  The Black Shield [27258, level 37, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Dustwallow Marsh
+  Call of the Warmatron [28865, level 54] <- Silithus
+  Nethergarde Needs You! [28867, level 54] <- Silithus
+  Onward to the Blasted Lands [27919, level 55] <- Swamp of Sorrows
+  Okrilla and the Blasted Lands [28553, level 55, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Swamp of Sorrows
+  Blasted Lands: The Other Side of the World [28858, level 55, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Winterspring
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Tal the Wind Rider Master [6363, level 7, Tauren] - needs one of Ride to Thunder Bluff [6362]
+  Return to Varg [6364, level 7, Tauren] - needs one of Tal the Wind Rider Master [6363] -> Mulgore
+  Skymistress Gloaming [9134, level 7, BloodElf] - needs one of Fly to Silvermoon City [9133] -> Eversong Woods
+  War Dance [24540, level 10, Tauren] - needs one of Journey into Thunder Bluff [24550]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (103)
+-----------------------------
+These need a higher level than this part ends at:
+  Until Death Do Us Part [264, level 15]: needs level 12; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 10.0
+  Deadmire [1205, level 41]: needs level 35; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Portents of Uldum [2965, level 50]: needs level 45; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Envoy to the Horde [9621, level 21]: needs level 15; this part gets BloodElf characters to about 10.0
+  Envoy to the Horde [9812, level 21]: needs level 15; this part gets Orc/Undead/Tauren/Troll/Pandaren characters to about 10.0
+  Futile Pride [25674, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Ogre Combat [25675, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Heartstrike [25676, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  It's All Mine [25677, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Pick Your Fate [25678, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Into the Mountain [25679, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  That's Not Us [25680, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Some People Just Need Killing [25681, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Mission Complete [25682, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  The Dreadmaul Furnace [25683, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Attune the Bloodstone [25684, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  The First Step [25685, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Blood Ritual [25686, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Not Just Any Body [25687, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  The Altar of Storms [25688, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Time is Short [25689, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  A Bloodmage's Gotta Eat Too [25690, level 55]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  The Charred Granite of the Dark Portal [25691, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  The Vile Blood of Demons [25692, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Enhancing the Stone [25693, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Protecting Our Rear [25694, level 56]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Watching Our Back [25695, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  The Sunveil Excursion [25696, level 57]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  The Amulet of Allistarj [25697, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  The Amulet of Sevine [25698, level 56]: its mobs are level 58; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  The Amulet of Grol [25699, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Loramus Thalipedes Awaits [25700, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  You Are Rakh'likh, Demon [25701, level 57]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Home... Gone... Naga... [25702, level 57]: needs level 55; this part gets you to about 29.6
+  Atrocities [25703, level 57]: needs level 54; this part gets you to about 29.6
+  False Idols [25705, level 57]: needs level 54; this part gets you to about 29.6
+  Neptool's Revenge [25706, level 57]: needs level 55; this part gets you to about 29.6
+  The Future of the Rockpool [25707, level 57]: needs level 55; this part gets you to about 29.6
+  The Demons and the Druid [25717, level 58]: its mobs are level 59; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  How Best to Proceed [25718, level 58]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Demoniac Vessel [25719, level 58]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  The Downfall of Marl Wormthorn [25720, level 59]: its mobs are level 60; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Walk With The Earth Mother [26397, level 12]: needs level 10; this part gets Tauren characters to about 10.0
+  An Audience with Ureda [27277, level 20]: needs level 20; this part gets Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage characters to about 10.0
+  Grimshot's Call [27278, level 20]: needs level 20; this part gets Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter characters to about 10.0
+  The Shattered Hand [27279, level 20]: needs level 20; this part gets Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue characters to about 10.0
+  The Dreamseeker Calls [27280, level 20]: needs level 20; this part gets Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman characters to about 10.0
+  Grezz Ragefist [27281, level 20]: needs level 20; this part gets Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior characters to about 10.0
+  Zevrost's Behest [27282, level 20]: needs level 20; this part gets Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock characters to about 10.0
+  A Journey to Moonglade [27283, level 20]: needs level 20; this part gets Tauren Druid/Troll Druid characters to about 10.0
+  Return to Krog [27292, level 37]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Seek Out Master Pyreanor [27298, level 20]: needs level 20; this part gets BloodElf Paladin characters to about 10.0
+  Follow the Sun [27304, level 20]: needs level 20; this part gets Tauren Paladin/BloodElf Paladin characters to about 10.0
+  The Seer's Call [27331, level 20]: needs level 20; this part gets Tauren Priest characters to about 10.0
+  Seek the Shadow-Walker [27332, level 20]: needs level 20; this part gets Troll Priest characters to about 10.0
+  Dark Cleric Cecille [27334, level 20]: needs level 20; this part gets Undead Priest characters to about 10.0
+  Journey to Orgrimmar [27335, level 20]: needs level 20; this part gets BloodElf Priest characters to about 10.0
+  Seek Brother Silverhallow [28164, level 20]: needs level 20; this part gets Goblin Priest characters to about 10.0
+  Moonglade Calls [28289, level 50]: needs level 50; this part gets Druid characters to about 29.6
+  Meet with Grezz Ragefist [28290, level 50]: needs level 50; this part gets Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior characters to about 29.6
+  Meet with Ormak Grimshot [28297, level 50]: needs level 50; this part gets Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter characters to about 29.6
+  Meet with Gordul [28298, level 50]: needs level 50; this part gets Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue characters to about 29.6
+  Meet with Zevrost [28299, level 50]: needs level 50; this part gets Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock characters to about 29.6
+  Meet with Ureda [28300, level 50]: needs level 50; this part gets Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage characters to about 29.6
+  Meet with Kardris Dreamseeker [28301, level 50]: needs level 50; this part gets Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman characters to about 29.6
+  Meet with Sunwalker Atohmo [28302, level 50]: needs level 50; this part gets Tauren Paladin/BloodElf Paladin characters to about 29.6
+  Meet with Master Pyreanor [28303, level 50]: needs level 50; this part gets BloodElf Paladin characters to about 30.1
+  Meet with Dark Cleric Cecille [28304, level 50]: needs level 50; this part gets Undead Priest characters to about 29.6
+  Meet with Tyelis [28307, level 50]: needs level 50; this part gets BloodElf Priest characters to about 29.6
+  Meet with Seer Liwatha [28308, level 50]: needs level 50; this part gets Tauren Priest characters to about 29.6
+  Meet with Shadow-Walker Zuru [28309, level 50]: needs level 50; this part gets Troll Priest characters to about 29.6
+  Meet with Brother Silverhallow [28323, level 50]: needs level 50; this part gets Goblin Priest characters to about 29.6
+  Warchief's Command: Ashenvale! [28493, level 20]: needs level 19; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 10.0
+  Warchief's Command: Thousand Needles! [28504, level 40]: needs level 39; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Warchief's Command: Tanaris! [28509, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Warchief's Command: Feralas! [28510, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Warchief's Command: Un'Goro Crater! [28526, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Warchief's Command: Silithus! [28527, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Warchief's Command: Stonetalon Mountains! [28532, level 25]: needs level 24; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 10.0
+  Warchief's Command: Felwood! [28542, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Warchief's Command: Winterspring! [28545, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Warchief's Command: Desolace! [28548, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 10.0
+  Warchief's Command: Southern Barrens! [28549, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 10.0
+  Warchief's Command: Dustwallow Marsh! [28554, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Warchief's Command: Hillsbrad Foothills! [28571, level 20]: needs level 19; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 10.0
+  Warchief's Command: Arathi Highlands! [28572, level 25]: needs level 24; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 10.0
+  Warchief's Command: The Hinterlands! [28574, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 10.0
+  Warchief's Command: Western Plaguelands! [28575, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Warchief's Command: Eastern Plaguelands! [28577, level 40]: needs level 39; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Warchief's Command: Badlands! [28580, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Warchief's Command: Searing Gorge! [28581, level 48]: needs level 47; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Warchief's Command: Burning Steppes! [28667, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Warchief's Command: Blasted Lands! [28671, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Warchief's Command: Swamp of Sorrows! [28677, level 52]: needs level 51; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  Warchief's Command: Northern Stranglethorn Vale! [28688, level 25]: needs level 24; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 10.0
+  Warchief's Command: The Cape of Stranglethorn! [28704, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 10.0
+  Warchief's Command: Outland! [28705, level 60]: needs level 58; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 29.6
+  A Summons from Lady Liadrin [64139, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 30.1
+  The Master's Path [64140, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 30.1
+  A Gesture of Commitment [64141, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 30.1
+  A Demonstration of Loyalty [64142, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 30.1
+  True Masters of the Light [64143, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 30.1
+  True Masters of the Light [64144, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 30.1
+
+Left out (294)
+--------------
+not in the game (on Questie's quest blacklist) (258):
+  A Lesson to Learn [27], Aquatic Form [31], Leaders of the Fang [914], Assisting Arch Druid Runetotem [936], Serpentbloom [962], The New Frontier [1000], The New Frontier [1004], The New Frontier [1018], Compendium of the Fallen [1049], Melor Sends Word [1130], Steelsnap [1131], The Sacred Flame [1195], Hamuul Runetotem [1489], Nara Wildmane [1490], Veteran Uzzek [1505], Call of Fire [1523], The Islander [1718], Speak with Ruga [1823], Orm Stonehoof and the Brutal Helm [1840], Chimaeric Horn [1844], Brutal Helm [1845], Speak with Un'thuwa [1883], Speak with Deino [1943], Journey to the Marsh [1947], Return to the Marsh [1953], Report to Anastasia [1959], The Platinum Discs [2440], To Serve Kum'isha [2521], Kum'isha's Endeavors [2522], Snickerfang Jowls [2581], Rage of Ages [2582], A Boar's Vitality [2583], Spirit of the Boar [2584], The Decisive Striker [2585], Salt of the Scorpok [2586], The Basilisk's Bite [2601], Infallible Mind [2602], Vulture's Vigor [2603], Spiritual Domination [2604], Kirith [2721], ... 218 more
+repeatable (12):
+  One Draenei's Junk... [25771], Kum'isha's Endeavors [25772], Pond Predators [29345], The Ring's the Thing [29346], The Race to Restock [29348], Craving Crayfish [29349], Shiny Baubles [29354], Pining for Nuts [29358], "Magic" Mushrooms [29362], Mulgore Spice Bread [29363], Corn Mash [29364], Perfectly Picked Portions [29365]
+above this zone's range of 54-60 (8):
+  Through the Dark Portal [9407], Warchief's Command: Vashj'ir! [27718], Warchief's Command: Mount Hyjal! [27721], Warchief's Command: Deepholm! [27722], Warchief's Command: Uldum! [28557], Warchief's Command: Northrend! [28711], Warchief's Command: Twilight Highlands! [28717], The Zandalari Menace [29157]
+needs a profession (6):
+  Gathering Leather [768], Kodo Hide Bag [769], Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+special category (sort -284) (3):
+  Thunder Bluff [12786], Silvermoon [12788], Hammering It Out [25759]
+needs reputation (3):
+  Get My Results! [32329], What's in the Box? [32330], One Last Grasp [32412]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29388], Guardians of Hyjal: Call of the Ancients [29390]
+special category (sort -23) (1):
+  Hammering It Out [25789]
+dungeon quest (1):
+  Enemies Below [31036]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Blasted Lands - Horde - part 2 of 8, planned from level 13
+Guide "10-41 Blasted Lands" in group "Zone Routes (Horde)": this part has 4 steps, 2 stops
+Written to guides/mop/Blasted Lands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 13. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 1,511 yd on foot; ends at level 13.0
+  Tauren (quests that depend on other zones): 1 more tasks; their whole route comes to 1,511 yd; ends at level 13.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Until Death Do Us Part [264, level 15, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Silverpine Forest
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Walk With The Earth Mother [26397, level 12, Tauren] - needs one of War Dance [24540] -> Orgrimmar
+
+Worth checking in game
+----------------------
+
+Put off to a later part (101)
+-----------------------------
+These need a higher level than this part ends at:
+  Deadmire [1205, level 41]: needs level 35; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Portents of Uldum [2965, level 50]: needs level 45; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Envoy to the Horde [9621, level 21]: needs level 15; this part gets BloodElf characters to about 13.0
+  Envoy to the Horde [9812, level 21]: needs level 15; this part gets Orc/Undead/Tauren/Troll/Pandaren characters to about 13.0
+  Futile Pride [25674, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Ogre Combat [25675, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Heartstrike [25676, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  It's All Mine [25677, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Pick Your Fate [25678, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Into the Mountain [25679, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  That's Not Us [25680, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Some People Just Need Killing [25681, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Mission Complete [25682, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  The Dreadmaul Furnace [25683, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Attune the Bloodstone [25684, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  The First Step [25685, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Blood Ritual [25686, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Not Just Any Body [25687, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  The Altar of Storms [25688, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Time is Short [25689, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  A Bloodmage's Gotta Eat Too [25690, level 55]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  The Charred Granite of the Dark Portal [25691, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  The Vile Blood of Demons [25692, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Enhancing the Stone [25693, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Protecting Our Rear [25694, level 56]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Watching Our Back [25695, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  The Sunveil Excursion [25696, level 57]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  The Amulet of Allistarj [25697, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  The Amulet of Sevine [25698, level 56]: its mobs are level 58; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  The Amulet of Grol [25699, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Loramus Thalipedes Awaits [25700, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  You Are Rakh'likh, Demon [25701, level 57]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Home... Gone... Naga... [25702, level 57]: needs level 55; this part gets you to about 30.3
+  Atrocities [25703, level 57]: needs level 54; this part gets you to about 30.3
+  False Idols [25705, level 57]: needs level 54; this part gets you to about 30.3
+  Neptool's Revenge [25706, level 57]: needs level 55; this part gets you to about 30.3
+  The Future of the Rockpool [25707, level 57]: needs level 55; this part gets you to about 30.3
+  The Demons and the Druid [25717, level 58]: its mobs are level 59; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  How Best to Proceed [25718, level 58]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Demoniac Vessel [25719, level 58]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  The Downfall of Marl Wormthorn [25720, level 59]: its mobs are level 60; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  An Audience with Ureda [27277, level 20]: needs level 20; this part gets Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage characters to about 13.0
+  Grimshot's Call [27278, level 20]: needs level 20; this part gets Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter characters to about 13.0
+  The Shattered Hand [27279, level 20]: needs level 20; this part gets Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue characters to about 13.0
+  The Dreamseeker Calls [27280, level 20]: needs level 20; this part gets Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman characters to about 13.0
+  Grezz Ragefist [27281, level 20]: needs level 20; this part gets Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior characters to about 13.0
+  Zevrost's Behest [27282, level 20]: needs level 20; this part gets Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock characters to about 13.0
+  A Journey to Moonglade [27283, level 20]: needs level 20; this part gets Tauren Druid/Troll Druid characters to about 13.0
+  Return to Krog [27292, level 37]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Seek Out Master Pyreanor [27298, level 20]: needs level 20; this part gets BloodElf Paladin characters to about 13.0
+  Follow the Sun [27304, level 20]: needs level 20; this part gets Tauren Paladin/BloodElf Paladin characters to about 13.0
+  The Seer's Call [27331, level 20]: needs level 20; this part gets Tauren Priest characters to about 13.0
+  Seek the Shadow-Walker [27332, level 20]: needs level 20; this part gets Troll Priest characters to about 13.0
+  Dark Cleric Cecille [27334, level 20]: needs level 20; this part gets Undead Priest characters to about 13.0
+  Journey to Orgrimmar [27335, level 20]: needs level 20; this part gets BloodElf Priest characters to about 13.0
+  Seek Brother Silverhallow [28164, level 20]: needs level 20; this part gets Goblin Priest characters to about 13.0
+  Moonglade Calls [28289, level 50]: needs level 50; this part gets Druid characters to about 30.3
+  Meet with Grezz Ragefist [28290, level 50]: needs level 50; this part gets Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior characters to about 30.3
+  Meet with Ormak Grimshot [28297, level 50]: needs level 50; this part gets Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter characters to about 30.3
+  Meet with Gordul [28298, level 50]: needs level 50; this part gets Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue characters to about 30.3
+  Meet with Zevrost [28299, level 50]: needs level 50; this part gets Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock characters to about 30.3
+  Meet with Ureda [28300, level 50]: needs level 50; this part gets Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage characters to about 30.3
+  Meet with Kardris Dreamseeker [28301, level 50]: needs level 50; this part gets Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman characters to about 30.3
+  Meet with Sunwalker Atohmo [28302, level 50]: needs level 50; this part gets Tauren Paladin/BloodElf Paladin characters to about 30.3
+  Meet with Master Pyreanor [28303, level 50]: needs level 50; this part gets BloodElf Paladin characters to about 30.8
+  Meet with Dark Cleric Cecille [28304, level 50]: needs level 50; this part gets Undead Priest characters to about 30.3
+  Meet with Tyelis [28307, level 50]: needs level 50; this part gets BloodElf Priest characters to about 30.3
+  Meet with Seer Liwatha [28308, level 50]: needs level 50; this part gets Tauren Priest characters to about 30.3
+  Meet with Shadow-Walker Zuru [28309, level 50]: needs level 50; this part gets Troll Priest characters to about 30.3
+  Meet with Brother Silverhallow [28323, level 50]: needs level 50; this part gets Goblin Priest characters to about 30.3
+  Warchief's Command: Ashenvale! [28493, level 20]: needs level 19; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 13.0
+  Warchief's Command: Thousand Needles! [28504, level 40]: needs level 39; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Warchief's Command: Tanaris! [28509, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Warchief's Command: Feralas! [28510, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Warchief's Command: Un'Goro Crater! [28526, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Warchief's Command: Silithus! [28527, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Warchief's Command: Stonetalon Mountains! [28532, level 25]: needs level 24; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 13.0
+  Warchief's Command: Felwood! [28542, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Warchief's Command: Winterspring! [28545, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Warchief's Command: Desolace! [28548, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 13.0
+  Warchief's Command: Southern Barrens! [28549, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 13.0
+  Warchief's Command: Dustwallow Marsh! [28554, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Warchief's Command: Hillsbrad Foothills! [28571, level 20]: needs level 19; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 13.0
+  Warchief's Command: Arathi Highlands! [28572, level 25]: needs level 24; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 13.0
+  Warchief's Command: The Hinterlands! [28574, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 13.0
+  Warchief's Command: Western Plaguelands! [28575, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Warchief's Command: Eastern Plaguelands! [28577, level 40]: needs level 39; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Warchief's Command: Badlands! [28580, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Warchief's Command: Searing Gorge! [28581, level 48]: needs level 47; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Warchief's Command: Burning Steppes! [28667, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Warchief's Command: Blasted Lands! [28671, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Warchief's Command: Swamp of Sorrows! [28677, level 52]: needs level 51; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  Warchief's Command: Northern Stranglethorn Vale! [28688, level 25]: needs level 24; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 13.0
+  Warchief's Command: The Cape of Stranglethorn! [28704, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 13.0
+  Warchief's Command: Outland! [28705, level 60]: needs level 58; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.3
+  A Summons from Lady Liadrin [64139, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 30.8
+  The Master's Path [64140, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 30.8
+  A Gesture of Commitment [64141, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 30.8
+  A Demonstration of Loyalty [64142, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 30.8
+  True Masters of the Light [64143, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 30.8
+  True Masters of the Light [64144, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 30.8
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Blasted Lands - Horde - part 3 of 8, planned from level 20
+Guide "10-41 Blasted Lands" in group "Zone Routes (Horde)": this part has 7 steps, 4 stops
+Written to guides/mop/Blasted Lands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 20. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 2 tasks, 3,600 yd on foot; ends at level 20.0
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 4,225 yd; ends at level 20.0
+  BloodElf (quests that depend on other zones): 1 more tasks; their whole route comes to 4,225 yd; ends at level 20.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Warchief's Command: Ashenvale! [28493, level 20, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> The Barrens
+  Warchief's Command: Hillsbrad Foothills! [28571, level 20, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Hillsbrad Foothills
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Envoy to the Horde [9621, level 21, BloodElf] - needs one of Hero of the Sin'dorei [9328] -> Undercity
+  Envoy to the Horde [9812, level 21, Orc/Undead/Tauren/Troll/Pandaren] - needs one of Friend of the Sin'dorei [9811] -> Undercity
+
+Worth checking in game
+----------------------
+
+Put off to a later part (97)
+----------------------------
+These need a higher level than this part ends at:
+  Deadmire [1205, level 41]: needs level 35; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Portents of Uldum [2965, level 50]: needs level 45; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Futile Pride [25674, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Ogre Combat [25675, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Heartstrike [25676, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  It's All Mine [25677, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Pick Your Fate [25678, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Into the Mountain [25679, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  That's Not Us [25680, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Some People Just Need Killing [25681, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Mission Complete [25682, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  The Dreadmaul Furnace [25683, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Attune the Bloodstone [25684, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  The First Step [25685, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Blood Ritual [25686, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Not Just Any Body [25687, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  The Altar of Storms [25688, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Time is Short [25689, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  A Bloodmage's Gotta Eat Too [25690, level 55]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  The Charred Granite of the Dark Portal [25691, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  The Vile Blood of Demons [25692, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Enhancing the Stone [25693, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Protecting Our Rear [25694, level 56]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Watching Our Back [25695, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  The Sunveil Excursion [25696, level 57]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  The Amulet of Allistarj [25697, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  The Amulet of Sevine [25698, level 56]: its mobs are level 58; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  The Amulet of Grol [25699, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Loramus Thalipedes Awaits [25700, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  You Are Rakh'likh, Demon [25701, level 57]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Home... Gone... Naga... [25702, level 57]: needs level 55; this part gets you to about 32.8
+  Atrocities [25703, level 57]: needs level 54; this part gets you to about 32.8
+  False Idols [25705, level 57]: needs level 54; this part gets you to about 32.8
+  Neptool's Revenge [25706, level 57]: needs level 55; this part gets you to about 32.8
+  The Future of the Rockpool [25707, level 57]: needs level 55; this part gets you to about 32.8
+  The Demons and the Druid [25717, level 58]: its mobs are level 59; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  How Best to Proceed [25718, level 58]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Demoniac Vessel [25719, level 58]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  The Downfall of Marl Wormthorn [25720, level 59]: its mobs are level 60; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  An Audience with Ureda [27277, level 20]: needs level 20; this part gets Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage characters to about 20.0
+  Grimshot's Call [27278, level 20]: needs level 20; this part gets Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter characters to about 20.0
+  The Shattered Hand [27279, level 20]: needs level 20; this part gets Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue characters to about 20.0
+  The Dreamseeker Calls [27280, level 20]: needs level 20; this part gets Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman characters to about 20.0
+  Grezz Ragefist [27281, level 20]: needs level 20; this part gets Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior characters to about 20.0
+  Zevrost's Behest [27282, level 20]: needs level 20; this part gets Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock characters to about 20.0
+  A Journey to Moonglade [27283, level 20]: needs level 20; this part gets Tauren Druid/Troll Druid characters to about 20.0
+  Return to Krog [27292, level 37]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Seek Out Master Pyreanor [27298, level 20]: needs level 20; this part gets BloodElf Paladin characters to about 20.0
+  Follow the Sun [27304, level 20]: needs level 20; this part gets Tauren Paladin/BloodElf Paladin characters to about 20.0
+  The Seer's Call [27331, level 20]: needs level 20; this part gets Tauren Priest characters to about 20.0
+  Seek the Shadow-Walker [27332, level 20]: needs level 20; this part gets Troll Priest characters to about 20.0
+  Dark Cleric Cecille [27334, level 20]: needs level 20; this part gets Undead Priest characters to about 20.0
+  Journey to Orgrimmar [27335, level 20]: needs level 20; this part gets BloodElf Priest characters to about 20.0
+  Seek Brother Silverhallow [28164, level 20]: needs level 20; this part gets Goblin Priest characters to about 20.0
+  Moonglade Calls [28289, level 50]: needs level 50; this part gets Druid characters to about 32.8
+  Meet with Grezz Ragefist [28290, level 50]: needs level 50; this part gets Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior characters to about 32.8
+  Meet with Ormak Grimshot [28297, level 50]: needs level 50; this part gets Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter characters to about 32.8
+  Meet with Gordul [28298, level 50]: needs level 50; this part gets Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue characters to about 32.8
+  Meet with Zevrost [28299, level 50]: needs level 50; this part gets Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock characters to about 32.8
+  Meet with Ureda [28300, level 50]: needs level 50; this part gets Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage characters to about 32.8
+  Meet with Kardris Dreamseeker [28301, level 50]: needs level 50; this part gets Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman characters to about 32.8
+  Meet with Sunwalker Atohmo [28302, level 50]: needs level 50; this part gets Tauren Paladin/BloodElf Paladin characters to about 32.8
+  Meet with Master Pyreanor [28303, level 50]: needs level 50; this part gets BloodElf Paladin characters to about 33.2
+  Meet with Dark Cleric Cecille [28304, level 50]: needs level 50; this part gets Undead Priest characters to about 32.8
+  Meet with Tyelis [28307, level 50]: needs level 50; this part gets BloodElf Priest characters to about 32.8
+  Meet with Seer Liwatha [28308, level 50]: needs level 50; this part gets Tauren Priest characters to about 32.8
+  Meet with Shadow-Walker Zuru [28309, level 50]: needs level 50; this part gets Troll Priest characters to about 32.8
+  Meet with Brother Silverhallow [28323, level 50]: needs level 50; this part gets Goblin Priest characters to about 32.8
+  Warchief's Command: Thousand Needles! [28504, level 40]: needs level 39; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Warchief's Command: Tanaris! [28509, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Warchief's Command: Feralas! [28510, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Warchief's Command: Un'Goro Crater! [28526, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Warchief's Command: Silithus! [28527, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Warchief's Command: Stonetalon Mountains! [28532, level 25]: needs level 24; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 20.0
+  Warchief's Command: Felwood! [28542, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Warchief's Command: Winterspring! [28545, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Warchief's Command: Desolace! [28548, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 20.0
+  Warchief's Command: Southern Barrens! [28549, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 20.0
+  Warchief's Command: Dustwallow Marsh! [28554, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Warchief's Command: Arathi Highlands! [28572, level 25]: needs level 24; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 20.0
+  Warchief's Command: The Hinterlands! [28574, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 20.0
+  Warchief's Command: Western Plaguelands! [28575, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Warchief's Command: Eastern Plaguelands! [28577, level 40]: needs level 39; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Warchief's Command: Badlands! [28580, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Warchief's Command: Searing Gorge! [28581, level 48]: needs level 47; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Warchief's Command: Burning Steppes! [28667, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Warchief's Command: Blasted Lands! [28671, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Warchief's Command: Swamp of Sorrows! [28677, level 52]: needs level 51; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  Warchief's Command: Northern Stranglethorn Vale! [28688, level 25]: needs level 24; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 20.0
+  Warchief's Command: The Cape of Stranglethorn! [28704, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 20.0
+  Warchief's Command: Outland! [28705, level 60]: needs level 58; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 32.8
+  A Summons from Lady Liadrin [64139, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 33.2
+  The Master's Path [64140, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 33.2
+  A Gesture of Commitment [64141, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 33.2
+  A Demonstration of Loyalty [64142, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 33.2
+  True Masters of the Light [64143, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 33.2
+  True Masters of the Light [64144, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 33.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Blasted Lands - Horde - part 4 of 8, planned from level 23
+Guide "10-41 Blasted Lands" in group "Zone Routes (Horde)": this part has 17 steps, 9 stops
+Written to guides/mop/Blasted Lands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (BloodElf Paladin), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 23. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 14 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior: 1 tasks, 2,424 yd on foot; ends at level 23.0
+  Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter: 1 more tasks; their whole route comes to 2,437 yd; ends at level 23.0
+  Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue: 1 more tasks; their whole route comes to 3,600 yd; ends at level 23.0
+  Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage: 1 more tasks; their whole route comes to 0 yd; ends at level 23.0
+  Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock: 1 more tasks; their whole route comes to 3,600 yd; ends at level 23.0
+  Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman: 1 more tasks; their whole route comes to 3,600 yd; ends at level 23.0
+  Tauren Druid/Troll Druid: 1 more tasks; their whole route comes to 2,201 yd; ends at level 23.0
+  Tauren Paladin/BloodElf Paladin: 1 more tasks; their whole route comes to 3,600 yd; ends at level 23.0
+  Undead Priest: 1 more tasks; their whole route comes to 226 yd; ends at level 23.0
+  Tauren Priest: 1 more tasks; their whole route comes to 226 yd; ends at level 23.0
+  Troll Priest: 1 more tasks; their whole route comes to 226 yd; ends at level 23.0
+  BloodElf Paladin: 1 more tasks; their whole route comes to 3,600 yd; ends at level 23.0
+  BloodElf Priest: 1 more tasks; their whole route comes to 226 yd; ends at level 23.0
+  Goblin Priest: 1 more tasks; their whole route comes to 226 yd; ends at level 23.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (14)
+------------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (14):
+  An Audience with Ureda [27277, level 20, Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage] -> Orgrimmar
+  Grimshot's Call [27278, level 20, Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter] -> Orgrimmar
+  The Shattered Hand [27279, level 20, Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue] -> Orgrimmar
+  The Dreamseeker Calls [27280, level 20, Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman] -> Orgrimmar
+  Grezz Ragefist [27281, level 20, Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior] -> Orgrimmar
+  Zevrost's Behest [27282, level 20, Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock] -> Orgrimmar
+  A Journey to Moonglade [27283, level 20, Tauren Druid/Troll Druid] -> Moonglade
+  Seek Out Master Pyreanor [27298, level 20, BloodElf Paladin] -> Orgrimmar
+  Follow the Sun [27304, level 20, Tauren Paladin/BloodElf Paladin] -> Orgrimmar
+  The Seer's Call [27331, level 20, Tauren Priest] -> Orgrimmar
+  Seek the Shadow-Walker [27332, level 20, Troll Priest] -> Orgrimmar
+  Dark Cleric Cecille [27334, level 20, Undead Priest] -> Orgrimmar
+  Journey to Orgrimmar [27335, level 20, BloodElf Priest] -> Orgrimmar
+  Seek Brother Silverhallow [28164, level 20, Goblin Priest] -> Orgrimmar
+
+Worth checking in game
+----------------------
+
+Put off to a later part (83)
+----------------------------
+These need a higher level than this part ends at:
+  Deadmire [1205, level 41]: needs level 35; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Portents of Uldum [2965, level 50]: needs level 45; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Futile Pride [25674, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Ogre Combat [25675, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Heartstrike [25676, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  It's All Mine [25677, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Pick Your Fate [25678, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Into the Mountain [25679, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  That's Not Us [25680, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Some People Just Need Killing [25681, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Mission Complete [25682, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  The Dreadmaul Furnace [25683, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Attune the Bloodstone [25684, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  The First Step [25685, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Blood Ritual [25686, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Not Just Any Body [25687, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  The Altar of Storms [25688, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Time is Short [25689, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  A Bloodmage's Gotta Eat Too [25690, level 55]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  The Charred Granite of the Dark Portal [25691, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  The Vile Blood of Demons [25692, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Enhancing the Stone [25693, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Protecting Our Rear [25694, level 56]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Watching Our Back [25695, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  The Sunveil Excursion [25696, level 57]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  The Amulet of Allistarj [25697, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  The Amulet of Sevine [25698, level 56]: its mobs are level 58; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  The Amulet of Grol [25699, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Loramus Thalipedes Awaits [25700, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  You Are Rakh'likh, Demon [25701, level 57]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Home... Gone... Naga... [25702, level 57]: needs level 55; this part gets you to about 34.2
+  Atrocities [25703, level 57]: needs level 54; this part gets you to about 34.2
+  False Idols [25705, level 57]: needs level 54; this part gets you to about 34.2
+  Neptool's Revenge [25706, level 57]: needs level 55; this part gets you to about 34.2
+  The Future of the Rockpool [25707, level 57]: needs level 55; this part gets you to about 34.2
+  The Demons and the Druid [25717, level 58]: its mobs are level 59; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  How Best to Proceed [25718, level 58]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Demoniac Vessel [25719, level 58]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  The Downfall of Marl Wormthorn [25720, level 59]: its mobs are level 60; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Return to Krog [27292, level 37]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Moonglade Calls [28289, level 50]: needs level 50; this part gets Druid characters to about 34.2
+  Meet with Grezz Ragefist [28290, level 50]: needs level 50; this part gets Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior characters to about 34.2
+  Meet with Ormak Grimshot [28297, level 50]: needs level 50; this part gets Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter characters to about 34.2
+  Meet with Gordul [28298, level 50]: needs level 50; this part gets Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue characters to about 34.2
+  Meet with Zevrost [28299, level 50]: needs level 50; this part gets Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock characters to about 34.2
+  Meet with Ureda [28300, level 50]: needs level 50; this part gets Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage characters to about 34.2
+  Meet with Kardris Dreamseeker [28301, level 50]: needs level 50; this part gets Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman characters to about 34.2
+  Meet with Sunwalker Atohmo [28302, level 50]: needs level 50; this part gets Tauren Paladin/BloodElf Paladin characters to about 34.2
+  Meet with Master Pyreanor [28303, level 50]: needs level 50; this part gets BloodElf Paladin characters to about 34.6
+  Meet with Dark Cleric Cecille [28304, level 50]: needs level 50; this part gets Undead Priest characters to about 34.2
+  Meet with Tyelis [28307, level 50]: needs level 50; this part gets BloodElf Priest characters to about 34.2
+  Meet with Seer Liwatha [28308, level 50]: needs level 50; this part gets Tauren Priest characters to about 34.2
+  Meet with Shadow-Walker Zuru [28309, level 50]: needs level 50; this part gets Troll Priest characters to about 34.2
+  Meet with Brother Silverhallow [28323, level 50]: needs level 50; this part gets Goblin Priest characters to about 34.2
+  Warchief's Command: Thousand Needles! [28504, level 40]: needs level 39; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Warchief's Command: Tanaris! [28509, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Warchief's Command: Feralas! [28510, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Warchief's Command: Un'Goro Crater! [28526, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Warchief's Command: Silithus! [28527, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Warchief's Command: Stonetalon Mountains! [28532, level 25]: needs level 24; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 23.0
+  Warchief's Command: Felwood! [28542, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Warchief's Command: Winterspring! [28545, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Warchief's Command: Desolace! [28548, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 23.0
+  Warchief's Command: Southern Barrens! [28549, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 23.0
+  Warchief's Command: Dustwallow Marsh! [28554, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Warchief's Command: Arathi Highlands! [28572, level 25]: needs level 24; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 23.0
+  Warchief's Command: The Hinterlands! [28574, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 23.0
+  Warchief's Command: Western Plaguelands! [28575, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Warchief's Command: Eastern Plaguelands! [28577, level 40]: needs level 39; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Warchief's Command: Badlands! [28580, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Warchief's Command: Searing Gorge! [28581, level 48]: needs level 47; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Warchief's Command: Burning Steppes! [28667, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Warchief's Command: Blasted Lands! [28671, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Warchief's Command: Swamp of Sorrows! [28677, level 52]: needs level 51; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  Warchief's Command: Northern Stranglethorn Vale! [28688, level 25]: needs level 24; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 23.0
+  Warchief's Command: The Cape of Stranglethorn! [28704, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 23.0
+  Warchief's Command: Outland! [28705, level 60]: needs level 58; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 34.2
+  A Summons from Lady Liadrin [64139, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 34.6
+  The Master's Path [64140, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 34.6
+  A Gesture of Commitment [64141, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 34.6
+  A Demonstration of Loyalty [64142, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 34.6
+  True Masters of the Light [64143, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 34.6
+  True Masters of the Light [64144, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 34.6
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Blasted Lands - Horde - part 5 of 8, planned from level 26
+Guide "10-41 Blasted Lands" in group "Zone Routes (Horde)": this part has 5 steps, 2 stops
+Written to guides/mop/Blasted Lands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 26. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 3,600 yd on foot; ends at level 26.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (3)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Warchief's Command: Stonetalon Mountains! [28532, level 25, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Ashenvale
+  Warchief's Command: Arathi Highlands! [28572, level 25, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Arathi Highlands
+  Warchief's Command: Northern Stranglethorn Vale! [28688, level 25, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Northern Stranglethorn
+
+Worth checking in game
+----------------------
+
+Put off to a later part (80)
+----------------------------
+These need a higher level than this part ends at:
+  Deadmire [1205, level 41]: needs level 35; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 26.0
+  Portents of Uldum [2965, level 50]: needs level 45; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Futile Pride [25674, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Ogre Combat [25675, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Heartstrike [25676, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  It's All Mine [25677, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Pick Your Fate [25678, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Into the Mountain [25679, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  That's Not Us [25680, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Some People Just Need Killing [25681, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Mission Complete [25682, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  The Dreadmaul Furnace [25683, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Attune the Bloodstone [25684, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  The First Step [25685, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Blood Ritual [25686, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Not Just Any Body [25687, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  The Altar of Storms [25688, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Time is Short [25689, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  A Bloodmage's Gotta Eat Too [25690, level 55]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  The Charred Granite of the Dark Portal [25691, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  The Vile Blood of Demons [25692, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Enhancing the Stone [25693, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Protecting Our Rear [25694, level 56]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Watching Our Back [25695, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  The Sunveil Excursion [25696, level 57]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  The Amulet of Allistarj [25697, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  The Amulet of Sevine [25698, level 56]: its mobs are level 58; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  The Amulet of Grol [25699, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Loramus Thalipedes Awaits [25700, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  You Are Rakh'likh, Demon [25701, level 57]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Home... Gone... Naga... [25702, level 57]: needs level 55; this part gets you to about 35.7
+  Atrocities [25703, level 57]: needs level 54; this part gets you to about 35.7
+  False Idols [25705, level 57]: needs level 54; this part gets you to about 35.7
+  Neptool's Revenge [25706, level 57]: needs level 55; this part gets you to about 35.7
+  The Future of the Rockpool [25707, level 57]: needs level 55; this part gets you to about 35.7
+  The Demons and the Druid [25717, level 58]: its mobs are level 59; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  How Best to Proceed [25718, level 58]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Demoniac Vessel [25719, level 58]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  The Downfall of Marl Wormthorn [25720, level 59]: its mobs are level 60; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Return to Krog [27292, level 37]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 26.0
+  Moonglade Calls [28289, level 50]: needs level 50; this part gets Druid characters to about 35.7
+  Meet with Grezz Ragefist [28290, level 50]: needs level 50; this part gets Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior characters to about 35.7
+  Meet with Ormak Grimshot [28297, level 50]: needs level 50; this part gets Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter characters to about 35.7
+  Meet with Gordul [28298, level 50]: needs level 50; this part gets Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue characters to about 35.7
+  Meet with Zevrost [28299, level 50]: needs level 50; this part gets Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock characters to about 35.7
+  Meet with Ureda [28300, level 50]: needs level 50; this part gets Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage characters to about 35.7
+  Meet with Kardris Dreamseeker [28301, level 50]: needs level 50; this part gets Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman characters to about 35.7
+  Meet with Sunwalker Atohmo [28302, level 50]: needs level 50; this part gets Tauren Paladin/BloodElf Paladin characters to about 35.7
+  Meet with Master Pyreanor [28303, level 50]: needs level 50; this part gets BloodElf Paladin characters to about 36.1
+  Meet with Dark Cleric Cecille [28304, level 50]: needs level 50; this part gets Undead Priest characters to about 35.7
+  Meet with Tyelis [28307, level 50]: needs level 50; this part gets BloodElf Priest characters to about 35.7
+  Meet with Seer Liwatha [28308, level 50]: needs level 50; this part gets Tauren Priest characters to about 35.7
+  Meet with Shadow-Walker Zuru [28309, level 50]: needs level 50; this part gets Troll Priest characters to about 35.7
+  Meet with Brother Silverhallow [28323, level 50]: needs level 50; this part gets Goblin Priest characters to about 35.7
+  Warchief's Command: Thousand Needles! [28504, level 40]: needs level 39; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Warchief's Command: Tanaris! [28509, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Warchief's Command: Feralas! [28510, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 26.0
+  Warchief's Command: Un'Goro Crater! [28526, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Warchief's Command: Silithus! [28527, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Warchief's Command: Felwood! [28542, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Warchief's Command: Winterspring! [28545, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Warchief's Command: Desolace! [28548, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 26.0
+  Warchief's Command: Southern Barrens! [28549, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 26.0
+  Warchief's Command: Dustwallow Marsh! [28554, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 26.0
+  Warchief's Command: The Hinterlands! [28574, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 26.0
+  Warchief's Command: Western Plaguelands! [28575, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 26.0
+  Warchief's Command: Eastern Plaguelands! [28577, level 40]: needs level 39; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Warchief's Command: Badlands! [28580, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Warchief's Command: Searing Gorge! [28581, level 48]: needs level 47; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Warchief's Command: Burning Steppes! [28667, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Warchief's Command: Blasted Lands! [28671, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Warchief's Command: Swamp of Sorrows! [28677, level 52]: needs level 51; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  Warchief's Command: The Cape of Stranglethorn! [28704, level 30]: needs level 29; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 26.0
+  Warchief's Command: Outland! [28705, level 60]: needs level 58; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.7
+  A Summons from Lady Liadrin [64139, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 36.1
+  The Master's Path [64140, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 36.1
+  A Gesture of Commitment [64141, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 36.1
+  A Demonstration of Loyalty [64142, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 36.1
+  True Masters of the Light [64143, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 36.1
+  True Masters of the Light [64144, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 36.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Blasted Lands - Horde - part 6 of 8, planned from level 30
+Guide "10-41 Blasted Lands" in group "Zone Routes (Horde)": this part has 5 steps, 2 stops
+Written to guides/mop/Blasted Lands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 30. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 4 tasks, 3,600 yd on foot; ends at level 30.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (4):
+  Warchief's Command: Desolace! [28548, level 30, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Desolace
+  Warchief's Command: Southern Barrens! [28549, level 30, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Southern Barrens
+  Warchief's Command: The Hinterlands! [28574, level 30, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> The Hinterlands
+  Warchief's Command: The Cape of Stranglethorn! [28704, level 30, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> The Cape of Stranglethorn
+
+Worth checking in game
+----------------------
+
+Put off to a later part (76)
+----------------------------
+These need a higher level than this part ends at:
+  Deadmire [1205, level 41]: needs level 35; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.0
+  Portents of Uldum [2965, level 50]: needs level 45; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Futile Pride [25674, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Ogre Combat [25675, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Heartstrike [25676, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  It's All Mine [25677, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Pick Your Fate [25678, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Into the Mountain [25679, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  That's Not Us [25680, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Some People Just Need Killing [25681, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Mission Complete [25682, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  The Dreadmaul Furnace [25683, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Attune the Bloodstone [25684, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  The First Step [25685, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Blood Ritual [25686, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Not Just Any Body [25687, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  The Altar of Storms [25688, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Time is Short [25689, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  A Bloodmage's Gotta Eat Too [25690, level 55]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  The Charred Granite of the Dark Portal [25691, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  The Vile Blood of Demons [25692, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Enhancing the Stone [25693, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Protecting Our Rear [25694, level 56]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Watching Our Back [25695, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  The Sunveil Excursion [25696, level 57]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  The Amulet of Allistarj [25697, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  The Amulet of Sevine [25698, level 56]: its mobs are level 58; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  The Amulet of Grol [25699, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Loramus Thalipedes Awaits [25700, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  You Are Rakh'likh, Demon [25701, level 57]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Home... Gone... Naga... [25702, level 57]: needs level 55; this part gets you to about 37.9
+  Atrocities [25703, level 57]: needs level 54; this part gets you to about 37.9
+  False Idols [25705, level 57]: needs level 54; this part gets you to about 37.9
+  Neptool's Revenge [25706, level 57]: needs level 55; this part gets you to about 37.9
+  The Future of the Rockpool [25707, level 57]: needs level 55; this part gets you to about 37.9
+  The Demons and the Druid [25717, level 58]: its mobs are level 59; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  How Best to Proceed [25718, level 58]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Demoniac Vessel [25719, level 58]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  The Downfall of Marl Wormthorn [25720, level 59]: its mobs are level 60; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Return to Krog [27292, level 37]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.0
+  Moonglade Calls [28289, level 50]: needs level 50; this part gets Druid characters to about 37.9
+  Meet with Grezz Ragefist [28290, level 50]: needs level 50; this part gets Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior characters to about 37.9
+  Meet with Ormak Grimshot [28297, level 50]: needs level 50; this part gets Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter characters to about 37.9
+  Meet with Gordul [28298, level 50]: needs level 50; this part gets Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue characters to about 37.9
+  Meet with Zevrost [28299, level 50]: needs level 50; this part gets Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock characters to about 37.9
+  Meet with Ureda [28300, level 50]: needs level 50; this part gets Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage characters to about 37.9
+  Meet with Kardris Dreamseeker [28301, level 50]: needs level 50; this part gets Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman characters to about 37.9
+  Meet with Sunwalker Atohmo [28302, level 50]: needs level 50; this part gets Tauren Paladin/BloodElf Paladin characters to about 37.9
+  Meet with Master Pyreanor [28303, level 50]: needs level 50; this part gets BloodElf Paladin characters to about 38.3
+  Meet with Dark Cleric Cecille [28304, level 50]: needs level 50; this part gets Undead Priest characters to about 37.9
+  Meet with Tyelis [28307, level 50]: needs level 50; this part gets BloodElf Priest characters to about 37.9
+  Meet with Seer Liwatha [28308, level 50]: needs level 50; this part gets Tauren Priest characters to about 37.9
+  Meet with Shadow-Walker Zuru [28309, level 50]: needs level 50; this part gets Troll Priest characters to about 37.9
+  Meet with Brother Silverhallow [28323, level 50]: needs level 50; this part gets Goblin Priest characters to about 37.9
+  Warchief's Command: Thousand Needles! [28504, level 40]: needs level 39; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Warchief's Command: Tanaris! [28509, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Warchief's Command: Feralas! [28510, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.0
+  Warchief's Command: Un'Goro Crater! [28526, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Warchief's Command: Silithus! [28527, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Warchief's Command: Felwood! [28542, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Warchief's Command: Winterspring! [28545, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Warchief's Command: Dustwallow Marsh! [28554, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.0
+  Warchief's Command: Western Plaguelands! [28575, level 35]: needs level 34; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 30.0
+  Warchief's Command: Eastern Plaguelands! [28577, level 40]: needs level 39; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Warchief's Command: Badlands! [28580, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Warchief's Command: Searing Gorge! [28581, level 48]: needs level 47; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Warchief's Command: Burning Steppes! [28667, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Warchief's Command: Blasted Lands! [28671, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Warchief's Command: Swamp of Sorrows! [28677, level 52]: needs level 51; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  Warchief's Command: Outland! [28705, level 60]: needs level 58; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 37.9
+  A Summons from Lady Liadrin [64139, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 38.3
+  The Master's Path [64140, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 38.3
+  A Gesture of Commitment [64141, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 38.3
+  A Demonstration of Loyalty [64142, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 38.3
+  True Masters of the Light [64143, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 38.3
+  True Masters of the Light [64144, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 38.3
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Blasted Lands - Horde - part 7 of 8, planned from level 35
+Guide "10-41 Blasted Lands" in group "Zone Routes (Horde)": this part has 6 steps, 3 stops
+Written to guides/mop/Blasted Lands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 35. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 3,600 yd on foot; ends at level 35.0
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 4,374 yd; ends at level 35.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Warchief's Command: Feralas! [28510, level 35, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Feralas
+  Warchief's Command: Dustwallow Marsh! [28554, level 35, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Dustwallow Marsh
+  Warchief's Command: Western Plaguelands! [28575, level 35, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Western Plaguelands
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Return to Krog [27292, level 37, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Black Shield [27258] -> Dustwallow Marsh
+
+Worth checking in game
+----------------------
+
+Put off to a later part (72)
+----------------------------
+These need a higher level than this part ends at:
+  Deadmire [1205, level 41]: needs level 35; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.0
+  Portents of Uldum [2965, level 50]: needs level 45; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Futile Pride [25674, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Ogre Combat [25675, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Heartstrike [25676, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  It's All Mine [25677, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Pick Your Fate [25678, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Into the Mountain [25679, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  That's Not Us [25680, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Some People Just Need Killing [25681, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Mission Complete [25682, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  The Dreadmaul Furnace [25683, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Attune the Bloodstone [25684, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  The First Step [25685, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Blood Ritual [25686, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Not Just Any Body [25687, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  The Altar of Storms [25688, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Time is Short [25689, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  A Bloodmage's Gotta Eat Too [25690, level 55]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  The Charred Granite of the Dark Portal [25691, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  The Vile Blood of Demons [25692, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Enhancing the Stone [25693, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Protecting Our Rear [25694, level 56]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Watching Our Back [25695, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  The Sunveil Excursion [25696, level 57]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  The Amulet of Allistarj [25697, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  The Amulet of Sevine [25698, level 56]: its mobs are level 58; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  The Amulet of Grol [25699, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Loramus Thalipedes Awaits [25700, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  You Are Rakh'likh, Demon [25701, level 57]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Home... Gone... Naga... [25702, level 57]: needs level 55; this part gets you to about 40.9
+  Atrocities [25703, level 57]: needs level 54; this part gets you to about 40.9
+  False Idols [25705, level 57]: needs level 54; this part gets you to about 40.9
+  Neptool's Revenge [25706, level 57]: needs level 55; this part gets you to about 40.9
+  The Future of the Rockpool [25707, level 57]: needs level 55; this part gets you to about 40.9
+  The Demons and the Druid [25717, level 58]: its mobs are level 59; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  How Best to Proceed [25718, level 58]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Demoniac Vessel [25719, level 58]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  The Downfall of Marl Wormthorn [25720, level 59]: its mobs are level 60; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Moonglade Calls [28289, level 50]: needs level 50; this part gets Druid characters to about 40.9
+  Meet with Grezz Ragefist [28290, level 50]: needs level 50; this part gets Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior characters to about 40.9
+  Meet with Ormak Grimshot [28297, level 50]: needs level 50; this part gets Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter characters to about 40.9
+  Meet with Gordul [28298, level 50]: needs level 50; this part gets Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue characters to about 40.9
+  Meet with Zevrost [28299, level 50]: needs level 50; this part gets Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock characters to about 40.9
+  Meet with Ureda [28300, level 50]: needs level 50; this part gets Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage characters to about 40.9
+  Meet with Kardris Dreamseeker [28301, level 50]: needs level 50; this part gets Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman characters to about 40.9
+  Meet with Sunwalker Atohmo [28302, level 50]: needs level 50; this part gets Tauren Paladin/BloodElf Paladin characters to about 40.9
+  Meet with Master Pyreanor [28303, level 50]: needs level 50; this part gets BloodElf Paladin characters to about 41.1
+  Meet with Dark Cleric Cecille [28304, level 50]: needs level 50; this part gets Undead Priest characters to about 40.9
+  Meet with Tyelis [28307, level 50]: needs level 50; this part gets BloodElf Priest characters to about 40.9
+  Meet with Seer Liwatha [28308, level 50]: needs level 50; this part gets Tauren Priest characters to about 40.9
+  Meet with Shadow-Walker Zuru [28309, level 50]: needs level 50; this part gets Troll Priest characters to about 40.9
+  Meet with Brother Silverhallow [28323, level 50]: needs level 50; this part gets Goblin Priest characters to about 40.9
+  Warchief's Command: Thousand Needles! [28504, level 40]: needs level 39; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.0
+  Warchief's Command: Tanaris! [28509, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Warchief's Command: Un'Goro Crater! [28526, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Warchief's Command: Silithus! [28527, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Warchief's Command: Felwood! [28542, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Warchief's Command: Winterspring! [28545, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Warchief's Command: Eastern Plaguelands! [28577, level 40]: needs level 39; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 35.0
+  Warchief's Command: Badlands! [28580, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Warchief's Command: Searing Gorge! [28581, level 48]: needs level 47; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Warchief's Command: Burning Steppes! [28667, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Warchief's Command: Blasted Lands! [28671, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Warchief's Command: Swamp of Sorrows! [28677, level 52]: needs level 51; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  Warchief's Command: Outland! [28705, level 60]: needs level 58; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.9
+  A Summons from Lady Liadrin [64139, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 41.1
+  The Master's Path [64140, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 41.1
+  A Gesture of Commitment [64141, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 41.1
+  A Demonstration of Loyalty [64142, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 41.1
+  True Masters of the Light [64143, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 41.1
+  True Masters of the Light [64144, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 41.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Blasted Lands - Horde - part 8 of 8, planned from level 38
+Guide "10-41 Blasted Lands" in group "Zone Routes (Horde)": this part has 3 steps, 2 stops
+Written to guides/mop/Blasted Lands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 38. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 38.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (1)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Hand-in step only shows once complete (1):
+  Deadmire [1205, level 41, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Deadmire's Tooth (1) (Dustwallow Marsh)
+
+Worth checking in game
+----------------------
+
+Not planned (71)
+----------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Portents of Uldum [2965, level 50]: needs level 45; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Futile Pride [25674, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Ogre Combat [25675, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Heartstrike [25676, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  It's All Mine [25677, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Pick Your Fate [25678, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Into the Mountain [25679, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  That's Not Us [25680, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Some People Just Need Killing [25681, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Mission Complete [25682, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  The Dreadmaul Furnace [25683, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Attune the Bloodstone [25684, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  The First Step [25685, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Blood Ritual [25686, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Not Just Any Body [25687, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  The Altar of Storms [25688, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Time is Short [25689, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  A Bloodmage's Gotta Eat Too [25690, level 55]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  The Charred Granite of the Dark Portal [25691, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  The Vile Blood of Demons [25692, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Enhancing the Stone [25693, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Protecting Our Rear [25694, level 56]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Watching Our Back [25695, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  The Sunveil Excursion [25696, level 57]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  The Amulet of Allistarj [25697, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  The Amulet of Sevine [25698, level 56]: its mobs are level 58; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  The Amulet of Grol [25699, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Loramus Thalipedes Awaits [25700, level 56]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  You Are Rakh'likh, Demon [25701, level 57]: its mobs are level 57; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Home... Gone... Naga... [25702, level 57]: needs level 55; this part gets you to about 42.7
+  Atrocities [25703, level 57]: needs level 54; this part gets you to about 42.7
+  False Idols [25705, level 57]: needs level 54; this part gets you to about 42.7
+  Neptool's Revenge [25706, level 57]: needs level 55; this part gets you to about 42.7
+  The Future of the Rockpool [25707, level 57]: needs level 55; this part gets you to about 42.7
+  The Demons and the Druid [25717, level 58]: its mobs are level 59; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  How Best to Proceed [25718, level 58]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Demoniac Vessel [25719, level 58]: needs level 55; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  The Downfall of Marl Wormthorn [25720, level 59]: its mobs are level 60; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Moonglade Calls [28289, level 50]: needs level 50; this part gets Druid characters to about 42.7
+  Meet with Grezz Ragefist [28290, level 50]: needs level 50; this part gets Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior characters to about 42.7
+  Meet with Ormak Grimshot [28297, level 50]: needs level 50; this part gets Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter characters to about 42.7
+  Meet with Gordul [28298, level 50]: needs level 50; this part gets Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue characters to about 42.7
+  Meet with Zevrost [28299, level 50]: needs level 50; this part gets Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock characters to about 42.7
+  Meet with Ureda [28300, level 50]: needs level 50; this part gets Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage characters to about 42.7
+  Meet with Kardris Dreamseeker [28301, level 50]: needs level 50; this part gets Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman characters to about 42.7
+  Meet with Sunwalker Atohmo [28302, level 50]: needs level 50; this part gets Tauren Paladin/BloodElf Paladin characters to about 42.7
+  Meet with Master Pyreanor [28303, level 50]: needs level 50; this part gets BloodElf Paladin characters to about 42.9
+  Meet with Dark Cleric Cecille [28304, level 50]: needs level 50; this part gets Undead Priest characters to about 42.7
+  Meet with Tyelis [28307, level 50]: needs level 50; this part gets BloodElf Priest characters to about 42.7
+  Meet with Seer Liwatha [28308, level 50]: needs level 50; this part gets Tauren Priest characters to about 42.7
+  Meet with Shadow-Walker Zuru [28309, level 50]: needs level 50; this part gets Troll Priest characters to about 42.7
+  Meet with Brother Silverhallow [28323, level 50]: needs level 50; this part gets Goblin Priest characters to about 42.7
+  Warchief's Command: Thousand Needles! [28504, level 40]: needs level 39; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 38.0
+  Warchief's Command: Tanaris! [28509, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Warchief's Command: Un'Goro Crater! [28526, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Warchief's Command: Silithus! [28527, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Warchief's Command: Felwood! [28542, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Warchief's Command: Winterspring! [28545, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Warchief's Command: Eastern Plaguelands! [28577, level 40]: needs level 39; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 38.0
+  Warchief's Command: Badlands! [28580, level 45]: needs level 44; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Warchief's Command: Searing Gorge! [28581, level 48]: needs level 47; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Warchief's Command: Burning Steppes! [28667, level 50]: needs level 49; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Warchief's Command: Blasted Lands! [28671, level 55]: needs level 54; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Warchief's Command: Swamp of Sorrows! [28677, level 52]: needs level 51; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  Warchief's Command: Outland! [28705, level 60]: needs level 58; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 42.7
+  A Summons from Lady Liadrin [64139, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 42.9
+  The Master's Path [64140, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 42.9
+  A Gesture of Commitment [64141, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 42.9
+  A Demonstration of Loyalty [64142, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 42.9
+  True Masters of the Light [64143, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 42.9
+  True Masters of the Light [64144, level 60]: needs level 60; this part gets BloodElf Paladin characters to about 42.9
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

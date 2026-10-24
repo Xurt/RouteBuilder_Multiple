@@ -1,0 +1,144 @@
+Blasted Lands - Horde - part 1 of 3, planned from level 50
+Guide "50-61 Blasted Lands" in group "Zone Routes (Horde)": this part has 19 steps, 14 stops
+Written to guides/tbc/Blasted Lands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 50. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 31 new ones slotted in, 0 moved because their prerequisites changed, 2 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 30 tasks, 2,496 yd on foot; ends at level 50.5
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 2,865 yd; ends at level 50.5
+Hearthstone: set at Bernie Heisten (Bernie Heisten's inn); 0 hearth steps in the guide.
+8 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 7 (7 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Kirith [2721, level 58] <- Swamp of Sorrows
+
+Worth checking in game
+----------------------
+
+Put off to a later part (5)
+---------------------------
+These need a higher level than this part ends at:
+  The Cover of Darkness [2743, level 60]: needs level 52; this part gets you to about 50.5
+  The Prison's Bindings [7581, level 60]: needs level 60; this part gets Warlock characters to about 50.5
+  The Prison's Casing [7582, level 60]: needs level 60; this part gets Warlock characters to about 50.5
+  Suppression [7583, level 60]: needs level 60; this part gets Warlock characters to about 50.5
+  Through the Dark Portal [9407, level 61]: needs level 58; this part gets you to about 50.5
+
+Left out (12)
+-------------
+repeatable (7):
+  Kum'isha's Endeavors [2522], Rage of Ages [2582], Spirit of the Boar [2584], Salt of the Scorpok [2586], Infallible Mind [2602], Spiritual Domination [2604], One Draenei's Junk... [3502]
+not in the game (on Questie's quest blacklist) (5):
+  Bellowrage the Elder [8647], Into the Breach [10259], Desecrate this Fire! [11737], The Dark Portal [64063], The Dark Portal [64217]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Blasted Lands - Horde - part 2 of 3, planned from level 59
+Guide "50-61 Blasted Lands" in group "Zone Routes (Horde)": this part has 4 steps, 2 stops
+Written to guides/tbc/Blasted Lands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 59. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 59.0
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 662 yd; ends at level 59.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Through the Dark Portal [9407, level 61] -> Hellfire Peninsula
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  The Cover of Darkness [2743, level 60] - needs one of Kirith [2721] -> Swamp of Sorrows
+
+Worth checking in game
+----------------------
+
+Put off to a later part (3)
+---------------------------
+These need a higher level than this part ends at:
+  The Prison's Bindings [7581, level 60]: needs level 60; this part gets Warlock characters to about 59.0
+  The Prison's Casing [7582, level 60]: needs level 60; this part gets Warlock characters to about 59.0
+  Suppression [7583, level 60]: needs level 60; this part gets Warlock characters to about 59.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Blasted Lands - Horde - part 3 of 3, planned from level 62
+Guide "50-61 Blasted Lands" in group "Zone Routes (Horde)": this part has 7 steps, 6 stops
+Written to guides/tbc/Blasted Lands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warlock), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 62. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 5 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  Warlock: 2 tasks, 0 yd on foot; ends at level 62.0
+  Warlock (quests that depend on other zones): 3 more tasks; their whole route comes to 608 yd; ends at level 62.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (3)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Hand-in step only shows once complete (2):
+  The Prison's Bindings [7581, level 60, Warlock] - needs Satyr Blood (15) (an unknown place)
+  The Prison's Casing [7582, level 60, Warlock] - needs Tears of the Hederine (5) (Winterspring)
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Suppression [7583, level 60, Warlock] - needs The Prison's Bindings [7581], The Prison's Casing [7582]
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,410 @@
+Stranglethorn Vale - Alliance - part 1 of 5, planned from level 30
+Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 69 steps, 57 stops
+Written to guides/tbc/Stranglethorn Vale (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 9 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+7 pickups or hand-ins are within reach of a stop but planned for later.
+5 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 30. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 55 steps kept, 13 new ones slotted in, 0 moved because their prerequisites changed, 145 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 49 tasks, 27,391 yd on foot; ends at level 31.1; at its hardest you are 3.2 levels below the mobs
+  everyone (quests that depend on other zones): 17 more tasks; their whole route comes to 27,548 yd; ends at level 31.1; at its hardest you are 3.2 levels below the mobs
+  Warlock (quests that depend on other zones): 2 more tasks; their whole route comes to 28,710 yd; ends at level 31.1; at its hardest you are 3.2 levels below the mobs
+Hearthstone: set at Nerrist (Nerrist's inn); 0 hearth steps in the guide.
+4 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (37)
+------------------------
+Start to finish here: 18 (18 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Crystal in the Mountains [635, level 35] -> Arathi Highlands
+
+Hand-in step only shows once complete (1):
+  The Green Hills of Stranglethorn [338, level 40] - needs Green Hills of Stranglethorn - Chapter I (1) (an unknown place); Green Hills of Stranglethorn - Chapter II (1) (an unknown place); Green Hills of Stranglethorn - Chapter III (1) (an unknown place); Green Hills of Stranglethorn - Chapter IV (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (13):
+  Passage to Booty Bay [1040, level 30] <- The Barrens
+  Hemet Nesingwary Jr. [5762, level 31] <- Thousand Needles
+  Components for the Enchanted Gold Bloodrobe [4781, level 34, Warlock] <- The Barrens
+  The Rumormonger [1115, level 36] <- Thousand Needles
+  Ansirem's Key [603, level 37] <- Alterac Mountains
+  Goblin Sponsorship [1180, level 37] <- The Barrens
+  Sunken Treasure [669, level 40] <- Arathi Highlands
+  Back to Booty Bay [1118, level 43] <- Thousand Needles
+  Report Back to Fizzlebub [1122, level 44] <- Thousand Needles
+  Rescue OOX-22/FE! [2767, level 45] <- Feralas
+  Deliver to MacKinley [2874, level 45] <- Tanaris
+  Rescue OOX-17/TN! [648, level 48] <- Tanaris
+  Rescue OOX-09/HL! [836, level 48] <- The Hinterlands
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  The Caravan Road [1041, level 30] - needs one of Passage to Booty Bay [1040] -> Duskwood
+  Dream Dust in the Swamp [1116, level 36] - needs one of The Rumormonger [1115]
+  Rumors for Kravel [1117, level 36] - needs one of Dream Dust in the Swamp [1116] -> Thousand Needles
+  Goblin Sponsorship [1181, level 37] - needs one of Goblin Sponsorship [1180]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (57)
+----------------------------
+These need a higher level than this part ends at:
+  Tiger Mastery [187, level 35]: its mobs are level 34; this part gets you to about 31.5
+  Tiger Mastery [188, level 37]: its mobs are level 37; this part gets you to about 32.4
+  Panther Mastery [192, level 38]: its mobs are level 37; this part gets you to about 32.4
+  Panther Mastery [193, level 40]: its mobs are level 40; this part gets you to about 35.6
+  Raptor Mastery [195, level 36]: its mobs are level 35; this part gets you to about 32.4
+  Raptor Mastery [196, level 41]: its mobs are level 40; this part gets you to about 35.6
+  Raptor Mastery [197, level 43]: its mobs are level 43; this part gets you to about 35.6
+  Colonel Kurzen [202, level 40]: its mobs are level 40; this part gets you to about 35.6
+  Troll Witchery [205, level 40]: its mobs are level 39; this part gets you to about 35.6
+  Mai'Zoth [206, level 46]: its mobs are level 45; this part gets you to about 35.6
+  Kurzen's Mystery [207, level 38]: is a level 38 quest; this part gets you to about 32.4
+  Big Game Hunter [208, level 43]: its mobs are level 43; this part gets you to about 35.6
+  Skullsplitter Tusks [209, level 42]: needs level 37; this part gets you to about 35.6
+  Krazek's Cookery [210, level 37]: needs level 32; this part gets you to about 31.5
+  Hostile Takeover [213, level 36]: its mobs are level 35; this part gets you to about 32.4
+  Stranglethorn Fever [348, level 45]: its mobs are level 44; this part gets you to about 35.6
+  Special Forces [574, level 38]: its mobs are level 34; this part gets you to about 31.5
+  Keep An Eye Out [576, level 42]: its mobs are level 40; this part gets you to about 35.6
+  Some Assembly Required [577, level 36]: its mobs are level 35; this part gets you to about 32.4
+  The Stone of the Tides [578, level 37]: is a level 37 quest; this part gets you to about 32.4
+  Whiskey Slim's Lost Grog [580, level 50]: needs level 40; this part gets you to about 35.6
+  Up to Snuff [587, level 41]: its mobs are level 40; this part gets you to about 35.6
+  The Bloodsail Buccaneers [595, level 41]: needs level 37; this part gets you to about 35.6
+  The Bloodsail Buccaneers [597, level 41]: needs level 37; this part gets you to about 35.6
+  The Bloodsail Buccaneers [599, level 41]: needs level 37; this part gets you to about 35.6
+  Venture Company Mining [600, level 41]: its mobs are level 40; this part gets you to about 35.6
+  Water Elementals [601, level 37]: its mobs are level 36; this part gets you to about 32.4
+  Magical Analysis [602, level 37]: follows Water Elementals [601]
+  The Bloodsail Buccaneers [604, level 42]: is a level 42 quest; this part gets you to about 35.6
+  Singing Blue Shards [605, level 35]: its mobs are level 34; this part gets you to about 31.5
+  Scaring Shaky [606, level 41]: its mobs are level 40; this part gets you to about 35.6
+  Return to MacKinley [607, level 41]: follows Scaring Shaky [606]
+  The Bloodsail Buccaneers [608, level 42]: its mobs are level 42; this part gets you to about 35.6
+  Voodoo Dues [609, level 44]: its mobs are level 43; this part gets you to about 35.6
+  "Pretty Boy" Duncan [610, level 39]: its mobs are level 39; this part gets you to about 35.6
+  The Curse of the Tides [611, level 40]: its mobs are level 40; this part gets you to about 35.6
+  Cracking Maury's Foot [613, level 44]: its mobs are level 41; this part gets you to about 35.6
+  The Haunted Isle [616, level 37]: needs level 32; this part gets you to about 31.5
+  Akiris by the Bundle [617, level 43]: its mobs are level 43; this part gets you to about 35.6
+  Zanzil's Secret [621, level 44]: its mobs are level 43; this part gets you to about 35.6
+  Return to Corporal Kaleb [622, level 37]: needs level 32; this part gets you to about 31.5
+  Akiris by the Bundle [623, level 43]: needs level 38; this part gets you to about 35.6
+  Favor for Krazek [627, level 37]: needs level 32; this part gets you to about 31.5
+  Excelsior [628, level 38]: its mobs are level 38; this part gets you to about 35.6
+  Message in a Bottle [630, level 42]: needs level 42; this part gets you to about 35.6
+  Sunken Treasure [670, level 40]: needs level 35; this part gets you to about 32.4
+  Zanzil's Mixture and a Fool's Stout [1119, level 44]: follows Zanzil's Secret [621]
+  Goblin Sponsorship [1182, level 37]: its mobs are level 38; this part gets you to about 35.6
+  Goblin Sponsorship [1183, level 37]: follows Goblin Sponsorship [1182]
+  Tran'rek [2864, level 45]: needs level 40; this part gets you to about 35.6
+  Stoley's Debt [2872, level 45]: needs level 40; this part gets you to about 35.6
+  An OOX of Your Own [3721, level 50]: needs level 40; this part gets you to about 35.6
+  Components for the Enchanted Gold Bloodrobe [4782, level 34]: needs level 31; this part gets Warlock characters to about 31.1
+  The Captain's Chest [8551, level 42]: its mobs are level 42; this part gets you to about 35.6
+  The Monogrammed Sash [8552, level 50]: needs level 35; this part gets you to about 32.4
+  The Captain's Cutlass [8553, level 42]: needs level 35; this part gets you to about 32.4
+  Facing Negolash [8554, level 42]: its mobs are level 42; this part gets you to about 35.6
+
+Left out (124)
+--------------
+needs reputation (39):
+  Avast Ye, Scallywag [1036], Avast Ye, Admiral! [4621], Strength of Mount Mugamba [8041], Strength of Mount Mugamba [8042], Strength of Mount Mugamba [8043], The Rage of Mugamba [8044], The Heathen's Brand [8045], The Heathen's Brand [8046], The Heathen's Brand [8047], The Hero's Brand [8048], The Eye of Zuldazar [8049], The Eye of Zuldazar [8050], The Eye of Zuldazar [8051], The All-Seeing Eye of Zuldazar [8052], The Pebble of Kajaro [8101], The Pebble of Kajaro [8102], The Pebble of Kajaro [8103], The Jewel of Kajaro [8104], Kezan's Taint [8106], Kezan's Taint [8107], Kezan's Taint [8108], Kezan's Unstoppable Taint [8109], Enchanted South Seas Kelp [8110], Enchanted South Seas Kelp [8111], Enchanted South Seas Kelp [8112], Pristine Enchanted South Seas Kelp [8113], Vision of Voodress [8116], Vision of Voodress [8117], Vision of Voodress [8118], The Unmarred Vision of Voodress [8119], Zandalarian Shadow Talisman [8141], Zandalarian Shadow Talisman [8142], Zandalarian Shadow Talisman [8143], Zandalarian Shadow Mastery Talisman [8144], The Maelstrom's Tendril [8145], The Maelstrom's Tendril [8146], The Maelstrom's Tendril [8147], Maelstrom's Wrath [8148], Dressing the Part [9272]
+dungeon quest (30):
+  Paragons of Power: The Freethinker's Armguards [8053], Paragons of Power: The Freethinker's Belt [8054], Paragons of Power: The Freethinker's Breastplate [8055], Paragons of Power: The Augur's Bracers [8056], Paragons of Power: The Haruspex's Bracers [8057], Paragons of Power: The Vindicator's Armguards [8058], Paragons of Power: The Demoniac's Wraps [8059], Paragons of Power: The Illusionist's Wraps [8060], Paragons of Power: The Confessor's Wraps [8061], Paragons of Power: The Predator's Bracers [8062], Paragons of Power: The Madcap's Bracers [8063], Paragons of Power: The Haruspex's Belt [8064], Paragons of Power: The Haruspex's Tunic [8065], Paragons of Power: The Predator's Belt [8066], Paragons of Power: The Predator's Mantle [8067], Paragons of Power: The Illusionist's Mantle [8068], Paragons of Power: The Illusionist's Robes [8069], Paragons of Power: The Confessor's Bindings [8070], Paragons of Power: The Confessor's Mantle [8071], Paragons of Power: The Madcap's Mantle [8072], Paragons of Power: The Madcap's Tunic [8073], Paragons of Power: The Augur's Belt [8074], Paragons of Power: The Augur's Hauberk [8075], Paragons of Power: The Demoniac's Mantle [8076], Paragons of Power: The Demoniac's Robes [8077], Paragons of Power: The Vindicator's Belt [8078], Paragons of Power: The Vindicator's Breastplate [8079], The Heart of Hakkar [8183], A Collection of Heads [8201], A Bijou for Zanza [8240]
+not in the game (on Questie's quest blacklist) (20):
+  The Captain's Cutlass [615], Facing Negolash [618], Winterhoof the Elder [8674], Starglade the Elder [8716], Winter's Presents [8827], Secrets of the Colossus - Ashi [8857], New Year Celebrations! [8860], Brewfest! [11441], Desecrate this Fire! [11801], Honor the Flame [11832], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], The Master of Summer Lore [11970], Candy Bucket [12397], A Deluxe Delivery [63450], Imp in a Ball [63768], Goblin Gumbo Kettle [65285], Tabard of Flame [65562], A Grand Delivery [93824], An Unexpected Delivery [96254]
+repeatable (17):
+  Stranglethorn Fever [349], Enticing Negolash [619], Membership Card Renewal [3645], Fine Gold Thread [4785], Arena Grandmaster [7838], Master Angler [8193], Apprentice Angler [8194], Zulian, Razzashi, and Hakkari Coins [8195], Essence Mangoes [8196], Rare Fish - Keefer's Angelfish [8221], Rare Fish - Dezian Queenfish [8224], Rare Fish - Brownell's Blue Striped Racer [8225], Gurubashi, Vilebranch, and Witherbark Coins [8238], Sandfury, Skullsplitter, and Bloodscalp Coins [8239], Zanza's Potent Potables [8243], Signets of the Zandalar [8246], Traitor to the Bloodsail [9259]
+needs a profession (7):
+  In Search of Galvan [2759], The Mithril Order [2760], Smelt On, Smelt Off [2761], The Great Silver Deceiver [2762], The Art of the Imbue [2763], Galvan's Finest Pupil [2764], Expert Blacksmith! [2765]
+above this zone's range of 30-52 (5):
+  The Formation of Felbane [3621], Enchanted Azsharite Fel Weaponry [3625], Return to the Blasted Lands [3626], Arena Master [7810], The Hand of Rastakhan [8182]
+helper for The Green Hills of Stranglethorn (4):
+  Chapter I [339], Chapter II [340], Chapter III [341], Chapter IV [342]
+handed in here, but the database does not say where it starts (2):
+  Message in a Bottle [594], A Fine Mess [2904]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Stranglethorn Vale - Alliance - part 2 of 5, planned from level 34
+Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 48 steps, 46 stops
+Written to guides/tbc/Stranglethorn Vale (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 8 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+9 pickups or hand-ins are within reach of a stop but planned for later.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 34. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 47 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 44 tasks, 27,827 yd on foot; ends at level 35.0; at its hardest you are 2.6 levels below the mobs
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 31,381 yd; ends at level 35.0; at its hardest you are 2.6 levels below the mobs
+  Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 31,452 yd; ends at level 35.0; at its hardest you are 2.6 levels below the mobs
+Hearthstone: set at Innkeeper Thulbek (Innkeeper Thulbek's inn); 0 hearth steps in the guide.
+
+Quests in the guide (18)
+------------------------
+Start to finish here: 13 (13 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Magical Analysis [602, level 37] -> Alterac Mountains
+
+Hand-in step only shows once complete (1):
+  Favor for Krazek [627, level 37] - needs Lesser Bloodstone Ore (1) (Arathi Highlands)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  The Green Hills of Stranglethorn [338, level 40] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Components for the Enchanted Gold Bloodrobe [4782, level 34, Warlock] - needs one of Components for the Enchanted Gold Bloodrobe [4781] -> The Barrens
+  Return to Corporal Kaleb [622, level 37] - needs one of Favor for Krazek [627]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (40)
+----------------------------
+These need a higher level than this part ends at:
+  Panther Mastery [193, level 40]: its mobs are level 40; this part gets you to about 37.8
+  Raptor Mastery [196, level 41]: its mobs are level 40; this part gets you to about 37.8
+  Raptor Mastery [197, level 43]: its mobs are level 43; this part gets you to about 37.8
+  Colonel Kurzen [202, level 40]: its mobs are level 40; this part gets you to about 37.8
+  Troll Witchery [205, level 40]: its mobs are level 39; this part gets you to about 35.7
+  Mai'Zoth [206, level 46]: its mobs are level 45; this part gets you to about 37.8
+  Big Game Hunter [208, level 43]: its mobs are level 43; this part gets you to about 37.8
+  Skullsplitter Tusks [209, level 42]: needs level 37; this part gets you to about 35.7
+  Stranglethorn Fever [348, level 45]: its mobs are level 44; this part gets you to about 37.8
+  Keep An Eye Out [576, level 42]: its mobs are level 40; this part gets you to about 37.8
+  Whiskey Slim's Lost Grog [580, level 50]: needs level 40; this part gets you to about 37.8
+  Up to Snuff [587, level 41]: its mobs are level 40; this part gets you to about 37.8
+  The Bloodsail Buccaneers [595, level 41]: needs level 37; this part gets you to about 35.7
+  The Bloodsail Buccaneers [597, level 41]: needs level 37; this part gets you to about 35.7
+  The Bloodsail Buccaneers [599, level 41]: needs level 37; this part gets you to about 35.7
+  Venture Company Mining [600, level 41]: its mobs are level 40; this part gets you to about 37.8
+  The Bloodsail Buccaneers [604, level 42]: is a level 42 quest; this part gets you to about 37.8
+  Scaring Shaky [606, level 41]: its mobs are level 40; this part gets you to about 37.8
+  Return to MacKinley [607, level 41]: follows Scaring Shaky [606]
+  The Bloodsail Buccaneers [608, level 42]: its mobs are level 42; this part gets you to about 37.8
+  Voodoo Dues [609, level 44]: its mobs are level 43; this part gets you to about 37.8
+  "Pretty Boy" Duncan [610, level 39]: its mobs are level 39; this part gets you to about 35.7
+  The Curse of the Tides [611, level 40]: its mobs are level 40; this part gets you to about 37.8
+  Cracking Maury's Foot [613, level 44]: its mobs are level 41; this part gets you to about 37.8
+  Akiris by the Bundle [617, level 43]: its mobs are level 43; this part gets you to about 37.8
+  Zanzil's Secret [621, level 44]: its mobs are level 43; this part gets you to about 37.8
+  Akiris by the Bundle [623, level 43]: needs level 38; this part gets you to about 37.8
+  Excelsior [628, level 38]: its mobs are level 38; this part gets you to about 35.7
+  Message in a Bottle [630, level 42]: needs level 42; this part gets you to about 37.8
+  Sunken Treasure [670, level 40]: needs level 35; this part gets you to about 35.1
+  Zanzil's Mixture and a Fool's Stout [1119, level 44]: follows Zanzil's Secret [621]
+  Goblin Sponsorship [1182, level 37]: its mobs are level 38; this part gets you to about 35.7
+  Goblin Sponsorship [1183, level 37]: follows Goblin Sponsorship [1182]
+  Tran'rek [2864, level 45]: needs level 40; this part gets you to about 37.8
+  Stoley's Debt [2872, level 45]: needs level 40; this part gets you to about 37.8
+  An OOX of Your Own [3721, level 50]: needs level 40; this part gets you to about 37.8
+  The Captain's Chest [8551, level 42]: its mobs are level 42; this part gets you to about 37.8
+  The Monogrammed Sash [8552, level 50]: needs level 35; this part gets you to about 35.1
+  The Captain's Cutlass [8553, level 42]: needs level 35; this part gets you to about 35.1
+  Facing Negolash [8554, level 42]: its mobs are level 42; this part gets you to about 37.8
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Stranglethorn Vale - Alliance - part 3 of 5, planned from level 38
+Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 65 steps, 58 stops
+Written to guides/tbc/Stranglethorn Vale (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 10 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+11 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 38. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 57 steps kept, 5 new ones slotted in, 2 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 50 tasks, 16,668 yd on foot; ends at level 39.3; 2 hearths; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 14 more tasks; their whole route comes to 26,017 yd; ends at level 39.3; 2 hearths; at its hardest you are 2.0 levels below the mobs
+Hearthstone: set at Kelsey Yance (Kelsey Yance's inn); 3 hearth steps in the guide.
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (24)
+------------------------
+Start to finish here: 17 (17 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Favor for Krazek [627, level 37] <- your earlier visit to this zone
+  The Green Hills of Stranglethorn [338, level 40] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (5):
+  Goblin Sponsorship [1182, level 37] - needs one of Goblin Sponsorship [1181]
+  Goblin Sponsorship [1183, level 37] - needs one of Goblin Sponsorship [1182] -> Thousand Needles
+  "Pretty Boy" Duncan [610, level 39] - needs one of Ansirem's Key [603]
+  The Curse of the Tides [611, level 40] - needs one of "Pretty Boy" Duncan [610]
+  Sunken Treasure [670, level 40] - needs one of Sunken Treasure [669] -> Arathi Highlands
+
+Worth checking in game
+----------------------
+
+Put off to a later part (18)
+----------------------------
+These need a higher level than this part ends at:
+  Raptor Mastery [197, level 43]: its mobs are level 43; this part gets you to about 40.4
+  Mai'Zoth [206, level 46]: its mobs are level 45; this part gets you to about 40.4
+  Big Game Hunter [208, level 43]: its mobs are level 43; this part gets you to about 40.4
+  Stranglethorn Fever [348, level 45]: its mobs are level 44; this part gets you to about 40.4
+  Whiskey Slim's Lost Grog [580, level 50]: needs level 40; this part gets you to about 39.6
+  The Bloodsail Buccaneers [608, level 42]: its mobs are level 42; this part gets you to about 39.6
+  Voodoo Dues [609, level 44]: its mobs are level 43; this part gets you to about 40.4
+  Cracking Maury's Foot [613, level 44]: follows Voodoo Dues [609]
+  Akiris by the Bundle [617, level 43]: its mobs are level 43; this part gets you to about 40.4
+  Zanzil's Secret [621, level 44]: its mobs are level 43; this part gets you to about 40.4
+  Akiris by the Bundle [623, level 43]: follows Akiris by the Bundle [617]
+  Message in a Bottle [630, level 42]: needs level 42; this part gets you to about 40.4
+  Zanzil's Mixture and a Fool's Stout [1119, level 44]: follows Zanzil's Secret [621]
+  Tran'rek [2864, level 45]: needs level 40; this part gets you to about 39.6
+  Stoley's Debt [2872, level 45]: needs level 40; this part gets you to about 39.6
+  An OOX of Your Own [3721, level 50]: needs level 40; this part gets you to about 39.6
+  The Captain's Chest [8551, level 42]: its mobs are level 42; this part gets you to about 39.6
+  Facing Negolash [8554, level 42]: its mobs are level 42; this part gets you to about 39.6
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Stranglethorn Vale - Alliance - part 4 of 5, planned from level 42
+Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 51 steps, 47 stops
+Written to guides/tbc/Stranglethorn Vale (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 11 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+6 pickups or hand-ins are within reach of a stop but planned for later.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 42. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 39 steps kept, 7 new ones slotted in, 1 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 39 tasks, 19,828 yd on foot; ends at level 42.8; 1 hearth; at its hardest you are 1.6 levels below the mobs
+  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 20,665 yd; ends at level 42.8; 1 hearth; at its hardest you are 1.6 levels below the mobs
+Hearthstone: set at Kelsey Yance (Kelsey Yance's inn); 1 hearth step in the guide.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (19)
+------------------------
+Start to finish here: 10 (10 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Akiris by the Bundle [623, level 43] -> Dustwallow Marsh
+  Tran'rek [2864, level 45] -> Tanaris
+  Stoley's Debt [2872, level 45] -> Tanaris
+
+Hand-in step only shows once complete (1):
+  Whiskey Slim's Lost Grog [580, level 50] - needs Pupellyverbos Port (1) (The Hinterlands)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Favor for Krazek [627, level 37] <- your earlier visit to this zone
+  The Green Hills of Stranglethorn [338, level 40] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Message in a Bottle [630, level 42] - needs one of Message in a Bottle [594]
+  Zanzil's Mixture and a Fool's Stout [1119, level 44] - needs Back to Booty Bay [1118] -> Thousand Needles
+  An OOX of Your Own [3721, level 50] - needs Rescue OOX-17/TN! [648], Rescue OOX-09/HL! [836], Rescue OOX-22/FE! [2767]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  Mai'Zoth [206, level 46]: its mobs are level 45; this part gets you to about 42.9
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Stranglethorn Vale - Alliance - part 5 of 5, planned from level 45
+Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 7 steps, 6 stops
+Written to guides/tbc/Stranglethorn Vale (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 45. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 5 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 2,810 yd on foot; ends at level 45.1
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 9,494 yd; ends at level 45.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Favor for Krazek [627, level 37] <- your earlier visit to this zone
+  The Green Hills of Stranglethorn [338, level 40] <- your earlier visit to this zone
+  Whiskey Slim's Lost Grog [580, level 50] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

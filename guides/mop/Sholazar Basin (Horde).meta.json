@@ -1,0 +1,628 @@
+{
+  "zone": "Sholazar Basin",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "76-78 Sholazar Basin",
+  "file": "Sholazar Basin (Horde).lua",
+  "continent": -3711,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 76,
+      "end": 77.53,
+      "guide": "76-78 Sholazar Basin",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Debaar",
+          "guide": "76-78 Sholazar Basin",
+          "level": 76,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 12520,
+      "level": 76,
+      "req": 76,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12521,
+      "level": 76,
+      "req": 76,
+      "xp": 2100,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dalaran - (Dungeon/Raid)"
+    },
+    {
+      "id": 12522,
+      "level": 76,
+      "req": 76,
+      "xp": 15850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12523,
+      "level": 76,
+      "req": 76,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12524,
+      "level": 76,
+      "req": 76,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12525,
+      "level": 76,
+      "req": 76,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12526,
+      "level": 76,
+      "req": 76,
+      "xp": 2100,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12528,
+      "level": 77,
+      "req": 76,
+      "xp": 5350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12529,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12530,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12531,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12532,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12533,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12534,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12535,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12536,
+      "level": 77,
+      "req": 76,
+      "xp": 5350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12537,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12538,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12539,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12540,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12543,
+      "level": 76,
+      "req": 76,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12544,
+      "level": 76,
+      "req": 76,
+      "xp": 15850,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12549,
+      "level": 76,
+      "req": 76,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12550,
+      "level": 76,
+      "req": 76,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12551,
+      "level": 76,
+      "req": 76,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12556,
+      "level": 76,
+      "req": 76,
+      "xp": 26450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12558,
+      "level": 76,
+      "req": 76,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12559,
+      "level": 77,
+      "req": 77,
+      "xp": 16050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12560,
+      "level": 76,
+      "req": 76,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12561,
+      "level": 77,
+      "req": 77,
+      "xp": 26750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12569,
+      "level": 76,
+      "req": 76,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12570,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12571,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12572,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12573,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12574,
+      "level": 77,
+      "req": 76,
+      "xp": 10700,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12576,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12589,
+      "level": 76,
+      "req": 76,
+      "xp": 2100,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12592,
+      "level": 76,
+      "req": 76,
+      "xp": 26450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12595,
+      "level": 77,
+      "req": 76,
+      "xp": 2150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12603,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12605,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12607,
+      "level": 77,
+      "req": 76,
+      "xp": 16050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12608,
+      "level": 78,
+      "req": 77,
+      "xp": 16200,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12611,
+      "level": 77,
+      "req": 77,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12612,
+      "level": 77,
+      "req": 77,
+      "xp": 10700,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12613,
+      "level": 77,
+      "req": 77,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12614,
+      "level": 77,
+      "req": 76,
+      "xp": 26750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12617,
+      "level": 77,
+      "req": 77,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12620,
+      "level": 77,
+      "req": 77,
+      "xp": 16050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12621,
+      "level": 77,
+      "req": 77,
+      "xp": 2150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12624,
+      "level": 76,
+      "req": 76,
+      "xp": 31750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12651,
+      "level": 77,
+      "req": 76,
+      "xp": 2150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12658,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12660,
+      "level": 77,
+      "req": 77,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12671,
+      "level": 77,
+      "req": 77,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12681,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12683,
+      "level": 77,
+      "req": 76,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12688,
+      "level": 76,
+      "req": 76,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12691,
+      "level": 78,
+      "req": 77,
+      "xp": 21600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12696,
+      "level": 77,
+      "req": 77,
+      "xp": 5350,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12699,
+      "level": 77,
+      "req": 77,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12797,
+      "level": 78,
+      "req": 77,
+      "xp": 16200,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Un\u0027Goro Crater"
+    },
+    {
+      "id": 12803,
+      "level": 78,
+      "req": 77,
+      "xp": 2150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12804,
+      "level": 76,
+      "req": 76,
+      "xp": 21150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 12805,
+      "level": 77,
+      "req": 77,
+      "xp": 21400,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Un\u0027Goro Crater": 1
+  }
+}

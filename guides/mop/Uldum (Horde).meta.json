@@ -1,0 +1,61 @@
+{
+  "zone": "Uldum",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "84-84 Uldum",
+  "file": "Uldum (Horde).lua",
+  "continent": -5034,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 84,
+      "end": 84,
+      "guide": "84-84 Uldum",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "84-84 Uldum",
+          "level": 84,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 25069,
+      "level": 49,
+      "req": 46,
+      "xp": 6550,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Tanaris"
+    },
+    {
+      "id": 25070,
+      "level": 49,
+      "req": 47,
+      "xp": 8150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 27003,
+      "level": 83,
+      "req": 83,
+      "xp": 43900,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Tanaris"
+    }
+  ],
+  "carriedTo": {
+    "Tanaris": 1
+  }
+}

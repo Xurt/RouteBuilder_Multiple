@@ -1,0 +1,178 @@
+Burning Steppes - Horde - part 1 of 3, planned from level 51
+Guide "51-60 Burning Steppes" in group "Zone Routes (Horde)": this part has 14 steps, 10 stops
+Written to guides/tbc/Burning Steppes (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 51. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 8 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed, 3 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 51, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 7 tasks, 2,417 yd on foot; ends at level 51.1
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 2,417 yd; ends at level 51.1
+  Warlock (quests that depend on other zones): 2 more tasks; their whole route comes to 3,969 yd; ends at level 51.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+
+Quests in the guide (7)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Felnok Steelspring [4808, level 54] -> Winterspring
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Dreadmaul Rock [3821, level 52] <- Badlands
+  Return to Tinkee [4810, level 54] <- Winterspring
+  Mor'zul Bloodbringer [7562, level 60, Warlock] <- Stormwind City
+  Xorothian Stardust [7625, level 60, Orc Warlock/Undead Warlock/BloodElf Warlock] <- Felwood
+
+Worth checking in game
+----------------------
+
+Put off to a later part (12)
+----------------------------
+These need a higher level than this part ends at:
+  Krom'Grul [3822, level 53]: its mobs are level 54; this part gets you to about 51.1
+  A Taste of Flame [4022, level 54]: its mobs are level 55; this part gets you to about 51.1
+  Leonid Barthalomew [5522, level 60]: needs level 58; this part gets you to about 51.1
+  Rage of Blood [7563, level 60]: needs level 60; this part gets Orc Warlock/Undead Warlock/BloodElf Warlock characters to about 51.1
+  Wildeyes [7564, level 60]: needs level 60; this part gets Orc Warlock/Undead Warlock/BloodElf Warlock characters to about 51.1
+  Lord Banehollow [7623, level 58]: needs level 58; this part gets Orc Warlock/Undead Warlock/BloodElf Warlock characters to about 51.1
+  Bell of Dethmoora [7626, level 60]: needs level 60; this part gets Orc Warlock/Undead Warlock/BloodElf Warlock characters to about 51.1
+  Wheel of the Black March [7627, level 60]: needs level 60; this part gets Orc Warlock/Undead Warlock/BloodElf Warlock characters to about 51.1
+  Doomsday Candle [7628, level 60]: needs level 60; this part gets Orc Warlock/Undead Warlock/BloodElf Warlock characters to about 51.1
+  Imp Delivery [7629, level 60]: needs level 60; this part gets Orc Warlock/Undead Warlock/BloodElf Warlock characters to about 51.1
+  Arcanite [7630, level 60]: needs level 60; this part gets Orc Warlock/Undead Warlock/BloodElf Warlock characters to about 51.1
+  Dreadsteed of Xoroth [7631, level 60]: needs level 60; this part gets Orc Warlock/Undead Warlock/BloodElf Warlock characters to about 51.1
+
+Left out (27)
+-------------
+dungeon quest (15):
+  Dark Iron Legacy [3801], Dark Iron Legacy [3802], A Taste of Flame [4024], Precarious Predicament [4121], Grark Lorkrub [4122], The Heart of the Mountain [4123], Ribbly Screwspigot [4136], Yuka Screwspigot [4324], Kibler's Exotic Pets [4729], Egg Freezing [4734], Egg Collection [4735], En-Ay-Es-Tee-Why [4862], Mother's Milk [4866], Tinkee Steamboil [4907], Blackhand's Command [7761]
+not in the game (on Questie's quest blacklist) (6):
+  Rumblerock the Elder [8636], Dawnstrider the Elder [8683], Desecrate this Fire! [11739], Honor the Flame [11844], Playing with Fire [11915], Incense for the Festival Scorchlings [11966]
+repeatable (5):
+  Libram of Rumination [4463], Libram of Constitution [4481], Libram of Tenacity [4482], Libram of Resilience [4483], Libram of Voracity [4484]
+cannot be taken together with A Taste of Flame [4022], which is in the guide (1):
+  A Taste of Flame [4023]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Burning Steppes - Horde - part 2 of 3, planned from level 59
+Guide "51-60 Burning Steppes" in group "Zone Routes (Horde)": this part has 10 steps, 8 stops
+Written to guides/tbc/Burning Steppes (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warlock), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 59. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  Orc Warlock/Undead Warlock/BloodElf Warlock: 1 tasks, 0 yd on foot; ends at level 59.0
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 2,784 yd; ends at level 59.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Lord Banehollow [7623, level 58, Orc Warlock/Undead Warlock/BloodElf Warlock] -> Felwood
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Krom'Grul [3822, level 53] - needs one of Dreadmaul Rock [3821] -> Badlands
+  A Taste of Flame [4022, level 54] - needs one of Trinkets... [3481]
+  Leonid Barthalomew [5522, level 60] - needs one of Egg Collection [4735] -> Eastern Plaguelands
+
+Worth checking in game
+----------------------
+  A Taste of Flame [4022, level 54]: mixes a kill-credit objective with others; check that "Cyrus Therepentous" really is line 2 in the quest log
+
+Put off to a later part (8)
+---------------------------
+These need a higher level than this part ends at:
+  Rage of Blood [7563, level 60]: needs level 60; this part gets Orc Warlock/Undead Warlock/BloodElf Warlock characters to about 59.0
+  Wildeyes [7564, level 60]: needs level 60; this part gets Orc Warlock/Undead Warlock/BloodElf Warlock characters to about 59.0
+  Bell of Dethmoora [7626, level 60]: needs level 60; this part gets Orc Warlock/Undead Warlock/BloodElf Warlock characters to about 59.0
+  Wheel of the Black March [7627, level 60]: needs level 60; this part gets Orc Warlock/Undead Warlock/BloodElf Warlock characters to about 59.0
+  Doomsday Candle [7628, level 60]: needs level 60; this part gets Orc Warlock/Undead Warlock/BloodElf Warlock characters to about 59.0
+  Imp Delivery [7629, level 60]: needs level 60; this part gets Orc Warlock/Undead Warlock/BloodElf Warlock characters to about 59.0
+  Arcanite [7630, level 60]: needs level 60; this part gets Orc Warlock/Undead Warlock/BloodElf Warlock characters to about 59.0
+  Dreadsteed of Xoroth [7631, level 60]: needs level 60; this part gets Orc Warlock/Undead Warlock/BloodElf Warlock characters to about 59.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Burning Steppes - Horde - part 3 of 3, planned from level 62
+Guide "51-60 Burning Steppes" in group "Zone Routes (Horde)": this part has 18 steps, 17 stops
+Written to guides/tbc/Burning Steppes (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Orc Warlock), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 62. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 15 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  Orc Warlock/Undead Warlock/BloodElf Warlock: 1 tasks, 0 yd on foot; ends at level 62.0
+  Orc Warlock/Undead Warlock/BloodElf Warlock (quests that depend on other zones): 14 more tasks; their whole route comes to 1,808 yd; ends at level 62.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Hand-in step only shows once complete (1):
+  Rage of Blood [7563, level 60, Orc Warlock/Undead Warlock/BloodElf Warlock] - needs Raging Beast's Blood (1) (Winterspring)
+
+Need a quest this guide does not hand in - steps show only once that is done (7):
+  Wildeyes [7564, level 60, Orc Warlock/Undead Warlock/BloodElf Warlock] - needs one of Rage of Blood [7563]
+  Bell of Dethmoora [7626, level 60, Orc Warlock/Undead Warlock/BloodElf Warlock] - needs one of Wildeyes [7564]
+  Wheel of the Black March [7627, level 60, Orc Warlock/Undead Warlock/BloodElf Warlock] - needs one of Wildeyes [7564]
+  Doomsday Candle [7628, level 60, Orc Warlock/Undead Warlock/BloodElf Warlock] - needs one of Wildeyes [7564]
+  Imp Delivery [7629, level 60, Orc Warlock/Undead Warlock/BloodElf Warlock] - needs one of Xorothian Stardust [7625]
+  Arcanite [7630, level 60, Orc Warlock/Undead Warlock/BloodElf Warlock] - needs Bell of Dethmoora [7626], Wheel of the Black March [7627], Doomsday Candle [7628]
+  Dreadsteed of Xoroth [7631, level 60, Orc Warlock/Undead Warlock/BloodElf Warlock] - needs Imp Delivery [7629], Arcanite [7630] -> another zone
+
+Worth checking in game
+----------------------
+  Imp Delivery [7629, level 60, Orc Warlock/Undead Warlock/BloodElf Warlock]: "J'eevee" has no place in the data; taken to be done where the quest is given
+  Dreadsteed of Xoroth [7631, level 60, Orc Warlock/Undead Warlock/BloodElf Warlock]: "Xorothian Dreadsteed (1)" has no place in the data; taken to be done where the quest is given
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -67,7 +67,7 @@ Left out (8)
 ------------
 repeatable (7):
   Crystal Restore [4381], Crystal Force [4382], Crystal Ward [4383], Crystal Yield [4384], Crystal Charge [4385], Crystal Spire [4386], Dadanga is Hungry! [5150]
-special category (sort -366) (1):
+not in the game (on Questie's quest blacklist) (1):
   Thunderhorn the Elder [8681]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

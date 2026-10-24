@@ -1,0 +1,251 @@
+Western Plaguelands - Alliance - part 1 of 3, planned from level 52
+Guide "52-60 Western Plaguelands" in group "Zone Routes (Alliance)": this part has 54 steps, 49 stops
+Written to guides/tbc/Western Plaguelands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 7 of 40 held at once (Human Paladin), not counting quests brought in from other zones.
+3 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 52. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 43 steps kept, 10 new ones slotted in, 3 moved because their prerequisites changed, 87 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 26 tasks, 5,076 yd on foot; ends at level 52.3; 1 hearth
+  Paladin: 6 more tasks; their whole route comes to 6,428 yd; ends at level 52.4
+  everyone (quests that depend on other zones): 23 more tasks; their whole route comes to 14,248 yd; ends at level 52.3; 1 hearth; 3 ORDER PROBLEMS
+  Paladin (quests that depend on other zones): 1 more tasks; their whole route comes to 14,882 yd; ends at level 52.4; 1 hearth; 3 ORDER PROBLEMS
+Hearthstone: set at Argent Quartermaster Lightspark (Argent Quartermaster Lightspark's inn); 1 hearth step in the guide.
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (37)
+------------------------
+Start to finish here: 9 (7 for everyone, 2 Paladin)
+
+Picked up here, handed in elsewhere - these stay in the log (5):
+  Better Late Than Never [5022, level 52] -> Stormwind City
+  Little Pamela [5142, level 55] -> Eastern Plaguelands
+  Demon Dogs [5542, level 56] -> Eastern Plaguelands
+  Blood Tinged Skies [5543, level 56] -> Eastern Plaguelands
+  Carrion Grubbage [5544, level 56] -> Eastern Plaguelands
+
+Hand-in step only shows once complete (2):
+  Forging the Mightstone [8418, level 52, Paladin] - needs Amber Voodoo Feather (1) (an unknown place); Blue Voodoo Feather (1) (an unknown place); Green Voodoo Feather (1) (an unknown place)
+  A Plague Upon Thee [5903, level 55] - needs Plagueland Termites (100) (Eastern Plaguelands)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (15):
+  A Call to Arms: The Plaguelands! [5066, level 50] <- Stormwind City
+  A Call to Arms: The Plaguelands! [5090, level 50] <- Ironforge
+  A Call to Arms: The Plaguelands! [5091, level 50] <- Darnassus
+  Chillwind Camp [8415, level 50, Paladin] <- Stormwind City
+  A Call to Arms: The Plaguelands! [10373, level 50] <- The Exodar
+  Good Luck Charm [5050, level 52] <- Stormwind City
+  The Everlook Report [6028, level 52] <- Winterspring
+  Auntie Marlene [5152, level 56] <- Eastern Plaguelands
+  Fire Plume Forged [5801, level 57] <- Tanaris
+  Of Love and Family [5846, level 58] <- Eastern Plaguelands
+  Wrath of the Blue Flight [5162, level 60] <- Winterspring
+  Soulbound Keepsake [5465, level 60] <- Eastern Plaguelands
+  Find Myranda [5861, level 60] <- Eastern Plaguelands
+  Return to Chromie [5941, level 60] <- Eastern Plaguelands
+  Flint Shadowmore [6184, level 60] <- Stormwind City
+
+Need a quest this guide does not hand in - steps show only once that is done (5):
+  Two Halves Become One [5051, level 54] - needs one of Good Luck Charm [5050]
+  A Plague Upon Thee [5904, level 55] - needs one of A Plague Upon Thee [5903]
+  A Plague Upon Thee [6389, level 55] - needs one of A Plague Upon Thee [5904]
+  The Last Barov [5344, level 60] - needs one of Barov Family Fortune [5343]
+  Scarlet Subterfuge [5862, level 60] - needs one of Find Myranda [5861]
+
+Worth checking in game
+----------------------
+No objectives in the database (the hand-in step warns about it; add "objectives" for these to the zone file):
+  Mrs. Dalson's Diary [5058, level 55]
+1 quests have no experience figure in the database: their experience is estimated, and 1 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  Mrs. Dalson's Diary [5058]
+
+Put off to a later part (36)
+----------------------------
+These need a higher level than this part ends at:
+  Alas, Andorhal [211, level 60]: is a level 60 quest; this part gets you to about 53.5
+  A Matter of Time [4971, level 56]: its mobs are level 56; this part gets you to about 53.5
+  Counting Out Time [4972, level 56]: follows A Matter of Time [4971]
+  The Wildlife Suffers Too [4985, level 56]: its mobs are level 55; this part gets you to about 52.6
+  Glyphed Oaken Branch [4986, level 56]: follows The Wildlife Suffers Too [4985]
+  Locked Away [5060, level 55]: its mobs are level 56; this part gets you to about 53.5
+  All Along the Watchtowers [5097, level 56]: is a level 56 quest; this part gets you to about 52.6
+  A Strange Historian [5153, level 56]: is a level 56 quest; this part gets you to about 52.6
+  The Annals of Darrowshire [5154, level 56]: is a level 56 quest; this part gets you to about 52.6
+  Catalogue of the Wayward [5164, level 60]: needs level 57; this part gets you to about 53.5
+  Breastplate of the Chromatic Flight [5166, level 60]: needs level 57; this part gets you to about 53.5
+  Legplates of the Chromatic Defier [5167, level 60]: needs level 57; this part gets you to about 53.5
+  Brother Carlin [5210, level 56]: follows The Annals of Darrowshire [5154]
+  Target: Dalson's Tears [5219, level 55]: its mobs are level 55; this part gets you to about 52.6
+  Return to Chillwind Camp [5220, level 55]: follows Target: Dalson's Tears [5219]
+  Target: Writhing Haunt [5222, level 55]: its mobs are level 56; this part gets you to about 53.5
+  Return to Chillwind Camp [5223, level 55]: follows Target: Writhing Haunt [5222]
+  Target: Gahrron's Withering [5225, level 58]: its mobs are level 58; this part gets you to about 53.5
+  Return to Chillwind Camp [5226, level 58]: follows Target: Gahrron's Withering [5225]
+  Mission Accomplished! [5237, level 58]: follows Return to Chillwind Camp [5226]
+  The Human, Ras Frostwhisper [5461, level 60]: needs level 57; this part gets you to about 53.5
+  The Dying, Ras Frostwhisper [5462, level 60]: needs level 57; this part gets you to about 53.5
+  The Key to Scholomance [5505, level 60]: needs level 55; this part gets you to about 53.5
+  Scholomance [5533, level 55]: needs level 55; this part gets you to about 53.5
+  Skeletal Fragments [5537, level 57]: needs level 55; this part gets you to about 53.5
+  Mold Rhymes With... [5538, level 57]: needs level 55; this part gets you to about 53.5
+  The Battle of Darrowshire [5721, level 60]: needs level 55; this part gets you to about 53.5
+  Araj's Scarab [5803, level 60]: is a level 60 quest; this part gets you to about 53.5
+  In Dreams [5944, level 60]: is a level 60 quest; this part gets you to about 53.5
+  Unfinished Business [6004, level 56]: its mobs are level 55; this part gets you to about 52.6
+  Unfinished Business [6023, level 57]: its mobs are level 57; this part gets you to about 53.5
+  Unfinished Business [6025, level 58]: is a level 58 quest; this part gets you to about 53.5
+  The Eastern Plagues [6185, level 60]: needs level 56; this part gets you to about 53.5
+  The Blightcaller Cometh [6186, level 60]: needs level 56; this part gets you to about 53.5
+  Tomb of the Lightbringer [9446, level 58]: needs level 55; this part gets you to about 53.5
+  The Mark of the Lightbringer [9474, level 58]: needs level 55; this part gets you to about 53.5
+
+Left out (22)
+-------------
+repeatable (9):
+  Counting Out Time [4973], Locked Away [5059], Felstone Field Cauldron [5218], Dalson's Tears Cauldron [5221], Writhing Haunt Cauldron [5224], Gahrron's Withering Cauldron [5227], Minion's Scourgestones [5402], Invader's Scourgestones [5403], Corruptor's Scourgestones [5404]
+dungeon quest (6):
+  Barov Family Fortune [5343], Doctor Theolen Krastinov, the Butcher [5382], Kirtonos the Herald [5384], The Lich, Ras Frostwhisper [5466], Krastinov's Bag of Horrors [5515], Of Love and Family [5848]
+not in the game (on Questie's quest blacklist) (5):
+  Moonstrike the Elder [8714], Meadowrun the Elder [8722], Honor the Flame [11827], Playing with Fire [11882], Incense for the Summer Scorchlings [11964]
+needs reputation (2):
+  Mantles of the Dawn [5507], Chromatic Mantle of the Dawn [5521]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Western Plaguelands - Alliance - part 2 of 3, planned from level 55
+Guide "52-60 Western Plaguelands" in group "Zone Routes (Alliance)": this part has 71 steps, 65 stops
+Written to guides/tbc/Western Plaguelands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 7 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+4 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 55. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 64 steps kept, 9 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 62 tasks, 12,834 yd on foot; ends at level 56.1; 2 hearths; at its hardest you are 2.5 levels below the mobs
+  everyone (quests that depend on other zones): 10 more tasks; their whole route comes to 13,334 yd; ends at level 56.1; 2 hearths; at its hardest you are 2.5 levels below the mobs
+  Paladin (quests that depend on other zones): 1 more tasks; their whole route comes to 13,334 yd; ends at level 56.1; 2 hearths; at its hardest you are 2.5 levels below the mobs
+Hearthstone: set at Argent Quartermaster Lightspark (Argent Quartermaster Lightspark's inn); 2 hearth steps in the guide.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (28)
+------------------------
+Start to finish here: 19 (19 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Glyphed Oaken Branch [4986, level 56] -> Darnassus
+  Mold Rhymes With... [5538, level 57] -> Tanaris
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Forging the Mightstone [8418, level 52, Paladin] <- your earlier visit to this zone
+  Mrs. Dalson's Diary [5058, level 55] <- your earlier visit to this zone
+  A Plague Upon Thee [5903, level 55] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  A Strange Historian [5153, level 56] - needs one of Auntie Marlene [5152]
+  The Annals of Darrowshire [5154, level 56] - needs one of A Strange Historian [5153]
+  Brother Carlin [5210, level 56] - needs one of The Annals of Darrowshire [5154] -> Eastern Plaguelands
+  The Battle of Darrowshire [5721, level 60] - needs one of Return to Chromie [5941] -> Eastern Plaguelands
+
+Worth checking in game
+----------------------
+
+Put off to a later part (11)
+----------------------------
+These need a higher level than this part ends at:
+  Alas, Andorhal [211, level 60]: is a level 60 quest; this part gets you to about 56.1
+  Catalogue of the Wayward [5164, level 60]: needs level 57; this part gets you to about 56.1
+  Breastplate of the Chromatic Flight [5166, level 60]: needs level 57; this part gets you to about 56.1
+  Legplates of the Chromatic Defier [5167, level 60]: needs level 57; this part gets you to about 56.1
+  The Human, Ras Frostwhisper [5461, level 60]: needs level 57; this part gets you to about 56.1
+  The Dying, Ras Frostwhisper [5462, level 60]: needs level 57; this part gets you to about 56.1
+  The Key to Scholomance [5505, level 60]: follows Araj's Scarab [5803]
+  Araj's Scarab [5803, level 60]: is a level 60 quest; this part gets you to about 56.1
+  In Dreams [5944, level 60]: is a level 60 quest; this part gets you to about 56.1
+  The Eastern Plagues [6185, level 60]: needs level 56; this part gets you to about 56.1
+  The Blightcaller Cometh [6186, level 60]: needs level 56; this part gets you to about 56.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Western Plaguelands - Alliance - part 3 of 3, planned from level 59
+Guide "52-60 Western Plaguelands" in group "Zone Routes (Alliance)": this part has 28 steps, 27 stops
+Written to guides/tbc/Western Plaguelands (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+5 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 59. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 4 steps kept, 20 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 878 yd on foot; ends at level 59.1
+  everyone (quests that depend on other zones): 20 more tasks; their whole route comes to 7,035 yd; ends at level 59.1
+  Paladin (quests that depend on other zones): 1 more tasks; their whole route comes to 7,035 yd; ends at level 59.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (14)
+------------------------
+Start to finish here: 1 (1 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Forging the Mightstone [8418, level 52, Paladin] <- your earlier visit to this zone
+  Mrs. Dalson's Diary [5058, level 55] <- your earlier visit to this zone
+  A Plague Upon Thee [5903, level 55] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (10):
+  Catalogue of the Wayward [5164, level 60] - needs one of Wrath of the Blue Flight [5162]
+  Breastplate of the Chromatic Flight [5166, level 60] - needs one of Catalogue of the Wayward [5164]
+  Legplates of the Chromatic Defier [5167, level 60] - needs one of Catalogue of the Wayward [5164]
+  The Human, Ras Frostwhisper [5461, level 60] - needs one of Kirtonos the Herald [5384]
+  The Dying, Ras Frostwhisper [5462, level 60] - needs one of The Human, Ras Frostwhisper [5461] -> Eastern Plaguelands
+  The Key to Scholomance [5505, level 60] - needs one of Araj's Scarab [5803]
+  Araj's Scarab [5803, level 60] - needs one of Fire Plume Forged [5801]
+  In Dreams [5944, level 60] - needs one of Scarlet Subterfuge [5862]
+  The Eastern Plagues [6185, level 60] - needs one of Flint Shadowmore [6184]
+  The Blightcaller Cometh [6186, level 60] - needs one of The Eastern Plagues [6185] -> Stormwind City
+
+Worth checking in game
+----------------------
+  The Eastern Plagues [6185, level 60]: mixes a kill-credit objective with others; check that "Nathanos Blightcaller" really is line 4 in the quest log
+  The Eastern Plagues [6185, level 60]: "The Blightcaller Uncovered" is assumed to be line 5 in the quest log; check it
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

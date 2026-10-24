@@ -1,0 +1,300 @@
+Azshara - Alliance - part 1 of 4, planned from level 47
+Guide "47-60 Azshara" in group "Zone Routes (Alliance)": this part has 19 steps, 17 stops
+Written to guides/tbc/Azshara (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 47. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 22 new ones slotted in, 0 moved because their prerequisites changed, 5 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 9 tasks, 1,508 yd on foot; ends at level 47.2
+  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 5,875 yd; ends at level 47.2; at its hardest you are 11.8 levels below the mobs
+  Rogue (quests that depend on other zones): 2 more tasks; their whole route comes to 8,155 yd; ends at level 47.2; at its hardest you are 11.8 levels below the mobs
+  Priest (quests that depend on other zones): 1 more tasks; their whole route comes to 6,455 yd; ends at level 47.2; at its hardest you are 11.8 levels below the mobs
+  Hunter (quests that depend on other zones): 1 more tasks; their whole route comes to 6,455 yd; ends at level 47.2; at its hardest you are 11.8 levels below the mobs
+  Mage (quests that depend on other zones): 1 more tasks; their whole route comes to 6,061 yd; ends at level 47.2; at its hardest you are 11.8 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (9)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (6):
+  Arcane Runes [3449, level 52] <- Ironforge
+  The Hunter's Charm [8151, level 52, Hunter] <- Thunder Bluff
+  Sealed Azure Bag [8234, level 52, Rogue] <- Alterac Mountains
+  Magecraft [8250, level 52, Mage] <- Stormwind City
+  Cenarion Aid [8254, level 52, Priest] <- Thunder Bluff
+  The Demon Hunter [2744, level 60] <- Swamp of Sorrows
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Return to Tymor [3461, level 52] - needs one of Arcane Runes [3449] -> Ironforge
+
+Worth checking in game
+----------------------
+
+Put off to a later part (29)
+----------------------------
+These need a higher level than this part ends at:
+  Loramus [3141, level 57]: needs level 56; this part gets you to about 47.3
+  Breaking the Ward [3508, level 58]: needs level 56; this part gets you to about 47.3
+  The Name of the Beast [3509, level 58]: needs level 56; this part gets you to about 47.3
+  The Name of the Beast [3510, level 58]: its mobs are level 55; this part gets you to about 47.3
+  The Name of the Beast [3511, level 58]: follows The Name of the Beast [3510]
+  Kim'jael Indeed! [3601, level 53]: is a level 53 quest; this part gets you to about 47.3
+  Azsharite [3602, level 58]: is a level 58 quest; this part gets you to about 47.3
+  The Formation of Felbane [3621, level 58]: follows Azsharite [3602]
+  Kim'jael's "Missing" Equipment [5534, level 53]: its mobs are level 50; this part gets you to about 47.3
+  Poisoned Water [6804, level 56]: needs level 55; this part gets you to about 47.3
+  Stormers and Rumblers [6805, level 57]: needs level 55; this part gets you to about 47.3
+  Eye of the Emberseer [6821, level 60]: needs level 58; this part gets you to about 47.3
+  The Molten Core [6822, level 60]: needs level 58; this part gets you to about 47.3
+  Agent of Hydraxis [6823, level 60]: needs level 60; this part gets you to about 47.3
+  Hands of the Enemy [6824, level 60]: needs level 60; this part gets you to about 47.3
+  A Hero's Reward [7486, level 60]: needs level 60; this part gets you to about 47.3
+  Courser Antlers [8153, level 52]: needs level 50; this part gets Hunter characters to about 47.3
+  Wavethrashing [8231, level 52]: needs level 50; this part gets Hunter characters to about 47.3
+  The Green Drake [8232, level 52]: needs level 50; this part gets Hunter characters to about 47.3
+  Encoded Fragments [8235, level 52]: needs level 50; this part gets Rogue characters to about 47.3
+  The Azure Key [8236, level 52]: needs level 50; this part gets Rogue characters to about 47.3
+  Magic Dust [8251, level 52]: needs level 50; this part gets Mage characters to about 47.7
+  The Siren's Coral [8252, level 52]: needs level 50; this part gets Mage characters to about 47.7
+  Destroy Morphaz [8253, level 52]: needs level 50; this part gets Mage characters to about 47.7
+  Of Coursers We Know [8255, level 52]: needs level 50; this part gets Priest characters to about 47.3
+  The Ichor of Undeath [8256, level 52]: needs level 50; this part gets Priest characters to about 47.3
+  Blood of Morphaz [8257, level 52]: needs level 50; this part gets Priest characters to about 47.3
+  Warlord Krellian [9362, level 60]: needs level 60; this part gets Mage characters to about 47.7
+  Fragmented Magic [9364, level 60]: needs level 60; this part gets Mage characters to about 47.7
+
+Left out (6)
+------------
+repeatable (3):
+  A Crew Under Fire [3382], Return Trip [3421], Meeting with the Master [3503]
+needs a profession (1):
+  Dragonscale Leatherworking [5141]
+needs reputation (1):
+  Azuregos's Magical Ledger [8575]
+not in the game (on Questie's quest blacklist) (1):
+  Skygleam the Elder [8720]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Azshara - Alliance - part 2 of 4, planned from level 50
+Guide "47-60 Azshara" in group "Zone Routes (Alliance)": this part has 14 steps, 11 stops
+Written to guides/tbc/Azshara (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Mage), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 50. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 16 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 9 tasks, 2,303 yd on foot; ends at level 50.2; at its hardest you are 2.0 levels below the mobs
+  Mage: 7 more tasks; their whole route comes to 6,497 yd; ends at level 50.3; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 50 for Magic Dust (Mage)
+
+Quests in the guide (5)
+-----------------------
+Start to finish here: 4 (2 for everyone, 2 Mage)
+
+Hand-in step only shows once complete (1):
+  Destroy Morphaz [8253, level 52, Mage] - needs Arcane Shard (1) (an unknown place)
+
+Worth checking in game
+----------------------
+
+Put off to a later part (24)
+----------------------------
+These need a higher level than this part ends at:
+  Loramus [3141, level 57]: needs level 56; this part gets you to about 50.2
+  Breaking the Ward [3508, level 58]: needs level 56; this part gets you to about 50.2
+  The Name of the Beast [3509, level 58]: needs level 56; this part gets you to about 50.2
+  The Name of the Beast [3510, level 58]: its mobs are level 55; this part gets you to about 50.2
+  The Name of the Beast [3511, level 58]: follows The Name of the Beast [3510]
+  Azsharite [3602, level 58]: is a level 58 quest; this part gets you to about 50.2
+  The Formation of Felbane [3621, level 58]: follows Azsharite [3602]
+  Poisoned Water [6804, level 56]: needs level 55; this part gets you to about 50.2
+  Stormers and Rumblers [6805, level 57]: needs level 55; this part gets you to about 50.2
+  Eye of the Emberseer [6821, level 60]: needs level 58; this part gets you to about 50.2
+  The Molten Core [6822, level 60]: needs level 58; this part gets you to about 50.2
+  Agent of Hydraxis [6823, level 60]: needs level 60; this part gets you to about 50.2
+  Hands of the Enemy [6824, level 60]: needs level 60; this part gets you to about 50.2
+  A Hero's Reward [7486, level 60]: needs level 60; this part gets you to about 50.2
+  Courser Antlers [8153, level 52]: needs level 50; this part gets Hunter characters to about 50.2
+  Wavethrashing [8231, level 52]: needs level 50; this part gets Hunter characters to about 50.2
+  The Green Drake [8232, level 52]: needs level 50; this part gets Hunter characters to about 50.2
+  Encoded Fragments [8235, level 52]: needs level 50; this part gets Rogue characters to about 50.2
+  The Azure Key [8236, level 52]: needs level 50; this part gets Rogue characters to about 50.2
+  Of Coursers We Know [8255, level 52]: needs level 50; this part gets Priest characters to about 50.2
+  The Ichor of Undeath [8256, level 52]: needs level 50; this part gets Priest characters to about 50.2
+  Blood of Morphaz [8257, level 52]: needs level 50; this part gets Priest characters to about 50.2
+  Warlord Krellian [9362, level 60]: needs level 60; this part gets Mage characters to about 50.5
+  Fragmented Magic [9364, level 60]: needs level 60; this part gets Mage characters to about 50.5
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Azshara - Alliance - part 3 of 4, planned from level 56
+Guide "47-60 Azshara" in group "Zone Routes (Alliance)": this part has 25 steps, 23 stops
+Written to guides/tbc/Azshara (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 56. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 21 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 2 tasks, 0 yd on foot; ends at level 56.0
+  Rogue (quests that depend on other zones): 4 more tasks; their whole route comes to 5,196 yd; ends at level 56.0
+  Priest (quests that depend on other zones): 7 more tasks; their whole route comes to 3,817 yd; ends at level 56.0
+  Hunter (quests that depend on other zones): 7 more tasks; their whole route comes to 7,780 yd; ends at level 56.0
+  Mage (quests that depend on other zones): 1 more tasks; their whole route comes to 2,778 yd; ends at level 56.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (11)
+------------------------
+Start to finish here: 0 (0 for everyone)
+
+Hand-in step only shows once complete (2):
+  Poisoned Water [6804, level 56] - needs Discordant Bracers (12) (Eastern Plaguelands)
+  Stormers and Rumblers [6805, level 57] - needs Dust Stormer slain (15) (Silithus); Desert Rumbler slain (15) (Silithus)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Destroy Morphaz [8253, level 52, Mage] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (8):
+  Courser Antlers [8153, level 52, Hunter] - needs one of The Hunter's Charm [8151]
+  Wavethrashing [8231, level 52, Hunter] - needs one of Courser Antlers [8153]
+  The Green Drake [8232, level 52, Hunter] - needs one of Wavethrashing [8231]
+  Encoded Fragments [8235, level 52, Rogue] - needs one of Sealed Azure Bag [8234]
+  The Azure Key [8236, level 52, Rogue] - needs one of Encoded Fragments [8235] -> Alterac Mountains
+  Of Coursers We Know [8255, level 52, Priest] - needs one of Cenarion Aid [8254]
+  The Ichor of Undeath [8256, level 52, Priest] - needs one of Of Coursers We Know [8255]
+  Blood of Morphaz [8257, level 52, Priest] - needs one of The Ichor of Undeath [8256] -> Felwood
+
+Worth checking in game
+----------------------
+
+Put off to a later part (14)
+----------------------------
+These need a higher level than this part ends at:
+  Loramus [3141, level 57]: needs level 56; this part gets you to about 56.0
+  Breaking the Ward [3508, level 58]: needs level 56; this part gets you to about 56.0
+  The Name of the Beast [3509, level 58]: needs level 56; this part gets you to about 56.0
+  The Name of the Beast [3510, level 58]: follows The Name of the Beast [3509]
+  The Name of the Beast [3511, level 58]: follows The Name of the Beast [3510]
+  Azsharite [3602, level 58]: follows The Name of the Beast [3511]
+  The Formation of Felbane [3621, level 58]: follows Azsharite [3602]
+  Eye of the Emberseer [6821, level 60]: needs level 58; this part gets you to about 56.0
+  The Molten Core [6822, level 60]: needs level 58; this part gets you to about 56.0
+  Agent of Hydraxis [6823, level 60]: needs level 60; this part gets you to about 56.0
+  Hands of the Enemy [6824, level 60]: needs level 60; this part gets you to about 56.0
+  A Hero's Reward [7486, level 60]: needs level 60; this part gets you to about 56.0
+  Warlord Krellian [9362, level 60]: needs level 60; this part gets Mage characters to about 56.1
+  Fragmented Magic [9364, level 60]: needs level 60; this part gets Mage characters to about 56.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Azshara - Alliance - part 4 of 4, planned from level 61
+Guide "47-60 Azshara" in group "Zone Routes (Alliance)": this part has 41 steps, 40 stops
+Written to guides/tbc/Azshara (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Mage), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 61. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 39 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  Mage: 6 tasks, 2,378 yd on foot; ends at level 61.0
+  everyone (quests that depend on other zones): 32 more tasks; their whole route comes to 8,676 yd; ends at level 61.0
+  Mage (quests that depend on other zones): 1 more tasks; their whole route comes to 11,054 yd; ends at level 61.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (17)
+------------------------
+Start to finish here: 2 (0 for everyone, 2 Mage)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Destroy Morphaz [8253, level 52, Mage] <- your earlier visit to this zone
+  Poisoned Water [6804, level 56] <- your earlier visit to this zone
+  Stormers and Rumblers [6805, level 57] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (12):
+  Loramus [3141, level 57] - needs one of The Demon Hunter [2744]
+  Breaking the Ward [3508, level 58] - needs one of Loramus [3141]
+  The Name of the Beast [3509, level 58] - needs one of Breaking the Ward [3508]
+  The Name of the Beast [3510, level 58] - needs one of The Name of the Beast [3509]
+  The Name of the Beast [3511, level 58] - needs one of The Name of the Beast [3510]
+  Azsharite [3602, level 58] - needs one of The Name of the Beast [3511]
+  The Formation of Felbane [3621, level 58] - needs one of Azsharite [3602] -> Stranglethorn Vale
+  Eye of the Emberseer [6821, level 60] - needs Poisoned Water [6804], Stormers and Rumblers [6805]
+  The Molten Core [6822, level 60] - needs one of Eye of the Emberseer [6821]
+  Agent of Hydraxis [6823, level 60] - needs one of The Molten Core [6822]
+  Hands of the Enemy [6824, level 60] - needs one of Agent of Hydraxis [6823]
+  A Hero's Reward [7486, level 60] - needs one of Hands of the Enemy [6824]
+
+Worth checking in game
+----------------------
+1 quests have no experience figure in the database: their experience is estimated, and 0 of them list no prerequisite in the database.
+If one of these is offered too early or too late in game, add a "pre" entry for it to the zone file:
+  
+  The Molten Core [6822, level 60]: "Molten Giant (1)" has no place in the data; taken to be done where the quest is given
+  The Molten Core [6822, level 60]: "Firelord (1)" has no place in the data; taken to be done where the quest is given
+  The Molten Core [6822, level 60]: "Ancient Core Hound (1)" has no place in the data; taken to be done where the quest is given
+  The Molten Core [6822, level 60]: "Lava Surger (1)" has no place in the data; taken to be done where the quest is given
+  Agent of Hydraxis [6823, level 60]: has a reputation or spell objective, which is not planned
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,95 @@
+Duskwood - Alliance - part 1 of 2, planned from level 21
+Guide "21-25 Duskwood" in group "Zone Routes (Alliance)": this part has 104 steps, 90 stops
+Written to guides/mop/Duskwood (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+5 pickups or hand-ins are within reach of a stop but planned for later.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 21. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 127 steps kept, 11 new ones slotted in, 1 moved because their prerequisites changed, 3 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 137 tasks, 30,428 yd on foot; ends at level 25.9; 3 hearths
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 30,428 yd; ends at level 25.9; 3 hearths
+Hearthstone: set at Avette Fellwood (Avette Fellwood's inn); 3 hearth steps in the guide.
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+2 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (55)
+------------------------
+Start to finish here: 52 (3 for everyone, 49 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Rebels Without a Clue [26838, level 25, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Northern Stranglethorn
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Hero's Call: Duskwood! [26728, level 20, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Redridge Mountains
+  Hero's Call: Duskwood! [28564, level 20, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Stormwind City
+
+Worth checking in game
+----------------------
+  The Fate of Morbent Fel [26723, level 24, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Bloodsoaked Hat" is line 1 by the database, but RestedXP's guide has "1/1 Remains of Morbent Fel" there
+  The Cries of the Dead [26778, level 24, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: objective "Flesh Eater (20)" is line 1 by the database, but RestedXP's guide has "20/20 Ghoul slain" there
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  Classy Glass [26685, level 22]: its mobs are level 30; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 26.0
+
+Left out (63)
+-------------
+not in the game (on Questie's quest blacklist) (59):
+  Jitters' Growling Gut [5], The Night Watch [56], The Night Watch [57], The Night Watch [58], The Legend of Stalvan [66], The Legend of Stalvan [68], The Legend of Stalvan [78], The Legend of Stalvan [79], The Legend of Stalvan [80], Seasoned Wolf Kabobs [90], Dusky Crab Cakes [93], Sven's Revenge [95], The Legend of Stalvan [98], The Totem of Infliction [101], Ghoulish Effigy [133], Ogre Thieves [134], Messenger to Darkshire [145], Supplies from Darkshire [148], Ghost Hair Thread [149], Return the Comb [154], Gather Rot Blossoms [156], Deliver the Thread [157], Zombie Juice [158], Juice Delivery [159], Note to the Mayor [160], Raven Hill [163], The Hermit [165], Worgen in the Woods [173], Worgen in the Woods [221], Worgen in the Woods [222], Worgen in the Woods [223], The Weathered Grave [225], Morgan Ladimore [227], Mor'Ladim [228], The Daughter Who Lived [229], A Daughter's Love [231], Return to Jitters [240], Translation to Ello [252], The Shadowy Figure [262], The Shadowy Search Continues [265], ... 19 more
+repeatable (2):
+  CLUCK! [3861], Eric Davidson [31850]
+special category (sort -394) (2):
+  Eric Davidson [31726], Steven Lisbane [31729]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Duskwood - Alliance - part 2 of 2, planned from level 28
+Guide "21-25 Duskwood" in group "Zone Routes (Alliance)": this part has 4 steps, 3 stops
+Written to guides/mop/Duskwood (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 28. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 3 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 3,870 yd on foot; ends at level 28.1; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (1)
+-----------------------
+Start to finish here: 1 (0 for everyone, 1 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

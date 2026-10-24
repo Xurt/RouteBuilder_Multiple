@@ -1,0 +1,69 @@
+Burning Steppes - Horde
+Guide "51-54 Burning Steppes" in group "Zone Routes (Horde)": 13 steps, 10 stops
+Written to guides/classic/Burning Steppes (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 720 objective notes read from 50 guide files
+
+Checks
+------
+Played through as 20 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 51. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 8 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed, 5 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 51, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 7 tasks, 2,417 yd on foot; ends at level 51.0
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 2,417 yd; ends at level 51.0
+  Warlock (quests that depend on other zones): 2 more tasks; their whole route comes to 3,969 yd; ends at level 51.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+
+Quests in the guide (7)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Felnok Steelspring [4808, level 54] -> Winterspring
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Dreadmaul Rock [3821, level 52] <- Badlands
+  Return to Tinkee [4810, level 54] <- Winterspring
+  Mor'zul Bloodbringer [7562, level 58, Warlock] <- Stormwind City
+  Xorothian Stardust [7625, level 60, Warlock] <- Felwood
+
+Worth checking in game
+----------------------
+
+Not planned (12)
+----------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Krom'Grul [3822, level 53]: its mobs are level 54; this part gets you to about 51.0
+  A Taste of Flame [4022, level 54]: its mobs are level 55; this part gets you to about 51.0
+  Leonid Barthalomew [5522, level 60]: needs level 57; this part gets you to about 51.0
+  Rage of Blood [7563, level 58]: needs level 60; this part gets Warlock characters to about 51.0
+  Wildeyes [7564, level 58]: needs level 60; this part gets Warlock characters to about 51.0
+  Lord Banehollow [7623, level 58]: needs level 60; this part gets Warlock characters to about 51.0
+  Bell of Dethmoora [7626, level 60]: needs level 60; this part gets Warlock characters to about 51.0
+  Wheel of the Black March [7627, level 60]: needs level 60; this part gets Warlock characters to about 51.0
+  Doomsday Candle [7628, level 60]: needs level 60; this part gets Warlock characters to about 51.0
+  Imp Delivery [7629, level 60]: needs level 60; this part gets Warlock characters to about 51.0
+  Arcanite [7630, level 60]: needs level 60; this part gets Warlock characters to about 51.0
+  Dreadsteed of Xoroth [7631, level 60]: needs level 60; this part gets Warlock characters to about 51.0
+
+Left out (22)
+-------------
+dungeon quest (14):
+  Dark Iron Legacy [3801], Dark Iron Legacy [3802], A Taste of Flame [4024], Precarious Predicament [4121], Grark Lorkrub [4122], The Heart of the Mountain [4123], Ribbly Screwspigot [4136], Yuka Screwspigot [4324], Kibler's Exotic Pets [4729], Egg Freezing [4734], Egg Collection [4735], En-Ay-Es-Tee-Why [4862], Mother's Milk [4866], Tinkee Steamboil [4907]
+repeatable (5):
+  Libram of Rumination [4463], Libram of Constitution [4481], Libram of Tenacity [4482], Libram of Resilience [4483], Libram of Voracity [4484]
+not in the game (on Questie's quest blacklist) (2):
+  Rumblerock the Elder [8636], Dawnstrider the Elder [8683]
+cannot be taken together with A Taste of Flame [4022], which is in the guide (1):
+  A Taste of Flame [4023]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

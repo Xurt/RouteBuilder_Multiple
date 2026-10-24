@@ -1,0 +1,239 @@
+Loch Modan - Alliance - part 1 of 4, planned from level 10
+Guide "10-22 Loch Modan" in group "Zone Routes (Alliance)": this part has 42 steps, 27 stops
+Written to guides/tbc/Loch Modan (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+9 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 10. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 22 steps kept, 13 new ones slotted in, 0 moved because their prerequisites changed, 8 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 26 tasks, 6,577 yd on foot; ends at level 11.5; 1 hearth; at its hardest you are 1.8 levels below the mobs
+  Dwarf/Gnome: 3 more tasks; their whole route comes to 7,324 yd; ends at level 11.6; 1 hearth; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 7,956 yd; ends at level 11.5; 1 hearth; at its hardest you are 1.8 levels below the mobs
+  Dwarf/Gnome (quests that depend on other zones): 1 more tasks; their whole route comes to 8,376 yd; ends at level 11.6; 1 hearth; at its hardest you are 1.8 levels below the mobs
+Hearthstone: set at Honni Goldenoat (Honni Goldenoat's inn); 1 hearth step in the guide.
+11 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (17)
+------------------------
+Start to finish here: 8 (7 for everyone, 1 Dwarf/Gnome)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Ride to Ironforge [6391, level 10, Dwarf/Gnome] -> Ironforge
+  Stormpike's Order [1338, level 14] -> Stormwind City
+  Report to Ironforge [301, level 15] -> Ironforge
+
+Brought in from another zone and handed in here - steps show only if you have the quest (6):
+  Stout to Kadrell [414, level 10] <- Dun Morogh
+  Return to Brock [6392, level 10, Dwarf/Gnome] <- Ironforge
+  Powder to Ironband [302, level 15] <- Ironforge
+  Stormpike's Delivery [353, level 15] <- Stormwind City
+  Find Bingles [2039, level 15] <- Ironforge
+  A Dark Threat Looms [274, level 18] <- Wetlands
+
+Worth checking in game
+----------------------
+
+Put off to a later part (24)
+----------------------------
+These need a higher level than this part ends at:
+  A Dark Threat Looms [161, level 18]: needs level 16; this part gets you to about 14.0
+  A Dark Threat Looms [199, level 18]: needs level 16; this part gets you to about 14.0
+  In Defense of the King's Lands [217, level 17]: its mobs are level 17; this part gets you to about 14.0
+  A Dark Threat Looms [250, level 18]: needs level 16; this part gets you to about 14.0
+  Mercenaries [255, level 19]: its mobs are level 19; this part gets you to about 14.0
+  WANTED: Chok'sul [256, level 22]: its mobs are level 22; this part gets you to about 14.0
+  A Hunter's Boast [257, level 16]: its mobs are level 15; this part gets you to about 12.5
+  A Hunter's Challenge [258, level 17]: its mobs are level 16; this part gets you to about 14.0
+  In Defense of the King's Lands [263, level 15]: its mobs are level 15; this part gets you to about 12.5
+  Vyrin's Revenge [271, level 20]: its mobs are level 20; this part gets you to about 14.0
+  Resupplying the Excavation [273, level 15]: is a level 15 quest; this part gets you to about 12.0
+  A Dark Threat Looms [278, level 18]: needs level 16; this part gets you to about 14.0
+  A Dark Threat Looms [280, level 18]: needs level 16; this part gets you to about 14.0
+  A Dark Threat Looms [283, level 20]: needs level 16; this part gets you to about 14.0
+  Gathering Idols [297, level 18]: its mobs are level 18; this part gets you to about 14.0
+  Filthy Paws [307, level 15]: is a level 15 quest; this part gets you to about 12.0
+  Protecting the Shipment [309, level 15]: is a level 15 quest; this part gets you to about 12.0
+  Crocolisk Hunting [385, level 15]: its mobs are level 14; this part gets you to about 12.0
+  Ironband's Excavation [436, level 18]: needs level 13; this part gets you to about 12.5
+  After the Ambush [454, level 15]: follows Resupplying the Excavation [273]
+  The Algaz Gauntlet [455, level 21]: needs level 19; this part gets you to about 14.0
+  Report to Mountaineer Rockgar [468, level 21]: needs level 19; this part gets you to about 14.0
+  Vyrin's Revenge [531, level 20]: needs level 15; this part gets you to about 14.0
+  Bingles' Missing Supplies [2038, level 15]: needs level 12; this part gets you to about 12.1
+
+Left out (20)
+-------------
+above this zone's range of 10-22 (12):
+  Uldaman Reagent Run [17], Stonegear's Search [467], Crystal in the Mountains [635], Agmond's Fate [704], Ironband Wants You! [707], Find Agmond [738], Murdaloc [739], The Shattered Necklace [2198], Badlands Reagent Run [2500], The Horn of the Beast [3181], Proof of Deed [3182], At Last! [3201]
+not in the game (on Questie's quest blacklist) (5):
+  Silvervein the Elder [8642], Honor the Flame [11820], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Candy Bucket [12339]
+needs a profession (2):
+  Supplying the Front [1578], Badlands Reagent Run II [2501]
+repeatable (1):
+  Bailor's Ore Shipment [1655]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Loch Modan - Alliance - part 2 of 4, planned from level 14
+Guide "10-22 Loch Modan" in group "Zone Routes (Alliance)": this part has 38 steps, 35 stops
+Written to guides/tbc/Loch Modan (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 14. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 4 steps kept, 35 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 31 tasks, 11,119 yd on foot; ends at level 15.0; 1 hearth; at its hardest you are 2.1 levels below the mobs
+  everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 11,902 yd; ends at level 15.0; 1 hearth; at its hardest you are 2.1 levels below the mobs
+Hearthstone: set at Aldren Cordon (Aldren Cordon's inn); 1 hearth step in the guide.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (11)
+------------------------
+Start to finish here: 8 (8 for everyone)
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Resupplying the Excavation [273, level 15] - needs one of Powder to Ironband [302]
+  Protecting the Shipment [309, level 15] - needs one of After the Ambush [454]
+  After the Ambush [454, level 15] - needs one of Resupplying the Excavation [273]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (13)
+----------------------------
+These need a higher level than this part ends at:
+  A Dark Threat Looms [161, level 18]: needs level 16; this part gets you to about 15.9
+  A Dark Threat Looms [199, level 18]: needs level 16; this part gets you to about 15.9
+  A Dark Threat Looms [250, level 18]: needs level 16; this part gets you to about 15.9
+  Mercenaries [255, level 19]: its mobs are level 19; this part gets you to about 15.9
+  WANTED: Chok'sul [256, level 22]: its mobs are level 22; this part gets you to about 15.9
+  Vyrin's Revenge [271, level 20]: its mobs are level 20; this part gets you to about 15.9
+  A Dark Threat Looms [278, level 18]: needs level 16; this part gets you to about 15.9
+  A Dark Threat Looms [280, level 18]: needs level 16; this part gets you to about 15.9
+  A Dark Threat Looms [283, level 20]: needs level 16; this part gets you to about 15.9
+  Gathering Idols [297, level 18]: its mobs are level 18; this part gets you to about 15.9
+  The Algaz Gauntlet [455, level 21]: needs level 19; this part gets you to about 15.9
+  Report to Mountaineer Rockgar [468, level 21]: needs level 19; this part gets you to about 15.9
+  Vyrin's Revenge [531, level 20]: follows Vyrin's Revenge [271]
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Loch Modan - Alliance - part 3 of 4, planned from level 18
+Guide "10-22 Loch Modan" in group "Zone Routes (Alliance)": this part has 27 steps, 24 stops
+Written to guides/tbc/Loch Modan (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 18. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 27 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 18 tasks, 6,629 yd on foot; ends at level 18.6; at its hardest you are 1.6 levels below the mobs
+  everyone (quests that depend on other zones): 9 more tasks; their whole route comes to 8,345 yd; ends at level 18.6; at its hardest you are 1.6 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (10)
+------------------------
+Start to finish here: 6 (6 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  A Dark Threat Looms [161, level 18] -> Wetlands
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  A Dark Threat Looms [278, level 18] - needs one of A Dark Threat Looms [274]
+  A Dark Threat Looms [280, level 18] - needs one of A Dark Threat Looms [278]
+  A Dark Threat Looms [283, level 20] - needs one of A Dark Threat Looms [280]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (3)
+---------------------------
+These need a higher level than this part ends at:
+  WANTED: Chok'sul [256, level 22]: its mobs are level 22; this part gets you to about 18.7
+  The Algaz Gauntlet [455, level 21]: needs level 19; this part gets you to about 18.7
+  Report to Mountaineer Rockgar [468, level 21]: needs level 19; this part gets you to about 18.7
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Loch Modan - Alliance - part 4 of 4, planned from level 21
+Guide "10-22 Loch Modan" in group "Zone Routes (Alliance)": this part has 6 steps, 5 stops
+Written to guides/tbc/Loch Modan (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 21. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 6 tasks, 3,387 yd on foot; ends at level 21.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (3)
+-----------------------
+Start to finish here: 2 (2 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  The Algaz Gauntlet [455, level 21] -> Wetlands
+
+Worth checking in game
+----------------------
+  The Algaz Gauntlet [455, level 21]: "Traverse Dun Algaz" is assumed to be line 3 in the quest log; check it
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

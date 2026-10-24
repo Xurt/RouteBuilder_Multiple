@@ -1,0 +1,128 @@
+Krasarang Wilds - Alliance - part 1 of 2, planned from level 86
+Guide "86-88 Krasarang Wilds" in group "Zone Routes (Alliance)": this part has 147 steps, 125 stops
+Written to guides/mop/Krasarang Wilds (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+14 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 86. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 168 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed, 5 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 133 tasks, 32,848 yd on foot; ends at level 86.3
+  everyone (quests that depend on other zones): 38 more tasks; their whole route comes to 36,614 yd; ends at level 86.3
+Hearthstone: set at Supplies Kodo (Supplies Kodo's inn); 0 hearth steps in the guide.
+4 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+3 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+13 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (54)
+------------------------
+Start to finish here: 39 (22 for everyone, 17 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Hand-in step only shows once complete (1):
+  Why So Serious? [30088, level 86] - needs Jar of Pigment (1) (Valley of the Four Winds)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Ken-Ken [29873, level 85] <- Valley of the Four Winds
+  Kang Bramblestaff [29874, level 85, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Valley of the Four Winds
+
+Need a quest this guide does not hand in - steps show only once that is done (12):
+  Apply Directly to the Forehead [30089, level 86] - needs one of Why So Serious? [30088]
+  Zhu's Despair [30090, level 86] - needs one of Apply Directly to the Forehead [30089]
+  Into the Wilds [30178, level 86, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Zhu's Despair [30090]
+  The Murksweats [30268, level 87] - needs one of Unsafe Passage [30269]
+  Unsafe Passage [30269, level 87] - needs one of Into the Wilds [30133], Into the Wilds [30178]
+  Blinding the Riverblades [30270, level 87] - needs one of Unsafe Passage [30269]
+  Sha Can Awe [30271, level 87] - needs The Murksweats [30268], Blinding the Riverblades [30270], Tread Lightly [30694]
+  Striking the Rain [30272, level 87] - needs The Murksweats [30268], Blinding the Riverblades [30270], Tread Lightly [30694]
+  In the House of the Red Crane [30273, level 87] - needs Sha Can Awe [30271], Striking the Rain [30272], Ahead on the Way [30695]
+  Warn Stoneplow [30360, level 87, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs In the House of the Red Crane [30273] -> Valley of the Four Winds
+  Tread Lightly [30694, level 87] - needs one of Unsafe Passage [30269]
+  Ahead on the Way [30695, level 87] - needs The Murksweats [30268], Blinding the Riverblades [30270], Tread Lightly [30694]
+
+Worth checking in game
+----------------------
+  Zhu's Despair [30090, level 86]: could not read how many Essence of Despair are needed from the quest text; assumed 8
+
+Put off to a later part (2)
+---------------------------
+These need a higher level than this part ends at:
+  The Road to Kun-Lai [31254, level 87]: needs level 87; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 86.3
+  Temple of the White Tiger [31392, level 87]: needs level 87; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 86.3
+
+Left out (105)
+--------------
+repeatable (67):
+  Shocking! [30584], What Lurks Below [30585], Jagged Abalone [30586], Fishing for a Bruising [30588], Who Knew Fish Liked Eggs? [30598], Armored Carp [30613], Huff & Puff [30658], Like Bombing Fish In A Barrel [30678], Scavenger Hunt [30698], Snapclaw [30700], Viseclaw Soup [30701], Chasing Hope [30716], Gifts of the Great Crane [30717], Students of Chi-Ji [30718], Ellia Ravenmane [30725], Minh Do-Tan [30726], Ellia Ravenmane: Rematch [30727], Fat Long-Fat [30728], Julia Bates [30729], Dextrous Izissha [30730], Kuo-Na Quillpaw [30731], Ellia Ravenmane: Revenge [30732], Tukka-Tuk [30733], Huck Wheelbarrow [30734], Mindel Sunspeaker [30735], Yan Quillpaw [30736], Fat Long-Fat: Rematch [30737], Thelonius [30738], Ellia Ravenmane: Redemption [30739], Champion of Chi-Ji [30740], Jumping the Shark [30753], Bright Bait [30754], Piranha! [30763], Challenge At The Temple of the Red Crane [31378], Flying Tiger Gourami [31443], Spinefish Alpha [31444], Mimic Octopus [31446], Grand Master Mo'ruk [31954], Flying Tiger Gourami [32107], Priorities, People! [32116], ... 27 more
+needs reputation (20):
+  To Mogujia [32193], Anduin's Plea [32315], The Monkey King [32321], The Kirin Tor [32331], The First Riddle: Mercy [32332], The Second Riddle: Fellowship [32333], The Third Riddle: Strength [32334], The Greatest Prank [32335], The Handle [32336], The Head [32337], The Harmonic Ointment [32338], The Harmonic Mallet [32355], The Kun-Lai Expedition [32370], The Best Around [32380], He's In Deep [32382], The Ruins of Korune [32393], The Bell Speaks [32400], Darnassus Attacked? [32414], What Had To Be Done [32423], The Silence [32455]
+not in the game (on Questie's quest blacklist) (8):
+  Poisoned! [30345], Into the Wilds [30462], Going on the Offensive [30465], zzOld [31445], Candy Bucket [32034], Candy Bucket [32036], Rebuilding the Mallet (Tracker) [32339], Honor the Flame [32499]
+special category (sort -397) (4):
+  Lion's Landing [32109], Meet the Scout [32246], A King Among Men [32247], A Little Patience [32248]
+above this zone's range of 85-89 (3):
+  The Funky Monkey Brew [31058], Everything I Know About Cooking [31486], Slaughter Selenora [32314]
+handed in here, but the database does not say where it starts (1):
+  Sea Snakes [30375]
+cannot be taken together with Warn Stoneplow [30360], which is in the guide (1):
+  Hope Springs Eternal [30376]
+needs a profession (1):
+  The Anglers [31369]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Krasarang Wilds - Alliance - part 2 of 2, planned from level 89
+Guide "86-88 Krasarang Wilds" in group "Zone Routes (Alliance)": this part has 5 steps, 4 stops
+Written to guides/mop/Krasarang Wilds (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 89. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 3 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 2 tasks, 1,269 yd on foot; ends at level 89.0
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 4,513 yd; ends at level 89.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (3)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  The Road to Kun-Lai [31254, level 87, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Kun-Lai Summit
+  Temple of the White Tiger [31392, level 87, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Kun-Lai Summit
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Why So Serious? [30088, level 86] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

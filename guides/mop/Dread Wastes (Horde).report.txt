@@ -1,0 +1,145 @@
+Dread Wastes - Horde
+Guide "90-90 Dread Wastes" in group "Zone Routes (Horde)": 234 steps, 228 stops
+Written to guides/mop/Dread Wastes (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+9 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 90. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 228 steps kept, 9 new ones slotted in, 0 moved because their prerequisites changed, 5 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 5 tasks, 3,560 yd on foot; ends at level 90.0
+  everyone (quests that depend on other zones): 232 more tasks; their whole route comes to 34,729 yd; ends at level 90.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+4 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+
+Quests in the guide (73)
+------------------------
+Start to finish here: 2 (2 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Dread Space [31000, level 90] -> Vale of Eternal Blossoms
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Falling Down [31001, level 90] <- Vale of Eternal Blossoms
+  Nope [31002, level 90] <- Vale of Eternal Blossoms
+
+Need a quest this guide does not hand in - steps show only once that is done (68):
+  Psycho Mantid [31003, level 90] - needs Falling Down [31001], Nope [31002]
+  Preserved in Amber [31004, level 90] - needs one of Psycho Mantid [31003]
+  Wakening Sickness [31005, level 90] - needs one of Preserved in Amber [31004]
+  The Klaxxi Council [31006, level 90] - needs Wakening Sickness [31005], Ancient Vengeance [31676]
+  The Dread Clutches [31007, level 90] - needs one of The Klaxxi Council [31006]
+  Amber Arms [31008, level 90] - needs one of The Klaxxi Council [31006]
+  Dead Zone [31009, level 90] - needs one of The Klaxxi Council [31006]
+  In Her Clutch [31010, level 90] - needs one of Dead Zone [31009]
+  Amber Is Life [31019, level 90] - needs one of A Cry From Darkness [31066]
+  Feeding the Beast [31020, level 90] - needs one of Amber Is Life [31019]
+  Living Amber [31021, level 90] - needs one of Amber Is Life [31019]
+  Kypari Zar [31022, level 90] - needs Feeding the Beast [31020], Living Amber [31021]
+  The Root of the Problem [31026, level 90] - needs one of Kypari Zar [31022]
+  A Cry From Darkness [31066, level 90] - needs The Dread Clutches [31007], In Her Clutch [31010], Not Fit to Swarm [31660]
+  The Heavens Hum With War [31067, level 90] - needs one of A Cry From Darkness [31066]
+  Sacred Recipe [31068, level 90] - needs one of A Cry From Darkness [31066]
+  Bound With Shade [31069, level 90] - needs The Heavens Hum With War [31067], Sacred Recipe [31068]
+  Daggers of the Great Ones [31070, level 90] - needs one of Sacred Recipe [31068]
+  I Bring Us Great Shame [31071, level 90] - needs one of Sacred Recipe [31068]
+  Rending Daggers [31072, level 90] - needs one of Sacred Recipe [31068]
+  Bound With Wood [31073, level 90] - needs Bound With Shade [31069], Daggers of the Great Ones [31070]
+  Wood and Shade [31074, level 90] - needs one of Rending Daggers [31072]
+  Sunset Kings [31075, level 90] - needs I Bring Us Great Shame [31071], Bound With Wood [31073], Wood and Shade [31074], Han Stormstout [31078]
+  Fate of the Stormstouts [31076, level 90] - needs one of Sacred Recipe [31068]
+  Evie Stormstout [31077, level 90] - needs one of Fate of the Stormstouts [31076], Fate of the Stormstouts [31129]
+  Han Stormstout [31078, level 90] - needs one of Evie Stormstout [31077]
+  The Horror Comes A-Rising [31079, level 90] - needs one of Sunset Kings [31075]
+  Fiery Wings [31080, level 90] - needs one of Sunset Kings [31075]
+  Incantations Fae and Primal [31081, level 90] - needs one of Sunset Kings [31075]
+  Great Vessel of Salvation [31082, level 90] - needs one of Sunset Kings [31075]
+  Bind the Glamour [31084, level 90] - needs The Horror Comes A-Rising [31079], Fiery Wings [31080], Incantations Fae and Primal [31081], Great Vessel of Salvation [31082]
+  Fires and Fears of Old [31085, level 90] - needs one of Bind the Glamour [31084]
+  Blood of Ancients [31086, level 90] - needs one of Bind the Glamour [31084]
+  Extending Our Coverage [31087, level 90] - needs one of A Cry From Darkness [31066]
+  Crime and Punishment [31088, level 90] - needs one of Extending Our Coverage [31087]
+  By the Sea, Nevermore [31089, level 90] - needs Crime and Punishment [31088], Better With Age [31090]
+  Better With Age [31090, level 90] - needs one of Extending Our Coverage [31087]
+  Reunited [31091, level 90] - needs one of By the Sea, Nevermore [31089], By the Sea, Nevermore [31682]
+  Feed or Be Eaten [31092, level 90] - needs one of Reunited [31091]
+  Citizens of a New Empire [31107, level 90] - needs The Dread Clutches [31007], In Her Clutch [31010], Not Fit to Swarm [31660]
+  Concentrated Fear [31108, level 90] - needs one of A Source of Terrifying Power [31661]
+  Kor'thik Aggression [31133, level 90] - needs one of Daggers of the Great Ones [31070]
+  A Strange Appetite [31176, level 90] - needs one of Skeer the Bloodseeker [31175]
+  Fine Dining [31177, level 90] - needs one of Skeer the Bloodseeker [31175]
+  A Bloody Delight [31178, level 90] - needs one of Skeer the Bloodseeker [31175]
+  The Scent of Blood [31179, level 90] - needs A Strange Appetite [31176], Fine Dining [31177], A Bloody Delight [31178]
+  Fresh Pots [31181, level 90] - needs one of Mazu's Breath [31265]
+  You Otter Know [31182, level 90] - needs one of Mazu's Breath [31265]
+  Meet the Cap'n [31183, level 90] - needs Fresh Pots [31181], You Otter Know [31182]
+  Old Age and Treachery [31184, level 90] - needs one of Meet the Cap'n [31183]
+  Walking Dog [31185, level 90] - needs one of Meet the Cap'n [31183]
+  On the Crab [31187, level 90] - needs one of Meet the Cap'n [31183]
+  Shark Week [31188, level 90] - needs one of Meet the Cap'n [31183]
+  Reeltime Strategy [31189, level 90] - needs Old Age and Treachery [31184], On the Crab [31187], Shark Week [31188]
+  The Mariner's Revenge [31190, level 90] - needs one of Reeltime Strategy [31189]
+  The Poisoned Mind [31211, level 90] - needs Venomous Intent [31208], Dark Wings, Dark Things [31209], A Shade of Dread [31210]
+  Mazu's Breath [31265, level 90] - needs one of A Cry From Darkness [31066]
+  Mazu's Bounty [31354, level 90] - needs one of The Mariner's Revenge [31190]
+  The Kunchong Whisperer [31359, level 90] - needs one of Reunited [31091]
+  Falling to Pieces [31398, level 90] - needs one of Reunited [31091]
+  The Wrath of Shek'zeer [31609, level 90] - needs one of The Empress' Gambit [31959]
+  Shadow of the Empire [31612, level 90] - needs one of The Wrath of Shek'zeer [31609]
+  Not Fit to Swarm [31660, level 90] - needs one of The Klaxxi Council [31006]
+  A Source of Terrifying Power [31661, level 90] - needs one of The Klaxxi Council [31006]
+  Ancient Vengeance [31676, level 90] - needs one of Preserved in Amber [31004]
+  The Dreadsworn [31689, level 90] - needs one of A Source of Terrifying Power [31661]
+  Overthrone [31782, level 90] - needs one of Once in a Hundred Lifetimes [32030]
+  Once in a Hundred Lifetimes [32030, level 90] - needs A Cry From Darkness [31066], Feed or Be Eaten [31092], Mazu's Bounty [31354], The Kunchong Whisperer [31359], Falling to Pieces [31398]
+
+Worth checking in game
+----------------------
+  Amber Is Life [31019, level 90]: mixes a kill-credit objective with others; check that "Mistblade Scale-Lord" really is line 2 in the quest log
+  Kypari Zar [31022, level 90]: "Korven the Prime defeneded" is assumed to be line 2 in the quest log; check it
+  Fires and Fears of Old [31085, level 90]: mixes a kill-credit objective with others; check that "Adjunct Okzyk" really is line 2 in the quest log
+  Reunited [31091, level 90]: mixes a kill-credit objective with others; check that "Kovok" really is line 2 in the quest log
+  Feed or Be Eaten [31092, level 90]: "Young Kunchong" has no place in the data; taken to be done where the quest is given
+  Reeltime Strategy [31189, level 90]: "Help Ju Lien Kill Credit (1)" has no place in the data; taken to be done where the quest is given
+  The Poisoned Mind [31211, level 90]: mixes a kill-credit objective with others; check that "Krik'thik Wingleader" really is line 2 in the quest log
+  The Poisoned Mind [31211, level 90]: mixes a kill-credit objective with others; check that "Ik'thik Kunchong" really is line 3 in the quest log
+  The Kunchong Whisperer [31359, level 90]: mixes a kill-credit objective with others; check that "Muckscale Ripper" really is line 2 in the quest log
+  The Wrath of Shek'zeer [31609, level 90]: mixes a kill-credit objective with others; check that "Krik'thik Subjugate" really is line 4 in the quest log
+  Overthrone [31782, level 90]: "Klaxxi'va Ik Finale Bunny (1)" has no place in the data; taken to be done where the quest is given
+
+Left out (70)
+-------------
+repeatable (41):
+  Kunchong Treats [31024], Culling the Swarm [31109], Eradicating the Zan'thik [31111], Dark Skies [31216], Dreadspinner Extermination [31231], An Ancient Empire [31232], Sap Tapping [31233], Putting An Eye Out [31234], Nope Nope Nope [31235], Debugging the Terrace [31237], Brain Food [31238], Mistblade Destruction [31267], A Little Brain Work [31268], The Scale-Lord [31269], The Fight Against Fear [31270], Bad Genes [31271], Infection [31272], Sonic Disruption [31487], Free From Her Clutches [31494], Sampling the Empire's Finest [31496], Wing Clip [31502], Shortcut to Ruin [31503], Ordnance Disposal [31504], Vess-Guard Duty [31505], Shackles of Manipulation [31506], Meltdown [31507], Specimen Request [31508], Fear Takes Root [31509], Quiet Now [31510], Kypa'rak's Core [31598], The Matriarch's Maw [31599], Seeds of Fear [31603], The Warlord's Ashes [31677], Rampage Against the Machine [31808], Grand Master Shu [31957], Flowing Pandaren Spirit [32439], Giant Dinosaur Bone [32613], More Giant Dinosaur Bones [32614], Many More Giant Dinosaur Bones [32615], A Large Pile of Giant Dinosaur Bones [32616], ... 1 more
+needs reputation (13):
+  Beneath the Heart of Fear [31018], Skeer the Bloodseeker [31175], Venomous Intent [31208], Dark Wings, Dark Things [31209], A Shade of Dread [31210], Dropping Our Signal [31439], Damage Control [31458], Extracting Answers [31465], The Zan'thik Dig [31605], The Dissector Wakens [31606], Gambling Problem [31727], A Not So Friendly Request [31730], The Empress' Gambit [31959]
+not in the game (on Questie's quest blacklist) (6):
+  Relics of the Swarm [31273], Assault on Zan'vess [31604], Kovok tracking [GROWING] [32012], Candy Bucket [32023], Candy Bucket [32024], Honor the Flame [32497]
+handed in here, but the database does not say where it starts (2):
+  The Dread Vos [31174], Dog Food [31186]
+cannot be taken together with Extending Our Coverage [31087], which is in the guide (2):
+  Corruption Runs Deep [31441], Extending Our Coverage [31679]
+cannot be taken together with Fate of the Stormstouts [31076], which is in the guide (1):
+  Fate of the Stormstouts [31129]
+special category (sort -344) (1):
+  Stranger in a Strange Land [31488]
+cannot be taken together with Crime and Punishment [31088], which is in the guide (1):
+  Crime and Punishment [31680]
+cannot be taken together with Better With Age [31090], which is in the guide (1):
+  Better With Age [31681]
+cannot be taken together with By the Sea, Nevermore [31089], which is in the guide (1):
+  By the Sea, Nevermore [31682]
+cannot be taken together with Dread Space [31000], which is in the guide (1):
+  Dread Space [31886]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

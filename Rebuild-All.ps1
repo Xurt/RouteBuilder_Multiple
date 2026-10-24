@@ -13,6 +13,11 @@
     Classic Era: -Rxp is RestedXP's whole Guides folder (the one with GuideList-classic.xml); RxpToLock picks the
     Classic Era leveling guides out of it. Zone files, locks and guides go in zones\classic, locks\classic, guides\classic.
 
+.EXAMPLE
+    .\Rebuild-All.ps1 -Game tbc -Rxp ".\rxp"
+    .\Rebuild-All.ps1 -Game mop -Rxp ".\rxp"
+    The Burning Crusade and Mists of Pandaria, the same way (GuideList-tbc.xml, GuideList-mop.xml).
+
 .NOTES
     Run it from the RouteBuilder folder (or anywhere: it changes to its own folder first).
     If Windows refuses to run it: powershell -ExecutionPolicy Bypass -File .\Rebuild-All.ps1 -Rxp "..."
@@ -22,7 +27,7 @@ param(
     # RestedXP's guide folder (the one holding its .lua guide files). Leave the \ off the end.
     [Parameter(Mandatory = $true)][string]$Rxp,
     # which game to build for
-    [ValidateSet('forever', 'classic')][string]$Game = 'forever',
+    [ValidateSet('forever', 'classic', 'tbc', 'mop')][string]$Game = 'forever',
     # which factions to rebuild
     [ValidateSet('Horde', 'Alliance')][string[]]$Faction = @('Horde', 'Alliance'),
     # only these zones (default: every zone in the lists below)
@@ -90,7 +95,7 @@ if ($Update) {
 }
 
 # Forever: every guide file in the folder. Other games: RxpToLock reads the game's list (GuideList-<game>.xml) itself
-$guideList = @{ classic = 'GuideList-classic.xml' }[$Game]
+$guideList = @{ classic = 'GuideList-classic.xml'; tbc = 'GuideList-tbc.xml'; mop = 'GuideList-mop.xml' }[$Game]
 if ($Game -ne 'forever' -and (Test-Path -LiteralPath (Join-Path $Rxp $guideList))) {
     $guides = @()
     Write-Host "RestedXP guides: the ones $guideList lists in $Rxp"

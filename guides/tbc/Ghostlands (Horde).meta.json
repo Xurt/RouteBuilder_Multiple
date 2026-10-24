@@ -1,0 +1,511 @@
+{
+  "zone": "Ghostlands",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "10-21 Ghostlands",
+  "file": "Ghostlands (Horde).lua",
+  "continent": -3433,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 10,
+      "end": 12.38,
+      "next": 15,
+      "guide": "10-13 Ghostlands: around Arcanist Vandril",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Arcanist Vandril",
+          "guide": "10-13 Ghostlands: around Arcanist Vandril",
+          "level": 10,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 15,
+      "end": 17.44,
+      "next": 20,
+      "guide": "15-18 Ghostlands: around Eralan",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "around Eralan",
+          "guide": "15-18 Ghostlands: around Eralan",
+          "level": 15,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 20,
+      "end": 20.46,
+      "guide": "20-21 Ghostlands: around Magister Kaendris",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "around Magister Kaendris",
+          "guide": "20-21 Ghostlands: around Magister Kaendris",
+          "level": 20,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 9130,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 9135,
+      "level": 10,
+      "req": 10,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf",
+      "from": "Eversong Woods"
+    },
+    {
+      "id": 9138,
+      "level": 10,
+      "req": 9,
+      "xp": 840,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9139,
+      "level": 11,
+      "req": 9,
+      "xp": 880,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9140,
+      "level": 14,
+      "req": 9,
+      "xp": 1250,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9143,
+      "level": 12,
+      "req": 9,
+      "xp": 910,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9146,
+      "level": 12,
+      "req": 9,
+      "xp": 225,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9148,
+      "level": 10,
+      "req": 9,
+      "xp": 420,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Eversong Woods"
+    },
+    {
+      "id": 9149,
+      "level": 13,
+      "req": 10,
+      "xp": 910,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9152,
+      "level": 11,
+      "req": 9,
+      "xp": 880,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9157,
+      "level": 12,
+      "req": 10,
+      "xp": 910,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9158,
+      "level": 14,
+      "req": 11,
+      "xp": 980,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9159,
+      "level": 15,
+      "req": 11,
+      "xp": 1050,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9174,
+      "level": 13,
+      "req": 10,
+      "xp": 1150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9274,
+      "level": 12,
+      "req": 10,
+      "xp": 910,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9315,
+      "level": 11,
+      "req": 9,
+      "xp": 880,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9327,
+      "level": 10,
+      "req": 9,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 9329,
+      "level": 10,
+      "req": 9,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll"
+    },
+    {
+      "id": 9529,
+      "level": 10,
+      "req": 10,
+      "xp": 126,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Warlock",
+      "from": "Eversong Woods"
+    },
+    {
+      "id": 9532,
+      "level": 10,
+      "req": 10,
+      "xp": 840,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Rogue",
+      "from": "Eversong Woods"
+    },
+    {
+      "id": 9758,
+      "level": 10,
+      "req": 9,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10372,
+      "level": 16,
+      "req": 16,
+      "xp": 115,
+      "part": 1,
+      "section": 0,
+      "tag": "Rogue",
+      "from": "Eversong Woods"
+    },
+    {
+      "id": 9151,
+      "level": 20,
+      "req": 17,
+      "xp": 780,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9161,
+      "level": 16,
+      "req": 15,
+      "xp": 1150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9162,
+      "level": 16,
+      "req": 15,
+      "xp": 1150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9164,
+      "level": 20,
+      "req": 17,
+      "xp": 1950,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9172,
+      "level": 16,
+      "req": 15,
+      "xp": 1150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9176,
+      "level": 17,
+      "req": 15,
+      "xp": 1900,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9193,
+      "level": 17,
+      "req": 14,
+      "xp": 1250,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9199,
+      "level": 17,
+      "req": 14,
+      "xp": 1250,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9212,
+      "level": 17,
+      "req": 14,
+      "xp": 1250,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9214,
+      "level": 18,
+      "req": 15,
+      "xp": 1350,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9216,
+      "level": 16,
+      "req": 15,
+      "xp": 1150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9218,
+      "level": 18,
+      "req": 15,
+      "xp": 1350,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9220,
+      "level": 20,
+      "req": 17,
+      "xp": 1950,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9275,
+      "level": 19,
+      "req": 16,
+      "xp": 1450,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9276,
+      "level": 18,
+      "req": 15,
+      "xp": 1350,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9277,
+      "level": 19,
+      "req": 15,
+      "xp": 1450,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9281,
+      "level": 18,
+      "req": 15,
+      "xp": 1350,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9282,
+      "level": 16,
+      "req": 15,
+      "xp": 580,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9487,
+      "level": 16,
+      "req": 15,
+      "xp": 1150,
+      "part": 2,
+      "section": 0,
+      "tag": "BloodElf Mage"
+    },
+    {
+      "id": 9488,
+      "level": 16,
+      "req": 15,
+      "xp": 1150,
+      "part": 2,
+      "section": 0,
+      "tag": "BloodElf Mage"
+    },
+    {
+      "id": 9491,
+      "level": 18,
+      "req": 16,
+      "xp": 1350,
+      "part": 2,
+      "section": 0,
+      "tag": "Rogue"
+    },
+    {
+      "id": 9877,
+      "level": 20,
+      "req": 17,
+      "xp": 390,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10548,
+      "level": 18,
+      "req": 16,
+      "xp": 1350,
+      "part": 2,
+      "section": 0,
+      "tag": "Rogue"
+    },
+    {
+      "id": 9156,
+      "level": 21,
+      "req": 9,
+      "xp": 2500,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9167,
+      "level": 21,
+      "req": 15,
+      "xp": 2500,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9170,
+      "level": 20,
+      "req": 17,
+      "xp": 1950,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9215,
+      "level": 20,
+      "req": 9,
+      "xp": 1950,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Eversong Woods": 5,
+    "Tirisfal Glades": 2
+  }
+}

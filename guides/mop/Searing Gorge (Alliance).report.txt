@@ -1,0 +1,122 @@
+Searing Gorge - Alliance - part 1 of 2, planned from level 47
+Guide "47-50 Searing Gorge" in group "Zone Routes (Alliance)": this part has 108 steps, 98 stops
+Written to guides/mop/Searing Gorge (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 6 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+3 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 47. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 109 steps kept, 7 new ones slotted in, 1 moved because their prerequisites changed, 3 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 61 tasks, 15,129 yd on foot; ends at level 48.4
+  everyone (quests that depend on other zones): 56 more tasks; their whole route comes to 23,187 yd; ends at level 48.4; at its hardest you are 1.6 levels below the mobs
+Hearthstone: set at Fergus Gravelsmash (Fergus Gravelsmash's inn); 0 hearth steps in the guide.
+3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+5 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (40)
+------------------------
+Start to finish here: 19 (19 for everyone)
+
+Hand-in step only shows once complete (1):
+  Dark Ministry [27979, level 48] - needs Twilight Tripetricine (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  To the Aid of the Thorium Brotherhood [28512, level 47] <- Badlands
+  Hero's Call: Searing Gorge! [28582, level 48, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Stormwind City
+
+Need a quest this guide does not hand in - steps show only once that is done (18):
+  In the Hall of the Mountain-Lord [27986, level 49] - needs Dark Ministry [27979]
+  Siege! [28028, level 49] - needs one of In the Hall of the Mountain-Lord [27986]
+  Set Them Ablaze! [28029, level 49] - needs one of In the Hall of the Mountain-Lord [27986]
+  They Build a Better Bullet [28030, level 49] - needs one of In the Hall of the Mountain-Lord [27986]
+  The Mysteries of the Fire-Gizzard [28032, level 49] - needs one of In the Hall of the Mountain-Lord [27986]
+  Deceit [28033, level 49] - needs Siege! [28028], Set Them Ablaze! [28029], They Build a Better Bullet [28030]
+  Lunk's Adventure: Rendan's Weakness [28034, level 49] - needs one of Deceit [28033]
+  The Mountain-Lord's Support [28035, level 49] - needs one of Lunk's Adventure: Rendan's Weakness [28034]
+  Operation: Stir the Cauldron [28052, level 49] - needs one of The Mountain-Lord's Support [28035]
+  Slavery is Bad [28054, level 49] - needs one of Operation: Stir the Cauldron [28052]
+  Sweet, Horrible Freedom [28055, level 49] - needs one of Operation: Stir the Cauldron [28052]
+  Rise, Obsidion [28056, level 49] - needs one of Operation: Stir the Cauldron [28052]
+  Lunk Like Your Style [28053, level 50] - needs one of From Whence He Came [28062]
+  Kill 'em With Sleep Deprivation [28057, level 50] - needs Slavery is Bad [28054], Sweet, Horrible Freedom [28055], Rise, Obsidion [28056]
+  Twisted Twilight Ties [28060, level 50] - needs one of Kill 'em With Sleep Deprivation [28057]
+  Minions of Calcinder [28061, level 50] - needs one of Twisted Twilight Ties [28060]
+  From Whence He Came [28062, level 50] - needs one of Twisted Twilight Ties [28060]
+  Welcome to the Brotherhood [28064, level 50] - needs one of From Whence He Came [28062]
+
+Worth checking in game
+----------------------
+  Siege! [28028, level 49]: could not read how many Dark Iron Marksman are needed from the quest text; assumed 8
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  Mouton Flamestar [28514, level 50]: needs level 49; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 48.4
+
+Left out (30)
+-------------
+not in the game (on Questie's quest blacklist) (23):
+  Suntara Stones [3367], Dwarven Justice [3371], Release Them [3372], Prayer to Elune [3377], The Torch of Retribution [3454], Trinkets... [3481], Caught! [4449], The Key to Freedom [4451], WANTED: Overseer Maltorius [7701], Kill 'Em With Sleep Deprivation [7702], Look at the Size of It! [7704], What the Flux? [7722], Curse These Fat Fingers [7723], Fiery Menace! [7724], Incendosaurs? Whateverosaur is More Like It [7727], STOLEN: Smithing Tuyere and Lookout's Spyglass [7728], JOB OPPORTUNITY: Culling the Competition [7729], Restoring Fiery Flux Supplies via Kingsblood [7736], Restoring Fiery Flux Supplies via Iron [8241], Restoring Fiery Flux Supplies via Heavy Leather [8242], Ironband the Elder [8651], Secrets of the Colossus - Regal [8858], Candy Bucket [28965]
+repeatable (3):
+  Gaining Even More Acceptance [7737], Gaining Acceptance [13662], Kortas Darkhammer [31912]
+dungeon quest (3):
+  Blackhand's Command [7761], Attunement to the Core [7848], A Potential Ally [27470]
+handed in here, but the database does not say where it starts (1):
+  Look at the Size of It! [28058]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Searing Gorge - Alliance - part 2 of 2, planned from level 51
+Guide "47-50 Searing Gorge" in group "Zone Routes (Alliance)": this part has 6 steps, 5 stops
+Written to guides/mop/Searing Gorge (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 51. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 0 yd on foot; ends at level 51.0
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 2,191 yd; ends at level 51.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Mouton Flamestar [28514, level 50, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Burning Steppes
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Dark Ministry [27979, level 48] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -1,0 +1,111 @@
+Hillsbrad Foothills - Horde
+Guide "20-25 Hillsbrad Foothills" in group "Zone Routes (Horde)": 201 steps, 179 stops
+Written to guides/mop/Hillsbrad Foothills (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 10 of 40 held at once (BloodElf Paladin), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 20. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 226 new ones slotted in, 0 moved because their prerequisites changed, 2 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 20, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 205 tasks, 23,721 yd on foot; ends at level 26.9; 1 hearth
+  Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior: 1 more tasks; their whole route comes to 24,698 yd; ends at level 26.9; 1 hearth
+  Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter: 1 more tasks; their whole route comes to 24,970 yd; ends at level 26.9; 1 hearth
+  Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue: 1 more tasks; their whole route comes to 24,460 yd; ends at level 26.9; 1 hearth
+  Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage: 1 more tasks; their whole route comes to 24,816 yd; ends at level 26.9; 1 hearth
+  Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock: 1 more tasks; their whole route comes to 24,319 yd; ends at level 26.9; 1 hearth
+  Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman: 1 more tasks; their whole route comes to 24,126 yd; ends at level 26.9; 1 hearth
+  Tauren Paladin/BloodElf Paladin: 1 more tasks; their whole route comes to 25,073 yd; ends at level 26.9; 1 hearth
+  Undead Priest: 1 more tasks; their whole route comes to 24,693 yd; ends at level 26.9; 1 hearth
+  Tauren Priest: 1 more tasks; their whole route comes to 24,693 yd; ends at level 26.9; 1 hearth
+  Troll Priest: 1 more tasks; their whole route comes to 24,693 yd; ends at level 26.9; 1 hearth
+  BloodElf Paladin: 1 more tasks; their whole route comes to 25,073 yd; ends at level 26.9; 1 hearth
+  BloodElf Priest: 1 more tasks; their whole route comes to 24,693 yd; ends at level 26.9; 1 hearth
+  Goblin Priest: 1 more tasks; their whole route comes to 24,693 yd; ends at level 26.9; 1 hearth
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 24,347 yd; ends at level 26.9; 1 hearth
+  BloodElf (quests that depend on other zones): 5 more tasks; their whole route comes to 24,777 yd; ends at level 26.9; 1 hearth
+Hearthstone: set at Sergeant Hartman (Sergeant Hartman's inn); 1 hearth step in the guide.
+8 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+7 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+2 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (91)
+------------------------
+Start to finish here: 66 (22 for everyone, 44 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (16):
+  Warchief's Command: Ghostlands! [28560, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Ghostlands
+  An Audience with Ureda [27277, level 20, Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage] -> Orgrimmar
+  Grimshot's Call [27278, level 20, Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter] -> Orgrimmar
+  The Shattered Hand [27279, level 20, Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue] -> Orgrimmar
+  The Dreamseeker Calls [27280, level 20, Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman] -> Orgrimmar
+  Grezz Ragefist [27281, level 20, Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior] -> Orgrimmar
+  Zevrost's Behest [27282, level 20, Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock] -> Orgrimmar
+  Seek Out Master Pyreanor [27298, level 20, BloodElf Paladin] -> Orgrimmar
+  Follow the Sun [27304, level 20, Tauren Paladin/BloodElf Paladin] -> Orgrimmar
+  The Seer's Call [27331, level 20, Tauren Priest] -> Orgrimmar
+  Seek the Shadow-Walker [27332, level 20, Troll Priest] -> Orgrimmar
+  Dark Cleric Cecille [27334, level 20, Undead Priest] -> Orgrimmar
+  Journey to Orgrimmar [27335, level 20, BloodElf Priest] -> Orgrimmar
+  Seek Brother Silverhallow [28164, level 20, Goblin Priest] -> Orgrimmar
+  Warchief's Command: Arathi Highlands! [28572, level 25, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Arathi Highlands
+  Warchief's Command: Northern Stranglethorn Vale! [28688, level 25, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Northern Stranglethorn
+
+Brought in from another zone and handed in here - steps show only if you have the quest (6):
+  Fly to Silvermoon City [9133, level 7, BloodElf] <- Eversong Woods
+  Empire of Dirt [27746, level 20] <- Silverpine Forest
+  Warchief's Command: Hillsbrad Foothills! [28089, level 20, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Silverpine Forest
+  Hero of the Sin'dorei [9328, level 21, BloodElf] <- Ghostlands
+  Allegiance to the Horde [9627, level 21, BloodElf] <- Orgrimmar
+  Friend of the Sin'dorei [9811, level 21, Orc/Undead/Tauren/Troll/Goblin/Pandaren] <- Ghostlands
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  Skymistress Gloaming [9134, level 7, BloodElf] - needs one of Fly to Silvermoon City [9133] -> Eversong Woods
+  Envoy to the Horde [9621, level 21, BloodElf] - needs one of Hero of the Sin'dorei [9328] -> Undercity
+  Envoy to the Horde [9812, level 21, Orc/Undead/Tauren/Troll/Pandaren] - needs one of Friend of the Sin'dorei [9811] -> Undercity
+
+Worth checking in game
+----------------------
+  Heroes of the Horde! [28400, level 23, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: "Become Heroes of the Horde" is assumed to be line 2 in the quest log; check it
+  Flower Power [28617, level 20]: "PvG Level 2 - Flower Power Complete (1)" has no place in the data; taken to be done where the quest is given
+  Basic Botany [28733, level 20]: "PvG Tutorial Complete (1)" has no place in the data; taken to be done where the quest is given
+  Ghouls Hate My Grains [28744, level 20]: "PvG Level 3 - Ghouls Hate My Grains Massive Complete (1)" has no place in the data; taken to be done where the quest is given
+  Someone Setup the Pumpkin Bomb [28747, level 20]: "PvG Level 4 - Someone Setup the Pumpkin Bomb Massive Complete (1)" has no place in the data; taken to be done where the quest is given
+  Lawn of the Dead [28748, level 20]: "PvG Level Boss Complete (1)" has no place in the data; taken to be done where the quest is given
+
+Left out (254)
+--------------
+not in the game (on Questie's quest blacklist) (176):
+  Vorrel's Revenge [1051], Regthar Deathgate [1361], Cyclonian [1712], The Summoning [1713], Essence of the Exile [1714], The Windwatcher [1791], Whirlwind Weapon [1792], Speak with Deino [1943], Journey to the Marsh [1947], Return to the Marsh [1953], Hinott's Assistance [2479], Hinott's Assistance [2480], Tabetha's Task [2861], Seeking Strahad [3001], In Search of Menara Voidrender [4738], Knowledge of the Orb of Orahil [4968], The Manor, Ravenholdt [6681], Syndicate Emblems [6701], Stolen Winter Veil Treats [6963], You're a Mean One... [6983], The Legend of Korrak [7181], Speak with Prospector Stonehewer [7221], Speak with Voggah Deathgrip [7222], In Defense of Frostwolf [7241], The Darkmoon Faire [7926], The Hunter's Charm [8151], A Simple Request [8233], The Azure Key [8236], REUSE [8237], Magecraft [8250], Cenarion Aid [8254], Rotten Eggs [8322], Elemental Mastery [8410], Da Voodoo [8413], An Imp's Request [8419], The Hero of the Day [8799], Lunar Fireworks [8867], The Lunar Festival [8873], The Lunar Festival [8874], The Lunar Festival [8875], ... 136 more
+above this zone's range of 20-27 (49):
+  The Crown of Will [495], Contact from Dalaran [9826], Khadgar [9829], The New Directive [9860], Warchief's Command: Vashj'ir! [27718], Warchief's Command: Mount Hyjal! [27721], Warchief's Command: Deepholm! [27722], Meet with Grezz Ragefist [28290], Meet with Ormak Grimshot [28297], Meet with Gordul [28298], Meet with Zevrost [28299], Meet with Ureda [28300], Meet with Kardris Dreamseeker [28301], Meet with Sunwalker Atohmo [28302], Meet with Master Pyreanor [28303], Meet with Dark Cleric Cecille [28304], Meet with Tyelis [28307], Meet with Seer Liwatha [28308], Meet with Shadow-Walker Zuru [28309], Meet with Brother Silverhallow [28323], Warchief's Command: Uldum! [28557], Warchief's Command: The Hinterlands! [28574], Warchief's Command: Western Plaguelands! [28575], Warchief's Command: Eastern Plaguelands! [28577], Warchief's Command: Badlands! [28580], Warchief's Command: Searing Gorge! [28581], Warchief's Command: Burning Steppes! [28667], Warchief's Command: Blasted Lands! [28671], Warchief's Command: Swamp of Sorrows! [28677], Warchief's Command: The Cape of Stranglethorn! [28704], Warchief's Command: Outland! [28705], Warchief's Command: Northrend! [28711], Warchief's Command: Twilight Highlands! [28717], The Zandalari Menace [29157], To Catch a Thief [29847], To Ravenholdt [29934], Our Man in Gilneas [30092], The Deed is Done [30106], Cluster Clutch [30107], Our Man in Karazhan [30108], ... 9 more
+dungeon quest (7):
+  The Graveyards of Alterac [7082], Towers and Bunkers [7101], Capture a Mine [7124], The Battle for Alterac [7142], Proving Grounds [7161], Honored Amongst the Clan [7164], Hero of the Frostwolf [8272]
+needs reputation (7):
+  Rise and Be Recognized [7163], Earned Reverence [7165], Legendary Heroes [7166], The Eye of Command [7167], Get My Results! [32329], What's in the Box? [32330], One Last Grasp [32412]
+needs a profession (4):
+  Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+repeatable (3):
+  CLUCK! [3861], The Return of Korrak [7381], Junkboxes Needed [8249]
+special category (sort -284) (2):
+  Silvermoon [12788], Hammering It Out [25759]
+starts from a random drop, and no quest in this guide kills those mobs (2):
+  Ley Energies [27480], Preemptive Strike [28356]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29388], Guardians of Hyjal: Call of the Ancients [29390]
+special category (sort -23) (1):
+  Hammering It Out [25789]
+cannot be taken together with Warchief's Command: Arathi Highlands! [28572], which is in the guide (1):
+  Warchief's Command: Arathi Highlands! [28619]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

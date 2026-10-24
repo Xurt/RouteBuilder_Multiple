@@ -1,0 +1,866 @@
+{
+  "zone": "Eversong Woods",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "1-12 Eversong Woods",
+  "file": "Eversong Woods (Horde).lua",
+  "continent": -3430,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 1,
+      "end": 10.62,
+      "next": 13,
+      "guide": "9-11 Eversong Woods: around Magistrix Landra Dawnstrider",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Aeldon Sunbrand",
+          "guide": "1-3 Eversong Woods: around Aeldon Sunbrand",
+          "level": 1,
+          "index": 0
+        },
+        {
+          "label": "RBSection1_2",
+          "name": "around Instructor Antheol",
+          "guide": "3-7 Eversong Woods: around Instructor Antheol",
+          "level": 3,
+          "index": 1
+        },
+        {
+          "label": "RBSection1_3",
+          "name": "around Instructor Antheol",
+          "guide": "7-9 Eversong Woods: around Instructor Antheol",
+          "level": 7,
+          "index": 2
+        },
+        {
+          "label": "RBSection1_4",
+          "name": "around Magistrix Landra Dawnstrider",
+          "guide": "9-11 Eversong Woods: around Magistrix Landra Dawnstrider",
+          "level": 9,
+          "index": 3
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 13,
+      "end": 13.09,
+      "next": 28,
+      "guide": "13-14 Eversong Woods",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "13-14 Eversong Woods",
+          "level": 13,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 28,
+      "end": 28.03,
+      "guide": "28-29 Eversong Woods",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "28-29 Eversong Woods",
+          "level": 28,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 8325,
+      "level": 1,
+      "req": 1,
+      "xp": 100,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8326,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8327,
+      "level": 3,
+      "req": 1,
+      "xp": 75,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8328,
+      "level": 1,
+      "req": 1,
+      "xp": 60,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Mage"
+    },
+    {
+      "id": 8330,
+      "level": 4,
+      "req": 2,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8334,
+      "level": 4,
+      "req": 1,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8335,
+      "level": 5,
+      "req": 3,
+      "xp": 560,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8336,
+      "level": 4,
+      "req": 2,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8344,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Warlock"
+    },
+    {
+      "id": 8345,
+      "level": 4,
+      "req": 2,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8346,
+      "level": 3,
+      "req": 2,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8347,
+      "level": 5,
+      "req": 3,
+      "xp": 45,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf"
+    },
+    {
+      "id": 8350,
+      "level": 5,
+      "req": 4,
+      "xp": 110,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8463,
+      "level": 5,
+      "req": 4,
+      "xp": 450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8468,
+      "level": 6,
+      "req": 4,
+      "xp": 540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8472,
+      "level": 5,
+      "req": 4,
+      "xp": 450,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 8473,
+      "level": 9,
+      "req": 6,
+      "xp": 780,
+      "part": 1,
+      "section": 3,
+      "tag": ""
+    },
+    {
+      "id": 8474,
+      "level": 10,
+      "req": 7,
+      "xp": 840,
+      "part": 1,
+      "section": 3,
+      "tag": ""
+    },
+    {
+      "id": 8475,
+      "level": 6,
+      "req": 4,
+      "xp": 540,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 8476,
+      "level": 10,
+      "req": 7,
+      "xp": 840,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 8477,
+      "level": 10,
+      "req": 7,
+      "xp": 840,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 8479,
+      "level": 11,
+      "req": 8,
+      "xp": 880,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 8480,
+      "level": 7,
+      "req": 5,
+      "xp": 630,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 8486,
+      "level": 6,
+      "req": 4,
+      "xp": 540,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 8487,
+      "level": 9,
+      "req": 7,
+      "xp": 780,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 8488,
+      "level": 9,
+      "req": 7,
+      "xp": 780,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 8490,
+      "level": 10,
+      "req": 8,
+      "xp": 840,
+      "part": 1,
+      "section": 3,
+      "tag": ""
+    },
+    {
+      "id": 8491,
+      "level": 7,
+      "req": 4,
+      "xp": 630,
+      "part": 1,
+      "section": 3,
+      "tag": ""
+    },
+    {
+      "id": 8563,
+      "level": 1,
+      "req": 1,
+      "xp": 60,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Warlock"
+    },
+    {
+      "id": 8564,
+      "level": 1,
+      "req": 1,
+      "xp": 60,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Priest"
+    },
+    {
+      "id": 8884,
+      "level": 7,
+      "req": 5,
+      "xp": 630,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 8885,
+      "level": 9,
+      "req": 5,
+      "xp": 980,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 8886,
+      "level": 8,
+      "req": 5,
+      "xp": 700,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 8888,
+      "level": 10,
+      "req": 8,
+      "xp": 85,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 8889,
+      "level": 10,
+      "req": 8,
+      "xp": 630,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 8890,
+      "level": 10,
+      "req": 8,
+      "xp": 840,
+      "part": 1,
+      "section": 3,
+      "tag": ""
+    },
+    {
+      "id": 8891,
+      "level": 10,
+      "req": 8,
+      "xp": 840,
+      "part": 1,
+      "section": 3,
+      "tag": ""
+    },
+    {
+      "id": 8892,
+      "level": 7,
+      "req": 5,
+      "xp": 630,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 8894,
+      "level": 10,
+      "req": 8,
+      "xp": 840,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 8895,
+      "level": 6,
+      "req": 4,
+      "xp": 135,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9035,
+      "level": 6,
+      "req": 4,
+      "xp": 55,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9062,
+      "level": 6,
+      "req": 4,
+      "xp": 270,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9064,
+      "level": 6,
+      "req": 4,
+      "xp": 135,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9066,
+      "level": 6,
+      "req": 4,
+      "xp": 540,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 9076,
+      "level": 8,
+      "req": 5,
+      "xp": 700,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9119,
+      "level": 5,
+      "req": 4,
+      "xp": 450,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9133,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 1,
+      "section": 3,
+      "tag": "BloodElf",
+      "from": "Ghostlands"
+    },
+    {
+      "id": 9144,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 1,
+      "section": 3,
+      "tag": ""
+    },
+    {
+      "id": 9252,
+      "level": 9,
+      "req": 7,
+      "xp": 780,
+      "part": 1,
+      "section": 3,
+      "tag": ""
+    },
+    {
+      "id": 9253,
+      "level": 10,
+      "req": 8,
+      "xp": 210,
+      "part": 1,
+      "section": 3,
+      "tag": ""
+    },
+    {
+      "id": 9254,
+      "level": 9,
+      "req": 7,
+      "xp": 390,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9255,
+      "level": 9,
+      "req": 7,
+      "xp": 390,
+      "part": 1,
+      "section": 3,
+      "tag": ""
+    },
+    {
+      "id": 9258,
+      "level": 10,
+      "req": 8,
+      "xp": 210,
+      "part": 1,
+      "section": 3,
+      "tag": ""
+    },
+    {
+      "id": 9352,
+      "level": 6,
+      "req": 5,
+      "xp": 540,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9358,
+      "level": 9,
+      "req": 8,
+      "xp": 80,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9359,
+      "level": 10,
+      "req": 8,
+      "xp": 85,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 9360,
+      "level": 11,
+      "req": 8,
+      "xp": 880,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 9363,
+      "level": 11,
+      "req": 8,
+      "xp": 440,
+      "part": 1,
+      "section": 3,
+      "tag": ""
+    },
+    {
+      "id": 9392,
+      "level": 1,
+      "req": 1,
+      "xp": 60,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Rogue"
+    },
+    {
+      "id": 9393,
+      "level": 1,
+      "req": 1,
+      "xp": 60,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Hunter"
+    },
+    {
+      "id": 9394,
+      "level": 10,
+      "req": 8,
+      "xp": 85,
+      "part": 1,
+      "section": 2,
+      "tag": ""
+    },
+    {
+      "id": 9395,
+      "level": 9,
+      "req": 8,
+      "xp": 80,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 9402,
+      "level": 10,
+      "req": 10,
+      "xp": 210,
+      "part": 1,
+      "section": 2,
+      "tag": "Mage"
+    },
+    {
+      "id": 9403,
+      "level": 10,
+      "req": 10,
+      "xp": 840,
+      "part": 1,
+      "section": 3,
+      "tag": "Mage"
+    },
+    {
+      "id": 9404,
+      "level": 10,
+      "req": 10,
+      "xp": 840,
+      "part": 1,
+      "section": 3,
+      "tag": "Mage"
+    },
+    {
+      "id": 9484,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 1,
+      "section": 2,
+      "tag": "BloodElf Hunter"
+    },
+    {
+      "id": 9486,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 1,
+      "section": 2,
+      "tag": "BloodElf Hunter"
+    },
+    {
+      "id": 9489,
+      "level": 5,
+      "req": 5,
+      "xp": 450,
+      "part": 1,
+      "section": 2,
+      "tag": "BloodElf Priest"
+    },
+    {
+      "id": 9617,
+      "level": 10,
+      "req": 10,
+      "xp": 126,
+      "part": 1,
+      "section": 2,
+      "tag": "BloodElf Hunter"
+    },
+    {
+      "id": 9618,
+      "level": 10,
+      "req": 10,
+      "xp": 840,
+      "part": 1,
+      "section": 3,
+      "tag": "BloodElf Rogue",
+      "from": "Ghostlands"
+    },
+    {
+      "id": 9619,
+      "level": 10,
+      "req": 10,
+      "xp": 420,
+      "part": 1,
+      "section": 3,
+      "tag": "BloodElf Warlock",
+      "from": "Ghostlands"
+    },
+    {
+      "id": 9676,
+      "level": 1,
+      "req": 1,
+      "xp": 60,
+      "part": 1,
+      "section": 0,
+      "tag": "Paladin"
+    },
+    {
+      "id": 9704,
+      "level": 5,
+      "req": 3,
+      "xp": 110,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9705,
+      "level": 5,
+      "req": 4,
+      "xp": 225,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10068,
+      "level": 2,
+      "req": 2,
+      "xp": 25,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Mage"
+    },
+    {
+      "id": 10069,
+      "level": 2,
+      "req": 2,
+      "xp": 25,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Paladin"
+    },
+    {
+      "id": 10070,
+      "level": 2,
+      "req": 2,
+      "xp": 25,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Hunter"
+    },
+    {
+      "id": 10071,
+      "level": 2,
+      "req": 2,
+      "xp": 25,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Rogue"
+    },
+    {
+      "id": 10072,
+      "level": 2,
+      "req": 2,
+      "xp": 25,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Priest"
+    },
+    {
+      "id": 10073,
+      "level": 2,
+      "req": 2,
+      "xp": 25,
+      "part": 1,
+      "section": 0,
+      "tag": "BloodElf Warlock"
+    },
+    {
+      "id": 10166,
+      "level": 10,
+      "req": 7,
+      "xp": 840,
+      "part": 1,
+      "section": 3,
+      "tag": ""
+    },
+    {
+      "id": 10530,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 2,
+      "tag": "BloodElf Hunter",
+      "from": "Mulgore"
+    },
+    {
+      "id": 10788,
+      "level": 10,
+      "req": 10,
+      "xp": 0,
+      "part": 1,
+      "section": 2,
+      "tag": "BloodElf Warlock",
+      "from": "Tirisfal Glades"
+    },
+    {
+      "id": 9677,
+      "level": 12,
+      "req": 12,
+      "xp": 136,
+      "part": 2,
+      "section": 0,
+      "tag": "BloodElf Paladin"
+    },
+    {
+      "id": 10359,
+      "level": 12,
+      "req": 12,
+      "xp": 955,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9067,
+      "level": 9,
+      "req": 7,
+      "xp": 780,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Ghostlands": 4,
+    "Tirisfal Glades": 1,
+    "Durotar": 1
+  }
+}

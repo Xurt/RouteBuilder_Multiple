@@ -1,0 +1,136 @@
+Howling Fjord - Alliance - part 1 of 2, planned from level 70
+Guide "70-72 Howling Fjord" in group "Zone Routes (Alliance)": this part has 316 steps, 286 stops
+Written to guides/mop/Howling Fjord (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 19 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+3 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 70. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 403 new ones slotted in, 0 moved because their prerequisites changed, 1 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 70, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 357 tasks, 52,170 yd on foot; ends at level 72.2; 2 hearths; at its hardest you are 1.1 levels below the mobs
+  everyone (quests that depend on other zones): 46 more tasks; their whole route comes to 57,941 yd; ends at level 72.2; 2 hearths; 4 ORDER PROBLEMS; at its hardest you are 1.1 levels below the mobs
+Hearthstone: set at Jennifer Owings (Jennifer Owings's inn); 2 hearth steps in the guide.
+19 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+6 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+  Alpha Worg: its hand-in spot is not passed again, so the step sits at the end of the guide.
+
+Quests in the guide (136)
+-------------------------
+Start to finish here: 117 (33 for everyone, 84 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (3):
+  Portents of Uldum [2963, level 50, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Ironforge
+  Allies in Dalaran [29608, level 70, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Dalaran - (Dungeon/Raid)
+  Travel to Moa'ki Harbor [12118, level 72] -> Dragonblight
+
+Hand-in step only shows once complete (3):
+  Alpha Worg [11326, level 71, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Worg Disguise (1) (an unknown place)
+  The Book of Runes [11346, level 71, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs The Book of Runes (1) (an unknown place)
+  All Hail the Conqueror of Skorn! [11250, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs Westguard Command Insignia (1) (an unknown place)
+
+Need a quest this guide does not hand in - steps show only once that is done (13):
+  Of Keys and Cages [11231, level 71, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of All Hail the Conqueror of Skorn! [11250]
+  Dealing With Gjalerbron [11235, level 71, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of All Hail the Conqueror of Skorn! [11250]
+  In Service to the Light [11239, level 71, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Of Keys and Cages [11231]
+  The Rune of Command [11348, level 71, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Mastering the Runes [11349]
+  Mastering the Runes [11349, level 71, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Book of Runes [11346]
+  I've Got a Flying Machine! [11390, level 71, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of See to the Operations [11176]
+  Bring Down Those Shields [11396, level 71, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of It's a Scourge Device [11395]
+  Sleeping Giants [11432, level 71, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Of Keys and Cages [11231]
+  Necro Overlord Mezhen [11236, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Dealing With Gjalerbron [11235]
+  The Frost Wyrm and its Master [11238, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Gjalerbron Attack Plans [11237]
+  The Slumbering King [11452, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Dealing With Gjalerbron [11235]
+  Of Traitors and Treason [12297, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of All Hail the Conqueror of Skorn! [11250]
+  High Commander Halford Wyrmbane [12298, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Of Traitors and Treason [12297] -> Dragonblight
+
+Worth checking in game
+----------------------
+  The Clutches of Evil [11157, level 71, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Proto-Whelp" really is line 2 in the quest log
+  Mission: Plague This! [11332, level 71, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: could not read how many New Agamand Plague Tank are needed from the quest text; assumed 8
+  Drop It then Rock It! [11429, level 71, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: mixes a kill-credit objective with others; check that "Alliance Banner" really is line 2 in the quest log
+  Lightning Infused Relics [11494, level 71, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: could not read how many Iron Dwarf Relic are needed from the quest text; assumed 8
+
+Put off to a later part (4)
+---------------------------
+These need a higher level than this part ends at:
+  Sorlof's Booty [11529, level 71]: its mobs are level 80; this part gets you to about 72.3
+  The Shield of the Aesirites [11530, level 71]: follows Sorlof's Booty [11529]
+  A Return to Resting [11568, level 71]: follows The Shield of the Aesirites [11530]
+  Return to Atuik [11572, level 71]: follows A Return to Resting [11568]
+
+Left out (28)
+-------------
+not in the game (on Questie's quest blacklist) (14):
+  One Last Time [11189], Into Utgarde! [11252], Handsome Terry [11462], Pirates of the North Seas [11463], Incense for the Summer Scorchlings [11964], Gem Perfection [12918], Candy Bucket [13433], Candy Bucket [13434], Candy Bucket [13435], Candy Bucket [13452], REUSE [13840], Sharing a Bountiful Feast [14064], A Natural Occurrence [25571], A Natural Occurrence [25773]
+repeatable (5):
+  CLUCK! [3861], Break the Blockade [11153], Steel Gate Patrol [11391], The Way to His Heart... [11472], Beegle Blastfuse [31931]
+needs a profession (3):
+  Northern Cooking [13087], Cloth Scavenging [13268], Cloth Scavenging [13269]
+cannot be taken together with My Daughter [11175], which is in the guide (1):
+  See to the Operations [11176]
+dungeon quest (1):
+  Fresh Legs [11251]
+cannot be taken together with Where is Explorer Jaren? [11393], which is in the guide (1):
+  And You Thought Murlocs Smelled Bad! [11394]
+above this zone's range of 70-73 (1):
+  The Magical Kingdom of Dalaran [12794]
+special category (sort -369) (1):
+  Desecrate this Fire! [13453]
+special category (sort -22) (1):
+  Honor the Flame [13488]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Howling Fjord - Alliance - part 2 of 2, planned from level 78
+Guide "70-72 Howling Fjord" in group "Zone Routes (Alliance)": this part has 21 steps, 20 stops
+Written to guides/mop/Howling Fjord (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 78. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 20 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 13 tasks, 3,208 yd on foot; ends at level 78.1; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 6,738 yd; ends at level 78.1; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (7)
+-----------------------
+Start to finish here: 4 (4 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Alpha Worg [11326, level 71, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- your earlier visit to this zone
+  The Book of Runes [11346, level 71, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- your earlier visit to this zone
+  All Hail the Conqueror of Skorn! [11250, level 72, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

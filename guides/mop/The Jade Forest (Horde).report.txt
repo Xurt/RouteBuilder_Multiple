@@ -1,0 +1,252 @@
+The Jade Forest - Horde - part 1 of 2, planned from level 85
+Guide "85-90 The Jade Forest" in group "Zone Routes (Horde)": this part has 382 steps, 352 stops
+Written to guides/mop/The Jade Forest (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+10 pickups or hand-ins are within reach of a stop but planned for later.
+6 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 85. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 381 steps kept, 15 new ones slotted in, 0 moved because their prerequisites changed, 29 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 100 tasks, 9,408 yd on foot; ends at level 85.3
+  everyone (quests that depend on other zones): 296 more tasks; their whole route comes to 38,779 yd; ends at level 85.3
+Hearthstone: set at Brewmaster Blanche (Brewmaster Blanche's inn); 0 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 85 for Flying Colors
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+7 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+8 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+7 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (124)
+-------------------------
+Start to finish here: 34 (33 for everyone, 1 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Into the Mists [29690, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Kalimdor - the continent map
+  The Order of the Cloud Serpent [31375, level 90, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Vale of Eternal Blossoms
+  Corruption Runs Deep [31441, level 90] <- Dread Wastes
+
+Need a quest this guide does not hand in - steps show only once that is done (87):
+  Regroup! [29694, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Final Blow! [31769]
+  The Double Hozen Dare [29716, level 86] - needs one of Welcome to Dawn's Blossom [31230]
+  Down Kitty! [29717, level 86] - needs one of Welcome to Dawn's Blossom [31230]
+  The Jade Witch [29723, level 86] - needs one of The Double Hozen Dare [29716]
+  Scouting Report: Hostile Natives [29730, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Scouts Return [29971]
+  Scouting Report: On the Right Track [29731, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Scouting Report: Hostile Natives [29730]
+  Monstrosity [29743, level 86] - needs one of Seeking Zin'jun [31774]
+  Cryin' My Eyes Out [29765, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Seeking Zin'jun [31774]
+  Seein' Red [29804, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Cryin' My Eyes Out [29765]
+  Forensic Science [29815, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Nazgrim's Command [31999]
+  Missed Me By... That Much! [29821, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Nazgrim's Command [31999]
+  Lay of the Land [29822, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Acid Rain [29827]
+  Scouting Report: The Friend of My Enemy [29823, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Scouting Report: On the Right Track [29731]
+  Scouting Report: Like Jinyu in a Barrel [29824, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Scouting Report: The Friend of My Enemy [29823]
+  Acid Rain [29827, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Forensic Science [29815]
+  The Silkwood Road [29865, level 86] - needs one of Welcome to Dawn's Blossom [31230]
+  The Threads that Stick [29866, level 86] - needs one of Welcome to Dawn's Blossom [31230]
+  Swallowed Whole [29879, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Family Tree [31167]
+  Getting Permission [29920, level 86] - needs one of Shrine of the Dawn [29995]
+  Kill Kher Shan [29924, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Family Tree [31167]
+  All We Can Spare [29925, level 86] - needs one of The Jade Witch [29723]
+  Calamity Jade [29926, level 86] - needs one of I Have No Jade And I Must Scream [29928]
+  Mann's Man [29927, level 86] - needs one of I Have No Jade And I Must Scream [29928]
+  I Have No Jade And I Must Scream [29928, level 86] - needs one of All We Can Spare [29925]
+  Trapped! [29929, level 86] - needs one of Mann's Man [29927]
+  What's Mined Is Yours [29930, level 86] - needs one of Trapped! [29929]
+  The Serpent's Heart [29931, level 86] - needs one of What's Mined Is Yours [29930]
+  The Temple of the Jade Serpent [29932, level 86] - needs one of Love's Labor [30495]
+  The Bees' Knees [29933, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Family Tree [31167]
+  Orders are Orders [29935, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Swallowed Whole [29879]
+  Instant Messaging [29936, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Orders are Orders [29935]
+  Furious Fowl [29937, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Beyond the Horizon [29941]
+  Boom Bait [29939, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Furious Fowl [29937]
+  Beyond the Horizon [29941, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Instant Messaging [29936]
+  Silly Wikket, Slickies are for Hozen [29942, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Furious Fowl [29937]
+  Guerrillas in our Midst [29943, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Scouting Report: Like Jinyu in a Barrel [29824]
+  Burning Down the House [29966, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Guerrillas in our Midst [29943]
+  Boom Goes the Doonamite! [29967, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Green-ish Energy [29968]
+  Green-ish Energy [29968, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Scouting Report: Like Jinyu in a Barrel [29824]
+  The Scouts Return [29971, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Boom Bait [29939], Silly Wikket, Slickies are for Hozen [29942], What's in a Name Name? [31239]
+  Find the Boy [29993, level 86] - needs one of The Threads that Stick [29866]
+  Shrine of the Dawn [29995, level 86] - needs one of Find the Boy [29993]
+  The Scryer's Dilemma [29997, level 86] - needs one of The Temple of the Jade Serpent [29932]
+  The Librarian's Quandary [29998, level 86] - needs one of The Temple of the Jade Serpent [29932]
+  The Rider's Bind [29999, level 86] - needs one of The Temple of the Jade Serpent [29932]
+  The Jade Serpent [30000, level 86] - needs The Rider's Bind [29999], Everything In Its Place [30004], Lighting Up the Sky [30005], A New Vision [30011]
+  Moth-Ridden [30001, level 86] - needs one of The Librarian's Quandary [29998]
+  Pages of History [30002, level 86] - needs one of The Librarian's Quandary [29998]
+  Everything In Its Place [30004, level 86] - needs Moth-Ridden [30001], Pages of History [30002]
+  Lighting Up the Sky [30005, level 86] - needs one of The Temple of the Jade Serpent [29932]
+  A New Vision [30011, level 86] - needs one of The Scryer's Dilemma [29997]
+  Dawn's Blossom [30015, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Boom Goes the Doonamite! [29967]
+  Sufficient Motivation [30466, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Jade Serpent [30000]
+  Gauging Our Progress [30484, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Jade Serpent [30000]
+  Last Piece of the Puzzle [30485, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Sufficient Motivation [30466], Gauging Our Progress [30484]
+  Love's Labor [30495, level 86] - needs one of The Serpent's Heart [29931]
+  Get Back Here! [30499, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Jade Serpent [30000]
+  Residual Fallout [30500, level 86] - needs one of The Seal is Broken [31303]
+  Jaded Heart [30502, level 86] - needs one of The Seal is Broken [31303]
+  Emergency Response [30504, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Seal is Broken [31303]
+  Moving On [30648, level 86] - needs one of Emergency Response [30504], Emergency Response [31319] -> Valley of the Four Winds
+  They're So Thorny! [31112, level 86] - needs one of Missed Me By... That Much! [29821]
+  Stay a While, and Listen [31121, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Lay of the Land [29822]
+  A Mile in My Shoes [31132, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Stay a While, and Listen [31121]
+  If These Stones Could Speak [31134, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of A Mile in My Shoes [31132]
+  Peering Into the Past [31152, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of If These Stones Could Speak [31134]
+  Family Tree [31167, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Peering Into the Past [31152]
+  Welcome to Dawn's Blossom [31230, level 86] - needs one of In Search of Wisdom [29922], Dawn's Blossom [30015]
+  What's in a Name Name? [31239, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Beyond the Horizon [29941]
+  Wicked Wikkets [31241, level 86] - needs one of Swallowed Whole [29879]
+  The Seal is Broken [31303, level 86] - needs one of Last Piece of the Puzzle [30485], Last Piece of the Puzzle [31362]
+  Paint it Red! [31765, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Into the Mists [29690]
+  Touching Ground [31766, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Paint it Red! [31765]
+  Finish Them! [31767, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Touching Ground [31766]
+  Fire Is Always the Answer [31768, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Touching Ground [31766]
+  The Final Blow! [31769, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Finish Them! [31767], Fire Is Always the Answer [31768]
+  You're Either With Us Or... [31770, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Final Blow! [31769]
+  Face to Face With Consequence [31771, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Final Blow! [31769]
+  Priorities! [31772, level 86] - needs one of The Final Blow! [31769]
+  Prowler Problems [31773, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Final Blow! [31769]
+  Seeking Zin'jun [31774, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Regroup! [29694], You're Either With Us Or... [31770], Face to Face With Consequence [31771], Prowler Problems [31773]
+  Assault on the Airstrip [31775, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Seein' Red [29804]
+  Strongarm Tactics [31776, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Seein' Red [29804]
+  Choppertunity [31777, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Seein' Red [29804]
+  Unreliable Allies [31778, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Seein' Red [29804]
+  The Darkness Within [31779, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Assault on the Airstrip [31775], Strongarm Tactics [31776], Choppertunity [31777], Unreliable Allies [31778]
+  Nazgrim's Command [31999, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Darkness Within [31779]
+
+Worth checking in game
+----------------------
+  Defiance [29578, level 86]: mixes a kill-credit objective with others; check that "Gormali Raider" really is line 2 in the quest log
+  Lay of the Land [29822, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: mixes a kill-credit objective with others; check that "Yoggtord" really is line 3 in the quest log
+  Scouting Report: Like Jinyu in a Barrel [29824, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: "Shademaster Kiryn" has no place in the data; taken to be done where the quest is given
+  Swallowed Whole [29879, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: could not read how many Engorged Crocolisk are needed from the quest text; assumed 8
+  Boom Goes the Doonamite! [29967, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: "Jinyu Tactician (1)" has no place in the data; taken to be done where the quest is given
+  The Jade Serpent [30000, level 86]: "Kill Credit: Jade Serpent (1)" has no place in the data; taken to be done where the quest is given
+  Sufficient Motivation [30466, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: mixes a kill-credit objective with others; check that "Lazy Hozen" really is line 2 in the quest log
+  Paint it Red! [31765, level 86, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren]: mixes a kill-credit objective with others; check that "Thunder Hold Laborer" really is line 2 in the quest log
+
+Put off to a later part (23)
+----------------------------
+These need a higher level than this part ends at:
+  An Urgent Plea [29749, level 86]: its mobs are level 90; this part gets you to about 85.4
+  Vessels of the Spirit [29750, level 86]: follows An Urgent Plea [29749]
+  Ritual Artifacts [29751, level 86]: follows An Urgent Plea [29749]
+  The Wayward Dead [29752, level 86]: follows An Urgent Plea [29749]
+  Back to Nature [29753, level 86]: follows Vessels of the Spirit [29750]
+  To Bridge Earth and Sky [29754, level 86]: follows Back to Nature [29753]
+  Pei-Back [29755, level 86]: follows To Bridge Earth and Sky [29754]
+  A Humble Offering [29756, level 86]: follows Vessels of the Spirit [29750]
+  Wild Things [30134, level 90]: needs level 90; this part gets you to about 85.4
+  Beating the Odds [30135, level 90]: needs level 90; this part gets you to about 85.4
+  Empty Nests [30136, level 90]: needs level 90; this part gets you to about 85.4
+  Egg Collection [30137, level 90]: needs level 90; this part gets you to about 85.4
+  Choosing the One [30138, level 90]: needs level 90; this part gets you to about 85.4
+  The Rider's Journey [30139, level 90]: needs level 90; this part gets you to about 85.4
+  It's A... [30142, level 90]: needs level 90; this part gets you to about 85.4
+  Flight Training: Ring Round-Up [30144, level 90]: needs level 90; this part gets you to about 85.4
+  Flight Training: Full Speed Ahead [30145, level 90]: needs level 90; this part gets you to about 85.4
+  Flight Training: In Due Course [30187, level 90]: needs level 90; this part gets you to about 85.4
+  The Road to Kun-Lai [31255, level 87]: needs level 87; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 85.4
+  Everything I Know About Cooking [31279, level 90]: needs level 86; this part gets you to about 85.4
+  Temple of the White Tiger [31393, level 87]: needs level 87; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 85.4
+  Volatile Greenstone Brew [31613, level 90]: needs level 90; this part gets you to about 85.4
+  His Name Was... Stormstout [32018, level 87]: needs level 86; this part gets you to about 85.4
+
+Left out (107)
+--------------
+repeatable (58):
+  The Darkness Around Us [30006], Behind the Masks [30063], Saving the Sutras [30064], Arrows of Fortune [30065], Hidden Power [30066], The Shadow of Doubt [30067], Flames of the Void [30068], Snack Time [30146], Fragments of the Past [30147], Just a Flesh Wound [30148], A Feast for the Senses [30149], Sweet as Honey [30150], Catch! [30151], The Sky Race [30152], The Easiest Way To A Serpent's Heart [30154], Restoring the Balance [30155], Feeding Time [30156], Emptier Nests [30157], Disarming the Enemy [30158], Preservation [30159], Slitherscale Suppression [31194], Attack At The Temple of the Jade Serpent [31377], A Thing of Beauty [31539], Staves for Tian Monastery [31540], Set in Jade [31541], Incarnadine Ink [31542], Portrait of a Lady [31543], A Tribute to the Dead [31544], Thinning The Pack [31698], Sprite Fright [31699], The Shoe Is On The Other Foot [31700], Dark Huntress [31701], On The Prowl [31702], Madcap Mayhem [31703], Pooped [31704], Needle Me Not [31705], Weeping Widows [31706], A Tangled Web [31707], Serpent's Scale [31708], Lingering Doubt [31709], ... 18 more
+not in the game (on Questie's quest blacklist) (31):
+  Kill Mogu Firestarters [29584], UNUSED [29621], UNUSED [29625], UNUSED [29638], UNUSED [29648], The General's Edge [29693], My Stars! [29696], The Witch in the Woods [29715], The Double Hozu Dare [29719], A Lesson in Bravery [29722], A Good Start [29766], Sacred Scroll [29837], Lay of the Land[TEMP] [29841], Seeking Answers [29842], Aunty Lin Windfur [29843], Building a Better Hozen Trap [29878], Friends and Foes [29938], Muster of Fort Grookin [30009], Full Speed Ahead [30153], Inscribed Tiger Staff [31690], Inscribed Crane Staff [31691], Inscribed Serpent Staff [31692], Doubt Begins To Surface [31968], Candy Bucket [32021], Candy Bucket [32027], Candy Bucket [32028], Candy Bucket [32029], Candy Bucket [32031], Candy Bucket [32032], Candy Bucket [32050], Honor the Flame [32498]
+needs reputation (6):
+  They Grow Like Weeds [30143], Riding the Skies [30188], Damage Control [31458], Extracting Answers [31465], Riding the Skies [31810], Riding the Skies [31811]
+handed in here, but the database does not say where it starts (3):
+  The Rider's Journey [30140], The Rider's Journey [30141], The Order of the Cloud Serpent [32461]
+cannot be taken together with Flying Colors [29639], which is in the guide (2):
+  Flying Colors [29646], Flying Colors [29647]
+special category (sort -344) (2):
+  Stranger in a Strange Land [31488], Stranger in a Strange Land [31489]
+special category (sort -391) (1):
+  Blanche's Boomer Brew [30567]
+cannot be taken together with Everything I Know About Cooking [31279], which is in the guide (1):
+  Everything I Know About Cooking [31486]
+cannot be taken together with Priorities! [31772], which is in the guide (1):
+  Priorities! [31978]
+cannot be taken together with His Name Was... Stormstout [32018], which is in the guide (1):
+  They Call Him... Stormstout [32019]
+never shown to players (a tracking flag or an unused entry) (1):
+  Tracking Event: Event Complete [32361]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Jade Forest - Horde - part 2 of 2, planned from level 88
+Guide "85-90 The Jade Forest" in group "Zone Routes (Horde)": this part has 33 steps, 30 stops
+Written to guides/mop/The Jade Forest (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 88. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 28 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 32 tasks, 2,523 yd on foot; ends at level 88.0; at its hardest you are 2.0 levels below the mobs
+Hearthstone: set at Brewmaster Lei Kanglei (Brewmaster Lei Kanglei's inn); 0 hearth steps in the guide.
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (12)
+------------------------
+Start to finish here: 8 (8 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (4):
+  The Road to Kun-Lai [31255, level 87, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Kun-Lai Summit
+  Temple of the White Tiger [31393, level 87, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Kun-Lai Summit
+  His Name Was... Stormstout [32018, level 87] -> Valley of the Four Winds
+  Everything I Know About Cooking [31279, level 90] -> Valley of the Four Winds
+
+Worth checking in game
+----------------------
+  Back to Nature [29753, level 86]: "Peaceful Beast Spirit (8)" has no place in the data; taken to be done where the quest is given
+
+Not planned (11)
+----------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  Wild Things [30134, level 90]: needs level 90; this part gets you to about 88.1
+  Beating the Odds [30135, level 90]: needs level 90; this part gets you to about 88.1
+  Empty Nests [30136, level 90]: needs level 90; this part gets you to about 88.1
+  Egg Collection [30137, level 90]: needs level 90; this part gets you to about 88.1
+  Choosing the One [30138, level 90]: needs level 90; this part gets you to about 88.1
+  The Rider's Journey [30139, level 90]: needs level 90; this part gets you to about 88.1
+  It's A... [30142, level 90]: needs level 90; this part gets you to about 88.1
+  Flight Training: Ring Round-Up [30144, level 90]: needs level 90; this part gets you to about 88.1
+  Flight Training: Full Speed Ahead [30145, level 90]: needs level 90; this part gets you to about 88.1
+  Flight Training: In Due Course [30187, level 90]: needs level 90; this part gets you to about 88.1
+  Volatile Greenstone Brew [31613, level 90]: needs level 90; this part gets you to about 88.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

@@ -114,12 +114,10 @@ special category (sort -344) (6):
   Frame of Atiesh [9250], Atiesh, the Befouled Greatstaff [9251], Atiesh, Greatstaff of the Guardian [9257], Atiesh, Greatstaff of the Guardian [9269], Atiesh, Greatstaff of the Guardian [9270], Atiesh, Greatstaff of the Guardian [9271]
 dungeon quest (4):
   Yuka Screwspigot [4324], The Final Tablets [4788], Confront Yeh'kinya [8181], The Savior of Kalimdor [8802]
+not in the game (on Questie's quest blacklist) (4):
+  Ragetotem the Elder [8671], Dreamseer the Elder [8684], Winter's Presents [8828], New Year Celebrations! [8861]
 handed in here, but the database does not say where it starts (2):
   Tanaris Field Sampling [654], Ship Schedules [2876]
-special category (sort -366) (2):
-  Ragetotem the Elder [8671], Dreamseer the Elder [8684]
-special category (sort -22) (2):
-  Winter's Presents [8828], New Year Celebrations! [8861]
 helper for Draconic for Dummies (1):
   Love Song for Narain [8599]
 

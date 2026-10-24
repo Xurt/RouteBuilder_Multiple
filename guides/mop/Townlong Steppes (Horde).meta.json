@@ -1,0 +1,640 @@
+{
+  "zone": "Townlong Steppes",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "89-89 Townlong Steppes",
+  "file": "Townlong Steppes (Horde).lua",
+  "continent": -5842,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 89,
+      "end": 89.43,
+      "guide": "89-89 Townlong Steppes",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Taran Zhu",
+          "guide": "89-89 Townlong Steppes",
+          "level": 89,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 30768,
+      "level": 89,
+      "req": 88,
+      "xp": 98000,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Kun-Lai Summit"
+    },
+    {
+      "id": 30769,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30770,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30771,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30772,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30773,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30774,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30775,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30776,
+      "level": 89,
+      "req": 88,
+      "xp": 245000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30777,
+      "level": 89,
+      "req": 88,
+      "xp": 98000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30778,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30779,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30780,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30781,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30782,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30783,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30784,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30785,
+      "level": 89,
+      "req": 88,
+      "xp": 98000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30786,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30787,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30788,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30789,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30790,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30791,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30792,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30793,
+      "level": 89,
+      "req": 88,
+      "xp": 245000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30814,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30815,
+      "level": 89,
+      "req": 88,
+      "xp": 19600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30827,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30884,
+      "level": 89,
+      "req": 88,
+      "xp": 49000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30887,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30888,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30889,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30890,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30891,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30892,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30893,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30894,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30895,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30896,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30897,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30898,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30900,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30901,
+      "level": 89,
+      "req": 88,
+      "xp": 49000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30921,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30922,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30923,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30924,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30925,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30926,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30927,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30928,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30929,
+      "level": 89,
+      "req": 88,
+      "xp": 98000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30930,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30931,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30932,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30960,
+      "level": 89,
+      "req": 88,
+      "xp": 49000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30963,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30964,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30970,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30971,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30972,
+      "level": 89,
+      "req": 88,
+      "xp": 49000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 30973,
+      "level": 89,
+      "req": 88,
+      "xp": 196000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 31388,
+      "level": 89,
+      "req": 88,
+      "xp": 19600,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Vale of Eternal Blossoms"
+    },
+    {
+      "id": 31695,
+      "level": 88,
+      "req": 88,
+      "xp": 16200,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Kun-Lai Summit"
+    },
+    {
+      "id": 31894,
+      "level": 89,
+      "req": 88,
+      "xp": 19600,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 32678,
+      "level": 90,
+      "req": 90,
+      "xp": 23600,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Vale of Eternal Blossoms"
+    }
+  ],
+  "carriedTo": {
+    "Kun-Lai Summit": 1,
+    "Vale of Eternal Blossoms": 1
+  }
+}

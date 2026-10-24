@@ -1,0 +1,698 @@
+{
+  "zone": "Hillsbrad Foothills",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "20-25 Hillsbrad Foothills",
+  "file": "Hillsbrad Foothills (Horde).lua",
+  "continent": -267,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 20,
+      "end": 26.91,
+      "guide": "22-27 Hillsbrad Foothills: around Serge Hinott",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around High Executor Darthalia",
+          "guide": "20-22 Hillsbrad Foothills: around High Executor Darthalia",
+          "level": 20,
+          "index": 0
+        },
+        {
+          "label": "RBSection1_2",
+          "name": "around Serge Hinott",
+          "guide": "22-27 Hillsbrad Foothills: around Serge Hinott",
+          "level": 22,
+          "index": 1
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 9133,
+      "level": 7,
+      "req": 5,
+      "xp": 315,
+      "part": 1,
+      "section": 1,
+      "tag": "BloodElf",
+      "from": "Eversong Woods"
+    },
+    {
+      "id": 9328,
+      "level": 21,
+      "req": 15,
+      "xp": 830,
+      "part": 1,
+      "section": 1,
+      "tag": "BloodElf",
+      "from": "Ghostlands"
+    },
+    {
+      "id": 9627,
+      "level": 21,
+      "req": 15,
+      "xp": 2500,
+      "part": 1,
+      "section": 1,
+      "tag": "BloodElf",
+      "from": "Durotar"
+    },
+    {
+      "id": 9811,
+      "level": 21,
+      "req": 15,
+      "xp": 830,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/Goblin/Pandaren",
+      "from": "Ghostlands"
+    },
+    {
+      "id": 27746,
+      "level": 20,
+      "req": 19,
+      "xp": 1550,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Silverpine Forest"
+    },
+    {
+      "id": 28089,
+      "level": 20,
+      "req": 19,
+      "xp": 1550,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren",
+      "from": "Silverpine Forest"
+    },
+    {
+      "id": 28096,
+      "level": 20,
+      "req": 19,
+      "xp": 1550,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28111,
+      "level": 20,
+      "req": 19,
+      "xp": 155,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28114,
+      "level": 20,
+      "req": 19,
+      "xp": 1550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28115,
+      "level": 20,
+      "req": 19,
+      "xp": 1550,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28138,
+      "level": 20,
+      "req": 19,
+      "xp": 2350,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28144,
+      "level": 20,
+      "req": 19,
+      "xp": 1550,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28146,
+      "level": 20,
+      "req": 19,
+      "xp": 1550,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28154,
+      "level": 20,
+      "req": 19,
+      "xp": 1550,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28156,
+      "level": 20,
+      "req": 19,
+      "xp": 2350,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28168,
+      "level": 21,
+      "req": 19,
+      "xp": 165,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28189,
+      "level": 20,
+      "req": 19,
+      "xp": 2350,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28192,
+      "level": 21,
+      "req": 19,
+      "xp": 1650,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28196,
+      "level": 21,
+      "req": 19,
+      "xp": 2050,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28197,
+      "level": 21,
+      "req": 19,
+      "xp": 1650,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28199,
+      "level": 21,
+      "req": 19,
+      "xp": 1650,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28206,
+      "level": 21,
+      "req": 19,
+      "xp": 830,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28209,
+      "level": 21,
+      "req": 19,
+      "xp": 1650,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28230,
+      "level": 21,
+      "req": 19,
+      "xp": 2050,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28231,
+      "level": 21,
+      "req": 19,
+      "xp": 2050,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28235,
+      "level": 21,
+      "req": 19,
+      "xp": 2050,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28237,
+      "level": 21,
+      "req": 19,
+      "xp": 2500,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28251,
+      "level": 22,
+      "req": 20,
+      "xp": 435,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28324,
+      "level": 22,
+      "req": 20,
+      "xp": 1750,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28325,
+      "level": 22,
+      "req": 20,
+      "xp": 1750,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28329,
+      "level": 22,
+      "req": 20,
+      "xp": 1750,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28330,
+      "level": 22,
+      "req": 20,
+      "xp": 2200,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28331,
+      "level": 22,
+      "req": 20,
+      "xp": 2600,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28332,
+      "level": 22,
+      "req": 20,
+      "xp": 1750,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28344,
+      "level": 22,
+      "req": 20,
+      "xp": 175,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28345,
+      "level": 22,
+      "req": 20,
+      "xp": 870,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28348,
+      "level": 22,
+      "req": 20,
+      "xp": 1750,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28354,
+      "level": 22,
+      "req": 20,
+      "xp": 1750,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28355,
+      "level": 22,
+      "req": 20,
+      "xp": 2200,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28375,
+      "level": 23,
+      "req": 20,
+      "xp": 1850,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28397,
+      "level": 23,
+      "req": 20,
+      "xp": 3700,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28400,
+      "level": 23,
+      "req": 20,
+      "xp": 3700,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28484,
+      "level": 23,
+      "req": 21,
+      "xp": 1850,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28485,
+      "level": 25,
+      "req": 21,
+      "xp": 4000,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28487,
+      "level": 23,
+      "req": 21,
+      "xp": 1850,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28489,
+      "level": 23,
+      "req": 21,
+      "xp": 1850,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28495,
+      "level": 23,
+      "req": 21,
+      "xp": 1850,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28506,
+      "level": 23,
+      "req": 21,
+      "xp": 1850,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28538,
+      "level": 24,
+      "req": 21,
+      "xp": 2900,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28556,
+      "level": 24,
+      "req": 21,
+      "xp": 2400,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28566,
+      "level": 24,
+      "req": 21,
+      "xp": 1950,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28571,
+      "level": 20,
+      "req": 19,
+      "xp": 155,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28587,
+      "level": 24,
+      "req": 21,
+      "xp": 195,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28600,
+      "level": 24,
+      "req": 21,
+      "xp": 1950,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28603,
+      "level": 24,
+      "req": 21,
+      "xp": 1950,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28604,
+      "level": 24,
+      "req": 21,
+      "xp": 2400,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28605,
+      "level": 24,
+      "req": 21,
+      "xp": 1950,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28616,
+      "level": 24,
+      "req": 21,
+      "xp": 3900,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28617,
+      "level": 20,
+      "req": 20,
+      "xp": 80,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28620,
+      "level": 25,
+      "req": 23,
+      "xp": 510,
+      "part": 1,
+      "section": 1,
+      "tag": ""
+    },
+    {
+      "id": 28634,
+      "level": 25,
+      "req": 23,
+      "xp": 2000,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28635,
+      "level": 25,
+      "req": 23,
+      "xp": 2000,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28636,
+      "level": 25,
+      "req": 23,
+      "xp": 2000,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28643,
+      "level": 25,
+      "req": 23,
+      "xp": 2550,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28644,
+      "level": 25,
+      "req": 23,
+      "xp": 2550,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28645,
+      "level": 25,
+      "req": 23,
+      "xp": 2550,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28646,
+      "level": 25,
+      "req": 23,
+      "xp": 2550,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28647,
+      "level": 25,
+      "req": 23,
+      "xp": 4000,
+      "part": 1,
+      "section": 1,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 28733,
+      "level": 20,
+      "req": 20,
+      "xp": 80,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28744,
+      "level": 20,
+      "req": 20,
+      "xp": 80,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28747,
+      "level": 20,
+      "req": 20,
+      "xp": 80,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 28748,
+      "level": 20,
+      "req": 20,
+      "xp": 160,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Eversong Woods": 1,
+    "Tirisfal Glades": 2,
+    "Durotar": 13,
+    "Ghostlands": 1,
+    "Arathi Highlands": 1,
+    "Northern Stranglethorn": 1
+  }
+}

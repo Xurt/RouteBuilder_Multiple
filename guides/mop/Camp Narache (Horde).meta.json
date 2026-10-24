@@ -1,0 +1,239 @@
+{
+  "zone": "Camp Narache",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "1-5 Camp Narache",
+  "file": "Camp Narache (Horde).lua",
+  "continent": -6452,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 1,
+      "end": 4.59,
+      "guide": "1-5 Camp Narache",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "1-5 Camp Narache",
+          "level": 1,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 3091,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren Warrior"
+    },
+    {
+      "id": 3092,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren Hunter"
+    },
+    {
+      "id": 3093,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren Shaman"
+    },
+    {
+      "id": 3094,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren Druid"
+    },
+    {
+      "id": 14449,
+      "level": 1,
+      "req": 1,
+      "xp": 40,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 14452,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 14455,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 14456,
+      "level": 3,
+      "req": 1,
+      "xp": 250,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 14458,
+      "level": 2,
+      "req": 1,
+      "xp": 85,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 14459,
+      "level": 4,
+      "req": 1,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 14460,
+      "level": 5,
+      "req": 1,
+      "xp": 560,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 14461,
+      "level": 4,
+      "req": 1,
+      "xp": 355,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 23733,
+      "level": 5,
+      "req": 1,
+      "xp": 335,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 24852,
+      "level": 2,
+      "req": 1,
+      "xp": 170,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 24861,
+      "level": 5,
+      "req": 1,
+      "xp": 225,
+      "part": 1,
+      "section": 0,
+      "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
+    },
+    {
+      "id": 27014,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren Priest"
+    },
+    {
+      "id": 27015,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren Paladin/BloodElf Paladin"
+    },
+    {
+      "id": 27020,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren Warrior"
+    },
+    {
+      "id": 27021,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren Hunter"
+    },
+    {
+      "id": 27023,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren Paladin/BloodElf Paladin"
+    },
+    {
+      "id": 27027,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren Shaman"
+    },
+    {
+      "id": 27066,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren Priest"
+    },
+    {
+      "id": 27067,
+      "level": 3,
+      "req": 2,
+      "xp": 125,
+      "part": 1,
+      "section": 0,
+      "tag": "Tauren Druid"
+    }
+  ],
+  "carriedTo": {
+    "Mulgore": 1
+  }
+}

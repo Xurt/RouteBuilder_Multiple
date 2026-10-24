@@ -1,0 +1,21 @@
+{
+  "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "68-70 Caverns of Time",
+  "saved": "2026-10-23 17:58",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "accept:10296 @75:41.55,38.5  Accept The Black Morass",
+        "turnin:29132 @75:41.77,49.87  TurnIn A Legendary Engagement",
+        "turnin:8802 @75:41.77,49.87  TurnIn The Savior of Kalimdor",
+        "accept:10279 @74:55.26,27.93  Accept To The Master's Lair",
+        "turnin:10279 @75:41.55,38.5  TurnIn To The Master's Lair",
+        "accept:10277 @75:41.55,38.5  Accept The Caverns of Time",
+        "obj:10277:1 @75:44.31,38.73  Objective The Caverns of Time / Caverns of Time Explained",
+        "turnin:10277 @75:41.55,38.5  TurnIn The Caverns of Time",
+        "accept:10282 @75:41.55,38.5  Accept Old Hillsbrad"
+      ]
+    }
+  ]
+}

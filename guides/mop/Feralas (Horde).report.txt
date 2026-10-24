@@ -1,0 +1,222 @@
+Feralas - Horde - part 1 of 2, planned from level 36
+Guide "36-41 Feralas" in group "Zone Routes (Horde)": this part has 169 steps, 127 stops
+Written to guides/mop/Feralas (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: 58 PROBLEMS
+  ! The Battle Plans is picked up before any of the quests that unlock it (Orc Warrior)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Orc Hunter)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Orc Rogue)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Orc DeathKnight)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Orc Shaman)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Orc Mage)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Orc Warlock)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Orc Monk)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Undead Warrior)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Undead Hunter)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Undead Rogue)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Undead Priest)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Undead DeathKnight)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Undead Mage)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Undead Warlock)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Undead Monk)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Tauren Warrior)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Tauren Paladin)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Tauren Hunter)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Tauren Priest)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Tauren DeathKnight)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Tauren Shaman)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Tauren Monk)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Tauren Druid)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Troll Warrior)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Troll Hunter)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Troll Rogue)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Troll Priest)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Troll DeathKnight)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Troll Shaman)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Troll Mage)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Troll Warlock)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Troll Monk)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Troll Druid)
+  ! The Battle Plans is picked up before any of the quests that unlock it (BloodElf Warrior)
+  ! The Battle Plans is picked up before any of the quests that unlock it (BloodElf Paladin)
+  ! The Battle Plans is picked up before any of the quests that unlock it (BloodElf Hunter)
+  ! The Battle Plans is picked up before any of the quests that unlock it (BloodElf Rogue)
+  ! The Battle Plans is picked up before any of the quests that unlock it (BloodElf Priest)
+  ! The Battle Plans is picked up before any of the quests that unlock it (BloodElf DeathKnight)
+  ! The Battle Plans is picked up before any of the quests that unlock it (BloodElf Mage)
+  ! The Battle Plans is picked up before any of the quests that unlock it (BloodElf Warlock)
+  ! The Battle Plans is picked up before any of the quests that unlock it (BloodElf Monk)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Goblin Warrior)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Goblin Hunter)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Goblin Rogue)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Goblin Priest)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Goblin DeathKnight)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Goblin Shaman)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Goblin Mage)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Goblin Warlock)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Pandaren Warrior)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Pandaren Hunter)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Pandaren Rogue)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Pandaren Priest)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Pandaren Shaman)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Pandaren Mage)
+  ! The Battle Plans is picked up before any of the quests that unlock it (Pandaren Monk)
+Quest log: at most 19 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 36. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 7 steps kept, 177 new ones slotted in, 0 moved because their prerequisites changed, 6 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 36, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 151 tasks, 24,948 yd on foot; ends at level 40.4; 3 hearths; 1 ORDER PROBLEMS
+  Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior: 1 more tasks; their whole route comes to 25,240 yd; ends at level 40.4; 3 hearths; 1 ORDER PROBLEMS
+  Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter: 1 more tasks; their whole route comes to 25,239 yd; ends at level 40.4; 3 hearths; 1 ORDER PROBLEMS
+  Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage: 1 more tasks; their whole route comes to 25,265 yd; ends at level 40.4; 3 hearths; 1 ORDER PROBLEMS
+  Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock: 1 more tasks; their whole route comes to 25,242 yd; ends at level 40.4; 3 hearths; 1 ORDER PROBLEMS
+  Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman: 1 more tasks; their whole route comes to 25,204 yd; ends at level 40.4; 3 hearths; 1 ORDER PROBLEMS
+  Tauren Druid/Troll Druid: 1 more tasks; their whole route comes to 26,515 yd; ends at level 40.4; 3 hearths; 1 ORDER PROBLEMS
+  Tauren Paladin/BloodElf Paladin: 1 more tasks; their whole route comes to 25,032 yd; ends at level 40.4; 3 hearths; 1 ORDER PROBLEMS
+  Undead Priest: 1 more tasks; their whole route comes to 25,064 yd; ends at level 40.4; 3 hearths; 1 ORDER PROBLEMS
+  Tauren Priest: 1 more tasks; their whole route comes to 25,064 yd; ends at level 40.4; 3 hearths; 1 ORDER PROBLEMS
+  Troll Priest: 1 more tasks; their whole route comes to 25,064 yd; ends at level 40.4; 3 hearths; 1 ORDER PROBLEMS
+  BloodElf Paladin: 1 more tasks; their whole route comes to 25,032 yd; ends at level 40.4; 3 hearths; 1 ORDER PROBLEMS
+  BloodElf Priest: 1 more tasks; their whole route comes to 25,064 yd; ends at level 40.4; 3 hearths; 1 ORDER PROBLEMS
+  Goblin Priest: 1 more tasks; their whole route comes to 25,064 yd; ends at level 40.4; 3 hearths; 1 ORDER PROBLEMS
+  everyone (quests that depend on other zones): 13 more tasks; their whole route comes to 25,476 yd; ends at level 40.4; 3 hearths; 1 ORDER PROBLEMS
+  Tauren (quests that depend on other zones): 7 more tasks; their whole route comes to 27,103 yd; ends at level 40.4; 3 hearths; 1 ORDER PROBLEMS
+Hearthstone: set at Jangdor Swiftstrider (Jangdor Swiftstrider's inn); 3 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 36 for War on the Woodpaw (Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+14 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (87)
+------------------------
+Start to finish here: 51 (15 for everyone, 36 Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (22):
+  Warchief's Command: Northern Barrens! [28494, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> The Barrens
+  Warchief's Command: Azshara! [28496, level 10, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Azshara
+  Until Death Do Us Part [264, level 15, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Silverpine Forest
+  An Audience with Ureda [27277, level 20, Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage] -> Orgrimmar
+  Grimshot's Call [27278, level 20, Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter] -> Orgrimmar
+  The Dreamseeker Calls [27280, level 20, Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman] -> Orgrimmar
+  Grezz Ragefist [27281, level 20, Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior] -> Orgrimmar
+  Zevrost's Behest [27282, level 20, Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock] -> Orgrimmar
+  A Journey to Moonglade [27283, level 20, Tauren Druid/Troll Druid] -> Moonglade
+  Seek Out Master Pyreanor [27298, level 20, BloodElf Paladin] -> Orgrimmar
+  Follow the Sun [27304, level 20, Tauren Paladin/BloodElf Paladin] -> Orgrimmar
+  The Seer's Call [27331, level 20, Tauren Priest] -> Orgrimmar
+  Seek the Shadow-Walker [27332, level 20, Troll Priest] -> Orgrimmar
+  Dark Cleric Cecille [27334, level 20, Undead Priest] -> Orgrimmar
+  Journey to Orgrimmar [27335, level 20, BloodElf Priest] -> Orgrimmar
+  Seek Brother Silverhallow [28164, level 20, Goblin Priest] -> Orgrimmar
+  Warchief's Command: Ashenvale! [28493, level 20, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> The Barrens
+  Warchief's Command: Stonetalon Mountains! [28532, level 25, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Ashenvale
+  Warchief's Command: Desolace! [28548, level 30, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Desolace
+  Warchief's Command: Southern Barrens! [28549, level 30, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Southern Barrens
+  Warchief's Command: Dustwallow Marsh! [28554, level 35, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Dustwallow Marsh
+  Warchief's Command: Thousand Needles! [28504, level 40, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Dustwallow Marsh
+
+Hand-in step only shows once complete (1):
+  Deadmire [1205, level 41, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs Deadmire's Tooth (1) (Dustwallow Marsh)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  Ride to Thunder Bluff [6362, level 7, Tauren] <- Mulgore
+  Journey into Thunder Bluff [24550, level 10, Tauren] <- Mulgore
+  The Wilds of Feralas [26589, level 35, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Desolace
+  The Black Shield [27258, level 37, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Dustwallow Marsh
+
+Need a quest this guide does not hand in - steps show only once that is done (9):
+  Tal the Wind Rider Master [6363, level 7, Tauren] - needs one of Ride to Thunder Bluff [6362]
+  Return to Varg [6364, level 7, Tauren] - needs one of Tal the Wind Rider Master [6363] -> Mulgore
+  War Dance [24540, level 10, Tauren] - needs one of Journey into Thunder Bluff [24550]
+  Walk With The Earth Mother [26397, level 12, Tauren] - needs one of War Dance [24540] -> Orgrimmar
+  Report to Silvia [25463, level 37] - needs one of General Skessesh [25458]
+  Rescue OOX-22/FE! [25476, level 37] - needs one of Find OOX-22/FE! [25475] -> The Cape of Stranglethorn
+  Return to Krog [27292, level 37, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of The Black Shield [27258] -> Dustwallow Marsh
+  Stinglasher [25369, level 38, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] - needs one of Alpha Strike [25427]
+  Stinglasher [25431, level 39] - needs one of Alpha Strike [25427]
+
+Worth checking in game
+----------------------
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  To the Summit [25356, level 40]: its mobs are level 85; this part gets Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren characters to about 40.4
+
+Left out (301)
+--------------
+not in the game (on Questie's quest blacklist) (227):
+  A Lesson to Learn [27], Aquatic Form [31], Leaders of the Fang [914], Assisting Arch Druid Runetotem [936], Serpentbloom [962], The New Frontier [1000], The New Frontier [1004], The New Frontier [1018], Compendium of the Fallen [1049], Melor Sends Word [1130], Steelsnap [1131], The Sacred Flame [1195], Hamuul Runetotem [1489], Nara Wildmane [1490], Veteran Uzzek [1505], Call of Fire [1523], The Islander [1718], Speak with Ruga [1823], Orm Stonehoof and the Brutal Helm [1840], Chimaeric Horn [1844], Brutal Helm [1845], Speak with Un'thuwa [1883], Journey to the Marsh [1947], Return to the Marsh [1953], Report to Anastasia [1959], The Platinum Discs [2440], Find OOX-22/FE! [2766], The Mark of Quality [2822], Wild Leather Armor [2854], Wild Leather Shoulders [2855], Wild Leather Vest [2856], Wild Leather Helmet [2857], Wild Leather Boots [2858], Wild Leather Leggings [2859], Master of the Wild Leather [2860], War on the Woodpaw [2862], Alpha Strike [2863], Woodpaw Investigation [2902], The Battle Plans [2903], Return to Thunder Bluff [2967], ... 187 more
+above this zone's range of 35-41 (47):
+  Portents of Uldum [2965], Warchief's Command: Vashj'ir! [27718], Warchief's Command: Mount Hyjal! [27721], Warchief's Command: Deepholm! [27722], Moonglade Calls [28289], Meet with Grezz Ragefist [28290], Meet with Ormak Grimshot [28297], Meet with Zevrost [28299], Meet with Ureda [28300], Meet with Kardris Dreamseeker [28301], Meet with Sunwalker Atohmo [28302], Meet with Master Pyreanor [28303], Meet with Dark Cleric Cecille [28304], Meet with Tyelis [28307], Meet with Seer Liwatha [28308], Meet with Shadow-Walker Zuru [28309], Meet with Brother Silverhallow [28323], Warchief's Command: Tanaris! [28509], Warchief's Command: Un'Goro Crater! [28526], Warchief's Command: Silithus! [28527], Warchief's Command: Felwood! [28542], Warchief's Command: Winterspring! [28545], Warchief's Command: Uldum! [28557], Warchief's Command: Outland! [28705], Warchief's Command: Northrend! [28711], Warchief's Command: Twilight Highlands! [28717], Welcome to Paradise [29041], Kitchen Clean-Up [29042], Lunch Break [29043], No Child of Mine [29044], Fit for a King [29045], Chef's Challenge: Steelback [29046], Chef's Challenge: Faewing [29047], Chef's Challenge: Grumpfin [29048], Out of Gas [29050], Float My Boat [29055], Fruit Round-Up [29056], Firebeak [29057], Roc Collection [29058], At Your Service [29060], ... 7 more
+repeatable (11):
+  Pond Predators [29345], The Ring's the Thing [29346], The Race to Restock [29348], Craving Crayfish [29349], Shiny Baubles [29354], Pining for Nuts [29358], "Magic" Mushrooms [29362], Mulgore Spice Bread [29363], Corn Mash [29364], Perfectly Picked Portions [29365], Traitor Gluk [31871]
+needs a profession (6):
+  Gathering Leather [768], Kodo Hide Bag [769], Goblin Engineering [29475], Gnomish Engineering [29477], Elixir Master [29481], Transmutation Master [29482]
+dungeon quest (4):
+  Saving Warpwood [27130], The Highborne [27132], Ogre in the Field [27134], Enemies Below [31036]
+special category (sort -284) (2):
+  Thunder Bluff [12786], Hammering It Out [25759]
+special category (sort -379) (2):
+  Guardians of Hyjal: Firelands Invasion! [29388], Guardians of Hyjal: Call of the Ancients [29390]
+cannot be taken together with Tears of Stone [25237], which is in the guide (1):
+  The Land, Corrupted [25241]
+special category (sort -23) (1):
+  Hammering It Out [25789]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Feralas - Horde - part 2 of 2, planned from level 83
+Guide "36-41 Feralas" in group "Zone Routes (Horde)": this part has 5 steps, 3 stops
+Written to guides/mop/Feralas (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 83. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 2 tasks, 52 yd on foot; ends at level 83.0; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 1,852 yd; ends at level 83.0; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (2)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  To the Summit [25356, level 40, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] -> Thousand Needles
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Deadmire [1205, level 41, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

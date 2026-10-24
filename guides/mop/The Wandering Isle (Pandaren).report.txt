@@ -1,0 +1,67 @@
+The Wandering Isle - Horde
+Guide "1-10 The Wandering Isle" in group "Zone Routes (Pandaren)": 167 steps, 153 stops
+Written to guides/mop/The Wandering Isle (Pandaren).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Pandaren Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 1. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 210 steps kept, 36 new ones slotted in, 0 moved because their prerequisites changed, 1 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 1 tasks, 769 yd on foot; ends at level 1.0
+  Pandaren: 194 more tasks; their whole route comes to 22,110 yd; ends at level 11.7; 2 hearths
+  Pandaren Warrior: 7 more tasks; their whole route comes to 22,223 yd; ends at level 11.7; 2 hearths
+  Pandaren Hunter: 6 more tasks; their whole route comes to 22,223 yd; ends at level 11.7; 2 hearths
+  Pandaren Rogue: 8 more tasks; their whole route comes to 22,223 yd; ends at level 11.7; 2 hearths
+  Pandaren Priest: 8 more tasks; their whole route comes to 22,147 yd; ends at level 11.7; 2 hearths
+  Pandaren Shaman: 8 more tasks; their whole route comes to 22,223 yd; ends at level 11.7; 2 hearths
+  Pandaren Mage: 8 more tasks; their whole route comes to 22,223 yd; ends at level 11.7; 2 hearths
+  Pandaren Monk: 6 more tasks; their whole route comes to 22,223 yd; ends at level 11.7; 2 hearths
+Hearthstone: set at Cheng Dawnscrive (Cheng Dawnscrive's inn); 2 hearth steps in the guide.
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+2 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+9 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (79)
+------------------------
+Start to finish here: 78 (0 for everyone, 64 Pandaren, 2 Pandaren Monk, 2 Pandaren Mage, 2 Pandaren Hunter, 2 Pandaren Priest, 2 Pandaren Rogue, 2 Pandaren Shaman, 2 Pandaren Warrior)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  A New Fate [31450, level 10, Pandaren] -> Stormwind City
+
+Worth checking in game
+----------------------
+  The Missing Driver [29419, level 3, Pandaren]: objective "Min Dimwind" is line 1 by the database, but RestedXP's guide has "1/1 Rescue the Cart Driver" there
+  The Challenger's Fires [29664, level 4, Pandaren]: objective "Brazier of the Flickering Flame" is line 1 by the database, but RestedXP's guide has "1/1 Challenger Torch lit" there
+  The Suffering of Shen-zin Su [29791, level 8, Pandaren]: "Speak with Shen-zin Su Credit (1)" has no place in the data; taken to be done where the quest is given
+  The Healing of Shen-zin Su [29799, level 9, Pandaren]: objective "Horde Druid (1)" is line 1 by the database, but RestedXP's guide has "1/1 Protect the healers" there
+  The Lesson of the Iron Bough [30027, level 1, Pandaren Monk]: "Main Weapon Equipped Credit (1)" has no place in the data; taken to be done where the quest is given
+  The Lesson of the Iron Bough [30033, level 1, Pandaren Mage]: "Main Weapon Equipped Credit (1)" has no place in the data; taken to be done where the quest is given
+  The Lesson of the Iron Bough [30033, level 1, Pandaren Mage]: "Off Weapon Equipped Credit (1)" has no place in the data; taken to be done where the quest is given
+  The Lesson of the Iron Bough [30034, level 1, Pandaren Hunter]: "Main Weapon Equipped Credit (1)" has no place in the data; taken to be done where the quest is given
+  The Lesson of the Iron Bough [30035, level 1, Pandaren Priest]: "Main Weapon Equipped Credit (1)" has no place in the data; taken to be done where the quest is given
+  The Lesson of the Iron Bough [30035, level 1, Pandaren Priest]: "Off Weapon Equipped Credit (1)" has no place in the data; taken to be done where the quest is given
+  The Lesson of the Iron Bough [30036, level 1, Pandaren Rogue]: "Main Weapon Equipped Credit (1)" has no place in the data; taken to be done where the quest is given
+  The Lesson of the Iron Bough [30036, level 1, Pandaren Rogue]: "Off Weapon Equipped Credit (1)" has no place in the data; taken to be done where the quest is given
+  The Lesson of the Iron Bough [30037, level 1, Pandaren Shaman]: "Main Weapon Equipped Credit (1)" has no place in the data; taken to be done where the quest is given
+  The Lesson of the Iron Bough [30037, level 1, Pandaren Shaman]: "Off Weapon Equipped Credit (1)" has no place in the data; taken to be done where the quest is given
+  The Lesson of the Iron Bough [30038, level 1, Pandaren Warrior]: "Main Weapon Equipped Credit (1)" has no place in the data; taken to be done where the quest is given
+  The Lesson of the Iron Bough [30038, level 1, Pandaren Warrior]: "Off Weapon Equipped Credit (1)" has no place in the data; taken to be done where the quest is given
+  Risking It All [30767, level 9, Pandaren]: objective "Explosion Triggered Credit" is line 1 by the database, but RestedXP's guide has "1/1 Shen-zin Su's Thorn Removed" there
+  A New Fate [31450, level 10, Pandaren]: objective "Spirit of Master Shang Xi" is line 1 by the database, but RestedXP's guide has "1/1 Choose your faction" there
+
+Left out (5)
+------------
+not in the game (on Questie's quest blacklist) (5):
+  Wugou, the Spirit of Earth [29773], Pandaren Alliance Tracking Quest [30454], Pandaren Horde Tracking Quest [30455], The Healing of Shen-zin Su [30817], A New Fate [30818]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

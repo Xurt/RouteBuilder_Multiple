@@ -1,0 +1,276 @@
+{
+  "zone": "Blade\u0027s Edge Mountains",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "65-68 Blade\u0027s Edge Mountains",
+  "file": "Blade\u0027s Edge Mountains (Horde).lua",
+  "continent": -3522,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 65,
+      "end": 65.43,
+      "next": 68,
+      "guide": "65-66 Blade\u0027s Edge Mountains: around Rexxar",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Rexxar",
+          "guide": "65-66 Blade\u0027s Edge Mountains: around Rexxar",
+          "level": 65,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 68,
+      "end": 68.03,
+      "guide": "68-69 Blade\u0027s Edge Mountains",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "68-69 Blade\u0027s Edge Mountains",
+          "level": 68,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 9795,
+      "level": 65,
+      "req": 64,
+      "xp": 2700,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Zangarmarsh"
+    },
+    {
+      "id": 10486,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10487,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10488,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10489,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10503,
+      "level": 66,
+      "req": 65,
+      "xp": 14150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10505,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10542,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10543,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10544,
+      "level": 66,
+      "req": 65,
+      "xp": 14150,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10545,
+      "level": 66,
+      "req": 65,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10617,
+      "level": 66,
+      "req": 64,
+      "xp": 11300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10618,
+      "level": 65,
+      "req": 64,
+      "xp": 11000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10682,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10713,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10717,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10747,
+      "level": 68,
+      "req": 65,
+      "xp": 12000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10753,
+      "level": 67,
+      "req": 65,
+      "xp": 8750,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10770,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10771,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10860,
+      "level": 67,
+      "req": 65,
+      "xp": 11650,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10928,
+      "level": 65,
+      "req": 65,
+      "xp": 11000,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10983,
+      "level": 70,
+      "req": 70,
+      "xp": 3150,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Terokkar Forest"
+    },
+    {
+      "id": 10567,
+      "level": 66,
+      "req": 66,
+      "xp": 11300,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 10607,
+      "level": 68,
+      "req": 66,
+      "xp": 12000,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Netherstorm": 1,
+    "Shadowmoon Valley": 1
+  }
+}

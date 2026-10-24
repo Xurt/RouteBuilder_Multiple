@@ -1,0 +1,298 @@
+Blade's Edge Mountains - Alliance - part 1 of 3, planned from level 65
+Guide "65-70 Blade's Edge Mountains" in group "Zone Routes (Alliance)": this part has 170 steps, 151 stops
+Written to guides/mop/Blade's Edge Mountains (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: 57 PROBLEMS
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Human Warrior)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Human Paladin)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Human Hunter)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Human Rogue)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Human Priest)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Human DeathKnight)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Human Mage)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Human Warlock)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Human Monk)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Dwarf Warrior)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Dwarf Paladin)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Dwarf Hunter)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Dwarf Rogue)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Dwarf Priest)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Dwarf DeathKnight)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Dwarf Shaman)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Dwarf Mage)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Dwarf Warlock)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Dwarf Monk)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (NightElf Warrior)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (NightElf Hunter)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (NightElf Rogue)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (NightElf Priest)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (NightElf DeathKnight)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (NightElf Mage)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (NightElf Monk)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (NightElf Druid)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Gnome Warrior)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Gnome Rogue)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Gnome Priest)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Gnome DeathKnight)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Gnome Mage)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Gnome Warlock)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Gnome Monk)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Draenei Warrior)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Draenei Paladin)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Draenei Hunter)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Draenei Priest)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Draenei DeathKnight)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Draenei Shaman)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Draenei Mage)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Draenei Monk)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Worgen Warrior)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Worgen Hunter)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Worgen Rogue)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Worgen Priest)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Worgen DeathKnight)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Worgen Mage)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Worgen Warlock)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Worgen Druid)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Pandaren Warrior)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Pandaren Hunter)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Pandaren Rogue)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Pandaren Priest)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Pandaren Shaman)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Pandaren Mage)
+  ! Did You Get The Note? is picked up before any of the quests that unlock it (Pandaren Monk)
+Quest log: at most 9 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+10 pickups or hand-ins are within reach of a stop but planned for later.
+5 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 65. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 168 steps kept, 23 new ones slotted in, 1 moved because their prerequisites changed, 12 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 128 tasks, 24,345 yd on foot; ends at level 66.0; at its hardest you are 1.7 levels below the mobs
+  everyone (quests that depend on other zones): 64 more tasks; their whole route comes to 36,884 yd; ends at level 66.0; 2 ORDER PROBLEMS; at its hardest you are 2.4 levels below the mobs
+Hearthstone: set at Lor (Lor's inn); 0 hearth steps in the guide.
+6 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+6 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+3 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (63)
+------------------------
+Start to finish here: 41 (9 for everyone, 32 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  No Time for Curiosity [9794, level 65, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Zangarmarsh
+  Mog'dorg the Wizened [10983, level 70] <- Shattrath City
+
+Need a quest this guide does not hand in - steps show only once that is done (20):
+  Ridgespine Menace [10620, level 67, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Picking Up Some Power Converters [10584]
+  Cutting Your Teeth [10632, level 67, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Picking Up Some Power Converters [10584]
+  Ride the Lightning [10657, level 67, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Picking Up Some Power Converters [10584]
+  More than a Pound of Flesh [10671, level 67, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Ridgespine Menace [10620]
+  Trapping the Light Fantastic [10674, level 67, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Ride the Lightning [10657]
+  Longtail is the Lynchpin [10893, level 67] - needs one of Wyrmskull Watcher [10894]
+  Wyrmskull Watcher [10894, level 67] - needs one of Did You Get The Note? [10719]
+  Show Them Gnome Mercy! [10675, level 68, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Trapping the Light Fantastic [10674]
+  Meeting at the Blackwing Coven [10722, level 68] - needs one of Longtail is the Lynchpin [10893]
+  Maxnar Must Die! [10748, level 68] - needs one of Meeting at the Blackwing Coven [10722]
+  Mystery Mask [10812, level 68] - needs one of Damaged Mask [10810]
+  Felsworn Gas Mask [10819, level 68] - needs one of Mystery Mask [10812]
+  Deceive thy Enemy [10820, level 68] - needs one of Felsworn Gas Mask [10819]
+  You're Fired! [10821, level 68] - needs one of Deceive thy Enemy [10820]
+  Treebole Must Know [10829, level 68] - needs one of The Truth Unorbed [10825]
+  Exorcising the Trees [10830, level 68] - needs one of Treebole Must Know [10829]
+  Harvesting the Fel Ammunition [10904, level 68] - needs one of Death's Door [10910]
+  Death's Door [10910, level 68] - needs one of You're Fired! [10821]
+  Fire At Will! [10911, level 68] - needs one of Harvesting the Fel Ammunition [10904]
+  The Hound-Master [10912, level 68] - needs one of Fire At Will! [10911]
+
+Worth checking in game
+----------------------
+  Scratches [10556, level 66, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren]: "[DND]Kaliri Aura Dispel (1)" has no place in the data; taken to be done where the quest is given
+
+Put off to a later part (25)
+----------------------------
+These need a higher level than this part ends at:
+  Creating the Pendant [10567, level 66]: needs level 66; this part gets you to about 66.1
+  Whispers of the Raven God [10607, level 68]: needs level 66; this part gets you to about 66.1
+  Showdown [10806, level 70]: its mobs are level 70; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 66.3
+  Mog'dorg the Wizened [10989, level 70]: needs level 70; this part gets you to about 66.3
+  Grulloc Has Two Skulls [10995, level 70]: needs level 70; this part gets you to about 66.3
+  Maggoc's Treasure Chest [10996, level 70]: needs level 70; this part gets you to about 66.3
+  Even Gronn Have Standards [10997, level 70]: needs level 70; this part gets you to about 66.3
+  Grim(oire) Business [10998, level 70]: needs level 70; this part gets you to about 66.3
+  Into the Soulgrinder [11000, level 70]: needs level 70; this part gets you to about 66.3
+  Ogre Heaven [11009, level 70]: needs level 70; this part gets you to about 66.3
+  Bombing Run [11010, level 70]: needs level 70; this part gets Warrior/Paladin/Hunter/Rogue/Priest/DeathKnight/Shaman/Mage/Warlock characters to about 66.4
+  Speak with Mog'dorg [11022, level 70]: needs level 70; this part gets you to about 66.3
+  The Crystals [11025, level 70]: needs level 70; this part gets you to about 66.3
+  Our Boy Wants To Be A Skyguard Ranger [11030, level 70]: needs level 70; this part gets you to about 66.3
+  Parts for the Rocket-Chief [11040, level 67]: needs level 67; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 66.3
+  Building a Better Gryphon [11043, level 67]: needs level 67; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 66.3
+  An Apexis Relic [11058, level 70]: needs level 70; this part gets you to about 66.3
+  Guardian of the Monument [11059, level 70]: needs level 70; this part gets you to about 66.3
+  A Father's Duty [11061, level 70]: needs level 70; this part gets you to about 66.3
+  The Skyguard Outpost [11062, level 70]: needs level 70; this part gets you to about 66.3
+  Wrangle Some Aether Rays! [11065, level 70]: needs level 70; this part gets Warrior/Paladin/Hunter/Rogue/Priest/DeathKnight/Shaman/Mage/Warlock/Druid characters to about 66.4
+  To Rule The Skies [11078, level 70]: needs level 70; this part gets Warrior/Paladin/Hunter/Rogue/Priest/DeathKnight/Shaman/Mage/Warlock/Druid characters to about 66.4
+  A Fel Whip For Gahk [11079, level 70]: needs level 70; this part gets you to about 66.3
+  Bombing Run [11102, level 70]: needs level 70; this part gets Druid characters to about 66.4
+  Assault on Bash'ir Landing! [11119, level 70]: needs level 70; this part gets Warrior/Paladin/Hunter/Rogue/Priest/DeathKnight/Shaman/Mage/Warlock/Druid characters to about 66.4
+
+Left out (38)
+-------------
+not in the game (on Questie's quest blacklist) (18):
+  Test Flight: Raven's Wood <needs reward> [10716], Forge Camp: Anger [10844], To the Evergrove [10979], The Book of the Raven [10980], The Raven Stones [10988], The Hawk's Essence [10992], Yous Have Da Darkrune? [11027], Desecrate this Fire! [11767], Honor the Flame [11807], Playing with Fire [11882], Incense for the Summer Scorchlings [11964], Candy Bucket [12358], Candy Bucket [12359], Candy Bucket [12406], Sharing a Bountiful Feast [14064], Reset Current Rating - 2v2 [95158], Reset Current Rating - 3v3 [95251], Reset Current Rating - 5v5 [95252]
+repeatable (7):
+  Purging the Chambers of Bash'ir [10975], Nexus-Prince Shaffar's Personal Chamber [10981], Bomb Them Again! [11023], Banish More Demons [11051], A Crystalforged Darkrune [11060], Wrangle More Aether Rays! [11066], The Relic's Emanation [11080]
+needs reputation (6):
+  Stasis Chambers of Bash'ir [10974], The Mark of the Nexus-King [10976], Stasis Chambers of the Mana-Tombs [10977], The Eye of Haramad [10982], Banish the Demons [11026], A Special Thank You [11091]
+never shown to players (a tracking flag or an unused entry) (4):
+  Test Flight: The Zephyrium Capacitorium [10557], Test Flight: The Singing Ridge [10710], Test Flight: Razaan's Landing [10711], Test Flight: Ruuan Weald [10712]
+cannot be taken together with Where Did Those Darn Gnomes Go? [10580], which is in the guide (1):
+  Picking Up Some Power Converters [10584]
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  The Truth Unorbed [10825]
+cannot be taken together with Mog'dorg the Wizened [10989], which is in the guide (1):
+  The Trouble Below [11057]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Blade's Edge Mountains - Alliance - part 2 of 3, planned from level 69
+Guide "65-70 Blade's Edge Mountains" in group "Zone Routes (Alliance)": this part has 15 steps, 13 stops
+Written to guides/mop/Blade's Edge Mountains (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 69. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 9 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 15 tasks, 4,811 yd on foot; ends at level 69.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (5)
+-----------------------
+Start to finish here: 3 (2 for everyone, 1 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Picked up here, handed in elsewhere - these stay in the log (2):
+  Parts for the Rocket-Chief [11040, level 67, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Netherstorm
+  Building a Better Gryphon [11043, level 67, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] -> Shadowmoon Valley
+
+Worth checking in game
+----------------------
+
+Put off to a later part (20)
+----------------------------
+These need a higher level than this part ends at:
+  Mog'dorg the Wizened [10989, level 70]: needs level 70; this part gets you to about 69.2
+  Grulloc Has Two Skulls [10995, level 70]: needs level 70; this part gets you to about 69.2
+  Maggoc's Treasure Chest [10996, level 70]: needs level 70; this part gets you to about 69.2
+  Even Gronn Have Standards [10997, level 70]: needs level 70; this part gets you to about 69.2
+  Grim(oire) Business [10998, level 70]: needs level 70; this part gets you to about 69.2
+  Into the Soulgrinder [11000, level 70]: needs level 70; this part gets you to about 69.2
+  Ogre Heaven [11009, level 70]: needs level 70; this part gets you to about 69.2
+  Bombing Run [11010, level 70]: needs level 70; this part gets Warrior/Paladin/Hunter/Rogue/Priest/DeathKnight/Shaman/Mage/Warlock characters to about 69.3
+  Speak with Mog'dorg [11022, level 70]: needs level 70; this part gets you to about 69.2
+  The Crystals [11025, level 70]: needs level 70; this part gets you to about 69.2
+  Our Boy Wants To Be A Skyguard Ranger [11030, level 70]: needs level 70; this part gets you to about 69.2
+  An Apexis Relic [11058, level 70]: needs level 70; this part gets you to about 69.2
+  Guardian of the Monument [11059, level 70]: needs level 70; this part gets you to about 69.2
+  A Father's Duty [11061, level 70]: needs level 70; this part gets you to about 69.2
+  The Skyguard Outpost [11062, level 70]: needs level 70; this part gets you to about 69.2
+  Wrangle Some Aether Rays! [11065, level 70]: needs level 70; this part gets Warrior/Paladin/Hunter/Rogue/Priest/DeathKnight/Shaman/Mage/Warlock/Druid characters to about 69.3
+  To Rule The Skies [11078, level 70]: needs level 70; this part gets Warrior/Paladin/Hunter/Rogue/Priest/DeathKnight/Shaman/Mage/Warlock/Druid characters to about 69.3
+  A Fel Whip For Gahk [11079, level 70]: needs level 70; this part gets you to about 69.2
+  Bombing Run [11102, level 70]: needs level 70; this part gets Druid characters to about 69.3
+  Assault on Bash'ir Landing! [11119, level 70]: needs level 70; this part gets Warrior/Paladin/Hunter/Rogue/Priest/DeathKnight/Shaman/Mage/Warlock/Druid characters to about 69.3
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Blade's Edge Mountains - Alliance - part 3 of 3, planned from level 72
+Guide "65-70 Blade's Edge Mountains" in group "Zone Routes (Alliance)": this part has 51 steps, 49 stops
+Written to guides/mop/Blade's Edge Mountains (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: 18 PROBLEMS
+  ! Wrangle Some Aether Rays! (11065) is never picked up (Human Monk)
+  ! To Rule The Skies (11078) is never picked up (Human Monk)
+  ! Assault on Bash'ir Landing! (11119) is never picked up (Human Monk)
+  ! Wrangle Some Aether Rays! (11065) is never picked up (Dwarf Monk)
+  ! To Rule The Skies (11078) is never picked up (Dwarf Monk)
+  ! Assault on Bash'ir Landing! (11119) is never picked up (Dwarf Monk)
+  ! Wrangle Some Aether Rays! (11065) is never picked up (NightElf Monk)
+  ! To Rule The Skies (11078) is never picked up (NightElf Monk)
+  ! Assault on Bash'ir Landing! (11119) is never picked up (NightElf Monk)
+  ! Wrangle Some Aether Rays! (11065) is never picked up (Gnome Monk)
+  ! To Rule The Skies (11078) is never picked up (Gnome Monk)
+  ! Assault on Bash'ir Landing! (11119) is never picked up (Gnome Monk)
+  ! Wrangle Some Aether Rays! (11065) is never picked up (Draenei Monk)
+  ! To Rule The Skies (11078) is never picked up (Draenei Monk)
+  ! Assault on Bash'ir Landing! (11119) is never picked up (Draenei Monk)
+  ! Wrangle Some Aether Rays! (11065) is never picked up (Pandaren Monk)
+  ! To Rule The Skies (11078) is never picked up (Pandaren Monk)
+  ! Assault on Bash'ir Landing! (11119) is never picked up (Pandaren Monk)
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 72. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 53 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 38 tasks, 8,586 yd on foot; ends at level 72.2
+  Druid: 3 more tasks; their whole route comes to 8,586 yd; ends at level 72.2
+  everyone (quests that depend on other zones): 13 more tasks; their whole route comes to 11,186 yd; ends at level 72.1; 1 ORDER PROBLEMS
+Hearthstone: set at Cahill (Cahill's inn); 0 hearth steps in the guide.
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (20)
+------------------------
+Start to finish here: 14 (9 for everyone, 3 Warrior/Paladin/Hunter/Rogue/Priest/DeathKnight/Shaman/Mage/Warlock/Druid, 1 Warrior/Paladin/Hunter/Rogue/Priest/DeathKnight/Shaman/Mage/Warlock, 1 Druid)
+
+Hand-in step only shows once complete (1):
+  Even Gronn Have Standards [10997, level 70] - needs Slaag's Standard (1) (Terokkar Forest)
+
+Need a quest this guide does not hand in - steps show only once that is done (5):
+  Grulloc Has Two Skulls [10995, level 70] - needs one of Mog'dorg the Wizened [10983], Speak with Mog'dorg [11022], The Trouble Below [11057]
+  Grim(oire) Business [10998, level 70] - needs Grulloc Has Two Skulls [10995], Even Gronn Have Standards [10997]
+  Into the Soulgrinder [11000, level 70] - needs one of Grim(oire) Business [10998]
+  Ogre Heaven [11009, level 70] - needs one of Into the Soulgrinder [11000]
+  Speak with Mog'dorg [11022, level 70] - needs one of Into the Soulgrinder [11000]
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

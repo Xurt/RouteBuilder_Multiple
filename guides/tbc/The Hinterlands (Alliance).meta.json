@@ -1,0 +1,171 @@
+{
+  "zone": "The Hinterlands",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "44-48 The Hinterlands",
+  "file": "The Hinterlands (Alliance).lua",
+  "continent": 0,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 44,
+      "end": 44.51,
+      "next": 47,
+      "guide": "44-45 The Hinterlands: around Ambassador Rualeth",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "around Ambassador Rualeth",
+          "guide": "44-45 The Hinterlands: around Ambassador Rualeth",
+          "level": 44,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 47,
+      "end": 47.15,
+      "guide": "47-48 The Hinterlands",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "47-48 The Hinterlands",
+          "level": 47,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 626,
+      "level": 51,
+      "req": 35,
+      "xp": 8800,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Dustwallow Marsh"
+    },
+    {
+      "id": 1449,
+      "level": 43,
+      "req": 38,
+      "xp": 2500,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 2880,
+      "level": 45,
+      "req": 40,
+      "xp": 5540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2988,
+      "level": 45,
+      "req": 40,
+      "xp": 5540,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2993,
+      "level": 47,
+      "req": 42,
+      "xp": 3000,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Blasted Lands"
+    },
+    {
+      "id": 3843,
+      "level": 47,
+      "req": 40,
+      "xp": 6040,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Thousand Needles"
+    },
+    {
+      "id": 9469,
+      "level": 46,
+      "req": 42,
+      "xp": 4300,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9470,
+      "level": 46,
+      "req": 41,
+      "xp": 5790,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9471,
+      "level": 44,
+      "req": 39,
+      "xp": 5290,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9475,
+      "level": 46,
+      "req": 42,
+      "xp": 7200,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 9476,
+      "level": 46,
+      "req": 42,
+      "xp": 5790,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2877,
+      "level": 48,
+      "req": 40,
+      "xp": 6290,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 2989,
+      "level": 48,
+      "req": 40,
+      "xp": 6290,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Elwynn Forest": 1,
+    "Stranglethorn Vale": 1,
+    "Blasted Lands": 1
+  }
+}

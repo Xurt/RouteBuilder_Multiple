@@ -1,0 +1,117 @@
+Netherstorm - Horde - part 1 of 2, planned from level 68
+Guide "68-70 Netherstorm" in group "Zone Routes (Horde)": this part has 268 steps, 215 stops
+Written to guides/mop/Netherstorm (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 24 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+7 pickups or hand-ins are within reach of a stop but planned for later.
+6 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 68. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 134 steps kept, 183 new ones slotted in, 3 moved because their prerequisites changed, 1 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 317 tasks, 45,252 yd on foot; ends at level 69.9; 4 hearths; at its hardest you are 1.9 levels below the mobs
+  everyone (quests that depend on other zones): 3 more tasks; their whole route comes to 47,090 yd; ends at level 69.9; 4 hearths; at its hardest you are 1.9 levels below the mobs
+Hearthstone: set at Dealer Dunar (Dealer Dunar's inn); 4 hearth steps in the guide.
+These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
+The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
+  level 68 for Drijya Needs Your Help
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+51 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+5 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
+
+Quests in the guide (109)
+-------------------------
+Start to finish here: 104 (104 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Special Delivery to Shattrath City [10280, level 70] -> Shattrath City
+
+Hand-in step only shows once complete (1):
+  Capturing the Keystone [10257, level 70] - needs The Keystone (1) (The Botanica - (Dungeon/Raid))
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Out of This World Produce! [11036, level 67, Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren] <- Blade's Edge Mountains
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Contact from Dalaran [9826, level 70] - needs Arcane Disturbances [9824], Restless Activity [9825] -> Hillsbrad Foothills
+  The New Directive [9860, level 70] - needs one of A Demonic Presence [9844] -> Hillsbrad Foothills
+
+Worth checking in game
+----------------------
+
+Put off to a later part (6)
+---------------------------
+These need a higher level than this part ends at:
+  The Ethereum [10339, level 70]: needs level 70; this part gets you to about 70.1
+  Ethereum Data [10384, level 70]: follows The Ethereum [10339]
+  Potential for Brain Damage = High [10385, level 70]: follows Ethereum Data [10384]
+  S-A-B-O-T-A-G-E [10405, level 70]: follows Potential for Brain Damage = High [10385]
+  Delivering the Message [10406, level 70]: follows S-A-B-O-T-A-G-E [10405]
+  Nexus-King Salhadaar [10408, level 70]: follows Delivering the Message [10406]
+
+Left out (103)
+--------------
+needs reputation (64):
+  Medivh's Journal [9630], A Colleague's Aid [9631], Kalynna's Request [9637], Nightbane [9644], The Master's Terrace [9645], Digging Up the Past [9680], Manaforge B'naar [10189], High Value Targets [10193], Stealth Flight [10194], A Convincing Disguise [10197], Information Gathering [10198], Return to Thalodien [10200], A Defector [10202], Bloodgem Crystals [10204], Distraction at Manaforge B'naar [10241], Naaru Technology [10243], B'naar Console Transcription [10245], Attack on Manaforge Coruu [10246], Assisting the Consortium [10263], Assisting the Consortium [10264], Shutting Down Manaforge B'naar [10299], Measuring Warp Energies [10313], Shutting Down Manaforge Coruu [10321], Shutting Down Manaforge Duro [10322], Shutting Down Manaforge Ara [10323], Sunfury Briefings [10328], Shutting Down Manaforge B'naar [10329], Shutting Down Manaforge Coruu [10330], Shutting Down Manaforge Duro [10338], Kick Them While They're Down [10341], Shutting Down Manaforge Ara [10365], A Dark Pact [10380], Aldor No More [10381], Socrethar's Shadow [10407], Ishanah's Help [10410], Outside Assistance [10431], Damning Evidence [10432], A Gift for Voren'thal [10508], Bound for Glory [10509], Behind Enemy Lines [10652], ... 24 more
+not in the game (on Questie's quest blacklist) (16):
+  The Custodian of Kirin'Var [10179], A Message for the Archmage [10187], R.T.F.R.C.M. [10244], Netherologist Coppernickels [10260], More Power! [10292], <TXT> [10402], Peddling the Goods [10441], Master of Transmutation [10899], Master of Transmutation [10907], Desecrate this Fire! [11759], Honor the Flame [11835], Playing with Fire [11915], Incense for the Festival Scorchlings [11966], Candy Bucket [12407], Candy Bucket [12408], Sharing a Bountiful Feast [14065]
+repeatable (8):
+  Another Heap of Ethereals [10308], Nether Gas In a Fel Fire Engine [10850], Ethereum Prisoner I.D. Catalogue [10972], Archmage No More [11031], Protector No More [11032], Assassin No More [11033], Restorer No More [11034], Grand Master Lydia Accoste [31916]
+dungeon quest (7):
+  Arcane Disturbances [9824], Restless Activity [9825], The Violet Eye [9838], Assessing the Situation [9840], Keanna's Log [9843], A Demonic Presence [9844], Archmage Alturus [11216]
+above this zone's range of 67-72 (6):
+  Our Man in Gilneas [30092], Assassinate Creed [30093], The Deed is Done [30106], Our Man in Karazhan [30108], Blood of the Betrayer [30109], Victory in the Depths [30113]
+special category (sort -394) (2):
+  Grand Master Lydia Accoste [31915], The Returning Champion [31980]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Netherstorm - Horde - part 2 of 2, planned from level 72
+Guide "68-70 Netherstorm" in group "Zone Routes (Horde)": this part has 16 steps, 15 stops
+Written to guides/mop/Netherstorm (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 72. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 23 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 22 tasks, 1,543 yd on foot; ends at level 72.1
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 2,816 yd; ends at level 72.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (7)
+-----------------------
+Start to finish here: 6 (6 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Capturing the Keystone [10257, level 70] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

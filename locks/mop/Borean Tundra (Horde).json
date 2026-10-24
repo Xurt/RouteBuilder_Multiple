@@ -1,0 +1,95 @@
+{
+  "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "10-41 Borean Tundra",
+  "saved": "2026-10-23 18:01",
+  "levels": "RestedXP",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "turnin:6362 @88:45.77,55.84  TurnIn Ride to Thunder Bluff",
+        "accept:6363 @88:45.77,55.84  Accept Tal the Wind Rider Master",
+        "accept:28496 @88:42.22,57.77  Accept Warchief's Command: Azshara!",
+        "accept:28494 @88:42.22,57.77  Accept Warchief's Command: Northern Barrens!",
+        "turnin:6363 @88:47.04,49.59  TurnIn Tal the Wind Rider Master",
+        "accept:6364 @88:47.04,49.59  Accept Return to Varg",
+        "turnin:24550 @88:60.3,51.68  TurnIn Journey into Thunder Bluff",
+        "accept:24540 @88:60.3,51.68  Accept War Dance",
+        "turnin:27258 @88:54.01,80.77  TurnIn The Black Shield",
+        "turnin:9811 @110:71.03,41.27  TurnIn Friend of the Sin'dorei",
+        "turnin:9627 @110:71.03,41.27  TurnIn Allegiance to the Horde",
+        "turnin:9328 @110:71.03,41.27  TurnIn Hero of the Sin'dorei",
+        "accept:28560 @110:62.1,60.51  Accept Warchief's Command: Ghostlands!",
+        "turnin:9133 @110:53.93,71.02  TurnIn Fly to Silvermoon City",
+        "accept:9134 @110:53.93,71.02  Accept Skymistress Gloaming"
+      ]
+    },
+    {
+      "part": 2,
+      "steps": [
+        "accept:26397 @88:60.3,51.68  Accept Walk With The Earth Mother",
+        "accept:264 @88:27.2,24.4  Accept Until Death Do Us Part"
+      ]
+    },
+    {
+      "part": 3,
+      "steps": [
+        "accept:28493 @88:42.22,57.77  Accept Warchief's Command: Ashenvale!",
+        "accept:9812 @110:71.03,41.27  Accept Envoy to the Horde",
+        "accept:9621 @110:71.03,41.27  Accept Envoy to the Horde",
+        "accept:28571 @110:62.1,60.51  Accept Warchief's Command: Hillsbrad Foothills!"
+      ]
+    },
+    {
+      "part": 4,
+      "steps": [
+        "accept:27281 @88:56.99,89.51  Accept Grezz Ragefist",
+        "accept:27278 @88:57.3,89.79  Accept Grimshot's Call",
+        "accept:27279 @110:79.71,52.16  Accept The Shattered Hand",
+        "accept:27277 @88:22.76,14.53  Accept An Audience with Ureda",
+        "accept:27282 @110:73.05,45.27  Accept Zevrost's Behest",
+        "accept:27280 @110:71.71,55.78  Accept The Dreamseeker Calls",
+        "accept:27283 @88:77.14,27.02  Accept A Journey to Moonglade",
+        "accept:27298 @110:92.2,37.52  Accept Seek Out Master Pyreanor",
+        "accept:27304 @110:92.2,37.52  Accept Follow the Sun",
+        "accept:27334 @88:24.56,22.57  Accept Dark Cleric Cecille",
+        "accept:27331 @88:24.56,22.57  Accept The Seer's Call",
+        "accept:27332 @88:24.56,22.57  Accept Seek the Shadow-Walker",
+        "accept:27335 @88:24.56,22.57  Accept Journey to Orgrimmar",
+        "accept:28164 @88:24.56,22.57  Accept Seek Brother Silverhallow"
+      ]
+    },
+    {
+      "part": 5,
+      "steps": [
+        "accept:28532 @88:42.22,57.77  Accept Warchief's Command: Stonetalon Mountains!",
+        "accept:28688 @110:62.1,60.51  Accept Warchief's Command: Northern Stranglethorn Vale!",
+        "accept:28572 @110:62.1,60.51  Accept Warchief's Command: Arathi Highlands!"
+      ]
+    },
+    {
+      "part": 6,
+      "steps": [
+        "accept:28549 @88:42.22,57.77  Accept Warchief's Command: Southern Barrens!",
+        "accept:28548 @88:42.22,57.77  Accept Warchief's Command: Desolace!",
+        "accept:28704 @110:62.1,60.51  Accept Warchief's Command: The Cape of Stranglethorn!",
+        "accept:28574 @110:62.1,60.51  Accept Warchief's Command: The Hinterlands!"
+      ]
+    },
+    {
+      "part": 7,
+      "steps": [
+        "accept:28554 @88:42.22,57.77  Accept Warchief's Command: Dustwallow Marsh!",
+        "accept:28510 @88:42.22,57.77  Accept Warchief's Command: Feralas!",
+        "accept:27292 @88:54.01,80.77  Accept Return to Krog",
+        "accept:28575 @110:62.1,60.51  Accept Warchief's Command: Western Plaguelands!"
+      ]
+    },
+    {
+      "part": 8,
+      "steps": [
+        "accept:1205 @88:61.54,80.92  Accept Deadmire"
+      ]
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   "faction": "Alliance",
   "who": "Alliance",
   "group": "Zone Routes (Alliance)",
-  "name": "1-14 Teldrassil",
+  "name": "1-47 Teldrassil",
   "file": "Teldrassil (Alliance).lua",
   "continent": 1,
   "suggest": true,
@@ -42,6 +42,7 @@
       "part": 2,
       "start": 15,
       "end": 15,
+      "next": 18,
       "guide": "15-16 Teldrassil",
       "sections": [
         {
@@ -52,9 +53,82 @@
           "index": 0
         }
       ]
+    },
+    {
+      "part": 3,
+      "start": 18,
+      "end": 18.01,
+      "next": 21,
+      "guide": "18-19 Teldrassil",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "18-19 Teldrassil",
+          "level": 18,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 4,
+      "start": 21,
+      "end": 21,
+      "next": 25,
+      "guide": "21-22 Teldrassil",
+      "sections": [
+        {
+          "label": "RBSection4_1",
+          "name": "part 4",
+          "guide": "21-22 Teldrassil",
+          "level": 21,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 5,
+      "start": 25,
+      "end": 25,
+      "next": 43,
+      "guide": "25-26 Teldrassil",
+      "sections": [
+        {
+          "label": "RBSection5_1",
+          "name": "part 5",
+          "guide": "25-26 Teldrassil",
+          "level": 25,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 6,
+      "start": 43,
+      "end": 43,
+      "guide": "43-44 Teldrassil",
+      "sections": [
+        {
+          "label": "RBSection6_1",
+          "name": "part 6",
+          "guide": "43-44 Teldrassil",
+          "level": 43,
+          "index": 0
+        }
+      ]
     }
   ],
   "quests": [
+    {
+      "id": 162,
+      "level": 49,
+      "req": 39,
+      "xp": 5700,
+      "part": 1,
+      "section": 1,
+      "tag": "",
+      "from": "Tanaris"
+    },
     {
       "id": 456,
       "level": 2,
@@ -153,6 +227,16 @@
       "part": 1,
       "section": 1,
       "tag": ""
+    },
+    {
+      "id": 741,
+      "level": 20,
+      "req": 15,
+      "xp": 1150,
+      "part": 1,
+      "section": 1,
+      "tag": "",
+      "from": "Darkshore"
     },
     {
       "id": 916,
@@ -326,6 +410,36 @@
       "tag": ""
     },
     {
+      "id": 1037,
+      "level": 30,
+      "req": 25,
+      "xp": 610,
+      "part": 1,
+      "section": 1,
+      "tag": "",
+      "from": "Ashenvale"
+    },
+    {
+      "id": 1044,
+      "level": 30,
+      "req": 25,
+      "xp": 3050,
+      "part": 1,
+      "section": 1,
+      "tag": "",
+      "from": "Duskwood"
+    },
+    {
+      "id": 1081,
+      "level": 28,
+      "req": 17,
+      "xp": 3400,
+      "part": 1,
+      "section": 1,
+      "tag": "",
+      "from": "Ashenvale"
+    },
+    {
       "id": 1683,
       "level": 10,
       "req": 10,
@@ -342,6 +456,16 @@
       "part": 1,
       "section": 1,
       "tag": "Warrior"
+    },
+    {
+      "id": 1703,
+      "level": 28,
+      "req": 20,
+      "xp": 1150,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Warrior",
+      "from": "Elwynn Forest"
     },
     {
       "id": 2159,
@@ -452,6 +576,46 @@
       "tag": ""
     },
     {
+      "id": 2939,
+      "level": 47,
+      "req": 42,
+      "xp": 420,
+      "part": 1,
+      "section": 2,
+      "tag": "",
+      "from": "Feralas"
+    },
+    {
+      "id": 2944,
+      "level": 48,
+      "req": 42,
+      "xp": 4400,
+      "part": 1,
+      "section": 2,
+      "tag": "",
+      "from": "Tanaris"
+    },
+    {
+      "id": 2972,
+      "level": 47,
+      "req": 38,
+      "xp": 5250,
+      "part": 1,
+      "section": 1,
+      "tag": "",
+      "from": "Feralas"
+    },
+    {
+      "id": 3022,
+      "level": 47,
+      "req": 42,
+      "xp": 2100,
+      "part": 1,
+      "section": 2,
+      "tag": "",
+      "from": "Tanaris"
+    },
+    {
       "id": 3116,
       "level": 1,
       "req": 1,
@@ -497,6 +661,16 @@
       "tag": "NightElf Druid"
     },
     {
+      "id": 3370,
+      "level": 25,
+      "req": 15,
+      "xp": 2000,
+      "part": 1,
+      "section": 2,
+      "tag": "",
+      "from": "The Barrens"
+    },
+    {
       "id": 3519,
       "level": 4,
       "req": 2,
@@ -524,6 +698,16 @@
       "tag": ""
     },
     {
+      "id": 4267,
+      "level": 46,
+      "req": 40,
+      "xp": 405,
+      "part": 1,
+      "section": 1,
+      "tag": "",
+      "from": "Feralas"
+    },
+    {
       "id": 4495,
       "level": 4,
       "req": 2,
@@ -531,6 +715,16 @@
       "part": 1,
       "section": 0,
       "tag": ""
+    },
+    {
+      "id": 5061,
+      "level": 16,
+      "req": 16,
+      "xp": 1150,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Druid",
+      "from": "Moonglade"
     },
     {
       "id": 5621,
@@ -595,6 +789,36 @@
       "level": 10,
       "req": 10,
       "xp": 210,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Priest",
+      "from": "Dun Morogh"
+    },
+    {
+      "id": 5673,
+      "level": 20,
+      "req": 20,
+      "xp": 390,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Priest",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 5674,
+      "level": 20,
+      "req": 20,
+      "xp": 390,
+      "part": 1,
+      "section": 1,
+      "tag": "NightElf Priest",
+      "from": "Elwynn Forest"
+    },
+    {
+      "id": 5675,
+      "level": 20,
+      "req": 20,
+      "xp": 390,
       "part": 1,
       "section": 1,
       "tag": "NightElf Priest",
@@ -750,11 +974,27 @@
       "part": 1,
       "section": 1,
       "tag": ""
+    },
+    {
+      "id": 2259,
+      "level": 16,
+      "req": 16,
+      "xp": 115,
+      "part": 3,
+      "section": 0,
+      "tag": "Rogue"
     }
   ],
   "carriedTo": {
     "Darkshore": 3,
-    "Elwynn Forest": 1,
-    "Moonglade": 2
+    "Elwynn Forest": 3,
+    "Moonglade": 3,
+    "Wetlands": 1,
+    "Redridge Mountains": 1,
+    "Dun Morogh": 2,
+    "Alterac Mountains": 1,
+    "The Barrens": 1,
+    "Tanaris": 1,
+    "Feralas": 1
   }
 }

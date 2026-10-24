@@ -71,7 +71,7 @@ repeatable (5):
   To the Top [3567], The Videre Elixir [4041], Again With the Zapped Giants [7725], Refuel for the Zapping [7726], Perfect Yeti Hide [7738]
 dungeon quest (4):
   Pusillin and the Elder Azj'Tordin [7441], Elven Legends [7481], Lethtendris's Web [7489], Camp Mojache [7492]
-special category (sort -366) (2):
+not in the game (on Questie's quest blacklist) (2):
   Grimtotem the Elder [8679], Mistwalker the Elder [8685]
 handed in here, but the database does not say where it starts (1):
   The Gordunni Scroll [2978]

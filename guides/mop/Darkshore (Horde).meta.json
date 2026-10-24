@@ -1,0 +1,127 @@
+{
+  "zone": "Darkshore",
+  "faction": "Horde",
+  "who": "Horde",
+  "group": "Zone Routes (Horde)",
+  "name": "11-18 Darkshore",
+  "file": "Darkshore (Horde).lua",
+  "continent": -148,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 11,
+      "end": 11.24,
+      "next": 14,
+      "guide": "11-12 Darkshore",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "11-12 Darkshore",
+          "level": 11,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 14,
+      "end": 14.28,
+      "next": 17,
+      "guide": "14-15 Darkshore",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "14-15 Darkshore",
+          "level": 14,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 17,
+      "end": 17.31,
+      "guide": "17-18 Darkshore",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "17-18 Darkshore",
+          "level": 17,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 13561,
+      "level": 11,
+      "req": 8,
+      "xp": 880,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 13523,
+      "level": 13,
+      "req": 13,
+      "xp": 910,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 13573,
+      "level": 15,
+      "req": 13,
+      "xp": 105,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 13605,
+      "level": 15,
+      "req": 13,
+      "xp": 1350,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 13911,
+      "level": 18,
+      "req": 16,
+      "xp": 1350,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 13912,
+      "level": 18,
+      "req": 16,
+      "xp": 1350,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 13918,
+      "level": 18,
+      "req": 16,
+      "xp": 1350,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {
+    "Ashenvale": 2
+  }
+}

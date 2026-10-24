@@ -1,0 +1,15 @@
+{
+  "about": "Step order taken from RestedXP's guide by RxpToLock. RouteBuilder follows it and slots in this zone's other quests. Lines can be moved by hand. Delete the file, or build with --fresh, to plan the guide from scratch.",
+  "guide": "from RestedXP: 13-18 The Barrens, 18-23 Stonetalon/The Barrens, 20-23 Stonetalon/The Barrens, 23-25 Hillsbrad Foothills, 25-27 Ashenvale, 27-30 South Barrens/Thousand Needles, 1-6 Eversong Woods, 6-10 Eversong Woods, 10-12 Eversong Woods, 12-16 Ghostlands, 16-20 Ghostlands, 1-6 Mulgore, 6-10 Mulgore, 10-13 Mulgore, 1-6 Durotar, 6-10 Durotar, 10-13 Durotar, 1-6 Tirisfal Glades, 30-33 Hillsbrad/Arathi part 1, 33-34 Shimmering Flats, 34-36 Stranglethorn Vale part 1, 36-38 Dustwallow Marsh part 1, 38-40 Hillsbrad/Alterac/Arathi part 2, 40-41 Badlands, 41-43 Dustwallow Marsh part 2, 43-45 Lower Stranglethorn Vale, 45-46 Tanaris Part 1, 46-48 Feralas, 48-49 Tanaris part 2, 49-51 The Hinterlands, 51-52 Searing Gorge/Burning Steppes, 52-54 Un'goro Crater, 54-56 Azshara/Felwood/Winterspring, 56-59 Western/Eastern Plaguelands, 59-60 Winterspring (Optional), 59-61 Hellfire Peninsula, 60-60 Silithus (Optional), 61-63 Zangarmarsh, 63-64 Terokkar, 64-65 Nagrand, 65-67 Blade's Edge, 67-69 Netherstorm, 69-70 Shadowmoon Valley (Aldor), 69-70 Shadowmoon Valley (Scryer)",
+  "saved": "2026-10-23 18:12",
+  "levels": "RestedXP",
+  "parts": [
+    {
+      "part": 1,
+      "steps": [
+        "accept:1718 @1454:-4807.87,1970.99  Accept The Islander [1718]  (RestedXP: 27-30 South Barrens/Thousand Needles)",
+        "turnin:1718 @1413:-4330.58,-1708.87  TurnIn The Islander [1718]  (RestedXP: 27-30 South Barrens/Thousand Needles)"
+      ]
+    }
+  ]
+}

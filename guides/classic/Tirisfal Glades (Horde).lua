@@ -1103,11 +1103,20 @@ step << Undead Warlock
     .accept 1471 >>Accept The Binding
     .target Carendin Halgar
 step << Undead Warlock
+    .goto 1458/0,57.15,1711.58
+    >>Using the Runes of Summoning, summon and subdue a voidwalker, then return the Runes of Summoning to Carendin Halgar in the Magic Quarter of the Undercity.
+    .complete 1471,1 --Summoned Voidwalker (1)
+step << Undead Warlock
+    .goto 1458/0,57.15,1711.58
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Carendin Halgar|r
+    .turnin 1471 >>Turn in The Binding
+    .target Carendin Halgar
+step << Undead Warlock
     #completewith next
     .zone 1420 >>Leave Undercity for Tirisfal Glades
     .zoneskip 1420
 step
-    #completewith Along93
+    #completewith Along95
     >>As you go: Kill |cRXP_ENEMY_Darkeye Bonecasters|r. Loot them for |cRXP_LOOT_Blackened Skull|r. |cRXP_WARN_Anything left is finished later|r
     .complete 426,2 --Blackened Skull (3)
     .mob Darkeye Bonecaster
@@ -1117,7 +1126,7 @@ step
     .complete 362,1 --Devlin's Remains (1)
     .mob Devlin Agamand
 step
-    #completewith Along93
+    #completewith Along95
     >>As you go: Kill |cRXP_ENEMY_Rattlecage Soldiers|r and |cRXP_ENEMY_Cracked Skull Soldiers|r. Loot them for |cRXP_LOOT_Notched Rib|r. |cRXP_WARN_Anything left is finished later|r
     .complete 426,1 --Notched Rib (5)
     .mob Rattlecage Soldier
@@ -1128,7 +1137,7 @@ step
     .complete 354,2 --Nissa's Remains (1)
     .mob Nissa Agamand
 step
-    #label Along93
+    #label Along95
     .goto 1420/0,1045.08,2824.09
     >>Kill |cRXP_ENEMY_Thurman Agamand|r and loot |cRXP_LOOT_Thurman's Remains|r
     .complete 354,3 --Thurman's Remains (1)
@@ -1157,26 +1166,26 @@ step
     .mob Cracked Skull Soldier
     .mob Darkeye Bonecaster
 step
-    #completewith Along97
+    #completewith Along99
     >>As you go: Kill |cRXP_ENEMY_Rot Hide Gnolls|r, |cRXP_ENEMY_Rot Hide Mongrels|r and |cRXP_ENEMY_Rot Hide Graverobbers|r. Loot them for |cRXP_LOOT_Embalming Ichor|r. |cRXP_WARN_Anything left is finished later|r
     .complete 358,3 --Embalming Ichor (8)
     .mob Rot Hide Gnoll
     .mob Rot Hide Mongrel
     .mob Rot Hide Graverobber
 step
-    #completewith Along95
+    #completewith Along97
     >>As you go: Kill |cRXP_ENEMY_Vile Fin Puddlejumpers|r, |cRXP_ENEMY_Vile Fin Minor Oracles|r and |cRXP_ENEMY_Vile Fin Muckdwellers|r. Loot them for |cRXP_LOOT_Vile Fin Scale|r. |cRXP_WARN_Anything left is finished later|r
     .complete 368,1 --Vile Fin Scale (5)
     .mob Vile Fin Puddlejumper
     .mob Vile Fin Minor Oracle
     .mob Vile Fin Muckdweller
 step
-    #completewith Along95
+    #completewith Along97
     >>As you go: Kill |cRXP_ENEMY_Rot Hide Mongrels|r. |cRXP_WARN_Anything left is finished later|r
     .complete 358,2 --Rot Hide Mongrel slain (5)
     .mob Rot Hide Mongrel
 step
-    #label Along95
+    #label Along97
     .goto 1420/0,382.63,2910.55
     >>Kill |cRXP_ENEMY_Maggot Eye|r and loot |cRXP_LOOT_Maggot Eye's Paw|r
     .complete 398,1 --Maggot Eye's Paw (1)
@@ -1192,7 +1201,7 @@ step
     .mob Vile Fin Minor Oracle
     .mob Vile Fin Muckdweller
 step
-    #label Along97
+    #label Along99
     #loop
     .goto 1420/0,384.89,2749.69,0
     .goto 1420/0,384.89,2749.69,40,0
@@ -1405,7 +1414,7 @@ RXPGuides.RegisterGuide([[
 #subweight -1
 #name 8-11 Tirisfal Glades: around Carendin Halgar
 --RouteBuilder:next
-#next Zone Routes (Horde)\10-12 The Barrens: around Sergra Darkthorn;Zone Routes (Horde)\10-12 Silverpine Forest: around Dalar Dawnweaver;Zone Routes (Horde)\7-11 Durotar: around Master Gadrin
+#next Zone Routes (Horde)\10-12 The Barrens: around Sergra Darkthorn;Zone Routes (Horde)\4-10 Durotar: around Master Gadrin;Zone Routes (Horde)\10-12 Silverpine Forest: around Dalar Dawnweaver
 
 step
     #completewith next
@@ -1534,12 +1543,6 @@ step << Orc Rogue/Troll Rogue
     .train 201 >>Train 1h Swords
     .target Archibald
     .money <0.3023
-step << Undead Warlock
-    .goto 1458/0,57.15,1711.58
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Carendin Halgar|r
-    .turnin 1471 >>Turn in The Binding
-    .target Carendin Halgar
-    .isQuestComplete 1471
 step << Undead
     .goto 1458/0,283.27,1610.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gordon Wendham|r
@@ -2059,10 +2062,9 @@ step
     >>|cRXP_FRIENDLY_Orgrimmar|r: Hex of Weakness << Troll Priest
     >>|cRXP_FRIENDLY_Silverpine Forest|r: Delivery to Silverpine Forest
     >>|cRXP_FRIENDLY_Silverpine Forest|r: Return to Podrig << Undead
-    >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Binding << Undead Warlock
     >>|cRXP_FRIENDLY_Silverpine Forest and back here|r: The Deathstalkers << Undead Rogue
 step
-    +|cRXP_WARN_Suggested next zones at level 10|r: |cRXP_FRIENDLY_The Barrens|r (about 2.7 levels of quests, starting around Sergra Darkthorn; 1 quest from here hands in there), |cRXP_FRIENDLY_Silverpine Forest|r (about 1.3 levels of quests, starting around Dalar Dawnweaver; 3 quests from here hand in there), |cRXP_FRIENDLY_Durotar|r (about 1.3 levels of quests, starting around Master Gadrin). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 10|r: |cRXP_FRIENDLY_The Barrens|r (about 2.7 levels of quests, starting around Sergra Darkthorn; 1 quest from here hands in there), |cRXP_FRIENDLY_Durotar|r (about 1.3 levels of quests, starting around Master Gadrin), |cRXP_FRIENDLY_Silverpine Forest|r (about 1.3 levels of quests, starting around Dalar Dawnweaver; 3 quests from here hand in there). Completing this step loads the guide for The Barrens --RouteBuilder:next
 step
     +|cRXP_WARN_The rest of Tirisfal Glades is planned from level 13.|r Load its guide for level 13 then
 ]])
@@ -2279,12 +2281,6 @@ step << Undead Warlock
     .train 1455 >> Train your class spells
     .target Rupert Boch
     .xp <16,1
-step << Undead Warlock
-    .goto 1458/0,57.15,1711.58
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Carendin Halgar|r
-    .turnin 1471 >>Turn in The Binding
-    .target Carendin Halgar
-    .isQuestComplete 1471
 step
     #completewith next
     .zone 1420 >>Leave Undercity for Tirisfal Glades

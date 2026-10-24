@@ -1,0 +1,76 @@
+Echo Isles - Horde
+Guide "2-4 Echo Isles" in group "Zone Routes (Horde)": 142 steps, 131 stops
+Written to guides/mop/Echo Isles (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 58 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 2. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 180 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed, 13 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 25 tasks, 5,627 yd on foot; ends at level 4.1; 1 hearth
+  Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior: 17 more tasks; their whole route comes to 8,534 yd; ends at level 5.0; 1 hearth
+  Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter: 17 more tasks; their whole route comes to 7,943 yd; ends at level 4.8; 1 hearth
+  Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue: 17 more tasks; their whole route comes to 8,550 yd; ends at level 4.8; 1 hearth
+  Orc Priest/Undead Priest/Tauren Priest/Troll Priest/BloodElf Priest/Goblin Priest/Pandaren Priest: 17 more tasks; their whole route comes to 8,203 yd; ends at level 4.8; 1 hearth
+  Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage: 17 more tasks; their whole route comes to 8,683 yd; ends at level 4.8; 1 hearth
+  Orc Monk/Undead Monk/Tauren Monk/Troll Monk/BloodElf Monk/Goblin Monk/Pandaren Monk: 17 more tasks; their whole route comes to 8,427 yd; ends at level 4.8; 1 hearth
+  Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock: 17 more tasks; their whole route comes to 9,205 yd; ends at level 4.8; 1 hearth
+  Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman: 17 more tasks; their whole route comes to 9,301 yd; ends at level 4.8; 1 hearth
+  Tauren Druid/Troll Druid: 17 more tasks; their whole route comes to 8,468 yd; ends at level 4.8; 1 hearth
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 3,328 yd; ends at level 2.0; at its hardest you are 2.0 levels below the mobs
+Hearthstone: set at Gora'tin (Gora'tin's inn); 1 hearth step in the guide.
+9 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (66)
+------------------------
+Start to finish here: 62 (0 for everyone, 8 Orc Warrior/Orc Hunter/Orc Rogue/Orc Priest/Orc Shaman/Orc Mage/Orc Warlock/Orc Monk/Orc Druid/Undead Warrior/Undead Hunter/Undead Rogue/Undead Priest/Undead Shaman/Undead Mage/Undead Warlock/Undead Monk/Undead Druid/Tauren Warrior/Tauren Hunter/Tauren Rogue/Tauren Priest/Tauren Shaman/Tauren Mage/Tauren Warlock/Tauren Monk/Tauren Druid/Troll Warrior/Troll Hunter/Troll Rogue/Troll Priest/Troll Shaman/Troll Mage/Troll Warlock/Troll Monk/Troll Druid/BloodElf Warrior/BloodElf Hunter/BloodElf Rogue/BloodElf Priest/BloodElf Shaman/BloodElf Mage/BloodElf Warlock/BloodElf Monk/BloodElf Druid/Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock/Goblin Monk/Goblin Druid/Pandaren Warrior/Pandaren Hunter/Pandaren Rogue/Pandaren Priest/Pandaren Shaman/Pandaren Mage/Pandaren Warlock/Pandaren Monk/Pandaren Druid, 6 Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior, 6 Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage, 6 Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman, 6 Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue, 6 Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter, 6 Orc Priest/Undead Priest/Tauren Priest/Troll Priest/BloodElf Priest/Goblin Priest/Pandaren Priest, 6 Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock, 6 Orc Monk/Undead Monk/Tauren Monk/Troll Monk/BloodElf Monk/Goblin Monk/Pandaren Monk, 5 Orc Druid/Undead Druid/Tauren Druid/Troll Druid/BloodElf Druid/Goblin Druid/Pandaren Druid, 1 Tauren Druid/Troll Druid)
+
+Hand-in step only shows once complete (2):
+  Crab Fishin' [25037, level 3, Orc Warrior/Orc Hunter/Orc Rogue/Orc Priest/Orc Shaman/Orc Mage/Orc Warlock/Orc Monk/Orc Druid/Undead Warrior/Undead Hunter/Undead Rogue/Undead Priest/Undead Shaman/Undead Mage/Undead Warlock/Undead Monk/Undead Druid/Tauren Warrior/Tauren Hunter/Tauren Rogue/Tauren Priest/Tauren Shaman/Tauren Mage/Tauren Warlock/Tauren Monk/Tauren Druid/Troll Warrior/Troll Hunter/Troll Rogue/Troll Priest/Troll Shaman/Troll Mage/Troll Warlock/Troll Monk/Troll Druid/BloodElf Warrior/BloodElf Hunter/BloodElf Rogue/BloodElf Priest/BloodElf Shaman/BloodElf Mage/BloodElf Warlock/BloodElf Monk/BloodElf Druid/Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock/Goblin Monk/Goblin Druid/Pandaren Warrior/Pandaren Hunter/Pandaren Rogue/Pandaren Priest/Pandaren Shaman/Pandaren Mage/Pandaren Warlock/Pandaren Monk/Pandaren Druid] - needs Fresh Crawler Meat (5) (Durotar)
+  Territorial Fetish [24813, level 4, Orc Warrior/Orc Hunter/Orc Rogue/Orc Priest/Orc Shaman/Orc Mage/Orc Warlock/Orc Monk/Orc Druid/Undead Warrior/Undead Hunter/Undead Rogue/Undead Priest/Undead Shaman/Undead Mage/Undead Warlock/Undead Monk/Undead Druid/Tauren Warrior/Tauren Hunter/Tauren Rogue/Tauren Priest/Tauren Shaman/Tauren Mage/Tauren Warlock/Tauren Monk/Tauren Druid/Troll Warrior/Troll Hunter/Troll Rogue/Troll Priest/Troll Shaman/Troll Mage/Troll Warlock/Troll Monk/Troll Druid/BloodElf Warrior/BloodElf Hunter/BloodElf Rogue/BloodElf Priest/BloodElf Shaman/BloodElf Mage/BloodElf Warlock/BloodElf Monk/BloodElf Druid/Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock/Goblin Monk/Goblin Druid/Pandaren Warrior/Pandaren Hunter/Pandaren Rogue/Pandaren Priest/Pandaren Shaman/Pandaren Mage/Pandaren Warlock/Pandaren Monk/Pandaren Druid] - needs Spitescale Flag (Spitescale Cavern)
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  An Ancient Enemy [24814, level 5, Orc Warrior/Orc Hunter/Orc Rogue/Orc Priest/Orc Shaman/Orc Mage/Orc Warlock/Orc Monk/Orc Druid/Undead Warrior/Undead Hunter/Undead Rogue/Undead Priest/Undead Shaman/Undead Mage/Undead Warlock/Undead Monk/Undead Druid/Tauren Warrior/Tauren Hunter/Tauren Rogue/Tauren Priest/Tauren Shaman/Tauren Mage/Tauren Warlock/Tauren Monk/Tauren Druid/Troll Warrior/Troll Hunter/Troll Rogue/Troll Priest/Troll Shaman/Troll Mage/Troll Warlock/Troll Monk/Troll Druid/BloodElf Warrior/BloodElf Hunter/BloodElf Rogue/BloodElf Priest/BloodElf Shaman/BloodElf Mage/BloodElf Warlock/BloodElf Monk/BloodElf Druid/Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock/Goblin Monk/Goblin Druid/Pandaren Warrior/Pandaren Hunter/Pandaren Rogue/Pandaren Priest/Pandaren Shaman/Pandaren Mage/Pandaren Warlock/Pandaren Monk/Pandaren Druid] - needs Territorial Fetish [24813]
+  Sen'jin Village [25073, level 5, Orc Warrior/Orc Hunter/Orc Rogue/Orc Priest/Orc Shaman/Orc Mage/Orc Warlock/Orc Monk/Orc Druid/Undead Warrior/Undead Hunter/Undead Rogue/Undead Priest/Undead Shaman/Undead Mage/Undead Warlock/Undead Monk/Undead Druid/Tauren Warrior/Tauren Hunter/Tauren Rogue/Tauren Priest/Tauren Shaman/Tauren Mage/Tauren Warlock/Tauren Monk/Tauren Druid/Troll Warrior/Troll Hunter/Troll Rogue/Troll Priest/Troll Shaman/Troll Mage/Troll Warlock/Troll Monk/Troll Druid/BloodElf Warrior/BloodElf Hunter/BloodElf Rogue/BloodElf Priest/BloodElf Shaman/BloodElf Mage/BloodElf Warlock/BloodElf Monk/BloodElf Druid/Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock/Goblin Monk/Goblin Druid/Pandaren Warrior/Pandaren Hunter/Pandaren Rogue/Pandaren Priest/Pandaren Shaman/Pandaren Mage/Pandaren Warlock/Pandaren Monk/Pandaren Druid] - needs one of An Ancient Enemy [24814] -> Durotar
+
+Worth checking in game
+----------------------
+  The Arts of a Warrior [24640, level 3, Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior]: has a reputation or spell objective, which is not planned
+  The Arts of a Warrior [24640, level 3, Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior]: objective "Tiki Target slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Charge (x3)" there
+  The Arts of a Mage [24752, level 3, Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage]: has a reputation or spell objective, which is not planned
+  The Arts of a Mage [24752, level 3, Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage]: objective "Tiki Target slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Arcane Missiles (x3)" there
+  The Arts of a Shaman [24760, level 3, Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman]: has a reputation or spell objective, which is not planned
+  The Arts of a Shaman [24760, level 3, Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman]: objective "Tiki Target slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Primal Strike (x3)" there
+  The Arts of a Druid [24766, level 3, Orc Druid/Undead Druid/Tauren Druid/Troll Druid/BloodElf Druid/Goblin Druid/Pandaren Druid]: has a reputation or spell objective, which is not planned
+  The Arts of a Druid [24766, level 3, Orc Druid/Undead Druid/Tauren Druid/Troll Druid/BloodElf Druid/Goblin Druid/Pandaren Druid]: objective "Tiki Target slain (1)" is line 1 by the database, but RestedXP's guide has "Cast Rejuvenation (x1)" there
+  The Arts of a Rogue [24772, level 3, Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue]: has a reputation or spell objective, which is not planned
+  The Arts of a Rogue [24772, level 3, Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue]: objective "Tiki Target slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Eviscerate (x3)" there
+  The Arts of a Hunter [24778, level 3, Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter]: has a reputation or spell objective, which is not planned
+  The Arts of a Hunter [24778, level 3, Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter]: objective "Tiki Target slain (3)" is line 1 by the database, but RestedXP's guide has "Steady Shot (x3)" there
+  Learnin' tha Word [24784, level 3, Orc Priest/Undead Priest/Tauren Priest/Troll Priest/BloodElf Priest/Goblin Priest/Pandaren Priest]: has a reputation or spell objective, which is not planned
+  Learnin' tha Word [24784, level 3, Orc Priest/Undead Priest/Tauren Priest/Troll Priest/BloodElf Priest/Goblin Priest/Pandaren Priest]: objective "Tiki Target slain (5)" is line 1 by the database, but RestedXP's guide has "Cast Flash Heal (x5)" there
+  Territorial Fetish [24813, level 4, Orc Warrior/Orc Hunter/Orc Rogue/Orc Priest/Orc Shaman/Orc Mage/Orc Warlock/Orc Monk/Orc Druid/Undead Warrior/Undead Hunter/Undead Rogue/Undead Priest/Undead Shaman/Undead Mage/Undead Warlock/Undead Monk/Undead Druid/Tauren Warrior/Tauren Hunter/Tauren Rogue/Tauren Priest/Tauren Shaman/Tauren Mage/Tauren Warlock/Tauren Monk/Tauren Druid/Troll Warrior/Troll Hunter/Troll Rogue/Troll Priest/Troll Shaman/Troll Mage/Troll Warlock/Troll Monk/Troll Druid/BloodElf Warrior/BloodElf Hunter/BloodElf Rogue/BloodElf Priest/BloodElf Shaman/BloodElf Mage/BloodElf Warlock/BloodElf Monk/BloodElf Druid/Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock/Goblin Monk/Goblin Druid/Pandaren Warrior/Pandaren Hunter/Pandaren Rogue/Pandaren Priest/Pandaren Shaman/Pandaren Mage/Pandaren Warlock/Pandaren Monk/Pandaren Druid]: objective "Spitescale Flag" is line 1 by the database, but RestedXP's guide has "8/8 Territorial Fetish placed" there
+  An Ancient Enemy [24814, level 5, Orc Warrior/Orc Hunter/Orc Rogue/Orc Priest/Orc Shaman/Orc Mage/Orc Warlock/Orc Monk/Orc Druid/Undead Warrior/Undead Hunter/Undead Rogue/Undead Priest/Undead Shaman/Undead Mage/Undead Warlock/Undead Monk/Undead Druid/Tauren Warrior/Tauren Hunter/Tauren Rogue/Tauren Priest/Tauren Shaman/Tauren Mage/Tauren Warlock/Tauren Monk/Tauren Druid/Troll Warrior/Troll Hunter/Troll Rogue/Troll Priest/Troll Shaman/Troll Mage/Troll Warlock/Troll Monk/Troll Druid/BloodElf Warrior/BloodElf Hunter/BloodElf Rogue/BloodElf Priest/BloodElf Shaman/BloodElf Mage/BloodElf Warlock/BloodElf Monk/BloodElf Druid/Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock/Goblin Monk/Goblin Druid/Pandaren Warrior/Pandaren Hunter/Pandaren Rogue/Pandaren Priest/Pandaren Shaman/Pandaren Mage/Pandaren Warlock/Pandaren Monk/Pandaren Druid]: Zar'jira is level 85, far above this level 5 quest, so the objective is taken to be "talk to" rather than "kill"
+  The Arts of a Warlock [26274, level 3, Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock]: has a reputation or spell objective, which is not planned
+  The Arts of a Warlock [26274, level 3, Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock]: objective "Tiki Target slain (3)" is line 1 by the database, but RestedXP's guide has "Cast Immolate (x3)" there
+  The Arts of a Monk [31162, level 3, Orc Monk/Undead Monk/Tauren Monk/Troll Monk/BloodElf Monk/Goblin Monk/Pandaren Monk]: could not read how many Tiki Target are needed from the quest text; assumed 8
+  The Arts of a Monk [31162, level 3, Orc Monk/Undead Monk/Tauren Monk/Troll Monk/BloodElf Monk/Goblin Monk/Pandaren Monk]: has a reputation or spell objective, which is not planned
+
+Left out (4)
+------------
+needs reputation (3):
+  Find Thrall! [32319], The Horde Is Family [32320], De-Subjugation [32372]
+not in the game (on Questie's quest blacklist) (1):
+  Necessary Refreshment (Backup Groundspawn Quest) [28835]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

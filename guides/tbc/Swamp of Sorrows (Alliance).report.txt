@@ -1,0 +1,224 @@
+Swamp of Sorrows - Alliance - part 1 of 4, planned from level 35
+Guide "35-52 Swamp of Sorrows" in group "Zone Routes (Alliance)": this part has 16 steps, 15 stops
+Written to guides/tbc/Swamp of Sorrows (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 5 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 35. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 2 steps kept, 21 new ones slotted in, 0 moved because their prerequisites changed, 20 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 21 tasks, 3,688 yd on foot; ends at level 35.5; at its hardest you are 1.8 levels below the mobs
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 3,886 yd; ends at level 35.5; at its hardest you are 1.8 levels below the mobs
+  Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 3,886 yd; ends at level 35.5; at its hardest you are 1.8 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (9)
+-----------------------
+Start to finish here: 7 (7 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  A Troubled Spirit [8417, level 50, Warrior] <- Thunder Bluff
+  Petty Squabbles [2783, level 57] <- Blasted Lands
+
+Worth checking in game
+----------------------
+
+Put off to a later part (13)
+----------------------------
+These need a higher level than this part ends at:
+  Cortello's Riddle [625, level 43]: needs level 37; this part gets you to about 35.7
+  Driftwood [1398, level 42]: is a level 42 quest; this part gets you to about 35.7
+  Deliver the Shipment [1425, level 42]: follows Driftwood [1398]
+  The Stones That Bind Us [2681, level 57]: needs level 47; this part gets you to about 35.7
+  Heroes of Old [2701, level 57]: needs level 45; this part gets you to about 35.7
+  Heroes of Old [2702, level 57]: needs level 52; this part gets you to about 35.7
+  A Tale of Sorrow [2801, level 57]: is a level 57 quest; this part gets you to about 35.7
+  The Essence of Eranikus [3374, level 55]: needs level 48; this part gets you to about 35.7
+  In Eranikus' Own Words [3512, level 55]: needs level 52; this part gets you to about 35.7
+  Warrior Kinship [8423, level 52]: needs level 50; this part gets Warrior characters to about 35.7
+  War on the Shadowsworn [8424, level 52]: needs level 50; this part gets Warrior characters to about 35.7
+  Voodoo Feathers [8425, level 52]: needs level 50; this part gets Warrior characters to about 35.7
+  Pool of Tears [9610, level 43]: is a level 43 quest; this part gets you to about 35.7
+
+Left out (10)
+-------------
+above this zone's range of 35-57 (7):
+  Kirith [2721], The Cover of Darkness [2743], The Demon Hunter [2744], Return to the Blasted Lands [3626], Uniting the Shattered Amulet [3627], You Are Rakh'likh, Demon [3628], Mor'zul Bloodbringer [7562]
+handed in here, but the database does not say where it starts (1):
+  Cortello's Riddle [624]
+starts from a random drop, and no quest in this guide kills those mobs (1):
+  Crystal in the Mountains [635]
+not in the game (on Questie's quest blacklist) (1):
+  Desecrate this Fire! [11781]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Swamp of Sorrows - Alliance - part 2 of 4, planned from level 39
+Guide "35-52 Swamp of Sorrows" in group "Zone Routes (Alliance)": this part has 7 steps, 5 stops
+Written to guides/tbc/Swamp of Sorrows (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 39. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 1 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 4 tasks, 2,832 yd on foot; ends at level 39.1; at its hardest you are 2.0 levels below the mobs
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 3,031 yd; ends at level 39.1; at its hardest you are 2.0 levels below the mobs
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (3)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Deliver the Shipment [1425, level 42] -> Blasted Lands
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Cortello's Riddle [625, level 43] - needs one of Cortello's Riddle [624] -> Dustwallow Marsh
+
+Worth checking in game
+----------------------
+
+Put off to a later part (10)
+----------------------------
+These need a higher level than this part ends at:
+  The Stones That Bind Us [2681, level 57]: needs level 47; this part gets you to about 39.2
+  Heroes of Old [2701, level 57]: needs level 45; this part gets you to about 39.2
+  Heroes of Old [2702, level 57]: needs level 52; this part gets you to about 39.2
+  A Tale of Sorrow [2801, level 57]: is a level 57 quest; this part gets you to about 39.2
+  The Essence of Eranikus [3374, level 55]: needs level 48; this part gets you to about 39.2
+  In Eranikus' Own Words [3512, level 55]: needs level 52; this part gets you to about 39.2
+  Warrior Kinship [8423, level 52]: needs level 50; this part gets Warrior characters to about 39.2
+  War on the Shadowsworn [8424, level 52]: needs level 50; this part gets Warrior characters to about 39.2
+  Voodoo Feathers [8425, level 52]: needs level 50; this part gets Warrior characters to about 39.2
+  Pool of Tears [9610, level 43]: is a level 43 quest; this part gets you to about 39.2
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Swamp of Sorrows - Alliance - part 3 of 4, planned from level 42
+Guide "35-52 Swamp of Sorrows" in group "Zone Routes (Alliance)": this part has 4 steps, 3 stops
+Written to guides/tbc/Swamp of Sorrows (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 42. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 3 tasks, 1,995 yd on foot; ends at level 42.1
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (1)
+-----------------------
+Start to finish here: 1 (1 for everyone)
+
+Worth checking in game
+----------------------
+
+Put off to a later part (9)
+---------------------------
+These need a higher level than this part ends at:
+  The Stones That Bind Us [2681, level 57]: needs level 47; this part gets you to about 42.1
+  Heroes of Old [2701, level 57]: needs level 45; this part gets you to about 42.1
+  Heroes of Old [2702, level 57]: needs level 52; this part gets you to about 42.1
+  A Tale of Sorrow [2801, level 57]: is a level 57 quest; this part gets you to about 42.1
+  The Essence of Eranikus [3374, level 55]: needs level 48; this part gets you to about 42.1
+  In Eranikus' Own Words [3512, level 55]: needs level 52; this part gets you to about 42.1
+  Warrior Kinship [8423, level 52]: needs level 50; this part gets Warrior characters to about 42.1
+  War on the Shadowsworn [8424, level 52]: needs level 50; this part gets Warrior characters to about 42.1
+  Voodoo Feathers [8425, level 52]: needs level 50; this part gets Warrior characters to about 42.1
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+Swamp of Sorrows - Alliance - part 4 of 4, planned from level 51
+Guide "35-52 Swamp of Sorrows" in group "Zone Routes (Alliance)": this part has 9 steps, 8 stops
+Written to guides/tbc/Swamp of Sorrows (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 1 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+2 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 51. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 3 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  Warrior: 1 tasks, 0 yd on foot; ends at level 51.0
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 481 yd; ends at level 51.0
+  Warrior (quests that depend on other zones): 2 more tasks; their whole route comes to 961 yd; ends at level 51.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Hand-in step only shows once complete (1):
+  Warrior Kinship [8423, level 52, Warrior] - needs Helboar slain (7) (Blasted Lands)
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  War on the Shadowsworn [8424, level 52, Warrior] - needs one of Warrior Kinship [8423]
+  Voodoo Feathers [8425, level 52, Warrior] - needs one of War on the Shadowsworn [8424]
+  The Essence of Eranikus [3374, level 55] - needs one of The Essence of Eranikus [3373]
+
+Worth checking in game
+----------------------
+
+Not planned (5)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  The Stones That Bind Us [2681, level 57]: follows A Tale of Sorrow [2801]
+  Heroes of Old [2701, level 57]: follows Heroes of Old [2702]
+  Heroes of Old [2702, level 57]: needs level 52; this part gets you to about 51.0
+  A Tale of Sorrow [2801, level 57]: is a level 57 quest; this part gets you to about 51.0
+  In Eranikus' Own Words [3512, level 55]: needs level 52; this part gets you to about 51.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

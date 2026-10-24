@@ -1,0 +1,204 @@
+Mount Hyjal - Alliance
+Guide "81-81 Mount Hyjal" in group "Zone Routes (Alliance)": 381 steps, 371 stops
+Written to guides/mop/Mount Hyjal (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
+RestedXP cross-check: 1631 objective notes read from 38 guide files
+
+Checks
+------
+Played through as 57 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (NightElf Druid), not counting quests brought in from other zones.
+6 pickups or hand-ins are within reach of a stop but planned for later.
+5 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 81. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 362 steps kept, 26 new ones slotted in, 1 moved because their prerequisites changed, 6 no longer in the guide. Build with --fresh to plan from scratch.
+(The zone has quests below level 81, but too few to make a visit of, so the plan starts here. Use --start-level to change it.)
+  everyone: 30 tasks, 8,037 yd on foot; ends at level 81.1
+  NightElf Druid/Worgen Druid: 1 more tasks; their whole route comes to 8,341 yd; ends at level 81.1
+  everyone (quests that depend on other zones): 356 more tasks; their whole route comes to 63,013 yd; ends at level 81.1; 2 hearths
+  NightElf Druid/Worgen Druid (quests that depend on other zones): 2 more tasks; their whole route comes to 63,765 yd; ends at level 81.1; 2 hearths
+Hearthstone: set at Jandunel Reedwind (Jandunel Reedwind's inn); 2 hearth steps in the guide.
+1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
+3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+
+Quests in the guide (137)
+-------------------------
+Start to finish here: 10 (9 for everyone, 1 Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
+
+Hand-in step only shows once complete (1):
+  The Circle's Future [27356, level 20, NightElf Druid/Worgen Druid] - needs Walden's Elixirs (1) (Shadowfang Keep - Lower Observatory (fake ID for Shadowfang Keep)); Moontouched Wood (1) (an unknown place); Deathless Sinew (5) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (4):
+  An Invitation from Moonglade [27273, level 20, NightElf Druid/Worgen Druid] <- Darnassus
+  Moonglade Calls [28289, level 50, Druid] <- Thunder Bluff
+  The Keeper's Favor [13073, level 80] <- Icecrown
+  Hero's Call: Mount Hyjal! [27726, level 80, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] <- Stormwind City
+
+Need a quest this guide does not hand in - steps show only once that is done (122):
+  Hope Within the Emerald Nightmare [13074, level 80] - needs one of The Keeper's Favor [13073]
+  The Boon of Remulos [13075, level 80] - needs one of Hope Within the Emerald Nightmare [13074] -> Icecrown
+  Trial By Fire [25223, level 81] - needs one of Your New Identity [25276]
+  In Bloom [25224, level 81] - needs one of Your New Identity [25276]
+  End of the Supply Line [25233, level 81] - needs one of The Return of the Ancients [25584]
+  In the Rear With the Gear [25234, level 81] - needs one of The Return of the Ancients [25584]
+  Harrying the Hunters [25255, level 81] - needs one of The Return of the Ancients [25584]
+  The Voice of Goldrinn [25268, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of End of the Supply Line [25233]
+  Goldrinn's Ferocity [25271, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of The Voice of Goldrinn [25268]
+  Lycanthoth the Corruptor [25273, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Goldrinn's Ferocity [25271]
+  Signed in Blood [25274, level 81] - needs one of Commander Jarod Shadowsong [25597]
+  Your New Identity [25276, level 81] - needs one of Signed in Blood [25274]
+  Cleaning House [25278, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Lycanthoth the Corruptor [25273]
+  The Shrine Reclaimed [25280, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Lycanthoth the Corruptor [25273]
+  Twilight Training [25291, level 81] - needs Trial By Fire [25223], In Bloom [25224], Waste of Flesh [25330]
+  Walking the Dog [25294, level 81] - needs one of Twilight Training [25291]
+  Gather the Intelligence [25296, level 81] - needs one of Twilight Training [25291]
+  From the Mouth of Madness [25297, level 81] - needs one of Lycanthoth the Corruptor [25272], Lycanthoth the Corruptor [25273]
+  Free Your Mind, the Rest Follows [25298, level 81] - needs one of From the Mouth of Madness [25297]
+  Mental Training: Speaking the Truth to Power [25299, level 81] - needs one of Agility Training: Run Like Hell! [25499]
+  The Eye of Twilight [25300, level 81] - needs one of Lycanthoth the Corruptor [25272], Lycanthoth the Corruptor [25273]
+  Mastering Puppets [25301, level 81] - needs one of The Eye of Twilight [25300]
+  Elementary! [25303, level 81] - needs one of Mastering Puppets [25301]
+  Seeds of Discord [25308, level 81] - needs one of Gather the Intelligence [25296]
+  Spiritual Training: Mercy is for the Weak [25309, level 81] - needs one of Mental Training: Speaking the Truth to Power [25299]
+  The Greater of Two Evils [25310, level 81] - needs Spiritual Training: Mercy is for the Weak [25309], Grudge Match [25496]
+  Twilight Territory [25311, level 81] - needs Spiritual Training: Mercy is for the Weak [25309], Grudge Match [25496]
+  Return to Duskwhisper [25312, level 81] - needs one of Elementary! [25303]
+  Speech Writing for Dummies [25314, level 81] - needs Seeds of Discord [25308], The Greater of Two Evils [25310], Twilight Territory [25311]
+  Graduation Speech [25315, level 81] - needs one of Head of the Class [25601]
+  War on the Twilight's Hammer [25319, level 81] - needs one of Protect the World Tree [25317]
+  The Captured Scout [25320, level 81] - needs one of Emerald Allies [25430]
+  Twilight Captivity [25321, level 81] - needs one of The Captured Scout [25320]
+  Flamebreaker [25323, level 81] - needs one of The Flameseer's Staff [25472]
+  A Prisoner of Interest [25324, level 81] - needs one of Return to Alysra [25424]
+  Through the Dream [25325, level 81] - needs one of A Prisoner of Interest [25324]
+  Waste of Flesh [25330, level 81] - needs one of Your New Identity [25276]
+  Sweeping the Shelf [25352, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Cleaning House [25278]
+  Lightning in a Bottle [25353, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Cleaning House [25278]
+  Aessina's Miracle [25372, level 81] - needs one of Firefight [25842]
+  Fighting Fire With ... Anything [25381, level 81] - needs one of The Return of the Ancients [25584]
+  Disrupting the Rituals [25382, level 81] - needs one of The Return of the Ancients [25584]
+  Save the Wee Animals [25385, level 81] - needs one of The Return of the Ancients [25584]
+  Oh, Deer! [25392, level 81] - needs one of Save the Wee Animals [25385]
+  If You're Not Against Us... [25404, level 81] - needs one of The Return of the Ancients [25584]
+  Seeds of Their Demise [25408, level 81] - needs one of If You're Not Against Us... [25404]
+  A New Master [25411, level 81] - needs one of Seeds of Their Demise [25408]
+  The Name Never Spoken [25412, level 81] - needs one of A New Master [25411]
+  Return to Alysra [25424, level 81] - needs one of Twilight Captivity [25321]
+  Black Heart of Flame [25428, level 81] - needs one of The Name Never Spoken [25412], The Name Never Spoken [25443]
+  Emerald Allies [25430, level 81] - needs one of The Return of Baron Geddon [25464]
+  The Bears Up There [25462, level 81] - needs Disrupting the Rituals [25382], Oh, Deer! [25392], Black Heart of Flame [25428]
+  The Return of Baron Geddon [25464, level 81] - needs one of Flamebreaker [25323]
+  The Flameseer's Staff [25472, level 81] - needs one of Protect the World Tree [25317]
+  Smashing Through Ashes [25490, level 81] - needs one of The Bears Up There [25462]
+  Durable Seeds [25491, level 81] - needs one of Smashing Through Ashes [25490]
+  Firebreak [25492, level 81] - needs one of Smashing Through Ashes [25490]
+  Fresh Bait [25493, level 81] - needs one of Smashing Through Ashes [25490]
+  A Champion's Collar [25494, level 81] - needs one of Walking the Dog [25294]
+  Grudge Match [25496, level 81] - needs one of A Champion's Collar [25494]
+  Agility Training: Run Like Hell! [25499, level 81] - needs one of Physical Training: Forced Labor [25509]
+  Prepping the Soil [25502, level 81] - needs one of Firebreak [25492]
+  Hell's Shells [25507, level 81] - needs one of Fresh Bait [25493]
+  Physical Training: Forced Labor [25509, level 81] - needs one of Twilight Training [25291]
+  Tortolla Speaks [25510, level 81] - needs one of Hell's Shells [25507]
+  Breaking the Bonds [25514, level 81] - needs one of Tortolla Speaks [25510]
+  Children of Tortolla [25519, level 81] - needs one of Tortolla Speaks [25510]
+  An Ancient Awakens [25520, level 81] - needs Breaking the Bonds [25514], Children of Tortolla [25519]
+  Flight in the Firelands [25523, level 81] - needs one of The Hatchery Must Burn [25810]
+  Wave One [25525, level 81] - needs one of Flight in the Firelands [25523]
+  Twilight Riot [25531, level 81] - needs one of Graduation Speech [25315]
+  Wave Two [25544, level 81] - needs one of Wave One [25525]
+  Might of the Firelord [25548, level 81] - needs one of Slash and Burn [25608]
+  The Sanctum of the Prophets [25549, level 81] - needs one of Might of the Firelord [25548]
+  Secrets of the Flame [25554, level 81] - needs one of Slash and Burn [25608]
+  Egg Wave [25560, level 81] - needs one of Wave Two [25544]
+  Flames from Above [25574, level 81] - needs one of Inciting the Elements [25370]
+  Return to Nordrassil [25578, level 81] - needs one of Through the Dream [25325]
+  The Return of the Ancients [25584, level 81] - needs one of Return to Nordrassil [25578]
+  Commander Jarod Shadowsong [25597, level 81] - needs one of The Ancients are With Us [25653]
+  Head of the Class [25601, level 81] - needs one of Speech Writing for Dummies [25314]
+  Slash and Burn [25608, level 81] - needs one of Twilight Riot [25531]
+  Into the Maw! [25618, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Lightning in a Bottle [25353]
+  Into the Maw! [25623, level 81, Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren] - needs one of Lightning in a Bottle [25353]
+  The Ancients are With Us [25653, level 81] - needs one of Tortolla's Triumph [25928]
+  The Wormwing Problem [25655, level 81] - needs one of Return to Nordrassil [25578]
+  Scrambling for Eggs [25656, level 81] - needs one of Return to Nordrassil [25578]
+  An Offering for Aviana [25663, level 81] - needs one of Return to Nordrassil [25578]
+  A Prayer and a Wing [25664, level 81] - needs one of A Plea From Beyond [25665]
+  A Plea From Beyond [25665, level 81] - needs one of An Offering for Aviana [25663]
+  A Bird in Hand [25731, level 81] - needs The Wormwing Problem [25655], Scrambling for Eggs [25656]
+  Fact-Finding Mission [25740, level 81] - needs A Prayer and a Wing [25664], A Bird in Hand [25731]
+  Sethria's Brood [25746, level 81] - needs one of Fact-Finding Mission [25740]
+  A Gap in Their Armor [25758, level 81] - needs one of Fact-Finding Mission [25740]
+  Disassembly [25761, level 81] - needs one of A Gap in Their Armor [25758]
+  The Codex of Shadows [25763, level 81] - needs one of Fact-Finding Mission [25740]
+  Egg Hunt [25764, level 81] - needs one of The Codex of Shadows [25763]
+  Sethria's Demise [25776, level 81] - needs Sethria's Brood [25746], Disassembly [25761], Egg Hunt [25764]
+  Return to the Shrine [25795, level 81] - needs one of Sethria's Demise [25776]
+  An Ancient Reborn [25807, level 81] - needs one of Return to the Shrine [25795]
+  The Hatchery Must Burn [25810, level 81] - needs one of An Ancient Reborn [25807]
+  The Last Living Lorekeeper [25830, level 81] - needs An Ancient Awakens [25520], An Ancient Reborn [25807]
+  Return to Aviana [25832, level 81] - needs one of Egg Wave [25560]
+  Firefight [25842, level 81] - needs one of The Last Living Lorekeeper [25830]
+  Tortolla's Revenge [25843, level 81] - needs one of Aessina's Miracle [25372]
+  Lost Wardens [25881, level 81] - needs one of Aessina's Miracle [25372]
+  Pressing the Advantage [25886, level 81] - needs one of Lost Wardens [25881]
+  Breakthrough [25899, level 81] - needs one of Aessina's Miracle [25372]
+  Hyjal Recycling Program [25901, level 81] - needs one of Aessina's Miracle [25372]
+  The Hammer and the Key [25904, level 81] - needs one of Aessina's Miracle [25372]
+  The Third Flamegate [25906, level 81] - needs one of The Hammer and the Key [25904]
+  The Time for Mercy has Passed [25910, level 81] - needs one of The Third Flamegate [25906]
+  The Strength of Tortolla [25915, level 81] - needs one of The Third Flamegate [25906]
+  Finish Nemesis [25923, level 81] - needs one of The Strength of Tortolla [25915]
+  Tortolla's Triumph [25928, level 81] - needs one of Finish Nemesis [25923]
+  Last Stand at Whistling Grove [25940, level 81] - needs Disrupting the Rituals [25382], Oh, Deer! [25392], Black Heart of Flame [25428]
+  Wings Over Mount Hyjal [25985, level 81] - needs one of Return to Nordrassil [25578]
+  Magma Monarch [25550, level 82] - needs one of The Sanctum of the Prophets [25549]
+  Brood of Evil [25552, level 82] - needs one of The Twilight Egg [25644]
+  Death to the Broodmother [25553, level 82] - needs one of Brood of Evil [25552]
+  The Gatekeeper [25555, level 82] - needs one of Secrets of the Flame [25554]
+  The Twilight Egg [25644, level 82] - needs one of Slash and Burn [25608]
+
+Worth checking in game
+----------------------
+  A New Master [25411, level 81]: could not read how many Twilight Inferno Lord are needed from the quest text; assumed 8
+  Agility Training: Run Like Hell! [25499, level 81]: "Blazing Trainer Credit (1)" has no place in the data; taken to be done where the quest is given
+  Prepping the Soil [25502, level 81]: mixes a kill-credit objective with others; check that "Activated Flameward" really is line 2 in the quest log
+  Slash and Burn [25608, level 81]: could not read how many Twilight Stormwaker are needed from the quest text; assumed 8
+  Slash and Burn [25608, level 81]: mixes a kill-credit objective with others; check that "Twilight Initiate" really is line 2 in the quest log
+
+Not planned (2)
+---------------
+These need a higher level than the guide reaches and could not be given a part of their own:
+  The Firelord [25551, level 82]: its mobs are level 85; this part gets you to about 81.1
+  The Battle Is Won, The War Goes On [27398, level 82]: needs level 82; this part gets Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren characters to about 81.1
+
+Left out (112)
+--------------
+not in the game (on Questie's quest blacklist) (50):
+  A Lesson to Learn [26], Trial of the Lake [29], Trial of the Sea Lion [272], Under the Chitin Was... [1185], Shards of the Felvine [5526], A Reliquary of Purity [5527], Moonglade [5921], Great Bear Spirit [5929], Lessons Anew [6121], Curing the Sick [6124], Rabine Saturna [6762], Umber, Archivist [6844], Uncovering Past Secrets [6845], Seed of Life [7066], Shrouded in Nightmare [8446], Waking Legends [8447], Tyrande and Remulos [8734], The Nightmare's Corruption [8735], The Nightmare Manifests [8736], Elune's Candle [8862], Festival Dumplings [8863], Festive Lunar Dresses [8864], Festive Lunar Pant Suits [8865], Elune's Blessing [8868], Small Rockets [8876], Firework Launcher [8877], Festive Recipes [8878], Large Rockets [8879], Cluster Rockets [8880], Large Cluster Rockets [8881], Cluster Launcher [8882], Valadar Starsong [8883], Torwa Pathfinder [9063], Waking the Sleeper [10964], No Mere Dream [10965], The Defector [25313], Fiery Inscriptions [25322], Lo'Gosh is Ready for Battle [25827], Goldrinn's Message to Ysera [25828], Hamuul's Message to Ysera [25831], ... 10 more
+special category (sort -379) (26):
+  Opening the Door [29145], Druids of the Talon [29181], Flight of the Storm Crows [29182], A Ritual of Flame [29195], To the Sanctuary! [29196], Caught Unawares [29197], The Sanctuary Must Not Fall [29198], Calling for Reinforcements [29199], Leyara [29200], Through the Gates of Hell [29201], The Fate of Runetotem [29202], The Shadow Wardens [29214], The Hunt Begins [29215], Filling the Moonwell [29279], Nourishing Waters [29280], Additional Armaments [29281], Well Armed [29282], Calling the Ancients [29283], Aid of the Ancients [29284], A Smoke-Stained Locket [29298], Unlocking the Secrets Within [29302], Tragedy and Family [29303], The Tipping Point [29310], The Rest is History [29311], Guardians of Hyjal: Firelands Invasion! [29387], Guardians of Hyjal: Firelands Invasion! [29389]
+repeatable (21):
+  Punting Season [29101], Echoes of Nemesis [29122], Rage Against the Flames [29123], Between the Trees [29125], The Power of Malorne [29126], Rage Against the Flames [29127], The Protectors of Hyjal [29128], Call the Flock [29147], Wings Aflame [29148], Rage Against the Flames [29149], Those Bears Up There [29161], Nature's Blessing [29162], Rage Against the Flames [29163], Perfecting Your Howl [29164], The Call of the Pack [29165], Supplies for the Other Side [29166], Vigilance on Wings [29177], Relieving the Pain [29246], Treating the Wounds [29247], Releasing the Pressure [29248], Brok [31972]
+special category (sort -381) (4):
+  The Nordrassil Summit [29326], Elemental Bonds: The Vow [29331], Into Slashing Winds [29335], The Call of the World-Shaman [29439]
+cannot be taken together with As Hyjal Burns [25316], which is in the guide (3):
+  Protect the World Tree [25317], Inciting the Elements [25370], The Earth Rises [25460]
+dungeon quest (3):
+  The Breath of Cenarius [28343], This Can Only Mean One Thing... [28732], Actionable Intelligence [29225]
+above this zone's range of 81-83 (2):
+  Delegation [29234], The Fallen Guardian [29437]
+cannot be taken together with The Name Never Spoken [25412], which is in the guide (1):
+  The Name Never Spoken [25443]
+cannot be taken together with Wings Over Mount Hyjal [25985], which is in the guide (1):
+  Aviana's Legacy [27874]
+handed in here, but the database does not say where it starts (1):
+  Good News... and Bad News [29066]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

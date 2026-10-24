@@ -1,7 +1,7 @@
 {
   "about": "Step order RouteBuilder keeps between builds of this guide. New steps are slotted in; the rest stay where they are. Lines can be moved by hand, including the training, vendor and flight-path steps written as { \"lines\": [...] }. Delete the file, or build with --fresh, to plan the guide from scratch.",
   "guide": "18-29 Stonetalon Mountains",
-  "saved": "2026-10-23 14:17",
+  "saved": "2026-10-23 18:19",
   "levels": "RestedXP",
   "parts": [
     {
@@ -20,7 +20,6 @@
         "obj:6461:2 @1442:226.96,929.7  Objective Blood Feeders / Deepmoss Venomspitter slain (7)",
         {"lines":[".goto 1442/1,402.76,1231.88",">>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Veenix|r",".vendor >>|cRXP_BUY_Buy an|r |T135329:0|t[Executioner's Sword] |cRXP_BUY_from him|r",">>|cRXP_WARN_If it's not up, buy a|r |T135280:0|t[Dacian Falx] |cRXP_WARN_instead|r",".money <1.5024",".target Veenix"],"tag":"Undead Warrior","from":"RestedXP: 17-22 Stonetalon/Barrens/Ashenvale"},
         "obj:1093:1 @1442:10.63,1234.49  Objective Super Reaper 6000 / Super Reaper 6000 Blueprints (1)",
-        "turnin:1152 @1442:-602.23,1428.89  TurnIn Test of Lore",
         "turnin:1093 @1442:365.16,878.25  TurnIn Super Reaper 6000",
         "accept:1094 @1442:365.16,878.25  Accept Further Instructions",
         "accept:6421 @1442:939.92,831.36  Accept Boulderslide Ravine",

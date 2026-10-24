@@ -2,8 +2,8 @@
 -- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
--- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 1, 13).
--- Split into 4 guides, listed under "1 - 14 Durotar" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 1, 12).
+-- Split into 3 guides, listed under "1 - 13 Durotar" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
 -- Edit zones/classic/Durotar.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,10 +13,10 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 1 - 14 Durotar
+#subgroup 1 - 13 Durotar
 #subweight -1
 #name 1-4 Durotar: around Gornek
-#next Zone Routes (Horde)\4-7 Durotar: around Master Gadrin
+#next Zone Routes (Horde)\4-10 Durotar: around Master Gadrin
 
 step
     .goto 1411/1,-4251.46,-607.35
@@ -747,10 +747,11 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 1 - 14 Durotar
+#subgroup 1 - 13 Durotar
 #subweight -1
-#name 4-7 Durotar: around Master Gadrin
-#next Zone Routes (Horde)\7-11 Durotar: around Master Gadrin
+#name 4-10 Durotar: around Master Gadrin
+--RouteBuilder:next
+#next Zone Routes (Horde)\10-12 The Barrens: around Sergra Darkthorn;Zone Routes (Horde)\4-10 Mulgore: around Mull Thunderhorn;Zone Routes (Horde)\8-11 Tirisfal Glades: around Carendin Halgar
 
 step
     .goto 1411/1,-4841.01,-812.50
@@ -830,7 +831,6 @@ step
     .goto 1411/1,-4724.69,287.30
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Orgnil Soulscar|r
     .turnin 823 >>Turn in Report to Orgnil
-    .accept 806 >>Accept Dark Storms
     .target Orgnil Soulscar
 step
     .goto 1411/1,-4686.09,340.52
@@ -1205,25 +1205,11 @@ step
     .turnin 826 >>Turn in Zalazane while you are here
     .isQuestComplete 826
     .target Master Gadrin
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 1 - 14 Durotar
-#subweight -1
-#name 7-11 Durotar: around Master Gadrin
---RouteBuilder:next
-#next Zone Routes (Horde)\10-12 The Barrens: around Sergra Darkthorn;Zone Routes (Horde)\4-10 Mulgore: around Mull Thunderhorn;Zone Routes (Horde)\8-11 Tirisfal Glades: around Carendin Halgar
-
 step
     .goto 1411/1,-4920.33,-813.91
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Master Vornal|r
     .turnin 818 >>Turn in A Solvent Spirit
     .target Master Vornal
-    .isOnQuest 818
 step << Warrior/Rogue/Shaman
     .goto 1411/1,-4903.41,-786.42
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hai'zan|r
@@ -1236,54 +1222,36 @@ step
     .goto 1411/1,-4920.86,-825.55
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Master Gadrin|r
     .turnin 808 >>Turn in Minshina's Skull
-    .target Master Gadrin
-    .isOnQuest 808
-step
-    .goto 1411/1,-4920.86,-825.55
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Master Gadrin|r
     .turnin 826 >>Turn in Zalazane
     .target Master Gadrin
-    .isOnQuest 826
 step
     .goto 1411/1,-4921.38,-797.70
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vel'rin Fang|r
     .turnin 817 >>Turn in Practical Prey
     .target Vel'rin Fang
-    .isOnQuest 817
 step
-    .goto 1411/1,-4585.10,74.03
+    #loop
+    .goto 1411/1,-4648.55,88.13,0
+    .goto 1411/1,-4648.55,88.13,40,0
+    .goto 1411/1,-4585.10,116.33,40,0
     >>Kill |cRXP_ENEMY_Razormane Quilboars|r
-    .complete 837,1 --Razormane Quilboar slain (4)
-    .mob Razormane Quilboar
-    .isOnQuest 837
-step
-    #loop
-    .goto 1411/1,-4616.82,59.93,0
-    .goto 1411/1,-4616.82,59.93,40,0
-    .goto 1411/1,-4585.10,130.43,40,0
     >>Kill |cRXP_ENEMY_Razormane Scouts|r
+    .complete 837,1 --Razormane Quilboar slain (4)
     .complete 837,2 --Razormane Scout slain (4)
+    .mob Razormane Quilboar
     .mob Razormane Scout
-    .isOnQuest 837
 step
     #loop
-    .goto 1411/1,-4299.57,426.53,0
-    .goto 1411/1,-4299.57,426.53,40,0
+    .goto 1411/1,-4246.70,377.18,0
     .goto 1411/1,-4246.70,377.18,40,0
-    .goto 1411/1,-4162.10,461.78,40,0
+    .goto 1411/1,-4299.57,454.73,40,0
+    .goto 1411/1,-4162.10,468.83,40,0
     >>Kill |cRXP_ENEMY_Razormane Dustrunners|r
-    .complete 837,3 --Razormane Dustrunner slain (4)
-    .mob Razormane Dustrunner
-    .isOnQuest 837
-step
-    #loop
-    .goto 1411/1,-4246.70,384.23,0
-    .goto 1411/1,-4246.70,384.23,40,0
-    .goto 1411/1,-4193.82,497.03,40,0
     >>Kill |cRXP_ENEMY_Razormane Battleguards|r
+    .complete 837,3 --Razormane Dustrunner slain (4)
     .complete 837,4 --Razormane Battleguard slain (4)
+    .mob Razormane Dustrunner
     .mob Razormane Battleguard
-    .isOnQuest 837
 step << Hunter
     .goto 1411/1,-4475.12,92.72,0
     .goto 1411/1,-4475.12,92.72,50,0
@@ -1311,19 +1279,12 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cook Torka|r
     .turnin 815 >>Turn in Break a Few Eggs
     .target Cook Torka
-    .isOnQuest 815
 step
     .goto 1411/1,-4709.36,274.96
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gar'Thok|r
     .turnin 825 >>Turn in From The Wreckage....
-    .target Gar'Thok
-    .isOnQuest 825
-step
-    .goto 1411/1,-4709.36,274.96
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gar'Thok|r
     .turnin 837 >>Turn in Encroachment
     .target Gar'Thok
-    .isOnQuest 837
 step << Shaman
     .goto 1411/1,-4839.96,307.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Swart|r
@@ -1346,93 +1307,11 @@ step << Rogue
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kaplak|r
     .train 674 >> Train your class spells
     .target Kaplak
-step << Orc Hunter/Troll Hunter
-    #completewith next
-    .zone 1454 >>Travel to Orgrimmar
-    .zoneskip 1454
-step << Orc Hunter/Troll Hunter
-    .xp 10 >>Grind to level 10 (The Hunter's Path needs it)
-step << Orc Hunter/Troll Hunter
-    .goto 1454/1,-4633.81,2107.37
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sian'dur|r
-    .accept 6068 >>Accept The Hunter's Path
-    .target Sian'dur
-step << Orc Hunter/Troll Hunter
-    #completewith next
-    .zone 1411 >>Leave Orgrimmar for Durotar
-    .zoneskip 1411
-step << Orc Hunter/Troll Hunter
-    #completewith next
-    .hs >>Hearth to Innkeeper Grosk's inn. |cRXP_WARN_Walk instead if you are already nearby|r
-    .cooldown item,6948,>0,1
-step << Orc Hunter/Troll Hunter
-    .goto 1411/1,-4704.07,275.31
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thotar|r
-    .turnin 6068 >>Turn in The Hunter's Path
-    .accept 6062 >>Accept Taming the Beast
-    .target Thotar
 step << Hunter
     .goto 1411/1,-4704.07,275.31
     >>Go inside the bunker
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thotar|r inside
     .trainer >> Train your class spells
-    .target Thotar
-step << Orc Hunter/Troll Hunter
-    #loop
-    .goto 1411/1,-4286.36,282.01,0
-    .goto 1411/1,-4286.36,282.01,40,0
-    .goto 1411/1,-4229.78,283.77,40,0
-    .goto 1411/1,-4241.94,258.74,40,0
-    .goto 1411/1,-4188.01,248.52,40,0
-    .goto 1411/1,-4135.66,224.90,40,0
-    .goto 1411/1,-4221.32,186.13,40,0
-    .goto 1411/1,-4274.19,172.03,40,0
-    .goto 1411/1,-4226.08,127.61,40,0
-    >>Interact with |cRXP_FRIENDLY_Dire Mottled Boar|r
-    .complete 6062,1 --Dire Mottled Boar
-    .target Dire Mottled Boar
-step << Orc Hunter/Troll Hunter
-    .goto 1411/1,-4704.07,275.31
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thotar|r
-    .turnin 6062 >>Turn in Taming the Beast
-    .accept 6083 >>Accept Taming the Beast
-    .target Thotar
-step << Orc Hunter/Troll Hunter
-    #loop
-    .goto 1411/1,-5352.32,-735.31,0
-    .goto 1411/1,-5352.32,-735.31,40,0
-    .goto 1411/1,-5462.30,-686.66,40,0
-    .goto 1411/1,-5406.25,-750.46,40,0
-    .goto 1411/1,-5470.76,-761.04,40,0
-    .goto 1411/1,-5425.28,-822.73,40,0
-    .goto 1411/1,-5448.55,-857.62,40,0
-    .goto 1411/1,-5518.87,-852.69,40,0
-    .goto 1411/1,-5507.24,-885.12,40,0
-    >>Interact with |cRXP_FRIENDLY_Surf Crawler|r
-    .complete 6083,1 --Surf Crawler
-    .target Surf Crawler
-step << Orc Hunter/Troll Hunter
-    .goto 1411/1,-4704.07,275.31
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thotar|r
-    .turnin 6083 >>Turn in Taming the Beast
-    .accept 6082 >>Accept Taming the Beast
-    .target Thotar
-step << Orc Hunter/Troll Hunter
-    #loop
-    .goto 1411/1,-4518.48,446.98,0
-    .goto 1411/1,-4518.48,446.98,40,0
-    .goto 1411/1,-4569.24,516.42,40,0
-    .goto 1411/1,-4476.71,508.67,40,0
-    .goto 1411/1,-4477.76,552.73,40,0
-    .goto 1411/1,-4439.16,555.90,40,0
-    >>Interact with |cRXP_FRIENDLY_Armored Scorpid|r
-    .complete 6082,1 --Armored Scorpid
-    .target Armored Scorpid
-step << Orc Hunter/Troll Hunter
-    .goto 1411/1,-4704.07,275.31
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thotar|r
-    .turnin 6082 >>Turn in Taming the Beast
-    .accept 6081 >>Accept Training the Beast
     .target Thotar
 step << Hunter
     .goto 1411/1,-4666.00,305.63
@@ -1448,24 +1327,11 @@ step << Shaman
     .turnin 1524 >>Turn in Call of Fire
     .target Telf Joolam
     .isOnQuest 1524
-step << Shaman
-    .goto 1411/1,-4000.83,-270.01
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Telf Joolam|r
-    .accept 1525 >>Accept Call of Fire
-    .target Telf Joolam
-    .isQuestTurnedIn 1524 --any of: Call of Fire
-    .xp <10,1
 step
     .goto 1411/1,-4241.41,742.37
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Misha Tor'kren|r
     .accept 816 >>Accept Lost But Not Forgotten
     .target Misha Tor'kren
-step
-    .goto 1411/1,-4189.59,868.57
-    >>Kill |cRXP_ENEMY_Fizzle Darkstorm|r and loot |cRXP_LOOT_Fizzle's Claw|r
-    .complete 806,1 --Fizzle's Claw (1)
-    .mob Fizzle Darkstorm
-    .isOnQuest 806
 step
     .goto 1411/1,-4414.31,999.70
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rezlak|r
@@ -1484,12 +1350,6 @@ step
     .turnin 834 >>Turn in Winds in the Desert
     .accept 835 >>Accept Securing the Lines
     .target Rezlak
-step << Shaman
-    .goto 1411/1,-4747.43,914.39
-    >>Kill |cRXP_ENEMY_Burning Blade Cultist|r and loot |cRXP_LOOT_Reagent Pouch|r
-    .complete 1525,2 --Reagent Pouch (1)
-    .mob Burning Blade Cultist
-    .isOnQuest 1525
 step
     .goto 1411/1,-4158.93,1152.68
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rhinag|r
@@ -1508,6 +1368,12 @@ step
 step << Troll Priest
     .goto 1454/1,-4179.79,1452.39
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ur'kyo|r
+    .turnin 5655 >>Turn in Hex of Weakness
+    .target Ur'kyo
+    .isOnQuest 5655
+step << Troll Priest
+    .goto 1454/1,-4179.79,1452.39
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ur'kyo|r
     .turnin 5657 >>Turn in Hex of Weakness
     .target Ur'kyo
     .isOnQuest 5657
@@ -1517,22 +1383,6 @@ step << Troll Priest
     .turnin 5656 >>Turn in Hex of Weakness
     .target Ur'kyo
     .isOnQuest 5656
-step << Troll Priest
-    .goto 1454/1,-4179.79,1452.39
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ur'kyo|r
-    .turnin 5655 >>Turn in Hex of Weakness
-    .target Ur'kyo
-    .isOnQuest 5655
-step
-    .goto 1454/1,-4343.19,1772.68
-    >>Kill |cRXP_ENEMY_Kor'ghan|r and loot |cRXP_LOOT_Venomtail Antidote|r
-    .complete 812,1 --Venomtail Antidote (1)
-    .mob Kor'ghan
-step
-    .goto 1454/1,-4161.41,1905.79
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Eitrigg|r
-    .accept 787 >>Accept The New Horde
-    .target Eitrigg
 step
     .goto 1454/1,-4133.64,1939.47
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nazgrel|r
@@ -1544,11 +1394,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thrall|r
     .accept 5726 >>Accept Hidden Enemies
     .target Thrall
-step << Orc Hunter/Troll Hunter
-    .goto 1454/1,-4607.02,2100.54
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ormak Grimshot|r
-    .turnin 6081 >>Turn in Training the Beast
-    .target Ormak Grimshot
 step << Hunter
     .goto 1454/1,-4611.09,2135.15
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Xao'tsu|r
@@ -1564,26 +1409,6 @@ step
     .collect 2287,15,818,1 << Rogue/Warrior
     .target Innkeeper Grosk
     .money <0.0375
-step
-    #completewith next
-    .zone 1411 >>Leave Orgrimmar for Durotar
-    .zoneskip 1411
-step
-    #completewith next
-    .hs >>Hearth to Innkeeper Grosk's inn. |cRXP_WARN_Walk instead if you are already nearby|r
-    .cooldown item,6948,>0,1
-step
-    .goto 1411/1,-4724.69,287.30
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Orgnil Soulscar|r
-    .turnin 806 >>Turn in Dark Storms
-    .target Orgnil Soulscar
-    .isOnQuest 806
-step
-    .goto 1411/1,-4724.69,287.30
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Orgnil Soulscar|r
-    .accept 828 >>Accept Margoz
-    .target Orgnil Soulscar
-    .isQuestTurnedIn 806 --any of: Dark Storms
 step << Warrior
     .goto 1411/1,-4827.27,311.62
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tarshaw|r
@@ -1618,43 +1443,22 @@ step << Warrior
     .vendor >>|cRXP_BUY_Buy|r |T133634:0|t[Small Brown Pouches] |cRXP_BUY_from|r |cRXP_BUY_him|r
     .target Jark
 step
-    .goto 1411/1,-4945.18,1101.92
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Margoz|r
-    .turnin 828 >>Turn in Margoz
-    .target Margoz
-    .isOnQuest 828
+    .goto 1454/1,-4343.19,1772.68
+    >>Kill |cRXP_ENEMY_Kor'ghan|r and loot |cRXP_LOOT_Venomtail Antidote|r
+    .complete 812,1 --Venomtail Antidote (1)
+    .mob Kor'ghan
 step
-    .goto 1411/1,-4945.18,1101.92
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Margoz|r
-    .accept 827 >>Accept Skull Rock
-    .target Margoz
-    .isQuestTurnedIn 828 --any of: Margoz
+    #completewith next
+    .zone 1411 >>Leave Orgrimmar for Durotar
+    .zoneskip 1411
 step
-    #completewith Along108
-    >>As you go: Kill |cRXP_ENEMY_Dustwind Savages|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 835,1 --Dustwind Savage slain (12)
-    .mob Dustwind Savage
-step
-    #label Along108
-    #loop
-    .goto 1411/1,-4706.18,902.06,0
-    .goto 1411/1,-4706.18,902.06,40,0
-    .goto 1411/1,-4753.24,804.41,40,0
-    >>Kill |cRXP_ENEMY_Burning Blade Thugs|r, |cRXP_ENEMY_Burning Blade Neophytes|r, |cRXP_ENEMY_Burning Blade Fanatics|r and |cRXP_ENEMY_Burning Blade Apprentices|r. Loot them for |cRXP_LOOT_Searing Collar|r
-    .complete 827,1 --Searing Collar (6)
-    .mob Burning Blade Thug
-    .mob Burning Blade Neophyte
-    .mob Burning Blade Fanatic
-    .mob Burning Blade Apprentice
-    .isOnQuest 827
-step
-    #completewith Along109
+    #completewith Along87
     >>As you go: Kill |cRXP_ENEMY_Burning Blade Fanatics|r and |cRXP_ENEMY_Burning Blade Apprentices|r. Loot them for |cRXP_LOOT_Lieutenant's Insignia|r. |cRXP_WARN_Anything left is finished later|r
     .complete 5726,1 --Lieutenant's Insignia (1)
     .mob Burning Blade Fanatic
     .mob Burning Blade Apprentice
 step
-    #label Along109
+    #label Along87
     .goto 1411/1,-4744.25,1497.43
     >>Kill |cRXP_ENEMY_Gazz'uz|r and loot |cRXP_LOOT_Eye of Burning Shadow|r. Use it to start the quest
     .collect 4903,1,832 --Eye of Burning Shadow (1)
@@ -1670,18 +1474,6 @@ step
     .complete 5726,1 --Lieutenant's Insignia (1)
     .mob Burning Blade Fanatic
     .mob Burning Blade Apprentice
-step
-    .goto 1411/1,-4945.18,1101.92
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Margoz|r
-    .turnin 827 >>Turn in Skull Rock
-    .target Margoz
-    .isOnQuest 827
-step
-    .goto 1411/1,-4945.18,1101.92
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Margoz|r
-    .accept 829 >>Accept Neeru Fireblade
-    .target Margoz
-    .isQuestTurnedIn 827 --any of: Skull Rock
 step
     #loop
     .goto 1411/1,-4698.25,1103.69,0
@@ -1761,26 +1553,8 @@ step << Warlock
 step
     .goto 1454/1,-4374.47,1800.65
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Neeru Fireblade|r
-    .turnin 832 >>Turn in Burning Shadows while you are here
-    .isQuestComplete 832
-    .target Neeru Fireblade
-step
-    .goto 1454/1,-4374.47,1800.65
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Neeru Fireblade|r
-    .turnin 829 >>Turn in Neeru Fireblade
-    .target Neeru Fireblade
-    .isOnQuest 829
-step
-    .goto 1454/1,-4374.47,1800.65
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Neeru Fireblade|r
     .turnin 832 >>Turn in Burning Shadows
     .target Neeru Fireblade
-step
-    .goto 1454/1,-4374.47,1800.65
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Neeru Fireblade|r
-    .accept 809 >>Accept Ak'Zeloth
-    .target Neeru Fireblade
-    .isQuestTurnedIn 829 --any of: Neeru Fireblade
 step
     #completewith next
     .zone 1411 >>Leave Orgrimmar for Durotar
@@ -1800,55 +1574,20 @@ step
     .mob Dreadmaw Crocolisk
     .mob Corrupted Dreadmaw Crocolisk
 step
-    .goto 1411/1,-4186.42,-600.30
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gornek|r
-    .turnin 787 >>Turn in The New Horde
-    .target Gornek
-step
     .goto 1411/1,-4241.41,742.37
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Misha Tor'kren|r
     .turnin 816 >>Turn in Lost But Not Forgotten
     .target Misha Tor'kren
-step << Shaman
-    .goto 1411/1,-4000.83,-270.01
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Telf Joolam|r
-    .accept 1526 >>Accept Call of Fire
-    .target Telf Joolam
-    .isQuestTurnedIn 1525 --any of: Call of Fire
-    .xp <10,1
-step << Shaman
-    .goto 1411/1,-4009.82,-246.39
-    >>Kill |cRXP_ENEMY_Minor Manifestation of Fire|r and loot |cRXP_LOOT_Glowing Ember|r
-    .complete 1526,1 --Glowing Ember (1)
-    .mob Minor Manifestation of Fire
-    .isOnQuest 1526
-step << Shaman
-    .goto 1411/1,-4022.51,-243.92
-    >>Click the |cRXP_PICK_Brazier of the Dormant Flame|r
-    .turnin 1526 >>Turn in Call of Fire
-    .isOnQuest 1526
-step << Shaman
-    .goto 1411/1,-4022.51,-243.92
-    >>Click the |cRXP_PICK_Brazier of the Dormant Flame|r
-    .accept 1527 >>Accept Call of Fire
-    .isQuestTurnedIn 1526 --any of: Call of Fire
-    .xp <10,1
+step
+    #completewith next
+    .zone 1454 >>Travel to Orgrimmar
+    .zoneskip 1454
 step << Tauren
     .goto 1454/1,-4313.60,1676.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Doras|r
     >>|cRXP_WARN_Don't fly anywhere!|r
     .fp Orgrimmar >> Get the Orgrimmar flight path
     .target Doras
-step << Shaman
-    .goto 1411/1,-4000.83,-270.01
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Telf Joolam|r
-    .turnin 1525 >>Turn in Call of Fire
-    .target Telf Joolam
-    .isQuestComplete 1525
-step
-    #completewith next
-    .zone 1454 >>Travel to Orgrimmar
-    .zoneskip 1454
 step
     .goto 1454/1,-4374.47,1800.65
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Neeru Fireblade|r
@@ -1998,22 +1737,13 @@ step << Warrior
     .money <1.021
     .target Zendo'jian
     .train 227,3
-step << Shaman
-    .xp 10 >>Grind to level 10 (Call of Fire needs it)
-step << Shaman
-    .goto 1454/1,-4213.03,1920.94
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Searn Firewarder|r
-    .accept 1522 >>Accept Call of Fire
-    .target Searn Firewarder
 step
     +|cRXP_WARN_That is all of Durotar for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Mulgore|r: Call of Earth << Shaman
-    >>|cRXP_FRIENDLY_The Barrens|r: Call of Fire, Call of Fire << Shaman
-    >>|cRXP_FRIENDLY_The Barrens|r: Ak'Zeloth
 step
-    +|cRXP_WARN_Suggested next zones at level 10|r: |cRXP_FRIENDLY_The Barrens|r (about 3.2 levels of quests, starting around Sergra Darkthorn; 2 quests from here hand in there), |cRXP_FRIENDLY_Mulgore|r (about 1.4 levels of quests, starting around Mull Thunderhorn), |cRXP_FRIENDLY_Tirisfal Glades|r (about 1.0 levels of quests, starting around Carendin Halgar). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 9|r: |cRXP_FRIENDLY_The Barrens|r (about 3.4 levels of quests, starting around Sergra Darkthorn; 2 quests from here hand in there), |cRXP_FRIENDLY_Mulgore|r (about 1.7 levels of quests, starting around Mull Thunderhorn), |cRXP_FRIENDLY_Tirisfal Glades|r (about 1.2 levels of quests, starting around Carendin Halgar). Completing this step loads the guide for The Barrens --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Durotar is planned from level 13.|r Load its guide for level 13 then
+    +|cRXP_WARN_The rest of Durotar is planned from level 12.|r Load its guide for level 12 then
 ]])
 
 RXPGuides.RegisterGuide([[
@@ -2021,45 +1751,159 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 1 - 14 Durotar
+#subgroup 1 - 13 Durotar
 #subweight -1
-#name 13-14 Durotar
+#name 12-13 Durotar: around Thotar
 --RouteBuilder:next
-#next Zone Routes (Horde)\12-16 The Barrens: around Gazlowe;Zone Routes (Horde)\10-12 Silverpine Forest: around Dalar Dawnweaver
+#next Zone Routes (Horde)\12-16 The Barrens: around Gazlowe;Zone Routes (Horde)\8-11 Tirisfal Glades: around Carendin Halgar;Zone Routes (Horde)\10-12 Silverpine Forest: around Dalar Dawnweaver
 
-step << Warrior
-    .goto 1411/1,-4827.80,311.27
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tarshaw Jaggedscar|r
-    .accept 1505 >>Accept Veteran Uzzek
-    .target Tarshaw Jaggedscar
-step << Warlock
-    .goto 1411/1,-4837.31,352.86
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ophek|r
-    .accept 1506 >>Accept Gan'rul's Summons
-    .target Ophek
-step << Undead Mage/Troll Mage
-    #completewith next
-    .zone 1454 >>Travel to Orgrimmar
-    .zoneskip 1454
-step << Undead Mage/Troll Mage
-    .goto 1454/1,-4229.86,1466.89
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Uthel'nay|r
-    .accept 1883 >>Accept Speak with Un'thuwa
-    .target Uthel'nay
-step << Undead Mage/Troll Mage
-    #completewith next
-    .zone 1411 >>Leave Orgrimmar for Durotar
-    .zoneskip 1411
+step
+    .goto 1411/1,-4724.69,287.30
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Orgnil Soulscar|r
+    .accept 806 >>Accept Dark Storms
+    .target Orgnil Soulscar
+    .isQuestTurnedIn 823 --any of: Report to Orgnil
 step << Orc Rogue
     .goto 1411/1,-4710.94,268.26
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kaplak|r
     .accept 1859 >>Accept Therzok
     .target Kaplak
+step
+    .goto 1411/1,-4686.09,340.52
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Grosk|r
+    .target Innkeeper Grosk
+    .home >>Set your Hearthstone to Innkeeper Grosk's inn
+step << Warrior
+    .goto 1411/1,-4827.80,311.27
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tarshaw Jaggedscar|r
+    .accept 1505 >>Accept Veteran Uzzek
+    .target Tarshaw Jaggedscar
+step << Orc Hunter/Troll Hunter
+    #completewith next
+    .zone 1454 >>Travel to Orgrimmar
+    .zoneskip 1454
+step << Orc Hunter/Troll Hunter
+    .goto 1454/1,-4633.81,2107.37
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sian'dur|r
+    .accept 6068 >>Accept The Hunter's Path
+    .target Sian'dur
+step << Orc Hunter/Troll Hunter
+    #completewith next
+    .zone 1411 >>Leave Orgrimmar for Durotar
+    .zoneskip 1411
+step << Orc Hunter/Troll Hunter
+    #completewith next
+    .hs >>Hearth to Innkeeper Grosk's inn. |cRXP_WARN_Walk instead if you are already nearby|r
+    .cooldown item,6948,>0,1
+step << Orc Hunter/Troll Hunter
+    .goto 1411/1,-4704.07,275.31
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thotar|r
+    .turnin 6068 >>Turn in The Hunter's Path
+    .accept 6062 >>Accept Taming the Beast
+    .target Thotar
+step << Orc Hunter/Troll Hunter
+    #loop
+    .goto 1411/1,-4286.36,282.01,0
+    .goto 1411/1,-4286.36,282.01,40,0
+    .goto 1411/1,-4229.78,283.77,40,0
+    .goto 1411/1,-4241.94,258.74,40,0
+    .goto 1411/1,-4188.01,248.52,40,0
+    .goto 1411/1,-4135.66,224.90,40,0
+    .goto 1411/1,-4221.32,186.13,40,0
+    .goto 1411/1,-4274.19,172.03,40,0
+    .goto 1411/1,-4226.08,127.61,40,0
+    >>Interact with |cRXP_FRIENDLY_Dire Mottled Boar|r
+    .complete 6062,1 --Dire Mottled Boar
+    .target Dire Mottled Boar
+step << Orc Hunter/Troll Hunter
+    .goto 1411/1,-4704.07,275.31
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thotar|r
+    .turnin 6062 >>Turn in Taming the Beast
+    .accept 6083 >>Accept Taming the Beast
+    .target Thotar
+step << Orc Hunter/Troll Hunter
+    #loop
+    .goto 1411/1,-5352.32,-735.31,0
+    .goto 1411/1,-5352.32,-735.31,40,0
+    .goto 1411/1,-5462.30,-686.66,40,0
+    .goto 1411/1,-5406.25,-750.46,40,0
+    .goto 1411/1,-5470.76,-761.04,40,0
+    .goto 1411/1,-5425.28,-822.73,40,0
+    .goto 1411/1,-5448.55,-857.62,40,0
+    .goto 1411/1,-5518.87,-852.69,40,0
+    .goto 1411/1,-5507.24,-885.12,40,0
+    >>Interact with |cRXP_FRIENDLY_Surf Crawler|r
+    .complete 6083,1 --Surf Crawler
+    .target Surf Crawler
+step << Orc Hunter/Troll Hunter
+    .goto 1411/1,-4704.07,275.31
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thotar|r
+    .turnin 6083 >>Turn in Taming the Beast
+    .accept 6082 >>Accept Taming the Beast
+    .target Thotar
+step << Orc Hunter/Troll Hunter
+    #loop
+    .goto 1411/1,-4518.48,446.98,0
+    .goto 1411/1,-4518.48,446.98,40,0
+    .goto 1411/1,-4569.24,516.42,40,0
+    .goto 1411/1,-4476.71,508.67,40,0
+    .goto 1411/1,-4477.76,552.73,40,0
+    .goto 1411/1,-4439.16,555.90,40,0
+    >>Interact with |cRXP_FRIENDLY_Armored Scorpid|r
+    .complete 6082,1 --Armored Scorpid
+    .target Armored Scorpid
+step << Orc Hunter/Troll Hunter
+    .goto 1411/1,-4704.07,275.31
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thotar|r
+    .turnin 6082 >>Turn in Taming the Beast
+    .accept 6081 >>Accept Training the Beast
+    .target Thotar
 step << Undead Priest
     .goto 1411/1,-4831.50,295.05
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tai'jin|r
     .accept 5660 >>Accept Touch of Weakness
     .target Tai'jin
+step
+    .goto 1411/1,-4650.66,271.79
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Takrin Pathseeker|r
+    .accept 840 >>Accept Conscript of the Horde
+    .target Takrin Pathseeker
+step << Shaman
+    .goto 1411/1,-4000.83,-270.01
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Telf Joolam|r
+    .accept 1525 >>Accept Call of Fire
+    .target Telf Joolam
+    .isQuestTurnedIn 1524 --any of: Call of Fire
+    .xp <10,1
+step
+    .goto 1411/1,-4189.59,868.57
+    >>Kill |cRXP_ENEMY_Fizzle Darkstorm|r and loot |cRXP_LOOT_Fizzle's Claw|r
+    .complete 806,1 --Fizzle's Claw (1)
+    .mob Fizzle Darkstorm
+    .isOnQuest 806
+step << Orc Hunter/Troll Hunter
+    #completewith next
+    .zone 1454 >>Travel to Orgrimmar
+    .zoneskip 1454
+step << Orc Hunter/Troll Hunter
+    .goto 1454/1,-4607.02,2100.54
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ormak Grimshot|r
+    .turnin 6081 >>Turn in Training the Beast
+    .target Ormak Grimshot
+step << Orc Hunter/Troll Hunter
+    #completewith next
+    .zone 1411 >>Leave Orgrimmar for Durotar
+    .zoneskip 1411
+step << Shaman
+    .goto 1411/1,-4747.43,914.39
+    >>Kill |cRXP_ENEMY_Burning Blade Cultist|r and loot |cRXP_LOOT_Reagent Pouch|r
+    .complete 1525,2 --Reagent Pouch (1)
+    .mob Burning Blade Cultist
+    .isOnQuest 1525
+step
+    #completewith next
+    .hs >>Hearth to Innkeeper Grosk's inn. |cRXP_WARN_Walk instead if you are already nearby|r
+    .cooldown item,6948,>0,1
 step << Rogue
     .goto 1411/1,-4710.94,268.26
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kaplak|r
@@ -2106,19 +1950,62 @@ step << Warlock
     .target Dhugru Gorelust
     .xp <16,1
 step
-    .goto 1411/1,-4650.66,271.79
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Takrin Pathseeker|r
-    .accept 840 >>Accept Conscript of the Horde
-    .target Takrin Pathseeker
+    .goto 1411/1,-4724.69,287.30
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Orgnil Soulscar|r
+    .turnin 806 >>Turn in Dark Storms
+    .target Orgnil Soulscar
+    .isOnQuest 806
+step
+    .goto 1411/1,-4724.69,287.30
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Orgnil Soulscar|r
+    .accept 828 >>Accept Margoz
+    .target Orgnil Soulscar
+    .isQuestTurnedIn 806 --any of: Dark Storms
+step << Warlock
+    .goto 1411/1,-4837.31,352.86
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ophek|r
+    .accept 1506 >>Accept Gan'rul's Summons
+    .target Ophek
+step
+    .goto 1411/1,-4945.18,1101.92
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Margoz|r
+    .turnin 828 >>Turn in Margoz
+    .target Margoz
+    .isOnQuest 828
+step
+    .goto 1411/1,-4945.18,1101.92
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Margoz|r
+    .accept 827 >>Accept Skull Rock
+    .target Margoz
+    .isQuestTurnedIn 828 --any of: Margoz
+step
+    #loop
+    .goto 1411/1,-4706.18,902.06,0
+    .goto 1411/1,-4706.18,902.06,40,0
+    .goto 1411/1,-4753.24,804.41,40,0
+    >>Kill |cRXP_ENEMY_Burning Blade Thugs|r, |cRXP_ENEMY_Burning Blade Neophytes|r, |cRXP_ENEMY_Burning Blade Fanatics|r and |cRXP_ENEMY_Burning Blade Apprentices|r. Loot them for |cRXP_LOOT_Searing Collar|r
+    .complete 827,1 --Searing Collar (6)
+    .mob Burning Blade Thug
+    .mob Burning Blade Neophyte
+    .mob Burning Blade Fanatic
+    .mob Burning Blade Apprentice
+    .isOnQuest 827
+step
+    .goto 1411/1,-4945.18,1101.92
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Margoz|r
+    .turnin 827 >>Turn in Skull Rock
+    .target Margoz
+    .isOnQuest 827
+step
+    .goto 1411/1,-4945.18,1101.92
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Margoz|r
+    .accept 829 >>Accept Neeru Fireblade
+    .target Margoz
+    .isQuestTurnedIn 827 --any of: Skull Rock
 step
     #completewith next
     .zone 1454 >>Travel to Orgrimmar
     .zoneskip 1454
-step << Warlock
-    .goto 1454/1,-4357.36,1850.32
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gan'rul Bloodeye|r
-    .turnin 1506 >>Turn in Gan'rul's Summons
-    .target Gan'rul Bloodeye
 step
     .goto 1454/1,-4279.93,1772.96
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Therzok|r
@@ -2131,6 +2018,79 @@ step << Orc Rogue/Troll Rogue
     .turnin 1963 >>Turn in The Shattered Hand
     .target Therzok
     .isQuestComplete 1963
+step << Tauren Druid
+    .goto 1454/1,-4439.41,1633.96
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Gryshka|r
+    .accept 5927 >>Accept Heeding the Call
+    .target Innkeeper Gryshka
+step << Troll Priest
+    .goto 1454/1,-4179.79,1452.39
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ur'kyo|r
+    .accept 5652 >>Accept Hex of Weakness
+    .target Ur'kyo
+step << Troll Priest
+    .goto 1454/1,-4179.79,1452.39
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ur'kyo|r
+    >>|cRXP_WARN_The database has no objectives for Hex of Weakness. Skip this step if the quest is not finished|r
+    .turnin 5652 >>Turn in Hex of Weakness
+    .target Ur'kyo
+    .isOnQuest 5652
+step << Mage
+    .goto 1454/1,-4224.67,1472.41
+    .trainer >> Train your class spells
+step << Orc/Troll
+    .goto 1454/1,-4439.41,1633.96
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Gryshka|r
+    .accept 6385 >>Accept Doras the Wind Rider Master
+    .target Innkeeper Gryshka
+    .isQuestTurnedIn 6384 --any of: Ride to Orgrimmar
+    .xp <10,1
+step << Orc/Troll
+    .goto 1454/1,-4313.46,1676.24
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Doras|r
+    .turnin 6385 >>Turn in Doras the Wind Rider Master
+    .target Doras
+    .isOnQuest 6385
+step << Mage
+    >>Run up to the Flight Master. Do NOT fly anywhere
+    .goto 1454/1,-4313.46,1676.25
+    .fp Orgrimmar >> Get the Orgrimmar flight path << Undead
+    >>Talk to |cRXP_FRIENDLY_Doras|r
+    .target Doras
+step << Orc/Troll
+    .goto 1454/1,-4313.46,1676.24
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Doras|r
+    .accept 6386 >>Accept Return to the Crossroads.
+    .target Doras
+    .isQuestTurnedIn 6385 --any of: Doras the Wind Rider Master
+    .xp <10,1
+step
+    .goto 1454/1,-4374.47,1800.65
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Neeru Fireblade|r
+    .turnin 829 >>Turn in Neeru Fireblade
+    .target Neeru Fireblade
+    .isOnQuest 829
+step
+    .goto 1454/1,-4374.47,1800.65
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Neeru Fireblade|r
+    .accept 809 >>Accept Ak'Zeloth
+    .target Neeru Fireblade
+    .isQuestTurnedIn 829 --any of: Neeru Fireblade
+step << Shaman
+    .goto 1454/1,-4213.03,1920.94
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Searn Firewarder|r
+    .accept 1522 >>Accept Call of Fire
+    .target Searn Firewarder
+step << Warlock
+    .goto 1454/1,-4357.36,1850.32
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gan'rul Bloodeye|r
+    .turnin 1506 >>Turn in Gan'rul's Summons
+    .target Gan'rul Bloodeye
+step << Undead Mage/Troll Mage
+    .goto 1454/1,-4229.86,1466.89
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Uthel'nay|r
+    .accept 1883 >>Accept Speak with Un'thuwa
+    .target Uthel'nay
 step
     #completewith next
     .zone 1411 >>Leave Orgrimmar for Durotar
@@ -2179,61 +2139,56 @@ step << Orc Warlock
     .target Gan'rul Bloodeye
 step << Orc Warlock
     .goto 1454/1,-4357.36,1850.32
+    >>Using the Glyphs of Summoning, summon and subdue a voidwalker, then return the Glyphs of Summoning to Gan'rul Bloodeye in Orgrimmar.
+    .complete 1504,1 --Summoned Voidwalker (1)
+step << Orc Warlock
+    .goto 1454/1,-4357.36,1850.32
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gan'rul Bloodeye|r
     .turnin 1504 >>Turn in The Binding
     .target Gan'rul Bloodeye
-    .isQuestComplete 1504
 step << Tauren Hunter
     .goto 1454/1,-4633.81,2107.37
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sian'dur|r
     .accept 6066 >>Accept The Hunter's Path
     .target Sian'dur
-step << Tauren Druid
-    .goto 1454/1,-4439.41,1633.96
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Gryshka|r
-    .accept 5927 >>Accept Heeding the Call
-    .target Innkeeper Gryshka
-step << Troll Priest
-    .goto 1454/1,-4179.79,1452.39
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ur'kyo|r
-    .accept 5652 >>Accept Hex of Weakness
-    .target Ur'kyo
-step << Troll Priest
-    .goto 1454/1,-4179.79,1452.39
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ur'kyo|r
-    >>|cRXP_WARN_The database has no objectives for Hex of Weakness. Skip this step if the quest is not finished|r
-    .turnin 5652 >>Turn in Hex of Weakness
-    .target Ur'kyo
-    .isOnQuest 5652
-step << Mage
-    .goto 1454/1,-4224.67,1472.41
-    .trainer >> Train your class spells
-step << Orc/Troll
-    .goto 1454/1,-4439.41,1633.96
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Gryshka|r
-    .accept 6385 >>Accept Doras the Wind Rider Master
-    .target Innkeeper Gryshka
-    .isQuestTurnedIn 6384 --any of: Ride to Orgrimmar
+step
+    #completewith next
+    .zone 1411 >>Leave Orgrimmar for Durotar
+    .zoneskip 1411
+step << Shaman
+    .goto 1411/1,-4000.83,-270.01
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Telf Joolam|r
+    .accept 1526 >>Accept Call of Fire
+    .target Telf Joolam
+    .isQuestTurnedIn 1525 --any of: Call of Fire
     .xp <10,1
-step << Orc/Troll
-    .goto 1454/1,-4313.46,1676.24
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Doras|r
-    .turnin 6385 >>Turn in Doras the Wind Rider Master
-    .target Doras
-    .isOnQuest 6385
-step << Mage
-    >>Run up to the Flight Master. Do NOT fly anywhere
-    .goto 1454/1,-4313.46,1676.25
-    .fp Orgrimmar >> Get the Orgrimmar flight path << Undead
-    >>Talk to |cRXP_FRIENDLY_Doras|r
-    .target Doras
-step << Orc/Troll
-    .goto 1454/1,-4313.46,1676.24
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Doras|r
-    .accept 6386 >>Accept Return to the Crossroads.
-    .target Doras
-    .isQuestTurnedIn 6385 --any of: Doras the Wind Rider Master
+step << Shaman
+    .goto 1411/1,-4009.82,-246.39
+    >>Kill |cRXP_ENEMY_Minor Manifestation of Fire|r and loot |cRXP_LOOT_Glowing Ember|r
+    .complete 1526,1 --Glowing Ember (1)
+    .mob Minor Manifestation of Fire
+    .isOnQuest 1526
+step << Shaman
+    .goto 1411/1,-4022.51,-243.92
+    >>Click the |cRXP_PICK_Brazier of the Dormant Flame|r
+    .turnin 1526 >>Turn in Call of Fire
+    .isOnQuest 1526
+step << Shaman
+    .goto 1411/1,-4022.51,-243.92
+    >>Click the |cRXP_PICK_Brazier of the Dormant Flame|r
+    .accept 1527 >>Accept Call of Fire
+    .isQuestTurnedIn 1526 --any of: Call of Fire
     .xp <10,1
+step << Shaman
+    .goto 1411/1,-4000.83,-270.01
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Telf Joolam|r
+    .turnin 1525 >>Turn in Call of Fire
+    .target Telf Joolam
+    .isQuestComplete 1525
+step << Orc Rogue/Troll Rogue
+    #completewith next
+    .zone 1454 >>Travel to Orgrimmar
+    .zoneskip 1454
 step << Orc Rogue/Troll Rogue
     .goto 1454/1,-4279.93,1772.96
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Therzok|r
@@ -2251,12 +2206,12 @@ step
     +|cRXP_WARN_End of the Durotar route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Mulgore|r: The Hunter's Path << Tauren Hunter
     >>|cRXP_FRIENDLY_The Barrens|r: Veteran Uzzek << Warrior
+    >>|cRXP_FRIENDLY_The Barrens|r: Call of Fire, Call of Fire << Shaman
     >>|cRXP_FRIENDLY_The Barrens|r: Return to the Crossroads. << Orc/Troll
-    >>|cRXP_FRIENDLY_The Barrens|r: Conscript of the Horde
+    >>|cRXP_FRIENDLY_The Barrens|r: Conscript of the Horde, Ak'Zeloth
     >>|cRXP_FRIENDLY_Thunder Bluff|r: Heeding the Call << Tauren Druid
     >>|cRXP_FRIENDLY_Undercity|r: Touch of Weakness << Undead Priest
-    >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Binding << Orc Warlock
     >>|cRXP_FRIENDLY_The Barrens and back here|r: The Shattered Hand << Orc Rogue/Troll Rogue
 step
-    +|cRXP_WARN_Suggested next zones at level 13|r: |cRXP_FRIENDLY_The Barrens|r (about 1.6 levels of quests, starting around Gazlowe; 1 quest from here hands in there), |cRXP_FRIENDLY_Silverpine Forest|r (about 0.6 levels of quests, starting around Dalar Dawnweaver). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 12|r: |cRXP_FRIENDLY_The Barrens|r (about 1.6 levels of quests, starting around Gazlowe; 1 quest from here hands in there), |cRXP_FRIENDLY_Tirisfal Glades|r (about 0.8 levels of quests, starting around Carendin Halgar), |cRXP_FRIENDLY_Silverpine Forest|r (about 0.6 levels of quests, starting around Dalar Dawnweaver). Completing this step loads the guide for The Barrens --RouteBuilder:next
 ]])

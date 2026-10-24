@@ -1,0 +1,360 @@
+The Barrens - Alliance - part 1 of 6, planned from level 14
+Guide "14-31 The Barrens" in group "Zone Routes (Alliance)": this part has 32 steps, 27 stops
+Written to guides/tbc/The Barrens (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+20 pickups or hand-ins are within reach of a stop but planned for later.
+1 time the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 14. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 5 steps kept, 34 new ones slotted in, 0 moved because their prerequisites changed, 15 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 31 tasks, 11,494 yd on foot; ends at level 14.8; 1 hearth; at its hardest you are 1.7 levels below the mobs
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 11,516 yd; ends at level 14.8; 1 hearth; at its hardest you are 1.7 levels below the mobs
+  Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 12,415 yd; ends at level 14.8; 1 hearth; at its hardest you are 1.7 levels below the mobs
+  Warlock (quests that depend on other zones): 5 more tasks; their whole route comes to 13,736 yd; ends at level 14.8; 1 hearth; at its hardest you are 1.7 levels below the mobs
+Hearthstone: set at Matero Zeshuwal (Matero Zeshuwal's inn); 1 hearth step in the guide.
+3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+
+Quests in the guide (18)
+------------------------
+Start to finish here: 10 (10 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (8):
+  Devourer of Souls [1716, level 20, Warlock] <- Stormwind City
+  Further Instructions [1094, level 21] <- Stonetalon Mountains
+  The Barrens Port [1039, level 30] <- Darnassus
+  The Islander [1718, level 30, Warrior] <- Thunder Bluff
+  Seeking Strahad [1798, level 30, Warlock] <- Ironforge
+  Tome of the Cabal [1804, level 30, Warlock] <- Ironforge
+  In Search of Menara Voidrender [4736, level 31, Warlock] <- Ironforge
+  In Search of Menara Voidrender [4738, level 31, Human Warlock/Gnome Warlock] <- Stormwind City
+
+Worth checking in game
+----------------------
+
+Put off to a later part (17)
+----------------------------
+These need a higher level than this part ends at:
+  Ignition [858, level 18]: its mobs are level 18; this part gets you to about 15.2
+  The Escape [863, level 18]: follows Ignition [858]
+  Raptor Horns [865, level 18]: its mobs are level 17; this part gets you to about 15.0
+  Passage to Booty Bay [1040, level 30]: needs level 25; this part gets you to about 15.2
+  Deepmoss Spider Eggs [1069, level 20]: needs level 15; this part gets you to about 15.2
+  Further Instructions [1095, level 27]: needs level 16; this part gets you to about 15.2
+  Blueleaf Tubers [1221, level 26]: is a level 26 quest; this part gets you to about 15.2
+  Ziz Fizziks [1483, level 21]: needs level 16; this part gets you to about 15.2
+  The Affray [1719, level 30]: its mobs are level 33; this part gets Warrior characters to about 15.2
+  Heartswood [1738, level 20]: needs level 20; this part gets Warlock characters to about 15.2
+  The Orb of Soran'ruk [1740, level 25]: needs level 20; this part gets Warlock characters to about 15.2
+  Tome of the Cabal [1758, level 30]: needs level 30; this part gets Warlock characters to about 15.2
+  The Windwatcher [1791, level 30]: needs level 30; this part gets Warrior characters to about 15.2
+  The Binding [1795, level 30]: needs level 30; this part gets Warlock characters to about 15.2
+  Components for the Enchanted Gold Bloodrobe [1796, level 31]: needs level 31; this part gets Warlock characters to about 15.2
+  In Nightmares [3370, level 25]: needs level 15; this part gets you to about 15.2
+  What Is Love? [65602, level 20]: needs level 20; this part gets Warlock characters to about 15.2
+
+Left out (44)
+-------------
+above this zone's range of 14-32 (25):
+  Crystal in the Mountains [635], Wharfmaster Dizzywig [1111], Parts for Kravel [1112], Goblin Sponsorship [1178], Goblin Sponsorship [1180], Fragments of the Orb of Orahil [1799], Summon Felsteed [4487], Summon Felsteed [4488], Summon Felsteed [4490], Volcanic Activity [4502], Components for the Enchanted Gold Bloodrobe [4781], Components for the Enchanted Gold Bloodrobe [4782], Components for the Enchanted Gold Bloodrobe [4783], Components for the Enchanted Gold Bloodrobe [4784], The Completed Robe [4786], Shard of a Felhound [4962], Shard of an Infernal [4963], The Completed Orb of Dar'Orahil [4964], Knowledge of the Orb of Orahil [4965], Knowledge of the Orb of Orahil [4968], The Completed Orb of Noh'Orahil [4975], Returning the Cleansed Orb [4976], Seeking Spiritual Aid [5158], Cleansed Water Returns to Felwood [5159], Mor'zul Bloodbringer [7562]
+not in the game (on Questie's quest blacklist) (7):
+  Windtotem the Elder [8680], High Mountain the Elder [8686], Moonwarden the Elder [8717], Brewfest! [11441], Desecrate this Fire! [11783], The Master of Summer Lore [11970], Candy Bucket [12396]
+dungeon quest (6):
+  Trouble at the Docks [959], Deviate Hides [1486], Deviate Eradication [1487], Smart Drinks [1491], A Host of Evil [6626], The Glowing Shard [6981]
+needs a profession (3):
+  Root Samples [866], Goblin Engineering [3633], Gnome Engineering [3634]
+repeatable (3):
+  Membership Card Renewal [3646], CLUCK! [3861], Mending Old Wounds [9267]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Barrens - Alliance - part 2 of 6, planned from level 17
+Guide "14-31 The Barrens" in group "Zone Routes (Alliance)": this part has 13 steps, 11 stops
+Written to guides/tbc/The Barrens (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 17. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 13 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 11 tasks, 3,335 yd on foot; ends at level 17.3
+  everyone (quests that depend on other zones): 2 more tasks; their whole route comes to 4,570 yd; ends at level 17.3
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (7)
+-----------------------
+Start to finish here: 3 (3 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Ziz Fizziks [1483, level 21] -> Stonetalon Mountains
+
+Hand-in step only shows once complete (1):
+  Deepmoss Spider Eggs [1069, level 20] - needs Deepmoss Egg (15) (Stonetalon Mountains)
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  In Nightmares [3370, level 25] - needs one of The Glowing Shard [6981] -> Darnassus
+  Further Instructions [1095, level 27] - needs one of Further Instructions [1094] -> Stonetalon Mountains
+
+Worth checking in game
+----------------------
+
+Put off to a later part (10)
+----------------------------
+These need a higher level than this part ends at:
+  Passage to Booty Bay [1040, level 30]: needs level 25; this part gets you to about 17.3
+  Blueleaf Tubers [1221, level 26]: is a level 26 quest; this part gets you to about 17.3
+  The Affray [1719, level 30]: its mobs are level 33; this part gets Warrior characters to about 17.3
+  Heartswood [1738, level 20]: needs level 20; this part gets Warlock characters to about 17.3
+  The Orb of Soran'ruk [1740, level 25]: needs level 20; this part gets Warlock characters to about 17.3
+  Tome of the Cabal [1758, level 30]: needs level 30; this part gets Warlock characters to about 17.3
+  The Windwatcher [1791, level 30]: needs level 30; this part gets Warrior characters to about 17.3
+  The Binding [1795, level 30]: needs level 30; this part gets Warlock characters to about 17.3
+  Components for the Enchanted Gold Bloodrobe [1796, level 31]: needs level 31; this part gets Warlock characters to about 17.3
+  What Is Love? [65602, level 20]: needs level 20; this part gets Warlock characters to about 17.3
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Barrens - Alliance - part 3 of 6, planned from level 21
+Guide "14-31 The Barrens" in group "Zone Routes (Alliance)": this part has 8 steps, 4 stops
+Written to guides/tbc/The Barrens (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Human Warlock), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 21. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  Warlock: 1 tasks, 0 yd on foot; ends at level 21.0
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 1,872 yd; ends at level 21.0
+  Warlock (quests that depend on other zones): 2 more tasks; their whole route comes to 1,874 yd; ends at level 21.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+2 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Hand-in step only shows once complete (1):
+  The Orb of Soran'ruk [1740, level 25, Warlock] - needs Soran'ruk Fragment (3) (an unknown place); Large Soran'ruk Fragment (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Deepmoss Spider Eggs [1069, level 20] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (2):
+  Heartswood [1738, level 20, Warlock] - needs one of Devourer of Souls [1716] -> Stormwind City
+  What Is Love? [65602, level 20, Warlock] - needs one of Devourer of Souls [1716] -> Stormwind City
+
+Worth checking in game
+----------------------
+
+Put off to a later part (7)
+---------------------------
+These need a higher level than this part ends at:
+  Passage to Booty Bay [1040, level 30]: needs level 25; this part gets you to about 21.0
+  Blueleaf Tubers [1221, level 26]: is a level 26 quest; this part gets you to about 21.0
+  The Affray [1719, level 30]: its mobs are level 33; this part gets Warrior characters to about 21.0
+  Tome of the Cabal [1758, level 30]: needs level 30; this part gets Warlock characters to about 21.0
+  The Windwatcher [1791, level 30]: needs level 30; this part gets Warrior characters to about 21.0
+  The Binding [1795, level 30]: needs level 30; this part gets Warlock characters to about 21.0
+  Components for the Enchanted Gold Bloodrobe [1796, level 31]: needs level 31; this part gets Warlock characters to about 21.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Barrens - Alliance - part 4 of 6, planned from level 24
+Guide "14-31 The Barrens" in group "Zone Routes (Alliance)": this part has 7 steps, 5 stops
+Written to guides/tbc/The Barrens (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Human Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 24. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 6 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 4 tasks, 6 yd on foot; ends at level 24.0
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 11 yd; ends at level 24.0
+  Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 1,883 yd; ends at level 24.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (3)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Hand-in step only shows once complete (1):
+  Blueleaf Tubers [1221, level 26] - needs Blueleaf Tuber (6) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (2):
+  Deepmoss Spider Eggs [1069, level 20] <- your earlier visit to this zone
+  The Orb of Soran'ruk [1740, level 25, Warlock] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Put off to a later part (6)
+---------------------------
+These need a higher level than this part ends at:
+  Passage to Booty Bay [1040, level 30]: needs level 25; this part gets you to about 24.0
+  The Affray [1719, level 30]: its mobs are level 33; this part gets Warrior characters to about 24.0
+  Tome of the Cabal [1758, level 30]: needs level 30; this part gets Warlock characters to about 24.0
+  The Windwatcher [1791, level 30]: needs level 30; this part gets Warrior characters to about 24.0
+  The Binding [1795, level 30]: needs level 30; this part gets Warlock characters to about 24.0
+  Components for the Enchanted Gold Bloodrobe [1796, level 31]: needs level 31; this part gets Warlock characters to about 24.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Barrens - Alliance - part 5 of 6, planned from level 31
+Guide "14-31 The Barrens" in group "Zone Routes (Alliance)": this part has 18 steps, 16 stops
+Written to guides/tbc/The Barrens (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warlock), not counting quests brought in from other zones.
+1 pickups or hand-ins are within reach of a stop but planned for later.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 31. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 9 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  Warlock: 1 tasks, 0 yd on foot; ends at level 31.0
+  everyone (quests that depend on other zones): 6 more tasks; their whole route comes to 266 yd; ends at level 31.0
+  Warrior (quests that depend on other zones): 5 more tasks; their whole route comes to 1,225 yd; ends at level 31.0; at its hardest you are 2.0 levels below the mobs
+  Warlock (quests that depend on other zones): 4 more tasks; their whole route comes to 2,498 yd; ends at level 31.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (8)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Tome of the Cabal [1758, level 30, Warlock] -> Ironforge
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Deepmoss Spider Eggs [1069, level 20] <- your earlier visit to this zone
+  The Orb of Soran'ruk [1740, level 25, Warlock] <- your earlier visit to this zone
+  Blueleaf Tubers [1221, level 26] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (4):
+  Passage to Booty Bay [1040, level 30] - needs one of The Barrens Port [1039] -> Stranglethorn Vale
+  The Affray [1719, level 30, Warrior] - needs one of The Islander [1718]
+  The Windwatcher [1791, level 30, Warrior] - needs one of The Affray [1719] -> Alterac Mountains
+  The Binding [1795, level 30, Warlock] - needs one of Tome of the Cabal [1804], Tome of the Cabal [1805]
+
+Worth checking in game
+----------------------
+  The Affray [1719, level 30, Warrior]: "Step on the grate to begin the Affray" is assumed to be line 2 in the quest log; check it
+  The Affray [1719, level 30, Warrior]: objective "Big Will slain (1)" moved from line 1 to line 2 to match RestedXP's guide
+  The Affray [1719, level 30, Warrior]: objective "Step on the grate to begin the Affray" moved from line 2 to line 1 to match RestedXP's guide
+
+Put off to a later part (1)
+---------------------------
+These need a higher level than this part ends at:
+  Components for the Enchanted Gold Bloodrobe [1796, level 31]: needs level 31; this part gets Warlock characters to about 31.0
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Barrens - Alliance - part 6 of 6, planned from level 34
+Guide "14-31 The Barrens" in group "Zone Routes (Alliance)": this part has 9 steps, 8 stops
+Written to guides/tbc/The Barrens (Alliance).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 4 of 40 held at once (Human Warlock), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 34. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 0 steps kept, 7 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  Warlock: 1 tasks, 0 yd on foot; ends at level 34.0
+  everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 154 yd; ends at level 34.0
+  Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 2,025 yd; ends at level 34.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Hand-in step only shows once complete (1):
+  Components for the Enchanted Gold Bloodrobe [1796, level 31, Warlock] - needs Robes of Arcana (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  Deepmoss Spider Eggs [1069, level 20] <- your earlier visit to this zone
+  The Orb of Soran'ruk [1740, level 25, Warlock] <- your earlier visit to this zone
+  Blueleaf Tubers [1221, level 26] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

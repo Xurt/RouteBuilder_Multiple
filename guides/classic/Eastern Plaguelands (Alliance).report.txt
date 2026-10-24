@@ -1,5 +1,5 @@
 Eastern Plaguelands - Alliance - part 1 of 2, planned from level 55
-Guide "55-60 Eastern Plaguelands" in group "Zone Routes (Alliance)": this part has 71 steps, 65 stops
+Guide "55-60 Eastern Plaguelands" in group "Zone Routes (Alliance)": this part has 70 steps, 64 stops
 Written to guides/classic/Eastern Plaguelands (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -15,14 +15,14 @@ Quest log: at most 8 of 40 held at once (Human Warrior), not counting quests bro
 Route
 -----
 Planned from level 55. Distances are straight lines, so real running is longer; levels are an estimate.
-Step order kept from the last build (locks folder): 45 steps kept, 31 new ones slotted in, 0 moved because their prerequisites changed, 13 no longer in the guide. Build with --fresh to plan from scratch.
+Step order kept from the last build (locks folder): 45 steps kept, 30 new ones slotted in, 0 moved because their prerequisites changed, 13 no longer in the guide. Build with --fresh to plan from scratch.
   everyone: 40 tasks, 23,151 yd on foot; ends at level 55.4; 1 hearth; at its hardest you are 1.9 levels below the mobs
-  everyone (quests that depend on other zones): 36 more tasks; their whole route comes to 29,599 yd; ends at level 55.4; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 3.7 levels below the mobs
+  everyone (quests that depend on other zones): 35 more tasks; their whole route comes to 29,599 yd; ends at level 55.4; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 3.7 levels below the mobs
 Hearthstone: set at Jessica Chambers (Jessica Chambers's inn); 1 hearth step in the guide.
 2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
 1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
 
-Quests in the guide (39)
+Quests in the guide (38)
 ------------------------
 Start to finish here: 11 (11 for everyone)
 
@@ -33,7 +33,7 @@ Hand-in step only shows once complete (2):
   Pamela's Doll [5149, level 55] - needs Pamela's Doll (1) (an unknown place)
   That's Asking A Lot [6026, level 58] - needs Thorium Bar (2) (an unknown place); Golden Rod (1) (an unknown place); Hi-Explosive Bomb (8) (an unknown place); Unstable Trigger (8) (an unknown place)
 
-Brought in from another zone and handed in here - steps show only if you have the quest (11):
+Brought in from another zone and handed in here - steps show only if you have the quest (10):
   Duke Nicholas Zverenhoff [6030, level 52] <- Winterspring
   Little Pamela [5142, level 55] <- Western Plaguelands
   Sister Pamela [5601, level 55] <- Winterspring
@@ -43,7 +43,6 @@ Brought in from another zone and handed in here - steps show only if you have th
   Leonid Barthalomew [5522, level 60] <- Burning Steppes
   The Battle of Darrowshire [5721, level 60] <- Western Plaguelands
   In Dreams [5944, level 60] <- Western Plaguelands
-  Secrets of the Colossus - Zora [8859, level 60] <- Silithus
   In Search of Anthion [8929, level 60] <- Ironforge
 
 Need a quest this guide does not hand in - steps show only once that is done (14):
@@ -83,7 +82,7 @@ These need a higher level than this part ends at:
   Anthion's Parting Words [8959, level 60]: needs level 58; this part gets Warrior characters to about 55.4
   Establishing New Outposts [9664, level 60]: is a level 60 quest; this part gets you to about 55.4
 
-Left out (183)
+Left out (184)
 --------------
 repeatable (123):
   Corruptor's Scourgestones [5508], Invader's Scourgestones [5509], Minion's Scourgestones [5510], Healthy Dragon Scale [5582], Dreadnaught Breastplate [9034], Dreadnaught Legplates [9036], Dreadnaught Helmet [9037], Dreadnaught Pauldrons [9038], Dreadnaught Sabatons [9039], Dreadnaught Gauntlets [9040], Dreadnaught Waistguard [9041], Dreadnaught Bracers [9042], Redemption Tunic [9043], Redemption Legguards [9044], Redemption Headpiece [9045], Redemption Spaulders [9046], Redemption Boots [9047], Redemption Handguards [9048], Redemption Girdle [9049], Redemption Wristguards [9050], Cryptstalker Tunic [9054], Cryptstalker Legguards [9055], Cryptstalker Headpiece [9056], Cryptstalker Spaulders [9057], Cryptstalker Boots [9058], Cryptstalker Handguards [9059], Cryptstalker Girdle [9060], Cryptstalker Wristguards [9061], Earthshatter Tunic [9068], Earthshatter Legguards [9069], Earthshatter Headpiece [9070], Earthshatter Spaulders [9071], Earthshatter Boots [9072], Earthshatter Handguards [9073], Earthshatter Girdle [9074], Earthshatter Wristguards [9075], Bonescythe Breastplate [9077], Bonescythe Legplates [9078], Bonescythe Helmet [9079], Bonescythe Pauldrons [9080], ... 83 more
@@ -91,12 +90,12 @@ dungeon quest (34):
   Dawn's Gambit [4771], The Flesh Does Not Lie [5212], The Active Agent [5213], The Great Ezra Grimm [5214], Houses of the Holy [5243], The Archivist [5251], The Truth Comes Crashing Down [5262], Above and Beyond [5263], The Restless Souls [5282], Menethil's Gift [5463], Plagued Hatchlings [5529], Betina Bigglezink [5531], Of Love and Family [5848], Dead Man's Plea [8945], Anthion's Old Friend [8948], The Challenge [9015], Echoes of War [9033], The Fall of Kel'Thuzad [9120], The Fate of Ramaladni [9229], Ramaladni's Icy Grasp [9230], The Only Song I Know... [9232], Icebane Gauntlets [9234], Icebane Bracers [9235], Icebane Breastplate [9236], Glacial Cloak [9237], Glacial Wrists [9238], Glacial Gloves [9239], Glacial Vest [9240], Polar Bracers [9241], Polar Gloves [9242], Polar Tunic [9243], Icy Scale Bracers [9244], Icy Scale Gauntlets [9245], Icy Scale Breastplate [9246]
 needs reputation (12):
   Mantles of the Dawn [5513], Chromatic Mantle of the Dawn [5517], The Dread Citadel - Naxxramas [9121], The Dread Citadel - Naxxramas [9122], The Dread Citadel - Naxxramas [9123], Cryptstalker Armor Doesn't Make Itself... [9124], Bonescythe Digs [9126], The Elemental Equation [9128], Binding the Dreadnaught [9131], Savage Flora [9136], They Call Me "The Rooster" [9141], Omarion's Handbook [9233]
-special category (sort -368) (10):
-  Shadows of Doom [9085], Under the Shadow [9153], Light's Hope Chapel [9154], The Keeper's Call [9247], Letter from the Front [9295], Note from the Front [9299], Page from the Front [9300], Envelope from the Front [9301], Missive from the Front [9302], Document from the Front [9304]
+special category (sort -368) (9):
+  Shadows of Doom [9085], Under the Shadow [9153], Light's Hope Chapel [9154], Letter from the Front [9295], Note from the Front [9299], Page from the Front [9300], Envelope from the Front [9301], Missive from the Front [9302], Document from the Front [9304]
+not in the game (on Questie's quest blacklist) (4):
+  Snowcrown the Elder [8650], Windrun the Elder [8688], Secrets of the Colossus - Zora [8859], The Keeper's Call [9247]
 handed in here, but the database does not say where it starts (2):
   Menethil's Gift [5464], Proof of Life [8946]
-special category (sort -366) (2):
-  Snowcrown the Elder [8650], Windrun the Elder [8688]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
 

@@ -1,0 +1,136 @@
+{
+  "zone": "The Barrens",
+  "faction": "Alliance",
+  "who": "Alliance",
+  "group": "Zone Routes (Alliance)",
+  "name": "12-18 The Barrens",
+  "file": "The Barrens (Alliance).lua",
+  "continent": -17,
+  "suggest": true,
+  "parts": [
+    {
+      "part": 1,
+      "start": 12,
+      "end": 12.48,
+      "next": 15,
+      "guide": "12-13 The Barrens",
+      "sections": [
+        {
+          "label": "RBSection1_1",
+          "name": "start",
+          "guide": "12-13 The Barrens",
+          "level": 12,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 2,
+      "start": 15,
+      "end": 15.22,
+      "next": 18,
+      "guide": "15-16 The Barrens",
+      "sections": [
+        {
+          "label": "RBSection2_1",
+          "name": "part 2",
+          "guide": "15-16 The Barrens",
+          "level": 15,
+          "index": 0
+        }
+      ]
+    },
+    {
+      "part": 3,
+      "start": 18,
+      "end": 18.1,
+      "guide": "18-19 The Barrens",
+      "sections": [
+        {
+          "label": "RBSection3_1",
+          "name": "part 3",
+          "guide": "18-19 The Barrens",
+          "level": 18,
+          "index": 0
+        }
+      ]
+    }
+  ],
+  "quests": [
+    {
+      "id": 13973,
+      "level": 12,
+      "req": 10,
+      "xp": 910,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 13992,
+      "level": 13,
+      "req": 11,
+      "xp": 910,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 13995,
+      "level": 14,
+      "req": 12,
+      "xp": 980,
+      "part": 1,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 25264,
+      "level": 13,
+      "req": 4,
+      "xp": 90,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Durotar"
+    },
+    {
+      "id": 26642,
+      "level": 12,
+      "req": 9,
+      "xp": 455,
+      "part": 1,
+      "section": 0,
+      "tag": "",
+      "from": "Durotar"
+    },
+    {
+      "id": 895,
+      "level": 16,
+      "req": 14,
+      "xp": 1150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 14068,
+      "level": 16,
+      "req": 14,
+      "xp": 1150,
+      "part": 2,
+      "section": 0,
+      "tag": ""
+    },
+    {
+      "id": 865,
+      "level": 18,
+      "req": 14,
+      "xp": 1350,
+      "part": 3,
+      "section": 0,
+      "tag": ""
+    }
+  ],
+  "carriedTo": {}
+}

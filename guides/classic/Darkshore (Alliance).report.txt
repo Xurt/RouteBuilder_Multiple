@@ -92,7 +92,7 @@ cannot be taken together with Escape Through Force [994], which is in the guide 
   Escape Through Stealth [995]
 dungeon quest (1):
   Researching the Corruption [1275]
-special category (sort -366) (1):
+not in the game (on Questie's quest blacklist) (1):
   Starweave the Elder [8721]
 
 To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.

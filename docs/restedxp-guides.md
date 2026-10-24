@@ -64,9 +64,27 @@ It passes over, and RxpToLock counts:
 - anything that is not leveling: dungeon quests, professions, reputation, attunements, runes and books,
   dailies, farming, boosted-character and preparation guides.
 
-## Mists of Pandaria, for later
+## The Burning Crusade
+
+`GuideList-tbc.xml` loads the TBC files (`tbc/`): the 1-60 legs rewritten for Blood Elves and Draenei, then
+Outland 58-70 (`59-61 Hellfire Peninsula` to `69-70 Shadowmoon Valley`, with Aldor and Scryer versions). The
+hardcore copies and the 58 boost guides are passed over, as for Classic Era.
+
+## Mists of Pandaria
 
 For Mists, levels 1-25 come from the Cataclysm-era starting zone guides (`cata/`), 25-60 from `RXP MoP 1-80`,
 58-80 from `RXP MoP 60-80` (Outland and Northrend), then `80-85` and `85-90` (Pandaria). The Pandaren start is
 `mop/N-Pandaren_The Wandering Isle.lua`. These guides give coordinates as map numbers (`.goto 1411,43.29,68.85`),
 which RouteBuilder reads as well.
+
+Most of the 60-90 guides are shells: a header (`#group RXP MoP 85-90 (A)`, `<< Alliance`) and a single step
+with `#include RXP-Pandaria\85-86 The Jade Forest`. The guide it names sits in an internal group
+(`RXP-Pandaria`, or `RXPGuides` for the Cataclysm zones) and holds both factions' steps, each tagged
+`<< Alliance` or `<< Horde`. `Name@first-last` takes only the steps from the one with `#label first` to the one
+with `#label last` (how `Dread Wastes` is cut into three parts). RouteBuilder fills the includes in before
+reading a guide, and passes over the internal guides themselves, so every step is read once, in the order of
+the faction's shell.
+
+The Wandering Isle guide is marked `<< Pandaren !DK` rather than with a faction. A guide marked only with races
+is normally one character's route and left out of a faction build; one whose races are everyone the zone's
+quests are for (here, Pandaren) is followed.

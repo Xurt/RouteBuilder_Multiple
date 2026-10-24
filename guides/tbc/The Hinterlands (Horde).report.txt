@@ -1,0 +1,203 @@
+The Hinterlands - Horde - part 1 of 3, planned from level 43
+Guide "43-53 The Hinterlands" in group "Zone Routes (Horde)": this part has 9 steps, 7 stops
+Written to guides/tbc/The Hinterlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 2 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 43. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 3 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed, 77 no longer in the guide. Build with --fresh to plan from scratch.
+  everyone: 2 tasks, 1,152 yd on foot; ends at level 43.0
+  everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 3,552 yd; ends at level 43.0
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+
+Quests in the guide (6)
+-----------------------
+Start to finish here: 0 (0 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Venom Bottles [2933, level 43] -> Hillsbrad Foothills
+
+Hand-in step only shows once complete (1):
+  Jammal'an the Prophet [1446, level 53] - needs Head of Jammal'an (1) (an unknown place)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (3):
+  The Atal'ai Exile [1429, level 44] <- Swamp of Sorrows
+  Ripple Recovery [650, level 48] <- Orgrimmar
+  Cortello's Riddle [626, level 51] <- Dustwallow Marsh
+
+Need a quest this guide does not hand in - steps show only once that is done (1):
+  Return to Fel'Zerul [1444, level 44] - needs one of The Atal'ai Exile [1429] -> Swamp of Sorrows
+
+Worth checking in game
+----------------------
+
+Put off to a later part (24)
+----------------------------
+These need a higher level than this part ends at:
+  A Sticky Situation [77, level 48]: is a level 48 quest; this part gets you to about 44.9
+  Ripple Delivery [81, level 48]: follows A Sticky Situation [77]
+  Find OOX-09/HL! [485, level 48]: follows Snapjaws, Mon! [7815]
+  Rescue OOX-09/HL! [836, level 48]: is a level 48 quest; this part gets you to about 44.9
+  Rin'ji is Trapped! [2742, level 47]: is a level 47 quest; this part gets you to about 43.7
+  Rin'ji's Secret [2782, level 47]: needs level 45; this part gets you to about 44.9
+  Snapjaws, Mon! [7815, level 50]: its mobs are level 49; this part gets you to about 44.9
+  Gammerita, Mon! [7816, level 48]: its mobs are level 48; this part gets you to about 44.9
+  Stalking the Stalkers [7828, level 48]: its mobs are level 47; this part gets you to about 44.9
+  Hunt the Savages [7829, level 48]: needs level 44; this part gets you to about 43.7
+  Avenging the Fallen [7830, level 48]: its mobs are level 47; this part gets you to about 44.9
+  Vilebranch Hooligans [7839, level 48]: is a level 48 quest; this part gets you to about 44.9
+  Lard Lost His Lunch [7840, level 49]: its mobs are level 49; this part gets you to about 44.9
+  Message to the Wildhammer [7841, level 48]: needs level 44; this part gets you to about 43.7
+  Another Message to the Wildhammer [7842, level 48]: needs level 44; this part gets you to about 43.7
+  The Final Message to the Wildhammer [7843, level 50]: is a level 50 quest; this part gets you to about 44.9
+  Cannibalistic Cousins [7844, level 48]: needs level 44; this part gets you to about 43.7
+  Kidnapped Elder Torntusk! [7845, level 51]: needs level 46; this part gets you to about 44.9
+  Recover the Key! [7846, level 51]: its mobs are level 51; this part gets you to about 44.9
+  Return to Primal Torntusk [7847, level 51]: needs level 46; this part gets you to about 44.9
+  Separation Anxiety [7849, level 50]: is a level 50 quest; this part gets you to about 44.9
+  Dark Vessels [7850, level 50]: is a level 50 quest; this part gets you to about 44.9
+  Wanted: Vile Priestess Hexx and Her Minions [7861, level 51]: its mobs are level 51; this part gets you to about 44.9
+  Job Opening: Guard Captain of Revantusk Village [7862, level 51]: its mobs are level 49; this part gets you to about 44.9
+
+Left out (7)
+------------
+not in the game (on Questie's quest blacklist) (6):
+  Highpeak the Elder [8643], Desecrate this Fire! [11755], Honor the Flame [11860], Playing with Fire [11915], Incense for the Festival Scorchlings [11966], Candy Bucket [12387]
+special category (sort -1) (1):
+  Shrouded in Nightmare [8446]
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Hinterlands - Horde - part 2 of 3, planned from level 46
+Guide "43-53 The Hinterlands" in group "Zone Routes (Horde)": this part has 59 steps, 45 stops
+Written to guides/tbc/The Hinterlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: 26 PROBLEMS
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Orc Warrior)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Orc Hunter)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Orc Rogue)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Orc Shaman)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Orc Warlock)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Undead Warrior)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Undead Rogue)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Undead Priest)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Undead Mage)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Undead Warlock)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Tauren Warrior)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Tauren Hunter)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Tauren Shaman)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Tauren Druid)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Troll Warrior)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Troll Hunter)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Troll Rogue)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Troll Priest)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Troll Shaman)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (Troll Mage)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (BloodElf Paladin)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (BloodElf Hunter)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (BloodElf Rogue)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (BloodElf Priest)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (BloodElf Mage)
+  ! an objective of Another Message to the Wildhammer comes before the quest is picked up (BloodElf Warlock)
+Quest log: at most 15 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
+
+Route
+-----
+Planned from level 46. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 63 steps kept, 3 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 59 tasks, 20,486 yd on foot; ends at level 47.4; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 2.9 levels below the mobs
+  everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 23,111 yd; ends at level 47.4; 2 hearths; 1 ORDER PROBLEMS; at its hardest you are 2.9 levels below the mobs
+Hearthstone: set at Smith Slagtree (Smith Slagtree's inn); 1 hearth step in the guide.
+2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+7 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (22)
+------------------------
+Start to finish here: 17 (17 for everyone)
+
+Picked up here, handed in elsewhere - these stay in the log (1):
+  Rin'ji's Secret [2782, level 47] -> Undercity
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Jammal'an the Prophet [1446, level 53] <- your earlier visit to this zone
+
+Need a quest this guide does not hand in - steps show only once that is done (3):
+  A Sticky Situation [77, level 48] - needs one of Ripple Recovery [650]
+  Ripple Delivery [81, level 48] - needs one of A Sticky Situation [77] -> Orgrimmar
+  Rescue OOX-09/HL! [836, level 48] - needs one of Find OOX-09/HL! [485] -> Stranglethorn Vale
+
+Worth checking in game
+----------------------
+
+Put off to a later part (3)
+---------------------------
+These need a higher level than this part ends at:
+  Recover the Key! [7846, level 51]: its mobs are level 51; this part gets you to about 47.7
+  Return to Primal Torntusk [7847, level 51]: follows Recover the Key! [7846]
+  Wanted: Vile Priestess Hexx and Her Minions [7861, level 51]: its mobs are level 51; this part gets you to about 47.7
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
+
+
+====================================================================================================
+
+The Hinterlands - Horde - part 3 of 3, planned from level 50
+Guide "43-53 The Hinterlands" in group "Zone Routes (Horde)": this part has 13 steps, 10 stops
+Written to guides/tbc/The Hinterlands (Horde).lua
+Data: QuestieDB local copy, 2026-10-23
+Zone file: none (everything below comes straight from the database)
+RestedXP cross-check: 1110 objective notes read from 57 guide files
+
+Checks
+------
+Played through as 26 race/class combinations: no problems found.
+Quest log: at most 3 of 40 held at once (Orc Warrior), not counting quests brought in from other zones.
+Every stop picks up and hands in everything on offer within reach.
+The route never runs past a finished quest's hand-in without stopping (judged in straight lines, so roads are not seen).
+
+Route
+-----
+Planned from level 50. Distances are straight lines, so real running is longer; levels are an estimate.
+Step order kept from the last build (locks folder): 9 steps kept, 1 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
+  everyone: 9 tasks, 1,964 yd on foot; ends at level 50.2
+  everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 3,682 yd; ends at level 50.2
+Hearthstone: not used (no inn found in this zone, or --no-hearth).
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+
+Quests in the guide (4)
+-----------------------
+Start to finish here: 3 (3 for everyone)
+
+Brought in from another zone and handed in here - steps show only if you have the quest (1):
+  Jammal'an the Prophet [1446, level 53] <- your earlier visit to this zone
+
+Worth checking in game
+----------------------
+
+Left out (0)
+------------
+
+To force one in, add its number to "include" in the zone file; to drop one, add it to "exclude" with a reason.
