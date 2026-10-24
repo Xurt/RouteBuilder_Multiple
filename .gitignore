@@ -1,6 +1,6 @@
 bin/
 obj/
-QuestieDB/
+QuestieDB
 QuestieDB.unzip/
 QuestieDB.clone/
 settings.json
