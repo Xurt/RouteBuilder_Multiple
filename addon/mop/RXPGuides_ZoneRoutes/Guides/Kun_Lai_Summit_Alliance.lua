@@ -35,28 +35,6 @@ step << Monk
     .accept 31838 >>Accept Continue Your Training: Master Tsang
     .target Master Hight
 step << Monk
-    #completewith Along2
-    >>As you go: Kill |cRXP_ENEMY_Master Cheng|r. Kill |cRXP_ENEMY_Master Yoon|r. Kill |cRXP_ENEMY_Master Hsu|r. Kill |cRXP_ENEMY_Master Tsang|r. Kill |cRXP_ENEMY_Master Woo|r. Kill |cRXP_ENEMY_Master Kistane|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 31837,1 --Master Cheng slain (1)
-    .complete 31836,1 --Master Yoon slain (1)
-    .complete 31839,1 --Master Hsu slain (1)
-    .complete 31838,1 --Master Tsang slain (1)
-    .complete 31833,1 --Master Woo slain (1)
-    .complete 31835,1 --Master Kistane slain (1)
-    .mob Master Cheng
-    .mob Master Yoon
-    .mob Master Hsu
-    .mob Master Tsang
-    .mob Master Woo
-    .mob Master Kistane
-step << Monk
-    #label Along2
-    .goto 379,48.12,40.35
-    >>Kill |cRXP_ENEMY_Master Cheng|r
-    .complete 31834,1 --Master Cheng slain (1)
-    .mob Master Cheng
-    .isOnQuest 31834
-step << Monk
     .goto 379,48.12,40.35
     >>Kill |cRXP_ENEMY_Master Cheng|r
     >>Kill |cRXP_ENEMY_Master Yoon|r
@@ -64,6 +42,7 @@ step << Monk
     >>Kill |cRXP_ENEMY_Master Tsang|r
     >>Kill |cRXP_ENEMY_Master Woo|r
     >>Kill |cRXP_ENEMY_Master Kistane|r
+    .complete -31834,1 --Master Cheng slain (1)
     .complete 31837,1 --Master Cheng slain (1)
     .complete 31836,1 --Master Yoon slain (1)
     .complete 31839,1 --Master Hsu slain (1)
@@ -196,42 +175,31 @@ step
     .accept 30457 >>Accept Call Out Their Leader
     .target Mayor Bramblestaff
 step
-    #completewith Along14
+    #completewith Along12
     >>As you go: Kill |cRXP_ENEMY_Bataari Yaungols|r and |cRXP_ENEMY_Bataari Flamecallers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30457,2 --Bataari Yaungol (8)
     .mob Bataari Yaungol
     .mob Bataari Flamecaller
 step
+    #label Along12
     .goto 379,70.75,90.36
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Commander Hsieh|r
     .accept 30459 >>Accept All of the Arrows
     .target Commander Hsieh
 step
-    #completewith Along14
-    >>As you go: Pick up |cRXP_PICK_Arrow for Commander Hsieh|r from the ground. Kill |cRXP_ENEMY_Bataari Fire-Warrior|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 30459,1 --Arrow for Commander Hsieh (1)
-    .complete 30457,1 --Bataari Fire-Warrior slain (1)
-    .mob Bataari Fire-Warrior
-step
-    #label Along14
     #loop
-    .goto 379,69.97,89.76,0
-    .goto 379,69.97,89.76,40,0
-    .goto 379,67.74,88.96,40,0
-    >>Interact with |cRXP_FRIENDLY_Injured Binan Warriors|r
-    .complete 30460,1 --Injured Binan Warrior (8)
-    .target Injured Binan Warrior
-step
-    #loop
-    .goto 379,67.94,89.11,0
-    .goto 379,67.94,89.11,40,0
+    .goto 379,70.16,90.02,0
     .goto 379,70.16,90.02,40,0
+    .goto 379,67.77,89.06,40,0
+    >>Interact with |cRXP_FRIENDLY_Injured Binan Warriors|r
     >>Pick up |cRXP_PICK_Arrow for Commander Hsieh|r from the ground
     >>Kill |cRXP_ENEMY_Bataari Fire-Warrior|r
     >>Kill |cRXP_ENEMY_Bataari Yaungols|r and |cRXP_ENEMY_Bataari Flamecallers|r
+    .complete 30460,1 --Injured Binan Warrior (8)
     .complete 30459,1 --Arrow for Commander Hsieh (1)
     .complete 30457,1 --Bataari Fire-Warrior slain (1)
     .complete 30457,2 --Bataari Yaungol (8)
+    .target Injured Binan Warrior
     .mob Bataari Fire-Warrior
     .mob Bataari Yaungol
     .mob Bataari Flamecaller
@@ -312,7 +280,7 @@ step
     .accept 30583 >>Accept Blue Dwarf Needs Food Badly
     .target Sully "The Pickle" McLeary
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along32
+    #completewith Along30
     >>As you go: Kill |cRXP_ENEMY_Wild Plains Yaks|r and |cRXP_ENEMY_Captured Yaks|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30575,1 --Wild Plains Yak (3)
     .mob Wild Plains Yak
@@ -359,7 +327,7 @@ step
     .mob Terracotta Warrior
     .mob Mogujia Soul-Caller << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    #label Along32
+    #label Along30
     .goto 379,59.60,78.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bao Jian|r
     .turnin 30595 >>Turn in Profiting off of the Past
@@ -389,7 +357,7 @@ step
     .isQuestComplete 30581
     .target Uyen Chow
 step
-    #completewith Along36
+    #completewith Along34
     >>As you go: Kill |cRXP_ENEMY_Highlands Mushans|r, |cRXP_ENEMY_Highlands Calfs|r, |cRXP_ENEMY_Summit Bonestrippers|r and |cRXP_ENEMY_Northwind Hawks|r. Loot them for |cRXP_LOOT_Kun-Lai Meaty Bits|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30583,1 --Kun-Lai Meaty Bits (160)
     .mob Highlands Mushan
@@ -397,7 +365,7 @@ step
     .mob Summit Bonestripper
     .mob Northwind Hawk
 step
-    #label Along36
+    #label Along34
     .goto 379,61.35,87.88
     >>Free 12 Farmstead Slaves by killing Ordo Overseers.
     .complete 30571,1 --Farmstead Slave (12)
@@ -491,30 +459,30 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .turnin 30593 >>Turn in Deanimate the Reanimated
     .target Mishka
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along48
+    #completewith Along46
     >>As you go: Kill |cRXP_ENEMY_Musaan the Blazecaster|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30652,1 --Musaan the Blazecaster slain (1)
     .mob Musaan the Blazecaster
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along47
+    #completewith Along45
     >>As you go: Kill |cRXP_ENEMY_Harala the Firespeaker|r. Kill |cRXP_ENEMY_Pao-kun the Pyromancer|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30652,3 --Harala the Firespeaker slain (1)
     .complete 30652,4 --Pao-kun the Pyromancer slain (1)
     .mob Harala the Firespeaker
     .mob Pao-kun the Pyromancer
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along47
+    #label Along45
     .goto 379,49.61,78.99
     >>Pick up |cRXP_PICK_Explosives Barrel|r from the ground
     .collect 80528,1,30651,1 --Explosives Barrel (1)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along48
+    #label Along46
     .goto 379,50.95,79.41
     >>Interact with |cRXP_FRIENDLY_Eastern Oil Rig|r
     .complete 30651,1 --Eastern Oil Rig
     .target Eastern Oil Rig
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along51
+    #completewith Along49
     >>As you go: Kill |cRXP_ENEMY_Akonu the Embercaller|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30652,2 --Akonu the Embercaller slain (1)
     .mob Akonu the Embercaller
@@ -535,29 +503,24 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 30651,2 --Southern Oil Rig
     .target Southern Oil Rig
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along51
+    #label Along49
     .goto 379,47.87,81.52
     >>Interact with |cRXP_FRIENDLY_Western Oil Rig|r
     .complete 30651,3 --Western Oil Rig
     .target Western Oil Rig
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 379,47.71,80.01
-    >>Kill |cRXP_ENEMY_Akonu the Embercaller|r
-    .complete 30652,2 --Akonu the Embercaller slain (1)
-    .mob Akonu the Embercaller
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 379,48.35,76.72
-    >>Kill |cRXP_ENEMY_Ordo Warbringer|r
-    .complete 30662,1 --Ordo Warbringer slain (1)
-    .mob Ordo Warbringer
-    .isOnQuest 30662
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 379,49.60,78.80,0
+    .goto 379,47.71,80.01,0
+    .goto 379,47.71,80.01,40,0
     .goto 379,49.60,78.80,40,0
-    .goto 379,48.00,80.40,40,0
+    >>Kill |cRXP_ENEMY_Akonu the Embercaller|r
+    >>Kill |cRXP_ENEMY_Ordo Warbringer|r
     >>Interact with |cRXP_FRIENDLY_Pandaren Prisoners|r
+    .complete 30652,2 --Akonu the Embercaller slain (1)
+    .complete -30662,1 --Ordo Warbringer slain (1)
     .complete 30650,1 --Pandaren Prisoner (8)
+    .mob Akonu the Embercaller
+    .mob Ordo Warbringer
     .target Pandaren Prisoner
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 379,44.48,89.93
@@ -572,7 +535,7 @@ step
     .accept 30670 >>Accept Turnabout
     .target Shado-Master Chong
 step
-    #completewith Along61
+    #completewith Along57
     >>As you go: Kill |cRXP_ENEMY_Blind Rages|r. Loot them for |cRXP_LOOT_Blind Rage Essence|r. Kill |cRXP_ENEMY_Sha-Infested Yaungols|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30670,1 --Blind Rage Essence (5)
     .complete 30665,1 --Sha-Infested Yaungol (15)
@@ -599,7 +562,7 @@ step
     .complete 30682,3 --Old Lady Fung
     .target Old Lady Fung
 step
-    #label Along61
+    #label Along57
     .goto 379,43.88,86.17
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jin Warmkeg|r
     .complete 30682,1 --Jin Warmkeg
@@ -624,12 +587,12 @@ step
     .accept 30690 >>Accept Unmasking the Yaungol
     .target Shado-Master Chong
 step
-    #completewith Along64
+    #completewith Along60
     >>As you go: Kill |cRXP_ENEMY_Malevolent Fury|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30690,2 --Malevolent Fury slain (1)
     .mob Malevolent Fury
 step
-    #label Along64
+    #label Along60
     .goto 379,45.78,86.45
     >>Interact with |cRXP_FRIENDLY_Kobai|r
     .complete 30690,1 --Kobai
@@ -718,7 +681,7 @@ step
     .accept 30967 >>Accept Free the Dissenters
     .target Waterspeaker Gorai
 step
-    #completewith Along80
+    #completewith Along75
     >>As you go: Loot the |cRXP_PICK_Untainted Supplies|r for |cRXP_LOOT_Stolen Supplies|r. Kill |cRXP_ENEMY_Enraged Spearmans|r, |cRXP_ENEMY_Orachis|r, |cRXP_ENEMY_Enraged Tideweavers|r and |cRXP_ENEMY_Enraged Enforcers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30469,1 --Stolen Supplies (8)
     .complete 30468,1 --Enraged Spearman (8)
@@ -732,31 +695,25 @@ step
     .complete 30496,1 --Stolen Inkgill Ritual Staff (1)
     .mob Orachi
 step
+    #label Along75
     .goto 379,74.68,76.94
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wu-Peng|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 30467 >>Turn in My Son...
     .accept 30834 >>Accept Father and Child Reunion
     .unitscan Wu-Peng
 step
-    #label Along80
     #loop
-    .goto 379,74.39,78.89,0
-    .goto 379,74.39,78.89,40,0
-    .goto 379,73.06,77.30,40,0
+    .goto 379,74.18,78.62,0
+    .goto 379,74.18,78.62,40,0
     .goto 379,74.39,83.51,40,0
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Inkgill Dissenter|r
-    .complete 30967,1 --Inkgill Dissenter (6)
-    .target Inkgill Dissenter
-step
-    #loop
-    .goto 379,73.86,77.74,0
-    .goto 379,73.86,77.74,40,0
-    .goto 379,74.45,84.08,40,0
     .goto 379,72.46,85.37,40,0
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Inkgill Dissenter|r
     >>Loot the |cRXP_PICK_Untainted Supplies|r for |cRXP_LOOT_Stolen Supplies|r
     >>Kill |cRXP_ENEMY_Enraged Spearmans|r, |cRXP_ENEMY_Orachis|r, |cRXP_ENEMY_Enraged Tideweavers|r and |cRXP_ENEMY_Enraged Enforcers|r
+    .complete 30967,1 --Inkgill Dissenter (6)
     .complete 30469,1 --Stolen Supplies (8)
     .complete 30468,1 --Enraged Spearman (8)
+    .target Inkgill Dissenter
     .mob Enraged Spearman
     .mob Orachi
     .mob Enraged Tideweaver
@@ -800,7 +757,7 @@ step
     .accept 30480 >>Accept The Ritual
     .target Waterspeaker Gorai
 step
-    #completewith Along87
+    #completewith Along82
     >>As you go: Kill |cRXP_ENEMY_Dead Inkgill Spearmans|r and |cRXP_ENEMY_Dead Inkgill Priests|r. Kill |cRXP_ENEMY_Explosive Hatred|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30480,2 --Dead Inkgill Spearman (8)
     .complete 30480,3 --Explosive Hatred (1)
@@ -808,7 +765,7 @@ step
     .mob Dead Inkgill Priest
     .mob Explosive Hatred
 step
-    #label Along87
+    #label Along82
     .goto 379,75.20,88.26
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Waterspeaker Gorai|r
     .complete 30480,1 --Waterspeaker Gorai
@@ -1043,7 +1000,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 31394 >>Accept A Celestial Experience
     .target Anduin Wrynn
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along115
+    #completewith Along110
     >>As you go: Kill |cRXP_ENEMY_Spirit of Violence|r. Kill |cRXP_ENEMY_Spirit of Anger|r. Kill |cRXP_ENEMY_Spirit of Hatred|r. |cRXP_WARN_Anything left is finished later|r
     .complete 31394,2 --Spirit of Violence slain (1)
     .complete 31394,3 --Spirit of Anger slain (1)
@@ -1052,7 +1009,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Spirit of Anger
     .mob Spirit of Hatred
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along115
+    #label Along110
     .goto 379,68.80,42.80
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Xuen|r
     .complete 31394,1 --Xuen
@@ -1377,7 +1334,7 @@ step
 step
     .xp 88.3,1,end1
 step
-    #completewith Along163
+    #completewith Along158
     >>As you go: Kill |cRXP_ENEMY_Exhausted Defenders|r and |cRXP_ENEMY_Zouchin Villagers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30944,1 --Exhausted Defender (8)
     .mob Exhausted Defender
@@ -1393,7 +1350,7 @@ step
     .accept 30942 >>Accept Make A Fighter Out of Me
     .target Shomi
 step
-    #completewith Along163
+    #completewith Along158
     >>As you go: Kill |cRXP_ENEMY_Amani Skirmishers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30942,1 --Amani Skirmisher slain (4)
     .mob Amani Skirmisher
@@ -1403,7 +1360,7 @@ step
     .accept 30816 >>Accept Checking In
     .target Li Hai
 step
-    #label Along163
+    #label Along158
     .goto 379,63.45,28.74
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elder Shu|r
     .accept 30943 >>Accept Handle With Care
@@ -1637,7 +1594,7 @@ step
     .accept 30604 >>Accept Breaking Broketooth
     .unitscan Brother Rabbitsfoot
 step
-    #completewith Along195
+    #completewith Along190
     >>As you go: Kill |cRXP_ENEMY_Dead Packers|r. Loot them for |cRXP_LOOT_Grummlepack|r. Kill |cRXP_ENEMY_Broketooth Chargers|r. Kill |cRXP_ENEMY_Broketooth Tossers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30600,1 --Grummlepack (8)
     .complete 30604,1 --Broketooth Charger slain (8)
@@ -1653,7 +1610,7 @@ step
     .complete 30599,3 --Tak Tak's Altar
     .mob Tak Tak
 step
-    #label Along195
+    #label Along190
     .goto 379,52.27,71.44
     >>Kill |cRXP_ENEMY_Hateful Ko Ko|r and loot |cRXP_LOOT_Corpse of Ko Ko|r
     >>Click the |cRXP_PICK_Ko Ko's Altar|r
@@ -1717,13 +1674,13 @@ step
     .accept 30608 >>Accept The Snackrifice
     .unitscan Brother Yakshoe
 step
-    #completewith Along202
+    #completewith Along197
     >>As you go: Kill |cRXP_ENEMY_Knucklethump Jibstabbers|r and |cRXP_ENEMY_Knucklethump Smashers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30606,1 --Knucklethump Jibstabber (8)
     .mob Knucklethump Jibstabber
     .mob Knucklethump Smasher
 step
-    #label Along202
+    #label Along197
     .goto 379,50.80,62.80
     >>Kill |cRXP_ENEMY_Prisoner Bindings|r and |cRXP_ENEMY_Imprisoned Grummles|r
     .complete 30608,1 --Prisoner Bindings (8)
@@ -1837,18 +1794,18 @@ step
     .goto 379,42.808,69.604
     .fp Kota Basecamp>>Get the Kota Basecamp Flight Path
 step
-    #completewith Along220
+    #completewith Along215
     >>As you go: Click the |cRXP_PICK_Kafa'goot "Deposit"|r. Kill |cRXP_ENEMY_Kafa-Crazed Mountain Goats|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30743,1 --Kafa'goot "Deposit"
     .complete 30742,1 --Kafa-Crazed Mountain Goat slain (12)
     .mob Kafa-Crazed Mountain Goat
 step
-    #completewith Along218
+    #completewith Along213
     >>As you go: Kill |cRXP_ENEMY_Kafa-Crazed Yetis|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30745,1 --Kafa-Crazed Yeti slain (5)
     .mob Kafa-Crazed Yeti
 step
-    #label Along218
+    #label Along213
     #loop
     .goto 379,38.41,73.96,0
     .goto 379,38.41,73.96,40,0
@@ -1863,7 +1820,7 @@ step
     .isQuestTurnedIn 30744,30825 --any of: Kota Blend, Kota Blend
     .xp <87,1
 step
-    #label Along220
+    #label Along215
     .goto 379,36.93,76.22
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nephew Burrberry|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 30746 >>Turn in A Fair Trade
@@ -1936,7 +1893,7 @@ step
     .accept 30715 >>Accept A Line Unbroken
     .unitscan Ban Bearheart
 step
-    #completewith Along231
+    #completewith Along226
     >>As you go: Kill |cRXP_ENEMY_Kun-Lai Corpsepickers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30723,1 --Kun-Lai Corpsepicker slain (8)
     .mob Kun-Lai Corpsepicker
@@ -1951,7 +1908,7 @@ step
     .complete 30715,2 --Liu of the Thousand Blows
     .target Liu of the Thousand Blows
 step
-    #label Along231
+    #label Along226
     .goto 379,30.00,64.40
     >>Interact with |cRXP_FRIENDLY_Shiya Boldblade|r
     .complete 30715,3 --Shiya Boldblade
@@ -1991,13 +1948,13 @@ step
     .accept 30750 >>Accept Off the Wall!
     .target Suna Silentstrike
 step
-    #completewith Along237
+    #completewith Along232
     >>As you go: Kill |cRXP_ENEMY_Osul Fire-Warriors|r and |cRXP_ENEMY_Osul Veteran Archers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30750,1 --Osul Fire-Warrior (8)
     .mob Osul Fire-Warrior
     .mob Osul Veteran Archer
 step
-    #label Along237
+    #label Along232
     .goto 379,29.24,62.30
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lao-Chin the Iron Belly|r
     .accept 30751 >>Accept A Terrible Sacrifice

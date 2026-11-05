@@ -485,6 +485,17 @@ step
     .mob Boulderfist Warrior
     .mob Boulderfist Mage
 step
+    #completewith Along62
+    >>As you go: Kill |cRXP_ENEMY_Greater Windroc|r and loot |cRXP_LOOT_Flawless Greater Windroc Beak|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -10252,2 --Flawless Greater Windroc Beak (1)
+    .mob Greater Windroc
+step
+    #completewith Along62
+    >>As you go: Kill |cRXP_ENEMY_Aged Clefthoof|r and loot |cRXP_LOOT_Aged Clefthoof Blubber|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -10252,3 --Aged Clefthoof Blubber (1)
+    .mob Aged Clefthoof
+step
+    #label Along62
     .goto 1951,31.01,30.98
     >>Kill |cRXP_ENEMY_Gutripper|r and loot |cRXP_LOOT_Eye of Gutripper|r
     .complete 9856,1 --Eye of Gutripper (1)
@@ -496,19 +507,16 @@ step
     .mob Greater Windroc
     .isOnQuest 10252
 step
-    .goto 1951,30.84,42.36
-    >>Kill |cRXP_ENEMY_Ortor of Murkblood|r
-    .complete 9873,1 --Ortor of Murkblood slain (1)
-    .mob Ortor of Murkblood
-step
     #loop
     .goto 1951,30.99,41.76,0
     .goto 1951,30.99,41.76,40,0
     .goto 1951,32.22,46.77,40,0
+    >>Kill |cRXP_ENEMY_Ortor of Murkblood|r
     >>Kill |cRXP_ENEMY_Murkblood Putrifiers|r
-    .complete 9862,1 --Murkblood Putrifier slain (8)
+    .complete 9873,1 --Ortor of Murkblood slain (1)
+    .complete -9862,1 --Murkblood Putrifier slain (8)
+    .mob Ortor of Murkblood
     .mob Murkblood Putrifier
-    .isOnQuest 9862
 step
     #loop
     .goto 1951,33.41,51.36,0
@@ -583,23 +591,23 @@ step
     .complete 9849,1 --Minion of Gurok slain (30)
     .mob Minion of Gurok
 step
-    #completewith Along77
+    #completewith Along76
     >>As you go: Kill |cRXP_ENEMY_Voidspawns|r. |cRXP_WARN_Anything left is finished later|r
     .complete 9925,1 --Voidspawn slain (12)
     .mob Voidspawn
 step
-    #completewith Along76
+    #completewith Along75
     >>As you go: Kill |cRXP_ENEMY_Vir'aani Raiders|r. Loot them for |cRXP_LOOT_Oshu'gun Crystal Fragment|r. It can also be picked up from |cRXP_PICK_Oshu'gun Crystal Fragment|r on the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 9882,1 --Oshu'gun Crystal Fragment (10)
     .mob Vir'aani Raider
 step
-    #label Along76
+    #label Along75
     .goto 1951,41.51,71.42
     >>Kill |cRXP_ENEMY_Gava'xi|r
     .complete 9900,1 --Gava'xi slain (1)
     .mob Gava'xi
 step
-    #label Along77
+    #label Along76
     #loop
     .goto 1951,38.71,71.03,0
     .goto 1951,38.71,71.03,40,0
@@ -630,14 +638,11 @@ step
 step
     .goto 1951,41.40,61.57
     >>Kill |cRXP_ENEMY_Banthar|r and loot |cRXP_LOOT_Horn of Banthar|r
-    .complete 9851,1 --Horn of Banthar (1)
-    .mob Banthar
-step
-    .goto 1951,38.17,60.33
     >>Kill |cRXP_ENEMY_Aged Clefthoof|r and loot |cRXP_LOOT_Aged Clefthoof Blubber|r
-    .complete 10252,3 --Aged Clefthoof Blubber (1)
+    .complete 9851,1 --Horn of Banthar (1)
+    .complete -10252,3 --Aged Clefthoof Blubber (1)
+    .mob Banthar
     .mob Aged Clefthoof
-    .isOnQuest 10252
 step
     .goto 1951,51.82,56.84
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nitrin the Learned|r
@@ -748,7 +753,7 @@ step
     .target Elementalist Morgh
     .isOnQuest 9862
 step
-    #completewith Along99
+    #completewith Along97
     >>As you go: Kill |cRXP_ENEMY_Warmaul Reavers|r, |cRXP_ENEMY_Warmaul Warlocks|r, |cRXP_ENEMY_Warmaul Shamans|r and |cRXP_ENEMY_Warmaul Brutes|r. Loot them for |cRXP_LOOT_Warmaul Skull|r. Kill |cRXP_ENEMY_Warmaul Reavers|r and |cRXP_ENEMY_Warmaul Shamans|r. |cRXP_WARN_Anything left is finished later|r
     .collect 24502,1,9853,1 --Warmaul Skull (1)
     .complete 9931,1 --Warmaul Reaver (8)
@@ -757,7 +762,7 @@ step
     .mob Warmaul Shaman
     .mob Warmaul Brute
 step
-    #label Along99
+    #label Along97
     .goto 1951,46.57,24.42
     >>Lantresor of the Blade at the Burning Blade Ruins in Nagrand wants you to use the Damp Woolen Blanket at the Blazing Warmaul Pyre in the Laughing Skull Courtyard to signal his ogres.
     .complete 9932,1 --Warmaul Pyre Credit Marker
@@ -1063,6 +1068,12 @@ step
     .accept 10001 >>Accept The Master Planner
     .target Altruis the Sufferer
 step
+    #completewith Along15
+    >>As you go: Kill |cRXP_ENEMY_Fel Cannon: Fear|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -10011,2 --Forge Camp: Fear Destroyed (1)
+    .mob Fel Cannon: Fear
+step
+    #label Along15
     .goto 1951,19.61,51.10
     >>Kill |cRXP_ENEMY_Xirkos, Overseer of Fear|r and loot |cRXP_LOOT_Fel Cannon Activator|r
     .collect 25771,1,10011,1 --Fel Cannon Activator (1)

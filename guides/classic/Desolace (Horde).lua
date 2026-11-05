@@ -88,32 +88,19 @@ step
     .use 4614
 step
     #loop
-    .goto 1443/1,926.65,-120.82,0
-    .goto 1443/1,926.65,-120.82,40,0
-    .goto 1443/1,984.64,-56.96,40,0
-    >>Kill |cRXP_ENEMY_Hatefury Rogues|r
-    .complete 1434,1 --Hatefury Rogue slain (7)
-    .mob Hatefury Rogue
-    .isOnQuest 1434
-step
-    #loop
-    .goto 1443/1,982.40,-187.67,0
-    .goto 1443/1,982.40,-187.67,40,0
+    .goto 1443/1,945.08,-155.89,0
+    .goto 1443/1,945.08,-155.89,40,0
     .goto 1443/1,848.42,-125.92,40,0
-    .goto 1443/1,815.15,-85.44,40,0
-    >>Kill |cRXP_ENEMY_Hatefury Felsworns|r
-    .complete 1434,2 --Hatefury Felsworn slain (7)
-    .mob Hatefury Felsworn
-    .isOnQuest 1434
-step
-    #loop
-    .goto 1443/1,959.02,-51.87,0
     .goto 1443/1,959.02,-51.87,40,0
-    .goto 1443/1,986.44,11.39,40,0
+    >>Kill |cRXP_ENEMY_Hatefury Rogues|r
+    >>Kill |cRXP_ENEMY_Hatefury Felsworns|r
     >>Kill |cRXP_ENEMY_Hatefury Betrayers|r
-    .complete 1434,3 --Hatefury Betrayer slain (7)
+    .complete -1434,1 --Hatefury Rogue slain (7)
+    .complete -1434,2 --Hatefury Felsworn slain (7)
+    .complete -1434,3 --Hatefury Betrayer slain (7)
+    .mob Hatefury Rogue
+    .mob Hatefury Felsworn
     .mob Hatefury Betrayer
-    .isOnQuest 1434
 step
     #label Drop635x1
     #loop
@@ -157,6 +144,14 @@ step
     .collect 20310,1,1480 --Flayed Demon Skin (1)
     .accept 1480 >>Accept The Corrupter
     .use 20310
+step
+    #completewith Drop1480x1
+    >>As you go: Kill |cRXP_ENEMY_Burning Blade Augurs|r, |cRXP_ENEMY_Burning Blade Reavers|r, |cRXP_ENEMY_Burning Blade Adepts|r and |cRXP_ENEMY_Burning Blade Felsworns|r. Loot them for |cRXP_LOOT_Infused Burning Gem|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -1435,1 --Infused Burning Gem (15)
+    .mob Burning Blade Augur
+    .mob Burning Blade Reaver
+    .mob Burning Blade Adept
+    .mob Burning Blade Felsworn
 step
     #label Drop1480x1
     .goto 1443/1,1752.98,-451.79

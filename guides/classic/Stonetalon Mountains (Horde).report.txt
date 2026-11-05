@@ -132,7 +132,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Stonetalon Mountains - Horde - part 3 of 3, planned from level 24
-Guide "18-29 Stonetalon Mountains" in group "Zone Routes (Horde)": this part has 24 steps, 22 stops
+Guide "18-29 Stonetalon Mountains" in group "Zone Routes (Horde)": this part has 25 steps, 22 stops
 Written to guides/classic/Stonetalon Mountains (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -151,6 +151,7 @@ Planned from level 24. Distances are straight lines, so real running is longer; 
 Step order kept from the last build (locks folder): 27 steps kept, 1 new ones slotted in, 1 moved because their prerequisites changed. Build with --fresh to plan from scratch.
   everyone: 29 tasks, 14,506 yd on foot; ends at level 24.7; 1 hearth; at its hardest you are 1.9 levels below the mobs
 Hearthstone: set at Innkeeper Jayka (Innkeeper Jayka's inn); 1 hearth step in the guide.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (8)
 -----------------------

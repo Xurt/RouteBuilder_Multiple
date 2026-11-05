@@ -1,5 +1,5 @@
 Tanaris - Horde - part 1 of 3, planned from level 43
-Guide "43-54 Tanaris" in group "Zone Routes (Horde)": this part has 75 steps, 55 stops
+Guide "43-54 Tanaris" in group "Zone Routes (Horde)": this part has 73 steps, 54 stops
 Written to guides/tbc/Tanaris (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -20,7 +20,7 @@ Step order kept from the last build (locks folder): 46 steps kept, 12 new ones s
   everyone (quests that depend on other zones): 20 more tasks; their whole route comes to 22,029 yd; ends at level 43.8; 2 hearths; at its hardest you are 2.0 levels below the mobs
 Hearthstone: set at Dirge Quikcleave (Dirge Quikcleave's inn); 3 hearth steps in the guide.
 7 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-5 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (32)

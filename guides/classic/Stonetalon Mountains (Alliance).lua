@@ -75,34 +75,21 @@ step
     .accept 1093 >>Accept Super Reaper 6000
     .target Ziz Fizziks
 step
-    #completewith Along10
-    >>As you go: Kill |cRXP_ENEMY_Venture Co. Loggers|r. Kill |cRXP_ENEMY_Venture Co. Deforesters|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 1071,1 --Venture Co. Logger slain (10)
-    .complete 1071,2 --Venture Co. Deforester slain (10)
-    .mob Venture Co. Logger
-    .mob Venture Co. Deforester
-step
-    .goto 1442/1,10.63,1234.49
-    >>Kill |cRXP_ENEMY_Venture Co. Operator|r and loot |cRXP_LOOT_Super Reaper 6000 Blueprints|r
-    .complete 1093,1 --Super Reaper 6000 Blueprints (1)
-    .mob Venture Co. Operator
-step
-    #label Along10
-    .goto 1442/1,18.44,1245.23
-    >>Pick up |cRXP_PICK_Venture Co. Engineering Plans|r from the ground
-    .complete 1079,1 --Venture Co. Engineering Plans (1)
-    .isOnQuest 1079
-step
     #loop
-    .goto 1442/1,8.18,1252.07,0
-    .goto 1442/1,8.18,1252.07,40,0
+    .goto 1442/1,-38.21,1118.57,0
     .goto 1442/1,-38.21,1118.57,40,0
-    .goto 1442/1,18.93,1406.74,40,0
+    .goto 1442/1,18.44,1245.23,40,0
     .goto 1442/1,111.22,1434.42,40,0
+    .goto 1442/1,18.93,1406.74,40,0
+    >>Kill |cRXP_ENEMY_Venture Co. Operator|r and loot |cRXP_LOOT_Super Reaper 6000 Blueprints|r
+    >>Pick up |cRXP_PICK_Venture Co. Engineering Plans|r from the ground
     >>Kill |cRXP_ENEMY_Venture Co. Loggers|r
     >>Kill |cRXP_ENEMY_Venture Co. Deforesters|r
+    .complete 1093,1 --Super Reaper 6000 Blueprints (1)
+    .complete -1079,1 --Venture Co. Engineering Plans (1)
     .complete 1071,1 --Venture Co. Logger slain (10)
     .complete 1071,2 --Venture Co. Deforester slain (10)
+    .mob Venture Co. Operator
     .mob Venture Co. Logger
     .mob Venture Co. Deforester
 step
@@ -276,24 +263,18 @@ step
     #loop
     .goto 1442/1,1578.17,716.09,0
     .goto 1442/1,1578.17,716.09,40,0
-    .goto 1442/1,1647.52,546.44,40,0
+    .goto 1442/1,1758.86,699.81,40,0
+    .goto 1442/1,1651.91,523.00,40,0
     >>Kill |cRXP_ENEMY_Charred Ancients|r, |cRXP_ENEMY_Blackened Ancients|r and |cRXP_ENEMY_Vengeful Ancients|r. Loot them for |cRXP_LOOT_Corroded Shrapnel|r
-    .complete 1084,1 --Corroded Shrapnel (1)
+    >>Kill |cRXP_ENEMY_Rogue Flame Spirits|r, |cRXP_ENEMY_Burning Ravagers|r and |cRXP_ENEMY_Burning Destroyers|r. Loot them for |cRXP_LOOT_Smoldering Embers|r
+    .complete -1084,1 --Corroded Shrapnel (1)
+    .complete -1083,1 --Smoldering Embers (8)
     .mob Charred Ancient
     .mob Blackened Ancient
     .mob Vengeful Ancient
-    .isOnQuest 1084
-step
-    #loop
-    .goto 1442/1,1622.61,478.39,0
-    .goto 1442/1,1622.61,478.39,40,0
-    .goto 1442/1,1726.14,512.90,40,0
-    >>Kill |cRXP_ENEMY_Rogue Flame Spirits|r, |cRXP_ENEMY_Burning Ravagers|r and |cRXP_ENEMY_Burning Destroyers|r. Loot them for |cRXP_LOOT_Smoldering Embers|r
-    .complete 1083,1 --Smoldering Embers (8)
     .mob Rogue Flame Spirit
     .mob Burning Ravager
     .mob Burning Destroyer
-    .isOnQuest 1083
 step
     .goto 1442/1,320.72,739.86
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kaela Shadowspear|r

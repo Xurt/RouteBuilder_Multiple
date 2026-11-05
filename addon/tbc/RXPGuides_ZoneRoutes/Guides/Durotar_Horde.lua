@@ -283,30 +283,24 @@ step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Druid
     .complete 792,1 --Vile Familiar slain (12)
     .mob Vile Familiar
 step
-    #completewith Along22
+    #completewith Along21
     >>As you go: Pick up |cRXP_PICK_Cactus Apple|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 4402,1 --Cactus Apple (10)
 step
+    #label Along21
     #loop
-    .goto 1411/1,-4152.58,-354.61,0
+    .goto 1411/1,-4201.23,-773.73,0
+    .goto 1411/1,-4201.23,-773.73,40,0
+    .goto 1411/1,-4075.91,-355.66,40,0
     .goto 1411/1,-4152.58,-354.61,40,0
-    .goto 1411/1,-4089.13,-379.63,40,0
+    .goto 1411/1,-4181.13,-248.86,40,0
     .goto 1411/1,-4246.70,-290.10,40,0
     >>Kill |cRXP_ENEMY_Scorpid Workers|r and |cRXP_ENEMY_Sarkoths|r. Loot them for |cRXP_LOOT_Scorpid Worker Tail|r
+    >>Interact with |cRXP_FRIENDLY_Lazy Peons|r
     .complete 789,1 --Scorpid Worker Tail (10)
+    .complete 5441,1 --Lazy Peon (5)
     .mob Scorpid Worker
     .mob Sarkoth
-step
-    #label Along22
-    #loop
-    .goto 1411/1,-4127.20,-321.12,0
-    .goto 1411/1,-4127.20,-321.12,40,0
-    .goto 1411/1,-4227.14,-209.38,40,0
-    .goto 1411/1,-4283.71,-228.41,40,0
-    .goto 1411/1,-4201.23,-773.73,40,0
-    .goto 1411/1,-4144.65,-753.99,40,0
-    >>Interact with |cRXP_FRIENDLY_Lazy Peons|r
-    .complete 5441,1 --Lazy Peon (5)
     .target Lazy Peon
 step
     .goto 1411/1,-4146.24,-483.97,0
@@ -1141,7 +1135,7 @@ step
     .isOnQuest 825
     .money <0.0125
 step
-    #completewith Along66
+    #completewith Along65
     >>As you go: Kill |cRXP_ENEMY_Makrura Clackers|r, |cRXP_ENEMY_Makrura Shellhides|r, |cRXP_ENEMY_Makrura Snapclaws|r and |cRXP_ENEMY_Makrura Elders|r. Loot them for |cRXP_LOOT_Intact Makrura Eye|r. |cRXP_WARN_Anything left is finished later|r
     .complete 818,1 --Intact Makrura Eye (4)
     .mob Makrura Clacker
@@ -1149,7 +1143,7 @@ step
     .mob Makrura Snapclaw
     .mob Makrura Elder
 step
-    #label Along66
+    #label Along65
     #loop
     .goto 1411/1,-5308.96,-211.84,0
     .goto 1411/1,-5308.96,-211.84,40,0
@@ -1157,12 +1151,12 @@ step
     >>Loot the |cRXP_PICK_Gnomish Toolboxes|r for |cRXP_LOOT_Gnomish Tools|r
     .complete 825,1 --Gnomish Tools (3)
 step
-    #completewith Along67
+    #completewith Along66
     >>As you go: Kill |cRXP_ENEMY_Durotar Tigers|r. Loot them for |cRXP_LOOT_Durotar Tiger Fur|r. |cRXP_WARN_Anything left is finished later|r
     .complete 817,1 --Durotar Tiger Fur (4)
     .mob Durotar Tiger
 step
-    #label Along67
+    #label Along66
     #loop
     .goto 1411/1,-5547.95,-653.88,0
     .goto 1411/1,-5547.95,-653.88,40,0
@@ -1440,13 +1434,13 @@ step
     .zone 1411 >>Leave Orgrimmar for Durotar
     .zoneskip 1411
 step
-    #completewith Along86
+    #completewith Along85
     >>As you go: Kill |cRXP_ENEMY_Burning Blade Fanatics|r and |cRXP_ENEMY_Burning Blade Apprentices|r. Loot them for |cRXP_LOOT_Lieutenant's Insignia|r. |cRXP_WARN_Anything left is finished later|r
     .complete 5726,1 --Lieutenant's Insignia (1)
     .mob Burning Blade Fanatic
     .mob Burning Blade Apprentice
 step
-    #label Along86
+    #label Along85
     .goto 1411/1,-4744.25,1497.43
     >>Kill |cRXP_ENEMY_Gazz'uz|r and loot |cRXP_LOOT_Eye of Burning Shadow|r. Use it to start the quest
     .collect 4903,1,832 --Eye of Burning Shadow (1)

@@ -1,5 +1,5 @@
 Azuremyst Isle - Alliance - part 1 of 3, planned from level 1
-Guide "1-12 Azuremyst Isle" in group "Zone Routes (Alliance)": this part has 191 steps, 127 stops
+Guide "1-12 Azuremyst Isle" in group "Zone Routes (Alliance)": this part has 189 steps, 125 stops
 Written to guides/tbc/Azuremyst Isle (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

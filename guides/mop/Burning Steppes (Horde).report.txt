@@ -1,5 +1,5 @@
 Burning Steppes - Horde - part 1 of 2, planned from level 50
-Guide "50-52 Burning Steppes" in group "Zone Routes (Horde)": this part has 138 steps, 106 stops
+Guide "50-52 Burning Steppes" in group "Zone Routes (Horde)": this part has 139 steps, 106 stops
 Written to guides/mop/Burning Steppes (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -116,7 +116,7 @@ The check passes at once if you are there; if you are a little behind the predic
   level 50 for Meet with Tyelis (BloodElf Priest)
   level 50 for Meet with Brother Silverhallow (Goblin Priest)
 3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-5 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+6 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 4 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (88)

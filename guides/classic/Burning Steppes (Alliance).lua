@@ -122,17 +122,13 @@ step
     .isQuestTurnedIn 3481 --any of: Trinkets...
     .xp <52,1
 step
-    .goto 1428/0,-3052.01,-7647.33
-    >>Kill |cRXP_ENEMY_Cyrus Therepentous|r
-    .complete 4022,2 --Cyrus Therepentous (1)
-    .mob Cyrus Therepentous
-    .isOnQuest 4022
-step
     .goto 1428/0,-3031.80,-7652.01
+    >>Kill |cRXP_ENEMY_Cyrus Therepentous|r
     >>Kill |cRXP_ENEMY_Frenzied Black Drake|r and loot |cRXP_LOOT_Black Dragonflight Molt|r
-    .complete 4022,1 --Black Dragonflight Molt (1)
+    .complete -4022,2 --Cyrus Therepentous (1)
+    .complete -4022,1 --Black Dragonflight Molt (1)
+    .mob Cyrus Therepentous
     .mob Frenzied Black Drake
-    .isOnQuest 4022
 step
     .goto 1428/0,-3052.01,-7647.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cyrus Therepentous|r
@@ -140,12 +136,12 @@ step
     .target Cyrus Therepentous
     .isOnQuest 4022
 step
-    #completewith Along10
+    #completewith Along9
     >>As you go: Kill |cRXP_ENEMY_Black Dragonspawns|r. |cRXP_WARN_Anything left is finished later|r
     .complete 4182,2 --Black Dragonspawn slain (10)
     .mob Black Dragonspawn
 step
-    #label Along10
+    #label Along9
     #loop
     .goto 1428/0,-2812.70,-7627.61,0
     .goto 1428/0,-2812.70,-7627.61,40,0
@@ -158,12 +154,12 @@ step
     .complete 4182,1 --Black Broodling slain (15)
     .mob Black Broodling
 step
-    #completewith Along11
+    #completewith Along10
     >>As you go: Kill |cRXP_ENEMY_Black Wyrmkins|r. |cRXP_WARN_Anything left is finished later|r
     .complete 4182,4 --Black Wyrmkin slain (4)
     .mob Black Wyrmkin
 step
-    #label Along11
+    #label Along10
     #loop
     .goto 1428/0,-2917.56,-8091.04,0
     .goto 1428/0,-2917.56,-8091.04,40,0

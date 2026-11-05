@@ -1,5 +1,5 @@
 Burning Steppes - Alliance - part 1 of 2, planned from level 50
-Guide "50-52 Burning Steppes" in group "Zone Routes (Alliance)": this part has 93 steps, 83 stops
+Guide "50-52 Burning Steppes" in group "Zone Routes (Alliance)": this part has 92 steps, 82 stops
 Written to guides/mop/Burning Steppes (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

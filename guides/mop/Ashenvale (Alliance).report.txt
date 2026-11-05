@@ -1,5 +1,5 @@
 Ashenvale - Alliance
-Guide "21-26 Ashenvale" in group "Zone Routes (Alliance)": 245 steps, 211 stops
+Guide "21-26 Ashenvale" in group "Zone Routes (Alliance)": 244 steps, 209 stops
 Written to guides/mop/Ashenvale (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -35,7 +35,7 @@ Step order kept from the last build (locks folder): 8 steps kept, 263 new ones s
   Worgen (quests that depend on other zones): 2 more tasks; their whole route comes to 46,863 yd; ends at level 27.3; 4 hearths; 1 ORDER PROBLEMS; at its hardest you are 1.8 levels below the mobs
   Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 47,557 yd; ends at level 27.3; 4 hearths; 1 ORDER PROBLEMS; at its hardest you are 1.8 levels below the mobs
 Hearthstone: set at Innkeeper Kimlya (Innkeeper Kimlya's inn); 3 hearth steps in the guide.
-8 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+9 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 9 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (120)

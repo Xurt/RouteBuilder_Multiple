@@ -532,25 +532,13 @@ step
     .goto 1444/1,1651.83,-5670.70,40,0
     .goto 1444/1,1583.72,-5446.44,40,0
     >>Kill |cRXP_ENEMY_Frayfeather Hippogryphs|r, |cRXP_ENEMY_Frayfeather Stagwings|r, |cRXP_ENEMY_Frayfeather Skystormers|r and |cRXP_ENEMY_Frayfeather Patriarches|r. Loot them for |cRXP_LOOT_Metallic Fragments|r
-    .complete 3128,4 --Metallic Fragments (40)
-    .mob Frayfeather Hippogryph
-    .mob Frayfeather Stagwing
-    .mob Frayfeather Skystormer
-    .mob Frayfeather Patriarch
-    .isOnQuest 3128
-step
-    #loop
-    .goto 1444/1,1651.83,-5670.70,0
-    .goto 1444/1,1651.83,-5670.70,40,0
-    .goto 1444/1,1605.27,-5640.12,40,0
-    .goto 1444/1,1715.08,-5516.41,40,0
     >>Kill |cRXP_ENEMY_Frayfeather Hippogryphs|r, |cRXP_ENEMY_Frayfeather Stagwings|r, |cRXP_ENEMY_Frayfeather Skystormers|r and |cRXP_ENEMY_Frayfeather Patriarches|r. Loot them for |cRXP_LOOT_Resilient Sinew|r
-    .complete 3128,3 --Resilient Sinew (1)
+    .complete -3128,4 --Metallic Fragments (40)
+    .complete -3128,3 --Resilient Sinew (1)
     .mob Frayfeather Hippogryph
     .mob Frayfeather Stagwing
     .mob Frayfeather Skystormer
     .mob Frayfeather Patriarch
-    .isOnQuest 3128
 step
     #loop
     .goto 1444/1,655.90,-4623.56,0
@@ -571,6 +559,12 @@ step
     .isQuestTurnedIn 3125 --any of: Faerie Dragon Muisek
     .xp <40,1
 step
+    #completewith Along13
+    >>As you go: Kill |cRXP_ENEMY_Wandering Forest Walkers|r. Loot them for |cRXP_LOOT_Splintered Log|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -3128,1 --Splintered Log (2)
+    .mob Wandering Forest Walker
+step
+    #label Along13
     .goto 1444/1,305.62,-4166.25
     >>Kill |cRXP_ENEMY_Wandering Forest Walker|r and loot |cRXP_LOOT_Treant Muisek|r
     .complete 3126,1 --Treant Muisek (1)
@@ -677,56 +671,39 @@ step
     .mob Sea Elemental
     .mob Sea Spray
 step
-    #completewith Along5
-    >>As you go: Kill |cRXP_ENEMY_Land Walkers|r, |cRXP_ENEMY_Cliff Giants|r, |cRXP_ENEMY_Shore Striders|r and |cRXP_ENEMY_Deep Striders|r. Loot them for |cRXP_LOOT_Miniaturization Residue|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 7003,1 --Miniaturization Residue (15)
-    .mob Land Walker
-    .mob Cliff Giant
-    .mob Shore Strider
-    .mob Deep Strider
-step
-    #label Along5
     #loop
     .goto 1444/1,2668.62,-3381.37,0
     .goto 1444/1,2668.62,-3381.37,40,0
     .goto 1444/1,2788.85,-3358.20,40,0
     >>Kill |cRXP_ENEMY_Land Walkers|r, |cRXP_ENEMY_Cliff Giants|r, |cRXP_ENEMY_Zapped Land Walkers|r and |cRXP_ENEMY_Zapped Cliff Giants|r. Loot them for |cRXP_LOOT_Mountain Giant Muisek|r
-    .complete 3127,1 --Mountain Giant Muisek (1)
+    >>Kill |cRXP_ENEMY_Land Walkers|r, |cRXP_ENEMY_Cliff Giants|r, |cRXP_ENEMY_Shore Striders|r and |cRXP_ENEMY_Deep Striders|r. Loot them for |cRXP_LOOT_Miniaturization Residue|r
+    .complete -3127,1 --Mountain Giant Muisek (1)
+    .complete 7003,1 --Miniaturization Residue (15)
     .mob Land Walker
     .mob Cliff Giant
     .mob Zapped Land Walker
     .mob Zapped Cliff Giant
-    .isOnQuest 3127
-step
-    #loop
-    .goto 1444/1,2668.62,-3381.37,0
-    .goto 1444/1,2668.62,-3381.37,40,0
-    .goto 1444/1,2788.85,-3358.20,40,0
-    >>Kill |cRXP_ENEMY_Land Walkers|r, |cRXP_ENEMY_Cliff Giants|r, |cRXP_ENEMY_Shore Striders|r and |cRXP_ENEMY_Deep Striders|r. Loot them for |cRXP_LOOT_Miniaturization Residue|r
-    .complete 7003,1 --Miniaturization Residue (15)
-    .mob Land Walker
-    .mob Cliff Giant
     .mob Shore Strider
     .mob Deep Strider
 step
-    #completewith Along9
+    #completewith Along8
     >>As you go: Kill |cRXP_ENEMY_Northspring Windcallers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 3063,4 --Northspring Windcaller slain (4)
     .mob Northspring Windcaller
 step
-    #completewith Along7
+    #completewith Along6
     >>As you go: Kill |cRXP_ENEMY_Northspring Harpies|r. |cRXP_WARN_Anything left is finished later|r
     .complete 3063,1 --Northspring Harpy slain (4)
     .mob Northspring Harpy
 step
-    #completewith Along7
+    #completewith Along6
     >>As you go: Kill |cRXP_ENEMY_Northspring Roguefeathers|r. Kill |cRXP_ENEMY_Northspring Slayers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 3063,2 --Northspring Roguefeather slain (4)
     .complete 3063,3 --Northspring Slayer slain (4)
     .mob Northspring Roguefeather
     .mob Northspring Slayer
 step
-    #label Along7
+    #label Along6
     #loop
     .goto 1444/1,2784.68,-3049.16,0
     .goto 1444/1,2784.68,-3049.16,40,0
@@ -744,7 +721,7 @@ step
     .complete 3062,1 --Edana's Dark Heart (1)
     .mob Edana Hatetalon
 step
-    #label Along9
+    #label Along8
     .goto 1444/1,2660.28,-3031.09
     >>Kill |cRXP_ENEMY_Northspring Harpies|r
     .complete 3063,1 --Northspring Harpy slain (4)

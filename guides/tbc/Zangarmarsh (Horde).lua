@@ -905,32 +905,32 @@ step
     .complete 9903,1 --Mragesh slain (1)
     .mob Mragesh
 step
+    #completewith Along26
+    >>As you go: Kill |cRXP_ENEMY_Daggerfen Assassins|r. Kill |cRXP_ENEMY_Daggerfen Muckdwellers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -10118,1 --Daggerfen Assassin slain (3)
+    .complete -10118,2 --Daggerfen Muckdweller slain (15)
+    .mob Daggerfen Assassin
+    .mob Daggerfen Muckdweller
+step
+    #label Along26
     .goto 1946,26.78,22.61
     >>Click the |cRXP_PICK_Murloc Cage|r
     .complete 9816,1 --Murloc Cage
 step
-    .goto 1946,23.78,26.75
-    >>Kill |cRXP_ENEMY_Chieftain Mummaki|r and loot |cRXP_LOOT_Chieftain Mummaki's Totem|r
-    .complete 10117,1 --Chieftain Mummaki's Totem (1)
-    .mob Chieftain Mummaki
-step
     #loop
-    .goto 1946,23.75,22.27,0
-    .goto 1946,23.75,22.27,40,0
+    .goto 1946,26.62,22.82,0
     .goto 1946,26.62,22.82,40,0
+    .goto 1946,25.07,25.19,40,0
+    .goto 1946,23.35,22.21,40,0
+    >>Kill |cRXP_ENEMY_Chieftain Mummaki|r and loot |cRXP_LOOT_Chieftain Mummaki's Totem|r
     >>Kill |cRXP_ENEMY_Daggerfen Assassins|r
-    .complete 10118,1 --Daggerfen Assassin slain (3)
-    .mob Daggerfen Assassin
-    .isOnQuest 10118
-step
-    #loop
-    .goto 1946,27.23,23.19,0
-    .goto 1946,27.23,23.19,40,0
-    .goto 1946,24.16,23.37,40,0
     >>Kill |cRXP_ENEMY_Daggerfen Muckdwellers|r
-    .complete 10118,2 --Daggerfen Muckdweller slain (15)
+    .complete 10117,1 --Chieftain Mummaki's Totem (1)
+    .complete -10118,1 --Daggerfen Assassin slain (3)
+    .complete -10118,2 --Daggerfen Muckdweller slain (15)
+    .mob Chieftain Mummaki
+    .mob Daggerfen Assassin
     .mob Daggerfen Muckdweller
-    .isOnQuest 10118
 step
     .goto 1946,52.29,35.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Watcher Jhang|r
@@ -958,31 +958,20 @@ step
     .turnin 9738 >>Turn in Lost in Action
     .target Watcher Jhang
 step
-    .goto 1946,18.39,7.79
-    >>Kill |cRXP_ENEMY_Overlord Gorefist|r
-    .complete 9823,1 --Overlord Gorefist slain (1)
-    .mob Overlord Gorefist
-    .isOnQuest 9823
-step
-    #loop
-    .goto 1946,17.69,8.56,0
-    .goto 1946,17.69,8.56,40,0
-    .goto 1946,19.86,6.97,40,0
-    .goto 1946,20.40,4.44,40,0
-    >>Kill |cRXP_ENEMY_Ango'rosh Maulers|r
-    .complete 9823,2 --Ango'rosh Mauler slain (10)
-    .mob Ango'rosh Mauler
-    .isOnQuest 9823
-step
     #loop
     .goto 1946,19.86,6.97,0
     .goto 1946,19.86,6.97,40,0
     .goto 1946,20.40,4.44,40,0
     .goto 1946,17.69,8.56,40,0
+    >>Kill |cRXP_ENEMY_Overlord Gorefist|r
+    >>Kill |cRXP_ENEMY_Ango'rosh Maulers|r
     >>Kill |cRXP_ENEMY_Ango'rosh Souleaters|r
-    .complete 9823,3 --Ango'rosh Souleater slain (10)
+    .complete -9823,1 --Overlord Gorefist slain (1)
+    .complete -9823,2 --Ango'rosh Mauler slain (10)
+    .complete -9823,3 --Ango'rosh Souleater slain (10)
+    .mob Overlord Gorefist
+    .mob Ango'rosh Mauler
     .mob Ango'rosh Souleater
-    .isOnQuest 9823
 step
     #completewith next
     .hs >>Hearth to Horde Field Scout's inn. |cRXP_WARN_Walk instead if you are already nearby|r

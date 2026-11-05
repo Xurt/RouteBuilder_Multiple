@@ -695,36 +695,33 @@ step
 step
     .goto 1413/1,-3819.86,-1714.95
     >>Open the |cRXP_PICK_Fragile - Do Not Drop|r. Loot it for |cRXP_LOOT_Telescopic Lens|r
-    .complete 888,2 --Telescopic Lens (1)
-    .isOnQuest 888
-step
-    .goto 1413/1,-3723.59,-1740.63
     >>Open the |cRXP_PICK_Drizzlik's Emporium|r. Loot it for |cRXP_LOOT_Shipment of Boots|r
-    .complete 888,1 --Shipment of Boots (1)
-    .isOnQuest 888
+    .complete -888,2 --Telescopic Lens (1)
+    .complete -888,1 --Shipment of Boots (1)
 step
     .goto 1413/1,-3258.47,-2027.09
     >>Pick up |cRXP_PICK_Stolen Silver|r from the ground
     .complete 3281,1 --Stolen Silver (1)
     .isOnQuest 3281
 step
-    .goto 1413/1,-3012.23,-1275.80
-    >>Click the |cRXP_PICK_Bubbling Fissure|r
-    .complete 877,1 --Test the Dried Seeds
-    .isOnQuest 877
+    #completewith Along92
+    >>As you go: Loot the |cRXP_PICK_Laden Mushrooms|r for |cRXP_LOOT_Fungal Spores|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -848,1 --Fungal Spores (4)
 step
+    #label Along92
     #loop
-    .goto 1413/1,-2915.96,-1284.58,0
-    .goto 1413/1,-2915.96,-1284.58,40,0
+    .goto 1413/1,-3127.75,-1320.39,0
     .goto 1413/1,-3127.75,-1320.39,40,0
     .goto 1413/1,-3168.28,-1160.27,40,0
+    .goto 1413/1,-2915.96,-1284.58,40,0
+    >>Click the |cRXP_PICK_Bubbling Fissure|r
     >>Kill |cRXP_ENEMY_Kolkar Wranglers|r, |cRXP_ENEMY_Kolkar Stormers|r, |cRXP_ENEMY_Kolkar Pack Runners|r and |cRXP_ENEMY_Kolkar Marauders|r. Loot them for |cRXP_LOOT_Centaur Bracers|r
-    .complete 855,1 --Centaur Bracers (15)
+    .complete -877,1 --Test the Dried Seeds
+    .complete -855,1 --Centaur Bracers (15)
     .mob Kolkar Wrangler
     .mob Kolkar Stormer
     .mob Kolkar Pack Runner
     .mob Kolkar Marauder
-    .isOnQuest 855
 step
     .goto 1413/1,-1971.54,-306.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Regthar Deathgate|r
@@ -808,27 +805,20 @@ step
     .complete 905,1 --Visit Blue Raptor Nest
     .isOnQuest 905
 step
-    .goto 1413/1,-2693.03,-1533.21
-    >>Click the |cRXP_PICK_Red Raptor Nest|r
-    .complete 905,3 --Visit Red Raptor Nest
-    .isOnQuest 905
-step
-    .goto 1413/1,-2648.44,-1527.13
-    >>Click the |cRXP_PICK_Yellow Raptor Nest|r
-    .complete 905,2 --Visit Yellow Raptor Nest
-    .isOnQuest 905
-step
     #loop
-    .goto 1413/1,-2687.96,-1537.26,0
-    .goto 1413/1,-2687.96,-1537.26,40,0
-    .goto 1413/1,-2716.34,-1498.75,40,0
+    .goto 1413/1,-2709.24,-1513.62,0
+    .goto 1413/1,-2709.24,-1513.62,40,0
+    .goto 1413/1,-2661.62,-1537.26,40,0
     .goto 1413/1,-2480.23,-1504.83,40,0
+    >>Click the |cRXP_PICK_Red Raptor Nest|r
+    >>Click the |cRXP_PICK_Yellow Raptor Nest|r
     >>Kill |cRXP_ENEMY_Sunscale Scytheclaws|r, |cRXP_ENEMY_Ishamuhales|r and |cRXP_ENEMY_Takk the Leapers|r. Loot them for |cRXP_LOOT_Intact Raptor Horn|r
-    .complete 865,1 --Intact Raptor Horn (5)
+    .complete -905,3 --Visit Red Raptor Nest
+    .complete -905,2 --Visit Yellow Raptor Nest
+    .complete -865,1 --Intact Raptor Horn (5)
     .mob Sunscale Scytheclaw
     .mob Ishamuhale
     .mob Takk the Leaper
-    .isOnQuest 865
 step
     .goto 1413/1,-2672.76,-544.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tonga Runetotem|r
@@ -2136,40 +2126,24 @@ step << Rogue
     .isQuestTurnedIn 2458 --any of: Deep Cover
     .xp <20,1
 step << Rogue
-    .goto 1413/1,-2930.15,1209.15
+    .goto 1413/1,-2920.02,1227.39
     >>Kill |cRXP_ENEMY_Foreman Silixiz|r and loot |cRXP_LOOT_Silixiz's Tower Key|r
-    .complete 2478,5 --Silixiz's Tower Key (1)
-    .mob Foreman Silixiz
-    .isOnQuest 2478
-step << Rogue
-    .goto 1413/1,-2922.04,1224.02
     >>Kill |cRXP_ENEMY_Mutated Venture Co. Drones|r
-    .complete 2478,1 --Mutated Venture Co. Drone slain (2)
-    .mob Mutated Venture Co. Drone
-    .isOnQuest 2478
-step << Rogue
-    .goto 1413/1,-2931.16,1234.83
     >>Kill |cRXP_ENEMY_Venture Co. Patrollers|r
-    .complete 2478,3 --Venture Co. Patroller slain (2)
-    .mob Venture Co. Patroller
-    .isOnQuest 2478
-step << Rogue
-    .goto 1413/1,-2913.94,1222.66
     >>Kill |cRXP_ENEMY_Venture Co. Lookouts|r
-    .complete 2478,2 --Venture Co. Lookout slain (2)
-    .mob Venture Co. Lookout
-    .isOnQuest 2478
-step << Rogue
-    .goto 1413/1,-2925.08,1234.83
     >>Kill |cRXP_ENEMY_Grand Foreman Puzik Gallywix|r and loot |cRXP_LOOT_Gallywix's Head|r
-    .complete 2478,4 --Gallywix's Head (1)
-    .mob Grand Foreman Puzik Gallywix
-    .isOnQuest 2478
-step << Rogue
-    .goto 1413/1,-2926.10,1236.85
     >>Open the |cRXP_PICK_Gallywix's Lockbox|r. Loot it for |cRXP_LOOT_Cache of Zanzil's Altered Mixture|r
-    .complete 2478,6 --Cache of Zanzil's Altered Mixture (1)
-    .isOnQuest 2478
+    .complete -2478,5 --Silixiz's Tower Key (1)
+    .complete -2478,1 --Mutated Venture Co. Drone slain (2)
+    .complete -2478,3 --Venture Co. Patroller slain (2)
+    .complete -2478,2 --Venture Co. Lookout slain (2)
+    .complete -2478,4 --Gallywix's Head (1)
+    .complete -2478,6 --Cache of Zanzil's Altered Mixture (1)
+    .mob Foreman Silixiz
+    .mob Mutated Venture Co. Drone
+    .mob Venture Co. Patroller
+    .mob Venture Co. Lookout
+    .mob Grand Foreman Puzik Gallywix
 step
     .goto 1413/1,-1891.48,-2391.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mangletooth|r

@@ -1,5 +1,5 @@
 Shadowmoon Valley - Alliance - part 1 of 2, planned from level 69
-Guide "69-70 Shadowmoon Valley" in group "Zone Routes (Alliance)": this part has 170 steps, 163 stops
+Guide "69-70 Shadowmoon Valley" in group "Zone Routes (Alliance)": this part has 173 steps, 158 stops
 Written to guides/mop/Shadowmoon Valley (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -20,7 +20,7 @@ Step order kept from the last build (locks folder): 207 steps kept, 0 new ones s
   everyone: 115 tasks, 16,380 yd on foot; ends at level 69.7; 2 hearths
   everyone (quests that depend on other zones): 92 more tasks; their whole route comes to 29,706 yd; ends at level 69.7; 4 hearths; at its hardest you are 1.3 levels below the mobs
 Hearthstone: set at Daggle Ironshaper (Daggle Ironshaper's inn); 3 hearth steps in the guide.
-2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+10 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (76)
 ------------------------
@@ -124,7 +124,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Shadowmoon Valley - Alliance - part 2 of 2, planned from level 72
-Guide "69-70 Shadowmoon Valley" in group "Zone Routes (Alliance)": this part has 40 steps, 39 stops
+Guide "69-70 Shadowmoon Valley" in group "Zone Routes (Alliance)": this part has 39 steps, 38 stops
 Written to guides/mop/Shadowmoon Valley (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

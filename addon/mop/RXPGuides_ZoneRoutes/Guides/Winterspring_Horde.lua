@@ -960,6 +960,12 @@ step
     .target Haleh
     .isQuestTurnedIn 28848 --any of: Trailing the Spiritspeaker
 step
+    #completewith Along119
+    >>As you go: Kill |cRXP_ENEMY_Altered Beasts|r. Loot them for |cRXP_LOOT_Mana-Addled Brain|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -28837,1 --Mana-Addled Brain (5)
+    .mob Altered Beast
+step
+    #label Along119
     .goto 83,58.01,63.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Haleh|r
     .turnin 28847 >>Turn in The Pursuit of Umbranse
@@ -1006,13 +1012,9 @@ step
 step
     .goto 83,65.07,73.82
     >>Open the |cRXP_PICK_Owlbeast Claw-Totem|r. Loot it for |cRXP_LOOT_Essence of the Claw-Totem|r
-    .complete 28839,1 --Essence of the Claw-Totem (1)
-    .isOnQuest 28839
-step
-    .goto 83,65.64,77.64
     >>Open the |cRXP_PICK_Owlbeast Life-Totem|r. Loot it for |cRXP_LOOT_Essence of the Life-Totem|r
-    .complete 28839,2 --Essence of the Life-Totem (1)
-    .isOnQuest 28839
+    .complete -28839,1 --Essence of the Claw-Totem (1)
+    .complete -28839,2 --Essence of the Life-Totem (1)
 step
     .goto 83,64.82,81.07
     >>Open the |cRXP_PICK_Owlbeast Moon-Totem|r. Loot it for |cRXP_LOOT_Essence of the Moon-Totem|r
@@ -1057,22 +1059,16 @@ step
     .target Jadrag the Slicer
 step
     #loop
-    .goto 83,61.46,83.15,0
-    .goto 83,61.46,83.15,40,0
-    .goto 83,62.58,83.11,40,0
-    >>Kill |cRXP_ENEMY_Frostmaul Tumblers|r
-    .complete 28830,1 --Frostmaul Tumbler slain (8)
-    .mob Frostmaul Tumbler
-step
-    #loop
-    .goto 83,61.68,86.59,0
-    .goto 83,61.68,86.59,40,0
+    .goto 83,59.49,84.72,0
     .goto 83,59.49,84.72,40,0
+    .goto 83,61.64,86.51,40,0
+    >>Kill |cRXP_ENEMY_Frostmaul Tumblers|r
     >>Kill |cRXP_ENEMY_Ice Avatars|r and |cRXP_ENEMY_Frostilicus|r. Loot them for |cRXP_LOOT_Winterwater|r
-    .complete 28840,1 --Winterwater (7)
+    .complete 28830,1 --Frostmaul Tumbler slain (8)
+    .complete -28840,1 --Winterwater (7)
+    .mob Frostmaul Tumbler
     .mob Ice Avatar
     .mob Frostilicus
-    .isOnQuest 28840
 step
     .goto 83,61.87,74.67
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jadrag the Slicer|r

@@ -89,34 +89,31 @@ step
     .xp <25,1
 step
     #completewith Drop635x1
-    >>|cRXP_LOOT_Flayed Demon Skin|r can drop from |cRXP_ENEMY_Burning Blade Augur|r, |cRXP_ENEMY_Burning Blade Reaver|r, |cRXP_ENEMY_Burning Blade Adept|r. Use it to start the quest if you get one
-    .collect 20310,1,1480 --Flayed Demon Skin (1)
-    .accept 1480 >>Accept The Corrupter
-    .use 20310
-step
-    .goto 1443/1,1752.98,-451.79
-    >>Kill |cRXP_ENEMY_Burning Blade Seer|r and loot |cRXP_LOOT_Sceptre of Light|r
-    .complete 5741,1 --Sceptre of Light (1)
-    .mob Burning Blade Seer
-step
-    #completewith Drop635x1
     >>|cRXP_LOOT_Pendant of Myzrael|r can drop from |cRXP_ENEMY_Kolkar Centaur|r, |cRXP_ENEMY_Kolkar Scout|r, |cRXP_ENEMY_Kolkar Mauler|r. Use it to start the quest if you get one
     .collect 4614,1,635 --Pendant of Myzrael (1)
     .accept 635 >>Accept Crystal in the Mountains
     .use 4614
+step
+    #completewith Drop635x1
+    >>|cRXP_LOOT_Flayed Demon Skin|r can drop from |cRXP_ENEMY_Burning Blade Augur|r, |cRXP_ENEMY_Burning Blade Reaver|r, |cRXP_ENEMY_Burning Blade Adept|r. Use it to start the quest if you get one
+    .collect 20310,1,1480 --Flayed Demon Skin (1)
+    .accept 1480 >>Accept The Corrupter
+    .use 20310
 step
     #label Drop635x1
     #loop
     .goto 1443/1,1742.19,-448.49,0
     .goto 1443/1,1742.19,-448.49,40,0
     .goto 1443/1,1839.30,-405.32,40,0
+    >>Kill |cRXP_ENEMY_Burning Blade Seer|r and loot |cRXP_LOOT_Sceptre of Light|r
     >>Kill |cRXP_ENEMY_Burning Blade Augurs|r, |cRXP_ENEMY_Burning Blade Reavers|r, |cRXP_ENEMY_Burning Blade Adepts|r and |cRXP_ENEMY_Burning Blade Felsworns|r. Loot them for |cRXP_LOOT_Infused Burning Gem|r
-    .complete 1435,1 --Infused Burning Gem (15)
+    .complete 5741,1 --Sceptre of Light (1)
+    .complete -1435,1 --Infused Burning Gem (15)
+    .mob Burning Blade Seer
     .mob Burning Blade Augur
     .mob Burning Blade Reaver
     .mob Burning Blade Adept
     .mob Burning Blade Felsworn
-    .isOnQuest 1435
 step
     .goto 1443/1,1884.26,-1150.00
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maurin Bonesplitter|r
@@ -161,49 +158,38 @@ step
     .accept 635 >>Accept Crystal in the Mountains
     .use 4614
 step
-    #loop
-    .goto 1443/1,926.65,-120.82,0
-    .goto 1443/1,926.65,-120.82,40,0
-    .goto 1443/1,984.64,-56.96,40,0
-    >>Kill |cRXP_ENEMY_Hatefury Rogues|r
-    .complete 1434,1 --Hatefury Rogue slain (7)
-    .mob Hatefury Rogue
-    .isOnQuest 1434
-step
-    #loop
-    .goto 1443/1,959.02,-51.87,0
-    .goto 1443/1,959.02,-51.87,40,0
-    .goto 1443/1,986.44,11.39,40,0
-    >>Kill |cRXP_ENEMY_Hatefury Betrayers|r
-    .complete 1434,3 --Hatefury Betrayer slain (7)
-    .mob Hatefury Betrayer
-    .isOnQuest 1434
-step
-    #loop
-    .goto 1443/1,848.42,-125.92,0
-    .goto 1443/1,848.42,-125.92,40,0
-    .goto 1443/1,815.15,-85.44,40,0
-    .goto 1443/1,982.40,-187.67,40,0
-    >>Kill |cRXP_ENEMY_Hatefury Felsworns|r
-    .complete 1434,2 --Hatefury Felsworn slain (7)
-    .mob Hatefury Felsworn
-    .isOnQuest 1434
-step
-    .goto 1443/1,794.47,-263.52
-    >>Kill |cRXP_ENEMY_Hatefury Shadowstalker|r and loot |cRXP_LOOT_Shadowstalker Scalp|r
-    .complete 1481,1 --Shadowstalker Scalp (1)
+    #completewith Along18
+    >>As you go: Kill |cRXP_ENEMY_Hatefury Shadowstalker|r and loot |cRXP_LOOT_Shadowstalker Scalp|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -1481,1 --Shadowstalker Scalp (1)
     .mob Hatefury Shadowstalker
-    .isOnQuest 1481
+step
+    #label Along18
+    #loop
+    .goto 1443/1,945.08,-155.89,0
+    .goto 1443/1,945.08,-155.89,40,0
+    .goto 1443/1,848.42,-125.92,40,0
+    .goto 1443/1,959.02,-51.87,40,0
+    >>Kill |cRXP_ENEMY_Hatefury Rogues|r
+    >>Kill |cRXP_ENEMY_Hatefury Betrayers|r
+    >>Kill |cRXP_ENEMY_Hatefury Felsworns|r
+    .complete -1434,1 --Hatefury Rogue slain (7)
+    .complete -1434,3 --Hatefury Betrayer slain (7)
+    .complete -1434,2 --Hatefury Felsworn slain (7)
+    .mob Hatefury Rogue
+    .mob Hatefury Betrayer
+    .mob Hatefury Felsworn
 step
     #label Drop635x2
     #loop
     .goto 1443/1,759.40,-258.72,0
     .goto 1443/1,759.40,-258.72,40,0
-    .goto 1443/1,694.66,-242.23,40,0
+    .goto 1443/1,812.00,-347.16,40,0
+    >>Kill |cRXP_ENEMY_Hatefury Shadowstalker|r and loot |cRXP_LOOT_Shadowstalker Scalp|r
     >>Kill |cRXP_ENEMY_Hatefury Hellcallers|r
-    .complete 1434,4 --Hatefury Hellcaller slain (7)
+    .complete -1481,1 --Shadowstalker Scalp (1)
+    .complete -1434,4 --Hatefury Hellcaller slain (7)
+    .mob Hatefury Shadowstalker
     .mob Hatefury Hellcaller
-    .isOnQuest 1434
 step
     .goto 1443/1,862.81,-1591.30
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warug|r
@@ -396,32 +382,19 @@ step
     .goto 1443/1,2618.88,-412.52,0
     .goto 1443/1,2618.88,-412.52,40,0
     .goto 1443/1,2583.81,-274.61,40,0
-    .goto 1443/1,2752.41,-247.03,40,0
+    .goto 1443/1,2485.35,-189.47,40,0
+    .goto 1443/1,2770.84,-221.55,40,0
     >>Kill |cRXP_ENEMY_Slitherblade Sorceress|r
     >>Kill |cRXP_ENEMY_Slitherblade Nagas|r
+    >>Kill |cRXP_ENEMY_Slitherblade Oracle|r and loot |cRXP_LOOT_Oracle Crystal|r
+    >>Kill |cRXP_ENEMY_Slitherblade Myrmidons|r
     .complete 6143,3 --Slitherblade Sorceress slain (5)
     .complete 6143,2 --Slitherblade Naga slain (7)
+    .complete -1482,1 --Oracle Crystal (1)
+    .complete 6143,1 --Slitherblade Myrmidon slain (7)
     .mob Slitherblade Sorceress
     .mob Slitherblade Naga
-step
-    #completewith Along13
-    >>As you go: Kill |cRXP_ENEMY_Slitherblade Myrmidons|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 6143,1 --Slitherblade Myrmidon slain (7)
-    .mob Slitherblade Myrmidon
-step
-    #label Along13
-    .goto 1443/1,2751.06,-211.06
-    >>Kill |cRXP_ENEMY_Slitherblade Oracle|r and loot |cRXP_LOOT_Oracle Crystal|r
-    .complete 1482,1 --Oracle Crystal (1)
     .mob Slitherblade Oracle
-    .isOnQuest 1482
-step
-    #loop
-    .goto 1443/1,2770.84,-221.55,0
-    .goto 1443/1,2770.84,-221.55,40,0
-    .goto 1443/1,2796.02,-116.62,40,0
-    >>Kill |cRXP_ENEMY_Slitherblade Myrmidons|r
-    .complete 6143,1 --Slitherblade Myrmidon slain (7)
     .mob Slitherblade Myrmidon
 step
     .goto 1443/1,1884.26,-1150.00
@@ -613,15 +586,11 @@ step
 step
     .goto 1443/1,1672.96,-1818.54
     >>Kill |cRXP_ENEMY_Lord Azrethoc|r
-    .complete 1488,1 --Lord Azrethoc slain (1)
-    .mob Lord Azrethoc
-    .isOnQuest 1488
-step
-    .goto 1443/1,1719.71,-1879.10
     >>Kill |cRXP_ENEMY_Jugkar Grim'rod|r
-    .complete 1488,2 --Jugkar Grim'rod slain (1)
+    .complete -1488,1 --Lord Azrethoc slain (1)
+    .complete -1488,2 --Jugkar Grim'rod slain (1)
+    .mob Lord Azrethoc
     .mob Jugkar Grim'rod
-    .isOnQuest 1488
 step
     .goto 1443/1,3224.02,-1739.99
     >>Kill |cRXP_ENEMY_Jinar'Zillens|r. Loot them for |cRXP_LOOT_Bloodbelly Fish|r

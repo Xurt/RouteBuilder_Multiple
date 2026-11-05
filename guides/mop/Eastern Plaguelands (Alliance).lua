@@ -417,13 +417,9 @@ step
 step
     .goto 23,22.14,68.16
     >>Pick up |cRXP_PICK_Redpath's Shield|r from the ground
-    .complete 27388,3 --Redpath's Shield (1)
-    .isOnQuest 27388
-step
-    .goto 23,22.31,68.40
     >>Pick up |cRXP_PICK_Davil's Libram|r from the ground
-    .complete 27388,2 --Davil's Libram (1)
-    .isOnQuest 27388
+    .complete -27388,3 --Redpath's Shield (1)
+    .complete -27388,2 --Davil's Libram (1)
 step
     .goto 23,35.26,68.07
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chromie|r
@@ -667,12 +663,12 @@ step
     .accept 27464 >>Accept Argent Call: The Trial of the Crypt
     .target Lord Maxwell Tyrosus
 step
-    #completewith Along79
+    #completewith Along78
     >>As you go: Kill |cRXP_ENEMY_Lord Raymond George|r. |cRXP_WARN_Anything left is finished later|r
     .complete 27464,1 --Lord Raymond George slain (1)
     .mob Lord Raymond George
 step
-    #label Along79
+    #label Along78
     .goto 23,75.61,52.03
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Leonid Barthalomew the Revered|r
     .accept 27459 >>Accept The Brotherhood of Light
@@ -694,7 +690,7 @@ step
     .accept 27467 >>Accept Buried Blades
     .target Master Craftsman Omarion
 step
-    #completewith Along84
+    #completewith Along83
     >>As you go: Kill |cRXP_ENEMY_Dread Weavers|r, |cRXP_ENEMY_Diseased Flayers|r, |cRXP_ENEMY_Death Singers|r and |cRXP_ENEMY_Stitched Golems|r. |cRXP_WARN_Anything left is finished later|r
     .complete 27465,1 --Dread Weaver (8)
     .mob Dread Weaver
@@ -707,7 +703,7 @@ step
     .accept 27456 >>Accept Gathering Some Grub(s)
     .target Rimblat Earthshatter
 step
-    #label Along84
+    #label Along83
     #loop
     .goto 23,73.71,52.10,0
     .goto 23,73.71,52.10,40,0
@@ -830,7 +826,7 @@ step
     .turnin 27620 >>Turn in Like Rats
     .target Leonid Barthalomew the Revered
 step
-    #completewith Along100
+    #completewith Along98
     >>As you go: Kill |cRXP_ENEMY_Dread Weavers|r, |cRXP_ENEMY_Diseased Flayers|r, |cRXP_ENEMY_Death Singers|r and |cRXP_ENEMY_Stitched Golems|r. |cRXP_WARN_Anything left is finished later|r
     .complete 27465,1 --Dread Weaver (8)
     .mob Dread Weaver
@@ -843,36 +839,24 @@ step
     .turnin 27456 >>Turn in Gathering Some Grub(s)
     .target Rimblat Earthshatter
 step
+    #label Along98
     .goto 23,71.87,45.37
     >>Kill |cRXP_ENEMY_Stephen Browman|r and loot |cRXP_LOOT_Browman's Wrappings|r
     .complete 27458,1 --Browman's Wrappings (1)
     .mob Stephen Browman
 step
-    #completewith Along100
-    >>As you go: Kill |cRXP_ENEMY_Noxious Assassins|r and |cRXP_ENEMY_Skullmages|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 27465,2 --Noxious Assassin (8)
-    .mob Noxious Assassin
-    .mob Skullmage
-step
-    #label Along100
     #loop
-    .goto 23,76.16,37.19,0
-    .goto 23,76.16,37.19,40,0
-    .goto 23,76.62,32.76,40,0
-    .goto 23,80.35,35.03,40,0
-    >>Interact with |cRXP_FRIENDLY_Slain Scourge Troopers|r
-    .complete 27467,1 --Slain Scourge Trooper (10)
-    .target Slain Scourge Trooper
-step
-    #loop
-    .goto 23,78.71,35.54,0
+    .goto 23,77.03,38.18,0
+    .goto 23,77.03,38.18,40,0
     .goto 23,78.71,35.54,40,0
-    .goto 23,78.00,39.00,40,0
-    .goto 23,80.58,40.66,40,0
+    .goto 23,80.40,38.00,40,0
+    >>Interact with |cRXP_FRIENDLY_Slain Scourge Troopers|r
     >>Kill |cRXP_ENEMY_Noxious Assassins|r and |cRXP_ENEMY_Skullmages|r
     >>Kill |cRXP_ENEMY_Dread Weavers|r, |cRXP_ENEMY_Diseased Flayers|r, |cRXP_ENEMY_Death Singers|r and |cRXP_ENEMY_Stitched Golems|r
+    .complete 27467,1 --Slain Scourge Trooper (10)
     .complete 27465,2 --Noxious Assassin (8)
     .complete 27465,1 --Dread Weaver (8)
+    .target Slain Scourge Trooper
     .mob Noxious Assassin
     .mob Skullmage
     .mob Dread Weaver
@@ -997,24 +981,20 @@ step
     .goto 23,62.61,34.48,40,0
     .goto 23,60.72,31.73,40,0
     >>Kill |cRXP_ENEMY_Scourge Guards|r, |cRXP_ENEMY_Gangled Golems|r and |cRXP_ENEMY_Nerubian Sycophants|r
-    .complete 27487,2 --Scourge Guard (8)
+    >>Kill |cRXP_ENEMY_Ix'lar the Underlord|r
+    .complete -27487,2 --Scourge Guard (8)
+    .complete -27487,1 --Ix'lar the Underlord slain (1)
     .mob Scourge Guard
     .mob Gangled Golem
     .mob Nerubian Sycophant
-    .isOnQuest 27487
-step
-    .goto 23,60.01,31.65
-    >>Kill |cRXP_ENEMY_Ix'lar the Underlord|r
-    .complete 27487,1 --Ix'lar the Underlord slain (1)
     .mob Ix'lar the Underlord
-    .isOnQuest 27487
 step
     .goto 23,55.08,27.22
     >>Kill |cRXP_ENEMY_Borelgore|r
     .complete 27477,1 --Borelgore slain (1)
     .mob Borelgore
 step
-    #completewith Along116
+    #completewith Along113
     >>As you go: Kill |cRXP_ENEMY_Mossflayer Scouts|r, |cRXP_ENEMY_Mossflayer Shadowhunters|r, |cRXP_ENEMY_Mossflayer Cannibals|r and |cRXP_ENEMY_Warlord Thresh'jins|r. Loot them for |cRXP_LOOT_Mossflayer Eye|r. |cRXP_WARN_Anything left is finished later|r
     .complete 27479,1 --Mossflayer Eye (30)
     .mob Mossflayer Scout
@@ -1022,7 +1002,7 @@ step
     .mob Mossflayer Cannibal
     .mob Warlord Thresh'jin
 step
-    #label Along116
+    #label Along113
     .goto 23,66.81,9.86
     >>Kill |cRXP_ENEMY_Warlord Thresh'jin|r and loot |cRXP_LOOT_Body of Warlord Thresh'jin|r
     .complete 27481,1 --Body of Warlord Thresh'jin (1)
@@ -1051,7 +1031,7 @@ step
     .unitscan Vex'tul
     .isQuestTurnedIn 27481 --any of: Out of the Ziggurat
 step
-    #completewith Along120
+    #completewith Along117
     >>As you go: Kill |cRXP_ENEMY_Mossflayer Scouts|r, |cRXP_ENEMY_Mossflayer Shadowhunters|r, |cRXP_ENEMY_Mossflayer Cannibals|r and |cRXP_ENEMY_Warlord Thresh'jins|r. Loot them for |cRXP_LOOT_Mossflayer Eye|r. |cRXP_WARN_Anything left is finished later|r
     .complete 27479,1 --Mossflayer Eye (30)
     .mob Mossflayer Scout
@@ -1064,7 +1044,7 @@ step
     .complete 27482,1 --Bonfire
     .isOnQuest 27482
 step
-    #label Along120
+    #label Along117
     .goto 23,67.34,9.10
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
     .turnin 27482 >>Turn in Into the Flames
@@ -1197,27 +1177,10 @@ step
     .goto 23,52.93,16.53,40,0
     .goto 23,55.90,16.99,40,0
     >>Kill |cRXP_ENEMY_Scourge Siege Engineers|r
-    .complete 27522,1 --Scourge Siege Engineer slain (6)
+    .complete -27522,1 --Scourge Siege Engineer slain (6)
+    .complete -27522,2 --Scourge Siege Engineer slain (6)
+    .complete -27522,3 --Scourge Siege Engineer slain (6)
     .mob Scourge Siege Engineer
-    .isOnQuest 27522
-step
-    #loop
-    .goto 23,55.90,16.99,0
-    .goto 23,55.90,16.99,40,0
-    .goto 23,52.93,16.53,40,0
-    >>Kill |cRXP_ENEMY_Scourge Siege Engineers|r
-    .complete 27522,2 --Scourge Siege Engineer slain (6)
-    .mob Scourge Siege Engineer
-    .isOnQuest 27522
-step
-    #loop
-    .goto 23,55.90,16.99,0
-    .goto 23,55.90,16.99,40,0
-    .goto 23,52.93,16.53,40,0
-    >>Kill |cRXP_ENEMY_Scourge Siege Engineers|r
-    .complete 27522,3 --Scourge Siege Engineer slain (6)
-    .mob Scourge Siege Engineer
-    .isOnQuest 27522
 step
     #loop
     .goto 23,47.90,18.20,0
@@ -1358,42 +1321,36 @@ step
     .accept 27535 >>Accept Just a Little Touched
     .target Argent Apothecary Judkins
 step
-    #completewith Along153
+    #completewith Along147
     >>As you go: Kill |cRXP_ENEMY_Scourge Soldiers|r and |cRXP_ENEMY_Cursed Mages|r. Loot them for |cRXP_LOOT_Stinking Skull|r. |cRXP_WARN_Anything left is finished later|r
     .complete 27539,1 --Stinking Skull (16)
     .mob Scourge Soldier
     .mob Cursed Mage
 step
+    #label Along147
     .goto 23,33.17,15.77
     >>Interact with |cRXP_FRIENDLY_Overstuffed Golems|r
     .complete 27528,1 --Overstuffed Golem (8)
     .target Overstuffed Golem
 step
-    #completewith Along158
-    >>As you go: Pick up |cRXP_PICK_Disembodied Arm|r from the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete 27531,2 --Disembodied Arm (5)
-step
-    #label Along153
     #loop
     .goto 23,31.40,20.00,0
     .goto 23,31.40,20.00,40,0
-    .goto 23,29.40,18.20,40,0
-    .goto 23,26.60,28.40,40,0
-    .goto 23,31.00,28.00,40,0
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darrowshire Spirit|r
-    .complete 27529,1 --Darrowshire Spirit (8)
-    .target Darrowshire Spirit
-step
-    #loop
-    .goto 23,29.58,22.09,0
-    .goto 23,29.58,22.09,40,0
-    .goto 23,32.33,20.34,40,0
+    .goto 23,29.40,21.60,40,0
+    .goto 23,26.80,29.00,40,0
+    .goto 23,31.80,27.40,40,0
     .goto 23,37.01,19.53,40,0
-    .goto 23,38.59,19.33,40,0
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darrowshire Spirit|r
     >>Kill |cRXP_ENEMY_Scourge Soldiers|r and |cRXP_ENEMY_Cursed Mages|r. Loot them for |cRXP_LOOT_Stinking Skull|r
+    .complete 27529,1 --Darrowshire Spirit (8)
     .complete 27539,1 --Stinking Skull (16)
+    .target Darrowshire Spirit
     .mob Scourge Soldier
     .mob Cursed Mage
+step
+    #completewith Along152
+    >>As you go: Pick up |cRXP_PICK_Disembodied Arm|r from the ground. |cRXP_WARN_Anything left is finished later|r
+    .complete 27531,2 --Disembodied Arm (5)
 step
     #loop
     .goto 23,27.63,21.14,0
@@ -1434,7 +1391,7 @@ step
     .unitscan Tarenar Sunstrike
     .isQuestTurnedIn 27551 --any of: The Baroness' Missive
 step
-    #label Along158
+    #label Along152
     .goto 23,27.65,20.86
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Crusader Kevin Frost|r
     .turnin 27528 >>Turn in Scourged Mass

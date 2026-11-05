@@ -1,5 +1,5 @@
 Eversong Woods - Horde - part 1 of 2, planned from level 5
-Guide "5-11 Eversong Woods" in group "Zone Routes (Horde)": this part has 162 steps, 113 stops
+Guide "5-11 Eversong Woods" in group "Zone Routes (Horde)": this part has 163 steps, 113 stops
 Written to guides/mop/Eversong Woods (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -30,7 +30,7 @@ The check passes at once if you are there; if you are a little behind the predic
   level 10 for Fetch! (Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage)
 22 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
 10 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
-4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+5 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 

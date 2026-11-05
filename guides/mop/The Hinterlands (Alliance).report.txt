@@ -1,5 +1,5 @@
 The Hinterlands - Alliance
-Guide "31-35 The Hinterlands" in group "Zone Routes (Alliance)": 75 steps, 58 stops
+Guide "31-35 The Hinterlands" in group "Zone Routes (Alliance)": 73 steps, 57 stops
 Written to guides/mop/The Hinterlands (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -23,7 +23,7 @@ Hearthstone: set at Grella Stonefist (Grella Stonefist's inn); 2 hearth steps in
 These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
 The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
   level 34 for The Battle for Andorhal (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
-7 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+6 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 
 Quests in the guide (39)

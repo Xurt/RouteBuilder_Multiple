@@ -489,21 +489,12 @@ step
 step
     .goto 1447/1,-6153.77,3827.20
     >>Kill |cRXP_ENEMY_Hetaeras|r. Loot them for |cRXP_LOOT_Hetaera's Bruised Head|r
-    .complete 3510,3 --Hetaera's Bruised Head (10)
-    .mob Hetaera
-    .isOnQuest 3510
-step
-    .goto 1447/1,-6153.77,3827.20
     >>Kill |cRXP_ENEMY_Hetaeras|r. Loot them for |cRXP_LOOT_Hetaera's Bloodied Head|r
-    .complete 3510,2 --Hetaera's Bloodied Head (10)
-    .mob Hetaera
-    .isOnQuest 3510
-step
-    .goto 1447/1,-6153.77,3827.20
     >>Kill |cRXP_ENEMY_Hetaeras|r. Loot them for |cRXP_LOOT_Hetaera's Beaten Head|r
-    .complete 3510,1 --Hetaera's Beaten Head (10)
+    .complete -3510,3 --Hetaera's Bruised Head (10)
+    .complete -3510,2 --Hetaera's Bloodied Head (10)
+    .complete -3510,1 --Hetaera's Beaten Head (10)
     .mob Hetaera
-    .isOnQuest 3510
 step
     .goto 1447/1,-7188.22,3894.83
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord Arkkoroc|r

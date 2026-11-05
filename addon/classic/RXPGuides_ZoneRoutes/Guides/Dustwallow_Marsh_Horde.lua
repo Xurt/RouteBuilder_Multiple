@@ -480,15 +480,11 @@ step << Mage
 step << Mage
     .goto 1445/1,-3381.07,-4026.23
     >>Kill |cRXP_ENEMY_Mana Surges|r
-    .complete 1957,1 --Mana Surge slain (12)
-    .mob Mana Surge
-    .isOnQuest 1957
-step << Mage
-    .goto 1445/1,-3378.97,-4027.28
     >>Kill |cRXP_ENEMY_Demon of the Orb|r
-    .complete 1955,1 --Demon of the Orb slain (1)
+    .complete -1957,1 --Mana Surge slain (12)
+    .complete -1955,1 --Demon of the Orb slain (1)
+    .mob Mana Surge
     .mob Demon of the Orb
-    .isOnQuest 1955
 step << Mage
     .goto 1445/1,-3369.00,-4035.33
     >>Kill the Demon of the Orb

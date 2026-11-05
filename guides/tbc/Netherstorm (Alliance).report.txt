@@ -1,5 +1,5 @@
 Netherstorm - Alliance - part 1 of 2, planned from level 68
-Guide "68-70 Netherstorm" in group "Zone Routes (Alliance)": this part has 275 steps, 225 stops
+Guide "68-70 Netherstorm" in group "Zone Routes (Alliance)": this part has 274 steps, 224 stops
 Written to guides/tbc/Netherstorm (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

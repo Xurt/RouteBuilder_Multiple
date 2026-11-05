@@ -1,5 +1,5 @@
 Blade's Edge Mountains - Alliance - part 1 of 3, planned from level 65
-Guide "65-70 Blade's Edge Mountains" in group "Zone Routes (Alliance)": this part has 170 steps, 151 stops
+Guide "65-70 Blade's Edge Mountains" in group "Zone Routes (Alliance)": this part has 170 steps, 150 stops
 Written to guides/mop/Blade's Edge Mountains (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -78,7 +78,7 @@ Step order kept from the last build (locks folder): 168 steps kept, 23 new ones 
   everyone (quests that depend on other zones): 64 more tasks; their whole route comes to 36,884 yd; ends at level 66.0; 2 ORDER PROBLEMS; at its hardest you are 2.4 levels below the mobs
 Hearthstone: set at Lor (Lor's inn); 0 hearth steps in the guide.
 6 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-6 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+7 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 3 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 

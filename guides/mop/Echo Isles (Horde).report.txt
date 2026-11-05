@@ -1,5 +1,5 @@
 Echo Isles - Horde
-Guide "2-4 Echo Isles" in group "Zone Routes (Horde)": 142 steps, 131 stops
+Guide "2-4 Echo Isles" in group "Zone Routes (Horde)": 141 steps, 130 stops
 Written to guides/mop/Echo Isles (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

@@ -128,6 +128,12 @@ step
     .isQuestTurnedIn 25317 --any of: Protect the World Tree
     .xp <80,1
 step
+    #completewith Along17
+    >>As you go: Kill |cRXP_ENEMY_Twilight Vanquishers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25319,2 --Twilight Vanquisher slain (10)
+    .mob Twilight Vanquisher
+step
+    #label Along17
     .goto 198,47.65,35.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Windspeaker Tamila|r
     .accept 25472 >>Accept The Flameseer's Staff
@@ -136,33 +142,19 @@ step
     .xp <80,1
 step
     #loop
-    .goto 198,47.82,29.48,0
-    .goto 198,47.82,29.48,40,0
+    .goto 198,48.08,31.16,0
+    .goto 198,48.08,31.16,40,0
+    .goto 198,48.79,27.58,40,0
+    .goto 198,45.29,24.37,40,0
     .goto 198,43.85,28.68,40,0
-    .goto 198,45.36,22.73,40,0
     >>Pick up |cRXP_PICK_Charred Staff Fragment|r from the ground
-    .complete 25472,1 --Charred Staff Fragment (8)
-    .isOnQuest 25472
-step
-    #loop
-    .goto 198,46.02,25.05,0
-    .goto 198,46.02,25.05,40,0
-    .goto 198,47.94,29.85,40,0
     >>Kill |cRXP_ENEMY_Twilight Flamecallers|r
-    .complete 25319,1 --Twilight Flamecaller slain (4)
-    .mob Twilight Flamecaller
-    .isOnQuest 25319
-step
-    #loop
-    .goto 198,47.61,30.15,0
-    .goto 198,47.61,30.15,40,0
-    .goto 198,49.53,26.97,40,0
-    .goto 198,48.35,34.00,40,0
-    .goto 198,44.22,29.84,40,0
     >>Kill |cRXP_ENEMY_Twilight Vanquishers|r
-    .complete 25319,2 --Twilight Vanquisher slain (10)
+    .complete -25472,1 --Charred Staff Fragment (8)
+    .complete -25319,1 --Twilight Flamecaller slain (4)
+    .complete -25319,2 --Twilight Vanquisher slain (10)
+    .mob Twilight Flamecaller
     .mob Twilight Vanquisher
-    .isOnQuest 25319
 step
     .goto 198,47.73,35.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Malfurion Stormrage|r
@@ -336,6 +328,12 @@ step
     .isQuestTurnedIn 25584 --any of: The Return of the Ancients
     .xp <80,1
 step
+    #completewith Along46
+    >>As you go: Kill |cRXP_ENEMY_Twilight Hunters|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25255,1 --Twilight Hunter slain (6)
+    .mob Twilight Hunter
+step
+    #label Along46
     .goto 198,35.75,19.68
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jadi Falaryn|r
     .accept 25233 >>Accept End of the Supply Line
@@ -345,30 +343,18 @@ step
     .xp <80,1
 step
     #loop
-    .goto 198,37.99,22.90,0
-    .goto 198,37.99,22.90,40,0
+    .goto 198,35.59,22.79,0
+    .goto 198,35.59,22.79,40,0
     .goto 198,34.10,24.85,40,0
-    >>Kill |cRXP_ENEMY_Twilight Proveditors|r
-    .complete 25233,1 --Twilight Proveditor slain (4)
-    .mob Twilight Proveditor
-    .isOnQuest 25233
-step
-    #loop
-    .goto 198,35.20,23.24,0
-    .goto 198,35.20,23.24,40,0
-    .goto 198,32.62,25.79,40,0
-    >>Pick up |cRXP_PICK_Twilight Supplies|r from the ground
-    .complete 25234,1 --Twilight Supplies (36)
-    .isOnQuest 25234
-step
-    #loop
-    .goto 198,37.90,23.81,0
-    .goto 198,37.90,23.81,40,0
     .goto 198,40.51,22.41,40,0
+    >>Kill |cRXP_ENEMY_Twilight Proveditors|r
+    >>Pick up |cRXP_PICK_Twilight Supplies|r from the ground
     >>Kill |cRXP_ENEMY_Twilight Hunters|r
-    .complete 25255,1 --Twilight Hunter slain (6)
+    .complete -25233,1 --Twilight Proveditor slain (4)
+    .complete -25234,1 --Twilight Supplies (36)
+    .complete -25255,1 --Twilight Hunter slain (6)
+    .mob Twilight Proveditor
     .mob Twilight Hunter
-    .isOnQuest 25255
 step
     .goto 198,35.75,19.68
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jadi Falaryn|r
@@ -476,21 +462,23 @@ step
     .target Rio Duran
     .isQuestTurnedIn 25272,25273 --any of: Lycanthoth the Corruptor, Lycanthoth the Corruptor
     .xp <80,1
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along78
+    >>As you go: Kill |cRXP_ENEMY_Hovel Shadowcasters|r and |cRXP_ENEMY_Hovel Brutes|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25277,1 --Hovel Shadowcaster (8)
+    .mob Hovel Shadowcaster
+    .mob Hovel Brute
 step
-    .goto 198,29.68,32.93
+    #loop
+    .goto 198,28.75,33.67,0
+    .goto 198,28.75,33.67,40,0
+    .goto 198,26.48,35.04,40,0
     >>Pick up |cRXP_PICK_Bitterblossom|r from the ground
-    .complete 25297,2 --Bitterblossom (1)
-    .isOnQuest 25297
-step
-    .goto 198,26.48,35.04
     >>Pick up |cRXP_PICK_Stonebloom|r from the ground
-    .complete 25297,1 --Stonebloom (1)
-    .isOnQuest 25297
-step
-    .goto 198,28.45,35.79
     >>Pick up |cRXP_PICK_Darkflame Ember|r from the ground
-    .complete 25297,3 --Darkflame Ember (1)
-    .isOnQuest 25297
+    .complete -25297,2 --Bitterblossom (1)
+    .complete -25297,1 --Stonebloom (1)
+    .complete -25297,3 --Darkflame Ember (1)
 step
     .goto 198,28.42,36.41
     >>Click the |cRXP_PICK_Twilight Cauldron|r
@@ -540,29 +528,19 @@ step
     .isQuestTurnedIn 25301 --any of: Mastering Puppets
     .xp <80,1
 step
-    .goto 198,25.96,41.81
-    >>Kill |cRXP_ENEMY_Crucible of Fire|r
-    .complete 25303,3 --Crucible of Fire slain (1)
-    .mob Crucible of Fire
-    .isOnQuest 25303
-step
-    .goto 198,25.69,41.66
-    >>Kill |cRXP_ENEMY_Crucible of Earth|r
-    .complete 25303,1 --Crucible of Earth slain (1)
-    .mob Crucible of Earth
-    .isOnQuest 25303
-step
     .goto 198,25.80,41.83
+    >>Kill |cRXP_ENEMY_Crucible of Fire|r
+    >>Kill |cRXP_ENEMY_Crucible of Earth|r
     >>Kill |cRXP_ENEMY_Crucible of Air|r
-    .complete 25303,2 --Crucible of Air slain (1)
-    .mob Crucible of Air
-    .isOnQuest 25303
-step
-    .goto 198,25.96,41.61
     >>Kill |cRXP_ENEMY_Crucible of Water|r
-    .complete 25303,4 --Crucible of Water slain (1)
+    .complete -25303,3 --Crucible of Fire slain (1)
+    .complete -25303,1 --Crucible of Earth slain (1)
+    .complete -25303,2 --Crucible of Air slain (1)
+    .complete -25303,4 --Crucible of Water slain (1)
+    .mob Crucible of Fire
+    .mob Crucible of Earth
+    .mob Crucible of Air
     .mob Crucible of Water
-    .isOnQuest 25303
 step
     .goto 198,25.81,41.67
     >>Click the |cRXP_PICK_The Twilight Apocrypha|r
@@ -590,6 +568,7 @@ step
     .accept 25332 >>Accept Get Me Outta Here!
     .target Kristoff Manheim
 step
+    #label Along78
     .goto 198,27.10,35.90
     >>Kristoff Escorted Out
     .complete 25332,1 --Kristoff Escorted Out
@@ -636,30 +615,18 @@ step
     .isOnQuest 25298
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 198,26.38,37.78,0
-    .goto 198,26.38,37.78,40,0
-    .goto 198,28.18,39.85,40,0
-    >>Open the |cRXP_PICK_Lightning Channel|r. Loot it for |cRXP_LOOT_Charged Condenser Jar|r
-    .complete 25355,1 --Charged Condenser Jar (1)
-    .isOnQuest 25355
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 198,27.89,39.95,0
-    .goto 198,27.89,39.95,40,0
+    .goto 198,25.09,35.43,0
     .goto 198,25.09,35.43,40,0
+    .goto 198,26.85,39.30,40,0
+    .goto 198,28.30,39.87,40,0
+    >>Open the |cRXP_PICK_Lightning Channel|r. Loot it for |cRXP_LOOT_Charged Condenser Jar|r
     >>Kill |cRXP_ENEMY_Twilight Stormcallers|r
-    .complete 25354,1 --Twilight Stormcaller slain (8)
-    .mob Twilight Stormcaller
-    .isOnQuest 25354
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 198,27.29,39.76,0
-    .goto 198,27.29,39.76,40,0
-    .goto 198,29.92,39.33,40,0
     >>Kill |cRXP_ENEMY_Howling Riftdwellers|r
-    .complete 25354,2 --Howling Riftdweller slain (5)
+    .complete -25355,1 --Charged Condenser Jar (1)
+    .complete -25354,1 --Twilight Stormcaller slain (8)
+    .complete -25354,2 --Howling Riftdweller slain (5)
+    .mob Twilight Stormcaller
     .mob Howling Riftdweller
-    .isOnQuest 25354
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 198,32.33,37.11
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spirit of Lo'Gosh|r. |cRXP_WARN_This NPC walks a patrol route|r
@@ -686,22 +653,22 @@ step
     .accept 25577 >>Accept Crushing the Cores
     .target Jordan Olafson
 step
-    #completewith Along103
+    #completewith Along92
     >>As you go: Click the |cRXP_PICK_Twilight Arms Crate|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25575,1 --Twilight Arms Crate
 step
-    #completewith Along101
+    #completewith Along90
     >>As you go: Kill |cRXP_ENEMY_Searing Guardian|r and loot |cRXP_LOOT_Smoldering Core|r. |cRXP_WARN_Anything left is finished later|r
     .collect 55123,1,25577,1 --Smoldering Core (1)
     .mob Searing Guardian
 step
-    #label Along101
+    #label Along90
     .goto 198,26.32,41.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Yargra Blackscar|r
     .accept 25576 >>Accept Rage of the Wolf Ancient
     .target Yargra Blackscar
 step
-    #completewith Along103
+    #completewith Along92
     >>As you go: Kill |cRXP_ENEMY_Dark Iron Laborers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25576,1 --Dark Iron Laborer slain (12)
     .mob Dark Iron Laborer
@@ -714,7 +681,7 @@ step
     .collect 55123,1,25577,1 --Smoldering Core (1)
     .mob Searing Guardian
 step
-    #label Along103
+    #label Along92
     .goto 198,30.34,44.19
     >>Click the |cRXP_PICK_Twilight Anvil|r
     .complete 25577,1 --Twilight Anvil
@@ -862,6 +829,19 @@ step
     .isQuestTurnedIn 25408 --any of: Seeds of Their Demise
     .xp <80,1
 step
+    #completewith Along119
+    >>As you go: Kill |cRXP_ENEMY_Panicked Bunnies|r and |cRXP_ENEMY_Terrified Squirrels|r. Loot them for |cRXP_LOOT_Frightened Animal|r. Kill |cRXP_ENEMY_Raging Firestorms|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25385,1 --Frightened Animal (1)
+    .complete -25381,1 --Raging Firestorm slain (10)
+    .mob Panicked Bunny
+    .mob Terrified Squirrel
+    .mob Raging Firestorm
+step
+    #completewith Along118
+    >>As you go: Kill |cRXP_ENEMY_Twilight Inferno Lords|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25382,1 --Twilight Inferno Lord slain (6)
+    .mob Twilight Inferno Lord
+step
     #loop
     .goto 198,14.09,43.08,0
     .goto 198,14.09,43.08,40,0
@@ -893,48 +873,36 @@ step
     .isQuestTurnedIn 25411 --any of: A New Master
     .xp <80,1
 step
+    #label Along118
     .goto 198,14.29,45.39
     >>Click the |cRXP_PICK_Southern Firestone|r
     .complete 25412,3 --Southern Firestone
     .isOnQuest 25412
 step
+    #label Along119
     .goto 198,11.62,41.49
     >>Click the |cRXP_PICK_Central Firestone|r
     .complete 25412,2 --Central Firestone
     .isOnQuest 25412
 step
-    .goto 198,9.63,36.45
-    >>Click the |cRXP_PICK_Northern Firestone|r
-    .complete 25412,1 --Northern Firestone
-    .isOnQuest 25412
-step
     #loop
-    .goto 198,10.40,36.20,0
-    .goto 198,10.40,36.20,40,0
+    .goto 198,12.90,42.26,0
+    .goto 198,12.90,42.26,40,0
+    .goto 198,15.47,40.78,40,0
     .goto 198,12.88,39.09,40,0
+    .goto 198,9.63,36.70,40,0
+    >>Click the |cRXP_PICK_Northern Firestone|r
     >>Kill |cRXP_ENEMY_Panicked Bunnies|r and |cRXP_ENEMY_Terrified Squirrels|r. Loot them for |cRXP_LOOT_Frightened Animal|r
-    .complete 25385,1 --Frightened Animal (1)
+    >>Kill |cRXP_ENEMY_Raging Firestorms|r
+    >>Kill |cRXP_ENEMY_Twilight Inferno Lords|r
+    .complete -25412,1 --Northern Firestone
+    .complete -25385,1 --Frightened Animal (1)
+    .complete -25381,1 --Raging Firestorm slain (10)
+    .complete -25382,1 --Twilight Inferno Lord slain (6)
     .mob Panicked Bunny
     .mob Terrified Squirrel
-    .isOnQuest 25385
-step
-    #loop
-    .goto 198,13.25,41.33,0
-    .goto 198,13.25,41.33,40,0
-    .goto 198,15.47,40.78,40,0
-    >>Kill |cRXP_ENEMY_Raging Firestorms|r
-    .complete 25381,1 --Raging Firestorm slain (10)
     .mob Raging Firestorm
-    .isOnQuest 25381
-step
-    #loop
-    .goto 198,12.30,38.58,0
-    .goto 198,12.30,38.58,40,0
-    .goto 198,9.63,36.70,40,0
-    >>Kill |cRXP_ENEMY_Twilight Inferno Lords|r
-    .complete 25382,1 --Twilight Inferno Lord slain (6)
     .mob Twilight Inferno Lord
-    .isOnQuest 25382
 step
     .goto 198,19.22,37.89
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mylune|r
@@ -974,17 +942,16 @@ step
     .isQuestTurnedIn 25412,25443 --any of: The Name Never Spoken, The Name Never Spoken
     .xp <80,1
 step
-    .goto 198,14.08,41.47
+    #loop
+    .goto 198,14.35,40.49,0
+    .goto 198,14.35,40.49,40,0
+    .goto 198,12.84,37.79,40,0
     >>Kill |cRXP_ENEMY_Thol'embaar|r and loot |cRXP_LOOT_Black Heart of Thol'embaar|r
-    .complete 25428,1 --Black Heart of Thol'embaar (1)
-    .mob Thol'embaar
-    .isOnQuest 25428
-step
-    .goto 198,13.30,38.48
     >>Interact with |cRXP_FRIENDLY_Injured Fawns|r
-    .complete 25392,1 --Injured Fawn (3)
+    .complete -25428,1 --Black Heart of Thol'embaar (1)
+    .complete -25392,1 --Injured Fawn (3)
+    .mob Thol'embaar
     .target Injured Fawn
-    .isOnQuest 25392
 step
     .goto 198,19.22,37.89
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mylune|r
@@ -1072,33 +1039,19 @@ step
     .xp <80,1
 step
     #loop
-    .goto 198,33.87,65.31,0
-    .goto 198,33.87,65.31,40,0
-    .goto 198,34.12,59.32,40,0
-    .goto 198,36.87,53.38,40,0
-    .goto 198,35.75,56.83,40,0
-    >>Loot the |cRXP_PICK_Scorched Soils|r for |cRXP_LOOT_Hyjal Seedling|r
-    .complete 25491,1 --Hyjal Seedling (10)
-    .isOnQuest 25491
-step
-    #loop
-    .goto 198,37.28,58.16,0
-    .goto 198,37.28,58.16,40,0
-    .goto 198,37.07,53.88,40,0
-    .goto 198,35.22,52.74,40,0
-    >>Kill |cRXP_ENEMY_Lava Surgers|r
-    .complete 25492,1 --Lava Surger slain (10)
-    .mob Lava Surger
-    .isOnQuest 25492
-step
-    #loop
-    .goto 198,34.75,55.63,0
+    .goto 198,34.49,62.44,0
+    .goto 198,34.49,62.44,40,0
     .goto 198,34.75,55.63,40,0
-    .goto 198,35.51,60.09,40,0
+    .goto 198,36.87,53.38,40,0
+    .goto 198,38.96,54.39,40,0
+    >>Loot the |cRXP_PICK_Scorched Soils|r for |cRXP_LOOT_Hyjal Seedling|r
+    >>Kill |cRXP_ENEMY_Lava Surgers|r
     >>Kill |cRXP_ENEMY_Core Hound|r and loot |cRXP_LOOT_Core Hound Entrails|r
-    .complete 25493,1 --Core Hound Entrails (1)
+    .complete -25491,1 --Hyjal Seedling (10)
+    .complete -25492,1 --Lava Surger slain (10)
+    .complete -25493,1 --Core Hound Entrails (1)
+    .mob Lava Surger
     .mob Core Hound
-    .isOnQuest 25493
 step
     .goto 198,27.05,63.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rayne Feathersong|r
@@ -1132,6 +1085,12 @@ step
     .isQuestTurnedIn 25493 --any of: Fresh Bait
     .xp <80,1
 step
+    #completewith Along146
+    >>As you go: Kill |cRXP_ENEMY_Activated Flamewards|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25502,2 --Activated Flameward (8)
+    .mob Activated Flameward
+step
+    #label Along146
     .goto 198,38.31,63.93
     >>Click the |cRXP_PICK_Flameward|r
     .complete 25502,1 --Flameward
@@ -1157,6 +1116,12 @@ step
     .isQuestTurnedIn 25578 --any of: Return to Nordrassil
     .xp <80,1
 step
+    #completewith Along153
+    >>As you go: Kill |cRXP_ENEMY_Wormwing Swifttalons|r and |cRXP_ENEMY_Wormwing Screechers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25655,1 --Wormwing Swifttalon (8)
+    .mob Wormwing Swifttalon
+    .mob Wormwing Screecher
+step
     .goto 198,44.44,46.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Choluna|r
     .accept 25663 >>Accept An Offering for Aviana
@@ -1175,6 +1140,7 @@ step
     .target Mysterious Winged Spirit
     .isOnQuest 25663
 step
+    #label Along153
     .goto 198,40.35,44.32
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mysterious Winged Spirit|r
     .accept 25665 >>Accept A Plea From Beyond
@@ -1183,22 +1149,15 @@ step
     .xp <80,1
 step
     #loop
-    .goto 198,36.95,44.49,0
-    .goto 198,36.95,44.49,40,0
-    .goto 198,36.32,47.08,40,0
-    >>Loot the |cRXP_PICK_Stolen Hyjal Eggs|r for |cRXP_LOOT_Hyjal Egg|r
-    .complete 25656,1 --Hyjal Egg (8)
-    .isOnQuest 25656
-step
-    #loop
-    .goto 198,37.49,44.03,0
-    .goto 198,37.49,44.03,40,0
+    .goto 198,39.30,44.12,0
     .goto 198,39.30,44.12,40,0
+    .goto 198,37.49,44.03,40,0
+    >>Loot the |cRXP_PICK_Stolen Hyjal Eggs|r for |cRXP_LOOT_Hyjal Egg|r
     >>Kill |cRXP_ENEMY_Wormwing Swifttalons|r and |cRXP_ENEMY_Wormwing Screechers|r
-    .complete 25655,1 --Wormwing Swifttalon (8)
+    .complete -25656,1 --Hyjal Egg (8)
+    .complete -25655,1 --Wormwing Swifttalon (8)
     .mob Wormwing Swifttalon
     .mob Wormwing Screecher
-    .isOnQuest 25655
 step
     .goto 198,42.18,45.46
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thisalee Crow|r. |cRXP_WARN_This NPC walks a patrol route|r
@@ -1285,6 +1244,14 @@ step
     .isQuestTurnedIn 25740 --any of: Fact-Finding Mission
     .xp <80,1
 step
+    #completewith Along168
+    >>As you go: Pick up |cRXP_PICK_Twilight Armor Plate|r from the ground. Kill |cRXP_ENEMY_Twilight Dragonkin Armorers|r and |cRXP_ENEMY_Twilight Dragonkins|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25758,1 --Twilight Armor Plate (8)
+    .complete -25746,1 --Twilight Dragonkin Armorer (8)
+    .mob Twilight Dragonkin Armorer
+    .mob Twilight Dragonkin
+step
+    #label Along168
     .goto 198,31.28,77.09
     >>Click the |cRXP_PICK_Codex of Shadows|r
     .accept 25763 >>Accept The Codex of Shadows
@@ -1294,22 +1261,15 @@ step
     #loop
     .goto 198,30.87,77.42,0
     .goto 198,30.87,77.42,40,0
-    .goto 198,31.03,76.28,40,0
+    .goto 198,31.48,75.57,40,0
     .goto 198,31.91,90.10,40,0
-    .goto 198,30.82,79.58,40,0
+    .goto 198,30.85,80.04,40,0
     >>Pick up |cRXP_PICK_Twilight Armor Plate|r from the ground
-    .complete 25758,1 --Twilight Armor Plate (8)
-    .isOnQuest 25758
-step
-    #loop
-    .goto 198,31.36,77.43,0
-    .goto 198,31.36,77.43,40,0
-    .goto 198,30.19,81.17,40,0
     >>Kill |cRXP_ENEMY_Twilight Dragonkin Armorers|r and |cRXP_ENEMY_Twilight Dragonkins|r
-    .complete 25746,1 --Twilight Dragonkin Armorer (8)
+    .complete -25758,1 --Twilight Armor Plate (8)
+    .complete -25746,1 --Twilight Dragonkin Armorer (8)
     .mob Twilight Dragonkin Armorer
     .mob Twilight Dragonkin
-    .isOnQuest 25746
 step
     .goto 198,42.18,45.46
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thisalee Crow|r. |cRXP_WARN_This NPC walks a patrol route|r
@@ -1343,6 +1303,12 @@ step
     .isQuestTurnedIn 25763 --any of: The Codex of Shadows
     .xp <80,1
 step
+    #completewith Along175
+    >>As you go: Kill |cRXP_ENEMY_Twilight Juggernauts|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25761,1 --Twilight Juggernaut slain (3)
+    .mob Twilight Juggernaut
+step
+    #label Along175
     #loop
     .goto 198,29.89,77.07,0
     .goto 198,29.89,77.07,40,0
@@ -1436,6 +1402,13 @@ step
     .isQuestTurnedIn 25510 --any of: Tortolla Speaks
     .xp <80,1
 step
+    #completewith Along188
+    >>As you go: Kill |cRXP_ENEMY_Tortolla's Eggs|r and |cRXP_ENEMY_Child of Tortollas|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25519,1 --Tortolla's Egg (8)
+    .mob Tortolla's Egg
+    .mob Child of Tortolla
+step
+    #label Along188
     .goto 198,25.25,54.80
     >>Disable the two Rods of Subjugation that bind Tortolla.
     .complete 25514,2 --Rod of Subjugation 02
@@ -1735,6 +1708,17 @@ step
     .isQuestTurnedIn 25372 --any of: Aessina's Miracle
     .xp <80,1
 step
+    #completewith Along234
+    >>As you go: Kill |cRXP_ENEMY_Twilight Scorchlords|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25899,1 --Twilight Scorchlord slain (10)
+    .mob Twilight Scorchlord
+step
+    #completewith Along231
+    >>As you go: Kill |cRXP_ENEMY_Twilight Field Captain|r and loot |cRXP_LOOT_Glyph of Opening|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25904,1 --Glyph of Opening (1)
+    .mob Twilight Field Captain
+step
+    #label Along231
     #loop
     .goto 198,50.39,58.31,0
     .goto 198,50.39,58.31,40,0
@@ -1752,12 +1736,17 @@ step
     .isQuestTurnedIn 25372 --any of: Aessina's Miracle
     .xp <80,1
 step
+    #completewith Along234
+    >>As you go: Pick up |cRXP_PICK_Warden's Arrow|r from the ground. |cRXP_WARN_Anything left is finished later|r
+    .complete -25901,1 --Warden's Arrow (15)
+step
     .goto 198,57.12,55.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Irontree|r
     .turnin 25881 >>Turn in Lost Wardens
     .target Captain Irontree
     .isOnQuest 25881
 step
+    #label Along234
     .goto 198,57.12,55.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Irontree|r
     .accept 25886 >>Accept Pressing the Advantage
@@ -1765,23 +1754,23 @@ step
     .isQuestTurnedIn 25881 --any of: Lost Wardens
     .xp <80,1
 step
-    #loop
-    .goto 198,55.92,57.84,0
-    .goto 198,55.92,57.84,40,0
-    .goto 198,57.18,53.07,40,0
-    >>Pick up |cRXP_PICK_Warden's Arrow|r from the ground
-    .complete 25901,1 --Warden's Arrow (15)
-    .isOnQuest 25901
+    #completewith Along235
+    >>As you go: Kill |cRXP_ENEMY_Twilight Field Captain|r and loot |cRXP_LOOT_Glyph of Opening|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25904,1 --Glyph of Opening (1)
+    .mob Twilight Field Captain
 step
+    #label Along235
     #loop
-    .goto 198,54.82,57.71,0
-    .goto 198,54.82,57.71,40,0
+    .goto 198,55.65,56.78,0
+    .goto 198,55.65,56.78,40,0
+    .goto 198,58.60,58.18,40,0
+    .goto 198,51.57,57.47,40,0
     .goto 198,52.48,53.48,40,0
-    .goto 198,50.98,56.77,40,0
+    >>Pick up |cRXP_PICK_Warden's Arrow|r from the ground
     >>Kill |cRXP_ENEMY_Twilight Scorchlords|r
-    .complete 25899,1 --Twilight Scorchlord slain (10)
+    .complete -25901,1 --Warden's Arrow (15)
+    .complete -25899,1 --Twilight Scorchlord slain (10)
     .mob Twilight Scorchlord
-    .isOnQuest 25899
 step
     .goto 198,57.12,55.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Irontree|r
@@ -1857,6 +1846,14 @@ step
     .isQuestTurnedIn 25906 --any of: The Third Flamegate
     .xp <80,1
 step
+    #completewith Along246
+    >>As you go: Kill |cRXP_ENEMY_Shadowflame Masters|r. Kill |cRXP_ENEMY_Molten Tormentors|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25910,1 --Shadowflame Master slain (4)
+    .complete -25910,2 --Molten Tormentor slain (10)
+    .mob Shadowflame Master
+    .mob Molten Tormentor
+step
+    #label Along246
     #loop
     .goto 198,65.83,57.07,0
     .goto 198,65.83,57.07,40,0
@@ -1866,23 +1863,16 @@ step
     .isOnQuest 25915
 step
     #loop
-    .goto 198,64.10,56.97,0
-    .goto 198,64.10,56.97,40,0
-    .goto 198,62.61,54.54,40,0
-    >>Kill |cRXP_ENEMY_Shadowflame Masters|r
-    .complete 25910,1 --Shadowflame Master slain (4)
-    .mob Shadowflame Master
-    .isOnQuest 25910
-step
-    #loop
-    .goto 198,62.01,53.24,0
-    .goto 198,62.01,53.24,40,0
-    .goto 198,62.25,57.26,40,0
+    .goto 198,64.26,58.31,0
     .goto 198,64.26,58.31,40,0
+    .goto 198,61.96,56.67,40,0
+    .goto 198,62.01,53.24,40,0
+    >>Kill |cRXP_ENEMY_Shadowflame Masters|r
     >>Kill |cRXP_ENEMY_Molten Tormentors|r
-    .complete 25910,2 --Molten Tormentor slain (10)
+    .complete -25910,1 --Shadowflame Master slain (4)
+    .complete -25910,2 --Molten Tormentor slain (10)
+    .mob Shadowflame Master
     .mob Molten Tormentor
-    .isOnQuest 25910
 step
     .goto 198,64.27,53.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Garunda Mountainpeak|r
@@ -1994,6 +1984,16 @@ step
     .isQuestTurnedIn 25276 --any of: Your New Identity
     .xp <80,1
 step
+    #completewith Along266
+    >>As you go: Pick up |cRXP_PICK_Flame Blossom|r from the ground. |cRXP_WARN_Anything left is finished later|r
+    .complete -25224,1 --Flame Blossom (5)
+step
+    #completewith Along265
+    >>As you go: Kill |cRXP_ENEMY_Fiery Instructors|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25223,1 --Fiery Instructor slain (8)
+    .mob Fiery Instructor
+step
+    #label Along265
     .goto 198,77.05,62.14
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Instructor Cargall|r
     .accept 25330 >>Accept Waste of Flesh
@@ -2001,6 +2001,7 @@ step
     .isQuestTurnedIn 25276 --any of: Your New Identity
     .xp <80,1
 step
+    #label Along266
     #loop
     .goto 198,79.24,63.25,0
     .goto 198,79.24,63.25,40,0
@@ -2071,6 +2072,11 @@ step
     .isQuestTurnedIn 25291 --any of: Twilight Training
     .xp <80,1
 step
+    #completewith Along276
+    >>As you go: Open the |cRXP_PICK_Crate of Scrolls|r. Loot it for |cRXP_LOOT_Twilight Communique|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25296,1 --Twilight Communique (1)
+step
+    #label Along276
     .goto 198,90.15,56.39
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Instructor Devoran|r
     .accept 25294 >>Accept Walking the Dog
@@ -2342,6 +2348,15 @@ step
     .isQuestTurnedIn 25531 --any of: Twilight Riot
     .xp <80,1
 step
+    #completewith Along319
+    >>As you go: Kill |cRXP_ENEMY_Twilight Initiates|r, |cRXP_ENEMY_Twilight Enforcers|r, |cRXP_ENEMY_Fiery Instructors|r and |cRXP_ENEMY_Twilight Cultists|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25608,2 --Twilight Initiate (8)
+    .mob Twilight Initiate
+    .mob Twilight Enforcer
+    .mob Fiery Instructor
+    .mob Twilight Cultist
+step
+    #label Along319
     #loop
     .goto 198,80.64,66.14,0
     .goto 198,80.64,66.14,40,0
@@ -2384,6 +2399,13 @@ step
     .isQuestTurnedIn 25608 --any of: Slash and Burn
     .xp <80,1
 step
+    #completewith Along326
+    >>As you go: Kill |cRXP_ENEMY_Flame Ascendants|r. Kill |cRXP_ENEMY_Twilight Subjugators|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25548,1 --Flame Ascendant slain (4)
+    .complete -25548,2 --Twilight Subjugator slain (5)
+    .mob Flame Ascendant
+    .mob Twilight Subjugator
+step
     .goto 198,59.66,80.80
     >>Open the |cRXP_PICK_Burning Litanies|r. Loot it for |cRXP_LOOT_The Burning Litanies|r
     .complete 25554,2 --The Burning Litanies (1)
@@ -2395,33 +2417,24 @@ step
     .isQuestTurnedIn 25608 --any of: Slash and Burn
     .xp <78,1
 step
+    #label Along326
     .goto 198,56.84,83.85
     >>Pick up |cRXP_PICK_Ascendant's Codex|r from the ground
     .complete 25554,1 --Ascendant's Codex (1)
     .isOnQuest 25554
 step
-    .goto 198,58.14,78.89
-    >>Pick up |cRXP_PICK_Tome of Flame|r from the ground
-    .complete 25554,3 --Tome of Flame (1)
-    .isOnQuest 25554
-step
     #loop
-    .goto 198,60.68,77.93,0
-    .goto 198,60.68,77.93,40,0
-    .goto 198,58.89,82.96,40,0
-    >>Kill |cRXP_ENEMY_Flame Ascendants|r
-    .complete 25548,1 --Flame Ascendant slain (4)
-    .mob Flame Ascendant
-    .isOnQuest 25548
-step
-    #loop
-    .goto 198,59.66,79.99,0
-    .goto 198,59.66,79.99,40,0
+    .goto 198,57.85,83.51,0
     .goto 198,57.85,83.51,40,0
+    .goto 198,60.49,79.10,40,0
+    >>Pick up |cRXP_PICK_Tome of Flame|r from the ground
+    >>Kill |cRXP_ENEMY_Flame Ascendants|r
     >>Kill |cRXP_ENEMY_Twilight Subjugators|r
-    .complete 25548,2 --Twilight Subjugator slain (5)
+    .complete -25554,3 --Tome of Flame (1)
+    .complete -25548,1 --Flame Ascendant slain (4)
+    .complete -25548,2 --Twilight Subjugator slain (5)
+    .mob Flame Ascendant
     .mob Twilight Subjugator
-    .isOnQuest 25548
 step
     .goto 198,72.24,73.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Aronus|r
@@ -2462,33 +2475,23 @@ step
     .isQuestTurnedIn 25554 --any of: Secrets of the Flame
     .xp <78,1
 step
-    .goto 198,57.34,67.89
-    >>Kill |cRXP_ENEMY_Azralon the Gatekeeper|r
-    .complete 25555,1 --Azralon the Gatekeeper slain (1)
-    .mob Azralon the Gatekeeper
-    .isOnQuest 25555
-step
     #loop
-    .goto 198,57.79,68.38,0
-    .goto 198,57.79,68.38,40,0
+    .goto 198,60.38,70.96,0
     .goto 198,60.38,70.96,40,0
-    .goto 198,54.49,66.98,40,0
+    .goto 198,57.34,67.89,40,0
+    .goto 198,54.51,66.81,40,0
+    >>Kill |cRXP_ENEMY_Azralon the Gatekeeper|r
     >>Kill |cRXP_ENEMY_Twilight Augurs|r
-    .complete 25549,1 --Twilight Augur slain (4)
-    .mob Twilight Augur
-    .isOnQuest 25549
-step
-    .goto 198,57.03,69.29
     >>Kill |cRXP_ENEMY_Emissary of Flame|r
-    .complete 25549,3 --Emissary of Flame slain (1)
-    .mob Emissary of Flame
-    .isOnQuest 25549
-step
-    .goto 198,56.08,67.50
     >>Kill |cRXP_ENEMY_Twilight Retainers|r
-    .complete 25549,2 --Twilight Retainer slain (4)
+    .complete -25555,1 --Azralon the Gatekeeper slain (1)
+    .complete -25549,1 --Twilight Augur slain (4)
+    .complete -25549,3 --Emissary of Flame slain (1)
+    .complete -25549,2 --Twilight Retainer slain (4)
+    .mob Azralon the Gatekeeper
+    .mob Twilight Augur
+    .mob Emissary of Flame
     .mob Twilight Retainer
-    .isOnQuest 25549
 step
     .goto 198,58.94,77.69
     >>Kill |cRXP_ENEMY_Young Twilight Drakes|r and |cRXP_ENEMY_Desperionas|r. Loot them for |cRXP_LOOT_Young Twilight Drake Skull|r

@@ -1,5 +1,5 @@
 Un'Goro Crater - Alliance - part 1 of 3, planned from level 50
-Guide "50-56 Un'Goro Crater" in group "Zone Routes (Alliance)": this part has 69 steps, 58 stops
+Guide "50-56 Un'Goro Crater" in group "Zone Routes (Alliance)": this part has 70 steps, 58 stops
 Written to guides/classic/Un'Goro Crater (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -22,7 +22,7 @@ Step order kept from the last build (locks folder): 61 steps kept, 16 new ones s
   Druid (quests that depend on other zones): 1 more tasks; their whole route comes to 23,525 yd; ends at level 50.7; at its hardest you are 2.6 levels below the mobs
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
 3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (31)
 ------------------------
@@ -130,7 +130,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Un'Goro Crater - Alliance - part 3 of 3, planned from level 56
-Guide "50-56 Un'Goro Crater" in group "Zone Routes (Alliance)": this part has 10 steps, 9 stops
+Guide "50-56 Un'Goro Crater" in group "Zone Routes (Alliance)": this part has 9 steps, 8 stops
 Written to guides/classic/Un'Goro Crater (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

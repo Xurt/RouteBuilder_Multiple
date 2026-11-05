@@ -71,7 +71,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Stonetalon Mountains - Alliance - part 2 of 3, planned from level 24
-Guide "21-28 Stonetalon Mountains" in group "Zone Routes (Alliance)": this part has 12 steps, 10 stops
+Guide "21-28 Stonetalon Mountains" in group "Zone Routes (Alliance)": this part has 11 steps, 9 stops
 Written to guides/tbc/Stonetalon Mountains (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

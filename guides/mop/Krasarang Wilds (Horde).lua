@@ -343,6 +343,18 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 30124 --Blind Them!
     .xp <86,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along45
+    >>As you go: Kill |cRXP_ENEMY_Dojani Reclaimers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -30127,1 --Dojani Reclaimer slain (6)
+    .mob Dojani Reclaimer
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along45
+    >>As you go: Loot the |cRXP_PICK_Imperial Lotus|r for |cRXP_LOOT_Imperial Lotus Leaves|r. Kill |cRXP_ENEMY_Dojani Enforcers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -30130,1 --Imperial Lotus Leaves (20)
+    .complete -30127,3 --Dojani Enforcer slain (4)
+    .mob Dojani Enforcer
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along45
     .goto 418,55.52,34.47
     >>Kill |cRXP_ENEMY_Dojani Dominator|r and loot |cRXP_LOOT_Dojani Orders|r
     .complete 30129,1 --Dojani Orders (1)
@@ -362,6 +374,14 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 30129 --any of: The Mogu Agenda
     .xp <86,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along48
+    >>As you go: Kill |cRXP_ENEMY_Dojani Surveyors|r. Kill |cRXP_ENEMY_Dojani Enforcers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -30127,2 --Dojani Surveyor slain (8)
+    .complete -30127,3 --Dojani Enforcer slain (4)
+    .mob Dojani Surveyor
+    .mob Dojani Enforcer
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along48
     .goto 418,55.79,31.72
     >>Kill |cRXP_ENEMY_Dojani Reclaimers|r
     .complete 30127,1 --Dojani Reclaimer slain (6)
@@ -374,30 +394,17 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isOnQuest 30128
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 418,55.77,36.36,0
-    .goto 418,55.77,36.36,40,0
-    .goto 418,54.45,40.10,40,0
-    >>Loot the |cRXP_PICK_Imperial Lotus|r for |cRXP_LOOT_Imperial Lotus Leaves|r
-    .complete 30130,1 --Imperial Lotus Leaves (20)
-    .isOnQuest 30130
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 418,55.15,38.10,0
-    .goto 418,55.15,38.10,40,0
+    .goto 418,54.06,35.30,0
     .goto 418,54.06,35.30,40,0
+    .goto 418,55.95,37.70,40,0
+    >>Loot the |cRXP_PICK_Imperial Lotus|r for |cRXP_LOOT_Imperial Lotus Leaves|r
     >>Kill |cRXP_ENEMY_Dojani Surveyors|r
-    .complete 30127,2 --Dojani Surveyor slain (8)
-    .mob Dojani Surveyor
-    .isOnQuest 30127
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 418,55.15,38.73,0
-    .goto 418,55.15,38.73,40,0
-    .goto 418,53.89,36.05,40,0
     >>Kill |cRXP_ENEMY_Dojani Enforcers|r
-    .complete 30127,3 --Dojani Enforcer slain (4)
+    .complete -30130,1 --Imperial Lotus Leaves (20)
+    .complete -30127,2 --Dojani Surveyor slain (8)
+    .complete -30127,3 --Dojani Enforcer slain (4)
+    .mob Dojani Surveyor
     .mob Dojani Enforcer
-    .isOnQuest 30127
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 418,28.69,50.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kor Bloodtusk|r. |cRXP_WARN_This NPC walks a patrol route|r
@@ -445,12 +452,18 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 30131 --any of: Life
     .xp <86,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along59
+    >>As you go: Kill |cRXP_ENEMY_Sunwalker Scout|r and loot |cRXP_LOOT_Sunwalker Scout's Report|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -30132,1 --Sunwalker Scout's Report (1)
+    .mob Sunwalker Scout
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 418,44.20,42.89
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Koro Mistwalker|r
     .turnin 30133 >>Turn in Into the Wilds
     .target Koro Mistwalker
     .isOnQuest 30133
 step
+    #label Along59
     .goto 418,44.20,42.89
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Koro Mistwalker|r
     .accept 30269 >>Accept Unsafe Passage
@@ -490,6 +503,12 @@ step
     .isQuestTurnedIn 30269 --any of: Unsafe Passage
     .xp <86,1
 step
+    #completewith Along65
+    >>As you go: Kill |cRXP_ENEMY_Riverblade Pathstalkers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -30270,1 --Riverblade Pathstalker slain (8)
+    .mob Riverblade Pathstalker
+step
+    #label Along65
     .goto 418,43.55,32.98
     >>Click the |cRXP_PICK_Riverblade Spike Trap|r
     .complete 30694,1 --Riverblade Spike Trap
@@ -568,24 +587,17 @@ step
     .goto 418,40.40,54.80,0
     .goto 418,40.40,54.80,40,0
     .goto 418,40.53,50.31,40,0
-    .goto 418,40.16,46.67,40,0
+    .goto 418,40.02,47.78,40,0
     >>Kill |cRXP_ENEMY_Haunt of Despairs|r, |cRXP_ENEMY_Incarnation of Despairs|r and |cRXP_ENEMY_Source of Despairs|r
-    .complete 30272,1 --Haunt of Despair (18)
+    >>Kill |cRXP_ENEMY_Hopeless Monks|r, |cRXP_ENEMY_Hopeless Acolytes|r and |cRXP_ENEMY_Kill Credit: Sha Can Awes|r
+    .complete -30272,1 --Haunt of Despair (18)
+    .complete -30271,1 --Hopeless Monk (10)
     .mob Haunt of Despair
     .mob Incarnation of Despair
     .mob Source of Despair
-    .isOnQuest 30272
-step
-    #loop
-    .goto 418,39.79,48.35,0
-    .goto 418,39.79,48.35,40,0
-    .goto 418,42.41,50.50,40,0
-    >>Kill |cRXP_ENEMY_Hopeless Monks|r, |cRXP_ENEMY_Hopeless Acolytes|r and |cRXP_ENEMY_Kill Credit: Sha Can Awes|r
-    .complete 30271,1 --Hopeless Monk (10)
     .mob Hopeless Monk
     .mob Hopeless Acolyte
     .mob Kill Credit: Sha Can Awe
-    .isOnQuest 30271
 step
     .goto 418,40.63,33.73
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Anduin Wrynn|r
@@ -636,7 +648,7 @@ step
     .accept 30666 >>Accept Sudden, Unexpected Crocolisk Aggression
     .target Jay Cloudfall
 step
-    #completewith Along87
+    #completewith Along84
     >>As you go: Kill |cRXP_ENEMY_Dusky Lories|r. Loot them for |cRXP_LOOT_Dusky Tailfeather|r. Kill |cRXP_ENEMY_Mortbreath Skulkers|r and |cRXP_ENEMY_Mortbreath Snappers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30667,3 --Dusky Tailfeather (6)
     .complete 30666,1 --Mortbreath Skulker (8)
@@ -644,7 +656,7 @@ step
     .mob Mortbreath Skulker
     .mob Mortbreath Snapper
 step
-    #label Along87
+    #label Along84
     .goto 418,44.75,65.64
     >>Kill |cRXP_ENEMY_Emerald Lories|r. Loot them for |cRXP_LOOT_Emerald Tailfeather|r
     .complete 30667,1 --Emerald Tailfeather (6)
@@ -705,13 +717,13 @@ step
     .complete 30691,1 --Nahassa slain (1)
     .mob Nahassa
 step
-    #completewith Along96
+    #completewith Along93
     >>As you go: Kill |cRXP_ENEMY_Great Grey Sharks|r and |cRXP_ENEMY_Nayeli Hammerheads|r. Loot them for |cRXP_LOOT_Shark Fillet|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30671,1 --Shark Fillet (5)
     .mob Great Grey Shark
     .mob Nayeli Hammerhead
 step
-    #label Along96
+    #label Along93
     .goto 418,45.98,78.91
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wise Ana Wu|r
     .turnin 30691 >>Turn in Misery
@@ -733,12 +745,12 @@ step
     .accept 30672 >>Accept Balance
     .target Wise Ana Wu
 step
-    #completewith Along99
+    #completewith Along96
     >>As you go: Kill |cRXP_ENEMY_Unga Fish-Getters|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30672,1 --Unga Fish-Getter slain (10)
     .mob Unga Fish-Getter
 step
-    #label Along99
+    #label Along96
     .goto 418,48.62,85.83
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_!|r
     .accept 30674 >>Accept Balance Without Violence
@@ -762,16 +774,14 @@ step
     #loop
     .goto 418,52.03,84.65,0
     .goto 418,52.03,84.65,40,0
-    .goto 418,42.51,86.73,40,0
-    .goto 418,41.13,88.09,40,0
-    .goto 418,41.37,88.05,40,0
+    .goto 418,42.50,86.76,40,0
+    .goto 418,41.29,88.05,40,0
+    .goto 418,41.99,88.46,40,0
     >>Interact with |cRXP_FRIENDLY_Flailing Carps|r
-    .complete 30674,1 --Flailing Carp (6)
-    .target Flailing Carp
-step
-    .goto 418,41.99,88.46
     >>Open the |cRXP_PICK_Lump of Sand|r. Loot it for |cRXP_LOOT_Buried Hozen Treasure|r
+    .complete 30674,1 --Flailing Carp (6)
     .complete 30675,1 --Buried Hozen Treasure (1)
+    .target Flailing Carp
 step
     .goto 418,48.62,85.83
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
@@ -828,32 +838,18 @@ step << Horde Horde
     .subzoneskip 6013,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 418,26.22,46.71,0
-    .goto 418,26.22,46.71,40,0
-    .goto 418,24.49,39.12,40,0
-    .goto 418,26.67,37.64,40,0
-    >>Pick up |cRXP_PICK_Mogu Artifact|r from the ground
-    .complete 30230,1 --Mogu Artifact (10)
-    .isOnQuest 30230
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 418,25.33,42.59,0
-    .goto 418,25.33,42.59,40,0
+    .goto 418,23.53,44.79,0
     .goto 418,23.53,44.79,40,0
+    .goto 418,22.51,47.16,40,0
     .goto 418,26.51,39.39,40,0
+    >>Pick up |cRXP_PICK_Mogu Artifact|r from the ground
     >>Interact with |cRXP_FRIENDLY_Dawnchaser Captives|r
-    .complete 30163,1 --Dawnchaser Captive (8)
-    .target Dawnchaser Captive
-    .isOnQuest 30163
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 418,27.09,41.98,0
-    .goto 418,27.09,41.98,40,0
-    .goto 418,25.64,39.21,40,0
     >>Kill |cRXP_ENEMY_Korjan Reclaimers|r
-    .complete 30229,1 --Korjan Reclaimer slain (8)
+    .complete -30230,1 --Mogu Artifact (10)
+    .complete -30163,1 --Dawnchaser Captive (8)
+    .complete -30229,1 --Korjan Reclaimer slain (8)
+    .target Dawnchaser Captive
     .mob Korjan Reclaimer
-    .isOnQuest 30229
 step
     .goto 418,29.67,39.06
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tired Shushen|r
@@ -861,13 +857,13 @@ step
     .accept 30169 >>Accept Raid Leader Slovan
     .target Tired Shushen
 step
-    #completewith Along114
+    #completewith Along108
     >>As you go: Kill |cRXP_ENEMY_Riverblade Slayers|r and |cRXP_ENEMY_Riverblade Flesh-hunters|r. Loot them for |cRXP_LOOT_Pillaged Jinyu Loot|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30168,1 --Pillaged Jinyu Loot (1)
     .mob Riverblade Slayer
     .mob Riverblade Flesh-hunter
 step
-    #label Along114
+    #label Along108
     .goto 418,31.80,28.99
     >>Kill |cRXP_ENEMY_Slovan|r
     .complete 30169,1 --Slovan slain (1)
@@ -937,6 +933,13 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 30230 --Re-Reclaim
     .xp <86,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along116
+    >>As you go: Kill |cRXP_ENEMY_Ik'thik Vanguards|r and |cRXP_ENEMY_Ik'thik Precursors|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -30175,1 --Ik'thik Vanguard (8)
+    .mob Ik'thik Vanguard
+    .mob Ik'thik Precursor
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along116
     .goto 418,15.97,39.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sunwalker Dezco|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 30164 >>Accept The Stoneplow Convoy
@@ -950,20 +953,14 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 418,15.96,41.48,0
     .goto 418,15.96,41.48,40,0
     .goto 418,16.97,36.75,40,0
+    .goto 418,14.23,35.62,40,0
     >>Kill |cRXP_ENEMY_Ik'thik Vanguards|r and |cRXP_ENEMY_Ik'thik Precursors|r
-    .complete 30175,1 --Ik'thik Vanguard (8)
+    >>Interact with |cRXP_FRIENDLY_Stoneplow Envoys|r
+    .complete -30175,1 --Ik'thik Vanguard (8)
+    .complete -30164,1 --Stoneplow Envoy (7)
     .mob Ik'thik Vanguard
     .mob Ik'thik Precursor
-    .isOnQuest 30175
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 418,15.92,36.63,0
-    .goto 418,15.92,36.63,40,0
-    .goto 418,14.23,35.62,40,0
-    >>Interact with |cRXP_FRIENDLY_Stoneplow Envoys|r
-    .complete 30164,1 --Stoneplow Envoy (7)
     .target Stoneplow Envoy
-    .isOnQuest 30164
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 418,15.70,39.71
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ambassador Len|r

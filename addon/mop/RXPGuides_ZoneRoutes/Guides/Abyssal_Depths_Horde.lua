@@ -55,37 +55,33 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 26221 --any of: Full Circle
     .xp <80,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along5
+    >>As you go: Kill |cRXP_ENEMY_Scourgut Remoras|r. Loot them for |cRXP_LOOT_Remora Oil|r. Kill |cRXP_ENEMY_Spinescale Hammerheads|r. Loot them for |cRXP_LOOT_Hammerhead Oil|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -26122,2 --Remora Oil (4)
+    .complete -26122,3 --Hammerhead Oil (4)
+    .mob Scourgut Remora
+    .mob Spinescale Hammerhead
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along5
     .goto 204,51.54,60.75
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Blood Guard Toldrek|r
     .turnin 26124 >>Turn in Secure Seabrush
     .target Blood Guard Toldrek
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 204,52.42,59.46,0
-    .goto 204,52.42,59.46,40,0
+    .goto 204,52.74,60.43,0
+    .goto 204,52.74,60.43,40,0
+    .goto 204,53.95,62.88,40,0
     .goto 204,56.08,59.64,40,0
     >>Kill |cRXP_ENEMY_Scourgut Remoras|r. Loot them for |cRXP_LOOT_Remora Oil|r
-    .complete 26122,2 --Remora Oil (4)
-    .mob Scourgut Remora
-    .isOnQuest 26122
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 204,54.13,60.33,0
-    .goto 204,54.13,60.33,40,0
-    .goto 204,55.74,62.12,40,0
     >>Kill |cRXP_ENEMY_Seabrush Terrapins|r. Loot them for |cRXP_LOOT_Terrapin Oil|r
-    .complete 26122,1 --Terrapin Oil (4)
-    .mob Seabrush Terrapin
-    .isOnQuest 26122
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 204,55.36,61.64,0
-    .goto 204,55.36,61.64,40,0
-    .goto 204,52.40,63.94,40,0
     >>Kill |cRXP_ENEMY_Spinescale Hammerheads|r. Loot them for |cRXP_LOOT_Hammerhead Oil|r
-    .complete 26122,3 --Hammerhead Oil (4)
+    .complete -26122,2 --Remora Oil (4)
+    .complete -26122,1 --Terrapin Oil (4)
+    .complete -26122,3 --Hammerhead Oil (4)
+    .mob Scourgut Remora
+    .mob Seabrush Terrapin
     .mob Spinescale Hammerhead
-    .isOnQuest 26122
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 204,51.46,60.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fiasco Sizzlegrin|r
@@ -155,41 +151,27 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 26087 --any of: "Glow-Juice"
     .xp <80,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 204,42.76,55.61,0
-    .goto 204,42.76,55.61,40,0
-    .goto 204,46.19,55.33,40,0
-    .goto 204,47.39,51.35,40,0
-    >>Kill |cRXP_ENEMY_Underlight Nibblers|r. Loot them for |cRXP_LOOT_Underlight Nibbler|r
-    .complete 26088,1 --Underlight Nibbler (30)
-    .mob Underlight Nibbler
-    .isOnQuest 26088
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #completewith Drop26090x1
     >>|cRXP_LOOT_Enormous Eel Egg|r can drop from |cRXP_ENEMY_Coldlight Hunter|r, |cRXP_ENEMY_Coldlight Oracle|r. Use it to start the quest if you get one
     .collect 56812,1,26090 --Enormous Eel Egg (1)
     .accept 26090 >>Accept I Brought You This Egg
     .use 56812
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 204,46.36,53.22,0
-    .goto 204,46.36,53.22,40,0
-    .goto 204,47.01,55.50,40,0
-    .goto 204,45.61,58.42,40,0
-    >>Kill |cRXP_ENEMY_Coldlight Oracles|r
-    .complete 26089,2 --Coldlight Oracle slain (4)
-    .mob Coldlight Oracle
-    .isOnQuest 26089
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #label Drop26090x1
     #loop
-    .goto 204,46.23,55.37,0
-    .goto 204,46.23,55.37,40,0
-    .goto 204,45.55,58.42,40,0
+    .goto 204,42.76,55.61,0
+    .goto 204,42.76,55.61,40,0
+    .goto 204,46.08,55.76,40,0
+    .goto 204,47.39,51.35,40,0
+    >>Kill |cRXP_ENEMY_Underlight Nibblers|r. Loot them for |cRXP_LOOT_Underlight Nibbler|r
+    >>Kill |cRXP_ENEMY_Coldlight Oracles|r
     >>Kill |cRXP_ENEMY_Coldlight Hunters|r
-    .complete 26089,1 --Coldlight Hunter slain (4)
+    .complete -26088,1 --Underlight Nibbler (30)
+    .complete -26089,2 --Coldlight Oracle slain (4)
+    .complete -26089,1 --Coldlight Hunter slain (4)
+    .mob Underlight Nibbler
+    .mob Coldlight Oracle
     .mob Coldlight Hunter
-    .isOnQuest 26089
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 204,42.86,51.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Orako|r
@@ -265,6 +247,18 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 26092 --any of: Orako's Report
     .xp <80,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along29
+    >>As you go: Kill |cRXP_ENEMY_Sira'kess Sea Witches|r, |cRXP_ENEMY_Sira'kess Tide Priestess|r, |cRXP_ENEMY_Fathom-Caller Azrajars|r and |cRXP_ENEMY_Sira'kess Guardians|r. Kill |cRXP_ENEMY_Merciless Ones|r and |cRXP_ENEMY_Taken Gilblins|r. Loot them for |cRXP_LOOT_Merciless Head|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25974,1 --Sira'kess Sea Witch (8)
+    .complete -25982,1 --Merciless Head (6)
+    .mob Sira'kess Sea Witch
+    .mob Sira'kess Tide Priestess
+    .mob Fathom-Caller Azrajar
+    .mob Sira'kess Guardian
+    .mob Merciless One
+    .mob Taken Gilblin
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along29
     .goto 204,52.45,21.29
     >>Plant the Horde Standard in Fathom-Caller Azrajar's corpse.
     .complete 25980,1 --Fathom-Caller Azrajar
@@ -274,25 +268,18 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 204,51.05,16.93,0
     .goto 204,51.05,16.93,40,0
-    .goto 204,48.69,19.28,40,0
+    .goto 204,48.67,17.98,40,0
+    .goto 204,47.32,17.76,40,0
     >>Kill |cRXP_ENEMY_Sira'kess Sea Witches|r, |cRXP_ENEMY_Sira'kess Tide Priestess|r, |cRXP_ENEMY_Fathom-Caller Azrajars|r and |cRXP_ENEMY_Sira'kess Guardians|r
-    .complete 25974,1 --Sira'kess Sea Witch (8)
+    >>Kill |cRXP_ENEMY_Merciless Ones|r and |cRXP_ENEMY_Taken Gilblins|r. Loot them for |cRXP_LOOT_Merciless Head|r
+    .complete -25974,1 --Sira'kess Sea Witch (8)
+    .complete -25982,1 --Merciless Head (6)
     .mob Sira'kess Sea Witch
     .mob Sira'kess Tide Priestess
     .mob Fathom-Caller Azrajar
     .mob Sira'kess Guardian
-    .isOnQuest 25974
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 204,50.48,20.94,0
-    .goto 204,50.48,20.94,40,0
-    .goto 204,47.32,17.76,40,0
-    .goto 204,46.23,14.56,40,0
-    >>Kill |cRXP_ENEMY_Merciless Ones|r and |cRXP_ENEMY_Taken Gilblins|r. Loot them for |cRXP_LOOT_Merciless Head|r
-    .complete 25982,1 --Merciless Head (6)
     .mob Merciless One
     .mob Taken Gilblin
-    .isOnQuest 25982
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 204,41.98,23.60,0
@@ -405,7 +392,15 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Legionnaire Nazgrim
     .isQuestTurnedIn 25988 --any of: Put It On
     .xp <80,1
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along48
+    >>As you go: Kill |cRXP_ENEMY_Chasm Stalkers|r, |cRXP_ENEMY_Deep Remoras|r and |cRXP_ENEMY_Crushing Eels|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -26071,1 --Chasm Stalker (8)
+    .mob Chasm Stalker
+    .mob Deep Remora
+    .mob Crushing Eel
 step
+    #label Along48
     #loop
     .goto 204,42.20,33.90,0
     .goto 204,42.20,33.90,40,0
@@ -414,22 +409,18 @@ step
     .complete 26096,1 --Scalding Shroom (5)
     .isOnQuest 26096
 step
-    .goto 204,47.14,27.39
-    >>Kill |cRXP_ENEMY_Ick'thys the Unfathomable|r and loot |cRXP_LOOT_The Brain of the Unfathomable|r
-    .complete 26111,1 --The Brain of the Unfathomable (1)
-    .mob Ick'thys the Unfathomable
-    .isOnQuest 26111
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 204,48.65,27.59,0
-    .goto 204,48.65,27.59,40,0
-    .goto 204,44.98,26.31,40,0
-    >>Kill |cRXP_ENEMY_Chasm Stalkers|r, |cRXP_ENEMY_Deep Remoras|r and |cRXP_ENEMY_Crushing Eels|r
-    .complete 26071,1 --Chasm Stalker (8)
-    .mob Chasm Stalker
-    .mob Deep Remora
-    .mob Crushing Eel
-    .isOnQuest 26071
+    .goto 204,47.14,27.39,0
+    .goto 204,47.14,27.39,40,0
+    .goto 204,50.39,26.27,40,0
+    >>Kill |cRXP_ENEMY_Ick'thys the Unfathomable|r and loot |cRXP_LOOT_The Brain of the Unfathomable|r
+    >>Kill |cRXP_ENEMY_Chasm Stalkers|r, |cRXP_ENEMY_Deep Remoras|r and |cRXP_ENEMY_Crushing Eels|r << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .complete -26111,1 --The Brain of the Unfathomable (1)
+    .complete -26071,1 << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren --Chasm Stalker (8)
+    .mob Ick'thys the Unfathomable
+    .mob Chasm Stalker << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .mob Deep Remora << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .mob Crushing Eel << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
     .goto 204,51.63,60.93
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wavespeaker Tulra|r. |cRXP_WARN_This NPC walks a patrol route|r
@@ -462,21 +453,18 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .turnin 26071 >>Turn in Clearing the Defiled
     .target Legionnaire Nazgrim
     .isOnQuest 26071
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 204,37.58,49.20,0
-    .goto 204,37.58,49.20,40,0
-    .goto 204,36.58,51.81,40,0
-    >>Kill |cRXP_ENEMY_Nether Fiends|r
-    .complete 26133,1 --Nether Fiend slain (8)
-    .mob Nether Fiend
-    .isOnQuest 26133
 step
-    .goto 204,34.60,54.45
+    #loop
+    .goto 204,39.06,49.96,0
+    .goto 204,39.06,49.96,40,0
+    .goto 204,37.58,49.20,40,0
+    .goto 204,35.72,53.12,40,0
+    >>Kill |cRXP_ENEMY_Nether Fiends|r << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Kill |cRXP_ENEMY_Sku'Bu|r
-    .complete 26130,2 --Sku'Bu slain (1)
+    .complete -26133,1 << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren --Nether Fiend slain (8)
+    .complete -26130,2 --Sku'Bu slain (1)
+    .mob Nether Fiend << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Sku'Bu
-    .isOnQuest 26130
 step
     .goto 204,29.59,52.99
     >>Kill |cRXP_ENEMY_Neph'Lahim|r
@@ -523,6 +511,12 @@ step
     .isQuestTurnedIn 26140 --any of: Communing with the Ancient
     .xp <80,1
 step
+    #completewith Along63
+    >>As you go: Kill |cRXP_ENEMY_Twilight Candidates|r. Loot them for |cRXP_LOOT_Runestone of Binding|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -26141,1 --Runestone of Binding (7)
+    .mob Twilight Candidate
+step
+    #label Along63
     .goto 204,34.59,62.02
     >>Click the |cRXP_PICK_Ancient Conduit|r
     .complete 26142,1 --Ancient Conduit
@@ -579,6 +573,11 @@ step
     .isQuestTurnedIn 26142 --Ascend No More!
     .xp <80,1
 step
+    #completewith Along71
+    >>As you go: Kill |cRXP_ENEMY_Twilight Devotees|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -26154,2 --Twilight Devotee (50)
+    .mob Twilight Devotee
+step
     #loop
     .goto 204,36.57,53.18,0
     .goto 204,36.57,53.18,40,0
@@ -589,6 +588,7 @@ step
     .mob Faceless Overseer
     .isOnQuest 26154
 step
+    #label Along71
     .goto 204,34.83,54.02
     >>Interact with |cRXP_FRIENDLY_Bound Torrent|r
     .complete 26154,1 --Bound Torrent

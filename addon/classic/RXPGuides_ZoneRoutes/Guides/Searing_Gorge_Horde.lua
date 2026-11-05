@@ -420,15 +420,10 @@ step
     .target Squire Maltrake
     .isQuestTurnedIn 3462 --any of: Squire Maltrake
 step
-    .goto 1427/0,-1065.92,-6910.39
-    >>Click the |cRXP_PICK_Sentry Brazier|r
-    .complete 3463,4 --Northern Tower Ablaze
-    .isOnQuest 3463
-step
     .goto 1427/0,-1118.80,-7002.61
     >>Click the |cRXP_PICK_Sentry Brazier|r
-    .complete 3463,1 --Western Tower Ablaze
-    .isOnQuest 3463
+    .complete -3463,4 --Northern Tower Ablaze
+    .complete -3463,1 --Western Tower Ablaze
 step
     .goto 1427/0,-1305.34,-7006.04
     >>Click the |cRXP_PICK_Sentry Brazier|r

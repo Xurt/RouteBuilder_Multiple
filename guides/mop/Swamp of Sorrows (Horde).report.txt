@@ -1,5 +1,5 @@
 Swamp of Sorrows - Horde - part 1 of 2, planned from level 52
-Guide "52-55 Swamp of Sorrows" in group "Zone Routes (Horde)": this part has 85 steps, 75 stops
+Guide "52-55 Swamp of Sorrows" in group "Zone Routes (Horde)": this part has 83 steps, 74 stops
 Written to guides/mop/Swamp of Sorrows (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -36,7 +36,7 @@ Step order kept from the last build (locks folder): 95 steps kept, 55 new ones s
   BloodElf (quests that depend on other zones): 5 more tasks; their whole route comes to 29,338 yd; ends at level 54.1; 1 hearth; at its hardest you are 1.1 levels below the mobs
 Hearthstone: set at Rebecca Blackman (Rebecca Blackman's inn); 1 hearth step in the guide.
 2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 
 Quests in the guide (83)

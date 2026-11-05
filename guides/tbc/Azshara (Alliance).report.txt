@@ -238,7 +238,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Azshara - Alliance - part 4 of 4, planned from level 61
-Guide "47-60 Azshara" in group "Zone Routes (Alliance)": this part has 41 steps, 40 stops
+Guide "47-60 Azshara" in group "Zone Routes (Alliance)": this part has 39 steps, 38 stops
 Written to guides/tbc/Azshara (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

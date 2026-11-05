@@ -121,33 +121,13 @@ step
     .complete 1690,2 --Wastewander Thief slain (8)
     .mob Wastewander Thief
 step
-    #completewith Along14
-    >>As you go: Kill |cRXP_ENEMY_Wastewander Rogues|r, |cRXP_ENEMY_Wastewander Thiefs|r, |cRXP_ENEMY_Wastewander Shadow Mages|r and |cRXP_ENEMY_Wastewander Bandits|r. Loot them for |cRXP_LOOT_Wastewander Water Pouch|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 1707,1 --Wastewander Water Pouch (5)
-    .mob Wastewander Rogue
-    .mob Wastewander Thief
-    .mob Wastewander Shadow Mage
-    .mob Wastewander Bandit
-step
-    #label Along14
+    #label Drop351x1
     #loop
     .goto 1446/1,-4344.26,-6984.06,0
     .goto 1446/1,-4344.26,-6984.06,40,0
     .goto 1446/1,-4383.59,-6949.56,40,0
     >>Kill |cRXP_ENEMY_Wastewander Rogues|r, |cRXP_ENEMY_Wastewander Thiefs|r, |cRXP_ENEMY_Wastewander Shadow Mages|r and |cRXP_ENEMY_Wastewander Bandits|r. Loot them for |cRXP_LOOT_Wastewander Water Pouch|r
-    .complete 379,1 --Wastewander Water Pouch (5)
-    .mob Wastewander Rogue
-    .mob Wastewander Thief
-    .mob Wastewander Shadow Mage
-    .mob Wastewander Bandit
-    .isOnQuest 379
-step
-    #label Drop351x1
-    #loop
-    .goto 1446/1,-4383.59,-6949.56,0
-    .goto 1446/1,-4383.59,-6949.56,40,0
-    .goto 1446/1,-4344.26,-6984.06,40,0
-    >>Kill |cRXP_ENEMY_Wastewander Rogues|r, |cRXP_ENEMY_Wastewander Thiefs|r, |cRXP_ENEMY_Wastewander Shadow Mages|r and |cRXP_ENEMY_Wastewander Bandits|r. Loot them for |cRXP_LOOT_Wastewander Water Pouch|r
+    .complete -379,1 --Wastewander Water Pouch (5)
     .complete 1707,1 --Wastewander Water Pouch (5)
     .mob Wastewander Rogue
     .mob Wastewander Thief
@@ -291,7 +271,7 @@ step
     .complete 1691,3 --Wastewander Shadow Mage slain (10)
     .mob Wastewander Shadow Mage
 step
-    #completewith Along30
+    #completewith Along29
     >>As you go: Kill |cRXP_ENEMY_Southsea Pirates|r. Kill |cRXP_ENEMY_Southsea Freebooters|r. Kill |cRXP_ENEMY_Southsea Pirates|r, |cRXP_ENEMY_Southsea Freebooters|r, |cRXP_ENEMY_Southsea Dock Workers|r and |cRXP_ENEMY_Southsea Swashbucklers|r. Loot them for |cRXP_LOOT_Southsea Pirate Hat|r. |cRXP_WARN_Anything left is finished later|r
     .complete 8366,1 --Southsea Pirate slain (10)
     .complete 8366,2 --Southsea Freebooter slain (10)
@@ -301,7 +281,7 @@ step
     .mob Southsea Dock Worker
     .mob Southsea Swashbuckler
 step
-    #label Along30
+    #label Along29
     #loop
     .goto 1446/1,-5217.80,-8035.62,0
     .goto 1446/1,-5217.80,-8035.62,40,0

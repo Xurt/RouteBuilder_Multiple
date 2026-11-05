@@ -105,29 +105,18 @@ step
     .complete 1690,2 --Wastewander Thief slain (8)
     .mob Wastewander Thief
 step
+    #label Drop351x1
     #loop
     .goto 1446/1,-4344.26,-6984.06,0
     .goto 1446/1,-4344.26,-6984.06,40,0
     .goto 1446/1,-4383.59,-6949.56,40,0
     >>Kill |cRXP_ENEMY_Wastewander Rogues|r, |cRXP_ENEMY_Wastewander Thiefs|r, |cRXP_ENEMY_Wastewander Shadow Mages|r and |cRXP_ENEMY_Wastewander Bandits|r. Loot them for |cRXP_LOOT_Wastewander Water Pouch|r
     .complete 1707,1 --Wastewander Water Pouch (5)
+    .complete -379,1 --Wastewander Water Pouch (5)
     .mob Wastewander Rogue
     .mob Wastewander Thief
     .mob Wastewander Shadow Mage
     .mob Wastewander Bandit
-step
-    #label Drop351x1
-    #loop
-    .goto 1446/1,-4383.59,-6949.56,0
-    .goto 1446/1,-4383.59,-6949.56,40,0
-    .goto 1446/1,-4344.26,-6984.06,40,0
-    >>Kill |cRXP_ENEMY_Wastewander Rogues|r, |cRXP_ENEMY_Wastewander Thiefs|r, |cRXP_ENEMY_Wastewander Shadow Mages|r and |cRXP_ENEMY_Wastewander Bandits|r. Loot them for |cRXP_LOOT_Wastewander Water Pouch|r
-    .complete 379,1 --Wastewander Water Pouch (5)
-    .mob Wastewander Rogue
-    .mob Wastewander Thief
-    .mob Wastewander Shadow Mage
-    .mob Wastewander Bandit
-    .isOnQuest 379
 step
     .goto 1446/1,-4841.06,-6903.56
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Yeh'kinya|r

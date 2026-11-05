@@ -433,17 +433,13 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 27886 --The Sentinel's Game
     .xp <44,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 15,50.29,52.58
-    >>Kill |cRXP_ENEMY_The Warden|r
-    .complete 27887,1 --The Warden slain (1)
-    .mob The Warden
-    .isOnQuest 27887
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 15,50.29,51.65
+    >>Kill |cRXP_ENEMY_The Warden|r
     >>Kill |cRXP_ENEMY_The Sentinel|r
-    .complete 27887,2 --The Sentinel slain (1)
+    .complete -27887,1 --The Warden slain (1)
+    .complete -27887,2 --The Sentinel slain (1)
+    .mob The Warden
     .mob The Sentinel
-    .isOnQuest 27887
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 15,50.30,52.10
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
@@ -607,6 +603,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 27893 --Gargal, the Behemoth
     .xp <44,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along84
+    >>As you go: Kill |cRXP_ENEMY_Darkflight Soldiers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -27894,2 --Darkflight Soldier slain (4)
+    .mob Darkflight Soldier
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along84
     .goto 15,26.20,45.18
     >>Kill |cRXP_ENEMY_Kalaran the Annihilator|r
     .complete 27894,1 --Kalaran the Annihilator slain (1)
@@ -645,27 +647,30 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 27894 --any of: The Wrath of a Dragonflight
     .xp <44,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along88
+    >>As you go: Kill |cRXP_ENEMY_Darkflight Shadowspeakers|r and |cRXP_ENEMY_Darkflight Flameblades|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -27895,3 --Darkflight Shadowspeaker (8)
+    .mob Darkflight Shadowspeaker
+    .mob Darkflight Flameblade
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along88
     .goto 15,16.84,48.57
     >>Kill |cRXP_ENEMY_Moldarr|r
     .complete 27895,2 --Moldarr slain (1)
     .mob Moldarr
     .isOnQuest 27895
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 15,15.49,43.19
-    >>Kill |cRXP_ENEMY_General Jirakka|r
-    .complete 27895,1 --General Jirakka slain (1)
-    .mob General Jirakka
-    .isOnQuest 27895
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 15,14.59,42.73,0
-    .goto 15,14.59,42.73,40,0
+    .goto 15,16.19,47.00,0
     .goto 15,16.19,47.00,40,0
+    .goto 15,14.59,42.73,40,0
+    >>Kill |cRXP_ENEMY_General Jirakka|r
     >>Kill |cRXP_ENEMY_Darkflight Shadowspeakers|r and |cRXP_ENEMY_Darkflight Flameblades|r
-    .complete 27895,3 --Darkflight Shadowspeaker (8)
+    .complete -27895,1 --General Jirakka slain (1)
+    .complete -27895,3 --Darkflight Shadowspeaker (8)
+    .mob General Jirakka
     .mob Darkflight Shadowspeaker
     .mob Darkflight Flameblade
-    .isOnQuest 27895
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 15,15.96,33.39,0
@@ -690,20 +695,16 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 27895 --any of: Their Hunt Continues
     .xp <44,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 15,8.62,40.09
-    >>Kill |cRXP_ENEMY_Nyxondras|r
-    .complete 27896,1 --Nyxondra slain (12)
-    .mob Nyxondra
-    .isOnQuest 27896
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 15,8.82,41.89,0
-    .goto 15,8.82,41.89,40,0
+    .goto 15,10.09,42.78,0
     .goto 15,10.09,42.78,40,0
+    .goto 15,8.63,41.34,40,0
+    >>Kill |cRXP_ENEMY_Nyxondras|r
     >>Kill |cRXP_ENEMY_Nyxondra's Broodlings|r
-    .complete 27896,2 --Nyxondra's Broodling slain (12)
+    .complete -27896,1 --Nyxondra slain (12)
+    .complete -27896,2 --Nyxondra's Broodling slain (12)
+    .mob Nyxondra
     .mob Nyxondra's Broodling
-    .isOnQuest 27896
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 15,15.96,33.39,0
@@ -817,11 +818,11 @@ step
     .complete 27714,1 --Lucien Tosselwrench (10)
     .target Lucien Tosselwrench
 step
-    #completewith Along110
+    #completewith Along107
     >>As you go: Click the |cRXP_PICK_The Sun|r. |cRXP_WARN_Anything left is finished later|r
     .complete 27714,3 --The Sun
 step
-    #label Along110
+    #label Along107
     .goto 15,35.50,50.75
     >>Interact with |cRXP_FRIENDLY_Cloud|r
     .complete 27714,2 --Cloud

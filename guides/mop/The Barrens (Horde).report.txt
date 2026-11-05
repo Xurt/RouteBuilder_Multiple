@@ -1,5 +1,5 @@
 The Barrens - Horde
-Guide "10-19 The Barrens" in group "Zone Routes (Horde)": 218 steps, 191 stops
+Guide "10-19 The Barrens" in group "Zone Routes (Horde)": 216 steps, 190 stops
 Written to guides/mop/The Barrens (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -25,7 +25,7 @@ These pickups are planned within about half a level of the level they unlock at,
 The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
   level 10 for The Zhevra (Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
   level 15 for Centaur Bracers (Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
-11 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+10 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 6 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 
 Quests in the guide (93)

@@ -96,7 +96,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Azuremyst Isle - Alliance - part 2 of 2, planned from level 11
-Guide "1-12 Azuremyst Isle" in group "Zone Routes (Alliance)": this part has 18 steps, 16 stops
+Guide "1-12 Azuremyst Isle" in group "Zone Routes (Alliance)": this part has 16 steps, 14 stops
 Written to guides/mop/Azuremyst Isle (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

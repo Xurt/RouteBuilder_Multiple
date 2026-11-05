@@ -1247,14 +1247,10 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 63,39.94,33.71,40,0
     .goto 63,42.05,34.16,40,0
     >>Loot the |cRXP_PICK_Troll Chests|r for |cRXP_LOOT_Troll Charm|r
-    .complete 13874,1 --Troll Charm (8)
-    .isOnQuest 13874
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 63,41.66,35.70
     >>Kill |cRXP_ENEMY_Dal Bloodclaw|r and loot |cRXP_LOOT_Bloodclaw's Collection|r
-    .complete 13876,1 --Bloodclaw's Collection (1)
+    .complete -13874,1 --Troll Charm (8)
+    .complete -13876,1 --Bloodclaw's Collection (1)
     .mob Dal Bloodclaw
-    .isOnQuest 13876
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 63,46.31,62.42,0
@@ -1434,6 +1430,12 @@ step
     .isQuestTurnedIn 13877,13879 --any of: Go With The Flow, Thunder Peak
     .xp <21,1
 step
+    #completewith Along195
+    >>As you go: Kill |cRXP_ENEMY_Lava Ragers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -13884,1 --Lava Rager slain (10)
+    .mob Lava Rager
+step
+    #label Along195
     .goto 63,52.33,56.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Core|r
     .accept 13880 >>Accept Hot Lava
@@ -1442,23 +1444,15 @@ step
     .xp <21,1
 step
     #loop
-    .goto 63,52.69,54.70,0
-    .goto 63,52.69,54.70,40,0
-    .goto 63,51.66,49.56,40,0
-    .goto 63,48.30,51.88,40,0
-    >>Click the |cRXP_PICK_Lava Fissure|r
-    .complete 13880,1 --Lava Fissure
-    .isOnQuest 13880
-step
-    #loop
-    .goto 63,49.30,52.76,0
-    .goto 63,49.30,52.76,40,0
-    .goto 63,49.46,48.66,40,0
+    .goto 63,52.20,53.58,0
     .goto 63,52.20,53.58,40,0
+    .goto 63,51.03,49.31,40,0
+    .goto 63,48.83,51.34,40,0
+    >>Click the |cRXP_PICK_Lava Fissure|r
     >>Kill |cRXP_ENEMY_Lava Ragers|r
-    .complete 13884,1 --Lava Rager slain (10)
+    .complete -13880,1 --Lava Fissure
+    .complete -13884,1 --Lava Rager slain (10)
     .mob Lava Rager
-    .isOnQuest 13884
 step
     .goto 63,52.09,56.72
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arctanus|r

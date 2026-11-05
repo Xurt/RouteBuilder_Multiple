@@ -282,18 +282,15 @@ step
     .turnin 966 >>Turn in The Tower of Althalaxx
     .accept 967 >>Accept The Tower of Althalaxx
     .target Balthule Shadowstrike
-step << Druid
-    .goto 1439/1,-655.59,6878.80
-    >>Open the |cRXP_PICK_Cliffspring Falls Cave Mouth|r. Loot it for |cRXP_LOOT_Filled Cliffspring Falls Sampler|r
-    .complete 6122,1 --Filled Cliffspring Falls Sampler (1)
-    .isOnQuest 6122
 step
     #loop
     .goto 1439/1,-766.29,6829.89,0
     .goto 1439/1,-766.29,6829.89,40,0
     .goto 1439/1,-694.24,6792.77,40,0
+    >>Open the |cRXP_PICK_Cliffspring Falls Cave Mouth|r. Loot it for |cRXP_LOOT_Filled Cliffspring Falls Sampler|r << Druid
     >>Pick up |cRXP_PICK_Scaber Stalk|r from the ground
     >>Pick up |cRXP_PICK_Death Cap|r from the ground
+    .complete -6122,1 << Druid --Filled Cliffspring Falls Sampler (1)
     .complete 947,1 --Scaber Stalk (5)
     .complete 947,2 --Death Cap (1)
 step
@@ -708,20 +705,17 @@ step
     .mob Encrusted Tide Crawler
     .mob Raging Reef Crawler
 step
-    .goto 1439/1,-916.28,7752.13
-    >>Kill |cRXP_ENEMY_Giant Foreststrider|r and loot |cRXP_LOOT_Top of Gelkak's Key|r
-    .complete 2098,1 --Top of Gelkak's Key (1)
-    .mob Giant Foreststrider
-step
     #loop
-    .goto 1439/1,-1048.59,7747.76,0
-    .goto 1439/1,-1048.59,7747.76,40,0
+    .goto 1439/1,-954.93,7782.70,0
+    .goto 1439/1,-954.93,7782.70,40,0
     .goto 1439/1,-1051.21,7815.01,40,0
+    >>Kill |cRXP_ENEMY_Giant Foreststrider|r and loot |cRXP_LOOT_Top of Gelkak's Key|r
     >>Kill |cRXP_ENEMY_Moonstalker Matriarches|r and |cRXP_ENEMY_Moonstalker Sires|r. Loot them for |cRXP_LOOT_Fine Moonstalker Pelt|r
-    .complete 986,1 --Fine Moonstalker Pelt (5)
+    .complete 2098,1 --Top of Gelkak's Key (1)
+    .complete -986,1 --Fine Moonstalker Pelt (5)
+    .mob Giant Foreststrider
     .mob Moonstalker Matriarch
     .mob Moonstalker Sire
-    .isOnQuest 986
 step
     .goto 1439/1,-769.56,7744.71
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gelkak Gyromast|r

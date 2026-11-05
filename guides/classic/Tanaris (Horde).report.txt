@@ -1,5 +1,5 @@
 Tanaris - Horde - part 1 of 3, planned from level 43
-Guide "43-60 Tanaris" in group "Zone Routes (Horde)": this part has 78 steps, 57 stops
+Guide "43-60 Tanaris" in group "Zone Routes (Horde)": this part has 77 steps, 56 stops
 Written to guides/classic/Tanaris (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

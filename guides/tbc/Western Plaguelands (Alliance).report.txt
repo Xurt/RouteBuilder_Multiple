@@ -127,7 +127,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Western Plaguelands - Alliance - part 2 of 3, planned from level 55
-Guide "52-60 Western Plaguelands" in group "Zone Routes (Alliance)": this part has 71 steps, 65 stops
+Guide "52-60 Western Plaguelands" in group "Zone Routes (Alliance)": this part has 72 steps, 65 stops
 Written to guides/tbc/Western Plaguelands (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -148,7 +148,7 @@ Step order kept from the last build (locks folder): 64 steps kept, 9 new ones sl
   everyone (quests that depend on other zones): 10 more tasks; their whole route comes to 13,334 yd; ends at level 56.1; 2 hearths; at its hardest you are 2.5 levels below the mobs
   Paladin (quests that depend on other zones): 1 more tasks; their whole route comes to 13,334 yd; ends at level 56.1; 2 hearths; at its hardest you are 2.5 levels below the mobs
 Hearthstone: set at Argent Quartermaster Lightspark (Argent Quartermaster Lightspark's inn); 2 hearth steps in the guide.
-1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (28)
@@ -197,7 +197,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Western Plaguelands - Alliance - part 3 of 3, planned from level 59
-Guide "52-60 Western Plaguelands" in group "Zone Routes (Alliance)": this part has 28 steps, 27 stops
+Guide "52-60 Western Plaguelands" in group "Zone Routes (Alliance)": this part has 30 steps, 27 stops
 Written to guides/tbc/Western Plaguelands (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -218,6 +218,7 @@ Step order kept from the last build (locks folder): 4 steps kept, 20 new ones sl
   everyone (quests that depend on other zones): 20 more tasks; their whole route comes to 7,035 yd; ends at level 59.1
   Paladin (quests that depend on other zones): 1 more tasks; their whole route comes to 7,035 yd; ends at level 59.1
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (14)
 ------------------------

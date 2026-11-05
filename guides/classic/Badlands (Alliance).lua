@@ -330,20 +330,12 @@ step
     .target Hammertoe Grez
     .isQuestTurnedIn 721 --any of: A Sign of Hope
 step
-    #completewith Along13
-    >>As you go: Open the |cRXP_PICK_Ancient Chest|r. Loot it for |cRXP_LOOT_Tablet of Ryun'eh|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 709,1 --Tablet of Ryun'eh (1)
-step
-    #label Along13
-    .goto 1418/0,-3049.04,-6216.77
-    >>Kill |cRXP_ENEMY_Magregan Deepshadow|r and loot |cRXP_LOOT_Hammertoe's Amulet|r
-    .complete 722,1 --Hammertoe's Amulet (1)
-    .mob Magregan Deepshadow
-    .isOnQuest 722
-step
     .goto 1418/0,-3057.75,-6201.68
+    >>Kill |cRXP_ENEMY_Magregan Deepshadow|r and loot |cRXP_LOOT_Hammertoe's Amulet|r
     >>Open the |cRXP_PICK_Ancient Chest|r. Loot it for |cRXP_LOOT_Tablet of Ryun'eh|r
+    .complete -722,1 --Hammertoe's Amulet (1)
     .complete 709,1 --Tablet of Ryun'eh (1)
+    .mob Magregan Deepshadow
 step
     .goto 1418/0,-3021.93,-6065.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hammertoe Grez|r
@@ -433,21 +425,12 @@ step
 step
     .goto 1418/0,-3419.18,-7281.09
     >>Kill |cRXP_ENEMY_Enraged Rock Elemental|r and loot |cRXP_LOOT_Torn Scroll Fragment|r
-    .complete 692,1 --Torn Scroll Fragment (1)
-    .mob Enraged Rock Elemental
-    .isOnQuest 692
-step
-    .goto 1418/0,-3419.18,-7281.09
     >>Kill |cRXP_ENEMY_Enraged Rock Elemental|r and loot |cRXP_LOOT_Crumpled Scroll Fragment|r
-    .complete 692,2 --Crumpled Scroll Fragment (1)
-    .mob Enraged Rock Elemental
-    .isOnQuest 692
-step
-    .goto 1418/0,-3419.18,-7281.09
     >>Kill |cRXP_ENEMY_Enraged Rock Elemental|r and loot |cRXP_LOOT_Singed Scroll Fragment|r
-    .complete 692,3 --Singed Scroll Fragment (1)
+    .complete -692,1 --Torn Scroll Fragment (1)
+    .complete -692,2 --Crumpled Scroll Fragment (1)
+    .complete -692,3 --Singed Scroll Fragment (1)
     .mob Enraged Rock Elemental
-    .isOnQuest 692
 step
     .goto 1418/0,-3357.49,-7164.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Theldurin the Lost|r
@@ -460,15 +443,11 @@ step
     .goto 1418/0,-3291.08,-7082.42,40,0
     .goto 1418/0,-3348.04,-6985.58,40,0
     >>Kill |cRXP_ENEMY_Stonevault Bonesnappers|r
-    .complete 739,2 --Stonevault Bonesnapper slain (12)
-    .mob Stonevault Bonesnapper
-    .isOnQuest 739
-step
-    .goto 1418/0,-3313.71,-6989.22
     >>Kill |cRXP_ENEMY_Murdaloc|r
-    .complete 739,1 --Murdaloc slain (1)
+    .complete -739,2 --Stonevault Bonesnapper slain (12)
+    .complete -739,1 --Murdaloc slain (1)
+    .mob Stonevault Bonesnapper
     .mob Murdaloc
-    .isOnQuest 739
 step
     .goto 1418/0,-2724.67,-6633.68
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lotwil Veriatus|r

@@ -228,7 +228,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 The Cape of Stranglethorn - Horde - part 3 of 3, planned from level 58
-Guide "30-35 The Cape of Stranglethorn" in group "Zone Routes (Horde)": this part has 65 steps, 61 stops
+Guide "30-35 The Cape of Stranglethorn" in group "Zone Routes (Horde)": this part has 62 steps, 57 stops
 Written to guides/mop/The Cape of Stranglethorn (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -248,7 +248,7 @@ Planned from level 58. Distances are straight lines, so real running is longer; 
 Step order kept from the last build (locks folder): 63 steps kept, 2 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
   everyone: 65 tasks, 9,302 yd on foot; ends at level 58.5; at its hardest you are 2.0 levels below the mobs
 Hearthstone: set at Cowardly Crosby (Cowardly Crosby's inn); 0 hearth steps in the guide.
-3 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (22)
 ------------------------

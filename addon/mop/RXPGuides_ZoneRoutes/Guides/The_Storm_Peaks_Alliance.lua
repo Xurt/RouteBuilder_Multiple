@@ -949,24 +949,17 @@ step
     .xp <77,1
 step
     #loop
-    .goto 120,29.10,36.86,0
-    .goto 120,29.10,36.86,40,0
-    .goto 120,27.53,39.18,40,0
-    .goto 120,24.86,36.95,40,0
+    .goto 120,28.46,37.78,0
+    .goto 120,28.46,37.78,40,0
+    .goto 120,26.39,37.06,40,0
+    .goto 120,24.13,37.22,40,0
     >>Kill |cRXP_ENEMY_Fallen Earthen Defenders|r
-    .complete 12937,1 --Fallen Earthen Defender slain (8)
-    .mob Fallen Earthen Defender
-    .isOnQuest 12937
-step
-    #loop
-    .goto 120,26.94,37.78,0
-    .goto 120,26.94,37.78,40,0
-    .goto 120,28.84,36.59,40,0
     >>Kill |cRXP_ENEMY_Stormforged Reavers|r and |cRXP_ENEMY_Stormforged Raiders|r
-    .complete 12931,1 --Stormforged Reaver (8)
+    .complete -12937,1 --Fallen Earthen Defender slain (8)
+    .complete -12931,1 --Stormforged Reaver (8)
+    .mob Fallen Earthen Defender
     .mob Stormforged Reaver
     .mob Stormforged Raider
-    .isOnQuest 12931
 step
     .goto 120,31.42,38.07
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bouldercrag the Rockshaper|r
@@ -988,22 +981,15 @@ step
     .isQuestTurnedIn 12931 --any of: Fighting Back
     .xp <77,1
 step
-    .goto 120,26.61,50.20
-    >>Kill |cRXP_ENEMY_Stormforged Taskmasters|r
-    .complete 12957,2 --Stormforged Taskmaster slain (3)
-    .mob Stormforged Taskmaster
-    .isOnQuest 12957
-step
     .goto 120,26.40,50.84
+    >>Kill |cRXP_ENEMY_Stormforged Taskmasters|r
     >>Loot the |cRXP_PICK_Ore Carts|r for |cRXP_LOOT_Dark Ore Sample|r
-    .complete 12964,1 --Dark Ore Sample (5)
-    .isOnQuest 12964
-step
-    .goto 120,26.12,51.24
     >>Kill |cRXP_ENEMY_Captive Mechagnomes|r
-    .complete 12957,1 --Captive Mechagnome slain (6)
+    .complete -12957,2 --Stormforged Taskmaster slain (3)
+    .complete -12964,1 --Dark Ore Sample (5)
+    .complete -12957,1 --Captive Mechagnome slain (6)
+    .mob Stormforged Taskmaster
     .mob Captive Mechagnome
-    .isOnQuest 12957
 step
     .goto 120,31.42,38.07
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bouldercrag the Rockshaper|r
@@ -1031,21 +1017,25 @@ step
     .isQuestTurnedIn 12957 --any of: Slaves of the Stormforged
     .xp <77,1
 step
+    #completewith Along129
+    >>As you go: Kill |cRXP_ENEMY_Stormforged Champions|r, |cRXP_ENEMY_Stormforged Magus|r and |cRXP_ENEMY_Stormforged War Golems|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -12978,1 --Stormforged Champion (8)
+    .mob Stormforged Champion
+    .mob Stormforged Magus
+    .mob Stormforged War Golem
+step
     .goto 120,26.17,47.72
     >>Click the |cRXP_PICK_Loken's Power|r
-    .complete 12965,2 --Loken's Power
-    .isOnQuest 12965
-step
-    .goto 120,24.55,48.44
     >>Click the |cRXP_PICK_Loken's Favor|r
-    .complete 12965,3 --Loken's Favor
-    .isOnQuest 12965
+    .complete -12965,2 --Loken's Power
+    .complete -12965,3 --Loken's Favor
 step
     .goto 120,24.01,42.64
     >>Click the |cRXP_PICK_Loken's Fury|r
     .complete 12965,1 --Loken's Fury
     .isOnQuest 12965
 step
+    #label Along129
     #loop
     .goto 120,29.40,41.19,0
     .goto 120,29.40,41.19,40,0
@@ -1148,27 +1138,17 @@ step
     .goto 120,30.76,43.68,40,0
     .goto 120,29.51,45.41,40,0
     >>Kill |cRXP_ENEMY_Stormforged Artificers|r
-    .complete 12991,1 --Stormforged Artificer slain (10)
-    .mob Stormforged Artificer
-    .isOnQuest 12991
-step
-    .goto 120,28.99,45.84
     >>Kill |cRXP_ENEMY_North Lightning Forge|r
-    .complete 12988,1 --North Lightning Forge slain (1)
-    .mob North Lightning Forge
-    .isOnQuest 12988
-step
-    .goto 120,29.54,45.90
     >>Kill |cRXP_ENEMY_Central Lightning Forge|r
-    .complete 12988,2 --Central Lightning Forge slain (1)
-    .mob Central Lightning Forge
-    .isOnQuest 12988
-step
-    .goto 120,30.25,46.15
     >>Kill |cRXP_ENEMY_South Lightning Forge|r
-    .complete 12988,3 --South Lightning Forge slain (1)
+    .complete -12991,1 --Stormforged Artificer slain (10)
+    .complete -12988,1 --North Lightning Forge slain (1)
+    .complete -12988,2 --Central Lightning Forge slain (1)
+    .complete -12988,3 --South Lightning Forge slain (1)
+    .mob Stormforged Artificer
+    .mob North Lightning Forge
+    .mob Central Lightning Forge
     .mob South Lightning Forge
-    .isOnQuest 12988
 step
     .goto 120,31.28,38.17
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bruor Ironbane|r
@@ -1191,13 +1171,9 @@ step
 step
     .goto 120,28.88,44.05
     >>Pick up |cRXP_PICK_Colossus Attack Specs|r from the ground
-    .complete 12993,1 --Colossus Attack Specs (1)
-    .isOnQuest 12993
-step
-    .goto 120,29.90,45.81
     >>Pick up |cRXP_PICK_Colossus Defense Specs|r from the ground
-    .complete 12993,2 --Colossus Defense Specs (1)
-    .isOnQuest 12993
+    .complete -12993,1 --Colossus Attack Specs (1)
+    .complete -12993,2 --Colossus Defense Specs (1)
 step
     .goto 120,31.42,38.07
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bouldercrag the Rockshaper|r
@@ -1342,14 +1318,14 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 12876 >>Accept Unwelcome Guests
     .target Fjorlin Frostbrow
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along180
+    #completewith Along172
     >>As you go: Kill |cRXP_ENEMY_Stormforged Loreseekers|r, |cRXP_ENEMY_Stormforged Monitors|r and |cRXP_ENEMY_Stormforged Pillagers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12876,1 --Stormforged Loreseeker (8)
     .mob Stormforged Loreseeker
     .mob Stormforged Monitor
     .mob Stormforged Pillager
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along180
+    #label Along172
     .goto 120,25.24,68.47
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Drom Frostgrip|r
     .turnin 12875 >>Turn in An Experienced Guide
@@ -1499,7 +1475,7 @@ step
     .complete 13035,2 --Halefnir the Windborn slain (1)
     .mob Halefnir the Windborn
 step
-    #completewith Along207
+    #completewith Along199
     >>As you go: Kill |cRXP_ENEMY_Iron Dwarf Assailants|r. |cRXP_WARN_Anything left is finished later|r
     .complete 13005,2 --Iron Dwarf Assailant slain (20)
     .mob Iron Dwarf Assailant
@@ -1514,7 +1490,7 @@ step
     .complete 13035,1 --Eisenfaust slain (1)
     .mob Eisenfaust
 step
-    #label Along207
+    #label Along199
     #loop
     .goto 120,52.24,51.80,0
     .goto 120,52.24,51.80,40,0

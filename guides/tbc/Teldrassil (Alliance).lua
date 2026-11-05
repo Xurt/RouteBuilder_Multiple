@@ -513,23 +513,29 @@ step
     .accept 476 >>Accept Gnarlpine Corruption
     .target Gaerolas Talvethren
 step
-    .goto 1438/1,587.49,9859.82
-    >>Open the |cRXP_PICK_Starbreeze Village Moonwell|r. Loot it for |cRXP_LOOT_Filled Jade Phial|r
-    .complete 929,1 --Filled Jade Phial (1)
-    .isOnQuest 929
+    #completewith Along50
+    >>As you go: Kill |cRXP_ENEMY_Webwood Lurkers|r, |cRXP_ENEMY_Webwood Venomfangs|r, |cRXP_ENEMY_Webwood Silkspinners|r and |cRXP_ENEMY_Giant Webwood Spiders|r. Loot them for |cRXP_LOOT_Webwood Spider Silk|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -488,3 --Webwood Spider Silk (3)
+    .mob Webwood Lurker
+    .mob Webwood Venomfang
+    .mob Webwood Silkspinner
+    .mob Giant Webwood Spider
 step
     #loop
-    .goto 1438/1,618.54,9785.16,0
+    .goto 1438/1,587.49,9859.82,0
+    .goto 1438/1,587.49,9859.82,40,0
     .goto 1438/1,618.54,9785.16,40,0
     .goto 1438/1,782.50,9693.53,40,0
+    >>Open the |cRXP_PICK_Starbreeze Village Moonwell|r. Loot it for |cRXP_LOOT_Filled Jade Phial|r
     >>Kill |cRXP_ENEMY_Elder Nightsabers|r, |cRXP_ENEMY_Feral Nightsabers|r, |cRXP_ENEMY_Nightsabers|r and |cRXP_ENEMY_Nightsaber Stalkers|r. Loot them for |cRXP_LOOT_Nightsaber Fang|r
-    .complete 488,1 --Nightsaber Fang (3)
+    .complete -929,1 --Filled Jade Phial (1)
+    .complete -488,1 --Nightsaber Fang (3)
     .mob Elder Nightsaber
     .mob Feral Nightsaber
     .mob Nightsaber
     .mob Nightsaber Stalker
-    .isOnQuest 488
 step
+    #label Along50
     .goto 1438/1,1079.85,9817.06
     >>Kill |cRXP_ENEMY_Strigid Owls|r, |cRXP_ENEMY_Strigid Screechers|r and |cRXP_ENEMY_Strigid Hunters|r. Loot them for |cRXP_LOOT_Strigid Owl Feather|r
     .complete 488,2 --Strigid Owl Feather (3)
@@ -661,11 +667,15 @@ step
     >>Open the |cRXP_PICK_Chest of the Raven Claw|r. Loot it for |cRXP_LOOT_Raven Claw Talisman|r
     .complete 483,1 --Raven Claw Talisman (1)
 step
-    #completewith Along66
+    #completewith Along65
     >>As you go: Open the |cRXP_PICK_Chest of Nesting|r. Loot it for |cRXP_LOOT_Rune of Nesting|r. |cRXP_WARN_Anything left is finished later|r
     .complete 483,4 --Rune of Nesting (1)
 step
-    #label Along66
+    #completewith Along65
+    >>As you go: Open the |cRXP_PICK_Chest of the Sky|r. Loot it for |cRXP_LOOT_Sapphire of Sky|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -483,3 --Sapphire of Sky (1)
+step
+    #label Along65
     .goto 1438/1,1526.39,9741.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Oben Rageclaw|r
     .accept 2541 >>Accept The Sleeping Druid
@@ -761,9 +771,13 @@ step
     .turnin 487 >>Turn in The Road to Darnassus
     .unitscan Moon Priestess Amara
 step
-    #completewith Along78
+    #completewith Along77
     >>As you go: Open the |cRXP_PICK_Chest of Nesting|r. Loot it for |cRXP_LOOT_Rune of Nesting|r. |cRXP_WARN_Anything left is finished later|r
     .complete 483,4 --Rune of Nesting (1)
+step
+    #completewith Along77
+    >>As you go: Open the |cRXP_PICK_Chest of the Sky|r. Loot it for |cRXP_LOOT_Sapphire of Sky|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -483,3 --Sapphire of Sky (1)
 step
     .goto 1438/1,1526.39,9741.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Oben Rageclaw|r
@@ -776,12 +790,17 @@ step
     .complete 2561,1 --Rageclaw
     .target Rageclaw
 step
-    #label Along78
+    #label Along77
     .goto 1438/1,1526.39,9741.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Oben Rageclaw|r
     .turnin 2561 >>Turn in Druid of the Claw
     .target Oben Rageclaw
 step
+    #completewith Along78
+    >>As you go: Open the |cRXP_PICK_Chest of the Black Feather|r. Loot it for |cRXP_LOOT_Black Feather Quill|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -483,2 --Black Feather Quill (1)
+step
+    #label Along78
     .goto 1438/1,1553.88,9772.60
     >>Open the |cRXP_PICK_Chest of Nesting|r. Loot it for |cRXP_LOOT_Rune of Nesting|r
     .complete 483,4 --Rune of Nesting (1)

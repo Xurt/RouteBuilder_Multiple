@@ -451,26 +451,16 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 27856 >>Accept Marking the Fallen
     .target Dispatch Commander Ruag
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along58
-    >>As you go: Kill |cRXP_ENEMY_Marshtide Mages|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 27855,1 --Marshtide Mage slain (3)
-    .mob Marshtide Mage
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along58
     #loop
-    .goto 51,61.15,47.01,0
-    .goto 51,61.15,47.01,40,0
-    .goto 51,60.15,42.39,40,0
-    >>Interact with |cRXP_FRIENDLY_Fallen Stonard Warriors|r
-    .complete 27856,1 --Fallen Stonard Warrior (7)
-    .target Fallen Stonard Warrior
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 51,62.48,45.93,0
-    .goto 51,62.48,45.93,40,0
+    .goto 51,58.66,42.88,0
+    .goto 51,58.66,42.88,40,0
     .goto 51,61.83,41.68,40,0
+    .goto 51,61.15,47.01,40,0
+    >>Interact with |cRXP_FRIENDLY_Fallen Stonard Warriors|r
     >>Kill |cRXP_ENEMY_Marshtide Mages|r
+    .complete 27856,1 --Fallen Stonard Warrior (7)
     .complete 27855,1 --Marshtide Mage slain (3)
+    .target Fallen Stonard Warrior
     .mob Marshtide Mage
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 51,67.94,35.63
@@ -525,12 +515,12 @@ step
     .target Anchorite Avuun
     .isOnQuest 27918
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along68
+    #completewith Along67
     >>As you go: Kill |cRXP_ENEMY_Shifting Mireglob|r and loot |cRXP_LOOT_Invigorated Silt|r. |cRXP_WARN_Anything left is finished later|r
     .complete 27908,1 --Invigorated Silt (1)
     .mob Shifting Mireglob
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along68
+    #label Along67
     .goto 51,35.82,38.20
     >>Loot the |cRXP_PICK_Prayerblooms|r for |cRXP_LOOT_Prayerblossom|r
     .complete 27907,1 --Prayerblossom (10)

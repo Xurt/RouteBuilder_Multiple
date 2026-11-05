@@ -57,24 +57,16 @@ step
     .target Geologist Larksbane
 step
     #loop
-    .goto 1451/1,319.66,-7055.21,0
-    .goto 1451/1,319.66,-7055.21,40,0
-    .goto 1451/1,351.01,-7141.86,40,0
-    .goto 1451/1,352.40,-7314.22,40,0
+    .goto 1451/1,343.70,-7122.35,0
+    .goto 1451/1,343.70,-7122.35,40,0
+    .goto 1451/1,325.23,-7224.32,40,0
+    .goto 1451/1,418.24,-7219.91,40,0
     >>Kill |cRXP_ENEMY_Tortured Druids|r
-    .complete 1125,1 --Tortured Druid slain (8)
-    .mob Tortured Druid
-    .isOnQuest 1125
-step
-    #loop
-    .goto 1451/1,352.40,-7216.19,0
-    .goto 1451/1,352.40,-7216.19,40,0
-    .goto 1451/1,444.02,-7252.90,40,0
-    .goto 1451/1,351.71,-7116.54,40,0
     >>Kill |cRXP_ENEMY_Tortured Sentinels|r
-    .complete 1125,2 --Tortured Sentinel slain (8)
+    .complete -1125,1 --Tortured Druid slain (8)
+    .complete -1125,2 --Tortured Sentinel slain (8)
+    .mob Tortured Druid
     .mob Tortured Sentinel
-    .isOnQuest 1125
 step
     .goto 1451/1,-314.31,-6398.06
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Layo Starstrike|r
@@ -295,6 +287,12 @@ step
     .mob Hive'Regal Spitfire
     .mob Hive'Regal Slavemaker
 step
+    #completewith Along12
+    >>As you go: Kill |cRXP_ENEMY_Rock Stalkers|r. Loot them for |cRXP_LOOT_Rock Stalker Fang|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -8278,3 --Rock Stalker Fang (3)
+    .mob Rock Stalker
+step
+    #label Along12
     .goto 1451/1,1099.58,-8012.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rutgar Glyphshaper|r
     .complete 8304,2 --Rutgar Glyphshaper
@@ -310,6 +308,12 @@ step
     .complete 8304,1 --Frankal Stonebridge
     .target Frankal Stonebridge
 step
+    #completewith Along15
+    >>As you go: Kill |cRXP_ENEMY_Rock Stalkers|r. Loot them for |cRXP_LOOT_Rock Stalker Fang|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -8278,3 --Rock Stalker Fang (3)
+    .mob Rock Stalker
+step
+    #label Along15
     .goto 1451/1,1099.58,-8012.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rutgar Glyphshaper|r
     .turnin 8308 >>Turn in Brann Bronzebeard's Lost Letter
@@ -332,6 +336,12 @@ step
     .mob Stonelash Pincer
     .isOnQuest 8278
 step
+    #completewith Along18
+    >>As you go: Kill |cRXP_ENEMY_Rock Stalkers|r. Loot them for |cRXP_LOOT_Rock Stalker Fang|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -8278,3 --Rock Stalker Fang (3)
+    .mob Rock Stalker
+step
+    #label Along18
     #loop
     .goto 1451/1,1283.50,-7553.48,0
     .goto 1451/1,1283.50,-7553.48,40,0
@@ -417,15 +427,12 @@ step
     .target Rutgar Glyphshaper
     .isQuestComplete 8309
 step
-    .goto 1451/1,967.56,-8102.62
-    >>Kill |cRXP_ENEMY_Deathclasp|r and loot |cRXP_LOOT_Deathclasp's Pincer|r
-    .complete 8283,1 --Deathclasp's Pincer (1)
-    .mob Deathclasp
-step
     .goto 1451/1,985.33,-8081.01
+    >>Kill |cRXP_ENEMY_Deathclasp|r and loot |cRXP_LOOT_Deathclasp's Pincer|r
     >>Pick up |cRXP_PICK_Noggle's Satchel|r from the ground
-    .complete 8282,1 --Noggle's Satchel (1)
-    .isOnQuest 8282
+    .complete 8283,1 --Deathclasp's Pincer (1)
+    .complete -8282,1 --Noggle's Satchel (1)
+    .mob Deathclasp
 step
     .goto 1451/1,197.05,-7578.80
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hermit Ortell|r
@@ -440,7 +447,7 @@ step
     .target Hermit Ortell
     .isQuestTurnedIn 8279 --any of: The Twilight Lexicon
 step
-    #completewith Along32
+    #completewith Along31
     >>As you go: Kill |cRXP_ENEMY_Twilight Keeper Havunths|r, |cRXP_ENEMY_Twilight Avengers|r, |cRXP_ENEMY_Twilight Geolords|r and |cRXP_ENEMY_Twilight Stonecallers|r. Loot them for |cRXP_LOOT_Encrypted Twilight Text|r. |cRXP_WARN_Anything left is finished later|r
     .complete 8318,1 --Encrypted Twilight Text (10)
     .mob Twilight Keeper Havunth
@@ -448,7 +455,7 @@ step
     .mob Twilight Geolord
     .mob Twilight Stonecaller
 step
-    #label Along32
+    #label Along31
     #loop
     .goto 1451/1,227.00,-6458.69,0
     .goto 1451/1,227.00,-6458.69,40,0

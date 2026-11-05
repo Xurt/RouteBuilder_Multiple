@@ -370,22 +370,19 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 24973 --any of: Night Web's Hollow
     .xp <3,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 465,70.06,69.70
-    >>Kill |cRXP_ENEMY_Marshal Redpath|r
-    .complete 24971,1 --Marshal Redpath slain (1)
-    .mob Marshal Redpath
-    .isOnQuest 24971
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 465,71.19,66.60,0
-    .goto 465,71.19,66.60,40,0
-    .goto 465,73.89,65.32,40,0
+    .goto 465,72.43,59.29,0
     .goto 465,72.43,59.29,40,0
+    .goto 465,76.05,63.46,40,0
+    .goto 465,73.89,65.32,40,0
+    .goto 465,70.36,67.93,40,0
+    >>Kill |cRXP_ENEMY_Marshal Redpath|r
     >>Kill |cRXP_ENEMY_Rotbrain Magus|r and |cRXP_ENEMY_Rotbrain Berserkers|r
-    .complete 24971,2 --Rotbrain Magus (8)
+    .complete -24971,1 --Marshal Redpath slain (1)
+    .complete -24971,2 --Rotbrain Magus (8)
+    .mob Marshal Redpath
     .mob Rotbrain Magus
     .mob Rotbrain Berserker
-    .isOnQuest 24971
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 465,46.62,58.80
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shadow Priest Sarvis|r

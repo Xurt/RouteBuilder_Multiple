@@ -738,19 +738,16 @@ step
     .turnin 10839 >>Turn in Veil Skith: Darkstone of Terokk
     .accept 10848 >>Accept Veil Rhaze: Unliving Evil
     .target Kirrik the Awakened
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+step
     #loop
     .goto 108,35.09,54.43,0
     .goto 108,35.09,54.43,40,0
-    .goto 108,34.19,52.59,40,0
-    >>Kill |cRXP_ENEMY_Bonelashers|r
-    .complete 10034,1 --Bonelasher slain (20)
-    .mob Bonelasher
-step
-    .goto 108,32.13,51.23
+    .goto 108,32.13,51.23,40,0
+    >>Kill |cRXP_ENEMY_Bonelashers|r << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Open the |cRXP_PICK_Cabal Chest|r. Loot it for |cRXP_LOOT_Drape of Arunen|r
-    .complete 10881,1 --Drape of Arunen (1)
-    .isOnQuest 10881
+    .complete 10034,1 << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren --Bonelasher slain (20)
+    .complete -10881,1 --Drape of Arunen (1)
+    .mob Bonelasher << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
     #loop
     .goto 108,28.83,52.39,0
@@ -760,17 +757,14 @@ step
     >>Kill |cRXP_ENEMY_Spirit Ravens|r
     >>Kill |cRXP_ENEMY_Screeching Spirits|r
     >>Kill |cRXP_ENEMY_Deathtalon Spirits|r
+    >>Open the |cRXP_PICK_Cabal Chest|r. Loot it for |cRXP_LOOT_Gavel of K'alen|r
     .complete 10848,3 --Spirit Raven slain (2)
     .complete 10848,2 --Screeching Spirit slain (4)
     .complete 10848,1 --Deathtalon Spirit slain (4)
+    .complete -10881,2 --Gavel of K'alen (1)
     .mob Spirit Raven
     .mob Screeching Spirit
     .mob Deathtalon Spirit
-step
-    .goto 108,29.66,51.68
-    >>Open the |cRXP_PICK_Cabal Chest|r. Loot it for |cRXP_LOOT_Gavel of K'alen|r
-    .complete 10881,2 --Gavel of K'alen (1)
-    .isOnQuest 10881
 step
     .goto 108,30.61,49.06
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Akuno|r
@@ -1128,7 +1122,7 @@ step
     .accept 10898 >>Accept Skywing
     .target Skywing
 step
-    #completewith Along139
+    #completewith Along137
     >>As you go: Click the |cRXP_PICK_Violet Signal Fire|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10874,3 --Violet Signal Fire
 step
@@ -1138,7 +1132,7 @@ step
     .complete 10874,4 --Bloodstone Signal Fire
     .complete 10874,2 --Emerald Signal Fire
 step
-    #label Along139
+    #label Along137
     .goto 108,55.66,69.49
     >>Escort Skywing
     .complete 10898,1 --Escort Skywing
@@ -1382,12 +1376,12 @@ step
     .accept 10879 >>Accept The Skettis Offensive
     .target Defender Grashna
 step
-    #completewith Along178
+    #completewith Along176
     >>As you go: Kill |cRXP_ENEMY_Minion of Terokks|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10879,2 --Minion of Terokk slain (8)
     .mob Minion of Terokk
 step
-    #label Along178
+    #label Along176
     .goto 111,51.62,20.69
     >>Attack thwarted
     .complete 10879,3 --Attack thwarted
@@ -1478,19 +1472,15 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .xp <64,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 108,20.19,62.86,0
-    .goto 108,20.19,62.86,40,0
+    .goto 108,20.06,63.24,0
+    .goto 108,20.06,63.24,40,0
     .goto 108,19.80,65.23,40,0
     >>Kill |cRXP_ENEMY_Boulderfist Invaders|r
-    .complete 9889,1 --Boulderfist Invader slain (10)
-    .mob Boulderfist Invader
-    .isOnQuest 9889
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 108,20.06,63.24
     >>Kill |cRXP_ENEMY_Unkor the Ruthless|r
-    .complete 9889,2 --Unkor the Ruthless slain (1)
+    .complete -9889,1 --Boulderfist Invader slain (10)
+    .complete -9889,2 --Unkor the Ruthless slain (1)
+    .mob Boulderfist Invader
     .mob Unkor the Ruthless
-    .isOnQuest 9889
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 108,20.06,63.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Unkor the Ruthless|r
@@ -1826,15 +1816,11 @@ step
 step
     .goto 108,69.75,81.81
     >>Kill |cRXP_ENEMY_Talonpriest Skizzik|r
-    .complete 11005,2 --Talonpriest Skizzik slain (1)
-    .mob Talonpriest Skizzik
-    .isOnQuest 11005
-step
-    .goto 108,69.00,78.54
     >>Kill |cRXP_ENEMY_Talonpriest Ishaal|r
-    .complete 11005,1 --Talonpriest Ishaal slain (1)
+    .complete -11005,2 --Talonpriest Skizzik slain (1)
+    .complete -11005,1 --Talonpriest Ishaal slain (1)
+    .mob Talonpriest Skizzik
     .mob Talonpriest Ishaal
-    .isOnQuest 11005
 step
     .goto 108,70.10,74.40
     >>Kill |cRXP_ENEMY_Talonpriest Zellek|r

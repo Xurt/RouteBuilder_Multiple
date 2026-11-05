@@ -275,24 +275,13 @@ step
     .goto 1427/0,-748.86,-6632.08,40,0
     .goto 1427/0,-714.28,-6752.12,40,0
     >>Kill |cRXP_ENEMY_Twilight Dark Shamans|r, |cRXP_ENEMY_Twilight Fire Guards|r, |cRXP_ENEMY_Twilight Geomancers|r and |cRXP_ENEMY_Twilight Idolaters|r. Loot them for |cRXP_LOOT_Prayer to Elune|r
-    .complete 3378,1 --Prayer to Elune (1)
-    .mob Twilight Dark Shaman
-    .mob Twilight Fire Guard
-    .mob Twilight Geomancer
-    .mob Twilight Idolater
-step
-    #loop
-    .goto 1427/0,-748.86,-6632.08,0
-    .goto 1427/0,-748.86,-6632.08,40,0
-    .goto 1427/0,-847.71,-6643.68,40,0
-    .goto 1427/0,-714.28,-6752.12,40,0
     >>Kill |cRXP_ENEMY_Twilight Dark Shamans|r, |cRXP_ENEMY_Twilight Fire Guards|r, |cRXP_ENEMY_Twilight Geomancers|r and |cRXP_ENEMY_Twilight Idolaters|r. Loot them for |cRXP_LOOT_Symbol of Ragnaros|r
-    .complete 3452,1 --Symbol of Ragnaros (1)
+    .complete 3378,1 --Prayer to Elune (1)
+    .complete -3452,1 --Symbol of Ragnaros (1)
     .mob Twilight Dark Shaman
     .mob Twilight Fire Guard
     .mob Twilight Geomancer
     .mob Twilight Idolater
-    .isOnQuest 3452
 step
     .goto 1427/0,-1194.44,-6679.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kalaran Windblade|r
@@ -398,15 +387,10 @@ step
     .target Squire Maltrake
     .isQuestTurnedIn 3462 --any of: Squire Maltrake
 step
-    .goto 1427/0,-1065.92,-6910.39
-    >>Click the |cRXP_PICK_Sentry Brazier|r
-    .complete 3463,4 --Northern Tower Ablaze
-    .isOnQuest 3463
-step
     .goto 1427/0,-1118.80,-7002.61
     >>Click the |cRXP_PICK_Sentry Brazier|r
-    .complete 3463,1 --Western Tower Ablaze
-    .isOnQuest 3463
+    .complete -3463,4 --Northern Tower Ablaze
+    .complete -3463,1 --Western Tower Ablaze
 step
     .goto 1427/0,-1305.34,-7006.04
     >>Click the |cRXP_PICK_Sentry Brazier|r
@@ -471,15 +455,11 @@ step
 step
     .goto 1427/0,-1244.87,-6479.76
     >>Kill |cRXP_ENEMY_Lathoric the Black|r and loot |cRXP_LOOT_Head of Lathoric the Black|r
-    .complete 3566,1 --Head of Lathoric the Black (1)
-    .mob Lathoric the Black
-    .isOnQuest 3566
-step
-    .goto 1427/0,-1254.69,-6461.91
     >>Kill |cRXP_ENEMY_Obsidion|r and loot |cRXP_LOOT_Heart of Obsidion|r
-    .complete 3566,2 --Heart of Obsidion (1)
+    .complete -3566,1 --Head of Lathoric the Black (1)
+    .complete -3566,2 --Heart of Obsidion (1)
+    .mob Lathoric the Black
     .mob Obsidion
-    .isOnQuest 3566
 step
     +|cRXP_WARN_End of the Searing Gorge route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Ironforge|r: Rise, Obsidion!

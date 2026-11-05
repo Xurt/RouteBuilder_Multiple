@@ -554,21 +554,16 @@ step
     .mob Uprooted Lasher
 step
     #loop
-    .goto 66,62.85,55.28,0
-    .goto 66,62.85,55.28,40,0
+    .goto 66,64.16,57.16,0
     .goto 66,64.16,57.16,40,0
-    .goto 66,55.15,63.09,40,0
-    .goto 66,54.42,60.14,40,0
-    >>Pick up |cRXP_PICK_Aloe Thistle|r from the ground
-    .complete 14305,1 --Aloe Thistle (10)
-step
-    #loop
-    .goto 66,54.20,58.94,0
-    .goto 66,54.20,58.94,40,0
+    .goto 66,53.89,58.12,40,0
     .goto 66,50.79,58.70,40,0
+    .goto 66,54.41,60.41,40,0
+    .goto 66,54.38,62.78,40,0
+    >>Pick up |cRXP_PICK_Aloe Thistle|r from the ground
     >>Loot the |cRXP_PICK_Kodo Bones|r for |cRXP_LOOT_Kodo Bone|r
-    .complete 5501,1 --Kodo Bone (10)
-    .isOnQuest 5501
+    .complete 14305,1 --Aloe Thistle (10)
+    .complete -5501,1 --Kodo Bone (10)
 step
     .goto 66,55.41,55.81
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nataka Longhorn|r
@@ -581,12 +576,12 @@ step
     .target Takata Steelblade
     .isOnQuest 1432
 step
-    #completewith Along82
+    #completewith Along81
     >>As you go: Kill |cRXP_ENEMY_Blood-filled Leeches|r. Loot them for |cRXP_LOOT_Blood-Filled Leech|r. |cRXP_WARN_Anything left is finished later|r
     .complete 14304,1 --Blood-Filled Leech (10)
     .mob Blood-filled Leech
 step
-    #label Along82
+    #label Along81
     #loop
     .goto 66,46.32,51.08,0
     .goto 66,46.32,51.08,40,0
@@ -959,21 +954,15 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Grimfeather
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 66,41.12,50.46,0
-    .goto 66,41.12,50.46,40,0
+    .goto 66,41.50,50.69,0
+    .goto 66,41.50,50.69,40,0
     .goto 66,39.80,44.64,40,0
     .goto 66,36.50,46.43,40,0
     >>Interact with |cRXP_FRIENDLY_Slitherblade Sirens|r
-    .complete 14381,2 --Slitherblade Siren (10)
-    .target Slitherblade Siren
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 66,39.26,45.85,0
-    .goto 66,39.26,45.85,40,0
-    .goto 66,39.79,43.32,40,0
-    .goto 66,41.50,50.69,40,0
     >>Interact with |cRXP_FRIENDLY_Slitherblade Invaders|r
+    .complete 14381,2 --Slitherblade Siren (10)
     .complete 14381,4 --Slitherblade Invader (10)
+    .target Slitherblade Siren
     .target Slitherblade Invader
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 66,36.11,30.45
@@ -1029,24 +1018,14 @@ step
     .goto 66,69.55,73.35,40,0
     .goto 66,70.94,76.02,40,0
     >>Kill |cRXP_ENEMY_Burning Blade Warlocks|r
-    .complete 14393,1 --Burning Blade Warlock slain (15)
-    .mob Burning Blade Warlock
-    .isOnQuest 14393
-step
-    .goto 66,69.06,76.43
     >>Kill |cRXP_ENEMY_Priestess Than'darissa|r
-    .complete 14393,3 --Priestess Than'darissa slain (1)
-    .mob Priestess Than'darissa
-    .isOnQuest 14393
-step
-    #loop
-    .goto 66,69.45,74.86,0
-    .goto 66,69.45,74.86,40,0
-    .goto 66,70.93,73.79,40,0
     >>Kill |cRXP_ENEMY_Doomguard Invaders|r
-    .complete 14393,2 --Doomguard Invader slain (3)
+    .complete -14393,1 --Burning Blade Warlock slain (15)
+    .complete -14393,3 --Priestess Than'darissa slain (1)
+    .complete -14393,2 --Doomguard Invader slain (3)
+    .mob Burning Blade Warlock
+    .mob Priestess Than'darissa
     .mob Doomguard Invader
-    .isOnQuest 14393
 step
     .goto 66,72.28,67.35
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khan Leh'Prah|r

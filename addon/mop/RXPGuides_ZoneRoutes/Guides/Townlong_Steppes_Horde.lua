@@ -301,7 +301,7 @@ step
     .accept 30779 >>Accept Slaying the Scavengers
     .target Ban Bearheart
 step
-    #completewith Along44
+    #completewith Along43
     >>As you go: Kill |cRXP_ENEMY_Ashfang Hyenas|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30779,1 --Ashfang Hyena slain (8)
     .mob Ashfang Hyena
@@ -311,7 +311,7 @@ step
     .accept 30780 >>Accept Totemic Research
     .target Yalia Sagewhisper
 step
-    #completewith Along44
+    #completewith Along43
     >>As you go: Pick up |cRXP_PICK_Palewind Totem|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 30780,1 --Palewind Totem (9)
 step
@@ -335,42 +335,24 @@ step
     .complete 30781,1 --Eastern Smoke Trail
     .target Eastern Smoke Trail
 step
+    #label Along43
     .goto 388,83.56,78.42
     >>Take Xiao Tu to the smoke trails at Hatred's Vice.
     .complete 30781,3 --Southern Smoke Trail
     .target Southern Smoke Trail
 step
-    #label Along44
     #loop
-    .goto 388,83.38,78.72,0
-    .goto 388,83.38,78.72,40,0
-    .goto 388,83.57,74.86,40,0
+    .goto 388,83.48,78.26,0
+    .goto 388,83.48,78.26,40,0
+    .goto 388,80.90,73.45,40,0
     .goto 388,84.42,71.83,40,0
     >>Interact with |cRXP_FRIENDLY_Palewind Villagers|r
-    .complete 30778,1 --Palewind Villager (20)
-    .target Palewind Villager
-step
-    .goto 388,82.68,73.02
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ban Bearheart|r
-    .turnin 30778 >>Turn in Dust to Dust while you are here
-    .isQuestComplete 30778
-    .target Ban Bearheart
-step
-    .goto 388,82.68,73.02
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ban Bearheart|r
-    .turnin 30781 >>Turn in Last Toll of the Yaungol while you are here
-    .isQuestComplete 30781
-    .target Ban Bearheart
-step
-    #loop
-    .goto 388,82.94,78.48,0
-    .goto 388,82.94,78.48,40,0
-    .goto 388,80.90,73.45,40,0
-    .goto 388,84.47,71.81,40,0
     >>Pick up |cRXP_PICK_Palewind Totem|r from the ground
     >>Kill |cRXP_ENEMY_Ashfang Hyenas|r
+    .complete 30778,1 --Palewind Villager (20)
     .complete 30780,1 --Palewind Totem (9)
     .complete 30779,1 --Ashfang Hyena slain (8)
+    .target Palewind Villager
     .mob Ashfang Hyena
 step
     .goto 388,82.59,73.02
@@ -422,12 +404,12 @@ step
     .accept 30783 >>Accept Hatred Becomes Us
     .target Yalia Sagewhisper
 step
-    #completewith Along54
+    #completewith Along53
     >>As you go: Kill |cRXP_ENEMY_Seething Hatreds|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30783,1 --Seething Hatred slain (8)
     .mob Seething Hatred
 step
-    #label Along54
+    #label Along53
     .goto 388,82.68,73.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ban Bearheart|r
     .accept 30782 >>Accept Spiteful Spirits
@@ -523,23 +505,23 @@ step
     .accept 30889 >>Accept Trap Setting
     .target Mao the Lookout
 step
-    #completewith Along70
+    #completewith Along69
     >>As you go: Kill |cRXP_ENEMY_Shado-Pan Spike Traps|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30889,1 --Shado-Pan Spike Trap slain (8)
     .mob Shado-Pan Spike Trap
 step
-    #completewith Along69
+    #completewith Along68
     >>As you go: Kill |cRXP_ENEMY_Krik'thik Scentlayers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30888,1 --Krik'thik Scentlayer slain (10)
     .mob Krik'thik Scentlayer
 step
-    #label Along69
+    #label Along68
     .goto 388,82.21,84.11
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Scout Wei-Chin|r
     .complete 30890,1 --Scout Wei-Chin
     .target Scout Wei-Chin
 step
-    #label Along70
+    #label Along69
     .goto 388,81.27,86.18
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Scout Long|r
     .complete 30890,2 --Scout Long
@@ -581,12 +563,13 @@ step
     .accept 30893 >>Accept The Endless Swarm
     .target Taran Zhu
 step
-    #completewith Along78
+    #completewith Along76
     >>As you go: Kill |cRXP_ENEMY_Krik'thik Locust-Guards|r and |cRXP_ENEMY_Krik'thik Limbpincers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30893,1 --Krik'thik Locust-Guard (8)
     .mob Krik'thik Locust-Guard
     .mob Krik'thik Limbpincer
 step
+    #label Along76
     .goto 388,75.86,83.14
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Septi the Herbalist|r
     .turnin 30891 >>Turn in Treatment for the Troops
@@ -594,20 +577,17 @@ step
     .accept 30894 >>Accept Rummaging Through the Remains
     .target Septi the Herbalist
 step
-    #label Along78
-    .goto 388,76.38,89.36
-    >>Interact with |cRXP_FRIENDLY_Injured Gao-Ran Blackguards|r
-    .complete 30892,1 --Injured Gao-Ran Blackguard (8)
-    .target Injured Gao-Ran Blackguard
-step
     #loop
-    .goto 388,76.72,88.92,0
-    .goto 388,76.72,88.92,40,0
+    .goto 388,74.39,84.01,0
     .goto 388,74.39,84.01,40,0
+    .goto 388,76.38,89.36,40,0
+    >>Interact with |cRXP_FRIENDLY_Injured Gao-Ran Blackguards|r
     >>Kill |cRXP_ENEMY_Krik'thik Locust-Guards|r and |cRXP_ENEMY_Krik'thik Limbpincers|r
     >>Pick up |cRXP_PICK_Krik'thik Limb|r from the ground
+    .complete 30892,1 --Injured Gao-Ran Blackguard (8)
     .complete 30893,1 --Krik'thik Locust-Guard (8)
     .complete 30894,1 --Krik'thik Limb (20)
+    .target Injured Gao-Ran Blackguard
     .mob Krik'thik Locust-Guard
     .mob Krik'thik Limbpincer
 step
@@ -701,12 +681,12 @@ step
     .accept 30970 >>Accept Enraged By Hatred
     .target Taoshi
 step
-    #completewith Along94
+    #completewith Along92
     >>As you go: Kill |cRXP_ENEMY_Seething Fleshrippers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30970,1 --Seething Fleshripper slain (9)
     .mob Seething Fleshripper
 step
-    #label Along94
+    #label Along92
     .goto 388,67.36,80.67
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Initiate Pao-Me|r
     .accept 30971 >>Accept Taking Stock
@@ -807,7 +787,7 @@ step
     .mob Kri'thik Boneslicer
     .mob Kri'thik Screamer
 step
-    #completewith Along109
+    #completewith Along107
     >>As you go: Kill |cRXP_ENEMY_Longshadow Mushans|r and |cRXP_ENEMY_Longshadow Bulls|r. Loot them for |cRXP_LOOT_Full Mushan Bladder|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30922,1 --Full Mushan Bladder (5)
     .mob Longshadow Mushan
@@ -822,7 +802,7 @@ step
     >>Pick up |cRXP_PICK_Mao-Willow|r from the ground
     .complete 30964,1 --Mao-Willow (11)
 step
-    #label Along109
+    #label Along107
     #loop
     .goto 388,54.50,69.95,0
     .goto 388,54.50,69.95,40,0
@@ -918,11 +898,11 @@ step
     .accept 30930 >>Accept Pick a Yak
     .unitscan Bluesaddle
 step
-    #completewith Along124
+    #completewith Along122
     >>As you go: Click the |cRXP_PICK_Father's Shield|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30932,3 --Father's Shield
 step
-    #label Along124
+    #label Along122
     .goto 388,37.40,60.90
     >>Click the |cRXP_PICK_Father's Bedroll|r
     .complete 30932,4 --Father's Bedroll
@@ -976,12 +956,12 @@ step
     .accept 30927 >>Accept Give Them Peace
     .target Sentinel Commander Qipan
 step
-    #completewith Along132
+    #completewith Along130
     >>As you go: Kill |cRXP_ENEMY_Fear-Stricken Sentinels|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30927,1 --Fear-Stricken Sentinel (10)
     .mob Fear-Stricken Sentinel
 step
-    #label Along132
+    #label Along130
     .goto 388,32.77,61.52
     >>Investigate the Niuzao Catacombs, then slay the Dread Shadow that dwells within.
     .complete 30926,1 --Find Cave Credit
@@ -1111,6 +1091,11 @@ step
     .isQuestTurnedIn 30976 --any of: Joining the Hunt
     .xp <88,1
 step
+    #completewith Along155
+    >>As you go: Kill |cRXP_ENEMY_Kor'thik Fleetwings|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -30977,1 --Kor'thik Fleetwing slain (12)
+    .mob Kor'thik Fleetwing
+step
     .goto 388,51.26,83.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marksman Ye|r
     .accept 31032 >>Accept Choking the Skies
@@ -1131,17 +1116,13 @@ step
     .isQuestTurnedIn 30899 --any of: In Skilled Hands
     .xp <88,1
 step
-    .goto 388,51.60,87.20
+    .goto 388,53.20,87.40
     >>Kill |cRXP_ENEMY_Kor'thik Swarmers|r
-    .complete 30978,1 --Kor'thik Swarmer slain (50)
-    .mob Kor'thik Swarmer
-    .isOnQuest 30978
-step
-    .goto 388,53.60,87.40
     >>Kill |cRXP_ENEMY_Voress'thaliks|r
-    .complete 30978,2 --Voress'thalik slain (8)
+    .complete -30978,1 --Kor'thik Swarmer slain (50)
+    .complete -30978,2 --Voress'thalik slain (8)
+    .mob Kor'thik Swarmer
     .mob Voress'thalik
-    .isOnQuest 30978
 step
     .goto 388,51.67,87.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hawkmaster Nurong|r
@@ -1168,6 +1149,7 @@ step
     .target Hawkmaster Nurong
     .isOnQuest 30979
 step
+    #label Along155
     .goto 388,53.99,86.96
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hawkmaster Nurong|r
     .accept 30980 >>Accept Heroes of the Shado-Pan
@@ -1180,18 +1162,11 @@ step
     .goto 388,53.79,85.57,40,0
     .goto 388,51.95,84.48,40,0
     >>Kill |cRXP_ENEMY_Kor'thik Fleetwings|r
-    .complete 30977,1 --Kor'thik Fleetwing slain (12)
-    .mob Kor'thik Fleetwing
-    .isOnQuest 30977
-step
-    #loop
-    .goto 388,53.79,85.57,0
-    .goto 388,53.79,85.57,40,0
-    .goto 388,51.95,84.48,40,0
     >>Interact with |cRXP_FRIENDLY_Kor'thik Fleetwings|r
-    .complete 31032,1 --Kor'thik Fleetwing (10)
+    .complete -30977,1 --Kor'thik Fleetwing slain (12)
+    .complete -31032,1 --Kor'thik Fleetwing (10)
+    .mob Kor'thik Fleetwing
     .target Kor'thik Fleetwing
-    .isOnQuest 31032
 step
     .goto 388,51.26,83.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marksman Ye|r
@@ -1258,27 +1233,24 @@ step
     .mob Rothek
     .isOnQuest 31064
 step
-    .goto 388,45.38,77.43
+    #completewith Along167
+    >>As you go: Kill |cRXP_ENEMY_Sik'thik Venomspitters|r, |cRXP_ENEMY_Sik'thik Drones|r and |cRXP_ENEMY_Sik'thik Vess-Guards|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -31687,1 --Sik'thik Venomspitter (8)
+    .mob Sik'thik Venomspitter
+    .mob Sik'thik Drone
+    .mob Sik'thik Vess-Guard
+step
+    #label Along167
+    #loop
+    .goto 388,46.42,76.28,0
+    .goto 388,46.42,76.28,40,0
+    .goto 388,49.74,78.70,40,0
     >>Kill |cRXP_ENEMY_Serevex|r
-    .complete 31063,1 --Serevex slain (1)
+    >>Click the |cRXP_PICK_Sik'thik Cage|r
+    .complete -31063,1 --Serevex slain (1)
+    .complete -31688,1 --Sik'thik Cage
+    .complete -31688,2 --Sik'thik Cage
     .mob Serevex
-    .isOnQuest 31063
-step
-    #loop
-    .goto 388,46.42,76.28,0
-    .goto 388,46.42,76.28,40,0
-    .goto 388,49.74,78.70,40,0
-    >>Click the |cRXP_PICK_Sik'thik Cage|r
-    .complete 31688,1 --Sik'thik Cage
-    .isOnQuest 31688
-step
-    #loop
-    .goto 388,46.42,76.28,0
-    .goto 388,46.42,76.28,40,0
-    .goto 388,49.74,78.70,40,0
-    >>Click the |cRXP_PICK_Sik'thik Cage|r
-    .complete 31688,2 --Sik'thik Cage
-    .isOnQuest 31688
 step
     #loop
     .goto 388,47.91,88.22,0

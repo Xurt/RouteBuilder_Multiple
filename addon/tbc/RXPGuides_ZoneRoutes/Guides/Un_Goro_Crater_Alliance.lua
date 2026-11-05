@@ -270,6 +270,14 @@ step
     .accept 3884 >>Accept Williden's Journal
     .use 11116
 step
+    #completewith Along32
+    >>As you go: Kill |cRXP_ENEMY_Devilsaurs|r, |cRXP_ENEMY_Ironhide Devilsaurs|r, |cRXP_ENEMY_Tyrant Devilsaurs|r and |cRXP_ENEMY_Stegodons|r. Loot them for |cRXP_LOOT_Bloodpetal Sprout|r. It can also be picked up from |cRXP_PICK_Bloodpetal Sprout|r on the ground. |cRXP_WARN_Anything left is finished later|r
+    .complete -4144,1 --Bloodpetal Sprout (1)
+    .mob Devilsaur
+    .mob Ironhide Devilsaur
+    .mob Tyrant Devilsaur
+    .mob Stegodon
+step
     #label Drop3884x3
     #loop
     .goto 1449/1,-1065.07,-8112.67,0
@@ -283,6 +291,7 @@ step
     .mob Fledgling Pterrordax
     .mob Frenzied Pterrordax
 step
+    #label Along32
     .goto 1449/1,-1268.20,-8071.23
     >>Open the |cRXP_PICK_Gorishi Hive Hatchery|r. Loot it for |cRXP_LOOT_Hive Wall Sample|r
     .complete 3883,1 --Hive Wall Sample (1)

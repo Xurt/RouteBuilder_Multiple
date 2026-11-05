@@ -186,6 +186,10 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 25504 --any of: Do Me a Favor?
     .xp <38,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along25
+    >>As you go: Pick up |cRXP_PICK_Rocket Car Parts|r from the ground. |cRXP_WARN_Anything left is finished later|r
+    .complete -25515,1 --Rocket Car Parts (10)
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 64,77.99,73.31
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rizzle Brassbolts|r
     .accept 25517 >>Accept Bar Fight!
@@ -199,6 +203,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Goblin Bar Patron
     .isOnQuest 25517
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along25
     .goto 64,79.53,75.06
     >>Click the |cRXP_PICK_Submerged Outhouse|r
     .accept 25524 >>Accept In the Outhouse
@@ -351,12 +356,19 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 25542,25561 --any of: Circle the Wagons... er, Boats, Circle the Wagons... er, Boats
     .xp <38,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along45
+    >>As you go: Kill |cRXP_ENEMY_Southsea Parrot Handlers|r and |cRXP_ENEMY_Southsea Sailors|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25588,1 --Southsea Parrot Handler (8)
+    .mob Southsea Parrot Handler
+    .mob Southsea Sailor
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 64,91.62,78.55
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wizzle Brassbolts|r
     .turnin 25590 >>Turn in Where's Wizzle?
     .target Wizzle Brassbolts
     .isOnQuest 25590
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along45
     .goto 64,91.62,78.55
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wizzle Brassbolts|r
     .accept 25609 >>Accept Sunken Treasure
@@ -368,20 +380,14 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 64,91.27,79.94,0
     .goto 64,91.27,79.94,40,0
     .goto 64,92.16,77.02,40,0
+    .goto 64,94.00,71.18,40,0
     >>Kill |cRXP_ENEMY_Southsea Parrot Handlers|r and |cRXP_ENEMY_Southsea Sailors|r
-    .complete 25588,1 --Southsea Parrot Handler (8)
+    >>Interact with |cRXP_FRIENDLY_Holdfast Cannons|r
+    .complete -25588,1 --Southsea Parrot Handler (8)
+    .complete -25585,1 --Holdfast Cannon (8)
     .mob Southsea Parrot Handler
     .mob Southsea Sailor
-    .isOnQuest 25588
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 64,91.35,75.99,0
-    .goto 64,91.35,75.99,40,0
-    .goto 64,94.00,71.18,40,0
-    >>Interact with |cRXP_FRIENDLY_Holdfast Cannons|r
-    .complete 25585,1 --Holdfast Cannon (8)
     .target Holdfast Cannon
-    .isOnQuest 25585
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 64,82.00,69.41,0
@@ -451,15 +457,11 @@ step
 step
     .goto 64,87.88,75.97
     >>Kill |cRXP_ENEMY_Lilly Landlubber|r and loot |cRXP_LOOT_Lilly Landlubber's Liver|r
-    .complete 25661,3 --Lilly Landlubber's Liver (1)
-    .mob Lilly Landlubber
-    .isOnQuest 25661
-step
-    .goto 64,88.48,72.85
     >>Kill |cRXP_ENEMY_Seadog Fajardo|r and loot |cRXP_LOOT_Seadog Fajardo's Lungs|r
-    .complete 25661,2 --Seadog Fajardo's Lungs (1)
+    .complete -25661,3 --Lilly Landlubber's Liver (1)
+    .complete -25661,2 --Seadog Fajardo's Lungs (1)
+    .mob Lilly Landlubber
     .mob Seadog Fajardo
-    .isOnQuest 25661
 step
     .goto 64,91.04,68.96
     >>Kill |cRXP_ENEMY_Evil Dolly|r and loot |cRXP_LOOT_Evil Dolly's Heart|r
@@ -571,15 +573,11 @@ step
     .goto 64,71.08,82.69,40,0
     .goto 64,67.02,83.08,40,0
     >>Interact with |cRXP_FRIENDLY_Dead Employees|r
-    .complete 28051,1 --Dead Employee (10)
-    .target Dead Employee
-    .isOnQuest 28051
-step
-    .goto 64,71.50,83.01
     >>Kill |cRXP_ENEMY_Silithid Ravager|r and loot |cRXP_LOOT_Scoop of Silithid Goo|r
-    .complete 28045,1 --Scoop of Silithid Goo (1)
+    .complete -28051,1 --Dead Employee (10)
+    .complete -28045,1 --Scoop of Silithid Goo (1)
+    .target Dead Employee
     .mob Silithid Ravager
-    .isOnQuest 28045
 step
     .goto 64,69.88,85.16
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brivelthwerp|r
@@ -602,31 +600,15 @@ step
     .isQuestTurnedIn 28051 --We All Scream for Ice Cream... and then Die!
     .xp <38,1
 step
-    .goto 64,64.99,84.47
-    >>Click the |cRXP_PICK_Refrigeration Pipe|r
-    .complete 28047,3 --Refrigeration Pipe
-    .isOnQuest 28047
-step
     .goto 64,64.92,85.73
     >>Click the |cRXP_PICK_Refrigeration Pipe|r
-    .complete 28047,4 --Refrigeration Pipe
-    .isOnQuest 28047
-step
-    .goto 64,63.84,86.26
     >>Kill |cRXP_ENEMY_Hive Controller|r
-    .complete 28048,1 --Hive Controller slain (1)
+    .complete -28047,3 --Refrigeration Pipe
+    .complete -28047,4 --Refrigeration Pipe
+    .complete -28048,1 --Hive Controller slain (1)
+    .complete -28047,2 --Refrigeration Pipe
+    .complete -28047,1 --Refrigeration Pipe
     .mob Hive Controller
-    .isOnQuest 28048
-step
-    .goto 64,65.27,86.98
-    >>Click the |cRXP_PICK_Refrigeration Pipe|r
-    .complete 28047,2 --Refrigeration Pipe
-    .isOnQuest 28047
-step
-    .goto 64,65.98,86.46
-    >>Click the |cRXP_PICK_Refrigeration Pipe|r
-    .complete 28047,1 --Refrigeration Pipe
-    .isOnQuest 28047
 step
     .goto 64,69.88,85.16
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brivelthwerp|r
@@ -648,16 +630,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 25774,1 --Needles Pyrite Ore Chunk (8)
     .isOnQuest 25774
 step
-    .goto 64,42.16,32.99
-    >>Kill |cRXP_ENEMY_Aquarian|r and loot |cRXP_LOOT_The Sacred Flame|r
-    .complete 25762,2 --The Sacred Flame (1)
-    .mob Aquarian
-    .isOnQuest 25762
-step
     .goto 64,42.05,32.66
+    >>Kill |cRXP_ENEMY_Aquarian|r and loot |cRXP_LOOT_The Sacred Flame|r
     >>Click the |cRXP_PICK_The Ancient Brazier|r
-    .complete 25762,1 --The Ancient Brazier
-    .isOnQuest 25762
+    .complete -25762,2 --The Sacred Flame (1)
+    .complete -25762,1 --The Ancient Brazier
+    .mob Aquarian
 step
     .goto 64,39.15,25.75
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lakota Windsong|r
@@ -739,6 +717,14 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 25790 --any of: Back to Crazzle
     .xp <38,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along93
+    >>As you go: Kill |cRXP_ENEMY_Galak Stormers|r, |cRXP_ENEMY_Galak Wranglers|r and |cRXP_ENEMY_Galak Maulers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25796,1 --Galak Stormer (8)
+    .mob Galak Stormer
+    .mob Galak Wrangler
+    .mob Galak Mauler
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along93
     .goto 64,90.75,51.28
     >>Defend the Oil Drilling Rig.
     .complete 25798,1 --Oil Drilling Rig
@@ -777,16 +763,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 25798 --Defend the Drill
     .xp <38,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 64,89.46,46.99
-    >>Click the |cRXP_PICK_Horn Mouthpiece|r
-    .complete 25813,2 --Horn Mouthpiece
-    .isOnQuest 25813
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 64,89.69,45.48
+    >>Click the |cRXP_PICK_Horn Mouthpiece|r
     >>Kill |cRXP_ENEMY_Whrrrl|r
-    .complete 25813,1 --Whrrrl slain (1)
+    .complete -25813,2 --Horn Mouthpiece
+    .complete -25813,1 --Whrrrl slain (1)
     .mob Whrrrl
-    .isOnQuest 25813
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 64,91.39,57.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Crazzle Sprysprocket|r
@@ -828,6 +810,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 25835 --any of: Free Freewind Post
     .xp <38,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along105
+    >>As you go: Kill |cRXP_ENEMY_Grimtotem Invaders|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25869,1 --Grimtotem Invader slain (10)
+    .mob Grimtotem Invader
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along105
     .goto 64,46.82,56.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brienna Starglow|r
     .accept 25871 >>Accept Save the Sentinel
@@ -885,17 +873,21 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 27275 --any of: Together Again
     .xp <38,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along114
+    >>As you go: Kill |cRXP_ENEMY_Grimtotem Stompers|r, |cRXP_ENEMY_Grimtotem Reavers|r and |cRXP_ENEMY_Grimtotem Geomancers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -27312,1 --Grimtotem Stomper (8)
+    .mob Grimtotem Stomper
+    .mob Grimtotem Reaver
+    .mob Grimtotem Geomancer
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 64,43.55,43.40
     >>Click the |cRXP_PICK_Grimtotem Weapon Rack|r
-    .complete 27310,1 --Grimtotem Weapon Rack
-    .isOnQuest 27310
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 64,43.75,43.76
     >>Kill |cRXP_ENEMY_Isha Gloomaxe|r
-    .complete 27314,1 --Isha Gloomaxe slain (1)
+    .complete -27310,1 --Grimtotem Weapon Rack
+    .complete -27314,1 --Isha Gloomaxe slain (1)
     .mob Isha Gloomaxe
-    .isOnQuest 27314
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along114
     .goto 64,43.40,43.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_The Rattle of Bones|r
     .accept 27316 >>Accept The Rattle of Bones
@@ -962,14 +954,10 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 64,39.06,41.15
     >>Kill |cRXP_ENEMY_Elder Stormhoof|r
-    .complete 27318,1 --Elder Stormhoof slain (1)
-    .mob Elder Stormhoof
-    .isOnQuest 27318
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 64,38.67,41.86
     >>Pick up |cRXP_PICK_The Writ of History|r from the ground
-    .complete 27320,1 --The Writ of History (1)
-    .isOnQuest 27320
+    .complete -27318,1 --Elder Stormhoof slain (1)
+    .complete -27320,1 --The Writ of History (1)
+    .mob Elder Stormhoof
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 64,42.20,48.30
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feralas Sentinel|r
@@ -990,16 +978,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Feralas Sentinel
     .isOnQuest 27320
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 64,34.06,40.08
-    >>Kill |cRXP_ENEMY_Grundig Darkcloud|r
-    .complete 27323,1 --Grundig Darkcloud slain (1)
-    .mob Grundig Darkcloud
-    .isOnQuest 27323
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 64,33.97,37.17
+    >>Kill |cRXP_ENEMY_Grundig Darkcloud|r
     >>Pick up |cRXP_PICK_The Drums of War|r from the ground
-    .complete 27325,1 --The Drums of War (1)
-    .isOnQuest 27325
+    .complete -27323,1 --Grundig Darkcloud slain (1)
+    .complete -27325,1 --The Drums of War (1)
+    .mob Grundig Darkcloud
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 64,42.20,48.30
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feralas Sentinel|r
@@ -1192,22 +1176,14 @@ step
     #loop
     .goto 64,11.00,34.56,0
     .goto 64,11.00,34.56,40,0
-    .goto 64,11.10,38.51,40,0
-    .goto 64,13.78,37.49,40,0
-    >>Kill |cRXP_ENEMY_Twilight Trappers|r. Loot them for |cRXP_LOOT_Trapper Net|r
-    .complete 28087,1 --Trapper Net (8)
-    .mob Twilight Trapper
-    .isOnQuest 28087
-step
-    #loop
-    .goto 64,10.67,39.68,0
     .goto 64,10.67,39.68,40,0
     .goto 64,13.15,38.78,40,0
-    .goto 64,11.25,33.42,40,0
+    >>Kill |cRXP_ENEMY_Twilight Trappers|r. Loot them for |cRXP_LOOT_Trapper Net|r
     >>Interact with |cRXP_FRIENDLY_Highperch Pridelings|r
-    .complete 28086,1 --Highperch Prideling (12)
+    .complete -28087,1 --Trapper Net (8)
+    .complete -28086,1 --Highperch Prideling (12)
+    .mob Twilight Trapper
     .target Highperch Prideling
-    .isOnQuest 28086
 step
     .goto 64,12.84,33.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pao'ka Swiftmountain|r
@@ -1288,26 +1264,18 @@ step
     .xp <38,1
 step
     #loop
-    .goto 64,28.87,54.11,0
-    .goto 64,28.87,54.11,40,0
-    .goto 64,27.44,57.14,40,0
+    .goto 64,31.31,55.08,0
+    .goto 64,31.31,55.08,40,0
+    .goto 64,29.52,58.23,40,0
+    .goto 64,26.45,57.20,40,0
     >>Kill |cRXP_ENEMY_Bulwark Defenders|r, |cRXP_ENEMY_Twilight Magus|r and |cRXP_ENEMY_Twilight Jailers|r. Loot them for |cRXP_LOOT_Twilight's Hammer Armor|r
-    .complete 28125,1 --Twilight's Hammer Armor (1)
+    >>Kill |cRXP_ENEMY_Bulwark Prisoners|r and |cRXP_ENEMY_Twilight Jailers|r
+    .complete -28125,1 --Twilight's Hammer Armor (1)
+    .complete -28127,1 --Bulwark Prisoner (5)
     .mob Bulwark Defender
     .mob Twilight Magus
     .mob Twilight Jailer
-    .isOnQuest 28125
-step
-    #loop
-    .goto 64,27.42,56.24,0
-    .goto 64,27.42,56.24,40,0
-    .goto 64,29.29,57.43,40,0
-    .goto 64,31.31,55.08,40,0
-    >>Kill |cRXP_ENEMY_Bulwark Prisoners|r and |cRXP_ENEMY_Twilight Jailers|r
-    .complete 28127,1 --Bulwark Prisoner (5)
     .mob Bulwark Prisoner
-    .mob Twilight Jailer
-    .isOnQuest 28127
 step
     .goto 64,30.47,49.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lakota Windsong|r
@@ -1336,6 +1304,11 @@ step
     .target Commander Fastfuse
     .isOnQuest 28136
 step
+    #completewith Along27
+    >>As you go: Open the |cRXP_PICK_Codemaster's Code Device|r. Loot it for |cRXP_LOOT_Codemaster's Code|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -28139,1 --Codemaster's Code (1)
+step
+    #label Along27
     .goto 64,31.24,59.68
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Codemaster Deethuk|r
     .complete 28136,1 --Codemaster Deethuk
@@ -1411,27 +1384,19 @@ step
     .isQuestTurnedIn 28142,28143 --any of: To the Withering, To the Withering
     .xp <38,1
 step
-    .goto 64,52.76,58.55
-    >>Pick up |cRXP_PICK_Twilight Element of Water|r from the ground
-    .complete 28157,4 --Twilight Element of Water (1)
-    .isOnQuest 28157
-step
     .goto 64,53.34,59.27
+    >>Pick up |cRXP_PICK_Twilight Element of Water|r from the ground
     >>Kill |cRXP_ENEMY_Bound Fury|r
-    .complete 28158,1 --Bound Fury slain (1)
+    .complete -28157,4 --Twilight Element of Water (1)
+    .complete -28158,1 --Bound Fury slain (1)
     .mob Bound Fury
-    .isOnQuest 28158
 step
     .goto 64,57.52,59.55
     >>Pick up |cRXP_PICK_Twilight Element of Air|r from the ground
-    .complete 28157,1 --Twilight Element of Air (1)
-    .isOnQuest 28157
-step
-    .goto 64,57.42,60.96
     >>Kill |cRXP_ENEMY_Bound Vortex|r
-    .complete 28158,2 --Bound Vortex slain (1)
+    .complete -28157,1 --Twilight Element of Air (1)
+    .complete -28158,2 --Bound Vortex slain (1)
     .mob Bound Vortex
-    .isOnQuest 28158
 step
     .goto 64,60.51,64.52
     >>Pick up |cRXP_PICK_Twilight Element of Fire|r from the ground

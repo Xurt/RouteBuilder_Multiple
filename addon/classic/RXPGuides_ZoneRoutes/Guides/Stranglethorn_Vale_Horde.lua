@@ -508,47 +508,32 @@ step
     #loop
     .goto 1434/0,55.68,-11844.31,0
     .goto 1434/0,55.68,-11844.31,40,0
-    .goto 1434/0,224.14,-11717.11,40,0
+    .goto 1434/0,173.09,-11976.62,40,0
     .goto 1434/0,338.36,-12004.69,40,0
-    .goto 1434/0,270.09,-11938.33,40,0
+    .goto 1434/0,224.14,-11717.11,40,0
     >>Kill |cRXP_ENEMY_Bloodscalp Warriors|r, |cRXP_ENEMY_Bloodscalp Scouts|r, |cRXP_ENEMY_Bloodscalp Hunters|r and |cRXP_ENEMY_Bloodscalp Berserkers|r. Loot them for |cRXP_LOOT_Bloodscalp Tusk|r
     >>Kill |cRXP_ENEMY_Bloodscalp Warriors|r, |cRXP_ENEMY_Bloodscalp Scouts|r, |cRXP_ENEMY_Bloodscalp Hunters|r and |cRXP_ENEMY_Bloodscalp Berserkers|r. Loot them for |cRXP_LOOT_Bloodscalp Ear|r
     >>Kill |cRXP_ENEMY_Bloodscalp Warriors|r, |cRXP_ENEMY_Bloodscalp Scouts|r, |cRXP_ENEMY_Bloodscalp Hunters|r and |cRXP_ENEMY_Bloodscalp Berserkers|r. Loot them for |cRXP_LOOT_Bloody Bone Necklace|r
+    >>Kill |cRXP_ENEMY_Elder Stranglethorn Tigers|r
     .complete 581,1 --Bloodscalp Tusk (9)
     .complete 189,1 --Bloodscalp Ear (15)
     .complete 596,1 --Bloody Bone Necklace (25)
+    .complete -187,1 --Elder Stranglethorn Tiger slain (10)
     .mob Bloodscalp Warrior
     .mob Bloodscalp Scout
     .mob Bloodscalp Hunter
     .mob Bloodscalp Berserker
-step
-    #loop
-    .goto 1434/0,173.09,-11976.62,0
-    .goto 1434/0,173.09,-11976.62,40,0
-    .goto 1434/0,81.20,-11947.69,40,0
-    >>Kill |cRXP_ENEMY_Elder Stranglethorn Tigers|r
-    .complete 187,1 --Elder Stranglethorn Tiger slain (10)
     .mob Elder Stranglethorn Tiger
-    .isOnQuest 187
 step
     #loop
-    .goto 1434/0,146.93,-12079.99,0
-    .goto 1434/0,146.93,-12079.99,40,0
+    .goto 1434/0,255.41,-12156.57,0
+    .goto 1434/0,255.41,-12156.57,40,0
     .goto 1434/0,175.00,-12180.82,40,0
     .goto 1434/0,53.76,-12252.29,40,0
     >>Kill |cRXP_ENEMY_Lashtail Raptors|r
     .complete 568,1 --Lashtail Raptor slain (15)
+    .complete -195,1 --Lashtail Raptor slain (10)
     .mob Lashtail Raptor
-step
-    #loop
-    .goto 1434/0,175.00,-12180.82,0
-    .goto 1434/0,175.00,-12180.82,40,0
-    .goto 1434/0,255.41,-12156.57,40,0
-    .goto 1434/0,53.76,-12252.29,40,0
-    >>Kill |cRXP_ENEMY_Lashtail Raptors|r
-    .complete 195,1 --Lashtail Raptor slain (10)
-    .mob Lashtail Raptor
-    .isOnQuest 195
 step
     .goto 1434/0,168.62,-12348.00
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nimboya|r
@@ -784,20 +769,16 @@ step
     .turnin 629 >>Turn in The Vile Reef
     .target Kin'weelay
 step
-    .goto 1434/0,-171.50,-12482.86
-    >>Kill |cRXP_ENEMY_Mosh'Ogg Brutes|r
-    .complete 569,1 --Mosh'Ogg Brute slain (10)
-    .mob Mosh'Ogg Brute
-    .isOnQuest 569
-step
     #loop
-    .goto 1434/0,-171.50,-12489.24,0
-    .goto 1434/0,-171.50,-12489.24,40,0
-    .goto 1434/0,-84.07,-12516.90,40,0
+    .goto 1434/0,-123.00,-12525.83,0
+    .goto 1434/0,-123.00,-12525.83,40,0
+    .goto 1434/0,-171.50,-12482.86,40,0
+    >>Kill |cRXP_ENEMY_Mosh'Ogg Brutes|r
     >>Kill |cRXP_ENEMY_Mosh'Ogg Witch Doctors|r
-    .complete 569,2 --Mosh'Ogg Witch Doctor slain (5)
+    .complete -569,1 --Mosh'Ogg Brute slain (10)
+    .complete -569,2 --Mosh'Ogg Witch Doctor slain (5)
+    .mob Mosh'Ogg Brute
     .mob Mosh'Ogg Witch Doctor
-    .isOnQuest 569
 step
     .goto 1434/0,-500.13,-11949.39
     >>Kill |cRXP_ENEMY_Foreman Cozzle|r and loot |cRXP_LOOT_Cozzle's Key|r
@@ -810,39 +791,19 @@ step
     .complete 1182,1 --Fuel Regulator Blueprints (1)
     .isOnQuest 1182
 step
-    #completewith Along18
-    >>As you go: Kill |cRXP_ENEMY_Stranglethorn Tigress|r and loot |cRXP_LOOT_Pristine Tigress Fang|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 570,2 --Pristine Tigress Fang (1)
-    .mob Stranglethorn Tigress
-step
     #loop
     .goto 1434/0,-821.11,-12118.28,0
     .goto 1434/0,-821.11,-12118.28,40,0
     .goto 1434/0,-922.57,-12036.17,40,0
     .goto 1434/0,-949.37,-12192.30,40,0
     >>Kill |cRXP_ENEMY_Shadowmaw Panthers|r and |cRXP_ENEMY_Elder Shadowmaw Panthers|r. Loot them for |cRXP_LOOT_Shadowmaw Claw|r
+    >>Kill |cRXP_ENEMY_Shadowmaw Panthers|r
+    >>Kill |cRXP_ENEMY_Stranglethorn Tigress|r and loot |cRXP_LOOT_Pristine Tigress Fang|r
     .complete 570,1 --Shadowmaw Claw (8)
+    .complete -192,1 --Shadowmaw Panther slain (10)
+    .complete 570,2 --Pristine Tigress Fang (1)
     .mob Shadowmaw Panther
     .mob Elder Shadowmaw Panther
-step
-    #label Along18
-    #loop
-    .goto 1434/0,-821.11,-12118.28,0
-    .goto 1434/0,-821.11,-12118.28,40,0
-    .goto 1434/0,-922.57,-12036.17,40,0
-    .goto 1434/0,-949.37,-12192.30,40,0
-    >>Kill |cRXP_ENEMY_Shadowmaw Panthers|r
-    .complete 192,1 --Shadowmaw Panther slain (10)
-    .mob Shadowmaw Panther
-    .isOnQuest 192
-step
-    #loop
-    .goto 1434/0,-821.11,-12118.28,0
-    .goto 1434/0,-821.11,-12118.28,40,0
-    .goto 1434/0,-922.57,-12036.17,40,0
-    .goto 1434/0,-949.37,-12192.30,40,0
-    >>Kill |cRXP_ENEMY_Stranglethorn Tigress|r and loot |cRXP_LOOT_Pristine Tigress Fang|r
-    .complete 570,2 --Pristine Tigress Fang (1)
     .mob Stranglethorn Tigress
 step
     .goto 1434/0,-47.70,-11617.56
@@ -1006,15 +967,11 @@ step
 step
     .goto 1434/0,719.96,-11574.17
     >>Kill |cRXP_ENEMY_Nezzliok the Dire|r and loot |cRXP_LOOT_Nezzliok's Head|r
-    .complete 584,2 --Nezzliok's Head (1)
-    .mob Nezzliok the Dire
-    .isOnQuest 584
-step
-    .goto 1434/0,725.07,-11514.19
     >>Kill |cRXP_ENEMY_Gan'zulah|r and loot |cRXP_LOOT_Gan'zulah's Head|r
-    .complete 584,1 --Gan'zulah's Head (1)
+    .complete -584,2 --Nezzliok's Head (1)
+    .complete -584,1 --Gan'zulah's Head (1)
+    .mob Nezzliok the Dire
     .mob Gan'zulah
-    .isOnQuest 584
 step
     #completewith next
     .hs >>Hearth to Innkeeper Thulbek's inn. |cRXP_WARN_Walk instead if you are already nearby|r
@@ -1034,21 +991,13 @@ step
     .goto 1434/0,178.83,-12970.81,0
     .goto 1434/0,178.83,-12970.81,40,0
     .goto 1434/0,265.62,-13044.84,40,0
-    >>Kill |cRXP_ENEMY_Jungle Stalkers|r
-    .complete 196,1 --Jungle Stalker slain (10)
-    .mob Jungle Stalker
-    .isOnQuest 196
-step
-    #loop
-    .goto 1434/0,178.83,-12970.81,0
-    .goto 1434/0,178.83,-12970.81,40,0
-    .goto 1434/0,265.62,-13044.84,40,0
     .goto 1434/0,416.22,-13145.66,40,0
     .goto 1434/0,376.01,-13047.39,40,0
+    >>Kill |cRXP_ENEMY_Jungle Stalkers|r
     >>Kill |cRXP_ENEMY_Jungle Stalkers|r. Loot them for |cRXP_LOOT_Jungle Stalker Feather|r
-    .complete 572,1 --Jungle Stalker Feather (10)
+    .complete -196,1 --Jungle Stalker slain (10)
+    .complete -572,1 --Jungle Stalker Feather (10)
     .mob Jungle Stalker
-    .isOnQuest 572
 step
     #loop
     .goto 1434/0,-436.96,-12992.94,0
@@ -1062,20 +1011,49 @@ step
     .mob Venture Co. Tinkerer
     .isOnQuest 600
 step
+    #completewith Along17
+    >>As you go: Kill |cRXP_ENEMY_Skullsplitter Warriors|r, |cRXP_ENEMY_Skullsplitter Hunters|r, |cRXP_ENEMY_Skullsplitter Witch Doctors|r and |cRXP_ENEMY_Skullsplitter Spiritchasers|r. Loot them for |cRXP_LOOT_Split Bone Necklace|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -598,1 --Split Bone Necklace (25)
+    .mob Skullsplitter Warrior
+    .mob Skullsplitter Hunter
+    .mob Skullsplitter Witch Doctor
+    .mob Skullsplitter Spiritchaser
+step
+    #completewith Along16
+    >>As you go: Kill |cRXP_ENEMY_Skullsplitter Warriors|r, |cRXP_ENEMY_Skullsplitter Hunters|r, |cRXP_ENEMY_Skullsplitter Witch Doctors|r and |cRXP_ENEMY_Skullsplitter Spiritchasers|r. Loot them for |cRXP_LOOT_Skullsplitter Tusk|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -209,1 --Skullsplitter Tusk (18)
+    .mob Skullsplitter Warrior
+    .mob Skullsplitter Hunter
+    .mob Skullsplitter Witch Doctor
+    .mob Skullsplitter Spiritchaser
+step
     .goto 1434/0,-472.69,-12704.93
     >>Open the |cRXP_PICK_Ziata'jai Trophy Skulls|r. Loot it for |cRXP_LOOT_Ziata'jai Trophy|r
     .complete 585,2 --Ziata'jai Trophy (1)
     .isOnQuest 585
 step
+    #label Along16
     .goto 1434/0,-819.83,-12850.85
     >>Open the |cRXP_PICK_Zul'Mamwe Trophy Skulls|r. Loot it for |cRXP_LOOT_Zul'Mamwe Trophy|r
     .complete 585,3 --Zul'Mamwe Trophy (1)
     .isOnQuest 585
 step
-    .goto 1434/0,-722.84,-12544.12
+    #label Along17
+    #loop
+    .goto 1434/0,-784.74,-12847.44,0
+    .goto 1434/0,-784.74,-12847.44,40,0
+    .goto 1434/0,-622.01,-12938.91,40,0
+    .goto 1434/0,-487.37,-12670.05,40,0
+    .goto 1434/0,-728.58,-12530.08,40,0
+    .goto 1434/0,-784.74,-12619.00,40,0
     >>Open the |cRXP_PICK_Balia'mah Trophy Skulls|r. Loot it for |cRXP_LOOT_Balia'mah Trophy|r
-    .complete 585,1 --Balia'mah Trophy (1)
-    .isOnQuest 585
+    >>Kill |cRXP_ENEMY_Skullsplitter Warriors|r, |cRXP_ENEMY_Skullsplitter Hunters|r, |cRXP_ENEMY_Skullsplitter Witch Doctors|r and |cRXP_ENEMY_Skullsplitter Spiritchasers|r. Loot them for |cRXP_LOOT_Skullsplitter Tusk|r
+    .complete -585,1 --Balia'mah Trophy (1)
+    .complete -209,1 --Skullsplitter Tusk (18)
+    .mob Skullsplitter Warrior
+    .mob Skullsplitter Hunter
+    .mob Skullsplitter Witch Doctor
+    .mob Skullsplitter Spiritchaser
 step
     #loop
     .goto 1434/0,-728.58,-12530.08,0
@@ -1084,21 +1062,6 @@ step
     .goto 1434/0,-784.74,-12847.44,40,0
     .goto 1434/0,-622.01,-12938.91,40,0
     .goto 1434/0,-487.37,-12670.05,40,0
-    >>Kill |cRXP_ENEMY_Skullsplitter Warriors|r, |cRXP_ENEMY_Skullsplitter Hunters|r, |cRXP_ENEMY_Skullsplitter Witch Doctors|r and |cRXP_ENEMY_Skullsplitter Spiritchasers|r. Loot them for |cRXP_LOOT_Skullsplitter Tusk|r
-    .complete 209,1 --Skullsplitter Tusk (18)
-    .mob Skullsplitter Warrior
-    .mob Skullsplitter Hunter
-    .mob Skullsplitter Witch Doctor
-    .mob Skullsplitter Spiritchaser
-    .isOnQuest 209
-step
-    #loop
-    .goto 1434/0,-487.37,-12670.05,0
-    .goto 1434/0,-487.37,-12670.05,40,0
-    .goto 1434/0,-728.58,-12530.08,40,0
-    .goto 1434/0,-784.74,-12619.00,40,0
-    .goto 1434/0,-784.74,-12847.44,40,0
-    .goto 1434/0,-622.01,-12938.91,40,0
     >>Kill |cRXP_ENEMY_Skullsplitter Warriors|r, |cRXP_ENEMY_Skullsplitter Hunters|r, |cRXP_ENEMY_Skullsplitter Witch Doctors|r and |cRXP_ENEMY_Skullsplitter Spiritchasers|r. Loot them for |cRXP_LOOT_Split Bone Necklace|r
     .complete 598,1 --Split Bone Necklace (25)
     .mob Skullsplitter Warrior
@@ -1214,17 +1177,10 @@ step
     .goto 1434/0,113.11,-13981.60,40,0
     .goto 1434/0,82.48,-13875.25,40,0
     >>Kill |cRXP_ENEMY_Elder Mistvale Gorillas|r. Loot them for |cRXP_LOOT_Mistvale Giblets|r
-    .complete 606,1 --Mistvale Giblets (5)
-    .mob Elder Mistvale Gorilla
-step
-    #loop
-    .goto 1434/0,171.81,-13982.46,0
-    .goto 1434/0,171.81,-13982.46,40,0
-    .goto 1434/0,80.56,-14019.89,40,0
     >>Kill |cRXP_ENEMY_Elder Mistvale Gorilla|r and loot |cRXP_LOOT_Aged Gorilla Sinew|r
-    .complete 571,1 --Aged Gorilla Sinew (1)
+    .complete 606,1 --Mistvale Giblets (5)
+    .complete -571,1 --Aged Gorilla Sinew (1)
     .mob Elder Mistvale Gorilla
-    .isOnQuest 571
 step
     .goto 1434/0,504.28,-14299.39
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_"Shaky" Phillipe|r
@@ -1364,21 +1320,14 @@ step
     .target Fleet Master Seahorn
     .isQuestTurnedIn 599 --any of: The Bloodsail Buccaneers
 step
-    .goto 1434/0,488.32,-14686.09
+    .goto 1434/0,485.13,-14715.45
     >>Pick up |cRXP_PICK_Bloodsail Charts|r from the ground
-    .complete 604,2 --Bloodsail Charts (1)
-    .isOnQuest 604
-step
-    .goto 1434/0,486.41,-14685.24
     >>Pick up |cRXP_PICK_Bloodsail Orders|r from the ground
-    .complete 604,3 --Bloodsail Orders (1)
-    .isOnQuest 604
-step
-    .goto 1434/0,503.64,-14698.86
     >>Kill |cRXP_ENEMY_Bloodsail Swashbucklers|r
-    .complete 604,1 --Bloodsail Swashbuckler slain (10)
+    .complete -604,2 --Bloodsail Charts (1)
+    .complete -604,3 --Bloodsail Orders (1)
+    .complete -604,1 --Bloodsail Swashbuckler slain (10)
     .mob Bloodsail Swashbuckler
-    .isOnQuest 604
 step
     .goto 1434/0,-15.79,-13758.69
     >>Kill |cRXP_ENEMY_Mokk the Savage|r and loot |cRXP_LOOT_Heart of Mokk|r
@@ -1418,7 +1367,7 @@ step
     .mob King Bangalash
     .isOnQuest 208
 step
-    #completewith Along24
+    #completewith Along20
     >>As you go: Kill |cRXP_ENEMY_Zanzil Zombies|r, |cRXP_ENEMY_Zanzil Hunters|r, |cRXP_ENEMY_Zanzil Witch Doctors|r and |cRXP_ENEMY_Zanzil Nagas|r. Loot them for |cRXP_LOOT_Zanzil's Mixture|r. |cRXP_WARN_Anything left is finished later|r
     .complete 621,1 --Zanzil's Mixture (1)
     .mob Zanzil Zombie
@@ -1426,32 +1375,25 @@ step
     .mob Zanzil Witch Doctor
     .mob Zanzil Naga
 step
-    .goto 1434/0,-29.20,-13349.86
-    >>Kill |cRXP_ENEMY_Maury "Club Foot" Wilkins|r and loot |cRXP_LOOT_Maury's Clubbed Foot|r
-    .complete 609,1 --Maury's Clubbed Foot (1)
-    .mob Maury "Club Foot" Wilkins
-    .isOnQuest 609
-step
+    #label Along20
     .goto 1434/0,-7.50,-13374.11
+    >>Kill |cRXP_ENEMY_Maury "Club Foot" Wilkins|r and loot |cRXP_LOOT_Maury's Clubbed Foot|r
     >>Kill |cRXP_ENEMY_Jon-Jon the Crow|r and loot |cRXP_LOOT_Jon-Jon's Golden Spyglass|r
-    .complete 609,2 --Jon-Jon's Golden Spyglass (1)
+    .complete -609,1 --Maury's Clubbed Foot (1)
+    .complete -609,2 --Jon-Jon's Golden Spyglass (1)
+    .mob Maury "Club Foot" Wilkins
     .mob Jon-Jon the Crow
-    .isOnQuest 609
-step
-    #label Along24
-    .goto 1434/0,-331.67,-13646.38
-    >>Kill |cRXP_ENEMY_Chucky "Ten Thumbs"|r and loot |cRXP_LOOT_Chucky's Huge Ring|r
-    .complete 609,3 --Chucky's Huge Ring (1)
-    .mob Chucky "Ten Thumbs"
-    .isOnQuest 609
 step
     #loop
-    .goto 1434/0,-331.67,-13646.38,0
-    .goto 1434/0,-331.67,-13646.38,40,0
+    .goto 1434/0,-269.13,-13651.06,0
     .goto 1434/0,-269.13,-13651.06,40,0
+    .goto 1434/0,-331.67,-13646.38,40,0
     .goto 1434/0,-415.90,-13594.05,40,0
+    >>Kill |cRXP_ENEMY_Chucky "Ten Thumbs"|r and loot |cRXP_LOOT_Chucky's Huge Ring|r
     >>Kill |cRXP_ENEMY_Zanzil Zombies|r, |cRXP_ENEMY_Zanzil Hunters|r, |cRXP_ENEMY_Zanzil Witch Doctors|r and |cRXP_ENEMY_Zanzil Nagas|r. Loot them for |cRXP_LOOT_Zanzil's Mixture|r
+    .complete -609,3 --Chucky's Huge Ring (1)
     .complete 621,1 --Zanzil's Mixture (1)
+    .mob Chucky "Ten Thumbs"
     .mob Zanzil Zombie
     .mob Zanzil Hunter
     .mob Zanzil Witch Doctor
@@ -1462,28 +1404,14 @@ step
     .complete 573,2 --Holy Spring Water (1)
     .isOnQuest 573
 step
-    #completewith Along27
-    >>As you go: Kill |cRXP_ENEMY_Naga Explorer|r and loot |cRXP_LOOT_Akiris Reed|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 617,1 --Akiris Reed (1)
-    .mob Naga Explorer
-step
-    #label Along27
     #loop
     .goto 1434/0,536.18,-13720.82,0
     .goto 1434/0,536.18,-13720.82,40,0
     .goto 1434/0,633.18,-13700.83,40,0
     .goto 1434/0,621.05,-13878.23,40,0
     >>Kill |cRXP_ENEMY_Naga Explorers|r
-    .complete 573,1 --Naga Explorer slain (10)
-    .mob Naga Explorer
-    .isOnQuest 573
-step
-    #loop
-    .goto 1434/0,536.18,-13720.82,0
-    .goto 1434/0,536.18,-13720.82,40,0
-    .goto 1434/0,633.18,-13700.83,40,0
-    .goto 1434/0,621.05,-13878.23,40,0
     >>Kill |cRXP_ENEMY_Naga Explorer|r and loot |cRXP_LOOT_Akiris Reed|r
+    .complete -573,1 --Naga Explorer slain (10)
     .complete 617,1 --Akiris Reed (1)
     .mob Naga Explorer
 step
@@ -1604,32 +1532,27 @@ step
     .target Nimboya
     .isQuestComplete 2932
 step
-    .goto 1434/0,-606.06,-13083.12
+    #loop
+    .goto 1434/0,-606.06,-13083.12,0
+    .goto 1434/0,-606.06,-13083.12,40,0
+    .goto 1434/0,-713.27,-13000.59,40,0
     >>Kill |cRXP_ENEMY_Ana'thek the Cruel|r and loot |cRXP_LOOT_Broken Armor of Ana'thek|r
-    .complete 586,4 --Broken Armor of Ana'thek (1)
-    .mob Ana'thek the Cruel
-    .isOnQuest 586
-step
-    .goto 1434/0,-713.27,-13000.59
     >>Kill |cRXP_ENEMY_Skullsplitter Hunters|r
-    .complete 586,1 --Skullsplitter Hunter slain (8)
+    .complete -586,4 --Broken Armor of Ana'thek (1)
+    .complete -586,1 --Skullsplitter Hunter slain (8)
+    .mob Ana'thek the Cruel
     .mob Skullsplitter Hunter
-    .isOnQuest 586
 step
     #loop
-    .goto 1434/0,-773.25,-13086.10,0
-    .goto 1434/0,-773.25,-13086.10,40,0
+    .goto 1434/0,-749.64,-13072.06,0
+    .goto 1434/0,-749.64,-13072.06,40,0
     .goto 1434/0,-828.13,-13027.40,40,0
     >>Kill |cRXP_ENEMY_Skullsplitter Berserkers|r
-    .complete 586,3 --Skullsplitter Berserker slain (4)
-    .mob Skullsplitter Berserker
-    .isOnQuest 586
-step
-    .goto 1434/0,-837.06,-13000.59
     >>Kill |cRXP_ENEMY_Skullsplitter Headhunters|r
-    .complete 586,2 --Skullsplitter Headhunter slain (6)
+    .complete -586,3 --Skullsplitter Berserker slain (4)
+    .complete -586,2 --Skullsplitter Headhunter slain (6)
+    .mob Skullsplitter Berserker
     .mob Skullsplitter Headhunter
-    .isOnQuest 586
 step
     .goto 1434/0,164.79,-12342.90
     >>Click the |cRXP_PICK_Bubbling Cauldron|r
@@ -1761,15 +1684,11 @@ step
 step
     .goto 1434/0,269.45,-15024.30
     >>Kill |cRXP_ENEMY_Fleet Master Firallon|r
-    .complete 608,3 --Fleet Master Firallon slain (1)
-    .mob Fleet Master Firallon
-    .isOnQuest 608
-step
-    .goto 1434/0,349.85,-14924.75
     >>Kill |cRXP_ENEMY_Captain Keelhaul|r
-    .complete 608,2 --Captain Keelhaul slain (1)
+    .complete -608,3 --Fleet Master Firallon slain (1)
+    .complete -608,2 --Captain Keelhaul slain (1)
+    .mob Fleet Master Firallon
     .mob Captain Keelhaul
-    .isOnQuest 608
 step
     .goto 1434/0,487.05,-14444.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fleet Master Seahorn|r

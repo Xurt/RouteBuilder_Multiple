@@ -1,5 +1,5 @@
 Uldum - Horde
-Guide "84-84 Uldum" in group "Zone Routes (Horde)": 329 steps, 325 stops
+Guide "84-84 Uldum" in group "Zone Routes (Horde)": 307 steps, 295 stops
 Written to guides/mop/Uldum (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -21,6 +21,7 @@ Step order kept from the last build (locks folder): 325 steps kept, 14 new ones 
   everyone: 5 tasks, 752 yd on foot; ends at level 84.0
   everyone (quests that depend on other zones): 334 more tasks; their whole route comes to 46,939 yd; ends at level 84.0
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
+8 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (115)
 -------------------------

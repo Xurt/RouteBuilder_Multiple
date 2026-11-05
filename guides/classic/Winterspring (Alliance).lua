@@ -526,6 +526,13 @@ step
     .complete 4864,1 --Jaron's Supplies (1)
     .isOnQuest 4864
 step
+    #completewith Along4
+    >>As you go: Kill |cRXP_ENEMY_Crazed Owlbeasts|r, |cRXP_ENEMY_Moontouched Owlbeasts|r and |cRXP_ENEMY_Berserk Owlbeasts|r. Loot them for |cRXP_LOOT_Blue-feathered Amulet|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -4864,2 --Blue-feathered Amulet (1)
+    .mob Crazed Owlbeast
+    .mob Moontouched Owlbeast
+    .mob Berserk Owlbeast
+step
     .goto 1452/1,-4794.64,5717.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ranshalla|r
     .accept 4901 >>Accept Guardians of the Altar
@@ -533,6 +540,7 @@ step
     .isQuestTurnedIn 979 --any of: Find Ranshalla
     .xp <52,1
 step
+    #label Along4
     .goto 1452/1,-4921.02,5516.78
     >>Discover the secret of the Altar of Elune
     .complete 4901,1 --Discover the secret of the Altar of Elune

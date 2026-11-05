@@ -699,6 +699,11 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 27542 --any of: Taking the Battlefront
     .xp <15,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along12
+    >>As you go: Kill |cRXP_ENEMY_7th Legion Scouts|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -27548,1 --7th Legion Scout slain (12)
+    .mob 7th Legion Scout
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 21,46.19,73.44
     >>Use the Bundle of Torches to torch the Pyrewood Town Hall, Pyrewood Inn and Pyrewood Chapel.
     .complete 27550,2 --Pyrewood Torch Target 002
@@ -711,6 +716,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Pyrewood Torch Target 001
     .isOnQuest 27550
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along12
     .goto 21,43.84,73.16
     >>Use the Bundle of Torches to torch the Pyrewood Town Hall, Pyrewood Inn and Pyrewood Chapel.
     .complete 27550,3 --Pyrewood Torch Target 003
@@ -720,20 +726,13 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 21,44.22,73.36,0
     .goto 21,44.22,73.36,40,0
-    .goto 21,46.58,73.60,40,0
-    >>Kill |cRXP_ENEMY_7th Legion Scouts|r
-    .complete 27548,1 --7th Legion Scout slain (12)
-    .mob 7th Legion Scout
-    .isOnQuest 27548
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 21,44.42,74.07,0
-    .goto 21,44.42,74.07,40,0
     .goto 21,46.81,73.42,40,0
+    >>Kill |cRXP_ENEMY_7th Legion Scouts|r
     >>Interact with |cRXP_FRIENDLY_Cowering Troopers|r
-    .complete 27547,1 --Cowering Trooper (8)
+    .complete -27548,1 --7th Legion Scout slain (12)
+    .complete -27547,1 --Cowering Trooper (8)
+    .mob 7th Legion Scout
     .target Cowering Trooper
-    .isOnQuest 27547
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 21,47.91,72.22
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord Walden|r
@@ -784,36 +783,25 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 27574 >>Accept I Never Forget a Face
     .use 61505
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 21,46.47,77.22,0
-    .goto 21,46.47,77.22,40,0
-    .goto 21,44.16,77.66,40,0
-    .goto 21,47.44,83.08,40,0
-    >>Kill |cRXP_ENEMY_Marsh Crocolisk|r and loot |cRXP_LOOT_Dempsey's Torso|r
-    .complete 27575,1 --Dempsey's Torso (1)
-    .mob Marsh Crocolisk
-    .isOnQuest 27575
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 21,46.47,77.22,0
-    .goto 21,46.47,77.22,40,0
-    .goto 21,44.16,77.66,40,0
-    .goto 21,47.44,83.08,40,0
-    >>Kill |cRXP_ENEMY_Marsh Crocolisk|r and loot |cRXP_LOOT_Dempsey's Appendages|r
-    .complete 27575,2 --Dempsey's Appendages (1)
-    .mob Marsh Crocolisk
-    .isOnQuest 27575
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #label Drop27574x1
     #loop
     .goto 21,46.47,77.22,0
     .goto 21,46.47,77.22,40,0
     .goto 21,44.16,77.66,40,0
     .goto 21,47.44,83.08,40,0
+    >>Kill |cRXP_ENEMY_Marsh Crocolisk|r and loot |cRXP_LOOT_Dempsey's Torso|r
+    >>Kill |cRXP_ENEMY_Marsh Crocolisk|r and loot |cRXP_LOOT_Dempsey's Appendages|r
     >>Kill |cRXP_ENEMY_Marsh Crocolisk|r and loot |cRXP_LOOT_Dempsey's Giblets|r
-    .complete 27575,3 --Dempsey's Giblets (1)
+    .complete -27575,1 --Dempsey's Torso (1)
+    .complete -27575,2 --Dempsey's Appendages (1)
+    .complete -27575,3 --Dempsey's Giblets (1)
     .mob Marsh Crocolisk
-    .isOnQuest 27575
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along23
+    >>As you go: Kill |cRXP_ENEMY_Dwarven Infantries|r and |cRXP_ENEMY_General Marstones|r. Loot them for |cRXP_LOOT_7th Legion Battle Plan|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -27577,1 --7th Legion Battle Plan (1)
+    .mob Dwarven Infantry
+    .mob General Marstone
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 21,45.32,84.45
     >>Accompany Lady Sylvanas Windrunner to the Battlefield and defeat the Alliance!
@@ -827,6 +815,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Lady Sylvanas Windrunner
     .isOnQuest 27601
 step
+    #label Along23
     .goto 21,45.32,84.47
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Sylvanas Windrunner|r
     .accept 27746 >>Accept Empire of Dirt
@@ -839,16 +828,11 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 21,43.07,82.26,40,0
     .goto 21,42.71,78.16,40,0
     >>Kill |cRXP_ENEMY_Dwarven Infantries|r and |cRXP_ENEMY_General Marstones|r. Loot them for |cRXP_LOOT_7th Legion Battle Plan|r
-    .complete 27577,1 --7th Legion Battle Plan (1)
+    >>Kill |cRXP_ENEMY_General Marstone|r
+    .complete -27577,1 --7th Legion Battle Plan (1)
+    .complete -27580,1 --General Marstone slain (1)
     .mob Dwarven Infantry
     .mob General Marstone
-    .isOnQuest 27577
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 21,42.25,78.99
-    >>Kill |cRXP_ENEMY_General Marstone|r
-    .complete 27580,1 --General Marstone slain (1)
-    .mob General Marstone
-    .isOnQuest 27580
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 21,47.91,72.22
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord Godfrey|r

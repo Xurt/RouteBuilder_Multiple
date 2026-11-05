@@ -59,6 +59,7 @@ step
     .accept 635 >>Accept Crystal in the Mountains
     .use 4614
 step
+    #label Drop635x1
     #loop
     .goto 1443/1,984.64,-56.96,0
     .goto 1443/1,984.64,-56.96,40,0
@@ -66,27 +67,13 @@ step
     .goto 1443/1,855.61,-38.08,40,0
     .goto 1443/1,886.19,117.52,40,0
     >>Kill |cRXP_ENEMY_Hatefury Rogues|r, |cRXP_ENEMY_Hatefury Tricksters|r, |cRXP_ENEMY_Hatefury Felsworns|r and |cRXP_ENEMY_Hatefury Betrayers|r. Loot them for |cRXP_LOOT_Hatefury Claw|r
-    .complete 1458,1 --Hatefury Claw (10)
-    .mob Hatefury Rogue
-    .mob Hatefury Trickster
-    .mob Hatefury Felsworn
-    .mob Hatefury Betrayer
-    .isOnQuest 1458
-step
-    #label Drop635x1
-    #loop
-    .goto 1443/1,855.61,-38.08,0
-    .goto 1443/1,855.61,-38.08,40,0
-    .goto 1443/1,945.08,-155.89,40,0
-    .goto 1443/1,984.64,-56.96,40,0
-    .goto 1443/1,886.19,117.52,40,0
     >>Kill |cRXP_ENEMY_Hatefury Rogues|r, |cRXP_ENEMY_Hatefury Tricksters|r, |cRXP_ENEMY_Hatefury Felsworns|r and |cRXP_ENEMY_Hatefury Betrayers|r. Loot them for |cRXP_LOOT_Hatefury Horn|r
-    .complete 1458,2 --Hatefury Horn (10)
+    .complete -1458,1 --Hatefury Claw (10)
+    .complete -1458,2 --Hatefury Horn (10)
     .mob Hatefury Rogue
     .mob Hatefury Trickster
     .mob Hatefury Felsworn
     .mob Hatefury Betrayer
-    .isOnQuest 1458
 step
     .goto 1443/1,1257.09,163.38
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kreldig Ungor|r
@@ -324,6 +311,12 @@ step
     .mob Slitherblade Sea Witch
     .isOnQuest 1456
 step
+    #completewith Along12
+    >>As you go: Kill |cRXP_ENEMY_Aged Kodos|r. Loot them for |cRXP_LOOT_Aged Kodo Hide|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -1459,2 --Aged Kodo Hide (3)
+    .mob Aged Kodo
+step
+    #label Along12
     #loop
     .goto 1443/1,1884.71,-1365.85,0
     .goto 1443/1,1884.71,-1365.85,40,0
@@ -527,6 +520,14 @@ step
     .accept 6134 >>Accept Ghost-o-plasm Round Up
     .target Hornizz Brimbuzzle
 step
+    #completewith Along17
+    >>As you go: Kill |cRXP_ENEMY_Doomwarder Captains|r, |cRXP_ENEMY_Lord Azrethocs|r and |cRXP_ENEMY_Kaskks|r. Loot them for |cRXP_LOOT_Doomwarder Blood|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -1466,3 --Doomwarder Blood (1)
+    .mob Doomwarder Captain
+    .mob Lord Azrethoc
+    .mob Kaskk
+step
+    #label Along17
     #loop
     .goto 1443/1,1685.99,-1877.30,0
     .goto 1443/1,1685.99,-1877.30,40,0
@@ -539,26 +540,19 @@ step
     .isOnQuest 1466
 step
     #loop
-    .goto 1443/1,1894.60,-2064.97,0
-    .goto 1443/1,1894.60,-2064.97,40,0
-    .goto 1443/1,1956.64,-2023.30,40,0
-    >>Kill |cRXP_ENEMY_Nether Maidens|r, |cRXP_ENEMY_Nether Sisters|r and |cRXP_ENEMY_Nether Sorceress|r. Loot them for |cRXP_LOOT_Nether Wing|r
-    .complete 1466,2 --Nether Wing (10)
-    .mob Nether Maiden
-    .mob Nether Sister
-    .mob Nether Sorceress
-    .isOnQuest 1466
-step
-    #loop
     .goto 1443/1,1904.94,-2051.78,0
     .goto 1443/1,1904.94,-2051.78,40,0
     .goto 1443/1,1933.71,-2130.02,40,0
+    >>Kill |cRXP_ENEMY_Nether Maidens|r, |cRXP_ENEMY_Nether Sisters|r and |cRXP_ENEMY_Nether Sorceress|r. Loot them for |cRXP_LOOT_Nether Wing|r
     >>Kill |cRXP_ENEMY_Doomwarder Captains|r, |cRXP_ENEMY_Lord Azrethocs|r and |cRXP_ENEMY_Kaskks|r. Loot them for |cRXP_LOOT_Doomwarder Blood|r
-    .complete 1466,3 --Doomwarder Blood (1)
+    .complete -1466,2 --Nether Wing (10)
+    .complete -1466,3 --Doomwarder Blood (1)
+    .mob Nether Maiden
+    .mob Nether Sister
+    .mob Nether Sorceress
     .mob Doomwarder Captain
     .mob Lord Azrethoc
     .mob Kaskk
-    .isOnQuest 1466
 step
     .goto 1443/1,1347.91,-2294.91
     >>Kill |cRXP_ENEMY_Magrami Spectres|r. Loot them for |cRXP_LOOT_Ghost-o-plasm|r

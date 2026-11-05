@@ -108,7 +108,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Redridge Mountains - Alliance - part 2 of 5, planned from level 17
-Guide "14-26 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 31 steps, 27 stops
+Guide "14-26 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 31 steps, 26 stops
 Written to guides/tbc/Redridge Mountains (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -130,7 +130,7 @@ Step order kept from the last build (locks folder): 6 steps kept, 23 new ones sl
   everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 3,271 yd; ends at level 17.6
   Rogue (quests that depend on other zones): 3 more tasks; their whole route comes to 5,434 yd; ends at level 17.7; at its hardest you are 1.7 levels below the mobs
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
-3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (9)

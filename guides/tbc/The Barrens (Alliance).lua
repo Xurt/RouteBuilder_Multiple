@@ -419,20 +419,13 @@ step << Warlock
     .accept 1758 >>Accept Tome of the Cabal
     .target Strahad Farsan
 step
-    .goto 1413/1,-3694.20,-927.85
-    >>Open the |cRXP_PICK_Snufflenose Command Sticks|r. Loot it for |cRXP_LOOT_Snufflenose Command Stick|r
-    .complete 1221,4 --Snufflenose Command Stick (1)
-    .isOnQuest 1221
-step
-    .goto 1413/1,-3692.18,-929.20
-    >>Open the |cRXP_PICK_Crate with Holes|r. Loot it for |cRXP_LOOT_Crate With Holes|r
-    .complete 1221,2 --Crate With Holes (1)
-    .isOnQuest 1221
-step
     .goto 1413/1,-3693.19,-929.20
+    >>Open the |cRXP_PICK_Snufflenose Command Sticks|r. Loot it for |cRXP_LOOT_Snufflenose Command Stick|r
+    >>Open the |cRXP_PICK_Crate with Holes|r. Loot it for |cRXP_LOOT_Crate With Holes|r
     >>Pick up |cRXP_PICK_Snufflenose Owner's Manual|r from the ground
-    .complete 1221,3 --Snufflenose Owner's Manual (1)
-    .isOnQuest 1221
+    .complete -1221,4 --Snufflenose Command Stick (1)
+    .complete -1221,2 --Crate With Holes (1)
+    .complete -1221,3 --Snufflenose Owner's Manual (1)
 step
     .goto 1413/1,-3697.24,-929.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mebok Mizzyrix|r
@@ -542,20 +535,13 @@ step << Warlock
     .target Menara Voidrender
     .isQuestComplete 1796
 step
-    .goto 1413/1,-3694.20,-927.85
-    >>Open the |cRXP_PICK_Snufflenose Command Sticks|r. Loot it for |cRXP_LOOT_Snufflenose Command Stick|r
-    .complete 1221,4 --Snufflenose Command Stick (1)
-    .isOnQuest 1221
-step
-    .goto 1413/1,-3692.18,-929.20
-    >>Open the |cRXP_PICK_Crate with Holes|r. Loot it for |cRXP_LOOT_Crate With Holes|r
-    .complete 1221,2 --Crate With Holes (1)
-    .isOnQuest 1221
-step
     .goto 1413/1,-3693.19,-929.20
+    >>Open the |cRXP_PICK_Snufflenose Command Sticks|r. Loot it for |cRXP_LOOT_Snufflenose Command Stick|r
+    >>Open the |cRXP_PICK_Crate with Holes|r. Loot it for |cRXP_LOOT_Crate With Holes|r
     >>Pick up |cRXP_PICK_Snufflenose Owner's Manual|r from the ground
-    .complete 1221,3 --Snufflenose Owner's Manual (1)
-    .isOnQuest 1221
+    .complete -1221,4 --Snufflenose Command Stick (1)
+    .complete -1221,2 --Crate With Holes (1)
+    .complete -1221,3 --Snufflenose Owner's Manual (1)
 step
     .goto 1413/1,-3697.24,-929.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mebok Mizzyrix|r
