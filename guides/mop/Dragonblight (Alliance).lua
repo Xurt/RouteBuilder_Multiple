@@ -91,21 +91,22 @@ step
     .xp <72,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 115,31.55,46.31,0
-    .goto 115,31.55,46.31,40,0
-    .goto 115,28.17,49.43,40,0
-    >>Interact with |cRXP_FRIENDLY_Blighted Elks|r
-    .complete 12166,1 --Blighted Elk (6)
-    .target Blighted Elk
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 115,28.55,49.76,0
-    .goto 115,28.55,49.76,40,0
+    .goto 115,30.71,46.71,0
     .goto 115,30.71,46.71,40,0
+    .goto 115,28.55,49.76,40,0
+    >>Interact with |cRXP_FRIENDLY_Blighted Elks|r
     >>Interact with |cRXP_FRIENDLY_Rabid Grizzlies|r
+    .complete 12166,1 --Blighted Elk (6)
     .complete 12166,2 --Rabid Grizzly (6)
+    .target Blighted Elk
     .target Rabid Grizzly
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along9
+    >>As you go: Kill |cRXP_ENEMY_Dead Mage Hunter|r and loot |cRXP_LOOT_Moonrest Gardens Plans|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -12000,1 --Moonrest Gardens Plans (1)
+    .mob Dead Mage Hunter
 step
+    #label Along9
     .goto 115,24.19,60.08
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ethenial Moonshadow|r
     .accept 12006 >>Accept Avenge this Atrocity!
@@ -196,17 +197,13 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Warden Jodi Moonsong
     .isOnQuest 12169
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 115,18.43,58.89
-    >>Kill |cRXP_ENEMY_Wind Trader Mu'fah|r and loot |cRXP_LOOT_Wind Trader Mu'fah's Remains|r
-    .complete 12004,1 --Wind Trader Mu'fah's Remains (1)
-    .mob Wind Trader Mu'fah
-    .isOnQuest 12004
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 115,19.52,58.12
+    >>Kill |cRXP_ENEMY_Wind Trader Mu'fah|r and loot |cRXP_LOOT_Wind Trader Mu'fah's Remains|r
     >>Kill |cRXP_ENEMY_Goramosh|r and loot |cRXP_LOOT_The Scales of Goramosh|r
-    .complete 12004,2 --The Scales of Goramosh (1)
+    .complete -12004,1 --Wind Trader Mu'fah's Remains (1)
+    .complete -12004,2 --The Scales of Goramosh (1)
+    .mob Wind Trader Mu'fah
     .mob Goramosh
-    .isOnQuest 12004
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 115,19.52,58.12
     >>Kill |cRXP_ENEMY_Goramosh|r and loot |cRXP_LOOT_Goramosh's Strange Device|r. Use it to start the quest
@@ -235,19 +232,16 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Image of Archmage Modera
     .isQuestTurnedIn 12055 --any of: A Strange Device
     .xp <71,1
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 115,19.78,59.79
-    >>Kill |cRXP_ENEMY_Projections and Plans Kill Credit Bunny|r
-    .complete 12060,1 --Projections and Plans Kill Credit Bunny slain (1)
-    .mob Projections and Plans Kill Credit Bunny
-    .isOnQuest 12060
 step
     #loop
     .goto 115,21.24,60.15,0
     .goto 115,21.24,60.15,40,0
-    .goto 115,19.77,61.09,40,0
+    .goto 115,20.02,60.96,40,0
+    >>Kill |cRXP_ENEMY_Projections and Plans Kill Credit Bunny|r << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>Kill |cRXP_ENEMY_Surge Needle Sorcerers|r, |cRXP_ENEMY_Moonrest Stalkers|r, |cRXP_ENEMY_Focus Wizards|r and |cRXP_ENEMY_Dragonblight Mage Hunters|r
+    .complete -12060,1 << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren --Projections and Plans Kill Credit Bunny slain (1)
     .complete 12006,1 --Surge Needle Sorcerer (8)
+    .mob Projections and Plans Kill Credit Bunny << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Surge Needle Sorcerer
     .mob Moonrest Stalker
     .mob Focus Wizard
@@ -506,6 +500,10 @@ step
     .isQuestTurnedIn 12028 --any of: Spiritual Insight
     .xp <71,1
 step
+    #completewith Along67
+    >>As you go: Pick up |cRXP_PICK_Tua'kea Crab Trap|r from the ground. |cRXP_WARN_Anything left is finished later|r
+    .complete -12009,1 --Tua'kea Crab Trap (1)
+step
     .goto 115,47.72,79.99
     >>Click the |cRXP_PICK_Wrecked Crab Trap|r
     .accept 12011 >>Accept Signs of Big Watery Trouble
@@ -518,6 +516,7 @@ step
     .target Tua'kea
     .isOnQuest 12011
 step
+    #label Along67
     .goto 115,47.99,76.11
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tua'kea|r
     .accept 12016 >>Accept The Bait
@@ -701,6 +700,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 12251 --any of: Return to the High Commander
     .xp <71,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along97
+    >>As you go: Kill |cRXP_ENEMY_Trapped Wintergarde Villagers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -12253,1 --Trapped Wintergarde Villager slain (6)
+    .mob Trapped Wintergarde Villager
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 115,78.65,48.18
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Commander Lynore Windstryke|r
     .accept 12258 >>Accept The Fate of the Dead
@@ -708,12 +712,21 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 12251 --any of: Return to the High Commander
     .xp <71,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along97
+    >>As you go: Kill |cRXP_ENEMY_Vengeful Geists|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -12258,1 --Vengeful Geist slain (15)
+    .mob Vengeful Geist
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 115,79.15,47.17
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zelig the Visionary|r
     .accept 12282 >>Accept Imprints on the Past
     .target Zelig the Visionary
     .isQuestTurnedIn 12251 --any of: Return to the High Commander
     .xp <71,1
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along97
+    >>As you go: Pick up |cRXP_PICK_Scrying Orb|r from the ground. |cRXP_WARN_Anything left is finished later|r
+    .complete -12282,1 --Scrying Orb (1)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 115,77.85,50.29
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Siege Engineer Quarterflash|r
@@ -729,6 +742,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 12275 --any of: The Demo-gnome
     .xp <71,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along97
     .goto 115,77.80,50.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Highlord Leoric Von Zeldig|r
     .accept 12269 >>Accept Not In Our Mine
@@ -744,45 +758,28 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 12251 --any of: Return to the High Commander
     .xp <71,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 115,78.84,50.91
-    >>Pick up |cRXP_PICK_Scrying Orb|r from the ground
-    .complete 12282,1 --Scrying Orb (1)
-    .isOnQuest 12282
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 115,79.70,51.43,0
     .goto 115,79.70,51.43,40,0
     .goto 115,80.75,49.57,40,0
+    >>Pick up |cRXP_PICK_Scrying Orb|r from the ground
     >>Kill |cRXP_ENEMY_Vengeful Geists|r
-    .complete 12258,1 --Vengeful Geist slain (15)
-    .mob Vengeful Geist
-    .isOnQuest 12258
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 115,80.80,49.60,0
-    .goto 115,80.80,49.60,40,0
-    .goto 115,79.66,51.36,40,0
     >>Kill |cRXP_ENEMY_Trapped Wintergarde Villagers|r
-    .complete 12253,1 --Trapped Wintergarde Villager slain (6)
+    .complete -12282,1 --Scrying Orb (1)
+    .complete -12258,1 --Vengeful Geist slain (15)
+    .complete -12253,1 --Trapped Wintergarde Villager slain (6)
+    .mob Vengeful Geist
     .mob Trapped Wintergarde Villager
-    .isOnQuest 12253
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 115,80.50,42.85,0
-    .goto 115,80.50,42.85,40,0
-    .goto 115,79.90,40.86,40,0
-    >>Kill |cRXP_ENEMY_Risen Wintergarde Miners|r. Loot them for |cRXP_LOOT_Wintergarde Miner's Card|r
-    .complete 12269,1 --Wintergarde Miner's Card (10)
-    .mob Risen Wintergarde Miner
-    .isOnQuest 12269
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 115,79.70,40.81,0
-    .goto 115,79.70,40.81,40,0
+    .goto 115,80.50,43.17,0
     .goto 115,80.50,43.17,40,0
+    .goto 115,79.70,40.81,40,0
+    >>Kill |cRXP_ENEMY_Risen Wintergarde Miners|r. Loot them for |cRXP_LOOT_Wintergarde Miner's Card|r
     >>Pick up |cRXP_PICK_Strange Ore|r from the ground
-    .complete 12272,1 --Strange Ore (1)
-    .isOnQuest 12272
+    .complete -12269,1 --Wintergarde Miner's Card (10)
+    .complete -12272,1 --Strange Ore (1)
+    .mob Risen Wintergarde Miner
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 115,81.52,42.21
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Slinkin the Demo-gnome|r
@@ -802,6 +799,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .collect 37465,1,12277,1 --Wintergarde Mine Bomb (1)
     .isOnQuest 12277
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along104
+    >>As you go: Kill |cRXP_ENEMY_Lower Wintergarde Mine Shaft|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -12277,2 --Lower Wintergarde Mine Shaft slain (1)
+    .mob Lower Wintergarde Mine Shaft
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along104
     .goto 115,80.41,44.68
     >>Kill |cRXP_ENEMY_Upper Wintergarde Mine Shaft|r
     .complete 12277,1 --Upper Wintergarde Mine Shaft slain (1)
@@ -987,21 +990,17 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 12325 --any of: Into Hostile Territory
     .xp <71,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 115,90.08,52.76
-    >>Kill |cRXP_ENEMY_Kreug Oathbreaker|r
-    .complete 12438,1 --Kreug Oathbreaker slain (1)
-    .mob Kreug Oathbreaker
-    .isOnQuest 12438
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 115,87.41,51.49,0
-    .goto 115,87.41,51.49,40,0
-    .goto 115,89.10,48.66,40,0
+    .goto 115,87.37,49.67,0
+    .goto 115,87.37,49.67,40,0
+    .goto 115,89.37,51.86,40,0
     .goto 115,83.81,49.90,40,0
+    >>Kill |cRXP_ENEMY_Kreug Oathbreaker|r
     >>Interact with |cRXP_FRIENDLY_Plague Wagons|r
-    .complete 12326,1 --Plague Wagon (6)
+    .complete -12438,1 --Kreug Oathbreaker slain (1)
+    .complete -12326,1 --Plague Wagon (6)
+    .mob Kreug Oathbreaker
     .target Plague Wagon
-    .isOnQuest 12326
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 115,85.61,49.82
     >>Use an Alliance Steam Tank to destroy 6 Plague Wagons and deliver the 7th Legion Elites to Wintergarde Mausoleum. Speak with Ambo Cash inside the Wintergarde Mausoleum in Dragonblight should you succeed.
@@ -1022,6 +1021,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 12326 --any of: Steamtank Surprise
     .xp <71,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along137
+    >>As you go: Loot the |cRXP_PICK_Wintergarde Munitions Crates|r for |cRXP_LOOT_Wintergarde Munitions|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -12455,1 --Wintergarde Munitions (8)
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along137
     .goto 115,85.86,51.03
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Yord "Calamity" Icebeard|r
     .accept 12462 >>Accept Breaking Off A Piece
@@ -1029,6 +1033,20 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 12326 --any of: Steamtank Surprise
     .xp <71,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along143
+    >>As you go: Kill |cRXP_ENEMY_Tattered Abominations|r, |cRXP_ENEMY_Scourge Technicians|r, |cRXP_ENEMY_Leprous Servants|r and |cRXP_ENEMY_Naxxramas Dreadguards|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -12462,3 --Tattered Abomination (8)
+    .mob Tattered Abomination
+    .mob Scourge Technician
+    .mob Leprous Servant
+    .mob Naxxramas Dreadguard
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along138
+    >>As you go: Kill |cRXP_ENEMY_Necrolord X'avius|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -12462,2 --Necrolord X'avius slain (1)
+    .mob Necrolord X'avius
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along138
     #loop
     .goto 115,84.98,51.44,0
     .goto 115,84.98,51.44,40,0
@@ -1051,6 +1069,14 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 12455 --any of: Scattered To The Wind
     .xp <71,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along141
+    >>As you go: Kill |cRXP_ENEMY_Necrolord X'avius|r. Kill |cRXP_ENEMY_Necrolord Horus|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -12462,2 --Necrolord X'avius slain (1)
+    .complete -12462,1 --Necrolord Horus slain (1)
+    .mob Necrolord X'avius
+    .mob Necrolord Horus
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along141
     .goto 115,87.15,51.78
     >>Kill |cRXP_ENEMY_Injured 7th Legion Soldiers|r
     .complete 12457,1 --Injured 7th Legion Soldier slain (8)
@@ -1063,6 +1089,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Ambo Cash
     .isOnQuest 12457
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along143
     .goto 115,85.94,50.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ambo Cash|r
     .accept 12463 >>Accept Plunderbeard Must Be Found!
@@ -1070,30 +1097,23 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 12457 --any of: The Chain Gun And You
     .xp <71,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 115,84.34,50.99
-    >>Kill |cRXP_ENEMY_Necrolord X'avius|r
-    .complete 12462,2 --Necrolord X'avius slain (1)
-    .mob Necrolord X'avius
-    .isOnQuest 12462
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 115,86.69,52.89
-    >>Kill |cRXP_ENEMY_Necrolord Horus|r
-    .complete 12462,1 --Necrolord Horus slain (1)
-    .mob Necrolord Horus
-    .isOnQuest 12462
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 115,86.05,52.83,0
     .goto 115,86.05,52.83,40,0
     .goto 115,83.25,54.26,40,0
     .goto 115,81.38,53.61,40,0
+    >>Kill |cRXP_ENEMY_Necrolord X'avius|r
+    >>Kill |cRXP_ENEMY_Necrolord Horus|r
     >>Kill |cRXP_ENEMY_Tattered Abominations|r, |cRXP_ENEMY_Scourge Technicians|r, |cRXP_ENEMY_Leprous Servants|r and |cRXP_ENEMY_Naxxramas Dreadguards|r
-    .complete 12462,3 --Tattered Abomination (8)
+    .complete -12462,2 --Necrolord X'avius slain (1)
+    .complete -12462,1 --Necrolord Horus slain (1)
+    .complete -12462,3 --Tattered Abomination (8)
+    .mob Necrolord X'avius
+    .mob Necrolord Horus
     .mob Tattered Abomination
     .mob Scourge Technician
     .mob Leprous Servant
     .mob Naxxramas Dreadguard
-    .isOnQuest 12462
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 115,85.86,51.03
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Yord "Calamity" Icebeard|r
@@ -1119,40 +1139,15 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 115,82.68,54.14,40,0
     .goto 115,81.04,53.07,40,0
     >>Kill |cRXP_ENEMY_Dreadbone Constructs|r and |cRXP_ENEMY_Wailing Souls|r. Loot them for |cRXP_LOOT_Page 4 of Plunderbeard's Journal|r
-    .complete 12465,1 --Page 4 of Plunderbeard's Journal (4)
-    .mob Dreadbone Construct
-    .mob Wailing Soul
-    .isOnQuest 12465
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 115,82.68,54.14,0
-    .goto 115,82.68,54.14,40,0
-    .goto 115,81.04,53.07,40,0
     >>Kill |cRXP_ENEMY_Dreadbone Constructs|r and |cRXP_ENEMY_Wailing Souls|r. Loot them for |cRXP_LOOT_Page 5 of Plunderbeard's Journal|r
-    .complete 12465,2 --Page 5 of Plunderbeard's Journal (4)
-    .mob Dreadbone Construct
-    .mob Wailing Soul
-    .isOnQuest 12465
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 115,82.68,54.14,0
-    .goto 115,82.68,54.14,40,0
-    .goto 115,81.04,53.07,40,0
     >>Kill |cRXP_ENEMY_Dreadbone Constructs|r and |cRXP_ENEMY_Wailing Souls|r. Loot them for |cRXP_LOOT_Page 6 of Plunderbeard's Journal|r
-    .complete 12465,3 --Page 6 of Plunderbeard's Journal (4)
-    .mob Dreadbone Construct
-    .mob Wailing Soul
-    .isOnQuest 12465
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 115,82.68,54.14,0
-    .goto 115,82.68,54.14,40,0
-    .goto 115,81.04,53.07,40,0
     >>Kill |cRXP_ENEMY_Dreadbone Constructs|r and |cRXP_ENEMY_Wailing Souls|r. Loot them for |cRXP_LOOT_Page 7 of Plunderbeard's Journal|r
-    .complete 12465,4 --Page 7 of Plunderbeard's Journal (4)
+    .complete -12465,1 --Page 4 of Plunderbeard's Journal (4)
+    .complete -12465,2 --Page 5 of Plunderbeard's Journal (4)
+    .complete -12465,3 --Page 6 of Plunderbeard's Journal (4)
+    .complete -12465,4 --Page 7 of Plunderbeard's Journal (4)
     .mob Dreadbone Construct
     .mob Wailing Soul
-    .isOnQuest 12465
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 115,85.94,50.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ambo Cash|r
@@ -1180,19 +1175,15 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 12287 --any of: Orik Trueheart and the Forgotten Shore
     .xp <71,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 115,90.67,72.91
-    >>Kill |cRXP_ENEMY_High Shaman Bloodpaw|r
-    .complete 12441,1 --High Shaman Bloodpaw slain (1)
-    .mob High Shaman Bloodpaw
-    .isOnQuest 12441
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 115,90.06,71.42,0
-    .goto 115,90.06,71.42,40,0
-    .goto 115,90.26,74.55,40,0
+    .goto 115,90.46,71.06,0
+    .goto 115,90.46,71.06,40,0
+    .goto 115,90.30,73.73,40,0
+    >>Kill |cRXP_ENEMY_High Shaman Bloodpaw|r
     >>Pick up |cRXP_PICK_Murkweed|r from the ground
-    .complete 12290,1 --Murkweed (5)
-    .isOnQuest 12290
+    .complete -12441,1 --High Shaman Bloodpaw slain (1)
+    .complete -12290,1 --Murkweed (5)
+    .mob High Shaman Bloodpaw
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 115,87.17,57.49
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Orik Trueheart|r
@@ -1208,22 +1199,16 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .xp <71,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 115,87.25,66.19,0
-    .goto 115,87.25,66.19,40,0
-    .goto 115,83.80,69.25,40,0
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Forgotten Peasant|r
-    .complete 12291,1 --Forgotten Peasant (10)
-    .target Forgotten Peasant
-    .isOnQuest 12291
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
     .goto 115,86.34,66.03,0
     .goto 115,86.34,66.03,40,0
-    .goto 115,87.45,70.57,40,0
+    .goto 115,83.80,69.25,40,0
+    .goto 115,85.50,73.10,40,0
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Forgotten Peasant|r
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Forgotten Rifleman|r
-    .complete 12291,2 --Forgotten Rifleman (10)
+    .complete -12291,1 --Forgotten Peasant (10)
+    .complete -12291,2 --Forgotten Rifleman (10)
+    .target Forgotten Peasant
     .target Forgotten Rifleman
-    .isOnQuest 12291
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 115,77.99,71.21,0
@@ -1302,41 +1287,23 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 12305 --any of: Parting Thoughts
     .xp <71,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 115,87.58,38.13
-    >>Pick up |cRXP_PICK_Onslaught Map|r from the ground
-    .complete 12475,1 --Onslaught Map (1)
-    .isOnQuest 12475
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 115,87.45,38.08
-    >>Kill |cRXP_ENEMY_Onslaught Commander Iustus|r
-    .complete 12442,1 --Onslaught Commander Iustus slain (1)
-    .mob Onslaught Commander Iustus
-    .isOnQuest 12442
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 115,87.05,35.65,0
-    .goto 115,87.05,35.65,40,0
-    .goto 115,84.36,37.29,40,0
-    .goto 115,87.28,41.01,40,0
-    >>Kill |cRXP_ENEMY_Onslaught Infantries|r, |cRXP_ENEMY_Onslaught Scouts|r, |cRXP_ENEMY_Onslaught Masons|r and |cRXP_ENEMY_Onslaught Commander Iustus|r
-    .complete 12476,1 --Onslaught Infantry (8)
-    .mob Onslaught Infantry
-    .mob Onslaught Scout
-    .mob Onslaught Mason
-    .mob Onslaught Commander Iustus
-    .isOnQuest 12476
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 115,84.36,37.29,0
     .goto 115,84.36,37.29,40,0
     .goto 115,87.05,35.65,40,0
     .goto 115,87.28,41.01,40,0
+    >>Pick up |cRXP_PICK_Onslaught Map|r from the ground
+    >>Kill |cRXP_ENEMY_Onslaught Commander Iustus|r
+    >>Kill |cRXP_ENEMY_Onslaught Infantries|r, |cRXP_ENEMY_Onslaught Scouts|r, |cRXP_ENEMY_Onslaught Masons|r and |cRXP_ENEMY_Onslaught Commander Iustus|r
     >>Kill |cRXP_ENEMY_Onslaught Infantries|r, |cRXP_ENEMY_Onslaught Scouts|r and |cRXP_ENEMY_Onslaught Masons|r. Loot them for |cRXP_LOOT_The Path of Redemption|r
-    .complete 12477,1 --The Path of Redemption (1)
+    .complete -12475,1 --Onslaught Map (1)
+    .complete -12442,1 --Onslaught Commander Iustus slain (1)
+    .complete -12476,1 --Onslaught Infantry (8)
+    .complete -12477,1 --The Path of Redemption (1)
+    .mob Onslaught Commander Iustus
     .mob Onslaught Infantry
     .mob Onslaught Scout
     .mob Onslaught Mason
-    .isOnQuest 12477
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 115,79.15,47.17
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zelig the Visionary|r
@@ -1458,6 +1425,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 12466 --any of: Chasing Icestorm: The 7th Legion Front
     .xp <71,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along184
+    >>As you go: Pick up |cRXP_PICK_Thel'zan's Phylactery|r from the ground. |cRXP_WARN_Anything left is finished later|r
+    .complete -12467,1 --Thel'zan's Phylactery (1)
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along184
     .goto 115,64.47,26.62
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Duane|r
     .accept 12142 >>Accept Pest Control
@@ -1602,26 +1574,19 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 12460 --any of: Report to the Ruby Dragonshrine
     .xp <71,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 115,49.80,51.40
-    >>Kill |cRXP_ENEMY_Frigid Ghoul Attackers|r
-    .complete 12416,1 --Frigid Ghoul Attacker slain (12)
-    .mob Frigid Ghoul Attacker
-    .isOnQuest 12416
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 115,52.60,46.30,0
-    .goto 115,52.60,46.30,40,0
-    .goto 115,49.50,51.20,40,0
+    .goto 115,52.10,49.60,0
+    .goto 115,52.10,49.60,40,0
+    .goto 115,49.07,49.89,40,0
+    >>Kill |cRXP_ENEMY_Frigid Ghoul Attackers|r
     >>Kill |cRXP_ENEMY_Frigid Geist Attackers|r
-    .complete 12416,2 --Frigid Geist Attacker slain (8)
-    .mob Frigid Geist Attacker
-    .isOnQuest 12416
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 115,49.07,49.89
     >>Kill |cRXP_ENEMY_Frigid Abomination Attacker|r
-    .complete 12416,3 --Frigid Abomination Attacker slain (1)
+    .complete -12416,1 --Frigid Ghoul Attacker slain (12)
+    .complete -12416,2 --Frigid Geist Attacker slain (8)
+    .complete -12416,3 --Frigid Abomination Attacker slain (1)
+    .mob Frigid Ghoul Attacker
+    .mob Frigid Geist Attacker
     .mob Frigid Abomination Attacker
-    .isOnQuest 12416
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 115,52.21,50.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ceristrasz|r
@@ -1668,12 +1633,18 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 12417 --any of: Return to the Earth
     .xp <71,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along213
+    >>As you go: Kill |cRXP_ENEMY_Frigid Necromancers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -12418,1 --Frigid Necromancer slain (6)
+    .mob Frigid Necromancer
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 115,47.64,48.97
     >>Kill |cRXP_ENEMY_Dahlia Suntouch|r
     .complete 12418,2 --Dahlia Suntouch slain (1)
     .mob Dahlia Suntouch
     .isOnQuest 12418
 step
+    #label Along213
     .goto 115,47.64,48.97
     >>Kill |cRXP_ENEMY_Dahlia Suntouch|r and loot |cRXP_LOOT_Ruby Brooch|r. Use it to start the quest
     .collect 37833,1,12419 --Ruby Brooch (1)
@@ -1731,12 +1702,12 @@ step
     .accept 12262 >>Accept No One to Save You
     .target Serinar
 step
-    #completewith Along239
+    #completewith Along220
     >>As you go: Kill |cRXP_ENEMY_Burning Depths Necrolytes|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12262,1 --Burning Depths Necrolyte slain (6)
     .mob Burning Depths Necrolyte
 step
-    #label Along239
+    #label Along220
     .goto 115,35.21,30.05
     >>Place a Destructive Ward at the end of the path leading out of Obsidian Dragonshrine, where the road starts to give way to snow. Protect the ward until it is fully charged, then return to Serinar.
     .complete 12261,1 --Destructive Ward (1)
@@ -2020,31 +1991,23 @@ step
     .complete 12045,1 --Ice Shard Cluster (4)
     .mob Crystalline Ice Elemental
 step
-    .goto 115,54.45,31.44
-    >>Kill |cRXP_ENEMY_Grand Necrolord Antiok|r and loot |cRXP_LOOT_Scythe of Antiok|r. It can also be picked up from |cRXP_PICK_Scythe of Antiok|r on the ground
-    .complete 12498,2 --Scythe of Antiok (1)
-    .mob Grand Necrolord Antiok
-    .isOnQuest 12498
-step
     #loop
-    .goto 115,54.56,35.04,0
-    .goto 115,54.56,35.04,40,0
-    .goto 115,56.62,33.45,40,0
-    >>Kill |cRXP_ENEMY_Wastes Scavengers|r
-    .complete 12498,1 --Wastes Scavenger slain (30)
-    .mob Wastes Scavenger
-    .isOnQuest 12498
-step
-    #loop
-    .goto 115,58.87,31.25,0
-    .goto 115,58.87,31.25,40,0
+    .goto 115,56.63,27.57,0
     .goto 115,56.63,27.57,40,0
+    .goto 115,58.87,31.25,40,0
+    .goto 115,54.56,35.04,40,0
+    >>Kill |cRXP_ENEMY_Grand Necrolord Antiok|r and loot |cRXP_LOOT_Scythe of Antiok|r. It can also be picked up from |cRXP_PICK_Scythe of Antiok|r on the ground
+    >>Kill |cRXP_ENEMY_Wastes Scavengers|r
     >>Kill |cRXP_ENEMY_Wastes Taskmaster|r
     >>Kill |cRXP_ENEMY_Wastes Diggers|r
     >>Pick up |cRXP_PICK_Composite Ore|r from the ground
+    .complete -12498,2 --Scythe of Antiok (1)
+    .complete -12498,1 --Wastes Scavenger slain (30)
     .complete 12043,1 --Wastes Taskmaster slain (1)
     .complete 12043,2 --Wastes Digger slain (12)
     .complete 12044,1 --Composite Ore (1)
+    .mob Grand Necrolord Antiok
+    .mob Wastes Scavenger
     .mob Wastes Taskmaster
     .mob Wastes Digger
 step
@@ -2059,13 +2022,13 @@ step
     .accept 12046 >>Accept Soft Packaging
     .target Zivlix
 step
-    #completewith Along286
+    #completewith Along265
     >>As you go: Kill |cRXP_ENEMY_Jormungar Tunnelers|r and |cRXP_ENEMY_Dragonbone Condors|r. Loot them for |cRXP_LOOT_Thin Animal Hide|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12046,1 --Thin Animal Hide (12)
     .mob Jormungar Tunneler
     .mob Dragonbone Condor
 step
-    #label Along286
+    #label Along265
     .goto 115,55.02,23.42
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Xink|r
     .turnin 12044 >>Turn in Stocking Up
@@ -2092,11 +2055,11 @@ step
     .accept 12049 >>Accept Hard to Swallow
     .target Xink
 step
-    #completewith Along290
+    #completewith Along269
     >>As you go: Open the |cRXP_PICK_Jormungar Meat|r. Loot it for |cRXP_LOOT_Seared Jormungar Meat|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12049,1 --Seared Jormungar Meat (1)
 step
-    #label Along290
+    #label Along269
     #loop
     .goto 115,53.27,25.17,0
     .goto 115,53.27,25.17,40,0
@@ -2173,13 +2136,13 @@ step
     .accept 12076 >>Accept Messy Business
     .target Zort
 step
-    #completewith Along302
+    #completewith Along281
     >>As you go: Kill |cRXP_ENEMY_Ice Heart Jormungar Feeders|r and |cRXP_ENEMY_Ice Heart Jormungar Spawns|r. Loot them for |cRXP_LOOT_Vial of Corrosive Spit|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12076,1 --Vial of Corrosive Spit (1)
     .mob Ice Heart Jormungar Feeder
     .mob Ice Heart Jormungar Spawn
 step
-    #label Along302
+    #label Along281
     .goto 115,58.98,17.80
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ko'char the Unbreakable|r
     .accept 12079 >>Accept Stomping Grounds

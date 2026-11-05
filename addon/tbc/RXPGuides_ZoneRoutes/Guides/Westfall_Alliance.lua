@@ -441,26 +441,20 @@ step
     .mob Defias Messenger
     .isOnQuest 142
 step
-    .goto 1436/0,1713.62,-11157.70
-    >>Kill |cRXP_ENEMY_Defias Knuckledusters|r
-    .complete 14,3 --Defias Knuckleduster slain (5)
-    .mob Defias Knuckleduster
-    .isOnQuest 14
-step
-    .goto 1436/0,1722.02,-11155.13
-    >>Kill |cRXP_ENEMY_Defias Pathstalkers|r
-    .complete 14,2 --Defias Pathstalker slain (5)
-    .mob Defias Pathstalker
-    .isOnQuest 14
-step
     #loop
-    .goto 1436/0,1685.97,-11296.30,0
-    .goto 1436/0,1685.97,-11296.30,40,0
+    .goto 1436/0,1544.92,-11279.03,0
     .goto 1436/0,1544.92,-11279.03,40,0
+    .goto 1436/0,1685.97,-11296.30,40,0
+    .goto 1436/0,1723.77,-11169.60,40,0
+    >>Kill |cRXP_ENEMY_Defias Knuckledusters|r
+    >>Kill |cRXP_ENEMY_Defias Pathstalkers|r
     >>Kill |cRXP_ENEMY_Defias Highwaymans|r
-    .complete 14,1 --Defias Highwayman slain (8)
+    .complete -14,3 --Defias Knuckleduster slain (5)
+    .complete -14,2 --Defias Pathstalker slain (5)
+    .complete -14,1 --Defias Highwayman slain (8)
+    .mob Defias Knuckleduster
+    .mob Defias Pathstalker
     .mob Defias Highwayman
-    .isOnQuest 14
 step
     .goto 1436/0,2109.82,-10514.17
     >>Click the |cRXP_PICK_Captain's Footlocker|r
@@ -679,14 +673,10 @@ step << Rogue
 step << Rogue
     .goto 1436/0,585.22,-11126.43
     >>Kill |cRXP_ENEMY_Malformed Defias Drone|r and loot |cRXP_LOOT_Defias Tower Key|r
-    .complete 2359,2 --Defias Tower Key (1)
-    .mob Malformed Defias Drone
-    .isOnQuest 2359
-step << Rogue
-    .goto 1436/0,552.32,-11125.03
     >>Open the |cRXP_PICK_Duskwood Chest|r. Loot it for |cRXP_LOOT_Klaven Mortwake's Journal|r
-    .complete 2359,1 --Klaven Mortwake's Journal (1)
-    .isOnQuest 2359
+    .complete -2359,2 --Defias Tower Key (1)
+    .complete -2359,1 --Klaven Mortwake's Journal (1)
+    .mob Malformed Defias Drone
 step
     .goto 1436/0,1563.82,-10957.03
     >>Click the |cRXP_PICK_Old Footlocker|r

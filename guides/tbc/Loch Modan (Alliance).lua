@@ -349,39 +349,24 @@ step
     .mob Loch Crocolisk
     .mob Large Loch Crocolisk
 step
-    .goto 1432/0,-3489.04,-4976.83
-    >>Open the |cRXP_PICK_Bingles's Blastencapper|r. Loot it for |cRXP_LOOT_Bingles' Blastencapper|r
-    .complete 2038,4 --Bingles' Blastencapper (1)
-step
-    #completewith Along9
-    >>As you go: Open the |cRXP_PICK_Bingles's Toolbucket|r. Loot it for |cRXP_LOOT_Bingles' Hammer|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 2038,3 --Bingles' Hammer (1)
-step
     .goto 1432/0,-3474.42,-4948.87
+    >>Open the |cRXP_PICK_Bingles's Blastencapper|r. Loot it for |cRXP_LOOT_Bingles' Blastencapper|r
     >>Kill |cRXP_ENEMY_Stonesplinter Shamans|r
-    .complete 263,1 --Stonesplinter Shaman slain (10)
-    .mob Stonesplinter Shaman
-    .isOnQuest 263
-step
-    #label Along9
-    #loop
-    .goto 1432/0,-3494.56,-4978.85,0
-    .goto 1432/0,-3494.56,-4978.85,40,0
-    .goto 1432/0,-3434.43,-4930.66,40,0
     >>Kill |cRXP_ENEMY_Stonesplinter Bonesnappers|r
-    .complete 263,2 --Stonesplinter Bonesnapper slain (10)
-    .mob Stonesplinter Bonesnapper
-    .isOnQuest 263
-step
-    #loop
-    .goto 1432/0,-3422.01,-4930.66,0
-    .goto 1432/0,-3422.01,-4930.66,40,0
-    .goto 1432/0,-3337.89,-5041.03,40,0
     >>Open the |cRXP_PICK_Bingles's Toolbucket|r. Loot it for |cRXP_LOOT_Bingles' Hammer|r
-    >>Open the |cRXP_PICK_Bingles's Toolbucket|r. Loot it for |cRXP_LOOT_Bingles' Screwdriver|r
-    >>Open the |cRXP_PICK_Bingles's Toolbucket|r. Loot it for |cRXP_LOOT_Bingles' Wrench|r
+    .complete 2038,4 --Bingles' Blastencapper (1)
+    .complete -263,1 --Stonesplinter Shaman slain (10)
+    .complete -263,2 --Stonesplinter Bonesnapper slain (10)
     .complete 2038,3 --Bingles' Hammer (1)
+    .mob Stonesplinter Shaman
+    .mob Stonesplinter Bonesnapper
+step
+    .goto 1432/0,-3328.23,-4864.80
+    >>Open the |cRXP_PICK_Bingles's Toolbucket|r. Loot it for |cRXP_LOOT_Bingles' Screwdriver|r
     .complete 2038,2 --Bingles' Screwdriver (1)
+step
+    .goto 1432/0,-3337.89,-5041.03
+    >>Open the |cRXP_PICK_Bingles's Toolbucket|r. Loot it for |cRXP_LOOT_Bingles' Wrench|r
     .complete 2038,1 --Bingles' Wrench (1)
 step
     .goto 1432/0,-3020.95,-5359.09
@@ -506,23 +491,16 @@ step
     .isQuestTurnedIn 263 --In Defense of the King's Lands
     .isQuestTurnedIn 267 --The Trogg Threat
 step
-    .goto 1432/0,-2952.82,-6151.40
-    >>Kill |cRXP_ENEMY_Grawmug|r
-    .complete 217,1 --Grawmug slain (1)
-    .mob Grawmug
-    .isOnQuest 217
-step
-    .goto 1432/0,-2951.17,-6158.21
-    >>Kill |cRXP_ENEMY_Gnasher|r
-    .complete 217,2 --Gnasher slain (1)
-    .mob Gnasher
-    .isOnQuest 217
-step
     .goto 1432/0,-2949.24,-6153.24
+    >>Kill |cRXP_ENEMY_Grawmug|r
+    >>Kill |cRXP_ENEMY_Gnasher|r
     >>Kill |cRXP_ENEMY_Brawler|r
-    .complete 217,3 --Brawler slain (1)
+    .complete -217,1 --Grawmug slain (1)
+    .complete -217,2 --Gnasher slain (1)
+    .complete -217,3 --Brawler slain (1)
+    .mob Grawmug
+    .mob Gnasher
     .mob Brawler
-    .isOnQuest 217
 step
     .goto 1432/0,-2634.51,-5842.90
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Rugelfuss|r
@@ -595,31 +573,24 @@ step
     .turnin 250 >>Turn in A Dark Threat Looms
     .accept 199 >>Accept A Dark Threat Looms
 step
-    #completewith Along9
+    #completewith Along8
     >>As you go: Kill |cRXP_ENEMY_Mo'grosh Enforcers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 255,3 --Mo'grosh Enforcer slain (4)
     .mob Mo'grosh Enforcer
 step
+    #label Along8
     #loop
     .goto 1432/0,-4085.67,-4809.61,0
     .goto 1432/0,-4085.67,-4809.61,40,0
-    .goto 1432/0,-4186.90,-4762.52,40,0
-    >>Kill |cRXP_ENEMY_Mo'grosh Brutes|r
-    .complete 255,2 --Mo'grosh Brute slain (4)
-    .mob Mo'grosh Brute
-step
-    #label Along9
-    #loop
-    .goto 1432/0,-4114.08,-4784.96,0
     .goto 1432/0,-4114.08,-4784.96,40,0
-    .goto 1432/0,-4085.67,-4809.61,40,0
+    >>Kill |cRXP_ENEMY_Mo'grosh Brutes|r
     >>Kill |cRXP_ENEMY_Mo'grosh Ogres|r, |cRXP_ENEMY_Mo'grosh Enforcers|r, |cRXP_ENEMY_Mo'grosh Brutes|r and |cRXP_ENEMY_Mo'grosh Shamans|r. Loot them for |cRXP_LOOT_Mo'grosh Crystal|r
-    .complete 278,2 --Mo'grosh Crystal (1)
+    .complete 255,2 --Mo'grosh Brute slain (4)
+    .complete -278,2 --Mo'grosh Crystal (1)
+    .mob Mo'grosh Brute
     .mob Mo'grosh Ogre
     .mob Mo'grosh Enforcer
-    .mob Mo'grosh Brute
     .mob Mo'grosh Shaman
-    .isOnQuest 278
 step
     #loop
     .goto 1432/0,-3947.48,-4926.24,0

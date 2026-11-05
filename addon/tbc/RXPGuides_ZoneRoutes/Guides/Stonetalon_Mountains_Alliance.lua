@@ -235,24 +235,18 @@ step
     #loop
     .goto 1442/1,1578.17,716.09,0
     .goto 1442/1,1578.17,716.09,40,0
-    .goto 1442/1,1647.52,546.44,40,0
+    .goto 1442/1,1758.86,699.81,40,0
+    .goto 1442/1,1651.91,523.00,40,0
     >>Kill |cRXP_ENEMY_Charred Ancients|r, |cRXP_ENEMY_Blackened Ancients|r and |cRXP_ENEMY_Vengeful Ancients|r. Loot them for |cRXP_LOOT_Corroded Shrapnel|r
-    .complete 1084,1 --Corroded Shrapnel (1)
+    >>Kill |cRXP_ENEMY_Rogue Flame Spirits|r, |cRXP_ENEMY_Burning Ravagers|r and |cRXP_ENEMY_Burning Destroyers|r. Loot them for |cRXP_LOOT_Smoldering Embers|r
+    .complete -1084,1 --Corroded Shrapnel (1)
+    .complete -1083,1 --Smoldering Embers (8)
     .mob Charred Ancient
     .mob Blackened Ancient
     .mob Vengeful Ancient
-    .isOnQuest 1084
-step
-    #loop
-    .goto 1442/1,1622.61,478.39,0
-    .goto 1442/1,1622.61,478.39,40,0
-    .goto 1442/1,1726.14,512.90,40,0
-    >>Kill |cRXP_ENEMY_Rogue Flame Spirits|r, |cRXP_ENEMY_Burning Ravagers|r and |cRXP_ENEMY_Burning Destroyers|r. Loot them for |cRXP_LOOT_Smoldering Embers|r
-    .complete 1083,1 --Smoldering Embers (8)
     .mob Rogue Flame Spirit
     .mob Burning Ravager
     .mob Burning Destroyer
-    .isOnQuest 1083
 step
     .goto 1442/1,320.72,739.86
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kaela Shadowspear|r

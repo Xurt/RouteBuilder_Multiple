@@ -1,5 +1,5 @@
 Arathi Highlands - Horde - part 1 of 5, planned from level 32
-Guide "32-42 Arathi Highlands" in group "Zone Routes (Horde)": this part has 28 steps, 18 stops
+Guide "32-42 Arathi Highlands" in group "Zone Routes (Horde)": this part has 27 steps, 17 stops
 Written to guides/tbc/Arathi Highlands (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -84,7 +84,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Arathi Highlands - Horde - part 2 of 5, planned from level 35
-Guide "32-42 Arathi Highlands" in group "Zone Routes (Horde)": this part has 32 steps, 27 stops
+Guide "32-42 Arathi Highlands" in group "Zone Routes (Horde)": this part has 31 steps, 26 stops
 Written to guides/tbc/Arathi Highlands (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -143,7 +143,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Arathi Highlands - Horde - part 3 of 5, planned from level 38
-Guide "32-42 Arathi Highlands" in group "Zone Routes (Horde)": this part has 35 steps, 33 stops
+Guide "32-42 Arathi Highlands" in group "Zone Routes (Horde)": this part has 27 steps, 25 stops
 Written to guides/tbc/Arathi Highlands (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

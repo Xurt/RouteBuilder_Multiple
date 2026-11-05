@@ -759,23 +759,16 @@ step
     .mob Rajis Fyashe
 step
     #loop
-    .goto 102,82.66,43.27,0
-    .goto 102,82.66,43.27,40,0
+    .goto 102,79.49,44.84,0
+    .goto 102,79.49,44.84,40,0
+    .goto 102,83.63,44.65,40,0
     .goto 102,82.76,39.85,40,0
     >>Kill |cRXP_ENEMY_Parched Hydras|r. Loot them for |cRXP_LOOT_Parched Hydra Sample|r
-    .complete 10355,1 --Parched Hydra Sample (5)
-    .mob Parched Hydra
-    .isOnQuest 10355
-step
-    #loop
-    .goto 102,84.00,37.28,0
-    .goto 102,84.00,37.28,40,0
-    .goto 102,83.63,44.65,40,0
-    .goto 102,79.49,44.84,40,0
     >>Kill |cRXP_ENEMY_Withered Bog Lords|r. Loot them for |cRXP_LOOT_Withered Bog Lord Sample|r
-    .complete 10355,2 --Withered Bog Lord Sample (5)
+    .complete -10355,1 --Parched Hydra Sample (5)
+    .complete -10355,2 --Withered Bog Lord Sample (5)
+    .mob Parched Hydra
     .mob Withered Bog Lord
-    .isOnQuest 10355
 step
     .goto 102,79.09,65.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warden Hamoot|r

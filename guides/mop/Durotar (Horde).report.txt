@@ -1,5 +1,5 @@
 Durotar - Horde
-Guide "6-12 Durotar" in group "Zone Routes (Horde)": 99 steps, 87 stops
+Guide "6-12 Durotar" in group "Zone Routes (Horde)": 96 steps, 85 stops
 Written to guides/mop/Durotar (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

@@ -1,5 +1,5 @@
 Felwood - Alliance - part 1 of 2, planned from level 46
-Guide "46-51 Felwood" in group "Zone Routes (Alliance)": this part has 202 steps, 170 stops
+Guide "46-51 Felwood" in group "Zone Routes (Alliance)": this part has 201 steps, 169 stops
 Written to guides/mop/Felwood (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

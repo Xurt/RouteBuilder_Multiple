@@ -1,5 +1,5 @@
 Dread Wastes - Horde
-Guide "90-90 Dread Wastes" in group "Zone Routes (Horde)": 234 steps, 228 stops
+Guide "90-90 Dread Wastes" in group "Zone Routes (Horde)": 223 steps, 199 stops
 Written to guides/mop/Dread Wastes (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -21,6 +21,7 @@ Step order kept from the last build (locks folder): 228 steps kept, 9 new ones s
   everyone (quests that depend on other zones): 232 more tasks; their whole route comes to 34,729 yd; ends at level 90.0
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
 4 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
+21 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (73)
 ------------------------

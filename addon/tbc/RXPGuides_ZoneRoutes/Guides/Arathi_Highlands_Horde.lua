@@ -24,25 +24,18 @@ step
     .accept 635 >>Accept Crystal in the Mountains
     .use 4614
 step
-    #loop
-    .goto 1417/0,-2150.43,-1185.73,0
-    .goto 1417/0,-2150.43,-1185.73,40,0
-    .goto 1417/0,-2091.03,-1321.09,40,0
-    .goto 1417/0,-1982.31,-1220.29,40,0
-    >>Kill |cRXP_ENEMY_Boulderfist Ogres|r
-    .complete 676,1 --Boulderfist Ogre slain (8)
-    .mob Boulderfist Ogre
-    .isOnQuest 676
-step
     #label Drop635x1
     #loop
-    .goto 1417/0,-2075.55,-1203.49,0
-    .goto 1417/0,-2075.55,-1203.49,40,0
-    .goto 1417/0,-2032.71,-1207.09,40,0
+    .goto 1417/0,-2170.59,-1254.13,0
+    .goto 1417/0,-2170.59,-1254.13,40,0
+    .goto 1417/0,-2150.43,-1185.73,40,0
+    .goto 1417/0,-2047.47,-1223.89,40,0
+    >>Kill |cRXP_ENEMY_Boulderfist Ogres|r
     >>Kill |cRXP_ENEMY_Boulderfist Enforcers|r
-    .complete 676,2 --Boulderfist Enforcer slain (10)
+    .complete -676,1 --Boulderfist Ogre slain (8)
+    .complete -676,2 --Boulderfist Enforcer slain (10)
+    .mob Boulderfist Ogre
     .mob Boulderfist Enforcer
-    .isOnQuest 676
 step
     .goto 1417/0,-3498.27,-918.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Urda|r
@@ -138,12 +131,12 @@ step
     .accept 635 >>Accept Crystal in the Mountains
     .use 4614
 step
-    #completewith Along9
+    #completewith Along8
     >>As you go: Kill |cRXP_ENEMY_Witherbark Axe Throwers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 677,1 --Witherbark Axe Thrower slain (10)
     .mob Witherbark Axe Thrower
 step
-    #label Along9
+    #label Along8
     #loop
     .goto 1417/0,-3196.95,-1852.69,0
     .goto 1417/0,-3196.95,-1852.69,40,0
@@ -327,21 +320,14 @@ step
     #loop
     .goto 1417/0,-2696.55,-1970.77,0
     .goto 1417/0,-2696.55,-1970.77,40,0
-    .goto 1417/0,-2804.55,-1923.25,40,0
+    .goto 1417/0,-2786.19,-1918.69,40,0
     .goto 1417/0,-2836.23,-2063.41,40,0
     >>Kill |cRXP_ENEMY_Boulderfist Brutes|r
-    .complete 678,1 --Boulderfist Brute slain (10)
-    .mob Boulderfist Brute
-    .isOnQuest 678
-step
-    #loop
-    .goto 1417/0,-2773.23,-1981.81,0
-    .goto 1417/0,-2773.23,-1981.81,40,0
-    .goto 1417/0,-2786.19,-1918.69,40,0
     >>Kill |cRXP_ENEMY_Boulderfist Magus|r
-    .complete 678,2 --Boulderfist Magus slain (8)
+    .complete -678,1 --Boulderfist Brute slain (10)
+    .complete -678,2 --Boulderfist Magus slain (8)
+    .mob Boulderfist Brute
     .mob Boulderfist Magus
-    .isOnQuest 678
 step
     #loop
     .goto 1417/0,-2580.27,-1938.37,0
@@ -503,26 +489,19 @@ step
     .mob Lieutenant Valorcall
     .isOnQuest 643
 step
-    .goto 1417/0,-1535.91,-1727.17
-    >>Kill |cRXP_ENEMY_Or'Kalar|r and loot |cRXP_LOOT_Or'Kalar's Head|r
-    .complete 680,1 --Or'Kalar's Head (1)
-    .mob Or'Kalar
-    .isOnQuest 680
-step
     #loop
-    .goto 1417/0,-1518.27,-1774.45,0
-    .goto 1417/0,-1518.27,-1774.45,40,0
+    .goto 1417/0,-1619.79,-1751.89,0
     .goto 1417/0,-1619.79,-1751.89,40,0
+    .goto 1417/0,-1522.95,-1750.69,40,0
+    >>Kill |cRXP_ENEMY_Or'Kalar|r and loot |cRXP_LOOT_Or'Kalar's Head|r
     >>Kill |cRXP_ENEMY_Boulderfist Shamans|r
-    .complete 679,1 --Boulderfist Shaman slain (7)
-    .mob Boulderfist Shaman
-    .isOnQuest 679
-step
-    .goto 1417/0,-1558.59,-1757.17
     >>Kill |cRXP_ENEMY_Boulderfist Lords|r
-    .complete 679,2 --Boulderfist Lord slain (3)
+    .complete -680,1 --Or'Kalar's Head (1)
+    .complete -679,1 --Boulderfist Shaman slain (7)
+    .complete -679,2 --Boulderfist Lord slain (3)
+    .mob Or'Kalar
+    .mob Boulderfist Shaman
     .mob Boulderfist Lord
-    .isOnQuest 679
 step
     .goto 1417/0,-2047.47,-2088.85
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_First Mate Nilzlix|r
@@ -559,53 +538,27 @@ step
     .target Doctor Draxlegauge
     .isQuestTurnedIn 665 --any of: Sunken Treasure
 step
-    .goto 1417/0,-1708.71,-2175.49
+    #loop
+    .goto 1417/0,-1710.15,-2170.45,0
+    .goto 1417/0,-1710.15,-2170.45,40,0
+    .goto 1417/0,-1730.67,-2269.33,40,0
+    .goto 1417/0,-1603.23,-2187.97,40,0
     >>Pick up |cRXP_PICK_Maiden's Folly Log|r from the ground
-    .complete 662,2 --Maiden's Folly Log (1)
-    .isOnQuest 662
-step
-    .goto 1417/0,-1696.47,-2161.57
     >>Pick up |cRXP_PICK_Maiden's Folly Charts|r from the ground
-    .complete 662,1 --Maiden's Folly Charts (1)
-    .isOnQuest 662
-step
-    .goto 1417/0,-1603.23,-2187.97
     >>Pick up |cRXP_PICK_Spirit of Silverpine Charts|r from the ground
-    .complete 662,3 --Spirit of Silverpine Charts (1)
-    .isOnQuest 662
-step
-    .goto 1417/0,-1610.07,-2175.73
     >>Pick up |cRXP_PICK_Spirit of Silverpine Log|r from the ground
-    .complete 662,4 --Spirit of Silverpine Log (1)
-    .isOnQuest 662
-step
-    #loop
-    .goto 1417/0,-1658.67,-2149.33,0
-    .goto 1417/0,-1658.67,-2149.33,40,0
-    .goto 1417/0,-1730.67,-2245.33,40,0
-    .goto 1417/0,-1550.67,-2293.33,40,0
     >>Loot the |cRXP_PICK_Calcified Elven Gems|r for |cRXP_LOOT_Elven Gem|r
-    .complete 666,1 --Elven Gem (10)
-    .isOnQuest 666
-step
-    #loop
-    .goto 1417/0,-1679.19,-2219.17,0
-    .goto 1417/0,-1679.19,-2219.17,40,0
-    .goto 1417/0,-1608.99,-2181.97,40,0
-    .goto 1417/0,-1768.47,-2285.17,40,0
     >>Kill |cRXP_ENEMY_Daggerspine Raiders|r
-    .complete 664,1 --Daggerspine Raider slain (10)
-    .mob Daggerspine Raider
-    .isOnQuest 664
-step
-    #loop
-    .goto 1417/0,-1685.31,-2164.45,0
-    .goto 1417/0,-1685.31,-2164.45,40,0
-    .goto 1417/0,-1606.47,-2168.53,40,0
     >>Kill |cRXP_ENEMY_Daggerspine Sorceress|r
-    .complete 664,2 --Daggerspine Sorceress slain (3)
+    .complete -662,2 --Maiden's Folly Log (1)
+    .complete -662,1 --Maiden's Folly Charts (1)
+    .complete -662,3 --Spirit of Silverpine Charts (1)
+    .complete -662,4 --Spirit of Silverpine Log (1)
+    .complete -666,1 --Elven Gem (10)
+    .complete -664,1 --Daggerspine Raider slain (10)
+    .complete -664,2 --Daggerspine Sorceress slain (3)
+    .mob Daggerspine Raider
     .mob Daggerspine Sorceress
-    .isOnQuest 664
 step
     .goto 1417/0,-2047.47,-2088.85
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_First Mate Nilzlix|r

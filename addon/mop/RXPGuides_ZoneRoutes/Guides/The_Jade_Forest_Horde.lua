@@ -32,23 +32,16 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .xp <85,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 371,32.94,11.19,0
-    .goto 371,32.94,11.19,40,0
-    .goto 371,33.03,7.11,40,0
-    >>Kill |cRXP_ENEMY_Thunder Hold Cannons|r
-    .complete 31765,1 --Thunder Hold Cannon slain (9)
-    .mob Thunder Hold Cannon
-    .isOnQuest 31765
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
     .goto 371,32.78,6.98,0
     .goto 371,32.78,6.98,40,0
-    .goto 371,34.02,11.76,40,0
+    .goto 371,33.56,11.95,40,0
+    >>Kill |cRXP_ENEMY_Thunder Hold Cannons|r
     >>Kill |cRXP_ENEMY_Thunder Hold Laborers|r and |cRXP_ENEMY_Thunder Hold Soldiers|r
-    .complete 31765,2 --Thunder Hold Laborer (8)
+    .complete -31765,1 --Thunder Hold Cannon slain (9)
+    .complete -31765,2 --Thunder Hold Laborer (8)
+    .mob Thunder Hold Cannon
     .mob Thunder Hold Laborer
     .mob Thunder Hold Soldier
-    .isOnQuest 31765
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,31.01,11.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rivett Clutchpop|r
@@ -82,6 +75,15 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 31766 --any of: Touching Ground
     .xp <85,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along8
+    >>As you go: Kill |cRXP_ENEMY_Thunder Hold Menders|r, |cRXP_ENEMY_Thunder Hold Lieutenants|r, |cRXP_ENEMY_Thunder Hold Sharp-Shooters|r and |cRXP_ENEMY_Thunder Hold Armsmans|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -31767,1 --Thunder Hold Mender (8)
+    .mob Thunder Hold Mender
+    .mob Thunder Hold Lieutenant
+    .mob Thunder Hold Sharp-Shooter
+    .mob Thunder Hold Armsman
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along8
     #loop
     .goto 371,33.60,13.40,0
     .goto 371,33.60,13.40,40,0
@@ -177,22 +179,15 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .xp <85,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 371,34.21,10.84,0
-    .goto 371,34.21,10.84,40,0
-    .goto 371,33.57,7.07,40,0
-    >>Kill |cRXP_ENEMY_Sha Harbingers|r
-    .complete 31771,2 --Sha Harbinger slain (7)
-    .mob Sha Harbinger
-    .isOnQuest 31771
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
     .goto 371,34.08,10.29,0
     .goto 371,34.08,10.29,40,0
     .goto 371,33.32,6.67,40,0
+    >>Kill |cRXP_ENEMY_Sha Harbingers|r
     >>Kill |cRXP_ENEMY_Sha Haunts|r
-    .complete 31771,1 --Sha Haunt slain (20)
+    .complete -31771,2 --Sha Harbinger slain (7)
+    .complete -31771,1 --Sha Haunt slain (20)
+    .mob Sha Harbinger
     .mob Sha Haunt
-    .isOnQuest 31771
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,32.06,13.35
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shademaster Kiryn|r
@@ -206,6 +201,11 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Sue-Ji the Tender
     .isQuestTurnedIn 31769 --any of: The Final Blow!
     .xp <85,1
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along26
+    >>As you go: Kill |cRXP_ENEMY_Sha-Infested Prowlers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -31773,1 --Sha-Infested Prowler slain (10)
+    .mob Sha-Infested Prowler
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,30.58,11.65
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Gorrok|r
@@ -226,6 +226,7 @@ step
     .isQuestTurnedIn 31769 --any of: The Final Blow!
     .xp <85,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along26
     .goto 371,29.43,8.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shokia|r
     .complete 29694,4 --Shokia
@@ -233,21 +234,14 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isOnQuest 29694
 step
     #loop
-    .goto 371,30.47,11.13,0
-    .goto 371,30.47,11.13,40,0
-    .goto 371,31.80,13.48,40,0
+    .goto 371,30.80,11.52,0
+    .goto 371,30.80,11.52,40,0
+    .goto 371,31.21,13.54,40,0
     >>Click the |cRXP_PICK_Barrel of Honeybrew|r
-    .complete 31772,1 --Barrel of Honeybrew
-    .isOnQuest 31772
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 371,31.12,11.63,0
-    .goto 371,31.12,11.63,40,0
-    .goto 371,31.26,14.20,40,0
-    >>Kill |cRXP_ENEMY_Sha-Infested Prowlers|r
-    .complete 31773,1 --Sha-Infested Prowler slain (10)
-    .mob Sha-Infested Prowler
-    .isOnQuest 31773
+    >>Kill |cRXP_ENEMY_Sha-Infested Prowlers|r << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .complete -31772,1 --Barrel of Honeybrew
+    .complete -31773,1 << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren --Sha-Infested Prowler slain (10)
+    .mob Sha-Infested Prowler << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
     .goto 371,29.38,13.58
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ellie Honeypaw|r
@@ -307,6 +301,14 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Zin'Jun
     .isQuestTurnedIn 31774 --any of: Seeking Zin'jun
     .xp <85,1
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along39
+    >>As you go: Kill |cRXP_ENEMY_Hozen Groundpounder|r and loot |cRXP_LOOT_Zin'Jun's Rifle|r. Kill |cRXP_ENEMY_Hozen Groundpounder|r and loot |cRXP_LOOT_Zin'Jun's Left Eye|r. Kill |cRXP_ENEMY_Hozen Groundpounder|r and loot |cRXP_LOOT_Zin'Jun's Right Eye|r. Kill |cRXP_ENEMY_Hozen Groundpounder|r and loot |cRXP_LOOT_Snuff's Corpse|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -29765,1 --Zin'Jun's Rifle (1)
+    .complete -29765,2 --Zin'Jun's Left Eye (1)
+    .complete -29765,3 --Zin'Jun's Right Eye (1)
+    .complete -29765,4 --Snuff's Corpse (1)
+    .mob Hozen Groundpounder
 step
     .goto 371,30.89,17.52
     >>Click the |cRXP_PICK_Ancient Statue|r
@@ -314,26 +316,17 @@ step
     .isQuestTurnedIn 31774 --any of: Seeking Zin'jun
     .xp <85,1
 step
-    .goto 371,29.20,19.09
-    >>Click the |cRXP_PICK_Ancient Statue Torso|r
-    .complete 29743,1 --Ancient Statue Torso
-    .isOnQuest 29743
-step
-    .goto 371,28.48,22.13
-    >>Click the |cRXP_PICK_Ancient Statue Shoulder|r
-    .complete 29743,3 --Ancient Statue Shoulder
-    .isOnQuest 29743
-step
-    .goto 371,29.97,22.48
-    >>Click the |cRXP_PICK_Ancient Statue Head|r
-    .complete 29743,4 --Ancient Statue Head
-    .isOnQuest 29743
-step
     .goto 371,30.12,21.39
+    >>Click the |cRXP_PICK_Ancient Statue Torso|r
+    >>Click the |cRXP_PICK_Ancient Statue Shoulder|r
+    >>Click the |cRXP_PICK_Ancient Statue Head|r
     >>Click the |cRXP_PICK_Ancient Statue Arm|r
-    .complete 29743,2 --Ancient Statue Arm
-    .isOnQuest 29743
+    .complete -29743,1 --Ancient Statue Torso
+    .complete -29743,3 --Ancient Statue Shoulder
+    .complete -29743,4 --Ancient Statue Head
+    .complete -29743,2 --Ancient Statue Arm
 step
+    #label Along39
     .goto 371,29.38,21.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
     .turnin 29743 >>Turn in Monstrosity
@@ -345,36 +338,14 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,29.77,20.96,40,0
     .goto 371,28.47,18.63,40,0
     >>Kill |cRXP_ENEMY_Hozen Groundpounder|r and loot |cRXP_LOOT_Zin'Jun's Rifle|r
-    .complete 29765,1 --Zin'Jun's Rifle (1)
-    .mob Hozen Groundpounder
-    .isOnQuest 29765
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 371,28.47,18.63,0
-    .goto 371,28.47,18.63,40,0
-    .goto 371,29.77,20.96,40,0
     >>Kill |cRXP_ENEMY_Hozen Groundpounder|r and loot |cRXP_LOOT_Zin'Jun's Left Eye|r
-    .complete 29765,2 --Zin'Jun's Left Eye (1)
-    .mob Hozen Groundpounder
-    .isOnQuest 29765
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 371,28.47,18.63,0
-    .goto 371,28.47,18.63,40,0
-    .goto 371,29.77,20.96,40,0
     >>Kill |cRXP_ENEMY_Hozen Groundpounder|r and loot |cRXP_LOOT_Zin'Jun's Right Eye|r
-    .complete 29765,3 --Zin'Jun's Right Eye (1)
-    .mob Hozen Groundpounder
-    .isOnQuest 29765
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 371,28.47,18.63,0
-    .goto 371,28.47,18.63,40,0
-    .goto 371,29.77,20.96,40,0
     >>Kill |cRXP_ENEMY_Hozen Groundpounder|r and loot |cRXP_LOOT_Snuff's Corpse|r
-    .complete 29765,4 --Snuff's Corpse (1)
+    .complete -29765,1 --Zin'Jun's Rifle (1)
+    .complete -29765,2 --Zin'Jun's Left Eye (1)
+    .complete -29765,3 --Zin'Jun's Right Eye (1)
+    .complete -29765,4 --Snuff's Corpse (1)
     .mob Hozen Groundpounder
-    .isOnQuest 29765
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,31.14,17.54
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zin'Jun|r
@@ -423,19 +394,35 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 29804 --any of: Seein' Red
     .xp <85,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along51
+    >>As you go: Kill |cRXP_ENEMY_Strongarm Airmans|r, |cRXP_ENEMY_Strongarm Medics|r, |cRXP_ENEMY_Strongarm Lieutenants|r and |cRXP_ENEMY_Strongarm Aces|r. Kill |cRXP_ENEMY_Pandaren Volunteers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -31775,1 --Strongarm Airman (8)
+    .complete -31778,1 --Pandaren Volunteer (12)
+    .mob Strongarm Airman
+    .mob Strongarm Medic
+    .mob Strongarm Lieutenant
+    .mob Strongarm Ace
+    .mob Pandaren Volunteer
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along49
+    >>As you go: Kill |cRXP_ENEMY_Morgus Grimhatchet|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -31776,3 --Morgus Grimhatchet (1)
+    .mob Morgus Grimhatchet
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,30.36,24.27
     >>Kill |cRXP_ENEMY_Master Engineer Cogswing|r and |cRXP_ENEMY_Gyro-Mechanic Lavenderp|r
-    .complete 31776,1 --Master Engineer Cogswing (1)
+    >>Kill |cRXP_ENEMY_Gyro-Mechanic Lavenderp|r
+    .complete -31776,1 --Master Engineer Cogswing (1)
+    .complete -31776,2 --Gyro-Mechanic Lavenderp (1)
     .mob Master Engineer Cogswing
     .mob Gyro-Mechanic Lavenderp
-    .isOnQuest 31776
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 371,30.34,24.26
-    >>Kill |cRXP_ENEMY_Gyro-Mechanic Lavenderp|r
-    .complete 31776,2 --Gyro-Mechanic Lavenderp (1)
-    .mob Gyro-Mechanic Lavenderp
-    .isOnQuest 31776
+    #completewith Along49
+    >>As you go: Kill |cRXP_ENEMY_Corporal Jackson Silver|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -31776,4 --Corporal Jackson Silver (1)
+    .mob Corporal Jackson Silver
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along49
     #loop
     .goto 371,30.80,24.40,0
     .goto 371,30.80,24.40,40,0
@@ -446,16 +433,13 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,29.40,23.00
     >>Kill |cRXP_ENEMY_Morgus Grimhatchet|r
-    .complete 31776,3 --Morgus Grimhatchet (1)
-    .mob Morgus Grimhatchet
-    .isOnQuest 31776
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 371,27.80,23.00
     >>Kill |cRXP_ENEMY_Corporal Jackson Silver|r
-    .complete 31776,4 --Corporal Jackson Silver (1)
+    .complete -31776,3 --Morgus Grimhatchet (1)
+    .complete -31776,4 --Corporal Jackson Silver (1)
+    .mob Morgus Grimhatchet
     .mob Corporal Jackson Silver
-    .isOnQuest 31776
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along51
     .goto 371,27.40,24.40
     >>Kill |cRXP_ENEMY_Strongarm Gyrocopters|r
     .complete 31777,1 --Strongarm Gyrocopter slain (12)
@@ -467,21 +451,14 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,27.89,24.23,40,0
     .goto 371,29.60,23.20,40,0
     >>Kill |cRXP_ENEMY_Strongarm Airmans|r, |cRXP_ENEMY_Strongarm Medics|r, |cRXP_ENEMY_Strongarm Lieutenants|r and |cRXP_ENEMY_Strongarm Aces|r
-    .complete 31775,1 --Strongarm Airman (8)
+    >>Kill |cRXP_ENEMY_Pandaren Volunteers|r
+    .complete -31775,1 --Strongarm Airman (8)
+    .complete -31778,1 --Pandaren Volunteer (12)
     .mob Strongarm Airman
     .mob Strongarm Medic
     .mob Strongarm Lieutenant
     .mob Strongarm Ace
-    .isOnQuest 31775
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 371,28.40,23.80,0
-    .goto 371,28.40,23.80,40,0
-    .goto 371,29.60,23.20,40,0
-    >>Kill |cRXP_ENEMY_Pandaren Volunteers|r
-    .complete 31778,1 --Pandaren Volunteer (12)
     .mob Pandaren Volunteer
-    .isOnQuest 31778
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,28.11,24.70
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rivett Clutchpop|r. |cRXP_WARN_This NPC walks a patrol route|r
@@ -547,6 +524,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 31999 --any of: Nazgrim's Command
     .xp <85,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along63
+    >>As you go: Kill |cRXP_ENEMY_Lurching Blossoms|r. Loot them for |cRXP_LOOT_Viscous Chlorophyll|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -29815,1 --Viscous Chlorophyll (8)
+    .mob Lurching Blossom
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along63
     .goto 371,28.11,24.70
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rivett Clutchpop|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 29821 >>Accept Missed Me By... That Much!
@@ -568,22 +551,15 @@ step
     .xp <85,1
 step
     #loop
-    .goto 371,24.63,27.61,0
-    .goto 371,24.63,27.61,40,0
+    .goto 371,25.09,27.51,0
+    .goto 371,25.09,27.51,40,0
     .goto 371,25.82,25.84,40,0
     >>Kill |cRXP_ENEMY_Water Sprites|r. Loot them for |cRXP_LOOT_Emergency Supplies|r
-    .complete 31112,1 --Emergency Supplies (5)
+    >>Kill |cRXP_ENEMY_Lurching Blossoms|r. Loot them for |cRXP_LOOT_Viscous Chlorophyll|r << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .complete -31112,1 --Emergency Supplies (5)
+    .complete -29815,1 << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren --Viscous Chlorophyll (8)
     .mob Water Sprite
-    .isOnQuest 31112
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 371,26.45,26.19,0
-    .goto 371,26.45,26.19,40,0
-    .goto 371,24.80,26.55,40,0
-    >>Kill |cRXP_ENEMY_Lurching Blossoms|r. Loot them for |cRXP_LOOT_Viscous Chlorophyll|r
-    .complete 29815,1 --Viscous Chlorophyll (8)
-    .mob Lurching Blossom
-    .isOnQuest 29815
+    .mob Lurching Blossom << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
     .goto 371,28.11,24.70
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rivett Clutchpop|r. |cRXP_WARN_This NPC walks a patrol route|r
@@ -606,15 +582,11 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,28.80,26.40
     >>Kill |cRXP_ENEMY_Hozen Gutrippers|r
-    .complete 29827,1 --Hozen Gutripper slain (25)
-    .mob Hozen Gutripper
-    .isOnQuest 29827
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 371,28.60,26.40
     >>Kill |cRXP_ENEMY_Hozen Nibstabbers|r
-    .complete 29827,2 --Hozen Nibstabber slain (25)
+    .complete -29827,1 --Hozen Gutripper slain (25)
+    .complete -29827,2 --Hozen Nibstabber slain (25)
+    .mob Hozen Gutripper
     .mob Hozen Nibstabber
-    .isOnQuest 29827
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,28.19,24.82
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shademaster Kiryn|r
@@ -692,20 +664,11 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 31132 --any of: A Mile in My Shoes
     .xp <85,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 371,30.89,33.67
-    >>Click the |cRXP_PICK_Stone Monolith|r
-    .complete 31134,1 --Stone Monolith
-    .isOnQuest 31134
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,30.63,33.76
     >>Click the |cRXP_PICK_Stone Monolith|r
-    .complete 31134,2 --Stone Monolith
-    .isOnQuest 31134
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 371,30.57,34.16
-    >>Click the |cRXP_PICK_Stone Monolith|r
-    .complete 31134,3 --Stone Monolith
-    .isOnQuest 31134
+    .complete -31134,1 --Stone Monolith
+    .complete -31134,2 --Stone Monolith
+    .complete -31134,3 --Stone Monolith
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,30.84,34.06
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lorewalker Cho|r
@@ -758,18 +721,11 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,23.00,35.80
     >>Kill |cRXP_ENEMY_Speckled Trouts|r. Loot them for |cRXP_LOOT_Speckled Trout|r
-    .complete 29879,2 --Speckled Trout (5)
-    .mob Speckled Trout
-    .isOnQuest 29879
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 371,24.40,36.20,0
-    .goto 371,24.40,36.20,40,0
-    .goto 371,22.80,33.40,40,0
     >>Kill |cRXP_ENEMY_Engorged Crocolisks|r
-    .complete 29879,1 --Engorged Crocolisk slain (8)
+    .complete -29879,2 --Speckled Trout (5)
+    .complete -29879,1 --Engorged Crocolisk slain (8)
+    .mob Speckled Trout
     .mob Engorged Crocolisk
-    .isOnQuest 29879
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,26.29,37.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tooki Tooki|r
@@ -817,15 +773,11 @@ step
     .goto 371,30.69,41.41,40,0
     .goto 371,32.58,40.47,40,0
     >>Kill |cRXP_ENEMY_Battleworn Paratroopers|r. Loot them for |cRXP_LOOT_Alliance Service Medallion|r
-    .complete 31241,1 --Alliance Service Medallion (6)
+    >>Kill |cRXP_ENEMY_Kher Shan|r << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .complete -31241,1 --Alliance Service Medallion (6)
+    .complete -29924,1 << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren --Kher Shan slain (1)
     .mob Battleworn Paratrooper
-    .isOnQuest 31241
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 371,33.32,41.95
-    >>Kill |cRXP_ENEMY_Kher Shan|r
-    .complete 29924,1 --Kher Shan slain (1)
-    .mob Kher Shan
-    .isOnQuest 29924
+    .mob Kher Shan << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,33.37,41.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
@@ -974,16 +926,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 29937 --Furious Fowl
     .xp <85,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 371,26.52,55.65
-    >>Loot the |cRXP_PICK_Dead Deepriver Slickies|r for |cRXP_LOOT_Exploded Slicky|r
-    .complete 29939,1 --Exploded Slicky (5)
-    .isOnQuest 29939
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,26.84,55.64
+    >>Loot the |cRXP_PICK_Dead Deepriver Slickies|r for |cRXP_LOOT_Exploded Slicky|r
     >>Kill |cRXP_ENEMY_Muck Snappers|r. Loot them for |cRXP_LOOT_Snapper Steak|r
-    .complete 29942,1 --Snapper Steak (4)
+    .complete -29939,1 --Exploded Slicky (5)
+    .complete -29942,1 --Snapper Steak (4)
     .mob Muck Snapper
-    .isOnQuest 29942
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,27.03,50.84
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Eekle Eekle|r
@@ -1025,12 +973,17 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 29971 --any of: The Scouts Return
     .xp <85,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along130
+    >>As you go: Click the |cRXP_PICK_STAY OUT - NO VISITORS|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -29730,3 --STAY OUT - NO VISITORS
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,38.93,46.00
     >>Listen to Riko's report.
     .complete 29730,1 --Lifelike Jade Statue
     .target Lifelike Jade Statue
     .isOnQuest 29730
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along130
     .goto 371,39.24,46.21
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Widow Greenpaw|r
     .complete 29730,2 --Widow Greenpaw
@@ -1119,21 +1072,14 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .xp <85,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 371,29.94,49.99,0
-    .goto 371,29.94,49.99,40,0
-    .goto 371,30.26,53.90,40,0
-    >>Pick up |cRXP_PICK_Green Branch|r from the ground
-    .complete 29968,1 --Green Branch (7)
-    .isOnQuest 29968
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 371,31.00,52.80,0
+    .goto 371,29.40,54.00,0
+    .goto 371,29.40,54.00,40,0
     .goto 371,31.00,52.80,40,0
-    .goto 371,29.40,52.40,40,0
+    >>Pick up |cRXP_PICK_Green Branch|r from the ground
     >>Kill |cRXP_ENEMY_Alliance Infiltrators|r
-    .complete 29943,1 --Alliance Infiltrator slain (8)
+    .complete -29968,1 --Green Branch (7)
+    .complete -29943,1 --Alliance Infiltrator slain (8)
     .mob Alliance Infiltrator
-    .isOnQuest 29943
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,28.26,47.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_General Nazgrim|r
@@ -1272,21 +1218,14 @@ step
     .xp <85,1
 step
     #loop
-    .goto 371,44.90,48.08,0
-    .goto 371,44.90,48.08,40,0
-    .goto 371,43.34,48.88,40,0
+    .goto 371,44.52,48.44,0
+    .goto 371,44.52,48.44,40,0
+    .goto 371,42.64,50.06,40,0
     >>Loot the |cRXP_PICK_Silk Patches|r for |cRXP_LOOT_Pristine Silk Strand|r
-    .complete 29866,1 --Pristine Silk Strand (7)
-    .isOnQuest 29866
-step
-    #loop
-    .goto 371,44.00,49.20,0
-    .goto 371,44.00,49.20,40,0
-    .goto 371,42.20,50.00,40,0
     >>Kill |cRXP_ENEMY_Silkwood Stalkers|r
-    .complete 29865,1 --Silkwood Stalker slain (8)
+    .complete -29866,1 --Pristine Silk Strand (7)
+    .complete -29865,1 --Silkwood Stalker slain (8)
     .mob Silkwood Stalker
-    .isOnQuest 29865
 step
     .goto 371,39.47,47.55
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_An Windfur|r
@@ -1298,20 +1237,13 @@ step
     #loop
     .goto 371,37.34,44.65,0
     .goto 371,37.34,44.65,40,0
-    .goto 371,38.15,43.34,40,0
+    .goto 371,38.79,43.33,40,0
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Scared Pandaren Cub|r
-    .complete 29716,1 --Scared Pandaren Cub (6)
-    .target Scared Pandaren Cub
-    .isOnQuest 29716
-step
-    #loop
-    .goto 371,38.19,43.27,0
-    .goto 371,38.19,43.27,40,0
-    .goto 371,36.61,44.63,40,0
     >>Kill |cRXP_ENEMY_Jade Guardians|r
-    .complete 29717,1 --Jade Guardian slain (8)
+    .complete -29716,1 --Scared Pandaren Cub (6)
+    .complete -29717,1 --Jade Guardian slain (8)
+    .target Scared Pandaren Cub
     .mob Jade Guardian
-    .isOnQuest 29717
 step
     .goto 371,46.65,46.15
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_An Windfur|r
@@ -1539,12 +1471,12 @@ step
     .accept 29745 >>Accept The Sprites' Plight
     .target Outcast Sprite
 step
-    #completewith Along219
+    #completewith Along197
     >>As you go: Kill |cRXP_ENEMY_Stonebound Destroyers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 29745,1 --Stonebound Destroyer slain (10)
     .mob Stonebound Destroyer
 step
-    #label Along219
+    #label Along197
     .goto 371,46.95,20.53
     >>Slay 10 Stonebound Destroyer the Woods of the Lost and discover their source.
     .complete 29745,2 --Mogu Ruins Discovery Kill Credit
@@ -1704,7 +1636,7 @@ step
     .accept 29627 >>Accept A Proper Weapon
     .target Groundskeeper Wu
 step
-    #completewith Along243
+    #completewith Along221
     >>As you go: Pick up |cRXP_PICK_Rattan Switch|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 29627,1 --Rattan Switch (6)
 step
@@ -1713,7 +1645,7 @@ step
     .complete 29627,2 --Black Walnut Extract (1)
     .target June Whiteblossom
 step
-    #label Along243
+    #label Along221
     .goto 371,41.78,24.61
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tBuy |cRXP_LOOT_Triple-Bittered Ale|r from |cRXP_FRIENDLY_Brewmaster Lei Kanglei|r
     .complete 29627,3 --Triple-Bittered Ale (3)
@@ -1740,7 +1672,7 @@ step
     .accept 29628 >>Accept A Strong Back
     .target Groundskeeper Wu
 step
-    #completewith Along247
+    #completewith Along225
     >>As you go: Kill |cRXP_ENEMY_Greenwood Tricksters|r. |cRXP_WARN_Anything left is finished later|r
     .complete 29630,1 --Greenwood Trickster slain (10)
     .mob Greenwood Trickster
@@ -1750,7 +1682,7 @@ step
     .turnin 29636 >>Turn in A Test of Endurance
     .target Instructor Myang
 step
-    #label Along247
+    #label Along225
     .goto 371,38.01,23.80
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Guard Shan Long|r
     .accept 29631 >>Accept Burning Bright
@@ -1933,23 +1865,16 @@ step
     .isQuestTurnedIn 29995 --any of: Shrine of the Dawn
     .xp <85,1
 step
-    .goto 371,54.09,38.46
-    >>Kill |cRXP_ENEMY_Pandriarch Bramblestaff|r
-    .complete 29920,2 --Pandriarch Bramblestaff slain (1)
-    .mob Pandriarch Bramblestaff
-    .isOnQuest 29920
-step
     .goto 371,53.59,36.73
+    >>Kill |cRXP_ENEMY_Pandriarch Bramblestaff|r
     >>Kill |cRXP_ENEMY_Pandriarch Goldendraft|r
-    .complete 29920,3 --Pandriarch Goldendraft slain (1)
-    .mob Pandriarch Goldendraft
-    .isOnQuest 29920
-step
-    .goto 371,52.54,35.57
     >>Kill |cRXP_ENEMY_Pandriarch Windfur|r
-    .complete 29920,1 --Pandriarch Windfur slain (1)
+    .complete -29920,2 --Pandriarch Bramblestaff slain (1)
+    .complete -29920,3 --Pandriarch Goldendraft slain (1)
+    .complete -29920,1 --Pandriarch Windfur slain (1)
+    .mob Pandriarch Bramblestaff
+    .mob Pandriarch Goldendraft
     .mob Pandriarch Windfur
-    .isOnQuest 29920
 step
     .goto 371,52.59,38.12
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lo Wanderbrew|r
@@ -2035,6 +1960,10 @@ step
     .isQuestTurnedIn 29932 --any of: The Temple of the Jade Serpent
     .xp <85,1
 step
+    #completewith Along274
+    >>As you go: Click the |cRXP_PICK_Firework Launcher|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -30005,1 --Firework Launcher
+step
     .goto 371,58.20,61.20
     >>Interact with |cRXP_FRIENDLY_Playful Crimson Serpents|r
     .complete 29999,2 --Playful Crimson Serpent (4)
@@ -2055,23 +1984,16 @@ step
     .isQuestTurnedIn 29998 --any of: The Librarian's Quandary
     .xp <85,1
 step
-    .goto 371,56.00,60.20
-    >>Interact with |cRXP_FRIENDLY_Playful Gold Serpents|r
-    .complete 29999,4 --Playful Gold Serpent (4)
-    .target Playful Gold Serpent
-    .isOnQuest 29999
-step
     .goto 371,56.31,60.10
+    >>Interact with |cRXP_FRIENDLY_Playful Gold Serpents|r
     >>Kill |cRXP_ENEMY_Bookworms|r
-    .complete 30002,1 --Bookworm slain (12)
-    .mob Bookworm
-    .isOnQuest 30002
-step
-    .goto 371,56.60,60.60
     >>Kill |cRXP_ENEMY_Dappled Moths|r
-    .complete 30001,1 --Dappled Moth slain (8)
+    .complete -29999,4 --Playful Gold Serpent (4)
+    .complete -30002,1 --Bookworm slain (12)
+    .complete -30001,1 --Dappled Moth slain (8)
+    .target Playful Gold Serpent
+    .mob Bookworm
     .mob Dappled Moth
-    .isOnQuest 30001
 step
     .goto 371,56.26,60.43
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lorewalker Stonestep|r
@@ -2093,17 +2015,13 @@ step
     .isQuestTurnedIn 30002 --Pages of History
     .xp <85,1
 step
-    .goto 371,56.40,58.40
+    .goto 371,56.60,58.40
     >>Interact with |cRXP_FRIENDLY_Playful Emerald Serpents|r
-    .complete 29999,3 --Playful Emerald Serpent (4)
-    .target Playful Emerald Serpent
-    .isOnQuest 29999
-step
-    .goto 371,56.80,55.60
     >>Kill |cRXP_ENEMY_Water Fiend|r and loot |cRXP_LOOT_Scryer's Staff|r
-    .complete 29997,1 --Scryer's Staff (1)
+    .complete -29999,3 --Playful Emerald Serpent (4)
+    .complete -29997,1 --Scryer's Staff (1)
+    .target Playful Emerald Serpent
     .mob Water Fiend
-    .isOnQuest 29997
 step
     .goto 371,57.57,56.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wise Mari|r
@@ -2111,6 +2029,7 @@ step
     .target Wise Mari
     .isOnQuest 29997
 step
+    #label Along274
     .goto 371,57.57,56.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wise Mari|r
     .accept 30011 >>Accept A New Vision
@@ -2118,19 +2037,15 @@ step
     .isQuestTurnedIn 29997 --any of: The Scryer's Dilemma
     .xp <85,1
 step
-    .goto 371,59.20,56.80
-    >>Interact with |cRXP_FRIENDLY_Playful Azure Serpents|r
-    .complete 29999,1 --Playful Azure Serpent (4)
-    .target Playful Azure Serpent
-    .isOnQuest 29999
-step
     #loop
-    .goto 371,58.30,58.20,0
-    .goto 371,58.30,58.20,40,0
-    .goto 371,57.50,61.40,40,0
+    .goto 371,58.60,57.60,0
+    .goto 371,58.60,57.60,40,0
+    .goto 371,57.20,59.90,40,0
+    >>Interact with |cRXP_FRIENDLY_Playful Azure Serpents|r
     >>Click the |cRXP_PICK_Firework Launcher|r
-    .complete 30005,1 --Firework Launcher
-    .isOnQuest 30005
+    .complete -29999,1 --Playful Azure Serpent (4)
+    .complete -30005,1 --Firework Launcher
+    .target Playful Azure Serpent
 step
     .goto 371,58.13,58.66
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elder Sage Rain-Zhu|r
@@ -2198,29 +2113,27 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 30000 --any of: The Jade Serpent
     .xp <85,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 371,28.00,48.00
+    #completewith Along286
+    >>As you go: Open the |cRXP_PICK_Barrel of Slickies|r. Loot it for |cRXP_LOOT_Bucket of Slicky Water|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -30466,1 --Bucket of Slicky Water (1)
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along286
+    #loop
+    .goto 371,27.60,47.80,0
+    .goto 371,27.60,47.80,40,0
+    .goto 371,27.40,49.40,40,0
     >>Kill |cRXP_ENEMY_Lazy Hozens|r
-    .complete 30466,2 --Lazy Hozen (10)
-    .mob Lazy Hozen
-    .isOnQuest 30466
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 371,28.41,47.79
     >>Kill |cRXP_ENEMY_Rivett Clutchpop|r and loot |cRXP_LOOT_Rivett Clutchpop's Report|r
-    .complete 30484,2 --Rivett Clutchpop's Report (1)
-    .mob Rivett Clutchpop
-    .isOnQuest 30484
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 371,29.16,50.89
     >>Kill |cRXP_ENEMY_Shademaster Kiryn|r and loot |cRXP_LOOT_Shademaster Kiryn's Report|r
-    .complete 30484,1 --Shademaster Kiryn's Report (1)
-    .mob Shademaster Kiryn
-    .isOnQuest 30484
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 371,28.40,51.80
     >>Kill |cRXP_ENEMY_Shokia|r and loot |cRXP_LOOT_Shokia's Report|r
-    .complete 30484,3 --Shokia's Report (1)
+    .complete -30466,2 --Lazy Hozen (10)
+    .complete -30484,2 --Rivett Clutchpop's Report (1)
+    .complete -30484,1 --Shademaster Kiryn's Report (1)
+    .complete -30484,3 --Shokia's Report (1)
+    .mob Lazy Hozen
+    .mob Rivett Clutchpop
+    .mob Shademaster Kiryn
     .mob Shokia
-    .isOnQuest 30484
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,27.00,54.94
     >>Kill |cRXP_ENEMY_Riko|r and loot |cRXP_LOOT_Riko's Report|r
@@ -2297,6 +2210,11 @@ step
     .target Lorewalker Cho
     .isQuestTurnedIn 31303 --any of: The Seal is Broken
     .xp <85,1
+step
+    #completewith Along303
+    >>As you go: Kill |cRXP_ENEMY_Sha Echos|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -30500,1 --Sha Echo slain (10)
+    .mob Sha Echo
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,48.13,61.77
     >>Interact with |cRXP_FRIENDLY_General Nazgrim|r
@@ -2327,6 +2245,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Rivett Clutchpop
     .isOnQuest 30504
 step
+    #label Along303
     #loop
     .goto 371,47.87,58.20,0
     .goto 371,47.87,58.20,40,0
@@ -2383,7 +2302,7 @@ step
     .accept 29579 >>Accept Rally the Survivors
     .target Shao the Defiant
 step
-    #completewith Along343
+    #completewith Along311
     >>As you go: Kill |cRXP_ENEMY_Gormali Incinerators|r. Kill |cRXP_ENEMY_Gormali Raiders|r. Kill |cRXP_ENEMY_Nectarbreeze Farmers|r and |cRXP_ENEMY_Rally Survivor Kill Credits|r. |cRXP_WARN_Anything left is finished later|r
     .complete 29578,1 --Gormali Incinerator slain (8)
     .complete 29578,2 --Gormali Raider (8)
@@ -2393,43 +2312,28 @@ step
     .mob Nectarbreeze Farmer
     .mob Rally Survivor Kill Credit
 step
+    #label Along311
     .goto 371,43.25,76.01
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gentle Mother Hanae|r
     .accept 29580 >>Accept Orchard-Supplied Hardware
     .accept 29585 >>Accept Spitfire
     .target Gentle Mother Hanae
 step
-    #completewith Along343
-    >>As you go: Pick up |cRXP_PICK_Orchard Tool|r from the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete 29580,1 --Orchard Tool (6)
-step
-    #label Along343
     #loop
-    .goto 371,44.46,75.54,0
-    .goto 371,44.46,75.54,40,0
-    .goto 371,44.44,72.40,40,0
+    .goto 371,44.04,75.09,0
+    .goto 371,44.04,75.09,40,0
+    .goto 371,43.91,72.75,40,0
     >>Interact with |cRXP_FRIENDLY_Orchard Fires|r
-    .complete 29585,1 --Orchard Fire (12)
-    .target Orchard Fire
-step
-    .goto 371,43.25,76.01
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gentle Mother Hanae|r
-    .turnin 29585 >>Turn in Spitfire while you are here
-    .isQuestComplete 29585
-    .target Gentle Mother Hanae
-step
-    #loop
-    .goto 371,43.99,72.22,0
-    .goto 371,43.99,72.22,40,0
-    .goto 371,43.74,75.01,40,0
     >>Pick up |cRXP_PICK_Orchard Tool|r from the ground
     >>Kill |cRXP_ENEMY_Gormali Incinerators|r
     >>Kill |cRXP_ENEMY_Gormali Raiders|r
     >>Kill |cRXP_ENEMY_Nectarbreeze Farmers|r and |cRXP_ENEMY_Rally Survivor Kill Credits|r
+    .complete 29585,1 --Orchard Fire (12)
     .complete 29580,1 --Orchard Tool (6)
     .complete 29578,1 --Gormali Incinerator slain (8)
     .complete 29578,2 --Gormali Raider (8)
     .complete 29579,1 --Nectarbreeze Farmer (5)
+    .target Orchard Fire
     .mob Gormali Incinerator
     .mob Gormali Raider
     .mob Nectarbreeze Farmer
@@ -2439,6 +2343,12 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gentle Mother Hanae|r
     .turnin 29580 >>Turn in Orchard-Supplied Hardware while you are here
     .isQuestComplete 29580
+    .target Gentle Mother Hanae
+step
+    .goto 371,43.25,76.01
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gentle Mother Hanae|r
+    .turnin 29585 >>Turn in Spitfire while you are here
+    .isQuestComplete 29585
     .target Gentle Mother Hanae
 step
     .goto 371,43.49,75.93
@@ -2517,14 +2427,10 @@ step
 step
     .goto 371,44.20,14.94
     >>Kill |cRXP_ENEMY_Pei-Zhi|r
-    .complete 29749,1 --Pei-Zhi slain (1)
-    .mob Pei-Zhi
-    .isOnQuest 29749
-step
-    .goto 371,44.23,14.90
     >>Pick up |cRXP_PICK_Staff of Pei-Zhi|r from the ground
-    .complete 29749,2 --Staff of Pei-Zhi (1)
-    .isOnQuest 29749
+    .complete -29749,1 --Pei-Zhi slain (1)
+    .complete -29749,2 --Staff of Pei-Zhi (1)
+    .mob Pei-Zhi
 step
     .goto 371,44.24,15.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pei-Zhi|r
@@ -2540,35 +2446,34 @@ step
     .target Pei-Zhi
     .isQuestTurnedIn 29749 --any of: An Urgent Plea
 step
-    .goto 371,42.68,15.75
-    >>Pick up |cRXP_PICK_Jade Cong|r from the ground
-    .complete 29751,1 --Jade Cong (1)
-    .isOnQuest 29751
-step
-    .goto 371,42.27,17.09
-    >>Pick up |cRXP_PICK_Pungent Ritual Candle|r from the ground
-    .complete 29751,3 --Pungent Ritual Candle (1)
-    .isOnQuest 29751
-step
-    .goto 371,41.63,14.30
-    >>Pick up |cRXP_PICK_Chipped Ritual Bowl|r from the ground
-    .complete 29751,2 --Chipped Ritual Bowl (1)
-    .isOnQuest 29751
-step
-    .goto 371,41.41,16.05
-    >>Interact with |cRXP_FRIENDLY_Wayward Ancestors|r
-    .complete 29752,1 --Wayward Ancestor (10)
-    .target Wayward Ancestor
-    .isOnQuest 29752
-step
     #loop
-    .goto 371,42.23,16.89,0
-    .goto 371,42.23,16.89,40,0
-    .goto 371,41.03,13.99,40,0
+    .goto 371,42.77,12.96,0
+    .goto 371,42.77,12.96,40,0
+    .goto 371,41.41,16.05,40,0
+    >>Pick up |cRXP_PICK_Jade Cong|r from the ground
+    >>Pick up |cRXP_PICK_Pungent Ritual Candle|r from the ground
+    >>Pick up |cRXP_PICK_Chipped Ritual Bowl|r from the ground
+    >>Interact with |cRXP_FRIENDLY_Wayward Ancestors|r
     >>Kill |cRXP_ENEMY_Shan'ze Spiritclaws|r. Loot them for |cRXP_LOOT_Spirit Bottle|r
-    .complete 29750,1 --Spirit Bottle (8)
+    .complete -29751,1 --Jade Cong (1)
+    .complete -29751,3 --Pungent Ritual Candle (1)
+    .complete -29751,2 --Chipped Ritual Bowl (1)
+    .complete -29752,1 --Wayward Ancestor (10)
+    .complete -29750,1 --Spirit Bottle (8)
+    .target Wayward Ancestor
     .mob Shan'ze Spiritclaw
-    .isOnQuest 29750
+step
+    .goto 371,44.24,15.02
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pei-Zhi|r
+    .turnin 29751 >>Turn in Ritual Artifacts while you are here
+    .isQuestComplete 29751
+    .target Pei-Zhi
+step
+    .goto 371,44.24,15.02
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pei-Zhi|r
+    .turnin 29752 >>Turn in The Wayward Dead while you are here
+    .isQuestComplete 29752
+    .target Pei-Zhi
 step
     .goto 371,44.24,15.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pei-Zhi|r

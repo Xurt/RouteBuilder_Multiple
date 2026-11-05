@@ -1,5 +1,5 @@
 Thousand Needles - Alliance - part 1 of 3, planned from level 40
-Guide "40-45 Thousand Needles" in group "Zone Routes (Alliance)": this part has 166 steps, 152 stops
+Guide "40-45 Thousand Needles" in group "Zone Routes (Alliance)": this part has 159 steps, 140 stops
 Written to guides/mop/Thousand Needles (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -35,6 +35,7 @@ Step order kept from the last build (locks folder): 8 steps kept, 159 new ones s
   Worgen (quests that depend on other zones): 2 more tasks; their whole route comes to 27,883 yd; ends at level 40.0; at its hardest you are 2.0 levels below the mobs
   Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 28,082 yd; ends at level 40.0; at its hardest you are 2.0 levels below the mobs
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
+5 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (79)
 ------------------------
@@ -186,7 +187,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Thousand Needles - Alliance - part 2 of 3, planned from level 44
-Guide "40-45 Thousand Needles" in group "Zone Routes (Alliance)": this part has 56 steps, 54 stops
+Guide "40-45 Thousand Needles" in group "Zone Routes (Alliance)": this part has 53 steps, 50 stops
 Written to guides/mop/Thousand Needles (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -207,6 +208,7 @@ Step order kept from the last build (locks folder): 0 steps kept, 58 new ones sl
   everyone: 1 tasks, 0 yd on foot; ends at level 44.0
   everyone (quests that depend on other zones): 57 more tasks; their whole route comes to 11,687 yd; ends at level 44.0
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (19)
 ------------------------

@@ -1,5 +1,5 @@
 Un'Goro Crater - Horde
-Guide "51-55 Un'Goro Crater" in group "Zone Routes (Horde)": 162 steps, 146 stops
+Guide "51-55 Un'Goro Crater" in group "Zone Routes (Horde)": 159 steps, 143 stops
 Written to guides/mop/Un'Goro Crater (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

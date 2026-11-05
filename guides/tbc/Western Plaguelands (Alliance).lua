@@ -535,6 +535,14 @@ step
     .target Nathaniel Dumah
     .isQuestComplete 5903
 step
+    #completewith Along41
+    >>As you go: Kill |cRXP_ENEMY_Skeletal Flayers|r, |cRXP_ENEMY_Skeletal Sorcerers|r, |cRXP_ENEMY_Skeletal Terrors|r and |cRXP_ENEMY_Skeletal Executioners|r. Loot them for |cRXP_LOOT_Skeletal Fragments|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -5537,1 --Skeletal Fragments (15)
+    .mob Skeletal Flayer
+    .mob Skeletal Sorcerer
+    .mob Skeletal Terror
+    .mob Skeletal Executioner
+step
     .goto 1422/0,-1697.64,1114.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marlene Redpath|r
     .accept 5153 >>Accept A Strange Historian
@@ -615,6 +623,7 @@ step
     .turnin 4972 >>Turn in Counting Out Time
     .target Chromie
 step
+    #label Along41
     .goto 1422/0,-1280.11,1452.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chromie|r
     .accept 5721 >>Accept The Battle of Darrowshire
@@ -819,6 +828,11 @@ step
     .isQuestTurnedIn 5801 --any of: Fire Plume Forged
     .xp <55,1
 step
+    #completewith Along3
+    >>As you go: Open the |cRXP_PICK_Araj's Phylactery|r. Loot it for |cRXP_LOOT_Araj's Scarab|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -5803,1 --Araj's Scarab (1)
+step
+    #label Along3
     .goto 1422/0,-1529.94,1382.65
     >>Open the |cRXP_PICK_Araj's Phylactery|r. Loot it for |cRXP_LOOT_Araj's Phylactery Shard|r
     .complete 211,1 --Araj's Phylactery Shard (1)
@@ -878,6 +892,11 @@ step
     .target Jeziba
     .isQuestComplete 5167
 step
+    #completewith Along13
+    >>As you go: Pick up |cRXP_PICK_Blood of Heroes|r from the ground. |cRXP_WARN_Anything left is finished later|r
+    .complete -5166,3 --Blood of Heroes (10)
+step
+    #label Along13
     #loop
     .goto 1422/0,-1385.03,1345.67,0
     .goto 1422/0,-1385.03,1345.67,40,0

@@ -83,7 +83,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Silverpine Forest - Horde - part 2 of 2, planned from level 20
-Guide "11-20 Silverpine Forest" in group "Zone Routes (Horde)": this part has 35 steps, 33 stops
+Guide "11-20 Silverpine Forest" in group "Zone Routes (Horde)": this part has 33 steps, 29 stops
 Written to guides/mop/Silverpine Forest (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -104,6 +104,7 @@ Step order kept from the last build (locks folder): 27 steps kept, 0 new ones sl
   everyone: 1 tasks, 0 yd on foot; ends at level 20.0
   everyone (quests that depend on other zones): 32 more tasks; their whole route comes to 3,330 yd; ends at level 20.0; 1 ORDER PROBLEMS
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (12)
 ------------------------

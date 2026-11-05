@@ -147,7 +147,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Stranglethorn Vale - Alliance - part 2 of 8, planned from level 33
-Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 43 steps, 37 stops
+Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 40 steps, 35 stops
 Written to guides/classic/Stranglethorn Vale (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -169,7 +169,6 @@ Step order kept from the last build (locks folder): 36 steps kept, 1 new ones sl
   Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 31,279 yd; ends at level 33.7; at its hardest you are 2.0 levels below the mobs
 Hearthstone: set at Innkeeper Thulbek (Innkeeper Thulbek's inn); 0 hearth steps in the guide.
 3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (15)
 ------------------------
@@ -336,7 +335,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Stranglethorn Vale - Alliance - part 4 of 8, planned from level 39
-Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 45 steps, 42 stops
+Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 43 steps, 39 stops
 Written to guides/classic/Stranglethorn Vale (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -356,6 +355,7 @@ Step order kept from the last build (locks folder): 46 steps kept, 0 new ones sl
   everyone: 38 tasks, 13,588 yd on foot; ends at level 39.7; 2 hearths; at its hardest you are 2.9 levels below the mobs
   everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 20,317 yd; ends at level 39.7; 2 hearths; at its hardest you are 2.9 levels below the mobs
 Hearthstone: set at Innkeeper Skindle (Innkeeper Skindle's inn); 2 hearth steps in the guide.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (17)
 ------------------------
@@ -406,7 +406,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Stranglethorn Vale - Alliance - part 5 of 8, planned from level 42
-Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 44 steps, 39 stops
+Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 41 steps, 36 stops
 Written to guides/classic/Stranglethorn Vale (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -519,7 +519,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Stranglethorn Vale - Alliance - part 7 of 8, planned from level 48
-Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 11 steps, 10 stops
+Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 10 steps, 9 stops
 Written to guides/classic/Stranglethorn Vale (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

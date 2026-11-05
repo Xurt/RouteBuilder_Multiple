@@ -101,7 +101,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Dustwallow Marsh - Horde - part 2 of 4, planned from level 38
-Guide "35-46 Dustwallow Marsh" in group "Zone Routes (Horde)": this part has 29 steps, 27 stops
+Guide "35-46 Dustwallow Marsh" in group "Zone Routes (Horde)": this part has 28 steps, 26 stops
 Written to guides/classic/Dustwallow Marsh (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

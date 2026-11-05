@@ -121,14 +121,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 114,54.77,63.12
     >>Kill |cRXP_ENEMY_Northern Sinkhole Kill Credits|r
-    .complete 11897,2 --Northern Sinkhole Kill Credit slain (8)
-    .mob Northern Sinkhole Kill Credit
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 114,54.16,62.30
     >>Kill |cRXP_ENEMY_Cultist Necrolyte|r and loot |cRXP_LOOT_Cultist Communique|r
-    .complete 11792,1 --Cultist Communique (1)
+    .complete 11897,2 --Northern Sinkhole Kill Credit slain (8)
+    .complete -11792,1 --Cultist Communique (1)
+    .mob Northern Sinkhole Kill Credit
     .mob Cultist Necrolyte
-    .isOnQuest 11792
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 114,50.89,72.29
     >>Kill |cRXP_ENEMY_Southern Sinkhole Kill Credits|r
@@ -148,6 +145,14 @@ step
     .isQuestTurnedIn 12141 --any of: A Diplomatic Mission
     .xp <68,1
 step
+    #completewith Along19
+    >>As you go: Kill |cRXP_ENEMY_Skadir Longboatsmans|r. Kill |cRXP_ENEMY_Skadir Raiders|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -11613,2 --Skadir Longboatsman slain (8)
+    .complete -11613,1 --Skadir Raider slain (6)
+    .mob Skadir Longboatsman
+    .mob Skadir Raider
+step
+    #label Along19
     .goto 114,44.10,77.90
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captured Tuskarr Prisoner|r
     .accept 12471 >>Accept Cruelty of the Kvaldir
@@ -156,28 +161,14 @@ step
     #loop
     .goto 114,44.01,78.55,0
     .goto 114,44.01,78.55,40,0
-    .goto 114,47.49,78.00,40,0
-    .goto 114,49.20,79.12,40,0
+    .goto 114,46.84,77.39,40,0
+    .goto 114,49.00,78.07,40,0
     >>Kill |cRXP_ENEMY_Skadir Longboatsmans|r
-    .complete 11613,2 --Skadir Longboatsman slain (8)
-    .mob Skadir Longboatsman
-    .isOnQuest 11613
-step
-    .goto 114,47.13,75.48
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Karuk|r
-    .turnin 12471 >>Turn in Cruelty of the Kvaldir while you are here
-    .isQuestComplete 12471
-    .target Karuk
-step
-    #loop
-    .goto 114,45.88,77.84,0
-    .goto 114,45.88,77.84,40,0
-    .goto 114,44.62,80.44,40,0
-    .goto 114,47.98,78.64,40,0
     >>Kill |cRXP_ENEMY_Skadir Raiders|r
-    .complete 11613,1 --Skadir Raider slain (6)
+    .complete -11613,2 --Skadir Longboatsman slain (8)
+    .complete -11613,1 --Skadir Raider slain (6)
+    .mob Skadir Longboatsman
     .mob Skadir Raider
-    .isOnQuest 11613
 step
     .goto 114,47.13,75.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Karuk|r
@@ -315,15 +306,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 114,58.58,67.14
     >>Kill |cRXP_ENEMY_"Salty" John Thorpe|r
-    .complete 11794,3 --"Salty" John Thorpe slain (1)
-    .mob "Salty" John Thorpe
-    .isOnQuest 11794
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 114,59.14,68.68
     >>Kill |cRXP_ENEMY_Tom Hegger|r
-    .complete 11794,1 --Tom Hegger slain (1)
+    .complete -11794,3 --"Salty" John Thorpe slain (1)
+    .complete -11794,1 --Tom Hegger slain (1)
+    .mob "Salty" John Thorpe
     .mob Tom Hegger
-    .isOnQuest 11794
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 114,56.72,71.84
     >>Kill |cRXP_ENEMY_Guard Mitchells|r
@@ -354,7 +341,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 11903 >>Accept It's Time for Action
     .target Gerald Green
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along52
+    #completewith Along49
     >>As you go: Kill |cRXP_ENEMY_Plagued Scavengers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11903,1 --Plagued Scavenger slain (14)
     .mob Plagued Scavenger
@@ -364,7 +351,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 11908 >>Accept Reference Material
     .target Jeremiah Hawning
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along52
+    #label Along49
     .goto 114,58.28,62.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wendy Darren|r
     .accept 11913 >>Accept Take No Chances
@@ -480,12 +467,12 @@ step
     .accept 11612 >>Accept Reclaiming the Quarry
     .target Etaruk
 step
-    #completewith Along71
+    #completewith Along68
     >>As you go: Kill |cRXP_ENEMY_Beryl Treasure Hunters|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11612,1 --Beryl Treasure Hunter slain (12)
     .mob Beryl Treasure Hunter
 step
-    #label Along71
+    #label Along68
     .goto 114,54.64,35.85
     >>Click the |cRXP_PICK_Elder Atkanok|r
     .accept 11605 >>Accept The Honored Ancestors
@@ -509,24 +496,24 @@ step
     .turnin 11605 >>Turn in The Honored Ancestors
     .accept 11607 >>Accept The Lost Spirits
 step
-    #completewith Along74
+    #completewith Along71
     >>As you go: Kill |cRXP_ENEMY_Beryl Hound|r and loot |cRXP_LOOT_Core of Malice|r. |cRXP_WARN_Anything left is finished later|r
     .collect 34711,1,11607,1 --Core of Malice (1)
     .mob Beryl Hound
 step
-    #label Along74
+    #label Along71
     .goto 114,54.30,36.09
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Etaruk|r
     .turnin 11612 >>Turn in Reclaiming the Quarry
     .accept 11617 >>Accept Hampering Their Escape
     .target Etaruk
 step
-    #completewith Along77
+    #completewith Along74
     >>As you go: Kill |cRXP_ENEMY_North Platform|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11617,2 --North Platform slain (1)
     .mob North Platform
 step
-    #completewith Along76
+    #completewith Along73
     >>As you go: Kill |cRXP_ENEMY_Kaskala Shamans|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11607,2 --Kaskala Shaman slain (3)
     .mob Kaskala Shaman
@@ -542,18 +529,18 @@ step
     .mob Beryl Reclaimer
     .mob Beryl Hound
 step
-    #completewith Along76
+    #completewith Along73
     >>As you go: Kill |cRXP_ENEMY_West Platform|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11617,3 --West Platform slain (1)
     .mob West Platform
 step
-    #label Along76
+    #label Along73
     .goto 114,51.69,31.46
     >>Kill |cRXP_ENEMY_Kaskala Craftsmans|r
     .complete 11607,1 --Kaskala Craftsman slain (8)
     .mob Kaskala Craftsman
 step
-    #label Along77
+    #label Along74
     .goto 114,51.37,31.52
     >>Kill |cRXP_ENEMY_Kaskala Shamans|r
     .complete 11607,2 --Kaskala Shaman slain (3)
@@ -582,11 +569,11 @@ step
     .turnin 11607 >>Turn in The Lost Spirits
     .accept 11609 >>Accept Picking Up the Pieces
 step
-    #completewith Along81
+    #completewith Along78
     >>As you go: Pick up |cRXP_PICK_Tuskarr Ritual Object|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 11609,1 --Tuskarr Ritual Object (6)
 step
-    #label Along81
+    #label Along78
     .goto 114,54.30,36.09
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Etaruk|r
     .turnin 11617 >>Turn in Hampering Their Escape
@@ -633,7 +620,7 @@ step
     .accept 11876 >>Accept Help Those That Cannot Help Themselves
     .target Arch Druid Lathorius
 step
-    #completewith Along91
+    #completewith Along88
     >>As you go: Kill |cRXP_ENEMY_Clam Master Ks|r, |cRXP_ENEMY_Loot Crazed Poachers|r, |cRXP_ENEMY_Loot Crazed Divers|r and |cRXP_ENEMY_Northsea Mercenaries|r. Loot them for |cRXP_LOOT_Nesingwary Lackey Ear|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11866,1 --Nesingwary Lackey Ear (15)
     .mob Clam Master K
@@ -646,12 +633,12 @@ step
     .accept 11865 >>Accept Unfit for Death
     .target Zaza
 step
-    #completewith Along89
+    #completewith Along86
     >>As you go: Kill |cRXP_ENEMY_Nesingwary Trappers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11865,1 --Nesingwary Trapper slain (8)
     .mob Nesingwary Trapper
 step
-    #label Along89
+    #label Along86
     .goto 114,57.33,44.08
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hierophant Cenius|r
     .accept 11869 >>Accept Happy as a Clam
@@ -668,7 +655,7 @@ step
     .isQuestComplete 11865
     .target Zaza
 step
-    #label Along91
+    #label Along88
     .goto 114,51.11,43.85
     >>Kill |cRXP_ENEMY_Loot Crazed Divers|r
     .complete 11869,1 --Loot Crazed Diver slain (10)
@@ -697,7 +684,7 @@ step
     .complete 11876,1 --Trapped Mammoth Calf slain (8)
     .mob Trapped Mammoth Calf
 step
-    #completewith Along102
+    #completewith Along99
     >>As you go: Kill |cRXP_ENEMY_Clam Master Ks|r, |cRXP_ENEMY_Loot Crazed Poachers|r, |cRXP_ENEMY_Loot Crazed Divers|r and |cRXP_ENEMY_Northsea Mercenaries|r. Loot them for |cRXP_LOOT_Nesingwary Lackey Ear|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11866,1 --Nesingwary Lackey Ear (15)
     .mob Clam Master K
@@ -742,7 +729,7 @@ step
     .complete 11871,1 --Shipment of Animal Parts (1)
     .mob Northsea Thug
 step
-    #label Along102
+    #label Along99
     .goto 114,57.80,55.11
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hierophant Liandra|r
     .turnin 11871 >>Turn in Not On Our Watch
@@ -1219,12 +1206,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 11944 >>Accept Surrounded!
     .target Corporal Venn
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along171
+    #completewith Along168
     >>As you go: Kill |cRXP_ENEMY_Ziggurat Defenders|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11944,1 --Ziggurat Defender slain (7)
     .mob Ziggurat Defender
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along171
+    #label Along168
     .goto 114,82.17,46.41
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Private Casey|r
     .accept 12157 >>Accept The Lost Courier
@@ -1355,7 +1342,7 @@ step
     .accept 11912 >>Accept Nuts for Berries
     .target Librarian Serrah
 step
-    #completewith Along195
+    #completewith Along192
     >>As you go: Loot the |cRXP_PICK_Frostberry Bushes|r for |cRXP_LOOT_Frostberry|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11912,1 --Frostberry (10)
 step
@@ -1371,12 +1358,12 @@ step
     >>Click the |cRXP_PICK_Coldarra Geological Monitor|r
     .complete 11900,3 --Coldarra Geological Monitor
 step
-    #completewith Along195
+    #completewith Along192
     >>As you go: Kill |cRXP_ENEMY_Magic-bound Ancients|r. Loot them for |cRXP_LOOT_Magic-Bound Splinter|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11910,2 --Magic-Bound Splinter (3)
     .mob Magic-bound Ancient
 step
-    #label Along195
+    #label Along192
     #loop
     .goto 114,31.56,23.82,0
     .goto 114,31.56,23.82,40,0
@@ -1407,12 +1394,12 @@ step
     .accept 11936 >>Accept Hatching a Plan
     .target Raelorasz
 step
-    #completewith Along199
+    #completewith Along196
     >>As you go: Kill |cRXP_ENEMY_Magic-bound Ancients|r. Loot them for |cRXP_LOOT_Magic-Bound Splinter|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11910,2 --Magic-Bound Splinter (3)
     .mob Magic-bound Ancient
 step
-    #label Along199
+    #label Along196
     #loop
     .goto 114,30.00,31.43,0
     .goto 114,30.00,31.43,40,0
@@ -1423,12 +1410,12 @@ step
     .complete 11900,1 --Coldarra Geological Monitor
     .mob Coldarra Wyrmkin
 step
-    #completewith Along200
+    #completewith Along197
     >>As you go: Kill |cRXP_ENEMY_Arcane Serpents|r. Loot them for |cRXP_LOOT_Nexus Mana Essence|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11914,1 --Nexus Mana Essence (5)
     .mob Arcane Serpent
 step
-    #label Along200
+    #label Along197
     #loop
     .goto 114,28.47,28.81,0
     .goto 114,28.47,28.81,40,0
@@ -1681,19 +1668,19 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 11710 >>Accept What's the Matter with the Transmatter?
     .target Mordle Cogspinner
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along233
+    #completewith Along230
     >>As you go: Kill |cRXP_ENEMY_Fizzcrank Mechagnomes|r. Pick up |cRXP_PICK_Fizzcrank Spare Parts|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 11712,1 --Fizzcrank Mechagnome (6)
     .complete 11710,1 --Fizzcrank Spare Parts (15)
     .mob Fizzcrank Mechagnome
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along233
+    #label Along230
     .goto 114,58.18,18.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Crafty Wobblesprocket|r
     .accept 11645 >>Accept Dirty, Stinkin' Snobolds!
     .target Crafty Wobblesprocket
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along235
+    #completewith Along232
     >>As you go: Pick up |cRXP_PICK_Crafty's Stuff|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 11645,1 --Crafty's Stuff (1)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
@@ -1702,7 +1689,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 11673 >>Accept Get Me Outa Here!
     .target Bonker Togglevolt
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along235
+    #label Along232
     .goto 114,53.84,13.85
     >>Bonker Togglevolt escorted to safety.
     .complete 11673,1 --Bonker Togglevolt escorted to safety.
@@ -1714,7 +1701,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>Pick up |cRXP_PICK_Crafty's Stuff|r from the ground
     .complete 11645,1 --Crafty's Stuff (1)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along238
+    #completewith Along235
     >>As you go: Pick up |cRXP_PICK_Fizzcrank Spare Parts|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 11710,1 --Fizzcrank Spare Parts (15)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
@@ -1723,23 +1710,23 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .turnin 11673 >>Turn in Get Me Outa Here!
     .target Fizzcrank Fullthrottle
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along238
+    #completewith Along235
     >>As you go: Kill |cRXP_ENEMY_Fizzcrank Mechagnomes|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11712,1 --Fizzcrank Mechagnome (6)
     .mob Fizzcrank Mechagnome
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along238
+    #label Along235
     .goto 114,58.18,18.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Crafty Wobblesprocket|r
     .turnin 11645 >>Turn in Dirty, Stinkin' Snobolds!
     .accept 11650 >>Accept Just a Few More Things...
     .target Crafty Wobblesprocket
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along239
+    #completewith Along236
     >>As you go: Pick up |cRXP_PICK_Crafty's Tools|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 11650,1 --Crafty's Tools (1)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along239
+    #label Along236
     #loop
     .goto 114,64.58,22.58,0
     .goto 114,64.58,22.58,40,0
@@ -1763,6 +1750,13 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Crafty Wobblesprocket
     .isQuestTurnedIn 11729 --any of: The Ultrasonic Screwdriver
     .xp <68,1
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along243
+    >>As you go: Kill |cRXP_ENEMY_Sentry-bot 57-Ks|r, |cRXP_ENEMY_Defendo-tank 66Ds|r and |cRXP_ENEMY_Scavenge-bot 004-A8s|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -11730,1 --Sentry-bot 57-K (8)
+    .mob Sentry-bot 57-K
+    .mob Defendo-tank 66D
+    .mob Scavenge-bot 004-A8
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 114,57.51,18.61
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mordle Cogspinner|r
@@ -1788,6 +1782,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 11650,1 --Crafty's Tools (1)
     .mob Max Blasto
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along243
     .goto 114,65.50,17.60
     >>Kill |cRXP_ENEMY_ED-210|r
     .complete 11788,2 --ED-210 slain (1)
@@ -1845,7 +1840,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 11698 >>Accept Might As Well Wipe Out the Scourge
     .target Bixie Wrenchshanker
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along255
+    #completewith Along252
     >>As you go: Kill |cRXP_ENEMY_Cult Plaguebringers|r, |cRXP_ENEMY_Doctor Razorgrins|r, |cRXP_ENEMY_Lich-Lord Chillwinters|r and |cRXP_ENEMY_Talramas Abominations|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11698,1 --Cult Plaguebringer (8)
     .mob Cult Plaguebringer
@@ -1874,7 +1869,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Doctor Razorgrin
     .mob Festering Ghoul
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along255
+    #label Along252
     .goto 114,69.93,14.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tinky Wickwhistle|r
     .turnin 11699 >>Turn in I'm Stuck in this Damned Cage... But Not For Long!
@@ -2154,7 +2149,7 @@ step
     .accept 11561 >>Accept Them!
     .target Brglmurgl
 step
-    #completewith Along313
+    #completewith Along310
     >>As you go: Kill |cRXP_ENEMY_Winterfin Shorestrikers|r, |cRXP_ENEMY_Winterfin Oracles|r and |cRXP_ENEMY_Winterfin Warriors|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11561,1 --Winterfin Shorestriker (8)
     .mob Winterfin Shorestriker
@@ -2268,7 +2263,7 @@ step
     .accept 11570 >>Accept Escape from the Winterfin Caverns
     .target Lurgglbr
 step
-    #label Along313
+    #label Along310
     .goto 114,41.35,16.29
     >>Escort Lurgglbr to safety
     .complete 11570,1 --Escort Lurgglbr to safety

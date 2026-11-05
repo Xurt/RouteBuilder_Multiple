@@ -835,24 +835,18 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Stillpine the Younger
     .isQuestTurnedIn 9560,9562 --any of: Beasts of the Apocalypse!, Murlocs... Why Here? Why Now?
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 97,47.40,14.12
-    >>Kill |cRXP_ENEMY_Chieftain Oomooroo|r
-    .complete 9573,1 --Chieftain Oomooroo slain (1)
-    .mob Chieftain Oomooroo
-    .isOnQuest 9573
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 97,47.89,15.34,0
     .goto 97,47.89,15.34,40,0
-    .goto 97,48.10,12.28,40,0
+    .goto 97,48.87,12.01,40,0
+    >>Kill |cRXP_ENEMY_Chieftain Oomooroo|r
     >>Kill |cRXP_ENEMY_Crazed Wildkins|r
-    .complete 9573,2 --Crazed Wildkin slain (9)
-    .mob Crazed Wildkin
-    .isOnQuest 9573
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 97,49.95,12.81
     >>Kill |cRXP_ENEMY_The Kurken|r and loot |cRXP_LOOT_The Kurken's Hide|r
+    .complete -9573,1 --Chieftain Oomooroo slain (1)
+    .complete -9573,2 --Crazed Wildkin slain (9)
     .complete 9570,1 --The Kurken's Hide (1)
+    .mob Chieftain Oomooroo
+    .mob Crazed Wildkin
     .mob The Kurken
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 97,46.97,22.27

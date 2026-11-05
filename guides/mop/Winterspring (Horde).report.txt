@@ -1,5 +1,5 @@
 Winterspring - Horde - part 1 of 2, planned from level 50
-Guide "50-55 Winterspring" in group "Zone Routes (Horde)": this part has 197 steps, 155 stops
+Guide "50-55 Winterspring" in group "Zone Routes (Horde)": this part has 196 steps, 153 stops
 Written to guides/mop/Winterspring (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -51,7 +51,7 @@ The check passes at once if you are there; if you are a little behind the predic
   level 50 for Meet with Sunwalker Atohmo (Tauren Paladin/BloodElf Paladin)
   level 51 for A Taste for Bear
   level 53 for Razor Beak and Antlers Pointy
-3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 3 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 13 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 

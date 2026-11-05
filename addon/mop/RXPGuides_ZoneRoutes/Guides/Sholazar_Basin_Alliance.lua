@@ -1123,6 +1123,11 @@ step
     .isQuestTurnedIn 12578 --any of: The Angry Gorloc
     .xp <76,1
 step
+    #completewith Along150
+    >>As you go: Loot the |cRXP_PICK_Mosswalker Possesions|r for |cRXP_LOOT_Lifeblood Shard|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -12579,1 --Lifeblood Shard (10)
+step
+    #label Along150
     #loop
     .goto 119,73.60,49.45,0
     .goto 119,73.60,49.45,40,0

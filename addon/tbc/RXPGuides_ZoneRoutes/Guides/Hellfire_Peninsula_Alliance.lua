@@ -1229,33 +1229,20 @@ step
     .isQuestTurnedIn 10146 --any of: Mission: The Murketh and Shaadraz Gateways
 step
     #loop
-    .goto 1944,73.93,15.15,0
+    .goto 1944,72.22,24.10,0
+    .goto 1944,72.22,24.10,40,0
+    .goto 1944,71.95,14.79,40,0
+    .goto 1944,73.38,11.48,40,0
     .goto 1944,73.93,15.15,40,0
-    .goto 1944,73.39,11.50,40,0
     >>Kill |cRXP_ENEMY_Gan'arg Peons|r
-    .complete 10163,1 --Gan'arg Peon slain (20)
-    .mob Gan'arg Peon
-    .isOnQuest 10163
-step
-    #loop
-    .goto 1944,74.02,10.50,0
-    .goto 1944,74.02,10.50,40,0
-    .goto 1944,71.70,10.56,40,0
-    .goto 1944,71.18,22.67,40,0
-    .goto 1944,73.27,24.20,40,0
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mo'arg Overseer|r
-    .complete 10163,2 --Mo'arg Overseer (5)
-    .target Mo'arg Overseer
-    .isOnQuest 10163
-step
-    #loop
-    .goto 1944,74.24,15.11,0
-    .goto 1944,74.24,15.11,40,0
-    .goto 1944,71.49,17.41,40,0
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fel Cannon|r
-    .complete 10163,3 --Fel Cannon Destroyed (5)
+    .complete -10163,1 --Gan'arg Peon slain (20)
+    .complete -10163,2 --Mo'arg Overseer (5)
+    .complete -10163,3 --Fel Cannon Destroyed (5)
+    .mob Gan'arg Peon
+    .target Mo'arg Overseer
     .target Fel Cannon
-    .isOnQuest 10163
 step
     .goto 1944,79.34,33.86
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wing Commander Gryphongar|r
@@ -1281,20 +1268,16 @@ step
     .target Field Marshal Brock
     .isQuestTurnedIn 10382 --any of: Go to the Front
 step
-    .goto 1944,64.35,30.93
-    >>Kill |cRXP_ENEMY_Razorsaw|r
-    .complete 10394,2 --Razorsaw slain (1)
-    .mob Razorsaw
-    .isOnQuest 10394
-step
     #loop
-    .goto 1944,63.39,32.37,0
-    .goto 1944,63.39,32.37,40,0
+    .goto 1944,65.68,31.67,0
     .goto 1944,65.68,31.67,40,0
+    .goto 1944,64.17,31.91,40,0
+    >>Kill |cRXP_ENEMY_Razorsaw|r
     >>Kill |cRXP_ENEMY_Gan'arg Servants|r
-    .complete 10394,1 --Gan'arg Servant slain (10)
+    .complete -10394,2 --Razorsaw slain (1)
+    .complete -10394,1 --Gan'arg Servant slain (10)
+    .mob Razorsaw
     .mob Gan'arg Servant
-    .isOnQuest 10394
 step
     .goto 1944,68.29,28.55
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Field Marshal Brock|r
@@ -1331,20 +1314,12 @@ step
 step
     .goto 1944,53.09,26.47
     >>Kill |cRXP_ENEMY_Warbringer Arix'Amal|r
-    .complete 10397,1 --Warbringer Arix'Amal slain (1)
-    .mob Warbringer Arix'Amal
-    .isOnQuest 10397
-step
-    .goto 1944,53.09,26.47
     >>Kill |cRXP_ENEMY_Warbringer Arix'Amal|r and loot |cRXP_LOOT_Burning Legion Gate Key|r
-    .complete 10397,3 --Burning Legion Gate Key (1)
-    .mob Warbringer Arix'Amal
-    .isOnQuest 10397
-step
-    .goto 1944,53.04,27.72
     >>Click the |cRXP_PICK_Forge Camp: Portal Glyph|r
-    .complete 10397,2 --Close Burning Legion Gate
-    .isOnQuest 10397
+    .complete -10397,1 --Warbringer Arix'Amal slain (1)
+    .complete -10397,3 --Burning Legion Gate Key (1)
+    .complete -10397,2 --Close Burning Legion Gate
+    .mob Warbringer Arix'Amal
 step
     .goto 1944,68.29,28.55
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Field Marshal Brock|r

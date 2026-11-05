@@ -330,7 +330,7 @@ step
     .target Helen Fairchild
     .home >>Set your Hearthstone to Helen Fairchild's inn
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along60
+    #completewith Along59
     >>As you go: Pick up |cRXP_PICK_Spotted Hippogryph Down|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 11271,1 --Spotted Hippogryph Down (1)
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
@@ -434,26 +434,21 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 117,67.25,23.90,0
     .goto 117,67.25,23.90,40,0
-    .goto 117,68.44,28.21,40,0
+    .goto 117,69.66,23.25,40,0
+    .goto 117,67.95,29.19,40,0
     >>Kill |cRXP_ENEMY_Iron Rune Binders|r and |cRXP_ENEMY_Iron Rune Stonecallers|r. Loot them for |cRXP_LOOT_Book of Runes - Chapter 3|r
     >>Kill |cRXP_ENEMY_Iron Rune Binders|r and |cRXP_ENEMY_Iron Rune Stonecallers|r. Loot them for |cRXP_LOOT_Book of Runes - Chapter 2|r
     >>Kill |cRXP_ENEMY_Iron Rune Binders|r and |cRXP_ENEMY_Iron Rune Stonecallers|r. Loot them for |cRXP_LOOT_Book of Runes - Chapter 1|r
+    >>Interact with |cRXP_FRIENDLY_Stone Giants|r
     .collect 33780,1,11350,1 --Book of Runes - Chapter 3 (1)
     .collect 33779,1,11350,1 --Book of Runes - Chapter 2 (1)
     .collect 33778,1,11350,1 --Book of Runes - Chapter 1 (1)
+    .complete 11365,1 --Stone Giant (4)
     .mob Iron Rune Binder
     .mob Iron Rune Stonecaller
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 117,69.77,29.82,0
-    .goto 117,69.77,29.82,40,0
-    .goto 117,68.18,30.54,40,0
-    .goto 117,71.95,23.22,40,0
-    >>Interact with |cRXP_FRIENDLY_Stone Giants|r
-    .complete 11365,1 --Stone Giant (4)
     .target Stone Giant
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along60
+    #label Along59
     .goto 117,49.32,11.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nokoma Snowseer|r
     .turnin 11281 >>Turn in Mimicking Nature's Call
@@ -470,29 +465,18 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 11366 >>Accept The Lodestone
     .target Sage Edan
 step
-    #completewith Along63
-    >>As you go: Kill |cRXP_ENEMY_Scarlet Ivies|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 11315,1 --Scarlet Ivy slain (8)
-    .mob Scarlet Ivy
-step
-    #label Along63
     #loop
-    .goto 117,52.03,26.05,0
-    .goto 117,52.03,26.05,40,0
-    .goto 117,51.68,27.61,40,0
+    .goto 117,52.47,27.59,0
+    .goto 117,52.47,27.59,40,0
+    .goto 117,51.00,27.60,40,0
     >>Interact with |cRXP_FRIENDLY_Chill Nymphs|r
-    .complete 11314,1 --Chill Nymph (7)
-    .target Chill Nymph
-step
-    #loop
-    .goto 117,51.80,27.60,0
-    .goto 117,51.80,27.60,40,0
-    .goto 117,51.20,28.80,40,0
     >>Kill |cRXP_ENEMY_Scarlet Ivies|r
+    .complete 11314,1 --Chill Nymph (7)
     .complete 11315,1 --Scarlet Ivy slain (8)
+    .target Chill Nymph
     .mob Scarlet Ivy
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along71
+    #completewith Along68
     >>As you go: Pick up |cRXP_PICK_Spotted Hippogryph Down|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 11271,1 --Spotted Hippogryph Down (1)
 step
@@ -504,26 +488,15 @@ step
     .accept 11319 >>Accept Seeds of the Blacksouled Keepers
     .target Lurielle
 step
-    #completewith Along66
-    >>As you go: Kill |cRXP_ENEMY_Thornvine Creepers|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 11316,1 --Thornvine Creeper slain (10)
-    .mob Thornvine Creeper
-step
-    #label Along66
     #loop
-    .goto 117,54.40,17.97,0
-    .goto 117,54.40,17.97,40,0
-    .goto 117,53.37,16.72,40,0
+    .goto 117,54.51,17.57,0
+    .goto 117,54.51,17.57,40,0
+    .goto 117,52.92,17.78,40,0
     >>Interact with |cRXP_FRIENDLY_Spores|r
-    .complete 11319,1 --Spore (8)
-    .target Spore
-step
-    #loop
-    .goto 117,54.73,17.19,0
-    .goto 117,54.73,17.19,40,0
-    .goto 117,52.53,16.78,40,0
     >>Kill |cRXP_ENEMY_Thornvine Creepers|r
+    .complete 11319,1 --Spore (8)
     .complete 11316,1 --Thornvine Creeper slain (10)
+    .target Spore
     .mob Thornvine Creeper
 step
     .goto 117,61.48,22.86
@@ -544,7 +517,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 11367 >>Accept Demolishing Megalith
     .target Sage Edan
 step
-    #label Along71
+    #label Along68
     .goto 117,53.82,17.97
     >>Kill |cRXP_ENEMY_Keeper Witherleaf|r
     .complete 11428,1 --Keeper Witherleaf slain (1)
@@ -592,7 +565,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestComplete 11367
     .target Sage Edan
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along79
+    #completewith Along76
     >>As you go: Kill |cRXP_ENEMY_Winterskorn Tribesmans|r, |cRXP_ENEMY_Winterskorn Woodsmans|r, |cRXP_ENEMY_Winterskorn Shield-Maidens|r and |cRXP_ENEMY_Winterskorn Warriors|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11257,1 --Winterskorn Tribesman (8)
     .mob Winterskorn Tribesman
@@ -608,7 +581,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Skorn Tower SW Bunny
     .mob Halfdan the Ice-Hearted
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along79
+    #label Along76
     .goto 117,47.10,36.80
     >>Kill |cRXP_ENEMY_Skorn Tower SE Bunny|r
     >>Kill |cRXP_ENEMY_Skorn Tower E Bunny|r
@@ -759,7 +732,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .turnin 11298 >>Turn in What's in That Brew?
     .target Apothecary Malthus
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along103
+    #completewith Along100
     >>As you go: Kill |cRXP_ENEMY_Unstable Mur'ghouls|r, |cRXP_ENEMY_Mur'ghoul Flesheaters|r, |cRXP_ENEMY_Servitor Shades|r and |cRXP_ENEMY_Necroteches|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11397,1 --Unstable Mur'ghoul (8)
     .mob Unstable Mur'ghoul
@@ -777,7 +750,7 @@ step
     .complete 11422,1 --Rotgill's Trident (1)
     .mob Rotgill
 step
-    #label Along103
+    #label Along100
     .goto 117,19.78,22.22
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Old Icefin|r
     .turnin 11422 >>Turn in Trident of the Son
@@ -1042,6 +1015,13 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 11308 --any of: Time for Cleanup
     .xp <68,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along143
+    >>As you go: Kill |cRXP_ENEMY_Shoveltusks|r, |cRXP_ENEMY_Shoveltusk Stags|r and |cRXP_ENEMY_Shoveltusk Calfs|r. Loot them for |cRXP_LOOT_Shoveltusk Ligament|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -11309,1 --Shoveltusk Ligament (6)
+    .mob Shoveltusk
+    .mob Shoveltusk Stag
+    .mob Shoveltusk Calf
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 117,52.35,73.76
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tBuy |cRXP_LOOT_Fresh Pound of Flesh|r from |cRXP_FRIENDLY_Anton|r
     .complete 11309,2 --Fresh Pound of Flesh (1)
@@ -1100,6 +1080,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .turnin 11423 >>Turn in The Enemy's Legacy
     .target Scribe Seguine
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along143
     .goto 117,67.45,60.58
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ranger Captain Areiel|r
     .turnin 12482 >>Turn in Against Nifflevar
@@ -1239,7 +1220,7 @@ step
     .accept 11455 >>Accept The Fragrance of Money
     .target Handsome Terry
 step
-    #completewith Along170
+    #completewith Along167
     >>As you go: Kill |cRXP_ENEMY_Rabid Brown Bears|r. Loot them for |cRXP_LOOT_Bear Musk|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11455,1 --Bear Musk (4)
     .mob Rabid Brown Bear
@@ -1265,7 +1246,7 @@ step
     .complete 11466,1 --Jack Adams' Debt (1)
     .mob Jack Adams
 step
-    #label Along170
+    #label Along167
     .goto 117,36.32,80.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Taruk|r
     .turnin 11466 >>Turn in Jack Likes His Drink
@@ -1501,6 +1482,15 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 11261 --any of: The Conqueror of Skorn!
     .xp <68,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along202
+    >>As you go: Kill |cRXP_ENEMY_Gjalerbron Warriors|r. Kill |cRXP_ENEMY_Gjalerbron Rune-Casters|r. Kill |cRXP_ENEMY_Gjalerbron Sleep-Watchers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -11263,1 --Gjalerbron Warrior slain (15)
+    .complete -11263,2 --Gjalerbron Rune-Caster slain (8)
+    .complete -11263,3 --Gjalerbron Sleep-Watcher slain (8)
+    .mob Gjalerbron Warrior
+    .mob Gjalerbron Rune-Caster
+    .mob Gjalerbron Sleep-Watcher
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 117,38.47,8.39,0
     .goto 117,38.47,8.39,40,0
@@ -1512,6 +1502,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Gjalerbron Warrior
     .isOnQuest 11265
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along202
     #loop
     .goto 117,35.98,11.15,0
     .goto 117,35.98,11.15,40,0
@@ -1526,30 +1517,17 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 117,35.73,11.59,0
     .goto 117,35.73,11.59,40,0
-    .goto 117,38.90,9.24,40,0
+    .goto 117,33.07,11.84,40,0
+    .goto 117,38.47,8.39,40,0
     >>Kill |cRXP_ENEMY_Gjalerbron Warriors|r
-    .complete 11263,1 --Gjalerbron Warrior slain (15)
-    .mob Gjalerbron Warrior
-    .isOnQuest 11263
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 117,34.88,11.78,0
-    .goto 117,34.88,11.78,40,0
-    .goto 117,35.00,15.08,40,0
     >>Kill |cRXP_ENEMY_Gjalerbron Rune-Casters|r
-    .complete 11263,2 --Gjalerbron Rune-Caster slain (8)
-    .mob Gjalerbron Rune-Caster
-    .isOnQuest 11263
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 117,35.98,11.15,0
-    .goto 117,35.98,11.15,40,0
-    .goto 117,33.05,10.05,40,0
-    .goto 117,39.20,9.66,40,0
     >>Kill |cRXP_ENEMY_Gjalerbron Sleep-Watchers|r
-    .complete 11263,3 --Gjalerbron Sleep-Watcher slain (8)
+    .complete -11263,1 --Gjalerbron Warrior slain (15)
+    .complete -11263,2 --Gjalerbron Rune-Caster slain (8)
+    .complete -11263,3 --Gjalerbron Sleep-Watcher slain (8)
+    .mob Gjalerbron Warrior
+    .mob Gjalerbron Rune-Caster
     .mob Gjalerbron Sleep-Watcher
-    .isOnQuest 11263
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 117,35.03,10.43,0
@@ -1607,12 +1585,23 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 11265 --any of: Of Keys and Cages
     .xp <68,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along215
+    >>As you go: Kill |cRXP_ENEMY_Putrid Wights|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -11268,3 --Putrid Wight slain (2)
+    .mob Putrid Wight
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along213
+    >>As you go: Kill |cRXP_ENEMY_Fearsome Horrors|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -11268,2 --Fearsome Horror slain (4)
+    .mob Fearsome Horror
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 117,38.79,13.08
     >>Kill |cRXP_ENEMY_Necro Overlord Mezhen|r
     .complete 11264,1 --Necro Overlord Mezhen slain (1)
     .mob Necro Overlord Mezhen
     .isOnQuest 11264
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along213
     .goto 117,38.79,13.08
     >>Kill |cRXP_ENEMY_Necro Overlord Mezhen|r and loot |cRXP_LOOT_Mezhen's Writings|r. Use it to start the quest
     .collect 34091,1,11453 --Mezhen's Writings (1)
@@ -1628,6 +1617,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Queen Angerboda
     .isOnQuest 11453
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along215
     .goto 117,40.38,7.02
     >>Kill |cRXP_ENEMY_Necrolord|r and loot |cRXP_LOOT_Awakening Rod|r
     .collect 34083,1,11433,1 --Awakening Rod (1)
@@ -1641,23 +1631,16 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isOnQuest 11268
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 117,36.82,15.98,0
-    .goto 117,36.82,15.98,40,0
-    .goto 117,33.38,10.61,40,0
-    >>Kill |cRXP_ENEMY_Deathless Watchers|r
-    .complete 11268,1 --Deathless Watcher slain (10)
-    .mob Deathless Watcher
-    .isOnQuest 11268
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 117,37.12,14.94,0
-    .goto 117,37.12,14.94,40,0
+    .goto 117,36.09,7.40,0
     .goto 117,36.09,7.40,40,0
     .goto 117,33.58,9.13,40,0
+    .goto 117,37.12,14.94,40,0
+    >>Kill |cRXP_ENEMY_Deathless Watchers|r
     >>Kill |cRXP_ENEMY_Fearsome Horrors|r
-    .complete 11268,2 --Fearsome Horror slain (4)
+    .complete -11268,1 --Deathless Watcher slain (10)
+    .complete -11268,2 --Fearsome Horror slain (4)
+    .mob Deathless Watcher
     .mob Fearsome Horror
-    .isOnQuest 11268
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 117,38.19,13.21,0
@@ -1862,23 +1845,16 @@ step
     .isQuestTurnedIn 11530 --The Shield of the Aesirites
     .isQuestTurnedIn 11567 --The Ancient Armor of the Kvaldir
 step
-    .goto 117,57.65,77.75
-    >>Kill |cRXP_ENEMY_Fengir the Disgraced|r
-    .complete 11568,1 --Fengir the Disgraced slain (1)
-    .mob Fengir the Disgraced
-    .isOnQuest 11568
-step
     .goto 117,59.28,76.87
+    >>Kill |cRXP_ENEMY_Fengir the Disgraced|r
     >>Kill |cRXP_ENEMY_Rodin the Reckless|r
-    .complete 11568,2 --Rodin the Reckless slain (1)
-    .mob Rodin the Reckless
-    .isOnQuest 11568
-step
-    .goto 117,59.71,79.39
     >>Kill |cRXP_ENEMY_Isuldof Iceheart|r
-    .complete 11568,3 --Isuldof Iceheart slain (1)
+    .complete -11568,1 --Fengir the Disgraced slain (1)
+    .complete -11568,2 --Rodin the Reckless slain (1)
+    .complete -11568,3 --Isuldof Iceheart slain (1)
+    .mob Fengir the Disgraced
+    .mob Rodin the Reckless
     .mob Isuldof Iceheart
-    .isOnQuest 11568
 step
     .goto 117,61.95,80.04
     >>Kill |cRXP_ENEMY_Windan of the Kvaldir|r

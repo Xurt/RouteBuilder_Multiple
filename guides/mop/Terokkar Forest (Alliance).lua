@@ -662,25 +662,16 @@ step
     .complete 10881,3 --Scroll of Atalor (1)
     .isOnQuest 10881
 step
-    #completewith Along64
-    >>As you go: Kill |cRXP_ENEMY_Spirit Ravens|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 10848,3 --Spirit Raven slain (2)
-    .mob Spirit Raven
-step
-    #label Along64
-    .goto 108,29.66,51.68
-    >>Open the |cRXP_PICK_Cabal Chest|r. Loot it for |cRXP_LOOT_Gavel of K'alen|r
-    .complete 10881,2 --Gavel of K'alen (1)
-    .isOnQuest 10881
-step
     #loop
     .goto 108,28.83,52.39,0
     .goto 108,28.83,52.39,40,0
     .goto 108,27.32,55.48,40,0
     .goto 108,26.18,59.35,40,0
+    >>Open the |cRXP_PICK_Cabal Chest|r. Loot it for |cRXP_LOOT_Gavel of K'alen|r
     >>Kill |cRXP_ENEMY_Deathtalon Spirits|r
     >>Kill |cRXP_ENEMY_Spirit Ravens|r
     >>Kill |cRXP_ENEMY_Screeching Spirits|r
+    .complete -10881,2 --Gavel of K'alen (1)
     .complete 10848,1 --Deathtalon Spirit slain (4)
     .complete 10848,3 --Spirit Raven slain (2)
     .complete 10848,2 --Screeching Spirit slain (4)
@@ -709,14 +700,14 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 10002 >>Accept The Firewing Liaison
     .target Theloria Shadecloak
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along68
+    #completewith Along67
     >>As you go: Kill |cRXP_ENEMY_Bonechewer Backbreakers|r. Kill |cRXP_ENEMY_Bonechewer Devastators|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10007,2 --Bonechewer Backbreaker slain (6)
     .complete 10007,1 --Bonechewer Devastator slain (10)
     .mob Bonechewer Backbreaker
     .mob Bonechewer Devastator
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along68
+    #label Along67
     .goto 108,67.72,53.43
     >>Click the |cRXP_PICK_Fel Orc Plans|r
     .accept 10012 >>Accept Fel Orc Plans
@@ -953,7 +944,7 @@ step
     .accept 10030 >>Accept Recover the Bones
     .target Soolaveen
 step
-    #completewith Along110
+    #completewith Along109
     >>As you go: Pick up |cRXP_PICK_Restless Bones|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 10030,1 --Restless Bones (10)
 step
@@ -982,7 +973,7 @@ step
     .accept 10887 >>Accept Escaping the Tomb
     .target Akuno
 step
-    #label Along110
+    #label Along109
     .goto 108,33.77,51.62
     >>Akuno escorted
     .complete 10887,1 --Akuno escorted
@@ -1074,18 +1065,18 @@ step
     .mob Freed Sha'tar Warrior
     .mob Netherweb Victim
 step
-    #completewith Along124
+    #completewith Along123
     >>As you go: Kill |cRXP_ENEMY_Wood Mites|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10896,1 --Wood Mite slain (25)
     .mob Wood Mite
 step
-    #label Along124
+    #label Along123
     .goto 108,53.85,72.38
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Skywing|r
     .accept 10898 >>Accept Skywing
     .target Skywing
 step
-    #completewith Along126
+    #completewith Along125
     >>As you go: Click the |cRXP_PICK_Violet Signal Fire|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10874,3 --Violet Signal Fire
 step
@@ -1095,7 +1086,7 @@ step
     .complete 10874,4 --Bloodstone Signal Fire
     .complete 10874,2 --Emerald Signal Fire
 step
-    #label Along126
+    #label Along125
     .goto 108,55.66,69.49
     >>Escort Skywing
     .complete 10898,1 --Escort Skywing
@@ -1400,12 +1391,12 @@ step
     .accept 10879 >>Accept The Skettis Offensive
     .target Defender Grashna
 step
-    #completewith Along176
+    #completewith Along175
     >>As you go: Kill |cRXP_ENEMY_Minion of Terokks|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10879,2 --Minion of Terokk slain (8)
     .mob Minion of Terokk
 step
-    #label Along176
+    #label Along175
     .goto 111,51.62,20.69
     >>Attack thwarted
     .complete 10879,3 --Attack thwarted
@@ -1774,15 +1765,11 @@ step
 step
     .goto 108,69.75,81.81
     >>Kill |cRXP_ENEMY_Talonpriest Skizzik|r
-    .complete 11005,2 --Talonpriest Skizzik slain (1)
-    .mob Talonpriest Skizzik
-    .isOnQuest 11005
-step
-    .goto 108,69.00,78.54
     >>Kill |cRXP_ENEMY_Talonpriest Ishaal|r
-    .complete 11005,1 --Talonpriest Ishaal slain (1)
+    .complete -11005,2 --Talonpriest Skizzik slain (1)
+    .complete -11005,1 --Talonpriest Ishaal slain (1)
+    .mob Talonpriest Skizzik
     .mob Talonpriest Ishaal
-    .isOnQuest 11005
 step
     .goto 108,70.10,74.40
     >>Kill |cRXP_ENEMY_Talonpriest Zellek|r

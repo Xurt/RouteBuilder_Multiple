@@ -49,22 +49,15 @@ step
     .xp <19,1
 step
     #loop
-    .goto 25,29.54,67.65,0
-    .goto 25,29.54,67.65,40,0
-    .goto 25,31.49,69.84,40,0
-    >>Kill |cRXP_ENEMY_Infested Bears|r
-    .complete 28115,1 --Infested Bear slain (8)
-    .mob Infested Bear
-    .isOnQuest 28115
-step
-    #loop
-    .goto 25,31.44,69.94,0
-    .goto 25,31.44,69.94,40,0
+    .goto 25,29.57,67.67,0
     .goto 25,29.57,67.67,40,0
+    .goto 25,31.44,69.94,40,0
+    >>Kill |cRXP_ENEMY_Infested Bears|r
     >>Kill |cRXP_ENEMY_Creeper Eggs|r. Loot them for |cRXP_LOOT_Creeper Egg|r
-    .complete 28114,1 --Creeper Egg (60)
+    .complete -28115,1 --Infested Bear slain (8)
+    .complete -28114,1 --Creeper Egg (60)
+    .mob Infested Bear
     .mob Creeper Egg
-    .isOnQuest 28114
 step
     .goto 25,33.28,73.63
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spider-Handler Sarus|r
@@ -163,7 +156,7 @@ step
     .accept 28324 >>Accept Studies in Lethality
     .target Serge Hinott
 step
-    #completewith Along17
+    #completewith Along16
     >>As you go: Pick up |cRXP_PICK_Used Blight Canister|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 28325,1 --Used Blight Canister (8)
 step
@@ -172,7 +165,7 @@ step
     .turnin 28344 >>Turn in Can You Smell What the Lok'tar is Cooking?
     .target Kingslayer Orkus
 step
-    #label Along17
+    #label Along16
     .goto 25,49.28,71.16
     >>Interact with |cRXP_FRIENDLY_Blight Slime|r
     .complete 28324,1 --Blight Slime

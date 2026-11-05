@@ -1036,19 +1036,14 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Lyros Swiftwind
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 77,63.21,22.98,0
-    .goto 77,63.21,22.98,40,0
-    .goto 77,62.89,20.17,40,0
+    .goto 77,63.76,21.66,0
+    .goto 77,63.76,21.66,40,0
+    .goto 77,63.02,19.65,40,0
     >>Kill |cRXP_ENEMY_Irontree Choppers|r
-    .complete 28382,1 --Irontree Chopper slain (8)
-    .mob Irontree Chopper
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 77,61.89,20.93,0
-    .goto 77,61.89,20.93,40,0
-    .goto 77,64.24,20.88,40,0
     >>Interact with |cRXP_FRIENDLY_Talonbranch Wisps|r
+    .complete 28382,1 --Irontree Chopper slain (8)
     .complete 28383,1 --Talonbranch Wisp (5)
+    .mob Irontree Chopper
     .target Talonbranch Wisp
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 77,61.91,26.66
@@ -1083,11 +1078,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 28385 >>Accept Oil and Irony
     .target Alton Redding
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along143
+    #completewith Along142
     >>As you go: Loot the |cRXP_PICK_Irontree Explosives|r for |cRXP_LOOT_Irontree Explosives|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28386,1 --Irontree Explosives (8)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along143
+    #label Along142
     .goto 77,60.49,22.38
     >>Click the |cRXP_PICK_Master Control Pump|r
     .turnin 28385 >>Turn in Oil and Irony

@@ -1,5 +1,5 @@
 Stonetalon Mountains - Horde - part 1 of 3, planned from level 26
-Guide "26-30 Stonetalon Mountains" in group "Zone Routes (Horde)": this part has 84 steps, 79 stops
+Guide "26-30 Stonetalon Mountains" in group "Zone Routes (Horde)": this part has 81 steps, 75 stops
 Written to guides/mop/Stonetalon Mountains (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -35,6 +35,7 @@ Step order kept from the last build (locks folder): 7 steps kept, 79 new ones sl
   everyone (quests that depend on other zones): 57 more tasks; their whole route comes to 11,016 yd; ends at level 26.2
   Tauren (quests that depend on other zones): 7 more tasks; their whole route comes to 13,523 yd; ends at level 26.2
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (45)
 ------------------------
@@ -157,7 +158,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Stonetalon Mountains - Horde - part 2 of 3, planned from level 29
-Guide "26-30 Stonetalon Mountains" in group "Zone Routes (Horde)": this part has 72 steps, 70 stops
+Guide "26-30 Stonetalon Mountains" in group "Zone Routes (Horde)": this part has 69 steps, 66 stops
 Written to guides/mop/Stonetalon Mountains (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -178,6 +179,7 @@ Step order kept from the last build (locks folder): 0 steps kept, 72 new ones sl
   everyone: 2 tasks, 1,739 yd on foot; ends at level 29.0
   everyone (quests that depend on other zones): 70 more tasks; their whole route comes to 12,478 yd; ends at level 29.0
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (28)
 ------------------------

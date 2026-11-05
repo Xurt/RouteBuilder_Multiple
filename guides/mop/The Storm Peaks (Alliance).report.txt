@@ -1,5 +1,5 @@
 The Storm Peaks - Alliance
-Guide "78-80 The Storm Peaks" in group "Zone Routes (Alliance)": 247 steps, 213 stops
+Guide "78-80 The Storm Peaks" in group "Zone Routes (Alliance)": 240 steps, 205 stops
 Written to guides/mop/The Storm Peaks (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -78,7 +78,7 @@ Step order kept from the last build (locks folder): 289 steps kept, 10 new ones 
   everyone (quests that depend on other zones): 51 more tasks; their whole route comes to 61,049 yd; ends at level 80.0; 1 hearth; at its hardest you are 1.4 levels below the mobs
 Hearthstone: set at Warsmith Sigfinna (Warsmith Sigfinna's inn); 1 hearth step in the guide.
 4 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-18 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+19 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 6 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (101)

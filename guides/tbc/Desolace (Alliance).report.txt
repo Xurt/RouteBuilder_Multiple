@@ -1,5 +1,5 @@
 Desolace - Alliance - part 1 of 3, planned from level 31
-Guide "31-40 Desolace" in group "Zone Routes (Alliance)": this part has 35 steps, 29 stops
+Guide "31-40 Desolace" in group "Zone Routes (Alliance)": this part has 34 steps, 28 stops
 Written to guides/tbc/Desolace (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -131,7 +131,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Desolace - Alliance - part 3 of 3, planned from level 37
-Guide "31-40 Desolace" in group "Zone Routes (Alliance)": this part has 24 steps, 23 stops
+Guide "31-40 Desolace" in group "Zone Routes (Alliance)": this part has 24 steps, 22 stops
 Written to guides/tbc/Desolace (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -151,6 +151,7 @@ Step order kept from the last build (locks folder): 25 steps kept, 0 new ones sl
   everyone: 19 tasks, 10,897 yd on foot; ends at level 37.5
   everyone (quests that depend on other zones): 6 more tasks; their whole route comes to 11,389 yd; ends at level 37.5; at its hardest you are 1.8 levels below the mobs
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (9)
 -----------------------

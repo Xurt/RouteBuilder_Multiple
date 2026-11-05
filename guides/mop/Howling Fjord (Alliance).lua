@@ -100,6 +100,25 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 11237 >>Accept Gjalerbron Attack Plans
     .use 33289
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along19
+    >>As you go: Kill |cRXP_ENEMY_Gjalerbron Sleep-Watchers|r. Kill |cRXP_ENEMY_Gjalerbron Warriors|r. Kill |cRXP_ENEMY_Putrid Wights|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -11235,3 --Gjalerbron Sleep-Watcher slain (8)
+    .complete -11235,1 --Gjalerbron Warrior slain (15)
+    .complete -11239,3 --Putrid Wight slain (2)
+    .mob Gjalerbron Sleep-Watcher
+    .mob Gjalerbron Warrior
+    .mob Putrid Wight
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along15
+    >>As you go: Kill |cRXP_ENEMY_Fearsome Horrors|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -11239,2 --Fearsome Horror slain (4)
+    .mob Fearsome Horror
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along14
+    >>As you go: Kill |cRXP_ENEMY_Gjalerbron Rune-Casters|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -11235,2 --Gjalerbron Rune-Caster slain (8)
+    .mob Gjalerbron Rune-Caster
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 117,34.85,14.48,0
     .goto 117,34.85,14.48,40,0
@@ -124,6 +143,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Gjalerbron Warrior
     .isOnQuest 11231
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along14
     #loop
     .goto 117,33.38,10.61,0
     .goto 117,33.38,10.61,40,0
@@ -133,6 +153,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Deathless Watcher
     .isOnQuest 11239
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along15
     #loop
     .goto 117,38.31,13.14,0
     .goto 117,38.31,13.14,40,0
@@ -153,6 +174,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Fearsome Horror
     .isOnQuest 11239
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along17
+    >>As you go: Kill |cRXP_ENEMY_Gjalerbron Rune-Casters|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -11235,2 --Gjalerbron Rune-Caster slain (8)
+    .mob Gjalerbron Rune-Caster
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along17
     #loop
     .goto 117,38.19,13.21,0
     .goto 117,38.19,13.21,40,0
@@ -172,6 +199,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Gjalerbron Rune-Caster
     .isOnQuest 11235
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along19
     #loop
     .goto 117,35.03,10.43,0
     .goto 117,35.03,10.43,40,0
@@ -182,31 +210,21 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Gjalerbron Prisoner
     .isOnQuest 11231
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 117,35.98,11.15,0
-    .goto 117,35.98,11.15,40,0
-    .goto 117,33.05,10.05,40,0
-    .goto 117,39.20,9.66,40,0
-    >>Kill |cRXP_ENEMY_Gjalerbron Sleep-Watchers|r
-    .complete 11235,3 --Gjalerbron Sleep-Watcher slain (8)
-    .mob Gjalerbron Sleep-Watcher
-    .isOnQuest 11235
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Drop11237x1
     #loop
     .goto 117,35.73,11.59,0
     .goto 117,35.73,11.59,40,0
-    .goto 117,38.90,9.24,40,0
+    .goto 117,33.05,10.05,40,0
+    .goto 117,39.20,9.66,40,0
+    >>Kill |cRXP_ENEMY_Gjalerbron Sleep-Watchers|r
     >>Kill |cRXP_ENEMY_Gjalerbron Warriors|r
-    .complete 11235,1 --Gjalerbron Warrior slain (15)
-    .mob Gjalerbron Warrior
-    .isOnQuest 11235
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Drop11237x1
-    .goto 117,39.97,8.58
     >>Kill |cRXP_ENEMY_Putrid Wights|r
-    .complete 11239,3 --Putrid Wight slain (2)
+    .complete -11235,3 --Gjalerbron Sleep-Watcher slain (8)
+    .complete -11235,1 --Gjalerbron Warrior slain (15)
+    .complete -11239,3 --Putrid Wight slain (2)
+    .mob Gjalerbron Sleep-Watcher
+    .mob Gjalerbron Warrior
     .mob Putrid Wight
-    .isOnQuest 11239
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 117,61.10,2.00
     >>Kill |cRXP_ENEMY_Your Inner Turmoil|r
@@ -223,18 +241,18 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 11329 >>Accept I'll Try Anything!
     .target Christopher Sloan
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along26
+    #completewith Along24
     >>As you go: Kill |cRXP_ENEMY_Northern Barbfishes|r. Loot them for |cRXP_LOOT_Northern Barbfish|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11329,1 --Northern Barbfish (5)
     .mob Northern Barbfish
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along26
+    #label Along24
     .goto 117,62.60,16.82
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gil Grisert|r
     .accept 11269 >>Accept Down to the Wire
     .target Gil Grisert
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along29
+    #completewith Along27
     >>As you go: Pick up |cRXP_PICK_Spotted Hippogryph Down|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 11269,1 --Spotted Hippogryph Down (1)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
@@ -253,7 +271,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 11410 >>Accept The One That Got Away
     .target Christopher Sloan
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along29
+    #label Along27
     #loop
     .goto 117,57.07,17.46,0
     .goto 117,57.07,17.46,40,0
@@ -350,7 +368,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 11273 >>Accept The Human League
     .target Beltrand McSorf
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along46
+    #completewith Along44
     >>As you go: Kill |cRXP_ENEMY_Dragonflayer Tribesmans|r, |cRXP_ENEMY_Dragonflayer Death Weavers|r, |cRXP_ENEMY_Dragonflayer Thanes|r and |cRXP_ENEMY_Dragonflayer Harpooners|r. Loot them for |cRXP_LOOT_Dragonflayer Cage Key|r. |cRXP_WARN_Anything left is finished later|r
     .collect 33308,1,11255,1 --Dragonflayer Cage Key (1)
     .mob Dragonflayer Tribesman
@@ -358,7 +376,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Dragonflayer Thane
     .mob Dragonflayer Harpooner
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along46
+    #completewith Along44
     >>As you go: Pick up |cRXP_PICK_Harpoon Operation Manual|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 11420,1 --Harpoon Operation Manual (1)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
@@ -367,14 +385,14 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 11288 >>Accept The Shining Light
     .target Ares the Oathbound
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along46
+    #label Along44
     .goto 117,59.19,54.57
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pulroy the Archaeologist|r
     .turnin 11273 >>Turn in The Human League
     .accept 11274 >>Accept Zedd's Probably Dead
     .target Pulroy the Archaeologist
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along49
+    #completewith Along47
     >>As you go: Pick up |cRXP_PICK_Sacred Artifact|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 11288,1 --Sacred Artifact (1)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
@@ -406,7 +424,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Captured Valgarde Warrior
     .mob Captured Valgarde Paladin
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along49
+    #label Along47
     .goto 117,56.63,52.38
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zedd|r
     .turnin 11274 >>Turn in Zedd's Probably Dead
@@ -439,15 +457,15 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>Pick up |cRXP_PICK_Reagent Pouch|r from the ground
     .complete 11333,1 --Reagent Pouch (1)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along54
+    #completewith Along52
     >>As you go: Pick up |cRXP_PICK_Wyrmskull Tablet|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 11277,1 --Wyrmskull Tablet (10)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along54
+    #completewith Along52
     >>As you go: Pick up |cRXP_PICK_Harpoon Operation Manual|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 11420,1 --Harpoon Operation Manual (1)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along54
+    #label Along52
     .goto 117,59.34,55.42
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ares the Oathbound|r
     .turnin 11288 >>Turn in The Shining Light
@@ -461,11 +479,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>Pick up |cRXP_PICK_Wyrmskull Tablet|r from the ground
     .complete 11277,1 --Wyrmskull Tablet (10)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along56
+    #completewith Along54
     >>As you go: Pick up |cRXP_PICK_Dragonflayer Battle Plans|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 11290,1 --Dragonflayer Battle Plans (1)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along56
+    #label Along54
     .goto 117,56.94,53.75
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Glorenfeld|r
     .turnin 11277 >>Turn in The Depths of Depravity
@@ -675,12 +693,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 11218 >>Accept Danger! Explosives!
     .target Sapper Steelring
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along88
+    #completewith Along86
     >>As you go: Pick up |cRXP_PICK_Whisper Gulch Ore Fragment|r from the ground. Pick up |cRXP_PICK_Whisper Gulch Gem|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 11218,1 --Whisper Gulch Ore Fragment (6)
     .complete 11218,2 --Whisper Gulch Gem (18)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along88
+    #label Along86
     .goto 117,31.62,41.50
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Explorer Abigail|r
     .accept 11224 >>Accept Send Them Packing
@@ -879,19 +897,14 @@ step
     .target Lurielle
 step
     #loop
-    .goto 117,51.80,27.60,0
-    .goto 117,51.80,27.60,40,0
-    .goto 117,51.20,28.80,40,0
+    .goto 117,52.47,27.59,0
+    .goto 117,52.47,27.59,40,0
+    .goto 117,51.00,27.60,40,0
     >>Kill |cRXP_ENEMY_Scarlet Ivies|r
-    .complete 11315,1 --Scarlet Ivy slain (8)
-    .mob Scarlet Ivy
-step
-    #loop
-    .goto 117,51.68,27.61,0
-    .goto 117,51.68,27.61,40,0
-    .goto 117,52.03,26.05,40,0
     >>Interact with |cRXP_FRIENDLY_Chill Nymphs|r
+    .complete 11315,1 --Scarlet Ivy slain (8)
     .complete 11314,1 --Chill Nymph (7)
+    .mob Scarlet Ivy
     .target Chill Nymph
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 117,64.80,39.94
@@ -920,19 +933,14 @@ step
     .target Lurielle
 step
     #loop
-    .goto 117,54.73,17.19,0
-    .goto 117,54.73,17.19,40,0
-    .goto 117,52.53,16.78,40,0
+    .goto 117,54.51,17.57,0
+    .goto 117,54.51,17.57,40,0
+    .goto 117,52.92,17.78,40,0
     >>Kill |cRXP_ENEMY_Thornvine Creepers|r
-    .complete 11316,1 --Thornvine Creeper slain (10)
-    .mob Thornvine Creeper
-step
-    #loop
-    .goto 117,54.40,17.97,0
-    .goto 117,54.40,17.97,40,0
-    .goto 117,53.37,16.72,40,0
     >>Interact with |cRXP_FRIENDLY_Spores|r
+    .complete 11316,1 --Thornvine Creeper slain (10)
     .complete 11319,1 --Spore (8)
+    .mob Thornvine Creeper
     .target Spore
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 117,30.28,28.64
@@ -1072,7 +1080,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 11246 >>Accept Gruesome, But Necessary
     .target Westguard Sergeant
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along154
+    #completewith Along150
     >>As you go: Kill |cRXP_ENEMY_Winterskorn Tribesmans|r, |cRXP_ENEMY_Winterskorn Woodsmans|r, |cRXP_ENEMY_Winterskorn Shield-Maidens|r and |cRXP_ENEMY_Winterskorn Warriors|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11246,1 --Winterskorn Tribesman (8)
     .mob Winterskorn Tribesman
@@ -1093,7 +1101,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 11245,3 --Skorn Tower SW Bunny slain (1)
     .mob Skorn Tower SW Bunny
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along154
+    #label Along150
     .goto 117,47.10,36.80
     >>Kill |cRXP_ENEMY_Skorn Tower SE Bunny|r
     >>Kill |cRXP_ENEMY_Skorn Tower E Bunny|r
@@ -1347,11 +1355,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 11470 >>Accept There Exists No Honor Among Birds
     .target Hidalgo the Master Falconer
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along190
+    #completewith Along186
     >>As you go: Pick up |cRXP_PICK_Building Tools|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 11475,1 --Building Tools (1)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along190
+    #label Along186
     .goto 117,78.81,48.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Donny|r
     .accept 11477 >>Accept Out of My Element?
@@ -1403,7 +1411,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .turnin 11478 >>Turn in Outpost Over Yonder...
     .target Stanwad
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along198
+    #completewith Along194
     >>As you go: Kill |cRXP_ENEMY_Winterskorn Spearmans|r, |cRXP_ENEMY_Dragonflayer Warriors|r, |cRXP_ENEMY_Winterskorn Bonegrinders|r and |cRXP_ENEMY_Dragonflayer Rune-Seers|r. Loot them for |cRXP_LOOT_Steel Ribbing|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11484,2 --Steel Ribbing (1)
     .mob Winterskorn Spearman
@@ -1418,7 +1426,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>Pick up |cRXP_PICK_Large Barrel|r from the ground
     .complete 11483,1 --Large Barrel (1)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along198
+    #label Along194
     .goto 117,64.43,46.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Icehammer|r
     .turnin 11430 >>Turn in Harpoon Master Yavus
@@ -1447,7 +1455,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 11421,1 --Dragonflayer Defender slain (8)
     .mob Dragonflayer Defender
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along201
+    #completewith Along197
     >>As you go: Kill |cRXP_ENEMY_Winterskorn Spearmans|r, |cRXP_ENEMY_Dragonflayer Warriors|r, |cRXP_ENEMY_Winterskorn Bonegrinders|r and |cRXP_ENEMY_Dragonflayer Rune-Seers|r. Loot them for |cRXP_LOOT_Steel Ribbing|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11484,2 --Steel Ribbing (1)
     .mob Winterskorn Spearman
@@ -1455,7 +1463,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Winterskorn Bonegrinder
     .mob Dragonflayer Rune-Seer
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along201
+    #label Along197
     .goto 117,64.43,46.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Icehammer|r
     .turnin 11421 >>Turn in It Goes to 11...
@@ -1490,7 +1498,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Shoveltusk Stag
     .mob Shoveltusk Calf
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along205
+    #completewith Along201
     >>As you go: Kill |cRXP_ENEMY_McGoyver|r and loot |cRXP_LOOT_Dark Iron Ingots|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11483,3 --Dark Iron Ingots (1)
     .mob McGoyver
@@ -1499,7 +1507,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>Go Harpoon Surfing
     .complete 11436,1 --Go Harpoon Surfing
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along205
+    #label Along201
     .goto 117,60.12,62.43
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Guard Captain Zorek|r
     .turnin 11436 >>Turn in Let's Go Surfing Now
@@ -1550,12 +1558,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 11495 >>Accept The Delicate Sound of Thunder
     .target Walt
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along214
+    #completewith Along210
     >>As you go: Kill |cRXP_ENEMY_Iron Dwarf Relics|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11494,1 --Iron Dwarf Relic slain (8)
     .mob Iron Dwarf Relic
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along214
+    #label Along210
     .goto 117,71.54,69.51
     >>Walt at the Explorers' League Outpost in the Howling Fjord wants you to use the Iron Rune Construct to explore the thundering cave at Baelgun's Excavation Site.
     .complete 11495,1 --Loken
@@ -1671,12 +1679,12 @@ step
     .accept 11476 >>Accept A Carver and a Croaker
     .target Handsome Terry
 step
-    #completewith Along231
+    #completewith Along227
     >>As you go: Kill |cRXP_ENEMY_Scalawag Frog|r and loot |cRXP_LOOT_Scalawag Frog|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11476,1 --Scalawag Frog (1)
     .mob Scalawag Frog
 step
-    #label Along231
+    #label Along227
     .goto 117,36.32,80.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Taruk|r
     .accept 11464 >>Accept Gambling Debt
@@ -1730,7 +1738,7 @@ step
     .accept 11466 >>Accept Jack Likes His Drink
     .target Taruk
 step
-    #completewith Along239
+    #completewith Along235
     >>As you go: Kill |cRXP_ENEMY_Jack Adams|r and loot |cRXP_LOOT_Jack Adams' Debt|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11466,1 --Jack Adams' Debt (1)
     .mob Jack Adams
@@ -1741,7 +1749,7 @@ step
     .accept 11480 >>Accept Meet Number Two
     .target Handsome Terry
 step
-    #label Along239
+    #label Along235
     .goto 117,35.41,79.43
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Annie Bonn|r
     .turnin 11480 >>Turn in Meet Number Two
@@ -1766,12 +1774,12 @@ step
     .accept 11567 >>Accept The Ancient Armor of the Kvaldir
     .target "Silvermoon" Harry
 step
-    #completewith Along243
+    #completewith Along239
     >>As you go: Kill |cRXP_ENEMY_Hozzer|r and loot |cRXP_LOOT_Jonah Sterling's Spyglass|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11471,1 --Jonah Sterling's Spyglass (1)
     .mob Hozzer
 step
-    #label Along243
+    #label Along239
     .goto 117,32.33,78.67
     >>Pick up |cRXP_PICK_The Frozen Heart of Isuldof|r from the ground
     >>Kill |cRXP_ENEMY_Big Roy|r and loot |cRXP_LOOT_Big Roy's Blubber|r
@@ -1929,6 +1937,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 11349 --any of: Mastering the Runes
     .xp <69,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along263
+    >>As you go: Kill |cRXP_ENEMY_Binder Murdis|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -11348,2 --Binder Murdis slain (1)
+    .mob Binder Murdis
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along263
     .goto 117,71.95,23.22
     >>Interact with |cRXP_FRIENDLY_Stone Giant|r
     .complete 11348,1 --Stone Giant
@@ -2013,21 +2027,13 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 117,36.45,7.20
     >>Kill |cRXP_ENEMY_Wyrmcaller Vile|r
-    .complete 11238,1 --Wyrmcaller Vile slain (1)
-    .mob Wyrmcaller Vile
-    .isOnQuest 11238
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 117,36.45,7.20
     >>Kill |cRXP_ENEMY_Wyrmcaller Vile|r and loot |cRXP_LOOT_Wyrmcaller's Horn|r
-    .complete 11238,3 --Wyrmcaller's Horn (1)
-    .mob Wyrmcaller Vile
-    .isOnQuest 11238
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 117,35.68,7.81
     >>Kill |cRXP_ENEMY_Glacion|r
-    .complete 11238,2 --Glacion slain (1)
+    .complete -11238,1 --Wyrmcaller Vile slain (1)
+    .complete -11238,3 --Wyrmcaller's Horn (1)
+    .complete -11238,2 --Glacion slain (1)
+    .mob Wyrmcaller Vile
     .mob Glacion
-    .isOnQuest 11238
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 117,30.05,28.59
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Watcher Moonleaf|r
@@ -2143,29 +2149,21 @@ step
     .isQuestTurnedIn 11530 --The Shield of the Aesirites
     .isQuestTurnedIn 11567 --The Ancient Armor of the Kvaldir
 step
-    .goto 117,57.65,77.75
-    >>Kill |cRXP_ENEMY_Fengir the Disgraced|r
-    .complete 11568,1 --Fengir the Disgraced slain (1)
-    .mob Fengir the Disgraced
-    .isOnQuest 11568
-step
     .goto 117,59.71,79.39
+    >>Kill |cRXP_ENEMY_Fengir the Disgraced|r
     >>Kill |cRXP_ENEMY_Isuldof Iceheart|r
-    .complete 11568,3 --Isuldof Iceheart slain (1)
+    .complete -11568,1 --Fengir the Disgraced slain (1)
+    .complete -11568,3 --Isuldof Iceheart slain (1)
+    .mob Fengir the Disgraced
     .mob Isuldof Iceheart
-    .isOnQuest 11568
 step
     .goto 117,61.95,80.04
     >>Kill |cRXP_ENEMY_Windan of the Kvaldir|r
-    .complete 11568,4 --Windan of the Kvaldir slain (1)
-    .mob Windan of the Kvaldir
-    .isOnQuest 11568
-step
-    .goto 117,59.28,76.87
     >>Kill |cRXP_ENEMY_Rodin the Reckless|r
-    .complete 11568,2 --Rodin the Reckless slain (1)
+    .complete -11568,4 --Windan of the Kvaldir slain (1)
+    .complete -11568,2 --Rodin the Reckless slain (1)
+    .mob Windan of the Kvaldir
     .mob Rodin the Reckless
-    .isOnQuest 11568
 step
     .goto 117,40.29,60.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Orfus of Kamagua|r

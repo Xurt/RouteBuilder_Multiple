@@ -501,21 +501,17 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 12105 >>Accept Descent into Darkness
     .use 36940
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Drop12105x1
     #loop
-    .goto 116,36.34,68.56,0
-    .goto 116,36.34,68.56,40,0
+    .goto 116,36.25,67.85,0
+    .goto 116,36.25,67.85,40,0
     .goto 116,37.56,70.22,40,0
     >>Kill |cRXP_ENEMY_Silverbrook Hunters|r
-    .complete 12310,1 --Silverbrook Hunter slain (7)
-    .mob Silverbrook Hunter
-    .isOnQuest 12310
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Drop12105x1
-    .goto 116,36.25,67.85
     >>Kill |cRXP_ENEMY_Vladek|r
-    .complete 12310,2 --Vladek slain (1)
+    .complete -12310,1 --Silverbrook Hunter slain (7)
+    .complete -12310,2 --Vladek slain (1)
+    .mob Silverbrook Hunter
     .mob Vladek
-    .isOnQuest 12310
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 116,31.83,60.17
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Dumont|r
@@ -550,17 +546,19 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Magistrix Haelenai
     .xp <74,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along72
+    >>As you go: Kill |cRXP_ENEMY_Entropic Oozes|r. Loot them for |cRXP_LOOT_Slime Sample|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -12219,1 --Slime Sample (6)
+    .mob Entropic Ooze
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along72
     .goto 116,30.47,44.07
     >>Kill |cRXP_ENEMY_Vordrassil's Tears Credit|r
-    .complete 12220,3 --Vordrassil's Tears Credit slain (1)
-    .mob Vordrassil's Tears Credit
-    .isOnQuest 12220
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 116,32.39,45.76
     >>Kill |cRXP_ENEMY_Vordrassil's Limb Credit|r
-    .complete 12220,2 --Vordrassil's Limb Credit slain (1)
+    .complete -12220,3 --Vordrassil's Tears Credit slain (1)
+    .complete -12220,2 --Vordrassil's Limb Credit slain (1)
+    .mob Vordrassil's Tears Credit
     .mob Vordrassil's Limb Credit
-    .isOnQuest 12220
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 116,34.24,49.33,0
@@ -568,15 +566,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 116,39.10,50.49,40,0
     .goto 116,41.05,53.45,40,0
     >>Kill |cRXP_ENEMY_Entropic Oozes|r. Loot them for |cRXP_LOOT_Slime Sample|r
-    .complete 12219,1 --Slime Sample (6)
-    .mob Entropic Ooze
-    .isOnQuest 12219
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 116,41.01,54.63
     >>Kill |cRXP_ENEMY_Vordrassil's Heart Credit|r
-    .complete 12220,1 --Vordrassil's Heart Credit slain (1)
+    .complete -12219,1 --Slime Sample (6)
+    .complete -12220,1 --Vordrassil's Heart Credit slain (1)
+    .mob Entropic Ooze
     .mob Vordrassil's Heart Credit
-    .isOnQuest 12220
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 116,31.16,59.47
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hierophant Thayreen|r
@@ -605,12 +599,21 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Magistrix Haelenai
     .xp <74,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along78
+    >>As you go: Kill |cRXP_ENEMY_Redfang Hunters|r, |cRXP_ENEMY_Frostpaw Warriors|r, |cRXP_ENEMY_Frostpaw Shamans|r and |cRXP_ENEMY_Frostpaw Trappers|r. Loot them for |cRXP_LOOT_Crazed Furbolg Blood|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -12246,1 --Crazed Furbolg Blood (8)
+    .mob Redfang Hunter
+    .mob Frostpaw Warrior
+    .mob Frostpaw Shaman
+    .mob Frostpaw Trapper
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 116,48.03,58.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Orsonn|r
     .complete 12247,1 --Orsonn
     .target Orsonn
     .isOnQuest 12247
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along78
     .goto 116,66.89,62.41
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kodian|r
     .complete 12247,2 --Kodian
@@ -656,19 +659,15 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Magistrix Haelenai
     .xp <74,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 116,50.73,42.66
-    >>Open the |cRXP_PICK_Vordrassil's Sapling Focus|r. Loot it for |cRXP_LOOT_Vordrassil's Ashes|r
-    .complete 12248,1 --Vordrassil's Ashes (1)
-    .isOnQuest 12248
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 116,50.78,41.84,0
+    .goto 116,52.26,46.41,0
+    .goto 116,52.26,46.41,40,0
     .goto 116,50.78,41.84,40,0
     .goto 116,50.88,36.93,40,0
-    .goto 116,52.26,46.41,40,0
+    >>Open the |cRXP_PICK_Vordrassil's Sapling Focus|r. Loot it for |cRXP_LOOT_Vordrassil's Ashes|r
     >>Pick up |cRXP_PICK_Vordrassil's Seed|r from the ground
-    .complete 12250,1 --Vordrassil's Seed (8)
-    .isOnQuest 12250
+    .complete -12248,1 --Vordrassil's Ashes (1)
+    .complete -12250,1 --Vordrassil's Seed (8)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 116,31.16,59.47
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hierophant Thayreen|r
@@ -969,7 +968,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 12002 >>Accept Brothers in Battle
     .target Brugar Stoneshear
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along131
+    #completewith Along127
     >>As you go: Kill |cRXP_ENEMY_Runic Battle Golems|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12002,1 --Runic Battle Golem slain (10)
     .mob Runic Battle Golem
@@ -979,7 +978,7 @@ step
     .accept 11981 >>Accept Find Kurun!
     .target Fallen Earthen Warrior
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along131
+    #label Along127
     .goto 116,64.30,19.77
     >>Click the |cRXP_PICK_Battered Journal|r
     .accept 11986 >>Accept The Damaged Journal
@@ -1010,7 +1009,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 12003 >>Accept Uncovering the Tunnels
     .target Brugar Stoneshear
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along137
+    #completewith Along133
     >>As you go: Kill |cRXP_ENEMY_Rune Reavers|r, |cRXP_ENEMY_Iron Rune-Shapers|r and |cRXP_ENEMY_Forgemaster Damraths|r. Loot them for |cRXP_LOOT_Runic Keystone Fragment|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11988,1 --Runic Keystone Fragment (5)
     .mob Rune Reaver
@@ -1027,7 +1026,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 12003,2 --East Building slain (1)
     .mob East Building
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along137
+    #label Along133
     .goto 116,62.79,21.07
     >>Kill |cRXP_ENEMY_North Building|r
     .complete 12003,1 --North Building slain (1)
@@ -1084,12 +1083,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestComplete 12010
     .target Surveyor Orlond
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along144
+    #completewith Along140
     >>As you go: Click the |cRXP_PICK_Third Rune Plate|r. Click the |cRXP_PICK_First Rune Plate|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11993,3 --Third Rune Plate
     .complete 11993,1 --First Rune Plate
 step
-    #label Along144
+    #label Along140
     #loop
     .goto 116,70.79,13.12,0
     .goto 116,70.79,13.12,40,0
@@ -1126,11 +1125,11 @@ step
     .accept 11985 >>Accept Into the Breach
     .target Kurun
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along148
+    #completewith Along144
     >>As you go: Click the |cRXP_PICK_Third Rune Plate|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11993,3 --Third Rune Plate
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along148
+    #label Along144
     .goto 116,67.49,15.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Surveyor Orlond|r
     .turnin 12010 >>Turn in The Fate of Orlond
@@ -1180,58 +1179,51 @@ step
     .accept 12114 >>Accept Therapy
     .target Harkor
 step
-    #completewith Along154
+    #completewith Along150
     >>As you go: Kill |cRXP_ENEMY_Duskhowl Prowler|r and loot |cRXP_LOOT_Fibrous Worg Meat|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12113,1 --Fibrous Worg Meat (1)
     .mob Duskhowl Prowler
 step
-    #completewith Along154
+    #completewith Along150
     >>As you go: Kill |cRXP_ENEMY_Longhoof Grazers|r. Loot them for |cRXP_LOOT_Shovelhorn Steak|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12113,2 --Shovelhorn Steak (10)
     .mob Longhoof Grazer
 step
-    #label Along154
+    #label Along150
     .goto 116,73.91,34.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kraz|r
     .accept 12116 >>Accept It Takes Guts....
     .target Kraz
 step
-    #completewith Along155
+    #completewith Along151
     >>As you go: Loot the |cRXP_PICK_School of Northern Salmons|r for |cRXP_LOOT_Northern Salmon|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12279,1 --Northern Salmon (6)
 step
-    #label Along155
+    #label Along151
     .goto 116,79.76,33.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gavrock|r
     .turnin 12081 >>Turn in Gavrock
     .accept 12093 >>Accept Runes of Compulsion
     .target Gavrock
 step
-    .goto 116,85.94,27.90
+    #loop
+    .goto 116,84.91,23.31,0
+    .goto 116,84.91,23.31,40,0
+    .goto 116,86.96,26.51,40,0
     >>Kill |cRXP_ENEMY_Selas|r
-    .complete 12164,2 --Selas slain (1)
-    .mob Selas
-    .isOnQuest 12164
-step
-    .goto 116,84.91,23.31
     >>Kill |cRXP_ENEMY_Varlam|r
-    .complete 12164,1 --Varlam slain (1)
-    .mob Varlam
-    .isOnQuest 12164
-step
-    .goto 116,86.96,26.51
     >>Kill |cRXP_ENEMY_Goremaw|r
-    .complete 12164,3 --Goremaw slain (1)
-    .mob Goremaw
-    .isOnQuest 12164
-step
-    .goto 116,87.65,26.48
     >>Kill |cRXP_ENEMY_Shade of Arugal|r
-    .complete 12164,4 --Shade of Arugal slain (1)
+    .complete -12164,2 --Selas slain (1)
+    .complete -12164,1 --Varlam slain (1)
+    .complete -12164,3 --Goremaw slain (1)
+    .complete -12164,4 --Shade of Arugal slain (1)
+    .mob Selas
+    .mob Varlam
+    .mob Goremaw
     .mob Shade of Arugal
-    .isOnQuest 12164
 step
-    #completewith Along167
+    #completewith Along160
     >>As you go: Kill |cRXP_ENEMY_Longhoof Grazers|r. Loot them for |cRXP_LOOT_Shovelhorn Steak|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12113,2 --Shovelhorn Steak (10)
     .mob Longhoof Grazer
@@ -1241,7 +1233,7 @@ step
     .complete 12093,3 --Overseer Lochli slain (1)
     .mob Overseer Lochli
 step
-    #completewith Along162
+    #completewith Along155
     >>As you go: Kill |cRXP_ENEMY_Duskhowl Prowler|r and loot |cRXP_LOOT_Fibrous Worg Meat|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12113,1 --Fibrous Worg Meat (1)
     .mob Duskhowl Prowler
@@ -1251,7 +1243,7 @@ step
     .complete 12093,2 --Overseer Korgan slain (1)
     .mob Overseer Korgan
 step
-    #label Along162
+    #label Along155
     .goto 116,67.60,29.30
     >>Kill |cRXP_ENEMY_Overseer Durval|r
     .complete 12093,1 --Overseer Durval slain (1)
@@ -1262,23 +1254,23 @@ step
     .complete 12093,4 --Overseer Brunon slain (1)
     .mob Overseer Brunon
 step
-    #completewith Along164
+    #completewith Along157
     >>As you go: Loot the |cRXP_PICK_School of Northern Salmons|r for |cRXP_LOOT_Northern Salmon|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12279,1 --Northern Salmon (6)
 step
-    #label Along164
+    #label Along157
     .goto 116,79.76,33.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gavrock|r
     .turnin 12093 >>Turn in Runes of Compulsion
     .accept 12094 >>Accept Latent Power
     .target Gavrock
 step
-    #completewith Along165
+    #completewith Along158
     >>As you go: Kill |cRXP_ENEMY_Duskhowl Prowler|r and loot |cRXP_LOOT_Fibrous Worg Meat|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12113,1 --Fibrous Worg Meat (1)
     .mob Duskhowl Prowler
 step
-    #label Along165
+    #label Along158
     .goto 116,71.26,39.71
     >>Kill |cRXP_ENEMY_North Stone|r
     .complete 12094,1 --North Stone slain (1)
@@ -1289,17 +1281,17 @@ step
     .complete 12094,3 --South Stone slain (1)
     .mob South Stone
 step
-    #completewith Along168
+    #completewith Along161
     >>As you go: Loot the |cRXP_PICK_School of Northern Salmons|r for |cRXP_LOOT_Northern Salmon|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12279,1 --Northern Salmon (6)
 step
-    #label Along167
+    #label Along160
     .goto 116,78.88,39.96
     >>Kill |cRXP_ENEMY_East Stone|r
     .complete 12094,2 --East Stone slain (1)
     .mob East Stone
 step
-    #label Along168
+    #label Along161
     .goto 116,79.76,33.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gavrock|r
     .turnin 12094 >>Turn in Latent Power
@@ -1314,17 +1306,17 @@ step
     >>Loot the |cRXP_PICK_School of Northern Salmons|r for |cRXP_LOOT_Northern Salmon|r
     .complete 12279,1 --Northern Salmon (6)
 step
-    #completewith Along171
+    #completewith Along164
     >>As you go: Kill |cRXP_ENEMY_Duskhowl Prowler|r and loot |cRXP_LOOT_Fibrous Worg Meat|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12113,1 --Fibrous Worg Meat (1)
     .mob Duskhowl Prowler
 step
-    #completewith Along170
+    #completewith Along163
     >>As you go: Kill |cRXP_ENEMY_Longhoof Grazers|r. Loot them for |cRXP_LOOT_Shovelhorn Steak|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12113,2 --Shovelhorn Steak (10)
     .mob Longhoof Grazer
 step
-    #label Along170
+    #label Along163
     #loop
     .goto 116,72.86,37.33,0
     .goto 116,72.86,37.33,40,0
@@ -1334,7 +1326,7 @@ step
     .complete 12099,1 --Runed Giant (4)
     .target Runed Giant
 step
-    #label Along171
+    #label Along164
     .goto 116,69.10,40.10
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hugh Glass|r
     .turnin 12279 >>Turn in A Bear of an Appetite
@@ -1355,12 +1347,12 @@ step
     .turnin 12099 >>Turn in Free at Last
     .target Gavrock
 step
-    #completewith Along174
+    #completewith Along167
     >>As you go: Kill |cRXP_ENEMY_Drakkari Oracles|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12114,2 --Drakkari Oracle slain (10)
     .mob Drakkari Oracle
 step
-    #label Along174
+    #label Along167
     .goto 116,71.47,19.91
     >>Pick up |cRXP_PICK_Drakkari Canopic Jar|r from the ground
     .complete 12116,1 --Drakkari Canopic Jar (5)
@@ -1374,24 +1366,24 @@ step
     >>Pick up |cRXP_PICK_Drakkari Tablets|r from the ground
     .complete 12068,1 --Drakkari Tablets (1)
 step
-    #completewith Along177
+    #completewith Along170
     >>As you go: Kill |cRXP_ENEMY_Drakkari Protectors|r. Kill |cRXP_ENEMY_Drakkari Oracles|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12114,1 --Drakkari Protector slain (10)
     .complete 12114,2 --Drakkari Oracle slain (10)
     .mob Drakkari Protector
     .mob Drakkari Oracle
 step
-    #label Along177
+    #label Along170
     .goto 116,73.51,24.02
     >>Harrison has escorted you to safety.
     .complete 12082,1 --Harrison has escorted you to safety.
 step
-    #completewith Along178
+    #completewith Along171
     >>As you go: Kill |cRXP_ENEMY_Duskhowl Prowler|r and loot |cRXP_LOOT_Fibrous Worg Meat|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12113,1 --Fibrous Worg Meat (1)
     .mob Duskhowl Prowler
 step
-    #label Along178
+    #label Along171
     #loop
     .goto 116,72.26,27.95,0
     .goto 116,72.26,27.95,40,0
@@ -1505,7 +1497,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 12180 >>Accept The Captive Prospectors
     .target Mountaineer Kilian
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along196
+    #completewith Along189
     >>As you go: Kill |cRXP_ENEMY_Iron Rune-Smith|r and loot |cRXP_LOOT_Golem Blueprint Section 3|r. Kill |cRXP_ENEMY_Iron Rune-Smith|r and loot |cRXP_LOOT_Golem Blueprint Section 2|r. Kill |cRXP_ENEMY_Iron Rune-Smith|r and loot |cRXP_LOOT_Golem Blueprint Section 1|r. |cRXP_WARN_Anything left is finished later|r
     .collect 36851,1,12129,1 --Golem Blueprint Section 3 (1)
     .collect 36850,1,12129,1 --Golem Blueprint Section 2 (1)
@@ -1524,7 +1516,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Rune-Smith Durar
     .mob Rune-Smith Kathorn
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along196
+    #label Along189
     .goto 116,76.46,55.42
     >>Kill |cRXP_ENEMY_Prospector Gann|r
     .complete 12180,1 --Prospector Gann slain (1)
@@ -1618,15 +1610,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 116,74.89,56.91
     >>Kill |cRXP_ENEMY_Rune-Smith Durar|r and loot |cRXP_LOOT_Durar's Power Cell|r
-    .complete 12131,1 --Durar's Power Cell (1)
-    .mob Rune-Smith Durar
-    .isOnQuest 12131
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 116,76.82,59.34
     >>Kill |cRXP_ENEMY_Rune-Smith Kathorn|r and loot |cRXP_LOOT_Kathorn's Power Cell|r
-    .complete 12131,2 --Kathorn's Power Cell (1)
+    .complete -12131,1 --Durar's Power Cell (1)
+    .complete -12131,2 --Kathorn's Power Cell (1)
+    .mob Rune-Smith Durar
     .mob Rune-Smith Kathorn
-    .isOnQuest 12131
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 116,77.08,48.65
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Raegar Breakbrow|r
@@ -1667,15 +1655,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 116,76.37,63.72
     >>Kill |cRXP_ENEMY_Iron Thane Furyhammer|r
-    .complete 12153,1 --Iron Thane Furyhammer slain (1)
-    .mob Iron Thane Furyhammer
-    .isOnQuest 12153
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 116,76.46,63.24
     >>Kill |cRXP_ENEMY_Dun Argol Power Core|r
-    .complete 12154,1 --Dun Argol Power Core slain (1)
+    .complete -12153,1 --Iron Thane Furyhammer slain (1)
+    .complete -12154,1 --Dun Argol Power Core slain (1)
+    .mob Iron Thane Furyhammer
     .mob Dun Argol Power Core
-    .isOnQuest 12154
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 116,77.08,48.65
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Raegar Breakbrow|r

@@ -1,5 +1,5 @@
 Durotar - Horde - part 1 of 2, planned from level 1
-Guide "1-13 Durotar" in group "Zone Routes (Horde)": this part has 251 steps, 99 stops
+Guide "1-13 Durotar" in group "Zone Routes (Horde)": this part has 250 steps, 98 stops
 Written to guides/classic/Durotar (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: zones/classic/Durotar.json

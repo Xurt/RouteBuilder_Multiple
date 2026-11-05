@@ -185,14 +185,10 @@ step
 step
     .goto 1441/1,-2109.29,-5004.48
     >>Kill |cRXP_ENEMY_Arikara|r and loot |cRXP_LOOT_Arikara Serpent Skin|r
-    .complete 5088,2 --Arikara Serpent Skin (1)
-    .mob Arikara
-    .isOnQuest 5088
-step
-    .goto 1441/1,-2107.97,-5004.19
     >>Click the |cRXP_PICK_Sacred Fire of Life|r
-    .complete 5088,1 --Sacred Fire of Life
-    .isOnQuest 5088
+    .complete -5088,2 --Arikara Serpent Skin (1)
+    .complete -5088,1 --Sacred Fire of Life
+    .mob Arikara
 step
     .goto 1441/1,-1381.09,-4915.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Motega Firemane|r
@@ -679,6 +675,12 @@ step
     .accept 1148 >>Accept Parts of the Swarm
     .use 5877
 step
+    #completewith Along5
+    >>As you go: Kill |cRXP_ENEMY_Silithid Hive Drones|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -1147,2 --Silithid Hive Drone slain (5)
+    .mob Silithid Hive Drone
+step
+    #label Along5
     #loop
     .goto 1441/1,-3325.45,-6496.08,0
     .goto 1441/1,-3325.45,-6496.08,40,0
@@ -688,61 +690,26 @@ step
     .mob Silithid Invader
     .isOnQuest 1147
 step
-    .goto 1441/1,-3413.89,-6353.81
-    >>Kill |cRXP_ENEMY_Silithid Searchers|r
-    .complete 1147,1 --Silithid Searcher slain (5)
-    .mob Silithid Searcher
-    .isOnQuest 1147
-step
     #label Drop1148x1
     #loop
-    .goto 1441/1,-3490.89,-6356.16,0
-    .goto 1441/1,-3490.89,-6356.16,40,0
-    .goto 1441/1,-3485.61,-6470.27,40,0
-    .goto 1441/1,-3474.61,-6579.68,40,0
+    .goto 1441/1,-3442.05,-6381.39,0
+    .goto 1441/1,-3442.05,-6381.39,40,0
+    .goto 1441/1,-3514.65,-6442.99,40,0
+    .goto 1441/1,-3487.37,-6507.81,40,0
+    >>Kill |cRXP_ENEMY_Silithid Searchers|r
     >>Kill |cRXP_ENEMY_Silithid Hive Drones|r
-    .complete 1147,2 --Silithid Hive Drone slain (5)
-    .mob Silithid Hive Drone
-    .isOnQuest 1147
-step
-    #loop
-    .goto 1441/1,-3487.37,-6507.81,0
-    .goto 1441/1,-3487.37,-6507.81,40,0
-    .goto 1441/1,-3514.65,-6442.99,40,0
-    .goto 1441/1,-3442.05,-6381.39,40,0
     >>Kill |cRXP_ENEMY_Silithid Searchers|r, |cRXP_ENEMY_Silithid Invaders|r, |cRXP_ENEMY_Silithid Ravagers|r and |cRXP_ENEMY_Silithid Hive Drones|r. Loot them for |cRXP_LOOT_Silithid Heart|r
-    .complete 1148,1 --Silithid Heart (1)
-    .mob Silithid Searcher
-    .mob Silithid Invader
-    .mob Silithid Ravager
-    .mob Silithid Hive Drone
-    .isOnQuest 1148
-step
-    #loop
-    .goto 1441/1,-3487.37,-6507.81,0
-    .goto 1441/1,-3487.37,-6507.81,40,0
-    .goto 1441/1,-3514.65,-6442.99,40,0
-    .goto 1441/1,-3442.05,-6381.39,40,0
     >>Kill |cRXP_ENEMY_Silithid Searchers|r, |cRXP_ENEMY_Silithid Invaders|r, |cRXP_ENEMY_Silithid Ravagers|r and |cRXP_ENEMY_Silithid Hive Drones|r. Loot them for |cRXP_LOOT_Silithid Talon|r
-    .complete 1148,2 --Silithid Talon (5)
-    .mob Silithid Searcher
-    .mob Silithid Invader
-    .mob Silithid Ravager
-    .mob Silithid Hive Drone
-    .isOnQuest 1148
-step
-    #loop
-    .goto 1441/1,-3487.37,-6507.81,0
-    .goto 1441/1,-3487.37,-6507.81,40,0
-    .goto 1441/1,-3514.65,-6442.99,40,0
-    .goto 1441/1,-3442.05,-6381.39,40,0
     >>Kill |cRXP_ENEMY_Silithid Searchers|r, |cRXP_ENEMY_Silithid Invaders|r, |cRXP_ENEMY_Silithid Ravagers|r and |cRXP_ENEMY_Silithid Hive Drones|r. Loot them for |cRXP_LOOT_Intact Silithid Carapace|r
-    .complete 1148,3 --Intact Silithid Carapace (3)
+    .complete -1147,1 --Silithid Searcher slain (5)
+    .complete -1147,2 --Silithid Hive Drone slain (5)
+    .complete -1148,1 --Silithid Heart (1)
+    .complete -1148,2 --Silithid Talon (5)
+    .complete -1148,3 --Intact Silithid Carapace (3)
     .mob Silithid Searcher
+    .mob Silithid Hive Drone
     .mob Silithid Invader
     .mob Silithid Ravager
-    .mob Silithid Hive Drone
-    .isOnQuest 1148
 step
     .goto 1441/1,-3406.85,-5842.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Moktar Krin|r

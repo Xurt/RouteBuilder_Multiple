@@ -606,28 +606,16 @@ step
     .accept 26500 >>Accept We're Surrounded
     .target Earthbreaker Dolomite
 step
-    #completewith Along79
-    >>As you go: Kill |cRXP_ENEMY_Stone Trogg Ambushers|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 26500,1 --Stone Trogg Ambusher slain (12)
-    .mob Stone Trogg Ambusher
-step
-    #label Along79
     #loop
-    .goto 207,29.90,73.86,0
-    .goto 207,29.90,73.86,40,0
-    .goto 207,31.34,71.96,40,0
-    .goto 207,27.63,76.24,40,0
+    .goto 207,29.78,67.81,0
+    .goto 207,29.78,67.81,40,0
+    .goto 207,30.05,72.96,40,0
+    .goto 207,28.59,76.18,40,0
     >>Interact with |cRXP_FRIENDLY_Stonehearth Defenders|r
-    .complete 26499,1 --Stonehearth Defender (12)
-    .target Stonehearth Defender
-step
-    #loop
-    .goto 207,30.71,73.15,0
-    .goto 207,30.71,73.15,40,0
-    .goto 207,30.66,69.86,40,0
-    .goto 207,29.47,66.45,40,0
     >>Kill |cRXP_ENEMY_Stone Trogg Ambushers|r
+    .complete 26499,1 --Stonehearth Defender (12)
     .complete 26500,1 --Stone Trogg Ambusher slain (12)
+    .target Stonehearth Defender
     .mob Stone Trogg Ambusher
 step
     .goto 207,28.21,69.62
@@ -636,7 +624,7 @@ step
     .accept 26502 >>Accept Thunder Stones
     .target Earthbreaker Dolomite
 step
-    #completewith Along86
+    #completewith Along85
     >>As you go: Pick up |cRXP_PICK_Thunder Stone|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 26502,1 --Thunder Stone (12)
 step
@@ -661,7 +649,7 @@ step
     .complete 26501,3 --Sealing the Way 03 Kill Credit
     .target Sealing the Way 03 Kill Credit
 step
-    #label Along86
+    #label Along85
     .goto 207,27.48,67.49
     >>Help the Earthen Geomancers to get out of combat and then give them the Rockslide Reagents so that they can seal the Armory, Inn, Barracks, and Shrine.
     .complete 26501,4 --Sealing the Way 04 Kill Credit
@@ -677,7 +665,7 @@ step
     .accept 26537 >>Accept Shatter Them!
     .target Gravel Longslab
 step
-    #completewith Along91
+    #completewith Along89
     >>As you go: Kill |cRXP_ENEMY_Stone Trogg Geomancers|r, |cRXP_ENEMY_Needlerock Riders|r and |cRXP_ENEMY_Stone Trogg Berserkers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 26537,1 --Stone Trogg Geomancer (8)
     .mob Stone Trogg Geomancer
@@ -690,43 +678,37 @@ step
     .accept 26564 >>Accept Fixer Upper
     .target Clay Mudaxle
 step
-    #completewith Along91
+    #completewith Along89
     >>As you go: Pick up |cRXP_PICK_Catapult Part|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 26564,1 --Catapult Part (6)
 step
+    #label Along89
     .goto 207,24.61,62.19
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Earthmender Deepvein|r
     .accept 26591 >>Accept Battlefront Triage
     .target Earthmender Deepvein
 step
-    #label Along91
     #loop
-    .goto 207,23.33,63.83,0
-    .goto 207,23.33,63.83,40,0
-    .goto 207,22.03,62.00,40,0
-    .goto 207,26.29,60.88,40,0
+    .goto 207,23.18,60.25,0
+    .goto 207,23.18,60.25,40,0
+    .goto 207,26.76,61.54,40,0
+    .goto 207,23.61,54.09,40,0
     >>Interact with |cRXP_FRIENDLY_Injured Earthens|r
+    >>Pick up |cRXP_PICK_Catapult Part|r from the ground
+    >>Kill |cRXP_ENEMY_Stone Trogg Geomancers|r, |cRXP_ENEMY_Needlerock Riders|r and |cRXP_ENEMY_Stone Trogg Berserkers|r
     .complete 26591,1 --Injured Earthen (10)
+    .complete 26564,1 --Catapult Part (6)
+    .complete 26537,1 --Stone Trogg Geomancer (8)
     .target Injured Earthen
+    .mob Stone Trogg Geomancer
+    .mob Needlerock Rider
+    .mob Stone Trogg Berserker
 step
     .goto 207,24.61,62.19
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Earthmender Deepvein|r
     .turnin 26591 >>Turn in Battlefront Triage while you are here
     .isQuestComplete 26591
     .target Earthmender Deepvein
-step
-    #loop
-    .goto 207,25.86,59.51,0
-    .goto 207,25.86,59.51,40,0
-    .goto 207,23.18,60.25,40,0
-    .goto 207,23.61,54.09,40,0
-    >>Pick up |cRXP_PICK_Catapult Part|r from the ground
-    >>Kill |cRXP_ENEMY_Stone Trogg Geomancers|r, |cRXP_ENEMY_Needlerock Riders|r and |cRXP_ENEMY_Stone Trogg Berserkers|r
-    .complete 26564,1 --Catapult Part (6)
-    .complete 26537,1 --Stone Trogg Geomancer (8)
-    .mob Stone Trogg Geomancer
-    .mob Needlerock Rider
-    .mob Stone Trogg Berserker
 step
     .goto 207,24.52,62.42
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gravel Longslab|r
@@ -801,26 +783,15 @@ step
     .accept 26770 >>Accept Mystic Masters
     .target Flint Oremantle
 step
-    #completewith Along105
-    >>As you go: Kill |cRXP_ENEMY_Needlerock Mystics|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 26770,1 --Needlerock Mystic slain (5)
-    .mob Needlerock Mystic
-step
-    #label Along105
     #loop
     .goto 207,24.72,47.03,0
     .goto 207,24.72,47.03,40,0
     .goto 207,22.36,45.81,40,0
     >>Interact with |cRXP_FRIENDLY_Deactivated War Constructs|r
-    .complete 26762,1 --Deactivated War Construct (5)
-    .target Deactivated War Construct
-step
-    #loop
-    .goto 207,22.30,45.69,0
-    .goto 207,22.30,45.69,40,0
-    .goto 207,24.56,47.44,40,0
     >>Kill |cRXP_ENEMY_Needlerock Mystics|r
+    .complete 26762,1 --Deactivated War Construct (5)
     .complete 26770,1 --Needlerock Mystic slain (5)
+    .target Deactivated War Construct
     .mob Needlerock Mystic
 step
     .goto 207,22.77,52.10
@@ -841,7 +812,7 @@ step
     .accept 26792 >>Accept Fungal Monstrosities
     .target Slate Quicksand
 step
-    #completewith Along111
+    #completewith Along108
     >>As you go: Kill |cRXP_ENEMY_Fungal Monstrosities|r. |cRXP_WARN_Anything left is finished later|r
     .complete 26792,2 --Fungal Monstrosity slain (5)
     .mob Fungal Monstrosity
@@ -851,7 +822,7 @@ step
     .complete 26791,1 --War Guardian
     .target War Guardian
 step
-    #label Along111
+    #label Along108
     .goto 207,27.63,44.70
     >>Interact with |cRXP_FRIENDLY_War Guardian|r
     .complete 26792,1 --War Guardian
@@ -930,7 +901,7 @@ step
     .accept 26314 >>Accept On Even Ground
     .target Earthcaller Torunscar
 step
-    #completewith Along125
+    #completewith Along122
     >>As you go: Kill |cRXP_ENEMY_Servant of Therazanes|r. |cRXP_WARN_Anything left is finished later|r
     .complete 26314,1 --Servant of Therazane (3)
     .mob Servant of Therazane
@@ -940,7 +911,7 @@ step
     .accept 26313 >>Accept Core of Our Troubles
     .target Earthmender Norsala
 step
-    #completewith Along125
+    #completewith Along122
     >>As you go: Kill |cRXP_ENEMY_Irestone Rumblers|r. Loot them for |cRXP_LOOT_Irestone Core|r. |cRXP_WARN_Anything left is finished later|r
     .complete 26313,1 --Irestone Core (6)
     .mob Irestone Rumbler
@@ -955,7 +926,7 @@ step
     .complete 26312,1 --Tawn Winterbluff
     .target Tawn Winterbluff
 step
-    #label Along125
+    #label Along122
     .goto 207,47.61,42.81
     >>Relieve Tawn Winterbluff, Stormcaller Mylra, and Hargoth Dimblaze by helping them to defeat their opponents.
     .complete 26312,3 --Hargoth Dimblaze
@@ -1014,7 +985,7 @@ step
     .accept 26375 >>Accept Loose Stones
     .target Quartz Stonetender
 step
-    #completewith Along135
+    #completewith Along131
     >>As you go: Kill |cRXP_ENEMY_Twilight Priestess|r, |cRXP_ENEMY_Twilight Laborers|r and |cRXP_ENEMY_Twilight Duskwardens|r. |cRXP_WARN_Anything left is finished later|r
     .complete 26376,2 --Twilight Priestess (8)
     .mob Twilight Priestess
@@ -1032,26 +1003,22 @@ step
     .collect 58500,1,26377,1 --Jade Crystal Cluster (1)
     .mob Dragul Giantbutcher
 step
+    #label Along131
     .goto 207,58.80,40.88
     >>Gather 6 Jade Crystal Clusters, combine them, and shatter them within the Lorthuna's Gate encampment.
     .complete 26377,1 --Agitated Tunneler
     .target Agitated Tunneler
 step
-    #label Along135
     #loop
     .goto 207,59.91,41.13,0
     .goto 207,59.91,41.13,40,0
-    .goto 207,60.67,43.18,40,0
-    >>Interact with |cRXP_FRIENDLY_Quartz Rocklings|r
-    .complete 26375,1 --Quartz Rockling (6)
-    .target Quartz Rockling
-step
-    #loop
-    .goto 207,60.54,44.35,0
-    .goto 207,60.54,44.35,40,0
+    .goto 207,60.24,44.34,40,0
     .goto 207,60.83,47.45,40,0
+    >>Interact with |cRXP_FRIENDLY_Quartz Rocklings|r
     >>Kill |cRXP_ENEMY_Twilight Priestess|r, |cRXP_ENEMY_Twilight Laborers|r and |cRXP_ENEMY_Twilight Duskwardens|r
+    .complete 26375,1 --Quartz Rockling (6)
     .complete 26376,2 --Twilight Priestess (8)
+    .target Quartz Rockling
     .mob Twilight Priestess
     .mob Twilight Laborer
     .mob Twilight Duskwarden
@@ -1107,34 +1074,19 @@ step
     .accept 26439 >>Accept Putting the Pieces Together
     .target Berracite
 step
-    #completewith Along146
-    >>As you go: Kill |cRXP_ENEMY_Jaspertip Swarmers|r, |cRXP_ENEMY_Jaspertip Ravagers|r, |cRXP_ENEMY_Jaspertip Crystal-gorgers|r and |cRXP_ENEMY_Jaspertip Borers|r. Kill |cRXP_ENEMY_Jaspertip Borers|r. Loot them for |cRXP_LOOT_Chalky Crystal Formation|r. It can also be picked up from |cRXP_PICK_Chalky Crystal Formation|r on the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete 26438,1 --Jaspertip Swarmer (8)
-    .complete 26437,1 --Chalky Crystal Formation (8)
-    .mob Jaspertip Swarmer
-    .mob Jaspertip Ravager
-    .mob Jaspertip Crystal-gorger
-    .mob Jaspertip Borer
-step
-    #label Along146
     #loop
-    .goto 207,33.09,42.09,0
-    .goto 207,33.09,42.09,40,0
-    .goto 207,36.13,47.06,40,0
-    .goto 207,33.34,51.92,40,0
-    >>Interact with |cRXP_FRIENDLY_Dormant Stonebound Elementals|r
-    .complete 26439,1 --Dormant Stonebound Elemental (6)
-    .target Dormant Stonebound Elemental
-step
-    #loop
-    .goto 207,33.41,43.78,0
-    .goto 207,33.41,43.78,40,0
+    .goto 207,31.26,40.36,0
     .goto 207,31.26,40.36,40,0
+    .goto 207,33.41,43.78,40,0
+    .goto 207,34.08,49.58,40,0
     .goto 207,30.66,47.15,40,0
+    >>Interact with |cRXP_FRIENDLY_Dormant Stonebound Elementals|r
     >>Kill |cRXP_ENEMY_Jaspertip Swarmers|r, |cRXP_ENEMY_Jaspertip Ravagers|r, |cRXP_ENEMY_Jaspertip Crystal-gorgers|r and |cRXP_ENEMY_Jaspertip Borers|r
     >>Kill |cRXP_ENEMY_Jaspertip Borers|r. Loot them for |cRXP_LOOT_Chalky Crystal Formation|r. It can also be picked up from |cRXP_PICK_Chalky Crystal Formation|r on the ground
+    .complete 26439,1 --Dormant Stonebound Elemental (6)
     .complete 26438,1 --Jaspertip Swarmer (8)
     .complete 26437,1 --Chalky Crystal Formation (8)
+    .target Dormant Stonebound Elemental
     .mob Jaspertip Swarmer
     .mob Jaspertip Ravager
     .mob Jaspertip Crystal-gorger
@@ -1279,7 +1231,7 @@ step
     .accept 26578 >>Accept Doomshrooms
     .unitscan Gorsik the Tumultuous
 step
-    #completewith Along168
+    #completewith Along163
     >>As you go: Kill |cRXP_ENEMY_Doomshrooms|r. Kill |cRXP_ENEMY_Fungal Behemoths|r. |cRXP_WARN_Anything left is finished later|r
     .complete 26578,1 --Doomshroom slain (10)
     .complete 26579,1 --Fungal Behemoth slain (8)
@@ -1292,7 +1244,7 @@ step
     .accept 26581 >>Accept A Head Full of Wind
     .target Windspeaker Lorvarius
 step
-    #label Along168
+    #label Along163
     .goto 207,72.76,41.65
     >>Bring Lorvarius' wind-devil to the clouds of red mist in the Crimson Expanse, near the water, and then return with a sample.
     .complete 26581,1 --Red Mist
@@ -1326,24 +1278,24 @@ step
     .accept 26585 >>Accept Corruption Destruction
     .unitscan Gorsik the Tumultuous
 step
-    #completewith Along172
+    #completewith Along167
     >>As you go: Pick up |cRXP_PICK_Verlok Miracle-Grow|r from the ground. Kill |cRXP_ENEMY_Verlok Pillartumblers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 26585,1 --Verlok Miracle-Grow (1)
     .complete 26584,1 --Verlok Pillartumbler slain (8)
     .mob Verlok Pillartumbler
 step
-    #label Along172
+    #label Along167
     .goto 207,68.47,26.35
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ruberick|r
     .accept 26583 >>Accept Wrath of the Fungalmancer
     .target Ruberick
 step
-    #completewith Along173
+    #completewith Along168
     >>As you go: Kill |cRXP_ENEMY_Fungalmancer Glop|r. |cRXP_WARN_Anything left is finished later|r
     .complete 26583,2 --Fungalmancer Glop slain (1)
     .mob Fungalmancer Glop
 step
-    #label Along173
+    #label Along168
     .goto 207,69.80,31.84
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Earthmender Norsala|r
     .complete 26583,1 --Earthmender Norsala
@@ -1354,13 +1306,13 @@ step
     .complete 26583,2 --Fungalmancer Glop slain (1)
     .mob Fungalmancer Glop
 step
-    #completewith Along175
+    #completewith Along170
     >>As you go: Pick up |cRXP_PICK_Verlok Miracle-Grow|r from the ground. Kill |cRXP_ENEMY_Verlok Pillartumblers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 26585,1 --Verlok Miracle-Grow (1)
     .complete 26584,1 --Verlok Pillartumbler slain (8)
     .mob Verlok Pillartumbler
 step
-    #label Along175
+    #label Along170
     .goto 207,68.47,26.35
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ruberick|r
     .turnin 26583 >>Turn in Wrath of the Fungalmancer
@@ -1442,7 +1394,7 @@ step
     .accept 26832 >>Accept Therazane's Mercy
     .target Therazane
 step
-    #completewith Along187
+    #completewith Along182
     >>As you go: Kill |cRXP_ENEMY_Twilight Priestess|r, |cRXP_ENEMY_Defaced Earthragers|r and |cRXP_ENEMY_Twilight Soulreapers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 26829,1 --Twilight Priestess (8)
     .mob Twilight Priestess
@@ -1459,7 +1411,7 @@ step
     .complete 26832,2 --High Priestess Lorthuna slain (1)
     .mob High Priestess Lorthuna
 step
-    #label Along187
+    #label Along182
     .goto 207,58.90,32.92
     >>Kill |cRXP_ENEMY_Boldrich Stonerender|r
     .complete 26832,1 --Boldrich Stonerender slain (1)
@@ -1554,14 +1506,14 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 27006 >>Accept Fly Over
     .target Prospector Brewer
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along201
+    #completewith Along196
     >>As you go: Kill |cRXP_ENEMY_Twilight Armsmans|r, |cRXP_ENEMY_Twilight Crushers|r and |cRXP_ENEMY_Twilight Cryptomancers|r. Loot them for |cRXP_LOOT_Masters' Gate Plans|r. |cRXP_WARN_Anything left is finished later|r
     .complete 27004,1 --Masters' Gate Plans (1)
     .mob Twilight Armsman
     .mob Twilight Crusher
     .mob Twilight Cryptomancer
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along201
+    #label Along196
     .goto 207,38.79,74.40
     >>Master's Gate investigated
     .complete 27006,1 --Master's Gate investigated
@@ -1598,11 +1550,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 27042,1 --Bound Fire Elemental slain (1)
     .mob Bound Fire Elemental
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along207
+    #completewith Along202
     >>As you go: Click the |cRXP_PICK_One-Time Decryption Engine|r. |cRXP_WARN_Anything left is finished later|r
     .complete 27040,1 --One-Time Decryption Engine
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along207
+    #label Along202
     .goto 207,40.83,66.28
     >>Kill |cRXP_ENEMY_Bound Water Elemental|r
     .complete 27042,2 --Bound Water Elemental slain (1)

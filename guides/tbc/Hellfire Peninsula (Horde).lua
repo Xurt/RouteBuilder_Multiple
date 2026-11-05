@@ -1488,33 +1488,20 @@ step
     .isQuestTurnedIn 10129 --any of: Mission: Gateways Murketh and Shaadraz
 step
     #loop
-    .goto 1944,73.93,15.15,0
+    .goto 1944,72.22,24.10,0
+    .goto 1944,72.22,24.10,40,0
+    .goto 1944,71.95,14.79,40,0
+    .goto 1944,73.38,11.48,40,0
     .goto 1944,73.93,15.15,40,0
-    .goto 1944,73.39,11.50,40,0
     >>Kill |cRXP_ENEMY_Gan'arg Peons|r
-    .complete 10162,1 --Gan'arg Peon slain (20)
-    .mob Gan'arg Peon
-    .isOnQuest 10162
-step
-    #loop
-    .goto 1944,74.02,10.50,0
-    .goto 1944,74.02,10.50,40,0
-    .goto 1944,71.70,10.56,40,0
-    .goto 1944,71.18,22.67,40,0
-    .goto 1944,73.27,24.20,40,0
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mo'arg Overseer|r
-    .complete 10162,2 --Mo'arg Overseer (5)
-    .target Mo'arg Overseer
-    .isOnQuest 10162
-step
-    #loop
-    .goto 1944,74.24,15.11,0
-    .goto 1944,74.24,15.11,40,0
-    .goto 1944,71.49,17.41,40,0
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fel Cannon|r
-    .complete 10162,3 --Fel Cannon Destroyed (5)
+    .complete -10162,1 --Gan'arg Peon slain (20)
+    .complete -10162,2 --Mo'arg Overseer (5)
+    .complete -10162,3 --Fel Cannon Destroyed (5)
+    .mob Gan'arg Peon
+    .target Mo'arg Overseer
     .target Fel Cannon
-    .isOnQuest 10162
 step
     .goto 1944,65.89,43.59
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Forward Commander To'arch|r

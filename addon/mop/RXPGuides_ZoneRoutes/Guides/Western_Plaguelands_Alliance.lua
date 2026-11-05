@@ -686,20 +686,16 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 27197 --any of: The Battle Resumes!
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 22,45.92,69.85,0
-    .goto 22,45.92,69.85,40,0
+    .goto 22,43.51,64.96,0
+    .goto 22,43.51,64.96,40,0
     .goto 22,46.36,67.07,40,0
-    .goto 22,44.09,64.27,40,0
+    .goto 22,45.92,69.85,40,0
     >>Kill |cRXP_ENEMY_Deathguard War-Captains|r
-    .complete 27199,1 --Deathguard War-Captain slain (3)
-    .mob Deathguard War-Captain
-    .isOnQuest 27199
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 22,41.92,65.51
     >>Kill |cRXP_ENEMY_Andorhal Deathguard|r
-    .complete 27198,1 --Andorhal Deathguard slain (15)
+    .complete -27199,1 --Deathguard War-Captain slain (3)
+    .complete -27198,1 --Andorhal Deathguard slain (15)
+    .mob Deathguard War-Captain
     .mob Andorhal Deathguard
-    .isOnQuest 27198
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 22,41.26,70.07
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lang Loosegrip|r
@@ -743,23 +739,16 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 27205 --any of: The Depravity of the Forsaken
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 22,42.32,72.76,0
-    .goto 22,42.32,72.76,40,0
-    .goto 22,43.78,67.56,40,0
-    .goto 22,47.84,69.30,40,0
+    .goto 22,42.54,71.31,0
+    .goto 22,42.54,71.31,40,0
+    .goto 22,44.52,72.05,40,0
+    .goto 22,44.80,69.20,40,0
     >>Kill |cRXP_ENEMY_Lesser Val'kyrs|r
-    .complete 27201,1 --Lesser Val'kyr slain (9)
-    .mob Lesser Val'kyr
-    .isOnQuest 27201
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 22,44.13,69.56,0
-    .goto 22,44.13,69.56,40,0
-    .goto 22,44.73,72.94,40,0
     >>Kill |cRXP_ENEMY_Forsaken Troopers|r
-    .complete 27202,1 --Forsaken Trooper (20)
+    .complete -27201,1 --Lesser Val'kyr slain (9)
+    .complete -27202,1 --Forsaken Trooper (20)
+    .mob Lesser Val'kyr
     .mob Forsaken Trooper
-    .isOnQuest 27202
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 22,42.70,84.11,0
@@ -886,39 +875,23 @@ step
     .target Captive Plaguebear
     .isOnQuest 26955
 step
-    .goto 22,63.68,34.23
-    >>Kill |cRXP_ENEMY_Krastinovian Disciples|r
-    .complete 27055,1 --Krastinovian Disciple slain (2)
-    .mob Krastinovian Disciple
-    .isOnQuest 27055
-step
     #loop
-    .goto 22,61.76,34.42,0
-    .goto 22,61.76,34.42,40,0
-    .goto 22,63.10,37.48,40,0
-    >>Kill |cRXP_ENEMY_Flesh-Cobbled Brutes|r
-    .complete 27055,2 --Flesh-Cobbled Brute slain (2)
-    .mob Flesh-Cobbled Brute
-    .isOnQuest 27055
-step
-    #loop
-    .goto 22,64.72,35.58,0
-    .goto 22,64.72,35.58,40,0
-    .goto 22,62.06,32.93,40,0
-    >>Kill |cRXP_ENEMY_Flesh-Cobbled Rippers|r
-    .complete 27055,3 --Flesh-Cobbled Ripper slain (2)
-    .mob Flesh-Cobbled Ripper
-    .isOnQuest 27055
-step
-    #loop
-    .goto 22,63.36,35.79,0
-    .goto 22,63.36,35.79,40,0
-    .goto 22,64.77,38.59,40,0
+    .goto 22,66.22,40.94,0
     .goto 22,66.22,40.94,40,0
+    .goto 22,63.68,34.23,40,0
+    .goto 22,61.82,35.40,40,0
+    >>Kill |cRXP_ENEMY_Krastinovian Disciples|r
+    >>Kill |cRXP_ENEMY_Flesh-Cobbled Brutes|r
+    >>Kill |cRXP_ENEMY_Flesh-Cobbled Rippers|r
     >>Kill |cRXP_ENEMY_Unholy Corpuscles|r
-    .complete 27055,4 --Unholy Corpuscle slain (4)
+    .complete -27055,1 --Krastinovian Disciple slain (2)
+    .complete -27055,2 --Flesh-Cobbled Brute slain (2)
+    .complete -27055,3 --Flesh-Cobbled Ripper slain (2)
+    .complete -27055,4 --Unholy Corpuscle slain (4)
+    .mob Krastinovian Disciple
+    .mob Flesh-Cobbled Brute
+    .mob Flesh-Cobbled Ripper
     .mob Unholy Corpuscle
-    .isOnQuest 27055
 step
     .goto 22,49.27,54.91
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Field Agent Kaartish|r

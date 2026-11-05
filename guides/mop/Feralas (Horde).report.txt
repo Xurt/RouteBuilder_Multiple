@@ -1,5 +1,5 @@
 Feralas - Horde - part 1 of 2, planned from level 36
-Guide "36-41 Feralas" in group "Zone Routes (Horde)": this part has 169 steps, 127 stops
+Guide "36-41 Feralas" in group "Zone Routes (Horde)": this part has 166 steps, 124 stops
 Written to guides/mop/Feralas (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

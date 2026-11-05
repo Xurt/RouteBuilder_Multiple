@@ -489,15 +489,10 @@ step
 step
     .goto 1444/1,305.62,-4166.25
     >>Kill |cRXP_ENEMY_Wandering Forest Walker|r and loot |cRXP_LOOT_Treant Muisek|r
-    .complete 3126,1 --Treant Muisek (1)
-    .mob Wandering Forest Walker
-    .isOnQuest 3126
-step
-    .goto 1444/1,305.62,-4166.25
     >>Kill |cRXP_ENEMY_Wandering Forest Walkers|r. Loot them for |cRXP_LOOT_Splintered Log|r
-    .complete 3128,1 --Splintered Log (2)
+    .complete -3126,1 --Treant Muisek (1)
+    .complete -3128,1 --Splintered Log (2)
     .mob Wandering Forest Walker
-    .isOnQuest 3128
 step
     #loop
     .goto 1444/1,614.89,-4449.35,0
@@ -525,25 +520,13 @@ step
     .goto 1444/1,1715.08,-5516.41,40,0
     .goto 1444/1,1605.27,-5640.12,40,0
     >>Kill |cRXP_ENEMY_Frayfeather Hippogryphs|r, |cRXP_ENEMY_Frayfeather Stagwings|r, |cRXP_ENEMY_Frayfeather Skystormers|r and |cRXP_ENEMY_Frayfeather Patriarches|r. Loot them for |cRXP_LOOT_Metallic Fragments|r
-    .complete 3128,4 --Metallic Fragments (40)
-    .mob Frayfeather Hippogryph
-    .mob Frayfeather Stagwing
-    .mob Frayfeather Skystormer
-    .mob Frayfeather Patriarch
-    .isOnQuest 3128
-step
-    #loop
-    .goto 1444/1,1551.75,-5314.86,0
-    .goto 1444/1,1551.75,-5314.86,40,0
-    .goto 1444/1,1599.01,-5368.60,40,0
-    .goto 1444/1,1597.62,-5199.49,40,0
     >>Kill |cRXP_ENEMY_Frayfeather Hippogryphs|r, |cRXP_ENEMY_Frayfeather Stagwings|r, |cRXP_ENEMY_Frayfeather Skystormers|r and |cRXP_ENEMY_Frayfeather Patriarches|r. Loot them for |cRXP_LOOT_Resilient Sinew|r
-    .complete 3128,3 --Resilient Sinew (1)
+    .complete -3128,4 --Metallic Fragments (40)
+    .complete -3128,3 --Resilient Sinew (1)
     .mob Frayfeather Hippogryph
     .mob Frayfeather Stagwing
     .mob Frayfeather Skystormer
     .mob Frayfeather Patriarch
-    .isOnQuest 3128
 step
     .xp 45 >>Grind to level 45 (Fuel for the Zapping needs it)
 step
@@ -685,35 +668,18 @@ step
     .mob Northspring Windcaller
     .mob Northspring Harpy
 step
-    #completewith Along7
-    >>As you go: Kill |cRXP_ENEMY_Land Walkers|r, |cRXP_ENEMY_Cliff Giants|r, |cRXP_ENEMY_Shore Striders|r and |cRXP_ENEMY_Deep Striders|r. Loot them for |cRXP_LOOT_Miniaturization Residue|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 7003,1 --Miniaturization Residue (15)
-    .mob Land Walker
-    .mob Cliff Giant
-    .mob Shore Strider
-    .mob Deep Strider
-step
-    #label Along7
     #loop
     .goto 1444/1,2788.85,-3358.20,0
     .goto 1444/1,2788.85,-3358.20,40,0
     .goto 1444/1,2668.62,-3381.37,40,0
     >>Kill |cRXP_ENEMY_Land Walkers|r, |cRXP_ENEMY_Cliff Giants|r, |cRXP_ENEMY_Zapped Land Walkers|r and |cRXP_ENEMY_Zapped Cliff Giants|r. Loot them for |cRXP_LOOT_Mountain Giant Muisek|r
-    .complete 3127,1 --Mountain Giant Muisek (1)
+    >>Kill |cRXP_ENEMY_Land Walkers|r, |cRXP_ENEMY_Cliff Giants|r, |cRXP_ENEMY_Shore Striders|r and |cRXP_ENEMY_Deep Striders|r. Loot them for |cRXP_LOOT_Miniaturization Residue|r
+    .complete -3127,1 --Mountain Giant Muisek (1)
+    .complete 7003,1 --Miniaturization Residue (15)
     .mob Land Walker
     .mob Cliff Giant
     .mob Zapped Land Walker
     .mob Zapped Cliff Giant
-    .isOnQuest 3127
-step
-    #loop
-    .goto 1444/1,2668.62,-3381.37,0
-    .goto 1444/1,2668.62,-3381.37,40,0
-    .goto 1444/1,2788.85,-3358.20,40,0
-    >>Kill |cRXP_ENEMY_Land Walkers|r, |cRXP_ENEMY_Cliff Giants|r, |cRXP_ENEMY_Shore Striders|r and |cRXP_ENEMY_Deep Striders|r. Loot them for |cRXP_LOOT_Miniaturization Residue|r
-    .complete 7003,1 --Miniaturization Residue (15)
-    .mob Land Walker
-    .mob Cliff Giant
     .mob Shore Strider
     .mob Deep Strider
 step

@@ -327,6 +327,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 9066 >>Accept Swift Discipline
     .target Instructor Antheol
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along25
+    >>As you go: Kill |cRXP_ENEMY_Prospector Anvilward|r and loot |cRXP_LOOT_Prospector Anvilward's Head|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -8483,1 --Prospector Anvilward's Head (1)
+    .mob Prospector Anvilward
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along25
     .goto 94,44.63,53.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ley-Keeper Caidanis|r
     .turnin 8895 >>Turn in Delivery to the North Sanctum

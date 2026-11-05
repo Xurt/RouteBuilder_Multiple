@@ -216,14 +216,11 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Orgnil Soulscar
     .xp <8,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along28
-    >>As you go: Kill |cRXP_ENEMY_Foaming Sea Elementals|r. |cRXP_WARN_Anything left is finished later|r
+    #completewith Along26
+    >>As you go: Loot the |cRXP_PICK_Gnomish Toolboxes|r for |cRXP_LOOT_Gnomish Tools|r. Kill |cRXP_ENEMY_Foaming Sea Elementals|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 25178,1 --Gnomish Tools (4)
     .complete 25177,1 --Foaming Sea Elemental slain (11)
     .mob Foaming Sea Elemental
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along26
-    >>As you go: Loot the |cRXP_PICK_Gnomish Toolboxes|r for |cRXP_LOOT_Gnomish Tools|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 25178,1 --Gnomish Tools (4)
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #label Along26
     #loop
@@ -245,27 +242,15 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 1,57.32,49.57,0
     .goto 1,57.32,49.57,40,0
-    .goto 1,58.41,45.08,40,0
-    .goto 1,58.35,41.32,40,0
+    .goto 1,58.00,46.17,40,0
+    .goto 1,59.74,43.15,40,0
     >>Loot the |cRXP_PICK_Gnomish Toolboxes|r for |cRXP_LOOT_Gnomish Tools|r
-    .complete 25178,1 --Gnomish Tools (4)
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along28
-    #loop
-    .goto 1,58.97,46.60,0
-    .goto 1,58.97,46.60,40,0
-    .goto 1,59.02,43.38,40,0
     >>Interact with |cRXP_FRIENDLY_Injured Razor Hill Grunts|r
-    .complete 25179,1 --Injured Razor Hill Grunt (4)
-    .target Injured Razor Hill Grunt
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 1,59.76,45.29,0
-    .goto 1,59.76,45.29,40,0
-    .goto 1,60.43,42.60,40,0
-    .goto 1,57.63,46.38,40,0
     >>Kill |cRXP_ENEMY_Foaming Sea Elementals|r
+    .complete 25178,1 --Gnomish Tools (4)
+    .complete 25179,1 --Injured Razor Hill Grunt (4)
     .complete 25177,1 --Foaming Sea Elemental slain (11)
+    .target Injured Razor Hill Grunt
     .mob Foaming Sea Elemental
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 1,53.11,43.14

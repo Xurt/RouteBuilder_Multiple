@@ -738,25 +738,21 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25042 >>Accept Marching On Our Stomachs
     .target Sam Trawley
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along97
+    #completewith Along96
     >>As you go: Kill |cRXP_ENEMY_Stormsnouts|r. Loot them for |cRXP_LOOT_Fresh Stormsnout Steak|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25042,1 --Fresh Stormsnout Steak (4)
     .mob Stormsnout
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 199,44.47,52.53
-    >>Pick up |cRXP_PICK_Taurajo Intelligence|r from the ground
-    .complete 25059,1 --Taurajo Intelligence (1)
-    .isOnQuest 25059
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along97
+    #label Along96
     #loop
-    .goto 199,43.97,51.18,0
-    .goto 199,43.97,51.18,40,0
-    .goto 199,45.60,52.26,40,0
+    .goto 199,45.34,52.46,0
+    .goto 199,45.34,52.46,40,0
+    .goto 199,43.98,51.67,40,0
+    >>Pick up |cRXP_PICK_Taurajo Intelligence|r from the ground
     >>Interact with |cRXP_FRIENDLY_Taurajo Looters|r
-    .complete 25057,1 --Taurajo Looter (5)
+    .complete -25059,1 --Taurajo Intelligence (1)
+    .complete -25057,1 --Taurajo Looter (5)
     .target Taurajo Looter
-    .isOnQuest 25057
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 199,49.18,46.96,0
@@ -870,7 +866,7 @@ step
     .accept 24824 >>Accept The Disturbed Earth
     .target Tauna Skychaser
 step
-    #completewith Along115
+    #completewith Along114
     >>As you go: Kill |cRXP_ENEMY_Disturbed Earth Elementals|r. Loot them for |cRXP_LOOT_Disturbed Earth Fragment|r. |cRXP_WARN_Anything left is finished later|r
     .complete 24824,1 --Disturbed Earth Fragment (4)
     .mob Disturbed Earth Elemental
@@ -881,7 +877,7 @@ step
     .target Gann Stonespire
     .isOnQuest 24632
 step
-    #label Along115
+    #label Along114
     .goto 199,49.23,82.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nato Raintree|r
     .accept 25292 >>Accept Next of Kin
@@ -901,12 +897,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25079 >>Accept Powder Play
     .target Mizzy Pistonhammer
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along118
+    #completewith Along117
     >>As you go: Kill |cRXP_ENEMY_Sapper Specialist|r and loot |cRXP_LOOT_Keg of Blast-O Powder|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25079,1 --Keg of Blast-O Powder (1)
     .mob Sapper Specialist
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along118
+    #label Along117
     .goto 199,49.09,66.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Commander Roberts|r
     .turnin 25081 >>Turn in Claim the Battlescar
@@ -945,7 +941,7 @@ step
     .turnin 24824 >>Turn in The Disturbed Earth
     .target Tauna Skychaser
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along125
+    #completewith Along124
     >>As you go: Kill |cRXP_ENEMY_Razormane Pathfinders|r, |cRXP_ENEMY_Razormane Warfrenzies|r, |cRXP_ENEMY_Razormane Seers|r and |cRXP_ENEMY_Razormane Mankrik Quest Credits|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25084,1 --Razormane Pathfinder (8)
     .mob Razormane Pathfinder
@@ -964,7 +960,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25104 >>Accept Digsite Status
     .target General Twinbraid
 step
-    #label Along125
+    #label Along124
     .goto 199,43.46,78.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hurlston Stonesthrow|r
     .accept 25102 >>Accept No Bull
@@ -1052,7 +1048,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25151 >>Accept He Needs Ale!
     .target Marley Twinbraid
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along138
+    #completewith Along137
     >>As you go: Open the |cRXP_PICK_Keg of Ol' Barkerstout|r. Loot it for |cRXP_LOOT_Mug of Ol' Barkerstout|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25151,1 --Mug of Ol' Barkerstout (1)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
@@ -1072,7 +1068,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25174 >>Accept Twinbraid Needs to Know
     .target Weezil Slipshadow
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along138
+    #label Along137
     .goto 199,50.29,86.50
     >>Interact with |cRXP_FRIENDLY_Burning Debris|r
     .complete 25153,1 --Burning Debris
@@ -1128,25 +1124,16 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hurlston Stonesthrow|r
     .turnin 25102 >>Turn in No Bull
     .target Hurlston Stonesthrow
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along145
-    >>As you go: Kill |cRXP_ENEMY_Mangletooth|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 25085,1 --Mangletooth slain (1)
-    .mob Mangletooth
 step
-    #label Along145
     #loop
     .goto 199,40.41,83.25,0
     .goto 199,40.41,83.25,40,0
     .goto 199,38.13,81.77,40,0
     >>Loot the |cRXP_PICK_Boar Skulls|r for |cRXP_LOOT_Polished Boar Skull|r
-    .complete 24653,1 --Polished Boar Skull (3)
-    .isOnQuest 24653
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 199,37.72,81.55
-    >>Kill |cRXP_ENEMY_Mangletooth|r
-    .complete 25085,1 --Mangletooth slain (1)
-    .mob Mangletooth
+    >>Kill |cRXP_ENEMY_Mangletooth|r << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .complete -24653,1 --Polished Boar Skull (3)
+    .complete 25085,1 << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren --Mangletooth slain (1)
+    .mob Mangletooth << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 199,40.65,79.40,0

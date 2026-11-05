@@ -473,21 +473,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 28505 >>Accept The Battle for Andorhal
     .target Gryphon Master Talonaxe
     .xp <34,1
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along51
-    >>As you go: Kill |cRXP_ENEMY_Mangy Silvermanes|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 26547,1 --Mangy Silvermane slain (8)
-    .mob Mangy Silvermane
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along51
-    #loop
-    .goto 26,14.60,50.00,0
-    .goto 26,14.60,50.00,40,0
-    .goto 26,14.20,52.60,40,0
-    .goto 26,12.00,53.80,40,0
-    >>Interact with |cRXP_FRIENDLY_Trained Razorbeaks|r
-    .complete 26546,1 --Trained Razorbeak (7)
-    .target Trained Razorbeak
 step
     #completewith Drop485x8
     >>|cRXP_LOOT_OOX-09/HL Distress Beacon|r can drop from |cRXP_ENEMY_Saltwater Snapjaw|r, |cRXP_ENEMY_Vilebranch Axe Thrower|r, |cRXP_ENEMY_Vilebranch Witch Doctor|r. Use it to start the quest if you get one
@@ -497,12 +482,16 @@ step
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #label Drop485x8
     #loop
-    .goto 26,15.62,54.04,0
-    .goto 26,15.62,54.04,40,0
+    .goto 26,12.40,52.60,0
+    .goto 26,12.40,52.60,40,0
+    .goto 26,14.20,50.80,40,0
     .goto 26,18.52,55.78,40,0
-    .goto 26,20.38,57.44,40,0
+    .goto 26,15.62,54.04,40,0
+    >>Interact with |cRXP_FRIENDLY_Trained Razorbeaks|r
     >>Kill |cRXP_ENEMY_Mangy Silvermanes|r
+    .complete 26546,1 --Trained Razorbeak (7)
     .complete 26547,1 --Mangy Silvermane slain (8)
+    .target Trained Razorbeak
     .mob Mangy Silvermane
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 26,9.90,44.23

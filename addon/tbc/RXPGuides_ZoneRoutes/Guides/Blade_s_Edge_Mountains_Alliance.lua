@@ -387,6 +387,12 @@ step
     .mob Daggermaw Lashtail
     .isOnQuest 10632
 step
+    #completewith Along49
+    >>As you go: Kill |cRXP_ENEMY_Scalewing Serpents|r. Loot them for |cRXP_LOOT_Scalewing Lightning Gland|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -10657,2 --Scalewing Lightning Gland (5)
+    .mob Scalewing Serpent
+step
+    #label Along49
     .goto 1949,65.69,49.49
     >>Kill |cRXP_ENEMY_Ridgespine Stalkers|r
     .complete 10620,1 --Ridgespine Stalker slain (10)
@@ -1003,17 +1009,13 @@ step
     .isQuestTurnedIn 10819 --any of: Felsworn Gas Mask
     .xp <65,1
 step
-    .goto 1949,74.77,40.47
+    .goto 1949,74.62,39.19
     >>Kill |cRXP_ENEMY_Doomforge Attendants|r
-    .complete 10820,1 --Doomforge Attendant slain (4)
-    .mob Doomforge Attendant
-    .isOnQuest 10820
-step
-    .goto 1949,75.48,40.00
     >>Kill |cRXP_ENEMY_Doomforge Engineers|r
-    .complete 10820,2 --Doomforge Engineer slain (4)
+    .complete -10820,1 --Doomforge Attendant slain (4)
+    .complete -10820,2 --Doomforge Engineer slain (4)
+    .mob Doomforge Attendant
     .mob Doomforge Engineer
-    .isOnQuest 10820
 step
     .goto 1949,73.27,40.03
     >>Click the |cRXP_PICK_Legion Communicator|r

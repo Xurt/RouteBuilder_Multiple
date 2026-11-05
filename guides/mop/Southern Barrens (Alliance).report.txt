@@ -1,5 +1,5 @@
 Southern Barrens - Alliance
-Guide "30-35 Southern Barrens" in group "Zone Routes (Alliance)": 202 steps, 168 stops
+Guide "30-35 Southern Barrens" in group "Zone Routes (Alliance)": 199 steps, 166 stops
 Written to guides/mop/Southern Barrens (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -36,7 +36,7 @@ Step order kept from the last build (locks folder): 108 steps kept, 130 new ones
   Worgen (quests that depend on other zones): 2 more tasks; their whole route comes to 28,516 yd; ends at level 34.8; 1 hearth
   Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 28,844 yd; ends at level 34.8; 1 hearth
 Hearthstone: set at Donnach (Donnach's inn); 1 hearth step in the guide.
-20 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+19 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 6 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (105)

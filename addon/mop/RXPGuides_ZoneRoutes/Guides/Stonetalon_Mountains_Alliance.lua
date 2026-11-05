@@ -276,6 +276,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 25640 --any of: Bombs Away: Windshear Mine!
     .xp <24,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along38
+    >>As you go: Kill |cRXP_ENEMY_Krom'gar Peons|r. Loot them for |cRXP_LOOT_Azure Iron Ore|r. It can also be picked up from |cRXP_PICK_Azure Iron Ore|r on the ground. |cRXP_WARN_Anything left is finished later|r
+    .complete -25642,1 --Azure Iron Ore (10)
+    .mob Krom'gar Peon
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 65,72.52,61.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Boog the "Gear Whisperer"|r
     .accept 25649 >>Accept Minx'll Fix It
@@ -283,6 +288,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 25647 --any of: Illegible Orc Letter
     .xp <24,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along38
     .goto 65,72.48,61.49
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Heliana|r
     .turnin 25646 >>Turn in Windshear Mine Cleanup
@@ -475,12 +481,24 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 25673 --any of: Just Ask Alice
     .xp <25,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along68
+    >>As you go: Kill |cRXP_ENEMY_Goblin Harvesters|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25728,2 --Goblin Harvester slain (5)
+    .mob Goblin Harvester
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along67
+    >>As you go: Kill |cRXP_ENEMY_Goblin Technicians|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25728,1 --Goblin Technician slain (20)
+    .mob Goblin Technician
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along67
     .goto 65,59.58,56.94
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord Fallowmere|r
     .turnin 25669 >>Turn in Rumble in the Lumber... Mill
     .target Lord Fallowmere
     .isOnQuest 25669
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along68
     .goto 65,59.46,56.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Northwatch Captain Kosak|r
     .accept 25739 >>Accept If the Horde Don't Get You...
@@ -508,43 +526,31 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Arcanist Valdurian
     .isQuestTurnedIn 25669 --any of: Rumble in the Lumber... Mill
     .xp <25,1
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 65,56.10,70.20
-    >>Kill |cRXP_ENEMY_Queen Silith|r
-    .complete 25739,1 --Queen Silith slain (1)
-    .mob Queen Silith
-    .isOnQuest 25739
 step
     #loop
     .goto 65,57.52,69.00,0
     .goto 65,57.52,69.00,40,0
     .goto 65,56.80,71.58,40,0
     .goto 65,54.65,74.34,40,0
+    >>Kill |cRXP_ENEMY_Queen Silith|r << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>Kill |cRXP_ENEMY_Queen Siliths|r, |cRXP_ENEMY_Deepmoss Creepers|r, |cRXP_ENEMY_Deepmoss Webspinners|r and |cRXP_ENEMY_Deepmoss Venomspitters|r. Loot them for |cRXP_LOOT_Deepmoss Venom Sac|r
-    .complete 25741,1 --Deepmoss Venom Sac (10)
+    .complete -25739,1 << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren --Queen Silith slain (1)
+    .complete -25741,1 --Deepmoss Venom Sac (10)
     .mob Queen Silith
     .mob Deepmoss Creeper
     .mob Deepmoss Webspinner
     .mob Deepmoss Venomspitter
-    .isOnQuest 25741
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 65,61.88,59.01,0
     .goto 65,61.88,59.01,40,0
-    .goto 65,61.34,55.33,40,0
-    >>Kill |cRXP_ENEMY_Goblin Technicians|r
-    .complete 25728,1 --Goblin Technician slain (20)
-    .mob Goblin Technician
-    .isOnQuest 25728
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 65,62.20,55.95,0
     .goto 65,62.20,55.95,40,0
-    .goto 65,61.74,59.68,40,0
+    >>Kill |cRXP_ENEMY_Goblin Technicians|r
     >>Kill |cRXP_ENEMY_Goblin Harvesters|r
-    .complete 25728,2 --Goblin Harvester slain (5)
+    .complete -25728,1 --Goblin Technician slain (20)
+    .complete -25728,2 --Goblin Harvester slain (5)
+    .mob Goblin Technician
     .mob Goblin Harvester
-    .isOnQuest 25728
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 65,59.58,56.94
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord Fallowmere|r
@@ -572,24 +578,17 @@ step
     .isOnQuest 25741
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 65,49.58,72.79,0
-    .goto 65,49.58,72.79,40,0
-    .goto 65,47.81,75.24,40,0
+    .goto 65,49.54,72.81,0
+    .goto 65,49.54,72.81,40,0
+    .goto 65,47.98,76.26,40,0
     >>Pick up |cRXP_PICK_Eldre'thar Relic|r from the ground
-    .complete 25767,1 --Eldre'thar Relic (8)
-    .isOnQuest 25767
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 65,47.64,74.20,0
-    .goto 65,47.64,74.20,40,0
-    .goto 65,48.66,77.57,40,0
     >>Kill |cRXP_ENEMY_Highborne Charlatans|r, |cRXP_ENEMY_Highborne Sorcerers|r, |cRXP_ENEMY_Lady Benel'deraths|r and |cRXP_ENEMY_Lord Ro'minates|r
-    .complete 25766,1 --Highborne Charlatan (8)
+    .complete -25767,1 --Eldre'thar Relic (8)
+    .complete -25766,1 --Highborne Charlatan (8)
     .mob Highborne Charlatan
     .mob Highborne Sorcerer
     .mob Lady Benel'derath
     .mob Lord Ro'minate
-    .isOnQuest 25766
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 65,71.06,79.66
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Force Commander Valen|r
@@ -632,43 +631,21 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .xp <26,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 65,69.51,74.38,0
-    .goto 65,69.51,74.38,40,0
-    .goto 65,68.98,71.26,40,0
-    >>Kill |cRXP_ENEMY_Krom'gar Assassins|r
-    .complete 25806,1 --Krom'gar Assassin slain (12)
-    .mob Krom'gar Assassin
-    .isOnQuest 25806
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 65,68.89,70.81,0
+    .goto 65,71.33,76.24,0
+    .goto 65,71.33,76.24,40,0
+    .goto 65,69.22,73.76,40,0
     .goto 65,68.89,70.81,40,0
-    .goto 65,69.16,74.02,40,0
-    .goto 65,71.86,76.67,40,0
+    >>Kill |cRXP_ENEMY_Krom'gar Assassins|r
     >>Interact with |cRXP_FRIENDLY_Frightened Miners|r
-    .complete 25809,1 --Frightened Miner (8)
+    >>Click the |cRXP_PICK_Support Beam Marker|r
+    .complete -25806,1 --Krom'gar Assassin slain (12)
+    .complete -25809,1 --Frightened Miner (8)
+    .complete -25811,4 --Support Beam Marker
+    .complete -25811,1 --Support Beam Marker
+    .complete -25811,2 --Support Beam Marker
+    .complete -25811,3 --Support Beam Marker
+    .mob Krom'gar Assassin
     .target Frightened Miner
-    .isOnQuest 25809
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 65,70.64,76.05
-    >>Click the |cRXP_PICK_Support Beam Marker|r
-    .complete 25811,4 --Support Beam Marker
-    .isOnQuest 25811
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 65,70.64,76.05
-    >>Click the |cRXP_PICK_Support Beam Marker|r
-    .complete 25811,1 --Support Beam Marker
-    .isOnQuest 25811
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 65,70.64,76.05
-    >>Click the |cRXP_PICK_Support Beam Marker|r
-    .complete 25811,2 --Support Beam Marker
-    .isOnQuest 25811
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 65,70.64,76.05
-    >>Click the |cRXP_PICK_Support Beam Marker|r
-    .complete 25811,3 --Support Beam Marker
-    .isOnQuest 25811
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 65,72.06,76.03
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Paulson|r
@@ -879,25 +856,24 @@ step
     .target Scout Mistress Yvonia
     .isOnQuest 25878
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along117
+    >>As you go: Kill |cRXP_ENEMY_Stonetalon Rams|r. Loot them for |cRXP_LOOT_Ram Haunch|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25837,2 --Ram Haunch (8)
+    .mob Stonetalon Ram
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along117
     #loop
-    .goto 65,60.19,88.00,0
+    .goto 65,61.43,83.28,0
+    .goto 65,61.43,83.28,40,0
     .goto 65,60.19,88.00,40,0
-    .goto 65,61.99,89.41,40,0
+    .goto 65,62.95,89.02,40,0
     >>Kill |cRXP_ENEMY_Boulderslide Rock Keepers|r, |cRXP_ENEMY_Boulderslide Geomancers|r and |cRXP_ENEMY_Boulderslide Stonepounders|r. Loot them for |cRXP_LOOT_Boulderslide Cheese|r
-    .complete 25837,3 --Boulderslide Cheese (10)
+    >>Loot the |cRXP_PICK_Kalimdor Eagle Nests|r for |cRXP_LOOT_Kalimdor Eagle Egg|r
+    .complete -25837,3 --Boulderslide Cheese (10)
+    .complete -25837,1 --Kalimdor Eagle Egg (6)
     .mob Boulderslide Rock Keeper
     .mob Boulderslide Geomancer
     .mob Boulderslide Stonepounder
-    .isOnQuest 25837
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 65,60.83,82.90,0
-    .goto 65,60.83,82.90,40,0
-    .goto 65,63.94,84.59,40,0
-    .goto 65,64.09,89.56,40,0
-    >>Loot the |cRXP_PICK_Kalimdor Eagle Nests|r for |cRXP_LOOT_Kalimdor Eagle Egg|r
-    .complete 25837,1 --Kalimdor Eagle Egg (6)
-    .isOnQuest 25837
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 65,64.21,81.42,0
@@ -950,22 +926,15 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .xp <26,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 65,75.31,76.81,0
-    .goto 65,75.31,76.81,40,0
-    .goto 65,78.11,78.22,40,0
-    >>Pick up |cRXP_PICK_Alliance Weapon Crate|r from the ground
-    .complete 25822,1 --Alliance Weapon Crate (10)
-    .isOnQuest 25822
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
     .goto 65,75.28,77.83,0
     .goto 65,75.28,77.83,40,0
-    .goto 65,77.59,75.80,40,0
+    .goto 65,78.38,77.33,40,0
+    >>Pick up |cRXP_PICK_Alliance Weapon Crate|r from the ground
     >>Kill |cRXP_ENEMY_Krom'gar Blood Guards|r and |cRXP_ENEMY_Goblin Stripminers|r
-    .complete 25823,1 --Krom'gar Blood Guard (8)
+    .complete -25822,1 --Alliance Weapon Crate (10)
+    .complete -25823,1 --Krom'gar Blood Guard (8)
     .mob Krom'gar Blood Guard
     .mob Goblin Stripminer
-    .isOnQuest 25823
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 65,71.06,79.66
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Force Commander Valen|r
@@ -1144,14 +1113,10 @@ step
     .goto 65,40.77,18.16,40,0
     .goto 65,43.28,17.33,40,0
     >>Kill |cRXP_ENEMY_Corrupted Sentinels|r. Loot them for |cRXP_LOOT_Sentinel's Glaive|r
-    .complete 25913,1 --Sentinel's Glaive (8)
-    .mob Corrupted Sentinel
-    .isOnQuest 25913
-step
-    .goto 65,40.74,17.25
     >>Pick up |cRXP_PICK_Elder Sareth'na's Sketch Book|r from the ground
-    .complete 25912,1 --Elder Sareth'na's Sketch Book (1)
-    .isOnQuest 25912
+    .complete -25913,1 --Sentinel's Glaive (8)
+    .complete -25912,1 --Elder Sareth'na's Sketch Book (1)
+    .mob Corrupted Sentinel
 step
     .goto 65,39.61,30.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Mistress Geleneth|r
@@ -1272,16 +1237,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 65,42.79,25.98,40,0
     .goto 65,43.15,19.11,40,0
     >>Kill |cRXP_ENEMY_Invading Tendrils|r and |cRXP_ENEMY_Invading Crushers|r
-    .complete 25914,2 --Invading Tendril (8)
+    >>Kill |cRXP_ENEMY_Harbinger Aph'lass|r
+    .complete -25914,2 --Invading Tendril (8)
+    .complete -25914,1 --Harbinger Aph'lass slain (1)
     .mob Invading Tendril
     .mob Invading Crusher
-    .isOnQuest 25914
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 65,41.24,22.76
-    >>Kill |cRXP_ENEMY_Harbinger Aph'lass|r
-    .complete 25914,1 --Harbinger Aph'lass slain (1)
     .mob Harbinger Aph'lass
-    .isOnQuest 25914
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 65,39.61,30.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Mistress Geleneth|r
@@ -1301,21 +1262,14 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 65,43.40,39.60,40,0
     .goto 65,40.53,40.66,40,0
     >>Kill |cRXP_ENEMY_Krom'gar Witch Doctors|r, |cRXP_ENEMY_Krom'gar Loggers|r, |cRXP_ENEMY_Krom'gar Warriors|r and |cRXP_ENEMY_Krom'gar Peons|r
-    .complete 25925,2 --Krom'gar Witch Doctor (8)
+    >>Kill |cRXP_ENEMY_Krom'gar Demolishers|r
+    .complete -25925,2 --Krom'gar Witch Doctor (8)
+    .complete -25925,1 --Krom'gar Demolisher slain (3)
     .mob Krom'gar Witch Doctor
     .mob Krom'gar Logger
     .mob Krom'gar Warrior
     .mob Krom'gar Peon
-    .isOnQuest 25925
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 65,43.09,40.74,0
-    .goto 65,43.09,40.74,40,0
-    .goto 65,40.96,42.17,40,0
-    >>Kill |cRXP_ENEMY_Krom'gar Demolishers|r
-    .complete 25925,1 --Krom'gar Demolisher slain (3)
     .mob Krom'gar Demolisher
-    .isOnQuest 25925
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 65,33.09,59.63
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hierophant Malyk|r
@@ -1344,6 +1298,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 25925 --any of: Thal'darah's Vengeance
     .xp <26,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along12
+    >>As you go: Kill |cRXP_ENEMY_Fissure-born Fire Elemental|r and loot |cRXP_LOOT_Blazing Heart of Fire|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -25934,1 --Blazing Heart of Fire (1)
+    .mob Fissure-born Fire Elemental
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 65,30.72,69.30,0
     .goto 65,30.72,69.30,40,0
@@ -1353,6 +1312,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Black Dragon Whelp
     .isOnQuest 25935
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along12
     .goto 65,31.30,73.20
     >>Ascend the Charred Vale
     .complete 25930,1 --Ascend the Charred Vale

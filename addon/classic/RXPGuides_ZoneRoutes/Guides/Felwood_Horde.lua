@@ -527,7 +527,18 @@ step
     .target Greta Mosshoof
     .isQuestTurnedIn 5159 --any of: Cleansed Water Returns to Felwood
     .xp <48,1
+step << Warlock
+    #completewith Along9
+    >>As you go: Kill |cRXP_ENEMY_Jaedenar Legionnaire|r and loot |cRXP_LOOT_Flawless Fel Essence (Jaedenar)|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -7602,2 --Flawless Fel Essence (Jaedenar) (1)
+    .mob Jaedenar Legionnaire
 step
+    #completewith Along7
+    >>As you go: Click the |cRXP_PICK_Brazier of Pain|r. Click the |cRXP_PICK_Brazier of Hatred|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -5165,1 --Extinguish the Brazier of Pain
+    .complete -5165,4 --Extinguish the Brazier of Hatred
+step
+    #label Along7
     .goto 1448/1,-440.41,5006.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captured Arko'narin|r
     .accept 5203 >>Accept Rescue From Jaedenar
@@ -540,25 +551,19 @@ step
     .complete 5203,1 --Protect Arko'narin out of Shadow Hold
     .isOnQuest 5203
 step
-    .goto 1448/1,-443.86,4975.17
+    #label Along9
+    #loop
+    .goto 1448/1,-443.86,4975.17,0
+    .goto 1448/1,-443.86,4975.17,40,0
+    .goto 1448/1,-524.93,5113.55,40,0
     >>Click the |cRXP_PICK_Brazier of Pain|r
-    .complete 5165,1 --Extinguish the Brazier of Pain
-    .isOnQuest 5165
-step
-    .goto 1448/1,-455.93,5017.72
     >>Click the |cRXP_PICK_Brazier of Hatred|r
-    .complete 5165,4 --Extinguish the Brazier of Hatred
-    .isOnQuest 5165
-step
-    .goto 1448/1,-470.31,5091.32
     >>Click the |cRXP_PICK_Brazier of Suffering|r
-    .complete 5165,3 --Extinguish the Brazier of Suffering
-    .isOnQuest 5165
-step
-    .goto 1448/1,-524.93,5113.55
     >>Click the |cRXP_PICK_Brazier of Malice|r
-    .complete 5165,2 --Extinguish the Brazier of Malice
-    .isOnQuest 5165
+    .complete -5165,1 --Extinguish the Brazier of Pain
+    .complete -5165,4 --Extinguish the Brazier of Hatred
+    .complete -5165,3 --Extinguish the Brazier of Suffering
+    .complete -5165,2 --Extinguish the Brazier of Malice
 step
     .goto 1448/1,-1819.83,6909.47
     >>Click the |cRXP_PICK_Deadwood Cauldron|r
@@ -580,15 +585,10 @@ step << Warlock
 step << Warlock
     .goto 1448/1,-986.08,5800.87
     >>Kill |cRXP_ENEMY_Kroshius|r and loot |cRXP_LOOT_Kroshius' Infernal Core|r
-    .complete 7603,2 --Kroshius' Infernal Core (1)
-    .mob Kroshius
-    .isOnQuest 7603
-step << Warlock
-    .goto 1448/1,-986.08,5800.87
     >>Kill |cRXP_ENEMY_Kroshius|r
-    .complete 7603,1 --Kroshius slain (1)
+    .complete -7603,2 --Kroshius' Infernal Core (1)
+    .complete -7603,1 --Kroshius slain (1)
     .mob Kroshius
-    .isOnQuest 7603
 step
     .goto 1448/1,-2082.61,6821.68
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nafien|r

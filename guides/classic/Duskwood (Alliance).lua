@@ -481,19 +481,8 @@ step
     .goto 1431/0,248.24,-10226.25,40,0
     .goto 1431/0,173.18,-10342.17,40,0
     >>Kill |cRXP_ENEMY_Flesh Eaters|r, |cRXP_ENEMY_Bone Chewers|r, |cRXP_ENEMY_Brain Eaters|r and |cRXP_ENEMY_Plague Spreaders|r. Loot them for |cRXP_LOOT_Ghoul Rib|r
-    .complete 133,1 --Ghoul Rib (7)
-    .mob Flesh Eater
-    .mob Bone Chewer
-    .mob Brain Eater
-    .mob Plague Spreader
-    .isOnQuest 133
-step
-    #loop
-    .goto 1431/0,173.18,-10342.17,0
-    .goto 1431/0,173.18,-10342.17,40,0
-    .goto 1431/0,173.72,-10239.93,40,0
-    .goto 1431/0,248.24,-10226.25,40,0
     >>Kill |cRXP_ENEMY_Flesh Eaters|r, |cRXP_ENEMY_Bone Chewers|r, |cRXP_ENEMY_Brain Eaters|r and |cRXP_ENEMY_Plague Spreaders|r. Loot them for |cRXP_LOOT_Ghoul Fang|r
+    .complete -133,1 --Ghoul Rib (7)
     .complete 101,1 --Ghoul Fang (10)
     .mob Flesh Eater
     .mob Bone Chewer
@@ -641,31 +630,18 @@ step
     .isQuestTurnedIn 268 --any of: Return to Sven
 step
     #loop
-    .goto 1431/0,445.34,-10368.45,0
-    .goto 1431/0,445.34,-10368.45,40,0
-    .goto 1431/0,391.34,-10410.57,40,0
+    .goto 1431/0,393.77,-10305.27,0
+    .goto 1431/0,393.77,-10305.27,40,0
+    .goto 1431/0,403.49,-10414.17,40,0
     >>Kill |cRXP_ENEMY_Skeletal Raiders|r
-    .complete 323,1 --Skeletal Raider slain (15)
-    .mob Skeletal Raider
-    .isOnQuest 323
-step
-    #loop
-    .goto 1431/0,374.06,-10422.09,0
-    .goto 1431/0,374.06,-10422.09,40,0
-    .goto 1431/0,378.65,-10238.49,40,0
     >>Kill |cRXP_ENEMY_Skeletal Healers|r
-    .complete 323,2 --Skeletal Healer slain (3)
-    .mob Skeletal Healer
-    .isOnQuest 323
-step
-    #loop
-    .goto 1431/0,366.23,-10389.69,0
-    .goto 1431/0,366.23,-10389.69,40,0
-    .goto 1431/0,379.73,-10258.83,40,0
     >>Kill |cRXP_ENEMY_Skeletal Warders|r
-    .complete 323,3 --Skeletal Warder slain (3)
+    .complete -323,1 --Skeletal Raider slain (15)
+    .complete -323,2 --Skeletal Healer slain (3)
+    .complete -323,3 --Skeletal Warder slain (3)
+    .mob Skeletal Raider
+    .mob Skeletal Healer
     .mob Skeletal Warder
-    .isOnQuest 323
 step
     .goto 1431/0,623.27,-10329.93
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sven Yorgen|r
@@ -920,19 +896,15 @@ step
     .isOnQuest 181
 step
     #loop
-    .goto 1431/0,-1122.82,-10969.11,0
-    .goto 1431/0,-1122.82,-10969.11,40,0
-    .goto 1431/0,-1109.05,-11018.25,40,0
+    .goto 1431/0,-1119.31,-10980.09,0
+    .goto 1431/0,-1119.31,-10980.09,40,0
+    .goto 1431/0,-1161.97,-11106.63,40,0
     >>Kill |cRXP_ENEMY_Nightbane Vile Fangs|r
-    .complete 222,1 --Nightbane Vile Fang slain (8)
-    .mob Nightbane Vile Fang
-    .isOnQuest 222
-step
-    .goto 1431/0,-1161.97,-11106.63
     >>Kill |cRXP_ENEMY_Nightbane Tainted Ones|r
-    .complete 222,2 --Nightbane Tainted One slain (8)
+    .complete -222,1 --Nightbane Vile Fang slain (8)
+    .complete -222,2 --Nightbane Tainted One slain (8)
+    .mob Nightbane Vile Fang
     .mob Nightbane Tainted One
-    .isOnQuest 222
 step
     .goto 1431/0,55.19,-10273.05
     >>Kill |cRXP_ENEMY_Eliza|r and loot |cRXP_LOOT_The Embalmer's Heart|r

@@ -494,35 +494,36 @@ step
     .mob Muckshell Snapclaw
     .isOnQuest 1261
 step
+    #completewith Along63
+    >>As you go: Kill |cRXP_ENEMY_North Tent|r. Kill |cRXP_ENEMY_Northeast Tent|r. Kill |cRXP_ENEMY_East Tent|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -11205,1 --North Tent Burned (1)
+    .complete -11205,2 --Northeast Tent Burned (1)
+    .complete -11205,3 --East Tent Burned (1)
+    .mob North Tent
+    .mob Northeast Tent
+    .mob East Tent
+step
+    #label Along63
     .goto 1445/1,-3454.05,-3663.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apothecary Cylla|r
     .accept 11186 >>Accept Signs of Treachery?
     .target Apothecary Cylla
 step
-    .goto 1445/1,-3421.50,-3640.88
-    >>Kill |cRXP_ENEMY_North Tent|r
-    .complete 11205,1 --North Tent Burned (1)
-    .mob North Tent
-    .isOnQuest 11205
-step
-    .goto 1445/1,-3455.62,-3662.23
-    >>Kill |cRXP_ENEMY_Northeast Tent|r
-    .complete 11205,2 --Northeast Tent Burned (1)
-    .mob Northeast Tent
-    .isOnQuest 11205
-step
-    .goto 1445/1,-3470.32,-3701.08
-    >>Kill |cRXP_ENEMY_East Tent|r
-    .complete 11205,3 --East Tent Burned (1)
-    .mob East Tent
-    .isOnQuest 11205
-step
     #loop
-    .goto 1445/1,-3439.35,-3735.03,0
-    .goto 1445/1,-3439.35,-3735.03,40,0
-    .goto 1445/1,-3399.45,-3653.83,40,0
+    .goto 1445/1,-3421.50,-3640.88,0
+    .goto 1445/1,-3421.50,-3640.88,40,0
+    .goto 1445/1,-3445.65,-3711.23,40,0
+    >>Kill |cRXP_ENEMY_North Tent|r
+    >>Kill |cRXP_ENEMY_Northeast Tent|r
+    >>Kill |cRXP_ENEMY_East Tent|r
     >>Kill |cRXP_ENEMY_Grimtotem Earthbinders|r and |cRXP_ENEMY_Grimtotem Destroyers|r
+    .complete -11205,1 --North Tent Burned (1)
+    .complete -11205,2 --Northeast Tent Burned (1)
+    .complete -11205,3 --East Tent Burned (1)
     .complete 11156,1 --Direhorn Grimtotems killed (8)
+    .mob North Tent
+    .mob Northeast Tent
+    .mob East Tent
     .mob Grimtotem Earthbinder
     .mob Grimtotem Destroyer
 step
@@ -758,6 +759,12 @@ step << Mage
     .isQuestTurnedIn 1954 --any of: The Infernal Orb
     .xp <35,1
 step << Mage
+    #completewith Along2
+    >>As you go: Kill |cRXP_ENEMY_Demon of the Orb|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -1955,1 --Demon of the Orb slain (1)
+    .mob Demon of the Orb
+step << Mage
+    #label Along2
     .goto 1445/1,-3393.15,-4031.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
     .accept 1957 >>Accept Mana Surges
@@ -767,15 +774,11 @@ step << Mage
 step << Mage
     .goto 1445/1,-3381.07,-4026.23
     >>Kill |cRXP_ENEMY_Mana Surges|r
-    .complete 1957,1 --Mana Surge slain (12)
-    .mob Mana Surge
-    .isOnQuest 1957
-step << Mage
-    .goto 1445/1,-3378.97,-4027.28
     >>Kill |cRXP_ENEMY_Demon of the Orb|r
-    .complete 1955,1 --Demon of the Orb slain (1)
+    .complete -1957,1 --Mana Surge slain (12)
+    .complete -1955,1 --Demon of the Orb slain (1)
+    .mob Mana Surge
     .mob Demon of the Orb
-    .isOnQuest 1955
 step << Mage
     .goto 1445/1,-3369.00,-4035.33
     >>Kill the Demon of the Orb
@@ -895,14 +898,14 @@ step
     .accept 11217 >>Accept Catch a Dragon by the Tail
     .target Gizzix Grimegurgle
 step
-    #completewith Along25
+    #completewith Along24
     >>As you go: Kill |cRXP_ENEMY_Firemane Scouts|r. Kill |cRXP_ENEMY_Firemane Ash Tails|r. |cRXP_WARN_Anything left is finished later|r
     .complete 1168,1 --Firemane Scout slain (10)
     .complete 1168,2 --Firemane Ash Tail slain (10)
     .mob Firemane Scout
     .mob Firemane Ash Tail
 step
-    #label Along25
+    #label Along24
     .goto 1445/1,-3004.65,-4328.28
     >>Pick up |cRXP_PICK_Mok'Morokk's Grog|r from the ground
     .complete 1166,2 --Mok'Morokk's Grog (1)
@@ -930,26 +933,23 @@ step
     .target Brogg
     .isQuestTurnedIn 11161 --any of: The Essence of Enmity
 step
-    #completewith Along29
+    #completewith Along27
     >>As you go: Kill |cRXP_ENEMY_Searing Hatchlings|r and |cRXP_ENEMY_Searing Whelps|r. Loot them for |cRXP_LOOT_Searing Tongue|r. Kill |cRXP_ENEMY_Searing Hatchlings|r and |cRXP_ENEMY_Searing Whelps|r. Loot them for |cRXP_LOOT_Searing Heart|r. |cRXP_WARN_Anything left is finished later|r
     .complete 1169,1 --Searing Tongue (7)
     .complete 1169,2 --Searing Heart (7)
     .mob Searing Hatchling
     .mob Searing Whelp
 step
-    .goto 1445/1,-3312.82,-4344.73
-    >>Pick up |cRXP_PICK_Mok'Morokk's Snuff|r from the ground
-    .complete 1166,1 --Mok'Morokk's Snuff (1)
-step
-    #label Along29
+    #label Along27
     #loop
-    .goto 1445/1,-3327.00,-4322.33,0
-    .goto 1445/1,-3327.00,-4322.33,40,0
+    .goto 1445/1,-3369.00,-4427.33,0
     .goto 1445/1,-3369.00,-4427.33,40,0
+    .goto 1445/1,-3327.00,-4322.33,40,0
+    >>Pick up |cRXP_PICK_Mok'Morokk's Snuff|r from the ground
     >>Kill |cRXP_ENEMY_Stonemaul Spirits|r
-    .complete 11159,1 --Stonemaul Spirits laid to rest (10)
+    .complete 1166,1 --Mok'Morokk's Snuff (1)
+    .complete -11159,1 --Stonemaul Spirits laid to rest (10)
     .mob Stonemaul Spirit
-    .isOnQuest 11159
 step
     .goto 1445/1,-3172.65,-4622.28
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brogg|r
@@ -963,11 +963,11 @@ step
     .target Brogg
     .isQuestTurnedIn 11159 --any of: Spirits of Stonemaul Hold
 step
-    #completewith Along32
+    #completewith Along30
     >>As you go: Pick up |cRXP_PICK_Wyrmtail|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 11217,1 --Wyrmtail (8)
 step
-    #label Along32
+    #label Along30
     #loop
     .goto 1445/1,-3328.57,-4688.43,0
     .goto 1445/1,-3328.57,-4688.43,40,0

@@ -1,7 +1,7 @@
 ## Interface: 11508, 11509
 ## Title: RestedXP Zone Routes
-## Notes: 64 zone guide file(s) made by RouteBuilder, packed 2026-10-23 18:27
-## Version: 2026.10.23
+## Notes: 64 zone guide file(s) made by RouteBuilder, packed 2026-11-05 09:54
+## Version: 2026.11.05
 ## Dependencies: RXPGuides
 
 Guides\Arathi_Highlands_Alliance.lua

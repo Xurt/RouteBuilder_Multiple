@@ -1,5 +1,5 @@
 Hillsbrad Foothills - Horde - part 1 of 7, planned from level 20
-Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 45 steps, 27 stops
+Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 43 steps, 26 stops
 Written to guides/classic/Hillsbrad Foothills (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -22,7 +22,6 @@ Step order kept from the last build (locks folder): 19 steps kept, 7 new ones sl
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
 13 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
 1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
-2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (15)
@@ -178,7 +177,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Hillsbrad Foothills - Horde - part 3 of 7, planned from level 26
-Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 11 steps, 8 stops
+Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 9 steps, 6 stops
 Written to guides/classic/Hillsbrad Foothills (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -247,7 +246,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Hillsbrad Foothills - Horde - part 4 of 7, planned from level 29
-Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 35 steps, 31 stops
+Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 27 steps, 24 stops
 Written to guides/classic/Hillsbrad Foothills (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -268,7 +267,6 @@ Step order kept from the last build (locks folder): 23 steps kept, 7 new ones sl
   everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 10,167 yd; ends at level 29.4; at its hardest you are 2.0 levels below the mobs
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
 1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
-1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (10)
 ------------------------
@@ -316,7 +314,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Hillsbrad Foothills - Horde - part 5 of 7, planned from level 32
-Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 25 steps, 22 stops
+Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 21 steps, 18 stops
 Written to guides/classic/Hillsbrad Foothills (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -383,7 +381,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Hillsbrad Foothills - Horde - part 6 of 7, planned from level 35
-Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 15 steps, 13 stops
+Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 14 steps, 12 stops
 Written to guides/classic/Hillsbrad Foothills (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -439,7 +437,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Hillsbrad Foothills - Horde - part 7 of 7, planned from level 38
-Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 10 steps, 9 stops
+Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 9 steps, 8 stops
 Written to guides/classic/Hillsbrad Foothills (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

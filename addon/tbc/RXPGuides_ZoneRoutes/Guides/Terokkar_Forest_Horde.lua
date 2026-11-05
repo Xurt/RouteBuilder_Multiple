@@ -1033,29 +1033,23 @@ step
     .target High Priest Orglum
 step
     #loop
-    .goto 1952,28.83,52.39,0
-    .goto 1952,28.83,52.39,40,0
-    .goto 1952,26.98,54.72,40,0
+    .goto 1952,29.82,51.62,0
+    .goto 1952,29.82,51.62,40,0
+    .goto 1952,27.36,53.39,40,0
     .goto 1952,26.69,58.28,40,0
     >>Kill |cRXP_ENEMY_Deathtalon Spirits|r
     >>Kill |cRXP_ENEMY_Screeching Spirits|r
     >>Kill |cRXP_ENEMY_Spirit Ravens|r
+    >>Open the |cRXP_PICK_Cabal Chest|r. Loot it for |cRXP_LOOT_Gavel of K'alen|r
+    >>Open the |cRXP_PICK_Cabal Chest|r. Loot it for |cRXP_LOOT_Drape of Arunen|r
     .complete 10848,1 --Deathtalon Spirit slain (4)
     .complete 10848,2 --Screeching Spirit slain (4)
     .complete 10848,3 --Spirit Raven slain (2)
+    .complete -10881,2 --Gavel of K'alen (1)
+    .complete -10881,1 --Drape of Arunen (1)
     .mob Deathtalon Spirit
     .mob Screeching Spirit
     .mob Spirit Raven
-step
-    .goto 1952,29.65,51.69
-    >>Open the |cRXP_PICK_Cabal Chest|r. Loot it for |cRXP_LOOT_Gavel of K'alen|r
-    .complete 10881,2 --Gavel of K'alen (1)
-    .isOnQuest 10881
-step
-    .goto 1952,32.10,51.20
-    >>Open the |cRXP_PICK_Cabal Chest|r. Loot it for |cRXP_LOOT_Drape of Arunen|r
-    .complete 10881,1 --Drape of Arunen (1)
-    .isOnQuest 10881
 step
     .goto 1952,31.11,46.65
     >>Open the |cRXP_PICK_Cabal Chest|r. Loot it for |cRXP_LOOT_Scroll of Atalor|r
@@ -1313,11 +1307,11 @@ step
     .complete 10915,1 --Contents of the Auchenai Coffin destroyed (1)
     .mob Reanimated Exarch
 step
-    #completewith Along142
+    #completewith Along140
     >>As you go: Pick up |cRXP_PICK_Restless Bones|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 10030,1 --Restless Bones (10)
 step
-    #label Along142
+    #label Along140
     .goto 1952,37.45,51.54
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kirrik the Awakened|r
     .turnin 10861 >>Turn in Veil Lithic: Preemptive Strike
@@ -1334,12 +1328,12 @@ step
     .accept 10898 >>Accept Skywing
     .target Skywing
 step
-    #completewith Along145
+    #completewith Along143
     >>As you go: Click the |cRXP_PICK_Violet Signal Fire|r. Click the |cRXP_PICK_Emerald Signal Fire|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10874,3 --Violet Fire Extinguished
     .complete 10874,2 --Emerald Fire Extinguished
 step
-    #label Along145
+    #label Along143
     .goto 1952,55.66,69.49
     >>Escort Skywing
     .complete 10898,1 --Escort Skywing
@@ -1357,11 +1351,11 @@ step
     .complete 10874,1 --Sapphire Fire Extinguished
     .complete 10874,4 --Bloodstone Fire Extinguished
 step
-    #completewith Along147
+    #completewith Along145
     >>As you go: Pick up |cRXP_PICK_Restless Bones|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 10030,1 --Restless Bones (10)
 step
-    #label Along147
+    #label Along145
     .goto 1952,49.71,76.19
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vindicator Haylen|r
     .accept 10920 >>Accept For the Fallen
@@ -1384,7 +1378,7 @@ step
     .complete 10920,1 --Dreadfang Widow slain (20)
     .mob Dreadfang Widow
 step
-    #completewith Along153
+    #completewith Along151
     >>As you go: Pick up |cRXP_PICK_Restless Bones|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 10030,1 --Restless Bones (10)
 step
@@ -1404,7 +1398,7 @@ step
     .turnin 10921 >>Turn in Terokkarantula
     .target Vindicator Haylen
 step
-    #label Along153
+    #label Along151
     .goto 1952,43.92,76.40
     >>Open the |cRXP_PICK_Massive Treasure Chest|r. Loot it for |cRXP_LOOT_Dread Relic|r
     .complete 10877,1 --Dread Relic (1)
@@ -1623,19 +1617,15 @@ step
     .xp <64,1
 step
     #loop
-    .goto 1952,20.19,62.86,0
-    .goto 1952,20.19,62.86,40,0
+    .goto 1952,20.06,63.24,0
+    .goto 1952,20.06,63.24,40,0
     .goto 1952,19.80,65.23,40,0
     >>Kill |cRXP_ENEMY_Boulderfist Invaders|r
-    .complete 9889,1 --Boulderfist Invader slain (10)
-    .mob Boulderfist Invader
-    .isOnQuest 9889
-step
-    .goto 1952,20.06,63.24
     >>Kill |cRXP_ENEMY_Unkor the Ruthless|r
-    .complete 9889,2 --Unkor the Ruthless slain (1)
+    .complete -9889,1 --Boulderfist Invader slain (10)
+    .complete -9889,2 --Unkor the Ruthless slain (1)
+    .mob Boulderfist Invader
     .mob Unkor the Ruthless
-    .isOnQuest 9889
 step
     .goto 1952,20.06,63.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Unkor the Ruthless|r

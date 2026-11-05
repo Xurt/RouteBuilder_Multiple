@@ -431,11 +431,16 @@ step
     .accept 1088 >>Accept Ordanus
     .target Braelyn Firehand
 step
+    #completewith Along15
+    >>As you go: Click the |cRXP_PICK_Gaea Dirt Mound|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -6381,1 --Gaea seed planted
+step
     .goto 1442/1,1744.21,900.72
     >>Kill |cRXP_ENEMY_Bloodfury Ripper|r and loot |cRXP_LOOT_Bloodfury Ripper's Remains|r
     .complete 6283,1 --Bloodfury Ripper's Remains (1)
     .mob Bloodfury Ripper
 step
+    #label Along15
     #loop
     .goto 1442/1,1726.14,512.90,0
     .goto 1442/1,1726.14,512.90,40,0

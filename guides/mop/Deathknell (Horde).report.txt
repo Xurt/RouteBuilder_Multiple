@@ -1,5 +1,5 @@
 Deathknell - Horde
-Guide "3-4 Deathknell" in group "Zone Routes (Horde)": 63 steps, 55 stops
+Guide "3-4 Deathknell" in group "Zone Routes (Horde)": 62 steps, 54 stops
 Written to guides/mop/Deathknell (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

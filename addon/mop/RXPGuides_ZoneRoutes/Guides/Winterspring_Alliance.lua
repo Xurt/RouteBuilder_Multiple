@@ -957,6 +957,12 @@ step
     .target Haleh
     .isQuestTurnedIn 28848 --any of: Trailing the Spiritspeaker
 step
+    #completewith Along124
+    >>As you go: Kill |cRXP_ENEMY_Altered Beasts|r. Loot them for |cRXP_LOOT_Mana-Addled Brain|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -28837,1 --Mana-Addled Brain (5)
+    .mob Altered Beast
+step
+    #label Along124
     .goto 83,58.01,63.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Haleh|r
     .turnin 28847 >>Turn in The Pursuit of Umbranse
@@ -1008,34 +1014,27 @@ step
     .accept 28829 >>Accept Razor Beak and Antlers Pointy
     .target Jadrag the Slicer
 step
-    #completewith Along134
+    #completewith Along132
     >>As you go: Kill |cRXP_ENEMY_Moontouched Owlbeasts|r, |cRXP_ENEMY_Berserk Owlbeasts|r and |cRXP_ENEMY_Crazed Owlbeasts|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28829,1 --Moontouched Owlbeast (12)
     .mob Moontouched Owlbeast
     .mob Berserk Owlbeast
     .mob Crazed Owlbeast
 step
+    #label Along132
     .goto 83,65.07,73.82
     >>Open the |cRXP_PICK_Owlbeast Claw-Totem|r. Loot it for |cRXP_LOOT_Essence of the Claw-Totem|r
-    .complete 28839,1 --Essence of the Claw-Totem (1)
-    .isOnQuest 28839
-step
-    .goto 83,65.64,77.64
     >>Open the |cRXP_PICK_Owlbeast Life-Totem|r. Loot it for |cRXP_LOOT_Essence of the Life-Totem|r
-    .complete 28839,2 --Essence of the Life-Totem (1)
-    .isOnQuest 28839
-step
-    #label Along134
-    .goto 83,64.82,81.07
-    >>Open the |cRXP_PICK_Owlbeast Moon-Totem|r. Loot it for |cRXP_LOOT_Essence of the Moon-Totem|r
-    .complete 28839,3 --Essence of the Moon-Totem (1)
-    .isOnQuest 28839
+    .complete -28839,1 --Essence of the Claw-Totem (1)
+    .complete -28839,2 --Essence of the Life-Totem (1)
 step
     #loop
-    .goto 83,64.01,79.90,0
-    .goto 83,64.01,79.90,40,0
+    .goto 83,64.73,75.26,0
     .goto 83,64.73,75.26,40,0
+    .goto 83,64.01,79.90,40,0
+    >>Open the |cRXP_PICK_Owlbeast Moon-Totem|r. Loot it for |cRXP_LOOT_Essence of the Moon-Totem|r
     >>Kill |cRXP_ENEMY_Moontouched Owlbeasts|r, |cRXP_ENEMY_Berserk Owlbeasts|r and |cRXP_ENEMY_Crazed Owlbeasts|r
+    .complete -28839,3 --Essence of the Moon-Totem (1)
     .complete 28829,1 --Moontouched Owlbeast (12)
     .mob Moontouched Owlbeast
     .mob Berserk Owlbeast
@@ -1060,6 +1059,13 @@ step
     .target Haleh
     .isQuestTurnedIn 28839 --any of: Magic Prehistoric
 step
+    #completewith Along137
+    >>As you go: Kill |cRXP_ENEMY_Ice Avatars|r and |cRXP_ENEMY_Frostilicus|r. Loot them for |cRXP_LOOT_Winterwater|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -28840,1 --Winterwater (7)
+    .mob Ice Avatar
+    .mob Frostilicus
+step
+    #label Along137
     #loop
     .goto 83,58.93,77.53,0
     .goto 83,58.93,77.53,40,0
@@ -1078,14 +1084,10 @@ step
     .goto 83,59.49,84.72,40,0
     .goto 83,61.68,86.59,40,0
     >>Kill |cRXP_ENEMY_Ice Avatars|r and |cRXP_ENEMY_Frostilicus|r. Loot them for |cRXP_LOOT_Winterwater|r
-    .complete 28840,1 --Winterwater (7)
-    .mob Ice Avatar
-    .mob Frostilicus
-    .isOnQuest 28840
-step
-    .goto 83,63.26,85.99
     >>Kill |cRXP_ENEMY_Frostilicus|r
+    .complete -28840,1 --Winterwater (7)
     .complete 28831,1 --Frostilicus slain (1)
+    .mob Ice Avatar
     .mob Frostilicus
 step
     .goto 83,61.87,74.67

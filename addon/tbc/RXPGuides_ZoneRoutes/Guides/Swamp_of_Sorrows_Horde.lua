@@ -219,22 +219,16 @@ step
     .isQuestTurnedIn 1422 --any of: Threat From the Sea
 step
     #loop
-    .goto 1435/0,-4193.94,-10920.17,0
-    .goto 1435/0,-4193.94,-10920.17,40,0
+    .goto 1435/0,-4206.32,-10913.13,0
+    .goto 1435/0,-4206.32,-10913.13,40,0
     .goto 1435/0,-4142.56,-10974.76,40,0
+    .goto 1435/0,-4085.44,-11060.39,40,0
     >>Kill |cRXP_ENEMY_Marsh Murlocs|r
-    .complete 1426,1 --Marsh Murloc slain (10)
-    .mob Marsh Murloc
-    .isOnQuest 1426
-step
-    #loop
-    .goto 1435/0,-4186.37,-10954.27,0
-    .goto 1435/0,-4186.37,-10954.27,40,0
-    .goto 1435/0,-4125.58,-11005.34,40,0
     >>Kill |cRXP_ENEMY_Marsh Inkspewers|r
-    .complete 1426,2 --Marsh Inkspewer slain (10)
+    .complete -1426,1 --Marsh Murloc slain (10)
+    .complete -1426,2 --Marsh Inkspewer slain (10)
+    .mob Marsh Murloc
     .mob Marsh Inkspewer
-    .isOnQuest 1426
 step
     #loop
     .goto 1435/0,-3665.00,-10992.65,0
@@ -327,29 +321,19 @@ step
     .target Katar
     .isQuestTurnedIn 1427 --any of: Threat From the Sea
 step
-    .goto 1435/0,-3697.80,-10853.65
-    >>Kill |cRXP_ENEMY_Marsh Inkspewers|r
-    .complete 1428,1 --Marsh Inkspewer slain (10)
-    .mob Marsh Inkspewer
-    .isOnQuest 1428
-step
     #loop
     .goto 1435/0,-3671.42,-10850.59,0
     .goto 1435/0,-3671.42,-10850.59,40,0
-    .goto 1435/0,-3644.81,-10955.49,40,0
+    .goto 1435/0,-3675.32,-10973.99,40,0
+    >>Kill |cRXP_ENEMY_Marsh Inkspewers|r
     >>Kill |cRXP_ENEMY_Marsh Oracles|r
-    .complete 1428,3 --Marsh Oracle slain (10)
-    .mob Marsh Oracle
-    .isOnQuest 1428
-step
-    #loop
-    .goto 1435/0,-3645.04,-10883.31,0
-    .goto 1435/0,-3645.04,-10883.31,40,0
-    .goto 1435/0,-3665.00,-10992.65,40,0
     >>Kill |cRXP_ENEMY_Marsh Flesheaters|r
-    .complete 1428,2 --Marsh Flesheater slain (10)
+    .complete -1428,1 --Marsh Inkspewer slain (10)
+    .complete -1428,3 --Marsh Oracle slain (10)
+    .complete -1428,2 --Marsh Flesheater slain (10)
+    .mob Marsh Inkspewer
+    .mob Marsh Oracle
     .mob Marsh Flesheater
-    .isOnQuest 1428
 step
     .goto 1435/0,-4144.16,-10850.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Katar|r

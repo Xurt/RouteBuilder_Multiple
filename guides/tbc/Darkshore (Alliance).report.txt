@@ -1,5 +1,5 @@
 Darkshore - Alliance - part 1 of 3, planned from level 10
-Guide "10-22 Darkshore" in group "Zone Routes (Alliance)": this part has 104 steps, 89 stops
+Guide "10-22 Darkshore" in group "Zone Routes (Alliance)": this part has 103 steps, 88 stops
 Written to guides/tbc/Darkshore (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -137,7 +137,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Darkshore - Alliance - part 2 of 3, planned from level 17
-Guide "10-22 Darkshore" in group "Zone Routes (Alliance)": this part has 57 steps, 54 stops
+Guide "10-22 Darkshore" in group "Zone Routes (Alliance)": this part has 56 steps, 53 stops
 Written to guides/tbc/Darkshore (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

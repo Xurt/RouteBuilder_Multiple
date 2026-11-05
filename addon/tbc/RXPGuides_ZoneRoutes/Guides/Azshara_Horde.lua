@@ -197,33 +197,19 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kim'jael|r
     .accept 3601 >>Accept Kim'jael Indeed!
     .target Kim'jael
-step << Mage
+step
     #loop
     .goto 1447/1,-6127.40,4334.73,0
     .goto 1447/1,-6127.40,4334.73,40,0
     .goto 1447/1,-6251.13,4378.69,40,0
-    >>Kill |cRXP_ENEMY_Blood Elf Surveyors|r and |cRXP_ENEMY_Blood Elf Reclaimers|r. Loot them for |cRXP_LOOT_Glittering Dust|r
-    .complete 8251,1 --Glittering Dust (10)
-    .mob Blood Elf Surveyor
-    .mob Blood Elf Reclaimer
-step
-    #loop
-    .goto 1447/1,-6127.40,4334.73,0
-    .goto 1447/1,-6127.40,4334.73,40,0
-    .goto 1447/1,-6258.73,4356.37,40,0
+    >>Kill |cRXP_ENEMY_Blood Elf Surveyors|r and |cRXP_ENEMY_Blood Elf Reclaimers|r. Loot them for |cRXP_LOOT_Glittering Dust|r << Mage
     >>Kill |cRXP_ENEMY_Blood Elf Reclaimers|r
-    .complete 3505,1 --Blood Elf Reclaimer slain (10)
-    .mob Blood Elf Reclaimer
-    .isOnQuest 3505
-step
-    #loop
-    .goto 1447/1,-6124.86,4330.33,0
-    .goto 1447/1,-6124.86,4330.33,40,0
-    .goto 1447/1,-6256.20,4380.72,40,0
     >>Kill |cRXP_ENEMY_Blood Elf Surveyors|r
-    .complete 3505,2 --Blood Elf Surveyor slain (10)
+    .complete 8251,1 << Mage --Glittering Dust (10)
+    .complete -3505,1 --Blood Elf Reclaimer slain (10)
+    .complete -3505,2 --Blood Elf Surveyor slain (10)
     .mob Blood Elf Surveyor
-    .isOnQuest 3505
+    .mob Blood Elf Reclaimer
 step
     .goto 1447/1,-6283.58,4286.38
     >>Find Magus Rimtori's camp
@@ -268,7 +254,7 @@ step << Priest
     .isQuestTurnedIn 8254 --any of: Cenarion Aid
     .xp <50,1
 step
-    #completewith Along16
+    #completewith Along14
     >>As you go: Kill |cRXP_ENEMY_Spitelash Sirens|r, |cRXP_ENEMY_Spitelash Myrmidons|r, |cRXP_ENEMY_Spitelash Battlemasters|r and |cRXP_ENEMY_Spitelash Enchantress|r. Loot them for |cRXP_LOOT_Some Rune|r. |cRXP_WARN_Anything left is finished later|r
     .complete 5534,1 --Some Rune (1)
     .mob Spitelash Siren
@@ -276,7 +262,7 @@ step
     .mob Spitelash Battlemaster
     .mob Spitelash Enchantress
 step
-    #label Along16
+    #label Along14
     #loop
     .goto 1447/1,-5274.99,3431.26,0
     .goto 1447/1,-5274.99,3431.26,40,0
@@ -743,21 +729,12 @@ step
 step
     .goto 1447/1,-6153.77,3827.20
     >>Kill |cRXP_ENEMY_Hetaeras|r. Loot them for |cRXP_LOOT_Hetaera's Bruised Head|r
-    .complete 3510,3 --Hetaera's Bruised Head (10)
-    .mob Hetaera
-    .isOnQuest 3510
-step
-    .goto 1447/1,-6153.77,3827.20
     >>Kill |cRXP_ENEMY_Hetaeras|r. Loot them for |cRXP_LOOT_Hetaera's Bloodied Head|r
-    .complete 3510,2 --Hetaera's Bloodied Head (10)
-    .mob Hetaera
-    .isOnQuest 3510
-step
-    .goto 1447/1,-6153.77,3827.20
     >>Kill |cRXP_ENEMY_Hetaeras|r. Loot them for |cRXP_LOOT_Hetaera's Beaten Head|r
-    .complete 3510,1 --Hetaera's Beaten Head (10)
+    .complete -3510,3 --Hetaera's Bruised Head (10)
+    .complete -3510,2 --Hetaera's Bloodied Head (10)
+    .complete -3510,1 --Hetaera's Beaten Head (10)
     .mob Hetaera
-    .isOnQuest 3510
 step
     .goto 1447/1,-7188.22,3894.83
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord Arkkoroc|r

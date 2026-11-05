@@ -371,38 +371,35 @@ step
     .complete 9805,4 --Windyreed Quest Credit (Hut 03)
     .target Windyreed Quest Credit (Hut 03)
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 107,72.19,69.90
-    >>Click the |cRXP_PICK_First Burning Blade Pyre|r
-    .complete 9910,1 --First Burning Blade Pyre
-    .isOnQuest 9910
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 107,74.70,69.91
-    >>Click the |cRXP_PICK_Second Burning Blade Pyre|r
-    .complete 9910,2 --Second Burning Blade Pyre
-    .isOnQuest 9910
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 107,75.74,68.31
-    >>Click the |cRXP_PICK_Third Burning Blade Pyre|r
-    .complete 9910,3 --Third Burning Blade Pyre
-    .isOnQuest 9910
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 107,75.10,63.98,0
-    .goto 107,75.10,63.98,40,0
-    .goto 107,77.46,61.05,40,0
-    >>Kill |cRXP_ENEMY_Boulderfist Mystics|r
-    .complete 9906,1 --Boulderfist Mystic slain (8)
+    #completewith Along42
+    >>As you go: Kill |cRXP_ENEMY_Boulderfist Mystics|r. Kill |cRXP_ENEMY_Boulderfist Crushers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -9906,1 --Boulderfist Mystic slain (8)
+    .complete -9906,2 --Boulderfist Crusher slain (8)
     .mob Boulderfist Mystic
-    .isOnQuest 9906
+    .mob Boulderfist Crusher
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along42
+    #loop
+    .goto 107,75.74,68.31,0
+    .goto 107,75.74,68.31,40,0
+    .goto 107,72.19,69.90,40,0
+    >>Click the |cRXP_PICK_First Burning Blade Pyre|r
+    >>Click the |cRXP_PICK_Second Burning Blade Pyre|r
+    >>Click the |cRXP_PICK_Third Burning Blade Pyre|r
+    .complete -9910,1 --First Burning Blade Pyre
+    .complete -9910,2 --Second Burning Blade Pyre
+    .complete -9910,3 --Third Burning Blade Pyre
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 107,74.47,64.02,0
-    .goto 107,74.47,64.02,40,0
-    .goto 107,76.27,60.16,40,0
+    .goto 107,74.50,68.69,0
+    .goto 107,74.50,68.69,40,0
+    .goto 107,75.10,63.98,40,0
+    >>Kill |cRXP_ENEMY_Boulderfist Mystics|r
     >>Kill |cRXP_ENEMY_Boulderfist Crushers|r
-    .complete 9906,2 --Boulderfist Crusher slain (8)
+    .complete -9906,1 --Boulderfist Mystic slain (8)
+    .complete -9906,2 --Boulderfist Crusher slain (8)
+    .mob Boulderfist Mystic
     .mob Boulderfist Crusher
-    .isOnQuest 9906
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #completewith next
     .hs >>Hearth to Mathar G'ochar's inn. |cRXP_WARN_Walk instead if you are already nearby|r
@@ -434,6 +431,15 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 9906 --any of: Message in a Battle
     .xp <64,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along48
+    >>As you go: Pick up |cRXP_PICK_Bleeding Hollow Supply Crate|r from the ground. Kill |cRXP_ENEMY_Boulderfist Warriors|r. Kill |cRXP_ENEMY_Boulderfist Mages|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -9916,1 --Bleeding Hollow Supply Crate (10)
+    .complete -9907,1 --Boulderfist Warrior slain (10)
+    .complete -9907,2 --Boulderfist Mage slain (10)
+    .mob Boulderfist Warrior
+    .mob Boulderfist Mage
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along48
     .goto 107,37.92,27.53
     >>Kill |cRXP_ENEMY_Murkblood Invader|r and loot |cRXP_LOOT_Murkblood Invasion Plans|r. Use it to start the quest
     .collect 24558,1,9872 --Murkblood Invasion Plans (1)
@@ -441,28 +447,18 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .use 24558
     .mob Murkblood Invader
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 107,39.55,29.10
+    #loop
+    .goto 107,39.55,29.10,0
+    .goto 107,39.55,29.10,40,0
+    .goto 107,41.22,34.07,40,0
     >>Pick up |cRXP_PICK_Bleeding Hollow Supply Crate|r from the ground
-    .complete 9916,1 --Bleeding Hollow Supply Crate (10)
-    .isOnQuest 9916
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 107,39.62,29.07,0
-    .goto 107,39.62,29.07,40,0
-    .goto 107,41.22,34.07,40,0
     >>Kill |cRXP_ENEMY_Boulderfist Warriors|r
-    .complete 9907,1 --Boulderfist Warrior slain (10)
-    .mob Boulderfist Warrior
-    .isOnQuest 9907
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 107,39.92,29.38,0
-    .goto 107,39.92,29.38,40,0
-    .goto 107,41.22,34.07,40,0
     >>Kill |cRXP_ENEMY_Boulderfist Mages|r
-    .complete 9907,2 --Boulderfist Mage slain (10)
+    .complete -9916,1 --Bleeding Hollow Supply Crate (10)
+    .complete -9907,1 --Boulderfist Warrior slain (10)
+    .complete -9907,2 --Boulderfist Mage slain (10)
+    .mob Boulderfist Warrior
     .mob Boulderfist Mage
-    .isOnQuest 9907
 step
     #loop
     .goto 107,43.74,47.66,0
@@ -494,31 +490,18 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .xp <65,1
 step
     #loop
-    .goto 107,32.22,46.77,0
-    .goto 107,32.22,46.77,40,0
-    .goto 107,30.99,41.76,40,0
-    >>Kill |cRXP_ENEMY_Murkblood Putrifiers|r
-    .complete 9862,1 --Murkblood Putrifier slain (5)
-    .mob Murkblood Putrifier
-    .isOnQuest 9862
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
     .goto 107,32.77,45.15,0
     .goto 107,32.77,45.15,40,0
     .goto 107,30.91,42.43,40,0
-    >>Kill |cRXP_ENEMY_Murkblood Raiders|r
-    .complete 9865,2 --Murkblood Raider slain (10)
-    .mob Murkblood Raider
-    .isOnQuest 9865
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 107,31.16,41.62,0
-    .goto 107,31.16,41.62,40,0
-    .goto 107,32.40,45.32,40,0
-    >>Kill |cRXP_ENEMY_Murkblood Scavengers|r
-    .complete 9865,1 --Murkblood Scavenger slain (20)
-    .mob Murkblood Scavenger
-    .isOnQuest 9865
+    >>Kill |cRXP_ENEMY_Murkblood Putrifiers|r
+    >>Kill |cRXP_ENEMY_Murkblood Raiders|r << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    >>Kill |cRXP_ENEMY_Murkblood Scavengers|r << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .complete -9862,1 --Murkblood Putrifier slain (5)
+    .complete -9865,2 << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren --Murkblood Raider slain (10)
+    .complete -9865,1 << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren --Murkblood Scavenger slain (20)
+    .mob Murkblood Putrifier
+    .mob Murkblood Raider << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .mob Murkblood Scavenger << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 107,32.44,36.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Saurfang the Younger|r
@@ -634,23 +617,23 @@ step
     .complete 9849,1 --Minion of Gurok slain (30)
     .mob Minion of Gurok
 step
-    #completewith Along80
+    #completewith Along73
     >>As you go: Kill |cRXP_ENEMY_Voidspawns|r. |cRXP_WARN_Anything left is finished later|r
     .complete 9925,1 --Voidspawn slain (8)
     .mob Voidspawn
 step
-    #completewith Along79
+    #completewith Along72
     >>As you go: Kill |cRXP_ENEMY_Vir'aani Raiders|r. Loot them for |cRXP_LOOT_Oshu'gun Crystal Fragment|r. It can also be picked up from |cRXP_PICK_Oshu'gun Crystal Fragment|r on the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 9882,1 --Oshu'gun Crystal Fragment (10)
     .mob Vir'aani Raider
 step
-    #label Along79
+    #label Along72
     .goto 107,41.51,71.42
     >>Kill |cRXP_ENEMY_Gava'xi|r
     .complete 9900,1 --Gava'xi slain (1)
     .mob Gava'xi
 step
-    #label Along80
+    #label Along73
     #loop
     .goto 107,38.71,71.03,0
     .goto 107,38.71,71.03,40,0
@@ -732,23 +715,16 @@ step
     .xp <64,1
 step
     #loop
-    .goto 107,69.65,76.96,0
-    .goto 107,69.65,76.96,40,0
+    .goto 107,68.62,78.69,0
+    .goto 107,68.62,78.69,40,0
     .goto 107,71.80,80.74,40,0
     >>Kill |cRXP_ENEMY_Kil'sorrow Spellbinders|r, |cRXP_ENEMY_Kil'sorrow Cultists|r and |cRXP_ENEMY_Kil'sorrow Deathsworns|r
-    .complete 9927,1 --Kil'sorrow Spellbinder (8)
+    >>Pick up |cRXP_PICK_Kil'sorrow Armaments|r from the ground
+    .complete -9927,1 --Kil'sorrow Spellbinder (8)
+    .complete -9928,1 --Kil'sorrow Armaments (10)
     .mob Kil'sorrow Spellbinder
     .mob Kil'sorrow Cultist
     .mob Kil'sorrow Deathsworn
-    .isOnQuest 9927
-step
-    #loop
-    .goto 107,71.39,80.86,0
-    .goto 107,71.39,80.86,40,0
-    .goto 107,68.06,82.33,40,0
-    >>Pick up |cRXP_PICK_Kil'sorrow Armaments|r from the ground
-    .complete 9928,1 --Kil'sorrow Armaments (10)
-    .isOnQuest 9928
 step
     .goto 107,73.81,62.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lantresor of the Blade|r
@@ -782,6 +758,12 @@ step
     .turnin 9810 >>Turn in The Spirit Polluted
     .target Elementalist Lo'ap
 step
+    #completewith Along92
+    >>As you go: Kill |cRXP_ENEMY_Warmaul Reavers|r and |cRXP_ENEMY_Warmaul Shamans|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -9931,1 --Warmaul Reaver (8)
+    .mob Warmaul Reaver
+    .mob Warmaul Shaman
+step
     #loop
     .goto 107,44.06,21.44,0
     .goto 107,44.06,21.44,40,0
@@ -793,6 +775,7 @@ step
     .mob Warmaul Shaman
     .mob Warmaul Brute
 step
+    #label Along92
     .goto 107,46.57,24.42
     >>Lantresor of the Blade at the Burning Blade Ruins in Nagrand wants you to use the Damp Woolen Blanket at the Blazing Warmaul Pyre in the Laughing Skull Courtyard to signal his ogres.
     .complete 9932,1 --Warmaul Pyre Credit Marker
@@ -1017,20 +1000,16 @@ step
     .target Altruis the Sufferer
     .isOnQuest 10010
 step
-    .goto 107,30.71,33.10
-    >>Kill |cRXP_ENEMY_Greater Windroc|r and loot |cRXP_LOOT_Flawless Greater Windroc Beak|r
-    .complete 10252,2 --Flawless Greater Windroc Beak (1)
-    .mob Greater Windroc
-    .isOnQuest 10252
-step
     #loop
-    .goto 107,32.19,32.25,0
-    .goto 107,32.19,32.25,40,0
+    .goto 107,31.54,33.16,0
+    .goto 107,31.54,33.16,40,0
     .goto 107,35.82,32.36,40,0
+    >>Kill |cRXP_ENEMY_Greater Windroc|r and loot |cRXP_LOOT_Flawless Greater Windroc Beak|r
     >>Kill |cRXP_ENEMY_Aged Clefthoof|r and loot |cRXP_LOOT_Aged Clefthoof Blubber|r
-    .complete 10252,3 --Aged Clefthoof Blubber (1)
+    .complete -10252,2 --Flawless Greater Windroc Beak (1)
+    .complete -10252,3 --Aged Clefthoof Blubber (1)
+    .mob Greater Windroc
     .mob Aged Clefthoof
-    .isOnQuest 10252
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 107,32.31,36.15
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elder Yorley|r
@@ -1308,6 +1287,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 10081 --any of: To Meet Mother Kashur
     .xp <66,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along35
+    >>As you go: Kill |cRXP_ENEMY_Agitated Orc Spirits|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -10082,1 --Agitated Orc Spirit slain (8)
+    .mob Agitated Orc Spirit
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along35
     .goto 107,26.07,60.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mother Kashur|r
     .accept 10101 >>Accept When Spirits Speak

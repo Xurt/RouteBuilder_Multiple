@@ -146,7 +146,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 The Hinterlands - Horde - part 3 of 3, planned from level 50
-Guide "43-53 The Hinterlands" in group "Zone Routes (Horde)": this part has 13 steps, 10 stops
+Guide "43-53 The Hinterlands" in group "Zone Routes (Horde)": this part has 12 steps, 9 stops
 Written to guides/classic/The Hinterlands (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

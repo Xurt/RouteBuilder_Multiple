@@ -326,39 +326,31 @@ step
     .complete 9805,4 --Windyreed Quest Credit (Hut 03)
     .target Windyreed Quest Credit (Hut 03)
 step
-    .goto 1951,72.19,69.90
-    >>Click the |cRXP_PICK_First Burning Blade Pyre|r
-    .complete 9910,1 --First Burning Blade Pyre
-    .isOnQuest 9910
-step
-    .goto 1951,74.70,69.91
-    >>Click the |cRXP_PICK_Second Burning Blade Pyre|r
-    .complete 9910,2 --Second Burning Blade Pyre
-    .isOnQuest 9910
-step
-    .goto 1951,75.83,68.33
-    >>Click the |cRXP_PICK_Third Burning Blade Pyre|r
-    .complete 9910,3 --Third Burning Blade Pyre
-    .isOnQuest 9910
-step
-    #loop
-    .goto 1951,75.10,63.98,0
-    .goto 1951,75.10,63.98,40,0
-    .goto 1951,77.46,61.05,40,0
-    >>Kill |cRXP_ENEMY_Boulderfist Mystics|r
-    .complete 9906,1 --Boulderfist Mystic slain (15)
-    .mob Boulderfist Mystic
-    .isOnQuest 9906
-step
-    #loop
-    .goto 1951,76.88,60.11,0
-    .goto 1951,76.88,60.11,40,0
-    .goto 1951,78.12,59.13,40,0
-    .goto 1951,74.50,68.69,40,0
-    >>Kill |cRXP_ENEMY_Boulderfist Crushers|r
-    .complete 9906,2 --Boulderfist Crusher slain (15)
+    #completewith Along42
+    >>As you go: Kill |cRXP_ENEMY_Boulderfist Crushers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -9906,2 --Boulderfist Crusher slain (15)
     .mob Boulderfist Crusher
-    .isOnQuest 9906
+step
+    #label Along42
+    .goto 1951,74.70,69.91
+    >>Click the |cRXP_PICK_First Burning Blade Pyre|r
+    >>Click the |cRXP_PICK_Second Burning Blade Pyre|r
+    .complete -9910,1 --First Burning Blade Pyre
+    .complete -9910,2 --Second Burning Blade Pyre
+step
+    #loop
+    .goto 1951,74.50,68.69,0
+    .goto 1951,74.50,68.69,40,0
+    .goto 1951,75.10,63.98,40,0
+    .goto 1951,77.26,60.41,40,0
+    >>Click the |cRXP_PICK_Third Burning Blade Pyre|r
+    >>Kill |cRXP_ENEMY_Boulderfist Mystics|r
+    >>Kill |cRXP_ENEMY_Boulderfist Crushers|r
+    .complete -9910,3 --Third Burning Blade Pyre
+    .complete -9906,1 --Boulderfist Mystic slain (15)
+    .complete -9906,2 --Boulderfist Crusher slain (15)
+    .mob Boulderfist Mystic
+    .mob Boulderfist Crusher
 step
     #completewith next
     .hs >>Hearth to Mathar G'ochar's inn. |cRXP_WARN_Walk instead if you are already nearby|r
@@ -390,6 +382,15 @@ step
     .isQuestTurnedIn 9906 --any of: Message in a Battle
     .xp <64,1
 step
+    #completewith Along48
+    >>As you go: Pick up |cRXP_PICK_Bleeding Hollow Supply Crate|r from the ground. Kill |cRXP_ENEMY_Boulderfist Warriors|r. Kill |cRXP_ENEMY_Boulderfist Mages|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -9916,1 --Bleeding Hollow Supply Crate (20)
+    .complete -9907,1 --Boulderfist Warrior slain (25)
+    .complete -9907,2 --Boulderfist Mage slain (25)
+    .mob Boulderfist Warrior
+    .mob Boulderfist Mage
+step
+    #label Along48
     .goto 1951,37.92,27.53
     >>Kill |cRXP_ENEMY_Murkblood Invader|r and loot |cRXP_LOOT_Murkblood Invasion Plans|r. Use it to start the quest
     .collect 24558,1,9872 --Murkblood Invasion Plans (1)
@@ -397,28 +398,18 @@ step
     .use 24558
     .mob Murkblood Invader
 step
-    .goto 1951,39.55,29.10
+    #loop
+    .goto 1951,39.55,29.10,0
+    .goto 1951,39.55,29.10,40,0
+    .goto 1951,41.22,34.07,40,0
     >>Pick up |cRXP_PICK_Bleeding Hollow Supply Crate|r from the ground
-    .complete 9916,1 --Bleeding Hollow Supply Crate (20)
-    .isOnQuest 9916
-step
-    #loop
-    .goto 1951,39.62,29.07,0
-    .goto 1951,39.62,29.07,40,0
-    .goto 1951,41.22,34.07,40,0
     >>Kill |cRXP_ENEMY_Boulderfist Warriors|r
-    .complete 9907,1 --Boulderfist Warrior slain (25)
-    .mob Boulderfist Warrior
-    .isOnQuest 9907
-step
-    #loop
-    .goto 1951,39.92,29.38,0
-    .goto 1951,39.92,29.38,40,0
-    .goto 1951,41.22,34.07,40,0
     >>Kill |cRXP_ENEMY_Boulderfist Mages|r
-    .complete 9907,2 --Boulderfist Mage slain (25)
+    .complete -9916,1 --Bleeding Hollow Supply Crate (20)
+    .complete -9907,1 --Boulderfist Warrior slain (25)
+    .complete -9907,2 --Boulderfist Mage slain (25)
+    .mob Boulderfist Warrior
     .mob Boulderfist Mage
-    .isOnQuest 9907
 step
     #loop
     .goto 1951,39.91,44.20,0
@@ -455,31 +446,18 @@ step
     .xp <64,1
 step
     #loop
-    .goto 1951,30.99,41.76,0
-    .goto 1951,30.99,41.76,40,0
-    .goto 1951,32.22,46.77,40,0
-    >>Kill |cRXP_ENEMY_Murkblood Putrifiers|r
-    .complete 9862,1 --Murkblood Putrifier slain (8)
-    .mob Murkblood Putrifier
-    .isOnQuest 9862
-step
-    #loop
-    .goto 1951,32.77,45.15,0
-    .goto 1951,32.77,45.15,40,0
+    .goto 1951,30.91,42.43,0
     .goto 1951,30.91,42.43,40,0
+    .goto 1951,32.77,45.15,40,0
+    >>Kill |cRXP_ENEMY_Murkblood Putrifiers|r
     >>Kill |cRXP_ENEMY_Murkblood Raiders|r
-    .complete 9865,2 --Murkblood Raider slain (20)
-    .mob Murkblood Raider
-    .isOnQuest 9865
-step
-    #loop
-    .goto 1951,31.16,41.62,0
-    .goto 1951,31.16,41.62,40,0
-    .goto 1951,32.40,45.32,40,0
     >>Kill |cRXP_ENEMY_Murkblood Scavengers|r
-    .complete 9865,1 --Murkblood Scavenger slain (40)
+    .complete -9862,1 --Murkblood Putrifier slain (8)
+    .complete -9865,2 --Murkblood Raider slain (20)
+    .complete -9865,1 --Murkblood Scavenger slain (40)
+    .mob Murkblood Putrifier
+    .mob Murkblood Raider
     .mob Murkblood Scavenger
-    .isOnQuest 9865
 step
     .goto 1951,32.44,36.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Saurfang the Younger|r
@@ -619,23 +597,23 @@ step
     .complete 9849,1 --Minion of Gurok slain (30)
     .mob Minion of Gurok
 step
-    #completewith Along84
+    #completewith Along77
     >>As you go: Kill |cRXP_ENEMY_Voidspawns|r. |cRXP_WARN_Anything left is finished later|r
     .complete 9925,1 --Voidspawn slain (12)
     .mob Voidspawn
 step
-    #completewith Along83
+    #completewith Along76
     >>As you go: Kill |cRXP_ENEMY_Vir'aani Raiders|r. Loot them for |cRXP_LOOT_Oshu'gun Crystal Fragment|r. It can also be picked up from |cRXP_PICK_Oshu'gun Crystal Fragment|r on the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 9882,1 --Oshu'gun Crystal Fragment (10)
     .mob Vir'aani Raider
 step
-    #label Along83
+    #label Along76
     .goto 1951,41.51,71.42
     >>Kill |cRXP_ENEMY_Gava'xi|r
     .complete 9900,1 --Gava'xi slain (1)
     .mob Gava'xi
 step
-    #label Along84
+    #label Along77
     #loop
     .goto 1951,38.71,71.03,0
     .goto 1951,38.71,71.03,40,0
@@ -752,23 +730,16 @@ step
     .xp <64,1
 step
     #loop
-    .goto 1951,69.65,76.96,0
-    .goto 1951,69.65,76.96,40,0
+    .goto 1951,68.62,78.69,0
+    .goto 1951,68.62,78.69,40,0
     .goto 1951,71.80,80.74,40,0
     >>Kill |cRXP_ENEMY_Kil'sorrow Spellbinders|r, |cRXP_ENEMY_Kil'sorrow Cultists|r and |cRXP_ENEMY_Kil'sorrow Deathsworns|r
-    .complete 9927,1 --Kil'sorrow Spellbinder (8)
+    >>Pick up |cRXP_PICK_Kil'sorrow Armaments|r from the ground
+    .complete -9927,1 --Kil'sorrow Spellbinder (8)
+    .complete -9928,1 --Kil'sorrow Armaments (20)
     .mob Kil'sorrow Spellbinder
     .mob Kil'sorrow Cultist
     .mob Kil'sorrow Deathsworn
-    .isOnQuest 9927
-step
-    #loop
-    .goto 1951,71.39,80.86,0
-    .goto 1951,71.39,80.86,40,0
-    .goto 1951,68.06,82.33,40,0
-    >>Pick up |cRXP_PICK_Kil'sorrow Armaments|r from the ground
-    .complete 9928,1 --Kil'sorrow Armaments (20)
-    .isOnQuest 9928
 step
     .goto 1951,73.81,62.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lantresor of the Blade|r
@@ -802,6 +773,12 @@ step
     .turnin 9810 >>Turn in The Spirit Polluted
     .target Elementalist Lo'ap
 step
+    #completewith Along101
+    >>As you go: Kill |cRXP_ENEMY_Warmaul Reavers|r and |cRXP_ENEMY_Warmaul Shamans|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -9931,1 --Warmaul Reaver (8)
+    .mob Warmaul Reaver
+    .mob Warmaul Shaman
+step
     #loop
     .goto 1951,44.06,21.44,0
     .goto 1951,44.06,21.44,40,0
@@ -813,6 +790,7 @@ step
     .mob Warmaul Shaman
     .mob Warmaul Brute
 step
+    #label Along101
     .goto 1951,46.57,24.42
     >>Lantresor of the Blade at the Burning Blade Ruins in Nagrand wants you to use the Damp Woolen Blanket at the Blazing Warmaul Pyre in the Laughing Skull Courtyard to signal his ogres.
     .complete 9932,1 --Warmaul Pyre Credit Marker

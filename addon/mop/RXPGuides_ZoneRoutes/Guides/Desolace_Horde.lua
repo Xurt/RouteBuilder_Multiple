@@ -669,15 +669,12 @@ step
 step
     .goto 66,72.40,58.22
     >>Kill |cRXP_ENEMY_Aged Kodos|r and |cRXP_ENEMY_Ancient Kodos|r
+    >>Kill |cRXP_ENEMY_Magram Warden|r
     .complete 5561,1 --Aged Kodo (3)
+    .complete -14314,1 --Magram Warden slain (1)
     .mob Aged Kodo
     .mob Ancient Kodo
-step
-    .goto 66,71.45,55.92
-    >>Kill |cRXP_ENEMY_Magram Warden|r
-    .complete 14314,1 --Magram Warden slain (1)
     .mob Magram Warden
-    .isOnQuest 14314
 step
     .goto 66,70.39,49.28
     >>Pick up |cRXP_PICK_Cenarion Supply Crate|r from the ground
@@ -840,18 +837,11 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,67.28,10.29,40,0
     .goto 66,64.60,8.57,40,0
     >>Kill |cRXP_ENEMY_Nijel's Point Defenders|r
-    .complete 14198,1 --Nijel's Point Defender slain (40)
-    .mob Nijel's Point Defender
-    .isOnQuest 14198
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 66,68.07,9.89,0
-    .goto 66,68.07,9.89,40,0
-    .goto 66,66.50,11.96,40,0
     >>Kill |cRXP_ENEMY_Nijel's Point Merchants|r
-    .complete 14198,2 --Nijel's Point Merchant slain (15)
+    .complete -14198,1 --Nijel's Point Defender slain (40)
+    .complete -14198,2 --Nijel's Point Merchant slain (15)
+    .mob Nijel's Point Defender
     .mob Nijel's Point Merchant
-    .isOnQuest 14198
 step
     .goto 66,60.98,29.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bizby|r
@@ -933,39 +923,35 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Karnum Marshweaver
     .isOnQuest 14343
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along134
+    >>As you go: Kill |cRXP_ENEMY_Hatefury Hellcallers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -1434,4 --Hatefury Hellcaller slain (7)
+    .mob Hatefury Hellcaller
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along134
     #loop
     .goto 66,73.11,22.08,0
     .goto 66,73.11,22.08,40,0
-    .goto 66,75.88,26.24,40,0
-    >>Kill |cRXP_ENEMY_Hatefury Felsworns|r
-    .complete 1434,2 --Hatefury Felsworn slain (7)
-    .mob Hatefury Felsworn
-    .isOnQuest 1434
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 66,77.57,24.72,0
-    .goto 66,77.57,24.72,40,0
     .goto 66,74.54,21.81,40,0
+    .goto 66,76.12,26.69,40,0
+    >>Kill |cRXP_ENEMY_Hatefury Felsworns|r
     >>Kill |cRXP_ENEMY_Hatefury Betrayers|r
-    .complete 1434,3 --Hatefury Betrayer slain (7)
+    .complete -1434,2 --Hatefury Felsworn slain (7)
+    .complete -1434,3 --Hatefury Betrayer slain (7)
+    .mob Hatefury Felsworn
     .mob Hatefury Betrayer
-    .isOnQuest 1434
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 66,79.43,18.84
-    >>Kill |cRXP_ENEMY_Hatefury Rogues|r
-    .complete 1434,1 --Hatefury Rogue slain (7)
-    .mob Hatefury Rogue
-    .isOnQuest 1434
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 66,80.22,16.34,0
-    .goto 66,80.22,16.34,40,0
-    .goto 66,77.26,16.58,40,0
-    .goto 66,74.55,18.88,40,0
+    .goto 66,76.33,22.25,0
+    .goto 66,76.33,22.25,40,0
+    .goto 66,76.58,19.18,40,0
+    .goto 66,79.43,18.84,40,0
+    >>Kill |cRXP_ENEMY_Hatefury Rogues|r
     >>Kill |cRXP_ENEMY_Hatefury Hellcallers|r
-    .complete 1434,4 --Hatefury Hellcaller slain (7)
+    .complete -1434,1 --Hatefury Rogue slain (7)
+    .complete -1434,4 --Hatefury Hellcaller slain (7)
+    .mob Hatefury Rogue
     .mob Hatefury Hellcaller
-    .isOnQuest 1434
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,57.47,47.72
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Karnum Marshweaver|r
@@ -1082,31 +1068,20 @@ step
     .mob Maraudine Mauler
     .isOnQuest 14329
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 66,34.70,45.56
+    #loop
+    .goto 66,33.13,40.40,0
+    .goto 66,33.13,40.40,40,0
+    .goto 66,36.00,40.03,40,0
+    .goto 66,38.61,43.08,40,0
     >>Interact with |cRXP_FRIENDLY_Sea Giants|r
-    .complete 14346,3 --Sea Giant (3)
-    .target Sea Giant
-    .isOnQuest 14346
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 66,37.53,42.54,0
-    .goto 66,37.53,42.54,40,0
-    .goto 66,36.01,39.03,40,0
-    .goto 66,32.50,40.38,40,0
     >>Interact with |cRXP_FRIENDLY_Slitherblade Sirens|r
-    .complete 14346,2 --Slitherblade Siren (10)
-    .target Slitherblade Siren
-    .isOnQuest 14346
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 66,36.86,40.50,0
-    .goto 66,36.86,40.50,40,0
-    .goto 66,33.97,38.74,40,0
-    .goto 66,34.73,44.51,40,0
     >>Interact with |cRXP_FRIENDLY_Slitherblade Invaders|r
-    .complete 14346,4 --Slitherblade Invader (10)
+    .complete -14346,3 --Sea Giant (3)
+    .complete -14346,2 --Slitherblade Siren (10)
+    .complete -14346,4 --Slitherblade Invader (10)
+    .target Sea Giant
+    .target Slitherblade Siren
     .target Slitherblade Invader
-    .isOnQuest 14346
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,33.70,35.48
     >>Kill |cRXP_ENEMY_Drysnap Crawlers|r
@@ -1176,24 +1151,14 @@ step
     .goto 66,69.55,73.35,40,0
     .goto 66,70.94,76.02,40,0
     >>Kill |cRXP_ENEMY_Burning Blade Warlocks|r
-    .complete 14393,1 --Burning Blade Warlock slain (15)
-    .mob Burning Blade Warlock
-    .isOnQuest 14393
-step
-    .goto 66,69.06,76.43
     >>Kill |cRXP_ENEMY_Priestess Than'darissa|r
-    .complete 14393,3 --Priestess Than'darissa slain (1)
-    .mob Priestess Than'darissa
-    .isOnQuest 14393
-step
-    #loop
-    .goto 66,69.45,74.86,0
-    .goto 66,69.45,74.86,40,0
-    .goto 66,70.93,73.79,40,0
     >>Kill |cRXP_ENEMY_Doomguard Invaders|r
-    .complete 14393,2 --Doomguard Invader slain (3)
+    .complete -14393,1 --Burning Blade Warlock slain (15)
+    .complete -14393,3 --Priestess Than'darissa slain (1)
+    .complete -14393,2 --Doomguard Invader slain (3)
+    .mob Burning Blade Warlock
+    .mob Priestess Than'darissa
     .mob Doomguard Invader
-    .isOnQuest 14393
 step
     .goto 66,72.28,67.35
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khan Leh'Prah|r

@@ -534,6 +534,12 @@ step
     .isQuestTurnedIn 30269 --any of: Unsafe Passage
     .xp <86,1
 step
+    #completewith Along66
+    >>As you go: Kill |cRXP_ENEMY_Riverblade Pathstalkers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -30270,1 --Riverblade Pathstalker slain (8)
+    .mob Riverblade Pathstalker
+step
+    #label Along66
     .goto 418,43.55,32.98
     >>Click the |cRXP_PICK_Riverblade Spike Trap|r
     .complete 30694,1 --Riverblade Spike Trap
@@ -612,24 +618,17 @@ step
     .goto 418,40.40,54.80,0
     .goto 418,40.40,54.80,40,0
     .goto 418,40.53,50.31,40,0
-    .goto 418,40.16,46.67,40,0
+    .goto 418,40.02,47.78,40,0
     >>Kill |cRXP_ENEMY_Haunt of Despairs|r, |cRXP_ENEMY_Incarnation of Despairs|r and |cRXP_ENEMY_Source of Despairs|r
-    .complete 30272,1 --Haunt of Despair (18)
+    >>Kill |cRXP_ENEMY_Hopeless Monks|r, |cRXP_ENEMY_Hopeless Acolytes|r and |cRXP_ENEMY_Kill Credit: Sha Can Awes|r
+    .complete -30272,1 --Haunt of Despair (18)
+    .complete -30271,1 --Hopeless Monk (10)
     .mob Haunt of Despair
     .mob Incarnation of Despair
     .mob Source of Despair
-    .isOnQuest 30272
-step
-    #loop
-    .goto 418,39.79,48.35,0
-    .goto 418,39.79,48.35,40,0
-    .goto 418,42.41,50.50,40,0
-    >>Kill |cRXP_ENEMY_Hopeless Monks|r, |cRXP_ENEMY_Hopeless Acolytes|r and |cRXP_ENEMY_Kill Credit: Sha Can Awes|r
-    .complete 30271,1 --Hopeless Monk (10)
     .mob Hopeless Monk
     .mob Hopeless Acolyte
     .mob Kill Credit: Sha Can Awe
-    .isOnQuest 30271
 step
     .goto 418,40.63,33.73
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Anduin Wrynn|r
@@ -686,7 +685,7 @@ step
     .accept 30666 >>Accept Sudden, Unexpected Crocolisk Aggression
     .target Jay Cloudfall
 step
-    #completewith Along86
+    #completewith Along85
     >>As you go: Kill |cRXP_ENEMY_Dusky Lories|r. Loot them for |cRXP_LOOT_Dusky Tailfeather|r. Kill |cRXP_ENEMY_Mortbreath Skulkers|r and |cRXP_ENEMY_Mortbreath Snappers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30667,3 --Dusky Tailfeather (6)
     .complete 30666,1 --Mortbreath Skulker (8)
@@ -694,7 +693,7 @@ step
     .mob Mortbreath Skulker
     .mob Mortbreath Snapper
 step
-    #label Along86
+    #label Along85
     .goto 418,44.75,65.64
     >>Kill |cRXP_ENEMY_Emerald Lories|r. Loot them for |cRXP_LOOT_Emerald Tailfeather|r
     .complete 30667,1 --Emerald Tailfeather (6)
@@ -755,13 +754,13 @@ step
     .complete 30691,1 --Nahassa slain (1)
     .mob Nahassa
 step
-    #completewith Along95
+    #completewith Along94
     >>As you go: Kill |cRXP_ENEMY_Great Grey Sharks|r and |cRXP_ENEMY_Nayeli Hammerheads|r. Loot them for |cRXP_LOOT_Shark Fillet|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30671,1 --Shark Fillet (5)
     .mob Great Grey Shark
     .mob Nayeli Hammerhead
 step
-    #label Along95
+    #label Along94
     .goto 418,45.98,78.91
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wise Ana Wu|r
     .turnin 30691 >>Turn in Misery
@@ -783,12 +782,12 @@ step
     .accept 30672 >>Accept Balance
     .target Wise Ana Wu
 step
-    #completewith Along98
+    #completewith Along97
     >>As you go: Kill |cRXP_ENEMY_Unga Fish-Getters|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30672,1 --Unga Fish-Getter slain (10)
     .mob Unga Fish-Getter
 step
-    #label Along98
+    #label Along97
     .goto 418,48.62,85.83
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_!|r
     .accept 30674 >>Accept Balance Without Violence
@@ -812,16 +811,14 @@ step
     #loop
     .goto 418,52.03,84.65,0
     .goto 418,52.03,84.65,40,0
-    .goto 418,42.51,86.73,40,0
-    .goto 418,41.13,88.09,40,0
-    .goto 418,41.37,88.05,40,0
+    .goto 418,42.50,86.76,40,0
+    .goto 418,41.29,88.05,40,0
+    .goto 418,41.99,88.46,40,0
     >>Interact with |cRXP_FRIENDLY_Flailing Carps|r
-    .complete 30674,1 --Flailing Carp (6)
-    .target Flailing Carp
-step
-    .goto 418,41.99,88.46
     >>Open the |cRXP_PICK_Lump of Sand|r. Loot it for |cRXP_LOOT_Buried Hozen Treasure|r
+    .complete 30674,1 --Flailing Carp (6)
     .complete 30675,1 --Buried Hozen Treasure (1)
+    .target Flailing Carp
 step
     .goto 418,48.62,85.83
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
@@ -851,13 +848,13 @@ step
     .accept 30169 >>Accept Raid Leader Slovan
     .target Tired Shushen
 step
-    #completewith Along106
+    #completewith Along104
     >>As you go: Kill |cRXP_ENEMY_Riverblade Slayers|r and |cRXP_ENEMY_Riverblade Flesh-hunters|r. Loot them for |cRXP_LOOT_Pillaged Jinyu Loot|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30168,1 --Pillaged Jinyu Loot (1)
     .mob Riverblade Slayer
     .mob Riverblade Flesh-hunter
 step
-    #label Along106
+    #label Along104
     .goto 418,31.80,28.99
     >>Kill |cRXP_ENEMY_Slovan|r
     .complete 30169,1 --Slovan slain (1)
@@ -935,12 +932,13 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 30361 >>Accept The Mantid
     .target Ambassador Han
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along116
+    #completewith Along113
     >>As you go: Kill |cRXP_ENEMY_Ik'thik Vanguards|r and |cRXP_ENEMY_Ik'thik Precursors|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30361,1 --Ik'thik Vanguard (8)
     .mob Ik'thik Vanguard
     .mob Ik'thik Precursor
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along113
     #loop
     .goto 418,15.09,39.42,0
     .goto 418,15.09,39.42,40,0
@@ -950,21 +948,16 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 30357 >>Accept The Stoneplow Convoy
     .unitscan Lorekeeper Vaeldrin
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along116
     #loop
-    .goto 418,15.92,36.63,0
-    .goto 418,15.92,36.63,40,0
+    .goto 418,15.96,41.48,0
+    .goto 418,15.96,41.48,40,0
+    .goto 418,16.97,36.75,40,0
     .goto 418,14.23,35.62,40,0
     >>Interact with |cRXP_FRIENDLY_Stoneplow Envoys|r
-    .complete 30357,1 --Stoneplow Envoy (7)
-    .target Stoneplow Envoy
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 418,16.97,36.75,0
-    .goto 418,16.97,36.75,40,0
-    .goto 418,15.96,41.48,40,0
     >>Kill |cRXP_ENEMY_Ik'thik Vanguards|r and |cRXP_ENEMY_Ik'thik Precursors|r
+    .complete 30357,1 --Stoneplow Envoy (7)
     .complete 30361,1 --Ik'thik Vanguard (8)
+    .target Stoneplow Envoy
     .mob Ik'thik Vanguard
     .mob Ik'thik Precursor
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren

@@ -974,25 +974,15 @@ step
     .target Nablya
     .isQuestTurnedIn 24694 --any of: The Shaper's Terrace
 step
-    .goto 78,83.52,46.76
-    >>Click the |cRXP_PICK_Diemetradon Observation Lever|r
-    .complete 24695,2 --Diemetradon Observation Lever
-    .isOnQuest 24695
-step
     .goto 78,83.98,46.41
+    >>Click the |cRXP_PICK_Diemetradon Observation Lever|r
     >>Click the |cRXP_PICK_Gorilla Observation Lever|r
-    .complete 24695,3 --Gorilla Observation Lever
-    .isOnQuest 24695
-step
-    .goto 78,84.02,45.60
     >>Click the |cRXP_PICK_Pterrordax Observation Lever|r
-    .complete 24695,4 --Pterrordax Observation Lever
-    .isOnQuest 24695
-step
-    .goto 78,83.54,45.23
     >>Click the |cRXP_PICK_Bloodpetal Observation Lever|r
-    .complete 24695,1 --Bloodpetal Observation Lever
-    .isOnQuest 24695
+    .complete -24695,2 --Diemetradon Observation Lever
+    .complete -24695,3 --Gorilla Observation Lever
+    .complete -24695,4 --Pterrordax Observation Lever
+    .complete -24695,1 --Bloodpetal Observation Lever
 step
     .goto 78,83.52,46.01
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nablya|r

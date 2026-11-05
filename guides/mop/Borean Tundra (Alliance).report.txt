@@ -1,5 +1,5 @@
 Borean Tundra - Alliance - part 1 of 2, planned from level 71
-Guide "71-74 Borean Tundra" in group "Zone Routes (Alliance)": this part has 388 steps, 338 stops
+Guide "71-74 Borean Tundra" in group "Zone Routes (Alliance)": this part has 386 steps, 335 stops
 Written to guides/mop/Borean Tundra (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -37,8 +37,8 @@ Step order kept from the last build (locks folder): 382 steps kept, 61 new ones 
   Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior (quests that depend on other zones): 1 more tasks; their whole route comes to 60,642 yd; ends at level 73.5; 3 hearths; 1 ORDER PROBLEMS
 Hearthstone: set at Apprentice Rosen (Apprentice Rosen's inn); 3 hearth steps in the guide.
 3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-25 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
-9 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+28 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+8 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (191)
 -------------------------

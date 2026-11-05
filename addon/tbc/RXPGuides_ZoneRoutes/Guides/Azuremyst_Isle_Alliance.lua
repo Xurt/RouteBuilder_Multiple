@@ -318,18 +318,13 @@ step
     .complete 9294,1 --Disperse the Neutralizing Agent
 step
     #loop
-    .goto 1943,86.64,63.65,0
+    .goto 1943,80.18,60.73,0
+    .goto 1943,80.18,60.73,40,0
     .goto 1943,86.64,63.65,40,0
     .goto 1943,85.66,67.55,40,0
     >>Pick up |cRXP_PICK_Emitter Spare Part|r from the ground
-    .complete 9305,1 --Emitter Spare Part (4)
-step
-    #loop
-    .goto 1943,86.21,66.17,0
-    .goto 1943,86.21,66.17,40,0
-    .goto 1943,85.50,67.35,40,0
-    .goto 1943,80.18,60.73,40,0
     >>Interact with |cRXP_FRIENDLY_Nestlewood Owlkins|r
+    .complete 9305,1 --Emitter Spare Part (4)
     .complete 9303,1 --Nestlewood Owlkin (6)
     .target Nestlewood Owlkin
 step
@@ -662,22 +657,15 @@ step
     .complete 9530,1 --Hollowed Out Tree (1)
 step
     #loop
-    .goto 1943,50.40,63.50,0
-    .goto 1943,50.40,63.50,40,0
-    .goto 1943,51.50,66.00,40,0
-    .goto 1943,50.10,57.50,40,0
+    .goto 1943,51.10,64.70,0
+    .goto 1943,51.10,64.70,40,0
+    .goto 1943,53.81,66.98,40,0
+    .goto 1943,50.20,60.10,40,0
     >>Pick up |cRXP_PICK_Pile of Leaves|r from the ground
+    >>Kill |cRXP_ENEMY_Root Trappers|r. Loot them for |cRXP_LOOT_Root Trapper Vine|r << Draenei
     .complete 9530,2 --Pile of Leaves (5)
-step << Draenei
-    #loop
-    .goto 1943,52.09,64.15,0
-    .goto 1943,52.09,64.15,40,0
-    .goto 1943,53.96,64.82,40,0
-    .goto 1943,51.75,61.22,40,0
-    >>Kill |cRXP_ENEMY_Root Trappers|r. Loot them for |cRXP_LOOT_Root Trapper Vine|r
-    .complete 9463,1 --Root Trapper Vine (6)
-    .mob Root Trapper
-    .isOnQuest 9463
+    .complete -9463,1 << Draenei --Root Trapper Vine (6)
+    .mob Root Trapper << Draenei
 step
     .goto 1943,47.04,70.21
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Admiral Odesyus|r
@@ -792,12 +780,12 @@ step << Warrior
     .target Ruada
     .subzoneskip 3576,1
 step
-    #completewith Along80
+    #completewith Along78
     >>As you go: Kill |cRXP_ENEMY_Moongraze Bucks|r. Loot them for |cRXP_LOOT_Moongraze Buck Hide|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10324,1 --Moongraze Buck Hide (6)
     .mob Moongraze Buck
 step
-    #label Along80
+    #label Along78
     .goto 1943,55.23,41.64
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Totem of Coo|r
     .turnin 9539 >>Turn in Totem of Coo
@@ -900,7 +888,7 @@ step
     .mob Infected Nightstalker Runt
     .isOnQuest 9456
 step
-    #completewith Along91
+    #completewith Along89
     >>As you go: Kill |cRXP_ENEMY_Wrathscale Myrmidons|r. Kill |cRXP_ENEMY_Wrathscale Nagas|r. Kill |cRXP_ENEMY_Wrathscale Sirens|r. Pick up |cRXP_PICK_Ancient Relic|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 9513,1 --Wrathscale Myrmidon slain (5)
     .complete 9513,2 --Wrathscale Naga slain (5)
@@ -910,7 +898,7 @@ step
     .mob Wrathscale Naga
     .mob Wrathscale Siren
 step
-    #label Along91
+    #label Along89
     #loop
     .goto 1943,25.72,71.19,0
     .goto 1943,25.72,71.19,40,0
@@ -1180,7 +1168,7 @@ step
     .target Parkat Steelfur
     .subzoneskip 3572,1
 step
-    #completewith Along123
+    #completewith Along121
     >>As you go: Kill |cRXP_ENEMY_Siltfin Murlocs|r, |cRXP_ENEMY_Siltfin Oracles|r, |cRXP_ENEMY_Siltfin Hunters|r and |cRXP_ENEMY_Murgurgulas|r. Loot them for |cRXP_LOOT_Stillpine Grain|r. It can also be picked up from |cRXP_PICK_Stillpine Grain|r on the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 9562,1 --Stillpine Grain (5)
     .mob Siltfin Murloc
@@ -1188,7 +1176,7 @@ step
     .mob Siltfin Hunter
     .mob Murgurgula
 step
-    #label Along123
+    #label Along121
     .goto 1943,35.01,21.98
     >>Kill |cRXP_ENEMY_Murgurgula|r and loot |cRXP_LOOT_Gurf's Dignity|r. Use it to start the quest
     .collect 23850,1,9564 --Gurf's Dignity (1)

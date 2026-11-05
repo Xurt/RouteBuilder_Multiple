@@ -445,20 +445,16 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 9193 >>Accept Investigate the Amani Catacombs
     .target Advisor Valwyn
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 95,10.43,22.59
+    #loop
+    .goto 95,13.69,26.84,0
+    .goto 95,13.69,26.84,40,0
+    .goto 95,10.43,22.59,40,0
     >>Pick up |cRXP_PICK_Night Elf Plans: Scrying on the Sin'dorei|r from the ground
-    .complete 9163,3 --Night Elf Plans: Scrying on the Sin'dorei (1)
-    .isOnQuest 9163
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 95,12.80,25.08
     >>Pick up |cRXP_PICK_Night Elf Plans: An'owyn|r from the ground
-    .complete 9163,2 --Night Elf Plans: An'owyn (1)
-    .isOnQuest 9163
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 95,13.69,26.84
     >>Pick up |cRXP_PICK_Night Elf Plans: An'daroth|r from the ground
-    .complete 9163,1 --Night Elf Plans: An'daroth (1)
-    .isOnQuest 9163
+    .complete -9163,3 --Night Elf Plans: Scrying on the Sin'dorei (1)
+    .complete -9163,2 --Night Elf Plans: An'owyn (1)
+    .complete -9163,1 --Night Elf Plans: An'daroth (1)
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 95,46.40,56.42
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apprentice Vor'el|r
@@ -518,11 +514,11 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .turnin 9276 >>Turn in Attack on Zeb'Tela
     .target Farstrider Solanna
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along72
+    #completewith Along70
     >>As you go: Click the |cRXP_PICK_Mummified Troll Remains|r. |cRXP_WARN_Anything left is finished later|r
     .complete 9193,1 --Mummified Troll Remains
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along72
+    #label Along70
     .goto 95,62.91,30.98
     >>Investigate the Amani Catacombs
     .complete 9193,2 --Investigate the Amani Catacombs
@@ -707,56 +703,23 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Shadowpine Headhunter
     .mob Shadowpine Shadowcaster
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along6
-    >>As you go: Kill |cRXP_ENEMY_Shadowpine Hexxers|r. Loot them for |cRXP_LOOT_Hexxer Stave|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 9214,4 --Hexxer Stave (3)
-    .mob Shadowpine Hexxer
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 95,68.65,52.28,0
-    .goto 95,68.65,52.28,40,0
+    .goto 95,68.03,53.19,0
+    .goto 95,68.03,53.19,40,0
     .goto 95,68.04,57.17,40,0
-    .goto 95,65.59,59.92,40,0
+    .goto 95,65.95,57.70,40,0
     >>Kill |cRXP_ENEMY_Shadowpine Catlords|r. Loot them for |cRXP_LOOT_Catlord Claws|r
-    .complete 9214,3 --Catlord Claws (3)
-    .mob Shadowpine Catlord
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along6
-    #loop
-    .goto 95,68.04,57.17,0
-    .goto 95,68.04,57.17,40,0
-    .goto 95,65.59,59.92,40,0
-    .goto 95,68.65,52.28,40,0
     >>Kill |cRXP_ENEMY_Shadowpine Catlords|r
-    .complete 9277,1 --Shadowpine Catlord slain (10)
-    .mob Shadowpine Catlord
-    .isOnQuest 9277
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along8
-    >>As you go: Click the |cRXP_PICK_Fresh Fish Rack|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 9275,3 --Fresh Fish Rack
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 95,67.79,55.19,0
-    .goto 95,67.79,55.19,40,0
-    .goto 95,67.75,58.22,40,0
     >>Kill |cRXP_ENEMY_Shadowpine Hexxers|r. Loot them for |cRXP_LOOT_Hexxer Stave|r
-    .complete 9214,4 --Hexxer Stave (3)
-    .mob Shadowpine Hexxer
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along8
-    #loop
-    .goto 95,67.79,55.19,0
-    .goto 95,67.79,55.19,40,0
-    .goto 95,67.75,58.22,40,0
     >>Kill |cRXP_ENEMY_Shadowpine Hexxers|r
-    .complete 9277,2 --Shadowpine Hexxer slain (10)
-    .mob Shadowpine Hexxer
-    .isOnQuest 9277
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 95,68.24,57.78
     >>Click the |cRXP_PICK_Fresh Fish Rack|r
+    .complete 9214,3 --Catlord Claws (3)
+    .complete -9277,1 --Shadowpine Catlord slain (10)
+    .complete 9214,4 --Hexxer Stave (3)
+    .complete -9277,2 --Shadowpine Hexxer slain (10)
     .complete 9275,3 --Fresh Fish Rack
+    .mob Shadowpine Catlord
+    .mob Shadowpine Hexxer
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 95,65.11,66.74
     >>Click the |cRXP_PICK_Raw Meat Rack|r
@@ -814,12 +777,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Magister Kaendris
     .isQuestTurnedIn 9176 --any of: The Twin Ziggurats
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along21
+    #completewith Along17
     >>As you go: Kill |cRXP_ENEMY_Wailers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 9220,3 --Wailer slain (6)
     .mob Wailer
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along21
+    #label Along17
     #loop
     .goto 95,38.23,76.64,0
     .goto 95,38.23,76.64,40,0
@@ -867,12 +830,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .complete 9156,2 --Luzran's Head (1)
     .mob Luzran
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along28
+    #completewith Along24
     >>As you go: Kill |cRXP_ENEMY_Jurion the Deceiver|r. |cRXP_WARN_Anything left is finished later|r
     .complete 9170,3 --Jurion the Deceiver slain (1)
     .mob Jurion the Deceiver
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along28
+    #label Along24
     .goto 95,32.13,73.93
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apothecary Enith|r
     .complete 9164,1 --Apothecary Enith

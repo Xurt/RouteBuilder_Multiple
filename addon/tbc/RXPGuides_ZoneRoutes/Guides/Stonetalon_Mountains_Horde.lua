@@ -303,6 +303,11 @@ step
     .target Tammra Windfield
     .isQuestTurnedIn 6301 --any of: Cycle of Rebirth
 step
+    #completewith Along6
+    >>As you go: Click the |cRXP_PICK_Gaea Dirt Mound|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -6381,1 --Gaea seed planted
+step
+    #label Along6
     #loop
     .goto 1442/1,1477.58,723.26,0
     .goto 1442/1,1477.58,723.26,40,0

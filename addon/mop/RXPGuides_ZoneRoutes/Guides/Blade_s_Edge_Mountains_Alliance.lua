@@ -366,6 +366,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Daggermaw Lashtail
     .isOnQuest 10632
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along45
+    >>As you go: Kill |cRXP_ENEMY_Scalewing Serpents|r. Loot them for |cRXP_LOOT_Scalewing Lightning Gland|r. |cRXP_WARN_Anything left is finished later|r
+    .complete -10657,2 --Scalewing Lightning Gland (5)
+    .mob Scalewing Serpent
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along45
     .goto 105,65.69,49.49
     >>Kill |cRXP_ENEMY_Ridgespine Stalkers|r
     .complete 10620,1 --Ridgespine Stalker slain (10)
@@ -591,17 +597,13 @@ step
     .isQuestTurnedIn 10819 --any of: Felsworn Gas Mask
     .xp <65,1
 step
-    .goto 105,74.77,40.47
+    .goto 105,74.62,39.19
     >>Kill |cRXP_ENEMY_Doomforge Attendants|r
-    .complete 10820,1 --Doomforge Attendant slain (4)
-    .mob Doomforge Attendant
-    .isOnQuest 10820
-step
-    .goto 105,75.48,40.00
     >>Kill |cRXP_ENEMY_Doomforge Engineers|r
-    .complete 10820,2 --Doomforge Engineer slain (4)
+    .complete -10820,1 --Doomforge Attendant slain (4)
+    .complete -10820,2 --Doomforge Engineer slain (4)
+    .mob Doomforge Attendant
     .mob Doomforge Engineer
-    .isOnQuest 10820
 step
     .goto 105,73.27,40.03
     >>Click the |cRXP_PICK_Legion Communicator|r
@@ -677,7 +679,7 @@ step
     .mob Wyrmcult Poacher
     .mob Wyrmcult Hewer
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along86
+    #completewith Along85
     >>As you go: Kill |cRXP_ENEMY_Bloodmaul Maulers|r. Kill |cRXP_ENEMY_Bloodmaul Warlocks|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10796,1 --Bloodmaul Mauler slain (10)
     .complete 10796,2 --Bloodmaul Warlock slain (5)
@@ -689,7 +691,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 10795,1 --Dorgok slain (1)
     .mob Dorgok
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along86
+    #label Along85
     .goto 105,55.14,24.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dorgok|r
     .accept 10797 >>Accept Favor of the Gronn

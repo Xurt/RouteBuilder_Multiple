@@ -594,17 +594,15 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen
     .complete 28246,3 --Voodooist Timan slain (1)
     .mob Voodooist Timan
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen
-    .goto 36,43.37,60.05
-    >>Kill |cRXP_ENEMY_Gorlop|r
-    .complete 28246,1 --Gorlop slain (1)
-    .mob Gorlop
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen
     #loop
-    .goto 36,44.39,58.77,0
-    .goto 36,44.39,58.77,40,0
+    .goto 36,45.07,62.03,0
+    .goto 36,45.07,62.03,40,0
     .goto 36,42.27,63.21,40,0
+    >>Kill |cRXP_ENEMY_Gorlop|r
     >>Interact with |cRXP_FRIENDLY_Blackrock War Kodos|r
+    .complete 28246,1 --Gorlop slain (1)
     .complete 28252,1 --Blackrock War Kodo (7)
+    .mob Gorlop
     .target Blackrock War Kodo
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen
     .goto 36,44.62,61.12

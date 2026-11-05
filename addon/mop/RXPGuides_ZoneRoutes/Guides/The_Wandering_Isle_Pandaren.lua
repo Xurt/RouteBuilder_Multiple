@@ -1002,29 +1002,18 @@ step << Pandaren
     .accept 29665 >>Accept From Bad to Worse
     .target Jojo Ironbrow
 step << Pandaren
-    #completewith Along139
-    >>As you go: Kill |cRXP_ENEMY_Deepscale Tormentors|r. Loot the |cRXP_PICK_Alliance Medical Crates|r for |cRXP_LOOT_Alliance Medical Supplies|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 29665,1 --Deepscale Tormentor slain (8)
-    .complete 29797,1 --Alliance Medical Supplies (8)
-    .mob Deepscale Tormentor
-step << Pandaren
-    #label Along139
     #loop
-    .goto 378,38.43,83.09,0
-    .goto 378,38.43,83.09,40,0
-    .goto 378,36.90,88.35,40,0
-    >>Interact with |cRXP_FRIENDLY_Injured Sailors|r
-    .complete 29794,1 --Injured Sailor (3)
-    .target Injured Sailor
-step << Pandaren
-    #loop
-    .goto 378,36.69,87.87,0
+    .goto 378,39.41,87.98,0
+    .goto 378,39.41,87.98,40,0
     .goto 378,36.69,87.87,40,0
-    .goto 378,37.41,84.01,40,0
+    .goto 378,37.86,83.23,40,0
+    >>Interact with |cRXP_FRIENDLY_Injured Sailors|r
     >>Kill |cRXP_ENEMY_Deepscale Tormentors|r
     >>Loot the |cRXP_PICK_Alliance Medical Crates|r for |cRXP_LOOT_Alliance Medical Supplies|r
+    .complete 29794,1 --Injured Sailor (3)
     .complete 29665,1 --Deepscale Tormentor slain (8)
     .complete 29797,1 --Alliance Medical Supplies (8)
+    .target Injured Sailor
     .mob Deepscale Tormentor
 step << Pandaren
     .goto 378,42.22,86.54
