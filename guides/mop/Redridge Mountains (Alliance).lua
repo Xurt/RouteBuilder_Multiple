@@ -371,11 +371,15 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 49,51.52,41.40
     >>Kill |cRXP_ENEMY_Homurk|r and loot |cRXP_LOOT_Keeshan's Survival Knife|r
-    >>Kill |cRXP_ENEMY_Murdunk|r and loot |cRXP_LOOT_Keeshan's Bow|r
-    .complete -26571,2 --Keeshan's Survival Knife (1)
-    .complete -26571,1 --Keeshan's Bow (1)
+    .complete 26571,2 --Keeshan's Survival Knife (1)
     .mob Homurk
+    .isOnQuest 26571
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 49,51.68,41.34
+    >>Kill |cRXP_ENEMY_Murdunk|r and loot |cRXP_LOOT_Keeshan's Bow|r
+    .complete 26571,1 --Keeshan's Bow (1)
     .mob Murdunk
+    .isOnQuest 26571
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #completewith next
     .hs >>Hearth to Franklin Hamar's inn. |cRXP_WARN_Walk instead if you are already nearby|r
@@ -431,22 +435,21 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 26560 --any of: Jorgensen
     .xp <15,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along65
-    >>As you go: Kill |cRXP_ENEMY_Blackrock Renegades|r, |cRXP_ENEMY_Blackrock Scouts|r, |cRXP_ENEMY_Blackrock Summoners|r and |cRXP_ENEMY_Murdunks|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -26570,1 --Blackrock Renegade (25)
-    .mob Blackrock Renegade
-    .mob Blackrock Scout
-    .mob Blackrock Summoner
-    .mob Murdunk
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 49,26.06,10.45
     >>Kill |cRXP_ENEMY_Ritualist Tarak|r
-    >>Open the |cRXP_PICK_Blackrock Coffer|r. Loot it for |cRXP_LOOT_Keeshan's Red Headband|r
-    >>Open the |cRXP_PICK_Blackrock Coffer|r. Loot it for |cRXP_LOOT_Keeshan's Jade Amulet|r
-    .complete -26561,1 --Ritualist Tarak slain (1)
-    .complete -26573,1 --Keeshan's Red Headband (1)
-    .complete -26573,2 --Keeshan's Jade Amulet (1)
+    .complete 26561,1 --Ritualist Tarak slain (1)
     .mob Ritualist Tarak
+    .isOnQuest 26561
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 49,26.59,10.53
+    >>Open the |cRXP_PICK_Blackrock Coffer|r. Loot it for |cRXP_LOOT_Keeshan's Red Headband|r
+    .complete 26573,1 --Keeshan's Red Headband (1)
+    .isOnQuest 26573
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 49,26.59,10.53
+    >>Open the |cRXP_PICK_Blackrock Coffer|r. Loot it for |cRXP_LOOT_Keeshan's Jade Amulet|r
+    .complete 26573,2 --Keeshan's Jade Amulet (1)
+    .isOnQuest 26573
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 49,25.91,10.49
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Krakauer|r
@@ -463,10 +466,15 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 49,27.57,16.86
     >>Kill |cRXP_ENEMY_Overlord Barbarius|r
-    >>Kill |cRXP_ENEMY_Overlord Barbarius|r and loot |cRXP_LOOT_Blackrock Lever Key|r
-    .complete -26562,1 --Overlord Barbarius slain (1)
-    .complete -26562,2 --Blackrock Lever Key (1)
+    .complete 26562,1 --Overlord Barbarius slain (1)
     .mob Overlord Barbarius
+    .isOnQuest 26562
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 49,27.57,16.86
+    >>Kill |cRXP_ENEMY_Overlord Barbarius|r and loot |cRXP_LOOT_Blackrock Lever Key|r
+    .complete 26562,2 --Blackrock Lever Key (1)
+    .mob Overlord Barbarius
+    .isOnQuest 26562
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 49,28.33,17.01
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Danforth|r
@@ -474,7 +482,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Danforth
     .isOnQuest 26562
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along65
     .goto 49,28.33,17.01
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Danforth|r
     .accept 26563 >>Accept Return of the Bravo Company
@@ -482,12 +489,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 26562 --any of: And Last But Not Least... Danforth
     .xp <15,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along66
-    >>As you go: Kill |cRXP_ENEMY_Blackrock Trackers|r. Loot them for |cRXP_LOOT_Blackrock Spyglass|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -26569,1 --Blackrock Spyglass (5)
-    .mob Blackrock Tracker
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along66
     #loop
     .goto 49,27.54,16.85,0
     .goto 49,27.54,16.85,40,0
@@ -630,18 +631,32 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isOnQuest 26637
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
+    .goto 49,45.94,67.03,0
+    .goto 49,45.94,67.03,40,0
+    .goto 49,50.32,66.03,40,0
+    >>Kill |cRXP_ENEMY_Blackrock Hunters|r
+    .complete 26638,1 --Blackrock Hunter slain (8)
+    .mob Blackrock Hunter
+    .isOnQuest 26638
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
     .goto 49,48.75,66.66,0
     .goto 49,48.75,66.66,40,0
-    .goto 49,45.90,68.40,40,0
-    .goto 49,42.27,69.74,40,0
-    .goto 49,41.11,69.98,40,0
-    >>Kill |cRXP_ENEMY_Blackrock Hunters|r
+    .goto 49,48.56,64.17,40,0
+    .goto 49,41.12,69.99,40,0
+    .goto 49,42.56,70.35,40,0
     >>Pick up |cRXP_PICK_Pile of Leaves|r from the ground
+    .complete 26636,1 --Pile of Leaves (5)
+    .isOnQuest 26636
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
+    .goto 49,45.90,68.40,0
+    .goto 49,45.90,68.40,40,0
+    .goto 49,43.96,67.75,40,0
+    .goto 49,41.11,69.98,40,0
     >>Pick up |cRXP_PICK_Fox Poop|r from the ground
-    .complete -26638,1 --Blackrock Hunter slain (8)
-    .complete -26636,1 --Pile of Leaves (5)
-    .complete -26636,2 --Fox Poop (5)
-    .mob Blackrock Hunter
+    .complete 26636,2 --Fox Poop (5)
+    .isOnQuest 26636
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 49,53.05,67.83
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brubaker|r
@@ -713,12 +728,16 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 26646 --any of: Prisoners of War
     .xp <16,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 49,63.93,70.54
+    .goto 49,66.41,71.47
     >>Kill |cRXP_ENEMY_Blackrock Tower|r
-    >>Click the |cRXP_PICK_Blackrock Explosive Device|r
-    .complete -26651,2 --Blackrock Tower (1)
-    .complete -26651,1 --Blackrock Explosive Device
+    .complete 26651,2 --Blackrock Tower (1)
     .mob Blackrock Tower
+    .isOnQuest 26651
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 49,63.80,70.54
+    >>Click the |cRXP_PICK_Blackrock Explosive Device|r
+    .complete 26651,1 --Blackrock Explosive Device
+    .isOnQuest 26651
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 49,77.68,65.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_John J. Keeshan|r

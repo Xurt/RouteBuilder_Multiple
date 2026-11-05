@@ -1,5 +1,5 @@
 Blade's Edge Mountains - Horde - part 1 of 3, planned from level 65
-Guide "65-70 Blade's Edge Mountains" in group "Zone Routes (Horde)": this part has 173 steps, 153 stops
+Guide "65-70 Blade's Edge Mountains" in group "Zone Routes (Horde)": this part has 179 steps, 159 stops
 Written to guides/mop/Blade's Edge Mountains (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -188,7 +188,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Blade's Edge Mountains - Horde - part 2 of 3, planned from level 68
-Guide "65-70 Blade's Edge Mountains" in group "Zone Routes (Horde)": this part has 42 steps, 40 stops
+Guide "65-70 Blade's Edge Mountains" in group "Zone Routes (Horde)": this part has 43 steps, 41 stops
 Written to guides/mop/Blade's Edge Mountains (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

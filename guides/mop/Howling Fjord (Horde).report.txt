@@ -1,5 +1,5 @@
 Howling Fjord - Horde - part 1 of 2, planned from level 70
-Guide "70-72 Howling Fjord" in group "Zone Routes (Horde)": this part has 251 steps, 228 stops
+Guide "70-72 Howling Fjord" in group "Zone Routes (Horde)": this part has 255 steps, 234 stops
 Written to guides/mop/Howling Fjord (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -21,7 +21,7 @@ Step order kept from the last build (locks folder): 278 steps kept, 11 new ones 
   everyone (quests that depend on other zones): 56 more tasks; their whole route comes to 64,578 yd; ends at level 72.0; at its hardest you are 1.2 levels below the mobs
 Hearthstone: set at Helen Fairchild (Helen Fairchild's inn); 0 hearth steps in the guide.
 1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
-15 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+11 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 6 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (109)
@@ -92,7 +92,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Howling Fjord - Horde - part 2 of 2, planned from level 78
-Guide "70-72 Howling Fjord" in group "Zone Routes (Horde)": this part has 19 steps, 18 stops
+Guide "70-72 Howling Fjord" in group "Zone Routes (Horde)": this part has 21 steps, 20 stops
 Written to guides/mop/Howling Fjord (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

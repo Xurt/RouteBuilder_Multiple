@@ -486,16 +486,20 @@ step
     .mob Phantasmal Seeker
     .mob Stonewing Slayer
 step
-    #loop
-    .goto 1942,13.69,26.84,0
-    .goto 1942,13.69,26.84,40,0
-    .goto 1942,10.44,22.58,40,0
+    .goto 1942,12.80,25.09
     >>Pick up |cRXP_PICK_Night Elf Plans: An'owyn|r from the ground
+    .complete 9163,2 --Night Elf Plans: An'owyn (1)
+    .isOnQuest 9163
+step
+    .goto 1942,13.69,26.84
     >>Pick up |cRXP_PICK_Night Elf Plans: An'daroth|r from the ground
+    .complete 9163,1 --Night Elf Plans: An'daroth (1)
+    .isOnQuest 9163
+step
+    .goto 1942,10.44,22.58
     >>Pick up |cRXP_PICK_Night Elf Plans: Scrying on the Sin'dorei|r from the ground
-    .complete -9163,2 --Night Elf Plans: An'owyn (1)
-    .complete -9163,1 --Night Elf Plans: An'daroth (1)
-    .complete -9163,3 --Night Elf Plans: Scrying on the Sin'dorei (1)
+    .complete 9163,3 --Night Elf Plans: Scrying on the Sin'dorei (1)
+    .isOnQuest 9163
 step << Priest/Druid/Rogue/Paladin
     .goto 1942,14.71,26.66,0
     .goto 1942,14.71,26.66,30,0

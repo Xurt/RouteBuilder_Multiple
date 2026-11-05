@@ -47,7 +47,7 @@ step << Goblin
     .accept 14014 >>Accept Get Our Stuff Back!
     .target Sassy Hardwrench
 step << Goblin
-    #completewith Along6
+    #completewith Along8
     >>As you go: Pick up |cRXP_PICK_Crate of Tools|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 14014,1 --Crate of Tools (8)
 step << Goblin
@@ -103,17 +103,27 @@ step << Rogue Cata
     .target Slinky Sharpshiv
 step << Goblin
     #loop
+    .goto 174,29.01,72.14,0
+    .goto 174,29.01,72.14,40,0
+    .goto 174,27.95,69.55,40,0
+    >>Kill |cRXP_ENEMY_Teraptor Hatchlings|r
+    .complete 14473,1 --Teraptor Hatchling slain (6)
+    .mob Teraptor Hatchling
+step << Goblin
+    .goto 174,27.84,74.29
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maxx Avalanche|r
+    .turnin 14473 >>Turn in It's Our Problem Now while you are here
+    .isQuestComplete 14473
+    .target Maxx Avalanche
+step << Goblin
+    #label Along8
+    #loop
     .goto 174,29.25,72.54,0
     .goto 174,29.25,72.54,40,0
-    .goto 174,29.95,75.41,40,0
-    .goto 174,27.58,70.57,40,0
-    >>Kill |cRXP_ENEMY_Teraptor Hatchlings|r
+    .goto 174,29.52,76.18,40,0
+    .goto 174,26.85,70.44,40,0
     >>Interact with |cRXP_FRIENDLY_Bomb-Throwing Monkeys|r
-    >>Pick up |cRXP_PICK_Crate of Tools|r from the ground
-    .complete 14473,1 --Teraptor Hatchling slain (6)
     .complete 14019,1 --Bomb-Throwing Monkey (10)
-    .complete 14014,1 --Crate of Tools (8)
-    .mob Teraptor Hatchling
     .target Bomb-Throwing Monkey
 step << Goblin
     .goto 174,27.95,74.42
@@ -121,6 +131,14 @@ step << Goblin
     .turnin 14019 >>Turn in Monkey Business while you are here
     .isQuestComplete 14019
     .target Bamm Megabomb
+step << Goblin
+    #loop
+    .goto 174,30.05,71.41,0
+    .goto 174,30.05,71.41,40,0
+    .goto 174,29.95,75.41,40,0
+    .goto 174,26.99,70.29,40,0
+    >>Pick up |cRXP_PICK_Crate of Tools|r from the ground
+    .complete 14014,1 --Crate of Tools (8)
 step << Goblin
     .goto 174,27.84,74.29
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maxx Avalanche|r
@@ -583,7 +601,7 @@ step << Goblin
     .accept 24942 >>Accept Zombies vs. Super Booster Rocket Boots
     .unitscan Coach Crosscheck
 step << Goblin
-    #completewith Along76
+    #completewith Along78
     >>As you go: Kill |cRXP_ENEMY_Goblin Zombies|r. |cRXP_WARN_Anything left is finished later|r
     .complete 24942,1 --Goblin Zombie (50)
     .mob Goblin Zombie
@@ -603,7 +621,7 @@ step << Goblin
     .accept 24946 >>Accept Rockin' Powder
     .unitscan Assistant Greely
 step << Goblin
-    #completewith Along76
+    #completewith Along78
     >>As you go: Pick up |cRXP_PICK_Rockin' Powder|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 24946,1 --Rockin' Powder (5)
 step << Goblin
@@ -617,7 +635,7 @@ step << Goblin
     .complete 24945,3 --Teloch slain (1)
     .mob Teloch
 step << Goblin
-    #label Along76
+    #label Along78
     .goto 174,59.60,40.19
     >>Kill |cRXP_ENEMY_Gaahl|r
     .complete 24945,1 --Gaahl slain (1)
@@ -728,11 +746,11 @@ step << Goblin
     .accept 25093 >>Accept The Heads of the SI:7
     .unitscan Aggra
 step << Goblin
-    #completewith Along92
+    #completewith Along94
     >>As you go: Click the |cRXP_PICK_Land Mine|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25058,1 --Land Mine
 step << Goblin
-    #completewith Along91
+    #completewith Along93
     >>As you go: Kill |cRXP_ENEMY_Alliance Paratroopers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25024,1 --Alliance Paratrooper (10)
     .mob Alliance Paratrooper
@@ -742,13 +760,13 @@ step << Goblin
     .complete 25093,1 --Commander Arrington's Head (1)
     .mob Commander Arrington
 step << Goblin
-    #label Along91
+    #label Along93
     .goto 174,30.81,33.93
     >>Kill |cRXP_ENEMY_Alexi Silenthowl|r and loot |cRXP_LOOT_Alexi Silenthowl's Head|r
     .complete 25093,3 --Alexi Silenthowl's Head (1)
     .mob Alexi Silenthowl
 step << Goblin
-    #label Along92
+    #label Along94
     .goto 174,33.44,27.88
     >>Kill |cRXP_ENEMY_Darkblade Cyn|r and loot |cRXP_LOOT_Darkblade Cyn's Head|r
     .complete 25093,2 --Darkblade Cyn's Head (1)
@@ -934,12 +952,6 @@ step << Goblin
     .target Assistant Greely
     .isQuestTurnedIn 25110 --any of: Kaja'Cola Gives You IDEAS! (TM)
 step << Goblin
-    #completewith Along21
-    >>As you go: Kill |cRXP_ENEMY_Kezan Citizens|r and |cRXP_ENEMY_Goblin Survivors|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -25122,4 --Kezan Citizen (6)
-    .mob Kezan Citizen
-    .mob Goblin Survivor
-step << Goblin
     #loop
     .goto 174,54.67,34.77,0
     .goto 174,54.67,34.77,40,0
@@ -973,7 +985,6 @@ step << Goblin
     .mob Blastshadow the Brutemaster
     .isOnQuest 25123
 step << Goblin
-    #label Along21
     .goto 174,57.05,32.15
     >>Interact with |cRXP_FRIENDLY_Gobber|r
     .complete 25122,3 --Gobber
@@ -1055,12 +1066,6 @@ step << Goblin
     .unitscan Assistant Greely
     .isQuestTurnedIn 25184 --any of: Wild Mine Cart Ride
 step << Goblin
-    #completewith Along31
-    >>As you go: Kill |cRXP_ENEMY_Steamwheedle Sharks|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -25200,1 --Steamwheedle Shark slain (8)
-    .mob Steamwheedle Shark
-step << Goblin
-    #label Along31
     .goto 174,54.44,16.93
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Coach Crosscheck|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 25201 >>Accept The Ultimate Footbomb Uniform
@@ -1068,14 +1073,22 @@ step << Goblin
     .isQuestTurnedIn 25184 --any of: Wild Mine Cart Ride
 step << Goblin
     #loop
+    .goto 174,53.37,20.54,0
+    .goto 174,53.37,20.54,40,0
+    .goto 174,51.73,17.18,40,0
+    >>Kill |cRXP_ENEMY_Steamwheedle Sharks|r
+    .complete 25200,1 --Steamwheedle Shark slain (8)
+    .mob Steamwheedle Shark
+    .isOnQuest 25200
+step << Goblin
+    #loop
     .goto 174,54.40,18.47,0
     .goto 174,54.40,18.47,40,0
     .goto 174,52.60,21.02,40,0
-    >>Kill |cRXP_ENEMY_Steamwheedle Sharks|r
     >>Kill |cRXP_ENEMY_Steamwheedle Sharks|r. Loot them for |cRXP_LOOT_Spare Shredder Parts|r. It can also be picked up from |cRXP_PICK_Spare Shredder Parts|r on the ground
-    .complete -25200,1 --Steamwheedle Shark slain (8)
-    .complete -25201,1 --Spare Shredder Parts (8)
+    .complete 25201,1 --Spare Shredder Parts (8)
     .mob Steamwheedle Shark
+    .isOnQuest 25201
 step << Goblin
     .goto 174,54.44,16.93
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Coach Crosscheck|r. |cRXP_WARN_This NPC walks a patrol route|r
@@ -1117,18 +1130,31 @@ step << Goblin
     .isQuestTurnedIn 25200 --Shredder Shutdown
     .isQuestTurnedIn 25201 --The Ultimate Footbomb Uniform
 step << Goblin
-    .goto 174,50.52,13.06
+    .goto 174,50.70,13.81
     >>Click the |cRXP_PICK_Valve #1|r
+    .complete 25204,1 --Valve #1
+    .isOnQuest 25204
+step << Goblin
+    .goto 174,50.52,13.06
     >>Click the |cRXP_PICK_Valve #3|r
+    .complete 25204,3 --Valve #3
+    .isOnQuest 25204
+step << Goblin
+    .goto 174,49.86,13.89
     >>Kill |cRXP_ENEMY_Chip Endale|r and loot |cRXP_LOOT_Still-Beating Heart|r
-    >>Click the |cRXP_PICK_Valve #4|r
-    >>Click the |cRXP_PICK_Valve #2|r
-    .complete -25204,1 --Valve #1
-    .complete -25204,3 --Valve #3
-    .complete -25202,1 --Still-Beating Heart (1)
-    .complete -25204,4 --Valve #4
-    .complete -25204,2 --Valve #2
+    .complete 25202,1 --Still-Beating Heart (1)
     .mob Chip Endale
+    .isOnQuest 25202
+step << Goblin
+    .goto 174,49.86,12.71
+    >>Click the |cRXP_PICK_Valve #4|r
+    .complete 25204,4 --Valve #4
+    .isOnQuest 25204
+step << Goblin
+    .goto 174,50.14,11.75
+    >>Click the |cRXP_PICK_Valve #2|r
+    .complete 25204,2 --Valve #2
+    .isOnQuest 25204
 step << Goblin
     .goto 174,51.41,13.06
     >>Click the |cRXP_PICK_Platform Control Panel|r
@@ -1208,16 +1234,20 @@ step << Goblin
     .unitscan Hobart Grapplehammer
     .isQuestTurnedIn 25213 --any of: The Slave Pits
 step << Goblin
-    #loop
-    .goto 174,40.92,27.13,0
-    .goto 174,40.92,27.13,40,0
-    .goto 174,39.36,27.29,40,0
+    .goto 174,39.69,27.17
     >>Kill |cRXP_ENEMY_Candy Cane|r and loot |cRXP_LOOT_Fickle Heart|r
-    >>Kill |cRXP_ENEMY_Captured Goblins|r
-    .complete -25243,1 --Fickle Heart (1)
-    .complete -25214,1 --Captured Goblin slain (8)
+    .complete 25243,1 --Fickle Heart (1)
     .mob Candy Cane
+    .isOnQuest 25243
+step << Goblin
+    #loop
+    .goto 174,39.36,27.29,0
+    .goto 174,39.36,27.29,40,0
+    .goto 174,40.92,27.13,40,0
+    >>Kill |cRXP_ENEMY_Captured Goblins|r
+    .complete 25214,1 --Captured Goblin slain (8)
     .mob Captured Goblin
+    .isOnQuest 25214
 step << Goblin
     #loop
     .goto 174,43.85,25.30,0

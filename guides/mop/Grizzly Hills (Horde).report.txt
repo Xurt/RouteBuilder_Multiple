@@ -1,5 +1,5 @@
 Grizzly Hills - Horde - part 1 of 2, planned from level 73
-Guide "73-75 Grizzly Hills" in group "Zone Routes (Horde)": this part has 224 steps, 187 stops
+Guide "73-75 Grizzly Hills" in group "Zone Routes (Horde)": this part has 228 steps, 191 stops
 Written to guides/mop/Grizzly Hills (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

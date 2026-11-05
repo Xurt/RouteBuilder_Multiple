@@ -489,7 +489,7 @@ step
     >>Click the |cRXP_PICK_Call to Arms!|r
     .accept 7861 >>Accept Wanted: Vile Priestess Hexx and Her Minions
 step
-    #completewith Along2
+    #completewith Along3
     >>As you go: Kill |cRXP_ENEMY_Vilebranch Aman'zasi Guards|r. |cRXP_WARN_Anything left is finished later|r
     .complete 7861,2 --Vilebranch Aman'zasi Guard slain (10)
     .mob Vilebranch Aman'zasi Guard
@@ -506,22 +506,25 @@ step
     .target Elder Torntusk
     .isQuestTurnedIn 7845 --any of: Kidnapped Elder Torntusk!
 step
-    #label Along2
     .goto 1425/0,-3864.60,-542.01
     >>Kill |cRXP_ENEMY_Vile Priestess Hexx|r
     .complete 7861,1 --Vile Priestess Hexx slain (1)
     .mob Vile Priestess Hexx
 step
-    #loop
-    .goto 1425/0,-3793.37,-616.18,0
-    .goto 1425/0,-3793.37,-616.18,40,0
-    .goto 1425/0,-3744.86,-712.43,40,0
-    .goto 1425/0,-3938.52,-629.27,40,0
+    #label Along3
+    .goto 1425/0,-3781.82,-757.09
     >>Kill |cRXP_ENEMY_Hitah'ya the Keeper|r and loot |cRXP_LOOT_Shackle Key|r
-    >>Kill |cRXP_ENEMY_Vilebranch Aman'zasi Guards|r
-    .complete -7846,1 --Shackle Key (1)
-    .complete 7861,2 --Vilebranch Aman'zasi Guard slain (10)
+    .complete 7846,1 --Shackle Key (1)
     .mob Hitah'ya the Keeper
+    .isOnQuest 7846
+step
+    #loop
+    .goto 1425/0,-3744.86,-712.43,0
+    .goto 1425/0,-3744.86,-712.43,40,0
+    .goto 1425/0,-3793.37,-616.18,40,0
+    .goto 1425/0,-3887.31,-596.16,40,0
+    >>Kill |cRXP_ENEMY_Vilebranch Aman'zasi Guards|r
+    .complete 7861,2 --Vilebranch Aman'zasi Guard slain (10)
     .mob Vilebranch Aman'zasi Guard
 step
     .goto 1425/0,-3873.07,-531.23

@@ -1,5 +1,5 @@
 Duskwood - Alliance - part 1 of 2, planned from level 21
-Guide "21-25 Duskwood" in group "Zone Routes (Alliance)": this part has 103 steps, 89 stops
+Guide "21-25 Duskwood" in group "Zone Routes (Alliance)": this part has 104 steps, 90 stops
 Written to guides/mop/Duskwood (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

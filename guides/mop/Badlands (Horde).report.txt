@@ -1,5 +1,5 @@
 Badlands - Horde
-Guide "45-47 Badlands" in group "Zone Routes (Horde)": 127 steps, 118 stops
+Guide "45-47 Badlands" in group "Zone Routes (Horde)": 128 steps, 121 stops
 Written to guides/mop/Badlands (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -36,7 +36,7 @@ Step order kept from the last build (locks folder): 109 steps kept, 50 new ones 
   BloodElf (quests that depend on other zones): 5 more tasks; their whole route comes to 21,875 yd; ends at level 46.5; 1 hearth
 Hearthstone: set at Ramah Goldenray (Ramah Goldenray's inn); 1 hearth step in the guide.
 2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (71)
 ------------------------

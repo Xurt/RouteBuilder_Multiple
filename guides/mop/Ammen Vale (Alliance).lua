@@ -174,12 +174,14 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 9294,1 --Irradiated Power Crystal
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 468,65.19,82.80,0
-    .goto 468,65.19,82.80,40,0
+    .goto 468,64.47,84.39,0
+    .goto 468,64.47,84.39,40,0
     .goto 468,63.51,87.84,40,0
     >>Pick up |cRXP_PICK_Emitter Spare Part|r from the ground
-    >>Interact with |cRXP_FRIENDLY_Nestlewood Owlkins|r
     .complete 9305,1 --Emitter Spare Part (4)
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 468,65.69,81.30
+    >>Interact with |cRXP_FRIENDLY_Nestlewood Owlkins|r
     .complete 9303,1 --Nestlewood Owlkin (6)
     .target Nestlewood Owlkin
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren

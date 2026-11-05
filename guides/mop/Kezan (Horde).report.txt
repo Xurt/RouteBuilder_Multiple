@@ -91,7 +91,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Kezan - Horde - part 2 of 2, planned from level 4
-Guide "1-3 Kezan" in group "Zone Routes (Horde)": this part has 63 steps, 61 stops
+Guide "1-3 Kezan" in group "Zone Routes (Horde)": this part has 65 steps, 64 stops
 Written to guides/mop/Kezan (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -119,7 +119,6 @@ Step order kept from the last build (locks folder): 63 steps kept, 1 new ones sl
   Goblin (quests that depend on other zones): 40 more tasks; their whole route comes to 12,374 yd; ends at level 4.0
   Goblin Hunter (quests that depend on other zones): 3 more tasks; their whole route comes to 12,909 yd; ends at level 4.1
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
-1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (21)
 ------------------------

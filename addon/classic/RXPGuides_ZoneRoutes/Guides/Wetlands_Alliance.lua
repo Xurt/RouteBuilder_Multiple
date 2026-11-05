@@ -178,15 +178,22 @@ step
     .isOnQuest 455
 step
     #loop
-    .goto 1437/0,-2442.40,-4325.91,0
+    .goto 1437/0,-2372.93,-4249.28,0
+    .goto 1437/0,-2372.93,-4249.28,40,0
     .goto 1437/0,-2442.40,-4325.91,40,0
-    .goto 1437/0,-2350.60,-4235.50,40,0
     >>Kill |cRXP_ENEMY_Dragonmaw Scouts|r
-    >>Kill |cRXP_ENEMY_Dragonmaw Grunts|r
-    .complete -455,1 --Dragonmaw Scout slain (8)
-    .complete -455,2 --Dragonmaw Grunt slain (6)
+    .complete 455,1 --Dragonmaw Scout slain (8)
     .mob Dragonmaw Scout
+    .isOnQuest 455
+step
+    #loop
+    .goto 1437/0,-2358.46,-4231.09,0
+    .goto 1437/0,-2358.46,-4231.09,40,0
+    .goto 1437/0,-2519.32,-4310.75,40,0
+    >>Kill |cRXP_ENEMY_Dragonmaw Grunts|r
+    .complete 455,2 --Dragonmaw Grunt slain (6)
     .mob Dragonmaw Grunt
+    .isOnQuest 455
 step
     .goto 1437/0,-807.26,-3716.22
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Valstag Ironjaw|r
@@ -341,16 +348,11 @@ step
     .mob Black Ooze
     .mob Monstrous Ooze
 step
-    #completewith Along8
-    >>As you go: Pick up |cRXP_PICK_Flagongut's Fossil|r from the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -943,2 --Flagongut's Fossil (1)
-step
     .goto 1437/0,-1968.49,-3550.57
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ormer Ironbraid|r
     .accept 294 >>Accept Ormer's Revenge
     .target Ormer Ironbraid
 step
-    #label Along8
     .goto 1437/0,-1998.67,-3590.54
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Merrin Rockweaver|r
     .turnin 305 >>Turn in In Search of The Excavation Team
@@ -563,15 +565,22 @@ step
     .isQuestTurnedIn 294 --any of: Ormer's Revenge
 step
     #loop
-    .goto 1437/0,-1809.27,-3513.64,0
-    .goto 1437/0,-1809.27,-3513.64,40,0
-    .goto 1437/0,-1823.75,-3445.83,40,0
+    .goto 1437/0,-1849.39,-3511.98,0
+    .goto 1437/0,-1849.39,-3511.98,40,0
+    .goto 1437/0,-1746.83,-3554.16,40,0
     >>Kill |cRXP_ENEMY_Mottled Scytheclaws|r
-    >>Kill |cRXP_ENEMY_Mottled Razormaws|r
-    .complete -295,1 --Mottled Scytheclaw slain (10)
-    .complete -295,2 --Mottled Razormaw slain (10)
+    .complete 295,1 --Mottled Scytheclaw slain (10)
     .mob Mottled Scytheclaw
+    .isOnQuest 295
+step
+    #loop
+    .goto 1437/0,-1789.42,-3478.36,0
+    .goto 1437/0,-1789.42,-3478.36,40,0
+    .goto 1437/0,-1823.75,-3445.83,40,0
+    >>Kill |cRXP_ENEMY_Mottled Razormaws|r
+    .complete 295,2 --Mottled Razormaw slain (10)
     .mob Mottled Razormaw
+    .isOnQuest 295
 step
     .goto 1437/0,-1968.49,-3550.57
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ormer Ironbraid|r
@@ -644,17 +653,6 @@ step
     .target First Mate Fitzsimmons
     .isQuestTurnedIn 288 --any of: The Third Fleet
 step
-    #completewith Along2
-    >>As you go: Kill |cRXP_ENEMY_Cursed Marines|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -289,2 --Cursed Marine slain (5)
-    .mob Cursed Marine
-step
-    #completewith Along2
-    >>As you go: Kill |cRXP_ENEMY_First Mate Snellig|r and loot |cRXP_LOOT_Snellig's Snuffbox|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -289,3 --Snellig's Snuffbox (1)
-    .mob First Mate Snellig
-step
-    #label Along2
     .goto 1437/0,-968.13,-2979.75
     >>Kill |cRXP_ENEMY_Cursed Sailors|r
     .complete 289,1 --Cursed Sailor slain (13)

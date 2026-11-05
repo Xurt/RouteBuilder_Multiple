@@ -1,5 +1,5 @@
 Teldrassil - Alliance - part 1 of 8, planned from level 1
-Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 267 steps, 179 stops
+Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 264 steps, 180 stops
 Written to guides/tbc/Teldrassil (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -42,7 +42,7 @@ The check passes at once if you are there; if you are a little behind the predic
   level 10 for The Shade of Elura (Warrior)
   level 10 for Desperate Prayer (Human Priest/Dwarf Priest)
 45 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-7 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 10 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 4 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 

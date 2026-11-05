@@ -1,5 +1,5 @@
 Un'Goro Crater - Alliance - part 1 of 2, planned from level 50
-Guide "50-56 Un'Goro Crater" in group "Zone Routes (Alliance)": this part has 75 steps, 59 stops
+Guide "50-56 Un'Goro Crater" in group "Zone Routes (Alliance)": this part has 74 steps, 59 stops
 Written to guides/tbc/Un'Goro Crater (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -25,7 +25,7 @@ These pickups are planned within about half a level of the level they unlock at,
 The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
   level 50 for Bloodpetal Poison (Druid)
 1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
-3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 2 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 
 Quests in the guide (31)

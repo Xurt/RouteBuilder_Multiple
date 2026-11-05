@@ -1,5 +1,5 @@
 Valley of the Four Winds - Alliance - part 1 of 2, planned from level 87
-Guide "87-90 Valley of the Four Winds" in group "Zone Routes (Alliance)": this part has 56 steps, 48 stops
+Guide "87-90 Valley of the Four Winds" in group "Zone Routes (Alliance)": this part has 55 steps, 48 stops
 Written to guides/mop/Valley of the Four Winds (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -21,7 +21,6 @@ Step order kept from the last build (locks folder): 1 steps kept, 50 new ones sl
   everyone (quests that depend on other zones): 25 more tasks; their whole route comes to 8,861 yd; ends at level 87.0; 1 hearth; at its hardest you are 5.0 levels below the mobs
 Hearthstone: set at Nam Ironpaw (Nam Ironpaw's inn); 1 hearth step in the guide.
 1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
-1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (26)
 ------------------------
@@ -209,7 +208,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Valley of the Four Winds - Alliance - part 2 of 2, planned from level 90
-Guide "87-90 Valley of the Four Winds" in group "Zone Routes (Alliance)": this part has 312 steps, 267 stops
+Guide "87-90 Valley of the Four Winds" in group "Zone Routes (Alliance)": this part has 330 steps, 288 stops
 Written to guides/mop/Valley of the Four Winds (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -234,7 +233,7 @@ These pickups are planned within about half a level of the level they unlock at,
 The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
   level 90 for You Want Fish?
 1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
-24 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+17 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 8 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 4 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 

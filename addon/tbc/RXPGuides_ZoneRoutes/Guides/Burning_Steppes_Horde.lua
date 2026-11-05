@@ -138,13 +138,17 @@ step
     .isQuestTurnedIn 3481 --any of: Trinkets...
     .xp <52,1
 step
-    .goto 1428/0,-3031.80,-7652.01
+    .goto 1428/0,-3052.01,-7647.33
     >>Kill |cRXP_ENEMY_Cyrus Therepentous|r
-    >>Kill |cRXP_ENEMY_Frenzied Black Drake|r and loot |cRXP_LOOT_Black Dragonflight Molt|r
-    .complete -4022,2 --Cyrus Therepentous (1)
-    .complete -4022,1 --Black Dragonflight Molt (1)
+    .complete 4022,2 --Cyrus Therepentous (1)
     .mob Cyrus Therepentous
+    .isOnQuest 4022
+step
+    .goto 1428/0,-3031.80,-7652.01
+    >>Kill |cRXP_ENEMY_Frenzied Black Drake|r and loot |cRXP_LOOT_Black Dragonflight Molt|r
+    .complete 4022,1 --Black Dragonflight Molt (1)
     .mob Frenzied Black Drake
+    .isOnQuest 4022
 step
     .goto 1428/0,-3052.01,-7647.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cyrus Therepentous|r

@@ -81,7 +81,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Searing Gorge - Alliance - part 2 of 3, planned from level 46
-Guide "43-52 Searing Gorge" in group "Zone Routes (Alliance)": this part has 37 steps, 26 stops
+Guide "43-52 Searing Gorge" in group "Zone Routes (Alliance)": this part has 38 steps, 27 stops
 Written to guides/tbc/Searing Gorge (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -139,7 +139,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Searing Gorge - Alliance - part 3 of 3, planned from level 49
-Guide "43-52 Searing Gorge" in group "Zone Routes (Alliance)": this part has 25 steps, 24 stops
+Guide "43-52 Searing Gorge" in group "Zone Routes (Alliance)": this part has 26 steps, 25 stops
 Written to guides/tbc/Searing Gorge (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

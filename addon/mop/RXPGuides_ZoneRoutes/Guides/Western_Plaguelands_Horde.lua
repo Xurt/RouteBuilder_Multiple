@@ -846,12 +846,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 27083 --any of: The Battle Resumes!
     .xp <38,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along3
-    >>As you go: Kill |cRXP_ENEMY_Ebon Gargoyles|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27084,1 --Ebon Gargoyle slain (8)
-    .mob Ebon Gargoyle
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along3
     .goto 22,47.31,64.41
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jearl Donald|r
     .accept 27085 >>Accept Supporting the Troops
@@ -866,16 +860,23 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isOnQuest 27084
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 22,44.07,67.97,0
+    .goto 22,42.08,67.91,0
+    .goto 22,42.08,67.91,40,0
+    .goto 22,42.36,71.40,40,0
+    >>Kill |cRXP_ENEMY_Andorhal Force-Commanders|r
+    .complete 27086,1 --Andorhal Force-Commander slain (3)
+    .mob Andorhal Force-Commander
+    .isOnQuest 27086
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 22,41.07,69.41,0
+    .goto 22,41.07,69.41,40,0
     .goto 22,44.07,67.97,40,0
     .goto 22,44.71,71.03,40,0
-    .goto 22,41.86,68.38,40,0
-    >>Kill |cRXP_ENEMY_Andorhal Force-Commanders|r
     >>Kill |cRXP_ENEMY_Andorhal Defenders|r
-    .complete -27086,1 --Andorhal Force-Commander slain (3)
-    .complete -27085,1 --Andorhal Defender slain (15)
-    .mob Andorhal Force-Commander
+    .complete 27085,1 --Andorhal Defender slain (15)
     .mob Andorhal Defender
+    .isOnQuest 27085
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 22,47.31,64.41
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jearl Donald|r

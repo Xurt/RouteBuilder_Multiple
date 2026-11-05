@@ -1,5 +1,5 @@
 Deepholm - Horde
-Guide "82-83 Deepholm" in group "Zone Routes (Horde)": 242 steps, 210 stops
+Guide "82-83 Deepholm" in group "Zone Routes (Horde)": 250 steps, 215 stops
 Written to guides/mop/Deepholm (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -24,7 +24,7 @@ These pickups are planned within about half a level of the level they unlock at,
 The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
   level 83 for The Reliquary (Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
 1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
-20 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+24 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 4 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 2 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 

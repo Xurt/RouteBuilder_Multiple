@@ -30,16 +30,23 @@ step
     .target Chief Rikkitun
 step
     #loop
-    .goto 422,71.36,27.47,0
-    .goto 422,71.36,27.47,40,0
-    .goto 422,72.40,23.00,40,0
+    .goto 422,71.58,22.02,0
+    .goto 422,71.58,22.02,40,0
     .goto 422,74.23,23.90,40,0
+    .goto 422,72.04,27.58,40,0
     >>Interact with |cRXP_FRIENDLY_Dreadspinner Eggs|r
-    >>Kill |cRXP_ENEMY_Dreadspinner Tenders|r
-    .complete -31002,1 --Dreadspinner Egg (20)
-    .complete -31002,2 --Dreadspinner Tender slain (6)
+    .complete 31002,1 --Dreadspinner Egg (20)
     .target Dreadspinner Egg
+    .isOnQuest 31002
+step
+    #loop
+    .goto 422,71.40,27.20,0
+    .goto 422,71.40,27.20,40,0
+    .goto 422,72.80,23.40,40,0
+    >>Kill |cRXP_ENEMY_Dreadspinner Tenders|r
+    .complete 31002,2 --Dreadspinner Tender slain (6)
     .mob Dreadspinner Tender
+    .isOnQuest 31002
 step
     .goto 422,72.55,28.67
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marksman Lann|r
@@ -109,13 +116,17 @@ step
     .goto 422,70.81,29.33,0
     .goto 422,70.81,29.33,40,0
     .goto 422,72.14,30.62,40,0
-    .goto 422,72.31,34.16,40,0
+    .goto 422,72.01,34.67,40,0
     >>Kill |cRXP_ENEMY_Sapflies|r. Loot them for |cRXP_LOOT_Sapfly Bits|r
-    >>Kill |cRXP_ENEMY_Vengeful Gurthani Spirits|r
-    .complete -31005,1 --Sapfly Bits (100)
-    .complete -31676,1 --Vengeful Gurthani Spirit slain (6)
+    .complete 31005,1 --Sapfly Bits (100)
     .mob Sapfly
+    .isOnQuest 31005
+step
+    .goto 422,71.62,34.21
+    >>Kill |cRXP_ENEMY_Vengeful Gurthani Spirits|r
+    .complete 31676,1 --Vengeful Gurthani Spirit slain (6)
     .mob Vengeful Gurthani Spirit
+    .isOnQuest 31676
 step
     .goto 422,70.20,25.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kil'ruk the Wind-Reaver|r
@@ -177,11 +188,6 @@ step
     .target Kik'tik
     .subzoneskip 6315,1
 step
-    #completewith Along26
-    >>As you go: Kill |cRXP_ENEMY_Shek'zeer Bladesworns|r. Loot them for |cRXP_LOOT_Amber Blade|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31008,1 --Amber Blade (6)
-    .mob Shek'zeer Bladesworn
-step
     .goto 422,40.07,38.99
     >>Click the |cRXP_PICK_Inactive Sonic Relay|r
     .complete 31009,1 --Inactive Sonic Relay
@@ -199,16 +205,6 @@ step
     .isQuestTurnedIn 31009 --any of: Dead Zone
     .xp <89,1
 step
-    #completewith Along26
-    >>As you go: Kill |cRXP_ENEMY_Shek'zeer Swarmborns|r and |cRXP_ENEMY_Shek'zeer Wingblades|r. Kill |cRXP_ENEMY_Shek'zeer Clutch-Keepers|r. Click the |cRXP_PICK_Ancient Amber Chunk|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31660,1 --Shek'zeer Swarmborn (30)
-    .complete -31007,1 --Shek'zeer Clutch-Keeper slain (6)
-    .complete -31010,1 --Ancient Amber Chunk
-    .mob Shek'zeer Swarmborn
-    .mob Shek'zeer Wingblade
-    .mob Shek'zeer Clutch-Keeper
-step
-    #label Along26
     .goto 422,44.57,41.31
     >>Click the |cRXP_PICK_Sha-Haunted Crystal|r
     .accept 31661 >>Accept A Source of Terrifying Power
@@ -216,22 +212,34 @@ step
     .xp <89,1
 step
     #loop
-    .goto 422,44.11,41.15,0
-    .goto 422,44.11,41.15,40,0
-    .goto 422,42.84,43.86,40,0
+    .goto 422,44.01,42.63,0
+    .goto 422,44.01,42.63,40,0
     .goto 422,39.78,40.82,40,0
     >>Kill |cRXP_ENEMY_Shek'zeer Bladesworns|r. Loot them for |cRXP_LOOT_Amber Blade|r
-    >>Kill |cRXP_ENEMY_Shek'zeer Swarmborns|r and |cRXP_ENEMY_Shek'zeer Wingblades|r
-    >>Kill |cRXP_ENEMY_Shek'zeer Clutch-Keepers|r
-    >>Click the |cRXP_PICK_Ancient Amber Chunk|r
-    .complete -31008,1 --Amber Blade (6)
-    .complete -31660,1 --Shek'zeer Swarmborn (30)
-    .complete -31007,1 --Shek'zeer Clutch-Keeper slain (6)
-    .complete -31010,1 --Ancient Amber Chunk
+    .complete 31008,1 --Amber Blade (6)
     .mob Shek'zeer Bladesworn
+    .isOnQuest 31008
+step
+    .goto 422,44.11,41.15
+    >>Kill |cRXP_ENEMY_Shek'zeer Swarmborns|r and |cRXP_ENEMY_Shek'zeer Wingblades|r
+    .complete 31660,1 --Shek'zeer Swarmborn (30)
     .mob Shek'zeer Swarmborn
     .mob Shek'zeer Wingblade
+    .isOnQuest 31660
+step
+    #loop
+    .goto 422,43.70,43.17,0
+    .goto 422,43.70,43.17,40,0
+    .goto 422,42.37,46.57,40,0
+    >>Kill |cRXP_ENEMY_Shek'zeer Clutch-Keepers|r
+    .complete 31007,1 --Shek'zeer Clutch-Keeper slain (6)
     .mob Shek'zeer Clutch-Keeper
+    .isOnQuest 31007
+step
+    .goto 422,44.76,41.66
+    >>Click the |cRXP_PICK_Ancient Amber Chunk|r
+    .complete 31010,1 --Ancient Amber Chunk
+    .isOnQuest 31010
 step
     .goto 422,55.02,35.55
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ambersmith Zikk|r
@@ -295,21 +303,34 @@ step
     .isQuestTurnedIn 31661 --any of: A Source of Terrifying Power
     .xp <89,1
 step
-    #loop
-    .goto 422,59.37,18.42,0
-    .goto 422,59.37,18.42,40,0
-    .goto 422,58.85,15.56,40,0
+    .goto 422,59.37,18.42
     >>Kill |cRXP_ENEMY_Qi'tar the Deathcaller|r
-    >>Loot the |cRXP_PICK_Vor'thik Eggs|r for |cRXP_LOOT_Vor'thik Eggs|r
-    >>Kill |cRXP_ENEMY_Vor'thik Fear-Shaper|r and loot |cRXP_LOOT_Dread Amber Focus|r
-    >>Kill |cRXP_ENEMY_Vor'thik Dreadsworns|r
-    .complete -31066,1 --Qi'tar the Deathcaller slain (1)
-    .complete -31107,1 --Vor'thik Eggs (10)
-    .complete -31108,1 --Dread Amber Focus (1)
-    .complete -31689,1 --Vor'thik Dreadsworn slain (6)
+    .complete 31066,1 --Qi'tar the Deathcaller slain (1)
     .mob Qi'tar the Deathcaller
+    .isOnQuest 31066
+step
+    .goto 422,59.01,19.52
+    >>Loot the |cRXP_PICK_Vor'thik Eggs|r for |cRXP_LOOT_Vor'thik Eggs|r
+    .complete 31107,1 --Vor'thik Eggs (10)
+    .isOnQuest 31107
+step
+    #loop
+    .goto 422,59.20,18.39,0
+    .goto 422,59.20,18.39,40,0
+    .goto 422,57.91,15.54,40,0
+    >>Kill |cRXP_ENEMY_Vor'thik Fear-Shaper|r and loot |cRXP_LOOT_Dread Amber Focus|r
+    .complete 31108,1 --Dread Amber Focus (1)
     .mob Vor'thik Fear-Shaper
+    .isOnQuest 31108
+step
+    #loop
+    .goto 422,58.96,15.26,0
+    .goto 422,58.96,15.26,40,0
+    .goto 422,57.81,18.10,40,0
+    >>Kill |cRXP_ENEMY_Vor'thik Dreadsworns|r
+    .complete 31689,1 --Vor'thik Dreadsworn slain (6)
     .mob Vor'thik Dreadsworn
+    .isOnQuest 31689
 step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jin the Flying Keg|r
     .target Jin the Flying Keg
@@ -362,10 +383,14 @@ step
 step
     .goto 422,48.10,49.74
     >>Kill |cRXP_ENEMY_Adjunct Zet'uk|r
-    >>Click the |cRXP_PICK_Silent Beacon|r
-    .complete -31087,2 --Adjunct Zet'uk slain (1)
-    .complete -31087,3 --Silent Beacon
+    .complete 31087,2 --Adjunct Zet'uk slain (1)
     .mob Adjunct Zet'uk
+    .isOnQuest 31087
+step
+    .goto 422,48.16,49.71
+    >>Click the |cRXP_PICK_Silent Beacon|r
+    .complete 31087,3 --Silent Beacon
+    .isOnQuest 31087
 step
     .goto 422,48.11,49.63
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kor'ik|r
@@ -382,16 +407,22 @@ step
     .xp <89,1
 step
     #loop
-    .goto 422,46.00,53.20,0
-    .goto 422,46.00,53.20,40,0
-    .goto 422,45.00,56.40,40,0
+    .goto 422,41.50,52.40,0
+    .goto 422,41.50,52.40,40,0
+    .goto 422,39.60,52.00,40,0
     .goto 422,34.50,51.30,40,0
-    .goto 422,42.40,50.60,40,0
     >>Loot the |cRXP_PICK_Amber Collectors|r for |cRXP_LOOT_Amber-Filled Jar|r
+    .complete 31090,1 --Amber-Filled Jar (7)
+    .isOnQuest 31090
+step
+    #loop
+    .goto 422,42.60,50.40,0
+    .goto 422,42.60,50.40,40,0
+    .goto 422,45.20,53.20,40,0
     >>Kill |cRXP_ENEMY_Ik'thik Harvesters|r
-    .complete -31090,1 --Amber-Filled Jar (7)
-    .complete -31088,1 --Ik'thik Harvester slain (8)
+    .complete 31088,1 --Ik'thik Harvester slain (8)
     .mob Ik'thik Harvester
+    .isOnQuest 31088
 step
     .goto 422,48.11,49.63
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kor'ik|r
@@ -433,10 +464,14 @@ step
 step
     .goto 422,41.34,71.29
     >>Click the |cRXP_PICK_Undisturbed Soil|r
+    .complete 31091,1 --Undisturbed Soil
+    .isOnQuest 31091
+step
+    .goto 422,41.34,71.29
     >>Kill |cRXP_ENEMY_Kovok|r
-    .complete -31091,1 --Undisturbed Soil
-    .complete -31091,2 --Kovok (1)
+    .complete 31091,2 --Kovok (1)
     .mob Kovok
+    .isOnQuest 31091
 step
     .goto 422,41.77,72.03
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kaz'tik the Manipulator|r
@@ -458,21 +493,12 @@ step
     .mob Brineshell Snapper
     .isOnQuest 31092
 step
-    #completewith Along60
-    >>As you go: Kill |cRXP_ENEMY_Muckscale Rippers|r, |cRXP_ENEMY_Muckscale Flesh-Hunters|r, |cRXP_ENEMY_Muckscale Slayers|r and |cRXP_ENEMY_Muckscale Serpentus|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31359,2 --Muckscale Ripper (8)
-    .mob Muckscale Ripper
-    .mob Muckscale Flesh-Hunter
-    .mob Muckscale Slayer
-    .mob Muckscale Serpentus
-step
     .goto 422,41.80,63.80
     >>Kill |cRXP_ENEMY_Oracle Hiss'ir|r
     .complete 31359,1 --Oracle Hiss'ir slain (1)
     .mob Oracle Hiss'ir
     .isOnQuest 31359
 step
-    #label Along60
     .goto 422,41.87,63.71
     >>Click the |cRXP_PICK_Glowing Amber|r
     .accept 31398 >>Accept Falling to Pieces
@@ -521,17 +547,22 @@ step
     .accept 31023 >>Accept Relics of the Swarm
     .use 82870
 step
+    .goto 422,66.42,66.12
+    >>Kill |cRXP_ENEMY_Mistblade Scale-Lord|r
+    .complete 31019,1 --Mistblade Scale-Lord slain (1)
+    .mob Mistblade Scale-Lord
+    .isOnQuest 31019
+step
     #label Drop31023x1
     #loop
-    .goto 422,64.67,63.67,0
-    .goto 422,64.67,63.67,40,0
+    .goto 422,66.59,63.38,0
     .goto 422,66.59,63.38,40,0
-    >>Kill |cRXP_ENEMY_Mistblade Scale-Lord|r
+    .goto 422,64.67,63.67,40,0
     >>Kill |cRXP_ENEMY_Mistblade Scale-Lords|r and |cRXP_ENEMY_Mistblade Rippers|r
-    .complete -31019,1 --Mistblade Scale-Lord slain (1)
-    .complete -31019,2 --Mistblade Scale-Lord (8)
+    .complete 31019,2 --Mistblade Scale-Lord (8)
     .mob Mistblade Scale-Lord
     .mob Mistblade Ripper
+    .isOnQuest 31019
 step
     .goto 422,66.88,65.40
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ancient Amber Chunk|r
@@ -547,12 +578,6 @@ step
     .isQuestTurnedIn 31019 --any of: Amber Is Life
     .xp <89,1
 step
-    #completewith Along69
-    >>As you go: Kill |cRXP_ENEMY_Coldbite Crocolisks|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31020,1 --Coldbite Crocolisk slain (8)
-    .mob Coldbite Crocolisk
-step
-    #label Along69
     #loop
     .goto 422,65.97,60.03,0
     .goto 422,65.97,60.03,40,0
@@ -568,14 +593,20 @@ step
     .isOnQuest 31021
 step
     #loop
-    .goto 422,64.66,60.28,0
-    .goto 422,64.66,60.28,40,0
+    .goto 422,65.47,61.00,0
+    .goto 422,65.47,61.00,40,0
     .goto 422,63.70,57.29,40,0
     >>Kill |cRXP_ENEMY_Coldbite Crocolisks|r
-    >>Pick up |cRXP_PICK_Mantid Relic|r from the ground
-    .complete -31020,1 --Coldbite Crocolisk slain (8)
-    .complete 31023,1 --Mantid Relic (8)
+    .complete 31020,1 --Coldbite Crocolisk slain (8)
     .mob Coldbite Crocolisk
+    .isOnQuest 31020
+step
+    #loop
+    .goto 422,64.69,56.71,0
+    .goto 422,64.69,56.71,40,0
+    .goto 422,62.70,58.08,40,0
+    >>Pick up |cRXP_PICK_Mantid Relic|r from the ground
+    .complete 31023,1 --Mantid Relic (8)
 step
     .goto 422,66.76,65.29
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Korven the Prime|r
@@ -741,33 +772,23 @@ step
     .unitscan Chen Stormstout
     .isOnQuest 31076
 step
-    #completewith Along97
-    >>As you go: Kill |cRXP_ENEMY_Dread Lurkers|r and |cRXP_ENEMY_Nagging Dreadlings|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31069,1 --Dread Lurker (8)
-    .mob Dread Lurker
-    .mob Nagging Dreadling
-step
-    #completewith Along96
-    >>As you go: Kill |cRXP_ENEMY_Frightened Mushan|r and loot |cRXP_LOOT_Large Mushan Tooth|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31070,1 --Large Mushan Tooth (1)
-    .mob Frightened Mushan
-step
-    #label Along96
-    .goto 422,51.68,19.14
+    .goto 422,51.71,19.07
     >>Open the |cRXP_PICK_Lost Mug|r. Loot it for |cRXP_LOOT_Lost Mugs|r
+    .complete 31071,1 --Lost Mugs (1)
+    .isOnQuest 31071
+step
+    .goto 422,50.82,21.04
     >>Kill |cRXP_ENEMY_Ilikkax|r and loot |cRXP_LOOT_Blade of Ilikkax|r
-    >>Kill |cRXP_ENEMY_Kz'Kzik|r and loot |cRXP_LOOT_Blade of Kz'Kzik|r
-    .complete -31071,1 --Lost Mugs (1)
-    .complete -31072,2 --Blade of Ilikkax (1)
-    .complete -31072,1 --Blade of Kz'Kzik (1)
+    .complete 31072,2 --Blade of Ilikkax (1)
     .mob Ilikkax
+    .isOnQuest 31072
+step
+    .goto 422,53.10,20.19
+    >>Kill |cRXP_ENEMY_Kz'Kzik|r and loot |cRXP_LOOT_Blade of Kz'Kzik|r
+    .complete 31072,1 --Blade of Kz'Kzik (1)
     .mob Kz'Kzik
+    .isOnQuest 31072
 step
-    #completewith Along97
-    >>As you go: Pick up |cRXP_PICK_Lost Keg|r from the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -31071,2 --Lost Keg (1)
-step
-    #label Along97
     .goto 422,54.11,20.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chen Stormstout|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 31077 >>Accept Evie Stormstout
@@ -775,19 +796,26 @@ step
     .isQuestTurnedIn 31076,31129 --any of: Fate of the Stormstouts, Fate of the Stormstouts
     .xp <89,1
 step
-    #loop
-    .goto 422,54.60,19.60,0
-    .goto 422,54.60,19.60,40,0
-    .goto 422,52.80,18.60,40,0
-    .goto 422,57.88,20.46,40,0
+    .goto 422,54.42,20.33
     >>Pick up |cRXP_PICK_Lost Keg|r from the ground
+    .complete 31071,2 --Lost Keg (1)
+    .isOnQuest 31071
+step
+    .goto 422,56.02,19.44
     >>Pick up |cRXP_PICK_Lost Picnic Supplies|r from the ground
+    .complete 31071,3 --Lost Picnic Supplies (1)
+    .isOnQuest 31071
+step
+    #loop
+    .goto 422,57.88,20.46,0
+    .goto 422,57.88,20.46,40,0
+    .goto 422,54.20,18.20,40,0
+    .goto 422,51.60,19.00,40,0
     >>Kill |cRXP_ENEMY_Dread Lurkers|r and |cRXP_ENEMY_Nagging Dreadlings|r
-    .complete -31071,2 --Lost Keg (1)
-    .complete -31071,3 --Lost Picnic Supplies (1)
-    .complete -31069,1 --Dread Lurker (8)
+    .complete 31069,1 --Dread Lurker (8)
     .mob Dread Lurker
     .mob Nagging Dreadling
+    .isOnQuest 31069
 step
     #loop
     .goto 422,51.40,16.20,0
@@ -799,11 +827,6 @@ step
     .mob Frightened Mushan
     .isOnQuest 31070
 step
-    #completewith Along100
-    >>As you go: Click the |cRXP_PICK_Evie Stormstout|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31077,2 --Evie Stormstout
-step
-    #label Along100
     .goto 422,50.18,10.20
     >>Meet Chen Stormstout at The Sunset Brewgarden, then listen to his eulogy.
     .complete 31077,1 --Chen Stormstout
@@ -875,11 +898,6 @@ step
     .isQuestTurnedIn 31077 --any of: Evie Stormstout
     .xp <89,1
 step
-    #completewith Along112
-    >>As you go: Kill |cRXP_ENEMY_Withered Husk|r and loot |cRXP_LOOT_Fragrant Corewood|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31073,1 --Fragrant Corewood (1)
-    .mob Withered Husk
-step
     .goto 422,50.19,12.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Defender Azzo|r
     .accept 31133 >>Accept Kor'thik Aggression
@@ -887,26 +905,12 @@ step
     .isQuestTurnedIn 31070 --any of: Daggers of the Great Ones
     .xp <89,1
 step
-    #completewith Along112
-    >>As you go: Kill |cRXP_ENEMY_Kor'thik Havocs|r, |cRXP_ENEMY_Kor'thik Battlesingers|r and |cRXP_ENEMY_Kor'thik Chitinels|r. Click the |cRXP_PICK_Mark of the Empress|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31133,1 --Kor'thik Havoc (8)
-    .complete -31074,1 --Mark of the Empress
-    .mob Kor'thik Havoc
-    .mob Kor'thik Battlesinger
-    .mob Kor'thik Chitinel
-step
-    #completewith Along111
-    >>As you go: Click the |cRXP_PICK_Heartroot of Kypari Kor|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31074,2 --Heartroot of Kypari Kor
-step
-    #label Along111
     .goto 422,43.77,16.74
     >>Interact with |cRXP_FRIENDLY_Han Stormstout|r
     .complete 31078,1 --Han Stormstout
     .target Han Stormstout
     .isOnQuest 31078
 step
-    #label Along112
     .goto 422,50.45,12.05
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chen Stormstout|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 31078 >>Turn in Han Stormstout
@@ -914,22 +918,35 @@ step
     .isOnQuest 31078
 step
     #loop
-    .goto 422,44.64,16.88,0
-    .goto 422,44.64,16.88,40,0
-    .goto 422,43.37,15.45,40,0
-    .goto 422,47.77,10.13,40,0
+    .goto 422,43.88,16.22,0
+    .goto 422,43.88,16.22,40,0
+    .goto 422,45.68,17.99,40,0
     >>Kill |cRXP_ENEMY_Kor'thik Havocs|r, |cRXP_ENEMY_Kor'thik Battlesingers|r and |cRXP_ENEMY_Kor'thik Chitinels|r
-    >>Click the |cRXP_PICK_Mark of the Empress|r
-    >>Click the |cRXP_PICK_Heartroot of Kypari Kor|r
-    >>Kill |cRXP_ENEMY_Withered Husk|r and loot |cRXP_LOOT_Fragrant Corewood|r
-    .complete -31133,1 --Kor'thik Havoc (8)
-    .complete -31074,1 --Mark of the Empress
-    .complete -31074,2 --Heartroot of Kypari Kor
-    .complete -31073,1 --Fragrant Corewood (1)
+    .complete 31133,1 --Kor'thik Havoc (8)
     .mob Kor'thik Havoc
     .mob Kor'thik Battlesinger
     .mob Kor'thik Chitinel
+    .isOnQuest 31133
+step
+    .goto 422,44.50,16.83
+    >>Click the |cRXP_PICK_Mark of the Empress|r
+    .complete 31074,1 --Mark of the Empress
+    .isOnQuest 31074
+step
+    .goto 422,42.93,15.10
+    >>Click the |cRXP_PICK_Heartroot of Kypari Kor|r
+    .complete 31074,2 --Heartroot of Kypari Kor
+    .isOnQuest 31074
+step
+    #loop
+    .goto 422,43.43,11.71,0
+    .goto 422,43.43,11.71,40,0
+    .goto 422,46.27,16.60,40,0
+    .goto 422,47.77,10.13,40,0
+    >>Kill |cRXP_ENEMY_Withered Husk|r and loot |cRXP_LOOT_Fragrant Corewood|r
+    .complete 31073,1 --Fragrant Corewood (1)
     .mob Withered Husk
+    .isOnQuest 31073
 step
     .goto 422,50.19,12.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Defender Azzo|r
@@ -984,11 +1001,6 @@ step
     .isQuestTurnedIn 31075 --any of: Sunset Kings
     .xp <89,1
 step
-    #completewith Along122
-    >>As you go: Kill |cRXP_ENEMY_Rikkilea Flitterling|r and loot |cRXP_LOOT_Flitterling Dust|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31080,1 --Flitterling Dust (1)
-    .mob Rikkilea Flitterling
-step
     .goto 422,38.16,17.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Boggeo|r
     .accept 31079 >>Accept The Horror Comes A-Rising
@@ -1003,7 +1015,6 @@ step
     .isQuestTurnedIn 31075 --any of: Sunset Kings
     .xp <89,1
 step
-    #label Along122
     .goto 422,38.65,17.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chief Rikkitun|r
     .accept 31082 >>Accept Great Vessel of Salvation
@@ -1011,25 +1022,18 @@ step
     .isQuestTurnedIn 31075 --any of: Sunset Kings
     .xp <89,1
 step
-    #completewith Along125
-    >>As you go: Kill |cRXP_ENEMY_Shuffling Mistlurkers|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31079,1 --Shuffling Mistlurker slain (7)
-    .mob Shuffling Mistlurker
+    .goto 422,33.25,18.88
+    >>Kill |cRXP_ENEMY_Mygoness|r
+    .complete 31081,2 --Mygoness slain (1)
+    .mob Mygoness
+    .isOnQuest 31081
 step
     .goto 422,32.20,17.60
-    >>Kill |cRXP_ENEMY_Mygoness|r
     >>Kill |cRXP_ENEMY_Ahgunoss|r
-    .complete -31081,2 --Mygoness slain (1)
-    .complete -31081,1 --Ahgunoss slain (1)
-    .mob Mygoness
+    .complete 31081,1 --Ahgunoss slain (1)
     .mob Ahgunoss
+    .isOnQuest 31081
 step
-    #completewith Along124
-    >>As you go: Kill |cRXP_ENEMY_Kyparites|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31079,2 --Kyparite slain (2)
-    .mob Kyparite
-step
-    #label Along124
     #loop
     .goto 422,35.56,22.87,0
     .goto 422,35.56,22.87,40,0
@@ -1040,7 +1044,6 @@ step
     .mob Rikkilea Flitterling
     .isOnQuest 31080
 step
-    #label Along125
     #loop
     .goto 422,37.13,20.49,0
     .goto 422,37.13,20.49,40,0
@@ -1051,15 +1054,19 @@ step
     .isOnQuest 31082
 step
     #loop
-    .goto 422,35.62,22.12,0
+    .goto 422,34.44,20.89,0
+    .goto 422,34.44,20.89,40,0
     .goto 422,35.62,22.12,40,0
-    .goto 422,34.01,22.14,40,0
     >>Kill |cRXP_ENEMY_Shuffling Mistlurkers|r
-    >>Kill |cRXP_ENEMY_Kyparites|r
-    .complete -31079,1 --Shuffling Mistlurker slain (7)
-    .complete -31079,2 --Kyparite slain (2)
+    .complete 31079,1 --Shuffling Mistlurker slain (7)
     .mob Shuffling Mistlurker
+    .isOnQuest 31079
+step
+    .goto 422,33.27,23.05
+    >>Kill |cRXP_ENEMY_Kyparites|r
+    .complete 31079,2 --Kyparite slain (2)
     .mob Kyparite
+    .isOnQuest 31079
 step
     .goto 422,38.16,17.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Boggeo|r
@@ -1129,14 +1136,6 @@ step
     .complete 31086,1 --Chunk of Solidified Amber (1)
     .isOnQuest 31086
 step
-    #completewith Along137
-    >>As you go: Kill |cRXP_ENEMY_Adjunct Okzyks|r, |cRXP_ENEMY_Adjunct G'kkals|r and |cRXP_ENEMY_Adjunct Pivvikas|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31085,2 --Adjunct Okzyk (8)
-    .mob Adjunct Okzyk
-    .mob Adjunct G'kkal
-    .mob Adjunct Pivvika
-step
-    #label Along137
     .goto 422,32.67,33.88
     >>Interact with |cRXP_FRIENDLY_Iyyokuk the Lucid|r
     .complete 31085,1 --Iyyokuk the Lucid
@@ -1161,18 +1160,31 @@ step
     .xp <89,1
 step
     #loop
-    .goto 422,26.59,56.29,0
-    .goto 422,26.59,56.29,40,0
-    .goto 422,27.06,60.16,40,0
-    .goto 422,27.14,62.71,40,0
+    .goto 422,27.55,60.63,0
+    .goto 422,27.55,60.63,40,0
+    .goto 422,25.49,62.00,40,0
     >>Kill |cRXP_ENEMY_Briny Clackers|r. Loot them for |cRXP_LOOT_Clacker Tail|r
-    >>Loot the |cRXP_PICK_Spiny Starfishes|r for |cRXP_LOOT_Starfish Meat|r
-    >>Kill |cRXP_ENEMY_Dread Remoras|r. Loot them for |cRXP_LOOT_Volatile Blood|r
-    .complete -31177,1 --Clacker Tail (8)
-    .complete -31176,1 --Starfish Meat (12)
-    .complete -31178,1 --Volatile Blood (100)
+    .complete 31177,1 --Clacker Tail (8)
     .mob Briny Clacker
+    .isOnQuest 31177
+step
+    #loop
+    .goto 422,26.73,62.50,0
+    .goto 422,26.73,62.50,40,0
+    .goto 422,27.74,60.02,40,0
+    .goto 422,26.70,56.19,40,0
+    >>Loot the |cRXP_PICK_Spiny Starfishes|r for |cRXP_LOOT_Starfish Meat|r
+    .complete 31176,1 --Starfish Meat (12)
+    .isOnQuest 31176
+step
+    #loop
+    .goto 422,27.43,61.13,0
+    .goto 422,27.43,61.13,40,0
+    .goto 422,26.02,64.11,40,0
+    >>Kill |cRXP_ENEMY_Dread Remoras|r. Loot them for |cRXP_LOOT_Volatile Blood|r
+    .complete 31178,1 --Volatile Blood (100)
     .mob Dread Remora
+    .isOnQuest 31178
 step
     .goto 422,44.41,16.80
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Skeer the Bloodseeker|r. |cRXP_WARN_This NPC walks a patrol route|r
@@ -1203,11 +1215,15 @@ step
 step
     .goto 422,25.73,52.79
     >>Kill |cRXP_ENEMY_Muckscale Flesheaters|r
-    >>Kill |cRXP_ENEMY_Muckscale Serpentus|r
-    .complete -31179,1 --Muckscale Flesheater slain (12)
-    .complete -31179,2 --Muckscale Serpentus slain (1)
+    .complete 31179,1 --Muckscale Flesheater slain (12)
     .mob Muckscale Flesheater
+    .isOnQuest 31179
+step
+    .goto 422,25.73,52.79
+    >>Kill |cRXP_ENEMY_Muckscale Serpentus|r
+    .complete 31179,2 --Muckscale Serpentus slain (1)
     .mob Muckscale Serpentus
+    .isOnQuest 31179
 step
     .goto 422,54.98,34.05
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kil'ruk the Wind-Reaver|r
@@ -1249,18 +1265,22 @@ step
     #loop
     .goto 422,62.80,12.60,0
     .goto 422,62.80,12.60,40,0
-    .goto 422,64.00,12.40,40,0
+    .goto 422,64.80,12.40,40,0
     >>Kill |cRXP_ENEMY_Krik'thik Wingleaders|r, |cRXP_ENEMY_Ik'thik Warriors|r, |cRXP_ENEMY_Ik'thik Slayers|r and |cRXP_ENEMY_Krik'thik Wingguards|r
-    >>Kill |cRXP_ENEMY_Ik'thik Kunchongs|r, |cRXP_ENEMY_Dread Behemoths|r and |cRXP_ENEMY_Krik'thik Battletanks|r
-    .complete -31211,2 --Krik'thik Wingleader (8)
-    .complete -31211,3 --Ik'thik Kunchong (3)
+    .complete 31211,2 --Krik'thik Wingleader (8)
     .mob Krik'thik Wingleader
     .mob Ik'thik Warrior
     .mob Ik'thik Slayer
     .mob Krik'thik Wingguard
+    .isOnQuest 31211
+step
+    .goto 422,64.00,12.40
+    >>Kill |cRXP_ENEMY_Ik'thik Kunchongs|r, |cRXP_ENEMY_Dread Behemoths|r and |cRXP_ENEMY_Krik'thik Battletanks|r
+    .complete 31211,3 --Ik'thik Kunchong (3)
     .mob Ik'thik Kunchong
     .mob Dread Behemoth
     .mob Krik'thik Battletank
+    .isOnQuest 31211
 step
     .goto 422,28.65,42.14
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Xaril the Poisoned Mind|r. |cRXP_WARN_This NPC walks a patrol route|r
@@ -1275,13 +1295,6 @@ step
     .isQuestTurnedIn 31959 --any of: The Empress' Gambit
     .xp <89,1
 step
-    #completewith Along156
-    >>As you go: Kill |cRXP_ENEMY_Krik'thik Subjugates|r, |cRXP_ENEMY_Zan'thik Subjugates|r and |cRXP_ENEMY_Sra'thik Subjugates|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31609,4 --Krik'thik Subjugate (25)
-    .mob Krik'thik Subjugate
-    .mob Zan'thik Subjugate
-    .mob Sra'thik Subjugate
-step
     .goto 422,44.60,34.80
     >>Kill |cRXP_ENEMY_Akkolon|r
     .complete 31609,1 --Akkolon slain (1)
@@ -1294,7 +1307,6 @@ step
     .mob Shox'tik
     .isOnQuest 31609
 step
-    #label Along156
     .goto 422,43.80,29.60
     >>Kill |cRXP_ENEMY_Manifestation of Terror|r
     .complete 31609,3 --Manifestation of Terror slain (1)
@@ -1432,11 +1444,6 @@ step
     .isQuestTurnedIn 31183 --any of: Meet the Cap'n
     .xp <89,1
 step
-    #completewith Along175
-    >>As you go: Open the |cRXP_PICK_Soggy's Footlocker|r. Loot it for |cRXP_LOOT_Sealed Charter Tube|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31184,1 --Sealed Charter Tube (1)
-step
-    #label Along175
     .goto 422,44.66,78.66
     >>Take Dog to visit the hot geysers, the whale corpse, and the wreck of the Mist-Hopper on the Shelf of Mazu.
     .complete 31185,2 --Shipwreck Kill Credit
@@ -1447,10 +1454,6 @@ step
     >>Open the |cRXP_PICK_Soggy's Footlocker|r. Loot it for |cRXP_LOOT_Sealed Charter Tube|r
     .complete 31184,1 --Sealed Charter Tube (1)
     .isOnQuest 31184
-step
-    #completewith Along179
-    >>As you go: Click the |cRXP_PICK_Full Crab Pot|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31187,1 --Full Crab Pot
 step
     .goto 422,46.42,73.94
     >>Take Dog to visit the hot geysers, the whale corpse, and the wreck of the Mist-Hopper on the Shelf of Mazu.
@@ -1464,7 +1467,6 @@ step
     .target Whale Corpse Kill Credit
     .isOnQuest 31185
 step
-    #label Along179
     #loop
     .goto 422,45.40,75.60,0
     .goto 422,45.40,75.60,40,0
@@ -1537,11 +1539,27 @@ step
 step
     .goto 422,54.50,79.50
     >>Kill |cRXP_ENEMY_Jiao|r
-    .complete -31190,4 --Jiao slain (1)
-    .complete -31190,2 --Jiao slain (1)
-    .complete -31190,1 --Jiao slain (1)
-    .complete -31190,3 --Jiao slain (1)
+    .complete 31190,4 --Jiao slain (1)
     .mob Jiao
+    .isOnQuest 31190
+step
+    .goto 422,54.50,79.50
+    >>Kill |cRXP_ENEMY_Jiao|r
+    .complete 31190,2 --Jiao slain (1)
+    .mob Jiao
+    .isOnQuest 31190
+step
+    .goto 422,54.50,79.50
+    >>Kill |cRXP_ENEMY_Jiao|r
+    .complete 31190,1 --Jiao slain (1)
+    .mob Jiao
+    .isOnQuest 31190
+step
+    .goto 422,54.50,79.50
+    >>Kill |cRXP_ENEMY_Jiao|r
+    .complete 31190,3 --Jiao slain (1)
+    .mob Jiao
+    .isOnQuest 31190
 step
     .goto 422,55.66,72.49
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain "Soggy" Su-Dao|r. |cRXP_WARN_This NPC walks a patrol route|r

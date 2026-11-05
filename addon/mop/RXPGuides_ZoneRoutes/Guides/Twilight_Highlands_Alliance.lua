@@ -78,12 +78,16 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 28597 --any of: Burnin' at Both Ends
     .xp <84,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 241,77.17,75.31
+    .goto 241,78.74,76.56
     >>Click the |cRXP_PICK_Flintlocke's Cannon|r
+    .complete 28598,1 --Flintlocke's Cannon
+    .isOnQuest 28598
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 241,77.17,75.31
     >>Kill |cRXP_ENEMY_Skyshredder Bomb Controller Bunny|r
-    .complete -28598,1 --Flintlocke's Cannon
-    .complete -28598,2 --Skyshredder Bomb Controller Bunny (1)
+    .complete 28598,2 --Skyshredder Bomb Controller Bunny (1)
     .mob Skyshredder Bomb Controller Bunny
+    .isOnQuest 28598
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,78.78,76.84
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fargo Flintlocke|r
@@ -119,14 +123,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 28599 --any of: Kurdran's Waitin'
     .xp <84,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along16
-    >>As you go: Loot the |cRXP_PICK_Water-Logged Crates|r for |cRXP_LOOT_Recovered Supplies|r. Kill |cRXP_ENEMY_Blackscale Myrmidons|r, |cRXP_ENEMY_Blackscale Seacallers|r and |cRXP_ENEMY_Blackscale Naga Quest Trackers|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27177,1 --Recovered Supplies (8)
-    .complete -27178,1 --Blackscale Myrmidon (10)
-    .mob Blackscale Myrmidon
-    .mob Blackscale Seacaller
-    .mob Blackscale Naga Quest Tracker
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,75.96,79.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ephram Hardstone|r
     .accept 27200 >>Accept Siren's Song
@@ -140,7 +136,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Ophelia
     .isOnQuest 27200
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along16
     .goto 241,75.96,79.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ephram Hardstone|r
     .turnin 27200 >>Turn in Siren's Song
@@ -148,17 +143,23 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isOnQuest 27200
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 241,74.83,80.72,0
-    .goto 241,74.83,80.72,40,0
-    .goto 241,75.27,77.89,40,0
-    .goto 241,77.01,81.14,40,0
+    .goto 241,75.50,80.64,0
+    .goto 241,75.50,80.64,40,0
+    .goto 241,72.93,83.76,40,0
     >>Loot the |cRXP_PICK_Water-Logged Crates|r for |cRXP_LOOT_Recovered Supplies|r
+    .complete 27177,1 --Recovered Supplies (8)
+    .isOnQuest 27177
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
+    .goto 241,77.01,81.14,0
+    .goto 241,77.01,81.14,40,0
+    .goto 241,75.22,77.61,40,0
     >>Kill |cRXP_ENEMY_Blackscale Myrmidons|r, |cRXP_ENEMY_Blackscale Seacallers|r and |cRXP_ENEMY_Blackscale Naga Quest Trackers|r
-    .complete -27177,1 --Recovered Supplies (8)
-    .complete -27178,1 --Blackscale Myrmidon (10)
+    .complete 27178,1 --Blackscale Myrmidon (10)
     .mob Blackscale Myrmidon
     .mob Blackscale Seacaller
     .mob Blackscale Naga Quest Tracker
+    .isOnQuest 27178
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,79.29,78.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Simon Chandler|r
@@ -186,11 +187,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 27338 --any of: Our Boys on the Shore
     .xp <84,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along23
-    >>As you go: Kill |cRXP_ENEMY_Axebite Marines|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27366,1 --Axebite Marine slain (12)
-    .mob Axebite Marine
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,77.01,69.86
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fargo Flintlocke|r
     .accept 27433 >>Accept Shredderectomy
@@ -198,7 +194,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 27338 --any of: Our Boys on the Shore
     .xp <84,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along23
     .goto 241,77.50,65.20
     >>Beach Head Control Point Scouted
     .complete 27341,1 --Beach Head Control Point Scouted
@@ -343,13 +338,20 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 241,66.67,45.23,0
     .goto 241,66.67,45.23,40,0
-    .goto 241,67.98,48.00,40,0
-    .goto 241,69.36,49.17,40,0
+    .goto 241,67.43,46.89,40,0
+    .goto 241,68.88,49.67,40,0
     >>Pick up |cRXP_PICK_Verrall River Muck|r from the ground
+    .complete 27538,1 --Verrall River Muck (1)
+    .isOnQuest 27538
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
+    .goto 241,67.31,45.52,0
+    .goto 241,67.31,45.52,40,0
+    .goto 241,68.17,48.68,40,0
     >>Kill |cRXP_ENEMY_Muddied Water Elementals|r. Loot them for |cRXP_LOOT_Whirlpool Core|r
-    .complete -27538,1 --Verrall River Muck (1)
-    .complete -27537,1 --Whirlpool Core (5)
+    .complete 27537,1 --Whirlpool Core (5)
     .mob Muddied Water Elemental
+    .isOnQuest 27537
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,79.43,77.64
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Talaa|r
@@ -397,17 +399,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 27621 --any of: Firebeard's Patrol
     .xp <84,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along53
-    >>As you go: Kill |cRXP_ENEMY_Subjugated Firestarters|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27803,1 --Subjugated Firestarter slain (8)
-    .mob Subjugated Firestarter
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,60.11,57.76
     >>Open the |cRXP_PICK_Water Bucket|r. Loot it for |cRXP_LOOT_Wildhammer Water Bucket|r
     .collect 62508,1,27804,1 --Wildhammer Water Bucket (1)
     .isOnQuest 27804
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along53
     .goto 241,59.63,56.43
     >>Extinguish 50 fires at Firebeard's Patrol.
     .complete 27804,1 --Firebeard's Patrol Fire Bunny
@@ -452,11 +448,18 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,59.81,56.22
     >>Pick up |cRXP_PICK_Meara's Dried Roses|r from the ground
+    .complete 27805,1 --Meara's Dried Roses (1)
+    .isOnQuest 27805
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 241,59.46,55.87
     >>Open the |cRXP_PICK_Aprika's Lost Doll|r. Loot it for |cRXP_LOOT_Aprika's Doll|r
+    .complete 27805,3 --Aprika's Doll (1)
+    .isOnQuest 27805
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 241,59.33,56.91
     >>Pick up |cRXP_PICK_Parlan's Ivory Hammer|r from the ground
-    .complete -27805,1 --Meara's Dried Roses (1)
-    .complete -27805,3 --Aprika's Doll (1)
-    .complete -27805,2 --Parlan's Ivory Hammer (1)
+    .complete 27805,2 --Parlan's Ivory Hammer (1)
+    .isOnQuest 27805
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,60.42,58.30
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cailin Longfellow|r
@@ -492,13 +495,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 27809 --any of: Firebeard Bellows
     .xp <84,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along68
-    >>As you go: Kill |cRXP_ENEMY_Injured Dragonmaw Stragglers|r, |cRXP_ENEMY_Gorosh the Pant Stealers|r and |cRXP_ENEMY_Dragonmaw Stragglers|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27813,1 --Injured Dragonmaw Straggler (6)
-    .mob Injured Dragonmaw Straggler
-    .mob Gorosh the Pant Stealer
-    .mob Dragonmaw Straggler
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,62.56,48.59
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ella Forgehammer|r
     .accept 28233 >>Accept The Lost Brother
@@ -513,18 +509,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 27809 --any of: Firebeard Bellows
     .xp <84,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along68
-    >>As you go: Kill |cRXP_ENEMY_Dragonmaw Stragglers|r. Loot them for |cRXP_LOOT_Dragonmaw Weapon|r. It can also be picked up from |cRXP_PICK_Dragonmaw Weapon Crate|r on the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -27814,1 --Dragonmaw Weapon (8)
-    .mob Dragonmaw Straggler
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,63.14,47.62
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bahrum Forgehammer|r
     .turnin 28233 >>Turn in The Lost Brother
     .target Bahrum Forgehammer
     .isOnQuest 28233
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along68
     .goto 241,63.14,47.62
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bahrum Forgehammer|r
     .accept 28234 >>Accept They Took Me Pants!
@@ -532,16 +522,25 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 28233 --any of: The Lost Brother
     .xp <84,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 241,61.82,47.17
+    .goto 241,62.30,47.20
     >>Kill |cRXP_ENEMY_Gorosh the Pant Stealer|r and loot |cRXP_LOOT_Bahrum's Pants|r
-    >>Kill |cRXP_ENEMY_Injured Dragonmaw Stragglers|r, |cRXP_ENEMY_Gorosh the Pant Stealers|r and |cRXP_ENEMY_Dragonmaw Stragglers|r
-    >>Kill |cRXP_ENEMY_Dragonmaw Stragglers|r. Loot them for |cRXP_LOOT_Dragonmaw Weapon|r. It can also be picked up from |cRXP_PICK_Dragonmaw Weapon Crate|r on the ground
-    .complete -28234,1 --Bahrum's Pants (1)
-    .complete -27813,1 --Injured Dragonmaw Straggler (6)
-    .complete -27814,1 --Dragonmaw Weapon (8)
+    .complete 28234,1 --Bahrum's Pants (1)
     .mob Gorosh the Pant Stealer
+    .isOnQuest 28234
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 241,62.23,47.29
+    >>Kill |cRXP_ENEMY_Injured Dragonmaw Stragglers|r, |cRXP_ENEMY_Gorosh the Pant Stealers|r and |cRXP_ENEMY_Dragonmaw Stragglers|r
+    .complete 27813,1 --Injured Dragonmaw Straggler (6)
     .mob Injured Dragonmaw Straggler
+    .mob Gorosh the Pant Stealer
     .mob Dragonmaw Straggler
+    .isOnQuest 27813
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 241,61.82,47.17
+    >>Kill |cRXP_ENEMY_Dragonmaw Stragglers|r. Loot them for |cRXP_LOOT_Dragonmaw Weapon|r. It can also be picked up from |cRXP_PICK_Dragonmaw Weapon Crate|r on the ground
+    .complete 27814,1 --Dragonmaw Weapon (8)
+    .mob Dragonmaw Straggler
+    .isOnQuest 27814
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,63.14,47.62
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bahrum Forgehammer|r
@@ -583,12 +582,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 27807 --any of: Clan Mullan
     .xp <84,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along76
-    >>As you go: Kill |cRXP_ENEMY_Mullan Gryphon Riders|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27810,1 --Mullan Gryphon Rider slain (8)
-    .mob Mullan Gryphon Rider
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along76
     .goto 241,50.82,60.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Edana Mullan|r
     .accept 27811 >>Accept The Scent of Battle
@@ -767,15 +760,19 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .xp <84,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 241,58.24,53.03,0
-    .goto 241,58.24,53.03,40,0
+    .goto 241,61.59,52.43,0
     .goto 241,61.59,52.43,40,0
+    .goto 241,57.92,53.08,40,0
     >>Kill |cRXP_ENEMY_Twilight Stormbenders|r
-    >>Kill |cRXP_ENEMY_Servias Windterror|r
-    .complete -27817,1 --Twilight Stormbender slain (12)
-    .complete -27817,2 --Servias Windterror slain (1)
+    .complete 27817,1 --Twilight Stormbender slain (12)
     .mob Twilight Stormbender
+    .isOnQuest 27817
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 241,58.60,51.73
+    >>Kill |cRXP_ENEMY_Servias Windterror|r
+    .complete 27817,2 --Servias Windterror slain (1)
     .mob Servias Windterror
+    .isOnQuest 27817
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,60.17,58.00
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Keegan Firebeard|r
@@ -850,14 +847,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Donnelly Dunwald
     .isOnQuest 27646
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along119
-    >>As you go: Kill |cRXP_ENEMY_Bloodgorged Ettins|r, |cRXP_ENEMY_Twilight Scavengers|r, |cRXP_ENEMY_Twilight Shadeprowlers|r and |cRXP_ENEMY_Twilight Ambushers|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27641,1 --Bloodgorged Ettin (8)
-    .mob Bloodgorged Ettin
-    .mob Twilight Scavenger
-    .mob Twilight Shadeprowler
-    .mob Twilight Ambusher
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,45.78,71.73
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cayden Dunwald|r
     .accept 27648 >>Accept Once More Into The Fire
@@ -871,7 +860,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Cayden Dunwald
     .isOnQuest 27648
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along119
     .goto 241,45.78,71.73
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cayden Dunwald|r
     .turnin 27648 >>Turn in Once More Into The Fire
@@ -909,21 +897,31 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 27647 --any of: Anything But Water
     .xp <84,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 241,47.41,66.88,0
-    .goto 241,47.41,66.88,40,0
-    .goto 241,46.88,72.38,40,0
+    .goto 241,46.89,72.32
     >>Open the |cRXP_PICK_Wildhammer Ale Cask|r. Loot it for |cRXP_LOOT_Wildhammer Ale|r
+    .complete 27649,1 --Wildhammer Ale (1)
+    .isOnQuest 27649
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
+    .goto 241,46.88,72.38,0
+    .goto 241,46.88,72.38,40,0
+    .goto 241,48.12,67.61,40,0
     >>Interact with |cRXP_FRIENDLY_Dunwald Victims|r
-    >>Kill |cRXP_ENEMY_Bloodgorged Ettins|r, |cRXP_ENEMY_Twilight Scavengers|r, |cRXP_ENEMY_Twilight Shadeprowlers|r and |cRXP_ENEMY_Twilight Ambushers|r
-    .complete -27649,1 --Wildhammer Ale (1)
-    .complete -27642,1 --Dunwald Victim (12)
-    .complete -27641,1 --Bloodgorged Ettin (8)
+    .complete 27642,1 --Dunwald Victim (12)
     .target Dunwald Victim
+    .isOnQuest 27642
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
+    .goto 241,46.91,73.03,0
+    .goto 241,46.91,73.03,40,0
+    .goto 241,47.41,66.88,40,0
+    >>Kill |cRXP_ENEMY_Bloodgorged Ettins|r, |cRXP_ENEMY_Twilight Scavengers|r, |cRXP_ENEMY_Twilight Shadeprowlers|r and |cRXP_ENEMY_Twilight Ambushers|r
+    .complete 27641,1 --Bloodgorged Ettin (8)
     .mob Bloodgorged Ettin
     .mob Twilight Scavenger
     .mob Twilight Shadeprowler
     .mob Twilight Ambusher
+    .isOnQuest 27641
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,46.00,65.55
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Eoin Dunwald|r
@@ -1061,12 +1059,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Magmalord Falthazar
     .mob Unbound Emberfiend
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along146
+    #completewith Along156
     >>As you go: Kill |cRXP_ENEMY_Obsidian Stoneslave|r and loot |cRXP_LOOT_Twisted Elementium Loop|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28215,1 --Twisted Elementium Loop (1)
     .mob Obsidian Stoneslave
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along146
+    #label Along156
     .goto 241,57.93,33.50
     >>Click the |cRXP_PICK_Eye of Twilight|r
     .turnin 28241 >>Turn in A Vision of Twilight
@@ -1110,7 +1108,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 28280 >>Accept Tear Them From the Sky!
     .target Nivvet Channelock
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along155
+    #completewith Along165
     >>As you go: Kill |cRXP_ENEMY_Dragonmaw Black Drakes|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28280,1 --Dragonmaw Black Drake slain (8)
     .mob Dragonmaw Black Drake
@@ -1126,7 +1124,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 28244,1 --Eye of Twilight
     .target Eye of Twilight
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along155
+    #label Along165
     .goto 241,49.78,29.17
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Low Shaman Blundy|r
     .turnin 28244 >>Turn in Eye Spy
@@ -1195,14 +1193,14 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 28379 >>Accept Ogre Bashin'
     .target Colin Thundermar
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along167
+    #completewith Along177
     >>As you go: Kill |cRXP_ENEMY_Glopgut Hurlers|r, |cRXP_ENEMY_Glopgut Bashers|r and |cRXP_ENEMY_Glopgut Pounders|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28379,1 --Glopgut Hurler (8)
     .mob Glopgut Hurler
     .mob Glopgut Basher
     .mob Glopgut Pounder
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along167
+    #label Along177
     .goto 241,34.96,31.14
     >>Find and rescue Fanny Thundermar.
     .complete 28378,1 --Fanny Thundermar
@@ -1339,7 +1337,7 @@ step
     .accept 27302 >>Accept Simple Solutions
     .target Initiate Goldmine
 step
-    #completewith Along190
+    #completewith Along200
     >>As you go: Kill |cRXP_ENEMY_Twilight Captivator|r and loot |cRXP_LOOT_Pyreburn Oil|r. It can also be picked up from |cRXP_PICK_Barrel of Pyreburn Oil|r on the ground. Kill |cRXP_ENEMY_Twilight Captivators|r, |cRXP_ENEMY_Omak'Tuls|r and |cRXP_ENEMY_Twilight Bonebreakers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 27302,1 --Pyreburn Oil (1)
     .complete 27300,1 --Twilight Captivator (8)
@@ -1347,7 +1345,7 @@ step
     .mob Omak'Tul
     .mob Twilight Bonebreaker
 step
-    #label Along190
+    #label Along200
     .goto 241,44.21,18.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Earthcaller Yevaa|r
     .turnin 27301 >>Turn in Unbroken
@@ -1551,12 +1549,6 @@ step
     .target Velastrasza
     .isQuestTurnedIn 27504 --any of: Even Dragons Bleed
 step
-    #completewith Along11
-    >>As you go: Kill |cRXP_ENEMY_Vermillion Menders|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27505,1 --Vermillion Mender slain (5)
-    .mob Vermillion Mender
-step
-    #label Along11
     .goto 241,29.79,31.43
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baleflame|r
     .accept 27506 >>Accept Life from Death
@@ -1564,21 +1556,29 @@ step
     .isQuestTurnedIn 27504 --any of: Even Dragons Bleed
 step
     #loop
-    .goto 241,29.66,32.73,0
-    .goto 241,29.66,32.73,40,0
-    .goto 241,27.96,32.00,40,0
+    .goto 241,29.77,33.18,0
+    .goto 241,29.77,33.18,40,0
+    .goto 241,28.23,30.61,40,0
     >>Kill |cRXP_ENEMY_Vermillion Menders|r
-    >>Kill |cRXP_ENEMY_Vermillion Menders|r and |cRXP_ENEMY_Twilight Wyrmkillers|r
-    .complete -27505,1 --Vermillion Mender slain (5)
-    .complete -27506,1 --Vermillion Mender (8)
+    .complete 27505,1 --Vermillion Mender slain (5)
     .mob Vermillion Mender
-    .mob Twilight Wyrmkiller
+    .isOnQuest 27505
 step
     .goto 241,29.85,31.28
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Velastrasza|r
     .turnin 27505 >>Turn in Draconic Mending while you are here
     .isQuestComplete 27505
     .target Velastrasza
+step
+    #loop
+    .goto 241,27.96,32.00,0
+    .goto 241,27.96,32.00,40,0
+    .goto 241,29.66,32.73,40,0
+    >>Kill |cRXP_ENEMY_Vermillion Menders|r and |cRXP_ENEMY_Twilight Wyrmkillers|r
+    .complete 27506,1 --Vermillion Mender (8)
+    .mob Vermillion Mender
+    .mob Twilight Wyrmkiller
+    .isOnQuest 27506
 step
     .goto 241,29.79,31.43
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baleflame|r
@@ -1624,20 +1624,30 @@ step
     .target Lirastrasza
     .isQuestTurnedIn 27564 --any of: In Defense of the Redoubt
 step
-    #loop
-    .goto 241,24.06,17.88,0
-    .goto 241,24.06,17.88,40,0
-    .goto 241,21.76,17.57,40,0
-    .goto 241,19.73,15.92,40,0
+    .goto 241,17.91,16.90
     >>Click the |cRXP_PICK_Twilight Portal|r
+    .complete 27509,1 --Twilight Portal
+    .isOnQuest 27509
+step
+    #loop
+    .goto 241,19.73,15.92,0
+    .goto 241,19.73,15.92,40,0
+    .goto 241,21.74,17.61,40,0
+    .goto 241,24.06,17.88,40,0
     >>Kill |cRXP_ENEMY_Vermillion Eggs|r. Loot them for |cRXP_LOOT_Vermillion Egg|r
-    >>Kill |cRXP_ENEMY_Twilight Flamequenchers|r and |cRXP_ENEMY_Twilight Abductors|r
-    .complete -27509,1 --Twilight Portal
-    .complete -27508,1 --Vermillion Egg (6)
-    .complete -27507,1 --Twilight Flamequencher (8)
+    .complete 27508,1 --Vermillion Egg (6)
     .mob Vermillion Egg
+    .isOnQuest 27508
+step
+    #loop
+    .goto 241,20.81,15.69,0
+    .goto 241,20.81,15.69,40,0
+    .goto 241,18.95,17.15,40,0
+    >>Kill |cRXP_ENEMY_Twilight Flamequenchers|r and |cRXP_ENEMY_Twilight Abductors|r
+    .complete 27507,1 --Twilight Flamequencher (8)
     .mob Twilight Flamequencher
     .mob Twilight Abductor
+    .isOnQuest 27507
 step
     .goto 241,29.30,25.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lirastrasza|r
@@ -1680,12 +1690,26 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,25.49,37.80
     >>Kill |cRXP_ENEMY_Twilight Spearwarders|r
-    >>Kill |cRXP_ENEMY_Twilight Spearwarder|r and loot |cRXP_LOOT_Twilight Caravan Cargo Key|r
-    >>Open the |cRXP_PICK_Twilight Caravan Chest|r. Loot it for |cRXP_LOOT_Twilight's Hammer Gatestone|r
-    .complete -28103,1 --Twilight Spearwarder (8)
-    .complete -28104,1 --Twilight Caravan Cargo Key (1)
-    .complete -28104,2 --Twilight's Hammer Gatestone (1)
+    .complete 28103,1 --Twilight Spearwarder (8)
     .mob Twilight Spearwarder
+    .isOnQuest 28103
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 241,25.99,38.78
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Master Mathias Shaw|r
+    .turnin 28103 >>Turn in Easy Pickings while you are here
+    .isQuestComplete 28103
+    .target Master Mathias Shaw
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 241,25.49,37.80
+    >>Kill |cRXP_ENEMY_Twilight Spearwarder|r and loot |cRXP_LOOT_Twilight Caravan Cargo Key|r
+    .complete 28104,1 --Twilight Caravan Cargo Key (1)
+    .mob Twilight Spearwarder
+    .isOnQuest 28104
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 241,25.54,37.94
+    >>Open the |cRXP_PICK_Twilight Caravan Chest|r. Loot it for |cRXP_LOOT_Twilight's Hammer Gatestone|r
+    .complete 28104,2 --Twilight's Hammer Gatestone (1)
+    .isOnQuest 28104
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,25.99,38.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Master Mathias Shaw|r
@@ -1719,15 +1743,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 28103 --Easy Pickings
     .isQuestTurnedIn 28104 --Precious Goods
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along32
-    >>As you go: Kill |cRXP_ENEMY_Twilight Guardsmans|r, |cRXP_ENEMY_Twilight Stalkers|r, |cRXP_ENEMY_Twilight Earthbinders|r and |cRXP_ENEMY_Twilight Shadowmenders|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -28107,1 --Twilight Guardsman (8)
-    .mob Twilight Guardsman
-    .mob Twilight Stalker
-    .mob Twilight Earthbinder
-    .mob Twilight Shadowmender
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along32
     .goto 241,29.38,51.86
     >>Lead squad from Highbank to the closed Dragonmaw Gate.
     .complete 28108,1 --Dragonmaw Gate Controller
@@ -1841,15 +1856,6 @@ step
     .target Velastrasza
     .isQuestTurnedIn 28171 --any of: And the Sky Streaked Red
 step
-    #completewith Along49
-    >>As you go: Kill |cRXP_ENEMY_Obsidian Pyrewings|r. Kill |cRXP_ENEMY_Obsidian Viletongues|r and |cRXP_ENEMY_Obsidian Charscales|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -28173,1 --Obsidian Pyrewing slain (8)
-    .complete -28191,1 --Obsidian Viletongue (8)
-    .mob Obsidian Pyrewing
-    .mob Obsidian Viletongue
-    .mob Obsidian Charscale
-step
-    #label Along49
     .goto 241,64.07,78.04
     >>Use Alexstrasza's Tear within the hollow beneath the Obsidian Tree.
     .complete 28175,1 --Obsidian Flower Bunny
@@ -1859,16 +1865,24 @@ step
     #loop
     .goto 241,65.14,79.54,0
     .goto 241,65.14,79.54,40,0
-    .goto 241,63.59,75.80,40,0
-    .goto 241,63.86,70.91,40,0
-    .goto 241,65.80,72.89,40,0
+    .goto 241,66.36,74.90,40,0
+    .goto 241,65.13,68.64,40,0
+    .goto 241,64.41,73.79,40,0
     >>Kill |cRXP_ENEMY_Obsidian Pyrewings|r
-    >>Kill |cRXP_ENEMY_Obsidian Viletongues|r and |cRXP_ENEMY_Obsidian Charscales|r
-    .complete -28173,1 --Obsidian Pyrewing slain (8)
-    .complete -28191,1 --Obsidian Viletongue (8)
+    .complete 28173,1 --Obsidian Pyrewing slain (8)
     .mob Obsidian Pyrewing
+    .isOnQuest 28173
+step
+    #loop
+    .goto 241,64.38,71.33,0
+    .goto 241,64.38,71.33,40,0
+    .goto 241,62.87,70.17,40,0
+    .goto 241,63.07,76.71,40,0
+    >>Kill |cRXP_ENEMY_Obsidian Viletongues|r and |cRXP_ENEMY_Obsidian Charscales|r
+    .complete 28191,1 --Obsidian Viletongue (8)
     .mob Obsidian Viletongue
     .mob Obsidian Charscale
+    .isOnQuest 28191
 step
     .goto 241,59.02,69.81
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Velastrasza|r
@@ -1967,13 +1981,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Angus Stillmountain
     .isOnQuest 27490
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along70
-    >>As you go: Kill |cRXP_ENEMY_Bloodeye Magelords|r, |cRXP_ENEMY_Twilight Ettins|r and |cRXP_ENEMY_Bloodeye Brutes|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27492,1 --Bloodeye Magelord (8)
-    .mob Bloodeye Magelord
-    .mob Twilight Ettin
-    .mob Bloodeye Brute
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,39.17,64.50
     >>Get a Wildhammer Hellions squad from Angus Stillmountain and then escort them to the drop off point in the Twilight Gate.
     .complete 27490,2 --"SI:7/Kor'kron Drop" Area Trigger Kill Credit
@@ -1998,7 +2005,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target "Call in the Artillery" Southwestern Building Bunny
     .isOnQuest 27496
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along70
     .goto 241,41.51,72.60
     >>Use the Artillery Flare to target the Northern, Northeastern, Southwestern, and Southern buildings at the Twilight Gate.
     .complete 27496,4 --"Call in the Artillery" Southern Building Bunny
@@ -2077,17 +2083,29 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .unitscan !
     .isQuestTurnedIn 27498,27588 --any of: Signal the Attack, Signal the Attack
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 241,37.64,71.32
+    .goto 241,38.71,70.28
     >>Kill |cRXP_ENEMY_Beeble'phods|r. Loot them for |cRXP_LOOT_Beeble's Head|r
-    >>Kill |cRXP_ENEMY_Beeble'phods|r. Loot them for |cRXP_LOOT_Phod's Head|r
-    >>Kill |cRXP_ENEMY_Za'broxes|r. Loot them for |cRXP_LOOT_Za's Head|r
-    >>Kill |cRXP_ENEMY_Za'broxes|r. Loot them for |cRXP_LOOT_Brox's Head|r
-    .complete -27500,3 --Beeble's Head (4)
-    .complete -27500,2 --Phod's Head (4)
-    .complete -27500,1 --Za's Head (4)
-    .complete -27500,4 --Brox's Head (4)
+    .complete 27500,3 --Beeble's Head (4)
     .mob Beeble'phod
+    .isOnQuest 27500
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 241,38.71,70.28
+    >>Kill |cRXP_ENEMY_Beeble'phods|r. Loot them for |cRXP_LOOT_Phod's Head|r
+    .complete 27500,2 --Phod's Head (4)
+    .mob Beeble'phod
+    .isOnQuest 27500
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 241,37.64,71.32
+    >>Kill |cRXP_ENEMY_Za'broxes|r. Loot them for |cRXP_LOOT_Za's Head|r
+    .complete 27500,1 --Za's Head (4)
     .mob Za'brox
+    .isOnQuest 27500
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 241,37.64,71.32
+    >>Kill |cRXP_ENEMY_Za'broxes|r. Loot them for |cRXP_LOOT_Brox's Head|r
+    .complete 27500,4 --Brox's Head (4)
+    .mob Za'brox
+    .isOnQuest 27500
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,43.41,57.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cassius the White|r
@@ -2139,11 +2157,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Master Mathias Shaw
     .isQuestTurnedIn 27636,27637 --any of: Just You and Mathias, Just You and Mathias
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along95
-    >>As you go: Kill |cRXP_ENEMY_Dark Assassins|r. Loot them for |cRXP_LOOT_Dark Assassin's Pendant|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27652,1 --Dark Assassin's Pendant (5)
-    .mob Dark Assassin
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,37.48,88.64
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Earthcaller Yevaa|r
     .turnin 27657 >>Turn in Help from the Earthcaller
@@ -2163,21 +2176,6 @@ step
     .target Initiate Goldmine
     .isQuestTurnedIn 27657,27658 --any of: Help from the Earthcaller, Help from the Earthcaller
 step
-    #completewith Along100
-    >>As you go: Kill |cRXP_ENEMY_Freed Tempests|r, |cRXP_ENEMY_Freed Infernos|r, |cRXP_ENEMY_Freed Waterspouts|r and |cRXP_ENEMY_Enslaved Tempests|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27662,1 --Freed Tempest (8)
-    .mob Freed Tempest
-    .mob Freed Inferno
-    .mob Freed Waterspout
-    .mob Enslaved Tempest
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along95
-    >>As you go: Kill |cRXP_ENEMY_Twilight Vindicators|r, |cRXP_ENEMY_Corrupted Elementalists|r and |cRXP_ENEMY_Citadel Veterans|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27654,1 --Twilight Vindicator (8)
-    .mob Twilight Vindicator
-    .mob Corrupted Elementalist
-    .mob Citadel Veteran
-step
     .goto 241,38.10,80.26
     >>Kill |cRXP_ENEMY_Apexar|r and |cRXP_ENEMY_Debilitated Apexar|r
     .complete 27659,1 --Apexar (1)
@@ -2185,7 +2183,6 @@ step
     .mob Debilitated Apexar
     .isOnQuest 27659
 step
-    #label Along95
     .goto 241,44.48,81.50
     >>Kill |cRXP_ENEMY_Aetharon|r and |cRXP_ENEMY_Debilitated Aetharon|r
     .complete 27659,2 --Aetharon (1)
@@ -2218,7 +2215,6 @@ step
     .mob Lord Cannon
     .isOnQuest 27661
 step
-    #label Along100
     .goto 241,27.64,63.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Countess Verrall|r
     .turnin 27661 >>Turn in Fire the Cannon
@@ -2231,14 +2227,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Countess Verrall
     .isQuestTurnedIn 27661 --any of: Fire the Cannon
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along102
-    >>As you go: Kill |cRXP_ENEMY_Twilight Vindicators|r, |cRXP_ENEMY_Corrupted Elementalists|r and |cRXP_ENEMY_Citadel Veterans|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27654,1 --Twilight Vindicator (8)
-    .mob Twilight Vindicator
-    .mob Corrupted Elementalist
-    .mob Citadel Veteran
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along102
     .goto 241,35.09,61.10
     >>Use the Water of Life to extract information from the Corpse of Forgemaster Finlay.
     .complete 27719,1 --Corpse of Forgemaster Finlay
@@ -2246,18 +2234,26 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isOnQuest 27719
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 241,36.51,67.46,0
-    .goto 241,36.51,67.46,40,0
-    .goto 241,35.12,70.10,40,0
-    .goto 241,38.53,74.44,40,0
+    .goto 241,34.91,67.32,0
+    .goto 241,34.91,67.32,40,0
+    .goto 241,34.68,69.92,40,0
+    .goto 241,38.19,74.73,40,0
     >>Kill |cRXP_ENEMY_Dark Assassins|r. Loot them for |cRXP_LOOT_Dark Assassin's Pendant|r
-    >>Kill |cRXP_ENEMY_Twilight Vindicators|r, |cRXP_ENEMY_Corrupted Elementalists|r and |cRXP_ENEMY_Citadel Veterans|r
-    .complete -27652,1 --Dark Assassin's Pendant (5)
-    .complete -27654,1 --Twilight Vindicator (8)
+    .complete 27652,1 --Dark Assassin's Pendant (5)
     .mob Dark Assassin
+    .isOnQuest 27652
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
+    .goto 241,36.01,70.54,0
+    .goto 241,36.01,70.54,40,0
+    .goto 241,36.51,67.46,40,0
+    .goto 241,38.53,74.44,40,0
+    >>Kill |cRXP_ENEMY_Twilight Vindicators|r, |cRXP_ENEMY_Corrupted Elementalists|r and |cRXP_ENEMY_Citadel Veterans|r
+    .complete 27654,1 --Twilight Vindicator (8)
     .mob Twilight Vindicator
     .mob Corrupted Elementalist
     .mob Citadel Veteran
+    .isOnQuest 27654
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,36.37,65.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Master Mathias Shaw|r
@@ -2299,11 +2295,15 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,43.35,88.50
     >>Kill |cRXP_ENEMY_Dame Alys Finnsson|r
-    >>Kill |cRXP_ENEMY_Mia the Rose|r
-    .complete -27688,1 --Dame Alys Finnsson slain (1)
-    .complete -27688,3 --Mia the Rose slain (1)
+    .complete 27688,1 --Dame Alys Finnsson slain (1)
     .mob Dame Alys Finnsson
+    .isOnQuest 27688
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 241,42.25,83.73
+    >>Kill |cRXP_ENEMY_Mia the Rose|r
+    .complete 27688,3 --Mia the Rose slain (1)
     .mob Mia the Rose
+    .isOnQuest 27688
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,36.37,65.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Master Mathias Shaw|r
@@ -2411,40 +2411,48 @@ step
     .target Initiate Goldmine
     .isQuestTurnedIn 27720,28885 --any of: Mr. Goldmine's Wild Ride, Mr. Goldmine's Wild Ride
 step
-    #completewith Along128
-    >>As you go: Kill |cRXP_ENEMY_Elementium Spinners|r. Loot them for |cRXP_LOOT_Elementium Shard|r. It can also be picked up from |cRXP_PICK_Elementium Shard|r on the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -27742,1 --Elementium Shard (6)
-    .mob Elementium Spinner
-step
     .goto 241,37.42,93.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Twilight Rune of Earth|r
     .accept 27744 >>Accept Rune Ruination
     .target Twilight Rune of Earth
     .isQuestTurnedIn 27720,28885 --any of: Mr. Goldmine's Wild Ride, Mr. Goldmine's Wild Ride
 step
-    #label Along128
     .goto 241,37.42,93.24
     >>Kill |cRXP_ENEMY_Twilight Rune of Earth|r
-    >>Click the |cRXP_PICK_Twilight Rune of Water|r
-    .complete -27744,1 --Twilight Rune of Earth slain (1)
-    .complete -27744,2 --Twilight Rune of Water
+    .complete 27744,1 --Twilight Rune of Earth slain (1)
     .mob Twilight Rune of Earth
+    .isOnQuest 27744
+step
+    .goto 241,35.15,90.37
+    >>Click the |cRXP_PICK_Twilight Rune of Water|r
+    .complete 27744,2 --Twilight Rune of Water
+    .isOnQuest 27744
+step
+    .goto 241,33.48,88.38
+    >>Click the |cRXP_PICK_Twilight Rune of Air|r
+    .complete 27744,3 --Twilight Rune of Air
+    .isOnQuest 27744
+step
+    .goto 241,34.34,86.61
+    >>Click the |cRXP_PICK_Twilight Rune of Fire|r
+    .complete 27744,4 --Twilight Rune of Fire
+    .isOnQuest 27744
 step
     #loop
-    .goto 241,33.84,88.67,0
-    .goto 241,33.84,88.67,40,0
+    .goto 241,34.17,85.77,0
     .goto 241,34.17,85.77,40,0
-    >>Click the |cRXP_PICK_Twilight Rune of Air|r
-    >>Click the |cRXP_PICK_Twilight Rune of Fire|r
+    .goto 241,33.84,88.67,40,0
     >>Kill |cRXP_ENEMY_Elementium Spinners|r. Loot them for |cRXP_LOOT_Elementium Shard|r. It can also be picked up from |cRXP_PICK_Elementium Shard|r on the ground
-    >>Kill |cRXP_ENEMY_Twilight Miners|r and |cRXP_ENEMY_Depths Overseers|r
-    .complete -27744,3 --Twilight Rune of Air
-    .complete -27744,4 --Twilight Rune of Fire
-    .complete -27742,1 --Elementium Shard (6)
-    .complete -27743,1 --Twilight Miner (8)
+    .complete 27742,1 --Elementium Shard (6)
     .mob Elementium Spinner
+    .isOnQuest 27742
+step
+    .goto 241,33.27,87.51
+    >>Kill |cRXP_ENEMY_Twilight Miners|r and |cRXP_ENEMY_Depths Overseers|r
+    .complete 27743,1 --Twilight Miner (8)
     .mob Twilight Miner
     .mob Depths Overseer
+    .isOnQuest 27743
 step
     .goto 241,38.32,93.92
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Initiate Goldmine|r
@@ -2474,10 +2482,14 @@ step
 step
     .goto 241,36.40,83.76
     >>Kill |cRXP_ENEMY_Magmatooth|r and loot |cRXP_LOOT_Fire Portal Controller|r
-    >>Click the |cRXP_PICK_Fire Portal|r
-    .complete -27745,2 --Fire Portal Controller (1)
-    .complete -27745,1 --Fire Portal
+    .complete 27745,2 --Fire Portal Controller (1)
     .mob Magmatooth
+    .isOnQuest 27745
+step
+    .goto 241,36.40,83.76
+    >>Click the |cRXP_PICK_Fire Portal|r
+    .complete 27745,1 --Fire Portal
+    .isOnQuest 27745
 step
     .goto 241,37.56,88.73
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Initiate Goldmine|r
@@ -2529,12 +2541,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target The Hammer of Twilight
     .isQuestTurnedIn 27784 --any of: The Hammer of Twilight
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along143
-    >>As you go: Kill |cRXP_ENEMY_Skullcrusher the Mountain|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27787,2 --Skullcrusher the Mountain slain (1)
-    .mob Skullcrusher the Mountain
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along143
     .goto 241,45.39,87.97
     >>Survive and then slay Skullcrusher the Mountain.
     .complete 27787,1 --"Skullcrusher the Mountain" Kill Credit (1)

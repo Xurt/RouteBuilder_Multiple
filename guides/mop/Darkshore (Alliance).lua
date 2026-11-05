@@ -836,12 +836,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Sentinel Tysha Moonblade
     .isQuestTurnedIn 13589 --any of: The Shatterspear Invaders
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along104
-    >>As you go: Kill |cRXP_ENEMY_Shatterspear Laborers|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -13504,1 --Shatterspear Laborer slain (10)
-    .mob Shatterspear Laborer
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along104
     .goto 62,58.88,19.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balthule Shadowstrike|r
     .accept 13505 >>Accept Remnants of the Highborne
@@ -851,12 +845,19 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 62,61.25,13.39,0
     .goto 62,61.25,13.39,40,0
-    .goto 62,62.80,15.15,40,0
+    .goto 62,62.86,15.09,40,0
     >>Kill |cRXP_ENEMY_Shatterspear Laborers|r
-    >>Pick up |cRXP_PICK_Highborne Relic|r from the ground
-    .complete -13504,1 --Shatterspear Laborer slain (10)
-    .complete -13505,1 --Highborne Relic (8)
+    .complete 13504,1 --Shatterspear Laborer slain (10)
     .mob Shatterspear Laborer
+    .isOnQuest 13504
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
+    .goto 62,61.37,13.80,0
+    .goto 62,61.37,13.80,40,0
+    .goto 62,63.26,15.99,40,0
+    >>Pick up |cRXP_PICK_Highborne Relic|r from the ground
+    .complete 13505,1 --Highborne Relic (8)
+    .isOnQuest 13505
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,58.88,19.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balthule Shadowstrike|r
@@ -889,17 +890,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 13509 >>Accept War Supplies
     .target Lieutenant Morra Starbreeze
     .isQuestTurnedIn 13504 --any of: Shatterspear Laborers
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along115
-    >>As you go: Kill |cRXP_ENEMY_Shatterspear Mystics|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -13507,2 --Shatterspear Mystic slain (6)
-    .mob Shatterspear Mystic
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along112
-    >>As you go: Kill |cRXP_ENEMY_Horde Enforcers|r. Click the |cRXP_PICK_Shatterspear Armaments|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -13507,1 --Horde Enforcer slain (6)
-    .complete -13509,1 --Shatterspear Armaments
-    .mob Horde Enforcer
 step
     .goto 62,63.75,5.99
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Alanndarian Nightsong|r
@@ -907,7 +897,6 @@ step
     .target Alanndarian Nightsong
     .isOnQuest 13508
 step
-    #label Along112
     .goto 62,63.75,5.99
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Alanndarian Nightsong|r
     .accept 13511 >>Accept One Bitter Wish
@@ -926,29 +915,35 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 13510 >>Accept Timely Arrival
     .target Sentinel Aynasha
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along115
-    >>As you go: Kill |cRXP_ENEMY_Horde Enforcers|r. Click the |cRXP_PICK_Shatterspear Armaments|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -13507,1 --Horde Enforcer slain (6)
-    .complete -13509,1 --Shatterspear Armaments
-    .mob Horde Enforcer
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along115
     .goto 62,60.25,6.93
     >>Escort Sentinel Aynasha to the Dock
     .complete 13510,1 --Escort Sentinel Aynasha to the Dock
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 62,62.26,10.09,0
-    .goto 62,62.26,10.09,40,0
-    .goto 62,63.26,7.86,40,0
+    .goto 62,60.64,7.18,0
+    .goto 62,60.64,7.18,40,0
+    .goto 62,61.41,10.59,40,0
     >>Kill |cRXP_ENEMY_Horde Enforcers|r
-    >>Kill |cRXP_ENEMY_Shatterspear Mystics|r
-    >>Click the |cRXP_PICK_Shatterspear Armaments|r
-    .complete -13507,1 --Horde Enforcer slain (6)
-    .complete -13507,2 --Shatterspear Mystic slain (6)
-    .complete -13509,1 --Shatterspear Armaments
+    .complete 13507,1 --Horde Enforcer slain (6)
     .mob Horde Enforcer
+    .isOnQuest 13507
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
+    .goto 62,61.52,9.09,0
+    .goto 62,61.52,9.09,40,0
+    .goto 62,63.06,5.25,40,0
+    >>Kill |cRXP_ENEMY_Shatterspear Mystics|r
+    .complete 13507,2 --Shatterspear Mystic slain (6)
     .mob Shatterspear Mystic
+    .isOnQuest 13507
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
+    .goto 62,62.20,8.98,0
+    .goto 62,62.20,8.98,40,0
+    .goto 62,61.89,11.07,40,0
+    >>Click the |cRXP_PICK_Shatterspear Armaments|r
+    .complete 13509,1 --Shatterspear Armaments
+    .isOnQuest 13509
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,58.89,19.41
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Tysha Moonblade|r
@@ -993,30 +988,34 @@ step
     .target Mathas Wildwood
     .isQuestTurnedIn 13509 --any of: War Supplies
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along124
-    >>As you go: Kill |cRXP_ENEMY_Shatterspear Shamans|r. Loot them for |cRXP_LOOT_Shatterspear Amulet|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -13513,1 --Shatterspear Amulet (6)
-    .mob Shatterspear Shaman
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along124
     .goto 62,61.24,20.35
     >>Kill |cRXP_ENEMY_Sheya Stormweaver|r
     .complete 13512,2 --Sheya Stormweaver slain (1)
     .mob Sheya Stormweaver
     .isOnQuest 13512
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 62,58.43,25.26
+    >>Kill |cRXP_ENEMY_Shatterspear Shamans|r. Loot them for |cRXP_LOOT_Shatterspear Amulet|r
+    .complete 13513,1 --Shatterspear Amulet (6)
+    .mob Shatterspear Shaman
+    .isOnQuest 13513
 step
-    .goto 62,57.73,25.50
-    >>Kill |cRXP_ENEMY_Shatterspear Shamans|r. Loot them for |cRXP_LOOT_Shatterspear Amulet|r << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 62,58.23,24.02
     >>Kill |cRXP_ENEMY_Teegan Holloway|r
-    >>Open the |cRXP_PICK_Charred Book|r. Loot it for |cRXP_LOOT_Narassin's Tome|r
-    >>Kill |cRXP_ENEMY_Lorenth Thundercall|r << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .complete -13513,1 << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren --Shatterspear Amulet (6)
-    .complete -13844,1 --Teegan Holloway slain (1)
-    .complete -13844,2 --Narassin's Tome (1)
-    .complete -13512,1 << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren --Lorenth Thundercall slain (1)
-    .mob Shatterspear Shaman << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .complete 13844,1 --Teegan Holloway slain (1)
     .mob Teegan Holloway
-    .mob Lorenth Thundercall << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .isOnQuest 13844
+step
+    .goto 62,58.28,23.97
+    >>Open the |cRXP_PICK_Charred Book|r. Loot it for |cRXP_LOOT_Narassin's Tome|r
+    .complete 13844,2 --Narassin's Tome (1)
+    .isOnQuest 13844
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 62,56.70,25.98
+    >>Kill |cRXP_ENEMY_Lorenth Thundercall|r
+    .complete 13512,1 --Lorenth Thundercall slain (1)
+    .mob Lorenth Thundercall
+    .isOnQuest 13512
 step
     .goto 62,59.14,19.61
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathas Wildwood|r
@@ -1049,18 +1048,34 @@ step
     .isQuestTurnedIn 13512 --Strategic Strikes
     .isQuestTurnedIn 13513 --On the Brink
 step
-    #loop
-    .goto 62,70.60,20.87,0
-    .goto 62,70.60,20.87,40,0
-    .goto 62,70.76,16.73,40,0
+    .goto 62,70.85,16.56
     >>Kill |cRXP_ENEMY_Shatterspear Hut Fire Bunnies|r
-    >>Kill |cRXP_ENEMY_Shatterspear Priestess|r, |cRXP_ENEMY_Shatterspear Raiders|r and |cRXP_ENEMY_Shatterspear Champions|r
-    .complete -13514,1 --Shatterspear Hut Fire Bunny slain (8)
-    .complete -13514,2 --Shatterspear Priestess (8)
+    .complete 13514,1 --Shatterspear Hut Fire Bunny slain (8)
     .mob Shatterspear Hut Fire Bunny
+    .isOnQuest 13514
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 62,72.28,19.10
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Huntress Sandrya Moonfall|r
+    .turnin 13590 >>Turn in The Front Line while you are here
+    .isQuestComplete 13590
+    .target Huntress Sandrya Moonfall
+step
+    #loop
+    .goto 62,70.76,16.73,0
+    .goto 62,70.76,16.73,40,0
+    .goto 62,70.60,20.87,40,0
+    >>Kill |cRXP_ENEMY_Shatterspear Priestess|r, |cRXP_ENEMY_Shatterspear Raiders|r and |cRXP_ENEMY_Shatterspear Champions|r
+    .complete 13514,2 --Shatterspear Priestess (8)
     .mob Shatterspear Priestess
     .mob Shatterspear Raider
     .mob Shatterspear Champion
+    .isOnQuest 13514
+step
+    .goto 62,69.09,19.25
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kerlonian Evershade|r
+    .turnin 13514 >>Turn in The Ancients' Ire while you are here
+    .isQuestComplete 13514
+    .target Kerlonian Evershade
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,72.28,19.10
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Huntress Sandrya Moonfall|r
@@ -1137,18 +1152,28 @@ step
     .target Cerellean Whiteclaw
     .isOnQuest 13570
 step
-    #loop
-    .goto 62,45.20,31.05,0
-    .goto 62,45.20,31.05,40,0
-    .goto 62,43.13,32.38,40,0
+    .goto 62,43.65,31.37
     >>Kill |cRXP_ENEMY_High Cultist Azerynn|r
-    >>Pick up |cRXP_PICK_Twilight Plans|r from the ground
-    >>Kill |cRXP_ENEMY_Twilight Fanatics|r
-    .complete -13519,1 --High Cultist Azerynn slain (1)
-    .complete -13596,1 --Twilight Plans (6)
-    .complete -13519,2 --Twilight Fanatic slain (10)
+    .complete 13519,1 --High Cultist Azerynn slain (1)
     .mob High Cultist Azerynn
+    .isOnQuest 13519
+step
+    #loop
+    .goto 62,43.13,32.38,0
+    .goto 62,43.13,32.38,40,0
+    .goto 62,45.27,30.45,40,0
+    >>Pick up |cRXP_PICK_Twilight Plans|r from the ground
+    .complete 13596,1 --Twilight Plans (6)
+    .isOnQuest 13596
+step
+    #loop
+    .goto 62,43.10,32.49,0
+    .goto 62,43.10,32.49,40,0
+    .goto 62,44.64,30.83,40,0
+    >>Kill |cRXP_ENEMY_Twilight Fanatics|r
+    .complete 13519,2 --Twilight Fanatic slain (10)
     .mob Twilight Fanatic
+    .isOnQuest 13519
 step
     .goto 62,50.31,20.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Lendra|r
@@ -1187,7 +1212,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 13881 >>Accept Consumed
     .target Kathrena Winterwisp
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along156
+    #completewith Along165
     >>As you go: Kill |cRXP_ENEMY_Consumed Thistle Bears|r. |cRXP_WARN_Anything left is finished later|r
     .complete 13881,1 --Consumed Thistle Bear slain (6)
     .mob Consumed Thistle Bear
@@ -1231,7 +1256,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 13948,1 --Doomspeaker Trevellion
     .target Doomspeaker Trevellion
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along156
+    #label Along165
     .goto 62,43.51,81.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elder Brolg|r
     .turnin 13526 >>Turn in The Bear's Paw
@@ -1326,7 +1351,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 13907 >>Accept Sweeping Clean the Ruins
     .target Archaeologist Groff
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along174
+    #completewith Along183
     >>As you go: Kill |cRXP_ENEMY_Greymist Oracles|r, |cRXP_ENEMY_Greymist Refugees|r and |cRXP_ENEMY_Murloc Squatter Kill Credits|r. |cRXP_WARN_Anything left is finished later|r
     .complete 13907,1 --Greymist Oracle (8)
     .mob Greymist Oracle
@@ -1338,7 +1363,7 @@ step
     .accept 13912 >>Accept Swamped Secrets
     .target Jr. Archaeologist Ferd
 step
-    #completewith Along174
+    #completewith Along183
     >>As you go: Pick up |cRXP_PICK_Mud-Crusted Ancient Disc|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 13912,1 --Mud-Crusted Ancient Disc (1)
 step
@@ -1351,7 +1376,7 @@ step
     >>Prospector Remtravel Escorted
     .complete 13911,1 --Prospector Remtravel Escorted
 step
-    #label Along174
+    #label Along183
     .goto 62,37.75,82.93
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jr. Archaeologist Ferd|r
     .turnin 13911 >>Turn in The Absent-Minded Prospector

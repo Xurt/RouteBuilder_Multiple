@@ -613,14 +613,6 @@ step
     .turnin 25466 >>Turn in Even More Fuel for the Zapping
     .target Zorbin Fandazzle
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along72
-    >>As you go: Kill |cRXP_ENEMY_Woodpaw Mongrels|r, |cRXP_ENEMY_Woodpaw Trappers|r, |cRXP_ENEMY_Woodpaw Brutes|r and |cRXP_ENEMY_Woodpaw Mystics|r. Loot them for |cRXP_LOOT_Woodpaw Gnoll Mane|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -25363,1 --Woodpaw Gnoll Mane (10)
-    .mob Woodpaw Mongrel
-    .mob Woodpaw Trapper
-    .mob Woodpaw Brute
-    .mob Woodpaw Mystic
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 69,74.42,43.36
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Uzer'i|r
     .turnin 25641 >>Turn in The Flow of Muisek
@@ -693,7 +685,6 @@ step
     .accept 25475 >>Accept Find OOX-22/FE!
     .use 8705
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Drop25475x11
     #loop
     .goto 69,73.05,41.91,0
     .goto 69,73.05,41.91,40,0
@@ -701,11 +692,21 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 69,66.58,46.89,40,0
     .goto 69,70.96,45.84,40,0
     >>Kill |cRXP_ENEMY_Sprite Darters|r and |cRXP_ENEMY_Captured Sprite Darters|r. Loot them for |cRXP_LOOT_Iridescent Sprite Darter Wing|r
-    >>Kill |cRXP_ENEMY_Sprite Darter|r and loot |cRXP_LOOT_Faerie Dragon Muisek|r
-    .complete -25361,1 --Iridescent Sprite Darter Wing (10)
-    .complete -25345,1 --Faerie Dragon Muisek (1)
+    .complete 25361,1 --Iridescent Sprite Darter Wing (10)
     .mob Sprite Darter
     .mob Captured Sprite Darter
+    .isOnQuest 25361
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Drop25475x11
+    #loop
+    .goto 69,70.48,45.33,0
+    .goto 69,70.48,45.33,40,0
+    .goto 69,71.36,40.74,40,0
+    .goto 69,73.05,41.91,40,0
+    >>Kill |cRXP_ENEMY_Sprite Darter|r and loot |cRXP_LOOT_Faerie Dragon Muisek|r
+    .complete 25345,1 --Faerie Dragon Muisek (1)
+    .mob Sprite Darter
+    .isOnQuest 25345
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 69,74.42,43.36
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Uzer'i|r
@@ -725,7 +726,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Krueg Skullsplitter
     .isQuestTurnedIn 25361 --any of: A New Cloak's Sheen
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along72
     .goto 69,74.42,43.36
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Uzer'i|r
     .accept 25346 >>Accept Mountain Giant Muisek
@@ -920,24 +920,40 @@ step
     .collect 8705,1,25475 --OOX-22/FE Distress Beacon (1)
     .accept 25475 >>Accept Find OOX-22/FE!
     .use 8705
-step
-    #label Drop25475x16
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along95
+    >>As you go: Kill |cRXP_ENEMY_Zukk'ash Stingers|r, |cRXP_ENEMY_Zukk'ash Wasps|r, |cRXP_ENEMY_Zukk'ash Workers|r and |cRXP_ENEMY_Zukk'ash Tunnelers|r. Loot them for |cRXP_LOOT_Zukk'ash Carapace|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 25367,1 --Zukk'ash Carapace (20)
+    .mob Zukk'ash Stinger
+    .mob Zukk'ash Wasp
+    .mob Zukk'ash Worker
+    .mob Zukk'ash Tunneler
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along95
+    .goto 69,75.58,60.85
+    >>Kill |cRXP_ENEMY_Stinglasher|r and loot |cRXP_LOOT_Stinglasher's Glands|r
+    .complete 25369,1 --Stinglasher's Glands (1)
+    .mob Stinglasher
+    .isOnQuest 25369
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 69,75.13,61.76,0
     .goto 69,75.13,61.76,40,0
     .goto 69,73.56,63.53,40,0
     .goto 69,77.73,63.34,40,0
-    >>Kill |cRXP_ENEMY_Stinglasher|r and loot |cRXP_LOOT_Stinglasher's Glands|r << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    >>Kill |cRXP_ENEMY_Zukk'ash Stingers|r, |cRXP_ENEMY_Zukk'ash Wasps|r, |cRXP_ENEMY_Zukk'ash Workers|r and |cRXP_ENEMY_Zukk'ash Tunnelers|r. Loot them for |cRXP_LOOT_Zukk'ash Carapace|r << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    >>Kill |cRXP_ENEMY_Zukk'ash Stingers|r, |cRXP_ENEMY_Zukk'ash Wasps|r, |cRXP_ENEMY_Zukk'ash Workers|r and |cRXP_ENEMY_Zukk'ash Tunnelers|r. Loot them for |cRXP_LOOT_Zukk'ash Carapace|r
+    .complete 25367,1 --Zukk'ash Carapace (20)
+    .mob Zukk'ash Stinger
+    .mob Zukk'ash Wasp
+    .mob Zukk'ash Worker
+    .mob Zukk'ash Tunneler
+step
+    #label Drop25475x16
+    .goto 69,75.58,60.85
     >>Kill |cRXP_ENEMY_Stinglasher|r
-    .complete -25369,1 << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren --Stinglasher's Glands (1)
-    .complete 25367,1 << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren --Zukk'ash Carapace (20)
-    .complete -25431,1 --Stinglasher slain (1)
+    .complete 25431,1 --Stinglasher slain (1)
     .mob Stinglasher
-    .mob Zukk'ash Stinger << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .mob Zukk'ash Wasp << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .mob Zukk'ash Worker << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .mob Zukk'ash Tunneler << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .isOnQuest 25431
 step
     .goto 69,77.23,56.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Adella|r

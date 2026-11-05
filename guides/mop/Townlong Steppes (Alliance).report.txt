@@ -1,5 +1,5 @@
 Townlong Steppes - Alliance
-Guide "89-89 Townlong Steppes" in group "Zone Routes (Alliance)": 209 steps, 178 stops
+Guide "89-89 Townlong Steppes" in group "Zone Routes (Alliance)": 215 steps, 184 stops
 Written to guides/mop/Townlong Steppes (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -79,8 +79,8 @@ Step order kept from the last build (locks folder): 198 steps kept, 21 new ones 
   everyone (quests that depend on other zones): 46 more tasks; their whole route comes to 29,441 yd; ends at level 89.4; 1 ORDER PROBLEMS
 Hearthstone: set at Supplier Qiao (Supplier Qiao's inn); 0 hearth steps in the guide.
 3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-17 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
-7 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+15 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+9 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
   The Taking of Dusklight Bridge: its hand-in spot is not passed again, so the step sits at the end of the guide.
 
 Quests in the guide (84)

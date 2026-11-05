@@ -1,5 +1,5 @@
 Ashenvale - Horde - part 1 of 2, planned from level 21
-Guide "21-26 Ashenvale" in group "Zone Routes (Horde)": this part has 191 steps, 166 stops
+Guide "21-26 Ashenvale" in group "Zone Routes (Horde)": this part has 202 steps, 175 stops
 Written to guides/mop/Ashenvale (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -36,7 +36,7 @@ Step order kept from the last build (locks folder): 161 steps kept, 45 new ones 
   Tauren (quests that depend on other zones): 7 more tasks; their whole route comes to 38,948 yd; ends at level 25.2; 1 hearth; at its hardest you are 1.8 levels below the mobs
 Hearthstone: set at Elestren (Elestren's inn); 1 hearth step in the guide.
 4 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-8 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+10 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 5 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (92)

@@ -367,18 +367,22 @@ step
     .mob Corpseweed
     .mob Carved One
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 47,33.52,75.33
+    >>Pick up |cRXP_PICK_Abercrombie's Crate|r from the ground
+    .complete 26680,1 --Abercrombie's Crate (1)
+    .isOnQuest 26680
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 47,34.97,72.41,0
     .goto 47,34.97,72.41,40,0
     .goto 47,32.34,70.45,40,0
-    >>Pick up |cRXP_PICK_Abercrombie's Crate|r from the ground
     >>Kill |cRXP_ENEMY_Splinter Fist Warriors|r, |cRXP_ENEMY_Splinter Fist Ogres|r, |cRXP_ENEMY_Splinter Fist Fire Weavers|r and |cRXP_ENEMY_Splinter Fist Taskmasters|r
-    .complete -26680,1 --Abercrombie's Crate (1)
-    .complete -25235,1 --Splinter Fist Warrior (15)
+    .complete 25235,1 --Splinter Fist Warrior (15)
     .mob Splinter Fist Warrior
     .mob Splinter Fist Ogre
     .mob Splinter Fist Fire Weaver
     .mob Splinter Fist Taskmaster
+    .isOnQuest 25235
 step
     .goto 47,44.92,67.42
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apprentice Fess|r
@@ -482,7 +486,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 26721,1 --Widow Venom Sac (8)
     .mob Black Widow
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along62
+    #completewith Along63
     >>As you go: Kill |cRXP_ENEMY_Flesh Eaters|r, |cRXP_ENEMY_Bone Chewers|r, |cRXP_ENEMY_Brain Eaters|r and |cRXP_ENEMY_Plague Spreaders|r. |cRXP_WARN_Anything left is finished later|r
     .complete 26778,1 --Flesh Eater (20)
     .mob Flesh Eater
@@ -494,7 +498,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>Click the |cRXP_PICK_A Weathered Grave|r
     .accept 26793 >>Accept The Weathered Grave
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along62
+    #label Along63
     .goto 47,16.97,33.42
     >>Click the |cRXP_PICK_Bloodsoaked Hat|r
     .complete 26723,1 --Bloodsoaked Hat

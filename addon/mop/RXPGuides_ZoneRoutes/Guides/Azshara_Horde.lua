@@ -242,7 +242,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 14197 >>Accept A Quota to Meet
     .target Foreman Fisk
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along36
+    #completewith Along37
     >>As you go: Kill |cRXP_ENEMY_Greystone Basilisks|r. Loot the |cRXP_PICK_Iron Stockpiles|r for |cRXP_LOOT_Mountainfoot Iron|r. |cRXP_WARN_Anything left is finished later|r
     .complete 14161,1 --Greystone Basilisk slain (10)
     .complete 14197,1 --Mountainfoot Iron (20)
@@ -283,24 +283,29 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .turnin 14190 >>Turn in The Perfect Prism
     .accept 14192 >>Accept Prismbreak
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along36
     .goto 76,20.03,69.98
     >>Click the |cRXP_PICK_Weapons Cabinet|r
     .turnin 14192 >>Turn in Prismbreak
     .accept 14194 >>Accept Refleshification
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along37
     #loop
-    .goto 76,21.40,70.82,0
-    .goto 76,21.40,70.82,40,0
+    .goto 76,23.02,68.02,0
     .goto 76,23.02,68.02,40,0
-    .goto 76,24.48,71.58,40,0
+    .goto 76,24.89,71.13,40,0
     >>Interact with |cRXP_FRIENDLY_Mountainfoot Miners|r
+    .complete 14194,1 --Mountainfoot Miner (8)
+    .target Mountainfoot Miner
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 76,22.80,69.96,0
+    .goto 76,22.80,69.96,40,0
+    .goto 76,20.14,69.51,40,0
+    .goto 76,24.62,65.81,40,0
     >>Kill |cRXP_ENEMY_Greystone Basilisks|r
     >>Loot the |cRXP_PICK_Iron Stockpiles|r for |cRXP_LOOT_Mountainfoot Iron|r
-    .complete 14194,1 --Mountainfoot Miner (8)
     .complete 14161,1 --Greystone Basilisk slain (10)
     .complete 14197,1 --Mountainfoot Iron (20)
-    .target Mountainfoot Miner
     .mob Greystone Basilisk
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,29.25,66.50
@@ -441,12 +446,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 14209 >>Accept Gunk in the Trunk
     .target Custer Clubnik
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along60
+    #completewith Along61
     >>As you go: Kill |cRXP_ENEMY_Ectoplasmic Exhaust|r and loot |cRXP_LOOT_Ectosplatter Sample|r. |cRXP_WARN_Anything left is finished later|r
     .complete 14209,1 --Ectosplatter Sample (1)
     .mob Ectoplasmic Exhaust
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along60
+    #label Along61
     .goto 76,29.68,66.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Malynea Skyreaver|r
     .turnin 14201 >>Turn in A Thousand Stories in the Sand
@@ -523,7 +528,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 14258 >>Accept Mortar the Point
     .target Bombardier Captain Smooks
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along87
+    #completewith Along88
     >>As you go: Pick up |cRXP_PICK_Goblin Mortar Shell|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 14258,1 --Goblin Mortar Shell (5)
 step
@@ -545,12 +550,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .complete 14308,1 --Secret Lab Fires (8)
     .target Secret Lab Fires
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along75
+    #completewith Along76
     >>As you go: Kill |cRXP_ENEMY_Mutant Goblin|r and loot |cRXP_LOOT_Secret Rocket Plans|r. |cRXP_WARN_Anything left is finished later|r
     .complete 14408,2 --Secret Rocket Plans (1)
     .mob Mutant Goblin
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along75
+    #label Along76
     #loop
     .goto 76,43.45,76.54,0
     .goto 76,43.45,76.54,40,0
@@ -576,23 +581,23 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 14371 >>Accept A Gigantic Snack
     .target Assistant Greely
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along80
+    #completewith Along81
     >>As you go: Kill |cRXP_ENEMY_Mistwing Cliffdwellers|r. Loot them for |cRXP_LOOT_Mutilated Mistwing Carcass|r. |cRXP_WARN_Anything left is finished later|r
     .complete 14371,1 --Mutilated Mistwing Carcass (8)
     .mob Mistwing Cliffdweller
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along79
+    #completewith Along80
     >>As you go: Kill |cRXP_ENEMY_Mutant Goblin|r and loot |cRXP_LOOT_Secret Rocket Plans|r. |cRXP_WARN_Anything left is finished later|r
     .complete 14408,2 --Secret Rocket Plans (1)
     .mob Mutant Goblin
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along79
+    #label Along80
     .goto 76,45.93,76.09
     >>Interact with |cRXP_FRIENDLY_Buzzer|r
     .complete 14408,1 --Buzzer
     .target Buzzer
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along80
+    #label Along81
     .goto 76,45.96,76.39
     >>Kill |cRXP_ENEMY_Mutant Goblin|r and loot |cRXP_LOOT_Secret Rocket Plans|r
     .complete 14408,2 --Secret Rocket Plans (1)
@@ -649,7 +654,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 14377 >>Accept Befriending Giants
     .target Assistant Greely
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along87
+    #label Along88
     .goto 76,47.75,75.52
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gormungan|r
     .complete 14377,1 --Gormungan
@@ -682,7 +687,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Netgun Gnome
     .mob Zapper Gnome
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along93
+    #completewith Along94
     >>As you go: Pick up |cRXP_PICK_Goblin Mortar Shell|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 14258,1 --Goblin Mortar Shell (5)
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
@@ -703,7 +708,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestComplete 14383
     .target Hobart Grapplehammer
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along93
+    #label Along94
     .goto 76,47.75,75.52
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gormungan|r
     .complete 14388,1 --Gormungan
@@ -738,7 +743,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 14267 >>Accept Investigating the Sea Shrine
     .target Torg Twocrush
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along101
+    #completewith Along102
     >>As you go: Kill |cRXP_ENEMY_Spitelash Stormfuries|r. |cRXP_WARN_Anything left is finished later|r
     .complete 14262,1 --Spitelash Stormfury slain (6)
     .mob Spitelash Stormfury
@@ -752,7 +757,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Pick up |cRXP_PICK_Keystone Shard|r from the ground
     .complete 14270,1 --Keystone Shard (1)
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along101
+    #label Along102
     .goto 76,58.98,71.81
     >>Click the |cRXP_PICK_Naga Power Stone|r
     .turnin 14270 >>Turn in The Keystone Shard
@@ -903,12 +908,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Lieutenant Drex
     .isQuestTurnedIn 14479 --any of: There Are Many Like It
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along121
-    >>As you go: Kill |cRXP_ENEMY_Spitelash Sirens|r and |cRXP_ENEMY_Spitelash Warriors|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -24435,1 --Spitelash Siren (12)
-    .mob Spitelash Siren
-    .mob Spitelash Warrior
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,41.39,53.94
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Hort|r
     .accept 24436 >>Accept Halo Drops
@@ -925,7 +924,6 @@ step
     .complete 24437,2 --Real Estate Bunny (Tower)
     .target Real Estate Bunny (Tower)
 step
-    #label Along121
     .goto 76,45.46,38.51
     >>Plant Ruckus' Territorial Claim Flag next to the prime real estate locations along the Shattered Strand.
     .complete 24437,3 --Real Estate Bunny (Vista)
@@ -1002,39 +1000,46 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Tora Halotrix
     .isQuestTurnedIn 24448 --any of: Field Promotion
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along132
-    >>As you go: Pick up |cRXP_PICK_Highborne Tablet|r from the ground. Kill |cRXP_ENEMY_Spitelash Serpent Guards|r, |cRXP_ENEMY_Spitelash Enchantress|r, |cRXP_ENEMY_High Priestess Siltheras|r and |cRXP_ENEMY_Spitelash Battlemasters|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -14486,1 --Highborne Tablet (12)
-    .complete -14480,1 --Spitelash Serpent Guard (30)
-    .mob Spitelash Serpent Guard
-    .mob Spitelash Enchantress
-    .mob High Priestess Silthera
-    .mob Spitelash Battlemaster
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along132
     .goto 76,31.88,50.09
     >>Pick up |cRXP_PICK_Heart of Arkkoroc|r from the ground
     .complete 14487,1 --Heart of Arkkoroc (1)
     .isOnQuest 14487
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 76,32.28,52.46,0
-    .goto 76,32.28,52.46,40,0
-    .goto 76,32.37,47.45,40,0
-    .goto 76,35.99,49.85,40,0
+    .goto 76,35.99,49.85
     >>Kill |cRXP_ENEMY_Lord Kassarus|r
-    >>Click the |cRXP_PICK_Spitelash Runestone|r
-    >>Pick up |cRXP_PICK_Highborne Tablet|r from the ground
-    >>Kill |cRXP_ENEMY_Spitelash Serpent Guards|r, |cRXP_ENEMY_Spitelash Enchantress|r, |cRXP_ENEMY_High Priestess Siltheras|r and |cRXP_ENEMY_Spitelash Battlemasters|r
-    .complete -14484,1 --Lord Kassarus slain (1)
-    .complete -14485,1 --Spitelash Runestone
-    .complete -14486,1 --Highborne Tablet (12)
-    .complete -14480,1 --Spitelash Serpent Guard (30)
+    .complete 14484,1 --Lord Kassarus slain (1)
     .mob Lord Kassarus
+    .isOnQuest 14484
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 76,35.41,49.89,0
+    .goto 76,35.41,49.89,40,0
+    .goto 76,32.28,52.46,40,0
+    >>Click the |cRXP_PICK_Spitelash Runestone|r
+    .complete 14485,1 --Spitelash Runestone
+    .isOnQuest 14485
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 76,35.08,49.93,0
+    .goto 76,35.08,49.93,40,0
+    .goto 76,36.02,50.58,40,0
+    .goto 76,32.59,46.37,40,0
+    >>Pick up |cRXP_PICK_Highborne Tablet|r from the ground
+    .complete 14486,1 --Highborne Tablet (12)
+    .isOnQuest 14486
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 76,35.78,48.61,0
+    .goto 76,35.78,48.61,40,0
+    .goto 76,32.22,47.71,40,0
+    .goto 76,30.35,51.02,40,0
+    >>Kill |cRXP_ENEMY_Spitelash Serpent Guards|r, |cRXP_ENEMY_Spitelash Enchantress|r, |cRXP_ENEMY_High Priestess Siltheras|r and |cRXP_ENEMY_Spitelash Battlemasters|r
+    .complete 14480,1 --Spitelash Serpent Guard (30)
     .mob Spitelash Serpent Guard
     .mob Spitelash Enchantress
     .mob High Priestess Silthera
     .mob Spitelash Battlemaster
+    .isOnQuest 14480
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,34.46,44.73
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Zelks|r
@@ -1117,13 +1122,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Vile Splash
     .isOnQuest 14323
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along146
-    >>As you go: Loot the |cRXP_PICK_Kawphi Plants|r for |cRXP_LOOT_Kawphi Bean|r. Kill |cRXP_ENEMY_Makrinni Scrabblers|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -14131,1 --Kawphi Bean (10)
-    .complete -14132,1 --Makrinni Scrabbler slain (10)
-    .mob Makrinni Scrabbler
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along146
     .goto 76,70.36,36.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ergll|r
     .turnin 14323 >>Turn in Absorbent
@@ -1131,21 +1129,28 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isOnQuest 14323
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 76,70.31,34.25,0
-    .goto 76,70.31,34.25,40,0
-    .goto 76,72.71,34.99,40,0
-    .goto 76,72.52,32.35,40,0
+    .goto 76,71.72,34.77,0
+    .goto 76,71.72,34.77,40,0
+    .goto 76,69.96,31.64,40,0
     >>Loot the |cRXP_PICK_Kawphi Plants|r for |cRXP_LOOT_Kawphi Bean|r
-    >>Kill |cRXP_ENEMY_Makrinni Scrabblers|r
-    .complete -14131,1 --Kawphi Bean (10)
-    .complete -14132,1 --Makrinni Scrabbler slain (10)
-    .mob Makrinni Scrabbler
+    .complete 14131,1 --Kawphi Bean (10)
+    .isOnQuest 14131
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,70.36,36.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ergll|r
-    .turnin 14132 >>Turn in That's Just Rude! while you are here
-    .isQuestComplete 14132
+    .turnin 14131 >>Turn in A Little Pick-me-up while you are here
+    .isQuestComplete 14131
     .target Ergll
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 76,73.37,36.26,0
+    .goto 76,73.37,36.26,40,0
+    .goto 76,73.54,34.07,40,0
+    .goto 76,74.99,32.86,40,0
+    >>Kill |cRXP_ENEMY_Makrinni Scrabblers|r
+    .complete 14132,1 --Makrinni Scrabbler slain (10)
+    .mob Makrinni Scrabbler
+    .isOnQuest 14132
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,70.36,36.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ergll|r
@@ -1310,19 +1315,32 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 14340 --any of: Dressed to Impress
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 76,49.76,22.18,0
-    .goto 76,49.76,22.18,40,0
-    .goto 76,51.59,19.93,40,0
-    .goto 76,49.88,18.25,40,0
+    .goto 76,49.10,18.80,0
+    .goto 76,49.10,18.80,40,0
     .goto 76,47.40,16.70,40,0
     >>Loot the |cRXP_PICK_Animate Besalt Chunks|r for |cRXP_LOOT_Animate Basalt|r
+    .complete 14250,1 --Animate Basalt (5)
+    .isOnQuest 14250
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 76,49.28,17.17,0
+    .goto 76,49.28,17.17,40,0
+    .goto 76,51.43,19.47,40,0
+    .goto 76,50.20,23.34,40,0
     >>Pick up |cRXP_PICK_Living Ire Thyme|r from the ground
+    .complete 14263,1 --Living Ire Thyme (8)
+    .isOnQuest 14263
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 76,50.52,18.69,0
+    .goto 76,50.52,18.69,40,0
+    .goto 76,49.11,21.78,40,0
+    .goto 76,47.78,14.31,40,0
     >>Kill |cRXP_ENEMY_Thunderhead Hippogryphs|r and |cRXP_ENEMY_Thunderhead Stagwings|r. Loot them for |cRXP_LOOT_Pristine Thunderhead Feather|r
-    .complete -14250,1 --Animate Basalt (5)
-    .complete -14263,1 --Living Ire Thyme (8)
-    .complete -14249,1 --Pristine Thunderhead Feather (80)
+    .complete 14249,1 --Pristine Thunderhead Feather (80)
     .mob Thunderhead Hippogryph
     .mob Thunderhead Stagwing
+    .isOnQuest 14249
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,47.01,21.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Quarla Whistlebreak|r
@@ -1358,15 +1376,19 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 14250 --Renewable Resource
     .isQuestTurnedIn 14263 --Waste of Thyme
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 76,53.09,21.94,0
-    .goto 76,53.09,21.94,40,0
-    .goto 76,54.85,23.72,40,0
+    .goto 76,55.25,25.20
     >>Open the |cRXP_PICK_Stolen Manual|r. Loot it for |cRXP_LOOT_Abjurer's Manual|r
+    .complete 14230,1 --Abjurer's Manual (1)
+    .isOnQuest 14230
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 76,54.85,23.72,0
+    .goto 76,54.85,23.72,40,0
+    .goto 76,53.09,21.94,40,0
     >>Kill |cRXP_ENEMY_Polymorphed Cockroaches|r
-    .complete -14230,1 --Abjurer's Manual (1)
-    .complete -14226,1 --Polymorphed Cockroach slain (12)
+    .complete 14226,1 --Polymorphed Cockroach slain (12)
     .mob Polymorphed Cockroach
+    .isOnQuest 14226
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,47.24,21.29
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Teresa Spireleaf|r
@@ -1597,11 +1619,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Malicion
     .isOnQuest 24467
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along215
-    >>As you go: Kill |cRXP_ENEMY_Sable Drakes|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -14261,1 --Sable Drake slain (8)
-    .mob Sable Drake
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,55.49,52.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kalec|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 24467 >>Turn in Fade to Black
@@ -1620,7 +1637,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Sable Drakonid
     .isOnQuest 14297
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along215
     #loop
     .goto 76,67.76,15.76,0
     .goto 76,67.76,15.76,40,0
@@ -1690,7 +1706,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 24433 >>Accept Let Them Feast on Fear
     .target Chawg
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along225
+    #completewith Along233
     >>As you go: Kill |cRXP_ENEMY_Talrendis Defenders|r. |cRXP_WARN_Anything left is finished later|r
     .complete 24433,1 --Talrendis Defender slain (12)
     .mob Talrendis Defender
@@ -1700,7 +1716,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 24434 >>Accept Commando Drop
     .target Andorel Sunsworn
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along225
+    #label Along233
     .goto 76,14.35,65.03
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kroum|r
     .accept 14475 >>Accept Grounded!
@@ -1730,12 +1746,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Click the |cRXP_PICK_Goblin Detonator|r
     .complete 14477,1 --Goblin Detonator
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along230
+    #completewith Along238
     >>As you go: Kill |cRXP_ENEMY_Talrendis Defenders|r. |cRXP_WARN_Anything left is finished later|r
     .complete 24433,1 --Talrendis Defender slain (12)
     .mob Talrendis Defender
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along230
+    #label Along238
     .goto 76,12.52,67.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Slinky Sharpshiv|r
     .turnin 14462 >>Turn in Where's My Head?
@@ -1786,12 +1802,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 24430 >>Accept Blacken the Skies
     .target Jr. Bombardier Hackel
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along235
+    #completewith Along243
     >>As you go: Kill |cRXP_ENEMY_Talrendis Glaive Throwers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 24430,1 --Talrendis Glaive Thrower slain (6)
     .mob Talrendis Glaive Thrower
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along235
+    #label Along243
     .goto 76,9.29,72.55
     >>Mount a Grounded Wind Rider and fly over Talrendis Point. Destroy 6 Talrendis Glaive Throwers and bomb the Command Center.
     .complete 24430,2 --Talrendis Command Center Kill Credit

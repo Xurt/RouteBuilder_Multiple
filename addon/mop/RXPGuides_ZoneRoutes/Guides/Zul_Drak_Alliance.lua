@@ -435,16 +435,23 @@ step
     .xp <74,1
 step
     #loop
-    .goto 121,19.73,76.82,0
-    .goto 121,19.73,76.82,40,0
-    .goto 121,23.04,74.55,40,0
-    .goto 121,23.90,78.45,40,0
+    .goto 121,23.76,77.08,0
+    .goto 121,23.76,77.08,40,0
+    .goto 121,24.09,79.76,40,0
     >>Kill |cRXP_ENEMY_Putrid Abominations|r. Loot them for |cRXP_LOOT_Putrid Abomination Guts|r
-    >>Kill |cRXP_ENEMY_Gooey Ghoul Drools|r. Loot them for |cRXP_LOOT_Gooey Ghoul Drool|r
-    .complete -12629,1 --Putrid Abomination Guts (5)
-    .complete -12629,2 --Gooey Ghoul Drool (5)
+    .complete 12629,1 --Putrid Abomination Guts (5)
     .mob Putrid Abomination
+    .isOnQuest 12629
+step
+    #loop
+    .goto 121,22.78,73.65,0
+    .goto 121,22.78,73.65,40,0
+    .goto 121,19.73,76.82,40,0
+    .goto 121,19.53,80.08,40,0
+    >>Kill |cRXP_ENEMY_Gooey Ghoul Drools|r. Loot them for |cRXP_LOOT_Gooey Ghoul Drool|r
+    .complete 12629,2 --Gooey Ghoul Drool (5)
     .mob Gooey Ghoul Drool
+    .isOnQuest 12629
 step
     .goto 121,14.06,73.80
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Stefan Vadu|r
@@ -465,13 +472,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei
     .target Gristlegut
     .isQuestTurnedIn 12629,12643 --any of: You Can Run, But You Can't Hide, Silver Lining
     .xp <74,1
-step << Human/Dwarf/NightElf/Gnome/Draenei
-    #completewith Along52
-    >>As you go: Kill |cRXP_ENEMY_Decaying Ghouls|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -12652,1 --Decaying Ghoul slain (10)
-    .mob Decaying Ghoul
 step
-    #label Along52
     .goto 121,19.86,75.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tBuy |cRXP_LOOT_Bitter Plasma|r from |cRXP_FRIENDLY_Gristlegut|r
     .complete 12648,1 --Bitter Plasma (1)
@@ -575,11 +576,6 @@ step
     .isQuestTurnedIn 12669 --any of: So Far, So Bad
     .xp <74,1
 step
-    #completewith Along68
-    >>As you go: Pick up |cRXP_PICK_Harvested Blight Crystal|r from the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -12677,2 --Harvested Blight Crystal (5)
-step
-    #label Along68
     .goto 121,27.07,46.16
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Overlord Drakuru|r
     .complete 12677,1 --Overlord Drakuru
@@ -800,16 +796,22 @@ step
     #loop
     .goto 121,58.30,75.41,0
     .goto 121,58.30,75.41,40,0
-    .goto 121,61.26,78.18,40,0
     .goto 121,57.39,82.13,40,0
     >>Interact with |cRXP_FRIENDLY_Plague Sprayers|r
-    >>Pick up |cRXP_PICK_Chunk of Saronite|r from the ground
-    >>Kill |cRXP_ENEMY_Malas the Corrupter|r and loot |cRXP_LOOT_Head of the Corrupter|r
-    .complete -12555,1 --Plague Sprayer (5)
-    .complete -12584,1 --Chunk of Saronite (10)
-    .complete -12554,1 --Head of the Corrupter (1)
+    .complete 12555,1 --Plague Sprayer (5)
     .target Plague Sprayer
+    .isOnQuest 12555
+step
+    .goto 121,61.26,78.18
+    >>Pick up |cRXP_PICK_Chunk of Saronite|r from the ground
+    .complete 12584,1 --Chunk of Saronite (10)
+    .isOnQuest 12584
+step
+    .goto 121,61.01,77.98
+    >>Kill |cRXP_ENEMY_Malas the Corrupter|r and loot |cRXP_LOOT_Head of the Corrupter|r
+    .complete 12554,1 --Head of the Corrupter (1)
     .mob Malas the Corrupter
+    .isOnQuest 12554
 step
     .goto 121,58.06,72.05
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Moonshard|r
@@ -854,12 +856,12 @@ step
     .accept 12610 >>Accept Clipping Their Wings
     .target Captain Arnath
 step
-    #completewith Along109
+    #completewith Along112
     >>As you go: Kill |cRXP_ENEMY_Zul'Drak Bats|r. Loot them for |cRXP_LOOT_Unblemished Bat Wing|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12610,1 --Unblemished Bat Wing (7)
     .mob Zul'Drak Bat
 step
-    #label Along109
+    #label Along112
     #loop
     .goto 121,34.94,55.27,0
     .goto 121,34.94,55.27,40,0
@@ -910,11 +912,6 @@ step
     .isQuestTurnedIn 12507 --any of: Strange Mojo
     .xp <74,1
 step
-    #completewith Along116
-    >>As you go: Kill |cRXP_ENEMY_Drakkari Water Binders|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -12562,1 --Drakkari Water Binder slain (10)
-    .mob Drakkari Water Binder
-step
     #loop
     .goto 121,41.01,73.71,0
     .goto 121,41.01,73.71,40,0
@@ -925,7 +922,6 @@ step
     .mob Crazed Water Spirit
     .isOnQuest 12510
 step
-    #label Along116
     .goto 121,44.57,79.00
     >>Kill |cRXP_ENEMY_Watery Lords|r. Loot them for |cRXP_LOOT_Precious Elemental Fluids|r
     .complete 12510,1 --Precious Elemental Fluids (3)
@@ -966,10 +962,6 @@ step
     .isQuestTurnedIn 12510 --any of: Precious Elemental Fluids
     .xp <74,1
 step
-    #completewith Along124
-    >>As you go: Pick up |cRXP_PICK_Muddlecap Fungus|r from the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -12514,1 --Muddlecap Fungus (10)
-step
     .goto 121,41.33,65.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apprentice Pestlepot|r
     .accept 12527 >>Accept Gluttonous Lurkers
@@ -987,7 +979,6 @@ step
     .mob Zul'Drak Rat
     .isOnQuest 12527
 step
-    #label Along124
     #loop
     .goto 121,42.62,57.98,0
     .goto 121,42.62,57.98,40,0
@@ -1091,20 +1082,30 @@ step
     .turnin 12615 >>Turn in The Blessing of Zim'Torga
     .isOnQuest 12615
 step
-    #loop
-    .goto 121,58.02,61.98,0
-    .goto 121,58.02,61.98,40,0
-    .goto 121,57.21,65.35,40,0
+    .goto 121,57.61,61.73
     >>Click the |cRXP_PICK_Purple Cauldron|r
+    .complete 12627,3 --Purple Cauldron
+    .isOnQuest 12627
+step
+    .goto 121,58.78,62.71
     >>Click the |cRXP_PICK_Red Cauldron|r
+    .complete 12627,4 --Red Cauldron
+    .isOnQuest 12627
+step
+    .goto 121,55.68,64.32
     >>Click the |cRXP_PICK_Green Cauldron|r
+    .complete 12627,2 --Green Cauldron
+    .isOnQuest 12627
+step
+    .goto 121,57.21,65.35
     >>Click the |cRXP_PICK_Blue Cauldron|r
+    .complete 12627,1 --Blue Cauldron
+    .isOnQuest 12627
+step
+    .goto 121,58.02,61.98
     >>Pick up |cRXP_PICK_Treasure of Gawanil|r from the ground
-    .complete -12627,3 --Purple Cauldron
-    .complete -12627,4 --Red Cauldron
-    .complete -12627,2 --Green Cauldron
-    .complete -12627,1 --Blue Cauldron
-    .complete -12622,2 --Treasure of Gawanil (1)
+    .complete 12622,2 --Treasure of Gawanil (1)
+    .isOnQuest 12622
 step
     .goto 121,59.50,58.05
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Khufu|r
@@ -1471,16 +1472,20 @@ step
     .isQuestTurnedIn 12642 --any of: Spirit of Rhunok
     .xp <74,1
 step
+    .goto 121,54.10,48.09
+    >>Kill |cRXP_ENEMY_Prophet of Rhunok|r and loot |cRXP_LOOT_Arctic Bear God Mojo|r
+    .complete 12646,1 --Arctic Bear God Mojo (1)
+    .mob Prophet of Rhunok
+    .isOnQuest 12646
+step
     #loop
     .goto 121,56.40,50.20,0
     .goto 121,56.40,50.20,40,0
-    .goto 121,55.00,51.80,40,0
-    >>Kill |cRXP_ENEMY_Prophet of Rhunok|r and loot |cRXP_LOOT_Arctic Bear God Mojo|r
+    .goto 121,53.80,52.40,40,0
     >>Kill |cRXP_ENEMY_Elemental Rifts|r
-    .complete -12646,1 --Arctic Bear God Mojo (1)
-    .complete -12640,1 --Elemental Rift slain (7)
-    .mob Prophet of Rhunok
+    .complete 12640,1 --Elemental Rift slain (7)
     .mob Elemental Rift
+    .isOnQuest 12640
 step
     .goto 121,53.38,39.01
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spirit of Rhunok|r
@@ -1692,17 +1697,21 @@ step
     .isQuestTurnedIn 12675 --any of: One Last Thing
     .xp <74,1
 step
-    #loop
-    .goto 121,64.65,54.35,0
-    .goto 121,64.65,54.35,40,0
-    .goto 121,62.95,51.31,40,0
+    .goto 121,65.64,50.46
     >>Kill |cRXP_ENEMY_Heb'Jin|r
-    >>Kill |cRXP_ENEMY_Heb'Drakkar Strikers|r and |cRXP_ENEMY_Heb'Drakkar Headhunters|r
-    .complete -12662,1 --Heb'Jin slain (1)
-    .complete -12659,1 --Heb'Drakkar Striker (8)
+    .complete 12662,1 --Heb'Jin slain (1)
     .mob Heb'Jin
+    .isOnQuest 12662
+step
+    #loop
+    .goto 121,62.95,51.31,0
+    .goto 121,62.95,51.31,40,0
+    .goto 121,64.65,54.35,40,0
+    >>Kill |cRXP_ENEMY_Heb'Drakkar Strikers|r and |cRXP_ENEMY_Heb'Drakkar Headhunters|r
+    .complete 12659,1 --Heb'Drakkar Striker (8)
     .mob Heb'Drakkar Striker
     .mob Heb'Drakkar Headhunter
+    .isOnQuest 12659
 step
     #loop
     .goto 121,74.36,46.75,0
@@ -1788,11 +1797,6 @@ step
     .target Mam'toth Disciple
     .isOnQuest 12707
 step
-    #completewith Along83
-    >>As you go: Kill |cRXP_ENEMY_Enchanted Tiki Warriors|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -12708,1 --Enchanted Tiki Warrior slain (12)
-    .mob Enchanted Tiki Warrior
-step
     .goto 121,68.20,35.37
     >>Kill |cRXP_ENEMY_Drek'Maz|r and loot |cRXP_LOOT_Drek'Maz's Tiki|r
     .collect 39315,1,12712,1 --Drek'Maz's Tiki (1)
@@ -1827,7 +1831,6 @@ step
     .mob Warlord Zol'Maz
     .isOnQuest 12712
 step
-    #label Along83
     #loop
     .goto 121,67.27,36.56,0
     .goto 121,67.27,36.56,40,0
@@ -1985,11 +1988,15 @@ step
 step
     .goto 121,17.64,57.54
     >>Kill |cRXP_ENEMY_Gerk|r
-    >>Kill |cRXP_ENEMY_Burr|r
-    .complete -12903,2 --Gerk slain (1)
-    .complete -12903,3 --Burr slain (1)
+    .complete 12903,2 --Gerk slain (1)
     .mob Gerk
+    .isOnQuest 12903
+step
+    .goto 121,15.67,59.41
+    >>Kill |cRXP_ENEMY_Burr|r
+    .complete 12903,3 --Burr slain (1)
     .mob Burr
+    .isOnQuest 12903
 step
     .goto 121,25.28,63.96
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Crusader MacKellar|r
@@ -2003,15 +2010,6 @@ step
     .target Gymer
     .isQuestTurnedIn 12916 --any of: Our Only Hope
 step
-    #completewith Along5
-    >>As you go: Kill |cRXP_ENEMY_Vargul Doombringers|r, |cRXP_ENEMY_Vargul Blighthounds|r, |cRXP_ENEMY_Vargul Deathwakers|r and |cRXP_ENEMY_Vargul Runelords|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -12919,4 --Vargul Doombringer (8)
-    .mob Vargul Doombringer
-    .mob Vargul Blighthound
-    .mob Vargul Deathwaker
-    .mob Vargul Runelord
-step
-    #label Along5
     .goto 121,31.19,61.86
     >>Kill |cRXP_ENEMY_Thrym|r
     .complete 12919,2 --Thrym slain (1)

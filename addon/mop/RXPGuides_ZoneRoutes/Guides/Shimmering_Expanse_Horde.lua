@@ -56,15 +56,21 @@ step
     .target Toshe Chaosrender
 step
     #loop
-    .goto 205,65.86,42.70,0
-    .goto 205,65.86,42.70,40,0
-    .goto 205,67.16,43.80,40,0
-    .goto 205,67.28,47.34,40,0
+    .goto 205,65.58,43.45,0
+    .goto 205,65.58,43.45,40,0
+    .goto 205,66.37,45.70,40,0
+    .goto 205,67.96,48.06,40,0
     >>Kill |cRXP_ENEMY_Zin'jatar Ravagers|r
-    >>Interact with |cRXP_FRIENDLY_Swarming Serpents|r
     .complete 25439,1 --Zin'jatar Ravager slain (10)
-    .complete 25441,1 --Swarming Serpent (30)
     .mob Zin'jatar Ravager
+step
+    #loop
+    .goto 205,67.16,43.87,0
+    .goto 205,67.16,43.87,40,0
+    .goto 205,65.86,42.70,40,0
+    .goto 205,67.28,47.34,40,0
+    >>Interact with |cRXP_FRIENDLY_Swarming Serpents|r
+    .complete 25441,1 --Swarming Serpent (30)
     .target Swarming Serpent
 step
     .goto 205,64.06,42.29
@@ -162,7 +168,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 25993 >>Accept Body Blows
     .target Legionnaire Nazgrim
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along23
+    #completewith Along24
     >>As you go: Click the |cRXP_PICK_Nespirah Abscess|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25993,1 --Nespirah Abscess
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
@@ -171,11 +177,11 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 25992 >>Accept Hopelessly Gearless
     .target Captain Vilethorn
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along23
+    #completewith Along24
     >>As you go: Loot the |cRXP_PICK_Idra'kess Weapon Racks|r for |cRXP_LOOT_Purloined Polearm|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25992,1 --Purloined Polearm (4)
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along23
+    #label Along24
     .goto 205,60.31,63.84
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wavespeaker Tulra|r
     .accept 25994 >>Accept Still Valuable
@@ -275,12 +281,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .zone 203 >>Travel to Vashj'ir
     .zoneskip 203
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along37
+    #completewith Along38
     >>As you go: Kill |cRXP_ENEMY_Spiralung|r and loot |cRXP_LOOT_Spiralung|r. |cRXP_WARN_Anything left is finished later|r
     .collect 55141,1,25593,1 --Spiralung (1)
     .mob Spiralung
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along37
+    #label Along38
     #loop
     .goto 203,61.87,70.74,0
     .goto 203,61.87,70.74,40,0
@@ -376,7 +382,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 25954 >>Accept An Occupation of Time
     .unitscan Elendri Goldenbrow
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along50
+    #completewith Along51
     >>As you go: Kill |cRXP_ENEMY_Azsh'ir Patrollers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25952,1 --Azsh'ir Patroller slain (10)
     .mob Azsh'ir Patroller
@@ -391,17 +397,17 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .complete 25954,1 --Lestharia Vashj
     .mob Azsh'ir Monitor
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along49
+    #completewith Along50
     >>As you go: Click the |cRXP_PICK_Queen Azshara|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25954,2 --Queen Azshara
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along49
+    #label Along50
     .goto 205,39.10,57.50
     >>On the lowest level of the ruins, scout the northern end of the Quel'Dormir Gardens, the passage that leads under the ruins west of the gardens, and the structures at the southeast corner of the ruins, below the bridges.
     .complete 25955,1 --Vashj'ir Gardens Credit
     .target Vashj'ir Gardens Credit
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along50
+    #label Along51
     .goto 205,38.61,58.96
     >>Click the |cRXP_PICK_Queen Azshara|r
     .complete 25954,2 --Queen Azshara
@@ -527,7 +533,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Click the |cRXP_PICK_Broken Prong|r
     .turnin 27394 >>Turn in The Call of the Blade
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along70
+    #completewith Along71
     >>As you go: Pick up |cRXP_PICK_Bloated Kelp Bulb|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 25962,1 --Bloated Kelp Bulb (8)
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
@@ -575,7 +581,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 25960 >>Accept Not Entirely Unprepared
     .unitscan Legionnaire Nazgrim
 step
-    #label Along70
+    #label Along71
     #loop
     .goto 205,35.77,75.02,0
     .goto 205,35.77,75.02,40,0
@@ -624,14 +630,14 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 25963 >>Accept Swift Action
     .unitscan Captain Vilethorn
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along76
+    #completewith Along77
     >>As you go: Kill |cRXP_ENEMY_Azsh'ir Archaeans|r. Kill |cRXP_ENEMY_Azsh'ir Soldiers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25963,4 --Azsh'ir Archaean slain (8)
     .complete 25963,2 --Azsh'ir Soldier slain (100)
     .mob Azsh'ir Archaean
     .mob Azsh'ir Soldier
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along76
+    #label Along77
     .goto 205,51.75,62.50
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fiasco Sizzlegrin|r
     .complete 25963,1 --Fiasco Sizzlegrin
@@ -804,13 +810,17 @@ step
     .isQuestTurnedIn 25334 --any of: The Looming Threat
     .xp <80,1
 step
-    .goto 205,55.49,12.82
+    .goto 205,55.76,12.82
     >>Kill |cRXP_ENEMY_Fathom-Lord Zin'jatar|r
-    >>Kill |cRXP_ENEMY_Zin'jatar Fathom-Stalkers|r
-    .complete -25164,2 --Fathom-Lord Zin'jatar (1)
-    .complete -25164,1 --Zin'jatar Fathom-Stalker (8)
+    .complete 25164,2 --Fathom-Lord Zin'jatar (1)
     .mob Fathom-Lord Zin'jatar
+    .isOnQuest 25164
+step
+    .goto 205,55.49,12.82
+    >>Kill |cRXP_ENEMY_Zin'jatar Fathom-Stalkers|r
+    .complete 25164,1 --Zin'jatar Fathom-Stalker (8)
     .mob Zin'jatar Fathom-Stalker
+    .isOnQuest 25164
 step
     .goto 205,56.02,13.70
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Farseer Gadra|r
@@ -881,11 +891,6 @@ step
     .isQuestTurnedIn 25222 --any of: Silver Tide Hollow
     .xp <80,1
 step
-    #completewith Along119
-    >>As you go: Kill |cRXP_ENEMY_Coilshell Sifters|r. Loot them for |cRXP_LOOT_Coilshell Sifter|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -25219,1 --Coilshell Sifter (10)
-    .mob Coilshell Sifter
-step
     .goto 205,49.13,41.96
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Caretaker Movra|r
     .accept 25220 >>Accept Slippery Threat
@@ -916,12 +921,6 @@ step
     .isQuestTurnedIn 25216 --any of: The Great Sambino
     .xp <80,1
 step
-    #completewith Along113
-    >>As you go: Kill |cRXP_ENEMY_Green Sand Crab|r and loot |cRXP_LOOT_Sambino's Air Valve|r. It can also be picked up from |cRXP_PICK_Sambino's Air Valve|r on the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -25218,2 --Sambino's Air Valve (1)
-    .mob Green Sand Crab
-step
-    #label Along113
     .goto 205,41.29,34.24
     >>Fill one of Sambino's Air Balloons and find his Lost Air Valve.
     .complete 25218,1 --Sambino's Air Balloon (1)
@@ -960,7 +959,6 @@ step
     .target The Great Sambino
     .isOnQuest 25217
 step
-    #label Along119
     .goto 205,41.29,34.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_The Great Sambino|r
     .accept 25456 >>Accept Back in One Piece
@@ -1045,18 +1043,25 @@ step
     .xp <80,1
 step
     #loop
-    .goto 205,34.90,62.35,0
-    .goto 205,34.90,62.35,40,0
+    .goto 205,36.04,60.44,0
+    .goto 205,36.04,60.44,40,0
+    .goto 205,34.60,64.60,40,0
+    >>Click the |cRXP_PICK_Nar'shola Ward|r
+    .complete 25658,1 --Nar'shola Ward
+    .isOnQuest 25658
+step
+    #loop
+    .goto 205,35.22,61.92,0
+    .goto 205,35.22,61.92,40,0
     .goto 205,31.02,60.00,40,0
     .goto 205,30.57,64.40,40,0
     .goto 205,34.74,68.83,40,0
-    >>Click the |cRXP_PICK_Nar'shola Ward|r
     >>Kill |cRXP_ENEMY_Kvaldir Pillagers|r, |cRXP_ENEMY_Kvaldir Wasteroamers|r and |cRXP_ENEMY_Kvaldir Plunderers|r
-    .complete -25658,1 --Nar'shola Ward
-    .complete -25637,1 --Kvaldir Pillager (8)
+    .complete 25637,1 --Kvaldir Pillager (8)
     .mob Kvaldir Pillager
     .mob Kvaldir Wasteroamer
     .mob Kvaldir Plunderer
+    .isOnQuest 25637
 step
     .goto 205,29.00,78.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Naz'jar|r. |cRXP_WARN_This NPC walks a patrol route|r
@@ -1064,11 +1069,6 @@ step
     .unitscan Lady Naz'jar
     .isQuestTurnedIn 25755 --any of: Visions of the Past: The Slaughter of Biel'aran Ridge
     .xp <80,1
-step
-    #completewith Along135
-    >>As you go: Kill |cRXP_ENEMY_Fathom-Lord Zin'jatar|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -25858,1 --Fathom-Lord Zin'jatar slain (1)
-    .mob Fathom-Lord Zin'jatar
 step
     .goto 205,36.84,79.75
     >>Kill |cRXP_ENEMY_Overseer Idra'kess|r
@@ -1082,7 +1082,6 @@ step
     .target Fathom-Lord Zin'jatar
     .isOnQuest 25637
 step
-    #label Along135
     .goto 205,36.43,78.66
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fathom-Lord Zin'jatar|r
     .accept 25659 >>Accept Not Soon Forgotten
@@ -1096,12 +1095,6 @@ step
     .mob Fathom-Lord Zin'jatar
     .isOnQuest 25858
 step
-    #completewith Along137
-    >>As you go: Kill |cRXP_ENEMY_Lady Sira'kess|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -25858,2 --Lady Sira'kess slain (1)
-    .mob Lady Sira'kess
-step
-    #label Along137
     .goto 205,33.12,77.89
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Sira'kess|r
     .accept 25896 >>Accept Devout Assembly
@@ -1109,18 +1102,22 @@ step
     .isQuestTurnedIn 25626 --any of: Visions of the Past: Rise from the Deep
     .xp <80,1
 step
-    #loop
-    .goto 205,33.12,77.89,0
-    .goto 205,33.12,77.89,40,0
-    .goto 205,31.72,78.66,40,0
-    .goto 205,33.62,66.38,40,0
-    .goto 205,34.55,78.66,40,0
+    .goto 205,33.12,77.89
     >>Kill |cRXP_ENEMY_Lady Sira'kess|r
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sira'kess Tide Priestess|r
-    .complete -25858,2 --Lady Sira'kess slain (1)
-    .complete -25896,1 --Sira'kess Tide Priestess (6)
+    .complete 25858,2 --Lady Sira'kess slain (1)
     .mob Lady Sira'kess
+    .isOnQuest 25858
+step
+    #loop
+    .goto 205,31.72,78.66,0
+    .goto 205,31.72,78.66,40,0
+    .goto 205,34.55,78.66,40,0
+    .goto 205,35.16,77.22,40,0
+    .goto 205,33.62,66.38,40,0
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sira'kess Tide Priestess|r
+    .complete 25896,1 --Sira'kess Tide Priestess (6)
     .target Sira'kess Tide Priestess
+    .isOnQuest 25896
 step
     .goto 205,28.56,78.59
     >>Kill |cRXP_ENEMY_Varkul the Unrelenting|r
@@ -1315,13 +1312,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 25968 --any of: Desperate Plan
     .xp <80,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along167
-    >>As you go: Kill |cRXP_ENEMY_Kvaldir Fleshcarvers|r and |cRXP_ENEMY_Kvaldir Seahorrors|r. Loot them for |cRXP_LOOT_Coil of Kvaldir Rope|r. It can also be picked up from |cRXP_PICK_Coil of Kvaldir Rope|r on the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -25971,1 --Coil of Kvaldir Rope (1)
-    .mob Kvaldir Fleshcarver
-    .mob Kvaldir Seahorror
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along167
     .goto 205,50.40,79.00
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bloodguard Toldrek|r
     .accept 25969 >>Accept Hostile Waters
@@ -1329,20 +1319,29 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 25968 --any of: Desperate Plan
     .xp <80,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 205,47.76,81.81,0
-    .goto 205,47.76,81.81,40,0
-    .goto 205,49.34,83.62,40,0
-    .goto 205,48.50,84.99,40,0
+    .goto 205,49.06,84.80
     >>Pick up |cRXP_PICK_Horde Survival Kit|r from the ground
+    .complete 25970,1 --Horde Survival Kit (1)
+    .isOnQuest 25970
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 205,48.37,83.89,0
+    .goto 205,48.37,83.89,40,0
+    .goto 205,48.73,86.49,40,0
     >>Kill |cRXP_ENEMY_Muckskin Scroungers|r
-    >>Kill |cRXP_ENEMY_Kvaldir Fleshcarvers|r and |cRXP_ENEMY_Kvaldir Seahorrors|r. Loot them for |cRXP_LOOT_Coil of Kvaldir Rope|r. It can also be picked up from |cRXP_PICK_Coil of Kvaldir Rope|r on the ground
-    .complete -25970,1 --Horde Survival Kit (1)
-    .complete -25969,1 --Muckskin Scrounger slain (10)
-    .complete -25971,1 --Coil of Kvaldir Rope (1)
+    .complete 25969,1 --Muckskin Scrounger slain (10)
     .mob Muckskin Scrounger
+    .isOnQuest 25969
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 205,50.28,80.54,0
+    .goto 205,50.28,80.54,40,0
+    .goto 205,47.90,79.49,40,0
+    >>Kill |cRXP_ENEMY_Kvaldir Fleshcarvers|r and |cRXP_ENEMY_Kvaldir Seahorrors|r. Loot them for |cRXP_LOOT_Coil of Kvaldir Rope|r. It can also be picked up from |cRXP_PICK_Coil of Kvaldir Rope|r on the ground
+    .complete 25971,1 --Coil of Kvaldir Rope (1)
     .mob Kvaldir Fleshcarver
     .mob Kvaldir Seahorror
+    .isOnQuest 25971
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 205,50.35,78.99
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fiasco Sizzlegrin|r

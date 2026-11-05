@@ -1,5 +1,5 @@
 Blade's Edge Mountains - Alliance - part 1 of 2, planned from level 65
-Guide "65-70 Blade's Edge Mountains" in group "Zone Routes (Alliance)": this part has 142 steps, 123 stops
+Guide "65-70 Blade's Edge Mountains" in group "Zone Routes (Alliance)": this part has 141 steps, 123 stops
 Written to guides/tbc/Blade's Edge Mountains (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -21,7 +21,7 @@ Step order kept from the last build (locks folder): 138 steps kept, 21 new ones 
   everyone (quests that depend on other zones): 38 more tasks; their whole route comes to 30,291 yd; ends at level 65.6; 2 ORDER PROBLEMS; at its hardest you are 1.8 levels below the mobs
 Hearthstone: set at Pol Snowhoof (Pol Snowhoof's inn); 0 hearth steps in the guide.
 3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-7 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+6 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 3 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 
@@ -118,7 +118,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Blade's Edge Mountains - Alliance - part 2 of 2, planned from level 68
-Guide "65-70 Blade's Edge Mountains" in group "Zone Routes (Alliance)": this part has 46 steps, 44 stops
+Guide "65-70 Blade's Edge Mountains" in group "Zone Routes (Alliance)": this part has 47 steps, 45 stops
 Written to guides/tbc/Blade's Edge Mountains (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

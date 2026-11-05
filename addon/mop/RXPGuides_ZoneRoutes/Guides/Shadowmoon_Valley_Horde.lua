@@ -384,17 +384,22 @@ step
     .turnin 10458 >>Turn in Enraged Spirits of Fire and Earth
     .accept 10480 >>Accept Enraged Spirits of Water
     .target Earthmender Torlok
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 104,50.98,29.97,0
+    .goto 104,50.98,29.97,40,0
+    .goto 104,54.68,28.87,40,0
+    .goto 104,48.64,23.93,40,0
+    >>Interact with |cRXP_FRIENDLY_Greater Felfire Diemetradons|r
+    .complete 10672,1 --Greater Felfire Diemetradon (8)
+    .target Greater Felfire Diemetradon
 step
     #loop
-    .goto 104,51.67,29.38,0
-    .goto 104,51.67,29.38,40,0
-    .goto 104,53.89,28.51,40,0
-    .goto 104,48.64,23.93,40,0
-    >>Interact with |cRXP_FRIENDLY_Greater Felfire Diemetradons|r << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 104,49.27,22.66,0
+    .goto 104,49.27,22.66,40,0
+    .goto 104,53.87,27.47,40,0
     >>Kill |cRXP_ENEMY_Enraged Water Spirits|r
-    .complete 10672,1 << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren --Greater Felfire Diemetradon (8)
     .complete 10480,1 --Enraged Water Spirit slain (8)
-    .target Greater Felfire Diemetradon << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Enraged Water Spirit
 step
     .goto 104,51.87,18.23
@@ -421,7 +426,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 10751 >>Accept Breaching the Path
     .target Kor'kron Wind Rider
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along52
+    #completewith Along53
     >>As you go: Kill |cRXP_ENEMY_Eclipsion Cavaliers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10751,2 --Eclipsion Cavalier slain (10)
     .mob Eclipsion Cavalier
@@ -438,7 +443,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Eclipsion Spellbinder
     .mob Eclipsion Soldier
 step
-    #label Along52
+    #label Along53
     .goto 104,51.61,64.92
     >>Kill |cRXP_ENEMY_Val'zareq the Conqueror|r and loot |cRXP_LOOT_The Journal of Val'zareq|r. Use it to start the quest
     .collect 31345,1,10793 --The Journal of Val'zareq (1)
@@ -1231,10 +1236,18 @@ step
     .goto 104,71.10,80.71,40,0
     .goto 104,74.73,84.68,40,0
     >>Kill |cRXP_ENEMY_Murkblood Overseers|r
-    >>Kill |cRXP_ENEMY_Murkblood Overseer|r and loot |cRXP_LOOT_Hand of the Overseer|r
-    .complete -11082,2 --Murkblood Overseer (8)
-    .complete -11082,1 --Hand of the Overseer (1)
+    .complete 11082,2 --Murkblood Overseer (8)
     .mob Murkblood Overseer
+    .isOnQuest 11082
+step
+    #loop
+    .goto 104,69.33,80.46,0
+    .goto 104,69.33,80.46,40,0
+    .goto 104,71.10,80.71,40,0
+    >>Kill |cRXP_ENEMY_Murkblood Overseer|r and loot |cRXP_LOOT_Hand of the Overseer|r
+    .complete 11082,1 --Hand of the Overseer (1)
+    .mob Murkblood Overseer
+    .isOnQuest 11082
 step
     .goto 104,65.43,90.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mistress of the Mines|r

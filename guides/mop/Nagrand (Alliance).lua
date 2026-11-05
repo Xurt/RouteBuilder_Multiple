@@ -466,17 +466,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Boulderfist Warrior
     .mob Boulderfist Mage
 step
-    #completewith Along60
-    >>As you go: Kill |cRXP_ENEMY_Greater Windroc|r and loot |cRXP_LOOT_Flawless Greater Windroc Beak|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -10252,2 --Flawless Greater Windroc Beak (1)
-    .mob Greater Windroc
-step
-    #completewith Along60
-    >>As you go: Kill |cRXP_ENEMY_Aged Clefthoof|r and loot |cRXP_LOOT_Aged Clefthoof Blubber|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -10252,3 --Aged Clefthoof Blubber (1)
-    .mob Aged Clefthoof
-step
-    #label Along60
     .goto 107,31.01,30.98
     >>Kill |cRXP_ENEMY_Gutripper|r and loot |cRXP_LOOT_Eye of Gutripper|r
     .complete 9856,1 --Eye of Gutripper (1)
@@ -487,17 +476,20 @@ step
     .complete 10252,2 --Flawless Greater Windroc Beak (1)
     .mob Greater Windroc
     .isOnQuest 10252
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 107,30.84,42.36
+    >>Kill |cRXP_ENEMY_Ortor of Murkblood|r
+    .complete 9873,1 --Ortor of Murkblood slain (1)
+    .mob Ortor of Murkblood
 step
     #loop
     .goto 107,30.99,41.76,0
     .goto 107,30.99,41.76,40,0
     .goto 107,32.22,46.77,40,0
-    >>Kill |cRXP_ENEMY_Ortor of Murkblood|r << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>Kill |cRXP_ENEMY_Murkblood Putrifiers|r
-    .complete 9873,1 << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren --Ortor of Murkblood slain (1)
-    .complete -9862,1 --Murkblood Putrifier slain (5)
-    .mob Ortor of Murkblood << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .complete 9862,1 --Murkblood Putrifier slain (5)
     .mob Murkblood Putrifier
+    .isOnQuest 9862
 step
     #loop
     .goto 107,33.41,51.36,0
@@ -623,23 +615,23 @@ step
     .complete 9849,1 --Minion of Gurok slain (30)
     .mob Minion of Gurok
 step
-    #completewith Along81
+    #completewith Along82
     >>As you go: Kill |cRXP_ENEMY_Voidspawns|r. |cRXP_WARN_Anything left is finished later|r
     .complete 9925,1 --Voidspawn slain (8)
     .mob Voidspawn
 step
-    #completewith Along80
+    #completewith Along81
     >>As you go: Kill |cRXP_ENEMY_Vir'aani Raiders|r. Loot them for |cRXP_LOOT_Oshu'gun Crystal Fragment|r. It can also be picked up from |cRXP_PICK_Oshu'gun Crystal Fragment|r on the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 9882,1 --Oshu'gun Crystal Fragment (10)
     .mob Vir'aani Raider
 step
-    #label Along80
+    #label Along81
     .goto 107,41.51,71.42
     >>Kill |cRXP_ENEMY_Gava'xi|r
     .complete 9900,1 --Gava'xi slain (1)
     .mob Gava'xi
 step
-    #label Along81
+    #label Along82
     #loop
     .goto 107,38.71,71.03,0
     .goto 107,38.71,71.03,40,0
@@ -668,17 +660,19 @@ step
     .turnin 9882 >>Turn in Stealing from Thieves
     .target Gezhe
 step
-    #loop
-    .goto 107,36.49,63.06,0
-    .goto 107,36.49,63.06,40,0
-    .goto 107,38.17,60.33,40,0
-    .goto 107,41.40,61.57,40,0
+    .goto 107,41.40,61.57
     >>Kill |cRXP_ENEMY_Banthar|r and loot |cRXP_LOOT_Horn of Banthar|r
-    >>Kill |cRXP_ENEMY_Aged Clefthoof|r and loot |cRXP_LOOT_Aged Clefthoof Blubber|r
     .complete 9851,1 --Horn of Banthar (1)
-    .complete -10252,3 --Aged Clefthoof Blubber (1)
     .mob Banthar
+step
+    #loop
+    .goto 107,38.17,60.33,0
+    .goto 107,38.17,60.33,40,0
+    .goto 107,36.49,63.06,40,0
+    >>Kill |cRXP_ENEMY_Aged Clefthoof|r and loot |cRXP_LOOT_Aged Clefthoof Blubber|r
+    .complete 10252,3 --Aged Clefthoof Blubber (1)
     .mob Aged Clefthoof
+    .isOnQuest 10252
 step
     .goto 107,51.82,56.84
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nitrin the Learned|r
@@ -783,7 +777,7 @@ step
     .target Elementalist Morgh
     .isOnQuest 9862
 step
-    #completewith Along102
+    #completewith Along104
     >>As you go: Kill |cRXP_ENEMY_Warmaul Reavers|r, |cRXP_ENEMY_Warmaul Warlocks|r, |cRXP_ENEMY_Warmaul Shamans|r and |cRXP_ENEMY_Warmaul Brutes|r. Loot them for |cRXP_LOOT_Warmaul Skull|r. Kill |cRXP_ENEMY_Warmaul Reavers|r and |cRXP_ENEMY_Warmaul Shamans|r. |cRXP_WARN_Anything left is finished later|r
     .collect 24502,1,9853,1 --Warmaul Skull (1)
     .complete 9931,1 --Warmaul Reaver (8)
@@ -792,7 +786,7 @@ step
     .mob Warmaul Shaman
     .mob Warmaul Brute
 step
-    #label Along102
+    #label Along104
     .goto 107,46.57,24.42
     >>Lantresor of the Blade at the Burning Blade Ruins in Nagrand wants you to use the Damp Woolen Blanket at the Blazing Warmaul Pyre in the Laughing Skull Courtyard to signal his ogres.
     .complete 9932,1 --Warmaul Pyre Credit Marker

@@ -1,5 +1,5 @@
 Dragonblight - Horde
-Guide "72-75 Dragonblight" in group "Zone Routes (Horde)": 349 steps, 295 stops
+Guide "72-75 Dragonblight" in group "Zone Routes (Horde)": 348 steps, 295 stops
 Written to guides/mop/Dragonblight (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -25,7 +25,7 @@ These pickups are planned within about half a level of the level they unlock at,
 The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
   level 74 for The Magical Kingdom of Dalaran (Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
 4 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-20 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+19 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 11 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 12 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 

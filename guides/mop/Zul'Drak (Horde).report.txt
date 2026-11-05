@@ -1,5 +1,5 @@
 Zul'Drak - Horde - part 1 of 3, planned from level 74
-Guide "74-78 Zul'Drak" in group "Zone Routes (Horde)": this part has 173 steps, 156 stops
+Guide "74-78 Zul'Drak" in group "Zone Routes (Horde)": this part has 177 steps, 164 stops
 Written to guides/mop/Zul'Drak (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -79,7 +79,7 @@ Step order kept from the last build (locks folder): 174 steps kept, 8 new ones s
   everyone (quests that depend on other zones): 96 more tasks; their whole route comes to 34,400 yd; ends at level 74.7; 2 ORDER PROBLEMS; at its hardest you are 1.6 levels below the mobs
 Hearthstone: set at Fala Softhoof (Fala Softhoof's inn); 0 hearth steps in the guide.
 3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-8 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (63)
@@ -211,7 +211,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Zul'Drak - Horde - part 2 of 3, planned from level 77
-Guide "74-78 Zul'Drak" in group "Zone Routes (Horde)": this part has 102 steps, 100 stops
+Guide "74-78 Zul'Drak" in group "Zone Routes (Horde)": this part has 103 steps, 102 stops
 Written to guides/mop/Zul'Drak (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -232,7 +232,6 @@ Step order kept from the last build (locks folder): 95 steps kept, 6 new ones sl
   everyone: 18 tasks, 413 yd on foot; ends at level 77.2
   everyone (quests that depend on other zones): 83 more tasks; their whole route comes to 25,054 yd; ends at level 77.2
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
-1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (32)
 ------------------------
@@ -288,7 +287,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Zul'Drak - Horde - part 3 of 3, planned from level 80
-Guide "74-78 Zul'Drak" in group "Zone Routes (Horde)": this part has 12 steps, 10 stops
+Guide "74-78 Zul'Drak" in group "Zone Routes (Horde)": this part has 12 steps, 11 stops
 Written to guides/mop/Zul'Drak (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -308,7 +307,6 @@ Planned from level 80. Distances are straight lines, so real running is longer; 
 Step order kept from the last build (locks folder): 11 steps kept, 0 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
   everyone: 11 tasks, 3,550 yd on foot; ends at level 80.0
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
-1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (2)
 -----------------------

@@ -1,5 +1,5 @@
 The Jade Forest - Horde - part 1 of 2, planned from level 85
-Guide "85-90 The Jade Forest" in group "Zone Routes (Horde)": this part has 360 steps, 320 stops
+Guide "85-90 The Jade Forest" in group "Zone Routes (Horde)": this part has 382 steps, 352 stops
 Written to guides/mop/The Jade Forest (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -24,7 +24,7 @@ These pickups are planned within about half a level of the level they unlock at,
 The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
   level 85 for Flying Colors
 2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-21 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+7 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 8 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 7 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 
@@ -195,7 +195,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 The Jade Forest - Horde - part 2 of 2, planned from level 88
-Guide "85-90 The Jade Forest" in group "Zone Routes (Horde)": this part has 30 steps, 25 stops
+Guide "85-90 The Jade Forest" in group "Zone Routes (Horde)": this part has 33 steps, 30 stops
 Written to guides/mop/The Jade Forest (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -215,7 +215,7 @@ Planned from level 88. Distances are straight lines, so real running is longer; 
 Step order kept from the last build (locks folder): 28 steps kept, 4 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
   everyone: 32 tasks, 2,523 yd on foot; ends at level 88.0; at its hardest you are 2.0 levels below the mobs
 Hearthstone: set at Brewmaster Lei Kanglei (Brewmaster Lei Kanglei's inn); 0 hearth steps in the guide.
-3 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (12)
 ------------------------

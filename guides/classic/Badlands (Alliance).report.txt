@@ -83,7 +83,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Badlands - Alliance - part 2 of 3, planned from level 38
-Guide "35-45 Badlands" in group "Zone Routes (Alliance)": this part has 21 steps, 19 stops
+Guide "35-45 Badlands" in group "Zone Routes (Alliance)": this part has 23 steps, 20 stops
 Written to guides/classic/Badlands (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -103,6 +103,7 @@ Step order kept from the last build (locks folder): 21 steps kept, 1 new ones sl
   everyone: 16 tasks, 5,845 yd on foot; ends at level 38.2
   everyone (quests that depend on other zones): 6 more tasks; their whole route comes to 6,551 yd; ends at level 38.2
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (11)
 ------------------------
@@ -147,7 +148,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Badlands - Alliance - part 3 of 3, planned from level 41
-Guide "35-45 Badlands" in group "Zone Routes (Alliance)": this part has 24 steps, 22 stops
+Guide "35-45 Badlands" in group "Zone Routes (Alliance)": this part has 27 steps, 25 stops
 Written to guides/classic/Badlands (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

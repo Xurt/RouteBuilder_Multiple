@@ -1,5 +1,5 @@
 Western Plaguelands - Alliance
-Guide "35-40 Western Plaguelands" in group "Zone Routes (Alliance)": 130 steps, 117 stops
+Guide "35-40 Western Plaguelands" in group "Zone Routes (Alliance)": 135 steps, 122 stops
 Written to guides/mop/Western Plaguelands (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

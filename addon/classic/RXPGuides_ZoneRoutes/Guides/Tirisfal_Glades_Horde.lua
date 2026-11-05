@@ -1691,36 +1691,50 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Deathguard Linnea|r
     .accept 356 >>Accept Rear Guard Patrol
     .target Deathguard Linnea
+step << Undead Mage/Troll Mage
+    .goto 1420/0,-471.41,1969.45
+    >>Pick up |cRXP_PICK_Balnir Snapdragons|r from the ground
+    .complete 1882,1 --Balnir Snapdragons (1)
+    .isOnQuest 1882
 step
     #loop
     .goto 1420/0,-356.18,2015.54,0
     .goto 1420/0,-356.18,2015.54,40,0
-    .goto 1420/0,-438.87,1983.31,40,0
-    >>Pick up |cRXP_PICK_Balnir Snapdragons|r from the ground << Undead Mage/Troll Mage
+    .goto 1420/0,-434.36,2026.69,40,0
     >>Kill |cRXP_ENEMY_Bleeding Horrors|r
     >>Kill |cRXP_ENEMY_Wandering Spirits|r
-    .complete -1882,1 << Undead Mage/Troll Mage --Balnir Snapdragons (1)
     .complete 356,1 --Bleeding Horror slain (8)
     .complete 356,2 --Wandering Spirit slain (8)
     .mob Bleeding Horror
     .mob Wandering Spirit
 step
-    #loop
-    .goto 1420/0,-440.68,2144.47,0
-    .goto 1420/0,-440.68,2144.47,40,0
-    .goto 1420/0,-520.66,2169.18,40,0
-    .goto 1420/0,-625.95,2124.59,40,0
+    .goto 1420/0,-528.35,2146.58
     >>Kill |cRXP_ENEMY_Captain Vachon|r
-    >>Kill |cRXP_ENEMY_Scarlet Friars|r
-    >>Kill |cRXP_ENEMY_Scarlet Warriors|r, |cRXP_ENEMY_Scarlet Missionaries|r, |cRXP_ENEMY_Scarlet Zealots|r and |cRXP_ENEMY_Scarlet Friars|r. Loot them for |cRXP_LOOT_Scarlet Insignia Ring|r
-    .complete -371,1 --Captain Vachon slain (1)
-    .complete -371,2 --Scarlet Friar slain (5)
-    .complete -374,1 --Scarlet Insignia Ring (10)
+    .complete 371,1 --Captain Vachon slain (1)
     .mob Captain Vachon
+    .isOnQuest 371
+step
+    #loop
+    .goto 1420/0,-530.15,2143.57,0
+    .goto 1420/0,-530.15,2143.57,40,0
+    .goto 1420/0,-653.97,2237.86,40,0
+    >>Kill |cRXP_ENEMY_Scarlet Friars|r
+    .complete 371,2 --Scarlet Friar slain (5)
     .mob Scarlet Friar
+    .isOnQuest 371
+step
+    #loop
+    .goto 1420/0,-520.66,2169.18,0
+    .goto 1420/0,-520.66,2169.18,40,0
+    .goto 1420/0,-440.68,2144.47,40,0
+    .goto 1420/0,-625.95,2124.59,40,0
+    >>Kill |cRXP_ENEMY_Scarlet Warriors|r, |cRXP_ENEMY_Scarlet Missionaries|r, |cRXP_ENEMY_Scarlet Zealots|r and |cRXP_ENEMY_Scarlet Friars|r. Loot them for |cRXP_LOOT_Scarlet Insignia Ring|r
+    .complete 374,1 --Scarlet Insignia Ring (10)
     .mob Scarlet Warrior
     .mob Scarlet Missionary
     .mob Scarlet Zealot
+    .mob Scarlet Friar
+    .isOnQuest 374
 step
     #loop
     .goto 1420/0,-812.57,2302.03,0
@@ -1773,13 +1787,17 @@ step
     .vendor >>|cRXP_BUY_Sell your junk, then restock on food if necessary|r << Rogue/Warrior
     .target Innkeeper Renee
 step
-    .goto 1420/0,-556.36,3080.76
+    .goto 1420/0,-559.98,3079.86
     >>Kill |cRXP_ENEMY_Captain Melrache|r
-    >>Kill |cRXP_ENEMY_Scarlet Bodyguards|r
-    .complete -372,1 --Captain Melrache slain (1)
-    .complete -372,2 --Scarlet Bodyguard slain (2)
+    .complete 372,1 --Captain Melrache slain (1)
     .mob Captain Melrache
+    .isOnQuest 372
+step
+    .goto 1420/0,-557.27,3076.84
+    >>Kill |cRXP_ENEMY_Scarlet Bodyguards|r
+    .complete 372,2 --Scarlet Bodyguard slain (2)
     .mob Scarlet Bodyguard
+    .isOnQuest 372
 step
     .goto 1420/0,295.42,2278.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Executor Zygand|r
@@ -1852,15 +1870,25 @@ step
     .isQuestComplete 492
     .target Captured Mountaineer
 step << Warrior
-    .goto 1420/0,689.01,3019.91
+    .goto 1420/0,698.04,3063.59
     >>Open the |cRXP_PICK_Agamand Weapon Rack|r. Loot it for |cRXP_LOOT_Agamand Family Axe|r
+    .complete 1821,1 --Agamand Family Axe (1)
+    .isOnQuest 1821
+step << Warrior
+    .goto 1420/0,689.01,3019.91
     >>Open the |cRXP_PICK_Agamand Weapon Rack|r. Loot it for |cRXP_LOOT_Agamand Family Dagger|r
+    .complete 1821,2 --Agamand Family Dagger (1)
+    .isOnQuest 1821
+step << Warrior
+    .goto 1420/0,653.76,3022.92
     >>Open the |cRXP_PICK_Agamand Weapon Rack|r. Loot it for |cRXP_LOOT_Agamand Family Mace|r
+    .complete 1821,3 --Agamand Family Mace (1)
+    .isOnQuest 1821
+step << Warrior
+    .goto 1420/0,653.76,3058.77
     >>Open the |cRXP_PICK_Agamand Weapon Rack|r. Loot it for |cRXP_LOOT_Agamand Family Sword|r
-    .complete -1821,1 --Agamand Family Axe (1)
-    .complete -1821,2 --Agamand Family Dagger (1)
-    .complete -1821,3 --Agamand Family Mace (1)
-    .complete -1821,4 --Agamand Family Sword (1)
+    .complete 1821,4 --Agamand Family Sword (1)
+    .isOnQuest 1821
 step << Warrior
     #completewith next
     .hs >>Hearth to Innkeeper Renee's inn. |cRXP_WARN_Walk instead if you are already nearby|r
@@ -2264,20 +2292,30 @@ step
     .target Magistrate Sevren
     .isQuestTurnedIn 355 --any of: Speak with Sevren
 step
-    #loop
-    .goto 1420/0,559.77,2947.91,0
-    .goto 1420/0,559.77,2947.91,40,0
-    .goto 1420/0,669.58,3028.04,40,0
-    .goto 1420/0,747.75,2961.46,40,0
+    .goto 1420/0,646.98,3043.71
     >>Kill |cRXP_ENEMY_Captain Dargol|r and loot |cRXP_LOOT_Dargol's Skull|r
-    >>Kill |cRXP_ENEMY_Wailing Ancestors|r
-    >>Kill |cRXP_ENEMY_Rotting Ancestors|r
-    .complete -408,3 --Dargol's Skull (1)
-    .complete -408,1 --Wailing Ancestor slain (8)
-    .complete -408,2 --Rotting Ancestor slain (8)
+    .complete 408,3 --Dargol's Skull (1)
     .mob Captain Dargol
+    .isOnQuest 408
+step
+    #loop
+    .goto 1420/0,684.94,3036.78,0
+    .goto 1420/0,684.94,3036.78,40,0
+    .goto 1420/0,559.77,2947.91,40,0
+    >>Kill |cRXP_ENEMY_Wailing Ancestors|r
+    .complete 408,1 --Wailing Ancestor slain (8)
     .mob Wailing Ancestor
+    .isOnQuest 408
+step
+    #loop
+    .goto 1420/0,672.74,3043.40,0
+    .goto 1420/0,672.74,3043.40,40,0
+    .goto 1420/0,786.16,2976.23,40,0
+    .goto 1420/0,837.22,2874.10,40,0
+    >>Kill |cRXP_ENEMY_Rotting Ancestors|r
+    .complete 408,2 --Rotting Ancestor slain (8)
     .mob Rotting Ancestor
+    .isOnQuest 408
 step
     .goto 1420/0,265.15,2305.94
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magistrate Sevren|r

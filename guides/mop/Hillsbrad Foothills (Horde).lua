@@ -253,36 +253,44 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 28199 >>Accept For Science!
     .target Flesh-Shaper Arnauld
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along37
+    #completewith Along38
     >>As you go: Kill |cRXP_ENEMY_Risen Hillsbrad Farmers|r and |cRXP_ENEMY_Risen Hillsbrad Peasants|r. Loot them for |cRXP_LOOT_Flesh Sample|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28199,1 --Flesh Sample (6)
     .mob Risen Hillsbrad Farmer
     .mob Risen Hillsbrad Peasant
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along35
+    #completewith Along36
     >>As you go: Kill |cRXP_ENEMY_Citizen Wilkes|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28197,1 --Citizen Wilkes slain (1)
     .mob Citizen Wilkes
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along35
     .goto 25,39.72,63.04
     >>Click the |cRXP_PICK_Shovel|r
     .accept 28189 >>Accept Do the Right Thing
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along39
+    #completewith Along40
     >>As you go: Kill |cRXP_ENEMY_Clerk Horrace Whitesteed|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28197,2 --Clerk Horrace Whitesteed slain (1)
     .mob Clerk Horrace Whitesteed
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along36
     .goto 25,39.25,64.25
     >>Interact with |cRXP_FRIENDLY_Human Seedlings|r
-    >>Kill |cRXP_ENEMY_Citizen Wilkes|r
     .complete 28189,1 --Human Seedling (15)
-    .complete 28197,1 --Citizen Wilkes slain (1)
     .target Human Seedling
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 25,39.18,63.69
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
+    .turnin 28189 >>Turn in Do the Right Thing while you are here
+    .isQuestComplete 28189
+    .target ?
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 25,38.99,64.75
+    >>Kill |cRXP_ENEMY_Citizen Wilkes|r
+    .complete 28197,1 --Citizen Wilkes slain (1)
     .mob Citizen Wilkes
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along37
+    #label Along38
     .goto 25,39.18,63.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
     .turnin 28189 >>Turn in Do the Right Thing
@@ -297,7 +305,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Risen Hillsbrad Farmer
     .mob Risen Hillsbrad Peasant
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along39
+    #label Along40
     .goto 25,38.16,63.21
     >>Kill |cRXP_ENEMY_Clerk Horrace Whitesteed|r and loot |cRXP_LOOT_The Battle for Hillsbrad|r. Use it to start the quest
     .collect 63250,1,28196 --The Battle for Hillsbrad (1)
@@ -408,7 +416,7 @@ step
     .accept 28324 >>Accept Studies in Lethality
     .target Serge Hinott
 step
-    #completewith Along60
+    #completewith Along61
     >>As you go: Pick up |cRXP_PICK_Used Blight Canister|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 28325,1 --Used Blight Canister (8)
 step
@@ -434,7 +442,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .complete 28329,1 --Angry Blight Slime slain (5)
     .mob Angry Blight Slime
 step
-    #label Along60
+    #label Along61
     .goto 25,49.28,71.16
     >>Interact with |cRXP_FRIENDLY_Blight Slime|r
     .complete 28324,1 --Blight Slime
@@ -447,12 +455,12 @@ step
     >>Pick up |cRXP_PICK_Used Blight Canister|r from the ground
     .complete 28325,1 --Used Blight Canister (8)
 step
-    #completewith Along62
+    #completewith Along63
     >>As you go: Kill |cRXP_ENEMY_Bloodfang Forsaken Hunters|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28332,1 --Bloodfang Forsaken Hunter (15)
     .mob Bloodfang Forsaken Hunter
 step
-    #label Along62
+    #label Along63
     .goto 25,49.10,66.36
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Serge Hinott|r
     .turnin 28329 >>Turn in Angry Scrubbing Bubbles << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
@@ -462,15 +470,20 @@ step
     .target Serge Hinott
 step
     #loop
-    .goto 25,51.35,65.60,0
-    .goto 25,51.35,65.60,40,0
-    .goto 25,48.34,61.82,40,0
+    .goto 25,46.62,67.99,0
+    .goto 25,46.62,67.99,40,0
     .goto 25,44.56,68.13,40,0
     >>Kill |cRXP_ENEMY_Bloodfang Forsaken Hunters|r
-    >>Interact with |cRXP_FRIENDLY_Dark Rangers|r
     .complete 28332,1 --Bloodfang Forsaken Hunter (15)
-    .complete 28331,1 --Dark Ranger (8)
     .mob Bloodfang Forsaken Hunter
+step
+    #loop
+    .goto 25,45.72,70.04,0
+    .goto 25,45.72,70.04,40,0
+    .goto 25,45.79,67.01,40,0
+    .goto 25,48.32,63.45,40,0
+    >>Interact with |cRXP_FRIENDLY_Dark Rangers|r
+    .complete 28331,1 --Dark Ranger (8)
     .target Dark Ranger
 step
     .goto 25,47.86,72.23
@@ -535,10 +548,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Kingslayer Orkus
     .isQuestTurnedIn 28348 --any of: Stormpike Rendezvous
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along77
-    >>As you go: Pick up |cRXP_PICK_Mudsnout Blossom|r from the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -28354,1 --Mudsnout Blossom (8)
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,57.80,74.64
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mudsnout Gnoll|r
     .accept 28355 >>Accept Terrible Little Creatures
@@ -550,7 +559,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Mudsnout Shaman
     .mob Mudsnout Gnoll
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along77
     .goto 25,58.47,73.76
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
     .turnin 28355 >>Turn in Terrible Little Creatures
@@ -690,17 +698,21 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Kingslayer Orkus
     .isQuestTurnedIn 28375 --any of: The Road to Purgation
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 25,28.21,83.73
+    >>Kill |cRXP_ENEMY_Bloodfang Sentries|r
+    .complete 28397,2 --Bloodfang Sentry (8)
+    .mob Bloodfang Sentry
+    .isOnQuest 28397
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 25,27.72,84.13,0
     .goto 25,27.72,84.13,40,0
     .goto 25,24.60,87.63,40,0
-    >>Kill |cRXP_ENEMY_Bloodfang Sentries|r
     >>Kill |cRXP_ENEMY_Stormpike Mountaineers|r and |cRXP_ENEMY_Stormpike Ram Riders|r
-    .complete -28397,2 --Bloodfang Sentry (8)
-    .complete -28397,1 --Stormpike Mountaineer (8)
-    .mob Bloodfang Sentry
+    .complete 28397,1 --Stormpike Mountaineer (8)
     .mob Stormpike Mountaineer
     .mob Stormpike Ram Rider
+    .isOnQuest 28397
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,29.22,83.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kingslayer Orkus|r
@@ -804,25 +816,41 @@ step
     .hs >>Hearth to Sergeant Hartman's inn. |cRXP_WARN_Walk instead if you are already nearby|r
     .cooldown item,6948,>0,1
 step
+    #completewith Along120
+    >>As you go: Kill |cRXP_ENEMY_Cave Yetis|r and |cRXP_ENEMY_Ferocious Yetis|r. Loot them for |cRXP_LOOT_Beating Yeti Heart|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 28484,1 --Beating Yeti Heart (12)
+    .mob Cave Yeti
+    .mob Ferocious Yeti
+step
     #loop
-    .goto 25,49.28,55.60,0
-    .goto 25,49.28,55.60,40,0
-    .goto 25,45.09,51.34,40,0
-    .goto 25,44.30,54.21,40,0
+    .goto 25,48.15,56.18,0
+    .goto 25,48.15,56.18,40,0
+    .goto 25,50.42,53.25,40,0
     >>Kill |cRXP_ENEMY_Hill Stag|r and loot |cRXP_LOOT_Juicy Stag Meat|r
+    .complete 28489,1 --Juicy Stag Meat (1)
+    .mob Hill Stag
+step
+    #label Along120
+    #loop
+    .goto 25,49.68,54.56,0
+    .goto 25,49.68,54.56,40,0
+    .goto 25,48.11,55.41,40,0
     >>Interact with |cRXP_FRIENDLY_Hill Fawns|r
+    .complete 28495,1 --Hill Fawn (10)
+    .target Hill Fawn
+step
+    #loop
+    .goto 25,46.59,54.30,0
+    .goto 25,46.59,54.30,40,0
+    .goto 25,45.01,52.26,40,0
     >>Kill |cRXP_ENEMY_Cave Yetis|r and |cRXP_ENEMY_Ferocious Yetis|r. Loot them for |cRXP_LOOT_Beating Yeti Heart|r
     >>Pick up |cRXP_PICK_Humbert's Pants|r from the ground
     >>Pick up |cRXP_PICK_Humbert's Helm|r from the ground
     >>Pick up |cRXP_PICK_Humbert's Sword|r from the ground
-    .complete 28489,1 --Juicy Stag Meat (1)
-    .complete 28495,1 --Hill Fawn (10)
     .complete 28484,1 --Beating Yeti Heart (12)
     .complete 28487,3 --Humbert's Pants (1)
     .complete 28487,2 --Humbert's Helm (1)
     .complete 28487,1 --Humbert's Sword (1)
-    .mob Hill Stag
-    .target Hill Fawn
     .mob Cave Yeti
     .mob Ferocious Yeti
 step
@@ -932,11 +960,15 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,49.62,46.61,40,0
     .goto 25,49.53,48.44,40,0
     >>Kill |cRXP_ENEMY_Stormpike Soldiers|r
-    >>Kill |cRXP_ENEMY_Captain Iceheart|r
-    .complete -28566,2 --Stormpike Soldier slain (12)
-    .complete -28566,1 --Captain Iceheart slain (1)
+    .complete 28566,2 --Stormpike Soldier slain (12)
     .mob Stormpike Soldier
+    .isOnQuest 28566
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 25,49.40,46.73
+    >>Kill |cRXP_ENEMY_Captain Iceheart|r
+    .complete 28566,1 --Captain Iceheart slain (1)
     .mob Captain Iceheart
+    .isOnQuest 28566
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,49.37,46.50
     >>Plant a Goblin Pocket-Nuke at Sofera's Naze, Corrahn's Dagger, the Headland and Gavin's Naze.
@@ -962,33 +994,29 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Lilith
     .isQuestTurnedIn 28566 --any of: Decimation
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along137
-    >>As you go: Kill |cRXP_ENEMY_Captain Crudbeard|r. Kill |cRXP_ENEMY_Drill Sergeant Magnus|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -28603,3 --Captain Crudbeard slain (1)
-    .complete -28603,2 --Drill Sergeant Magnus slain (1)
-    .mob Captain Crudbeard
-    .mob Drill Sergeant Magnus
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,44.51,49.07
     >>Kill |cRXP_ENEMY_Instructor Rufus|r
     .complete 28603,1 --Instructor Rufus slain (1)
     .mob Instructor Rufus
     .isOnQuest 28603
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along137
     .goto 25,43.87,51.00
     >>Use the Barrel of Water to Poison 30 Stormpike Trainees.
     .complete 28604,1 --Stormpike Trainee (30)
     .target Stormpike Trainee
     .isOnQuest 28604
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 25,43.43,49.92
+    .goto 25,44.08,50.47
     >>Kill |cRXP_ENEMY_Captain Crudbeard|r
-    >>Kill |cRXP_ENEMY_Drill Sergeant Magnus|r
-    .complete -28603,3 --Captain Crudbeard slain (1)
-    .complete -28603,2 --Drill Sergeant Magnus slain (1)
+    .complete 28603,3 --Captain Crudbeard slain (1)
     .mob Captain Crudbeard
+    .isOnQuest 28603
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 25,43.43,49.92
+    >>Kill |cRXP_ENEMY_Drill Sergeant Magnus|r
+    .complete 28603,2 --Drill Sergeant Magnus slain (1)
     .mob Drill Sergeant Magnus
+    .isOnQuest 28603
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,43.95,48.93
     >>Plant a Goblin Pocket-Nuke at Sofera's Naze, Corrahn's Dagger, the Headland and Gavin's Naze.
@@ -1020,12 +1048,6 @@ step
     .complete 28485,1 --Yetimus' Twisted Horn (1)
     .mob Yetimus the Yeti Lord
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along144
-    >>As you go: Kill |cRXP_ENEMY_Stormpike Engineers|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -28605,1 --Stormpike Engineer slain (10)
-    .mob Stormpike Engineer
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along144
     .goto 25,39.48,48.93
     >>Plant a Goblin Pocket-Nuke at Sofera's Naze, Corrahn's Dagger, the Headland and Gavin's Naze.
     .complete 28556,4 --Gavin's Naze Credit

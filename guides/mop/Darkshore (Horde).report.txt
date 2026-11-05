@@ -1,5 +1,5 @@
 Darkshore - Horde - part 1 of 3, planned from level 11
-Guide "11-18 Darkshore" in group "Zone Routes (Horde)": this part has 22 steps, 21 stops
+Guide "11-18 Darkshore" in group "Zone Routes (Horde)": this part has 23 steps, 22 stops
 Written to guides/mop/Darkshore (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -70,7 +70,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Darkshore - Horde - part 2 of 3, planned from level 14
-Guide "11-18 Darkshore" in group "Zone Routes (Horde)": this part has 28 steps, 24 stops
+Guide "11-18 Darkshore" in group "Zone Routes (Horde)": this part has 33 steps, 29 stops
 Written to guides/mop/Darkshore (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -91,7 +91,7 @@ Step order kept from the last build (locks folder): 30 steps kept, 0 new ones sl
   everyone: 10 tasks, 2,302 yd on foot; ends at level 14.3
   everyone (quests that depend on other zones): 20 more tasks; their whole route comes to 6,361 yd; ends at level 14.3
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
-3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (10)

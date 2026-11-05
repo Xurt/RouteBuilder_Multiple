@@ -1,5 +1,5 @@
 Gilneas - Alliance
-Guide "5-11 Gilneas" in group "Zone Routes (Alliance)": 170 steps, 122 stops
+Guide "5-11 Gilneas" in group "Zone Routes (Alliance)": 173 steps, 125 stops
 Written to guides/mop/Gilneas (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

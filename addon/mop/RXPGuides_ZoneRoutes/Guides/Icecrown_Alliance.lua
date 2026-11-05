@@ -686,20 +686,32 @@ step
     .xp <77,1
 step
     #loop
+    .goto 118,39.71,35.93,0
+    .goto 118,39.71,35.93,40,0
+    .goto 118,37.95,37.06,40,0
+    >>Kill |cRXP_ENEMY_Containment Crystals|r
+    .complete 13171,1 --Containment Crystal slain (10)
+    .mob Containment Crystal
+    .isOnQuest 13171
+step
+    #loop
     .goto 118,39.94,33.52,0
     .goto 118,39.94,33.52,40,0
-    .goto 118,40.66,37.96,40,0
-    .goto 118,37.06,43.75,40,0
-    .goto 118,37.60,40.81,40,0
-    >>Kill |cRXP_ENEMY_Containment Crystals|r
+    .goto 118,40.77,37.76,40,0
     >>Kill |cRXP_ENEMY_Restless Lookouts|r
-    >>Interact with |cRXP_FRIENDLY_Hungering Plaguehounds|r
-    .complete -13171,1 --Containment Crystal slain (10)
-    .complete -13170,1 --Restless Lookout slain (20)
-    .complete -13169,1 --Hungering Plaguehound (18)
-    .mob Containment Crystal
+    .complete 13170,1 --Restless Lookout slain (20)
     .mob Restless Lookout
+    .isOnQuest 13170
+step
+    #loop
+    .goto 118,38.59,34.82,0
+    .goto 118,38.59,34.82,40,0
+    .goto 118,38.31,39.92,40,0
+    .goto 118,37.49,42.52,40,0
+    >>Interact with |cRXP_FRIENDLY_Hungering Plaguehounds|r
+    .complete 13169,1 --Hungering Plaguehound (18)
     .target Hungering Plaguehound
+    .isOnQuest 13169
 step
     .goto 118,44.06,24.54
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Keritose Bloodblade|r
@@ -739,19 +751,30 @@ step
     .goto 118,38.68,33.52,40,0
     .goto 118,41.41,36.45,40,0
     >>Kill |cRXP_ENEMY_Restless Lookouts|r and |cRXP_ENEMY_Risen Laborers|r
-    >>Pick up |cRXP_PICK_Weeping Quarry Document|r from the ground
-    >>Pick up |cRXP_PICK_Weeping Quarry Ledger|r from the ground
-    .complete -13172,1 --Restless Lookout (8)
-    .complete -13174,1 --Weeping Quarry Document (1)
-    .complete -13174,2 --Weeping Quarry Ledger (1)
+    .complete 13172,1 --Restless Lookout (8)
     .mob Restless Lookout
     .mob Risen Laborer
+    .isOnQuest 13172
+step
+    .goto 118,39.11,33.60
+    >>Pick up |cRXP_PICK_Weeping Quarry Document|r from the ground
+    .complete 13174,1 --Weeping Quarry Document (1)
+    .isOnQuest 13174
+step
+    .goto 118,39.16,36.68
+    >>Pick up |cRXP_PICK_Weeping Quarry Ledger|r from the ground
+    .complete 13174,2 --Weeping Quarry Ledger (1)
+    .isOnQuest 13174
 step
     .goto 118,38.62,39.39
     >>Pick up |cRXP_PICK_Weeping Quarry Map|r from the ground
+    .complete 13174,3 --Weeping Quarry Map (1)
+    .isOnQuest 13174
+step
+    .goto 118,37.23,41.60
     >>Pick up |cRXP_PICK_Weeping Quarry Schedule|r from the ground
-    .complete -13174,3 --Weeping Quarry Map (1)
-    .complete -13174,4 --Weeping Quarry Schedule (1)
+    .complete 13174,4 --Weeping Quarry Schedule (1)
+    .isOnQuest 13174
 step
     .goto 118,44.06,24.54
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Keritose Bloodblade|r
@@ -785,11 +808,11 @@ step
     .accept 12982 >>Accept Ebon Blade Prisoners
     .target Vaelen the Flayed
 step
-    #completewith Along85
+    #completewith Along90
     >>As you go: Click the |cRXP_PICK_Vrykul Banner|r. |cRXP_WARN_Anything left is finished later|r
     .complete 13084,1 --Vrykul Banner
 step
-    #label Along85
+    #label Along90
     #loop
     .goto 118,40.47,23.91,0
     .goto 118,40.47,23.91,40,0
@@ -816,7 +839,7 @@ step
     .accept 13042 >>Accept Deep in the Bowels of The Underhalls
     .target The Bone Witch
 step
-    #completewith Along90
+    #completewith Along95
     >>As you go: Kill |cRXP_ENEMY_Death Knight Masters|r, |cRXP_ENEMY_Jotunheim Warriors|r, |cRXP_ENEMY_Mjordin Combatants|r and |cRXP_ENEMY_Njorndar Spear-Sisters|r. Loot them for |cRXP_LOOT_Vrykul Bones|r. |cRXP_WARN_Anything left is finished later|r
     .complete 13092,1 --Vrykul Bones (15)
     .mob Death Knight Master
@@ -836,7 +859,7 @@ step
     .complete 13042,1 --Apprentice Osterkilgr
     .target Apprentice Osterkilgr
 step
-    #label Along90
+    #label Along95
     .goto 118,34.24,36.62
     >>The Bone Witch in Njorndar Village has asked you to beat information out of Apprentice Osterkilgr concerning what Dr. Terrible is truly up to.
     .complete 13042,2 --Apprentice Osterkilgr
@@ -917,11 +940,6 @@ step
     .isQuestTurnedIn 13120 --Death's Gaze
     .xp <77,1
 step
-    #completewith Along100
-    >>As you go: Click the |cRXP_PICK_Blood Orb|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -13134,1 --Blood Orb
-step
-    #label Along100
     .goto 118,35.50,66.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Crusader Olakin Sainrith|r
     .accept 13138 >>Accept I'm Smelting... Smelting!
@@ -937,11 +955,18 @@ step
     #loop
     .goto 118,33.73,69.65,0
     .goto 118,33.73,69.65,40,0
-    .goto 118,32.07,65.05,40,0
+    .goto 118,32.98,65.48,40,0
     >>Click the |cRXP_PICK_Embalming Fluid|r
+    .complete 13134,2 --Embalming Fluid
+    .isOnQuest 13134
+step
+    #loop
+    .goto 118,31.56,68.52,0
+    .goto 118,31.56,68.52,40,0
+    .goto 118,34.08,68.50,40,0
     >>Click the |cRXP_PICK_Blood Orb|r
-    .complete -13134,2 --Embalming Fluid
-    .complete -13134,1 --Blood Orb
+    .complete 13134,1 --Blood Orb
+    .isOnQuest 13134
 step
     .goto 118,35.39,66.32
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darkrider Arly|r
@@ -1024,12 +1049,12 @@ step
     .accept 12807 >>Accept The Story Thus Far...
     .target Lord-Commander Arete
 step
-    #completewith Along118
+    #completewith Along124
     >>As you go: Kill |cRXP_ENEMY_Lord-Commander Arete|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12807,1 --Lord-Commander Arete slain (1)
     .mob Lord-Commander Arete
 step
-    #label Along118
+    #label Along124
     .goto 118,19.54,48.15
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord-Commander Arete|r
     .accept 12840 >>Accept In Strict Confidence
@@ -1051,18 +1076,23 @@ step
     #loop
     .goto 118,14.89,44.37,0
     .goto 118,14.89,44.37,40,0
-    .goto 118,13.59,43.88,40,0
-    .goto 118,7.03,41.92,40,0
-    .goto 118,12.59,47.16,40,0
+    .goto 118,13.60,48.72,40,0
+    .goto 118,7.86,43.15,40,0
     >>Kill |cRXP_ENEMY_Ravenous Jaws|r
-    >>Kill |cRXP_ENEMY_Captain Hartford|r
-    >>Kill |cRXP_ENEMY_Captain Welsington|r
     .complete 12810,1 --Ravenous Jaws slain (10)
-    .complete -12840,2 --Captain Hartford slain (1)
-    .complete -12840,1 --Captain Welsington slain (1)
     .mob Ravenous Jaws
+step
+    .goto 118,7.03,41.92
+    >>Kill |cRXP_ENEMY_Captain Hartford|r
+    .complete 12840,2 --Captain Hartford slain (1)
     .mob Captain Hartford
+    .isOnQuest 12840
+step
+    .goto 118,5.67,41.93
+    >>Kill |cRXP_ENEMY_Captain Welsington|r
+    .complete 12840,1 --Captain Welsington slain (1)
     .mob Captain Welsington
+    .isOnQuest 12840
 step
     .goto 118,17.20,56.00
     >>Kill |cRXP_ENEMY_Overthane Balargarde|r
@@ -1093,7 +1123,7 @@ step
     .complete 12847,2 --Arete's Gate Summoned Kill Credit Bunny (1)
     .isOnQuest 12847
 step
-    #completewith Along130
+    #completewith Along139
     >>As you go: Kill |cRXP_ENEMY_Onslaught Gryphon Rider|r and loot |cRXP_LOOT_Onslaught Gryphon Reins|r. |cRXP_WARN_Anything left is finished later|r
     .collect 40970,1,12814,1 --Onslaught Gryphon Reins (1)
     .mob Onslaught Gryphon Rider
@@ -1115,7 +1145,6 @@ step
     .target Lord-Commander Arete
     .isOnQuest 12847
 step
-    #label Along130
     .goto 118,9.53,47.01
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord-Commander Arete|r
     .accept 12852 >>Accept The Admiral Revealed
@@ -1123,16 +1152,20 @@ step
     .isQuestTurnedIn 12847 --any of: Second Chances
     .xp <77,1
 step
-    #loop
-    .goto 118,11.39,44.10,0
-    .goto 118,11.39,44.10,40,0
-    .goto 118,9.29,42.64,40,0
-    .goto 118,10.13,38.66,40,0
+    #label Along139
+    .goto 118,8.91,46.17
     >>Kill |cRXP_ENEMY_Grand Admiral Westwind|r
-    >>Kill |cRXP_ENEMY_Onslaught Gryphon Rider|r and loot |cRXP_LOOT_Onslaught Gryphon Reins|r
-    .complete -12852,1 --Grand Admiral Westwind slain (1)
-    .collect 40970,1,12814,1 --Onslaught Gryphon Reins (1)
+    .complete 12852,1 --Grand Admiral Westwind slain (1)
     .mob Grand Admiral Westwind
+    .isOnQuest 12852
+step
+    #loop
+    .goto 118,9.85,43.45,0
+    .goto 118,9.85,43.45,40,0
+    .goto 118,11.78,44.26,40,0
+    .goto 118,10.13,38.66,40,0
+    >>Kill |cRXP_ENEMY_Onslaught Gryphon Rider|r and loot |cRXP_LOOT_Onslaught Gryphon Reins|r
+    .collect 40970,1,12814,1 --Onslaught Gryphon Reins (1)
     .mob Onslaught Gryphon Rider
 step
     .goto 118,19.54,48.15
@@ -1346,23 +1379,41 @@ step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
     .complete 13294,1 --Pustulant Spine (5)
     .mob Pustulent Horror
 step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
-    #loop
-    .goto 118,67.50,64.66,0
-    .goto 118,67.50,64.66,40,0
-    .goto 118,69.62,64.19,40,0
-    .goto 118,67.98,68.54,40,0
-    >>Pick up |cRXP_PICK_Abandoned Helm|r from the ground
-    >>Kill |cRXP_ENEMY_Hulking Abomination|r and loot |cRXP_LOOT_Chilled Abomination Guts|r
-    >>Interact with |cRXP_FRIENDLY_Risen Alliance Soldiers|r
-    >>Pick up |cRXP_PICK_Pile of Bones|r from the ground
-    >>Pick up |cRXP_PICK_Abandoned Armor|r from the ground
-    .collect 43610,1,13291,1 --Abandoned Helm (1)
-    .collect 43966,1,13288,1 --Chilled Abomination Guts (1)
-    .complete 13288,3 --Risen Alliance Soldier (15)
+    #completewith Along173
+    >>As you go: Pick up |cRXP_PICK_Pile of Bones|r from the ground. Pick up |cRXP_PICK_Abandoned Armor|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .collect 43609,1,13291,1 --Pile of Bones (1)
     .collect 43616,1,13291,1 --Abandoned Armor (1)
+step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
+    #loop
+    .goto 118,68.18,64.49,0
+    .goto 118,68.18,64.49,40,0
+    .goto 118,70.46,63.80,40,0
+    .goto 118,67.80,68.08,40,0
+    >>Pick up |cRXP_PICK_Abandoned Helm|r from the ground
+    >>Kill |cRXP_ENEMY_Hulking Abomination|r and loot |cRXP_LOOT_Chilled Abomination Guts|r
+    .collect 43610,1,13291,1 --Abandoned Helm (1)
+    .collect 43966,1,13288,1 --Chilled Abomination Guts (1)
     .mob Hulking Abomination
+step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
+    #label Along173
+    #loop
+    .goto 118,69.00,65.40,0
+    .goto 118,69.00,65.40,40,0
+    .goto 118,70.80,67.20,40,0
+    .goto 118,67.40,68.20,40,0
+    >>Interact with |cRXP_FRIENDLY_Risen Alliance Soldiers|r
+    .complete 13288,3 --Risen Alliance Soldier (15)
     .target Risen Alliance Soldier
+step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
+    #loop
+    .goto 118,68.71,68.49,0
+    .goto 118,68.71,68.49,40,0
+    .goto 118,67.44,64.02,40,0
+    .goto 118,69.89,63.29,40,0
+    >>Pick up |cRXP_PICK_Pile of Bones|r from the ground
+    >>Pick up |cRXP_PICK_Abandoned Armor|r from the ground
+    .collect 43609,1,13291,1 --Pile of Bones (1)
+    .collect 43616,1,13291,1 --Abandoned Armor (1)
 step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
     .goto 118,67.70,63.95
     >>Kill |cRXP_ENEMY_Frostbrood Skytalons|r
@@ -1974,13 +2025,6 @@ step
     .isQuestTurnedIn 13155 --any of: Vereth the Cunning
     .xp <77,1
 step
-    #completewith Along234
-    >>As you go: Open the |cRXP_PICK_Malykriss Furnace|r. Loot it for |cRXP_LOOT_Smelted Metal Bar|r. Kill |cRXP_ENEMY_Skeletal Runesmiths|r. Loot them for |cRXP_LOOT_Runed Saronite Plate|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -13138,1 --Smelted Metal Bar (1)
-    .complete -13140,1 --Runed Saronite Plate (5)
-    .mob Skeletal Runesmith
-step
-    #label Along234
     #loop
     .goto 118,55.69,72.52,0
     .goto 118,55.69,72.52,40,0
@@ -2004,18 +2048,25 @@ step
     .isQuestTurnedIn 13143 --any of: New Recruit
     .xp <77,1
 step
-    #loop
-    .goto 118,57.93,70.77,0
-    .goto 118,57.93,70.77,40,0
-    .goto 118,58.60,73.73,40,0
+    .goto 118,57.85,74.37
     >>Open the |cRXP_PICK_Malykriss Furnace|r. Loot it for |cRXP_LOOT_Smelted Metal Bar|r
+    .complete 13138,1 --Smelted Metal Bar (1)
+    .isOnQuest 13138
+step
+    #loop
+    .goto 118,58.64,73.98,0
+    .goto 118,58.64,73.98,40,0
+    .goto 118,57.93,70.77,40,0
     >>Kill |cRXP_ENEMY_Skeletal Runesmiths|r. Loot them for |cRXP_LOOT_Runed Saronite Plate|r
-    >>Kill |cRXP_ENEMY_Malykriss Runeworks Bunny|r
-    .complete -13138,1 --Smelted Metal Bar (1)
-    .complete -13140,1 --Runed Saronite Plate (5)
-    .complete -13145,4 --Malykriss Runeworks Bunny slain (1)
+    .complete 13140,1 --Runed Saronite Plate (5)
     .mob Skeletal Runesmith
+    .isOnQuest 13140
+step
+    .goto 118,59.02,74.49
+    >>Kill |cRXP_ENEMY_Malykriss Runeworks Bunny|r
+    .complete 13145,4 --Malykriss Runeworks Bunny slain (1)
     .mob Malykriss Runeworks Bunny
+    .isOnQuest 13145
 step
     .goto 118,56.17,79.62
     >>Kill |cRXP_ENEMY_Malykriss Altar of Sacrifice Bunny|r
@@ -2044,11 +2095,6 @@ step
     .isQuestTurnedIn 13140 --The Runesmiths of Malykriss
     .xp <77,1
 step
-    #completewith Along244
-    >>As you go: Kill |cRXP_ENEMY_Doctor Sabnok|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -13152,2 --Doctor Sabnok slain (1)
-    .mob Doctor Sabnok
-step
     .goto 118,35.50,66.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Crusader Olakin Sainrith|r
     .accept 13211 >>Accept By Fire Be Purged
@@ -2064,7 +2110,6 @@ step
     .mob Festering Corpse
     .isOnQuest 13211
 step
-    #label Along244
     .goto 118,35.91,67.05
     >>Interact with |cRXP_FRIENDLY_"Patches"|r
     .complete 13152,1 --"Patches"
@@ -2218,11 +2263,15 @@ step
 step
     .goto 118,60.58,68.75
     >>Kill |cRXP_ENEMY_Malykriss Icy Lookout Bunny|r
-    >>Kill |cRXP_ENEMY_Malykriss Blood Forge Bunny|r
-    .complete -13145,3 --Malykriss Icy Lookout Bunny slain (1)
-    .complete -13145,2 --Malykriss Blood Forge Bunny slain (1)
+    .complete 13145,3 --Malykriss Icy Lookout Bunny slain (1)
     .mob Malykriss Icy Lookout Bunny
+    .isOnQuest 13145
+step
+    .goto 118,58.09,70.92
+    >>Kill |cRXP_ENEMY_Malykriss Blood Forge Bunny|r
+    .complete 13145,2 --Malykriss Blood Forge Bunny slain (1)
     .mob Malykriss Blood Forge Bunny
+    .isOnQuest 13145
 step
     .goto 118,54.15,71.18
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vereth the Cunning|r
@@ -2239,19 +2288,29 @@ step
     .isQuestTurnedIn 13145 --any of: The Vile Hold
     .xp <77,1
 step
-    #loop
-    .goto 118,59.65,72.76,0
-    .goto 118,59.65,72.76,40,0
-    .goto 118,58.34,76.78,40,0
+    .goto 118,57.41,75.84
     >>Kill |cRXP_ENEMY_Scourge Bombs|r
-    >>Kill |cRXP_ENEMY_Iceskin Sentries|r
-    >>Kill |cRXP_ENEMY_Umbral Brutes|r
-    .complete -13146,1 --Scourge Bomb slain (8)
-    .complete -13160,1 --Iceskin Sentry slain (12)
-    .complete -13147,1 --Umbral Brute slain (8)
+    .complete 13146,1 --Scourge Bomb slain (8)
     .mob Scourge Bomb
+    .isOnQuest 13146
+step
+    #loop
+    .goto 118,58.71,76.34,0
+    .goto 118,58.71,76.34,40,0
+    .goto 118,59.65,72.76,40,0
+    >>Kill |cRXP_ENEMY_Iceskin Sentries|r
+    .complete 13160,1 --Iceskin Sentry slain (12)
     .mob Iceskin Sentry
+    .isOnQuest 13160
+step
+    #loop
+    .goto 118,57.44,75.38,0
+    .goto 118,57.44,75.38,40,0
+    .goto 118,59.49,73.84,40,0
+    >>Kill |cRXP_ENEMY_Umbral Brutes|r
+    .complete 13147,1 --Umbral Brute slain (8)
     .mob Umbral Brute
+    .isOnQuest 13147
 step
     .goto 118,54.15,71.18
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vereth the Cunning|r
@@ -2357,14 +2416,39 @@ step
     .goto 118,37.00,71.20,40,0
     .goto 118,32.00,70.00,40,0
     >>Kill |cRXP_ENEMY_Corpulent Horror|r and loot |cRXP_LOOT_Olakin's Right Arm|r
-    >>Kill |cRXP_ENEMY_Corpulent Horror|r and loot |cRXP_LOOT_Olakin's Torso|r
-    >>Kill |cRXP_ENEMY_Corpulent Horror|r and loot |cRXP_LOOT_Olakin's Left Arm|r
-    >>Kill |cRXP_ENEMY_Corpulent Horror|r and loot |cRXP_LOOT_Olakin's Legs|r
-    .complete -13212,4 --Olakin's Right Arm (1)
-    .complete -13212,1 --Olakin's Torso (1)
-    .complete -13212,3 --Olakin's Left Arm (1)
-    .complete -13212,2 --Olakin's Legs (1)
+    .complete 13212,4 --Olakin's Right Arm (1)
     .mob Corpulent Horror
+    .isOnQuest 13212
+step
+    #loop
+    .goto 118,36.40,66.80,0
+    .goto 118,36.40,66.80,40,0
+    .goto 118,37.00,71.20,40,0
+    .goto 118,32.00,70.00,40,0
+    >>Kill |cRXP_ENEMY_Corpulent Horror|r and loot |cRXP_LOOT_Olakin's Torso|r
+    .complete 13212,1 --Olakin's Torso (1)
+    .mob Corpulent Horror
+    .isOnQuest 13212
+step
+    #loop
+    .goto 118,36.40,66.80,0
+    .goto 118,36.40,66.80,40,0
+    .goto 118,37.00,71.20,40,0
+    .goto 118,32.00,70.00,40,0
+    >>Kill |cRXP_ENEMY_Corpulent Horror|r and loot |cRXP_LOOT_Olakin's Left Arm|r
+    .complete 13212,3 --Olakin's Left Arm (1)
+    .mob Corpulent Horror
+    .isOnQuest 13212
+step
+    #loop
+    .goto 118,36.40,66.80,0
+    .goto 118,36.40,66.80,40,0
+    .goto 118,37.00,71.20,40,0
+    .goto 118,32.00,70.00,40,0
+    >>Kill |cRXP_ENEMY_Corpulent Horror|r and loot |cRXP_LOOT_Olakin's Legs|r
+    .complete 13212,2 --Olakin's Legs (1)
+    .mob Corpulent Horror
+    .isOnQuest 13212
 step
     .goto 118,35.39,66.32
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darkrider Arly|r
@@ -2489,20 +2573,33 @@ step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
     .isOnQuest 13337
 step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
     #loop
-    .goto 118,46.66,50.00,0
-    .goto 118,46.66,50.00,40,0
-    .goto 118,44.06,50.36,40,0
-    .goto 118,41.09,50.10,40,0
-    .goto 118,44.10,55.36,40,0
+    .goto 118,42.33,50.36,0
+    .goto 118,42.33,50.36,40,0
+    .goto 118,43.86,53.38,40,0
     >>Kill |cRXP_ENEMY_Orgrim's Hammer Scouts|r. Loot them for |cRXP_LOOT_Orgrim's Hammer Dispatch|r
-    >>Kill |cRXP_ENEMY_Scourge Banner-Bearers|r
-    >>Kill |cRXP_ENEMY_Converted Heros|r
-    .complete -13314,1 --Orgrim's Hammer Dispatch (6)
-    .complete -13334,1 --Scourge Banner-Bearer slain (5)
-    .complete -13334,2 --Converted Hero slain (20)
+    .complete 13314,1 --Orgrim's Hammer Dispatch (6)
     .mob Orgrim's Hammer Scout
+    .isOnQuest 13314
+step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
+    #loop
+    .goto 118,41.33,49.54,0
+    .goto 118,41.33,49.54,40,0
+    .goto 118,39.79,52.03,40,0
+    .goto 118,46.39,48.66,40,0
+    >>Kill |cRXP_ENEMY_Scourge Banner-Bearers|r
+    .complete 13334,1 --Scourge Banner-Bearer slain (5)
     .mob Scourge Banner-Bearer
+    .isOnQuest 13334
+step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
+    #loop
+    .goto 118,44.65,52.15,0
+    .goto 118,44.65,52.15,40,0
+    .goto 118,44.10,55.36,40,0
+    .goto 118,46.66,50.00,40,0
+    >>Kill |cRXP_ENEMY_Converted Heros|r
+    .complete 13334,2 --Converted Hero slain (20)
     .mob Converted Hero
+    .isOnQuest 13334
 step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
     #loop
     .goto 118,55.97,37.88,0
@@ -2629,31 +2726,39 @@ step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
     .isQuestTurnedIn 13335 --any of: Before the Gate of Horror
     .xp <77,1
 step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
-    #completewith Along308
-    >>As you go: Kill |cRXP_ENEMY_Harbinger of Horrors|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -13338,1 --Harbinger of Horror slain (5)
-    .mob Harbinger of Horror
-step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
-    #label Along308
-    .goto 118,47.82,68.12
+    .goto 118,49.81,66.73
     >>Open the |cRXP_PICK_Shard of Despair|r. Loot it for |cRXP_LOOT_Broken Shard of Despair|r
+    .complete 13339,2 --Broken Shard of Despair (1)
+    .isOnQuest 13339
+step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
+    .goto 118,47.82,68.12
     >>Open the |cRXP_PICK_Shard of Horror|r. Loot it for |cRXP_LOOT_Broken Shard of Horror|r
-    .complete -13339,2 --Broken Shard of Despair (1)
-    .complete -13339,1 --Broken Shard of Horror (1)
+    .complete 13339,1 --Broken Shard of Horror (1)
+    .isOnQuest 13339
+step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
+    .goto 118,45.83,69.51
+    >>Open the |cRXP_PICK_Shard of Suffering|r. Loot it for |cRXP_LOOT_Broken Shard of Suffering|r
+    .complete 13339,3 --Broken Shard of Suffering (1)
+    .isOnQuest 13339
 step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
     #loop
-    .goto 118,50.03,66.57,0
-    .goto 118,50.03,66.57,40,0
+    .goto 118,45.67,69.62,0
     .goto 118,45.67,69.62,40,0
-    .goto 118,42.86,68.94,40,0
-    >>Open the |cRXP_PICK_Shard of Suffering|r. Loot it for |cRXP_LOOT_Broken Shard of Suffering|r
+    .goto 118,41.41,69.14,40,0
+    .goto 118,50.03,66.57,40,0
     >>Kill |cRXP_ENEMY_Harbinger of Horrors|r
-    >>Kill |cRXP_ENEMY_Corp'rethar Guardians|r
-    .complete -13339,3 --Broken Shard of Suffering (1)
-    .complete -13338,1 --Harbinger of Horror slain (5)
-    .complete -13338,2 --Corp'rethar Guardian slain (5)
+    .complete 13338,1 --Harbinger of Horror slain (5)
     .mob Harbinger of Horror
+    .isOnQuest 13338
+step << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
+    #loop
+    .goto 118,44.60,69.24,0
+    .goto 118,44.60,69.24,40,0
+    .goto 118,42.86,68.94,40,0
+    >>Kill |cRXP_ENEMY_Corp'rethar Guardians|r
+    .complete 13338,2 --Corp'rethar Guardian slain (5)
     .mob Corp'rethar Guardian
+    .isOnQuest 13338
 step
     .goto 118,54.15,71.18
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vereth the Cunning|r

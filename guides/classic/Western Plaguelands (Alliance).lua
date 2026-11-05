@@ -487,14 +487,6 @@ step
     .target Nathaniel Dumah
     .isQuestComplete 5903
 step
-    #completewith Along41
-    >>As you go: Kill |cRXP_ENEMY_Skeletal Flayers|r, |cRXP_ENEMY_Skeletal Sorcerers|r, |cRXP_ENEMY_Skeletal Terrors|r and |cRXP_ENEMY_Skeletal Executioners|r. Loot them for |cRXP_LOOT_Skeletal Fragments|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -5537,1 --Skeletal Fragments (15)
-    .mob Skeletal Flayer
-    .mob Skeletal Sorcerer
-    .mob Skeletal Terror
-    .mob Skeletal Executioner
-step
     .goto 1422/0,-1697.64,1114.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marlene Redpath|r
     .accept 5153 >>Accept A Strange Historian
@@ -575,7 +567,6 @@ step
     .turnin 4972 >>Turn in Counting Out Time
     .target Chromie
 step
-    #label Along41
     .goto 1422/0,-1280.11,1452.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chromie|r
     .accept 5721 >>Accept The Battle of Darrowshire
@@ -788,11 +779,6 @@ step
     .target Commander Ashlam Valorfist
     .isQuestTurnedIn 5097 --any of: All Along the Watchtowers
 step
-    #completewith Along11
-    >>As you go: Open the |cRXP_PICK_Araj's Phylactery|r. Loot it for |cRXP_LOOT_Araj's Scarab|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -5803,1 --Araj's Scarab (1)
-step
-    #label Along11
     .goto 1422/0,-1529.94,1382.65
     >>Open the |cRXP_PICK_Araj's Phylactery|r. Loot it for |cRXP_LOOT_Araj's Phylactery Shard|r
     .complete 211,1 --Araj's Phylactery Shard (1)
@@ -822,10 +808,6 @@ step
     .complete 5803,1 --Araj's Scarab (1)
     .isOnQuest 5803
 step
-    #completewith Along18
-    >>As you go: Pick up |cRXP_PICK_Blood of Heroes|r from the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -5167,3 --Blood of Heroes (10)
-step
     #loop
     .goto 1422/0,-1552.73,1317.00,0
     .goto 1422/0,-1552.73,1317.00,40,0
@@ -847,7 +829,6 @@ step
     .turnin 5225 >>Turn in Target: Gahrron's Withering
     .isOnQuest 5225
 step
-    #label Along18
     .goto 1422/0,-2272.55,1690.53
     >>Click the |cRXP_PICK_Scourge Cauldron|r
     .accept 5226 >>Accept Return to Chillwind Camp

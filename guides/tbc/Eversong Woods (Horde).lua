@@ -711,19 +711,35 @@ step
     .use 20765
 step
     #label Drop8482x1
-    #loop
-    .goto 1941,35.39,59.14,0
-    .goto 1941,35.39,59.14,40,0
-    .goto 1941,34.27,59.98,40,0
+    .goto 1941,34.05,60.81
     >>Kill |cRXP_ENEMY_Darnassian Scouts|r
-    >>Kill |cRXP_ENEMY_Manawraiths|r
-    >>Kill |cRXP_ENEMY_Mana Stalkers|r
-    .complete -9352,1 --Intruder Defeated (8)
-    .complete -8486,1 --Manawraith slain (5)
-    .complete -8486,2 --Mana Stalker slain (5)
+    .complete 9352,1 --Intruder Defeated (8)
     .mob Darnassian Scout
+    .isOnQuest 9352
+step
+    #loop
+    .goto 1941,35.72,60.72,0
+    .goto 1941,35.72,60.72,40,0
+    .goto 1941,34.83,58.38,40,0
+    >>Kill |cRXP_ENEMY_Manawraiths|r
+    .complete 8486,1 --Manawraith slain (5)
     .mob Manawraith
+    .isOnQuest 8486
+step
+    .goto 1941,36.70,57.44
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ley-Keeper Velania|r
+    .turnin 9352 >>Turn in Darnassian Intrusions while you are here
+    .isQuestComplete 9352
+    .target Ley-Keeper Velania
+step
+    #loop
+    .goto 1941,35.32,58.39,0
+    .goto 1941,35.32,58.39,40,0
+    .goto 1941,35.90,59.96,40,0
+    >>Kill |cRXP_ENEMY_Mana Stalkers|r
+    .complete 8486,2 --Mana Stalker slain (5)
     .mob Mana Stalker
+    .isOnQuest 8486
 step
     .goto 1941,36.70,57.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ley-Keeper Velania|r
@@ -891,14 +907,14 @@ step
     .accept 8480 >>Accept Lost Armaments
     .target Velendris Whitemorn
 step
-    #completewith Along79
+    #completewith Along81
     >>As you go: Kill |cRXP_ENEMY_Wretched Thugs|r. Kill |cRXP_ENEMY_Wretched Hooligans|r. |cRXP_WARN_Anything left is finished later|r
     .complete 8892,1 --Wretched Thug slain (5)
     .complete 8892,2 --Wretched Hooligan slain (5)
     .mob Wretched Thug
     .mob Wretched Hooligan
 step
-    #label Along79
+    #label Along81
     #loop
     .goto 1941,34.05,69.14,0
     .goto 1941,34.05,69.14,40,0
@@ -992,7 +1008,7 @@ step
     .accept 9252 >>Accept Defending Fairbreeze Village
     .target Ranger Sareyn
 step
-    #completewith Along94
+    #completewith Along96
     >>As you go: Kill |cRXP_ENEMY_Rotlimb Marauders|r. |cRXP_WARN_Anything left is finished later|r
     .complete 9252,1 --Rotlimb Marauder slain (4)
     .mob Rotlimb Marauder
@@ -1029,7 +1045,7 @@ step
     .complete 8488,1 --Gharsul the Remorseless slain (1)
     .mob Gharsul the Remorseless
 step
-    #label Along94
+    #label Along96
     .goto 1941,54.28,70.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apprentice Mirveda|r
     .turnin 8488 >>Turn in Unexpected Results
@@ -1371,7 +1387,7 @@ step
     .target Magister Duskwither
     .xp <8,1
 step
-    #completewith Along120
+    #completewith Along122
     >>As you go: Kill |cRXP_ENEMY_Amani Berserkers|r. Kill |cRXP_ENEMY_Amani Axe Throwers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 8476,1 --Amani Berserker slain (5)
     .complete 8476,2 --Amani Axe Thrower slain (5)
@@ -1400,7 +1416,7 @@ step
     .use 23249
     .mob Chieftain Zul'Marosh
 step
-    #label Along120
+    #label Along122
     .goto 1941,70.53,72.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ven'jashi|r
     .turnin 8479 >>Turn in Zul'Marosh
@@ -1448,7 +1464,7 @@ step
     .accept 8894 >>Accept Cleaning up the Grounds
     .target Groundskeeper Wyllithen
 step
-    #completewith Along128
+    #completewith Along130
     >>As you go: Click the |cRXP_PICK_Duskwither Spire Power Source|r. Kill |cRXP_ENEMY_Mana Serpents|r. Kill |cRXP_ENEMY_Ether Fiends|r. |cRXP_WARN_Anything left is finished later|r
     .complete 8889,2 --Second Power Source Deactivated
     .complete 8889,3 --Third Power Source Deactivated
@@ -1461,7 +1477,7 @@ step
     >>Click the |cRXP_PICK_Duskwither Spire Power Source|r
     .complete 8889,1 --First Power Source Deactivated
 step
-    #label Along128
+    #label Along130
     .goto 1941,69.24,52.11
     >>Click the |cRXP_PICK_Magister Duskwither's Journal|r
     .accept 8891 >>Accept Abandoned Investigations
@@ -1857,12 +1873,12 @@ step
     .accept 8473 >>Accept A Somber Task
     .target Larianna Riverwind
 step
-    #completewith Along153
+    #completewith Along155
     >>As you go: Kill |cRXP_ENEMY_Withered Green Keepers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 8473,1 --Withered Green Keeper slain (10)
     .mob Withered Green Keeper
 step
-    #label Along153
+    #label Along155
     .goto 1941,34.93,84.46
     >>Kill |cRXP_ENEMY_Old Whitebark|r and loot |cRXP_LOOT_Old Whitebark's Pendant|r. Use it to start the quest
     .collect 23228,1,8474 --Old Whitebark's Pendant (1)

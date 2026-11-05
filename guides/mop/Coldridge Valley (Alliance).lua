@@ -448,11 +448,15 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .hs >>Hearth to Grundel Harkin's inn. |cRXP_WARN_Walk instead if you are already nearby|r
     .cooldown item,6948,>0,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 427,60.08,16.48
+    .goto 427,59.56,20.96
     >>Pick up |cRXP_PICK_Leftover Boar Meat|r from the ground
+    .complete 24492,3 --Leftover Boar Meat (1)
+    .isOnQuest 24492
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 427,60.08,16.48
     >>Open the |cRXP_PICK_Beer Barrel|r. Loot it for |cRXP_LOOT_Coldridge Beer Flagon|r
-    .complete -24492,3 --Leftover Boar Meat (1)
-    .complete -24492,1 --Coldridge Beer Flagon (1)
+    .complete 24492,1 --Coldridge Beer Flagon (1)
+    .isOnQuest 24492
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 427,61.60,13.16
     >>Open the |cRXP_PICK_Wolf-Hide Cloaks|r. Loot it for |cRXP_LOOT_Ragged Wolf-Hide Cloak|r

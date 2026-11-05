@@ -1,5 +1,5 @@
 Kun-Lai Summit - Alliance - part 1 of 2, planned from level 87
-Guide "87-90 Kun-Lai Summit" in group "Zone Routes (Alliance)": this part has 325 steps, 249 stops
+Guide "87-90 Kun-Lai Summit" in group "Zone Routes (Alliance)": this part has 332 steps, 254 stops
 Written to guides/mop/Kun-Lai Summit (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -29,7 +29,7 @@ The check passes at once if you are there; if you are a little behind the predic
   level 87 for Back in Yak
 7 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
 1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
-30 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+38 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 17 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 6 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 

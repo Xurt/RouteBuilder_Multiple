@@ -1,5 +1,5 @@
 Howling Fjord - Alliance - part 1 of 2, planned from level 70
-Guide "70-72 Howling Fjord" in group "Zone Routes (Alliance)": this part has 315 steps, 280 stops
+Guide "70-72 Howling Fjord" in group "Zone Routes (Alliance)": this part has 316 steps, 286 stops
 Written to guides/mop/Howling Fjord (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -21,7 +21,7 @@ Step order kept from the last build (locks folder): 0 steps kept, 403 new ones s
   everyone: 357 tasks, 52,170 yd on foot; ends at level 72.2; 2 hearths; at its hardest you are 1.1 levels below the mobs
   everyone (quests that depend on other zones): 46 more tasks; their whole route comes to 57,941 yd; ends at level 72.2; 2 hearths; 4 ORDER PROBLEMS; at its hardest you are 1.1 levels below the mobs
 Hearthstone: set at Jennifer Owings (Jennifer Owings's inn); 2 hearth steps in the guide.
-26 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+19 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 6 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
   Alpha Worg: its hand-in spot is not passed again, so the step sits at the end of the guide.
 
@@ -96,7 +96,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Howling Fjord - Alliance - part 2 of 2, planned from level 78
-Guide "70-72 Howling Fjord" in group "Zone Routes (Alliance)": this part has 19 steps, 18 stops
+Guide "70-72 Howling Fjord" in group "Zone Routes (Alliance)": this part has 21 steps, 20 stops
 Written to guides/mop/Howling Fjord (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

@@ -599,14 +599,19 @@ step
     .mob Kroshius
 step
     #loop
-    .goto 77,45.49,34.19,0
-    .goto 77,45.49,34.19,40,0
-    .goto 77,41.38,34.92,40,0
+    .goto 77,46.97,33.25,0
+    .goto 77,46.97,33.25,40,0
+    .goto 77,43.56,35.12,40,0
     >>Kill |cRXP_ENEMY_Felrot Coursers|r
-    >>Interact with |cRXP_FRIENDLY_Tainted Squirrels|r
     .complete 28360,1 --Felrot Courser slain (8)
-    .complete 28361,1 --Tainted Squirrel (6)
     .mob Felrot Courser
+step
+    #loop
+    .goto 77,44.30,33.62,0
+    .goto 77,44.30,33.62,40,0
+    .goto 77,41.38,34.92,40,0
+    >>Interact with |cRXP_FRIENDLY_Tainted Squirrels|r
+    .complete 28361,1 --Tainted Squirrel (6)
     .target Tainted Squirrel
 step
     .goto 77,43.34,30.42
@@ -889,15 +894,26 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 28334 >>Accept A Flare Fight
     .target Darla Drilldozer
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 77,52.44,16.97,0
-    .goto 77,52.44,16.97,40,0
-    .goto 77,50.64,14.74,40,0
-    >>Interact with |cRXP_FRIENDLY_Irontree Shredders|r
-    >>Kill |cRXP_ENEMY_Talonbranch Prowlers|r
-    .complete 28333,1 --Irontree Shredder (7)
+    #completewith Along110
+    >>As you go: Kill |cRXP_ENEMY_Talonbranch Prowlers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28334,1 --Talonbranch Prowler slain (8)
+    .mob Talonbranch Prowler
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along110
+    #loop
+    .goto 77,51.73,15.09,0
+    .goto 77,51.73,15.09,40,0
+    .goto 77,50.81,17.67,40,0
+    >>Interact with |cRXP_FRIENDLY_Irontree Shredders|r
+    .complete 28333,1 --Irontree Shredder (7)
     .target Irontree Shredder
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 77,50.64,14.74,0
+    .goto 77,50.64,14.74,40,0
+    .goto 77,53.54,17.71,40,0
+    >>Kill |cRXP_ENEMY_Talonbranch Prowlers|r
+    .complete 28334,1 --Talonbranch Prowler slain (8)
     .mob Talonbranch Prowler
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 77,56.33,8.18
@@ -978,15 +994,26 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 28336 >>Accept Slap and Cap
     .target Darla Drilldozer
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along123
+    >>As you go: Kill |cRXP_ENEMY_Oily Sludges|r. Loot them for |cRXP_LOOT_Crude Tarball|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 28339,1 --Crude Tarball (10)
+    .mob Oily Sludge
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along123
     #loop
     .goto 77,55.25,13.77,0
     .goto 77,55.25,13.77,40,0
-    .goto 77,53.79,17.28,40,0
+    .goto 77,54.17,18.02,40,0
     >>Interact with |cRXP_FRIENDLY_Panicking Workers|r
-    >>Kill |cRXP_ENEMY_Oily Sludges|r. Loot them for |cRXP_LOOT_Crude Tarball|r
     .complete 28336,1 --Panicking Worker (7)
-    .complete 28339,1 --Crude Tarball (10)
     .target Panicking Worker
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 77,55.85,14.56,0
+    .goto 77,55.85,14.56,40,0
+    .goto 77,53.79,17.28,40,0
+    >>Kill |cRXP_ENEMY_Oily Sludges|r. Loot them for |cRXP_LOOT_Crude Tarball|r
+    .complete 28339,1 --Crude Tarball (10)
     .mob Oily Sludge
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 77,56.33,8.18
@@ -1049,7 +1076,7 @@ step
     .accept 28366 >>Accept Disarming Bears
     .target Nafien
 step
-    #completewith Along132
+    #completewith Along135
     >>As you go: Kill |cRXP_ENEMY_Deadwood Avengers|r, |cRXP_ENEMY_Deadwood Shamans|r and |cRXP_ENEMY_Deadwood Den Watchers|r. Loot the |cRXP_PICK_Deadwood Weapon Piles|r for |cRXP_LOOT_Deadwood Weapons|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28338,1 --Deadwood Avenger (8)
     .complete 28366,1 --Deadwood Weapons (7)
@@ -1057,7 +1084,7 @@ step
     .mob Deadwood Shaman
     .mob Deadwood Den Watcher
 step
-    #label Along132
+    #label Along135
     .goto 77,64.09,10.29
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ferli|r
     .accept 28362 >>Accept Stupid Drizle!

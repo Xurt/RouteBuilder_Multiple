@@ -1,5 +1,5 @@
 Shimmering Expanse - Horde
-Guide "81-81 Shimmering Expanse" in group "Zone Routes (Horde)": 210 steps, 188 stops
+Guide "81-81 Shimmering Expanse" in group "Zone Routes (Horde)": 211 steps, 194 stops
 Written to guides/mop/Shimmering Expanse (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -20,7 +20,7 @@ Step order kept from the last build (locks folder): 225 steps kept, 0 new ones s
   everyone: 115 tasks, 17,239 yd on foot; ends at level 81.6; 2 hearths
   everyone (quests that depend on other zones): 110 more tasks; their whole route comes to 32,103 yd; ends at level 81.6; 2 hearths
 Hearthstone: set at Miriam Brassbomb (Miriam Brassbomb's inn); 2 hearth steps in the guide.
-13 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+8 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (76)
 ------------------------

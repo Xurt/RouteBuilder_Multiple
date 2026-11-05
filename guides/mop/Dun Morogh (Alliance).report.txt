@@ -1,5 +1,5 @@
 Dun Morogh - Alliance - part 1 of 2, planned from level 5
-Guide "5-10 Dun Morogh" in group "Zone Routes (Alliance)": this part has 196 steps, 156 stops
+Guide "5-10 Dun Morogh" in group "Zone Routes (Alliance)": this part has 196 steps, 161 stops
 Written to guides/mop/Dun Morogh (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -36,7 +36,7 @@ The check passes at once if you are there; if you are a little behind the predic
   level 10 for The Hunter's Path (NightElf Hunter)
 9 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
 3 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
-9 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 4 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 

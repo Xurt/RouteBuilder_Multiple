@@ -703,11 +703,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 24618 >>Accept Claim the Battle Scar
     .target Warlord Bloodhilt
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along92
-    >>As you go: Kill |cRXP_ENEMY_Awkward Gangly Orcs|r. Loot them for |cRXP_LOOT_SI:7 Briefings|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -24634,1 --SI:7 Briefings (7)
-    .mob Awkward Gangly Orc
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 199,41.64,69.42
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Crawgol|r
     .turnin 24654 >>Turn in Silithissues
@@ -732,27 +727,23 @@ step
     .target Crawgol
     .isQuestTurnedIn 24654 --any of: Silithissues
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along92
     .goto 199,42.61,70.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Calder Gray|r
     .accept 24619 >>Accept Parts-is-Parts
     .target Calder Gray
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #completewith Along93
-    >>As you go: Kill |cRXP_ENEMY_Triumph Vanguards|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -24618,1 --Triumph Vanguard slain (10)
-    .mob Triumph Vanguard
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along93
-    >>As you go: Kill |cRXP_ENEMY_Wildhammer Mercenaries|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -24631,1 --Wildhammer Mercenary slain (5)
-    .mob Wildhammer Mercenary
+    >>As you go: Loot the |cRXP_PICK_Mutilated Remains|r for |cRXP_LOOT_Severed Extremity|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 24619,1 --Severed Extremity (15)
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #label Along93
-    .goto 199,46.52,68.88
+    .goto 199,45.31,69.79
     >>Click the |cRXP_PICK_Battlescar Flagpole|r
+    .complete 24618,2 --Battlescar Flagpole
+    .isOnQuest 24618
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 199,46.54,68.87
     >>Loot the |cRXP_PICK_Mutilated Remains|r for |cRXP_LOOT_Severed Extremity|r
-    .complete -24618,2 --Battlescar Flagpole
     .complete 24619,1 --Severed Extremity (15)
 step
     .goto 199,49.09,66.88
@@ -768,12 +759,6 @@ step
     .isQuestTurnedIn 25082 --any of: Working the Bugs Out
     .xp <32,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along96
-    >>As you go: Kill |cRXP_ENEMY_Wildhammer Mercenaries|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -24631,1 --Wildhammer Mercenary slain (5)
-    .mob Wildhammer Mercenary
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along96
     #loop
     .goto 199,45.53,70.79,0
     .goto 199,45.53,70.79,40,0
@@ -783,12 +768,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Triumph Vanguard
     .isOnQuest 24618
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along97
-    >>As you go: Kill |cRXP_ENEMY_Awkward Gangly Orcs|r. Loot them for |cRXP_LOOT_SI:7 Briefings|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -24634,1 --SI:7 Briefings (7)
-    .mob Awkward Gangly Orc
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along97
     .goto 199,42.61,70.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Calder Gray|r
     .turnin 24619 >>Turn in Parts-is-Parts
@@ -830,12 +809,12 @@ step
     .accept 25102 >>Accept No Bull
     .target Hurlston Stonesthrow
 step
-    #completewith Along103
+    #completewith Along104
     >>As you go: Kill |cRXP_ENEMY_Landquaker Kodos|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25102,1 --Landquaker Kodo slain (4)
     .mob Landquaker Kodo
 step
-    #label Along103
+    #label Along104
     .goto 199,43.52,78.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_General Twinbraid|r
     .accept 26687 >>Accept Reinforcements From Theramore
@@ -861,12 +840,21 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 24621 >>Accept Smarts-is-Smarts
     .target Calder Gray
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along107
+    >>As you go: Kill |cRXP_ENEMY_Triumph Captain|r and loot |cRXP_LOOT_Fresh Brain|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 24621,1 --Fresh Brain (1)
+    .mob Triumph Captain
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along107
     .goto 199,46.42,71.83
     >>Kill |cRXP_ENEMY_Wildhammer Mercenaries|r
-    >>Kill |cRXP_ENEMY_Triumph Captain|r and loot |cRXP_LOOT_Fresh Brain|r
-    .complete -24631,1 --Wildhammer Mercenary slain (5)
-    .complete 24621,1 --Fresh Brain (1)
+    .complete 24631,1 --Wildhammer Mercenary slain (5)
     .mob Wildhammer Mercenary
+    .isOnQuest 24631
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 199,46.06,72.43
+    >>Kill |cRXP_ENEMY_Triumph Captain|r and loot |cRXP_LOOT_Fresh Brain|r
+    .complete 24621,1 --Fresh Brain (1)
     .mob Triumph Captain
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 199,42.61,70.23
@@ -903,7 +891,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 24603 >>Accept Don't Stop Bereavin'
     .target Mankrik
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along113
+    #completewith Along115
     >>As you go: Kill |cRXP_ENEMY_Razormane Pathfinders|r, |cRXP_ENEMY_Razormane Warfrenzies|r, |cRXP_ENEMY_Razormane Seers|r and |cRXP_ENEMY_Razormane Mankrik Quest Credits|r. |cRXP_WARN_Anything left is finished later|r
     .complete 24603,1 --Razormane Pathfinder (8)
     .mob Razormane Pathfinder
@@ -911,7 +899,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Razormane Seer
     .mob Razormane Mankrik Quest Credit
 step
-    #label Along113
+    #label Along115
     .goto 199,45.03,85.36
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dorn Redearth|r
     .turnin 25086 >>Turn in Firestone Point
@@ -1228,23 +1216,33 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Winnoa Pineforest
     .isQuestTurnedIn 24569 --any of: Siegebreaker
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 199,44.54,52.20
+    .goto 199,44.35,50.88
     >>Kill |cRXP_ENEMY_Krulmoo Fullmoon|r and |cRXP_ENEMY_Krulmoo's Spirit|r
-    >>Kill |cRXP_ENEMY_Dranh|r and |cRXP_ENEMY_Dranh's Spirit|r
-    >>Kill |cRXP_ENEMY_Yonada|r and |cRXP_ENEMY_Yonada's Spirit|r
-    >>Kill |cRXP_ENEMY_Omusa Thunderhorn|r and |cRXP_ENEMY_Omusa's Spirit|r
-    .complete -24573,1 --Krulmoo Fullmoon (1)
-    .complete -24573,2 --Dranh (1)
-    .complete -24573,3 --Yonada (1)
-    .complete -24573,4 --Omusa Thunderhorn (1)
+    .complete 24573,1 --Krulmoo Fullmoon (1)
     .mob Krulmoo Fullmoon
     .mob Krulmoo's Spirit
+    .isOnQuest 24573
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 199,44.54,52.20
+    >>Kill |cRXP_ENEMY_Dranh|r and |cRXP_ENEMY_Dranh's Spirit|r
+    .complete 24573,2 --Dranh (1)
     .mob Dranh
     .mob Dranh's Spirit
+    .isOnQuest 24573
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 199,44.34,52.58
+    >>Kill |cRXP_ENEMY_Yonada|r and |cRXP_ENEMY_Yonada's Spirit|r
+    .complete 24573,3 --Yonada (1)
     .mob Yonada
     .mob Yonada's Spirit
+    .isOnQuest 24573
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 199,43.69,52.34
+    >>Kill |cRXP_ENEMY_Omusa Thunderhorn|r and |cRXP_ENEMY_Omusa's Spirit|r
+    .complete 24573,4 --Omusa Thunderhorn (1)
     .mob Omusa Thunderhorn
     .mob Omusa's Spirit
+    .isOnQuest 24573
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 199,41.49,46.59
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Winnoa Pineforest|r

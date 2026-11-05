@@ -144,20 +144,11 @@ step
     .isQuestTurnedIn 3942 --any of: Linken's Memory
     .xp <47,1
 step
-    #completewith Along2
-    >>As you go: Kill |cRXP_ENEMY_Angerclaw Bears|r, |cRXP_ENEMY_Angerclaw Grizzlies|r, |cRXP_ENEMY_Angerclaw Maulers|r and |cRXP_ENEMY_Felpaw Wolfs|r. Loot them for |cRXP_LOOT_Silvery Claws|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -4084,1 --Silvery Claws (11)
-    .mob Angerclaw Bear
-    .mob Angerclaw Grizzly
-    .mob Angerclaw Mauler
-    .mob Felpaw Wolf
-step
     .goto 1448/1,-1302.91,3985.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Greta Mosshoof|r
     .accept 5155 >>Accept Forces of Jaedenar
     .target Greta Mosshoof
 step
-    #label Along2
     .goto 1448/1,-1284.51,4004.57
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Taronn Redfeather|r
     .accept 5156 >>Accept Verifying the Corruption
@@ -253,21 +244,12 @@ step
     .mob Warpwood Shredder
     .mob Dessecus
 step
-    #completewith Along15
-    >>As you go: Kill |cRXP_ENEMY_Angerclaw Bears|r, |cRXP_ENEMY_Angerclaw Grizzlies|r, |cRXP_ENEMY_Angerclaw Maulers|r and |cRXP_ENEMY_Felpaw Wolfs|r. Loot them for |cRXP_LOOT_Silvery Claws|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -4084,1 --Silvery Claws (11)
-    .mob Angerclaw Bear
-    .mob Angerclaw Grizzly
-    .mob Angerclaw Mauler
-    .mob Felpaw Wolf
-step
     .goto 1448/1,-1302.91,3985.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Greta Mosshoof|r
     .turnin 5155 >>Turn in Forces of Jaedenar
     .accept 5157 >>Accept Collection of the Corrupt Water
     .target Greta Mosshoof
 step
-    #label Along15
     .goto 1448/1,-1284.51,4004.57
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Taronn Redfeather|r
     .turnin 5156 >>Turn in Verifying the Corruption
@@ -587,12 +569,6 @@ step
     .isQuestTurnedIn 5159 --any of: Cleansed Water Returns to Felwood
     .xp <48,1
 step
-    #completewith Along13
-    >>As you go: Click the |cRXP_PICK_Brazier of Pain|r. Click the |cRXP_PICK_Brazier of Hatred|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -5165,1 --Extinguish the Brazier of Pain
-    .complete -5165,4 --Extinguish the Brazier of Hatred
-step
-    #label Along13
     .goto 1448/1,-440.41,5006.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captured Arko'narin|r
     .accept 5203 >>Accept Rescue From Jaedenar
@@ -605,18 +581,25 @@ step
     .complete 5203,1 --Protect Arko'narin out of Shadow Hold
     .isOnQuest 5203
 step
-    #loop
-    .goto 1448/1,-443.86,4975.17,0
-    .goto 1448/1,-443.86,4975.17,40,0
-    .goto 1448/1,-524.93,5113.55,40,0
+    .goto 1448/1,-443.86,4975.17
     >>Click the |cRXP_PICK_Brazier of Pain|r
+    .complete 5165,1 --Extinguish the Brazier of Pain
+    .isOnQuest 5165
+step
+    .goto 1448/1,-455.93,5017.72
     >>Click the |cRXP_PICK_Brazier of Hatred|r
+    .complete 5165,4 --Extinguish the Brazier of Hatred
+    .isOnQuest 5165
+step
+    .goto 1448/1,-470.31,5091.32
     >>Click the |cRXP_PICK_Brazier of Suffering|r
+    .complete 5165,3 --Extinguish the Brazier of Suffering
+    .isOnQuest 5165
+step
+    .goto 1448/1,-524.93,5113.55
     >>Click the |cRXP_PICK_Brazier of Malice|r
-    .complete -5165,1 --Extinguish the Brazier of Pain
-    .complete -5165,4 --Extinguish the Brazier of Hatred
-    .complete -5165,3 --Extinguish the Brazier of Suffering
-    .complete -5165,2 --Extinguish the Brazier of Malice
+    .complete 5165,2 --Extinguish the Brazier of Malice
+    .isOnQuest 5165
 step
     .goto 1448/1,-1302.91,3985.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Greta Mosshoof|r

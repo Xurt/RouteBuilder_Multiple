@@ -1,5 +1,5 @@
 Searing Gorge - Horde - part 1 of 3, planned from level 47
-Guide "47-52 Searing Gorge" in group "Zone Routes (Horde)": this part has 129 steps, 111 stops
+Guide "47-52 Searing Gorge" in group "Zone Routes (Horde)": this part has 130 steps, 114 stops
 Written to guides/mop/Searing Gorge (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -40,7 +40,7 @@ The check passes at once if you are there; if you are a little behind the predic
   level 47 for Warchief's Command: Searing Gorge! (Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren)
 3 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
 1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
-7 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+5 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (69)
 ------------------------

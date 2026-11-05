@@ -171,7 +171,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Winterspring - Alliance - part 3 of 3, planned from level 58
-Guide "52-60 Winterspring" in group "Zone Routes (Alliance)": this part has 20 steps, 18 stops
+Guide "52-60 Winterspring" in group "Zone Routes (Alliance)": this part has 19 steps, 18 stops
 Written to guides/classic/Winterspring (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -191,7 +191,6 @@ Step order kept from the last build (locks folder): 14 steps kept, 4 new ones sl
   everyone: 8 tasks, 5,056 yd on foot; ends at level 58.1
   everyone (quests that depend on other zones): 10 more tasks; their whole route comes to 14,833 yd; ends at level 58.1
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
-1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (8)
 -----------------------

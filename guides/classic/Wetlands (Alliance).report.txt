@@ -1,5 +1,5 @@
 Wetlands - Alliance - part 1 of 5, planned from level 20
-Guide "20-32 Wetlands" in group "Zone Routes (Alliance)": this part has 38 steps, 26 stops
+Guide "20-32 Wetlands" in group "Zone Routes (Alliance)": this part has 39 steps, 27 stops
 Written to guides/classic/Wetlands (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -97,7 +97,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Wetlands - Alliance - part 2 of 5, planned from level 23
-Guide "20-32 Wetlands" in group "Zone Routes (Alliance)": this part has 31 steps, 21 stops
+Guide "20-32 Wetlands" in group "Zone Routes (Alliance)": this part has 30 steps, 21 stops
 Written to guides/classic/Wetlands (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -118,7 +118,6 @@ Step order kept from the last build (locks folder): 22 steps kept, 1 new ones sl
   everyone (quests that depend on other zones): 9 more tasks; their whole route comes to 12,276 yd; ends at level 23.4; at its hardest you are 2.0 levels below the mobs
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
 8 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
-1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (8)
 -----------------------
@@ -168,7 +167,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Wetlands - Alliance - part 3 of 5, planned from level 26
-Guide "20-32 Wetlands" in group "Zone Routes (Alliance)": this part has 25 steps, 22 stops
+Guide "20-32 Wetlands" in group "Zone Routes (Alliance)": this part has 26 steps, 23 stops
 Written to guides/classic/Wetlands (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -228,7 +227,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Wetlands - Alliance - part 4 of 5, planned from level 29
-Guide "20-32 Wetlands" in group "Zone Routes (Alliance)": this part has 28 steps, 23 stops
+Guide "20-32 Wetlands" in group "Zone Routes (Alliance)": this part has 26 steps, 23 stops
 Written to guides/classic/Wetlands (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -248,7 +247,6 @@ Step order kept from the last build (locks folder): 26 steps kept, 1 new ones sl
   everyone: 26 tasks, 9,439 yd on foot; ends at level 29.4; 1 hearth
   everyone (quests that depend on other zones): 1 more tasks; their whole route comes to 9,439 yd; ends at level 29.4; 1 hearth
 Hearthstone: set at Innkeeper Helbrek (Innkeeper Helbrek's inn); 1 hearth step in the guide.
-2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (10)
 ------------------------

@@ -1,5 +1,5 @@
 Icecrown - Horde - part 1 of 2, planned from level 79
-Guide "79-81 Icecrown" in group "Zone Routes (Horde)": this part has 338 steps, 317 stops
+Guide "79-81 Icecrown" in group "Zone Routes (Horde)": this part has 358 steps, 340 stops
 Written to guides/mop/Icecrown (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -88,7 +88,7 @@ Step order kept from the last build (locks folder): 34 steps kept, 434 new ones 
   BloodElf Priest/BloodElf Shaman/BloodElf Druid (quests that depend on other zones): 2 more tasks; their whole route comes to 72,816 yd; ends at level 81.0; 1 ORDER PROBLEMS; at its hardest you are 1.1 levels below the mobs
 Hearthstone: set at Galley Chief Dolinger (Galley Chief Dolinger's inn); 0 hearth steps in the guide.
 2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-12 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+9 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (153)

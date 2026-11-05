@@ -201,7 +201,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Ashenvale - Alliance - part 3 of 5, planned from level 24
-Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 25 steps, 23 stops
+Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 28 steps, 26 stops
 Written to guides/tbc/Ashenvale (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -276,7 +276,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Ashenvale - Alliance - part 4 of 5, planned from level 27
-Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 57 steps, 51 stops
+Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 58 steps, 52 stops
 Written to guides/tbc/Ashenvale (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -340,7 +340,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Ashenvale - Alliance - part 5 of 5, planned from level 31
-Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 19 steps, 18 stops
+Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 20 steps, 19 stops
 Written to guides/tbc/Ashenvale (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

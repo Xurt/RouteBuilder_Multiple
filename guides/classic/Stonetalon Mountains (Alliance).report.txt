@@ -1,5 +1,5 @@
 Stonetalon Mountains - Alliance - part 1 of 3, planned from level 21
-Guide "21-28 Stonetalon Mountains" in group "Zone Routes (Alliance)": this part has 28 steps, 21 stops
+Guide "21-28 Stonetalon Mountains" in group "Zone Routes (Alliance)": this part has 31 steps, 23 stops
 Written to guides/classic/Stonetalon Mountains (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -21,6 +21,7 @@ Step order kept from the last build (locks folder): 13 steps kept, 18 new ones s
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
 4 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
 1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (17)
 ------------------------
@@ -67,7 +68,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Stonetalon Mountains - Alliance - part 2 of 3, planned from level 24
-Guide "21-28 Stonetalon Mountains" in group "Zone Routes (Alliance)": this part has 14 steps, 11 stops
+Guide "21-28 Stonetalon Mountains" in group "Zone Routes (Alliance)": this part has 15 steps, 12 stops
 Written to guides/classic/Stonetalon Mountains (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

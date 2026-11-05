@@ -1,5 +1,5 @@
 Terokkar Forest - Horde - part 1 of 3, planned from level 62
-Guide "62-70 Terokkar Forest" in group "Zone Routes (Horde)": this part has 246 steps, 194 stops
+Guide "62-70 Terokkar Forest" in group "Zone Routes (Horde)": this part has 249 steps, 197 stops
 Written to guides/mop/Terokkar Forest (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -189,7 +189,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Terokkar Forest - Horde - part 3 of 3, planned from level 71
-Guide "62-70 Terokkar Forest" in group "Zone Routes (Horde)": this part has 23 steps, 21 stops
+Guide "62-70 Terokkar Forest" in group "Zone Routes (Horde)": this part has 24 steps, 22 stops
 Written to guides/mop/Terokkar Forest (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

@@ -123,7 +123,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Bloodmyst Isle - Alliance - part 2 of 3, planned from level 14
-Guide "10-21 Bloodmyst Isle" in group "Zone Routes (Alliance)": this part has 109 steps, 92 stops
+Guide "10-21 Bloodmyst Isle" in group "Zone Routes (Alliance)": this part has 110 steps, 95 stops
 Written to guides/tbc/Bloodmyst Isle (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -145,7 +145,7 @@ Step order kept from the last build (locks folder): 114 steps kept, 5 new ones s
   everyone (quests that depend on other zones): 28 more tasks; their whole route comes to 34,408 yd; ends at level 17.4; 3 hearths; at its hardest you are 5.0 levels below the mobs
 Hearthstone: set at Fazu (Fazu's inn); 3 hearth steps in the guide.
 5 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 2 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 

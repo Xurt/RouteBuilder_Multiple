@@ -168,17 +168,28 @@ step << !Rogue !Hunter !Shaman !Druid
     .isOnQuest 498
     .subzoneskip 275,1
 step
+    #completewith Along13
+    >>As you go: Kill |cRXP_ENEMY_Syndicate Rogues|r. Kill |cRXP_ENEMY_Syndicate Watchmans|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 549,1 --Syndicate Rogue slain (10)
+    .complete 549,2 --Syndicate Watchman slain (10)
+    .mob Syndicate Rogue
+    .mob Syndicate Watchman
+step
+    #label Along13
+    .goto 1424/0,-1025.17,-638.51
+    >>Kill |cRXP_ENEMY_Syndicate Shadow Mages|r. Loot them for |cRXP_LOOT_Vial of Innocent Blood|r
+    .complete 1066,1 --Vial of Innocent Blood (5)
+    .mob Syndicate Shadow Mage
+    .isOnQuest 1066
+step
     #loop
     .goto 1424/0,-1079.57,-617.60,0
     .goto 1424/0,-1079.57,-617.60,40,0
-    .goto 1424/0,-1083.73,-671.15,40,0
-    >>Kill |cRXP_ENEMY_Syndicate Shadow Mages|r. Loot them for |cRXP_LOOT_Vial of Innocent Blood|r
+    .goto 1424/0,-1080.53,-686.08,40,0
     >>Kill |cRXP_ENEMY_Syndicate Rogues|r
     >>Kill |cRXP_ENEMY_Syndicate Watchmans|r
-    .complete -1066,1 --Vial of Innocent Blood (5)
     .complete 549,1 --Syndicate Rogue slain (10)
     .complete 549,2 --Syndicate Watchman slain (10)
-    .mob Syndicate Shadow Mage
     .mob Syndicate Rogue
     .mob Syndicate Watchman
 step
@@ -586,13 +597,16 @@ step
     .goto 1424/0,-1180.37,-1261.65,40,0
     .goto 1424/0,-1230.29,-1316.27,40,0
     >>Kill |cRXP_ENEMY_Dun Garok Mountaineers|r, |cRXP_ENEMY_Dun Garok Riflemans|r, |cRXP_ENEMY_Dun Garok Priests|r and |cRXP_ENEMY_Tamra Stormpikes|r. Loot them for |cRXP_LOOT_Humbert's Sword|r
-    >>Pick up |cRXP_PICK_Keg of Shindigger Stout|r from the ground
     .complete 547,1 --Humbert's Sword (1)
-    .complete -517,1 --Keg of Shindigger Stout (1)
     .mob Dun Garok Mountaineer
     .mob Dun Garok Rifleman
     .mob Dun Garok Priest
     .mob Tamra Stormpike
+step
+    .goto 1424/0,-1225.17,-1309.87
+    >>Pick up |cRXP_PICK_Keg of Shindigger Stout|r from the ground
+    .complete 517,1 --Keg of Shindigger Stout (1)
+    .isOnQuest 517
 step
     .goto 1424/0,-899.41,-6.61
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apothecary Lydon|r
@@ -704,17 +718,27 @@ step
     .mob Cave Yeti
     .mob Ferocious Yeti
 step
-    .goto 1424/0,115.31,-490.67
+    .goto 1424/0,117.23,-488.32
     >>Kill |cRXP_ENEMY_Magistrate Burnside|r
-    >>Pick up |cRXP_PICK_Hillsbrad Town Registry|r from the ground
-    >>Click the |cRXP_PICK_Hillsbrad Proclamation|r
-    >>Kill |cRXP_ENEMY_Hillsbrad Councilmans|r
-    .complete -532,1 --Magistrate Burnside slain (1)
-    .complete -532,4 --Hillsbrad Town Registry (1)
-    .complete -532,3 --Hillsbrad Proclamation destroyed
-    .complete -532,2 --Hillsbrad Councilman slain (8)
+    .complete 532,1 --Magistrate Burnside slain (1)
     .mob Magistrate Burnside
+    .isOnQuest 532
+step
+    .goto 1424/0,122.03,-485.97
+    >>Pick up |cRXP_PICK_Hillsbrad Town Registry|r from the ground
+    .complete 532,4 --Hillsbrad Town Registry (1)
+    .isOnQuest 532
+step
+    .goto 1424/0,115.31,-490.67
+    >>Click the |cRXP_PICK_Hillsbrad Proclamation|r
+    .complete 532,3 --Hillsbrad Proclamation destroyed
+    .isOnQuest 532
+step
+    .goto 1424/0,100.59,-499.41
+    >>Kill |cRXP_ENEMY_Hillsbrad Councilmans|r
+    .complete 532,2 --Hillsbrad Councilman slain (8)
     .mob Hillsbrad Councilman
+    .isOnQuest 532
 step
     #completewith next
     .hs >>Hearth to Kayren Soothallow's inn. |cRXP_WARN_Walk instead if you are already nearby|r
@@ -744,16 +768,20 @@ step
     .target Krusk
     .xp <30,1
 step
+    .goto 1424/0,67.95,-794.88
+    >>Kill |cRXP_ENEMY_Foreman Bonds|r
+    .complete 539,1 --Foreman Bonds slain (1)
+    .mob Foreman Bonds
+    .isOnQuest 539
+step
     #loop
     .goto 1424/0,65.71,-834.13,0
     .goto 1424/0,65.71,-834.13,40,0
-    .goto 1424/0,117.23,-773.12,40,0
-    >>Kill |cRXP_ENEMY_Foreman Bonds|r
+    .goto 1424/0,67.31,-732.80,40,0
     >>Kill |cRXP_ENEMY_Hillsbrad Miners|r
-    .complete -539,1 --Foreman Bonds slain (1)
-    .complete -539,2 --Hillsbrad Miner slain (10)
-    .mob Foreman Bonds
+    .complete 539,2 --Hillsbrad Miner slain (10)
     .mob Hillsbrad Miner
+    .isOnQuest 539
 step
     .goto 1424/0,-927.89,-36.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Executor Darthalia|r
@@ -780,23 +808,39 @@ step
     .accept 635 >>Accept Crystal in the Mountains
     .use 4614
 step
-    #label Drop635x2
     #loop
-    .goto 1424/0,-1180.37,-1261.65,0
-    .goto 1424/0,-1180.37,-1261.65,40,0
-    .goto 1424/0,-1230.29,-1316.27,40,0
+    .goto 1424/0,-1173.33,-1200.85,0
+    .goto 1424/0,-1173.33,-1200.85,40,0
+    .goto 1424/0,-1240.53,-1317.33,40,0
     >>Kill |cRXP_ENEMY_Dun Garok Mountaineers|r
-    >>Kill |cRXP_ENEMY_Dun Garok Riflemans|r
-    >>Kill |cRXP_ENEMY_Dun Garok Priests|r
-    >>Kill |cRXP_ENEMY_Captain Ironhills|r
-    .complete -541,1 --Dun Garok Mountaineer slain (8)
-    .complete -541,2 --Dun Garok Rifleman slain (8)
-    .complete -541,3 --Dun Garok Priest slain (2)
-    .complete -541,4 --Captain Ironhill slain (8)
+    .complete 541,1 --Dun Garok Mountaineer slain (8)
     .mob Dun Garok Mountaineer
+    .isOnQuest 541
+step
+    #loop
+    .goto 1424/0,-1220.69,-1310.72,0
+    .goto 1424/0,-1220.69,-1310.72,40,0
+    .goto 1424/0,-1222.61,-1201.71,40,0
+    >>Kill |cRXP_ENEMY_Dun Garok Riflemans|r
+    .complete 541,2 --Dun Garok Rifleman slain (8)
     .mob Dun Garok Rifleman
+    .isOnQuest 541
+step
+    #loop
+    .goto 1424/0,-1240.21,-1307.73,0
+    .goto 1424/0,-1240.21,-1307.73,40,0
+    .goto 1424/0,-1195.73,-1216.64,40,0
+    >>Kill |cRXP_ENEMY_Dun Garok Priests|r
+    .complete 541,3 --Dun Garok Priest slain (2)
     .mob Dun Garok Priest
+    .isOnQuest 541
+step
+    #label Drop635x2
+    .goto 1424/0,-1254.29,-1299.20
+    >>Kill |cRXP_ENEMY_Captain Ironhills|r
+    .complete 541,4 --Captain Ironhill slain (8)
     .mob Captain Ironhill
+    .isOnQuest 541
 step
     .goto 1424/0,-927.89,-36.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Executor Darthalia|r
@@ -977,9 +1021,13 @@ step
 step
     .goto 1424/0,-342.93,-166.40
     >>Click the |cRXP_PICK_Flame of Veraz|r
+    .complete 553,2 --Flame of Veraz charged
+    .isOnQuest 553
+step
+    .goto 1424/0,-337.81,-198.61
     >>Click the |cRXP_PICK_Flame of Azel|r
-    .complete -553,2 --Flame of Veraz charged
-    .complete -553,1 --Flame of Azel charged
+    .complete 553,1 --Flame of Azel charged
+    .isOnQuest 553
 step
     .goto 1424/0,-621.33,-738.56
     >>Click the |cRXP_PICK_Helcular's Grave|r

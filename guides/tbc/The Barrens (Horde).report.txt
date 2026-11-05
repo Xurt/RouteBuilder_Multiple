@@ -1,5 +1,5 @@
 The Barrens - Horde - part 1 of 4, planned from level 10
-Guide "10-27 The Barrens" in group "Zone Routes (Horde)": this part has 178 steps, 145 stops
+Guide "10-27 The Barrens" in group "Zone Routes (Horde)": this part has 181 steps, 149 stops
 Written to guides/tbc/The Barrens (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -36,7 +36,7 @@ The check passes at once if you are there; if you are a little behind the predic
   level 10 for A Bundle of Hides (Tauren)
 16 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
 2 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
-2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 6 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (87)
@@ -352,7 +352,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 The Barrens - Horde - part 4 of 4, planned from level 25
-Guide "10-27 The Barrens" in group "Zone Routes (Horde)": this part has 27 steps, 26 stops
+Guide "10-27 The Barrens" in group "Zone Routes (Horde)": this part has 32 steps, 31 stops
 Written to guides/tbc/The Barrens (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

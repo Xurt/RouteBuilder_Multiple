@@ -485,15 +485,22 @@ step
     .isQuestTurnedIn 237 --any of: In Defense of the King's Lands
 step
     #loop
-    .goto 1432/0,-2982.61,-6181.57,0
+    .goto 1432/0,-2913.38,-6161.34,0
+    .goto 1432/0,-2913.38,-6161.34,40,0
     .goto 1432/0,-2982.61,-6181.57,40,0
-    .goto 1432/0,-3044.67,-6101.37,40,0
     >>Kill |cRXP_ENEMY_Stonesplinter Bonesnappers|r
-    >>Kill |cRXP_ENEMY_Stonesplinter Shamans|r
-    .complete -263,2 --Stonesplinter Bonesnapper slain (10)
-    .complete -263,1 --Stonesplinter Shaman slain (10)
+    .complete 263,2 --Stonesplinter Bonesnapper slain (10)
     .mob Stonesplinter Bonesnapper
+    .isOnQuest 263
+step
+    #loop
+    .goto 1432/0,-2989.51,-6189.67,0
+    .goto 1432/0,-2989.51,-6189.67,40,0
+    .goto 1432/0,-3044.67,-6101.37,40,0
+    >>Kill |cRXP_ENEMY_Stonesplinter Shamans|r
+    .complete 263,1 --Stonesplinter Shaman slain (10)
     .mob Stonesplinter Shaman
+    .isOnQuest 263
 step
     .goto 1432/0,-4296.13,-5691.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daryl the Youngling|r
@@ -577,14 +584,21 @@ step
 step
     .goto 1432/0,-2949.24,-6153.24
     >>Kill |cRXP_ENEMY_Brawler|r
-    >>Kill |cRXP_ENEMY_Gnasher|r
-    >>Kill |cRXP_ENEMY_Grawmug|r
-    .complete -217,3 --Brawler slain (1)
-    .complete -217,2 --Gnasher slain (1)
-    .complete -217,1 --Grawmug slain (1)
+    .complete 217,3 --Brawler slain (1)
     .mob Brawler
+    .isOnQuest 217
+step
+    .goto 1432/0,-2951.17,-6158.21
+    >>Kill |cRXP_ENEMY_Gnasher|r
+    .complete 217,2 --Gnasher slain (1)
     .mob Gnasher
+    .isOnQuest 217
+step
+    .goto 1432/0,-2952.82,-6151.40
+    >>Kill |cRXP_ENEMY_Grawmug|r
+    .complete 217,1 --Grawmug slain (1)
     .mob Grawmug
+    .isOnQuest 217
 step
     .goto 1432/0,-2634.51,-5842.90
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Rugelfuss|r
@@ -657,24 +671,31 @@ step
     .turnin 250 >>Turn in A Dark Threat Looms
     .accept 199 >>Accept A Dark Threat Looms
 step
-    #completewith Along8
+    #completewith Along9
     >>As you go: Kill |cRXP_ENEMY_Mo'grosh Enforcers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 255,3 --Mo'grosh Enforcer slain (4)
     .mob Mo'grosh Enforcer
 step
-    #label Along8
     #loop
     .goto 1432/0,-4085.67,-4809.61,0
     .goto 1432/0,-4085.67,-4809.61,40,0
-    .goto 1432/0,-4114.08,-4784.96,40,0
+    .goto 1432/0,-4186.90,-4762.52,40,0
     >>Kill |cRXP_ENEMY_Mo'grosh Brutes|r
-    >>Kill |cRXP_ENEMY_Mo'grosh Ogres|r, |cRXP_ENEMY_Mo'grosh Enforcers|r, |cRXP_ENEMY_Mo'grosh Brutes|r and |cRXP_ENEMY_Mo'grosh Shamans|r. Loot them for |cRXP_LOOT_Mo'grosh Crystal|r
     .complete 255,2 --Mo'grosh Brute slain (4)
-    .complete -278,2 --Mo'grosh Crystal (1)
     .mob Mo'grosh Brute
+step
+    #label Along9
+    #loop
+    .goto 1432/0,-4114.08,-4784.96,0
+    .goto 1432/0,-4114.08,-4784.96,40,0
+    .goto 1432/0,-4085.67,-4809.61,40,0
+    >>Kill |cRXP_ENEMY_Mo'grosh Ogres|r, |cRXP_ENEMY_Mo'grosh Enforcers|r, |cRXP_ENEMY_Mo'grosh Brutes|r and |cRXP_ENEMY_Mo'grosh Shamans|r. Loot them for |cRXP_LOOT_Mo'grosh Crystal|r
+    .complete 278,2 --Mo'grosh Crystal (1)
     .mob Mo'grosh Ogre
     .mob Mo'grosh Enforcer
+    .mob Mo'grosh Brute
     .mob Mo'grosh Shaman
+    .isOnQuest 278
 step
     #loop
     .goto 1432/0,-3947.48,-4926.24,0

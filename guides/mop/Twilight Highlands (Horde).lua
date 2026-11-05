@@ -122,19 +122,32 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .xp <84,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 241,77.49,51.92,0
-    .goto 241,77.49,51.92,40,0
-    .goto 241,74.43,51.97,40,0
+    .goto 241,76.98,51.75,0
+    .goto 241,76.98,51.75,40,0
+    .goto 241,74.59,51.97,40,0
     >>Kill |cRXP_ENEMY_Dragonmaw Workers|r and |cRXP_ENEMY_Dragonmaw Merchants|r
-    >>Kill |cRXP_ENEMY_Dragonmaw Warlocks|r
-    >>Kill |cRXP_ENEMY_Dragonmaw Enforcers|r
-    .complete -26621,3 --Dragonmaw Worker (3)
-    .complete -26621,2 --Dragonmaw Warlock slain (4)
-    .complete -26621,1 --Dragonmaw Enforcer slain (10)
+    .complete 26621,3 --Dragonmaw Worker (3)
     .mob Dragonmaw Worker
     .mob Dragonmaw Merchant
+    .isOnQuest 26621
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 241,74.10,50.58,0
+    .goto 241,74.10,50.58,40,0
+    .goto 241,76.88,50.77,40,0
+    >>Kill |cRXP_ENEMY_Dragonmaw Warlocks|r
+    .complete 26621,2 --Dragonmaw Warlock slain (4)
     .mob Dragonmaw Warlock
+    .isOnQuest 26621
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 241,74.43,51.97,0
+    .goto 241,74.43,51.97,40,0
+    .goto 241,77.57,52.05,40,0
+    >>Kill |cRXP_ENEMY_Dragonmaw Enforcers|r
+    .complete 26621,1 --Dragonmaw Enforcer slain (10)
     .mob Dragonmaw Enforcer
+    .isOnQuest 26621
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,76.59,49.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zaela|r
@@ -189,15 +202,22 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .xp <84,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 241,69.36,49.17,0
-    .goto 241,69.36,49.17,40,0
-    .goto 241,67.98,48.00,40,0
+    .goto 241,68.88,49.67,0
+    .goto 241,68.88,49.67,40,0
+    .goto 241,67.43,46.89,40,0
     .goto 241,66.67,45.23,40,0
     >>Pick up |cRXP_PICK_Verrall River Muck|r from the ground
+    .complete 26788,1 --Verrall River Muck (1)
+    .isOnQuest 26788
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 241,67.31,45.52,0
+    .goto 241,67.31,45.52,40,0
+    .goto 241,68.17,48.68,40,0
     >>Kill |cRXP_ENEMY_Muddied Water Elementals|r. Loot them for |cRXP_LOOT_Whirlpool Core|r
-    .complete -26788,1 --Verrall River Muck (1)
-    .complete -26784,1 --Whirlpool Core (5)
+    .complete 26784,1 --Whirlpool Core (5)
     .mob Muddied Water Elemental
+    .isOnQuest 26784
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,74.27,53.29
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ornak|r
@@ -247,12 +267,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 27607 --any of: The Southern Flank
     .xp <84,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along33
-    >>As you go: Kill |cRXP_ENEMY_Highbank Marines|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27611,1 --Highbank Marine slain (12)
-    .mob Highbank Marine
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along33
     .goto 241,77.50,65.20
     >>Beach Head Control Point Scouted
     .complete 27610,1 --Beach Head Control Point Scouted
@@ -335,14 +349,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 27583 --any of: The Northern Flank
     .xp <84,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along44
-    >>As you go: Kill |cRXP_ENEMY_Blackscale Raiders|r, |cRXP_ENEMY_Blackscale Mistress|r and |cRXP_ENEMY_Blackscale Naga Quest Tracker Hordes|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27584,1 --Blackscale Raider (15)
-    .mob Blackscale Raider
-    .mob Blackscale Mistress
-    .mob Blackscale Naga Quest Tracker Horde
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along44
     .goto 241,70.31,43.39
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fergus Gearchum|r
     .accept 27586 >>Accept Shells on the Sea Shore
@@ -351,17 +357,25 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .xp <84,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 241,71.69,43.17,0
-    .goto 241,71.69,43.17,40,0
-    .goto 241,72.75,46.06,40,0
-    .goto 241,71.78,39.49,40,0
+    .goto 241,71.67,42.50,0
+    .goto 241,71.67,42.50,40,0
+    .goto 241,71.09,39.61,40,0
+    .goto 241,73.33,45.71,40,0
     >>Pick up |cRXP_PICK_Unexploded Mortar Shell|r from the ground
+    .complete 27586,1 --Unexploded Mortar Shell (8)
+    .isOnQuest 27586
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 241,72.62,41.93,0
+    .goto 241,72.62,41.93,40,0
+    .goto 241,71.59,45.04,40,0
+    .goto 241,69.72,40.66,40,0
     >>Kill |cRXP_ENEMY_Blackscale Raiders|r, |cRXP_ENEMY_Blackscale Mistress|r and |cRXP_ENEMY_Blackscale Naga Quest Tracker Hordes|r
-    .complete -27586,1 --Unexploded Mortar Shell (8)
-    .complete -27584,1 --Blackscale Raider (15)
+    .complete 27584,1 --Blackscale Raider (15)
     .mob Blackscale Raider
     .mob Blackscale Mistress
     .mob Blackscale Naga Quest Tracker Horde
+    .isOnQuest 27584
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,70.24,43.26
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gralok|r
@@ -415,11 +429,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 28583 --any of: Krazzworks
     .xp <84,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along55
-    >>As you go: Kill |cRXP_ENEMY_Wildhammer Raiders|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -28588,1 --Wildhammer Raider (10)
-    .mob Wildhammer Raider
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,77.68,16.64
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brett the Bomber|r
     .accept 28584 >>Accept Quality Construction
@@ -427,11 +436,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 28583 --any of: Krazzworks
     .xp <84,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along55
-    >>As you go: Click the |cRXP_PICK_Faulty Valve|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -28584,1 --Faulty Valve
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along55
     .goto 241,77.66,16.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Flashbang Rothman|r
     .accept 28586 >>Accept Pool Pony Rescue
@@ -440,18 +444,31 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .xp <84,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 241,77.16,16.92,0
-    .goto 241,77.16,16.92,40,0
-    .goto 241,75.25,17.14,40,0
-    .goto 241,80.78,14.96,40,0
+    .goto 241,76.71,17.47,0
+    .goto 241,76.71,17.47,40,0
+    .goto 241,75.17,16.60,40,0
     >>Click the |cRXP_PICK_Faulty Valve|r
+    .complete 28584,1 --Faulty Valve
+    .isOnQuest 28584
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 241,75.19,16.70,0
+    .goto 241,75.19,16.70,40,0
+    .goto 241,77.29,17.20,40,0
     >>Kill |cRXP_ENEMY_Wildhammer Raiders|r
-    >>Interact with |cRXP_FRIENDLY_Krazzworks Laborers|r
-    .complete -28584,1 --Faulty Valve
-    .complete -28588,1 --Wildhammer Raider (10)
-    .complete -28586,1 --Krazzworks Laborer (10)
+    .complete 28588,1 --Wildhammer Raider (10)
     .mob Wildhammer Raider
+    .isOnQuest 28588
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 241,75.44,18.16,0
+    .goto 241,75.44,18.16,40,0
+    .goto 241,73.98,18.98,40,0
+    .goto 241,80.72,13.43,40,0
+    >>Interact with |cRXP_FRIENDLY_Krazzworks Laborers|r
+    .complete 28586,1 --Krazzworks Laborer (10)
     .target Krazzworks Laborer
+    .isOnQuest 28586
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,77.66,16.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Flashbang Rothman|r
@@ -481,15 +498,22 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .xp <84,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 241,77.00,17.61,0
-    .goto 241,77.00,17.61,40,0
-    .goto 241,74.77,17.33,40,0
+    .goto 241,76.43,17.96,0
+    .goto 241,76.43,17.96,40,0
+    .goto 241,74.09,17.15,40,0
     >>Kill |cRXP_ENEMY_Krazz Cannons|r
-    >>Kill |cRXP_ENEMY_Wildhammer Stormtalons|r
-    .complete -28589,1 --Krazz Cannon slain (8)
-    .complete -28589,2 --Wildhammer Stormtalon slain (15)
+    .complete 28589,1 --Krazz Cannon slain (8)
     .mob Krazz Cannon
+    .isOnQuest 28589
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 241,75.34,18.75,0
+    .goto 241,75.34,18.75,40,0
+    .goto 241,76.63,14.58,40,0
+    >>Kill |cRXP_ENEMY_Wildhammer Stormtalons|r
+    .complete 28589,2 --Wildhammer Stormtalon slain (15)
     .mob Wildhammer Stormtalon
+    .isOnQuest 28589
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,77.63,16.63
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Krazz|r
@@ -536,19 +560,32 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .xp <84,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 241,79.00,78.17,0
-    .goto 241,79.00,78.17,40,0
-    .goto 241,80.17,72.51,40,0
+    .goto 241,79.75,78.53,0
+    .goto 241,79.75,78.53,40,0
+    .goto 241,79.47,73.40,40,0
     >>Kill |cRXP_ENEMY_Highbank Cannon Bunnies|r and |cRXP_ENEMY_Highbank Cannons|r
-    >>Kill |cRXP_ENEMY_Highbank Marksmans|r
-    >>Kill |cRXP_ENEMY_Highbank Cannoneers|r
-    .complete -28591,3 --Highbank Cannon Bunny (8)
-    .complete -28591,1 --Highbank Marksman slain (80)
-    .complete -28591,2 --Highbank Cannoneer slain (12)
+    .complete 28591,3 --Highbank Cannon Bunny (8)
     .mob Highbank Cannon Bunny
     .mob Highbank Cannon
+    .isOnQuest 28591
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 241,78.28,76.59,0
+    .goto 241,78.28,76.59,40,0
+    .goto 241,81.68,72.94,40,0
+    >>Kill |cRXP_ENEMY_Highbank Marksmans|r
+    .complete 28591,1 --Highbank Marksman slain (80)
     .mob Highbank Marksman
+    .isOnQuest 28591
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 241,79.53,73.27,0
+    .goto 241,79.53,73.27,40,0
+    .goto 241,79.69,78.36,40,0
+    >>Kill |cRXP_ENEMY_Highbank Cannoneers|r
+    .complete 28591,2 --Highbank Cannoneer slain (12)
     .mob Highbank Cannoneer
+    .isOnQuest 28591
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 241,78.49,80.22,0
@@ -573,13 +610,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 28591 --any of: Off The Wall
     .xp <84,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along72
-    >>As you go: Kill |cRXP_ENEMY_Highbank Marksmans|r, |cRXP_ENEMY_Tidebreaker Sailors|r and |cRXP_ENEMY_Highbank Prison Guards|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -28594,1 --Highbank Marksman (8)
-    .mob Highbank Marksman
-    .mob Tidebreaker Sailor
-    .mob Highbank Prison Guard
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,81.85,80.39
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ticker|r
     .accept 28592 >>Accept Parting Packages
@@ -599,28 +629,27 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Highbank Boat Bomb Controller
     .isOnQuest 28592
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along72
-    >>As you go: Pick up |cRXP_PICK_Induction Samophlange|r from the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -28593,1 --Induction Samophlange (1)
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along72
     .goto 241,79.80,77.39
     >>Set bombs on the boat, in the keep entrance, and in one of the northern towers.
     .complete 28592,2 --Highbank Keep Bomb Controller
     .target Highbank Keep Bomb Controller
     .isOnQuest 28592
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 241,79.51,77.65
+    >>Pick up |cRXP_PICK_Induction Samophlange|r from the ground
+    .complete 28593,1 --Induction Samophlange (1)
+    .isOnQuest 28593
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 241,80.99,78.07,0
     .goto 241,80.99,78.07,40,0
     .goto 241,80.34,75.57,40,0
-    >>Pick up |cRXP_PICK_Induction Samophlange|r from the ground
     >>Kill |cRXP_ENEMY_Highbank Marksmans|r, |cRXP_ENEMY_Tidebreaker Sailors|r and |cRXP_ENEMY_Highbank Prison Guards|r
-    .complete -28593,1 --Induction Samophlange (1)
-    .complete -28594,1 --Highbank Marksman (8)
+    .complete 28594,1 --Highbank Marksman (8)
     .mob Highbank Marksman
     .mob Tidebreaker Sailor
     .mob Highbank Prison Guard
+    .isOnQuest 28594
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,81.85,80.39
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ticker|r
@@ -684,23 +713,39 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .xp <84,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 241,52.31,42.21,0
-    .goto 241,52.31,42.21,40,0
-    .goto 241,51.73,37.89,40,0
-    .goto 241,48.42,37.24,40,0
+    .goto 241,50.94,40.69,0
+    .goto 241,50.94,40.69,40,0
+    .goto 241,50.27,43.29,40,0
+    .goto 241,51.82,38.16,40,0
     >>Kill |cRXP_ENEMY_Thundermar Gryphon Riders|r
-    >>Click the |cRXP_PICK_Thundermar Ale Keg|r
-    >>Pick up |cRXP_PICK_Wildhammer Food Stores|r from the ground
-    >>Kill |cRXP_ENEMY_Wildhammer Warbrands|r, |cRXP_ENEMY_Gunwald Greybeards|r, |cRXP_ENEMY_Cliff Thundermars|r and |cRXP_ENEMY_Dillan MacHurleys|r. Loot them for |cRXP_LOOT_Wildhammer Insignia|r
-    .complete -27929,1 --Thundermar Gryphon Rider slain (4)
-    .complete -27747,1 --Thundermar Ale Keg
-    .complete -27750,1 --Wildhammer Food Stores (10)
-    .complete -27751,1 --Wildhammer Insignia (8)
+    .complete 27929,1 --Thundermar Gryphon Rider slain (4)
     .mob Thundermar Gryphon Rider
+    .isOnQuest 27929
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 241,48.80,36.73
+    >>Click the |cRXP_PICK_Thundermar Ale Keg|r
+    .complete 27747,1 --Thundermar Ale Keg
+    .isOnQuest 27747
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 241,48.42,37.24,0
+    .goto 241,48.42,37.24,40,0
+    .goto 241,50.76,33.56,40,0
+    >>Pick up |cRXP_PICK_Wildhammer Food Stores|r from the ground
+    .complete 27750,1 --Wildhammer Food Stores (10)
+    .isOnQuest 27750
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 241,52.08,42.86,0
+    .goto 241,52.08,42.86,40,0
+    .goto 241,53.59,39.81,40,0
+    >>Kill |cRXP_ENEMY_Wildhammer Warbrands|r, |cRXP_ENEMY_Gunwald Greybeards|r, |cRXP_ENEMY_Cliff Thundermars|r and |cRXP_ENEMY_Dillan MacHurleys|r. Loot them for |cRXP_LOOT_Wildhammer Insignia|r
+    .complete 27751,1 --Wildhammer Insignia (8)
     .mob Wildhammer Warbrand
     .mob Gunwald Greybeard
     .mob Cliff Thundermar
     .mob Dillan MacHurley
+    .isOnQuest 27751
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,53.83,43.26
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Griff|r
@@ -881,12 +926,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 28043 --any of: How to Maim Your Dragon
     .xp <84,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along114
-    >>As you go: Kill |cRXP_ENEMY_Obsidian Stoneslave|r and loot |cRXP_LOOT_Black Diamond Heart|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27945,1 --Black Diamond Heart (1)
-    .mob Obsidian Stoneslave
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along114
     .goto 241,57.93,33.50
     >>Click the |cRXP_PICK_Eye of Twilight|r
     .accept 27951 >>Accept We All Must Sacrifice
@@ -1013,7 +1052,7 @@ step
     .accept 27302 >>Accept Simple Solutions
     .target Initiate Goldmine
 step
-    #completewith Along134
+    #completewith Along147
     >>As you go: Kill |cRXP_ENEMY_Twilight Captivator|r and loot |cRXP_LOOT_Pyreburn Oil|r. It can also be picked up from |cRXP_PICK_Barrel of Pyreburn Oil|r on the ground. Kill |cRXP_ENEMY_Twilight Captivators|r, |cRXP_ENEMY_Omak'Tuls|r and |cRXP_ENEMY_Twilight Bonebreakers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 27302,1 --Pyreburn Oil (1)
     .complete 27300,1 --Twilight Captivator (8)
@@ -1021,7 +1060,7 @@ step
     .mob Omak'Tul
     .mob Twilight Bonebreaker
 step
-    #label Along134
+    #label Along147
     .goto 241,44.21,18.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Earthcaller Yevaa|r
     .turnin 27301 >>Turn in Unbroken
@@ -1165,18 +1204,25 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 28133 --any of: Fury Unbound
     .xp <84,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 241,39.39,47.34,0
-    .goto 241,39.39,47.34,40,0
-    .goto 241,41.29,45.77,40,0
+    .goto 241,39.39,47.34
     >>Open the |cRXP_PICK_Windspeaker Pylon|r. Loot it for |cRXP_LOOT_Windspeaker Charm|r
+    .complete 28149,1 --Windspeaker Charm (1)
+    .isOnQuest 28149
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 241,39.24,47.36,0
+    .goto 241,39.24,47.36,40,0
+    .goto 241,41.18,46.30,40,0
     >>Kill |cRXP_ENEMY_Storm Vortexes|r. Loot them for |cRXP_LOOT_Breath of the Vortex|r
-    >>Kill |cRXP_ENEMY_Twilight Windwarpers|r. Loot them for |cRXP_LOOT_Twilight Garment Scrap|r
-    .complete -28149,1 --Windspeaker Charm (1)
-    .complete -28149,2 --Breath of the Vortex (5)
-    .complete -28147,1 --Twilight Garment Scrap (8)
+    .complete 28149,2 --Breath of the Vortex (5)
     .mob Storm Vortex
+    .isOnQuest 28149
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 241,39.56,47.64
+    >>Kill |cRXP_ENEMY_Twilight Windwarpers|r. Loot them for |cRXP_LOOT_Twilight Garment Scrap|r
+    .complete 28147,1 --Twilight Garment Scrap (8)
     .mob Twilight Windwarper
+    .isOnQuest 28147
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,36.73,37.94
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rotgrum|r
@@ -1204,17 +1250,21 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 28149 --any of: Whispers in the Wind
     .xp <84,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 241,40.62,32.91
+    >>Pick up |cRXP_PICK_The Light of Souls|r from the ground
+    .complete 28166,1 --The Light of Souls (1)
+    .isOnQuest 28166
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 241,40.73,30.62,0
     .goto 241,40.73,30.62,40,0
     .goto 241,40.33,26.75,40,0
-    >>Pick up |cRXP_PICK_The Light of Souls|r from the ground
     >>Kill |cRXP_ENEMY_Glopgut Hurlers|r, |cRXP_ENEMY_Thogs|r and |cRXP_ENEMY_Brogg Glopguts|r
-    .complete -28166,1 --The Light of Souls (1)
-    .complete -28151,1 --Glopgut Hurler (8)
+    .complete 28151,1 --Glopgut Hurler (8)
     .mob Glopgut Hurler
     .mob Thog
     .mob Brogg Glopgut
+    .isOnQuest 28151
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,36.73,37.94
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rotgrum|r
@@ -1235,16 +1285,23 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 28166 --any of: Thog's Nightlight
     .xp <84,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 241,34.33,37.75
+    .goto 241,34.18,35.74
     >>Kill |cRXP_ENEMY_Shrine 1 Cleansed|r
-    >>Kill |cRXP_ENEMY_Shrine 2 Cleansed|r
-    >>Kill |cRXP_ENEMY_Shrine 3 Cleansed|r
-    .complete -28170,1 --Shrine 1 Cleansed slain (1)
-    .complete -28170,2 --Shrine 2 Cleansed slain (1)
-    .complete -28170,3 --Shrine 3 Cleansed slain (1)
+    .complete 28170,1 --Shrine 1 Cleansed slain (1)
     .mob Shrine 1 Cleansed
+    .isOnQuest 28170
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 241,33.59,37.76
+    >>Kill |cRXP_ENEMY_Shrine 2 Cleansed|r
+    .complete 28170,2 --Shrine 2 Cleansed slain (1)
     .mob Shrine 2 Cleansed
+    .isOnQuest 28170
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 241,34.33,37.75
+    >>Kill |cRXP_ENEMY_Shrine 3 Cleansed|r
+    .complete 28170,3 --Shrine 3 Cleansed slain (1)
     .mob Shrine 3 Cleansed
+    .isOnQuest 28170
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,36.39,37.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Buunu|r
@@ -1336,12 +1393,6 @@ step
     .target Velastrasza
     .isQuestTurnedIn 27504 --any of: Even Dragons Bleed
 step
-    #completewith Along11
-    >>As you go: Kill |cRXP_ENEMY_Vermillion Menders|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27505,1 --Vermillion Mender slain (5)
-    .mob Vermillion Mender
-step
-    #label Along11
     .goto 241,29.79,31.43
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baleflame|r
     .accept 27506 >>Accept Life from Death
@@ -1349,21 +1400,29 @@ step
     .isQuestTurnedIn 27504 --any of: Even Dragons Bleed
 step
     #loop
-    .goto 241,29.66,32.73,0
-    .goto 241,29.66,32.73,40,0
-    .goto 241,27.96,32.00,40,0
+    .goto 241,29.77,33.18,0
+    .goto 241,29.77,33.18,40,0
+    .goto 241,28.23,30.61,40,0
     >>Kill |cRXP_ENEMY_Vermillion Menders|r
-    >>Kill |cRXP_ENEMY_Vermillion Menders|r and |cRXP_ENEMY_Twilight Wyrmkillers|r
-    .complete -27505,1 --Vermillion Mender slain (5)
-    .complete -27506,1 --Vermillion Mender (8)
+    .complete 27505,1 --Vermillion Mender slain (5)
     .mob Vermillion Mender
-    .mob Twilight Wyrmkiller
+    .isOnQuest 27505
 step
     .goto 241,29.85,31.28
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Velastrasza|r
     .turnin 27505 >>Turn in Draconic Mending while you are here
     .isQuestComplete 27505
     .target Velastrasza
+step
+    #loop
+    .goto 241,27.96,32.00,0
+    .goto 241,27.96,32.00,40,0
+    .goto 241,29.66,32.73,40,0
+    >>Kill |cRXP_ENEMY_Vermillion Menders|r and |cRXP_ENEMY_Twilight Wyrmkillers|r
+    .complete 27506,1 --Vermillion Mender (8)
+    .mob Vermillion Mender
+    .mob Twilight Wyrmkiller
+    .isOnQuest 27506
 step
     .goto 241,29.79,31.43
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baleflame|r
@@ -1403,20 +1462,30 @@ step
     .target Lirastrasza
     .isQuestTurnedIn 27564 --any of: In Defense of the Redoubt
 step
-    #loop
-    .goto 241,24.06,17.88,0
-    .goto 241,24.06,17.88,40,0
-    .goto 241,21.76,17.57,40,0
-    .goto 241,19.73,15.92,40,0
+    .goto 241,17.91,16.90
     >>Click the |cRXP_PICK_Twilight Portal|r
+    .complete 27509,1 --Twilight Portal
+    .isOnQuest 27509
+step
+    #loop
+    .goto 241,19.73,15.92,0
+    .goto 241,19.73,15.92,40,0
+    .goto 241,21.74,17.61,40,0
+    .goto 241,24.06,17.88,40,0
     >>Kill |cRXP_ENEMY_Vermillion Eggs|r. Loot them for |cRXP_LOOT_Vermillion Egg|r
-    >>Kill |cRXP_ENEMY_Twilight Flamequenchers|r and |cRXP_ENEMY_Twilight Abductors|r
-    .complete -27509,1 --Twilight Portal
-    .complete -27508,1 --Vermillion Egg (6)
-    .complete -27507,1 --Twilight Flamequencher (8)
+    .complete 27508,1 --Vermillion Egg (6)
     .mob Vermillion Egg
+    .isOnQuest 27508
+step
+    #loop
+    .goto 241,20.81,15.69,0
+    .goto 241,20.81,15.69,40,0
+    .goto 241,18.95,17.15,40,0
+    >>Kill |cRXP_ENEMY_Twilight Flamequenchers|r and |cRXP_ENEMY_Twilight Abductors|r
+    .complete 27507,1 --Twilight Flamequencher (8)
     .mob Twilight Flamequencher
     .mob Twilight Abductor
+    .isOnQuest 27507
 step
     .goto 241,29.30,25.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lirastrasza|r
@@ -1459,12 +1528,26 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,25.49,37.80
     >>Kill |cRXP_ENEMY_Twilight Spearwarders|r
-    >>Kill |cRXP_ENEMY_Twilight Spearwarder|r and loot |cRXP_LOOT_Twilight Caravan Cargo Key|r
-    >>Open the |cRXP_PICK_Twilight Caravan Chest|r. Loot it for |cRXP_LOOT_Twilight's Hammer Gatestone|r
-    .complete -28091,1 --Twilight Spearwarder (8)
-    .complete -28090,1 --Twilight Caravan Cargo Key (1)
-    .complete -28090,2 --Twilight's Hammer Gatestone (1)
+    .complete 28091,1 --Twilight Spearwarder (8)
     .mob Twilight Spearwarder
+    .isOnQuest 28091
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 241,27.32,36.79
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Patch|r
+    .turnin 28091 >>Turn in Easy Pickings while you are here
+    .isQuestComplete 28091
+    .target Patch
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 241,25.49,37.80
+    >>Kill |cRXP_ENEMY_Twilight Spearwarder|r and loot |cRXP_LOOT_Twilight Caravan Cargo Key|r
+    .complete 28090,1 --Twilight Caravan Cargo Key (1)
+    .mob Twilight Spearwarder
+    .isOnQuest 28090
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 241,25.54,37.94
+    >>Open the |cRXP_PICK_Twilight Caravan Chest|r. Loot it for |cRXP_LOOT_Twilight's Hammer Gatestone|r
+    .complete 28090,2 --Twilight's Hammer Gatestone (1)
+    .isOnQuest 28090
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,27.32,36.79
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Patch|r
@@ -1626,15 +1709,6 @@ step
     .target Velastrasza
     .isQuestTurnedIn 28171 --any of: And the Sky Streaked Red
 step
-    #completewith Along51
-    >>As you go: Kill |cRXP_ENEMY_Obsidian Pyrewings|r. Kill |cRXP_ENEMY_Obsidian Viletongues|r and |cRXP_ENEMY_Obsidian Charscales|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -28173,1 --Obsidian Pyrewing slain (8)
-    .complete -28191,1 --Obsidian Viletongue (8)
-    .mob Obsidian Pyrewing
-    .mob Obsidian Viletongue
-    .mob Obsidian Charscale
-step
-    #label Along51
     .goto 241,64.07,78.04
     >>Use Alexstrasza's Tear within the hollow beneath the Obsidian Tree.
     .complete 28175,1 --Obsidian Flower Bunny
@@ -1644,16 +1718,24 @@ step
     #loop
     .goto 241,65.14,79.54,0
     .goto 241,65.14,79.54,40,0
-    .goto 241,63.59,75.80,40,0
-    .goto 241,63.86,70.91,40,0
-    .goto 241,65.80,72.89,40,0
+    .goto 241,66.36,74.90,40,0
+    .goto 241,65.13,68.64,40,0
+    .goto 241,64.41,73.79,40,0
     >>Kill |cRXP_ENEMY_Obsidian Pyrewings|r
-    >>Kill |cRXP_ENEMY_Obsidian Viletongues|r and |cRXP_ENEMY_Obsidian Charscales|r
-    .complete -28173,1 --Obsidian Pyrewing slain (8)
-    .complete -28191,1 --Obsidian Viletongue (8)
+    .complete 28173,1 --Obsidian Pyrewing slain (8)
     .mob Obsidian Pyrewing
+    .isOnQuest 28173
+step
+    #loop
+    .goto 241,64.38,71.33,0
+    .goto 241,64.38,71.33,40,0
+    .goto 241,62.87,70.17,40,0
+    .goto 241,63.07,76.71,40,0
+    >>Kill |cRXP_ENEMY_Obsidian Viletongues|r and |cRXP_ENEMY_Obsidian Charscales|r
+    .complete 28191,1 --Obsidian Viletongue (8)
     .mob Obsidian Viletongue
     .mob Obsidian Charscale
+    .isOnQuest 28191
 step
     .goto 241,59.02,69.81
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Velastrasza|r
@@ -1735,14 +1817,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Warlord Zaela
     .isQuestTurnedIn 28249 --any of: Crushblow
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along66
-    >>As you go: Kill |cRXP_ENEMY_Bloodeye Magelords|r, |cRXP_ENEMY_Twilight Ettins|r and |cRXP_ENEMY_Bloodeye Brutes|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27493,1 --Bloodeye Magelord (8)
-    .mob Bloodeye Magelord
-    .mob Twilight Ettin
-    .mob Bloodeye Brute
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along66
     .goto 241,45.32,75.35
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Cozwynn|r
     .accept 27491 >>Accept Kor'kron Drop
@@ -1857,17 +1931,29 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .unitscan !
     .isQuestTurnedIn 27499,27590 --any of: Signal the Attack, Signal the Attack
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 241,37.64,71.32
+    .goto 241,38.71,70.28
     >>Kill |cRXP_ENEMY_Beeble'phods|r. Loot them for |cRXP_LOOT_Beeble's Head|r
-    >>Kill |cRXP_ENEMY_Beeble'phods|r. Loot them for |cRXP_LOOT_Phod's Head|r
-    >>Kill |cRXP_ENEMY_Za'broxes|r. Loot them for |cRXP_LOOT_Brox's Head|r
-    >>Kill |cRXP_ENEMY_Za'broxes|r. Loot them for |cRXP_LOOT_Za's Head|r
-    .complete -27501,3 --Beeble's Head (4)
-    .complete -27501,2 --Phod's Head (4)
-    .complete -27501,4 --Brox's Head (4)
-    .complete -27501,1 --Za's Head (4)
+    .complete 27501,3 --Beeble's Head (4)
     .mob Beeble'phod
+    .isOnQuest 27501
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 241,38.71,70.28
+    >>Kill |cRXP_ENEMY_Beeble'phods|r. Loot them for |cRXP_LOOT_Phod's Head|r
+    .complete 27501,2 --Phod's Head (4)
+    .mob Beeble'phod
+    .isOnQuest 27501
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 241,37.64,71.32
+    >>Kill |cRXP_ENEMY_Za'broxes|r. Loot them for |cRXP_LOOT_Brox's Head|r
+    .complete 27501,4 --Brox's Head (4)
     .mob Za'brox
+    .isOnQuest 27501
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 241,37.64,71.32
+    >>Kill |cRXP_ENEMY_Za'broxes|r. Loot them for |cRXP_LOOT_Za's Head|r
+    .complete 27501,1 --Za's Head (4)
+    .mob Za'brox
+    .isOnQuest 27501
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,45.32,75.35
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Cozwynn|r
@@ -1919,11 +2005,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Garona Halforcen
     .isQuestTurnedIn 27638,27639 --any of: Just You and Garona, Just You and Garona
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along97
-    >>As you go: Kill |cRXP_ENEMY_Dark Assassins|r. Loot them for |cRXP_LOOT_Dark Assassin's Pendant|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27653,1 --Dark Assassin's Pendant (5)
-    .mob Dark Assassin
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,37.48,88.64
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Earthcaller Yevaa|r
     .turnin 27658 >>Turn in Help from the Earthcaller
@@ -1943,21 +2024,6 @@ step
     .target Initiate Goldmine
     .isQuestTurnedIn 27657,27658 --any of: Help from the Earthcaller, Help from the Earthcaller
 step
-    #completewith Along103
-    >>As you go: Kill |cRXP_ENEMY_Freed Tempests|r, |cRXP_ENEMY_Freed Infernos|r, |cRXP_ENEMY_Freed Waterspouts|r and |cRXP_ENEMY_Enslaved Tempests|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27662,1 --Freed Tempest (8)
-    .mob Freed Tempest
-    .mob Freed Inferno
-    .mob Freed Waterspout
-    .mob Enslaved Tempest
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along97
-    >>As you go: Kill |cRXP_ENEMY_Twilight Vindicators|r, |cRXP_ENEMY_Corrupted Elementalists|r and |cRXP_ENEMY_Citadel Veterans|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27655,1 --Twilight Vindicator (8)
-    .mob Twilight Vindicator
-    .mob Corrupted Elementalist
-    .mob Citadel Veteran
-step
     .goto 241,38.10,80.26
     >>Kill |cRXP_ENEMY_Apexar|r and |cRXP_ENEMY_Debilitated Apexar|r
     .complete 27659,1 --Apexar (1)
@@ -1965,7 +2031,6 @@ step
     .mob Debilitated Apexar
     .isOnQuest 27659
 step
-    #label Along97
     .goto 241,44.48,81.50
     >>Kill |cRXP_ENEMY_Aetharon|r and |cRXP_ENEMY_Debilitated Aetharon|r
     .complete 27659,2 --Aetharon (1)
@@ -1999,20 +2064,26 @@ step
     .isOnQuest 27661
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 241,33.60,69.89,0
-    .goto 241,33.60,69.89,40,0
-    .goto 241,33.42,66.69,40,0
+    .goto 241,32.98,66.85,0
+    .goto 241,32.98,66.85,40,0
     .goto 241,30.85,69.07,40,0
+    .goto 241,35.45,63.28,40,0
     >>Kill |cRXP_ENEMY_Twilight Vindicators|r, |cRXP_ENEMY_Corrupted Elementalists|r and |cRXP_ENEMY_Citadel Veterans|r
-    >>Kill |cRXP_ENEMY_Dark Assassins|r. Loot them for |cRXP_LOOT_Dark Assassin's Pendant|r
-    .complete -27655,1 --Twilight Vindicator (8)
-    .complete -27653,1 --Dark Assassin's Pendant (5)
+    .complete 27655,1 --Twilight Vindicator (8)
     .mob Twilight Vindicator
     .mob Corrupted Elementalist
     .mob Citadel Veteran
+    .isOnQuest 27655
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 241,31.55,68.30,0
+    .goto 241,31.55,68.30,40,0
+    .goto 241,34.91,67.32,40,0
+    >>Kill |cRXP_ENEMY_Dark Assassins|r. Loot them for |cRXP_LOOT_Dark Assassin's Pendant|r
+    .complete 27653,1 --Dark Assassin's Pendant (5)
     .mob Dark Assassin
+    .isOnQuest 27653
 step
-    #label Along103
     .goto 241,27.64,63.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Countess Verrall|r
     .turnin 27661 >>Turn in Fire the Cannon
@@ -2071,11 +2142,15 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,43.35,88.50
     >>Kill |cRXP_ENEMY_Dame Alys Finnsson|r
-    >>Kill |cRXP_ENEMY_Mia the Rose|r
-    .complete -27689,1 --Dame Alys Finnsson slain (1)
-    .complete -27689,3 --Mia the Rose slain (1)
+    .complete 27689,1 --Dame Alys Finnsson slain (1)
     .mob Dame Alys Finnsson
+    .isOnQuest 27689
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 241,42.25,83.73
+    >>Kill |cRXP_ENEMY_Mia the Rose|r
+    .complete 27689,3 --Mia the Rose slain (1)
     .mob Mia the Rose
+    .isOnQuest 27689
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,36.37,65.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Garona Halforcen|r
@@ -2183,40 +2258,48 @@ step
     .target Initiate Goldmine
     .isQuestTurnedIn 27720,28885 --any of: Mr. Goldmine's Wild Ride, Mr. Goldmine's Wild Ride
 step
-    #completewith Along130
-    >>As you go: Kill |cRXP_ENEMY_Elementium Spinners|r. Loot them for |cRXP_LOOT_Elementium Shard|r. It can also be picked up from |cRXP_PICK_Elementium Shard|r on the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -27742,1 --Elementium Shard (6)
-    .mob Elementium Spinner
-step
     .goto 241,37.42,93.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Twilight Rune of Earth|r
     .accept 27744 >>Accept Rune Ruination
     .target Twilight Rune of Earth
     .isQuestTurnedIn 27720,28885 --any of: Mr. Goldmine's Wild Ride, Mr. Goldmine's Wild Ride
 step
-    #label Along130
     .goto 241,37.42,93.24
     >>Kill |cRXP_ENEMY_Twilight Rune of Earth|r
-    >>Click the |cRXP_PICK_Twilight Rune of Water|r
-    .complete -27744,1 --Twilight Rune of Earth slain (1)
-    .complete -27744,2 --Twilight Rune of Water
+    .complete 27744,1 --Twilight Rune of Earth slain (1)
     .mob Twilight Rune of Earth
+    .isOnQuest 27744
+step
+    .goto 241,35.15,90.37
+    >>Click the |cRXP_PICK_Twilight Rune of Water|r
+    .complete 27744,2 --Twilight Rune of Water
+    .isOnQuest 27744
+step
+    .goto 241,33.48,88.38
+    >>Click the |cRXP_PICK_Twilight Rune of Air|r
+    .complete 27744,3 --Twilight Rune of Air
+    .isOnQuest 27744
+step
+    .goto 241,34.34,86.61
+    >>Click the |cRXP_PICK_Twilight Rune of Fire|r
+    .complete 27744,4 --Twilight Rune of Fire
+    .isOnQuest 27744
 step
     #loop
-    .goto 241,33.84,88.67,0
-    .goto 241,33.84,88.67,40,0
+    .goto 241,34.17,85.77,0
     .goto 241,34.17,85.77,40,0
-    >>Click the |cRXP_PICK_Twilight Rune of Air|r
-    >>Click the |cRXP_PICK_Twilight Rune of Fire|r
+    .goto 241,33.84,88.67,40,0
     >>Kill |cRXP_ENEMY_Elementium Spinners|r. Loot them for |cRXP_LOOT_Elementium Shard|r. It can also be picked up from |cRXP_PICK_Elementium Shard|r on the ground
-    >>Kill |cRXP_ENEMY_Twilight Miners|r and |cRXP_ENEMY_Depths Overseers|r
-    .complete -27744,3 --Twilight Rune of Air
-    .complete -27744,4 --Twilight Rune of Fire
-    .complete -27742,1 --Elementium Shard (6)
-    .complete -27743,1 --Twilight Miner (8)
+    .complete 27742,1 --Elementium Shard (6)
     .mob Elementium Spinner
+    .isOnQuest 27742
+step
+    .goto 241,33.27,87.51
+    >>Kill |cRXP_ENEMY_Twilight Miners|r and |cRXP_ENEMY_Depths Overseers|r
+    .complete 27743,1 --Twilight Miner (8)
     .mob Twilight Miner
     .mob Depths Overseer
+    .isOnQuest 27743
 step
     .goto 241,38.32,93.92
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Initiate Goldmine|r
@@ -2246,10 +2329,14 @@ step
 step
     .goto 241,36.40,83.76
     >>Kill |cRXP_ENEMY_Magmatooth|r and loot |cRXP_LOOT_Fire Portal Controller|r
-    >>Click the |cRXP_PICK_Fire Portal|r
-    .complete -27745,2 --Fire Portal Controller (1)
-    .complete -27745,1 --Fire Portal
+    .complete 27745,2 --Fire Portal Controller (1)
     .mob Magmatooth
+    .isOnQuest 27745
+step
+    .goto 241,36.40,83.76
+    >>Click the |cRXP_PICK_Fire Portal|r
+    .complete 27745,1 --Fire Portal
+    .isOnQuest 27745
 step
     .goto 241,37.56,88.73
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Initiate Goldmine|r
@@ -2316,12 +2403,6 @@ step << Cata
     .train 73975 >> Train |T132481:0|t[Necrotic Strike] << DK
     .train 77606 >> Train |T135888:0|t[Dark Simulacrum] << DK
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along145
-    >>As you go: Kill |cRXP_ENEMY_Skullcrusher the Mountain|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27788,2 --Skullcrusher the Mountain slain (1)
-    .mob Skullcrusher the Mountain
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along145
     .goto 241,45.39,87.97
     >>Survive and then slay Skullcrusher the Mountain.
     .complete 27788,1 --"Skullcrusher the Mountain" Kill Credit (1)

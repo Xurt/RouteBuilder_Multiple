@@ -1,5 +1,5 @@
 Ammen Vale - Alliance
-Guide "1-5 Ammen Vale" in group "Zone Routes (Alliance)": 51 steps, 48 stops
+Guide "1-5 Ammen Vale" in group "Zone Routes (Alliance)": 52 steps, 49 stops
 Written to guides/mop/Ammen Vale (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

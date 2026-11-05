@@ -1,5 +1,5 @@
 Grizzly Hills - Alliance - part 1 of 2, planned from level 73
-Guide "73-75 Grizzly Hills" in group "Zone Routes (Alliance)": this part has 256 steps, 212 stops
+Guide "73-75 Grizzly Hills" in group "Zone Routes (Alliance)": this part has 263 steps, 221 stops
 Written to guides/mop/Grizzly Hills (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -21,7 +21,7 @@ Step order kept from the last build (locks folder): 259 steps kept, 11 new ones 
   everyone (quests that depend on other zones): 81 more tasks; their whole route comes to 51,942 yd; ends at level 74.5; 1 hearth; at its hardest you are 1.3 levels below the mobs
 Hearthstone: set at Veira Langdon (Veira Langdon's inn); 1 hearth step in the guide.
 2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-29 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+27 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 4 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 9 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 

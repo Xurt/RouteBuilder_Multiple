@@ -930,16 +930,6 @@ step
     .accept 26664 >>Accept Making Mutiny
     .isQuestTurnedIn 26650 --any of: The Damsel's Luck
 step
-    #completewith Along33
-    >>As you go: Kill |cRXP_ENEMY_Bloodsail Corsairs|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -26664,1 --Bloodsail Corsair slain (9)
-    .mob Bloodsail Corsair
-step
-    #completewith Along29
-    >>As you go: Click the |cRXP_PICK_Grog Barrel|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -26663,1 --Grog Barrel
-step
-    #label Along29
     .goto 210,51.27,91.38
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Long John Copper|r
     .complete 26662,1 --Long John Copper
@@ -951,11 +941,6 @@ step
     .complete 26663,1 --Grog Barrel
     .isOnQuest 26663
 step
-    #completewith Along31
-    >>As you go: Click the |cRXP_PICK_Gunpowder Barrel|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -26663,2 --Gunpowder Barrel
-step
-    #label Along31
     .goto 210,46.74,94.22
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Enormous Shawn Stooker|r
     .complete 26662,2 --Enormous Shawn Stooker
@@ -967,23 +952,22 @@ step
     .complete 26663,2 --Gunpowder Barrel
     .isOnQuest 26663
 step
-    #completewith Along33
-    >>As you go: Click the |cRXP_PICK_Cannonball Crate|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -26663,3 --Cannonball Crate
-step
-    #label Along33
     .goto 210,44.45,93.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wailing Mary Smitts|r
     .complete 26662,3 --Wailing Mary Smitts
     .target Wailing Mary Smitts
     .isOnQuest 26662
 step
-    .goto 210,44.64,93.31
+    .goto 210,44.65,92.76
     >>Click the |cRXP_PICK_Cannonball Crate|r
+    .complete 26663,3 --Cannonball Crate
+    .isOnQuest 26663
+step
+    .goto 210,46.62,94.06
     >>Kill |cRXP_ENEMY_Bloodsail Corsairs|r
-    .complete -26663,3 --Cannonball Crate
-    .complete -26664,1 --Bloodsail Corsair slain (9)
+    .complete 26664,1 --Bloodsail Corsair slain (9)
     .mob Bloodsail Corsair
+    .isOnQuest 26664
 step
     .goto 210,50.24,91.46
     >>Click the |cRXP_PICK_Captain Stillwater's Charts|r
@@ -1055,18 +1039,43 @@ step
     .target Fleet Master Seahorn
     .isQuestTurnedIn 26698 --any of: Seeking Seahorn
 step
-    #loop
-    .goto 210,41.72,71.86,0
-    .goto 210,41.72,71.86,40,0
-    .goto 210,42.88,69.67,40,0
+    .goto 210,42.56,69.12
     >>Pick up |cRXP_PICK_Narkk's Handbombs|r from the ground
+    .complete 26695,1 --Narkk's Handbombs (1)
+    .isOnQuest 26695
+step
+    #loop
+    .goto 210,42.88,69.67,0
+    .goto 210,42.88,69.67,40,0
+    .goto 210,42.21,72.94,40,0
     >>Kill |cRXP_ENEMY_Brashtide Raiders|r
-    >>Kill |cRXP_ENEMY_Bloodsail Corsairs|r
-    .complete -26695,1 --Narkk's Handbombs (1)
-    .complete -26699,1 --Brashtide Raider slain (10)
-    .complete -26700,1 --Bloodsail Corsair slain (8)
+    .complete 26699,1 --Brashtide Raider slain (10)
     .mob Brashtide Raider
+    .isOnQuest 26699
+step
+    .goto 210,41.18,73.06
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baron Revilgaz|r
+    .turnin 26695 >>Turn in Prepare for Takeoff while you are here
+    .isQuestComplete 26695
+    .target Baron Revilgaz
+step
+    .goto 210,41.18,73.06
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baron Revilgaz|r
+    .turnin 26699 >>Turn in Turning the Brashtide while you are here
+    .isQuestComplete 26699
+    .target Baron Revilgaz
+step
+    .goto 210,41.36,71.28
+    >>Kill |cRXP_ENEMY_Bloodsail Corsairs|r
+    .complete 26700,1 --Bloodsail Corsair slain (8)
     .mob Bloodsail Corsair
+    .isOnQuest 26700
+step
+    .goto 210,41.18,73.06
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baron Revilgaz|r
+    .turnin 26700 >>Turn in The Damsel's (Bad) Luck while you are here
+    .isQuestComplete 26700
+    .target Baron Revilgaz
 step
     .goto 210,41.18,73.06
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baron Revilgaz|r
@@ -1093,15 +1102,22 @@ step
     .isQuestTurnedIn 26695 --any of: Prepare for Takeoff
 step
     #loop
-    .goto 210,37.68,68.44,0
-    .goto 210,37.68,68.44,40,0
-    .goto 210,38.68,66.68,40,0
+    .goto 210,37.70,68.73,0
+    .goto 210,37.70,68.73,40,0
+    .goto 210,39.04,66.48,40,0
     >>Kill |cRXP_ENEMY_Brashtide Attack Boats|r
-    >>Kill |cRXP_ENEMY_Brashtide Crewmans|r
-    .complete -26697,2 --Brashtide Attack Boat slain (6)
-    .complete -26697,1 --Brashtide Crewman slain (8)
+    .complete 26697,2 --Brashtide Attack Boat slain (6)
     .mob Brashtide Attack Boat
+    .isOnQuest 26697
+step
+    #loop
+    .goto 210,38.68,66.68,0
+    .goto 210,38.68,66.68,40,0
+    .goto 210,37.67,68.66,40,0
+    >>Kill |cRXP_ENEMY_Brashtide Crewmans|r
+    .complete 26697,1 --Brashtide Crewman slain (8)
     .mob Brashtide Crewman
+    .isOnQuest 26697
 step
     .goto 210,41.18,73.06
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baron Revilgaz|r

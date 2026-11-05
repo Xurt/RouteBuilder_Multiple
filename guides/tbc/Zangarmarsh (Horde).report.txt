@@ -112,7 +112,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Zangarmarsh - Horde - part 2 of 2, planned from level 64
-Guide "61-65 Zangarmarsh" in group "Zone Routes (Horde)": this part has 56 steps, 41 stops
+Guide "61-65 Zangarmarsh" in group "Zone Routes (Horde)": this part has 59 steps, 45 stops
 Written to guides/tbc/Zangarmarsh (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -136,7 +136,6 @@ Hearthstone: set at Horde Field Scout (Horde Field Scout's inn); 2 hearth steps 
 These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
 The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
   level 64 for Reinforcements for Garadar
-2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 9 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 

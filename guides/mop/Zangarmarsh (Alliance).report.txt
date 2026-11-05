@@ -1,5 +1,5 @@
 Zangarmarsh - Alliance - part 1 of 2, planned from level 62
-Guide "62-65 Zangarmarsh" in group "Zone Routes (Alliance)": this part has 133 steps, 104 stops
+Guide "62-65 Zangarmarsh" in group "Zone Routes (Alliance)": this part has 134 steps, 105 stops
 Written to guides/mop/Zangarmarsh (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

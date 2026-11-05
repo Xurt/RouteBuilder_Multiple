@@ -94,20 +94,32 @@ step
     .accept 635 >>Accept Crystal in the Mountains
     .use 4614
 step
-    #label Drop635x2
     #loop
     .goto 1443/1,832.24,-345.96,0
     .goto 1443/1,832.24,-345.96,40,0
     .goto 1443/1,888.88,-255.72,40,0
     .goto 1443/1,759.40,-258.72,40,0
     >>Kill |cRXP_ENEMY_Hatefury Rogues|r, |cRXP_ENEMY_Hatefury Tricksters|r, |cRXP_ENEMY_Hatefury Felsworns|r and |cRXP_ENEMY_Hatefury Betrayers|r. Loot them for |cRXP_LOOT_Hatefury Claw|r
-    >>Kill |cRXP_ENEMY_Hatefury Rogues|r, |cRXP_ENEMY_Hatefury Tricksters|r, |cRXP_ENEMY_Hatefury Felsworns|r and |cRXP_ENEMY_Hatefury Betrayers|r. Loot them for |cRXP_LOOT_Hatefury Horn|r
-    .complete -1458,1 --Hatefury Claw (10)
-    .complete -1458,2 --Hatefury Horn (10)
+    .complete 1458,1 --Hatefury Claw (10)
     .mob Hatefury Rogue
     .mob Hatefury Trickster
     .mob Hatefury Felsworn
     .mob Hatefury Betrayer
+    .isOnQuest 1458
+step
+    #label Drop635x2
+    #loop
+    .goto 1443/1,832.24,-345.96,0
+    .goto 1443/1,832.24,-345.96,40,0
+    .goto 1443/1,888.88,-255.72,40,0
+    .goto 1443/1,759.40,-258.72,40,0
+    >>Kill |cRXP_ENEMY_Hatefury Rogues|r, |cRXP_ENEMY_Hatefury Tricksters|r, |cRXP_ENEMY_Hatefury Felsworns|r and |cRXP_ENEMY_Hatefury Betrayers|r. Loot them for |cRXP_LOOT_Hatefury Horn|r
+    .complete 1458,2 --Hatefury Horn (10)
+    .mob Hatefury Rogue
+    .mob Hatefury Trickster
+    .mob Hatefury Felsworn
+    .mob Hatefury Betrayer
+    .isOnQuest 1458
 step
     .goto 1443/1,1246.30,97.73
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vahlarriel Demonslayer|r
@@ -471,14 +483,6 @@ step
     >>Escort Gizelton Caravan past Mannoroc Coven
     .complete 5943,1 --Escort Gizelton Caravan past Mannoroc Coven
 step
-    #completewith Along10
-    >>As you go: Kill |cRXP_ENEMY_Doomwarder Captains|r, |cRXP_ENEMY_Lord Azrethocs|r and |cRXP_ENEMY_Kaskks|r. Loot them for |cRXP_LOOT_Doomwarder Blood|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -1466,3 --Doomwarder Blood (1)
-    .mob Doomwarder Captain
-    .mob Lord Azrethoc
-    .mob Kaskk
-step
-    #label Along10
     #loop
     .goto 1443/1,1614.06,-1812.54,0
     .goto 1443/1,1614.06,-1812.54,40,0
@@ -503,19 +507,26 @@ step
     .mob Magrami Spectre
 step
     #loop
-    .goto 1443/1,1904.94,-2051.78,0
-    .goto 1443/1,1904.94,-2051.78,40,0
-    .goto 1443/1,1933.71,-2130.02,40,0
+    .goto 1443/1,1894.60,-2064.97,0
+    .goto 1443/1,1894.60,-2064.97,40,0
+    .goto 1443/1,1956.64,-2023.30,40,0
     >>Kill |cRXP_ENEMY_Nether Maidens|r, |cRXP_ENEMY_Nether Sisters|r and |cRXP_ENEMY_Nether Sorceress|r. Loot them for |cRXP_LOOT_Nether Wing|r
-    >>Kill |cRXP_ENEMY_Doomwarder Captains|r, |cRXP_ENEMY_Lord Azrethocs|r and |cRXP_ENEMY_Kaskks|r. Loot them for |cRXP_LOOT_Doomwarder Blood|r
-    .complete -1466,2 --Nether Wing (10)
-    .complete -1466,3 --Doomwarder Blood (1)
+    .complete 1466,2 --Nether Wing (10)
     .mob Nether Maiden
     .mob Nether Sister
     .mob Nether Sorceress
+    .isOnQuest 1466
+step
+    #loop
+    .goto 1443/1,1904.94,-2051.78,0
+    .goto 1443/1,1904.94,-2051.78,40,0
+    .goto 1443/1,1933.71,-2130.02,40,0
+    >>Kill |cRXP_ENEMY_Doomwarder Captains|r, |cRXP_ENEMY_Lord Azrethocs|r and |cRXP_ENEMY_Kaskks|r. Loot them for |cRXP_LOOT_Doomwarder Blood|r
+    .complete 1466,3 --Doomwarder Blood (1)
     .mob Doomwarder Captain
     .mob Lord Azrethoc
     .mob Kaskk
+    .isOnQuest 1466
 step
     .goto 1443/1,1497.17,-1402.43
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Smeed Scrabblescrew|r

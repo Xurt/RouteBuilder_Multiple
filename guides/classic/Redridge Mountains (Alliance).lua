@@ -403,12 +403,6 @@ step
     .accept 89 >>Accept The Everstill Bridge
     .target Foreman Oslow
 step
-    #completewith Along15
-    >>As you go: Kill |cRXP_ENEMY_Redridge Mystics|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -124,2 --Redridge Mystic slain (8)
-    .mob Redridge Mystic
-step
-    #label Along15
     #loop
     .goto 1433/0,-2153.27,-9091.33,0
     .goto 1433/0,-2153.27,-9091.33,40,0
@@ -434,15 +428,22 @@ step
     .target Dockmaster Baren
 step
     #loop
-    .goto 1433/0,-2061.22,-9129.84,0
-    .goto 1433/0,-2061.22,-9129.84,40,0
-    .goto 1433/0,-2089.88,-9006.62,40,0
+    .goto 1433/0,-2091.83,-9080.47,0
+    .goto 1433/0,-2091.83,-9080.47,40,0
+    .goto 1433/0,-2031.27,-9102.19,40,0
     >>Kill |cRXP_ENEMY_Redridge Brutes|r
-    >>Kill |cRXP_ENEMY_Redridge Mystics|r
-    .complete -124,1 --Redridge Brute slain (10)
-    .complete -124,2 --Redridge Mystic slain (8)
+    .complete 124,1 --Redridge Brute slain (10)
     .mob Redridge Brute
+    .isOnQuest 124
+step
+    #loop
+    .goto 1433/0,-2010.21,-9052.09,0
+    .goto 1433/0,-2010.21,-9052.09,40,0
+    .goto 1433/0,-2089.88,-9006.62,40,0
+    >>Kill |cRXP_ENEMY_Redridge Mystics|r
+    .complete 124,2 --Redridge Mystic slain (8)
     .mob Redridge Mystic
+    .isOnQuest 124
 step
     #loop
     .goto 1433/0,-2319.99,-9532.94,0

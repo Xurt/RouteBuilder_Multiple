@@ -310,13 +310,17 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 64,91.27,79.94,0
     .goto 64,91.27,79.94,40,0
     .goto 64,92.16,77.02,40,0
-    .goto 64,94.00,71.18,40,0
     >>Kill |cRXP_ENEMY_Southsea Parrot Handlers|r and |cRXP_ENEMY_Southsea Sailors|r
-    >>Interact with |cRXP_FRIENDLY_Holdfast Cannons|r
     .complete 25589,1 --Southsea Parrot Handler (8)
-    .complete 25586,1 --Holdfast Cannon (8)
     .mob Southsea Parrot Handler
     .mob Southsea Sailor
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 64,91.35,75.99,0
+    .goto 64,91.35,75.99,40,0
+    .goto 64,94.00,71.18,40,0
+    >>Interact with |cRXP_FRIENDLY_Holdfast Cannons|r
+    .complete 25586,1 --Holdfast Cannon (8)
     .target Holdfast Cannon
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #completewith next
@@ -348,16 +352,30 @@ step
     .accept 28045 >>Accept The Greatest Flavor in the World!
     .target Brivelthwerp
 step
+    #completewith Along46
+    >>As you go: Kill |cRXP_ENEMY_Silithid Ravager|r and loot |cRXP_LOOT_Scoop of Silithid Goo|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 28045,1 --Scoop of Silithid Goo (1)
+    .mob Silithid Ravager
+step
+    #label Along46
     #loop
     .goto 64,69.46,86.59,0
     .goto 64,69.46,86.59,40,0
     .goto 64,71.08,82.69,40,0
     .goto 64,67.02,83.08,40,0
     >>Interact with |cRXP_FRIENDLY_Dead Employees|r
-    >>Kill |cRXP_ENEMY_Silithid Ravager|r and loot |cRXP_LOOT_Scoop of Silithid Goo|r
     .complete 28051,1 --Dead Employee (10)
-    .complete 28045,1 --Scoop of Silithid Goo (1)
     .target Dead Employee
+step
+    .goto 64,69.88,85.16
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brivelthwerp|r
+    .turnin 28051 >>Turn in We All Scream for Ice Cream... and then Die! while you are here
+    .isQuestComplete 28051
+    .target Brivelthwerp
+step
+    .goto 64,71.50,83.01
+    >>Kill |cRXP_ENEMY_Silithid Ravager|r and loot |cRXP_LOOT_Scoop of Silithid Goo|r
+    .complete 28045,1 --Scoop of Silithid Goo (1)
     .mob Silithid Ravager
 step
     .goto 64,69.88,85.16
@@ -568,7 +586,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 25870 >>Accept Grimtotem in the Post
     .target Thalia Amberhide
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along79
+    #completewith Along81
     >>As you go: Kill |cRXP_ENEMY_Grimtotem Invaders|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25870,1 --Grimtotem Invader slain (10)
     .mob Grimtotem Invader
@@ -583,7 +601,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .complete 25872,1 --Captured Freewind Brave slain (1)
     .mob Captured Freewind Brave
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along79
+    #label Along81
     .goto 64,44.63,50.01
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Montarr|r
     .accept 25874 >>Accept Horn of the Traitor
@@ -633,7 +651,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 27311 >>Accept No Weapons For You!
     .target Freewind Brave
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along88
+    #completewith Along91
     >>As you go: Kill |cRXP_ENEMY_Grimtotem Stompers|r, |cRXP_ENEMY_Grimtotem Reavers|r and |cRXP_ENEMY_Grimtotem Geomancers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 27313,1 --Grimtotem Stomper (8)
     .mob Grimtotem Stomper
@@ -642,12 +660,15 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 64,43.55,43.40
     >>Click the |cRXP_PICK_Grimtotem Weapon Rack|r
-    >>Kill |cRXP_ENEMY_Isha Gloomaxe|r
     .complete 27311,1 --Grimtotem Weapon Rack
-    .complete -27315,1 --Isha Gloomaxe slain (1)
-    .mob Isha Gloomaxe
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along88
+    .goto 64,43.75,43.76
+    >>Kill |cRXP_ENEMY_Isha Gloomaxe|r
+    .complete 27315,1 --Isha Gloomaxe slain (1)
+    .mob Isha Gloomaxe
+    .isOnQuest 27315
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along91
     .goto 64,43.40,43.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_The Rattle of Bones|r
     .accept 27317 >>Accept The Rattle of Bones
@@ -721,10 +742,13 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 64,33.97,37.17
     >>Pick up |cRXP_PICK_The Drums of War|r from the ground
-    >>Kill |cRXP_ENEMY_Grundig Darkcloud|r
     .complete 27326,1 --The Drums of War (1)
-    .complete -27324,1 --Grundig Darkcloud slain (1)
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 64,34.06,40.08
+    >>Kill |cRXP_ENEMY_Grundig Darkcloud|r
+    .complete 27324,1 --Grundig Darkcloud slain (1)
     .mob Grundig Darkcloud
+    .isOnQuest 27324
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 64,42.20,48.30
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Freewind Brave|r
@@ -807,14 +831,22 @@ step
     #loop
     .goto 64,11.00,34.56,0
     .goto 64,11.00,34.56,40,0
+    .goto 64,11.10,38.51,40,0
+    .goto 64,13.78,37.49,40,0
+    >>Kill |cRXP_ENEMY_Twilight Trappers|r. Loot them for |cRXP_LOOT_Trapper Net|r
+    .complete 28087,1 --Trapper Net (8)
+    .mob Twilight Trapper
+    .isOnQuest 28087
+step
+    #loop
+    .goto 64,10.67,39.68,0
     .goto 64,10.67,39.68,40,0
     .goto 64,13.15,38.78,40,0
-    >>Kill |cRXP_ENEMY_Twilight Trappers|r. Loot them for |cRXP_LOOT_Trapper Net|r
+    .goto 64,11.25,33.42,40,0
     >>Interact with |cRXP_FRIENDLY_Highperch Pridelings|r
-    .complete -28087,1 --Trapper Net (8)
-    .complete -28086,1 --Highperch Prideling (12)
-    .mob Twilight Trapper
+    .complete 28086,1 --Highperch Prideling (12)
     .target Highperch Prideling
+    .isOnQuest 28086
 step
     .goto 64,12.84,33.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pao'ka Swiftmountain|r
@@ -1018,18 +1050,26 @@ step
     .xp <38,1
 step
     #loop
-    .goto 64,31.31,55.08,0
-    .goto 64,31.31,55.08,40,0
-    .goto 64,29.52,58.23,40,0
-    .goto 64,26.45,57.20,40,0
+    .goto 64,28.87,54.11,0
+    .goto 64,28.87,54.11,40,0
+    .goto 64,27.44,57.14,40,0
     >>Kill |cRXP_ENEMY_Bulwark Defenders|r, |cRXP_ENEMY_Twilight Magus|r and |cRXP_ENEMY_Twilight Jailers|r. Loot them for |cRXP_LOOT_Twilight's Hammer Armor|r
-    >>Kill |cRXP_ENEMY_Bulwark Prisoners|r and |cRXP_ENEMY_Twilight Jailers|r
-    .complete -28125,1 --Twilight's Hammer Armor (1)
-    .complete -28127,1 --Bulwark Prisoner (5)
+    .complete 28125,1 --Twilight's Hammer Armor (1)
     .mob Bulwark Defender
     .mob Twilight Magus
     .mob Twilight Jailer
+    .isOnQuest 28125
+step
+    #loop
+    .goto 64,27.42,56.24,0
+    .goto 64,27.42,56.24,40,0
+    .goto 64,29.29,57.43,40,0
+    .goto 64,31.31,55.08,40,0
+    >>Kill |cRXP_ENEMY_Bulwark Prisoners|r and |cRXP_ENEMY_Twilight Jailers|r
+    .complete 28127,1 --Bulwark Prisoner (5)
     .mob Bulwark Prisoner
+    .mob Twilight Jailer
+    .isOnQuest 28127
 step
     .goto 64,30.47,49.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lakota Windsong|r
@@ -1058,11 +1098,6 @@ step
     .target Commander Fastfuse
     .isOnQuest 28136
 step
-    #completewith Along15
-    >>As you go: Open the |cRXP_PICK_Codemaster's Code Device|r. Loot it for |cRXP_LOOT_Codemaster's Code|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -28139,1 --Codemaster's Code (1)
-step
-    #label Along15
     .goto 64,31.24,59.68
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Codemaster Deethuk|r
     .complete 28136,1 --Codemaster Deethuk
@@ -1132,19 +1167,27 @@ step
     .isQuestTurnedIn 28142,28143 --any of: To the Withering, To the Withering
     .xp <38,1
 step
-    .goto 64,53.34,59.27
+    .goto 64,52.76,58.55
     >>Pick up |cRXP_PICK_Twilight Element of Water|r from the ground
+    .complete 28157,4 --Twilight Element of Water (1)
+    .isOnQuest 28157
+step
+    .goto 64,53.34,59.27
     >>Kill |cRXP_ENEMY_Bound Fury|r
-    .complete -28157,4 --Twilight Element of Water (1)
-    .complete -28158,1 --Bound Fury slain (1)
+    .complete 28158,1 --Bound Fury slain (1)
     .mob Bound Fury
+    .isOnQuest 28158
 step
     .goto 64,57.52,59.55
     >>Pick up |cRXP_PICK_Twilight Element of Air|r from the ground
+    .complete 28157,1 --Twilight Element of Air (1)
+    .isOnQuest 28157
+step
+    .goto 64,57.42,60.96
     >>Kill |cRXP_ENEMY_Bound Vortex|r
-    .complete -28157,1 --Twilight Element of Air (1)
-    .complete -28158,2 --Bound Vortex slain (1)
+    .complete 28158,2 --Bound Vortex slain (1)
     .mob Bound Vortex
+    .isOnQuest 28158
 step
     .goto 64,60.51,64.52
     >>Pick up |cRXP_PICK_Twilight Element of Fire|r from the ground
