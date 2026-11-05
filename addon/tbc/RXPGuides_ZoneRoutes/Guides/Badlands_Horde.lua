@@ -451,12 +451,21 @@ step
 step
     .goto 1418/0,-3419.18,-7281.09
     >>Kill |cRXP_ENEMY_Enraged Rock Elemental|r and loot |cRXP_LOOT_Singed Scroll Fragment|r
-    >>Kill |cRXP_ENEMY_Enraged Rock Elemental|r and loot |cRXP_LOOT_Crumpled Scroll Fragment|r
-    >>Kill |cRXP_ENEMY_Enraged Rock Elemental|r and loot |cRXP_LOOT_Torn Scroll Fragment|r
-    .complete -692,3 --Singed Scroll Fragment (1)
-    .complete -692,2 --Crumpled Scroll Fragment (1)
-    .complete -692,1 --Torn Scroll Fragment (1)
+    .complete 692,3 --Singed Scroll Fragment (1)
     .mob Enraged Rock Elemental
+    .isOnQuest 692
+step
+    .goto 1418/0,-3419.18,-7281.09
+    >>Kill |cRXP_ENEMY_Enraged Rock Elemental|r and loot |cRXP_LOOT_Crumpled Scroll Fragment|r
+    .complete 692,2 --Crumpled Scroll Fragment (1)
+    .mob Enraged Rock Elemental
+    .isOnQuest 692
+step
+    .goto 1418/0,-3419.18,-7281.09
+    >>Kill |cRXP_ENEMY_Enraged Rock Elemental|r and loot |cRXP_LOOT_Torn Scroll Fragment|r
+    .complete 692,1 --Torn Scroll Fragment (1)
+    .mob Enraged Rock Elemental
+    .isOnQuest 692
 step
     .goto 1418/0,-3357.49,-7164.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Theldurin the Lost|r

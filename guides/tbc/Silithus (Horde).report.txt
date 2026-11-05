@@ -1,5 +1,5 @@
 Silithus - Horde - part 1 of 3, planned from level 55
-Guide "55-60 Silithus" in group "Zone Routes (Horde)": this part has 34 steps, 31 stops
+Guide "55-60 Silithus" in group "Zone Routes (Horde)": this part has 36 steps, 33 stops
 Written to guides/tbc/Silithus (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -97,7 +97,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Silithus - Horde - part 2 of 3, planned from level 58
-Guide "55-60 Silithus" in group "Zone Routes (Horde)": this part has 39 steps, 34 stops
+Guide "55-60 Silithus" in group "Zone Routes (Horde)": this part has 40 steps, 35 stops
 Written to guides/tbc/Silithus (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

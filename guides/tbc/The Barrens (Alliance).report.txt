@@ -256,7 +256,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 The Barrens - Alliance - part 5 of 6, planned from level 31
-Guide "14-31 The Barrens" in group "Zone Routes (Alliance)": this part has 16 steps, 14 stops
+Guide "14-31 The Barrens" in group "Zone Routes (Alliance)": this part has 18 steps, 16 stops
 Written to guides/tbc/The Barrens (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -317,7 +317,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 The Barrens - Alliance - part 6 of 6, planned from level 34
-Guide "14-31 The Barrens" in group "Zone Routes (Alliance)": this part has 7 steps, 6 stops
+Guide "14-31 The Barrens" in group "Zone Routes (Alliance)": this part has 9 steps, 8 stops
 Written to guides/tbc/The Barrens (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

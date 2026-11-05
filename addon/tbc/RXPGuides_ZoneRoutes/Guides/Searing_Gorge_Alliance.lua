@@ -319,11 +319,15 @@ step
 step
     .goto 1427/0,-1244.87,-6479.76
     >>Kill |cRXP_ENEMY_Lathoric the Black|r and loot |cRXP_LOOT_Head of Lathoric the Black|r
-    >>Kill |cRXP_ENEMY_Obsidion|r and loot |cRXP_LOOT_Heart of Obsidion|r
-    .complete -3566,1 --Head of Lathoric the Black (1)
-    .complete -3566,2 --Heart of Obsidion (1)
+    .complete 3566,1 --Head of Lathoric the Black (1)
     .mob Lathoric the Black
+    .isOnQuest 3566
+step
+    .goto 1427/0,-1254.69,-6461.91
+    >>Kill |cRXP_ENEMY_Obsidion|r and loot |cRXP_LOOT_Heart of Obsidion|r
+    .complete 3566,2 --Heart of Obsidion (1)
     .mob Obsidion
+    .isOnQuest 3566
 step
     .goto 1427/0,-1183.73,-6513.67
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hansel Heavyhands|r
@@ -447,10 +451,15 @@ step
     .target Squire Maltrake
     .isQuestTurnedIn 3462 --any of: Squire Maltrake
 step
+    .goto 1427/0,-1065.92,-6910.39
+    >>Click the |cRXP_PICK_Sentry Brazier|r
+    .complete 3463,4 --Northern Tower Ablaze
+    .isOnQuest 3463
+step
     .goto 1427/0,-1118.80,-7002.61
     >>Click the |cRXP_PICK_Sentry Brazier|r
-    .complete -3463,4 --Northern Tower Ablaze
-    .complete -3463,1 --Western Tower Ablaze
+    .complete 3463,1 --Western Tower Ablaze
+    .isOnQuest 3463
 step
     .goto 1427/0,-1248.89,-7215.18
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Graw Cornerstone|r

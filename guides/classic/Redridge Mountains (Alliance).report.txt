@@ -102,7 +102,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Redridge Mountains - Alliance - part 2 of 5, planned from level 17
-Guide "14-26 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 30 steps, 22 stops
+Guide "14-26 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 30 steps, 23 stops
 Written to guides/classic/Redridge Mountains (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -125,7 +125,6 @@ Step order kept from the last build (locks folder): 18 steps kept, 4 new ones sl
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
 2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
 4 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
-1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (8)
 -----------------------

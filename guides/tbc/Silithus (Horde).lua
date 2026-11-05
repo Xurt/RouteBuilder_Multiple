@@ -50,20 +50,26 @@ step
     .complete 8284,1 --Twilight Tablet Fragment (8)
 step
     #loop
-    .goto 1451/1,670.08,-6252.18,0
-    .goto 1451/1,670.08,-6252.18,40,0
-    .goto 1451/1,659.98,-6366.93,40,0
-    .goto 1451/1,455.86,-6607.36,40,0
-    .goto 1451/1,490.34,-6433.60,40,0
+    .goto 1451/1,546.43,-6413.63,0
+    .goto 1451/1,546.43,-6413.63,40,0
+    .goto 1451/1,439.49,-6411.53,40,0
+    .goto 1451/1,492.78,-6582.50,40,0
     >>Kill |cRXP_ENEMY_Stonelash Scorpids|r. Loot them for |cRXP_LOOT_Stonelash Scorpid Stinger|r
     >>Kill |cRXP_ENEMY_Sand Skitterers|r. Loot them for |cRXP_LOOT_Sand Skitterer Fang|r
-    >>Kill |cRXP_ENEMY_Dredge Strikers|r
     .complete 8277,1 --Stonelash Scorpid Stinger (8)
     .complete 8277,2 --Sand Skitterer Fang (8)
-    .complete -8280,1 --Dredge Striker slain (15)
     .mob Stonelash Scorpid
     .mob Sand Skitterer
+step
+    #loop
+    .goto 1451/1,591.01,-6369.03,0
+    .goto 1451/1,591.01,-6369.03,40,0
+    .goto 1451/1,670.08,-6252.18,40,0
+    .goto 1451/1,738.01,-6385.05,40,0
+    >>Kill |cRXP_ENEMY_Dredge Strikers|r
+    .complete 8280,1 --Dredge Striker slain (15)
     .mob Dredge Striker
+    .isOnQuest 8280
 step
     .goto 1451/1,807.33,-6828.50
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Geologist Larksbane|r
@@ -182,16 +188,24 @@ step
     .xp <54,1
 step
     #loop
-    .goto 1451/1,343.70,-7122.35,0
-    .goto 1451/1,343.70,-7122.35,40,0
-    .goto 1451/1,325.23,-7224.32,40,0
-    .goto 1451/1,418.24,-7219.91,40,0
+    .goto 1451/1,319.66,-7055.21,0
+    .goto 1451/1,319.66,-7055.21,40,0
+    .goto 1451/1,351.01,-7141.86,40,0
+    .goto 1451/1,352.40,-7314.22,40,0
     >>Kill |cRXP_ENEMY_Tortured Druids|r
-    >>Kill |cRXP_ENEMY_Tortured Sentinels|r
-    .complete -1125,1 --Tortured Druid slain (8)
-    .complete -1125,2 --Tortured Sentinel slain (8)
+    .complete 1125,1 --Tortured Druid slain (8)
     .mob Tortured Druid
+    .isOnQuest 1125
+step
+    #loop
+    .goto 1451/1,352.40,-7216.19,0
+    .goto 1451/1,352.40,-7216.19,40,0
+    .goto 1451/1,444.02,-7252.90,40,0
+    .goto 1451/1,351.71,-7116.54,40,0
+    >>Kill |cRXP_ENEMY_Tortured Sentinels|r
+    .complete 1125,2 --Tortured Sentinel slain (8)
     .mob Tortured Sentinel
+    .isOnQuest 1125
 step
     .goto 1451/1,-314.31,-6398.06
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Layo Starstrike|r
@@ -296,13 +310,17 @@ step
     .goto 1451/1,1188.40,-6992.96,40,0
     .goto 1451/1,1120.13,-6988.55,40,0
     >>Kill |cRXP_ENEMY_Twilight Keeper Havunths|r, |cRXP_ENEMY_Twilight Avengers|r, |cRXP_ENEMY_Twilight Geolords|r and |cRXP_ENEMY_Twilight Stonecallers|r. Loot them for |cRXP_LOOT_Encrypted Twilight Text|r
-    >>Kill |cRXP_ENEMY_Twilight Keeper Havunth|r and loot |cRXP_LOOT_Twilight Lexicon - Chapter 3|r
     .complete 8318,1 --Encrypted Twilight Text (10)
-    .complete -8279,3 --Twilight Lexicon - Chapter 3 (1)
     .mob Twilight Keeper Havunth
     .mob Twilight Avenger
     .mob Twilight Geolord
     .mob Twilight Stonecaller
+step
+    .goto 1451/1,1114.21,-6939.07
+    >>Kill |cRXP_ENEMY_Twilight Keeper Havunth|r and loot |cRXP_LOOT_Twilight Lexicon - Chapter 3|r
+    .complete 8279,3 --Twilight Lexicon - Chapter 3 (1)
+    .mob Twilight Keeper Havunth
+    .isOnQuest 8279
 step
     .goto 1451/1,1619.64,-6808.99
     >>Kill |cRXP_ENEMY_Twilight Keeper Mayna|r and loot |cRXP_LOOT_Twilight Lexicon - Chapter 1|r
@@ -400,7 +418,7 @@ step
     .mob Hive'Regal Spitfire
     .mob Hive'Regal Slavemaker
 step
-    #completewith Along23
+    #completewith Along24
     >>As you go: Kill |cRXP_ENEMY_Hive'Zora Waywatchers|r, |cRXP_ENEMY_Hive'Zora Tunnelers|r, |cRXP_ENEMY_Hive'Zora Wasps|r and |cRXP_ENEMY_Hive'Zora Reavers|r. Loot them for |cRXP_LOOT_Hive'Zora Silithid Brain|r. |cRXP_WARN_Anything left is finished later|r
     .complete 8310,2 --Hive'Zora Silithid Brain (1)
     .mob Hive'Zora Waywatcher
@@ -408,7 +426,7 @@ step
     .mob Hive'Zora Wasp
     .mob Hive'Zora Reaver
 step
-    #label Along23
+    #label Along24
     .goto 1451/1,1239.26,-7410.16
     >>Open the |cRXP_PICK_Hive'Zora Glyphed Crystal|r. Loot it for |cRXP_LOOT_Hive'Zora Rubbing|r
     .complete 8309,2 --Hive'Zora Rubbing (1)

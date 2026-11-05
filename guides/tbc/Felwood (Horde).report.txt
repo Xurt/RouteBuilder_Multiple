@@ -102,7 +102,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Felwood - Horde - part 2 of 3, planned from level 51
-Guide "48-56 Felwood" in group "Zone Routes (Horde)": this part has 51 steps, 43 stops
+Guide "48-56 Felwood" in group "Zone Routes (Horde)": this part has 49 steps, 43 stops
 Written to guides/tbc/Felwood (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -124,7 +124,6 @@ Step order kept from the last build (locks folder): 30 steps kept, 22 new ones s
   everyone (quests that depend on other zones): 7 more tasks; their whole route comes to 15,827 yd; ends at level 51.6; 1 hearth; at its hardest you are 2.0 levels below the mobs
 Hearthstone: set at Altsoba Ragetotem (Altsoba Ragetotem's inn); 1 hearth step in the guide.
 1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
-2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (18)
 ------------------------
@@ -184,7 +183,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Felwood - Horde - part 3 of 3, planned from level 54
-Guide "48-56 Felwood" in group "Zone Routes (Horde)": this part has 34 steps, 30 stops
+Guide "48-56 Felwood" in group "Zone Routes (Horde)": this part has 36 steps, 33 stops
 Written to guides/tbc/Felwood (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -207,7 +206,6 @@ Step order kept from the last build (locks folder): 25 steps kept, 7 new ones sl
   Warlock (quests that depend on other zones): 4 more tasks; their whole route comes to 16,005 yd; ends at level 54.1; 1 ORDER PROBLEMS; at its hardest you are 1.9 levels below the mobs
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
 2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (15)
 ------------------------

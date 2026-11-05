@@ -749,23 +749,29 @@ step
     .xp <62,1
 step
     #loop
-    .goto 1952,29.82,51.62,0
-    .goto 1952,29.82,51.62,40,0
-    .goto 1952,27.36,53.39,40,0
+    .goto 1952,28.83,52.39,0
+    .goto 1952,28.83,52.39,40,0
+    .goto 1952,26.98,54.72,40,0
     .goto 1952,26.69,58.28,40,0
     >>Kill |cRXP_ENEMY_Deathtalon Spirits|r
     >>Kill |cRXP_ENEMY_Screeching Spirits|r
     >>Kill |cRXP_ENEMY_Spirit Ravens|r
-    >>Open the |cRXP_PICK_Cabal Chest|r. Loot it for |cRXP_LOOT_Gavel of K'alen|r
-    >>Open the |cRXP_PICK_Cabal Chest|r. Loot it for |cRXP_LOOT_Drape of Arunen|r
     .complete 10848,1 --Deathtalon Spirit slain (4)
     .complete 10848,2 --Screeching Spirit slain (4)
     .complete 10848,3 --Spirit Raven slain (2)
-    .complete -10881,2 --Gavel of K'alen (1)
-    .complete -10881,1 --Drape of Arunen (1)
     .mob Deathtalon Spirit
     .mob Screeching Spirit
     .mob Spirit Raven
+step
+    .goto 1952,29.65,51.69
+    >>Open the |cRXP_PICK_Cabal Chest|r. Loot it for |cRXP_LOOT_Gavel of K'alen|r
+    .complete 10881,2 --Gavel of K'alen (1)
+    .isOnQuest 10881
+step
+    .goto 1952,32.10,51.20
+    >>Open the |cRXP_PICK_Cabal Chest|r. Loot it for |cRXP_LOOT_Drape of Arunen|r
+    .complete 10881,1 --Drape of Arunen (1)
+    .isOnQuest 10881
 step
     .goto 1952,31.11,46.65
     >>Open the |cRXP_PICK_Cabal Chest|r. Loot it for |cRXP_LOOT_Scroll of Atalor|r
@@ -941,14 +947,14 @@ step
     .accept 10007 >>Accept Thinning the Ranks
     .target Theloria Shadecloak
 step
-    #completewith Along97
+    #completewith Along99
     >>As you go: Kill |cRXP_ENEMY_Bonechewer Backbreakers|r. Kill |cRXP_ENEMY_Bonechewer Devastators|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10007,2 --Bonechewer Backbreaker slain (6)
     .complete 10007,1 --Bonechewer Devastator slain (10)
     .mob Bonechewer Backbreaker
     .mob Bonechewer Devastator
 step
-    #label Along97
+    #label Along99
     .goto 1952,67.92,53.56
     >>Click the |cRXP_PICK_Fel Orc Plans|r
     .accept 10012 >>Accept Fel Orc Plans
@@ -979,30 +985,30 @@ step
     .target David Wayne
     .isOnQuest 10662
 step
-    #completewith Along102
+    #completewith Along104
     >>As you go: Kill |cRXP_ENEMY_Firewing Defenders|r. Kill |cRXP_ENEMY_Firewing Bloodwarders|r. |cRXP_WARN_Anything left is finished later|r
     .complete 9996,1 --Firewing Defender slain (10)
     .complete 9996,2 --Firewing Bloodwarder slain (10)
     .mob Firewing Defender
     .mob Firewing Bloodwarder
 step
-    #completewith Along101
+    #completewith Along103
     >>As you go: Kill |cRXP_ENEMY_Firewing Warlocks|r. |cRXP_WARN_Anything left is finished later|r
     .complete 9996,3 --Firewing Warlock slain (10)
     .mob Firewing Warlock
 step
-    #label Along101
+    #label Along103
     .goto 1952,73.93,35.14
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Isla Starmane|r
     .accept 10051 >>Accept Escape from Firewing Point!
     .target Isla Starmane
 step
-    #completewith Along102
+    #completewith Along104
     >>As you go: Kill |cRXP_ENEMY_Warp Stalkers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10026,1 --Warp Stalker slain (10)
     .mob Warp Stalker
 step
-    #label Along102
+    #label Along104
     .goto 1952,67.51,37.28
     >>Escort Isla Starmane to safety
     .complete 10051,1 --Escort Isla Starmane to safety
@@ -1244,17 +1250,17 @@ step
     >>Click the |cRXP_PICK_Sapphire Signal Fire|r
     .complete 10874,1 --Sapphire Fire Extinguished
 step
-    #completewith Along133
+    #completewith Along135
     >>As you go: Kill |cRXP_ENEMY_Lost Spirits|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10031,1 --Lost Spirit slain (10)
     .mob Lost Spirit
 step
-    #completewith Along133
+    #completewith Along135
     >>As you go: Kill |cRXP_ENEMY_Broken Skeletons|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10031,2 --Broken Skeleton slain (10)
     .mob Broken Skeleton
 step
-    #label Along133
+    #label Along135
     .goto 1952,49.71,76.19
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vindicator Haylen|r
     .accept 10920 >>Accept For the Fallen
@@ -1288,12 +1294,12 @@ step
     .complete 10920,1 --Dreadfang Widow slain (20)
     .mob Dreadfang Widow
 step
-    #completewith Along140
+    #completewith Along142
     >>As you go: Kill |cRXP_ENEMY_Lost Spirits|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10031,1 --Lost Spirit slain (10)
     .mob Lost Spirit
 step
-    #completewith Along140
+    #completewith Along142
     >>As you go: Kill |cRXP_ENEMY_Broken Skeletons|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10031,2 --Broken Skeleton slain (10)
     .mob Broken Skeleton
@@ -1309,7 +1315,7 @@ step
     .complete 10921,1 --Terokkarantula slain (1)
     .mob Terokkarantula
 step
-    #label Along140
+    #label Along142
     .goto 1952,49.71,76.19
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vindicator Haylen|r
     .turnin 10921 >>Turn in Terokkarantula
@@ -1327,12 +1333,12 @@ step
     .complete 10914,1 --Auchenai Initiate slain (12)
     .mob Auchenai Initiate
 step
-    #completewith Along143
+    #completewith Along145
     >>As you go: Kill |cRXP_ENEMY_Broken Skeletons|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10031,2 --Broken Skeleton slain (10)
     .mob Broken Skeleton
 step
-    #label Along143
+    #label Along145
     #loop
     .goto 1952,48.60,65.91,0
     .goto 1952,48.60,65.91,40,0
@@ -1370,13 +1376,13 @@ step
     .target Dwarfowitz
     .xp <63,1
 step
-    #completewith Along148
+    #completewith Along150
     >>As you go: Kill |cRXP_ENEMY_Auchenai Death-Speakers|r and |cRXP_ENEMY_Auchenai Doomsayers|r. Loot them for |cRXP_LOOT_Doom Skull|r. |cRXP_WARN_Anything left is finished later|r
     .collect 31812,1,10923,1 --Doom Skull (1)
     .mob Auchenai Death-Speaker
     .mob Auchenai Doomsayer
 step
-    #label Along148
+    #label Along150
     .goto 1952,35.15,66.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ramdor the Mad|r
     .turnin 10253 >>Turn in Levixus the Soul Caller
@@ -1392,7 +1398,7 @@ step
     .mob Auchenai Doomsayer
     .mob Reanimated Exarch
 step
-    #completewith Along151
+    #completewith Along153
     >>As you go: Kill |cRXP_ENEMY_Broken Skeletons|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10031,2 --Broken Skeleton slain (10)
     .mob Broken Skeleton
@@ -1402,7 +1408,7 @@ step
     .complete 10923,1 --Teribus the Cursed slain (1)
     .mob Teribus the Cursed
 step
-    #label Along151
+    #label Along153
     .goto 1952,48.05,75.70
     >>Kill |cRXP_ENEMY_Lost Spirits|r
     .complete 10031,1 --Lost Spirit slain (10)

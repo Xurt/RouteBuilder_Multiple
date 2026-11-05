@@ -36,19 +36,31 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .xp <80,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 204,53.95,62.88,0
-    .goto 204,53.95,62.88,40,0
-    .goto 204,52.74,60.43,40,0
-    .goto 204,56.08,59.64,40,0
+    .goto 204,55.74,62.12,0
+    .goto 204,55.74,62.12,40,0
+    .goto 204,54.13,60.33,40,0
     >>Kill |cRXP_ENEMY_Seabrush Terrapins|r. Loot them for |cRXP_LOOT_Terrapin Oil|r
-    >>Kill |cRXP_ENEMY_Scourgut Remoras|r. Loot them for |cRXP_LOOT_Remora Oil|r
-    >>Kill |cRXP_ENEMY_Spinescale Hammerheads|r. Loot them for |cRXP_LOOT_Hammerhead Oil|r
-    .complete -26103,1 --Terrapin Oil (4)
-    .complete -26103,2 --Remora Oil (4)
-    .complete -26103,3 --Hammerhead Oil (4)
+    .complete 26103,1 --Terrapin Oil (4)
     .mob Seabrush Terrapin
+    .isOnQuest 26103
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
+    .goto 204,56.08,59.64,0
+    .goto 204,56.08,59.64,40,0
+    .goto 204,52.42,59.46,40,0
+    >>Kill |cRXP_ENEMY_Scourgut Remoras|r. Loot them for |cRXP_LOOT_Remora Oil|r
+    .complete 26103,2 --Remora Oil (4)
     .mob Scourgut Remora
+    .isOnQuest 26103
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
+    .goto 204,52.40,63.94,0
+    .goto 204,52.40,63.94,40,0
+    .goto 204,55.36,61.64,40,0
+    >>Kill |cRXP_ENEMY_Spinescale Hammerheads|r. Loot them for |cRXP_LOOT_Hammerhead Oil|r
+    .complete 26103,3 --Hammerhead Oil (4)
     .mob Spinescale Hammerhead
+    .isOnQuest 26103
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 204,55.50,72.90
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Engineer Hexascrub|r
@@ -77,10 +89,13 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 204,52.08,62.22
     >>Kill |cRXP_ENEMY_Hellscream Seadogs|r
-    >>Click the |cRXP_PICK_Fuel Sampling Station|r
     .complete 26105,1 --Hellscream Seadog slain (7)
-    .complete -26106,1 --Fuel Sampling Station
     .mob Hellscream Seadog
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 204,51.49,60.41
+    >>Click the |cRXP_PICK_Fuel Sampling Station|r
+    .complete 26106,1 --Fuel Sampling Station
+    .isOnQuest 26106
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 204,55.50,72.90
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Engineer Hexascrub|r
@@ -143,21 +158,35 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 26019 >>Accept Enormous Eel Egg
     .use 56571
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
+    .goto 204,46.36,53.22,0
+    .goto 204,46.36,53.22,40,0
+    .goto 204,47.01,55.50,40,0
+    .goto 204,45.61,58.42,40,0
+    >>Kill |cRXP_ENEMY_Coldlight Oracles|r
+    .complete 26018,2 --Coldlight Oracle slain (4)
+    .mob Coldlight Oracle
+    .isOnQuest 26018
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #label Drop26019x1
     #loop
-    .goto 204,47.39,51.35,0
-    .goto 204,47.39,51.35,40,0
-    .goto 204,46.08,55.76,40,0
-    .goto 204,42.76,55.61,40,0
-    >>Kill |cRXP_ENEMY_Coldlight Oracles|r
+    .goto 204,46.23,55.37,0
+    .goto 204,46.23,55.37,40,0
+    .goto 204,45.55,58.42,40,0
     >>Kill |cRXP_ENEMY_Coldlight Hunters|r
-    >>Kill |cRXP_ENEMY_Underlight Nibblers|r. Loot them for |cRXP_LOOT_Underlight Nibbler|r
-    .complete -26018,2 --Coldlight Oracle slain (4)
-    .complete -26018,1 --Coldlight Hunter slain (4)
-    .complete -26017,1 --Underlight Nibbler (30)
-    .mob Coldlight Oracle
+    .complete 26018,1 --Coldlight Hunter slain (4)
     .mob Coldlight Hunter
+    .isOnQuest 26018
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
+    .goto 204,46.19,55.33,0
+    .goto 204,46.19,55.33,40,0
+    .goto 204,47.39,51.35,40,0
+    .goto 204,42.76,55.61,40,0
+    >>Kill |cRXP_ENEMY_Underlight Nibblers|r. Loot them for |cRXP_LOOT_Underlight Nibbler|r
+    .complete 26017,1 --Underlight Nibbler (30)
     .mob Underlight Nibbler
+    .isOnQuest 26017
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 204,47.36,49.75
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Humphrey Digsong|r
@@ -240,23 +269,36 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isOnQuest 26021
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 204,43.50,21.03,0
-    .goto 204,43.50,21.03,40,0
-    .goto 204,43.42,15.56,40,0
-    .goto 204,39.70,16.56,40,0
+    .goto 204,43.50,21.04,0
+    .goto 204,43.50,21.04,40,0
+    .goto 204,42.46,18.01,40,0
     >>Kill |cRXP_ENEMY_Merciless Ones|r and |cRXP_ENEMY_Taken Gilblins|r. Loot them for |cRXP_LOOT_Merciless Head|r
-    >>Kill |cRXP_ENEMY_Deepfin Scroungers|r. Loot them for |cRXP_LOOT_Deepfin Plunder|r. It can also be picked up from |cRXP_PICK_Deepfin Plunder|r on the ground
-    >>Kill |cRXP_ENEMY_Sira'kess Sea Witches|r, |cRXP_ENEMY_Sira'kess Tide Priestess|r, |cRXP_ENEMY_Fathom-Caller Azrajars|r and |cRXP_ENEMY_Sira'kess Guardians|r
-    .complete -25981,1 --Merciless Head (6)
-    .complete -25975,1 --Deepfin Plunder (6)
-    .complete -25950,1 --Sira'kess Sea Witch (8)
+    .complete 25981,1 --Merciless Head (6)
     .mob Merciless One
     .mob Taken Gilblin
+    .isOnQuest 25981
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
+    .goto 204,44.36,16.21,0
+    .goto 204,44.36,16.21,40,0
+    .goto 204,42.97,14.80,40,0
+    .goto 204,39.70,16.56,40,0
+    >>Kill |cRXP_ENEMY_Deepfin Scroungers|r. Loot them for |cRXP_LOOT_Deepfin Plunder|r. It can also be picked up from |cRXP_PICK_Deepfin Plunder|r on the ground
+    .complete 25975,1 --Deepfin Plunder (6)
     .mob Deepfin Scrounger
+    .isOnQuest 25975
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
+    .goto 204,42.34,15.09,0
+    .goto 204,42.34,15.09,40,0
+    .goto 204,45.46,16.96,40,0
+    >>Kill |cRXP_ENEMY_Sira'kess Sea Witches|r, |cRXP_ENEMY_Sira'kess Tide Priestess|r, |cRXP_ENEMY_Fathom-Caller Azrajars|r and |cRXP_ENEMY_Sira'kess Guardians|r
+    .complete 25950,1 --Sira'kess Sea Witch (8)
     .mob Sira'kess Sea Witch
     .mob Sira'kess Tide Priestess
     .mob Fathom-Caller Azrajar
     .mob Sira'kess Guardian
+    .isOnQuest 25950
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 204,52.45,21.29
     >>Plant the Alliance Standard in Fathom-Caller Azrajar's corpse.
@@ -352,13 +394,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Captain Taylor
     .isQuestTurnedIn 25987 --any of: Put It On
     .xp <80,1
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along49
-    >>As you go: Kill |cRXP_ENEMY_Chasm Stalkers|r, |cRXP_ENEMY_Deep Remoras|r and |cRXP_ENEMY_Crushing Eels|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -26070,1 --Chasm Stalker (8)
-    .mob Chasm Stalker
-    .mob Deep Remora
-    .mob Crushing Eel
 step
     .goto 204,40.92,35.92
     >>Kill |cRXP_ENEMY_Faceless Defilers|r
@@ -386,7 +421,6 @@ step
     .isQuestTurnedIn 25987,25988 --any of: Put It On, Put It On
     .xp <80,1
 step
-    #label Along49
     #loop
     .goto 204,41.33,37.02,0
     .goto 204,41.33,37.02,40,0
@@ -451,16 +485,20 @@ step
     .isQuestTurnedIn 26111 --any of: ... It Will Come
     .xp <80,1
 step
+    .goto 204,36.30,47.00
+    >>Kill |cRXP_ENEMY_Ur'Goz|r
+    .complete 26130,1 --Ur'Goz slain (1)
+    .mob Ur'Goz
+    .isOnQuest 26130
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 204,34.85,44.70,0
     .goto 204,34.85,44.70,40,0
     .goto 204,33.77,49.35,40,0
-    >>Kill |cRXP_ENEMY_Ur'Goz|r
-    >>Kill |cRXP_ENEMY_Nether Fiends|r << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .complete -26130,1 --Ur'Goz slain (1)
-    .complete -26132,1 << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren --Nether Fiend slain (8)
-    .mob Ur'Goz
-    .mob Nether Fiend << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    >>Kill |cRXP_ENEMY_Nether Fiends|r
+    .complete 26132,1 --Nether Fiend slain (8)
+    .mob Nether Fiend
+    .isOnQuest 26132
 step
     .goto 204,29.59,52.99
     >>Kill |cRXP_ENEMY_Neph'Lahim|r
@@ -506,6 +544,14 @@ step
     .target L'ghorek
     .isQuestTurnedIn 26140 --any of: Communing with the Ancient
     .xp <80,1
+step
+    #loop
+    .goto 204,28.09,57.22,0
+    .goto 204,28.09,57.22,40,0
+    .goto 204,28.71,61.50,40,0
+    >>Click the |cRXP_PICK_Ancient Conduit|r
+    .complete 26142,1 --Ancient Conduit
+    .isOnQuest 26142
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #completewith Drop26144x1
     >>|cRXP_LOOT_Twilight Cage Key|r can drop from |cRXP_ENEMY_Twilight Champion|r, |cRXP_ENEMY_Twilight Candidate|r. Use it to start the quest if you get one
@@ -518,11 +564,10 @@ step
     .goto 204,28.12,56.53,0
     .goto 204,28.12,56.53,40,0
     .goto 204,28.95,59.85,40,0
-    >>Click the |cRXP_PICK_Ancient Conduit|r
     >>Kill |cRXP_ENEMY_Twilight Candidates|r. Loot them for |cRXP_LOOT_Runestone of Binding|r
-    .complete -26142,1 --Ancient Conduit
-    .complete -26141,1 --Runestone of Binding (7)
+    .complete 26141,1 --Runestone of Binding (7)
     .mob Twilight Candidate
+    .isOnQuest 26141
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 204,28.27,56.05,0
@@ -560,11 +605,6 @@ step
     .isQuestTurnedIn 26142 --Ascend No More!
     .xp <80,1
 step
-    #completewith Along73
-    >>As you go: Kill |cRXP_ENEMY_Faceless Overseers|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -26154,3 --Faceless Overseer (10)
-    .mob Faceless Overseer
-step
     #loop
     .goto 204,34.77,52.13,0
     .goto 204,34.77,52.13,40,0
@@ -574,7 +614,6 @@ step
     .mob Twilight Devotee
     .isOnQuest 26154
 step
-    #label Along73
     .goto 204,34.83,54.02
     >>Interact with |cRXP_FRIENDLY_Bound Torrent|r
     .complete 26154,1 --Bound Torrent

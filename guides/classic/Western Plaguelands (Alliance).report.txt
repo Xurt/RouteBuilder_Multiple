@@ -122,7 +122,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Western Plaguelands - Alliance - part 2 of 3, planned from level 55
-Guide "52-60 Western Plaguelands" in group "Zone Routes (Alliance)": this part has 63 steps, 59 stops
+Guide "52-60 Western Plaguelands" in group "Zone Routes (Alliance)": this part has 62 steps, 59 stops
 Written to guides/classic/Western Plaguelands (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -143,7 +143,7 @@ Step order kept from the last build (locks folder): 58 steps kept, 7 new ones sl
   everyone (quests that depend on other zones): 12 more tasks; their whole route comes to 14,857 yd; ends at level 55.5; at its hardest you are 1.6 levels below the mobs
   Human Paladin/Dwarf Paladin (quests that depend on other zones): 1 more tasks; their whole route comes to 14,857 yd; ends at level 55.5; at its hardest you are 1.6 levels below the mobs
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
-2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (28)
 ------------------------
@@ -203,7 +203,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Western Plaguelands - Alliance - part 3 of 3, planned from level 58
-Guide "52-60 Western Plaguelands" in group "Zone Routes (Alliance)": this part has 38 steps, 34 stops
+Guide "52-60 Western Plaguelands" in group "Zone Routes (Alliance)": this part has 36 steps, 34 stops
 Written to guides/classic/Western Plaguelands (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -224,7 +224,6 @@ Step order kept from the last build (locks folder): 12 steps kept, 19 new ones s
   everyone (quests that depend on other zones): 20 more tasks; their whole route comes to 8,772 yd; ends at level 58.1
   Human Paladin/Dwarf Paladin (quests that depend on other zones): 1 more tasks; their whole route comes to 8,804 yd; ends at level 58.1
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
-2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (17)

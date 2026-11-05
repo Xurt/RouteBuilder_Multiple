@@ -405,30 +405,32 @@ step
     .target Sentinel Velene Starstrike
     .isQuestComplete 1017
 step
-    #completewith Along7
-    >>As you go: Kill |cRXP_ENEMY_Foulweald Ursas|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -1025,2 --Foulweald Ursa slain (2)
-    .mob Foulweald Ursa
-step
-    #label Along7
     #loop
-    .goto 1440/1,-1381.71,2222.53,0
-    .goto 1440/1,-1381.71,2222.53,40,0
+    .goto 1440/1,-1421.50,2215.99,0
+    .goto 1440/1,-1421.50,2215.99,40,0
     .goto 1440/1,-1544.90,2288.64,40,0
     >>Kill |cRXP_ENEMY_Foulweald Warriors|r
-    >>Kill |cRXP_ENEMY_Foulweald Totemics|r
-    .complete -1025,4 --Foulweald Warrior slain (12)
-    .complete -1025,3 --Foulweald Totemic slain (10)
+    .complete 1025,4 --Foulweald Warrior slain (12)
     .mob Foulweald Warrior
+    .isOnQuest 1025
+step
+    .goto 1440/1,-1412.85,2205.61
+    >>Kill |cRXP_ENEMY_Foulweald Totemics|r
+    .complete 1025,3 --Foulweald Totemic slain (10)
     .mob Foulweald Totemic
+    .isOnQuest 1025
 step
     .goto 1440/1,-1197.17,2363.98
     >>Kill |cRXP_ENEMY_Foulweald Ursas|r
-    >>Kill |cRXP_ENEMY_Foulweald Den Watcher|r
-    .complete -1025,2 --Foulweald Ursa slain (2)
-    .complete -1025,1 --Foulweald Den Watcher slain (1)
+    .complete 1025,2 --Foulweald Ursa slain (2)
     .mob Foulweald Ursa
+    .isOnQuest 1025
+step
+    .goto 1440/1,-1181.60,2370.51
+    >>Kill |cRXP_ENEMY_Foulweald Den Watcher|r
+    .complete 1025,1 --Foulweald Den Watcher slain (1)
     .mob Foulweald Den Watcher
+    .isOnQuest 1025
 step
     .goto 1440/1,-411.75,2767.19
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Raene Wolfrunner|r
@@ -757,11 +759,15 @@ step
     .goto 1440/1,-1493.00,1751.67,40,0
     .goto 1440/1,-1463.59,1643.27,40,0
     >>Kill |cRXP_ENEMY_Bloodtooth Guards|r
-    >>Kill |cRXP_ENEMY_Ran Bloodtooths|r
-    .complete -1045,2 --Bloodtooth Guard slain (4)
-    .complete -1045,1 --Ran Bloodtooth slain (4)
+    .complete 1045,2 --Bloodtooth Guard slain (4)
     .mob Bloodtooth Guard
+    .isOnQuest 1045
+step
+    .goto 1440/1,-1457.25,1612.52
+    >>Kill |cRXP_ENEMY_Ran Bloodtooths|r
+    .complete 1045,1 --Ran Bloodtooth slain (4)
     .mob Ran Bloodtooth
+    .isOnQuest 1045
 step
     .goto 1440/1,-1231.77,1787.03
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Krolg|r
@@ -789,11 +795,15 @@ step
 step
     .goto 1440/1,-2627.88,1820.85
     >>Kill |cRXP_ENEMY_Mavoris Cloudsbreak|r
-    >>Kill |cRXP_ENEMY_Taneel Darkwood|r
-    .complete -1012,3 --Mavoris Cloudsbreak slain (1)
-    .complete -1012,1 --Taneel Darkwood slain (1)
+    .complete 1012,3 --Mavoris Cloudsbreak slain (1)
     .mob Mavoris Cloudsbreak
+    .isOnQuest 1012
+step
+    .goto 1440/1,-2750.71,1828.93
+    >>Kill |cRXP_ENEMY_Taneel Darkwood|r
+    .complete 1012,1 --Taneel Darkwood slain (1)
     .mob Taneel Darkwood
+    .isOnQuest 1012
 step
     .goto 1440/1,-2795.69,1876.97
     >>Kill |cRXP_ENEMY_Uthil Mooncall|r

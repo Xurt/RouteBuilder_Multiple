@@ -1,5 +1,5 @@
 Hillsbrad Foothills - Alliance - part 1 of 2, planned from level 20
-Guide "20-25 Hillsbrad Foothills" in group "Zone Routes (Alliance)": this part has 63 steps, 48 stops
+Guide "20-25 Hillsbrad Foothills" in group "Zone Routes (Alliance)": this part has 64 steps, 49 stops
 Written to guides/mop/Hillsbrad Foothills (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

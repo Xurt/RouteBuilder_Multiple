@@ -1,5 +1,5 @@
 Terokkar Forest - Alliance - part 1 of 3, planned from level 62
-Guide "62-70 Terokkar Forest" in group "Zone Routes (Alliance)": this part has 232 steps, 167 stops
+Guide "62-70 Terokkar Forest" in group "Zone Routes (Alliance)": this part has 234 steps, 169 stops
 Written to guides/tbc/Terokkar Forest (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

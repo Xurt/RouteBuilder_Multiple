@@ -165,16 +165,24 @@ step
     .xp <54,1
 step
     #loop
-    .goto 1451/1,343.70,-7122.35,0
-    .goto 1451/1,343.70,-7122.35,40,0
-    .goto 1451/1,325.23,-7224.32,40,0
-    .goto 1451/1,418.24,-7219.91,40,0
+    .goto 1451/1,319.66,-7055.21,0
+    .goto 1451/1,319.66,-7055.21,40,0
+    .goto 1451/1,351.01,-7141.86,40,0
+    .goto 1451/1,352.40,-7314.22,40,0
     >>Kill |cRXP_ENEMY_Tortured Druids|r
-    >>Kill |cRXP_ENEMY_Tortured Sentinels|r
-    .complete -1125,1 --Tortured Druid slain (8)
-    .complete -1125,2 --Tortured Sentinel slain (8)
+    .complete 1125,1 --Tortured Druid slain (8)
     .mob Tortured Druid
+    .isOnQuest 1125
+step
+    #loop
+    .goto 1451/1,352.40,-7216.19,0
+    .goto 1451/1,352.40,-7216.19,40,0
+    .goto 1451/1,444.02,-7252.90,40,0
+    .goto 1451/1,351.71,-7116.54,40,0
+    >>Kill |cRXP_ENEMY_Tortured Sentinels|r
+    .complete 1125,2 --Tortured Sentinel slain (8)
     .mob Tortured Sentinel
+    .isOnQuest 1125
 step
     .goto 1451/1,-314.31,-6398.06
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Layo Starstrike|r
@@ -475,11 +483,22 @@ step
     .goto 1451/1,1188.40,-6992.96,40,0
     >>Kill |cRXP_ENEMY_Twilight Keeper Havunths|r, |cRXP_ENEMY_Twilight Avengers|r, |cRXP_ENEMY_Twilight Geolords|r and |cRXP_ENEMY_Twilight Stonecallers|r. Loot them for |cRXP_LOOT_Encrypted Twilight Text|r
     .complete 8318,1 --Encrypted Twilight Text (10)
-    .complete -8323,1 --Encrypted Twilight Text (10)
     .mob Twilight Keeper Havunth
     .mob Twilight Avenger
     .mob Twilight Geolord
     .mob Twilight Stonecaller
+step
+    #loop
+    .goto 1451/1,1188.40,-6992.96,0
+    .goto 1451/1,1188.40,-6992.96,40,0
+    .goto 1451/1,1120.13,-6988.55,40,0
+    >>Kill |cRXP_ENEMY_Twilight Keeper Havunths|r, |cRXP_ENEMY_Twilight Avengers|r, |cRXP_ENEMY_Twilight Geolords|r and |cRXP_ENEMY_Twilight Stonecallers|r. Loot them for |cRXP_LOOT_Encrypted Twilight Text|r
+    .complete 8323,1 --Encrypted Twilight Text (10)
+    .mob Twilight Keeper Havunth
+    .mob Twilight Avenger
+    .mob Twilight Geolord
+    .mob Twilight Stonecaller
+    .isOnQuest 8323
 step
     .goto 1451/1,1239.26,-7410.16
     >>Open the |cRXP_PICK_Hive'Zora Glyphed Crystal|r. Loot it for |cRXP_LOOT_Hive'Zora Rubbing|r

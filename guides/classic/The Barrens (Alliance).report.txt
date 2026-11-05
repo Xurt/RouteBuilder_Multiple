@@ -255,7 +255,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 The Barrens - Alliance - part 5 of 6, planned from level 31
-Guide "14-31 The Barrens" in group "Zone Routes (Alliance)": this part has 17 steps, 14 stops
+Guide "14-31 The Barrens" in group "Zone Routes (Alliance)": this part has 18 steps, 16 stops
 Written to guides/classic/The Barrens (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -277,7 +277,6 @@ Step order kept from the last build (locks folder): 7 steps kept, 9 new ones slo
   Warrior (quests that depend on other zones): 5 more tasks; their whole route comes to 2,117 yd; ends at level 31.0; at its hardest you are 2.0 levels below the mobs
   Warlock (quests that depend on other zones): 4 more tasks; their whole route comes to 2,198 yd; ends at level 31.0
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
-1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (8)
 -----------------------
@@ -315,7 +314,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 The Barrens - Alliance - part 6 of 6, planned from level 34
-Guide "14-31 The Barrens" in group "Zone Routes (Alliance)": this part has 7 steps, 6 stops
+Guide "14-31 The Barrens" in group "Zone Routes (Alliance)": this part has 9 steps, 8 stops
 Written to guides/classic/The Barrens (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

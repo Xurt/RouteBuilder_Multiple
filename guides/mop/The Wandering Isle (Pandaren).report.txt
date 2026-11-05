@@ -1,5 +1,5 @@
 The Wandering Isle - Horde
-Guide "1-10 The Wandering Isle" in group "Zone Routes (Pandaren)": 165 steps, 152 stops
+Guide "1-10 The Wandering Isle" in group "Zone Routes (Pandaren)": 167 steps, 153 stops
 Written to guides/mop/The Wandering Isle (Pandaren).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -29,7 +29,7 @@ Step order kept from the last build (locks folder): 210 steps kept, 36 new ones 
 Hearthstone: set at Cheng Dawnscrive (Cheng Dawnscrive's inn); 2 hearth steps in the guide.
 2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
 2 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
-7 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+9 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (79)
 ------------------------

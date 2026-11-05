@@ -1239,17 +1239,19 @@ step
     .accept 10353 >>Accept Arconus the Insatiable
     .target Agent Ya-six
 step
-    #loop
-    .goto 1953,60.65,42.13,0
-    .goto 1953,60.65,42.13,40,0
-    .goto 1953,61.17,44.83,40,0
+    .goto 1953,60.16,39.78
     >>Pick up |cRXP_PICK_Teleporter Power Pack|r from the ground
     >>Kill |cRXP_ENEMY_Arconus the Insatiable|r
-    >>Interact with |cRXP_FRIENDLY_Withered Corpses|r
     .complete 10270,1 --Teleporter Power Pack (1)
     .complete 10353,1 --Arconus the Insatiable slain (1)
-    .complete 10345,1 --Withered Corpse (12)
     .mob Arconus the Insatiable
+step
+    #loop
+    .goto 1953,60.62,42.65,0
+    .goto 1953,60.62,42.65,40,0
+    .goto 1953,60.99,45.62,40,0
+    >>Interact with |cRXP_FRIENDLY_Withered Corpses|r
+    .complete 10345,1 --Withered Corpse (12)
     .target Withered Corpse
 step
     .goto 1953,59.42,45.03
@@ -1257,7 +1259,7 @@ step
     .turnin 10345 >>Turn in The Flesh Lies...
     .target Agent Araxes
 step
-    #completewith Along162
+    #completewith Along163
     >>As you go: Kill |cRXP_ENEMY_Void Waste Globules|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10411,2 --Void Waste Globule slain (30)
     .mob Void Waste Globule
@@ -1295,7 +1297,7 @@ step
     .accept 10385 >>Accept Potential for Brain Damage = High
     .target Image of Commander Ameer
 step
-    #completewith Along160
+    #completewith Along161
     >>As you go: Kill |cRXP_ENEMY_Ethereum Assassins|r, |cRXP_ENEMY_Ethereum Shocktroopers|r, |cRXP_ENEMY_Nexus-King Salhadaars|r and |cRXP_ENEMY_Ethereum Researchers|r. Loot them for |cRXP_LOOT_Ethereum Essence|r. |cRXP_WARN_Anything left is finished later|r
     .collect 29482,1,10385,1 --Ethereum Essence (1)
     .mob Ethereum Assassin
@@ -1308,7 +1310,7 @@ step
     .collect 29742,1,10422,1 --The Warden's Key (1)
     .mob Warden Icoshock
 step
-    #label Along160
+    #label Along161
     .goto 1953,53.30,41.43
     >>Kill |cRXP_ENEMY_Captain Tyralius|r and |cRXP_ENEMY_Ethereum Prisoner (Tyralius)|r
     .complete 10422,1 --Captain Tyralius (1)
@@ -1326,7 +1328,7 @@ step
     .mob Nexus-King Salhadaar
     .mob Ethereum Researcher
 step
-    #label Along162
+    #label Along163
     .goto 1953,54.63,43.96
     >>Kill |cRXP_ENEMY_Congealed Void Horror|r and loot |cRXP_LOOT_Vial of Void Horror Ooze|r. Use it to start the quest
     .collect 29738,1,10413 --Vial of Void Horror Ooze (1)
@@ -1464,12 +1466,12 @@ step
     .complete 10439,2 --Captain Saeed
     .target Captain Saeed
 step
-    #completewith Along184
+    #completewith Along185
     >>As you go: Kill |cRXP_ENEMY_Wind Trader Marid|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10273,1 --Wind Trader Marid slain (1)
     .mob Wind Trader Marid
 step
-    #label Along184
+    #label Along185
     .goto 1953,58.35,31.26
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dealer Hazzin|r
     .turnin 10269 >>Turn in Triangulation Point One
@@ -1529,7 +1531,7 @@ step
     .accept 10315 >>Accept Neutralizing the Nethermancers
     .target Nether-Stalker Oazul
 step
-    #completewith Along197
+    #completewith Along198
     >>As you go: Kill |cRXP_ENEMY_Sunfury Nethermancers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10315,1 --Sunfury Nethermancer slain (15)
     .mob Sunfury Nethermancer
@@ -1545,7 +1547,7 @@ step
     .complete 10318,1 --Overmaster Grindgarr slain (1)
     .mob Overmaster Grindgarr
 step
-    #label Along197
+    #label Along198
     .goto 1953,28.92,41.25
     >>Second triangulation point discovered
     .complete 10275,1 --Second triangulation point discovered
@@ -1580,11 +1582,11 @@ step
     .complete 10856,1 --Wrathbringer slain (12)
     .mob Wrathbringer
 step
-    #completewith Along202
+    #completewith Along203
     >>As you go: Pick up |cRXP_PICK_Dome Generator Segment|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 10435,1 --Dome Generator Segment (10)
 step
-    #label Along202
+    #label Along203
     .goto 1953,44.69,14.57
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tashar|r
     .turnin 10430 >>Turn in Testing the Prototype
@@ -1617,7 +1619,7 @@ step
     .mob Farahlon Breaker
     .mob Cragskaar
 step
-    #completewith Along209
+    #completewith Along210
     >>As you go: Kill |cRXP_ENEMY_Hound of Culuthas|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10336,1 --Hound of Culuthas slain (10)
     .mob Hound of Culuthas
@@ -1627,7 +1629,7 @@ step
     .complete 10335,1 --Surveying Marker One
     .target Surveying Marker One
 step
-    #completewith Along209
+    #completewith Along210
     >>As you go: Kill |cRXP_ENEMY_Eye of Culuthas|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10336,2 --Eye of Culuthas slain (10)
     .mob Eye of Culuthas
@@ -1642,7 +1644,7 @@ step
     .complete 10335,2 --Surveying Marker Two
     .target Surveying Marker Two
 step
-    #label Along209
+    #label Along210
     .goto 1953,55.81,19.91
     >>Place the three Surveying Markers and then return to Zephyrion at the Stormspire in the Netherstorm.
     .complete 10335,3 --Surveying Marker Three

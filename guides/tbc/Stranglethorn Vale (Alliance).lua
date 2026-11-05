@@ -608,13 +608,20 @@ step
     .goto 1434/0,-610.53,-11507.81,0
     .goto 1434/0,-610.53,-11507.81,40,0
     .goto 1434/0,-730.49,-11500.57,40,0
-    .goto 1434/0,-849.82,-11475.48,40,0
+    .goto 1434/0,-864.50,-11472.07,40,0
     >>Kill |cRXP_ENEMY_Kurzen Commandos|r
-    >>Kill |cRXP_ENEMY_Kurzen Headshrinkers|r
-    .complete -574,1 --Kurzen Commando slain (10)
-    .complete -574,2 --Kurzen Headshrinker slain (6)
+    .complete 574,1 --Kurzen Commando slain (10)
     .mob Kurzen Commando
+    .isOnQuest 574
+step
+    #loop
+    .goto 1434/0,-735.60,-11464.84,0
+    .goto 1434/0,-735.60,-11464.84,40,0
+    .goto 1434/0,-849.82,-11475.48,40,0
+    >>Kill |cRXP_ENEMY_Kurzen Headshrinkers|r
+    .complete 574,2 --Kurzen Headshrinker slain (6)
     .mob Kurzen Headshrinker
+    .isOnQuest 574
 step
     #loop
     .goto 1434/0,-720.28,-12282.92,0
@@ -894,12 +901,6 @@ step
     .complete 606,1 --Mistvale Giblets (5)
     .mob Elder Mistvale Gorilla
 step
-    #completewith Along18
-    >>As you go: Kill |cRXP_ENEMY_"Pretty Boy" Duncan|r and loot |cRXP_LOOT_Catelyn's Blade|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -610,1 --Catelyn's Blade (1)
-    .mob "Pretty Boy" Duncan
-step
-    #label Along18
     .goto 1434/0,480.03,-14126.25
     >>Click the |cRXP_PICK_Bloodsail Correspondence|r
     .turnin 595 >>Turn in The Bloodsail Buccaneers
@@ -980,14 +981,23 @@ step
     .goto 1434/0,-813.45,-12841.91,40,0
     .goto 1434/0,-478.44,-12704.93,40,0
     >>Kill |cRXP_ENEMY_Skullsplitter Warriors|r, |cRXP_ENEMY_Skullsplitter Hunters|r, |cRXP_ENEMY_Skullsplitter Witch Doctors|r and |cRXP_ENEMY_Skullsplitter Spiritchasers|r. Loot them for |cRXP_LOOT_Skullsplitter Tusk|r
-    >>Kill |cRXP_ENEMY_Skullsplitter Witch Doctors|r and |cRXP_ENEMY_Skullsplitter Mystics|r. Loot them for |cRXP_LOOT_Skullsplitter Fetish|r
-    .complete -209,1 --Skullsplitter Tusk (18)
-    .complete -205,1 --Skullsplitter Fetish (4)
+    .complete 209,1 --Skullsplitter Tusk (18)
     .mob Skullsplitter Warrior
     .mob Skullsplitter Hunter
     .mob Skullsplitter Witch Doctor
     .mob Skullsplitter Spiritchaser
+    .isOnQuest 209
+step
+    #loop
+    .goto 1434/0,-784.74,-12847.44,0
+    .goto 1434/0,-784.74,-12847.44,40,0
+    .goto 1434/0,-875.35,-12907.43,40,0
+    .goto 1434/0,-649.45,-12948.69,40,0
+    >>Kill |cRXP_ENEMY_Skullsplitter Witch Doctors|r and |cRXP_ENEMY_Skullsplitter Mystics|r. Loot them for |cRXP_LOOT_Skullsplitter Fetish|r
+    .complete 205,1 --Skullsplitter Fetish (4)
+    .mob Skullsplitter Witch Doctor
     .mob Skullsplitter Mystic
+    .isOnQuest 205
 step
     .goto 1434/0,-893.22,-12019.58
     >>Kill |cRXP_ENEMY_Bhag'thera|r and loot |cRXP_LOOT_Fang of Bhag'thera|r
@@ -995,19 +1005,26 @@ step
     .mob Bhag'thera
     .isOnQuest 193
 step
-    #loop
-    .goto 1434/0,-914.91,-11510.36,0
-    .goto 1434/0,-914.91,-11510.36,40,0
-    .goto 1434/0,-914.27,-11412.51,40,0
+    .goto 1434/0,-914.91,-11510.36
     >>Kill |cRXP_ENEMY_Kurzen Elites|r
-    >>Kill |cRXP_ENEMY_Kurzen Subchiefs|r
-    >>Kill |cRXP_ENEMY_Colonel Kurzen|r and loot |cRXP_LOOT_Kurzen's Head|r
-    .complete -202,1 --Kurzen Elite slain (6)
-    .complete -202,2 --Kurzen Subchief slain (4)
-    .complete -202,3 --Kurzen's Head (1)
+    .complete 202,1 --Kurzen Elite slain (6)
     .mob Kurzen Elite
+    .isOnQuest 202
+step
+    #loop
+    .goto 1434/0,-914.27,-11412.51,0
+    .goto 1434/0,-914.27,-11412.51,40,0
+    .goto 1434/0,-925.12,-11343.17,40,0
+    >>Kill |cRXP_ENEMY_Kurzen Subchiefs|r
+    .complete 202,2 --Kurzen Subchief slain (4)
     .mob Kurzen Subchief
+    .isOnQuest 202
+step
+    .goto 1434/0,-965.96,-11336.79
+    >>Kill |cRXP_ENEMY_Colonel Kurzen|r and loot |cRXP_LOOT_Kurzen's Head|r
+    .complete 202,3 --Kurzen's Head (1)
     .mob Colonel Kurzen
+    .isOnQuest 202
 step
     .goto 1434/0,-193.19,-11320.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brother Nimetz|r
@@ -1106,7 +1123,7 @@ step
     .turnin 8553 >>Turn in The Captain's Cutlass
     .target Sprogger
 step
-    #completewith Along50
+    #completewith Along53
     >>As you go: Kill |cRXP_ENEMY_Bloodsail Raiders|r, |cRXP_ENEMY_Bloodsail Mages|r, |cRXP_ENEMY_Bloodsail Swashbucklers|r and |cRXP_ENEMY_Bloodsail Warlocks|r. Loot them for |cRXP_LOOT_Dizzy's Eye|r. |cRXP_WARN_Anything left is finished later|r
     .complete 576,1 --Dizzy's Eye (1)
     .mob Bloodsail Raider
@@ -1114,7 +1131,7 @@ step
     .mob Bloodsail Swashbuckler
     .mob Bloodsail Warlock
 step
-    #completewith Along48
+    #completewith Along51
     >>As you go: Kill |cRXP_ENEMY_Bloodsail Raiders|r, |cRXP_ENEMY_Bloodsail Mages|r, |cRXP_ENEMY_Bloodsail Swashbucklers|r and |cRXP_ENEMY_Bloodsail Warlocks|r. Loot them for |cRXP_LOOT_Snuff|r. |cRXP_WARN_Anything left is finished later|r
     .complete 587,1 --Snuff (15)
     .mob Bloodsail Raider
@@ -1122,7 +1139,7 @@ step
     .mob Bloodsail Swashbuckler
     .mob Bloodsail Warlock
 step
-    #label Along48
+    #label Along51
     .goto 1434/0,485.13,-14715.45
     >>Kill |cRXP_ENEMY_Bloodsail Swashbucklers|r
     >>Pick up |cRXP_PICK_Bloodsail Charts|r from the ground
@@ -1137,7 +1154,7 @@ step
     .turnin 604 >>Turn in The Bloodsail Buccaneers
     .target Fleet Master Seahorn
 step
-    #label Along50
+    #label Along53
     #loop
     .goto 1434/0,419.41,-14674.18,0
     .goto 1434/0,419.41,-14674.18,40,0
@@ -1228,7 +1245,7 @@ step
     .complete 617,1 --Akiris Reed (1)
     .mob Naga Explorer
 step
-    #completewith Along7
+    #completewith Along8
     >>As you go: Kill |cRXP_ENEMY_Zanzil Zombies|r, |cRXP_ENEMY_Zanzil Hunters|r, |cRXP_ENEMY_Zanzil Witch Doctors|r and |cRXP_ENEMY_Zanzil Nagas|r. Loot them for |cRXP_LOOT_Zanzil's Mixture|r. |cRXP_WARN_Anything left is finished later|r
     .complete 621,1 --Zanzil's Mixture (1)
     .mob Zanzil Zombie
@@ -1242,14 +1259,18 @@ step
     .mob Chucky "Ten Thumbs"
     .isOnQuest 609
 step
-    #label Along7
-    .goto 1434/0,-7.50,-13374.11
+    .goto 1434/0,-29.20,-13349.86
     >>Kill |cRXP_ENEMY_Maury "Club Foot" Wilkins|r and loot |cRXP_LOOT_Maury's Clubbed Foot|r
-    >>Kill |cRXP_ENEMY_Jon-Jon the Crow|r and loot |cRXP_LOOT_Jon-Jon's Golden Spyglass|r
-    .complete -609,1 --Maury's Clubbed Foot (1)
-    .complete -609,2 --Jon-Jon's Golden Spyglass (1)
+    .complete 609,1 --Maury's Clubbed Foot (1)
     .mob Maury "Club Foot" Wilkins
+    .isOnQuest 609
+step
+    #label Along8
+    .goto 1434/0,-7.50,-13374.11
+    >>Kill |cRXP_ENEMY_Jon-Jon the Crow|r and loot |cRXP_LOOT_Jon-Jon's Golden Spyglass|r
+    .complete 609,2 --Jon-Jon's Golden Spyglass (1)
     .mob Jon-Jon the Crow
+    .isOnQuest 609
 step
     #loop
     .goto 1434/0,-269.13,-13651.06,0
@@ -1337,11 +1358,15 @@ step
 step
     .goto 1434/0,349.85,-14924.75
     >>Kill |cRXP_ENEMY_Captain Keelhaul|r
-    >>Kill |cRXP_ENEMY_Fleet Master Firallon|r
-    .complete -608,2 --Captain Keelhaul slain (1)
-    .complete -608,3 --Fleet Master Firallon slain (1)
+    .complete 608,2 --Captain Keelhaul slain (1)
     .mob Captain Keelhaul
+    .isOnQuest 608
+step
+    .goto 1434/0,269.45,-15024.30
+    >>Kill |cRXP_ENEMY_Fleet Master Firallon|r
+    .complete 608,3 --Fleet Master Firallon slain (1)
     .mob Fleet Master Firallon
+    .isOnQuest 608
 step
     .goto 1434/0,123.32,-14920.92
     >>Kill |cRXP_ENEMY_Captain Stillwater|r

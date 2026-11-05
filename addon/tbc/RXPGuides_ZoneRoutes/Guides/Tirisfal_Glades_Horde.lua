@@ -933,23 +933,41 @@ step
     .isQuestTurnedIn 427 --any of: At War With The Scarlet Crusade
 step
     #loop
-    .goto 1420/0,621.68,1785.69,0
-    .goto 1420/0,621.68,1785.69,40,0
-    .goto 1420/0,705.27,1801.35,40,0
-    .goto 1420/0,827.28,1843.83,40,0
+    .goto 1420/0,601.79,1824.55,0
+    .goto 1420/0,601.79,1824.55,40,0
+    .goto 1420/0,681.32,1785.08,40,0
     >>Kill |cRXP_ENEMY_Scarlet Zealots|r
-    >>Kill |cRXP_ENEMY_Scarlet Warriors|r, |cRXP_ENEMY_Scarlet Missionaries|r, |cRXP_ENEMY_Scarlet Zealots|r and |cRXP_ENEMY_Scarlet Friars|r. Loot them for |cRXP_LOOT_Scarlet Insignia Ring|r
-    >>Kill |cRXP_ENEMY_Captain Perrine|r
-    >>Kill |cRXP_ENEMY_Scarlet Missionaries|r
-    .complete -370,2 --Scarlet Zealot slain (3)
-    .complete -374,1 --Scarlet Insignia Ring (10)
-    .complete -370,1 --Captain Perrine slain (1)
-    .complete -370,3 --Scarlet Missionary slain (3)
+    .complete 370,2 --Scarlet Zealot slain (3)
     .mob Scarlet Zealot
+    .isOnQuest 370
+step
+    #loop
+    .goto 1420/0,705.27,1801.35,0
+    .goto 1420/0,705.27,1801.35,40,0
+    .goto 1420/0,621.68,1785.69,40,0
+    .goto 1420/0,827.28,1843.83,40,0
+    >>Kill |cRXP_ENEMY_Scarlet Warriors|r, |cRXP_ENEMY_Scarlet Missionaries|r, |cRXP_ENEMY_Scarlet Zealots|r and |cRXP_ENEMY_Scarlet Friars|r. Loot them for |cRXP_LOOT_Scarlet Insignia Ring|r
+    .complete 374,1 --Scarlet Insignia Ring (10)
     .mob Scarlet Warrior
     .mob Scarlet Missionary
+    .mob Scarlet Zealot
     .mob Scarlet Friar
+    .isOnQuest 374
+step
+    .goto 1420/0,722.44,1795.02
+    >>Kill |cRXP_ENEMY_Captain Perrine|r
+    .complete 370,1 --Captain Perrine slain (1)
     .mob Captain Perrine
+    .isOnQuest 370
+step
+    #loop
+    .goto 1420/0,749.56,1796.53,0
+    .goto 1420/0,749.56,1796.53,40,0
+    .goto 1420/0,648.34,1806.47,40,0
+    >>Kill |cRXP_ENEMY_Scarlet Missionaries|r
+    .complete 370,3 --Scarlet Missionary slain (3)
+    .mob Scarlet Missionary
+    .isOnQuest 370
 step
     #loop
     .goto 1420/0,1424.66,2532.18,0
@@ -1059,11 +1077,15 @@ step
     .goto 1420/0,-653.97,2237.86,40,0
     .goto 1420/0,-530.15,2143.57,40,0
     >>Kill |cRXP_ENEMY_Scarlet Friars|r
-    >>Kill |cRXP_ENEMY_Captain Vachon|r
-    .complete -371,2 --Scarlet Friar slain (5)
-    .complete -371,1 --Captain Vachon slain (1)
+    .complete 371,2 --Scarlet Friar slain (5)
     .mob Scarlet Friar
+    .isOnQuest 371
+step
+    .goto 1420/0,-528.35,2146.58
+    >>Kill |cRXP_ENEMY_Captain Vachon|r
+    .complete 371,1 --Captain Vachon slain (1)
     .mob Captain Vachon
+    .isOnQuest 371
 step
     .goto 1420/0,-48.45,2574.66
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gunther Arcanus|r
@@ -1202,13 +1224,17 @@ step
     .target Gunther Arcanus
     .isQuestTurnedIn 409 --any of: Proving Allegiance
 step
-    .goto 1420/0,-556.36,3080.76
+    .goto 1420/0,-557.27,3076.84
     >>Kill |cRXP_ENEMY_Scarlet Bodyguards|r
-    >>Kill |cRXP_ENEMY_Captain Melrache|r
-    .complete -372,2 --Scarlet Bodyguard slain (2)
-    .complete -372,1 --Captain Melrache slain (1)
+    .complete 372,2 --Scarlet Bodyguard slain (2)
     .mob Scarlet Bodyguard
+    .isOnQuest 372
+step
+    .goto 1420/0,-559.98,3079.86
+    >>Kill |cRXP_ENEMY_Captain Melrache|r
+    .complete 372,1 --Captain Melrache slain (1)
     .mob Captain Melrache
+    .isOnQuest 372
 step << Undead Rogue
     .xp 10 >>Grind to level 10 (Mennet Carkad needs it)
 step << Undead Rogue
@@ -1619,18 +1645,28 @@ step
     .isQuestTurnedIn 355 --any of: Speak with Sevren
 step
     #loop
-    .goto 1420/0,689.46,2889.16,0
-    .goto 1420/0,689.46,2889.16,40,0
-    .goto 1420/0,646.98,3043.71,40,0
+    .goto 1420/0,619.87,2922.00,0
+    .goto 1420/0,619.87,2922.00,40,0
+    .goto 1420/0,716.12,2889.77,40,0
     >>Kill |cRXP_ENEMY_Rotting Ancestors|r
-    >>Kill |cRXP_ENEMY_Wailing Ancestors|r
-    >>Kill |cRXP_ENEMY_Captain Dargol|r and loot |cRXP_LOOT_Dargol's Skull|r
-    .complete -408,2 --Rotting Ancestor slain (8)
-    .complete -408,1 --Wailing Ancestor slain (8)
-    .complete -408,3 --Dargol's Skull (1)
+    .complete 408,2 --Rotting Ancestor slain (8)
     .mob Rotting Ancestor
+    .isOnQuest 408
+step
+    #loop
+    .goto 1420/0,559.77,2947.91,0
+    .goto 1420/0,559.77,2947.91,40,0
+    .goto 1420/0,683.13,3033.16,40,0
+    >>Kill |cRXP_ENEMY_Wailing Ancestors|r
+    .complete 408,1 --Wailing Ancestor slain (8)
     .mob Wailing Ancestor
+    .isOnQuest 408
+step
+    .goto 1420/0,646.98,3043.71
+    >>Kill |cRXP_ENEMY_Captain Dargol|r and loot |cRXP_LOOT_Dargol's Skull|r
+    .complete 408,3 --Dargol's Skull (1)
     .mob Captain Dargol
+    .isOnQuest 408
 step
     .goto 1420/0,265.15,2305.94
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magistrate Sevren|r

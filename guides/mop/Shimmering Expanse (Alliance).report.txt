@@ -1,5 +1,5 @@
 Shimmering Expanse - Alliance
-Guide "81-81 Shimmering Expanse" in group "Zone Routes (Alliance)": 195 steps, 178 stops
+Guide "81-81 Shimmering Expanse" in group "Zone Routes (Alliance)": 196 steps, 181 stops
 Written to guides/mop/Shimmering Expanse (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -20,7 +20,7 @@ Step order kept from the last build (locks folder): 226 steps kept, 0 new ones s
   everyone: 149 tasks, 12,839 yd on foot; ends at level 81.8; 2 hearths
   everyone (quests that depend on other zones): 77 more tasks; their whole route comes to 23,129 yd; ends at level 81.8; 3 hearths
 Hearthstone: set at Frell "Fixit" Fastbolt (Frell "Fixit" Fastbolt's inn); 3 hearth steps in the guide.
-10 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+8 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (76)

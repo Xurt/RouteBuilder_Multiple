@@ -192,21 +192,35 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Searing Infernal
     .mob Roaming Felguard
     .mob Mannoroc Lasher
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along24
+    >>As you go: Kill |cRXP_ENEMY_Ashenvale Outrunners|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 6503,1 --Ashenvale Outrunner slain (9)
+    .mob Ashenvale Outrunner
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 63,75.52,74.21
+    >>Click the |cRXP_PICK_The Forest Heart|r
+    .complete 13805,1 --The Forest Heart
+    .isOnQuest 13805
 step
+    #label Along24
     #loop
-    .goto 63,72.95,70.30,0
-    .goto 63,72.95,70.30,40,0
-    .goto 63,74.74,75.23,40,0
+    .goto 63,76.72,74.10,0
     .goto 63,76.72,74.10,40,0
-    >>Click the |cRXP_PICK_The Forest Heart|r << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 63,74.74,75.23,40,0
     >>Kill |cRXP_ENEMY_Severed Druids|r and |cRXP_ENEMY_Severed Keepers|r
-    >>Kill |cRXP_ENEMY_Ashenvale Outrunners|r << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .complete -13805,1 << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren --The Forest Heart
-    .complete -13801,1 --Severed Druid (15)
-    .complete 6503,1 << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren --Ashenvale Outrunner slain (9)
+    .complete 13801,1 --Severed Druid (15)
     .mob Severed Druid
     .mob Severed Keeper
-    .mob Ashenvale Outrunner << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .isOnQuest 13801
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 63,73.33,73.81,0
+    .goto 63,73.33,73.81,40,0
+    .goto 63,72.95,70.30,40,0
+    >>Kill |cRXP_ENEMY_Ashenvale Outrunners|r
+    .complete 6503,1 --Ashenvale Outrunner slain (9)
+    .mob Ashenvale Outrunner
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 63,71.14,74.56
     >>Kill |cRXP_ENEMY_Sharptalon|r and loot |cRXP_LOOT_Sharptalon's Claw|r. Use it to start the quest
@@ -423,14 +437,18 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 13797 --any of: Dirty Deeds
     .xp <19,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 63,72.95,64.16
+    .goto 63,72.00,64.03
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Raging Ancient|r
-    >>Kill |cRXP_ENEMY_Ashenvale Bowmans|r and |cRXP_ENEMY_Ashenvale Assailants|r
-    .complete -13798,2 --Raging Ancient (30)
-    .complete -13798,2 --Ashenvale Bowman (5)
+    .complete 13798,2 --Raging Ancient (30)
     .target Raging Ancient
+    .isOnQuest 13798
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 63,73.24,64.18
+    >>Kill |cRXP_ENEMY_Ashenvale Bowmans|r and |cRXP_ENEMY_Ashenvale Assailants|r
+    .complete 13798,2 --Ashenvale Bowman (5)
     .mob Ashenvale Bowman
     .mob Ashenvale Assailant
+    .isOnQuest 13798
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 63,72.19,57.65
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Durak|r
@@ -465,26 +483,41 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 13808 --any of: Mission Improbable
     .xp <19,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 63,85.45,56.05
+    >>Kill |cRXP_ENEMY_Protector Endolar|r
+    .complete 13865,1 --Protector Endolar slain (1)
+    .mob Protector Endolar
+    .isOnQuest 13865
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 63,85.75,57.96
+    >>Kill |cRXP_ENEMY_Protector Arminon|r
+    .complete 13865,3 --Protector Arminon slain (1)
+    .mob Protector Arminon
+    .isOnQuest 13865
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 63,85.32,60.70
+    >>Kill |cRXP_ENEMY_Protector Dorinar|r
+    .complete 13865,2 --Protector Dorinar slain (1)
+    .mob Protector Dorinar
+    .isOnQuest 13865
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 63,86.52,54.58,0
+    .goto 63,86.14,57.00,0
+    .goto 63,86.14,57.00,40,0
     .goto 63,86.52,54.58,40,0
+    >>Interact with |cRXP_FRIENDLY_Ashenvale Oaks|r
+    .complete 13815,1 --Ashenvale Oak (6)
+    .target Ashenvale Oak
+    .isOnQuest 13815
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 63,85.98,57.12,0
     .goto 63,85.98,57.12,40,0
     .goto 63,84.58,61.49,40,0
-    >>Kill |cRXP_ENEMY_Protector Endolar|r
-    >>Kill |cRXP_ENEMY_Protector Arminon|r
-    >>Kill |cRXP_ENEMY_Protector Dorinar|r
-    >>Interact with |cRXP_FRIENDLY_Ashenvale Oaks|r
     >>Kill |cRXP_ENEMY_Ashenvale Scouts|r
-    .complete -13865,1 --Protector Endolar slain (1)
-    .complete -13865,3 --Protector Arminon slain (1)
-    .complete -13865,2 --Protector Dorinar slain (1)
-    .complete -13815,1 --Ashenvale Oak (6)
-    .complete -13865,4 --Ashenvale Scout slain (12)
-    .mob Protector Endolar
-    .mob Protector Arminon
-    .mob Protector Dorinar
-    .target Ashenvale Oak
+    .complete 13865,4 --Ashenvale Scout slain (12)
     .mob Ashenvale Scout
+    .isOnQuest 13865
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 63,89.74,76.71
     >>Kill |cRXP_ENEMY_Gorgannon|r and loot |cRXP_LOOT_Gorgannon's Flaming Blade|r
@@ -592,16 +625,23 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 63,80.98,49.50,0
     .goto 63,80.98,49.50,40,0
-    .goto 63,78.96,46.63,40,0
-    .goto 63,78.20,45.16,40,0
+    .goto 63,78.52,46.21,40,0
     >>Click the |cRXP_PICK_Ritual Gem|r
+    .complete 13806,1 --Ritual Gem
+    .isOnQuest 13806
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 63,78.72,46.01,0
+    .goto 63,78.72,46.01,40,0
+    .goto 63,78.00,44.29,40,0
+    .goto 63,81.13,49.17,40,0
     >>Kill |cRXP_ENEMY_Xavian Rogues|r, |cRXP_ENEMY_Xavian Betrayers|r, |cRXP_ENEMY_Xavian Felsworns|r and |cRXP_ENEMY_Xavian Hellcallers|r. Loot them for |cRXP_LOOT_Satyr Horns|r
-    .complete -13806,1 --Ritual Gem
-    .complete -6441,1 --Satyr Horns (16)
+    .complete 6441,1 --Satyr Horns (16)
     .mob Xavian Rogue
     .mob Xavian Betrayer
     .mob Xavian Felsworn
     .mob Xavian Hellcaller
+    .isOnQuest 6441
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 63,73.86,62.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pixel|r
@@ -653,7 +693,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 6641 >>Accept Vorsha the Lasher
     .target Muglash
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along93
+    #completewith Along101
     >>As you go: Kill |cRXP_ENEMY_Wrathtail Myrmidons|r, |cRXP_ENEMY_Wrathtail Wave Riders|r, |cRXP_ENEMY_Wrathtail Sorceress|r and |cRXP_ENEMY_Wrathtail Priestess|r. Loot them for |cRXP_LOOT_Wrathtail Head|r. |cRXP_WARN_Anything left is finished later|r
     .complete 6442,1 --Wrathtail Head (20)
     .mob Wrathtail Myrmidon
@@ -680,7 +720,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestComplete 6641
     .target Warsong Runner
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along93
+    #label Along101
     .goto 63,6.78,28.94
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zoram'gar Lighthouse Bunny|r
     .complete 13890,1 --Zoram'gar Lighthouse Bunny
@@ -845,14 +885,14 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 6482 >>Accept Freedom to Ruul
     .target Ruul Snowhoof
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along116
+    #completewith Along124
     >>As you go: Kill |cRXP_ENEMY_Thistlefur Shamans|r, |cRXP_ENEMY_Thistlefur Pathfinders|r and |cRXP_ENEMY_Thistlefur Avengers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 216,1 --Thistlefur Shaman (15)
     .mob Thistlefur Shaman
     .mob Thistlefur Pathfinder
     .mob Thistlefur Avenger
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along116
+    #label Along124
     .goto 63,38.55,37.49
     >>Escort Ruul from the Thistlefurs.
     .complete 6482,1 --Escort Ruul from the Thistlefurs.
@@ -883,11 +923,11 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 13944 >>Accept Small Hands, Short Fuse
     .target Tweedle
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along121
+    #completewith Along129
     >>As you go: Click the |cRXP_PICK_Broken-down Wagon|r. |cRXP_WARN_Anything left is finished later|r
     .complete 13944,1 --Broken-down Wagon
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along121
+    #label Along129
     .goto 63,38.89,42.38
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mitsuwa|r
     .turnin 6462 >>Turn in Troll Charm
@@ -903,15 +943,26 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 13947 >>Accept Blastranaar!
     .target Captain Goggath
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along132
+    >>As you go: Kill |cRXP_ENEMY_Astranaar Throwers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 13947,2 --Astranaar Thrower slain (10)
+    .mob Astranaar Thrower
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along132
     #loop
     .goto 63,35.07,49.89,0
     .goto 63,35.07,49.89,40,0
     .goto 63,36.51,51.46,40,0
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Astranaar Sentinel|r
-    >>Kill |cRXP_ENEMY_Astranaar Throwers|r
     .complete 13947,1 --Astranaar Sentinel (20)
-    .complete 13947,2 --Astranaar Thrower slain (10)
     .target Astranaar Sentinel
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 63,36.66,50.51,0
+    .goto 63,36.66,50.51,40,0
+    .goto 63,34.25,48.97,40,0
+    >>Kill |cRXP_ENEMY_Astranaar Throwers|r
+    .complete 13947,2 --Astranaar Thrower slain (10)
     .mob Astranaar Thrower
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 63,38.23,43.83
@@ -940,12 +991,12 @@ step
     .accept 13884 >>Accept Put Out The Fire
     .target Arctanus
 step
-    #completewith Along130
+    #completewith Along139
     >>As you go: Kill |cRXP_ENEMY_Lava Ragers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 13884,1 --Lava Rager slain (10)
     .mob Lava Rager
 step
-    #label Along130
+    #label Along139
     .goto 63,52.33,56.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Core|r
     .accept 13880 >>Accept Hot Lava
@@ -1010,12 +1061,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 25 >>Accept Simmer Down Now
     .target Captain Tarkan
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along140
+    #completewith Along149
     >>As you go: Kill |cRXP_ENEMY_Befouled Water Elementals|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25,1 --Befouled Water Elemental slain (12)
     .mob Befouled Water Elemental
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along140
+    #label Along149
     .goto 63,49.44,67.14
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cromula|r
     .accept 26416 >>Accept Well, Come to the Jungle
@@ -1060,15 +1111,15 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 13983 >>Accept Building Your Own Coffin
     .target Foreman Jinx
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along147
+    #completewith Along156
     >>As you go: Pick up |cRXP_PICK_Locking Bolt|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 13983,3 --Locking Bolt (5)
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along146
+    #completewith Along155
     >>As you go: Pick up |cRXP_PICK_Copper Plating|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 13983,2 --Copper Plating (3)
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along146
+    #label Along155
     #loop
     .goto 63,43.01,70.11,0
     .goto 63,43.01,70.11,40,0
@@ -1076,7 +1127,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Pick up |cRXP_PICK_Bronze Cog|r from the ground
     .complete 13983,1 --Bronze Cog (3)
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along147
+    #label Along156
     .goto 63,42.04,68.55
     >>Kill |cRXP_ENEMY_Ursangous|r and loot |cRXP_LOOT_Ursangous' Paw|r. Use it to start the quest
     .collect 16303,1,23 --Ursangous' Paw (1)

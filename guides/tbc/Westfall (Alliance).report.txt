@@ -86,7 +86,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Westfall - Alliance - part 2 of 4, planned from level 15
-Guide "10-44 Westfall" in group "Zone Routes (Alliance)": this part has 20 steps, 18 stops
+Guide "10-44 Westfall" in group "Zone Routes (Alliance)": this part has 22 steps, 20 stops
 Written to guides/tbc/Westfall (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -200,7 +200,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Westfall - Alliance - part 4 of 4, planned from level 41
-Guide "10-44 Westfall" in group "Zone Routes (Alliance)": this part has 18 steps, 17 stops
+Guide "10-44 Westfall" in group "Zone Routes (Alliance)": this part has 19 steps, 18 stops
 Written to guides/tbc/Westfall (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

@@ -1,5 +1,5 @@
 Zangarmarsh - Horde - part 1 of 2, planned from level 61
-Guide "61-65 Zangarmarsh" in group "Zone Routes (Horde)": this part has 134 steps, 107 stops
+Guide "61-65 Zangarmarsh" in group "Zone Routes (Horde)": this part has 133 steps, 107 stops
 Written to guides/mop/Zangarmarsh (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -82,7 +82,7 @@ These pickups are planned within about half a level of the level they unlock at,
 The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
   level 61 for Warden Hamoot
 2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-13 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+12 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 5 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 

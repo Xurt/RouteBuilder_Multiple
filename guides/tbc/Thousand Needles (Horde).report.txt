@@ -1,5 +1,5 @@
 Thousand Needles - Horde - part 1 of 4, planned from level 25
-Guide "25-37 Thousand Needles" in group "Zone Routes (Horde)": this part has 44 steps, 31 stops
+Guide "25-37 Thousand Needles" in group "Zone Routes (Horde)": this part has 45 steps, 32 stops
 Written to guides/tbc/Thousand Needles (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -251,7 +251,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Thousand Needles - Horde - part 4 of 4, planned from level 34
-Guide "25-37 Thousand Needles" in group "Zone Routes (Horde)": this part has 16 steps, 12 stops
+Guide "25-37 Thousand Needles" in group "Zone Routes (Horde)": this part has 19 steps, 16 stops
 Written to guides/tbc/Thousand Needles (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -271,7 +271,7 @@ Step order kept from the last build (locks folder): 14 steps kept, 2 new ones sl
   everyone: 6 tasks, 3,764 yd on foot; ends at level 34.1
   everyone (quests that depend on other zones): 10 more tasks; their whole route comes to 12,080 yd; ends at level 34.1
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
-2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (6)
 -----------------------

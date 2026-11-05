@@ -184,12 +184,6 @@ step << Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock
     .target Corporal Fizzwhistle
     .isOnQuest 26265
 step << Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock
-    #completewith Along24
-    >>As you go: Kill |cRXP_ENEMY_Toxic Sludges|r. Loot them for |cRXP_LOOT_Recovered Possession|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -26264,1 --Recovered Possession (6)
-    .mob Toxic Sludge
-step << Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock
-    #label Along24
     .goto 469,38.66,45.12
     >>Use the GS-9x Multi-Bot to clean up 5 Toxic Geysers at the Toxic Airfield. When you get close enough to a geyser, your GS-9x Multi-Bot will automatically begin its task.
     .complete 26205,1 --Toxic Pool (5)
@@ -577,18 +571,17 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25841 >>Accept Strike From Above
     .target Slamp Wobblecog
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along70
+    #completewith Along71
     >>As you go: Kill |cRXP_ENEMY_Frostmane Warriors|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25840,2 --Frostmane Warrior slain (5)
     .mob Frostmane Warrior
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along70
     .goto 27,62.55,53.81
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Snevik the Blade|r
     .accept 28868 >>Accept The View from Down Here
     .target Snevik the Blade
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along71
+    #completewith Along72
     >>As you go: Kill |cRXP_ENEMY_Battok the Berserker|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25840,1 --Battok the Berserker slain (1)
     .mob Battok the Berserker
@@ -597,19 +590,25 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 27,64.30,54.22,0
     .goto 27,64.30,54.22,40,0
-    .goto 27,63.03,56.42,40,0
+    .goto 27,63.23,56.76,40,0
     >>Interact with |cRXP_FRIENDLY_Frostmane Builders|r
-    >>Kill |cRXP_ENEMY_Frostmane Warriors|r
     .complete 28868,1 --Frostmane Builder (5)
-    .complete 25840,2 --Frostmane Warrior slain (5)
     .target Frostmane Builder
-    .mob Frostmane Warrior
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 27,62.55,53.81
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Snevik the Blade|r
     .turnin 28868 >>Turn in The View from Down Here while you are here
     .isQuestComplete 28868
     .target Snevik the Blade
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along72
+    #loop
+    .goto 27,63.18,55.32,0
+    .goto 27,63.18,55.32,40,0
+    .goto 27,63.59,51.12,40,0
+    >>Kill |cRXP_ENEMY_Frostmane Warriors|r
+    .complete 25840,2 --Frostmane Warrior slain (5)
+    .mob Frostmane Warrior
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 27,64.51,54.25
     >>Use the Signal Flare to call in airstrikes at the northern and southern ends of Frostmane Retreat.
@@ -766,28 +765,18 @@ step << Gnome Priest
     .target "Doc" Cogspin
     .isQuestTurnedIn 26199 --any of: The Future of Gnomeregan
     .xp <2,1
-step << Gnome Warrior
-    #completewith Along95
-    >>As you go: Kill |cRXP_ENEMY_Training Dummy|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -26204,1 --Training Dummy slain (1)
-    .mob Training Dummy
-step << Gnome Rogue
-    #completewith Along95
-    >>As you go: Kill |cRXP_ENEMY_Training Dummy|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -26207,1 --Training Dummy slain (1)
-    .mob Training Dummy
-step << Gnome Warlock
-    #completewith Along95
-    >>As you go: Kill |cRXP_ENEMY_Training Dummies|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -26201,1 --Training Dummy slain (8)
-    .mob Training Dummy
-step
-    #label Along95
+step << Gnome Priest
     .goto 469,41.68,32.94
-    >>Kill |cRXP_ENEMY_Training Dummies|r << Gnome Priest
-    .complete -26200,1 << Gnome Priest --Training Dummy slain (8)
-    .complete -26198,1 << Gnome Mage --Training Dummy slain (8)
-    .mob Training Dummy << Gnome Priest
+    >>Kill |cRXP_ENEMY_Training Dummies|r
+    .complete 26200,1 --Training Dummy slain (8)
+    .mob Training Dummy
+    .isOnQuest 26200
+step << Gnome Mage
+    .goto 469,41.68,32.94
+    >>Kill |cRXP_ENEMY_Training Dummies|r
+    .complete 26198,1 --Training Dummy slain (8)
+    .mob Training Dummy
+    .isOnQuest 26198
 step << Gnome Mage
     .goto 469,41.09,29.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bipsi Frostflinger|r
@@ -796,29 +785,36 @@ step << Gnome Mage
     .isOnQuest 26198
 step << Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock
     #loop
+    .goto 469,55.42,23.72,0
+    .goto 469,55.42,23.72,40,0
+    .goto 469,55.49,21.06,40,0
+    >>Interact with |cRXP_FRIENDLY_Repaired Mechano-Tanks|r
+    .complete 26333,1 --Repaired Mechano-Tank (5)
+    .target Repaired Mechano-Tank
+    .isOnQuest 26333
+step << Gnome Warrior/Gnome Rogue/Gnome Priest/Gnome Mage/Gnome Warlock
+    #loop
     .goto 469,54.84,26.16,0
     .goto 469,54.84,26.16,40,0
     .goto 469,56.26,19.43,40,0
     .goto 469,59.47,16.10,40,0
-    >>Interact with |cRXP_FRIENDLY_Repaired Mechano-Tanks|r
     >>Kill |cRXP_ENEMY_Crushcog Battle Suits|r and |cRXP_ENEMY_Irradiated Technicians|r
-    .complete -26333,1 --Repaired Mechano-Tank (5)
-    .complete -26331,1 --Crushcog Battle Suit (8)
-    .target Repaired Mechano-Tank
+    .complete 26331,1 --Crushcog Battle Suit (8)
     .mob Crushcog Battle Suit
     .mob Irradiated Technician
-step << Gnome Warlock
-    #completewith Along98
-    >>As you go: Kill |cRXP_ENEMY_Training Dummies|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -26201,1 --Training Dummy slain (8)
-    .mob Training Dummy
-step
-    #label Along98
+    .isOnQuest 26331
+step << Gnome Warrior
     .goto 469,41.68,32.94
-    >>Kill |cRXP_ENEMY_Training Dummy|r << Gnome Warrior
-    .complete -26204,1 << Gnome Warrior --Training Dummy slain (1)
-    .complete -26207,1 << Gnome Rogue --Training Dummy slain (1)
-    .mob Training Dummy << Gnome Warrior
+    >>Kill |cRXP_ENEMY_Training Dummy|r
+    .complete 26204,1 --Training Dummy slain (1)
+    .mob Training Dummy
+    .isOnQuest 26204
+step << Gnome Rogue
+    .goto 469,41.68,32.94
+    >>Kill |cRXP_ENEMY_Training Dummy|r
+    .complete 26207,1 --Training Dummy slain (1)
+    .mob Training Dummy
+    .isOnQuest 26207
 step << Gnome Priest
     .goto 469,39.41,28.38
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_"Doc" Cogspin|r
@@ -970,11 +966,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25937 >>Accept Priceless Treasures
     .target Prospector Drugan
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along124
+    #completewith Along128
     >>As you go: Pick up |cRXP_PICK_Frozen Artifact|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 25937,1 --Frozen Artifact (8)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along124
+    #label Along128
     .goto 27,76.31,54.68
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Foreman Stonebrow|r
     .turnin 25933 >>Turn in Help for the Quarry
@@ -982,27 +978,32 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Foreman Stonebrow
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 27,77.48,56.22,0
-    .goto 27,77.48,56.22,40,0
-    .goto 27,75.19,57.68,40,0
-    .goto 27,78.88,50.21,40,0
+    .goto 27,76.99,56.86,0
+    .goto 27,76.99,56.86,40,0
+    .goto 27,77.94,51.61,40,0
+    .goto 27,79.57,50.27,40,0
     >>Kill |cRXP_ENEMY_Rockjaw Skullthumpers|r
     >>Kill |cRXP_ENEMY_Rockjaw Bonesnappers|r
     >>Pick up |cRXP_PICK_Frozen Artifact|r from the ground
-    >>Interact with |cRXP_FRIENDLY_Trapped Miners|r
     .complete 432,1 --Rockjaw Skullthumper slain (8)
     .complete 432,2 --Rockjaw Bonesnapper slain (8)
     .complete 25937,1 --Frozen Artifact (8)
-    .complete 433,1 --Trapped Miner (7)
     .mob Rockjaw Skullthumper
     .mob Rockjaw Bonesnapper
-    .target Trapped Miner
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 27,75.90,54.31
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Senator Mehr Stonehallow|r
-    .turnin 433 >>Turn in The Public Servant while you are here
-    .isQuestComplete 433
-    .target Senator Mehr Stonehallow
+    .goto 27,76.31,54.68
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Foreman Stonebrow|r
+    .turnin 432 >>Turn in Those Blasted Troggs! while you are here
+    .isQuestComplete 432
+    .target Foreman Stonebrow
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
+    .goto 27,78.48,52.22,0
+    .goto 27,78.48,52.22,40,0
+    .goto 27,79.65,50.22,40,0
+    >>Interact with |cRXP_FRIENDLY_Trapped Miners|r
+    .complete 433,1 --Trapped Miner (7)
+    .target Trapped Miner
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 27,76.31,54.68
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Foreman Stonebrow|r
@@ -1025,12 +1026,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25979 >>Accept Dealing with the Surge
     .target Khurgorn Singefeather
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along130
+    #completewith Along135
     >>As you go: Kill |cRXP_ENEMY_Helm's Bed Surgers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25979,1 --Helm's Bed Surger slain (6)
     .mob Helm's Bed Surger
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along130
+    #label Along135
     .goto 27,82.85,48.41
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Bahrum|r
     .turnin 25986 >>Turn in Trouble at the Lake

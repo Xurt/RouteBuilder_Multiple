@@ -372,27 +372,53 @@ step
     .target Doctor Draxlegauge
     .isQuestTurnedIn 665 --any of: Sunken Treasure
 step
-    #loop
-    .goto 1417/0,-1710.15,-2170.45,0
-    .goto 1417/0,-1710.15,-2170.45,40,0
-    .goto 1417/0,-1730.67,-2269.33,40,0
-    .goto 1417/0,-1603.23,-2187.97,40,0
+    .goto 1417/0,-1708.71,-2175.49
     >>Pick up |cRXP_PICK_Maiden's Folly Log|r from the ground
+    .complete 662,2 --Maiden's Folly Log (1)
+    .isOnQuest 662
+step
+    .goto 1417/0,-1696.47,-2161.57
     >>Pick up |cRXP_PICK_Maiden's Folly Charts|r from the ground
+    .complete 662,1 --Maiden's Folly Charts (1)
+    .isOnQuest 662
+step
+    .goto 1417/0,-1603.23,-2187.97
     >>Pick up |cRXP_PICK_Spirit of Silverpine Charts|r from the ground
+    .complete 662,3 --Spirit of Silverpine Charts (1)
+    .isOnQuest 662
+step
+    .goto 1417/0,-1610.07,-2175.73
     >>Pick up |cRXP_PICK_Spirit of Silverpine Log|r from the ground
+    .complete 662,4 --Spirit of Silverpine Log (1)
+    .isOnQuest 662
+step
+    #loop
+    .goto 1417/0,-1608.99,-2181.97,0
+    .goto 1417/0,-1608.99,-2181.97,40,0
+    .goto 1417/0,-1679.19,-2219.17,40,0
+    .goto 1417/0,-1768.47,-2285.17,40,0
     >>Kill |cRXP_ENEMY_Daggerspine Raiders|r
-    >>Kill |cRXP_ENEMY_Daggerspine Sorceress|r
-    >>Loot the |cRXP_PICK_Calcified Elven Gems|r for |cRXP_LOOT_Elven Gem|r
-    .complete -662,2 --Maiden's Folly Log (1)
-    .complete -662,1 --Maiden's Folly Charts (1)
-    .complete -662,3 --Spirit of Silverpine Charts (1)
-    .complete -662,4 --Spirit of Silverpine Log (1)
-    .complete -664,1 --Daggerspine Raider slain (10)
-    .complete -664,2 --Daggerspine Sorceress slain (3)
-    .complete -666,1 --Elven Gem (10)
+    .complete 664,1 --Daggerspine Raider slain (10)
     .mob Daggerspine Raider
+    .isOnQuest 664
+step
+    #loop
+    .goto 1417/0,-1685.31,-2164.45,0
+    .goto 1417/0,-1685.31,-2164.45,40,0
+    .goto 1417/0,-1606.47,-2168.53,40,0
+    >>Kill |cRXP_ENEMY_Daggerspine Sorceress|r
+    .complete 664,2 --Daggerspine Sorceress slain (3)
     .mob Daggerspine Sorceress
+    .isOnQuest 664
+step
+    #loop
+    .goto 1417/0,-1658.67,-2149.33,0
+    .goto 1417/0,-1658.67,-2149.33,40,0
+    .goto 1417/0,-1730.67,-2245.33,40,0
+    .goto 1417/0,-1550.67,-2293.33,40,0
+    >>Loot the |cRXP_PICK_Calcified Elven Gems|r for |cRXP_LOOT_Elven Gem|r
+    .complete 666,1 --Elven Gem (10)
+    .isOnQuest 666
 step
     .goto 1417/0,-2047.47,-2088.85
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_First Mate Nilzlix|r
@@ -460,13 +486,20 @@ step
     .target Skuerto
     .isQuestTurnedIn 695 --any of: An Apprentice's Enchantment
 step
-    .goto 1417/0,-1521.15,-1768.69
+    .goto 1417/0,-1515.75,-1762.21
     >>Open the |cRXP_PICK_Trelane's Lockbox|r. Loot it for |cRXP_LOOT_Trelane's Ember Agate|r
+    .complete 696,3 --Trelane's Ember Agate (1)
+    .isOnQuest 696
+step
+    .goto 1417/0,-1521.15,-1768.69
     >>Open the |cRXP_PICK_Trelane's Footlocker|r. Loot it for |cRXP_LOOT_Trelane's Phylactery|r
+    .complete 696,1 --Trelane's Phylactery (1)
+    .isOnQuest 696
+step
+    .goto 1417/0,-1520.79,-1792.93
     >>Open the |cRXP_PICK_Trelane's Chest|r. Loot it for |cRXP_LOOT_Trelane's Orb|r
-    .complete -696,3 --Trelane's Ember Agate (1)
-    .complete -696,1 --Trelane's Phylactery (1)
-    .complete -696,2 --Trelane's Orb (1)
+    .complete 696,2 --Trelane's Orb (1)
+    .isOnQuest 696
 step
     .goto 1417/0,-2546.07,-1261.57
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Skuerto|r

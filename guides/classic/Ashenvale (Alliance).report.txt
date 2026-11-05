@@ -179,7 +179,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Ashenvale - Alliance - part 3 of 5, planned from level 24
-Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 22 steps, 20 stops
+Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 23 steps, 22 stops
 Written to guides/classic/Ashenvale (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -199,7 +199,6 @@ Step order kept from the last build (locks folder): 17 steps kept, 3 new ones sl
   everyone: 15 tasks, 8,790 yd on foot; ends at level 24.3; at its hardest you are 1.8 levels below the mobs
   everyone (quests that depend on other zones): 6 more tasks; their whole route comes to 12,725 yd; ends at level 24.3; at its hardest you are 1.8 levels below the mobs
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
-1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (8)
 -----------------------
@@ -304,7 +303,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Ashenvale - Alliance - part 5 of 5, planned from level 30
-Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 22 steps, 21 stops
+Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 24 steps, 23 stops
 Written to guides/classic/Ashenvale (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

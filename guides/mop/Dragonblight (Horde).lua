@@ -830,10 +830,6 @@ step
     .isQuestTurnedIn 12028 --any of: Spiritual Insight
     .xp <71,1
 step
-    #completewith Along106
-    >>As you go: Pick up |cRXP_PICK_Tua'kea Crab Trap|r from the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -12009,1 --Tua'kea Crab Trap (1)
-step
     .goto 115,47.72,79.99
     >>Click the |cRXP_PICK_Wrecked Crab Trap|r
     .accept 12011 >>Accept Signs of Big Watery Trouble
@@ -846,7 +842,6 @@ step
     .target Tua'kea
     .isOnQuest 12011
 step
-    #label Along106
     .goto 115,47.99,76.11
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tua'kea|r
     .accept 12016 >>Accept The Bait

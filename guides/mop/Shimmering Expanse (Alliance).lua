@@ -43,15 +43,21 @@ step
     .target Toshe Chaosrender
 step
     #loop
-    .goto 205,65.86,42.70,0
-    .goto 205,65.86,42.70,40,0
-    .goto 205,67.16,43.80,40,0
-    .goto 205,67.28,47.34,40,0
+    .goto 205,65.58,43.45,0
+    .goto 205,65.58,43.45,40,0
+    .goto 205,66.37,45.70,40,0
+    .goto 205,67.96,48.06,40,0
     >>Kill |cRXP_ENEMY_Zin'jatar Ravagers|r
-    >>Interact with |cRXP_FRIENDLY_Swarming Serpents|r
     .complete 25439,1 --Zin'jatar Ravager slain (10)
-    .complete 25441,1 --Swarming Serpent (30)
     .mob Zin'jatar Ravager
+step
+    #loop
+    .goto 205,67.16,43.87,0
+    .goto 205,67.16,43.87,40,0
+    .goto 205,65.86,42.70,40,0
+    .goto 205,67.28,47.34,40,0
+    >>Interact with |cRXP_FRIENDLY_Swarming Serpents|r
+    .complete 25441,1 --Swarming Serpent (30)
     .target Swarming Serpent
 step
     .goto 205,64.06,42.29
@@ -154,11 +160,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25920 >>Accept Still Valuable
     .target Wavespeaker Valoren
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along21
+    #completewith Along22
     >>As you go: Click the |cRXP_PICK_Nespirah Abscess|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25919,1 --Nespirah Abscess
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along21
+    #label Along22
     .goto 205,62.72,49.96
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Admiral Dvorek|r
     .accept 25918 >>Accept Hopelessly Gearless
@@ -251,7 +257,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25539 >>Accept Clamming Up
     .target Divemaster Birmingham
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along35
+    #completewith Along36
     >>As you go: Pick up |cRXP_PICK_Glimmerdeep Clam|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 25539,1 --Glimmerdeep Clam (16)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
@@ -260,7 +266,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25537 >>Accept Art of Attraction
     .unitscan Engineer Hexascrub
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along35
+    #label Along36
     .goto 205,50.15,51.25
     >>Use the Anemone Chemical Extraction Device to gather 8 Anemone Chemical Samples from the red anemones along the walls of Glimmerdeep Gorge.
     .complete 25537,1 --Anemone Gas Bunny
@@ -340,7 +346,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25580 >>Accept Swift Approach
     .unitscan Captain Taylor
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along47
+    #completewith Along48
     >>As you go: Kill |cRXP_ENEMY_Azsh'ir Patrollers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25579,1 --Azsh'ir Patroller slain (10)
     .mob Azsh'ir Patroller
@@ -355,17 +361,17 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 25581,1 --Lestharia Vashj
     .mob Azsh'ir Monitor
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along46
+    #completewith Along47
     >>As you go: Click the |cRXP_PICK_Queen Azshara|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25581,2 --Queen Azshara
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along46
+    #label Along47
     .goto 205,39.10,57.50
     >>On the lowest level of the ruins, scout the northern end of the Quel'Dormir Gardens, the passage that leads under the ruins west of the gardens, and the structures at the southeast corner of the ruins, below the bridges.
     .complete 25582,1 --Vashj'ir Gardens Credit
     .target Vashj'ir Gardens Credit
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along47
+    #label Along48
     .goto 205,38.61,58.96
     >>Click the |cRXP_PICK_Queen Azshara|r
     .complete 25581,2 --Queen Azshara
@@ -553,12 +559,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25749 >>Accept Not Entirely Unprepared
     .unitscan Captain Taylor
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along68
+    #completewith Along69
     >>As you go: Kill |cRXP_ENEMY_Alliance Lookouts|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25749,1 --Alliance Lookout (8)
     .mob Alliance Lookout
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along68
+    #label Along69
     .goto 205,48.99,49.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Engineer Hexascrub|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 25751 >>Accept Properly Inspired
@@ -598,7 +604,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25752 >>Accept Swift Action
     .unitscan Admiral Dvorek
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along75
+    #completewith Along76
     >>As you go: Kill |cRXP_ENEMY_Azsh'ir Archaeans|r. Kill |cRXP_ENEMY_Azsh'ir Soldiers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25752,4 --Azsh'ir Archaean slain (8)
     .complete 25752,2 --Azsh'ir Soldier slain (100)
@@ -619,7 +625,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .turnin 25581 >>Turn in An Occupation of Time
     .unitscan Levia Dreamwaker
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along75
+    #label Along76
     .goto 205,49.69,57.15
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Levia Dreamwaker|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 27716 >>Turn in Piece of the Past
@@ -755,7 +761,7 @@ step
     .accept 25858 >>Accept By Her Lady's Word
     .unitscan Lady Naz'jar
 step
-    #completewith Along94
+    #completewith Along95
     >>As you go: Kill |cRXP_ENEMY_Overseer Idra'kess|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25858,3 --Overseer Idra'kess slain (1)
     .mob Overseer Idra'kess
@@ -768,7 +774,7 @@ step
     .mob Lady Sira'kess
     .mob Fathom-Lord Zin'jatar
 step
-    #label Along94
+    #label Along95
     .goto 205,36.43,78.66
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fathom-Lord Zin'jatar|r
     .turnin 25659 >>Turn in Not Soon Forgotten
@@ -876,13 +882,17 @@ step
     .isQuestTurnedIn 25334 --any of: The Looming Threat
     .xp <80,1
 step
-    .goto 205,55.49,12.82
+    .goto 205,55.76,12.82
     >>Kill |cRXP_ENEMY_Fathom-Lord Zin'jatar|r
-    >>Kill |cRXP_ENEMY_Zin'jatar Fathom-Stalkers|r
-    .complete -25164,2 --Fathom-Lord Zin'jatar (1)
-    .complete -25164,1 --Zin'jatar Fathom-Stalker (8)
+    .complete 25164,2 --Fathom-Lord Zin'jatar (1)
     .mob Fathom-Lord Zin'jatar
+    .isOnQuest 25164
+step
+    .goto 205,55.49,12.82
+    >>Kill |cRXP_ENEMY_Zin'jatar Fathom-Stalkers|r
+    .complete 25164,1 --Zin'jatar Fathom-Stalker (8)
     .mob Zin'jatar Fathom-Stalker
+    .isOnQuest 25164
 step
     .goto 205,56.02,13.70
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Farseer Gadra|r
@@ -953,11 +963,6 @@ step
     .isQuestTurnedIn 25222 --any of: Silver Tide Hollow
     .xp <80,1
 step
-    #completewith Along132
-    >>As you go: Kill |cRXP_ENEMY_Coilshell Sifters|r. Loot them for |cRXP_LOOT_Coilshell Sifter|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -25219,1 --Coilshell Sifter (10)
-    .mob Coilshell Sifter
-step
     .goto 205,49.13,41.96
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Caretaker Movra|r
     .accept 25220 >>Accept Slippery Threat
@@ -988,12 +993,6 @@ step
     .isQuestTurnedIn 25216 --any of: The Great Sambino
     .xp <80,1
 step
-    #completewith Along126
-    >>As you go: Kill |cRXP_ENEMY_Green Sand Crab|r and loot |cRXP_LOOT_Sambino's Air Valve|r. It can also be picked up from |cRXP_PICK_Sambino's Air Valve|r on the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -25218,2 --Sambino's Air Valve (1)
-    .mob Green Sand Crab
-step
-    #label Along126
     .goto 205,41.29,34.24
     >>Fill one of Sambino's Air Balloons and find his Lost Air Valve.
     .complete 25218,1 --Sambino's Air Balloon (1)
@@ -1032,7 +1031,6 @@ step
     .target The Great Sambino
     .isOnQuest 25217
 step
-    #label Along132
     .goto 205,41.29,34.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_The Great Sambino|r
     .accept 25456 >>Accept Back in One Piece
@@ -1116,10 +1114,14 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 205,61.37,85.52,40,0
     .goto 205,63.46,83.81,40,0
     >>Kill |cRXP_ENEMY_Muckskin Scroungers|r
-    >>Pick up |cRXP_PICK_Alliance Survival Kit|r from the ground
-    .complete -25894,1 --Muckskin Scrounger slain (10)
-    .complete -25895,1 --Alliance Survival Kit (1)
+    .complete 25894,1 --Muckskin Scrounger slain (10)
     .mob Muckskin Scrounger
+    .isOnQuest 25894
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 205,61.48,85.06
+    >>Pick up |cRXP_PICK_Alliance Survival Kit|r from the ground
+    .complete 25895,1 --Alliance Survival Kit (1)
+    .isOnQuest 25895
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 205,58.18,85.92,0

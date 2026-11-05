@@ -778,17 +778,21 @@ step
     .target Timeon
     .isOnQuest 10615
 step
-    #loop
-    .goto 1949,57.33,54.97,0
-    .goto 1949,57.33,54.97,40,0
-    .goto 1949,58.06,60.79,40,0
+    .goto 1949,57.14,54.49
     >>Kill |cRXP_ENEMY_Gnosh Brognat|r
-    >>Kill |cRXP_ENEMY_Bladespire Crushers|r and |cRXP_ENEMY_Bladespire Mystics|r. Loot them for |cRXP_LOOT_Bladespire Totem|r
-    .complete -10843,1 --Gnosh Brognat slain (1)
-    .complete -10851,1 --Bladespire Totem (5)
+    .complete 10843,1 --Gnosh Brognat slain (1)
     .mob Gnosh Brognat
+    .isOnQuest 10843
+step
+    #loop
+    .goto 1949,59.13,56.09,0
+    .goto 1949,59.13,56.09,40,0
+    .goto 1949,58.06,60.79,40,0
+    >>Kill |cRXP_ENEMY_Bladespire Crushers|r and |cRXP_ENEMY_Bladespire Mystics|r. Loot them for |cRXP_LOOT_Bladespire Totem|r
+    .complete 10851,1 --Bladespire Totem (5)
     .mob Bladespire Crusher
     .mob Bladespire Mystic
+    .isOnQuest 10851
 step
     .goto 1949,75.29,60.86
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Leoroxx|r
@@ -881,23 +885,39 @@ step
     .turnin 10753 >>Turn in Culling the Wild
     .target Faradrella
 step
-    #loop
-    .goto 1949,57.59,30.72,0
-    .goto 1949,57.59,30.72,40,0
-    .goto 1949,54.87,31.71,40,0
-    .goto 1949,55.62,25.68,40,0
+    .goto 1949,55.35,28.19
     >>Click the |cRXP_PICK_Ripe Moonshine Keg|r
+    .complete 10720,2 --Ripe Moonshine Keg
+    .isOnQuest 10720
+step
+    .goto 1949,55.28,25.99
     >>Click the |cRXP_PICK_Green Spot Grog Keg|r
+    .complete 10720,1 --Green Spot Grog Keg
+    .isOnQuest 10720
+step
+    .goto 1949,55.97,23.09
     >>Click the |cRXP_PICK_Fermented Seed Beer Keg|r
+    .complete 10720,3 --Fermented Seed Beer Keg
+    .isOnQuest 10720
+step
+    #loop
+    .goto 1949,56.13,23.65,0
+    .goto 1949,56.13,23.65,40,0
+    .goto 1949,56.93,28.33,40,0
+    .goto 1949,54.87,31.71,40,0
     >>Kill |cRXP_ENEMY_Bloodmaul Maulers|r
-    >>Kill |cRXP_ENEMY_Bloodmaul Warlocks|r
-    .complete -10720,2 --Ripe Moonshine Keg
-    .complete -10720,1 --Green Spot Grog Keg
-    .complete -10720,3 --Fermented Seed Beer Keg
-    .complete -10784,1 --Bloodmaul Mauler slain (10)
-    .complete -10784,2 --Bloodmaul Warlock slain (5)
+    .complete 10784,1 --Bloodmaul Mauler slain (10)
     .mob Bloodmaul Mauler
+    .isOnQuest 10784
+step
+    #loop
+    .goto 1949,55.62,25.68,0
+    .goto 1949,55.62,25.68,40,0
+    .goto 1949,56.38,21.97,40,0
+    >>Kill |cRXP_ENEMY_Bloodmaul Warlocks|r
+    .complete 10784,2 --Bloodmaul Warlock slain (5)
     .mob Bloodmaul Warlock
+    .isOnQuest 10784
 step
     #completewith next
     .hs >>Hearth to Gholah's inn. |cRXP_WARN_Walk instead if you are already nearby|r
@@ -1012,13 +1032,17 @@ step
     #loop
     .goto 1949,31.51,22.08,0
     .goto 1949,31.51,22.08,40,0
-    .goto 1949,29.91,22.95,40,0
+    .goto 1949,29.82,22.90,40,0
     >>Kill |cRXP_ENEMY_Boulder'mok Brutes|r
-    >>Kill |cRXP_ENEMY_Boulder'mok Shamans|r
-    .complete -10786,1 --Boulder'mok Brute slain (5)
-    .complete -10786,2 --Boulder'mok Shaman slain (3)
+    .complete 10786,1 --Boulder'mok Brute slain (5)
     .mob Boulder'mok Brute
+    .isOnQuest 10786
+step
+    .goto 1949,30.07,22.25
+    >>Kill |cRXP_ENEMY_Boulder'mok Shamans|r
+    .complete 10786,2 --Boulder'mok Shaman slain (3)
     .mob Boulder'mok Shaman
+    .isOnQuest 10786
 step
     #completewith Drop10719x2
     >>|cRXP_LOOT_Meeting Note|r can drop from |cRXP_ENEMY_Wyrmcult Poacher|r, |cRXP_ENEMY_Wyrmcult Hewer|r. Use it to start the quest if you get one
@@ -1356,13 +1380,17 @@ step
     .isQuestTurnedIn 10819 --any of: Felsworn Gas Mask
     .xp <65,1
 step
-    .goto 1949,74.62,39.19
+    .goto 1949,74.77,40.47
     >>Kill |cRXP_ENEMY_Doomforge Attendants|r
-    >>Kill |cRXP_ENEMY_Doomforge Engineers|r
-    .complete -10820,1 --Doomforge Attendant slain (4)
-    .complete -10820,2 --Doomforge Engineer slain (4)
+    .complete 10820,1 --Doomforge Attendant slain (4)
     .mob Doomforge Attendant
+    .isOnQuest 10820
+step
+    .goto 1949,75.48,40.00
+    >>Kill |cRXP_ENEMY_Doomforge Engineers|r
+    .complete 10820,2 --Doomforge Engineer slain (4)
     .mob Doomforge Engineer
+    .isOnQuest 10820
 step
     .goto 1949,73.27,40.03
     >>Click the |cRXP_PICK_Legion Communicator|r

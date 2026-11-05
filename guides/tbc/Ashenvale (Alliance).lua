@@ -382,22 +382,32 @@ step
     .complete 1054,1 --Dal Bloodclaw's Skull (1)
     .mob Dal Bloodclaw
 step
+    .goto 1440/1,-1451.48,2309.01
+    >>Kill |cRXP_ENEMY_Foulweald Ursas|r
+    .complete 1025,2 --Foulweald Ursa slain (2)
+    .mob Foulweald Ursa
+    .isOnQuest 1025
+step
+    .goto 1440/1,-1453.79,2293.25
+    >>Kill |cRXP_ENEMY_Foulweald Den Watcher|r
+    .complete 1025,1 --Foulweald Den Watcher slain (1)
+    .mob Foulweald Den Watcher
+    .isOnQuest 1025
+step
     #loop
     .goto 1440/1,-1421.50,2215.99,0
     .goto 1440/1,-1421.50,2215.99,40,0
     .goto 1440/1,-1544.90,2288.64,40,0
-    >>Kill |cRXP_ENEMY_Foulweald Ursas|r
-    >>Kill |cRXP_ENEMY_Foulweald Den Watcher|r
     >>Kill |cRXP_ENEMY_Foulweald Warriors|r
-    >>Kill |cRXP_ENEMY_Foulweald Totemics|r
-    .complete -1025,2 --Foulweald Ursa slain (2)
-    .complete -1025,1 --Foulweald Den Watcher slain (1)
-    .complete -1025,4 --Foulweald Warrior slain (12)
-    .complete -1025,3 --Foulweald Totemic slain (10)
-    .mob Foulweald Ursa
-    .mob Foulweald Den Watcher
+    .complete 1025,4 --Foulweald Warrior slain (12)
     .mob Foulweald Warrior
+    .isOnQuest 1025
+step
+    .goto 1440/1,-1412.85,2205.61
+    >>Kill |cRXP_ENEMY_Foulweald Totemics|r
+    .complete 1025,3 --Foulweald Totemic slain (10)
     .mob Foulweald Totemic
+    .isOnQuest 1025
 step
     .goto 1440/1,-1171.80,2089.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Velene Starstrike|r
@@ -702,11 +712,15 @@ step
     .goto 1440/1,-1493.00,1751.67,40,0
     .goto 1440/1,-1463.59,1643.27,40,0
     >>Kill |cRXP_ENEMY_Bloodtooth Guards|r
-    >>Kill |cRXP_ENEMY_Ran Bloodtooths|r
-    .complete -1045,2 --Bloodtooth Guard slain (4)
-    .complete -1045,1 --Ran Bloodtooth slain (4)
+    .complete 1045,2 --Bloodtooth Guard slain (4)
     .mob Bloodtooth Guard
+    .isOnQuest 1045
+step
+    .goto 1440/1,-1457.25,1612.52
+    >>Kill |cRXP_ENEMY_Ran Bloodtooths|r
+    .complete 1045,1 --Ran Bloodtooth slain (4)
     .mob Ran Bloodtooth
+    .isOnQuest 1045
 step
     .goto 1440/1,-1231.77,1787.03
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Krolg|r
@@ -884,11 +898,15 @@ step
 step
     .goto 1440/1,-2795.69,1876.97
     >>Kill |cRXP_ENEMY_Uthil Mooncall|r
-    >>Kill |cRXP_ENEMY_Taneel Darkwood|r
-    .complete -1012,2 --Uthil Mooncall slain (1)
-    .complete -1012,1 --Taneel Darkwood slain (1)
+    .complete 1012,2 --Uthil Mooncall slain (1)
     .mob Uthil Mooncall
+    .isOnQuest 1012
+step
+    .goto 1440/1,-2750.71,1828.93
+    >>Kill |cRXP_ENEMY_Taneel Darkwood|r
+    .complete 1012,1 --Taneel Darkwood slain (1)
     .mob Taneel Darkwood
+    .isOnQuest 1012
 step
     .goto 1440/1,-2627.88,1820.85
     >>Kill |cRXP_ENEMY_Mavoris Cloudsbreak|r

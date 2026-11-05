@@ -224,14 +224,6 @@ step
     .mob Bloodpetal Thresher
     .mob Bloodpetal Lasher
 step
-    #completewith Drop3884x2
-    >>As you go: Kill |cRXP_ENEMY_Devilsaurs|r, |cRXP_ENEMY_Ironhide Devilsaurs|r, |cRXP_ENEMY_Tyrant Devilsaurs|r and |cRXP_ENEMY_Stegodons|r. Loot them for |cRXP_LOOT_Bloodpetal Sprout|r. It can also be picked up from |cRXP_PICK_Bloodpetal Sprout|r on the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -4148,1 --Bloodpetal Sprout (1)
-    .mob Devilsaur
-    .mob Ironhide Devilsaur
-    .mob Tyrant Devilsaur
-    .mob Stegodon
-step
     #label Drop3884x2
     #loop
     .goto 1449/1,-1701.10,-7113.17,0
@@ -639,12 +631,16 @@ step
     .isQuestTurnedIn 3961 --any of: Linken's Adventure
     .xp <47,1
 step
-    .goto 1449/1,-1327.03,-7199.26
+    .goto 1449/1,-1294.84,-7183.47
     >>Kill |cRXP_ENEMY_Blazerunner|r
-    >>Open the |cRXP_PICK_Ornate Chest|r. Loot it for |cRXP_LOOT_Golden Flame|r
-    .complete -3962,1 --Blazerunner slain (1)
-    .complete -3962,2 --Golden Flame (1)
+    .complete 3962,1 --Blazerunner slain (1)
     .mob Blazerunner
+    .isOnQuest 3962
+step
+    .goto 1449/1,-1327.03,-7199.26
+    >>Open the |cRXP_PICK_Ornate Chest|r. Loot it for |cRXP_LOOT_Golden Flame|r
+    .complete 3962,2 --Golden Flame (1)
+    .isOnQuest 3962
 step
     .goto 1449/1,-1119.09,-6166.47
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Linken|r

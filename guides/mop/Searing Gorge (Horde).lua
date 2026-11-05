@@ -531,13 +531,6 @@ step
     .complete 28029,1 --Sentry Brazier
     .isOnQuest 28029
 step
-    #completewith Along71
-    >>As you go: Kill |cRXP_ENEMY_Dark Iron Marksmans|r and |cRXP_ENEMY_Dark Iron Lookouts|r. Loot them for |cRXP_LOOT_Dark Iron Bullet|r. It can also be picked up from |cRXP_PICK_Dark Iron Bullets|r on the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -28030,1 --Dark Iron Bullet (200)
-    .mob Dark Iron Marksman
-    .mob Dark Iron Lookout
-step
-    #label Along71
     .goto 32,44.03,60.91
     >>Click the |cRXP_PICK_Sentry Brazier|r
     .complete 28029,3 --Sentry Brazier
@@ -549,16 +542,24 @@ step
     .isOnQuest 28029
 step
     #loop
-    .goto 32,49.98,66.09,0
-    .goto 32,49.98,66.09,40,0
+    .goto 32,46.79,64.69,0
+    .goto 32,46.79,64.69,40,0
     .goto 32,46.59,69.91,40,0
-    .goto 32,43.65,62.74,40,0
     >>Kill |cRXP_ENEMY_Dark Iron Marksmans|r
+    .complete 28028,1 --Dark Iron Marksman slain (8)
+    .mob Dark Iron Marksman
+    .isOnQuest 28028
+step
+    #loop
+    .goto 32,49.69,66.69,0
+    .goto 32,49.69,66.69,40,0
+    .goto 32,46.74,63.96,40,0
+    .goto 32,43.65,62.74,40,0
     >>Kill |cRXP_ENEMY_Dark Iron Marksmans|r and |cRXP_ENEMY_Dark Iron Lookouts|r. Loot them for |cRXP_LOOT_Dark Iron Bullet|r. It can also be picked up from |cRXP_PICK_Dark Iron Bullets|r on the ground
-    .complete -28028,1 --Dark Iron Marksman slain (8)
-    .complete -28030,1 --Dark Iron Bullet (200)
+    .complete 28030,1 --Dark Iron Bullet (200)
     .mob Dark Iron Marksman
     .mob Dark Iron Lookout
+    .isOnQuest 28030
 step
     #loop
     .goto 32,35.51,70.80,0
@@ -672,11 +673,15 @@ step
 step
     .goto 32,41.32,25.53
     >>Kill |cRXP_ENEMY_Lathoric the Black|r
-    >>Kill |cRXP_ENEMY_Obsidion|r
-    .complete -28056,2 --Lathoric the Black slain (1)
-    .complete -28056,1 --Obsidion slain (1)
+    .complete 28056,2 --Lathoric the Black slain (1)
     .mob Lathoric the Black
+    .isOnQuest 28056
+step
+    .goto 32,41.76,24.33
+    >>Kill |cRXP_ENEMY_Obsidion|r
+    .complete 28056,1 --Obsidion slain (1)
     .mob Obsidion
+    .isOnQuest 28056
 step
     #loop
     .goto 32,41.45,31.95,0
@@ -743,13 +748,17 @@ step
     .isQuestTurnedIn 28057 --any of: Kill 'em With Sleep Deprivation
     .xp <46,1
 step
-    .goto 32,40.86,35.94
+    .goto 32,40.83,35.80
     >>Kill |cRXP_ENEMY_Overseer Maltorius|r
-    >>Kill |cRXP_ENEMY_Twilight-Lord Arkkus|r
-    .complete -28060,1 --Overseer Maltorius slain (1)
-    .complete -28060,2 --Twilight-Lord Arkkus slain (1)
+    .complete 28060,1 --Overseer Maltorius slain (1)
     .mob Overseer Maltorius
+    .isOnQuest 28060
+step
+    .goto 32,40.86,35.94
+    >>Kill |cRXP_ENEMY_Twilight-Lord Arkkus|r
+    .complete 28060,2 --Twilight-Lord Arkkus slain (1)
     .mob Twilight-Lord Arkkus
+    .isOnQuest 28060
 step
     .goto 32,38.12,26.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Overseer Oilfist|r. |cRXP_WARN_This NPC walks a patrol route|r
@@ -771,12 +780,6 @@ step
     .mob Archduke Calcinder
     .isOnQuest 28062
 step
-    #completewith Along104
-    >>As you go: Kill |cRXP_ENEMY_Searing Flamewraiths|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -28061,1 --Searing Flamewraith slain (6)
-    .mob Searing Flamewraith
-step
-    #label Along104
     .goto 32,43.36,28.59
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
     .turnin 28062 >>Turn in From Whence He Came

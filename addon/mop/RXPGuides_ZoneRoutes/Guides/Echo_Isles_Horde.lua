@@ -796,18 +796,24 @@ step << Orc Warrior/Orc Hunter/Orc Rogue/Orc Priest/Orc Shaman/Orc Mage/Orc Warl
     .target Tegashi
 step << Orc Warrior/Orc Hunter/Orc Rogue/Orc Priest/Orc Shaman/Orc Mage/Orc Warlock/Orc Monk/Orc Druid/Undead Warrior/Undead Hunter/Undead Rogue/Undead Priest/Undead Shaman/Undead Mage/Undead Warlock/Undead Monk/Undead Druid/Tauren Warrior/Tauren Hunter/Tauren Rogue/Tauren Priest/Tauren Shaman/Tauren Mage/Tauren Warlock/Tauren Monk/Tauren Druid/Troll Warrior/Troll Hunter/Troll Rogue/Troll Priest/Troll Shaman/Troll Mage/Troll Warlock/Troll Monk/Troll Druid/BloodElf Warrior/BloodElf Hunter/BloodElf Rogue/BloodElf Priest/BloodElf Shaman/BloodElf Mage/BloodElf Warlock/BloodElf Monk/BloodElf Druid/Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock/Goblin Monk/Goblin Druid/Pandaren Warrior/Pandaren Hunter/Pandaren Rogue/Pandaren Priest/Pandaren Shaman/Pandaren Mage/Pandaren Warlock/Pandaren Monk/Pandaren Druid
     #loop
-    .goto 463,36.77,69.08,0
-    .goto 463,36.77,69.08,40,0
-    .goto 463,35.21,65.96,40,0
-    .goto 463,32.76,69.58,40,0
+    .goto 463,34.13,71.92,0
+    .goto 463,34.13,71.92,40,0
+    .goto 463,35.10,67.50,40,0
+    .goto 463,36.46,64.17,40,0
     >>Kill |cRXP_ENEMY_Naj'tess|r and loot |cRXP_LOOT_Naj'tess' Orb of Corruption|r
     >>Kill |cRXP_ENEMY_Corrupted Bloodtalons|r
-    >>Interact with |cRXP_FRIENDLY_Lost Bloodtalon Hatchlings|r
     .complete 24625,1 --Naj'tess' Orb of Corruption (1)
     .complete 24624,1 --Corrupted Bloodtalon slain (8)
-    .complete 24623,1 --Lost Bloodtalon Hatchling (12)
     .mob Naj'tess
     .mob Corrupted Bloodtalon
+step << Orc Warrior/Orc Hunter/Orc Rogue/Orc Priest/Orc Shaman/Orc Mage/Orc Warlock/Orc Monk/Orc Druid/Undead Warrior/Undead Hunter/Undead Rogue/Undead Priest/Undead Shaman/Undead Mage/Undead Warlock/Undead Monk/Undead Druid/Tauren Warrior/Tauren Hunter/Tauren Rogue/Tauren Priest/Tauren Shaman/Tauren Mage/Tauren Warlock/Tauren Monk/Tauren Druid/Troll Warrior/Troll Hunter/Troll Rogue/Troll Priest/Troll Shaman/Troll Mage/Troll Warlock/Troll Monk/Troll Druid/BloodElf Warrior/BloodElf Hunter/BloodElf Rogue/BloodElf Priest/BloodElf Shaman/BloodElf Mage/BloodElf Warlock/BloodElf Monk/BloodElf Druid/Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock/Goblin Monk/Goblin Druid/Pandaren Warrior/Pandaren Hunter/Pandaren Rogue/Pandaren Priest/Pandaren Shaman/Pandaren Mage/Pandaren Warlock/Pandaren Monk/Pandaren Druid
+    #loop
+    .goto 463,36.27,68.31,0
+    .goto 463,36.27,68.31,40,0
+    .goto 463,38.55,66.04,40,0
+    .goto 463,32.33,70.65,40,0
+    >>Interact with |cRXP_FRIENDLY_Lost Bloodtalon Hatchlings|r
+    .complete 24623,1 --Lost Bloodtalon Hatchling (12)
     .target Lost Bloodtalon Hatchling
 step << Orc Warrior/Orc Hunter/Orc Rogue/Orc Priest/Orc Shaman/Orc Mage/Orc Warlock/Orc Monk/Orc Druid/Undead Warrior/Undead Hunter/Undead Rogue/Undead Priest/Undead Shaman/Undead Mage/Undead Warlock/Undead Monk/Undead Druid/Tauren Warrior/Tauren Hunter/Tauren Rogue/Tauren Priest/Tauren Shaman/Tauren Mage/Tauren Warlock/Tauren Monk/Tauren Druid/Troll Warrior/Troll Hunter/Troll Rogue/Troll Priest/Troll Shaman/Troll Mage/Troll Warlock/Troll Monk/Troll Druid/BloodElf Warrior/BloodElf Hunter/BloodElf Rogue/BloodElf Priest/BloodElf Shaman/BloodElf Mage/BloodElf Warlock/BloodElf Monk/BloodElf Druid/Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock/Goblin Monk/Goblin Druid/Pandaren Warrior/Pandaren Hunter/Pandaren Rogue/Pandaren Priest/Pandaren Shaman/Pandaren Mage/Pandaren Warlock/Pandaren Monk/Pandaren Druid
     .goto 463,45.73,85.00

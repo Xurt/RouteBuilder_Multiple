@@ -1,5 +1,5 @@
 Dustwallow Marsh - Horde - part 1 of 3, planned from level 35
-Guide "35-46 Dustwallow Marsh" in group "Zone Routes (Horde)": this part has 109 steps, 94 stops
+Guide "35-46 Dustwallow Marsh" in group "Zone Routes (Horde)": this part has 111 steps, 97 stops
 Written to guides/tbc/Dustwallow Marsh (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -23,7 +23,7 @@ Step order kept from the last build (locks folder): 107 steps kept, 18 new ones 
   Warlock (quests that depend on other zones): 1 more tasks; their whole route comes to 20,642 yd; ends at level 37.1; 2 hearths; at its hardest you are 2.8 levels below the mobs
 Hearthstone: set at "Little" Logok ("Little" Logok's inn); 2 hearth steps in the guide.
 1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
-6 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 3 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (57)
@@ -110,7 +110,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Dustwallow Marsh - Horde - part 2 of 3, planned from level 40
-Guide "35-46 Dustwallow Marsh" in group "Zone Routes (Horde)": this part has 49 steps, 42 stops
+Guide "35-46 Dustwallow Marsh" in group "Zone Routes (Horde)": this part has 50 steps, 44 stops
 Written to guides/tbc/Dustwallow Marsh (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -131,7 +131,7 @@ Step order kept from the last build (locks folder): 34 steps kept, 17 new ones s
   Mage (quests that depend on other zones): 11 more tasks; their whole route comes to 10,109 yd; ends at level 40.7; 1 hearth
   Warlock (quests that depend on other zones): 4 more tasks; their whole route comes to 9,939 yd; ends at level 40.7; 1 hearth
 Hearthstone: set at "Little" Logok ("Little" Logok's inn); 1 hearth step in the guide.
-6 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+5 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (19)
 ------------------------

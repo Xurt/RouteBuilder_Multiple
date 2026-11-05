@@ -470,7 +470,7 @@ step
     .target Jitters
     .isQuestTurnedIn 453 --any of: Finding the Shadowy Figure
 step
-    #completewith Along25
+    #completewith Along26
     >>As you go: Kill |cRXP_ENEMY_Skeletal Warriors|r, |cRXP_ENEMY_Skeletal Horrors|r, |cRXP_ENEMY_Skeletal Mages|r and |cRXP_ENEMY_Skeletal Fiends|r. Loot them for |cRXP_LOOT_Skeleton Finger|r. |cRXP_WARN_Anything left is finished later|r
     .complete 101,3 --Skeleton Finger (10)
     .mob Skeletal Warrior
@@ -478,24 +478,32 @@ step
     .mob Skeletal Mage
     .mob Skeletal Fiend
 step
-    #label Along25
     .goto 1431/0,203.15,-10484.37
     >>Kill |cRXP_ENEMY_Skeletal Fiends|r
     .complete 57,1 --Skeletal Fiend slain (15)
     .mob Skeletal Fiend
     .isOnQuest 57
 step
+    #label Along26
     #loop
-    .goto 1431/0,203.15,-10484.37,0
-    .goto 1431/0,203.15,-10484.37,40,0
-    .goto 1431/0,244.46,-10570.23,40,0
-    .goto 1431/0,379.46,-10564.47,40,0
+    .goto 1431/0,251.48,-10586.07,0
+    .goto 1431/0,251.48,-10586.07,40,0
+    .goto 1431/0,391.88,-10586.61,40,0
+    .goto 1431/0,453.71,-10476.27,40,0
     >>Kill |cRXP_ENEMY_Skeletal Horrors|r
-    >>Kill |cRXP_ENEMY_Skeletal Warriors|r, |cRXP_ENEMY_Skeletal Horrors|r, |cRXP_ENEMY_Skeletal Mages|r and |cRXP_ENEMY_Skeletal Fiends|r. Loot them for |cRXP_LOOT_Skeleton Finger|r
-    .complete -57,2 --Skeletal Horror slain (15)
-    .complete 101,3 --Skeleton Finger (10)
+    .complete 57,2 --Skeletal Horror slain (15)
     .mob Skeletal Horror
+    .isOnQuest 57
+step
+    #loop
+    .goto 1431/0,379.46,-10564.47,0
+    .goto 1431/0,379.46,-10564.47,40,0
+    .goto 1431/0,244.46,-10570.23,40,0
+    .goto 1431/0,203.15,-10484.37,40,0
+    >>Kill |cRXP_ENEMY_Skeletal Warriors|r, |cRXP_ENEMY_Skeletal Horrors|r, |cRXP_ENEMY_Skeletal Mages|r and |cRXP_ENEMY_Skeletal Fiends|r. Loot them for |cRXP_LOOT_Skeleton Finger|r
+    .complete 101,3 --Skeleton Finger (10)
     .mob Skeletal Warrior
+    .mob Skeletal Horror
     .mob Skeletal Mage
     .mob Skeletal Fiend
 step
@@ -563,20 +571,38 @@ step
     .isQuestTurnedIn 159 --any of: Juice Delivery
 step
     #loop
-    .goto 1431/0,173.72,-10239.93,0
+    .goto 1431/0,172.64,-10341.63,0
+    .goto 1431/0,172.64,-10341.63,40,0
+    .goto 1431/0,214.76,-10224.63,40,0
+    >>Kill |cRXP_ENEMY_Plague Spreaders|r
+    .complete 58,1 --Plague Spreader slain (20)
+    .mob Plague Spreader
+    .isOnQuest 58
+step
+    #loop
+    .goto 1431/0,173.18,-10342.17,0
+    .goto 1431/0,173.18,-10342.17,40,0
     .goto 1431/0,173.72,-10239.93,40,0
     .goto 1431/0,248.24,-10226.25,40,0
-    .goto 1431/0,173.18,-10342.17,40,0
-    >>Kill |cRXP_ENEMY_Plague Spreaders|r
     >>Kill |cRXP_ENEMY_Flesh Eaters|r, |cRXP_ENEMY_Bone Chewers|r, |cRXP_ENEMY_Brain Eaters|r and |cRXP_ENEMY_Plague Spreaders|r. Loot them for |cRXP_LOOT_Ghoul Rib|r
-    >>Kill |cRXP_ENEMY_Flesh Eaters|r, |cRXP_ENEMY_Bone Chewers|r, |cRXP_ENEMY_Brain Eaters|r and |cRXP_ENEMY_Plague Spreaders|r. Loot them for |cRXP_LOOT_Ghoul Fang|r
-    .complete -58,1 --Plague Spreader slain (20)
-    .complete -133,1 --Ghoul Rib (7)
-    .complete 101,1 --Ghoul Fang (10)
-    .mob Plague Spreader
+    .complete 133,1 --Ghoul Rib (7)
     .mob Flesh Eater
     .mob Bone Chewer
     .mob Brain Eater
+    .mob Plague Spreader
+    .isOnQuest 133
+step
+    #loop
+    .goto 1431/0,173.18,-10342.17,0
+    .goto 1431/0,173.18,-10342.17,40,0
+    .goto 1431/0,173.72,-10239.93,40,0
+    .goto 1431/0,248.24,-10226.25,40,0
+    >>Kill |cRXP_ENEMY_Flesh Eaters|r, |cRXP_ENEMY_Bone Chewers|r, |cRXP_ENEMY_Brain Eaters|r and |cRXP_ENEMY_Plague Spreaders|r. Loot them for |cRXP_LOOT_Ghoul Fang|r
+    .complete 101,1 --Ghoul Fang (10)
+    .mob Flesh Eater
+    .mob Bone Chewer
+    .mob Brain Eater
+    .mob Plague Spreader
 step
     .goto 1431/0,74.36,-10282.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Abercrombie|r
@@ -714,18 +740,31 @@ step
     .isQuestTurnedIn 268 --any of: Return to Sven
 step
     #loop
-    .goto 1431/0,393.77,-10305.27,0
-    .goto 1431/0,393.77,-10305.27,40,0
-    .goto 1431/0,403.49,-10414.17,40,0
+    .goto 1431/0,445.34,-10368.45,0
+    .goto 1431/0,445.34,-10368.45,40,0
+    .goto 1431/0,391.34,-10410.57,40,0
     >>Kill |cRXP_ENEMY_Skeletal Raiders|r
-    >>Kill |cRXP_ENEMY_Skeletal Healers|r
-    >>Kill |cRXP_ENEMY_Skeletal Warders|r
-    .complete -323,1 --Skeletal Raider slain (15)
-    .complete -323,2 --Skeletal Healer slain (3)
-    .complete -323,3 --Skeletal Warder slain (3)
+    .complete 323,1 --Skeletal Raider slain (15)
     .mob Skeletal Raider
+    .isOnQuest 323
+step
+    #loop
+    .goto 1431/0,374.06,-10422.09,0
+    .goto 1431/0,374.06,-10422.09,40,0
+    .goto 1431/0,378.65,-10238.49,40,0
+    >>Kill |cRXP_ENEMY_Skeletal Healers|r
+    .complete 323,2 --Skeletal Healer slain (3)
     .mob Skeletal Healer
+    .isOnQuest 323
+step
+    #loop
+    .goto 1431/0,366.23,-10389.69,0
+    .goto 1431/0,366.23,-10389.69,40,0
+    .goto 1431/0,379.73,-10258.83,40,0
+    >>Kill |cRXP_ENEMY_Skeletal Warders|r
+    .complete 323,3 --Skeletal Warder slain (3)
     .mob Skeletal Warder
+    .isOnQuest 323
 step
     .goto 1431/0,623.27,-10329.93
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sven Yorgen|r
@@ -891,13 +930,17 @@ step
     .complete 1043,1 --Find evidence of the Scythe of Elune
     .isOnQuest 1043
 step
-    .goto 1431/0,-849.58,-11196.27
+    .goto 1431/0,-835.81,-11174.13
     >>Kill |cRXP_ENEMY_Nightbane Vile Fangs|r
-    >>Kill |cRXP_ENEMY_Nightbane Tainted Ones|r
-    .complete -222,1 --Nightbane Vile Fang slain (8)
-    .complete -222,2 --Nightbane Tainted One slain (8)
+    .complete 222,1 --Nightbane Vile Fang slain (8)
     .mob Nightbane Vile Fang
+    .isOnQuest 222
+step
+    .goto 1431/0,-849.58,-11196.27
+    >>Kill |cRXP_ENEMY_Nightbane Tainted Ones|r
+    .complete 222,2 --Nightbane Tainted One slain (8)
     .mob Nightbane Tainted One
+    .isOnQuest 222
 step
     .goto 1431/0,55.19,-10273.05
     >>Kill |cRXP_ENEMY_Eliza|r and loot |cRXP_LOOT_The Embalmer's Heart|r

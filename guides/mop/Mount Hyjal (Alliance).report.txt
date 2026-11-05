@@ -1,5 +1,5 @@
 Mount Hyjal - Alliance
-Guide "81-81 Mount Hyjal" in group "Zone Routes (Alliance)": 379 steps, 346 stops
+Guide "81-81 Mount Hyjal" in group "Zone Routes (Alliance)": 381 steps, 371 stops
 Written to guides/mop/Mount Hyjal (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -24,7 +24,7 @@ Step order kept from the last build (locks folder): 362 steps kept, 26 new ones 
   NightElf Druid/Worgen Druid (quests that depend on other zones): 2 more tasks; their whole route comes to 63,765 yd; ends at level 81.1; 2 hearths
 Hearthstone: set at Jandunel Reedwind (Jandunel Reedwind's inn); 2 hearth steps in the guide.
 1 training, vendor and flight-path step kept from the lock file, each next to the step above it there.
-30 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (137)

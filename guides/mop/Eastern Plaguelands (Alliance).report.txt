@@ -1,5 +1,5 @@
 Eastern Plaguelands - Alliance - part 1 of 3, planned from level 40
-Guide "40-45 Eastern Plaguelands" in group "Zone Routes (Alliance)": this part has 181 steps, 160 stops
+Guide "40-45 Eastern Plaguelands" in group "Zone Routes (Alliance)": this part has 188 steps, 166 stops
 Written to guides/mop/Eastern Plaguelands (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -22,7 +22,7 @@ Step order kept from the last build (locks folder): 213 steps kept, 13 new ones 
 Hearthstone: set at Fiona (Fiona's inn); 1 hearth step in the guide.
 6 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
 1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
-10 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+11 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (78)

@@ -723,11 +723,21 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 70,45.95,67.21,40,0
     .goto 70,49.11,68.06,40,0
     >>Kill |cRXP_ENEMY_Searing Hatchlings|r and |cRXP_ENEMY_Searing Whelps|r. Loot them for |cRXP_LOOT_Searing Heart|r
-    >>Kill |cRXP_ENEMY_Searing Hatchlings|r and |cRXP_ENEMY_Searing Whelps|r. Loot them for |cRXP_LOOT_Searing Tongue|r
-    .complete -27414,2 --Searing Heart (7)
-    .complete -27414,1 --Searing Tongue (7)
+    .complete 27414,2 --Searing Heart (7)
     .mob Searing Hatchling
     .mob Searing Whelp
+    .isOnQuest 27414
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 70,45.95,67.21,0
+    .goto 70,45.95,67.21,40,0
+    .goto 70,43.08,69.23,40,0
+    .goto 70,49.11,68.06,40,0
+    >>Kill |cRXP_ENEMY_Searing Hatchlings|r and |cRXP_ENEMY_Searing Whelps|r. Loot them for |cRXP_LOOT_Searing Tongue|r
+    .complete 27414,1 --Searing Tongue (7)
+    .mob Searing Hatchling
+    .mob Searing Whelp
+    .isOnQuest 27414
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #completewith next
     .hs >>Hearth to "Little" Logok's inn. |cRXP_WARN_Walk instead if you are already nearby|r
@@ -791,12 +801,12 @@ step
     .turnin 27339 >>Turn in The Reagent Thief
     .target Apprentice Garion
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along90
+    #completewith Along91
     >>As you go: Kill |cRXP_ENEMY_Firemane Ash Tails|r. |cRXP_WARN_Anything left is finished later|r
     .complete 1168,2 --Firemane Ash Tail slain (10)
     .mob Firemane Ash Tail
 step
-    #label Along90
+    #label Along91
     #loop
     .goto 70,44.03,65.30,0
     .goto 70,44.03,65.30,40,0
@@ -808,20 +818,23 @@ step
     .complete 27424,1 --Mok'Morokk's Snuff (1)
     .mob Firemane Scout << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along91
+    #completewith Along92
     >>As you go: Kill |cRXP_ENEMY_Firemane Scalebanes|r. |cRXP_WARN_Anything left is finished later|r
     .complete 1168,3 --Firemane Scalebane slain (5)
     .mob Firemane Scalebane
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along92
+    .goto 70,48.38,75.96
+    >>Click the |cRXP_PICK_Egg of Onyxia|r
+    .complete 27415,1 --Egg of Onyxia
+    .isOnQuest 27415
 step
-    #label Along91
     #loop
-    .goto 70,43.26,76.34,0
-    .goto 70,43.26,76.34,40,0
+    .goto 70,43.29,75.99,0
+    .goto 70,43.29,75.99,40,0
     .goto 70,46.11,81.55,40,0
-    .goto 70,48.38,75.96,40,0
-    >>Click the |cRXP_PICK_Egg of Onyxia|r << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 70,47.95,79.70,40,0
     >>Pick up |cRXP_PICK_Wyrmtail|r from the ground
-    .complete -27415,1 << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren --Egg of Onyxia
     .complete 27413,1 --Wyrmtail (8)
 step
     .goto 70,42.33,72.93

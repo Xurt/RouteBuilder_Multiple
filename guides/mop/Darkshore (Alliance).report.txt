@@ -1,5 +1,5 @@
 Darkshore - Alliance - part 1 of 3, planned from level 10
-Guide "10-20 Darkshore" in group "Zone Routes (Alliance)": this part has 242 steps, 199 stops
+Guide "10-20 Darkshore" in group "Zone Routes (Alliance)": this part has 248 steps, 208 stops
 Written to guides/mop/Darkshore (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -84,8 +84,8 @@ The check passes at once if you are there; if you are a little behind the predic
   level 13 for In Aid of the Refugees
   level 13 for Coaxing the Spirits (Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren)
 8 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-17 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
-7 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+10 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+9 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 2 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 
 Quests in the guide (95)

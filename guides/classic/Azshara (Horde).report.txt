@@ -100,7 +100,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Azshara - Horde - part 2 of 3, planned from level 50
-Guide "47-57 Azshara" in group "Zone Routes (Horde)": this part has 22 steps, 17 stops
+Guide "47-57 Azshara" in group "Zone Routes (Horde)": this part has 24 steps, 19 stops
 Written to guides/classic/Azshara (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -182,7 +182,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Azshara - Horde - part 3 of 3, planned from level 56
-Guide "47-57 Azshara" in group "Zone Routes (Horde)": this part has 45 steps, 43 stops
+Guide "47-57 Azshara" in group "Zone Routes (Horde)": this part has 47 steps, 45 stops
 Written to guides/classic/Azshara (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

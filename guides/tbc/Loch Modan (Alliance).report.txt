@@ -89,7 +89,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Loch Modan - Alliance - part 2 of 4, planned from level 14
-Guide "10-22 Loch Modan" in group "Zone Routes (Alliance)": this part has 34 steps, 32 stops
+Guide "10-22 Loch Modan" in group "Zone Routes (Alliance)": this part has 38 steps, 35 stops
 Written to guides/tbc/Loch Modan (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -109,6 +109,7 @@ Step order kept from the last build (locks folder): 4 steps kept, 35 new ones sl
   everyone: 31 tasks, 11,119 yd on foot; ends at level 15.0; 1 hearth; at its hardest you are 2.1 levels below the mobs
   everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 11,902 yd; ends at level 15.0; 1 hearth; at its hardest you are 2.1 levels below the mobs
 Hearthstone: set at Aldren Cordon (Aldren Cordon's inn); 1 hearth step in the guide.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (11)
 ------------------------
@@ -148,7 +149,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Loch Modan - Alliance - part 3 of 4, planned from level 18
-Guide "10-22 Loch Modan" in group "Zone Routes (Alliance)": this part has 26 steps, 23 stops
+Guide "10-22 Loch Modan" in group "Zone Routes (Alliance)": this part has 27 steps, 24 stops
 Written to guides/tbc/Loch Modan (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

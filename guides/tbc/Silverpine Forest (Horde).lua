@@ -434,14 +434,6 @@ step
     .mob Dalaran Conjuror
     .isOnQuest 479
 step
-    #completewith Along15
-    >>As you go: Kill |cRXP_ENEMY_Pyrewood Watchers|r, |cRXP_ENEMY_Moonrage Watchers|r, |cRXP_ENEMY_Moonrage Sentries|r and |cRXP_ENEMY_Pyrewood Sentries|r. Loot them for |cRXP_LOOT_Pyrewood Shackle|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -99,1 --Pyrewood Shackle (6)
-    .mob Pyrewood Watcher
-    .mob Moonrage Watcher
-    .mob Moonrage Sentry
-    .mob Pyrewood Sentry
-step
     .goto 1421/0,1497.00,-416.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Deathstalker Faerleia|r
     .accept 452 >>Accept Pyrewood Ambush
@@ -455,7 +447,6 @@ step
     .mob Councilman Hendricks
     .mob Councilman Wilhelm
 step
-    #label Along15
     .goto 1421/0,1497.00,-416.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Deathstalker Faerleia|r
     .turnin 452 >>Turn in Pyrewood Ambush

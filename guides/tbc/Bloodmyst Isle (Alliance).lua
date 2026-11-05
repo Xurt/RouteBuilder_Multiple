@@ -648,18 +648,21 @@ step
     .target Harbinger Mikolaas
     .isQuestTurnedIn 9584 --any of: The Second Sample
 step
+    .goto 1950,41.00,30.00
+    >>Open the |cRXP_PICK_Axxarien Crystal|r. Loot it for |cRXP_LOOT_Axxarien Crystal Sample|r
+    .complete 9585,1 --Axxarien Crystal Sample (1)
+    .isOnQuest 9585
+step
     #loop
-    .goto 1950,41.86,34.35,0
+    .goto 1950,41.91,29.53,0
+    .goto 1950,41.91,29.53,40,0
     .goto 1950,41.86,34.35,40,0
     .goto 1950,40.18,35.09,40,0
     .goto 1950,37.29,37.30,40,0
-    .goto 1950,41.00,30.00,40,0
-    >>Open the |cRXP_PICK_Axxarien Crystal|r. Loot it for |cRXP_LOOT_Axxarien Crystal Sample|r
     >>Kill |cRXP_ENEMY_Zevrax|r
     >>Kill |cRXP_ENEMY_Axxarien Shadowstalkers|r
     >>Kill |cRXP_ENEMY_Axxarien Hellcallers|r
     >>Pick up |cRXP_PICK_Corrupted Crystal|r from the ground
-    .complete -9585,1 --Axxarien Crystal Sample (1)
     .complete 9569,1 --Zevrax slain (1)
     .complete 9569,2 --Axxarien Shadowstalker slain (5)
     .complete 9569,3 --Axxarien Hellcaller slain (5)
@@ -805,38 +808,40 @@ step
     .accept 9669 >>Accept The Missing Expedition
     .target Achelus
 step
-    #completewith Along52
-    >>As you go: Kill |cRXP_ENEMY_Sunhawk Reclaimers|r. Loot them for |cRXP_LOOT_Medical Supplies|r. It can also be picked up from |cRXP_PICK_Medical Supplies|r on the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -9703,1 --Medical Supplies (12)
-    .mob Sunhawk Reclaimer
-step
     .goto 1950,37.50,61.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Galaen's Corpse|r
     .turnin 9578 >>Turn in Searching for Galaen
     .accept 9579 >>Accept Galaen's Fate
     .target Galaen's Corpse
 step
-    #completewith Along52
+    #completewith Along53
     >>As you go: Kill |cRXP_ENEMY_Sunhawk Reclaimer|r and loot |cRXP_LOOT_Galaen's Amulet|r. |cRXP_WARN_Anything left is finished later|r
     .complete 9579,1 --Galaen's Amulet (1)
     .mob Sunhawk Reclaimer
 step
-    #label Along52
+    #label Along53
     .goto 1950,37.55,61.25
     >>Click the |cRXP_PICK_Galaen's Journal|r
     .accept 9706 >>Accept Galaen's Journal - The Fate of Vindicator Saruan
     .isQuestTurnedIn 9694 --any of: Blood Watch
 step
     #loop
-    .goto 1950,36.18,60.41,0
-    .goto 1950,36.18,60.41,40,0
-    .goto 1950,38.01,57.66,40,0
-    .goto 1950,39.43,61.98,40,0
+    .goto 1950,36.17,60.37,0
+    .goto 1950,36.17,60.37,40,0
+    .goto 1950,39.11,62.02,40,0
     >>Kill |cRXP_ENEMY_Sunhawk Reclaimer|r and loot |cRXP_LOOT_Galaen's Amulet|r
-    >>Kill |cRXP_ENEMY_Sunhawk Reclaimers|r. Loot them for |cRXP_LOOT_Medical Supplies|r. It can also be picked up from |cRXP_PICK_Medical Supplies|r on the ground
     .complete 9579,1 --Galaen's Amulet (1)
-    .complete -9703,1 --Medical Supplies (12)
     .mob Sunhawk Reclaimer
+step
+    #loop
+    .goto 1950,39.43,61.98,0
+    .goto 1950,39.43,61.98,40,0
+    .goto 1950,38.01,57.66,40,0
+    .goto 1950,36.18,60.41,40,0
+    >>Kill |cRXP_ENEMY_Sunhawk Reclaimers|r. Loot them for |cRXP_LOOT_Medical Supplies|r. It can also be picked up from |cRXP_PICK_Medical Supplies|r on the ground
+    .complete 9703,1 --Medical Supplies (12)
+    .mob Sunhawk Reclaimer
+    .isOnQuest 9703
 step
     #completewith next
     .hs >>Hearth to Fazu's inn. |cRXP_WARN_Walk instead if you are already nearby|r
@@ -1043,11 +1048,6 @@ step
     .accept 9688 >>Accept Into the Dream
     .target Prince Toreth
 step
-    #completewith Along82
-    >>As you go: Pick up |cRXP_PICK_Ysera's Tear|r from the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -9649,1 --Ysera's Tear (2)
-step
-    #label Along82
     #loop
     .goto 1950,72.63,24.93,0
     .goto 1950,72.63,24.93,40,0
@@ -1076,15 +1076,22 @@ step
     #loop
     .goto 1950,24.82,52.89,0
     .goto 1950,24.82,52.89,40,0
-    .goto 1950,23.99,57.72,40,0
+    .goto 1950,23.68,56.25,40,0
     .goto 1950,22.77,60.94,40,0
-    .goto 1950,20.63,62.55,40,0
     >>Kill |cRXP_ENEMY_Sunhawk Pyromancers|r
-    >>Kill |cRXP_ENEMY_Sunhawk Defenders|r
-    .complete -9746,1 --Sunhawk Pyromancer slain (10)
-    .complete -9746,2 --Sunhawk Defender slain (10)
+    .complete 9746,1 --Sunhawk Pyromancer slain (10)
     .mob Sunhawk Pyromancer
+    .isOnQuest 9746
+step
+    #loop
+    .goto 1950,24.87,57.08,0
+    .goto 1950,24.87,57.08,40,0
+    .goto 1950,23.85,59.38,40,0
+    .goto 1950,20.63,62.55,40,0
+    >>Kill |cRXP_ENEMY_Sunhawk Defenders|r
+    .complete 9746,2 --Sunhawk Defender slain (10)
     .mob Sunhawk Defender
+    .isOnQuest 9746
 step << Hunter/Shaman/Mage/Warlock
     .xp 20-2700
 step << Hunter/Shaman/Mage/Warlock

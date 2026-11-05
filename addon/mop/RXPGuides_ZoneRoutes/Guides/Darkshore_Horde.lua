@@ -114,10 +114,15 @@ step
 step
     .goto 62,48.47,36.63
     >>Kill |cRXP_ENEMY_Anaya Dawnrunner|r and loot |cRXP_LOOT_Anaya's Pendant|r
-    >>Kill |cRXP_ENEMY_Anaya Dawnrunner|r
-    .complete -13563,2 --Anaya's Pendant (1)
-    .complete -13563,1 --Anaya Dawnrunner slain (1)
+    .complete 13563,2 --Anaya's Pendant (1)
     .mob Anaya Dawnrunner
+    .isOnQuest 13563
+step
+    .goto 62,48.47,36.63
+    >>Kill |cRXP_ENEMY_Anaya Dawnrunner|r
+    .complete 13563,1 --Anaya Dawnrunner slain (1)
+    .mob Anaya Dawnrunner
+    .isOnQuest 13563
 step
     .goto 62,58.91,19.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Morra Starbreeze|r
@@ -230,34 +235,47 @@ step
     .isQuestTurnedIn 13591 --any of: Disturbing Connections
     .xp <13,1
 step
-    #completewith Along8
-    >>As you go: Kill |cRXP_ENEMY_High Cultist Azerynn|r. Kill |cRXP_ENEMY_Twilight Fanatics|r. Pick up |cRXP_PICK_Twilight Plans|r from the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -13519,1 --High Cultist Azerynn slain (1)
-    .complete -13519,2 --Twilight Fanatic slain (10)
-    .complete -13596,1 --Twilight Plans (6)
-    .mob High Cultist Azerynn
-    .mob Twilight Fanatic
-step
-    #label Along8
     .goto 62,44.58,30.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Moon Priestess Tharill|r
     .accept 13523 >>Accept Power Over the Tides
     .target Moon Priestess Tharill
 step
-    #loop
-    .goto 62,43.31,31.58,0
-    .goto 62,43.31,31.58,40,0
-    .goto 62,43.67,28.61,40,0
-    >>Kill |cRXP_ENEMY_High Cultist Azerynn|r
-    >>Kill |cRXP_ENEMY_Twilight Fanatics|r
-    >>Pick up |cRXP_PICK_Twilight Plans|r from the ground
-    >>Kill |cRXP_ENEMY_Tranquil Tidal Spirits|r and |cRXP_ENEMY_Enraged Tidal Spirits|r
-    .complete -13519,1 --High Cultist Azerynn slain (1)
-    .complete -13519,2 --Twilight Fanatic slain (10)
-    .complete -13596,1 --Twilight Plans (6)
+    #completewith Along11
+    >>As you go: Kill |cRXP_ENEMY_Tranquil Tidal Spirits|r and |cRXP_ENEMY_Enraged Tidal Spirits|r. |cRXP_WARN_Anything left is finished later|r
     .complete 13523,1 --Tranquil Tidal Spirit (6)
+    .mob Tranquil Tidal Spirit
+    .mob Enraged Tidal Spirit
+step
+    .goto 62,43.65,31.37
+    >>Kill |cRXP_ENEMY_High Cultist Azerynn|r
+    .complete 13519,1 --High Cultist Azerynn slain (1)
     .mob High Cultist Azerynn
+    .isOnQuest 13519
+step
+    #loop
+    .goto 62,43.10,32.49,0
+    .goto 62,43.10,32.49,40,0
+    .goto 62,44.64,30.83,40,0
+    >>Kill |cRXP_ENEMY_Twilight Fanatics|r
+    .complete 13519,2 --Twilight Fanatic slain (10)
     .mob Twilight Fanatic
+    .isOnQuest 13519
+step
+    #label Along11
+    #loop
+    .goto 62,43.13,32.38,0
+    .goto 62,43.13,32.38,40,0
+    .goto 62,45.27,30.45,40,0
+    >>Pick up |cRXP_PICK_Twilight Plans|r from the ground
+    .complete 13596,1 --Twilight Plans (6)
+    .isOnQuest 13596
+step
+    #loop
+    .goto 62,43.12,29.63,0
+    .goto 62,43.12,29.63,40,0
+    .goto 62,44.31,28.96,40,0
+    >>Kill |cRXP_ENEMY_Tranquil Tidal Spirits|r and |cRXP_ENEMY_Enraged Tidal Spirits|r
+    .complete 13523,1 --Tranquil Tidal Spirit (6)
     .mob Tranquil Tidal Spirit
     .mob Enraged Tidal Spirit
 step
@@ -311,13 +329,17 @@ step
     .goto 62,70.60,20.87,40,0
     .goto 62,70.76,16.73,40,0
     >>Kill |cRXP_ENEMY_Shatterspear Priestess|r, |cRXP_ENEMY_Shatterspear Raiders|r and |cRXP_ENEMY_Shatterspear Champions|r
-    >>Kill |cRXP_ENEMY_Shatterspear Hut Fire Bunnies|r
-    .complete -13514,2 --Shatterspear Priestess (8)
-    .complete -13514,1 --Shatterspear Hut Fire Bunny slain (8)
+    .complete 13514,2 --Shatterspear Priestess (8)
     .mob Shatterspear Priestess
     .mob Shatterspear Raider
     .mob Shatterspear Champion
+    .isOnQuest 13514
+step
+    .goto 62,70.85,16.56
+    >>Kill |cRXP_ENEMY_Shatterspear Hut Fire Bunnies|r
+    .complete 13514,1 --Shatterspear Hut Fire Bunny slain (8)
     .mob Shatterspear Hut Fire Bunny
+    .isOnQuest 13514
 step
     .goto 62,69.09,19.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kerlonian Evershade|r
@@ -340,10 +362,14 @@ step
 step
     .goto 62,58.28,23.97
     >>Open the |cRXP_PICK_Charred Book|r. Loot it for |cRXP_LOOT_Narassin's Tome|r
+    .complete 13844,2 --Narassin's Tome (1)
+    .isOnQuest 13844
+step
+    .goto 62,58.23,24.02
     >>Kill |cRXP_ENEMY_Teegan Holloway|r
-    .complete -13844,2 --Narassin's Tome (1)
-    .complete -13844,1 --Teegan Holloway slain (1)
+    .complete 13844,1 --Teegan Holloway slain (1)
     .mob Teegan Holloway
+    .isOnQuest 13844
 step
     .goto 62,59.14,19.61
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathas Wildwood|r

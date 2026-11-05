@@ -974,30 +974,40 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 29026 >>Accept Wenikee Boltbucket
     .target Brak Blusterpipe
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along135
+    #completewith Along136
     >>As you go: Kill |cRXP_ENEMY_Venture Co. Mercenaries|r, |cRXP_ENEMY_Venture Co. Drudgers|r and |cRXP_ENEMY_Venture Co. Peons|r. Loot them for |cRXP_LOOT_Sputtervalve's Blueprints|r. |cRXP_WARN_Anything left is finished later|r
     .complete 29086,1 --Sputtervalve's Blueprints (6)
     .mob Venture Co. Mercenary
     .mob Venture Co. Drudger
     .mob Venture Co. Peon
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along135
     .goto 10,57.54,18.30
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wizzlecrank's Shredder|r
     .accept 858 >>Accept Ignition
     .target Wizzlecrank's Shredder
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along136
+    >>As you go: Kill |cRXP_ENEMY_Supervisor Lugwizzle|r and loot |cRXP_LOOT_Ignition Key|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 858,1 --Ignition Key (1)
+    .mob Supervisor Lugwizzle
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along136
+    #loop
+    .goto 10,58.21,18.21,0
+    .goto 10,58.21,18.21,40,0
+    .goto 10,57.18,20.28,40,0
+    >>Interact with |cRXP_FRIENDLY_Muddy Tracks|r
+    .complete 29087,1 --Muddy Tracks (5)
+    .target Muddy Tracks
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 10,56.79,18.74,0
     .goto 10,56.79,18.74,40,0
-    .goto 10,58.56,18.34,40,0
-    >>Interact with |cRXP_FRIENDLY_Muddy Tracks|r
+    .goto 10,59.46,19.03,40,0
     >>Kill |cRXP_ENEMY_Venture Co. Mercenaries|r, |cRXP_ENEMY_Venture Co. Drudgers|r and |cRXP_ENEMY_Venture Co. Peons|r. Loot them for |cRXP_LOOT_Sputtervalve's Blueprints|r
     >>Kill |cRXP_ENEMY_Supervisor Lugwizzle|r and loot |cRXP_LOOT_Ignition Key|r
-    .complete 29087,1 --Muddy Tracks (5)
     .complete 29086,1 --Sputtervalve's Blueprints (6)
     .complete 858,1 --Ignition Key (1)
-    .target Muddy Tracks
     .mob Venture Co. Mercenary
     .mob Venture Co. Drudger
     .mob Venture Co. Peon
@@ -1024,13 +1034,13 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 29090 >>Accept A Burning Threat
     .target Brogor
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along141
+    #completewith Along142
     >>As you go: Kill |cRXP_ENEMY_Burning Blade Acolytes|r and |cRXP_ENEMY_Burning Blade Bruisers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 29090,1 --Burning Blade Acolyte (8)
     .mob Burning Blade Acolyte
     .mob Burning Blade Bruiser
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along141
+    #label Along142
     #loop
     .goto 10,42.48,31.92,0
     .goto 10,42.48,31.92,40,0

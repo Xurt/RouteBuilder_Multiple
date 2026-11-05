@@ -912,18 +912,25 @@ step << Worgen
     .xp <5,1
 step << Worgen
     #loop
-    .goto 179,54.71,35.77,0
-    .goto 179,54.71,35.77,40,0
+    .goto 179,59.52,35.44,0
     .goto 179,59.52,35.44,40,0
     .goto 179,62.11,31.64,40,0
     .goto 179,57.55,27.58,40,0
     >>Kill |cRXP_ENEMY_Forsaken Plaguesmiths|r and |cRXP_ENEMY_Forsaken Invaders|r
-    >>Kill |cRXP_ENEMY_Forsaken Catapults|r
-    .complete -24920,2 --Forsaken Plaguesmith (40)
-    .complete -24920,1 --Forsaken Catapult slain (6)
+    .complete 24920,2 --Forsaken Plaguesmith (40)
     .mob Forsaken Plaguesmith
     .mob Forsaken Invader
+    .isOnQuest 24920
+step << Worgen
+    #loop
+    .goto 179,59.66,34.86,0
+    .goto 179,59.66,34.86,40,0
+    .goto 179,57.78,33.93,40,0
+    .goto 179,54.71,35.77,40,0
+    >>Kill |cRXP_ENEMY_Forsaken Catapults|r
+    .complete 24920,1 --Forsaken Catapult slain (6)
     .mob Forsaken Catapult
+    .isOnQuest 24920
 step << Worgen
     .goto 179,57.03,52.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_King Genn Greymane|r
@@ -1014,16 +1021,26 @@ step << Worgen
     .goto 179,29.04,34.69,40,0
     .goto 179,27.78,38.44,40,0
     .goto 179,28.18,29.57,40,0
-    .goto 179,29.26,21.20,40,0
     >>Kill |cRXP_ENEMY_Orc Raiders|r
-    >>Kill |cRXP_ENEMY_Wolfmaw Outriders|r
-    >>Kill |cRXP_ENEMY_Orcish War Machines|r
-    .complete -24681,1 --Orc Raider slain (40)
-    .complete -24681,2 --Wolfmaw Outrider slain (8)
-    .complete -24681,3 --Orcish War Machine slain (4)
+    .complete 24681,1 --Orc Raider slain (40)
     .mob Orc Raider
+    .isOnQuest 24681
+step << Worgen
+    .goto 179,28.16,29.13
+    >>Kill |cRXP_ENEMY_Wolfmaw Outriders|r
+    .complete 24681,2 --Wolfmaw Outrider slain (8)
     .mob Wolfmaw Outrider
+    .isOnQuest 24681
+step << Worgen
+    #loop
+    .goto 179,27.67,27.29,0
+    .goto 179,27.67,27.29,40,0
+    .goto 179,26.57,31.45,40,0
+    .goto 179,29.26,21.20,40,0
+    >>Kill |cRXP_ENEMY_Orcish War Machines|r
+    .complete 24681,3 --Orcish War Machine slain (4)
     .mob Orcish War Machine
+    .isOnQuest 24681
 step << Worgen
     .goto 179,41.94,37.61
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord Darius Crowley|r

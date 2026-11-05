@@ -687,9 +687,13 @@ step
 step
     .goto 1413/1,-3819.86,-1714.95
     >>Open the |cRXP_PICK_Fragile - Do Not Drop|r. Loot it for |cRXP_LOOT_Telescopic Lens|r
+    .complete 888,2 --Telescopic Lens (1)
+    .isOnQuest 888
+step
+    .goto 1413/1,-3723.59,-1740.63
     >>Open the |cRXP_PICK_Drizzlik's Emporium|r. Loot it for |cRXP_LOOT_Shipment of Boots|r
-    .complete -888,2 --Telescopic Lens (1)
-    .complete -888,1 --Shipment of Boots (1)
+    .complete 888,1 --Shipment of Boots (1)
+    .isOnQuest 888
 step
     .goto 1413/1,-3258.47,-2027.09
     >>Pick up |cRXP_PICK_Stolen Silver|r from the ground
@@ -708,9 +712,13 @@ step
 step
     .goto 1413/1,-2693.03,-1533.21
     >>Click the |cRXP_PICK_Red Raptor Nest|r
+    .complete 905,3 --Visit Red Raptor Nest
+    .isOnQuest 905
+step
+    .goto 1413/1,-2648.44,-1527.13
     >>Click the |cRXP_PICK_Yellow Raptor Nest|r
-    .complete -905,3 --Visit Red Raptor Nest
-    .complete -905,2 --Visit Yellow Raptor Nest
+    .complete 905,2 --Visit Yellow Raptor Nest
+    .isOnQuest 905
 step
     .goto 1413/1,-1881.35,-2384.50
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Omusa|r
@@ -1989,24 +1997,40 @@ step << Rogue
     .isQuestTurnedIn 2458 --any of: Deep Cover
     .xp <20,1
 step << Rogue
-    .goto 1413/1,-2920.02,1227.39
+    .goto 1413/1,-2930.15,1209.15
     >>Kill |cRXP_ENEMY_Foreman Silixiz|r and loot |cRXP_LOOT_Silixiz's Tower Key|r
-    >>Kill |cRXP_ENEMY_Mutated Venture Co. Drones|r
-    >>Kill |cRXP_ENEMY_Venture Co. Patrollers|r
-    >>Kill |cRXP_ENEMY_Venture Co. Lookouts|r
-    >>Kill |cRXP_ENEMY_Grand Foreman Puzik Gallywix|r and loot |cRXP_LOOT_Gallywix's Head|r
-    >>Open the |cRXP_PICK_Gallywix's Lockbox|r. Loot it for |cRXP_LOOT_Cache of Zanzil's Altered Mixture|r
-    .complete -2478,5 --Silixiz's Tower Key (1)
-    .complete -2478,1 --Mutated Venture Co. Drone slain (2)
-    .complete -2478,3 --Venture Co. Patroller slain (2)
-    .complete -2478,2 --Venture Co. Lookout slain (2)
-    .complete -2478,4 --Gallywix's Head (1)
-    .complete -2478,6 --Cache of Zanzil's Altered Mixture (1)
+    .complete 2478,5 --Silixiz's Tower Key (1)
     .mob Foreman Silixiz
+    .isOnQuest 2478
+step << Rogue
+    .goto 1413/1,-2922.04,1224.02
+    >>Kill |cRXP_ENEMY_Mutated Venture Co. Drones|r
+    .complete 2478,1 --Mutated Venture Co. Drone slain (2)
     .mob Mutated Venture Co. Drone
+    .isOnQuest 2478
+step << Rogue
+    .goto 1413/1,-2931.16,1234.83
+    >>Kill |cRXP_ENEMY_Venture Co. Patrollers|r
+    .complete 2478,3 --Venture Co. Patroller slain (2)
     .mob Venture Co. Patroller
+    .isOnQuest 2478
+step << Rogue
+    .goto 1413/1,-2913.94,1222.66
+    >>Kill |cRXP_ENEMY_Venture Co. Lookouts|r
+    .complete 2478,2 --Venture Co. Lookout slain (2)
     .mob Venture Co. Lookout
+    .isOnQuest 2478
+step << Rogue
+    .goto 1413/1,-2925.08,1234.83
+    >>Kill |cRXP_ENEMY_Grand Foreman Puzik Gallywix|r and loot |cRXP_LOOT_Gallywix's Head|r
+    .complete 2478,4 --Gallywix's Head (1)
     .mob Grand Foreman Puzik Gallywix
+    .isOnQuest 2478
+step << Rogue
+    .goto 1413/1,-2926.10,1236.85
+    >>Open the |cRXP_PICK_Gallywix's Lockbox|r. Loot it for |cRXP_LOOT_Cache of Zanzil's Altered Mixture|r
+    .complete 2478,6 --Cache of Zanzil's Altered Mixture (1)
+    .isOnQuest 2478
 step
     .goto 1413/1,-1891.48,-2391.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mangletooth|r

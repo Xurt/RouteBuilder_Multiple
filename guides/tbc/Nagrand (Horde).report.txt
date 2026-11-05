@@ -1,5 +1,5 @@
 Nagrand - Horde - part 1 of 2, planned from level 65
-Guide "65-68 Nagrand" in group "Zone Routes (Horde)": this part has 152 steps, 133 stops
+Guide "65-68 Nagrand" in group "Zone Routes (Horde)": this part has 157 steps, 141 stops
 Written to guides/tbc/Nagrand (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -47,7 +47,7 @@ Step order kept from the last build (locks folder): 156 steps kept, 8 new ones s
   everyone (quests that depend on other zones): 56 more tasks; their whole route comes to 37,964 yd; ends at level 65.8; 4 hearths; 1 ORDER PROBLEMS; at its hardest you are 1.6 levels below the mobs
 Hearthstone: set at Mathar G'ochar (Mathar G'ochar's inn); 5 hearth steps in the guide.
 2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-9 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (59)

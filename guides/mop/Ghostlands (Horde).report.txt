@@ -1,5 +1,5 @@
 Ghostlands - Horde - part 1 of 3, planned from level 10
-Guide "10-21 Ghostlands" in group "Zone Routes (Horde)": this part has 106 steps, 90 stops
+Guide "10-21 Ghostlands" in group "Zone Routes (Horde)": this part has 108 steps, 92 stops
 Written to guides/mop/Ghostlands (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -112,7 +112,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Ghostlands - Horde - part 2 of 3, planned from level 18
-Guide "10-21 Ghostlands" in group "Zone Routes (Horde)": this part has 51 steps, 43 stops
+Guide "10-21 Ghostlands" in group "Zone Routes (Horde)": this part has 57 steps, 47 stops
 Written to guides/mop/Ghostlands (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -133,7 +133,7 @@ Step order kept from the last build (locks folder): 0 steps kept, 53 new ones sl
   everyone: 50 tasks, 13,655 yd on foot; ends at level 19.7; 1 hearth; at its hardest you are 2.0 levels below the mobs
   BloodElf: 3 more tasks; their whole route comes to 13,156 yd; ends at level 19.7; 1 hearth; at its hardest you are 2.0 levels below the mobs
 Hearthstone: set at Innkeeper Kalarin (Innkeeper Kalarin's inn); 1 hearth step in the guide.
-2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (16)
 ------------------------

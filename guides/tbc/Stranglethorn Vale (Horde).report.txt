@@ -156,7 +156,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Stranglethorn Vale - Horde - part 2 of 5, planned from level 33
-Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Horde)": this part has 48 steps, 37 stops
+Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Horde)": this part has 51 steps, 40 stops
 Written to guides/tbc/Stranglethorn Vale (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -264,7 +264,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Stranglethorn Vale - Horde - part 3 of 5, planned from level 37
-Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Horde)": this part has 59 steps, 54 stops
+Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Horde)": this part has 64 steps, 58 stops
 Written to guides/tbc/Stranglethorn Vale (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -284,6 +284,7 @@ Step order kept from the last build (locks folder): 53 steps kept, 12 new ones s
   everyone: 57 tasks, 24,182 yd on foot; ends at level 38.6; 3 hearths; at its hardest you are 4.6 levels below the mobs
   everyone (quests that depend on other zones): 8 more tasks; their whole route comes to 25,431 yd; ends at level 38.6; 3 hearths; at its hardest you are 4.6 levels below the mobs
 Hearthstone: set at Innkeeper Thulbek (Innkeeper Thulbek's inn); 3 hearth steps in the guide.
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (26)
 ------------------------
@@ -342,7 +343,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Stranglethorn Vale - Horde - part 4 of 5, planned from level 41
-Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Horde)": this part has 63 steps, 57 stops
+Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Horde)": this part has 69 steps, 63 stops
 Written to guides/tbc/Stranglethorn Vale (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -406,7 +407,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Stranglethorn Vale - Horde - part 5 of 5, planned from level 45
-Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Horde)": this part has 23 steps, 22 stops
+Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Horde)": this part has 25 steps, 24 stops
 Written to guides/tbc/Stranglethorn Vale (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

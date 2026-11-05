@@ -330,23 +330,21 @@ step
     .complete 92,2 --Tough Condor Meat (1)
     .mob Dire Condor
 step
-    #completewith Along12
-    >>As you go: Kill |cRXP_ENEMY_Redridge Mystics|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -124,2 --Redridge Mystic slain (8)
-    .mob Redridge Mystic
-step
-    #label Along12
     #loop
     .goto 1433/0,-2606.54,-9060.63,0
     .goto 1433/0,-2606.54,-9060.63,40,0
-    .goto 1433/0,-2453.28,-9038.62,40,0
+    .goto 1433/0,-2493.00,-9023.71,40,0
     >>Kill |cRXP_ENEMY_Black Dragon Whelps|r and |cRXP_ENEMY_Snarlflares|r. Loot them for |cRXP_LOOT_Underbelly Whelp Scale|r
-    >>Kill |cRXP_ENEMY_Redridge Brutes|r
-    .complete -122,1 --Underbelly Whelp Scale (6)
-    .complete -124,1 --Redridge Brute slain (10)
+    .complete 122,1 --Underbelly Whelp Scale (6)
     .mob Black Dragon Whelp
     .mob Snarlflare
+    .isOnQuest 122
+step
+    .goto 1433/0,-2429.18,-9030.22
+    >>Kill |cRXP_ENEMY_Redridge Brutes|r
+    .complete 124,1 --Redridge Brute slain (10)
     .mob Redridge Brute
+    .isOnQuest 124
 step
     .goto 1433/0,-2268.54,-9279.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Foreman Oslow|r
@@ -381,7 +379,7 @@ step
     .turnin 92 >>Turn in Redridge Goulash
     .target Chef Breanna
 step
-    #completewith Along18
+    #completewith Along19
     >>As you go: Kill |cRXP_ENEMY_Redridge Brutes|r, |cRXP_ENEMY_Redridge Mystics|r, |cRXP_ENEMY_Redridge Bashers|r and |cRXP_ENEMY_Redridge Drudgers|r. Loot them for |cRXP_LOOT_Iron Pike|r. Kill |cRXP_ENEMY_Redridge Brutes|r, |cRXP_ENEMY_Redridge Mystics|r, |cRXP_ENEMY_Redridge Bashers|r and |cRXP_ENEMY_Redridge Drudgers|r. Loot them for |cRXP_LOOT_Iron Rivet|r. |cRXP_WARN_Anything left is finished later|r
     .complete 89,1 --Iron Pike (5)
     .complete 89,2 --Iron Rivet (5)
@@ -390,7 +388,7 @@ step
     .mob Redridge Basher
     .mob Redridge Drudger
 step
-    #label Along18
+    #label Along19
     #loop
     .goto 1433/0,-2010.21,-9052.09,0
     .goto 1433/0,-2010.21,-9052.09,40,0

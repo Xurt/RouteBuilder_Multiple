@@ -98,7 +98,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Silverpine Forest - Horde - part 2 of 4, planned from level 14
-Guide "10-22 Silverpine Forest" in group "Zone Routes (Horde)": this part has 24 steps, 20 stops
+Guide "10-22 Silverpine Forest" in group "Zone Routes (Horde)": this part has 23 steps, 20 stops
 Written to guides/tbc/Silverpine Forest (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -117,7 +117,7 @@ Planned from level 14. Distances are straight lines, so real running is longer; 
 Step order kept from the last build (locks folder): 0 steps kept, 23 new ones slotted in, 0 moved because their prerequisites changed. Build with --fresh to plan from scratch.
   everyone: 23 tasks, 5,298 yd on foot; ends at level 14.7
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
-2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (9)
 -----------------------

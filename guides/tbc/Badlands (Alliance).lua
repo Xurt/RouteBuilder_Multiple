@@ -424,16 +424,20 @@ step
     .isQuestTurnedIn 738 --any of: Find Agmond
     .xp <30,1
 step
+    .goto 1418/0,-3313.71,-6989.22
+    >>Kill |cRXP_ENEMY_Murdaloc|r
+    .complete 739,1 --Murdaloc slain (1)
+    .mob Murdaloc
+    .isOnQuest 739
+step
     #loop
     .goto 1418/0,-3348.04,-6985.58,0
     .goto 1418/0,-3348.04,-6985.58,40,0
     .goto 1418/0,-3291.08,-7082.42,40,0
-    >>Kill |cRXP_ENEMY_Murdaloc|r
     >>Kill |cRXP_ENEMY_Stonevault Bonesnappers|r
-    .complete -739,1 --Murdaloc slain (1)
-    .complete -739,2 --Stonevault Bonesnapper slain (12)
-    .mob Murdaloc
+    .complete 739,2 --Stonevault Bonesnapper slain (12)
     .mob Stonevault Bonesnapper
+    .isOnQuest 739
 step
     .goto 1418/0,-3357.49,-7164.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Theldurin the Lost|r
@@ -444,12 +448,21 @@ step
 step
     .goto 1418/0,-3419.18,-7281.09
     >>Kill |cRXP_ENEMY_Enraged Rock Elemental|r and loot |cRXP_LOOT_Torn Scroll Fragment|r
-    >>Kill |cRXP_ENEMY_Enraged Rock Elemental|r and loot |cRXP_LOOT_Crumpled Scroll Fragment|r
-    >>Kill |cRXP_ENEMY_Enraged Rock Elemental|r and loot |cRXP_LOOT_Singed Scroll Fragment|r
-    .complete -692,1 --Torn Scroll Fragment (1)
-    .complete -692,2 --Crumpled Scroll Fragment (1)
-    .complete -692,3 --Singed Scroll Fragment (1)
+    .complete 692,1 --Torn Scroll Fragment (1)
     .mob Enraged Rock Elemental
+    .isOnQuest 692
+step
+    .goto 1418/0,-3419.18,-7281.09
+    >>Kill |cRXP_ENEMY_Enraged Rock Elemental|r and loot |cRXP_LOOT_Crumpled Scroll Fragment|r
+    .complete 692,2 --Crumpled Scroll Fragment (1)
+    .mob Enraged Rock Elemental
+    .isOnQuest 692
+step
+    .goto 1418/0,-3419.18,-7281.09
+    >>Kill |cRXP_ENEMY_Enraged Rock Elemental|r and loot |cRXP_LOOT_Singed Scroll Fragment|r
+    .complete 692,3 --Singed Scroll Fragment (1)
+    .mob Enraged Rock Elemental
+    .isOnQuest 692
 step
     .goto 1418/0,-3357.49,-7164.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Theldurin the Lost|r

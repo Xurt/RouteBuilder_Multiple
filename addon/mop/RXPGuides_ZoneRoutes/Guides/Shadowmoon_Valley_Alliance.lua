@@ -32,13 +32,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 11044 --any of: Visions of Destruction
     .xp <67,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along2
-    >>As you go: Kill |cRXP_ENEMY_Infernal Attacker (1)s|r and |cRXP_ENEMY_Infernal Attackers|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -10562,1 --Infernal Attacker (1) (8)
-    .mob Infernal Attacker (1)
-    .mob Infernal Attacker
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along2
     .goto 104,38.22,53.96
     >>Click the |cRXP_PICK_Wanted Poster|r
     .accept 10648 >>Accept Wanted: Uvuros, Scourge of Shadowmoon
@@ -90,10 +83,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Felboar
     .mob Vilewing Chimaera
     .mob Shadow Serpent
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along10
-    >>As you go: Loot the |cRXP_PICK_Ever-burning Ashes|r for |cRXP_LOOT_Ever-Burning Ash|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -10642,1 --Ever-Burning Ash (15)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #label Along10
     #loop
@@ -159,11 +148,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 10677 >>Accept The Second Course...
     .target Gnomus
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along18
-    >>As you go: Loot the |cRXP_PICK_Ever-burning Ashes|r for |cRXP_LOOT_Ever-Burning Ash|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -10642,1 --Ever-Burning Ash (15)
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along18
     #loop
     .goto 104,36.00,46.90,0
     .goto 104,36.00,46.90,40,0
@@ -245,12 +229,7 @@ step
     >>Kill |cRXP_ENEMY_Asghar|r and loot |cRXP_LOOT_Sketh'lon War Totem|r
     .complete 10777,1 --Sketh'lon War Totem (1)
     .mob Asghar
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along28
-    >>As you go: Loot the |cRXP_PICK_Ever-burning Ashes|r for |cRXP_LOOT_Ever-Burning Ash|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -10642,1 --Ever-Burning Ash (15)
 step
-    #label Along28
     #loop
     .goto 104,35.39,36.68,0
     .goto 104,35.39,36.68,40,0
@@ -451,12 +430,7 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Oronok Torn-heart|r
     .turnin 10523 >>Turn in The Cipher of Damnation - The First Fragment Recovered
     .target Oronok Torn-heart
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along56
-    >>As you go: Loot the |cRXP_PICK_Ever-burning Ashes|r for |cRXP_LOOT_Ever-Burning Ash|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -10642,1 --Ever-Burning Ash (15)
 step
-    #label Along56
     #loop
     .goto 104,35.39,36.68,0
     .goto 104,35.39,36.68,40,0
@@ -511,12 +485,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Wing Commander Nuainn
     .isQuestTurnedIn 10563 --any of: To Legion Hold
     .xp <67,1
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along64
-    >>As you go: Loot the |cRXP_PICK_Ever-burning Ashes|r for |cRXP_LOOT_Ever-Burning Ash|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -10642,1 --Ever-Burning Ash (15)
 step
-    #label Along64
     #loop
     .goto 104,43.52,55.83,0
     .goto 104,43.52,55.83,40,0
@@ -538,12 +507,6 @@ step
     .isQuestTurnedIn 10550 --any of: The Bundle of Bloodthistle
     .xp <68,1
 step
-    #completewith Along67
-    >>As you go: Kill |cRXP_ENEMY_Envoy Icarius|r and loot |cRXP_LOOT_Stormrage Missive|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -10570,1 --Stormrage Missive (1)
-    .mob Envoy Icarius
-step
-    #label Along67
     .goto 104,47.56,57.18
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Borak, Son of Oronok|r
     .turnin 10546 >>Turn in Borak, Son of Oronok
@@ -689,15 +652,18 @@ step
     .isQuestTurnedIn 10540 --any of: The Cipher of Damnation - Ar'tor's Charge
     .xp <68,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 104,22.68,35.30
+    .goto 104,23.34,38.04
     >>Kill |cRXP_ENEMY_Morgroron|r and loot |cRXP_LOOT_Morgroron's Glaive|r
     >>Kill |cRXP_ENEMY_Makazradon|r and loot |cRXP_LOOT_Makazradon's Glaive|r
-    >>Open the |cRXP_PICK_Fel Reaver Armor Plating|r. Loot it for |cRXP_LOOT_Fel Reaver Armor Plate|r
     .complete 10626,2 --Morgroron's Glaive (1)
     .complete 10626,1 --Makazradon's Glaive (1)
-    .complete -10572,2 --Fel Reaver Armor Plate (1)
     .mob Morgroron
     .mob Makazradon
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 104,22.21,35.55
+    >>Open the |cRXP_PICK_Fel Reaver Armor Plating|r. Loot it for |cRXP_LOOT_Fel Reaver Armor Plate|r
+    .complete 10572,2 --Fel Reaver Armor Plate (1)
+    .isOnQuest 10572
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 104,30.24,37.31,0
@@ -827,11 +793,18 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 104,39.17,39.52,40,0
     .goto 104,39.55,35.72,40,0
     >>Kill |cRXP_ENEMY_Deathforge Guardians|r
-    >>Kill |cRXP_ENEMY_Deathforge Summoners|r
-    .complete -10582,1 --Deathforge Guardian slain (10)
-    .complete -10582,2 --Deathforge Summoner slain (5)
+    .complete 10582,1 --Deathforge Guardian slain (10)
     .mob Deathforge Guardian
+    .isOnQuest 10582
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #loop
+    .goto 104,38.72,40.02,0
+    .goto 104,38.72,40.02,40,0
+    .goto 104,41.85,36.56,40,0
+    >>Kill |cRXP_ENEMY_Deathforge Summoners|r
+    .complete 10582,2 --Deathforge Summoner slain (5)
     .mob Deathforge Summoner
+    .isOnQuest 10582
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 104,40.45,41.29
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Stormer Ewan Wildwing|r
@@ -847,21 +820,18 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 10582 --any of: Minions of the Shadow Council
     .xp <67,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along111
-    >>As you go: Kill |cRXP_ENEMY_Deathforge Tinkerers|r and |cRXP_ENEMY_Deathforge Smiths|r. Loot them for |cRXP_LOOT_Elemental Displacer|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -10585,2 --Elemental Displacer (1)
-    .mob Deathforge Tinkerer
-    .mob Deathforge Smith
+    .goto 104,37.80,38.73
+    >>Kill |cRXP_ENEMY_Infernal Oversoul|r
+    .complete 10585,1 --Infernal Oversoul slain (1)
+    .mob Infernal Oversoul
+    .isOnQuest 10585
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 104,34.62,39.89
-    >>Kill |cRXP_ENEMY_Infernal Oversoul|r
     >>Kill |cRXP_ENEMY_Flanis Swiftwing|r and loot |cRXP_LOOT_Flanis' Pack|r
-    .complete -10585,1 --Infernal Oversoul slain (1)
-    .complete -10583,1 --Flanis' Pack (1)
-    .mob Infernal Oversoul
+    .complete 10583,1 --Flanis' Pack (1)
     .mob Flanis Swiftwing
+    .isOnQuest 10583
 step
-    #label Along111
     #loop
     .goto 104,35.38,41.75,0
     .goto 104,35.38,41.75,40,0
@@ -900,10 +870,15 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 104,38.95,46.89
     >>Kill |cRXP_ENEMY_Warbringer Razuun|r
-    >>Kill |cRXP_ENEMY_Warbringer Razuun|r and loot |cRXP_LOOT_Razuun's Orders|r
-    .complete -10586,1 --Warbringer Razuun slain (1)
-    .complete -10586,2 --Razuun's Orders (1)
+    .complete 10586,1 --Warbringer Razuun slain (1)
     .mob Warbringer Razuun
+    .isOnQuest 10586
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 104,38.95,46.89
+    >>Kill |cRXP_ENEMY_Warbringer Razuun|r and loot |cRXP_LOOT_Razuun's Orders|r
+    .complete 10586,2 --Razuun's Orders (1)
+    .mob Warbringer Razuun
+    .isOnQuest 10586
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 104,39.50,53.73
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wing Commander Nuainn|r
@@ -953,13 +928,17 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .isQuestTurnedIn 10766 --any of: Invasion Point: Cataclysm
     .xp <67,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 104,39.38,19.48
+    .goto 104,39.39,19.57
     >>Kill |cRXP_ENEMY_Doctor Gutricks|r and |cRXP_ENEMY_Doctor Maleficus|r. Loot them for |cRXP_LOOT_The Doctor's Key|r
-    >>Open the |cRXP_PICK_The Doctor's Strongbox|r. Loot it for |cRXP_LOOT_The Art of Fel Reaver Maintenance|r
-    .complete -10606,2 --The Doctor's Key (1)
-    .complete -10606,1 --The Art of Fel Reaver Maintenance (1)
+    .complete 10606,2 --The Doctor's Key (1)
     .mob Doctor Gutrick
     .mob Doctor Maleficus
+    .isOnQuest 10606
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 104,39.38,19.48
+    >>Open the |cRXP_PICK_The Doctor's Strongbox|r. Loot it for |cRXP_LOOT_The Art of Fel Reaver Maintenance|r
+    .complete 10606,1 --The Art of Fel Reaver Maintenance (1)
+    .isOnQuest 10606
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 104,40.80,22.26
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Plexi|r
@@ -1335,10 +1314,18 @@ step
     .goto 104,71.10,80.71,40,0
     .goto 104,74.73,84.68,40,0
     >>Kill |cRXP_ENEMY_Murkblood Overseers|r
-    >>Kill |cRXP_ENEMY_Murkblood Overseer|r and loot |cRXP_LOOT_Hand of the Overseer|r
-    .complete -11082,2 --Murkblood Overseer (8)
-    .complete -11082,1 --Hand of the Overseer (1)
+    .complete 11082,2 --Murkblood Overseer (8)
     .mob Murkblood Overseer
+    .isOnQuest 11082
+step
+    #loop
+    .goto 104,69.33,80.46,0
+    .goto 104,69.33,80.46,40,0
+    .goto 104,71.10,80.71,40,0
+    >>Kill |cRXP_ENEMY_Murkblood Overseer|r and loot |cRXP_LOOT_Hand of the Overseer|r
+    .complete 11082,1 --Hand of the Overseer (1)
+    .mob Murkblood Overseer
+    .isOnQuest 11082
 step
     .goto 104,65.43,90.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mistress of the Mines|r

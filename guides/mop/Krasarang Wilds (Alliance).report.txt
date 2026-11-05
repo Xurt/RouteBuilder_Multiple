@@ -1,5 +1,5 @@
 Krasarang Wilds - Alliance - part 1 of 2, planned from level 86
-Guide "86-88 Krasarang Wilds" in group "Zone Routes (Alliance)": this part has 145 steps, 122 stops
+Guide "86-88 Krasarang Wilds" in group "Zone Routes (Alliance)": this part has 147 steps, 125 stops
 Written to guides/mop/Krasarang Wilds (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -22,7 +22,7 @@ Step order kept from the last build (locks folder): 168 steps kept, 3 new ones s
 Hearthstone: set at Supplies Kodo (Supplies Kodo's inn); 0 hearth steps in the guide.
 4 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
 3 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
-14 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+13 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 1 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 

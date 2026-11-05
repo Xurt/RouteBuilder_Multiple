@@ -654,10 +654,14 @@ step
 step
     .goto 201,45.38,46.62
     >>Click the |cRXP_PICK_Braided Rope|r
+    .complete 25371,2 --Braided Rope
+    .isOnQuest 25371
+step
+    .goto 201,45.06,47.00
     >>Kill |cRXP_ENEMY_Abyssal Seahorse|r
-    .complete -25371,2 --Braided Rope
-    .complete -25371,1 --Abyssal Seahorse slain (1)
+    .complete 25371,1 --Abyssal Seahorse slain (1)
     .mob Abyssal Seahorse
+    .isOnQuest 25371
 step
     .goto 201,46.04,46.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Moanah Stormhoof|r

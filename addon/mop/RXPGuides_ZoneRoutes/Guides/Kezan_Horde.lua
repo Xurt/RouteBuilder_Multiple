@@ -436,16 +436,17 @@ step << Goblin
     .target Coach Crosscheck
     .isQuestTurnedIn 24488 --any of: The Replacements
 step << Goblin
-    #loop
-    .goto 194,47.70,57.74,0
-    .goto 194,47.70,57.74,40,0
-    .goto 194,47.55,61.67,40,0
+    .goto 194,47.70,57.74
     >>Kill |cRXP_ENEMY_Bilgewater Buccaneer|r
-    >>Kill |cRXP_ENEMY_Steamwheedle Sharks|r
-    .complete -24502,1 --Bilgewater Buccaneer slain (1)
-    .complete -24502,2 --Steamwheedle Shark slain (8)
+    .complete 24502,1 --Bilgewater Buccaneer slain (1)
     .mob Bilgewater Buccaneer
+    .isOnQuest 24502
+step << Goblin
+    .goto 194,47.55,61.67
+    >>Kill |cRXP_ENEMY_Steamwheedle Sharks|r
+    .complete 24502,2 --Steamwheedle Shark slain (8)
     .mob Steamwheedle Shark
+    .isOnQuest 24502
 step << Goblin
     .goto 194,47.70,57.74
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
@@ -593,11 +594,6 @@ step << Goblin
     .unitscan Slinky Sharpshiv
     .isQuestTurnedIn 14120 --any of: A Bazillion Macaroons?!
 step << Goblin
-    #completewith Along45
-    >>As you go: Open the |cRXP_PICK_First Bank of Kezan Vault|r. Loot it for |cRXP_LOOT_Personal Riches|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -14122,2 --Personal Riches (1)
-step << Goblin
-    #label Along45
     .goto 194,29.89,71.33
     >>Crack the vault at the First Bank of Kezan to retrieve your Personal Riches.
     .complete 14122,1 --First Bank of Kezan Vault
@@ -675,13 +671,20 @@ step << Goblin
     .isQuestTurnedIn 14123 --Waltz Right In
     .isQuestTurnedIn 14124 --Liberate the Kaja'mite
 step << Goblin
-    .goto 194,56.05,74.57
+    .goto 194,55.95,76.62
     >>Click the |cRXP_PICK_Defective Generator|r
+    .complete 14125,1 --Defective Generator
+    .isOnQuest 14125
+step << Goblin
+    .goto 194,56.05,74.57
     >>Click the |cRXP_PICK_Leaky Stove|r
+    .complete 14125,2 --Leaky Stove
+    .isOnQuest 14125
+step << Goblin
+    .goto 194,56.62,74.78
     >>Click the |cRXP_PICK_Flammable Bed|r
-    .complete -14125,1 --Defective Generator
-    .complete -14125,2 --Leaky Stove
-    .complete -14125,3 --Flammable Bed
+    .complete 14125,3 --Flammable Bed
+    .isOnQuest 14125
 step << Goblin
     .goto 194,59.25,77.01
     >>Overload the Defective Generator, Activate the Leaky Stove, Drop a Cigar on the Flammable Bed, and use the Gasbot to set KTC Headquarters ablaze!

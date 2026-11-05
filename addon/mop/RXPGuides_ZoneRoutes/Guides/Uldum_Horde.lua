@@ -67,12 +67,6 @@ step
     .isQuestTurnedIn 27922 --any of: Traitors!
     .xp <83,1
 step
-    #completewith Along9
-    >>As you go: Kill |cRXP_ENEMY_Kavem the Callous|r and loot |cRXP_LOOT_Neferset Key|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -28105,1 --Neferset Key (1)
-    .mob Kavem the Callous
-step
-    #label Along9
     .goto 249,59.69,71.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Budd|r
     .accept 27924 >>Accept Budd's Plan
@@ -80,20 +74,27 @@ step
     .isQuestTurnedIn 27922 --any of: Traitors!
     .xp <83,1
 step
-    #loop
-    .goto 249,61.02,74.09,0
-    .goto 249,61.02,74.09,40,0
-    .goto 249,63.57,72.82,40,0
-    .goto 249,60.88,69.39,40,0
+    .goto 249,60.12,74.05
     >>Kill |cRXP_ENEMY_Kavem the Callous|r and loot |cRXP_LOOT_Neferset Key|r
-    >>Click the |cRXP_PICK_Bale of Hay|r
-    >>Kill |cRXP_ENEMY_Neferset Sentinels|r and |cRXP_ENEMY_Neferset Denizens|r. Loot them for |cRXP_LOOT_Neferset Armor|r. It can also be picked up from |cRXP_PICK_Neferset Armor|r on the ground
-    .complete -28105,1 --Neferset Key (1)
-    .complete -27923,1 --Bale of Hay
-    .complete -27924,1 --Neferset Armor (1)
+    .complete 28105,1 --Neferset Key (1)
     .mob Kavem the Callous
+    .isOnQuest 28105
+step
+    .goto 249,62.14,73.95
+    >>Click the |cRXP_PICK_Bale of Hay|r
+    .complete 27923,1 --Bale of Hay
+    .isOnQuest 27923
+step
+    #loop
+    .goto 249,60.88,73.35,0
+    .goto 249,60.88,73.35,40,0
+    .goto 249,60.88,69.39,40,0
+    .goto 249,63.57,72.82,40,0
+    >>Kill |cRXP_ENEMY_Neferset Sentinels|r and |cRXP_ENEMY_Neferset Denizens|r. Loot them for |cRXP_LOOT_Neferset Armor|r. It can also be picked up from |cRXP_PICK_Neferset Armor|r on the ground
+    .complete 27924,1 --Neferset Armor (1)
     .mob Neferset Sentinel
     .mob Neferset Denizen
+    .isOnQuest 27924
 step
     .goto 249,59.69,71.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Budd|r
@@ -150,16 +151,24 @@ step
     .xp <83,1
 step
     #loop
-    .goto 249,52.09,24.01,0
-    .goto 249,52.09,24.01,40,0
-    .goto 249,53.70,21.42,40,0
-    .goto 249,49.93,25.66,40,0
+    .goto 249,53.17,23.85,0
+    .goto 249,53.17,23.85,40,0
+    .goto 249,49.95,25.66,40,0
+    .goto 249,47.76,22.43,40,0
     >>Interact with |cRXP_FRIENDLY_Venomblood Scorpids|r
-    >>Kill |cRXP_ENEMY_Wastewander Outrider|r and loot |cRXP_LOOT_Relic of the Sun King|r
-    .complete -28145,1 --Venomblood Scorpid (8)
-    .complete -28141,1 --Relic of the Sun King (1)
+    .complete 28145,1 --Venomblood Scorpid (8)
     .target Venomblood Scorpid
+    .isOnQuest 28145
+step
+    #loop
+    .goto 249,52.61,23.01,0
+    .goto 249,52.61,23.01,40,0
+    .goto 249,54.10,19.11,40,0
+    .goto 249,50.46,26.42,40,0
+    >>Kill |cRXP_ENEMY_Wastewander Outrider|r and loot |cRXP_LOOT_Relic of the Sun King|r
+    .complete 28141,1 --Relic of the Sun King (1)
     .mob Wastewander Outrider
+    .isOnQuest 28141
 step
     .goto 249,52.97,27.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sun Priest Asaris|r
@@ -237,11 +246,6 @@ step
     .isQuestTurnedIn 28135 --any of: Al'Akir's Vengeance
     .xp <83,1
 step
-    #completewith Along36
-    >>As you go: Kill |cRXP_ENEMY_Scion of Al'Akirs|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27520,1 --Scion of Al'Akir slain (6)
-    .mob Scion of Al'Akir
-step
     .goto 249,45.30,37.80
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_General Ammantep|r
     .accept 27519 >>Accept Under the Choking Sands
@@ -268,30 +272,41 @@ step
     .turnin 27602 >>Turn in The Prophet's Dying Words
     .isOnQuest 27602
 step
-    #label Along36
     .goto 249,39.64,45.44
     >>Click the |cRXP_PICK_Sand-Covered Hieroglyphs|r
     .accept 27623 >>Accept Colossal Guardians
     .isQuestTurnedIn 27602 --any of: The Prophet's Dying Words
     .xp <83,1
 step
+    .goto 249,39.65,40.91
+    >>Kill |cRXP_ENEMY_Colossus of the Sun|r and loot |cRXP_LOOT_Stone of the Sun|r
+    .complete 27623,2 --Stone of the Sun (1)
+    .mob Colossus of the Sun
+    .isOnQuest 27623
+step
+    .goto 249,41.21,37.69
+    >>Kill |cRXP_ENEMY_Colossus of the Moon|r and loot |cRXP_LOOT_Stone of the Moon|r
+    .complete 27623,1 --Stone of the Moon (1)
+    .mob Colossus of the Moon
+    .isOnQuest 27623
+step
     #loop
     .goto 249,41.01,38.84,0
     .goto 249,41.01,38.84,40,0
-    .goto 249,40.04,35.66,40,0
-    .goto 249,43.66,37.09,40,0
-    >>Kill |cRXP_ENEMY_Colossus of the Sun|r and loot |cRXP_LOOT_Stone of the Sun|r
-    >>Kill |cRXP_ENEMY_Colossus of the Moon|r and loot |cRXP_LOOT_Stone of the Moon|r
+    .goto 249,42.29,32.64,40,0
     >>Interact with |cRXP_FRIENDLY_Orsis Survivors|r
-    >>Kill |cRXP_ENEMY_Scion of Al'Akirs|r
-    .complete -27623,2 --Stone of the Sun (1)
-    .complete -27623,1 --Stone of the Moon (1)
-    .complete -27519,1 --Orsis Survivor (8)
-    .complete -27520,1 --Scion of Al'Akir slain (6)
-    .mob Colossus of the Sun
-    .mob Colossus of the Moon
+    .complete 27519,1 --Orsis Survivor (8)
     .target Orsis Survivor
+    .isOnQuest 27519
+step
+    #loop
+    .goto 249,40.57,39.71,0
+    .goto 249,40.57,39.71,40,0
+    .goto 249,43.33,37.95,40,0
+    >>Kill |cRXP_ENEMY_Scion of Al'Akirs|r
+    .complete 27520,1 --Scion of Al'Akir slain (6)
     .mob Scion of Al'Akir
+    .isOnQuest 27520
 step
     .goto 249,39.64,45.44
     >>Click the |cRXP_PICK_Sand-Covered Hieroglyphs|r
@@ -364,15 +379,22 @@ step
     .xp <83,1
 step
     #loop
-    .goto 249,54.39,38.73,0
-    .goto 249,54.39,38.73,40,0
-    .goto 249,52.10,42.32,40,0
+    .goto 249,52.36,40.48,0
+    .goto 249,52.36,40.48,40,0
+    .goto 249,52.37,43.56,40,0
     .goto 249,51.20,34.58,40,0
     >>Click the |cRXP_PICK_Slitherer Egg|r
+    .complete 27836,1 --Slitherer Egg
+    .isOnQuest 27836
+step
+    #loop
+    .goto 249,52.81,42.31,0
+    .goto 249,52.81,42.31,40,0
+    .goto 249,54.39,38.73,40,0
     >>Kill |cRXP_ENEMY_Stillwater Slitherers|r
-    .complete -27836,1 --Slitherer Egg
-    .complete -27837,1 --Stillwater Slitherer slain (8)
+    .complete 27837,1 --Stillwater Slitherer slain (8)
     .mob Stillwater Slitherer
+    .isOnQuest 27837
 step
     .goto 249,54.19,41.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Priest Amet|r
@@ -461,16 +483,22 @@ step
     .xp <83,1
 step
     #loop
-    .goto 249,55.04,52.80,0
-    .goto 249,55.04,52.80,40,0
+    .goto 249,55.74,53.70,0
+    .goto 249,55.74,53.70,40,0
+    .goto 249,54.10,51.34,40,0
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ramkahen Laborer|r
+    .complete 28201,1 --Ramkahen Laborer (8)
+    .target Ramkahen Laborer
+    .isOnQuest 28201
+step
+    #loop
+    .goto 249,53.80,56.51,0
     .goto 249,53.80,56.51,40,0
     .goto 249,55.62,58.57,40,0
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ramkahen Laborer|r
     >>Kill |cRXP_ENEMY_Bloodsnarl Hyenas|r
-    .complete -28201,1 --Ramkahen Laborer (8)
-    .complete -28210,1 --Bloodsnarl Hyena slain (8)
-    .target Ramkahen Laborer
+    .complete 28210,1 --Bloodsnarl Hyena slain (8)
     .mob Bloodsnarl Hyena
+    .isOnQuest 28210
 step
     .goto 249,54.07,58.14
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Salhet|r
@@ -484,11 +512,6 @@ step
     .target Salhet
     .isQuestTurnedIn 28210 --any of: Shaping Up
     .xp <83,1
-step
-    #completewith Along70
-    >>As you go: Kill |cRXP_ENEMY_Neferset Guard|r and loot |cRXP_LOOT_Vir'Naal Delta Map|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27632,1 --Vir'Naal Delta Map (1)
-    .mob Neferset Guard
 step
     .goto 249,56.92,62.43
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Salhet|r
@@ -515,7 +538,6 @@ step
     .target Salhet
     .isOnQuest 28277
 step
-    #label Along70
     .goto 249,56.92,62.43
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Salhet|r
     .accept 28291 >>Accept Return to Camp
@@ -573,12 +595,6 @@ step
     .target Vizier Tanotep
     .isOnQuest 27738
 step
-    #completewith Along81
-    >>As you go: Kill |cRXP_ENEMY_Riverbed Crocolisks|r and |cRXP_ENEMY_Oasis Crocolisks|r. Loot them for |cRXP_LOOT_Hardened Crocolisk Hide|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -28200,1 --Hardened Crocolisk Hide (20)
-    .mob Riverbed Crocolisk
-    .mob Oasis Crocolisk
-step
     .goto 249,58.89,46.08
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Commander Kamses|r
     .turnin 28201 >>Turn in Ploughshares to Swords
@@ -591,7 +607,6 @@ step
     .target High Commander Kamses
     .isOnQuest 28291
 step
-    #label Along81
     .goto 249,58.89,46.08
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Commander Kamses|r
     .accept 27839 >>Accept Ancient Weapons
@@ -599,18 +614,22 @@ step
     .isQuestTurnedIn 28201 --any of: Ploughshares to Swords
     .xp <83,1
 step
-    #loop
-    .goto 249,57.06,44.55,0
-    .goto 249,57.06,44.55,40,0
-    .goto 249,57.48,50.60,40,0
-    .goto 249,60.47,58.61,40,0
-    .goto 249,59.20,54.38,40,0
+    .goto 249,60.48,58.72
     >>Open the |cRXP_PICK_Ancient Tol'vir Weapons|r. Loot it for |cRXP_LOOT_Ancient Tol'vir Armaments|r
+    .complete 27839,1 --Ancient Tol'vir Armaments (1)
+    .isOnQuest 27839
+step
+    #loop
+    .goto 249,59.91,55.28,0
+    .goto 249,59.91,55.28,40,0
+    .goto 249,58.47,50.28,40,0
+    .goto 249,57.06,44.55,40,0
+    .goto 249,56.92,48.39,40,0
     >>Kill |cRXP_ENEMY_Riverbed Crocolisks|r and |cRXP_ENEMY_Oasis Crocolisks|r. Loot them for |cRXP_LOOT_Hardened Crocolisk Hide|r
-    .complete -27839,1 --Ancient Tol'vir Armaments (1)
-    .complete -28200,1 --Hardened Crocolisk Hide (20)
+    .complete 28200,1 --Hardened Crocolisk Hide (20)
     .mob Riverbed Crocolisk
     .mob Oasis Crocolisk
+    .isOnQuest 28200
 step
     .goto 249,58.89,46.08
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Commander Kamses|r
@@ -662,18 +681,12 @@ step
     .isQuestTurnedIn 27141 --any of: Exploding Through
     .xp <83,1
 step
-    #completewith Along92
-    >>As you go: Kill |cRXP_ENEMY_Sand Pygmies|r. Loot them for |cRXP_LOOT_Ornate Tablet Fragment|r. It can also be picked up from |cRXP_PICK_Ornate Tablet Fragment|r on the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete -27179,1 --Ornate Tablet Fragment (10)
-    .mob Sand Pygmy
-step
     .goto 249,64.85,29.57
     >>Click the |cRXP_PICK_Elaborate Disc|r
     .accept 27176 >>Accept A Strange Disc
     .isQuestTurnedIn 27141 --any of: Exploding Through
     .xp <83,1
 step
-    #label Along92
     #loop
     .goto 249,63.11,26.75,0
     .goto 249,63.11,26.75,40,0
@@ -692,17 +705,25 @@ step
     .xp <83,1
 step
     #loop
-    .goto 249,65.69,32.57,0
-    .goto 249,65.69,32.57,40,0
+    .goto 249,67.89,31.41,0
+    .goto 249,67.89,31.41,40,0
+    .goto 249,65.85,32.99,40,0
     .goto 249,62.95,30.92,40,0
-    .goto 249,66.52,27.45,40,0
     >>Kill |cRXP_ENEMY_Sand Pygmies|r. Loot them for |cRXP_LOOT_Ornate Tablet Fragment|r. It can also be picked up from |cRXP_PICK_Ornate Tablet Fragment|r on the ground
-    >>Kill |cRXP_ENEMY_Skarfs|r and |cRXP_ENEMY_Mangy Hyenas|r
-    .complete -27179,1 --Ornate Tablet Fragment (10)
-    .complete -27187,1 --Skarf (8)
+    .complete 27179,1 --Ornate Tablet Fragment (10)
     .mob Sand Pygmy
+    .isOnQuest 27179
+step
+    #loop
+    .goto 249,67.30,32.54,0
+    .goto 249,67.30,32.54,40,0
+    .goto 249,66.52,27.45,40,0
+    .goto 249,62.78,29.43,40,0
+    >>Kill |cRXP_ENEMY_Skarfs|r and |cRXP_ENEMY_Mangy Hyenas|r
+    .complete 27187,1 --Skarf (8)
     .mob Skarf
     .mob Mangy Hyena
+    .isOnQuest 27187
 step
     .goto 249,64.43,28.49
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
@@ -859,11 +880,6 @@ step
     .isQuestTurnedIn 27431 --any of: Tipping the Balance
     .xp <83,1
 step
-    #completewith Along118
-    >>As you go: Open the |cRXP_PICK_Watcher Head|r. Loot it for |cRXP_LOOT_Orb of the North Star|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27624,3 --Orb of the North Star (1)
-step
-    #label Along118
     .goto 249,62.98,32.64
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Turquoise Scarab|r
     .accept 27627 >>Accept Just a Fancy Cockroach
@@ -871,35 +887,49 @@ step
     .isQuestTurnedIn 27431 --any of: Tipping the Balance
     .xp <83,1
 step
-    #loop
-    .goto 249,63.38,26.85,0
-    .goto 249,63.38,26.85,40,0
-    .goto 249,65.93,27.25,40,0
+    .goto 249,63.38,26.85
     >>Kill |cRXP_ENEMY_Amethyst Scarabs|r
-    >>Open the |cRXP_PICK_Watcher Head|r. Loot it for |cRXP_LOOT_Orb of the Morning Star|r
-    >>Kill |cRXP_ENEMY_Sapphire Scarabs|r
-    >>Open the |cRXP_PICK_Watcher Head|r. Loot it for |cRXP_LOOT_Orb of the Evening Star|r
-    .complete -27627,1 --Amethyst Scarab slain (5)
-    .complete -27624,1 --Orb of the Morning Star (1)
-    .complete -27627,3 --Sapphire Scarab slain (5)
-    .complete -27624,2 --Orb of the Evening Star (1)
+    .complete 27627,1 --Amethyst Scarab slain (5)
     .mob Amethyst Scarab
-    .mob Sapphire Scarab
+    .isOnQuest 27627
 step
-    #loop
-    .goto 249,62.61,32.35,0
-    .goto 249,62.61,32.35,40,0
-    .goto 249,65.57,32.43,40,0
+    .goto 249,64.02,26.42
+    >>Open the |cRXP_PICK_Watcher Head|r. Loot it for |cRXP_LOOT_Orb of the Morning Star|r
+    .complete 27624,1 --Orb of the Morning Star (1)
+    .isOnQuest 27624
+step
+    .goto 249,65.93,27.25
+    >>Kill |cRXP_ENEMY_Sapphire Scarabs|r
+    .complete 27627,3 --Sapphire Scarab slain (5)
+    .mob Sapphire Scarab
+    .isOnQuest 27627
+step
+    .goto 249,66.77,28.03
+    >>Open the |cRXP_PICK_Watcher Head|r. Loot it for |cRXP_LOOT_Orb of the Evening Star|r
+    .complete 27624,2 --Orb of the Evening Star (1)
+    .isOnQuest 27624
+step
+    .goto 249,65.57,32.43
     >>Kill |cRXP_ENEMY_Emerald Scarabs|r
-    >>Open the |cRXP_PICK_Watcher Head|r. Loot it for |cRXP_LOOT_Orb of the Shooting Star|r
-    >>Kill |cRXP_ENEMY_Turquoise Scarabs|r
-    >>Open the |cRXP_PICK_Watcher Head|r. Loot it for |cRXP_LOOT_Orb of the North Star|r
-    .complete -27627,2 --Emerald Scarab slain (5)
-    .complete -27624,4 --Orb of the Shooting Star (1)
-    .complete -27627,4 --Turquoise Scarab slain (5)
-    .complete -27624,3 --Orb of the North Star (1)
+    .complete 27627,2 --Emerald Scarab slain (5)
     .mob Emerald Scarab
+    .isOnQuest 27627
+step
+    .goto 249,65.25,32.66
+    >>Open the |cRXP_PICK_Watcher Head|r. Loot it for |cRXP_LOOT_Orb of the Shooting Star|r
+    .complete 27624,4 --Orb of the Shooting Star (1)
+    .isOnQuest 27624
+step
+    .goto 249,62.98,32.64
+    >>Kill |cRXP_ENEMY_Turquoise Scarabs|r
+    .complete 27627,4 --Turquoise Scarab slain (5)
     .mob Turquoise Scarab
+    .isOnQuest 27627
+step
+    .goto 249,62.52,32.00
+    >>Open the |cRXP_PICK_Watcher Head|r. Loot it for |cRXP_LOOT_Orb of the North Star|r
+    .complete 27624,3 --Orb of the North Star (1)
+    .isOnQuest 27624
 step
     .goto 249,64.43,28.49
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
@@ -994,18 +1024,26 @@ step
     .xp <83,1
 step
     #loop
-    .goto 249,73.12,42.99,0
-    .goto 249,73.12,42.99,40,0
-    .goto 249,72.70,46.71,40,0
-    .goto 249,74.99,45.54,40,0
+    .goto 249,72.81,40.96,0
+    .goto 249,72.81,40.96,40,0
+    .goto 249,74.49,46.34,40,0
+    .goto 249,76.59,43.68,40,0
     >>Pick up |cRXP_PICK_Atulhet's Record Fragment|r from the ground
+    .complete 28498,1 --Atulhet's Record Fragment (8)
+    .isOnQuest 28498
+step
+    #loop
+    .goto 249,75.55,45.57,0
+    .goto 249,75.55,45.57,40,0
+    .goto 249,73.43,48.89,40,0
+    .goto 249,71.70,45.59,40,0
     >>Kill |cRXP_ENEMY_Neferset Scryers|r, |cRXP_ENEMY_Neferset Raiders|r, |cRXP_ENEMY_Neferset Looters|r and |cRXP_ENEMY_Neferset Intruder credits|r
-    .complete -28498,1 --Atulhet's Record Fragment (8)
-    .complete -28499,1 --Neferset Scryer (8)
+    .complete 28499,1 --Neferset Scryer (8)
     .mob Neferset Scryer
     .mob Neferset Raider
     .mob Neferset Looter
     .mob Neferset Intruder credit
+    .isOnQuest 28499
 step
     .goto 249,67.33,42.79
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sun Prophet Tumet|r
@@ -1078,17 +1116,21 @@ step
     .accept 27760 >>Accept Artificial Intelligence
     .use 62483
 step
+    .goto 249,69.60,58.62
+    >>Kill |cRXP_ENEMY_Mekgineer Mixeltweeds|r
+    .complete 27755,2 --Mekgineer Mixeltweed slain (8)
+    .mob Mekgineer Mixeltweed
+    .isOnQuest 27755
+step
     #label Drop27760x1
     #loop
-    .goto 249,69.29,59.33,0
-    .goto 249,69.29,59.33,40,0
-    .goto 249,71.35,59.45,40,0
-    >>Kill |cRXP_ENEMY_Mekgineer Mixeltweeds|r
+    .goto 249,69.38,59.90,0
+    .goto 249,69.38,59.90,40,0
+    .goto 249,70.49,59.39,40,0
     >>Kill |cRXP_ENEMY_Crazed Diggers|r
-    .complete -27755,2 --Mekgineer Mixeltweed slain (8)
-    .complete -27755,1 --Crazed Digger slain (6)
-    .mob Mekgineer Mixeltweed
+    .complete 27755,1 --Crazed Digger slain (6)
     .mob Crazed Digger
+    .isOnQuest 27755
 step
     .goto 249,74.15,64.43
     >>Click the |cRXP_PICK_A. I. D.A. Terminal|r
@@ -1102,16 +1144,26 @@ step
     .isQuestTurnedIn 27760 --any of: Artificial Intelligence
     .xp <83,1
 step
-    .goto 249,79.37,64.11
+    .goto 249,78.80,62.11
     >>Click the |cRXP_PICK_First Bomb Cluster|r
+    .complete 27761,1 --First Bomb Cluster
+    .isOnQuest 27761
+step
+    .goto 249,79.01,64.27
     >>Click the |cRXP_PICK_Second Bomb Cluster|r
+    .complete 27761,2 --Second Bomb Cluster
+    .isOnQuest 27761
+step
+    .goto 249,79.05,64.89
     >>Click the |cRXP_PICK_Third Bomb Cluster|r
+    .complete 27761,3 --Third Bomb Cluster
+    .isOnQuest 27761
+step
+    .goto 249,79.37,64.11
     >>Kill |cRXP_ENEMY_Unstable Bomb Bots|r
-    .complete -27761,1 --First Bomb Cluster
-    .complete -27761,2 --Second Bomb Cluster
-    .complete -27761,3 --Third Bomb Cluster
-    .complete -27761,4 --Unstable Bomb Bot (4)
+    .complete 27761,4 --Unstable Bomb Bot (4)
     .mob Unstable Bomb Bot
+    .isOnQuest 27761
 step
     .goto 249,73.33,72.80
     >>Kill |cRXP_ENEMY_Twizzleflux the Insane|r and loot |cRXP_LOOT_Core Access Codes|r
@@ -1202,20 +1254,24 @@ step
     .mob High Priest Sekhemet
     .isOnQuest 28480
 step
+    .goto 249,50.56,86.98
+    >>Kill |cRXP_ENEMY_Scorpion-Lord Namkhare|r
+    .complete 28480,1 --Scorpion-Lord Namkhare slain (1)
+    .mob Scorpion-Lord Namkhare
+    .isOnQuest 28480
+step
     #loop
-    .goto 249,50.49,78.83,0
+    .goto 249,48.22,84.47,0
+    .goto 249,48.22,84.47,40,0
     .goto 249,50.49,78.83,40,0
     .goto 249,52.44,79.37,40,0
-    .goto 249,48.22,84.47,40,0
-    >>Kill |cRXP_ENEMY_Scorpion-Lord Namkhare|r
     >>Kill |cRXP_ENEMY_Neferset Armorers|r, |cRXP_ENEMY_Neferset Blade Twisters|r, |cRXP_ENEMY_Neferset Savages|r and |cRXP_ENEMY_Neferset Snake Charmers|r. Loot them for |cRXP_LOOT_Neferset Insignia|r
-    .complete -28480,1 --Scorpion-Lord Namkhare slain (1)
-    .complete -28483,1 --Neferset Insignia (10)
-    .mob Scorpion-Lord Namkhare
+    .complete 28483,1 --Neferset Insignia (10)
     .mob Neferset Armorer
     .mob Neferset Blade Twister
     .mob Neferset Savage
     .mob Neferset Snake Charmer
+    .isOnQuest 28483
 step
     .goto 249,52.02,65.46
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_King Phaoris|r
@@ -1303,11 +1359,6 @@ step
     .collect 62768,1,28132 --Efficient Excavations (1)
     .accept 28132 >>Accept Efficient Excavations
     .use 62768
-step
-    #completewith Drop28132x1
-    >>As you go: Kill |cRXP_ENEMY_Titanic Guardian|r and loot |cRXP_LOOT_Lens of the Sun|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27903,1 --Lens of the Sun (1)
-    .mob Titanic Guardian
 step
     #label Drop28132x1
     #loop
@@ -1433,12 +1484,6 @@ step
     .isQuestTurnedIn 27926 --any of: Eastern Hospitality
     .xp <83,1
 step
-    #completewith Along195
-    >>As you go: Kill |cRXP_ENEMY_Shaggy Desert Coyotes|r. Loot them for |cRXP_LOOT_Desert Coyote Pelt|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -27928,1 --Desert Coyote Pelt (5)
-    .mob Shaggy Desert Coyote
-step
-    #label Along195
     #loop
     .goto 249,40.24,68.90,0
     .goto 249,40.24,68.90,40,0
@@ -1456,20 +1501,31 @@ step
     .isQuestTurnedIn 27926 --any of: Eastern Hospitality
     .xp <83,1
 step
-    #loop
-    .goto 249,45.56,67.61,0
-    .goto 249,45.56,67.61,40,0
-    .goto 249,43.60,69.42,40,0
-    .goto 249,40.97,71.87,40,0
+    .goto 249,41.57,70.00
     >>Kill |cRXP_ENEMY_Desert Fox|r and loot |cRXP_LOOT_The Desert Fox|r
-    >>Kill |cRXP_ENEMY_Shaggy Desert Coyotes|r. Loot them for |cRXP_LOOT_Desert Coyote Pelt|r
-    >>Kill |cRXP_ENEMY_Diseased Vultures|r
-    .complete -27939,1 --The Desert Fox (1)
-    .complete -27928,1 --Desert Coyote Pelt (5)
-    .complete -27940,1 --Diseased Vulture slain (8)
+    .complete 27939,1 --The Desert Fox (1)
     .mob Desert Fox
+    .isOnQuest 27939
+step
+    #loop
+    .goto 249,40.98,72.28,0
+    .goto 249,40.98,72.28,40,0
+    .goto 249,42.88,68.27,40,0
+    .goto 249,45.00,67.53,40,0
+    >>Kill |cRXP_ENEMY_Shaggy Desert Coyotes|r. Loot them for |cRXP_LOOT_Desert Coyote Pelt|r
+    .complete 27928,1 --Desert Coyote Pelt (5)
     .mob Shaggy Desert Coyote
+    .isOnQuest 27928
+step
+    #loop
+    .goto 249,43.62,72.39,0
+    .goto 249,43.62,72.39,40,0
+    .goto 249,46.13,72.20,40,0
+    .goto 249,46.99,66.34,40,0
+    >>Kill |cRXP_ENEMY_Diseased Vultures|r
+    .complete 27940,1 --Diseased Vulture slain (8)
     .mob Diseased Vulture
+    .isOnQuest 27940
 step
     .goto 249,42.54,68.42
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
@@ -1505,18 +1561,31 @@ step
     .xp <83,1
 step
     #loop
-    .goto 249,31.73,62.11,0
-    .goto 249,31.73,62.11,40,0
-    .goto 249,33.99,63.24,40,0
-    .goto 249,31.77,67.49,40,0
+    .goto 249,31.17,63.11,0
+    .goto 249,31.17,63.11,40,0
+    .goto 249,32.56,65.06,40,0
     >>Kill |cRXP_ENEMY_Furious Specters|r. Loot them for |cRXP_LOOT_Furious Spectral Essence|r
-    >>Kill |cRXP_ENEMY_Dead Troopers|r. Loot them for |cRXP_LOOT_Trooper Uniform|r
-    >>Pick up |cRXP_PICK_Well-preserved Idol|r from the ground
-    .complete -27943,1 --Furious Spectral Essence (5)
-    .complete -27941,1 --Trooper Uniform (10)
-    .complete -27942,1 --Well-preserved Idol (8)
+    .complete 27943,1 --Furious Spectral Essence (5)
     .mob Furious Specter
+    .isOnQuest 27943
+step
+    #loop
+    .goto 249,31.55,62.44,0
+    .goto 249,31.55,62.44,40,0
+    .goto 249,34.05,61.61,40,0
+    .goto 249,31.53,68.17,40,0
+    >>Kill |cRXP_ENEMY_Dead Troopers|r. Loot them for |cRXP_LOOT_Trooper Uniform|r
+    .complete 27941,1 --Trooper Uniform (10)
     .mob Dead Trooper
+    .isOnQuest 27941
+step
+    #loop
+    .goto 249,33.99,63.24,0
+    .goto 249,33.99,63.24,40,0
+    .goto 249,31.46,60.67,40,0
+    >>Pick up |cRXP_PICK_Well-preserved Idol|r from the ground
+    .complete 27942,1 --Well-preserved Idol (8)
+    .isOnQuest 27942
 step
     .goto 249,24.37,64.55
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Belloc Brightblade|r
@@ -1696,22 +1765,29 @@ step
     .isQuestTurnedIn 28193 --any of: Lockdown!
     .xp <83,1
 step
-    #loop
-    .goto 249,22.31,67.58,0
-    .goto 249,22.31,67.58,40,0
-    .goto 249,25.09,68.35,40,0
+    .goto 249,22.31,67.58
     >>Kill |cRXP_ENEMY_Captain Margun|r
-    >>Kill |cRXP_ENEMY_Captain Cork|r
-    >>Kill |cRXP_ENEMY_Captain Kronkh|r
-    >>Kill |cRXP_ENEMY_Schnottz Sea Troopers|r. Loot them for |cRXP_LOOT_Fresh Sailor Uniform|r
-    .complete -28195,1 --Captain Margun slain (1)
-    .complete -28195,2 --Captain Cork slain (1)
-    .complete -28195,3 --Captain Kronkh slain (1)
-    .complete -28194,1 --Fresh Sailor Uniform (6)
+    .complete 28195,1 --Captain Margun slain (1)
     .mob Captain Margun
+    .isOnQuest 28195
+step
+    .goto 249,24.88,68.97
+    >>Kill |cRXP_ENEMY_Captain Cork|r
+    .complete 28195,2 --Captain Cork slain (1)
     .mob Captain Cork
+    .isOnQuest 28195
+step
+    .goto 249,26.08,68.63
+    >>Kill |cRXP_ENEMY_Captain Kronkh|r
+    .complete 28195,3 --Captain Kronkh slain (1)
     .mob Captain Kronkh
+    .isOnQuest 28195
+step
+    .goto 249,25.09,68.35
+    >>Kill |cRXP_ENEMY_Schnottz Sea Troopers|r. Loot them for |cRXP_LOOT_Fresh Sailor Uniform|r
+    .complete 28194,1 --Fresh Sailor Uniform (6)
     .mob Schnottz Sea Trooper
+    .isOnQuest 28194
 step
     .goto 249,21.85,64.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prolific Writer|r
@@ -1869,16 +1945,23 @@ step
     .xp <83,1
 step
     #loop
-    .goto 249,39.30,20.79,0
-    .goto 249,39.30,20.79,40,0
-    .goto 249,40.05,24.00,40,0
+    .goto 249,39.42,19.43,0
+    .goto 249,39.42,19.43,40,0
+    .goto 249,40.20,21.55,40,0
     >>Loot the |cRXP_PICK_Pillaged Loot Sacks|r for |cRXP_LOOT_Ancient Copper Scroll|r
+    .complete 28272,1 --Ancient Copper Scroll (7)
+    .isOnQuest 28272
+step
+    #loop
+    .goto 249,39.02,21.09,0
+    .goto 249,39.02,21.09,40,0
+    .goto 249,39.36,24.28,40,0
     >>Kill |cRXP_ENEMY_Schnottz Overseers|r, |cRXP_ENEMY_Schnottz Elite Troopers|r and |cRXP_ENEMY_Schnottz Elite Trooper Corpses|r
-    .complete -28272,1 --Ancient Copper Scroll (7)
-    .complete -28271,1 --Schnottz Overseer (8)
+    .complete 28271,1 --Schnottz Overseer (8)
     .mob Schnottz Overseer
     .mob Schnottz Elite Trooper
     .mob Schnottz Elite Trooper Corpse
+    .isOnQuest 28271
 step
     .goto 249,27.04,7.55
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Harrison Jones|r

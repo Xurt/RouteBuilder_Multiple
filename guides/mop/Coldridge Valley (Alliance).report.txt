@@ -1,5 +1,5 @@
 Coldridge Valley - Alliance
-Guide "1-5 Coldridge Valley" in group "Zone Routes (Alliance)": 88 steps, 62 stops
+Guide "1-5 Coldridge Valley" in group "Zone Routes (Alliance)": 89 steps, 63 stops
 Written to guides/mop/Coldridge Valley (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

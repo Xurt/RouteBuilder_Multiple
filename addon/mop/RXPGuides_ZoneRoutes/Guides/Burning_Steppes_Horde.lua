@@ -820,12 +820,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 28454 --any of: Assault on Dreadmaul Rock
     .xp <49,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along100
-    >>As you go: Kill |cRXP_ENEMY_High Warlock Xi'lun|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -28455,3 --High Warlock Xi'lun slain (1)
-    .mob High Warlock Xi'lun
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along100
     .goto 36,69.68,42.95
     >>Kill |cRXP_ENEMY_Dragon-Lord Neeralak|r
     .complete 28455,2 --Dragon-Lord Neeralak slain (1)

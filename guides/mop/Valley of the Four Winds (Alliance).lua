@@ -81,20 +81,12 @@ step
     .isQuestTurnedIn 31302 --any of: Ready for Greatness
     .xp <85,1
 step
-    #completewith Along10
-    >>As you go: Kill |cRXP_ENEMY_Ripe Juicycrunch Carrots|r, |cRXP_ENEMY_Plump Juicycrunch Carrots|r and |cRXP_ENEMY_Bursting Juicycrunch Carrots|r. Loot them for |cRXP_LOOT_Juicycrunch Carrot|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31470,1 --Juicycrunch Carrot (5)
-    .mob Ripe Juicycrunch Carrot
-    .mob Plump Juicycrunch Carrot
-    .mob Bursting Juicycrunch Carrot
-step
     .goto 376,52.25,48.79
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Farmer Yoon|r
     .turnin 30535 >>Turn in Learn and Grow I: Seeds
     .accept 30254 >>Accept Learn and Grow II: Tilling and Planting
     .target Farmer Yoon
 step
-    #label Along10
     .goto 376,52.01,48.44
     >>Interact with |cRXP_FRIENDLY_Untilled Soil|r
     .complete 30254,1 --Untilled Soil
@@ -554,8 +546,10 @@ step
 step
     .goto 376,82.41,25.93
     >>Click the |cRXP_PICK_Marmot Hole|r
-    >>Interact with |cRXP_FRIENDLY_Plump Marmots|r
     .complete 29910,2 --Marmot Hole
+step
+    .goto 376,82.60,25.60
+    >>Interact with |cRXP_FRIENDLY_Plump Marmots|r
     .complete 29910,1 --Plump Marmot (6)
     .target Plump Marmot
 step
@@ -625,12 +619,12 @@ step
     .accept 29914 >>Accept Back to the Sty
     .target Liang Thunderfoot
 step
-    #completewith Along28
+    #completewith Along29
     >>As you go: Kill |cRXP_ENEMY_Adolescent Mushans|r. Loot them for |cRXP_LOOT_Mushan Shoulder Steak|r. |cRXP_WARN_Anything left is finished later|r
     .complete 29913,1 --Mushan Shoulder Steak (4)
     .mob Adolescent Mushan
 step
-    #label Along28
+    #label Along29
     #loop
     .goto 376,70.40,24.00,0
     .goto 376,70.40,24.00,40,0
@@ -773,7 +767,7 @@ step
     .accept 29945 >>Accept Yellow and Red Make Orange
     .unitscan Li Li
 step
-    #completewith Along44
+    #completewith Along45
     >>As you go: Kill |cRXP_ENEMY_Mushan Nomads|r, |cRXP_ENEMY_Longfang Howlers|r, |cRXP_ENEMY_Tawnyhide Fawns|r and |cRXP_ENEMY_Tawnyhide Does|r. Loot them for |cRXP_LOOT_Vial of Animal Blood|r. |cRXP_WARN_Anything left is finished later|r
     .complete 29945,2 --Vial of Animal Blood (1)
     .mob Mushan Nomad
@@ -781,11 +775,11 @@ step
     .mob Tawnyhide Fawn
     .mob Tawnyhide Doe
 step
-    #completewith Along43
+    #completewith Along44
     >>As you go: Pick up |cRXP_PICK_Meadow Marigold|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 29945,1 --Meadow Marigold (10)
 step
-    #label Along43
+    #label Along44
     .goto 376,68.67,36.82
     >>Kill |cRXP_ENEMY_Aiyu the Skillet|r
     >>Kill |cRXP_ENEMY_Jinanya the Clawblade|r
@@ -794,7 +788,7 @@ step
     .mob Aiyu the Skillet
     .mob Jinanya the Clawblade
 step
-    #label Along44
+    #label Along45
     .goto 376,64.58,40.91
     >>Kill |cRXP_ENEMY_Frenzyhop|r
     .complete 29944,3 --Frenzyhop slain (1)
@@ -965,11 +959,11 @@ step
     .accept 29581 >>Accept The Golden Dream
     .target Zhang Yue
 step
-    #completewith Along63
+    #completewith Along64
     >>As you go: Open the |cRXP_PICK_Dreamleaf Bush|r. Loot it for |cRXP_LOOT_Sprig of Dreamleaf|r. |cRXP_WARN_Anything left is finished later|r
     .complete 29581,1 --Sprig of Dreamleaf (1)
 step
-    #label Along63
+    #label Along64
     .goto 376,65.35,25.73
     >>Kill |cRXP_ENEMY_Krosh|r and loot |cRXP_LOOT_Krosh's Back|r. Use it to start the quest
     .collect 83767,1,29758 --Krosh's Back (1)
@@ -1014,12 +1008,12 @@ step
     .complete 29950,1 --Silk Farm Exploration Credit
     .target Silk Farm Exploration Credit
 step
-    #completewith Along70
+    #completewith Along71
     >>As you go: Kill |cRXP_ENEMY_Mutated Silkmoths|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30059,1 --Mutated Silkmoth slain (6)
     .mob Mutated Silkmoth
 step
-    #label Along70
+    #label Along71
     .goto 376,62.67,59.75
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Silkmaster Tsai|r
     .accept 30072 >>Accept Where Silk Comes From
@@ -1141,13 +1135,13 @@ step
     .accept 30046 >>Accept Chen's Resolution
     .unitscan Chen Stormstout
 step
-    #completewith Along85
+    #completewith Along86
     >>As you go: Kill |cRXP_ENEMY_Glade Hunters|r and |cRXP_ENEMY_Glade Sprinters|r. Loot them for |cRXP_LOOT_Spindly Bloodfeather|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30267,2 --Spindly Bloodfeather (5)
     .mob Glade Hunter
     .mob Glade Sprinter
 step
-    #label Along85
+    #label Along86
     #loop
     .goto 376,59.40,37.30,0
     .goto 376,59.40,37.30,40,0
@@ -1199,7 +1193,7 @@ step
     .accept 30031 >>Accept Taste Test
     .unitscan Li Li
 step
-    #completewith Along91
+    #completewith Along92
     >>As you go: Click the |cRXP_PICK_Light Grain|r. Click the |cRXP_PICK_Fresh Grain|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30031,2 --Light Grain
     .complete 30031,4 --Fresh Grain
@@ -1209,14 +1203,14 @@ step
     .accept 30029 >>Accept Wee Little Shenanigans
     .target Grainlord Kai
 step
-    #completewith Along91
+    #completewith Along92
     >>As you go: Kill |cRXP_ENEMY_Maizerly Thiefs|r, |cRXP_ENEMY_Granary Vandals|r and |cRXP_ENEMY_Tricky Maizers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30029,1 --Maizerly Thief (8)
     .mob Maizerly Thief
     .mob Granary Vandal
     .mob Tricky Maizer
 step
-    #label Along91
+    #label Along92
     .goto 376,52.60,62.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Grainer Pan|r
     .accept 30030 >>Accept Out of Sprite
@@ -1331,7 +1325,7 @@ step
     .accept 30054 >>Accept Enough is Ookin' Enough
     .target Mung-Mung
 step
-    #completewith Along106
+    #completewith Along107
     >>As you go: Kill |cRXP_ENEMY_Springtail Gnashers|r, |cRXP_ENEMY_Springtail Leapers|r and |cRXP_ENEMY_Springtail Diggers|r. Loot them for |cRXP_LOOT_Virmen Tooth|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30054,1 --Virmen Tooth (1)
     .mob Springtail Gnasher
@@ -1349,7 +1343,7 @@ step
     .complete 30057,1 --Den Mudclaw
     .target Den Mudclaw
 step
-    #label Along106
+    #label Along107
     .goto 376,44.26,34.21
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Den Mudclaw|r
     .turnin 30057 >>Turn in Seeing Orange
@@ -1671,63 +1665,66 @@ step
     .isQuestTurnedIn 30241,30360,30376 --any of: Warn Stoneplow, Warn Stoneplow, Hope Springs Eternal
     .xp <86,1
 step
-    #completewith Along151
-    >>As you go: Kill |cRXP_ENEMY_Ik'thik Warriors|r and |cRXP_ENEMY_Ik'thik Infestors|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -30622,1 --Ik'thik Warrior (15)
-    .mob Ik'thik Warrior
-    .mob Ik'thik Infestor
-step
     .goto 376,17.83,56.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Loon Mai|r
     .accept 29982 >>Accept Evacuation Orders
     .target Loon Mai
 step
-    #label Along151
     .goto 376,17.90,56.01
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
     .turnin 30623 >>Turn in The Mantidote
     .target ?
     .isOnQuest 30623
 step
-    #completewith Along153
+    #completewith Along158
     >>As you go: Kill |cRXP_ENEMY_Ik'thik Wingblades|r and |cRXP_ENEMY_Ik'thik Swiftclaws|r. |cRXP_WARN_Anything left is finished later|r
     .complete 29981,1 --Ik'thik Wingblade (8)
     .mob Ik'thik Wingblade
     .mob Ik'thik Swiftclaw
 step
-    #loop
-    .goto 376,15.20,55.20,0
-    .goto 376,15.20,55.20,40,0
-    .goto 376,13.00,55.40,40,0
-    .goto 376,9.20,55.40,40,0
+    .goto 376,15.48,54.91
     >>Kill |cRXP_ENEMY_Ying Greentill|r and |cRXP_ENEMY_Haiyun Greentill|r
     >>Kill |cRXP_ENEMY_Mia Marlfur|r and |cRXP_ENEMY_Zhang Marlfur|r
-    >>Kill |cRXP_ENEMY_Koro Mistwalkers|r, |cRXP_ENEMY_Crane Wing Monks|r and |cRXP_ENEMY_Crane Wing Acolytes|r << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    >>Kill |cRXP_ENEMY_Shu-Li Spadepaw|r and |cRXP_ENEMY_Feng Spadepaw|r
-    >>Kill |cRXP_ENEMY_Ik'thik Warriors|r and |cRXP_ENEMY_Ik'thik Infestors|r
-    >>Kill |cRXP_ENEMY_Fo Sho Knucklebumps|r, |cRXP_ENEMY_Ko-Yan Nas|r and |cRXP_ENEMY_Jooru Elderblades|r << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 29982,3 --Ying Greentill (1)
     .complete 29982,4 --Mia Marlfur (1)
-    .complete -30624,2 << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren --Koro Mistwalker (8)
-    .complete 29982,2 --Shu-Li Spadepaw (1)
-    .complete -30622,1 --Ik'thik Warrior (15)
-    .complete -30624,3 << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren --Fo Sho Knucklebump (8)
     .mob Ying Greentill
     .mob Haiyun Greentill
     .mob Mia Marlfur
     .mob Zhang Marlfur
-    .mob Koro Mistwalker << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .mob Crane Wing Monk << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .mob Crane Wing Acolyte << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 376,15.20,55.40
+    >>Kill |cRXP_ENEMY_Koro Mistwalkers|r, |cRXP_ENEMY_Crane Wing Monks|r and |cRXP_ENEMY_Crane Wing Acolytes|r
+    .complete 30624,2 --Koro Mistwalker (8)
+    .mob Koro Mistwalker
+    .mob Crane Wing Monk
+    .mob Crane Wing Acolyte
+    .isOnQuest 30624
+step
+    .goto 376,12.84,55.73
+    >>Kill |cRXP_ENEMY_Shu-Li Spadepaw|r and |cRXP_ENEMY_Feng Spadepaw|r
+    .complete 29982,2 --Shu-Li Spadepaw (1)
     .mob Shu-Li Spadepaw
     .mob Feng Spadepaw
+step
+    #loop
+    .goto 376,13.00,54.20,0
+    .goto 376,13.00,54.20,40,0
+    .goto 376,9.40,55.80,40,0
+    >>Kill |cRXP_ENEMY_Ik'thik Warriors|r and |cRXP_ENEMY_Ik'thik Infestors|r
+    .complete 30622,1 --Ik'thik Warrior (15)
     .mob Ik'thik Warrior
     .mob Ik'thik Infestor
-    .mob Fo Sho Knucklebump << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .mob Ko-Yan Na << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .mob Jooru Elderblade << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .isOnQuest 30622
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 376,9.60,54.40
+    >>Kill |cRXP_ENEMY_Fo Sho Knucklebumps|r, |cRXP_ENEMY_Ko-Yan Nas|r and |cRXP_ENEMY_Jooru Elderblades|r
+    .complete 30624,3 --Fo Sho Knucklebump (8)
+    .mob Fo Sho Knucklebump
+    .mob Ko-Yan Na
+    .mob Jooru Elderblade
+    .isOnQuest 30624
 step
-    #label Along153
+    #label Along158
     .goto 376,7.14,54.83
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wei Blacksoil|r
     .complete 29982,1 --Wei Blacksoil
@@ -1752,13 +1749,17 @@ step
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 376,17.40,50.20
     >>Kill |cRXP_ENEMY_Yi-Mo Longbrows|r and |cRXP_ENEMY_Warden of Zhus|r
-    >>Kill |cRXP_ENEMY_Lyalias|r and |cRXP_ENEMY_Incursion Sentinels|r
-    .complete -30624,1 --Yi-Mo Longbrow (8)
-    .complete -30624,4 --Lyalia (8)
+    .complete 30624,1 --Yi-Mo Longbrow (8)
     .mob Yi-Mo Longbrow
     .mob Warden of Zhu
+    .isOnQuest 30624
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .goto 376,15.00,50.60
+    >>Kill |cRXP_ENEMY_Lyalias|r and |cRXP_ENEMY_Incursion Sentinels|r
+    .complete 30624,4 --Lyalia (8)
     .mob Lyalia
     .mob Incursion Sentinel
+    .isOnQuest 30624
 step
     .goto 376,11.58,49.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Guard Captain Oakenshield|r
@@ -1789,23 +1790,23 @@ step
     .accept 29992 >>Accept Tenderpaw By Name, Tender Paw By Reputation
     .unitscan Lin Tenderpaw
 step
-    #completewith Along163
+    #completewith Along169
     >>As you go: Kill |cRXP_ENEMY_Mist Incarnations|r. |cRXP_WARN_Anything left is finished later|r
     .complete 29985,1 --Mist Incarnation slain (12)
     .mob Mist Incarnation
 step
-    #completewith Along162
+    #completewith Along168
     >>As you go: Open the |cRXP_PICK_Jademoon|r. Loot it for |cRXP_LOOT_Jademoon Leaf|r. |cRXP_WARN_Anything left is finished later|r
     .complete 29992,1 --Jademoon Leaf (1)
 step
-    #label Along162
+    #label Along168
     .goto 376,16.01,32.11
     >>Click the |cRXP_PICK_Northern Fog Ward|r
     >>Click the |cRXP_PICK_Western Fog Ward|r
     .complete 29986,1 --Northern Fog Ward
     .complete 29986,2 --Western Fog Ward
 step
-    #label Along163
+    #label Along169
     .goto 376,18.10,41.46
     >>Click the |cRXP_PICK_Southern Fog Ward|r
     .complete 29986,3 --Southern Fog Ward
@@ -1887,14 +1888,6 @@ step
     .isQuestTurnedIn 30529 --any of: Growing the Farm III: The Mossy Boulder
     .xp <90,1
 step
-    #completewith Along177
-    >>As you go: Kill |cRXP_ENEMY_Farmer Fungs|r, |cRXP_ENEMY_Haohan Mudclaws|r, |cRXP_ENEMY_Ellas|r and |cRXP_ENEMY_Fish Fellreeds|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -30534,1 --Farmer Fung (8)
-    .mob Farmer Fung
-    .mob Haohan Mudclaw
-    .mob Ella
-    .mob Fish Fellreed
-step
     .goto 376,52.23,48.70
     >>Kill |cRXP_ENEMY_Gina Mudclaw|r and loot |cRXP_LOOT_"Jinyu Princess" Irrigation System|r. Use it to start the quest
     .collect 89812,1,31936 --"Jinyu Princess" Irrigation System (1)
@@ -1925,7 +1918,6 @@ step
     .target Farmer Yoon
     .isOnQuest 31938
 step
-    #label Along177
     #loop
     .goto 376,52.76,51.85,0
     .goto 376,52.76,51.85,40,0
@@ -2163,7 +2155,7 @@ step
     .accept 30075 >>Accept Clear the Way
     .unitscan Chen Stormstout
 step
-    #completewith Along207
+    #completewith Along214
     >>As you go: Kill |cRXP_ENEMY_Mischievous Virmens|r and |cRXP_ENEMY_Ale-Addled Hozens|r. |cRXP_WARN_Anything left is finished later|r
     .complete 30075,1 --Mischievous Virmen (8)
     .mob Mischievous Virmen
@@ -2180,7 +2172,6 @@ step
     .accept 30076 >>Accept The Fanciest Water
     .unitscan Mudmug
 step
-    #label Along207
     #loop
     .goto 376,32.27,68.45,0
     .goto 376,32.27,68.45,40,0
@@ -2191,18 +2182,29 @@ step
     .accept 30077 >>Accept Barrels, Man
     .unitscan Li Li
 step
+    #completewith Along214
+    >>As you go: Kill |cRXP_ENEMY_Curious Water Sprites|r. Loot them for |cRXP_LOOT_Spritewater Essence|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 30076,1 --Spritewater Essence (3)
+    .mob Curious Water Sprite
+step
+    #label Along214
     #loop
-    .goto 376,33.40,67.40,0
-    .goto 376,33.40,67.40,40,0
+    .goto 376,32.97,67.94,0
+    .goto 376,32.97,67.94,40,0
     .goto 376,36.88,65.73,40,0
-    .goto 376,36.60,70.20,40,0
     >>Interact with |cRXP_FRIENDLY_Barreled Pandarens|r
+    .complete 30077,1 --Barreled Pandaren (7)
+    .target Barreled Pandaren
+step
+    #loop
+    .goto 376,37.00,65.00,0
+    .goto 376,37.00,65.00,40,0
+    .goto 376,35.60,67.60,40,0
+    .goto 376,33.40,67.40,40,0
     >>Kill |cRXP_ENEMY_Curious Water Sprites|r. Loot them for |cRXP_LOOT_Spritewater Essence|r
     >>Kill |cRXP_ENEMY_Mischievous Virmens|r and |cRXP_ENEMY_Ale-Addled Hozens|r
-    .complete 30077,1 --Barreled Pandaren (7)
     .complete 30076,1 --Spritewater Essence (3)
     .complete 30075,1 --Mischievous Virmen (8)
-    .target Barreled Pandaren
     .mob Curious Water Sprite
     .mob Mischievous Virmen
     .mob Ale-Addled Hozen
@@ -2294,22 +2296,29 @@ step
     .isQuestTurnedIn 30624 --It Does You No Good In The Keg
     .xp <86,1
 step
-    #loop
-    .goto 376,9.40,53.80,0
-    .goto 376,9.40,53.80,40,0
-    .goto 376,9.60,58.00,40,0
+    .goto 376,9.60,53.80
     >>Kill |cRXP_ENEMY_Ik'thik Tendon-Slicer|r
-    >>Kill |cRXP_ENEMY_Ik'thik Fearmonger|r
-    >>Kill |cRXP_ENEMY_Ik'thik Bloodrager|r
-    >>Kill |cRXP_ENEMY_Ik'thik Incubator|r
-    .complete -30625,3 --Ik'thik Tendon-Slicer slain (1)
-    .complete -30625,4 --Ik'thik Fearmonger slain (1)
-    .complete -30625,1 --Ik'thik Bloodrager slain (1)
-    .complete -30625,2 --Ik'thik Incubator slain (1)
+    .complete 30625,3 --Ik'thik Tendon-Slicer slain (1)
     .mob Ik'thik Tendon-Slicer
+    .isOnQuest 30625
+step
+    .goto 376,9.60,58.00
+    >>Kill |cRXP_ENEMY_Ik'thik Fearmonger|r
+    .complete 30625,4 --Ik'thik Fearmonger slain (1)
     .mob Ik'thik Fearmonger
+    .isOnQuest 30625
+step
+    .goto 376,9.00,54.40
+    >>Kill |cRXP_ENEMY_Ik'thik Bloodrager|r
+    .complete 30625,1 --Ik'thik Bloodrager slain (1)
     .mob Ik'thik Bloodrager
+    .isOnQuest 30625
+step
+    .goto 376,8.80,51.20
+    >>Kill |cRXP_ENEMY_Ik'thik Incubator|r
+    .complete 30625,2 --Ik'thik Incubator slain (1)
     .mob Ik'thik Incubator
+    .isOnQuest 30625
 step
     .goto 376,11.58,49.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Guard Captain Oakenshield|r
@@ -2408,16 +2417,6 @@ step
     .hs >>Hearth to Trader Jambeezi's inn. |cRXP_WARN_Walk instead if you are already nearby|r
     .cooldown item,6948,>0,1
 step
-    #completewith Along239
-    >>As you go: Kill |cRXP_ENEMY_Tilled Soils|r. Kill |cRXP_ENEMY_Ripe Juicycrunch Carrots|r, |cRXP_ENEMY_Plump Juicycrunch Carrots|r and |cRXP_ENEMY_Bursting Juicycrunch Carrots|r. Kill |cRXP_ENEMY_Ripe Juicycrunch Carrots|r, |cRXP_ENEMY_Plump Juicycrunch Carrots|r and |cRXP_ENEMY_Bursting Juicycrunch Carrots|r. Loot them for |cRXP_LOOT_Juicycrunch Carrot|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31946,3 --Tilled Soil (8)
-    .complete -31946,2 --Ripe Juicycrunch Carrot (2)
-    .complete -31946,1 --Juicycrunch Carrot (2)
-    .mob Tilled Soil
-    .mob Ripe Juicycrunch Carrot
-    .mob Plump Juicycrunch Carrot
-    .mob Bursting Juicycrunch Carrot
-step
     #loop
     .goto 376,52.76,51.85,0
     .goto 376,52.76,51.85,40,0
@@ -2456,7 +2455,6 @@ step
     .isQuestTurnedIn 30522 --any of: Haohan's Vote II: The Real Culprits
     .xp <90,1
 step
-    #label Along239
     #loop
     .goto 376,52.90,51.69,0
     .goto 376,52.90,51.69,40,0
@@ -2470,23 +2468,47 @@ step
 step
     .goto 376,51.86,47.86
     >>Kill |cRXP_ENEMY_Ripe Green Cabbages|r, |cRXP_ENEMY_Bursting Green Cabbages|r and |cRXP_ENEMY_Plump Green Cabbages|r
-    >>Kill |cRXP_ENEMY_Tilled Soils|r
-    >>Kill |cRXP_ENEMY_Ripe Green Cabbages|r, |cRXP_ENEMY_Plump Green Cabbages|r and |cRXP_ENEMY_Bursting Green Cabbages|r. Loot them for |cRXP_LOOT_Green Cabbage|r
-    >>Kill |cRXP_ENEMY_Ripe Juicycrunch Carrots|r, |cRXP_ENEMY_Plump Juicycrunch Carrots|r and |cRXP_ENEMY_Bursting Juicycrunch Carrots|r
-    >>Kill |cRXP_ENEMY_Ripe Juicycrunch Carrots|r, |cRXP_ENEMY_Plump Juicycrunch Carrots|r and |cRXP_ENEMY_Bursting Juicycrunch Carrots|r. Loot them for |cRXP_LOOT_Juicycrunch Carrot|r
-    .complete -31947,2 --Ripe Green Cabbage (3)
-    .complete -31946,3 --Tilled Soil (8)
-    .complete -31947,1 --Green Cabbage (3)
-    .complete -31947,3 --Tilled Soil (8)
-    .complete -31946,2 --Ripe Juicycrunch Carrot (2)
-    .complete -31946,1 --Juicycrunch Carrot (2)
+    .complete 31947,2 --Ripe Green Cabbage (3)
     .mob Ripe Green Cabbage
     .mob Bursting Green Cabbage
     .mob Plump Green Cabbage
+    .isOnQuest 31947
+step
+    .goto 376,51.86,47.86
+    >>Kill |cRXP_ENEMY_Tilled Soils|r
+    .complete 31946,3 --Tilled Soil (8)
     .mob Tilled Soil
+    .isOnQuest 31946
+step
+    .goto 376,51.86,47.86
+    >>Kill |cRXP_ENEMY_Ripe Green Cabbages|r, |cRXP_ENEMY_Plump Green Cabbages|r and |cRXP_ENEMY_Bursting Green Cabbages|r. Loot them for |cRXP_LOOT_Green Cabbage|r
+    .complete 31947,1 --Green Cabbage (3)
+    .mob Ripe Green Cabbage
+    .mob Plump Green Cabbage
+    .mob Bursting Green Cabbage
+    .isOnQuest 31947
+step
+    .goto 376,51.86,47.86
+    >>Kill |cRXP_ENEMY_Tilled Soils|r
+    .complete 31947,3 --Tilled Soil (8)
+    .mob Tilled Soil
+    .isOnQuest 31947
+step
+    .goto 376,51.86,47.86
+    >>Kill |cRXP_ENEMY_Ripe Juicycrunch Carrots|r, |cRXP_ENEMY_Plump Juicycrunch Carrots|r and |cRXP_ENEMY_Bursting Juicycrunch Carrots|r
+    .complete 31946,2 --Ripe Juicycrunch Carrot (2)
     .mob Ripe Juicycrunch Carrot
     .mob Plump Juicycrunch Carrot
     .mob Bursting Juicycrunch Carrot
+    .isOnQuest 31946
+step
+    .goto 376,51.86,47.86
+    >>Kill |cRXP_ENEMY_Ripe Juicycrunch Carrots|r, |cRXP_ENEMY_Plump Juicycrunch Carrots|r and |cRXP_ENEMY_Bursting Juicycrunch Carrots|r. Loot them for |cRXP_LOOT_Juicycrunch Carrot|r
+    .complete 31946,1 --Juicycrunch Carrot (2)
+    .mob Ripe Juicycrunch Carrot
+    .mob Plump Juicycrunch Carrot
+    .mob Bursting Juicycrunch Carrot
+    .isOnQuest 31946
 step
     #loop
     .goto 376,52.90,51.69,0
@@ -2503,14 +2525,15 @@ step
     .complete 31948,1 --Thousand-Year Water (1)
     .isOnQuest 31948
 step
-    #loop
-    .goto 376,48.41,18.39,0
-    .goto 376,48.41,18.39,40,0
-    .goto 376,44.38,21.96,40,0
+    .goto 376,48.41,18.39
     >>Pick up |cRXP_PICK_Cave Lily|r from the ground
+    .complete 30525,2 --Cave Lily (1)
+    .isOnQuest 30525
+step
+    .goto 376,47.14,20.31
     >>Pick up |cRXP_PICK_Violet Lichen|r from the ground
-    .complete -30525,2 --Cave Lily (1)
-    .complete -30525,4 --Violet Lichen (1)
+    .complete 30525,4 --Violet Lichen (1)
+    .isOnQuest 30525
 step
     .goto 376,44.36,19.67
     >>Pick up |cRXP_PICK_Bloodbloom|r from the ground
@@ -2563,23 +2586,12 @@ step
     .isQuestTurnedIn 31948 --any of: Nana's Vote II: The Sacred Springs
     .xp <90,1
 step
-    #completewith Along252
-    >>As you go: Kill |cRXP_ENEMY_Bursting Witchberries|r, |cRXP_ENEMY_Plump Witchberries|r and |cRXP_ENEMY_Ripe Witchberries|r. Loot them for |cRXP_LOOT_Witchberries|r. Kill |cRXP_ENEMY_Bursting Witchberries|r, |cRXP_ENEMY_Plump Witchberries|r and |cRXP_ENEMY_Ripe Witchberries|r. Kill |cRXP_ENEMY_Tilled Soils|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -31949,1 --Witchberries (3)
-    .complete -31949,2 --Bursting Witchberries (3)
-    .complete -31949,3 --Tilled Soil (8)
-    .mob Bursting Witchberries
-    .mob Plump Witchberries
-    .mob Ripe Witchberries
-    .mob Tilled Soil
-step
     .goto 376,52.25,48.79
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Farmer Yoon|r
     .turnin 30525 >>Turn in Haohan's Vote III: Pure Poison
     .target Farmer Yoon
     .isOnQuest 30525
 step
-    #label Along252
     .goto 376,52.25,48.79
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Farmer Yoon|r
     .accept 30527 >>Accept Haohan's Vote IV: Melons For Felons
@@ -2589,23 +2601,47 @@ step
 step
     .goto 376,51.86,47.86
     >>Kill |cRXP_ENEMY_Bursting Witchberries|r, |cRXP_ENEMY_Plump Witchberries|r and |cRXP_ENEMY_Ripe Witchberries|r. Loot them for |cRXP_LOOT_Witchberries|r
-    >>Kill |cRXP_ENEMY_Bursting Witchberries|r, |cRXP_ENEMY_Plump Witchberries|r and |cRXP_ENEMY_Ripe Witchberries|r
-    >>Kill |cRXP_ENEMY_Bursting Striped Melons|r, |cRXP_ENEMY_Plump Striped Melons|r and |cRXP_ENEMY_Ripe Striped Melons|r. Loot them for |cRXP_LOOT_Striped Melon|r
-    >>Kill |cRXP_ENEMY_Bursting Striped Melons|r, |cRXP_ENEMY_Plump Striped Melons|r and |cRXP_ENEMY_Ripe Striped Melons|r
-    >>Kill |cRXP_ENEMY_Tilled Soils|r
-    .complete -31949,1 --Witchberries (3)
-    .complete -31949,2 --Bursting Witchberries (3)
-    .complete -30527,1 --Striped Melon (4)
-    .complete -30527,2 --Bursting Striped Melon (4)
-    .complete -31949,3 --Tilled Soil (8)
-    .complete -30527,3 --Tilled Soil (8)
+    .complete 31949,1 --Witchberries (3)
     .mob Bursting Witchberries
     .mob Plump Witchberries
     .mob Ripe Witchberries
+    .isOnQuest 31949
+step
+    .goto 376,51.86,47.86
+    >>Kill |cRXP_ENEMY_Bursting Witchberries|r, |cRXP_ENEMY_Plump Witchberries|r and |cRXP_ENEMY_Ripe Witchberries|r
+    .complete 31949,2 --Bursting Witchberries (3)
+    .mob Bursting Witchberries
+    .mob Plump Witchberries
+    .mob Ripe Witchberries
+    .isOnQuest 31949
+step
+    .goto 376,51.86,47.86
+    >>Kill |cRXP_ENEMY_Bursting Striped Melons|r, |cRXP_ENEMY_Plump Striped Melons|r and |cRXP_ENEMY_Ripe Striped Melons|r. Loot them for |cRXP_LOOT_Striped Melon|r
+    .complete 30527,1 --Striped Melon (4)
     .mob Bursting Striped Melon
     .mob Plump Striped Melon
     .mob Ripe Striped Melon
+    .isOnQuest 30527
+step
+    .goto 376,51.86,47.86
+    >>Kill |cRXP_ENEMY_Bursting Striped Melons|r, |cRXP_ENEMY_Plump Striped Melons|r and |cRXP_ENEMY_Ripe Striped Melons|r
+    .complete 30527,2 --Bursting Striped Melon (4)
+    .mob Bursting Striped Melon
+    .mob Plump Striped Melon
+    .mob Ripe Striped Melon
+    .isOnQuest 30527
+step
+    .goto 376,51.86,47.86
+    >>Kill |cRXP_ENEMY_Tilled Soils|r
+    .complete 31949,3 --Tilled Soil (8)
     .mob Tilled Soil
+    .isOnQuest 31949
+step
+    .goto 376,51.86,47.86
+    >>Kill |cRXP_ENEMY_Tilled Soils|r
+    .complete 30527,3 --Tilled Soil (8)
+    .mob Tilled Soil
+    .isOnQuest 30527
 step
     .goto 376,52.25,48.79
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Farmer Yoon|r

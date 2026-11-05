@@ -230,21 +230,24 @@ step
     .accept 25602 >>Accept Can't Start a Fire Without a Spark
     .target Captain Samir
 step
-    #completewith Along31
+    #completewith Along32
     >>As you go: Loot the |cRXP_PICK_Adarrah's Jewelry Boxes|r for |cRXP_LOOT_Adarrah's Keepsake|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25390,1 --Adarrah's Keepsake (6)
 step
-    #label Along31
+    .goto 201,55.53,38.82
+    >>Pick up |cRXP_PICK_Keg of Gunpowder|r from the ground
+    .complete 25602,1 --Keg of Gunpowder (1)
+step
+    #label Along32
     #loop
     .goto 201,56.71,41.00,0
     .goto 201,56.71,41.00,40,0
     .goto 201,57.55,46.65,40,0
-    >>Pick up |cRXP_PICK_Keg of Gunpowder|r from the ground
     >>Kill |cRXP_ENEMY_Slickskin Eels|r and |cRXP_ENEMY_Slitherfin Eels|r
-    .complete 25602,1 --Keg of Gunpowder (1)
-    .complete -27729,1 --Slickskin Eel (8)
+    .complete 27729,1 --Slickskin Eel (8)
     .mob Slickskin Eel
     .mob Slitherfin Eel
+    .isOnQuest 27729
 step
     #completewith Drop25377x1
     >>|cRXP_LOOT_Tattered Treasure Map|r can drop from |cRXP_ENEMY_Clacksnap Pincer|r. Use it to start the quest if you get one
@@ -433,12 +436,12 @@ step
     .accept 26000 >>Accept Spelunking << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Erunak Stonespeaker
 step
-    #completewith Along58
+    #completewith Along59
     >>As you go: Kill |cRXP_ENEMY_Gilblin Hoarder|r and loot |cRXP_LOOT_Pilfered Cannonball|r. It can also be picked up from |cRXP_PICK_Pilfered Cannonballs|r on the ground. |cRXP_WARN_Anything left is finished later|r
     .collect 55185,1,25651,1 --Pilfered Cannonball (1)
     .mob Gilblin Hoarder
 step
-    #label Along58
+    #label Along59
     .goto 201,51.13,52.03
     >>Kill |cRXP_ENEMY_Gilblingle|r and loot |cRXP_LOOT_Waterlogged Journal|r. Use it to start the quest
     .collect 54639,1,25503 --Waterlogged Journal (1)
@@ -450,13 +453,16 @@ step
     .goto 201,50.41,51.85,0
     .goto 201,50.41,51.85,40,0
     .goto 201,51.14,54.82,40,0
-    .goto 201,53.59,58.04,40,0
+    .goto 201,53.69,57.16,40,0
     >>Kill |cRXP_ENEMY_Gilblin Hoarder|r and loot |cRXP_LOOT_Pilfered Cannonball|r. It can also be picked up from |cRXP_PICK_Pilfered Cannonballs|r on the ground
-    >>Kill |cRXP_ENEMY_King Gurboggle|r and loot |cRXP_LOOT_The Pewter Pounder|r
     .collect 55185,1,25651,1 --Pilfered Cannonball (1)
-    .complete -25732,1 --The Pewter Pounder (1)
     .mob Gilblin Hoarder
+step
+    .goto 201,53.59,58.04
+    >>Kill |cRXP_ENEMY_King Gurboggle|r and loot |cRXP_LOOT_The Pewter Pounder|r
+    .complete 25732,1 --The Pewter Pounder (1)
     .mob King Gurboggle
+    .isOnQuest 25732
 step
     .goto 201,54.65,62.95
     >>Kill |cRXP_ENEMY_Blackfin|r and loot |cRXP_LOOT_Gilblingle's Map|r
@@ -517,7 +523,7 @@ step
     .accept 25884 >>Accept Come Hell or High Water
     .target Rendel Firetongue
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along71
+    #completewith Along73
     >>As you go: Kill |cRXP_ENEMY_Zin'jatar Pearlbinders|r, |cRXP_ENEMY_Zin'jatar Guardians|r, |cRXP_ENEMY_Zin'jatar Overseers|r and |cRXP_ENEMY_Shimmerspine Harvesters|r. Loot them for |cRXP_LOOT_Wiggleweed Sprout|r. |cRXP_WARN_Anything left is finished later|r
     .complete 26040,1 --Wiggleweed Sprout (7)
     .mob Zin'jatar Pearlbinder
@@ -525,14 +531,14 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Zin'jatar Overseer
     .mob Shimmerspine Harvester
 step
-    #completewith Along71
+    #completewith Along73
     >>As you go: Kill |cRXP_ENEMY_Zin'jatar Pearlbinders|r, |cRXP_ENEMY_Zin'jatar Overseers|r and |cRXP_ENEMY_Zin'jatar Guardians|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25884,1 --Zin'jatar Pearlbinder (8)
     .mob Zin'jatar Pearlbinder
     .mob Zin'jatar Overseer
     .mob Zin'jatar Guardian
 step
-    #label Along71
+    #label Along73
     .goto 201,60.39,69.85
     >>Click the |cRXP_PICK_Naga Tridents|r
     .accept 25883 >>Accept How Disarming
@@ -567,17 +573,19 @@ step
     .turnin 25884 >>Turn in Come Hell or High Water
     .accept 27708 >>Accept The Warden's Time
     .target Rendel Firetongue
-step
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 201,60.59,76.61,0
     .goto 201,60.59,76.61,40,0
-    .goto 201,59.37,79.45,40,0
+    .goto 201,58.88,79.88,40,0
     .goto 201,56.25,77.39,40,0
-    >>Interact with |cRXP_FRIENDLY_Imprisoned Warriors|r << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    >>Interact with |cRXP_FRIENDLY_Imprisoned Warriors|r
+    .complete 26008,1 --Imprisoned Warrior (10)
+    .target Imprisoned Warrior
+step
+    .goto 201,60.15,81.19
     >>Kill |cRXP_ENEMY_Warden Azjakir|r
-    .complete 26008,1 << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren --Imprisoned Warrior (10)
     .complete 27708,1 --Warden Azjakir slain (1)
-    .target Imprisoned Warrior << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Warden Azjakir
 step
     .goto 201,63.85,59.94
@@ -650,10 +658,14 @@ step
 step
     .goto 201,45.38,46.62
     >>Click the |cRXP_PICK_Braided Rope|r
+    .complete 25371,2 --Braided Rope
+    .isOnQuest 25371
+step
+    .goto 201,45.06,47.00
     >>Kill |cRXP_ENEMY_Abyssal Seahorse|r
-    .complete -25371,2 --Braided Rope
-    .complete -25371,1 --Abyssal Seahorse slain (1)
+    .complete 25371,1 --Abyssal Seahorse slain (1)
     .mob Abyssal Seahorse
+    .isOnQuest 25371
 step
     .goto 201,46.04,46.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Moanah Stormhoof|r

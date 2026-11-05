@@ -84,7 +84,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Feralas - Horde - part 2 of 3, planned from level 45
-Guide "42-52 Feralas" in group "Zone Routes (Horde)": this part has 24 steps, 19 stops
+Guide "42-52 Feralas" in group "Zone Routes (Horde)": this part has 24 steps, 20 stops
 Written to guides/classic/Feralas (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -105,7 +105,6 @@ Step order kept from the last build (locks folder): 18 steps kept, 2 new ones sl
   everyone (quests that depend on other zones): 13 more tasks; their whole route comes to 11,245 yd; ends at level 45.1; at its hardest you are 2.0 levels below the mobs
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
 2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (7)
 -----------------------
@@ -144,7 +143,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Feralas - Horde - part 3 of 3, planned from level 48
-Guide "42-52 Feralas" in group "Zone Routes (Horde)": this part has 20 steps, 16 stops
+Guide "42-52 Feralas" in group "Zone Routes (Horde)": this part has 22 steps, 17 stops
 Written to guides/classic/Feralas (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -164,7 +163,7 @@ Step order kept from the last build (locks folder): 19 steps kept, 4 new ones sl
   everyone: 18 tasks, 10,453 yd on foot; ends at level 48.2; at its hardest you are 1.9 levels below the mobs
   everyone (quests that depend on other zones): 5 more tasks; their whole route comes to 10,579 yd; ends at level 48.2; at its hardest you are 1.9 levels below the mobs
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
-4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+5 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (8)
 -----------------------

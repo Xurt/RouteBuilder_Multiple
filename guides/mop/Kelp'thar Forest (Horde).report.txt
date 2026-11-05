@@ -1,5 +1,5 @@
 Kelp'thar Forest - Horde - part 1 of 2, planned from level 81
-Guide "81-81 Kelp'thar Forest" in group "Zone Routes (Horde)": this part has 94 steps, 84 stops
+Guide "81-81 Kelp'thar Forest" in group "Zone Routes (Horde)": this part has 97 steps, 87 stops
 Written to guides/mop/Kelp'thar Forest (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -70,7 +70,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Kelp'thar Forest - Horde - part 2 of 2, planned from level 86
-Guide "81-81 Kelp'thar Forest" in group "Zone Routes (Horde)": this part has 8 steps, 7 stops
+Guide "81-81 Kelp'thar Forest" in group "Zone Routes (Horde)": this part has 9 steps, 8 stops
 Written to guides/mop/Kelp'thar Forest (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

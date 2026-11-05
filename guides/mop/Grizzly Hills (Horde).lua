@@ -1008,45 +1008,52 @@ step
     .complete 12093,1 --Overseer Durval slain (1)
     .mob Overseer Durval
 step
-    #loop
-    .goto 116,84.91,23.31,0
-    .goto 116,84.91,23.31,40,0
-    .goto 116,86.96,26.51,40,0
+    .goto 116,84.91,23.31
     >>Kill |cRXP_ENEMY_Varlam|r
-    >>Kill |cRXP_ENEMY_Shade of Arugal|r
-    >>Kill |cRXP_ENEMY_Goremaw|r
-    >>Kill |cRXP_ENEMY_Selas|r
-    .complete -12164,1 --Varlam slain (1)
-    .complete -12164,4 --Shade of Arugal slain (1)
-    .complete -12164,3 --Goremaw slain (1)
-    .complete -12164,2 --Selas slain (1)
+    .complete 12164,1 --Varlam slain (1)
     .mob Varlam
-    .mob Shade of Arugal
-    .mob Goremaw
-    .mob Selas
+    .isOnQuest 12164
 step
-    #completewith Along128
+    .goto 116,87.65,26.48
+    >>Kill |cRXP_ENEMY_Shade of Arugal|r
+    .complete 12164,4 --Shade of Arugal slain (1)
+    .mob Shade of Arugal
+    .isOnQuest 12164
+step
+    .goto 116,86.96,26.51
+    >>Kill |cRXP_ENEMY_Goremaw|r
+    .complete 12164,3 --Goremaw slain (1)
+    .mob Goremaw
+    .isOnQuest 12164
+step
+    .goto 116,85.94,27.90
+    >>Kill |cRXP_ENEMY_Selas|r
+    .complete 12164,2 --Selas slain (1)
+    .mob Selas
+    .isOnQuest 12164
+step
+    #completewith Along131
     >>As you go: Loot the |cRXP_PICK_School of Northern Salmons|r for |cRXP_LOOT_Northern Salmon|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12279,1 --Northern Salmon (6)
 step
-    #label Along128
+    #label Along131
     .goto 116,79.76,33.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gavrock|r
     .turnin 12093 >>Turn in Runes of Compulsion
     .accept 12094 >>Accept Latent Power
     .target Gavrock
 step
-    #completewith Along131
+    #completewith Along134
     >>As you go: Kill |cRXP_ENEMY_Longhoof Grazers|r. Loot them for |cRXP_LOOT_Shovelhorn Steak|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12113,2 --Shovelhorn Steak (10)
     .mob Longhoof Grazer
 step
-    #completewith Along129
+    #completewith Along132
     >>As you go: Kill |cRXP_ENEMY_Duskhowl Prowler|r and loot |cRXP_LOOT_Fibrous Worg Meat|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12113,1 --Fibrous Worg Meat (1)
     .mob Duskhowl Prowler
 step
-    #label Along129
+    #label Along132
     .goto 116,71.26,39.71
     >>Kill |cRXP_ENEMY_North Stone|r
     .complete 12094,1 --North Stone slain (1)
@@ -1057,17 +1064,17 @@ step
     .complete 12094,3 --South Stone slain (1)
     .mob South Stone
 step
-    #completewith Along132
+    #completewith Along135
     >>As you go: Loot the |cRXP_PICK_School of Northern Salmons|r for |cRXP_LOOT_Northern Salmon|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12279,1 --Northern Salmon (6)
 step
-    #label Along131
+    #label Along134
     .goto 116,78.88,39.96
     >>Kill |cRXP_ENEMY_East Stone|r
     .complete 12094,2 --East Stone slain (1)
     .mob East Stone
 step
-    #label Along132
+    #label Along135
     .goto 116,79.76,33.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gavrock|r
     .turnin 12094 >>Turn in Latent Power
@@ -1081,12 +1088,12 @@ step
     >>Loot the |cRXP_PICK_School of Northern Salmons|r for |cRXP_LOOT_Northern Salmon|r
     .complete 12279,1 --Northern Salmon (6)
 step
-    #completewith Along134
+    #completewith Along137
     >>As you go: Kill |cRXP_ENEMY_Longhoof Grazers|r. Loot them for |cRXP_LOOT_Shovelhorn Steak|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12113,2 --Shovelhorn Steak (10)
     .mob Longhoof Grazer
 step
-    #label Along134
+    #label Along137
     #loop
     .goto 116,75.61,39.12,0
     .goto 116,75.61,39.12,40,0
@@ -1096,14 +1103,14 @@ step
     .complete 12099,1 --Runed Giant (4)
     .target Runed Giant
 step
-    #completewith Along135
+    #completewith Along138
     >>As you go: Kill |cRXP_ENEMY_Drakkari Protectors|r. Kill |cRXP_ENEMY_Drakkari Oracles|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12114,1 --Drakkari Protector slain (10)
     .complete 12114,2 --Drakkari Oracle slain (10)
     .mob Drakkari Protector
     .mob Drakkari Oracle
 step
-    #label Along135
+    #label Along138
     #loop
     .goto 116,73.04,29.77,0
     .goto 116,73.04,29.77,40,0
@@ -1125,14 +1132,14 @@ step
     >>Pick up |cRXP_PICK_Drakkari Tablets|r from the ground
     .complete 12068,1 --Drakkari Tablets (1)
 step
-    #completewith Along138
+    #completewith Along141
     >>As you go: Kill |cRXP_ENEMY_Drakkari Protectors|r. Kill |cRXP_ENEMY_Drakkari Oracles|r. |cRXP_WARN_Anything left is finished later|r
     .complete 12114,1 --Drakkari Protector slain (10)
     .complete 12114,2 --Drakkari Oracle slain (10)
     .mob Drakkari Protector
     .mob Drakkari Oracle
 step
-    #label Along138
+    #label Along141
     .goto 116,73.51,24.02
     >>Harrison has escorted you to safety.
     .complete 12082,1 --Harrison has escorted you to safety.
@@ -1399,11 +1406,15 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 116,74.89,56.91
     >>Kill |cRXP_ENEMY_Rune-Smith Durar|r and loot |cRXP_LOOT_Durar's Power Cell|r
-    >>Kill |cRXP_ENEMY_Rune-Smith Kathorn|r and loot |cRXP_LOOT_Kathorn's Power Cell|r
-    .complete -12197,1 --Durar's Power Cell (1)
-    .complete -12197,2 --Kathorn's Power Cell (1)
+    .complete 12197,1 --Durar's Power Cell (1)
     .mob Rune-Smith Durar
+    .isOnQuest 12197
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 116,76.82,59.34
+    >>Kill |cRXP_ENEMY_Rune-Smith Kathorn|r and loot |cRXP_LOOT_Kathorn's Power Cell|r
+    .complete 12197,2 --Kathorn's Power Cell (1)
     .mob Rune-Smith Kathorn
+    .isOnQuest 12197
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 116,65.10,47.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prospector Rokar|r

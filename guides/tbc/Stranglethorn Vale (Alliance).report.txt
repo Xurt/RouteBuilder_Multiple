@@ -145,7 +145,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Stranglethorn Vale - Alliance - part 2 of 5, planned from level 34
-Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 47 steps, 45 stops
+Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 48 steps, 46 stops
 Written to guides/tbc/Stranglethorn Vale (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -240,7 +240,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Stranglethorn Vale - Alliance - part 3 of 5, planned from level 38
-Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 63 steps, 55 stops
+Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 65 steps, 58 stops
 Written to guides/tbc/Stranglethorn Vale (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -260,7 +260,7 @@ Step order kept from the last build (locks folder): 57 steps kept, 5 new ones sl
   everyone: 50 tasks, 16,668 yd on foot; ends at level 39.3; 2 hearths; at its hardest you are 2.0 levels below the mobs
   everyone (quests that depend on other zones): 14 more tasks; their whole route comes to 26,017 yd; ends at level 39.3; 2 hearths; at its hardest you are 2.0 levels below the mobs
 Hearthstone: set at Kelsey Yance (Kelsey Yance's inn); 3 hearth steps in the guide.
-3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (24)
 ------------------------
@@ -311,7 +311,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Stranglethorn Vale - Alliance - part 4 of 5, planned from level 42
-Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 49 steps, 45 stops
+Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 51 steps, 47 stops
 Written to guides/tbc/Stranglethorn Vale (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

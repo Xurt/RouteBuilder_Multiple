@@ -1108,18 +1108,22 @@ step << Mage
     .isQuestTurnedIn 1954 --any of: The Infernal Orb
     .xp <35,1
 step
-    #loop
-    .goto 1445/1,-3054.00,-4329.33,0
-    .goto 1445/1,-3054.00,-4329.33,40,0
-    .goto 1445/1,-2961.07,-4388.83,40,0
-    .goto 1445/1,-2907.00,-4448.33,40,0
+    .goto 1445/1,-2975.77,-4464.43
     >>Open the |cRXP_PICK_Stonemaul Clan Banner|r. Loot it for |cRXP_LOOT_Stonemaul Banner|r
+    .complete 11160,1 --Stonemaul Banner (1)
+    .isOnQuest 11160
+step
+    #loop
+    .goto 1445/1,-2907.00,-4448.33,0
+    .goto 1445/1,-2907.00,-4448.33,40,0
+    .goto 1445/1,-2961.07,-4388.83,40,0
+    .goto 1445/1,-3054.00,-4329.33,40,0
     >>Kill |cRXP_ENEMY_Firemane Scalebanes|r, |cRXP_ENEMY_Firemane Scouts|r and |cRXP_ENEMY_Firemane Ash Tails|r. Loot them for |cRXP_LOOT_Black Dragonkin Essence|r
-    .complete -11160,1 --Stonemaul Banner (1)
-    .complete -11161,1 --Black Dragonkin Essence (10)
+    .complete 11161,1 --Black Dragonkin Essence (10)
     .mob Firemane Scalebane
     .mob Firemane Scout
     .mob Firemane Ash Tail
+    .isOnQuest 11161
 step
     .goto 1445/1,-3172.65,-4622.28
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brogg|r

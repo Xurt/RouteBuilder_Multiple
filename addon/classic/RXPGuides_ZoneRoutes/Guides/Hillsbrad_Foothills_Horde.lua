@@ -179,17 +179,28 @@ step
     .target Krusk
     .isOnQuest 508
 step
+    #completewith Along15
+    >>As you go: Kill |cRXP_ENEMY_Syndicate Rogues|r. Kill |cRXP_ENEMY_Syndicate Watchmans|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 549,1 --Syndicate Rogue slain (10)
+    .complete 549,2 --Syndicate Watchman slain (8)
+    .mob Syndicate Rogue
+    .mob Syndicate Watchman
+step
+    #label Along15
+    .goto 1424/0,-1025.17,-638.51
+    >>Kill |cRXP_ENEMY_Syndicate Shadow Mage|r and loot |cRXP_LOOT_Vial of Innocent Blood|r
+    .complete 1066,1 --Vial of Innocent Blood (1)
+    .mob Syndicate Shadow Mage
+    .isOnQuest 1066
+step
     #loop
     .goto 1424/0,-1079.57,-617.60,0
     .goto 1424/0,-1079.57,-617.60,40,0
-    .goto 1424/0,-1083.73,-671.15,40,0
-    >>Kill |cRXP_ENEMY_Syndicate Shadow Mage|r and loot |cRXP_LOOT_Vial of Innocent Blood|r
+    .goto 1424/0,-1080.53,-686.08,40,0
     >>Kill |cRXP_ENEMY_Syndicate Rogues|r
     >>Kill |cRXP_ENEMY_Syndicate Watchmans|r
-    .complete -1066,1 --Vial of Innocent Blood (1)
     .complete 549,1 --Syndicate Rogue slain (10)
     .complete 549,2 --Syndicate Watchman slain (8)
-    .mob Syndicate Shadow Mage
     .mob Syndicate Rogue
     .mob Syndicate Watchman
 step
@@ -497,13 +508,20 @@ step
 step
     .goto 1424/0,42.35,-569.60
     >>Pick up |cRXP_PICK_Shipment of Iron|r from the ground
+    .complete 529,3 --Shipment of Iron (1)
+    .isOnQuest 529
+step
+    .goto 1424/0,39.15,-547.63
     >>Kill |cRXP_ENEMY_Blacksmith Verringtan|r
-    >>Kill |cRXP_ENEMY_Hillsbrad Apprentice Blacksmiths|r
-    .complete -529,3 --Shipment of Iron (1)
-    .complete -529,1 --Blacksmith Verringtan slain (1)
-    .complete -529,2 --Hillsbrad Apprentice Blacksmith slain (4)
+    .complete 529,1 --Blacksmith Verringtan slain (1)
     .mob Blacksmith Verringtan
+    .isOnQuest 529
+step
+    .goto 1424/0,43.95,-577.71
+    >>Kill |cRXP_ENEMY_Hillsbrad Apprentice Blacksmiths|r
+    .complete 529,2 --Hillsbrad Apprentice Blacksmith slain (4)
     .mob Hillsbrad Apprentice Blacksmith
+    .isOnQuest 529
 step
     .goto 1424/0,-927.89,-36.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Executor Darthalia|r
@@ -595,20 +613,38 @@ step
     .mob Cave Yeti
     .mob Ferocious Yeti
 step
-    .goto 1424/0,115.31,-490.67
-    >>Kill |cRXP_ENEMY_Magistrate Burnside|r
-    >>Kill |cRXP_ENEMY_Clerk Horrace Whitesteed|r
-    >>Pick up |cRXP_PICK_Hillsbrad Town Registry|r from the ground
-    >>Click the |cRXP_PICK_Hillsbrad Proclamation|r
-    >>Kill |cRXP_ENEMY_Hillsbrad Councilmans|r
-    .complete -532,1 --Magistrate Burnside slain (1)
+    #completewith Along8
+    >>As you go: Kill |cRXP_ENEMY_Clerk Horrace Whitesteed|r. |cRXP_WARN_Anything left is finished later|r
     .complete 567,1 --Clerk Horrace Whitesteed slain (1)
-    .complete -532,4 --Hillsbrad Town Registry (1)
-    .complete -532,3 --Hillsbrad Proclamation destroyed
-    .complete -532,2 --Hillsbrad Councilman slain (8)
-    .mob Magistrate Burnside
     .mob Clerk Horrace Whitesteed
+step
+    #label Along8
+    .goto 1424/0,117.23,-488.32
+    >>Kill |cRXP_ENEMY_Magistrate Burnside|r
+    .complete 532,1 --Magistrate Burnside slain (1)
+    .mob Magistrate Burnside
+    .isOnQuest 532
+step
+    .goto 1424/0,122.35,-504.75
+    >>Kill |cRXP_ENEMY_Clerk Horrace Whitesteed|r
+    .complete 567,1 --Clerk Horrace Whitesteed slain (1)
+    .mob Clerk Horrace Whitesteed
+step
+    .goto 1424/0,122.03,-485.97
+    >>Pick up |cRXP_PICK_Hillsbrad Town Registry|r from the ground
+    .complete 532,4 --Hillsbrad Town Registry (1)
+    .isOnQuest 532
+step
+    .goto 1424/0,115.31,-490.67
+    >>Click the |cRXP_PICK_Hillsbrad Proclamation|r
+    .complete 532,3 --Hillsbrad Proclamation destroyed
+    .isOnQuest 532
+step
+    .goto 1424/0,100.59,-499.41
+    >>Kill |cRXP_ENEMY_Hillsbrad Councilmans|r
+    .complete 532,2 --Hillsbrad Councilman slain (8)
     .mob Hillsbrad Councilman
+    .isOnQuest 532
 step
     .goto 1424/0,-927.89,-36.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Executor Darthalia|r
@@ -631,18 +667,24 @@ step << Mage
     .vendor >> Buy 3 Soothing Spices from Christoph on the first floor of the Inn
     .collect 3713,3
 step
-    #loop
-    .goto 1424/0,67.31,-732.80,0
-    .goto 1424/0,67.31,-732.80,40,0
-    .goto 1424/0,65.71,-834.13,40,0
+    .goto 1424/0,67.95,-794.88
     >>Kill |cRXP_ENEMY_Foreman Bonds|r
-    >>Kill |cRXP_ENEMY_Hillsbrad Miners|r
-    >>Kill |cRXP_ENEMY_Miner Hackett|r
-    .complete -539,1 --Foreman Bonds slain (1)
-    .complete -539,2 --Hillsbrad Miner slain (10)
-    .complete 567,3 --Miner Hackett slain (1)
+    .complete 539,1 --Foreman Bonds slain (1)
     .mob Foreman Bonds
+    .isOnQuest 539
+step
+    #loop
+    .goto 1424/0,65.71,-834.13,0
+    .goto 1424/0,65.71,-834.13,40,0
+    .goto 1424/0,67.31,-732.80,40,0
+    >>Kill |cRXP_ENEMY_Hillsbrad Miners|r
+    .complete 539,2 --Hillsbrad Miner slain (10)
     .mob Hillsbrad Miner
+    .isOnQuest 539
+step
+    .goto 1424/0,49.07,-724.27
+    >>Kill |cRXP_ENEMY_Miner Hackett|r
+    .complete 567,3 --Miner Hackett slain (1)
     .mob Miner Hackett
 step
     .goto 1424/0,-927.89,-36.27
@@ -666,13 +708,16 @@ step
     .goto 1424/0,-1180.37,-1261.65,40,0
     .goto 1424/0,-1230.29,-1316.27,40,0
     >>Kill |cRXP_ENEMY_Dun Garok Mountaineers|r, |cRXP_ENEMY_Dun Garok Riflemans|r, |cRXP_ENEMY_Dun Garok Priests|r and |cRXP_ENEMY_Tamra Stormpikes|r. Loot them for |cRXP_LOOT_Humbert's Sword|r
-    >>Pick up |cRXP_PICK_Keg of Shindigger Stout|r from the ground
     .complete 547,1 --Humbert's Sword (1)
-    .complete -517,1 --Keg of Shindigger Stout (1)
     .mob Dun Garok Mountaineer
     .mob Dun Garok Rifleman
     .mob Dun Garok Priest
     .mob Tamra Stormpike
+step
+    .goto 1424/0,-1225.17,-1309.87
+    >>Pick up |cRXP_PICK_Keg of Shindigger Stout|r from the ground
+    .complete 517,1 --Keg of Shindigger Stout (1)
+    .isOnQuest 517
 step
     .goto 1424/0,-941.65,-31.15
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Deathguard Humbert|r
@@ -778,23 +823,39 @@ step
     .accept 635 >>Accept Crystal in the Mountains
     .use 4614
 step
-    #label Drop635x1
     #loop
-    .goto 1424/0,-1180.37,-1261.65,0
-    .goto 1424/0,-1180.37,-1261.65,40,0
-    .goto 1424/0,-1230.29,-1316.27,40,0
+    .goto 1424/0,-1173.33,-1200.85,0
+    .goto 1424/0,-1173.33,-1200.85,40,0
+    .goto 1424/0,-1240.53,-1317.33,40,0
     >>Kill |cRXP_ENEMY_Dun Garok Mountaineers|r
-    >>Kill |cRXP_ENEMY_Dun Garok Riflemans|r
-    >>Kill |cRXP_ENEMY_Dun Garok Priests|r
-    >>Kill |cRXP_ENEMY_Captain Ironhills|r
-    .complete -541,1 --Dun Garok Mountaineer slain (8)
-    .complete -541,2 --Dun Garok Rifleman slain (8)
-    .complete -541,3 --Dun Garok Priest slain (2)
-    .complete -541,4 --Captain Ironhill slain (8)
+    .complete 541,1 --Dun Garok Mountaineer slain (8)
     .mob Dun Garok Mountaineer
+    .isOnQuest 541
+step
+    #loop
+    .goto 1424/0,-1220.69,-1310.72,0
+    .goto 1424/0,-1220.69,-1310.72,40,0
+    .goto 1424/0,-1222.61,-1201.71,40,0
+    >>Kill |cRXP_ENEMY_Dun Garok Riflemans|r
+    .complete 541,2 --Dun Garok Rifleman slain (8)
     .mob Dun Garok Rifleman
+    .isOnQuest 541
+step
+    #loop
+    .goto 1424/0,-1240.21,-1307.73,0
+    .goto 1424/0,-1240.21,-1307.73,40,0
+    .goto 1424/0,-1195.73,-1216.64,40,0
+    >>Kill |cRXP_ENEMY_Dun Garok Priests|r
+    .complete 541,3 --Dun Garok Priest slain (2)
     .mob Dun Garok Priest
+    .isOnQuest 541
+step
+    #label Drop635x1
+    .goto 1424/0,-1254.29,-1299.20
+    >>Kill |cRXP_ENEMY_Captain Ironhills|r
+    .complete 541,4 --Captain Ironhill slain (8)
     .mob Captain Ironhill
+    .isOnQuest 541
 step
     .goto 1424/0,-927.89,-36.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Executor Darthalia|r
@@ -848,9 +909,13 @@ step
 step
     .goto 1424/0,-342.93,-166.40
     >>Click the |cRXP_PICK_Flame of Veraz|r
+    .complete 553,2 --Flame of Veraz charged
+    .isOnQuest 553
+step
+    .goto 1424/0,-337.81,-198.61
     >>Click the |cRXP_PICK_Flame of Azel|r
-    .complete -553,2 --Flame of Veraz charged
-    .complete -553,1 --Flame of Azel charged
+    .complete 553,1 --Flame of Azel charged
+    .isOnQuest 553
 step
     .goto 1424/0,-621.33,-738.56
     >>Click the |cRXP_PICK_Helcular's Grave|r
@@ -940,9 +1005,13 @@ step
 step
     .goto 1424/0,-342.93,-166.40
     >>Click the |cRXP_PICK_Flame of Veraz|r
+    .complete 553,2 --Flame of Veraz charged
+    .isOnQuest 553
+step
+    .goto 1424/0,-337.81,-198.61
     >>Click the |cRXP_PICK_Flame of Azel|r
-    .complete -553,2 --Flame of Veraz charged
-    .complete -553,1 --Flame of Azel charged
+    .complete 553,1 --Flame of Azel charged
+    .isOnQuest 553
 step
     .goto 1424/0,-621.33,-738.56
     >>Click the |cRXP_PICK_Helcular's Grave|r
@@ -1003,9 +1072,13 @@ step
 step
     .goto 1424/0,-342.93,-166.40
     >>Click the |cRXP_PICK_Flame of Veraz|r
+    .complete 553,2 --Flame of Veraz charged
+    .isOnQuest 553
+step
+    .goto 1424/0,-337.81,-198.61
     >>Click the |cRXP_PICK_Flame of Azel|r
-    .complete -553,2 --Flame of Veraz charged
-    .complete -553,1 --Flame of Azel charged
+    .complete 553,1 --Flame of Azel charged
+    .isOnQuest 553
 step
     .goto 1424/0,-621.33,-738.56
     >>Click the |cRXP_PICK_Helcular's Grave|r

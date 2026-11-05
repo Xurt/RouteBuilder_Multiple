@@ -183,7 +183,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Felwood - Horde - part 3 of 3, planned from level 54
-Guide "48-56 Felwood" in group "Zone Routes (Horde)": this part has 33 steps, 30 stops
+Guide "48-56 Felwood" in group "Zone Routes (Horde)": this part has 35 steps, 34 stops
 Written to guides/classic/Felwood (Horde).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -205,7 +205,6 @@ Step order kept from the last build (locks folder): 26 steps kept, 7 new ones sl
   everyone (quests that depend on other zones): 18 more tasks; their whole route comes to 21,657 yd; ends at level 54.1; at its hardest you are 1.9 levels below the mobs
   Warlock (quests that depend on other zones): 5 more tasks; their whole route comes to 22,256 yd; ends at level 54.1; 1 ORDER PROBLEMS; at its hardest you are 1.9 levels below the mobs
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
-3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 
 Quests in the guide (15)
 ------------------------

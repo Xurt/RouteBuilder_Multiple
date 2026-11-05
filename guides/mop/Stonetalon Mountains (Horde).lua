@@ -160,17 +160,21 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Blastgineer Fuzzwhistle
     .isQuestTurnedIn 26001 --any of: The Missing Blastgineer
     .xp <24,1
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 65,75.36,57.97
+    >>Kill |cRXP_ENEMY_Huntress Davinia|r and loot |cRXP_LOOT_Alliance Attack Plans|r
+    .complete 26002,1 --Alliance Attack Plans (1)
+    .mob Huntress Davinia
+    .isOnQuest 26002
 step
     #loop
     .goto 65,72.68,53.91,0
     .goto 65,72.68,53.91,40,0
-    .goto 65,74.78,57.24,40,0
-    >>Kill |cRXP_ENEMY_Huntress Davinia|r and loot |cRXP_LOOT_Alliance Attack Plans|r << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .goto 65,75.58,55.27,40,0
     >>Kill |cRXP_ENEMY_Darnassian Scouts|r
-    .complete -26002,1 << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren --Alliance Attack Plans (1)
-    .complete -26003,1 --Darnassian Scout slain (12)
-    .mob Huntress Davinia << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .complete 26003,1 --Darnassian Scout slain (12)
     .mob Darnassian Scout
+    .isOnQuest 26003
 step
     .goto 65,74.43,47.67
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kilag Gorefang|r
@@ -364,15 +368,22 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .xp <24,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 65,67.13,73.14,0
-    .goto 65,67.13,73.14,40,0
-    .goto 65,68.18,75.48,40,0
-    .goto 65,70.03,77.56,40,0
+    .goto 65,66.90,69.85,0
+    .goto 65,66.90,69.85,40,0
+    .goto 65,67.69,74.59,40,0
+    .goto 65,69.38,77.36,40,0
     >>Pick up |cRXP_PICK_Spare Part|r from the ground
+    .complete 26045,1 --Spare Part (10)
+    .isOnQuest 26045
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 65,67.71,74.52,0
+    .goto 65,67.71,74.52,40,0
+    .goto 65,70.08,77.49,40,0
     >>Kill |cRXP_ENEMY_Raging Earth Elementals|r
-    .complete -26045,1 --Spare Part (10)
-    .complete -26046,1 --Raging Earth Elemental slain (12)
+    .complete 26046,1 --Raging Earth Elemental slain (12)
     .mob Raging Earth Elemental
+    .isOnQuest 26046
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 65,66.58,66.98,0
@@ -423,25 +434,23 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestTurnedIn 26048 --any of: Spare Parts Up In Here!
     .xp <24,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along60
-    >>As you go: Kill |cRXP_ENEMY_Gnome Wing Commanders|r. Kill |cRXP_ENEMY_Gnomish Bombers|r and |cRXP_ENEMY_Gnomish Flying Machines|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -26058,1 --Gnome Wing Commander slain (25)
-    .complete -26058,2 --Gnomish Bomber (8)
-    .mob Gnome Wing Commander
-    .mob Gnomish Bomber
-    .mob Gnomish Flying Machine
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along60
     #loop
     .goto 65,66.24,59.38,0
     .goto 65,66.24,59.38,40,0
     .goto 65,69.36,58.20,40,0
     >>Kill |cRXP_ENEMY_Gnomebot Pounders|r
-    >>Kill |cRXP_ENEMY_Gnome Engineers|r
-    .complete -26028,1 --Gnomebot Pounder slain (5)
-    .complete -26028,2 --Gnome Engineer slain (20)
+    .complete 26028,1 --Gnomebot Pounder slain (5)
     .mob Gnomebot Pounder
+    .isOnQuest 26028
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 65,67.61,57.53,0
+    .goto 65,67.61,57.53,40,0
+    .goto 65,69.75,59.80,40,0
+    >>Kill |cRXP_ENEMY_Gnome Engineers|r
+    .complete 26028,2 --Gnome Engineer slain (20)
     .mob Gnome Engineer
+    .isOnQuest 26028
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 65,64.99,46.96
     >>Kill |cRXP_ENEMY_Cragjaw|r and loot |cRXP_LOOT_Cragjaw's Huge Tooth|r
@@ -456,17 +465,24 @@ step
     .isOnQuest 25741
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 65,63.63,59.75,0
-    .goto 65,63.63,59.75,40,0
-    .goto 65,63.90,63.36,40,0
-    .goto 65,66.24,59.63,40,0
+    .goto 65,63.67,59.82,0
+    .goto 65,63.67,59.82,40,0
+    .goto 65,65.65,59.82,40,0
     >>Kill |cRXP_ENEMY_Gnome Wing Commanders|r
-    >>Kill |cRXP_ENEMY_Gnomish Bombers|r and |cRXP_ENEMY_Gnomish Flying Machines|r
-    .complete -26058,1 --Gnome Wing Commander slain (25)
-    .complete -26058,2 --Gnomish Bomber (8)
+    .complete 26058,1 --Gnome Wing Commander slain (25)
     .mob Gnome Wing Commander
+    .isOnQuest 26058
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 65,66.24,59.63,0
+    .goto 65,66.24,59.63,40,0
+    .goto 65,63.79,59.81,40,0
+    .goto 65,63.90,63.36,40,0
+    >>Kill |cRXP_ENEMY_Gnomish Bombers|r and |cRXP_ENEMY_Gnomish Flying Machines|r
+    .complete 26058,2 --Gnomish Bomber (8)
     .mob Gnomish Bomber
     .mob Gnomish Flying Machine
+    .isOnQuest 26058
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 65,65.76,63.31
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spy-Mistress Anara|r
@@ -593,12 +609,6 @@ step
     .isQuestTurnedIn 25768 --any of: Bombs Away: Mirkfallon Post!
     .xp <26,1
 step
-    #completewith Along2
-    >>As you go: Kill |cRXP_ENEMY_Lumbering Oafs|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -25879,1 --Lumbering Oaf slain (10)
-    .mob Lumbering Oaf
-step
-    #label Along2
     #loop
     .goto 65,50.93,44.14,0
     .goto 65,50.93,44.14,40,0
@@ -678,17 +688,21 @@ step
     .isQuestTurnedIn 26059 --any of: Eyes and Ears: Malaka'jin
     .xp <26,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 65,68.12,87.05,0
-    .goto 65,68.12,87.05,40,0
-    .goto 65,66.62,84.04,40,0
-    .goto 65,64.21,81.42,40,0
+    .goto 65,67.30,82.37
     >>Kill |cRXP_ENEMY_Cliff Stormer|r and loot |cRXP_LOOT_Stormer Heart|r
-    >>Kill |cRXP_ENEMY_Stonetalon Rams|r. Loot them for |cRXP_LOOT_Stonetalon Ram Horns|r
-    .complete -26060,1 --Stormer Heart (1)
-    .complete -26061,1 --Stonetalon Ram Horns (6)
+    .complete 26060,1 --Stormer Heart (1)
     .mob Cliff Stormer
+    .isOnQuest 26060
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 65,66.62,84.04,0
+    .goto 65,66.62,84.04,40,0
+    .goto 65,68.12,87.05,40,0
+    .goto 65,64.21,81.42,40,0
+    >>Kill |cRXP_ENEMY_Stonetalon Rams|r. Loot them for |cRXP_LOOT_Stonetalon Ram Horns|r
+    .complete 26061,1 --Stonetalon Ram Horns (6)
     .mob Stonetalon Ram
+    .isOnQuest 26061
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 65,74.54,97.83
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Jin'Zil|r. |cRXP_WARN_This NPC walks a patrol route|r
@@ -728,16 +742,23 @@ step
     .isOnQuest 26064
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 65,61.33,88.49,0
-    .goto 65,61.33,88.49,40,0
-    .goto 65,59.78,87.52,40,0
+    .goto 65,60.83,88.26,0
+    .goto 65,60.83,88.26,40,0
+    .goto 65,59.31,86.75,40,0
     >>Pick up |cRXP_PICK_Resonite Crystal|r from the ground
+    .complete 26062,1 --Resonite Crystal (8)
+    .isOnQuest 26062
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 65,60.19,88.00,0
+    .goto 65,60.19,88.00,40,0
+    .goto 65,61.99,89.41,40,0
     >>Kill |cRXP_ENEMY_Boulderslide Rock Keepers|r, |cRXP_ENEMY_Boulderslide Geomancers|r and |cRXP_ENEMY_Boulderslide Stonepounders|r
-    .complete -26062,1 --Resonite Crystal (8)
-    .complete -26066,1 --Boulderslide Rock Keeper (8)
+    .complete 26066,1 --Boulderslide Rock Keeper (8)
     .mob Boulderslide Rock Keeper
     .mob Boulderslide Geomancer
     .mob Boulderslide Stonepounder
+    .isOnQuest 26066
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 65,74.54,97.83
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Jin'Zil|r. |cRXP_WARN_This NPC walks a patrol route|r
@@ -906,13 +927,21 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 65,40.22,37.63,40,0
     .goto 65,41.26,40.67,40,0
     >>Kill |cRXP_ENEMY_Darnassian Glaive Throwers|r, |cRXP_ENEMY_Stonetalon Warders|r, |cRXP_ENEMY_Battlescar Ancients|r and |cRXP_ENEMY_Draenei Paladins|r
-    >>Kill |cRXP_ENEMY_Darnassian Glaive Throwers|r
-    .complete -26082,2 --Darnassian Glaive Thrower (5)
-    .complete -26082,1 --Darnassian Glaive Thrower slain (5)
+    .complete 26082,2 --Darnassian Glaive Thrower (5)
     .mob Darnassian Glaive Thrower
     .mob Stonetalon Warder
     .mob Battlescar Ancient
     .mob Draenei Paladin
+    .isOnQuest 26082
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 65,40.71,36.86,0
+    .goto 65,40.71,36.86,40,0
+    .goto 65,38.97,38.46,40,0
+    >>Kill |cRXP_ENEMY_Darnassian Glaive Throwers|r
+    .complete 26082,1 --Darnassian Glaive Thrower slain (5)
+    .mob Darnassian Glaive Thrower
+    .isOnQuest 26082
 step
     .goto 65,39.58,30.70
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elder Sareth'na|r
@@ -933,10 +962,14 @@ step
     .goto 65,40.77,18.16,40,0
     .goto 65,43.28,17.33,40,0
     >>Kill |cRXP_ENEMY_Corrupted Sentinels|r. Loot them for |cRXP_LOOT_Sentinel's Glaive|r
-    >>Pick up |cRXP_PICK_Elder Sareth'na's Sketch Book|r from the ground
-    .complete -25913,1 --Sentinel's Glaive (8)
-    .complete -25912,1 --Elder Sareth'na's Sketch Book (1)
+    .complete 25913,1 --Sentinel's Glaive (8)
     .mob Corrupted Sentinel
+    .isOnQuest 25913
+step
+    .goto 65,40.74,17.25
+    >>Pick up |cRXP_PICK_Elder Sareth'na's Sketch Book|r from the ground
+    .complete 25912,1 --Elder Sareth'na's Sketch Book (1)
+    .isOnQuest 25912
 step
     .goto 65,39.58,30.70
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elder Sareth'na|r

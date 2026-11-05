@@ -1,5 +1,5 @@
 Desolace - Alliance
-Guide "30-35 Desolace" in group "Zone Routes (Alliance)": 184 steps, 161 stops
+Guide "30-35 Desolace" in group "Zone Routes (Alliance)": 188 steps, 165 stops
 Written to guides/mop/Desolace (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)

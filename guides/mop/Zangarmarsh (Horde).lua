@@ -270,11 +270,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .turnin 9773 >>Turn in No More Mushrooms!
     .accept 9899 >>Accept A Job Undone
     .target Magasha
-step
-    #completewith Along34
-    >>As you go: Kill |cRXP_ENEMY_Withered Bog Lords|r. Loot them for |cRXP_LOOT_Withered Bog Lord Sample|r. |cRXP_WARN_Anything left is finished later|r
-    .complete -10355,2 --Withered Bog Lord Sample (5)
-    .mob Withered Bog Lord
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #completewith Along32
     >>As you go: Kill |cRXP_ENEMY_Marshfang Rippers|r. |cRXP_WARN_Anything left is finished later|r
@@ -295,7 +290,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .complete 9770,1 --Marshfang Ripper slain (10)
     .mob Marshfang Ripper
 step
-    #label Along34
     #loop
     .goto 102,82.66,43.27,0
     .goto 102,82.66,43.27,40,0

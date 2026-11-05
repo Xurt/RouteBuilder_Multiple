@@ -1,5 +1,5 @@
 Nagrand - Alliance - part 1 of 2, planned from level 65
-Guide "65-68 Nagrand" in group "Zone Routes (Alliance)": this part has 147 steps, 128 stops
+Guide "65-68 Nagrand" in group "Zone Routes (Alliance)": this part has 147 steps, 130 stops
 Written to guides/tbc/Nagrand (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -47,7 +47,7 @@ Step order kept from the last build (locks folder): 158 steps kept, 9 new ones s
   everyone (quests that depend on other zones): 21 more tasks; their whole route comes to 40,211 yd; ends at level 66.0; 1 hearth; 1 ORDER PROBLEMS; at its hardest you are 2.1 levels below the mobs
 Hearthstone: set at Mathar G'ochar (Mathar G'ochar's inn); 1 hearth step in the guide.
 2 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-11 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+9 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 3 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (58)
@@ -108,7 +108,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 ====================================================================================================
 
 Nagrand - Alliance - part 2 of 2, planned from level 69
-Guide "65-68 Nagrand" in group "Zone Routes (Alliance)": this part has 32 steps, 28 stops
+Guide "65-68 Nagrand" in group "Zone Routes (Alliance)": this part has 31 steps, 28 stops
 Written to guides/tbc/Nagrand (Alliance).lua
 Data: QuestieDB local copy, 2026-10-23
 Zone file: none (everything below comes straight from the database)
@@ -129,7 +129,7 @@ Step order kept from the last build (locks folder): 15 steps kept, 15 new ones s
   everyone: 12 tasks, 1,078 yd on foot; ends at level 69.0
   everyone (quests that depend on other zones): 18 more tasks; their whole route comes to 7,903 yd; ends at level 69.0
 Hearthstone: not used (no inn found in this zone, or --no-hearth).
-2 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+1 objective is also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 1 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (12)
