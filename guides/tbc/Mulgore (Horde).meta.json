@@ -13,21 +13,14 @@
       "start": 1,
       "end": 9.14,
       "next": 12,
-      "guide": "4-10 Mulgore: around Mull Thunderhorn",
+      "guide": "1-14 Mulgore",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Grull Hawkwind",
-          "guide": "1-4 Mulgore: around Grull Hawkwind",
+          "label": "",
+          "name": "start",
+          "guide": "1-14 Mulgore",
           "level": 1,
           "index": 0
-        },
-        {
-          "label": "RBSection1_2",
-          "name": "around Mull Thunderhorn",
-          "guide": "4-10 Mulgore: around Mull Thunderhorn",
-          "level": 4,
-          "index": 1
         }
       ]
     },
@@ -36,12 +29,12 @@
       "start": 12,
       "end": 12.24,
       "next": 15,
-      "guide": "12-13 Mulgore: around Kary Thunderhorn",
+      "guide": "1-14 Mulgore",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Kary Thunderhorn",
-          "guide": "12-13 Mulgore: around Kary Thunderhorn",
+          "label": "",
+          "name": "part 2",
+          "guide": "1-14 Mulgore",
           "level": 12,
           "index": 0
         }
@@ -51,12 +44,12 @@
       "part": 3,
       "start": 15,
       "end": 15,
-      "guide": "15-16 Mulgore",
+      "guide": "1-14 Mulgore",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "15-16 Mulgore",
+          "guide": "1-14 Mulgore",
           "level": 15,
           "index": 0
         }
@@ -70,7 +63,7 @@
       "req": 5,
       "xp": 700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -79,7 +72,7 @@
       "req": 7,
       "xp": 880,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -88,7 +81,7 @@
       "req": 1,
       "xp": 540,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -97,7 +90,7 @@
       "req": 6,
       "xp": 700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -115,7 +108,7 @@
       "req": 4,
       "xp": 450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren"
     },
     {
@@ -124,7 +117,7 @@
       "req": 5,
       "xp": 530,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -142,7 +135,7 @@
       "req": 5,
       "xp": 530,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -169,7 +162,7 @@
       "req": 4,
       "xp": 540,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren"
     },
     {
@@ -187,7 +180,7 @@
       "req": 5,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren"
     },
     {
@@ -205,7 +198,7 @@
       "req": 5,
       "xp": 700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren"
     },
     {
@@ -214,7 +207,7 @@
       "req": 7,
       "xp": 840,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren"
     },
     {
@@ -223,7 +216,7 @@
       "req": 7,
       "xp": 1050,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren"
     },
     {
@@ -232,7 +225,7 @@
       "req": 4,
       "xp": 680,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -241,7 +234,7 @@
       "req": 1,
       "xp": 335,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -250,7 +243,7 @@
       "req": 6,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -259,7 +252,7 @@
       "req": 5,
       "xp": 700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -268,7 +261,7 @@
       "req": 3,
       "xp": 55,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -277,7 +270,7 @@
       "req": 6,
       "xp": 910,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -286,7 +279,7 @@
       "req": 3,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -295,7 +288,7 @@
       "req": 3,
       "xp": 475,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -304,7 +297,7 @@
       "req": 4,
       "xp": 840,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -313,7 +306,7 @@
       "req": 4,
       "xp": 420,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -322,7 +315,7 @@
       "req": 7,
       "xp": 1250,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -340,7 +333,7 @@
       "req": 7,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -386,7 +379,7 @@
       "req": 1,
       "xp": 110,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -440,7 +433,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren Druid"
     },
     {
@@ -449,7 +442,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren Druid",
       "from": "Durotar"
     },
@@ -459,7 +452,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren Druid",
       "from": "Moonglade"
     },
@@ -469,7 +462,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren Hunter"
     },
     {
@@ -478,7 +471,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren Hunter"
     },
     {
@@ -487,7 +480,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren Hunter",
       "from": "Durotar"
     },
@@ -497,7 +490,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren Hunter",
       "from": "Durotar"
     },
@@ -507,7 +500,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren Hunter"
     },
     {
@@ -516,7 +509,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren Hunter"
     },
     {
@@ -525,7 +518,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren Hunter"
     },
     {
@@ -534,7 +527,7 @@
       "req": 14,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Druid",
       "from": "Moonglade"
     },
@@ -544,7 +537,7 @@
       "req": 10,
       "xp": 420,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren",
       "from": "The Barrens"
     },
@@ -554,7 +547,7 @@
       "req": 5,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {

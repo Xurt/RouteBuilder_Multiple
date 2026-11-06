@@ -1,7 +1,7 @@
 Tanaris - Alliance - part 1 of 5, planned from level 45
 Guide "45-60 Tanaris" in group "Zone Routes (Alliance)": this part has 152 steps, 118 stops
 Written to guides/mop/Tanaris (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -151,7 +151,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Tanaris - Alliance - part 2 of 5, planned from level 50
 Guide "45-60 Tanaris" in group "Zone Routes (Alliance)": this part has 8 steps, 5 stops
 Written to guides/mop/Tanaris (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -207,7 +207,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Tanaris - Alliance - part 3 of 5, planned from level 53
 Guide "45-60 Tanaris" in group "Zone Routes (Alliance)": this part has 14 steps, 8 stops
 Written to guides/mop/Tanaris (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -267,7 +267,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Tanaris - Alliance - part 4 of 5, planned from level 56
 Guide "45-60 Tanaris" in group "Zone Routes (Alliance)": this part has 3 steps, 1 stops
 Written to guides/mop/Tanaris (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -312,7 +312,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Tanaris - Alliance - part 5 of 5, planned from level 59
 Guide "45-60 Tanaris" in group "Zone Routes (Alliance)": this part has 2 steps, 1 stops
 Written to guides/mop/Tanaris (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files

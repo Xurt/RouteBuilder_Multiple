@@ -1,7 +1,7 @@
 Terokkar Forest - Alliance - part 1 of 3, planned from level 62
 Guide "62-70 Terokkar Forest" in group "Zone Routes (Alliance)": this part has 236 steps, 186 stops
 Written to guides/mop/Terokkar Forest (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -118,7 +118,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Terokkar Forest - Alliance - part 2 of 3, planned from level 68
 Guide "62-70 Terokkar Forest" in group "Zone Routes (Alliance)": this part has 25 steps, 20 stops
 Written to guides/mop/Terokkar Forest (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -187,7 +187,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Terokkar Forest - Alliance - part 3 of 3, planned from level 71
 Guide "62-70 Terokkar Forest" in group "Zone Routes (Alliance)": this part has 24 steps, 22 stops
 Written to guides/mop/Terokkar Forest (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files

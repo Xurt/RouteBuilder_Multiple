@@ -1,9 +1,9 @@
 -- 11-18 Darkshore: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 11, 14, 17).
--- Split into 3 guides, listed under "11 - 18 Darkshore" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 11; part 2 from 14; part 3 from 17.
 -- Edit zones/mop/Darkshore.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 11 - 18 Darkshore
-#subweight -11
-#name 11-12 Darkshore
+#name 11-18 Darkshore
 --RouteBuilder:next
-#next Zone Routes (Horde)\10-14 Azshara: around Labor Captain Grabbit
+#next Zone Routes (Horde)\10-20 Azshara
 
 step
     .goto 62,46.81,33.29
@@ -171,22 +169,9 @@ step
     .target Cerellean Whiteclaw
     .isOnQuest 13563
 step
-    +|cRXP_WARN_Suggested next zones at level 11|r: |cRXP_FRIENDLY_Azshara|r (about 0.6 levels of quests, starting around Labor Captain Grabbit). Completing this step loads the guide for Azshara --RouteBuilder:next
+    +|cRXP_WARN_Until level 14, suggested zones|r: |cRXP_FRIENDLY_Azshara|r (about 0.6 levels of quests). Then come back to this Darkshore guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Darkshore is planned from level 14.|r Load its guide for level 14 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 11 - 18 Darkshore
-#subweight -11
-#name 14-15 Darkshore
---RouteBuilder:next
-#next Zone Routes (Horde)\14-16 Azshara: around Assistant Greely;Zone Routes (Horde)\10-15 The Barrens: around Togrik
-
+    .xp 14 >>|cRXP_WARN_The rest of Darkshore is planned from level 14.|r Come back to this guide then
 step
     .goto 62,47.71,88.91
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Aynasha|r
@@ -386,20 +371,9 @@ step
     +|cRXP_WARN_That is all of Darkshore for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Ashenvale|r: One Shot.  One Kill.
 step
-    +|cRXP_WARN_Suggested next zones at level 14|r: |cRXP_FRIENDLY_Azshara|r (about 0.7 levels of quests, starting around Assistant Greely), |cRXP_FRIENDLY_The Barrens|r (about 0.6 levels of quests, starting around Togrik). Completing this step loads the guide for Azshara --RouteBuilder:next
+    +|cRXP_WARN_Until level 17, suggested zones|r: |cRXP_FRIENDLY_Azshara|r (about 0.9 levels of quests), |cRXP_FRIENDLY_The Barrens|r (about 0.6 levels of quests). Then come back to this Darkshore guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Darkshore is planned from level 17.|r Load its guide for level 17 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 11 - 18 Darkshore
-#subweight -11
-#name 17-18 Darkshore
-
+    .xp 17 >>|cRXP_WARN_The rest of Darkshore is planned from level 17.|r Come back to this guide then
 step
     .goto 62,37.69,82.93
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prospector Remtravel|r
@@ -471,4 +445,6 @@ step
 step
     +|cRXP_WARN_End of the Darkshore route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Ashenvale|r: Ashes in Ashenvale
+step
+    +|cRXP_WARN_Suggested next zones at level 17|r: |cRXP_FRIENDLY_Azshara|r (about 0.6 levels of quests). Completing this step loads the guide for Azshara --RouteBuilder:next
 ]])

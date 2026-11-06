@@ -13,12 +13,12 @@
       "start": 20,
       "end": 21.07,
       "next": 24,
-      "guide": "20-22 Duskwood: around Elaine Carevin",
+      "guide": "20-31 Duskwood",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Elaine Carevin",
-          "guide": "20-22 Duskwood: around Elaine Carevin",
+          "label": "",
+          "name": "start",
+          "guide": "20-31 Duskwood",
           "level": 20,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 24,
       "end": 24.55,
       "next": 27,
-      "guide": "24-25 Duskwood: around Clerk Daltry",
+      "guide": "20-31 Duskwood",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Clerk Daltry",
-          "guide": "24-25 Duskwood: around Clerk Daltry",
+          "label": "",
+          "name": "part 2",
+          "guide": "20-31 Duskwood",
           "level": 24,
           "index": 0
         }
@@ -45,12 +45,12 @@
       "start": 27,
       "end": 27.48,
       "next": 30,
-      "guide": "27-28 Duskwood: around Calor",
+      "guide": "20-31 Duskwood",
       "sections": [
         {
-          "label": "RBSection3_1",
-          "name": "around Calor",
-          "guide": "27-28 Duskwood: around Calor",
+          "label": "",
+          "name": "part 3",
+          "guide": "20-31 Duskwood",
           "level": 27,
           "index": 0
         }
@@ -60,12 +60,12 @@
       "part": 4,
       "start": 30,
       "end": 30.28,
-      "guide": "30-31 Duskwood",
+      "guide": "20-31 Duskwood",
       "sections": [
         {
-          "label": "RBSection4_1",
+          "label": "",
           "name": "part 4",
-          "guide": "30-31 Duskwood",
+          "guide": "20-31 Duskwood",
           "level": 30,
           "index": 0
         }

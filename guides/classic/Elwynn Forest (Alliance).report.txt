@@ -1,7 +1,7 @@
 Elwynn Forest - Alliance - part 1 of 3, planned from level 1
-Guide "1-12 Elwynn Forest" in group "Zone Routes (Alliance)": this part has 224 steps, 101 stops
+Guide "1-12 Elwynn Forest" in group "Zone Routes (Alliance)": this part has 221 steps, 98 stops
 Written to guides/classic/Elwynn Forest (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: zones/classic/Elwynn Forest.json
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -118,7 +118,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Elwynn Forest - Alliance - part 2 of 3, planned from level 12
 Guide "1-12 Elwynn Forest" in group "Zone Routes (Alliance)": this part has 55 steps, 36 stops
 Written to guides/classic/Elwynn Forest (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: zones/classic/Elwynn Forest.json
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -193,7 +193,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Elwynn Forest - Alliance - part 3 of 3, planned from level 15
 Guide "1-12 Elwynn Forest" in group "Zone Routes (Alliance)": this part has 8 steps, 6 stops
 Written to guides/classic/Elwynn Forest (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: zones/classic/Elwynn Forest.json
 RestedXP cross-check: 720 objective notes read from 50 guide files
 

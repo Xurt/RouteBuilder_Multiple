@@ -1,7 +1,7 @@
 Teldrassil - Alliance - part 1 of 8, planned from level 1
-Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 264 steps, 180 stops
+Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 256 steps, 168 stops
 Written to guides/tbc/Teldrassil (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -42,7 +42,7 @@ The check passes at once if you are there; if you are a little behind the predic
   level 10 for The Shade of Elura (Warrior)
   level 10 for Desperate Prayer (Human Priest/Dwarf Priest)
 45 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
-3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+7 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 10 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 4 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 
@@ -170,7 +170,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Teldrassil - Alliance - part 2 of 8, planned from level 13
 Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 11 steps, 7 stops
 Written to guides/tbc/Teldrassil (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -244,7 +244,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Teldrassil - Alliance - part 3 of 8, planned from level 16
 Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 15 steps, 9 stops
 Written to guides/tbc/Teldrassil (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -321,7 +321,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Teldrassil - Alliance - part 4 of 8, planned from level 19
 Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 18 steps, 10 stops
 Written to guides/tbc/Teldrassil (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -394,7 +394,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Teldrassil - Alliance - part 5 of 8, planned from level 22
 Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 18 steps, 13 stops
 Written to guides/tbc/Teldrassil (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -470,7 +470,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Teldrassil - Alliance - part 6 of 8, planned from level 25
 Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 13 steps, 9 stops
 Written to guides/tbc/Teldrassil (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -533,7 +533,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Teldrassil - Alliance - part 7 of 8, planned from level 28
 Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 17 steps, 13 stops
 Written to guides/tbc/Teldrassil (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -595,7 +595,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Teldrassil - Alliance - part 8 of 8, planned from level 41
 Guide "1-40 Teldrassil" in group "Zone Routes (Alliance)": this part has 13 steps, 10 stops
 Written to guides/tbc/Teldrassil (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

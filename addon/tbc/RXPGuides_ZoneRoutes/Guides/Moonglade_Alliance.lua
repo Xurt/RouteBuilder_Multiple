@@ -1,5 +1,5 @@
 -- 57-60 Moonglade: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- Edit zones/tbc/Moonglade.json and re-run rather than editing this file, or your changes are lost on the next build.
@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
 #group Zone Routes (Alliance)
 #name 57-60 Moonglade
 --RouteBuilder:next
-#next Zone Routes (Alliance)\58-61 Hellfire Peninsula: around Assistant Klatu;Zone Routes (Alliance)\55-57 Western Plaguelands: around Commander Ashlam Valorfist
+#next Zone Routes (Alliance)\58-63 Hellfire Peninsula;Zone Routes (Alliance)\52-60 Western Plaguelands
 
 step << Druid
     .goto 1450/1,-2593.82,7867.06
@@ -213,5 +213,5 @@ step
     >>|cRXP_FRIENDLY_Un'Goro Crater|r: Torwa Pathfinder << Druid
     >>|cRXP_FRIENDLY_Silithus and back here|r: A Reliquary of Purity
 step
-    +|cRXP_WARN_Suggested next zones at level 57|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 1.6 levels of quests, starting around Assistant Klatu), |cRXP_FRIENDLY_Western Plaguelands|r (about 0.7 levels of quests, starting around Commander Ashlam Valorfist). Completing this step loads the guide for Hellfire Peninsula --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 57|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Western Plaguelands|r (about 0.7 levels of quests). Completing this step loads the guide for Hellfire Peninsula --RouteBuilder:next
 ]])

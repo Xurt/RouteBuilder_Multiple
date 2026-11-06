@@ -1,9 +1,9 @@
 -- 72-75 Dragonblight: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 72, 76).
--- Split into 2 guides, listed under "72 - 77 Dragonblight" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 72; part 2 from 76.
 -- Edit zones/mop/Dragonblight.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 72 - 77 Dragonblight
-#subweight -72
-#name 72-74 Dragonblight: around Aurastrasza
+#name 72-75 Dragonblight
 --RouteBuilder:next
-#next Zone Routes (Alliance)\71-74 Borean Tundra: around Elder Atkanok;Zone Routes (Alliance)\70-73 Howling Fjord: around Lurielle;Zone Routes (Alliance)\73-75 Grizzly Hills: around Drakuru
+#next Zone Routes (Alliance)\76-78 Sholazar Basin;Zone Routes (Alliance)\70-72 Howling Fjord;Zone Routes (Alliance)\73-75 Grizzly Hills
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 115,77.06,49.81
@@ -2432,22 +2430,9 @@ step
     .turnin 12459 >>Turn in That Which Creates Can Also Destroy
     .target Lord Itharius
 step
-    +|cRXP_WARN_Suggested next zones at level 73|r: |cRXP_FRIENDLY_Borean Tundra|r (about 0.8 levels of quests, starting around Elder Atkanok), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests, starting around Lurielle), |cRXP_FRIENDLY_Grizzly Hills|r (about 0.5 levels of quests, starting around Drakuru). Completing this step loads the guide for Borean Tundra --RouteBuilder:next
+    +|cRXP_WARN_Until level 76, suggested zones|r: |cRXP_FRIENDLY_Borean Tundra|r (about 0.8 levels of quests), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests), |cRXP_FRIENDLY_Grizzly Hills|r (about 0.5 levels of quests). Then come back to this Dragonblight guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Dragonblight is planned from level 76.|r Load its guide for level 76 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 72 - 77 Dragonblight
-#subweight -72
-#name 76-77 Dragonblight
---RouteBuilder:next
-#next Zone Routes (Alliance)\76-78 Sholazar Basin;Zone Routes (Alliance)\70-73 Howling Fjord: around Lurielle;Zone Routes (Alliance)\73-75 Grizzly Hills: around Drakuru
-
+    .xp 76 >>|cRXP_WARN_The rest of Dragonblight is planned from level 76.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 115,29.00,55.46
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Image of Archmage Modera|r
@@ -2492,5 +2477,5 @@ step
     >>|cRXP_FRIENDLY_Grizzly Hills|r: The Hills Have Us << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Zul'Drak|r: Into the Breach!
 step
-    +|cRXP_WARN_Suggested next zones at level 76|r: |cRXP_FRIENDLY_Sholazar Basin|r (about 1.1 levels of quests, starting around Debaar), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests, starting around Lurielle), |cRXP_FRIENDLY_Grizzly Hills|r (about 0.5 levels of quests, starting around Drakuru). Completing this step loads the guide for Sholazar Basin --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 76|r: |cRXP_FRIENDLY_Sholazar Basin|r (about 1.1 levels of quests), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests), |cRXP_FRIENDLY_Grizzly Hills|r (about 0.5 levels of quests). Completing this step loads the guide for Sholazar Basin --RouteBuilder:next
 ]])

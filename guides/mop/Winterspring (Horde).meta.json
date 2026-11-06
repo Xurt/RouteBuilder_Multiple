@@ -13,21 +13,14 @@
       "start": 50,
       "end": 54.03,
       "next": 57,
-      "guide": "52-54 Winterspring: around Rinno Curtainfire",
+      "guide": "50-55 Winterspring",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Donova Snowden",
-          "guide": "50-52 Winterspring: around Donova Snowden",
+          "label": "",
+          "name": "start",
+          "guide": "50-55 Winterspring",
           "level": 50,
           "index": 0
-        },
-        {
-          "label": "RBSection1_2",
-          "name": "around Rinno Curtainfire",
-          "guide": "52-54 Winterspring: around Rinno Curtainfire",
-          "level": 52,
-          "index": 1
         }
       ]
     },
@@ -35,12 +28,12 @@
       "part": 2,
       "start": 57,
       "end": 57,
-      "guide": "57-58 Winterspring",
+      "guide": "50-55 Winterspring",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "57-58 Winterspring",
+          "guide": "50-55 Winterspring",
           "level": 57,
           "index": 0
         }
@@ -54,7 +47,7 @@
       "req": 45,
       "xp": 680,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -63,7 +56,7 @@
       "req": 5,
       "xp": 315,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren",
       "from": "Mulgore"
     },
@@ -73,7 +66,7 @@
       "req": 3,
       "xp": 420,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren",
       "from": "Mulgore"
     },
@@ -409,7 +402,7 @@
       "req": 51,
       "xp": 11400,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -418,7 +411,7 @@
       "req": 50,
       "xp": 11400,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -427,7 +420,7 @@
       "req": 51,
       "xp": 9500,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -436,7 +429,7 @@
       "req": 51,
       "xp": 9500,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -454,7 +447,7 @@
       "req": 51,
       "xp": 3800,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -463,7 +456,7 @@
       "req": 51,
       "xp": 3800,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -472,7 +465,7 @@
       "req": 51,
       "xp": 9500,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -481,7 +474,7 @@
       "req": 51,
       "xp": 9500,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -499,7 +492,7 @@
       "req": 51,
       "xp": 3800,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -508,7 +501,7 @@
       "req": 51,
       "xp": 3800,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -517,7 +510,7 @@
       "req": 51,
       "xp": 3800,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -526,7 +519,7 @@
       "req": 51,
       "xp": 9500,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -544,7 +537,7 @@
       "req": 51,
       "xp": 11400,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -553,7 +546,7 @@
       "req": 51,
       "xp": 11400,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -572,7 +565,7 @@
       "req": 51,
       "xp": 11400,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -581,7 +574,7 @@
       "req": 51,
       "xp": 9500,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -590,7 +583,7 @@
       "req": 53,
       "xp": 9850,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -599,7 +592,7 @@
       "req": 53,
       "xp": 9850,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -608,7 +601,7 @@
       "req": 53,
       "xp": 9850,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -617,7 +610,7 @@
       "req": 49,
       "xp": 7890,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -626,7 +619,7 @@
       "req": 53,
       "xp": 7890,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -635,7 +628,7 @@
       "req": 53,
       "xp": 7890,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -644,7 +637,7 @@
       "req": 53,
       "xp": 7890,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -653,7 +646,7 @@
       "req": 53,
       "xp": 10200,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -662,7 +655,7 @@
       "req": 53,
       "xp": 12250,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -671,7 +664,7 @@
       "req": 51,
       "xp": 785,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {

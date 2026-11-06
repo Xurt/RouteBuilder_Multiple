@@ -1,7 +1,7 @@
 Blasted Lands - Horde - part 1 of 3, planned from level 50
 Guide "50-61 Blasted Lands" in group "Zone Routes (Horde)": this part has 19 steps, 14 stops
 Written to guides/tbc/Blasted Lands (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -55,7 +55,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Blasted Lands - Horde - part 2 of 3, planned from level 59
 Guide "50-61 Blasted Lands" in group "Zone Routes (Horde)": this part has 4 steps, 2 stops
 Written to guides/tbc/Blasted Lands (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -105,7 +105,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Blasted Lands - Horde - part 3 of 3, planned from level 62
 Guide "50-61 Blasted Lands" in group "Zone Routes (Horde)": this part has 7 steps, 6 stops
 Written to guides/tbc/Blasted Lands (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

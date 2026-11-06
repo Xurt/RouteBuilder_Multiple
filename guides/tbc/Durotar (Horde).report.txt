@@ -1,7 +1,7 @@
 Durotar - Horde - part 1 of 2, planned from level 1
-Guide "1-13 Durotar" in group "Zone Routes (Horde)": this part has 227 steps, 103 stops
+Guide "1-13 Durotar" in group "Zone Routes (Horde)": this part has 226 steps, 102 stops
 Written to guides/tbc/Durotar (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -143,7 +143,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Durotar - Horde - part 2 of 2, planned from level 12
 Guide "1-13 Durotar" in group "Zone Routes (Horde)": this part has 77 steps, 60 stops
 Written to guides/tbc/Durotar (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

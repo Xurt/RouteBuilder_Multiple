@@ -1,8 +1,7 @@
 -- 20-25 Hillsbrad Foothills: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
--- Split into 2 guides, listed under "20 - 27 Hillsbrad Foothills" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
 -- Edit zones/mop/Hillsbrad Foothills.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -12,10 +11,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 20 - 27 Hillsbrad Foothills
-#subweight -20
-#name 20-22 Hillsbrad Foothills: around High Executor Darthalia
-#next Zone Routes (Horde)\22-27 Hillsbrad Foothills: around Serge Hinott
+#name 20-25 Hillsbrad Foothills
+--RouteBuilder:next
+#next Zone Routes (Horde)\25-30 Northern Stranglethorn;Zone Routes (Horde)\26-31 Arathi Highlands
 
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,29.24,63.34
@@ -396,35 +394,17 @@ step
     .turnin 28237 >>Turn in A Blight Upon the Land << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 28251 >>Accept Trouble at Southshore
     .unitscan Master Apothecary Lydon
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 20 - 27 Hillsbrad Foothills
-#subweight -20
-#name 22-27 Hillsbrad Foothills: around Serge Hinott
---RouteBuilder:next
-#next Zone Routes (Horde)\25-30 Northern Stranglethorn;Zone Routes (Horde)\26-31 Arathi Highlands
-
-step
-    .goto 25,49.10,66.36
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Serge Hinott|r
-    .accept 28325 >>Accept Green Living
-    .accept 28324 >>Accept Studies in Lethality
-    .target Serge Hinott
-step
-    #completewith Along61
-    >>As you go: Pick up |cRXP_PICK_Used Blight Canister|r from the ground. |cRXP_WARN_Anything left is finished later|r
-    .complete 28325,1 --Used Blight Canister (8)
 step
     .goto 25,49.10,66.36
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Serge Hinott|r
     .turnin 28251 >>Turn in Trouble at Southshore
+    .accept 28325 >>Accept Green Living
+    .accept 28324 >>Accept Studies in Lethality
     .target Serge Hinott
-    .isOnQuest 28251
+step
+    #completewith Along60
+    >>As you go: Pick up |cRXP_PICK_Used Blight Canister|r from the ground. |cRXP_WARN_Anything left is finished later|r
+    .complete 28325,1 --Used Blight Canister (8)
 step
     .goto 25,49.15,66.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Helcular|r
@@ -442,7 +422,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .complete 28329,1 --Angry Blight Slime slain (5)
     .mob Angry Blight Slime
 step
-    #label Along61
+    #label Along60
     .goto 25,49.28,71.16
     >>Interact with |cRXP_FRIENDLY_Blight Slime|r
     .complete 28324,1 --Blight Slime
@@ -455,12 +435,12 @@ step
     >>Pick up |cRXP_PICK_Used Blight Canister|r from the ground
     .complete 28325,1 --Used Blight Canister (8)
 step
-    #completewith Along63
+    #completewith Along62
     >>As you go: Kill |cRXP_ENEMY_Bloodfang Forsaken Hunters|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28332,1 --Bloodfang Forsaken Hunter (15)
     .mob Bloodfang Forsaken Hunter
 step
-    #label Along63
+    #label Along62
     .goto 25,49.10,66.36
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Serge Hinott|r
     .turnin 28329 >>Turn in Angry Scrubbing Bubbles << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
@@ -506,47 +486,32 @@ step
     .goto 25,50.03,74.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kingslayer Orkus|r
     .turnin 28344 >>Turn in Can You Smell What the Lok'tar is Cooking?
+    .accept 28345 >>Accept *Gurgle* HELP! *Gurgle* << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Kingslayer Orkus
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 25,50.03,74.34
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kingslayer Orkus|r
-    .accept 28345 >>Accept *Gurgle* HELP! *Gurgle*
-    .target Kingslayer Orkus
-    .isQuestTurnedIn 28096 --any of: Welcome to the Machine
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,49.99,74.38
     >>Orkus Safely Escorted Out of the Water
     .complete 28345,1 --Orkus Safely Escorted Out of the Water
-    .isOnQuest 28345
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,50.03,74.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kingslayer Orkus|r
     .turnin 28345 >>Turn in *Gurgle* HELP! *Gurgle*
-    .target Kingslayer Orkus
-    .isOnQuest 28345
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 25,50.03,74.34
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kingslayer Orkus|r
     .accept 28348 >>Accept Stormpike Rendezvous
     .target Kingslayer Orkus
-    .isQuestTurnedIn 28345 --any of: *Gurgle* HELP! *Gurgle*
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,49.99,74.38
     >>Learn about the Stormpike rendezvous
     .complete 28348,1 --Learn about the Stormpike rendezvous
-    .isOnQuest 28348
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,50.03,74.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kingslayer Orkus|r
     .turnin 28348 >>Turn in Stormpike Rendezvous
-    .target Kingslayer Orkus
-    .isOnQuest 28348
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 25,50.03,74.34
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kingslayer Orkus|r
     .accept 28354 >>Accept Kasha Will Fly Again
     .target Kingslayer Orkus
-    .isQuestTurnedIn 28348 --any of: Stormpike Rendezvous
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along75
+    >>As you go: Pick up |cRXP_PICK_Mudsnout Blossom|r from the ground. |cRXP_WARN_Anything left is finished later|r
+    .complete 28354,1 --Mudsnout Blossom (8)
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,57.80,74.64
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mudsnout Gnoll|r
@@ -559,6 +524,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Mudsnout Shaman
     .mob Mudsnout Gnoll
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along75
     .goto 25,58.47,73.76
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
     .turnin 28355 >>Turn in Terrible Little Creatures
@@ -567,19 +533,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,58.06,73.60
     >>Pick up |cRXP_PICK_Mudsnout Blossom|r from the ground
     .complete 28354,1 --Mudsnout Blossom (8)
-    .isOnQuest 28354
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,50.03,74.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kingslayer Orkus|r
     .turnin 28354 >>Turn in Kasha Will Fly Again
-    .target Kingslayer Orkus
-    .isOnQuest 28354
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 25,50.03,74.34
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kingslayer Orkus|r
     .accept 28375 >>Accept The Road to Purgation
     .target Kingslayer Orkus
-    .isQuestTurnedIn 28354 --any of: Kasha Will Fly Again
 step
     #completewith next
     .zone 110 >>Travel to Silvermoon City
@@ -684,53 +643,39 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,29.24,83.89
     >>The Road to Purgation taken
     .complete 28375,1 --The Road to Purgation taken
-    .isOnQuest 28375
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,29.22,83.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kingslayer Orkus|r
     .turnin 28375 >>Turn in The Road to Purgation
-    .target Kingslayer Orkus
-    .isOnQuest 28375
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 25,29.22,83.98
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kingslayer Orkus|r
     .accept 28397 >>Accept They Will Never Expect This...
     .target Kingslayer Orkus
-    .isQuestTurnedIn 28375 --any of: The Road to Purgation
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 25,28.21,83.73
-    >>Kill |cRXP_ENEMY_Bloodfang Sentries|r
-    .complete 28397,2 --Bloodfang Sentry (8)
-    .mob Bloodfang Sentry
-    .isOnQuest 28397
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 25,27.72,84.13,0
     .goto 25,27.72,84.13,40,0
     .goto 25,24.60,87.63,40,0
+    >>Kill |cRXP_ENEMY_Bloodfang Sentries|r
     >>Kill |cRXP_ENEMY_Stormpike Mountaineers|r and |cRXP_ENEMY_Stormpike Ram Riders|r
+    .complete 28397,2 --Bloodfang Sentry (8)
     .complete 28397,1 --Stormpike Mountaineer (8)
+    .mob Bloodfang Sentry
     .mob Stormpike Mountaineer
     .mob Stormpike Ram Rider
-    .isOnQuest 28397
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,29.22,83.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kingslayer Orkus|r
     .turnin 28397 >>Turn in They Will Never Expect This...
     .target Kingslayer Orkus
-    .isOnQuest 28397
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,27.35,87.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kingslayer Orkus|r
     .accept 28400 >>Accept Heroes of the Horde!
     .target Kingslayer Orkus
-    .isQuestTurnedIn 28397 --any of: They Will Never Expect This...
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,27.20,86.37
     >>Kill |cRXP_ENEMY_Stormpike Battle Master|r and loot |cRXP_LOOT_Alliance Battle Plans|r
     .complete 28400,1 --Alliance Battle Plans (1)
     .mob Stormpike Battle Master
-    .isOnQuest 28400
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,29.24,63.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Executor Darthalia|r
@@ -750,7 +695,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,57.47,46.87
     >>Become Heroes of the Horde
     .complete 28400,2 --Become Heroes of the Horde
-    .isOnQuest 28400
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,57.08,46.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Warlord Cromush|r
@@ -766,14 +710,8 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,57.08,46.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Warlord Cromush|r
     .turnin 28400 >>Turn in Heroes of the Horde!
-    .target High Warlord Cromush
-    .isOnQuest 28400
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 25,57.08,46.24
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Warlord Cromush|r
     .accept 28587 >>Accept Aid of the Frostwolf
     .target High Warlord Cromush
-    .isQuestTurnedIn 28400 --any of: Heroes of the Horde!
 step
     .goto 25,56.99,45.72
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Keeper Bel'varil|r
@@ -798,25 +736,18 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,58.70,34.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Voggah Deathgrip|r
     .turnin 28587 >>Turn in Aid of the Frostwolf
-    .target Voggah Deathgrip
-    .isOnQuest 28587
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 25,58.70,34.24
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Voggah Deathgrip|r
     .accept 28600 >>Accept Matters of Loyalty
     .target Voggah Deathgrip
-    .isQuestTurnedIn 28587 --any of: Aid of the Frostwolf
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,58.44,34.34
     >>Learn of Matters of Loyalty
     .complete 28600,1 --Learn of Matters of Loyalty
-    .isOnQuest 28600
 step
     #completewith next
     .hs >>Hearth to Sergeant Hartman's inn. |cRXP_WARN_Walk instead if you are already nearby|r
     .cooldown item,6948,>0,1
 step
-    #completewith Along120
+    #completewith Along111
     >>As you go: Kill |cRXP_ENEMY_Cave Yetis|r and |cRXP_ENEMY_Ferocious Yetis|r. Loot them for |cRXP_LOOT_Beating Yeti Heart|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28484,1 --Beating Yeti Heart (12)
     .mob Cave Yeti
@@ -830,7 +761,7 @@ step
     .complete 28489,1 --Juicy Stag Meat (1)
     .mob Hill Stag
 step
-    #label Along120
+    #label Along111
     #loop
     .goto 25,49.68,54.56,0
     .goto 25,49.68,54.56,40,0
@@ -880,37 +811,23 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,57.08,46.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Warlord Cromush|r
     .turnin 28600 >>Turn in Matters of Loyalty
-    .target High Warlord Cromush
-    .isOnQuest 28600
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 25,57.08,46.24
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Warlord Cromush|r
     .accept 28506 >>Accept March of the Stormpike
     .target High Warlord Cromush
-    .isQuestTurnedIn 28600 --any of: Matters of Loyalty
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,57.03,46.26
     >>See the March of the Stormpike
     .complete 28506,1 --See the March of the Stormpike
-    .isOnQuest 28506
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,57.08,46.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Warlord Cromush|r
     .turnin 28506 >>Turn in March of the Stormpike
-    .target High Warlord Cromush
-    .isOnQuest 28506
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 25,57.08,46.24
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Warlord Cromush|r
     .accept 28556 >>Accept Breaking the Hand
     .target High Warlord Cromush
-    .isQuestTurnedIn 28506 --any of: March of the Stormpike
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,57.27,46.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Melisara|r
     .accept 28538 >>Accept Cry of the Banshee
     .target Melisara
-    .isQuestTurnedIn 28506 --any of: March of the Stormpike
 step
     .goto 25,56.99,45.72
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Keeper Bel'varil|r
@@ -935,130 +852,107 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .complete 28538,1 --SI:7 Operative (8)
     .mob SI:7 Operative
     .mob SI:7 Assassin
-    .isOnQuest 28538
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,55.54,38.43
     >>Plant a Goblin Pocket-Nuke at Sofera's Naze, Corrahn's Dagger, the Headland and Gavin's Naze.
     .complete 28556,1 --Sofera's Naze Credit
     .target Sofera's Naze Credit
-    .isOnQuest 28556
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,57.27,46.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Melisara|r
     .turnin 28538 >>Turn in Cry of the Banshee
-    .target Melisara
-    .isOnQuest 28538
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 25,57.27,46.34
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Melisara|r
     .accept 28566 >>Accept Decimation
     .target Melisara
-    .isQuestTurnedIn 28538 --any of: Cry of the Banshee
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 25,49.62,46.61,0
     .goto 25,49.62,46.61,40,0
     .goto 25,49.53,48.44,40,0
     >>Kill |cRXP_ENEMY_Stormpike Soldiers|r
-    .complete 28566,2 --Stormpike Soldier slain (12)
-    .mob Stormpike Soldier
-    .isOnQuest 28566
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 25,49.40,46.73
     >>Kill |cRXP_ENEMY_Captain Iceheart|r
+    .complete 28566,2 --Stormpike Soldier slain (12)
     .complete 28566,1 --Captain Iceheart slain (1)
+    .mob Stormpike Soldier
     .mob Captain Iceheart
-    .isOnQuest 28566
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,49.37,46.50
     >>Plant a Goblin Pocket-Nuke at Sofera's Naze, Corrahn's Dagger, the Headland and Gavin's Naze.
     .complete 28556,2 --Corrahn's Dagger Credit
     .target Corrahn's Dagger Credit
-    .isOnQuest 28556
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,57.27,46.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Melisara|r
     .turnin 28566 >>Turn in Decimation
-    .target Melisara
-    .isOnQuest 28566
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 25,57.27,46.34
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Melisara|r
     .accept 28603 >>Accept Infiltration
     .target Melisara
-    .isQuestTurnedIn 28566 --any of: Decimation
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,50.20,40.31
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lilith|r
     .accept 28604 >>Accept Deception and Trickery
     .target Lilith
-    .isQuestTurnedIn 28566 --any of: Decimation
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along129
+    >>As you go: Kill |cRXP_ENEMY_Captain Crudbeard|r. Kill |cRXP_ENEMY_Drill Sergeant Magnus|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 28603,3 --Captain Crudbeard slain (1)
+    .complete 28603,2 --Drill Sergeant Magnus slain (1)
+    .mob Captain Crudbeard
+    .mob Drill Sergeant Magnus
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,44.51,49.07
     >>Kill |cRXP_ENEMY_Instructor Rufus|r
     .complete 28603,1 --Instructor Rufus slain (1)
     .mob Instructor Rufus
-    .isOnQuest 28603
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along129
     .goto 25,43.87,51.00
     >>Use the Barrel of Water to Poison 30 Stormpike Trainees.
     .complete 28604,1 --Stormpike Trainee (30)
     .target Stormpike Trainee
-    .isOnQuest 28604
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 25,44.08,50.47
-    >>Kill |cRXP_ENEMY_Captain Crudbeard|r
-    .complete 28603,3 --Captain Crudbeard slain (1)
-    .mob Captain Crudbeard
-    .isOnQuest 28603
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,43.43,49.92
+    >>Kill |cRXP_ENEMY_Captain Crudbeard|r
     >>Kill |cRXP_ENEMY_Drill Sergeant Magnus|r
+    .complete 28603,3 --Captain Crudbeard slain (1)
     .complete 28603,2 --Drill Sergeant Magnus slain (1)
+    .mob Captain Crudbeard
     .mob Drill Sergeant Magnus
-    .isOnQuest 28603
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,43.95,48.93
     >>Plant a Goblin Pocket-Nuke at Sofera's Naze, Corrahn's Dagger, the Headland and Gavin's Naze.
     .complete 28556,3 --The Headland Credit
     .target The Headland Credit
-    .isOnQuest 28556
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,50.20,40.31
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lilith|r
     .turnin 28604 >>Turn in Deception and Trickery
     .target Lilith
-    .isOnQuest 28604
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,57.27,46.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Melisara|r
     .turnin 28603 >>Turn in Infiltration
-    .target Melisara
-    .isOnQuest 28603
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 25,57.27,46.34
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Melisara|r
     .accept 28605 >>Accept Domination
     .target Melisara
-    .isQuestTurnedIn 28603 --Infiltration
-    .isQuestTurnedIn 28604 --Deception and Trickery
 step
     .goto 25,47.26,50.06
     >>Kill |cRXP_ENEMY_Yetimus the Yeti Lord|r and loot |cRXP_LOOT_Yetimus' Twisted Horn|r
     .complete 28485,1 --Yetimus' Twisted Horn (1)
     .mob Yetimus the Yeti Lord
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along135
+    >>As you go: Kill |cRXP_ENEMY_Stormpike Engineers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 28605,1 --Stormpike Engineer slain (10)
+    .mob Stormpike Engineer
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along135
     .goto 25,39.48,48.93
     >>Plant a Goblin Pocket-Nuke at Sofera's Naze, Corrahn's Dagger, the Headland and Gavin's Naze.
     .complete 28556,4 --Gavin's Naze Credit
     .target Gavin's Naze Credit
-    .isOnQuest 28556
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,40.27,47.76
     >>Kill |cRXP_ENEMY_Stormpike Engineers|r
     .complete 28605,1 --Stormpike Engineer slain (10)
     .mob Stormpike Engineer
-    .isOnQuest 28605
 step
     .goto 25,57.19,45.52
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Deathguard Samsa|r
@@ -1069,31 +963,21 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Melisara|r
     .turnin 28605 >>Turn in Domination
     .target Melisara
-    .isOnQuest 28605
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,57.08,46.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Warlord Cromush|r
     .turnin 28556 >>Turn in Breaking the Hand
-    .target High Warlord Cromush
-    .isOnQuest 28556
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 25,57.08,46.24
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Warlord Cromush|r
     .accept 28616 >>Accept Stormpike Apocalypse
     .target High Warlord Cromush
-    .isQuestTurnedIn 28556 --Breaking the Hand
-    .isQuestTurnedIn 28605 --Domination
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,57.03,46.26
     >>Witness the Stormpike Apocalypse
     .complete 28616,1 --Witness the Stormpike Apocalypse
-    .isOnQuest 28616
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,57.08,46.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Warlord Cromush|r
     .turnin 28616 >>Turn in Stormpike Apocalypse
     .target High Warlord Cromush
-    .isOnQuest 28616
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 25,59.88,63.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Jekyll|r
@@ -1237,5 +1121,5 @@ step
     >>|cRXP_FRIENDLY_Undercity|r: Envoy to the Horde << BloodElf
     >>|cRXP_FRIENDLY_Undercity|r: Envoy to the Horde << Orc/Undead/Tauren/Troll/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 26|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.3 levels of quests, starting around Hemet Nesingwary Jr.), |cRXP_FRIENDLY_Arathi Highlands|r (about 1.1 levels of quests, starting around Galen Trollbane). Completing this step loads the guide for Northern Stranglethorn --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 26|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.3 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 1.1 levels of quests). Completing this step loads the guide for Northern Stranglethorn --RouteBuilder:next
 ]])

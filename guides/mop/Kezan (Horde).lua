@@ -1,9 +1,9 @@
 -- 1-3 Kezan: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 1, 4).
--- Split into 2 guides, listed under "1 - 5 Kezan" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 1; part 2 from 4.
 -- Edit zones/mop/Kezan.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 1 - 5 Kezan
-#subweight -1
-#name 1-2 Kezan
+#name 1-3 Kezan
 
 step << Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock
     .goto 194,56.44,76.95
@@ -294,18 +292,7 @@ step
     +|cRXP_WARN_That is all of Kezan for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Kaja'mine N and back here|r: Trouble in the Mines << Goblin Warrior/Goblin Hunter/Goblin Rogue/Goblin Priest/Goblin Shaman/Goblin Mage/Goblin Warlock
 step << Goblin Hunter/Goblin Mage/Goblin Priest/Goblin Rogue/Goblin Shaman/Goblin Warlock/Orc Warrior/Goblin Warrior
-    +|cRXP_WARN_The rest of Kezan is planned from level 4.|r Load its guide for level 4 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Goblin Hunter/Goblin Mage/Goblin Priest/Goblin Rogue/Goblin Shaman/Goblin Warlock/Orc Warrior/Goblin Warrior
-#version 1
-#group Zone Routes (Horde)
-#subgroup 1 - 5 Kezan
-#subweight -1
-#name 4-5 Kezan
-
+    .xp 4 >>|cRXP_WARN_The rest of Kezan is planned from level 4.|r Come back to this guide then
 step << Orc Warrior/Goblin Warrior
     .goto 194,60.33,77.83
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warrior-Matic NX-01|r

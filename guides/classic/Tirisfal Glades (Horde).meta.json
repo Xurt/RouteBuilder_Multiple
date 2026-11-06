@@ -13,28 +13,14 @@
       "start": 1,
       "end": 10.6,
       "next": 13,
-      "guide": "8-11 Tirisfal Glades: around Carendin Halgar",
+      "guide": "1-13 Tirisfal Glades",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Shadow Priest Sarvis",
-          "guide": "1-5 Tirisfal Glades: around Shadow Priest Sarvis",
+          "label": "",
+          "name": "start",
+          "guide": "1-13 Tirisfal Glades",
           "level": 1,
           "index": 0
-        },
-        {
-          "label": "RBSection1_2",
-          "name": "around Apothecary Johaan",
-          "guide": "5-8 Tirisfal Glades: around Apothecary Johaan",
-          "level": 5,
-          "index": 1
-        },
-        {
-          "label": "RBSection1_3",
-          "name": "around Carendin Halgar",
-          "guide": "8-11 Tirisfal Glades: around Carendin Halgar",
-          "level": 8,
-          "index": 2
         }
       ]
     },
@@ -42,12 +28,12 @@
       "part": 2,
       "start": 13,
       "end": 13.17,
-      "guide": "13-14 Tirisfal Glades",
+      "guide": "1-13 Tirisfal Glades",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "13-14 Tirisfal Glades",
+          "guide": "1-13 Tirisfal Glades",
           "level": 13,
           "index": 0
         }
@@ -61,7 +47,7 @@
       "req": 1,
       "xp": 110,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -70,7 +56,7 @@
       "req": 7,
       "xp": 880,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -79,7 +65,7 @@
       "req": 7,
       "xp": 85,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -88,7 +74,7 @@
       "req": 6,
       "xp": 660,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -97,7 +83,7 @@
       "req": 5,
       "xp": 530,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -106,7 +92,7 @@
       "req": 4,
       "xp": 700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -115,7 +101,7 @@
       "req": 6,
       "xp": 195,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -124,7 +110,7 @@
       "req": 6,
       "xp": 390,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -133,7 +119,7 @@
       "req": 7,
       "xp": 420,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -160,7 +146,7 @@
       "req": 4,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -169,7 +155,7 @@
       "req": 5,
       "xp": 350,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -178,7 +164,7 @@
       "req": 6,
       "xp": 540,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -187,7 +173,7 @@
       "req": 6,
       "xp": 780,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -196,7 +182,7 @@
       "req": 6,
       "xp": 220,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -205,7 +191,7 @@
       "req": 5,
       "xp": 780,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -214,7 +200,7 @@
       "req": 5,
       "xp": 840,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -223,7 +209,7 @@
       "req": 5,
       "xp": 910,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -232,7 +218,7 @@
       "req": 5,
       "xp": 630,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -241,7 +227,7 @@
       "req": 7,
       "xp": 700,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -286,7 +272,7 @@
       "req": 2,
       "xp": 335,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -295,7 +281,7 @@
       "req": 6,
       "xp": 840,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -304,7 +290,7 @@
       "req": 4,
       "xp": 405,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -313,7 +299,7 @@
       "req": 5,
       "xp": 175,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -322,7 +308,7 @@
       "req": 4,
       "xp": 160,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -331,7 +317,7 @@
       "req": 5,
       "xp": 680,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -340,7 +326,7 @@
       "req": 5,
       "xp": 910,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -349,7 +335,7 @@
       "req": 6,
       "xp": 880,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -358,7 +344,7 @@
       "req": 5,
       "xp": 700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -367,7 +353,7 @@
       "req": 9,
       "xp": 910,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "",
       "from": "Silverpine Forest"
     },
@@ -377,7 +363,7 @@
       "req": 6,
       "xp": 880,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -386,7 +372,7 @@
       "req": 1,
       "xp": 110,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -404,7 +390,7 @@
       "req": 10,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Undead Warlock"
     },
     {
@@ -413,7 +399,7 @@
       "req": 10,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Undead Warlock"
     },
     {
@@ -422,7 +408,7 @@
       "req": 10,
       "xp": 210,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Warlock"
     },
     {
@@ -431,7 +417,7 @@
       "req": 10,
       "xp": 85,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Warrior"
     },
     {
@@ -440,7 +426,7 @@
       "req": 10,
       "xp": 840,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Warrior"
     },
     {
@@ -449,7 +435,7 @@
       "req": 10,
       "xp": 210,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "Warrior"
     },
     {
@@ -458,7 +444,7 @@
       "req": 10,
       "xp": 660,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "Warrior"
     },
     {
@@ -467,7 +453,7 @@
       "req": 10,
       "xp": 880,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "Warrior"
     },
     {
@@ -476,7 +462,7 @@
       "req": 10,
       "xp": 85,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Undead Mage/Troll Mage"
     },
     {
@@ -485,7 +471,7 @@
       "req": 10,
       "xp": 840,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "Undead Mage/Troll Mage"
     },
     {
@@ -494,7 +480,7 @@
       "req": 10,
       "xp": 210,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Undead Rogue"
     },
     {
@@ -566,7 +552,7 @@
       "req": 5,
       "xp": 225,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -575,7 +561,7 @@
       "req": 5,
       "xp": 540,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -584,7 +570,7 @@
       "req": 5,
       "xp": 270,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Undead Priest"
     },
     {
@@ -593,7 +579,7 @@
       "req": 5,
       "xp": 90,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Undead Priest"
     },
     {
@@ -602,7 +588,7 @@
       "req": 10,
       "xp": 210,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Undead Priest",
       "from": "Durotar"
     },
@@ -612,7 +598,7 @@
       "req": 10,
       "xp": 210,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Undead Priest",
       "from": "Mulgore"
     },
@@ -622,7 +608,7 @@
       "req": 10,
       "xp": 210,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Undead Priest",
       "from": "Durotar"
     },
@@ -632,7 +618,7 @@
       "req": 10,
       "xp": 210,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Undead Priest",
       "from": "Mulgore"
     },
@@ -642,7 +628,7 @@
       "req": 10,
       "xp": 420,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "Undead",
       "from": "Silverpine Forest"
     },

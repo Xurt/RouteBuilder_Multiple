@@ -1,9 +1,9 @@
 -- 13-21 Bloodmyst Isle: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 13, 22).
--- Split into 2 guides, listed under "13 - 23 Bloodmyst Isle" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 13; part 2 from 22.
 -- Edit zones/mop/Bloodmyst Isle.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 13 - 23 Bloodmyst Isle
-#subweight -13
-#name 13-20 Bloodmyst Isle
+#name 13-21 Bloodmyst Isle
 --RouteBuilder:next
-#next Zone Routes (Alliance)\15-20 Darkshore: around Ranger Glynda Nal'Shea
+#next Zone Routes (Alliance)\20-25 Hillsbrad Foothills
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 106,53.24,57.74
@@ -1224,23 +1222,10 @@ step
     >>|cRXP_FRIENDLY_Azuremyst Isle|r: Newfound Allies << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Azuremyst Isle and back here|r: The Kessel Run << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Final Sample << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 19|r: |cRXP_FRIENDLY_Darkshore|r (about 0.6 levels of quests, starting around Ranger Glynda Nal'Shea). Completing this step loads the guide for Darkshore --RouteBuilder:next
 step << Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior/Dwarf Paladin/Draenei Paladin/Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter/Human Priest/Dwarf Priest/Draenei Priest/Worgen Priest/Pandaren Priest/NightElf Priest/Dwarf Shaman/Draenei Shaman/Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage/Gnome Priest
-    +|cRXP_WARN_The rest of Bloodmyst Isle is planned from level 22.|r Load its guide for level 22 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior/Dwarf Paladin/Draenei Paladin/Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter/Human Priest/Dwarf Priest/Draenei Priest/Worgen Priest/Pandaren Priest/NightElf Priest/Dwarf Shaman/Draenei Shaman/Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage/Gnome Priest
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 13 - 23 Bloodmyst Isle
-#subweight -13
-#name 22-23 Bloodmyst Isle
---RouteBuilder:next
-#next Zone Routes (Alliance)\20-22 Hillsbrad Foothills: around Helcular
-
+    +|cRXP_WARN_Until level 22, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 0.8 levels of quests). Then come back to this Bloodmyst Isle guide --RouteBuilder:next
+step << Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior/Dwarf Paladin/Draenei Paladin/Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter/Human Priest/Dwarf Priest/Draenei Priest/Worgen Priest/Pandaren Priest/NightElf Priest/Dwarf Shaman/Draenei Shaman/Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage/Gnome Priest
+    .xp 22 >>|cRXP_WARN_The rest of Bloodmyst Isle is planned from level 22.|r Come back to this guide then
 step
     #completewith next
     .zone 103 >>Travel to The Exodar
@@ -1308,5 +1293,5 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: Journey to the Wizard's Sanctum << Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage
     >>|cRXP_FRIENDLY_Stormwind City|r: The Chief Surgeon << Gnome Priest
 step
-    +|cRXP_WARN_Suggested next zones at level 22|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.7 levels of quests, starting around Helcular). Completing this step loads the guide for Hillsbrad Foothills --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 22|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.7 levels of quests). Completing this step loads the guide for Hillsbrad Foothills --RouteBuilder:next
 ]])

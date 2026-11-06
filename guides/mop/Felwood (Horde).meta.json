@@ -13,21 +13,14 @@
       "start": 46,
       "end": 50.04,
       "next": 53,
-      "guide": "48-50 Felwood: around Feronas Sindweller",
+      "guide": "46-51 Felwood",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Totem of Ruumbo",
-          "guide": "46-48 Felwood: around Totem of Ruumbo",
+          "label": "",
+          "name": "start",
+          "guide": "46-51 Felwood",
           "level": 46,
           "index": 0
-        },
-        {
-          "label": "RBSection1_2",
-          "name": "around Feronas Sindweller",
-          "guide": "48-50 Felwood: around Feronas Sindweller",
-          "level": 48,
-          "index": 1
         }
       ]
     },
@@ -35,12 +28,12 @@
       "part": 2,
       "start": 53,
       "end": 53,
-      "guide": "53-54 Felwood",
+      "guide": "46-51 Felwood",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "53-54 Felwood",
+          "guide": "46-51 Felwood",
           "level": 53,
           "index": 0
         }
@@ -54,7 +47,7 @@
       "req": 45,
       "xp": 680,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -63,7 +56,7 @@
       "req": 5,
       "xp": 315,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren",
       "from": "Mulgore"
     },
@@ -73,7 +66,7 @@
       "req": 3,
       "xp": 420,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren",
       "from": "Mulgore"
     },
@@ -336,7 +329,7 @@
       "req": 46,
       "xp": 6290,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -345,7 +338,7 @@
       "req": 46,
       "xp": 6290,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -390,7 +383,7 @@
       "req": 46,
       "xp": 6290,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -399,7 +392,7 @@
       "req": 46,
       "xp": 7850,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -417,7 +410,7 @@
       "req": 46,
       "xp": 6290,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -426,7 +419,7 @@
       "req": 46,
       "xp": 7850,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -435,7 +428,7 @@
       "req": 46,
       "xp": 6290,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -444,7 +437,7 @@
       "req": 46,
       "xp": 9400,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -480,7 +473,7 @@
       "req": 47,
       "xp": 6550,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -489,7 +482,7 @@
       "req": 47,
       "xp": 6550,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -498,7 +491,7 @@
       "req": 47,
       "xp": 6550,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -507,7 +500,7 @@
       "req": 47,
       "xp": 6550,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -516,7 +509,7 @@
       "req": 47,
       "xp": 8150,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -525,7 +518,7 @@
       "req": 47,
       "xp": 6550,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -534,7 +527,7 @@
       "req": 47,
       "xp": 8150,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -561,7 +554,7 @@
       "req": 47,
       "xp": 6550,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -606,7 +599,7 @@
       "req": 47,
       "xp": 6550,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -615,7 +608,7 @@
       "req": 47,
       "xp": 8150,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -624,7 +617,7 @@
       "req": 47,
       "xp": 6550,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -633,7 +626,7 @@
       "req": 47,
       "xp": 8150,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -642,7 +635,7 @@
       "req": 47,
       "xp": 6550,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -651,7 +644,7 @@
       "req": 47,
       "xp": 3250,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -660,7 +653,7 @@
       "req": 47,
       "xp": 1630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -678,7 +671,7 @@
       "req": 47,
       "xp": 3250,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {

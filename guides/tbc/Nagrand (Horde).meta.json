@@ -13,12 +13,12 @@
       "start": 65,
       "end": 65.78,
       "next": 68,
-      "guide": "65-66 Nagrand: around Shado \u0027Fitz\u0027 Farstrider",
+      "guide": "65-68 Nagrand",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Shado \u0027Fitz\u0027 Farstrider",
-          "guide": "65-66 Nagrand: around Shado \u0027Fitz\u0027 Farstrider",
+          "label": "",
+          "name": "start",
+          "guide": "65-68 Nagrand",
           "level": 65,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 68,
       "end": 68.07,
-      "guide": "68-69 Nagrand: around Altruis the Sufferer",
+      "guide": "65-68 Nagrand",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Altruis the Sufferer",
-          "guide": "68-69 Nagrand: around Altruis the Sufferer",
+          "label": "",
+          "name": "part 2",
+          "guide": "65-68 Nagrand",
           "level": 68,
           "index": 0
         }

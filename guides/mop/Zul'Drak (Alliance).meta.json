@@ -13,12 +13,12 @@
       "start": 74,
       "end": 74.71,
       "next": 77,
-      "guide": "74-75 Zul\u0027Drak: around Crusader Lord Lantinga",
+      "guide": "74-78 Zul\u0027Drak",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Crusader Lord Lantinga",
-          "guide": "74-75 Zul\u0027Drak: around Crusader Lord Lantinga",
+          "label": "",
+          "name": "start",
+          "guide": "74-78 Zul\u0027Drak",
           "level": 74,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 77,
       "end": 77.23,
       "next": 80,
-      "guide": "77-78 Zul\u0027Drak: around Gurgthock",
+      "guide": "74-78 Zul\u0027Drak",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Gurgthock",
-          "guide": "77-78 Zul\u0027Drak: around Gurgthock",
+          "label": "",
+          "name": "part 2",
+          "guide": "74-78 Zul\u0027Drak",
           "level": 77,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 80,
       "end": 80.04,
-      "guide": "80-81 Zul\u0027Drak",
+      "guide": "74-78 Zul\u0027Drak",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "80-81 Zul\u0027Drak",
+          "guide": "74-78 Zul\u0027Drak",
           "level": 80,
           "index": 0
         }

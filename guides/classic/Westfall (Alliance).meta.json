@@ -13,12 +13,12 @@
       "start": 10,
       "end": 12.7,
       "next": 15,
-      "guide": "10-13 Westfall: around Farmer Saldean",
+      "guide": "10-44 Westfall",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Farmer Saldean",
-          "guide": "10-13 Westfall: around Farmer Saldean",
+          "label": "",
+          "name": "start",
+          "guide": "10-44 Westfall",
           "level": 10,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 15,
       "end": 15.21,
       "next": 18,
-      "guide": "15-16 Westfall",
+      "guide": "10-44 Westfall",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "15-16 Westfall",
+          "guide": "10-44 Westfall",
           "level": 15,
           "index": 0
         }
@@ -45,12 +45,12 @@
       "start": 18,
       "end": 18.28,
       "next": 41,
-      "guide": "18-19 Westfall",
+      "guide": "10-44 Westfall",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "18-19 Westfall",
+          "guide": "10-44 Westfall",
           "level": 18,
           "index": 0
         }
@@ -60,12 +60,12 @@
       "part": 4,
       "start": 41,
       "end": 41,
-      "guide": "41-42 Westfall",
+      "guide": "10-44 Westfall",
       "sections": [
         {
-          "label": "RBSection4_1",
+          "label": "",
           "name": "part 4",
-          "guide": "41-42 Westfall",
+          "guide": "10-44 Westfall",
           "level": 41,
           "index": 0
         }

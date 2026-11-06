@@ -1,7 +1,7 @@
 Duskwood - Alliance - part 1 of 4, planned from level 20
 Guide "20-31 Duskwood" in group "Zone Routes (Alliance)": this part has 57 steps, 39 stops
 Written to guides/classic/Duskwood (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -103,7 +103,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Duskwood - Alliance - part 2 of 4, planned from level 24
 Guide "20-31 Duskwood" in group "Zone Routes (Alliance)": this part has 31 steps, 26 stops
 Written to guides/classic/Duskwood (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -175,7 +175,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Duskwood - Alliance - part 3 of 4, planned from level 27
 Guide "20-31 Duskwood" in group "Zone Routes (Alliance)": this part has 37 steps, 32 stops
 Written to guides/classic/Duskwood (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -232,7 +232,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Duskwood - Alliance - part 4 of 4, planned from level 30
 Guide "20-31 Duskwood" in group "Zone Routes (Alliance)": this part has 20 steps, 19 stops
 Written to guides/classic/Duskwood (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 

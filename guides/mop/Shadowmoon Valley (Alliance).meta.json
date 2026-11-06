@@ -13,12 +13,12 @@
       "start": 69,
       "end": 69.65,
       "next": 72,
-      "guide": "69-70 Shadowmoon Valley: around Earthmender Torlok",
+      "guide": "69-70 Shadowmoon Valley",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Earthmender Torlok",
-          "guide": "69-70 Shadowmoon Valley: around Earthmender Torlok",
+          "label": "",
+          "name": "start",
+          "guide": "69-70 Shadowmoon Valley",
           "level": 69,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 72,
       "end": 72.12,
-      "guide": "72-73 Shadowmoon Valley: around Karynaku",
+      "guide": "69-70 Shadowmoon Valley",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Karynaku",
-          "guide": "72-73 Shadowmoon Valley: around Karynaku",
+          "label": "",
+          "name": "part 2",
+          "guide": "69-70 Shadowmoon Valley",
           "level": 72,
           "index": 0
         }

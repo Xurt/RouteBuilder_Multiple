@@ -1,9 +1,9 @@
 -- 52-55 Swamp of Sorrows: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 52, 57).
--- Split into 2 guides, listed under "52 - 58 Swamp of Sorrows" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 52; part 2 from 57.
 -- Edit zones/mop/Swamp of Sorrows.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 52 - 58 Swamp of Sorrows
-#subweight -52
-#name 52-55 Swamp of Sorrows: around Trade Baron Silversnap
+#name 52-55 Swamp of Sorrows
 --RouteBuilder:next
-#next Zone Routes (Horde)\52-54 Winterspring: around Rinno Curtainfire;Zone Routes (Horde)\55-56 Silithus;Zone Routes (Horde)\53-55 Un'Goro Crater: around Mor'vek
+#next Zone Routes (Horde)\51-55 Un'Goro Crater;Zone Routes (Horde)\55-56 Silithus
 
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 51,73.16,14.90
@@ -607,22 +605,9 @@ step
     >>|cRXP_FRIENDLY_Undercity|r: Envoy to the Horde << Orc/Undead/Tauren/Troll/Pandaren
     >>|cRXP_FRIENDLY_Western Plaguelands|r: Warchief's Command: Western Plaguelands! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 54|r: |cRXP_FRIENDLY_Winterspring|r (about 1.2 levels of quests, starting around Rinno Curtainfire), |cRXP_FRIENDLY_Silithus|r (about 1.0 levels of quests, starting around Huum Wildmane), |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.8 levels of quests, starting around Mor'vek). Completing this step loads the guide for Winterspring --RouteBuilder:next
+    +|cRXP_WARN_Until level 57, suggested zones|r: |cRXP_FRIENDLY_Winterspring|r (about 2.5 levels of quests), |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.7 levels of quests), |cRXP_FRIENDLY_Silithus|r (about 1.0 levels of quests). Then come back to this Swamp of Sorrows guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 57.|r Load its guide for level 57 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 52 - 58 Swamp of Sorrows
-#subweight -52
-#name 57-58 Swamp of Sorrows
---RouteBuilder:next
-#next Zone Routes (Horde)\55-56 Silithus;Zone Routes (Horde)\53-55 Un'Goro Crater: around Mor'vek
-
+    .xp 57 >>|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 57.|r Come back to this guide then
 step
     .goto 51,26.86,33.56
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Anchorite Avuun|r
@@ -638,5 +623,5 @@ step
     >>|cRXP_FRIENDLY_Blasted Lands|r: Onward to the Blasted Lands
     >>|cRXP_FRIENDLY_Blasted Lands|r: Okrilla and the Blasted Lands << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 57|r: |cRXP_FRIENDLY_Silithus|r (about 0.9 levels of quests, starting around Huum Wildmane), |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.7 levels of quests, starting around Mor'vek). Completing this step loads the guide for Silithus --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 57|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.5 levels of quests), |cRXP_FRIENDLY_Silithus|r (about 0.9 levels of quests). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
 ]])

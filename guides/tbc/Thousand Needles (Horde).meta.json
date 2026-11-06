@@ -13,12 +13,12 @@
       "start": 25,
       "end": 25.58,
       "next": 28,
-      "guide": "25-26 Thousand Needles: around Cliffwatcher Longhorn",
+      "guide": "25-37 Thousand Needles",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Cliffwatcher Longhorn",
-          "guide": "25-26 Thousand Needles: around Cliffwatcher Longhorn",
+          "label": "",
+          "name": "start",
+          "guide": "25-37 Thousand Needles",
           "level": 25,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 28,
       "end": 28.51,
       "next": 31,
-      "guide": "28-29 Thousand Needles",
+      "guide": "25-37 Thousand Needles",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "28-29 Thousand Needles",
+          "guide": "25-37 Thousand Needles",
           "level": 28,
           "index": 0
         }
@@ -45,12 +45,12 @@
       "start": 31,
       "end": 31.34,
       "next": 34,
-      "guide": "31-32 Thousand Needles: around Kravel Koalbeard",
+      "guide": "25-37 Thousand Needles",
       "sections": [
         {
-          "label": "RBSection3_1",
-          "name": "around Kravel Koalbeard",
-          "guide": "31-32 Thousand Needles: around Kravel Koalbeard",
+          "label": "",
+          "name": "part 3",
+          "guide": "25-37 Thousand Needles",
           "level": 31,
           "index": 0
         }
@@ -60,12 +60,12 @@
       "part": 4,
       "start": 34,
       "end": 34.12,
-      "guide": "34-35 Thousand Needles",
+      "guide": "25-37 Thousand Needles",
       "sections": [
         {
-          "label": "RBSection4_1",
+          "label": "",
           "name": "part 4",
-          "guide": "34-35 Thousand Needles",
+          "guide": "25-37 Thousand Needles",
           "level": 34,
           "index": 0
         }

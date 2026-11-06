@@ -1,9 +1,9 @@
 -- 10-21 Ghostlands: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 10, 15, 20).
--- Split into 3 guides, listed under "10 - 21 Ghostlands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 10; part 2 from 15; part 3 from 20.
 -- Edit zones/tbc/Ghostlands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 10 - 21 Ghostlands
-#subweight -10
-#name 10-13 Ghostlands: around Arcanist Vandril
+#name 10-21 Ghostlands
 --RouteBuilder:next
-#next Zone Routes (Horde)\10-13 The Barrens: around Sergra Darkthorn;Zone Routes (Horde)\7-11 Tirisfal Glades: around Apothecary Johaan;Zone Routes (Horde)\9-11 Eversong Woods: around Magistrix Landra Dawnstrider
+#next Zone Routes (Horde)\10-27 The Barrens
 
 step << Orc/Undead/Tauren/Troll
     .goto 1942,46.55,28.38
@@ -556,22 +554,9 @@ step
     >>|cRXP_FRIENDLY_Silvermoon City|r: Return the Reports << BloodElf Rogue
     >>|cRXP_FRIENDLY_Silvermoon City|r: The Rune of Summoning << BloodElf Warlock
 step
-    +|cRXP_WARN_Suggested next zones at level 12|r: |cRXP_FRIENDLY_The Barrens|r (about 2.5 levels of quests, starting around Sergra Darkthorn), |cRXP_FRIENDLY_Tirisfal Glades|r (about 1.0 levels of quests, starting around Apothecary Johaan), |cRXP_FRIENDLY_Eversong Woods|r (about 0.7 levels of quests, starting around Magistrix Landra Dawnstrider). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Until level 15, suggested zones|r: |cRXP_FRIENDLY_The Barrens|r (about 2.5 levels of quests), |cRXP_FRIENDLY_Eversong Woods|r (about 1.8 levels of quests), |cRXP_FRIENDLY_Tirisfal Glades|r (about 1.3 levels of quests). Then come back to this Ghostlands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Ghostlands is planned from level 15.|r Load its guide for level 15 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 21 Ghostlands
-#subweight -10
-#name 15-18 Ghostlands: around Eralan
---RouteBuilder:next
-#next Zone Routes (Horde)\13-16 The Barrens: around Gazlowe
-
+    .xp 15 >>|cRXP_WARN_The rest of Ghostlands is planned from level 15.|r Come back to this guide then
 step
     .goto 1942,48.91,32.42
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Kalarin|r
@@ -1111,22 +1096,9 @@ step
     >>|cRXP_FRIENDLY_Undercity|r: Journey to Undercity << Orc/Undead/Tauren/Troll
     >>|cRXP_FRIENDLY_Undercity|r: Journey to Undercity << BloodElf
 step
-    +|cRXP_WARN_Suggested next zones at level 17|r: |cRXP_FRIENDLY_The Barrens|r (about 0.9 levels of quests, starting around Gazlowe). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Until level 20, suggested zones|r: |cRXP_FRIENDLY_The Barrens|r (about 1.8 levels of quests). Then come back to this Ghostlands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Ghostlands is planned from level 20.|r Load its guide for level 20 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 21 Ghostlands
-#subweight -10
-#name 20-21 Ghostlands: around Magister Kaendris
---RouteBuilder:next
-#next Zone Routes (Horde)\18-20 The Barrens: around Tonga Runetotem
-
+    .xp 20 >>|cRXP_WARN_The rest of Ghostlands is planned from level 20.|r Come back to this guide then
 step
     .goto 1942,72.23,31.15
     >>Click the |cRXP_PICK_Wanted Poster: Kel'gash the Wicked|r
@@ -1226,5 +1198,5 @@ step
     >>|cRXP_FRIENDLY_Silvermoon City|r: Hero of the Sin'dorei << BloodElf
     >>|cRXP_FRIENDLY_Silvermoon City|r: Friend of the Sin'dorei << Orc/Undead/Tauren/Troll
 step
-    +|cRXP_WARN_Suggested next zones at level 20|r: |cRXP_FRIENDLY_The Barrens|r (about 0.9 levels of quests, starting around Tonga Runetotem). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 20|r: |cRXP_FRIENDLY_The Barrens|r (about 0.9 levels of quests). Completing this step loads the guide for The Barrens --RouteBuilder:next
 ]])

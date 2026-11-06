@@ -13,12 +13,12 @@
       "start": 45,
       "end": 47.77,
       "next": 50,
-      "guide": "45-48 Tanaris: around Mazoga",
+      "guide": "45-60 Tanaris",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Mazoga",
-          "guide": "45-48 Tanaris: around Mazoga",
+          "label": "",
+          "name": "start",
+          "guide": "45-60 Tanaris",
           "level": 45,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 50,
       "end": 50.08,
       "next": 53,
-      "guide": "50-51 Tanaris",
+      "guide": "45-60 Tanaris",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "50-51 Tanaris",
+          "guide": "45-60 Tanaris",
           "level": 50,
           "index": 0
         }
@@ -45,12 +45,12 @@
       "start": 53,
       "end": 53,
       "next": 56,
-      "guide": "53-54 Tanaris",
+      "guide": "45-60 Tanaris",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "53-54 Tanaris",
+          "guide": "45-60 Tanaris",
           "level": 53,
           "index": 0
         }
@@ -61,12 +61,12 @@
       "start": 56,
       "end": 56,
       "next": 59,
-      "guide": "56-57 Tanaris",
+      "guide": "45-60 Tanaris",
       "sections": [
         {
-          "label": "RBSection4_1",
+          "label": "",
           "name": "part 4",
-          "guide": "56-57 Tanaris",
+          "guide": "45-60 Tanaris",
           "level": 56,
           "index": 0
         }
@@ -76,12 +76,12 @@
       "part": 5,
       "start": 59,
       "end": 59,
-      "guide": "59-60 Tanaris",
+      "guide": "45-60 Tanaris",
       "sections": [
         {
-          "label": "RBSection5_1",
+          "label": "",
           "name": "part 5",
-          "guide": "59-60 Tanaris",
+          "guide": "45-60 Tanaris",
           "level": 59,
           "index": 0
         }

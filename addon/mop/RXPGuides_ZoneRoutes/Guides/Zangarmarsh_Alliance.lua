@@ -1,9 +1,9 @@
 -- 62-65 Zangarmarsh: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 62, 66).
--- Split into 2 guides, listed under "62 - 67 Zangarmarsh" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 62; part 2 from 66.
 -- Edit zones/mop/Zangarmarsh.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 62 - 67 Zangarmarsh
-#subweight -62
-#name 62-64 Zangarmarsh: around Ysiel Windsinger
+#name 62-65 Zangarmarsh
 --RouteBuilder:next
-#next Zone Routes (Alliance)\62-65 Terokkar Forest: around Earthbinder Tavgren
+#next Zone Routes (Alliance)\65-68 Nagrand;Zone Routes (Alliance)\62-70 Terokkar Forest
 
 step
     .goto 102,78.40,62.02
@@ -874,23 +872,10 @@ step
     +|cRXP_WARN_That is all of Zangarmarsh for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Hellfire Peninsula|r: Warning the Cenarion Circle
     >>|cRXP_FRIENDLY_Terokkar Forest|r: The Fate of Tuurem << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 63|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.9 levels of quests, starting around Earthbinder Tavgren). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of Zangarmarsh is planned from level 66.|r Load its guide for level 66 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 62 - 67 Zangarmarsh
-#subweight -62
-#name 66-67 Zangarmarsh
---RouteBuilder:next
-#next Zone Routes (Alliance)\65-68 Nagrand;Zone Routes (Alliance)\62-65 Terokkar Forest: around Earthbinder Tavgren
-
+    +|cRXP_WARN_Until level 66, suggested zones|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.9 levels of quests). Then come back to this Zangarmarsh guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 66 >>|cRXP_WARN_The rest of Zangarmarsh is planned from level 66.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 102,41.21,28.67
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Timothy Daniels|r
@@ -900,5 +885,5 @@ step
     +|cRXP_WARN_End of the Zangarmarsh route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Blade's Edge Mountains|r: No Time for Curiosity << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 66|r: |cRXP_FRIENDLY_Nagrand|r (about 0.7 levels of quests, starting around Hemet Nesingwary), |cRXP_FRIENDLY_Terokkar Forest|r (about 0.7 levels of quests, starting around Earthbinder Tavgren). Completing this step loads the guide for Nagrand --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 66|r: |cRXP_FRIENDLY_Nagrand|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Terokkar Forest|r (about 0.7 levels of quests). Completing this step loads the guide for Nagrand --RouteBuilder:next
 ]])

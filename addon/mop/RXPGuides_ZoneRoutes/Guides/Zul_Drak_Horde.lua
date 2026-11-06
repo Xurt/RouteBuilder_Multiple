@@ -1,9 +1,9 @@
 -- 74-78 Zul'Drak: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 74, 77, 80).
--- Split into 3 guides, listed under "74 - 81 Zul'Drak" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 74; part 2 from 77; part 3 from 80.
 -- Edit zones/mop/Zul'Drak.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 74 - 81 Zul'Drak
-#subweight -74
-#name 74-75 Zul'Drak: around Crusader Lord Lantinga
+#name 74-78 Zul'Drak
 --RouteBuilder:next
-#next Zone Routes (Horde)\72-75 Dragonblight;Zone Routes (Horde)\70-72 Howling Fjord: around Lurielle;Zone Routes (Horde)\73-75 Grizzly Hills: around Drakuru
+#next Zone Routes (Horde)\76-78 Sholazar Basin
 
 step
     .goto 121,32.03,74.42
@@ -1204,22 +1202,9 @@ step
     +|cRXP_WARN_That is all of Zul'Drak for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Dalaran - (Dungeon/Raid)|r: The Magical Kingdom of Dalaran
 step
-    +|cRXP_WARN_Suggested next zones at level 74|r: |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests, starting around Aurastrasza), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests, starting around Lurielle), |cRXP_FRIENDLY_Grizzly Hills|r (about 0.5 levels of quests, starting around Drakuru). Completing this step loads the guide for Dragonblight --RouteBuilder:next
+    +|cRXP_WARN_Until level 77, suggested zones|r: |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests), |cRXP_FRIENDLY_Grizzly Hills|r (about 0.5 levels of quests). Then come back to this Zul'Drak guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Zul'Drak is planned from level 77.|r Load its guide for level 77 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 74 - 81 Zul'Drak
-#subweight -74
-#name 77-78 Zul'Drak: around Gurgthock
---RouteBuilder:next
-#next Zone Routes (Horde)\76-78 Sholazar Basin;Zone Routes (Horde)\78-80 The Storm Peaks;Zone Routes (Horde)\72-75 Dragonblight
-
+    .xp 77 >>|cRXP_WARN_The rest of Zul'Drak is planned from level 77.|r Come back to this guide then
 step
     .goto 121,14.06,73.80
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Stefan Vadu|r
@@ -1896,22 +1881,9 @@ step
     .unitscan Har'koa
     .isQuestComplete 12665
 step
-    +|cRXP_WARN_Suggested next zones at level 77|r: |cRXP_FRIENDLY_Sholazar Basin|r (about 1.1 levels of quests, starting around Debaar), |cRXP_FRIENDLY_The Storm Peaks|r (about 0.9 levels of quests, starting around Ricket), |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests, starting around Aurastrasza). Completing this step loads the guide for Sholazar Basin --RouteBuilder:next
+    +|cRXP_WARN_Until level 80, suggested zones|r: |cRXP_FRIENDLY_Sholazar Basin|r (about 1.1 levels of quests), |cRXP_FRIENDLY_The Storm Peaks|r (about 0.9 levels of quests), |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests). Then come back to this Zul'Drak guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Zul'Drak is planned from level 80.|r Load its guide for level 80 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 74 - 81 Zul'Drak
-#subweight -74
-#name 80-81 Zul'Drak
---RouteBuilder:next
-#next Zone Routes (Horde)\76-78 Sholazar Basin
-
+    .xp 80 >>|cRXP_WARN_The rest of Zul'Drak is planned from level 80.|r Come back to this guide then
 step
     .goto 121,25.28,63.96
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Crusader MacKellar|r
@@ -1987,5 +1959,5 @@ step
 step
     +|cRXP_WARN_End of the Zul'Drak route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 80|r: |cRXP_FRIENDLY_Sholazar Basin|r (about 0.6 levels of quests, starting around Debaar). Completing this step loads the guide for Sholazar Basin --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 80|r: |cRXP_FRIENDLY_Sholazar Basin|r (about 0.6 levels of quests). Completing this step loads the guide for Sholazar Basin --RouteBuilder:next
 ]])

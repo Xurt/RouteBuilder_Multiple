@@ -1,8 +1,7 @@
 -- 10-19 The Barrens: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
--- Split into 2 guides, listed under "10 - 20 The Barrens" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
 -- Edit zones/mop/The Barrens.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -12,10 +11,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 10 - 20 The Barrens
-#subweight -10
-#name 10-15 The Barrens: around Togrik
-#next Zone Routes (Horde)\15-20 The Barrens: around Sergra Darkthorn
+#name 10-19 The Barrens
+--RouteBuilder:next
+#next Zone Routes (Horde)\20-25 Hillsbrad Foothills
 
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,66.62,45.49
@@ -550,59 +548,29 @@ step
     .turnin 14072 >>Turn in Flushing Out Verog << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .turnin 13995 >>Turn in King of Centaur Mountain
     .target Shoe
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 10,49.99,59.85
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergra Darkthorn|r
-    .turnin 905 >>Turn in Into the Raptor's Den
-    .target Sergra Darkthorn
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 20 The Barrens
-#subweight -10
-#name 15-20 The Barrens: around Sergra Darkthorn
---RouteBuilder:next
-#next Zone Routes (Horde)\20-22 Hillsbrad Foothills: around High Executor Darthalia
-
 step
     .goto 10,49.99,59.85
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergra Darkthorn|r
+    .turnin 905 >>Turn in Into the Raptor's Den << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 13991 >>Accept The Purloined Payroll
     .target Sergra Darkthorn
-    .isQuestTurnedIn 905 --any of: Into the Raptor's Den
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,49.49,58.66
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tonga Runetotem|r
     .turnin 877 >>Turn in The Stagnant Oasis
     .target Tonga Runetotem
-    .isOnQuest 877
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,48.59,58.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apothecary Helbrim|r
     .turnin 13998 >>Turn in In Fungus We Trust
-    .target Apothecary Helbrim
-    .isOnQuest 13998
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 10,48.59,58.33
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apothecary Helbrim|r
     .accept 13999 >>Accept Who's Shroomin' Who?
     .target Apothecary Helbrim
-    .isQuestTurnedIn 13998 --any of: In Fungus We Trust
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 10,37.84,55.27
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Regthar Deathgate|r
-    .accept 851 >>Accept Verog the Dervish
-    .target Regthar Deathgate
-    .isQuestTurnedIn 14072 --any of: Flushing Out Verog
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .xp 15 >>Grind to level 15 (Centaur Bracers needs it)
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,37.84,55.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Regthar Deathgate|r
+    .accept 851 >>Accept Verog the Dervish
     .accept 855 >>Accept Centaur Bracers
     .target Regthar Deathgate
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
@@ -610,19 +578,16 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Kill |cRXP_ENEMY_Verog the Dervish|r and loot |cRXP_LOOT_Verog's Head|r
     .complete 851,1 --Verog's Head (1)
     .mob Verog the Dervish
-    .isOnQuest 851
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,55.20,78.40
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shoe|r
     .turnin 851 >>Turn in Verog the Dervish
     .target Shoe
-    .isOnQuest 851
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,67.02,74.80
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sashya|r
     .turnin 13999 >>Turn in Who's Shroomin' Who?
     .target Sashya
-    .isOnQuest 13999
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,67.72,74.00
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Thalo'thas Brightsun|r
@@ -632,12 +597,7 @@ step
     .goto 10,66.86,72.79
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gazrog|r
     .turnin 13991 >>Turn in The Purloined Payroll
-    .target Gazrog
-    .isOnQuest 13991
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 10,66.86,72.79
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gazrog|r
-    .accept 14066 >>Accept Investigate the Wreckage
+    .accept 14066 >>Accept Investigate the Wreckage << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Gazrog
 step
     .goto 10,67.86,71.50
@@ -696,7 +656,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 14049 >>Accept A Most Unusual Map
     .target Baron Longshore
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along96
+    #completewith Along92
     >>As you go: Kill |cRXP_ENEMY_Chief Engineer Foote|r and loot |cRXP_LOOT_Ship Schematics|r. |cRXP_WARN_Anything left is finished later|r
     .complete 14034,1 --Ship Schematics (1)
     .mob Chief Engineer Foote
@@ -710,7 +670,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Caravan Scene Searched
     .complete 14066,1 --Caravan Scene Searched
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along96
+    #label Along92
     .goto 10,66.86,72.79
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gazrog|r
     .turnin 14066 >>Turn in Investigate the Wreckage
@@ -726,12 +686,12 @@ step
     .accept 14068 >>Accept Waptor Twapping
     .target Kala'ma
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along99
+    #completewith Along95
     >>As you go: Kill |cRXP_ENEMY_Chief Engineer Foote|r and loot |cRXP_LOOT_Ship Schematics|r. |cRXP_WARN_Anything left is finished later|r
     .complete 14034,1 --Ship Schematics (1)
     .mob Chief Engineer Foote
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along99
+    #label Along95
     .goto 10,66.86,72.79
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gazrog|r
     .turnin 869 >>Turn in To Track a Thief
@@ -772,7 +732,7 @@ step
     >>Loot the |cRXP_PICK_Woaded Waptor Twaps|r for |cRXP_LOOT_Wittle Waptor|r
     .complete 14068,1 --Wittle Waptor (5)
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along106
+    #completewith Along102
     >>As you go: Kill |cRXP_ENEMY_Southsea Cutthroats|r, |cRXP_ENEMY_Southsea Privateers|r and |cRXP_ENEMY_Southsea Quest Counters|r. |cRXP_WARN_Anything left is finished later|r
     .complete 887,1 --Southsea Cutthroat (8)
     .mob Southsea Cutthroat
@@ -790,7 +750,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .complete 14056,1 --Glomp's Booty (1)
     .mob Glomp
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along106
+    #label Along102
     .goto 10,77.24,91.40
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tony Two-Tusk|r
     .turnin 14056 >>Turn in Glomp is Sitting On It
@@ -902,7 +862,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kranal Fiss|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 13971 >>Turn in The Kodo's Return
     .unitscan Kranal Fiss
-    .isOnQuest 13971
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,62.29,17.47
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sputtervalve|r
@@ -926,7 +885,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .turnin 29088 >>Turn in Hyena Extermination
     .target Nozzlepot
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along132
+    #completewith Along128
     >>As you go: Kill |cRXP_ENEMY_Venture Co. Mercenaries|r, |cRXP_ENEMY_Venture Co. Drudgers|r and |cRXP_ENEMY_Venture Co. Peons|r. Loot them for |cRXP_LOOT_Sputtervalve's Blueprints|r. |cRXP_WARN_Anything left is finished later|r
     .complete 29086,1 --Sputtervalve's Blueprints (6)
     .mob Venture Co. Mercenary
@@ -956,7 +915,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .complete 29023,1 --Console Key (1)
     .mob Tinkerer Sniggles
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along132
+    #label Along128
     .goto 10,50.28,25.71
     >>Click the |cRXP_PICK_Control Console|r
     .turnin 29023 >>Turn in Samophlange
@@ -974,7 +933,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 29026 >>Accept Wenikee Boltbucket
     .target Brak Blusterpipe
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along136
+    #completewith Along132
     >>As you go: Kill |cRXP_ENEMY_Venture Co. Mercenaries|r, |cRXP_ENEMY_Venture Co. Drudgers|r and |cRXP_ENEMY_Venture Co. Peons|r. Loot them for |cRXP_LOOT_Sputtervalve's Blueprints|r. |cRXP_WARN_Anything left is finished later|r
     .complete 29086,1 --Sputtervalve's Blueprints (6)
     .mob Venture Co. Mercenary
@@ -986,12 +945,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 858 >>Accept Ignition
     .target Wizzlecrank's Shredder
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along136
+    #completewith Along132
     >>As you go: Kill |cRXP_ENEMY_Supervisor Lugwizzle|r and loot |cRXP_LOOT_Ignition Key|r. |cRXP_WARN_Anything left is finished later|r
     .complete 858,1 --Ignition Key (1)
     .mob Supervisor Lugwizzle
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along136
+    #label Along132
     #loop
     .goto 10,58.21,18.21,0
     .goto 10,58.21,18.21,40,0
@@ -1034,13 +993,13 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 29090 >>Accept A Burning Threat
     .target Brogor
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along142
+    #completewith Along138
     >>As you go: Kill |cRXP_ENEMY_Burning Blade Acolytes|r and |cRXP_ENEMY_Burning Blade Bruisers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 29090,1 --Burning Blade Acolyte (8)
     .mob Burning Blade Acolyte
     .mob Burning Blade Bruiser
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along142
+    #label Along138
     #loop
     .goto 10,42.48,31.92,0
     .goto 10,42.48,31.92,40,0
@@ -1056,24 +1015,13 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Kill |cRXP_ENEMY_Witchwing Slayers|r
     .complete 875,1 --Witchwing Slayer slain (6)
     .mob Witchwing Slayer
-    .isOnQuest 875
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 10,30.58,45.93
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darsok Swiftdagger|r
-    .accept 867 >>Accept Harpy Raiders
-    .target Darsok Swiftdagger
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,30.58,45.93
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darsok Swiftdagger|r
     .turnin 875 >>Turn in Harpy Lieutenants
-    .target Darsok Swiftdagger
-    .isOnQuest 875
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 10,30.58,45.93
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darsok Swiftdagger|r
+    .accept 867 >>Accept Harpy Raiders
     .accept 876 >>Accept Serena Bloodfeather
     .target Darsok Swiftdagger
-    .isQuestTurnedIn 875 --any of: Harpy Lieutenants
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 10,29.36,37.88,0
@@ -1157,72 +1105,42 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Kill |cRXP_ENEMY_Serena Bloodfeather|r and loot |cRXP_LOOT_Serena's Head|r
     .complete 876,1 --Serena's Head (1)
     .mob Serena Bloodfeather
-    .isOnQuest 876
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,30.58,45.93
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darsok Swiftdagger|r
     .turnin 29094 >>Turn in The Short Way Home
-    .turnin 867 >>Turn in Harpy Raiders
-    .target Darsok Swiftdagger
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 10,30.58,45.93
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darsok Swiftdagger|r
     .turnin 876 >>Turn in Serena Bloodfeather
-    .target Darsok Swiftdagger
-    .isOnQuest 876
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 10,30.58,45.93
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darsok Swiftdagger|r
+    .turnin 867 >>Turn in Harpy Raiders
     .accept 29095 >>Accept Report to Thork
     .target Darsok Swiftdagger
-    .isQuestTurnedIn 876 --any of: Serena Bloodfeather
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,37.84,55.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Regthar Deathgate|r
     .turnin 855 >>Turn in Centaur Bracers
-    .target Regthar Deathgate
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 10,37.84,55.27
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Regthar Deathgate|r
     .accept 852 >>Accept Hezrul Bloodmark
     .target Regthar Deathgate
-    .isQuestTurnedIn 851 --any of: Verog the Dervish
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,39.24,70.23
     >>Kill |cRXP_ENEMY_Hezrul Bloodmark|r and loot |cRXP_LOOT_Hezrul's Head|r
     .complete 852,1 --Hezrul's Head (1)
     .mob Hezrul Bloodmark
-    .isOnQuest 852
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 10,48.69,59.61
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thork|r
-    .turnin 29095 >>Turn in Report to Thork
-    .target Thork
-    .isOnQuest 29095
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 10,48.69,59.61
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thork|r
-    .accept 29109 >>Accept Mor'shan Caravan Pick-Up
-    .target Thork
-    .isQuestTurnedIn 29095 --any of: Report to Thork
 step
     .goto 10,48.69,59.61
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thork|r
+    .turnin 29095 >>Turn in Report to Thork << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .accept 29109 >>Accept Mor'shan Caravan Pick-Up << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 14073 >>Accept Deathgate's Reinforcements
     .target Thork
-    .isQuestTurnedIn 851 --any of: Verog the Dervish
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,50.16,57.20
     >>Speak to Rocco Whipshank and ride north with the Mor'shan Caravan.
     .complete 29109,2 --Chief Caravan Kodo
     .target Chief Caravan Kodo
-    .isOnQuest 29109
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,50.33,57.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rocco Whipshank|r
     .complete 29109,1 --Rocco Whipshank
     .target Rocco Whipshank
-    .isOnQuest 29109
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,72.99,65.56
     >>Kill |cRXP_ENEMY_Riverboat|r
@@ -1232,67 +1150,40 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,47.53,39.58
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nagala Whipshank|r
     .turnin 29109 >>Turn in Mor'shan Caravan Pick-Up
-    .target Nagala Whipshank
-    .isOnQuest 29109
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 10,47.53,39.58
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nagala Whipshank|r
     .accept 29110 >>Accept Mor'shan Caravan Rescue
     .target Nagala Whipshank
-    .isQuestTurnedIn 29109 --any of: Mor'shan Caravan Pick-Up
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 10,37.84,55.27
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Regthar Deathgate|r
-    .turnin 852 >>Turn in Hezrul Bloodmark
-    .target Regthar Deathgate
-    .isOnQuest 852
 step
     .goto 10,37.84,55.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Regthar Deathgate|r
+    .turnin 852 >>Turn in Hezrul Bloodmark << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .turnin 14073 >>Turn in Deathgate's Reinforcements
     .target Regthar Deathgate
-    .isOnQuest 14073
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,41.07,39.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balgor Whipshank|r
     .turnin 29110 >>Turn in Mor'shan Caravan Rescue
-    .target Balgor Whipshank
-    .isOnQuest 29110
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 10,41.07,39.20
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balgor Whipshank|r
     .accept 29112 >>Accept Demon Seed
     .target Balgor Whipshank
-    .isQuestTurnedIn 29110 --any of: Mor'shan Caravan Rescue
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,42.48,38.80
     >>Open the |cRXP_PICK_The Demon Seed|r. Loot it for |cRXP_LOOT_Demon Seed|r
     .complete 29112,1 --Demon Seed (1)
-    .isOnQuest 29112
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,47.53,39.58
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nagala Whipshank|r
     .turnin 29112 >>Turn in Demon Seed
-    .target Nagala Whipshank
-    .isOnQuest 29112
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 10,47.53,39.58
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nagala Whipshank|r
     .accept 29111 >>Accept Mor'shan Caravan Delivery
     .target Nagala Whipshank
-    .isQuestTurnedIn 29112 --any of: Demon Seed
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,47.53,39.58
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nagala Whipshank|r
     .complete 29111,1 --Nagala Whipshank
     .target Nagala Whipshank
-    .isOnQuest 29111
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,47.81,39.53
     >>Defend the Mor'shan Caravan.
     .complete 29111,2 --Master Caravan Kodo
     .target Master Caravan Kodo
-    .isOnQuest 29111
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,44.34,25.10
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brogor|r
@@ -1303,7 +1194,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kadrak|r
     .turnin 29111 >>Turn in Mor'shan Caravan Delivery
     .target Kadrak
-    .isOnQuest 29111
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 10,62.50,16.75
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nozzlepot|r
@@ -1359,5 +1249,5 @@ step
     >>|cRXP_FRIENDLY_Silverpine Forest|r: Until Death Do Us Part << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Read the Manual << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 20|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 1.2 levels of quests, starting around High Executor Darthalia). Completing this step loads the guide for Hillsbrad Foothills --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 20|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 1.2 levels of quests). Completing this step loads the guide for Hillsbrad Foothills --RouteBuilder:next
 ]])

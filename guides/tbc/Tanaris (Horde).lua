@@ -1,9 +1,9 @@
 -- 43-54 Tanaris: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 43, 46, 49).
--- Split into 3 guides, listed under "43 - 50 Tanaris" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 43; part 2 from 46; part 3 from 49.
 -- Edit zones/tbc/Tanaris.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 43 - 50 Tanaris
-#subweight -43
-#name 43-44 Tanaris: around Yeh'kinya
+#name 43-54 Tanaris
 --RouteBuilder:next
-#next Zone Routes (Horde)\41-43 Stranglethorn Vale: around "Sea Wolf" MacKinley;Zone Routes (Horde)\42-43 Feralas: around Hadoken Swiftstrider
+#next Zone Routes (Horde)\50-56 Un'Goro Crater;Zone Routes (Horde)\43-53 The Hinterlands
 
 step
     .goto 1446/1,-3838.49,-7186.46
@@ -491,22 +489,9 @@ step
     >>|cRXP_FRIENDLY_Feralas and back here|r: Screecher Spirits, The Super Egg-O-Matic
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Scarab Shells, Troll Temper, Divino-matic Rod
 step
-    +|cRXP_WARN_Suggested next zones at level 43|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests, starting around "Sea Wolf" MacKinley), |cRXP_FRIENDLY_Feralas|r (about 0.6 levels of quests, starting around Hadoken Swiftstrider). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Until level 46, suggested zones|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Feralas|r (about 0.6 levels of quests). Then come back to this Tanaris guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Tanaris is planned from level 46.|r Load its guide for level 46 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 43 - 50 Tanaris
-#subweight -43
-#name 46-47 Tanaris: around Senior Surveyor Fizzledowser
---RouteBuilder:next
-#next Zone Routes (Horde)\46-48 The Hinterlands: around Huntsman Markhor
-
+    .xp 46 >>|cRXP_WARN_The rest of Tanaris is planned from level 46.|r Come back to this guide then
 step
     .goto 1446/1,-4829.33,-6900.34
     >>Click the |cRXP_PICK_Wanted Poster|r
@@ -738,22 +723,9 @@ step
     >>|cRXP_FRIENDLY_another zone|r: Into the Depths, Secret of the Circle
     >>|cRXP_FRIENDLY_The Hinterlands and back here|r: Sprinkle's Secret Ingredient
 step
-    +|cRXP_WARN_Suggested next zones at level 46|r: |cRXP_FRIENDLY_The Hinterlands|r (about 0.9 levels of quests, starting around Huntsman Markhor). Completing this step loads the guide for The Hinterlands --RouteBuilder:next
+    +|cRXP_WARN_Until level 49, suggested zones|r: |cRXP_FRIENDLY_The Hinterlands|r (about 0.9 levels of quests). Then come back to this Tanaris guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Tanaris is planned from level 49.|r Load its guide for level 49 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 43 - 50 Tanaris
-#subweight -43
-#name 49-50 Tanaris
---RouteBuilder:next
-#next Zone Routes (Horde)\50-52 Un'Goro Crater: around Torwa Pathfinder;Zone Routes (Horde)\46-48 The Hinterlands: around Huntsman Markhor
-
+    .xp 49 >>|cRXP_WARN_The rest of Tanaris is planned from level 49.|r Come back to this guide then
 step
     .goto 1446/1,-3833.66,-7115.62
     >>Click the |cRXP_PICK_Egg-O-Matic|r
@@ -916,5 +888,5 @@ step
     >>|cRXP_FRIENDLY_Un'Goro Crater|r: Linken's Sword
     >>|cRXP_FRIENDLY_Un'Goro Crater and back here|r: Super Sticky
 step
-    +|cRXP_WARN_Suggested next zones at level 49|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.0 levels of quests, starting around Torwa Pathfinder; 1 quest from here hands in there), |cRXP_FRIENDLY_The Hinterlands|r (about 0.8 levels of quests, starting around Huntsman Markhor). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 49|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.0 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_The Hinterlands|r (about 0.8 levels of quests). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
 ]])

@@ -13,12 +13,12 @@
       "start": 35,
       "end": 37.06,
       "next": 40,
-      "guide": "35-38 Dustwallow Marsh: around Krog",
+      "guide": "35-46 Dustwallow Marsh",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Krog",
-          "guide": "35-38 Dustwallow Marsh: around Krog",
+          "label": "",
+          "name": "start",
+          "guide": "35-46 Dustwallow Marsh",
           "level": 35,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 40,
       "end": 40.68,
       "next": 43,
-      "guide": "40-41 Dustwallow Marsh: around Draz\u0027Zilb",
+      "guide": "35-46 Dustwallow Marsh",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Draz\u0027Zilb",
-          "guide": "40-41 Dustwallow Marsh: around Draz\u0027Zilb",
+          "label": "",
+          "name": "part 2",
+          "guide": "35-46 Dustwallow Marsh",
           "level": 40,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 43,
       "end": 43.08,
-      "guide": "43-44 Dustwallow Marsh",
+      "guide": "35-46 Dustwallow Marsh",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "43-44 Dustwallow Marsh",
+          "guide": "35-46 Dustwallow Marsh",
           "level": 43,
           "index": 0
         }

@@ -1,9 +1,9 @@
 -- 30-50 Stranglethorn Vale: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 5 parts (from level 30, 34, 38, 42, 45).
--- Split into 5 guides, listed under "30 - 46 Stranglethorn Vale" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 30; part 2 from 34; part 3 from 38; part 4 from 42; part 5 from 45.
 -- Edit zones/tbc/Stranglethorn Vale.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 30 - 46 Stranglethorn Vale
-#subweight -30
-#name 30-32 Stranglethorn Vale: around Krazek
---RouteBuilder:next
-#next Zone Routes (Alliance)\28-29 Duskwood: around Sirra Von'Indi
+#name 30-50 Stranglethorn Vale
 
 step
     .goto 1434/0,474.29,-14320.24
@@ -444,22 +440,9 @@ step
     >>|cRXP_FRIENDLY_Thousand Needles|r: Rumors for Kravel
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Green Hills of Stranglethorn
 step
-    +|cRXP_WARN_Suggested next zones at level 31|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests, starting around Sirra Von'Indi). Completing this step loads the guide for Duskwood --RouteBuilder:next
+    +|cRXP_WARN_Until level 34, suggested zones|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests). Then come back to this Stranglethorn Vale guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 34.|r Load its guide for level 34 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 30 - 46 Stranglethorn Vale
-#subweight -30
-#name 34-35 Stranglethorn Vale: around Krazek
---RouteBuilder:next
-#next Zone Routes (Alliance)\35-37 Dustwallow Marsh: around Captain Garran Vimes;Zone Routes (Alliance)\35-36 Badlands: around Prospector Ryedol
-
+    .xp 34 >>|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 34.|r Come back to this guide then
 step << Warlock
     .goto 1434/0,388.78,-14439.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Xizk Goodstitch|r
@@ -765,22 +748,9 @@ step
     >>|cRXP_FRIENDLY_The Barrens|r: Components for the Enchanted Gold Bloodrobe << Warlock
     >>|cRXP_FRIENDLY_Arathi Highlands and back here|r: Favor for Krazek
 step
-    +|cRXP_WARN_Suggested next zones at level 35|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 2.2 levels of quests, starting around Captain Garran Vimes), |cRXP_FRIENDLY_Badlands|r (about 0.5 levels of quests, starting around Prospector Ryedol). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
+    +|cRXP_WARN_Until level 38, suggested zones|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 2.2 levels of quests), |cRXP_FRIENDLY_Badlands|r (about 0.5 levels of quests). Then come back to this Stranglethorn Vale guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 38.|r Load its guide for level 38 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 30 - 46 Stranglethorn Vale
-#subweight -30
-#name 38-40 Stranglethorn Vale: around Fleet Master Seahorn
---RouteBuilder:next
-#next Zone Routes (Alliance)\37-39 Dustwallow Marsh: around "Swamp Eye" Jarl;Zone Routes (Alliance)\38-39 Arathi Highlands: around Skuerto
-
+    .xp 38 >>|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 38.|r Come back to this guide then
 step
     .goto 1434/0,419.41,-14331.30
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kelsey Yance|r
@@ -1194,20 +1164,9 @@ step
     >>|cRXP_FRIENDLY_Arathi Highlands|r: Sunken Treasure
     >>|cRXP_FRIENDLY_Thousand Needles|r: Goblin Sponsorship
 step
-    +|cRXP_WARN_Suggested next zones at level 39|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 0.6 levels of quests, starting around "Swamp Eye" Jarl), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.6 levels of quests, starting around Skuerto). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
+    +|cRXP_WARN_Until level 42, suggested zones|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.8 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.6 levels of quests). Then come back to this Stranglethorn Vale guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 42.|r Load its guide for level 42 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 30 - 46 Stranglethorn Vale
-#subweight -30
-#name 42-43 Stranglethorn Vale: around "Sea Wolf" MacKinley
-
+    .xp 42 >>|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 42.|r Come back to this guide then
 step
     .goto 1434/0,419.41,-14331.30
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kelsey Yance|r
@@ -1519,18 +1478,7 @@ step
     >>|cRXP_FRIENDLY_Thousand Needles|r: Zanzil's Mixture and a Fool's Stout
     >>|cRXP_FRIENDLY_The Hinterlands and back here|r: Whiskey Slim's Lost Grog
 step
-    +|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 45.|r Load its guide for level 45 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 30 - 46 Stranglethorn Vale
-#subweight -30
-#name 45-46 Stranglethorn Vale
-
+    .xp 45 >>|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 45.|r Come back to this guide then
 step
     .goto 1434/0,501.09,-14453.39
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Krazek|r

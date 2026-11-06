@@ -1,9 +1,9 @@
 -- 31-39 Desolace: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 31, 34, 37).
--- Split into 3 guides, listed under "31 - 38 Desolace" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 31; part 2 from 34; part 3 from 37.
 -- Edit zones/classic/Desolace.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 31 - 38 Desolace
-#subweight -31
-#name 31-32 Desolace
+#name 31-39 Desolace
 
 step << Warrior/Hunter/Rogue/Druid/Shaman
     .goto 1443/1,1718.36,-423.01
@@ -318,18 +316,7 @@ step
     >>|cRXP_FRIENDLY_Orgrimmar|r: Alliance Relations
     >>|cRXP_FRIENDLY_Stranglethorn Vale|r: Hunting in Stranglethorn
 step
-    +|cRXP_WARN_The rest of Desolace is planned from level 34.|r Load its guide for level 34 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 31 - 38 Desolace
-#subweight -31
-#name 34-35 Desolace
-
+    .xp 34 >>|cRXP_WARN_The rest of Desolace is planned from level 34.|r Come back to this guide then
 step
     .goto 1443/1,1707.12,-1333.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Felgur Twocuts|r
@@ -514,18 +501,7 @@ step
     .turnin 6142 >>Turn in Clam Bait
     .target Mai'Lahii
 step
-    +|cRXP_WARN_The rest of Desolace is planned from level 37.|r Load its guide for level 37 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 31 - 38 Desolace
-#subweight -31
-#name 37-38 Desolace
-
+    .xp 37 >>|cRXP_WARN_The rest of Desolace is planned from level 37.|r Come back to this guide then
 step
     .goto 1443/1,1431.08,-716.80
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bibbly F'utzbuckle|r

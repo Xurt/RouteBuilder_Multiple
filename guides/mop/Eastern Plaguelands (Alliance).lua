@@ -1,9 +1,9 @@
 -- 40-45 Eastern Plaguelands: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 40, 46, 83).
--- Split into 4 guides, listed under "40 - 84 Eastern Plaguelands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 40; part 2 from 46; part 3 from 83.
 -- Edit zones/mop/Eastern Plaguelands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 40 - 84 Eastern Plaguelands
-#subweight -40
-#name 40-42 Eastern Plaguelands: around Chromie
-#next Zone Routes (Alliance)\42-44 Eastern Plaguelands: around Tarenar Sunstrike
+#name 40-45 Eastern Plaguelands
+--RouteBuilder:next
+#next Zone Routes (Alliance)\82-83 Deepholm
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
@@ -911,19 +910,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rimblat Earthshatter|r
     .accept 27457 >>Accept An Opportune Alliance
     .target Rimblat Earthshatter
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 40 - 84 Eastern Plaguelands
-#subweight -40
-#name 42-44 Eastern Plaguelands: around Tarenar Sunstrike
---RouteBuilder:next
-#next Zone Routes (Alliance)\38-41 Dustwallow Marsh: around Tabetha
-
 step
     #loop
     .goto 23,73.71,52.10,0
@@ -935,21 +921,8 @@ step
     .goto 23,9.02,66.52,40,0
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fiona|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 27457 >>Turn in An Opportune Alliance
-    .unitscan Fiona
-    .isOnQuest 27457
-step
-    #loop
-    .goto 23,73.71,52.10,0
-    .goto 23,73.71,52.10,40,0
-    .goto 23,61.48,42.69,40,0
-    .goto 23,50.54,20.16,40,0
-    .goto 23,52.92,53.06,40,0
-    .goto 23,34.86,69.15,40,0
-    .goto 23,9.02,66.52,40,0
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fiona|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 27466 >>Turn in Argent Call: Northdale
     .unitscan Fiona
-    .isOnQuest 27466
 step
     .goto 23,61.58,43.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gamella Cracklefizz|r
@@ -967,7 +940,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tarenar Sunstrike|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 27487 >>Accept Ix'lar the Underlord
     .unitscan Tarenar Sunstrike
-    .isQuestTurnedIn 27466 --any of: Argent Call: Northdale
 step
     .goto 23,61.00,44.19
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Deacon Andaal|r
@@ -983,8 +955,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vex'tul|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 27481 >>Accept Out of the Ziggurat
     .unitscan Vex'tul
-    .isQuestTurnedIn 27449 --Honor and Strength
-    .isQuestTurnedIn 27465 --Argent Call: The Noxious Glade
 step
     .goto 23,61.64,43.83
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Richard Trueflight|r
@@ -997,24 +967,20 @@ step
     .goto 23,62.61,34.48,40,0
     .goto 23,60.72,31.73,40,0
     >>Kill |cRXP_ENEMY_Scourge Guards|r, |cRXP_ENEMY_Gangled Golems|r and |cRXP_ENEMY_Nerubian Sycophants|r
+    >>Kill |cRXP_ENEMY_Ix'lar the Underlord|r
     .complete 27487,2 --Scourge Guard (8)
+    .complete 27487,1 --Ix'lar the Underlord slain (1)
     .mob Scourge Guard
     .mob Gangled Golem
     .mob Nerubian Sycophant
-    .isOnQuest 27487
-step
-    .goto 23,60.01,31.65
-    >>Kill |cRXP_ENEMY_Ix'lar the Underlord|r
-    .complete 27487,1 --Ix'lar the Underlord slain (1)
     .mob Ix'lar the Underlord
-    .isOnQuest 27487
 step
     .goto 23,55.08,27.22
     >>Kill |cRXP_ENEMY_Borelgore|r
     .complete 27477,1 --Borelgore slain (1)
     .mob Borelgore
 step
-    #completewith Along116
+    #completewith Along117
     >>As you go: Kill |cRXP_ENEMY_Mossflayer Scouts|r, |cRXP_ENEMY_Mossflayer Shadowhunters|r, |cRXP_ENEMY_Mossflayer Cannibals|r and |cRXP_ENEMY_Warlord Thresh'jins|r. Loot them for |cRXP_LOOT_Mossflayer Eye|r. |cRXP_WARN_Anything left is finished later|r
     .complete 27479,1 --Mossflayer Eye (30)
     .mob Mossflayer Scout
@@ -1022,12 +988,10 @@ step
     .mob Mossflayer Cannibal
     .mob Warlord Thresh'jin
 step
-    #label Along116
     .goto 23,66.81,9.86
     >>Kill |cRXP_ENEMY_Warlord Thresh'jin|r and loot |cRXP_LOOT_Body of Warlord Thresh'jin|r
     .complete 27481,1 --Body of Warlord Thresh'jin (1)
     .mob Warlord Thresh'jin
-    .isOnQuest 27481
 step
     #loop
     .goto 23,52.62,20.48,0
@@ -1037,39 +1001,18 @@ step
     .goto 23,53.97,53.63,40,0
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vex'tul|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 27481 >>Turn in Out of the Ziggurat
-    .unitscan Vex'tul
-    .isOnQuest 27481
-step
-    #loop
-    .goto 23,53.97,53.63,0
-    .goto 23,53.97,53.63,40,0
-    .goto 23,52.77,51.35,40,0
-    .goto 23,60.61,43.33,40,0
-    .goto 23,52.62,20.48,40,0
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vex'tul|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 27482 >>Accept Into the Flames
     .unitscan Vex'tul
-    .isQuestTurnedIn 27481 --any of: Out of the Ziggurat
-step
-    #completewith Along120
-    >>As you go: Kill |cRXP_ENEMY_Mossflayer Scouts|r, |cRXP_ENEMY_Mossflayer Shadowhunters|r, |cRXP_ENEMY_Mossflayer Cannibals|r and |cRXP_ENEMY_Warlord Thresh'jins|r. Loot them for |cRXP_LOOT_Mossflayer Eye|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 27479,1 --Mossflayer Eye (30)
-    .mob Mossflayer Scout
-    .mob Mossflayer Shadowhunter
-    .mob Mossflayer Cannibal
-    .mob Warlord Thresh'jin
 step
     .goto 23,67.42,8.93
     >>Click the |cRXP_PICK_Bonfire|r
     .complete 27482,1 --Bonfire
-    .isOnQuest 27482
 step
-    #label Along120
+    #label Along117
     .goto 23,67.34,9.10
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
     .turnin 27482 >>Turn in Into the Flames
     .target ?
-    .isOnQuest 27482
 step
     #loop
     .goto 23,66.81,9.86,0
@@ -1093,7 +1036,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fiona|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 27487 >>Turn in Ix'lar the Underlord
     .unitscan Fiona
-    .isOnQuest 27487
 step
     .goto 23,61.58,43.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gamella Cracklefizz|r
@@ -1111,7 +1053,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tarenar Sunstrike|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 27488 >>Accept Impatience
     .unitscan Tarenar Sunstrike
-    .isQuestTurnedIn 27487 --any of: Ix'lar the Underlord
 step
     .goto 23,61.00,44.19
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Deacon Andaal|r
@@ -1121,7 +1062,6 @@ step
     .goto 23,65.48,24.42
     >>Open the |cRXP_PICK_Open Prayer Book|r. Loot it for |cRXP_LOOT_Gidwin's Prayer Book|r
     .complete 27488,1 --Gidwin's Prayer Book (1)
-    .isOnQuest 27488
 step
     #loop
     .goto 23,75.77,52.41,0
@@ -1133,27 +1073,13 @@ step
     .goto 23,27.63,21.14,40,0
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tarenar Sunstrike|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 27488 >>Turn in Impatience
-    .unitscan Tarenar Sunstrike
-    .isOnQuest 27488
-step
-    #loop
-    .goto 23,75.77,52.41,0
-    .goto 23,75.77,52.41,40,0
-    .goto 23,73.80,51.99,40,0
-    .goto 23,61.57,43.22,40,0
-    .goto 23,50.44,20.13,40,0
-    .goto 23,28.54,25.94,40,0
-    .goto 23,27.63,21.14,40,0
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tarenar Sunstrike|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 27489 >>Accept Nobody to Blame but Myself
     .unitscan Tarenar Sunstrike
-    .isQuestTurnedIn 27488 --any of: Impatience
 step
     .goto 23,61.61,42.61
     >>Kill |cRXP_ENEMY_Fiona's Caravans|r
     .complete 27489,1 --Fiona's Caravan slain (8)
     .mob Fiona's Caravan
-    .isOnQuest 27489
 step
     #loop
     .goto 23,75.77,52.41,0
@@ -1165,21 +1091,8 @@ step
     .goto 23,27.63,21.14,40,0
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tarenar Sunstrike|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 27489 >>Turn in Nobody to Blame but Myself
-    .unitscan Tarenar Sunstrike
-    .isOnQuest 27489
-step
-    #loop
-    .goto 23,27.63,21.14,0
-    .goto 23,27.63,21.14,40,0
-    .goto 23,28.54,25.94,40,0
-    .goto 23,50.44,20.13,40,0
-    .goto 23,61.57,43.22,40,0
-    .goto 23,73.80,51.99,40,0
-    .goto 23,75.77,52.41,40,0
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tarenar Sunstrike|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 27522 >>Accept Beat it Out of Them
     .unitscan Tarenar Sunstrike
-    .isQuestTurnedIn 27489 --any of: Nobody to Blame but Myself
 step
     .goto 23,50.01,19.52
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kirkian Dawnshield|r
@@ -1198,26 +1111,9 @@ step
     .goto 23,55.90,16.99,40,0
     >>Kill |cRXP_ENEMY_Scourge Siege Engineers|r
     .complete 27522,1 --Scourge Siege Engineer slain (6)
-    .mob Scourge Siege Engineer
-    .isOnQuest 27522
-step
-    #loop
-    .goto 23,55.90,16.99,0
-    .goto 23,55.90,16.99,40,0
-    .goto 23,52.93,16.53,40,0
-    >>Kill |cRXP_ENEMY_Scourge Siege Engineers|r
     .complete 27522,2 --Scourge Siege Engineer slain (6)
-    .mob Scourge Siege Engineer
-    .isOnQuest 27522
-step
-    #loop
-    .goto 23,55.90,16.99,0
-    .goto 23,55.90,16.99,40,0
-    .goto 23,52.93,16.53,40,0
-    >>Kill |cRXP_ENEMY_Scourge Siege Engineers|r
     .complete 27522,3 --Scourge Siege Engineer slain (6)
     .mob Scourge Siege Engineer
-    .isOnQuest 27522
 step
     #loop
     .goto 23,47.90,18.20,0
@@ -1240,21 +1136,8 @@ step
     .goto 23,9.02,66.52,40,0
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fiona|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 27522 >>Turn in Beat it Out of Them
-    .unitscan Fiona
-    .isOnQuest 27522
-step
-    #loop
-    .goto 23,73.71,52.10,0
-    .goto 23,73.71,52.10,40,0
-    .goto 23,61.48,42.69,40,0
-    .goto 23,50.54,20.16,40,0
-    .goto 23,52.92,53.06,40,0
-    .goto 23,34.86,69.15,40,0
-    .goto 23,9.02,66.52,40,0
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fiona|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 27524 >>Accept Blind Fury
     .unitscan Fiona
-    .isQuestTurnedIn 27522 --any of: Beat it Out of Them
 step
     #loop
     .goto 23,73.96,51.65,0
@@ -1266,7 +1149,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Argus Highbeacon|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 27532 >>Accept The Plaguewood Tower
     .unitscan Argus Highbeacon
-    .isQuestTurnedIn 27522 --any of: Beat it Out of Them
 step
     .goto 23,50.01,19.52
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kirkian Dawnshield|r
@@ -1298,21 +1180,8 @@ step
     .goto 23,75.77,52.41,40,0
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tarenar Sunstrike|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 27524 >>Turn in Blind Fury
-    .unitscan Tarenar Sunstrike
-    .isOnQuest 27524
-step
-    #loop
-    .goto 23,27.63,21.14,0
-    .goto 23,27.63,21.14,40,0
-    .goto 23,28.54,25.94,40,0
-    .goto 23,50.44,20.13,40,0
-    .goto 23,61.57,43.22,40,0
-    .goto 23,73.80,51.99,40,0
-    .goto 23,75.77,52.41,40,0
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tarenar Sunstrike|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 27525 >>Accept Guardians of Stratholme
     .unitscan Tarenar Sunstrike
-    .isQuestTurnedIn 27524 --any of: Blind Fury
 step
     .goto 23,27.65,20.86
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Crusader Kevin Frost|r
@@ -1325,13 +1194,11 @@ step
     >>Kill |cRXP_ENEMY_Karthis Darkrune|r
     .complete 27525,2 --Karthis Darkrune slain (1)
     .mob Karthis Darkrune
-    .isOnQuest 27525
 step
     .goto 23,25.41,19.79
     >>Kill |cRXP_ENEMY_Omasum Blighthoof|r
     .complete 27525,1 --Omasum Blighthoof slain (1)
     .mob Omasum Blighthoof
-    .isOnQuest 27525
 step
     .goto 23,25.41,19.79
     >>Kill |cRXP_ENEMY_Omasum Blighthoof|r and loot |cRXP_LOOT_The Baroness' Missive|r. Use it to start the quest
@@ -1339,7 +1206,6 @@ step
     .accept 27551 >>Accept The Baroness' Missive
     .use 61378
     .mob Omasum Blighthoof
-    .isQuestTurnedIn 27524 --any of: Blind Fury
 step
     .goto 23,18.45,27.36
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_William Kielar Jr.|r
@@ -1349,16 +1215,11 @@ step
     .goto 23,17.55,27.89
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Argent Apothecary Judkins|r
     .turnin 27532 >>Turn in The Plaguewood Tower
-    .target Argent Apothecary Judkins
-    .isOnQuest 27532
-step
-    .goto 23,17.55,27.89
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Argent Apothecary Judkins|r
     .accept 27531 >>Accept Counter-Plague Research
     .accept 27535 >>Accept Just a Little Touched
     .target Argent Apothecary Judkins
 step
-    #completewith Along153
+    #completewith Along143
     >>As you go: Kill |cRXP_ENEMY_Scourge Soldiers|r and |cRXP_ENEMY_Cursed Mages|r. Loot them for |cRXP_LOOT_Stinking Skull|r. |cRXP_WARN_Anything left is finished later|r
     .complete 27539,1 --Stinking Skull (16)
     .mob Scourge Soldier
@@ -1369,11 +1230,11 @@ step
     .complete 27528,1 --Overstuffed Golem (8)
     .target Overstuffed Golem
 step
-    #completewith Along158
+    #completewith Along146
     >>As you go: Pick up |cRXP_PICK_Disembodied Arm|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 27531,2 --Disembodied Arm (5)
 step
-    #label Along153
+    #label Along143
     #loop
     .goto 23,31.40,20.00,0
     .goto 23,31.40,20.00,40,0
@@ -1405,36 +1266,11 @@ step
     .goto 23,75.77,52.41,40,0
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tarenar Sunstrike|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 27525 >>Turn in Guardians of Stratholme
-    .unitscan Tarenar Sunstrike
-    .isOnQuest 27525
-step
-    #loop
-    .goto 23,27.63,21.14,0
-    .goto 23,27.63,21.14,40,0
-    .goto 23,28.54,25.94,40,0
-    .goto 23,50.44,20.13,40,0
-    .goto 23,61.57,43.22,40,0
-    .goto 23,73.80,51.99,40,0
-    .goto 23,75.77,52.41,40,0
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tarenar Sunstrike|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 27551 >>Turn in The Baroness' Missive
-    .unitscan Tarenar Sunstrike
-    .isOnQuest 27551
-step
-    #loop
-    .goto 23,27.63,21.14,0
-    .goto 23,27.63,21.14,40,0
-    .goto 23,28.54,25.94,40,0
-    .goto 23,50.44,20.13,40,0
-    .goto 23,61.57,43.22,40,0
-    .goto 23,73.80,51.99,40,0
-    .goto 23,75.77,52.41,40,0
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tarenar Sunstrike|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 27526 >>Accept Gidwin's Fate Revealed
     .unitscan Tarenar Sunstrike
-    .isQuestTurnedIn 27551 --any of: The Baroness' Missive
 step
-    #label Along158
+    #label Along146
     .goto 23,27.65,20.86
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Crusader Kevin Frost|r
     .turnin 27528 >>Turn in Scourged Mass
@@ -1446,7 +1282,6 @@ step
     >>Search for Gidwin Goldbraids within the slaughterhouse in central Plaguewood.
     .complete 27526,1 --Gidwin Goldbraids
     .target Gidwin Goldbraids
-    .isOnQuest 27526
 step
     #loop
     .goto 23,28.45,25.90,0
@@ -1456,7 +1291,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gidwin Goldbraids|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 27526 >>Turn in Gidwin's Fate Revealed
     .unitscan Gidwin Goldbraids
-    .isOnQuest 27526
 step
     #loop
     .goto 23,25.02,24.68,0
@@ -1501,22 +1335,9 @@ step
     +|cRXP_WARN_That is all of Eastern Plaguelands for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Pamela's Doll
 step
-    +|cRXP_WARN_Suggested next zones at level 43|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 0.6 levels of quests, starting around Tabetha). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
+    +|cRXP_WARN_Until level 46, suggested zones|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 0.8 levels of quests), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 0.8 levels of quests). Then come back to this Eastern Plaguelands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Eastern Plaguelands is planned from level 46.|r Load its guide for level 46 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 40 - 84 Eastern Plaguelands
-#subweight -40
-#name 46-47 Eastern Plaguelands
---RouteBuilder:next
-#next Zone Routes (Alliance)\46-48 Felwood: around Totem of Ruumbo;Zone Routes (Alliance)\45-48 Tanaris: around Mazoga;Zone Routes (Alliance)\47-49 Searing Gorge: around Jack Rockleg
-
+    .xp 46 >>|cRXP_WARN_The rest of Eastern Plaguelands is planned from level 46.|r Come back to this guide then
 step
     .goto 23,35.56,83.12
     >>Pick up |cRXP_PICK_Pamela's Doll's Left Side|r from the ground
@@ -1547,22 +1368,9 @@ step
     +|cRXP_WARN_That is all of Eastern Plaguelands for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Badlands|r: Fuselight, Ho!
 step
-    +|cRXP_WARN_Suggested next zones at level 46|r: |cRXP_FRIENDLY_Felwood|r (about 2.5 levels of quests, starting around Totem of Ruumbo), |cRXP_FRIENDLY_Tanaris|r (about 1.0 levels of quests, starting around Mazoga), |cRXP_FRIENDLY_Searing Gorge|r (about 0.9 levels of quests, starting around Jack Rockleg). Completing this step loads the guide for Felwood --RouteBuilder:next
+    +|cRXP_WARN_Until level 83, suggested zones|r: |cRXP_FRIENDLY_Felwood|r (about 2.5 levels of quests), |cRXP_FRIENDLY_Tanaris|r (about 1.0 levels of quests), |cRXP_FRIENDLY_Searing Gorge|r (about 0.9 levels of quests). Then come back to this Eastern Plaguelands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Eastern Plaguelands is planned from level 83.|r Load its guide for level 83 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 40 - 84 Eastern Plaguelands
-#subweight -40
-#name 83-84 Eastern Plaguelands
---RouteBuilder:next
-#next Zone Routes (Alliance)\82-83 Deepholm
-
+    .xp 83 >>|cRXP_WARN_The rest of Eastern Plaguelands is planned from level 83.|r Come back to this guide then
 step
     .goto 23,35.58,82.90
     >>Pick up |cRXP_PICK_Pamela's Doll's Head|r from the ground
@@ -1613,5 +1421,5 @@ step
 step
     +|cRXP_WARN_End of the Eastern Plaguelands route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 83|r: |cRXP_FRIENDLY_Deepholm|r (about 0.8 levels of quests, starting around Maruut Stonebinder). Completing this step loads the guide for Deepholm --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 83|r: |cRXP_FRIENDLY_Deepholm|r (about 0.8 levels of quests). Completing this step loads the guide for Deepholm --RouteBuilder:next
 ]])

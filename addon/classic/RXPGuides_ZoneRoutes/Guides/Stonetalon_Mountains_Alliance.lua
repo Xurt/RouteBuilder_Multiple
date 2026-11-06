@@ -1,9 +1,9 @@
 -- 21-28 Stonetalon Mountains: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 21, 24, 27).
--- Split into 3 guides, listed under "21 - 28 Stonetalon Mountains" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 21; part 2 from 24; part 3 from 27.
 -- Edit zones/classic/Stonetalon Mountains.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 21 - 28 Stonetalon Mountains
-#subweight -21
-#name 21-22 Stonetalon Mountains: around Gaxim Rustfizzle
---RouteBuilder:next
-#next Zone Routes (Alliance)\20-22 Duskwood: around Elaine Carevin
+#name 21-28 Stonetalon Mountains
 
 step
     .goto 1442/1,365.16,878.25
@@ -206,20 +202,9 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: A Scroll from Mauren
     >>|cRXP_FRIENDLY_The Barrens|r: Further Instructions
 step
-    +|cRXP_WARN_Suggested next zones at level 21|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests, starting around Elaine Carevin). Completing this step loads the guide for Duskwood --RouteBuilder:next
+    +|cRXP_WARN_Until level 24, suggested zones|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests). Then come back to this Stonetalon Mountains guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 24.|r Load its guide for level 24 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 21 - 28 Stonetalon Mountains
-#subweight -21
-#name 24-25 Stonetalon Mountains
-
+    .xp 24 >>|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 24.|r Come back to this guide then
 step
     .goto 1442/1,1434.12,2652.91
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Keeper Albagorm|r
@@ -325,18 +310,7 @@ step
     >>|cRXP_FRIENDLY_Ashenvale|r: Update for Sentinel Thenysil
     >>|cRXP_FRIENDLY_Feralas|r: Reclaiming the Charred Vale
 step
-    +|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 27.|r Load its guide for level 27 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 21 - 28 Stonetalon Mountains
-#subweight -21
-#name 27-28 Stonetalon Mountains
-
+    .xp 27 >>|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 27.|r Come back to this guide then
 step
     .goto 1442/1,339.27,730.09
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gaxim Rustfizzle|r

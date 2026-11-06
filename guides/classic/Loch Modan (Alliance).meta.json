@@ -13,12 +13,12 @@
       "start": 10,
       "end": 12.02,
       "next": 15,
-      "guide": "10-12 Loch Modan: around Mountaineer Kadrell",
+      "guide": "10-23 Loch Modan",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Mountaineer Kadrell",
-          "guide": "10-12 Loch Modan: around Mountaineer Kadrell",
+          "label": "",
+          "name": "start",
+          "guide": "10-23 Loch Modan",
           "level": 10,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 15,
       "end": 15.59,
       "next": 18,
-      "guide": "15-16 Loch Modan",
+      "guide": "10-23 Loch Modan",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "15-16 Loch Modan",
+          "guide": "10-23 Loch Modan",
           "level": 15,
           "index": 0
         }
@@ -45,12 +45,12 @@
       "start": 18,
       "end": 18.49,
       "next": 21,
-      "guide": "18-19 Loch Modan",
+      "guide": "10-23 Loch Modan",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "18-19 Loch Modan",
+          "guide": "10-23 Loch Modan",
           "level": 18,
           "index": 0
         }
@@ -60,12 +60,12 @@
       "part": 4,
       "start": 21,
       "end": 21.08,
-      "guide": "21-22 Loch Modan",
+      "guide": "10-23 Loch Modan",
       "sections": [
         {
-          "label": "RBSection4_1",
+          "label": "",
           "name": "part 4",
-          "guide": "21-22 Loch Modan",
+          "guide": "10-23 Loch Modan",
           "level": 21,
           "index": 0
         }

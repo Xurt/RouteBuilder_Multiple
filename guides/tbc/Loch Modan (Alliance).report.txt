@@ -1,7 +1,7 @@
 Loch Modan - Alliance - part 1 of 4, planned from level 10
 Guide "10-22 Loch Modan" in group "Zone Routes (Alliance)": this part has 42 steps, 27 stops
 Written to guides/tbc/Loch Modan (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -91,7 +91,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Loch Modan - Alliance - part 2 of 4, planned from level 14
 Guide "10-22 Loch Modan" in group "Zone Routes (Alliance)": this part has 38 steps, 35 stops
 Written to guides/tbc/Loch Modan (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -151,7 +151,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Loch Modan - Alliance - part 3 of 4, planned from level 18
 Guide "10-22 Loch Modan" in group "Zone Routes (Alliance)": this part has 27 steps, 24 stops
 Written to guides/tbc/Loch Modan (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -204,7 +204,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Loch Modan - Alliance - part 4 of 4, planned from level 21
 Guide "10-22 Loch Modan" in group "Zone Routes (Alliance)": this part has 6 steps, 5 stops
 Written to guides/tbc/Loch Modan (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

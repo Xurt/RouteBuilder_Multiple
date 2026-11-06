@@ -13,12 +13,12 @@
       "start": 31,
       "end": 31.15,
       "next": 34,
-      "guide": "31-32 Desolace",
+      "guide": "31-39 Desolace",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "31-32 Desolace",
+          "guide": "31-39 Desolace",
           "level": 31,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 34,
       "end": 34.48,
       "next": 37,
-      "guide": "34-35 Desolace",
+      "guide": "31-39 Desolace",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "34-35 Desolace",
+          "guide": "31-39 Desolace",
           "level": 34,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 37,
       "end": 37.33,
-      "guide": "37-38 Desolace",
+      "guide": "31-39 Desolace",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "37-38 Desolace",
+          "guide": "31-39 Desolace",
           "level": 37,
           "index": 0
         }

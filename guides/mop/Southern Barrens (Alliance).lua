@@ -1,8 +1,7 @@
 -- 30-35 Southern Barrens: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
--- Split into 2 guides, listed under "30 - 35 Southern Barrens" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
 -- Edit zones/mop/Southern Barrens.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -12,10 +11,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 30 - 35 Southern Barrens
-#subweight -30
-#name 30-32 Southern Barrens: around Thomas Paxton
-#next Zone Routes (Alliance)\32-35 Southern Barrens: around General Hawthorne
+#name 30-35 Southern Barrens
+--RouteBuilder:next
+#next Zone Routes (Alliance)\30-35 Desolace;Zone Routes (Alliance)\35-40 Western Plaguelands;Zone Routes (Alliance)\30-35 The Cape of Stranglethorn
 
 step << Dwarf
     .goto 199,37.65,16.63
@@ -600,31 +598,12 @@ step
     .target Tawane
     .isQuestTurnedIn 24529 --any of: Bad to Worse
     .xp <30,1
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 30 - 35 Southern Barrens
-#subweight -30
-#name 32-35 Southern Barrens: around General Hawthorne
---RouteBuilder:next
-#next Zone Routes (Alliance)\35-37 Western Plaguelands: around Field Agent Kaartish;Zone Routes (Alliance)\30-33 The Cape of Stranglethorn: around Captain Hecklebury Smotts;Zone Routes (Alliance)\33-36 Desolace: around Karnum Marshweaver
-
 step
     .goto 199,50.01,49.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ambassador Gaines|r
     .turnin 25034 >>Turn in To the Front!
+    .accept 25044 >>Accept Diplomacy By Another Means << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Ambassador Gaines
-    .isOnQuest 25034
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 199,50.01,49.53
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ambassador Gaines|r
-    .accept 25044 >>Accept Diplomacy By Another Means
-    .target Ambassador Gaines
-    .isQuestTurnedIn 25027 --any of: You Flicked a Fine Vine to Leaf Me
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 199,49.93,49.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_General Hawthorne|r
@@ -645,37 +624,30 @@ step
     .goto 199,68.69,49.29
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Horton Gimbleheart|r
     .turnin 25191 >>Turn in Survey the Destruction
-    .target Horton Gimbleheart
-    .isOnQuest 25191
-step
-    .goto 199,68.69,49.29
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Horton Gimbleheart|r
     .accept 25197 >>Accept The Admiral Won't Back Down
     .target Horton Gimbleheart
-    .isQuestTurnedIn 25191 --any of: Survey the Destruction
 step
     .goto 199,69.26,49.09
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Admiral Aubrey|r
     .turnin 25197 >>Turn in The Admiral Won't Back Down
     .target Admiral Aubrey
-    .isOnQuest 25197
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #completewith next
     .hs >>Hearth to Donnach's inn. |cRXP_WARN_Walk instead if you are already nearby|r
     .cooldown item,6948,>0,1
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along89
+    #completewith Along87
     >>As you go: Kill |cRXP_ENEMY_Plains Prowlers|r and |cRXP_ENEMY_Plains Pridemanes|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25041,1 --Plains Prowler (5)
     .mob Plains Prowler
     .mob Plains Pridemane
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along87
+    #completewith Along85
     >>As you go: Kill |cRXP_ENEMY_Desolation Grunts|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25043,1 --Desolation Grunt slain (10)
     .mob Desolation Grunt
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along87
+    #label Along85
     .goto 199,49.42,54.04
     >>Click the |cRXP_PICK_Field Banner|r
     >>Click the |cRXP_PICK_Alliance Field Banner|r
@@ -686,9 +658,8 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>Kill |cRXP_ENEMY_Sabersnout|r
     .complete 25044,1 --Sabersnout slain (1)
     .mob Sabersnout
-    .isOnQuest 25044
 step
-    #label Along89
+    #label Along87
     .goto 199,41.62,46.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kirge Sternhorn|r
     .turnin 24543 >>Turn in A Family Divided
@@ -712,25 +683,18 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ambassador Gaines|r
     .turnin 25044 >>Turn in Diplomacy By Another Means
     .target Ambassador Gaines
-    .isOnQuest 25044
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 199,49.93,49.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_General Hawthorne|r
     .turnin 25043 >>Turn in Fields of Blood
     .turnin 25045 >>Turn in A Line in the Dirt
-    .target General Hawthorne
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 199,49.93,49.69
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_General Hawthorne|r
     .accept 25057 >>Accept Clap 'Em In Irons
     .target General Hawthorne
-    .isQuestTurnedIn 25044 --Diplomacy By Another Means
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 199,50.01,49.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ambassador Gaines|r
     .accept 25059 >>Accept The Taurajo Briefs
     .target Ambassador Gaines
-    .isQuestTurnedIn 25044 --Diplomacy By Another Means
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 199,49.79,50.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sam Trawley|r
@@ -738,7 +702,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25042 >>Accept Marching On Our Stomachs
     .target Sam Trawley
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along97
+    #completewith Along94
     >>As you go: Kill |cRXP_ENEMY_Stormsnouts|r. Loot them for |cRXP_LOOT_Fresh Stormsnout Steak|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25042,1 --Fresh Stormsnout Steak (4)
     .mob Stormsnout
@@ -746,9 +710,8 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 199,44.47,52.53
     >>Pick up |cRXP_PICK_Taurajo Intelligence|r from the ground
     .complete 25059,1 --Taurajo Intelligence (1)
-    .isOnQuest 25059
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along97
+    #label Along94
     #loop
     .goto 199,43.97,51.18,0
     .goto 199,43.97,51.18,40,0
@@ -756,7 +719,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>Interact with |cRXP_FRIENDLY_Taurajo Looters|r
     .complete 25057,1 --Taurajo Looter (5)
     .target Taurajo Looter
-    .isOnQuest 25057
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 199,49.18,46.96,0
@@ -783,34 +745,22 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sam Trawley|r
     .turnin 25042 >>Turn in Marching On Our Stomachs
     .target Sam Trawley
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 199,49.93,49.69
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_General Hawthorne|r
-    .turnin 25057 >>Turn in Clap 'Em In Irons
-    .target General Hawthorne
-    .isOnQuest 25057
 step
     .goto 199,49.93,49.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_General Hawthorne|r
+    .turnin 25057 >>Turn in Clap 'Em In Irons << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25074 >>Accept Meet Me at Triumph
     .target General Hawthorne
-    .isQuestTurnedIn 25057 --any of: Clap 'Em In Irons
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 199,50.01,49.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ambassador Gaines|r
     .turnin 25059 >>Turn in The Taurajo Briefs
     .target Ambassador Gaines
-    .isOnQuest 25059
 step
     .goto 199,49.09,66.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Commander Roberts|r
     .turnin 25074 >>Turn in Meet Me at Triumph
-    .target Commander Roberts
-    .isOnQuest 25074
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 199,49.09,66.88
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Commander Roberts|r
-    .accept 25081 >>Accept Claim the Battlescar
+    .accept 25081 >>Accept Claim the Battlescar << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Commander Roberts
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 199,49.49,67.52
@@ -870,7 +820,7 @@ step
     .accept 24824 >>Accept The Disturbed Earth
     .target Tauna Skychaser
 step
-    #completewith Along115
+    #completewith Along110
     >>As you go: Kill |cRXP_ENEMY_Disturbed Earth Elementals|r. Loot them for |cRXP_LOOT_Disturbed Earth Fragment|r. |cRXP_WARN_Anything left is finished later|r
     .complete 24824,1 --Disturbed Earth Fragment (4)
     .mob Disturbed Earth Elemental
@@ -881,7 +831,7 @@ step
     .target Gann Stonespire
     .isOnQuest 24632
 step
-    #label Along115
+    #label Along110
     .goto 199,49.23,82.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nato Raintree|r
     .accept 25292 >>Accept Next of Kin
@@ -901,12 +851,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25079 >>Accept Powder Play
     .target Mizzy Pistonhammer
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along118
+    #completewith Along113
     >>As you go: Kill |cRXP_ENEMY_Sapper Specialist|r and loot |cRXP_LOOT_Keg of Blast-O Powder|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25079,1 --Keg of Blast-O Powder (1)
     .mob Sapper Specialist
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along118
+    #label Along113
     .goto 199,49.09,66.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Commander Roberts|r
     .turnin 25081 >>Turn in Claim the Battlescar
@@ -945,7 +895,7 @@ step
     .turnin 24824 >>Turn in The Disturbed Earth
     .target Tauna Skychaser
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along125
+    #completewith Along120
     >>As you go: Kill |cRXP_ENEMY_Razormane Pathfinders|r, |cRXP_ENEMY_Razormane Warfrenzies|r, |cRXP_ENEMY_Razormane Seers|r and |cRXP_ENEMY_Razormane Mankrik Quest Credits|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25084,1 --Razormane Pathfinder (8)
     .mob Razormane Pathfinder
@@ -964,7 +914,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25104 >>Accept Digsite Status
     .target General Twinbraid
 step
-    #label Along125
+    #label Along120
     .goto 199,43.46,78.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hurlston Stonesthrow|r
     .accept 25102 >>Accept No Bull
@@ -1052,7 +1002,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25151 >>Accept He Needs Ale!
     .target Marley Twinbraid
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along138
+    #completewith Along133
     >>As you go: Open the |cRXP_PICK_Keg of Ol' Barkerstout|r. Loot it for |cRXP_LOOT_Mug of Ol' Barkerstout|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25151,1 --Mug of Ol' Barkerstout (1)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
@@ -1072,7 +1022,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 25174 >>Accept Twinbraid Needs to Know
     .target Weezil Slipshadow
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along138
+    #label Along133
     .goto 199,50.29,86.50
     >>Interact with |cRXP_FRIENDLY_Burning Debris|r
     .complete 25153,1 --Burning Debris
@@ -1129,12 +1079,12 @@ step
     .turnin 25102 >>Turn in No Bull
     .target Hurlston Stonesthrow
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along145
+    #completewith Along140
     >>As you go: Kill |cRXP_ENEMY_Mangletooth|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25085,1 --Mangletooth slain (1)
     .mob Mangletooth
 step
-    #label Along145
+    #label Along140
     #loop
     .goto 199,40.41,83.25,0
     .goto 199,40.41,83.25,40,0
@@ -1319,5 +1269,5 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: Favored of Elune << NightElf Priest
     >>|cRXP_FRIENDLY_Teldrassil|r: Return to Nyoma << NightElf
 step
-    +|cRXP_WARN_Suggested next zones at level 34|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 1.5 levels of quests, starting around Field Agent Kaartish), |cRXP_FRIENDLY_The Cape of Stranglethorn|r (about 1.0 levels of quests, starting around Captain Hecklebury Smotts), |cRXP_FRIENDLY_Desolace|r (about 0.9 levels of quests, starting around Karnum Marshweaver). Completing this step loads the guide for Western Plaguelands --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 34|r: |cRXP_FRIENDLY_Desolace|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Western Plaguelands|r (about 1.5 levels of quests), |cRXP_FRIENDLY_The Cape of Stranglethorn|r (about 1.0 levels of quests). Completing this step loads the guide for Desolace --RouteBuilder:next
 ]])

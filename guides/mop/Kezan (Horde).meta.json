@@ -13,12 +13,12 @@
       "start": 1,
       "end": 1.23,
       "next": 4,
-      "guide": "1-2 Kezan",
+      "guide": "1-3 Kezan",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "1-2 Kezan",
+          "guide": "1-3 Kezan",
           "level": 1,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 4,
       "end": 4.07,
-      "guide": "4-5 Kezan",
+      "guide": "1-3 Kezan",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "4-5 Kezan",
+          "guide": "1-3 Kezan",
           "level": 4,
           "index": 0
         }

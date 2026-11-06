@@ -13,12 +13,12 @@
       "start": 35,
       "end": 35.3,
       "next": 38,
-      "guide": "35-36 Badlands",
+      "guide": "35-43 Badlands",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "35-36 Badlands",
+          "guide": "35-43 Badlands",
           "level": 35,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 38,
       "end": 38.31,
       "next": 41,
-      "guide": "38-39 Badlands",
+      "guide": "35-43 Badlands",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "38-39 Badlands",
+          "guide": "35-43 Badlands",
           "level": 38,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 41,
       "end": 41.12,
-      "guide": "41-42 Badlands",
+      "guide": "35-43 Badlands",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "41-42 Badlands",
+          "guide": "35-43 Badlands",
           "level": 41,
           "index": 0
         }

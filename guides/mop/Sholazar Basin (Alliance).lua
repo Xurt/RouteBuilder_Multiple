@@ -1,5 +1,5 @@
 -- 76-78 Sholazar Basin: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- Edit zones/mop/Sholazar Basin.json and re-run rather than editing this file, or your changes are lost on the next build.
@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
 #group Zone Routes (Alliance)
 #name 76-78 Sholazar Basin
 --RouteBuilder:next
-#next Zone Routes (Alliance)\78-80 The Storm Peaks;Zone Routes (Alliance)\73-75 Grizzly Hills: around Drakuru
+#next Zone Routes (Alliance)\78-80 The Storm Peaks;Zone Routes (Alliance)\73-75 Grizzly Hills
 
 step
     .goto 119,39.68,58.66
@@ -1200,5 +1200,5 @@ step
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Some Make Lemonade, Some Make Liquor
     >>|cRXP_FRIENDLY_another zone and back here|r: The Lost Mistwhisper Treasure
 step
-    +|cRXP_WARN_Suggested next zones at level 77|r: |cRXP_FRIENDLY_The Storm Peaks|r (about 0.9 levels of quests, starting around Ricket), |cRXP_FRIENDLY_Grizzly Hills|r (about 0.5 levels of quests, starting around Drakuru). Completing this step loads the guide for The Storm Peaks --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 77|r: |cRXP_FRIENDLY_The Storm Peaks|r (about 0.9 levels of quests), |cRXP_FRIENDLY_Grizzly Hills|r (about 0.5 levels of quests). Completing this step loads the guide for The Storm Peaks --RouteBuilder:next
 ]])

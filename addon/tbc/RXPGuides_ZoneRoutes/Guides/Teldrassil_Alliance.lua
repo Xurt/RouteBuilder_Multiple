@@ -1,9 +1,9 @@
 -- 1-40 Teldrassil: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 8 parts (from level 1, 13, 16, 19, 22, 25, 28, 41).
--- Split into 10 guides, listed under "1 - 42 Teldrassil" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 1; part 2 from 13; part 3 from 16; part 4 from 19; part 5 from 22; part 6 from 25; part 7 from 28; part 8 from 41.
 -- Edit zones/tbc/Teldrassil.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 1 - 42 Teldrassil
-#subweight -1
-#name 1-5 Teldrassil: around Conservator Ilthalaine
-#next Zone Routes (Alliance)\5-8 Teldrassil: around Corithras Moonrage
+#name 1-40 Teldrassil
+--RouteBuilder:next
+#next Zone Routes (Alliance)\30-50 Stranglethorn Vale
 
 step
     .goto 1438/1,826.28,10328.84
@@ -340,18 +339,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zenn Foulhoof|r
     .accept 488 >>Accept Zenn's Bidding
     .target Zenn Foulhoof
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 42 Teldrassil
-#subweight -1
-#name 5-8 Teldrassil: around Corithras Moonrage
-#next Zone Routes (Alliance)\8-11 Teldrassil: around Mathrengyl Bearwalker
-
 step
     .goto 1438/1,959.18,9872.38
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Syral Bladeleaf|r
@@ -366,11 +353,6 @@ step << NightElf Priest
     .goto 1438/1,985.65,9905.30
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Laurna Morninglight|r
     .turnin 5622 >>Turn in In Favor of Elune
-    .target Laurna Morninglight
-    .isOnQuest 5622
-step << NightElf Priest
-    .goto 1438/1,985.65,9905.30
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Laurna Morninglight|r
     .accept 5621 >>Accept Garments of the Moon
     .target Laurna Morninglight
 step << Priest
@@ -409,7 +391,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Keldamyr|r
     .turnin 2159 >>Turn in Dolanaar Delivery
     .target Innkeeper Keldamyr
-    .isOnQuest 2159
 step
     .goto 1438/1,988.20,9891.72
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Aldia|r
@@ -452,14 +433,8 @@ step
     .goto 1438/1,956.12,9736.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Corithras Moonrage|r
     .turnin 928 >>Turn in Crown of the Earth
-    .target Corithras Moonrage
-    .isOnQuest 928
-step
-    .goto 1438/1,956.12,9736.97
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Corithras Moonrage|r
     .accept 929 >>Accept Crown of the Earth
     .target Corithras Moonrage
-    .isQuestTurnedIn 928 --any of: Crown of the Earth
 step << Druid
     .goto 1438/1,875.62,9773.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Malorne Bladeleaf|r
@@ -513,30 +488,35 @@ step
     .accept 476 >>Accept Gnarlpine Corruption
     .target Gaerolas Talvethren
 step
-    .goto 1438/1,587.49,9859.82
-    >>Open the |cRXP_PICK_Starbreeze Village Moonwell|r. Loot it for |cRXP_LOOT_Filled Jade Phial|r
-    .complete 929,1 --Filled Jade Phial (1)
-    .isOnQuest 929
+    #completewith Along48
+    >>As you go: Kill |cRXP_ENEMY_Webwood Lurkers|r, |cRXP_ENEMY_Webwood Venomfangs|r, |cRXP_ENEMY_Webwood Silkspinners|r and |cRXP_ENEMY_Giant Webwood Spiders|r. Loot them for |cRXP_LOOT_Webwood Spider Silk|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 488,3 --Webwood Spider Silk (3)
+    .mob Webwood Lurker
+    .mob Webwood Venomfang
+    .mob Webwood Silkspinner
+    .mob Giant Webwood Spider
 step
     #loop
-    .goto 1438/1,618.54,9785.16,0
+    .goto 1438/1,587.49,9859.82,0
+    .goto 1438/1,587.49,9859.82,40,0
     .goto 1438/1,618.54,9785.16,40,0
     .goto 1438/1,782.50,9693.53,40,0
+    >>Open the |cRXP_PICK_Starbreeze Village Moonwell|r. Loot it for |cRXP_LOOT_Filled Jade Phial|r
     >>Kill |cRXP_ENEMY_Elder Nightsabers|r, |cRXP_ENEMY_Feral Nightsabers|r, |cRXP_ENEMY_Nightsabers|r and |cRXP_ENEMY_Nightsaber Stalkers|r. Loot them for |cRXP_LOOT_Nightsaber Fang|r
+    .complete 929,1 --Filled Jade Phial (1)
     .complete 488,1 --Nightsaber Fang (3)
     .mob Elder Nightsaber
     .mob Feral Nightsaber
     .mob Nightsaber
     .mob Nightsaber Stalker
-    .isOnQuest 488
 step
+    #label Along48
     .goto 1438/1,1079.85,9817.06
     >>Kill |cRXP_ENEMY_Strigid Owls|r, |cRXP_ENEMY_Strigid Screechers|r and |cRXP_ENEMY_Strigid Hunters|r. Loot them for |cRXP_LOOT_Strigid Owl Feather|r
     .complete 488,2 --Strigid Owl Feather (3)
     .mob Strigid Owl
     .mob Strigid Screecher
     .mob Strigid Hunter
-    .isOnQuest 488
 step
     #loop
     .goto 1438/1,747.87,9811.63,0
@@ -548,13 +528,11 @@ step
     .mob Webwood Venomfang
     .mob Webwood Silkspinner
     .mob Giant Webwood Spider
-    .isOnQuest 488
 step
     .goto 1438/1,736.16,9920.57
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zenn Foulhoof|r
     .turnin 488 >>Turn in Zenn's Bidding
     .target Zenn Foulhoof
-    .isOnQuest 488
 step
     .goto 1438/1,448.99,10051.91,60,0
     .goto 1438/1,660.30,9758.69,50,0
@@ -570,7 +548,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Kyra Starsong|r
     .accept 489 >>Accept Seek Redemption!
     .target Sentinel Kyra Starsong
-    .isQuestTurnedIn 488 --any of: Zenn's Bidding
 step
     .goto 1438/1,965.29,9887.65
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Athridas Bearmantle|r
@@ -610,14 +587,8 @@ step
     .goto 1438/1,956.12,9736.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Corithras Moonrage|r
     .turnin 929 >>Turn in Crown of the Earth
-    .target Corithras Moonrage
-    .isOnQuest 929
-step
-    .goto 1438/1,956.12,9736.97
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Corithras Moonrage|r
     .accept 933 >>Accept Crown of the Earth
     .target Corithras Moonrage
-    .isQuestTurnedIn 929 --any of: Crown of the Earth
 step
     #loop
     .goto 1438/1,810.50,9752.58,0
@@ -625,13 +596,11 @@ step
     .goto 1438/1,820.68,9948.06,40,0
     >>Pick up |cRXP_PICK_Fel Cone|r from the ground
     .complete 489,1 --Fel Cone (3)
-    .isOnQuest 489
 step
     .goto 1438/1,736.16,9920.57
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zenn Foulhoof|r
     .turnin 489 >>Turn in Seek Redemption!
     .target Zenn Foulhoof
-    .isOnQuest 489
 step
     .goto 1438/1,282.49,10018.65
     >>Kill |cRXP_ENEMY_Ferocitas the Dream Eater|r and loot |cRXP_LOOT_Gnarlpine Necklace|r
@@ -661,11 +630,15 @@ step
     >>Open the |cRXP_PICK_Chest of the Raven Claw|r. Loot it for |cRXP_LOOT_Raven Claw Talisman|r
     .complete 483,1 --Raven Claw Talisman (1)
 step
-    #completewith Along66
+    #completewith Along62
     >>As you go: Open the |cRXP_PICK_Chest of Nesting|r. Loot it for |cRXP_LOOT_Rune of Nesting|r. |cRXP_WARN_Anything left is finished later|r
     .complete 483,4 --Rune of Nesting (1)
 step
-    #label Along66
+    #completewith Along62
+    >>As you go: Open the |cRXP_PICK_Chest of the Sky|r. Loot it for |cRXP_LOOT_Sapphire of Sky|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 483,3 --Sapphire of Sky (1)
+step
+    #label Along62
     .goto 1438/1,1526.39,9741.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Oben Rageclaw|r
     .accept 2541 >>Accept The Sleeping Druid
@@ -686,7 +659,6 @@ step
     .goto 1438/1,1655.21,9554.72
     >>Open the |cRXP_PICK_Pools of Arlithrien Moonwell|r. Loot it for |cRXP_LOOT_Filled Tourmaline Phial|r
     .complete 933,1 --Filled Tourmaline Phial (1)
-    .isOnQuest 933
 step
     #completewith next
     .hs >>Hearth to Aldia's inn. |cRXP_WARN_Walk instead if you are already nearby|r
@@ -695,14 +667,8 @@ step
     .goto 1438/1,956.12,9736.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Corithras Moonrage|r
     .turnin 933 >>Turn in Crown of the Earth
-    .target Corithras Moonrage
-    .isOnQuest 933
-step
-    .goto 1438/1,956.12,9736.97
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Corithras Moonrage|r
     .accept 7383 >>Accept Crown of the Earth
     .target Corithras Moonrage
-    .isQuestTurnedIn 933 --any of: Crown of the Earth
 step
     .goto 1438/1,906.17,9751.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zarrin|r
@@ -761,9 +727,13 @@ step
     .turnin 487 >>Turn in The Road to Darnassus
     .unitscan Moon Priestess Amara
 step
-    #completewith Along78
+    #completewith Along73
     >>As you go: Open the |cRXP_PICK_Chest of Nesting|r. Loot it for |cRXP_LOOT_Rune of Nesting|r. |cRXP_WARN_Anything left is finished later|r
     .complete 483,4 --Rune of Nesting (1)
+step
+    #completewith Along73
+    >>As you go: Open the |cRXP_PICK_Chest of the Sky|r. Loot it for |cRXP_LOOT_Sapphire of Sky|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 483,3 --Sapphire of Sky (1)
 step
     .goto 1438/1,1526.39,9741.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Oben Rageclaw|r
@@ -776,12 +746,17 @@ step
     .complete 2561,1 --Rageclaw
     .target Rageclaw
 step
-    #label Along78
+    #label Along73
     .goto 1438/1,1526.39,9741.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Oben Rageclaw|r
     .turnin 2561 >>Turn in Druid of the Claw
     .target Oben Rageclaw
 step
+    #completewith Along74
+    >>As you go: Open the |cRXP_PICK_Chest of the Black Feather|r. Loot it for |cRXP_LOOT_Black Feather Quill|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 483,2 --Black Feather Quill (1)
+step
+    #label Along74
     .goto 1438/1,1553.88,9772.60
     >>Open the |cRXP_PICK_Chest of Nesting|r. Loot it for |cRXP_LOOT_Rune of Nesting|r
     .complete 483,4 --Rune of Nesting (1)
@@ -794,7 +769,6 @@ step
     .goto 1438/1,1857.35,10675.34
     >>Open the |cRXP_PICK_Oracle Glade Moonwell|r. Loot it for |cRXP_LOOT_Filled Amethyst Phial|r
     .complete 7383,1 --Filled Amethyst Phial (1)
-    .isOnQuest 7383
 step
     .goto 1438/1,2052.36,10855.21
     >>Click the |cRXP_PICK_Strange Fronded Plant|r
@@ -871,31 +845,12 @@ step
     .turnin 3370 >>Turn in In Nightmares
     .target Mathrengyl Bearwalker
     .isOnQuest 3370
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 42 Teldrassil
-#subweight -1
-#name 8-11 Teldrassil: around Mathrengyl Bearwalker
---RouteBuilder:next
-#next Zone Routes (Alliance)\10-15 Darkshore: around Thundris Windweaver;Zone Routes (Alliance)\5-10 Azuremyst Isle: around Daedal;Zone Routes (Alliance)\5-10 Elwynn Forest: around Marshal Dughan
-
 step
     .goto 1457/1,2569.96,10172.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arch Druid Fandral Staghelm|r
     .turnin 940 >>Turn in Teldrassil
-    .target Arch Druid Fandral Staghelm
-    .isOnQuest 940
-step
-    .goto 1457/1,2569.96,10172.97
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arch Druid Fandral Staghelm|r
     .accept 952 >>Accept Grove of the Ancients
     .target Arch Druid Fandral Staghelm
-    .isQuestTurnedIn 940 --any of: Teldrassil
 step << NightElf Hunter
     .xp 10 >>Grind to level 10 (The Hunter's Path needs it)
 step << NightElf Hunter
@@ -1022,19 +977,12 @@ step
     .goto 1438/1,1538.61,9712.19
     >>Open the |cRXP_PICK_Chest of the Sky|r. Loot it for |cRXP_LOOT_Sapphire of Sky|r
     .complete 483,3 --Sapphire of Sky (1)
-    .isOnQuest 483
 step
     .goto 1438/1,956.12,9736.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Corithras Moonrage|r
     .turnin 7383 >>Turn in Crown of the Earth
-    .target Corithras Moonrage
-    .isOnQuest 7383
-step
-    .goto 1438/1,956.12,9736.97
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Corithras Moonrage|r
     .accept 935 >>Accept Crown of the Earth
     .target Corithras Moonrage
-    .isQuestTurnedIn 7383 --any of: Crown of the Earth
 step << Warrior
     #loop
     .goto 1438/1,988.71,9847.94,0
@@ -1081,29 +1029,17 @@ step
     .goto 1438/1,713.76,9506.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Denalan|r
     .turnin 931 >>Turn in The Shimmering Frond
-    .target Denalan
-    .isOnQuest 931
-step
-    .goto 1438/1,713.76,9506.87
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Denalan|r
     .turnin 930 >>Turn in The Glowing Fruit
     .target Denalan
-    .isOnQuest 930
 step
     .goto 1438/1,719.87,9503.48
     >>Click the |cRXP_PICK_Sprouted Frond|r
     .accept 2399 >>Accept The Sprouted Fronds
-    .isQuestTurnedIn 931 --any of: The Shimmering Frond
-step
-    .goto 1438/1,719.87,9503.48
-    >>Click the |cRXP_PICK_Sprouted Frond|r
     .turnin 2399 >>Turn in The Sprouted Fronds
-    .isOnQuest 2399
 step
     .goto 1438/1,1589.52,9753.60
     >>Open the |cRXP_PICK_Chest of the Black Feather|r. Loot it for |cRXP_LOOT_Black Feather Quill|r
     .complete 483,2 --Black Feather Quill (1)
-    .isOnQuest 483
 step << Rogue
     .goto 1438/1,943.90,9790.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jannok Breezesong|r
@@ -1199,7 +1135,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arch Druid Fandral Staghelm|r
     .turnin 935 >>Turn in Crown of the Earth
     .target Arch Druid Fandral Staghelm
-    .isOnQuest 935
 step << NightElf Hunter
     .goto 1457/1,2511.01,10177.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jocaste|r
@@ -1235,7 +1170,6 @@ step
     .mob Timberling Trampler
     .mob Timberling Mire Beast
     .mob Elder Timberling
-    .isOnQuest 923
 step
     #completewith next
     .zone 1457 >>Travel to Darnassus
@@ -1356,14 +1290,8 @@ step
     .goto 1457/1,2534.29,10085.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rellian Greenspyre|r
     .turnin 923 >>Turn in Tumors
-    .target Rellian Greenspyre
-    .isOnQuest 923
-step
-    .goto 1457/1,2534.29,10085.60
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rellian Greenspyre|r
     .accept 2498 >>Accept Return to Denalan
     .target Rellian Greenspyre
-    .isQuestTurnedIn 923 --any of: Tumors
 step
     .goto 1457/1,2550.48,9631.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess A'moora|r
@@ -1411,14 +1339,8 @@ step
     .goto 1438/1,965.29,9887.65
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Athridas Bearmantle|r
     .turnin 483 >>Turn in The Relics of Wakening
-    .target Athridas Bearmantle
-    .isOnQuest 483
-step
-    .goto 1438/1,965.29,9887.65
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Athridas Bearmantle|r
     .accept 486 >>Accept Ursal the Mauler
     .target Athridas Bearmantle
-    .isQuestTurnedIn 483 --any of: The Relics of Wakening
 step << Human Priest/Dwarf Priest
     .goto 1438/1,985.65,9905.30
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Laurna Morninglight|r
@@ -1429,14 +1351,8 @@ step
     .goto 1438/1,713.76,9506.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Denalan|r
     .turnin 2498 >>Turn in Return to Denalan
-    .target Denalan
-    .isOnQuest 2498
-step
-    .goto 1438/1,713.76,9506.87
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Denalan|r
     .accept 2499 >>Accept Oakenscowl
     .target Denalan
-    .isQuestTurnedIn 2498 --any of: Return to Denalan
 step
     .goto 1438/1,713.76,9506.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Denalan|r
@@ -1454,13 +1370,11 @@ step
     >>Kill |cRXP_ENEMY_Oakenscowl|r and loot |cRXP_LOOT_Gargantuan Tumor|r
     .complete 2499,1 --Gargantuan Tumor (1)
     .mob Oakenscowl
-    .isOnQuest 2499
 step
     .goto 1438/1,713.76,9506.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Denalan|r
     .turnin 2499 >>Turn in Oakenscowl
     .target Denalan
-    .isOnQuest 2499
 step
     .goto 1438/1,988.71,8707.30
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Erelas Ambersky|r
@@ -1490,13 +1404,11 @@ step
     >>Kill |cRXP_ENEMY_Ursal the Mauler|r
     .complete 486,1 --Ursal the Mauler slain (1)
     .mob Ursal the Mauler
-    .isOnQuest 486
 step
     .goto 1438/1,965.29,9887.65
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Athridas Bearmantle|r
     .turnin 486 >>Turn in Ursal the Mauler
     .target Athridas Bearmantle
-    .isOnQuest 486
 step
     .goto 1438/1,985.14,9898.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tallonkai Swiftroot|r
@@ -1588,22 +1500,9 @@ step
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Ferocitas the Dream Eater
     >>|cRXP_FRIENDLY_Darkshore and back here|r: The Shade of Elura << Warrior
 step
-    +|cRXP_WARN_Suggested next zones at level 10|r: |cRXP_FRIENDLY_Darkshore|r (about 2.2 levels of quests, starting around Thundris Windweaver; 1 quest from here hands in there), |cRXP_FRIENDLY_Azuremyst Isle|r (about 1.5 levels of quests, starting around Daedal), |cRXP_FRIENDLY_Elwynn Forest|r (about 1.5 levels of quests, starting around Marshal Dughan). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 13, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 2.2 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Azuremyst Isle|r (about 1.8 levels of quests), |cRXP_FRIENDLY_Elwynn Forest|r (about 1.7 levels of quests). Then come back to this Teldrassil guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Teldrassil is planned from level 13.|r Load its guide for level 13 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 42 Teldrassil
-#subweight -1
-#name 13-14 Teldrassil
---RouteBuilder:next
-#next Zone Routes (Alliance)\10-15 Darkshore: around Thundris Windweaver;Zone Routes (Alliance)\10-12 Bloodmyst Isle: around Morae;Zone Routes (Alliance)\10-13 Westfall: around Farmer Saldean
-
+    .xp 13 >>|cRXP_WARN_The rest of Teldrassil is planned from level 13.|r Come back to this guide then
 step
     .goto 1438/1,282.49,10018.65
     >>Kill |cRXP_ENEMY_Ferocitas the Dream Eater|r and loot |cRXP_LOOT_Gnarlpine Necklace|r
@@ -1660,22 +1559,9 @@ step
     +|cRXP_WARN_That is all of Teldrassil for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Hillsbrad Foothills and back here|r: A Donation of Wool
 step
-    +|cRXP_WARN_Suggested next zones at level 13|r: |cRXP_FRIENDLY_Darkshore|r (about 2.6 levels of quests, starting around Thundris Windweaver; 2 quests from here hand in there), |cRXP_FRIENDLY_Bloodmyst Isle|r (about 0.8 levels of quests, starting around Morae), |cRXP_FRIENDLY_Westfall|r (about 0.8 levels of quests, starting around Farmer Saldean). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 16, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 2.6 levels of quests; 2 quests from here hand in there), |cRXP_FRIENDLY_Bloodmyst Isle|r (about 0.8 levels of quests), |cRXP_FRIENDLY_Westfall|r (about 0.8 levels of quests). Then come back to this Teldrassil guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Teldrassil is planned from level 16.|r Load its guide for level 16 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 42 Teldrassil
-#subweight -1
-#name 16-17 Teldrassil
---RouteBuilder:next
-#next Zone Routes (Alliance)\10-15 Darkshore: around Thundris Windweaver;Zone Routes (Alliance)\14-18 Bloodmyst Isle: around Vindicator Boros;Zone Routes (Alliance)\14-15 The Barrens: around Gazlowe
-
+    .xp 16 >>|cRXP_WARN_The rest of Teldrassil is planned from level 16.|r Come back to this guide then
 step << Druid
     #completewith next
     .zone 1457 >>Travel to Darnassus
@@ -1753,23 +1639,10 @@ step
     >>|cRXP_FRIENDLY_Darkshore|r: Trouble In Darkshore?
     >>|cRXP_FRIENDLY_Moonglade|r: Lessons Anew << Druid
     >>|cRXP_FRIENDLY_Wetlands|r: The Absent Minded Prospector
-step
-    +|cRXP_WARN_Suggested next zones at level 16|r: |cRXP_FRIENDLY_Darkshore|r (about 2.0 levels of quests, starting around Thundris Windweaver; 2 quests from here hand in there), |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.7 levels of quests, starting around Vindicator Boros), |cRXP_FRIENDLY_The Barrens|r (about 0.5 levels of quests, starting around Gazlowe). Completing this step loads the guide for Darkshore --RouteBuilder:next
 step << NightElf Druid/Rogue/Draenei
-    +|cRXP_WARN_The rest of Teldrassil is planned from level 19.|r Load its guide for level 19 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< NightElf Druid/Rogue/Draenei
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 42 Teldrassil
-#subweight -1
-#name 19-20 Teldrassil
---RouteBuilder:next
-#next Zone Routes (Alliance)\14-18 Bloodmyst Isle: around Vindicator Boros;Zone Routes (Alliance)\17-19 Darkshore: around Terenthis;Zone Routes (Alliance)\20-21 Duskwood: around Elaine Carevin
-
+    +|cRXP_WARN_Until level 19, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 2.0 levels of quests; 2 quests from here hand in there), |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.7 levels of quests), |cRXP_FRIENDLY_The Barrens|r (about 0.5 levels of quests). Then come back to this Teldrassil guide --RouteBuilder:next
+step << NightElf Druid/Rogue/Draenei
+    .xp 19 >>|cRXP_WARN_The rest of Teldrassil is planned from level 19.|r Come back to this guide then
 step << Draenei
     #completewith next
     .zone 1457 >>Travel to Darnassus
@@ -1861,23 +1734,10 @@ step
     >>|cRXP_FRIENDLY_Ashenvale|r: Travel to Astranaar << Draenei
     >>|cRXP_FRIENDLY_Moonglade|r: A Lesson to Learn << NightElf Druid
     >>|cRXP_FRIENDLY_Stormwind City|r: Erion's Behest << Rogue
-step
-    +|cRXP_WARN_Suggested next zones at level 19|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.4 levels of quests, starting around Vindicator Boros), |cRXP_FRIENDLY_Darkshore|r (about 0.9 levels of quests, starting around Terenthis), |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests, starting around Elaine Carevin). Completing this step loads the guide for Bloodmyst Isle --RouteBuilder:next
 step << Warrior/Dwarf Priest/NightElf Priest/Human Priest
-    +|cRXP_WARN_The rest of Teldrassil is planned from level 22.|r Load its guide for level 22 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Warrior/Dwarf Priest/NightElf Priest/Human Priest
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 42 Teldrassil
-#subweight -1
-#name 22-23 Teldrassil
---RouteBuilder:next
-#next Zone Routes (Alliance)\21-22 Ashenvale
-
+    +|cRXP_WARN_Until level 22, suggested zones|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.4 levels of quests), |cRXP_FRIENDLY_Darkshore|r (about 0.9 levels of quests), |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests). Then come back to this Teldrassil guide --RouteBuilder:next
+step << Warrior/Dwarf Priest/NightElf Priest/Human Priest
+    .xp 22 >>|cRXP_WARN_The rest of Teldrassil is planned from level 22.|r Come back to this guide then
 step
     #completewith next
     .zone 1457 >>Travel to Darnassus
@@ -1981,20 +1841,9 @@ step
     >>|cRXP_FRIENDLY_Redridge Mountains|r: Yorus Barleybrew << Warrior
     >>|cRXP_FRIENDLY_Stormwind City|r: Arcane Feedback << Human Priest
 step
-    +|cRXP_WARN_Suggested next zones at level 22|r: |cRXP_FRIENDLY_Ashenvale|r (about 0.5 levels of quests). Completing this step loads the guide for Ashenvale --RouteBuilder:next
+    +|cRXP_WARN_Until level 25, suggested zones|r: |cRXP_FRIENDLY_Ashenvale|r (about 0.5 levels of quests). Then come back to this Teldrassil guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Teldrassil is planned from level 25.|r Load its guide for level 25 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 42 Teldrassil
-#subweight -1
-#name 25-26 Teldrassil
-
+    .xp 25 >>|cRXP_WARN_The rest of Teldrassil is planned from level 25.|r Come back to this guide then
 step
     .goto 1438/1,282.49,10018.65
     >>Kill |cRXP_ENEMY_Ferocitas the Dream Eater|r and loot |cRXP_LOOT_Gnarlpine Necklace|r
@@ -2065,20 +1914,7 @@ step
     >>|cRXP_FRIENDLY_Alterac Mountains|r: The Manor, Ravenholdt << Rogue
     >>|cRXP_FRIENDLY_Ironforge|r: Klockmort's Essentials
 step
-    +|cRXP_WARN_The rest of Teldrassil is planned from level 28.|r Load its guide for level 28 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 42 Teldrassil
-#subweight -1
-#name 28-29 Teldrassil
---RouteBuilder:next
-#next Zone Routes (Alliance)\27-29 Ashenvale: around Sentinel Melyria Frostshadow;Zone Routes (Alliance)\28-29 Duskwood: around Sirra Von'Indi
-
+    .xp 28 >>|cRXP_WARN_The rest of Teldrassil is planned from level 28.|r Come back to this guide then
 step
     .goto 1438/1,282.49,10018.65
     >>Kill |cRXP_ENEMY_Ferocitas the Dream Eater|r and loot |cRXP_LOOT_Gnarlpine Necklace|r
@@ -2173,22 +2009,9 @@ step
     >>|cRXP_FRIENDLY_The Barrens|r: The Barrens Port
     >>|cRXP_FRIENDLY_Hillsbrad Foothills and back here|r: A Donation of Silk
 step
-    +|cRXP_WARN_Suggested next zones at level 28|r: |cRXP_FRIENDLY_Ashenvale|r (about 0.8 levels of quests, starting around Sentinel Melyria Frostshadow), |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests, starting around Sirra Von'Indi). Completing this step loads the guide for Ashenvale --RouteBuilder:next
+    +|cRXP_WARN_Until level 41, suggested zones|r: |cRXP_FRIENDLY_Ashenvale|r (about 0.8 levels of quests), |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests). Then come back to this Teldrassil guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Teldrassil is planned from level 41.|r Load its guide for level 41 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 42 Teldrassil
-#subweight -1
-#name 41-42 Teldrassil
---RouteBuilder:next
-#next Zone Routes (Alliance)\38-40 Stranglethorn Vale: around Fleet Master Seahorn
-
+    .xp 41 >>|cRXP_WARN_The rest of Teldrassil is planned from level 41.|r Come back to this guide then
 step
     .goto 1438/1,282.49,10018.65
     >>Kill |cRXP_ENEMY_Ferocitas the Dream Eater|r and loot |cRXP_LOOT_Gnarlpine Necklace|r
@@ -2263,5 +2086,5 @@ step
     +|cRXP_WARN_End of the Teldrassil route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Hillsbrad Foothills and back here|r: A Donation of Mageweave
 step
-    +|cRXP_WARN_Suggested next zones at level 41|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.6 levels of quests, starting around Fleet Master Seahorn). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 41|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.6 levels of quests). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
 ]])

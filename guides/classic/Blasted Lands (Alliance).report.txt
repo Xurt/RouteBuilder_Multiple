@@ -1,7 +1,7 @@
 Blasted Lands - Alliance
 Guide "50-57 Blasted Lands" in group "Zone Routes (Alliance)": 38 steps, 34 stops
 Written to guides/classic/Blasted Lands (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 

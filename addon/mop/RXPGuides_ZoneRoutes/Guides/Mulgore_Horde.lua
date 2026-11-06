@@ -1,9 +1,9 @@
 -- 5-12 Mulgore: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 5, 11).
--- Split into 2 guides, listed under "5 - 12 Mulgore" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 5; part 2 from 11.
 -- Edit zones/mop/Mulgore.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,9 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 5 - 12 Mulgore
-#subweight -5
-#name 5-9 Mulgore
+#name 5-12 Mulgore
+--RouteBuilder:next
+#next Zone Routes (Horde)\10-20 Azshara
 
 step
     .hs >> Hearth to Camp Narache
@@ -624,20 +624,7 @@ step
     +|cRXP_WARN_That is all of Mulgore for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Orgrimmar|r: Walk With The Earth Mother << Tauren
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Mulgore is planned from level 11.|r Load its guide for level 11 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 5 - 12 Mulgore
-#subweight -5
-#name 11-12 Mulgore
---RouteBuilder:next
-#next Zone Routes (Horde)\10-14 Azshara: around Labor Captain Grabbit
-
+    .xp 11 >>|cRXP_WARN_The rest of Mulgore is planned from level 11.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 88,42.22,57.77
     >>Click the |cRXP_PICK_Warchief's Command Board|r
@@ -648,5 +635,5 @@ step
     >>|cRXP_FRIENDLY_Azshara|r: Warchief's Command: Azshara! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_The Barrens|r: Warchief's Command: Northern Barrens! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 11|r: |cRXP_FRIENDLY_Azshara|r (about 0.6 levels of quests, starting around Labor Captain Grabbit). Completing this step loads the guide for Azshara --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 11|r: |cRXP_FRIENDLY_Azshara|r (about 0.6 levels of quests). Completing this step loads the guide for Azshara --RouteBuilder:next
 ]])

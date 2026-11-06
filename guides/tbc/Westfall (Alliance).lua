@@ -1,9 +1,9 @@
 -- 10-44 Westfall: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 4 parts (from level 10, 15, 18, 41).
--- Split into 4 guides, listed under "10 - 42 Westfall" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 10; part 2 from 15; part 3 from 18; part 4 from 41.
 -- Edit zones/tbc/Westfall.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 10 - 42 Westfall
-#subweight -10
-#name 10-13 Westfall: around Farmer Saldean
+#name 10-44 Westfall
 --RouteBuilder:next
-#next Zone Routes (Alliance)\10-15 Darkshore: around Thundris Windweaver;Zone Routes (Alliance)\10-12 Bloodmyst Isle: around Morae;Zone Routes (Alliance)\8-11 Teldrassil: around Mathrengyl Bearwalker
+#next Zone Routes (Alliance)\30-50 Stranglethorn Vale
 
 step
     .goto 1436/0,1045.12,-10508.80
@@ -386,22 +384,9 @@ step
     +|cRXP_WARN_That is all of Westfall for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Stormwind City|r: Continue to Stormwind << Human
 step
-    +|cRXP_WARN_Suggested next zones at level 12|r: |cRXP_FRIENDLY_Darkshore|r (about 2.2 levels of quests, starting around Thundris Windweaver), |cRXP_FRIENDLY_Bloodmyst Isle|r (about 0.9 levels of quests, starting around Morae), |cRXP_FRIENDLY_Teldrassil|r (about 0.8 levels of quests, starting around Mathrengyl Bearwalker). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 15, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 2.2 levels of quests), |cRXP_FRIENDLY_Teldrassil|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Bloodmyst Isle|r (about 0.9 levels of quests). Then come back to this Westfall guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Westfall is planned from level 15.|r Load its guide for level 15 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 10 - 42 Westfall
-#subweight -10
-#name 15-16 Westfall
---RouteBuilder:next
-#next Zone Routes (Alliance)\14-18 Bloodmyst Isle: around Vindicator Boros;Zone Routes (Alliance)\10-15 Darkshore: around Thundris Windweaver;Zone Routes (Alliance)\14-15 Loch Modan
-
+    .xp 15 >>|cRXP_WARN_The rest of Westfall is planned from level 15.|r Come back to this guide then
 step
     .goto 1436/0,1045.12,-10508.80
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gryan Stoutmantle|r
@@ -529,22 +514,9 @@ step
     >>|cRXP_FRIENDLY_Redridge Mountains|r: Messenger to Westfall, The Defias Brotherhood
     >>|cRXP_FRIENDLY_Stormwind City|r: The Defias Brotherhood
 step
-    +|cRXP_WARN_Suggested next zones at level 15|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.9 levels of quests, starting around Vindicator Boros), |cRXP_FRIENDLY_Darkshore|r (about 1.7 levels of quests, starting around Thundris Windweaver), |cRXP_FRIENDLY_Loch Modan|r (about 0.6 levels of quests). Completing this step loads the guide for Bloodmyst Isle --RouteBuilder:next
+    +|cRXP_WARN_Until level 18, suggested zones|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.9 levels of quests), |cRXP_FRIENDLY_Darkshore|r (about 1.7 levels of quests), |cRXP_FRIENDLY_Loch Modan|r (about 0.6 levels of quests). Then come back to this Westfall guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Westfall is planned from level 18.|r Load its guide for level 18 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 10 - 42 Westfall
-#subweight -10
-#name 18-19 Westfall
---RouteBuilder:next
-#next Zone Routes (Alliance)\14-18 Bloodmyst Isle: around Vindicator Boros;Zone Routes (Alliance)\17-19 Darkshore: around Terenthis
-
+    .xp 18 >>|cRXP_WARN_The rest of Westfall is planned from level 18.|r Come back to this guide then
 step
     .goto 1436/0,1966.32,-11407.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Grayson|r
@@ -590,22 +562,9 @@ step
     .turnin 152 >>Turn in The Coast Isn't Clear
     .target Captain Grayson
 step
-    +|cRXP_WARN_Suggested next zones at level 18|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.5 levels of quests, starting around Vindicator Boros), |cRXP_FRIENDLY_Darkshore|r (about 0.8 levels of quests, starting around Terenthis). Completing this step loads the guide for Bloodmyst Isle --RouteBuilder:next
+    +|cRXP_WARN_Until level 41, suggested zones|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.5 levels of quests), |cRXP_FRIENDLY_Darkshore|r (about 0.8 levels of quests). Then come back to this Westfall guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Westfall is planned from level 41.|r Load its guide for level 41 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 10 - 42 Westfall
-#subweight -10
-#name 41-42 Westfall
---RouteBuilder:next
-#next Zone Routes (Alliance)\38-40 Stranglethorn Vale: around Fleet Master Seahorn
-
+    .xp 41 >>|cRXP_WARN_The rest of Westfall is planned from level 41.|r Come back to this guide then
 step
     .goto 1436/0,1454.97,-11272.50
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Grimbooze Thunderbrew|r
@@ -725,5 +684,5 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: Klaven's Tower << Rogue
     >>|cRXP_FRIENDLY_Stranglethorn Vale and back here|r: Sweet Amber
 step
-    +|cRXP_WARN_Suggested next zones at level 41|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests, starting around Fleet Master Seahorn). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 41|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
 ]])

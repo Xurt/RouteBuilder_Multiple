@@ -13,12 +13,12 @@
       "start": 10,
       "end": 14.07,
       "next": 17,
-      "guide": "10-15 Westfall: around Marshal Gryan Stoutmantle",
+      "guide": "10-15 Westfall",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Marshal Gryan Stoutmantle",
-          "guide": "10-15 Westfall: around Marshal Gryan Stoutmantle",
+          "label": "",
+          "name": "start",
+          "guide": "10-15 Westfall",
           "level": 10,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 17,
       "end": 17,
-      "guide": "17-18 Westfall",
+      "guide": "10-15 Westfall",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "17-18 Westfall",
+          "guide": "10-15 Westfall",
           "level": 17,
           "index": 0
         }

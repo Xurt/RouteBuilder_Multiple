@@ -13,21 +13,14 @@
       "start": 36,
       "end": 40.47,
       "next": 83,
-      "guide": "38-41 Dustwallow Marsh: around Tabetha",
+      "guide": "36-40 Dustwallow Marsh",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around \u0022Swamp Eye\u0022 Jarl",
-          "guide": "36-38 Dustwallow Marsh: around \u0022Swamp Eye\u0022 Jarl",
+          "label": "",
+          "name": "start",
+          "guide": "36-40 Dustwallow Marsh",
           "level": 36,
           "index": 0
-        },
-        {
-          "label": "RBSection1_2",
-          "name": "around Tabetha",
-          "guide": "38-41 Dustwallow Marsh: around Tabetha",
-          "level": 38,
-          "index": 1
         }
       ]
     },
@@ -35,12 +28,12 @@
       "part": 2,
       "start": 83,
       "end": 83,
-      "guide": "83-84 Dustwallow Marsh",
+      "guide": "36-40 Dustwallow Marsh",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "83-84 Dustwallow Marsh",
+          "guide": "36-40 Dustwallow Marsh",
           "level": 83,
           "index": 0
         }
@@ -81,7 +74,7 @@
       "req": 5,
       "xp": 160,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "NightElf",
       "from": "Teldrassil"
     },
@@ -101,7 +94,7 @@
       "req": 10,
       "xp": 90,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
       "from": "Azuremyst Isle"
     },
@@ -111,7 +104,7 @@
       "req": 14,
       "xp": 1150,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
       "from": "Bloodmyst Isle"
     },
@@ -121,7 +114,7 @@
       "req": 10,
       "xp": 420,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior",
       "from": "Azuremyst Isle"
     },
@@ -131,7 +124,7 @@
       "req": 35,
       "xp": 410,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -140,7 +133,7 @@
       "req": 38,
       "xp": 410,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -149,7 +142,7 @@
       "req": 37,
       "xp": 370,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -158,7 +151,7 @@
       "req": 1,
       "xp": 880,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
       "from": "Teldrassil"
     },
@@ -168,7 +161,7 @@
       "req": 28,
       "xp": 2450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
       "from": "Southern Barrens"
     },
@@ -379,7 +372,7 @@
       "req": 34,
       "xp": 4600,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -433,7 +426,7 @@
       "req": 34,
       "xp": 4600,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -497,7 +490,7 @@
       "req": 37,
       "xp": 2050,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -596,7 +589,7 @@
       "req": 35,
       "xp": 3710,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -605,7 +598,7 @@
       "req": 35,
       "xp": 4600,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -614,7 +607,7 @@
       "req": 36,
       "xp": 3920,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -623,7 +616,7 @@
       "req": 36,
       "xp": 3920,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -632,7 +625,7 @@
       "req": 36,
       "xp": 3920,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -641,7 +634,7 @@
       "req": 36,
       "xp": 390,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -650,7 +643,7 @@
       "req": 36,
       "xp": 4900,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -659,7 +652,7 @@
       "req": 36,
       "xp": 4900,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -668,7 +661,7 @@
       "req": 36,
       "xp": 5150,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -677,7 +670,7 @@
       "req": 36,
       "xp": 5150,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -686,7 +679,7 @@
       "req": 36,
       "xp": 5150,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -695,7 +688,7 @@
       "req": 36,
       "xp": 5150,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -704,7 +697,7 @@
       "req": 36,
       "xp": 6200,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -713,7 +706,7 @@
       "req": 36,
       "xp": 4140,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -722,7 +715,7 @@
       "req": 36,
       "xp": 4140,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -731,7 +724,7 @@
       "req": 37,
       "xp": 5150,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -740,7 +733,7 @@
       "req": 35,
       "xp": 1950,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -749,7 +742,7 @@
       "req": 35,
       "xp": 3920,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {

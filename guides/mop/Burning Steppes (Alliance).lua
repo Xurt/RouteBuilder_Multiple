@@ -1,9 +1,9 @@
 -- 50-52 Burning Steppes: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 50, 55).
--- Split into 2 guides, listed under "50 - 56 Burning Steppes" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 50; part 2 from 55.
 -- Edit zones/mop/Burning Steppes.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 50 - 56 Burning Steppes
-#subweight -50
-#name 50-53 Burning Steppes: around Colonel Troteman
+#name 50-52 Burning Steppes
 --RouteBuilder:next
-#next Zone Routes (Alliance)\51-53 Un'Goro Crater: around Garl Stormclaw;Zone Routes (Alliance)\52-55 Winterspring: around Jez Goodgrub;Zone Routes (Alliance)\52-55 Swamp of Sorrows: around Trade Baron Silversnap
+#next Zone Routes (Alliance)\50-55 Winterspring;Zone Routes (Alliance)\51-55 Un'Goro Crater;Zone Routes (Alliance)\55-56 Silithus
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 36,16.98,51.30
@@ -621,23 +619,10 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Colonel Troteman|r
     .turnin 28246 >>Turn in Strategic Cuts
     .target Colonel Troteman
-step
-    +|cRXP_WARN_Suggested next zones at level 52|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.8 levels of quests, starting around Garl Stormclaw), |cRXP_FRIENDLY_Winterspring|r (about 1.4 levels of quests, starting around Jez Goodgrub), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 1.0 levels of quests, starting around Trade Baron Silversnap). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of Burning Steppes is planned from level 55.|r Load its guide for level 55 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 50 - 56 Burning Steppes
-#subweight -50
-#name 55-56 Burning Steppes
---RouteBuilder:next
-#next Zone Routes (Alliance)\52-55 Winterspring: around Jez Goodgrub;Zone Routes (Alliance)\55-56 Silithus;Zone Routes (Alliance)\52-55 Swamp of Sorrows: around Trade Baron Silversnap
-
+    +|cRXP_WARN_Until level 55, suggested zones|r: |cRXP_FRIENDLY_Winterspring|r (about 2.7 levels of quests), |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.8 levels of quests), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 1.0 levels of quests). Then come back to this Burning Steppes guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 55 >>|cRXP_WARN_The rest of Burning Steppes is planned from level 55.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 36,71.86,67.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Oralius|r
@@ -647,5 +632,5 @@ step
     +|cRXP_WARN_End of the Burning Steppes route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Swamp of Sorrows|r: The Bogpaddle Bullet << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 55|r: |cRXP_FRIENDLY_Winterspring|r (about 1.2 levels of quests, starting around Jez Goodgrub), |cRXP_FRIENDLY_Silithus|r (about 0.9 levels of quests, starting around Huum Wildmane), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 0.8 levels of quests, starting around Trade Baron Silversnap). Completing this step loads the guide for Winterspring --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 55|r: |cRXP_FRIENDLY_Winterspring|r (about 2.4 levels of quests), |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Silithus|r (about 0.9 levels of quests). Completing this step loads the guide for Winterspring --RouteBuilder:next
 ]])

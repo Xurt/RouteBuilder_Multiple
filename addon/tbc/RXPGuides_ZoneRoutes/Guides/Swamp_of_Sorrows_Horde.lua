@@ -1,9 +1,9 @@
 -- 35-57 Swamp of Sorrows: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 8 parts (from level 35, 38, 41, 44, 47, 50, 53, 56).
--- Split into 8 guides, listed under "35 - 57 Swamp of Sorrows" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 35; part 2 from 38; part 3 from 41; part 4 from 44; part 5 from 47; part 6 from 50; part 7 from 53; part 8 from 56.
 -- Edit zones/tbc/Swamp of Sorrows.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 35 - 57 Swamp of Sorrows
-#subweight -35
-#name 35-36 Swamp of Sorrows
+#name 35-57 Swamp of Sorrows
 --RouteBuilder:next
-#next Zone Routes (Horde)\35-38 Dustwallow Marsh: around Krog;Zone Routes (Horde)\33-35 Stranglethorn Vale: around Kebok;Zone Routes (Horde)\35-36 Arathi Highlands: around Tor'gan
+#next Zone Routes (Horde)\55-60 Eastern Plaguelands
 
 step
     .goto 1435/0,-2818.83,-10100.99
@@ -91,22 +89,9 @@ step
     +|cRXP_WARN_That is all of Swamp of Sorrows for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Badlands|r: Neeka Bloodscar
 step
-    +|cRXP_WARN_Suggested next zones at level 35|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.4 levels of quests, starting around Krog), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests, starting around Kebok), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.5 levels of quests, starting around Tor'gan). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
+    +|cRXP_WARN_Until level 38, suggested zones|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.4 levels of quests), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.5 levels of quests). Then come back to this Swamp of Sorrows guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 38.|r Load its guide for level 38 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 35 - 57 Swamp of Sorrows
-#subweight -35
-#name 38-39 Swamp of Sorrows
---RouteBuilder:next
-#next Zone Routes (Horde)\35-38 Dustwallow Marsh: around Krog;Zone Routes (Horde)\37-39 Stranglethorn Vale: around Baron Revilgaz;Zone Routes (Horde)\38-39 Arathi Highlands: around Zengu
-
+    .xp 38 >>|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 38.|r Come back to this guide then
 step
     .goto 1435/0,-3248.22,-10495.67
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dar|r
@@ -162,22 +147,9 @@ step
     +|cRXP_WARN_That is all of Swamp of Sorrows for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Dustwallow Marsh|r: Cortello's Riddle
 step
-    +|cRXP_WARN_Suggested next zones at level 38|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.2 levels of quests, starting around Krog; 1 quest from here hands in there), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 1.0 levels of quests, starting around Baron Revilgaz), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.6 levels of quests, starting around Zengu). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
+    +|cRXP_WARN_Until level 41, suggested zones|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.2 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 1.0 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.6 levels of quests). Then come back to this Swamp of Sorrows guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 41.|r Load its guide for level 41 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 35 - 57 Swamp of Sorrows
-#subweight -35
-#name 41-42 Swamp of Sorrows: around Tok'Kar
---RouteBuilder:next
-#next Zone Routes (Horde)\41-43 Stranglethorn Vale: around "Sea Wolf" MacKinley;Zone Routes (Horde)\42-43 Feralas: around Hadoken Swiftstrider
-
+    .xp 41 >>|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 41.|r Come back to this guide then
 step
     .goto 1435/0,-4088.19,-10859.00
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tok'Kar|r
@@ -304,22 +276,9 @@ step
     +|cRXP_WARN_That is all of Swamp of Sorrows for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_The Hinterlands|r: The Atal'ai Exile
 step
-    +|cRXP_WARN_Suggested next zones at level 41|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 1.0 levels of quests, starting around "Sea Wolf" MacKinley), |cRXP_FRIENDLY_Feralas|r (about 0.5 levels of quests, starting around Hadoken Swiftstrider). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Until level 44, suggested zones|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 1.0 levels of quests), |cRXP_FRIENDLY_Feralas|r (about 0.5 levels of quests). Then come back to this Swamp of Sorrows guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 44.|r Load its guide for level 44 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 35 - 57 Swamp of Sorrows
-#subweight -35
-#name 44-45 Swamp of Sorrows
---RouteBuilder:next
-#next Zone Routes (Horde)\41-43 Stranglethorn Vale: around "Sea Wolf" MacKinley
-
+    .xp 44 >>|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 44.|r Come back to this guide then
 step
     .goto 1435/0,-4144.16,-10850.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Katar|r
@@ -382,22 +341,9 @@ step
     .target Fel'zerul
     .isOnQuest 1445
 step
-    +|cRXP_WARN_Suggested next zones at level 44|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.9 levels of quests, starting around "Sea Wolf" MacKinley). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Until level 47, suggested zones|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.9 levels of quests). Then come back to this Swamp of Sorrows guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 47.|r Load its guide for level 47 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 35 - 57 Swamp of Sorrows
-#subweight -35
-#name 47-48 Swamp of Sorrows
---RouteBuilder:next
-#next Zone Routes (Horde)\46-48 The Hinterlands: around Huntsman Markhor
-
+    .xp 47 >>|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 47.|r Come back to this guide then
 step
     .goto 1435/0,-3009.44,-10632.22
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fallen Hero of the Horde|r
@@ -420,22 +366,9 @@ step
     .turnin 2621 >>Turn in The Disgraced One
     .target Dispatch Commander Ruag
 step
-    +|cRXP_WARN_Suggested next zones at level 47|r: |cRXP_FRIENDLY_The Hinterlands|r (about 1.0 levels of quests, starting around Huntsman Markhor). Completing this step loads the guide for The Hinterlands --RouteBuilder:next
+    +|cRXP_WARN_Until level 50, suggested zones|r: |cRXP_FRIENDLY_The Hinterlands|r (about 1.0 levels of quests). Then come back to this Swamp of Sorrows guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 50.|r Load its guide for level 50 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 35 - 57 Swamp of Sorrows
-#subweight -35
-#name 50-51 Swamp of Sorrows
---RouteBuilder:next
-#next Zone Routes (Horde)\50-52 Un'Goro Crater: around Torwa Pathfinder;Zone Routes (Horde)\50-51 Blasted Lands: around Bloodmage Drazial
-
+    .xp 50 >>|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 50.|r Come back to this guide then
 step
     .goto 1435/0,-3319.10,-10460.96
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dispatch Commander Ruag|r
@@ -485,23 +418,10 @@ step
     .turnin 3374 >>Turn in The Essence of Eranikus
     .target Itharius
     .isOnQuest 3374
-step
-    +|cRXP_WARN_Suggested next zones at level 50|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.7 levels of quests, starting around Torwa Pathfinder), |cRXP_FRIENDLY_Blasted Lands|r (about 0.5 levels of quests, starting around Bloodmage Drazial; 1 quest from here hands in there). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
 step << Warrior
-    +|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 53.|r Load its guide for level 53 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Warrior
-#version 1
-#group Zone Routes (Horde)
-#subgroup 35 - 57 Swamp of Sorrows
-#subweight -35
-#name 53-54 Swamp of Sorrows
---RouteBuilder:next
-#next Zone Routes (Horde)\50-52 Un'Goro Crater: around Torwa Pathfinder
-
+    +|cRXP_WARN_Until level 53, suggested zones|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Blasted Lands|r (about 0.5 levels of quests; 1 quest from here hands in there). Then come back to this Swamp of Sorrows guide --RouteBuilder:next
+step << Warrior
+    .xp 53 >>|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 53.|r Come back to this guide then
 step << Warrior
     .goto 1435/0,-3009.44,-10632.22
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fallen Hero of the Horde|r
@@ -551,22 +471,9 @@ step
     >>|cRXP_FRIENDLY_Winterspring|r: In Eranikus' Own Words
     >>|cRXP_FRIENDLY_Blasted Lands and back here|r: Warrior Kinship << Warrior
 step
-    +|cRXP_WARN_Suggested next zones at level 53|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.6 levels of quests, starting around Torwa Pathfinder). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
+    +|cRXP_WARN_Until level 56, suggested zones|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.6 levels of quests). Then come back to this Swamp of Sorrows guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 56.|r Load its guide for level 56 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 35 - 57 Swamp of Sorrows
-#subweight -35
-#name 56-57 Swamp of Sorrows
---RouteBuilder:next
-#next Zone Routes (Horde)\55-56 Eastern Plaguelands: around Tirion Fordring
-
+    .xp 56 >>|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 56.|r Come back to this guide then
 step << Warrior
     .goto 1435/0,-3009.44,-10632.22
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fallen Hero of the Horde|r
@@ -632,5 +539,5 @@ step
     +|cRXP_WARN_End of the Swamp of Sorrows route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Blasted Lands and back here|r: The Stones That Bind Us
 step
-    +|cRXP_WARN_Suggested next zones at level 56|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 0.6 levels of quests, starting around Tirion Fordring). Completing this step loads the guide for Eastern Plaguelands --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 56|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 0.6 levels of quests). Completing this step loads the guide for Eastern Plaguelands --RouteBuilder:next
 ]])

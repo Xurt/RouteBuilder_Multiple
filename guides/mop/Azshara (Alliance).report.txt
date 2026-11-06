@@ -1,7 +1,7 @@
 Azshara - Alliance - part 1 of 3, planned from level 10
 Guide "10-17 Azshara" in group "Zone Routes (Alliance)": this part has 8 steps, 7 stops
 Written to guides/mop/Azshara (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -60,7 +60,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Azshara - Alliance - part 2 of 3, planned from level 13
 Guide "10-17 Azshara" in group "Zone Routes (Alliance)": this part has 15 steps, 14 stops
 Written to guides/mop/Azshara (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -113,7 +113,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Azshara - Alliance - part 3 of 3, planned from level 16
 Guide "10-17 Azshara" in group "Zone Routes (Alliance)": this part has 9 steps, 8 stops
 Written to guides/mop/Azshara (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files

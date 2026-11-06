@@ -13,12 +13,12 @@
       "start": 45,
       "end": 45.53,
       "next": 48,
-      "guide": "45-46 Searing Gorge: around Kalaran Windblade",
+      "guide": "45-52 Searing Gorge",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Kalaran Windblade",
-          "guide": "45-46 Searing Gorge: around Kalaran Windblade",
+          "label": "",
+          "name": "start",
+          "guide": "45-52 Searing Gorge",
           "level": 45,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 48,
       "end": 48.48,
       "next": 51,
-      "guide": "48-49 Searing Gorge: around Hansel Heavyhands",
+      "guide": "45-52 Searing Gorge",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Hansel Heavyhands",
-          "guide": "48-49 Searing Gorge: around Hansel Heavyhands",
+          "label": "",
+          "name": "part 2",
+          "guide": "45-52 Searing Gorge",
           "level": 48,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 51,
       "end": 51.09,
-      "guide": "51-52 Searing Gorge",
+      "guide": "45-52 Searing Gorge",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "51-52 Searing Gorge",
+          "guide": "45-52 Searing Gorge",
           "level": 51,
           "index": 0
         }

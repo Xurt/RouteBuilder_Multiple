@@ -1,9 +1,9 @@
 -- 18-32 Ashenvale: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 5 parts (from level 18, 21, 24, 27, 31).
--- Split into 5 guides, listed under "18 - 32 Ashenvale" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 18; part 2 from 21; part 3 from 24; part 4 from 27; part 5 from 31.
 -- Edit zones/tbc/Ashenvale.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 18 - 32 Ashenvale
-#subweight -18
-#name 18-19 Ashenvale: around Shindrell Swiftfire
+#name 18-32 Ashenvale
 --RouteBuilder:next
-#next Zone Routes (Alliance)\14-18 Bloodmyst Isle: around Vindicator Boros;Zone Routes (Alliance)\17-19 Darkshore: around Terenthis
+#next Zone Routes (Alliance)\30-50 Stranglethorn Vale;Zone Routes (Alliance)\31-40 Desolace
 
 step
     .goto 1440/1,189.13,3185.39
@@ -211,22 +209,9 @@ step
     >>|cRXP_FRIENDLY_Stonetalon Mountains|r: Journey to Stonetalon Peak, On Guard in Stonetalon
     >>|cRXP_FRIENDLY_Stonetalon Mountains and back here|r: Pridewings of Stonetalon
 step
-    +|cRXP_WARN_Suggested next zones at level 18|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.5 levels of quests, starting around Vindicator Boros), |cRXP_FRIENDLY_Darkshore|r (about 1.0 levels of quests, starting around Terenthis). Completing this step loads the guide for Bloodmyst Isle --RouteBuilder:next
+    +|cRXP_WARN_Until level 21, suggested zones|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.5 levels of quests), |cRXP_FRIENDLY_Darkshore|r (about 1.0 levels of quests). Then come back to this Ashenvale guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Ashenvale is planned from level 21.|r Load its guide for level 21 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 18 - 32 Ashenvale
-#subweight -18
-#name 21-22 Ashenvale
---RouteBuilder:next
-#next Zone Routes (Alliance)\20-21 Duskwood: around Elaine Carevin
-
+    .xp 21 >>|cRXP_WARN_The rest of Ashenvale is planned from level 21.|r Come back to this guide then
 step
     .goto 1440/1,175.29,3189.61
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Orendil Broadleaf|r
@@ -336,22 +321,9 @@ step
     +|cRXP_WARN_That is all of Ashenvale for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_The Barrens and back here|r: Mage Summoner
 step
-    +|cRXP_WARN_Suggested next zones at level 21|r: |cRXP_FRIENDLY_Duskwood|r (about 0.5 levels of quests, starting around Elaine Carevin). Completing this step loads the guide for Duskwood --RouteBuilder:next
+    +|cRXP_WARN_Until level 24, suggested zones|r: |cRXP_FRIENDLY_Duskwood|r (about 0.5 levels of quests). Then come back to this Ashenvale guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Ashenvale is planned from level 24.|r Load its guide for level 24 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 18 - 32 Ashenvale
-#subweight -18
-#name 24-25 Ashenvale
---RouteBuilder:next
-#next Zone Routes (Alliance)\24-25 Duskwood: around Clerk Daltry
-
+    .xp 24 >>|cRXP_WARN_The rest of Ashenvale is planned from level 24.|r Come back to this guide then
 step
     .goto 1440/1,-299.30,2795.63
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shindrell Swiftfire|r
@@ -507,22 +479,9 @@ step
     .target Delgren the Purifier
     .isQuestComplete 976
 step
-    +|cRXP_WARN_Suggested next zones at level 24|r: |cRXP_FRIENDLY_Duskwood|r (about 0.5 levels of quests, starting around Clerk Daltry). Completing this step loads the guide for Duskwood --RouteBuilder:next
+    +|cRXP_WARN_Until level 27, suggested zones|r: |cRXP_FRIENDLY_Duskwood|r (about 0.5 levels of quests). Then come back to this Ashenvale guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Ashenvale is planned from level 27.|r Load its guide for level 27 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 18 - 32 Ashenvale
-#subweight -18
-#name 27-29 Ashenvale: around Sentinel Melyria Frostshadow
---RouteBuilder:next
-#next Zone Routes (Alliance)\28-29 Duskwood: around Sirra Von'Indi
-
+    .xp 27 >>|cRXP_WARN_The rest of Ashenvale is planned from level 27.|r Come back to this guide then
 step
     .goto 1440/1,-1387.47,2896.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shael'dryn|r
@@ -866,22 +825,9 @@ step
     >>|cRXP_FRIENDLY_Darnassus|r: Velinde Starsong
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Raene's Cleansing
 step
-    +|cRXP_WARN_Suggested next zones at level 28|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests, starting around Sirra Von'Indi). Completing this step loads the guide for Duskwood --RouteBuilder:next
+    +|cRXP_WARN_Until level 31, suggested zones|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests). Then come back to this Ashenvale guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Ashenvale is planned from level 31.|r Load its guide for level 31 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 18 - 32 Ashenvale
-#subweight -18
-#name 31-32 Ashenvale
---RouteBuilder:next
-#next Zone Routes (Alliance)\30-32 Stranglethorn Vale: around Krazek;Zone Routes (Alliance)\31-32 Desolace: around Kreldig Ungor
-
+    .xp 31 >>|cRXP_WARN_The rest of Ashenvale is planned from level 31.|r Come back to this guide then
 step
     .goto 1440/1,-3215.51,2954.38
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kayneth Stillwind|r
@@ -1010,5 +956,5 @@ step
 step
     +|cRXP_WARN_End of the Ashenvale route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 31|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.5 levels of quests, starting around Krazek), |cRXP_FRIENDLY_Desolace|r (about 0.5 levels of quests, starting around Kreldig Ungor). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 31|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.5 levels of quests), |cRXP_FRIENDLY_Desolace|r (about 0.5 levels of quests). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
 ]])

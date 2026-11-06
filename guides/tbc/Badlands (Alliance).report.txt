@@ -1,7 +1,7 @@
 Badlands - Alliance - part 1 of 3, planned from level 35
 Guide "35-45 Badlands" in group "Zone Routes (Alliance)": this part has 45 steps, 35 stops
 Written to guides/tbc/Badlands (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -85,7 +85,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Badlands - Alliance - part 2 of 3, planned from level 38
 Guide "35-45 Badlands" in group "Zone Routes (Alliance)": this part has 12 steps, 10 stops
 Written to guides/tbc/Badlands (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -144,7 +144,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Badlands - Alliance - part 3 of 3, planned from level 41
 Guide "35-45 Badlands" in group "Zone Routes (Alliance)": this part has 26 steps, 25 stops
 Written to guides/tbc/Badlands (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

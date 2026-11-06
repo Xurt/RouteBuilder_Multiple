@@ -13,12 +13,12 @@
       "start": 30,
       "end": 30.37,
       "next": 33,
-      "guide": "30-31 Thousand Needles: around Kravel Koalbeard",
+      "guide": "30-37 Thousand Needles",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Kravel Koalbeard",
-          "guide": "30-31 Thousand Needles: around Kravel Koalbeard",
+          "label": "",
+          "name": "start",
+          "guide": "30-37 Thousand Needles",
           "level": 30,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 33,
       "end": 33.11,
-      "guide": "33-34 Thousand Needles",
+      "guide": "30-37 Thousand Needles",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "33-34 Thousand Needles",
+          "guide": "30-37 Thousand Needles",
           "level": 33,
           "index": 0
         }

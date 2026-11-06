@@ -1,9 +1,9 @@
 -- 10-21 Ghostlands: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 10, 18, 22).
--- Split into 3 guides, listed under "10 - 23 Ghostlands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 10; part 2 from 18; part 3 from 22.
 -- Edit zones/mop/Ghostlands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 10 - 23 Ghostlands
-#subweight -10
-#name 10-16 Ghostlands
+#name 10-21 Ghostlands
 --RouteBuilder:next
-#next Zone Routes (Horde)\14-16 Azshara: around Assistant Greely
+#next Zone Routes (Horde)\20-25 Hillsbrad Foothills
 
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 95,46.55,28.38
@@ -658,23 +656,10 @@ step
     >>|cRXP_FRIENDLY_Eversong Woods|r: Skymistress Gloaming << BloodElf
     >>|cRXP_FRIENDLY_Undercity|r: Journey to Undercity << Orc/Undead/Tauren/Troll/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Undercity|r: Journey to Undercity << BloodElf
-step
-    +|cRXP_WARN_Suggested next zones at level 15|r: |cRXP_FRIENDLY_Azshara|r (about 0.7 levels of quests, starting around Assistant Greely). Completing this step loads the guide for Azshara --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Ghostlands is planned from level 18.|r Load its guide for level 18 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 23 Ghostlands
-#subweight -10
-#name 18-20 Ghostlands
---RouteBuilder:next
-#next Zone Routes (Horde)\20-22 Hillsbrad Foothills: around High Executor Darthalia
-
+    +|cRXP_WARN_Until level 18, suggested zones|r: |cRXP_FRIENDLY_Azshara|r (about 0.8 levels of quests), |cRXP_FRIENDLY_The Barrens|r (about 0.6 levels of quests). Then come back to this Ghostlands guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 18 >>|cRXP_WARN_The rest of Ghostlands is planned from level 18.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 95,72.37,29.64
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Helios|r
@@ -995,23 +980,10 @@ step
     >>|cRXP_FRIENDLY_Hillsbrad Foothills|r: Warchief's Command: Hillsbrad Foothills! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Undercity|r: Envoy to the Horde << BloodElf
     >>|cRXP_FRIENDLY_Undercity|r: Envoy to the Horde << Orc/Undead/Tauren/Troll/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 19|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.8 levels of quests, starting around High Executor Darthalia). Completing this step loads the guide for Hillsbrad Foothills --RouteBuilder:next
 step << Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage/Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter/Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue/Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman/Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior/Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock/BloodElf Paladin/Tauren Paladin/Tauren Priest/Troll Priest/Undead Priest/BloodElf Priest/Goblin Priest
-    +|cRXP_WARN_The rest of Ghostlands is planned from level 22.|r Load its guide for level 22 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage/Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter/Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue/Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman/Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior/Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock/BloodElf Paladin/Tauren Paladin/Tauren Priest/Troll Priest/Undead Priest/BloodElf Priest/Goblin Priest
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 23 Ghostlands
-#subweight -10
-#name 22-23 Ghostlands
---RouteBuilder:next
-#next Zone Routes (Horde)\22-27 Hillsbrad Foothills: around Serge Hinott
-
+    +|cRXP_WARN_Until level 22, suggested zones|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.8 levels of quests). Then come back to this Ghostlands guide --RouteBuilder:next
+step << Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage/Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter/Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue/Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman/Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior/Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock/BloodElf Paladin/Tauren Paladin/Tauren Priest/Troll Priest/Undead Priest/BloodElf Priest/Goblin Priest
+    .xp 22 >>|cRXP_WARN_The rest of Ghostlands is planned from level 22.|r Come back to this guide then
 step << Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior
     .goto 110,81.16,37.63
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Alsudar the Bastion|r
@@ -1073,5 +1045,5 @@ step
     >>|cRXP_FRIENDLY_Orgrimmar|r: Journey to Orgrimmar << BloodElf Priest
     >>|cRXP_FRIENDLY_Orgrimmar|r: Seek Brother Silverhallow << Goblin Priest
 step
-    +|cRXP_WARN_Suggested next zones at level 22|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.9 levels of quests, starting around Serge Hinott). Completing this step loads the guide for Hillsbrad Foothills --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 22|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 1.1 levels of quests). Completing this step loads the guide for Hillsbrad Foothills --RouteBuilder:next
 ]])

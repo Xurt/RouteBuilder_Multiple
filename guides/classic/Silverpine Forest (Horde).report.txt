@@ -1,7 +1,7 @@
 Silverpine Forest - Horde - part 1 of 4, planned from level 10
 Guide "10-22 Silverpine Forest" in group "Zone Routes (Horde)": this part has 54 steps, 38 stops
 Written to guides/classic/Silverpine Forest (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -95,7 +95,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Silverpine Forest - Horde - part 2 of 4, planned from level 14
 Guide "10-22 Silverpine Forest" in group "Zone Routes (Horde)": this part has 21 steps, 18 stops
 Written to guides/classic/Silverpine Forest (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -151,7 +151,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Silverpine Forest - Horde - part 3 of 4, planned from level 17
 Guide "10-22 Silverpine Forest" in group "Zone Routes (Horde)": this part has 15 steps, 12 stops
 Written to guides/classic/Silverpine Forest (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -203,7 +203,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Silverpine Forest - Horde - part 4 of 4, planned from level 20
 Guide "10-22 Silverpine Forest" in group "Zone Routes (Horde)": this part has 8 steps, 7 stops
 Written to guides/classic/Silverpine Forest (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 

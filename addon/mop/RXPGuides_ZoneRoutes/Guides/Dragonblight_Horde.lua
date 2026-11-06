@@ -1,5 +1,5 @@
 -- 72-75 Dragonblight: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- Edit zones/mop/Dragonblight.json and re-run rather than editing this file, or your changes are lost on the next build.
@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
 #group Zone Routes (Horde)
 #name 72-75 Dragonblight
 --RouteBuilder:next
-#next Zone Routes (Horde)\70-72 Howling Fjord: around Lurielle;Zone Routes (Horde)\73-75 Grizzly Hills: around Drakuru
+#next Zone Routes (Horde)\70-72 Howling Fjord;Zone Routes (Horde)\73-75 Grizzly Hills
 
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 115,10.29,53.83
@@ -2260,5 +2260,5 @@ step
     >>|cRXP_FRIENDLY_Grizzly Hills|r: To Conquest Hold, But Be Careful! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Zul'Drak|r: Into the Breach!
 step
-    +|cRXP_WARN_Suggested next zones at level 74|r: |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests, starting around Lurielle), |cRXP_FRIENDLY_Grizzly Hills|r (about 0.5 levels of quests, starting around Drakuru). Completing this step loads the guide for Howling Fjord --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 74|r: |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests), |cRXP_FRIENDLY_Grizzly Hills|r (about 0.5 levels of quests). Completing this step loads the guide for Howling Fjord --RouteBuilder:next
 ]])

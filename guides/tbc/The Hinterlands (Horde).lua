@@ -1,9 +1,9 @@
 -- 43-53 The Hinterlands: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 43, 46, 50).
--- Split into 3 guides, listed under "43 - 51 The Hinterlands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 43; part 2 from 46; part 3 from 50.
 -- Edit zones/tbc/The Hinterlands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 43 - 51 The Hinterlands
-#subweight -43
-#name 43-44 The Hinterlands
+#name 43-53 The Hinterlands
 --RouteBuilder:next
-#next Zone Routes (Horde)\41-43 Stranglethorn Vale: around "Sea Wolf" MacKinley
+#next Zone Routes (Horde)\50-56 Un'Goro Crater
 
 step
     .goto 1425/0,-2874.38,-463.72
@@ -64,20 +62,9 @@ step
     >>|cRXP_FRIENDLY_Swamp of Sorrows|r: Return to Fel'Zerul
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Jammal'an the Prophet
 step
-    +|cRXP_WARN_Suggested next zones at level 43|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.9 levels of quests, starting around "Sea Wolf" MacKinley). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Until level 46, suggested zones|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.9 levels of quests). Then come back to this The Hinterlands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of The Hinterlands is planned from level 46.|r Load its guide for level 46 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 43 - 51 The Hinterlands
-#subweight -43
-#name 46-48 The Hinterlands: around Huntsman Markhor
-
+    .xp 46 >>|cRXP_WARN_The rest of The Hinterlands is planned from level 46.|r Come back to this guide then
 step
     #completewith Drop485x1
     >>|cRXP_LOOT_OOX-09/HL Distress Beacon|r can drop from |cRXP_ENEMY_Saltwater Snapjaw|r, |cRXP_ENEMY_Vilebranch Axe Thrower|r, |cRXP_ENEMY_Vilebranch Witch Doctor|r. Use it to start the quest if you get one
@@ -470,20 +457,7 @@ step
     >>|cRXP_FRIENDLY_Stranglethorn Vale|r: Rescue OOX-09/HL!
     >>|cRXP_FRIENDLY_Undercity|r: Rin'ji's Secret
 step
-    +|cRXP_WARN_The rest of The Hinterlands is planned from level 50.|r Load its guide for level 50 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 43 - 51 The Hinterlands
-#subweight -43
-#name 50-51 The Hinterlands
---RouteBuilder:next
-#next Zone Routes (Horde)\50-52 Un'Goro Crater: around Torwa Pathfinder
-
+    .xp 50 >>|cRXP_WARN_The rest of The Hinterlands is planned from level 50.|r Come back to this guide then
 step
     .goto 1425/0,-4619.58,-560.74
     >>Click the |cRXP_PICK_Call to Arms!|r
@@ -558,5 +532,5 @@ step
 step
     +|cRXP_WARN_End of the The Hinterlands route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 50|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.7 levels of quests, starting around Torwa Pathfinder). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 50|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.7 levels of quests). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
 ]])

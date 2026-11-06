@@ -1,9 +1,9 @@
 -- 16-20 Westfall: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 16, 19).
--- Split into 2 guides, listed under "16 - 20 Westfall" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 16; part 2 from 19.
 -- Edit zones/classic/Westfall.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 16 - 20 Westfall
-#subweight -16
-#name 16-17 Westfall
+#name 16-20 Westfall
 --RouteBuilder:next
-#next Zone Routes (Horde)\12-16 The Barrens: around Gazlowe
+#next Zone Routes (Horde)\10-27 The Barrens
 
 step
     .goto 1436/0,1966.32,-11407.13
@@ -121,22 +119,9 @@ step
     .turnin 140 >>Turn in Captain Sander's Hidden Treasure
     .isOnQuest 140
 step
-    +|cRXP_WARN_Suggested next zones at level 16|r: |cRXP_FRIENDLY_The Barrens|r (about 1.1 levels of quests, starting around Gazlowe). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Until level 19, suggested zones|r: |cRXP_FRIENDLY_The Barrens|r (about 1.8 levels of quests). Then come back to this Westfall guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Westfall is planned from level 19.|r Load its guide for level 19 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 16 - 20 Westfall
-#subweight -16
-#name 19-20 Westfall
---RouteBuilder:next
-#next Zone Routes (Horde)\18-20 The Barrens: around Tonga Runetotem
-
+    .xp 19 >>|cRXP_WARN_The rest of Westfall is planned from level 19.|r Come back to this guide then
 step
     .goto 1436/0,1966.32,-11407.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Grayson|r
@@ -155,5 +140,5 @@ step
 step
     +|cRXP_WARN_End of the Westfall route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 19|r: |cRXP_FRIENDLY_The Barrens|r (about 0.8 levels of quests, starting around Tonga Runetotem). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 19|r: |cRXP_FRIENDLY_The Barrens|r (about 0.8 levels of quests). Completing this step loads the guide for The Barrens --RouteBuilder:next
 ]])

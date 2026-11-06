@@ -1,9 +1,9 @@
 -- 2-5 Shadowglen: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 2, 6).
--- Split into 2 guides, listed under "2 - 7 Shadowglen" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 2; part 2 from 6.
 -- Edit zones/mop/Shadowglen.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 2 - 7 Shadowglen
-#subweight -2
-#name 2-4 Shadowglen
+#name 2-5 Shadowglen
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 460,45.65,74.56
@@ -226,18 +224,7 @@ step << NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf
     .target Dentaria Silverglade
     .isOnQuest 28728
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren/NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid
-    +|cRXP_WARN_The rest of Shadowglen is planned from level 6.|r Load its guide for level 6 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren/NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 2 - 7 Shadowglen
-#subweight -2
-#name 6-7 Shadowglen
-
+    .xp 6 >>|cRXP_WARN_The rest of Shadowglen is planned from level 6.|r Come back to this guide then
 step << NightElf Warrior/NightElf Hunter/NightElf Rogue/NightElf Priest/NightElf Mage/NightElf Monk/NightElf Druid
     .goto 460,49.21,52.42
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Alyissia|r

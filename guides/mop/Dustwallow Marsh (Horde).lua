@@ -1,9 +1,9 @@
 -- 35-41 Dustwallow Marsh: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 35, 83).
--- Split into 3 guides, listed under "35 - 84 Dustwallow Marsh" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 35; part 2 from 83.
 -- Edit zones/mop/Dustwallow Marsh.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 35 - 84 Dustwallow Marsh
-#subweight -35
-#name 35-37 Dustwallow Marsh: around "Swamp Eye" Jarl
-#next Zone Routes (Horde)\37-40 Dustwallow Marsh: around Tabetha
+#name 35-41 Dustwallow Marsh
+--RouteBuilder:next
+#next Zone Routes (Horde)\82-83 Deepholm
 
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 70,35.21,30.66
@@ -534,19 +533,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
     .turnin 11213 >>Turn in Check Up on Tabetha
     .target Tabetha
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 35 - 84 Dustwallow Marsh
-#subweight -35
-#name 37-40 Dustwallow Marsh: around Tabetha
---RouteBuilder:next
-#next Zone Routes (Horde)\40-42 Eastern Plaguelands: around Chromie;Zone Routes (Horde)\35-39 Western Plaguelands: around Field Agent Kaartish;Zone Routes (Horde)\32-36 Desolace: around Cenarion Researcher Korrah
-
 step
     .goto 70,46.10,57.43
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apprentice Morlann|r
@@ -723,21 +709,11 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 70,45.95,67.21,40,0
     .goto 70,49.11,68.06,40,0
     >>Kill |cRXP_ENEMY_Searing Hatchlings|r and |cRXP_ENEMY_Searing Whelps|r. Loot them for |cRXP_LOOT_Searing Heart|r
-    .complete 27414,2 --Searing Heart (7)
-    .mob Searing Hatchling
-    .mob Searing Whelp
-    .isOnQuest 27414
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 70,45.95,67.21,0
-    .goto 70,45.95,67.21,40,0
-    .goto 70,43.08,69.23,40,0
-    .goto 70,49.11,68.06,40,0
     >>Kill |cRXP_ENEMY_Searing Hatchlings|r and |cRXP_ENEMY_Searing Whelps|r. Loot them for |cRXP_LOOT_Searing Tongue|r
+    .complete 27414,2 --Searing Heart (7)
     .complete 27414,1 --Searing Tongue (7)
     .mob Searing Hatchling
     .mob Searing Whelp
-    .isOnQuest 27414
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #completewith next
     .hs >>Hearth to "Little" Logok's inn. |cRXP_WARN_Walk instead if you are already nearby|r
@@ -746,29 +722,13 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 70,37.15,33.09
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Draz'Zilb|r
     .turnin 27414 >>Turn in Identifying the Brood
-    .target Draz'Zilb
-    .isOnQuest 27414
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 70,37.15,33.09
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Draz'Zilb|r
     .accept 27416 >>Accept The Brood of Onyxia
     .target Draz'Zilb
-    .isQuestTurnedIn 27414 --any of: Identifying the Brood
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 70,36.29,31.41
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Overlord Mok'Morokk|r
-    .turnin 27416 >>Turn in The Brood of Onyxia
-    .target Overlord Mok'Morokk
-    .isOnQuest 27416
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 70,36.29,31.41
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Overlord Mok'Morokk|r
-    .accept 27417 >>Accept The Brood of Onyxia
-    .target Overlord Mok'Morokk
-    .isQuestTurnedIn 27416 --any of: The Brood of Onyxia
 step
     .goto 70,36.29,31.41
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Overlord Mok'Morokk|r
+    .turnin 27416 >>Turn in The Brood of Onyxia << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .accept 27417 >>Accept The Brood of Onyxia << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 27424 >>Accept Overlord Mok'Morokk's Concern
     .target Overlord Mok'Morokk
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
@@ -780,14 +740,8 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 70,37.15,33.09
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Draz'Zilb|r
     .turnin 27417 >>Turn in The Brood of Onyxia
-    .target Draz'Zilb
-    .isOnQuest 27417
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 70,37.15,33.09
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Draz'Zilb|r
     .accept 27415 >>Accept The Brood of Onyxia
     .target Draz'Zilb
-    .isQuestTurnedIn 27416 --any of: The Brood of Onyxia
 step
     .xp 38 >>Grind to level 38 (Help for Mudsprocket needs it)
 step
@@ -801,12 +755,12 @@ step
     .turnin 27339 >>Turn in The Reagent Thief
     .target Apprentice Garion
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along91
+    #completewith Along86
     >>As you go: Kill |cRXP_ENEMY_Firemane Ash Tails|r. |cRXP_WARN_Anything left is finished later|r
     .complete 1168,2 --Firemane Ash Tail slain (10)
     .mob Firemane Ash Tail
 step
-    #label Along91
+    #label Along86
     #loop
     .goto 70,44.03,65.30,0
     .goto 70,44.03,65.30,40,0
@@ -818,23 +772,20 @@ step
     .complete 27424,1 --Mok'Morokk's Snuff (1)
     .mob Firemane Scout << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along92
+    #completewith Along87
     >>As you go: Kill |cRXP_ENEMY_Firemane Scalebanes|r. |cRXP_WARN_Anything left is finished later|r
     .complete 1168,3 --Firemane Scalebane slain (5)
     .mob Firemane Scalebane
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along92
-    .goto 70,48.38,75.96
-    >>Click the |cRXP_PICK_Egg of Onyxia|r
-    .complete 27415,1 --Egg of Onyxia
-    .isOnQuest 27415
 step
+    #label Along87
     #loop
-    .goto 70,43.29,75.99,0
-    .goto 70,43.29,75.99,40,0
+    .goto 70,43.26,76.34,0
+    .goto 70,43.26,76.34,40,0
     .goto 70,46.11,81.55,40,0
-    .goto 70,47.95,79.70,40,0
+    .goto 70,48.38,75.96,40,0
+    >>Click the |cRXP_PICK_Egg of Onyxia|r << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Pick up |cRXP_PICK_Wyrmtail|r from the ground
+    .complete 27415,1 << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren --Egg of Onyxia
     .complete 27413,1 --Wyrmtail (8)
 step
     .goto 70,42.33,72.93
@@ -867,7 +818,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Draz'Zilb|r
     .turnin 27415 >>Turn in The Brood of Onyxia
     .target Draz'Zilb
-    .isOnQuest 27415
 step
     .goto 70,36.29,31.41
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Overlord Mok'Morokk|r
@@ -884,13 +834,11 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Overlord Mok'Morokk|r
     .accept 27418 >>Accept Challenge Overlord Mok'Morokk
     .target Overlord Mok'Morokk
-    .isQuestTurnedIn 27415 --any of: The Brood of Onyxia
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 70,36.29,31.41
     >>Kill |cRXP_ENEMY_Overlord Mok'Morokk|r
     .complete 27418,1 --Overlord Mok'Morokk slain (1)
     .mob Overlord Mok'Morokk
-    .isOnQuest 27418
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 70,37.15,33.09
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Draz'Zilb|r
@@ -907,7 +855,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Draz'Zilb|r
     .turnin 27418 >>Turn in Challenge Overlord Mok'Morokk
     .target Draz'Zilb
-    .isOnQuest 27418
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 70,36.42,31.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Krog|r
@@ -921,7 +868,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Krog
     .isQuestTurnedIn 27293 --The Grimtotem Plot
     .xp <36,1
-    .isQuestTurnedIn 27294 --More than Coincidence
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 70,46.02,57.10
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
@@ -1158,23 +1104,10 @@ step
     >>|cRXP_FRIENDLY_Southern Barrens|r: Warchief's Command: Southern Barrens! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_The Barrens|r: Warchief's Command: Northern Barrens!, Warchief's Command: Ashenvale!, Stinky's Escape << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Grimtotem Plot << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 39|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 2.8 levels of quests, starting around Chromie), |cRXP_FRIENDLY_Western Plaguelands|r (about 1.3 levels of quests, starting around Field Agent Kaartish), |cRXP_FRIENDLY_Desolace|r (about 0.7 levels of quests, starting around Cenarion Researcher Korrah). Completing this step loads the guide for Eastern Plaguelands --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Dustwallow Marsh is planned from level 83.|r Load its guide for level 83 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 35 - 84 Dustwallow Marsh
-#subweight -35
-#name 83-84 Dustwallow Marsh
---RouteBuilder:next
-#next Zone Routes (Horde)\82-83 Deepholm
-
+    +|cRXP_WARN_Until level 83, suggested zones|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 2.8 levels of quests), |cRXP_FRIENDLY_Western Plaguelands|r (about 1.3 levels of quests), |cRXP_FRIENDLY_Desolace|r (about 0.8 levels of quests). Then come back to this Dustwallow Marsh guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 83 >>|cRXP_WARN_The rest of Dustwallow Marsh is planned from level 83.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 70,41.87,73.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nyse|r
@@ -1205,5 +1138,5 @@ step
     +|cRXP_WARN_End of the Dustwallow Marsh route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Thousand Needles|r: To the Summit << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 83|r: |cRXP_FRIENDLY_Deepholm|r (about 0.8 levels of quests, starting around Maruut Stonebinder). Completing this step loads the guide for Deepholm --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 83|r: |cRXP_FRIENDLY_Deepholm|r (about 0.8 levels of quests). Completing this step loads the guide for Deepholm --RouteBuilder:next
 ]])

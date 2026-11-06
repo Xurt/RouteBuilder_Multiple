@@ -1,9 +1,9 @@
 -- 43-51 Feralas: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 43, 46).
--- Split into 2 guides, listed under "43 - 47 Feralas" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 43; part 2 from 46.
 -- Edit zones/classic/Feralas.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 43 - 47 Feralas
-#subweight -43
-#name 43-44 Feralas: around Shandris Feathermoon
+#name 43-51 Feralas
 
 step
     .goto 1444/1,3312.88,-4345.56
@@ -284,18 +282,7 @@ step
     >>|cRXP_FRIENDLY_Stranglethorn Vale|r: Rescue OOX-22/FE!
     >>|cRXP_FRIENDLY_Teldrassil|r: In Search of Knowledge
 step
-    +|cRXP_WARN_The rest of Feralas is planned from level 46.|r Load its guide for level 46 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 43 - 47 Feralas
-#subweight -43
-#name 46-47 Feralas
-
+    .xp 46 >>|cRXP_WARN_The rest of Feralas is planned from level 46.|r Come back to this guide then
 step
     .goto 1444/1,858.84,-4481.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kindal Moonweaver|r

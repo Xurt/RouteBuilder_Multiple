@@ -1,7 +1,7 @@
 Azshara - Horde - part 1 of 4, planned from level 47
 Guide "47-60 Azshara" in group "Zone Routes (Horde)": this part has 17 steps, 15 stops
 Written to guides/tbc/Azshara (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -102,7 +102,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Azshara - Horde - part 2 of 4, planned from level 50
 Guide "47-60 Azshara" in group "Zone Routes (Horde)": this part has 45 steps, 40 stops
 Written to guides/tbc/Azshara (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -189,7 +189,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Azshara - Horde - part 3 of 4, planned from level 56
 Guide "47-60 Azshara" in group "Zone Routes (Horde)": this part has 10 steps, 8 stops
 Written to guides/tbc/Azshara (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -256,7 +256,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Azshara - Horde - part 4 of 4, planned from level 61
 Guide "47-60 Azshara" in group "Zone Routes (Horde)": this part has 41 steps, 40 stops
 Written to guides/tbc/Azshara (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

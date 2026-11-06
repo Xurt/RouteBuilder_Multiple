@@ -13,12 +13,12 @@
       "start": 48,
       "end": 48.09,
       "next": 51,
-      "guide": "48-49 Felwood",
+      "guide": "48-56 Felwood",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "48-49 Felwood",
+          "guide": "48-56 Felwood",
           "level": 48,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 51,
       "end": 51.5,
       "next": 54,
-      "guide": "51-52 Felwood: around Eridan Bluewind",
+      "guide": "48-56 Felwood",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Eridan Bluewind",
-          "guide": "51-52 Felwood: around Eridan Bluewind",
+          "label": "",
+          "name": "part 2",
+          "guide": "48-56 Felwood",
           "level": 51,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 54,
       "end": 54.27,
-      "guide": "54-55 Felwood",
+      "guide": "48-56 Felwood",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "54-55 Felwood",
+          "guide": "48-56 Felwood",
           "level": 54,
           "index": 0
         }

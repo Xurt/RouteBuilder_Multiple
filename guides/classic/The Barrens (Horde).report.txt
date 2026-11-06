@@ -1,7 +1,7 @@
 The Barrens - Horde - part 1 of 4, planned from level 10
-Guide "10-27 The Barrens" in group "Zone Routes (Horde)": this part has 180 steps, 148 stops
+Guide "10-27 The Barrens" in group "Zone Routes (Horde)": this part has 172 steps, 140 stops
 Written to guides/classic/The Barrens (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -180,7 +180,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 The Barrens - Horde - part 2 of 4, planned from level 18
 Guide "10-27 The Barrens" in group "Zone Routes (Horde)": this part has 81 steps, 72 stops
 Written to guides/classic/The Barrens (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -272,7 +272,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 The Barrens - Horde - part 3 of 4, planned from level 22
 Guide "10-27 The Barrens" in group "Zone Routes (Horde)": this part has 33 steps, 31 stops
 Written to guides/classic/The Barrens (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -351,7 +351,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 The Barrens - Horde - part 4 of 4, planned from level 25
 Guide "10-27 The Barrens" in group "Zone Routes (Horde)": this part has 38 steps, 36 stops
 Written to guides/classic/The Barrens (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 

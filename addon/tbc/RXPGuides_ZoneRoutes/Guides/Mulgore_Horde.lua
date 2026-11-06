@@ -1,9 +1,9 @@
 -- 1-14 Mulgore: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 1, 12, 15).
--- Split into 4 guides, listed under "1 - 16 Mulgore" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 1; part 2 from 12; part 3 from 15.
 -- Edit zones/tbc/Mulgore.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 1 - 16 Mulgore
-#subweight -1
-#name 1-4 Mulgore: around Grull Hawkwind
-#next Zone Routes (Horde)\4-10 Mulgore: around Mull Thunderhorn
+#name 1-14 Mulgore
+--RouteBuilder:next
+#next Zone Routes (Horde)\10-27 The Barrens;Zone Routes (Horde)\10-21 Ghostlands
 
 step
     .goto 1412/1,-257.79,-2912.56
@@ -395,19 +394,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Antur Fallow|r
     .accept 1656 >>Accept A Task Unfinished
     .target Antur Fallow
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 1 - 16 Mulgore
-#subweight -1
-#name 4-10 Mulgore: around Mull Thunderhorn
---RouteBuilder:next
-#next Zone Routes (Horde)\10-13 The Barrens: around Sergra Darkthorn;Zone Routes (Horde)\4-10 Durotar: around Master Gadrin;Zone Routes (Horde)\7-11 Tirisfal Glades: around Apothecary Johaan
-
 step
     .goto 1412/1,-384.69,-2397.10
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ruul Eagletalon|r
@@ -417,11 +403,6 @@ step
     .goto 1412/1,-392.91,-2333.40
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baine Bloodhoof|r
     .turnin 763 >>Turn in Rites of the Earthmother
-    .target Baine Bloodhoof
-    .isOnQuest 763
-step
-    .goto 1412/1,-392.91,-2333.40
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baine Bloodhoof|r
     .accept 745 >>Accept Sharing the Land
     .accept 767 >>Accept Rite of Vision
     .accept 746 >>Accept Dwarven Digging
@@ -431,7 +412,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Kauth|r
     .turnin 1656 >>Turn in A Task Unfinished
     .target Innkeeper Kauth
-    .isOnQuest 1656
 step
     .goto 1412/1,-399.07,-2378.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jhawna Oatwind|r
@@ -638,12 +618,12 @@ step
     .turnin 11129 >>Turn in Kyle's Gone Missing!
     .target Ahab Wheathoof
 step << Tauren
-    #completewith Along52
+    #completewith Along51
     >>As you go: Kill |cRXP_ENEMY_Prairie Stalkers|r. Loot them for |cRXP_LOOT_Stalker Claws|r. |cRXP_WARN_Anything left is finished later|r
     .complete 756,1 --Stalker Claws (6)
     .mob Prairie Stalker
 step
-    #label Along52
+    #label Along51
     #loop
     .goto 1412/1,-598.41,-2301.89,0
     .goto 1412/1,-598.41,-2301.89,40,0
@@ -665,17 +645,17 @@ step
     .turnin 749 >>Turn in The Ravaged Caravan
     .accept 751 >>Accept The Ravaged Caravan
 step
-    #completewith Along56
+    #completewith Along55
     >>As you go: Kill |cRXP_ENEMY_Flatland Cougar|r and loot |cRXP_LOOT_Flatland Cougar Femur|r. |cRXP_WARN_Anything left is finished later|r
     .complete 766,2 --Flatland Cougar Femur (1)
     .mob Flatland Cougar
 step << Tauren
-    #completewith Along54
+    #completewith Along53
     >>As you go: Kill |cRXP_ENEMY_Flatland Cougars|r. Loot them for |cRXP_LOOT_Cougar Claws|r. |cRXP_WARN_Anything left is finished later|r
     .complete 756,2 --Cougar Claws (6)
     .mob Flatland Cougar
 step << Tauren
-    #label Along54
+    #label Along53
     #loop
     .goto 1412/1,-654.92,-1794.30,0
     .goto 1412/1,-654.92,-1794.30,40,0
@@ -693,7 +673,7 @@ step << Tauren
     .complete 756,2 --Cougar Claws (6)
     .mob Flatland Cougar
 step
-    #label Along56
+    #label Along55
     .goto 1412/1,-385.72,-1524.07
     >>Kill |cRXP_ENEMY_Wiry Swoops|r, |cRXP_ENEMY_Swoops|r and |cRXP_ENEMY_Taloned Swoops|r. Loot them for |cRXP_LOOT_Trophy Swoop Quill|r
     .complete 761,1 --Trophy Swoop Quill (8)
@@ -1317,22 +1297,9 @@ step
     >>|cRXP_FRIENDLY_Moonglade|r: Moonglade << Tauren Druid
     >>|cRXP_FRIENDLY_The Barrens|r: Return to Jahan << Tauren
 step
-    +|cRXP_WARN_Suggested next zones at level 9|r: |cRXP_FRIENDLY_The Barrens|r (about 3.4 levels of quests, starting around Sergra Darkthorn; 2 quests from here hand in there), |cRXP_FRIENDLY_Durotar|r (about 1.8 levels of quests, starting around Master Gadrin), |cRXP_FRIENDLY_Tirisfal Glades|r (about 1.4 levels of quests, starting around Apothecary Johaan). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Until level 12, suggested zones|r: |cRXP_FRIENDLY_The Barrens|r (about 3.4 levels of quests; 2 quests from here hand in there), |cRXP_FRIENDLY_Eversong Woods|r (about 2.7 levels of quests), |cRXP_FRIENDLY_Durotar|r (about 2.2 levels of quests). Then come back to this Mulgore guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Mulgore is planned from level 12.|r Load its guide for level 12 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 1 - 16 Mulgore
-#subweight -1
-#name 12-13 Mulgore: around Kary Thunderhorn
---RouteBuilder:next
-#next Zone Routes (Horde)\10-13 The Barrens: around Sergra Darkthorn;Zone Routes (Horde)\7-11 Tirisfal Glades: around Apothecary Johaan;Zone Routes (Horde)\10-13 Ghostlands: around Arcanist Vandril
-
+    .xp 12 >>|cRXP_WARN_The rest of Mulgore is planned from level 12.|r Come back to this guide then
 step
     .goto 1412/1,-364.14,-2287.50
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Var'jun|r
@@ -1464,22 +1431,9 @@ step
     >>|cRXP_FRIENDLY_The Barrens|r: Call of Fire << Shaman
     >>|cRXP_FRIENDLY_Undercity|r: Touch of Weakness << Undead Priest
 step
-    +|cRXP_WARN_Suggested next zones at level 12|r: |cRXP_FRIENDLY_The Barrens|r (about 3.0 levels of quests, starting around Sergra Darkthorn; 2 quests from here hand in there), |cRXP_FRIENDLY_Tirisfal Glades|r (about 1.0 levels of quests, starting around Apothecary Johaan), |cRXP_FRIENDLY_Ghostlands|r (about 1.0 levels of quests, starting around Arcanist Vandril). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Until level 15, suggested zones|r: |cRXP_FRIENDLY_The Barrens|r (about 3.0 levels of quests; 2 quests from here hand in there), |cRXP_FRIENDLY_Eversong Woods|r (about 1.8 levels of quests), |cRXP_FRIENDLY_Tirisfal Glades|r (about 1.3 levels of quests). Then come back to this Mulgore guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Mulgore is planned from level 15.|r Load its guide for level 15 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 1 - 16 Mulgore
-#subweight -1
-#name 15-16 Mulgore
---RouteBuilder:next
-#next Zone Routes (Horde)\13-16 The Barrens: around Gazlowe;Zone Routes (Horde)\15-18 Ghostlands: around Eralan
-
+    .xp 15 >>|cRXP_WARN_The rest of Mulgore is planned from level 15.|r Come back to this guide then
 step
     .goto 1456/1,67.33,-1147.26
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rumstag Proudstrider|r
@@ -1501,5 +1455,5 @@ step
     >>|cRXP_FRIENDLY_Moonglade|r: Lessons Anew << Druid
     >>|cRXP_FRIENDLY_Hillsbrad Foothills and back here|r: A Donation of Wool
 step
-    +|cRXP_WARN_Suggested next zones at level 15|r: |cRXP_FRIENDLY_The Barrens|r (about 1.3 levels of quests, starting around Gazlowe), |cRXP_FRIENDLY_Ghostlands|r (about 1.1 levels of quests, starting around Eralan). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 15|r: |cRXP_FRIENDLY_The Barrens|r (about 2.6 levels of quests; 2 quests from here hand in there), |cRXP_FRIENDLY_Ghostlands|r (about 1.1 levels of quests). Completing this step loads the guide for The Barrens --RouteBuilder:next
 ]])

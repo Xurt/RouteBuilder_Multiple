@@ -13,12 +13,12 @@
       "start": 40,
       "end": 42.41,
       "next": 45,
-      "guide": "40-43 Thousand Needles: around Brivelthwerp",
+      "guide": "40-45 Thousand Needles",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Brivelthwerp",
-          "guide": "40-43 Thousand Needles: around Brivelthwerp",
+          "label": "",
+          "name": "start",
+          "guide": "40-45 Thousand Needles",
           "level": 40,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 45,
       "end": 45,
-      "guide": "45-46 Thousand Needles",
+      "guide": "40-45 Thousand Needles",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "45-46 Thousand Needles",
+          "guide": "40-45 Thousand Needles",
           "level": 45,
           "index": 0
         }

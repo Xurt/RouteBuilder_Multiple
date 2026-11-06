@@ -1,9 +1,9 @@
 -- 21-25 Duskwood: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 21, 28).
--- Split into 3 guides, listed under "21 - 29 Duskwood" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 21; part 2 from 28.
 -- Edit zones/mop/Duskwood.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 21 - 29 Duskwood
-#subweight -21
-#name 21-23 Duskwood: around Tobias Mistmantle
-#next Zone Routes (Alliance)\23-26 Duskwood: around Apprentice Fess
+#name 21-25 Duskwood
+--RouteBuilder:next
+#next Zone Routes (Alliance)\25-30 Northern Stranglethorn;Zone Routes (Alliance)\26-31 Arathi Highlands
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 47,79.08,44.17
@@ -329,28 +328,10 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Watcher Dodds|r
     .accept 25235 >>Accept Vulgar Vul'Gol
     .target Watcher Dodds
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 21 - 29 Duskwood
-#subweight -21
-#name 23-26 Duskwood: around Apprentice Fess
---RouteBuilder:next
-#next Zone Routes (Alliance)\25-30 Northern Stranglethorn;Zone Routes (Alliance)\26-31 Arathi Highlands
-
 step
     .goto 47,44.92,67.42
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apprentice Fess|r
     .turnin 26785 >>Turn in Part of the Pack
-    .target Apprentice Fess
-    .isOnQuest 26785
-step
-    .goto 47,44.92,67.42
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apprentice Fess|r
     .accept 26707 >>Accept A Deadly Vine
     .accept 26717 >>Accept The Yorgen Worgen << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Apprentice Fess
@@ -367,22 +348,18 @@ step
     .mob Corpseweed
     .mob Carved One
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 47,33.52,75.33
-    >>Pick up |cRXP_PICK_Abercrombie's Crate|r from the ground
-    .complete 26680,1 --Abercrombie's Crate (1)
-    .isOnQuest 26680
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 47,34.97,72.41,0
     .goto 47,34.97,72.41,40,0
     .goto 47,32.34,70.45,40,0
+    >>Pick up |cRXP_PICK_Abercrombie's Crate|r from the ground
     >>Kill |cRXP_ENEMY_Splinter Fist Warriors|r, |cRXP_ENEMY_Splinter Fist Ogres|r, |cRXP_ENEMY_Splinter Fist Fire Weavers|r and |cRXP_ENEMY_Splinter Fist Taskmasters|r
+    .complete 26680,1 --Abercrombie's Crate (1)
     .complete 25235,1 --Splinter Fist Warrior (15)
     .mob Splinter Fist Warrior
     .mob Splinter Fist Ogre
     .mob Splinter Fist Fire Weaver
     .mob Splinter Fist Taskmaster
-    .isOnQuest 25235
 step
     .goto 47,44.92,67.42
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apprentice Fess|r
@@ -395,7 +372,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Watcher Dodds|r
     .turnin 25235 >>Turn in Vulgar Vul'Gol
     .target Watcher Dodds
-    .isOnQuest 25235
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 47,20.03,57.82
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sister Elsington|r
@@ -486,7 +462,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 26721,1 --Widow Venom Sac (8)
     .mob Black Widow
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along63
+    #completewith Along61
     >>As you go: Kill |cRXP_ENEMY_Flesh Eaters|r, |cRXP_ENEMY_Bone Chewers|r, |cRXP_ENEMY_Brain Eaters|r and |cRXP_ENEMY_Plague Spreaders|r. |cRXP_WARN_Anything left is finished later|r
     .complete 26778,1 --Flesh Eater (20)
     .mob Flesh Eater
@@ -498,7 +474,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>Click the |cRXP_PICK_A Weathered Grave|r
     .accept 26793 >>Accept The Weathered Grave
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along63
+    #label Along61
     .goto 47,16.97,33.42
     >>Click the |cRXP_PICK_Bloodsoaked Hat|r
     .complete 26723,1 --Bloodsoaked Hat
@@ -522,14 +498,8 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 47,87.43,35.21
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Abercrombie|r
     .turnin 26680 >>Turn in Ogre Thieves
-    .target Abercrombie
-    .isOnQuest 26680
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 47,87.43,35.21
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Abercrombie|r
     .accept 26677 >>Accept Ghoulish Effigy
     .target Abercrombie
-    .isQuestTurnedIn 26680 --any of: Ogre Thieves
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 47,80.55,33.94,0
@@ -542,43 +512,28 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Bone Chewer
     .mob Plague Spreader
     .mob Rotted One
-    .isOnQuest 26677
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 47,87.43,35.21
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Abercrombie|r
     .turnin 26677 >>Turn in Ghoulish Effigy
-    .target Abercrombie
-    .isOnQuest 26677
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 47,87.43,35.21
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Abercrombie|r
     .accept 26681 >>Accept Note to the Mayor
     .target Abercrombie
-    .isQuestTurnedIn 26677 --any of: Ghoulish Effigy
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 47,71.93,46.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord Ello Ebonlocke|r
     .turnin 26681 >>Turn in Note to the Mayor
-    .target Lord Ello Ebonlocke
-    .isOnQuest 26681
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 47,71.93,46.44
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord Ello Ebonlocke|r
     .accept 26727 >>Accept The Embalmer's Revenge
     .target Lord Ello Ebonlocke
-    .isQuestTurnedIn 26681 --any of: Note to the Mayor
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 47,74.17,46.47
     >>Kill |cRXP_ENEMY_Stitches|r
     .complete 26727,1 --Stitches slain (1)
     .mob Stitches
-    .isOnQuest 26727
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 47,71.93,46.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord Ello Ebonlocke|r
     .turnin 26727 >>Turn in The Embalmer's Revenge
     .target Lord Ello Ebonlocke
-    .isOnQuest 26727
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 47,18.35,58.06
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sven Yorgen|r
@@ -686,23 +641,10 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
     +|cRXP_WARN_That is all of Duskwood for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Northern Stranglethorn|r: Rebels Without a Clue << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 25|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.4 levels of quests, starting around Hemet Nesingwary Jr.), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.7 levels of quests, starting around Skuerto). Completing this step loads the guide for Northern Stranglethorn --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of Duskwood is planned from level 28.|r Load its guide for level 28 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 21 - 29 Duskwood
-#subweight -21
-#name 28-29 Duskwood
---RouteBuilder:next
-#next Zone Routes (Alliance)\25-30 Northern Stranglethorn;Zone Routes (Alliance)\26-31 Arathi Highlands
-
+    +|cRXP_WARN_Until level 28, suggested zones|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.4 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.7 levels of quests). Then come back to this Duskwood guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 28 >>|cRXP_WARN_The rest of Duskwood is planned from level 28.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 47,79.53,47.47
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Viktori Prism'Antras|r
@@ -724,5 +666,5 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
     +|cRXP_WARN_End of the Duskwood route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 28|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.2 levels of quests, starting around Hemet Nesingwary Jr.), |cRXP_FRIENDLY_Arathi Highlands|r (about 1.0 levels of quests, starting around Skuerto). Completing this step loads the guide for Northern Stranglethorn --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 28|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.2 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 1.0 levels of quests). Completing this step loads the guide for Northern Stranglethorn --RouteBuilder:next
 ]])

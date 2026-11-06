@@ -13,12 +13,12 @@
       "start": 19,
       "end": 19.17,
       "next": 22,
-      "guide": "19-20 Ashenvale",
+      "guide": "19-30 Ashenvale",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "19-20 Ashenvale",
+          "guide": "19-30 Ashenvale",
           "level": 19,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 22,
       "end": 22.65,
       "next": 25,
-      "guide": "22-23 Ashenvale",
+      "guide": "19-30 Ashenvale",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "22-23 Ashenvale",
+          "guide": "19-30 Ashenvale",
           "level": 22,
           "index": 0
         }
@@ -45,12 +45,12 @@
       "start": 25,
       "end": 25.52,
       "next": 28,
-      "guide": "25-26 Ashenvale",
+      "guide": "19-30 Ashenvale",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "25-26 Ashenvale",
+          "guide": "19-30 Ashenvale",
           "level": 25,
           "index": 0
         }
@@ -61,12 +61,12 @@
       "start": 28,
       "end": 28.14,
       "next": 32,
-      "guide": "28-29 Ashenvale",
+      "guide": "19-30 Ashenvale",
       "sections": [
         {
-          "label": "RBSection4_1",
+          "label": "",
           "name": "part 4",
-          "guide": "28-29 Ashenvale",
+          "guide": "19-30 Ashenvale",
           "level": 28,
           "index": 0
         }
@@ -76,12 +76,12 @@
       "part": 5,
       "start": 32,
       "end": 32.01,
-      "guide": "32-33 Ashenvale",
+      "guide": "19-30 Ashenvale",
       "sections": [
         {
-          "label": "RBSection5_1",
+          "label": "",
           "name": "part 5",
-          "guide": "32-33 Ashenvale",
+          "guide": "19-30 Ashenvale",
           "level": 32,
           "index": 0
         }

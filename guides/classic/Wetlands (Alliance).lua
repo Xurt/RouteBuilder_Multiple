@@ -1,9 +1,9 @@
 -- 20-32 Wetlands: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 5 parts (from level 20, 23, 26, 29, 32).
--- Split into 5 guides, listed under "20 - 33 Wetlands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 20; part 2 from 23; part 3 from 26; part 4 from 29; part 5 from 32.
 -- Edit zones/classic/Wetlands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 20 - 33 Wetlands
-#subweight -20
-#name 20-21 Wetlands: around Karl Boran
---RouteBuilder:next
-#next Zone Routes (Alliance)\20-22 Duskwood: around Elaine Carevin;Zone Routes (Alliance)\17-19 Darkshore: around Terenthis
+#name 20-32 Wetlands
 
 step
     .goto 1437/0,-801.47,-3745.44
@@ -245,22 +241,9 @@ step
     >>|cRXP_FRIENDLY_Dustwallow Marsh|r: Fiora Longears
     >>|cRXP_FRIENDLY_Loch Modan|r: A Dark Threat Looms
 step
-    +|cRXP_WARN_Suggested next zones at level 20|r: |cRXP_FRIENDLY_Duskwood|r (about 0.8 levels of quests, starting around Elaine Carevin), |cRXP_FRIENDLY_Darkshore|r (about 0.6 levels of quests, starting around Terenthis). Completing this step loads the guide for Duskwood --RouteBuilder:next
+    +|cRXP_WARN_Until level 23, suggested zones|r: |cRXP_FRIENDLY_Duskwood|r (about 0.8 levels of quests), |cRXP_FRIENDLY_Darkshore|r (about 0.6 levels of quests). Then come back to this Wetlands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Wetlands is planned from level 23.|r Load its guide for level 23 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 20 - 33 Wetlands
-#subweight -20
-#name 23-24 Wetlands
---RouteBuilder:next
-#next Zone Routes (Alliance)\20-22 Duskwood: around Elaine Carevin
-
+    .xp 23 >>|cRXP_WARN_The rest of Wetlands is planned from level 23.|r Come back to this guide then
 step << Hunter
     .goto 1437/0,-718.35,-3701.89
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dewin Shimmerdawn|r
@@ -453,20 +436,9 @@ step
     .target James Halloran
     .isOnQuest 471
 step
-    +|cRXP_WARN_Suggested next zones at level 23|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests, starting around Elaine Carevin). Completing this step loads the guide for Duskwood --RouteBuilder:next
+    +|cRXP_WARN_Until level 26, suggested zones|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests). Then come back to this Wetlands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Wetlands is planned from level 26.|r Load its guide for level 26 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 20 - 33 Wetlands
-#subweight -20
-#name 26-27 Wetlands: around Glorin Steelbrow
-
+    .xp 26 >>|cRXP_WARN_The rest of Wetlands is planned from level 26.|r Come back to this guide then
 step
     .goto 1437/0,-840.34,-3791.74
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_First Mate Fitzsimmons|r
@@ -629,18 +601,7 @@ step
     +|cRXP_WARN_That is all of Wetlands for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Stormwind City|r: Blessed Arm
 step
-    +|cRXP_WARN_The rest of Wetlands is planned from level 29.|r Load its guide for level 29 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 20 - 33 Wetlands
-#subweight -20
-#name 29-30 Wetlands
-
+    .xp 29 >>|cRXP_WARN_The rest of Wetlands is planned from level 29.|r Come back to this guide then
 step
     .goto 1437/0,-832.07,-3827.85
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Helbrek|r
@@ -794,18 +755,7 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: Cleansing the Eye
     >>|cRXP_FRIENDLY_Arathi Highlands and back here|r: The Thandol Span
 step
-    +|cRXP_WARN_The rest of Wetlands is planned from level 32.|r Load its guide for level 32 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 20 - 33 Wetlands
-#subweight -20
-#name 32-33 Wetlands
-
+    .xp 32 >>|cRXP_WARN_The rest of Wetlands is planned from level 32.|r Come back to this guide then
 step
     .goto 1437/0,-2352.25,-3443.63
     >>Click the |cRXP_PICK_Dragonmaw Catapult|r

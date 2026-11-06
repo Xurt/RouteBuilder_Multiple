@@ -1,7 +1,7 @@
 Searing Gorge - Horde - part 1 of 3, planned from level 47
 Guide "47-52 Searing Gorge" in group "Zone Routes (Horde)": this part has 130 steps, 114 stops
 Written to guides/mop/Searing Gorge (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -158,7 +158,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Searing Gorge - Horde - part 2 of 3, planned from level 51
 Guide "47-52 Searing Gorge" in group "Zone Routes (Horde)": this part has 17 steps, 14 stops
 Written to guides/mop/Searing Gorge (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -234,7 +234,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Searing Gorge - Horde - part 3 of 3, planned from level 54
 Guide "47-52 Searing Gorge" in group "Zone Routes (Horde)": this part has 8 steps, 5 stops
 Written to guides/mop/Searing Gorge (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files

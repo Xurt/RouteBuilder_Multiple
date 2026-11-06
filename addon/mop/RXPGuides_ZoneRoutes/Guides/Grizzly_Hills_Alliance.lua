@@ -1,9 +1,9 @@
 -- 73-75 Grizzly Hills: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 73, 81).
--- Split into 2 guides, listed under "73 - 82 Grizzly Hills" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 73; part 2 from 81.
 -- Edit zones/mop/Grizzly Hills.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 73 - 82 Grizzly Hills
-#subweight -73
-#name 73-75 Grizzly Hills: around Drakuru
+#name 73-75 Grizzly Hills
 --RouteBuilder:next
-#next Zone Routes (Alliance)\71-74 Borean Tundra: around Elder Atkanok;Zone Routes (Alliance)\72-74 Dragonblight: around Aurastrasza;Zone Routes (Alliance)\70-73 Howling Fjord: around Lurielle
+#next Zone Routes (Alliance)\82-83 Deepholm
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 116,32.10,59.97
@@ -1704,23 +1702,10 @@ step
     >>|cRXP_FRIENDLY_Dalaran - (Dungeon/Raid)|r: The Magical Kingdom of Dalaran << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Zul'Drak|r: Reallocating Resources << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Perfect Plan << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 74|r: |cRXP_FRIENDLY_Borean Tundra|r (about 0.8 levels of quests, starting around Elder Atkanok), |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests, starting around Aurastrasza), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests, starting around Lurielle). Completing this step loads the guide for Borean Tundra --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of Grizzly Hills is planned from level 81.|r Load its guide for level 81 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 73 - 82 Grizzly Hills
-#subweight -73
-#name 81-82 Grizzly Hills
---RouteBuilder:next
-#next Zone Routes (Alliance)\82-83 Deepholm
-
+    +|cRXP_WARN_Until level 81, suggested zones|r: |cRXP_FRIENDLY_Borean Tundra|r (about 0.8 levels of quests), |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests). Then come back to this Grizzly Hills guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 81 >>|cRXP_WARN_The rest of Grizzly Hills is planned from level 81.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 116,76.82,55.12,0
@@ -1775,5 +1760,5 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
     +|cRXP_WARN_End of the Grizzly Hills route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 81|r: |cRXP_FRIENDLY_Deepholm|r (about 1.2 levels of quests, starting around Maruut Stonebinder). Completing this step loads the guide for Deepholm --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 81|r: |cRXP_FRIENDLY_Deepholm|r (about 1.2 levels of quests). Completing this step loads the guide for Deepholm --RouteBuilder:next
 ]])

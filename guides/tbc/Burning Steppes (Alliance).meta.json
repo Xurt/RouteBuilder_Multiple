@@ -13,12 +13,12 @@
       "start": 52,
       "end": 52.1,
       "next": 55,
-      "guide": "52-53 Burning Steppes",
+      "guide": "52-58 Burning Steppes",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "52-53 Burning Steppes",
+          "guide": "52-58 Burning Steppes",
           "level": 52,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 55,
       "end": 55.54,
       "next": 59,
-      "guide": "55-56 Burning Steppes: around Oralius",
+      "guide": "52-58 Burning Steppes",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Oralius",
-          "guide": "55-56 Burning Steppes: around Oralius",
+          "label": "",
+          "name": "part 2",
+          "guide": "52-58 Burning Steppes",
           "level": 55,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 59,
       "end": 59,
-      "guide": "59-60 Burning Steppes",
+      "guide": "52-58 Burning Steppes",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "59-60 Burning Steppes",
+          "guide": "52-58 Burning Steppes",
           "level": 59,
           "index": 0
         }

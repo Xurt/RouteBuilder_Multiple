@@ -1,5 +1,5 @@
 -- 84-84 Uldum: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- Edit zones/mop/Uldum.json and re-run rather than editing this file, or your changes are lost on the next build.
@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
 #group Zone Routes (Horde)
 #name 84-84 Uldum
 --RouteBuilder:next
-#next Zone Routes (Horde)\82-83 Deepholm;Zone Routes (Horde)\85-86 The Jade Forest: around Master Stone Fist
+#next Zone Routes (Horde)\82-83 Deepholm;Zone Routes (Horde)\85-90 The Jade Forest
 
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 249,84.48,43.23
@@ -2230,5 +2230,5 @@ step
     +|cRXP_WARN_End of the Uldum route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Tanaris|r: The Grand Tablet << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 84|r: |cRXP_FRIENDLY_Deepholm|r (about 0.6 levels of quests, starting around Maruut Stonebinder), |cRXP_FRIENDLY_The Jade Forest|r (about 0.5 levels of quests, starting around Master Stone Fist). Completing this step loads the guide for Deepholm --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 84|r: |cRXP_FRIENDLY_Deepholm|r (about 0.6 levels of quests), |cRXP_FRIENDLY_The Jade Forest|r (about 0.5 levels of quests). Completing this step loads the guide for Deepholm --RouteBuilder:next
 ]])

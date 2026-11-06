@@ -13,12 +13,12 @@
       "start": 85,
       "end": 85.08,
       "next": 88,
-      "guide": "85-86 Twilight Highlands: around Gurgthock",
+      "guide": "85-85 Twilight Highlands",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Gurgthock",
-          "guide": "85-86 Twilight Highlands: around Gurgthock",
+          "label": "",
+          "name": "start",
+          "guide": "85-85 Twilight Highlands",
           "level": 85,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 88,
       "end": 88.15,
-      "guide": "88-89 Twilight Highlands: around Calen",
+      "guide": "85-85 Twilight Highlands",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Calen",
-          "guide": "88-89 Twilight Highlands: around Calen",
+          "label": "",
+          "name": "part 2",
+          "guide": "85-85 Twilight Highlands",
           "level": 88,
           "index": 0
         }

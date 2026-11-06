@@ -1,7 +1,7 @@
 Krasarang Wilds - Horde - part 1 of 2, planned from level 87
 Guide "87-87 Krasarang Wilds" in group "Zone Routes (Horde)": this part has 147 steps, 131 stops
 Written to guides/mop/Krasarang Wilds (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -105,7 +105,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Krasarang Wilds - Horde - part 2 of 2, planned from level 90
 Guide "87-87 Krasarang Wilds" in group "Zone Routes (Horde)": this part has 5 steps, 4 stops
 Written to guides/mop/Krasarang Wilds (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files

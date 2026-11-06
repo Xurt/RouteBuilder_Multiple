@@ -13,12 +13,12 @@
       "start": 15,
       "end": 17.17,
       "next": 20,
-      "guide": "15-18 Redridge Mountains",
+      "guide": "15-20 Redridge Mountains",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "15-18 Redridge Mountains",
+          "guide": "15-20 Redridge Mountains",
           "level": 15,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 20,
       "end": 20,
-      "guide": "20-21 Redridge Mountains",
+      "guide": "15-20 Redridge Mountains",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "20-21 Redridge Mountains",
+          "guide": "15-20 Redridge Mountains",
           "level": 20,
           "index": 0
         }

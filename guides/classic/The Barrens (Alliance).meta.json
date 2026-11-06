@@ -13,12 +13,12 @@
       "start": 14,
       "end": 14.76,
       "next": 17,
-      "guide": "14-15 The Barrens: around Gazlowe",
+      "guide": "14-31 The Barrens",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Gazlowe",
-          "guide": "14-15 The Barrens: around Gazlowe",
+          "label": "",
+          "name": "start",
+          "guide": "14-31 The Barrens",
           "level": 14,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 17,
       "end": 17.29,
       "next": 21,
-      "guide": "17-18 The Barrens",
+      "guide": "14-31 The Barrens",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "17-18 The Barrens",
+          "guide": "14-31 The Barrens",
           "level": 17,
           "index": 0
         }
@@ -45,12 +45,12 @@
       "start": 21,
       "end": 21,
       "next": 24,
-      "guide": "21-22 The Barrens",
+      "guide": "14-31 The Barrens",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "21-22 The Barrens",
+          "guide": "14-31 The Barrens",
           "level": 21,
           "index": 0
         }
@@ -61,12 +61,12 @@
       "start": 24,
       "end": 24,
       "next": 31,
-      "guide": "24-25 The Barrens",
+      "guide": "14-31 The Barrens",
       "sections": [
         {
-          "label": "RBSection4_1",
+          "label": "",
           "name": "part 4",
-          "guide": "24-25 The Barrens",
+          "guide": "14-31 The Barrens",
           "level": 24,
           "index": 0
         }
@@ -77,12 +77,12 @@
       "start": 31,
       "end": 31,
       "next": 34,
-      "guide": "31-32 The Barrens",
+      "guide": "14-31 The Barrens",
       "sections": [
         {
-          "label": "RBSection5_1",
+          "label": "",
           "name": "part 5",
-          "guide": "31-32 The Barrens",
+          "guide": "14-31 The Barrens",
           "level": 31,
           "index": 0
         }
@@ -92,12 +92,12 @@
       "part": 6,
       "start": 34,
       "end": 34,
-      "guide": "34-35 The Barrens",
+      "guide": "14-31 The Barrens",
       "sections": [
         {
-          "label": "RBSection6_1",
+          "label": "",
           "name": "part 6",
-          "guide": "34-35 The Barrens",
+          "guide": "14-31 The Barrens",
           "level": 34,
           "index": 0
         }

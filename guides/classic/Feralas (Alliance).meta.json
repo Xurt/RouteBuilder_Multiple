@@ -13,12 +13,12 @@
       "start": 43,
       "end": 43.44,
       "next": 46,
-      "guide": "43-44 Feralas: around Shandris Feathermoon",
+      "guide": "43-51 Feralas",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Shandris Feathermoon",
-          "guide": "43-44 Feralas: around Shandris Feathermoon",
+          "label": "",
+          "name": "start",
+          "guide": "43-51 Feralas",
           "level": 43,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 46,
       "end": 46.39,
-      "guide": "46-47 Feralas",
+      "guide": "43-51 Feralas",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "46-47 Feralas",
+          "guide": "43-51 Feralas",
           "level": 46,
           "index": 0
         }

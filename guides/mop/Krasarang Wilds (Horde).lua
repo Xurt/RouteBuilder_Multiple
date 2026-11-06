@@ -1,9 +1,9 @@
 -- 87-87 Krasarang Wilds: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 87, 90).
--- Split into 2 guides, listed under "87 - 91 Krasarang Wilds" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 87; part 2 from 90.
 -- Edit zones/mop/Krasarang Wilds.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 87 - 91 Krasarang Wilds
-#subweight -87
-#name 87-88 Krasarang Wilds: around Ken-Ken
---RouteBuilder:next
-#next Zone Routes (Horde)\87-88 Kun-Lai Summit: around Smokey Sootassle
+#name 87-87 Krasarang Wilds
 
 step
     .goto 418,76.21,7.06
@@ -1008,21 +1004,10 @@ step
     +|cRXP_WARN_That is all of Krasarang Wilds for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Valley of the Four Winds|r: Warn Stoneplow << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Valley of the Four Winds and back here|r: Why So Serious?
-step
-    +|cRXP_WARN_Suggested next zones at level 87|r: |cRXP_FRIENDLY_Kun-Lai Summit|r (about 0.5 levels of quests, starting around Smokey Sootassle). Completing this step loads the guide for Kun-Lai Summit --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Krasarang Wilds is planned from level 90.|r Load its guide for level 90 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 87 - 91 Krasarang Wilds
-#subweight -87
-#name 90-91 Krasarang Wilds
-
+    +|cRXP_WARN_Until level 90, suggested zones|r: |cRXP_FRIENDLY_Kun-Lai Summit|r (about 0.5 levels of quests). Then come back to this Krasarang Wilds guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 90 >>|cRXP_WARN_The rest of Krasarang Wilds is planned from level 90.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 418,40.46,33.92
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Messenger Grummle|r

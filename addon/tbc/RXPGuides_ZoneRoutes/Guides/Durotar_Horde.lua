@@ -1,9 +1,9 @@
 -- 1-13 Durotar: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 1, 12).
--- Split into 3 guides, listed under "1 - 13 Durotar" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 1; part 2 from 12.
 -- Edit zones/tbc/Durotar.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 1 - 13 Durotar
-#subweight -1
-#name 1-4 Durotar: around Gornek
-#next Zone Routes (Horde)\4-10 Durotar: around Master Gadrin
+#name 1-13 Durotar
+--RouteBuilder:next
+#next Zone Routes (Horde)\10-27 The Barrens;Zone Routes (Horde)\1-12 Eversong Woods;Zone Routes (Horde)\1-13 Tirisfal Glades
 
 step
     .goto 1411/1,-4251.46,-607.35
@@ -761,19 +760,6 @@ step
     .accept 818 >>Accept A Solvent Spirit
     .target Master Vornal
     .xp <5,1
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 1 - 13 Durotar
-#subweight -1
-#name 4-10 Durotar: around Master Gadrin
---RouteBuilder:next
-#next Zone Routes (Horde)\10-13 The Barrens: around Sergra Darkthorn;Zone Routes (Horde)\4-10 Mulgore: around Mull Thunderhorn;Zone Routes (Horde)\7-11 Tirisfal Glades: around Apothecary Johaan
-
 step
     .goto 1411/1,-4724.69,287.30
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Orgnil Soulscar|r
@@ -811,7 +797,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Grosk|r
     .turnin 2161 >>Turn in A Peon's Burden
     .target Innkeeper Grosk
-    .isOnQuest 2161
 step << !Shaman !Hunter
     .goto 1411/1,-4686.09,340.52
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Grosk|r
@@ -823,11 +808,6 @@ step << Troll Priest
     .goto 1411/1,-4831.50,295.05
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tai'jin|r
     .turnin 5649 >>Turn in In Favor of Spirituality
-    .target Tai'jin
-    .isOnQuest 5649
-step << Troll Priest
-    .goto 1411/1,-4831.50,295.05
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tai'jin|r
     .accept 5648 >>Accept Garments of Spirituality
     .target Tai'jin
 step << Priest
@@ -1141,7 +1121,7 @@ step
     .isOnQuest 825
     .money <0.0125
 step
-    #completewith Along66
+    #completewith Along65
     >>As you go: Kill |cRXP_ENEMY_Makrura Clackers|r, |cRXP_ENEMY_Makrura Shellhides|r, |cRXP_ENEMY_Makrura Snapclaws|r and |cRXP_ENEMY_Makrura Elders|r. Loot them for |cRXP_LOOT_Intact Makrura Eye|r. |cRXP_WARN_Anything left is finished later|r
     .complete 818,1 --Intact Makrura Eye (4)
     .mob Makrura Clacker
@@ -1149,7 +1129,7 @@ step
     .mob Makrura Snapclaw
     .mob Makrura Elder
 step
-    #label Along66
+    #label Along65
     #loop
     .goto 1411/1,-5308.96,-211.84,0
     .goto 1411/1,-5308.96,-211.84,40,0
@@ -1157,12 +1137,12 @@ step
     >>Loot the |cRXP_PICK_Gnomish Toolboxes|r for |cRXP_LOOT_Gnomish Tools|r
     .complete 825,1 --Gnomish Tools (3)
 step
-    #completewith Along67
+    #completewith Along66
     >>As you go: Kill |cRXP_ENEMY_Durotar Tigers|r. Loot them for |cRXP_LOOT_Durotar Tiger Fur|r. |cRXP_WARN_Anything left is finished later|r
     .complete 817,1 --Durotar Tiger Fur (4)
     .mob Durotar Tiger
 step
-    #label Along67
+    #label Along66
     #loop
     .goto 1411/1,-5547.95,-653.88,0
     .goto 1411/1,-5547.95,-653.88,40,0
@@ -1440,13 +1420,13 @@ step
     .zone 1411 >>Leave Orgrimmar for Durotar
     .zoneskip 1411
 step
-    #completewith Along86
+    #completewith Along85
     >>As you go: Kill |cRXP_ENEMY_Burning Blade Fanatics|r and |cRXP_ENEMY_Burning Blade Apprentices|r. Loot them for |cRXP_LOOT_Lieutenant's Insignia|r. |cRXP_WARN_Anything left is finished later|r
     .complete 5726,1 --Lieutenant's Insignia (1)
     .mob Burning Blade Fanatic
     .mob Burning Blade Apprentice
 step
-    #label Along86
+    #label Along85
     .goto 1411/1,-4744.25,1497.43
     >>Kill |cRXP_ENEMY_Gazz'uz|r and loot |cRXP_LOOT_Eye of Burning Shadow|r. Use it to start the quest
     .collect 4903,1,832 --Eye of Burning Shadow (1)
@@ -1614,22 +1594,9 @@ step
     +|cRXP_WARN_That is all of Durotar for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Mulgore|r: Call of Earth << Shaman
 step
-    +|cRXP_WARN_Suggested next zones at level 9|r: |cRXP_FRIENDLY_The Barrens|r (about 3.5 levels of quests, starting around Sergra Darkthorn; 2 quests from here hand in there), |cRXP_FRIENDLY_Mulgore|r (about 1.7 levels of quests, starting around Mull Thunderhorn), |cRXP_FRIENDLY_Tirisfal Glades|r (about 1.4 levels of quests, starting around Apothecary Johaan). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Until level 12, suggested zones|r: |cRXP_FRIENDLY_The Barrens|r (about 3.5 levels of quests; 2 quests from here hand in there), |cRXP_FRIENDLY_Eversong Woods|r (about 2.7 levels of quests), |cRXP_FRIENDLY_Tirisfal Glades|r (about 2.1 levels of quests). Then come back to this Durotar guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Durotar is planned from level 12.|r Load its guide for level 12 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 1 - 13 Durotar
-#subweight -1
-#name 12-13 Durotar: around Thotar
---RouteBuilder:next
-#next Zone Routes (Horde)\10-13 The Barrens: around Sergra Darkthorn;Zone Routes (Horde)\7-11 Tirisfal Glades: around Apothecary Johaan;Zone Routes (Horde)\10-13 Ghostlands: around Arcanist Vandril
-
+    .xp 12 >>|cRXP_WARN_The rest of Durotar is planned from level 12.|r Come back to this guide then
 step
     .goto 1411/1,-4724.69,287.30
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Orgnil Soulscar|r
@@ -2076,5 +2043,5 @@ step
     >>|cRXP_FRIENDLY_Hillsbrad Foothills and back here|r: A Donation of Wool, A Donation of Wool
     >>|cRXP_FRIENDLY_The Barrens and back here|r: The Shattered Hand << Orc Rogue/Troll Rogue
 step
-    +|cRXP_WARN_Suggested next zones at level 12|r: |cRXP_FRIENDLY_The Barrens|r (about 3.1 levels of quests, starting around Sergra Darkthorn; 3 quests from here hand in there), |cRXP_FRIENDLY_Tirisfal Glades|r (about 1.0 levels of quests, starting around Apothecary Johaan), |cRXP_FRIENDLY_Ghostlands|r (about 1.0 levels of quests, starting around Arcanist Vandril). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 12|r: |cRXP_FRIENDLY_The Barrens|r (about 3.1 levels of quests; 3 quests from here hand in there), |cRXP_FRIENDLY_Eversong Woods|r (about 1.8 levels of quests), |cRXP_FRIENDLY_Tirisfal Glades|r (about 1.3 levels of quests). Completing this step loads the guide for The Barrens --RouteBuilder:next
 ]])

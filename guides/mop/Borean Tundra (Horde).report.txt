@@ -1,7 +1,7 @@
 Borean Tundra - Horde - part 1 of 8, planned from level 10
 Guide "10-41 Borean Tundra" in group "Zone Routes (Horde)": this part has 18 steps, 15 stops
 Written to guides/mop/Borean Tundra (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -324,7 +324,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Borean Tundra - Horde - part 2 of 8, planned from level 13
 Guide "10-41 Borean Tundra" in group "Zone Routes (Horde)": this part has 4 steps, 2 stops
 Written to guides/mop/Borean Tundra (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -599,7 +599,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Borean Tundra - Horde - part 3 of 8, planned from level 20
 Guide "10-41 Borean Tundra" in group "Zone Routes (Horde)": this part has 7 steps, 4 stops
 Written to guides/mop/Borean Tundra (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -873,7 +873,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Borean Tundra - Horde - part 4 of 8, planned from level 23
 Guide "10-41 Borean Tundra" in group "Zone Routes (Horde)": this part has 17 steps, 9 stops
 Written to guides/mop/Borean Tundra (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -1152,7 +1152,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Borean Tundra - Horde - part 5 of 8, planned from level 26
 Guide "10-41 Borean Tundra" in group "Zone Routes (Horde)": this part has 5 steps, 2 stops
 Written to guides/mop/Borean Tundra (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -1404,7 +1404,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Borean Tundra - Horde - part 6 of 8, planned from level 30
 Guide "10-41 Borean Tundra" in group "Zone Routes (Horde)": this part has 5 steps, 2 stops
 Written to guides/mop/Borean Tundra (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -1653,7 +1653,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Borean Tundra - Horde - part 7 of 8, planned from level 35
 Guide "10-41 Borean Tundra" in group "Zone Routes (Horde)": this part has 6 steps, 3 stops
 Written to guides/mop/Borean Tundra (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -1901,7 +1901,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Borean Tundra - Horde - part 8 of 8, planned from level 38
 Guide "10-41 Borean Tundra" in group "Zone Routes (Horde)": this part has 3 steps, 2 stops
 Written to guides/mop/Borean Tundra (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files

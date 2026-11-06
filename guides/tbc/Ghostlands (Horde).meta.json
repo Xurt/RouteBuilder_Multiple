@@ -13,12 +13,12 @@
       "start": 10,
       "end": 12.38,
       "next": 15,
-      "guide": "10-13 Ghostlands: around Arcanist Vandril",
+      "guide": "10-21 Ghostlands",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Arcanist Vandril",
-          "guide": "10-13 Ghostlands: around Arcanist Vandril",
+          "label": "",
+          "name": "start",
+          "guide": "10-21 Ghostlands",
           "level": 10,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 15,
       "end": 17.44,
       "next": 20,
-      "guide": "15-18 Ghostlands: around Eralan",
+      "guide": "10-21 Ghostlands",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Eralan",
-          "guide": "15-18 Ghostlands: around Eralan",
+          "label": "",
+          "name": "part 2",
+          "guide": "10-21 Ghostlands",
           "level": 15,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 20,
       "end": 20.46,
-      "guide": "20-21 Ghostlands: around Magister Kaendris",
+      "guide": "10-21 Ghostlands",
       "sections": [
         {
-          "label": "RBSection3_1",
-          "name": "around Magister Kaendris",
-          "guide": "20-21 Ghostlands: around Magister Kaendris",
+          "label": "",
+          "name": "part 3",
+          "guide": "10-21 Ghostlands",
           "level": 20,
           "index": 0
         }

@@ -1,9 +1,9 @@
 -- 52-58 Western Plaguelands: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 52, 55).
--- Split into 2 guides, listed under "52 - 56 Western Plaguelands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 52; part 2 from 55.
 -- Edit zones/classic/Western Plaguelands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 52 - 56 Western Plaguelands
-#subweight -52
-#name 52-53 Western Plaguelands
+#name 52-58 Western Plaguelands
 
 step
     .goto 1422/0,-1171.32,1720.91
@@ -206,18 +204,7 @@ step
     >>|cRXP_FRIENDLY_Tirisfal Glades|r: Return to the Bulwark, Return to the Bulwark, Return to the Bulwark, A Plague Upon Thee, Return to the Bulwark
     >>|cRXP_FRIENDLY_Undercity|r: Better Late Than Never
 step
-    +|cRXP_WARN_The rest of Western Plaguelands is planned from level 55.|r Load its guide for level 55 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 52 - 56 Western Plaguelands
-#subweight -52
-#name 55-56 Western Plaguelands
-
+    .xp 55 >>|cRXP_WARN_The rest of Western Plaguelands is planned from level 55.|r Come back to this guide then
 step
     .goto 1422/0,-1619.38,1943.94
     >>Click the |cRXP_PICK_Locked Cabinet|r

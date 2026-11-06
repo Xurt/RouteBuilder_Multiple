@@ -1,7 +1,7 @@
 Stonetalon Mountains - Horde - part 1 of 3, planned from level 18
 Guide "18-29 Stonetalon Mountains" in group "Zone Routes (Horde)": this part has 27 steps, 21 stops
 Written to guides/tbc/Stonetalon Mountains (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -81,7 +81,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Stonetalon Mountains - Horde - part 2 of 3, planned from level 21
 Guide "18-29 Stonetalon Mountains" in group "Zone Routes (Horde)": this part has 14 steps, 11 stops
 Written to guides/tbc/Stonetalon Mountains (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -138,7 +138,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Stonetalon Mountains - Horde - part 3 of 3, planned from level 24
 Guide "18-29 Stonetalon Mountains" in group "Zone Routes (Horde)": this part has 25 steps, 22 stops
 Written to guides/tbc/Stonetalon Mountains (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

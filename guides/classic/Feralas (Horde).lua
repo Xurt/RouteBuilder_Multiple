@@ -1,9 +1,9 @@
 -- 42-52 Feralas: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 42, 45, 48).
--- Split into 3 guides, listed under "42 - 49 Feralas" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 42; part 2 from 45; part 3 from 48.
 -- Edit zones/classic/Feralas.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 42 - 49 Feralas
-#subweight -42
-#name 42-43 Feralas: around Hadoken Swiftstrider
+#name 42-52 Feralas
 
 step
     .goto 1444/1,173.57,-4385.87
@@ -447,18 +445,7 @@ step
     >>|cRXP_FRIENDLY_Orgrimmar|r: A Grim Discovery, A Strange Request
     >>|cRXP_FRIENDLY_Stranglethorn Vale|r: Rescue OOX-22/FE!
 step
-    +|cRXP_WARN_The rest of Feralas is planned from level 45.|r Load its guide for level 45 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 42 - 49 Feralas
-#subweight -42
-#name 45-46 Feralas
-
+    .xp 45 >>|cRXP_WARN_The rest of Feralas is planned from level 45.|r Come back to this guide then
 step
     .goto 1444/1,173.57,-4385.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rok Orhan|r
@@ -631,18 +618,7 @@ step
     +|cRXP_WARN_That is all of Feralas for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Orgrimmar|r: The Gordunni Orb, Zukk'ash Report
 step
-    +|cRXP_WARN_The rest of Feralas is planned from level 48.|r Load its guide for level 48 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 42 - 49 Feralas
-#subweight -42
-#name 48-49 Feralas
-
+    .xp 48 >>|cRXP_WARN_The rest of Feralas is planned from level 48.|r Come back to this guide then
 step
     .goto 1444/1,147.16,-4397.46
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Talo Thornhoof|r

@@ -13,12 +13,12 @@
       "start": 11,
       "end": 15.36,
       "next": 20,
-      "guide": "11-16 Silverpine Forest: around Admiral Hatchet",
+      "guide": "11-20 Silverpine Forest",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Admiral Hatchet",
-          "guide": "11-16 Silverpine Forest: around Admiral Hatchet",
+          "label": "",
+          "name": "start",
+          "guide": "11-20 Silverpine Forest",
           "level": 11,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 20,
       "end": 20,
-      "guide": "20-21 Silverpine Forest",
+      "guide": "11-20 Silverpine Forest",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "20-21 Silverpine Forest",
+          "guide": "11-20 Silverpine Forest",
           "level": 20,
           "index": 0
         }

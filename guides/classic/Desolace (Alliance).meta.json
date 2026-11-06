@@ -13,12 +13,12 @@
       "start": 31,
       "end": 31.58,
       "next": 34,
-      "guide": "31-32 Desolace: around Kreldig Ungor",
+      "guide": "31-40 Desolace",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Kreldig Ungor",
-          "guide": "31-32 Desolace: around Kreldig Ungor",
+          "label": "",
+          "name": "start",
+          "guide": "31-40 Desolace",
           "level": 31,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 34,
       "end": 34.18,
       "next": 37,
-      "guide": "34-35 Desolace",
+      "guide": "31-40 Desolace",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "34-35 Desolace",
+          "guide": "31-40 Desolace",
           "level": 34,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 37,
       "end": 37.29,
-      "guide": "37-38 Desolace",
+      "guide": "31-40 Desolace",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "37-38 Desolace",
+          "guide": "31-40 Desolace",
           "level": 37,
           "index": 0
         }

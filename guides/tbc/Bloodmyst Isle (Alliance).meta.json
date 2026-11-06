@@ -13,12 +13,12 @@
       "start": 10,
       "end": 11.86,
       "next": 14,
-      "guide": "10-12 Bloodmyst Isle: around Morae",
+      "guide": "10-21 Bloodmyst Isle",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Morae",
-          "guide": "10-12 Bloodmyst Isle: around Morae",
+          "label": "",
+          "name": "start",
+          "guide": "10-21 Bloodmyst Isle",
           "level": 10,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 14,
       "end": 17.38,
       "next": 20,
-      "guide": "14-18 Bloodmyst Isle: around Vindicator Boros",
+      "guide": "10-21 Bloodmyst Isle",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Vindicator Boros",
-          "guide": "14-18 Bloodmyst Isle: around Vindicator Boros",
+          "label": "",
+          "name": "part 2",
+          "guide": "10-21 Bloodmyst Isle",
           "level": 14,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 20,
       "end": 20.08,
-      "guide": "20-21 Bloodmyst Isle",
+      "guide": "10-21 Bloodmyst Isle",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "20-21 Bloodmyst Isle",
+          "guide": "10-21 Bloodmyst Isle",
           "level": 20,
           "index": 0
         }

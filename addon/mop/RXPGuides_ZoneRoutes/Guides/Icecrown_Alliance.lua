@@ -1,9 +1,9 @@
 -- 79-81 Icecrown: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 79, 84).
--- Split into 2 guides, listed under "79 - 85 Icecrown" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 79; part 2 from 84.
 -- Edit zones/mop/Icecrown.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 79 - 85 Icecrown
-#subweight -79
-#name 79-81 Icecrown: around Highlord Tirion Fordring
+#name 79-81 Icecrown
 --RouteBuilder:next
 #next Zone Routes (Alliance)\82-83 Deepholm
 
@@ -2834,22 +2832,9 @@ step
     >>|cRXP_FRIENDLY_Shadowfang Keep - Lower Observatory (fake ID for Shadowfang Keep), Elsewhere and back here|r: The Circle's Future << NightElf Druid/Worgen Druid
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Need More Info << Warrior/Paladin/Hunter/Rogue/Priest/Shaman/Mage/Warlock/Druid
 step
-    +|cRXP_WARN_Suggested next zones at level 81|r: |cRXP_FRIENDLY_Deepholm|r (about 1.2 levels of quests, starting around Maruut Stonebinder). Completing this step loads the guide for Deepholm --RouteBuilder:next
+    +|cRXP_WARN_Until level 84, suggested zones|r: |cRXP_FRIENDLY_Deepholm|r (about 1.2 levels of quests). Then come back to this Icecrown guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Icecrown is planned from level 84.|r Load its guide for level 84 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 79 - 85 Icecrown
-#subweight -79
-#name 84-85 Icecrown
---RouteBuilder:next
-#next Zone Routes (Alliance)\82-83 Deepholm
-
+    .xp 84 >>|cRXP_WARN_The rest of Icecrown is planned from level 84.|r Come back to this guide then
 step << NightElf Druid/Worgen Druid
     .goto 80,53.34,42.70
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Narianna|r
@@ -2940,5 +2925,5 @@ step
     >>|cRXP_FRIENDLY_Isle of Quel'Danas|r: Journey To The Sunwell << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Mount Hyjal|r: As Hyjal Burns
 step
-    +|cRXP_WARN_Suggested next zones at level 84|r: |cRXP_FRIENDLY_Deepholm|r (about 0.6 levels of quests, starting around Maruut Stonebinder). Completing this step loads the guide for Deepholm --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 84|r: |cRXP_FRIENDLY_Deepholm|r (about 0.6 levels of quests). Completing this step loads the guide for Deepholm --RouteBuilder:next
 ]])

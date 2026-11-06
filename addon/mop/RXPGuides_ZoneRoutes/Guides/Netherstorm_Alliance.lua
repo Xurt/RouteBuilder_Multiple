@@ -1,9 +1,9 @@
 -- 68-70 Netherstorm: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 68, 72).
--- Split into 2 guides, listed under "68 - 73 Netherstorm" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 68; part 2 from 72.
 -- Edit zones/mop/Netherstorm.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 68 - 73 Netherstorm
-#subweight -68
-#name 68-70 Netherstorm: around Image of Archmage Vargoth
+#name 68-70 Netherstorm
 --RouteBuilder:next
-#next Zone Routes (Alliance)\70-73 Howling Fjord: around Lurielle;Zone Routes (Alliance)\65-68 Nagrand
+#next Zone Routes (Alliance)\71-74 Borean Tundra;Zone Routes (Alliance)\72-75 Dragonblight;Zone Routes (Alliance)\70-72 Howling Fjord
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 109,32.68,64.41
@@ -1673,22 +1671,9 @@ step
     >>|cRXP_FRIENDLY_Shattrath City|r: Special Delivery to Shattrath City
     >>|cRXP_FRIENDLY_The Botanica - (Dungeon/Raid) and back here|r: Capturing the Keystone
 step
-    +|cRXP_WARN_Suggested next zones at level 69|r: |cRXP_FRIENDLY_Howling Fjord|r (about 0.6 levels of quests, starting around Lurielle), |cRXP_FRIENDLY_Nagrand|r (about 0.5 levels of quests, starting around Hemet Nesingwary). Completing this step loads the guide for Howling Fjord --RouteBuilder:next
+    +|cRXP_WARN_Until level 72, suggested zones|r: |cRXP_FRIENDLY_Howling Fjord|r (about 0.6 levels of quests), |cRXP_FRIENDLY_Nagrand|r (about 0.5 levels of quests). Then come back to this Netherstorm guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Netherstorm is planned from level 72.|r Load its guide for level 72 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 68 - 73 Netherstorm
-#subweight -68
-#name 72-73 Netherstorm: around Image of Commander Ameer
---RouteBuilder:next
-#next Zone Routes (Alliance)\71-74 Borean Tundra: around Elder Atkanok;Zone Routes (Alliance)\72-74 Dragonblight: around Aurastrasza;Zone Routes (Alliance)\70-73 Howling Fjord: around Lurielle
-
+    .xp 72 >>|cRXP_WARN_The rest of Netherstorm is planned from level 72.|r Come back to this guide then
 step
     .goto 109,59.50,32.38
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Commander Ameer|r
@@ -1796,5 +1781,5 @@ step
 step
     +|cRXP_WARN_End of the Netherstorm route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 72|r: |cRXP_FRIENDLY_Borean Tundra|r (about 0.9 levels of quests, starting around Elder Atkanok), |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests, starting around Aurastrasza), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests, starting around Lurielle). Completing this step loads the guide for Borean Tundra --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 72|r: |cRXP_FRIENDLY_Borean Tundra|r (about 0.9 levels of quests), |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests). Completing this step loads the guide for Borean Tundra --RouteBuilder:next
 ]])

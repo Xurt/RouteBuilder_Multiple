@@ -1,9 +1,9 @@
 -- 46-51 Felwood: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 46, 52).
--- Split into 3 guides, listed under "46 - 53 Felwood" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 46; part 2 from 52.
 -- Edit zones/mop/Felwood.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 46 - 53 Felwood
-#subweight -46
-#name 46-48 Felwood: around Totem of Ruumbo
-#next Zone Routes (Alliance)\48-50 Felwood: around Feronas Sindweller
+#name 46-51 Felwood
+--RouteBuilder:next
+#next Zone Routes (Alliance)\50-55 Winterspring;Zone Routes (Alliance)\51-55 Un'Goro Crater;Zone Routes (Alliance)\52-55 Swamp of Sorrows
 
 step
     .goto 77,51.41,80.43
@@ -769,85 +768,45 @@ step
     >>Kill |cRXP_ENEMY_Feronas Sindweller|r
     .complete 28217,1 --Feronas Sindweller slain (1)
     .mob Feronas Sindweller
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 46 - 53 Felwood
-#subweight -46
-#name 48-50 Felwood: around Feronas Sindweller
---RouteBuilder:next
-#next Zone Routes (Alliance)\50-52 Winterspring: around Donova Snowden;Zone Routes (Alliance)\45-48 Tanaris: around Mazoga;Zone Routes (Alliance)\47-49 Searing Gorge: around Jack Rockleg
-
 step
     .goto 77,45.57,20.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .turnin 28217 >>Turn in Wanted: The Demon Hunter
-    .target Feronas Sindweller
-    .isOnQuest 28217
-step
-    .goto 77,45.57,20.13
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .accept 28218 >>Accept A Destiny of Flame and Sorrow
     .target Feronas Sindweller
-    .isQuestTurnedIn 28217 --any of: Wanted: The Demon Hunter
 step
     .goto 77,45.27,19.63
     >>Kill |cRXP_ENEMY_Arthas|r
     .complete 28218,1 --Arthas slain (1)
     .mob Arthas
-    .isOnQuest 28218
 step
     .goto 77,45.57,20.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .turnin 28218 >>Turn in A Destiny of Flame and Sorrow
-    .target Feronas Sindweller
-    .isOnQuest 28218
-step
-    .goto 77,45.57,20.13
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .accept 28256 >>Accept The Skull of Gul'dan
     .target Feronas Sindweller
-    .isQuestTurnedIn 28218 --any of: A Destiny of Flame and Sorrow
 step
     .goto 77,45.07,19.60
     >>Relive Illidan's battle for the Skull of Gul'dan.
     .complete 28256,1 --Skull of Gul'dan
     .target Skull of Gul'dan
-    .isOnQuest 28256
 step
     .goto 77,45.57,20.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .turnin 28256 >>Turn in The Skull of Gul'dan
-    .target Feronas Sindweller
-    .isOnQuest 28256
-step
-    .goto 77,45.57,20.13
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .accept 28257 >>Accept The Fall of Tichondrius
     .target Feronas Sindweller
-    .isQuestTurnedIn 28256 --any of: The Skull of Gul'dan
 step
     .goto 77,45.13,19.70
     >>Kill |cRXP_ENEMY_Tichondrius|r
     .complete 28257,1 --Tichondrius slain (1)
     .mob Tichondrius
-    .isOnQuest 28257
 step
     .goto 77,45.57,20.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .turnin 28257 >>Turn in The Fall of Tichondrius
-    .target Feronas Sindweller
-    .isOnQuest 28257
-step
-    .goto 77,45.57,20.13
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .accept 28261 >>Accept Deceivers In Our Midst
     .target Feronas Sindweller
-    .isQuestTurnedIn 28257 --any of: The Fall of Tichondrius
 step
     #loop
     .goto 77,42.43,20.22,0
@@ -856,74 +815,52 @@ step
     >>Kill |cRXP_ENEMY_Jadefire Shifters|r
     .complete 28261,1 --Jadefire Shifter slain (12)
     .mob Jadefire Shifter
-    .isOnQuest 28261
 step
     .goto 77,45.57,20.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .turnin 28261 >>Turn in Deceivers In Our Midst
-    .target Feronas Sindweller
-    .isOnQuest 28261
-step
-    .goto 77,45.57,20.13
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .accept 28264 >>Accept Navarax's Gambit
     .target Feronas Sindweller
-    .isQuestTurnedIn 28261 --any of: Deceivers In Our Midst
 step
     .goto 77,49.48,21.79
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Flourishing Protector|r
     .accept 28224 >>Accept The Last Protector
     .target Flourishing Protector
-    .isQuestTurnedIn 28221 --These Roots Were Made For Stompin'
-    .isQuestTurnedIn 28222 --Singin' in the Sun
 step
     .goto 77,53.19,24.04
     >>Kill |cRXP_ENEMY_Withered Protector|r
     .complete 28224,1 --Withered Protector slain (1)
     .mob Withered Protector
-    .isOnQuest 28224
 step
     .goto 77,49.48,21.79
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Flourishing Protector|r
     .turnin 28224 >>Turn in The Last Protector
-    .target Flourishing Protector
-    .isOnQuest 28224
-step
-    .goto 77,49.48,21.79
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Flourishing Protector|r
     .accept 28228 >>Accept Rejoining the Forest
     .target Flourishing Protector
-    .isQuestTurnedIn 28224 --any of: The Last Protector
 step
     .goto 77,48.70,25.20
     >>Protector brought to hill
     .complete 28228,1 --Protector brought to hill
-    .isOnQuest 28228
 step
     .goto 77,48.66,25.16
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
     .turnin 28228 >>Turn in Rejoining the Forest
     .target ?
-    .isOnQuest 28228
 step
     .goto 77,44.76,29.18
     >>Kill |cRXP_ENEMY_Arch Druid Navarax|r
     .complete 28264,1 --Arch Druid Navarax slain (1)
     .mob Arch Druid Navarax
-    .isOnQuest 28264
 step
     .goto 77,43.45,28.19
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Huntress Selura|r
     .turnin 28264 >>Turn in Navarax's Gambit
     .target Huntress Selura
-    .isOnQuest 28264
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 77,44.33,28.06
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_James Hallow|r
     .accept 28381 >>Accept The Denmother
     .target James Hallow
-    .isQuestTurnedIn 28228 --Rejoining the Forest
-    .isQuestTurnedIn 28264 --Navarax's Gambit
 step
     .goto 77,56.33,8.18
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darla Drilldozer|r
@@ -1022,11 +959,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 77,61.84,26.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Denmother Ulrica|r
     .turnin 28381 >>Turn in The Denmother
-    .target Denmother Ulrica
-    .isOnQuest 28381
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 77,61.84,26.77
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Denmother Ulrica|r
     .accept 28382 >>Accept Enemy at our Roots
     .target Denmother Ulrica
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
@@ -1083,11 +1015,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 28385 >>Accept Oil and Irony
     .target Alton Redding
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along143
+    #completewith Along136
     >>As you go: Loot the |cRXP_PICK_Irontree Explosives|r for |cRXP_LOOT_Irontree Explosives|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28386,1 --Irontree Explosives (8)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along143
+    #label Along136
     .goto 77,60.49,22.38
     >>Click the |cRXP_PICK_Master Control Pump|r
     .turnin 28385 >>Turn in Oil and Irony
@@ -1298,23 +1230,10 @@ step
     >>|cRXP_FRIENDLY_Un'Goro Crater|r: Hero's Call: Un'Goro Crater! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Winterspring|r: Mystery Goo, Speak to Salfa, The Ruins of Kel'Theril, Strange Life Forces, Trailing the Spiritspeaker
     >>|cRXP_FRIENDLY_Winterspring|r: Hero's Call: Winterspring! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 49|r: |cRXP_FRIENDLY_Winterspring|r (about 1.8 levels of quests, starting around Donova Snowden; 2 quests from here hand in there), |cRXP_FRIENDLY_Tanaris|r (about 0.9 levels of quests, starting around Mazoga), |cRXP_FRIENDLY_Searing Gorge|r (about 0.8 levels of quests, starting around Jack Rockleg). Completing this step loads the guide for Winterspring --RouteBuilder:next
 step << Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior/Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter/Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue/Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage/Dwarf Paladin/Draenei Paladin/Human Priest/Dwarf Priest/NightElf Priest/Gnome Priest/Draenei Priest/Worgen Priest/Pandaren Priest/Dwarf Shaman/Draenei Shaman/Druid
-    +|cRXP_WARN_The rest of Felwood is planned from level 52.|r Load its guide for level 52 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior/Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter/Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue/Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage/Dwarf Paladin/Draenei Paladin/Human Priest/Dwarf Priest/NightElf Priest/Gnome Priest/Draenei Priest/Worgen Priest/Pandaren Priest/Dwarf Shaman/Draenei Shaman/Druid
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 46 - 53 Felwood
-#subweight -46
-#name 52-53 Felwood
---RouteBuilder:next
-#next Zone Routes (Alliance)\51-53 Un'Goro Crater: around Garl Stormclaw;Zone Routes (Alliance)\52-55 Winterspring: around Jez Goodgrub;Zone Routes (Alliance)\52-55 Swamp of Sorrows: around Trade Baron Silversnap
-
+    +|cRXP_WARN_Until level 52, suggested zones|r: |cRXP_FRIENDLY_Winterspring|r (about 1.8 levels of quests; 2 quests from here hand in there), |cRXP_FRIENDLY_Tanaris|r (about 0.9 levels of quests), |cRXP_FRIENDLY_Searing Gorge|r (about 0.8 levels of quests). Then come back to this Felwood guide --RouteBuilder:next
+step << Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior/Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter/Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue/Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage/Dwarf Paladin/Draenei Paladin/Human Priest/Dwarf Priest/NightElf Priest/Gnome Priest/Draenei Priest/Worgen Priest/Pandaren Priest/Dwarf Shaman/Draenei Shaman/Druid
+    .xp 52 >>|cRXP_WARN_The rest of Felwood is planned from level 52.|r Come back to this guide then
 step << Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior
     .goto 89,56.54,46.01
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arias'ta Bladesinger|r
@@ -1382,5 +1301,5 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: Meet with High Priestess Laurena << Human Priest/Dwarf Priest/NightElf Priest/Gnome Priest/Draenei Priest/Worgen Priest/Pandaren Priest
     >>|cRXP_FRIENDLY_Stormwind City|r: Meet with Farseer Umbrua << Dwarf Shaman/Draenei Shaman
 step
-    +|cRXP_WARN_Suggested next zones at level 52|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.8 levels of quests, starting around Garl Stormclaw), |cRXP_FRIENDLY_Winterspring|r (about 1.4 levels of quests, starting around Jez Goodgrub), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 1.0 levels of quests, starting around Trade Baron Silversnap). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 52|r: |cRXP_FRIENDLY_Winterspring|r (about 2.8 levels of quests; 2 quests from here hand in there), |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.8 levels of quests), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 1.0 levels of quests). Completing this step loads the guide for Winterspring --RouteBuilder:next
 ]])

@@ -1,9 +1,9 @@
 -- 1-30 Dun Morogh: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 8 parts (from level 1, 11, 14, 17, 21, 24, 27, 30).
--- Split into 9 guides, listed under "1 - 31 Dun Morogh" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 1; part 2 from 11; part 3 from 14; part 4 from 17; part 5 from 21; part 6 from 24; part 7 from 27; part 8 from 30.
 -- Edit zones/tbc/Dun Morogh.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 1 - 31 Dun Morogh
-#subweight -1
-#name 1-4 Dun Morogh: around Sten Stoutarm
-#next Zone Routes (Alliance)\4-9 Dun Morogh: around Alamar Grimm
+#name 1-30 Dun Morogh
+--RouteBuilder:next
+#next Zone Routes (Alliance)\30-50 Stranglethorn Vale;Zone Routes (Alliance)\20-31 Duskwood;Zone Routes (Alliance)\18-32 Ashenvale
 
 step
     .goto 1426/0,328.03,-6214.82
@@ -322,37 +321,29 @@ step
     .turnin 218 >>Turn in The Stolen Journal
     .accept 282 >>Accept Senir's Observations
     .target Grelin Whitebeard
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 31 Dun Morogh
-#subweight -1
-#name 4-9 Dun Morogh: around Alamar Grimm
---RouteBuilder:next
-#next Zone Routes (Alliance)\5-10 Elwynn Forest: around Marshal Dughan;Zone Routes (Alliance)\5-10 Azuremyst Isle: around Daedal;Zone Routes (Alliance)\8-11 Teldrassil: around Mathrengyl Bearwalker
-
 step
     .goto 1426/0,396.00,-6097.93
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Felix Whindlebolt|r
     .turnin 3361 >>Turn in A Refugee's Quandary
     .target Felix Whindlebolt
-    .isOnQuest 3361
-step << Dwarf Warrior
+step
     .goto 1426/0,382.21,-6084.80
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thran Khorman|r
-    .turnin 3106 >>Turn in Simple Rune
+    .turnin 3106 >>Turn in Simple Rune << Dwarf Warrior
+    .turnin 3112 >>Turn in Simple Memorandum << Gnome Warrior
     .target Thran Khorman
-    .isOnQuest 3106
-step << Dwarf Rogue
+step << Warrior
+    .goto 1426/0,382.11,-6084.86
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thran Khorman|r
+    .train 100 >> Train |T132337:0|t[Charge]
+    .train 772 >> Train |T132155:0|t[Rend]
+    .target Thran Khorman
+step
     .goto 1426/0,404.86,-6093.66
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Solm Hargrin|r
-    .turnin 3109 >>Turn in Encrypted Rune
+    .turnin 3109 >>Turn in Encrypted Rune << Dwarf Rogue
+    .turnin 3113 >>Turn in Encrypted Memorandum << Gnome Rogue
     .target Solm Hargrin
-    .isOnQuest 3109
 step << Rogue
     .goto 1426/0,404.91,-6093.76
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Solm Hargrin|r
@@ -362,11 +353,6 @@ step << Dwarf Priest
     .goto 1426/0,393.53,-6056.89
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Branstock Khalder|r
     .turnin 3110 >>Turn in Hallowed Rune
-    .target Branstock Khalder
-    .isOnQuest 3110
-step << Dwarf Priest
-    .goto 1426/0,393.53,-6056.89
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Branstock Khalder|r
     .accept 5626 >>Accept In Favor of the Light
     .target Branstock Khalder
 step << Priest
@@ -377,30 +363,11 @@ step << Priest
     .train 2052 >> Train |T135929:0|t[Lesser Heal] (Rank 2) << Dwarf
     .trainer >> Train your class spells
     .target Branstock Khalder
-step << Gnome Warrior
-    .goto 1426/0,382.21,-6084.80
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thran Khorman|r
-    .turnin 3112 >>Turn in Simple Memorandum
-    .target Thran Khorman
-    .isOnQuest 3112
-step << Warrior
-    .goto 1426/0,382.11,-6084.86
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thran Khorman|r
-    .train 100 >> Train |T132337:0|t[Charge]
-    .train 772 >> Train |T132155:0|t[Rend]
-    .target Thran Khorman
-step << Gnome Rogue
-    .goto 1426/0,404.86,-6093.66
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Solm Hargrin|r
-    .turnin 3113 >>Turn in Encrypted Memorandum
-    .target Solm Hargrin
-    .isOnQuest 3113
 step << Gnome Mage
     .goto 1426/0,388.12,-6056.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marryk Nurribit|r
     .turnin 3114 >>Turn in Glyphic Memorandum
     .target Marryk Nurribit
-    .isOnQuest 3114
 step << Mage
     .goto 1426/0,388.17,-6056.10
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marryk Nurribit|r inside
@@ -411,14 +378,8 @@ step
     .goto 1426/0,153.19,-6235.83
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mountaineer Thalos|r
     .turnin 282 >>Turn in Senir's Observations
-    .target Mountaineer Thalos
-    .isOnQuest 282
-step
-    .goto 1426/0,153.19,-6235.83
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mountaineer Thalos|r
     .accept 420 >>Accept Senir's Observations
     .target Mountaineer Thalos
-    .isQuestTurnedIn 282 --any of: Senir's Observations
 step
     .goto 1426/0,134.97,-6248.96
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hands Springsprocket|r
@@ -436,7 +397,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Senir Whitebeard|r
     .turnin 420 >>Turn in Senir's Observations
     .target Senir Whitebeard
-    .isOnQuest 420
 step
     .goto 1426/0,-576.69,-5748.58
     .xp 5+2690 >> Grind to 2690+/2800xp << !Warlock !Priest
@@ -537,7 +497,7 @@ step
     .accept 317 >>Accept Stocking Jetsteam
     .target Pilot Bellowfiz
 step
-    #completewith Along48
+    #completewith Along44
     >>As you go: Kill |cRXP_ENEMY_Crag Boars|r, |cRXP_ENEMY_Large Crag Boars|r, |cRXP_ENEMY_Elder Crag Boars|r and |cRXP_ENEMY_Scarred Crag Boars|r. Loot them for |cRXP_LOOT_Chunk of Boar Meat|r. |cRXP_WARN_Anything left is finished later|r
     .complete 317,1 --Chunk of Boar Meat (4)
     .mob Crag Boar
@@ -555,7 +515,7 @@ step
     .turnin 400 >>Turn in Tools for Steelgrill
     .target Beldin Steelgrill
 step
-    #label Along48
+    #label Along44
     .goto 1426/0,-664.36,-5499.71
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Loslor Rudge|r
     .accept 5541 >>Accept Ammo for Rumbleshot
@@ -1226,22 +1186,9 @@ step
     +|cRXP_WARN_That is all of Dun Morogh for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Loch Modan|r: Stout to Kadrell
 step
-    +|cRXP_WARN_Suggested next zones at level 8|r: |cRXP_FRIENDLY_Elwynn Forest|r (about 2.4 levels of quests, starting around Marshal Dughan), |cRXP_FRIENDLY_Azuremyst Isle|r (about 2.0 levels of quests, starting around Daedal), |cRXP_FRIENDLY_Teldrassil|r (about 1.4 levels of quests, starting around Mathrengyl Bearwalker). Completing this step loads the guide for Elwynn Forest --RouteBuilder:next
+    +|cRXP_WARN_Until level 11, suggested zones|r: |cRXP_FRIENDLY_Teldrassil|r (about 2.9 levels of quests), |cRXP_FRIENDLY_Elwynn Forest|r (about 2.8 levels of quests), |cRXP_FRIENDLY_Azuremyst Isle|r (about 2.4 levels of quests). Then come back to this Dun Morogh guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Dun Morogh is planned from level 11.|r Load its guide for level 11 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 31 Dun Morogh
-#subweight -1
-#name 11-12 Dun Morogh
---RouteBuilder:next
-#next Zone Routes (Alliance)\10-15 Darkshore: around Thundris Windweaver;Zone Routes (Alliance)\5-10 Elwynn Forest: around Marshal Dughan;Zone Routes (Alliance)\5-10 Azuremyst Isle: around Daedal
-
+    .xp 11 >>|cRXP_WARN_The rest of Dun Morogh is planned from level 11.|r Come back to this guide then
 step << Dwarf Hunter
     #completewith next
     .zone 1455 >>Travel to Ironforge
@@ -1607,22 +1554,9 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: Desperate Prayer << Human Priest/Dwarf Priest
     >>|cRXP_FRIENDLY_Teldrassil|r: The Hunter's Path << NightElf Hunter
 step
-    +|cRXP_WARN_Suggested next zones at level 11|r: |cRXP_FRIENDLY_Darkshore|r (about 2.1 levels of quests, starting around Thundris Windweaver), |cRXP_FRIENDLY_Elwynn Forest|r (about 1.6 levels of quests, starting around Marshal Dughan), |cRXP_FRIENDLY_Azuremyst Isle|r (about 1.3 levels of quests, starting around Daedal). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 14, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 2.1 levels of quests), |cRXP_FRIENDLY_Teldrassil|r (about 1.9 levels of quests), |cRXP_FRIENDLY_Elwynn Forest|r (about 1.8 levels of quests). Then come back to this Dun Morogh guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Dun Morogh is planned from level 14.|r Load its guide for level 14 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 31 Dun Morogh
-#subweight -1
-#name 14-15 Dun Morogh
---RouteBuilder:next
-#next Zone Routes (Alliance)\10-15 Darkshore: around Thundris Windweaver;Zone Routes (Alliance)\14-18 Bloodmyst Isle: around Vindicator Boros;Zone Routes (Alliance)\10-13 Westfall: around Farmer Saldean
-
+    .xp 14 >>|cRXP_WARN_The rest of Dun Morogh is planned from level 14.|r Come back to this guide then
 step << Human Paladin
     #completewith next
     .zone 1455 >>Travel to Ironforge
@@ -1834,22 +1768,9 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: Tome of Divinity << Human Paladin
     >>|cRXP_FRIENDLY_Hillsbrad Foothills and back here|r: A Donation of Wool, A Donation of Wool
 step
-    +|cRXP_WARN_Suggested next zones at level 14|r: |cRXP_FRIENDLY_Darkshore|r (about 1.8 levels of quests, starting around Thundris Windweaver), |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.6 levels of quests, starting around Vindicator Boros), |cRXP_FRIENDLY_Westfall|r (about 0.9 levels of quests, starting around Farmer Saldean). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 17, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 1.8 levels of quests), |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Westfall|r (about 0.9 levels of quests). Then come back to this Dun Morogh guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Dun Morogh is planned from level 17.|r Load its guide for level 17 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 31 Dun Morogh
-#subweight -1
-#name 17-18 Dun Morogh
---RouteBuilder:next
-#next Zone Routes (Alliance)\14-18 Bloodmyst Isle: around Vindicator Boros;Zone Routes (Alliance)\17-19 Darkshore: around Terenthis;Zone Routes (Alliance)\14-15 Loch Modan
-
+    .xp 17 >>|cRXP_WARN_The rest of Dun Morogh is planned from level 17.|r Come back to this guide then
 step << Rogue
     .goto 1426/0,-540.25,-5604.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hogral Bakkan|r
@@ -1893,22 +1814,9 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: Speak with Shoni
     >>|cRXP_FRIENDLY_Stormwind City|r: Kingly Shakedown << Rogue
 step
-    +|cRXP_WARN_Suggested next zones at level 17|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.6 levels of quests, starting around Vindicator Boros), |cRXP_FRIENDLY_Darkshore|r (about 0.9 levels of quests, starting around Terenthis), |cRXP_FRIENDLY_Loch Modan|r (about 0.5 levels of quests). Completing this step loads the guide for Bloodmyst Isle --RouteBuilder:next
+    +|cRXP_WARN_Until level 21, suggested zones|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Darkshore|r (about 0.9 levels of quests), |cRXP_FRIENDLY_Loch Modan|r (about 0.5 levels of quests). Then come back to this Dun Morogh guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Dun Morogh is planned from level 21.|r Load its guide for level 21 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 31 Dun Morogh
-#subweight -1
-#name 21-22 Dun Morogh
---RouteBuilder:next
-#next Zone Routes (Alliance)\20-21 Duskwood: around Elaine Carevin
-
+    .xp 21 >>|cRXP_WARN_The rest of Dun Morogh is planned from level 21.|r Come back to this guide then
 step
     #completewith next
     .zone 1455 >>Travel to Ironforge
@@ -2075,22 +1983,9 @@ step
     >>|cRXP_FRIENDLY_The Exodar|r: Call of Water << Draenei Shaman
     >>|cRXP_FRIENDLY_Wetlands and back here|r: Search for Incendicite
 step
-    +|cRXP_WARN_Suggested next zones at level 21|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests, starting around Elaine Carevin). Completing this step loads the guide for Duskwood --RouteBuilder:next
+    +|cRXP_WARN_Until level 24, suggested zones|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests). Then come back to this Dun Morogh guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Dun Morogh is planned from level 24.|r Load its guide for level 24 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 31 Dun Morogh
-#subweight -1
-#name 24-25 Dun Morogh
---RouteBuilder:next
-#next Zone Routes (Alliance)\24-25 Duskwood: around Clerk Daltry
-
+    .xp 24 >>|cRXP_WARN_The rest of Dun Morogh is planned from level 24.|r Come back to this guide then
 step
     .goto 1426/0,-458.00,-5498.39
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ozzie Togglevolt|r
@@ -2206,22 +2101,9 @@ step
     >>|cRXP_FRIENDLY_Alterac Mountains|r: The Manor, Ravenholdt << Rogue
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Only Cure is More Green Glow
 step
-    +|cRXP_WARN_Suggested next zones at level 24|r: |cRXP_FRIENDLY_Duskwood|r (about 0.7 levels of quests, starting around Clerk Daltry). Completing this step loads the guide for Duskwood --RouteBuilder:next
+    +|cRXP_WARN_Until level 27, suggested zones|r: |cRXP_FRIENDLY_Duskwood|r (about 0.7 levels of quests). Then come back to this Dun Morogh guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Dun Morogh is planned from level 27.|r Load its guide for level 27 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 31 Dun Morogh
-#subweight -1
-#name 27-28 Dun Morogh
---RouteBuilder:next
-#next Zone Routes (Alliance)\27-29 Ashenvale: around Sentinel Melyria Frostshadow;Zone Routes (Alliance)\24-25 Duskwood: around Clerk Daltry
-
+    .xp 27 >>|cRXP_WARN_The rest of Dun Morogh is planned from level 27.|r Come back to this guide then
 step
     .goto 1455/0,-1055.30,-4735.81
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mistina Steelshield|r
@@ -2371,22 +2253,9 @@ step
     >>|cRXP_FRIENDLY_Hillsbrad Foothills and back here|r: A Donation of Silk, A Donation of Silk
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Essential Artificials, Data Rescue
 step
-    +|cRXP_WARN_Suggested next zones at level 27|r: |cRXP_FRIENDLY_Ashenvale|r (about 0.7 levels of quests, starting around Sentinel Melyria Frostshadow), |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests, starting around Clerk Daltry). Completing this step loads the guide for Ashenvale --RouteBuilder:next
+    +|cRXP_WARN_Until level 30, suggested zones|r: |cRXP_FRIENDLY_Ashenvale|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests). Then come back to this Dun Morogh guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Dun Morogh is planned from level 30.|r Load its guide for level 30 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 31 Dun Morogh
-#subweight -1
-#name 30-31 Dun Morogh
---RouteBuilder:next
-#next Zone Routes (Alliance)\30-32 Stranglethorn Vale: around Krazek;Zone Routes (Alliance)\28-29 Duskwood: around Sirra Von'Indi;Zone Routes (Alliance)\27-29 Ashenvale: around Sentinel Melyria Frostshadow
-
+    .xp 30 >>|cRXP_WARN_The rest of Dun Morogh is planned from level 30.|r Come back to this guide then
 step
     .goto 1455/0,-1055.30,-4735.81
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mistina Steelshield|r
@@ -2467,5 +2336,5 @@ step
     +|cRXP_WARN_End of the Dun Morogh route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Thousand Needles|r: The Brassbolts Brothers
 step
-    +|cRXP_WARN_Suggested next zones at level 30|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests, starting around Krazek), |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests, starting around Sirra Von'Indi), |cRXP_FRIENDLY_Ashenvale|r (about 0.6 levels of quests, starting around Sentinel Melyria Frostshadow). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 30|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests), |cRXP_FRIENDLY_Ashenvale|r (about 0.6 levels of quests). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
 ]])

@@ -1,9 +1,9 @@
 -- 71-74 Borean Tundra: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 71, 76).
--- Split into 2 guides, listed under "71 - 77 Borean Tundra" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 71; part 2 from 76.
 -- Edit zones/mop/Borean Tundra.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 71 - 77 Borean Tundra
-#subweight -71
-#name 71-74 Borean Tundra: around Elder Atkanok
+#name 71-74 Borean Tundra
 --RouteBuilder:next
-#next Zone Routes (Alliance)\72-74 Dragonblight: around Aurastrasza;Zone Routes (Alliance)\70-73 Howling Fjord: around Lurielle;Zone Routes (Alliance)\73-75 Grizzly Hills: around Drakuru
+#next Zone Routes (Alliance)\76-78 Sholazar Basin;Zone Routes (Alliance)\70-72 Howling Fjord;Zone Routes (Alliance)\73-75 Grizzly Hills
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 114,58.96,68.29
@@ -2474,23 +2472,10 @@ step
     >>|cRXP_FRIENDLY_Teldrassil|r: Return to Nyoma << NightElf
     >>|cRXP_FRIENDLY_Un'Goro Crater|r: Hero's Call: Un'Goro Crater! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Winterspring|r: Hero's Call: Winterspring! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 73|r: |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests, starting around Aurastrasza; 1 quest from here hands in there), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests, starting around Lurielle), |cRXP_FRIENDLY_Grizzly Hills|r (about 0.5 levels of quests, starting around Drakuru). Completing this step loads the guide for Dragonblight --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of Borean Tundra is planned from level 76.|r Load its guide for level 76 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 71 - 77 Borean Tundra
-#subweight -71
-#name 76-77 Borean Tundra
---RouteBuilder:next
-#next Zone Routes (Alliance)\76-78 Sholazar Basin;Zone Routes (Alliance)\70-73 Howling Fjord: around Lurielle;Zone Routes (Alliance)\73-75 Grizzly Hills: around Drakuru
-
+    +|cRXP_WARN_Until level 76, suggested zones|r: |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests), |cRXP_FRIENDLY_Grizzly Hills|r (about 0.5 levels of quests). Then come back to this Borean Tundra guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 76 >>|cRXP_WARN_The rest of Borean Tundra is planned from level 76.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 114,58.58,68.29
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magister Dath'omere|r
@@ -2500,5 +2485,5 @@ step
     +|cRXP_WARN_End of the Borean Tundra route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Dalaran - (Dungeon/Raid)|r: The Magical Kingdom of Dalaran << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 76|r: |cRXP_FRIENDLY_Sholazar Basin|r (about 1.1 levels of quests, starting around Debaar), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests, starting around Lurielle), |cRXP_FRIENDLY_Grizzly Hills|r (about 0.5 levels of quests, starting around Drakuru). Completing this step loads the guide for Sholazar Basin --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 76|r: |cRXP_FRIENDLY_Sholazar Basin|r (about 1.1 levels of quests), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests), |cRXP_FRIENDLY_Grizzly Hills|r (about 0.5 levels of quests). Completing this step loads the guide for Sholazar Basin --RouteBuilder:next
 ]])

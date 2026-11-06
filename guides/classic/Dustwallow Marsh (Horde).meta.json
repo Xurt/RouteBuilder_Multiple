@@ -13,12 +13,12 @@
       "start": 35,
       "end": 35.53,
       "next": 38,
-      "guide": "35-36 Dustwallow Marsh: around Nazeer Bloodpike",
+      "guide": "35-46 Dustwallow Marsh",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Nazeer Bloodpike",
-          "guide": "35-36 Dustwallow Marsh: around Nazeer Bloodpike",
+          "label": "",
+          "name": "start",
+          "guide": "35-46 Dustwallow Marsh",
           "level": 35,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 38,
       "end": 38.1,
       "next": 41,
-      "guide": "38-39 Dustwallow Marsh",
+      "guide": "35-46 Dustwallow Marsh",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "38-39 Dustwallow Marsh",
+          "guide": "35-46 Dustwallow Marsh",
           "level": 38,
           "index": 0
         }
@@ -45,12 +45,12 @@
       "start": 41,
       "end": 41.33,
       "next": 44,
-      "guide": "41-42 Dustwallow Marsh: around Overlord Mok\u0027Morokk",
+      "guide": "35-46 Dustwallow Marsh",
       "sections": [
         {
-          "label": "RBSection3_1",
-          "name": "around Overlord Mok\u0027Morokk",
-          "guide": "41-42 Dustwallow Marsh: around Overlord Mok\u0027Morokk",
+          "label": "",
+          "name": "part 3",
+          "guide": "35-46 Dustwallow Marsh",
           "level": 41,
           "index": 0
         }
@@ -60,12 +60,12 @@
       "part": 4,
       "start": 44,
       "end": 44.09,
-      "guide": "44-45 Dustwallow Marsh",
+      "guide": "35-46 Dustwallow Marsh",
       "sections": [
         {
-          "label": "RBSection4_1",
+          "label": "",
           "name": "part 4",
-          "guide": "44-45 Dustwallow Marsh",
+          "guide": "35-46 Dustwallow Marsh",
           "level": 44,
           "index": 0
         }

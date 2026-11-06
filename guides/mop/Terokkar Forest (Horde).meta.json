@@ -13,12 +13,12 @@
       "start": 62,
       "end": 64.33,
       "next": 68,
-      "guide": "62-65 Terokkar Forest: around Earthbinder Tavgren",
+      "guide": "62-70 Terokkar Forest",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Earthbinder Tavgren",
-          "guide": "62-65 Terokkar Forest: around Earthbinder Tavgren",
+          "label": "",
+          "name": "start",
+          "guide": "62-70 Terokkar Forest",
           "level": 62,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 68,
       "end": 68,
       "next": 71,
-      "guide": "68-69 Terokkar Forest",
+      "guide": "62-70 Terokkar Forest",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "68-69 Terokkar Forest",
+          "guide": "62-70 Terokkar Forest",
           "level": 68,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 71,
       "end": 71,
-      "guide": "71-72 Terokkar Forest",
+      "guide": "62-70 Terokkar Forest",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "71-72 Terokkar Forest",
+          "guide": "62-70 Terokkar Forest",
           "level": 71,
           "index": 0
         }

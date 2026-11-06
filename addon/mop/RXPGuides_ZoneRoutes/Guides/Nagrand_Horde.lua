@@ -1,9 +1,9 @@
 -- 65-68 Nagrand: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 65, 69).
--- Split into 2 guides, listed under "65 - 70 Nagrand" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 65; part 2 from 69.
 -- Edit zones/mop/Nagrand.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 65 - 70 Nagrand
-#subweight -65
-#name 65-67 Nagrand: around Hemet Nesingwary
+#name 65-68 Nagrand
 --RouteBuilder:next
-#next Zone Routes (Horde)\62-65 Terokkar Forest: around Earthbinder Tavgren
+#next Zone Routes (Horde)\68-70 Netherstorm;Zone Routes (Horde)\70-72 Howling Fjord
 
 step
     .goto 107,71.40,40.60
@@ -1061,22 +1059,9 @@ step
     >>|cRXP_FRIENDLY_Terokkar Forest|r: Levixus the Soul Caller
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Bring Me The Egg!
 step
-    +|cRXP_WARN_Suggested next zones at level 66|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.7 levels of quests, starting around Earthbinder Tavgren; 2 quests from here hand in there). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
+    +|cRXP_WARN_Until level 69, suggested zones|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.7 levels of quests; 2 quests from here hand in there). Then come back to this Nagrand guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Nagrand is planned from level 69.|r Load its guide for level 69 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 65 - 70 Nagrand
-#subweight -65
-#name 69-70 Nagrand: around Altruis the Sufferer
---RouteBuilder:next
-#next Zone Routes (Horde)\68-70 Netherstorm: around Image of Archmage Vargoth;Zone Routes (Horde)\70-72 Howling Fjord: around Lurielle
-
+    .xp 69 >>|cRXP_WARN_The rest of Nagrand is planned from level 69.|r Come back to this guide then
 step
     .goto 107,61.34,66.98
     >>Click the |cRXP_PICK_Mysterious Egg|r
@@ -1436,5 +1421,5 @@ step
     >>|cRXP_FRIENDLY_Shattrath City|r: Patience and Understanding
     >>|cRXP_FRIENDLY_Shattrath City|r: A Secret Revealed << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 69|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.3 levels of quests, starting around Image of Archmage Vargoth), |cRXP_FRIENDLY_Howling Fjord|r (about 0.6 levels of quests, starting around Lurielle). Completing this step loads the guide for Netherstorm --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 69|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.3 levels of quests), |cRXP_FRIENDLY_Howling Fjord|r (about 0.6 levels of quests). Completing this step loads the guide for Netherstorm --RouteBuilder:next
 ]])

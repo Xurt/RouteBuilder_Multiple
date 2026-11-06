@@ -1,7 +1,7 @@
 Swamp of Sorrows - Alliance - part 1 of 4, planned from level 35
 Guide "35-52 Swamp of Sorrows" in group "Zone Routes (Alliance)": this part has 16 steps, 15 stops
 Written to guides/tbc/Swamp of Sorrows (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -68,7 +68,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Swamp of Sorrows - Alliance - part 2 of 4, planned from level 39
 Guide "35-52 Swamp of Sorrows" in group "Zone Routes (Alliance)": this part has 7 steps, 5 stops
 Written to guides/tbc/Swamp of Sorrows (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -125,7 +125,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Swamp of Sorrows - Alliance - part 3 of 4, planned from level 42
 Guide "35-52 Swamp of Sorrows" in group "Zone Routes (Alliance)": this part has 4 steps, 3 stops
 Written to guides/tbc/Swamp of Sorrows (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -174,7 +174,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Swamp of Sorrows - Alliance - part 4 of 4, planned from level 51
 Guide "35-52 Swamp of Sorrows" in group "Zone Routes (Alliance)": this part has 9 steps, 8 stops
 Written to guides/tbc/Swamp of Sorrows (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

@@ -1,9 +1,9 @@
 -- 20-25 Hillsbrad Foothills: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 20, 24).
--- Split into 2 guides, listed under "20 - 25 Hillsbrad Foothills" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 20; part 2 from 24.
 -- Edit zones/mop/Hillsbrad Foothills.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,9 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 20 - 25 Hillsbrad Foothills
-#subweight -20
-#name 20-22 Hillsbrad Foothills: around Helcular
+#name 20-25 Hillsbrad Foothills
+--RouteBuilder:next
+#next Zone Routes (Alliance)\25-30 Northern Stranglethorn
 
 step
     .goto 25,29.24,63.34
@@ -387,20 +387,9 @@ step
     .turnin 28487 >>Turn in Humbert's Personal Problems
     .target Deathguard Humbert
 step
-    +|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 24.|r Load its guide for level 24 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 20 - 25 Hillsbrad Foothills
-#subweight -20
-#name 24-25 Hillsbrad Foothills
---RouteBuilder:next
-#next Zone Routes (Alliance)\25-30 Northern Stranglethorn
-
+    +|cRXP_WARN_Until level 24, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 0.5 levels of quests). Then come back to this Hillsbrad Foothills guide --RouteBuilder:next
+step
+    .xp 24 >>|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 24.|r Come back to this guide then
 step
     .goto 25,57.19,45.52
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Deathguard Samsa|r
@@ -429,5 +418,5 @@ step
 step
     +|cRXP_WARN_End of the Hillsbrad Foothills route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 24|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.5 levels of quests, starting around Hemet Nesingwary Jr.). Completing this step loads the guide for Northern Stranglethorn --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 24|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.5 levels of quests). Completing this step loads the guide for Northern Stranglethorn --RouteBuilder:next
 ]])

@@ -1,7 +1,7 @@
 Eversong Woods - Horde - part 1 of 3, planned from level 1
-Guide "1-12 Eversong Woods" in group "Zone Routes (Horde)": this part has 338 steps, 172 stops
+Guide "1-12 Eversong Woods" in group "Zone Routes (Horde)": this part has 324 steps, 159 stops
 Written to guides/tbc/Eversong Woods (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1110 objective notes read from 57 guide files
@@ -40,7 +40,7 @@ The check passes at once if you are there; if you are a little behind the predic
 122 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
 3 training, vendor and flight-path steps taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
 15 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
-7 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
+6 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 4 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 
 Quests in the guide (98)
@@ -113,7 +113,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Eversong Woods - Horde - part 2 of 3, planned from level 13
 Guide "1-12 Eversong Woods" in group "Zone Routes (Horde)": this part has 16 steps, 10 stops
 Written to guides/tbc/Eversong Woods (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1110 objective notes read from 57 guide files
@@ -174,7 +174,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Eversong Woods - Horde - part 3 of 3, planned from level 28
 Guide "1-12 Eversong Woods" in group "Zone Routes (Horde)": this part has 12 steps, 8 stops
 Written to guides/tbc/Eversong Woods (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1110 objective notes read from 57 guide files

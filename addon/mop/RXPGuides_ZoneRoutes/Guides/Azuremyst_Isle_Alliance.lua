@@ -1,9 +1,9 @@
 -- 1-12 Azuremyst Isle: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 1, 11).
--- Split into 2 guides, listed under "1 - 12 Azuremyst Isle" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 1; part 2 from 11.
 -- Edit zones/mop/Azuremyst Isle.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,9 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 1 - 12 Azuremyst Isle
-#subweight -1
-#name 1-9 Azuremyst Isle
+#name 1-12 Azuremyst Isle
+--RouteBuilder:next
+#next Zone Routes (Alliance)\10-20 Darkshore;Zone Routes (Alliance)\11-20 Loch Modan
 
 step << Draenei
     .xp 5 >>Grind to level 5 (The Prophecy of Velen needs it)
@@ -808,20 +808,7 @@ step
     +|cRXP_WARN_That is all of Azuremyst Isle for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Ammen Vale|r: You Survived! << Draenei
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren/Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior
-    +|cRXP_WARN_The rest of Azuremyst Isle is planned from level 11.|r Load its guide for level 11 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren/Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 12 Azuremyst Isle
-#subweight -1
-#name 11-12 Azuremyst Isle
---RouteBuilder:next
-#next Zone Routes (Alliance)\10-13 Darkshore: around Ranger Glynda Nal'Shea;Zone Routes (Alliance)\11-15 Loch Modan: around Captain Rugelfuss
-
+    .xp 11 >>|cRXP_WARN_The rest of Azuremyst Isle is planned from level 11.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 97,46.97,22.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kurz the Revelator|r
@@ -923,5 +910,5 @@ step
     +|cRXP_WARN_End of the Azuremyst Isle route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Bloodmyst Isle|r: Elekks Are Serious Business << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 11|r: |cRXP_FRIENDLY_Darkshore|r (about 1.0 levels of quests, starting around Ranger Glynda Nal'Shea), |cRXP_FRIENDLY_Loch Modan|r (about 0.7 levels of quests, starting around Captain Rugelfuss). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 11|r: |cRXP_FRIENDLY_Darkshore|r (about 1.0 levels of quests), |cRXP_FRIENDLY_Loch Modan|r (about 0.7 levels of quests). Completing this step loads the guide for Darkshore --RouteBuilder:next
 ]])

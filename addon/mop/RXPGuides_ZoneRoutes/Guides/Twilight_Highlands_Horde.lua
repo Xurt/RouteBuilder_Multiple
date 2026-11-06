@@ -1,9 +1,9 @@
 -- 85-85 Twilight Highlands: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 85, 88).
--- Split into 2 guides, listed under "85 - 89 Twilight Highlands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 85; part 2 from 88.
 -- Edit zones/mop/Twilight Highlands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 85 - 89 Twilight Highlands
-#subweight -85
-#name 85-86 Twilight Highlands: around Gurgthock
+#name 85-85 Twilight Highlands
 
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 241,82.50,49.83
@@ -1313,18 +1311,7 @@ step
     >>|cRXP_FRIENDLY_Deepholm|r: Deepholm, Realm of Earth
     >>|cRXP_FRIENDLY_Orgrimmar|r: The Warchief Will be Pleased << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_The rest of Twilight Highlands is planned from level 88.|r Load its guide for level 88 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 85 - 89 Twilight Highlands
-#subweight -85
-#name 88-89 Twilight Highlands: around Calen
-
+    .xp 88 >>|cRXP_WARN_The rest of Twilight Highlands is planned from level 88.|r Come back to this guide then
 step
     .goto 241,48.70,16.63
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Earthcaller Yevaa|r

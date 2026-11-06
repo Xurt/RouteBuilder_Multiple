@@ -1,9 +1,9 @@
 -- 52-58 Western Plaguelands: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 52, 55).
--- Split into 2 guides, listed under "52 - 56 Western Plaguelands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 52; part 2 from 55.
 -- Edit zones/tbc/Western Plaguelands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 52 - 56 Western Plaguelands
-#subweight -52
-#name 52-53 Western Plaguelands
+#name 52-58 Western Plaguelands
 --RouteBuilder:next
-#next Zone Routes (Horde)\50-52 Un'Goro Crater: around Torwa Pathfinder
+#next Zone Routes (Horde)\55-60 Eastern Plaguelands
 
 step
     .goto 1422/0,-1171.32,1720.91
@@ -204,22 +202,9 @@ step
     >>|cRXP_FRIENDLY_Tirisfal Glades|r: Return to the Bulwark, Return to the Bulwark, Return to the Bulwark, A Plague Upon Thee, Return to the Bulwark
     >>|cRXP_FRIENDLY_Undercity|r: Better Late Than Never
 step
-    +|cRXP_WARN_Suggested next zones at level 52|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.6 levels of quests, starting around Torwa Pathfinder). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
+    +|cRXP_WARN_Until level 55, suggested zones|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.6 levels of quests). Then come back to this Western Plaguelands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Western Plaguelands is planned from level 55.|r Load its guide for level 55 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 52 - 56 Western Plaguelands
-#subweight -52
-#name 55-56 Western Plaguelands
---RouteBuilder:next
-#next Zone Routes (Horde)\55-56 Eastern Plaguelands: around Tirion Fordring
-
+    .xp 55 >>|cRXP_WARN_The rest of Western Plaguelands is planned from level 55.|r Come back to this guide then
 step
     .goto 1422/0,-1619.38,1943.94
     >>Click the |cRXP_PICK_Locked Cabinet|r
@@ -444,5 +429,5 @@ step
     >>|cRXP_FRIENDLY_Eastern Plaguelands|r: Brother Carlin, Demon Dogs, Blood Tinged Skies, Carrion Grubbage, The Battle of Darrowshire
     >>|cRXP_FRIENDLY_Thunder Bluff|r: Glyphed Oaken Branch
 step
-    +|cRXP_WARN_Suggested next zones at level 55|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 0.7 levels of quests, starting around Tirion Fordring; 3 quests from here hand in there). Completing this step loads the guide for Eastern Plaguelands --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 55|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 0.7 levels of quests; 3 quests from here hand in there). Completing this step loads the guide for Eastern Plaguelands --RouteBuilder:next
 ]])

@@ -1,9 +1,9 @@
 -- 44-48 The Hinterlands: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 44, 47).
--- Split into 2 guides, listed under "44 - 48 The Hinterlands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 44; part 2 from 47.
 -- Edit zones/tbc/The Hinterlands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 44 - 48 The Hinterlands
-#subweight -44
-#name 44-45 The Hinterlands: around Ambassador Rualeth
+#name 44-48 The Hinterlands
 --RouteBuilder:next
-#next Zone Routes (Alliance)\42-43 Stranglethorn Vale: around "Sea Wolf" MacKinley
+#next Zone Routes (Alliance)\43-52 Searing Gorge
 
 step
     .goto 1425/0,-2029.69,266.49
@@ -234,22 +232,9 @@ step
     +|cRXP_WARN_That is all of The Hinterlands for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Stormwind City|r: Rhapsody's Tale
 step
-    +|cRXP_WARN_Suggested next zones at level 44|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests, starting around "Sea Wolf" MacKinley). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Until level 47, suggested zones|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests). Then come back to this The Hinterlands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of The Hinterlands is planned from level 47.|r Load its guide for level 47 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 44 - 48 The Hinterlands
-#subweight -44
-#name 47-48 The Hinterlands
---RouteBuilder:next
-#next Zone Routes (Alliance)\46-47 Searing Gorge: around Hansel Heavyhands
-
+    .xp 47 >>|cRXP_WARN_The rest of The Hinterlands is planned from level 47.|r Come back to this guide then
 step
     .goto 1425/0,-2145.96,322.70
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fraggar Thundermantle|r
@@ -349,5 +334,5 @@ step
     >>|cRXP_FRIENDLY_Blasted Lands|r: Thadius Grimshade
     >>|cRXP_FRIENDLY_Stranglethorn Vale|r: Rescue OOX-09/HL!
 step
-    +|cRXP_WARN_Suggested next zones at level 47|r: |cRXP_FRIENDLY_Searing Gorge|r (about 0.5 levels of quests, starting around Hansel Heavyhands). Completing this step loads the guide for Searing Gorge --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 47|r: |cRXP_FRIENDLY_Searing Gorge|r (about 0.5 levels of quests). Completing this step loads the guide for Searing Gorge --RouteBuilder:next
 ]])

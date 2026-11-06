@@ -1,9 +1,9 @@
 -- 10-27 The Barrens: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 4 parts (from level 10, 18, 22, 25).
--- Split into 5 guides, listed under "10 - 26 The Barrens" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 10; part 2 from 18; part 3 from 22; part 4 from 25.
 -- Edit zones/classic/The Barrens.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,10 +13,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 10 - 26 The Barrens
-#subweight -10
-#name 10-12 The Barrens: around Sergra Darkthorn
-#next Zone Routes (Horde)\12-16 The Barrens: around Gazlowe
+#name 10-27 The Barrens
 
 step << !Druid
     .goto 1413/1,-1881.35,-2383.82
@@ -628,35 +625,17 @@ step << Rogue
     .turnin 2382 >>Turn in Wrenix of Ratchet
     .target Wrenix the Wretched
     .isOnQuest 2382
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 26 The Barrens
-#subweight -10
-#name 12-16 The Barrens: around Gazlowe
-
 step
     .goto 1413/1,-3759.06,-902.18
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sputtervalve|r
     .turnin 902 >>Turn in Samophlange
-    .target Sputtervalve
-    .isOnQuest 902
-step
-    .goto 1413/1,-3759.06,-902.18
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sputtervalve|r
     .accept 3921 >>Accept Wenikee Boltbucket
     .target Sputtervalve
-    .isQuestTurnedIn 902 --any of: Samophlange
 step
     .goto 1413/1,-3796.55,-985.28
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wharfmaster Dizzywig|r
     .turnin 896 >>Turn in Miner's Fortune
     .target Wharfmaster Dizzywig
-    .isOnQuest 896
 step
     .goto 1413/1,-3697.24,-929.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mebok Mizzyrix|r
@@ -683,42 +662,30 @@ step
     .mob Sunscale Lashtail
     .mob Sunscale Screecher
     .mob Sunscale Scytheclaw
-    .isOnQuest 905
 step
     .goto 1413/1,-3819.86,-1714.95
     >>Open the |cRXP_PICK_Fragile - Do Not Drop|r. Loot it for |cRXP_LOOT_Telescopic Lens|r
-    .complete 888,2 --Telescopic Lens (1)
-    .isOnQuest 888
-step
-    .goto 1413/1,-3723.59,-1740.63
     >>Open the |cRXP_PICK_Drizzlik's Emporium|r. Loot it for |cRXP_LOOT_Shipment of Boots|r
+    .complete 888,2 --Telescopic Lens (1)
     .complete 888,1 --Shipment of Boots (1)
-    .isOnQuest 888
 step
     .goto 1413/1,-3258.47,-2027.09
     >>Pick up |cRXP_PICK_Stolen Silver|r from the ground
     .complete 3281,1 --Stolen Silver (1)
-    .isOnQuest 3281
 step
     .goto 1413/1,-3012.23,-1275.80
     >>Click the |cRXP_PICK_Bubbling Fissure|r
     .complete 877,1 --Test the Dried Seeds
-    .isOnQuest 877
 step
     .goto 1413/1,-2707.22,-1502.81
     >>Click the |cRXP_PICK_Blue Raptor Nest|r
     .complete 905,1 --Visit Blue Raptor Nest
-    .isOnQuest 905
 step
     .goto 1413/1,-2693.03,-1533.21
     >>Click the |cRXP_PICK_Red Raptor Nest|r
-    .complete 905,3 --Visit Red Raptor Nest
-    .isOnQuest 905
-step
-    .goto 1413/1,-2648.44,-1527.13
     >>Click the |cRXP_PICK_Yellow Raptor Nest|r
+    .complete 905,3 --Visit Red Raptor Nest
     .complete 905,2 --Visit Yellow Raptor Nest
-    .isOnQuest 905
 step
     .goto 1413/1,-1881.35,-2384.50
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Omusa|r
@@ -729,32 +696,19 @@ step
     .goto 1413/1,-2672.76,-544.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tonga Runetotem|r
     .turnin 877 >>Turn in The Stagnant Oasis
-    .target Tonga Runetotem
-    .isOnQuest 877
-step
-    .goto 1413/1,-2672.76,-544.77
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tonga Runetotem|r
     .accept 880 >>Accept Altered Beings
     .target Tonga Runetotem
-    .isQuestTurnedIn 877 --any of: The Stagnant Oasis
 step
     .goto 1413/1,-2669.72,-482.61
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergra Darkthorn|r
     .turnin 905 >>Turn in The Angry Scytheclaws
-    .target Sergra Darkthorn
-    .isOnQuest 905
-step
-    .goto 1413/1,-2669.72,-482.61
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergra Darkthorn|r
     .accept 3261 >>Accept Jorn Skyseer
     .target Sergra Darkthorn
-    .isQuestTurnedIn 905 --any of: The Angry Scytheclaws
 step
     .goto 1413/1,-2639.32,-436.00
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gazrog|r
     .turnin 3281 >>Turn in Stolen Silver
     .target Gazrog
-    .isOnQuest 3281
 step
     #loop
     .goto 1413/1,-1988.76,-946.77,0
@@ -767,13 +721,11 @@ step
     .mob Kolkar Stormer
     .mob Kolkar Pack Runner
     .mob Kolkar Marauder
-    .isOnQuest 855
 step
     .goto 1413/1,-1971.54,-306.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Regthar Deathgate|r
     .turnin 855 >>Turn in Centaur Bracers
     .target Regthar Deathgate
-    .isOnQuest 855
 step
     #loop
     .goto 1413/1,-1388.87,513.26,0
@@ -783,7 +735,6 @@ step
     >>Kill |cRXP_ENEMY_Witchwing Slayers|r. Loot them for |cRXP_LOOT_Harpy Lieutenant Ring|r
     .complete 875,1 --Harpy Lieutenant Ring (6)
     .mob Witchwing Slayer
-    .isOnQuest 875
 step
     .goto 1413/1,-950.10,-271.14
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Seereth Stonebreak|r
@@ -892,7 +843,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jorn Skyseer|r
     .turnin 3261 >>Turn in Jorn Skyseer
     .target Jorn Skyseer
-    .isOnQuest 3261
 step
     #loop
     .goto 1413/1,-2706.20,-1945.34,0
@@ -904,7 +854,6 @@ step
     .mob Bristleback Water Seeker
     .mob Bristleback Thornweaver
     .mob Bristleback Geomancer
-    .isOnQuest 899
 step << Warlock/Shaman
     .goto 1413/1,-2515.70,-2076.41,60,0
     .goto 1413/1,-2518.74,-2125.73,60,0
@@ -949,13 +898,11 @@ step
     >>Kill |cRXP_ENEMY_Oasis Snapjaws|r. Loot them for |cRXP_LOOT_Altered Snapjaw Shell|r
     .complete 880,1 --Altered Snapjaw Shell (8)
     .mob Oasis Snapjaw
-    .isOnQuest 880
 step
     .goto 1413/1,-3728.66,-835.29
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gazlowe|r
     .turnin 888 >>Turn in Stolen Booty
     .target Gazlowe
-    .isOnQuest 888
 step
     .goto 1413/1,-3697.24,-929.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mebok Mizzyrix|r
@@ -986,25 +933,17 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darsok Swiftdagger|r
     .turnin 875 >>Turn in Harpy Lieutenants
     .target Darsok Swiftdagger
-    .isOnQuest 875
 step
     .goto 1413/1,-2641.35,-521.12
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mankrik|r
     .turnin 899 >>Turn in Consumed by Hatred
     .target Mankrik
-    .isOnQuest 899
 step
     .goto 1413/1,-2672.76,-544.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tonga Runetotem|r
     .turnin 880 >>Turn in Altered Beings
-    .target Tonga Runetotem
-    .isOnQuest 880
-step
-    .goto 1413/1,-2672.76,-544.77
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tonga Runetotem|r
     .accept 3301 >>Accept Mura Runetotem
     .target Tonga Runetotem
-    .isQuestTurnedIn 880 --any of: Altered Beings
 step
     .goto 1413/1,-3664.82,-1050.14
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Wiley|r
@@ -1023,14 +962,8 @@ step
     .goto 1413/1,-2347.48,857.83
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wenikee Boltbucket|r
     .turnin 3921 >>Turn in Wenikee Boltbucket
-    .target Wenikee Boltbucket
-    .isOnQuest 3921
-step
-    .goto 1413/1,-2347.48,857.83
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wenikee Boltbucket|r
     .accept 3922 >>Accept Nugget Slugs
     .target Wenikee Boltbucket
-    .isQuestTurnedIn 3921 --any of: Wenikee Boltbucket
 step
     #loop
     .goto 1413/1,-3022.36,973.36,0
@@ -1038,19 +971,12 @@ step
     .goto 1413/1,-3085.19,1033.49,40,0
     >>Loot the |cRXP_PICK_Tool Buckets|r for |cRXP_LOOT_Nugget Slug|r
     .complete 3922,1 --Nugget Slug (15)
-    .isOnQuest 3922
 step
     .goto 1413/1,-2347.48,857.83
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wenikee Boltbucket|r
     .turnin 3922 >>Turn in Nugget Slugs
-    .target Wenikee Boltbucket
-    .isOnQuest 3922
-step
-    .goto 1413/1,-2347.48,857.83
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wenikee Boltbucket|r
     .accept 3923 >>Accept Rilli Greasygob
     .target Wenikee Boltbucket
-    .isQuestTurnedIn 3922 --any of: Nugget Slugs
 step
     .goto 1413/1,-950.10,-271.14
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Seereth Stonebreak|r
@@ -1183,18 +1109,7 @@ step
     >>|cRXP_FRIENDLY_Durotar and back here|r: Path of Defense << Warrior
     >>|cRXP_FRIENDLY_Stonetalon Mountains and back here|r: Avenge My Village, Goblin Invaders, Deepmoss Spider Eggs
 step
-    +|cRXP_WARN_The rest of The Barrens is planned from level 18.|r Load its guide for level 18 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 26 The Barrens
-#subweight -10
-#name 18-20 The Barrens: around Tonga Runetotem
-
+    .xp 18 >>|cRXP_WARN_The rest of The Barrens is planned from level 18.|r Come back to this guide then
 step << Warrior
     .goto 1413/1,-3596.92,185.58
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Uzzek|r
@@ -1721,18 +1636,7 @@ step
     >>|cRXP_FRIENDLY_Ashenvale and back here|r: The Warsong Reports
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Counterattack!
 step
-    +|cRXP_WARN_The rest of The Barrens is planned from level 22.|r Load its guide for level 22 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 26 The Barrens
-#subweight -10
-#name 22-23 The Barrens
-
+    .xp 22 >>|cRXP_WARN_The rest of The Barrens is planned from level 22.|r Come back to this guide then
 step << Shaman
     .goto 1413/1,-4047.86,-1345.39
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Islen Waterseer|r
@@ -1941,18 +1845,7 @@ step
     >>|cRXP_FRIENDLY_Hillsbrad Foothills and back here|r: Call of Water << Shaman
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Orb of Soran'ruk << Warlock
 step
-    +|cRXP_WARN_The rest of The Barrens is planned from level 25.|r Load its guide for level 25 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 26 The Barrens
-#subweight -10
-#name 25-26 The Barrens
-
+    .xp 25 >>|cRXP_WARN_The rest of The Barrens is planned from level 25.|r Come back to this guide then
 step << Warrior
     .goto 1413/1,-3596.92,185.58
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Uzzek|r

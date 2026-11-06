@@ -1,5 +1,5 @@
 -- 26-31 Arathi Highlands: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- Edit zones/mop/Arathi Highlands.json and re-run rather than editing this file, or your changes are lost on the next build.
@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
 #group Zone Routes (Alliance)
 #name 26-31 Arathi Highlands
 --RouteBuilder:next
-#next Zone Routes (Alliance)\30-33 Desolace: around Cenarion Researcher Korrah;Zone Routes (Alliance)\25-30 Northern Stranglethorn;Zone Routes (Alliance)\30-32 Southern Barrens: around Thomas Paxton
+#next Zone Routes (Alliance)\30-35 Desolace;Zone Routes (Alliance)\25-30 Northern Stranglethorn;Zone Routes (Alliance)\30-35 Southern Barrens
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .xp 26 >>Grind to level 26 (Quae and Kinelory needs it)
@@ -476,5 +476,5 @@ step
     >>|cRXP_FRIENDLY_The Hinterlands|r: Hero's Call: The Hinterlands! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_The Hinterlands|r: Revantusk Village
 step
-    +|cRXP_WARN_Suggested next zones at level 29|r: |cRXP_FRIENDLY_Desolace|r (about 2.2 levels of quests, starting around Cenarion Researcher Korrah), |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.1 levels of quests, starting around Hemet Nesingwary Jr.), |cRXP_FRIENDLY_Southern Barrens|r (about 0.7 levels of quests, starting around Thomas Paxton). Completing this step loads the guide for Desolace --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 29|r: |cRXP_FRIENDLY_Desolace|r (about 2.2 levels of quests), |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.1 levels of quests), |cRXP_FRIENDLY_Southern Barrens|r (about 0.7 levels of quests). Completing this step loads the guide for Desolace --RouteBuilder:next
 ]])

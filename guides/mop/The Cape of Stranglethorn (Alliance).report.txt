@@ -1,7 +1,7 @@
 The Cape of Stranglethorn - Alliance - part 1 of 3, planned from level 30
 Guide "30-35 The Cape of Stranglethorn" in group "Zone Routes (Alliance)": this part has 85 steps, 76 stops
 Written to guides/mop/The Cape of Stranglethorn (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -101,7 +101,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 The Cape of Stranglethorn - Alliance - part 2 of 3, planned from level 35
 Guide "30-35 The Cape of Stranglethorn" in group "Zone Routes (Alliance)": this part has 4 steps, 2 stops
 Written to guides/mop/The Cape of Stranglethorn (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -168,7 +168,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 The Cape of Stranglethorn - Alliance - part 3 of 3, planned from level 58
 Guide "30-35 The Cape of Stranglethorn" in group "Zone Routes (Alliance)": this part has 67 steps, 62 stops
 Written to guides/mop/The Cape of Stranglethorn (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files

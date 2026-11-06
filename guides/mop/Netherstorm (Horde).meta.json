@@ -13,12 +13,12 @@
       "start": 68,
       "end": 69.95,
       "next": 72,
-      "guide": "68-70 Netherstorm: around Image of Archmage Vargoth",
+      "guide": "68-70 Netherstorm",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Image of Archmage Vargoth",
-          "guide": "68-70 Netherstorm: around Image of Archmage Vargoth",
+          "label": "",
+          "name": "start",
+          "guide": "68-70 Netherstorm",
           "level": 68,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 72,
       "end": 72.1,
-      "guide": "72-73 Netherstorm: around Image of Commander Ameer",
+      "guide": "68-70 Netherstorm",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Image of Commander Ameer",
-          "guide": "72-73 Netherstorm: around Image of Commander Ameer",
+          "label": "",
+          "name": "part 2",
+          "guide": "68-70 Netherstorm",
           "level": 72,
           "index": 0
         }

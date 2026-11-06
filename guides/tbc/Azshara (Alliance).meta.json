@@ -13,12 +13,12 @@
       "start": 47,
       "end": 47.15,
       "next": 50,
-      "guide": "47-48 Azshara",
+      "guide": "47-60 Azshara",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "47-48 Azshara",
+          "guide": "47-60 Azshara",
           "level": 47,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 50,
       "end": 50.16,
       "next": 56,
-      "guide": "50-51 Azshara",
+      "guide": "47-60 Azshara",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "50-51 Azshara",
+          "guide": "47-60 Azshara",
           "level": 50,
           "index": 0
         }
@@ -45,12 +45,12 @@
       "start": 56,
       "end": 56,
       "next": 61,
-      "guide": "56-57 Azshara",
+      "guide": "47-60 Azshara",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "56-57 Azshara",
+          "guide": "47-60 Azshara",
           "level": 56,
           "index": 0
         }
@@ -60,12 +60,12 @@
       "part": 4,
       "start": 61,
       "end": 61.03,
-      "guide": "61-62 Azshara",
+      "guide": "47-60 Azshara",
       "sections": [
         {
-          "label": "RBSection4_1",
+          "label": "",
           "name": "part 4",
-          "guide": "61-62 Azshara",
+          "guide": "47-60 Azshara",
           "level": 61,
           "index": 0
         }

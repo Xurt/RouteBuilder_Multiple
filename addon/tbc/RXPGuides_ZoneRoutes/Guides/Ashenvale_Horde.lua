@@ -1,9 +1,9 @@
 -- 19-30 Ashenvale: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 5 parts (from level 19, 22, 25, 28, 32).
--- Split into 5 guides, listed under "19 - 33 Ashenvale" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 19; part 2 from 22; part 3 from 25; part 4 from 28; part 5 from 32.
 -- Edit zones/tbc/Ashenvale.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 19 - 33 Ashenvale
-#subweight -19
-#name 19-20 Ashenvale
---RouteBuilder:next
-#next Zone Routes (Horde)\18-20 The Barrens: around Tonga Runetotem;Zone Routes (Horde)\15-18 Ghostlands: around Eralan
+#name 19-30 Ashenvale
 
 step
     .goto 1440/1,994.16,3373.73
@@ -100,20 +96,9 @@ step << Hunter
     .zoneskip Ashenvale,1
     .train 16830,3
 step
-    +|cRXP_WARN_Suggested next zones at level 19|r: |cRXP_FRIENDLY_The Barrens|r (about 1.2 levels of quests, starting around Tonga Runetotem), |cRXP_FRIENDLY_Ghostlands|r (about 1.0 levels of quests, starting around Eralan). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Until level 22, suggested zones|r: |cRXP_FRIENDLY_The Barrens|r (about 1.2 levels of quests), |cRXP_FRIENDLY_Ghostlands|r (about 1.0 levels of quests). Then come back to this Ashenvale guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Ashenvale is planned from level 22.|r Load its guide for level 22 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 19 - 33 Ashenvale
-#subweight -19
-#name 22-23 Ashenvale
-
+    .xp 22 >>|cRXP_WARN_The rest of Ashenvale is planned from level 22.|r Come back to this guide then
 step
     .goto 1440/1,1013.77,3345.29
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Karang Amakkar|r
@@ -305,18 +290,7 @@ step
     .turnin 6462 >>Turn in Troll Charm
     .target Mitsuwa
 step
-    +|cRXP_WARN_The rest of Ashenvale is planned from level 25.|r Load its guide for level 25 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 19 - 33 Ashenvale
-#subweight -19
-#name 25-26 Ashenvale
-
+    .xp 25 >>|cRXP_WARN_The rest of Ashenvale is planned from level 25.|r Come back to this guide then
 step
     .goto 1440/1,-2554.65,2310.55
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Senani Thunderheart|r
@@ -419,18 +393,7 @@ step
     +|cRXP_WARN_That is all of Ashenvale for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Lost Pages
 step
-    +|cRXP_WARN_The rest of Ashenvale is planned from level 28.|r Load its guide for level 28 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 19 - 33 Ashenvale
-#subweight -19
-#name 28-29 Ashenvale
-
+    .xp 28 >>|cRXP_WARN_The rest of Ashenvale is planned from level 28.|r Come back to this guide then
 step
     .goto 1440/1,-2522.93,2351.68
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Valusha|r
@@ -482,18 +445,7 @@ step
     .target Gurda Ragescar
     .isQuestComplete 6504
 step
-    +|cRXP_WARN_The rest of Ashenvale is planned from level 32.|r Load its guide for level 32 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 19 - 33 Ashenvale
-#subweight -19
-#name 32-33 Ashenvale
-
+    .xp 32 >>|cRXP_WARN_The rest of Ashenvale is planned from level 32.|r Come back to this guide then
 step
     .goto 1440/1,-2417.40,2073.39
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Locke Okarr|r

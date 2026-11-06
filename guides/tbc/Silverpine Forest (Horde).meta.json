@@ -13,12 +13,12 @@
       "start": 10,
       "end": 11.42,
       "next": 14,
-      "guide": "10-12 Silverpine Forest: around Apothecary Renferrel",
+      "guide": "10-22 Silverpine Forest",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Apothecary Renferrel",
-          "guide": "10-12 Silverpine Forest: around Apothecary Renferrel",
+          "label": "",
+          "name": "start",
+          "guide": "10-22 Silverpine Forest",
           "level": 10,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 14,
       "end": 14.7,
       "next": 17,
-      "guide": "14-15 Silverpine Forest: around Dalar Dawnweaver",
+      "guide": "10-22 Silverpine Forest",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Dalar Dawnweaver",
-          "guide": "14-15 Silverpine Forest: around Dalar Dawnweaver",
+          "label": "",
+          "name": "part 2",
+          "guide": "10-22 Silverpine Forest",
           "level": 14,
           "index": 0
         }
@@ -45,12 +45,12 @@
       "start": 17,
       "end": 17.09,
       "next": 20,
-      "guide": "17-18 Silverpine Forest",
+      "guide": "10-22 Silverpine Forest",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "17-18 Silverpine Forest",
+          "guide": "10-22 Silverpine Forest",
           "level": 17,
           "index": 0
         }
@@ -60,12 +60,12 @@
       "part": 4,
       "start": 20,
       "end": 20.2,
-      "guide": "20-21 Silverpine Forest",
+      "guide": "10-22 Silverpine Forest",
       "sections": [
         {
-          "label": "RBSection4_1",
+          "label": "",
           "name": "part 4",
-          "guide": "20-21 Silverpine Forest",
+          "guide": "10-22 Silverpine Forest",
           "level": 20,
           "index": 0
         }

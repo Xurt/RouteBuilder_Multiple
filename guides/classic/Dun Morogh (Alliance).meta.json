@@ -13,21 +13,14 @@
       "start": 1,
       "end": 8.45,
       "next": 11,
-      "guide": "4-9 Dun Morogh: around Alamar Grimm",
+      "guide": "1-30 Dun Morogh",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Sten Stoutarm",
-          "guide": "1-4 Dun Morogh: around Sten Stoutarm",
+          "label": "",
+          "name": "start",
+          "guide": "1-30 Dun Morogh",
           "level": 1,
           "index": 0
-        },
-        {
-          "label": "RBSection1_2",
-          "name": "around Alamar Grimm",
-          "guide": "4-9 Dun Morogh: around Alamar Grimm",
-          "level": 4,
-          "index": 1
         }
       ]
     },
@@ -36,12 +29,12 @@
       "start": 11,
       "end": 11.3,
       "next": 14,
-      "guide": "11-12 Dun Morogh",
+      "guide": "1-30 Dun Morogh",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "11-12 Dun Morogh",
+          "guide": "1-30 Dun Morogh",
           "level": 11,
           "index": 0
         }
@@ -52,12 +45,12 @@
       "start": 14,
       "end": 14,
       "next": 17,
-      "guide": "14-15 Dun Morogh",
+      "guide": "1-30 Dun Morogh",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "14-15 Dun Morogh",
+          "guide": "1-30 Dun Morogh",
           "level": 14,
           "index": 0
         }
@@ -68,12 +61,12 @@
       "start": 17,
       "end": 17,
       "next": 21,
-      "guide": "17-18 Dun Morogh",
+      "guide": "1-30 Dun Morogh",
       "sections": [
         {
-          "label": "RBSection4_1",
+          "label": "",
           "name": "part 4",
-          "guide": "17-18 Dun Morogh",
+          "guide": "1-30 Dun Morogh",
           "level": 17,
           "index": 0
         }
@@ -84,12 +77,12 @@
       "start": 21,
       "end": 21.03,
       "next": 24,
-      "guide": "21-22 Dun Morogh",
+      "guide": "1-30 Dun Morogh",
       "sections": [
         {
-          "label": "RBSection5_1",
+          "label": "",
           "name": "part 5",
-          "guide": "21-22 Dun Morogh",
+          "guide": "1-30 Dun Morogh",
           "level": 21,
           "index": 0
         }
@@ -100,12 +93,12 @@
       "start": 24,
       "end": 24.16,
       "next": 27,
-      "guide": "24-25 Dun Morogh",
+      "guide": "1-30 Dun Morogh",
       "sections": [
         {
-          "label": "RBSection6_1",
+          "label": "",
           "name": "part 6",
-          "guide": "24-25 Dun Morogh",
+          "guide": "1-30 Dun Morogh",
           "level": 24,
           "index": 0
         }
@@ -116,12 +109,12 @@
       "start": 27,
       "end": 27.01,
       "next": 30,
-      "guide": "27-28 Dun Morogh",
+      "guide": "1-30 Dun Morogh",
       "sections": [
         {
-          "label": "RBSection7_1",
+          "label": "",
           "name": "part 7",
-          "guide": "27-28 Dun Morogh",
+          "guide": "1-30 Dun Morogh",
           "level": 27,
           "index": 0
         }
@@ -131,12 +124,12 @@
       "part": 8,
       "start": 30,
       "end": 30,
-      "guide": "30-31 Dun Morogh",
+      "guide": "1-30 Dun Morogh",
       "sections": [
         {
-          "label": "RBSection8_1",
+          "label": "",
           "name": "part 8",
-          "guide": "30-31 Dun Morogh",
+          "guide": "1-30 Dun Morogh",
           "level": 30,
           "index": 0
         }
@@ -213,7 +206,7 @@
       "req": 1,
       "xp": 335,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -222,7 +215,7 @@
       "req": 10,
       "xp": 540,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "",
       "from": "Loch Modan"
     },
@@ -232,7 +225,7 @@
       "req": 2,
       "xp": 135,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -241,7 +234,7 @@
       "req": 2,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -250,7 +243,7 @@
       "req": 4,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -259,7 +252,7 @@
       "req": 5,
       "xp": 780,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -268,7 +261,7 @@
       "req": 2,
       "xp": 680,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -277,7 +270,7 @@
       "req": 2,
       "xp": 160,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -286,7 +279,7 @@
       "req": 2,
       "xp": 530,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -295,7 +288,7 @@
       "req": 2,
       "xp": 880,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -304,7 +297,7 @@
       "req": 2,
       "xp": 110,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -313,7 +306,7 @@
       "req": 7,
       "xp": 840,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -322,7 +315,7 @@
       "req": 8,
       "xp": 420,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -331,7 +324,7 @@
       "req": 8,
       "xp": 85,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -340,7 +333,7 @@
       "req": 8,
       "xp": 420,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -349,7 +342,7 @@
       "req": 1,
       "xp": 335,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -358,7 +351,7 @@
       "req": 5,
       "xp": 590,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -367,7 +360,7 @@
       "req": 6,
       "xp": 660,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -376,7 +369,7 @@
       "req": 17,
       "xp": 830,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "",
       "from": "Stonetalon Mountains"
     },
@@ -395,7 +388,7 @@
       "req": 20,
       "xp": 830,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human Paladin/Dwarf Paladin",
       "from": "Elwynn Forest"
     },
@@ -405,7 +398,7 @@
       "req": 20,
       "xp": 570,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Dwarf Warrior/Gnome Warrior",
       "from": "Elwynn Forest"
     },
@@ -415,7 +408,7 @@
       "req": 30,
       "xp": 610,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Warlock",
       "from": "The Barrens"
     },
@@ -425,7 +418,7 @@
       "req": 1,
       "xp": 110,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -434,7 +427,7 @@
       "req": 20,
       "xp": 210,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "",
       "from": "Elwynn Forest"
     },
@@ -444,7 +437,7 @@
       "req": 24,
       "xp": 245,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "",
       "from": "Teldrassil"
     },
@@ -454,7 +447,7 @@
       "req": 25,
       "xp": 230,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "",
       "from": "Stonetalon Mountains"
     },
@@ -464,7 +457,7 @@
       "req": 12,
       "xp": 225,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Dwarf Paladin",
       "from": "Elwynn Forest"
     },
@@ -474,7 +467,7 @@
       "req": 1,
       "xp": 40,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Dwarf Warrior"
     },
     {
@@ -501,7 +494,7 @@
       "req": 1,
       "xp": 40,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Dwarf Rogue"
     },
     {
@@ -510,7 +503,7 @@
       "req": 1,
       "xp": 40,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Dwarf Priest"
     },
     {
@@ -519,7 +512,7 @@
       "req": 1,
       "xp": 40,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Gnome Warrior"
     },
     {
@@ -528,7 +521,7 @@
       "req": 1,
       "xp": 40,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Gnome Rogue"
     },
     {
@@ -537,7 +530,7 @@
       "req": 1,
       "xp": 40,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Gnome Mage"
     },
     {
@@ -555,7 +548,7 @@
       "req": 3,
       "xp": 250,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -582,7 +575,7 @@
       "req": 5,
       "xp": 540,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -591,7 +584,7 @@
       "req": 5,
       "xp": 270,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Dwarf Priest"
     },
     {
@@ -600,7 +593,7 @@
       "req": 5,
       "xp": 90,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Dwarf Priest"
     },
     {
@@ -609,7 +602,7 @@
       "req": 20,
       "xp": 390,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Dwarf Priest",
       "from": "Elwynn Forest"
     },
@@ -619,7 +612,7 @@
       "req": 20,
       "xp": 390,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Dwarf Priest",
       "from": "Teldrassil"
     },
@@ -629,7 +622,7 @@
       "req": 10,
       "xp": 85,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Dwarf Hunter",
       "from": "Elwynn Forest"
     },
@@ -639,7 +632,7 @@
       "req": 10,
       "xp": 420,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Dwarf/Gnome",
       "from": "Loch Modan"
     },

@@ -1,9 +1,9 @@
 -- 10-21 Bloodmyst Isle: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 10, 14, 20).
--- Split into 3 guides, listed under "10 - 21 Bloodmyst Isle" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 10; part 2 from 14; part 3 from 20.
 -- Edit zones/tbc/Bloodmyst Isle.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 10 - 21 Bloodmyst Isle
-#subweight -10
-#name 10-12 Bloodmyst Isle: around Morae
+#name 10-21 Bloodmyst Isle
 --RouteBuilder:next
-#next Zone Routes (Alliance)\10-15 Darkshore: around Thundris Windweaver;Zone Routes (Alliance)\5-10 Azuremyst Isle: around Daedal;Zone Routes (Alliance)\5-10 Elwynn Forest: around Marshal Dughan
+#next Zone Routes (Alliance)\10-22 Darkshore;Zone Routes (Alliance)\20-31 Duskwood
 
 step
     .goto 1950,63.43,88.79
@@ -400,22 +398,9 @@ step
     >>|cRXP_FRIENDLY_The Exodar|r: On the Wings of a Hippogryph << Draenei
     >>|cRXP_FRIENDLY_Azuremyst Isle and back here|r: The Kessel Run
 step
-    +|cRXP_WARN_Suggested next zones at level 11|r: |cRXP_FRIENDLY_Darkshore|r (about 2.1 levels of quests, starting around Thundris Windweaver), |cRXP_FRIENDLY_Azuremyst Isle|r (about 1.3 levels of quests, starting around Daedal), |cRXP_FRIENDLY_Elwynn Forest|r (about 1.3 levels of quests, starting around Marshal Dughan). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 14, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 2.1 levels of quests), |cRXP_FRIENDLY_Teldrassil|r (about 1.9 levels of quests), |cRXP_FRIENDLY_Azuremyst Isle|r (about 1.5 levels of quests). Then come back to this Bloodmyst Isle guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Bloodmyst Isle is planned from level 14.|r Load its guide for level 14 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 10 - 21 Bloodmyst Isle
-#subweight -10
-#name 14-18 Bloodmyst Isle: around Vindicator Boros
---RouteBuilder:next
-#next Zone Routes (Alliance)\17-19 Darkshore: around Terenthis
-
+    .xp 14 >>|cRXP_WARN_The rest of Bloodmyst Isle is planned from level 14.|r Come back to this guide then
 step
     .goto 1950,62.99,87.54
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kessel|r
@@ -1153,22 +1138,9 @@ step
     >>|cRXP_FRIENDLY_Azuremyst Isle|r: Newfound Allies
     >>|cRXP_FRIENDLY_The Exodar|r: Audience with the Prophet
 step
-    +|cRXP_WARN_Suggested next zones at level 17|r: |cRXP_FRIENDLY_Darkshore|r (about 0.9 levels of quests, starting around Terenthis). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 20, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 0.9 levels of quests). Then come back to this Bloodmyst Isle guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Bloodmyst Isle is planned from level 20.|r Load its guide for level 20 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 10 - 21 Bloodmyst Isle
-#subweight -10
-#name 20-21 Bloodmyst Isle
---RouteBuilder:next
-#next Zone Routes (Alliance)\17-19 Darkshore: around Terenthis;Zone Routes (Alliance)\20-21 Duskwood: around Elaine Carevin
-
+    .xp 20 >>|cRXP_WARN_The rest of Bloodmyst Isle is planned from level 20.|r Come back to this guide then
 step << Draenei Shaman
     .goto 1950,32.30,16.18
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Aqueous|r
@@ -1308,5 +1280,5 @@ step
 step
     +|cRXP_WARN_End of the Bloodmyst Isle route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 20|r: |cRXP_FRIENDLY_Darkshore|r (about 0.7 levels of quests, starting around Terenthis), |cRXP_FRIENDLY_Duskwood|r (about 0.5 levels of quests, starting around Elaine Carevin). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 20|r: |cRXP_FRIENDLY_Darkshore|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Duskwood|r (about 0.5 levels of quests). Completing this step loads the guide for Darkshore --RouteBuilder:next
 ]])

@@ -1,7 +1,7 @@
 Nagrand - Horde - part 1 of 2, planned from level 65
 Guide "65-68 Nagrand" in group "Zone Routes (Horde)": this part has 157 steps, 141 stops
 Written to guides/tbc/Nagrand (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1110 objective notes read from 57 guide files
@@ -141,7 +141,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Nagrand - Horde - part 2 of 2, planned from level 68
 Guide "65-68 Nagrand" in group "Zone Routes (Horde)": this part has 52 steps, 50 stops
 Written to guides/tbc/Nagrand (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1110 objective notes read from 57 guide files

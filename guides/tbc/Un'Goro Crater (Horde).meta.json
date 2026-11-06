@@ -13,12 +13,12 @@
       "start": 50,
       "end": 51.07,
       "next": 54,
-      "guide": "50-52 Un\u0027Goro Crater: around Torwa Pathfinder",
+      "guide": "50-56 Un\u0027Goro Crater",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Torwa Pathfinder",
-          "guide": "50-52 Un\u0027Goro Crater: around Torwa Pathfinder",
+          "label": "",
+          "name": "start",
+          "guide": "50-56 Un\u0027Goro Crater",
           "level": 50,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 54,
       "end": 54.28,
-      "guide": "54-55 Un\u0027Goro Crater: around Torwa Pathfinder",
+      "guide": "50-56 Un\u0027Goro Crater",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Torwa Pathfinder",
-          "guide": "54-55 Un\u0027Goro Crater: around Torwa Pathfinder",
+          "label": "",
+          "name": "part 2",
+          "guide": "50-56 Un\u0027Goro Crater",
           "level": 54,
           "index": 0
         }

@@ -13,12 +13,12 @@
       "start": 6,
       "end": 6,
       "next": 13,
-      "guide": "6-7 The Lost Isles",
+      "guide": "6-11 The Lost Isles",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "6-7 The Lost Isles",
+          "guide": "6-11 The Lost Isles",
           "level": 6,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 13,
       "end": 13,
-      "guide": "13-14 The Lost Isles",
+      "guide": "6-11 The Lost Isles",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "13-14 The Lost Isles",
+          "guide": "6-11 The Lost Isles",
           "level": 13,
           "index": 0
         }

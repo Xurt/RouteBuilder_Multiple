@@ -13,12 +13,12 @@
       "start": 18,
       "end": 18.4,
       "next": 21,
-      "guide": "18-19 Ashenvale: around Shindrell Swiftfire",
+      "guide": "18-32 Ashenvale",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Shindrell Swiftfire",
-          "guide": "18-19 Ashenvale: around Shindrell Swiftfire",
+          "label": "",
+          "name": "start",
+          "guide": "18-32 Ashenvale",
           "level": 18,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 21,
       "end": 21.56,
       "next": 24,
-      "guide": "21-22 Ashenvale",
+      "guide": "18-32 Ashenvale",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "21-22 Ashenvale",
+          "guide": "18-32 Ashenvale",
           "level": 21,
           "index": 0
         }
@@ -45,12 +45,12 @@
       "start": 24,
       "end": 24.47,
       "next": 27,
-      "guide": "24-25 Ashenvale",
+      "guide": "18-32 Ashenvale",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "24-25 Ashenvale",
+          "guide": "18-32 Ashenvale",
           "level": 24,
           "index": 0
         }
@@ -61,12 +61,12 @@
       "start": 27,
       "end": 28.06,
       "next": 31,
-      "guide": "27-29 Ashenvale: around Sentinel Melyria Frostshadow",
+      "guide": "18-32 Ashenvale",
       "sections": [
         {
-          "label": "RBSection4_1",
-          "name": "around Sentinel Melyria Frostshadow",
-          "guide": "27-29 Ashenvale: around Sentinel Melyria Frostshadow",
+          "label": "",
+          "name": "part 4",
+          "guide": "18-32 Ashenvale",
           "level": 27,
           "index": 0
         }
@@ -76,12 +76,12 @@
       "part": 5,
       "start": 31,
       "end": 31.32,
-      "guide": "31-32 Ashenvale",
+      "guide": "18-32 Ashenvale",
       "sections": [
         {
-          "label": "RBSection5_1",
+          "label": "",
           "name": "part 5",
-          "guide": "31-32 Ashenvale",
+          "guide": "18-32 Ashenvale",
           "level": 31,
           "index": 0
         }

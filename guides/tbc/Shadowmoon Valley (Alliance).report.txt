@@ -1,7 +1,7 @@
 Shadowmoon Valley - Alliance
 Guide "69-70 Shadowmoon Valley" in group "Zone Routes (Alliance)": 152 steps, 140 stops
 Written to guides/tbc/Shadowmoon Valley (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1110 objective notes read from 57 guide files

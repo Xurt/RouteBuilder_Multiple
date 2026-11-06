@@ -1,9 +1,9 @@
 -- 10-15 Westfall: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 10, 17).
--- Split into 2 guides, listed under "10 - 18 Westfall" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 10; part 2 from 17.
 -- Edit zones/mop/Westfall.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 10 - 18 Westfall
-#subweight -10
-#name 10-15 Westfall: around Marshal Gryan Stoutmantle
+#name 10-15 Westfall
 --RouteBuilder:next
-#next Zone Routes (Alliance)\13-15 Darkshore: around Keeper Karithus;Zone Routes (Alliance)\11-15 Loch Modan: around Captain Rugelfuss
+#next Zone Routes (Alliance)\10-20 Darkshore
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 52,56.26,47.48
@@ -569,23 +567,10 @@ step
     >>|cRXP_FRIENDLY_Redridge Mountains|r: Threat to the Kingdom
     >>|cRXP_FRIENDLY_Stormwind City|r: Rise of the Brotherhood << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_another zone and back here|r: A Vision of the Past << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 14|r: |cRXP_FRIENDLY_Darkshore|r (about 0.9 levels of quests, starting around Keeper Karithus), |cRXP_FRIENDLY_Loch Modan|r (about 0.6 levels of quests, starting around Captain Rugelfuss). Completing this step loads the guide for Darkshore --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of Westfall is planned from level 17.|r Load its guide for level 17 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 10 - 18 Westfall
-#subweight -10
-#name 17-18 Westfall
---RouteBuilder:next
-#next Zone Routes (Alliance)\15-20 Darkshore: around Ranger Glynda Nal'Shea
-
+    +|cRXP_WARN_Until level 17, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 1.0 levels of quests), |cRXP_FRIENDLY_Loch Modan|r (about 0.6 levels of quests). Then come back to this Westfall guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 17 >>|cRXP_WARN_The rest of Westfall is planned from level 17.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 52,56.46,47.57
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Danuvin|r
@@ -601,5 +586,5 @@ step
     +|cRXP_WARN_End of the Westfall route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Redridge Mountains|r: Hero's Call: Redridge Mountains! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 17|r: |cRXP_FRIENDLY_Darkshore|r (about 0.8 levels of quests, starting around Ranger Glynda Nal'Shea). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 17|r: |cRXP_FRIENDLY_Darkshore|r (about 1.1 levels of quests). Completing this step loads the guide for Darkshore --RouteBuilder:next
 ]])

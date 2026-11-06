@@ -13,12 +13,12 @@
       "start": 52,
       "end": 52.27,
       "next": 55,
-      "guide": "52-53 Western Plaguelands: around Commander Ashlam Valorfist",
+      "guide": "52-60 Western Plaguelands",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Commander Ashlam Valorfist",
-          "guide": "52-53 Western Plaguelands: around Commander Ashlam Valorfist",
+          "label": "",
+          "name": "start",
+          "guide": "52-60 Western Plaguelands",
           "level": 52,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 55,
       "end": 56.07,
       "next": 59,
-      "guide": "55-57 Western Plaguelands: around Commander Ashlam Valorfist",
+      "guide": "52-60 Western Plaguelands",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Commander Ashlam Valorfist",
-          "guide": "55-57 Western Plaguelands: around Commander Ashlam Valorfist",
+          "label": "",
+          "name": "part 2",
+          "guide": "52-60 Western Plaguelands",
           "level": 55,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 59,
       "end": 59.07,
-      "guide": "59-60 Western Plaguelands",
+      "guide": "52-60 Western Plaguelands",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "59-60 Western Plaguelands",
+          "guide": "52-60 Western Plaguelands",
           "level": 59,
           "index": 0
         }

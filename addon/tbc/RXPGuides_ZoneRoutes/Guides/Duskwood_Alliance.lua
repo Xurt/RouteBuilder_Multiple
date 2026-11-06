@@ -1,9 +1,9 @@
 -- 20-31 Duskwood: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 20, 24, 28).
--- Split into 3 guides, listed under "20 - 29 Duskwood" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 20; part 2 from 24; part 3 from 28.
 -- Edit zones/tbc/Duskwood.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,9 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 20 - 29 Duskwood
-#subweight -20
-#name 20-21 Duskwood: around Elaine Carevin
+#name 20-31 Duskwood
+--RouteBuilder:next
+#next Zone Routes (Alliance)\18-32 Ashenvale
 
 step
     .goto 1431/0,-384.91,-10923.21
@@ -299,18 +299,7 @@ step
     >>|cRXP_FRIENDLY_Redridge Mountains|r: Messenger to Darkshire
     >>|cRXP_FRIENDLY_Stormwind City|r: An Old History Book
 step
-    +|cRXP_WARN_The rest of Duskwood is planned from level 24.|r Load its guide for level 24 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 20 - 29 Duskwood
-#subweight -20
-#name 24-25 Duskwood: around Clerk Daltry
-
+    .xp 24 >>|cRXP_WARN_The rest of Duskwood is planned from level 24.|r Come back to this guide then
 step
     .goto 1431/0,-1213.00,-10532.43
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Madame Eva|r
@@ -640,20 +629,7 @@ step
     >>|cRXP_FRIENDLY_Elwynn Forest|r: The Legend of Stalvan
     >>|cRXP_FRIENDLY_Westfall|r: The Legend of Stalvan
 step
-    +|cRXP_WARN_The rest of Duskwood is planned from level 28.|r Load its guide for level 28 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 20 - 29 Duskwood
-#subweight -20
-#name 28-29 Duskwood: around Sirra Von'Indi
---RouteBuilder:next
-#next Zone Routes (Alliance)\27-29 Ashenvale: around Sentinel Melyria Frostshadow
-
+    .xp 28 >>|cRXP_WARN_The rest of Duskwood is planned from level 28.|r Come back to this guide then
 step
     .goto 1431/0,-1125.25,-10560.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Clerk Daltry|r
@@ -993,5 +969,5 @@ step
     >>|cRXP_FRIENDLY_Darnassus|r: Answered Questions
     >>|cRXP_FRIENDLY_Stormwind City|r: Seeking Wisdom, The Missing Diplomat
 step
-    +|cRXP_WARN_Suggested next zones at level 28|r: |cRXP_FRIENDLY_Ashenvale|r (about 0.7 levels of quests, starting around Sentinel Melyria Frostshadow). Completing this step loads the guide for Ashenvale --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 28|r: |cRXP_FRIENDLY_Ashenvale|r (about 0.7 levels of quests). Completing this step loads the guide for Ashenvale --RouteBuilder:next
 ]])

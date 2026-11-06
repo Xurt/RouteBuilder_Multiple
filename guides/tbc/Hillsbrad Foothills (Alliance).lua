@@ -1,9 +1,9 @@
 -- 29-38 Hillsbrad Foothills: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 29, 32).
--- Split into 2 guides, listed under "29 - 33 Hillsbrad Foothills" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 29; part 2 from 32.
 -- Edit zones/tbc/Hillsbrad Foothills.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 29 - 33 Hillsbrad Foothills
-#subweight -29
-#name 29-30 Hillsbrad Foothills: around Lieutenant Farren Orinelle
+#name 29-38 Hillsbrad Foothills
 --RouteBuilder:next
-#next Zone Routes (Alliance)\30-32 Stranglethorn Vale: around Krazek;Zone Routes (Alliance)\28-29 Duskwood: around Sirra Von'Indi;Zone Routes (Alliance)\27-29 Ashenvale: around Sentinel Melyria Frostshadow
+#next Zone Routes (Alliance)\30-50 Stranglethorn Vale;Zone Routes (Alliance)\20-31 Duskwood
 
 step
     .goto 1424/0,-601.49,-853.12
@@ -237,22 +235,9 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: Reassignment, Return to Milton
     >>|cRXP_FRIENDLY_Alterac Mountains and back here|r: Syndicate Assassins
 step
-    +|cRXP_WARN_Suggested next zones at level 29|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.8 levels of quests, starting around Krazek), |cRXP_FRIENDLY_Duskwood|r (about 0.7 levels of quests, starting around Sirra Von'Indi), |cRXP_FRIENDLY_Ashenvale|r (about 0.6 levels of quests, starting around Sentinel Melyria Frostshadow). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Until level 32, suggested zones|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.8 levels of quests), |cRXP_FRIENDLY_Duskwood|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Ashenvale|r (about 0.6 levels of quests). Then come back to this Hillsbrad Foothills guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 32.|r Load its guide for level 32 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 29 - 33 Hillsbrad Foothills
-#subweight -29
-#name 32-33 Hillsbrad Foothills: around Bartolo Ginsetti
---RouteBuilder:next
-#next Zone Routes (Alliance)\30-32 Stranglethorn Vale: around Krazek;Zone Routes (Alliance)\28-29 Duskwood: around Sirra Von'Indi
-
+    .xp 32 >>|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 32.|r Come back to this guide then
 step
     .goto 1424/0,-515.09,-784.64
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bartolo Ginsetti|r
@@ -364,5 +349,5 @@ step
     >>|cRXP_FRIENDLY_Alterac Mountains and back here|r: Costly Menace, Crushridge Bounty
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Bartolo's Yeti Fur Cloak
 step
-    +|cRXP_WARN_Suggested next zones at level 32|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.6 levels of quests, starting around Krazek), |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests, starting around Sirra Von'Indi). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 32|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.6 levels of quests), |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
 ]])

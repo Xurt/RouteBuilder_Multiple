@@ -1,9 +1,9 @@
 -- 86-88 Krasarang Wilds: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 86, 89).
--- Split into 2 guides, listed under "86 - 90 Krasarang Wilds" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 86; part 2 from 89.
 -- Edit zones/mop/Krasarang Wilds.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 86 - 90 Krasarang Wilds
-#subweight -86
-#name 86-87 Krasarang Wilds: around Ken-Ken
---RouteBuilder:next
-#next Zone Routes (Alliance)\87-88 Kun-Lai Summit: around Smokey Sootassle
+#name 86-88 Krasarang Wilds
 
 step
     .goto 418,76.21,7.06
@@ -1024,21 +1020,10 @@ step
     +|cRXP_WARN_That is all of Krasarang Wilds for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Valley of the Four Winds|r: Warn Stoneplow << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Valley of the Four Winds and back here|r: Why So Serious?
-step
-    +|cRXP_WARN_Suggested next zones at level 86|r: |cRXP_FRIENDLY_Kun-Lai Summit|r (about 0.6 levels of quests, starting around Smokey Sootassle). Completing this step loads the guide for Kun-Lai Summit --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of Krasarang Wilds is planned from level 89.|r Load its guide for level 89 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 86 - 90 Krasarang Wilds
-#subweight -86
-#name 89-90 Krasarang Wilds
-
+    +|cRXP_WARN_Until level 89, suggested zones|r: |cRXP_FRIENDLY_Kun-Lai Summit|r (about 0.6 levels of quests). Then come back to this Krasarang Wilds guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 89 >>|cRXP_WARN_The rest of Krasarang Wilds is planned from level 89.|r Come back to this guide then
 step
     #loop
     .goto 418,71.22,16.25,0

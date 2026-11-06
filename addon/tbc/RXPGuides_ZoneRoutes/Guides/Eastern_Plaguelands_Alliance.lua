@@ -1,9 +1,9 @@
 -- 55-60 Eastern Plaguelands: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 55, 58, 61).
--- Split into 3 guides, listed under "55 - 62 Eastern Plaguelands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 55; part 2 from 58; part 3 from 61.
 -- Edit zones/tbc/Eastern Plaguelands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 55 - 62 Eastern Plaguelands
-#subweight -55
-#name 55-56 Eastern Plaguelands: around Tirion Fordring
+#name 55-60 Eastern Plaguelands
 --RouteBuilder:next
-#next Zone Routes (Alliance)\55-57 Western Plaguelands: around Commander Ashlam Valorfist
+#next Zone Routes (Alliance)\62-70 Terokkar Forest;Zone Routes (Alliance)\58-63 Hellfire Peninsula;Zone Routes (Alliance)\62-65 Zangarmarsh
 
 step
     .goto 1423/0,-2480.37,2673.54
@@ -406,22 +404,9 @@ step
     >>|cRXP_FRIENDLY_Winterspring|r: Tormented By the Past
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Pamela's Doll, That's Asking A Lot
 step
-    +|cRXP_WARN_Suggested next zones at level 55|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 1.0 levels of quests, starting around Commander Ashlam Valorfist). Completing this step loads the guide for Western Plaguelands --RouteBuilder:next
+    +|cRXP_WARN_Until level 58, suggested zones|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 1.0 levels of quests). Then come back to this Eastern Plaguelands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Eastern Plaguelands is planned from level 58.|r Load its guide for level 58 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 55 - 62 Eastern Plaguelands
-#subweight -55
-#name 58-59 Eastern Plaguelands
---RouteBuilder:next
-#next Zone Routes (Alliance)\58-61 Hellfire Peninsula: around Assistant Klatu;Zone Routes (Alliance)\55-57 Western Plaguelands: around Commander Ashlam Valorfist
-
+    .xp 58 >>|cRXP_WARN_The rest of Eastern Plaguelands is planned from level 58.|r Come back to this guide then
 step
     .goto 1423/0,-3657.88,1411.05
     >>Pick up |cRXP_PICK_Pamela's Doll's Head|r from the ground
@@ -502,23 +487,10 @@ step
 step
     +|cRXP_WARN_That is all of Eastern Plaguelands for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Western Plaguelands|r: Soulbound Keepsake
-step
-    +|cRXP_WARN_Suggested next zones at level 58|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 1.5 levels of quests, starting around Assistant Klatu), |cRXP_FRIENDLY_Western Plaguelands|r (about 0.9 levels of quests, starting around Commander Ashlam Valorfist). Completing this step loads the guide for Hellfire Peninsula --RouteBuilder:next
 step << Priest
-    +|cRXP_WARN_The rest of Eastern Plaguelands is planned from level 61.|r Load its guide for level 61 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Priest
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 55 - 62 Eastern Plaguelands
-#subweight -55
-#name 61-62 Eastern Plaguelands
---RouteBuilder:next
-#next Zone Routes (Alliance)\62-64 Terokkar Forest: around Jenai Starwhisper;Zone Routes (Alliance)\58-61 Hellfire Peninsula: around Assistant Klatu;Zone Routes (Alliance)\62-63 Zangarmarsh: around Ysiel Windsinger
-
+    +|cRXP_WARN_Until level 61, suggested zones|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 1.5 levels of quests), |cRXP_FRIENDLY_Western Plaguelands|r (about 0.9 levels of quests). Then come back to this Eastern Plaguelands guide --RouteBuilder:next
+step << Priest
+    .xp 61 >>|cRXP_WARN_The rest of Eastern Plaguelands is planned from level 61.|r Come back to this guide then
 step << Priest
     .goto 1423/0,-2996.74,3325.05
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Eris Havenfire|r
@@ -645,5 +617,5 @@ step
     >>|cRXP_FRIENDLY_Ironforge|r: Anthion's Parting Words << Warrior
     >>|cRXP_FRIENDLY_Ironforge|r: Anthion's Parting Words << Shaman
 step
-    +|cRXP_WARN_Suggested next zones at level 61|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.7 levels of quests, starting around Jenai Starwhisper), |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.6 levels of quests, starting around Assistant Klatu), |cRXP_FRIENDLY_Zangarmarsh|r (about 0.6 levels of quests, starting around Ysiel Windsinger). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 61|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.6 levels of quests), |cRXP_FRIENDLY_Zangarmarsh|r (about 0.6 levels of quests). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
 ]])

@@ -1,5 +1,5 @@
 -- 55-56 Silithus: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- Edit zones/mop/Silithus.json and re-run rather than editing this file, or your changes are lost on the next build.
@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
 #group Zone Routes (Horde)
 #name 55-56 Silithus
 --RouteBuilder:next
-#next Zone Routes (Horde)\52-54 Winterspring: around Rinno Curtainfire;Zone Routes (Horde)\52-55 Swamp of Sorrows: around Trade Baron Silversnap;Zone Routes (Horde)\53-55 Un'Goro Crater: around Mor'vek
+#next Zone Routes (Horde)\50-55 Winterspring;Zone Routes (Horde)\51-55 Un'Goro Crater;Zone Routes (Horde)\52-55 Swamp of Sorrows
 
 step
     .goto 81,53.27,33.50
@@ -630,5 +630,5 @@ step
     >>|cRXP_FRIENDLY_Winterspring|r: Warchief's Command: Winterspring! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Dustwallow Marsh and back here|r: Deadmire << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 56|r: |cRXP_FRIENDLY_Winterspring|r (about 1.1 levels of quests, starting around Rinno Curtainfire), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 0.8 levels of quests, starting around Trade Baron Silversnap), |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.8 levels of quests, starting around Mor'vek). Completing this step loads the guide for Winterspring --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 56|r: |cRXP_FRIENDLY_Winterspring|r (about 2.3 levels of quests), |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.5 levels of quests), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 0.8 levels of quests). Completing this step loads the guide for Winterspring --RouteBuilder:next
 ]])

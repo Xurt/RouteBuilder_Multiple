@@ -1,9 +1,9 @@
 -- 26-30 Stonetalon Mountains: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 26, 29, 32).
--- Split into 3 guides, listed under "26 - 33 Stonetalon Mountains" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 26; part 2 from 29; part 3 from 32.
 -- Edit zones/mop/Stonetalon Mountains.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 26 - 33 Stonetalon Mountains
-#subweight -26
-#name 26-27 Stonetalon Mountains
+#name 26-30 Stonetalon Mountains
 --RouteBuilder:next
-#next Zone Routes (Horde)\25-30 Northern Stranglethorn;Zone Routes (Horde)\26-31 Arathi Highlands;Zone Routes (Horde)\22-27 Hillsbrad Foothills: around Serge Hinott
+#next Zone Routes (Horde)\30-35 Desolace;Zone Routes (Horde)\30-35 The Cape of Stranglethorn;Zone Routes (Horde)\26-31 Arathi Highlands
 
 step
     .goto 65,64.93,82.67
@@ -579,22 +577,9 @@ step
     >>|cRXP_FRIENDLY_Silverpine Forest|r: Until Death Do Us Part << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_The Barrens|r: Warchief's Command: Northern Barrens!, Warchief's Command: Ashenvale! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 26|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.3 levels of quests, starting around Hemet Nesingwary Jr.), |cRXP_FRIENDLY_Arathi Highlands|r (about 1.1 levels of quests, starting around Galen Trollbane), |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.7 levels of quests, starting around Serge Hinott). Completing this step loads the guide for Northern Stranglethorn --RouteBuilder:next
+    +|cRXP_WARN_Until level 29, suggested zones|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.3 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 1.1 levels of quests), |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.8 levels of quests). Then come back to this Stonetalon Mountains guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 29.|r Load its guide for level 29 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 26 - 33 Stonetalon Mountains
-#subweight -26
-#name 29-30 Stonetalon Mountains
---RouteBuilder:next
-#next Zone Routes (Horde)\30-32 Desolace: around Sorrem;Zone Routes (Horde)\25-30 Northern Stranglethorn;Zone Routes (Horde)\26-31 Arathi Highlands
-
+    .xp 29 >>|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 29.|r Come back to this guide then
 step
     .goto 65,33.09,59.63
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hierophant Malyk|r
@@ -1089,23 +1074,10 @@ step
     +|cRXP_WARN_That is all of Stonetalon Mountains for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Desolace|r: Help for Desolace, Nothing Left for You Here
     >>|cRXP_FRIENDLY_Southern Barrens|r: All's Clear, Nura Pathfinder
-step
-    +|cRXP_WARN_Suggested next zones at level 29|r: |cRXP_FRIENDLY_Desolace|r (about 2.3 levels of quests, starting around Sorrem; 2 quests from here hand in there), |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.1 levels of quests, starting around Hemet Nesingwary Jr.), |cRXP_FRIENDLY_Arathi Highlands|r (about 1.0 levels of quests, starting around Galen Trollbane). Completing this step loads the guide for Desolace --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 32.|r Load its guide for level 32 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 26 - 33 Stonetalon Mountains
-#subweight -26
-#name 32-33 Stonetalon Mountains
---RouteBuilder:next
-#next Zone Routes (Horde)\32-36 Desolace: around Cenarion Researcher Korrah;Zone Routes (Horde)\30-33 The Cape of Stranglethorn: around Captain Hecklebury Smotts;Zone Routes (Horde)\26-31 Arathi Highlands
-
+    +|cRXP_WARN_Until level 32, suggested zones|r: |cRXP_FRIENDLY_Desolace|r (about 2.3 levels of quests; 2 quests from here hand in there), |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.1 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 1.0 levels of quests). Then come back to this Stonetalon Mountains guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 32 >>|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 32.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 88,42.22,57.77
     >>Click the |cRXP_PICK_Warchief's Command Board|r
@@ -1114,5 +1086,5 @@ step
     +|cRXP_WARN_End of the Stonetalon Mountains route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Desolace|r: Warchief's Command: Desolace! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 32|r: |cRXP_FRIENDLY_Desolace|r (about 1.5 levels of quests, starting around Cenarion Researcher Korrah), |cRXP_FRIENDLY_The Cape of Stranglethorn|r (about 1.2 levels of quests, starting around Captain Hecklebury Smotts), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.8 levels of quests, starting around Galen Trollbane). Completing this step loads the guide for Desolace --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 32|r: |cRXP_FRIENDLY_Desolace|r (about 1.9 levels of quests; 2 quests from here hand in there), |cRXP_FRIENDLY_The Cape of Stranglethorn|r (about 1.2 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.8 levels of quests). Completing this step loads the guide for Desolace --RouteBuilder:next
 ]])

@@ -13,12 +13,12 @@
       "start": 16,
       "end": 16.36,
       "next": 19,
-      "guide": "16-17 Westfall",
+      "guide": "16-20 Westfall",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "16-17 Westfall",
+          "guide": "16-20 Westfall",
           "level": 16,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 19,
       "end": 19.08,
-      "guide": "19-20 Westfall",
+      "guide": "16-20 Westfall",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "19-20 Westfall",
+          "guide": "16-20 Westfall",
           "level": 19,
           "index": 0
         }

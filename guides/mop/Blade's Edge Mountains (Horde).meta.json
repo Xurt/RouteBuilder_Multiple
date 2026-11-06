@@ -13,12 +13,12 @@
       "start": 65,
       "end": 65.66,
       "next": 68,
-      "guide": "65-66 Blade\u0027s Edge Mountains: around Tree Warden Chawn",
+      "guide": "65-70 Blade\u0027s Edge Mountains",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Tree Warden Chawn",
-          "guide": "65-66 Blade\u0027s Edge Mountains: around Tree Warden Chawn",
+          "label": "",
+          "name": "start",
+          "guide": "65-70 Blade\u0027s Edge Mountains",
           "level": 65,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 68,
       "end": 68.04,
       "next": 71,
-      "guide": "68-69 Blade\u0027s Edge Mountains",
+      "guide": "65-70 Blade\u0027s Edge Mountains",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "68-69 Blade\u0027s Edge Mountains",
+          "guide": "65-70 Blade\u0027s Edge Mountains",
           "level": 68,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 71,
       "end": 71.21,
-      "guide": "71-72 Blade\u0027s Edge Mountains: around Chu\u0027a\u0027lor",
+      "guide": "65-70 Blade\u0027s Edge Mountains",
       "sections": [
         {
-          "label": "RBSection3_1",
-          "name": "around Chu\u0027a\u0027lor",
-          "guide": "71-72 Blade\u0027s Edge Mountains: around Chu\u0027a\u0027lor",
+          "label": "",
+          "name": "part 3",
+          "guide": "65-70 Blade\u0027s Edge Mountains",
           "level": 71,
           "index": 0
         }

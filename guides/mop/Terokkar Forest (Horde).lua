@@ -1,9 +1,9 @@
 -- 62-70 Terokkar Forest: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 62, 68, 71).
--- Split into 3 guides, listed under "62 - 72 Terokkar Forest" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 62; part 2 from 68; part 3 from 71.
 -- Edit zones/mop/Terokkar Forest.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 62 - 72 Terokkar Forest
-#subweight -62
-#name 62-65 Terokkar Forest: around Earthbinder Tavgren
+#name 62-70 Terokkar Forest
 --RouteBuilder:next
-#next Zone Routes (Horde)\65-67 Nagrand: around Hemet Nesingwary
+#next Zone Routes (Horde)\68-70 Netherstorm;Zone Routes (Horde)\72-75 Dragonblight;Zone Routes (Horde)\70-72 Howling Fjord
 
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 108,48.94,44.58
@@ -1526,23 +1524,10 @@ step
     +|cRXP_WARN_That is all of Terokkar Forest for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Nagrand|r: Because Kilrath is a Coward << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Nagrand|r: The Master's Grand Design?
-step
-    +|cRXP_WARN_Suggested next zones at level 64|r: |cRXP_FRIENDLY_Nagrand|r (about 0.8 levels of quests, starting around Hemet Nesingwary; 1 quest from here hands in there). Completing this step loads the guide for Nagrand --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Terokkar Forest is planned from level 68.|r Load its guide for level 68 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 62 - 72 Terokkar Forest
-#subweight -62
-#name 68-69 Terokkar Forest
---RouteBuilder:next
-#next Zone Routes (Horde)\68-70 Netherstorm: around Image of Archmage Vargoth;Zone Routes (Horde)\65-67 Nagrand: around Hemet Nesingwary
-
+    +|cRXP_WARN_Until level 68, suggested zones|r: |cRXP_FRIENDLY_Nagrand|r (about 0.8 levels of quests; 1 quest from here hands in there). Then come back to this Terokkar Forest guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 68 >>|cRXP_WARN_The rest of Terokkar Forest is planned from level 68.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 111,64.68,70.71
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fantei|r
@@ -1693,22 +1678,9 @@ step
     >>|cRXP_FRIENDLY_Nagrand|r: It's Just That Easy?
     >>|cRXP_FRIENDLY_Shadowmoon Valley|r: Chief Apothecary Hildagard << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 68|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.4 levels of quests, starting around Image of Archmage Vargoth), |cRXP_FRIENDLY_Nagrand|r (about 0.5 levels of quests, starting around Hemet Nesingwary; 2 quests from here hand in there). Completing this step loads the guide for Netherstorm --RouteBuilder:next
+    +|cRXP_WARN_Until level 71, suggested zones|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.4 levels of quests), |cRXP_FRIENDLY_Nagrand|r (about 0.5 levels of quests; 2 quests from here hand in there). Then come back to this Terokkar Forest guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Terokkar Forest is planned from level 71.|r Load its guide for level 71 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 62 - 72 Terokkar Forest
-#subweight -62
-#name 71-72 Terokkar Forest
---RouteBuilder:next
-#next Zone Routes (Horde)\68-70 Netherstorm: around Image of Archmage Vargoth;Zone Routes (Horde)\72-75 Dragonblight;Zone Routes (Horde)\70-72 Howling Fjord: around Lurielle
-
+    .xp 71 >>|cRXP_WARN_The rest of Terokkar Forest is planned from level 71.|r Come back to this guide then
 step
     .goto 111,54.75,44.32
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khadgar|r
@@ -1860,5 +1832,5 @@ step
     >>|cRXP_FRIENDLY_Shadowmoon Valley|r: The Bundle of Bloodthistle, Entry Into the Black Temple
     >>|cRXP_FRIENDLY_The Black Morass|r: The Master's Touch
 step
-    +|cRXP_WARN_Suggested next zones at level 71|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.1 levels of quests, starting around Image of Archmage Vargoth), |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests, starting around Aurastrasza), |cRXP_FRIENDLY_Howling Fjord|r (about 0.6 levels of quests, starting around Lurielle). Completing this step loads the guide for Netherstorm --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 71|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.1 levels of quests), |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Howling Fjord|r (about 0.6 levels of quests). Completing this step loads the guide for Netherstorm --RouteBuilder:next
 ]])

@@ -1,9 +1,9 @@
 -- 43-54 Tanaris: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 43, 46, 49).
--- Split into 3 guides, listed under "43 - 50 Tanaris" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 43; part 2 from 46; part 3 from 49.
 -- Edit zones/tbc/Tanaris.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 43 - 50 Tanaris
-#subweight -43
-#name 43-44 Tanaris: around Chief Engineer Bilgewhizzle
+#name 43-54 Tanaris
 --RouteBuilder:next
-#next Zone Routes (Alliance)\43-44 Feralas: around Shandris Feathermoon;Zone Routes (Alliance)\42-43 Stranglethorn Vale: around "Sea Wolf" MacKinley
+#next Zone Routes (Alliance)\50-56 Un'Goro Crater
 
 step << Hunter
     .goto 1446/1,-3949.58,-7356.66
@@ -398,20 +396,9 @@ step
     >>|cRXP_FRIENDLY_Feralas and back here|r: Screecher Spirits, The Super Egg-O-Matic
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Scarab Shells, Troll Temper, Divino-matic Rod
 step
-    +|cRXP_WARN_Suggested next zones at level 43|r: |cRXP_FRIENDLY_Feralas|r (about 0.6 levels of quests, starting around Shandris Feathermoon), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.6 levels of quests, starting around "Sea Wolf" MacKinley). Completing this step loads the guide for Feralas --RouteBuilder:next
+    +|cRXP_WARN_Until level 46, suggested zones|r: |cRXP_FRIENDLY_Feralas|r (about 0.6 levels of quests), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.6 levels of quests). Then come back to this Tanaris guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Tanaris is planned from level 46.|r Load its guide for level 46 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 43 - 50 Tanaris
-#subweight -43
-#name 46-47 Tanaris: around Senior Surveyor Fizzledowser
-
+    .xp 46 >>|cRXP_WARN_The rest of Tanaris is planned from level 46.|r Come back to this guide then
 step
     .goto 1446/1,-3766.04,-7197.50
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Trenton Lighthammer|r
@@ -640,20 +627,7 @@ step
     >>|cRXP_FRIENDLY_another zone|r: Into the Depths, Secret of the Circle
     >>|cRXP_FRIENDLY_The Hinterlands and back here|r: Sprinkle's Secret Ingredient
 step
-    +|cRXP_WARN_The rest of Tanaris is planned from level 49.|r Load its guide for level 49 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 43 - 50 Tanaris
-#subweight -43
-#name 49-50 Tanaris
---RouteBuilder:next
-#next Zone Routes (Alliance)\50-52 Un'Goro Crater: around Torwa Pathfinder
-
+    .xp 49 >>|cRXP_WARN_The rest of Tanaris is planned from level 49.|r Come back to this guide then
 step
     #loop
     .goto 1446/1,-2252.87,-8658.46,0
@@ -822,5 +796,5 @@ step
     >>|cRXP_FRIENDLY_Un'Goro Crater|r: Linken's Sword
     >>|cRXP_FRIENDLY_Un'Goro Crater and back here|r: Super Sticky
 step
-    +|cRXP_WARN_Suggested next zones at level 49|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.0 levels of quests, starting around Torwa Pathfinder; 1 quest from here hands in there). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 49|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.0 levels of quests; 1 quest from here hands in there). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
 ]])

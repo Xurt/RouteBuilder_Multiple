@@ -1,9 +1,9 @@
 -- 35-45 Badlands: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 35, 38, 41).
--- Split into 3 guides, listed under "35 - 42 Badlands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 35; part 2 from 38; part 3 from 41.
 -- Edit zones/tbc/Badlands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 35 - 42 Badlands
-#subweight -35
-#name 35-36 Badlands: around Prospector Ryedol
+#name 35-45 Badlands
 --RouteBuilder:next
-#next Zone Routes (Alliance)\35-37 Dustwallow Marsh: around Captain Garran Vimes;Zone Routes (Alliance)\34-35 Stranglethorn Vale: around Krazek
+#next Zone Routes (Alliance)\30-50 Stranglethorn Vale
 
 step
     .goto 1418/0,-3407.99,-6609.13
@@ -309,22 +307,9 @@ step
     >>|cRXP_FRIENDLY_Stranglethorn Vale and back here|r: Pearl Diving
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Coolant Heads Prevail
 step
-    +|cRXP_WARN_Suggested next zones at level 35|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 2.2 levels of quests, starting around Captain Garran Vimes), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests, starting around Krazek). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
+    +|cRXP_WARN_Until level 38, suggested zones|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 2.2 levels of quests), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests). Then come back to this Badlands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Badlands is planned from level 38.|r Load its guide for level 38 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 35 - 42 Badlands
-#subweight -35
-#name 38-39 Badlands
---RouteBuilder:next
-#next Zone Routes (Alliance)\38-40 Stranglethorn Vale: around Fleet Master Seahorn;Zone Routes (Alliance)\37-39 Dustwallow Marsh: around "Swamp Eye" Jarl;Zone Routes (Alliance)\38-39 Arathi Highlands: around Skuerto
-
+    .xp 38 >>|cRXP_WARN_The rest of Badlands is planned from level 38.|r Come back to this guide then
 step
     .goto 1418/0,-3133.62,-6767.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rigglefuzz|r
@@ -389,22 +374,9 @@ step
     +|cRXP_WARN_That is all of Badlands for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Ironforge|r: To Ironforge for Yagyin's Digest
 step
-    +|cRXP_WARN_Suggested next zones at level 38|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.9 levels of quests, starting around Fleet Master Seahorn), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 0.7 levels of quests, starting around "Swamp Eye" Jarl), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.7 levels of quests, starting around Skuerto). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Until level 41, suggested zones|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.9 levels of quests), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.9 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.7 levels of quests). Then come back to this Badlands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Badlands is planned from level 41.|r Load its guide for level 41 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 35 - 42 Badlands
-#subweight -35
-#name 41-42 Badlands
---RouteBuilder:next
-#next Zone Routes (Alliance)\38-40 Stranglethorn Vale: around Fleet Master Seahorn
-
+    .xp 41 >>|cRXP_WARN_The rest of Badlands is planned from level 41.|r Come back to this guide then
 step
     .goto 1418/0,-3619.92,-6789.39
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Garek|r
@@ -571,5 +543,5 @@ step
     >>|cRXP_FRIENDLY_Loch Modan|r: Murdaloc
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Stone Is Better than Cloth
 step
-    +|cRXP_WARN_Suggested next zones at level 41|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests, starting around Fleet Master Seahorn). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 41|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
 ]])

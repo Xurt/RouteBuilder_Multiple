@@ -1,9 +1,9 @@
 -- 35-46 Dustwallow Marsh: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 35, 40, 43).
--- Split into 3 guides, listed under "35 - 44 Dustwallow Marsh" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 35; part 2 from 40; part 3 from 43.
 -- Edit zones/tbc/Dustwallow Marsh.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 35 - 44 Dustwallow Marsh
-#subweight -35
-#name 35-38 Dustwallow Marsh: around Krog
+#name 35-46 Dustwallow Marsh
 --RouteBuilder:next
-#next Zone Routes (Horde)\37-39 Stranglethorn Vale: around Baron Revilgaz
+#next Zone Routes (Horde)\30-50 Stranglethorn Vale;Zone Routes (Horde)\42-52 Feralas
 
 step
     .goto 1445/1,-2887.05,-3149.13
@@ -728,22 +726,9 @@ step
     >>|cRXP_FRIENDLY_Thunder Bluff|r: The Black Shield
     >>|cRXP_FRIENDLY_Desolace and back here|r: The Infernal Orb << Mage
 step
-    +|cRXP_WARN_Suggested next zones at level 37|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.8 levels of quests, starting around Baron Revilgaz). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Until level 40, suggested zones|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.8 levels of quests). Then come back to this Dustwallow Marsh guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Dustwallow Marsh is planned from level 40.|r Load its guide for level 40 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 35 - 44 Dustwallow Marsh
-#subweight -35
-#name 40-41 Dustwallow Marsh: around Draz'Zilb
---RouteBuilder:next
-#next Zone Routes (Horde)\37-39 Stranglethorn Vale: around Baron Revilgaz
-
+    .xp 40 >>|cRXP_WARN_The rest of Dustwallow Marsh is planned from level 40.|r Come back to this guide then
 step << Mage
     .goto 1445/1,-3393.15,-4031.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
@@ -1051,22 +1036,9 @@ step
     >>|cRXP_FRIENDLY_The Barrens|r: Returning the Cleansed Orb << Warlock
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Tiara of the Deep
 step
-    +|cRXP_WARN_Suggested next zones at level 40|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests, starting around Baron Revilgaz). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Until level 43, suggested zones|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests). Then come back to this Dustwallow Marsh guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Dustwallow Marsh is planned from level 43.|r Load its guide for level 43 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 35 - 44 Dustwallow Marsh
-#subweight -35
-#name 43-44 Dustwallow Marsh
---RouteBuilder:next
-#next Zone Routes (Horde)\41-43 Stranglethorn Vale: around "Sea Wolf" MacKinley;Zone Routes (Horde)\42-43 Feralas: around Hadoken Swiftstrider
-
+    .xp 43 >>|cRXP_WARN_The rest of Dustwallow Marsh is planned from level 43.|r Come back to this guide then
 step
     .goto 1445/1,-2880.22,-3132.68
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Overlord Mok'Morokk|r
@@ -1099,5 +1071,5 @@ step
 step
     +|cRXP_WARN_End of the Dustwallow Marsh route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 43|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests, starting around "Sea Wolf" MacKinley), |cRXP_FRIENDLY_Feralas|r (about 0.6 levels of quests, starting around Hadoken Swiftstrider). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 43|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Feralas|r (about 0.6 levels of quests). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
 ]])

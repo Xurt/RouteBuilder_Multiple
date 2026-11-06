@@ -1,7 +1,7 @@
 Azshara - Alliance - part 1 of 4, planned from level 47
 Guide "47-57 Azshara" in group "Zone Routes (Alliance)": this part has 20 steps, 17 stops
 Written to guides/classic/Azshara (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -95,7 +95,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Azshara - Alliance - part 2 of 4, planned from level 50
 Guide "47-57 Azshara" in group "Zone Routes (Alliance)": this part has 8 steps, 5 stops
 Written to guides/classic/Azshara (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -163,7 +163,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Azshara - Alliance - part 3 of 4, planned from level 53
 Guide "47-57 Azshara" in group "Zone Routes (Alliance)": this part has 27 steps, 25 stops
 Written to guides/classic/Azshara (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -235,7 +235,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Azshara - Alliance - part 4 of 4, planned from level 56
 Guide "47-57 Azshara" in group "Zone Routes (Alliance)": this part has 24 steps, 22 stops
 Written to guides/classic/Azshara (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 

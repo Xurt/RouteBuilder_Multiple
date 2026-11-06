@@ -13,12 +13,12 @@
       "start": 55,
       "end": 55.75,
       "next": 58,
-      "guide": "55-56 Eastern Plaguelands: around Tirion Fordring",
+      "guide": "55-60 Eastern Plaguelands",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Tirion Fordring",
-          "guide": "55-56 Eastern Plaguelands: around Tirion Fordring",
+          "label": "",
+          "name": "start",
+          "guide": "55-60 Eastern Plaguelands",
           "level": 55,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 58,
       "end": 58.27,
       "next": 61,
-      "guide": "58-59 Eastern Plaguelands",
+      "guide": "55-60 Eastern Plaguelands",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "58-59 Eastern Plaguelands",
+          "guide": "55-60 Eastern Plaguelands",
           "level": 58,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 61,
       "end": 61.02,
-      "guide": "61-62 Eastern Plaguelands",
+      "guide": "55-60 Eastern Plaguelands",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "61-62 Eastern Plaguelands",
+          "guide": "55-60 Eastern Plaguelands",
           "level": 61,
           "index": 0
         }

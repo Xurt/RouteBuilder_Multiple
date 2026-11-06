@@ -1,9 +1,9 @@
 -- 21-26 Ashenvale: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 21, 28).
--- Split into 2 guides, listed under "21 - 29 Ashenvale" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 21; part 2 from 28.
 -- Edit zones/mop/Ashenvale.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 21 - 29 Ashenvale
-#subweight -21
-#name 21-26 Ashenvale: around Commander Grimfang
+#name 21-26 Ashenvale
 --RouteBuilder:next
-#next Zone Routes (Horde)\25-30 Northern Stranglethorn;Zone Routes (Horde)\22-27 Hillsbrad Foothills: around Serge Hinott;Zone Routes (Horde)\26-31 Arathi Highlands
+#next Zone Routes (Horde)\25-30 Northern Stranglethorn;Zone Routes (Horde)\26-31 Arathi Highlands;Zone Routes (Horde)\20-25 Hillsbrad Foothills
 
 step
     .goto 63,26.68,36.89
@@ -1279,23 +1277,10 @@ step
     >>|cRXP_FRIENDLY_Orgrimmar|r: All Apologies, Well, Come to the Jungle << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Silverpine Forest|r: Until Death Do Us Part << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_The Barrens|r: Warchief's Command: Northern Barrens!, To The Ramparts!, Final Report, Crisis at Splintertree << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 25|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.4 levels of quests, starting around Hemet Nesingwary Jr.), |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.8 levels of quests, starting around Serge Hinott), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.8 levels of quests, starting around Galen Trollbane). Completing this step loads the guide for Northern Stranglethorn --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Ashenvale is planned from level 28.|r Load its guide for level 28 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 21 - 29 Ashenvale
-#subweight -21
-#name 28-29 Ashenvale
---RouteBuilder:next
-#next Zone Routes (Horde)\25-30 Northern Stranglethorn;Zone Routes (Horde)\26-31 Arathi Highlands;Zone Routes (Horde)\22-27 Hillsbrad Foothills: around Serge Hinott
-
+    +|cRXP_WARN_Until level 28, suggested zones|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.4 levels of quests), |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.9 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.8 levels of quests). Then come back to this Ashenvale guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 28 >>|cRXP_WARN_The rest of Ashenvale is planned from level 28.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 63,49.88,65.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Blood Guard Aldo Rockrain|r
@@ -1310,5 +1295,5 @@ step
     +|cRXP_WARN_End of the Ashenvale route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Stonetalon Mountains|r: We're Here to Do One Thing, Maybe Two... << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 28|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.2 levels of quests, starting around Hemet Nesingwary Jr.), |cRXP_FRIENDLY_Arathi Highlands|r (about 1.1 levels of quests, starting around Galen Trollbane), |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.6 levels of quests, starting around Serge Hinott). Completing this step loads the guide for Northern Stranglethorn --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 28|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.2 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 1.1 levels of quests), |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.6 levels of quests). Completing this step loads the guide for Northern Stranglethorn --RouteBuilder:next
 ]])

@@ -1,9 +1,9 @@
 -- 1-12 Elwynn Forest: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 1, 12, 15).
--- Split into 4 guides, listed under "1 - 16 Elwynn Forest" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 1; part 2 from 12; part 3 from 15.
 -- Edit zones/tbc/Elwynn Forest.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 1 - 16 Elwynn Forest
-#subweight -1
-#name 1-5 Elwynn Forest: around Marshal McBride
-#next Zone Routes (Alliance)\5-10 Elwynn Forest: around Marshal Dughan
+#name 1-12 Elwynn Forest
+--RouteBuilder:next
+#next Zone Routes (Alliance)\10-21 Bloodmyst Isle;Zone Routes (Alliance)\10-22 Darkshore;Zone Routes (Alliance)\10-22 Loch Modan
 
 step << Human Warlock/Gnome Warlock
     .goto 1429/0,-195.49,-8926.75
@@ -454,19 +453,6 @@ step << Warlock
     .turnin 1715 >>Turn in The Slaughtered Lamb
     .target Gakin the Darkbinder
     .isOnQuest 1715
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 16 Elwynn Forest
-#subweight -1
-#name 5-10 Elwynn Forest: around Marshal Dughan
---RouteBuilder:next
-#next Zone Routes (Alliance)\5-10 Azuremyst Isle: around Daedal;Zone Routes (Alliance)\10-13 Westfall: around Farmer Saldean;Zone Routes (Alliance)\10-15 Darkshore: around Thundris Windweaver
-
 step
     #completewith next
     .zone 1429 >>Leave Stormwind City for Elwynn Forest
@@ -475,11 +461,6 @@ step
     .goto 1429/0,73.85,-9465.59
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marshal Dughan|r
     .turnin 54 >>Turn in Report to Goldshire
-    .target Marshal Dughan
-    .isOnQuest 54
-step
-    .goto 1429/0,73.85,-9465.59
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marshal Dughan|r
     .accept 62 >>Accept The Fargodeep Mine
     .target Marshal Dughan
 step
@@ -492,7 +473,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Farley|r
     .turnin 2158 >>Turn in Rest and Relaxation
     .target Innkeeper Farley
-    .isOnQuest 2158
 step
     .goto 1429/0,-5.63,-9466.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cylina Darkheart|r
@@ -595,7 +575,7 @@ step
     .accept 86 >>Accept Pie for Billy
     .target Billy Maclure
 step
-    #completewith Along53
+    #completewith Along52
     >>As you go: Kill |cRXP_ENEMY_Stonetusk Boars|r, |cRXP_ENEMY_Longsnouts|r, |cRXP_ENEMY_Princess|r and |cRXP_ENEMY_Porcine Entourages|r. Loot them for |cRXP_LOOT_Chunk of Boar Meat|r. |cRXP_WARN_Anything left is finished later|r
     .complete 86,1 --Chunk of Boar Meat (4)
     .mob Stonetusk Boar
@@ -608,7 +588,7 @@ step
     .accept 106 >>Accept Young Lovers
     .target Maybell Maclure
 step
-    #label Along53
+    #label Along52
     .goto 1429/0,499.72,-9930.12
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tommy Joe Stonefield|r
     .turnin 106 >>Turn in Young Lovers
@@ -639,7 +619,7 @@ step
     .accept 84 >>Accept Back to Billy
     .target "Auntie" Bernice Stonefield
 step
-    #completewith Along56
+    #completewith Along55
     >>As you go: Kill |cRXP_ENEMY_Kobold Miners|r, |cRXP_ENEMY_Goldtooths|r, |cRXP_ENEMY_Kobold Tunnelers|r and |cRXP_ENEMY_Kobold Geomancers|r. Loot them for |cRXP_LOOT_Large Candle|r. Kill |cRXP_ENEMY_Kobold Miners|r, |cRXP_ENEMY_Goldtooths|r, |cRXP_ENEMY_Kobold Tunnelers|r and |cRXP_ENEMY_Kobold Geomancers|r. Loot them for |cRXP_LOOT_Gold Dust|r. |cRXP_WARN_Anything left is finished later|r
     .complete 60,1 --Large Candle (8)
     .complete 47,1 --Gold Dust (10)
@@ -648,7 +628,7 @@ step
     .mob Kobold Tunneler
     .mob Kobold Geomancer
 step
-    #label Along56
+    #label Along55
     .goto 1429/0,322.71,-9880.59
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gramma Stonefield|r
     .turnin 111 >>Turn in Speak with Gramma
@@ -831,22 +811,22 @@ step
     .target Rallic Finn
     .subzoneskip 88,1
 step
-    #completewith Along71
+    #completewith Along70
     >>As you go: Pick up |cRXP_PICK_Bundle of Wood|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 5545,1 --Bundle of Wood (8)
 step
-    #label Along71
+    #label Along70
     .goto 1429/0,-1234.31,-9224.18
     >>Click the |cRXP_PICK_Rolf's corpse|r
     .turnin 45 >>Turn in Discover Rolf's Fate
     .accept 71 >>Accept Report to Thomas
 step
-    #completewith Along72
+    #completewith Along71
     >>As you go: Kill |cRXP_ENEMY_Young Forest Bears|r. |cRXP_WARN_Anything left is finished later|r
     .complete 52,2 --Young Forest Bear slain (5)
     .mob Young Forest Bear
 step
-    #label Along72
+    #label Along71
     #loop
     .goto 1429/0,-1285.33,-9364.90,0
     .goto 1429/0,-1285.33,-9364.90,40,0
@@ -1191,23 +1171,10 @@ step << Warrior/Paladin/Rogue
 step
     +|cRXP_WARN_That is all of Elwynn Forest for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Westfall|r: Furlbrow's Deed, Report to Gryan Stoutmantle
-step
-    +|cRXP_WARN_Suggested next zones at level 9|r: |cRXP_FRIENDLY_Azuremyst Isle|r (about 1.7 levels of quests, starting around Daedal), |cRXP_FRIENDLY_Westfall|r (about 1.6 levels of quests, starting around Farmer Saldean), |cRXP_FRIENDLY_Darkshore|r (about 1.4 levels of quests, starting around Thundris Windweaver). Completing this step loads the guide for Azuremyst Isle --RouteBuilder:next
 step << Warrior/Warlock/Mage/Rogue/NightElf Priest/Human Priest/Dwarf Priest/NightElf Druid/NightElf Hunter/Dwarf Hunter
-    +|cRXP_WARN_The rest of Elwynn Forest is planned from level 12.|r Load its guide for level 12 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Warrior/Warlock/Mage/Rogue/NightElf Priest/Human Priest/Dwarf Priest/NightElf Druid/NightElf Hunter/Dwarf Hunter
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 16 Elwynn Forest
-#subweight -1
-#name 12-13 Elwynn Forest
---RouteBuilder:next
-#next Zone Routes (Alliance)\10-15 Darkshore: around Thundris Windweaver;Zone Routes (Alliance)\10-13 Westfall: around Farmer Saldean;Zone Routes (Alliance)\10-12 Bloodmyst Isle: around Morae
-
+    +|cRXP_WARN_Until level 12, suggested zones|r: |cRXP_FRIENDLY_Teldrassil|r (about 2.5 levels of quests), |cRXP_FRIENDLY_Azuremyst Isle|r (about 2.1 levels of quests), |cRXP_FRIENDLY_Dun Morogh|r (about 1.6 levels of quests). Then come back to this Elwynn Forest guide --RouteBuilder:next
+step << Warrior/Warlock/Mage/Rogue/NightElf Priest/Human Priest/Dwarf Priest/NightElf Druid/NightElf Hunter/Dwarf Hunter
+    .xp 12 >>|cRXP_WARN_The rest of Elwynn Forest is planned from level 12.|r Come back to this guide then
 step << Rogue
     .goto 1429/0,12.76,-9465.82
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Keryn Sylvius|r
@@ -1558,22 +1525,9 @@ step
     >>|cRXP_FRIENDLY_Teldrassil|r: The Hunter's Path << NightElf Hunter
     >>|cRXP_FRIENDLY_Westfall|r: Return to Lewis << Human
 step
-    +|cRXP_WARN_Suggested next zones at level 12|r: |cRXP_FRIENDLY_Darkshore|r (about 2.2 levels of quests, starting around Thundris Windweaver), |cRXP_FRIENDLY_Westfall|r (about 1.1 levels of quests, starting around Farmer Saldean), |cRXP_FRIENDLY_Bloodmyst Isle|r (about 0.9 levels of quests, starting around Morae). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 15, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 2.2 levels of quests), |cRXP_FRIENDLY_Teldrassil|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Westfall|r (about 1.1 levels of quests). Then come back to this Elwynn Forest guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Elwynn Forest is planned from level 15.|r Load its guide for level 15 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 16 Elwynn Forest
-#subweight -1
-#name 15-16 Elwynn Forest
---RouteBuilder:next
-#next Zone Routes (Alliance)\14-18 Bloodmyst Isle: around Vindicator Boros;Zone Routes (Alliance)\10-15 Darkshore: around Thundris Windweaver;Zone Routes (Alliance)\14-15 Loch Modan
-
+    .xp 15 >>|cRXP_WARN_The rest of Elwynn Forest is planned from level 15.|r Come back to this guide then
 step << Human Paladin
     .goto 1429/0,108.90,-9468.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brother Wilhelm|r
@@ -1750,5 +1704,5 @@ step
     >>|cRXP_FRIENDLY_Ironforge|r: Tome of Divinity << Dwarf Paladin
     >>|cRXP_FRIENDLY_Hillsbrad Foothills and back here|r: A Donation of Wool
 step
-    +|cRXP_WARN_Suggested next zones at level 15|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.9 levels of quests, starting around Vindicator Boros), |cRXP_FRIENDLY_Darkshore|r (about 1.7 levels of quests, starting around Thundris Windweaver), |cRXP_FRIENDLY_Loch Modan|r (about 0.6 levels of quests). Completing this step loads the guide for Bloodmyst Isle --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 15|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.9 levels of quests), |cRXP_FRIENDLY_Darkshore|r (about 1.7 levels of quests), |cRXP_FRIENDLY_Loch Modan|r (about 0.6 levels of quests). Completing this step loads the guide for Bloodmyst Isle --RouteBuilder:next
 ]])

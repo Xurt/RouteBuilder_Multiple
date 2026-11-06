@@ -1,9 +1,9 @@
 -- 50-61 Blasted Lands: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 50, 59, 62).
--- Split into 3 guides, listed under "50 - 63 Blasted Lands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 50; part 2 from 59; part 3 from 62.
 -- Edit zones/tbc/Blasted Lands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 50 - 63 Blasted Lands
-#subweight -50
-#name 50-51 Blasted Lands: around Bloodmage Drazial
+#name 50-61 Blasted Lands
 --RouteBuilder:next
-#next Zone Routes (Alliance)\50-52 Un'Goro Crater: around Torwa Pathfinder
+#next Zone Routes (Alliance)\62-70 Terokkar Forest;Zone Routes (Alliance)\58-63 Hellfire Peninsula;Zone Routes (Alliance)\62-65 Zangarmarsh
 
 step
     .goto 1419/0,-2935.09,-10883.80
@@ -235,22 +233,9 @@ step
     >>|cRXP_FRIENDLY_Swamp of Sorrows|r: Petty Squabbles
     >>|cRXP_FRIENDLY_The Hinterlands|r: Return to the Hinterlands
 step
-    +|cRXP_WARN_Suggested next zones at level 50|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.7 levels of quests, starting around Torwa Pathfinder). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
+    +|cRXP_WARN_Until level 59, suggested zones|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.7 levels of quests). Then come back to this Blasted Lands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Blasted Lands is planned from level 59.|r Load its guide for level 59 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 50 - 63 Blasted Lands
-#subweight -50
-#name 59-60 Blasted Lands
---RouteBuilder:next
-#next Zone Routes (Alliance)\58-61 Hellfire Peninsula: around Assistant Klatu
-
+    .xp 59 >>|cRXP_WARN_The rest of Blasted Lands is planned from level 59.|r Come back to this guide then
 step
     .goto 1419/0,-3195.39,-11815.10
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Watch Commander Relthorn Netherwane|r
@@ -267,23 +252,10 @@ step
     +|cRXP_WARN_That is all of Blasted Lands for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Hellfire Peninsula|r: Through the Dark Portal
     >>|cRXP_FRIENDLY_Swamp of Sorrows|r: The Cover of Darkness
-step
-    +|cRXP_WARN_Suggested next zones at level 59|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 1.4 levels of quests, starting around Assistant Klatu; 1 quest from here hands in there). Completing this step loads the guide for Hellfire Peninsula --RouteBuilder:next
 step << Warlock
-    +|cRXP_WARN_The rest of Blasted Lands is planned from level 62.|r Load its guide for level 62 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Warlock
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 50 - 63 Blasted Lands
-#subweight -50
-#name 62-63 Blasted Lands
---RouteBuilder:next
-#next Zone Routes (Alliance)\62-64 Terokkar Forest: around Jenai Starwhisper;Zone Routes (Alliance)\58-61 Hellfire Peninsula: around Assistant Klatu;Zone Routes (Alliance)\62-63 Zangarmarsh: around Ysiel Windsinger
-
+    +|cRXP_WARN_Until level 62, suggested zones|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 1.4 levels of quests; 1 quest from here hands in there). Then come back to this Blasted Lands guide --RouteBuilder:next
+step << Warlock
+    .xp 62 >>|cRXP_WARN_The rest of Blasted Lands is planned from level 62.|r Come back to this guide then
 step << Warlock
     .goto 1419/0,-2385.02,-11686.46
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daio the Decrepit|r
@@ -326,5 +298,5 @@ step
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Prison's Bindings << Warlock
     >>|cRXP_FRIENDLY_Winterspring and back here|r: The Prison's Casing << Warlock
 step
-    +|cRXP_WARN_Suggested next zones at level 62|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.9 levels of quests, starting around Jenai Starwhisper), |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.6 levels of quests, starting around Assistant Klatu; 1 quest from here hands in there), |cRXP_FRIENDLY_Zangarmarsh|r (about 0.6 levels of quests, starting around Ysiel Windsinger). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 62|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.9 levels of quests), |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.6 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Zangarmarsh|r (about 0.6 levels of quests). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
 ]])

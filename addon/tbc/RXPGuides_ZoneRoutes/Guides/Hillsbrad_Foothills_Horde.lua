@@ -1,9 +1,9 @@
 -- 20-40 Hillsbrad Foothills: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 5 parts (from level 20, 23, 27, 30, 35).
--- Split into 5 guides, listed under "20 - 36 Hillsbrad Foothills" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 20; part 2 from 23; part 3 from 27; part 4 from 30; part 5 from 35.
 -- Edit zones/tbc/Hillsbrad Foothills.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 20 - 36 Hillsbrad Foothills
-#subweight -20
-#name 20-21 Hillsbrad Foothills: around Apothecary Lydon
+#name 20-40 Hillsbrad Foothills
 --RouteBuilder:next
-#next Zone Routes (Horde)\18-20 The Barrens: around Tonga Runetotem
+#next Zone Routes (Horde)\35-46 Dustwallow Marsh;Zone Routes (Horde)\30-50 Stranglethorn Vale;Zone Routes (Horde)\32-42 Arathi Highlands
 
 step
     .goto 1424/0,401.39,-611.20
@@ -336,20 +334,9 @@ step
     >>|cRXP_FRIENDLY_Thunder Bluff|r: Return to Thunder Bluff
     >>|cRXP_FRIENDLY_Alterac Mountains and back here|r: WANTED: Baron Vardus
 step
-    +|cRXP_WARN_Suggested next zones at level 20|r: |cRXP_FRIENDLY_The Barrens|r (about 0.9 levels of quests, starting around Tonga Runetotem). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Until level 23, suggested zones|r: |cRXP_FRIENDLY_The Barrens|r (about 0.9 levels of quests). Then come back to this Hillsbrad Foothills guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 23.|r Load its guide for level 23 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 20 - 36 Hillsbrad Foothills
-#subweight -20
-#name 23-24 Hillsbrad Foothills: around High Executor Darthalia
-
+    .xp 23 >>|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 23.|r Come back to this guide then
 step
     .goto 1424/0,-935.25,-24.75
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kayren Soothallow|r
@@ -529,18 +516,7 @@ step
     .target High Executor Darthalia
     .isQuestComplete 566
 step
-    +|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 27.|r Load its guide for level 27 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 20 - 36 Hillsbrad Foothills
-#subweight -20
-#name 27-28 Hillsbrad Foothills: around Apothecary Lydon
-
+    .xp 27 >>|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 27.|r Come back to this guide then
 step
     .goto 1424/0,-935.25,-19.41
     >>Click the |cRXP_PICK_Dangerous!|r
@@ -646,18 +622,7 @@ step
     +|cRXP_WARN_That is all of Hillsbrad Foothills for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Undercity|r: Elixir of Agony
 step
-    +|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 30.|r Load its guide for level 30 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 20 - 36 Hillsbrad Foothills
-#subweight -20
-#name 30-31 Hillsbrad Foothills: around High Executor Darthalia
-
+    .xp 30 >>|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 30.|r Come back to this guide then
 step
     .goto 1424/0,-927.89,-36.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Executor Darthalia|r
@@ -936,20 +901,7 @@ step
     >>|cRXP_FRIENDLY_Undercity|r: Battle of Hillsbrad
     >>|cRXP_FRIENDLY_Alterac Mountains and back here|r: Stone Tokens, Helcular's Revenge, Infiltration, Prison Break In
 step
-    +|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 35.|r Load its guide for level 35 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 20 - 36 Hillsbrad Foothills
-#subweight -20
-#name 35-36 Hillsbrad Foothills
---RouteBuilder:next
-#next Zone Routes (Horde)\35-38 Dustwallow Marsh: around Krog;Zone Routes (Horde)\33-35 Stranglethorn Vale: around Kebok;Zone Routes (Horde)\35-36 Arathi Highlands: around Tor'gan
-
+    .xp 35 >>|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 35.|r Come back to this guide then
 step
     .goto 1424/0,-901.33,-46.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Keeper Bel'varil|r
@@ -1038,5 +990,5 @@ step
     >>|cRXP_FRIENDLY_Undercity|r: The Crown of Will
     >>|cRXP_FRIENDLY_Alterac Mountains and back here|r: The Crown of Will
 step
-    +|cRXP_WARN_Suggested next zones at level 35|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.4 levels of quests, starting around Krog), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests, starting around Kebok), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.5 levels of quests, starting around Tor'gan). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 35|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.4 levels of quests), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.5 levels of quests). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
 ]])

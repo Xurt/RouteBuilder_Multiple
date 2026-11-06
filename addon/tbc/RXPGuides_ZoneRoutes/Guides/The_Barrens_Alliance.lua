@@ -1,9 +1,9 @@
 -- 14-31 The Barrens: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 6 parts (from level 14, 17, 21, 24, 31, 34).
--- Split into 6 guides, listed under "14 - 35 The Barrens" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 14; part 2 from 17; part 3 from 21; part 4 from 24; part 5 from 31; part 6 from 34.
 -- Edit zones/tbc/The Barrens.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 14 - 35 The Barrens
-#subweight -14
-#name 14-15 The Barrens: around Gazlowe
+#name 14-31 The Barrens
 --RouteBuilder:next
-#next Zone Routes (Alliance)\10-15 Darkshore: around Thundris Windweaver;Zone Routes (Alliance)\14-18 Bloodmyst Isle: around Vindicator Boros;Zone Routes (Alliance)\10-13 Westfall: around Farmer Saldean
+#next Zone Routes (Alliance)\35-41 Dustwallow Marsh;Zone Routes (Alliance)\30-50 Stranglethorn Vale
 
 step
     .goto 1413/1,-3703.32,-783.94
@@ -203,22 +201,9 @@ step << Warlock
     .target Takar the Seer
     .isOnQuest 1716
 step
-    +|cRXP_WARN_Suggested next zones at level 14|r: |cRXP_FRIENDLY_Darkshore|r (about 2.2 levels of quests, starting around Thundris Windweaver), |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.6 levels of quests, starting around Vindicator Boros), |cRXP_FRIENDLY_Westfall|r (about 0.7 levels of quests, starting around Farmer Saldean). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 17, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 2.2 levels of quests), |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Westfall|r (about 0.7 levels of quests). Then come back to this The Barrens guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of The Barrens is planned from level 17.|r Load its guide for level 17 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 14 - 35 The Barrens
-#subweight -14
-#name 17-18 The Barrens
---RouteBuilder:next
-#next Zone Routes (Alliance)\14-18 Bloodmyst Isle: around Vindicator Boros;Zone Routes (Alliance)\17-19 Darkshore: around Terenthis
-
+    .xp 17 >>|cRXP_WARN_The rest of The Barrens is planned from level 17.|r Come back to this guide then
 step
     .goto 1413/1,-3104.44,1109.16
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wizzlecrank's Shredder|r
@@ -288,23 +273,10 @@ step
     >>|cRXP_FRIENDLY_Darnassus|r: In Nightmares
     >>|cRXP_FRIENDLY_Stonetalon Mountains|r: Ziz Fizziks, Further Instructions
     >>|cRXP_FRIENDLY_Stonetalon Mountains and back here|r: Deepmoss Spider Eggs
-step
-    +|cRXP_WARN_Suggested next zones at level 17|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.6 levels of quests, starting around Vindicator Boros), |cRXP_FRIENDLY_Darkshore|r (about 1.1 levels of quests, starting around Terenthis). Completing this step loads the guide for Bloodmyst Isle --RouteBuilder:next
 step << Warlock
-    +|cRXP_WARN_The rest of The Barrens is planned from level 21.|r Load its guide for level 21 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Warlock
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 14 - 35 The Barrens
-#subweight -14
-#name 21-22 The Barrens
---RouteBuilder:next
-#next Zone Routes (Alliance)\21-22 Ashenvale;Zone Routes (Alliance)\20-21 Duskwood: around Elaine Carevin
-
+    +|cRXP_WARN_Until level 21, suggested zones|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Darkshore|r (about 1.1 levels of quests). Then come back to this The Barrens guide --RouteBuilder:next
+step << Warlock
+    .xp 21 >>|cRXP_WARN_The rest of The Barrens is planned from level 21.|r Come back to this guide then
 step << Warlock
     .goto 1413/1,-2373.83,-2252.75
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Doan Karhan|r
@@ -346,22 +318,9 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: Heartswood, What Is Love? << Warlock
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Orb of Soran'ruk << Warlock
 step
-    +|cRXP_WARN_Suggested next zones at level 21|r: |cRXP_FRIENDLY_Ashenvale|r (about 0.6 levels of quests), |cRXP_FRIENDLY_Duskwood|r (about 0.5 levels of quests, starting around Elaine Carevin). Completing this step loads the guide for Ashenvale --RouteBuilder:next
+    +|cRXP_WARN_Until level 24, suggested zones|r: |cRXP_FRIENDLY_Ashenvale|r (about 0.6 levels of quests), |cRXP_FRIENDLY_Duskwood|r (about 0.5 levels of quests). Then come back to this The Barrens guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of The Barrens is planned from level 24.|r Load its guide for level 24 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 14 - 35 The Barrens
-#subweight -14
-#name 24-25 The Barrens
---RouteBuilder:next
-#next Zone Routes (Alliance)\24-25 Duskwood: around Clerk Daltry
-
+    .xp 24 >>|cRXP_WARN_The rest of The Barrens is planned from level 24.|r Come back to this guide then
 step
     .goto 1413/1,-3697.24,-929.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mebok Mizzyrix|r
@@ -396,23 +355,10 @@ step << Warlock
 step
     +|cRXP_WARN_That is all of The Barrens for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Blueleaf Tubers
-step
-    +|cRXP_WARN_Suggested next zones at level 24|r: |cRXP_FRIENDLY_Duskwood|r (about 0.5 levels of quests, starting around Clerk Daltry). Completing this step loads the guide for Duskwood --RouteBuilder:next
 step << Warlock
-    +|cRXP_WARN_The rest of The Barrens is planned from level 31.|r Load its guide for level 31 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Warlock
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 14 - 35 The Barrens
-#subweight -14
-#name 31-32 The Barrens
---RouteBuilder:next
-#next Zone Routes (Alliance)\30-32 Stranglethorn Vale: around Krazek;Zone Routes (Alliance)\31-32 Desolace: around Kreldig Ungor
-
+    +|cRXP_WARN_Until level 31, suggested zones|r: |cRXP_FRIENDLY_Duskwood|r (about 0.5 levels of quests). Then come back to this The Barrens guide --RouteBuilder:next
+step << Warlock
+    .xp 31 >>|cRXP_WARN_The rest of The Barrens is planned from level 31.|r Come back to this guide then
 step << Warlock
     .goto 1413/1,-3723.59,-785.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Strahad Farsan|r
@@ -513,23 +459,10 @@ step
     >>|cRXP_FRIENDLY_Alterac Mountains|r: The Windwatcher << Warrior
     >>|cRXP_FRIENDLY_Ironforge|r: Tome of the Cabal << Warlock
     >>|cRXP_FRIENDLY_Stranglethorn Vale|r: Passage to Booty Bay
-step
-    +|cRXP_WARN_Suggested next zones at level 31|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.6 levels of quests, starting around Krazek; 2 quests from here hand in there), |cRXP_FRIENDLY_Desolace|r (about 0.5 levels of quests, starting around Kreldig Ungor). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
 step << Warlock
-    +|cRXP_WARN_The rest of The Barrens is planned from level 34.|r Load its guide for level 34 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Warlock
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 14 - 35 The Barrens
-#subweight -14
-#name 34-35 The Barrens
---RouteBuilder:next
-#next Zone Routes (Alliance)\35-37 Dustwallow Marsh: around Captain Garran Vimes;Zone Routes (Alliance)\34-35 Stranglethorn Vale: around Krazek
-
+    +|cRXP_WARN_Until level 34, suggested zones|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.6 levels of quests; 2 quests from here hand in there), |cRXP_FRIENDLY_Desolace|r (about 0.5 levels of quests). Then come back to this The Barrens guide --RouteBuilder:next
+step << Warlock
+    .xp 34 >>|cRXP_WARN_The rest of The Barrens is planned from level 34.|r Come back to this guide then
 step << Warlock
     .goto 1413/1,-3711.43,-782.59
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Menara Voidrender|r
@@ -578,5 +511,5 @@ step
     +|cRXP_WARN_End of the The Barrens route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Components for the Enchanted Gold Bloodrobe << Warlock
 step
-    +|cRXP_WARN_Suggested next zones at level 34|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 2.8 levels of quests, starting around Captain Garran Vimes), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.6 levels of quests, starting around Krazek). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 34|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 2.8 levels of quests), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.6 levels of quests). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
 ]])

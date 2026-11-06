@@ -12,21 +12,14 @@
       "part": 1,
       "start": 11,
       "end": 19,
-      "guide": "15-19 Loch Modan: around Mountaineer Kadrell",
+      "guide": "11-20 Loch Modan",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Captain Rugelfuss",
-          "guide": "11-15 Loch Modan: around Captain Rugelfuss",
+          "label": "",
+          "name": "start",
+          "guide": "11-20 Loch Modan",
           "level": 11,
           "index": 0
-        },
-        {
-          "label": "RBSection1_2",
-          "name": "around Mountaineer Kadrell",
-          "guide": "15-19 Loch Modan: around Mountaineer Kadrell",
-          "level": 15,
-          "index": 1
         }
       ]
     }
@@ -48,7 +41,7 @@
       "req": 12,
       "xp": 1350,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -67,7 +60,7 @@
       "req": 12,
       "xp": 270,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
       "from": "Dun Morogh"
     },
@@ -86,7 +79,7 @@
       "req": 14,
       "xp": 880,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -95,7 +88,7 @@
       "req": 12,
       "xp": 1150,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -113,7 +106,7 @@
       "req": 12,
       "xp": 1450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -140,7 +133,7 @@
       "req": 8,
       "xp": 1450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -149,7 +142,7 @@
       "req": 8,
       "xp": 1450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -158,7 +151,7 @@
       "req": 8,
       "xp": 1600,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -167,7 +160,7 @@
       "req": 8,
       "xp": 1450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -176,7 +169,7 @@
       "req": 8,
       "xp": 2050,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -376,7 +369,7 @@
       "req": 14,
       "xp": 1450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -385,7 +378,7 @@
       "req": 14,
       "xp": 1450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -394,7 +387,7 @@
       "req": 14,
       "xp": 1450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -403,7 +396,7 @@
       "req": 14,
       "xp": 1450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -412,7 +405,7 @@
       "req": 14,
       "xp": 1450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -421,7 +414,7 @@
       "req": 14,
       "xp": 1450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -430,7 +423,7 @@
       "req": 15,
       "xp": 1600,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -439,7 +432,7 @@
       "req": 15,
       "xp": 680,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -448,7 +441,7 @@
       "req": 15,
       "xp": 2050,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -457,7 +450,7 @@
       "req": 15,
       "xp": 680,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -466,7 +459,7 @@
       "req": 14,
       "xp": 1700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -475,7 +468,7 @@
       "req": 14,
       "xp": 1600,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -484,7 +477,7 @@
       "req": 14,
       "xp": 1450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -493,7 +486,7 @@
       "req": 14,
       "xp": 680,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -502,7 +495,7 @@
       "req": 14,
       "xp": 1700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -511,7 +504,7 @@
       "req": 14,
       "xp": 1700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -520,7 +513,7 @@
       "req": 14,
       "xp": 2200,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -529,7 +522,7 @@
       "req": 15,
       "xp": 680,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -538,7 +531,7 @@
       "req": 15,
       "xp": 1350,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {

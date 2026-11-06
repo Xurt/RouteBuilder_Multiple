@@ -1,7 +1,7 @@
 Hillsbrad Foothills - Horde
-Guide "20-25 Hillsbrad Foothills" in group "Zone Routes (Horde)": 201 steps, 179 stops
+Guide "20-25 Hillsbrad Foothills" in group "Zone Routes (Horde)": 187 steps, 162 stops
 Written to guides/mop/Hillsbrad Foothills (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -35,7 +35,7 @@ Step order kept from the last build (locks folder): 1 steps kept, 226 new ones s
   everyone (quests that depend on other zones): 4 more tasks; their whole route comes to 24,347 yd; ends at level 26.9; 1 hearth
   BloodElf (quests that depend on other zones): 5 more tasks; their whole route comes to 24,777 yd; ends at level 26.9; 1 hearth
 Hearthstone: set at Sergeant Hartman (Sergeant Hartman's inn); 1 hearth step in the guide.
-8 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+12 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 7 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 2 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
 

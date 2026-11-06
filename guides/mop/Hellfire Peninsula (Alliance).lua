@@ -1,9 +1,9 @@
 -- 60-63 Hellfire Peninsula: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 60, 67).
--- Split into 2 guides, listed under "60 - 68 Hellfire Peninsula" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 60; part 2 from 67.
 -- Edit zones/mop/Hellfire Peninsula.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 60 - 68 Hellfire Peninsula
-#subweight -60
-#name 60-63 Hellfire Peninsula: around Legassi
+#name 60-63 Hellfire Peninsula
 --RouteBuilder:next
-#next Zone Routes (Alliance)\62-65 Terokkar Forest: around Earthbinder Tavgren;Zone Routes (Alliance)\62-64 Zangarmarsh: around Ysiel Windsinger
+#next Zone Routes (Alliance)\68-70 Netherstorm;Zone Routes (Alliance)\65-68 Nagrand;Zone Routes (Alliance)\62-70 Terokkar Forest
 
 step
     .goto 100,54.12,62.60
@@ -1423,23 +1421,10 @@ step
     >>|cRXP_FRIENDLY_Zangarmarsh|r: The Cenarion Expedition, Return to the Marsh
     >>|cRXP_FRIENDLY_Blasted Lands and back here|r: Gaining Mirren's Trust << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: An Ambitious Plan << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 62|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 1.0 levels of quests, starting around Earthbinder Tavgren), |cRXP_FRIENDLY_Zangarmarsh|r (about 0.5 levels of quests, starting around Ysiel Windsinger; 2 quests from here hand in there). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of Hellfire Peninsula is planned from level 67.|r Load its guide for level 67 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 60 - 68 Hellfire Peninsula
-#subweight -60
-#name 67-68 Hellfire Peninsula
---RouteBuilder:next
-#next Zone Routes (Alliance)\68-70 Netherstorm: around Image of Archmage Vargoth;Zone Routes (Alliance)\65-68 Nagrand;Zone Routes (Alliance)\62-65 Terokkar Forest: around Earthbinder Tavgren
-
+    +|cRXP_WARN_Until level 67, suggested zones|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 1.0 levels of quests), |cRXP_FRIENDLY_Zangarmarsh|r (about 0.5 levels of quests; 2 quests from here hand in there). Then come back to this Hellfire Peninsula guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 67 >>|cRXP_WARN_The rest of Hellfire Peninsula is planned from level 67.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 100,79.34,33.86
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wing Commander Gryphongar|r
@@ -1585,5 +1570,5 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
     +|cRXP_WARN_End of the Hellfire Peninsula route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 67|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.5 levels of quests, starting around Image of Archmage Vargoth), |cRXP_FRIENDLY_Nagrand|r (about 0.7 levels of quests, starting around Hemet Nesingwary), |cRXP_FRIENDLY_Terokkar Forest|r (about 0.6 levels of quests, starting around Earthbinder Tavgren). Completing this step loads the guide for Netherstorm --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 67|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.5 levels of quests), |cRXP_FRIENDLY_Nagrand|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Terokkar Forest|r (about 0.6 levels of quests). Completing this step loads the guide for Netherstorm --RouteBuilder:next
 ]])

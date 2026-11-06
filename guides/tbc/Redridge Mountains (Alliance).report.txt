@@ -1,7 +1,7 @@
 Redridge Mountains - Alliance - part 1 of 5, planned from level 14
 Guide "14-26 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 37 steps, 29 stops
 Written to guides/tbc/Redridge Mountains (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -110,7 +110,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Redridge Mountains - Alliance - part 2 of 5, planned from level 17
 Guide "14-26 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 31 steps, 27 stops
 Written to guides/tbc/Redridge Mountains (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -181,7 +181,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Redridge Mountains - Alliance - part 3 of 5, planned from level 20
 Guide "14-26 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 25 steps, 21 stops
 Written to guides/tbc/Redridge Mountains (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -248,7 +248,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Redridge Mountains - Alliance - part 4 of 5, planned from level 23
 Guide "14-26 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 20 steps, 16 stops
 Written to guides/tbc/Redridge Mountains (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -299,7 +299,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Redridge Mountains - Alliance - part 5 of 5, planned from level 26
 Guide "14-26 Redridge Mountains" in group "Zone Routes (Alliance)": this part has 9 steps, 8 stops
 Written to guides/tbc/Redridge Mountains (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

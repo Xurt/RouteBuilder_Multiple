@@ -13,12 +13,12 @@
       "start": 52,
       "end": 52.05,
       "next": 55,
-      "guide": "52-53 Western Plaguelands",
+      "guide": "52-58 Western Plaguelands",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "52-53 Western Plaguelands",
+          "guide": "52-58 Western Plaguelands",
           "level": 52,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 55,
       "end": 55.26,
-      "guide": "55-56 Western Plaguelands",
+      "guide": "52-58 Western Plaguelands",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "55-56 Western Plaguelands",
+          "guide": "52-58 Western Plaguelands",
           "level": 55,
           "index": 0
         }

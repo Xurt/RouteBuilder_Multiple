@@ -1,9 +1,9 @@
 -- 65-70 Blade's Edge Mountains: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 65, 69, 72).
--- Split into 3 guides, listed under "65 - 73 Blade's Edge Mountains" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 65; part 2 from 69; part 3 from 72.
 -- Edit zones/mop/Blade's Edge Mountains.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 65 - 73 Blade's Edge Mountains
-#subweight -65
-#name 65-66 Blade's Edge Mountains: around Tree Warden Chawn
+#name 65-70 Blade's Edge Mountains
 --RouteBuilder:next
-#next Zone Routes (Alliance)\65-68 Nagrand;Zone Routes (Alliance)\62-65 Terokkar Forest: around Earthbinder Tavgren
+#next Zone Routes (Alliance)\71-74 Borean Tundra;Zone Routes (Alliance)\72-75 Dragonblight;Zone Routes (Alliance)\70-72 Howling Fjord
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 105,32.20,91.11
@@ -1142,22 +1140,9 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .turnin 10556 >>Turn in Scratches
     .target Daranelle
 step
-    +|cRXP_WARN_Suggested next zones at level 66|r: |cRXP_FRIENDLY_Nagrand|r (about 0.7 levels of quests, starting around Hemet Nesingwary), |cRXP_FRIENDLY_Terokkar Forest|r (about 0.7 levels of quests, starting around Earthbinder Tavgren). Completing this step loads the guide for Nagrand --RouteBuilder:next
+    +|cRXP_WARN_Until level 69, suggested zones|r: |cRXP_FRIENDLY_Nagrand|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Terokkar Forest|r (about 0.7 levels of quests). Then come back to this Blade's Edge Mountains guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Blade's Edge Mountains is planned from level 69.|r Load its guide for level 69 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 65 - 73 Blade's Edge Mountains
-#subweight -65
-#name 69-70 Blade's Edge Mountains
---RouteBuilder:next
-#next Zone Routes (Alliance)\68-70 Netherstorm: around Image of Archmage Vargoth;Zone Routes (Alliance)\70-73 Howling Fjord: around Lurielle;Zone Routes (Alliance)\65-68 Nagrand
-
+    .xp 69 >>|cRXP_WARN_The rest of Blade's Edge Mountains is planned from level 69.|r Come back to this guide then
 step
     .goto 105,62.16,39.11
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Timeon|r
@@ -1237,22 +1222,9 @@ step
     >>|cRXP_FRIENDLY_Netherstorm|r: Parts for the Rocket-Chief << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Shadowmoon Valley|r: Building a Better Gryphon << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 69|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.3 levels of quests, starting around Image of Archmage Vargoth), |cRXP_FRIENDLY_Howling Fjord|r (about 0.6 levels of quests, starting around Lurielle), |cRXP_FRIENDLY_Nagrand|r (about 0.5 levels of quests, starting around Hemet Nesingwary). Completing this step loads the guide for Netherstorm --RouteBuilder:next
+    +|cRXP_WARN_Until level 72, suggested zones|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.3 levels of quests), |cRXP_FRIENDLY_Howling Fjord|r (about 0.6 levels of quests), |cRXP_FRIENDLY_Nagrand|r (about 0.5 levels of quests). Then come back to this Blade's Edge Mountains guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Blade's Edge Mountains is planned from level 72.|r Load its guide for level 72 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 65 - 73 Blade's Edge Mountains
-#subweight -65
-#name 72-73 Blade's Edge Mountains: around Chu'a'lor
---RouteBuilder:next
-#next Zone Routes (Alliance)\71-74 Borean Tundra: around Elder Atkanok;Zone Routes (Alliance)\72-74 Dragonblight: around Aurastrasza;Zone Routes (Alliance)\70-73 Howling Fjord: around Lurielle
-
+    .xp 72 >>|cRXP_WARN_The rest of Blade's Edge Mountains is planned from level 72.|r Come back to this guide then
 step
     .goto 105,55.43,45.22
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chort|r
@@ -1558,5 +1530,5 @@ step
     +|cRXP_WARN_End of the Blade's Edge Mountains route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Terokkar Forest and back here|r: Even Gronn Have Standards
 step
-    +|cRXP_WARN_Suggested next zones at level 72|r: |cRXP_FRIENDLY_Borean Tundra|r (about 0.9 levels of quests, starting around Elder Atkanok), |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests, starting around Aurastrasza), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests, starting around Lurielle). Completing this step loads the guide for Borean Tundra --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 72|r: |cRXP_FRIENDLY_Borean Tundra|r (about 0.9 levels of quests), |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests). Completing this step loads the guide for Borean Tundra --RouteBuilder:next
 ]])

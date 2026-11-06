@@ -13,21 +13,14 @@
       "start": 1,
       "end": 9.4,
       "next": 12,
-      "guide": "5-10 Azuremyst Isle: around Daedal",
+      "guide": "1-12 Azuremyst Isle",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Proenitus",
-          "guide": "1-5 Azuremyst Isle: around Proenitus",
+          "label": "",
+          "name": "start",
+          "guide": "1-12 Azuremyst Isle",
           "level": 1,
           "index": 0
-        },
-        {
-          "label": "RBSection1_2",
-          "name": "around Daedal",
-          "guide": "5-10 Azuremyst Isle: around Daedal",
-          "level": 5,
-          "index": 1
         }
       ]
     },
@@ -36,12 +29,12 @@
       "start": 12,
       "end": 12.21,
       "next": 15,
-      "guide": "12-13 Azuremyst Isle: around Ruada",
+      "guide": "1-12 Azuremyst Isle",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Ruada",
-          "guide": "12-13 Azuremyst Isle: around Ruada",
+          "label": "",
+          "name": "part 2",
+          "guide": "1-12 Azuremyst Isle",
           "level": 12,
           "index": 0
         }
@@ -51,12 +44,12 @@
       "part": 3,
       "start": 15,
       "end": 15,
-      "guide": "15-16 Azuremyst Isle",
+      "guide": "1-12 Azuremyst Isle",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "15-16 Azuremyst Isle",
+          "guide": "1-12 Azuremyst Isle",
           "level": 15,
           "index": 0
         }
@@ -205,7 +198,7 @@
       "req": 4,
       "xp": 560,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -214,7 +207,7 @@
       "req": 1,
       "xp": 110,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -286,7 +279,7 @@
       "req": 4,
       "xp": 540,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -295,7 +288,7 @@
       "req": 4,
       "xp": 55,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -304,7 +297,7 @@
       "req": 4,
       "xp": 405,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -313,7 +306,7 @@
       "req": 4,
       "xp": 540,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Draenei"
     },
     {
@@ -322,7 +315,7 @@
       "req": 5,
       "xp": 700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Draenei"
     },
     {
@@ -331,7 +324,7 @@
       "req": 5,
       "xp": 530,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Draenei"
     },
     {
@@ -340,7 +333,7 @@
       "req": 5,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -349,7 +342,7 @@
       "req": 5,
       "xp": 475,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -358,7 +351,7 @@
       "req": 6,
       "xp": 700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -367,7 +360,7 @@
       "req": 6,
       "xp": 700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -376,7 +369,7 @@
       "req": 6,
       "xp": 840,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -385,7 +378,7 @@
       "req": 6,
       "xp": 840,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -394,7 +387,7 @@
       "req": 6,
       "xp": 195,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -403,7 +396,7 @@
       "req": 5,
       "xp": 590,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -412,7 +405,7 @@
       "req": 5,
       "xp": 780,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -421,7 +414,7 @@
       "req": 8,
       "xp": 70,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -430,7 +423,7 @@
       "req": 8,
       "xp": 85,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -439,7 +432,7 @@
       "req": 8,
       "xp": 85,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -448,7 +441,7 @@
       "req": 8,
       "xp": 85,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -457,7 +450,7 @@
       "req": 8,
       "xp": 85,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -466,7 +459,7 @@
       "req": 8,
       "xp": 1250,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -475,7 +468,7 @@
       "req": 8,
       "xp": 210,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -484,7 +477,7 @@
       "req": 7,
       "xp": 840,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -493,7 +486,7 @@
       "req": 7,
       "xp": 840,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -502,7 +495,7 @@
       "req": 7,
       "xp": 880,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -511,7 +504,7 @@
       "req": 9,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -520,7 +513,7 @@
       "req": 9,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -529,7 +522,7 @@
       "req": 7,
       "xp": 880,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -538,7 +531,7 @@
       "req": 5,
       "xp": 450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Priest"
     },
     {
@@ -547,7 +540,7 @@
       "req": 5,
       "xp": 195,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -556,7 +549,7 @@
       "req": 10,
       "xp": 420,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Draenei",
       "from": "Bloodmyst Isle"
     },
@@ -620,7 +613,7 @@
       "req": 4,
       "xp": 530,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -629,7 +622,7 @@
       "req": 8,
       "xp": 420,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {

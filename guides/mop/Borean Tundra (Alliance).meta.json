@@ -13,12 +13,12 @@
       "start": 71,
       "end": 73.52,
       "next": 76,
-      "guide": "71-74 Borean Tundra: around Elder Atkanok",
+      "guide": "71-74 Borean Tundra",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Elder Atkanok",
-          "guide": "71-74 Borean Tundra: around Elder Atkanok",
+          "label": "",
+          "name": "start",
+          "guide": "71-74 Borean Tundra",
           "level": 71,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 76,
       "end": 76,
-      "guide": "76-77 Borean Tundra",
+      "guide": "71-74 Borean Tundra",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "76-77 Borean Tundra",
+          "guide": "71-74 Borean Tundra",
           "level": 76,
           "index": 0
         }

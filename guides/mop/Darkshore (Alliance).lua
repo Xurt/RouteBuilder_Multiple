@@ -1,9 +1,9 @@
 -- 10-20 Darkshore: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 10, 22, 53).
--- Split into 5 guides, listed under "10 - 54 Darkshore" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 10; part 2 from 22; part 3 from 53.
 -- Edit zones/mop/Darkshore.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 10 - 54 Darkshore
-#subweight -10
-#name 10-13 Darkshore: around Ranger Glynda Nal'Shea
-#next Zone Routes (Alliance)\13-15 Darkshore: around Keeper Karithus
+#name 10-20 Darkshore
+--RouteBuilder:next
+#next Zone Routes (Alliance)\50-55 Winterspring;Zone Routes (Alliance)\51-55 Un'Goro Crater;Zone Routes (Alliance)\52-55 Swamp of Sorrows
 
 step
     #completewith next
@@ -469,29 +468,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Great Moonstalker Spirit
     .mob Great Thistle Bear Spirit
     .mob Great Stag Spirit
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 62,42.97,39.01
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Keeper Karithus|r
-    .turnin 13569 >>Turn in The Ritual Bond
-    .target Keeper Karithus
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 10 - 54 Darkshore
-#subweight -10
-#name 13-15 Darkshore: around Keeper Karithus
-#next Zone Routes (Alliance)\15-20 Darkshore: around Ranger Glynda Nal'Shea
-
 step
     .goto 62,42.97,39.01
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Keeper Karithus|r
+    .turnin 13569 >>Turn in The Ritual Bond << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 13599 >>Accept Grimclaw's Return
     .target Keeper Karithus
-    .isQuestTurnedIn 13569 --any of: The Ritual Bond
 step
     .xp 13
 step
@@ -499,7 +481,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priestess Alinya|r
     .turnin 13601 >>Turn in In Aid of the Refugees
     .target Priestess Alinya
-    .isOnQuest 13601
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,42.51,45.15
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Selarin|r
@@ -539,7 +520,7 @@ step
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .xp 13 >>Grind to level 13 (Coaxing the Spirits needs it)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along61
+    #completewith Along60
     >>As you go: Kill |cRXP_ENEMY_Frenzied Cyclone|r and loot |cRXP_LOOT_Frenzied Cyclone Bracers|r. |cRXP_WARN_Anything left is finished later|r
     .collect 44868,1,13542,1 --Frenzied Cyclone Bracers (1)
     .mob Frenzied Cyclone
@@ -554,7 +535,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 13547,2 --Sentinel Elissa Starbreeze
     .target Sentinel Elissa Starbreeze
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along61
+    #label Along60
     .goto 62,39.30,38.92
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thundris Windweaver|r
     .complete 13547,1 --Thundris Windweaver
@@ -771,48 +752,27 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 13558,1 --Aetherion Ritual Orb
     .complete 13558,2 --Aetherion's Essence (1)
     .mob Aetherion
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 10 - 54 Darkshore
-#subweight -10
-#name 15-20 Darkshore: around Ranger Glynda Nal'Shea
-
 step
     .goto 62,50.69,19.73
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ranger Glynda Nal'Shea|r
     .turnin 13562 >>Turn in The Final Flame of Bashal'Aran
+    .accept 13589 >>Accept The Shatterspear Invaders << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Ranger Glynda Nal'Shea
-    .isOnQuest 13562
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 62,50.69,19.73
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ranger Glynda Nal'Shea|r
-    .accept 13589 >>Accept The Shatterspear Invaders
-    .target Ranger Glynda Nal'Shea
-    .isQuestTurnedIn 13569 --any of: The Ritual Bond
 step
     .goto 62,51.80,18.07
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Serendia Oakwhisper|r
     .turnin 13599 >>Turn in Grimclaw's Return
     .target Serendia Oakwhisper
-    .isOnQuest 13599
 step
     .goto 62,50.13,19.46
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cerellean Whiteclaw|r
     .turnin 13563 >>Turn in A Love Eternal
     .target Cerellean Whiteclaw
-    .isOnQuest 13563
 step
     .goto 62,51.01,19.19
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gorbold Steelhand|r
     .accept 13560 >>Accept An Ocean Not So Deep
     .target Gorbold Steelhand
-    .isQuestTurnedIn 13566 --Ritual Materials
-    .isQuestTurnedIn 13569 --The Ritual Bond
 step
     #loop
     .goto 62,55.03,9.96,0
@@ -822,61 +782,48 @@ step
     .complete 13560,1 --Greymist Tidehunter (8)
     .mob Greymist Tidehunter
     .mob Greymist Warrior
-    .isOnQuest 13560
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,58.91,19.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Morra Starbreeze|r
     .turnin 13589 >>Turn in The Shatterspear Invaders
     .target Lieutenant Morra Starbreeze
-    .isOnQuest 13589
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,58.89,19.41
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Tysha Moonblade|r
     .accept 13504 >>Accept Shatterspear Laborers
     .target Sentinel Tysha Moonblade
-    .isQuestTurnedIn 13589 --any of: The Shatterspear Invaders
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along102
+    >>As you go: Kill |cRXP_ENEMY_Shatterspear Laborers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 13504,1 --Shatterspear Laborer slain (10)
+    .mob Shatterspear Laborer
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along102
     .goto 62,58.88,19.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balthule Shadowstrike|r
     .accept 13505 >>Accept Remnants of the Highborne
     .target Balthule Shadowstrike
-    .isQuestTurnedIn 13589 --any of: The Shatterspear Invaders
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 62,61.25,13.39,0
     .goto 62,61.25,13.39,40,0
-    .goto 62,62.86,15.09,40,0
+    .goto 62,62.80,15.15,40,0
     >>Kill |cRXP_ENEMY_Shatterspear Laborers|r
-    .complete 13504,1 --Shatterspear Laborer slain (10)
-    .mob Shatterspear Laborer
-    .isOnQuest 13504
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 62,61.37,13.80,0
-    .goto 62,61.37,13.80,40,0
-    .goto 62,63.26,15.99,40,0
     >>Pick up |cRXP_PICK_Highborne Relic|r from the ground
+    .complete 13504,1 --Shatterspear Laborer slain (10)
     .complete 13505,1 --Highborne Relic (8)
-    .isOnQuest 13505
+    .mob Shatterspear Laborer
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,58.88,19.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balthule Shadowstrike|r
     .turnin 13505 >>Turn in Remnants of the Highborne
     .target Balthule Shadowstrike
-    .isOnQuest 13505
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,58.89,19.41
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Tysha Moonblade|r
     .turnin 13504 >>Turn in Shatterspear Laborers
-    .target Sentinel Tysha Moonblade
-    .isOnQuest 13504
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 62,58.89,19.41
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Tysha Moonblade|r
     .accept 13507 >>Accept Denying Manpower
     .target Sentinel Tysha Moonblade
-    .isQuestTurnedIn 13504 --Shatterspear Laborers
-    .isQuestTurnedIn 13505 --Remnants of the Highborne
 step
     .goto 62,58.91,19.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Morra Starbreeze|r
@@ -889,7 +836,17 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Morra Starbreeze|r
     .accept 13509 >>Accept War Supplies
     .target Lieutenant Morra Starbreeze
-    .isQuestTurnedIn 13504 --any of: Shatterspear Laborers
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along112
+    >>As you go: Kill |cRXP_ENEMY_Shatterspear Mystics|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 13507,2 --Shatterspear Mystic slain (6)
+    .mob Shatterspear Mystic
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along109
+    >>As you go: Kill |cRXP_ENEMY_Horde Enforcers|r. Click the |cRXP_PICK_Shatterspear Armaments|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 13507,1 --Horde Enforcer slain (6)
+    .complete 13509,1 --Shatterspear Armaments
+    .mob Horde Enforcer
 step
     .goto 62,63.75,5.99
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Alanndarian Nightsong|r
@@ -897,6 +854,7 @@ step
     .target Alanndarian Nightsong
     .isOnQuest 13508
 step
+    #label Along109
     .goto 62,63.75,5.99
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Alanndarian Nightsong|r
     .accept 13511 >>Accept One Bitter Wish
@@ -915,51 +873,40 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 13510 >>Accept Timely Arrival
     .target Sentinel Aynasha
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along112
+    >>As you go: Kill |cRXP_ENEMY_Horde Enforcers|r. Click the |cRXP_PICK_Shatterspear Armaments|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 13507,1 --Horde Enforcer slain (6)
+    .complete 13509,1 --Shatterspear Armaments
+    .mob Horde Enforcer
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along112
     .goto 62,60.25,6.93
     >>Escort Sentinel Aynasha to the Dock
     .complete 13510,1 --Escort Sentinel Aynasha to the Dock
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 62,60.64,7.18,0
-    .goto 62,60.64,7.18,40,0
-    .goto 62,61.41,10.59,40,0
+    .goto 62,62.26,10.09,0
+    .goto 62,62.26,10.09,40,0
+    .goto 62,63.26,7.86,40,0
     >>Kill |cRXP_ENEMY_Horde Enforcers|r
-    .complete 13507,1 --Horde Enforcer slain (6)
-    .mob Horde Enforcer
-    .isOnQuest 13507
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 62,61.52,9.09,0
-    .goto 62,61.52,9.09,40,0
-    .goto 62,63.06,5.25,40,0
     >>Kill |cRXP_ENEMY_Shatterspear Mystics|r
-    .complete 13507,2 --Shatterspear Mystic slain (6)
-    .mob Shatterspear Mystic
-    .isOnQuest 13507
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 62,62.20,8.98,0
-    .goto 62,62.20,8.98,40,0
-    .goto 62,61.89,11.07,40,0
     >>Click the |cRXP_PICK_Shatterspear Armaments|r
+    .complete 13507,1 --Horde Enforcer slain (6)
+    .complete 13507,2 --Shatterspear Mystic slain (6)
     .complete 13509,1 --Shatterspear Armaments
-    .isOnQuest 13509
+    .mob Horde Enforcer
+    .mob Shatterspear Mystic
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,58.89,19.41
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Tysha Moonblade|r
     .turnin 13507 >>Turn in Denying Manpower
     .target Sentinel Tysha Moonblade
-    .isOnQuest 13507
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,58.91,19.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Morra Starbreeze|r
     .turnin 13509 >>Turn in War Supplies
-    .target Lieutenant Morra Starbreeze
-    .isOnQuest 13509
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 62,58.91,19.45
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Morra Starbreeze|r
     .turnin 13510 >>Turn in Timely Arrival
+    .accept 13512 >>Accept Strategic Strikes
     .target Lieutenant Morra Starbreeze
 step
     .goto 62,58.91,19.45
@@ -968,132 +915,84 @@ step
     .target Lieutenant Morra Starbreeze
     .isOnQuest 13511
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 62,58.91,19.45
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Morra Starbreeze|r
-    .accept 13512 >>Accept Strategic Strikes
-    .target Lieutenant Morra Starbreeze
-    .isQuestTurnedIn 13507 --Denying Manpower
-    .isQuestTurnedIn 13509 --War Supplies
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,58.88,19.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balthule Shadowstrike|r
     .accept 13513 >>Accept On the Brink
     .target Balthule Shadowstrike
-    .isQuestTurnedIn 13507 --Denying Manpower
-    .isQuestTurnedIn 13509 --War Supplies
 step
     .goto 62,59.14,19.61
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathas Wildwood|r
     .accept 13844 >>Accept The Looting of Althalaxx
     .target Mathas Wildwood
-    .isQuestTurnedIn 13509 --any of: War Supplies
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #completewith Along119
+    >>As you go: Kill |cRXP_ENEMY_Shatterspear Shamans|r. Loot them for |cRXP_LOOT_Shatterspear Amulet|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 13513,1 --Shatterspear Amulet (6)
+    .mob Shatterspear Shaman
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    #label Along119
     .goto 62,61.24,20.35
     >>Kill |cRXP_ENEMY_Sheya Stormweaver|r
     .complete 13512,2 --Sheya Stormweaver slain (1)
     .mob Sheya Stormweaver
-    .isOnQuest 13512
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 62,58.43,25.26
-    >>Kill |cRXP_ENEMY_Shatterspear Shamans|r. Loot them for |cRXP_LOOT_Shatterspear Amulet|r
-    .complete 13513,1 --Shatterspear Amulet (6)
-    .mob Shatterspear Shaman
-    .isOnQuest 13513
 step
-    .goto 62,58.23,24.02
+    .goto 62,57.73,25.50
+    >>Kill |cRXP_ENEMY_Shatterspear Shamans|r. Loot them for |cRXP_LOOT_Shatterspear Amulet|r << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>Kill |cRXP_ENEMY_Teegan Holloway|r
-    .complete 13844,1 --Teegan Holloway slain (1)
-    .mob Teegan Holloway
-    .isOnQuest 13844
-step
-    .goto 62,58.28,23.97
     >>Open the |cRXP_PICK_Charred Book|r. Loot it for |cRXP_LOOT_Narassin's Tome|r
+    >>Kill |cRXP_ENEMY_Lorenth Thundercall|r << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .complete 13513,1 << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren --Shatterspear Amulet (6)
+    .complete 13844,1 --Teegan Holloway slain (1)
     .complete 13844,2 --Narassin's Tome (1)
-    .isOnQuest 13844
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 62,56.70,25.98
-    >>Kill |cRXP_ENEMY_Lorenth Thundercall|r
-    .complete 13512,1 --Lorenth Thundercall slain (1)
-    .mob Lorenth Thundercall
-    .isOnQuest 13512
+    .complete 13512,1 << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren --Lorenth Thundercall slain (1)
+    .mob Shatterspear Shaman << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .mob Teegan Holloway
+    .mob Lorenth Thundercall << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
     .goto 62,59.14,19.61
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathas Wildwood|r
     .turnin 13844 >>Turn in The Looting of Althalaxx
     .target Mathas Wildwood
-    .isOnQuest 13844
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,58.88,19.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balthule Shadowstrike|r
     .turnin 13513 >>Turn in On the Brink
     .target Balthule Shadowstrike
-    .isOnQuest 13513
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,58.91,19.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Morra Starbreeze|r
     .turnin 13512 >>Turn in Strategic Strikes
-    .target Lieutenant Morra Starbreeze
-    .isOnQuest 13512
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 62,58.91,19.45
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Morra Starbreeze|r
     .accept 13590 >>Accept The Front Line
     .target Lieutenant Morra Starbreeze
-    .isQuestTurnedIn 13512 --any of: Strategic Strikes
 step
     .goto 62,69.09,19.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kerlonian Evershade|r
     .accept 13514 >>Accept The Ancients' Ire
     .target Kerlonian Evershade
-    .isQuestTurnedIn 13512 --Strategic Strikes
-    .isQuestTurnedIn 13513 --On the Brink
-step
-    .goto 62,70.85,16.56
-    >>Kill |cRXP_ENEMY_Shatterspear Hut Fire Bunnies|r
-    .complete 13514,1 --Shatterspear Hut Fire Bunny slain (8)
-    .mob Shatterspear Hut Fire Bunny
-    .isOnQuest 13514
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 62,72.28,19.10
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Huntress Sandrya Moonfall|r
-    .turnin 13590 >>Turn in The Front Line while you are here
-    .isQuestComplete 13590
-    .target Huntress Sandrya Moonfall
 step
     #loop
-    .goto 62,70.76,16.73,0
-    .goto 62,70.76,16.73,40,0
+    .goto 62,70.60,20.87,0
     .goto 62,70.60,20.87,40,0
+    .goto 62,70.76,16.73,40,0
+    >>Kill |cRXP_ENEMY_Shatterspear Hut Fire Bunnies|r
     >>Kill |cRXP_ENEMY_Shatterspear Priestess|r, |cRXP_ENEMY_Shatterspear Raiders|r and |cRXP_ENEMY_Shatterspear Champions|r
+    .complete 13514,1 --Shatterspear Hut Fire Bunny slain (8)
     .complete 13514,2 --Shatterspear Priestess (8)
+    .mob Shatterspear Hut Fire Bunny
     .mob Shatterspear Priestess
     .mob Shatterspear Raider
     .mob Shatterspear Champion
-    .isOnQuest 13514
-step
-    .goto 62,69.09,19.25
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kerlonian Evershade|r
-    .turnin 13514 >>Turn in The Ancients' Ire while you are here
-    .isQuestComplete 13514
-    .target Kerlonian Evershade
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,72.28,19.10
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Huntress Sandrya Moonfall|r
     .turnin 13590 >>Turn in The Front Line
-    .target Huntress Sandrya Moonfall
-    .isOnQuest 13590
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 62,72.28,19.10
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Huntress Sandrya Moonfall|r
     .accept 13515 >>Accept Ending the Threat
     .target Huntress Sandrya Moonfall
-    .isQuestTurnedIn 13590 --any of: The Front Line
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,72.84,18.07
     >>Kill |cRXP_ENEMY_Jor'kil the Soulripper|r
     .complete 13515,1 --Jor'kil the Soulripper slain (1)
     .mob Jor'kil the Soulripper
-    .isOnQuest 13515
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,72.28,19.10
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Huntress Sandrya Moonfall|r
@@ -1107,85 +1006,57 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 13591 >>Accept Disturbing Connections
     .use 46318
     .mob Jor'kil the Soulripper
-    .isQuestTurnedIn 13590 --any of: The Front Line
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,72.28,19.10
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Huntress Sandrya Moonfall|r
     .turnin 13515 >>Turn in Ending the Threat
     .target Huntress Sandrya Moonfall
-    .isOnQuest 13515
 step
     .goto 62,69.09,19.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kerlonian Evershade|r
     .turnin 13514 >>Turn in The Ancients' Ire
     .target Kerlonian Evershade
-    .isOnQuest 13514
 step
     .goto 62,51.01,19.19
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gorbold Steelhand|r
     .turnin 13560 >>Turn in An Ocean Not So Deep
     .target Gorbold Steelhand
-    .isOnQuest 13560
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,50.69,19.73
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ranger Glynda Nal'Shea|r
     .turnin 13591 >>Turn in Disturbing Connections
     .target Ranger Glynda Nal'Shea
-    .isOnQuest 13591
 step
     .goto 62,50.31,20.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Lendra|r
     .accept 13519 >>Accept The Twilight's Hammer
     .accept 13596 >>Accept Twilight Plans
     .target Sentinel Lendra
-    .isQuestTurnedIn 13591 --any of: Disturbing Connections
 step
     .goto 62,50.13,19.46
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cerellean Whiteclaw|r
     .accept 13570 >>Accept Remembrance of Auberdine
-    .target Cerellean Whiteclaw
-    .isQuestTurnedIn 13591 --any of: Disturbing Connections
-step
-    .goto 62,50.13,19.46
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cerellean Whiteclaw|r
     .turnin 13570 >>Turn in Remembrance of Auberdine
     .target Cerellean Whiteclaw
-    .isOnQuest 13570
-step
-    .goto 62,43.65,31.37
-    >>Kill |cRXP_ENEMY_High Cultist Azerynn|r
-    .complete 13519,1 --High Cultist Azerynn slain (1)
-    .mob High Cultist Azerynn
-    .isOnQuest 13519
 step
     #loop
-    .goto 62,43.13,32.38,0
+    .goto 62,45.20,31.05,0
+    .goto 62,45.20,31.05,40,0
     .goto 62,43.13,32.38,40,0
-    .goto 62,45.27,30.45,40,0
+    >>Kill |cRXP_ENEMY_High Cultist Azerynn|r
     >>Pick up |cRXP_PICK_Twilight Plans|r from the ground
-    .complete 13596,1 --Twilight Plans (6)
-    .isOnQuest 13596
-step
-    #loop
-    .goto 62,43.10,32.49,0
-    .goto 62,43.10,32.49,40,0
-    .goto 62,44.64,30.83,40,0
     >>Kill |cRXP_ENEMY_Twilight Fanatics|r
+    .complete 13519,1 --High Cultist Azerynn slain (1)
+    .complete 13596,1 --Twilight Plans (6)
     .complete 13519,2 --Twilight Fanatic slain (10)
+    .mob High Cultist Azerynn
     .mob Twilight Fanatic
-    .isOnQuest 13519
 step
     .goto 62,50.31,20.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Lendra|r
     .turnin 13519 >>Turn in The Twilight's Hammer
-    .target Sentinel Lendra
-    .isOnQuest 13519
-step
-    .goto 62,50.31,20.34
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Lendra|r
     .turnin 13596 >>Turn in Twilight Plans
     .target Sentinel Lendra
-    .isOnQuest 13596
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #completewith next
     .hs >>Hearth to Kyndri's inn. |cRXP_WARN_Walk instead if you are already nearby|r
@@ -1195,7 +1066,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Corvine Moonrise|r
     .turnin 13558 >>Turn in Call Down the Thunder
     .target Corvine Moonrise
-    .isOnQuest 13558
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,45.15,75.19
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Foriel Broadleaf|r
@@ -1212,7 +1082,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 13881 >>Accept Consumed
     .target Kathrena Winterwisp
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along165
+    #completewith Along147
     >>As you go: Kill |cRXP_ENEMY_Consumed Thistle Bears|r. |cRXP_WARN_Anything left is finished later|r
     .complete 13881,1 --Consumed Thistle Bear slain (6)
     .mob Consumed Thistle Bear
@@ -1256,7 +1126,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 13948,1 --Doomspeaker Trevellion
     .target Doomspeaker Trevellion
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along165
+    #label Along147
     .goto 62,43.51,81.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elder Brolg|r
     .turnin 13526 >>Turn in The Bear's Paw
@@ -1351,7 +1221,7 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 13907 >>Accept Sweeping Clean the Ruins
     .target Archaeologist Groff
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along183
+    #completewith Along165
     >>As you go: Kill |cRXP_ENEMY_Greymist Oracles|r, |cRXP_ENEMY_Greymist Refugees|r and |cRXP_ENEMY_Murloc Squatter Kill Credits|r. |cRXP_WARN_Anything left is finished later|r
     .complete 13907,1 --Greymist Oracle (8)
     .mob Greymist Oracle
@@ -1363,7 +1233,7 @@ step
     .accept 13912 >>Accept Swamped Secrets
     .target Jr. Archaeologist Ferd
 step
-    #completewith Along183
+    #completewith Along165
     >>As you go: Pick up |cRXP_PICK_Mud-Crusted Ancient Disc|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 13912,1 --Mud-Crusted Ancient Disc (1)
 step
@@ -1376,7 +1246,7 @@ step
     >>Prospector Remtravel Escorted
     .complete 13911,1 --Prospector Remtravel Escorted
 step
-    #label Along183
+    #label Along165
     .goto 62,37.75,82.93
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jr. Archaeologist Ferd|r
     .turnin 13911 >>Turn in The Absent-Minded Prospector
@@ -1477,7 +1347,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Malfurion Stormrage|r
     .accept 13902 >>Accept Mounting the Offensive
     .target Malfurion Stormrage
-    .isQuestTurnedIn 13588 --any of: The Eye of All Storms
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,32.26,85.43
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warlord Wrathspine|r
@@ -1512,14 +1381,9 @@ step
     .goto 62,45.30,75.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balren of the Claw|r
     .turnin 13897 >>Turn in The Battle for Darkshore << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .turnin 13902 >>Turn in Mounting the Offensive
     .accept 26408 >>Accept Ashes in Ashenvale
     .target Balren of the Claw
-step
-    .goto 62,45.30,75.13
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balren of the Claw|r
-    .turnin 13902 >>Turn in Mounting the Offensive
-    .target Balren of the Claw
-    .isOnQuest 13902
 step
     .goto 62,45.35,75.12
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Felros|r
@@ -1541,20 +1405,7 @@ step
     >>|cRXP_FRIENDLY_Ashenvale|r: One Shot.  One Kill., Ashes in Ashenvale
     >>|cRXP_FRIENDLY_Teldrassil|r: Return to Nyoma << NightElf
 step << Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior/Dwarf Paladin/Draenei Paladin/Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter/Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue/Human Priest/Dwarf Priest/Draenei Priest/Worgen Priest/Pandaren Priest/NightElf Priest/Dwarf Shaman/Draenei Shaman/Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage/NightElf Druid/Worgen Druid/Gnome Priest
-    +|cRXP_WARN_The rest of Darkshore is planned from level 22.|r Load its guide for level 22 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior/Dwarf Paladin/Draenei Paladin/Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter/Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue/Human Priest/Dwarf Priest/Draenei Priest/Worgen Priest/Pandaren Priest/NightElf Priest/Dwarf Shaman/Draenei Shaman/Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage/NightElf Druid/Worgen Druid/Gnome Priest
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 10 - 54 Darkshore
-#subweight -10
-#name 22-23 Darkshore
---RouteBuilder:next
-#next Zone Routes (Alliance)\20-22 Hillsbrad Foothills: around Helcular
-
+    .xp 22 >>|cRXP_WARN_The rest of Darkshore is planned from level 22.|r Come back to this guide then
 step << Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior
     .goto 89,56.54,46.01
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arias'ta Bladesinger|r
@@ -1619,23 +1470,10 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: Journey to the Wizard's Sanctum << Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage
     >>|cRXP_FRIENDLY_Stormwind City|r: The Chief Surgeon << Gnome Priest
     >>|cRXP_FRIENDLY_Stormwind City|r: Favored of Elune << NightElf Priest
-step
-    +|cRXP_WARN_Suggested next zones at level 22|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.7 levels of quests, starting around Helcular). Completing this step loads the guide for Hillsbrad Foothills --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of Darkshore is planned from level 53.|r Load its guide for level 53 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 10 - 54 Darkshore
-#subweight -10
-#name 53-54 Darkshore
---RouteBuilder:next
-#next Zone Routes (Alliance)\52-55 Winterspring: around Jez Goodgrub;Zone Routes (Alliance)\52-55 Swamp of Sorrows: around Trade Baron Silversnap;Zone Routes (Alliance)\53-55 Un'Goro Crater: around Garl Stormclaw
-
+    +|cRXP_WARN_Until level 53, suggested zones|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.7 levels of quests). Then come back to this Darkshore guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 53 >>|cRXP_WARN_The rest of Darkshore is planned from level 53.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 62,45.20,74.62
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kathrena Winterwisp|r
@@ -1762,5 +1600,5 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
     +|cRXP_WARN_End of the Darkshore route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 53|r: |cRXP_FRIENDLY_Winterspring|r (about 1.3 levels of quests, starting around Jez Goodgrub), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 0.9 levels of quests, starting around Trade Baron Silversnap), |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.8 levels of quests, starting around Garl Stormclaw). Completing this step loads the guide for Winterspring --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 53|r: |cRXP_FRIENDLY_Winterspring|r (about 2.6 levels of quests), |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.7 levels of quests), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 0.9 levels of quests). Completing this step loads the guide for Winterspring --RouteBuilder:next
 ]])

@@ -13,21 +13,14 @@
       "start": 35,
       "end": 39.41,
       "next": 83,
-      "guide": "37-40 Dustwallow Marsh: around Tabetha",
+      "guide": "35-41 Dustwallow Marsh",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around \u0022Swamp Eye\u0022 Jarl",
-          "guide": "35-37 Dustwallow Marsh: around \u0022Swamp Eye\u0022 Jarl",
+          "label": "",
+          "name": "start",
+          "guide": "35-41 Dustwallow Marsh",
           "level": 35,
           "index": 0
-        },
-        {
-          "label": "RBSection1_2",
-          "name": "around Tabetha",
-          "guide": "37-40 Dustwallow Marsh: around Tabetha",
-          "level": 37,
-          "index": 1
         }
       ]
     },
@@ -35,12 +28,12 @@
       "part": 2,
       "start": 83,
       "end": 83,
-      "guide": "83-84 Dustwallow Marsh",
+      "guide": "35-41 Dustwallow Marsh",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "83-84 Dustwallow Marsh",
+          "guide": "35-41 Dustwallow Marsh",
           "level": 83,
           "index": 0
         }
@@ -54,7 +47,7 @@
       "req": 37,
       "xp": 4590,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -81,7 +74,7 @@
       "req": 35,
       "xp": 4590,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -90,7 +83,7 @@
       "req": 5,
       "xp": 315,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren",
       "from": "Mulgore"
     },
@@ -109,7 +102,7 @@
       "req": 35,
       "xp": 410,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -118,7 +111,7 @@
       "req": 38,
       "xp": 410,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -136,7 +129,7 @@
       "req": 3,
       "xp": 420,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Tauren",
       "from": "Mulgore"
     },
@@ -392,7 +385,7 @@
       "req": 36,
       "xp": 3920,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -401,7 +394,7 @@
       "req": 36,
       "xp": 3920,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -410,7 +403,7 @@
       "req": 36,
       "xp": 3920,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -419,7 +412,7 @@
       "req": 36,
       "xp": 390,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -428,7 +421,7 @@
       "req": 36,
       "xp": 4900,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -437,7 +430,7 @@
       "req": 36,
       "xp": 4900,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -446,7 +439,7 @@
       "req": 36,
       "xp": 5150,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -455,7 +448,7 @@
       "req": 36,
       "xp": 5150,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -464,7 +457,7 @@
       "req": 36,
       "xp": 5150,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -473,7 +466,7 @@
       "req": 36,
       "xp": 5150,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -482,7 +475,7 @@
       "req": 36,
       "xp": 6200,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -491,7 +484,7 @@
       "req": 36,
       "xp": 4140,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -500,7 +493,7 @@
       "req": 36,
       "xp": 4140,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -509,7 +502,7 @@
       "req": 36,
       "xp": 6200,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -518,7 +511,7 @@
       "req": 36,
       "xp": 5150,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -527,7 +520,7 @@
       "req": 36,
       "xp": 2050,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -536,7 +529,7 @@
       "req": 37,
       "xp": 2050,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -545,7 +538,7 @@
       "req": 37,
       "xp": 6200,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {
@@ -554,7 +547,7 @@
       "req": 37,
       "xp": 5150,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -563,7 +556,7 @@
       "req": 39,
       "xp": 435,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren"
     },
     {

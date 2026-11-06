@@ -13,12 +13,12 @@
       "start": 73,
       "end": 74.5,
       "next": 81,
-      "guide": "73-75 Grizzly Hills: around Drakuru",
+      "guide": "73-75 Grizzly Hills",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Drakuru",
-          "guide": "73-75 Grizzly Hills: around Drakuru",
+          "label": "",
+          "name": "start",
+          "guide": "73-75 Grizzly Hills",
           "level": 73,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 81,
       "end": 81.01,
-      "guide": "81-82 Grizzly Hills",
+      "guide": "73-75 Grizzly Hills",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "81-82 Grizzly Hills",
+          "guide": "73-75 Grizzly Hills",
           "level": 81,
           "index": 0
         }

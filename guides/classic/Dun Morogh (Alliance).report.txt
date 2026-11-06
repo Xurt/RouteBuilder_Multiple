@@ -1,7 +1,7 @@
 Dun Morogh - Alliance - part 1 of 8, planned from level 1
-Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 190 steps, 94 stops
+Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 186 steps, 90 stops
 Written to guides/classic/Dun Morogh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: zones/classic/Dun Morogh.json
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -194,7 +194,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Dun Morogh - Alliance - part 2 of 8, planned from level 11
 Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 83 steps, 42 stops
 Written to guides/classic/Dun Morogh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: zones/classic/Dun Morogh.json
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -303,7 +303,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Dun Morogh - Alliance - part 3 of 8, planned from level 14
 Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 32 steps, 21 stops
 Written to guides/classic/Dun Morogh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: zones/classic/Dun Morogh.json
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -395,7 +395,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Dun Morogh - Alliance - part 4 of 8, planned from level 17
 Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 7 steps, 4 stops
 Written to guides/classic/Dun Morogh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: zones/classic/Dun Morogh.json
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -473,7 +473,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Dun Morogh - Alliance - part 5 of 8, planned from level 21
 Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 26 steps, 20 stops
 Written to guides/classic/Dun Morogh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: zones/classic/Dun Morogh.json
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -560,7 +560,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Dun Morogh - Alliance - part 6 of 8, planned from level 24
 Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 14 steps, 9 stops
 Written to guides/classic/Dun Morogh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: zones/classic/Dun Morogh.json
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -623,7 +623,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Dun Morogh - Alliance - part 7 of 8, planned from level 27
 Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 21 steps, 18 stops
 Written to guides/classic/Dun Morogh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: zones/classic/Dun Morogh.json
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -692,7 +692,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Dun Morogh - Alliance - part 8 of 8, planned from level 30
 Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 10 steps, 7 stops
 Written to guides/classic/Dun Morogh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: zones/classic/Dun Morogh.json
 RestedXP cross-check: 720 objective notes read from 50 guide files
 

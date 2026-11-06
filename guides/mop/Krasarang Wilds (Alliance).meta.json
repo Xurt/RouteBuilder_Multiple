@@ -13,12 +13,12 @@
       "start": 86,
       "end": 86.32,
       "next": 89,
-      "guide": "86-87 Krasarang Wilds: around Ken-Ken",
+      "guide": "86-88 Krasarang Wilds",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Ken-Ken",
-          "guide": "86-87 Krasarang Wilds: around Ken-Ken",
+          "label": "",
+          "name": "start",
+          "guide": "86-88 Krasarang Wilds",
           "level": 86,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 89,
       "end": 89,
-      "guide": "89-90 Krasarang Wilds",
+      "guide": "86-88 Krasarang Wilds",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "89-90 Krasarang Wilds",
+          "guide": "86-88 Krasarang Wilds",
           "level": 89,
           "index": 0
         }

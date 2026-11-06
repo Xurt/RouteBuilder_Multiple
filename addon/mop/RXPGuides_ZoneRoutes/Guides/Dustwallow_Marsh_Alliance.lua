@@ -1,9 +1,9 @@
 -- 36-40 Dustwallow Marsh: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 36, 83).
--- Split into 3 guides, listed under "36 - 84 Dustwallow Marsh" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 36; part 2 from 83.
 -- Edit zones/mop/Dustwallow Marsh.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 36 - 84 Dustwallow Marsh
-#subweight -36
-#name 36-38 Dustwallow Marsh: around "Swamp Eye" Jarl
-#next Zone Routes (Alliance)\38-41 Dustwallow Marsh: around Tabetha
+#name 36-40 Dustwallow Marsh
+--RouteBuilder:next
+#next Zone Routes (Alliance)\82-83 Deepholm
 
 step
     .goto 70,55.44,26.27
@@ -671,19 +670,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .turnin 27238 >>Turn in Jaina Must Know
     .accept 27239 >>Accept Survey Alcaz Island
     .target Lady Jaina Proudmoore
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 36 - 84 Dustwallow Marsh
-#subweight -36
-#name 38-41 Dustwallow Marsh: around Tabetha
---RouteBuilder:next
-#next Zone Routes (Alliance)\40-42 Eastern Plaguelands: around Chromie;Zone Routes (Alliance)\37-40 Western Plaguelands: around Daria L'Rayne
-
 step
     .goto 70,46.10,57.43
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apprentice Morlann|r
@@ -697,24 +683,19 @@ step
     .accept 27339 >>Accept The Reagent Thief
     .target Apprentice Garion
 step
-    #completewith Along97
+    #completewith Along96
     >>As you go: Kill |cRXP_ENEMY_Noxious Shredders|r and |cRXP_ENEMY_Darkfang Creepers|r. Loot them for |cRXP_LOOT_Marsh Venom|r. |cRXP_WARN_Anything left is finished later|r
     .complete 27339,1 --Marsh Venom (1)
     .mob Noxious Shredder
     .mob Darkfang Creeper
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 70,46.02,57.10
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
-    .turnin 11212 >>Turn in Tabetha's Farm
-    .target Tabetha
-    .isOnQuest 11212
 step
     .goto 70,46.02,57.10
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
+    .turnin 11212 >>Turn in Tabetha's Farm << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 11211 >>Accept Help for Mudsprocket
     .target Tabetha
 step
-    #label Along97
+    #label Along96
     #loop
     .goto 70,42.65,55.87,0
     .goto 70,42.65,55.87,40,0
@@ -743,14 +724,8 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 70,36.09,54.31
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balos Jacken|r
     .turnin 27287 >>Turn in The Deserters
-    .target Balos Jacken
-    .isOnQuest 27287
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 70,36.09,54.31
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Balos Jacken|r
     .accept 27288 >>Accept The Deserters
     .target Balos Jacken
-    .isQuestTurnedIn 27287 --any of: The Deserters
 step
     .goto 70,46.05,57.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apprentice Garion|r
@@ -802,7 +777,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cassa Crimsonwing|r
     .complete 27239,1 --Cassa Crimsonwing
     .target Cassa Crimsonwing
-    .isOnQuest 27239
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 70,66.26,49.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Jaina Proudmoore|r
@@ -820,75 +794,45 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>Kill |cRXP_ENEMY_Tethyr|r
     .complete 27222,1 --Tethyr slain (1)
     .mob Tethyr
-    .isOnQuest 27222
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 70,69.61,51.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Major Mills|r
     .turnin 27222 >>Turn in Take Down Tethyr!
     .target Major Mills
-    .isOnQuest 27222
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 70,68.21,48.62
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Garran Vimes|r
     .turnin 27288 >>Turn in The Deserters
-    .target Captain Garran Vimes
-    .isOnQuest 27288
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 70,68.21,48.62
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Garran Vimes|r
     .accept 27425 >>Accept A Grim Connection
     .target Captain Garran Vimes
-    .isQuestTurnedIn 27262 --Suspicious Hoofprints
-    .isQuestTurnedIn 27285 --The Black Shield
-    .isQuestTurnedIn 27288 --The Deserters
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 70,66.26,49.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Jaina Proudmoore|r
     .turnin 27239 >>Turn in Survey Alcaz Island
-    .target Lady Jaina Proudmoore
-    .isOnQuest 27239
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 70,66.26,49.04
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Jaina Proudmoore|r
     .accept 27240 >>Accept Proof of Treachery
     .target Lady Jaina Proudmoore
-    .isQuestTurnedIn 27239 --any of: Survey Alcaz Island
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 70,46.62,24.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Darill|r
     .turnin 27425 >>Turn in A Grim Connection
-    .target Captain Darill
-    .isOnQuest 27425
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 70,46.62,24.60
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Darill|r
     .accept 27426 >>Accept Confirming the Suspicion
     .accept 27427 >>Accept Arms of the Grimtotems
     .target Captain Darill
-    .isQuestTurnedIn 27425 --any of: A Grim Connection
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 70,43.24,16.05,0
-    .goto 70,43.24,16.05,40,0
-    .goto 70,42.46,12.20,40,0
-    >>Pick up |cRXP_PICK_Blackhoof Armaments|r from the ground
-    .complete 27427,1 --Blackhoof Armaments (7)
-    .isOnQuest 27427
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 70,42.30,13.89,0
-    .goto 70,42.30,13.89,40,0
+    .goto 70,43.16,15.71,0
+    .goto 70,43.16,15.71,40,0
     .goto 70,42.06,11.01,40,0
+    >>Pick up |cRXP_PICK_Blackhoof Armaments|r from the ground
     >>Kill |cRXP_ENEMY_Grimtotem Elder|r and loot |cRXP_LOOT_Grimtotem Note|r
+    .complete 27427,1 --Blackhoof Armaments (7)
     .collect 33050,1,27426,1 --Grimtotem Note (1)
     .mob Grimtotem Elder
-    .isOnQuest 27426
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 70,46.62,24.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Darill|r
     .turnin 27427 >>Turn in Arms of the Grimtotems
     .target Captain Darill
-    .isOnQuest 27427
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 70,46.62,24.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Darill|r
@@ -902,7 +846,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Captain Darill
     .isQuestTurnedIn 27426 --Confirming the Suspicion
     .xp <36,1
-    .isQuestTurnedIn 27427 --Arms of the Grimtotems
 step
     .goto 70,36.29,31.41
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Overlord Mok'Morokk|r
@@ -956,15 +899,10 @@ step
     .goto 70,44.53,66.04
     >>Pick up |cRXP_PICK_Mok'Morokk's Snuff|r from the ground
     .complete 27424,1 --Mok'Morokk's Snuff (1)
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 70,42.33,72.93
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Drazzit Dripvalve|r
-    .turnin 27248 >>Turn in Mission to Mudsprocket
-    .target Drazzit Dripvalve
-    .isOnQuest 27248
 step
     .goto 70,42.33,72.93
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Drazzit Dripvalve|r
+    .turnin 27248 >>Turn in Mission to Mudsprocket << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .turnin 11208 >>Turn in Delivery for Drazzit
     .turnin 11211 >>Turn in Help for Mudsprocket
     .target Drazzit Dripvalve
@@ -1244,23 +1182,10 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: Proof of Treachery << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Teldrassil|r: Return to Nyoma << NightElf
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Confirming the Suspicion << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 40|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 2.7 levels of quests, starting around Chromie), |cRXP_FRIENDLY_Western Plaguelands|r (about 0.6 levels of quests, starting around Daria L'Rayne). Completing this step loads the guide for Eastern Plaguelands --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of Dustwallow Marsh is planned from level 83.|r Load its guide for level 83 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 36 - 84 Dustwallow Marsh
-#subweight -36
-#name 83-84 Dustwallow Marsh
---RouteBuilder:next
-#next Zone Routes (Alliance)\82-83 Deepholm
-
+    +|cRXP_WARN_Until level 83, suggested zones|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 2.7 levels of quests), |cRXP_FRIENDLY_Western Plaguelands|r (about 1.1 levels of quests), |cRXP_FRIENDLY_Feralas|r (about 0.5 levels of quests). Then come back to this Dustwallow Marsh guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 83 >>|cRXP_WARN_The rest of Dustwallow Marsh is planned from level 83.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 70,41.83,73.91
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thyssiana|r
@@ -1291,5 +1216,5 @@ step
     +|cRXP_WARN_End of the Dustwallow Marsh route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Feralas|r: To New Thalanaar << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 83|r: |cRXP_FRIENDLY_Deepholm|r (about 0.8 levels of quests, starting around Maruut Stonebinder). Completing this step loads the guide for Deepholm --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 83|r: |cRXP_FRIENDLY_Deepholm|r (about 0.8 levels of quests). Completing this step loads the guide for Deepholm --RouteBuilder:next
 ]])

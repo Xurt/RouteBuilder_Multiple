@@ -13,12 +13,12 @@
       "start": 65,
       "end": 65.65,
       "next": 68,
-      "guide": "65-66 Blade\u0027s Edge Mountains: around Rina Moonspring",
+      "guide": "65-70 Blade\u0027s Edge Mountains",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Rina Moonspring",
-          "guide": "65-66 Blade\u0027s Edge Mountains: around Rina Moonspring",
+          "label": "",
+          "name": "start",
+          "guide": "65-70 Blade\u0027s Edge Mountains",
           "level": 65,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 68,
       "end": 68.06,
-      "guide": "68-69 Blade\u0027s Edge Mountains",
+      "guide": "65-70 Blade\u0027s Edge Mountains",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "68-69 Blade\u0027s Edge Mountains",
+          "guide": "65-70 Blade\u0027s Edge Mountains",
           "level": 68,
           "index": 0
         }
