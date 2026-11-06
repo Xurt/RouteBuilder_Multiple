@@ -1,9 +1,9 @@
 -- 84-85 Twilight Highlands: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 84, 87).
--- Split into 2 guides, listed under "84 - 88 Twilight Highlands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 84; part 2 from 87.
 -- Edit zones/mop/Twilight Highlands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 84 - 88 Twilight Highlands
-#subweight -84
-#name 84-85 Twilight Highlands: around Gurgthock
+#name 84-85 Twilight Highlands
 --RouteBuilder:next
-#next Zone Routes (Alliance)\82-83 Deepholm
+#next Zone Routes (Alliance)\87-90 Kun-Lai Summit
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 241,80.96,79.40
@@ -1466,22 +1464,9 @@ step
     +|cRXP_WARN_That is all of Twilight Highlands for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Deepholm|r: Deepholm, Realm of Earth
 step
-    +|cRXP_WARN_Suggested next zones at level 84|r: |cRXP_FRIENDLY_Deepholm|r (about 0.6 levels of quests, starting around Maruut Stonebinder; 1 quest from here hands in there). Completing this step loads the guide for Deepholm --RouteBuilder:next
+    +|cRXP_WARN_Until level 87, suggested zones|r: |cRXP_FRIENDLY_Deepholm|r (about 0.6 levels of quests; 1 quest from here hands in there). Then come back to this Twilight Highlands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Twilight Highlands is planned from level 87.|r Load its guide for level 87 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 84 - 88 Twilight Highlands
-#subweight -84
-#name 87-88 Twilight Highlands: around Calen
---RouteBuilder:next
-#next Zone Routes (Alliance)\87-88 Kun-Lai Summit: around Smokey Sootassle
-
+    .xp 87 >>|cRXP_WARN_The rest of Twilight Highlands is planned from level 87.|r Come back to this guide then
 step
     .goto 241,43.23,57.71
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nicole Gillet|r
@@ -2580,5 +2565,5 @@ step
     +|cRXP_WARN_End of the Twilight Highlands route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Hillsbrad Foothills|r: To Ravenholdt << Rogue
 step
-    +|cRXP_WARN_Suggested next zones at level 87|r: |cRXP_FRIENDLY_Kun-Lai Summit|r (about 0.5 levels of quests, starting around Smokey Sootassle). Completing this step loads the guide for Kun-Lai Summit --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 87|r: |cRXP_FRIENDLY_Kun-Lai Summit|r (about 0.5 levels of quests). Completing this step loads the guide for Kun-Lai Summit --RouteBuilder:next
 ]])

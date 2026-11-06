@@ -1,9 +1,9 @@
 -- 18-29 Stonetalon Mountains: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 18, 21, 24).
--- Split into 3 guides, listed under "18 - 25 Stonetalon Mountains" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 18; part 2 from 21; part 3 from 24.
 -- Edit zones/tbc/Stonetalon Mountains.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 18 - 25 Stonetalon Mountains
-#subweight -18
-#name 18-19 Stonetalon Mountains
+#name 18-29 Stonetalon Mountains
 --RouteBuilder:next
-#next Zone Routes (Horde)\18-20 The Barrens: around Tonga Runetotem;Zone Routes (Horde)\15-18 Ghostlands: around Eralan
+#next Zone Routes (Horde)\25-37 Thousand Needles
 
 step
     .goto 1442/1,939.92,831.36
@@ -167,22 +165,9 @@ step
     +|cRXP_WARN_That is all of Stonetalon Mountains for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_The Barrens|r: Protect Kaya, Report to Kadrak, Further Instructions
 step
-    +|cRXP_WARN_Suggested next zones at level 18|r: |cRXP_FRIENDLY_The Barrens|r (about 1.2 levels of quests, starting around Tonga Runetotem), |cRXP_FRIENDLY_Ghostlands|r (about 1.1 levels of quests, starting around Eralan). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Until level 21, suggested zones|r: |cRXP_FRIENDLY_The Barrens|r (about 1.2 levels of quests), |cRXP_FRIENDLY_Ghostlands|r (about 1.1 levels of quests). Then come back to this Stonetalon Mountains guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 21.|r Load its guide for level 21 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 18 - 25 Stonetalon Mountains
-#subweight -18
-#name 21-22 Stonetalon Mountains
---RouteBuilder:next
-#next Zone Routes (Horde)\18-20 The Barrens: around Tonga Runetotem
-
+    .xp 21 >>|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 21.|r Come back to this guide then
 step
     .goto 1442/1,361.74,451.36
     >>Click the |cRXP_PICK_Wanted Poster: Besseleth|r
@@ -251,22 +236,9 @@ step
     +|cRXP_WARN_That is all of Stonetalon Mountains for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_The Barrens|r: Ken'zigla's Draught << Warlock
 step
-    +|cRXP_WARN_Suggested next zones at level 21|r: |cRXP_FRIENDLY_The Barrens|r (about 1.0 levels of quests, starting around Tonga Runetotem). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Until level 24, suggested zones|r: |cRXP_FRIENDLY_The Barrens|r (about 1.0 levels of quests). Then come back to this Stonetalon Mountains guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 24.|r Load its guide for level 24 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 18 - 25 Stonetalon Mountains
-#subweight -18
-#name 24-25 Stonetalon Mountains: around Maggran Earthbinder
---RouteBuilder:next
-#next Zone Routes (Horde)\25-26 Thousand Needles: around Cliffwatcher Longhorn
-
+    .xp 24 >>|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 24.|r Come back to this guide then
 step
     .goto 1442/1,1002.43,949.24
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Braelyn Firehand|r
@@ -437,5 +409,5 @@ step
     >>|cRXP_FRIENDLY_Thousand Needles|r: Calling in the Reserves
     >>|cRXP_FRIENDLY_Ashenvale and back here|r: Ordanus
 step
-    +|cRXP_WARN_Suggested next zones at level 24|r: |cRXP_FRIENDLY_Thousand Needles|r (about 0.5 levels of quests, starting around Cliffwatcher Longhorn; 1 quest from here hands in there). Completing this step loads the guide for Thousand Needles --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 24|r: |cRXP_FRIENDLY_Thousand Needles|r (about 0.5 levels of quests; 1 quest from here hands in there). Completing this step loads the guide for Thousand Needles --RouteBuilder:next
 ]])

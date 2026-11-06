@@ -1,7 +1,7 @@
 Zangarmarsh - Horde - part 1 of 2, planned from level 61
 Guide "61-65 Zangarmarsh" in group "Zone Routes (Horde)": this part has 104 steps, 82 stops
 Written to guides/tbc/Zangarmarsh (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1110 objective notes read from 57 guide files
@@ -114,7 +114,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Zangarmarsh - Horde - part 2 of 2, planned from level 64
 Guide "61-65 Zangarmarsh" in group "Zone Routes (Horde)": this part has 59 steps, 45 stops
 Written to guides/tbc/Zangarmarsh (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1110 objective notes read from 57 guide files

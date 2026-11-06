@@ -13,12 +13,12 @@
       "start": 10,
       "end": 10.78,
       "next": 13,
-      "guide": "10-11 Azshara",
+      "guide": "10-17 Azshara",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "10-11 Azshara",
+          "guide": "10-17 Azshara",
           "level": 10,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 13,
       "end": 13.32,
       "next": 16,
-      "guide": "13-14 Azshara",
+      "guide": "10-17 Azshara",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "13-14 Azshara",
+          "guide": "10-17 Azshara",
           "level": 13,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 16,
       "end": 16.74,
-      "guide": "16-17 Azshara: around Haggrum Bloodfist",
+      "guide": "10-17 Azshara",
       "sections": [
         {
-          "label": "RBSection3_1",
-          "name": "around Haggrum Bloodfist",
-          "guide": "16-17 Azshara: around Haggrum Bloodfist",
+          "label": "",
+          "name": "part 3",
+          "guide": "10-17 Azshara",
           "level": 16,
           "index": 0
         }

@@ -1,9 +1,9 @@
 -- 6-11 The Lost Isles: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 6, 13).
--- Split into 2 guides, listed under "6 - 14 The Lost Isles" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 6; part 2 from 13.
 -- Edit zones/mop/The Lost Isles.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,9 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 6 - 14 The Lost Isles
-#subweight -6
-#name 6-7 The Lost Isles
+#name 6-11 The Lost Isles
+--RouteBuilder:next
+#next Zone Routes (Horde)\10-19 The Barrens;Zone Routes (Horde)\10-20 Azshara
 
 step
     .goto 174,35.90,67.13
@@ -801,20 +801,7 @@ step << Goblin
     .turnin 25058 >>Turn in Mine Disposal, the Goblin Way
     .unitscan Sassy Hardwrench
 step << Goblin
-    +|cRXP_WARN_The rest of The Lost Isles is planned from level 13.|r Load its guide for level 13 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Goblin
-#version 1
-#group Zone Routes (Horde)
-#subgroup 6 - 14 The Lost Isles
-#subweight -6
-#name 13-14 The Lost Isles
---RouteBuilder:next
-#next Zone Routes (Horde)\10-15 The Barrens: around Togrik;Zone Routes (Horde)\10-14 Azshara: around Labor Captain Grabbit
-
+    .xp 13 >>|cRXP_WARN_The rest of The Lost Isles is planned from level 13.|r Come back to this guide then
 step
     #loop
     .goto 174,68.60,47.91,0
@@ -1327,5 +1314,5 @@ step
     +|cRXP_WARN_End of the The Lost Isles route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Durotar|r: Warchief's Emissary << Goblin
 step
-    +|cRXP_WARN_Suggested next zones at level 13|r: |cRXP_FRIENDLY_The Barrens|r (about 0.6 levels of quests, starting around Togrik), |cRXP_FRIENDLY_Azshara|r (about 0.5 levels of quests, starting around Labor Captain Grabbit). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 13|r: |cRXP_FRIENDLY_The Barrens|r (about 0.6 levels of quests), |cRXP_FRIENDLY_Azshara|r (about 0.5 levels of quests). Completing this step loads the guide for The Barrens --RouteBuilder:next
 ]])

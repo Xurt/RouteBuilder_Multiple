@@ -13,21 +13,14 @@
       "start": 50,
       "end": 54.08,
       "next": 57,
-      "guide": "52-55 Winterspring: around Jez Goodgrub",
+      "guide": "50-55 Winterspring",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Donova Snowden",
-          "guide": "50-52 Winterspring: around Donova Snowden",
+          "label": "",
+          "name": "start",
+          "guide": "50-55 Winterspring",
           "level": 50,
           "index": 0
-        },
-        {
-          "label": "RBSection1_2",
-          "name": "around Jez Goodgrub",
-          "guide": "52-55 Winterspring: around Jez Goodgrub",
-          "level": 52,
-          "index": 1
         }
       ]
     },
@@ -35,12 +28,12 @@
       "part": 2,
       "start": 57,
       "end": 57,
-      "guide": "57-58 Winterspring",
+      "guide": "50-55 Winterspring",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "57-58 Winterspring",
+          "guide": "50-55 Winterspring",
           "level": 57,
           "index": 0
         }
@@ -54,7 +47,7 @@
       "req": 5,
       "xp": 160,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "NightElf",
       "from": "Teldrassil"
     },
@@ -104,7 +97,7 @@
       "req": 1,
       "xp": 880,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren",
       "from": "Teldrassil"
     },
@@ -440,7 +433,7 @@
       "req": 51,
       "xp": 9500,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -449,7 +442,7 @@
       "req": 51,
       "xp": 11400,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -458,7 +451,7 @@
       "req": 50,
       "xp": 11400,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -467,7 +460,7 @@
       "req": 51,
       "xp": 9500,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -476,7 +469,7 @@
       "req": 51,
       "xp": 9500,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -494,7 +487,7 @@
       "req": 51,
       "xp": 3800,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -503,7 +496,7 @@
       "req": 51,
       "xp": 3800,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -512,7 +505,7 @@
       "req": 51,
       "xp": 9500,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -521,7 +514,7 @@
       "req": 51,
       "xp": 9500,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -530,7 +523,7 @@
       "req": 51,
       "xp": 3800,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -539,7 +532,7 @@
       "req": 51,
       "xp": 3800,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -548,7 +541,7 @@
       "req": 51,
       "xp": 3800,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -557,7 +550,7 @@
       "req": 51,
       "xp": 3800,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -566,7 +559,7 @@
       "req": 51,
       "xp": 9500,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -584,7 +577,7 @@
       "req": 51,
       "xp": 11400,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -593,7 +586,7 @@
       "req": 51,
       "xp": 11400,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -612,7 +605,7 @@
       "req": 51,
       "xp": 11400,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -621,7 +614,7 @@
       "req": 51,
       "xp": 9500,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -630,7 +623,7 @@
       "req": 53,
       "xp": 9850,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -639,7 +632,7 @@
       "req": 53,
       "xp": 9850,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -648,7 +641,7 @@
       "req": 53,
       "xp": 9850,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -657,7 +650,7 @@
       "req": 49,
       "xp": 7890,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -666,7 +659,7 @@
       "req": 53,
       "xp": 7890,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -675,7 +668,7 @@
       "req": 53,
       "xp": 7890,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -684,7 +677,7 @@
       "req": 53,
       "xp": 7890,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -693,7 +686,7 @@
       "req": 53,
       "xp": 10200,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -702,7 +695,7 @@
       "req": 53,
       "xp": 12250,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -711,7 +704,7 @@
       "req": 51,
       "xp": 785,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -738,7 +731,7 @@
       "req": 50,
       "xp": 80,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     }
   ],

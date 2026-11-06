@@ -1,9 +1,9 @@
 -- 40-45 Thousand Needles: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 40, 45).
--- Split into 2 guides, listed under "40 - 46 Thousand Needles" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 40; part 2 from 45.
 -- Edit zones/mop/Thousand Needles.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 40 - 46 Thousand Needles
-#subweight -40
-#name 40-43 Thousand Needles: around Brivelthwerp
+#name 40-45 Thousand Needles
 --RouteBuilder:next
-#next Zone Routes (Horde)\42-44 Eastern Plaguelands: around Tarenar Sunstrike;Zone Routes (Horde)\37-40 Dustwallow Marsh: around Tabetha
+#next Zone Routes (Horde)\46-51 Felwood;Zone Routes (Horde)\40-45 Eastern Plaguelands;Zone Routes (Horde)\45-47 Badlands
 
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 64,11.13,11.22
@@ -961,23 +959,10 @@ step
     >>|cRXP_FRIENDLY_Southern Barrens|r: Warchief's Command: Southern Barrens! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_The Barrens|r: Warchief's Command: Northern Barrens!, Warchief's Command: Ashenvale! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Dustwallow Marsh and back here|r: Deadmire << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 42|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 1.0 levels of quests, starting around Tarenar Sunstrike), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 0.6 levels of quests, starting around Tabetha). Completing this step loads the guide for Eastern Plaguelands --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Thousand Needles is planned from level 45.|r Load its guide for level 45 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 40 - 46 Thousand Needles
-#subweight -40
-#name 45-46 Thousand Needles
---RouteBuilder:next
-#next Zone Routes (Horde)\46-48 Felwood: around Totem of Ruumbo;Zone Routes (Horde)\42-44 Eastern Plaguelands: around Tarenar Sunstrike;Zone Routes (Horde)\45-47 Badlands
-
+    +|cRXP_WARN_Until level 45, suggested zones|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 2.4 levels of quests), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 0.9 levels of quests). Then come back to this Thousand Needles guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 45 >>|cRXP_WARN_The rest of Thousand Needles is planned from level 45.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 64,75.93,74.70
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pozzik|r
@@ -1248,5 +1233,5 @@ step
     >>|cRXP_FRIENDLY_Felwood|r: Warchief's Command: Felwood! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Tanaris|r: Tanaris is Calling, Warchief's Command: Tanaris! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 45|r: |cRXP_FRIENDLY_Felwood|r (about 2.4 levels of quests, starting around Totem of Ruumbo), |cRXP_FRIENDLY_Eastern Plaguelands|r (about 0.9 levels of quests, starting around Tarenar Sunstrike), |cRXP_FRIENDLY_Badlands|r (about 0.7 levels of quests, starting around Dolph Blastus). Completing this step loads the guide for Felwood --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 45|r: |cRXP_FRIENDLY_Felwood|r (about 2.4 levels of quests), |cRXP_FRIENDLY_Eastern Plaguelands|r (about 2.1 levels of quests), |cRXP_FRIENDLY_Badlands|r (about 0.7 levels of quests). Completing this step loads the guide for Felwood --RouteBuilder:next
 ]])

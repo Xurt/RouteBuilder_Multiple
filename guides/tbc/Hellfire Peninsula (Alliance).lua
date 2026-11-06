@@ -1,9 +1,9 @@
 -- 58-63 Hellfire Peninsula: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 58, 63, 67).
--- Split into 3 guides, listed under "58 - 68 Hellfire Peninsula" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 58; part 2 from 63; part 3 from 67.
 -- Edit zones/tbc/Hellfire Peninsula.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,9 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 58 - 68 Hellfire Peninsula
-#subweight -58
-#name 58-61 Hellfire Peninsula: around Assistant Klatu
+#name 58-63 Hellfire Peninsula
+--RouteBuilder:next
+#next Zone Routes (Alliance)\68-70 Netherstorm;Zone Routes (Alliance)\65-68 Nagrand
 
 step
     .goto 1944,87.34,50.75
@@ -931,20 +931,7 @@ step
     >>|cRXP_FRIENDLY_Blasted Lands and back here|r: Gaining Mirren's Trust
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Weaken the Ramparts
 step
-    +|cRXP_WARN_The rest of Hellfire Peninsula is planned from level 63.|r Load its guide for level 63 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 58 - 68 Hellfire Peninsula
-#subweight -58
-#name 63-64 Hellfire Peninsula: around Thiah Redmane
---RouteBuilder:next
-#next Zone Routes (Alliance)\62-64 Terokkar Forest: around Jenai Starwhisper;Zone Routes (Alliance)\62-63 Zangarmarsh: around Ysiel Windsinger
-
+    .xp 63 >>|cRXP_WARN_The rest of Hellfire Peninsula is planned from level 63.|r Come back to this guide then
 step
     .goto 1944,26.88,59.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Bazil Olof'tazun|r
@@ -1205,22 +1192,9 @@ step
     >>|cRXP_FRIENDLY_Zangarmarsh|r: The Cenarion Expedition
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: An Ambitious Plan
 step
-    +|cRXP_WARN_Suggested next zones at level 63|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.8 levels of quests, starting around Jenai Starwhisper), |cRXP_FRIENDLY_Zangarmarsh|r (about 0.6 levels of quests, starting around Ysiel Windsinger; 2 quests from here hand in there). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
+    +|cRXP_WARN_Until level 67, suggested zones|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.8 levels of quests), |cRXP_FRIENDLY_Zangarmarsh|r (about 0.6 levels of quests; 2 quests from here hand in there). Then come back to this Hellfire Peninsula guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Hellfire Peninsula is planned from level 67.|r Load its guide for level 67 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 58 - 68 Hellfire Peninsula
-#subweight -58
-#name 67-68 Hellfire Peninsula
---RouteBuilder:next
-#next Zone Routes (Alliance)\68-70 Netherstorm: around Image of Archmage Vargoth;Zone Routes (Alliance)\65-66 Nagrand: around Huntress Bintook
-
+    .xp 67 >>|cRXP_WARN_The rest of Hellfire Peninsula is planned from level 67.|r Come back to this guide then
 step
     .goto 1944,79.34,33.86
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wing Commander Gryphongar|r
@@ -1372,5 +1346,5 @@ step
 step
     +|cRXP_WARN_End of the Hellfire Peninsula route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 67|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.3 levels of quests, starting around Image of Archmage Vargoth), |cRXP_FRIENDLY_Nagrand|r (about 0.6 levels of quests, starting around Huntress Bintook). Completing this step loads the guide for Netherstorm --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 67|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.3 levels of quests), |cRXP_FRIENDLY_Nagrand|r (about 0.6 levels of quests). Completing this step loads the guide for Netherstorm --RouteBuilder:next
 ]])

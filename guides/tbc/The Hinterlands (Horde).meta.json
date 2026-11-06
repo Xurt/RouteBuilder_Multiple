@@ -13,12 +13,12 @@
       "start": 43,
       "end": 43,
       "next": 46,
-      "guide": "43-44 The Hinterlands",
+      "guide": "43-53 The Hinterlands",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "43-44 The Hinterlands",
+          "guide": "43-53 The Hinterlands",
           "level": 43,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 46,
       "end": 47.42,
       "next": 50,
-      "guide": "46-48 The Hinterlands: around Huntsman Markhor",
+      "guide": "43-53 The Hinterlands",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Huntsman Markhor",
-          "guide": "46-48 The Hinterlands: around Huntsman Markhor",
+          "label": "",
+          "name": "part 2",
+          "guide": "43-53 The Hinterlands",
           "level": 46,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 50,
       "end": 50.22,
-      "guide": "50-51 The Hinterlands",
+      "guide": "43-53 The Hinterlands",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "50-51 The Hinterlands",
+          "guide": "43-53 The Hinterlands",
           "level": 50,
           "index": 0
         }

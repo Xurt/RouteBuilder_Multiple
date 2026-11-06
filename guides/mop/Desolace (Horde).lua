@@ -1,8 +1,7 @@
 -- 30-35 Desolace: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
--- Split into 2 guides, listed under "30 - 36 Desolace" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
 -- Edit zones/mop/Desolace.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -12,10 +11,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 30 - 36 Desolace
-#subweight -30
-#name 30-32 Desolace: around Sorrem
-#next Zone Routes (Horde)\32-36 Desolace: around Cenarion Researcher Korrah
+#name 30-35 Desolace
+--RouteBuilder:next
+#next Zone Routes (Horde)\35-40 Western Plaguelands;Zone Routes (Horde)\35-41 Dustwallow Marsh;Zone Routes (Horde)\36-41 Feralas
 
 step
     .goto 66,54.77,8.76
@@ -412,30 +410,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .turnin 14223 >>Turn in Peace of Mind
     .accept 14225 >>Accept You'll Know It When You See It
     .target Sorrem
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 30 - 36 Desolace
-#subweight -30
-#name 32-36 Desolace: around Cenarion Researcher Korrah
---RouteBuilder:next
-#next Zone Routes (Horde)\35-39 Western Plaguelands: around Field Agent Kaartish;Zone Routes (Horde)\35-37 Dustwallow Marsh: around "Swamp Eye" Jarl;Zone Routes (Horde)\36-38 Feralas: around Orhan Ogreblade
-
 step
     .goto 66,38.80,26.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cenarion Researcher Korrah|r
+    .turnin 14255 >>Turn in Ethel Rethor << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 14256 >>Accept The Emerging Threat
     .target Cenarion Researcher Korrah
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 66,38.80,26.95
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cenarion Researcher Korrah|r
-    .turnin 14255 >>Turn in Ethel Rethor
-    .target Cenarion Researcher Korrah
-    .isOnQuest 14255
 step
     .goto 66,39.07,27.43
     >>Naga Forces Scouted
@@ -527,7 +507,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,52.95,28.99
     >>Open the |cRXP_PICK_Demonic Chest|r. Loot it for |cRXP_LOOT_Ancient Summoning Ritual|r
     .complete 14225,1 --Ancient Summoning Ritual (1)
-    .isOnQuest 14225
 step
     #completewith next
     .hs >>Hearth to Brell Farglenn's inn. |cRXP_WARN_Walk instead if you are already nearby|r
@@ -537,47 +516,28 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Botanist Ferrah|r
     .turnin 14311 >>Turn in Taking Part
     .target Botanist Ferrah
-    .isOnQuest 14311
 step
     .goto 66,58.45,49.85
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Garren Darkwind|r
     .accept 14312 >>Accept An Introduction Is In Order
     .target Garren Darkwind
-    .isQuestTurnedIn 14311 --any of: Taking Part
 step
     .goto 66,58.29,50.11
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khan Leh'Prah|r
     .turnin 14312 >>Turn in An Introduction Is In Order
-    .target Khan Leh'Prah
-    .isOnQuest 14312
-step
-    .goto 66,58.29,50.11
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khan Leh'Prah|r
     .accept 14314 >>Accept Breakout!
     .target Khan Leh'Prah
-    .isQuestTurnedIn 14312 --any of: An Introduction Is In Order
 step
     .goto 66,58.45,49.85
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Garren Darkwind|r
     .accept 14316 >>Accept Cenarion Property
     .target Garren Darkwind
-    .isQuestTurnedIn 14312 --any of: An Introduction Is In Order
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 66,57.47,47.72
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Karnum Marshweaver|r
-    .accept 14338 >>Accept Ghost Walker Post
-    .target Karnum Marshweaver
-    .isQuestTurnedIn 14311 --any of: Taking Part
 step
     .goto 66,57.47,47.72
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Karnum Marshweaver|r
     .turnin 14307 >>Turn in Stubborn Winds
-    .target Karnum Marshweaver
-    .isOnQuest 14307
-step
-    .goto 66,57.47,47.72
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Karnum Marshweaver|r
     .turnin 14302 >>Turn in Official Assessment
+    .accept 14338 >>Accept Ghost Walker Post << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Karnum Marshweaver
 step
     #loop
@@ -589,7 +549,6 @@ step
     >>Kill |cRXP_ENEMY_Blood-filled Leeches|r. Loot them for |cRXP_LOOT_Blood-Filled Leech|r
     .complete 14304,1 --Blood-Filled Leech (10)
     .mob Blood-filled Leech
-    .isOnQuest 14304
 step
     .goto 66,52.57,54.39
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Takata Steelblade|r
@@ -614,14 +573,8 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,52.25,53.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maurin Bonesplitter|r
     .turnin 14338 >>Turn in Ghost Walker Post
-    .target Maurin Bonesplitter
-    .isOnQuest 14338
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 66,52.25,53.44
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maurin Bonesplitter|r
     .accept 14339 >>Accept Delivery Device
     .target Maurin Bonesplitter
-    .isQuestTurnedIn 14338 --any of: Ghost Walker Post
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,52.25,53.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maurin Bonesplitter|r
@@ -648,7 +601,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Kill |cRXP_ENEMY_Dying Kodos|r. Loot them for |cRXP_LOOT_Hollow Kodo Horn|r
     .complete 14339,1 --Hollow Kodo Horn (3)
     .mob Dying Kodo
-    .isOnQuest 14339
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 66,53.59,79.84,0
@@ -669,20 +621,16 @@ step
 step
     .goto 66,72.40,58.22
     >>Kill |cRXP_ENEMY_Aged Kodos|r and |cRXP_ENEMY_Ancient Kodos|r
+    >>Kill |cRXP_ENEMY_Magram Warden|r
     .complete 5561,1 --Aged Kodo (3)
+    .complete 14314,1 --Magram Warden slain (1)
     .mob Aged Kodo
     .mob Ancient Kodo
-step
-    .goto 66,71.45,55.92
-    >>Kill |cRXP_ENEMY_Magram Warden|r
-    .complete 14314,1 --Magram Warden slain (1)
     .mob Magram Warden
-    .isOnQuest 14314
 step
     .goto 66,70.39,49.28
     >>Pick up |cRXP_PICK_Cenarion Supply Crate|r from the ground
     .complete 14316,1 --Cenarion Supply Crate (7)
-    .isOnQuest 14316
 step
     .goto 66,60.86,61.86
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Smeed Scrabblescrew|r
@@ -741,57 +689,35 @@ step
     .goto 66,58.78,46.41
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thressa Amberglen|r
     .turnin 14304 >>Turn in Blood Theory
-    .target Thressa Amberglen
-    .isOnQuest 14304
-step
-    .goto 66,58.78,46.41
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thressa Amberglen|r
     .accept 14309 >>Accept Calming the Kodo
     .target Thressa Amberglen
-    .isQuestTurnedIn 14304 --any of: Blood Theory
 step
     .goto 66,58.45,49.85
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Garren Darkwind|r
     .turnin 14316 >>Turn in Cenarion Property
     .target Garren Darkwind
-    .isOnQuest 14316
 step
     .goto 66,58.29,50.11
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khan Leh'Prah|r
     .turnin 14314 >>Turn in Breakout!
-    .target Khan Leh'Prah
-    .isOnQuest 14314
-step
-    .goto 66,58.29,50.11
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khan Leh'Prah|r
     .accept 14318 >>Accept Delicate Negotiations
     .target Khan Leh'Prah
-    .isQuestTurnedIn 14314 --Breakout!
-    .isQuestTurnedIn 14316 --Cenarion Property
 step
     .goto 66,64.08,57.53
     >>Use the Kodo Concoction near 5 Enraged Kodos.
     .complete 14309,1 --Enraged Kodo (5)
     .target Enraged Kodo
-    .isOnQuest 14309
 step
     .goto 66,71.07,45.48
     >>Kill |cRXP_ENEMY_Spear of the Kolkar Khan|r
     .complete 14318,1 --Spear of the Kolkar Khan slain (1)
     .mob Spear of the Kolkar Khan
-    .isOnQuest 14318
 step
     .goto 66,73.34,41.63
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khan Kammah|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 14318 >>Turn in Delicate Negotiations
-    .unitscan Khan Kammah
-    .isOnQuest 14318
-step
-    .goto 66,73.34,41.63
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khan Kammah|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 14325 >>Accept Will Work For Food
     .unitscan Khan Kammah
-    .isQuestTurnedIn 14318 --any of: Delicate Negotiations
 step
     #loop
     .goto 66,66.48,49.41,0
@@ -801,25 +727,17 @@ step
     >>Kill |cRXP_ENEMY_Revitalized Basilisks|r. Loot them for |cRXP_LOOT_Basilisk Flank|r
     .complete 14325,1 --Basilisk Flank (5)
     .mob Revitalized Basilisk
-    .isOnQuest 14325
 step
     .goto 66,73.34,41.63
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khan Kammah|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 14325 >>Turn in Will Work For Food
-    .unitscan Khan Kammah
-    .isOnQuest 14325
-step
-    .goto 66,73.34,41.63
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khan Kammah|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 14327 >>Accept My Word is My Bond
     .unitscan Khan Kammah
-    .isQuestTurnedIn 14325 --any of: Will Work For Food
 step
     .goto 66,70.38,32.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cenarion Embassador Thunk|r
     .turnin 14246 >>Turn in Early Adoption
     .target Cenarion Embassador Thunk
-    .isOnQuest 14246
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 66,68.31,10.19,0
@@ -833,49 +751,33 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nijel's Point Defender|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 14198 >>Accept Rider on the Storm
     .unitscan Nijel's Point Defender
-    .isQuestTurnedIn 14196 --any of: Firestarter
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 66,67.28,10.29,0
     .goto 66,67.28,10.29,40,0
     .goto 66,64.60,8.57,40,0
     >>Kill |cRXP_ENEMY_Nijel's Point Defenders|r
-    .complete 14198,1 --Nijel's Point Defender slain (40)
-    .mob Nijel's Point Defender
-    .isOnQuest 14198
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 66,68.07,9.89,0
-    .goto 66,68.07,9.89,40,0
-    .goto 66,66.50,11.96,40,0
     >>Kill |cRXP_ENEMY_Nijel's Point Merchants|r
+    .complete 14198,1 --Nijel's Point Defender slain (40)
     .complete 14198,2 --Nijel's Point Merchant slain (15)
+    .mob Nijel's Point Defender
     .mob Nijel's Point Merchant
-    .isOnQuest 14198
 step
     .goto 66,60.98,29.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bizby|r
     .turnin 14253 >>Turn in Fletch Me Some Plumage!
     .target Bizby
-    .isOnQuest 14253
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,44.91,29.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sorrem|r
     .turnin 14225 >>Turn in You'll Know It When You See It
-    .target Sorrem
-    .isOnQuest 14225
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 66,44.91,29.51
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sorrem|r
     .accept 14227 >>Accept Putting Their Heads Together
     .target Sorrem
-    .isQuestTurnedIn 14225 --any of: You'll Know It When You See It
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,44.62,29.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cerelia|r
     .turnin 14198 >>Turn in Rider on the Storm
     .target Cerelia
-    .isOnQuest 14198
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 66,53.68,29.52,0
@@ -883,37 +785,28 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,54.73,27.09,40,0
     >>Open the |cRXP_PICK_Bleached Skullpile|r. Loot it for |cRXP_LOOT_Bleached Skull|r
     .collect 48953,1,14227,1 --Bleached Skull (1)
-    .isOnQuest 14227
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,54.93,26.69
     >>Kill |cRXP_ENEMY_Nazargen|r
     .complete 14227,1 --Nazargen slain (1)
     .mob Nazargen
-    .isOnQuest 14227
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,44.91,29.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sorrem|r
     .turnin 14227 >>Turn in Putting Their Heads Together
     .target Sorrem
-    .isOnQuest 14227
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,52.25,53.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maurin Bonesplitter|r
     .turnin 14339 >>Turn in Delivery Device
-    .target Maurin Bonesplitter
-    .isOnQuest 14339
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 66,52.25,53.44
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maurin Bonesplitter|r
     .accept 14343 >>Accept Maurin's Concoction
     .target Maurin Bonesplitter
-    .isQuestTurnedIn 14339 --any of: Delivery Device
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,57.47,47.72
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Karnum Marshweaver|r
+    .turnin 14343 >>Turn in Maurin's Concoction
     .accept 14337 >>Accept Shadowprey Village
     .target Karnum Marshweaver
-    .isQuestTurnedIn 14325 --any of: Will Work For Food
 step
     .goto 66,58.78,46.41
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thressa Amberglen|r
@@ -926,12 +819,6 @@ step
     .turnin 14327 >>Turn in My Word is My Bond while you are here
     .isQuestComplete 14327
     .target Khan Leh'Prah
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 66,57.47,47.72
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Karnum Marshweaver|r
-    .turnin 14343 >>Turn in Maurin's Concoction
-    .target Karnum Marshweaver
-    .isOnQuest 14343
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 66,73.11,22.08,0
@@ -971,31 +858,22 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Karnum Marshweaver|r
     .accept 14346 >>Accept Cleansing Our Crevasse
     .target Karnum Marshweaver
-    .isQuestTurnedIn 14343,14379 --any of: Maurin's Concoction, Rock Lobstrock!
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,57.60,47.70
     >>Kill |cRXP_ENEMY_Grimfeather|r
     .complete 14346,1 --Grimfeather slain (1)
     .mob Grimfeather
-    .isOnQuest 14346
 step
     .goto 66,58.78,46.41
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thressa Amberglen|r
     .turnin 14309 >>Turn in Calming the Kodo
     .target Thressa Amberglen
-    .isOnQuest 14309
 step
     .goto 66,58.29,50.11
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khan Leh'Prah|r
     .turnin 14327 >>Turn in My Word is My Bond
-    .target Khan Leh'Prah
-    .isOnQuest 14327
-step
-    .goto 66,58.29,50.11
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khan Leh'Prah|r
     .accept 14328 >>Accept Three Princes
     .target Khan Leh'Prah
-    .isQuestTurnedIn 14327 --any of: My Word is My Bond
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,52.57,54.39
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Takata Steelblade|r
@@ -1019,40 +897,26 @@ step
     >>Kill |cRXP_ENEMY_Rhoho|r
     .complete 14328,1 --Rhoho slain (1)
     .mob Rhoho
-    .isOnQuest 14328
 step
     .goto 66,35.50,81.44
     >>Kill |cRXP_ENEMY_Sherik|r
     .complete 14328,2 --Sherik slain (1)
     .mob Sherik
-    .isOnQuest 14328
 step
     .goto 66,35.62,92.35
     >>Kill |cRXP_ENEMY_Jorreth|r
     .complete 14328,3 --Jorreth slain (1)
     .mob Jorreth
-    .isOnQuest 14328
 step
     .goto 66,40.51,95.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khan Shodo|r
     .turnin 14328 >>Turn in Three Princes
-    .target Khan Shodo
-    .isOnQuest 14328
-step
-    .goto 66,40.51,95.48
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khan Shodo|r
     .accept 14329 >>Accept Not So Fast!
     .target Khan Shodo
-    .isQuestTurnedIn 14328 --any of: Three Princes
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,22.64,71.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mai'Lahii|r
     .turnin 14337 >>Turn in Shadowprey Village
-    .target Mai'Lahii
-    .isOnQuest 14337
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 66,22.64,71.97
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mai'Lahii|r
     .turnin 14334 >>Turn in Blubbergut
     .target Mai'Lahii
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
@@ -1064,13 +928,16 @@ step
     .goto 66,27.22,63.35
     >>Click the |cRXP_PICK_Broken Relic|r
     .accept 14333 >>Accept While You're Here
-    .isQuestTurnedIn 14328 --any of: Three Princes
 step
     #completewith Drop14330x1
     >>|cRXP_LOOT_Maraudine Prisoner Manifest|r can drop from |cRXP_ENEMY_Maraudine Mauler|r. Use it to start the quest if you get one
     .collect 38567,1,14330 --Maraudine Prisoner Manifest (1)
     .accept 14330 >>Accept Behind Closed Doors
     .use 38567
+step
+    #completewith Drop14330x1
+    >>As you go: Pick up |cRXP_PICK_Defiled Relic|r from the ground. |cRXP_WARN_Anything left is finished later|r
+    .collect 49194,1,14333,1 --Defiled Relic (1)
 step
     #label Drop14330x1
     #loop
@@ -1080,13 +947,11 @@ step
     >>Kill |cRXP_ENEMY_Maraudine Maulers|r
     .complete 14329,1 --Maraudine Mauler slain (10)
     .mob Maraudine Mauler
-    .isOnQuest 14329
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,34.70,45.56
     >>Interact with |cRXP_FRIENDLY_Sea Giants|r
     .complete 14346,3 --Sea Giant (3)
     .target Sea Giant
-    .isOnQuest 14346
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 66,37.53,42.54,0
@@ -1096,7 +961,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Interact with |cRXP_FRIENDLY_Slitherblade Sirens|r
     .complete 14346,2 --Slitherblade Siren (10)
     .target Slitherblade Siren
-    .isOnQuest 14346
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 66,36.86,40.50,0
@@ -1106,7 +970,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Interact with |cRXP_FRIENDLY_Slitherblade Invaders|r
     .complete 14346,4 --Slitherblade Invader (10)
     .target Slitherblade Invader
-    .isOnQuest 14346
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,33.70,35.48
     >>Kill |cRXP_ENEMY_Drysnap Crawlers|r
@@ -1121,7 +984,6 @@ step
     .goto 66,28.45,58.85
     >>Pick up |cRXP_PICK_Defiled Relic|r from the ground
     .collect 49194,1,14333,1 --Defiled Relic (1)
-    .isOnQuest 14333
 step
     .goto 66,27.29,62.96
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kherrah|r
@@ -1139,7 +1001,6 @@ step
     .goto 66,27.22,63.35
     >>You are to scour the Valley of Spears to find 6 Defiled Relics.
     .complete 14333,1 --Defiled Relic Bunny (1)
-    .isOnQuest 14333
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 66,25.82,68.21
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Taiga Wisemane|r
@@ -1149,14 +1010,8 @@ step
     .goto 66,40.51,95.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khan Shodo|r
     .turnin 14333 >>Turn in While You're Here
-    .target Khan Shodo
-    .isOnQuest 14333
-step
-    .goto 66,40.51,95.48
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khan Shodo|r
     .turnin 14329 >>Turn in Not So Fast!
     .target Khan Shodo
-    .isOnQuest 14329
 step
     .goto 66,72.28,67.35
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khan Leh'Prah|r
@@ -1236,7 +1091,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Karnum Marshweaver|r
     .turnin 14346 >>Turn in Cleansing Our Crevasse
     .target Karnum Marshweaver
-    .isOnQuest 14346
 step
     #completewith next
     .zone 88 >>Travel to Thunder Bluff
@@ -1343,5 +1197,5 @@ step
 step
     +|cRXP_WARN_End of the Desolace route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 35|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 1.7 levels of quests, starting around Field Agent Kaartish), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.6 levels of quests, starting around "Swamp Eye" Jarl), |cRXP_FRIENDLY_Feralas|r (about 0.8 levels of quests, starting around Orhan Ogreblade). Completing this step loads the guide for Western Plaguelands --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 35|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 1.7 levels of quests), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Feralas|r (about 0.8 levels of quests). Completing this step loads the guide for Western Plaguelands --RouteBuilder:next
 ]])

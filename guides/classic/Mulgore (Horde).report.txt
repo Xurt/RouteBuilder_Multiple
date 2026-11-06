@@ -1,7 +1,7 @@
 Mulgore - Horde - part 1 of 3, planned from level 1
-Guide "1-14 Mulgore" in group "Zone Routes (Horde)": this part has 211 steps, 109 stops
+Guide "1-14 Mulgore" in group "Zone Routes (Horde)": this part has 209 steps, 107 stops
 Written to guides/classic/Mulgore (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: zones/classic/Mulgore.json
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -114,7 +114,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Mulgore - Horde - part 2 of 3, planned from level 12
 Guide "1-14 Mulgore" in group "Zone Routes (Horde)": this part has 20 steps, 12 stops
 Written to guides/classic/Mulgore (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: zones/classic/Mulgore.json
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -171,7 +171,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Mulgore - Horde - part 3 of 3, planned from level 15
 Guide "1-14 Mulgore" in group "Zone Routes (Horde)": this part has 2 steps, 1 stops
 Written to guides/classic/Mulgore (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: zones/classic/Mulgore.json
 RestedXP cross-check: 720 objective notes read from 50 guide files
 

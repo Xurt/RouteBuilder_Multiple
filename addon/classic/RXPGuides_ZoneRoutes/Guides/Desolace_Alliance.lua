@@ -1,9 +1,9 @@
 -- 31-40 Desolace: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 31, 34, 37).
--- Split into 3 guides, listed under "31 - 38 Desolace" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 31; part 2 from 34; part 3 from 37.
 -- Edit zones/classic/Desolace.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 31 - 38 Desolace
-#subweight -31
-#name 31-32 Desolace: around Kreldig Ungor
+#name 31-40 Desolace
 
 step
     .goto 1443/1,1242.70,214.95
@@ -227,18 +225,7 @@ step
     +|cRXP_WARN_That is all of Desolace for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Arathi Highlands|r: Crystal in the Mountains
 step
-    +|cRXP_WARN_The rest of Desolace is planned from level 34.|r Load its guide for level 34 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 31 - 38 Desolace
-#subweight -31
-#name 34-35 Desolace
-
+    .xp 34 >>|cRXP_WARN_The rest of Desolace is planned from level 34.|r Come back to this guide then
 step
     #loop
     .goto 1443/1,1287.21,-546.22,0
@@ -395,18 +382,7 @@ step
     +|cRXP_WARN_That is all of Desolace for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Ironforge|r: The Karnitol Shipwreck
 step
-    +|cRXP_WARN_The rest of Desolace is planned from level 37.|r Load its guide for level 37 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 31 - 38 Desolace
-#subweight -31
-#name 37-38 Desolace
-
+    .xp 37 >>|cRXP_WARN_The rest of Desolace is planned from level 37.|r Come back to this guide then
 step << Hunter
     .goto 1443/1,1326.33,136.40
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baritanas Skyriver|r

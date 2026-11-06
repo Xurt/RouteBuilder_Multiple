@@ -13,21 +13,14 @@
       "start": 1,
       "end": 9.6,
       "next": 12,
-      "guide": "4-10 Durotar: around Master Gadrin",
+      "guide": "1-13 Durotar",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Gornek",
-          "guide": "1-4 Durotar: around Gornek",
+          "label": "",
+          "name": "start",
+          "guide": "1-13 Durotar",
           "level": 1,
           "index": 0
-        },
-        {
-          "label": "RBSection1_2",
-          "name": "around Master Gadrin",
-          "guide": "4-10 Durotar: around Master Gadrin",
-          "level": 4,
-          "index": 1
         }
       ]
     },
@@ -35,12 +28,12 @@
       "part": 2,
       "start": 12,
       "end": 12.28,
-      "guide": "12-13 Durotar: around Thotar",
+      "guide": "1-13 Durotar",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Thotar",
-          "guide": "12-13 Durotar: around Thotar",
+          "label": "",
+          "name": "part 2",
+          "guide": "1-13 Durotar",
           "level": 12,
           "index": 0
         }
@@ -54,7 +47,7 @@
       "req": 3,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -63,7 +56,7 @@
       "req": 5,
       "xp": 700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -99,7 +92,7 @@
       "req": 4,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -144,7 +137,7 @@
       "req": 4,
       "xp": 780,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -153,7 +146,7 @@
       "req": 7,
       "xp": 980,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -162,7 +155,7 @@
       "req": 6,
       "xp": 700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -171,7 +164,7 @@
       "req": 8,
       "xp": 880,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -180,7 +173,7 @@
       "req": 5,
       "xp": 700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -189,7 +182,7 @@
       "req": 5,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -198,7 +191,7 @@
       "req": 4,
       "xp": 315,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -207,7 +200,7 @@
       "req": 3,
       "xp": 700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -216,7 +209,7 @@
       "req": 4,
       "xp": 840,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -225,7 +218,7 @@
       "req": 4,
       "xp": 680,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -234,7 +227,7 @@
       "req": 7,
       "xp": 780,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -243,7 +236,7 @@
       "req": 7,
       "xp": 880,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -252,7 +245,7 @@
       "req": 6,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -316,7 +309,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Shaman",
       "from": "The Barrens"
     },
@@ -326,7 +319,7 @@
       "req": 1,
       "xp": 110,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -461,7 +454,7 @@
       "req": 5,
       "xp": 270,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Troll Priest"
     },
     {
@@ -470,7 +463,7 @@
       "req": 5,
       "xp": 90,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Troll Priest"
     },
     {
@@ -479,7 +472,7 @@
       "req": 10,
       "xp": 210,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Troll Priest",
       "from": "Mulgore"
     },
@@ -489,7 +482,7 @@
       "req": 10,
       "xp": 210,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Troll Priest",
       "from": "Mulgore"
     },
@@ -499,7 +492,7 @@
       "req": 10,
       "xp": 210,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Troll Priest",
       "from": "Tirisfal Glades"
     },
@@ -509,7 +502,7 @@
       "req": 9,
       "xp": 910,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -518,7 +511,7 @@
       "req": 9,
       "xp": 455,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -527,7 +520,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc Hunter/Troll Hunter",
       "from": "Mulgore"
     },
@@ -537,7 +530,7 @@
       "req": 10,
       "xp": 420,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc/Troll",
       "from": "The Barrens"
     },
@@ -556,7 +549,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Orc Warlock",
       "from": "Tirisfal Glades"
     },

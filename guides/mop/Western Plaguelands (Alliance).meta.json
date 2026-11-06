@@ -12,21 +12,14 @@
       "part": 1,
       "start": 35,
       "end": 39.48,
-      "guide": "37-40 Western Plaguelands: around Daria L\u0027Rayne",
+      "guide": "35-40 Western Plaguelands",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Field Agent Kaartish",
-          "guide": "35-37 Western Plaguelands: around Field Agent Kaartish",
+          "label": "",
+          "name": "start",
+          "guide": "35-40 Western Plaguelands",
           "level": 35,
           "index": 0
-        },
-        {
-          "label": "RBSection1_2",
-          "name": "around Daria L\u0027Rayne",
-          "guide": "37-40 Western Plaguelands: around Daria L\u0027Rayne",
-          "level": 37,
-          "index": 1
         }
       ]
     }
@@ -65,7 +58,7 @@
       "req": 35,
       "xp": 4900,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -83,7 +76,7 @@
       "req": 36,
       "xp": 980,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -119,7 +112,7 @@
       "req": 34,
       "xp": 2750,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -155,7 +148,7 @@
       "req": 36,
       "xp": 3920,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -164,7 +157,7 @@
       "req": 36,
       "xp": 1950,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -173,7 +166,7 @@
       "req": 36,
       "xp": 3920,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -182,7 +175,7 @@
       "req": 36,
       "xp": 6200,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -191,7 +184,7 @@
       "req": 35,
       "xp": 3920,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -200,7 +193,7 @@
       "req": 35,
       "xp": 3710,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -209,7 +202,7 @@
       "req": 35,
       "xp": 4600,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -218,7 +211,7 @@
       "req": 35,
       "xp": 3710,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -227,7 +220,7 @@
       "req": 35,
       "xp": 4600,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -236,7 +229,7 @@
       "req": 35,
       "xp": 4600,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -245,7 +238,7 @@
       "req": 35,
       "xp": 5550,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -254,7 +247,7 @@
       "req": 35,
       "xp": 4600,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -425,7 +418,7 @@
       "req": 38,
       "xp": 435,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -434,7 +427,7 @@
       "req": 38,
       "xp": 5450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -443,7 +436,7 @@
       "req": 38,
       "xp": 4370,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -452,7 +445,7 @@
       "req": 38,
       "xp": 5450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -461,7 +454,7 @@
       "req": 38,
       "xp": 5450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -470,7 +463,7 @@
       "req": 38,
       "xp": 6550,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -479,7 +472,7 @@
       "req": 38,
       "xp": 435,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {
@@ -488,7 +481,7 @@
       "req": 38,
       "xp": 4370,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren"
     },
     {

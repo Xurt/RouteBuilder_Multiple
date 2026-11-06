@@ -1,9 +1,9 @@
 -- 52-60 Western Plaguelands: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 52, 55, 59).
--- Split into 3 guides, listed under "52 - 60 Western Plaguelands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 52; part 2 from 55; part 3 from 59.
 -- Edit zones/tbc/Western Plaguelands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 52 - 60 Western Plaguelands
-#subweight -52
-#name 52-53 Western Plaguelands: around Commander Ashlam Valorfist
+#name 52-60 Western Plaguelands
 --RouteBuilder:next
-#next Zone Routes (Alliance)\50-52 Un'Goro Crater: around Torwa Pathfinder
+#next Zone Routes (Alliance)\58-63 Hellfire Peninsula
 
 step << Paladin
     .goto 1422/0,-1419.43,957.81
@@ -347,22 +345,9 @@ step
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Forging the Mightstone << Paladin
     >>|cRXP_FRIENDLY_Eastern Plaguelands and back here|r: A Plague Upon Thee
 step
-    +|cRXP_WARN_Suggested next zones at level 52|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.6 levels of quests, starting around Torwa Pathfinder). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
+    +|cRXP_WARN_Until level 55, suggested zones|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.6 levels of quests). Then come back to this Western Plaguelands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Western Plaguelands is planned from level 55.|r Load its guide for level 55 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 52 - 60 Western Plaguelands
-#subweight -52
-#name 55-57 Western Plaguelands: around Commander Ashlam Valorfist
---RouteBuilder:next
-#next Zone Routes (Alliance)\55-56 Eastern Plaguelands: around Tirion Fordring
-
+    .xp 55 >>|cRXP_WARN_The rest of Western Plaguelands is planned from level 55.|r Come back to this guide then
 step
     .goto 1422/0,-1428.46,944.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Anchorite Truuen|r
@@ -783,22 +768,9 @@ step
     >>|cRXP_FRIENDLY_Eastern Plaguelands|r: Brother Carlin, The Battle of Darrowshire
     >>|cRXP_FRIENDLY_Tanaris|r: Mold Rhymes With...
 step
-    +|cRXP_WARN_Suggested next zones at level 56|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 0.6 levels of quests, starting around Tirion Fordring; 4 quests from here hand in there). Completing this step loads the guide for Eastern Plaguelands --RouteBuilder:next
+    +|cRXP_WARN_Until level 59, suggested zones|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 0.6 levels of quests; 4 quests from here hand in there). Then come back to this Western Plaguelands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Western Plaguelands is planned from level 59.|r Load its guide for level 59 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 52 - 60 Western Plaguelands
-#subweight -52
-#name 59-60 Western Plaguelands
---RouteBuilder:next
-#next Zone Routes (Alliance)\58-61 Hellfire Peninsula: around Assistant Klatu
-
+    .xp 59 >>|cRXP_WARN_The rest of Western Plaguelands is planned from level 59.|r Come back to this guide then
 step << Paladin
     .goto 1422/0,-1419.43,957.81
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Commander Ashlam Valorfist|r
@@ -980,5 +952,5 @@ step
     >>|cRXP_FRIENDLY_Eastern Plaguelands|r: The Dying, Ras Frostwhisper
     >>|cRXP_FRIENDLY_Stormwind City|r: The Blightcaller Cometh
 step
-    +|cRXP_WARN_Suggested next zones at level 59|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 1.4 levels of quests, starting around Assistant Klatu). Completing this step loads the guide for Hellfire Peninsula --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 59|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 1.4 levels of quests). Completing this step loads the guide for Hellfire Peninsula --RouteBuilder:next
 ]])

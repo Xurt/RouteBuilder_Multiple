@@ -1,9 +1,9 @@
 -- 52-58 Burning Steppes: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 52, 55, 59).
--- Split into 3 guides, listed under "52 - 60 Burning Steppes" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 52; part 2 from 55; part 3 from 59.
 -- Edit zones/tbc/Burning Steppes.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 52 - 60 Burning Steppes
-#subweight -52
-#name 52-53 Burning Steppes
+#name 52-58 Burning Steppes
 --RouteBuilder:next
-#next Zone Routes (Alliance)\50-52 Un'Goro Crater: around Torwa Pathfinder
+#next Zone Routes (Alliance)\58-63 Hellfire Peninsula
 
 step
     .goto 1428/0,-2768.47,-8398.88
@@ -72,22 +70,9 @@ step
     +|cRXP_WARN_That is all of Burning Steppes for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Eastern Kingdoms - the continent map and back here|r: Overmaster Pyron
 step
-    +|cRXP_WARN_Suggested next zones at level 52|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.6 levels of quests, starting around Torwa Pathfinder). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
+    +|cRXP_WARN_Until level 55, suggested zones|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.6 levels of quests). Then come back to this Burning Steppes guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Burning Steppes is planned from level 55.|r Load its guide for level 55 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 52 - 60 Burning Steppes
-#subweight -52
-#name 55-56 Burning Steppes: around Oralius
---RouteBuilder:next
-#next Zone Routes (Alliance)\55-57 Western Plaguelands: around Commander Ashlam Valorfist
-
+    .xp 55 >>|cRXP_WARN_The rest of Burning Steppes is planned from level 55.|r Come back to this guide then
 step
     .goto 1428/0,-2768.47,-8398.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jalinda Sprig|r
@@ -291,23 +276,10 @@ step
     +|cRXP_WARN_That is all of Burning Steppes for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Redridge Mountains|r: The True Masters
     >>|cRXP_FRIENDLY_Winterspring|r: Felnok Steelspring
-step
-    +|cRXP_WARN_Suggested next zones at level 55|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 1.0 levels of quests, starting around Commander Ashlam Valorfist). Completing this step loads the guide for Western Plaguelands --RouteBuilder:next
 step << Human Warlock/Gnome Warlock
-    +|cRXP_WARN_The rest of Burning Steppes is planned from level 59.|r Load its guide for level 59 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Human Warlock/Gnome Warlock
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 52 - 60 Burning Steppes
-#subweight -52
-#name 59-60 Burning Steppes
---RouteBuilder:next
-#next Zone Routes (Alliance)\58-61 Hellfire Peninsula: around Assistant Klatu
-
+    +|cRXP_WARN_Until level 59, suggested zones|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 1.0 levels of quests). Then come back to this Burning Steppes guide --RouteBuilder:next
+step << Human Warlock/Gnome Warlock
+    .xp 59 >>|cRXP_WARN_The rest of Burning Steppes is planned from level 59.|r Come back to this guide then
 step << Human Warlock/Gnome Warlock
     .goto 1428/0,-631.05,-7648.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gorzeeki Wildeyes|r
@@ -323,5 +295,5 @@ step
     +|cRXP_WARN_End of the Burning Steppes route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Felwood|r: Lord Banehollow << Human Warlock/Gnome Warlock
 step
-    +|cRXP_WARN_Suggested next zones at level 59|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 1.4 levels of quests, starting around Assistant Klatu). Completing this step loads the guide for Hellfire Peninsula --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 59|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 1.4 levels of quests). Completing this step loads the guide for Hellfire Peninsula --RouteBuilder:next
 ]])

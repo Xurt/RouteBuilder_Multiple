@@ -1,9 +1,9 @@
 -- 11-20 Silverpine Forest: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 11, 20).
--- Split into 2 guides, listed under "11 - 21 Silverpine Forest" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 11; part 2 from 20.
 -- Edit zones/mop/Silverpine Forest.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 11 - 21 Silverpine Forest
-#subweight -11
-#name 11-16 Silverpine Forest: around Admiral Hatchet
+#name 11-20 Silverpine Forest
 --RouteBuilder:next
-#next Zone Routes (Horde)\14-16 Azshara: around Assistant Greely
+#next Zone Routes (Horde)\20-25 Hillsbrad Foothills
 
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 21,57.41,10.13
@@ -615,23 +613,10 @@ step
 step
     +|cRXP_WARN_That is all of Silverpine Forest for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Ruins of Gilneas|r: To Forsaken Forward Command << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 15|r: |cRXP_FRIENDLY_Azshara|r (about 0.7 levels of quests, starting around Assistant Greely). Completing this step loads the guide for Azshara --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Silverpine Forest is planned from level 20.|r Load its guide for level 20 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 11 - 21 Silverpine Forest
-#subweight -11
-#name 20-21 Silverpine Forest
---RouteBuilder:next
-#next Zone Routes (Horde)\20-22 Hillsbrad Foothills: around High Executor Darthalia
-
+    +|cRXP_WARN_Until level 20, suggested zones|r: |cRXP_FRIENDLY_Azshara|r (about 0.8 levels of quests), |cRXP_FRIENDLY_The Barrens|r (about 0.6 levels of quests). Then come back to this Silverpine Forest guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 20 >>|cRXP_WARN_The rest of Silverpine Forest is planned from level 20.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 21,57.16,10.55
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Warlord Cromush|r. |cRXP_WARN_This NPC walks a patrol route|r
@@ -878,5 +863,5 @@ step
     >>|cRXP_FRIENDLY_Hillsbrad Foothills|r: Empire of Dirt
     >>|cRXP_FRIENDLY_Hillsbrad Foothills|r: Warchief's Command: Hillsbrad Foothills! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 20|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 1.3 levels of quests, starting around High Executor Darthalia; 1 quest from here hands in there). Completing this step loads the guide for Hillsbrad Foothills --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 20|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 1.3 levels of quests; 1 quest from here hands in there). Completing this step loads the guide for Hillsbrad Foothills --RouteBuilder:next
 ]])

@@ -13,12 +13,12 @@
       "start": 10,
       "end": 14.25,
       "next": 17,
-      "guide": "10-15 Darkshore: around Terenthis",
+      "guide": "10-22 Darkshore",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Terenthis",
-          "guide": "10-15 Darkshore: around Terenthis",
+          "label": "",
+          "name": "start",
+          "guide": "10-22 Darkshore",
           "level": 10,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 17,
       "end": 18.11,
       "next": 21,
-      "guide": "17-19 Darkshore: around Terenthis",
+      "guide": "10-22 Darkshore",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Terenthis",
-          "guide": "17-19 Darkshore: around Terenthis",
+          "label": "",
+          "name": "part 2",
+          "guide": "10-22 Darkshore",
           "level": 17,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 21,
       "end": 21.07,
-      "guide": "21-22 Darkshore",
+      "guide": "10-22 Darkshore",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "21-22 Darkshore",
+          "guide": "10-22 Darkshore",
           "level": 21,
           "index": 0
         }

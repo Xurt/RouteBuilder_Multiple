@@ -1,5 +1,5 @@
 -- 2-11 Elwynn Forest: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- Edit zones/mop/Elwynn Forest.json and re-run rather than editing this file, or your changes are lost on the next build.
@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
 #group Zone Routes (Alliance)
 #name 2-11 Elwynn Forest
 --RouteBuilder:next
-#next Zone Routes (Alliance)\10-13 Darkshore: around Ranger Glynda Nal'Shea
+#next Zone Routes (Alliance)\10-20 Darkshore
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #completewith next
@@ -662,5 +662,5 @@ step
     +|cRXP_WARN_End of the Elwynn Forest route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Westfall|r: Furlbrow's Deed, Hero's Call: Westfall! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 9|r: |cRXP_FRIENDLY_Darkshore|r (about 1.0 levels of quests, starting around Ranger Glynda Nal'Shea). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 9|r: |cRXP_FRIENDLY_Darkshore|r (about 1.0 levels of quests). Completing this step loads the guide for Darkshore --RouteBuilder:next
 ]])

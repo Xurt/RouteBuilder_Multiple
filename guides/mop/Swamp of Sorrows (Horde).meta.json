@@ -13,12 +13,12 @@
       "start": 52,
       "end": 54.06,
       "next": 57,
-      "guide": "52-55 Swamp of Sorrows: around Trade Baron Silversnap",
+      "guide": "52-55 Swamp of Sorrows",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Trade Baron Silversnap",
-          "guide": "52-55 Swamp of Sorrows: around Trade Baron Silversnap",
+          "label": "",
+          "name": "start",
+          "guide": "52-55 Swamp of Sorrows",
           "level": 52,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 57,
       "end": 57,
-      "guide": "57-58 Swamp of Sorrows",
+      "guide": "52-55 Swamp of Sorrows",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "57-58 Swamp of Sorrows",
+          "guide": "52-55 Swamp of Sorrows",
           "level": 57,
           "index": 0
         }

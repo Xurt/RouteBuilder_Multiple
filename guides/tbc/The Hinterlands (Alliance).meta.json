@@ -13,12 +13,12 @@
       "start": 44,
       "end": 44.51,
       "next": 47,
-      "guide": "44-45 The Hinterlands: around Ambassador Rualeth",
+      "guide": "44-48 The Hinterlands",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Ambassador Rualeth",
-          "guide": "44-45 The Hinterlands: around Ambassador Rualeth",
+          "label": "",
+          "name": "start",
+          "guide": "44-48 The Hinterlands",
           "level": 44,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 47,
       "end": 47.15,
-      "guide": "47-48 The Hinterlands",
+      "guide": "44-48 The Hinterlands",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "47-48 The Hinterlands",
+          "guide": "44-48 The Hinterlands",
           "level": 47,
           "index": 0
         }

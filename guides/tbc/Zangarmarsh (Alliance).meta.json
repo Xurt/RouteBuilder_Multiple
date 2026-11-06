@@ -13,12 +13,12 @@
       "start": 62,
       "end": 62.88,
       "next": 65,
-      "guide": "62-63 Zangarmarsh: around Ysiel Windsinger",
+      "guide": "62-65 Zangarmarsh",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Ysiel Windsinger",
-          "guide": "62-63 Zangarmarsh: around Ysiel Windsinger",
+          "label": "",
+          "name": "start",
+          "guide": "62-65 Zangarmarsh",
           "level": 62,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 65,
       "end": 65,
-      "guide": "65-66 Zangarmarsh",
+      "guide": "62-65 Zangarmarsh",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "65-66 Zangarmarsh",
+          "guide": "62-65 Zangarmarsh",
           "level": 65,
           "index": 0
         }

@@ -1,9 +1,9 @@
 -- 85-90 The Jade Forest: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 85, 88).
--- Split into 2 guides, listed under "85 - 89 The Jade Forest" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 85; part 2 from 88.
 -- Edit zones/mop/The Jade Forest.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 85 - 89 The Jade Forest
-#subweight -85
-#name 85-86 The Jade Forest: around Master Stone Fist
+#name 85-90 The Jade Forest
 
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 371,30.77,10.17
@@ -2490,18 +2488,7 @@ step
     +|cRXP_WARN_That is all of The Jade Forest for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Valley of the Four Winds|r: Moving On
 step
-    +|cRXP_WARN_The rest of The Jade Forest is planned from level 88.|r Load its guide for level 88 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 85 - 89 The Jade Forest
-#subweight -85
-#name 88-89 The Jade Forest: around Pei-Zhi
-
+    .xp 88 >>|cRXP_WARN_The rest of The Jade Forest is planned from level 88.|r Come back to this guide then
 step
     .goto 371,41.78,24.61
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brewmaster Lei Kanglei|r

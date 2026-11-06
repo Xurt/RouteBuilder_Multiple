@@ -1,9 +1,9 @@
 -- 50-56 Un'Goro Crater: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 50, 53, 56).
--- Split into 3 guides, listed under "50 - 57 Un'Goro Crater" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 50; part 2 from 53; part 3 from 56.
 -- Edit zones/classic/Un'Goro Crater.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 50 - 57 Un'Goro Crater
-#subweight -50
-#name 50-51 Un'Goro Crater: around Torwa Pathfinder
+#name 50-56 Un'Goro Crater
 
 step << Druid
     .goto 1449/1,-2117.35,-7840.35
@@ -469,18 +467,7 @@ step
     >>|cRXP_FRIENDLY_Winterspring|r: It's a Secret to Everybody
     >>|cRXP_FRIENDLY_Searing Gorge and back here|r: Chasing A-Me 01
 step
-    +|cRXP_WARN_The rest of Un'Goro Crater is planned from level 53.|r Load its guide for level 53 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 50 - 57 Un'Goro Crater
-#subweight -50
-#name 53-54 Un'Goro Crater
-
+    .xp 53 >>|cRXP_WARN_The rest of Un'Goro Crater is planned from level 53.|r Come back to this guide then
 step
     .goto 1449/1,-1080.61,-6176.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spraggle Frock|r
@@ -581,18 +568,7 @@ step
     >>|cRXP_FRIENDLY_Winterspring|r: The New Springs
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: A Better Ingredient << Druid
 step
-    +|cRXP_WARN_The rest of Un'Goro Crater is planned from level 56.|r Load its guide for level 56 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 50 - 57 Un'Goro Crater
-#subweight -50
-#name 56-57 Un'Goro Crater
-
+    .xp 56 >>|cRXP_WARN_The rest of Un'Goro Crater is planned from level 56.|r Come back to this guide then
 step << Druid
     .goto 1449/1,-2117.35,-7840.35
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Torwa Pathfinder|r

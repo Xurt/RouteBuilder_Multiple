@@ -1,9 +1,9 @@
 -- 70-72 Howling Fjord: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 70, 78).
--- Split into 2 guides, listed under "70 - 79 Howling Fjord" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 70; part 2 from 78.
 -- Edit zones/mop/Howling Fjord.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 70 - 79 Howling Fjord
-#subweight -70
-#name 70-73 Howling Fjord: around Lurielle
+#name 70-72 Howling Fjord
 --RouteBuilder:next
-#next Zone Routes (Alliance)\71-74 Borean Tundra: around Elder Atkanok;Zone Routes (Alliance)\72-74 Dragonblight: around Aurastrasza;Zone Routes (Alliance)\73-75 Grizzly Hills: around Drakuru
+#next Zone Routes (Alliance)\76-78 Sholazar Basin;Zone Routes (Alliance)\78-80 The Storm Peaks;Zone Routes (Alliance)\79-81 Icecrown
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 117,30.42,26.18
@@ -2054,22 +2052,9 @@ step
     >>|cRXP_FRIENDLY_Ironforge|r: Portents of Uldum << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Alpha Worg, The Book of Runes, All Hail the Conqueror of Skorn! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 72|r: |cRXP_FRIENDLY_Borean Tundra|r (about 0.9 levels of quests, starting around Elder Atkanok), |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests, starting around Aurastrasza; 1 quest from here hands in there), |cRXP_FRIENDLY_Grizzly Hills|r (about 0.5 levels of quests, starting around Drakuru). Completing this step loads the guide for Borean Tundra --RouteBuilder:next
+    +|cRXP_WARN_Until level 78, suggested zones|r: |cRXP_FRIENDLY_Borean Tundra|r (about 0.9 levels of quests), |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Grizzly Hills|r (about 0.5 levels of quests). Then come back to this Howling Fjord guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Howling Fjord is planned from level 78.|r Load its guide for level 78 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 70 - 79 Howling Fjord
-#subweight -70
-#name 78-79 Howling Fjord
---RouteBuilder:next
-#next Zone Routes (Alliance)\76-78 Sholazar Basin;Zone Routes (Alliance)\78-80 The Storm Peaks;Zone Routes (Alliance)\79-81 Icecrown: around Highlord Tirion Fordring
-
+    .xp 78 >>|cRXP_WARN_The rest of Howling Fjord is planned from level 78.|r Come back to this guide then
 step
     #loop
     .goto 117,33.64,69.96,0
@@ -2232,5 +2217,5 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
     +|cRXP_WARN_End of the Howling Fjord route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 78|r: |cRXP_FRIENDLY_Sholazar Basin|r (about 1.1 levels of quests, starting around Debaar), |cRXP_FRIENDLY_The Storm Peaks|r (about 0.9 levels of quests, starting around Ricket), |cRXP_FRIENDLY_Icecrown|r (about 0.8 levels of quests, starting around Highlord Tirion Fordring). Completing this step loads the guide for Sholazar Basin --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 78|r: |cRXP_FRIENDLY_Sholazar Basin|r (about 1.1 levels of quests), |cRXP_FRIENDLY_The Storm Peaks|r (about 0.9 levels of quests), |cRXP_FRIENDLY_Icecrown|r (about 0.8 levels of quests). Completing this step loads the guide for Sholazar Basin --RouteBuilder:next
 ]])

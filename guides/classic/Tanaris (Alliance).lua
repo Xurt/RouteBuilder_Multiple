@@ -1,9 +1,9 @@
 -- 43-60 Tanaris: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 43, 46, 49).
--- Split into 3 guides, listed under "43 - 50 Tanaris" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 43; part 2 from 46; part 3 from 49.
 -- Edit zones/classic/Tanaris.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,9 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 43 - 50 Tanaris
-#subweight -43
-#name 43-44 Tanaris: around Chief Engineer Bilgewhizzle
+#name 43-60 Tanaris
+--RouteBuilder:next
+#next Zone Routes (Alliance)\50-56 Un'Goro Crater
 
 step
     .goto 1446/1,-3769.49,-7200.26
@@ -427,18 +427,7 @@ step
     >>|cRXP_FRIENDLY_Feralas and back here|r: Screecher Spirits, The Super Egg-O-Matic
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Scarab Shells, Troll Temper, Divino-matic Rod
 step
-    +|cRXP_WARN_The rest of Tanaris is planned from level 46.|r Load its guide for level 46 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 43 - 50 Tanaris
-#subweight -43
-#name 46-47 Tanaris: around Senior Surveyor Fizzledowser
-
+    .xp 46 >>|cRXP_WARN_The rest of Tanaris is planned from level 46.|r Come back to this guide then
 step
     .goto 1446/1,-3855.74,-7987.32
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marvon Rivetseeker|r
@@ -648,20 +637,7 @@ step
     >>|cRXP_FRIENDLY_Stranglethorn Vale|r: Rescue OOX-17/TN!
     >>|cRXP_FRIENDLY_The Hinterlands and back here|r: Sprinkle's Secret Ingredient
 step
-    +|cRXP_WARN_The rest of Tanaris is planned from level 49.|r Load its guide for level 49 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 43 - 50 Tanaris
-#subweight -43
-#name 49-50 Tanaris
---RouteBuilder:next
-#next Zone Routes (Alliance)\50-51 Un'Goro Crater: around Torwa Pathfinder
-
+    .xp 49 >>|cRXP_WARN_The rest of Tanaris is planned from level 49.|r Come back to this guide then
 step
     #loop
     .goto 1446/1,-2252.87,-8658.46,0
@@ -846,5 +822,5 @@ step
     >>|cRXP_FRIENDLY_another zone|r: Into the Depths, Secret of the Circle
     >>|cRXP_FRIENDLY_Un'Goro Crater and back here|r: Super Sticky
 step
-    +|cRXP_WARN_Suggested next zones at level 49|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.5 levels of quests, starting around Torwa Pathfinder; 1 quest from here hands in there). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 49|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.5 levels of quests; 1 quest from here hands in there). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
 ]])

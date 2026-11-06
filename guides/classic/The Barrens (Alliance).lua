@@ -1,9 +1,9 @@
 -- 14-31 The Barrens: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 6 parts (from level 14, 17, 21, 24, 31, 34).
--- Split into 6 guides, listed under "14 - 35 The Barrens" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 14; part 2 from 17; part 3 from 21; part 4 from 24; part 5 from 31; part 6 from 34.
 -- Edit zones/classic/The Barrens.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 14 - 35 The Barrens
-#subweight -14
-#name 14-15 The Barrens: around Gazlowe
---RouteBuilder:next
-#next Zone Routes (Alliance)\10-15 Darkshore: around Terenthis;Zone Routes (Alliance)\8-11 Teldrassil: around Denalan;Zone Routes (Alliance)\10-13 Westfall: around Farmer Saldean
+#name 14-31 The Barrens
 
 step << Warlock
     .goto 1413/1,-3723.59,-785.97
@@ -206,22 +202,9 @@ step
     .target Wharfmaster Dizzywig
     .isOnQuest 1039
 step
-    +|cRXP_WARN_Suggested next zones at level 14|r: |cRXP_FRIENDLY_Darkshore|r (about 2.3 levels of quests, starting around Terenthis), |cRXP_FRIENDLY_Teldrassil|r (about 0.9 levels of quests, starting around Denalan; 1 quest from here hands in there), |cRXP_FRIENDLY_Westfall|r (about 0.7 levels of quests, starting around Farmer Saldean). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 17, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 2.3 levels of quests), |cRXP_FRIENDLY_Teldrassil|r (about 1.4 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Westfall|r (about 0.7 levels of quests). Then come back to this The Barrens guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of The Barrens is planned from level 17.|r Load its guide for level 17 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 14 - 35 The Barrens
-#subweight -14
-#name 17-18 The Barrens
---RouteBuilder:next
-#next Zone Routes (Alliance)\17-19 Darkshore: around Terenthis
-
+    .xp 17 >>|cRXP_WARN_The rest of The Barrens is planned from level 17.|r Come back to this guide then
 step
     .goto 1413/1,-3104.44,1109.16
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wizzlecrank's Shredder|r
@@ -291,23 +274,10 @@ step
     >>|cRXP_FRIENDLY_Darnassus|r: In Nightmares
     >>|cRXP_FRIENDLY_Stonetalon Mountains|r: Ziz Fizziks, Further Instructions
     >>|cRXP_FRIENDLY_Stonetalon Mountains and back here|r: Deepmoss Spider Eggs
-step
-    +|cRXP_WARN_Suggested next zones at level 17|r: |cRXP_FRIENDLY_Darkshore|r (about 0.9 levels of quests, starting around Terenthis). Completing this step loads the guide for Darkshore --RouteBuilder:next
 step << Warlock
-    +|cRXP_WARN_The rest of The Barrens is planned from level 21.|r Load its guide for level 21 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Warlock
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 14 - 35 The Barrens
-#subweight -14
-#name 21-22 The Barrens
---RouteBuilder:next
-#next Zone Routes (Alliance)\20-22 Duskwood: around Elaine Carevin
-
+    +|cRXP_WARN_Until level 21, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 0.9 levels of quests). Then come back to this The Barrens guide --RouteBuilder:next
+step << Warlock
+    .xp 21 >>|cRXP_WARN_The rest of The Barrens is planned from level 21.|r Come back to this guide then
 step << Warlock
     .goto 1413/1,-2373.83,-2252.75
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Doan Karhan|r
@@ -338,20 +308,9 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: Heartswood, What Is Love? << Warlock
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Orb of Soran'ruk << Warlock
 step
-    +|cRXP_WARN_Suggested next zones at level 21|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests, starting around Elaine Carevin). Completing this step loads the guide for Duskwood --RouteBuilder:next
+    +|cRXP_WARN_Until level 24, suggested zones|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests). Then come back to this The Barrens guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of The Barrens is planned from level 24.|r Load its guide for level 24 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 14 - 35 The Barrens
-#subweight -14
-#name 24-25 The Barrens
-
+    .xp 24 >>|cRXP_WARN_The rest of The Barrens is planned from level 24.|r Come back to this guide then
 step
     .goto 1413/1,-3697.24,-929.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mebok Mizzyrix|r
@@ -387,18 +346,7 @@ step
     +|cRXP_WARN_That is all of The Barrens for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Blueleaf Tubers
 step << Warlock
-    +|cRXP_WARN_The rest of The Barrens is planned from level 31.|r Load its guide for level 31 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Warlock
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 14 - 35 The Barrens
-#subweight -14
-#name 31-32 The Barrens
-
+    .xp 31 >>|cRXP_WARN_The rest of The Barrens is planned from level 31.|r Come back to this guide then
 step << Warlock
     .goto 1413/1,-3723.59,-785.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Strahad Farsan|r
@@ -500,18 +448,7 @@ step
     >>|cRXP_FRIENDLY_Ironforge|r: Tome of the Cabal << Warlock
     >>|cRXP_FRIENDLY_Stranglethorn Vale|r: Passage to Booty Bay
 step << Warlock
-    +|cRXP_WARN_The rest of The Barrens is planned from level 34.|r Load its guide for level 34 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Warlock
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 14 - 35 The Barrens
-#subweight -14
-#name 34-35 The Barrens
-
+    .xp 34 >>|cRXP_WARN_The rest of The Barrens is planned from level 34.|r Come back to this guide then
 step << Warlock
     .goto 1413/1,-3711.43,-782.59
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Menara Voidrender|r

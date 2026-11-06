@@ -1,5 +1,5 @@
 -- 69-70 Shadowmoon Valley: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- Edit zones/tbc/Shadowmoon Valley.json and re-run rather than editing this file, or your changes are lost on the next build.
@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
 #group Zone Routes (Horde)
 #name 69-70 Shadowmoon Valley
 --RouteBuilder:next
-#next Zone Routes (Horde)\68-70 Netherstorm: around Image of Archmage Vargoth
+#next Zone Routes (Horde)\68-70 Netherstorm
 
 step
     .goto 1948,30.45,32.40
@@ -1088,5 +1088,5 @@ step
 step
     +|cRXP_WARN_End of the Shadowmoon Valley route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 69|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.2 levels of quests, starting around Image of Archmage Vargoth). Completing this step loads the guide for Netherstorm --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 69|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.2 levels of quests). Completing this step loads the guide for Netherstorm --RouteBuilder:next
 ]])

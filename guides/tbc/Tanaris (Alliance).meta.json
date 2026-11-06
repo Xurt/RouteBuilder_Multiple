@@ -13,12 +13,12 @@
       "start": 43,
       "end": 43.78,
       "next": 46,
-      "guide": "43-44 Tanaris: around Chief Engineer Bilgewhizzle",
+      "guide": "43-54 Tanaris",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Chief Engineer Bilgewhizzle",
-          "guide": "43-44 Tanaris: around Chief Engineer Bilgewhizzle",
+          "label": "",
+          "name": "start",
+          "guide": "43-54 Tanaris",
           "level": 43,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 46,
       "end": 46.35,
       "next": 49,
-      "guide": "46-47 Tanaris: around Senior Surveyor Fizzledowser",
+      "guide": "43-54 Tanaris",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Senior Surveyor Fizzledowser",
-          "guide": "46-47 Tanaris: around Senior Surveyor Fizzledowser",
+          "label": "",
+          "name": "part 2",
+          "guide": "43-54 Tanaris",
           "level": 46,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 49,
       "end": 49.25,
-      "guide": "49-50 Tanaris",
+      "guide": "43-54 Tanaris",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "49-50 Tanaris",
+          "guide": "43-54 Tanaris",
           "level": 49,
           "index": 0
         }

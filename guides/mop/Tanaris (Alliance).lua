@@ -1,9 +1,9 @@
 -- 45-60 Tanaris: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 5 parts (from level 45, 50, 53, 56, 59).
--- Split into 5 guides, listed under "45 - 60 Tanaris" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 45; part 2 from 50; part 3 from 53; part 4 from 56; part 5 from 59.
 -- Edit zones/mop/Tanaris.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 45 - 60 Tanaris
-#subweight -45
-#name 45-48 Tanaris: around Mazoga
+#name 45-60 Tanaris
 --RouteBuilder:next
-#next Zone Routes (Alliance)\46-48 Felwood: around Totem of Ruumbo;Zone Routes (Alliance)\47-49 Searing Gorge: around Jack Rockleg;Zone Routes (Alliance)\45-47 Badlands
+#next Zone Routes (Alliance)\55-56 Silithus;Zone Routes (Alliance)\60-63 Hellfire Peninsula
 
 step
     .goto 71,42.30,23.84
@@ -984,22 +982,9 @@ step
     >>|cRXP_FRIENDLY_The Cape of Stranglethorn|r: Rescue OOX-17/TN!
     >>|cRXP_FRIENDLY_Uldum|r: The Secrets of Uldum << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 47|r: |cRXP_FRIENDLY_Felwood|r (about 2.4 levels of quests, starting around Totem of Ruumbo), |cRXP_FRIENDLY_Searing Gorge|r (about 0.8 levels of quests, starting around Jack Rockleg), |cRXP_FRIENDLY_Badlands|r (about 0.7 levels of quests, starting around Dolph Blastus). Completing this step loads the guide for Felwood --RouteBuilder:next
+    +|cRXP_WARN_Until level 50, suggested zones|r: |cRXP_FRIENDLY_Felwood|r (about 2.4 levels of quests), |cRXP_FRIENDLY_Searing Gorge|r (about 0.8 levels of quests), |cRXP_FRIENDLY_Badlands|r (about 0.7 levels of quests). Then come back to this Tanaris guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Tanaris is planned from level 50.|r Load its guide for level 50 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 45 - 60 Tanaris
-#subweight -45
-#name 50-51 Tanaris
---RouteBuilder:next
-#next Zone Routes (Alliance)\50-52 Winterspring: around Donova Snowden;Zone Routes (Alliance)\51-53 Un'Goro Crater: around Garl Stormclaw;Zone Routes (Alliance)\47-49 Searing Gorge: around Jack Rockleg
-
+    .xp 50 >>|cRXP_WARN_The rest of Tanaris is planned from level 50.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 71,51.79,28.06
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dr. Dealwell|r
@@ -1034,23 +1019,10 @@ step
     >>|cRXP_FRIENDLY_Un'Goro Crater|r: Hero's Call: Un'Goro Crater! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Un'Goro Crater|r: Tropical Paradise Beckons
     >>|cRXP_FRIENDLY_Winterspring|r: Hero's Call: Winterspring! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 50|r: |cRXP_FRIENDLY_Winterspring|r (about 2.5 levels of quests, starting around Donova Snowden), |cRXP_FRIENDLY_Un'Goro Crater|r (about 2.0 levels of quests, starting around Garl Stormclaw; 1 quest from here hands in there), |cRXP_FRIENDLY_Searing Gorge|r (about 0.7 levels of quests, starting around Jack Rockleg). Completing this step loads the guide for Winterspring --RouteBuilder:next
 step << Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior/Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter/Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue/Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage/Dwarf Paladin/Draenei Paladin/Human Priest/Dwarf Priest/NightElf Priest/Gnome Priest/Draenei Priest/Worgen Priest/Pandaren Priest/Dwarf Shaman/Draenei Shaman/Druid
-    +|cRXP_WARN_The rest of Tanaris is planned from level 53.|r Load its guide for level 53 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior/Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter/Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue/Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage/Dwarf Paladin/Draenei Paladin/Human Priest/Dwarf Priest/NightElf Priest/Gnome Priest/Draenei Priest/Worgen Priest/Pandaren Priest/Dwarf Shaman/Draenei Shaman/Druid
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 45 - 60 Tanaris
-#subweight -45
-#name 53-54 Tanaris
---RouteBuilder:next
-#next Zone Routes (Alliance)\52-55 Winterspring: around Jez Goodgrub;Zone Routes (Alliance)\52-55 Swamp of Sorrows: around Trade Baron Silversnap;Zone Routes (Alliance)\53-55 Un'Goro Crater: around Garl Stormclaw
-
+    +|cRXP_WARN_Until level 53, suggested zones|r: |cRXP_FRIENDLY_Winterspring|r (about 2.5 levels of quests), |cRXP_FRIENDLY_Felwood|r (about 2.1 levels of quests), |cRXP_FRIENDLY_Un'Goro Crater|r (about 2.0 levels of quests; 1 quest from here hands in there). Then come back to this Tanaris guide --RouteBuilder:next
+step << Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior/Human Hunter/Dwarf Hunter/NightElf Hunter/Gnome Hunter/Draenei Hunter/Worgen Hunter/Pandaren Hunter/Human Rogue/Dwarf Rogue/NightElf Rogue/Gnome Rogue/Draenei Rogue/Worgen Rogue/Pandaren Rogue/Human Mage/Dwarf Mage/NightElf Mage/Gnome Mage/Draenei Mage/Worgen Mage/Pandaren Mage/Dwarf Paladin/Draenei Paladin/Human Priest/Dwarf Priest/NightElf Priest/Gnome Priest/Draenei Priest/Worgen Priest/Pandaren Priest/Dwarf Shaman/Draenei Shaman/Druid
+    .xp 53 >>|cRXP_WARN_The rest of Tanaris is planned from level 53.|r Come back to this guide then
 step << Human Warrior/Dwarf Warrior/NightElf Warrior/Gnome Warrior/Draenei Warrior/Worgen Warrior/Pandaren Warrior
     .goto 89,56.54,46.01
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arias'ta Bladesinger|r
@@ -1117,23 +1089,10 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: Meet with Lord Grayson Shadowbreaker << Dwarf Paladin/Draenei Paladin
     >>|cRXP_FRIENDLY_Stormwind City|r: Meet with High Priestess Laurena << Human Priest/Dwarf Priest/NightElf Priest/Gnome Priest/Draenei Priest/Worgen Priest/Pandaren Priest
     >>|cRXP_FRIENDLY_Stormwind City|r: Meet with Farseer Umbrua << Dwarf Shaman/Draenei Shaman
-step
-    +|cRXP_WARN_Suggested next zones at level 53|r: |cRXP_FRIENDLY_Winterspring|r (about 1.3 levels of quests, starting around Jez Goodgrub), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 0.9 levels of quests, starting around Trade Baron Silversnap), |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.8 levels of quests, starting around Garl Stormclaw). Completing this step loads the guide for Winterspring --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of Tanaris is planned from level 56.|r Load its guide for level 56 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 45 - 60 Tanaris
-#subweight -45
-#name 56-57 Tanaris
---RouteBuilder:next
-#next Zone Routes (Alliance)\52-55 Winterspring: around Jez Goodgrub;Zone Routes (Alliance)\55-56 Silithus;Zone Routes (Alliance)\52-55 Swamp of Sorrows: around Trade Baron Silversnap
-
+    +|cRXP_WARN_Until level 56, suggested zones|r: |cRXP_FRIENDLY_Winterspring|r (about 2.6 levels of quests), |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.8 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 0.9 levels of quests). Then come back to this Tanaris guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 56 >>|cRXP_WARN_The rest of Tanaris is planned from level 56.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 89,44.88,49.95
     >>Click the |cRXP_PICK_Hero's Call Board|r
@@ -1141,23 +1100,10 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
     +|cRXP_WARN_That is all of Tanaris for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Silithus|r: Hero's Call: Silithus! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 56|r: |cRXP_FRIENDLY_Winterspring|r (about 1.2 levels of quests, starting around Jez Goodgrub), |cRXP_FRIENDLY_Silithus|r (about 0.9 levels of quests, starting around Huum Wildmane), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 0.8 levels of quests, starting around Trade Baron Silversnap). Completing this step loads the guide for Winterspring --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of Tanaris is planned from level 59.|r Load its guide for level 59 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 45 - 60 Tanaris
-#subweight -45
-#name 59-60 Tanaris
---RouteBuilder:next
-#next Zone Routes (Alliance)\55-56 Silithus;Zone Routes (Alliance)\60-63 Hellfire Peninsula: around Legassi
-
+    +|cRXP_WARN_Until level 59, suggested zones|r: |cRXP_FRIENDLY_Winterspring|r (about 2.3 levels of quests), |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.6 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Silithus|r (about 0.9 levels of quests). Then come back to this Tanaris guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 59 >>|cRXP_WARN_The rest of Tanaris is planned from level 59.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 89,44.88,49.95
     >>Click the |cRXP_PICK_Hero's Call Board|r
@@ -1166,5 +1112,5 @@ step
     +|cRXP_WARN_End of the Tanaris route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Hellfire Peninsula|r: Hero's Call: Outland! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 59|r: |cRXP_FRIENDLY_Silithus|r (about 0.8 levels of quests, starting around Huum Wildmane), |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.6 levels of quests, starting around Legassi). Completing this step loads the guide for Silithus --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 59|r: |cRXP_FRIENDLY_Silithus|r (about 0.8 levels of quests), |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.6 levels of quests). Completing this step loads the guide for Silithus --RouteBuilder:next
 ]])

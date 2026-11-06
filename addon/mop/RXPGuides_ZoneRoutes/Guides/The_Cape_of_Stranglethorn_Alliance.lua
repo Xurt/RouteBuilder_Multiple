@@ -1,9 +1,9 @@
 -- 30-35 The Cape of Stranglethorn: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 30, 35, 58).
--- Split into 3 guides, listed under "30 - 59 The Cape of Stranglethorn" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 30; part 2 from 35; part 3 from 58.
 -- Edit zones/mop/The Cape of Stranglethorn.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 30 - 59 The Cape of Stranglethorn
-#subweight -30
-#name 30-33 The Cape of Stranglethorn: around Captain Hecklebury Smotts
+#name 30-35 The Cape of Stranglethorn
 --RouteBuilder:next
-#next Zone Routes (Alliance)\30-33 Desolace: around Cenarion Researcher Korrah;Zone Routes (Alliance)\25-30 Northern Stranglethorn;Zone Routes (Alliance)\26-31 Arathi Highlands
+#next Zone Routes (Alliance)\55-56 Silithus
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 210,55.00,42.48
@@ -540,23 +538,10 @@ step
 step
     +|cRXP_WARN_That is all of The Cape of Stranglethorn for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Northern Stranglethorn|r: Through the Troll Hole << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 32|r: |cRXP_FRIENDLY_Desolace|r (about 1.8 levels of quests, starting around Cenarion Researcher Korrah), |cRXP_FRIENDLY_Northern Stranglethorn|r (about 0.8 levels of quests, starting around Hemet Nesingwary Jr.), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.8 levels of quests, starting around Skuerto). Completing this step loads the guide for Desolace --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of The Cape of Stranglethorn is planned from level 35.|r Load its guide for level 35 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 30 - 59 The Cape of Stranglethorn
-#subweight -30
-#name 35-36 The Cape of Stranglethorn
---RouteBuilder:next
-#next Zone Routes (Alliance)\35-37 Western Plaguelands: around Field Agent Kaartish;Zone Routes (Alliance)\36-38 Dustwallow Marsh: around "Swamp Eye" Jarl;Zone Routes (Alliance)\33-36 Desolace: around Karnum Marshweaver
-
+    +|cRXP_WARN_Until level 35, suggested zones|r: |cRXP_FRIENDLY_Desolace|r (about 1.8 levels of quests), |cRXP_FRIENDLY_Northern Stranglethorn|r (about 0.8 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.8 levels of quests). Then come back to this The Cape of Stranglethorn guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 35 >>|cRXP_WARN_The rest of The Cape of Stranglethorn is planned from level 35.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 210,40.52,68.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Corporal Jeyne|r
@@ -572,22 +557,9 @@ step
     >>|cRXP_FRIENDLY_The Barrens|r: The Call of Kalimdor << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Western Plaguelands|r: The Battle for Andorhal << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 35|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 1.7 levels of quests, starting around Field Agent Kaartish), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.6 levels of quests, starting around "Swamp Eye" Jarl), |cRXP_FRIENDLY_Desolace|r (about 0.9 levels of quests, starting around Karnum Marshweaver). Completing this step loads the guide for Western Plaguelands --RouteBuilder:next
+    +|cRXP_WARN_Until level 58, suggested zones|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 1.7 levels of quests), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Desolace|r (about 1.5 levels of quests). Then come back to this The Cape of Stranglethorn guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of The Cape of Stranglethorn is planned from level 58.|r Load its guide for level 58 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 30 - 59 The Cape of Stranglethorn
-#subweight -30
-#name 58-59 The Cape of Stranglethorn: around Captain Keelhaul
---RouteBuilder:next
-#next Zone Routes (Alliance)\55-56 Silithus
-
+    .xp 58 >>|cRXP_WARN_The rest of The Cape of Stranglethorn is planned from level 58.|r Come back to this guide then
 step
     .goto 210,43.83,56.54
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Yancey Grillsen|r
@@ -998,5 +970,5 @@ step
 step
     +|cRXP_WARN_End of the The Cape of Stranglethorn route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 58|r: |cRXP_FRIENDLY_Silithus|r (about 0.8 levels of quests, starting around Huum Wildmane). Completing this step loads the guide for Silithus --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 58|r: |cRXP_FRIENDLY_Silithus|r (about 0.8 levels of quests). Completing this step loads the guide for Silithus --RouteBuilder:next
 ]])

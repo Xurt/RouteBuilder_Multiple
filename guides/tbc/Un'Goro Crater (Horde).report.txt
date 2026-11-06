@@ -1,7 +1,7 @@
 Un'Goro Crater - Horde - part 1 of 2, planned from level 50
 Guide "50-56 Un'Goro Crater" in group "Zone Routes (Horde)": this part has 76 steps, 60 stops
 Written to guides/tbc/Un'Goro Crater (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -83,7 +83,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Un'Goro Crater - Horde - part 2 of 2, planned from level 54
 Guide "50-56 Un'Goro Crater" in group "Zone Routes (Horde)": this part has 25 steps, 24 stops
 Written to guides/tbc/Un'Goro Crater (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

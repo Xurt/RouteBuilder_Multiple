@@ -1,5 +1,5 @@
 -- 68-70 Caverns of Time: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- Edit zones/mop/Caverns of Time.json and re-run rather than editing this file, or your changes are lost on the next build.
@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
 #group Zone Routes (Horde)
 #name 68-70 Caverns of Time
 --RouteBuilder:next
-#next Zone Routes (Horde)\68-70 Netherstorm: around Image of Archmage Vargoth;Zone Routes (Horde)\65-67 Nagrand: around Hemet Nesingwary
+#next Zone Routes (Horde)\68-70 Netherstorm;Zone Routes (Horde)\65-68 Nagrand
 
 step
     #completewith next
@@ -62,5 +62,5 @@ step
     >>|cRXP_FRIENDLY_Old Hillsbrad Foothills|r: Old Hillsbrad
     >>|cRXP_FRIENDLY_The Black Morass|r: The Black Morass
 step
-    +|cRXP_WARN_Suggested next zones at level 68|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.4 levels of quests, starting around Image of Archmage Vargoth), |cRXP_FRIENDLY_Nagrand|r (about 0.5 levels of quests, starting around Hemet Nesingwary). Completing this step loads the guide for Netherstorm --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 68|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.4 levels of quests), |cRXP_FRIENDLY_Nagrand|r (about 0.5 levels of quests). Completing this step loads the guide for Netherstorm --RouteBuilder:next
 ]])

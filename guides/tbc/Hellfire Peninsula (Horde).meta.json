@@ -13,12 +13,12 @@
       "start": 60,
       "end": 61.37,
       "next": 67,
-      "guide": "60-62 Hellfire Peninsula: around Nazgrel",
+      "guide": "60-63 Hellfire Peninsula",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Nazgrel",
-          "guide": "60-62 Hellfire Peninsula: around Nazgrel",
+          "label": "",
+          "name": "start",
+          "guide": "60-63 Hellfire Peninsula",
           "level": 60,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 67,
       "end": 67.02,
-      "guide": "67-68 Hellfire Peninsula",
+      "guide": "60-63 Hellfire Peninsula",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "67-68 Hellfire Peninsula",
+          "guide": "60-63 Hellfire Peninsula",
           "level": 67,
           "index": 0
         }

@@ -1,9 +1,9 @@
 -- 1-12 Azuremyst Isle: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 1, 12, 15).
--- Split into 4 guides, listed under "1 - 16 Azuremyst Isle" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 1; part 2 from 12; part 3 from 15.
 -- Edit zones/tbc/Azuremyst Isle.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 1 - 16 Azuremyst Isle
-#subweight -1
-#name 1-5 Azuremyst Isle: around Proenitus
-#next Zone Routes (Alliance)\5-10 Azuremyst Isle: around Daedal
+#name 1-12 Azuremyst Isle
+--RouteBuilder:next
+#next Zone Routes (Alliance)\10-21 Bloodmyst Isle;Zone Routes (Alliance)\10-22 Darkshore
 
 step
     .goto 1943,80.42,45.89
@@ -458,19 +457,6 @@ step << Draenei
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Exarch Menelaous|r
     .turnin 9612 >>Turn in A Hearty Thanks!
     .target Exarch Menelaous
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 16 Azuremyst Isle
-#subweight -1
-#name 5-10 Azuremyst Isle: around Daedal
---RouteBuilder:next
-#next Zone Routes (Alliance)\5-10 Elwynn Forest: around Marshal Dughan;Zone Routes (Alliance)\10-15 Darkshore: around Thundris Windweaver;Zone Routes (Alliance)\10-12 Bloodmyst Isle: around Morae
-
 step
     .goto 1943,47.11,50.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Exarch Menelaous|r
@@ -478,11 +464,12 @@ step
     .target Exarch Menelaous
     .isOnQuest 9455
 step << Draenei
+    .xp 5 >>Grind to level 5 (The Prophecy of Velen needs it)
+step << Draenei
     .goto 1943,48.39,51.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daedal|r
     .accept 9505 >>Accept The Prophecy of Velen
     .target Daedal
-    .isQuestTurnedIn 9473 --any of: An Alternative Alternative
 step
     .goto 1943,47.11,50.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Exarch Menelaous|r
@@ -495,13 +482,11 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Technician Dyvuun|r
     .turnin 9313 >>Turn in Travel to Azure Watch
     .target Technician Dyvuun
-    .isOnQuest 9313
 step
     .goto 1943,48.37,49.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Caregiver Chellan|r
     .turnin 9314 >>Turn in Word from Azure Watch
     .target Caregiver Chellan
-    .isOnQuest 9314
 step << Priest
     .goto 1943,48.60,49.29
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Guvan|r
@@ -662,22 +647,15 @@ step
     .complete 9530,1 --Hollowed Out Tree (1)
 step
     #loop
-    .goto 1943,50.40,63.50,0
-    .goto 1943,50.40,63.50,40,0
-    .goto 1943,51.50,66.00,40,0
-    .goto 1943,50.10,57.50,40,0
+    .goto 1943,51.10,64.70,0
+    .goto 1943,51.10,64.70,40,0
+    .goto 1943,53.81,66.98,40,0
+    .goto 1943,50.20,60.10,40,0
     >>Pick up |cRXP_PICK_Pile of Leaves|r from the ground
+    >>Kill |cRXP_ENEMY_Root Trappers|r. Loot them for |cRXP_LOOT_Root Trapper Vine|r << Draenei
     .complete 9530,2 --Pile of Leaves (5)
-step << Draenei
-    #loop
-    .goto 1943,52.09,64.15,0
-    .goto 1943,52.09,64.15,40,0
-    .goto 1943,53.96,64.82,40,0
-    .goto 1943,51.75,61.22,40,0
-    >>Kill |cRXP_ENEMY_Root Trappers|r. Loot them for |cRXP_LOOT_Root Trapper Vine|r
-    .complete 9463,1 --Root Trapper Vine (6)
-    .mob Root Trapper
-    .isOnQuest 9463
+    .complete 9463,1 << Draenei --Root Trapper Vine (6)
+    .mob Root Trapper << Draenei
 step
     .goto 1943,47.04,70.21
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Admiral Odesyus|r
@@ -730,13 +708,11 @@ step << Draenei
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Anchorite Fateema|r
     .turnin 9463 >>Turn in Medicinal Purpose
     .target Anchorite Fateema
-    .isOnQuest 9463
 step << Draenei
     .goto 1943,48.39,51.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daedal|r
     .accept 9473 >>Accept An Alternative Alternative
     .target Daedal
-    .isQuestTurnedIn 9463 --any of: Medicinal Purpose
 step << Shaman
     .goto 1943,48.05,50.42
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tuluun|r
@@ -792,12 +768,12 @@ step << Warrior
     .target Ruada
     .subzoneskip 3576,1
 step
-    #completewith Along80
+    #completewith Along79
     >>As you go: Kill |cRXP_ENEMY_Moongraze Bucks|r. Loot them for |cRXP_LOOT_Moongraze Buck Hide|r. |cRXP_WARN_Anything left is finished later|r
     .complete 10324,1 --Moongraze Buck Hide (6)
     .mob Moongraze Buck
 step
-    #label Along80
+    #label Along79
     .goto 1943,55.23,41.64
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Totem of Coo|r
     .turnin 9539 >>Turn in Totem of Coo
@@ -811,7 +787,6 @@ step << Draenei
     .goto 1943,46.26,38.66,40,0
     >>Loot the |cRXP_PICK_Azure Snapdragons|r for |cRXP_LOOT_Azure Snapdragon Bulb|r
     .complete 9473,1 --Azure Snapdragon Bulb (5)
-    .isOnQuest 9473
 step
     .goto 1943,64.47,39.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Totem of Tikti|r
@@ -829,7 +804,6 @@ step
     .goto 1943,61.89,51.57,40,0
     >>Loot the |cRXP_PICK_School of Red Snappers|r for |cRXP_LOOT_Red Snapper|r
     .complete 9452,1 --Red Snapper (10)
-    .isOnQuest 9452
 step
     .goto 1943,63.12,67.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Totem of Yor|r
@@ -840,14 +814,8 @@ step
     .goto 1943,61.05,54.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Diktynna|r
     .turnin 9452 >>Turn in Red Snapper - Very Tasty!
-    .target Diktynna
-    .isOnQuest 9452
-step
-    .goto 1943,61.05,54.25
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Diktynna|r
     .accept 9453 >>Accept Find Acteon!
     .target Diktynna
-    .isQuestTurnedIn 9452 --any of: Red Snapper - Very Tasty!
 step
     .goto 1943,63.12,67.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Totem of Yor|r
@@ -900,7 +868,7 @@ step
     .mob Infected Nightstalker Runt
     .isOnQuest 9456
 step
-    #completewith Along91
+    #completewith Along89
     >>As you go: Kill |cRXP_ENEMY_Wrathscale Myrmidons|r. Kill |cRXP_ENEMY_Wrathscale Nagas|r. Kill |cRXP_ENEMY_Wrathscale Sirens|r. Pick up |cRXP_PICK_Ancient Relic|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 9513,1 --Wrathscale Myrmidon slain (5)
     .complete 9513,2 --Wrathscale Naga slain (5)
@@ -910,7 +878,7 @@ step
     .mob Wrathscale Naga
     .mob Wrathscale Siren
 step
-    #label Along91
+    #label Along89
     #loop
     .goto 1943,25.72,71.19,0
     .goto 1943,25.72,71.19,40,0
@@ -1052,11 +1020,6 @@ step
     .goto 1943,49.78,51.94
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Acteon|r
     .turnin 9453 >>Turn in Find Acteon!
-    .target Acteon
-    .isOnQuest 9453
-step
-    .goto 1943,49.78,51.94
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Acteon|r
     .turnin 10324 >>Turn in The Great Moongraze Hunt
     .target Acteon
 step
@@ -1070,7 +1033,6 @@ step << Draenei
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daedal|r
     .turnin 9473 >>Turn in An Alternative Alternative
     .target Daedal
-    .isOnQuest 9473
 step
     .goto 1943,47.11,50.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Exarch Menelaous|r
@@ -1180,7 +1142,7 @@ step
     .target Parkat Steelfur
     .subzoneskip 3572,1
 step
-    #completewith Along123
+    #completewith Along120
     >>As you go: Kill |cRXP_ENEMY_Siltfin Murlocs|r, |cRXP_ENEMY_Siltfin Oracles|r, |cRXP_ENEMY_Siltfin Hunters|r and |cRXP_ENEMY_Murgurgulas|r. Loot them for |cRXP_LOOT_Stillpine Grain|r. It can also be picked up from |cRXP_PICK_Stillpine Grain|r on the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 9562,1 --Stillpine Grain (5)
     .mob Siltfin Murloc
@@ -1188,7 +1150,7 @@ step
     .mob Siltfin Hunter
     .mob Murgurgula
 step
-    #label Along123
+    #label Along120
     .goto 1943,35.01,21.98
     >>Kill |cRXP_ENEMY_Murgurgula|r and loot |cRXP_LOOT_Gurf's Dignity|r. Use it to start the quest
     .collect 23850,1,9564 --Gurf's Dignity (1)
@@ -1224,22 +1186,9 @@ step << Draenei
     .target Nurguni
     .isOnQuest 9604
 step
-    +|cRXP_WARN_Suggested next zones at level 9|r: |cRXP_FRIENDLY_Elwynn Forest|r (about 1.7 levels of quests, starting around Marshal Dughan), |cRXP_FRIENDLY_Darkshore|r (about 1.4 levels of quests, starting around Thundris Windweaver), |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.4 levels of quests, starting around Morae; 1 quest from here hands in there). Completing this step loads the guide for Elwynn Forest --RouteBuilder:next
+    +|cRXP_WARN_Until level 12, suggested zones|r: |cRXP_FRIENDLY_Teldrassil|r (about 2.5 levels of quests), |cRXP_FRIENDLY_Elwynn Forest|r (about 2.0 levels of quests), |cRXP_FRIENDLY_Darkshore|r (about 1.4 levels of quests). Then come back to this Azuremyst Isle guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Azuremyst Isle is planned from level 12.|r Load its guide for level 12 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 16 Azuremyst Isle
-#subweight -1
-#name 12-13 Azuremyst Isle: around Ruada
---RouteBuilder:next
-#next Zone Routes (Alliance)\10-15 Darkshore: around Thundris Windweaver;Zone Routes (Alliance)\10-12 Bloodmyst Isle: around Morae;Zone Routes (Alliance)\10-13 Westfall: around Farmer Saldean
-
+    .xp 12 >>|cRXP_WARN_The rest of Azuremyst Isle is planned from level 12.|r Come back to this guide then
 step << Mage
     .goto 1943,49.87,49.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Semid|r
@@ -1600,22 +1549,9 @@ step
     >>|cRXP_FRIENDLY_Bloodmyst Isle|r: Elekks Are Serious Business
     >>|cRXP_FRIENDLY_Darnassus|r: Heeding the Call << NightElf Druid
 step
-    +|cRXP_WARN_Suggested next zones at level 12|r: |cRXP_FRIENDLY_Darkshore|r (about 2.2 levels of quests, starting around Thundris Windweaver), |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.0 levels of quests, starting around Morae; 1 quest from here hands in there), |cRXP_FRIENDLY_Westfall|r (about 0.9 levels of quests, starting around Farmer Saldean). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 15, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 2.2 levels of quests), |cRXP_FRIENDLY_Teldrassil|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.0 levels of quests; 1 quest from here hands in there). Then come back to this Azuremyst Isle guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Azuremyst Isle is planned from level 15.|r Load its guide for level 15 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 1 - 16 Azuremyst Isle
-#subweight -1
-#name 15-16 Azuremyst Isle
---RouteBuilder:next
-#next Zone Routes (Alliance)\14-18 Bloodmyst Isle: around Vindicator Boros;Zone Routes (Alliance)\10-15 Darkshore: around Thundris Windweaver
-
+    .xp 15 >>|cRXP_WARN_The rest of Azuremyst Isle is planned from level 15.|r Come back to this guide then
 step << Human Paladin/Dwarf Paladin/Draenei Paladin
     .goto 1943,48.36,49.56
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tullas|r
@@ -1666,5 +1602,5 @@ step
     +|cRXP_WARN_End of the Azuremyst Isle route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Hillsbrad Foothills and back here|r: A Donation of Wool
 step
-    +|cRXP_WARN_Suggested next zones at level 15|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.9 levels of quests, starting around Vindicator Boros), |cRXP_FRIENDLY_Darkshore|r (about 1.7 levels of quests, starting around Thundris Windweaver; 1 quest from here hands in there). Completing this step loads the guide for Bloodmyst Isle --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 15|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.9 levels of quests), |cRXP_FRIENDLY_Darkshore|r (about 1.7 levels of quests; 1 quest from here hands in there). Completing this step loads the guide for Bloodmyst Isle --RouteBuilder:next
 ]])

@@ -1,8 +1,7 @@
 -- 35-40 Western Plaguelands: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
--- Split into 2 guides, listed under "35 - 40 Western Plaguelands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
 -- Edit zones/mop/Western Plaguelands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -12,10 +11,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 35 - 40 Western Plaguelands
-#subweight -35
-#name 35-37 Western Plaguelands: around Field Agent Kaartish
-#next Zone Routes (Alliance)\37-40 Western Plaguelands: around Daria L'Rayne
+#name 35-40 Western Plaguelands
+--RouteBuilder:next
+#next Zone Routes (Alliance)\40-45 Eastern Plaguelands;Zone Routes (Alliance)\36-40 Dustwallow Marsh;Zone Routes (Alliance)\30-35 Desolace
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 22,41.06,70.44
@@ -482,19 +480,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_William Henderson|r
     .fp Hearthglen>>Get the Hearthglen Flight Path
     .target William Henderson
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 35 - 40 Western Plaguelands
-#subweight -35
-#name 37-40 Western Plaguelands: around Daria L'Rayne
---RouteBuilder:next
-#next Zone Routes (Alliance)\40-42 Eastern Plaguelands: around Chromie;Zone Routes (Alliance)\38-41 Dustwallow Marsh: around Tabetha;Zone Routes (Alliance)\33-36 Desolace: around Karnum Marshweaver
-
 step
     .goto 22,42.65,14.96
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Del Gahrron|r
@@ -505,13 +490,11 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Highlord Tirion Fordring|r
     .turnin 27002 >>Turn in An Audience with the Highlord
     .target Highlord Tirion Fordring
-    .isOnQuest 27002
 step
     .goto 22,42.49,15.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daria L'Rayne|r
     .accept 27151 >>Accept Taelan Fordring's Legacy
     .target Daria L'Rayne
-    .isQuestTurnedIn 27002 --any of: An Audience with the Highlord
 step
     .goto 22,43.21,15.92
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Myner|r
@@ -541,13 +524,12 @@ step
     >>Kill |cRXP_ENEMY_Redpine Looters|r
     .complete 27151,1 --Redpine Looter slain (10)
     .mob Redpine Looter
-    .isOnQuest 27151
 step
     .goto 22,42.49,15.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daria L'Rayne|r
     .turnin 27151 >>Turn in Taelan Fordring's Legacy
+    .accept 27152 >>Accept Unusual Behavior... Even For Gnolls
     .target Daria L'Rayne
-    .isOnQuest 27151
 step
     .goto 22,43.21,15.92
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Myner|r
@@ -555,88 +537,57 @@ step
     .isQuestComplete 27157
     .target Lieutenant Myner
 step
-    .goto 22,42.49,15.45
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daria L'Rayne|r
-    .accept 27152 >>Accept Unusual Behavior... Even For Gnolls
-    .target Daria L'Rayne
-    .isQuestTurnedIn 27151 --any of: Taelan Fordring's Legacy
-step
     .goto 22,57.67,36.09
     >>Kill |cRXP_ENEMY_Moldfang|r
     .complete 27152,1 --Moldfang slain (1)
     .mob Moldfang
-    .isOnQuest 27152
 step
     .goto 22,57.50,35.60
     >>Gnoll camp investigated
     .complete 27152,2 --Gnoll camp investigated
-    .isOnQuest 27152
 step
     .goto 22,42.49,15.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daria L'Rayne|r
     .turnin 27152 >>Turn in Unusual Behavior... Even For Gnolls
-    .target Daria L'Rayne
-    .isOnQuest 27152
-step
-    .goto 22,42.49,15.45
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daria L'Rayne|r
     .accept 27153 >>Accept The Good People of Hearthglen
     .target Daria L'Rayne
-    .isQuestTurnedIn 27152 --any of: Unusual Behavior... Even For Gnolls
 step
     .goto 22,42.13,18.18
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Cleric Alphus|r
     .complete 27153,4 --High Cleric Alphus
     .target High Cleric Alphus
-    .isOnQuest 27153
 step
     .goto 22,43.72,17.28
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bree Ironstock|r
     .complete 27153,3 --Bree Ironstock
     .target Bree Ironstock
-    .isOnQuest 27153
 step
     .goto 22,44.81,12.43
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Outfitter Mendelev|r
     .complete 27153,2 --Outfitter Mendelev
     .target Outfitter Mendelev
-    .isOnQuest 27153
 step
     .goto 22,44.38,13.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Morris Vant|r
     .complete 27153,1 --Morris Vant
     .target Morris Vant
-    .isOnQuest 27153
 step
     .goto 22,42.49,15.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daria L'Rayne|r
     .turnin 27153 >>Turn in The Good People of Hearthglen
-    .target Daria L'Rayne
-    .isOnQuest 27153
-step
-    .goto 22,42.49,15.45
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daria L'Rayne|r
     .accept 27154 >>Accept Bagging Bisp
     .target Daria L'Rayne
-    .isQuestTurnedIn 27153 --any of: The Good People of Hearthglen
 step
     .goto 22,45.84,18.35
     >>Kill |cRXP_ENEMY_Magus Bisp|r
     .complete 27154,1 --Magus Bisp slain (1)
     .mob Magus Bisp
-    .isOnQuest 27154
 step
     .goto 22,42.49,15.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daria L'Rayne|r
     .turnin 27154 >>Turn in Bagging Bisp
-    .target Daria L'Rayne
-    .isOnQuest 27154
-step
-    .goto 22,42.49,15.45
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daria L'Rayne|r
     .accept 27155 >>Accept Turning Yourself In
     .target Daria L'Rayne
-    .isQuestTurnedIn 27154 --any of: Bagging Bisp
 step
     .goto 22,43.21,15.92
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Myner|r
@@ -647,7 +598,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Highlord Tirion Fordring|r
     .turnin 27155 >>Turn in Turning Yourself In
     .target Highlord Tirion Fordring
-    .isOnQuest 27155
 step
     .goto 22,50.65,52.58
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Del Gahrron|r
@@ -659,78 +609,47 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Durnt Brightfalcon|r
     .accept 27197 >>Accept The Battle Resumes!
     .target Durnt Brightfalcon
-    .isQuestTurnedIn 27174 --any of: Combat Training
 step
     .goto 22,49.27,54.91
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Field Agent Kaartish|r
     .accept 27053 >>Accept Gahrron's Withering Cauldron
     .target Field Agent Kaartish
-    .isQuestTurnedIn 27002 --any of: An Audience with the Highlord
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 22,41.06,70.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thassarian|r
     .turnin 27197 >>Turn in The Battle Resumes!
-    .target Thassarian
-    .isOnQuest 27197
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 22,41.06,70.44
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thassarian|r
     .accept 27199 >>Accept Ashes to Ashes
     .target Thassarian
-    .isQuestTurnedIn 27197 --any of: The Battle Resumes!
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 22,41.26,70.07
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lang Loosegrip|r
     .accept 27198 >>Accept Supporting the Troops
     .target Lang Loosegrip
-    .isQuestTurnedIn 27197 --any of: The Battle Resumes!
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 22,45.92,69.85,0
-    .goto 22,45.92,69.85,40,0
+    .goto 22,43.51,64.96,0
+    .goto 22,43.51,64.96,40,0
     .goto 22,46.36,67.07,40,0
-    .goto 22,44.09,64.27,40,0
+    .goto 22,45.92,69.85,40,0
     >>Kill |cRXP_ENEMY_Deathguard War-Captains|r
-    .complete 27199,1 --Deathguard War-Captain slain (3)
-    .mob Deathguard War-Captain
-    .isOnQuest 27199
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 22,41.92,65.51
     >>Kill |cRXP_ENEMY_Andorhal Deathguard|r
+    .complete 27199,1 --Deathguard War-Captain slain (3)
     .complete 27198,1 --Andorhal Deathguard slain (15)
+    .mob Deathguard War-Captain
     .mob Andorhal Deathguard
-    .isOnQuest 27198
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 22,41.26,70.07
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lang Loosegrip|r
     .turnin 27198 >>Turn in Supporting the Troops
     .target Lang Loosegrip
-    .isOnQuest 27198
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 22,41.06,70.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thassarian|r
     .turnin 27199 >>Turn in Ashes to Ashes
-    .target Thassarian
-    .isOnQuest 27199
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 22,41.06,70.44
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thassarian|r
     .accept 27205 >>Accept The Depravity of the Forsaken
-    .target Thassarian
-    .isQuestTurnedIn 27198 --Supporting the Troops
-    .isQuestTurnedIn 27199 --Ashes to Ashes
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 22,41.06,70.44
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thassarian|r
     .turnin 27205 >>Turn in The Depravity of the Forsaken
-    .target Thassarian
-    .isOnQuest 27205
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 22,41.06,70.44
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thassarian|r
     .accept 27201 >>Accept Val'kyr Incursion
     .target Thassarian
-    .isQuestTurnedIn 27205 --any of: The Depravity of the Forsaken
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 22,42.70,84.11,0
@@ -740,26 +659,18 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thurman Grant|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 27202 >>Accept Brother Against Brother
     .unitscan Thurman Grant
-    .isQuestTurnedIn 27205 --any of: The Depravity of the Forsaken
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
-    .goto 22,42.32,72.76,0
-    .goto 22,42.32,72.76,40,0
-    .goto 22,43.78,67.56,40,0
-    .goto 22,47.84,69.30,40,0
+    .goto 22,42.54,71.31,0
+    .goto 22,42.54,71.31,40,0
+    .goto 22,44.52,72.05,40,0
+    .goto 22,44.80,69.20,40,0
     >>Kill |cRXP_ENEMY_Lesser Val'kyrs|r
-    .complete 27201,1 --Lesser Val'kyr slain (9)
-    .mob Lesser Val'kyr
-    .isOnQuest 27201
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #loop
-    .goto 22,44.13,69.56,0
-    .goto 22,44.13,69.56,40,0
-    .goto 22,44.73,72.94,40,0
     >>Kill |cRXP_ENEMY_Forsaken Troopers|r
+    .complete 27201,1 --Lesser Val'kyr slain (9)
     .complete 27202,1 --Forsaken Trooper (20)
+    .mob Lesser Val'kyr
     .mob Forsaken Trooper
-    .isOnQuest 27202
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 22,42.70,84.11,0
@@ -769,44 +680,28 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thurman Grant|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 27202 >>Turn in Brother Against Brother
     .unitscan Thurman Grant
-    .isOnQuest 27202
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 22,41.06,70.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thassarian|r
     .turnin 27201 >>Turn in Val'kyr Incursion
-    .target Thassarian
-    .isOnQuest 27201
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 22,41.06,70.44
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thassarian|r
     .accept 27204 >>Accept Aradne
     .target Thassarian
-    .isQuestTurnedIn 27201 --Val'kyr Incursion
-    .isQuestTurnedIn 27202 --Brother Against Brother
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 22,40.40,72.20
     >>Kill |cRXP_ENEMY_Aradne|r
     .complete 27204,1 --Aradne slain (1)
     .mob Aradne
-    .isOnQuest 27204
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 22,41.06,70.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thassarian|r
     .turnin 27204 >>Turn in Aradne
-    .target Thassarian
-    .isOnQuest 27204
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 22,41.06,70.44
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thassarian|r
     .accept 27206 >>Accept Alas, Andorhal
     .target Thassarian
-    .isQuestTurnedIn 27204 --any of: Aradne
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 22,42.70,84.01
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Commander Ashlam Valorfist|r
     .turnin 27206 >>Turn in Alas, Andorhal
     .target Commander Ashlam Valorfist
-    .isOnQuest 27206
 step
     .goto 22,42.97,83.55
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Argent Officer Pureheart|r
@@ -817,17 +712,11 @@ step
     >>Kill |cRXP_ENEMY_Cauldron Lord Soulwrath|r and loot |cRXP_LOOT_Gahrron's Withering Cauldron Key|r
     .complete 27053,1 --Gahrron's Withering Cauldron Key (1)
     .mob Cauldron Lord Soulwrath
-    .isOnQuest 27053
 step
     .goto 22,62.54,58.47
     >>Click the |cRXP_PICK_Scourge Cauldron|r
     .turnin 27053 >>Turn in Gahrron's Withering Cauldron
-    .isOnQuest 27053
-step
-    .goto 22,62.54,58.47
-    >>Click the |cRXP_PICK_Scourge Cauldron|r
     .accept 27057 >>Accept Return to the Stead
-    .isQuestTurnedIn 27053 --any of: Gahrron's Withering Cauldron
 step
     .goto 22,64.91,59.48
     >>Open the |cRXP_PICK_Child's Painting|r. Loot it for |cRXP_LOOT_Faded Finger Painting|r
@@ -843,39 +732,28 @@ step
     .goto 22,49.27,54.91
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Field Agent Kaartish|r
     .turnin 27057 >>Turn in Return to the Stead
-    .target Field Agent Kaartish
-    .isOnQuest 27057
-step
-    .goto 22,49.27,54.91
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Field Agent Kaartish|r
     .accept 27054 >>Accept Desperate Acts
     .target Field Agent Kaartish
-    .isQuestTurnedIn 27057 --any of: Return to the Stead
 step
     .goto 22,48.87,54.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Adrine Towhide|r
     .accept 26955 >>Accept Zen'Kiki and the Cultists
     .target Adrine Towhide
-    .isQuestTurnedIn 26954 --A Different Approach
-    .isQuestTurnedIn 27057 --Return to the Stead
 step
     .goto 22,66.05,47.70
     >>Kill |cRXP_ENEMY_Instructor Malicia|r and loot |cRXP_LOOT_Cult Orders|r
     .complete 27054,1 --Cult Orders (1)
     .mob Instructor Malicia
-    .isOnQuest 27054
 step
     .goto 22,49.27,54.91
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Field Agent Kaartish|r
     .turnin 27054 >>Turn in Desperate Acts
     .target Field Agent Kaartish
-    .isOnQuest 27054
 step
     .goto 22,63.64,33.37
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Krastinovian Disciple|r
     .accept 27055 >>Accept Students of Krastinov
     .target Krastinovian Disciple
-    .isQuestTurnedIn 27054 --any of: Desperate Acts
 step
     #loop
     .goto 22,64.98,47.89,0
@@ -884,53 +762,34 @@ step
     >>Bring Zen'Kiki to the Malicia Outpost in Western Plaguelands, then break 4 Captive Plaguebears out of their cages and allow Zen'Kiki to heal them.
     .complete 26955,1 --Captive Plaguebear (4)
     .target Captive Plaguebear
-    .isOnQuest 26955
-step
-    .goto 22,63.68,34.23
-    >>Kill |cRXP_ENEMY_Krastinovian Disciples|r
-    .complete 27055,1 --Krastinovian Disciple slain (2)
-    .mob Krastinovian Disciple
-    .isOnQuest 27055
 step
     #loop
-    .goto 22,61.76,34.42,0
-    .goto 22,61.76,34.42,40,0
-    .goto 22,63.10,37.48,40,0
-    >>Kill |cRXP_ENEMY_Flesh-Cobbled Brutes|r
-    .complete 27055,2 --Flesh-Cobbled Brute slain (2)
-    .mob Flesh-Cobbled Brute
-    .isOnQuest 27055
-step
-    #loop
-    .goto 22,64.72,35.58,0
-    .goto 22,64.72,35.58,40,0
-    .goto 22,62.06,32.93,40,0
-    >>Kill |cRXP_ENEMY_Flesh-Cobbled Rippers|r
-    .complete 27055,3 --Flesh-Cobbled Ripper slain (2)
-    .mob Flesh-Cobbled Ripper
-    .isOnQuest 27055
-step
-    #loop
-    .goto 22,63.36,35.79,0
-    .goto 22,63.36,35.79,40,0
-    .goto 22,64.77,38.59,40,0
+    .goto 22,66.22,40.94,0
     .goto 22,66.22,40.94,40,0
+    .goto 22,63.68,34.23,40,0
+    .goto 22,61.82,35.40,40,0
+    >>Kill |cRXP_ENEMY_Krastinovian Disciples|r
+    >>Kill |cRXP_ENEMY_Flesh-Cobbled Brutes|r
+    >>Kill |cRXP_ENEMY_Flesh-Cobbled Rippers|r
     >>Kill |cRXP_ENEMY_Unholy Corpuscles|r
+    .complete 27055,1 --Krastinovian Disciple slain (2)
+    .complete 27055,2 --Flesh-Cobbled Brute slain (2)
+    .complete 27055,3 --Flesh-Cobbled Ripper slain (2)
     .complete 27055,4 --Unholy Corpuscle slain (4)
+    .mob Krastinovian Disciple
+    .mob Flesh-Cobbled Brute
+    .mob Flesh-Cobbled Ripper
     .mob Unholy Corpuscle
-    .isOnQuest 27055
 step
     .goto 22,49.27,54.91
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Field Agent Kaartish|r
     .turnin 27055 >>Turn in Students of Krastinov
     .target Field Agent Kaartish
-    .isOnQuest 27055
 step
     .goto 22,48.87,54.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Adrine Towhide|r
     .turnin 26955 >>Turn in Zen'Kiki and the Cultists
     .target Adrine Towhide
-    .isOnQuest 26955
 step << !Mage
     .train 33391,1
     .goto 22,50.50,52.23
@@ -943,5 +802,5 @@ step
     +|cRXP_WARN_End of the Western Plaguelands route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Eastern Plaguelands|r: Into the Woods
 step
-    +|cRXP_WARN_Suggested next zones at level 39|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 2.8 levels of quests, starting around Chromie; 1 quest from here hands in there), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 0.9 levels of quests, starting around Tabetha), |cRXP_FRIENDLY_Desolace|r (about 0.5 levels of quests, starting around Karnum Marshweaver). Completing this step loads the guide for Eastern Plaguelands --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 39|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 2.8 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.3 levels of quests), |cRXP_FRIENDLY_Desolace|r (about 0.8 levels of quests). Completing this step loads the guide for Eastern Plaguelands --RouteBuilder:next
 ]])

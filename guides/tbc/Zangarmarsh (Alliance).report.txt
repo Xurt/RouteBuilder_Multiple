@@ -1,7 +1,7 @@
 Zangarmarsh - Alliance - part 1 of 2, planned from level 62
 Guide "62-65 Zangarmarsh" in group "Zone Routes (Alliance)": this part has 135 steps, 110 stops
 Written to guides/tbc/Zangarmarsh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1110 objective notes read from 57 guide files
@@ -101,7 +101,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Zangarmarsh - Alliance - part 2 of 2, planned from level 65
 Guide "62-65 Zangarmarsh" in group "Zone Routes (Alliance)": this part has 2 steps, 1 stops
 Written to guides/tbc/Zangarmarsh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1110 objective notes read from 57 guide files

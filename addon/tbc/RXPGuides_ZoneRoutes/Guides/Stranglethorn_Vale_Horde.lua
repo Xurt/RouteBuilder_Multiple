@@ -1,9 +1,9 @@
 -- 30-50 Stranglethorn Vale: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 5 parts (from level 30, 33, 37, 41, 45).
--- Split into 5 guides, listed under "30 - 46 Stranglethorn Vale" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 30; part 2 from 33; part 3 from 37; part 4 from 41; part 5 from 45.
 -- Edit zones/tbc/Stranglethorn Vale.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 30 - 46 Stranglethorn Vale
-#subweight -30
-#name 30-31 Stranglethorn Vale: around Barnil Stonepot
+#name 30-50 Stranglethorn Vale
 
 step
     .goto 1434/0,539.37,-14298.11
@@ -296,20 +294,7 @@ step
     >>|cRXP_FRIENDLY_Thousand Needles|r: Rumors for Kravel
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Green Hills of Stranglethorn
 step
-    +|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 33.|r Load its guide for level 33 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 30 - 46 Stranglethorn Vale
-#subweight -30
-#name 33-35 Stranglethorn Vale: around Kebok
---RouteBuilder:next
-#next Zone Routes (Horde)\35-38 Dustwallow Marsh: around Krog
-
+    .xp 33 >>|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 33.|r Come back to this guide then
 step
     .goto 1434/0,-54.72,-11616.71
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Barnil Stonepot|r
@@ -671,22 +656,9 @@ step
     >>|cRXP_FRIENDLY_The Barrens|r: Components for the Enchanted Gold Bloodrobe << Warlock
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: An Unusual Patron
 step
-    +|cRXP_WARN_Suggested next zones at level 34|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.5 levels of quests, starting around Krog; 1 quest from here hands in there). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
+    +|cRXP_WARN_Until level 37, suggested zones|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.5 levels of quests; 1 quest from here hands in there). Then come back to this Stranglethorn Vale guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 37.|r Load its guide for level 37 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 30 - 46 Stranglethorn Vale
-#subweight -30
-#name 37-39 Stranglethorn Vale: around Baron Revilgaz
---RouteBuilder:next
-#next Zone Routes (Horde)\35-38 Dustwallow Marsh: around Krog;Zone Routes (Horde)\38-39 Arathi Highlands: around Zengu
-
+    .xp 37 >>|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 37.|r Come back to this guide then
 step
     .goto 1434/0,-54.72,-11616.71
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Barnil Stonepot|r
@@ -1102,20 +1074,9 @@ step
     >>|cRXP_FRIENDLY_Thousand Needles|r: Goblin Sponsorship
     >>|cRXP_FRIENDLY_another zone and back here|r: Grim Message
 step
-    +|cRXP_WARN_Suggested next zones at level 38|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.2 levels of quests, starting around Krog; 1 quest from here hands in there), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.6 levels of quests, starting around Zengu). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
+    +|cRXP_WARN_Until level 41, suggested zones|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.2 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.6 levels of quests). Then come back to this Stranglethorn Vale guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 41.|r Load its guide for level 41 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 30 - 46 Stranglethorn Vale
-#subweight -30
-#name 41-43 Stranglethorn Vale: around "Sea Wolf" MacKinley
-
+    .xp 41 >>|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 41.|r Come back to this guide then
 step
     .goto 1434/0,-54.72,-11616.71
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Barnil Stonepot|r
@@ -1524,18 +1485,7 @@ step
     >>|cRXP_FRIENDLY_Thousand Needles|r: Zanzil's Mixture and a Fool's Stout
     >>|cRXP_FRIENDLY_The Hinterlands and back here|r: Whiskey Slim's Lost Grog
 step
-    +|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 45.|r Load its guide for level 45 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 30 - 46 Stranglethorn Vale
-#subweight -30
-#name 45-46 Stranglethorn Vale: around Kin'weelay
-
+    .xp 45 >>|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 45.|r Come back to this guide then
 step
     .goto 1434/0,180.75,-12385.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nemeth Hawkeye|r

@@ -13,12 +13,12 @@
       "start": 30,
       "end": 30.55,
       "next": 33,
-      "guide": "30-31 Stranglethorn Vale: around Barnil Stonepot",
+      "guide": "30-50 Stranglethorn Vale",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Barnil Stonepot",
-          "guide": "30-31 Stranglethorn Vale: around Barnil Stonepot",
+          "label": "",
+          "name": "start",
+          "guide": "30-50 Stranglethorn Vale",
           "level": 30,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 33,
       "end": 33.66,
       "next": 36,
-      "guide": "33-34 Stranglethorn Vale: around Krazek",
+      "guide": "30-50 Stranglethorn Vale",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Krazek",
-          "guide": "33-34 Stranglethorn Vale: around Krazek",
+          "label": "",
+          "name": "part 2",
+          "guide": "30-50 Stranglethorn Vale",
           "level": 33,
           "index": 0
         }
@@ -45,12 +45,12 @@
       "start": 36,
       "end": 36.3,
       "next": 39,
-      "guide": "36-37 Stranglethorn Vale: around Baron Revilgaz",
+      "guide": "30-50 Stranglethorn Vale",
       "sections": [
         {
-          "label": "RBSection3_1",
-          "name": "around Baron Revilgaz",
-          "guide": "36-37 Stranglethorn Vale: around Baron Revilgaz",
+          "label": "",
+          "name": "part 3",
+          "guide": "30-50 Stranglethorn Vale",
           "level": 36,
           "index": 0
         }
@@ -61,12 +61,12 @@
       "start": 39,
       "end": 39.74,
       "next": 42,
-      "guide": "39-40 Stranglethorn Vale: around Catelyn the Blade",
+      "guide": "30-50 Stranglethorn Vale",
       "sections": [
         {
-          "label": "RBSection4_1",
-          "name": "around Catelyn the Blade",
-          "guide": "39-40 Stranglethorn Vale: around Catelyn the Blade",
+          "label": "",
+          "name": "part 4",
+          "guide": "30-50 Stranglethorn Vale",
           "level": 39,
           "index": 0
         }
@@ -77,12 +77,12 @@
       "start": 42,
       "end": 42.41,
       "next": 45,
-      "guide": "42-43 Stranglethorn Vale: around \u0022Sea Wolf\u0022 MacKinley",
+      "guide": "30-50 Stranglethorn Vale",
       "sections": [
         {
-          "label": "RBSection5_1",
-          "name": "around \u0022Sea Wolf\u0022 MacKinley",
-          "guide": "42-43 Stranglethorn Vale: around \u0022Sea Wolf\u0022 MacKinley",
+          "label": "",
+          "name": "part 5",
+          "guide": "30-50 Stranglethorn Vale",
           "level": 42,
           "index": 0
         }
@@ -93,12 +93,12 @@
       "start": 45,
       "end": 45.07,
       "next": 48,
-      "guide": "45-46 Stranglethorn Vale",
+      "guide": "30-50 Stranglethorn Vale",
       "sections": [
         {
-          "label": "RBSection6_1",
+          "label": "",
           "name": "part 6",
-          "guide": "45-46 Stranglethorn Vale",
+          "guide": "30-50 Stranglethorn Vale",
           "level": 45,
           "index": 0
         }
@@ -109,12 +109,12 @@
       "start": 48,
       "end": 48.04,
       "next": 51,
-      "guide": "48-49 Stranglethorn Vale",
+      "guide": "30-50 Stranglethorn Vale",
       "sections": [
         {
-          "label": "RBSection7_1",
+          "label": "",
           "name": "part 7",
-          "guide": "48-49 Stranglethorn Vale",
+          "guide": "30-50 Stranglethorn Vale",
           "level": 48,
           "index": 0
         }
@@ -124,12 +124,12 @@
       "part": 8,
       "start": 51,
       "end": 51.05,
-      "guide": "51-52 Stranglethorn Vale",
+      "guide": "30-50 Stranglethorn Vale",
       "sections": [
         {
-          "label": "RBSection8_1",
+          "label": "",
           "name": "part 8",
-          "guide": "51-52 Stranglethorn Vale",
+          "guide": "30-50 Stranglethorn Vale",
           "level": 51,
           "index": 0
         }

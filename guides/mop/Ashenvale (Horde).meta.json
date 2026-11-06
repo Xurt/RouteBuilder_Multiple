@@ -13,12 +13,12 @@
       "start": 21,
       "end": 25.19,
       "next": 28,
-      "guide": "21-26 Ashenvale: around Commander Grimfang",
+      "guide": "21-26 Ashenvale",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Commander Grimfang",
-          "guide": "21-26 Ashenvale: around Commander Grimfang",
+          "label": "",
+          "name": "start",
+          "guide": "21-26 Ashenvale",
           "level": 21,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 28,
       "end": 28,
-      "guide": "28-29 Ashenvale",
+      "guide": "21-26 Ashenvale",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "28-29 Ashenvale",
+          "guide": "21-26 Ashenvale",
           "level": 28,
           "index": 0
         }

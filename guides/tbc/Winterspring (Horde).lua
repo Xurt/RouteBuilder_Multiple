@@ -1,9 +1,9 @@
 -- 52-60 Winterspring: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 52, 55, 58).
--- Split into 3 guides, listed under "52 - 59 Winterspring" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 52; part 2 from 55; part 3 from 58.
 -- Edit zones/tbc/Winterspring.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 52 - 59 Winterspring
-#subweight -52
-#name 52-53 Winterspring: around Gregor Greystone
---RouteBuilder:next
-#next Zone Routes (Horde)\50-52 Un'Goro Crater: around Torwa Pathfinder;Zone Routes (Horde)\51-52 Felwood: around Greta Mosshoof
+#name 52-60 Winterspring
 
 step
     .goto 1452/1,-2285.50,6900.33
@@ -126,22 +122,9 @@ step
     >>|cRXP_FRIENDLY_Tanaris|r: Meet at the Grave
     >>|cRXP_FRIENDLY_Tirisfal Glades|r: The Everlook Report
 step
-    +|cRXP_WARN_Suggested next zones at level 52|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.8 levels of quests, starting around Torwa Pathfinder), |cRXP_FRIENDLY_Felwood|r (about 0.5 levels of quests, starting around Greta Mosshoof). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
+    +|cRXP_WARN_Until level 55, suggested zones|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.8 levels of quests), |cRXP_FRIENDLY_Felwood|r (about 0.5 levels of quests). Then come back to this Winterspring guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Winterspring is planned from level 55.|r Load its guide for level 55 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 52 - 59 Winterspring
-#subweight -52
-#name 55-56 Winterspring: around Umi Rumplesnicker
---RouteBuilder:next
-#next Zone Routes (Horde)\55-56 Eastern Plaguelands: around Tirion Fordring
-
+    .xp 55 >>|cRXP_WARN_The rest of Winterspring is planned from level 55.|r Come back to this guide then
 step
     .goto 1452/1,-4623.53,6726.62
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Meggi Peppinrocker|r
@@ -455,20 +438,9 @@ step
     >>|cRXP_FRIENDLY_Felwood|r: Falling to Corruption, Winterfall Ritual Totem, Words of the High Chief
     >>|cRXP_FRIENDLY_Tanaris, Un'Goro Crater and back here|r: Are We There, Yeti?
 step
-    +|cRXP_WARN_Suggested next zones at level 55|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 0.5 levels of quests, starting around Tirion Fordring; 2 quests from here hand in there). Completing this step loads the guide for Eastern Plaguelands --RouteBuilder:next
+    +|cRXP_WARN_Until level 58, suggested zones|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 0.5 levels of quests; 2 quests from here hand in there). Then come back to this Winterspring guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Winterspring is planned from level 58.|r Load its guide for level 58 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 52 - 59 Winterspring
-#subweight -52
-#name 58-59 Winterspring: around Storm Shadowhoof
-
+    .xp 58 >>|cRXP_WARN_The rest of Winterspring is planned from level 58.|r Come back to this guide then
 step
     .goto 1452/1,-4712.99,6720.47
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Mau'ari|r

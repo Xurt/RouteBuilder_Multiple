@@ -1,7 +1,7 @@
 Winterspring - Horde - part 1 of 2, planned from level 50
-Guide "50-55 Winterspring" in group "Zone Routes (Horde)": this part has 197 steps, 155 stops
+Guide "50-55 Winterspring" in group "Zone Routes (Horde)": this part has 184 steps, 141 stops
 Written to guides/mop/Winterspring (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -50,7 +50,7 @@ The check passes at once if you are there; if you are a little behind the predic
   level 50 for Meet with Master Pyreanor (BloodElf Paladin)
   level 50 for Meet with Sunwalker Atohmo (Tauren Paladin/BloodElf Paladin)
   level 51 for A Taste for Bear
-  level 53 for Razor Beak and Antlers Pointy
+  level 53 for The Owlbeasts' Defense
 3 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 3 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 13 pickups are also offered a visit early, in case you are ahead of the predicted level (they hide themselves otherwise).
@@ -165,7 +165,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Winterspring - Horde - part 2 of 2, planned from level 57
 Guide "50-55 Winterspring" in group "Zone Routes (Horde)": this part has 5 steps, 3 stops
 Written to guides/mop/Winterspring (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files

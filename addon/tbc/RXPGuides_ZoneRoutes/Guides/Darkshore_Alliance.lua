@@ -1,9 +1,9 @@
 -- 10-22 Darkshore: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 10, 17, 21).
--- Split into 3 guides, listed under "10 - 22 Darkshore" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 10; part 2 from 17; part 3 from 21.
 -- Edit zones/tbc/Darkshore.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 10 - 22 Darkshore
-#subweight -10
-#name 10-15 Darkshore: around Thundris Windweaver
+#name 10-22 Darkshore
 --RouteBuilder:next
-#next Zone Routes (Alliance)\14-18 Bloodmyst Isle: around Vindicator Boros;Zone Routes (Alliance)\10-13 Westfall: around Farmer Saldean;Zone Routes (Alliance)\14-15 The Barrens: around Gazlowe
+#next Zone Routes (Alliance)\18-32 Ashenvale;Zone Routes (Alliance)\20-31 Duskwood
 
 step << NightElf
     .goto 1439/1,533.23,6399.77
@@ -606,22 +604,9 @@ step
     >>|cRXP_FRIENDLY_Teldrassil|r: Return to Nessa << NightElf
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Family and the Fishing Pole
 step
-    +|cRXP_WARN_Suggested next zones at level 14|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.6 levels of quests, starting around Vindicator Boros), |cRXP_FRIENDLY_Westfall|r (about 0.7 levels of quests, starting around Farmer Saldean), |cRXP_FRIENDLY_The Barrens|r (about 0.7 levels of quests, starting around Gazlowe). Completing this step loads the guide for Bloodmyst Isle --RouteBuilder:next
+    +|cRXP_WARN_Until level 17, suggested zones|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Westfall|r (about 0.7 levels of quests), |cRXP_FRIENDLY_The Barrens|r (about 0.7 levels of quests). Then come back to this Darkshore guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Darkshore is planned from level 17.|r Load its guide for level 17 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 10 - 22 Darkshore
-#subweight -10
-#name 17-19 Darkshore: around Terenthis
---RouteBuilder:next
-#next Zone Routes (Alliance)\14-18 Bloodmyst Isle: around Vindicator Boros;Zone Routes (Alliance)\18-19 Ashenvale: around Shindrell Swiftfire
-
+    .xp 17 >>|cRXP_WARN_The rest of Darkshore is planned from level 17.|r Come back to this guide then
 step
     .goto 1439/1,577.12,6371.39
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gubber Blump|r
@@ -950,22 +935,9 @@ step
     >>|cRXP_FRIENDLY_Darnassus|r: The Absent Minded Prospector
     >>|cRXP_FRIENDLY_Moonglade|r: Curing the Sick << Druid
 step
-    +|cRXP_WARN_Suggested next zones at level 18|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.5 levels of quests, starting around Vindicator Boros), |cRXP_FRIENDLY_Ashenvale|r (about 0.8 levels of quests, starting around Shindrell Swiftfire; 8 quests from here hand in there). Completing this step loads the guide for Bloodmyst Isle --RouteBuilder:next
+    +|cRXP_WARN_Until level 21, suggested zones|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.5 levels of quests), |cRXP_FRIENDLY_Ashenvale|r (about 0.8 levels of quests; 8 quests from here hand in there). Then come back to this Darkshore guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Darkshore is planned from level 21.|r Load its guide for level 21 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 10 - 22 Darkshore
-#subweight -10
-#name 21-22 Darkshore
---RouteBuilder:next
-#next Zone Routes (Alliance)\21-22 Ashenvale;Zone Routes (Alliance)\20-21 Duskwood: around Elaine Carevin
-
+    .xp 21 >>|cRXP_WARN_The rest of Darkshore is planned from level 21.|r Come back to this guide then
 step
     .goto 1439/1,-6.49,4608.57
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Volcor|r
@@ -999,5 +971,5 @@ step
     +|cRXP_WARN_End of the Darkshore route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Ashenvale|r: Trek to Ashenvale
 step
-    +|cRXP_WARN_Suggested next zones at level 21|r: |cRXP_FRIENDLY_Ashenvale|r (about 0.6 levels of quests), |cRXP_FRIENDLY_Duskwood|r (about 0.5 levels of quests, starting around Elaine Carevin). Completing this step loads the guide for Ashenvale --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 21|r: |cRXP_FRIENDLY_Ashenvale|r (about 0.6 levels of quests), |cRXP_FRIENDLY_Duskwood|r (about 0.5 levels of quests). Completing this step loads the guide for Ashenvale --RouteBuilder:next
 ]])

@@ -1,5 +1,5 @@
 -- 55-58 Blasted Lands: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- Edit zones/mop/Blasted Lands.json and re-run rather than editing this file, or your changes are lost on the next build.
@@ -566,5 +566,5 @@ step
     +|cRXP_WARN_End of the Blasted Lands route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Demoniac Vessel << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 57|r: |cRXP_FRIENDLY_Silithus|r (about 0.9 levels of quests, starting around Huum Wildmane). Completing this step loads the guide for Silithus --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 57|r: |cRXP_FRIENDLY_Silithus|r (about 0.9 levels of quests). Completing this step loads the guide for Silithus --RouteBuilder:next
 ]])

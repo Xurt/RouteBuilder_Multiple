@@ -1,9 +1,9 @@
 -- 12-18 The Barrens: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 12, 15, 18).
--- Split into 3 guides, listed under "12 - 19 The Barrens" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 12; part 2 from 15; part 3 from 18.
 -- Edit zones/mop/The Barrens.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 12 - 19 The Barrens
-#subweight -12
-#name 12-13 The Barrens
+#name 12-18 The Barrens
 --RouteBuilder:next
-#next Zone Routes (Alliance)\10-13 Darkshore: around Ranger Glynda Nal'Shea;Zone Routes (Alliance)\11-15 Loch Modan: around Captain Rugelfuss
+#next Zone Routes (Alliance)\10-20 Darkshore
 
 step
     .goto 10,54.03,41.05
@@ -90,22 +88,9 @@ step
     .turnin 13995 >>Turn in King of Centaur Mountain
     .target Shoe
 step
-    +|cRXP_WARN_Suggested next zones at level 12|r: |cRXP_FRIENDLY_Darkshore|r (about 1.3 levels of quests, starting around Ranger Glynda Nal'Shea), |cRXP_FRIENDLY_Loch Modan|r (about 0.6 levels of quests, starting around Captain Rugelfuss). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 15, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 1.3 levels of quests), |cRXP_FRIENDLY_Loch Modan|r (about 0.6 levels of quests). Then come back to this The Barrens guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of The Barrens is planned from level 15.|r Load its guide for level 15 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 12 - 19 The Barrens
-#subweight -12
-#name 15-16 The Barrens
---RouteBuilder:next
-#next Zone Routes (Alliance)\15-20 Darkshore: around Ranger Glynda Nal'Shea
-
+    .xp 15 >>|cRXP_WARN_The rest of The Barrens is planned from level 15.|r Come back to this guide then
 step
     .goto 10,68.26,71.24
     >>Click the |cRXP_PICK_WANTED|r
@@ -152,22 +137,9 @@ step
     .target Gazrog
     .isOnQuest 13991
 step
-    +|cRXP_WARN_Suggested next zones at level 15|r: |cRXP_FRIENDLY_Darkshore|r (about 0.9 levels of quests, starting around Ranger Glynda Nal'Shea). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 18, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 1.2 levels of quests), |cRXP_FRIENDLY_Loch Modan|r (about 0.5 levels of quests). Then come back to this The Barrens guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of The Barrens is planned from level 18.|r Load its guide for level 18 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 12 - 19 The Barrens
-#subweight -12
-#name 18-19 The Barrens
---RouteBuilder:next
-#next Zone Routes (Alliance)\15-20 Darkshore: around Ranger Glynda Nal'Shea
-
+    .xp 18 >>|cRXP_WARN_The rest of The Barrens is planned from level 18.|r Come back to this guide then
 step
     .goto 10,67.86,71.50
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mebok Mizzyrix|r
@@ -199,5 +171,5 @@ step
 step
     +|cRXP_WARN_End of the The Barrens route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 18|r: |cRXP_FRIENDLY_Darkshore|r (about 0.7 levels of quests, starting around Ranger Glynda Nal'Shea). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 18|r: |cRXP_FRIENDLY_Darkshore|r (about 0.9 levels of quests). Completing this step loads the guide for Darkshore --RouteBuilder:next
 ]])

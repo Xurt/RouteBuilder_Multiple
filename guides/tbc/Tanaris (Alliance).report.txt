@@ -1,7 +1,7 @@
 Tanaris - Alliance - part 1 of 3, planned from level 43
 Guide "43-54 Tanaris" in group "Zone Routes (Alliance)": this part has 60 steps, 51 stops
 Written to guides/tbc/Tanaris (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -128,7 +128,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Tanaris - Alliance - part 2 of 3, planned from level 46
 Guide "43-54 Tanaris" in group "Zone Routes (Alliance)": this part has 38 steps, 36 stops
 Written to guides/tbc/Tanaris (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -211,7 +211,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Tanaris - Alliance - part 3 of 3, planned from level 49
 Guide "43-54 Tanaris" in group "Zone Routes (Alliance)": this part has 27 steps, 24 stops
 Written to guides/tbc/Tanaris (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

@@ -13,12 +13,12 @@
       "start": 11,
       "end": 11.24,
       "next": 14,
-      "guide": "11-12 Darkshore",
+      "guide": "11-18 Darkshore",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "11-12 Darkshore",
+          "guide": "11-18 Darkshore",
           "level": 11,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 14,
       "end": 14.28,
       "next": 17,
-      "guide": "14-15 Darkshore",
+      "guide": "11-18 Darkshore",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "14-15 Darkshore",
+          "guide": "11-18 Darkshore",
           "level": 14,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 17,
       "end": 17.31,
-      "guide": "17-18 Darkshore",
+      "guide": "11-18 Darkshore",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "17-18 Darkshore",
+          "guide": "11-18 Darkshore",
           "level": 17,
           "index": 0
         }

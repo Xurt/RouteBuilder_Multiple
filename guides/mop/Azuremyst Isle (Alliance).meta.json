@@ -13,12 +13,12 @@
       "start": 1,
       "end": 8.51,
       "next": 11,
-      "guide": "1-9 Azuremyst Isle",
+      "guide": "1-12 Azuremyst Isle",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "1-9 Azuremyst Isle",
+          "guide": "1-12 Azuremyst Isle",
           "level": 1,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 11,
       "end": 11.5,
-      "guide": "11-12 Azuremyst Isle",
+      "guide": "1-12 Azuremyst Isle",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "11-12 Azuremyst Isle",
+          "guide": "1-12 Azuremyst Isle",
           "level": 11,
           "index": 0
         }

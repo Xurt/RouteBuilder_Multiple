@@ -13,12 +13,12 @@
       "start": 79,
       "end": 81,
       "next": 84,
-      "guide": "79-81 Icecrown: around Highlord Tirion Fordring",
+      "guide": "79-81 Icecrown",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Highlord Tirion Fordring",
-          "guide": "79-81 Icecrown: around Highlord Tirion Fordring",
+          "label": "",
+          "name": "start",
+          "guide": "79-81 Icecrown",
           "level": 79,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 84,
       "end": 84,
-      "guide": "84-85 Icecrown",
+      "guide": "79-81 Icecrown",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "84-85 Icecrown",
+          "guide": "79-81 Icecrown",
           "level": 84,
           "index": 0
         }

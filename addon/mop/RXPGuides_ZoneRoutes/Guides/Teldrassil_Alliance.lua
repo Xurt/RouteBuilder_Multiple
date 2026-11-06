@@ -1,5 +1,5 @@
 -- 5-12 Teldrassil: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- Edit zones/mop/Teldrassil.json and re-run rather than editing this file, or your changes are lost on the next build.
@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
 #group Zone Routes (Alliance)
 #name 5-12 Teldrassil
 --RouteBuilder:next
-#next Zone Routes (Alliance)\10-13 Darkshore: around Ranger Glynda Nal'Shea;Zone Routes (Alliance)\11-15 Loch Modan: around Captain Rugelfuss
+#next Zone Routes (Alliance)\10-20 Darkshore;Zone Routes (Alliance)\11-20 Loch Modan
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 57,59.47,49.16
@@ -664,5 +664,5 @@ step
     >>|cRXP_FRIENDLY_Darkshore|r: Breaking Waves of Change << Worgen
     >>|cRXP_FRIENDLY_Darkshore and back here|r: Ferocitas the Dream Eater << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 11|r: |cRXP_FRIENDLY_Darkshore|r (about 1.0 levels of quests, starting around Ranger Glynda Nal'Shea), |cRXP_FRIENDLY_Loch Modan|r (about 0.7 levels of quests, starting around Captain Rugelfuss). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 11|r: |cRXP_FRIENDLY_Darkshore|r (about 1.0 levels of quests), |cRXP_FRIENDLY_Loch Modan|r (about 0.7 levels of quests). Completing this step loads the guide for Darkshore --RouteBuilder:next
 ]])

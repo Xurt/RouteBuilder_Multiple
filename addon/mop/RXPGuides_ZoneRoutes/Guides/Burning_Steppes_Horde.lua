@@ -1,9 +1,9 @@
 -- 50-52 Burning Steppes: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 50, 55).
--- Split into 2 guides, listed under "50 - 56 Burning Steppes" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 50; part 2 from 55.
 -- Edit zones/mop/Burning Steppes.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 50 - 56 Burning Steppes
-#subweight -50
-#name 50-53 Burning Steppes: around Eitrigg
+#name 50-52 Burning Steppes
 --RouteBuilder:next
-#next Zone Routes (Horde)\51-53 Un'Goro Crater: around Mor'vek;Zone Routes (Horde)\52-54 Winterspring: around Rinno Curtainfire;Zone Routes (Horde)\52-55 Swamp of Sorrows: around Trade Baron Silversnap
+#next Zone Routes (Horde)\50-55 Winterspring;Zone Routes (Horde)\51-55 Un'Goro Crater;Zone Routes (Horde)\55-56 Silithus
 
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 36,16.98,51.30
@@ -883,23 +881,10 @@ step
     >>|cRXP_FRIENDLY_Undercity|r: Envoy to the Horde << Orc/Undead/Tauren/Troll/Pandaren
     >>|cRXP_FRIENDLY_Western Plaguelands|r: Warchief's Command: Western Plaguelands! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_another zone|r: The Kodocaller's Horn << Orc/Undead/Tauren/Troll/BloodElf/Goblin
-step
-    +|cRXP_WARN_Suggested next zones at level 52|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.8 levels of quests, starting around Mor'vek), |cRXP_FRIENDLY_Winterspring|r (about 1.3 levels of quests, starting around Rinno Curtainfire), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 0.9 levels of quests, starting around Trade Baron Silversnap). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Burning Steppes is planned from level 55.|r Load its guide for level 55 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 50 - 56 Burning Steppes
-#subweight -50
-#name 55-56 Burning Steppes
---RouteBuilder:next
-#next Zone Routes (Horde)\52-54 Winterspring: around Rinno Curtainfire;Zone Routes (Horde)\55-56 Silithus;Zone Routes (Horde)\52-55 Swamp of Sorrows: around Trade Baron Silversnap
-
+    +|cRXP_WARN_Until level 55, suggested zones|r: |cRXP_FRIENDLY_Winterspring|r (about 2.7 levels of quests), |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.8 levels of quests), |cRXP_FRIENDLY_Felwood|r (about 1.8 levels of quests). Then come back to this Burning Steppes guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 55 >>|cRXP_WARN_The rest of Burning Steppes is planned from level 55.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 36,54.95,22.56
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kibler|r
@@ -909,5 +894,5 @@ step
     +|cRXP_WARN_End of the Burning Steppes route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Swamp of Sorrows|r: The Bogpaddle Bullet << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 55|r: |cRXP_FRIENDLY_Winterspring|r (about 1.2 levels of quests, starting around Rinno Curtainfire), |cRXP_FRIENDLY_Silithus|r (about 0.9 levels of quests, starting around Huum Wildmane), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 0.8 levels of quests, starting around Trade Baron Silversnap). Completing this step loads the guide for Winterspring --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 55|r: |cRXP_FRIENDLY_Winterspring|r (about 2.4 levels of quests), |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Silithus|r (about 0.9 levels of quests). Completing this step loads the guide for Winterspring --RouteBuilder:next
 ]])

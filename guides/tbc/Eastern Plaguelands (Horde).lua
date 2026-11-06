@@ -1,9 +1,9 @@
 -- 55-60 Eastern Plaguelands: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 55, 58, 61).
--- Split into 3 guides, listed under "55 - 62 Eastern Plaguelands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 55; part 2 from 58; part 3 from 61.
 -- Edit zones/tbc/Eastern Plaguelands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,9 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 55 - 62 Eastern Plaguelands
-#subweight -55
-#name 55-56 Eastern Plaguelands: around Tirion Fordring
+#name 55-60 Eastern Plaguelands
+--RouteBuilder:next
+#next Zone Routes (Horde)\60-63 Hellfire Peninsula;Zone Routes (Horde)\62-70 Terokkar Forest
 
 step
     .goto 1423/0,-2480.37,2673.54
@@ -410,18 +410,7 @@ step
     >>|cRXP_FRIENDLY_Western Plaguelands|r: Auntie Marlene, Of Love and Family, Find Myranda, Return to Chromie
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Pamela's Doll, That's Asking A Lot
 step
-    +|cRXP_WARN_The rest of Eastern Plaguelands is planned from level 58.|r Load its guide for level 58 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 55 - 62 Eastern Plaguelands
-#subweight -55
-#name 58-59 Eastern Plaguelands
-
+    .xp 58 >>|cRXP_WARN_The rest of Eastern Plaguelands is planned from level 58.|r Come back to this guide then
 step
     .goto 1423/0,-3212.74,1871.03
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nathanos Blightcaller|r
@@ -599,20 +588,7 @@ step
     +|cRXP_WARN_That is all of Eastern Plaguelands for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Western Plaguelands|r: Soulbound Keepsake
 step
-    +|cRXP_WARN_The rest of Eastern Plaguelands is planned from level 61.|r Load its guide for level 61 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 55 - 62 Eastern Plaguelands
-#subweight -55
-#name 61-62 Eastern Plaguelands
---RouteBuilder:next
-#next Zone Routes (Horde)\60-62 Hellfire Peninsula: around Nazgrel;Zone Routes (Horde)\62-64 Terokkar Forest: around Tooki
-
+    .xp 61 >>|cRXP_WARN_The rest of Eastern Plaguelands is planned from level 61.|r Come back to this guide then
 step
     .goto 1423/0,-3712.85,1411.31
     >>Pick up |cRXP_PICK_Pamela's Doll's Right Side|r from the ground
@@ -779,5 +755,5 @@ step
     >>|cRXP_FRIENDLY_Orgrimmar|r: Anthion's Parting Words << Paladin
     >>|cRXP_FRIENDLY_Undercity|r: The Call to Command
 step
-    +|cRXP_WARN_Suggested next zones at level 61|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.9 levels of quests, starting around Nazgrel), |cRXP_FRIENDLY_Terokkar Forest|r (about 0.6 levels of quests, starting around Tooki). Completing this step loads the guide for Hellfire Peninsula --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 61|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.9 levels of quests), |cRXP_FRIENDLY_Terokkar Forest|r (about 0.6 levels of quests). Completing this step loads the guide for Hellfire Peninsula --RouteBuilder:next
 ]])

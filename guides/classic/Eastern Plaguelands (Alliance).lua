@@ -1,9 +1,9 @@
 -- 55-60 Eastern Plaguelands: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 55, 58).
--- Split into 2 guides, listed under "55 - 59 Eastern Plaguelands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 55; part 2 from 58.
 -- Edit zones/classic/Eastern Plaguelands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 55 - 59 Eastern Plaguelands
-#subweight -55
-#name 55-56 Eastern Plaguelands: around Tirion Fordring
+#name 55-60 Eastern Plaguelands
 
 step
     .goto 1423/0,-2478.44,2671.99
@@ -445,18 +443,7 @@ step
     >>|cRXP_FRIENDLY_Winterspring|r: Tormented By the Past
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Pamela's Doll, That's Asking A Lot
 step
-    +|cRXP_WARN_The rest of Eastern Plaguelands is planned from level 58.|r Load its guide for level 58 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 55 - 59 Eastern Plaguelands
-#subweight -55
-#name 58-59 Eastern Plaguelands
-
+    .xp 58 >>|cRXP_WARN_The rest of Eastern Plaguelands is planned from level 58.|r Come back to this guide then
 step
     .goto 1423/0,-3657.88,1411.05
     >>Pick up |cRXP_PICK_Pamela's Doll's Head|r from the ground

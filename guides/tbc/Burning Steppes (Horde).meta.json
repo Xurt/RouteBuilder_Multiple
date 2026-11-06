@@ -13,12 +13,12 @@
       "start": 51,
       "end": 51.09,
       "next": 59,
-      "guide": "51-52 Burning Steppes",
+      "guide": "51-60 Burning Steppes",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "51-52 Burning Steppes",
+          "guide": "51-60 Burning Steppes",
           "level": 51,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 59,
       "end": 59,
       "next": 62,
-      "guide": "59-60 Burning Steppes",
+      "guide": "51-60 Burning Steppes",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "59-60 Burning Steppes",
+          "guide": "51-60 Burning Steppes",
           "level": 59,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 62,
       "end": 62,
-      "guide": "62-63 Burning Steppes",
+      "guide": "51-60 Burning Steppes",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "62-63 Burning Steppes",
+          "guide": "51-60 Burning Steppes",
           "level": 62,
           "index": 0
         }

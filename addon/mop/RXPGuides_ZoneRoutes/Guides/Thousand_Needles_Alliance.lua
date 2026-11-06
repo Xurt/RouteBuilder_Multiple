@@ -1,9 +1,9 @@
 -- 40-45 Thousand Needles: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 40, 44, 47).
--- Split into 3 guides, listed under "40 - 48 Thousand Needles" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 40; part 2 from 44; part 3 from 47.
 -- Edit zones/mop/Thousand Needles.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 40 - 48 Thousand Needles
-#subweight -40
-#name 40-41 Thousand Needles
+#name 40-45 Thousand Needles
 --RouteBuilder:next
-#next Zone Routes (Alliance)\40-42 Eastern Plaguelands: around Chromie;Zone Routes (Alliance)\38-41 Dustwallow Marsh: around Tabetha;Zone Routes (Alliance)\37-40 Western Plaguelands: around Daria L'Rayne
+#next Zone Routes (Alliance)\46-51 Felwood;Zone Routes (Alliance)\45-60 Tanaris;Zone Routes (Alliance)\47-50 Searing Gorge
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 89,44.88,49.95
@@ -1111,23 +1109,10 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: The Chief Surgeon << Gnome Priest
     >>|cRXP_FRIENDLY_Stormwind City|r: Favored of Elune << NightElf Priest
     >>|cRXP_FRIENDLY_Teldrassil|r: Return to Nyoma << NightElf
-step
-    +|cRXP_WARN_Suggested next zones at level 40|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 2.7 levels of quests, starting around Chromie), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 0.7 levels of quests, starting around Tabetha), |cRXP_FRIENDLY_Western Plaguelands|r (about 0.6 levels of quests, starting around Daria L'Rayne). Completing this step loads the guide for Eastern Plaguelands --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of Thousand Needles is planned from level 44.|r Load its guide for level 44 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 40 - 48 Thousand Needles
-#subweight -40
-#name 44-45 Thousand Needles
---RouteBuilder:next
-#next Zone Routes (Alliance)\42-44 Eastern Plaguelands: around Tarenar Sunstrike;Zone Routes (Alliance)\45-48 Tanaris: around Mazoga;Zone Routes (Alliance)\45-47 Badlands
-
+    +|cRXP_WARN_Until level 44, suggested zones|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 2.7 levels of quests), |cRXP_FRIENDLY_Western Plaguelands|r (about 1.1 levels of quests), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.0 levels of quests). Then come back to this Thousand Needles guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 44 >>|cRXP_WARN_The rest of Thousand Needles is planned from level 44.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 64,75.90,74.62
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fizzle Brassbolts|r
@@ -1490,23 +1475,10 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
     +|cRXP_WARN_That is all of Thousand Needles for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Tanaris|r: Tanaris is Calling << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 44|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 0.9 levels of quests, starting around Tarenar Sunstrike), |cRXP_FRIENDLY_Tanaris|r (about 0.9 levels of quests, starting around Mazoga), |cRXP_FRIENDLY_Badlands|r (about 0.8 levels of quests, starting around Dolph Blastus). Completing this step loads the guide for Eastern Plaguelands --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of Thousand Needles is planned from level 47.|r Load its guide for level 47 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 40 - 48 Thousand Needles
-#subweight -40
-#name 47-48 Thousand Needles
---RouteBuilder:next
-#next Zone Routes (Alliance)\46-48 Felwood: around Totem of Ruumbo;Zone Routes (Alliance)\45-48 Tanaris: around Mazoga;Zone Routes (Alliance)\47-49 Searing Gorge: around Jack Rockleg
-
+    +|cRXP_WARN_Until level 47, suggested zones|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 2.2 levels of quests), |cRXP_FRIENDLY_Tanaris|r (about 0.9 levels of quests), |cRXP_FRIENDLY_Badlands|r (about 0.8 levels of quests). Then come back to this Thousand Needles guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 47 >>|cRXP_WARN_The rest of Thousand Needles is planned from level 47.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 89,44.88,49.95
     >>Click the |cRXP_PICK_Hero's Call Board|r
@@ -1515,5 +1487,5 @@ step
     +|cRXP_WARN_End of the Thousand Needles route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Felwood|r: Hero's Call: Felwood! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 47|r: |cRXP_FRIENDLY_Felwood|r (about 2.4 levels of quests, starting around Totem of Ruumbo), |cRXP_FRIENDLY_Tanaris|r (about 1.0 levels of quests, starting around Mazoga), |cRXP_FRIENDLY_Searing Gorge|r (about 0.8 levels of quests, starting around Jack Rockleg). Completing this step loads the guide for Felwood --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 47|r: |cRXP_FRIENDLY_Felwood|r (about 2.4 levels of quests), |cRXP_FRIENDLY_Tanaris|r (about 1.0 levels of quests), |cRXP_FRIENDLY_Searing Gorge|r (about 0.8 levels of quests). Completing this step loads the guide for Felwood --RouteBuilder:next
 ]])

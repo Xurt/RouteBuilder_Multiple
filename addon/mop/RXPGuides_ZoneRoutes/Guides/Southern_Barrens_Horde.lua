@@ -1,9 +1,9 @@
 -- 30-35 Southern Barrens: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 30, 63).
--- Split into 3 guides, listed under "30 - 64 Southern Barrens" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 30; part 2 from 63.
 -- Edit zones/mop/Southern Barrens.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 30 - 64 Southern Barrens
-#subweight -30
-#name 30-32 Southern Barrens: around Makaba Flathoof
-#next Zone Routes (Horde)\32-35 Southern Barrens: around Warlord Bloodhilt
+#name 30-35 Southern Barrens
+--RouteBuilder:next
+#next Zone Routes (Horde)\62-70 Terokkar Forest
 
 step
     #completewith next
@@ -703,47 +702,38 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 24618 >>Accept Claim the Battle Scar
     .target Warlord Bloodhilt
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 199,41.64,69.42
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Crawgol|r
-    .turnin 24654 >>Turn in Silithissues
-    .target Crawgol
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 30 - 64 Southern Barrens
-#subweight -30
-#name 32-35 Southern Barrens: around Warlord Bloodhilt
---RouteBuilder:next
-#next Zone Routes (Horde)\35-39 Western Plaguelands: around Field Agent Kaartish;Zone Routes (Horde)\32-36 Desolace: around Cenarion Researcher Korrah;Zone Routes (Horde)\30-33 The Cape of Stranglethorn: around Captain Hecklebury Smotts
-
+    #completewith Along91
+    >>As you go: Kill |cRXP_ENEMY_Awkward Gangly Orcs|r. Loot them for |cRXP_LOOT_SI:7 Briefings|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 24634,1 --SI:7 Briefings (7)
+    .mob Awkward Gangly Orc
 step
     .goto 199,41.64,69.42
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Crawgol|r
+    .turnin 24654 >>Turn in Silithissues << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 24667 >>Accept Firestone Point
     .target Crawgol
-    .isQuestTurnedIn 24654 --any of: Silithissues
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along91
     .goto 199,42.61,70.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Calder Gray|r
     .accept 24619 >>Accept Parts-is-Parts
     .target Calder Gray
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along93
-    >>As you go: Loot the |cRXP_PICK_Mutilated Remains|r for |cRXP_LOOT_Severed Extremity|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 24619,1 --Severed Extremity (15)
+    #completewith Along92
+    >>As you go: Kill |cRXP_ENEMY_Triumph Vanguards|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 24618,1 --Triumph Vanguard slain (10)
+    .mob Triumph Vanguard
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along93
-    .goto 199,45.31,69.79
+    #completewith Along92
+    >>As you go: Kill |cRXP_ENEMY_Wildhammer Mercenaries|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 24631,1 --Wildhammer Mercenary slain (5)
+    .mob Wildhammer Mercenary
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along92
+    .goto 199,46.52,68.88
     >>Click the |cRXP_PICK_Battlescar Flagpole|r
-    .complete 24618,2 --Battlescar Flagpole
-    .isOnQuest 24618
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 199,46.54,68.87
     >>Loot the |cRXP_PICK_Mutilated Remains|r for |cRXP_LOOT_Severed Extremity|r
+    .complete 24618,2 --Battlescar Flagpole
     .complete 24619,1 --Severed Extremity (15)
 step
     .goto 199,49.09,66.88
@@ -759,6 +749,12 @@ step
     .isQuestTurnedIn 25082 --any of: Working the Bugs Out
     .xp <32,1
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along95
+    >>As you go: Kill |cRXP_ENEMY_Wildhammer Mercenaries|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 24631,1 --Wildhammer Mercenary slain (5)
+    .mob Wildhammer Mercenary
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along95
     #loop
     .goto 199,45.53,70.79,0
     .goto 199,45.53,70.79,40,0
@@ -766,8 +762,13 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Kill |cRXP_ENEMY_Triumph Vanguards|r
     .complete 24618,1 --Triumph Vanguard slain (10)
     .mob Triumph Vanguard
-    .isOnQuest 24618
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along96
+    >>As you go: Kill |cRXP_ENEMY_Awkward Gangly Orcs|r. Loot them for |cRXP_LOOT_SI:7 Briefings|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 24634,1 --SI:7 Briefings (7)
+    .mob Awkward Gangly Orc
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along96
     .goto 199,42.61,70.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Calder Gray|r
     .turnin 24619 >>Turn in Parts-is-Parts
@@ -784,37 +785,25 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Kill |cRXP_ENEMY_Awkward Gangly Orcs|r. Loot them for |cRXP_LOOT_SI:7 Briefings|r
     .complete 24634,1 --SI:7 Briefings (7)
     .mob Awkward Gangly Orc
-    .isOnQuest 24634
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 199,41.64,69.82
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warlord Bloodhilt|r
     .turnin 24634 >>Turn in Intelligence Warfare
-    .target Warlord Bloodhilt
-    .isOnQuest 24634
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 199,41.64,69.82
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warlord Bloodhilt|r
     .turnin 24618 >>Turn in Claim the Battle Scar
-    .target Warlord Bloodhilt
-    .isOnQuest 24618
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 199,41.64,69.82
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warlord Bloodhilt|r
     .accept 24637 >>Accept The Butcher of Taurajo
     .target Warlord Bloodhilt
-    .isQuestTurnedIn 24634 --any of: Intelligence Warfare
 step
     .goto 199,43.46,78.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hurlston Stonesthrow|r
     .accept 25102 >>Accept No Bull
     .target Hurlston Stonesthrow
 step
-    #completewith Along104
+    #completewith Along100
     >>As you go: Kill |cRXP_ENEMY_Landquaker Kodos|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25102,1 --Landquaker Kodo slain (4)
     .mob Landquaker Kodo
 step
-    #label Along104
+    #label Along100
     .goto 199,43.52,78.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_General Twinbraid|r
     .accept 26687 >>Accept Reinforcements From Theramore
@@ -840,45 +829,35 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 24621 >>Accept Smarts-is-Smarts
     .target Calder Gray
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along107
-    >>As you go: Kill |cRXP_ENEMY_Triumph Captain|r and loot |cRXP_LOOT_Fresh Brain|r. |cRXP_WARN_Anything left is finished later|r
-    .complete 24621,1 --Fresh Brain (1)
-    .mob Triumph Captain
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along107
     .goto 199,46.42,71.83
     >>Kill |cRXP_ENEMY_Wildhammer Mercenaries|r
-    .complete 24631,1 --Wildhammer Mercenary slain (5)
-    .mob Wildhammer Mercenary
-    .isOnQuest 24631
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 199,46.06,72.43
     >>Kill |cRXP_ENEMY_Triumph Captain|r and loot |cRXP_LOOT_Fresh Brain|r
+    .complete 24631,1 --Wildhammer Mercenary slain (5)
     .complete 24621,1 --Fresh Brain (1)
+    .mob Wildhammer Mercenary
     .mob Triumph Captain
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 199,42.61,70.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Calder Gray|r
     .turnin 24621 >>Turn in Smarts-is-Smarts
     .target Calder Gray
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 199,41.10,71.01
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tomusa|r
-    .turnin 24631 >>Turn in Flightmare
-    .target Tomusa
-    .isOnQuest 24631
 step
     .goto 199,41.10,71.01
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tomusa|r
+    .turnin 24631 >>Turn in Flightmare << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 24632 >>Accept Tauren Vengeance
     .target Tomusa
-    .isQuestTurnedIn 24631 --any of: Flightmare
 step
     .goto 199,45.09,85.31
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tauna Skychaser|r
     .turnin 24667 >>Turn in Firestone Point
+    .accept 24824 >>Accept The Disturbed Earth
     .target Tauna Skychaser
-    .isOnQuest 24667
+step
+    #completewith Along109
+    >>As you go: Kill |cRXP_ENEMY_Disturbed Earth Elementals|r. Loot them for |cRXP_LOOT_Disturbed Earth Fragment|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 24824,1 --Disturbed Earth Fragment (4)
+    .mob Disturbed Earth Elemental
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 199,45.15,85.42
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mahka|r
@@ -891,7 +870,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 24603 >>Accept Don't Stop Bereavin'
     .target Mankrik
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along115
+    #completewith Along109
     >>As you go: Kill |cRXP_ENEMY_Razormane Pathfinders|r, |cRXP_ENEMY_Razormane Warfrenzies|r, |cRXP_ENEMY_Razormane Seers|r and |cRXP_ENEMY_Razormane Mankrik Quest Credits|r. |cRXP_WARN_Anything left is finished later|r
     .complete 24603,1 --Razormane Pathfinder (8)
     .mob Razormane Pathfinder
@@ -899,17 +878,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Razormane Seer
     .mob Razormane Mankrik Quest Credit
 step
-    #label Along115
+    #label Along109
     .goto 199,45.03,85.36
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dorn Redearth|r
     .turnin 25086 >>Turn in Firestone Point
     .target Dorn Redearth
     .isOnQuest 25086
-step
-    .goto 199,45.09,85.31
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tauna Skychaser|r
-    .accept 24824 >>Accept The Disturbed Earth
-    .target Tauna Skychaser
 step
     #loop
     .goto 199,47.51,84.02,0
@@ -923,12 +897,7 @@ step
     .goto 199,49.22,82.38
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gann Stonespire|r
     .turnin 24632 >>Turn in Tauren Vengeance
-    .target Gann Stonespire
-    .isOnQuest 24632
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 199,49.22,82.38
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gann Stonespire|r
-    .accept 24684 >>Accept A Weezil in the Henhouse
+    .accept 24684 >>Accept A Weezil in the Henhouse << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Gann Stonespire
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 199,50.10,86.23
@@ -1092,13 +1061,11 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Kill |cRXP_ENEMY_General Hawthorne|r
     .complete 24637,1 --General Hawthorne slain (1)
     .mob General Hawthorne
-    .isOnQuest 24637
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 199,41.64,69.82
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warlord Bloodhilt|r
     .turnin 24637 >>Turn in The Butcher of Taurajo
     .target Warlord Bloodhilt
-    .isOnQuest 24637
 step
     #completewith next
     .zone 88 >>Travel to Thunder Bluff
@@ -1192,23 +1159,10 @@ step
     >>|cRXP_FRIENDLY_Orgrimmar|r: Seek Brother Silverhallow << Goblin Priest
     >>|cRXP_FRIENDLY_Silverpine Forest|r: Until Death Do Us Part << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_The Barrens|r: Warchief's Command: Northern Barrens!, Warchief's Command: Ashenvale! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 34|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 1.5 levels of quests, starting around Field Agent Kaartish), |cRXP_FRIENDLY_Desolace|r (about 1.3 levels of quests, starting around Cenarion Researcher Korrah), |cRXP_FRIENDLY_The Cape of Stranglethorn|r (about 1.0 levels of quests, starting around Captain Hecklebury Smotts). Completing this step loads the guide for Western Plaguelands --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Southern Barrens is planned from level 63.|r Load its guide for level 63 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 30 - 64 Southern Barrens
-#subweight -30
-#name 63-64 Southern Barrens
---RouteBuilder:next
-#next Zone Routes (Horde)\62-65 Terokkar Forest: around Earthbinder Tavgren
-
+    +|cRXP_WARN_Until level 63, suggested zones|r: |cRXP_FRIENDLY_Desolace|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Western Plaguelands|r (about 1.5 levels of quests), |cRXP_FRIENDLY_The Cape of Stranglethorn|r (about 1.0 levels of quests). Then come back to this Southern Barrens guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 63 >>|cRXP_WARN_The rest of Southern Barrens is planned from level 63.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 199,41.49,46.59
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Winnoa Pineforest|r
@@ -1252,5 +1206,5 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
     +|cRXP_WARN_End of the Southern Barrens route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 63|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.9 levels of quests, starting around Earthbinder Tavgren). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 63|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.9 levels of quests). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
 ]])

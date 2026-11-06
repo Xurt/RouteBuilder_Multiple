@@ -13,21 +13,14 @@
       "start": 40,
       "end": 43.93,
       "next": 46,
-      "guide": "42-44 Eastern Plaguelands: around Tarenar Sunstrike",
+      "guide": "40-45 Eastern Plaguelands",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Chromie",
-          "guide": "40-42 Eastern Plaguelands: around Chromie",
+          "label": "",
+          "name": "start",
+          "guide": "40-45 Eastern Plaguelands",
           "level": 40,
           "index": 0
-        },
-        {
-          "label": "RBSection1_2",
-          "name": "around Tarenar Sunstrike",
-          "guide": "42-44 Eastern Plaguelands: around Tarenar Sunstrike",
-          "level": 42,
-          "index": 1
         }
       ]
     },
@@ -36,12 +29,12 @@
       "start": 46,
       "end": 46,
       "next": 83,
-      "guide": "46-47 Eastern Plaguelands",
+      "guide": "40-45 Eastern Plaguelands",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "46-47 Eastern Plaguelands",
+          "guide": "40-45 Eastern Plaguelands",
           "level": 46,
           "index": 0
         }
@@ -51,12 +44,12 @@
       "part": 3,
       "start": 83,
       "end": 83.01,
-      "guide": "83-84 Eastern Plaguelands",
+      "guide": "40-45 Eastern Plaguelands",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "83-84 Eastern Plaguelands",
+          "guide": "40-45 Eastern Plaguelands",
           "level": 83,
           "index": 0
         }
@@ -277,7 +270,7 @@
       "req": 39,
       "xp": 2400,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -358,7 +351,7 @@
       "req": 39,
       "xp": 1260,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -376,7 +369,7 @@
       "req": 39,
       "xp": 5050,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -385,7 +378,7 @@
       "req": 39,
       "xp": 5050,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -394,7 +387,7 @@
       "req": 39,
       "xp": 5050,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -403,7 +396,7 @@
       "req": 39,
       "xp": 5050,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -412,7 +405,7 @@
       "req": 39,
       "xp": 5050,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -421,7 +414,7 @@
       "req": 39,
       "xp": 5050,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -430,7 +423,7 @@
       "req": 39,
       "xp": 2500,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -439,7 +432,7 @@
       "req": 39,
       "xp": 5290,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -448,7 +441,7 @@
       "req": 39,
       "xp": 5290,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -457,7 +450,7 @@
       "req": 39,
       "xp": 5290,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -466,7 +459,7 @@
       "req": 39,
       "xp": 1320,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -475,7 +468,7 @@
       "req": 39,
       "xp": 6900,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -484,7 +477,7 @@
       "req": 39,
       "xp": 8300,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -493,7 +486,7 @@
       "req": 39,
       "xp": 5290,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -502,7 +495,7 @@
       "req": 39,
       "xp": 5290,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -511,7 +504,7 @@
       "req": 41,
       "xp": 5290,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -520,7 +513,7 @@
       "req": 41,
       "xp": 525,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -529,7 +522,7 @@
       "req": 41,
       "xp": 5290,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -538,7 +531,7 @@
       "req": 41,
       "xp": 5290,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -547,7 +540,7 @@
       "req": 41,
       "xp": 525,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -556,7 +549,7 @@
       "req": 39,
       "xp": 6600,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -565,7 +558,7 @@
       "req": 39,
       "xp": 5540,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {

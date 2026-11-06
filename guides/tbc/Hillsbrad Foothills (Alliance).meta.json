@@ -13,12 +13,12 @@
       "start": 29,
       "end": 29.57,
       "next": 32,
-      "guide": "29-30 Hillsbrad Foothills: around Lieutenant Farren Orinelle",
+      "guide": "29-38 Hillsbrad Foothills",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Lieutenant Farren Orinelle",
-          "guide": "29-30 Hillsbrad Foothills: around Lieutenant Farren Orinelle",
+          "label": "",
+          "name": "start",
+          "guide": "29-38 Hillsbrad Foothills",
           "level": 29,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 32,
       "end": 32.06,
-      "guide": "32-33 Hillsbrad Foothills: around Bartolo Ginsetti",
+      "guide": "29-38 Hillsbrad Foothills",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Bartolo Ginsetti",
-          "guide": "32-33 Hillsbrad Foothills: around Bartolo Ginsetti",
+          "label": "",
+          "name": "part 2",
+          "guide": "29-38 Hillsbrad Foothills",
           "level": 32,
           "index": 0
         }

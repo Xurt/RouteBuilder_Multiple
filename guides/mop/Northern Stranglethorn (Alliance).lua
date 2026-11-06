@@ -1,5 +1,5 @@
 -- 25-30 Northern Stranglethorn: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- Edit zones/mop/Northern Stranglethorn.json and re-run rather than editing this file, or your changes are lost on the next build.
@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
 #group Zone Routes (Alliance)
 #name 25-30 Northern Stranglethorn
 --RouteBuilder:next
-#next Zone Routes (Alliance)\30-33 Desolace: around Cenarion Researcher Korrah;Zone Routes (Alliance)\30-33 The Cape of Stranglethorn: around Captain Hecklebury Smotts;Zone Routes (Alliance)\26-31 Arathi Highlands
+#next Zone Routes (Alliance)\30-35 Desolace;Zone Routes (Alliance)\30-35 The Cape of Stranglethorn;Zone Routes (Alliance)\26-31 Arathi Highlands
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 50,47.57,10.25
@@ -890,5 +890,5 @@ step
     +|cRXP_WARN_End of the Northern Stranglethorn route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_The Cape of Stranglethorn|r: To the Cape! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 30|r: |cRXP_FRIENDLY_Desolace|r (about 2.1 levels of quests, starting around Cenarion Researcher Korrah), |cRXP_FRIENDLY_The Cape of Stranglethorn|r (about 1.3 levels of quests, starting around Captain Hecklebury Smotts), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.9 levels of quests, starting around Skuerto). Completing this step loads the guide for Desolace --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 30|r: |cRXP_FRIENDLY_Desolace|r (about 2.1 levels of quests), |cRXP_FRIENDLY_The Cape of Stranglethorn|r (about 1.3 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.9 levels of quests). Completing this step loads the guide for Desolace --RouteBuilder:next
 ]])

@@ -13,28 +13,14 @@
       "start": 1,
       "end": 10.27,
       "next": 13,
-      "guide": "8-11 Teldrassil: around Mathrengyl Bearwalker",
+      "guide": "1-40 Teldrassil",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Conservator Ilthalaine",
-          "guide": "1-5 Teldrassil: around Conservator Ilthalaine",
+          "label": "",
+          "name": "start",
+          "guide": "1-40 Teldrassil",
           "level": 1,
           "index": 0
-        },
-        {
-          "label": "RBSection1_2",
-          "name": "around Corithras Moonrage",
-          "guide": "5-8 Teldrassil: around Corithras Moonrage",
-          "level": 5,
-          "index": 1
-        },
-        {
-          "label": "RBSection1_3",
-          "name": "around Mathrengyl Bearwalker",
-          "guide": "8-11 Teldrassil: around Mathrengyl Bearwalker",
-          "level": 8,
-          "index": 2
         }
       ]
     },
@@ -43,12 +29,12 @@
       "start": 13,
       "end": 13,
       "next": 16,
-      "guide": "13-14 Teldrassil",
+      "guide": "1-40 Teldrassil",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "13-14 Teldrassil",
+          "guide": "1-40 Teldrassil",
           "level": 13,
           "index": 0
         }
@@ -59,12 +45,12 @@
       "start": 16,
       "end": 16,
       "next": 19,
-      "guide": "16-17 Teldrassil",
+      "guide": "1-40 Teldrassil",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "16-17 Teldrassil",
+          "guide": "1-40 Teldrassil",
           "level": 16,
           "index": 0
         }
@@ -75,12 +61,12 @@
       "start": 19,
       "end": 19,
       "next": 22,
-      "guide": "19-20 Teldrassil",
+      "guide": "1-40 Teldrassil",
       "sections": [
         {
-          "label": "RBSection4_1",
+          "label": "",
           "name": "part 4",
-          "guide": "19-20 Teldrassil",
+          "guide": "1-40 Teldrassil",
           "level": 19,
           "index": 0
         }
@@ -91,12 +77,12 @@
       "start": 22,
       "end": 22,
       "next": 25,
-      "guide": "22-23 Teldrassil",
+      "guide": "1-40 Teldrassil",
       "sections": [
         {
-          "label": "RBSection5_1",
+          "label": "",
           "name": "part 5",
-          "guide": "22-23 Teldrassil",
+          "guide": "1-40 Teldrassil",
           "level": 22,
           "index": 0
         }
@@ -107,12 +93,12 @@
       "start": 25,
       "end": 25,
       "next": 28,
-      "guide": "25-26 Teldrassil",
+      "guide": "1-40 Teldrassil",
       "sections": [
         {
-          "label": "RBSection6_1",
+          "label": "",
           "name": "part 6",
-          "guide": "25-26 Teldrassil",
+          "guide": "1-40 Teldrassil",
           "level": 25,
           "index": 0
         }
@@ -123,12 +109,12 @@
       "start": 28,
       "end": 28,
       "next": 41,
-      "guide": "28-29 Teldrassil",
+      "guide": "1-40 Teldrassil",
       "sections": [
         {
-          "label": "RBSection7_1",
+          "label": "",
           "name": "part 7",
-          "guide": "28-29 Teldrassil",
+          "guide": "1-40 Teldrassil",
           "level": 28,
           "index": 0
         }
@@ -138,12 +124,12 @@
       "part": 8,
       "start": 41,
       "end": 41,
-      "guide": "41-42 Teldrassil",
+      "guide": "1-40 Teldrassil",
       "sections": [
         {
-          "label": "RBSection8_1",
+          "label": "",
           "name": "part 8",
-          "guide": "41-42 Teldrassil",
+          "guide": "1-40 Teldrassil",
           "level": 41,
           "index": 0
         }
@@ -157,7 +143,7 @@
       "req": 39,
       "xp": 8150,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "",
       "from": "Tanaris"
     },
@@ -203,7 +189,7 @@
       "req": 4,
       "xp": 270,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -212,7 +198,7 @@
       "req": 4,
       "xp": 540,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -221,7 +207,7 @@
       "req": 4,
       "xp": 780,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -230,7 +216,7 @@
       "req": 4,
       "xp": 1150,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -239,7 +225,7 @@
       "req": 5,
       "xp": 700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -248,7 +234,7 @@
       "req": 4,
       "xp": 450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -257,7 +243,7 @@
       "req": 4,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -266,7 +252,7 @@
       "req": 15,
       "xp": 1150,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "",
       "from": "Darkshore"
     },
@@ -294,7 +280,7 @@
       "req": 4,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -303,7 +289,7 @@
       "req": 4,
       "xp": 790,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -330,7 +316,7 @@
       "req": 4,
       "xp": 315,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -339,7 +325,7 @@
       "req": 6,
       "xp": 980,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -348,7 +334,7 @@
       "req": 4,
       "xp": 225,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -357,7 +343,7 @@
       "req": 4,
       "xp": 335,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -366,7 +352,7 @@
       "req": 4,
       "xp": 840,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -375,7 +361,7 @@
       "req": 4,
       "xp": 840,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -384,7 +370,7 @@
       "req": 4,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -393,7 +379,7 @@
       "req": 5,
       "xp": 780,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -402,7 +388,7 @@
       "req": 6,
       "xp": 1100,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -411,7 +397,7 @@
       "req": 6,
       "xp": 440,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -420,7 +406,7 @@
       "req": 7,
       "xp": 910,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -429,7 +415,7 @@
       "req": 6,
       "xp": 440,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -438,7 +424,7 @@
       "req": 4,
       "xp": 225,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -447,7 +433,7 @@
       "req": 25,
       "xp": 610,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "",
       "from": "Ashenvale"
     },
@@ -457,7 +443,7 @@
       "req": 25,
       "xp": 3050,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "",
       "from": "Duskwood"
     },
@@ -467,7 +453,7 @@
       "req": 18,
       "xp": 3400,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "",
       "from": "Ashenvale"
     },
@@ -477,7 +463,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "Warrior"
     },
     {
@@ -486,7 +472,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "Warrior"
     },
     {
@@ -495,7 +481,7 @@
       "req": 20,
       "xp": 1150,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf Warrior",
       "from": "Elwynn Forest"
     },
@@ -505,7 +491,7 @@
       "req": 1,
       "xp": 110,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -514,7 +500,7 @@
       "req": 10,
       "xp": 420,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "Rogue"
     },
     {
@@ -523,7 +509,7 @@
       "req": 10,
       "xp": 840,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "Rogue"
     },
     {
@@ -532,7 +518,7 @@
       "req": 4,
       "xp": 85,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -541,7 +527,7 @@
       "req": 1,
       "xp": 405,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -550,7 +536,7 @@
       "req": 6,
       "xp": 80,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -559,7 +545,7 @@
       "req": 4,
       "xp": 780,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -568,7 +554,7 @@
       "req": 8,
       "xp": 1150,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -577,7 +563,7 @@
       "req": 5,
       "xp": 85,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -586,7 +572,7 @@
       "req": 9,
       "xp": 910,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -595,7 +581,7 @@
       "req": 3,
       "xp": 700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -604,7 +590,7 @@
       "req": 3,
       "xp": 1050,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -613,7 +599,7 @@
       "req": 42,
       "xp": 600,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "",
       "from": "Feralas"
     },
@@ -623,7 +609,7 @@
       "req": 42,
       "xp": 6290,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "",
       "from": "Tanaris"
     },
@@ -633,7 +619,7 @@
       "req": 40,
       "xp": 7550,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "",
       "from": "Feralas"
     },
@@ -643,7 +629,7 @@
       "req": 42,
       "xp": 3000,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "",
       "from": "Tanaris"
     },
@@ -698,7 +684,7 @@
       "req": 15,
       "xp": 2000,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "",
       "from": "The Barrens"
     },
@@ -735,7 +721,7 @@
       "req": 40,
       "xp": 575,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "",
       "from": "Feralas"
     },
@@ -754,7 +740,7 @@
       "req": 16,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "NightElf Druid",
       "from": "Moonglade"
     },
@@ -764,7 +750,7 @@
       "req": 5,
       "xp": 270,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "NightElf Priest"
     },
     {
@@ -773,7 +759,7 @@
       "req": 5,
       "xp": 90,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "NightElf Priest"
     },
     {
@@ -782,7 +768,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf Priest",
       "from": "Elwynn Forest"
     },
@@ -792,7 +778,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf Priest",
       "from": "Dun Morogh"
     },
@@ -802,7 +788,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf Priest",
       "from": "Elwynn Forest"
     },
@@ -812,7 +798,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf Priest",
       "from": "Elwynn Forest"
     },
@@ -822,7 +808,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf Priest",
       "from": "Dun Morogh"
     },
@@ -832,7 +818,7 @@
       "req": 20,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf Priest",
       "from": "Elwynn Forest"
     },
@@ -842,7 +828,7 @@
       "req": 20,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf Priest",
       "from": "Elwynn Forest"
     },
@@ -852,7 +838,7 @@
       "req": 20,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf Priest",
       "from": "Dun Morogh"
     },
@@ -862,7 +848,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf Druid"
     },
     {
@@ -871,7 +857,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "NightElf Druid",
       "from": "Elwynn Forest"
     },
@@ -881,7 +867,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf Druid",
       "from": "Moonglade"
     },
@@ -891,7 +877,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf Hunter"
     },
     {
@@ -900,7 +886,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf Hunter"
     },
     {
@@ -909,7 +895,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "NightElf Hunter",
       "from": "Elwynn Forest"
     },
@@ -919,7 +905,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf Hunter"
     },
     {
@@ -928,7 +914,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf Hunter"
     },
     {
@@ -937,7 +923,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf Hunter"
     },
     {
@@ -946,7 +932,7 @@
       "req": 14,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Druid",
       "from": "Moonglade"
     },
@@ -956,7 +942,7 @@
       "req": 10,
       "xp": 210,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf"
     },
     {
@@ -965,7 +951,7 @@
       "req": 10,
       "xp": 1050,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf",
       "from": "Darkshore"
     },
@@ -975,7 +961,7 @@
       "req": 10,
       "xp": 210,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "NightElf"
     },
     {
@@ -984,7 +970,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "NightElf Hunter",
       "from": "Dun Morogh"
     },
@@ -994,7 +980,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "NightElf Hunter",
       "from": "Dun Morogh"
     },
@@ -1004,7 +990,7 @@
       "req": 1,
       "xp": 660,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {

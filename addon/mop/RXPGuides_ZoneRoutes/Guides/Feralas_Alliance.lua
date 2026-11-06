@@ -1,9 +1,9 @@
 -- 36-40 Feralas: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 36, 83).
--- Split into 3 guides, listed under "36 - 84 Feralas" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 36; part 2 from 83.
 -- Edit zones/mop/Feralas.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 36 - 84 Feralas
-#subweight -36
-#name 36-38 Feralas: around Telaron Windflight
-#next Zone Routes (Alliance)\38-41 Feralas: around Silvia
+#name 36-40 Feralas
+--RouteBuilder:next
+#next Zone Routes (Alliance)\82-83 Deepholm
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 69,57.24,54.98
@@ -629,25 +628,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .turnin 25409 >>Turn in Forces of Nature: Hippogryphs
     .accept 25410 >>Accept Forces of Nature: Treants
     .target Handler Tessina
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 36 - 84 Feralas
-#subweight -36
-#name 38-41 Feralas: around Silvia
---RouteBuilder:next
-#next Zone Routes (Alliance)\40-42 Eastern Plaguelands: around Chromie;Zone Routes (Alliance)\38-41 Dustwallow Marsh: around Tabetha;Zone Routes (Alliance)\37-40 Western Plaguelands: around Daria L'Rayne
-
 step
     .goto 69,56.88,54.96
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Silvia|r
     .turnin 25463 >>Turn in Report to Silvia
     .target Silvia
-    .isOnQuest 25463
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 69,57.51,56.73,0
@@ -657,7 +642,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>Interact with |cRXP_FRIENDLY_Wandering Forest Walkers|r
     .complete 25410,1 --Wandering Forest Walker (6)
     .target Wandering Forest Walker
-    .isOnQuest 25410
 step
     #completewith next
     .zone 103 >>Travel to The Exodar
@@ -716,13 +700,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Handler Tessina|r
     .turnin 25410 >>Turn in Forces of Nature: Treants
     .target Handler Tessina
-    .isOnQuest 25410
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 69,65.88,62.86
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lost Apprentice|r
     .turnin 25350 >>Turn in The Lost Apprentice
     .target Lost Apprentice
-    .isOnQuest 25350
 step
     .goto 69,65.95,62.84
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sensiria|r
@@ -771,16 +753,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 69,77.23,56.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Adella|r
     .turnin 26574 >>Turn in Adella's Covert Camp
-    .target Adella
-    .isOnQuest 26574
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 69,77.23,56.48
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Adella|r
     .accept 25432 >>Accept It's Not "Ogre" Yet
     .accept 25426 >>Accept War on the Woodpaw
     .target Adella
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along86
+    #completewith Along85
     >>As you go: Kill |cRXP_ENEMY_Woodpaw Mongrels|r, |cRXP_ENEMY_Woodpaw Trappers|r, |cRXP_ENEMY_Woodpaw Brutes|r and |cRXP_ENEMY_Woodpaw Mystics|r. Loot them for |cRXP_LOOT_Woodpaw Gnoll Mane|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25426,1 --Woodpaw Gnoll Mane (10)
     .mob Woodpaw Mongrel
@@ -788,13 +765,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Woodpaw Brute
     .mob Woodpaw Mystic
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along86
+    #label Along85
     .goto 69,76.97,56.63
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Handler Jesana|r
     .accept 25468 >>Accept Forces of Nature: Faerie Dragons
     .accept 25469 >>Accept Forces of Nature: Mountain Giants
     .target Handler Jesana
-    .isQuestTurnedIn 25410 --any of: Forces of Nature: Treants
 step
     #completewith Drop25475x12
     >>|cRXP_LOOT_OOX-22/FE Distress Beacon|r can drop from |cRXP_ENEMY_Gordunni Mauler|r, |cRXP_ENEMY_Gordunni Shaman|r, |cRXP_ENEMY_Gordunni Warlock|r. Use it to start the quest if you get one
@@ -828,7 +804,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>Interact with |cRXP_FRIENDLY_Mountain Giants|r
     .complete 25469,1 --Mountain Giant (5)
     .target Mountain Giant
-    .isOnQuest 25469
 step
     #completewith Drop25475x13
     >>|cRXP_LOOT_OOX-22/FE Distress Beacon|r can drop from |cRXP_ENEMY_Gordunni Mauler|r, |cRXP_ENEMY_Gordunni Shaman|r, |cRXP_ENEMY_Gordunni Warlock|r. Use it to start the quest if you get one
@@ -854,7 +829,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 25468,1 --Sprite Dragon (10)
     .mob Sprite Dragon
     .mob Sprite Darter
-    .isOnQuest 25468
 step
     .goto 69,74.58,42.85
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chief Spirithorn|r
@@ -890,14 +864,8 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 69,76.97,56.63
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Handler Jesana|r
     .turnin 25469 >>Turn in Forces of Nature: Mountain Giants
-    .target Handler Jesana
-    .isOnQuest 25469
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 69,76.97,56.63
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Handler Jesana|r
     .turnin 25468 >>Turn in Forces of Nature: Faerie Dragons
     .target Handler Jesana
-    .isOnQuest 25468
 step
     #completewith Drop25475x15
     >>|cRXP_LOOT_OOX-22/FE Distress Beacon|r can drop from |cRXP_ENEMY_Gordunni Mauler|r, |cRXP_ENEMY_Gordunni Shaman|r, |cRXP_ENEMY_Gordunni Warlock|r. Use it to start the quest if you get one
@@ -1137,23 +1105,10 @@ step
     >>|cRXP_FRIENDLY_Teldrassil|r: Return to Nyoma << NightElf
     >>|cRXP_FRIENDLY_The Cape of Stranglethorn|r: Rescue OOX-22/FE!
     >>|cRXP_FRIENDLY_Thousand Needles|r: Two If By Boat << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 40|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 2.7 levels of quests, starting around Chromie), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 0.7 levels of quests, starting around Tabetha), |cRXP_FRIENDLY_Western Plaguelands|r (about 0.6 levels of quests, starting around Daria L'Rayne). Completing this step loads the guide for Eastern Plaguelands --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of Feralas is planned from level 83.|r Load its guide for level 83 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 36 - 84 Feralas
-#subweight -36
-#name 83-84 Feralas
---RouteBuilder:next
-#next Zone Routes (Alliance)\82-83 Deepholm
-
+    +|cRXP_WARN_Until level 83, suggested zones|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 2.7 levels of quests), |cRXP_FRIENDLY_Western Plaguelands|r (about 1.1 levels of quests), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.0 levels of quests). Then come back to this Feralas guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 83 >>|cRXP_WARN_The rest of Feralas is planned from level 83.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 69,77.23,56.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Falfindel Waywarder|r
@@ -1173,5 +1128,5 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
     +|cRXP_WARN_End of the Feralas route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 83|r: |cRXP_FRIENDLY_Deepholm|r (about 0.8 levels of quests, starting around Maruut Stonebinder). Completing this step loads the guide for Deepholm --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 83|r: |cRXP_FRIENDLY_Deepholm|r (about 0.8 levels of quests). Completing this step loads the guide for Deepholm --RouteBuilder:next
 ]])

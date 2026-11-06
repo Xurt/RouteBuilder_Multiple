@@ -1,9 +1,9 @@
 -- 10-41 Blasted Lands: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 8 parts (from level 10, 13, 20, 23, 26, 30, 35, 38).
--- Split into 8 guides, listed under "10 - 39 Blasted Lands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 10; part 2 from 13; part 3 from 20; part 4 from 23; part 5 from 26; part 6 from 30; part 7 from 35; part 8 from 38.
 -- Edit zones/mop/Blasted Lands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,9 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 10 - 39 Blasted Lands
-#subweight -10
-#name 10-11 Blasted Lands
+#name 10-41 Blasted Lands
+--RouteBuilder:next
+#next Zone Routes (Horde)\35-40 Western Plaguelands;Zone Routes (Horde)\35-41 Dustwallow Marsh;Zone Routes (Horde)\30-35 Desolace
 
 step << Tauren
     .goto 88,45.77,55.84
@@ -163,20 +163,7 @@ step
     >>|cRXP_FRIENDLY_Mulgore|r: Return to Varg << Tauren
     >>|cRXP_FRIENDLY_The Barrens|r: Warchief's Command: Northern Barrens! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Blasted Lands is planned from level 13.|r Load its guide for level 13 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 39 Blasted Lands
-#subweight -10
-#name 13-14 Blasted Lands
---RouteBuilder:next
-#next Zone Routes (Horde)\10-15 The Barrens: around Togrik;Zone Routes (Horde)\10-14 Azshara: around Labor Captain Grabbit
-
+    .xp 13 >>|cRXP_WARN_The rest of Blasted Lands is planned from level 13.|r Come back to this guide then
 step << Tauren
     .goto 88,60.30,51.68
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baine Bloodhoof|r
@@ -193,23 +180,10 @@ step
     +|cRXP_WARN_That is all of Blasted Lands for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Orgrimmar|r: Walk With The Earth Mother << Tauren
     >>|cRXP_FRIENDLY_Silverpine Forest|r: Until Death Do Us Part << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 13|r: |cRXP_FRIENDLY_The Barrens|r (about 0.6 levels of quests, starting around Togrik), |cRXP_FRIENDLY_Azshara|r (about 0.5 levels of quests, starting around Labor Captain Grabbit). Completing this step loads the guide for The Barrens --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Blasted Lands is planned from level 20.|r Load its guide for level 20 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 39 Blasted Lands
-#subweight -10
-#name 20-21 Blasted Lands
---RouteBuilder:next
-#next Zone Routes (Horde)\20-22 Hillsbrad Foothills: around High Executor Darthalia
-
+    +|cRXP_WARN_Until level 20, suggested zones|r: |cRXP_FRIENDLY_The Barrens|r (about 0.6 levels of quests), |cRXP_FRIENDLY_Azshara|r (about 0.5 levels of quests). Then come back to this Blasted Lands guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 20 >>|cRXP_WARN_The rest of Blasted Lands is planned from level 20.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 88,42.22,57.77
     >>Click the |cRXP_PICK_Warchief's Command Board|r
@@ -242,23 +216,10 @@ step
     >>|cRXP_FRIENDLY_The Barrens|r: Warchief's Command: Ashenvale! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Undercity|r: Envoy to the Horde << BloodElf
     >>|cRXP_FRIENDLY_Undercity|r: Envoy to the Horde << Orc/Undead/Tauren/Troll/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 20|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 1.2 levels of quests, starting around High Executor Darthalia). Completing this step loads the guide for Hillsbrad Foothills --RouteBuilder:next
 step << Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage/Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter/Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue/Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman/Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior/Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock/Tauren Druid/Troll Druid/BloodElf Paladin/Tauren Paladin/Tauren Priest/Troll Priest/Undead Priest/BloodElf Priest/Goblin Priest
-    +|cRXP_WARN_The rest of Blasted Lands is planned from level 23.|r Load its guide for level 23 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage/Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter/Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue/Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman/Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior/Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock/Tauren Druid/Troll Druid/BloodElf Paladin/Tauren Paladin/Tauren Priest/Troll Priest/Undead Priest/BloodElf Priest/Goblin Priest
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 39 Blasted Lands
-#subweight -10
-#name 23-24 Blasted Lands
---RouteBuilder:next
-#next Zone Routes (Horde)\22-27 Hillsbrad Foothills: around Serge Hinott
-
+    +|cRXP_WARN_Until level 23, suggested zones|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 1.2 levels of quests). Then come back to this Blasted Lands guide --RouteBuilder:next
+step << Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage/Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter/Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue/Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman/Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior/Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock/Tauren Druid/Troll Druid/BloodElf Paladin/Tauren Paladin/Tauren Priest/Troll Priest/Undead Priest/BloodElf Priest/Goblin Priest
+    .xp 23 >>|cRXP_WARN_The rest of Blasted Lands is planned from level 23.|r Come back to this guide then
 step << Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior
     .goto 88,56.99,89.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sark Ragetotem|r
@@ -349,23 +310,10 @@ step
     >>|cRXP_FRIENDLY_Orgrimmar|r: Dark Cleric Cecille << Undead Priest
     >>|cRXP_FRIENDLY_Orgrimmar|r: Journey to Orgrimmar << BloodElf Priest
     >>|cRXP_FRIENDLY_Orgrimmar|r: Seek Brother Silverhallow << Goblin Priest
-step
-    +|cRXP_WARN_Suggested next zones at level 23|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.9 levels of quests, starting around Serge Hinott). Completing this step loads the guide for Hillsbrad Foothills --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Blasted Lands is planned from level 26.|r Load its guide for level 26 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 39 Blasted Lands
-#subweight -10
-#name 26-27 Blasted Lands
---RouteBuilder:next
-#next Zone Routes (Horde)\25-30 Northern Stranglethorn;Zone Routes (Horde)\26-31 Arathi Highlands;Zone Routes (Horde)\22-27 Hillsbrad Foothills: around Serge Hinott
-
+    +|cRXP_WARN_Until level 26, suggested zones|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 1.0 levels of quests). Then come back to this Blasted Lands guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 26 >>|cRXP_WARN_The rest of Blasted Lands is planned from level 26.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 88,42.22,57.77
     >>Click the |cRXP_PICK_Warchief's Command Board|r
@@ -384,23 +332,10 @@ step
     >>|cRXP_FRIENDLY_Arathi Highlands|r: Warchief's Command: Arathi Highlands! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Ashenvale|r: Warchief's Command: Stonetalon Mountains! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Northern Stranglethorn|r: Warchief's Command: Northern Stranglethorn Vale! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 26|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.3 levels of quests, starting around Hemet Nesingwary Jr.), |cRXP_FRIENDLY_Arathi Highlands|r (about 1.1 levels of quests, starting around Galen Trollbane), |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.7 levels of quests, starting around Serge Hinott). Completing this step loads the guide for Northern Stranglethorn --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Blasted Lands is planned from level 30.|r Load its guide for level 30 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 39 Blasted Lands
-#subweight -10
-#name 30-31 Blasted Lands
---RouteBuilder:next
-#next Zone Routes (Horde)\30-32 Desolace: around Sorrem;Zone Routes (Horde)\30-33 The Cape of Stranglethorn: around Captain Hecklebury Smotts;Zone Routes (Horde)\25-30 Northern Stranglethorn
-
+    +|cRXP_WARN_Until level 30, suggested zones|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.3 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 1.1 levels of quests), |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.8 levels of quests). Then come back to this Blasted Lands guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 30 >>|cRXP_WARN_The rest of Blasted Lands is planned from level 30.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 88,42.22,57.77
     >>Click the |cRXP_PICK_Warchief's Command Board|r
@@ -421,23 +356,10 @@ step
     >>|cRXP_FRIENDLY_Southern Barrens|r: Warchief's Command: Southern Barrens! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_The Cape of Stranglethorn|r: Warchief's Command: The Cape of Stranglethorn! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_The Hinterlands|r: Warchief's Command: The Hinterlands! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 30|r: |cRXP_FRIENDLY_Desolace|r (about 2.1 levels of quests, starting around Sorrem), |cRXP_FRIENDLY_The Cape of Stranglethorn|r (about 1.3 levels of quests, starting around Captain Hecklebury Smotts), |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.0 levels of quests, starting around Hemet Nesingwary Jr.). Completing this step loads the guide for Desolace --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Blasted Lands is planned from level 35.|r Load its guide for level 35 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 39 Blasted Lands
-#subweight -10
-#name 35-36 Blasted Lands
---RouteBuilder:next
-#next Zone Routes (Horde)\35-39 Western Plaguelands: around Field Agent Kaartish;Zone Routes (Horde)\35-37 Dustwallow Marsh: around "Swamp Eye" Jarl;Zone Routes (Horde)\32-36 Desolace: around Cenarion Researcher Korrah
-
+    +|cRXP_WARN_Until level 35, suggested zones|r: |cRXP_FRIENDLY_Desolace|r (about 2.1 levels of quests), |cRXP_FRIENDLY_The Cape of Stranglethorn|r (about 1.3 levels of quests), |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.0 levels of quests). Then come back to this Blasted Lands guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 35 >>|cRXP_WARN_The rest of Blasted Lands is planned from level 35.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 88,42.22,57.77
     >>Click the |cRXP_PICK_Warchief's Command Board|r
@@ -463,23 +385,10 @@ step
     >>|cRXP_FRIENDLY_Dustwallow Marsh|r: Warchief's Command: Dustwallow Marsh!, Return to Krog << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Feralas|r: Warchief's Command: Feralas! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Western Plaguelands|r: Warchief's Command: Western Plaguelands! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 35|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 1.7 levels of quests, starting around Field Agent Kaartish), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.6 levels of quests, starting around "Swamp Eye" Jarl), |cRXP_FRIENDLY_Desolace|r (about 1.2 levels of quests, starting around Cenarion Researcher Korrah). Completing this step loads the guide for Western Plaguelands --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Blasted Lands is planned from level 38.|r Load its guide for level 38 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 39 Blasted Lands
-#subweight -10
-#name 38-39 Blasted Lands
---RouteBuilder:next
-#next Zone Routes (Horde)\35-39 Western Plaguelands: around Field Agent Kaartish;Zone Routes (Horde)\37-40 Dustwallow Marsh: around Tabetha;Zone Routes (Horde)\32-36 Desolace: around Cenarion Researcher Korrah
-
+    +|cRXP_WARN_Until level 38, suggested zones|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 1.7 levels of quests), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Desolace|r (about 1.5 levels of quests). Then come back to this Blasted Lands guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 38 >>|cRXP_WARN_The rest of Blasted Lands is planned from level 38.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 88,61.54,80.92
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Melor Stonehoof|r
@@ -495,5 +404,5 @@ step
     +|cRXP_WARN_End of the Blasted Lands route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Dustwallow Marsh and back here|r: Deadmire << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 38|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 1.5 levels of quests, starting around Field Agent Kaartish), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.0 levels of quests, starting around Tabetha), |cRXP_FRIENDLY_Desolace|r (about 0.9 levels of quests, starting around Cenarion Researcher Korrah). Completing this step loads the guide for Western Plaguelands --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 38|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 1.5 levels of quests), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.4 levels of quests), |cRXP_FRIENDLY_Desolace|r (about 1.0 levels of quests). Completing this step loads the guide for Western Plaguelands --RouteBuilder:next
 ]])

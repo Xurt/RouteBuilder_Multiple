@@ -1,7 +1,7 @@
 Hellfire Peninsula - Alliance - part 1 of 3, planned from level 58
 Guide "58-63 Hellfire Peninsula" in group "Zone Routes (Alliance)": this part has 143 steps, 130 stops
 Written to guides/tbc/Hellfire Peninsula (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1110 objective notes read from 57 guide files
@@ -93,7 +93,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Hellfire Peninsula - Alliance - part 2 of 3, planned from level 63
 Guide "58-63 Hellfire Peninsula" in group "Zone Routes (Alliance)": this part has 42 steps, 37 stops
 Written to guides/tbc/Hellfire Peninsula (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1110 objective notes read from 57 guide files
@@ -157,7 +157,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Hellfire Peninsula - Alliance - part 3 of 3, planned from level 67
 Guide "58-63 Hellfire Peninsula" in group "Zone Routes (Alliance)": this part has 23 steps, 22 stops
 Written to guides/tbc/Hellfire Peninsula (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1110 objective notes read from 57 guide files

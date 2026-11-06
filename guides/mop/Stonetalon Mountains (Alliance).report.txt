@@ -1,7 +1,7 @@
 Stonetalon Mountains - Alliance - part 1 of 3, planned from level 26
 Guide "26-30 Stonetalon Mountains" in group "Zone Routes (Alliance)": this part has 183 steps, 170 stops
 Written to guides/mop/Stonetalon Mountains (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -175,7 +175,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Stonetalon Mountains - Alliance - part 2 of 3, planned from level 29
 Guide "26-30 Stonetalon Mountains" in group "Zone Routes (Alliance)": this part has 31 steps, 29 stops
 Written to guides/mop/Stonetalon Mountains (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -236,7 +236,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Stonetalon Mountains - Alliance - part 3 of 3, planned from level 32
 Guide "26-30 Stonetalon Mountains" in group "Zone Routes (Alliance)": this part has 2 steps, 1 stops
 Written to guides/mop/Stonetalon Mountains (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files

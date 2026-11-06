@@ -1,9 +1,9 @@
 -- 61-65 Zangarmarsh: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 61, 64).
--- Split into 2 guides, listed under "61 - 65 Zangarmarsh" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 61; part 2 from 64.
 -- Edit zones/tbc/Zangarmarsh.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 61 - 65 Zangarmarsh
-#subweight -61
-#name 61-62 Zangarmarsh: around Ysiel Windsinger
+#name 61-65 Zangarmarsh
 --RouteBuilder:next
-#next Zone Routes (Horde)\60-62 Hellfire Peninsula: around Nazgrel;Zone Routes (Horde)\62-64 Terokkar Forest: around Tooki
+#next Zone Routes (Horde)\62-70 Terokkar Forest;Zone Routes (Horde)\60-63 Hellfire Peninsula
 
 step
     .goto 1946,80.40,64.16
@@ -665,22 +663,9 @@ step
     +|cRXP_WARN_That is all of Zangarmarsh for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Hellfire Peninsula|r: Warning the Cenarion Circle
 step
-    +|cRXP_WARN_Suggested next zones at level 61|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.9 levels of quests, starting around Nazgrel; 1 quest from here hands in there), |cRXP_FRIENDLY_Terokkar Forest|r (about 0.6 levels of quests, starting around Tooki; 2 quests from here hand in there). Completing this step loads the guide for Hellfire Peninsula --RouteBuilder:next
+    +|cRXP_WARN_Until level 64, suggested zones|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.9 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Terokkar Forest|r (about 0.6 levels of quests; 2 quests from here hand in there). Then come back to this Zangarmarsh guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Zangarmarsh is planned from level 64.|r Load its guide for level 64 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 61 - 65 Zangarmarsh
-#subweight -61
-#name 64-65 Zangarmarsh: around Shadow Hunter Denjai
---RouteBuilder:next
-#next Zone Routes (Horde)\62-64 Terokkar Forest: around Tooki;Zone Routes (Horde)\60-62 Hellfire Peninsula: around Nazgrel
-
+    .xp 64 >>|cRXP_WARN_The rest of Zangarmarsh is planned from level 64.|r Come back to this guide then
 step
     .goto 1946,33.01,49.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Horde Field Scout|r
@@ -1028,5 +1013,5 @@ step
     >>|cRXP_FRIENDLY_Nagrand|r: Reinforcements for Garadar
     >>|cRXP_FRIENDLY_Terokkar Forest|r: News from Zangarmarsh
 step
-    +|cRXP_WARN_Suggested next zones at level 64|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.8 levels of quests, starting around Tooki; 2 quests from here hand in there), |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.7 levels of quests, starting around Nazgrel; 1 quest from here hands in there). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 64|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.8 levels of quests; 2 quests from here hand in there), |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.7 levels of quests; 1 quest from here hands in there). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
 ]])

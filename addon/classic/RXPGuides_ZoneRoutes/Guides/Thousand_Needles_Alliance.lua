@@ -1,9 +1,9 @@
 -- 30-37 Thousand Needles: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 30, 33).
--- Split into 2 guides, listed under "30 - 34 Thousand Needles" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 30; part 2 from 33.
 -- Edit zones/classic/Thousand Needles.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 30 - 34 Thousand Needles
-#subweight -30
-#name 30-31 Thousand Needles: around Kravel Koalbeard
+#name 30-37 Thousand Needles
 
 step
     .goto 1441/1,-3856.09,-6233.25
@@ -288,18 +286,7 @@ step
     >>|cRXP_FRIENDLY_The Barrens|r: Wharfmaster Dizzywig, Goblin Sponsorship
     >>|cRXP_FRIENDLY_Stranglethorn Vale and back here|r: Encrusted Tail Fins
 step
-    +|cRXP_WARN_The rest of Thousand Needles is planned from level 33.|r Load its guide for level 33 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 30 - 34 Thousand Needles
-#subweight -30
-#name 33-34 Thousand Needles
-
+    .xp 33 >>|cRXP_WARN_The rest of Thousand Needles is planned from level 33.|r Come back to this guide then
 step
     .goto 1441/1,-4025.05,-6253.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Trackmaster Zherin|r

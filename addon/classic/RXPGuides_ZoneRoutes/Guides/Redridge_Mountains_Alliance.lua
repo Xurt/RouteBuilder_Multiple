@@ -1,9 +1,9 @@
 -- 14-26 Redridge Mountains: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 5 parts (from level 14, 17, 20, 23, 26).
--- Split into 5 guides, listed under "14 - 27 Redridge Mountains" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 14; part 2 from 17; part 3 from 20; part 4 from 23; part 5 from 26.
 -- Edit zones/classic/Redridge Mountains.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 14 - 27 Redridge Mountains
-#subweight -14
-#name 14-15 Redridge Mountains: around Magistrate Solomon
---RouteBuilder:next
-#next Zone Routes (Alliance)\10-15 Darkshore: around Terenthis;Zone Routes (Alliance)\10-13 Westfall: around Farmer Saldean;Zone Routes (Alliance)\10-12 Loch Modan: around Mountaineer Kadrell
+#name 14-26 Redridge Mountains
 
 step
     .goto 1433/0,-2268.54,-9279.27
@@ -276,22 +272,9 @@ step
     >>|cRXP_FRIENDLY_Westfall|r: Messenger to Westfall, The Defias Brotherhood
     >>|cRXP_FRIENDLY_Westfall, Stormwind City, Duskwood, Elwynn Forest and back here|r: Dry Times
 step
-    +|cRXP_WARN_Suggested next zones at level 14|r: |cRXP_FRIENDLY_Darkshore|r (about 1.9 levels of quests, starting around Terenthis), |cRXP_FRIENDLY_Westfall|r (about 1.0 levels of quests, starting around Farmer Saldean; 2 quests from here hand in there), |cRXP_FRIENDLY_Loch Modan|r (about 0.6 levels of quests, starting around Mountaineer Kadrell). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 17, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 1.9 levels of quests), |cRXP_FRIENDLY_Teldrassil|r (about 1.1 levels of quests), |cRXP_FRIENDLY_Westfall|r (about 1.0 levels of quests; 2 quests from here hand in there). Then come back to this Redridge Mountains guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Redridge Mountains is planned from level 17.|r Load its guide for level 17 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 14 - 27 Redridge Mountains
-#subweight -14
-#name 17-18 Redridge Mountains: around Foreman Oslow
---RouteBuilder:next
-#next Zone Routes (Alliance)\17-19 Darkshore: around Terenthis
-
+    .xp 17 >>|cRXP_WARN_The rest of Redridge Mountains is planned from level 17.|r Come back to this guide then
 step
     .goto 1433/0,-2145.67,-9211.50
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Barkeep Daniels|r
@@ -481,22 +464,9 @@ step << Hunter
     .fp Redridge Mountains >> Get the Redridge Mountains flight path
     .target Ariena Stormfeather
 step
-    +|cRXP_WARN_Suggested next zones at level 17|r: |cRXP_FRIENDLY_Darkshore|r (about 0.7 levels of quests, starting around Terenthis). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 20, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 0.7 levels of quests). Then come back to this Redridge Mountains guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Redridge Mountains is planned from level 20.|r Load its guide for level 20 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 14 - 27 Redridge Mountains
-#subweight -14
-#name 20-21 Redridge Mountains: around Marshal Marris
---RouteBuilder:next
-#next Zone Routes (Alliance)\20-22 Duskwood: around Elaine Carevin;Zone Routes (Alliance)\17-19 Darkshore: around Terenthis
-
+    .xp 20 >>|cRXP_WARN_The rest of Redridge Mountains is planned from level 20.|r Come back to this guide then
 step
     .goto 1433/0,-2221.87,-9218.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magistrate Solomon|r
@@ -646,22 +616,9 @@ step
     >>|cRXP_FRIENDLY_Elwynn Forest|r: Rethban Ore
     >>|cRXP_FRIENDLY_Stormwind City|r: The Shieldsmith << Warrior
 step
-    +|cRXP_WARN_Suggested next zones at level 20|r: |cRXP_FRIENDLY_Duskwood|r (about 0.8 levels of quests, starting around Elaine Carevin; 1 quest from here hands in there), |cRXP_FRIENDLY_Darkshore|r (about 0.6 levels of quests, starting around Terenthis). Completing this step loads the guide for Duskwood --RouteBuilder:next
+    +|cRXP_WARN_Until level 23, suggested zones|r: |cRXP_FRIENDLY_Duskwood|r (about 0.8 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Darkshore|r (about 0.6 levels of quests). Then come back to this Redridge Mountains guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Redridge Mountains is planned from level 23.|r Load its guide for level 23 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 14 - 27 Redridge Mountains
-#subweight -14
-#name 23-24 Redridge Mountains
---RouteBuilder:next
-#next Zone Routes (Alliance)\20-22 Duskwood: around Elaine Carevin
-
+    .xp 23 >>|cRXP_WARN_The rest of Redridge Mountains is planned from level 23.|r Come back to this guide then
 step
     .goto 1433/0,-2045.38,-9245.82
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Martie Jainrose|r
@@ -791,20 +748,9 @@ step
     +|cRXP_WARN_That is all of Redridge Mountains for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Elwynn Forest|r: Theocritus' Retrieval
 step
-    +|cRXP_WARN_Suggested next zones at level 23|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests, starting around Elaine Carevin; 1 quest from here hands in there). Completing this step loads the guide for Duskwood --RouteBuilder:next
+    +|cRXP_WARN_Until level 26, suggested zones|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests; 1 quest from here hands in there). Then come back to this Redridge Mountains guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Redridge Mountains is planned from level 26.|r Load its guide for level 26 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 14 - 27 Redridge Mountains
-#subweight -14
-#name 26-27 Redridge Mountains
-
+    .xp 26 >>|cRXP_WARN_The rest of Redridge Mountains is planned from level 26.|r Come back to this guide then
 step
     .goto 1433/0,-2213.83,-9243.36
     >>Click the |cRXP_PICK_Wanted: Gath'Ilzogg|r

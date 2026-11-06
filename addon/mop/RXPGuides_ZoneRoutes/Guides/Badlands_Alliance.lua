@@ -1,5 +1,5 @@
 -- 45-47 Badlands: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- Edit zones/mop/Badlands.json and re-run rather than editing this file, or your changes are lost on the next build.
@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
 #group Zone Routes (Alliance)
 #name 45-47 Badlands
 --RouteBuilder:next
-#next Zone Routes (Alliance)\46-48 Felwood: around Totem of Ruumbo;Zone Routes (Alliance)\45-48 Tanaris: around Mazoga;Zone Routes (Alliance)\47-49 Searing Gorge: around Jack Rockleg
+#next Zone Routes (Alliance)\46-51 Felwood;Zone Routes (Alliance)\45-60 Tanaris;Zone Routes (Alliance)\47-50 Searing Gorge
 
 step
     .goto 15,92.64,38.97
@@ -666,5 +666,5 @@ step
     +|cRXP_WARN_End of the Badlands route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Searing Gorge|r: To the Aid of the Thorium Brotherhood
 step
-    +|cRXP_WARN_Suggested next zones at level 47|r: |cRXP_FRIENDLY_Felwood|r (about 2.4 levels of quests, starting around Totem of Ruumbo), |cRXP_FRIENDLY_Tanaris|r (about 1.0 levels of quests, starting around Mazoga), |cRXP_FRIENDLY_Searing Gorge|r (about 0.8 levels of quests, starting around Jack Rockleg; 1 quest from here hands in there). Completing this step loads the guide for Felwood --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 47|r: |cRXP_FRIENDLY_Felwood|r (about 2.4 levels of quests), |cRXP_FRIENDLY_Tanaris|r (about 1.0 levels of quests), |cRXP_FRIENDLY_Searing Gorge|r (about 0.8 levels of quests; 1 quest from here hands in there). Completing this step loads the guide for Felwood --RouteBuilder:next
 ]])

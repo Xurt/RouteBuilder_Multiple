@@ -1,7 +1,7 @@
 Westfall - Alliance - part 1 of 4, planned from level 10
 Guide "10-44 Westfall" in group "Zone Routes (Alliance)": this part has 56 steps, 42 stops
 Written to guides/tbc/Westfall (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -88,7 +88,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Westfall - Alliance - part 2 of 4, planned from level 15
 Guide "10-44 Westfall" in group "Zone Routes (Alliance)": this part has 22 steps, 20 stops
 Written to guides/tbc/Westfall (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -153,7 +153,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Westfall - Alliance - part 3 of 4, planned from level 18
 Guide "10-44 Westfall" in group "Zone Routes (Alliance)": this part has 7 steps, 6 stops
 Written to guides/tbc/Westfall (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -202,7 +202,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Westfall - Alliance - part 4 of 4, planned from level 41
 Guide "10-44 Westfall" in group "Zone Routes (Alliance)": this part has 19 steps, 18 stops
 Written to guides/tbc/Westfall (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

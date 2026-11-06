@@ -1,7 +1,7 @@
 Western Plaguelands - Alliance - part 1 of 3, planned from level 52
 Guide "52-60 Western Plaguelands" in group "Zone Routes (Alliance)": this part has 54 steps, 49 stops
 Written to guides/tbc/Western Plaguelands (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -129,7 +129,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Western Plaguelands - Alliance - part 2 of 3, planned from level 55
 Guide "52-60 Western Plaguelands" in group "Zone Routes (Alliance)": this part has 71 steps, 65 stops
 Written to guides/tbc/Western Plaguelands (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -199,7 +199,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Western Plaguelands - Alliance - part 3 of 3, planned from level 59
 Guide "52-60 Western Plaguelands" in group "Zone Routes (Alliance)": this part has 28 steps, 27 stops
 Written to guides/tbc/Western Plaguelands (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

@@ -1,8 +1,7 @@
 -- 30-35 Desolace: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
--- Split into 2 guides, listed under "30 - 36 Desolace" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
 -- Edit zones/mop/Desolace.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -12,10 +11,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 30 - 36 Desolace
-#subweight -30
-#name 30-33 Desolace: around Cenarion Researcher Korrah
-#next Zone Routes (Alliance)\33-36 Desolace: around Karnum Marshweaver
+#name 30-35 Desolace
+--RouteBuilder:next
+#next Zone Routes (Alliance)\35-40 Western Plaguelands;Zone Routes (Alliance)\36-40 Dustwallow Marsh;Zone Routes (Alliance)\36-40 Feralas
 
 step
     .goto 66,54.77,8.76
@@ -499,19 +497,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bibbly F'utzbuckle|r
     .accept 5501 >>Accept Bone Collector
     .target Bibbly F'utzbuckle
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 30 - 36 Desolace
-#subweight -30
-#name 33-36 Desolace: around Karnum Marshweaver
---RouteBuilder:next
-#next Zone Routes (Alliance)\35-37 Western Plaguelands: around Field Agent Kaartish;Zone Routes (Alliance)\36-38 Dustwallow Marsh: around "Swamp Eye" Jarl;Zone Routes (Alliance)\36-38 Feralas: around Telaron Windflight
-
 step
     .goto 66,58.78,46.41
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thressa Amberglen|r
@@ -526,11 +511,6 @@ step
     .goto 66,57.47,47.72
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Karnum Marshweaver|r
     .turnin 14302 >>Turn in Official Assessment
-    .target Karnum Marshweaver
-    .isOnQuest 14302
-step
-    .goto 66,57.47,47.72
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Karnum Marshweaver|r
     .accept 14307 >>Accept Stubborn Winds
     .target Karnum Marshweaver
 step
@@ -540,11 +520,11 @@ step
     .accept 14306 >>Accept Pulling Weeds
     .target Botanist Ferrah
 step
-    #completewith Along77
+    #completewith Along76
     >>As you go: Pick up |cRXP_PICK_Aloe Thistle|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 14305,1 --Aloe Thistle (10)
 step
-    #label Along77
+    #label Along76
     #loop
     .goto 66,59.52,57.06,0
     .goto 66,59.52,57.06,40,0
@@ -554,21 +534,16 @@ step
     .mob Uprooted Lasher
 step
     #loop
-    .goto 66,62.85,55.28,0
-    .goto 66,62.85,55.28,40,0
+    .goto 66,64.16,57.16,0
     .goto 66,64.16,57.16,40,0
-    .goto 66,55.15,63.09,40,0
-    .goto 66,54.42,60.14,40,0
-    >>Pick up |cRXP_PICK_Aloe Thistle|r from the ground
-    .complete 14305,1 --Aloe Thistle (10)
-step
-    #loop
-    .goto 66,54.20,58.94,0
-    .goto 66,54.20,58.94,40,0
+    .goto 66,53.89,58.12,40,0
     .goto 66,50.79,58.70,40,0
+    .goto 66,54.41,60.41,40,0
+    .goto 66,54.38,62.78,40,0
+    >>Pick up |cRXP_PICK_Aloe Thistle|r from the ground
     >>Loot the |cRXP_PICK_Kodo Bones|r for |cRXP_LOOT_Kodo Bone|r
+    .complete 14305,1 --Aloe Thistle (10)
     .complete 5501,1 --Kodo Bone (10)
-    .isOnQuest 5501
 step
     .goto 66,55.41,55.81
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nataka Longhorn|r
@@ -581,12 +556,12 @@ step
     .target Takata Steelblade
     .isOnQuest 1432
 step
-    #completewith Along82
+    #completewith Along80
     >>As you go: Kill |cRXP_ENEMY_Blood-filled Leeches|r. Loot them for |cRXP_LOOT_Blood-Filled Leech|r. |cRXP_WARN_Anything left is finished later|r
     .complete 14304,1 --Blood-Filled Leech (10)
     .mob Blood-filled Leech
 step
-    #label Along82
+    #label Along80
     #loop
     .goto 66,46.32,51.08,0
     .goto 66,46.32,51.08,40,0
@@ -676,7 +651,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bibbly F'utzbuckle|r
     .turnin 5501 >>Turn in Bone Collector
     .target Bibbly F'utzbuckle
-    .isOnQuest 5501
 step
     .goto 66,70.39,49.28
     >>Pick up |cRXP_PICK_Cenarion Supply Crate|r from the ground
@@ -1180,5 +1154,5 @@ step
 step
     +|cRXP_WARN_End of the Desolace route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 35|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 1.7 levels of quests, starting around Field Agent Kaartish), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.6 levels of quests, starting around "Swamp Eye" Jarl), |cRXP_FRIENDLY_Feralas|r (about 0.7 levels of quests, starting around Telaron Windflight). Completing this step loads the guide for Western Plaguelands --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 35|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 1.7 levels of quests), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Feralas|r (about 0.7 levels of quests). Completing this step loads the guide for Western Plaguelands --RouteBuilder:next
 ]])

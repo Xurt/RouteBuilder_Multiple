@@ -1,9 +1,9 @@
 -- 35-41 Dustwallow Marsh: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 35, 41).
--- Split into 3 guides, listed under "35 - 42 Dustwallow Marsh" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 35; part 2 from 41.
 -- Edit zones/tbc/Dustwallow Marsh.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 35 - 42 Dustwallow Marsh
-#subweight -35
-#name 35-37 Dustwallow Marsh: around Captain Garran Vimes
-#next Zone Routes (Alliance)\37-39 Dustwallow Marsh: around "Swamp Eye" Jarl
+#name 35-41 Dustwallow Marsh
+--RouteBuilder:next
+#next Zone Routes (Alliance)\30-50 Stranglethorn Vale
 
 step
     .goto 1445/1,-4457.85,-3624.78
@@ -797,49 +796,23 @@ step
     .turnin 1258 >>Turn in ... and Bugs
     .target Morgan Stern
     .isQuestComplete 1258
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 35 - 42 Dustwallow Marsh
-#subweight -35
-#name 37-39 Dustwallow Marsh: around "Swamp Eye" Jarl
---RouteBuilder:next
-#next Zone Routes (Alliance)\38-40 Stranglethorn Vale: around Fleet Master Seahorn;Zone Routes (Alliance)\38-39 Arathi Highlands: around Skuerto
-
 step
     .goto 1445/1,-3885.60,-2952.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_"Swamp Eye" Jarl|r
     .turnin 1206 >>Turn in Jarl Needs Eyes
-    .target "Swamp Eye" Jarl
-    .isOnQuest 1206
-step
-    .goto 1445/1,-3885.60,-2952.78
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_"Swamp Eye" Jarl|r
     .accept 1203 >>Accept Jarl Needs a Blade
     .target "Swamp Eye" Jarl
-    .isQuestTurnedIn 1206 --any of: Jarl Needs Eyes
 step
     .goto 1445/1,-3892.95,-2948.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mordant Grimsby|r
     .turnin 11181 >>Turn in The Witch's Bane
-    .target Mordant Grimsby
-    .isOnQuest 11181
-step
-    .goto 1445/1,-3892.95,-2948.23
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mordant Grimsby|r
     .accept 11183 >>Accept Cleansing Witch Hill
     .target Mordant Grimsby
-    .isQuestTurnedIn 11181 --any of: The Witch's Bane
 step
     .goto 1445/1,-3871.95,-2967.48
     >>Kill |cRXP_ENEMY_Zelfrax|r
     .complete 11183,1 --Witch Hill Cleansed (1)
     .mob Zelfrax
-    .isOnQuest 11183
 step
     .goto 1445/1,-3892.95,-2948.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mordant Grimsby|r
@@ -851,37 +824,27 @@ step
     >>Kill |cRXP_ENEMY_Razorspine|r and loot |cRXP_LOOT_Razorspine's Sword|r
     .complete 1203,1 --Razorspine's Sword (1)
     .mob Razorspine
-    .isOnQuest 1203
 step
     .goto 1445/1,-3885.60,-2952.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_"Swamp Eye" Jarl|r
     .turnin 1203 >>Turn in Jarl Needs a Blade
     .target "Swamp Eye" Jarl
-    .isOnQuest 1203
 step
     .goto 1445/1,-3892.95,-2948.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mordant Grimsby|r
     .turnin 11183 >>Turn in Cleansing Witch Hill
     .target Mordant Grimsby
-    .isOnQuest 11183
 step
     .goto 1445/1,-3424.65,-2840.08
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Lukas|r
     .turnin 11145 >>Turn in Prisoners of the Grimtotems
-    .target Sergeant Lukas
-    .isOnQuest 11145
-step
-    .goto 1445/1,-3424.65,-2840.08
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Lukas|r
     .turnin 11147 >>Turn in Unleash the Raptors
     .target Sergeant Lukas
-    .isOnQuest 11147
 step
     .goto 1445/1,-3422.55,-2894.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Darill|r
     .turnin 11148 >>Turn in Arms of the Grimtotems
     .target Captain Darill
-    .isOnQuest 11148
 step
     .goto 1445/1,-3422.55,-2894.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Darill|r
@@ -895,7 +858,6 @@ step
     .target Captain Darill
     .isQuestTurnedIn 11144 --Confirming the Suspicion
     .xp <35,1
-    .isQuestTurnedIn 11148 --Arms of the Grimtotems
 step
     #completewith next
     .hs >>Hearth to Uma Bartulm's inn. |cRXP_WARN_Walk instead if you are already nearby|r
@@ -904,32 +866,19 @@ step
     .goto 1445/1,-4454.17,-3749.73
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Jaina Proudmoore|r
     .turnin 11141 >>Turn in Jaina Must Know
-    .target Lady Jaina Proudmoore
-    .isOnQuest 11141
-step
-    .goto 1445/1,-4454.17,-3749.73
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Jaina Proudmoore|r
     .accept 11142 >>Accept Survey Alcaz Island
     .target Lady Jaina Proudmoore
-    .isQuestTurnedIn 11141 --any of: Jaina Must Know
 step
     .goto 1445/1,-4509.82,-3823.58
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cassa Crimsonwing|r
     .complete 11142,1 --Cassa Crimsonwing
     .target Cassa Crimsonwing
-    .isOnQuest 11142
 step
     .goto 1445/1,-4454.17,-3749.73
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Jaina Proudmoore|r
     .turnin 11142 >>Turn in Survey Alcaz Island
-    .target Lady Jaina Proudmoore
-    .isOnQuest 11142
-step
-    .goto 1445/1,-4454.17,-3749.73
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Jaina Proudmoore|r
     .accept 11222 >>Accept Warn Bolvar!
     .target Lady Jaina Proudmoore
-    .isQuestTurnedIn 11142 --any of: Survey Alcaz Island
 step
     .goto 1445/1,-4454.17,-3749.73
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Jaina Proudmoore|r
@@ -942,7 +891,6 @@ step
     .accept 11160 >>Accept Banner of the Stonemaul
     .accept 11161 >>Accept The Essence of Enmity
     .target Brogg
-    .isQuestTurnedIn 11158 --any of: Bloodfen Feathers
 step
     .goto 1445/1,-3155.85,-4587.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gizzix Grimegurgle|r
@@ -1033,7 +981,7 @@ step << Warlock
     .isQuestTurnedIn 4962 --Shard of a Felhound
     .xp <35,1
 step
-    #completewith Along144
+    #completewith Along139
     >>As you go: Kill |cRXP_ENEMY_Grimtotem Earthbinders|r and |cRXP_ENEMY_Grimtotem Destroyers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 11156,1 --Direhorn Grimtotems killed (8)
     .mob Grimtotem Earthbinder
@@ -1056,7 +1004,7 @@ step
     .target Northeast Tent
     .isOnQuest 11150
 step
-    #label Along144
+    #label Along139
     .goto 1445/1,-3421.50,-3640.88
     >>Burn the North Tent, East Tent, and the Northeast Tent at Direhorn Post, then return to Tabetha at her farm.
     .complete 11150,1 --North Tent
@@ -1108,40 +1056,25 @@ step << Mage
     .isQuestTurnedIn 1954 --any of: The Infernal Orb
     .xp <35,1
 step
-    .goto 1445/1,-2975.77,-4464.43
-    >>Open the |cRXP_PICK_Stonemaul Clan Banner|r. Loot it for |cRXP_LOOT_Stonemaul Banner|r
-    .complete 11160,1 --Stonemaul Banner (1)
-    .isOnQuest 11160
-step
     #loop
-    .goto 1445/1,-2907.00,-4448.33,0
-    .goto 1445/1,-2907.00,-4448.33,40,0
-    .goto 1445/1,-2961.07,-4388.83,40,0
+    .goto 1445/1,-3054.00,-4329.33,0
     .goto 1445/1,-3054.00,-4329.33,40,0
+    .goto 1445/1,-2961.07,-4388.83,40,0
+    .goto 1445/1,-2907.00,-4448.33,40,0
+    >>Open the |cRXP_PICK_Stonemaul Clan Banner|r. Loot it for |cRXP_LOOT_Stonemaul Banner|r
     >>Kill |cRXP_ENEMY_Firemane Scalebanes|r, |cRXP_ENEMY_Firemane Scouts|r and |cRXP_ENEMY_Firemane Ash Tails|r. Loot them for |cRXP_LOOT_Black Dragonkin Essence|r
+    .complete 11160,1 --Stonemaul Banner (1)
     .complete 11161,1 --Black Dragonkin Essence (10)
     .mob Firemane Scalebane
     .mob Firemane Scout
     .mob Firemane Ash Tail
-    .isOnQuest 11161
 step
     .goto 1445/1,-3172.65,-4622.28
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brogg|r
     .turnin 11160 >>Turn in Banner of the Stonemaul
-    .target Brogg
-    .isOnQuest 11160
-step
-    .goto 1445/1,-3172.65,-4622.28
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brogg|r
     .turnin 11161 >>Turn in The Essence of Enmity
-    .target Brogg
-    .isOnQuest 11161
-step
-    .goto 1445/1,-3172.65,-4622.28
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brogg|r
     .accept 11159 >>Accept Spirits of Stonemaul Hold
     .target Brogg
-    .isQuestTurnedIn 11161 --any of: The Essence of Enmity
 step
     #loop
     .goto 1445/1,-3369.00,-4427.33,0
@@ -1150,13 +1083,11 @@ step
     >>Kill |cRXP_ENEMY_Stonemaul Spirits|r
     .complete 11159,1 --Stonemaul Spirits laid to rest (10)
     .mob Stonemaul Spirit
-    .isOnQuest 11159
 step
     .goto 1445/1,-3172.65,-4622.28
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brogg|r
     .turnin 11159 >>Turn in Spirits of Stonemaul Hold
     .target Brogg
-    .isOnQuest 11159
 step
     #loop
     .goto 1445/1,-3411.00,-4660.78,0
@@ -1270,22 +1201,9 @@ step
     >>|cRXP_FRIENDLY_Swamp of Sorrows and back here|r: ... and Bugs
     >>|cRXP_FRIENDLY_Desolace and back here|r: The Infernal Orb << Mage
 step
-    +|cRXP_WARN_Suggested next zones at level 38|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests, starting around Fleet Master Seahorn), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.5 levels of quests, starting around Skuerto). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Until level 41, suggested zones|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.5 levels of quests). Then come back to this Dustwallow Marsh guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Dustwallow Marsh is planned from level 41.|r Load its guide for level 41 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 35 - 42 Dustwallow Marsh
-#subweight -35
-#name 41-42 Dustwallow Marsh
---RouteBuilder:next
-#next Zone Routes (Alliance)\38-40 Stranglethorn Vale: around Fleet Master Seahorn
-
+    .xp 41 >>|cRXP_WARN_The rest of Dustwallow Marsh is planned from level 41.|r Come back to this guide then
 step << Mage
     .goto 1445/1,-3393.15,-4031.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tabetha|r
@@ -1344,5 +1262,5 @@ step
 step
     +|cRXP_WARN_End of the Dustwallow Marsh route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 41|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.6 levels of quests, starting around Fleet Master Seahorn). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 41|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.6 levels of quests). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
 ]])

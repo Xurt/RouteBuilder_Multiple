@@ -13,12 +13,12 @@
       "start": 61,
       "end": 61.72,
       "next": 64,
-      "guide": "61-62 Zangarmarsh: around Ysiel Windsinger",
+      "guide": "61-65 Zangarmarsh",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Ysiel Windsinger",
-          "guide": "61-62 Zangarmarsh: around Ysiel Windsinger",
+          "label": "",
+          "name": "start",
+          "guide": "61-65 Zangarmarsh",
           "level": 61,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 64,
       "end": 64.27,
-      "guide": "64-65 Zangarmarsh: around Shadow Hunter Denjai",
+      "guide": "61-65 Zangarmarsh",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Shadow Hunter Denjai",
-          "guide": "64-65 Zangarmarsh: around Shadow Hunter Denjai",
+          "label": "",
+          "name": "part 2",
+          "guide": "61-65 Zangarmarsh",
           "level": 64,
           "index": 0
         }

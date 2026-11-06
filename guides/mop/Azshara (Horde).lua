@@ -1,8 +1,7 @@
 -- 10-20 Azshara: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
--- Split into 4 guides, listed under "10 - 24 Azshara" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
 -- Edit zones/mop/Azshara.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -12,10 +11,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 10 - 24 Azshara
-#subweight -10
-#name 10-14 Azshara: around Labor Captain Grabbit
-#next Zone Routes (Horde)\14-16 Azshara: around Assistant Greely
+#name 10-20 Azshara
+--RouteBuilder:next
+#next Zone Routes (Horde)\20-25 Hillsbrad Foothills
 
 step
     #completewith next
@@ -499,28 +497,11 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Malynea Skyreaver|r
     .turnin 14216 >>Turn in Mystery of the Sarcen Stone
     .target Malynea Skyreaver
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 24 Azshara
-#subweight -10
-#name 14-16 Azshara: around Assistant Greely
-#next Zone Routes (Horde)\16-18 Azshara: around Wrenchmen Recruitment Poster
-
 step
     .goto 76,50.41,74.29
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Assistant Greely|r
     .turnin 14424 >>Turn in Need More Science
-    .target Assistant Greely
-    .isOnQuest 14424
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,50.41,74.29
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Assistant Greely|r
-    .accept 14308 >>Accept When Science Attacks
+    .accept 14308 >>Accept When Science Attacks << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Assistant Greely
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,52.22,74.24
@@ -528,7 +509,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 14258 >>Accept Mortar the Point
     .target Bombardier Captain Smooks
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along88
+    #completewith Along87
     >>As you go: Pick up |cRXP_PICK_Goblin Mortar Shell|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 14258,1 --Goblin Mortar Shell (5)
 step
@@ -550,12 +531,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .complete 14308,1 --Secret Lab Fires (8)
     .target Secret Lab Fires
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along76
+    #completewith Along75
     >>As you go: Kill |cRXP_ENEMY_Mutant Goblin|r and loot |cRXP_LOOT_Secret Rocket Plans|r. |cRXP_WARN_Anything left is finished later|r
     .complete 14408,2 --Secret Rocket Plans (1)
     .mob Mutant Goblin
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along76
+    #label Along75
     #loop
     .goto 76,43.45,76.54,0
     .goto 76,43.45,76.54,40,0
@@ -581,23 +562,23 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 14371 >>Accept A Gigantic Snack
     .target Assistant Greely
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along81
+    #completewith Along80
     >>As you go: Kill |cRXP_ENEMY_Mistwing Cliffdwellers|r. Loot them for |cRXP_LOOT_Mutilated Mistwing Carcass|r. |cRXP_WARN_Anything left is finished later|r
     .complete 14371,1 --Mutilated Mistwing Carcass (8)
     .mob Mistwing Cliffdweller
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along80
+    #completewith Along79
     >>As you go: Kill |cRXP_ENEMY_Mutant Goblin|r and loot |cRXP_LOOT_Secret Rocket Plans|r. |cRXP_WARN_Anything left is finished later|r
     .complete 14408,2 --Secret Rocket Plans (1)
     .mob Mutant Goblin
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along80
+    #label Along79
     .goto 76,45.93,76.09
     >>Interact with |cRXP_FRIENDLY_Buzzer|r
     .complete 14408,1 --Buzzer
     .target Buzzer
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along81
+    #label Along80
     .goto 76,45.96,76.39
     >>Kill |cRXP_ENEMY_Mutant Goblin|r and loot |cRXP_LOOT_Secret Rocket Plans|r
     .complete 14408,2 --Secret Rocket Plans (1)
@@ -654,7 +635,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 14377 >>Accept Befriending Giants
     .target Assistant Greely
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along88
+    #label Along87
     .goto 76,47.75,75.52
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gormungan|r
     .complete 14377,1 --Gormungan
@@ -687,7 +668,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Netgun Gnome
     .mob Zapper Gnome
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along94
+    #completewith Along93
     >>As you go: Pick up |cRXP_PICK_Goblin Mortar Shell|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 14258,1 --Goblin Mortar Shell (5)
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
@@ -708,7 +689,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .isQuestComplete 14383
     .target Hobart Grapplehammer
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along94
+    #label Along93
     .goto 76,47.75,75.52
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gormungan|r
     .complete 14388,1 --Gormungan
@@ -743,7 +724,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 14267 >>Accept Investigating the Sea Shrine
     .target Torg Twocrush
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along102
+    #completewith Along101
     >>As you go: Kill |cRXP_ENEMY_Spitelash Stormfuries|r. |cRXP_WARN_Anything left is finished later|r
     .complete 14262,1 --Spitelash Stormfury slain (6)
     .mob Spitelash Stormfury
@@ -757,7 +738,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Pick up |cRXP_PICK_Keystone Shard|r from the ground
     .complete 14270,1 --Keystone Shard (1)
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along102
+    #label Along101
     .goto 76,58.98,71.81
     >>Click the |cRXP_PICK_Naga Power Stone|r
     .turnin 14270 >>Turn in The Keystone Shard
@@ -822,7 +803,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,56.98,50.09
     >>Click the |cRXP_PICK_Wrenchmen Recruitment Poster|r
     .accept 14478 >>Accept Operation Fishgut
-    .isQuestTurnedIn 24452 --any of: Profitability Scouting
 step << Rogue Cata
     .goto 76,56.884,50.575
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Stinky Shapshiv|r
@@ -848,48 +828,23 @@ step
     >>Deliver the Armed Azsharite Core to Bleenik Fizzlefuse at Bilgewater Harbor. Speak with Friz Groundspin for a free airlift.
     .complete 24458,1 --Bleenik Fizzlefuse
     .target Bleenik Fizzlefuse
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 24 Azshara
-#subweight -10
-#name 16-18 Azshara: around Wrenchmen Recruitment Poster
-#next Zone Routes (Horde)\18-24 Azshara: around Haggrum Bloodfist
-
 step
     .goto 76,60.55,50.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bleenik Fizzlefuse|r
     .turnin 24458 >>Turn in A Hello to Arms
     .target Bleenik Fizzlefuse
-    .isOnQuest 24458
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,29.46,57.67
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Commander Molotov|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 14478 >>Turn in Operation Fishgut
-    .unitscan Commander Molotov
-    .isOnQuest 14478
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,29.46,57.67
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Commander Molotov|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 24455 >>Accept Rapid Deployment
     .unitscan Commander Molotov
-    .isQuestTurnedIn 14478 --any of: Operation Fishgut
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,58.10,52.31
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Desoto|r
     .turnin 24455 >>Turn in Rapid Deployment
-    .target Captain Desoto
-    .isOnQuest 24455
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,58.10,52.31
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Desoto|r
     .accept 14479 >>Accept There Are Many Like It
     .target Captain Desoto
-    .isQuestTurnedIn 24455 --any of: Rapid Deployment
 step
     .goto 76,39.14,51.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ruckus|r
@@ -899,20 +854,19 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,41.50,53.65
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Drex|r
     .turnin 14479 >>Turn in There Are Many Like It
-    .target Lieutenant Drex
-    .isOnQuest 14479
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,41.50,53.65
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Drex|r
     .accept 24435 >>Accept Mop Up
     .target Lieutenant Drex
-    .isQuestTurnedIn 14479 --any of: There Are Many Like It
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along118
+    >>As you go: Kill |cRXP_ENEMY_Spitelash Sirens|r and |cRXP_ENEMY_Spitelash Warriors|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 24435,1 --Spitelash Siren (12)
+    .mob Spitelash Siren
+    .mob Spitelash Warrior
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,41.39,53.94
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Hort|r
     .accept 24436 >>Accept Halo Drops
     .target Sergeant Hort
-    .isQuestTurnedIn 14479 --any of: There Are Many Like It
 step
     .goto 76,43.87,59.92
     >>Plant Ruckus' Territorial Claim Flag next to the prime real estate locations along the Shattered Strand.
@@ -924,6 +878,7 @@ step
     .complete 24437,2 --Real Estate Bunny (Tower)
     .target Real Estate Bunny (Tower)
 step
+    #label Along118
     .goto 76,45.46,38.51
     >>Plant Ruckus' Territorial Claim Flag next to the prime real estate locations along the Shattered Strand.
     .complete 24437,3 --Real Estate Bunny (Vista)
@@ -938,7 +893,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .complete 24435,1 --Spitelash Siren (12)
     .mob Spitelash Siren
     .mob Spitelash Warrior
-    .isOnQuest 24435
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 76,40.56,44.36,0
@@ -948,26 +902,17 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Interact with |cRXP_FRIENDLY_Wounded Soldiers|r
     .complete 24436,1 --Wounded Soldier (8)
     .target Wounded Soldier
-    .isOnQuest 24436
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,41.39,53.94
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Hort|r
     .turnin 24436 >>Turn in Halo Drops
     .target Sergeant Hort
-    .isOnQuest 24436
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,41.50,53.65
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Drex|r
     .turnin 24435 >>Turn in Mop Up
-    .target Lieutenant Drex
-    .isOnQuest 24435
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,41.50,53.65
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Drex|r
     .accept 24448 >>Accept Field Promotion
     .target Lieutenant Drex
-    .isQuestTurnedIn 24435 --Mop Up
-    .isQuestTurnedIn 24436 --Halo Drops
 step
     .goto 76,39.14,51.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ruckus|r
@@ -977,14 +922,8 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,34.31,44.90
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Tork|r
     .turnin 24448 >>Turn in Field Promotion
-    .target Captain Tork
-    .isOnQuest 24448
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,34.31,44.90
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Tork|r
     .accept 14487 >>Accept Still Beating Heart
     .target Captain Tork
-    .isQuestTurnedIn 24448 --any of: Field Promotion
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,34.46,44.73
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Zelks|r
@@ -992,126 +931,81 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 14484 >>Accept Head of the Snake
     .accept 14485 >>Accept Ticker Required
     .target Sergeant Zelks
-    .isQuestTurnedIn 24448 --any of: Field Promotion
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,34.53,44.68
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tora Halotrix|r
     .accept 14486 >>Accept Handling the Goods
     .target Tora Halotrix
-    .isQuestTurnedIn 24448 --any of: Field Promotion
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,31.88,50.09
-    >>Pick up |cRXP_PICK_Heart of Arkkoroc|r from the ground
-    .complete 14487,1 --Heart of Arkkoroc (1)
-    .isOnQuest 14487
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,35.99,49.85
-    >>Kill |cRXP_ENEMY_Lord Kassarus|r
-    .complete 14484,1 --Lord Kassarus slain (1)
-    .mob Lord Kassarus
-    .isOnQuest 14484
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 76,35.41,49.89,0
-    .goto 76,35.41,49.89,40,0
-    .goto 76,32.28,52.46,40,0
-    >>Click the |cRXP_PICK_Spitelash Runestone|r
-    .complete 14485,1 --Spitelash Runestone
-    .isOnQuest 14485
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 76,35.08,49.93,0
-    .goto 76,35.08,49.93,40,0
-    .goto 76,36.02,50.58,40,0
-    .goto 76,32.59,46.37,40,0
-    >>Pick up |cRXP_PICK_Highborne Tablet|r from the ground
+    #completewith Along127
+    >>As you go: Pick up |cRXP_PICK_Highborne Tablet|r from the ground. Kill |cRXP_ENEMY_Spitelash Serpent Guards|r, |cRXP_ENEMY_Spitelash Enchantress|r, |cRXP_ENEMY_High Priestess Siltheras|r and |cRXP_ENEMY_Spitelash Battlemasters|r. |cRXP_WARN_Anything left is finished later|r
     .complete 14486,1 --Highborne Tablet (12)
-    .isOnQuest 14486
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 76,35.78,48.61,0
-    .goto 76,35.78,48.61,40,0
-    .goto 76,32.22,47.71,40,0
-    .goto 76,30.35,51.02,40,0
-    >>Kill |cRXP_ENEMY_Spitelash Serpent Guards|r, |cRXP_ENEMY_Spitelash Enchantress|r, |cRXP_ENEMY_High Priestess Siltheras|r and |cRXP_ENEMY_Spitelash Battlemasters|r
     .complete 14480,1 --Spitelash Serpent Guard (30)
     .mob Spitelash Serpent Guard
     .mob Spitelash Enchantress
     .mob High Priestess Silthera
     .mob Spitelash Battlemaster
-    .isOnQuest 14480
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along127
+    .goto 76,31.88,50.09
+    >>Pick up |cRXP_PICK_Heart of Arkkoroc|r from the ground
+    .complete 14487,1 --Heart of Arkkoroc (1)
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #loop
+    .goto 76,32.28,52.46,0
+    .goto 76,32.28,52.46,40,0
+    .goto 76,32.37,47.45,40,0
+    .goto 76,35.99,49.85,40,0
+    >>Kill |cRXP_ENEMY_Lord Kassarus|r
+    >>Click the |cRXP_PICK_Spitelash Runestone|r
+    >>Pick up |cRXP_PICK_Highborne Tablet|r from the ground
+    >>Kill |cRXP_ENEMY_Spitelash Serpent Guards|r, |cRXP_ENEMY_Spitelash Enchantress|r, |cRXP_ENEMY_High Priestess Siltheras|r and |cRXP_ENEMY_Spitelash Battlemasters|r
+    .complete 14484,1 --Lord Kassarus slain (1)
+    .complete 14485,1 --Spitelash Runestone
+    .complete 14486,1 --Highborne Tablet (12)
+    .complete 14480,1 --Spitelash Serpent Guard (30)
+    .mob Lord Kassarus
+    .mob Spitelash Serpent Guard
+    .mob Spitelash Enchantress
+    .mob High Priestess Silthera
+    .mob Spitelash Battlemaster
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,34.46,44.73
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Zelks|r
     .turnin 14480 >>Turn in Extermination
-    .target Sergeant Zelks
-    .isOnQuest 14480
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,34.46,44.73
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Zelks|r
     .turnin 14484 >>Turn in Head of the Snake
-    .target Sergeant Zelks
-    .isOnQuest 14484
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,34.46,44.73
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Zelks|r
     .turnin 14485 >>Turn in Ticker Required
     .target Sergeant Zelks
-    .isOnQuest 14485
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,34.53,44.68
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tora Halotrix|r
     .turnin 14486 >>Turn in Handling the Goods
     .target Tora Halotrix
-    .isOnQuest 14486
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,34.31,44.90
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Tork|r
     .turnin 14487 >>Turn in Still Beating Heart
-    .target Captain Tork
-    .isOnQuest 14487
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,34.31,44.90
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Tork|r
     .accept 24449 >>Accept Shore Leave
     .target Captain Tork
-    .isQuestTurnedIn 14480 --Extermination
-    .isQuestTurnedIn 14484 --Head of the Snake
-    .isQuestTurnedIn 14485 --Ticker Required
-    .isQuestTurnedIn 14486 --Handling the Goods
-    .isQuestTurnedIn 14487 --Still Beating Heart
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,60.61,50.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Uncle Bedlam|r
     .turnin 24449 >>Turn in Shore Leave
     .target Uncle Bedlam
-    .isOnQuest 24449
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,55.49,52.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kalec|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 14407 >>Turn in Azshara Blues
-    .unitscan Kalec
-    .isOnQuest 14407
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,55.49,52.13
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kalec|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 14130 >>Accept Friends Come In All Colors
     .unitscan Kalec
-    .isQuestTurnedIn 14407 --any of: Azshara Blues
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,70.36,36.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ergll|r
     .turnin 14130 >>Turn in Friends Come In All Colors
-    .target Ergll
-    .isOnQuest 14130
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,70.36,36.25
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ergll|r
     .accept 14131 >>Accept A Little Pick-me-up
     .accept 14132 >>Accept That's Just Rude!
     .accept 14323 >>Accept Absorbent
     .target Ergll
-    .isQuestTurnedIn 14130 --any of: Friends Come In All Colors
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 76,75.78,35.39,0
@@ -1120,105 +1014,58 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Kill |cRXP_ENEMY_Vile Splashes|r. Loot them for |cRXP_LOOT_Simmering Water Droplet|r
     .complete 14323,1 --Simmering Water Droplet (20)
     .mob Vile Splash
-    .isOnQuest 14323
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along136
+    >>As you go: Loot the |cRXP_PICK_Kawphi Plants|r for |cRXP_LOOT_Kawphi Bean|r. Kill |cRXP_ENEMY_Makrinni Scrabblers|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 14131,1 --Kawphi Bean (10)
+    .complete 14132,1 --Makrinni Scrabbler slain (10)
+    .mob Makrinni Scrabbler
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along136
     .goto 76,70.36,36.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ergll|r
     .turnin 14323 >>Turn in Absorbent
     .target Ergll
-    .isOnQuest 14323
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 76,71.72,34.77,0
-    .goto 76,71.72,34.77,40,0
-    .goto 76,69.96,31.64,40,0
+    .goto 76,70.31,34.25,0
+    .goto 76,70.31,34.25,40,0
+    .goto 76,72.71,34.99,40,0
+    .goto 76,72.52,32.35,40,0
     >>Loot the |cRXP_PICK_Kawphi Plants|r for |cRXP_LOOT_Kawphi Bean|r
-    .complete 14131,1 --Kawphi Bean (10)
-    .isOnQuest 14131
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,70.36,36.25
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ergll|r
-    .turnin 14131 >>Turn in A Little Pick-me-up while you are here
-    .isQuestComplete 14131
-    .target Ergll
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 76,73.37,36.26,0
-    .goto 76,73.37,36.26,40,0
-    .goto 76,73.54,34.07,40,0
-    .goto 76,74.99,32.86,40,0
     >>Kill |cRXP_ENEMY_Makrinni Scrabblers|r
+    .complete 14131,1 --Kawphi Bean (10)
     .complete 14132,1 --Makrinni Scrabbler slain (10)
     .mob Makrinni Scrabbler
-    .isOnQuest 14132
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,70.36,36.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ergll|r
     .turnin 14131 >>Turn in A Little Pick-me-up
-    .target Ergll
-    .isOnQuest 14131
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,70.36,36.25
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ergll|r
     .turnin 14132 >>Turn in That's Just Rude!
-    .target Ergll
-    .isOnQuest 14132
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,70.36,36.25
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ergll|r
     .accept 14324 >>Accept Full of Hot Water
     .target Ergll
-    .isQuestTurnedIn 14323 --any of: Absorbent
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,81.09,30.69
     >>Kill |cRXP_ENEMY_Scalding Water Lord|r and loot |cRXP_LOOT_Globe of Boiling Water|r
     .complete 14324,1 --Globe of Boiling Water (1)
     .mob Scalding Water Lord
-    .isOnQuest 14324
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,70.36,36.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ergll|r
     .turnin 14324 >>Turn in Full of Hot Water
-    .target Ergll
-    .isOnQuest 14324
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,70.36,36.25
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ergll|r
     .accept 14345 >>Accept Wash Out
     .target Ergll
-    .isQuestTurnedIn 14131 --A Little Pick-me-up
-    .isQuestTurnedIn 14132 --That's Just Rude!
-    .isQuestTurnedIn 14324 --Full of Hot Water
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,53.26,49.96
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sorata Firespinner|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 14345 >>Turn in Wash Out
-    .unitscan Sorata Firespinner
-    .isOnQuest 14345
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,53.26,49.96
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sorata Firespinner|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 14340 >>Accept Dressed to Impress
     .unitscan Sorata Firespinner
-    .isQuestTurnedIn 14345 --any of: Wash Out
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,42.61,23.70
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Andorel Sunsworn|r
     .accept 14428 >>Accept Amberwind's Journal
     .target Andorel Sunsworn
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 10 - 24 Azshara
-#subweight -10
-#name 18-24 Azshara: around Haggrum Bloodfist
---RouteBuilder:next
-#next Zone Routes (Horde)\22-27 Hillsbrad Foothills: around Serge Hinott
-
 step
     .goto 76,42.41,23.61
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Haggrum Bloodfist|r
@@ -1246,17 +1093,11 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Kill |cRXP_ENEMY_Lorekeeper Amberwind|r and loot |cRXP_LOOT_Amberwind's Journal|r
     .complete 14428,1 --Amberwind's Journal (1)
     .mob Lorekeeper Amberwind
-    .isOnQuest 14428
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,49.52,28.80
     >>Click the |cRXP_PICK_Upper Scrying Stone|r
     .turnin 14428 >>Turn in Amberwind's Journal
-    .isOnQuest 14428
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,49.52,28.80
-    >>Click the |cRXP_PICK_Upper Scrying Stone|r
     .accept 14429 >>Accept Arcane De-Construction
-    .isQuestTurnedIn 14428 --any of: Amberwind's Journal
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 76,49.08,26.55,0
@@ -1266,160 +1107,108 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .complete 14429,1 --Attuned Runestone (10)
     .mob Apprentice Investigator
     .mob Apprentice Illuminator
-    .isOnQuest 14429
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,53.00,29.03
     >>Click the |cRXP_PICK_Lower Scrying Stone|r
     .turnin 14429 >>Turn in Arcane De-Construction
-    .isOnQuest 14429
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,53.00,29.03
-    >>Click the |cRXP_PICK_Lower Scrying Stone|r
     .accept 14430 >>Accept Hacking the Construct
-    .isQuestTurnedIn 14429 --any of: Arcane De-Construction
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,52.99,29.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arcane Construct|r
     .complete 14430,1 --Arcane Construct
     .target Arcane Construct
-    .isOnQuest 14430
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,47.23,20.85
     >>Put on your new wizard hat and then speak to the Image of Archmage Xylem just northeast of the Northern Rocketway Exchange.
     .complete 14340,1 --Image of Archmage Xylem
     .target Image of Archmage Xylem
-    .isOnQuest 14340
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,47.23,20.85
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Image of Archmage Xylem|r
     .turnin 14340 >>Turn in Dressed to Impress
     .target Image of Archmage Xylem
-    .isOnQuest 14340
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,47.29,21.19
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tharkul Ironskull|r
     .accept 14250 >>Accept Renewable Resource
     .target Tharkul Ironskull
-    .isQuestTurnedIn 14340 --any of: Dressed to Impress
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,47.15,21.06
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Will Robotronic|r
     .accept 14249 >>Accept Shear Will
     .target Will Robotronic
-    .isQuestTurnedIn 14340 --any of: Dressed to Impress
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,47.01,21.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Quarla Whistlebreak|r
     .accept 14263 >>Accept Waste of Thyme
     .target Quarla Whistlebreak
-    .isQuestTurnedIn 14340 --any of: Dressed to Impress
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 76,49.10,18.80,0
-    .goto 76,49.10,18.80,40,0
+    .goto 76,49.76,22.18,0
+    .goto 76,49.76,22.18,40,0
+    .goto 76,51.59,19.93,40,0
+    .goto 76,49.88,18.25,40,0
     .goto 76,47.40,16.70,40,0
     >>Loot the |cRXP_PICK_Animate Besalt Chunks|r for |cRXP_LOOT_Animate Basalt|r
-    .complete 14250,1 --Animate Basalt (5)
-    .isOnQuest 14250
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 76,49.28,17.17,0
-    .goto 76,49.28,17.17,40,0
-    .goto 76,51.43,19.47,40,0
-    .goto 76,50.20,23.34,40,0
     >>Pick up |cRXP_PICK_Living Ire Thyme|r from the ground
-    .complete 14263,1 --Living Ire Thyme (8)
-    .isOnQuest 14263
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #loop
-    .goto 76,50.52,18.69,0
-    .goto 76,50.52,18.69,40,0
-    .goto 76,49.11,21.78,40,0
-    .goto 76,47.78,14.31,40,0
     >>Kill |cRXP_ENEMY_Thunderhead Hippogryphs|r and |cRXP_ENEMY_Thunderhead Stagwings|r. Loot them for |cRXP_LOOT_Pristine Thunderhead Feather|r
+    .complete 14250,1 --Animate Basalt (5)
+    .complete 14263,1 --Living Ire Thyme (8)
     .complete 14249,1 --Pristine Thunderhead Feather (80)
     .mob Thunderhead Hippogryph
     .mob Thunderhead Stagwing
-    .isOnQuest 14249
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,47.01,21.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Quarla Whistlebreak|r
     .turnin 14263 >>Turn in Waste of Thyme
     .target Quarla Whistlebreak
-    .isOnQuest 14263
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,47.15,21.06
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Will Robotronic|r
     .turnin 14249 >>Turn in Shear Will
     .target Will Robotronic
-    .isOnQuest 14249
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,47.29,21.19
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tharkul Ironskull|r
     .turnin 14250 >>Turn in Renewable Resource
     .target Tharkul Ironskull
-    .isOnQuest 14250
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,47.24,21.29
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Teresa Spireleaf|r
     .accept 14230 >>Accept Manual Labor
     .target Teresa Spireleaf
-    .isQuestTurnedIn 14249 --Shear Will
-    .isQuestTurnedIn 14250 --Renewable Resource
-    .isQuestTurnedIn 14263 --Waste of Thyme
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,47.23,20.85
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Image of Archmage Xylem|r
     .accept 14226 >>Accept Trouble Under Foot
     .target Image of Archmage Xylem
-    .isQuestTurnedIn 14249 --Shear Will
-    .isQuestTurnedIn 14250 --Renewable Resource
-    .isQuestTurnedIn 14263 --Waste of Thyme
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,55.25,25.20
-    >>Open the |cRXP_PICK_Stolen Manual|r. Loot it for |cRXP_LOOT_Abjurer's Manual|r
-    .complete 14230,1 --Abjurer's Manual (1)
-    .isOnQuest 14230
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
-    .goto 76,54.85,23.72,0
-    .goto 76,54.85,23.72,40,0
+    .goto 76,53.09,21.94,0
     .goto 76,53.09,21.94,40,0
+    .goto 76,54.85,23.72,40,0
+    >>Open the |cRXP_PICK_Stolen Manual|r. Loot it for |cRXP_LOOT_Abjurer's Manual|r
     >>Kill |cRXP_ENEMY_Polymorphed Cockroaches|r
+    .complete 14230,1 --Abjurer's Manual (1)
     .complete 14226,1 --Polymorphed Cockroach slain (12)
     .mob Polymorphed Cockroach
-    .isOnQuest 14226
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,47.24,21.29
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Teresa Spireleaf|r
     .turnin 14230 >>Turn in Manual Labor
     .target Teresa Spireleaf
-    .isOnQuest 14230
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,47.23,20.85
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Image of Archmage Xylem|r
     .turnin 14226 >>Turn in Trouble Under Foot
-    .target Image of Archmage Xylem
-    .isOnQuest 14226
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,47.23,20.85
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Image of Archmage Xylem|r
     .accept 14413 >>Accept The Pinnacle of Learning
     .target Image of Archmage Xylem
-    .isQuestTurnedIn 14226 --Trouble Under Foot
-    .isQuestTurnedIn 14230 --Manual Labor
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,55.71,14.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Image of Archmage Xylem|r
     .turnin 14413 >>Turn in The Pinnacle of Learning
-    .target Image of Archmage Xylem
-    .isOnQuest 14413
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,55.71,14.77
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Image of Archmage Xylem|r
     .accept 14296 >>Accept Watch Your Step
     .target Image of Archmage Xylem
-    .isQuestTurnedIn 14413 --any of: The Pinnacle of Learning
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 76,56.28,13.52,0
@@ -1427,109 +1216,65 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,55.50,10.53,40,0
     >>Click the |cRXP_PICK_Energy Conduit|r
     .complete 14296,1 --Energy Conduit
-    .isOnQuest 14296
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,55.95,12.16
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Image of Archmage Xylem|r
     .turnin 14296 >>Turn in Watch Your Step
-    .target Image of Archmage Xylem
-    .isOnQuest 14296
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,55.95,12.16
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Image of Archmage Xylem|r
     .accept 24478 >>Accept The Trial of Frost
     .accept 14300 >>Accept The Trial of Fire
     .accept 24479 >>Accept The Trial of Shadow
     .target Image of Archmage Xylem
-    .isQuestTurnedIn 14296 --any of: Watch Your Step
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,61.81,20.46
     >>Frost Trial Completed
     .complete 24478,1 --Frost Trial Completed
-    .isOnQuest 24478
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,33.43,23.39
     >>Fire Trial Completed
     .complete 14300,1 --Fire Trial Completed
-    .isOnQuest 14300
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,31.02,27.82
     >>Shadow Trial Completed
     .complete 24479,1 --Shadow Trial Completed
-    .isOnQuest 24479
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,55.71,14.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Image of Archmage Xylem|r
     .turnin 24478 >>Turn in The Trial of Frost
-    .target Image of Archmage Xylem
-    .isOnQuest 24478
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,55.71,14.77
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Image of Archmage Xylem|r
     .turnin 14300 >>Turn in The Trial of Fire
-    .target Image of Archmage Xylem
-    .isOnQuest 14300
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,55.71,14.77
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Image of Archmage Xylem|r
     .turnin 24479 >>Turn in The Trial of Shadow
     .target Image of Archmage Xylem
-    .isOnQuest 24479
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,55.95,12.16
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Image of Archmage Xylem|r
     .accept 14299 >>Accept Xylem's Asylum
     .target Image of Archmage Xylem
-    .isQuestTurnedIn 14300 --The Trial of Fire
-    .isQuestTurnedIn 24478 --The Trial of Frost
-    .isQuestTurnedIn 24479 --The Trial of Shadow
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,25.59,37.96
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Joanna|r
     .turnin 14299 >>Turn in Xylem's Asylum
-    .target Joanna
-    .isOnQuest 14299
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,25.59,37.96
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Joanna|r
     .accept 14389 >>Accept Wasn't It Obvious?
     .target Joanna
-    .isQuestTurnedIn 14299 --any of: Xylem's Asylum
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,27.70,40.40
     >>Find Anara, and hopefully, Azuregos
     .complete 14389,1 --Find Anara, and hopefully, Azuregos
-    .isOnQuest 14389
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,27.91,39.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spirit of Azuregos|r
     .turnin 14389 >>Turn in Wasn't It Obvious?
-    .target Spirit of Azuregos
-    .isOnQuest 14389
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,27.91,39.97
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spirit of Azuregos|r
     .accept 14390 >>Accept Easy is Boring
     .target Spirit of Azuregos
-    .isQuestTurnedIn 14389 --any of: Wasn't It Obvious?
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,27.91,39.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spirit of Azuregos|r
     .complete 14390,1 --Spirit of Azuregos
     .target Spirit of Azuregos
-    .isOnQuest 14390
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,27.91,39.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spirit of Azuregos|r
     .turnin 14390 >>Turn in Easy is Boring
-    .target Spirit of Azuregos
-    .isOnQuest 14390
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,27.91,39.97
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spirit of Azuregos|r
     .accept 14391 >>Accept Turning the Tables
     .target Spirit of Azuregos
-    .isQuestTurnedIn 14390 --any of: Easy is Boring
 step
     #loop
     .goto 76,30.95,36.25,0
@@ -1557,7 +1302,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Andorel Sunsworn|r
     .turnin 14430 >>Turn in Hacking the Construct
     .target Andorel Sunsworn
-    .isOnQuest 14430
 step
     #loop
     .goto 76,33.58,31.72,0
@@ -1586,44 +1330,54 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,55.49,52.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kalec|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 14391 >>Turn in Turning the Tables
-    .unitscan Kalec
-    .isOnQuest 14391
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,55.49,52.13
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kalec|r. |cRXP_WARN_This NPC walks a patrol route|r
     .accept 24467 >>Accept Fade to Black
     .unitscan Kalec
-    .isQuestTurnedIn 14391 --any of: Turning the Tables
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,66.34,20.26
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jellix Fuselighter|r
     .accept 14297 >>Accept Pro-liberation
     .target Jellix Fuselighter
-    .isQuestTurnedIn 14391 --any of: Turning the Tables
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along185
+    >>As you go: Kill |cRXP_ENEMY_Twilight Dragon Hunters|r, |cRXP_ENEMY_Twilight Desecrators|r and |cRXP_ENEMY_Sable Drakonids|r. Loot them for |cRXP_LOOT_Ironwrought Key|r. |cRXP_WARN_Anything left is finished later|r
+    .collect 49533,1,14297,1 --Ironwrought Key (1)
+    .mob Twilight Dragon Hunter
+    .mob Twilight Desecrator
+    .mob Sable Drakonid
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along185
     .goto 76,66.54,19.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feno Blastnoggin|r
     .accept 14261 >>Accept Ice Cold
     .target Feno Blastnoggin
-    .isQuestTurnedIn 14391 --any of: Turning the Tables
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,71.59,16.68
     >>Kill |cRXP_ENEMY_Twilight Lord Katrana|r
     .complete 24467,1 --Twilight Lord Katrana slain (1)
     .mob Twilight Lord Katrana
-    .isOnQuest 24467
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,71.85,16.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Malicion|r
     .complete 24467,2 --Malicion
     .target Malicion
-    .isOnQuest 24467
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along190
+    >>As you go: Kill |cRXP_ENEMY_Sable Drakes|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 14261,1 --Sable Drake slain (8)
+    .mob Sable Drake
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along188
+    >>As you go: Kill |cRXP_ENEMY_Twilight Dragon Hunters|r, |cRXP_ENEMY_Twilight Desecrators|r and |cRXP_ENEMY_Sable Drakonids|r. Loot them for |cRXP_LOOT_Ironwrought Key|r. |cRXP_WARN_Anything left is finished later|r
+    .collect 49533,1,14297,1 --Ironwrought Key (1)
+    .mob Twilight Dragon Hunter
+    .mob Twilight Desecrator
+    .mob Sable Drakonid
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along188
     .goto 76,55.49,52.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kalec|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 24467 >>Turn in Fade to Black
     .unitscan Kalec
-    .isOnQuest 24467
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 76,65.46,17.38,0
@@ -1635,8 +1389,8 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Twilight Dragon Hunter
     .mob Twilight Desecrator
     .mob Sable Drakonid
-    .isOnQuest 14297
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along190
     #loop
     .goto 76,67.76,15.76,0
     .goto 76,67.76,15.76,40,0
@@ -1645,7 +1399,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Use Ironwrought Keys from cultists and dragonkin to free 4 Goblin Workers in Sable Ridge.
     .complete 14297,1 --Bilgewater Laborer (4)
     .target Bilgewater Laborer
-    .isOnQuest 14297
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 76,68.97,13.92,0
@@ -1654,27 +1407,21 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Kill |cRXP_ENEMY_Sable Drakes|r
     .complete 14261,1 --Sable Drake slain (8)
     .mob Sable Drake
-    .isOnQuest 14261
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,66.54,19.60
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feno Blastnoggin|r
     .turnin 14261 >>Turn in Ice Cold
     .target Feno Blastnoggin
-    .isOnQuest 14261
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,66.34,20.26
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jellix Fuselighter|r
     .turnin 14297 >>Turn in Pro-liberation
     .target Jellix Fuselighter
-    .isOnQuest 14297
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,67.07,20.57
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Azuregos|r
     .accept 14392 >>Accept Farewell, Minnow
     .target Azuregos
-    .isQuestTurnedIn 14261 --Ice Cold
-    .isQuestTurnedIn 14297 --Pro-liberation
-    .isQuestTurnedIn 24467 --Fade to Black
 step << Shaman Cata
     .goto 76,56.671,49.531
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Max Avalanche|r
@@ -1685,28 +1432,20 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sorata Firespinner|r. |cRXP_WARN_This NPC walks a patrol route|r
     .turnin 14392 >>Turn in Farewell, Minnow
     .unitscan Sorata Firespinner
-    .isOnQuest 14392
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,52.98,49.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gurlorn|r
     .accept 24497 >>Accept Airborne Again
     .target Gurlorn
-    .isQuestTurnedIn 14392 --Farewell, Minnow
-    .isQuestTurnedIn 24449 --Shore Leave
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 76,14.01,64.84
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chawg|r
     .turnin 24497 >>Turn in Airborne Again
-    .target Chawg
-    .isOnQuest 24497
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 76,14.01,64.84
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chawg|r
     .accept 14462 >>Accept Where's My Head?
     .accept 24433 >>Accept Let Them Feast on Fear
     .target Chawg
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along233
+    #completewith Along199
     >>As you go: Kill |cRXP_ENEMY_Talrendis Defenders|r. |cRXP_WARN_Anything left is finished later|r
     .complete 24433,1 --Talrendis Defender slain (12)
     .mob Talrendis Defender
@@ -1716,7 +1455,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 24434 >>Accept Commando Drop
     .target Andorel Sunsworn
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along233
+    #label Along199
     .goto 76,14.35,65.03
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kroum|r
     .accept 14475 >>Accept Grounded!
@@ -1746,12 +1485,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Click the |cRXP_PICK_Goblin Detonator|r
     .complete 14477,1 --Goblin Detonator
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along238
+    #completewith Along204
     >>As you go: Kill |cRXP_ENEMY_Talrendis Defenders|r. |cRXP_WARN_Anything left is finished later|r
     .complete 24433,1 --Talrendis Defender slain (12)
     .mob Talrendis Defender
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along238
+    #label Along204
     .goto 76,12.52,67.45
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Slinky Sharpshiv|r
     .turnin 14462 >>Turn in Where's My Head?
@@ -1802,12 +1541,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 24430 >>Accept Blacken the Skies
     .target Jr. Bombardier Hackel
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along243
+    #completewith Along209
     >>As you go: Kill |cRXP_ENEMY_Talrendis Glaive Throwers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 24430,1 --Talrendis Glaive Thrower slain (6)
     .mob Talrendis Glaive Thrower
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along243
+    #label Along209
     .goto 76,9.29,72.55
     >>Mount a Grounded Wind Rider and fly over Talrendis Point. Destroy 6 Talrendis Glaive Throwers and bomb the Command Center.
     .complete 24430,2 --Talrendis Command Center Kill Credit
@@ -1926,5 +1665,5 @@ step
     >>|cRXP_FRIENDLY_Silverpine Forest|r: Until Death Do Us Part << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_The Barrens|r: Warchief's Command: Northern Barrens!, Warchief's Command: Ashenvale! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 23|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.9 levels of quests, starting around Serge Hinott). Completing this step loads the guide for Hillsbrad Foothills --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 23|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 1.0 levels of quests). Completing this step loads the guide for Hillsbrad Foothills --RouteBuilder:next
 ]])

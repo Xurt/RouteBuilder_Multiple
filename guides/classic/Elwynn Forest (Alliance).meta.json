@@ -13,21 +13,14 @@
       "start": 1,
       "end": 9.69,
       "next": 12,
-      "guide": "5-10 Elwynn Forest: around Marshal Dughan",
+      "guide": "1-12 Elwynn Forest",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Marshal McBride",
-          "guide": "1-5 Elwynn Forest: around Marshal McBride",
+          "label": "",
+          "name": "start",
+          "guide": "1-12 Elwynn Forest",
           "level": 1,
           "index": 0
-        },
-        {
-          "label": "RBSection1_2",
-          "name": "around Marshal Dughan",
-          "guide": "5-10 Elwynn Forest: around Marshal Dughan",
-          "level": 5,
-          "index": 1
         }
       ]
     },
@@ -36,12 +29,12 @@
       "start": 12,
       "end": 12,
       "next": 15,
-      "guide": "12-13 Elwynn Forest",
+      "guide": "1-12 Elwynn Forest",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "12-13 Elwynn Forest",
+          "guide": "1-12 Elwynn Forest",
           "level": 12,
           "index": 0
         }
@@ -51,12 +44,12 @@
       "part": 3,
       "start": 15,
       "end": 15.02,
-      "guide": "15-16 Elwynn Forest",
+      "guide": "1-12 Elwynn Forest",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "15-16 Elwynn Forest",
+          "guide": "1-12 Elwynn Forest",
           "level": 15,
           "index": 0
         }
@@ -88,7 +81,7 @@
       "req": 6,
       "xp": 840,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -133,7 +126,7 @@
       "req": 7,
       "xp": 420,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -142,7 +135,7 @@
       "req": 7,
       "xp": 210,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -151,7 +144,7 @@
       "req": 7,
       "xp": 1050,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -160,7 +153,7 @@
       "req": 7,
       "xp": 85,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -169,7 +162,7 @@
       "req": 7,
       "xp": 420,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -178,7 +171,7 @@
       "req": 7,
       "xp": 840,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -187,7 +180,7 @@
       "req": 4,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -196,7 +189,7 @@
       "req": 7,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -205,7 +198,7 @@
       "req": 1,
       "xp": 225,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -214,7 +207,7 @@
       "req": 7,
       "xp": 210,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -223,7 +216,7 @@
       "req": 3,
       "xp": 475,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -232,7 +225,7 @@
       "req": 3,
       "xp": 790,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -241,7 +234,7 @@
       "req": 4,
       "xp": 475,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -250,7 +243,7 @@
       "req": 7,
       "xp": 210,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -259,7 +252,7 @@
       "req": 4,
       "xp": 840,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -268,7 +261,7 @@
       "req": 4,
       "xp": 780,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -277,7 +270,7 @@
       "req": 5,
       "xp": 135,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -286,7 +279,7 @@
       "req": 5,
       "xp": 135,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -295,7 +288,7 @@
       "req": 5,
       "xp": 405,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -304,7 +297,7 @@
       "req": 5,
       "xp": 880,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -313,7 +306,7 @@
       "req": 6,
       "xp": 780,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -322,7 +315,7 @@
       "req": 5,
       "xp": 135,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -331,7 +324,7 @@
       "req": 5,
       "xp": 135,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -340,7 +333,7 @@
       "req": 5,
       "xp": 135,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -349,7 +342,7 @@
       "req": 5,
       "xp": 315,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -358,7 +351,7 @@
       "req": 5,
       "xp": 790,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -367,7 +360,7 @@
       "req": 5,
       "xp": 880,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -376,7 +369,7 @@
       "req": 6,
       "xp": 210,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -440,7 +433,7 @@
       "req": 1,
       "xp": 110,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -503,7 +496,7 @@
       "req": 12,
       "xp": 225,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human Paladin",
       "from": "Dun Morogh"
     },
@@ -549,7 +542,7 @@
       "req": 5,
       "xp": 780,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -558,7 +551,7 @@
       "req": 5,
       "xp": 90,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human Priest"
     },
     {
@@ -567,7 +560,7 @@
       "req": 5,
       "xp": 270,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human Priest"
     },
     {
@@ -616,7 +609,7 @@
       "req": 10,
       "xp": 420,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "Human",
       "from": "Westfall"
     },

@@ -1,9 +1,9 @@
 -- 36-41 Feralas: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 36, 83).
--- Split into 3 guides, listed under "36 - 84 Feralas" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 36; part 2 from 83.
 -- Edit zones/mop/Feralas.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 36 - 84 Feralas
-#subweight -36
-#name 36-38 Feralas: around Orhan Ogreblade
-#next Zone Routes (Horde)\38-41 Feralas: around Hadoken Swiftstrider
+#name 36-41 Feralas
+--RouteBuilder:next
+#next Zone Routes (Horde)\82-83 Deepholm
 
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 69,51.92,48.00
@@ -613,35 +612,25 @@ step
     .turnin 25466 >>Turn in Even More Fuel for the Zapping
     .target Zorbin Fandazzle
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #completewith Along68
+    >>As you go: Kill |cRXP_ENEMY_Woodpaw Mongrels|r, |cRXP_ENEMY_Woodpaw Trappers|r, |cRXP_ENEMY_Woodpaw Brutes|r and |cRXP_ENEMY_Woodpaw Mystics|r. Loot them for |cRXP_LOOT_Woodpaw Gnoll Mane|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 25363,1 --Woodpaw Gnoll Mane (10)
+    .mob Woodpaw Mongrel
+    .mob Woodpaw Trapper
+    .mob Woodpaw Brute
+    .mob Woodpaw Mystic
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 69,74.42,43.36
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Uzer'i|r
     .turnin 25641 >>Turn in The Flow of Muisek
     .accept 25338 >>Accept Treant Muisek
     .target Witch Doctor Uzer'i
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 36 - 84 Feralas
-#subweight -36
-#name 38-41 Feralas: around Hadoken Swiftstrider
---RouteBuilder:next
-#next Zone Routes (Horde)\40-42 Eastern Plaguelands: around Chromie;Zone Routes (Horde)\35-39 Western Plaguelands: around Field Agent Kaartish;Zone Routes (Horde)\37-40 Dustwallow Marsh: around Tabetha
-
 step
     .goto 69,74.58,42.85
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chief Spirithorn|r
     .turnin 25387 >>Turn in To Camp Mojache
-    .target Chief Spirithorn
-    .isOnQuest 25387
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 69,74.58,42.85
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chief Spirithorn|r
-    .accept 25373 >>Accept The Hilltop Threat
-    .accept 25349 >>Accept Twisted Sisters
+    .accept 25373 >>Accept The Hilltop Threat << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .accept 25349 >>Accept Twisted Sisters << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .target Chief Spirithorn
 step
     #completewith Drop25475x10
@@ -659,25 +648,17 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Kill |cRXP_ENEMY_Wandering Forest Walker|r and loot |cRXP_LOOT_Treant Muisek|r
     .complete 25338,1 --Treant Muisek (1)
     .mob Wandering Forest Walker
-    .isOnQuest 25338
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 69,74.42,43.36
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Uzer'i|r
     .turnin 25338 >>Turn in Treant Muisek
+    .accept 25345 >>Accept Faerie Dragon Muisek
     .target Witch Doctor Uzer'i
-    .isOnQuest 25338
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 69,74.85,43.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Krueg Skullsplitter|r
     .accept 25361 >>Accept A New Cloak's Sheen
     .target Krueg Skullsplitter
-    .isQuestTurnedIn 25338 --any of: Treant Muisek
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 69,74.42,43.36
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Uzer'i|r
-    .accept 25345 >>Accept Faerie Dragon Muisek
-    .target Witch Doctor Uzer'i
-    .isQuestTurnedIn 25338 --any of: Treant Muisek
 step
     #completewith Drop25475x11
     >>|cRXP_LOOT_OOX-22/FE Distress Beacon|r can drop from |cRXP_ENEMY_Gordunni Mauler|r, |cRXP_ENEMY_Gordunni Shaman|r, |cRXP_ENEMY_Gordunni Warlock|r. Use it to start the quest if you get one
@@ -685,6 +666,7 @@ step
     .accept 25475 >>Accept Find OOX-22/FE!
     .use 8705
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Drop25475x11
     #loop
     .goto 69,73.05,41.91,0
     .goto 69,73.05,41.91,40,0
@@ -692,45 +674,24 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 69,66.58,46.89,40,0
     .goto 69,70.96,45.84,40,0
     >>Kill |cRXP_ENEMY_Sprite Darters|r and |cRXP_ENEMY_Captured Sprite Darters|r. Loot them for |cRXP_LOOT_Iridescent Sprite Darter Wing|r
-    .complete 25361,1 --Iridescent Sprite Darter Wing (10)
-    .mob Sprite Darter
-    .mob Captured Sprite Darter
-    .isOnQuest 25361
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Drop25475x11
-    #loop
-    .goto 69,70.48,45.33,0
-    .goto 69,70.48,45.33,40,0
-    .goto 69,71.36,40.74,40,0
-    .goto 69,73.05,41.91,40,0
     >>Kill |cRXP_ENEMY_Sprite Darter|r and loot |cRXP_LOOT_Faerie Dragon Muisek|r
+    .complete 25361,1 --Iridescent Sprite Darter Wing (10)
     .complete 25345,1 --Faerie Dragon Muisek (1)
     .mob Sprite Darter
-    .isOnQuest 25345
+    .mob Captured Sprite Darter
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 69,74.42,43.36
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Uzer'i|r
     .turnin 25345 >>Turn in Faerie Dragon Muisek
+    .accept 25346 >>Accept Mountain Giant Muisek
     .target Witch Doctor Uzer'i
-    .isOnQuest 25345
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    #label Along68
     .goto 69,74.85,43.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Krueg Skullsplitter|r
     .turnin 25361 >>Turn in A New Cloak's Sheen
-    .target Krueg Skullsplitter
-    .isOnQuest 25361
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 69,74.85,43.33
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Krueg Skullsplitter|r
     .accept 25362 >>Accept A Grim Discovery
     .target Krueg Skullsplitter
-    .isQuestTurnedIn 25361 --any of: A New Cloak's Sheen
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 69,74.42,43.36
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Uzer'i|r
-    .accept 25346 >>Accept Mountain Giant Muisek
-    .target Witch Doctor Uzer'i
-    .isQuestTurnedIn 25345 --any of: Faerie Dragon Muisek
 step
     #completewith Drop25475x12
     >>|cRXP_LOOT_OOX-22/FE Distress Beacon|r can drop from |cRXP_ENEMY_Gordunni Mauler|r, |cRXP_ENEMY_Gordunni Shaman|r, |cRXP_ENEMY_Gordunni Warlock|r. Use it to start the quest if you get one
@@ -748,7 +709,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Grimtotem Raider
     .mob Grimtotem Naturalist
     .mob Grimtotem Shaman
-    .isOnQuest 25362
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #label Drop25475x12
     #loop
@@ -762,7 +722,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Woodpaw Trapper
     .mob Woodpaw Brute
     .mob Woodpaw Mystic
-    .isOnQuest 25363
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 69,69.37,59.35,0
@@ -771,7 +730,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Kill |cRXP_ENEMY_Mountain Giant|r and loot |cRXP_LOOT_Mountain Giant Muisek|r
     .complete 25346,1 --Mountain Giant Muisek (1)
     .mob Mountain Giant
-    .isOnQuest 25346
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 69,71.63,55.92
     >>Click the |cRXP_PICK_Woodpaw Battle Map|r
@@ -780,42 +738,20 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 69,74.42,43.36
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Uzer'i|r
     .turnin 25346 >>Turn in Mountain Giant Muisek
-    .target Witch Doctor Uzer'i
-    .isOnQuest 25346
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 69,74.42,43.36
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Uzer'i|r
     .accept 25391 >>Accept Weapons of Spirit
-    .target Witch Doctor Uzer'i
-    .isQuestTurnedIn 25346 --any of: Mountain Giant Muisek
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 69,74.42,43.36
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Witch Doctor Uzer'i|r
     .turnin 25391 >>Turn in Weapons of Spirit
     .target Witch Doctor Uzer'i
-    .isOnQuest 25391
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 69,74.85,43.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Krueg Skullsplitter|r
     .turnin 25362 >>Turn in A Grim Discovery
     .target Krueg Skullsplitter
-    .isOnQuest 25362
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 69,74.91,42.46
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hadoken Swiftstrider|r
     .turnin 25363 >>Turn in War on the Woodpaw
-    .target Hadoken Swiftstrider
-    .isOnQuest 25363
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 69,74.91,42.46
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hadoken Swiftstrider|r
-    .accept 25364 >>Accept Alpha Strike
-    .target Hadoken Swiftstrider
-    .isQuestTurnedIn 25363 --any of: War on the Woodpaw
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 69,74.91,42.46
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hadoken Swiftstrider|r
     .turnin 25366 >>Turn in The Battle Plans
+    .accept 25364 >>Accept Alpha Strike
     .accept 25365 >>Accept Woodpaw Investigation
     .accept 25367 >>Accept Zukk'ash Infestation
     .target Hadoken Swiftstrider
@@ -902,7 +838,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>Kill |cRXP_ENEMY_Woodpaw Alphas|r
     .complete 25364,1 --Woodpaw Alpha slain (5)
     .mob Woodpaw Alpha
-    .isOnQuest 25364
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 69,71.63,55.92
     >>Click the |cRXP_PICK_Woodpaw Battle Map|r
@@ -921,7 +856,7 @@ step
     .accept 25475 >>Accept Find OOX-22/FE!
     .use 8705
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along95
+    #completewith Along86
     >>As you go: Kill |cRXP_ENEMY_Zukk'ash Stingers|r, |cRXP_ENEMY_Zukk'ash Wasps|r, |cRXP_ENEMY_Zukk'ash Workers|r and |cRXP_ENEMY_Zukk'ash Tunnelers|r. Loot them for |cRXP_LOOT_Zukk'ash Carapace|r. |cRXP_WARN_Anything left is finished later|r
     .complete 25367,1 --Zukk'ash Carapace (20)
     .mob Zukk'ash Stinger
@@ -929,7 +864,7 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .mob Zukk'ash Worker
     .mob Zukk'ash Tunneler
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along95
+    #label Along86
     .goto 69,75.58,60.85
     >>Kill |cRXP_ENEMY_Stinglasher|r and loot |cRXP_LOOT_Stinglasher's Glands|r
     .complete 25369,1 --Stinglasher's Glands (1)
@@ -964,11 +899,6 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 69,74.91,42.46
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hadoken Swiftstrider|r
     .turnin 25364 >>Turn in Alpha Strike
-    .target Hadoken Swiftstrider
-    .isOnQuest 25364
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 69,74.91,42.46
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hadoken Swiftstrider|r
     .turnin 25367 >>Turn in Zukk'ash Infestation
     .target Hadoken Swiftstrider
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
@@ -1163,23 +1093,10 @@ step
     >>|cRXP_FRIENDLY_The Barrens|r: Warchief's Command: Northern Barrens!, Warchief's Command: Ashenvale! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_The Cape of Stranglethorn|r: Rescue OOX-22/FE!
     >>|cRXP_FRIENDLY_Dustwallow Marsh and back here|r: Deadmire << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 40|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 2.7 levels of quests, starting around Chromie), |cRXP_FRIENDLY_Western Plaguelands|r (about 1.1 levels of quests, starting around Field Agent Kaartish), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 0.7 levels of quests, starting around Tabetha). Completing this step loads the guide for Eastern Plaguelands --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Feralas is planned from level 83.|r Load its guide for level 83 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 36 - 84 Feralas
-#subweight -36
-#name 83-84 Feralas
---RouteBuilder:next
-#next Zone Routes (Horde)\82-83 Deepholm
-
+    +|cRXP_WARN_Until level 83, suggested zones|r: |cRXP_FRIENDLY_Eastern Plaguelands|r (about 2.7 levels of quests), |cRXP_FRIENDLY_Western Plaguelands|r (about 1.1 levels of quests), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.0 levels of quests). Then come back to this Feralas guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 83 >>|cRXP_WARN_The rest of Feralas is planned from level 83.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 69,74.58,42.93
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jawn Highmesa|r
@@ -1206,5 +1123,5 @@ step
     +|cRXP_WARN_End of the Feralas route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Thousand Needles|r: To the Summit << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 83|r: |cRXP_FRIENDLY_Deepholm|r (about 0.8 levels of quests, starting around Maruut Stonebinder). Completing this step loads the guide for Deepholm --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 83|r: |cRXP_FRIENDLY_Deepholm|r (about 0.8 levels of quests). Completing this step loads the guide for Deepholm --RouteBuilder:next
 ]])

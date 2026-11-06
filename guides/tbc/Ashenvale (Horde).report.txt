@@ -1,7 +1,7 @@
 Ashenvale - Horde - part 1 of 5, planned from level 19
 Guide "19-30 Ashenvale" in group "Zone Routes (Horde)": this part has 13 steps, 7 stops
 Written to guides/tbc/Ashenvale (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -81,7 +81,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Ashenvale - Horde - part 2 of 5, planned from level 22
 Guide "19-30 Ashenvale" in group "Zone Routes (Horde)": this part has 32 steps, 29 stops
 Written to guides/tbc/Ashenvale (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -145,7 +145,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Ashenvale - Horde - part 3 of 5, planned from level 25
 Guide "19-30 Ashenvale" in group "Zone Routes (Horde)": this part has 18 steps, 15 stops
 Written to guides/tbc/Ashenvale (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -198,7 +198,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Ashenvale - Horde - part 4 of 5, planned from level 28
 Guide "19-30 Ashenvale" in group "Zone Routes (Horde)": this part has 8 steps, 6 stops
 Written to guides/tbc/Ashenvale (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -245,7 +245,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Ashenvale - Horde - part 5 of 5, planned from level 32
 Guide "19-30 Ashenvale" in group "Zone Routes (Horde)": this part has 12 steps, 11 stops
 Written to guides/tbc/Ashenvale (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

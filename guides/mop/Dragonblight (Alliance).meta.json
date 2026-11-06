@@ -13,12 +13,12 @@
       "start": 72,
       "end": 73.21,
       "next": 76,
-      "guide": "72-74 Dragonblight: around Aurastrasza",
+      "guide": "72-75 Dragonblight",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Aurastrasza",
-          "guide": "72-74 Dragonblight: around Aurastrasza",
+          "label": "",
+          "name": "start",
+          "guide": "72-75 Dragonblight",
           "level": 72,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 76,
       "end": 76.03,
-      "guide": "76-77 Dragonblight",
+      "guide": "72-75 Dragonblight",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "76-77 Dragonblight",
+          "guide": "72-75 Dragonblight",
           "level": 76,
           "index": 0
         }

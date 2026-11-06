@@ -1,9 +1,9 @@
 -- 20-40 Hillsbrad Foothills: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 7 parts (from level 20, 23, 26, 29, 32, 35, 38).
--- Split into 7 guides, listed under "20 - 39 Hillsbrad Foothills" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 20; part 2 from 23; part 3 from 26; part 4 from 29; part 5 from 32; part 6 from 35; part 7 from 38.
 -- Edit zones/classic/Hillsbrad Foothills.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 20 - 39 Hillsbrad Foothills
-#subweight -20
-#name 20-21 Hillsbrad Foothills
---RouteBuilder:next
-#next Zone Routes (Horde)\18-20 The Barrens: around Tonga Runetotem
+#name 20-40 Hillsbrad Foothills
 
 step
     .goto 1424/0,401.39,-611.20
@@ -327,20 +323,9 @@ step
     +|cRXP_WARN_That is all of Hillsbrad Foothills for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Thunder Bluff|r: Return to Thunder Bluff
 step
-    +|cRXP_WARN_Suggested next zones at level 20|r: |cRXP_FRIENDLY_The Barrens|r (about 0.8 levels of quests, starting around Tonga Runetotem). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Until level 23, suggested zones|r: |cRXP_FRIENDLY_The Barrens|r (about 0.8 levels of quests). Then come back to this Hillsbrad Foothills guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 23.|r Load its guide for level 23 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 20 - 39 Hillsbrad Foothills
-#subweight -20
-#name 23-24 Hillsbrad Foothills: around Apothecary Lydon
-
+    .xp 23 >>|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 23.|r Come back to this guide then
 step
     .goto 1424/0,-899.41,-6.61
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apothecary Lydon|r
@@ -487,18 +472,7 @@ step
     .turnin 546 >>Turn in Souvenirs of Death
     .target Deathguard Samsa
 step
-    +|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 26.|r Load its guide for level 26 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 20 - 39 Hillsbrad Foothills
-#subweight -20
-#name 26-27 Hillsbrad Foothills
-
+    .xp 26 >>|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 26.|r Come back to this guide then
 step
     .goto 1424/0,-927.89,-36.27
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Executor Darthalia|r
@@ -553,18 +527,7 @@ step
     +|cRXP_WARN_That is all of Hillsbrad Foothills for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Undercity|r: Elixir of Agony
 step
-    +|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 29.|r Load its guide for level 29 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 20 - 39 Hillsbrad Foothills
-#subweight -20
-#name 29-30 Hillsbrad Foothills: around Krusk
-
+    .xp 29 >>|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 29.|r Come back to this guide then
 step
     .goto 1424/0,-935.25,-19.41
     >>Click the |cRXP_PICK_Dangerous!|r
@@ -766,18 +729,7 @@ step
     >>|cRXP_FRIENDLY_Alterac Mountains|r: Gol'dir, Lord Aliden Perenolde
     >>|cRXP_FRIENDLY_Alterac Mountains and back here|r: Infiltration
 step
-    +|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 32.|r Load its guide for level 32 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 20 - 39 Hillsbrad Foothills
-#subweight -20
-#name 32-33 Hillsbrad Foothills: around Keeper Bel'varil
-
+    .xp 32 >>|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 32.|r Come back to this guide then
 step
     .goto 1424/0,-901.33,-46.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Keeper Bel'varil|r
@@ -928,18 +880,7 @@ step
     >>|cRXP_FRIENDLY_Undercity|r: Battle of Hillsbrad
     >>|cRXP_FRIENDLY_Alterac Mountains and back here|r: Stone Tokens, Helcular's Revenge, Prison Break In
 step
-    +|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 35.|r Load its guide for level 35 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 20 - 39 Hillsbrad Foothills
-#subweight -20
-#name 35-36 Hillsbrad Foothills
-
+    .xp 35 >>|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 35.|r Come back to this guide then
 step
     .goto 1424/0,-937.49,-40.53
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Melisara|r
@@ -1022,18 +963,7 @@ step
     >>|cRXP_FRIENDLY_Undercity|r: The Crown of Will
     >>|cRXP_FRIENDLY_Alterac Mountains and back here|r: The Crown of Will
 step
-    +|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 38.|r Load its guide for level 38 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 20 - 39 Hillsbrad Foothills
-#subweight -20
-#name 38-39 Hillsbrad Foothills
-
+    .xp 38 >>|cRXP_WARN_The rest of Hillsbrad Foothills is planned from level 38.|r Come back to this guide then
 step
     .goto 1424/0,-937.49,-42.67
     >>Click the |cRXP_PICK_WANTED|r

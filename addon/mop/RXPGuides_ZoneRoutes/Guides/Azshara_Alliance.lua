@@ -1,9 +1,9 @@
 -- 10-17 Azshara: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 10, 13, 16).
--- Split into 3 guides, listed under "10 - 17 Azshara" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 10; part 2 from 13; part 3 from 16.
 -- Edit zones/mop/Azshara.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 10 - 17 Azshara
-#subweight -10
-#name 10-11 Azshara
+#name 10-17 Azshara
 --RouteBuilder:next
-#next Zone Routes (Alliance)\10-13 Darkshore: around Ranger Glynda Nal'Shea;Zone Routes (Alliance)\11-15 Loch Modan: around Captain Rugelfuss
+#next Zone Routes (Alliance)\10-20 Darkshore
 
 step
     .goto 76,26.82,76.95
@@ -70,22 +68,9 @@ step
     .target Horzak Zignibble
     .isOnQuest 14162
 step
-    +|cRXP_WARN_Suggested next zones at level 10|r: |cRXP_FRIENDLY_Darkshore|r (about 1.1 levels of quests, starting around Ranger Glynda Nal'Shea), |cRXP_FRIENDLY_Loch Modan|r (about 0.5 levels of quests, starting around Captain Rugelfuss). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 13, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 1.1 levels of quests), |cRXP_FRIENDLY_Loch Modan|r (about 0.5 levels of quests). Then come back to this Azshara guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Azshara is planned from level 13.|r Load its guide for level 13 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 10 - 17 Azshara
-#subweight -10
-#name 13-14 Azshara
---RouteBuilder:next
-#next Zone Routes (Alliance)\13-15 Darkshore: around Keeper Karithus;Zone Routes (Alliance)\11-15 Loch Modan: around Captain Rugelfuss
-
+    .xp 13 >>|cRXP_WARN_The rest of Azshara is planned from level 13.|r Come back to this guide then
 step
     .goto 76,45.06,75.48
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Twistex Happytongs|r
@@ -169,22 +154,9 @@ step
     .target Bleenik Fizzlefuse
     .isOnQuest 24458
 step
-    +|cRXP_WARN_Suggested next zones at level 13|r: |cRXP_FRIENDLY_Darkshore|r (about 1.0 levels of quests, starting around Keeper Karithus), |cRXP_FRIENDLY_Loch Modan|r (about 0.6 levels of quests, starting around Captain Rugelfuss). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 16, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 1.1 levels of quests), |cRXP_FRIENDLY_Loch Modan|r (about 0.6 levels of quests). Then come back to this Azshara guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Azshara is planned from level 16.|r Load its guide for level 16 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 10 - 17 Azshara
-#subweight -10
-#name 16-17 Azshara: around Haggrum Bloodfist
---RouteBuilder:next
-#next Zone Routes (Alliance)\15-20 Darkshore: around Ranger Glynda Nal'Shea
-
+    .xp 16 >>|cRXP_WARN_The rest of Azshara is planned from level 16.|r Come back to this guide then
 step
     .goto 76,42.41,23.61
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Haggrum Bloodfist|r
@@ -253,5 +225,5 @@ step
 step
     +|cRXP_WARN_End of the Azshara route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 16|r: |cRXP_FRIENDLY_Darkshore|r (about 0.9 levels of quests, starting around Ranger Glynda Nal'Shea). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 16|r: |cRXP_FRIENDLY_Darkshore|r (about 1.2 levels of quests). Completing this step loads the guide for Darkshore --RouteBuilder:next
 ]])

@@ -1,9 +1,9 @@
 -- 35-42 Arathi Highlands: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 35, 38, 41).
--- Split into 3 guides, listed under "35 - 42 Arathi Highlands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 35; part 2 from 38; part 3 from 41.
 -- Edit zones/tbc/Arathi Highlands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 35 - 42 Arathi Highlands
-#subweight -35
-#name 35-36 Arathi Highlands
+#name 35-42 Arathi Highlands
 --RouteBuilder:next
-#next Zone Routes (Alliance)\35-37 Dustwallow Marsh: around Captain Garran Vimes;Zone Routes (Alliance)\34-35 Stranglethorn Vale: around Krazek;Zone Routes (Alliance)\35-36 Badlands: around Prospector Ryedol
+#next Zone Routes (Alliance)\30-50 Stranglethorn Vale
 
 step
     .goto 1417/0,-2423.31,-2356.69
@@ -273,22 +271,9 @@ step
     +|cRXP_WARN_That is all of Arathi Highlands for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Hillsbrad Foothills|r: MacKreel's Moonshine, Hints of a New Plague?
 step
-    +|cRXP_WARN_Suggested next zones at level 35|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 2.2 levels of quests, starting around Captain Garran Vimes), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests, starting around Krazek), |cRXP_FRIENDLY_Badlands|r (about 0.5 levels of quests, starting around Prospector Ryedol). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
+    +|cRXP_WARN_Until level 38, suggested zones|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 2.2 levels of quests), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Badlands|r (about 0.5 levels of quests). Then come back to this Arathi Highlands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Arathi Highlands is planned from level 38.|r Load its guide for level 38 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 35 - 42 Arathi Highlands
-#subweight -35
-#name 38-39 Arathi Highlands: around Skuerto
---RouteBuilder:next
-#next Zone Routes (Alliance)\38-40 Stranglethorn Vale: around Fleet Master Seahorn;Zone Routes (Alliance)\37-39 Dustwallow Marsh: around "Swamp Eye" Jarl
-
+    .xp 38 >>|cRXP_WARN_The rest of Arathi Highlands is planned from level 38.|r Come back to this guide then
 step
     .goto 1417/0,-2506.11,-1275.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Narj Deepslice|r
@@ -528,22 +513,9 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: Malin's Request
     >>|cRXP_FRIENDLY_Stranglethorn Vale|r: Sunken Treasure
 step
-    +|cRXP_WARN_Suggested next zones at level 38|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.9 levels of quests, starting around Fleet Master Seahorn), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 0.7 levels of quests, starting around "Swamp Eye" Jarl). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Until level 41, suggested zones|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.9 levels of quests), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.9 levels of quests). Then come back to this Arathi Highlands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Arathi Highlands is planned from level 41.|r Load its guide for level 41 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 35 - 42 Arathi Highlands
-#subweight -35
-#name 41-42 Arathi Highlands
---RouteBuilder:next
-#next Zone Routes (Alliance)\38-40 Stranglethorn Vale: around Fleet Master Seahorn
-
+    .xp 41 >>|cRXP_WARN_The rest of Arathi Highlands is planned from level 41.|r Come back to this guide then
 step
     .goto 1417/0,-2170.95,-1510.45
     >>Click the |cRXP_PICK_Stone of Inner Binding|r
@@ -595,5 +567,5 @@ step
     >>|cRXP_FRIENDLY_Badlands|r: Theldurin the Lost
     >>|cRXP_FRIENDLY_Ironforge|r: Myzrael's Allies
 step
-    +|cRXP_WARN_Suggested next zones at level 41|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests, starting around Fleet Master Seahorn). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 41|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
 ]])

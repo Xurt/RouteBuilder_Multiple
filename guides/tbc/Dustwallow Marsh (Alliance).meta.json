@@ -13,21 +13,14 @@
       "start": 35,
       "end": 38.16,
       "next": 41,
-      "guide": "37-39 Dustwallow Marsh: around \u0022Swamp Eye\u0022 Jarl",
+      "guide": "35-41 Dustwallow Marsh",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Captain Garran Vimes",
-          "guide": "35-37 Dustwallow Marsh: around Captain Garran Vimes",
+          "label": "",
+          "name": "start",
+          "guide": "35-41 Dustwallow Marsh",
           "level": 35,
           "index": 0
-        },
-        {
-          "label": "RBSection1_2",
-          "name": "around \u0022Swamp Eye\u0022 Jarl",
-          "guide": "37-39 Dustwallow Marsh: around \u0022Swamp Eye\u0022 Jarl",
-          "level": 37,
-          "index": 1
         }
       ]
     },
@@ -35,12 +28,12 @@
       "part": 2,
       "start": 41,
       "end": 41.08,
-      "guide": "41-42 Dustwallow Marsh",
+      "guide": "35-41 Dustwallow Marsh",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "41-42 Dustwallow Marsh",
+          "guide": "35-41 Dustwallow Marsh",
           "level": 41,
           "index": 0
         }
@@ -63,7 +56,7 @@
       "req": 30,
       "xp": 4100,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -81,7 +74,7 @@
       "req": 30,
       "xp": 3300,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -376,7 +369,7 @@
       "req": 33,
       "xp": 370,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -385,7 +378,7 @@
       "req": 33,
       "xp": 3710,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -403,7 +396,7 @@
       "req": 33,
       "xp": 3710,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -421,7 +414,7 @@
       "req": 33,
       "xp": 3710,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -430,7 +423,7 @@
       "req": 33,
       "xp": 3920,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -439,7 +432,7 @@
       "req": 35,
       "xp": 4140,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -457,7 +450,7 @@
       "req": 35,
       "xp": 4590,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -466,7 +459,7 @@
       "req": 35,
       "xp": 4140,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -475,7 +468,7 @@
       "req": 35,
       "xp": 4140,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -538,7 +531,7 @@
       "req": 30,
       "xp": 3500,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -547,7 +540,7 @@
       "req": 30,
       "xp": 4350,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -565,7 +558,7 @@
       "req": 30,
       "xp": 3920,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -664,7 +657,7 @@
       "req": 37,
       "xp": 4370,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -673,7 +666,7 @@
       "req": 33,
       "xp": 4600,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": "",
       "from": "Elwynn Forest"
     },

@@ -1,9 +1,9 @@
 -- 61-65 Zangarmarsh: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 61, 65).
--- Split into 2 guides, listed under "61 - 66 Zangarmarsh" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 61; part 2 from 65.
 -- Edit zones/mop/Zangarmarsh.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 61 - 66 Zangarmarsh
-#subweight -61
-#name 61-63 Zangarmarsh: around Ysiel Windsinger
+#name 61-65 Zangarmarsh
 --RouteBuilder:next
-#next Zone Routes (Horde)\62-65 Terokkar Forest: around Earthbinder Tavgren
+#next Zone Routes (Horde)\62-70 Terokkar Forest;Zone Routes (Horde)\65-68 Nagrand
 
 step
     .xp 61 >>Grind to level 61 (Warden Hamoot needs it)
@@ -879,23 +877,10 @@ step
     +|cRXP_WARN_That is all of Zangarmarsh for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Hellfire Peninsula|r: Warning the Cenarion Circle
     >>|cRXP_FRIENDLY_Terokkar Forest|r: News from Zangarmarsh << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 62|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 1.0 levels of quests, starting around Earthbinder Tavgren). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Zangarmarsh is planned from level 65.|r Load its guide for level 65 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 61 - 66 Zangarmarsh
-#subweight -61
-#name 65-66 Zangarmarsh
---RouteBuilder:next
-#next Zone Routes (Horde)\62-65 Terokkar Forest: around Earthbinder Tavgren;Zone Routes (Horde)\65-67 Nagrand: around Hemet Nesingwary
-
+    +|cRXP_WARN_Until level 65, suggested zones|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 1.0 levels of quests). Then come back to this Zangarmarsh guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 65 >>|cRXP_WARN_The rest of Zangarmarsh is planned from level 65.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 102,32.01,50.43
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Messenger Gazgrigg|r
@@ -911,5 +896,5 @@ step
     >>|cRXP_FRIENDLY_Blade's Edge Mountains|r: The Ogre Threat << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Nagrand|r: Reinforcements for Garadar << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 65|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.8 levels of quests, starting around Earthbinder Tavgren), |cRXP_FRIENDLY_Nagrand|r (about 0.7 levels of quests, starting around Hemet Nesingwary). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 65|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.8 levels of quests), |cRXP_FRIENDLY_Nagrand|r (about 0.7 levels of quests). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
 ]])

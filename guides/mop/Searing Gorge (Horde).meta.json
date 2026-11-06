@@ -13,12 +13,12 @@
       "start": 47,
       "end": 48.37,
       "next": 51,
-      "guide": "47-49 Searing Gorge: around Jack Rockleg",
+      "guide": "47-52 Searing Gorge",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Jack Rockleg",
-          "guide": "47-49 Searing Gorge: around Jack Rockleg",
+          "label": "",
+          "name": "start",
+          "guide": "47-52 Searing Gorge",
           "level": 47,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 51,
       "end": 51,
       "next": 54,
-      "guide": "51-52 Searing Gorge",
+      "guide": "47-52 Searing Gorge",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "51-52 Searing Gorge",
+          "guide": "47-52 Searing Gorge",
           "level": 51,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 54,
       "end": 54,
-      "guide": "54-55 Searing Gorge",
+      "guide": "47-52 Searing Gorge",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "54-55 Searing Gorge",
+          "guide": "47-52 Searing Gorge",
           "level": 54,
           "index": 0
         }

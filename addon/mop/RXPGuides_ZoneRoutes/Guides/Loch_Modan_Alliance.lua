@@ -1,8 +1,7 @@
 -- 11-20 Loch Modan: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
--- Split into 2 guides, listed under "11 - 19 Loch Modan" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
 -- Edit zones/mop/Loch Modan.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -12,10 +11,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 11 - 19 Loch Modan
-#subweight -11
-#name 11-15 Loch Modan: around Captain Rugelfuss
-#next Zone Routes (Alliance)\15-19 Loch Modan: around Mountaineer Kadrell
+#name 11-20 Loch Modan
+--RouteBuilder:next
+#next Zone Routes (Alliance)\10-20 Darkshore
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 48,37.24,47.38
@@ -413,49 +411,27 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cannary Caskshot|r
     .turnin 26868 >>Turn in Axis of Awful
     .target Cannary Caskshot
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 11 - 19 Loch Modan
-#subweight -11
-#name 15-19 Loch Modan: around Mountaineer Kadrell
---RouteBuilder:next
-#next Zone Routes (Alliance)\15-20 Darkshore: around Ranger Glynda Nal'Shea
-
 step
     .goto 48,37.24,47.38
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jern Hornhelm|r
     .accept 13639 >>Accept Resupplying the Excavation
     .target Jern Hornhelm
-    .isQuestTurnedIn 26868 --any of: Axis of Awful
 step
     .goto 48,56.36,65.98
     >>Locate Huldar, Miran, and Saean.
     .complete 13639,1 --Huldar
     .target Huldar
-    .isOnQuest 13639
 step
     .goto 48,56.36,65.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Huldar|r
     .turnin 13639 >>Turn in Resupplying the Excavation
+    .accept 309 >>Accept Protecting the Shipment << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Huldar
-    .isOnQuest 13639
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 48,56.36,65.98
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Huldar|r
-    .accept 309 >>Accept Protecting the Shipment
-    .target Huldar
-    .isQuestTurnedIn 13639 --any of: Resupplying the Excavation
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 48,56.51,65.94
     >>Kill |cRXP_ENEMY_Saean|r
     .complete 309,1 --Saean slain (1)
     .mob Saean
-    .isOnQuest 309
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 48,61.70,73.18
     >>Click the |cRXP_PICK_Stolen Explorers' League Document|r
@@ -469,21 +445,14 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 48,65.12,65.77
     >>Escort Miran to the excavation site
     .complete 309,2 --Escort Miran to the excavation site
-    .isOnQuest 309
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 48,65.34,65.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prospector Ironband|r
     .turnin 309 >>Turn in Protecting the Shipment
-    .target Prospector Ironband
-    .isOnQuest 309
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 48,65.34,65.98
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prospector Ironband|r
     .accept 13650 >>Accept Keep Your Hands Off The Goods!
     .target Prospector Ironband
-    .isQuestTurnedIn 309 --any of: Protecting the Shipment
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along63
+    #completewith Along61
     >>As you go: Kill |cRXP_ENEMY_Stonesplinter Geomancers|r and |cRXP_ENEMY_Stonesplinter Diggers|r. Loot them for |cRXP_LOOT_Carved Stone Idol|r. |cRXP_WARN_Anything left is finished later|r
     .complete 26961,1 --Carved Stone Idol (8)
     .mob Stonesplinter Geomancer
@@ -497,20 +466,17 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>Inspect the Upturned Giant Artifact, the Overdressed Woman Artifact, and the Broken Tablet Artifact.
     .complete 13650,1 --Ironband Tablet Artifact Bunny
     .target Ironband Tablet Artifact Bunny
-    .isOnQuest 13650
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 48,72.73,65.43
     >>Inspect the Upturned Giant Artifact, the Overdressed Woman Artifact, and the Broken Tablet Artifact.
     .complete 13650,3 --Ironband Liberty Artifact Bunny
     .target Ironband Liberty Artifact Bunny
-    .isOnQuest 13650
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along63
+    #label Along61
     .goto 48,70.07,59.92
     >>Inspect the Upturned Giant Artifact, the Overdressed Woman Artifact, and the Broken Tablet Artifact.
     .complete 13650,2 --Ironband Sandal Artifact Bunny
     .target Ironband Sandal Artifact Bunny
-    .isOnQuest 13650
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
     .goto 48,72.62,64.95,0
@@ -525,19 +491,12 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prospector Ironband|r
     .turnin 13650 >>Turn in Keep Your Hands Off The Goods!
     .target Prospector Ironband
-    .isOnQuest 13650
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 48,64.90,66.66
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magmar Fellhew|r
-    .turnin 26961 >>Turn in Gathering Idols
-    .target Magmar Fellhew
 step
     .goto 48,64.90,66.66
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magmar Fellhew|r
+    .turnin 26961 >>Turn in Gathering Idols << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 13647 >>Accept Joining the Hunt
     .target Magmar Fellhew
-    .isQuestTurnedIn 309 --Protecting the Shipment
-    .isQuestTurnedIn 13650 --Keep Your Hands Off The Goods!
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 48,82.79,63.46
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Safety Warden Pipsy|r
@@ -563,13 +522,8 @@ step
     .goto 48,81.76,61.66
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marek Ironheart|r
     .turnin 13647 >>Turn in Joining the Hunt
-    .target Marek Ironheart
-    .isOnQuest 13647
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 48,81.76,61.66
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marek Ironheart|r
-    .accept 27028 >>Accept Hornet Hunting
-    .accept 27030 >>Accept Foxtails By The Handful
+    .accept 27028 >>Accept Hornet Hunting << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .accept 27030 >>Accept Foxtails By The Handful << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .target Marek Ironheart
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     #loop
@@ -580,11 +534,11 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .complete 27031,1 --Pristine Flight Feather (3)
     .mob Golden Eagle
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along75
+    #completewith Along71
     >>As you go: Pick up |cRXP_PICK_Stabthistle Seed|r from the ground. |cRXP_WARN_Anything left is finished later|r
     .complete 27025,1 --Stabthistle Seed (6)
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along75
+    #label Along71
     .goto 48,73.17,35.85
     >>Click the |cRXP_PICK_Stolen Explorers' League Document|r
     .accept 13659 >>Accept Explorers' League Document (6 of 6)
@@ -602,13 +556,13 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .mob Hill Fox
     .mob Ashtail
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #completewith Along77
+    #completewith Along73
     >>As you go: Kill |cRXP_ENEMY_Marsh Hornets|r and |cRXP_ENEMY_Nixes|r. Loot them for |cRXP_LOOT_Glassy Hornet Wing|r. |cRXP_WARN_Anything left is finished later|r
     .complete 27028,1 --Glassy Hornet Wing (6)
     .mob Marsh Hornet
     .mob Nix
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    #label Along77
+    #label Along73
     .goto 48,53.71,38.11
     >>Click the |cRXP_PICK_Stolen Explorers' League Document|r
     .accept 13660 >>Accept Explorers' League Document (5 of 6)
@@ -694,27 +648,16 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .turnin 27033 >>Turn in Skystrider's Heart
     .accept 27034 >>Accept He's That Age
     .target Bingles Blastenheimer
-step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    .goto 48,37.27,47.77
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Torren Squarejaw|r
-    .turnin 13657 >>Turn in Explorers' League Document (3 of 6)
-    .turnin 13658 >>Turn in Explorers' League Document (4 of 6)
-    .turnin 13660 >>Turn in Explorers' League Document (5 of 6)
-    .turnin 13659 >>Turn in Explorers' League Document (6 of 6)
-    .target Torren Squarejaw
 step
     .goto 48,37.27,47.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Torren Squarejaw|r
+    .turnin 13657 >>Turn in Explorers' League Document (3 of 6) << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .turnin 13658 >>Turn in Explorers' League Document (4 of 6) << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .turnin 13660 >>Turn in Explorers' League Document (5 of 6) << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .turnin 13659 >>Turn in Explorers' League Document (6 of 6) << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .accept 13661 >>Accept Heartfelt Appreciation
-    .target Torren Squarejaw
-    .isQuestTurnedIn 13655 --Explorers' League Document (2 of 6)
-    .isQuestTurnedIn 13656 --Explorers' League Document (1 of 6)
-step
-    .goto 48,37.27,47.77
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Torren Squarejaw|r
     .turnin 13661 >>Turn in Heartfelt Appreciation
     .target Torren Squarejaw
-    .isOnQuest 13661
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 48,58.52,29.10
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ando Blastenheimer|r
@@ -787,5 +730,5 @@ step
     >>|cRXP_FRIENDLY_Dun Morogh|r: The Lost Pilot << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Wetlands|r: Checking on the Boys
 step
-    +|cRXP_WARN_Suggested next zones at level 19|r: |cRXP_FRIENDLY_Darkshore|r (about 0.6 levels of quests, starting around Ranger Glynda Nal'Shea). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 19|r: |cRXP_FRIENDLY_Darkshore|r (about 0.8 levels of quests). Completing this step loads the guide for Darkshore --RouteBuilder:next
 ]])

@@ -13,12 +13,12 @@
       "start": 87,
       "end": 87.77,
       "next": 90,
-      "guide": "87-88 Kun-Lai Summit: around Smokey Sootassle",
+      "guide": "87-90 Kun-Lai Summit",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Smokey Sootassle",
-          "guide": "87-88 Kun-Lai Summit: around Smokey Sootassle",
+          "label": "",
+          "name": "start",
+          "guide": "87-90 Kun-Lai Summit",
           "level": 87,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 90,
       "end": 90,
-      "guide": "90-91 Kun-Lai Summit",
+      "guide": "87-90 Kun-Lai Summit",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "90-91 Kun-Lai Summit",
+          "guide": "87-90 Kun-Lai Summit",
           "level": 90,
           "index": 0
         }

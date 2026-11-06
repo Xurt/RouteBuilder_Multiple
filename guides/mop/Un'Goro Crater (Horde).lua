@@ -1,8 +1,7 @@
 -- 51-55 Un'Goro Crater: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
--- Split into 2 guides, listed under "51 - 55 Un'Goro Crater" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
 -- Edit zones/mop/Un'Goro Crater.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -12,10 +11,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 51 - 55 Un'Goro Crater
-#subweight -51
-#name 51-53 Un'Goro Crater: around Mor'vek
-#next Zone Routes (Horde)\53-55 Un'Goro Crater: around Mor'vek
+#name 51-55 Un'Goro Crater
+--RouteBuilder:next
+#next Zone Routes (Horde)\50-55 Winterspring;Zone Routes (Horde)\55-56 Silithus;Zone Routes (Horde)\52-55 Swamp of Sorrows
 
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 78,71.47,74.06
@@ -570,25 +568,11 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mor'vek|r
     .turnin 13906 >>Turn in They Grow Up So Fast
     .target Mor'vek
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 51 - 55 Un'Goro Crater
-#subweight -51
-#name 53-55 Un'Goro Crater: around Mor'vek
---RouteBuilder:next
-#next Zone Routes (Horde)\52-54 Winterspring: around Rinno Curtainfire;Zone Routes (Horde)\55-56 Silithus;Zone Routes (Horde)\52-55 Swamp of Sorrows: around Trade Baron Silversnap
-
 step
     .goto 78,71.24,76.57
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Torwa Pathfinder|r
     .turnin 24733 >>Turn in The Bait for Lar'korwi
     .target Torwa Pathfinder
-    .isOnQuest 24733
 step
     #loop
     .goto 78,57.16,69.43,0
@@ -602,31 +586,18 @@ step
     .mob Plated Stegodon
     .mob Spiked Stegodon
     .mob Thunderstomp Stegodon
-    .isOnQuest 24730
 step
     .goto 78,54.20,62.50
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_J.D. Collie|r
     .turnin 24721 >>Turn in The Eastern Pylon
     .target J.D. Collie
-    .isOnQuest 24721
 step
     .goto 78,43.30,41.01
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gremix|r
     .turnin 24717 >>Turn in The Apes of Un'Goro
-    .target Gremix
-    .isOnQuest 24717
-step
-    .goto 78,43.30,41.01
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gremix|r
+    .turnin 24718 >>Turn in The Mighty U'cha
     .accept 24722 >>Accept The Northern Pylon
     .target Gremix
-    .isQuestTurnedIn 24717 --any of: The Apes of Un'Goro
-step
-    .goto 78,43.30,41.01
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gremix|r
-    .turnin 24718 >>Turn in The Mighty U'cha
-    .target Gremix
-    .isOnQuest 24718
 step
     .goto 78,43.44,40.93
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Karna Remtravel|r
@@ -637,55 +608,38 @@ step
     .goto 78,56.52,12.54
     >>Click the |cRXP_PICK_Northern Crystal Pylon|r
     .complete 24722,1 --Northern Crystal Pylon
-    .isOnQuest 24722
 step
     .goto 78,59.30,17.90
     >>Pick up |cRXP_PICK_Un'Goro Coconut|r from the ground
     .collect 50237,1,24715,1 --Un'Goro Coconut (1)
-    .isOnQuest 24715
 step
     .goto 78,59.64,29.24
     >>Kill |cRXP_ENEMY_Gormashh|r and loot |cRXP_LOOT_Unbelievably Sticky Tar|r
     .complete 24699,1 --Unbelievably Sticky Tar (1)
     .mob Gormashh
-    .isOnQuest 24699
 step
     .goto 78,43.28,40.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tara|r
     .turnin 24699 >>Turn in Gormashh the Glutinous
     .target Tara
-    .isOnQuest 24699
 step
     .goto 78,31.85,50.28
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spark Nilminer|r
     .turnin 24730 >>Turn in Roll the Bones
-    .target Spark Nilminer
-    .isOnQuest 24730
-step
-    .goto 78,31.85,50.28
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spark Nilminer|r
     .accept 24708 >>Accept The Fossil-Finder 3000
     .target Spark Nilminer
-    .isQuestTurnedIn 24730 --any of: Roll the Bones
 step
     .goto 78,30.62,51.14
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maximillian of Northshire|r
     .complete 24703,1 --Maximillian of Northshire
     .target Maximillian of Northshire
-    .isOnQuest 24703
 step
     .goto 78,30.62,51.14
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maximillian of Northshire|r
     .turnin 24703 >>Turn in An Important Lesson
-    .target Maximillian of Northshire
-    .isOnQuest 24703
-step
-    .goto 78,30.62,51.14
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maximillian of Northshire|r
     .accept 24705 >>Accept Town Dwellers Were Made to be Saved
     .accept 24704 >>Accept The Evil Dragons of Un'Goro Crater
     .target Maximillian of Northshire
-    .isQuestTurnedIn 24703 --any of: An Important Lesson
 step
     #loop
     .goto 78,28.63,46.58,0
@@ -698,66 +652,51 @@ step
     .mob Ironhide Devilsaur
     .mob Tyrant Devilsaur
     .mob Stegodon
-    .isOnQuest 24704
 step
     .goto 78,29.23,22.50
     >>Rescue the Damsel by the Shore, the Damsel in the Cliffs, and the Damsel of the North.
     .complete 24705,3 --Dweller of the North
     .target Dweller of the North
-    .isOnQuest 24705
 step
     .goto 78,23.76,50.00
     >>Rescue the Damsel by the Shore, the Damsel in the Cliffs, and the Damsel of the North.
     .complete 24705,2 --Dweller in the Cliffs
     .target Dweller in the Cliffs
-    .isOnQuest 24705
 step
     .goto 78,30.62,51.14
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maximillian of Northshire|r
     .turnin 24704 >>Turn in The Evil Dragons of Un'Goro Crater
     .target Maximillian of Northshire
-    .isOnQuest 24704
 step
     .goto 78,36.40,59.12
     >>Open the |cRXP_PICK_Dweller's Crate|r. Loot it for |cRXP_LOOT_Blood Elf's Belongings|r
     .collect 50288,1,24705,1 --Blood Elf's Belongings (1)
-    .isOnQuest 24705
 step
     .goto 78,36.52,59.37
     >>Rescue the Damsel by the Shore, the Damsel in the Cliffs, and the Damsel of the North.
     .complete 24705,1 --Dweller by the Shore
     .target Dweller by the Shore
-    .isOnQuest 24705
 step
     .goto 78,30.62,51.14
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maximillian of Northshire|r
     .turnin 24705 >>Turn in Town Dwellers Were Made to be Saved
-    .target Maximillian of Northshire
-    .isOnQuest 24705
-step
-    .goto 78,30.62,51.14
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maximillian of Northshire|r
     .accept 24706 >>Accept The Spirits of Golakka Hot Springs
     .target Maximillian of Northshire
-    .isQuestTurnedIn 24704 --The Evil Dragons of Un'Goro Crater
-    .isQuestTurnedIn 24705 --Town Dwellers Were Made to be Saved
 step
     .goto 78,33.86,60.61
     >>Stand by as Maximillian of Northshire speaks to 2 Steam Furies.
     .complete 24706,1 --Steaming Fury (2)
     .target Steaming Fury
-    .isOnQuest 24706
 step
     .goto 78,32.96,74.67
     >>Open the |cRXP_PICK_Suspicious Mound of Dirt|r. Loot it for |cRXP_LOOT_Enormous Dinosaur Talon|r
     .complete 24708,1 --Enormous Dinosaur Talon (1)
-    .isOnQuest 24708
 step
     .goto 78,30.62,51.14
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maximillian of Northshire|r
     .turnin 24706 >>Turn in The Spirits of Golakka Hot Springs
+    .accept 24707 >>Accept The Ballad of Maximillian
     .target Maximillian of Northshire
-    .isOnQuest 24706
 step
     .goto 78,31.85,50.28
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spark Nilminer|r
@@ -765,17 +704,10 @@ step
     .isQuestComplete 24708
     .target Spark Nilminer
 step
-    .goto 78,30.62,51.14
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maximillian of Northshire|r
-    .accept 24707 >>Accept The Ballad of Maximillian
-    .target Maximillian of Northshire
-    .isQuestTurnedIn 24706 --any of: The Spirits of Golakka Hot Springs
-step
     .goto 78,30.84,48.25
     >>Kill |cRXP_ENEMY_Devilsaur Queen|r
     .complete 24707,1 --Devilsaur Queen slain (1)
     .mob Devilsaur Queen
-    .isOnQuest 24707
 step
     .goto 78,30.62,51.14
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maximillian of Northshire|r
@@ -786,43 +718,28 @@ step
     .goto 78,31.85,50.28
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spark Nilminer|r
     .turnin 24708 >>Turn in The Fossil-Finder 3000
-    .target Spark Nilminer
-    .isOnQuest 24708
-step
-    .goto 78,31.85,50.28
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spark Nilminer|r
     .accept 24709 >>Accept A Tale of Two Shovels
     .target Spark Nilminer
-    .isQuestTurnedIn 24708 --any of: The Fossil-Finder 3000
 step
     .goto 78,30.62,51.14
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maximillian of Northshire|r
     .turnin 24707 >>Turn in The Ballad of Maximillian
     .target Maximillian of Northshire
-    .isOnQuest 24707
 step
     .goto 78,37.81,82.81
     >>Kill |cRXP_ENEMY_Durrin Direshovel|r and loot |cRXP_LOOT_Durrin's Archaeological Findings|r
     .complete 24709,1 --Durrin's Archaeological Findings (1)
     .mob Durrin Direshovel
-    .isOnQuest 24709
 step
     .goto 78,31.85,50.28
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spark Nilminer|r
     .turnin 24709 >>Turn in A Tale of Two Shovels
-    .target Spark Nilminer
-    .isOnQuest 24709
-step
-    .goto 78,31.85,50.28
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spark Nilminer|r
     .accept 24723 >>Accept The Western Pylon
     .target Spark Nilminer
-    .isQuestTurnedIn 24709 --any of: A Tale of Two Shovels
 step
     .goto 78,23.58,50.01
     >>Click the |cRXP_PICK_Western Crystal Pylon|r
     .complete 24723,1 --Western Crystal Pylon
-    .isOnQuest 24723
 step
     #completewith next
     .hs >>Hearth to Gibbert's inn. |cRXP_WARN_Walk instead if you are already nearby|r
@@ -831,61 +748,34 @@ step
     .goto 78,54.20,62.50
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_J.D. Collie|r
     .turnin 24722 >>Turn in The Northern Pylon
-    .target J.D. Collie
-    .isOnQuest 24722
-step
-    .goto 78,54.20,62.50
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_J.D. Collie|r
     .turnin 24723 >>Turn in The Western Pylon
     .target J.D. Collie
-    .isOnQuest 24723
 step
     .goto 78,53.83,62.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Un'Goro Examinant|r
     .accept 24694 >>Accept The Shaper's Terrace
     .target Un'Goro Examinant
-    .isQuestTurnedIn 24720 --Crystals of Power
-    .isQuestTurnedIn 24721 --The Eastern Pylon
-    .isQuestTurnedIn 24722 --The Northern Pylon
-    .isQuestTurnedIn 24723 --The Western Pylon
 step
     .goto 78,83.52,46.01
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nablya|r
     .turnin 24694 >>Turn in The Shaper's Terrace
-    .target Nablya
-    .isOnQuest 24694
-step
-    .goto 78,83.52,46.01
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nablya|r
     .accept 24695 >>Accept Ever Watching From Above
     .target Nablya
-    .isQuestTurnedIn 24694 --any of: The Shaper's Terrace
-step
-    .goto 78,83.52,46.76
-    >>Click the |cRXP_PICK_Diemetradon Observation Lever|r
-    .complete 24695,2 --Diemetradon Observation Lever
-    .isOnQuest 24695
 step
     .goto 78,83.98,46.41
+    >>Click the |cRXP_PICK_Diemetradon Observation Lever|r
     >>Click the |cRXP_PICK_Gorilla Observation Lever|r
-    .complete 24695,3 --Gorilla Observation Lever
-    .isOnQuest 24695
-step
-    .goto 78,84.02,45.60
     >>Click the |cRXP_PICK_Pterrordax Observation Lever|r
-    .complete 24695,4 --Pterrordax Observation Lever
-    .isOnQuest 24695
-step
-    .goto 78,83.54,45.23
     >>Click the |cRXP_PICK_Bloodpetal Observation Lever|r
+    .complete 24695,2 --Diemetradon Observation Lever
+    .complete 24695,3 --Gorilla Observation Lever
+    .complete 24695,4 --Pterrordax Observation Lever
     .complete 24695,1 --Bloodpetal Observation Lever
-    .isOnQuest 24695
 step
     .goto 78,83.52,46.01
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nablya|r
     .turnin 24695 >>Turn in Ever Watching From Above
     .target Nablya
-    .isOnQuest 24695
 step
     #completewith next
     .zone 88 >>Travel to Thunder Bluff
@@ -1065,5 +955,5 @@ step
     >>|cRXP_FRIENDLY_Dustwallow Marsh and back here|r: Deadmire << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Repairing A-Me 01
 step
-    +|cRXP_WARN_Suggested next zones at level 54|r: |cRXP_FRIENDLY_Winterspring|r (about 1.2 levels of quests, starting around Rinno Curtainfire), |cRXP_FRIENDLY_Silithus|r (about 1.0 levels of quests, starting around Huum Wildmane; 1 quest from here hands in there), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 0.9 levels of quests, starting around Trade Baron Silversnap). Completing this step loads the guide for Winterspring --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 54|r: |cRXP_FRIENDLY_Winterspring|r (about 2.5 levels of quests), |cRXP_FRIENDLY_Silithus|r (about 1.0 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 0.9 levels of quests). Completing this step loads the guide for Winterspring --RouteBuilder:next
 ]])

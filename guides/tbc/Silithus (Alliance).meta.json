@@ -13,12 +13,12 @@
       "start": 55,
       "end": 55.35,
       "next": 58,
-      "guide": "55-56 Silithus: around Beetix Ficklespragg",
+      "guide": "55-60 Silithus",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Beetix Ficklespragg",
-          "guide": "55-56 Silithus: around Beetix Ficklespragg",
+          "label": "",
+          "name": "start",
+          "guide": "55-60 Silithus",
           "level": 55,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 58,
       "end": 58.58,
       "next": 61,
-      "guide": "58-59 Silithus: around Commander Mar\u0027alith",
+      "guide": "55-60 Silithus",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Commander Mar\u0027alith",
-          "guide": "58-59 Silithus: around Commander Mar\u0027alith",
+          "label": "",
+          "name": "part 2",
+          "guide": "55-60 Silithus",
           "level": 58,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 61,
       "end": 61.06,
-      "guide": "61-62 Silithus: around Geologist Larksbane",
+      "guide": "55-60 Silithus",
       "sections": [
         {
-          "label": "RBSection3_1",
-          "name": "around Geologist Larksbane",
-          "guide": "61-62 Silithus: around Geologist Larksbane",
+          "label": "",
+          "name": "part 3",
+          "guide": "55-60 Silithus",
           "level": 61,
           "index": 0
         }

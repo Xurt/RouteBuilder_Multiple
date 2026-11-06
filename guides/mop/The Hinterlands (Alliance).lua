@@ -1,5 +1,5 @@
 -- 31-35 The Hinterlands: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- Edit zones/mop/The Hinterlands.json and re-run rather than editing this file, or your changes are lost on the next build.
@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
 #group Zone Routes (Alliance)
 #name 31-35 The Hinterlands
 --RouteBuilder:next
-#next Zone Routes (Alliance)\35-37 Western Plaguelands: around Field Agent Kaartish;Zone Routes (Alliance)\30-33 The Cape of Stranglethorn: around Captain Hecklebury Smotts;Zone Routes (Alliance)\33-36 Desolace: around Karnum Marshweaver
+#next Zone Routes (Alliance)\30-35 Desolace;Zone Routes (Alliance)\35-40 Western Plaguelands;Zone Routes (Alliance)\30-35 The Cape of Stranglethorn
 
 step
     .goto 26,65.95,43.85
@@ -550,5 +550,5 @@ step
     >>|cRXP_FRIENDLY_The Cape of Stranglethorn|r: Rescue OOX-09/HL!
     >>|cRXP_FRIENDLY_Western Plaguelands|r: The Battle for Andorhal << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 34|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 1.5 levels of quests, starting around Field Agent Kaartish), |cRXP_FRIENDLY_The Cape of Stranglethorn|r (about 1.1 levels of quests, starting around Captain Hecklebury Smotts; 1 quest from here hands in there), |cRXP_FRIENDLY_Desolace|r (about 0.9 levels of quests, starting around Karnum Marshweaver). Completing this step loads the guide for Western Plaguelands --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 34|r: |cRXP_FRIENDLY_Desolace|r (about 1.6 levels of quests), |cRXP_FRIENDLY_Western Plaguelands|r (about 1.5 levels of quests), |cRXP_FRIENDLY_The Cape of Stranglethorn|r (about 1.1 levels of quests; 1 quest from here hands in there). Completing this step loads the guide for Desolace --RouteBuilder:next
 ]])

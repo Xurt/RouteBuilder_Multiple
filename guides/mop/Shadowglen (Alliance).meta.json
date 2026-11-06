@@ -13,12 +13,12 @@
       "start": 2,
       "end": 3.25,
       "next": 6,
-      "guide": "2-4 Shadowglen",
+      "guide": "2-5 Shadowglen",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "2-4 Shadowglen",
+          "guide": "2-5 Shadowglen",
           "level": 2,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 6,
       "end": 6,
-      "guide": "6-7 Shadowglen",
+      "guide": "2-5 Shadowglen",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "6-7 Shadowglen",
+          "guide": "2-5 Shadowglen",
           "level": 6,
           "index": 0
         }

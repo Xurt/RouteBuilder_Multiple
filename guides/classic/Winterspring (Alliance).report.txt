@@ -1,7 +1,7 @@
 Winterspring - Alliance - part 1 of 3, planned from level 52
 Guide "52-60 Winterspring" in group "Zone Routes (Alliance)": this part has 20 steps, 16 stops
 Written to guides/classic/Winterspring (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -104,7 +104,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Winterspring - Alliance - part 2 of 3, planned from level 55
 Guide "52-60 Winterspring" in group "Zone Routes (Alliance)": this part has 55 steps, 44 stops
 Written to guides/classic/Winterspring (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -173,7 +173,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Winterspring - Alliance - part 3 of 3, planned from level 58
 Guide "52-60 Winterspring" in group "Zone Routes (Alliance)": this part has 19 steps, 18 stops
 Written to guides/classic/Winterspring (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 

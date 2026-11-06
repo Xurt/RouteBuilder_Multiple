@@ -1,7 +1,7 @@
 Tanaris - Horde - part 1 of 3, planned from level 43
 Guide "43-60 Tanaris" in group "Zone Routes (Horde)": this part has 78 steps, 57 stops
 Written to guides/classic/Tanaris (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -129,7 +129,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Tanaris - Horde - part 2 of 3, planned from level 46
 Guide "43-60 Tanaris" in group "Zone Routes (Horde)": this part has 35 steps, 33 stops
 Written to guides/classic/Tanaris (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -210,7 +210,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Tanaris - Horde - part 3 of 3, planned from level 49
 Guide "43-60 Tanaris" in group "Zone Routes (Horde)": this part has 28 steps, 27 stops
 Written to guides/classic/Tanaris (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 

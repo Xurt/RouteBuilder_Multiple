@@ -1,9 +1,9 @@
 -- 55-60 Silithus: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 55, 58, 61).
--- Split into 3 guides, listed under "55 - 62 Silithus" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 55; part 2 from 58; part 3 from 61.
 -- Edit zones/tbc/Silithus.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 55 - 62 Silithus
-#subweight -55
-#name 55-56 Silithus: around Beetix Ficklespragg
+#name 55-60 Silithus
 --RouteBuilder:next
-#next Zone Routes (Alliance)\55-57 Western Plaguelands: around Commander Ashlam Valorfist
+#next Zone Routes (Alliance)\62-70 Terokkar Forest;Zone Routes (Alliance)\58-63 Hellfire Peninsula;Zone Routes (Alliance)\62-65 Zangarmarsh
 
 step
     .goto 1451/1,739.75,-6855.68
@@ -261,22 +259,9 @@ step
     +|cRXP_WARN_That is all of Silithus for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Moonglade|r: Umber, Archivist
 step
-    +|cRXP_WARN_Suggested next zones at level 55|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 0.8 levels of quests, starting around Commander Ashlam Valorfist). Completing this step loads the guide for Western Plaguelands --RouteBuilder:next
+    +|cRXP_WARN_Until level 58, suggested zones|r: |cRXP_FRIENDLY_Western Plaguelands|r (about 0.8 levels of quests). Then come back to this Silithus guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Silithus is planned from level 58.|r Load its guide for level 58 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 55 - 62 Silithus
-#subweight -55
-#name 58-59 Silithus: around Commander Mar'alith
---RouteBuilder:next
-#next Zone Routes (Alliance)\58-61 Hellfire Peninsula: around Assistant Klatu;Zone Routes (Alliance)\55-57 Western Plaguelands: around Commander Ashlam Valorfist
-
+    .xp 58 >>|cRXP_WARN_The rest of Silithus is planned from level 58.|r Come back to this guide then
 step
     .goto 1451/1,1377.90,-7144.41
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marshal Bluewall|r
@@ -550,22 +535,9 @@ step
     +|cRXP_WARN_That is all of Silithus for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Kalimdor - the continent map and back here|r: Into The Maw of Madness, Glyph Chasing
 step
-    +|cRXP_WARN_Suggested next zones at level 58|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 1.5 levels of quests, starting around Assistant Klatu), |cRXP_FRIENDLY_Western Plaguelands|r (about 0.7 levels of quests, starting around Commander Ashlam Valorfist). Completing this step loads the guide for Hellfire Peninsula --RouteBuilder:next
+    +|cRXP_WARN_Until level 61, suggested zones|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 1.5 levels of quests), |cRXP_FRIENDLY_Western Plaguelands|r (about 0.7 levels of quests). Then come back to this Silithus guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Silithus is planned from level 61.|r Load its guide for level 61 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 55 - 62 Silithus
-#subweight -55
-#name 61-62 Silithus: around Geologist Larksbane
---RouteBuilder:next
-#next Zone Routes (Alliance)\62-64 Terokkar Forest: around Jenai Starwhisper;Zone Routes (Alliance)\58-61 Hellfire Peninsula: around Assistant Klatu;Zone Routes (Alliance)\62-63 Zangarmarsh: around Ysiel Windsinger
-
+    .xp 61 >>|cRXP_WARN_The rest of Silithus is planned from level 61.|r Come back to this guide then
 step
     .goto 1451/1,814.99,-6805.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baristolth of the Shifting Sands|r
@@ -786,5 +758,5 @@ step
     >>|cRXP_FRIENDLY_Tanaris, another zone and back here|r: What Tomorrow Brings
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Perfect Poison
 step
-    +|cRXP_WARN_Suggested next zones at level 61|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.7 levels of quests, starting around Jenai Starwhisper), |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.6 levels of quests, starting around Assistant Klatu), |cRXP_FRIENDLY_Zangarmarsh|r (about 0.6 levels of quests, starting around Ysiel Windsinger). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 61|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.6 levels of quests), |cRXP_FRIENDLY_Zangarmarsh|r (about 0.6 levels of quests). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
 ]])

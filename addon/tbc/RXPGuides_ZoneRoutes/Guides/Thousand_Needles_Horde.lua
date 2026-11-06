@@ -1,9 +1,9 @@
 -- 25-37 Thousand Needles: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 4 parts (from level 25, 28, 31, 34).
--- Split into 4 guides, listed under "25 - 35 Thousand Needles" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 25; part 2 from 28; part 3 from 31; part 4 from 34.
 -- Edit zones/tbc/Thousand Needles.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,9 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 25 - 35 Thousand Needles
-#subweight -25
-#name 25-26 Thousand Needles: around Cliffwatcher Longhorn
+#name 25-37 Thousand Needles
+--RouteBuilder:next
+#next Zone Routes (Horde)\35-46 Dustwallow Marsh;Zone Routes (Horde)\30-50 Stranglethorn Vale
 
 step
     .goto 1441/1,-1835.17,-4602.03
@@ -275,18 +275,7 @@ step
     +|cRXP_WARN_That is all of Thousand Needles for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Thunder Bluff|r: Sacred Fire
 step
-    +|cRXP_WARN_The rest of Thousand Needles is planned from level 28.|r Load its guide for level 28 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 25 - 35 Thousand Needles
-#subweight -25
-#name 28-29 Thousand Needles
-
+    .xp 28 >>|cRXP_WARN_The rest of Thousand Needles is planned from level 28.|r Come back to this guide then
 step
     .goto 1441/1,-2463.49,-5483.49
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rau Cliffrunner|r
@@ -439,18 +428,7 @@ step
     >>|cRXP_FRIENDLY_Stranglethorn Vale|r: Hemet Nesingwary Jr.
     >>|cRXP_FRIENDLY_Feralas and back here|r: A Dip in the Moonwell
 step
-    +|cRXP_WARN_The rest of Thousand Needles is planned from level 31.|r Load its guide for level 31 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 25 - 35 Thousand Needles
-#subweight -25
-#name 31-32 Thousand Needles: around Kravel Koalbeard
-
+    .xp 31 >>|cRXP_WARN_The rest of Thousand Needles is planned from level 31.|r Come back to this guide then
 step << Mage
     .goto 1441/1,-3878.09,-6187.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magus Tirth|r
@@ -629,20 +607,7 @@ step
     >>|cRXP_FRIENDLY_The Barrens|r: Wharfmaster Dizzywig, Goblin Sponsorship
     >>|cRXP_FRIENDLY_Stranglethorn Vale and back here|r: Encrusted Tail Fins
 step
-    +|cRXP_WARN_The rest of Thousand Needles is planned from level 34.|r Load its guide for level 34 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 25 - 35 Thousand Needles
-#subweight -25
-#name 34-35 Thousand Needles
---RouteBuilder:next
-#next Zone Routes (Horde)\35-38 Dustwallow Marsh: around Krog;Zone Routes (Horde)\33-35 Stranglethorn Vale: around Kebok
-
+    .xp 34 >>|cRXP_WARN_The rest of Thousand Needles is planned from level 34.|r Come back to this guide then
 step
     .goto 1441/1,-3871.49,-6228.85
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wizzle Brassbolts|r
@@ -789,5 +754,5 @@ step
     >>|cRXP_FRIENDLY_Desolace|r: Family Tree
     >>|cRXP_FRIENDLY_The Barrens|r: Parts of the Swarm
 step
-    +|cRXP_WARN_Suggested next zones at level 34|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.8 levels of quests, starting around Krog), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.6 levels of quests, starting around Kebok). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 34|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.8 levels of quests), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.6 levels of quests). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
 ]])

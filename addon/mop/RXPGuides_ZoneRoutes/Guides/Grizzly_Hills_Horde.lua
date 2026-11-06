@@ -1,9 +1,9 @@
 -- 73-75 Grizzly Hills: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 73, 81).
--- Split into 2 guides, listed under "73 - 82 Grizzly Hills" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 73; part 2 from 81.
 -- Edit zones/mop/Grizzly Hills.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 73 - 82 Grizzly Hills
-#subweight -73
-#name 73-75 Grizzly Hills: around Drakuru
+#name 73-75 Grizzly Hills
 --RouteBuilder:next
-#next Zone Routes (Horde)\72-75 Dragonblight;Zone Routes (Horde)\70-72 Howling Fjord: around Lurielle
+#next Zone Routes (Horde)\82-83 Deepholm
 
 step
     .goto 116,34.98,55.04
@@ -1479,23 +1477,10 @@ step
     >>|cRXP_FRIENDLY_Dalaran - (Dungeon/Raid)|r: The Magical Kingdom of Dalaran << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Zul'Drak|r: Shifting Priorities << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: An Intriguing Plan << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 74|r: |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests, starting around Aurastrasza), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests, starting around Lurielle). Completing this step loads the guide for Dragonblight --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Grizzly Hills is planned from level 81.|r Load its guide for level 81 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 73 - 82 Grizzly Hills
-#subweight -73
-#name 81-82 Grizzly Hills
---RouteBuilder:next
-#next Zone Routes (Horde)\82-83 Deepholm
-
+    +|cRXP_WARN_Until level 81, suggested zones|r: |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests). Then come back to this Grizzly Hills guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 81 >>|cRXP_WARN_The rest of Grizzly Hills is planned from level 81.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     #loop
     .goto 116,75.97,57.38,0
@@ -1550,5 +1535,5 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
     +|cRXP_WARN_End of the Grizzly Hills route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 81|r: |cRXP_FRIENDLY_Deepholm|r (about 1.2 levels of quests, starting around Maruut Stonebinder). Completing this step loads the guide for Deepholm --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 81|r: |cRXP_FRIENDLY_Deepholm|r (about 1.2 levels of quests). Completing this step loads the guide for Deepholm --RouteBuilder:next
 ]])

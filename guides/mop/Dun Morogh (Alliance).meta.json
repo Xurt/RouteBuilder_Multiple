@@ -13,12 +13,12 @@
       "start": 5,
       "end": 10.27,
       "next": 28,
-      "guide": "5-11 Dun Morogh",
+      "guide": "5-10 Dun Morogh",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "5-11 Dun Morogh",
+          "guide": "5-10 Dun Morogh",
           "level": 5,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 28,
       "end": 28.05,
-      "guide": "28-29 Dun Morogh",
+      "guide": "5-10 Dun Morogh",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "28-29 Dun Morogh",
+          "guide": "5-10 Dun Morogh",
           "level": 28,
           "index": 0
         }

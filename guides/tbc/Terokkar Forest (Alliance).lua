@@ -1,9 +1,9 @@
 -- 62-70 Terokkar Forest: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 62, 66, 69).
--- Split into 3 guides, listed under "62 - 70 Terokkar Forest" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 62; part 2 from 66; part 3 from 69.
 -- Edit zones/tbc/Terokkar Forest.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 62 - 70 Terokkar Forest
-#subweight -62
-#name 62-64 Terokkar Forest: around Jenai Starwhisper
+#name 62-70 Terokkar Forest
 --RouteBuilder:next
-#next Zone Routes (Alliance)\62-63 Zangarmarsh: around Ysiel Windsinger
+#next Zone Routes (Alliance)\68-70 Netherstorm;Zone Routes (Alliance)\69-70 Shadowmoon Valley
 
 step
     .xp 62 >>Grind to level 62 (What's Wrong at Cenarion Thicket? needs it)
@@ -1504,22 +1502,9 @@ step
     +|cRXP_WARN_That is all of Terokkar Forest for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Big Bone Worm
 step
-    +|cRXP_WARN_Suggested next zones at level 63|r: |cRXP_FRIENDLY_Zangarmarsh|r (about 0.5 levels of quests, starting around Ysiel Windsinger). Completing this step loads the guide for Zangarmarsh --RouteBuilder:next
+    +|cRXP_WARN_Until level 66, suggested zones|r: |cRXP_FRIENDLY_Zangarmarsh|r (about 0.5 levels of quests). Then come back to this Terokkar Forest guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Terokkar Forest is planned from level 66.|r Load its guide for level 66 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 62 - 70 Terokkar Forest
-#subweight -62
-#name 66-67 Terokkar Forest
---RouteBuilder:next
-#next Zone Routes (Alliance)\65-66 Nagrand: around Huntress Bintook
-
+    .xp 66 >>|cRXP_WARN_The rest of Terokkar Forest is planned from level 66.|r Come back to this guide then
 step
     .goto 1952,35.09,65.09
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ha'lei|r
@@ -1628,22 +1613,9 @@ step
     >>|cRXP_FRIENDLY_Nagrand|r: The Master's Grand Design?
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Terokk's Legacy
 step
-    +|cRXP_WARN_Suggested next zones at level 66|r: |cRXP_FRIENDLY_Nagrand|r (about 0.6 levels of quests, starting around Huntress Bintook; 2 quests from here hand in there). Completing this step loads the guide for Nagrand --RouteBuilder:next
+    +|cRXP_WARN_Until level 69, suggested zones|r: |cRXP_FRIENDLY_Nagrand|r (about 0.6 levels of quests; 2 quests from here hand in there). Then come back to this Terokkar Forest guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Terokkar Forest is planned from level 69.|r Load its guide for level 69 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 62 - 70 Terokkar Forest
-#subweight -62
-#name 69-70 Terokkar Forest
---RouteBuilder:next
-#next Zone Routes (Alliance)\68-70 Netherstorm: around Image of Archmage Vargoth;Zone Routes (Alliance)\69-70 Shadowmoon Valley
-
+    .xp 69 >>|cRXP_WARN_The rest of Terokkar Forest is planned from level 69.|r Come back to this guide then
 step
     .goto 1952,39.94,72.28
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spy Grik'tha|r
@@ -1816,5 +1788,5 @@ step
 step
     +|cRXP_WARN_End of the Terokkar Forest route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 69|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.2 levels of quests, starting around Image of Archmage Vargoth), |cRXP_FRIENDLY_Shadowmoon Valley|r (about 0.7 levels of quests, starting around Wing Commander Nuainn; 4 quests from here hand in there). Completing this step loads the guide for Netherstorm --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 69|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.2 levels of quests), |cRXP_FRIENDLY_Shadowmoon Valley|r (about 0.7 levels of quests; 4 quests from here hand in there). Completing this step loads the guide for Netherstorm --RouteBuilder:next
 ]])

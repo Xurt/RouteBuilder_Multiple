@@ -13,12 +13,12 @@
       "start": 40,
       "end": 40,
       "next": 44,
-      "guide": "40-41 Thousand Needles",
+      "guide": "40-45 Thousand Needles",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "40-41 Thousand Needles",
+          "guide": "40-45 Thousand Needles",
           "level": 40,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 44,
       "end": 44,
       "next": 47,
-      "guide": "44-45 Thousand Needles",
+      "guide": "40-45 Thousand Needles",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "44-45 Thousand Needles",
+          "guide": "40-45 Thousand Needles",
           "level": 44,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 47,
       "end": 47,
-      "guide": "47-48 Thousand Needles",
+      "guide": "40-45 Thousand Needles",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "47-48 Thousand Needles",
+          "guide": "40-45 Thousand Needles",
           "level": 47,
           "index": 0
         }

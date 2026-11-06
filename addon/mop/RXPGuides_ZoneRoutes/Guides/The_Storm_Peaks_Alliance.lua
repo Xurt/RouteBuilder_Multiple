@@ -1,5 +1,5 @@
 -- 78-80 The Storm Peaks: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- Edit zones/mop/The Storm Peaks.json and re-run rather than editing this file, or your changes are lost on the next build.
@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
 #group Zone Routes (Alliance)
 #name 78-80 The Storm Peaks
 --RouteBuilder:next
-#next Zone Routes (Alliance)\76-78 Sholazar Basin;Zone Routes (Alliance)\79-81 Icecrown: around Highlord Tirion Fordring
+#next Zone Routes (Alliance)\76-78 Sholazar Basin;Zone Routes (Alliance)\79-81 Icecrown
 
 step
     .goto 120,41.02,86.44
@@ -1559,5 +1559,5 @@ step
     +|cRXP_WARN_End of the The Storm Peaks route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Icecrown|r: Battle Plans Of The Kvaldir
 step
-    +|cRXP_WARN_Suggested next zones at level 79|r: |cRXP_FRIENDLY_Sholazar Basin|r (about 1.0 levels of quests, starting around Debaar), |cRXP_FRIENDLY_Icecrown|r (about 0.8 levels of quests, starting around Highlord Tirion Fordring). Completing this step loads the guide for Sholazar Basin --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 79|r: |cRXP_FRIENDLY_Sholazar Basin|r (about 1.0 levels of quests), |cRXP_FRIENDLY_Icecrown|r (about 0.8 levels of quests). Completing this step loads the guide for Sholazar Basin --RouteBuilder:next
 ]])

@@ -13,12 +13,12 @@
       "start": 30,
       "end": 32.85,
       "next": 35,
-      "guide": "30-33 The Cape of Stranglethorn: around Captain Hecklebury Smotts",
+      "guide": "30-35 The Cape of Stranglethorn",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Captain Hecklebury Smotts",
-          "guide": "30-33 The Cape of Stranglethorn: around Captain Hecklebury Smotts",
+          "label": "",
+          "name": "start",
+          "guide": "30-35 The Cape of Stranglethorn",
           "level": 30,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 35,
       "end": 35,
       "next": 58,
-      "guide": "35-36 The Cape of Stranglethorn",
+      "guide": "30-35 The Cape of Stranglethorn",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "35-36 The Cape of Stranglethorn",
+          "guide": "30-35 The Cape of Stranglethorn",
           "level": 35,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 58,
       "end": 58.46,
-      "guide": "58-59 The Cape of Stranglethorn: around Captain Keelhaul",
+      "guide": "30-35 The Cape of Stranglethorn",
       "sections": [
         {
-          "label": "RBSection3_1",
-          "name": "around Captain Keelhaul",
-          "guide": "58-59 The Cape of Stranglethorn: around Captain Keelhaul",
+          "label": "",
+          "name": "part 3",
+          "guide": "30-35 The Cape of Stranglethorn",
           "level": 58,
           "index": 0
         }

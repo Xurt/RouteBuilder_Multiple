@@ -1,9 +1,9 @@
 -- 47-52 Searing Gorge: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 47, 51, 54).
--- Split into 3 guides, listed under "47 - 55 Searing Gorge" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 47; part 2 from 51; part 3 from 54.
 -- Edit zones/mop/Searing Gorge.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 47 - 55 Searing Gorge
-#subweight -47
-#name 47-49 Searing Gorge: around Jack Rockleg
+#name 47-52 Searing Gorge
 --RouteBuilder:next
-#next Zone Routes (Horde)\48-50 Felwood: around Feronas Sindweller;Zone Routes (Horde)\45-47 Badlands
+#next Zone Routes (Horde)\50-55 Winterspring;Zone Routes (Horde)\51-55 Un'Goro Crater;Zone Routes (Horde)\55-56 Silithus
 
 step
     .goto 32,68.92,53.26
@@ -853,23 +851,10 @@ step
     >>|cRXP_FRIENDLY_Undercity|r: Envoy to the Horde << Orc/Undead/Tauren/Troll/Pandaren
     >>|cRXP_FRIENDLY_Western Plaguelands|r: Warchief's Command: Western Plaguelands! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Dark Ministry
-step
-    +|cRXP_WARN_Suggested next zones at level 48|r: |cRXP_FRIENDLY_Felwood|r (about 0.6 levels of quests, starting around Feronas Sindweller), |cRXP_FRIENDLY_Badlands|r (about 0.6 levels of quests, starting around Dolph Blastus). Completing this step loads the guide for Felwood --RouteBuilder:next
 step << Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior/Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter/Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue/Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock/Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage/Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman/Tauren Paladin/BloodElf Paladin/Undead Priest/BloodElf Priest/Tauren Priest/Troll Priest/Goblin Priest/Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Searing Gorge is planned from level 51.|r Load its guide for level 51 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior/Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter/Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue/Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock/Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage/Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman/Tauren Paladin/BloodElf Paladin/Undead Priest/BloodElf Priest/Tauren Priest/Troll Priest/Goblin Priest/Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 47 - 55 Searing Gorge
-#subweight -47
-#name 51-52 Searing Gorge
---RouteBuilder:next
-#next Zone Routes (Horde)\50-52 Winterspring: around Donova Snowden;Zone Routes (Horde)\51-53 Un'Goro Crater: around Mor'vek;Zone Routes (Horde)\52-55 Swamp of Sorrows: around Trade Baron Silversnap
-
+    +|cRXP_WARN_Until level 51, suggested zones|r: |cRXP_FRIENDLY_Felwood|r (about 2.3 levels of quests), |cRXP_FRIENDLY_Badlands|r (about 0.6 levels of quests). Then come back to this Searing Gorge guide --RouteBuilder:next
+step << Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior/Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter/Orc Rogue/Undead Rogue/Tauren Rogue/Troll Rogue/BloodElf Rogue/Goblin Rogue/Pandaren Rogue/Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock/Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage/Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman/Tauren Paladin/BloodElf Paladin/Undead Priest/BloodElf Priest/Tauren Priest/Troll Priest/Goblin Priest/Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 51 >>|cRXP_WARN_The rest of Searing Gorge is planned from level 51.|r Come back to this guide then
 step
     .goto 32,24.68,26.23
     >>Kill |cRXP_ENEMY_Minister Finister|r and loot |cRXP_LOOT_Finister's Spherule|r
@@ -968,23 +953,10 @@ step
     >>|cRXP_FRIENDLY_Orgrimmar|r: Meet with Seer Liwatha << Tauren Priest
     >>|cRXP_FRIENDLY_Orgrimmar|r: Meet with Shadow-Walker Zuru << Troll Priest
     >>|cRXP_FRIENDLY_Orgrimmar|r: Meet with Brother Silverhallow << Goblin Priest
-step
-    +|cRXP_WARN_Suggested next zones at level 51|r: |cRXP_FRIENDLY_Winterspring|r (about 2.4 levels of quests, starting around Donova Snowden), |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.9 levels of quests, starting around Mor'vek), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 1.0 levels of quests, starting around Trade Baron Silversnap). Completing this step loads the guide for Winterspring --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Searing Gorge is planned from level 54.|r Load its guide for level 54 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 47 - 55 Searing Gorge
-#subweight -47
-#name 54-55 Searing Gorge
---RouteBuilder:next
-#next Zone Routes (Horde)\52-54 Winterspring: around Rinno Curtainfire;Zone Routes (Horde)\55-56 Silithus;Zone Routes (Horde)\52-55 Swamp of Sorrows: around Trade Baron Silversnap
-
+    +|cRXP_WARN_Until level 54, suggested zones|r: |cRXP_FRIENDLY_Winterspring|r (about 2.4 levels of quests), |cRXP_FRIENDLY_Felwood|r (about 2.0 levels of quests), |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.9 levels of quests). Then come back to this Searing Gorge guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 54 >>|cRXP_WARN_The rest of Searing Gorge is planned from level 54.|r Come back to this guide then
 step
     .goto 32,14.15,36.45
     >>Kill |cRXP_ENEMY_Minister Letherio|r and loot |cRXP_LOOT_Letherio's Spherule|r
@@ -1025,5 +997,5 @@ step
     +|cRXP_WARN_End of the Searing Gorge route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Swamp of Sorrows|r: Warchief's Command: Swamp of Sorrows! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 54|r: |cRXP_FRIENDLY_Winterspring|r (about 1.2 levels of quests, starting around Rinno Curtainfire), |cRXP_FRIENDLY_Silithus|r (about 1.0 levels of quests, starting around Huum Wildmane), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 0.9 levels of quests, starting around Trade Baron Silversnap). Completing this step loads the guide for Winterspring --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 54|r: |cRXP_FRIENDLY_Winterspring|r (about 2.5 levels of quests), |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.7 levels of quests), |cRXP_FRIENDLY_Silithus|r (about 1.0 levels of quests). Completing this step loads the guide for Winterspring --RouteBuilder:next
 ]])

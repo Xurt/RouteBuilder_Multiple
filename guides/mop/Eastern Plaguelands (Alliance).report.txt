@@ -1,7 +1,7 @@
 Eastern Plaguelands - Alliance - part 1 of 3, planned from level 40
-Guide "40-45 Eastern Plaguelands" in group "Zone Routes (Alliance)": this part has 188 steps, 166 stops
+Guide "40-45 Eastern Plaguelands" in group "Zone Routes (Alliance)": this part has 175 steps, 154 stops
 Written to guides/mop/Eastern Plaguelands (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -22,7 +22,7 @@ Step order kept from the last build (locks folder): 213 steps kept, 13 new ones 
 Hearthstone: set at Fiona (Fiona's inn); 1 hearth step in the guide.
 6 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
 1 training, vendor and flight-path step taken from RestedXP's guides, each next to the quest step it follows there (--no-rxp-steps leaves them out).
-11 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+10 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (78)
@@ -84,7 +84,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Eastern Plaguelands - Alliance - part 2 of 3, planned from level 46
 Guide "40-45 Eastern Plaguelands" in group "Zone Routes (Alliance)": this part has 7 steps, 5 stops
 Written to guides/mop/Eastern Plaguelands (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -133,7 +133,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Eastern Plaguelands - Alliance - part 3 of 3, planned from level 83
 Guide "40-45 Eastern Plaguelands" in group "Zone Routes (Alliance)": this part has 8 steps, 7 stops
 Written to guides/mop/Eastern Plaguelands (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files

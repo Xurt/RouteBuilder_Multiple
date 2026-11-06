@@ -1,9 +1,9 @@
 -- 1-13 Tirisfal Glades: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 1, 13).
--- Split into 4 guides, listed under "1 - 14 Tirisfal Glades" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 1; part 2 from 13.
 -- Edit zones/tbc/Tirisfal Glades.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 1 - 14 Tirisfal Glades
-#subweight -1
-#name 1-5 Tirisfal Glades: around Shadow Priest Sarvis
-#next Zone Routes (Horde)\5-7 Tirisfal Glades: around Apothecary Johaan
+#name 1-13 Tirisfal Glades
+--RouteBuilder:next
+#next Zone Routes (Horde)\10-27 The Barrens;Zone Routes (Horde)\10-22 Silverpine Forest;Zone Routes (Horde)\10-21 Ghostlands
 
 step << Undead
     .goto 1420/0,1667.77,1679.04
@@ -496,24 +495,11 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Calvin Montague|r
     .accept 8 >>Accept A Rogue's Deal
     .target Calvin Montague
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 1 - 14 Tirisfal Glades
-#subweight -1
-#name 5-7 Tirisfal Glades: around Apothecary Johaan
-#next Zone Routes (Horde)\7-11 Tirisfal Glades: around Apothecary Johaan
-
 step
     .goto 1420/0,295.42,2278.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Executor Zygand|r
     .turnin 383 >>Turn in Vital Intelligence
     .target Executor Zygand
-    .isOnQuest 383
 step << Rogue
     .goto 1420/0,316.66,2227.32
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Oliver|r
@@ -572,7 +558,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Renee|r
     .turnin 8 >>Turn in A Rogue's Deal
     .target Innkeeper Renee
-    .isOnQuest 8
 step
     .goto 1420/0,265.15,2305.94
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magistrate Sevren|r
@@ -636,18 +621,15 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Calvin Montague|r
     .accept 590 >>Accept A Rogue's Deal
     .target Calvin Montague
-    .isQuestTurnedIn 8 --any of: A Rogue's Deal
 step
     .goto 1420/0,1307.62,2128.21
     >>Defeat Calvin Montague
     .complete 590,1 --Defeat Calvin Montague
-    .isOnQuest 590
 step
     .goto 1420/0,1305.82,2126.70
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Calvin Montague|r
     .turnin 590 >>Turn in A Rogue's Deal
     .target Calvin Montague
-    .isOnQuest 590
 step
     #loop
     .goto 1420/0,1378.12,2330.04,0
@@ -866,37 +848,22 @@ step
     >>Kill |cRXP_ENEMY_Scarlet Warriors|r
     .complete 427,1 --Scarlet Warrior slain (10)
     .mob Scarlet Warrior
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 1 - 14 Tirisfal Glades
-#subweight -1
-#name 7-11 Tirisfal Glades: around Apothecary Johaan
---RouteBuilder:next
-#next Zone Routes (Horde)\10-13 The Barrens: around Sergra Darkthorn;Zone Routes (Horde)\4-10 Durotar: around Master Gadrin;Zone Routes (Horde)\10-12 Silverpine Forest: around Apothecary Renferrel
-
 step
     .goto 1420/0,403.42,2287.57
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Deathguard Dillinger|r
     .turnin 426 >>Turn in The Mills Overrun
     .target Deathguard Dillinger
-    .isOnQuest 426
 step
     .goto 1420/0,295.42,2278.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Executor Zygand|r
     .turnin 427 >>Turn in At War With The Scarlet Crusade
+    .accept 370 >>Accept At War With The Scarlet Crusade
     .target Executor Zygand
-    .isOnQuest 427
 step
     .goto 1420/0,280.06,2270.70
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Deathguard Burgess|r
     .accept 374 >>Accept Proof of Demise
     .target Deathguard Burgess
-    .isQuestTurnedIn 427 --any of: At War With The Scarlet Crusade
 step
     .goto 1420/0,250.69,2252.92
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Yvette Farthing|r
@@ -908,7 +875,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gretchen Dedmar|r
     .turnin 375 >>Turn in The Chill of Death
     .target Gretchen Dedmar
-    .isOnQuest 375
 step
     .goto 1420/0,244.36,2262.26
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Coleman Farthing|r
@@ -920,54 +886,29 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magistrate Sevren|r
     .turnin 360 >>Turn in Return to the Magistrate
     .target Magistrate Sevren
-    .isOnQuest 360
 step
     .goto 1420/0,288.64,2286.06
     >>Click the |cRXP_PICK_Wanted!|r
     .accept 398 >>Accept Wanted: Maggot Eye
 step
-    .goto 1420/0,295.42,2278.23
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Executor Zygand|r
-    .accept 370 >>Accept At War With The Scarlet Crusade
-    .target Executor Zygand
-    .isQuestTurnedIn 427 --any of: At War With The Scarlet Crusade
-step
     #loop
-    .goto 1420/0,601.79,1824.55,0
-    .goto 1420/0,601.79,1824.55,40,0
-    .goto 1420/0,681.32,1785.08,40,0
-    >>Kill |cRXP_ENEMY_Scarlet Zealots|r
-    .complete 370,2 --Scarlet Zealot slain (3)
-    .mob Scarlet Zealot
-    .isOnQuest 370
-step
-    #loop
-    .goto 1420/0,705.27,1801.35,0
-    .goto 1420/0,705.27,1801.35,40,0
+    .goto 1420/0,621.68,1785.69,0
     .goto 1420/0,621.68,1785.69,40,0
+    .goto 1420/0,705.27,1801.35,40,0
     .goto 1420/0,827.28,1843.83,40,0
+    >>Kill |cRXP_ENEMY_Scarlet Zealots|r
     >>Kill |cRXP_ENEMY_Scarlet Warriors|r, |cRXP_ENEMY_Scarlet Missionaries|r, |cRXP_ENEMY_Scarlet Zealots|r and |cRXP_ENEMY_Scarlet Friars|r. Loot them for |cRXP_LOOT_Scarlet Insignia Ring|r
+    >>Kill |cRXP_ENEMY_Captain Perrine|r
+    >>Kill |cRXP_ENEMY_Scarlet Missionaries|r
+    .complete 370,2 --Scarlet Zealot slain (3)
     .complete 374,1 --Scarlet Insignia Ring (10)
+    .complete 370,1 --Captain Perrine slain (1)
+    .complete 370,3 --Scarlet Missionary slain (3)
+    .mob Scarlet Zealot
     .mob Scarlet Warrior
     .mob Scarlet Missionary
-    .mob Scarlet Zealot
     .mob Scarlet Friar
-    .isOnQuest 374
-step
-    .goto 1420/0,722.44,1795.02
-    >>Kill |cRXP_ENEMY_Captain Perrine|r
-    .complete 370,1 --Captain Perrine slain (1)
     .mob Captain Perrine
-    .isOnQuest 370
-step
-    #loop
-    .goto 1420/0,749.56,1796.53,0
-    .goto 1420/0,749.56,1796.53,40,0
-    .goto 1420/0,648.34,1806.47,40,0
-    >>Kill |cRXP_ENEMY_Scarlet Missionaries|r
-    .complete 370,3 --Scarlet Missionary slain (3)
-    .mob Scarlet Missionary
-    .isOnQuest 370
 step
     #loop
     .goto 1420/0,1424.66,2532.18,0
@@ -978,7 +919,6 @@ step
     .mob Vile Fin Puddlejumper
     .mob Vile Fin Minor Oracle
     .mob Vile Fin Muckdweller
-    .isOnQuest 368
 step
     .goto 1420/0,894.16,2609.00
     >>Kill |cRXP_ENEMY_Devlin Agamand|r and loot |cRXP_LOOT_Devlin's Remains|r
@@ -988,32 +928,19 @@ step
     .goto 1420/0,346.94,2258.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apothecary Johaan|r
     .turnin 368 >>Turn in A New Plague
-    .target Apothecary Johaan
-    .isOnQuest 368
-step
-    .goto 1420/0,346.94,2258.95
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apothecary Johaan|r
     .accept 369 >>Accept A New Plague
     .target Apothecary Johaan
-    .isQuestTurnedIn 368 --any of: A New Plague
 step
     .goto 1420/0,295.42,2278.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Executor Zygand|r
     .turnin 370 >>Turn in At War With The Scarlet Crusade
-    .target Executor Zygand
-    .isOnQuest 370
-step
-    .goto 1420/0,295.42,2278.23
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Executor Zygand|r
     .accept 371 >>Accept At War With The Scarlet Crusade
     .target Executor Zygand
-    .isQuestTurnedIn 370 --any of: At War With The Scarlet Crusade
 step
     .goto 1420/0,280.06,2270.70
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Deathguard Burgess|r
     .turnin 374 >>Turn in Proof of Demise
     .target Deathguard Burgess
-    .isOnQuest 374
 step
     .goto 1420/0,346.94,2258.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apothecary Johaan|r
@@ -1038,14 +965,8 @@ step
     .goto 1458/0,66.65,1766.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bethor Iceshard|r
     .turnin 357 >>Turn in The Lich's Identity
-    .target Bethor Iceshard
-    .isOnQuest 357
-step
-    .goto 1458/0,66.65,1766.25
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bethor Iceshard|r
     .accept 366 >>Accept Return the Book
     .target Bethor Iceshard
-    .isQuestTurnedIn 357 --any of: The Lich's Identity
 step
     #completewith next
     .zone 1420 >>Leave Undercity for Tirisfal Glades
@@ -1070,34 +991,23 @@ step
     >>Kill |cRXP_ENEMY_Vicious Night Web Spiders|r. Loot them for |cRXP_LOOT_Vicious Night Web Spider Venom|r
     .complete 369,1 --Vicious Night Web Spider Venom (4)
     .mob Vicious Night Web Spider
-    .isOnQuest 369
 step
     #loop
     .goto 1420/0,-653.97,2237.86,0
     .goto 1420/0,-653.97,2237.86,40,0
     .goto 1420/0,-530.15,2143.57,40,0
     >>Kill |cRXP_ENEMY_Scarlet Friars|r
-    .complete 371,2 --Scarlet Friar slain (5)
-    .mob Scarlet Friar
-    .isOnQuest 371
-step
-    .goto 1420/0,-528.35,2146.58
     >>Kill |cRXP_ENEMY_Captain Vachon|r
+    .complete 371,2 --Scarlet Friar slain (5)
     .complete 371,1 --Captain Vachon slain (1)
+    .mob Scarlet Friar
     .mob Captain Vachon
-    .isOnQuest 371
 step
     .goto 1420/0,-48.45,2574.66
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gunther Arcanus|r
     .turnin 366 >>Turn in Return the Book
-    .target Gunther Arcanus
-    .isOnQuest 366
-step
-    .goto 1420/0,-48.45,2574.66
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gunther Arcanus|r
     .accept 409 >>Accept Proving Allegiance
     .target Gunther Arcanus
-    .isQuestTurnedIn 366 --any of: Return the Book
 step
     .goto 1420/0,382.63,2910.55
     >>Kill |cRXP_ENEMY_Maggot Eye|r and loot |cRXP_LOOT_Maggot Eye's Paw|r
@@ -1123,37 +1033,21 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apothecary Johaan|r
     .turnin 369 >>Turn in A New Plague
     .target Apothecary Johaan
-    .isOnQuest 369
-step << Undead
-    .goto 1420/0,346.94,2258.95
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apothecary Johaan|r
-    .accept 492 >>Accept A New Plague
-    .target Apothecary Johaan
-    .isQuestTurnedIn 369 --any of: A New Plague
 step
     .xp 9 >>Grind to level 9 (Delivery to Silverpine Forest needs it)
 step
     .goto 1420/0,346.94,2258.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apothecary Johaan|r
+    .accept 492 >>Accept A New Plague << Undead
     .accept 445 >>Accept Delivery to Silverpine Forest
     .target Apothecary Johaan
 step
     .goto 1420/0,295.42,2278.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Executor Zygand|r
     .turnin 371 >>Turn in At War With The Scarlet Crusade
-    .target Executor Zygand
-    .isOnQuest 371
-step
-    .goto 1420/0,295.42,2278.23
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Executor Zygand|r
     .turnin 398 >>Turn in Wanted: Maggot Eye
-    .target Executor Zygand
-step
-    .goto 1420/0,295.42,2278.23
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Executor Zygand|r
     .accept 372 >>Accept At War With The Scarlet Crusade
     .target Executor Zygand
-    .isQuestTurnedIn 371 --any of: At War With The Scarlet Crusade
 step
     .goto 1420/0,244.36,2262.26
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Coleman Farthing|r
@@ -1170,7 +1064,6 @@ step << Undead
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captured Mountaineer|r
     .turnin 492 >>Turn in A New Plague
     .target Captured Mountaineer
-    .isOnQuest 492
 step << Undead Rogue
     .goto 1420/0,243.01,2271.00
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marion Call|r
@@ -1204,37 +1097,25 @@ step
     .goto 1420/0,-46.65,2571.65
     >>Open the |cRXP_PICK_Crate of Candles|r. Loot it for |cRXP_LOOT_Candle of Beckoning|r
     .collect 3080,1,409,1 --Candle of Beckoning (1)
-    .isOnQuest 409
 step
     .goto 1420/0,20.68,2482.78
     >>Kill |cRXP_ENEMY_Lillith Nefara|r
     .complete 409,1 --Lillith Nefara slain (1)
     .mob Lillith Nefara
-    .isOnQuest 409
 step
     .goto 1420/0,-48.45,2574.66
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gunther Arcanus|r
     .turnin 409 >>Turn in Proving Allegiance
-    .target Gunther Arcanus
-    .isOnQuest 409
-step
-    .goto 1420/0,-48.45,2574.66
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gunther Arcanus|r
     .accept 411 >>Accept The Prodigal Lich Returns
     .target Gunther Arcanus
-    .isQuestTurnedIn 409 --any of: Proving Allegiance
 step
-    .goto 1420/0,-557.27,3076.84
+    .goto 1420/0,-556.36,3080.76
     >>Kill |cRXP_ENEMY_Scarlet Bodyguards|r
-    .complete 372,2 --Scarlet Bodyguard slain (2)
-    .mob Scarlet Bodyguard
-    .isOnQuest 372
-step
-    .goto 1420/0,-559.98,3079.86
     >>Kill |cRXP_ENEMY_Captain Melrache|r
+    .complete 372,2 --Scarlet Bodyguard slain (2)
     .complete 372,1 --Captain Melrache slain (1)
+    .mob Scarlet Bodyguard
     .mob Captain Melrache
-    .isOnQuest 372
 step << Undead Rogue
     .xp 10 >>Grind to level 10 (Mennet Carkad needs it)
 step << Undead Rogue
@@ -1259,7 +1140,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Executor Zygand|r
     .turnin 372 >>Turn in At War With The Scarlet Crusade
     .target Executor Zygand
-    .isOnQuest 372
 step << Mage
     .xp 10 >>Grind to level 10 (Speak with Anastasia needs it)
 step << Mage
@@ -1337,7 +1217,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bethor Iceshard|r
     .turnin 411 >>Turn in The Prodigal Lich Returns
     .target Bethor Iceshard
-    .isOnQuest 411
 step << Warlock
     .goto 1458/0,57.15,1711.58
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Carendin Halgar|r
@@ -1443,11 +1322,6 @@ step << Undead Priest
     .goto 1420/0,251.14,2265.28
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dark Cleric Beryl|r
     .turnin 5651 >>Turn in In Favor of Darkness
-    .target Dark Cleric Beryl
-    .isOnQuest 5651
-step << Undead Priest
-    .goto 1420/0,251.14,2265.28
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dark Cleric Beryl|r
     .accept 5650 >>Accept Garments of Darkness
     .target Dark Cleric Beryl
 step << Priest
@@ -1621,22 +1495,9 @@ step
     >>|cRXP_FRIENDLY_Silverpine Forest|r: Return to Podrig << Undead
     >>|cRXP_FRIENDLY_Silverpine Forest and back here|r: The Deathstalkers << Undead Rogue
 step
-    +|cRXP_WARN_Suggested next zones at level 10|r: |cRXP_FRIENDLY_The Barrens|r (about 2.7 levels of quests, starting around Sergra Darkthorn; 1 quest from here hands in there), |cRXP_FRIENDLY_Durotar|r (about 1.3 levels of quests, starting around Master Gadrin), |cRXP_FRIENDLY_Silverpine Forest|r (about 1.3 levels of quests, starting around Apothecary Renferrel; 3 quests from here hand in there). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Until level 13, suggested zones|r: |cRXP_FRIENDLY_The Barrens|r (about 2.7 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Eversong Woods|r (about 2.4 levels of quests), |cRXP_FRIENDLY_Durotar|r (about 1.5 levels of quests). Then come back to this Tirisfal Glades guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Tirisfal Glades is planned from level 13.|r Load its guide for level 13 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 1 - 14 Tirisfal Glades
-#subweight -1
-#name 13-14 Tirisfal Glades
---RouteBuilder:next
-#next Zone Routes (Horde)\13-16 The Barrens: around Gazlowe;Zone Routes (Horde)\10-12 Silverpine Forest: around Apothecary Renferrel;Zone Routes (Horde)\10-13 Ghostlands: around Arcanist Vandril
-
+    .xp 13 >>|cRXP_WARN_The rest of Tirisfal Glades is planned from level 13.|r Come back to this guide then
 step
     .goto 1420/0,265.15,2305.94
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magistrate Sevren|r
@@ -1704,5 +1565,5 @@ step
     +|cRXP_WARN_End of the Tirisfal Glades route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Hillsbrad Foothills and back here|r: A Donation of Wool
 step
-    +|cRXP_WARN_Suggested next zones at level 13|r: |cRXP_FRIENDLY_The Barrens|r (about 1.2 levels of quests, starting around Gazlowe), |cRXP_FRIENDLY_Silverpine Forest|r (about 0.9 levels of quests, starting around Apothecary Renferrel; 3 quests from here hand in there), |cRXP_FRIENDLY_Ghostlands|r (about 0.9 levels of quests, starting around Arcanist Vandril). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 13|r: |cRXP_FRIENDLY_The Barrens|r (about 2.4 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Silverpine Forest|r (about 0.9 levels of quests; 3 quests from here hand in there), |cRXP_FRIENDLY_Ghostlands|r (about 0.9 levels of quests). Completing this step loads the guide for The Barrens --RouteBuilder:next
 ]])

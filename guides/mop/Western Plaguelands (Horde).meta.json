@@ -13,12 +13,12 @@
       "start": 35,
       "end": 38.1,
       "next": 41,
-      "guide": "35-39 Western Plaguelands: around Field Agent Kaartish",
+      "guide": "35-40 Western Plaguelands",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Field Agent Kaartish",
-          "guide": "35-39 Western Plaguelands: around Field Agent Kaartish",
+          "label": "",
+          "name": "start",
+          "guide": "35-40 Western Plaguelands",
           "level": 35,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 41,
       "end": 41,
-      "guide": "41-42 Western Plaguelands",
+      "guide": "35-40 Western Plaguelands",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "41-42 Western Plaguelands",
+          "guide": "35-40 Western Plaguelands",
           "level": 41,
           "index": 0
         }

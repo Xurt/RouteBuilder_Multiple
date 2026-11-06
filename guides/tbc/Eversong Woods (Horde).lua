@@ -1,9 +1,9 @@
 -- 1-12 Eversong Woods: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 1, 13, 28).
--- Split into 6 guides, listed under "1 - 29 Eversong Woods" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 1; part 2 from 13; part 3 from 28.
 -- Edit zones/tbc/Eversong Woods.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,10 +13,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 1 - 29 Eversong Woods
-#subweight -1
-#name 1-3 Eversong Woods: around Aeldon Sunbrand
-#next Zone Routes (Horde)\3-7 Eversong Woods: around Instructor Antheol
+#name 1-12 Eversong Woods
 
 step << BloodElf
     .goto 1941,38.21,20.83
@@ -639,30 +636,12 @@ step << BloodElf Priest
     >>Interact with |cRXP_FRIENDLY_Eversong Rangers|r
     .complete 9489,1 --Eversong Ranger (6)
     .target Eversong Ranger
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 1 - 29 Eversong Woods
-#subweight -1
-#name 3-7 Eversong Woods: around Instructor Antheol
-#next Zone Routes (Horde)\7-9 Eversong Woods: around Instructor Antheol
-
 step
     .goto 1941,55.70,54.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Instructor Antheol|r
     .turnin 9064 >>Turn in Taking the Fall
-    .target Instructor Antheol
-    .isOnQuest 9064
-step
-    .goto 1941,55.70,54.51
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Instructor Antheol|r
     .accept 9066 >>Accept Swift Discipline
     .target Instructor Antheol
-    .isQuestTurnedIn 9064 --any of: Taking the Fall
 step
     #loop
     .goto 1941,50.61,56.44,0
@@ -672,37 +651,27 @@ step
     >>Kill |cRXP_ENEMY_Plaguebone Pillagers|r
     .complete 8475,1 --Plaguebone Pillager slain (8)
     .mob Plaguebone Pillager
-    .isOnQuest 8475
 step
     .goto 1941,50.34,50.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ranger Jaela|r
     .turnin 8475 >>Turn in The Dead Scar
     .target Ranger Jaela
-    .isOnQuest 8475
 step
     .goto 1941,45.19,56.43
     >>Interact with |cRXP_FRIENDLY_Apprentice Ralen|r
     .complete 9066,2 --Apprentice Ralen
     .target Apprentice Ralen
-    .isOnQuest 9066
 step
     .goto 1941,44.88,61.03
     >>Interact with |cRXP_FRIENDLY_Apprentice Meledor|r
     .complete 9066,1 --Apprentice Meledor
     .target Apprentice Meledor
-    .isOnQuest 9066
 step
     .goto 1941,36.70,57.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ley-Keeper Velania|r
     .turnin 9119 >>Turn in Malfunction at the West Sanctum
-    .target Ley-Keeper Velania
-    .isOnQuest 9119
-step
-    .goto 1941,36.70,57.44
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ley-Keeper Velania|r
     .accept 8486 >>Accept Arcane Instability
     .target Ley-Keeper Velania
-    .isQuestTurnedIn 9119 --any of: Malfunction at the West Sanctum
 step
     #completewith Drop8482x1
     >>|cRXP_LOOT_Incriminating Documents|r can drop from |cRXP_ENEMY_Darnassian Scout|r. Use it to start the quest if you get one
@@ -711,47 +680,25 @@ step
     .use 20765
 step
     #label Drop8482x1
-    .goto 1941,34.05,60.81
+    #loop
+    .goto 1941,35.39,59.14,0
+    .goto 1941,35.39,59.14,40,0
+    .goto 1941,34.27,59.98,40,0
     >>Kill |cRXP_ENEMY_Darnassian Scouts|r
-    .complete 9352,1 --Intruder Defeated (8)
-    .mob Darnassian Scout
-    .isOnQuest 9352
-step
-    #loop
-    .goto 1941,35.72,60.72,0
-    .goto 1941,35.72,60.72,40,0
-    .goto 1941,34.83,58.38,40,0
     >>Kill |cRXP_ENEMY_Manawraiths|r
-    .complete 8486,1 --Manawraith slain (5)
-    .mob Manawraith
-    .isOnQuest 8486
-step
-    .goto 1941,36.70,57.44
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ley-Keeper Velania|r
-    .turnin 9352 >>Turn in Darnassian Intrusions while you are here
-    .isQuestComplete 9352
-    .target Ley-Keeper Velania
-step
-    #loop
-    .goto 1941,35.32,58.39,0
-    .goto 1941,35.32,58.39,40,0
-    .goto 1941,35.90,59.96,40,0
     >>Kill |cRXP_ENEMY_Mana Stalkers|r
+    .complete 9352,1 --Intruder Defeated (8)
+    .complete 8486,1 --Manawraith slain (5)
     .complete 8486,2 --Mana Stalker slain (5)
+    .mob Darnassian Scout
+    .mob Manawraith
     .mob Mana Stalker
-    .isOnQuest 8486
 step
     .goto 1941,36.70,57.44
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ley-Keeper Velania|r
     .turnin 8486 >>Turn in Arcane Instability
-    .target Ley-Keeper Velania
-    .isOnQuest 8486
-step
-    .goto 1941,36.70,57.44
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ley-Keeper Velania|r
     .turnin 9352 >>Turn in Darnassian Intrusions
     .target Ley-Keeper Velania
-    .isOnQuest 9352
 step
     .goto 1941,29.89,58.43
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hathvelion Sungaze|r
@@ -907,14 +854,14 @@ step
     .accept 8480 >>Accept Lost Armaments
     .target Velendris Whitemorn
 step
-    #completewith Along81
+    #completewith Along76
     >>As you go: Kill |cRXP_ENEMY_Wretched Thugs|r. Kill |cRXP_ENEMY_Wretched Hooligans|r. |cRXP_WARN_Anything left is finished later|r
     .complete 8892,1 --Wretched Thug slain (5)
     .complete 8892,2 --Wretched Hooligan slain (5)
     .mob Wretched Thug
     .mob Wretched Hooligan
 step
-    #label Along81
+    #label Along76
     #loop
     .goto 1941,34.05,69.14,0
     .goto 1941,34.05,69.14,40,0
@@ -1008,7 +955,7 @@ step
     .accept 9252 >>Accept Defending Fairbreeze Village
     .target Ranger Sareyn
 step
-    #completewith Along96
+    #completewith Along91
     >>As you go: Kill |cRXP_ENEMY_Rotlimb Marauders|r. |cRXP_WARN_Anything left is finished later|r
     .complete 9252,1 --Rotlimb Marauder slain (4)
     .mob Rotlimb Marauder
@@ -1045,7 +992,7 @@ step
     .complete 8488,1 --Gharsul the Remorseless slain (1)
     .mob Gharsul the Remorseless
 step
-    #label Along96
+    #label Along91
     .goto 1941,54.28,70.98
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apprentice Mirveda|r
     .turnin 8488 >>Turn in Unexpected Results
@@ -1092,28 +1039,11 @@ step << Warrior/Undead Warlock/Orc Warlock
     .goto 1941,53.24,69.28,40,0
     .goto 1941,53.88,70.03,40,0
     .xp 10 >> Grind to level 10
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 1 - 29 Eversong Woods
-#subweight -1
-#name 7-9 Eversong Woods: around Instructor Antheol
-#next Zone Routes (Horde)\9-11 Eversong Woods: around Magistrix Landra Dawnstrider
-
 step
     .goto 1941,55.70,54.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Instructor Antheol|r
     .turnin 9066 >>Turn in Swift Discipline
-    .target Instructor Antheol
-    .isOnQuest 9066
-step << Mage
-    .goto 1941,55.70,54.51
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Instructor Antheol|r
-    .accept 9402 >>Accept Fetch!
+    .accept 9402 >>Accept Fetch! << Mage
     .target Instructor Antheol
 step << Mage
     .goto 1941,54.87,56.37
@@ -1179,7 +1109,6 @@ step << BloodElf Priest
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ponaris|r
     .turnin 9489 >>Turn in Cleansing the Scar
     .target Ponaris
-    .isOnQuest 9489
 step << Priest
     .goto 1941,47.85,47.97
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ponaris|r upstairs
@@ -1309,11 +1238,6 @@ step
     .goto 1941,60.32,62.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Dawnrunner|r
     .turnin 9359 >>Turn in Farstrider Retreat
-    .target Lieutenant Dawnrunner
-    .isOnQuest 9359
-step
-    .goto 1941,60.32,62.77
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Dawnrunner|r
     .accept 8476 >>Accept Amani Encroachment
     .accept 9484 >>Accept Taming the Beast << BloodElf Hunter
     .target Lieutenant Dawnrunner
@@ -1387,7 +1311,7 @@ step
     .target Magister Duskwither
     .xp <8,1
 step
-    #completewith Along122
+    #completewith Along115
     >>As you go: Kill |cRXP_ENEMY_Amani Berserkers|r. Kill |cRXP_ENEMY_Amani Axe Throwers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 8476,1 --Amani Berserker slain (5)
     .complete 8476,2 --Amani Axe Thrower slain (5)
@@ -1416,7 +1340,7 @@ step
     .use 23249
     .mob Chieftain Zul'Marosh
 step
-    #label Along122
+    #label Along115
     .goto 1941,70.53,72.34
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ven'jashi|r
     .turnin 8479 >>Turn in Zul'Marosh
@@ -1464,7 +1388,7 @@ step
     .accept 8894 >>Accept Cleaning up the Grounds
     .target Groundskeeper Wyllithen
 step
-    #completewith Along130
+    #completewith Along123
     >>As you go: Click the |cRXP_PICK_Duskwither Spire Power Source|r. Kill |cRXP_ENEMY_Mana Serpents|r. Kill |cRXP_ENEMY_Ether Fiends|r. |cRXP_WARN_Anything left is finished later|r
     .complete 8889,2 --Second Power Source Deactivated
     .complete 8889,3 --Third Power Source Deactivated
@@ -1477,7 +1401,7 @@ step
     >>Click the |cRXP_PICK_Duskwither Spire Power Source|r
     .complete 8889,1 --First Power Source Deactivated
 step
-    #label Along130
+    #label Along123
     .goto 1941,69.24,52.11
     >>Click the |cRXP_PICK_Magister Duskwither's Journal|r
     .accept 8891 >>Accept Abandoned Investigations
@@ -1565,26 +1489,11 @@ step
     .complete 8491,1 --Springpaw Pelt (6)
     .mob Springpaw Stalker
     .mob Elder Springpaw
-    .isOnQuest 8491
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 1 - 29 Eversong Woods
-#subweight -1
-#name 9-11 Eversong Woods: around Magistrix Landra Dawnstrider
---RouteBuilder:next
-#next Zone Routes (Horde)\10-13 The Barrens: around Sergra Darkthorn;Zone Routes (Horde)\4-10 Durotar: around Master Gadrin;Zone Routes (Horde)\10-13 Ghostlands: around Arcanist Vandril
-
 step
     .goto 1941,44.72,69.63
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Velan Brightoak|r
     .turnin 8491 >>Turn in Pelt Collection
     .target Velan Brightoak
-    .isOnQuest 8491
 step
     .goto 1941,44.03,70.76
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magistrix Landra Dawnstrider|r
@@ -1601,14 +1510,8 @@ step
     .goto 1941,60.32,61.38
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magister Duskwither|r
     .turnin 8890 >>Turn in Word from the Spire
-    .target Magister Duskwither
-    .isOnQuest 8890
-step
-    .goto 1941,60.32,61.38
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magister Duskwither|r
     .turnin 8891 >>Turn in Abandoned Investigations
     .target Magister Duskwither
-    .isOnQuest 8891
 step << BloodElf Hunter
     .goto 1941,60.32,62.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant Dawnrunner|r
@@ -1619,14 +1522,8 @@ step << Mage
     .goto 1941,55.70,54.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Instructor Antheol|r
     .turnin 9403 >>Turn in The Purest Water
-    .target Instructor Antheol
-    .isOnQuest 9403
-step << Mage
-    .goto 1941,55.70,54.51
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Instructor Antheol|r
     .accept 9404 >>Accept Recently Living
     .target Instructor Antheol
-    .isQuestTurnedIn 9403 --any of: The Purest Water
 step << Druid
     .goto 1954,72.53,56.24,10,0
     .goto 1954,71.55,55.75
@@ -1836,49 +1733,32 @@ step
     .goto 1941,46.93,71.79
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ranger Sareyn|r
     .turnin 9252 >>Turn in Defending Fairbreeze Village
-    .target Ranger Sareyn
-    .isOnQuest 9252
-step
-    .goto 1941,46.93,71.79
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ranger Sareyn|r
     .accept 9253 >>Accept Runewarden Deryan
     .target Ranger Sareyn
-    .isQuestTurnedIn 9252 --any of: Defending Fairbreeze Village
-step
-    .goto 1941,44.03,70.76
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magistrix Landra Dawnstrider|r
-    .accept 9144 >>Accept Missing in the Ghostlands
-    .target Magistrix Landra Dawnstrider
 step
     .goto 1941,44.03,70.76
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magistrix Landra Dawnstrider|r
     .turnin 9255 >>Turn in Research Notes
+    .accept 9144 >>Accept Missing in the Ghostlands
     .target Magistrix Landra Dawnstrider
-    .isOnQuest 9255
 step
     .goto 1941,43.34,70.82
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ranger Degolien|r
     .turnin 9363 >>Turn in Warning Fairbreeze Village
     .target Ranger Degolien
-    .isOnQuest 9363
 step
     .goto 1941,34.06,80.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Larianna Riverwind|r
     .turnin 9258 >>Turn in The Scorched Grove
-    .target Larianna Riverwind
-    .isOnQuest 9258
-step
-    .goto 1941,34.06,80.02
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Larianna Riverwind|r
     .accept 8473 >>Accept A Somber Task
     .target Larianna Riverwind
 step
-    #completewith Along155
+    #completewith Along143
     >>As you go: Kill |cRXP_ENEMY_Withered Green Keepers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 8473,1 --Withered Green Keeper slain (10)
     .mob Withered Green Keeper
 step
-    #label Along155
+    #label Along143
     .goto 1941,34.93,84.46
     >>Kill |cRXP_ENEMY_Old Whitebark|r and loot |cRXP_LOOT_Old Whitebark's Pendant|r. Use it to start the quest
     .collect 23228,1,8474 --Old Whitebark's Pendant (1)
@@ -1909,11 +1789,6 @@ step
     .goto 1941,44.19,85.47
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Runewarden Deryan|r
     .turnin 9253 >>Turn in Runewarden Deryan
-    .target Runewarden Deryan
-    .isOnQuest 9253
-step
-    .goto 1941,44.19,85.47
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Runewarden Deryan|r
     .accept 8490 >>Accept Powering our Defenses
     .target Runewarden Deryan
 step
@@ -1934,7 +1809,6 @@ step << Mage
     >>Kill |cRXP_ENEMY_Eversong Green Keeper|r and loot |cRXP_LOOT_Living Branch|r
     .complete 9404,1 --Living Branch (1)
     .mob Eversong Green Keeper
-    .isOnQuest 9404
 step
     .goto 1941,48.98,88.99
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Courier Dawnstrider|r
@@ -1956,7 +1830,6 @@ step << Mage
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Instructor Antheol|r
     .turnin 9404 >>Turn in Recently Living
     .target Instructor Antheol
-    .isOnQuest 9404
 step << Mage
     .goto 1941,55.70,54.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Antheol|r
@@ -2237,22 +2110,9 @@ step
     >>|cRXP_FRIENDLY_Ghostlands and back here|r: The Fallen Courier
     >>|cRXP_FRIENDLY_Ghostlands and back here|r: Taming the Beast << BloodElf Hunter
 step
-    +|cRXP_WARN_Suggested next zones at level 10|r: |cRXP_FRIENDLY_The Barrens|r (about 2.6 levels of quests, starting around Sergra Darkthorn), |cRXP_FRIENDLY_Durotar|r (about 1.3 levels of quests, starting around Master Gadrin), |cRXP_FRIENDLY_Ghostlands|r (about 1.3 levels of quests, starting around Arcanist Vandril; 1 quest from here hands in there). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Until level 13, suggested zones|r: |cRXP_FRIENDLY_The Barrens|r (about 2.6 levels of quests), |cRXP_FRIENDLY_Tirisfal Glades|r (about 1.8 levels of quests), |cRXP_FRIENDLY_Durotar|r (about 1.5 levels of quests). Then come back to this Eversong Woods guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Eversong Woods is planned from level 13.|r Load its guide for level 13 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 1 - 29 Eversong Woods
-#subweight -1
-#name 13-14 Eversong Woods
---RouteBuilder:next
-#next Zone Routes (Horde)\13-16 The Barrens: around Gazlowe;Zone Routes (Horde)\10-13 Ghostlands: around Arcanist Vandril;Zone Routes (Horde)\10-12 Silverpine Forest: around Apothecary Renferrel
-
+    .xp 13 >>|cRXP_WARN_The rest of Eversong Woods is planned from level 13.|r Come back to this guide then
 step
     #completewith next
     .zone 1954 >>Travel to Silvermoon City
@@ -2330,20 +2190,9 @@ step
     +|cRXP_WARN_That is all of Eversong Woods for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Ghostlands and back here|r: The First Trial << BloodElf Paladin
 step
-    +|cRXP_WARN_Suggested next zones at level 13|r: |cRXP_FRIENDLY_The Barrens|r (about 1.2 levels of quests, starting around Gazlowe), |cRXP_FRIENDLY_Ghostlands|r (about 0.9 levels of quests, starting around Arcanist Vandril; 1 quest from here hands in there), |cRXP_FRIENDLY_Silverpine Forest|r (about 0.6 levels of quests, starting around Apothecary Renferrel). Completing this step loads the guide for The Barrens --RouteBuilder:next
+    +|cRXP_WARN_Until level 28, suggested zones|r: |cRXP_FRIENDLY_The Barrens|r (about 2.3 levels of quests), |cRXP_FRIENDLY_Ghostlands|r (about 0.9 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Silverpine Forest|r (about 0.6 levels of quests). Then come back to this Eversong Woods guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Eversong Woods is planned from level 28.|r Load its guide for level 28 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 1 - 29 Eversong Woods
-#subweight -1
-#name 28-29 Eversong Woods
-
+    .xp 28 >>|cRXP_WARN_The rest of Eversong Woods is planned from level 28.|r Come back to this guide then
 step
     .goto 1941,38.14,73.56
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord Saltheril|r

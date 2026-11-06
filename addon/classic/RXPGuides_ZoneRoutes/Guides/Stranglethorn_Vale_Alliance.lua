@@ -1,9 +1,9 @@
 -- 30-50 Stranglethorn Vale: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 8 parts (from level 30, 33, 36, 39, 42, 45, 48, 51).
--- Split into 8 guides, listed under "30 - 52 Stranglethorn Vale" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 30; part 2 from 33; part 3 from 36; part 4 from 39; part 5 from 42; part 6 from 45; part 7 from 48; part 8 from 51.
 -- Edit zones/classic/Stranglethorn Vale.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 30 - 52 Stranglethorn Vale
-#subweight -30
-#name 30-31 Stranglethorn Vale: around Barnil Stonepot
+#name 30-50 Stranglethorn Vale
 
 step
     #loop
@@ -383,18 +381,7 @@ step
     >>|cRXP_FRIENDLY_Thousand Needles|r: Rumors for Kravel
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Green Hills of Stranglethorn
 step
-    +|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 33.|r Load its guide for level 33 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 30 - 52 Stranglethorn Vale
-#subweight -30
-#name 33-34 Stranglethorn Vale: around Krazek
-
+    .xp 33 >>|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 33.|r Come back to this guide then
 step << Warlock
     .goto 1434/0,388.78,-14439.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Xizk Goodstitch|r
@@ -675,18 +662,7 @@ step
     >>|cRXP_FRIENDLY_The Barrens|r: Components for the Enchanted Gold Bloodrobe << Warlock
     >>|cRXP_FRIENDLY_Arathi Highlands and back here|r: Favor for Krazek
 step
-    +|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 36.|r Load its guide for level 36 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 30 - 52 Stranglethorn Vale
-#subweight -30
-#name 36-37 Stranglethorn Vale: around Baron Revilgaz
-
+    .xp 36 >>|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 36.|r Come back to this guide then
 step
     .goto 1434/0,487.05,-14444.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fleet Master Seahorn|r
@@ -877,18 +853,7 @@ step
     >>|cRXP_FRIENDLY_Arathi Highlands|r: Sunken Treasure
     >>|cRXP_FRIENDLY_Thousand Needles|r: Goblin Sponsorship
 step
-    +|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 39.|r Load its guide for level 39 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 30 - 52 Stranglethorn Vale
-#subweight -30
-#name 39-40 Stranglethorn Vale: around Catelyn the Blade
-
+    .xp 39 >>|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 39.|r Come back to this guide then
 step
     .goto 1434/0,495.34,-14457.65
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Skindle|r
@@ -1177,18 +1142,7 @@ step
     .turnin 576 >>Turn in Keep An Eye Out
     .target Dizzy One-Eye
 step
-    +|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 42.|r Load its guide for level 42 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 30 - 52 Stranglethorn Vale
-#subweight -30
-#name 42-43 Stranglethorn Vale: around "Sea Wolf" MacKinley
-
+    .xp 42 >>|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 42.|r Come back to this guide then
 step
     .goto 1434/0,495.34,-14457.65
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Skindle|r
@@ -1453,18 +1407,7 @@ step
     >>|cRXP_FRIENDLY_Thousand Needles|r: Zanzil's Mixture and a Fool's Stout
     >>|cRXP_FRIENDLY_The Hinterlands and back here|r: Whiskey Slim's Lost Grog
 step
-    +|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 45.|r Load its guide for level 45 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 30 - 52 Stranglethorn Vale
-#subweight -30
-#name 45-46 Stranglethorn Vale
-
+    .xp 45 >>|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 45.|r Come back to this guide then
 step
     .goto 1434/0,-193.19,-11320.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brother Nimetz|r
@@ -1518,18 +1461,7 @@ step
     .turnin 8551 >>Turn in The Captain's Chest
     .target Captain Hecklebury Smotts
 step
-    +|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 48.|r Load its guide for level 48 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 30 - 52 Stranglethorn Vale
-#subweight -30
-#name 48-49 Stranglethorn Vale
-
+    .xp 48 >>|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 48.|r Come back to this guide then
 step
     .goto 1434/0,501.09,-14453.39
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Krazek|r
@@ -1594,18 +1526,7 @@ step
     .target Fleet Master Seahorn
     .isOnQuest 608
 step
-    +|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 51.|r Load its guide for level 51 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 30 - 52 Stranglethorn Vale
-#subweight -30
-#name 51-52 Stranglethorn Vale
-
+    .xp 51 >>|cRXP_WARN_The rest of Stranglethorn Vale is planned from level 51.|r Come back to this guide then
 step
     .goto 1434/0,519.59,-14301.52
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sprogger|r

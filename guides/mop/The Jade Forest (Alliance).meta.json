@@ -13,12 +13,12 @@
       "start": 86,
       "end": 86.21,
       "next": 89,
-      "guide": "86-87 The Jade Forest: around Shao the Defiant",
+      "guide": "86-90 The Jade Forest",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Shao the Defiant",
-          "guide": "86-87 The Jade Forest: around Shao the Defiant",
+          "label": "",
+          "name": "start",
+          "guide": "86-90 The Jade Forest",
           "level": 86,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 89,
       "end": 89.04,
-      "guide": "89-90 The Jade Forest: around Pei-Zhi",
+      "guide": "86-90 The Jade Forest",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Pei-Zhi",
-          "guide": "89-90 The Jade Forest: around Pei-Zhi",
+          "label": "",
+          "name": "part 2",
+          "guide": "86-90 The Jade Forest",
           "level": 89,
           "index": 0
         }

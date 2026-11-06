@@ -1,9 +1,9 @@
 -- 20-31 Wetlands: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 4 parts (from level 20, 23, 26, 29).
--- Split into 4 guides, listed under "20 - 30 Wetlands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 20; part 2 from 23; part 3 from 26; part 4 from 29.
 -- Edit zones/tbc/Wetlands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 20 - 30 Wetlands
-#subweight -20
-#name 20-21 Wetlands: around Karl Boran
+#name 20-31 Wetlands
 --RouteBuilder:next
-#next Zone Routes (Alliance)\17-19 Darkshore: around Terenthis;Zone Routes (Alliance)\20-21 Duskwood: around Elaine Carevin
+#next Zone Routes (Alliance)\30-50 Stranglethorn Vale;Zone Routes (Alliance)\20-31 Duskwood;Zone Routes (Alliance)\18-32 Ashenvale
 
 step
     .goto 1437/0,-801.47,-3745.44
@@ -268,22 +266,9 @@ step
     >>|cRXP_FRIENDLY_Darkshore|r: Fiora Longears
     >>|cRXP_FRIENDLY_Loch Modan|r: A Dark Threat Looms
 step
-    +|cRXP_WARN_Suggested next zones at level 20|r: |cRXP_FRIENDLY_Darkshore|r (about 0.7 levels of quests, starting around Terenthis), |cRXP_FRIENDLY_Duskwood|r (about 0.7 levels of quests, starting around Elaine Carevin). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 23, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Duskwood|r (about 0.7 levels of quests). Then come back to this Wetlands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Wetlands is planned from level 23.|r Load its guide for level 23 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 20 - 30 Wetlands
-#subweight -20
-#name 23-24 Wetlands
---RouteBuilder:next
-#next Zone Routes (Alliance)\20-21 Duskwood: around Elaine Carevin
-
+    .xp 23 >>|cRXP_WARN_The rest of Wetlands is planned from level 23.|r Come back to this guide then
 step
     .goto 1437/0,-837.86,-3813.52
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Archaeologist Flagongut|r
@@ -458,22 +443,9 @@ step
     .target Rethiel the Greenwarden
     .isOnQuest 275
 step
-    +|cRXP_WARN_Suggested next zones at level 23|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests, starting around Elaine Carevin). Completing this step loads the guide for Duskwood --RouteBuilder:next
+    +|cRXP_WARN_Until level 26, suggested zones|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests). Then come back to this Wetlands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Wetlands is planned from level 26.|r Load its guide for level 26 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 20 - 30 Wetlands
-#subweight -20
-#name 26-27 Wetlands
---RouteBuilder:next
-#next Zone Routes (Alliance)\24-25 Duskwood: around Clerk Daltry
-
+    .xp 26 >>|cRXP_WARN_The rest of Wetlands is planned from level 26.|r Come back to this guide then
 step
     .goto 1437/0,-840.34,-3791.74
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_First Mate Fitzsimmons|r
@@ -627,22 +599,9 @@ step
     +|cRXP_WARN_That is all of Wetlands for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Stormwind City|r: Blessed Arm
 step
-    +|cRXP_WARN_Suggested next zones at level 26|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests, starting around Clerk Daltry). Completing this step loads the guide for Duskwood --RouteBuilder:next
+    +|cRXP_WARN_Until level 29, suggested zones|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests). Then come back to this Wetlands guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Wetlands is planned from level 29.|r Load its guide for level 29 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 20 - 30 Wetlands
-#subweight -20
-#name 29-30 Wetlands: around Rhag Garmason
---RouteBuilder:next
-#next Zone Routes (Alliance)\30-32 Stranglethorn Vale: around Krazek;Zone Routes (Alliance)\28-29 Duskwood: around Sirra Von'Indi;Zone Routes (Alliance)\27-29 Ashenvale: around Sentinel Melyria Frostshadow
-
+    .xp 29 >>|cRXP_WARN_The rest of Wetlands is planned from level 29.|r Come back to this guide then
 step
     .goto 1437/0,-1968.49,-3550.57
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ormer Ironbraid|r
@@ -829,5 +788,5 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: Cleansing the Eye
     >>|cRXP_FRIENDLY_Arathi Highlands and back here|r: The Thandol Span
 step
-    +|cRXP_WARN_Suggested next zones at level 29|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.8 levels of quests, starting around Krazek), |cRXP_FRIENDLY_Duskwood|r (about 0.7 levels of quests, starting around Sirra Von'Indi), |cRXP_FRIENDLY_Ashenvale|r (about 0.6 levels of quests, starting around Sentinel Melyria Frostshadow). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 29|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.8 levels of quests), |cRXP_FRIENDLY_Duskwood|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Ashenvale|r (about 0.6 levels of quests). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
 ]])

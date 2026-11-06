@@ -13,12 +13,12 @@
       "start": 85,
       "end": 85.26,
       "next": 88,
-      "guide": "85-86 The Jade Forest: around Master Stone Fist",
+      "guide": "85-90 The Jade Forest",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Master Stone Fist",
-          "guide": "85-86 The Jade Forest: around Master Stone Fist",
+          "label": "",
+          "name": "start",
+          "guide": "85-90 The Jade Forest",
           "level": 85,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 88,
       "end": 88.04,
-      "guide": "88-89 The Jade Forest: around Pei-Zhi",
+      "guide": "85-90 The Jade Forest",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Pei-Zhi",
-          "guide": "88-89 The Jade Forest: around Pei-Zhi",
+          "label": "",
+          "name": "part 2",
+          "guide": "85-90 The Jade Forest",
           "level": 88,
           "index": 0
         }

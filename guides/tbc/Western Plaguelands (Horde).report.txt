@@ -1,7 +1,7 @@
 Western Plaguelands - Horde - part 1 of 2, planned from level 52
 Guide "52-58 Western Plaguelands" in group "Zone Routes (Horde)": this part has 33 steps, 31 stops
 Written to guides/tbc/Western Plaguelands (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -101,7 +101,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Western Plaguelands - Horde - part 2 of 2, planned from level 55
 Guide "52-58 Western Plaguelands" in group "Zone Routes (Horde)": this part has 36 steps, 35 stops
 Written to guides/tbc/Western Plaguelands (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

@@ -1,9 +1,9 @@
 -- 51-60 Burning Steppes: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 51, 59, 62).
--- Split into 3 guides, listed under "51 - 63 Burning Steppes" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 51; part 2 from 59; part 3 from 62.
 -- Edit zones/tbc/Burning Steppes.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 51 - 63 Burning Steppes
-#subweight -51
-#name 51-52 Burning Steppes
+#name 51-60 Burning Steppes
 --RouteBuilder:next
-#next Zone Routes (Horde)\50-52 Un'Goro Crater: around Torwa Pathfinder
+#next Zone Routes (Horde)\62-70 Terokkar Forest;Zone Routes (Horde)\60-63 Hellfire Peninsula
 
 step
     .goto 1428/0,-2177.65,-7499.75
@@ -88,23 +86,10 @@ step << Orc Warlock/Undead Warlock/BloodElf Warlock
 step
     +|cRXP_WARN_That is all of Burning Steppes for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Winterspring|r: Felnok Steelspring
-step
-    +|cRXP_WARN_Suggested next zones at level 51|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.7 levels of quests, starting around Torwa Pathfinder). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
 step << Orc Warlock/Undead Warlock/BloodElf Warlock
-    +|cRXP_WARN_The rest of Burning Steppes is planned from level 59.|r Load its guide for level 59 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Orc Warlock/Undead Warlock/BloodElf Warlock
-#version 1
-#group Zone Routes (Horde)
-#subgroup 51 - 63 Burning Steppes
-#subweight -51
-#name 59-60 Burning Steppes
---RouteBuilder:next
-#next Zone Routes (Horde)\60-62 Hellfire Peninsula: around Nazgrel
-
+    +|cRXP_WARN_Until level 59, suggested zones|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.7 levels of quests). Then come back to this Burning Steppes guide --RouteBuilder:next
+step << Orc Warlock/Undead Warlock/BloodElf Warlock
+    .xp 59 >>|cRXP_WARN_The rest of Burning Steppes is planned from level 59.|r Come back to this guide then
 step << Orc Warlock/Undead Warlock/BloodElf Warlock
     .goto 1428/0,-631.05,-7648.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gorzeeki Wildeyes|r
@@ -160,23 +145,10 @@ step
     >>|cRXP_FRIENDLY_Badlands|r: Krom'Grul
     >>|cRXP_FRIENDLY_Eastern Plaguelands|r: Leonid Barthalomew
     >>|cRXP_FRIENDLY_Felwood|r: Lord Banehollow << Orc Warlock/Undead Warlock/BloodElf Warlock
-step
-    +|cRXP_WARN_Suggested next zones at level 59|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 1.5 levels of quests, starting around Nazgrel). Completing this step loads the guide for Hellfire Peninsula --RouteBuilder:next
 step << Orc Warlock/Undead Warlock/BloodElf Warlock
-    +|cRXP_WARN_The rest of Burning Steppes is planned from level 62.|r Load its guide for level 62 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Orc Warlock/Undead Warlock/BloodElf Warlock
-#version 1
-#group Zone Routes (Horde)
-#subgroup 51 - 63 Burning Steppes
-#subweight -51
-#name 62-63 Burning Steppes
---RouteBuilder:next
-#next Zone Routes (Horde)\62-64 Terokkar Forest: around Tooki;Zone Routes (Horde)\60-62 Hellfire Peninsula: around Nazgrel
-
+    +|cRXP_WARN_Until level 62, suggested zones|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 1.5 levels of quests). Then come back to this Burning Steppes guide --RouteBuilder:next
+step << Orc Warlock/Undead Warlock/BloodElf Warlock
+    .xp 62 >>|cRXP_WARN_The rest of Burning Steppes is planned from level 62.|r Come back to this guide then
 step << Orc Warlock/Undead Warlock/BloodElf Warlock
     .goto 1428/0,-638.38,-7648.89
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mor'zul Bloodbringer|r
@@ -300,5 +272,5 @@ step
     >>|cRXP_FRIENDLY_another zone|r: Dreadsteed of Xoroth << Orc Warlock/Undead Warlock/BloodElf Warlock
     >>|cRXP_FRIENDLY_Winterspring and back here|r: Rage of Blood << Orc Warlock/Undead Warlock/BloodElf Warlock
 step
-    +|cRXP_WARN_Suggested next zones at level 62|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.9 levels of quests, starting around Tooki), |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.8 levels of quests, starting around Nazgrel). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 62|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.9 levels of quests), |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.8 levels of quests). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
 ]])

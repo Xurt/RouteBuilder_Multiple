@@ -1,7 +1,7 @@
 Stranglethorn Vale - Alliance - part 1 of 8, planned from level 30
 Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 62 steps, 54 stops
 Written to guides/classic/Stranglethorn Vale (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -149,7 +149,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Stranglethorn Vale - Alliance - part 2 of 8, planned from level 33
 Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 43 steps, 37 stops
 Written to guides/classic/Stranglethorn Vale (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -249,7 +249,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Stranglethorn Vale - Alliance - part 3 of 8, planned from level 36
 Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 32 steps, 30 stops
 Written to guides/classic/Stranglethorn Vale (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -338,7 +338,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Stranglethorn Vale - Alliance - part 4 of 8, planned from level 39
 Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 45 steps, 42 stops
 Written to guides/classic/Stranglethorn Vale (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -408,7 +408,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Stranglethorn Vale - Alliance - part 5 of 8, planned from level 42
 Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 44 steps, 39 stops
 Written to guides/classic/Stranglethorn Vale (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -471,7 +471,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Stranglethorn Vale - Alliance - part 6 of 8, planned from level 45
 Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 10 steps, 9 stops
 Written to guides/classic/Stranglethorn Vale (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -521,7 +521,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Stranglethorn Vale - Alliance - part 7 of 8, planned from level 48
 Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 11 steps, 10 stops
 Written to guides/classic/Stranglethorn Vale (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -572,7 +572,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Stranglethorn Vale - Alliance - part 8 of 8, planned from level 51
 Guide "30-50 Stranglethorn Vale" in group "Zone Routes (Alliance)": this part has 10 steps, 9 stops
 Written to guides/classic/Stranglethorn Vale (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 

@@ -13,12 +13,12 @@
       "start": 52,
       "end": 52,
       "next": 55,
-      "guide": "52-53 Winterspring: around Gregor Greystone",
+      "guide": "52-60 Winterspring",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Gregor Greystone",
-          "guide": "52-53 Winterspring: around Gregor Greystone",
+          "label": "",
+          "name": "start",
+          "guide": "52-60 Winterspring",
           "level": 52,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 55,
       "end": 55.24,
       "next": 58,
-      "guide": "55-56 Winterspring: around Umi Rumplesnicker",
+      "guide": "52-60 Winterspring",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Umi Rumplesnicker",
-          "guide": "55-56 Winterspring: around Umi Rumplesnicker",
+          "label": "",
+          "name": "part 2",
+          "guide": "52-60 Winterspring",
           "level": 55,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 58,
       "end": 58.13,
-      "guide": "58-59 Winterspring: around Storm Shadowhoof",
+      "guide": "52-60 Winterspring",
       "sections": [
         {
-          "label": "RBSection3_1",
-          "name": "around Storm Shadowhoof",
-          "guide": "58-59 Winterspring: around Storm Shadowhoof",
+          "label": "",
+          "name": "part 3",
+          "guide": "52-60 Winterspring",
           "level": 58,
           "index": 0
         }

@@ -1,9 +1,9 @@
 -- 87-90 Kun-Lai Summit: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 87, 90).
--- Split into 2 guides, listed under "87 - 91 Kun-Lai Summit" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 87; part 2 from 90.
 -- Edit zones/mop/Kun-Lai Summit.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 87 - 91 Kun-Lai Summit
-#subweight -87
-#name 87-88 Kun-Lai Summit: around Smokey Sootassle
+#name 87-90 Kun-Lai Summit
 
 step << Monk
     .goto 379,48.59,42.70
@@ -2136,18 +2134,7 @@ step
     >>|cRXP_FRIENDLY_The Veiled Stair and back here|r: The Spring Drifter
     >>|cRXP_FRIENDLY_Dread Wastes and back here|r: Finish This!
 step
-    +|cRXP_WARN_The rest of Kun-Lai Summit is planned from level 90.|r Load its guide for level 90 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 87 - 91 Kun-Lai Summit
-#subweight -87
-#name 90-91 Kun-Lai Summit
-
+    .xp 90 >>|cRXP_WARN_The rest of Kun-Lai Summit is planned from level 90.|r Come back to this guide then
 step
     .goto 379,34.54,59.12
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kite Master Len|r

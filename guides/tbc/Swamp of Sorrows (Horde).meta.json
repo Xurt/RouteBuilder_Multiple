@@ -13,12 +13,12 @@
       "start": 35,
       "end": 35.19,
       "next": 38,
-      "guide": "35-36 Swamp of Sorrows",
+      "guide": "35-57 Swamp of Sorrows",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "35-36 Swamp of Sorrows",
+          "guide": "35-57 Swamp of Sorrows",
           "level": 35,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 38,
       "end": 38.21,
       "next": 41,
-      "guide": "38-39 Swamp of Sorrows",
+      "guide": "35-57 Swamp of Sorrows",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "38-39 Swamp of Sorrows",
+          "guide": "35-57 Swamp of Sorrows",
           "level": 38,
           "index": 0
         }
@@ -45,12 +45,12 @@
       "start": 41,
       "end": 41.54,
       "next": 44,
-      "guide": "41-42 Swamp of Sorrows: around Tok\u0027Kar",
+      "guide": "35-57 Swamp of Sorrows",
       "sections": [
         {
-          "label": "RBSection3_1",
-          "name": "around Tok\u0027Kar",
-          "guide": "41-42 Swamp of Sorrows: around Tok\u0027Kar",
+          "label": "",
+          "name": "part 3",
+          "guide": "35-57 Swamp of Sorrows",
           "level": 41,
           "index": 0
         }
@@ -61,12 +61,12 @@
       "start": 44,
       "end": 44.12,
       "next": 47,
-      "guide": "44-45 Swamp of Sorrows",
+      "guide": "35-57 Swamp of Sorrows",
       "sections": [
         {
-          "label": "RBSection4_1",
+          "label": "",
           "name": "part 4",
-          "guide": "44-45 Swamp of Sorrows",
+          "guide": "35-57 Swamp of Sorrows",
           "level": 44,
           "index": 0
         }
@@ -77,12 +77,12 @@
       "start": 47,
       "end": 47.02,
       "next": 50,
-      "guide": "47-48 Swamp of Sorrows",
+      "guide": "35-57 Swamp of Sorrows",
       "sections": [
         {
-          "label": "RBSection5_1",
+          "label": "",
           "name": "part 5",
-          "guide": "47-48 Swamp of Sorrows",
+          "guide": "35-57 Swamp of Sorrows",
           "level": 47,
           "index": 0
         }
@@ -93,12 +93,12 @@
       "start": 50,
       "end": 50.08,
       "next": 53,
-      "guide": "50-51 Swamp of Sorrows",
+      "guide": "35-57 Swamp of Sorrows",
       "sections": [
         {
-          "label": "RBSection6_1",
+          "label": "",
           "name": "part 6",
-          "guide": "50-51 Swamp of Sorrows",
+          "guide": "35-57 Swamp of Sorrows",
           "level": 50,
           "index": 0
         }
@@ -109,12 +109,12 @@
       "start": 53,
       "end": 53,
       "next": 56,
-      "guide": "53-54 Swamp of Sorrows",
+      "guide": "35-57 Swamp of Sorrows",
       "sections": [
         {
-          "label": "RBSection7_1",
+          "label": "",
           "name": "part 7",
-          "guide": "53-54 Swamp of Sorrows",
+          "guide": "35-57 Swamp of Sorrows",
           "level": 53,
           "index": 0
         }
@@ -124,12 +124,12 @@
       "part": 8,
       "start": 56,
       "end": 56.01,
-      "guide": "56-57 Swamp of Sorrows",
+      "guide": "35-57 Swamp of Sorrows",
       "sections": [
         {
-          "label": "RBSection8_1",
+          "label": "",
           "name": "part 8",
-          "guide": "56-57 Swamp of Sorrows",
+          "guide": "35-57 Swamp of Sorrows",
           "level": 56,
           "index": 0
         }

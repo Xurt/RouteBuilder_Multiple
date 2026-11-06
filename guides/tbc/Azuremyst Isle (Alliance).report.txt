@@ -1,14 +1,14 @@
 Azuremyst Isle - Alliance - part 1 of 3, planned from level 1
-Guide "1-12 Azuremyst Isle" in group "Zone Routes (Alliance)": this part has 191 steps, 127 stops
+Guide "1-12 Azuremyst Isle" in group "Zone Routes (Alliance)": this part has 189 steps, 124 stops
 Written to guides/tbc/Azuremyst Isle (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
 Checks
 ------
-Played through as 26 race/class combinations: 64 PROBLEMS
+Played through as 26 race/class combinations: 58 PROBLEMS
   ! Botanist Taerix is picked up before any of the quests that unlock it (Human Warrior)
   ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Human Warrior)
   ! Botanist Taerix is picked up before any of the quests that unlock it (Human Paladin)
@@ -51,25 +51,22 @@ Played through as 26 race/class combinations: 64 PROBLEMS
   ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Gnome Warlock)
   ! Botanist Taerix is picked up before any of the quests that unlock it (Draenei Warrior)
   ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Draenei Warrior)
-  ! The Prophecy of Velen is handed in before it is picked up (Draenei Warrior)
-  ! The Prophecy of Velen (9505) is never picked up (Draenei Warrior)
+  ! The Prophecy of Velen is picked up before any of the quests that unlock it (Draenei Warrior)
   ! Botanist Taerix is picked up before any of the quests that unlock it (Draenei Paladin)
   ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Draenei Paladin)
-  ! The Prophecy of Velen is handed in before it is picked up (Draenei Paladin)
-  ! The Prophecy of Velen (9505) is never picked up (Draenei Paladin)
+  ! The Prophecy of Velen is picked up before any of the quests that unlock it (Draenei Paladin)
   ! Botanist Taerix is picked up before any of the quests that unlock it (Draenei Hunter)
   ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Draenei Hunter)
-  ! The Prophecy of Velen is handed in before it is picked up (Draenei Hunter)
-  ! The Prophecy of Velen (9505) is never picked up (Draenei Hunter)
+  ! The Prophecy of Velen is picked up before any of the quests that unlock it (Draenei Hunter)
   ! Botanist Taerix is picked up before any of the quests that unlock it (Draenei Priest)
   ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Draenei Priest)
-  ! The Prophecy of Velen is handed in before it is picked up (Draenei Priest)
-  ! The Prophecy of Velen (9505) is never picked up (Draenei Priest)
+  ! The Prophecy of Velen is picked up before any of the quests that unlock it (Draenei Priest)
   ! Botanist Taerix is picked up before any of the quests that unlock it (Draenei Shaman)
   ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Draenei Shaman)
-  ! The Prophecy of Velen is handed in before it is picked up (Draenei Shaman)
-  ! The Prophecy of Velen (9505) is never picked up (Draenei Shaman)
-  ... and 4 more
+  ! The Prophecy of Velen is picked up before any of the quests that unlock it (Draenei Shaman)
+  ! Botanist Taerix is picked up before any of the quests that unlock it (Draenei Mage)
+  ! Vindicator Aldar leads to Inoculation but is handed in after that was picked up (Draenei Mage)
+  ! The Prophecy of Velen is picked up before any of the quests that unlock it (Draenei Mage)
 Quest log: at most 10 of 40 held at once (Draenei Warrior), not counting quests brought in from other zones.
 12 pickups or hand-ins are within reach of a stop but planned for later.
 2 times the route runs past a finished quest's hand-in without stopping (judged in straight lines).
@@ -93,6 +90,7 @@ Hearthstone: set at Diktynna (Diktynna's inn); 0 hearth steps in the guide.
 These pickups are planned within about half a level of the level they unlock at, so the guide checks your level first.
 The check passes at once if you are there; if you are a little behind the prediction it asks you to grind the difference:
   level 3 for Vindicator Aldar
+  level 5 for The Prophecy of Velen (Draenei)
   level 6 for A Cry For Help
 33 training, vendor and flight-path steps kept from the lock file, each next to the step above it there.
 9 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
@@ -169,7 +167,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Azuremyst Isle - Alliance - part 2 of 3, planned from level 12
 Guide "1-12 Azuremyst Isle" in group "Zone Routes (Alliance)": this part has 63 steps, 40 stops
 Written to guides/tbc/Azuremyst Isle (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1110 objective notes read from 57 guide files
@@ -233,7 +231,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Azuremyst Isle - Alliance - part 3 of 3, planned from level 15
 Guide "1-12 Azuremyst Isle" in group "Zone Routes (Alliance)": this part has 9 steps, 7 stops
 Written to guides/tbc/Azuremyst Isle (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1110 objective notes read from 57 guide files

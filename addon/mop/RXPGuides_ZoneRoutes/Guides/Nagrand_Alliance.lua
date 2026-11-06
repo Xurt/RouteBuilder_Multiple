@@ -1,5 +1,5 @@
 -- 65-68 Nagrand: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- Edit zones/mop/Nagrand.json and re-run rather than editing this file, or your changes are lost on the next build.
@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
 #group Zone Routes (Alliance)
 #name 65-68 Nagrand
 --RouteBuilder:next
-#next Zone Routes (Alliance)\62-65 Terokkar Forest: around Earthbinder Tavgren
+#next Zone Routes (Alliance)\62-70 Terokkar Forest
 
 step
     .goto 107,61.72,67.05
@@ -990,5 +990,5 @@ step
     >>|cRXP_FRIENDLY_Terokkar Forest|r: Levixus the Soul Caller
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Bring Me The Egg!
 step
-    +|cRXP_WARN_Suggested next zones at level 66|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.7 levels of quests, starting around Earthbinder Tavgren; 2 quests from here hand in there). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 66|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.7 levels of quests; 2 quests from here hand in there). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
 ]])

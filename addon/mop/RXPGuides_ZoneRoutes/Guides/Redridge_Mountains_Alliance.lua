@@ -1,9 +1,9 @@
 -- 15-20 Redridge Mountains: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 15, 20).
--- Split into 2 guides, listed under "15 - 21 Redridge Mountains" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 15; part 2 from 20.
 -- Edit zones/mop/Redridge Mountains.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 15 - 21 Redridge Mountains
-#subweight -15
-#name 15-18 Redridge Mountains
+#name 15-20 Redridge Mountains
 --RouteBuilder:next
-#next Zone Routes (Alliance)\15-20 Darkshore: around Ranger Glynda Nal'Shea
+#next Zone Routes (Alliance)\20-25 Hillsbrad Foothills;Zone Routes (Alliance)\10-20 Darkshore
 
 step
     .goto 49,29.41,53.77
@@ -554,23 +552,10 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
     +|cRXP_WARN_That is all of Redridge Mountains for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Stormwind City|r: Elmore's Task << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 17|r: |cRXP_FRIENDLY_Darkshore|r (about 0.8 levels of quests, starting around Ranger Glynda Nal'Shea). Completing this step loads the guide for Darkshore --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of Redridge Mountains is planned from level 20.|r Load its guide for level 20 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 15 - 21 Redridge Mountains
-#subweight -15
-#name 20-21 Redridge Mountains
---RouteBuilder:next
-#next Zone Routes (Alliance)\20-22 Hillsbrad Foothills: around Helcular;Zone Routes (Alliance)\15-20 Darkshore: around Ranger Glynda Nal'Shea
-
+    +|cRXP_WARN_Until level 20, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 1.1 levels of quests). Then come back to this Redridge Mountains guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 20 >>|cRXP_WARN_The rest of Redridge Mountains is planned from level 20.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 49,28.68,40.95
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bailiff Conacher|r
@@ -907,5 +892,5 @@ step
     +|cRXP_WARN_End of the Redridge Mountains route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Duskwood|r: Hero's Call: Duskwood! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 20|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.8 levels of quests, starting around Helcular), |cRXP_FRIENDLY_Darkshore|r (about 0.5 levels of quests, starting around Ranger Glynda Nal'Shea). Completing this step loads the guide for Hillsbrad Foothills --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 20|r: |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.8 levels of quests), |cRXP_FRIENDLY_Darkshore|r (about 0.6 levels of quests). Completing this step loads the guide for Hillsbrad Foothills --RouteBuilder:next
 ]])

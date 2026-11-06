@@ -1,5 +1,5 @@
 -- 20-25 Wetlands: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- Edit zones/mop/Wetlands.json and re-run rather than editing this file, or your changes are lost on the next build.
@@ -751,5 +751,5 @@ step
     +|cRXP_WARN_End of the Wetlands route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Arathi Highlands|r: Into Arathi
 step
-    +|cRXP_WARN_Suggested next zones at level 25|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.4 levels of quests, starting around Hemet Nesingwary Jr.), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.8 levels of quests, starting around Skuerto; 1 quest from here hands in there). Completing this step loads the guide for Northern Stranglethorn --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 25|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.4 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 0.8 levels of quests; 1 quest from here hands in there). Completing this step loads the guide for Northern Stranglethorn --RouteBuilder:next
 ]])

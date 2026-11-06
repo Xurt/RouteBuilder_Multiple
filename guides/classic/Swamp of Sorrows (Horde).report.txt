@@ -1,7 +1,7 @@
 Swamp of Sorrows - Horde - part 1 of 8, planned from level 35
 Guide "35-57 Swamp of Sorrows" in group "Zone Routes (Horde)": this part has 48 steps, 12 stops
 Written to guides/classic/Swamp of Sorrows (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -84,7 +84,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Swamp of Sorrows - Horde - part 2 of 8, planned from level 38
 Guide "35-57 Swamp of Sorrows" in group "Zone Routes (Horde)": this part has 6 steps, 4 stops
 Written to guides/classic/Swamp of Sorrows (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -150,7 +150,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Swamp of Sorrows - Horde - part 3 of 8, planned from level 41
 Guide "35-57 Swamp of Sorrows" in group "Zone Routes (Horde)": this part has 20 steps, 18 stops
 Written to guides/classic/Swamp of Sorrows (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -211,7 +211,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Swamp of Sorrows - Horde - part 4 of 8, planned from level 44
 Guide "35-57 Swamp of Sorrows" in group "Zone Routes (Horde)": this part has 11 steps, 8 stops
 Written to guides/classic/Swamp of Sorrows (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -269,7 +269,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Swamp of Sorrows - Horde - part 5 of 8, planned from level 47
 Guide "35-57 Swamp of Sorrows" in group "Zone Routes (Horde)": this part has 6 steps, 5 stops
 Written to guides/classic/Swamp of Sorrows (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -319,7 +319,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Swamp of Sorrows - Horde - part 6 of 8, planned from level 50
 Guide "35-57 Swamp of Sorrows" in group "Zone Routes (Horde)": this part has 8 steps, 6 stops
 Written to guides/classic/Swamp of Sorrows (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -371,7 +371,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Swamp of Sorrows - Horde - part 7 of 8, planned from level 53
 Guide "35-57 Swamp of Sorrows" in group "Zone Routes (Horde)": this part has 8 steps, 6 stops
 Written to guides/classic/Swamp of Sorrows (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -423,7 +423,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Swamp of Sorrows - Horde - part 8 of 8, planned from level 56
 Guide "35-57 Swamp of Sorrows" in group "Zone Routes (Horde)": this part has 11 steps, 10 stops
 Written to guides/classic/Swamp of Sorrows (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 

@@ -1,7 +1,7 @@
 Thousand Needles - Horde - part 1 of 4, planned from level 25
 Guide "25-37 Thousand Needles" in group "Zone Routes (Horde)": this part has 47 steps, 33 stops
 Written to guides/classic/Thousand Needles (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -108,7 +108,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Thousand Needles - Horde - part 2 of 4, planned from level 28
 Guide "25-37 Thousand Needles" in group "Zone Routes (Horde)": this part has 23 steps, 21 stops
 Written to guides/classic/Thousand Needles (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -179,7 +179,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Thousand Needles - Horde - part 3 of 4, planned from level 31
 Guide "25-37 Thousand Needles" in group "Zone Routes (Horde)": this part has 31 steps, 29 stops
 Written to guides/classic/Thousand Needles (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -248,7 +248,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Thousand Needles - Horde - part 4 of 4, planned from level 34
 Guide "25-37 Thousand Needles" in group "Zone Routes (Horde)": this part has 18 steps, 15 stops
 Written to guides/classic/Thousand Needles (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 

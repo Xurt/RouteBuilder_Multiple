@@ -1,9 +1,9 @@
 -- 32-42 Arathi Highlands: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 5 parts (from level 32, 35, 38, 41, 44).
--- Split into 5 guides, listed under "32 - 45 Arathi Highlands" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 32; part 2 from 35; part 3 from 38; part 4 from 41; part 5 from 44.
 -- Edit zones/classic/Arathi Highlands.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 32 - 45 Arathi Highlands
-#subweight -32
-#name 32-33 Arathi Highlands: around Tor'gan
+#name 32-42 Arathi Highlands
 
 step
     #completewith Drop635x1
@@ -213,18 +211,7 @@ step
     .target Zengu
     .isOnQuest 638
 step
-    +|cRXP_WARN_The rest of Arathi Highlands is planned from level 35.|r Load its guide for level 35 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 32 - 45 Arathi Highlands
-#subweight -32
-#name 35-36 Arathi Highlands: around Tor'gan
-
+    .xp 35 >>|cRXP_WARN_The rest of Arathi Highlands is planned from level 35.|r Come back to this guide then
 step
     .goto 1417/0,-3116.67,-942.85
     >>Click the |cRXP_PICK_Shards of Myzrael|r
@@ -376,18 +363,7 @@ step
     .turnin 663 >>Turn in Land Ho!
     .target Shakes O'Breen
 step
-    +|cRXP_WARN_The rest of Arathi Highlands is planned from level 38.|r Load its guide for level 38 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 32 - 45 Arathi Highlands
-#subweight -32
-#name 38-39 Arathi Highlands: around Zengu
-
+    .xp 38 >>|cRXP_WARN_The rest of Arathi Highlands is planned from level 38.|r Come back to this guide then
 step
     .goto 1417/0,-3524.91,-912.37
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Adegwa|r
@@ -641,18 +617,7 @@ step
     +|cRXP_WARN_That is all of Arathi Highlands for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Stranglethorn Vale|r: Sunken Treasure
 step
-    +|cRXP_WARN_The rest of Arathi Highlands is planned from level 41.|r Load its guide for level 41 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 32 - 45 Arathi Highlands
-#subweight -32
-#name 41-42 Arathi Highlands
-
+    .xp 41 >>|cRXP_WARN_The rest of Arathi Highlands is planned from level 41.|r Come back to this guide then
 step
     .goto 1417/0,-2170.95,-1510.45
     >>Click the |cRXP_PICK_Stone of Inner Binding|r
@@ -708,18 +673,7 @@ step
     +|cRXP_WARN_That is all of Arathi Highlands for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Badlands|r: Theldurin the Lost
 step
-    +|cRXP_WARN_The rest of Arathi Highlands is planned from level 44.|r Load its guide for level 44 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 32 - 45 Arathi Highlands
-#subweight -32
-#name 44-45 Arathi Highlands
-
+    .xp 44 >>|cRXP_WARN_The rest of Arathi Highlands is planned from level 44.|r Come back to this guide then
 step
     .goto 1417/0,-3523.47,-948.37
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zengu|r

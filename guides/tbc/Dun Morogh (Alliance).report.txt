@@ -1,7 +1,7 @@
 Dun Morogh - Alliance - part 1 of 8, planned from level 1
-Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 181 steps, 92 stops
+Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 177 steps, 88 stops
 Written to guides/tbc/Dun Morogh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -198,7 +198,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Dun Morogh - Alliance - part 2 of 8, planned from level 11
 Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 67 steps, 43 stops
 Written to guides/tbc/Dun Morogh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -314,7 +314,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Dun Morogh - Alliance - part 3 of 8, planned from level 14
 Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 34 steps, 25 stops
 Written to guides/tbc/Dun Morogh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -413,7 +413,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Dun Morogh - Alliance - part 4 of 8, planned from level 17
 Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 9 steps, 6 stops
 Written to guides/tbc/Dun Morogh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -500,7 +500,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Dun Morogh - Alliance - part 5 of 8, planned from level 21
 Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 29 steps, 23 stops
 Written to guides/tbc/Dun Morogh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -596,7 +596,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Dun Morogh - Alliance - part 6 of 8, planned from level 24
 Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 19 steps, 11 stops
 Written to guides/tbc/Dun Morogh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -668,7 +668,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Dun Morogh - Alliance - part 7 of 8, planned from level 27
 Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 26 steps, 23 stops
 Written to guides/tbc/Dun Morogh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -740,7 +740,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Dun Morogh - Alliance - part 8 of 8, planned from level 30
 Guide "1-30 Dun Morogh" in group "Zone Routes (Alliance)": this part has 14 steps, 11 stops
 Written to guides/tbc/Dun Morogh (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

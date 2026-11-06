@@ -13,12 +13,12 @@
       "start": 70,
       "end": 72.21,
       "next": 78,
-      "guide": "70-73 Howling Fjord: around Lurielle",
+      "guide": "70-72 Howling Fjord",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Lurielle",
-          "guide": "70-73 Howling Fjord: around Lurielle",
+          "label": "",
+          "name": "start",
+          "guide": "70-72 Howling Fjord",
           "level": 70,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 78,
       "end": 78.1,
-      "guide": "78-79 Howling Fjord",
+      "guide": "70-72 Howling Fjord",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "78-79 Howling Fjord",
+          "guide": "70-72 Howling Fjord",
           "level": 78,
           "index": 0
         }

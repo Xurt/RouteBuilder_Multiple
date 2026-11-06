@@ -13,12 +13,12 @@
       "start": 81,
       "end": 81.49,
       "next": 86,
-      "guide": "81-82 Kelp\u0027thar Forest: around Legionnaire Nazgrim",
+      "guide": "81-81 Kelp\u0027thar Forest",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Legionnaire Nazgrim",
-          "guide": "81-82 Kelp\u0027thar Forest: around Legionnaire Nazgrim",
+          "label": "",
+          "name": "start",
+          "guide": "81-81 Kelp\u0027thar Forest",
           "level": 81,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 86,
       "end": 86,
-      "guide": "86-87 Kelp\u0027thar Forest",
+      "guide": "81-81 Kelp\u0027thar Forest",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "86-87 Kelp\u0027thar Forest",
+          "guide": "81-81 Kelp\u0027thar Forest",
           "level": 86,
           "index": 0
         }

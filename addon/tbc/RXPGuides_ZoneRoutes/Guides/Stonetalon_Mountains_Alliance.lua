@@ -1,9 +1,9 @@
 -- 21-28 Stonetalon Mountains: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 21, 24, 27).
--- Split into 3 guides, listed under "21 - 28 Stonetalon Mountains" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 21; part 2 from 24; part 3 from 27.
 -- Edit zones/tbc/Stonetalon Mountains.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 21 - 28 Stonetalon Mountains
-#subweight -21
-#name 21-22 Stonetalon Mountains: around Gaxim Rustfizzle
+#name 21-28 Stonetalon Mountains
 --RouteBuilder:next
-#next Zone Routes (Alliance)\21-22 Ashenvale;Zone Routes (Alliance)\20-21 Duskwood: around Elaine Carevin
+#next Zone Routes (Alliance)\18-32 Ashenvale
 
 step
     .goto 1442/1,365.16,878.25
@@ -180,22 +178,9 @@ step
     >>|cRXP_FRIENDLY_Stormwind City|r: A Scroll from Mauren
     >>|cRXP_FRIENDLY_The Barrens|r: Further Instructions
 step
-    +|cRXP_WARN_Suggested next zones at level 21|r: |cRXP_FRIENDLY_Ashenvale|r (about 0.6 levels of quests), |cRXP_FRIENDLY_Duskwood|r (about 0.5 levels of quests, starting around Elaine Carevin). Completing this step loads the guide for Ashenvale --RouteBuilder:next
+    +|cRXP_WARN_Until level 24, suggested zones|r: |cRXP_FRIENDLY_Ashenvale|r (about 0.6 levels of quests), |cRXP_FRIENDLY_Duskwood|r (about 0.5 levels of quests). Then come back to this Stonetalon Mountains guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 24.|r Load its guide for level 24 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 21 - 28 Stonetalon Mountains
-#subweight -21
-#name 24-25 Stonetalon Mountains
---RouteBuilder:next
-#next Zone Routes (Alliance)\24-25 Duskwood: around Clerk Daltry
-
+    .xp 24 >>|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 24.|r Come back to this guide then
 step
     .goto 1442/1,1434.12,2652.91
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Keeper Albagorm|r
@@ -284,22 +269,9 @@ step
     >>|cRXP_FRIENDLY_Ashenvale|r: Update for Sentinel Thenysil
     >>|cRXP_FRIENDLY_Feralas|r: Reclaiming the Charred Vale
 step
-    +|cRXP_WARN_Suggested next zones at level 24|r: |cRXP_FRIENDLY_Duskwood|r (about 0.5 levels of quests, starting around Clerk Daltry). Completing this step loads the guide for Duskwood --RouteBuilder:next
+    +|cRXP_WARN_Until level 27, suggested zones|r: |cRXP_FRIENDLY_Duskwood|r (about 0.5 levels of quests). Then come back to this Stonetalon Mountains guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 27.|r Load its guide for level 27 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 21 - 28 Stonetalon Mountains
-#subweight -21
-#name 27-28 Stonetalon Mountains
---RouteBuilder:next
-#next Zone Routes (Alliance)\27-29 Ashenvale: around Sentinel Melyria Frostshadow
-
+    .xp 27 >>|cRXP_WARN_The rest of Stonetalon Mountains is planned from level 27.|r Come back to this guide then
 step
     .goto 1442/1,339.27,730.09
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gaxim Rustfizzle|r
@@ -328,5 +300,5 @@ step
     +|cRXP_WARN_End of the Stonetalon Mountains route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Ironforge|r: Castpipe's Task
 step
-    +|cRXP_WARN_Suggested next zones at level 27|r: |cRXP_FRIENDLY_Ashenvale|r (about 0.9 levels of quests, starting around Sentinel Melyria Frostshadow). Completing this step loads the guide for Ashenvale --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 27|r: |cRXP_FRIENDLY_Ashenvale|r (about 0.9 levels of quests). Completing this step loads the guide for Ashenvale --RouteBuilder:next
 ]])

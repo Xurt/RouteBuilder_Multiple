@@ -1,9 +1,9 @@
 -- 81-81 Kelp'thar Forest: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 81, 86).
--- Split into 2 guides, listed under "81 - 87 Kelp'thar Forest" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 81; part 2 from 86.
 -- Edit zones/mop/Kelp'thar Forest.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 81 - 87 Kelp'thar Forest
-#subweight -81
-#name 81-82 Kelp'thar Forest: around Legionnaire Nazgrim
+#name 81-81 Kelp'thar Forest
 --RouteBuilder:next
-#next Zone Routes (Horde)\82-83 Deepholm
+#next Zone Routes (Horde)\87-90 Kun-Lai Summit
 
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 201,38.74,31.70
@@ -633,22 +631,9 @@ step
     >>|cRXP_FRIENDLY_Shimmering Expanse|r: Across the Great Divide
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Oh, the Insanity!
 step
-    +|cRXP_WARN_Suggested next zones at level 81|r: |cRXP_FRIENDLY_Deepholm|r (about 1.2 levels of quests, starting around Maruut Stonebinder). Completing this step loads the guide for Deepholm --RouteBuilder:next
+    +|cRXP_WARN_Until level 86, suggested zones|r: |cRXP_FRIENDLY_Deepholm|r (about 1.2 levels of quests). Then come back to this Kelp'thar Forest guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Kelp'thar Forest is planned from level 86.|r Load its guide for level 86 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 81 - 87 Kelp'thar Forest
-#subweight -81
-#name 86-87 Kelp'thar Forest
---RouteBuilder:next
-#next Zone Routes (Horde)\87-88 Kun-Lai Summit: around Smokey Sootassle
-
+    .xp 86 >>|cRXP_WARN_The rest of Kelp'thar Forest is planned from level 86.|r Come back to this guide then
 step
     .goto 201,46.04,46.87
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Moanah Stormhoof|r
@@ -703,5 +688,5 @@ step
 step
     +|cRXP_WARN_End of the Kelp'thar Forest route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 86|r: |cRXP_FRIENDLY_Kun-Lai Summit|r (about 0.6 levels of quests, starting around Smokey Sootassle). Completing this step loads the guide for Kun-Lai Summit --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 86|r: |cRXP_FRIENDLY_Kun-Lai Summit|r (about 0.6 levels of quests). Completing this step loads the guide for Kun-Lai Summit --RouteBuilder:next
 ]])

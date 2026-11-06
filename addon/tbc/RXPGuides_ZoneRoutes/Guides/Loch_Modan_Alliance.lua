@@ -1,9 +1,9 @@
 -- 10-22 Loch Modan: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 4 parts (from level 10, 14, 18, 21).
--- Split into 4 guides, listed under "10 - 22 Loch Modan" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 10; part 2 from 14; part 3 from 18; part 4 from 21.
 -- Edit zones/tbc/Loch Modan.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 10 - 22 Loch Modan
-#subweight -10
-#name 10-12 Loch Modan: around Mountaineer Kadrell
+#name 10-22 Loch Modan
 --RouteBuilder:next
-#next Zone Routes (Alliance)\10-15 Darkshore: around Thundris Windweaver;Zone Routes (Alliance)\5-10 Elwynn Forest: around Marshal Dughan;Zone Routes (Alliance)\5-10 Azuremyst Isle: around Daedal
+#next Zone Routes (Alliance)\20-31 Duskwood;Zone Routes (Alliance)\20-31 Wetlands
 
 step
     .goto 1432/0,-3020.95,-5359.09
@@ -286,22 +284,9 @@ step
     >>|cRXP_FRIENDLY_Ironforge|r: Report to Ironforge
     >>|cRXP_FRIENDLY_Stormwind City|r: Stormpike's Order
 step
-    +|cRXP_WARN_Suggested next zones at level 11|r: |cRXP_FRIENDLY_Darkshore|r (about 2.1 levels of quests, starting around Thundris Windweaver), |cRXP_FRIENDLY_Elwynn Forest|r (about 1.6 levels of quests, starting around Marshal Dughan), |cRXP_FRIENDLY_Azuremyst Isle|r (about 1.3 levels of quests, starting around Daedal). Completing this step loads the guide for Darkshore --RouteBuilder:next
+    +|cRXP_WARN_Until level 14, suggested zones|r: |cRXP_FRIENDLY_Darkshore|r (about 2.1 levels of quests), |cRXP_FRIENDLY_Teldrassil|r (about 1.9 levels of quests), |cRXP_FRIENDLY_Elwynn Forest|r (about 1.8 levels of quests). Then come back to this Loch Modan guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Loch Modan is planned from level 14.|r Load its guide for level 14 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 10 - 22 Loch Modan
-#subweight -10
-#name 14-15 Loch Modan
---RouteBuilder:next
-#next Zone Routes (Alliance)\14-18 Bloodmyst Isle: around Vindicator Boros;Zone Routes (Alliance)\10-15 Darkshore: around Thundris Windweaver
-
+    .xp 14 >>|cRXP_WARN_The rest of Loch Modan is planned from level 14.|r Come back to this guide then
 step
     .goto 1432/0,-2641.13,-5858.17
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mountaineer Wallbang|r
@@ -530,22 +515,9 @@ step
     .target Captain Rugelfuss
     .isOnQuest 217
 step
-    +|cRXP_WARN_Suggested next zones at level 15|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.9 levels of quests, starting around Vindicator Boros), |cRXP_FRIENDLY_Darkshore|r (about 1.7 levels of quests, starting around Thundris Windweaver). Completing this step loads the guide for Bloodmyst Isle --RouteBuilder:next
+    +|cRXP_WARN_Until level 18, suggested zones|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.9 levels of quests), |cRXP_FRIENDLY_Darkshore|r (about 1.7 levels of quests). Then come back to this Loch Modan guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Loch Modan is planned from level 18.|r Load its guide for level 18 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 10 - 22 Loch Modan
-#subweight -10
-#name 18-19 Loch Modan
---RouteBuilder:next
-#next Zone Routes (Alliance)\14-18 Bloodmyst Isle: around Vindicator Boros;Zone Routes (Alliance)\17-19 Darkshore: around Terenthis
-
+    .xp 18 >>|cRXP_WARN_The rest of Loch Modan is planned from level 18.|r Come back to this guide then
 step
     .goto 1432/0,-3783.91,-5713.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Magmar Fellhew|r
@@ -717,22 +689,9 @@ step
     +|cRXP_WARN_That is all of Loch Modan for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Wetlands|r: A Dark Threat Looms
 step
-    +|cRXP_WARN_Suggested next zones at level 18|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.5 levels of quests, starting around Vindicator Boros), |cRXP_FRIENDLY_Darkshore|r (about 0.8 levels of quests, starting around Terenthis). Completing this step loads the guide for Bloodmyst Isle --RouteBuilder:next
+    +|cRXP_WARN_Until level 21, suggested zones|r: |cRXP_FRIENDLY_Bloodmyst Isle|r (about 1.5 levels of quests), |cRXP_FRIENDLY_Darkshore|r (about 0.8 levels of quests). Then come back to this Loch Modan guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Loch Modan is planned from level 21.|r Load its guide for level 21 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 10 - 22 Loch Modan
-#subweight -10
-#name 21-22 Loch Modan
---RouteBuilder:next
-#next Zone Routes (Alliance)\20-21 Duskwood: around Elaine Carevin;Zone Routes (Alliance)\20-21 Wetlands: around Karl Boran
-
+    .xp 21 >>|cRXP_WARN_The rest of Loch Modan is planned from level 21.|r Come back to this guide then
 step
     .goto 1432/0,-3022.61,-5343.27
     >>Click the |cRXP_PICK_WANTED|r
@@ -768,5 +727,5 @@ step
     +|cRXP_WARN_End of the Loch Modan route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Wetlands|r: The Algaz Gauntlet
 step
-    +|cRXP_WARN_Suggested next zones at level 21|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests, starting around Elaine Carevin), |cRXP_FRIENDLY_Wetlands|r (about 0.6 levels of quests, starting around Karl Boran; 2 quests from here hand in there). Completing this step loads the guide for Duskwood --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 21|r: |cRXP_FRIENDLY_Duskwood|r (about 0.6 levels of quests), |cRXP_FRIENDLY_Wetlands|r (about 0.6 levels of quests; 2 quests from here hand in there). Completing this step loads the guide for Duskwood --RouteBuilder:next
 ]])

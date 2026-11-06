@@ -1,7 +1,7 @@
 Desolace - Horde
-Guide "30-35 Desolace" in group "Zone Routes (Horde)": 209 steps, 193 stops
+Guide "30-35 Desolace" in group "Zone Routes (Horde)": 192 steps, 175 stops
 Written to guides/mop/Desolace (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 QuestieDB has no world-map size for this zone, so its distances are on a nominal map: fine for comparing routes here, not real yards.
 RestedXP cross-check: 1631 objective notes read from 38 guide files
@@ -35,7 +35,7 @@ Step order kept from the last build (locks folder): 7 steps kept, 226 new ones s
   everyone (quests that depend on other zones): 25 more tasks; their whole route comes to 42,216 yd; ends at level 35.8; 5 hearths
   Tauren (quests that depend on other zones): 7 more tasks; their whole route comes to 43,075 yd; ends at level 35.8; 5 hearths
 Hearthstone: set at Brell Farglenn (Brell Farglenn's inn); 4 hearth steps in the guide.
-4 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
+5 objectives are also shown "as you go" at earlier stops inside their area; their own step finishes whatever is left (and skips itself if nothing is).
 2 finished quests are also offered for hand-in at an earlier stop that passes their quest giver (they only show once the quest is complete).
 
 Quests in the guide (99)

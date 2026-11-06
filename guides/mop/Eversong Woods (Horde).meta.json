@@ -13,12 +13,12 @@
       "start": 5,
       "end": 11.44,
       "next": 28,
-      "guide": "5-12 Eversong Woods",
+      "guide": "5-11 Eversong Woods",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "5-12 Eversong Woods",
+          "guide": "5-11 Eversong Woods",
           "level": 5,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 28,
       "end": 28.04,
-      "guide": "28-29 Eversong Woods",
+      "guide": "5-11 Eversong Woods",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "28-29 Eversong Woods",
+          "guide": "5-11 Eversong Woods",
           "level": 28,
           "index": 0
         }

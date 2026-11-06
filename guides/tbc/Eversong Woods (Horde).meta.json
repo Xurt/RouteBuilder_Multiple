@@ -13,35 +13,14 @@
       "start": 1,
       "end": 10.62,
       "next": 13,
-      "guide": "9-11 Eversong Woods: around Magistrix Landra Dawnstrider",
+      "guide": "1-12 Eversong Woods",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Aeldon Sunbrand",
-          "guide": "1-3 Eversong Woods: around Aeldon Sunbrand",
+          "label": "",
+          "name": "start",
+          "guide": "1-12 Eversong Woods",
           "level": 1,
           "index": 0
-        },
-        {
-          "label": "RBSection1_2",
-          "name": "around Instructor Antheol",
-          "guide": "3-7 Eversong Woods: around Instructor Antheol",
-          "level": 3,
-          "index": 1
-        },
-        {
-          "label": "RBSection1_3",
-          "name": "around Instructor Antheol",
-          "guide": "7-9 Eversong Woods: around Instructor Antheol",
-          "level": 7,
-          "index": 2
-        },
-        {
-          "label": "RBSection1_4",
-          "name": "around Magistrix Landra Dawnstrider",
-          "guide": "9-11 Eversong Woods: around Magistrix Landra Dawnstrider",
-          "level": 9,
-          "index": 3
         }
       ]
     },
@@ -50,12 +29,12 @@
       "start": 13,
       "end": 13.09,
       "next": 28,
-      "guide": "13-14 Eversong Woods",
+      "guide": "1-12 Eversong Woods",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "13-14 Eversong Woods",
+          "guide": "1-12 Eversong Woods",
           "level": 13,
           "index": 0
         }
@@ -65,12 +44,12 @@
       "part": 3,
       "start": 28,
       "end": 28.03,
-      "guide": "28-29 Eversong Woods",
+      "guide": "1-12 Eversong Woods",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "28-29 Eversong Woods",
+          "guide": "1-12 Eversong Woods",
           "level": 28,
           "index": 0
         }
@@ -228,7 +207,7 @@
       "req": 6,
       "xp": 780,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": ""
     },
     {
@@ -237,7 +216,7 @@
       "req": 7,
       "xp": 840,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": ""
     },
     {
@@ -246,7 +225,7 @@
       "req": 4,
       "xp": 540,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -255,7 +234,7 @@
       "req": 7,
       "xp": 840,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -264,7 +243,7 @@
       "req": 7,
       "xp": 840,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -273,7 +252,7 @@
       "req": 8,
       "xp": 880,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -282,7 +261,7 @@
       "req": 5,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -291,7 +270,7 @@
       "req": 4,
       "xp": 540,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -300,7 +279,7 @@
       "req": 7,
       "xp": 780,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -309,7 +288,7 @@
       "req": 7,
       "xp": 780,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -318,7 +297,7 @@
       "req": 8,
       "xp": 840,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": ""
     },
     {
@@ -327,7 +306,7 @@
       "req": 4,
       "xp": 630,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": ""
     },
     {
@@ -354,7 +333,7 @@
       "req": 5,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -363,7 +342,7 @@
       "req": 5,
       "xp": 980,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -372,7 +351,7 @@
       "req": 5,
       "xp": 700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -381,7 +360,7 @@
       "req": 8,
       "xp": 85,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -390,7 +369,7 @@
       "req": 8,
       "xp": 630,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -399,7 +378,7 @@
       "req": 8,
       "xp": 840,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": ""
     },
     {
@@ -408,7 +387,7 @@
       "req": 8,
       "xp": 840,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": ""
     },
     {
@@ -417,7 +396,7 @@
       "req": 5,
       "xp": 630,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -426,7 +405,7 @@
       "req": 8,
       "xp": 840,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -462,7 +441,7 @@
       "req": 4,
       "xp": 135,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -471,7 +450,7 @@
       "req": 4,
       "xp": 540,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -480,7 +459,7 @@
       "req": 5,
       "xp": 700,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -489,7 +468,7 @@
       "req": 4,
       "xp": 450,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -498,7 +477,7 @@
       "req": 10,
       "xp": 420,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": "BloodElf",
       "from": "Ghostlands"
     },
@@ -508,7 +487,7 @@
       "req": 10,
       "xp": 420,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": ""
     },
     {
@@ -517,7 +496,7 @@
       "req": 7,
       "xp": 780,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": ""
     },
     {
@@ -526,7 +505,7 @@
       "req": 8,
       "xp": 210,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": ""
     },
     {
@@ -535,7 +514,7 @@
       "req": 7,
       "xp": 390,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -544,7 +523,7 @@
       "req": 7,
       "xp": 390,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": ""
     },
     {
@@ -553,7 +532,7 @@
       "req": 8,
       "xp": 210,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": ""
     },
     {
@@ -562,7 +541,7 @@
       "req": 5,
       "xp": 540,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -571,7 +550,7 @@
       "req": 8,
       "xp": 80,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -580,7 +559,7 @@
       "req": 8,
       "xp": 85,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -589,7 +568,7 @@
       "req": 8,
       "xp": 880,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -598,7 +577,7 @@
       "req": 8,
       "xp": 440,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": ""
     },
     {
@@ -625,7 +604,7 @@
       "req": 8,
       "xp": 85,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": ""
     },
     {
@@ -634,7 +613,7 @@
       "req": 8,
       "xp": 80,
       "part": 1,
-      "section": 1,
+      "section": 0,
       "tag": ""
     },
     {
@@ -643,7 +622,7 @@
       "req": 10,
       "xp": 210,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "Mage"
     },
     {
@@ -652,7 +631,7 @@
       "req": 10,
       "xp": 840,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": "Mage"
     },
     {
@@ -661,7 +640,7 @@
       "req": 10,
       "xp": 840,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": "Mage"
     },
     {
@@ -670,7 +649,7 @@
       "req": 10,
       "xp": 420,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "BloodElf Hunter"
     },
     {
@@ -679,7 +658,7 @@
       "req": 10,
       "xp": 420,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "BloodElf Hunter"
     },
     {
@@ -688,7 +667,7 @@
       "req": 5,
       "xp": 450,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "BloodElf Priest"
     },
     {
@@ -697,7 +676,7 @@
       "req": 10,
       "xp": 126,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "BloodElf Hunter"
     },
     {
@@ -706,7 +685,7 @@
       "req": 10,
       "xp": 840,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": "BloodElf Rogue",
       "from": "Ghostlands"
     },
@@ -716,7 +695,7 @@
       "req": 10,
       "xp": 420,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": "BloodElf Warlock",
       "from": "Ghostlands"
     },
@@ -807,7 +786,7 @@
       "req": 7,
       "xp": 840,
       "part": 1,
-      "section": 3,
+      "section": 0,
       "tag": ""
     },
     {
@@ -816,7 +795,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "BloodElf Hunter",
       "from": "Mulgore"
     },
@@ -826,7 +805,7 @@
       "req": 10,
       "xp": 0,
       "part": 1,
-      "section": 2,
+      "section": 0,
       "tag": "BloodElf Warlock",
       "from": "Tirisfal Glades"
     },

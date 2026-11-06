@@ -1,9 +1,9 @@
 -- 47-60 Azshara: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 4 parts (from level 47, 50, 56, 61).
--- Split into 4 guides, listed under "47 - 62 Azshara" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 47; part 2 from 50; part 3 from 56; part 4 from 61.
 -- Edit zones/tbc/Azshara.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 47 - 62 Azshara
-#subweight -47
-#name 47-48 Azshara
+#name 47-60 Azshara
 --RouteBuilder:next
-#next Zone Routes (Horde)\46-48 The Hinterlands: around Huntsman Markhor
+#next Zone Routes (Horde)\60-63 Hellfire Peninsula;Zone Routes (Horde)\62-70 Terokkar Forest
 
 step
     .goto 1447/1,-3853.64,2698.54
@@ -132,22 +130,9 @@ step
     .target Loramus Thalipedes
     .isOnQuest 2744
 step
-    +|cRXP_WARN_Suggested next zones at level 47|r: |cRXP_FRIENDLY_The Hinterlands|r (about 0.8 levels of quests, starting around Huntsman Markhor). Completing this step loads the guide for The Hinterlands --RouteBuilder:next
+    +|cRXP_WARN_Until level 50, suggested zones|r: |cRXP_FRIENDLY_The Hinterlands|r (about 0.8 levels of quests). Then come back to this Azshara guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Azshara is planned from level 50.|r Load its guide for level 50 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 47 - 62 Azshara
-#subweight -47
-#name 50-51 Azshara: around Jediga
---RouteBuilder:next
-#next Zone Routes (Horde)\50-52 Un'Goro Crater: around Torwa Pathfinder
-
+    .xp 50 >>|cRXP_WARN_The rest of Azshara is planned from level 50.|r Come back to this guide then
 step
     .goto 1447/1,-4405.85,3601.00
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ag'tor Bloodfist|r
@@ -476,20 +461,9 @@ step
     >>|cRXP_FRIENDLY_Undercity|r: Delivery to Andron Gant
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Destroy Morphaz << Mage
 step
-    +|cRXP_WARN_Suggested next zones at level 50|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.9 levels of quests, starting around Torwa Pathfinder). Completing this step loads the guide for Un'Goro Crater --RouteBuilder:next
+    +|cRXP_WARN_Until level 56, suggested zones|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.9 levels of quests). Then come back to this Azshara guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Azshara is planned from level 56.|r Load its guide for level 56 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 47 - 62 Azshara
-#subweight -47
-#name 56-57 Azshara
-
+    .xp 56 >>|cRXP_WARN_The rest of Azshara is planned from level 56.|r Come back to this guide then
 step
     .goto 1447/1,-7297.24,2849.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Duke Hydraxis|r
@@ -545,20 +519,7 @@ step
     >>|cRXP_FRIENDLY_Eastern Plaguelands and back here|r: Poisoned Water
     >>|cRXP_FRIENDLY_Silithus and back here|r: Stormers and Rumblers
 step << Mage
-    +|cRXP_WARN_The rest of Azshara is planned from level 61.|r Load its guide for level 61 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Mage
-#version 1
-#group Zone Routes (Horde)
-#subgroup 47 - 62 Azshara
-#subweight -47
-#name 61-62 Azshara
---RouteBuilder:next
-#next Zone Routes (Horde)\60-62 Hellfire Peninsula: around Nazgrel;Zone Routes (Horde)\62-64 Terokkar Forest: around Tooki
-
+    .xp 61 >>|cRXP_WARN_The rest of Azshara is planned from level 61.|r Come back to this guide then
 step << Mage
     .goto 1447/1,-4760.30,3982.07
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Archmage Xylem|r
@@ -809,5 +770,5 @@ step
     +|cRXP_WARN_End of the Azshara route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Stranglethorn Vale|r: The Formation of Felbane
 step
-    +|cRXP_WARN_Suggested next zones at level 61|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.9 levels of quests, starting around Nazgrel), |cRXP_FRIENDLY_Terokkar Forest|r (about 0.6 levels of quests, starting around Tooki). Completing this step loads the guide for Hellfire Peninsula --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 61|r: |cRXP_FRIENDLY_Hellfire Peninsula|r (about 0.9 levels of quests), |cRXP_FRIENDLY_Terokkar Forest|r (about 0.6 levels of quests). Completing this step loads the guide for Hellfire Peninsula --RouteBuilder:next
 ]])

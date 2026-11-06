@@ -1,7 +1,7 @@
 Hillsbrad Foothills - Horde - part 1 of 7, planned from level 20
 Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 45 steps, 27 stops
 Written to guides/classic/Hillsbrad Foothills (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -107,7 +107,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Hillsbrad Foothills - Horde - part 2 of 7, planned from level 23
 Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 22 steps, 17 stops
 Written to guides/classic/Hillsbrad Foothills (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -180,7 +180,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Hillsbrad Foothills - Horde - part 3 of 7, planned from level 26
 Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 11 steps, 8 stops
 Written to guides/classic/Hillsbrad Foothills (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -249,7 +249,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Hillsbrad Foothills - Horde - part 4 of 7, planned from level 29
 Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 35 steps, 31 stops
 Written to guides/classic/Hillsbrad Foothills (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -318,7 +318,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Hillsbrad Foothills - Horde - part 5 of 7, planned from level 32
 Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 25 steps, 22 stops
 Written to guides/classic/Hillsbrad Foothills (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -385,7 +385,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Hillsbrad Foothills - Horde - part 6 of 7, planned from level 35
 Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 15 steps, 13 stops
 Written to guides/classic/Hillsbrad Foothills (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -441,7 +441,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Hillsbrad Foothills - Horde - part 7 of 7, planned from level 38
 Guide "20-40 Hillsbrad Foothills" in group "Zone Routes (Horde)": this part has 10 steps, 9 stops
 Written to guides/classic/Hillsbrad Foothills (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 

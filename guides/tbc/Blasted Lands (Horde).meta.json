@@ -13,12 +13,12 @@
       "start": 50,
       "end": 50.54,
       "next": 59,
-      "guide": "50-51 Blasted Lands: around Bloodmage Drazial",
+      "guide": "50-61 Blasted Lands",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Bloodmage Drazial",
-          "guide": "50-51 Blasted Lands: around Bloodmage Drazial",
+          "label": "",
+          "name": "start",
+          "guide": "50-61 Blasted Lands",
           "level": 50,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 59,
       "end": 59,
       "next": 62,
-      "guide": "59-60 Blasted Lands",
+      "guide": "50-61 Blasted Lands",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "59-60 Blasted Lands",
+          "guide": "50-61 Blasted Lands",
           "level": 59,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 62,
       "end": 62,
-      "guide": "62-63 Blasted Lands",
+      "guide": "50-61 Blasted Lands",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "62-63 Blasted Lands",
+          "guide": "50-61 Blasted Lands",
           "level": 62,
           "index": 0
         }

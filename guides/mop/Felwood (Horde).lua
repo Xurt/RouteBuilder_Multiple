@@ -1,9 +1,9 @@
 -- 46-51 Felwood: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 46, 53).
--- Split into 3 guides, listed under "46 - 54 Felwood" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 46; part 2 from 53.
 -- Edit zones/mop/Felwood.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 46 - 54 Felwood
-#subweight -46
-#name 46-48 Felwood: around Totem of Ruumbo
-#next Zone Routes (Horde)\48-50 Felwood: around Feronas Sindweller
+#name 46-51 Felwood
+--RouteBuilder:next
+#next Zone Routes (Horde)\50-55 Winterspring;Zone Routes (Horde)\51-55 Un'Goro Crater;Zone Routes (Horde)\52-55 Swamp of Sorrows
 
 step
     .goto 77,51.41,80.43
@@ -746,85 +745,45 @@ step
     >>Kill |cRXP_ENEMY_Feronas Sindweller|r
     .complete 28217,1 --Feronas Sindweller slain (1)
     .mob Feronas Sindweller
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 46 - 54 Felwood
-#subweight -46
-#name 48-50 Felwood: around Feronas Sindweller
---RouteBuilder:next
-#next Zone Routes (Horde)\50-52 Winterspring: around Donova Snowden;Zone Routes (Horde)\51-53 Un'Goro Crater: around Mor'vek;Zone Routes (Horde)\47-49 Searing Gorge: around Jack Rockleg
-
 step
     .goto 77,45.57,20.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .turnin 28217 >>Turn in Wanted: The Demon Hunter
-    .target Feronas Sindweller
-    .isOnQuest 28217
-step
-    .goto 77,45.57,20.13
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .accept 28218 >>Accept A Destiny of Flame and Sorrow
     .target Feronas Sindweller
-    .isQuestTurnedIn 28217 --any of: Wanted: The Demon Hunter
 step
     .goto 77,45.27,19.63
     >>Kill |cRXP_ENEMY_Arthas|r
     .complete 28218,1 --Arthas slain (1)
     .mob Arthas
-    .isOnQuest 28218
 step
     .goto 77,45.57,20.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .turnin 28218 >>Turn in A Destiny of Flame and Sorrow
-    .target Feronas Sindweller
-    .isOnQuest 28218
-step
-    .goto 77,45.57,20.13
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .accept 28256 >>Accept The Skull of Gul'dan
     .target Feronas Sindweller
-    .isQuestTurnedIn 28218 --any of: A Destiny of Flame and Sorrow
 step
     .goto 77,45.07,19.60
     >>Relive Illidan's battle for the Skull of Gul'dan.
     .complete 28256,1 --Skull of Gul'dan
     .target Skull of Gul'dan
-    .isOnQuest 28256
 step
     .goto 77,45.57,20.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .turnin 28256 >>Turn in The Skull of Gul'dan
-    .target Feronas Sindweller
-    .isOnQuest 28256
-step
-    .goto 77,45.57,20.13
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .accept 28257 >>Accept The Fall of Tichondrius
     .target Feronas Sindweller
-    .isQuestTurnedIn 28256 --any of: The Skull of Gul'dan
 step
     .goto 77,45.13,19.70
     >>Kill |cRXP_ENEMY_Tichondrius|r
     .complete 28257,1 --Tichondrius slain (1)
     .mob Tichondrius
-    .isOnQuest 28257
 step
     .goto 77,45.57,20.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .turnin 28257 >>Turn in The Fall of Tichondrius
-    .target Feronas Sindweller
-    .isOnQuest 28257
-step
-    .goto 77,45.57,20.13
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .accept 28261 >>Accept Deceivers In Our Midst
     .target Feronas Sindweller
-    .isQuestTurnedIn 28257 --any of: The Fall of Tichondrius
 step
     #loop
     .goto 77,42.43,20.22,0
@@ -833,32 +792,22 @@ step
     >>Kill |cRXP_ENEMY_Jadefire Shifters|r
     .complete 28261,1 --Jadefire Shifter slain (12)
     .mob Jadefire Shifter
-    .isOnQuest 28261
 step
     .goto 77,45.57,20.13
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .turnin 28261 >>Turn in Deceivers In Our Midst
-    .target Feronas Sindweller
-    .isOnQuest 28261
-step
-    .goto 77,45.57,20.13
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feronas Sindweller|r
     .accept 28264 >>Accept Navarax's Gambit
     .target Feronas Sindweller
-    .isQuestTurnedIn 28261 --any of: Deceivers In Our Midst
 step
     .goto 77,49.48,21.79
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Flourishing Protector|r
     .accept 28224 >>Accept The Last Protector
     .target Flourishing Protector
-    .isQuestTurnedIn 28221 --These Roots Were Made For Stompin'
-    .isQuestTurnedIn 28222 --Singin' in the Sun
 step
     .goto 77,53.19,24.04
     >>Kill |cRXP_ENEMY_Withered Protector|r
     .complete 28224,1 --Withered Protector slain (1)
     .mob Withered Protector
-    .isOnQuest 28224
 step
     .goto 77,56.76,18.50
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Alton Redding|r
@@ -894,12 +843,12 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .accept 28334 >>Accept A Flare Fight
     .target Darla Drilldozer
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along110
+    #completewith Along105
     >>As you go: Kill |cRXP_ENEMY_Talonbranch Prowlers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28334,1 --Talonbranch Prowler slain (8)
     .mob Talonbranch Prowler
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along110
+    #label Along105
     #loop
     .goto 77,51.73,15.09,0
     .goto 77,51.73,15.09,40,0
@@ -943,63 +892,47 @@ step
     >>Kill |cRXP_ENEMY_Arch Druid Navarax|r
     .complete 28264,1 --Arch Druid Navarax slain (1)
     .mob Arch Druid Navarax
-    .isOnQuest 28264
 step
     .goto 77,43.45,28.19
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Huntress Selura|r
     .turnin 28264 >>Turn in Navarax's Gambit
     .target Huntress Selura
-    .isOnQuest 28264
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 77,44.23,27.94
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fez Hobnob|r
     .accept 28372 >>Accept Back to Business
     .target Fez Hobnob
-    .isQuestTurnedIn 28264 --any of: Navarax's Gambit
 step
     .goto 77,49.48,21.79
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Flourishing Protector|r
     .turnin 28224 >>Turn in The Last Protector
-    .target Flourishing Protector
-    .isOnQuest 28224
-step
-    .goto 77,49.48,21.79
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Flourishing Protector|r
     .accept 28228 >>Accept Rejoining the Forest
     .target Flourishing Protector
-    .isQuestTurnedIn 28224 --any of: The Last Protector
 step
     .goto 77,48.70,25.20
     >>Protector brought to hill
     .complete 28228,1 --Protector brought to hill
-    .isOnQuest 28228
 step
     .goto 77,48.66,25.16
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_?|r
     .turnin 28228 >>Turn in Rejoining the Forest
     .target ?
-    .isOnQuest 28228
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 77,56.33,8.18
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darla Drilldozer|r
     .turnin 28372 >>Turn in Back to Business
-    .target Darla Drilldozer
-    .isOnQuest 28372
-step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    .goto 77,56.33,8.18
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darla Drilldozer|r
     .turnin 28357 >>Turn in Take it to the Tree
     .turnin 28370 >>Turn in Wisp-napping
     .accept 28339 >>Accept Is Your Oil Running?
     .accept 28336 >>Accept Slap and Cap
     .target Darla Drilldozer
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #completewith Along123
+    #completewith Along116
     >>As you go: Kill |cRXP_ENEMY_Oily Sludges|r. Loot them for |cRXP_LOOT_Crude Tarball|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28339,1 --Crude Tarball (10)
     .mob Oily Sludge
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    #label Along123
+    #label Along116
     #loop
     .goto 77,55.25,13.77,0
     .goto 77,55.25,13.77,40,0
@@ -1076,7 +1009,7 @@ step
     .accept 28366 >>Accept Disarming Bears
     .target Nafien
 step
-    #completewith Along135
+    #completewith Along128
     >>As you go: Kill |cRXP_ENEMY_Deadwood Avengers|r, |cRXP_ENEMY_Deadwood Shamans|r and |cRXP_ENEMY_Deadwood Den Watchers|r. Loot the |cRXP_PICK_Deadwood Weapon Piles|r for |cRXP_LOOT_Deadwood Weapons|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28338,1 --Deadwood Avenger (8)
     .complete 28366,1 --Deadwood Weapons (7)
@@ -1084,7 +1017,7 @@ step
     .mob Deadwood Shaman
     .mob Deadwood Den Watcher
 step
-    #label Along135
+    #label Along128
     .goto 77,64.09,10.29
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ferli|r
     .accept 28362 >>Accept Stupid Drizle!
@@ -1331,23 +1264,10 @@ step
     >>|cRXP_FRIENDLY_Winterspring|r: Mystery Goo, Speak to Salfa, The Ruins of Kel'Theril, Strange Life Forces, Trailing the Spiritspeaker
     >>|cRXP_FRIENDLY_Winterspring|r: Warchief's Command: Winterspring! << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Dustwallow Marsh and back here|r: Deadmire << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 50|r: |cRXP_FRIENDLY_Winterspring|r (about 2.5 levels of quests, starting around Donova Snowden; 2 quests from here hand in there), |cRXP_FRIENDLY_Un'Goro Crater|r (about 2.0 levels of quests, starting around Mor'vek), |cRXP_FRIENDLY_Searing Gorge|r (about 0.7 levels of quests, starting around Jack Rockleg). Completing this step loads the guide for Winterspring --RouteBuilder:next
 step << Druid/Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior/Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter/Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock/Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage/Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman/Tauren Paladin/BloodElf Paladin/Undead Priest/BloodElf Priest/Tauren Priest/Troll Priest/Goblin Priest
-    +|cRXP_WARN_The rest of Felwood is planned from level 53.|r Load its guide for level 53 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Druid/Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior/Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter/Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock/Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage/Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman/Tauren Paladin/BloodElf Paladin/Undead Priest/BloodElf Priest/Tauren Priest/Troll Priest/Goblin Priest
-#version 1
-#group Zone Routes (Horde)
-#subgroup 46 - 54 Felwood
-#subweight -46
-#name 53-54 Felwood
---RouteBuilder:next
-#next Zone Routes (Horde)\52-54 Winterspring: around Rinno Curtainfire;Zone Routes (Horde)\52-55 Swamp of Sorrows: around Trade Baron Silversnap;Zone Routes (Horde)\53-55 Un'Goro Crater: around Mor'vek
-
+    +|cRXP_WARN_Until level 53, suggested zones|r: |cRXP_FRIENDLY_Winterspring|r (about 2.5 levels of quests; 2 quests from here hand in there), |cRXP_FRIENDLY_Un'Goro Crater|r (about 2.0 levels of quests), |cRXP_FRIENDLY_Searing Gorge|r (about 0.7 levels of quests). Then come back to this Felwood guide --RouteBuilder:next
+step << Druid/Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior/Orc Hunter/Undead Hunter/Tauren Hunter/Troll Hunter/BloodElf Hunter/Goblin Hunter/Pandaren Hunter/Orc Warlock/Undead Warlock/Tauren Warlock/Troll Warlock/BloodElf Warlock/Goblin Warlock/Pandaren Warlock/Orc Mage/Undead Mage/Tauren Mage/Troll Mage/BloodElf Mage/Goblin Mage/Pandaren Mage/Orc Shaman/Undead Shaman/Tauren Shaman/Troll Shaman/BloodElf Shaman/Goblin Shaman/Pandaren Shaman/Tauren Paladin/BloodElf Paladin/Undead Priest/BloodElf Priest/Tauren Priest/Troll Priest/Goblin Priest
+    .xp 53 >>|cRXP_WARN_The rest of Felwood is planned from level 53.|r Come back to this guide then
 step << Orc Warrior/Undead Warrior/Tauren Warrior/Troll Warrior/BloodElf Warrior/Goblin Warrior/Pandaren Warrior
     .goto 88,56.99,89.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sark Ragetotem|r
@@ -1415,5 +1335,5 @@ step
     >>|cRXP_FRIENDLY_Orgrimmar|r: Meet with Shadow-Walker Zuru << Troll Priest
     >>|cRXP_FRIENDLY_Orgrimmar|r: Meet with Brother Silverhallow << Goblin Priest
 step
-    +|cRXP_WARN_Suggested next zones at level 53|r: |cRXP_FRIENDLY_Winterspring|r (about 1.3 levels of quests, starting around Rinno Curtainfire), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 0.9 levels of quests, starting around Trade Baron Silversnap), |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.9 levels of quests, starting around Mor'vek). Completing this step loads the guide for Winterspring --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 53|r: |cRXP_FRIENDLY_Winterspring|r (about 2.7 levels of quests; 2 quests from here hand in there), |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.7 levels of quests), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 0.9 levels of quests). Completing this step loads the guide for Winterspring --RouteBuilder:next
 ]])

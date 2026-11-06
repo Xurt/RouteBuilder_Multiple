@@ -1,9 +1,9 @@
 -- 31-39 Desolace: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 4 parts (from level 31, 34, 37, 40).
--- Split into 4 guides, listed under "31 - 41 Desolace" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 31; part 2 from 34; part 3 from 37; part 4 from 40.
 -- Edit zones/tbc/Desolace.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,9 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 31 - 41 Desolace
-#subweight -31
-#name 31-32 Desolace
+#name 31-39 Desolace
+--RouteBuilder:next
+#next Zone Routes (Horde)\30-50 Stranglethorn Vale;Zone Routes (Horde)\35-46 Dustwallow Marsh
 
 step
     .goto 1443/1,3107.13,-1714.51
@@ -289,20 +289,7 @@ step
     >>|cRXP_FRIENDLY_Orgrimmar|r: Alliance Relations
     >>|cRXP_FRIENDLY_Stranglethorn Vale|r: Hunting in Stranglethorn
 step
-    +|cRXP_WARN_The rest of Desolace is planned from level 34.|r Load its guide for level 34 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 31 - 41 Desolace
-#subweight -31
-#name 34-35 Desolace
---RouteBuilder:next
-#next Zone Routes (Horde)\35-38 Dustwallow Marsh: around Krog;Zone Routes (Horde)\33-35 Stranglethorn Vale: around Kebok
-
+    .xp 34 >>|cRXP_WARN_The rest of Desolace is planned from level 34.|r Come back to this guide then
 step
     .goto 1443/1,1707.12,-1333.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Felgur Twocuts|r
@@ -448,22 +435,9 @@ step
     .turnin 6143 >>Turn in Other Fish to Fry
     .target Drulzegar Skraghook
 step
-    +|cRXP_WARN_Suggested next zones at level 34|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.8 levels of quests, starting around Krog), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.6 levels of quests, starting around Kebok). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
+    +|cRXP_WARN_Until level 37, suggested zones|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.8 levels of quests), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.6 levels of quests). Then come back to this Desolace guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Desolace is planned from level 37.|r Load its guide for level 37 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 31 - 41 Desolace
-#subweight -31
-#name 37-38 Desolace
---RouteBuilder:next
-#next Zone Routes (Horde)\35-38 Dustwallow Marsh: around Krog;Zone Routes (Horde)\37-39 Stranglethorn Vale: around Baron Revilgaz
-
+    .xp 37 >>|cRXP_WARN_The rest of Desolace is planned from level 37.|r Come back to this guide then
 step
     .goto 1443/1,2485.35,-362.15
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Azore Aldamort|r
@@ -582,22 +556,9 @@ step
     .turnin 5581 >>Turn in Portals of the Legion
     .target Taiga Wisemane
 step
-    +|cRXP_WARN_Suggested next zones at level 37|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.5 levels of quests, starting around Krog), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.8 levels of quests, starting around Baron Revilgaz). Completing this step loads the guide for Dustwallow Marsh --RouteBuilder:next
+    +|cRXP_WARN_Until level 40, suggested zones|r: |cRXP_FRIENDLY_Dustwallow Marsh|r (about 1.5 levels of quests), |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.8 levels of quests). Then come back to this Desolace guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Desolace is planned from level 40.|r Load its guide for level 40 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Horde
-#version 1
-#group Zone Routes (Horde)
-#subgroup 31 - 41 Desolace
-#subweight -31
-#name 40-41 Desolace
---RouteBuilder:next
-#next Zone Routes (Horde)\37-39 Stranglethorn Vale: around Baron Revilgaz;Zone Routes (Horde)\40-41 Dustwallow Marsh: around Draz'Zilb
-
+    .xp 40 >>|cRXP_WARN_The rest of Desolace is planned from level 40.|r Come back to this guide then
 step
     .goto 1443/1,1742.19,-1221.05
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nataka Longhorn|r
@@ -641,5 +602,5 @@ step
 step
     +|cRXP_WARN_End of the Desolace route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 40|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests, starting around Baron Revilgaz), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 0.5 levels of quests, starting around Draz'Zilb). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 40|r: |cRXP_FRIENDLY_Stranglethorn Vale|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Dustwallow Marsh|r (about 0.5 levels of quests). Completing this step loads the guide for Stranglethorn Vale --RouteBuilder:next
 ]])

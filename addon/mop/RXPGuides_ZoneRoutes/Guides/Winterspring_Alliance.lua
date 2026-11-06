@@ -1,9 +1,9 @@
 -- 50-55 Winterspring: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 50, 57).
--- Split into 3 guides, listed under "50 - 58 Winterspring" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 50; part 2 from 57.
 -- Edit zones/mop/Winterspring.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,10 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 50 - 58 Winterspring
-#subweight -50
-#name 50-52 Winterspring: around Donova Snowden
-#next Zone Routes (Alliance)\52-55 Winterspring: around Jez Goodgrub
+#name 50-55 Winterspring
+--RouteBuilder:next
+#next Zone Routes (Alliance)\55-56 Silithus
 
 step
     .goto 83,25.12,58.49
@@ -676,19 +675,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Deez Rocksnitch|r
     .accept 28674 >>Accept Starfall Village
     .target Deez Rocksnitch
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 50 - 58 Winterspring
-#subweight -50
-#name 52-55 Winterspring: around Jez Goodgrub
---RouteBuilder:next
-#next Zone Routes (Alliance)\55-56 Silithus;Zone Routes (Alliance)\52-55 Swamp of Sorrows: around Trade Baron Silversnap;Zone Routes (Alliance)\53-55 Un'Goro Crater: around Garl Stormclaw
-
 step
     .goto 83,55.90,28.28
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Francis Morcott|r
@@ -783,7 +769,6 @@ step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rivern Frostwind|r
     .turnin 29034 >>Turn in They Grow Up So Fast
     .target Rivern Frostwind
-    .isOnQuest 29034
 step
     #completewith next
     .hs >>Hearth to Natheril Raincaller's inn. |cRXP_WARN_Walk instead if you are already nearby|r
@@ -795,7 +780,6 @@ step
     .goto 83,46.35,42.22,40,0
     >>Loot the |cRXP_PICK_Ancient Urns|r for |cRXP_LOOT_Starfall Relic|r
     .complete 28701,1 --Starfall Relic (5)
-    .isOnQuest 28701
 step
     .goto 83,48.67,41.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wynd Nightchaser|r
@@ -815,7 +799,7 @@ step
     .accept 28703 >>Accept Step Into My Barrow
     .target Rinno Curtainfire
 step
-    #completewith Along107
+    #completewith Along105
     >>As you go: Kill |cRXP_ENEMY_Coldlurk Burrowers|r. Kill |cRXP_ENEMY_Coldlurk Creepers|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28703,2 --Coldlurk Burrower slain (5)
     .complete 28703,1 --Coldlurk Creeper slain (10)
@@ -840,21 +824,11 @@ step
     .isQuestComplete 28710
     .target Sana Curtainfire
 step
+    #label Along105
     .goto 83,48.67,41.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wynd Nightchaser|r
     .turnin 28701 >>Turn in Out of Harm's Way
-    .target Wynd Nightchaser
-    .isOnQuest 28701
-step
-    .goto 83,48.67,41.02
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wynd Nightchaser|r
     .turnin 28674 >>Turn in Starfall Village
-    .target Wynd Nightchaser
-    .isOnQuest 28674
-step
-    #label Along107
-    .goto 83,48.67,41.02
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wynd Nightchaser|r
     .accept 28676 >>Accept Exterminators at Work
     .target Wynd Nightchaser
 step
@@ -953,15 +927,9 @@ step
 step
     .goto 83,58.01,63.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Haleh|r
+    .turnin 28847 >>Turn in The Pursuit of Umbranse
     .accept 28837 >>Accept Altered Beasts
     .target Haleh
-    .isQuestTurnedIn 28848 --any of: Trailing the Spiritspeaker
-step
-    .goto 83,58.01,63.78
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Haleh|r
-    .turnin 28847 >>Turn in The Pursuit of Umbranse
-    .target Haleh
-    .isOnQuest 28847
 step
     #loop
     .goto 83,56.37,62.28,0
@@ -970,72 +938,55 @@ step
     >>Kill |cRXP_ENEMY_Altered Beasts|r. Loot them for |cRXP_LOOT_Mana-Addled Brain|r
     .complete 28837,1 --Mana-Addled Brain (5)
     .mob Altered Beast
-    .isOnQuest 28837
 step
     .goto 83,58.01,63.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Haleh|r
     .turnin 28837 >>Turn in Altered Beasts
     .target Haleh
-    .isOnQuest 28837
+step
+    .xp 53 >>Grind to level 53 (The Owlbeasts' Defense needs it)
 step
     .goto 83,58.01,63.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Haleh|r
     .accept 28838 >>Accept The Owlbeasts' Defense
     .target Haleh
-    .isQuestTurnedIn 28837 --any of: Altered Beasts
 step
     .goto 83,57.13,75.44
     >>Open the |cRXP_PICK_Abandoned Research Samples|r. Loot it for |cRXP_LOOT_Owlbeast Dreamcatcher|r
     .complete 28838,1 --Owlbeast Dreamcatcher (1)
-    .isOnQuest 28838
 step
     .goto 83,58.01,63.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Haleh|r
     .turnin 28838 >>Turn in The Owlbeasts' Defense
-    .target Haleh
-    .isOnQuest 28838
-step
-    .goto 83,58.01,63.78
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Haleh|r
     .accept 28839 >>Accept Magic Prehistoric
     .target Haleh
-    .isQuestTurnedIn 28838 --any of: The Owlbeasts' Defense
-step
-    .xp 53 >>Grind to level 53 (Razor Beak and Antlers Pointy needs it)
 step
     .goto 83,61.87,74.67
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jadrag the Slicer|r
     .accept 28829 >>Accept Razor Beak and Antlers Pointy
     .target Jadrag the Slicer
 step
-    #completewith Along134
+    #completewith Along127
     >>As you go: Kill |cRXP_ENEMY_Moontouched Owlbeasts|r, |cRXP_ENEMY_Berserk Owlbeasts|r and |cRXP_ENEMY_Crazed Owlbeasts|r. |cRXP_WARN_Anything left is finished later|r
     .complete 28829,1 --Moontouched Owlbeast (12)
     .mob Moontouched Owlbeast
     .mob Berserk Owlbeast
     .mob Crazed Owlbeast
 step
+    #label Along127
     .goto 83,65.07,73.82
     >>Open the |cRXP_PICK_Owlbeast Claw-Totem|r. Loot it for |cRXP_LOOT_Essence of the Claw-Totem|r
-    .complete 28839,1 --Essence of the Claw-Totem (1)
-    .isOnQuest 28839
-step
-    .goto 83,65.64,77.64
     >>Open the |cRXP_PICK_Owlbeast Life-Totem|r. Loot it for |cRXP_LOOT_Essence of the Life-Totem|r
+    .complete 28839,1 --Essence of the Claw-Totem (1)
     .complete 28839,2 --Essence of the Life-Totem (1)
-    .isOnQuest 28839
-step
-    #label Along134
-    .goto 83,64.82,81.07
-    >>Open the |cRXP_PICK_Owlbeast Moon-Totem|r. Loot it for |cRXP_LOOT_Essence of the Moon-Totem|r
-    .complete 28839,3 --Essence of the Moon-Totem (1)
-    .isOnQuest 28839
 step
     #loop
-    .goto 83,64.01,79.90,0
-    .goto 83,64.01,79.90,40,0
+    .goto 83,64.73,75.26,0
     .goto 83,64.73,75.26,40,0
+    .goto 83,64.01,79.90,40,0
+    >>Open the |cRXP_PICK_Owlbeast Moon-Totem|r. Loot it for |cRXP_LOOT_Essence of the Moon-Totem|r
     >>Kill |cRXP_ENEMY_Moontouched Owlbeasts|r, |cRXP_ENEMY_Berserk Owlbeasts|r and |cRXP_ENEMY_Crazed Owlbeasts|r
+    .complete 28839,3 --Essence of the Moon-Totem (1)
     .complete 28829,1 --Moontouched Owlbeast (12)
     .mob Moontouched Owlbeast
     .mob Berserk Owlbeast
@@ -1051,15 +1002,16 @@ step
     .goto 83,58.01,63.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Haleh|r
     .turnin 28839 >>Turn in Magic Prehistoric
-    .target Haleh
-    .isOnQuest 28839
-step
-    .goto 83,58.01,63.78
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Haleh|r
     .accept 28840 >>Accept Winterwater
     .target Haleh
-    .isQuestTurnedIn 28839 --any of: Magic Prehistoric
 step
+    #completewith Along131
+    >>As you go: Kill |cRXP_ENEMY_Ice Avatars|r and |cRXP_ENEMY_Frostilicus|r. Loot them for |cRXP_LOOT_Winterwater|r. |cRXP_WARN_Anything left is finished later|r
+    .complete 28840,1 --Winterwater (7)
+    .mob Ice Avatar
+    .mob Frostilicus
+step
+    #label Along131
     #loop
     .goto 83,58.93,77.53,0
     .goto 83,58.93,77.53,40,0
@@ -1078,14 +1030,10 @@ step
     .goto 83,59.49,84.72,40,0
     .goto 83,61.68,86.59,40,0
     >>Kill |cRXP_ENEMY_Ice Avatars|r and |cRXP_ENEMY_Frostilicus|r. Loot them for |cRXP_LOOT_Winterwater|r
-    .complete 28840,1 --Winterwater (7)
-    .mob Ice Avatar
-    .mob Frostilicus
-    .isOnQuest 28840
-step
-    .goto 83,63.26,85.99
     >>Kill |cRXP_ENEMY_Frostilicus|r
+    .complete 28840,1 --Winterwater (7)
     .complete 28831,1 --Frostilicus slain (1)
+    .mob Ice Avatar
     .mob Frostilicus
 step
     .goto 83,61.87,74.67
@@ -1096,15 +1044,9 @@ step
     .goto 83,58.01,63.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Haleh|r
     .turnin 28840 >>Turn in Winterwater
-    .target Haleh
-    .isOnQuest 28840
-step
-    .goto 83,58.01,63.78
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Haleh|r
     .accept 28842 >>Accept Umbranse's Deliverance
     .accept 28841 >>Accept The Arcane Storm Within
     .target Haleh
-    .isQuestTurnedIn 28840 --any of: Winterwater
 step
     #loop
     .goto 83,52.83,64.87,0
@@ -1113,25 +1055,17 @@ step
     >>Use the Empowered Dreamcatcher to close 5 Arcane Tesseracts within Mazthoril.
     .complete 28841,1 --Arcane Tesseract (5)
     .target Arcane Tesseract
-    .isOnQuest 28841
 step
     .goto 83,49.56,70.26
     >>Kill |cRXP_ENEMY_Umbranse the Spiritspeaker|r
     .complete 28842,1 --Umbranse the Spiritspeaker slain (1)
     .mob Umbranse the Spiritspeaker
-    .isOnQuest 28842
 step
     .goto 83,58.01,63.78
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Haleh|r
     .turnin 28842 >>Turn in Umbranse's Deliverance
-    .target Haleh
-    .isOnQuest 28842
-step
-    .goto 83,58.01,63.78
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Haleh|r
     .turnin 28841 >>Turn in The Arcane Storm Within
     .target Haleh
-    .isOnQuest 28841
 step
     #completewith next
     .zone 103 >>Travel to The Exodar
@@ -1217,23 +1151,10 @@ step
     >>|cRXP_FRIENDLY_Tanaris|r: Hero's Call: Tanaris! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Teldrassil|r: Return to Nyoma << NightElf
     >>|cRXP_FRIENDLY_Un'Goro Crater|r: Hero's Call: Un'Goro Crater! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 54|r: |cRXP_FRIENDLY_Silithus|r (about 1.0 levels of quests, starting around Huum Wildmane; 1 quest from here hands in there), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 0.9 levels of quests, starting around Trade Baron Silversnap), |cRXP_FRIENDLY_Un'Goro Crater|r (about 0.8 levels of quests, starting around Garl Stormclaw). Completing this step loads the guide for Silithus --RouteBuilder:next
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-    +|cRXP_WARN_The rest of Winterspring is planned from level 57.|r Load its guide for level 57 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 50 - 58 Winterspring
-#subweight -50
-#name 57-58 Winterspring
---RouteBuilder:next
-#next Zone Routes (Alliance)\55-56 Silithus
-
+    +|cRXP_WARN_Until level 57, suggested zones|r: |cRXP_FRIENDLY_Un'Goro Crater|r (about 1.7 levels of quests), |cRXP_FRIENDLY_Silithus|r (about 1.0 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Swamp of Sorrows|r (about 0.9 levels of quests). Then come back to this Winterspring guide --RouteBuilder:next
+step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
+    .xp 57 >>|cRXP_WARN_The rest of Winterspring is planned from level 57.|r Come back to this guide then
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 83,59.86,51.19
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Vizzie|r
@@ -1252,5 +1173,5 @@ step
     >>|cRXP_FRIENDLY_Blasted Lands|r: Blasted Lands: The Other Side of the World << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Silithus|r: Hero's Call: Silithus! << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
 step
-    +|cRXP_WARN_Suggested next zones at level 57|r: |cRXP_FRIENDLY_Silithus|r (about 0.9 levels of quests, starting around Huum Wildmane; 1 quest from here hands in there). Completing this step loads the guide for Silithus --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 57|r: |cRXP_FRIENDLY_Silithus|r (about 0.9 levels of quests; 1 quest from here hands in there). Completing this step loads the guide for Silithus --RouteBuilder:next
 ]])

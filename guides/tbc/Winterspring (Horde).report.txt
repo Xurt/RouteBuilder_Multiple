@@ -1,7 +1,7 @@
 Winterspring - Horde - part 1 of 3, planned from level 52
 Guide "52-60 Winterspring" in group "Zone Routes (Horde)": this part has 18 steps, 12 stops
 Written to guides/tbc/Winterspring (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -96,7 +96,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Winterspring - Horde - part 2 of 3, planned from level 55
 Guide "52-60 Winterspring" in group "Zone Routes (Horde)": this part has 48 steps, 37 stops
 Written to guides/tbc/Winterspring (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -164,7 +164,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Winterspring - Horde - part 3 of 3, planned from level 58
 Guide "52-60 Winterspring" in group "Zone Routes (Horde)": this part has 22 steps, 21 stops
 Written to guides/tbc/Winterspring (Horde).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

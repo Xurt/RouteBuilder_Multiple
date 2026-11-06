@@ -1,7 +1,7 @@
 Ashenvale - Alliance - part 1 of 5, planned from level 18
 Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 32 steps, 26 stops
 Written to guides/tbc/Ashenvale (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -121,7 +121,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Ashenvale - Alliance - part 2 of 5, planned from level 21
 Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 22 steps, 18 stops
 Written to guides/tbc/Ashenvale (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -203,7 +203,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Ashenvale - Alliance - part 3 of 5, planned from level 24
 Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 28 steps, 26 stops
 Written to guides/tbc/Ashenvale (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -278,7 +278,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Ashenvale - Alliance - part 4 of 5, planned from level 27
 Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 58 steps, 52 stops
 Written to guides/tbc/Ashenvale (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 
@@ -342,7 +342,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Ashenvale - Alliance - part 5 of 5, planned from level 31
 Guide "18-32 Ashenvale" in group "Zone Routes (Alliance)": this part has 20 steps, 19 stops
 Written to guides/tbc/Ashenvale (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 1110 objective notes read from 57 guide files
 

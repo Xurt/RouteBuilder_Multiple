@@ -13,12 +13,12 @@
       "start": 87,
       "end": 87.04,
       "next": 90,
-      "guide": "87-88 Valley of the Four Winds: around Farmer Yoon",
+      "guide": "87-90 Valley of the Four Winds",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Farmer Yoon",
-          "guide": "87-88 Valley of the Four Winds: around Farmer Yoon",
+          "label": "",
+          "name": "start",
+          "guide": "87-90 Valley of the Four Winds",
           "level": 87,
           "index": 0
         }
@@ -28,12 +28,12 @@
       "part": 2,
       "start": 90,
       "end": 90.33,
-      "guide": "90-91 Valley of the Four Winds: around Xiao",
+      "guide": "87-90 Valley of the Four Winds",
       "sections": [
         {
-          "label": "RBSection2_1",
-          "name": "around Xiao",
-          "guide": "90-91 Valley of the Four Winds: around Xiao",
+          "label": "",
+          "name": "part 2",
+          "guide": "87-90 Valley of the Four Winds",
           "level": 90,
           "index": 0
         }

@@ -1,7 +1,7 @@
 Un'Goro Crater - Alliance - part 1 of 3, planned from level 50
 Guide "50-56 Un'Goro Crater" in group "Zone Routes (Alliance)": this part has 69 steps, 58 stops
 Written to guides/classic/Un'Goro Crater (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -79,7 +79,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Un'Goro Crater - Alliance - part 2 of 3, planned from level 53
 Guide "50-56 Un'Goro Crater" in group "Zone Routes (Alliance)": this part has 19 steps, 17 stops
 Written to guides/classic/Un'Goro Crater (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 
@@ -132,7 +132,7 @@ To force one in, add its number to "include" in the zone file; to drop one, add 
 Un'Goro Crater - Alliance - part 3 of 3, planned from level 56
 Guide "50-56 Un'Goro Crater" in group "Zone Routes (Alliance)": this part has 10 steps, 9 stops
 Written to guides/classic/Un'Goro Crater (Alliance).lua
-Data: QuestieDB local copy, 2026-10-23
+Data: QuestieDB local copy, 2026-11-06
 Zone file: none (everything below comes straight from the database)
 RestedXP cross-check: 720 objective notes read from 50 guide files
 

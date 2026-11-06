@@ -1,9 +1,9 @@
 -- 35-52 Swamp of Sorrows: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 3 parts (from level 35, 39, 51).
--- Split into 3 guides, listed under "35 - 52 Swamp of Sorrows" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 35; part 2 from 39; part 3 from 51.
 -- Edit zones/classic/Swamp of Sorrows.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 35 - 52 Swamp of Sorrows
-#subweight -35
-#name 35-36 Swamp of Sorrows
+#name 35-52 Swamp of Sorrows
 
 step
     .goto 1435/0,-2836.27,-10535.73
@@ -133,18 +131,7 @@ step
     +|cRXP_WARN_That is all of Swamp of Sorrows for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Dustwallow Marsh|r: Cortello's Riddle
 step
-    +|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 39.|r Load its guide for level 39 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 35 - 52 Swamp of Sorrows
-#subweight -35
-#name 39-40 Swamp of Sorrows
-
+    .xp 39 >>|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 39.|r Come back to this guide then
 step
     .goto 1435/0,-2836.27,-10535.73
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Watcher Biggs|r
@@ -176,18 +163,7 @@ step
     +|cRXP_WARN_That is all of Swamp of Sorrows for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Blasted Lands|r: Deliver the Shipment
 step << Warrior
-    +|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 51.|r Load its guide for level 51 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Warrior
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 35 - 52 Swamp of Sorrows
-#subweight -35
-#name 51-52 Swamp of Sorrows
-
+    .xp 51 >>|cRXP_WARN_The rest of Swamp of Sorrows is planned from level 51.|r Come back to this guide then
 step << Warrior
     .goto 1435/0,-3009.44,-10632.22
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Fallen Hero of the Horde|r

@@ -1,9 +1,9 @@
 -- 47-57 Azshara: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Classic Era data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 4 parts (from level 47, 50, 53, 56).
--- Split into 4 guides, listed under "47 - 57 Azshara" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 47; part 2 from 50; part 3 from 53; part 4 from 56.
 -- Edit zones/classic/Azshara.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,9 +13,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 47 - 57 Azshara
-#subweight -47
-#name 47-48 Azshara
+#name 47-57 Azshara
 
 step
     .goto 1447/1,-3880.51,2718.83
@@ -140,18 +138,7 @@ step
     +|cRXP_WARN_That is all of Azshara for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Ironforge|r: Return to Tymor
 step
-    +|cRXP_WARN_The rest of Azshara is planned from level 50.|r Load its guide for level 50 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 47 - 57 Azshara
-#subweight -47
-#name 50-51 Azshara
-
+    .xp 50 >>|cRXP_WARN_The rest of Azshara is planned from level 50.|r Come back to this guide then
 step
     .goto 1447/1,-5987.44,4603.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kim'jael|r
@@ -201,18 +188,7 @@ step
     .goto 1447/1,-6144.64,4382.74
     .xp 54+20000 >> Grind |cRXP_ENEMY_Blood Elves|r until you are 20,000XP into level 54
 step << Mage
-    +|cRXP_WARN_The rest of Azshara is planned from level 53.|r Load its guide for level 53 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Mage
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 47 - 57 Azshara
-#subweight -47
-#name 53-54 Azshara
-
+    .xp 53 >>|cRXP_WARN_The rest of Azshara is planned from level 53.|r Come back to this guide then
 step << Mage
     .goto 1447/1,-4760.30,3982.07
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Archmage Xylem|r
@@ -404,18 +380,7 @@ step
     >>|cRXP_FRIENDLY_Felwood|r: Blood of Morphaz << Priest
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Destroy Morphaz << Mage
 step
-    +|cRXP_WARN_The rest of Azshara is planned from level 56.|r Load its guide for level 56 then
-]])
-
-RXPGuides.RegisterGuide([[
-#classic
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 47 - 57 Azshara
-#subweight -47
-#name 56-57 Azshara
-
+    .xp 56 >>|cRXP_WARN_The rest of Azshara is planned from level 56.|r Come back to this guide then
 step
     .goto 1447/1,-7297.24,2849.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Duke Hydraxis|r

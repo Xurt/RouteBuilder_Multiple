@@ -13,12 +13,12 @@
       "start": 62,
       "end": 63.33,
       "next": 66,
-      "guide": "62-64 Terokkar Forest: around Jenai Starwhisper",
+      "guide": "62-70 Terokkar Forest",
       "sections": [
         {
-          "label": "RBSection1_1",
-          "name": "around Jenai Starwhisper",
-          "guide": "62-64 Terokkar Forest: around Jenai Starwhisper",
+          "label": "",
+          "name": "start",
+          "guide": "62-70 Terokkar Forest",
           "level": 62,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 66,
       "end": 66.06,
       "next": 69,
-      "guide": "66-67 Terokkar Forest",
+      "guide": "62-70 Terokkar Forest",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "66-67 Terokkar Forest",
+          "guide": "62-70 Terokkar Forest",
           "level": 66,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 69,
       "end": 69.01,
-      "guide": "69-70 Terokkar Forest",
+      "guide": "62-70 Terokkar Forest",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "69-70 Terokkar Forest",
+          "guide": "62-70 Terokkar Forest",
           "level": 69,
           "index": 0
         }

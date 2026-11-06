@@ -13,12 +13,12 @@
       "start": 26,
       "end": 26.18,
       "next": 29,
-      "guide": "26-27 Stonetalon Mountains",
+      "guide": "26-30 Stonetalon Mountains",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "26-27 Stonetalon Mountains",
+          "guide": "26-30 Stonetalon Mountains",
           "level": 26,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 29,
       "end": 29,
       "next": 32,
-      "guide": "29-30 Stonetalon Mountains",
+      "guide": "26-30 Stonetalon Mountains",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "29-30 Stonetalon Mountains",
+          "guide": "26-30 Stonetalon Mountains",
           "level": 29,
           "index": 0
         }
@@ -44,12 +44,12 @@
       "part": 3,
       "start": 32,
       "end": 32,
-      "guide": "32-33 Stonetalon Mountains",
+      "guide": "26-30 Stonetalon Mountains",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "32-33 Stonetalon Mountains",
+          "guide": "26-30 Stonetalon Mountains",
           "level": 32,
           "index": 0
         }

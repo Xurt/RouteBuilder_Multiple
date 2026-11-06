@@ -1,9 +1,9 @@
 -- 69-70 Shadowmoon Valley: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 69, 72).
--- Split into 2 guides, listed under "69 - 73 Shadowmoon Valley" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 69; part 2 from 72.
 -- Edit zones/mop/Shadowmoon Valley.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 69 - 73 Shadowmoon Valley
-#subweight -69
-#name 69-70 Shadowmoon Valley: around Earthmender Torlok
+#name 69-70 Shadowmoon Valley
 --RouteBuilder:next
-#next Zone Routes (Alliance)\68-70 Netherstorm: around Image of Archmage Vargoth;Zone Routes (Alliance)\70-73 Howling Fjord: around Lurielle;Zone Routes (Alliance)\65-68 Nagrand
+#next Zone Routes (Alliance)\71-74 Borean Tundra;Zone Routes (Alliance)\72-75 Dragonblight;Zone Routes (Alliance)\70-72 Howling Fjord
 
 step << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     .goto 104,38.79,54.21
@@ -1163,22 +1161,9 @@ step
     >>|cRXP_FRIENDLY_Terokkar Forest|r: The Hermit Smith << Human/Dwarf/NightElf/Gnome/Draenei/Worgen/Pandaren
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: The Cipher of Damnation - Ar'tor's Charge
 step
-    +|cRXP_WARN_Suggested next zones at level 69|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.3 levels of quests, starting around Image of Archmage Vargoth), |cRXP_FRIENDLY_Howling Fjord|r (about 0.6 levels of quests, starting around Lurielle), |cRXP_FRIENDLY_Nagrand|r (about 0.5 levels of quests, starting around Hemet Nesingwary). Completing this step loads the guide for Netherstorm --RouteBuilder:next
+    +|cRXP_WARN_Until level 72, suggested zones|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.3 levels of quests), |cRXP_FRIENDLY_Howling Fjord|r (about 0.6 levels of quests), |cRXP_FRIENDLY_Nagrand|r (about 0.5 levels of quests). Then come back to this Shadowmoon Valley guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Shadowmoon Valley is planned from level 72.|r Load its guide for level 72 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 69 - 73 Shadowmoon Valley
-#subweight -69
-#name 72-73 Shadowmoon Valley: around Karynaku
---RouteBuilder:next
-#next Zone Routes (Alliance)\71-74 Borean Tundra: around Elder Atkanok;Zone Routes (Alliance)\72-74 Dragonblight: around Aurastrasza;Zone Routes (Alliance)\70-73 Howling Fjord: around Lurielle
-
+    .xp 72 >>|cRXP_WARN_The rest of Shadowmoon Valley is planned from level 72.|r Come back to this guide then
 step
     #loop
     .goto 104,59.19,58.69,0
@@ -1525,5 +1510,5 @@ step
     +|cRXP_WARN_End of the Shadowmoon Valley route.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Shattrath City|r: The Hostage Soul
 step
-    +|cRXP_WARN_Suggested next zones at level 72|r: |cRXP_FRIENDLY_Borean Tundra|r (about 0.9 levels of quests, starting around Elder Atkanok), |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests, starting around Aurastrasza), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests, starting around Lurielle). Completing this step loads the guide for Borean Tundra --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 72|r: |cRXP_FRIENDLY_Borean Tundra|r (about 0.9 levels of quests), |cRXP_FRIENDLY_Dragonblight|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Howling Fjord|r (about 0.5 levels of quests). Completing this step loads the guide for Borean Tundra --RouteBuilder:next
 ]])

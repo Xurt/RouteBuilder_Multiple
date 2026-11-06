@@ -13,12 +13,12 @@
       "start": 10,
       "end": 10,
       "next": 13,
-      "guide": "10-11 Borean Tundra",
+      "guide": "10-41 Borean Tundra",
       "sections": [
         {
-          "label": "RBSection1_1",
+          "label": "",
           "name": "start",
-          "guide": "10-11 Borean Tundra",
+          "guide": "10-41 Borean Tundra",
           "level": 10,
           "index": 0
         }
@@ -29,12 +29,12 @@
       "start": 13,
       "end": 13,
       "next": 20,
-      "guide": "13-14 Borean Tundra",
+      "guide": "10-41 Borean Tundra",
       "sections": [
         {
-          "label": "RBSection2_1",
+          "label": "",
           "name": "part 2",
-          "guide": "13-14 Borean Tundra",
+          "guide": "10-41 Borean Tundra",
           "level": 13,
           "index": 0
         }
@@ -45,12 +45,12 @@
       "start": 20,
       "end": 20,
       "next": 23,
-      "guide": "20-21 Borean Tundra",
+      "guide": "10-41 Borean Tundra",
       "sections": [
         {
-          "label": "RBSection3_1",
+          "label": "",
           "name": "part 3",
-          "guide": "20-21 Borean Tundra",
+          "guide": "10-41 Borean Tundra",
           "level": 20,
           "index": 0
         }
@@ -61,12 +61,12 @@
       "start": 23,
       "end": 23,
       "next": 26,
-      "guide": "23-24 Borean Tundra",
+      "guide": "10-41 Borean Tundra",
       "sections": [
         {
-          "label": "RBSection4_1",
+          "label": "",
           "name": "part 4",
-          "guide": "23-24 Borean Tundra",
+          "guide": "10-41 Borean Tundra",
           "level": 23,
           "index": 0
         }
@@ -77,12 +77,12 @@
       "start": 26,
       "end": 26,
       "next": 30,
-      "guide": "26-27 Borean Tundra",
+      "guide": "10-41 Borean Tundra",
       "sections": [
         {
-          "label": "RBSection5_1",
+          "label": "",
           "name": "part 5",
-          "guide": "26-27 Borean Tundra",
+          "guide": "10-41 Borean Tundra",
           "level": 26,
           "index": 0
         }
@@ -93,12 +93,12 @@
       "start": 30,
       "end": 30,
       "next": 35,
-      "guide": "30-31 Borean Tundra",
+      "guide": "10-41 Borean Tundra",
       "sections": [
         {
-          "label": "RBSection6_1",
+          "label": "",
           "name": "part 6",
-          "guide": "30-31 Borean Tundra",
+          "guide": "10-41 Borean Tundra",
           "level": 30,
           "index": 0
         }
@@ -109,12 +109,12 @@
       "start": 35,
       "end": 35,
       "next": 38,
-      "guide": "35-36 Borean Tundra",
+      "guide": "10-41 Borean Tundra",
       "sections": [
         {
-          "label": "RBSection7_1",
+          "label": "",
           "name": "part 7",
-          "guide": "35-36 Borean Tundra",
+          "guide": "10-41 Borean Tundra",
           "level": 35,
           "index": 0
         }
@@ -124,12 +124,12 @@
       "part": 8,
       "start": 38,
       "end": 38,
-      "guide": "38-39 Borean Tundra",
+      "guide": "10-41 Borean Tundra",
       "sections": [
         {
-          "label": "RBSection8_1",
+          "label": "",
           "name": "part 8",
-          "guide": "38-39 Borean Tundra",
+          "guide": "10-41 Borean Tundra",
           "level": 38,
           "index": 0
         }

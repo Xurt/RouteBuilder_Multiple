@@ -1,9 +1,9 @@
 -- 5-11 Eversong Woods: Zone Routes (Horde).
--- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's Mists of Pandaria data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 5, 28).
--- Split into 2 guides, listed under "5 - 29 Eversong Woods" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 5; part 2 from 28.
 -- Edit zones/mop/Eversong Woods.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Alliance" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Horde
 #version 1
 #group Zone Routes (Horde)
-#subgroup 5 - 29 Eversong Woods
-#subweight -5
-#name 5-12 Eversong Woods
+#name 5-11 Eversong Woods
 --RouteBuilder:next
-#next Zone Routes (Horde)\10-14 Azshara: around Labor Captain Grabbit
+#next Zone Routes (Horde)\25-30 Northern Stranglethorn;Zone Routes (Horde)\26-31 Arathi Highlands;Zone Routes (Horde)\20-25 Hillsbrad Foothills
 
 step << Hunter Cata
     .goto 94,39.05,20.01
@@ -1000,23 +998,10 @@ step
     +|cRXP_WARN_That is all of Eversong Woods for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Ghostlands|r: Delivery to Tranquillien << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     >>|cRXP_FRIENDLY_Ghostlands and back here|r: The Fallen Courier << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-step
-    +|cRXP_WARN_Suggested next zones at level 11|r: |cRXP_FRIENDLY_Azshara|r (about 0.6 levels of quests, starting around Labor Captain Grabbit). Completing this step loads the guide for Azshara --RouteBuilder:next
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-    +|cRXP_WARN_The rest of Eversong Woods is planned from level 28.|r Load its guide for level 28 then
-]])
-
-RXPGuides.RegisterGuide([[
-#mop
-<< Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
-#version 1
-#group Zone Routes (Horde)
-#subgroup 5 - 29 Eversong Woods
-#subweight -5
-#name 28-29 Eversong Woods
---RouteBuilder:next
-#next Zone Routes (Horde)\25-30 Northern Stranglethorn;Zone Routes (Horde)\26-31 Arathi Highlands;Zone Routes (Horde)\22-27 Hillsbrad Foothills: around Serge Hinott
-
+    +|cRXP_WARN_Until level 28, suggested zones|r: |cRXP_FRIENDLY_Azshara|r (about 0.6 levels of quests). Then come back to this Eversong Woods guide --RouteBuilder:next
+step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
+    .xp 28 >>|cRXP_WARN_The rest of Eversong Woods is planned from level 28.|r Come back to this guide then
 step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
     .goto 94,38.14,73.56
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord Saltheril|r
@@ -1059,5 +1044,5 @@ step << Orc/Undead/Tauren/Troll/BloodElf/Goblin/Pandaren
 step
     +|cRXP_WARN_End of the Eversong Woods route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 28|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.2 levels of quests, starting around Hemet Nesingwary Jr.), |cRXP_FRIENDLY_Arathi Highlands|r (about 1.1 levels of quests, starting around Galen Trollbane), |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.6 levels of quests, starting around Serge Hinott). Completing this step loads the guide for Northern Stranglethorn --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 28|r: |cRXP_FRIENDLY_Northern Stranglethorn|r (about 1.2 levels of quests), |cRXP_FRIENDLY_Arathi Highlands|r (about 1.1 levels of quests), |cRXP_FRIENDLY_Hillsbrad Foothills|r (about 0.6 levels of quests). Completing this step loads the guide for Northern Stranglethorn --RouteBuilder:next
 ]])

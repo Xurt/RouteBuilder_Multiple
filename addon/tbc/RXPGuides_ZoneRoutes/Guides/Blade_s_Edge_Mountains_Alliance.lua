@@ -1,9 +1,9 @@
 -- 65-70 Blade's Edge Mountains: Zone Routes (Alliance).
--- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-10-23; QuestieDB is GPL-3.0).
+-- Made by RouteBuilder from QuestieDB's The Burning Crusade data (local copy, 2026-11-06; QuestieDB is GPL-3.0).
 -- One route for the whole faction. Steps marked << Class or << Race only show for those characters.
 -- Steps that depend on quests from other zones hide themselves unless you have those quests.
 -- The zone covers more levels than one visit gives, so it is planned in 2 parts (from level 65, 68).
--- Split into 2 guides, listed under "65 - 69 Blade's Edge Mountains" in RestedXP. Each leads on to the next; start at any of them: a step that needs a quest from an earlier one hides itself unless you did that quest.
+-- Sections (the guide starts at the one for your level): start from 65; part 2 from 68.
 -- Edit zones/tbc/Blade's Edge Mountains.json and re-run rather than editing this file, or your changes are lost on the next build.
 
 if UnitFactionGroup("player") == "Horde" then return end
@@ -13,11 +13,9 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #version 1
 #group Zone Routes (Alliance)
-#subgroup 65 - 69 Blade's Edge Mountains
-#subweight -65
-#name 65-66 Blade's Edge Mountains: around Rina Moonspring
+#name 65-70 Blade's Edge Mountains
 --RouteBuilder:next
-#next Zone Routes (Alliance)\62-64 Terokkar Forest: around Jenai Starwhisper;Zone Routes (Alliance)\65-66 Nagrand: around Huntress Bintook
+#next Zone Routes (Alliance)\68-70 Netherstorm;Zone Routes (Alliance)\69-70 Shadowmoon Valley;Zone Routes (Alliance)\65-68 Nagrand
 
 step
     .goto 1949,32.20,91.11
@@ -952,22 +950,9 @@ step
     +|cRXP_WARN_That is all of Blade's Edge Mountains for now.|r Quests still in your log lead on from here; pick your next zone by them
     >>|cRXP_FRIENDLY_Elsewhere and back here|r: Planting the Banner
 step
-    +|cRXP_WARN_Suggested next zones at level 65|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.7 levels of quests, starting around Jenai Starwhisper), |cRXP_FRIENDLY_Nagrand|r (about 0.6 levels of quests, starting around Huntress Bintook). Completing this step loads the guide for Terokkar Forest --RouteBuilder:next
+    +|cRXP_WARN_Until level 68, suggested zones|r: |cRXP_FRIENDLY_Terokkar Forest|r (about 0.7 levels of quests), |cRXP_FRIENDLY_Nagrand|r (about 0.6 levels of quests). Then come back to this Blade's Edge Mountains guide --RouteBuilder:next
 step
-    +|cRXP_WARN_The rest of Blade's Edge Mountains is planned from level 68.|r Load its guide for level 68 then
-]])
-
-RXPGuides.RegisterGuide([[
-#tbc
-<< Alliance
-#version 1
-#group Zone Routes (Alliance)
-#subgroup 65 - 69 Blade's Edge Mountains
-#subweight -65
-#name 68-69 Blade's Edge Mountains
---RouteBuilder:next
-#next Zone Routes (Alliance)\68-70 Netherstorm: around Image of Archmage Vargoth;Zone Routes (Alliance)\69-70 Shadowmoon Valley;Zone Routes (Alliance)\65-66 Nagrand: around Huntress Bintook
-
+    .xp 68 >>|cRXP_WARN_The rest of Blade's Edge Mountains is planned from level 68.|r Come back to this guide then
 step
     .goto 1949,41.29,46.71
     >>Kill |cRXP_ENEMY_Bladespire Champion|r and loot |cRXP_LOOT_Bladespire Clan Banner|r
@@ -1261,5 +1246,5 @@ step
 step
     +|cRXP_WARN_End of the Blade's Edge Mountains route.|r
 step
-    +|cRXP_WARN_Suggested next zones at level 68|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.3 levels of quests, starting around Image of Archmage Vargoth; 1 quest from here hands in there), |cRXP_FRIENDLY_Shadowmoon Valley|r (about 0.7 levels of quests, starting around Wing Commander Nuainn; 1 quest from here hands in there), |cRXP_FRIENDLY_Nagrand|r (about 0.6 levels of quests, starting around Huntress Bintook). Completing this step loads the guide for Netherstorm --RouteBuilder:next
+    +|cRXP_WARN_Suggested next zones at level 68|r: |cRXP_FRIENDLY_Netherstorm|r (about 1.3 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Shadowmoon Valley|r (about 0.7 levels of quests; 1 quest from here hands in there), |cRXP_FRIENDLY_Nagrand|r (about 0.6 levels of quests). Completing this step loads the guide for Netherstorm --RouteBuilder:next
 ]])
